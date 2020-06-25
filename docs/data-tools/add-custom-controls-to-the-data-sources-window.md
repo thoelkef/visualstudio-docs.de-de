@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587107"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283072"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 
@@ -39,7 +39,7 @@ Zum Hinzufügen oder Entfernen von Steuerelementen aus der Liste der verfügbare
 2. Klicken Sie im Fenster **Datenquellen** auf ein Element, das Teil einer Datenquelle ist, die Sie dem-Fenster hinzugefügt haben, und klicken Sie dann auf das Dropdown Menü für das Element.
 
    > [!TIP]
-   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** auswählen.
+   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es **View**, indem Sie  >  **andere Windows**-  >  **Datenquellen**anzeigen auswählen.
 
 3. Klicken Sie im Dropdown Menü auf **Anpassen**. Eines der folgenden Dialogfelder wird geöffnet:
 
@@ -76,11 +76,11 @@ So fügen Sie der Liste der zugeordneten Steuerelemente Steuerelemente hinzu:
 
      Das Steuerelement muss eines der folgenden Attribute aufweisen:
 
-    |Attribute|Beschreibung|
+    |attribute|Beschreibung|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) von Daten anzeigen, z. b. eine <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, z. b. eine <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, aber auch eine einzelne Spalte oder Eigenschaft, z. b. eine <xref:System.Windows.Forms.ComboBox>, darstellen müssen.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) von Daten anzeigen, z <xref:System.Windows.Forms.TextBox> . b..|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, z <xref:System.Windows.Forms.DataGridView> . b..|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, aber auch eine einzelne Spalte oder Eigenschaft, z. b. eine, darstellen müssen <xref:System.Windows.Forms.ComboBox> .|
 
 2. Öffnen Sie für Windows Forms im Dialogfeld **Optionen** die Seite **Anpassung der Daten Benutzeroberfläche** . Oder öffnen Sie für WPF das Dialogfeld **Steuerelement Bindung anpassen** . Weitere Informationen finden Sie unter [Anpassen der Liste der bindbaren Steuerelemente für einen-Datentyp](#customize-the-bindable-controls-list).
 

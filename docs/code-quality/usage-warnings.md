@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184574"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283345"
 ---
 # <a name="usage-warnings"></a>Verwendungswarnungen
 
@@ -72,6 +72,7 @@ Verwendungs Warnungen unterstützen die ordnungsgemäße Verwendung von .net.
 |[CA2241: Geben Sie die korrekte Anzahl für Formatierungsmethoden an.](../code-quality/ca2241.md)|Das an System. String. Format über gegebene Format-Argument enthält kein Format Element, das jedem Objekt Argument entspricht, oder umgekehrt.|
 |[CA2242: Ordnungsgemäß auf NaN testen.](../code-quality/ca2242.md)|Mit diesem Ausdruck testen Sie einen Wert auf Single.Nan oder Double.Nan. Testen Sie den Wert mithilfe von Single.IsNan(Single) oder Double.IsNan(Double).|
 |[CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden.](../code-quality/ca2243.md)|Der zeichenfolgenliteralparameter eines Attributs wird für eine URL, eine GUID oder eine Version nicht ordnungsgemäß analysiert.|
-|[CA2244: keine indizierten Element Initialisierungen duplizieren](../code-quality/ca2244.md)|Ein Objektinitialisierer verfügt über mehr als einen indizierten Elementinitialisierer mit demselben Konstanten Index. Alle außer der letzte Initialisierer sind redundant.|
-|[CA2245: keine Eigenschaft selbst zuweisen](../code-quality/ca2245.md)|Eine Eigenschaft wurde versehentlich selbst zugewiesen.|
-|[CA2246: weisen Sie kein Symbol und seinen Member in derselben Anweisung zu.](../code-quality/ca2246.md)|Es wird nicht empfohlen, ein Symbol und dessen Member, d. h. ein Feld oder eine Eigenschaft, in derselben Anweisung zuzuweisen. Es ist nicht klar, ob der Element Zugriff dazu gedacht war, den alten Wert des Symbols vor der Zuweisung oder den neuen Wert aus der Zuweisung in dieser Anweisung zu verwenden.|
+|[CA2244: Keine Initialisierungen indizierter Elemente duplizieren](../code-quality/ca2244.md)|Ein Objektinitialisierer verfügt über mehr als einen indizierten Elementinitialisierer mit demselben Konstanten Index. Alle außer der letzte Initialisierer sind redundant.|
+|[CA2245: Keine Zuweisung einer Eigenschaft zu sich selbst](../code-quality/ca2245.md)|Eine Eigenschaft wurde versehentlich selbst zugewiesen.|
+|[CA2246: Keine Zuweisung eines Symbols und seines Members in der gleichen Anweisung](../code-quality/ca2246.md)|Es wird nicht empfohlen, ein Symbol und dessen Member, d. h. ein Feld oder eine Eigenschaft, in derselben Anweisung zuzuweisen. Es ist nicht klar, ob der Element Zugriff dazu gedacht war, den alten Wert des Symbols vor der Zuweisung oder den neuen Wert aus der Zuweisung in dieser Anweisung zu verwenden.|
+|[CA2248: Geben Sie ein korrektes "Aufzählungs Argument" für "" "" "" ".](../code-quality/ca2248.md)|Der als Argument an den `HasFlag` Methodenaufruf umgegebene Aufzählungs Typ unterscheidet sich vom aufrufenden Aufzählungs Typen.|

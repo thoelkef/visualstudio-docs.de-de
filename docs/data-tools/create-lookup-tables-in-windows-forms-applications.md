@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586769"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282656"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen
 
@@ -24,11 +24,11 @@ Die Begriff *Nachschlagetabelle* bezeichnet Steuerelemente, die an zwei zusammen
 
 Sie können Nachschlage Tabellen erstellen, indem Sie den Haupt Knoten einer übergeordneten Tabelle (aus dem [Datenquellen Fenster](add-new-data-sources.md#data-sources-window)) auf ein Steuerelement auf dem Formular ziehen, das bereits an die Spalte in der zugehörigen untergeordneten Tabelle gebunden ist.
 
-Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der Tabelle `Orders` enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag erteilt hat. Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in der Tabelle `Customers` zeigt. In diesem Szenario erweitern Sie die `Orders` Tabelle im **Datenquellen** Fenster und legen den Haupt Knoten auf **Details**fest. Legen Sie dann für die `CustomerID` Spalte die Verwendung eines <xref:System.Windows.Forms.ComboBox> (oder eines beliebigen anderen Steuer Elements, das die Such Bindung unterstützt) fest, und ziehen Sie den Knoten `Orders` auf das Formular. Ziehen Sie schließlich den Knoten `Customers` auf das Steuerelement, das an die zugehörige Spalte gebunden ist – in diesem Fall die an die `CustomerID` Spalte gebundene <xref:System.Windows.Forms.ComboBox>.
+Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der Tabelle `Orders` enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag erteilt hat. Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in der Tabelle `Customers` zeigt. In diesem Szenario erweitern Sie die `Orders` Tabelle im **Datenquellen** Fenster und legen den Haupt Knoten auf **Details**fest. Legen `CustomerID` Sie dann für die Spalte die Verwendung eines <xref:System.Windows.Forms.ComboBox> (oder eines beliebigen anderen Steuer Elements, das die Such Bindung unterstützt) fest, und ziehen `Orders` Sie den Knoten auf das Formular. Ziehen Sie schließlich den `Customers` Knoten auf das Steuerelement, das an die zugehörige Spalte gebunden ist – in diesem Fall die <xref:System.Windows.Forms.ComboBox> an die `CustomerID` Spalte gebundene.
 
 ## <a name="to-databind-a-lookup-control"></a>So stellen Sie die Datenbindung für ein Nachschlagesteuerelement her
 
-1. Öffnen Sie Ihr Projekt, indem Sie das Fenster **Datenquellen** öffnen, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** auswählen.
+1. Öffnen Sie das Fenster **Datenquellen** , während das Projekt geöffnet ist **View**, indem Sie  >  **andere Windows**-  >  **Datenquellen**anzeigen auswählen.
 
     > [!NOTE]
     > Für Nachschlagetabellen ist es erforderlich, dass zwei zusammengehörige Tabellen oder Objekte im **Datenquellenfenster** verfügbar sind. Weitere Informationen finden Sie unter [Beziehungen in Datasets](relationships-in-datasets.md).
@@ -40,7 +40,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
 3. Ändern Sie den Ablagetyp auf **Details**, indem Sie am Knoten der untergeordneten Tabelle in der Steuerelementliste die Option **Details** auswählen. Weitere Informationen finden Sie unter [Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4. Suchen Sie den Knoten, der die beiden Tabellen verknüpft (der `CustomerID` Knoten im vorherigen Beispiel). Ändern Sie den Ablagetyp in ein <xref:System.Windows.Forms.ComboBox>, indem Sie in der Steuerelement Liste die Option **ComboBox** auswählen.
+4. Suchen Sie den Knoten, der die beiden Tabellen verknüpft (der `CustomerID` Knoten im vorherigen Beispiel). Ändern Sie den Ablagetyp in ein, indem Sie in <xref:System.Windows.Forms.ComboBox> der Steuerelement Liste die Option **ComboBox** auswählen.
 
 5. Ziehen Sie den Hauptknoten der untergeordneten Tabelle aus dem **Datenquellenfenster** auf das Formular.
 
@@ -50,7 +50,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
      Die Nachschlagebindungen werden jetzt festgelegt. In der folgenden Tabelle finden Sie die spezifischen Eigenschaften, die für das-Steuerelement festgelegt wurden.
 
-    |Die Eigenschaften-|Erklärung der Einstellung|
+    |Eigenschaft|Erklärung der Einstellung|
     |--------------| - |
     |**DataSource**|Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Forms.BindingSource> fest, die für die auf das Steuerelement gezogene Tabelle erstellt wurde (also nicht auf die <xref:System.Windows.Forms.BindingSource>, die bei der Erstellung des Steuerelements erstellt wurde).<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf die <xref:System.Windows.Forms.BindingSource> der Tabelle mit der Spalte fest, die Sie anzeigen möchten.|
     |**DisplayMember**|Visual Studio legt diese Eigenschaft auf die erste Spalte nach dem Primärschlüssel fest, der einen Zeichenfolgendatentyp für die auf das Steuerelement gezogene Tabelle besitzt.<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf den Spaltennamen fest, den Sie anzeigen möchten.|

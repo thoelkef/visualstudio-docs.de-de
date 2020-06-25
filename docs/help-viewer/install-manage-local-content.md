@@ -1,7 +1,7 @@
 ---
 title: Installieren der lokalen Hilfedokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824957"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284905"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 
@@ -51,7 +51,7 @@ Standardmäßig installiert Help Viewer Inhalte, indem ein Microsoft-Onlinediens
 
     - Geben Sie den Pfad einer *MSHA-Datei* oder die URL eines Dienstendpunkts ein.
 
-    - Klicken Sie auf die Schaltfläche „Durchsuchen“ ( **…** ), um zu einer *MSHA-Datei* zu navigieren.
+    - Wählen Sie die Schaltfläche zum Durchsuchen (**...**) aus, um zu einer *MSHA* -Datei zu navigieren.
 
     - Wählen Sie in der Liste den zuletzt verwendeten Eintrag aus.
 

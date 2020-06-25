@@ -1,7 +1,7 @@
 ---
 title: Filtern und Sortieren von Daten in einer Windows Forms-Anwendung
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,21 +19,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 596397cc22cf0f0134463256c0861127dcfb81e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7c420896a883146cf60de414100fc41080220e36
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586613"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282383"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtern und Sortieren von Daten in einer Windows Forms-Anwendung
 
 Daten können gefiltert werden, indem die <xref:System.Windows.Forms.BindingSource.Filter%2A>-Eigenschaft auf einen Zeichenfolgenausdruck festlegt wird, der die gewünschten Datensätze zurückgibt.
 
-Sie sortieren die Daten, indem Sie die <xref:System.Windows.Forms.BindingSource.Sort%2A>-Eigenschaft auf den Spaltennamen festlegen, den Sie sortieren möchten. Fügen Sie `DESC` an, um Sie in absteigender Reihenfolge zu sortieren, oder fügen Sie `ASC` in aufsteigender Reihenfolge sortiert an.
+Sie sortieren die Daten, indem Sie die- <xref:System.Windows.Forms.BindingSource.Sort%2A> Eigenschaft auf den Namen der Spalte festlegen, nach der sortiert werden soll. Fügen Sie die `DESC` Sortierung in absteigender Reihenfolge an, oder fügen Sie eine Sortierung `ASC` in aufsteigender Reihenfolge ein.
 
 > [!NOTE]
-> Wenn die Anwendung <xref:System.Windows.Forms.BindingSource> Komponenten nicht verwendet, können Sie Daten mithilfe <xref:System.Data.DataView>-Objekten Filtern und sortieren. Weitere Informationen finden Sie unter ["DataViews"](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
+> Wenn die Anwendung keine Komponenten verwendet <xref:System.Windows.Forms.BindingSource> , können Sie Daten mithilfe von Objekten Filtern und Sortieren <xref:System.Data.DataView> . Weitere Informationen finden Sie unter ["DataViews"](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>So filtern Sie Daten mithilfe einer BindingSource-Komponente
 

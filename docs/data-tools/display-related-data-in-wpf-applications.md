@@ -1,7 +1,7 @@
 ---
 title: Anzeigen zugehöriger Daten in WPF-Anwendungen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ab1301e421f8326cf4cdda97556ecb19e394c29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6694d3c1521a6a405323edc33adc44dac0e66829
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586678"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282552"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Anzeigen zugehöriger Daten in WPF-Anwendungen
 
-In einigen Anwendungen können Sie mit Daten arbeiten, die aus mehreren Tabellen oder Entitäten stammen, die in einer über-/Unterordnungsbeziehung miteinander verknüpft sind. Beispielsweise können Sie ein Raster anzeigen, in dem Kunden aus einer `Customers` Tabelle angezeigt werden. Wenn der Benutzer einen bestimmten Kunden auswählt, werden in einem anderen Raster die Bestellungen für diesen Kunden aus einer zugehörigen `Orders` Tabelle angezeigt.
+In einigen Anwendungen können Sie mit Daten arbeiten, die aus mehreren Tabellen oder Entitäten stammen, die in einer über-/Unterordnungsbeziehung miteinander verknüpft sind. Beispielsweise können Sie ein Raster anzeigen, in dem Kunden aus einer Tabelle angezeigt werden `Customers` . Wenn der Benutzer einen bestimmten Kunden auswählt, werden in einem anderen Raster die Bestellungen für diesen Kunden aus einer verknüpften `Orders` Tabelle angezeigt.
 
 Sie können Daten gebundene Steuerelemente erstellen, die verwandte Daten anzeigen, indem Sie Elemente aus dem **Datenquellen** Fenster in den WPF-Designer ziehen.
 
@@ -43,13 +43,13 @@ Sie können Daten gebundene Steuerelemente erstellen, die verwandte Daten anzeig
 
 5. Ziehen Sie den übergeordneten Knoten (oder einzelne Elemente im übergeordneten Knoten) aus dem **Datenquellen** Fenster auf ein gültiges Ablage Ziel im Designer.
 
-     Visual Studio generiert XAML, das neue Daten gebundene Steuerelemente für jedes Element erstellt, das Sie ziehen. Die XAML fügt den Ressourcen des Ablage Ziels außerdem eine neue <xref:System.Windows.Data.CollectionViewSource> für die übergeordnete Tabelle oder das übergeordnete Objekt hinzu. Für einige Datenquellen generiert Visual Studio auch Code, um die Daten in die übergeordnete Tabelle oder das übergeordnete Objekt zu laden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Visual Studio generiert XAML, das neue Daten gebundene Steuerelemente für jedes Element erstellt, das Sie ziehen. Die XAML fügt den Ressourcen des Ablage Ziels auch ein neues- <xref:System.Windows.Data.CollectionViewSource> Objekt für die übergeordnete Tabelle oder das übergeordnete Objekt hinzu. Für einige Datenquellen generiert Visual Studio auch Code, um die Daten in die übergeordnete Tabelle oder das übergeordnete Objekt zu laden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 6. Suchen Sie im Fenster **Datenquellen** nach der zugehörigen untergeordneten Tabelle oder dem entsprechenden Objekt. Verknüpfte untergeordnete Tabellen und Objekte werden im unteren Bereich der Datenliste des übergeordneten Knotens als erweiterbare Knoten angezeigt.
 
 7. Ziehen Sie den untergeordneten Knoten (oder einzelne Elemente im untergeordneten Knoten) aus dem **Datenquellen** Fenster auf ein gültiges Ablage Ziel im Designer.
 
-     Visual Studio generiert XAML, das neue Daten gebundene Steuerelemente für jedes der Elemente erstellt, die Sie ziehen. Die XAML fügt den Ressourcen des Ablage Ziels außerdem eine neue <xref:System.Windows.Data.CollectionViewSource> für die untergeordnete Tabelle oder das untergeordnete Objekt hinzu. Diese neue <xref:System.Windows.Data.CollectionViewSource> ist an die-Eigenschaft der übergeordneten Tabelle oder des Objekts gebunden, das Sie soeben in den Designer gezogen haben. Für einige Datenquellen generiert Visual Studio auch Code, um die Daten in die untergeordnete Tabelle oder das untergeordnete Objekt zu laden.
+     Visual Studio generiert XAML, das neue Daten gebundene Steuerelemente für jedes der Elemente erstellt, die Sie ziehen. Die XAML fügt <xref:System.Windows.Data.CollectionViewSource> den Ressourcen des Ablage Ziels auch ein neues für die untergeordnete Tabelle oder das untergeordnete Objekt hinzu. Diese neue <xref:System.Windows.Data.CollectionViewSource> ist an die-Eigenschaft der übergeordneten Tabelle oder des Objekts gebunden, das Sie soeben in den Designer gezogen haben. Für einige Datenquellen generiert Visual Studio auch Code, um die Daten in die untergeordnete Tabelle oder das untergeordnete Objekt zu laden.
 
      In der folgenden Abbildung wird die Tabelle mit verknüpften **Bestellungen** der **Customers** -Tabelle in einem Dataset im **Datenquellen** Fenster veranschaulicht.
 

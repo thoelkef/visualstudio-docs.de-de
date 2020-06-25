@@ -1,7 +1,7 @@
 ---
 title: Binden von Steuerelementen an Daten
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587029"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283033"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 
@@ -32,11 +32,11 @@ Im Kontext der Datenbindung stellt eine Datenquelle die Daten im Arbeitsspeicher
 
 | Datenquelle | Drag & Drop-Unterstützung im **Windows Forms-Designer** | Drag & Drop-Unterstützung im **WPF-Designer** | Drag & Drop-Unterstützung im **Silverlight-Designer** |
 | - | - | - | - |
-| DataSet | Ja | Ja | Nein |
+| Dataset | Ja | Ja | Nein |
 | Entity Data Model | Ja<sup>1</sup> | Ja | Ja |
 | LINQ to SQL-Klassen | Nein<sup>2</sup> | Nein<sup>2</sup> | Nein<sup>2</sup> |
 | Dienste (einschließlich [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF-Dienste und Webdienste) | Ja | Ja | Ja |
-| Objekt | Ja | Ja | Ja |
+| Object | Ja | Ja | Ja |
 | SharePoint | Ja | Ja | Ja |
 
 1. Generieren Sie das Modell mithilfe des **Entity Data Model** -Assistenten, und ziehen Sie dann diese Objekte in den Designer.
@@ -45,7 +45,7 @@ Im Kontext der Datenbindung stellt eine Datenquelle die Daten im Arbeitsspeicher
 
 ## <a name="data-sources-window"></a>Datenquellenfenster
 
-Datenquellen stehen dem Projekt als Elemente im Fenster **Datenquellen** zur Verfügung. Dieses Fenster ist sichtbar, wenn eine Formular Entwurfs Oberfläche das aktive Fenster in Ihrem Projekt ist, oder Sie können es öffnen (wenn ein Projekt geöffnet ist), indem Sie **anzeigen** > **anderen Windows** > **Datenquellen**auswählen. Sie können Elemente aus diesem Fenster ziehen, um Steuerelemente zu erstellen, die an die zugrunde liegenden Daten gebunden sind. Außerdem können Sie die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste klicken.
+Datenquellen stehen dem Projekt als Elemente im Fenster **Datenquellen** zur Verfügung. Dieses Fenster ist sichtbar, wenn eine Formular Entwurfs Oberfläche das aktive Fenster in Ihrem Projekt ist, oder Sie können es öffnen (wenn ein Projekt geöffnet ist), **View**indem Sie  >  **andere Windows**-  >  **Datenquellen**anzeigen auswählen. Sie können Elemente aus diesem Fenster ziehen, um Steuerelemente zu erstellen, die an die zugrunde liegenden Daten gebunden sind. Außerdem können Sie die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste klicken.
 
 ![Datenquellenfenster](../data-tools/media/raddata-data-sources-window.png)
 
@@ -55,18 +55,18 @@ Für jeden Datentyp, der im Fenster **Datenquellen** angezeigt wird, wird ein st
 
 In der folgenden Tabelle sind einige der gängigsten Aufgaben aufgeführt, die Sie zum Binden von Steuerelementen an Daten ausführen.
 
-|Task|Weitere Informationen|
+|Aufgabe|Weitere Informationen|
 |----------| - |
-|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und wählen Sie > **Datenquellen** **anzeigen** aus.|
+|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und **View**wählen Sie  >  **Datenquellen**anzeigen aus.|
 |Fügen Sie dem Projekt eine Datenquelle hinzu.|[Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)|
 |Legen Sie das Steuerelement fest, das erstellt wird, wenn Sie ein Element vom Fenster **Datenquellen** in den Designer ziehen.|[Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Ändern Sie die Liste der Steuerelemente, die Elementen im Fenster **Datenquellen** zugeordnet sind.|[Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
 |Erstellen Sie datengebundene Steuerelemente.|[Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|
 |Binden an ein Objekt oder eine Auflistung.|[Binden von Objekten in Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|
-|Filtern von Daten, die in der Benutzeroberfläche angezeigt werden.|[Gewusst wie: Filtern und Sortieren von Daten in einer Windows Forms-Anwendung](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
+|Filtern von Daten, die in der Benutzeroberfläche angezeigt werden.|[Filtern und Sortieren von Daten in einer Windows Forms-Anwendung](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Anpassen von Untertiteln für Steuerelemente.|[Gewusst wie: Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Windows Forms-Datenbindung](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Datenbindung Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)

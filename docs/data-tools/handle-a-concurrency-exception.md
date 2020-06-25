@@ -1,7 +1,7 @@
 ---
 title: Behandeln einer Parallelitätsausnahme
 ms.date: 09/11/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586600"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282357"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
-Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) werden ausgelöst, wenn zwei Benutzer gleichzeitig versuchen, dieselben Daten in einer Datenbank zu ändern. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die veranschaulicht, wie ein <xref:System.Data.DBConcurrencyException>abgefangen, die Zeile, die den Fehler verursacht hat, ermittelt wird, und wie eine Strategie für die Handhabung gefunden wird.
+Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) werden ausgelöst, wenn zwei Benutzer gleichzeitig versuchen, dieselben Daten in einer Datenbank zu ändern. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die veranschaulicht, wie Sie ein Abfangen <xref:System.Data.DBConcurrencyException> , die Zeile, die den Fehler verursacht hat, finden und eine Strategie zur Behandlung der Anwendung erlernen.
 
 Diese exemplarische Vorgehensweise enthält folgende Vorgänge:
 
-1. Erstellen Sie ein neues **Windows Forms-Anwendungsprojekt**.
+1. Erstellen Sie ein neues **Windows Forms-Anwendungs** Projekt.
 
 2. Erstellen Sie ein neues DataSet, das auf der Northwind-Kunden Tabelle basiert.
 
@@ -45,7 +45,7 @@ Diese exemplarische Vorgehensweise enthält folgende Vorgänge:
 
 7. Fangen Sie den Fehler ab, und zeigen Sie anschließend die verschiedenen Versionen des Datensatzes an, um festzulegen, ob die Aktualisierung der Datenbank fortgesetzt oder abgebrochen werden soll.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -69,7 +69,7 @@ Erstellen Sie zunächst eine neue Windows Forms Anwendung:
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
@@ -102,7 +102,7 @@ Erstellen Sie als nächstes ein DataSet mit dem Namen **NorthwindDataSet**:
 
 ## <a name="create-a-data-bound-datagridview-control"></a>Erstellen eines Daten gebundenen DataGridView-Steuer Elements
 
-In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType>, indem Sie das Element **Customers** aus dem **Datenquellen** Fenster auf das Windows Form ziehen.
+In diesem Abschnitt erstellen Sie einen, <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> indem Sie das **Customers** -Element aus dem **Datenquellen** Fenster auf das Windows Form ziehen.
 
 1. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen**aus.
 
@@ -112,7 +112,7 @@ In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView?d
 
 4. Ziehen Sie die Tabelle auf einen leeren Bereich des Formulars.
 
-     Ein <xref:System.Windows.Forms.DataGridView> Steuerelement mit dem Namen **CustomersDataGridView**und eine <xref:System.Windows.Forms.BindingNavigator> mit dem Namen **CustomersBindingNavigator**werden dem Formular hinzugefügt, das an die <xref:System.Windows.Forms.BindingSource>gebunden ist. Dies wird wiederum an die Customers-Tabelle im NorthwindDataSet gebunden.
+     Ein <xref:System.Windows.Forms.DataGridView> Steuerelement mit dem Namen **CustomersDataGridView**und ein mit <xref:System.Windows.Forms.BindingNavigator> dem Namen **CustomersBindingNavigator**werden dem Formular hinzugefügt, das an das-Element gebunden ist <xref:System.Windows.Forms.BindingSource> . Dies wird wiederum an die Customers-Tabelle im NorthwindDataSet gebunden.
 
 ## <a name="test-the-form"></a>Testen des Formulars
 
@@ -120,7 +120,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten bi
 
 1. Drücken Sie **F5** , um die Anwendung auszuführen.
 
-     Das Formular wird mit einem <xref:System.Windows.Forms.DataGridView>-Steuerelement angezeigt, das mit Daten aus der Customers-Tabelle gefüllt ist.
+     Das Formular wird mit einem-Steuerelement angezeigt <xref:System.Windows.Forms.DataGridView> , das mit Daten aus der Customers-Tabelle gefüllt ist.
 
 2. Klicken Sie im Menü **Debuggen** auf **Stop Debugging** (Debuggen beenden).
 
@@ -150,10 +150,10 @@ Der Benutzer kann dann die Datenbank mit der vorgeschlagenen Version überschrei
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Hinzufügen von Code zur Behandlung der Parallelitäts Ausnahme
 
-Wenn Sie versuchen, ein Update auszuführen, und eine Ausnahme ausgelöst wird, sollten Sie in der Regel mit den Informationen arbeiten, die von der ausgelöste Ausnahme bereitgestellt werden. In diesem Abschnitt fügen Sie Code hinzu, mit dem versucht wird, die Datenbank zu aktualisieren. Außerdem werden alle <xref:System.Data.DBConcurrencyException>, die möglicherweise ausgelöst werden, sowie alle anderen Ausnahmen behandelt.
+Wenn Sie versuchen, ein Update auszuführen, und eine Ausnahme ausgelöst wird, sollten Sie in der Regel mit den Informationen arbeiten, die von der ausgelöste Ausnahme bereitgestellt werden. In diesem Abschnitt fügen Sie Code hinzu, mit dem versucht wird, die Datenbank zu aktualisieren. Außerdem werden alle ausgelösten <xref:System.Data.DBConcurrencyException> und anderen Ausnahmen behandelt.
 
 > [!NOTE]
-> Die Methoden `CreateMessage` und `ProcessDialogResults` werden später in der exemplarischen Vorgehensweise hinzugefügt.
+> Die `CreateMessage` `ProcessDialogResults` Methoden und werden später in der exemplarischen Vorgehensweise hinzugefügt.
 
 1. Fügen Sie unter der `Form1_Load`-Methode folgenden Code hinzu:
 
@@ -176,7 +176,7 @@ Erstellen Sie die Meldung, indem Sie dem **Code-Editor** folgenden Code hinzufü
 
 ### <a name="process-the-users-response"></a>Verarbeiten der Antwort des Benutzers
 
-Außerdem benötigen Sie Code, um die Antwort des Benutzers auf das Meldungs Feld zu verarbeiten. Die Optionen lauten entweder, um den aktuellen Datensatz in der Datenbank mit der vorgeschlagenen Änderung zu überschreiben, oder die lokalen Änderungen verwerfen und die Datentabelle mit dem Datensatz aktualisieren, der sich derzeit in der Datenbank befindet. Wenn der Benutzer " **Ja**" auswählt, wird die <xref:System.Data.DataTable.Merge%2A>-Methode aufgerufen, wobei das *preserveChanges* -Argument auf **true**festgelegt ist. Dies bewirkt, dass der Aktualisierungs Versuch erfolgreich ist, da die ursprüngliche Version des Datensatzes jetzt mit dem Datensatz in der Datenbank übereinstimmt.
+Außerdem benötigen Sie Code, um die Antwort des Benutzers auf das Meldungs Feld zu verarbeiten. Die Optionen lauten entweder, um den aktuellen Datensatz in der Datenbank mit der vorgeschlagenen Änderung zu überschreiben, oder die lokalen Änderungen verwerfen und die Datentabelle mit dem Datensatz aktualisieren, der sich derzeit in der Datenbank befindet. Wenn der Benutzer **Ja**auswählt, <xref:System.Data.DataTable.Merge%2A> wird die-Methode aufgerufen, wobei das *preserveChanges* -Argument auf **true**festgelegt ist. Dies bewirkt, dass der Aktualisierungs Versuch erfolgreich ist, da die ursprüngliche Version des Datensatzes jetzt mit dem Datensatz in der Datenbank übereinstimmt.
 
 Fügen Sie unter dem Code, der im vorherigen Abschnitt hinzugefügt wurde, den folgenden Code hinzu:
 
@@ -206,7 +206,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 8. Ändern Sie im ersten Datensatz im Formular (**ALFKI**) **ContactName** in **Maria Anders1**.
 
-9. Klicken Sie auf die Schaltfläche **Speichern**.
+9. Wählen Sie die Schaltfläche **Speichern** aus.
 
      Der Parallelitätsfehler wird ausgelöst, und das Meldungsfeld wird angezeigt.
 

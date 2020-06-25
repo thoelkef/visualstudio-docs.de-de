@@ -1,7 +1,7 @@
 ---
 title: Erstellen von parametrisierten TableAdapter-Abfragen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586743"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282604"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 
@@ -40,7 +40,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 - Erstellen Sie einen neuen TableAdapter und fügen Sie eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzu. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     \- oder -
+     - oder -
 
 - Fügen Sie eine Abfrage zu einem vorhandenen TableAdapter hinzu und dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung.
 
@@ -65,7 +65,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 4. Geben Sie den Namen in das Feld **Neuer Abfragename** ein, wenn Sie eine neue Abfrage erstellen.
 
-     \- oder -
+     - oder -
 
      Wählen Sie eine Abfrage im Feld **Vorhandener Abfragename** aus.
 
@@ -77,7 +77,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 ### <a name="query-for-null-values"></a>Abfragen von NULL-Werten
 
-TableAdapter-Parametern können NULL-Werte zugewiesen werden, wenn Sie Datensätze Abfragen möchten, die über keinen aktuellen Wert verfügen. Sehen Sie sich beispielsweise die folgende Abfrage mit einem `ShippedDate`-Parameter in der `WHERE`-Klausel an:
+TableAdapter-Parametern können NULL-Werte zugewiesen werden, wenn Sie Datensätze Abfragen möchten, die über keinen aktuellen Wert verfügen. Sehen Sie sich beispielsweise die folgende Abfrage mit einem `ShippedDate` Parameter in der- `WHERE` Klausel an:
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -94,9 +94,9 @@ So aktivieren Sie eine Abfrage, um NULL-Werte zu akzeptieren:
 
 1. Wählen Sie im **DataSet-Designer**die TableAdapter-Abfrage aus, die NULL-Parameterwerte akzeptieren muss.
 
-2. Wählen Sie im Fenster **Eigenschaften** **die Option** **Parameter**aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ( **...** ).
+2. Wählen Sie im Fenster **Eigenschaften** **die Option** **Parameter**aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten (**...**).
 
-3. Wählen Sie den Parameter aus, der NULL-Werte zulässt, und legen Sie die Eigenschaft **AllowDBNull** auf `true`fest.
+3. Wählen Sie den Parameter, der NULL-Werte zulässt, und legen Sie die **AllowDBNull** -Eigenschaft auf fest `true` .
 
 ## <a name="see-also"></a>Siehe auch
 

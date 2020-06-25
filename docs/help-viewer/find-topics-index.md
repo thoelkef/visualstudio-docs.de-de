@@ -1,7 +1,7 @@
 ---
 title: Verwenden des Help-Viewer-Indexes
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825947"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284957"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Suchen Sie Themen mithilfe des Help Viewer-Indexes
 
@@ -75,10 +75,10 @@ Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, ver
 
 - Geben Sie ein Synonym des Worts oder Verbs ein, das Sie suchen.
 
-    Wenn Sie beispielsweise den Begriff „Erstellung“ eingegeben haben, versuchen Sie es stattdessen mit „erstellen“.
+    Wenn Sie beispielsweise den Begriff „erstellen“ eingegeben haben, versuchen Sie es stattdessen mit „anlegen“.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Find topics in the TOC (Vorgehensweise: Finden von Themen im Inhaltsverzeichnis)](../help-viewer/find-topics-toc.md)
-- [Vorgehensweise: Search for topics (Vorgehensweise: Suchen von Themen)](../help-viewer/find-topics.md)
+- [Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis](../help-viewer/find-topics-toc.md)
+- [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
