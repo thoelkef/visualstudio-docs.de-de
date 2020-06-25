@@ -1,16 +1,16 @@
 ---
 title: Übersicht über XAML
-ms.date: 05/20/2020
-ms.topic: reference
+ms.date: 06/23/2020
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 97f3bc7777023903d5fc38ad1bda7cde45b683b6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e14e23f9820301374bd435484ba784edf50294bb
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183482"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331953"
 ---
 # <a name="overview-of-xaml"></a>Übersicht über XAML
 
@@ -28,15 +28,21 @@ Der folgende XAML-Code definiert ein einfaches Schaltflächen-Steuerelement.
 
 XAML wird auch zum Definieren von Workflows in [Windows Workflow Foundation-Apps (WF)](/dotnet/framework/windows-workflow-foundation/serializing-workflows-and-activities-to-and-from-xaml) verwendet.
 
+## <a name="xaml-code-editor"></a>XAML-Code-Editor
+
+Der [XAML-Code-Editor](xaml-code-editor.md) in der Visual Studio-IDE enthält alle Tools, die Sie zum Erstellen von WPF-und UWP-Apps für die Windows-Plattform und xamarin. Forms benötigen. Obwohl die IDE (integrierte Entwicklungsumgebung) in Visual Studio viele Features bietet, die Sie zum Entwickeln von Apps für andere Plattformen verwenden können, verfügt sie auch über einige Features, die auch für XAML spezifisch sind.
+
 ## <a name="xaml-designer"></a>XAML-Designer
 
-Visual Studio und Blend für Visual Studio beinhalten einen XAML-Designer, der Sie beim Erstellen von Benutzeroberflächen (UI) für WPF-, UWP-und Xamarin.Forms-Apps unterstützt. Sie können Steuerelemente aus dem Fenster „Toolbox“ oder „Objekte“ ziehen und Eigenschaften im Eigenschaftenfenster festlegen. Wenn Sie dies tun, erstellen Visual Studio und Blend für Visual Studio den entsprechenden XAML-Code. Wenn Sie den XAML-Code direkt bearbeiten möchten, ist dies ebenfalls möglich.
+Visual Studio und Blend für Visual Studio bieten eine [XAML-Designer](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) , die Sie beim Erstellen von Benutzeroberflächen (UI) für WPF-, UWP-und xamarin. Forms-Apps unterstützt. Sie können Steuerelemente aus dem Fenster „Toolbox“ oder „Objekte“ ziehen und Eigenschaften im Eigenschaftenfenster festlegen. Wenn Sie dies tun, erstellen Visual Studio und Blend für Visual Studio den entsprechenden XAML-Code. Wenn Sie den XAML-Code direkt bearbeiten möchten, ist dies ebenfalls möglich.
 
-In den Artikeln in dieser Dokumentationsreihe wird der XAML-Designer in Visual Studio und Blend für Visual Studio erläutert.
+## <a name="whats-new"></a>Neues
 
-## <a name="whats-new"></a>Neuigkeiten
+Die neuesten Informationen finden Sie in den folgenden Ressourcen:
 
-Die neuesten Informationen finden Sie im Blogbeitrag [Neuerungen in den XAML-Entwicklertools in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/) , den [Verbesserungen an XAML-Tools in Visual Studio 2019, Version 16,7 Preview 1](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/) und den [neuen XAML-Funktionen in Visual Studio](https://youtu.be/yI9OyA4ZM2E) Video auf YouTube.
+- Die **[Verbesserungen an XAML-Tools in Visual Studio 2019 Version 16,7 Preview 1](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/)** -Blogbeitrag
+- Der Blogbeitrag **[zu den Neuerungen in XAML Developer Tools in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)**
+- Die **[neuen XAML-Funktionen in Visual Studio](https://youtu.be/yI9OyA4ZM2E)** -Videos auf YouTube
 
 ## <a name="see-also"></a>Siehe auch
 

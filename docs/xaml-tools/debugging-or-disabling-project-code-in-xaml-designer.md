@@ -1,17 +1,17 @@
 ---
 title: Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921166"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331068"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 
@@ -35,7 +35,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
 1. Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um den Designer neu zu laden** aus.
 
-2. Wählen Sie in der Menüleiste **Debuggen** > **Debuggen starten** , um die Anwendung zu erstellen und auszuführen.
+2. Wählen Sie in der Menü **Debug**Leiste  >  **Debuggen Debuggen starten** , um die Anwendung zu erstellen und auszuführen.
 
      Wenn die Anwendung erfolgreich erstellt wurde und ausgeführt wird, wird die Ausnahme zur Entwurfszeit ggf. durch Projektcode verursacht, der im Designer ausgeführt wird.
 
@@ -53,7 +53,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
 5. Legen Sie einen Haltepunkt in Ihrem Projektcode fest.
 
-6. Wählen Sie in der neuen Instanz von Visual Studio auf der Menüleiste **Debuggen** > **an den Prozess anhängen**aus.
+6. Wählen Sie in der neuen Instanz von Visual Studio auf der Menüleiste **Debuggen**  >  **an den Prozess anhängen**aus.
 
 7. Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** die Datei **XDesProc.exe**aus, und wählen Sie dann die Schaltfläche **Anfügen** aus.
 
@@ -61,7 +61,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
      Dies ist der Prozess für den XAML-Designer in der ersten Instanz von Visual Studio.
 
-8. Klicken **Sie** > in der ersten Instanz von Visual Studio auf der Menüleiste auf**Debuggen Debuggen starten**.
+8. Klicken Sie in der ersten Instanz von Visual Studio auf der Menüleiste auf **Debug**  >  **Debuggen Debuggen starten**.
 
      Sie können den Code nun schrittweise durchlaufen, der im Designer ausgeführt wird.
 
@@ -96,6 +96,6 @@ Um die Anzeigeoptionen für Steuerelemente zu ändern, klicken Sie auf das Symbo
 
 Wenn Sie **Nur Plattformsteuerelemente anzeigen** auswählen, werden alle benutzerdefinierten Steuerelemente, die von SDKs, Kunden-Benutzersteuerelementen usw. stammen, nicht vollständig gerendert. Stattdessen werden sie durch Fallbacksteuerelemente ersetzt, um die Größe und Position des Steuerelements zu zeigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio](designing-xaml-in-visual-studio.md)
