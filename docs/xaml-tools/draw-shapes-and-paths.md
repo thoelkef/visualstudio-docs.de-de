@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921154"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350822"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
 
@@ -86,7 +86,7 @@ Verwenden Sie das Tool **Auswahl**, um den Pfad auszuwählen. Verwenden Sie den 
 
 ## <a name="convert-a-shape-to-a-path"></a>Konvertieren von Formen in Pfade
 
-Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad. Wählen Sie die Form aus, und wählen Sie dann **Format** > **Pfad** > **in Pfad konvertieren**aus.
+Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad. Wählen Sie die Form aus, und wählen Sie dann **Format**  >  **Pfad**  >  **in Pfad konvertieren**aus.
 
 **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Konvertieren von Formen in einen Pfad](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)
 
@@ -99,11 +99,14 @@ Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.
 
 ![Kombinieren von Pfaden](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|||||
-|-|-|-|-|
-|![Zwei Formen vor dem Vereinen](../designers/media/b1_1.png)|Zwei Formen vor dem Vereinen|![Intersect](../designers/media/b1_4.png)|Intersect|
-|![Vereinigen](../designers/media/b1_2.png)|Vereinigen|![Überlappung ausschließen](../designers/media/b1_5.png)|Überlappung ausschließen|
-|![Dividieren](../designers/media/b1_3.png)|Dividieren|![Subtrahieren](../designers/media/b1_6.png)|Subtrahieren|
+|Number|Aktion|
+|-|-|
+|![Zwei Formen vor dem Vereinen](../designers/media/b1_1.png)|Zwei Formen vor dem Vereinen|
+|![Vereinigen](../designers/media/b1_2.png)|Vereinigen|
+|![Dividieren](../designers/media/b1_3.png)|Dividieren|
+|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![Überlappung ausschließen](../designers/media/b1_5.png)|Überlappung ausschließen|
+|![Subtrahieren](../designers/media/b1_6.png)|Subtrahieren|
 
 **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Kombinieren von Pfaden](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)
 
