@@ -11,6 +11,8 @@
         - name: Übersicht
           displayName: msbuild concepts
           href: msbuild-concepts.md
+        - name: So erstellt MSBuild Projekte
+          href: build-process-overview.md
         - name: Eigenschaften
           items:
             - name: MSBuild-Eigenschaften
