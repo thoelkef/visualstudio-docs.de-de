@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184444"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286299"
 ---
 # <a name="secure-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen unterliegen in .NET Framework Einschränkungen in Bezug auf die Codezugriffssicherheit, um den Zugriff zu begrenzen, den Code auf geschützte Ressourcen und Vorgänge hat. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen anwenden. Die Anwendungen können Zonen mit voller Vertrauenswürdigkeit oder teilweise vertrauenswürdige Zonen verwenden, z. B. die Internet- und Intranetzonen, um den Zugriff einzuschränken.
 
  Außerdem verwendet ClickOnce Zertifikate, um die Echtheit des Herausgebers einer Anwendung zu überprüfen und die Anwendungs- und Bereitstellungsmanifeste zu signieren. Auf diese Weise wird sichergestellt, dass die Dateien nicht manipuliert wurden. Das Signieren ist ein optionaler Schritt, der das Ändern der Anwendungsdateien nach dem Generieren der Manifeste vereinfacht. Ohne signierte Manifeste ist es jedoch schwierig sicherzustellen, dass das Installationsprogramm der Anwendung nicht durch Man-in-the-middle-Sicherheitsangriffe manipuliert wird. Aus diesem Grund wird empfohlen, das Anwendungs- und Bereitstellungsmanifest zu signieren, um die Anwendungen zu schützen.
 
-## <a name="zones"></a>„Zones“ (Zonen)
+## <a name="zones"></a>Zones
  Anwendungen, die mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Technologie bereitgestellt werden, sind auf einen Berechtigungssatz und Aktionen beschränkt, die von der Sicherheitszone definiert werden. Sicherheitszonen werden in Internet Explorer definiert und basieren auf dem Speicherort der Anwendung. In der folgenden Tabelle werden die Standardberechtigungen aufgelistet, die auf dem Bereitstellungsspeicherort beruhen:
 
 |Bereitstellungsort|Sicherheitszone|
@@ -50,7 +50,7 @@ ms.locfileid: "84184444"
  Weitere Informationen zur Codezugriffssicherheit und zu ClickOnce finden Sie unter [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="code-signing-certificates"></a>Codesignaturzertifikate
- Um eine Anwendung mithilfe der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung zu veröffentlichen, können Sie die Anwendungs- und Bereitstellungsmanifeste für die Anwendung mit einem Schlüsselpaar aus öffentlichem und privatem Schlüssel signieren. Die Tools zum Signieren eines Manifests sind im **Projekt-Designer** auf der Seite **Signierung**verfügbar. Weitere Informationen finden Sie unter [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md). Sie können die Manifeste auch während des Veröffentlichungsvorgangs mit einer Schlüsseldatei signieren, wozu Sie den Veröffentlichungs-Assistenten verwenden.
+ Um eine Anwendung mithilfe der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung zu veröffentlichen, können Sie die Anwendungs- und Bereitstellungsmanifeste für die Anwendung mit einem Schlüsselpaar aus öffentlichem und privatem Schlüssel signieren. Die Tools zum Signieren eines Manifests sind im **Projekt-Designer** auf der Seite **Signierung**verfügbar. Weitere Informationen finden Sie unter [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md).
 
  Nach dem Signieren der Manifeste werden dem Benutzer während der Installation die Herausgeberinformationen auf der Grundlage der Authenticode-Signatur im Dialogfeld für Berechtigungen angezeigt, um nachzuweisen, dass die Anwendung aus einer vertrauenswürdigen Quelle stammt.
 
