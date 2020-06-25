@@ -1,7 +1,7 @@
 ---
-title: 'Gewusst wie: Ausführen der Codeanalyse manuell für verwalteten Code'
+title: Manuelles Ausführen der Code Analyse für verwalteten Code
 ms.date: 11/04/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
 - run code analysis
@@ -11,23 +11,23 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5fdeb56a0c0f4c5904a00ec53d64dae87aa4e9a5
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 584ddc9953b6f1522d12722fdd9a24d71e4e1538
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431383"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371832"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Gewusst wie: Ausführen der Codeanalyse manuell für verwalteten Code (erfordert Visual Studio 2019 Version 16.5 oder höher)
-Standardmäßig analysieren .NET Compiler Platform ("Roslyn")-Codeanalysatoren Ihren C- oder Visual Basic-Code während der Eingabe durch Live-Analysen sowie während des Builds. Daher müssten Sie normalerweise keine Codeanalyse manuell auslösen. Es gibt jedoch einige Szenarien, in denen Sie die Codeanalyse manuell auslösen möchten:
+# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Gewusst wie: Manuelles Ausführen der Code Analyse für verwalteten Code (erfordert Visual Studio 2019, Version 16,5 oder höher)
+Standardmäßig analysieren .NET Compiler Platform ("Roslyn")-Code Analysen ihren c#-oder Visual Basic Code bei der Typerstellung, indem Sie Live Analysen und während des Builds ausführen. Daher ist es normalerweise nicht erforderlich, die Code Analyse manuell zu initiieren. Es gibt jedoch einige Szenarien, in denen Sie ggf. die Code Analyse manuell auslassen möchten:
 
-- Standardmäßig führt die Livecodeanalyse Analysatoren nur für geöffnete Dateien in Visual Studio aus. Möglicherweise möchten Sie jedoch Codeanalysewarnungen für alle Dateien in einem bestimmten Projekt oder einer bestimmten Projektmappe anzeigen. Wenn dies der Fall ist, sollten Sie die Codeanalyse einmal für ein Projekt oder eine Projektmappe auslösen. Alternativ können Sie die kontinuierliche Livecodeanalyse für die gesamte Lösung aktivieren. Weitere Informationen finden Sie unter [Gewusst wie: Konfigurieren des Livecodeanalysebereichs für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md).
-- Sie können den Ausführungsworkflow für die Bedarfscodeanalyse einer kontinuierlichen Liveanalyse oder Buildzeitanalyse vorziehen. Wenn dies der Zutun hat, können Sie die Analyzer-Ausführung während der Live-Analyse und/oder beim Erstellen deaktivieren. Informationen zum Deaktivieren der Analyse finden Sie unter [Deaktivieren der Quellcodeanalyse](disable-code-analysis.md). Dann sollten Sie die Codeanalyse einmal für ein Projekt oder eine Projektmappe manuell auslösen. 
+- Standardmäßig führt die Live Code Analyse Analysetools nur für geöffnete Dateien in Visual Studio aus. Möglicherweise interessieren Sie sich jedoch für die Anzeige von Code Analyse Warnungen für alle Dateien in einem bestimmten Projekt oder einer bestimmten Projekt Mappe. Wenn dies der Fall ist, empfiehlt es sich, die Code Analyse für ein Projekt oder eine Projekt Mappe einmal zu initiieren. Alternativ können Sie die kontinuierliche Live Code Analyse für die gesamte Projekt Mappe aktivieren. Weitere Informationen finden Sie unter Gewusst [wie: Konfigurieren des Gültigkeits Bereichs der Live-Code Analyse für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md).
+- Möglicherweise bevorzugen Sie den bedarfsgesteuerten Workflow für die Ausführung der Code Analyse für fortlaufende Live Analysen oder die Analyse der Buildzeit. Wenn dies der Fall ist, können Sie die Analyseprogramm Ausführung während der Live Analyse und/oder der Erstellung deaktivieren. Weitere Informationen zum Deaktivieren der Analyse finden [Sie unter Deaktivieren der Quell Code Analyse](disable-code-analysis.md). Anschließend sollten Sie die Code Analyse in einem Projekt oder einer Projekt Mappe einmal manuell Auslösers. 
 
 ### <a name="run-code-analysis-manually"></a>Manuelles Ausführen der Codeanalyse
 
-1. Klicken Sie im **Projektmappen-Explorer**auf das Projekt.
+1. Klicken Sie in **Projektmappen-Explorer**auf das Projekt.
 
-2. Klicken Sie im Menü **Analysieren** auf **Codeanalyse für** *Projektname*ausführen .
+2. Klicken Sie im Menü **analysieren** auf **Code Analyse für** *Projekt Name*ausführen.
 
-Die Codeanalyse beginnt im Hintergrund. Die Meldung Ausführen der **Codeanalyse \<für>...** in der Visual Studio-Statusleiste in der linken unteren Ecke. Sobald die Codeanalyse abgeschlossen ist, ändert sich die Statusmeldung in **Codeanalyse, \< **die für die Projekt->abgeschlossen ist. Die Fehlerliste wird in Kürze mit allen Diagnosen für die Codeanalyse aktualisiert.
+Die Code Analyse wird im Hintergrund gestartet. In der Visual Studio-Statusleiste in der linken unteren Ecke wird die Meldung angezeigt, **dass die Code Analyse für \<project> ... ausgeführt** wird. Wenn die Code Analyse abgeschlossen ist, wird die Statusmeldung in die **Code Analyse \<project> abgeschlossen für **geändert. Die Fehlerliste wird in Kürze mit der gesamten Code Analyse Diagnose aktualisiert.

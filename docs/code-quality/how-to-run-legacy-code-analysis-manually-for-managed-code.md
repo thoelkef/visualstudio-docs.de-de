@@ -1,7 +1,7 @@
 ---
-title: 'Gewusst wie: Ausführen der Legacycodeanalyse manuell für verwalteten Code'
+title: Manuelles Ausführen der Legacy Code Analyse für verwalteten Code
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
@@ -10,25 +10,25 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d2693bcff8e83839b4171bae60b138c967f10e5
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 38c3de83dc0df39314ad236f647c69bbe614b75d
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432084"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371819"
 ---
-# <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Gewusst wie: Ausführen der Legacycodeanalyse manuell für verwalteten Code
-Das Codeanalysetool informiert Sie über mögliche Fehler im Quellcode. Sie können die Codeanalyse bei jedem Build eines Codeprojekts automatisch ausführen und die Codeanalyse auch manuell ausführen. Die Regeln, die beim Ausführen der Codeanalyse überprüft werden, werden auf der Seite Codeanalyse der Projekteigenschaftenseiten angegeben. Weitere Informationen finden Sie unter [Gewusst wie: Konfigurieren der Codeanalyse für ein Verwaltetes Codeprojekt](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
+# <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Gewusst wie: Manuelles Ausführen der Legacy Code Analyse für verwalteten Code
+Das Code Analysetool enthält Informationen zu möglichen Fehlern im Quellcode. Sie können die Code Analyse automatisch mit jedem Build eines Code Projekts ausführen, und Sie können die Code Analyse auch manuell ausführen. Die Regeln, die beim Ausführen der Code Analyse geprüft werden, werden auf der Seite Code Analyse der Eigenschaften Seiten des Projekts angegeben. Weitere Informationen finden Sie unter Gewusst [wie: Konfigurieren der Code Analyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
 
-## <a name="to-run-code-analysis-manually"></a>So führen Sie die Codeanalyse manuell aus
+## <a name="to-run-code-analysis-manually"></a>So führen Sie die Code Analyse manuell aus
 
-1. Wenn Sie Visual Studio 2019 Version 16.5 oder höher haben, führen Sie den folgenden Befehl für die Eingabeaufforderung aus, bevor Sie Visual Studio starten:
+1. Wenn Sie Visual Studio 2019 Version 16,5 oder höher ausführen, führen Sie vor dem Starten von Visual Studio den folgenden Befehl an der Eingabeaufforderung aus:
 
 ```
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. Klicken Sie im **Projektmappen-Explorer**auf das Projekt.
+2. Klicken Sie in **Projektmappen-Explorer**auf das Projekt.
 
-3. Klicken Sie im Menü **Analysieren** auf **Codeanalyse für** *Projektname*ausführen .
+3. Klicken Sie im Menü **analysieren** auf **Code Analyse für** *Projekt Name*ausführen.
 
