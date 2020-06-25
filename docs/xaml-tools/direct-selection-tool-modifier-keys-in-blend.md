@@ -2,19 +2,19 @@
 title: Zusatztasten für Direktauswahlwerkzeug
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ac2ee5c5e71dd08e7c9aee81e640cf6f856b6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "82921064"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332307"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Direktauswahlwerkzeug in Blend für Visual Studio
 
@@ -33,7 +33,7 @@ In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie die
 |Ein Segment in eine Kurve umwandeln, die die Position des Mauszeigers schneidet|Bewegen Sie den Mauszeiger über ein Segment auf einem Pfad, halten Sie **ALT** gedrückt, und ziehen Sie dann das Segment.|![Ein Segment in eine Kurve umwandeln, die die Position des Mauszeigers schneidet](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Zeiger zum Konvertieren von Segmenten|
 |Die ausgewählte Tangente unabhängig von der anderen Seite anpassen|Wählen Sie einen Punkt oder ein Segment direkt aus, halten Sie **ALT** gedrückt, und ziehen Sie dann einen Tangentenendpunkt.|![Die ausgewählte Tangente unabhängig von der anderen Seite anpassen](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> Zeiger zum Konvertieren von Tangenten|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Zusatztasten der Zeichenflächen](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [Stifttool-Zusatztasten](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

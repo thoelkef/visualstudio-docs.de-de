@@ -6,15 +6,14 @@ ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "82921256"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331037"
 ---
 # <a name="debug-xaml-in-blend"></a>Debuggen von XAML in Blend
 
@@ -55,7 +54,7 @@ Das folgende Beispiel führt Sie durch eine einfache XAML-Debuggingsitzung in Bl
 
 3. Klicken Sie in der Liste der Projektvorlagen auf **leere app (universelle Windows-APP)**.
 
-4. Geben `DebuggingSample`Sie im Textfeld **Name den Namen** ein.
+4. Geben Sie im Textfeld **Name den Namen** ein `DebuggingSample` .
 
 5. Überprüfen Sie im Textfeld **Speicherort** den Projektspeicherort.
 
@@ -89,11 +88,11 @@ Das folgende Beispiel führt Sie durch eine einfache XAML-Debuggingsitzung in Bl
     </Grid>
     ```
 
-10. Drücken Sie **STRG**+**UMSCHALT**+**B** , um das Projekt zu erstellen.
+10. Drücken Sie **STRG** + **UMSCHALT** + **B** , um das Projekt zu erstellen.
 
     Eine Fehlermeldung wird angezeigt, dass das Projekt nicht erstellt werden kann. Im unteren Bereich der App wird zudem der Bereich **Ergebnisse** mit der Liste der Fehler angezeigt.
 
-    ![XAML in Blend für Visual Studio debuggen](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
+    ![Debuggen von XAML in Blend für Visual Studio](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
 
 ### <a name="resolve-xaml-errors"></a>Auflösen von XAML-Fehlern
 
@@ -113,7 +112,7 @@ Wenn XAML-Fehler ermittelt werden, zeigt die Entwurfsoberfläche eine Warnung an
 
     ![Debuggen von XAML in Blend für Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    Drücken Sie **STRG**+**UMSCHALT**+**B** , um das Projekt zu erstellen, und vergewissern Sie sich, dass keine weiteren Fehler vorhanden sind.
+    Drücken Sie **STRG** + **UMSCHALT** + **B** , um das Projekt zu erstellen, und vergewissern Sie sich, dass keine weiteren Fehler vorhanden sind.
 
 ## <a name="debug-in-visual-studio"></a>Debuggen in Visual Studio
 
@@ -121,6 +120,6 @@ Sie können Blend-Projekte in Visual Studio öffnen, um den Code in Ihrer APP le
 
 Weitere Informationen zum Debuggen Ihrer App finden Sie unter [Debuggen von UWP-apps in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="get-help"></a>Hier erhalten Sie Hilfe
+## <a name="get-help"></a>Hilfe erhalten
 
 Wenn Sie weitere Hilfe beim Debuggen Ihrer Blend-App benötigen, können Sie im [UWP-App-Communityforum](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) nach Beiträgen suchen, die Ihr Problem betreffen, oder eine Frage stellen.

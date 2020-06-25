@@ -1,21 +1,22 @@
 ---
 title: XAML-Code-Editor
+description: Tour durch den XAML-Code-Editor in Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289719"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329176"
 ---
 # <a name="xaml-code-editor"></a>XAML-Code-Editor
 
-Der XAML-Code-Editor in der [Visual Studio-IDE](../get-started/visual-studio-ide.md) enthält alle Tools, die Sie zum Erstellen von WPF-und UWP-Apps für die Windows-Plattform und [xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/)benötigen. In diesem Artikel wird die Rolle des Code-Editors bei der Entwicklung von XAML-basierten apps und die Features beschrieben, die für den XAML-Code-Editor in Visual Studio 2019 eindeutig sind.
+Der XAML-Code-Editor in der [Visual Studio-IDE](../get-started/visual-studio-ide.md) enthält alle Tools, die Sie zum Erstellen von WPF-und UWP-Apps für die Windows-Plattform und [xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/)benötigen. In diesem Artikel werden sowohl die Rolle, die der Code-Editor bei der Entwicklung von XAML-basierten apps spielt, als auch die Features beschrieben, die für den XAML-Code-Editor in Visual Studio 2019 eindeutig sind.
 
 Betrachten wir zunächst die IDE (integrierte Entwicklungsumgebung) mit einem geöffneten WPF-Projekt. Die folgende Abbildung zeigt einige der wichtigsten IDE-Tools, die Sie zusammen mit dem XAML-Code-Editor verwenden.
 
@@ -182,7 +183,7 @@ Die meisten der folgenden Features sind universell in der Visual Studio-IDE verf
 
 Code Ausschnitte sind kleine Blöcke von wiederverwendbarem Code, die Sie in eine Codedatei einfügen können, indem Sie mit der rechten Maustaste auf den Kontextmenü Befehl " **Ausschnitt einfügen** " oder eine Kombination aus Tastenkombinationen (**STRG** + **K**, **STRG** + **X**) klicken. Wir haben [IntelliSense](../ide/using-intellisense.md) verbessert, sodass XAML-Ausschnitte angezeigt werden, die sowohl für integrierte Code Ausschnitte als auch für alle benutzerdefinierten Code Ausschnitte funktionieren, die Sie manuell hinzufügen. Zu den Standard-XAML-Code Ausschnitten zählen `#region` , `Column definition` , `Row definition` , `Setter` und `Tag` .
 
-![Der XAML-Code-Editor mit #Region Optionen, die in IntelliSense angezeigt werden.](media/xaml-code-snippets.png "Screenshot des XAML-Code-Editors mit #Region Optionen, die in IntelliSense angezeigt werden")
+![Der XAML-Code-Editor mit XAML-Code Ausschnitt Optionen in IntelliSense](media/xaml-code-snippets.png "Screenshot des XAML-Code-Editors mit XAML-Code Ausschnitt Optionen in IntelliSense")
 
 Weitere Informationen finden Sie auf den Seiten [Code Ausschnitte](../ide/code-snippets.md) und [c#-Code Ausschnitte](../ide/visual-csharp-code-snippets.md) .
 
