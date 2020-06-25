@@ -9,19 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "82921232"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329088"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Anzeigen von Daten in Blend für Visual Studio
 
 Sie können Beispieldaten im Designer anzeigen, um das Layout der Seiten anzupassen. Sie können Beispieldaten von Grund auf neu oder mithilfe einer vorhandenen Klasse generieren. Sie können sich auch mit *Livedaten* verbinden, die beim Ausführen der Anwendung angezeigt werden.
 
 > [!NOTE]
-> Das **Daten** Panel in Blend wird nur für Projekte unterstützt, die auf .NET Framework abzielen. Dies wird nicht für UWP-Projekte oder-Projekte unterstützt, die auf .net Core abzielen. 
+> Das **Daten** Panel in Blend wird nur für Projekte unterstützt, die auf .NET Framework abzielen. Dies wird nicht für UWP-Projekte oder-Projekte unterstützt, die auf .net Core abzielen.
 
 ## <a name="generate-sample-data"></a>Generieren von Beispieldaten
 
@@ -45,6 +45,6 @@ Wenn Sie bereits Klassen erstellt haben, die die Struktur Ihrer Daten beschreibe
 
 **Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

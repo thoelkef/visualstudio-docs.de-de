@@ -9,15 +9,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d8653b2bcf06801c18e21d9a13b21843abc7d7
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "82921250"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328481"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Problembehandlung beim Neuladen von XAML im laufenden Betrieb
 
@@ -35,30 +34,30 @@ Die Funktion ist standardmäßig aktiviert. Wenn Sie mit dem Debuggen Ihrer APP 
 
 ![XAML-Hot-Upload verfügbar](../debugger/media/xaml-hot-reload-available.png)
 
-Wenn die in-App-Symbolleiste nicht angezeigt wird, öffnen Sie **Debugoptionen** > **Options** > **Allgemein**. Stellen Sie sicher, dass beide Optionen **UI-Debuggingtools für XAML aktivieren** und **XAML-Hot-Neuladen aktivieren** ausgewählt sind.
+Wenn die in-App-Symbolleiste nicht angezeigt wird, öffnen Sie **Debugoptionen**  >  **Options**  >  **Allgemein**. Stellen Sie sicher, dass beide Optionen **UI-Debuggingtools für XAML aktivieren** und **XAML-Hot-Neuladen aktivieren** ausgewählt sind.
 
 ![XAML-Hot-Upload aktivieren](../debugger/media/xaml-hot-reload-enable.png)
 
-Wenn diese Optionen ausgewählt sind, wechseln Sie zu Live Visual Tree (**Debuggen** > **Windows** > **Live Visual Tree**), und vergewissern Sie sich, dass die Schaltfläche **Lauf Zeit Tools in der Anwendungs** Symbolleiste anzeigen (ganz links) ausgewählt ist.
+Wenn diese Optionen ausgewählt sind, wechseln Sie zu Live Visual Tree (**Debuggen**Sie  >  **Windows**  >  **Live Visual Tree**), und vergewissern Sie sich, dass die Schaltfläche **Lauf Zeit Tools in der Anwendungs** Symbolleiste anzeigen (ganz links) ausgewählt ist.
 
 ![XAML-Hot-Upload aktivieren](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Vergewissern Sie sich, dass Sie Debuggen statt an den Prozess anhängen verwenden.
 
-XAML Hot Neuladen erfordert, dass die `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` Umgebungsvariable zum Zeitpunkt des Starts der Anwendung auf 1 festgelegt ist. Visual Studio legt dies automatisch als **Teil des** > Befehls**Debuggen Debuggen starten** (oder **F5**) fest. Wenn Sie XAML Hot Upload mit dem Befehl **Debuggen** > **an den Prozess anhängen** verwenden möchten, legen Sie die Umgebungsvariable selbst fest.
+XAML Hot Neuladen erfordert, dass die Umgebungsvariable zum `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` Zeitpunkt des Starts der Anwendung auf 1 festgelegt ist. Visual Studio legt dies automatisch als **Teil des**  >  Befehls**Debuggen Debuggen starten** (oder **F5**) fest. Wenn Sie XAML Hot Upload mit dem Befehl **Debuggen**  >  **an den Prozess anhängen** verwenden möchten, legen Sie die Umgebungsvariable selbst fest.
 
 > [!NOTE]
-> Um eine Umgebungsvariable festzulegen, verwenden Sie die Schaltfläche Start, um nach "Umgebungsvariable" zu suchen, und wählen Sie " **System Umgebungsvariablen bearbeiten**" aus. Wählen Sie im daraufhin geöffneten Dialogfeld **Umgebungsvariablen**aus, fügen Sie es als Benutzervariable hinzu, und legen Sie den Wert `1`auf fest. Entfernen Sie die Variable, wenn Sie das Debuggen abgeschlossen haben.
+> Um eine Umgebungsvariable festzulegen, verwenden Sie die Schaltfläche Start, um nach "Umgebungsvariable" zu suchen, und wählen Sie " **System Umgebungsvariablen bearbeiten**" aus. Wählen Sie im daraufhin geöffneten Dialogfeld **Umgebungsvariablen**aus, fügen Sie es als Benutzervariable hinzu, und legen Sie den Wert auf fest `1` . Entfernen Sie die Variable, wenn Sie das Debuggen abgeschlossen haben.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Überprüfen Sie, ob die MSBuild-Eigenschaften richtig sind
 
-Standardmäßig sind Quell Informationen in einer Debugkonfiguration enthalten. Sie wird von MSBuild-Eigenschaften in ihren Projektdateien (z. b. *. csproj) gesteuert. Für WPF ist `XamlDebuggingInformation`die-Eigenschaft, die auf `True`festgelegt werden muss. Bei UWP ist `DisableXbfLineInfo`die-Eigenschaft, die auf `False`festgelegt werden muss. Beispiel:
+Standardmäßig sind Quell Informationen in einer Debugkonfiguration enthalten. Sie wird von MSBuild-Eigenschaften in ihren Projektdateien (z. b. *. csproj) gesteuert. Für WPF ist die-Eigenschaft `XamlDebuggingInformation` , die auf festgelegt werden muss `True` . Bei UWP ist die-Eigenschaft `DisableXbfLineInfo` , die auf festgelegt werden muss `False` . Zum Beispiel:
 
 WPF:
 
 `<XamlDebuggingInformation>True</XamlDebuggingInformation>`
 
-UWP
+UWP: 
 
 `<DisableXbfLineInfo>False</DisableXbfLineInfo>`
 
@@ -70,6 +69,6 @@ Sie müssen entweder die korrekte MSBuild-Eigenschaft manuell festlegen, um das 
 
 Wenn die XAML-Datei Fehler im **Fehlerliste**anzeigt, funktioniert das Laden von XAML-Hot möglicherweise nicht.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Schreiben und Debuggen von XAML-Code mit XAML Hot Neuladen](xaml-hot-reload.md)

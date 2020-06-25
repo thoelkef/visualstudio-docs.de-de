@@ -2,17 +2,17 @@
 title: Animieren von Objekten im XAML-Designer
 titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ab5be23d2756c1afc38f5ea071fe10a621c5cf2e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e568b5e19d7d5f8034ba2bd3b96e3b6968c4b5fe
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921208"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328502"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animieren von Objekten im XAML-Designer
 
@@ -46,6 +46,6 @@ Die folgenden Abbildungen zeigen ein Storyboard mit dem Namen **Storyboard1**. D
 
 Experimentieren Sie mit anderen Änderungen am Rechteck zu unterschiedlichen Zeitpunkten. Beispielsweise können Sie im Eigenschaftenfenster die Füllfarbe ändern oder die Ausrichtung umkehren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)
