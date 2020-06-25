@@ -1,7 +1,7 @@
 ---
 title: Speichern von Daten mit den TableAdapter-DBDirect-Methoden
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,20 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586210"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281608"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Speichern von Daten mit den TableAdapter-DBDirect-Methoden
 
-Diese exemplarische Vorgehensweise enthält ausführliche Anweisungen zum Ausführen von SQL-Anweisungen direkt für eine-Datenbank mithilfe der DBDirect-Methoden eines TableAdapter. Die DBDirect-Methoden eines TableAdapters bieten ein sehr gutes Maß an Kontrolle über Änderungen an der Datenbank. Sie können Sie verwenden, um bestimmte SQL-Anweisungen und gespeicherte Prozeduren auszuführen, indem Sie die einzelnen `Insert`-, `Update`-und `Delete`-Methoden aufrufen, die von der Anwendung benötigt werden (im Gegensatz zur überladenen `Update`-Methode, die die Update-, INSERT-und DELETE-Anweisungen in einem Aufruf ausführt).
+Diese exemplarische Vorgehensweise enthält ausführliche Anweisungen zum Ausführen von SQL-Anweisungen direkt für eine-Datenbank mithilfe der DBDirect-Methoden eines TableAdapter. Die DBDirect-Methoden eines TableAdapters bieten ein sehr gutes Maß an Kontrolle über Änderungen an der Datenbank. Sie können Sie verwenden, um bestimmte SQL-Anweisungen und gespeicherte Prozeduren auszuführen, indem Sie die einzelnen `Insert` `Update` Methoden, und nach `Delete` Bedarf von der Anwendung aufrufen (im Gegensatz zur überladenen `Update` Methode, die die Update-, INSERT-und DELETE-Anweisungen in einem Aufruf ausführt).
 
 Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
-- Erstellen Sie eine neue **Windows Forms-Anwendung**.
+- Erstellen Sie eine neue **Windows Forms Anwendung**.
 
 - Erstellen und konfigurieren Sie mit dem Assistenten zum Konfigurieren von [Datenquellen](../data-tools/media/data-source-configuration-wizard.png)ein DataSet.
 
@@ -39,7 +39,7 @@ Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
 - Fügen Sie Methoden hinzu, um direkt auf die Datenbank zuzugreifen und Einfügungen, Updates und Löschungen auszuführen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -63,7 +63,7 @@ Der erste Schritt besteht darin, eine **Windows Forms Anwendung**zu erstellen.
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
@@ -81,7 +81,7 @@ Dieser Schritt verwendet den **Assistenten zum Konfigurieren von Datenquellen** 
 
    Das Fenster **Datenquellen** wird geöffnet.
 
-2. Wählen Sie im Fenster **Datenquellen** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank**aus, und klicken Sie dann auf **weiter**.
 
@@ -89,7 +89,7 @@ Dieser Schritt verwendet den **Assistenten zum Konfigurieren von Datenquellen** 
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         \- oder -
+         - oder -
 
     - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
@@ -109,7 +109,7 @@ Erstellen Sie die datengebundenen Steuerelemente, indem Sie Elemente aus dem **D
 
 Wenn Sie Daten gebundene Steuerelemente auf dem Windows Form erstellen möchten, ziehen Sie **den Haupt Knoten** Knoten aus dem **Datenquellen** Fenster auf das Formular.
 
-Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt.
+Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. Ein [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter` , <xref:System.Windows.Forms.BindingSource> und wird <xref:System.Windows.Forms.BindingNavigator> in der Komponenten Leiste angezeigt.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Hinzufügen von Schaltflächen, die die einzelnen TableAdapter DbDirect-Methoden aufruft
 
@@ -117,10 +117,10 @@ Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement
 
 2. Legen Sie die folgenden Eigenschaften für **Name** und **Text** auf jeder Schaltfläche fest.
 
-    |-Name|Text|
+    |name|Text|
     |----------|----------|
     |`InsertButton`|**Einfügen**|
-    |`UpdateButton`|**Update (Aktualisieren)**|
+    |`UpdateButton`|**Update**|
     |`DeleteButton`|**Löschen**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Hinzufügen von Code für das Einfügen neuer Datensätze in die Datenbank

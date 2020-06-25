@@ -4,16 +4,16 @@ description: Verwenden von Emulator Express zum Ausführen und Debuggen eines Cl
 author: mikejo5000
 manager: jillfra
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 2c9c4470d51718f5c7d4fa3f903fdcc063aa8d80
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d70f2038881cd422b9c5a1015c4f88a49f2a3c9a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911829"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280582"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Verwenden von Emulator Express zum Ausführen und Debuggen eines Azure-Clouddiensts auf einem lokalen Computer
 Mithilfe von Emulator Express können Sie einen Clouddienst testen und debuggen, ohne Visual Studio als Administrator auszuführen. Abhängig von den Anforderungen Ihres Clouddiensts können Sie die Projekteinstellungen für die Verwendung von Emulator Express oder des vollständigen Emulators festlegen. Weitere Informationen zum vollständigen Emulator finden Sie unter [Ausführen einer Azure-Anwendung im Serveremulator](/azure/storage/common/storage-use-emulator).
@@ -48,4 +48,4 @@ Die folgenden Probleme sind bekannte Einschränkungen von Emulator Express:
 - Einschränkungen, die auf den Azure-Compute-Emulator zutreffen, gelten auch für Emulator Express. Sie können z. B. nicht mehr als 50 Rolleninstanzen pro Bereitstellung verwenden. Weitere Informationen zum Azure-Serveremulator finden Sie unter [Ausführen einer Azure-Anwendung im Serveremulator](vs-azure-tools-performance-profiling-cloud-services.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Debuggen von Azure-Clouddiensten](vs-azure-tools-debugging-cloud-services-overview.md)
+[Debuggen von Azure Cloud Services](vs-azure-tools-debugging-cloud-services-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Data Sources Window, select controls
 - Windows Forms, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586184"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281538"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll
 
@@ -37,7 +37,7 @@ In diesem Kontext bezieht sich der Begriff *Objekt* auf ein benutzerdefiniertes 
 2. Wählen Sie im Fenster **Datenquellen** das Element aus, das die festzulegende Datentabelle oder das Objekt darstellt.
 
    > [!TIP]
-   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, können Sie es öffnen, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** auswählen.
+   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, können Sie es öffnen, indem **View**Sie  >  **andere Windows**-  >  **Datenquellen**anzeigen auswählen.
 
 3. Klicken Sie auf das Dropdownmenü für das Element, und klicken Sie im Menü auf eines der folgenden Elemente:
 
