@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Anpassen des Codeanalysewörterbuchs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587523"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371871"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Gewusst wie: Anpassen des Codeanalysewörterbuchs
 
@@ -27,7 +27,7 @@ Angenommen, Ihr Code enthielt eine Klasse mit dem Namen " **doorklokker**". Bei 
 
 ## <a name="to-create-a-custom-dictionary"></a>So erstellen Sie ein Benutzerwörterbuch
 
-Erstellen Sie eine Datei mit dem Namen " **CustomDictionary. XML**".
+Erstellen Sie eine Datei mit dem Namen **CustomDictionary.xml**.
 
 Definieren Sie die benutzerdefinierten Wörter mit der folgenden XML-Struktur:
 
@@ -66,15 +66,15 @@ Sie können das Verhalten des Code Analyse Wörterbuchs ändern, indem Sie Begri
 
 - [Wörterbuch/Wörter/nicht erkannt/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Wörterbuch/Wörter/veraltet/Begriff [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Wörterbuch/Wörter/veraltet/Begriff [ @PreferredAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [Wörterbuch/Wörter/Verbund/Begriff [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Wörterbuch/Wörter/Verbund/Begriff [ @CompoundAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
 - [Dictionary/Words/diskreteexceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
 - [Dictionary/Akronyme/CasingExceptions/Akronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="BKMK_DictionaryWordsRecognizedWord"></a>Wörterbuch/Wörter/erkannt/Word
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Wörterbuch/Wörter/erkannt/Word
 
 Fügen Sie den Begriff als inneren Text eines Dictionary/Words/erkannten/Word-Elements hinzu, um einen Begriff in die Liste der Begriffe einzuschließen, die von der Code Analyse als ordnungsgemäß geschrieben identifiziert werden. Bei Begriffen mit Wörterbuch/Wörtern/erkannten/Word-Elementen wird die Groß-/Kleinschreibung nicht beachtet.
 
@@ -95,21 +95,21 @@ Fügen Sie den Begriff als inneren Text eines Dictionary/Words/erkannten/Word-El
 
 Begriffe in Wörterbuch/Wörtern/erkannten Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701.md)
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1701.md)
 
-- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702.md)
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1702.md)
 
-- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703.md)
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704.md)
+- [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704.md)
 
-- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709.md)
+- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1709.md)
 
-- [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726.md)
+- [CA1726: Bevorzugte Begriffe verwenden.](../code-quality/ca1726.md)
 
-- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204.md)
+- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Wörterbuch/Wörter/nicht erkannt/Word
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Wörterbuch/Wörter/nicht erkannt/Word
 
 Um einen Begriff aus der Liste der Begriffe auszuschließen, die von der Code Analyse als richtig geschrieben identifiziert werden, fügen Sie den auszuschließenden Begriff als inneren Text eines Dictionary/Words/unbekanntes/Word-Elements hinzu. Bei Begriffen in Wörterbuch/Wörtern/unbekannten/Word-Elementen wird die Groß-/Kleinschreibung nicht beachtet.
 
@@ -130,21 +130,21 @@ Um einen Begriff aus der Liste der Begriffe auszuschließen, die von der Code An
 
 Die Begriffe im Wörterbuch/Wörter/nicht erkannten Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701.md)
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1701.md)
 
-- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702.md)
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1702.md)
 
-- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703.md)
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704.md)
+- [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704.md)
 
-- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709.md)
+- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1709.md)
 
-- [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726.md)
+- [CA1726: Bevorzugte Begriffe verwenden.](../code-quality/ca1726.md)
 
-- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204.md)
+- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Wörterbuch/Wörter/veraltet/Begriff [@PreferredAlternate]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Wörterbuch/Wörter/veraltet/Begriff [ @PreferredAlternate ]
 
 Wenn Sie einen Begriff in die Liste der Begriffe einschließen möchten, die von der Code Analyse als veraltet identifiziert werden, fügen Sie den Begriff als inneren Text eines Dictionary/Words/deprecated/Term-Elements hinzu. Ein als veraltet markierte Begriff ist ein Wort, das korrekt geschrieben ist, aber nicht verwendet werden sollte.
 
@@ -171,17 +171,17 @@ Um einen vorgeschlagenen Alternativen Begriff in der Warnung einzuschließen, ge
 
 Begriffe im Wörterbuch/Wörter/deprecated-Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701.md)
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1701.md)
 
-- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702.md)
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1702.md)
 
-- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703.md)
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704.md)
+- [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704.md)
 
-- [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726.md)
+- [CA1726: Bevorzugte Begriffe verwenden.](../code-quality/ca1726.md)
 
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Wörterbuch/Wörter/Verbund/Begriff [@CompoundAlternate]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Wörterbuch/Wörter/Verbund/Begriff [ @CompoundAlternate ]
 
 Mit dem integrierten Wörterbuch werden einige Begriffe als einzelne, diskrete Begriffe und nicht als zusammengesetzter Begriff identifiziert. Fügen Sie den Begriff als inneren Text eines Dictionary/Words/Compound/Term-Elements hinzu, um einen Begriff in die Liste der Begriffe einzuschließen, die die Code Analyse als zusammengesetztes Wort identifiziert, und um die richtige Schreibweise der Bezeichnung anzugeben. Geben Sie im compoundalternate-Attribut des Begriffs Elements die einzelnen Wörter an, aus denen der zusammengesetzte Begriff besteht, indem Sie den ersten Buchstaben der einzelnen Wörter (Pascal-Fall) groß machen. Beachten Sie, dass der im inneren Text angegebene Begriff automatisch der Wörterbuch/Words/diskreteexceptions-Liste hinzugefügt wird.
 
@@ -206,15 +206,15 @@ Mit dem integrierten Wörterbuch werden einige Begriffe als einzelne, diskrete B
 
 Begriffe im Wörterbuch/Wörter/Verbund Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701.md)
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1701.md)
 
-- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702.md)
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1702.md)
 
-- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703.md)
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704.md)
+- [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704.md)
 
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/diskreteexceptions/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/diskreteexceptions/Term
 
 Um einen Begriff in der Liste der Begriffe auszuschließen, die die Code Analyse als einzelnes, diskretes Wort identifiziert, wenn der Begriff durch die Regeln der Groß-/Kleinschreibung für zusammengesetzte Wörter geprüft wird, fügen Sie den Begriff als inneren Text eines Dictionary/Words/diskreteexceptions/Term-Elements hinzu. Beim Begriff "Dictionary/Words/diskreteexceptions/Term Element" wird die Groß-/Kleinschreibung nicht beachtet.
 
@@ -235,11 +235,11 @@ Um einen Begriff in der Liste der Begriffe auszuschließen, die die Code Analyse
 
 Die Begriffe im Knoten Wörterbuch/Wörter/diskreteexceptions werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701.md)
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1701.md)
 
-- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702.md)
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1702.md)
 
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/Akronyme/CasingExceptions/Akronym
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/Akronyme/CasingExceptions/Akronym
 
 Fügen Sie den Begriff als inneren Text eines Dictionary/Akronyme/CasingExceptions/Akronym-Elements hinzu, um ein Akronym in die Liste der Begriffe einzuschließen, die von der Code Analyse als richtig geschrieben identifiziert werden, und um anzugeben, wie das Akronym, wenn der Begriff durch die Regeln der Groß-/Kleinschreibung für Verbund Wörter Beim Akronym im Wörterbuch/Akronyme/CasingExceptions/Akronym-Element wird die Groß-/Kleinschreibung beachtet.
 
@@ -260,9 +260,9 @@ Fügen Sie den Begriff als inneren Text eines Dictionary/Akronyme/CasingExceptio
 
 Begriffe im Knoten "Dictionary/acronyme/CasingExceptions" werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709.md)
+- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1709.md)
 
-## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>So verwenden Sie ein benutzerdefiniertes Wörterbuch auf ein Projekt
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>So verwenden Sie ein benutzerdefiniertes Wörterbuch auf ein Projekt
 
 1. Verwenden Sie in **Projektmappen-Explorer**eines der folgenden Verfahren:
 
@@ -270,7 +270,7 @@ Begriffe im Knoten "Dictionary/acronyme/CasingExceptions" werden auf die folgend
 
 3. Wenn Sie ein Wörterbuch hinzufügen möchten, das von zwei oder mehr Projekten gemeinsam verwendet wird, suchen Sie im Dialogfeld **Vorhandenes Element hinzufügen** die Datei, die Sie freigeben möchten, klicken Sie auf die Schaltfläche **Hinzufügen** und dann auf **als Link hinzu**fügen.
 
-4. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Dateinamen **CustomDictionary. XML** , und klicken Sie dann auf **Eigenschaften**.
+4. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Dateinamen **CustomDictionary.xml** , und klicken Sie auf **Eigenschaften**.
 
 5. Wählen Sie in **der Liste** Buildvorgang die Option **codeanalysisdictionary**aus.
 
