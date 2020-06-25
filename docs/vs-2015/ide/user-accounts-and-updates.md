@@ -9,19 +9,19 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39fb09c24e0d8cca9d2dddbfe2259b50cd2972df
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672662"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289390"
 ---
 # <a name="user-accounts-and-updates"></a>Benutzerkonten und Updates
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!WARNING]
-> Visual Studio 2015 kann nicht auf Ressourcen zugreifen, die für den bedingten Zugriff konfiguriert sind. Um mit diesen Ressourcen zu arbeiten, führen Sie ein Upgrade auf Visual Studio 2017 oder höher aus.
+> Visual Studio 2015 kann nicht auf Ressourcen zugreifen, die für den bedingten Zugriff konfiguriert sind. Um mit diesen Ressourcen zu arbeiten, führen Sie ein Upgrade auf Visual Studio 2019 Version 16,6 oder höher aus, und befolgen Sie die Anweisungen unter [Verwenden von Visual Studio mit Konten, die Multi-Factor Authentication](../../ide/work-with-multi-factor-authentication.md) -Anleitungen erfordern.
 
 Visual Studio selbst ist eine verbundene Umgebung. Durch die Anmeldung erhalten Sie Zugriff auf alle Ihrem Benutzerkonto zugeordneten Dienste sowie auf alle mit diesem Konto verknüpften Konten. Ihre Kontoeinstellungen "wandern" mit Ihnen mit, unabhängig davon, wo Sie Visual Studio verwenden. Sie können in einer bestimmten Visual Studio-Instanz Berechtigungsebenen für einzelne Benutzer konfigurieren. Visual Studio informiert Sie auch, wenn für eine Komponente Ihrer Installation, beispielsweise für ein SDK, ein Update verfügbar ist.
 

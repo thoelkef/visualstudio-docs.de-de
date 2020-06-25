@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e26a889c65b80d5a83cc6b2b3a726aa9ad2319
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8b1a9d109b833d17783beb39c5f34cf6b9ed3274
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184457"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292892"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 
@@ -40,7 +40,7 @@ In der folgenden Liste sind die Code Metrikergebnisse aufgeführt, die von Visua
 
 - **Zeilen des Quellcodes** : gibt die genaue Anzahl von Quell Codezeilen an, die in der Quelldatei vorhanden sind, einschließlich leerer Zeilen. Diese Metrik ist ab Visual Studio 2019 Version 16,4 und Microsoft. Code Analysis. Metrics (2.9.5) verfügbar.
 
-- **Zeilen des ausführbaren Codes** : gibt die ungefähre Anzahl von ausführbaren Codezeilen oder Vorgängen an. Dies ist eine Anzahl von Vorgängen in ausführbarem Code. Diese Metrik ist ab Visual Studio 2019 Version 16,4 und Microsoft. Code Analysis. metics (2.9.5) verfügbar. Der Wert ist in der Regel eine genaue Entsprechung zur vorherigen Metrik, **Code Zeilen**, bei der es sich um die auf MSIL-Anweisungen basierende Metrik handelt, die im Legacy Modus verwendet wird.
+- **Zeilen des ausführbaren Codes** : gibt die ungefähre Anzahl von ausführbaren Codezeilen oder Vorgängen an. Dies ist eine Anzahl von Vorgängen in ausführbarem Code. Diese Metrik ist ab Visual Studio 2019 Version 16,4 und Microsoft. Code Analysis. Metrics (2.9.5) verfügbar. Der Wert ist in der Regel eine genaue Entsprechung zur vorherigen Metrik, **Code Zeilen**, bei der es sich um die auf MSIL-Anweisungen basierende Metrik handelt, die im Legacy Modus verwendet wird.
 ::: moniker-end
 ::: moniker range="vs-2017"
 
