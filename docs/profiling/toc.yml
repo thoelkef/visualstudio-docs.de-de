@@ -1,11 +1,13 @@
 - name: Dokumentation zur Profilerstellung
   href: index.yml
 - name: Übersicht
-  href: profiling-overview.md
-- name: Schnellstarts
   items:
     - name: Erster Einblick in die Profilerstellung
       href: profiling-feature-tour.md
+    - name: Ausführen von Profilerstellungstools mit oder ohne Debugger
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: Schnellstarts
+  items:
     - name: Analysieren der CPU-Auslastung (verwaltet)
       href: quickstart-cpu-usage-managed.md
     - name: Analysieren der CPU-Auslastung (nativ)
@@ -20,12 +22,22 @@
       href: memory-usage.md
 - name: Konzepte
   items:
-    - name: Ausführen von Profilerstellungstools mit oder ohne Debugger
-      href: running-profiling-tools-with-or-without-the-debugger.md
+    - name: Grundlegendes zu Leistungsauflistungsmethoden
+      href: understanding-performance-collection-methods-perf-profiler.md
+    - name: Optimieren der Profilereinstellungen
+      href: optimize-profiler-settings.md
+    - name: Gleichzeitiges Verwenden mehrerer Profilertools
+      href: use-multiple-profiler-tools-simultaneously.md
 - name: Anleitungen
   items:
-    - name: Verwenden von PerfTips
+    - name: PerfTips
       href: perftips.md
+    - name: .NET Async
+      href: analyze-async.md
+    - name: Datenbank
+      href: analyze-database.md
+    - name: Ereignisanzeige
+      href: events-viewer.md
     - name: CPU-Auslastung
       href: cpu-usage.md
     - name: Speicherauslastung

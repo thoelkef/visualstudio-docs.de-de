@@ -74,6 +74,7 @@
 ### [Superadministratoren und Administratoren](admin-roles.md)
 ### [Festlegen von Vereinbarungseinstellungen](admin-prefs.md)
 ### [Übersicht](using-admin-portal.md)
+### [Hinzufügen von Monatsabonnements](add-monthly-subs.md)
 ### Zuweisen von Abonnements
 #### [Hinzufügen einzelner Benutzer](assign-license.md)
 #### [Hinzufügen mehrerer Benutzer](assign-license-bulk.md)
