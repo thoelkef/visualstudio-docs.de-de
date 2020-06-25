@@ -1,7 +1,7 @@
 ---
 title: Binden von Steuerelementen an Bilder aus einer Datenbank
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - images [Visual Basic], displaying on Windows Forms
 - data binding [Windows Forms], pictures
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587003"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282983"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Binden von Steuerelementen an Bilder aus einer Datenbank
 
@@ -39,7 +39,7 @@ In der folgenden Prozedur wird davon ausgegangen, dass das Fenster **Datenquelle
 2. Erweitern Sie im Fenster **Datenquellen** die gewünschte Tabelle oder das gewünschte Objekt, sodass die Spalten bzw. Eigenschaften angezeigt werden.
 
    > [!TIP]
-   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, öffnen Sie es, indem Sie > **anderen Windows** > **Datenquellen** **anzeigen** auswählen.
+   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, öffnen Sie es **View**, indem Sie  >  **andere Windows**-  >  **Datenquellen**anzeigen auswählen.
 
 3. Wählen Sie die Spalte oder die Eigenschaft aus, die die Bilddaten enthält, und wählen Sie eines der folgenden Steuerelemente aus der Dropdown-Steuerelementliste aus:
 

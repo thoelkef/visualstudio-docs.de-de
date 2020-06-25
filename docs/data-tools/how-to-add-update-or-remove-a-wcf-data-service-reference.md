@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184229"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282370"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 
@@ -57,7 +57,7 @@ Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie 
 
 1. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
 
-     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
+     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der *app.config* Datei hinzugefügt.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Doppelklicken oder tippen Sie in **Projektmappen-Explorer**auf den Knoten **verbundene Dienste** .
@@ -86,7 +86,7 @@ Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie 
 
 1. Klicken Sie auf **Fertig** stellen, um den Verweis auf das Projekt hinzuzufügen.
 
-     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
+     Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der *app.config* Datei hinzugefügt.
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie 
 
 1. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
 
-    Ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
+    Ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der *app.config* Datei hinzugefügt.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Doppelklicken oder tippen Sie in **Projektmappen-Explorer**auf den Knoten **verbundene Dienste** . 
@@ -129,7 +129,7 @@ Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie 
 
 1. Klicken Sie auf **Fertig** stellen, um den Verweis auf das Projekt hinzuzufügen.
 
-    Ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der Datei " *app. config* " hinzugefügt.
+    Ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der *app.config* Datei hinzugefügt.
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ Wenn ein Dienst Verweis nicht mehr verwendet wird, können Sie ihn aus der Proje
 
 - Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienst Verweis, und klicken Sie dann auf **Löschen**.
 
-     Der Dienst Client wird aus der Projekt Mappe entfernt, und die Metadaten, die den Dienst beschreiben, werden aus der Datei " *app. config* " entfernt.
+     Der Dienst Client wird aus der Projekt Mappe entfernt, und die Metadaten, die den Dienst beschreiben, werden aus der *app.config* Datei entfernt.
 
     > [!NOTE]
     > Jeglicher Code, der auf den Dienst Verweis verweist, muss manuell entfernt werden.

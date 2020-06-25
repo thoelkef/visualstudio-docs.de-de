@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Beschriftungen für Daten gebundene Steuerelemente
 ms.date: 11/03/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113661"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282578"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 
@@ -51,14 +51,14 @@ In der folgenden Tabelle werden die Registrierungs Werte beschrieben, die Beschr
 
 In der folgenden Tabelle sind die internen Standardeinstellungen für diese Registrierungs Werte aufgeführt.
 
-|Registrierungs Element|Standardwert|Erklärung|
+|Registrierungs Element|Standardwert|Erläuterung|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Entspricht einem Kleinbuchstaben, gefolgt von einem Großbuchstaben oder einem Unterstrich.|
+|**SmartCaptionExpression**|**( \\ \p{ll}) ( \\ \p{LU}) &#124;_ +**|Entspricht einem Kleinbuchstaben, gefolgt von einem Großbuchstaben oder einem Unterstrich.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** stellt alle Zeichen dar, die in den ersten Klammern des Ausdrucks übereinstimmen, und **$2** stellt alle Zeichen dar, die in den zweiten Klammern übereinstimmen. Die Ersetzung ist die erste Übereinstimmung, ein Leerzeichen und dann die zweite Entsprechung.|
-|**SmartCaptionSuffix**|**:**|Stellt ein an die zurückgegebene Zeichenfolge angefügtes Zeichen dar. Wenn die Beschriftung z. b. `Company Name`ist, wird Sie durch das Suffix `Company Name:`|
+|**SmartCaptionSuffix**|**:**|Stellt ein an die zurückgegebene Zeichenfolge angefügtes Zeichen dar. Wenn die Beschriftung beispielsweise ist `Company Name` , wird Sie durch das Suffix`Company Name:`|
 
 > [!CAUTION]
-> Gehen Sie sehr vorsichtig vor, wenn Sie im Registrierungs-Editor etwas tun. Sichern Sie die Registrierung, bevor Sie Sie bearbeiten. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können Sie schwerwiegende Probleme verursachen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich machen. Microsoft garantiert nicht, dass Probleme, die Sie durch die Verwendung des Registrierungs-Editors verursacht haben, nicht ordnungsgemäß aufgelöst werden können. Die Verwendung des Registrierungs-Editors erfolgt auf eigene Gefahr.
+> Gehen Sie sehr vorsichtig vor, wenn Sie im Registrierungs-Editor etwas tun. Sichern Sie die Registrierung, bevor Sie Sie bearbeiten. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können Sie schwerwiegende Probleme verursachen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich machen. Microsoft garantiert nicht, dass Probleme, die Sie durch die Verwendung des Registrierungs-Editors verursacht haben, nicht ordnungsgemäß aufgelöst werden können. Die Verwendung des Registrierungs-Editors erfolgt auf Ihr eigenes Risiko.
 >
 > Informationen zum Sichern, bearbeiten und Wiederherstellen der Registrierung finden Sie unter [Windows-Registrierungsinformationen für fortgeschrittene Benutzer](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
@@ -66,19 +66,19 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
 1. Öffnen Sie ein Befehlsfenster, indem Sie auf **Start** und dann auf **Ausführen**klicken.
 
-2. Geben Sie im Dialogfeld **Ausführen** `regedit` ein, und klicken Sie auf **OK**.
+2. Geben `regedit` Sie im Dialogfeld **Ausführen** ein, und klicken Sie auf **OK**.
 
-3. Erweitern Sie den Knoten **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** .
+3. Erweitern Sie den Knoten **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Klicken Sie mit der rechten Maustaste auf den Knoten **15,0** , und erstellen Sie einen neuen **Schlüssel** mit dem Namen `Data Designers`.
+4. Klicken Sie mit der rechten Maustaste auf den Knoten **15,0** , und erstellen Sie einen neuen **Schlüssel** namens `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Klicken Sie mit der rechten Maustaste auf den Knoten **16,0** , und erstellen Sie einen neuen **Schlüssel** mit dem Namen `Data Designers`.
+4. Klicken Sie mit der rechten Maustaste auf den Knoten **16,0** , und erstellen Sie einen neuen **Schlüssel** namens `Data Designers` .
 
 ::: moniker-end
 
@@ -106,19 +106,19 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
 1. Öffnen Sie ein Befehlsfenster, indem Sie auf **Start** und dann auf **Ausführen**klicken.
 
-2. Geben Sie im Dialogfeld **Ausführen** `regedit` ein, und klicken Sie auf **OK**.
+2. Geben `regedit` Sie im Dialogfeld **Ausführen** ein, und klicken Sie auf **OK**.
 
-3. Erweitern Sie den Knoten **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** .
+3. Erweitern Sie den Knoten **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Klicken Sie mit der rechten Maustaste auf den Knoten **15,0** , und erstellen Sie einen neuen **Schlüssel** mit dem Namen `Data Designers`.
+4. Klicken Sie mit der rechten Maustaste auf den Knoten **15,0** , und erstellen Sie einen neuen **Schlüssel** namens `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Klicken Sie mit der rechten Maustaste auf den Knoten **16,0** , und erstellen Sie einen neuen **Schlüssel** mit dem Namen `Data Designers`.
+4. Klicken Sie mit der rechten Maustaste auf den Knoten **16,0** , und erstellen Sie einen neuen **Schlüssel** namens `Data Designers` .
 
 ::: moniker-end
 
@@ -130,11 +130,11 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
 6. Klicken Sie mit der rechten Maustaste auf das Element **SmartCaptionExpression** , und wählen Sie **ändern**aus.
 
-7. Geben Sie für den Wert `(.*)` ein. Dies entspricht der gesamten Zeichenfolge.
+7. Geben Sie als `(.*)` Wert ein. Dies entspricht der gesamten Zeichenfolge.
 
 8. Klicken Sie mit der rechten Maustaste auf das Element **smartcaptionreplace** , und wählen Sie **ändern**aus.
 
-9. Geben Sie für den Wert `$1` ein. Dadurch wird die Zeichenfolge durch den übereinstimmenden Wert ersetzt. dabei handelt es sich um die gesamte Zeichenfolge, sodass Sie unverändert bleibt.
+9. Geben Sie als `$1` Wert ein. Dadurch wird die Zeichenfolge durch den übereinstimmenden Wert ersetzt. dabei handelt es sich um die gesamte Zeichenfolge, sodass Sie unverändert bleibt.
 
     Wenn Sie Elemente das nächste Mal aus dem **Datenquellen** Fenster ziehen, werden die Beschriftungs Bezeichnungen mit unveränderten Beschriftungen erstellt.
 

@@ -1,21 +1,21 @@
 ---
 title: Suchen von Themen (Help Viewer)
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824995"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284918"
 ---
-# <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen von Themen
+# <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen nach Themen
 
 Mit der Volltextsuche können Sie alle Themen suchen, die ein bestimmtes Wort enthalten. Sie haben außerdem die Möglichkeit, die Suche mithilfe von Platzhalterausdrücken, logischen Operatoren und erweiterten Suchoperatoren einzugrenzen und anzupassen.
 
@@ -30,7 +30,7 @@ Klicken Sie im **Help Viewer**-Fenster auf die Registerkarte **Suche**, oder dr�
     > [!NOTE]
     > Im Dialogfeld **Viewer-Optionen** können Sie zusätzliche Einstellungen angeben, z.B. die maximale Anzahl der Suchergebnisse, die gleichzeitig angezeigt werden sollen, oder ob englischsprachige Inhalte enthalten sein dürfen, wenn das primäre Gebietsschema nicht Englisch ist.
 
-3. Drücken Sie die **EINGABETASTE**.
+3. Drücken Sie die **Eingabe** Taste.
 
      Eine Suche gibt standardmäßig maximal 200 Treffer zurück. Diese werden im Suchergebnisbereich angezeigt. Je nach Inhalt werden möglicherweise zusätzliche Versionsinformationen zu jedem Treffer angezeigt.
 
@@ -46,7 +46,7 @@ Die folgende Tabelle enthält einige einfache Regeln und Richtlinien für das En
 
 |Syntax|BESCHREIBUNG|
 |------------|-----------------|
-|Groß-/Kleinschreibung|Groß-/Kleinschreibung wird bei Suchvorgängen nicht beachtet. Entwickeln Sie Ihre Suchkriterien mit Groß-oder Kleinbuchstaben. Beispielsweise werden für „OLE“ und „ole“ die gleichen Ergebnisse zurückgegeben.|
+|Groß- und Kleinschreibung|Groß-/Kleinschreibung wird bei Suchvorgängen nicht beachtet. Entwickeln Sie Ihre Suchkriterien mit Groß-oder Kleinbuchstaben. Beispielsweise werden für „OLE“ und „ole“ die gleichen Ergebnisse zurückgegeben.|
 |Zeichenkombinationen|Sie können nicht nur nach einzelnen Buchstaben (a–z) oder Ziffern (0–9) suchen. Wenn Sie versuchen, nach bestimmten reservierten Wörtern wie „und“, „von“ und „mit“ zu suchen, werden diese ignoriert. Weitere Informationen finden Sie unter [Bei der Suche ignorierte Wörter (Stoppwörter)](#stopwords) weiter unten in diesem Thema.|
 |Auswertungsreihenfolge|Suchabfragen werden von links nach rechts ausgewertet.|
 
@@ -64,7 +64,7 @@ Sie können die Suchergebnisse weiter eingrenzen, indem Sie erweiterte Suchopera
 
 ### <a name="ranking-of-search-results"></a>Rangfolge von Suchergebnissen
 
-Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedrigeren Rang von Suchergebnissen in der Ergebnisliste auszuweisen. Allgemein:
+Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedrigeren Rang von Suchergebnissen in der Ergebnisliste auszuweisen. Im Allgemeinen:
 
 1. Inhalte, die Suchwörter im Titel enthalten, haben einen höheren Rang als Inhalte, auf die das nicht zutrifft.
 
@@ -72,13 +72,13 @@ Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedri
 
 3. Inhalte, die eine höhere Dichte der Suchwörter aufweisen, erhalten einen höheren Rang als Inhalte mit einer geringeren Dichte der Suchwörter.
 
-### <a name="stopwords"> Bei der Suche ignorierte Wörter (Stoppwörter) </a>
+### <a name=""></a><a name="stopwords"> Bei der Suche ignorierte Wörter (Stoppwörter) </a>
 
 Häufig auftretende Wörter oder Ziffern, die manchmal als Stoppwörter bezeichnet werden, werden bei der Volltextsuche automatisch ignoriert. Wenn Sie beispielsweise nach dem Ausdruck „übergeben durch“ suchen, zeigen die Suchergebnisse Themen an, die das Wort „übergeben“ enthalten, ignorieren aber das Wort „durch“.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Logische Operatoren in Suchausdrücken](../help-viewer/logical-operators-search-expressions.md)
-- [Vorgehensweise: Suchen nach Themen im Index](../help-viewer/find-topics-index.md)
-- [Vorgehensweise: Find topics in the TOC (Vorgehensweise: Finden von Themen im Inhaltsverzeichnis)](../help-viewer/find-topics-toc.md)
+- [Gewusst wie: Suchen von Themen im Index](../help-viewer/find-topics-index.md)
+- [Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis](../help-viewer/find-topics-toc.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

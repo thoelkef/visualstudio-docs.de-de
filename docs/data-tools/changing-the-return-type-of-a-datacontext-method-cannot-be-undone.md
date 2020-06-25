@@ -1,19 +1,19 @@
 ---
 title: Das Ändern des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden.
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95d75e084b4824cf7cc8e717b1ce9174e76aa2e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5b24337c9233aeeb060029cb54cd661b7591309
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648694"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282786"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Das Ändern des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden.
 
@@ -39,4 +39,4 @@ Der Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ist je nachde
 
 ## <a name="see-also"></a>Siehe auch
 
-- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

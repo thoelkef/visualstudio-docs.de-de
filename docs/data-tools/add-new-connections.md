@@ -1,18 +1,18 @@
 ---
 title: Neue Verbindungen hinzufügen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587068"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283059"
 ---
 # <a name="add-new-connections"></a>Neue Verbindungen hinzufügen
 
@@ -26,7 +26,7 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Date
 
    Installieren Sie dieses Fenster manuell als Visual Studio-Erweiterung von [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Bietet spezialisierte Funktionen zum untersuchen und verbinden mit Azure-Diensten.
 
-- SQL Server-Objekt-Explorer
+- SQL Server-Objekt-Explorer
 
    Installiert mit SQL Server Data Tools und im Menü **Ansicht** sichtbar. Wenn Sie dort nicht angezeigt wird, navigieren Sie in der Systemsteuerung zu **Programme und Funktionen** , suchen Sie nach Visual Studio, und wählen Sie dann **ändern** aus, um den Installer erneut auszuführen, nachdem Sie das Kontrollkästchen für SQL Server Data Tools ausgewählt haben. Verwenden Sie **SQL Server-Objekt-Explorer** zum Anzeigen von SQL-Datenbanken (wenn Sie über einen ADO.NET-Anbieter verfügen), erstellen Sie neue Datenbanken, ändern Sie Schemas, erstellen Sie gespeicherte Prozeduren, rufen Sie Verbindungs Zeichenfolgen, Daten anzeigen usw. SQL-Datenbanken, die keinen ADO.NET-Anbieter installiert haben, werden hier nicht angezeigt, aber Sie können weiterhin Programm gesteuert eine Verbindung mit Ihnen herstellen.
 
@@ -46,11 +46,11 @@ Wenn die Datenquelle nicht Ihren Wünschen entspricht, klicken Sie auf die Schal
 
 ![Ändern der AD0.NET-Datenanbieter](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>Verbindung testen
+## <a name="test-the-connection"></a>Testen der Verbindung
 
 Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Verbindung testen**. Wenn dies nicht gelingt, müssen Sie basierend auf der Dokumentation des Herstellers eine Problembehandlung durchführen.
 
-![Testverbindung](../data-tools/media/raddata-test-connection.png)
+![Testen der Verbindung](../data-tools/media/raddata-test-connection.png)
 
 Wenn der Test erfolgreich ist, können Sie eine *Datenquelle*erstellen, die ein Visual Studio-Begriff ist, der tatsächlich ein *Datenmodell* ist, das auf der zugrunde liegenden Datenbank oder dem zugrunde liegenden Dienst basiert.
 

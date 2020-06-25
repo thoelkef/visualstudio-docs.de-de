@@ -1,7 +1,7 @@
 ---
 title: Installieren der Offlinehilfe
 ms.date: 11/01/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192647adcda620d94ab516f6be30b4d37859e3c8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824920"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284944"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installieren von Microsoft Help Viewer
 
@@ -33,7 +33,7 @@ Help Viewer ist eine optionale Installationskomponente von Visual Studio. Um die
 
 Zudem können Sie Microsoft Help Viewer ganz leicht über das Suchfeld installieren:
 
-1. Drücken Sie **STRG**+**Q**, und geben Sie dann **help viewer** in das Suchfeld ein.
+1. Drücken Sie **STRG** + **Q** , und geben Sie im Suchfeld den Text **Help Viewer** ein, oder geben Sie ihn ein.
 
    ![Suchfeld](media/installation/quick-launch.png)
 
@@ -41,9 +41,9 @@ Zudem können Sie Microsoft Help Viewer ganz leicht über das Suchfeld installie
 
 1. Klicken Sie im angezeigten Dialogfeld auf die Schaltfläche **Installieren**.
 
-   ![Schaltfläche „Installieren“](media/installation/install.png)
+   ![Schaltfläche „Installieren”](media/installation/install.png)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
-- [Help Viewer und Offlineinhalt für SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Help Viewer und Offline Inhalt für SQL Server](/sql/sql-server/sql-server-help-installation)

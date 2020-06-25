@@ -1,7 +1,7 @@
 ---
 title: Herstellen einer Verbindung mit Daten in einer Access-Datenbank
 ms.date: 07/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting
 - connecting to data, Access databases
@@ -12,20 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586860"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282734"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank
 
 Mithilfe von Visual Studio können Sie eine Verbindung mit einer Access-Datenbank (entweder eine *MDB* -Datei oder eine *ACCDB* -Datei) herstellen. Nachdem Sie die Verbindung definiert haben, werden die Daten im Fenster **Datenquellen** angezeigt. Von dort aus können Sie Tabellen oder Sichten auf die Entwurfs Oberfläche ziehen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
-Um diese Prozeduren verwenden zu können, benötigen Sie ein Windows Forms-oder WPF-Projekt und entweder eine Access-Datenbank ( *. accdb* -Datei) oder eine Access 2000-2003-Datenbank (*MDB* -Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
+Um diese Prozeduren verwenden zu können, benötigen Sie ein Windows Forms-oder WPF-Projekt und entweder eine Access-Datenbank (*. accdb* -Datei) oder eine Access 2000-2003-Datenbank (*MDB* -Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Erstellen eines Datasets für eine ACCDB-Datei
 
@@ -33,7 +33,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken he
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** > **Datenquellen**aus.
+2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Windows**-  >  **Datenquellen**aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
@@ -49,7 +49,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken he
 
    Das Dialogfeld **Verbindung hinzufügen** wird geöffnet.
 
-7. Wenn die **Datenquelle** nicht auf die **Microsoft Access-Datenbankdatei (OLE DB)** festgelegt ist, wählen Sie die Schaltfläche **ändern** aus.
+7. Wenn die **Datenquelle** nicht auf die **Microsoft Access-Datenbankdatei**festgelegt ist, wählen Sie die Schaltfläche **ändern** .
 
    Das Dialogfeld **Datenquelle ändern** wird geöffnet. Wählen Sie in der Liste der Datenquellen die Option **Microsoft Access-Datenbankdatei**aus. Wählen Sie in der Dropdown-Dropdown- **Datei des Datenanbieters** **.NET Framework Datenanbieter für OLE DB aus**, und klicken Sie dann auf **OK**.
 
@@ -59,7 +59,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken he
 
 10. Klicken Sie auf der Seite **Wählen Sie Ihre Datenverbindung** aus auf **weiter** .
 
-    Möglicherweise wird ein Dialogfeld angezeigt, in dem Sie darüber informiert werden, dass sich die Datendatei nicht im aktuellen Projekt befindet Wählen Sie **Ja** oder **Nein**.
+    Möglicherweise wird ein Dialogfeld angezeigt, in dem Sie darüber informiert werden, dass sich die Datendatei nicht im aktuellen Projekt befindet Wählen Sie **Ja** oder **Nein**aus.
 
 11. Klicken Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern** auf **weiter** .
 
@@ -75,7 +75,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit mit Access 200
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** > **Datenquellen**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **Weitere Windows**-  >  **Datenquellen**aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
@@ -113,10 +113,10 @@ Das soeben erstellte Dataset ist im **Datenquellen** Fenster verfügbar. Sie kö
 
 - Öffnen Sie die Datenquelle im **DataSet-Designer**, um die Objekte, aus denen das Dataset besteht, zu bearbeiten oder dem Dataset Objekte hinzuzufügen.
 
-- Fügen Sie der <xref:System.Data.DataTable.ColumnChanging> oder <xref:System.Data.DataTable.RowChanging>-Ereignis der Datentabellen im DataSet eine Validierungs Logik hinzu (siehe [Validieren von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
+- Fügen Sie dem- <xref:System.Data.DataTable.ColumnChanging> Ereignis oder dem- <xref:System.Data.DataTable.RowChanging> Ereignis der Datentabellen im DataSet eine Validierungs Logik hinzu (siehe [Validieren von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von Verbindungen](../data-tools/add-new-connections.md)
 - [Übersicht über die WPF-Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)
-- [Windows Forms-Datenbindung](/dotnet/framework/winforms/data-binding-and-windows-forms)
+- [Datenbindung Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)

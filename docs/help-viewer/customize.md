@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Help Viewer
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_options
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edcdee8ffe4c2b8a97f4ed65ae86f925db42b1c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825013"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284971"
 ---
 # <a name="customize-the-help-viewer"></a>Anpassen von Help Viewer
 Sie können das Layout des Help Viewer-Fensters sowie weitere Optionen wie den Schriftgrad, die Höchstzahl an Ergebnissen und das Einbeziehen von englischen Inhalt anpassen.
@@ -43,7 +43,7 @@ Sie können das Dialogfeld **Viewer-Optionen** öffnen, indem Sie auf **Viewer-O
 |Ändern des Schriftgrads für angezeigten Text|Wählen Sie in der Liste **Textgröße** eine Größe aus.|
 |Ändern der auf der Registerkarte **Suchen** angezeigten maximalen Anzahl von Suchergebnissen|Wählen Sie in der Liste **Maximale Anzahl von Suchergebnissen** einen Wert aus.|
 |Ändern der im Fenster **Favoriten** angezeigten maximalen Anzahl von Verlaufseinträgen|Wählen Sie in der Liste **Maximale Anzahl gespeicherter Verlaufseinträge** einen Wert aus.|
-|Beziehen Sie englischen Inhalt ein, oder schließen Sie ihn aus, wenn Sie Inhalt für eine nicht englische Version eines Produkts anzeigen.|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen**. **Vorsicht**:  Diese Funktion steuert auch, ob Sie englische Inhalte über die Registerkarte **Inhalt verwalten** herunterladen können.|
+|Beziehen Sie englischen Inhalt ein, oder schließen Sie ihn aus, wenn Sie Inhalt für eine nicht englische Version eines Produkts anzeigen.|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen**. **Achtung:** Diese Funktion steuert auch, ob Sie englische Inhalte über die Registerkarte **Inhalt verwalten** herunterladen können.|
 
 ## <a name="see-also"></a>Siehe auch
 
