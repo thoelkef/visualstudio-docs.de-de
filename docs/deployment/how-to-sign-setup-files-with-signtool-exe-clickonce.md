@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce) | Microsoft-Dokumentation'
+title: Vorgehensweise beim Signieren von Setup Dateien mit SignTool.exe (ClickOnce) | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928411"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382067"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit „SignTool.exe“ (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
 Sie können mit *SignTool.exe* ein Setupprogramm (*setup.exe*) signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
 
  Standardmäßig verfügt ClickOnce über signierte Manifeste und ein signiertes Setupprogramm. Wenn Sie jedoch später die Parameter des Setupprogramms ändern möchten, müssen Sie das Setupprogramm später signieren. Wenn Sie die Parameter nach dem Signieren des Setupprogramms ändern, wird die Signatur beschädigt.
@@ -36,9 +36,9 @@ Sie können mit *SignTool.exe* ein Setupprogramm (*setup.exe*) signieren. Durch 
 
 1. Installieren Sie das Zertifikat, mit dem Sie das Manifest signieren möchten, auf dem Entwicklungscomputer.
 
-2. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
+2. Wählen Sie das Projekt in **Projektmappen-Explorer**aus.
 
-3. Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.
+3. Klicken Sie im Menü **Projekt** auf **Eigenschaften**von *ProjectName* .
 
 4. Deaktivieren Sie auf der Seite **Signieren** das Kontrollkästchen **ClickOnce-Manifeste signieren**.
 
@@ -60,9 +60,9 @@ Sie können mit *SignTool.exe* ein Setupprogramm (*setup.exe*) signieren. Durch 
 
 11. Öffnen Sie auf der Kundenwebsite eine Eingabeaufforderung.
 
-12. Wechseln Sie zum Verzeichnis mit der *EXE*-Datei.
+12. Wechseln Sie in das Verzeichnis, das die *exe* -Datei enthält.
 
-13. Signieren Sie die *EXE*-Datei mit dem folgenden Befehl:
+13. Signieren Sie die *exe* -Datei mit dem folgenden Befehl:
 
     ```cmd
     signtool sign /sha1 CertificateHash Setup.exe

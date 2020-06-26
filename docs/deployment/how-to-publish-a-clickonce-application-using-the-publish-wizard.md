@@ -1,7 +1,7 @@
 ---
-title: Veröffentlichen von ClickOnce-Anwendung mit der Veröffentlichungs-Assistenten
+title: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,20 +17,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3880fdc8d1d83fd36fdf09fea9e0c955b02236
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263264"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382301"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten
 Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung mit dem Veröffentlichungs-Assistenten veröffentlichen. Für die Veröffentlichung stehen im **Projekt-Designer** auf der Seite **Veröffentlichen** zusätzliche Eigenschaften zur Verfügung. Weitere Informationen finden Sie unter [Publishing ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md).
 
-Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentlichungseigenschaften entsprechend festlegen. Wenn Sie z.B. einen Schlüssel zum Signieren der ClickOnce-Anwendung angeben möchten, können Sie dies im **Projekt-Designer** auf der Seite **Signierung** vornehmen. Weitere Informationen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).
+Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentlichungseigenschaften entsprechend festlegen. Wenn Sie z.B. einen Schlüssel zum Signieren der ClickOnce-Anwendung angeben möchten, können Sie dies im **Projekt-Designer** auf der Seite **Signierung** vornehmen. Weitere Informationen finden Sie unter [sichere ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
-> Wenn Sie mit ClickOnce mehrere Versionen einer Anwendung installieren, verschiebt die Installation ältere Versionen der Anwendung in einen Ordner mit dem Namen *Archiv* in dem von Ihnen angegebenen Veröffentlichungsort. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.
+> Wenn Sie mit ClickOnce mehrere Versionen einer Anwendung installieren, verschiebt die Installation frühere Versionen der Anwendung in einen Ordner namens " *Archive*" an dem von Ihnen angegebenen Veröffentlichungsort. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.
 
 > [!NOTE]
 > Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
@@ -39,7 +39,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
 1. Wählen Sie im **Projektmappen-Explorer** das Anwendungsprojekt aus.
 
-2. Auf der **erstellen** Menü klicken Sie auf **veröffentlichen** *Projectname*.
+2. Klicken Sie im Menü **Erstellen** auf **Publish** *Projektname*veröffentlichen.
 
     Der Webpublishing-Assistent wird angezeigt.
 
@@ -59,7 +59,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
    - Wenn die Anwendung direkt vom Ort der Veröffentlichung gestartet werden soll, klicken Sie auf **Nein, diese Anwendung ist nur online verfügbar.** Es wird keine Verknüpfung im **Startmenü** erstellt.
 
-     Klicken Sie auf **Weiter**, um fortzufahren.
+     Klicken Sie zum Fortfahren auf **Weiter** .
 
 6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
 
@@ -75,7 +75,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
     Der Webpublishing-Assistent wird angezeigt.
 
-3. Geben Sie auf der Seite **Wo möchten Sie die Anwendung veröffentlichen?** den Dateipfad oder den FTP-Speicherort an, an dem die Anwendung veröffentlicht wird, zum Beispiel: *d:\deploy*. Klicken Sie dann zum Fortfahren auf **Weiter**.
+3. Geben Sie auf der Seite **Wo möchten Sie die Anwendung veröffentlichen?** den Dateipfad oder den FTP-Speicherort an, an dem die Anwendung veröffentlicht wird, zum Beispiel: *d:\deploy*. Klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
 
 4. Klicken Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.
 
@@ -88,7 +88,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
    - Wenn die Anwendung nicht nach Updates sucht, klicken Sie auf **Anwendung sucht nicht nach Updates**.
 
-     Klicken Sie auf **Weiter**, um fortzufahren.
+     Klicken Sie zum Fortfahren auf **Weiter** .
 
 6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
 
@@ -99,6 +99,6 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
 ## <a name="see-also"></a>Siehe auch
 
-- [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
-- [Secure ClickOnce applications (Sichern von ClickOnce-Anwendungen)](../deployment/securing-clickonce-applications.md)
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+- [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Deploying an Office solution by using ClickOnce (Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce)](../vsto/deploying-an-office-solution-by-using-clickonce.md)

@@ -1,7 +1,7 @@
 ---
-title: Anpassen der Standardwebseite für ClickOnce-Anwendung
+title: Anpassen der Standard Webseite für die ClickOnce-Anwendung
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,38 +17,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263333"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382470"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Vorgehensweise: Anpassen der Standardwebseite für eine ClickOnce-Anwendung
-Wenn Sie eine ClickOnce-Anwendung im Web veröffentlichen, eine Webseite automatisch generiert und zusammen mit der Anwendung veröffentlicht. Die Standardseite enthält den Namen der Anwendung und Links zu die Anwendung zu installieren, Installieren der erforderlichen Komponenten oder zugreifen auf die Hilfe auf MSDN.
+Wenn eine ClickOnce-Anwendung im Web veröffentlicht wird, wird automatisch eine Webseite generiert und zusammen mit der Anwendung veröffentlicht. Die Standardseite enthält den Namen der Anwendung und Links zum Installieren der Anwendung, Installieren der erforderlichen Komponenten oder zugreifen auf die Hilfe auf MSDN.
 
 > [!NOTE]
-> Die tatsächliche Links, die Sie auf der Seite finden Sie abhängig sind, auf dem Computer, die, in dem die Seite angezeigt wird, und welche erforderlichen Komponenten, die Sie einbeziehen.
+> Die tatsächlichen Links, die auf der Seite angezeigt werden, hängen von dem Computer ab, auf dem die Seite angezeigt wird, und von den Voraussetzungen, die Sie einschließen.
 
- Der Standardname für die Webseite ist *Publish.htm*; Sie können den Namen im Ändern der **Projekt-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+ Der Standardname für die Webseite ist *Publish.htm*. der Name kann im **Projekt-Designer**geändert werden. Weitere Informationen finden Sie unter Gewusst [wie: Angeben einer Veröffentlichungs Seite für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
- Die *Publish.htm* Webseite wird veröffentlicht, nur dann, wenn eine neuere Version erkannt wird.
+ Die *Publish.htm* Webseite wird nur veröffentlicht, wenn eine neuere Version erkannt wird.
 
 > [!NOTE]
-> Änderungen, die Sie, um vornehmen Ihre **veröffentlichen** Einstellungen wirken sich nicht die *Publish.htm* Seite mit einer Ausnahme: Wenn Sie hinzufügen oder entfernen Voraussetzungen, nachdem Sie ursprünglich veröffentlicht haben, wird die Liste der Komponenten nicht mehr genau sein. Sie müssen den Text für die erforderliche Verknüpfung zu den Änderungen entsprechend bearbeiten.
+> Änderungen, die Sie an Ihren **Veröffentlichungs** Einstellungen vornehmen, wirken sich nicht auf die *Publish.htm* Seite aus, mit einer Ausnahme: Wenn Sie nach der ersten Veröffentlichung erforderliche Komponenten hinzufügen oder entfernen, ist die Liste der Voraussetzungen nicht mehr korrekt. Sie müssen den Text für den erforderlichen Link bearbeiten, um die Änderungen widerzuspiegeln.
 
-### <a name="to-customize-the-publish-web-page"></a>Anpassen der Seite "Web veröffentlichen"
+### <a name="to-customize-the-publish-web-page"></a>So passen Sie die Webseite zum Veröffentlichen an
 
-1. Veröffentlichen Sie die ClickOnce-Anwendung auf eine Webadresse ein. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+1. Veröffentlichen Sie Ihre ClickOnce-Anwendung an einem Webspeicherort. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
-2. Öffnen Sie auf dem Webserver, der *Publish.htm* -Datei in Visual Web Designer oder einem anderen HTML-Editor.
+2. Öffnen Sie auf dem Webserver die Datei *Publish.htm* im Visual Web Designer oder einem anderen HTML-Editor.
 
-3. Anpassen der Seite nach Bedarf, und speichern Sie sie.
+3. Passen Sie die Seite wie gewünscht an, und speichern Sie Sie.
 
-4. Dies ist optional. Um zu verhindern, dass Visual Studio überschreiben Ihrer Webseite angepasste veröffentlichen, deaktivieren Sie **generieren automatisch Bereitstellungswebseite nach jeder veröffentlichen** in die **Veröffentlichungsoptionen** Dialogfeld.
+4. Optional. Um zu verhindern, dass Visual Studio die angepasste Veröffentlichungs Webseite überschreibt, deaktivieren Sie im Dialogfeld **Veröffentlichungs Optionen die Option** **Bereitstellung automatisch generieren nach jeder Veröffentlichung** .
 
 ## <a name="see-also"></a>Siehe auch
-- [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
-- [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Vorgehensweise: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

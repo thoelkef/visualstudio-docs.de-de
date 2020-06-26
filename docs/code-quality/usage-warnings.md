@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a0ff6ba1f654f3a9b909012f159cd3daaf2892f3
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283345"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382626"
 ---
 # <a name="usage-warnings"></a>Verwendungswarnungen
 
@@ -27,7 +27,7 @@ Verwendungs Warnungen unterstützen die ordnungsgemäße Verwendung von .net.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Regel|Beschreibung|
+|Regel|BESCHREIBUNG|
 |----------|-----------------|
 |[CA1801: Nicht verwendete Parameter überprüfen.](../code-quality/ca1801.md)|Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird.|
 |[CA1806: Methodenergebnisse nicht ignorieren.](../code-quality/ca1806.md)|Ein neues Objekt wird erstellt, aber nie verwendet, oder eine Methode wird aufgerufen, die eine neue Zeichenfolge erstellt und zurückgibt, die nie verwendet wird, oder eine COM-Methode oder P/Invoke-Methode gibt ein HRESULT oder einen Fehlercode zurück, das oder der nie verwendet wird.|
@@ -75,4 +75,5 @@ Verwendungs Warnungen unterstützen die ordnungsgemäße Verwendung von .net.
 |[CA2244: Keine Initialisierungen indizierter Elemente duplizieren](../code-quality/ca2244.md)|Ein Objektinitialisierer verfügt über mehr als einen indizierten Elementinitialisierer mit demselben Konstanten Index. Alle außer der letzte Initialisierer sind redundant.|
 |[CA2245: Keine Zuweisung einer Eigenschaft zu sich selbst](../code-quality/ca2245.md)|Eine Eigenschaft wurde versehentlich selbst zugewiesen.|
 |[CA2246: Keine Zuweisung eines Symbols und seines Members in der gleichen Anweisung](../code-quality/ca2246.md)|Es wird nicht empfohlen, ein Symbol und dessen Member, d. h. ein Feld oder eine Eigenschaft, in derselben Anweisung zuzuweisen. Es ist nicht klar, ob der Element Zugriff dazu gedacht war, den alten Wert des Symbols vor der Zuweisung oder den neuen Wert aus der Zuweisung in dieser Anweisung zu verwenden.|
+|[CA2247: Anstelle einer TaskContinuationOptions-Enumeration muss eine TaskCreationOptions-Enumeration als Argument an den TaskCompletionSource-Konstruktor übergeben werden.](../code-quality/ca2246.md)|TaskCompletionSource verfügt über Konstruktoren, die taskkreationoptions verwenden, die die zugrunde liegende Aufgabe steuern, und Konstruktoren, die den Objektzustand annehmen, der in der Aufgabe gespeichert ist.  Das versehentliche übergeben von TaskContinuationOptions anstelle von taskkreationoptions führt dazu, dass der Aufruf die Optionen als Zustand behandelt.|
 |[CA2248: Geben Sie ein korrektes "Aufzählungs Argument" für "" "" "" ".](../code-quality/ca2248.md)|Der als Argument an den `HasFlag` Methodenaufruf umgegebene Aufzählungs Typ unterscheidet sich vom aufrufenden Aufzählungs Typen.|

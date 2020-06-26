@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba899e922e98817462b06a1693525ab1ae69e20
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159904"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382353"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Vorgehensweise: Verwalten von Updates für eine ClickOnce-Anwendung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen können automatisch oder Programm gesteuert nach Updates suchen. Als Entwickler haben Sie viele Flexibilität bei der Angabe, wann und wie Update Überprüfungen durchgeführt werden, ob Updates obligatorisch sind und wo die Anwendung nach Updates suchen soll.
 
  Sie können die Anwendung so konfigurieren, dass nach Updates vor dem Start der Anwendung oder in festgelegten Intervallen nach dem Start der Anwendung gesucht wird. Außerdem können Sie eine mindestens erforderliche Version angeben. Das heißt, dass ein Update installiert wird, wenn die Version des Benutzers niedriger als die erforderliche Version ist.
@@ -87,7 +87,7 @@ ms.locfileid: "71159904"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des *http://Hostname/ApplicationName* Formats oder eines UNC-Pfads im Format  *\\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach der zu suchen. Speicherort aktualisieren.
+5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des Formats *http://Hostname/ApplicationName* oder eines UNC-Pfads im Format * \\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach dem Aktualisierungs Speicherort zu suchen.
 
 ### <a name="to-check-for-updates-programmatically"></a>So suchen Sie Programm gesteuert nach Updates
 
@@ -99,9 +99,9 @@ ms.locfileid: "71159904"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** deaktiviert ist. (Optional können Sie dieses Kontrollkästchen aktivieren, um Programm gesteuert nach Updates zu suchen und die ClickOnce-Laufzeit zu überprüfen, ob Updates automatisch überprüft werden.)
 
-5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des *http://Hostname/ApplicationName* Formats oder eines UNC-Pfads im Format  *\\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach der zu suchen. Speicherort aktualisieren. Der Aktualisierungs Speicherort ist der Ort, an dem die Anwendung nach einer aktualisierten Version von sich selbst sucht.
+5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des Formats *http://Hostname/ApplicationName* oder eines UNC-Pfads im Format * \\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach dem Aktualisierungs Speicherort zu suchen. Der Aktualisierungs Speicherort ist der Ort, an dem die Anwendung nach einer aktualisierten Version von sich selbst sucht.
 
-6. Erstellen Sie eine Schaltfläche, ein Menü Element oder eine andere Benutzeroberfläche in einem Windows Form, die Benutzer auswählen, um nach Updates zu suchen. Über den-Ereignishandler dieses Elements können Sie eine Methode zum Suchen und Installieren von Updates abrufen. Ein Beispiel für Visual Basic und visuellen C# Code für eine solche Methode finden Sie unter [Gewusst wie: Suchen Sie Programm gesteuert mithilfe der ClickOnce-Bereitstellungs-](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)API nach Anwendungs Updates.
+6. Erstellen Sie eine Schaltfläche, ein Menü Element oder eine andere Benutzeroberfläche in einem Windows Form, die Benutzer auswählen, um nach Updates zu suchen. Über den-Ereignishandler dieses Elements können Sie eine Methode zum Suchen und Installieren von Updates abrufen. Ein Beispiel für Visual Basic-und Visual c#-Code für eine solche Methode finden Sie unter Gewusst [wie: Programm gesteuertes suchen nach Anwendungs Updates mithilfe der ClickOnce-Bereitstellungs-API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
 
 7. Erstellen Sie Ihre Anwendung.
 
@@ -109,6 +109,6 @@ ms.locfileid: "71159904"
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Application updates dialog box (Dialogfeld „Anwendungsupdates“)](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)
-- [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
+- [How to: Publish a ClickOnce application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Vorgehensweise: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

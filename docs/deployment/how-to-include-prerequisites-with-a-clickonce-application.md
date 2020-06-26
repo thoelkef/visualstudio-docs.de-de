@@ -1,19 +1,19 @@
 ---
 title: 'Vorgehensweise: einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557633"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382392"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen. Wenn Sie eine Anwendung veröffentlichen und **Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen** auswählen, tritt ein Fehler auf, wenn die Installationspakete nicht im Ordner **Pakete** enthalten sind.
@@ -21,20 +21,20 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
 > [!NOTE]
 > Informationen zum Hinzufügen eines Installationspakets für die .NET Framework finden Sie im [.NET Framework Bereitstellungs Handbuch für Entwickler](/dotnet/framework/deployment/deployment-guide-for-developers).
 
-## <a name="Package"></a> So fügen Sie mit „Package.xml“ ein Installationspaket hinzu
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> So fügen Sie mit „Package.xml“ ein Installationspaket hinzu
 
 1. Öffnen Sie im Datei-Explorer den Ordner **Pakete**.
 
-    Standardmäßig ist der Pfad `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
+    Standardmäßig ist der Pfad `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\` .
 
 2. Öffnen Sie den Ordner für die erforderliche Komponente, die Sie hinzufügen möchten, und öffnen Sie dann den Sprachordner für die installierte Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (z.B. **en** für Englisch).
 
 3. Öffnen Sie im Editor die Datei *Package.xml*.
 
-4. Suchen Sie das **Name** -Element, das `http://go.microsoft.com/fwlink`enthält, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.
+4. Suchen Sie das **Name** -Element `http://go.microsoft.com/fwlink` , das enthält, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.
 
    > [!NOTE]
-   > Wenn kein **Name** -Element `http://go.microsoft.com/fwlink`enthält, öffnen Sie die **Product. XML** -Datei im Stamm Ordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink** .
+   > Wenn kein **Name** -Element enthält `http://go.microsoft.com/fwlink` , öffnen Sie die Datei **Product.xml** im Stamm Ordner für die erforderliche Komponente, und suchen Sie die Zeichenfolge **fwlink** .
 
    > [!IMPORTANT]
    > Einige erforderliche Komponenten haben mehrere Installationspakete (z. B. für 32-Bit- oder 64-Bit-Systeme). Wenn mehrere **Name**-Elemente **fwlink** enthalten, müssen Sie die verbleibenden Schritte für jedes dieser Elemente überprüfen.
@@ -49,5 +49,5 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
 
     Sie können das Installationspaket jetzt mit der Anwendung verteilen.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+## <a name="see-also"></a>Siehe auch
+- [Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
