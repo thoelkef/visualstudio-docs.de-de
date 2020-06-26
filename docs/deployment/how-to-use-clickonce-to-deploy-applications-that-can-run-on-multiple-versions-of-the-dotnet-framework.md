@@ -1,7 +1,7 @@
 ---
-title: Mithilfe von ClickOnce zum Bereitstellen von multitarget apps
+title: Verwenden von ClickOnce zum Bereitstellen von apps mit mehreren Zielen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,44 +16,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747484"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381703"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die unter mehreren Versionen von .NET Framework ausgeführt werden können
-Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framework ausgerichtet ist, mithilfe der ClickOnce-bereitstellungstechnologie. Dies erfordert, dass Sie generieren und aktualisieren die Anwendungs- und Bereitstellungsmanifeste.
+Mithilfe der ClickOnce-Bereitstellungs Technologie können Sie eine Anwendung bereitstellen, die mehrere Versionen der .NET Framework als Ziel hat. Dies erfordert, dass Sie die Anwendungs-und Bereitstellungs Manifeste generieren und aktualisieren.
 
 > [!NOTE]
-> Bevor Sie die Anwendung mehrere Versionen von .NET Framework als Ziel festlegen, sollten Sie sicherstellen, dass Ihre Anwendung mit mehreren Versionen von .NET Framework ausgeführt wird. Die Version der common Language Runtime unterscheidet zwischen .NET Framework 4 und .NET Framework 2.0, .NET Framework 3.0 und .NET Framework 3.5.
+> Bevor Sie die Anwendung so ändern, dass Sie mehrere Versionen des .NET Framework als Ziel hat, sollten Sie sicherstellen, dass die Anwendung mit mehreren Versionen des .NET Framework ausgeführt wird. Die Version Common Language Runtime unterscheidet sich zwischen .NET Framework 4 und .NET Framework 2,0, .NET Framework 3,0 und .NET Framework 3,5.
 
- Dieser Prozess erfordert die folgenden Schritte aus:
+ Für diesen Vorgang sind die folgenden Schritte erforderlich:
 
-1. Die Anwendungs- und Bereitstellungsmanifeste zu generieren.
+1. Generieren Sie die Anwendungs-und Bereitstellungs Manifeste.
 
-2. Ändern Sie das Bereitstellungsmanifest, um mehrere .NET Framework-Versionen aufzulisten.
+2. Ändern Sie das Bereitstellungs Manifest, um die verschiedenen .NET Framework Versionen aufzulisten.
 
-3. Ändern der *"App.config"* Datei, die die kompatiblen Versionen von .NET Framework Common Language Runtime-Liste.
+3. Ändern Sie die *app.config* Datei, um die kompatiblen .NET Framework Lauf Zeit Versionen aufzulisten.
 
-4. Ändern Sie das Anwendungsmanifest, um abhängige Assemblys als .NET Framework-Assemblys zu kennzeichnen.
+4. Ändern Sie das Anwendungs Manifest, um abhängige Assemblys als .NET Framework Assemblys zu markieren
 
-5. Melden Sie das Anwendungsmanifest an.
+5. Signieren Sie das Anwendungs Manifest.
 
-6. Aktualisieren und das Bereitstellungsmanifest zu signieren.
+6. Aktualisieren und Signieren Sie das Bereitstellungs Manifest.
 
-### <a name="to-generate-the-application-and-deployment-manifests"></a>Um die Anwendungs- und Bereitstellungsmanifeste zu generieren.
+### <a name="to-generate-the-application-and-deployment-manifests"></a>So generieren Sie die Anwendungs-und Bereitstellungs Manifeste
 
-- Verwenden Sie den Webpublishing-Assistenten oder die Seite "Veröffentlichen", Projekt-Designer zum Veröffentlichen der Anwendung und generieren die Anwendung und der Bereitstellungsmanifestdateien an. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oder [Seite "Veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md).
+- Verwenden Sie den Veröffentlichungs-Assistenten oder die Seite Veröffentlichen des Projekt-Designers, um die Anwendung zu veröffentlichen und die Dateien für die Anwendung und das Bereitstellungs Manifest zu generieren. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten oder der](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) Seite "veröffentlichen" [, Projekt-Designer](../ide/reference/publish-page-project-designer.md).
 
-### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>So ändern Sie das Bereitstellungsmanifest zum Auflisten der mehrere Versionen von .NET Framework
+### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>So ändern Sie das Bereitstellungs Manifest, um die mehrere .NET Framework Versionen aufzulisten
 
-1. Öffnen Sie im Veröffentlichungsverzeichnis das Bereitstellungsmanifest, indem Sie mit der XML-Editor in Visual Studio. Das Bereitstellungsmanifest hat die *.application* Dateinamenerweiterung.
+1. Öffnen Sie im Verzeichnis veröffentlichen das Bereitstellungs Manifest, indem Sie den XML-Editor in Visual Studio verwenden. Das Bereitstellungs Manifest verfügt über die Dateinamenerweiterung *. Application* .
 
-2. Ersetzen Sie den XML-Code zwischen den `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` und `</compatibleFrameworks>` Elemente mit XML, das die unterstützten Versionen von .NET Framework für Ihre Anwendung enthält.
+2. Ersetzen Sie den XML-Code zwischen dem `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` -Element und dem- `</compatibleFrameworks>` Element durch XML, das die unterstützten .NET Framework Versionen für Ihre Anwendung auflistet
 
-     Die folgende Tabelle zeigt einige der verfügbaren .NET Framework-Versionen und den entsprechenden XML-Code, der das Bereitstellungsmanifest hinzugefügt werden können.
+     In der folgenden Tabelle werden einige der verfügbaren .NET Framework Versionen und der entsprechende XML-Code angezeigt, den Sie dem Bereitstellungs Manifest hinzufügen können.
 
     |.NET Framework-Version|XML|
     |----------------------------|---------|
@@ -63,32 +63,32 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
     |3.5 Full|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|
     |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|
 
-### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>So ändern Sie die Datei "App.config", um die kompatiblen Versionen von .NET Framework Common Language Runtime-Liste
+### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>So ändern Sie die app.config Datei, um die kompatiblen .NET Framework Runtime-Versionen aufzulisten
 
-1. Öffnen Sie im Projektmappen-Explorer die *"App.config"* -Datei mit dem XML-Editor in Visual Studio.
+1. Öffnen Sie in Projektmappen-Explorer die *app.config* Datei mit dem XML-Editor in Visual Studio.
 
-2. Ersetzen Sie den XML-Code zwischen (oder hinzufügen) die `<startup>` und `</startup>` Elemente mit XML, das die unterstützten .NET Framework-Laufzeiten für Ihre Anwendung enthält.
+2. Ersetzen (oder fügen) Sie den XML-Code zwischen dem `<startup>` -Element und dem- `</startup>` Element durch XML, das die unterstützten .NET Framework Laufzeiten für die Anwendung auflistet.
 
-     Die folgende Tabelle zeigt einige der verfügbaren .NET Framework-Versionen und den entsprechenden XML-Code, der das Bereitstellungsmanifest hinzugefügt werden können.
+     In der folgenden Tabelle werden einige der verfügbaren .NET Framework Versionen und der entsprechende XML-Code angezeigt, den Sie dem Bereitstellungs Manifest hinzufügen können.
 
-    |.NET Framework Common Language Runtime-version|XML|
+    |Laufzeitversion .NET Framework|XML|
     |------------------------------------|---------|
     |4 Client|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|
     |4 Full|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|
     |3.5 Full|\<supportedRuntime version="v2.0.50727"/>|
     |3.5 Client|\<supportedRuntime version="v2.0.50727" sku="Client"/>|
 
-### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>So ändern Sie das Anwendungsmanifest, um abhängige Assemblys als .NET Framework-Assemblys zu kennzeichnen.
+### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>So ändern Sie das Anwendungs Manifest, um abhängige Assemblys als .NET Framework Assemblys
 
-1. Öffnen Sie im Veröffentlichungsverzeichnis das Anwendungsmanifest, indem Sie mit der XML-Editor in Visual Studio. Das Bereitstellungsmanifest hat die *". manifest"* Dateinamenerweiterung.
+1. Öffnen Sie im Verzeichnis veröffentlichen das Anwendungs Manifest, indem Sie den XML-Editor in Visual Studio verwenden. Das Bereitstellungs Manifest verfügt über die Dateinamenerweiterung " *. Manifest* ".
 
-2. Hinzufügen `group="framework"` der Abhängigkeits-XML für die Sentinelassemblys (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, und `System.Data.Entity`). Der XML-Code sollte beispielsweise wie folgt aussehen:
+2. Fügen Sie `group="framework"` den Abhängigkeits-XML-Code für die sentinassemblys hinzu ( `System.Core` , `WindowsBase` , `Sentinel.v3.5Client` und `System.Data.Entity` ). Der XML-Code sollte beispielsweise wie folgt aussehen:
 
    ```xml
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Aktualisieren Sie die Versionsnummer der `<assemblyIdentity>` -Element für Microsoft.Windows.CommonLanguageRuntime der Versionsnummer für das .NET Framework, das den kleinsten gemeinsamen Nenner ist. Z. B. wenn die Anwendung .NET Framework 3.5 und .NET Framework 4 ausgerichtet ist, sollte mithilfe der 2.0.50727.0-Versionsnummer und den XML-Code wie folgt aussehen:
+3. Aktualisieren Sie die Versionsnummer des- `<assemblyIdentity>` Elements für Microsoft. Windows. CommonLanguageRuntime auf die Versionsnummer für die .NET Framework, die den kleinsten gemeinsamen Nenner ist. Wenn die Anwendung beispielsweise .NET Framework 3,5 und .NET Framework 4 als Ziel verwendet, verwenden Sie die Versionsnummer 2.0.50727.0, und die XML sollte wie folgt aussehen:
 
    ```xml
    <dependency>
@@ -98,13 +98,13 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
    </dependency>
    ```
 
-### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Zum Aktualisieren und erneut signieren, die Anwendungs- und Bereitstellungsmanifeste
+### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>So können Sie die Anwendungs-und Bereitstellungs Manifeste aktualisieren und erneut signieren
 
-- Aktualisieren und erneut die Anwendungs- und Bereitstellungsmanifeste zu signieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Aktualisieren und Signieren Sie die Anwendungs-und Bereitstellungs Manifeste. Weitere Informationen finden Sie unter Gewusst [wie: Erneutes Signieren von Anwendungs-und Bereitstellungs Manifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)
-- [\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<Dependency >-Element](../deployment/dependency-element-clickonce-application.md)
-- [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)
+- [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
+- [\<compatibleFrameworks>gewisses](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency>gewisses](../deployment/dependency-element-clickonce-application.md)
+- [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [Konfigurationsdateischema](/dotnet/framework/configure-apps/file-schema/index)

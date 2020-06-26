@@ -1,7 +1,7 @@
 ---
 title: Abrufen von Abfrage Zeichen folgen Informationen in einer Online-ClickOnce-App
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30169a43d88f0ee8ae2c428e5a3da0aef0b9d642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637866"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382184"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Vorgehensweise: Abrufen von Informationen zu Abfragezeichenfolgen in einer ClickOnce-Onlineanwendung
 Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?) beginnt und die willkürliche Informationen im Format *name=value*enthält. Angenommen, Sie verfügen über eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mit dem Namen `WindowsApp1` , die Sie auf `servername`hosten, und Sie möchten einen Wert für die Variable `username` bei Anwendungsstart übergeben. Die URL könnte folgendermaßen aussehen:
@@ -39,14 +39,14 @@ Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?)
 > [!NOTE]
 > Bevor Sie eine Entscheidung zur Aktivierung dieser Funktion treffen, lesen Sie zuerst den Abschnitt „Sicherheit“ weiter unten in diesem Thema.
 
- Informationen zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung mithilfe von " *Mage. exe* " oder " *MageUI. exe*" finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Informationen zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe von *Mage.exe* oder *MageUI.exe*finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
 > Ab .NET Framework 3.5 SP1 ist es möglich, Befehlszeilenargumente an eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Offlineanwendung zu übergeben. Wenn Sie der Anwendung Argumente bereitstellen möchten, können Sie der Verknüpfungsdatei In-Parameter mit der Erweiterung APPREF-MS übergeben.
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>So rufen Sie Abfragezeichenfolgen-Informationen in einer ClickOnce-Anwendung ab
 
-1. Platzieren Sie folgenden Code in Ihrem Projekt. Damit dieser Code funktioniert, müssen Sie über einen Verweis auf System. Web verfügen und `using` oder `Imports` Direktiven für System. Web, System. Collections. Specialized und System. Deployment. Application hinzufügen.
+1. Platzieren Sie folgenden Code in Ihrem Projekt. Damit dieser Code funktioniert, müssen Sie über einen Verweis auf System. Web verfügen und- `using` oder- `Imports` Direktiven für System. Web, System. Collections. Specialized und System. Deployment. Application hinzufügen.
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
@@ -79,4 +79,4 @@ Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?)
  Lassen Sie die Übergabe von URL-Parametern an Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung nur zu, wenn Sie beabsichtigen, die Eingabe von böswilligen Zeichen vor der Verwendung zu bereinigen. Eine Zeichenfolge, die z.B. mit Anführungszeichen, Schrägstrichen oder Semikola als Trennzeichen eingebettet ist, kann möglicherweise willkürliche Datenvorgänge durchführen, wenn sie ungefiltert in einer SQL-Abfrage für eine Datenbank verwendet wird. Weitere Informationen zur Sicherheit von Abfragezeichenfolgen finden Sie in der [Übersicht über Skriptexploits](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
 
 ## <a name="see-also"></a>Siehe auch
-- [Secure ClickOnce applications (Sichern von ClickOnce-Anwendungen)](../deployment/securing-clickonce-applications.md)
+- [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)

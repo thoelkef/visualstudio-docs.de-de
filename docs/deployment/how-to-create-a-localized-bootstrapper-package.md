@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets | Microsoft-Dokumentation'
+title: Erstellen eines lokalisierten Bootstrapperpakets | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406808"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382561"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets
-Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Bootstrapperpakets erstellen, indem Sie mindestens zwei Dateien für jedes Gebietsschema erstellen: eine Datei mit Softwarelizenzbedingungen (z.B. *eula.rtf*) und ein Paketmanifest (*package.xml*).
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Vorgehensweise: Erstellen eines lokalisierten Bootstrappakets
+Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Boots Trapper-Pakets erstellen, indem Sie für jedes Gebiets Schema zwei weitere Dateien erstellen: eine Datei mit Software-Lizenzbedingungen (z *. b. "EULA. RTF*") und ein Paket Manifest (*package.xml*).
 
  Visual Studio 2010 umfasst standardmäßig nur lokalisierte Bootstrapperpakete für .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 und F# Runtime 4.0. Mit den folgenden drei Schritten können Sie lokalisierte Pakete für andere Bootstrapper erstellen.
 
-1. Erstellen Sie einen Ordner mit dem Namen des Gebietsschemas unter *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Bootstrapperpaketname >* .
+1. Erstellen Sie einen Ordner, der nach dem Gebiets Schema Namen in *\Programme\Microsoft SDKs\Windows\v7.0a\bootstrapper\packages \\ \<BootstrapperPackageName> *benannt ist.
 
 2. Erstellen Sie eine Datei, die die Softwarelizenzbedingungen für das Bootstrapperpaket enthält, und legen Sie diese in dem neuen Ordner ab.
 
-3. Erstellen Sie ein Paketmanifest mit dem Namen *package.xml*, aktualisieren Sie die Zeichenfolgen und die Kultur, und legen Sie die Datei in dem neuen Ordner ab. Wenn Sie bereits ein Bootstrapperpaket von Visual Studio in der Zielsprache erstellt haben, können Sie die Visual Studio-Datei *package.xml* kopieren und in diesem Schritt ändern.
+3. Erstellen Sie ein Paket Manifest mit dem Namen *package.xml*, aktualisieren Sie die Zeichen folgen und die Kultur, und fügen Sie die Datei in den neuen Ordner ein. Wenn Sie bereits ein Bootstrapperpaket von Visual Studio in der Zielsprache erstellt haben, können Sie die Visual Studio-Datei *package.xml* kopieren und in diesem Schritt ändern.
 
 > [!NOTE]
 > Wenn Sie ein Setup-Projekt zur Bereitstellung von Anwendungen verwenden, können Sie Ihre Anwendung durch Ändern der **Localization**-Eigenschaft lokalisieren.
@@ -39,9 +39,9 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 1. Erstellen Sie einen Ordner mit dem Namen des Gebietsschemas.
 
-     Erstellen Sie auf 32-Bit-Computern den Ordner, in der *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Bootstrapperpaketname >\\*  Ordner.
+     Erstellen Sie auf 32-Bit-Computern den Ordner im Ordner " *\Programme\Microsoft SDKs\Windows\v7.0a\bootstrapper\packages \\ \<BootstrapperPackageName> \\ * ".
 
-     Erstellen Sie auf 64-Bit-Computern den Ordner, in der *\Program Files (x 86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Bootstrapperpaketname >\\*  Ordner.
+     Erstellen Sie auf 64-Bit-Computern den Ordner im Ordner *\Program Files (86) \Microsoft SDKs\Windows\v7.0a\bootstrapper\packages \\ \<BootstrapperPackageName> \\ * .
 
      In der folgenden Tabelle sind die Ordnernamen dargestellt, die Sie für die Übereinstimmung mit einem Gebietsschema verwenden können.
 
@@ -64,31 +64,31 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 2. Erstellen Sie eine Datei, die die Softwarelizenzbedingungen für das Bootstrapperpaket enthält, und legen Sie diese in dem neuen Ordner ab.
 
-3. Erstellen Sie ein Paketmanifest mit dem Namen *package.xml*, und legen Sie die Datei in dem neuen Ordner ab. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md).
+3. Erstellen Sie ein Paketmanifest mit dem Namen *package.xml*, und legen Sie die Datei in dem neuen Ordner ab. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Paket Manifests](../deployment/how-to-create-a-package-manifest.md).
 
 4. Aktualisieren Sie den Abschnitt `<Strings>` des Paketmanifests so, dass die Zeichenfolgen die korrekte Sprache für das Gebietsschema aufweisen.
 
 5. Ändern Sie den Wert `<String Name="Culture">` so, dass er mit dem Ordnernamen übereinstimmt.
 
-6. Speichern Sie die Datei *package.xml*.
+6. Speichern Sie die *package.xml* Datei.
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>So erstellen Sie ein Bootstrapperpaket für .NET Framework 3.5 Service Pack 1 lokalisiert in Französisch
 
-1. Erstellen Sie einen Ordner mit dem Namen *fr*. Der Ordnername muss mit dem Gebietsschemanamen übereinstimmen.
+1. Erstellen Sie einen Ordner mit dem Namen " *fr*". Der Ordnername muss mit dem Gebietsschemanamen übereinstimmen.
 
-     Erstellen Sie auf 32-Bit-Computern den Ordner im Ordner *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
+     Erstellen Sie auf 32-Bit-Computern den Ordner im Ordner " *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\ * ".
 
-     Erstellen Sie auf 64-Bit-Computern den Ordner im Ordner *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
+     Erstellen Sie auf 64-Bit-Computern den Ordner im Ordner *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
 
 2. Legen Sie eine lokalisierte Version der Softwarelizenzbedingungen im Ordner *fr* ab.
 
-3. Kopieren Sie die Datei *\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* in den Ordner *fr*, und öffnen Sie die Datei im XML-Designer.
+3. Kopieren Sie die Datei " *\Program Files (x86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* " in den Ordner " *fr* ", und öffnen Sie die Datei im XML-Designer.
 
 4. Aktualisieren Sie den Abschnitt `<Strings>` des Paketmanifests so, dass die Fehlerzeichenfolgen auf Französisch sind.
 
-5. Ändern Sie den Wert `<String Name="Culture">` in *fr*.
+5. Ändern `<String Name="Culture">` Sie den Wert in " *fr*".
 
-6. Speichern Sie die Datei *package.xml*.
+6. Speichern Sie die *package.xml* Datei.
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md)

@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30acc1f38ea0d27a3a8245f586b3c41765330c50
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283397"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382665"
 ---
 # <a name="performance-warnings"></a>Leistungswarnungen
 Leistungs Warnungen unterstützen Hochleistungs Bibliotheken und-Anwendungen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-| Regel | Beschreibung |
+| Regel | BESCHREIBUNG |
 | - | - |
 | [CA1800: Keine unnötigen Umwandlungen.](../code-quality/ca1800.md) | Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. |
 | [CA1801: Nicht verwendete Parameter überprüfen.](../code-quality/ca1801.md) | Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. |
@@ -53,7 +53,8 @@ Leistungs Warnungen unterstützen Hochleistungs Bibliotheken und-Anwendungen.
 | [CA1827: Count/LongCount nicht verwenden, wenn Any verwendet werden kann.](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>die-Methode oder die- <xref:System.Linq.Enumerable.LongCount%2A> Methode wurde verwendet, wenn die <xref:System.Linq.Enumerable.Any%2A> Methode effizienter wäre. |
 | [CA1828: CountAsync/LongCountAsync nicht verwenden, wenn AnyAsync verwendet werden kann.](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>die-Methode oder die- <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> Methode wurde verwendet, wenn die <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> Methode effizienter wäre. |
 | [CA1829: Length/Count-Eigenschaft anstelle der Enumerable.Count-Methode verwenden.](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Die LINQ-Methode wurde für einen Typ verwendet, der eine äquivalente, effizientere oder-Eigenschaft unterstützt `Length` `Count` . |
-| [CA1831: Verwenden Sie Gspan anstelle von Bereichs basierten indexatoren für Zeichen folgen, wenn dies angebracht ist.](../code-quality/ca1831.md) | Wenn Sie einen Range-Indexer für eine Zeichenfolge verwenden und den Wert implizit einem "Read onlyspan"- &lt; Char- &gt; Typ zuweisen, wird die-Methode <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils der Zeichenfolge erzeugt wird. |
-| [CA1832: Verwenden Sie anstelle von Bereichs basierten indexatoren asspan oder asmemory, um den Teil eines Arrays mit "Read onlyspan" oder "Read onlymemory" zu erhalten.](../code-quality/ca1832.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.ReadOnlySpan%601> oder- <xref:System.ReadOnlyMemory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
-| [CA1833: Verwenden Sie anstelle von Bereichs basierten indexatoren asspan oder asmemory, um die Spanne oder den Arbeitsspeicher Teil eines Arrays zu erhalten.](../code-quality/ca1833.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.Span%601> oder- <xref:System.Memory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
+| [CA1830: Bevorzugen Sie stark typisierte Append- und Insert-Methodenüberladungen für StringBuilder.](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>und <xref:System.Text.StringBuilder.Insert%2A> Stellen über Ladungen für mehrere Typen bereit, die über System. String hinausgehen.  Bevorzugen Sie nach Möglichkeit die stark typisierten über Ladungen über die Verwendung von ToString () und der Zeichen folgen basierten Überladung. |
+| [CA1831: Verwenden Sie für Zeichenfolgen bei Bedarf anstelle von Range-basierten Indexern „AsSpan“.](../code-quality/ca1831.md) | Wenn Sie einen Range-Indexer für eine Zeichenfolge verwenden und den Wert implizit einem "Read onlyspan"- &lt; Char- &gt; Typ zuweisen, wird die-Methode <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils der Zeichenfolge erzeugt wird. |
+| [CA1832: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines ReadOnlySpan- oder ReadOnlyMemory-Teils eines Arrays.](../code-quality/ca1832.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.ReadOnlySpan%601> oder- <xref:System.ReadOnlyMemory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
+| [CA1833: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines Span- oder Memory-Teils eines Arrays.](../code-quality/ca1833.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.Span%601> oder- <xref:System.Memory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
 | [CA1835: bevorzugen Sie die "Memory"-basierten über Ladungen für "Read Async" und "schreiteasync".](../code-quality/ca1835.md) | ' Stream ' weist eine ' Schreib async '-Überladung auf, die ein ' Memory &lt; Byte &gt; ' als erstes Argument annimmt, und eine ' schreiteasync '-Überladung, die ein ' Read onlymemory &lt; Byte &gt; ' als erstes Argument annimmt. Bevorzugen Sie das Aufrufen der Speicher basierten über Ladungen, die effizienter sind. |
