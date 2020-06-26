@@ -551,6 +551,8 @@
                   href: ca1828.md
                 - name: 'CA1829: Length/Count-Eigenschaft anstelle der Enumerable.Count-Methode verwenden.'
                   href: ca1829.md
+                - name: 'CA1830: Bevorzugen Sie stark typisierte Append- und Insert-Methodenüberladungen für StringBuilder.'
+                  href: ca1830.md
                 - name: 'CA1831: Verwenden Sie für Zeichenfolgen bei Bedarf anstelle von Range-basierten Indexern „AsSpan“.'
                   href: ca1831.md
                 - name: 'CA1832: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines ReadOnlySpan- oder ReadOnlyMemory-Teils eines Arrays.'
@@ -949,6 +951,8 @@
                   href: ca2245.md
                 - name: 'CA2246: Keine Zuweisung eines Symbols und seines Members in der gleichen Anweisung'
                   href: ca2246.md
+                - name: 'CA2247: Anstelle einer TaskContinuationOptions-Enumeration muss eine TaskCreationOptions-Enumeration als Argument an den TaskCompletionSource-Konstruktor übergeben werden.'
+                  href: ca2247.md
                 - name: 'CA2248: Geben Sie das richtige enum-Argument für „Enum.HasFlag“ an.'
                   href: ca2248.md
             - name: Automatisches Anhalten von Features
