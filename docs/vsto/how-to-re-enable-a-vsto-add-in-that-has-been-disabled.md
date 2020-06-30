@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde'
+title: 'Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.Warning.DisabledAddIn
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418811"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541257"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde
   VSTO-Add-Ins, die ein unerwartetes Verhalten aufweisen, können von Microsoft Office-Anwendungen deaktiviert werden. Wenn Ihr VSTO-Add-In beim Debuggen von der Anwendung nicht geladen wird, wurde das VSTO-Add-In von der Anwendung möglicherweise hart oder weich deaktiviert.
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
 ## <a name="hard-disabled-vsto-add-ins"></a>Hart deaktivierte VSTO-Add-ins
- Harte Deaktivierung kann auftreten, wenn ein VSTO-Add-in zur unerwarteten Beendigung der Anwendung bewirkt. Sie kann auch auf dem Entwicklungscomputer auftreten, wenn Sie den Debugger beenden, während der <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignishandler im VSTO-Add-In ausgeführt wird.
+ Die harte Deaktivierung kann auftreten, wenn ein VSTO-Add-in bewirkt, dass die Anwendung unerwartet geschlossen wird. Sie kann auch auf dem Entwicklungscomputer auftreten, wenn Sie den Debugger beenden, während der <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignishandler im VSTO-Add-In ausgeführt wird.
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>So aktivieren Sie ein VSTO-Add-In erneut
 
@@ -49,7 +49,7 @@ ms.locfileid: "63418811"
 
 7. Klicken Sie auf **Schließen**.
 
-## <a name="soft-disabled-vsto-add-ins"></a>Weich deaktivierte VSTO-Add-ins
+## <a name="soft-disabled-vsto-add-ins"></a>Vorläufig deaktivierte VSTO-Add-ins
  Die weiche Deaktivierung kann auftreten, wenn ein VSTO-Add-In einen Fehler erzeugt, der nicht zur unerwarteten Beendigung der Anwendung führt. Ein VSTO-Add-In kann von einer Anwendung z. B. weich deaktiviert werden, wenn es einen Ausnahmefehler auslöst, während der <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignishandler ausgeführt wird.
 
 > [!NOTE]
@@ -74,6 +74,6 @@ ms.locfileid: "63418811"
 7. Klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
-- [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)
-- [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md)
-- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)
+- [Debugging von Office-Projekten](../vsto/debugging-office-projects.md)
+- [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)

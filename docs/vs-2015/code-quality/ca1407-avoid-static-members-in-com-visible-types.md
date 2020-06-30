@@ -15,34 +15,34 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6996d210417a56dd83532c481aaa0dc80b9f23ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 436a8614c18c296c072d91116143306d898f0436
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655234"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538852"
 ---
-# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Statische Member in für COM sichtbaren Typen vermeiden
+# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Statische Member in für COM sichtbaren Typen vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|AvoidStaticMembersInComVisibleTypes|
+|TypName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
-|Kategorie|Microsoft. Interoperabilität|
+|Category|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Typ, der speziell für Component Object Model (com) als sichtbar gekennzeichnet ist, enthält eine `public``static` Methode.
+ Ein Typ, der speziell für Component Object Model (com) als sichtbar gekennzeichnet ist, enthält eine- `public``static` Methode.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  COM unterstützt keine `static` Methoden.
 
- Diese Regel ignoriert Eigenschafts-und Ereignisaccessoren, Operator Überladungsmethoden oder Methoden, die entweder mit dem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>-Attribut oder dem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>-Attribut markiert sind.
+ Diese Regel ignoriert Eigenschafts-und Ereignisaccessoren, Operator Überladungsmethoden oder Methoden, die entweder mit dem- <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> Attribut oder dem-Attribut markiert sind <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> .
 
  Standardmäßig sind die folgenden Elemente für com sichtbar: Assemblys, öffentliche Typen, öffentliche Instanzmember in öffentlichen Typen und alle Member der öffentlichen Werttypen.
 
- Damit diese Regel ausgeführt werden kann, müssen <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf Assemblyebene auf `false` festgelegt werden, und die Klasse-<xref:System.Runtime.InteropServices.ComVisibleAttribute> muss auf `true` festgelegt werden, wie im folgenden Code gezeigt.
+ Damit diese Regel auftritt, muss auf Assemblyebene der Wert <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt werden, `false` und die-Klasse <xref:System.Runtime.InteropServices.ComVisibleAttribute> muss auf festgelegt werden `true` , wie im folgenden Code gezeigt.
 
 ```csharp
 using System;
@@ -62,14 +62,14 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf so, dass eine Instanzmethode verwendet wird, die dieselbe Funktionalität wie die `static`-Methode bereitstellt.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf so, dass eine Instanzmethode verwendet wird, die dieselbe Funktionalität wie die-Methode bereitstellt `static` .
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn ein com-Client keinen Zugriff auf die Funktionen benötigt, die von der `static`-Methode bereitgestellt werden.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn ein com-Client keinen Zugriff auf die Funktionen benötigt, die von der-Methode bereitgestellt werden `static` .
 
 ## <a name="example-violation"></a>Beispiel Verstoß
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel zeigt eine `static` Methode, die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -80,20 +80,20 @@ namespace Samples
 
 ## <a name="example-fix"></a>Beispiel Korrektur
 
-### <a name="description"></a>Beschreibung
- Um die Verletzung im vorherigen Beispiel zu beheben, können Sie die Methode in eine Instanzmethode ändern, aber dies ist in dieser Instanz nicht sinnvoll. Eine bessere Lösung ist das explizite Anwenden von `ComVisible(false)` auf die-Methode, um anderen Entwicklern zu helfen, dass die-Methode nicht von com eingesehen werden kann.
+### <a name="description"></a>BESCHREIBUNG
+ Um die Verletzung im vorherigen Beispiel zu beheben, können Sie die Methode in eine Instanzmethode ändern, aber dies ist in dieser Instanz nicht sinnvoll. Eine bessere Lösung besteht darin, explizit `ComVisible(false)` auf die-Methode anzuwenden, um anderen Entwicklern zu helfen, dass die Methode von com nicht angezeigt werden kann.
 
- Im folgenden Beispiel wird <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> auf die-Methode angewendet.
+ Das folgende Beispiel gilt <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> für die-Methode.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComVisibleStaticMembersFixed/cs/FxCop.Interoperability.ComVisibleStaticMembersFixed.cs#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017: Assemblys mit ComVisibleAttribute markieren.](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
- [CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
+ [CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden.](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 
- [CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden.](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Interoperabilität mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

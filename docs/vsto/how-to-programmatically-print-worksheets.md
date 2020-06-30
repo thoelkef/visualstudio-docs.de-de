@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes Drucken von Arbeitsblättern'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490585"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537890"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Vorgehensweise: Programm gesteuertes Drucken von Arbeitsblättern
 
@@ -36,7 +36,7 @@ Sie können beliebige Arbeitsblätter aus einer Arbeitsmappe drucken.
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   Mit <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> der-Methode können Sie das angegebene Objekt im Seiten Ansichts Fenster anzeigen. Der folgende Code setzt voraus, dass Sie über ein <xref:Microsoft.Office.Tools.Excel.Worksheet>-Hostelement namens `Sheet1` verfügen.
+   Mit der- <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> Methode können Sie das angegebene Objekt im Seiten **Print Preview** Ansichts Fenster anzeigen. Der folgende Code setzt voraus, dass Sie über ein <xref:Microsoft.Office.Tools.Excel.Worksheet>-Hostelement namens `Sheet1` verfügen.
 
 ### <a name="to-preview-a-page-before-printing"></a>So zeigen Sie eine Vorschau der Seite vor dem Druck an
 
@@ -54,7 +54,7 @@ Sie können beliebige Arbeitsblätter aus einer Arbeitsmappe drucken.
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   Mit <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> der-Methode können Sie das angegebene Objekt im Seiten Ansichts Fenster anzeigen.
+   Mit der- <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> Methode können Sie das angegebene Objekt im Seiten **Print Preview** Ansichts Fenster anzeigen.
 
 ### <a name="to-preview-a-page-before-printing"></a>So zeigen Sie eine Vorschau der Seite vor dem Druck an
 
@@ -63,10 +63,10 @@ Sie können beliebige Arbeitsblätter aus einer Arbeitsmappe drucken.
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
-- [Vorgehensweise: Programm gesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Gewusst wie: Programm gesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Arbeitsblatt-Host Element](../vsto/worksheet-host-item.md)
 - [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

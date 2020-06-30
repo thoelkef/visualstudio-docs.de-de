@@ -15,27 +15,27 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2df740abf25344253627b614fdbd80dce86c7bfa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847470"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539255"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
+|TypName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Kategorie|Microsoft.Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
  Eine Methode, von der das Auslösen von Ausnahmen nicht erwartet wird, löst eine Ausnahme aus.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Methoden, für die keine Ausnahmen ausgelöst werden, können wie folgt kategorisiert werden:
 
 - Get-Methoden der Eigenschaft
@@ -65,24 +65,24 @@ ms.locfileid: "75847470"
 
  Die folgenden Ausnahmen können von einer Get-Methode der Eigenschaft ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName>und alle Ableitungen
 
-- <xref:System.ArgumentException?displayProperty=fullName> (nur aus indiziertem Get)
+- <xref:System.ArgumentException?displayProperty=fullName>(nur aus indizierten Get-)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (nur aus indiziertem Get)
+- <xref:System.Collections.Generic.KeyNotFoundException>(nur aus indizierten Get-)
 
 ### <a name="event-accessor-methods"></a>Ereigniszugriffsmethoden
  Ereignisaccessoren sollten einfache Vorgänge sein, die keine Ausnahmen auslösen. Ein Ereignis sollte keine Ausnahme auslösen, wenn Sie versuchen, einen Ereignishandler hinzuzufügen oder zu entfernen.
 
  Die folgenden Ausnahmen können von einem Ereignis accesor ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName>und alle Ableitungen
 
-- <xref:System.ArgumentException> und Ableitungen
+- <xref:System.ArgumentException>und Ableitungen
 
 ### <a name="equals-methods"></a>Gleichheits Methoden
  Die folgenden **Gleichheits** Methoden sollten keine Ausnahmen auslösen:
@@ -91,21 +91,21 @@ ms.locfileid: "75847470"
 
 - ["M:IEquatable.ist"](https://msdn2.microsoft.com/library/ms131190(VS.80).aspx)
 
-  Eine **Gleichheits** Methode sollte `true` oder `false` zurückgeben, anstatt eine Ausnahme auszulösen. Wenn z. b. auf gleich zwei nicht übereinstimmende Typen folgt, sollte nur `false` zurückgegeben werden, anstatt eine <xref:System.ArgumentException>auszulösen.
+  Eine **Gleichheits** Methode sollte oder zurückgeben, `true` `false` anstatt eine Ausnahme auszulösen. Wenn z. b. gleich zwei nicht übereinstimmende Typen weitergegeben werden, sollten Sie nur zurückgeben, `false` anstatt eine auszulösen <xref:System.ArgumentException> .
 
 ### <a name="gethashcode-methods"></a>GetHashCode-Methoden
  Die folgenden **GetHashCode** -Methoden sollten normalerweise keine Ausnahmen auslösen:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
+- [M:IEqualityComparer.GetHashCode (T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
 
   **GetHashCode** sollte immer einen Wert zurückgeben. Andernfalls können Sie Elemente in der Hash Tabelle verlieren.
 
-  Die Versionen von **GetHashCode** , die ein Argument annehmen, können eine <xref:System.ArgumentException>auslösen. **Object. GetHashCode** sollte jedoch nie eine Ausnahme auslösen.
+  Die Versionen von **GetHashCode** , die ein Argument annehmen, können eine auslösen <xref:System.ArgumentException> . **Object. GetHashCode** sollte jedoch nie eine Ausnahme auslösen.
 
 ### <a name="tostring-methods"></a>Methoden mit dem Methoden Satz
- Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName>, um Informationen zu Objekten im Zeichen folgen Format anzuzeigen. Daher sollte die Objekt **Zeichenfolge** den Status eines Objekts nicht ändern und keine Ausnahmen auslösen.
+ Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName> , um Informationen zu Objekten im Zeichen folgen Format anzuzeigen. Daher sollte die Objekt **Zeichenfolge** den Status eines Objekts nicht ändern und keine Ausnahmen auslösen.
 
 ### <a name="static-constructors"></a>Statische Konstruktoren
  Das Auslösen von Ausnahmen von einem statischen Konstruktor bewirkt, dass der Typ in der aktuellen Anwendungsdomäne unbrauchbar ist. Sie sollten einen sehr guten Grund (z. b. ein Sicherheitsproblem) zum Auslösen einer Ausnahme von einem statischen Konstruktor haben.
@@ -114,12 +114,12 @@ ms.locfileid: "75847470"
  Das Auslösen einer Ausnahme von einem Finalizer bewirkt, dass die CLR schnell ausfällt, was den Prozess aufreißt. Daher sollte das Auslösen von Ausnahmen in einem Finalizer immer vermieden werden.
 
 ### <a name="dispose-methods"></a>Verwerfen von Methoden
- Eine <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme auslösen. "Verwerfen" wird häufig als Teil der Bereinigungs Logik in einer `finally`-Klausel aufgerufen. Daher zwingt das explizite Auslösen einer Ausnahme von verwerfen den Benutzer, eine Ausnahmebehandlung in der `finally`-Klausel hinzuzufügen.
+ Eine <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme auslösen. "Verwerfen" wird häufig als Teil der Bereinigungs Logik in einer- `finally` Klausel aufgerufen. Daher zwingt das explizite Auslösen einer Ausnahme von verwerfen den Benutzer, eine Ausnahmebehandlung in der-Klausel hinzuzufügen `finally` .
 
  Der verwerfen **(false)** -Codepfad sollte nie Ausnahmen auslösen, da dies fast immer von einem Finalizer aufgerufen wird.
 
 ### <a name="equality-operators--"></a>Gleichheits Operatoren (= =,! =)
- Gleichheits Operatoren sollten wie Gleichheits Methoden entweder `true` oder `false` zurückgeben und sollten keine Ausnahmen auslösen.
+ Like-Methoden sollten Gleichheits Operatoren entweder `true` oder zurückgeben `false` und sollten keine Ausnahmen auslösen.
 
 ### <a name="implicit-cast-operators"></a>Implizite Umwandlungs Operatoren
  Da der Benutzer häufig nicht weiß, dass ein impliziter Umwandlungs Operator aufgerufen wurde, ist eine Ausnahme, die vom impliziten Umwandlungs Operator ausgelöst wurde, völlig unerwartet. Daher sollten keine Ausnahmen von impliziten Umwandlungs Operatoren ausgelöst werden.
@@ -133,7 +133,7 @@ ms.locfileid: "75847470"
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Verletzung durch eine Ausnahme Deklaration anstelle einer ausgelösten Ausnahme verursacht wurde.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen.](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>Siehe auch
- [Entwurfswarnungen](../code-quality/design-warnings.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Entwurfs Warnungen](../code-quality/design-warnings.md)

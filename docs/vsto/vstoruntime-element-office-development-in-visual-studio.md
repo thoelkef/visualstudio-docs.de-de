@@ -1,7 +1,7 @@
 ---
-title: '&lt;VstoRuntime&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 98f483748cce9c3a053c800f9bdd6e0f3d651da2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982135"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541881"
 ---
-# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;VstoRuntime&gt; -Element (Office-Entwicklung in Visual Studio)
+# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `vstoRuntime` -Element des `vstav3` -Namespace enthält eine unterstützte Version der Visual Studio Tools for Office-Laufzeit für eine bestimmte Office-Projektmappe.
 
 ## <a name="syntax"></a>Syntax
@@ -38,16 +38,16 @@ ms.locfileid: "62982135"
 
  Das `vstoRuntime` -Element weist folgende Attribute auf.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`release`|Erforderlich. Die Releaseversion der Visual Studio Tools for Office-Laufzeit.|
 |`version`|Erforderlich. Versionsnummer der Visual Studio Tools for Office-Laufzeit.|
-|`supportUrl`|Dies ist optional. Link zum Installationspfad der Visual Studio Tools for Office-Laufzeit.|
+|`supportUrl`|Optional. Link zum Installationspfad der Visual Studio Tools for Office-Laufzeit.|
 
  `vstoRuntime` enthält keine Elemente.
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel veranschaulicht das `vstoRuntime` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+ Das folgende Codebeispiel veranschaulicht das `vstoRuntime` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ```xml
 <vstav3:vstoRuntime
@@ -56,8 +56,8 @@ ms.locfileid: "62982135"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
