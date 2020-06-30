@@ -15,34 +15,34 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ee166f8bbc14e66968cd4f7c265331854905ac9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3c707fef5562b932b6232300131f6e6e6efef6a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662949"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534562"
 ---
-# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: ServicedComponents nicht mit WebMethod markieren
+# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: ServicedComponents nicht mit WebMethod markieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotMarkServicedComponentsWithWebMethod|
+|TypName|DoNotMarkServicedComponentsWithWebMethod|
 |CheckId|CA2212|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methode in einem Typ, der von <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> erbt, ist mit <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> markiert.
+ Eine Methode in einem Typ, der von erbt, <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> ist mit markiert <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> .
 
-## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Web.Services.WebMethodAttribute> gilt für Methoden innerhalb eines XML-Webdiensts, die mit ASP.NET erstellt wurden. Dadurch kann die Methode von Remoteweb Clients aufgerufen werden. Die-Methode und die-Klasse müssen öffentlich sein und in einer ASP.NET-Webanwendung ausgeführt werden. <xref:System.EnterpriseServices.ServicedComponent>-Typen werden von com+-Anwendungen gehostet und können com+-Dienste verwenden. <xref:System.Web.Services.WebMethodAttribute> wird nicht auf <xref:System.EnterpriseServices.ServicedComponent>-Typen angewendet, da Sie nicht für dieselben Szenarios vorgesehen sind. Durch das Hinzufügen des-Attributs zur <xref:System.EnterpriseServices.ServicedComponent>-Methode wird die Methode nicht von Remoteweb Clients aufgerufen. Da <xref:System.Web.Services.WebMethodAttribute> und eine <xref:System.EnterpriseServices.ServicedComponent>-Methode widersprüchliche Verhalten und Anforderungen für den Kontext und den Transaktions Fluss aufweisen, ist das Verhalten der Methode in einigen Szenarien falsch.
+## <a name="rule-description"></a>Beschreibung der Regel
+ <xref:System.Web.Services.WebMethodAttribute>gilt für Methoden innerhalb eines XML-Webdiensts, die mit ASP.NET erstellt wurden. Dadurch kann die Methode von Remoteweb Clients aufgerufen werden. Die-Methode und die-Klasse müssen öffentlich sein und in einer ASP.NET-Webanwendung ausgeführt werden. <xref:System.EnterpriseServices.ServicedComponent>Typen werden von com+-Anwendungen gehostet und können com+-Dienste verwenden. <xref:System.Web.Services.WebMethodAttribute>wird nicht auf- <xref:System.EnterpriseServices.ServicedComponent> Typen angewendet, da Sie nicht für dieselben Szenarien vorgesehen sind. Insbesondere wird durch das Hinzufügen des-Attributs zur- <xref:System.EnterpriseServices.ServicedComponent> Methode nicht die Methode von Remoteweb Clients aufgerufen. Da <xref:System.Web.Services.WebMethodAttribute> und eine <xref:System.EnterpriseServices.ServicedComponent> Methode widersprüchliche Verhalten und Anforderungen für den Kontext-und Transaktions Fluss aufweisen, ist das Verhalten der Methode in einigen Szenarien falsch.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das-Attribut aus der <xref:System.EnterpriseServices.ServicedComponent>-Methode.
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das-Attribut aus der- <xref:System.EnterpriseServices.ServicedComponent> Methode.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel. Es gibt keine Szenarios, in denen die Kombination dieser Elemente korrekt ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>

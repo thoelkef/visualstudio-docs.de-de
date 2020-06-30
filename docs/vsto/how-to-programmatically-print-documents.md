@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Drucken von Dokumenten'
+title: 'Gewusst wie: Programm gesteuertes Drucken von Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956043"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537825"
 ---
-# <a name="how-to-programmatically-print-documents"></a>Vorgehensweise: Programmgesteuertes Drucken von Dokumenten
+# <a name="how-to-programmatically-print-documents"></a>Gewusst wie: Programm gesteuertes Drucken von Dokumenten
   Sie können ein ganzes Microsoft Office Word-Dokument oder einen Teil eines Dokuments auf dem Standarddrucker drucken.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>Drucken eines Dokuments, das Teil einer Anpassung auf Dokumentebene ist
+## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>Drucken eines Dokuments, das Teil einer Anpassung auf Dokument Ebene ist
 
 ### <a name="to-print-the-entire-document"></a>So drucken Sie das ganze Dokument
 
@@ -41,7 +41,7 @@ ms.locfileid: "62956043"
      [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]
 
-## <a name="print-a-document-by-using-a-vsto-add-in"></a>Drucken eines Dokuments mithilfe eines VSTO-Add-Ins
+## <a name="print-a-document-by-using-a-vsto-add-in"></a>Drucken eines Dokuments mithilfe eines VSTO-Add-ins
 
 ### <a name="to-print-an-entire-document"></a>So drucken Sie ein ganzes Dokument
 
@@ -57,5 +57,5 @@ ms.locfileid: "62956043"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]
 
-## <a name="see-also"></a>Siehe auch
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
 title: Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589629"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535992"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 
@@ -41,7 +41,7 @@ Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, 
 
 2. Fügen Sie dem Projekt eine Textvorlagen Datei hinzu, und geben Sie Ihr einen Namen mit der Erweiterung **. tt**.
 
-    Wählen Sie dazu **Projektmappen-Explorer**im Kontextmenü des Projekts > **Neues Element** **Hinzufügen** aus. Wählen Sie im Dialogfeld **Neues Element hinzufügen** im mittleren Bereich **Text Vorlage** aus.
+    Wählen Sie hierzu in **Projektmappen-Explorer**im Kontextmenü des Projekts die Option **Add**  >  **Neues Element**hinzufügen aus. Wählen Sie im Dialogfeld **Neues Element hinzufügen** im mittleren Bereich **Text Vorlage** aus.
 
     Beachten Sie, dass die Eigenschaft **benutzerdefiniertes Tool** der Datei **TextTemplatingFileGenerator**ist.
 
@@ -60,7 +60,7 @@ Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, 
    Hello, world!
    ```
 
-5. Speichern Sie die Datei.
+5. Speichern Sie die Datei .
 
     Möglicherweise wird ein Meldungs Feld mit einer **Sicherheitswarnung** angezeigt, in dem Sie aufgefordert werden, zu bestätigen, dass Sie die Vorlage ausführen möchten. Klicken Sie auf **OK**.
 
@@ -117,7 +117,7 @@ Textvorlagen ermöglichen es Ihnen, den Inhalt der generierten Datei mithilfe vo
 
    Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md).
 
-   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.
+   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. `"C#"` ist der Standardwert.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit
 
@@ -134,7 +134,7 @@ So debuggen Sie eine Textvorlage
    Die Vorlage wird an den Breakpoints ausgeführt und angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.
 
 > [!TIP]
-> `debug="true"` bewirkt, dass die generierten Code Map genauer in die Textvorlage eingefügt werden, indem weitere Zeilen nummerierungsdirektiven in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
+> `debug="true"`bewirkt, dass der generierte Code Map präziser in die Textvorlage eingefügt wird, indem weitere Zeilen nummerierungsdirektiven in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
 >
 > Sie können jedoch die Klausel in der template-Anweisung lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.
 
@@ -219,7 +219,7 @@ Im Vorlagencode können Assemblys wie System.XML verwendet werden, um auf eine M
 <#@ import namespace="System.IO" #>
 ```
 
-Die `assembly`-Direktive macht die angegebene Assembly auf die gleiche Weise wie der Referenz Abschnitt eines Visual Studio-Projekts für den Vorlagen Code verfügbar. Sie müssen keinen Verweis auf "System.dll" einschließen, da automatisch darauf verwiesen wird. Die `import`-Anweisung ermöglicht wie die `using`-Anweisung in einer normalen Programmdatei die Verwendung von Typen ohne ihre vollqualifizierten Namen.
+Die- `assembly` Direktive macht die angegebene Assembly auf die gleiche Weise wie der Referenz Abschnitt eines Visual Studio-Projekts für den Vorlagen Code verfügbar. Sie müssen keinen Verweis auf "System.dll" einschließen, da automatisch darauf verwiesen wird. Die `import`-Anweisung ermöglicht wie die `using`-Anweisung in einer normalen Programmdatei die Verwendung von Typen ohne ihre vollqualifizierten Namen.
 
 Beispielsweise können Sie nach dem Importieren von **System.IO**Folgendes schreiben:
 
@@ -272,7 +272,7 @@ Der Typ von `this.Host` (in VB `Me.Host`) ist `Microsoft.VisualStudio.TextTempla
 
 ### <a name="getting-data-from-visual-studio"></a>Erhalten von Daten aus Visual Studio
 
-Um in Visual Studio bereitgestellte Dienste zu verwenden, legen Sie das `hostSpecific`-Attribut fest, und laden Sie die `EnvDTE` Assembly. Importieren Sie `Microsoft.VisualStudio.TextTemplating`, die die `GetCOMService()`-Erweiterungsmethode enthält.  Sie können dann IServiceProvider.GetCOMService() verwenden, um auf DTE und andere Dienste zuzugreifen. Beispiel:
+Um in Visual Studio bereitgestellte Dienste zu verwenden, legen Sie das `hostSpecific` -Attribut fest, und laden Sie die `EnvDTE` Assembly. Import `Microsoft.VisualStudio.TextTemplating` , das die `GetCOMService()` Erweiterungsmethode enthält.  Sie können dann IServiceProvider.GetCOMService() verwenden, um auf DTE und andere Dienste zuzugreifen. Beispiel:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -290,7 +290,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Eine Textvorlage wird in ihrer eigene App-Domäne ausgeführt, und der Zugriff auf Dienste erfolgt durch Marshalling. Unter diesen Umständen ist GetCOMService() zuverlässiger als GetService().
 
-## <a name="Regenerating"></a>Automatisches Erneutes Generieren des Codes
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Automatisches Erneutes Generieren des Codes
 
 In der Regel werden mehrere Dateien in einer Visual Studio-Projekt Mappe mit einem Eingabe Modell generiert. Jede Datei wird aus einer eigenen Vorlage generiert, die Vorlagen verweisen jedoch alle auf das gleiche Modell.
 
@@ -299,7 +299,7 @@ Wenn sich das Quellmodell ändert, müssen Sie alle Vorlagen in der Projektmappe
 Wenn Sie das Visual Studio-Modellierungs-SDK installiert haben, können alle Vorlagen automatisch transformiert werden, wenn Sie einen Build ausführen. Bearbeiten Sie dazu die Projektdatei (.csproj oder .vbproj) in einem Text-Editor, und fügen Sie in der Nähe des Endes der Datei nach allen anderen `<import>`-Anweisungen die folgenden Zeilen hinzu:
 
 > [!NOTE]
-> Das Text Template Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Features von Visual Studio installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Das Text Template Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Features von Visual Studio installieren. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -325,9 +325,9 @@ Wenn Sie das Visual Studio-Modellierungs-SDK installiert haben, können alle Vor
 
 ::: moniker-end
 
-Weitere Informationen finden Sie unter [Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md).
+Weitere Informationen finden Sie unter [Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md).
 
-## <a name="error-reporting"></a>Fehlerberichte
+## <a name="error-reporting"></a>Fehlerberichterstellung
 
 Zum Platzieren von Fehler-und Warnmeldungen im Visual Studio-Fehler Fenster können Sie folgende Methoden verwenden:
 
@@ -336,13 +336,13 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>Eine vorhandene Datei in eine Vorlage wird umgerechnet
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Eine vorhandene Datei in eine Vorlage wird umgerechnet
 
 Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr ähneln und zudem einigen eingefügten Programmcode enthalten. Dadurch ergibt sich eine einfache Methode zum Erstellen einer Vorlage. Erstellen Sie zunächst eine gewöhnliche Datei als Prototyp, z. b. eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Datei, und führen Sie dann schrittweise den Generierungs Code ein, der die resultierende Datei variiert.
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>So konvertieren Sie eine vorhandene Datei in eine Entwurfszeitvorlage
 
-1. Fügen Sie Ihrem Visual Studio-Projekt eine Datei des Typs hinzu, den Sie generieren möchten, z. b. eine `.cs`, `.vb`oder `.resx` Datei.
+1. Fügen Sie Ihrem Visual Studio-Projekt eine Datei des Typs hinzu, den Sie generieren möchten, z. b `.cs` . eine-,-oder- `.vb` `.resx` Datei.
 
 2. Testen Sie die neue Datei, um sicherzustellen, dass sie ordnungsgemäß funktioniert.
 
@@ -353,7 +353,7 @@ Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr
    | | |
    |-|-|
    | **Benutzerdefiniertes Tool =** | **TextTemplatingFileGenerator** |
-   | **Buildaktion =** | **Keine** |
+   | **Buildvorgang =** | **None** |
 
 5. Fügen Sie am Anfang der Datei die folgenden Zeilen ein:
 
@@ -366,7 +366,7 @@ Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr
 
     Legen Sie das `extension`-Attribut auf die Dateinamenerweiterung für den zu generierenden Dateityp fest, z. B. `.cs`, `.resx` oder `.xml`.
 
-6. Speichern Sie die Datei.
+6. Speichern Sie die Datei .
 
     Eine untergeordnete Datei mit der angegebenen Erweiterung wird erstellt. Die Eigenschaften entsprechen dem Dateityp. Beispielsweise **wäre die Eigenschaft** Buildvorgang einer CS-Datei " **Compile**".
 
@@ -380,7 +380,7 @@ Informationen finden Sie unter [Richtlinien zum Schreiben von T4-Text Vorlagen](
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-|Nächster Schritt|Topic|
+|Nächster Schritt|Thema|
 |-|-|
 |Schreiben und debuggen Sie eine erweiterte Textvorlage mit Code, in dem zusätzliche Funktionen, eingeschlossene Dateien und externe Daten verwendet werden.|[Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)|
 |Generieren Sie zur Laufzeit Dokumente aus Vorlagen.|[Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)|
@@ -388,6 +388,6 @@ Informationen finden Sie unter [Richtlinien zum Schreiben von T4-Text Vorlagen](
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md)

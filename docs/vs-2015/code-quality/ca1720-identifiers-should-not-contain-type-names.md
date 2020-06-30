@@ -15,21 +15,21 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 34ebe4848bbbe49b9a67449795f0aea7d104af8b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671637"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534848"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|IdentifiersShouldNotContainTypeNames|
+|TypName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -39,8 +39,8 @@ ms.locfileid: "72671637"
 
  Der Name eines extern sichtbaren Members enthält einen sprachspezifischen Datentyp Namen.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Namen von Parametern und Membern werden besser verwendet, um ihre Bedeutung zu vermitteln, als den Typ zu beschreiben, der von den Entwicklungs Tools bereitgestellt werden soll. Wenn ein Datentyp Name verwendet werden muss, verwenden Sie für Namen von Membern einen sprachunabhängigen Namen anstelle eines sprachspezifischen namens. Verwenden Sie beispielsweise anstelle des C# Typnamens "int" den sprachunabhängigen Datentyp namens Int32.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Namen von Parametern und Membern werden besser verwendet, um ihre Bedeutung zu vermitteln, als den Typ zu beschreiben, der von den Entwicklungs Tools bereitgestellt werden soll. Wenn ein Datentyp Name verwendet werden muss, verwenden Sie für Namen von Membern einen sprachunabhängigen Namen anstelle eines sprachspezifischen namens. Verwenden Sie beispielsweise anstelle des c#-Typnamens "int" den sprachunabhängigen Datentyp namens Int32.
 
  Jedes diskrete Token im Namen des Parameters oder Members wird mit den folgenden sprachspezifischen Datentyp Namen überprüft, ohne Berücksichtigung der Groß-/Kleinschreibung:
 
@@ -80,7 +80,7 @@ ms.locfileid: "72671637"
 
   Außerdem werden die Namen eines Parameters auch mit den folgenden sprachunabhängigen Datentyp Namen überprüft, ohne Berücksichtigung der Groß-und Kleinschreibung:
 
-- Objekt
+- Object
 
 - Obj
 
@@ -88,7 +88,7 @@ ms.locfileid: "72671637"
 
 - Char
 
-- Zeichenfolge
+- String
 
 - SByte
 
@@ -141,10 +141,10 @@ ms.locfileid: "72671637"
  Gelegentlich können typbasierte Parameter-und Elementnamen verwendet werden. Bei der neuen Entwicklung treten jedoch keine bekannten Szenarien auf, in denen Sie eine Warnung aus dieser Regel unterdrücken sollten. Bei Bibliotheken, die zuvor ausgeliefert wurden, müssen Sie möglicherweise eine Warnung aus dieser Regel unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: Bezeichner sollten keine Unterstriche enthalten](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Bezeichner sollten keine Unterstriche enthalten.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+ [CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen.](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

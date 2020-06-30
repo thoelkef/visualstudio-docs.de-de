@@ -15,33 +15,33 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5f39540cb23d86dda4244604da8a9ff764594e11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1752efb5be1828f62703e1fe1a1130b37ff80503
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661334"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534926"
 ---
-# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein
+# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|AutoLayoutTypesShouldNotBeComVisible|
+|TypName|AutoLayoutTypesShouldNotBeComVisible|
 |CheckId|CA1403|
-|Kategorie|Microsoft. Interoperabilität|
+|Category|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein sichtbarer Component Object Model (com)-Werttyp ist mit dem Attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> gekennzeichnet, das auf <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> festgelegt ist.
+ Ein Component Object Model (com) sichtbarer Werttyp ist mit dem- <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> Attribut gekennzeichnet, das auf festgelegt ist <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> .
 
-## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Runtime.InteropServices.LayoutKind> Layouttypen werden vom Common Language Runtime verwaltet. Das Layout dieser Typen kann sich zwischen den Versionen der .NET Framework ändern, wodurch com-Clients, die ein bestimmtes Layout erwarten, unterbricht werden. Beachten Sie, dass C#, wenn das <xref:System.Runtime.InteropServices.StructLayoutAttribute>-Attribut nicht angegeben ist, die C++ -, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-und-Compiler das <xref:System.Runtime.InteropServices.LayoutKind> Layout für Werttypen angeben.
+## <a name="rule-description"></a>Beschreibung der Regel
+ <xref:System.Runtime.InteropServices.LayoutKind>Layouttypen werden vom Common Language Runtime verwaltet. Das Layout dieser Typen kann sich zwischen den Versionen der .NET Framework ändern, wodurch com-Clients, die ein bestimmtes Layout erwarten, unterbricht werden. Beachten Sie, dass die <xref:System.Runtime.InteropServices.StructLayoutAttribute> c# [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] -,-und C++-Compiler das <xref:System.Runtime.InteropServices.LayoutKind> Layout für Werttypen angeben, wenn das-Attribut nicht angegeben ist.
 
- Sofern nicht anders gekennzeichnet, sind alle öffentlichen nicht generischen Typen für com sichtbar. alle nicht öffentlichen und generischen Typen sind für com nicht sichtbar. Um falsch positive Ergebnisse zu reduzieren, erfordert diese Regel jedoch, dass die COM-Sichtbarkeit des Typs explizit angegeben wird. die enthaltende Assembly muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> als `false` markiert werden, und der Typ muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf `true` festgelegt sein.
+ Sofern nicht anders gekennzeichnet, sind alle öffentlichen nicht generischen Typen für com sichtbar. alle nicht öffentlichen und generischen Typen sind für com nicht sichtbar. Um falsch positive Ergebnisse zu reduzieren, erfordert diese Regel jedoch, dass die COM-Sichtbarkeit des Typs explizit angegeben wird. die enthaltende Assembly muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> auf festgelegten festgelegt werden, `false` und der Typ muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf festgelegten Wert gekennzeichnet werden `true` .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert des <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attributs in <xref:System.Runtime.InteropServices.LayoutKind> oder <xref:System.Runtime.InteropServices.LayoutKind>, oder machen Sie den Typ für COM unsichtbar.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert des- <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attributs in <xref:System.Runtime.InteropServices.LayoutKind> oder <xref:System.Runtime.InteropServices.LayoutKind> , oder machen Sie den Typ für COM unsichtbar.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
@@ -53,7 +53,7 @@ ms.locfileid: "72661334"
  [!code-vb[FxCop.Interoperability.AutoLayout#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.AutoLayout/vb/FxCop.Interoperability.AutoLayout.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1408: AutoDual ClassInterfaceType nicht verwenden](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+ [CA1408: AutoDual ClassInterfaceType nicht verwenden.](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Einführung in die Klassen Schnittstelle](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [qualifizieren von .NET-Typen für die Interoperation](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

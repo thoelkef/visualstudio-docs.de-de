@@ -15,53 +15,53 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5b5e1525d1ee706f9cd46a58c022763d2ed234bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a63ebb7f3946926864c4dd882c281b5dcd7c6c5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662682"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535836"
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Argumentausnahmen korrekt instanziieren
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Argumentausnahmen korrekt instanziieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|InstantiateArgumentExceptionsCorrectly|
+|TypName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
  Zu den möglichen Ursachen gehören die folgenden Situationen:
 
-- Der standardmäßige (parameterlose) Konstruktor eines Ausnahme Typs, der ist oder von [System. ArgumentException] abgeleitet ist, wird aufgerufen (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->) auf den zugehörigen gespeicherten Wert zugreifen.
+- Der standardmäßige (parameterlose) Konstruktor eines Ausnahme Typs, der ist oder von [System. ArgumentException] abgeleitet ist, wird aufgerufen (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
 
 - Ein falsches Zeichen folgen Argument wird an einen parametrisierten Konstruktor eines Ausnahme Typs übergeben, der ist oder von [System. ArgumentException] abgeleitet ist. (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Anstatt den Standardkonstruktor aufzurufen, rufen Sie eine der Konstruktorüberladungen auf, die eine aussagekräftigere Ausnahme Meldung bereitstellen lassen. Die Ausnahme Meldung sollte den Entwickler als Ziel haben und die Fehlerbedingung und die Vorgehensweise zur Behebung oder Vermeidung der Ausnahme eindeutig erläutern.
 
- Die Signaturen der einen und zwei zeichenfolgenkonstruktoren von <xref:System.ArgumentException> und der abgeleiteten Typen sind hinsichtlich der `message`-und `paramName`-Parameter nicht konsistent. Stellen Sie sicher, dass diese Konstruktoren mit den richtigen Zeichen folgen Argumenten aufgerufen werden. Die Signaturen lauten wie folgt:
+ Die Signaturen der einen und zwei zeichenfolgenkonstruktoren von <xref:System.ArgumentException> und der abgeleiteten Typen sind hinsichtlich des `message` -Parameters und des- `paramName` Parameters nicht konsistent. Stellen Sie sicher, dass diese Konstruktoren mit den richtigen Zeichen folgen Argumenten aufgerufen werden. Die Signaturen lauten wie folgt:
 
- <xref:System.ArgumentException> (Zeichenfolge `message`)
+ <xref:System.ArgumentException>(Zeichenfolge `message` )
 
- <xref:System.ArgumentException> (Zeichenfolge `message`, Zeichenfolge `paramName`)
+ <xref:System.ArgumentException>(Zeichenfolge `message` , Zeichenfolge `paramName` )
 
- <xref:System.ArgumentNullException> (Zeichenfolge `paramName`)
+ <xref:System.ArgumentNullException>(Zeichenfolge `paramName` )
 
- <xref:System.ArgumentNullException> (Zeichenfolge `paramName`, Zeichenfolge `message`)
+ <xref:System.ArgumentNullException>(Zeichenfolge `paramName` , Zeichenfolge `message` )
 
- <xref:System.ArgumentOutOfRangeException> (Zeichenfolge `paramName`)
+ <xref:System.ArgumentOutOfRangeException>(Zeichenfolge `paramName` )
 
- <xref:System.ArgumentOutOfRangeException> (Zeichenfolge `paramName`, Zeichenfolge `message`)
+ <xref:System.ArgumentOutOfRangeException>(Zeichenfolge `paramName` , Zeichenfolge `message` )
 
- <xref:System.DuplicateWaitObjectException> (Zeichenfolge `parameterName`)
+ <xref:System.DuplicateWaitObjectException>(Zeichenfolge `parameterName` )
 
- <xref:System.DuplicateWaitObjectException> (Zeichenfolge `parameterName`, Zeichenfolge `message`)
+ <xref:System.DuplicateWaitObjectException>(Zeichenfolge `parameterName` , Zeichenfolge `message` )
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, müssen Sie einen Konstruktor aufrufen, der eine Nachricht, einen Parameternamen oder beides annimmt, und sicherstellen, dass die Argumente für den Typ der aufgerufenen <xref:System.ArgumentException> richtig sind.
+ Um einen Verstoß gegen diese Regel zu beheben, müssen Sie einen Konstruktor aufrufen, der eine Nachricht, einen Parameternamen oder beides annimmt, und sicherstellen, dass die Argumente für den aufgerufenen Typ ordnungsgemäß sind <xref:System.ArgumentException> .
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, eine Warnung aus dieser Regel nur zu unterdrücken, wenn ein parametrisierter Konstruktor mit den richtigen Zeichen folgen Argumenten aufgerufen wird.
