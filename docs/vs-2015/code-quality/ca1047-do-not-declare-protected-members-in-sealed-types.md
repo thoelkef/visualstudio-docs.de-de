@@ -15,30 +15,30 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e115b4d327f1ac45673de491ceaffc90941e1111
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668181"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546782"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Geschützte Member in versiegelten Typen nicht deklarieren
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Geschützte Member in versiegelten Typen nicht deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotDeclareProtectedMembersInSealedTypes|
+|TypName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ ist `sealed` (`NotInheritable` in Visual Basic) und deklariert einen geschützten Member oder einen geschützten Typ. Diese Regel meldet keine Verstöße gegen <xref:System.Object.Finalize%2A> Methoden, die diesem Muster folgen müssen.
+ Ein öffentlicher Typ ist `sealed` ( `NotInheritable` in Visual Basic) und deklariert einen geschützten Member oder einen geschützten Typ. Diese Regel meldet keine Verstöße gegen <xref:System.Object.Finalize%2A> Methoden, die diesem Muster folgen müssen.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Typen deklarieren geschützte Member, damit erbende Typen auf den Member zugreifen oder diesen überschreiben können. Definitionsgemäß können Sie nicht von einem versiegelten Typ erben, was bedeutet, dass geschützte Methoden für versiegelte Typen nicht aufgerufen werden können.
 
- Der C# Compiler gibt eine Warnung für diesen Fehler aus.
+ Der c#-Compiler gibt eine Warnung für diesen Fehler aus.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zugriffsebene des Members in privat, oder machen Sie den Typ vererbbar.

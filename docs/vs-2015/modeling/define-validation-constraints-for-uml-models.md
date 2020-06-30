@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849740"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547588"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 
  Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>-Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,9 +42,9 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 ## <a name="defining-a-validation-extension"></a>Definieren einer Validierungserweiterung
  Um eine Validierungserweiterung für einen UML-Designer zu erstellen, müssen Sie eine Klasse erstellen, welche die Validierungseinschränkungen definiert, und diese Klasse in eine Visual Studio-Integrationserweiterung (VSIX, Visual Studio Integration Extension) einbetten. Die VSIX fungiert als Container zum Installieren der Einschränkung. Es gibt zwei alternative Methoden zur Definition einer Validierungserweiterung:
 
-- **Erstellen Sie eine Validierungs Erweiterung in der eigenen VSIX mithilfe einer Projektvorlage.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Validierungseinschränkungen nicht mit anderen Erweiterungstypen, z. B. Menübefehlen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten. Sie können mehrere Einschränkungen in einer Klasse definieren.
+- **Erstellen einer Validierungserweiterung innerhalb der eigenen VSIX mithilfe einer Projektvorlage.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Validierungseinschränkungen nicht mit anderen Erweiterungstypen, z. B. Menübefehlen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten. Sie können mehrere Einschränkungen in einer Klasse definieren.
 
-- **Erstellen separater Validierungs Klassen und VSIX-Projekte.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.
+- **Erstellen separater Validierungsklassen und VSIX-Projekte.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>So erstellen Sie eine Validierungserweiterung in der eigenen VSIX
 
@@ -63,7 +63,7 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 
 4. Testen Sie die Einschränkungen, indem Sie F5 drücken. Weitere Informationen finden Sie unter [Ausführen einer Validierungseinschränkung](#Executing).
 
-5. Installieren Sie den Menübefehl auf einem anderen Computer, indem Sie den Datei- **bin\\\*\\\*. vsix** kopieren, die vom Projekt erstellt wurde. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
+5. Installieren Sie den Menübefehl auf einem anderen Computer, indem Sie die Datei " **bin \\ \* \\ \* . vsix** " kopieren, die vom Projekt erstellt wurde. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
 
    Wenn Sie andere **.cs** -Dateien hinzuzufügen, benötigen Sie normalerweise die folgenden `using` -Anweisungen:
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Erstellen Sie ein Klassenbibliotheksprojekt. Sie können dieses entweder zu einer vorhandenen VSIX-Projektmappe hinzufügen, oder Sie können eine neue Projektmappe erstellen.
 
-    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
+    1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
 
     2. Erweitern Sie unter **Installierte Vorlagen**entweder **Visual C#** oder **Visual Basic**, und wählen Sie anschließend in der mittleren Spalte **Klassenbibliothek**aus.
 
@@ -95,7 +95,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 3. Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.
 
-    - Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.
+    - Wählen Sie in Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **als Startprojekt festlegen**aus.
 
 4. Fügen Sie in **source.extension.vsixmanifest**unter **Inhalt**das Klassenbibliotheksprojekt als MEF-Komponente hinzu:
 
@@ -105,11 +105,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     3. Wählen Sie auf der Registerkarte **Objekte** die Option **Neu**und wählen Sie im Dialogfeld:
 
-         **Typ** = **MEF-Komponente**
+         **Typ**  =  **MEF-Komponente**
 
-         **Quelle** = **Ein Projekt in der aktuellen Projektmappe**
+         **Quelle**  =  **Ein Projekt in der aktuellen Projekt** Mappe.
 
-         **Projekt** = *Ihr Klassenbibliotheksprojekt*
+         **Projekt**  =  *Ihr Klassen Bibliotheksprojekt*
 
 #### <a name="to-define-the-validation-class"></a>So definieren Sie die Validierungsklasse
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="Executing"></a>Ausführen einer Validierungs Einschränkung
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Ausführen einer Validierungs Einschränkung
  Führen Sie die Validierungsmethoden zu Testzwecken im Debugmodus aus.
 
 #### <a name="to-test-the-validation-constraint"></a>So testen Sie die Validierungseinschränkung
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.
 
-    - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist, in der Regel:
+    - Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts Start oder nur die Option **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname von ist, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Regel:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - An die Validierungsmethoden sind das richtige `Export` -Attribut und das richtige `ValidationMethod` -Attribut angefügt.
 
-    - `ValidationCategories.Menu` ist im-Argument für das `ValidationMethod`-Attribut enthalten und wird mit anderen Werten unter Verwendung von Logical or (&#124;) zusammengesetzt.
+    - `ValidationCategories.Menu`ist im-Argument für das `ValidationMethod` -Attribut enthalten und wird mithilfe von Logical or (&#124;) mit anderen Werten zusammengesetzt.
 
     - Die Parameter aller `Import` -Attribute und `Export` -Attribute sind gültig.
 
-## <a name="Implementing"></a>Auswerten der Einschränkung
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Auswerten der Einschränkung
  Die Validierungsmethode sollte bestimmen, ob die anzuwendende Validierungseinschränkung den Wert true oder false hat. Bei "true" soll keine Aktion erfolgen. Bei "false" sollte ein Fehler gemeldet werden, indem die vom `ValidationContext` -Parameter bereitgestellten Methoden verwendet werden.
 
 > [!NOTE]
@@ -256,7 +256,7 @@ public void ValidateSomething
 
  Die Attribute und Parameter jeder Validierungsmethode lauten wie folgt:
 
-|||
+|Signatur|BESCHREIBUNG|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Definiert die Methode per Managed Extensibility Framework (MEF) als Validierungseinschränkung.|
 |`[ValidationMethod (ValidationCategories.Menu)]`|Gibt an, wann die Validierung ausgeführt wird. Verwenden Sie bitweises OR (&#124;), wenn Sie mehr als eine Option kombinieren möchten.<br /><br /> `Menu` = aufgerufen über das Menü "Überprüfen".<br /><br /> `Save` = aufgerufen beim Speichern des Modells.<br /><br /> `Open` = aufgerufen beim Öffnen des Modells. `Load`: Wird beim Speichern des Modells aufgerufen, bei einem Verstoß gegen eine Einschränkung wird der Benutzer jedoch gewarnt, dass das Modell möglicherweise nicht wieder geöffnet werden kann. Wird zudem beim Laden aufgerufen, bevor das Modell analysiert wird.|
@@ -275,7 +275,7 @@ public void ValidateSomething
 
 - `elementsWithError` identifiziert Elemente im Modell. Wenn Benutzer auf den Fehlerbericht doppelklicken, wird die Form ausgewählt, die dieses Element darstellt.
 
-  `LogError(),` `LogWarning()` und `LogMessage()` Nachrichten in verschiedenen Abschnitten der Fehlerliste platzieren.
+  `LogError(),``LogWarning()`und `LogMessage()` platzieren Sie Nachrichten in verschiedenen Abschnitten der Fehlerliste.
 
 ## <a name="how-validation-methods-are-applied"></a>Anwenden von Validierungsmethoden
  Die Validierung wird auf jedes Element im Modell angewendet, einschließlich Beziehungen und Teile größerer Elemente, z. B. Attribute einer Klasse und Parameter einer Operation.
@@ -349,21 +349,21 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="ContextCache"></a>Koordinieren mehrerer Validierungen
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Koordinieren mehrerer Validierungen
  Wenn die Validierung aufgerufen wird (z. B. vom Benutzer über ein Diagrammmenü), wird jede Validierungsmethode auf jedes Modellelement angewendet. Dies bedeutet, dass dieselbe Methode für einen einzelnen Aufruf des Validierungsframeworks viele Male auf verschiedene Elemente angewendet werden kann.
 
  Dies stellt ein Problem für Validierungen dar, die sich mit den Beziehungen zwischen Elementen beschäftigen. Sie können z. B. eine Validierung schreiben, die von einem Anwendungsfall ausgeht und die **include** -Beziehungen durchläuft, um sicherzustellen, dass keine Schleifen vorhanden sind. Wenn die Methode jedoch auf jeden Anwendungsfall in einem Modell angewendet wird, das über viele **include** -Links verfügt, ist es wahrscheinlich, dass immer die gleichen Bereiche des Modells verarbeitet werden.
 
  Um diese Situation zu vermeiden, gibt es einen Kontextcache, in dem Informationen während einer Validierungsausführung beibehalten werden. Sie können ihn verwenden, um Informationen zwischen verschiedenen Ausführungen der Validierungsmethoden zu übergeben. Beispielsweise können Sie eine Liste der Elemente speichern, die während einer Validierungsausführung bereits verarbeitet wurden. Der Cache wird zu Beginn jeder Validierungsausführung erstellt und kann nicht verwendet werden, um Informationen zwischen verschiedenen Validierungsausführungen zu übergeben.
 
-|||
+|Syntax|BESCHREIBUNG|
 |-|-|
 |`context.SetCacheValue<T> (name, value)`|Speichern eines Werts|
 |`context.TryGetCacheValue<T> (name, out value)`|Abrufen eines Werts. Gibt "true" zurück, wenn der Vorgang erfolgreich ist.|
 |`context.GetValue<T>(name)`|Abrufen eines Werts.|
 |`Context.GetValue<T>()`|Abrufen eines Werts des angegebenen Typs|
 
-## <a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
  Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.
 
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.
 
-    2. Suchen Sie den Datei- **bin\\\*\\** _yourproject_ **. VSIX.**
+    2. Suchen Sie die **Datei \\ \* \\ bin**_yourproject_**. VSIX.**
 
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 
@@ -386,17 +386,17 @@ context.LogError(... , usecase);
 
 #### <a name="to-uninstall-an-extension"></a>So deinstallieren Sie eine Erweiterung
 
-1. Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.
+1. Wählen Sie im Menü **Tools****Erweiterungen und Updates**aus.
 
 2. Erweitern Sie **Installierte Erweiterungen**.
 
 3. Wählen Sie die Erweiterung aus, und wählen Sie anschließend **Deinstallieren**.
 
-   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, indem Sie die Datei von folgendem Speicherort löschen: *% LocalAppData%* ist in der Regel *driveName*: \Users\\*username*\AppData\Local:
+   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, indem Sie die Datei von folgendem Speicherort löschen: *% LocalAppData%* ist in der Regel *driveName*: \Users \\ *username*\AppData\Local:
 
-   *% LocalAppData%* **\microsoft\visualstudio\\[Version] \extensions**
+   *% LocalAppData%* **\microsoft\visualstudio \\ [Version] \extensions**
 
-## <a name="Example"></a> Beispiel
+## <a name="example"></a><a name="Example"></a> Beispiel
  In diesem Beispiel wird nach Schleifen in der Abhängigkeitsbeziehung zwischen Elementen gesucht.
 
  Die Validierung erfolgt für Speichervorgänge und für den Menübefehl zum Überprüfen.
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren und Installieren einer Modellierungs Erweiterung](../modeling/define-and-install-a-modeling-extension.md) [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)

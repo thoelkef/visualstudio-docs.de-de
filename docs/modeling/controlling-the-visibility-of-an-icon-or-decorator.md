@@ -1,18 +1,18 @@
 ---
 title: Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748499"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546642"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer domänenspezifischen Sprache (DSL) angezeigt wird. Sie können festlegen, dass der Decorator abhängig vom Zustand der Eigenschaften im Modell angezeigt und ausgeblendet wird. Beispielsweise können in einer Form, die eine Person darstellt, verschiedene Symbole angezeigt werden, die abhängig vom Geschlecht der Person, der Anzahl der untergeordneten Elemente usw. angezeigt werden.
@@ -58,13 +58,13 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 1. Fügen Sie der Domänen Klasse eine berechnete Domänen Eigenschaft hinzu. Legen Sie im Fenster **Eigenschaften** die folgenden Werte fest:
 
-     **IsBrowsable =** `False` **: Dadurch wird die Eigenschaft für den Benutzer** ausgeblendet.
+     **IsBrowsable =** `False` **: Hiermit wird die-Eigenschaft für den Benutzer** ausgeblendet.    
 
-     **Kind =** `Calculated` **: Dies bedeutet, dass Sie Code bereitstellen, mit dem der Wert berechnet wird** .
+     **Art =** `Calculated` **Dies bedeutet, dass Sie Code bereitstellen, der seinen Wert berechnet** .    
 
      **Name** für Beispiel **decoratorcontrol**
 
-     @No__t_1 `Boolean` **eingeben**
+     **Sorte** = `Boolean`
 
      Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -76,7 +76,7 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
     3. Wählen Sie in der **Filter-Eigenschaft**die Steuerelement Eigenschaft **decoratorcontrol**aus.
 
-    4. Geben Sie unter **Sichtbarkeits Einträge**`True` ein.
+    4. Geben Sie unter **Sichtbarkeits Einträge**ein `True` .
 
 3. Klicken Sie in der Symbolleiste **Projektmappen-Explorer** auf **alle Vorlagen transformieren** .
 
@@ -103,7 +103,7 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 8. Erstellen Sie die Projekt Mappe neu.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
 - [Festlegen eines Hintergrundbilds für ein Diagramm](../modeling/setting-a-background-image-on-a-diagram.md)

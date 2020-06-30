@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64ac9835a085908645713f95f1f07c283d807852
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657058"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547978"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
 - Zugreifen auf die Datenquellen über die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Um die exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:
 
 - Visual Studio Enterprise
@@ -47,7 +47,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>So fügen Sie dem Projekt die Datei „app.config“ hinzu
 
-1. Wenn für das Testprojekt bereits eine Datei „app.config“ vorhanden ist, fahren Sie mit [Definieren eines benutzerdefinierten Konfigurationabschnitts](#DefineCustomConfigurationSection) fort.
+1. Wenn das Testprojekt bereits über eine app.config-Datei verfügt, gehen Sie zu [Definieren eines benutzerdefinierten Konfigurations Abschnitts](#DefineCustomConfigurationSection).
 
 2. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf das Testprojekt, wählen Sie **Hinzuzufügen**, und klicken Sie dann auf **Neues Element**.
 
@@ -55,7 +55,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
 3. Wählen Sie die Vorlage **Anwendungskonfigurationsdatei** aus, und klicken Sie dann auf **Hinzufügen**.
 
-## <a name="DefineCustomConfigurationSection"></a> Definieren eines benutzerdefinierten Konfigurationsabschnitts
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Definieren eines benutzerdefinierten Konfigurations Abschnitts
  Sehen Sie sich die Datei „app.config“ an. Sie enthält mindestens die XML-Deklaration und ein Stammelement.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>So fügen Sie der Datei „app.config“ den benutzerdefinierten Konfigurationsabschnitt hinzu
@@ -94,7 +94,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
  Erstellen Sie im zweiten `add`-Element die folgenden Attribute und Werte für eine Verbindung mit einem Microsoft Excel-Arbeitsblatt:
 
-|||
+|attribute|Werte|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +102,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
  Das `connectionStrings`-Element sollte wie folgt aussehen:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -132,7 +132,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
 4. Erstellen Sie im ersten `add`-Element die folgenden Attribute und Werte für eine Microsoft Access-Datenquelle:
 
-|Attribut|Werte|
+|Attribut|Wert|
 |---------------|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
  Erstellen Sie im zweiten `add`-Element die folgenden Attribute und Werte für eine Microsoft Excel-Datenquelle:
 
-|||
+|attribute|Wert|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -150,7 +150,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
  Das `microsoft.visualstudio.testtools`-Element sollte wie folgt aussehen:
 
-```
+```xml
 <microsoft.visualstudio.testtools>
     <dataSources>
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>
@@ -161,7 +161,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
  Die endgültige Datei „app.config“ sollte in etwa wie folgt aussehen:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
@@ -223,7 +223,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 
 2. Ersetzen Sie den automatisch generierten Inhalt des Komponententests durch folgenden Code:
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -268,5 +268,5 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 > [!IMPORTANT]
 > Stellen Sie Elemente wie Datenquellen bereit, damit sie für den Test im Bereitstellungsverzeichnis zugänglich sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Komponenten [Test Code](../test/unit-test-your-code.md) [Erstellen und Ausführen von Komponenten Tests für vorhandenen Code](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) [Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) Gewusst [wie: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)

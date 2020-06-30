@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590591"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546913"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen
 
@@ -22,11 +22,11 @@ Wenn Sie Erweiterungs Code für Abhängigkeits Diagramme schreiben, können Sie 
 
 ## <a name="non-visible-properties"></a>Nicht sichtbare Eigenschaften
 
-Wenn Sie möchten, dass Ihr Code nur Werte an ein beliebiges Element in einem Abhängigkeits Diagramm anfügt, müssen Sie keine MEF-Komponente definieren. Es ist ein Wörterbuch mit dem Namen `Properties` in [ilayerelement](/previous-versions/ff644511(v=vs.140))vorhanden. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Abhängigkeits Diagramms gespeichert.
+Wenn Sie möchten, dass Ihr Code nur Werte an ein beliebiges Element in einem Abhängigkeits Diagramm anfügt, müssen Sie keine MEF-Komponente definieren. Es ist ein Wörterbuch `Properties` mit dem Namen in [ilayerelement](/previous-versions/ff644511(v=vs.140))vorhanden. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Abhängigkeits Diagramms gespeichert.
 
 ## <a name="editable-properties"></a>Bearbeitbare Eigenschaften
 
-**Anfängliche Vorbereitung**
+**Erste Vorbereitung**
 
 > [!IMPORTANT]
 > Nehmen Sie die folgenden Änderungen an den einzelnen Computern vor, auf denen Ebeneneigenschaften angezeigt werden sollen, um die Eigenschaften anzuzeigen:
@@ -38,14 +38,14 @@ Wenn Sie möchten, dass Ihr Code nur Werte an ein beliebiges Element in einem Ab
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Öffnen Sie im **Visual Studio-Tools** Abschnitt des Visual Studio-Anwendungs Startmenüs **Developer-Eingabeaufforderung**. Geben Sie folgenden Code ein:
+> 3. Öffnen Sie im **Visual Studio-Tools** Abschnitt des Visual Studio-Anwendungs Startmenüs **Developer-Eingabeaufforderung**. Eingeben:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
 > 4. Starten Sie Visual Studio neu.
 
-**Stellen Sie sicher, dass Ihr Code in einem VSIX-Projekt ist.**
+**Stellen Sie sicher, dass sich der Code in einem VSIX-Projekt befindet**
 
 Wenn Ihre Eigenschaft Teil eines Befehls-, Gesten-oder Validierungs Projekts ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Gesten zu Abhängigkeits Diagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen einer benutzerdefinierten Architektur Validierung zu Abhängigkeits Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -63,7 +63,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Sie können Eigenschaften für [ilayerelement](/previous-versions/ff644511(v=vs.140)) oder eine der abgeleiteten Klassen definieren, die Folgendes umfassen:
 
-- `ILayerModel`: das Modell
+- `ILayerModel`-das Modell
 
 - `ILayer`-jede Ebene
 
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern von Abhängigkeitsdiagrammen](../modeling/extend-layer-diagrams.md)

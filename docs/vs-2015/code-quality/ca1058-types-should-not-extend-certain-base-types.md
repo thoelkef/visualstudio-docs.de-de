@@ -15,21 +15,21 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e267b1e6203759efc91936a3b13059368a3862
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603065"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545391"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typen sollten bestimmte Basistypen nicht erweitern
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typen sollten bestimmte Basistypen nicht erweitern.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|TypesShouldNotExtendCertainBaseTypes|
+|TypName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -51,10 +51,10 @@ ms.locfileid: "72603065"
 
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-## <a name="rule-description"></a>Regelbeschreibung
- Für [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Version 1 wurde empfohlen, dass Sie neue Ausnahmen von <xref:System.ApplicationException> ableiten. Die Empfehlung wurde geändert, und neue Ausnahmen sollten von <xref:System.Exception?displayProperty=fullName> oder einer ihrer Unterklassen im <xref:System>-Namespace abgeleitet werden.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Bei [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Version 1 wurde empfohlen, neue Ausnahmen von abzuleiten <xref:System.ApplicationException> . Die Empfehlung wurde geändert, und neue Ausnahmen sollten von <xref:System.Exception?displayProperty=fullName> oder einer ihrer Unterklassen im- <xref:System> Namespace abgeleitet werden.
 
- Erstellen Sie keine Unterklasse von <xref:System.Xml.XmlDocument>, wenn Sie eine XML-Sicht eines zugrunde liegenden Objektmodells oder einer zugrunde liegenden Datenquelle erstellen möchten.
+ Erstellen Sie keine Unterklasse von <xref:System.Xml.XmlDocument> , wenn Sie eine XML-Sicht eines zugrunde liegenden Objektmodells oder einer zugrunde liegenden Datenquelle erstellen möchten.
 
 ### <a name="non-generic-collections"></a>Nicht generische Auflistungen
  Verwenden Sie nach Möglichkeit und/oder erweitern Sie generische Auflistungen. Erweitern Sie keine nicht generischen Auflistungen in Ihrem Code, es sei denn, Sie haben Sie zuvor versendet.
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem anderen Basistyp oder einer generischen Auflistung ab.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel auf Verstöße gegen <xref:System.ApplicationException>. Es ist sicher, bei Verstößen gegen <xref:System.Xml.XmlDocument> eine Warnung aus dieser Regel zu unterdrücken. Es ist sicher, eine Warnung zu einer nicht generischen Auflistung zu unterdrücken, wenn der Code zuvor freigegeben wurde.
+ Unterdrücken Sie keine Warnung aus dieser Regel auf Verstöße gegen <xref:System.ApplicationException> . Es ist sicher, bei Verstößen gegen eine Warnung aus dieser Regel zu unterdrücken <xref:System.Xml.XmlDocument> . Es ist sicher, eine Warnung zu einer nicht generischen Auflistung zu unterdrücken, wenn der Code zuvor freigegeben wurde.

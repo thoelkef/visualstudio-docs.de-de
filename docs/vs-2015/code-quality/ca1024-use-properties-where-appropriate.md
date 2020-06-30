@@ -15,27 +15,27 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661960"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546665"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Nach Möglichkeit Eigenschaften verwenden
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Nach Möglichkeit Eigenschaften verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|UsePropertiesWhereAppropriate|
+|TypName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte Methode hat einen Namen, der mit `Get` beginnt, keine Parameter annimmt und einen Wert zurückgibt, bei dem es sich nicht um ein Array handelt.
+ Eine öffentliche oder geschützte Methode hat einen Namen, der mit beginnt `Get` , keine Parameter annimmt und einen Wert zurückgibt, der kein Array ist.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  In den meisten Fällen stellen Eigenschaften Daten dar, und Methoden führen Aktionen aus. Auf Eigenschaften wird wie Felder zugegriffen, sodass Sie einfacher zu verwenden sind. Eine Methode ist ein guter Kandidat, wenn eine der folgenden Bedingungen vorliegt:
 
 - Nimmt keine Argumente an und gibt die Zustandsinformationen eines Objekts zurück.
@@ -67,7 +67,7 @@ ms.locfileid: "72661960"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>Steuern der Eigenschafts Erweiterung im Debugger
  Ein Grund, warum Programmierer die Verwendung einer Eigenschaft vermeiden, besteht darin, dass Sie vom Debugger nicht automatisch erweitert werden sollen. Die-Eigenschaft kann z. b. das Zuordnen eines großen Objekts oder das Aufrufen eines P/Call-Objekts einschließen, aber es sind möglicherweise tatsächlich keine Nebeneffekte vorhanden.
 
- Sie können verhindern, dass der Debugger Eigenschaften automatisch erweitert, indem Sie <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> anwenden. Das folgende Beispiel zeigt, wie dieses Attribut auf eine Instanzeigenschaft angewendet wird.
+ Sie können verhindern, dass der Debugger die Eigenschaften automatisch erweitert, indem Sie anwenden <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> . Das folgende Beispiel zeigt, wie dieses Attribut auf eine Instanzeigenschaft angewendet wird.
 
 ```vb
 Imports System

@@ -15,42 +15,42 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e0be715d8aea84fac53ea2a796e71850b961730c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31bf7fe33aa59c3a713d2da81ddbd11ed6899723
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667402"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546288"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Objekte nicht mehrmals verwerfen
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Objekte nicht mehrmals verwerfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|Donotdisposeeobjectmultipletimes|
+|TypName|Donotdisposeeobjectmultipletimes|
 |CheckId|CA2202|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine Methoden Implementierung enthält Codepfade, die mehrere Aufrufe an <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> oder eine verwerfen-Entsprechung (z. b. eine Close ()-Methode für einige Typen) für dasselbe Objekt verursachen könnten.
+ Eine Methoden Implementierung enthält Codepfade, die mehrere Aufrufe von <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> oder eine verwerfen-Entsprechung (z. b. eine Close ()-Methode für einige Typen) für dasselbe Objekt verursachen könnten.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Eine ordnungsgemäß implementierte <xref:System.IDisposable.Dispose%2A> Methode kann mehrmals aufgerufen werden, ohne eine Ausnahme auszulösen. Dies ist jedoch nicht garantiert, und um das Erstellen einer <xref:System.ObjectDisposedException?displayProperty=fullName> zu vermeiden, sollten Sie <xref:System.IDisposable.Dispose%2A> nicht mehr als einmal für ein Objekt aufzurufen.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Eine ordnungsgemäß implementierte <xref:System.IDisposable.Dispose%2A> Methode kann mehrmals aufgerufen werden, ohne eine Ausnahme auszulösen. Dies ist jedoch nicht garantiert. um zu vermeiden, dass eine erstellt wird, <xref:System.ObjectDisposedException?displayProperty=fullName> sollten Sie nicht <xref:System.IDisposable.Dispose%2A> mehr als einmal für ein Objekt aufzurufen.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2000: Objekte verwerfen, bevor Bereich verloren geht](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000: Objekte verwerfen, bevor Bereich verloren geht.](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung so, dass für das-Objekt unabhängig vom Codepfad <xref:System.IDisposable.Dispose%2A> nur einmal aufgerufen wird.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die-Implementierung so, dass unabhängig vom Codepfad <xref:System.IDisposable.Dispose%2A> nur einmal für das-Objekt aufgerufen wird.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Auch wenn <xref:System.IDisposable.Dispose%2A> für das Objekt bekanntermaßen mehrmals sicher aufgerufen werden kann, kann sich die Implementierung in Zukunft ändern.
+ Unterdrücken Sie keine Warnung dieser Regel. Auch wenn <xref:System.IDisposable.Dispose%2A> für das Objekt bekannt ist, dass es mehrmals sicher aufgerufen werden kann, kann sich die Implementierung in Zukunft ändern.
 
 ## <a name="example"></a>Beispiel
- Die `using`-Anweisungen (`Using` in Visual Basic) können zu Verstößen gegen die CA2202-Warnung führen. Wenn die iverwerf-Ressource der geschachtelten inneren `using`-Anweisung die Ressource der äußeren `using`-Anweisung enthält, gibt die `Dispose`-Methode der geschachtelten Ressource die enthaltene Ressource frei. Wenn diese Situation eintritt, versucht die `Dispose`-Methode der äußeren `using`-Anweisung, die Ressource ein zweites Mal zu verwerfen.
+ `using` `Using` In Visual Basic) kann es zu Verstößen gegen die CA2202-Warnung führen. Wenn die iverwerfbare Ressource der geschachtelten inneren `using` Anweisung die Ressource der äußeren `using` Anweisung enthält, gibt die-Methode der geschachtelten `Dispose` Ressource die enthaltene Ressource frei. Wenn diese Situation eintritt, versucht die- `Dispose` Methode der äußeren Anweisung, die `using` Ressource ein zweites Mal zu verwerfen.
 
- Im folgenden Beispiel wird ein <xref:System.IO.Stream>-Objekt, das in einer äußeren using-Anweisung erstellt wird, am Ende der inneren using-Anweisung in der verwerfen-Methode des <xref:System.IO.StreamWriter>-Objekts freigegeben, das das `stream`-Objekt enthält. Am Ende der äußeren `using`-Anweisung wird das `stream`-Objekt ein zweites Mal freigegeben. Die zweite Version ist ein Verstoß gegen CA2202.
+ Im folgenden Beispiel wird ein- <xref:System.IO.Stream> Objekt, das in einer äußeren using-Anweisung erstellt wird, am Ende der inneren using-Anweisung in der verwerfen-Methode des Objekts freigegeben, <xref:System.IO.StreamWriter> das das `stream` Objekt enthält. Am Ende der äußeren `using` Anweisung `stream` wird das Objekt ein zweites Mal freigegeben. Die zweite Version ist ein Verstoß gegen CA2202.
 
 ```
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -63,7 +63,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 ```
 
 ## <a name="example"></a>Beispiel
- Um dieses Problem zu beheben, verwenden Sie einen `try` / `finally` Block anstelle der äußeren `using` Anweisung. Stellen Sie im `finally`-Block sicher, dass die Ressource `stream` nicht NULL ist.
+ Um dieses Problem zu beheben, verwenden Sie `try` / `finally` anstelle der äußeren-Anweisung einen-Block `using` . `finally`Stellen Sie im-Block sicher, dass die `stream` Ressource nicht NULL ist.
 
 ```
 Stream stream = null;
@@ -83,5 +83,5 @@ finally
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
- <xref:System.IDisposable?displayProperty=fullName> Lösch [Muster](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.IDisposable?displayProperty=fullName> [Dispose-Muster](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

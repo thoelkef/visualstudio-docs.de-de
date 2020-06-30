@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597229"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546923"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
 
@@ -30,7 +30,7 @@ Sie können die Ebenenvalidierungserweiterung in eine Visual Studio-Integrations
 > [!WARNING]
 > Nachdem Sie ein Überprüfungsprojekt erstellt haben, kopieren Sie den [Beispielcode](#example) am Ende dieses Themas und bearbeiten diesen dann Ihren Anforderungen entsprechend.
 
-## <a name="requirements"></a>-Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -83,31 +83,31 @@ Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Bef
 
 4. Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Ebenenvalidierungsprojekt als MEF-Komponente hinzu:
 
-    1. Wählen Sie **Neu**aus.
+    1. Wählen Sie **Neu**.
 
     2. Legen Sie im Dialogfeld **Neues Objekt hinzufügen** Folgendes fest:
 
-         **Typ** = **Microsoft.VisualStudio.MefComponent**
+         **Typ**  =  **Microsoft. VisualStudio. MEFComponent**
 
-         **Quelle** = **Ein Projekt in der aktuellen Projektmappe**
+         **Quelle**  =  **Ein Projekt in der aktuellen Projekt** Mappe.
 
-         **Projekt** = *Ihr Validierungssteuerelement-Projekt*
+         **Projekt**  =  *Ihr Validierungs* Steuerelement-Projekt
 
 5. Außerdem müssen Sie das Projekt als Ebenenvalidierung hinzufügen:
 
-    1. Wählen Sie **Neu**aus.
+    1. Wählen Sie **Neu**.
 
     2. Legen Sie im Dialogfeld **Neues Objekt hinzufügen** Folgendes fest:
 
-         **Typ** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Dies ist keine der Optionen in der Dropdownliste. Sie müssen den Typ über die Tastatur eingeben.
+         **Typ**  =  **Microsoft. VisualStudio. architecturetools. Layer. validator**. Dies ist keine der Optionen in der Dropdownliste. Sie müssen den Typ über die Tastatur eingeben.
 
-         **Quelle** = **Ein Projekt in der aktuellen Projektmappe**
+         **Quelle**  =  **Ein Projekt in der aktuellen Projekt** Mappe.
 
-         **Projekt** = *Ihr Validierungssteuerelement-Projekt*
+         **Projekt**  =  *Ihr Validierungs* Steuerelement-Projekt
 
 6. Kehren Sie zum Ebenenvalidierungsprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu:
 
-    |**Verweis**|**Optionen**|
+    |**Referenz**|**Optionen**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Lesen des Architekturdiagramms|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Lesen des Ebenen zugeordneten Code-DOMs|
@@ -125,7 +125,7 @@ Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Bef
 
 9. Um die VSIX in der Haupt Instanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen Sie die **VSIX** -Datei im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.
 
-## <a name="programming"></a> Programmieren einer Validierung
+## <a name="programming-validation"></a><a name="programming"></a>Programmier Validierung
 
 Zum Definieren einer Ebenenvalidierungserweiterung definieren Sie eine Klasse, die über die folgenden Eigenschaften verfügt:
 
@@ -194,7 +194,7 @@ Jeder Knoten und jeder Link verfügt über mindestens eine Kategorie, die den Ty
 
 Links von Ebenen zu Elementen im Code haben die Kategorie "Represents".
 
-## <a name="debugging"></a> Debuggen der Validierung
+## <a name="debugging-validation"></a><a name="debugging"></a>Debugvalidierung
 
 Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.
 
@@ -226,7 +226,7 @@ Starten Sie die experimentelle Instanz immer mit STRG+F5 (**Starten ohne Debuggi
 
 Um die Validierungserweiterung auf einem Computer zu installieren, auf dem eine geeignete Version von Visual Studio installiert ist, öffnen Sie die VSIX-Datei auf dem Zielcomputer.
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a>Beispielcode
 
 ```csharp
 using System;
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern von Abhängigkeitsdiagrammen](../modeling/extend-layer-diagrams.md)

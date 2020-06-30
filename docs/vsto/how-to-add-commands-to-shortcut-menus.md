@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Befehlen zu Kontextmenüs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986027"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546197"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Gewusst wie: Hinzufügen von Befehlen zu Kontextmenüs
   In diesem Thema wird veranschaulicht, wie Sie mithilfe eines VSTO-Add-ins einem Kontextmenü in einer Office-Anwendung Befehle hinzufügen.
@@ -31,7 +31,7 @@ ms.locfileid: "72986027"
 
 2. **Projektmappen-Explorer**wählen Sie **ThisAddIn.cs** oder **ThisAddIn.vb**aus.
 
-3. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
+3. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
 
      Die **ThisAddin** -Klassendatei wird im Code-Editor geöffnet.
 
@@ -40,9 +40,9 @@ ms.locfileid: "72986027"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. Standardmäßig hat die Menüband-XML-Datei den Namen *Ribbon1. XML*.
+5. Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. Standardmäßig wird die Menüband-XML-Datei *Ribbon1.xml*benannt.
 
-6. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
+6. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
 
      Die Menüband-XML-Datei wird im Code-Editor geöffnet.
 
@@ -72,14 +72,14 @@ ms.locfileid: "72986027"
 
 8. Wählen Sie im **Projektmappen-Explorer**die Datei **MyRibbon.cs** oder **MyRibbon.vb**aus.
 
-9. Fügen Sie der `Ribbon1`-Klasse eine Rückruf Methode für jedes Steuerelement hinzu, das Sie verarbeiten möchten.
+9. Fügen Sie der-Klasse eine Rückruf Methode `Ribbon1` für jedes Steuerelement hinzu, das Sie verarbeiten möchten.
 
      Die folgende Rückrufmethode verarbeitet die Schaltfläche **My Button** . In diesem Code wird dem aktiven Dokument an der aktuellen Position des Cursors eine Zeichenfolge hinzugefügt.
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Office-Benutzeroberflächen Anpassung](../vsto/office-ui-customization.md)
 - [Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

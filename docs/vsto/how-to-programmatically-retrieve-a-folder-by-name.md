@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens'
+title: 'Gewusst wie: Programm gesteuertes Abrufen eines Ordners anhand des Namens'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955728"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547107"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens
-  In diesem Beispiel wird ein Verweis auf einen benannten benutzerdefinierten Ordner und zeigt dann den Inhalt des Ordners.
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Gewusst wie: Programm gesteuertes Abrufen eines Ordners anhand des Namens
+  In diesem Beispiel wird ein Verweis auf einen benannten benutzerdefinierten Ordner abgerufen und dann der Inhalt des Ordners angezeigt.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,10 +30,10 @@ ms.locfileid: "62955728"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Beispiel benötigen Sie Folgendes:
 
-- Ein Ordner mit dem Namen TestFolder.
+- Einen Ordner mit dem Namen "TestFolder".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Ordnern](../vsto/working-with-folders.md)
-- [Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Vorgehensweise: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)
+- [Gewusst wie: Programm gesteuertes suchen innerhalb eines bestimmten Ordners](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Gewusst wie: Programm gesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Gewusst wie: Programm gesteuertes Erstellen von benutzerdefinierten Ordner Elementen](../vsto/how-to-programmatically-create-custom-folder-items.md)

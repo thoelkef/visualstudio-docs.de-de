@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985871"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547146"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten
 
@@ -45,11 +45,11 @@ Das folgende Beispiel zeigt, wie Sie Dokumenten zur Entwurfszeit datengebundene 
 
      Welche Methoden Sie verwenden, hängt davon ab, was der Webdienst bietet.
 
-6. Weisen Sie die Daten Antwort des Webdiensts der <xref:System.Windows.Forms.BindingSource.DataSource%2A>-Eigenschaft des <xref:System.Windows.Forms.BindingSource>zu.
+6. Weisen Sie die Daten Antwort des Webdiensts der- <xref:System.Windows.Forms.BindingSource.DataSource%2A> Eigenschaft von zu <xref:System.Windows.Forms.BindingSource> .
 
 Wenn Sie das Projekt ausführen, zeigen die Steuerelemente den ersten Datensatz in der Datenquelle an. Sie können einen Bildlauf durch die Datensätze ermöglichen, indem Sie die „Currency“-Ereignisse mit den Objekten in der <xref:System.Windows.Forms.BindingSource>verarbeiten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)

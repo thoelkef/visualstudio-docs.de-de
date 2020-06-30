@@ -29,19 +29,19 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d70016229ad9599c7ededbefaf08744f2bb6f351
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847630"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548082"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Projektmappenübergreifendes Zuordnen von Abhängigkeiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie diese visuell dar, indem Sie Code Maps erstellen. Dadurch können Sie sehen, wie der Code ohne Lesen von Codezeilen und Dateien zusammenpasst.
 
- ![Abhängigkeiten in ihren Lösungen anzeigen](../modeling/media/codemapsmainintro.png "Codemapsmainintro")
+ ![Projektmappenübergreifendes Anzeigen von Abhängigkeiten](../modeling/media/codemapsmainintro.png "Codemapsmainintro")
 
  **Hier finden Sie einige Videos**:
 
@@ -51,7 +51,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 - [Nachvollziehen komplexen Codes mit Code Maps](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
-## <a name="GetStarted"></a> Erste Schritte mit Code Maps
+## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a> Erste Schritte mit Code Maps
  **Zur Verwendung von Code Maps benötigen Sie abhängig von Ihrer Visual Studio-Version**:
 
 - Visual Studio Enterprise: Erstellen Sie Code Maps im Code-Editor, im Projektmappen-Explorer, in der Klassenansicht oder im Objektbrowser.
@@ -91,7 +91,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 4. Unter[Erkennen allgemeiner Abhängigkeiten](#SeeSpecificSource) wird erläutert, wie Sie Code Maps verwenden können, um spezifische Abhängigkeiten innerhalb einer Projektmappe anzuzeigen.
 
-### <a name="CreateEmptyMap"></a> So fügen Sie einer Projektmappe eine neue leere Code Map hinzu
+### <a name="to-add-a-new-empty-code-map-to-your-solution"></a><a name="CreateEmptyMap"></a> So fügen Sie einer Projektmappe eine neue leere Code Map hinzu
 
 1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten auf oberster Ebene. Wählen Sie **Hinzufügen** und dann **Neues Element**aus.
 
@@ -115,13 +115,13 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
      Sie verfügen nun über eine leere Code Map, die nicht in den Ordnern der Projektmappe angezeigt wird.
 
-## <a name="SeeOverviewSource"></a> Erkennen allgemeiner Abhängigkeiten
+## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a> Erkennen allgemeiner Abhängigkeiten
 
-### <a name="OverviewSource"></a> Erkennen von Abhängigkeiten innerhalb der Lösung
+### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a> Erkennen von Abhängigkeiten innerhalb der Lösung
 
 1. Wählen Sie im Menü **Architektur** die Option **Code Map für Projektmappe generieren**aus.
 
-    ![Code Map Befehl generieren](../modeling/media/codemapsarchitecturemenu.png "Codemapsarchitecture-Menü")
+    ![Generieren eines Code Map-Befehls](../modeling/media/codemapsarchitecturemenu.png "Codemapsarchitecture-Menü")
 
     Es wird eine Code Map erstellt, die die Assemblys der obersten Ebene und die Aggregatlinks zwischen diesen zeigt. Desto größer die Aggregatsverbindung, desto mehr Abhängigkeiten stellt sie dar.
 
@@ -139,20 +139,20 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
     ![Erweitern eines Knotens in einer Code Map](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")
 
-    Alternativ können Sie die Tastatur verwenden, indem Sie das Element auswählen und dann die Plus-Taste ( **+** ) drücken. Gehen Sie bei Namespaces, Typen und Mitglieder genauso vor, um tiefere Ebenen des Codes untersuchen.
+    Sie können auch die Tastatur verwenden, indem Sie das Element auswählen und dann die Plus-Taste drücken ( **+** ). Gehen Sie bei Namespaces, Typen und Mitglieder genauso vor, um tiefere Ebenen des Codes untersuchen.
 
    > [!TIP]
    > Weitere Informationen zum Arbeiten mit Code Maps mithilfe der Maus, der Tastatur und der Fingereingabe finden Sie unter [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
 5. Um die Code Map zu vereinfachen und sich auf einzelne Teile zu konzentrieren, wählen Sie **Filter** auf der Symbolleiste der Code Map aus, und wählen Sie dann nur die Knoten- und Linktypen aus, die für Sie von Interesse sind. Beispielsweise können Sie alle Projektmappenordner und Assemblycontainer ausblenden.
 
-    ![Vereinfachen der Zuordnung durch Filtern von Containern](../modeling/media/codemapsfilterfoldersassemblies.png "Codemapsfilterfoldersassemblys")
+    ![Vereinfachen der Zuordnung durch Filtern der Container](../modeling/media/codemapsfilterfoldersassemblies.png "Codemapsfilterfoldersassemblys")
 
     Sie können die Code Map auch vereinfachen, indem Sie einzelne Gruppen und Elemente ausblenden oder aus der Code Map entfernen, ohne dass sich dies auf den zugrunde liegenden Projektmappencode auswirkt.
 
 6. Um die Beziehungen zwischen Elementen anzuzeigen, wählen Sie die Elemente in der Code Map aus. Die Farben der Links zeigen die Beziehungstypen an, wie im Bereich **Legende** dargestellt.
 
-    ![Abhängigkeiten in ihren Lösungen anzeigen](../modeling/media/codemapsmainintro.png "Codemapsmainintro")
+    ![Projektmappenübergreifendes Anzeigen von Abhängigkeiten](../modeling/media/codemapsmainintro.png "Codemapsmainintro")
 
     In diesem Beispiel sind die violetten Links Aufrufe, die gepunkteten Links sind Verweise, und die hellblauen Links sind Feldzugriffe. Grüne Links können Vererbung darstellen, oder es kann sich um *Aggregatlinks* handeln, die mehrere Beziehungstypen (oder *Kategorien*) angeben.
 
@@ -167,21 +167,21 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 9. Um sich auf bestimmte Teile der Code Map zu konzentrieren, können Sie weitere Elemente entfernen, an denen Sie nicht interessiert sind. Wenn Sie z. B. einen Drillinto für die Klassen- und Memberansicht ausführen möchten, filtern Sie einfach alle Namespaceknoten im Bereich **Filter** .
 
-     ![Drilldown auf Klassen-und Element Ebene](../modeling/media/dependencygraph-expandedselectedgroups-2012.png "DependencyGraph_ExpandedSelectedGroups_2012")
+     ![Drilldown auf Klassen- und Memberebene](../modeling/media/dependencygraph-expandedselectedgroups-2012.png "DependencyGraph_ExpandedSelectedGroups_2012")
 
 10. Eine andere Methode zum Fokussieren einer Code Map einer komplexen Projektmappe besteht darin, eine neue Code Map zu generieren, die ausgewählte Elemente aus einer vorhandenen Code Map enthält. Halten Sie **STRG** gedrückt, während Sie die Elemente auswählen, die Sie in den Fokus holen möchten, öffnen Sie das Kontextmenü, und wählen Sie **Neues Diagramm aus der Auswahl**aus.
 
-     ![Ausgewählte Elemente auf einem neuen Code Map anzeigen](../ide/media/codemapsshowonnewmap.png "Codemapsshowonnewmap")
+     ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](../ide/media/codemapsshowonnewmap.png "Codemapsshowonnewmap")
 
 11. Der enthaltende Kontext wird in die neue Code Map übernommen. Blenden Sie Projektmappenordner und andere Container, die nicht angezeigt werden sollen, mithilfe des Bereichs **Filter** aus.
 
-     ![Filtern Sie die Container, um die Ansicht zu vereinfachen.](../modeling/media/codemapsexpandnewgroups.png "Codemapsexpandnewgroups")
+     ![Filtern der Container zum Vereinfachen der Ansicht](../modeling/media/codemapsexpandnewgroups.png "Codemapsexpandnewgroups")
 
 12. Erweitern Sie die Gruppen, und wählen Sie Elemente in der Code Map aus, um die Beziehungen anzuzeigen.
 
-     ![Elemente zum Anzeigen der Beziehungen auswählen](../modeling/media/codemapsviewnewrelationships.png "Codemapsviewnewbeziehungs")
+     ![Auswählen der Elemente für die Anzeige der Beziehungen](../modeling/media/codemapsviewnewrelationships.png "Codemapsviewnewbeziehungs")
 
-    Siehe auch:
+    Weitere Informationen:
 
 - [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)
 
@@ -189,7 +189,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 - Ermitteln Sie potenzielle Probleme im Code durch [Ausführen einer Analyse](../modeling/find-potential-problems-using-code-map-analyzers.md).
 
-### <a name="OverviewCompiled"></a> Finden Sie Abhängigkeiten zwischen Assemblys und Binärdateien
+### <a name="see-dependencies-across-assemblies-or-binaries"></a><a name="OverviewCompiled"></a> Finden Sie Abhängigkeiten zwischen Assemblys und Binärdateien
 
 1. [Erstellen Sie eine leere Code Map](#GetStarted), oder öffnen Sie eine vorhandene Code Map (DGML-Datei).
 
@@ -198,10 +198,10 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 > [!NOTE]
 > Das Ziehen von Assemblys oder Binärdateien aus Windows-Explorer oder Datei-Explorer ist nur möglich, wenn der betreffende Explorer und Visual Studio auf der gleichen Berechtigungsstufe der Benutzerkontensteuerung (User Account Control, UAC) ausgeführt werden. Beispiel: Wenn Sie Visual Studio bei aktivierter UAC als Administrator ausführen, wird der Ziehvorgang von Windows-Explorer oder Datei-Explorer blockiert. Zur Umgehung dieses Problems stellen Sie sicher, dass beide Programme mit der gleichen Berechtigungsstufe ausgeführt werden, oder deaktivieren Sie UAC.
 
-## <a name="SeeSpecificSource"></a> Erkennen allgemeiner Abhängigkeiten
+## <a name="see-specific-dependencies"></a><a name="SeeSpecificSource"></a> Erkennen allgemeiner Abhängigkeiten
  Angenommen, Sie müssen eine Codeüberprüfung in einigen Dateien mit ausstehenden Änderungen durchführen. Um die Abhängigkeiten in diesen Änderungen anzuzeigen, können Sie eine Code Map aus diesen Dateien erstellen.
 
- ![Anzeigen spezifischer Abhängigkeiten von einem Code Map](../modeling/media/codemapsspecificdependenciesintro.png "Codemapsspecificdependenciesintro")
+ ![Anzeigen bestimmter Abhängigkeiten in Codeübersichten](../modeling/media/codemapsspecificdependenciesintro.png "Codemapsspecificdependenciesintro")
 
 ### <a name="see-specific-dependencies-in-your-solution"></a>Anzeigen bestimmter Abhängigkeiten in Ihrer Projektmappe
 
@@ -209,11 +209,11 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 2. Stellen Sie die Elemente und ihre Member in einer Code Map dar. Klicken Sie auf der **Projektmappen-Explorer** Symbolleiste auf **Show on Code Map**![Create New Graph from selected Nodes Schaltfläche](../modeling/media/createnewgraphfromselectedbutton.gif ""Kreatenewgraphfromselectedbutton"").
 
-     ![Wählen Sie die Elemente aus, die Sie zuordnen möchten.](../modeling/media/codemapsselectinsolutionexplorer.png "Codemapsselectinsolutionexplorer")
+     ![Auswählen der Elemente, die Sie zuordnen möchten](../modeling/media/codemapsselectinsolutionexplorer.png "Codemapsselectinsolutionexplorer")
 
 3. Die Code Map zeigt die ausgewählten Elemente in ihren enthaltenden Assemblys.
 
-     ![Ausgewählte Elemente, die als Gruppen auf der Karte angezeigt werden](../modeling/media/codemapsshowitemsfromsolnexplorer.png "Codemapsshowitemsfromsolnexplorer")
+     ![Anzeigen der ausgewählten Elemente als Gruppen in der Zuordnung](../modeling/media/codemapsshowitemsfromsolnexplorer.png "Codemapsshowitemsfromsolnexplorer")
 
      Sie können auch Elemente aus dem Projektmappen-Explorer, der Klassenansicht oder dem Objektbrowser in eine neue oder vorhandene Code Map ziehen. Anweisungen zum Erstellen einer leeren Code Map finden Sie unter [Erstellen einer leeren Code Map](#GetStarted). Um die übergeordnete Hierarchie für die Elemente einzuschließen, halten Sie die **STRG** -TASTE gedrückt, während Sie Elemente ziehen, oder verwenden Sie die Schaltfläche **Übergeordnete Elemente einschließen** auf der Symbolleiste der Code Map, um die Standardaktion anzugeben.
 
@@ -228,7 +228,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 5. Erweitern Sie weitere Elemente, die für Sie von Interesse sind, ggf. bis hinunter zur Klassen- und Memberebene.
 
-     ![Erweitern von Gruppen auf Klassen-und Element Ebene](../modeling/media/codemapsexpandtoclassandmember.png "Codemapsexpanddeclassandmember")
+     ![Erweitern von Gruppen auf Klassen- und Memberebene](../modeling/media/codemapsexpandtoclassandmember.png "Codemapsexpanddeclassandmember")
 
      Wenn Sie Elemente anzeigen möchten, die sich im Code befinden, aber nicht in der Zuordnung angezeigt werden, klicken Sie auf das ![Symbol](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") untergeordnete Elemente **erneut abrufen** in der oberen linken Ecke einer Gruppe.
 
@@ -236,7 +236,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
      Für eine **Assembly**wählen Sie Folgendes aus:
 
-    |||
+    |Option|BESCHREIBUNG|
     |-|-|
     |**Assemblys anzeigen, auf die verwiesen wird**|Fügt Assemblys hinzu, auf die diese Assembly verweist. Externe Assemblys werden in der Gruppe **Extern** angezeigt.|
     |**Assemblys anzeigen, die auf diese Funktion verweisen**|Fügt Assemblys in der Projektmappe hinzu, die auf diese Assembly verweisen.|
@@ -245,7 +245,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
      Für eine **Klasse** oder **Schnittstelle**wählen Sie Folgendes aus:
 
-    |||
+    |Option|BESCHREIBUNG|
     |-|-|
     |**Basistypen anzeigen**|Fügt einer Klasse die Basisklasse und die implementierten Schnittstellen hinzu.<br /><br /> Fügt einer Schnittstelle die Basisschnittstellen hinzu.|
     |**Abgeleitete Typen anzeigen**|Fügt bei einer Klasse die abgeleiteten Klassen hinzu.<br /><br /> Fügt bei einer Schnittstelle die abgeleiteten Schnittstellen und die implementierenden Klassen oder Strukturen hinzu.|
@@ -258,7 +258,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
      Für eine **Methode**wählen Sie Folgendes aus:
 
-    |||
+    |Option|BESCHREIBUNG|
     |-|-|
     |**Methode anzeigen, die aufruft**|Fügt die Methoden hinzu, die diese Methode aufruft.|
     |**Felder anzeigen, auf die verwiesen wird**|Fügt die Felder hinzu, auf die diese Methode verweist.|
@@ -268,23 +268,23 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
      Für ein **Feld** oder eine **Eigenschaft**wählen Sie Folgendes aus:
 
-    |||
+    |Option|BESCHREIBUNG|
     |-|-|
     |**Enthaltenden Typ anzeigen**|Fügt den übergeordneten Typ hinzu.|
     |**Enthaltende/n Typ, Namespace und Assembly anzeigen**|Fügt die übergeordnete Containerhierarchie hinzu.|
 
-     ![Von diesem Member aufgerufene Methoden anzeigen](../modeling/media/codemapsshowrelatedmethods.png "Codemapsshowrelatedmethods")
+     ![Anzeigen der durch dieses Member aufgerufenen Methoden](../modeling/media/codemapsshowrelatedmethods.png "Codemapsshowrelatedmethods")
 
 7. Die Beziehungen werden auf der Code Map angezeigt. In diesem Beispiel sind dies die von der `Find` -Methode aufgerufenen Methoden und ihre Position innerhalb oder außerhalb der Projektmappe.
 
-     ![Anzeigen spezifischer Abhängigkeiten von einem Code Map](../modeling/media/codemapsspecificdependenciesintro.png "Codemapsspecificdependenciesintro")
+     ![Anzeigen bestimmter Abhängigkeiten in Codeübersichten](../modeling/media/codemapsspecificdependenciesintro.png "Codemapsspecificdependenciesintro")
 
 8. Um die Code Map zu vereinfachen und sich auf einzelne Teile zu konzentrieren, wählen Sie **Filter** auf der Symbolleiste der Code Map aus, und wählen Sie dann nur die Knoten- und Linktypen aus, die für Sie von Interesse sind. Deaktivieren Sie z. B. die Anzeige von Projektmappenordnern, Assemblys und Namespaces.
 
-     ![Verwenden Sie den Filter Bereich, um die Anzeige zu vereinfachen.](../modeling/media/almcodemapfilterpane.png "Almcodemapfilterpane")
+     ![Verwenden des Filterbereichs zum Vereinfachen der Anzeige](../modeling/media/almcodemapfilterpane.png "Almcodemapfilterpane")
 
-## <a name="SeeSourceHeader"></a> Anzeigen von Abhängigkeiten zwischen C- und C++-Quelldateien und Headerdateien
- Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivieren Sie für diese Projekte die Compileroption zum Durchsuchen von Informationen ( **/FR**). Siehe [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Andernfalls werden Sie anhand einer Meldung aufgefordert, diese Option festzulegen. Bei Auswahl von **OK**wird die Option nur für die aktuelle Code Map festgelegt. Sie können angeben, dass die Meldung für alle späteren Code Maps ausgeblendet werden soll. Wenn Sie diese Meldung ausblenden, können Sie diese auch wieder einblenden. Legen Sie den folgenden Registrierungsschlüssel auf `0` fest oder löschen Sie den Schlüssel:
+## <a name="see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a> Anzeigen von Abhängigkeiten zwischen C- und C++-Quelldateien und Headerdateien
+ Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivieren Sie für diese Projekte die Compileroption zum Durchsuchen von Informationen (**/FR**). Siehe [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Andernfalls werden Sie anhand einer Meldung aufgefordert, diese Option festzulegen. Bei Auswahl von **OK**wird die Option nur für die aktuelle Code Map festgelegt. Sie können angeben, dass die Meldung für alle späteren Code Maps ausgeblendet werden soll. Wenn Sie diese Meldung ausblenden, können Sie diese auch wieder einblenden. Legen Sie den folgenden Registrierungsschlüssel auf `0` fest oder löschen Sie den Schlüssel:
 
  **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\nativeprovider: autoenablesbr**
 
@@ -292,13 +292,13 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 - Um Abhängigkeiten zwischen allen Quell- und Headerdateien in Ihrer Projektmappe anzuzeigen, klicken Sie im Menü **Architektur** auf **Diagramm für Includedateien generieren**.
 
-     ![Abhängigkeits Diagramm für nativen Code](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")
+     ![Abhängigkeitsdiagramm für nativen Code](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")
 
 - Um Abhängigkeiten zwischen den aktuell geöffneten Datei und zugehörige Quelldateien und Headerdateien anzuzeigen, öffnen Sie die Quelldatei oder die Header-Datei. Öffnen Sie das Kontextmenü "Datei" an einer beliebigen Stelle in der Datei. Wählen Sie **Diagramm für Includedateien generieren**aus.
 
      ![Abhängigkeits Diagramm der ersten&#45;Ebene für die h-Datei](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
-### <a name="Troubleshooting"></a> Problembehandlung bei Code Maps für C- und C++-Code
+### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a> Problembehandlung bei Code Maps für C- und C++-Code
  Diese Elemente werden für C- und C++-Code nicht unterstützt:
 
 - Basistypen werden in Code Maps, die die übergeordnete Hierarchie enthalten, nicht angezeigt.
@@ -307,18 +307,18 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
   Diese Probleme können auftreten, wenn Sie Code Maps für C- und C++-Code erstellen:
 
-|**Problem**|**Mögliche Ursache**|**Auflösung**|
+|**Problem**|**Mögliche Ursache**|**Lösung**|
 |---------------|------------------------|--------------------|
 |Fehler beim Generieren der Code Map.|Kein Projekt in der Projektmappe wurde erfolgreich erstellt.|Korrigieren Sie die aufgetretenen Buildfehler, und generieren Sie dann die Code Map erneut.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reagiert nicht mehr, wenn Sie versuchen, eine Code Map über das Menü **Architektur** zu generieren.|Die Programmdatenbankdatei (.pdb) ist möglicherweise beschädigt.<br /><br /> In einer PDB-Datei werden Debuginformationen gespeichert, z. B. Typ, Methode und Quelldateiinformationen.|Erstellen Sie die Projektmappe neu, und versuchen Sie es dann erneut.|
-|Bestimmte Einstellungen für die IntelliSense-Suchdatenbank sind deaktiviert.|Bestimmte IntelliSense-Einstellungen sind im Dialogfeld [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**von** möglicherweise deaktiviert.|Aktivieren Sie die Einstellungen, um sie verfügbar zu machen.<br /><br /> Weitere Informationen finden Sie [unter Optionen, TextC++-Editor, C/, erweitert](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|Bestimmte Einstellungen für die IntelliSense-Suchdatenbank sind deaktiviert.|Bestimmte IntelliSense-Einstellungen sind im Dialogfeld [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**von** möglicherweise deaktiviert.|Aktivieren Sie die Einstellungen, um sie verfügbar zu machen.<br /><br /> Weitere Informationen finden Sie unter [Optionen, Text-Editor, C/C++, erweitert](../ide/reference/options-text-editor-c-cpp-advanced.md).|
 |Die Meldung **Unbekannte Methode** wird in einem Methodenknoten angezeigt.<br /><br /> Dieses Problem tritt auf, da der Name der Methode nicht aufgelöst werden kann.|Die Binärdatei weist möglicherweise keine Basisverschiebungstabelle auf.|Aktivieren Sie die Option **/FIXED:NO** im Linker.<br /><br /> Siehe [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
 ||Die Programmdatenbankdatei (.pdb) wird möglicherweise nicht erstellt.<br /><br /> In einer PDB-Datei werden Debuginformationen gespeichert, z. B. Typ, Methode und Quelldateiinformationen.|Aktivieren Sie die Option **/DEBUG** im Linker.<br /><br /> Siehe [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
 ||Die PDB-Datei kann an den erwarteten Speicherorten nicht geöffnet oder gefunden werden.|Stellen Sie sicher, dass die PDB-Datei an den erwarteten Speicherorten vorhanden ist.|
 ||Debuginformationen wurden aus der PDB-Datei entfernt.|Wenn die Option **/PDBSTRIPPED** im Linker verwendet wurde, schließen Sie stattdessen die vollständige PDB-Datei ein.<br /><br /> Siehe [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
-||Der Aufrufer ist keine Funktion und ist entweder ein Thunk in der Binärdatei oder ein Zeiger im Datenabschnitt.|Wenn der Aufrufer ein Thunk ist, versuchen Sie, den Thunk mithilfe von `_declspec(dllimport)` zu vermeiden.<br /><br /> Thema<br /><br /> [Allgemeine Regeln und Einschränkungen](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050) -   <br />-   [Importieren von Funktionsaufrufen mithilfe __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||Der Aufrufer ist keine Funktion und ist entweder ein Thunk in der Binärdatei oder ein Zeiger im Datenabschnitt.|Wenn der Aufrufer ein Thunk ist, versuchen Sie, den Thunk mithilfe von `_declspec(dllimport)` zu vermeiden.<br /><br /> Thema<br /><br /> -   [Allgemeine Regeln und Einschränkungen](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importieren von Funktionsaufrufen mithilfe von __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
-## <a name="RenderMoreQuickly"></a> Schnelleres Rendern von Code Maps
+## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a> Schnelleres Rendern von Code Maps
  Wenn Sie eine Code Map zum ersten Mal generieren, werden von Visual Studio alle gefundenen Abhängigkeiten indiziert. Dieser Vorgang kann einige Zeit dauern, insbesondere bei großen Projektmappen, aber dies verbessert die Leistung zu einem späteren Zeitpunkt. Wenn Ihr Code geändert wird, wird von Visual Studio nur der aktualisierte Code neu indiziert. Um den Zeitaufwand für das Rendern der Code Map zu minimieren, beachten Sie Folgendes:
 
 - [Stellen Sie nur die Abhängigkeiten in der Code Map dar, die Sie interessieren.](#SeeSpecificSource)
@@ -331,7 +331,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 - Bearbeiten Sie die Code Map direkt, um Knoten und Links zu entfernen, die Sie nicht benötigen. Das Ändern der Code Map wirkt sich nicht auf den zugrunde liegenden Code aus. Siehe [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-  ![Build-und include-Schaltflächen überspringen](../modeling/media/codemapsfilterskipbuildicons.png "Codemapsfilterskipbuildicons")
+  ![Schaltflächen "Build überspringen" und "Übergeordnete Elemente einschließen"](../modeling/media/codemapsfilterskipbuildicons.png "Codemapsfilterskipbuildicons")
 
   Obwohl Visual Studio mit 1 GB Arbeitsspeicher ausgeführt werden kann, wird empfohlen, den Computer mit mindestens 2 GB Arbeitsspeicher auszustatten, um lange Verzögerungen während der Erstellung des Codeindex und der Generierung der Code Map durch Visual Studio zu vermeiden.
 
@@ -339,16 +339,16 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
   Die fertige Code Map zeigt die Abhängigkeiten nur für Code, der erfolgreich erstellt wurde. Wenn für bestimmte Komponenten Buildfehler auftreten, werden diese Fehler auf der Code Map angezeigt. Vergewissern Sie sich, dass eine Komponente tatsächlich erstellt wird und über Abhängigkeiten verfügt, bevor Sie auf Grundlage der Code Map architekturbezogene Entscheidungen treffen.
 
-## <a name="SavingExporting"></a> Freigeben von Code Maps
+## <a name="share-code-maps"></a><a name="SavingExporting"></a> Freigeben von Code Maps
 
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Freigeben der Code Map für andere Visual Studio-Benutzer
  Verwenden Sie das Menü **Datei** , um die Code Map zu speichern.
 
- \- oder -
+ - oder -
 
- Um die Zuordnung als Teil eines bestimmten Projekts zu speichern, wählen Sie auf der Kartensymbol Leiste **Freigeben**aus, **verschieben** Sie \<*codemapname*> **. dgml in**, und wählen Sie dann das Projekt aus, in dem Sie die Karte speichern möchten.
+ Um die Zuordnung als Teil eines bestimmten Projekts zu speichern, wählen Sie auf der Symbolleiste der Karte **Freigeben**aus, **verschieben** Sie \<*CodeMapName*> **DGML in**, und wählen Sie dann das Projekt aus, in dem Sie die Karte speichern möchten.
 
- ![Verschieben einer Karte in ein anderes Projekt](../modeling/media/codemapsmovemapmenu.png "Codemapsmovemapmenu")
+ ![Verschieben einer Zuordnung in ein anderes Projekt](../modeling/media/codemapsmovemapmenu.png "Codemapsmovemapmenu")
 
  Die Code Map wird von Visual Studio als DGML-Datei gespeichert, die Sie für andere Benutzer von Visual Studio Enterprise und Visual Studio Professional freigeben können.
 
@@ -373,7 +373,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 
 2. Durchsuchen Sie nach dem Ort, an dem die Datei gespeichert werden soll.
 
-3. Benennen Sie die Code Map. Stellen Sie sicher, dass das Feld **Dateityp** auf **XPS-Dateien (\*. Xps)** festgelegt ist. Wählen Sie **Speichern**.
+3. Benennen Sie die Code Map. Stellen Sie sicher, dass das Feld **Dateityp** auf **XPS-Dateien ( \* . Xps)** festgelegt ist. Wählen Sie **Speichern** aus.
 
 ## <a name="what-else-can-i-do"></a>Welche weiteren Möglichkeiten gibt es?
 

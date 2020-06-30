@@ -1,7 +1,7 @@
 ---
-title: Bereitstellungsmanifeste für Office-Projektmappen
+title: Bereitstellungs Manifeste für Office-Lösungen
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972394"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547549"
 ---
-# <a name="deployment-manifests-for-office-solutions"></a>Bereitstellungsmanifeste für Office-Projektmappen
-  Ein Bereitstellungsmanifest ist eine XML-Datei, die beschreibt die bereitstellungseinstellungen für die einer Office-Projektmappe, und die aktuelle Anwendungsversion identifiziert.
+# <a name="deployment-manifests-for-office-solutions"></a>Bereitstellungs Manifeste für Office-Lösungen
+  Ein Bereitstellungs Manifest ist eine XML-Datei, die die Bereitstellungs Einstellungen einer Office-Projekt Mappe beschreibt und die aktuelle Anwendungs Version angibt.
 
- Die Office-Entwicklung in Visual Studio verwendet die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] definierte die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Verweis.
+ Die Office-Entwicklung in Visual Studio verwendet das [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Schema des Bereitstellungs Manifests, das in der [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md) -Referenz definiert ist
 
 ## <a name="remarks"></a>Hinweise
- Für Office-Projektmappen, die Bereitstellungsmanifestdatei identifiziert die aktuelle Version und anderer bereitstellungseinstellungen. Er verweist auf das Anwendungsmanifest und die aktuelle Version der Projektmappe und alle Dateien innerhalb der Projektmappe beschreibt.
+ Die Bereitstellungs Manifest-Datei für Office-Projektmappen identifiziert die aktuelle Version und andere Bereitstellungs Einstellungen. Sie verweist auf das Anwendungs Manifest und beschreibt die aktuelle Version der Projekt Mappe und alle Dateien in der Projekt Mappe.
 
 ## <a name="file-name-syntax"></a>Dateinamenssyntax
- Der Name einer Bereitstellungsmanifestdatei muss mit enden die *".VSTO"* Erweiterung. Obwohl es ein Standard ist [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Bereitstellungsmanifest, die Erweiterung, die zum Aktivieren der Visual Studio-Tools für Office-Laufzeit zum Verarbeiten der Datei unterscheidet sich.
+ Der Name einer Bereitstellungs Manifest-Datei muss auf die Erweiterung " *. VSTO* " enden. Obwohl es sich um ein Standard [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Bereitstellungs Manifest handelt, unterscheidet sich die Erweiterung, um die Visual Studio-Tools für die Office-Laufzeit zum Verarbeiten der Datei zu aktivieren.
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel veranschaulicht ein Bereitstellungsmanifest für eine Visual Studio-Tools für Office-Projektmappe.
+ Im folgenden Codebeispiel wird ein Bereitstellungs Manifest für eine Visual Studio-Tools für Office-Projekt Mappe veranschaulicht.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -183,6 +183,6 @@ ms.locfileid: "62972394"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Festlegen von Suchoptionen in Word'
+title: 'Gewusst wie: Programm gesteuertes Festlegen von Suchoptionen in Word'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,44 +15,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e3b66bfd7f3f5d0ef0f4893efeb81c80df5d4ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961874"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546990"
 ---
-# <a name="how-to-programmatically-set-search-options-in-word"></a>Vorgehensweise: Programmgesteuertes Festlegen von Suchoptionen in Word
-  Es gibt zwei Möglichkeiten zum Festlegen von Suchoptionen für die Auswahl in Microsoft Office Word-Dokumenten:
+# <a name="how-to-programmatically-set-search-options-in-word"></a>Gewusst wie: Programm gesteuertes Festlegen von Suchoptionen in Word
+  Es gibt zwei Möglichkeiten, Suchoptionen für die Auswahl in Microsoft Office Word-Dokumenten festzulegen:
 
-- Legen Sie die einzelne Eigenschaften einer <xref:Microsoft.Office.Interop.Word.Find> Objekt.
+- Legen Sie einzelne Eigenschaften eines- <xref:Microsoft.Office.Interop.Word.Find> Objekts fest.
 
-- Verwenden Sie die Argumente der <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> -Methode der ein <xref:Microsoft.Office.Interop.Word.Find> Objekt.
+- Verwenden Sie Argumente der- <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode eines- <xref:Microsoft.Office.Interop.Word.Find> Objekts.
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="use-properties-of-a-find-object"></a>Verwenden Sie die Eigenschaften eines Objekts suchen
- Der folgende Code legt die Eigenschaften einer <xref:Microsoft.Office.Interop.Word.Find> Objekt zum Suchen nach Text innerhalb der aktuellen Auswahl. Beachten Sie, dass die Suchkriterien ein, z.B. bei der Suche vorwärts, umschließen und Text zu suchenden Eigenschaften sind die <xref:Microsoft.Office.Interop.Word.Find> Objekt.
+## <a name="use-properties-of-a-find-object"></a>Verwenden von Eigenschaften eines Find-Objekts
+ Der folgende Code legt die Eigenschaften eines- <xref:Microsoft.Office.Interop.Word.Find> Objekts fest, um nach Text innerhalb der aktuellen Auswahl zu suchen. Beachten Sie, dass die Suchkriterien, z. b. die Suche nach vorne, Wrapping und Text, nach denen gesucht werden soll, Eigenschaften des- <xref:Microsoft.Office.Interop.Word.Find> Objekts sind.
 
- Jede der Eigenschaften der Einstellung der <xref:Microsoft.Office.Interop.Word.Find> Objekt ist nicht hilfreich, wenn Sie c#-Code schreiben, da Sie die gleichen Eigenschaften, als Parameter in angeben müssen der <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode. In diesem Beispiel wird daher nur die Visual Basic-Code enthält.
+ Das Festlegen der Eigenschaften des- <xref:Microsoft.Office.Interop.Word.Find> Objekts ist nicht hilfreich, wenn Sie c#-Code schreiben, da Sie dieselben Eigenschaften wie Parameter in der- <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode angeben müssen. Daher enthält dieses Beispiel nur Visual Basic-Code.
 
-### <a name="to-set-search-options-using-a-find-object"></a>Festlegen von Suchoptionen, die mithilfe eines Objekts suchen
+### <a name="to-set-search-options-using-a-find-object"></a>So legen Sie Suchoptionen mithilfe eines Find-Objekts fest
 
-1. Festlegen der Eigenschaften einer <xref:Microsoft.Office.Interop.Word.Find> Objekt, um vorwärts durch eine Auswahl für den Text suchen **finden Sie mir**.
+1. Legen Sie die Eigenschaften eines- <xref:Microsoft.Office.Interop.Word.Find> Objekts fest, um eine Auswahl für die **Textsuche**zu suchen.
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
-## <a name="use-execute-method-arguments"></a>Verwenden Sie die Argumente der Execute-Methode
- Der folgende code verwendet die <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode eine <xref:Microsoft.Office.Interop.Word.Find> Objekt zum Suchen nach Text innerhalb der aktuellen Auswahl. Beachten Sie, die die Suchkriterien entsprechen, z. B. Suche vorwärts, Umbruch und Text zu suchenden als Parameter übergeben werden die <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode.
+## <a name="use-execute-method-arguments"></a>Verwenden von Execute-Methoden Argumenten
+ Im folgenden Code wird die- <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode eines- <xref:Microsoft.Office.Interop.Word.Find> Objekts verwendet, um nach Text innerhalb der aktuellen Auswahl zu suchen. Beachten Sie, dass die Suchkriterien, z. b. die Suche nach vorne, Wrapping und Text, nach denen gesucht werden soll, als Parameter der-Methode weitergegeben werden <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .
 
-### <a name="to-set-search-options-using-execute-method-arguments"></a>Festlegen von Suchoptionen, die mithilfe der Argumente der Execute-Methode
+### <a name="to-set-search-options-using-execute-method-arguments"></a>So legen Sie Suchoptionen mithilfe von Execute-Methoden Argumenten fest
 
-1. Suchkriterien als Parameter übergeben die <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode, um vorwärts durch eine Auswahl für den Text suchen **finden Sie mir**.
+1. Übergeben Sie Suchkriterien als Parameter der- <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode, um durch eine Auswahl für die Textsuche nach vorne zu suchen. **find me**
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes suchen und Ersetzen von Text in Dokumenten](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes durchlaufen Sie gefundener Elemente in Dokumenten](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Programm gesteuertes suchen und Ersetzen von Text in Dokumenten](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Gewusst wie: Programm gesteuertes durchlaufen gefundener Elemente in Dokumenten](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)

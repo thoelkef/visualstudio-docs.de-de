@@ -17,21 +17,21 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602869"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546457"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|Transparentmethodsmustnotreferencecriticalcode|
+|TypName|Transparentmethodsmustnotreferencecriticalcode|
 |CheckId|CA2140|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -53,17 +53,17 @@ ms.locfileid: "72602869"
 
 - Gibt einen Typ zurück, der als sicherheitskritisch markiert ist.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Ein Code Element, das mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut markiert ist, ist sicherheitskritisch. Eine transparente Methode kann kein sicherheitskritisches Element verwenden. Wenn ein transparenter Typ versucht, einen sicherheitskritischen Typ zu verwenden, wird eine <xref:System.TypeAccessException>, <xref:System.MethodAccessException> oder <xref:System.FieldAccessException> ausgelöst.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Ein Code Element, das mit dem-Attribut markiert ist, <xref:System.Security.SecurityCriticalAttribute> ist sicherheitskritisch. Eine transparente Methode kann kein sicherheitskritisches Element verwenden. Wenn ein transparenter Typ versucht, einen sicherheitskritischen Typ zu verwenden <xref:System.TypeAccessException> , <xref:System.MethodAccessException> wird eine, oder <xref:System.FieldAccessException> ausgelöst.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Führen Sie einen der folgenden Schritte aus, um einen Verstoß gegen diese Regel zu beheben:
 
-- Markieren Sie das Code Element, das den sicherheitskritischen Code verwendet, mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut.
+- Markieren Sie das Code Element, das den sicherheitskritischen Code verwendet, mit dem- <xref:System.Security.SecurityCriticalAttribute> Attribut.
 
      \- oder -
 
-- Entfernen Sie das <xref:System.Security.SecurityCriticalAttribute>-Attribut aus den Code Elementen, die als sicherheitskritisch gekennzeichnet sind, und markieren Sie Sie stattdessen mit dem <xref:System.Security.SecuritySafeCriticalAttribute>-oder <xref:System.Security.SecurityTransparentAttribute>-Attribut.
+- Entfernen <xref:System.Security.SecurityCriticalAttribute> Sie das Attribut aus den Code Elementen, die als sicherheitskritisch gekennzeichnet sind, und markieren Sie Sie stattdessen mit dem- <xref:System.Security.SecuritySafeCriticalAttribute> Attribut oder dem- <xref:System.Security.SecurityTransparentAttribute> Attribut.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
@@ -73,7 +73,7 @@ ms.locfileid: "72602869"
 
  [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2140.transparentmethodsmustnotreferencecriticalcode/cs/ca2140 - transparentmethodsmustnotreferencecriticalcode.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute>
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>
