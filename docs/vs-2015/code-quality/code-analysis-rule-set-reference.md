@@ -11,22 +11,22 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a3c0b347f186c5adee6cf86a0e1720ebfa80f253
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670114"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535719"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie die Code Analyse für Projekte mit verwaltetem Code in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] oder [!INCLUDE[vsPro](../includes/vspro-md.md)]you konfigurieren, wird eine Liste der integrierten *Regelsätze*angezeigt. Sie können entweder einen der Standardregelsätze verwenden oder einen Regelsatz an Ihre Projektanforderungen anpassen.
+Wenn Sie die Code Analyse für Projekte mit verwaltetem Code in, oder konfigurieren, wird [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] [!INCLUDE[vsPro](../includes/vspro-md.md)] eine Liste der integrierten *Regelsätze*angezeigt. Sie können entweder einen der Standardregelsätze verwenden oder einen Regelsatz an Ihre Projektanforderungen anpassen.
 
 ## <a name="available-rule-sets"></a>Verfügbare Regelsätze
  In der folgenden Tabelle sind die Standardregelsätze aufgeführt:
 
-|||
+|Element|Wert|
 |-|-|
 |[Regelsatz für alle Regeln](../code-quality/all-rules-rule-set.md)|Dieser Regelsatz enthält alle Regeln. Das Ausführen dieses Regelsatzes führt möglicherweise zu einer hohen Anzahl gemeldeter Warnungen. Verwenden Sie diesen Regelsatz, um einen Überblick über alle Probleme in Ihrem Code zu erhalten. Dies kann Ihnen bei der Entscheidung behilflich sein, welche der spezifischeren Regelsätze für Ihre Projekte am besten geeignet sind.|
 |[Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|Diese Regeln zielen auf logische Fehler und häufige Irrtümer bei der Verwendung von Framework-APIs ab. Binden Sie diesen Regelsatz zur Erweiterung der Liste von Warnungen mit ein, die von den empfohlenen Mindestregeln gemeldet werden.|

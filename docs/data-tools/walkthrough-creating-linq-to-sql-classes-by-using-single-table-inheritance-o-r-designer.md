@@ -11,15 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585976"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535264"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL Klassen mithilfe einer Vererbung für eine einzelne Tabelle (O/R-Designer)
-Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützen die Vererbung einer einzelnen Tabelle, da Sie in der Regel in relationalen Systemen implementiert ist. In dieser exemplarischen Vorgehensweise werden die allgemeinen Schritte beschrieben, die im Thema Gewusst [wie: Konfigurieren der Vererbung mit dem O/R-Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) erläutert werden, und es werden echte Daten bereitgestellt, um die Verwendung der Vererbung in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]zu veranschaulichen
+Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützen die Vererbung einer einzelnen Tabelle, da Sie in der Regel in relationalen Systemen implementiert ist. In dieser exemplarischen Vorgehensweise werden die allgemeinen Schritte beschrieben, die im Thema Gewusst [wie: Konfigurieren der Vererbung mit dem O/R-Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) erläutert werden, und es werden echte Daten bereitgestellt, um die Verwendung der Vererbung in zu veranschaulichen [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
 
 In dieser exemplarischen Vorgehensweise führen Sie die folgenden Aufgaben aus:
 
@@ -38,7 +38,7 @@ In dieser exemplarischen Vorgehensweise führen Sie die folgenden Aufgaben aus:
 - Anzeigen der Daten in einem Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Erstellen einer Tabelle, von der geerbt werden soll
-Um zu sehen, wie die Vererbung funktioniert, erstellen Sie eine kleine `Person` Tabelle, verwenden Sie Sie als Basisklasse, und erstellen Sie dann ein `Employee` Objekt, das von ihr erbt.
+Um zu sehen, wie die Vererbung funktioniert, erstellen Sie eine kleine `Person` Tabelle, verwenden Sie als Basisklasse, und erstellen Sie dann ein `Employee` Objekt, das von ihr erbt.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>So erstellen Sie eine Basistabelle zur Veranschaulichung der Vererbung
 
@@ -47,14 +47,14 @@ Um zu sehen, wie die Vererbung funktioniert, erstellen Sie eine kleine `Person` 
     > [!NOTE]
     > Sie können die Northwind-Datenbank oder eine andere Datenbank verwenden, der Sie eine Tabelle hinzufügen können.
 
-2. Fügen Sie der Tabelle im **Tabellen-Designer** die folgenden Spalten hinzu:
+2. Fügen Sie in der **Tabellen-Designer**der Tabelle die folgenden Spalten hinzu:
 
-    |Spaltenname|-Datentyp|NULL zulassen|
+    |Spaltenname|Datentyp|NULL-Werte zulassen|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
-    |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**False**|
-    |**LastName**|**nvarchar(200)**|**False**|
+    |**ID**|**int**|**Alarm**|
+    |**Typ**|**int**|**True**|
+    |**Vorname**|**nvarchar(200)**|**Alarm**|
+    |**Nachname**|**nvarchar(200)**|**Alarm**|
     |**Manager**|**int**|**True**|
 
 3. Legen Sie die ID-Spalte als Primärschlüssel fest.
@@ -70,9 +70,8 @@ Um sicherstellen zu können, dass die Vererbung ordnungsgemäß konfiguriert ist
 
 2. Kopieren Sie die folgenden Daten in die Tabelle. (Sie können Sie kopieren und in die Tabelle einfügen, indem Sie im **Ergebnis** Bereich die gesamte Zeile auswählen.)
 
-    ||||||
+    |**ID**|**Typ**|**Vorname**|**Nachname**|**Manager**|
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -93,7 +92,7 @@ Nachdem Sie die Tabelle erstellt haben, erstellen Sie ein neues Projekt zur Dars
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
@@ -175,20 +174,20 @@ Nun fügen Sie dem Formular Code hinzu, mit dem eine bestimmte Klasse im Objektm
     ```
 
 ## <a name="test-the-application"></a>Testen der Anwendung
-Führen Sie die Anwendung aus, und überprüfen Sie, ob alle im Listenfeld angezeigten Datensätze Mitarbeiter sind (Datensätze, die den Wert 2 in der **Type**-Spalte enthalten).
+Führen Sie die Anwendung aus, und überprüfen Sie, ob die im Listenfeld angezeigten Datensätze alle Mitarbeiter sind (Datensätze mit dem Wert 2 in der Spalte **Typ** ).
 
 ### <a name="to-test-the-application"></a>So testen Sie die Anwendung
 
 1. Drücken Sie **F5**.
 
-2. Stellen Sie sicher, dass nur Datensätze angezeigt werden, die den Wert 2 in ihrer **Type**-Spalte enthalten.
+2. Vergewissern Sie sich, dass in der Spalte **Typ** nur Datensätze mit dem Wert 2 angezeigt werden.
 
-3. Schließen Sie das Formular. (Klicken Sie im Menü **Debuggen** auf **Debuggen beenden**.)
+3. Schließen Sie das Formular. (Klicken Sie im Menü **Debuggen** auf **Debugging Debuggen**.)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Vorgehensweise: Generieren des Objektmodells in Visual Basic oder C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Gewusst wie: Generieren des Objektmodells in Visual Basic oder C #](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

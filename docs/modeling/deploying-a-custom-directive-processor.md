@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen eines benutzerdefinierten Direktivenprozessors
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596670"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536018"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Direktivenprozessors
 
@@ -52,25 +52,25 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
     1. Wählen Sie im VSIX-Manifest-Editor auf der Registerkarte **Objekte** die Option **neu** aus, und legen Sie die Eigenschaften des neuen Elements fest:
 
-         **Inhaltstyp** = **VSPackage**
+         **Inhaltstyp**  =  **VSPackage**
 
-         **Quell Projekt** = \<*das aktuelle Projekt*>
+         **Quell Projekt** = \<*the current project*>
 
     2. Klicken Sie auf **ausgewählte Editionen** , und überprüfen Sie die Installationstypen, für die der Direktivenprozessor verwendet werden soll.
 
 3. Fügen Sie eine PKGDEF-Datei hinzu, und legen Sie die Eigenschaften fest, die in die VSIX eingeschlossen werden sollen.
 
-    1. Erstellen Sie eine Textdatei, und nennen Sie Sie \<*AssemblyName*>. pkgdef.
+    1. Erstellen Sie eine Textdatei, und nennen Sie Sie \<*assemblyName*> . pkgdef.
 
-         \<*AssemblyName*> ist in der Regel mit dem Namen des Projekts identisch.
+         \<*assemblyName*>ist in der Regel mit dem Namen des Projekts identisch.
 
     2. Wählen Sie die Datei im Projektmappen-Explorer aus, und legen Sie die Eigenschaften wie folgt fest:
 
          **Buildvorgang** = **Inhalt**
 
-         **In Ausgabeverzeichnis kopieren** = **immer kopieren**
+         **In Ausgabeverzeichnis kopieren**  =  **Immer kopieren**
 
-         **In VSIX einschließen** = **true**
+         **In VSIX einschließen**  =  **True**
 
     3. Legen Sie den Namen der VSIX fest, und stellen Sie sicher, dass die ID eindeutig ist.
 
@@ -89,11 +89,11 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
 5. Fügen Sie dem Projekt die folgenden Verweise hinzu:
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 1,0**
 
-    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \* . 1,0**
 
-    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating \* . vshost.. 1,0**
 
 6. Fügen Sie dem Projekt die benutzerdefinierte Direktivenprozessorklasse hinzu.
 
@@ -124,7 +124,7 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
 - Die `IsDirectiveSupported`-Methode muss `true` zurückgeben, wenn der Name der `CustomDirective` an sie übergeben wird.
 
-- Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt wird, aber das System die Installation nicht zulässt, löschen Sie die Erweiterung aus **%LocalAppData%\microsoft\visualstudio\\\*0 \ Extensions\\** .
+- Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt wird, aber das System die Installation nicht zulässt, löschen Sie die Erweiterung aus **%LocalAppData%\microsoft\visualstudio \\ \* 0 \ Extensions \\ **.
 
 - Öffnen Sie die VSIX-Datei, und überprüfen Sie den Inhalt. Ändern Sie die Dateierweiterung in .zip, um die Datei zu öffnen. Vergewissern Sie sich, dass sie die DLL-, PKGDEF- und extension.vsixmanifest-Dateien enthält. Die extension.vsixmanifest-Datei sollte die entsprechende Liste im Knoten "SupportedProducts" und einen Knoten "VsPackage" unter dem Knoten "Inhalt" enthalten:
 
@@ -156,15 +156,15 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
  Diese Methode zum Installieren eines benutzerdefinierten Anweisungsprozessors wird am seltensten verwendet. Bei dieser Methode ist das Aktivieren und Deaktivieren des Direktivenprozessors komplizierter, und der Direktivenprozessor kann nicht an andere Benutzer verteilt werden.
 
 > [!CAUTION]
-> Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie daher unbedingt alle wichtigen Daten auf dem Computer sichern.
+> Ein fehlerhaftes Bearbeiten der Registrierung kann eine schwerwiegende Beschädigung des Systems zur Folge haben. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie daher unbedingt alle wichtigen Daten auf dem Computer sichern.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>So registrieren Sie einen Anweisungsprozessor durch Festlegen eines Registrierungsschlüssels
 
-1. Führen Sie aus `regedit`.
+1. Führen Sie `regedit` aus.
 
 2. Navigieren Sie in regedit zum folgenden Eintrag:
 
-    **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*. 0 \ texttemplating\directiveprozessoren**
+    **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* . 0 \ texttemplating\directiveprozessoren**
 
     Wenn Sie den Direktivenprozessor in der experimentellen Version von Visual Studio installieren möchten, fügen Sie "EXP" nach "11,0" ein.
 
@@ -182,20 +182,20 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
    Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
-|-Name|Typ|importieren|
+|Name|Typ|Daten|
 |-|-|-|
-|(Standardeinstellung)|REG_SZ|(Wert nicht festgelegt)|
-|Klasse|REG_SZ|**\<Namespace Name >.\<Klassen Name >**|
-|CodeBase|REG_SZ|**\<Sie Ihren Pfad >\\< Ihren Assemblynamen\>**|
+|(Standardwert)|REG_SZ|(Wert nicht festgelegt)|
+|Klasse|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|CodeBase|REG_SZ|**\<Your Path>\\<Sie den Assemblynamen\>**|
 
  Wenn die Assembly im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
-|-Name|Typ|importieren|
+|Name|Typ|Daten|
 |-|-|-|
-|(Standardeinstellung)|REG_SZ|(Wert nicht festgelegt)|
-|Klasse|REG_SZ|\<**Sie den voll qualifizierten Klassennamen**>|
-|Assembly|REG_SZ|\<**Sie den Assemblynamen im GAC**>|
+|(Standardwert)|REG_SZ|(Wert nicht festgelegt)|
+|Klasse|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Assembly|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen](../modeling/creating-custom-t4-text-template-directive-processors.md)

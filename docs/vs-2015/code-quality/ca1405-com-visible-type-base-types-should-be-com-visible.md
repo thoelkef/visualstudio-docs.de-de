@@ -15,28 +15,28 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 13a6f80bb0500286dd44e9c5ca9378e95d4b891d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 779d3ec1ed520d5d48043f90e7cb6272553012a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661304"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535043"
 ---
-# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Für COM sichtbare Basistypen sollten für COM sichtbar sein
+# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Für COM sichtbare Basistypen sollten für COM sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
+|TypName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
-|Kategorie|Microsoft. Interoperabilität|
+|Category|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Dependsonfix|
 
 ## <a name="cause"></a>Ursache
  Ein Component Object Model sichtbarer Typ (com) ist von einem Typ abgeleitet, der nicht für com sichtbar ist.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Wenn ein durch COM sichtbarer Typ Elemente in einer neuen Version hinzufügt, muss er strenge Richtlinien einhalten, um zu vermeiden, dass com-Clients, die an die aktuelle Version gebunden sind, unterbrochen werden Ein Typ, der für COM unsichtbar ist, setzt voraus, dass er diese com-Versions Regeln beim Hinzufügen neuer Member nicht befolgt. Wenn ein für COM sichtbarer Typ jedoch vom COM-unsichtbar-Typ abgeleitet ist und eine Klassen Schnittstelle von <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ClassInterfaceType> (Standard) verfügbar macht, werden alle öffentlichen Member des Basistyps (es sei denn, Sie sind explizit als com unsichtbar gekennzeichnet, was redundant wäre) KOM. Wenn der Basistyp neue Member in einer nachfolgenden Version hinzufügt, werden alle com-Clients, die an die Klassen Schnittstelle des abgeleiteten Typs gebunden sind, möglicherweise nicht mehr unterbrechen. Für COM sichtbare Typen sollten nur von sichtbaren com-Typen abgeleitet werden, um die Wahrscheinlichkeit zu verringern, dass com-Clients unterbrochen werden
+## <a name="rule-description"></a>Beschreibung der Regel
+ Wenn ein durch COM sichtbarer Typ Elemente in einer neuen Version hinzufügt, muss er strenge Richtlinien einhalten, um zu vermeiden, dass com-Clients, die an die aktuelle Version gebunden sind, unterbrochen werden Ein Typ, der für COM unsichtbar ist, setzt voraus, dass er diese com-Versions Regeln beim Hinzufügen neuer Member nicht befolgt. Wenn ein für COM sichtbarer Typ jedoch vom COM-unsichtbar-Typ abgeleitet ist und eine Klassen Schnittstelle von <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ClassInterfaceType> (Standard) verfügbar macht, werden alle öffentlichen Member des Basistyps (es sei denn, Sie sind explizit als com unsichtbar markiert, was redundant wäre) werden für com verfügbar gemacht. Wenn der Basistyp neue Member in einer nachfolgenden Version hinzufügt, werden alle com-Clients, die an die Klassen Schnittstelle des abgeleiteten Typs gebunden sind, möglicherweise nicht mehr unterbrechen. Für COM sichtbare Typen sollten nur von sichtbaren com-Typen abgeleitet werden, um die Wahrscheinlichkeit zu verringern, dass com-Clients unterbrochen werden
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, müssen Sie die Basis Typen com sichtbar machen, oder der abgeleitete Typ com ist unsichtbar.
@@ -50,5 +50,5 @@ ms.locfileid: "72661304"
  [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/cs/FxCop.Interoperability.ComBaseTypes.cs#1)]
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]
 
-## <a name="see-also"></a>Siehe auch
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Einführung in die Klassen Schnittstellen](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [Interaktion mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>[Einführung in die Klassen Schnittstellen](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [Interaktion mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

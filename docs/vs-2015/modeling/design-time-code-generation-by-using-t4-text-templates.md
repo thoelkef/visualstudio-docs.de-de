@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5e817bc76a76c3d0af0e3509ef14312ac1b98acf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669799"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534146"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 > [!NOTE]
 > Ein *Modell* ist eine Datenquelle, die einen bestimmten Aspekt einer Anwendung beschreibt. Ein Modell kann ein beliebiges Format in einem beliebigen Datei- oder Datenbanktyp aufweisen. Es muss kein bestimmtes Format besitzen, wie z. B. ein UML-Modell oder ein domänenspezifisches Sprachmodell. Typische Modelle werden als Tabellen oder XML-Dateien dargestellt.
 
- Sie sind wahrscheinlich bereits mit der Codegenerierung vertraut. Wenn Sie Ressourcen in einer **RESX** -Datei in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Lösung definieren, wird automatisch ein Satz von Klassen und Methoden generiert. Durch die Ressourcendatei können die Ressourcen einfacher und zuverlässiger bearbeitet werden als dies beim Bearbeiten der Klassen und Methoden möglich wäre. Mithilfe von Textvorlagen können Sie Code auf die gleiche Weise aus einer selbst entworfenen Quelle generieren.
+ Sie sind wahrscheinlich bereits mit der Codegenerierung vertraut. Wenn Sie Ressourcen in einer **RESX** -Datei in der Projekt Mappe definieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , wird automatisch ein Satz von Klassen und Methoden generiert. Durch die Ressourcendatei können die Ressourcen einfacher und zuverlässiger bearbeitet werden als dies beim Bearbeiten der Klassen und Methoden möglich wäre. Mithilfe von Textvorlagen können Sie Code auf die gleiche Weise aus einer selbst entworfenen Quelle generieren.
 
  Eine Textvorlage enthält eine Mischung des Texts, den Sie generieren möchten, sowie Programmcode, der Variablenteile des Texts generiert. Der Programmcode ermöglicht die Wiederholung oder das bedingte Auslassen von Teilen des generierten Texts. Der generierte Text selbst kann Programmcode sein, der einen Teil der Anwendung bildet.
 
@@ -67,7 +67,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
     Hello, world!
     ```
 
-5. Speichern Sie die Datei.
+5. Speichern Sie die Datei .
 
      Möglicherweise wird ein Meldungs Feld mit einer **Sicherheitswarnung** angezeigt, in dem Sie aufgefordert werden, zu bestätigen, dass Sie die Vorlage ausführen möchten. Klicken Sie auf **OK**.
 
@@ -81,7 +81,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
 - Sie bearbeiten die Vorlage und verschieben dann den Fokus auf ein anderes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fenster.
 
-- Sie speichern die Vorlage.
+- Speichern Sie die Vorlage.
 
 - Klicken Sie im Menü **Erstellen** auf **alle Vorlagen transformieren** . Dadurch werden alle Vorlagen in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe transformiert.
 
@@ -125,7 +125,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
    Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md).
 
-   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. Standardmäßig ist `"C#"` festgelegt.
+   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. `"C#"` ist der Standardwert.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit
  So debuggen Sie eine Textvorlage
@@ -141,7 +141,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   Die Vorlage wird ausgeführt und an den Haltepunkten angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.
 
 > [!TIP]
-> Mit `debug="true"` wird die Zuordnung des generierten Codes zur Textvorlage genauer, indem mehr Direktiven zur Zeilennummerierungsdirektive in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
+> `debug="true"`bewirkt, dass der generierte Code Map präziser in die Textvorlage eingefügt wird, indem weitere Zeilen nummerierungsdirektiven in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
 >
 > Sie können jedoch die Klausel in der template-Anweisung lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.
 
@@ -276,7 +276,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
  Der Typ von `this.Host` (in VB `Me.Host`) ist `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
-### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>Abrufen von Daten von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+### <a name="getting-data-from-vsprvs"></a>Abrufen von Daten von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
  Um in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bereitgestellte Dienste zu verwenden, legen Sie das `hostSpecific`-Attribut fest, und laden Sie die `EnvDTE`-Assembly. Sie können dann IServiceProvider.GetCOMService() verwenden, um auf DTE und andere Dienste zuzugreifen. Beispiel:
 
 ```scr
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Eine Textvorlage wird in ihrer eigene App-Domäne ausgeführt, und der Zugriff auf Dienste erfolgt durch Marshalling. Unter diesen Umständen ist GetCOMService() zuverlässiger als GetService().
 
-## <a name="Regenerating"></a>Automatisches Erneutes Generieren des Codes
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Automatisches Erneutes Generieren des Codes
  In der Regel werden mehrere Dateien in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe mit einem Eingabemodell generiert. Jede Datei wird aus einer eigenen Vorlage generiert, die Vorlagen verweisen jedoch alle auf das gleiche Modell.
 
  Wenn sich das Quellmodell ändert, müssen Sie alle Vorlagen in der Projektmappe erneut ausführen. Um dies manuell durchzuführen, wählen Sie im Menü **Erstellen** die Option **alle Vorlagen transformieren** aus.
@@ -312,7 +312,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
  Weitere Informationen finden Sie unter [Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md).
 
-## <a name="error-reporting"></a>Fehlerberichte
+## <a name="error-reporting"></a>Fehlerberichterstellung
  Zum Anzeigen von Fehler- und Warnmeldungen im Fehlerfenster von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stehen Ihnen die folgenden Methoden zur Verfügung:
 
 ```
@@ -320,7 +320,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>Eine vorhandene Datei in eine Vorlage wird umgerechnet
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Eine vorhandene Datei in eine Vorlage wird umgerechnet
  Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr ähneln und zudem einigen eingefügten Programmcode enthalten. Dadurch ergibt sich eine einfache Methode zum Erstellen einer Vorlage. Erstellen Sie zunächst eine gewöhnliche Datei als Prototyp, z. b. eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Datei, und führen Sie dann schrittweise den Generierungs Code ein, der die resultierende Datei variiert.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>So konvertieren Sie eine vorhandene Datei in eine Entwurfszeitvorlage
@@ -333,10 +333,10 @@ Warning("A warning message");
 
 4. Überprüfen Sie die folgenden Eigenschaften der **TT** -Datei:
 
-    |||
+    |Eigenschaft|Wert|
     |-|-|
     |**Benutzerdefiniertes Tool =**|**TextTemplatingFileGenerator**|
-    |**Buildaktion =**|**Keine**|
+    |**Buildvorgang =**|**None**|
 
 5. Fügen Sie am Anfang der Datei die folgenden Zeilen ein:
 
@@ -349,7 +349,7 @@ Warning("A warning message");
 
      Legen Sie das `extension`-Attribut auf die Dateinamenerweiterung für den zu generierenden Dateityp fest, z. B. `.cs`, `.resx` oder `.xml`.
 
-6. Speichern Sie die Datei.
+6. Speichern Sie die Datei .
 
      Eine untergeordnete Datei mit der angegebenen Erweiterung wird erstellt. Die Eigenschaften entsprechen dem Dateityp. Beispielsweise **wäre die Eigenschaft** Buildvorgang einer CS-Datei " **Compile**".
 
@@ -362,7 +362,7 @@ Warning("A warning message");
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-|Nächster Schritt|Topic|
+|Nächster Schritt|Thema|
 |---------------|-----------|
 |Schreiben und debuggen Sie eine erweiterte Textvorlage mit Code, in dem zusätzliche Funktionen, eingeschlossene Dateien und externe Daten verwendet werden.|[Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)|
 |Generieren Sie zur Laufzeit Dokumente aus Vorlagen.|[Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)|
@@ -370,5 +370,5 @@ Warning("A warning message");
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md)
