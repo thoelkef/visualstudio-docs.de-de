@@ -1,18 +1,18 @@
 ---
 title: 'Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594616"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532482"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode
 
@@ -33,15 +33,15 @@ Legen Sie das **Ziel Framework** des Anwendungs Projekts auf .NET Framework 4 od
 > [!NOTE]
 > Das Ziel Framework sollte nicht **.NET Framework 4 Client Profil**sein.
 
-## <a name="references"></a>Verweise
+## <a name="references"></a>References
 
 Fügen Sie dem Visual Studio-Anwendungsprojekt diese Verweise hinzu:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Wenn dies im Dialogfeld **Verweise hinzufügen** auf der Registerkarte **.net** nicht angezeigt wird, klicken Sie auf die Registerkarte **Durchsuchen** , und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+  - Wenn dies im Dialogfeld **Verweise hinzufügen** auf der Registerkarte **.net** nicht angezeigt wird, klicken Sie auf die Registerkarte **Durchsuchen** , und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
 
-- Ihre DSL-Assembly, die Sie im Ordner "bin" Ihres DSL-Projekts finden. Der Name hat in der Regel folgendes Format: *yourcompany*. *Yourproject*`.Dsl.dll`.
+- Ihre DSL-Assembly, die Sie im Ordner "bin" Ihres DSL-Projekts finden. Der Name hat in der Regel folgendes Format: *yourcompany*. *Yourproject* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>Wichtige Klassen in der DSL
 
@@ -49,21 +49,21 @@ Bevor Sie den Code schreiben können, der die DSL liest, sollten Sie die Namen e
 
 Dabei handelt es sich um die Klassen, die Sie identifizieren sollten:
 
-- *Yourdslrootclass* : Dies ist der Name der Stamm Klasse in ihrer `DslDefinition.dsl`.
+- *Yourdslrootclass* : Dies ist der Name der Stamm Klasse in Ihrem `DslDefinition.dsl` .
 
-- *Yourdslname* `SerializationHelper`: Diese Klasse wird in `SerializationHelper.cs` in Ihrem DSL-Projekt definiert.
+- *Yourdslname* `SerializationHelper` : Diese Klasse wird in `SerializationHelper.cs` in Ihrem DSL-Projekt definiert.
 
-- *Yourdslname* `DomainModel`: Diese Klasse wird in `DomainModel.cs` in Ihrem DSL-Projekt definiert.
+- *Yourdslname* `DomainModel` : Diese Klasse wird in `DomainModel.cs` in Ihrem DSL-Projekt definiert.
 
 ## <a name="read-from-a-file"></a>Lesen aus einer Datei
 
 Das folgende Beispiel dient zum Lesen einer DSL, in der die wichtigsten Klassen folgendermaßen aussehen:
 
-- FamilyTreeModel
+- Familytreemodel
 
-- FamilyTreeSerializationHelper
+- Familytreeserializationhelper
 
-- FamilyTreeDomainModel
+- Familytreedomainmodel
 
 Die andere Domänen Klasse in dieser DSL ist Person.
 

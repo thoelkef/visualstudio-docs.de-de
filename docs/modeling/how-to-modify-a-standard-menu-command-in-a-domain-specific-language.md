@@ -1,21 +1,21 @@
 ---
 title: Standardmenü Befehl in DSL ändern
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605262"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532495"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 
@@ -28,9 +28,9 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>So ermitteln Sie, welche Befehle Sie ändern können
 
-1. Öffnen Sie im Projekt `DslPackage` `GeneratedCode\CommandSet.cs`. Diese C# Datei befindet sich in Projektmappen-Explorer als Tochterunternehmen von `CommandSet.tt`.
+1. Öffnen Sie im `DslPackage`-Projekt die Datei `GeneratedCode\CommandSet.cs`. Diese c#-Datei finden Sie in Projektmappen-Explorer als Tochterunternehmen von `CommandSet.tt` .
 
-2. Suchen Sie in dieser Datei nach Klassen, deren Namen mit "`CommandSet`" enden, z. b. `Language1CommandSet` und `Language1ClipboardCommandSet`.
+2. Suchen Sie in dieser Datei nach Klassen, deren Namen mit " `CommandSet` " enden, z `Language1CommandSet` . b `Language1ClipboardCommandSet` . und.
 
 3. Geben Sie in jeder festgelegten Klasse des Befehls "`override`" gefolgt von einem Leerzeichen ein. IntelliSense zeigt eine Liste der Methoden an, die Sie überschreiben können. Jeder Befehl verfügt über ein Paar von Methoden, deren Namen mit "`ProcessOnStatus`" und "`ProcessOnMenu`" beginnen.
 
@@ -53,7 +53,7 @@ Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten K
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. Erstellen Sie in **dslpackage**einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs`.
+2. Erstellen Sie in **dslpackage**einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
 
 3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Beispiel:
 
@@ -70,7 +70,7 @@ Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten K
 
 ## <a name="override-the-command-methods"></a>Überschreiben der Befehlsmethoden
 
-Die meisten Befehle verfügen über zwei zugeordnete Methoden: die Methode mit einem Namen wie `ProcessOnStatus`... bestimmt, ob der Befehl sichtbar und aktiviert sein soll. Sie wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt und sollte schnell ausgeführt werden sowie keine Änderungen vornehmen. `ProcessOnMenu`... wird aufgerufen, wenn der Benutzer auf den Befehl klickt, und sollte die Funktion des Befehls ausführen. Sie können eine dieser oder beide Methoden überschreiben.
+Die meisten Befehle verfügen über zwei zugeordnete Methoden: die Methode mit einem Namen wie `ProcessOnStatus` ... bestimmt, ob der Befehl sichtbar und aktiviert sein soll. Sie wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt und sollte schnell ausgeführt werden sowie keine Änderungen vornehmen. `ProcessOnMenu`... wird aufgerufen, wenn der Benutzer auf den Befehl klickt, und sollte die Funktion des Befehls ausführen. Sie können eine dieser oder beide Methoden überschreiben.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Ändern, wann der Befehl in einem Menü angezeigt wird
 
@@ -129,21 +129,21 @@ Wenn der Code Änderungen am Speicher vornimmt, wie Erstellen, Löschen oder Akt
 
 Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:
 
-- `this.CurrentSelection` Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
+- `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
 
-- `this.IsDiagramSelected()`  -  `true`, wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
+- `this.IsDiagramSelected()` - `true`, wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`: der Benutzer hat nicht mehrere Formen ausgewählt.
+- `this.IsSingleSelection()`-der Benutzer hat nicht mehrere Formen ausgewählt.
 
-- `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat
+- `this.SingleSelection`die Form oder das Diagramm, auf die der Benutzer mit der rechten Maustaste geklickt hat
 
-- `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird
+- `shape.ModelElement as MyLanguageElement`-das Modellelement, das durch eine Form dargestellt wird.
 
 Weitere Informationen zum Navigieren von einem Element zu einem Element und zum Erstellen von Objekten und Links finden Sie unter [navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

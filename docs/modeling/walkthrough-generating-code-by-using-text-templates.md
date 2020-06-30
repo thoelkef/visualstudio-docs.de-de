@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593508"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532059"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 
@@ -28,7 +28,7 @@ Der System.Xml-Namespace stellt umfassende Tools für das Laden eines XML-Dokume
 In diesem Beispielprojekt liest eine Vorlage eine Beispiel-XML-Datei und generiert Klassen, die jedem Knotentyp entsprechen. Bei handgeschriebenem Code können Sie diese Klassen verwenden, um in der XML-Datei zu navigieren. Sie können Ihre Anwendung auch mit anderen Dateien ausführen, die die gleichen Knotentypen verwenden. Die XML-Beispieldatei dient dazu, Beispiele für alle Knotentypen bereitzustellen, für die Ihre Anwendung gedacht ist.
 
 > [!NOTE]
-> Die [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)-Anwendung, die in Visual Studio enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
+> Der in Visual Studio enthaltene Anwendungs [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
 
 Hier ist die Beispieldatei:
 
@@ -83,7 +83,7 @@ In diesem Projekt wird eine einzelne Vorlagendatei verwendet, um die Klassen zu 
 
 Sie können diese Technik für jedes Codeprojekt anwenden. Diese exemplarische Vorgehensweise verwendet ein C#-Projekt, und zu Testzwecken verwenden wir eine Konsolenanwendung.
 
-1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
+1. Klicken Sie im Menü **Datei** auf **neu** , und klicken Sie dann auf **Projekt**.
 
 2. Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.
 
@@ -93,9 +93,9 @@ Diese Datei dient dazu, Beispiele der XML-Knotentypen bereitzustellen, die Ihre 
 
 Die Datei sollte Teil des Projekts sein, damit die Vorlage sie lesen kann, aber sie wird nicht in die kompilierte Anwendung integriert werden.
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und anschließend auf **Neues Element**.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und dann auf **Neues Element**.
 
-2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **XML-Datei** aus den **Vorlagen** aus.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen****XML-Datei** aus den **Vorlagen** aus.
 
 3. Fügen Sie der Datei Ihren Beispielinhalt hinzu.
 
@@ -133,7 +133,7 @@ Fügen Sie eine Textvorlagen Datei hinzu, und legen Sie die Ausgabe Erweiterung 
 
 1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.
 
-2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen****Textvorlage** aus den **Vorlagen** aus.
 
     > [!NOTE]
     > Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.
@@ -144,7 +144,7 @@ Fügen Sie eine Textvorlagen Datei hinzu, und legen Sie die Ausgabe Erweiterung 
 
 4. Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.
 
-5. Speichern Sie die Datei. In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
+5. Speichern Sie die Datei . In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -270,7 +270,7 @@ Weitere Informationen, wie Eigenschaften für die untergeordneten Knoten, Attrib
 
 ### <a name="access-the-visual-studio-api"></a>Zugreifen auf die Visual Studio-API
 
-Das Festlegen des `hostspecific`-Attributs der `<#@template#>` Direktive ermöglicht der Vorlage den Zugriff auf die Visual Studio-API. Die Vorlage kann dies verwenden, um den Speicherort der Projektdateien zu erhalten, um zu vermeiden, dass ein absoluter Dateipfad im Vorlagencode enthalten ist.
+Durch Festlegen des- `hostspecific` Attributs der- `<#@template#>` Direktive kann die Vorlage Zugriff auf die Visual Studio-API erhalten. Die Vorlage kann dies verwenden, um den Speicherort der Projektdateien zu erhalten, um zu vermeiden, dass ein absoluter Dateipfad im Vorlagencode enthalten ist.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -408,7 +408,7 @@ Wenn sich das XML-Schema ändert, können neue Klassen leicht generiert werden. 
 
 Um die Klassen neu zu generieren, wenn die XML-Beispieldatei geändert wird, klicken Sie auf der Symbolleiste **Projektmappen-Explorer** auf **alle Vorlagen transformieren** .
 
-## <a name="conclusion"></a>Schlussfolgerung
+## <a name="conclusion"></a>Zusammenfassung
 
 In dieser exemplarischen Vorgehensweise werden verschiedene Techniken und Vorteile der Codegenerierung veranschaulicht:
 
@@ -428,7 +428,7 @@ In dieser exemplarischen Vorgehensweise wird der Programmcode eigentlich aus ein
 
 Wenn Sie Vorlagentransformations- oder Kompilierungsfehler in der **Fehlerliste** sehen oder die Ausgabedatei nicht korrekt generiert wurde, können Sie die Textvorlage mit den unter [Generieren von Dateien mit dem Hilfsprogramm „TextTransform“](../modeling/generating-files-with-the-texttransform-utility.md) beschriebenen Techniken entsprechend korrigieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
