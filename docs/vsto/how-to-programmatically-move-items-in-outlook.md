@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Verschieben von Elementen in Outlook'
+title: 'Gewusst wie: Programm gesteuertes Verschieben von Elementen in Outlook'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812560"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519911"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Vorgehensweise: Programmgesteuertes Verschieben von Elementen in Outlook
-  In diesem Beispiel verschiebt ungelesene e-Mail-Nachrichten aus der **Posteingang** in einen Ordner namens **Test**. Im Beispiel wird nur die Nachrichten, die das Wort **Test** in die `Subject` Feld.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Gewusst wie: Programm gesteuertes Verschieben von Elementen in Outlook
+  In diesem Beispiel werden ungelesene e-Mail-Nachrichten aus dem **Posteingang** in den Ordner **Test**verschoben Im Beispiel werden nur Nachrichten mit dem Wort **Test** im- `Subject` Feld verschoben.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,12 +30,12 @@ ms.locfileid: "62812560"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Beispiel benötigen Sie Folgendes:
 
-- Ein Outlook-Ordner mit dem Namen **Test**.
+- Ein Outlook Mail-Ordner mit dem Namen " **Test**".
 
-- Eine e-Mail-Nachricht, die mit dem Wort eingeht **Test** in die `Subject` Feld.
+- Eine e-Mail-Nachricht, die mit dem Word- **Test** im `Subject` Feld eingeht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Ordnern](../vsto/working-with-folders.md)
-- [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Vorgehensweise: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Gewusst wie: Programm gesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Gewusst wie: Programm gesteuertes suchen innerhalb eines bestimmten Ordners](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Gewusst wie: Programm gesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

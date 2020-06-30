@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Öffnen vorhandener Dokumente'
+title: 'Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,28 +13,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812389"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519898"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Vorgehensweise: Programmgesteuertes Öffnen vorhandener Dokumente
-  Die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode öffnet die vorhandene Microsoft Office Word-Dokument, das durch einen vollqualifizierten Pfad und Dateiname angegeben. Diese Methode gibt eine <xref:Microsoft.Office.Interop.Word.Document> , der das geöffnete Dokument darstellt.
+# <a name="how-to-programmatically-open-existing-documents"></a>Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente
+  Die- <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Methode öffnet das vorhandene Microsoft Office Word-Dokument, das durch einen voll qualifizierten Pfad und Dateinamen angegeben wird. Diese Methode gibt einen zurück <xref:Microsoft.Office.Interop.Word.Document> , der das geöffnete Dokument darstellt.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="to-open-a-document"></a>Zum Öffnen eines Dokuments
+## <a name="to-open-a-document"></a>So öffnen Sie ein Dokument
 
-- Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode der der <xref:Microsoft.Office.Interop.Word.Documents> Sammlung und geben Sie einen Pfad zum Dokument.
+- Ruft die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode der <xref:Microsoft.Office.Interop.Word.Documents> -Auflistung auf und stellt einen Pfad zum Dokument bereit.
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
-## <a name="to-open-a-document-as-read-only"></a>Um ein Dokument als schreibgeschützt zu öffnen.
+## <a name="to-open-a-document-as-read-only"></a>So öffnen Sie ein Dokument als schreibgeschützt
 
-- Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode, geben Sie einen Pfad zum Dokument, und legen die *ReadOnly* Argument **"true"** im Aufruf Methode.
+- Nennen Sie die- <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Methode, geben Sie einen Pfad zum Dokument an, *ReadOnly* und legen Sie im Methoden aufrufdas Argument "schreibgeschützt" auf " **true** " fest.
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
@@ -42,9 +42,9 @@ ms.locfileid: "62812389"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Codebeispiel benötigen Sie Folgendes:
 
-- Ein Dokument namens *NewDocument.doc* muss vorhanden sein, in ein Verzeichnis namens *Test* auf Laufwerk C.
+- Ein Dokument mit dem Namen *NewDocument.doc* muss in einem Verzeichnis mit dem Namen *Test* auf Laufwerk C vorhanden sein.
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Erstellen neuer Dokumente](../vsto/how-to-programmatically-create-new-documents.md)
-- [Vorgehensweise: Programmgesteuertes Schließen von Dokumenten](../vsto/how-to-programmatically-close-documents.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Programm gesteuertes Erstellen neuer Dokumente](../vsto/how-to-programmatically-create-new-documents.md)
+- [Gewusst wie: Programm gesteuertes schließen von Dokumenten](../vsto/how-to-programmatically-close-documents.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587783"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521315"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 
@@ -26,14 +26,14 @@ Dieser Abschnitt ist ein Verweis auf die Fehlermeldungen, die vom Tool für die 
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|||
+|Code|BESCHREIBUNG|
 |-|-|
 |[CA0001](ca0001.md)|Im Analysetool für verwalteten Code wurde eine Ausnahme ausgelöst, die keine erwartete Fehlerbedingung angibt.|
 |[CA0051](ca0051.md)|Es wurden keine Regeln ausgewählt.|
 |[CA0052](ca0052.md)|Es wurden keine Ziele zur Analyse ausgewählt.|
 |[CA0053](ca0053.md)|Die Regelassembly konnte nicht geladen werden.|
 |[CA0054](ca0054.md)|Eine benutzerdefinierte Regelassembly weist ungültige XML-Ressourcen auf.|
-|[CA0055](ca0055.md)|Datei konnte nicht geladen werden:\<Pfad >|
+|[CA0055](ca0055.md)|Die Datei konnte nicht geladen werden:\<path>|
 |[CA0056](ca0056.md)|Eine Projektdatei weist eine falsche Version des Analysetools auf.|
 |[CA0057](ca0057.md)|Dem aktuellen Satz von Zielen und Regeln können keine Verstöße zugeordnet werden.|
 |[CA0058](ca0058.md)|Referenzierte Assemblys können nicht geladen werden.|
