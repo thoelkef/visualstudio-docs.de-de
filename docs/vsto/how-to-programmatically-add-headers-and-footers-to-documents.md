@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Hinzufügen von Kopf- und Fußzeilen zu Dokumenten'
+title: 'Gewusst wie: Programm gesteuertes Hinzufügen von Kopf-und Fußzeilen zu Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7859657b52e5d96280646387f70686d2804e6fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52724103df17a1eaaf364f255f127a576beda798
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967620"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519924"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Vorgehensweise: Programmgesteuertes Hinzufügen von Kopf- und Fußzeilen zu Dokumenten
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Kopf-und Fußzeilen zu Dokumenten
   Sie können Kopf- und Fußzeilen in Ihrem Dokument Text hinzufügen, indem Sie die Eigenschaft <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> und die Eigenschaft <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> von der<xref:Microsoft.Office.Interop.Word.Section> verwenden. Jeder Abschnitt eines Dokuments enthält drei Kopf- und Fußzeilen:
 
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>
@@ -69,7 +69,7 @@ ms.locfileid: "62967620"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Erstellen neuer Dokumente](../vsto/how-to-programmatically-create-new-documents.md)
-- [Vorgehensweise: Programmgesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes durchlaufen Sie gefundener Elemente in Dokumenten](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Programm gesteuertes Erstellen neuer Dokumente](../vsto/how-to-programmatically-create-new-documents.md)
+- [Gewusst wie: Programm gesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Gewusst wie: Programm gesteuertes durchlaufen gefundener Elemente in Dokumenten](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

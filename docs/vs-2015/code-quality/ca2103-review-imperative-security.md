@@ -15,27 +15,27 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b4abf0b15a4fbba1abc61572da8a2f6126c754f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ade0d10e203752c7412929c6f5f44d9cbfaacfa6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652160"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521263"
 ---
-# <a name="ca2103-review-imperative-security"></a>CA2103: Imperative Sicherheit überprüfen
+# <a name="ca2103-review-imperative-security"></a>CA2103: Imperative Sicherheit überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ReviewImperativeSecurity|
+|TypName|ReviewImperativeSecurity|
 |CheckId|CA2103|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Eine Methode verwendet imperative Sicherheit und erstellt möglicherweise die Berechtigung mit Zustandsinformationen oder Rückgabewerten, die sich ändern können, während die Forderung wirksam ist.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Bei imperativer Sicherheit werden verwaltete Objekte verwendet, um während der Codeausführung Berechtigungen und Sicherheitsaktionen anzugeben, im Vergleich zur deklarativen Sicherheit, bei der Attribute verwendet werden, um Berechtigungen und Aktionen in Metadaten zu speichern. Imperative Sicherheit ist sehr flexibel, da Sie den Status eines Berechtigungs Objekts festlegen und Sicherheitsaktionen mithilfe von Informationen auswählen können, die bis zur Laufzeit nicht verfügbar sind. Mit dieser Flexibilität besteht das Risiko, dass die Laufzeitinformationen, mit denen Sie den Zustand einer Berechtigung ermitteln, unverändert bleiben, solange die Aktion wirksam ist.
 
  Verwenden Sie, wenn irgend möglich, deklarative Sicherheit. Deklarative Anforderungen sind leichter zu verstehen.
@@ -46,5 +46,5 @@ ms.locfileid: "72652160"
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn sich die Berechtigung nicht auf das Ändern von Daten verlässt. Es ist jedoch besser, den imperativen Bedarf in seine deklarative Entsprechung zu ändern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) für [sichere Codierungs Richtlinien](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

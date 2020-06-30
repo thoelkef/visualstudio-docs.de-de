@@ -1,5 +1,5 @@
 ---
-title: Verwenden des eigenständigen IntelliTrace-Sammlers | Microsoft-Dokumentation
+title: Verwenden des eigenständigen IntelliTrace-Collectors | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,24 +13,24 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 81eedeeb9a1b2470e87f0d865996ad3e456723fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586790"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520548"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Verwenden des eigenständigen IntelliTrace-Collectors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.
 
- So funktioniert IntelliTrace: [Visual Studio Ultimate 2012: Sammeln und Analysieren von Daten in der Produktion (Channel 9-Video)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
+ Sehen Sie IntelliTrace in Aktion: [Sammeln und Analysieren von Daten in der Produktion (Channel 9-Video)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
 
 > [!NOTE]
 > Sie können IntelliTrace-Daten auf Remotecomputern auch für Web- und SharePoint-Anwendungen mithilfe des **Microsoft Monitoring Agent** im **Ablaufverfolgungs** modus erfassen.
 >
-> Sie können leistungsbezogene Ereignisse in den IntelliTrace-Daten erfassen, indem Sie den Agenten im **Überwachungs** modus ausführen. Der**Überwachungs** modus hat weniger Auswirkungen auf die Leistung als der **Ablaufverfolgungs** modus oder der **IntelliAblaufverfolgungs stand-alone collector**. Durch die Installation von Microsoft Monitoring Agent ändert sich nicht die Zielsystemumgebung. Siehe [Verwenden des Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Sie können leistungsbezogene Ereignisse in den IntelliTrace-Daten erfassen, indem Sie den Agenten im **Überwachungs** modus ausführen. Der**Überwachungs** modus hat weniger Auswirkungen auf die Leistung als der **Ablaufverfolgungs** modus oder der **IntelliAblaufverfolgungs stand-alone collector**. Durch die Installation von Microsoft Monitoring Agent ändert sich nicht die Zielsystemumgebung. Siehe [Verwenden von Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 
  **Anforderungen**
 
@@ -41,7 +41,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
   > [!NOTE]
   > Achten Sie darauf, die Symboldateien (.pdb) zu speichern. Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Siehe [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
 
-  **Häufig gestellte Fragen**
+  **FAQ**
 
 - [Welche Apps arbeiten mit dem Collector?](#WhatApps)
 
@@ -51,7 +51,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 - [Wo kann ich IntelliTrace-Daten außerdem abrufen?](#WhereElse)
 
-## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a>Welche apps arbeiten mit dem Collector?
+## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a> Welche Apps arbeiten mit dem Collector?
 
 - Auf Internetinformationsdienste (IIS) Version 7.0, 7.5 und 8.0 gehostete ASP.NET-Webanwendungen
 
@@ -59,7 +59,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 - Windows Presentation Foundation (WPF) und Windows Forms-Anwendungen.
 
-## <a name="how-do-i-get-started"></a><a name="GetStarted"></a>Gewusst wie starten?
+## <a name="how-do-i-get-started"></a><a name="GetStarted"></a> Wie fange ich an?
 
 1. [Installieren von Collector](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
@@ -71,13 +71,13 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 5. [Daten von einer Webapp oder SharePoint-Anwendung sammeln](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     Oder
+     - oder -
 
      [Sammeln von Daten aus einer verwalteten Anwendung](#BKMK_Collect_Data_from_Executables)
 
 6. [Öffnen der ITRACE-Datei in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a>Installieren des Sammlers
+## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Installieren von Collector
 
 1. Erstellen Sie das Collector-Verzeichnis auf dem Server Ihrer APP, z. b.: **c:\intellitracecollector**
 
@@ -87,7 +87,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      1. Wählen Sie neben **IntelliTraceCollector.exe**die Option **Herunterladen**aus.
 
-     2. Speichern Sie IntelliTraceCollector.exe im Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
+     2. Speichern Sie „IntelliTraceCollector.exe“ im Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
 
      3. Führen Sie die IntelliTraceCollector.exe aus. Dadurch wird die IntelliTraceCollection.cab-Datei extrahiert.
 
@@ -97,9 +97,9 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      1. Kopieren Sie die Datei "IntelliTraceCollection.cab" aus dem folgenden Ordner:
 
-          **.. \Microsoft Visual Studio 12.0 \ Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2. Legen Sie IntelliTraceCollection.cab im Collector-Verzeichnis ab, beispielsweise: **C:\IntelliTraceCollector**
+     2. Legen Sie „IntelliTraceCollection.cab“ im Collector-Verzeichnis ab, beispielsweise: **C:\IntelliTraceCollector**
 
 3. Erweitern Sie die Datei "IntelliTraceCollection.cab":
 
@@ -107,14 +107,14 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
    2. Wechseln Sie zum Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
 
-   3. Verwenden Sie den Befehl **expand** , einschließlich des Punkts (**.**) am Ende, zum Erweitern der IntelliTraceCollection.cab-Datei:
+   3. Verwenden Sie den Befehl **expand** , einschließlich des Punkts ( **.** ) am Ende, zum Erweitern der IntelliTraceCollection.cab-Datei:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > Durch den Punkt (**.**) werden die Unterordner mit den lokalisierten Auflistungsplänen beibehalten.
+       > Durch den Punkt ( **.** ) werden die Unterordner mit den lokalisierten Auflistungsplänen beibehalten.
 
-## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a>Einrichten von Berechtigungen für das Collector-Verzeichnis
+## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a> Berechtigungen für das Sammlungsverzeichnis
 
 1. Öffnen Sie auf dem Server der App ein Eingabeaufforderungsfenster als Administrator.
 
@@ -132,7 +132,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
     2. Räumen Sie dem Anwendungspool für die Webanwendung oder SharePoint-Anwendung Lese-/Schreib-Berechtigungen für das Collector-Verzeichnis ein.
 
-         Beispiel:
+         Zum Beispiel:
 
         - Für eine Web App im **DefaultAppPool** -Anwendungspool:
 
@@ -142,15 +142,15 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>Installieren von IntelliTrace-PowerShell-Cmdlets zum Sammeln von Daten für Web-Apps oder SharePoint-Anwendungen
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> IntelliTrace-PowerShell-Cmdlets installieren, um Daten für Webapps oder SharePoint-Anwendungen zu sammeln
 
 1. Stellen Sie sicher, dass PowerShell auf dem Server der App aktiviert ist. Bei den meisten Versionen von Windows Server, können Sie diese Funktion im **Server-Manager** -Verwaltungsprogramm hinzufügen.
 
-     ![PowerShell wird mit dem Server-Manager hinzugefügt](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![Hinzufügen von PowerShell mit dem Server-Manager](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. Installieren Sie die IntelliTrace-PowerShell-cmdlets.
 
-    1. Öffnen Sie als Administrator ein PowerShell-Befehlsfenster.
+    1. Öffnen Sie ein PowerShell-Befehlsfenster als Administrator.
 
         1. Wählen Sie **Start**, **Alle Programme**, **Zubehör**, **Windows PowerShell**aus.
 
@@ -158,7 +158,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
             - Unter 64-Bit-Betriebssystemen: öffnen Sie das Kontextmenü für **Windows PowerShell**. Wählen Sie **Als Administrator ausführen**.
 
-            - Unter 32-Bit-Betriebssystemen: öffnen Sie das Kontextmenü für **Windows PowerShell (x86)**. Wählen Sie **Als Administrator ausführen**.
+            - Unter 32-Bit-Betriebssystemen: öffnen Sie das Kontextmenü für **Windows PowerShell (x86)** . Wählen Sie **Als Administrator ausführen**.
 
     2. Verwenden Sie im PowerShell-Befehlsfenster den Befehl **Import-Module** , um die **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**zu importieren.
 
@@ -166,7 +166,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a>Berechtigungen für das itrace-Datei Verzeichnis einrichten
+## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Berechtigungen für das ITRACE-Dateiverzeichnis einrichten
 
 1. Erstellen Sie auf dem Server Ihrer APP das. itrace-Datei Verzeichnis, z. b.: **c:\intellitracelogfiles** .
 
@@ -180,7 +180,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 2. Für eine Web App oder SharePoint-Anwendung geben Sie dem Anwendungspool vollständige Berechtigungen zum ITRACE-Dateiverzeichnis. Sie können den Windows-Befehl **icacls** oder den Windows-Explorer (bzw. den Datei-Explorer) verwenden.
 
-    Beispiel:
+    Zum Beispiel:
 
    - So legen Sie Berechtigungen mit dem Windows-Befehl **icacls** fest:
 
@@ -192,7 +192,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       Oder
+       - oder -
 
    - So legen Sie die Berechtigungen mit dem Windows-Explorer (bzw. dem Datei-Explorer) fest:
 
@@ -206,11 +206,11 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      5. Fügen Sie im Feld **Geben Sie die Namen der auszuwählenden Objekte ein** den Anwendungspool für die Web App oder die SharePoint-Anwendung hinzu.
 
-     6. Wählen Sie **Namen überprüfen** aus, um den Namen aufzulösen. Wählen Sie **OK** aus.
+     6. Wählen Sie **Namen überprüfen** aus, um den Namen aufzulösen. Klicken Sie auf **OK**.
 
      7. Stellen Sie sicher, dass der Anwendungspool über **Vollzugriff**verfügt.
 
-## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a>Sammeln von Daten aus einer Web-App oder einer SharePoint-Anwendung
+## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Daten von einer Webapp oder SharePoint-Anwendung sammeln
 
 1. Um mit dem Sammeln von Daten zu beginnen, öffnen Sie ein PowerShell-Befehlsfenster als Administrator, dann führen Sie diesen Befehl aus:
 
@@ -223,17 +223,17 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      `Start-IntelliTraceCollection "SharePoint - 80" "C:\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogFiles"`
 
-    |||
+    |Element|BESCHREIBUNG|
     |-|-|
     |*ApplicationPool*|Der Name des Anwendungspools, in dem die Anwendung ausgeführt wird|
-    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgenden Pläne funktionieren bei Web Apps und SharePoint-Anwendungen:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse und SharePoint-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufen und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis:**  Standardmäßig beträgt die maximale Größe der itrace-Datei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
-    |*FullPathToITraceFileDirectory*|Der vollständige Pfad zum ITRACE-Dateiverzeichnis. **Sicherheitshinweis:**  Geben Sie den vollständigen Pfad an, nicht einen relativen Pfad.|
+    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgenden Pläne funktionieren bei Web Apps und SharePoint-Anwendungen:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse und SharePoint-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufen und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis**:  Standardmäßig liegt die maximale Größe der ITRACE-Datei bei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
+    |*FullPathToITraceFileDirectory*|Der vollständige Pfad zum ITRACE-Dateiverzeichnis. **Sicherheitshinweis:**  Stellen Sie den vollständigen Pfad, keinen relativen Pfad bereit.|
 
      Der Collector wird an den Anwendungspool angefügt und startet die Datensammlung.
 
      *Kann ich die ITRACE-Datei zu diesem Zeitpunkt öffnen?* Nein, die Datei ist während der Datensammlung gesperrt.
 
-2. Reproduzieren des Problems
+2. Reproduzieren Sie das Problem.
 
 3. Um eine Momentaufnahme der ITRACE-Datei zu erstellen, verwenden Sie die folgende Syntax:
 
@@ -252,28 +252,28 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 6. [Öffnen der ITRACE-Datei in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a>Sammeln von Daten aus einer verwalteten App
+## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a> Sammeln von Daten aus einer verwalteten Anwendung
 
 1. Um die App zu starten und gleichzeitig Daten zu erfassen, verwenden Sie die folgende Syntax:
 
-     `/f:` *Fullpathtointellitracecollector ausführbare>pathtocollectionplan>fullpathtoitracefiledirectoriyandfilename>pathtoappexecutablefileandfilename \<* `\IntelliTraceSC.exe launch /cp:` * \<* * \<* * \<>*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      So sammeln Sie beispielsweise Daten von einer App namens **MyApp**:
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 
-    |||
+    |Element|BESCHREIBUNG|
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|Der vollständige Pfad zur ausführbaren IntelliTraceSC.exe-Datei des Collectors|
-    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgende Pläne funktionieren bei verwalteten Apps:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufe und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis:**  Standardmäßig beträgt die maximale Größe der itrace-Datei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
-    |*FullPathToITraceFileDirectoryAndFileName*|Der vollständige Pfad zum ITRACE-Dateiverzeichnis und dem ITRACE-Dateinamen mit der Erweiterung **.itrace** . **Sicherheitshinweis:**  Geben Sie den vollständigen Pfad an, nicht einen relativen Pfad.|
+    |*PathToCollectionPlan*|Der Pfad zu einem Auflistungsplan, einer XML-Datei, über die die Einstellungen für den Collector konfiguriert werden.<br /><br /> Sie können einen Plan angeben, der mit dem Collector ausgeführt wird. Die folgende Pläne funktionieren bei verwalteten Apps:<br /><br /> – collection_plan.ASP.NET.default.xml<br />     Sammelt nur IntelliTrace-Ereignisse, einschließlich Ausnahmen, Datenbankaufrufe und Webserveranforderungen.<br />– collection_plan.ASP.NET.trace.xml<br />     Sammelt Funktionsaufrufe und alle Daten in der Datei collection_plan.ASP.NET.de fault.xml. Dieser Plan ist für detaillierte Analysen geeignet, aber er verlangsamt möglicherweise die Anwendung mehr als collection_plan.ASP.NET.de fault.xml.<br /><br /> Um eine Verlangsamung der App zu vermeiden, passen Sie diese Pläne an, oder erstellen Sie sich einen eigenen. Aus Sicherheitsgründen legen Sie alle benutzerdefinierten Pläne am gleichen sicheren Speicherort ab wie die Collector-Dateien. Siehe [Erstellen und Anpassen von IntelliTrace-Auflistungsplänen](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) und [Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?](#Minimizing) **Hinweis**:  Standardmäßig liegt die maximale Größe der ITRACE-Datei bei 100 MB. Wenn die ITRACE-Datei diese Grenze erreicht, werden die frühesten Einträge in der Datei vom Collector gelöscht, um Platz für neuere Einträge zu schaffen. Zum Ändern dieses Limits, bearbeiten Sie das `MaximumLogFileSize` -Attribut des Sammlungsplans. <br /><br /> *Wo finde ich lokalisierte Versionen dieser Sammlungspläne?*<br /><br /> Sie finden lokalisierte Pläne in den Collector-Installationsunterordnern.|
+    |*FullPathToITraceFileDirectoryAndFileName*|Der vollständige Pfad zum ITRACE-Dateiverzeichnis und dem ITRACE-Dateinamen mit der Erweiterung **.itrace** . **Sicherheitshinweis:**  Stellen Sie den vollständigen Pfad, keinen relativen Pfad bereit.|
     |*PathToAppExecutableFileAndFileName*|Pfad und Dateiname der verwalteten App|
 
 2. Beenden Sie die Datensammlung, indem Sie die Anwendung verlassen.
 
 3. [Öffnen der ITRACE-Datei in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a>Öffnen Sie die itrace-Datei in Visual Studio Enterprise
+## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a> Öffnen der ITRACE-Datei in Visual Studio Enterprise
 
 > [!NOTE]
 > Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Siehe [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
@@ -287,7 +287,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
     > [!NOTE]
     > Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen auf dem Entwicklungscomputer die entsprechenden Quelldateien und Symboldateien vorhanden sein. Siehe [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
 
-## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>Gewusst wie die meisten Daten erhalten, ohne die APP zu verlangsamen?
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?
  IntelliTrace kann sehr viele Daten sammeln, daher sind die Auswirkungen auf die Leistung der App von den mit IntelliTrace gesammelten Daten und von der Art der analysierten Codes abhängig. Siehe [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/).
 
  Es gibt folgende Möglichkeiten, möglichst viele Daten abzurufen, ohne die App zu verlangsamen:
@@ -316,7 +316,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 - Überprüfen Sie die Module im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nur für Sie interessante Module einzuschließen:
 
-  1. Öffnen Sie den Sammlungsplan. Suchen Sie das Element `<ModuleList>`.
+  1. Öffnen Sie den Sammlungsplan. Suchen Sie das `<ModuleList>` -Element.
 
   2. Legen Sie in `<ModuleList>`das `isExclusionList` -Attribut auf `false`fest.
 
@@ -375,17 +375,17 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
    Der `Employee` -Typ verfügt über die folgenden Attribute: `Id`, `Name`und `HomeAddress`. Eine Zuordnungsbeziehung besteht zwischen dem `Employee` - und dem `Address` -Typ.
 
-   ![Zusammenhang zwischen Mitarbeiter und Adresse](../debugger/media/employeeaddressrelationship.png "Mitarbeiter addressrelationship")
+   ![Zusammenhang zwischen Mitarbeiter und Adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    Der Collector zeichnet Werte für `id`, `Employee.Id`, `Employee.Name` und das `Employee` -Objekt auf, das von der `AlterEmployee` -Methode zurückgegeben wird. Der Collector zeichnet jedoch keine Informationen zum `Address` -Objekt (außer NULL oder keine) auf. Der Collector zeichnet auch keine Daten zu lokalen Variablen in der `AlterEmployee` -Methode auf, es sei denn, andere Methoden verwenden diese lokalen Variablen als Parameter. An diesem Punkt werden sie als Methodenparameter aufgezeichnet.
 
-## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a>Wo kann ich auch IntelliTrace-Daten erhalten?
+## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a> Wo kann ich IntelliTrace-Daten außerdem abrufen?
 
 - Informationen aus einer IntelliTrace-Debugsitzung in Visual Studio Enterprise finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
 - Weitere Informationen finden Sie aus einer Testsitzung in Microsoft Test Manager heraus unter [Gewusst wie: Sammeln von IntelliTrace-Daten zum Debuggen schwieriger Probleme helfen](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015).
 
-## <a name="where-can-i-get-more-information"></a>Wo erhalte ich weitere Informationen?
+## <a name="where-can-i-get-more-information"></a>Wo kann ich weitere Informationen abrufen?
  [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)
 
  [IntelliTrace](../debugger/intellitrace.md)
