@@ -15,27 +15,27 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5e078fc1bb7fe247d541e7695e98c2de76c2466
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669241"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544065"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|IdentifiersShouldBeSpelledCorrectly|
+|TypName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Der Name eines Bezeichners enthält mindestens ein Wort, das von der Bibliothek der Microsoft-Rechtschreibprüfung nicht erkannt wird. Diese Regel überprüft keine Konstruktoren oder Member mit besonderem Namen, wie z. b. Get-und Set-Eigenschaftenaccessoren.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Diese Regel analysiert den Bezeichner in Token und überprüft die Schreibweise der einzelnen Token. Der-Algorithmus für die Verarbeitung führt die folgenden Transformationen aus:
 
 - Großbuchstaben starten ein neues Token. MyNameIsJoe wird z. b. in "My", "Name", "is", "Joe", angezeigt.
@@ -44,14 +44,14 @@ ms.locfileid: "72669241"
 
 - Führende und nachfolgende Apostrophe werden entfernt. Beispielsweise wird "Sender" zu "Absender".
 
-- Unterstriche bezeichnen das Ende eines Tokens und werden entfernt. Beispielsweise Hello_world tokenisiert "Hello", "World".
+- Unterstriche bezeichnen das Ende eines Tokens und werden entfernt. Hello_world z. b. auf "Hello", "World".
 
-- Eingebettete kaufmännische werden entfernt. Beispielsweise wird für &-Matte das Format "Format" angezeigt.
+- Eingebettete kaufmännische werden entfernt. Beispielsweise wird für&-Matte das Format "Format" angezeigt.
 
   Standardmäßig wird die englische Version (en) der Rechtschreibprüfung verwendet. Zurzeit sind keine anderen sprach Wörterbücher verfügbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort einem benutzerdefinierten Wörterbuch mit dem Namen "CustomDictionary. xml" hinzu. Platzieren Sie das Wörterbuch im Installationsverzeichnis des Tools, im Projektverzeichnis oder in dem Verzeichnis, das mit dem Tool unter dem Profil des Benutzers verknüpft ist (%UserProfile%\Application Data \\...). Informationen zum Hinzufügen des benutzerdefinierten Wörterbuchs zu einem Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finden Sie unter Gewusst [wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md) .
+ Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort einem benutzerdefinierten Wörterbuch mit dem Namen CustomDictionary.xml hinzu. Platzieren Sie das Wörterbuch im Installationsverzeichnis des Tools, im Projektverzeichnis oder in dem Verzeichnis, das dem Tool unter dem Profil des Benutzers zugeordnet ist (%USERPROFILE%\Anwendungsdaten \\ ...). Informationen zum Hinzufügen des benutzerdefinierten Wörterbuchs zu einem Projekt in finden Sie unter Gewusst [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md) .
 
 - Fügen Sie Wörter hinzu, die unter dem Wörterbuch/Wörter/erkannten Pfad keine Verletzung verursachen sollten.
 
@@ -90,17 +90,17 @@ ms.locfileid: "72669241"
  Unterdrückt eine Warnung aus dieser Regel nur, wenn das Wort absichtlich falsch geschrieben ist und das Wort für eine begrenzte Menge der Bibliothek gilt. Korrekt geschriebene Wörter reduzieren die Lernkurve, die für neue Software Bibliotheken erforderlich ist.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: Bezeichner sollten keine Unterstriche enthalten](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Bezeichner sollten keine Unterstriche enthalten.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)
+ [CA1726: Bevorzugte Begriffe verwenden.](../code-quality/ca1726-use-preferred-terms.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Gewusst wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

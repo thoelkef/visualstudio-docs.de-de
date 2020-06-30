@@ -15,21 +15,21 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f68ab71d9ce4fab1b0612f15d866c58e302a317e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671504"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543870"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Methodenergebnisse nicht ignorieren
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Methodenergebnisse nicht ignorieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotIgnoreMethodResults|
+|TypName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -39,7 +39,7 @@ ms.locfileid: "72671504"
 
 - Eine Methode, die eine neue Zeichenfolge erstellt und zurückgibt, wird aufgerufen, und die neue Zeichenfolge wird nie verwendet.
 
-- Eine com-oder P/aufrufen-Methode, die ein HRESULT oder einen Fehlercode zurückgibt, der niemals verwendet wird. Regelbeschreibung
+- Eine com-oder P/aufrufen-Methode, die ein HRESULT oder einen Fehlercode zurückgibt, der niemals verwendet wird. Beschreibung der Regel
 
   Unnötige Objekt Erstellung und zugeordnete Garbage Collection der Leistungsfähigkeit des nicht verwendeten Objekts.
 

@@ -1,18 +1,18 @@
 ---
 title: Mehrere DSLs in einer Projektmappe
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5d21d3954a402e7ce8eb26c34d6a6a5c237309a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658344"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542596"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Mehrere DSLs in einer Projektmappe
 
@@ -32,29 +32,29 @@ Sie können verschiedene Techniken für die Integration mehrerer DSLs nutzen. We
 
    - Ändern Sie die Namen der **DSL** -und **dslpackage** -Projekte, sodass Sie sich alle unterscheiden. Beispiel: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   - Aktualisieren Sie diese Zeile in jedem **dslpackage-\* \ Source.Extension.tt**auf den richtigen DSL-Projektnamen:
+   - Aktualisieren Sie diese Zeile in jedem **dslpackage \* \ Source.Extension.tt**auf den richtigen DSL-Projektnamen:
 
       `string dslProjectName = "Dsl2";`
 
-   - Fügen Sie in der VSIX-Projekt Mappe die Projekte "DSL *" und "dslpackage \*" hinzu. Sie sollten jedes Paar in einem eigenen Projektmappenordner platzieren.
+   - Fügen Sie in der VSIX-Projekt Mappe die Projekte "DSL *" und "dslpackage" hinzu \* . Sie sollten jedes Paar in einem eigenen Projektmappenordner platzieren.
 
 2. Kombinieren Sie die VSIX-Manifeste der DSLs:
 
-   1. Öffnen Sie _yourvsixproject_ **\source.Extension.Manifest**.
+   1. Öffnen Sie _yourvsixproject_**\source.Extension.Manifest**.
 
    2. Wählen Sie für jede DSL **Inhalt hinzufügen** und hinzufügen aus:
 
-       - `Dsl*` Projekt als **MEF-Komponente**
+       - `Dsl*`Projekt als **MEF-Komponente**
 
-       - `DslPackage*` Projekt als **MEF-Komponente**
+       - `DslPackage*`Projekt als **MEF-Komponente**
 
-       - `DslPackage*` Projekt als **vs-Paket**
+       - `DslPackage*`Projekt als **vs-Paket**
 
 3. Erstellen Sie die Projektmappe.
 
-   Die resultierende VSIX installiert beide DSLs. Sie können Sie mit F5 testen oder _yourvsixproject_ **\bin\debug \\ \*. vsix**bereitstellen.
+   Die resultierende VSIX installiert beide DSLs. Sie können Sie mit F5 testen oder _yourvsixproject_**\bin\debug \\ \* . vsix**bereitstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Integrieren von Modellen mit Visual Studio-ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Gewusst wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)

@@ -1,9 +1,9 @@
 ---
-title: '&lt;EntryPoints&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;entryPoints- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797584"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543571"
 ---
-# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;EntryPoints&gt; -Element (Office-Entwicklung in Visual Studio)
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `entryPoints` -Element des `vstav3` -Namespace enthält alle `entryPoint` -Elemente, die einer Office-Projektmappe zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
@@ -42,19 +42,19 @@ ms.locfileid: "62797584"
 
  Das `entryPoints` -Element hat das folgende Attribut.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |id|Ist für eine Bereitstellung mit mehreren Projekten erforderlich. Der Name der Office-Projektmappe. Die ID darf kein Gleichheitszeichen (=) enthalten.|
 
  `entryPoints` hat die folgenden Elemente:
 
-### <a name="entrypoint"></a>entrypoint
- Erforderlich. Die Rolle der `entryPoint` Element in der `vstav3` Namespace definiert ist, [ &#60;EntryPoint&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+### <a name="entrypoint"></a>entryPoint
+ Erforderlich. Die Rolle des- `entryPoint` Elements im- `vstav3` Namespace wird in [&#60;EntryPoint-&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)definiert.
 
-## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene
+## <a name="document-level-customization-example"></a>Beispiel für eine Anpassung auf Dokument Ebene
 
-### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht das `entryPoints` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Projektmappe auf Dokumentebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+### <a name="description"></a>BESCHREIBUNG
+ Das folgende Codebeispiel veranschaulicht das `entryPoints` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Projektmappe auf Dokumentebene. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -95,10 +95,10 @@ ms.locfileid: "62797584"
 </vstav3:entryPoints>
 ```
 
-## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in
+## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-in
 
-### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht ein `entryPoints` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+### <a name="description"></a>BESCHREIBUNG
+ Das folgende Codebeispiel veranschaulicht ein `entryPoints` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -115,10 +115,10 @@ ms.locfileid: "62797584"
 </vstav3:entryPoints>
 ```
 
-## <a name="multi-project-deployment-example"></a>Beispiel für die Bereitstellung mit mehreren Projekten
+## <a name="multi-project-deployment-example"></a>Beispiel für eine Bereitstellung mit mehreren Projekten
 
-### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht das `entryPoints` -Element in einem Anwendungsmanifest für eine Bereitstellung mit mehreren Projekten. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+### <a name="description"></a>BESCHREIBUNG
+ Das folgende Codebeispiel veranschaulicht das `entryPoints` -Element in einem Anwendungsmanifest für eine Bereitstellung mit mehreren Projekten. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -171,8 +171,8 @@ ms.locfileid: "62797584"
 </vstav3:entryPoints>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

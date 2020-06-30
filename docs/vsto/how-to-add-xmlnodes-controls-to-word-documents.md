@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten'
+title: 'Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,62 +13,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b54a341cd9dd949f892537ee384afb4984aecc02
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419689"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543493"
 ---
-# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Vorgehensweise: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten
-  **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.
+# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten
+  **Wichtig** Die Informationen, die in diesem Thema in Bezug auf Microsoft Word beschrieben werden, werden exklusiv für den Vorteil und die Verwendung von Einzelpersonen und Organisationen präsentiert, die sich außerhalb der USA und ihrer Gebiete befinden oder Programme verwenden, die unter, Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden Diese Informationen zu Microsoft Word werden möglicherweise nicht von Einzelpersonen oder Organisationen in den USA oder deren Territorien gelesen oder verwendet, die von Microsoft Word-Produkten verwendet werden, die nach dem 10. Januar 2010 von Microsoft lizenziert wurden. Diese Produkte Verhalten sich nicht identisch mit Produkten, die vor diesem Datum lizenziert sind, oder für die Verwendung außerhalb der USA lizenziert und lizenziert wurden.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Wenn Sie Microsoft Office Word-Dokument ein sich wiederholendes XML-Schemaelement zuordnen, fügt Visual Studio automatisch eine <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement zum Dokument.
+ Wenn Sie einem Microsoft Office Word-Dokument ein wiederholtes XML-Schema Element zuordnen, fügt Visual Studio dem Dokument automatisch ein-Steuerelement hinzu <xref:Microsoft.Office.Tools.Word.XMLNodes> .
 
- Informationen zum Zuordnen von XML-Schemaelemente nicht wiederholendes finden Sie unter [Vorgehensweise: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).
+ Weitere Informationen zum Mapping von nicht wiederholenden XML-Schema Elementen finden Sie unter Gewusst [wie: Hinzufügen von XmlNode](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)-Steuerelementen zu Word-Dokumenten.
 
 > [!NOTE]
-> Die <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement ist nicht verfügbar ist, aus der **Toolbox** oder **Datenquellen** Fenster, und Sie kann auch programmgesteuert erstellt werden.
+> Das <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement ist nicht in der **Toolbox** oder im **Datenquellen** Fenster verfügbar und kann nicht Programm gesteuert erstellt werden.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-### <a name="to-add-an-xmlnodes-control-to-a-document"></a>Hinzufügen von XMLNodes-Steuerelement zu einem Dokument
+### <a name="to-add-an-xmlnodes-control-to-a-document"></a>So fügen Sie einem Dokument ein XMLNodes-Steuerelement hinzu
 
-1. Klicken Sie in das Dokument in Visual Studio-Designer, auf dem Menüband auf die **Developer** Registerkarte.
+1. Klicken Sie im Dokument im Visual Studio-Designer auf dem Menüband auf die Registerkarte **Entwickler** .
 
     > [!NOTE]
-    > Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter Gewusst [wie: Anzeigen der Registerkarte "Entwickler" im Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-2. In der **XML** auf **Schema**.
+2. Klicken Sie in der Gruppe **XML** auf **Schema**.
 
-     Die **Vorlagen und Add-Ins** Dialogfeld wird geöffnet.
+     Das Dialogfeld **Vorlagen und Add-ins** wird geöffnet.
 
-3. Klicken Sie auf die **XML-Schema** Registerkarte.
+3. Klicken Sie auf die Registerkarte **XML-Schema** .
 
 4. Klicken Sie auf **Schema hinzufügen**.
 
-     Die **Schema hinzufügen** Dialogfeld wird geöffnet.
+     Das Dialogfeld **Schema hinzufügen** wird geöffnet.
 
-5. Wählen Sie ein XML-Schema, das sich wiederholende Elemente des Schemas und klicken Sie auf **öffnen**.
+5. Wählen Sie ein XML-Schema mit wiederholten Schema Elementen aus, und klicken Sie auf **Öffnen**.
 
-     Die **Schema Einstellungen** Dialogfeld wird angezeigt.
+     Das Dialogfeld **Schema Einstellungen** wird angezeigt.
 
-6. Weisen Sie einen Alias, oder klicken Sie auf **OK** das Schema ohne Alias hinzufügen.
+6. Weisen Sie einen Alias zu, oder klicken Sie auf **OK** , um das Schema ohne Alias hinzuzufügen.
 
-     Das Schema wird hinzugefügt, um die **Schema hinzufügen** Dialogfeld.
+     Das Schema wird dem Dialogfeld **Schema hinzufügen** hinzugefügt.
 
-7. In der **Schema hinzufügen** Dialogfeld klicken Sie auf **OK**.
+7. Klicken Sie im Dialogfeld **Schema hinzufügen** auf **OK**.
 
-     Die **XML-Struktur** Aufgabe wird geöffnet.
+     Der Aufgabenbereich **XML-Struktur** wird geöffnet.
 
-8. Klicken Sie auf der sich wiederholendes Schemaelement auf die **XML-Struktur** Aufgabenbereich, um es dem Dokument hinzuzufügen.
+8. Klicken Sie im Aufgabenbereich der **XML-Struktur** auf das Element für sich wiederholendes Schema, um es dem Dokument hinzuzufügen.
 
-     Ein <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement erstellt und dem Projekt hinzugefügt.
+     Ein <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement wird erstellt und dem Projekt hinzugefügt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
-- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
+- [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
