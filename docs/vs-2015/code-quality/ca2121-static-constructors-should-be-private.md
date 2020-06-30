@@ -15,30 +15,30 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f95b33e1391ca755a6c0df261fa2bd05bd3c7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663076"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544312"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Statische Konstruktoren sollten privat sein
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Statische Konstruktoren sollten privat sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|StaticConstructorsShouldBePrivate|
+|TypName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Ein Typ verfügt über einen statischen Konstruktor, der nicht privat ist.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Ein statischer Konstruktor, der auch als Klassenkonstruktor bezeichnet wird, wird verwendet, um einen Typ zu initialisieren. Das System ruft den statischen Konstruktor auf, bevor die erste Instanz des Typs erzeugt wird bzw. bevor auf irgendwelche statischen Member verwiesen wird. Der Benutzer hat keine Kontrolle darüber, wann der statische Konstruktor aufgerufen wird. Wenn ein statischer Konstruktor nicht privat ist, kann er von Code aufgerufen werden, der nicht Systemcode ist. Je nach den Operationen innerhalb des Konstruktors kann dies zu unerwartetem Verhalten führen.
 
- Diese Regel wird von den C# -und-Visual Basic .NET-Compilern erzwungen.
+ Diese Regel wird von den c#-und Visual Basic .NET-Compilern erzwungen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Verstöße werden in der Regel durch eine der folgenden Aktionen verursacht:

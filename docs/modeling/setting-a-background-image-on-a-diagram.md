@@ -1,23 +1,23 @@
 ---
 title: Festlegen eines Hintergrundbilds für ein Diagramm
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542583"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
 Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
 
-## <a name="setting-the-background-image"></a>Festlegen des Hintergrundbildes
+## <a name="setting-the-background-image"></a>Hintergrundbild festlegen
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>So legen Sie ein Hintergrundbild für einen generierten Designer fest
 
@@ -53,7 +53,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergru
 
 16. Klicken Sie im Dialogfeld **Neues Element hinzufügen** in der Liste **Vorlagen** auf **Codedatei**.
 
-17. Geben Sie im Feld **Name** `BackgroundImage.cs`ein, und klicken Sie auf **Hinzufügen**.
+17. Geben Sie im Feld **Name den Namen** ein `BackgroundImage.cs` , und klicken Sie auf **Hinzufügen**.
 
 18. Kopieren Sie den folgenden Code in die Datei "BackgroundImage.cs", und passen Sie den Namespace, den Diagrammklassennamen und den Bilddatei-Ressourcennamen an.
 
@@ -100,7 +100,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergru
 
      Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
 - [Anpassen von Text- und Image-Feldern](../modeling/customizing-text-and-image-fields.md)

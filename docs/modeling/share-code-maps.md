@@ -1,18 +1,18 @@
 ---
 title: Exportieren und Speichern von Code Maps
 ms.date: 05/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57989de2cca3582b3193a7b55b81d1d444dcf1c1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591930"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542570"
 ---
 # <a name="share-code-maps"></a>Freigeben von Code Maps
 
@@ -22,9 +22,9 @@ Code Maps können als Teil eines Visual Studio-Projekts, als Bild oder als XPS-D
 
 Verwenden Sie das Menü **Datei** , um die Code Map zu speichern.
 
-\- oder -
+- oder -
 
-Um die Zuordnung als Teil eines bestimmten Projekts zu speichern, wählen Sie auf der Symbolleiste der Karte **Freigeben** aus, >  **\<codemapname >. dgml in verschieben**, und wählen Sie dann das Projekt aus, in dem Sie die Karte speichern möchten.
+Um die Zuordnung als Teil eines bestimmten Projekts zu speichern, wählen Sie auf der Karten **Share**Symbolleiste die Option  >  **Move \<CodeMapName> . dgml in**freigeben aus, und wählen Sie dann das Projekt aus, in dem Sie die Zuordnung speichern möchten.
 
 ![Verschieben einer Zuordnung in ein anderes Projekt](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +43,7 @@ Visual Studio speichert die Karte als *dgml* -Datei, die Sie für andere Benutze
 
 Wenn Sie eine Code Map als Image exportieren, können Sie Sie in andere Anwendungen kopieren, z. b. Microsoft Word oder PowerPoint.
 
-1. Wählen Sie auf der Code Map Symbolleiste > **e-Mail als Bild** **Freigeben** oder **Bild kopieren**aus.
+1. Wählen Sie auf der Code Map Symbol **Share**Leiste die Option  >  **e-Mail als Bild** freigeben oder **Bild kopieren**aus.
 
 2. Fügen Sie das Bild in eine andere Anwendung ein.
 
@@ -51,12 +51,12 @@ Wenn Sie eine Code Map als Image exportieren, können Sie Sie in andere Anwendun
 
 Wenn Sie eine Code Map als XPS-Datei exportieren, können Sie Sie in XML-oder XAML-Viewern wie Internet Explorer sehen.
 
-1. Wählen Sie auf der Code Map Symbolleiste > **e-Mail als Portables XPS** **Freigeben** oder **als Portables XPS speichern**aus.
+1. Wählen Sie auf der Code Map Symbol **Share**Leiste  >  **e-Mail als Portables XPS** freigeben oder **als Portables XPS speichern**aus.
 
 2. Durchsuchen Sie nach dem Ort, an dem die Datei gespeichert werden soll.
 
-3. Benennen Sie die Code Map. Stellen Sie sicher, dass das Feld **Dateityp** auf **XPS-Dateien (\*. Xps)** festgelegt ist. Wählen Sie **Speichern**.
+3. Benennen Sie die Code Map. Stellen Sie sicher, dass das Feld **Dateityp** auf **XPS-Dateien ( \* . Xps)** festgelegt ist. Wählen Sie **Speichern** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zuordnen von Abhängigkeiten zu Code Maps](../modeling/map-dependencies-across-your-solutions.md)

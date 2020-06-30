@@ -15,27 +15,27 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b471387db3ce52944ffad3841dc7e946c4d44873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 61b0157200ddff4cb8335118b30832a0c8950f65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661879"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542284"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standardausnahmekonstruktoren implementieren
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standardausnahmekonstruktoren implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ImplementStandardExceptionConstructors|
+|TypName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
  Ein Typ erweitert <xref:System.Exception?displayProperty=fullName> und deklariert nicht alle erforderlichen Konstruktoren.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Ausnahme Typen müssen die folgenden Konstruktoren implementieren:
 
 - Public "netwexception ()"

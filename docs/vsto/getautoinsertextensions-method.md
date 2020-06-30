@@ -1,7 +1,7 @@
 ---
-title: GetAutoInsertExtensions-Methode
+title: Getautoinsertextensions-Methode
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb767ec7301a1d4e0f29003971b017339228fc9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5d88af6f24306b7b243359c9797a2cb7e7449bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972277"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543506"
 ---
-# <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions-Methode
-  Ruft Informationen zu den apps für Office, die während des Debuggens automatisch eingefügt werden sollen.
+# <a name="getautoinsertextensions-method"></a>Getautoinsertextensions-Methode
+  Ruft Informationen zu den Apps für Office ab, die während des Debuggens automatisch eingefügt werden sollen.
 
  Diese Methode ist für eine spätere Verwendung vorgesehen.
 
@@ -32,12 +32,12 @@ HRESULT GetAutoInsertExtensions(
 
 ### <a name="parameters"></a>Parameter
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
-|*psaExtensionNames*|Die Erweiterungsnamen der apps für Office.|
+|*psaextensionnames*|Die Erweiterungs Namen der Apps für Office.|
 
 ## <a name="return-value"></a>Rückgabewert
  Ein HRESULT-Wert, der angibt, ob die Methode erfolgreich abgeschlossen wurde.
 
 ## <a name="remarks"></a>Hinweise
- Jede app für Office, eingefügt werden soll, wird als Office-Erweiterung Anwendungsname, der einen Wert unter entspricht zurückgegeben **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Der Host muss diese Werte in der Registrierung nachschlagen, und fügen Sie dann die Erweiterungen automatisch.
+ Jede APP für Office, die eingefügt werden soll, wird als Name der Office-Anwendungs Erweiterung zurückgegeben, was einem Wert unter **HKEY_CURRENT_USER \software\microsoft\office\wef\developer**entspricht. Der Host muss diese Werte in der Registrierung suchen und die Erweiterungen dann automatisch einfügen.

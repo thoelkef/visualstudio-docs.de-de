@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Installieren von primären Interopassemblys für Office'
+title: 'Gewusst wie: Installieren von primären Interop-Assemblys in Office'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee6755a2d795d2018136785986a5a346ddc07dc6
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551797"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544780"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>Vorgehensweise: Installieren von primären Interopassemblys für Office
+# <a name="how-to-install-office-primary-interop-assemblies"></a>Gewusst wie: Installieren von primären Interop-Assemblys in Office
   Installieren Sie die primären Interop-Assemblys (PIAs) für Microsoft Office bei der Installation von Office.
 
 [!include[Add-ins note](includes/addinsnote.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "69551797"
     > [!WARNING]
     > In der Standardeinstellung werden die PIA in Ihre Lösung eingebettet, wenn Sie Sie erstellen, damit Sie PIAs nicht als Voraussetzung für die Verwendung des VSTO-Add-Ins oder der Anpassung an Benutzer verteilen müssen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)
-- [Vorgehensweise: Abzielen von Office-Anwendungen über primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Vorgehensweise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
-- [Übersicht über &#40;die Entwicklung von Office-Lösungen VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

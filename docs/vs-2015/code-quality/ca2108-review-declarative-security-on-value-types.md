@@ -15,27 +15,27 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a05b7098d75d368f893b2504f7663675611bc0ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03918353b66c36698b5d17b332da052b6d95c87a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658725"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544390"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Deklarative Sicherheit auf Werttypen überprüfen
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Deklarative Sicherheit auf Werttypen überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ReviewDeclarativeSecurityOnValueTypes|
+|TypName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
  Ein öffentlicher oder geschützter Werttyp wird durch [Daten-, Modellierungs-](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) oder Verknüpfungs Aufrufe [gesichert.](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Werttypen werden von ihren Standardkonstruktoren zugeordnet und initialisiert, bevor andere Konstruktoren ausgeführt werden. Wenn ein Werttyp durch einen Demand-oder LinkDemand-Wert geschützt wird und der Aufrufer nicht über die Berechtigungen verfügt, die die Sicherheitsüberprüfung erfüllen, schlägt jeder andere Konstruktor als der Standardwert fehl, und es wird eine Sicherheits Ausnahme ausgelöst. Die Zuordnung des Werttyps wird nicht aufgehoben. Sie bleibt im Zustand, der durch den Standardkonstruktor festgelegt wird. Nehmen Sie nicht an, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, über die Berechtigung zum Erstellen oder zugreifen auf die Instanz verfügt
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -45,7 +45,7 @@ ms.locfileid: "72658725"
  Sie können eine Warnung aus dieser Regel unterdrücken, wenn ein Aufrufer Instanzen des Werttyps im Standardzustand abrufen kann, ohne eine Bedrohung für die Sicherheit darstellen zu müssen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Bibliothek mit einem Werttyp, der gegen diese Regel verstößt. Beachten Sie, dass der `StructureManager` Typ annimmt, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, über die Berechtigung zum Erstellen oder zugreifen auf die Instanz
+ Das folgende Beispiel zeigt eine Bibliothek mit einem Werttyp, der gegen diese Regel verstößt. Beachten Sie, dass der- `StructureManager` Typ annimmt, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, über die Berechtigung verfügt, die Instanz zu erstellen
 
  [!code-csharp[FxCop.Security.DemandOnValueType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.DemandOnValueType/cs/FxCop.Security.DemandOnValueType.cs#1)]
 
@@ -56,8 +56,8 @@ ms.locfileid: "72658725"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Benutzerdefinierter Konstruktor der Struktur:** Fehler bei der Anforderung. 
-**neue Werte SecuredTypeStructure 100 100** 
-**neuen Werten SecuredTypeStructure 200 200**
-## <a name="see-also"></a>Siehe auch
+ **Benutzerdefinierter Konstruktor der Struktur: Fehler bei der Anforderung.** 
+ **Neue Werte SecuredTypeStructure 100 100** 
+ **Neue Werte SecuredTypeStructure 200 200**
+## <a name="see-also"></a>Weitere Informationen
  [Verknüpfen](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) von Anforderungs [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

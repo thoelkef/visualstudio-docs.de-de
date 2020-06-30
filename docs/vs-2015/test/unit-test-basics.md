@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dff9b4bece79c692aa896af6e5d3f7d2048cde52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672061"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543779"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "72672061"
 
 - [Beispiel "MyBank-Projektmappe"](#BKMK_The_MyBank_Solution_example)
 
-- [Erstellen von Komponententestprojekten und Testmethoden](#BKMK_Creating_the_unit_test_projects)
+- [Erstellen von Komponenten Testprojekten und Testmethoden](#BKMK_Creating_the_unit_test_projects)
 
 - [Erstellen der Tests](#BKMK_Writing_your_tests)
 
@@ -40,21 +40,21 @@ ms.locfileid: "72672061"
 
 - [Ausführen und Anzeigen von Tests](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="BKMK_Unit_testing_overview"></a> Übersicht über Komponententests
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>Übersicht über Komponententests
 
-### <a name="BKMK_Quick_starts"></a> Schnellstarts
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>Schnellstarts
  Eine Einführung in Komponententests, in der Sie direkt in die Codierung eingeführt werden, finden Sie in diesen Themen:
 
 - [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Schnellstart: Test gestützte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Komponententests für systemeigenen Code mit Test-Explorer](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="BKMK_The_MyBank_Solution_example"></a> Beispiel "MyBank-Projektmappe"
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>Beispiel für die mybank-Lösung
  In diesem Thema dient die Entwicklung einer fiktiven Anwendung mit dem Namen `MyBank` als Beispiel. Sie benötigen den tatsächlichen Code nicht, um den Erläuterungen in diesem Thema folgen zu können. Die Testmethoden werden in C# geschrieben und mithilfe des Microsoft-Komponententest-Frameworks für verwalteten Code dargestellt. Die Konzepte können jedoch problemlos auf andere Sprachen und Frameworks übertragen werden.
 
- ![Mybank-Lösung](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
+ ![Projektmappe MyBank](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
 
  Der erste Entwurf für die Anwendung `MyBank` umfasst eine Kontenkomponente, die ein Einzelkonto und die zugehörigen Transaktionen mit der Bank darstellt, sowie eine Datenbankkomponente, die die Funktionen zum Aggregieren und Verwalten der Einzelkonten darstellt.
 
@@ -92,22 +92,22 @@ public void Withdraw(double amount)
 
  Der nun vorliegende Code kann getestet werden.
 
-## <a name="BKMK_Creating_the_unit_test_projects"></a> Erstellen von Komponententestprojekten und Testmethoden
+## <a name="create-unit-test-projects-and-test-methods"></a><a name="BKMK_Creating_the_unit_test_projects"></a> Erstellen von Komponententestprojekten und Testmethoden
  Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stubs aus Ihrem Code zu generieren. Sie können das Komponententestprojekt und die Tests je nach Ihren Anforderungen auch manuell erstellen.
 
  **Generieren des Komponententestprojekts und der Komponententest-Stubs**
 
 1. Klicken Sie im Code-Editorfenster mit der rechten Maustaste, und wählen Sie im Kontextmenü die Option **Komponententests erstellen** .
 
-    ![Zeigen Sie im Editor Fenster das Kontextmenü an.](../test/media/createunittestsrightclick.png ""Kreateunittestsrightclick"")
+    ![Im Editorfenster das Kontextmenü anzeigen](../test/media/createunittestsrightclick.png ""Kreateunittestsrightclick"")
 
 2. Klicken Sie auf „OK“, um die Komponententests mit den Standardeinstellungen erstellen. Sie können die Werte zum Erstellen und Bennenen des Komponententestprojekts und der Komponententests jedoch auch ändern. Sie können den Code auswählen, der den Komponententestmethoden standardmäßig hinzugefügt wird.
 
-    ![Klicken&#45;Sie mit der rechten Maustaste in Editor, und wählen Sie Komponenten Tests](../test/media/createunittestsdialog.png ""Kreateunittestsdialog"")
+    ![Klicken Sie mit der rechten&#45;in Editor, und wählen Sie Komponenten Tests erstellen](../test/media/createunittestsdialog.png ""Kreateunittestsdialog"")
 
 3. Die Komponententest-Stubs werden in einem neuen Komponententestprojekt für alle Methoden in der Klasse erstellt.
 
-    ![Die Komponententests werden erstellt.](../test/media/createunittestsstubs.png ""Kreateunittestsstusb"")
+    ![Die Komponententests sind erstellt](../test/media/createunittestsstubs.png ""Kreateunittestsstusb"")
 
 4. Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#BKMK_Writing_your_tests), um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzufügen möchten.
 
@@ -119,7 +119,7 @@ public void Withdraw(double amount)
 
 5. Wählen Sie im Menü **Datei** die Option **Neu** und dann **Projekt** aus (Tastatur: STRG+UMSCHALT+N).
 
-6. Erweitern Sie im Dialogfeld "Neues Projekt" den Knoten **Installiert** , wählen die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie dann **Test**aus.
+6. Erweitern Sie im Dialogfeld Neues Projekt den Knoten **Installiert**, wählen Sie die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie dann **Test** aus.
 
 7. Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Nennen Sie das Projekt zum Testen des Projekts `Accounts` in diesem Beispiel `AccountsTests`.
 
@@ -132,7 +132,7 @@ public void Withdraw(double amount)
 
    1. Wählen Sie das Projekt im Projektmappen-Explorer aus.
 
-   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
+   2. Wählen Sie im Menü **Projekt** den Befehl **Verweis hinzufügen**aus.
 
    3. Öffnen Sie im Dialogfeld "Verweis-Manager" den Knoten **Projektmappe** , und wählen Sie **Projekte**aus. Wählen Sie den Namen des Codeprojekts aus, und schließen Sie das Dialogfeld.
 
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - Die`CheckingAccountTests` -Klasse enthält die Komponententestmethoden für die `CheckingAccount` -Klasse.
 
-## <a name="BKMK_Writing_your_tests"></a> Erstellen der Tests
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>Schreiben der Tests
  Das verwendete Komponententestframework und Visual Studio IntelliSense führen Sie durch das Erstellen von Komponententests für ein Codeprojekt. Für die meisten Frameworks müssen Sie zum Ausführen im Test-Explorer bestimmte Attribute hinzufügen, um die Komponententestmethoden anzugeben. Die Frameworks bieten zudem eine Möglichkeit, anzuzeigen, ob die Testmethode erfolgreich war oder fehlgeschlagen ist. Dazu dienen in der Regel Assert-Anweisungen oder Methodenattribute. Mit anderen Attributen werden optionale Setup-Methoden angegeben, die bei der Initialisierung der Klasse und vor jeder Testmethode und vor Teardown-Methoden ausgeführt werden, die wiederum nach jeder Testmethode und bevor die Klasse zerstört wird ausgeführt werden.
 
  Das Muster "AAA" (Arrange, Act, Assert) stellt ein häufig verwendetes Verfahren zum Schreiben von Komponententests für eine zu testende Methode dar.
@@ -190,7 +190,7 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 - [Schreiben von Komponententests für .NET Framework mit dem Microsoft-Komponententestframework für verwalteten Code](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 
-- [Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+- [Schreiben von Komponententests für C/C++ mit dem Microsoft-Komponenten Test-Framework für C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Festlegen von Timeouts für Komponententests
  Ein Timeout für eine einzelne Testmethode festlegen:
@@ -217,43 +217,43 @@ public void My_Test ()
 }
 ```
 
-## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Ausführen von Tests im Test-Explorer
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
- ![Komponenten Test-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Komponententest-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
  Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse in der Standardansicht des Test-Explorers in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests**angezeigt. Sie können eine Gruppenüberschrift auswählen, um die Ansicht zu öffnen, in der alle Tests dieser Gruppe angezeigt werden.
 
  Sie können die Tests in jeder Ansicht durch entsprechenden Text im Suchfeld auf globaler Ebene filtern oder indem Sie einen der vordefinierten Filter auswählen. Sie können jederzeit eine beliebige Auswahl der Tests ausführen. Die Ergebnisse eines Testlaufs sind sofort oben im Explorer-Fenster in der Erfolgreich/Fehler-Leiste sichtbar. Details zu den Ergebnissen einer Testmethode werden angezeigt, wenn Sie den Test auswählen.
 
-### <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Ausführen und Anzeigen von Tests
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Ausführen und Anzeigen von Tests
  Mithilfe der Test-Explorer-Symbolleiste können Sie die Tests ermitteln, organisieren und ausführen, die Sie interessieren.
 
- ![Ausführen von Tests über die Test-Explorer-Symbolleiste](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen. Nachdem Sie einen Satz von Tests ausgeführt haben, wird eine Zusammenfassung des Testlaufs unten im Test-Explorer-Fenster angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen. Wählen Sie im Kontextmenü **Test Öffnen** (Tastatur: F12) aus, um den Quellcode für den ausgewählten Test anzuzeigen.
+ Sie können **alle ausführen** auswählen, um alle Tests auszuführen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der auszuführenden Tests auszuwählen. Nachdem Sie einen Satz von Tests ausgeführt haben, wird eine Zusammenfassung des Testlaufs unten im Test-Explorer-Fenster angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen. Wählen Sie im Kontextmenü **Test Öffnen** (Tastatur: F12) aus, um den Quellcode für den ausgewählten Test anzuzeigen.
 
  Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-Small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
-### <a name="BKMK_Running_tests_after_every_build"></a> Ausführen von Tests nach jedem Build
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a>Ausführen von Tests nach jedem Build
 
 > [!WARNING]
 > Das Ausführen von Komponententests nach jedem Buildvorgang wird nur in Visual Studio Enterprise unterstützt.
 
-|||
+|Image|BESCHREIBUNG|
 |-|-|
 |![Nach Build ausführen](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Wählen Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü **Test** aus, und wählen Sie auf der Test-Explorer-Symbolleiste **Nach dem Buildvorgang Tests ausführen** aus.|
 
-### <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtern und Gruppieren der Testliste
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtern und Gruppieren der Testliste
  Wenn Sie über viele Tests verfügen, können Sie im Test-Explorer-Suchfeld eine Eingabe vornehmen, um die Liste entsprechend der angegebenen Zeichenfolge zu filtern. Sie können den Filter weiter einschränken, indem Sie eine Option in der Filterliste auswählen.
 
- ![Filter Kategorien suchen](../test/media/ute-searchfilter.png "UTE_SearchFilter")
+ ![Suchfilterkategorien](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-|||
+|Image|BESCHREIBUNG|
 |-|-|
-|![Schaltfläche "Test-Explorer"](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Wählen Sie die Schaltfläche **Gruppieren nach** aus, um die Tests nach Kategorie zu gruppieren.|
+|![Gruppenschaltfläche "Test-Explorer"](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Wählen Sie die Schaltfläche **Gruppieren nach** aus, um die Tests nach Kategorie zu gruppieren.|
 
- Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausführen von Komponententests mit dem Test-Explorer)](../test/run-unit-tests-with-test-explorer.md).
+ Weitere Informationen finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md) .
 
 ## <a name="qa"></a>Fragen und Antworten
  **F: Wie kann ich Komponententests debuggen?**
@@ -277,12 +277,12 @@ public void My_Test ()
 
    **F: Kann ich Komponententests erstellen, die mehrere Datensätze als Eingabe zum Ausführen des Tests verwenden?**
 
-   **A:** Ja. Mit*datengesteuerten Testmethoden* können Sie einen Wertebereich in einer einzigen Komponententestmethode testen. Verwenden Sie ein `DataSource` -Attribut für die Testmethode, die die Datenquelle und die Tabelle mit den Variablenwerten enthält, die Sie testen möchten.  Weisen Sie im Methodentext die Zeilenwerte den Variablen mithilfe des Indexers `TestContext.DataRow[`*ColumnName*`]` zu.
+   **A:** Ja. Mit*datengesteuerten Testmethoden* können Sie einen Wertebereich in einer einzigen Komponententestmethode testen. Verwenden Sie ein `DataSource` -Attribut für die Testmethode, die die Datenquelle und die Tabelle mit den Variablenwerten enthält, die Sie testen möchten.  Im Methoden Text weisen Sie die Zeilen Werte Variablen mithilfe des `TestContext.DataRow[` Indexers *ColumnName* zu `]` .
 
 > [!NOTE]
 > Diese Verfahren gelten nur für Testmethoden, die Sie mithilfe des Microsoft-Komponententest-Frameworks für verwalteten Code schreiben. Wenn Sie ein anderes Framework verwenden, finden Sie Informationen zu entsprechenden Funktionen in der Frameworkdokumentation.
 
- Nehmen Sie beispielsweise an, Sie fügen der `CheckingAccount` -Klasse eine unnötige Methode mit dem Namen `AddIntegerHelper`hinzu. In`AddIntegerHelper` werden zwei ganze Zahlen addiert.
+ Nehmen Sie beispielsweise an, Sie fügen der `CheckingAccount`-Klasse eine unnötige Methode mit dem Namen `AddIntegerHelper` hinzu. In`AddIntegerHelper` werden zwei ganze Zahlen addiert.
 
  Zum Erstellen eines datengesteuerten Tests für die `AddIntegerHelper` -Methode erstellen Sie zuerst eine Access-Datenbank mit dem Namen `AccountsTest.accdb` und eine Tabelle mit dem Namen `AddIntegerHelperData`. In der Tabelle `AddIntegerHelperData` werden Spalten definiert, um den ersten und den zweiten Operanden der Addition anzugeben, und es wird eine Spalte definiert, um das erwartete Ergebnis anzugeben. Eine Reihe von Zeilen wird mit entsprechenden Werten gefüllt.
 
@@ -319,9 +319,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  Die Abdeckungsergebnisse werden im Fenster "Codeabdeckungsergebnisse" angezeigt.
 
- ![Code Coverage-Ergebnisse](../test/media/ute-codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Codeabdeckungsergebnisse](../test/media/ute-codecoverageresults.png "UTE_CodeCoverageResults")
 
- Erfahren Sie mehr über [Codeabdeckung](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
+ Erfahren Sie mehr über [Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
  **F: Wie kann ich in meinem Code Methoden testen, die über externe Abhängigkeiten verfügen?**
 
@@ -341,6 +341,6 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
    **A:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md). Öffnen Sie die Projektmappe nach dem Neustart von Visual Studio erneut, um die Komponententests zu erstellen, und wählen Sie dann hier Ihre installierten Frameworks aus:
 
-   ![Anderes installiertes Komponenten Test-Framework auswählen](../test/media/createunittestsdialogextensions.png ""Kreateunittestsdialogextensions"")
+   ![Andere installierte Komponententestframeworks auswählen](../test/media/createunittestsdialogextensions.png ""Kreateunittestsdialogextensions"")
 
    Ihre Komponententest-Stubs werden mit dem ausgewählten Framework erstellt.

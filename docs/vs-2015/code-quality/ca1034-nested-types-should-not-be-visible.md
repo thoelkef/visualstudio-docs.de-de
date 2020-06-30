@@ -15,27 +15,27 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 33e7ea6aaefcaf5b6cbf0bf8c52ade0b9e68a549
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04a982c993ffbb04a3e7600dfb93a00e80727b84
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661852"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542167"
 ---
-# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Geschachtelte Typen sollten nicht sichtbar sein
+# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Geschachtelte Typen sollten nicht sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|NestedTypesShouldNotBeVisible|
+|TypName|NestedTypesShouldNotBeVisible|
 |CheckId|CA1034|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Ein extern sichtbarer Typ enthält eine extern sichtbare Typdeklaration. Von dieser Regel ausgenommen sind die von dieser Regel ausgefallenen Enumerationen und geschützten Typen.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Ein geschachtelter Typ ist ein Typ, der innerhalb des Gültigkeits Bereichs eines anderen Typs deklariert wird. Bei der Einkapselung von privaten Implementierungsdetails des enthaltenden Typs sind die Typen von Typen nützlich. Bei dieser Verwendungsart sollten geschachtelte Typen nicht extern sichtbar sein.
 
  Verwenden Sie keine extern sichtbaren gruppierten Typen für die logische Gruppierung oder, um Namenskonflikte zu vermeiden. Verwenden Sie stattdessen Namespaces.

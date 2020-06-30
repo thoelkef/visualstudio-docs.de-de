@@ -13,22 +13,22 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbe6da087d10d3373a1f5d7836d4fa5207801bc7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 945e934ce16c9e08209f89d8d2d2dcdfe166a4c6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586749"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542817"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Übermäßige GC-CPU-Zeit.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|Element|Wert|  
 |-|-|  
 |Regel-ID|DA0024|  
-|Kategorie|.NET Framework-Verwendung|  
-|Profilerstellungsmethode|Alle|  
-|Nachricht|Die GC-Zeitdauer in Prozent ist sehr hoch. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.|  
+|Category|.NET Framework-Verwendung|  
+|Profilerstellungsmethode|All|  
+|`Message`|Die GC-Zeitdauer in Prozent ist sehr hoch. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.|  
 |Regeltyp|Warnung|  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -36,7 +36,7 @@ ms.locfileid: "82586749"
 ## <a name="cause"></a>Ursache  
  Die bei der Profilerstellung erfassten Systemleistungsdaten deuten darauf hin, dass für die Garbage Collection im Vergleich zur gesamten Anwendungsverarbeitung übermäßig viel Zeit aufgewendet wird.  
   
-## <a name="rule-description"></a>Regelbeschreibung  
+## <a name="rule-description"></a>Beschreibung der Regel  
  Die Microsoft .NET-CLR (Common Language Runtime) verfügt über einen automatischen Speicherverwaltungsmechanismus, durch den der Speicher von Objekten, die von der Anwendung nicht mehr verwendet werden, mithilfe eines Garbage Collectors freigegeben wird. Der Garbage Collector ist generationsorientiert, da angenommen wird, dass viele Speicherbelegungen kurzlebig sind. Lokale Variablen müssen beispielsweise kurzlebig sein. Neu erstellte Objekte beginnen in Generation 0 (gen 0) und werden zu Generation 1, wenn sie nach einer Ausführung der Garbage Collection noch vorhanden sind, und schließlich zu Generation 2, wenn sie von der Anwendung auch weiterhin verwendet werden.  
   
  Objekte in der Generation 0 werden häufig und i. d. R. äußerst effizient gesammelt. Objekte in der Generation 1 werden nicht so häufig und weniger effizient gesammelt. Und langlebige Objekte in der Generation 2 werden schließlich noch seltener gesammelt. Die Collection der Generation 2, bei der es sich um eine vollständige Ausführung der Garbage Collection handelt, ist zudem der aufwändigste Vorgang.  

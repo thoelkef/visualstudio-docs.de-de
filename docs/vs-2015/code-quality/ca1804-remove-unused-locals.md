@@ -15,31 +15,31 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 824a65e765f21748b97292beea64ea6c9bd64a1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4bd57d76acd0c46e39bb2c01449146715abc0666
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671554"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543883"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: Nicht verwendete lokale Variablen entfernen
+# <a name="ca1804-remove-unused-locals"></a>CA1804: Nicht verwendete lokale Variablen entfernen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|RemoveUnusedLocals|
+|TypName|RemoveUnusedLocals|
 |CheckId|CA1804|
-|Kategorie|Microsoft. Performance|
+|Category|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
  Eine Methode deklariert eine lokale Variable, verwendet jedoch nicht die Variable, außer möglicherweise als Empfänger einer Zuweisungsanweisung. Zur Analyse durch diese Regel muss die getestete Assembly mit Debuginformationen erstellt werden, und die zugehörige Programm Datenbankdatei (. pdb) muss verfügbar sein.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Nicht verwendete lokale Variablen und unnötige Zuweisungen vergrößern die Assembly unnötig und beeinträchtigen die Leistung.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie die lokale Variable, oder verwenden Sie Sie. Beachten Sie, C# dass der Compiler, der in [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] enthalten ist, nicht verwendete lokale Variablen entfernt, wenn die `optimize`-Option aktiviert ist.
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie die lokale Variable, oder verwenden Sie Sie. Beachten Sie, dass der c#-Compiler, der in enthalten ist, nicht [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] verwendete lokale Variablen entfernt, wenn die `optimize` Option aktiviert ist.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrückt eine Warnung aus dieser Regel, wenn die Variable vom Compiler ausgegeben wurde. Es ist auch sicher, eine Warnung aus dieser Regel zu unterdrücken oder die Regel zu deaktivieren, wenn die Leistung und die Codewartung keine Haupt Bedenken darstellen.
@@ -51,10 +51,10 @@ ms.locfileid: "72671554"
  [!code-vb[FxCop.Performance.UnusedLocals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/vb/FxCop.Performance.UnusedLocals.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1809: Übermäßige lokale Variablen vermeiden](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809: Übermäßige lokale Variablen vermeiden.](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Nicht aufgerufenen privaten Code vermeiden.](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Nicht instanziierte interne Klassen vermeiden.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Nicht verwendete Parameter überprüfen.](../code-quality/ca1801-review-unused-parameters.md)

@@ -15,27 +15,27 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bec8f129c094f94ba3eb4021092c402e8263812b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a722eb95561a1a81b0d17b8876df8b4bac048b5c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660256"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544260"
 ---
-# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein
+# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
+|TypName|OverrideLinkDemandsShouldBeIdenticalToBase|
 |CheckId|CA2123|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Eine öffentliche oder geschützte Methode in einem öffentlichen Typ überschreibt eine Methode oder implementiert eine Schnittstelle und hat [nicht dieselben](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) Verknüpfungs Aufrufe wie die Schnittstelle oder virtuelle Methode.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Durch diese Regel wird eine Methode mit ihrer Basismethode verglichen. Bei dieser handelt es sich entweder um eine Schnittstelle oder um eine virtuelle Methode in einem anderen Typ. Anschließend werden die Linkaufruf mit denen der Schnittstelle bzw. virtuellen Methode verglichen. Eine Verletzung wird gemeldet, wenn entweder die-Methode oder die-Basis Methode über einen Link Aufruf und das andere nicht.
 
  Wenn gegen diese Regel verstoßen wird, kann ein böswilliger Aufrufer den Link Aufruf nur durch Aufrufen der ungesicherten Methode umgehen.
@@ -51,5 +51,5 @@ ms.locfileid: "72660256"
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.OverridesAndSecurity/cs/FxCop.Security.OverridesAndSecurity.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Verknüpfungs [Anforderungen](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) für [sichere Codierungs Richtlinien](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

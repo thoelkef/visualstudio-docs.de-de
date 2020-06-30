@@ -15,27 +15,27 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67a3588a857a0eea7d338217f975ed593dfdad52
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669101"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543701"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|IdentifiersShouldNotMatchKeywords|
+|TypName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Der Name eines Namespace, eines Typs oder eines Viritual oder Schnittstellenmembers stimmt mit einem reservierten Schlüsselwort in einer Programmiersprache überein.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Bezeichner für Namespaces, Typen und virtuelle Elemente und Schnittstellenmember sollten nicht mit Schlüsselwörtern verglichen werden, die von Sprachen definiert werden, die auf die Common Language Runtime abzielen. Abhängig von der verwendeten Sprache und dem Schlüsselwort können Compilerfehler und Mehrdeutigkeiten die Verwendung der Bibliothek erschweren.
 
  Diese Regel überprüft Schlüsselwörter in den folgenden Sprachen:
@@ -46,10 +46,10 @@ ms.locfileid: "72669101"
 
 - C++/CLI
 
-  Der Vergleich ohne Berücksichtigung der Groß-/Kleinschreibung wird für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Schlüsselwörter verwendet, und für die anderen Sprachen wird der Groß-/Kleinschreibung
+  Der Vergleich ohne Berücksichtigung der Groß-/Kleinschreibung wird für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Schlüsselwörter verwendet, und für die anderen Sprachen wird die Groß-/Kleinschreibung beachtet
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Wählen Sie einen Namen aus, der nicht in der Liste der Schlüsselwörter angezeigt wird.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie können eine Warnung aus dieser Regel unterdrücken, wenn Sie davon überzeugt sind, dass der Bezeichner die Benutzer der API nicht verwechselt und die Bibliothek in allen verfügbaren Sprachen in der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verwendet werden kann.
+ Sie können eine Warnung aus dieser Regel unterdrücken, wenn Sie davon überzeugt sind, dass der Bezeichner die Benutzer der API nicht verwechselt und die Bibliothek in allen verfügbaren Sprachen in verwendet werden kann [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .

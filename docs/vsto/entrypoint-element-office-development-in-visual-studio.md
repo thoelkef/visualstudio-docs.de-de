@@ -1,9 +1,9 @@
 ---
-title: '&lt;EntryPoint&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;EntryPoint- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799773"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543597"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint&gt; -Element (Office-Entwicklung in Visual Studio)
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint- &gt; Element (Office-Entwicklung in Visual Studio)
   Durch jedes `entryPoint` -Element im `vstav3` -Namespace wird eine Anpassungsassembly gekennzeichnet, die bei Installation dieser [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Anwendung ausgeführt werden sollte.
 
 ## <a name="syntax"></a>Syntax
@@ -39,9 +39,9 @@ ms.locfileid: "62799773"
 
  Jedes `entryPoint` -Element kann nur eine Anpassungsassembly enthalten. In einem Anwendungsmanifest können mehrere `entryPoint` -Elemente definiert werden.
 
- Das `entryPoint` -Element weist folgende Attribute auf:
+ Das `entryPoint` -Element weist folgende Attribute auf.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`class`|Erforderlich. Kennzeichnet eine auszuführende Anpassungsassembly. Die Syntax für dieses Attribut ist *NamespaceName.ClassName*.|
 
@@ -50,12 +50,12 @@ ms.locfileid: "62799773"
 ### <a name="assemblyidentity"></a>assemblyIdentity
  Erforderlich. Das `assemblyIdentity` -Element im `vstav3` -Namespace verweist auf ein vorhandenes `assemblyIdentity` -Element im [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Anwendungsmanifest.
 
- Die Rolle des `assemblyIdentity` und ihre Attribute in [ &#60;AssemblyIdentity&#62; Element &#40;ClickOnce-Anwendung&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
+ Die Rolle von `assemblyIdentity` und den zugehörigen Attributen wird in [&#60;assemblyIdentity-&#62; Element &#40;ClickOnce-Anwendungs&#41;](../deployment/assemblyidentity-element-clickonce-application.md)definiert.
 
-## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene
+## <a name="document-level-customization-example"></a>Beispiel für eine Anpassung auf Dokument Ebene
 
-### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht `entryPoint` -Elemente in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Dokumentebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+### <a name="description"></a>BESCHREIBUNG
+ Das folgende Codebeispiel veranschaulicht `entryPoint` -Elemente in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Dokumentebene. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -94,10 +94,10 @@ ms.locfileid: "62799773"
 </vstav3:entryPoint>
 ```
 
-## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in
+## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-in
 
-### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht ein `entryPoint` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+### <a name="description"></a>BESCHREIBUNG
+ Das folgende Codebeispiel veranschaulicht ein `entryPoint` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -112,8 +112,8 @@ ms.locfileid: "62799773"
 </vstav3:entryPoint>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

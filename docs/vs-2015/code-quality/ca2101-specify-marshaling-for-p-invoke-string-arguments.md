@@ -15,27 +15,27 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57b7214058baf63ffa5e3ee2c9a982bf411b60e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae65e922d1b4946300155bbf148abac574a2ec2a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652186"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544377"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|SpecifyMarshalingForPInvokeStringArguments|
+|TypName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
-|Kategorie|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
  Ein Platt Form Aufruf-Member ermöglicht teilweise vertrauenswürdigen Aufrufern, verfügt über einen Zeichen folgen Parameter und führt die Zeichenfolge nicht explizit aus.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Wenn Sie von Unicode in ANSI konvertieren, ist es möglich, dass nicht alle Unicode-Zeichen in einer bestimmten ANSI-Codepage dargestellt werden können. Die Zuordnung mit einer *optimalen Anpassung* versucht, dieses Problem zu lösen, indem ein Zeichen für das Zeichen ersetzt wird, das nicht dargestellt werden kann. Die Verwendung dieser Funktion kann ein potenzielles Sicherheitsrisiko darstellen, da Sie das gewählte Zeichen nicht steuern können. Beispielsweise könnte bösartiger Code absichtlich eine Unicode-Zeichenfolge erstellen, die Zeichen enthält, die nicht in einer bestimmten Codepage gefunden werden, die in Sonderzeichen für das Dateisystem konvertiert werden, z. b. "..". oder "/". Beachten Sie auch, dass Sicherheitsüberprüfungen für Sonderzeichen häufig auftreten, bevor die Zeichenfolge in ANSI konvertiert wird.
 
  Die Zuordnung mit der optimalen Anpassung ist die Standardeinstellung für die nicht verwaltete Konvertierung (WChar zu MB). Wenn Sie die Zuordnung mit der optimalen Anpassung nicht explizit deaktivieren, kann Ihr Code aufgrund dieses Problems ein Sicherheitsrisiko darstellen.

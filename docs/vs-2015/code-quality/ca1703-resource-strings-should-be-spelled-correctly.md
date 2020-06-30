@@ -15,27 +15,27 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9574ff022e0d5407b2683e5ba7a6b2e0cde5201e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2e720c1c491e88b6d89fb4b1f0175e8bc8a56e27
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669226"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544052"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ResourceStringsShouldBeSpelledCorrectly|
+|TypName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
  Eine Ressourcenzeichenfolge enthält mindestens ein Wort, das von der Rechtschreibprüfung aus der Microsoft-Bibliothek nicht erkannt wird.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Diese Regel analysiert die Ressourcen Zeichenfolge in Wörter (tokenarisierung von zusammengesetzten Wörtern) und überprüft die Schreibweise der einzelnen Wörter/Token. Weitere Informationen zum Algorithmus für die Verarbeitung finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
  Standardmäßig wird die englische Version (en) der Rechtschreibprüfung verwendet.
@@ -47,8 +47,8 @@ ms.locfileid: "72669226"
  Unterdrücken Sie keine Warnung dieser Regel. Korrekt geschriebene Wörter verkürzen die Zeit, die erforderlich ist, um neue Software Bibliotheken zu erlernen.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

@@ -15,21 +15,21 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 223b2ff9aa25ddd94a3c62eb9e641127a1cace4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668450"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543818"
 ---
-# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Nicht aufgerufenen privaten Code vermeiden
+# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Nicht aufgerufenen privaten Code vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|AvoidUncalledPrivateCode|
+|TypName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|Kategorie|Microsoft. Performance|
+|Category|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -41,11 +41,11 @@ ms.locfileid: "72668450"
 
 - Serialisierungskonstruktoren.
 
-- Mit <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> gekennzeichnete Methoden.
+- Mit oder gekennzeichnete Methoden <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> .
 
 - Member, die außer Kraft gesetzt werden.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Diese Regel kann falsch positive Ergebnisse melden, wenn Einstiegspunkte auftreten, die derzeit nicht durch die Regellogik identifiziert werden. Außerdem kann ein Compiler nicht Aufruf baren Code in eine Assembly ausgeben.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -55,8 +55,8 @@ ms.locfileid: "72668450"
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Nicht instanziierte interne Klassen vermeiden.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Nicht verwendete Parameter überprüfen.](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Nicht verwendete lokale Variablen entfernen.](../code-quality/ca1804-remove-unused-locals.md)

@@ -3,7 +3,7 @@ title: Fehlermeldungen (Office-Entwicklung in Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: error-reference
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f00597c7d0cd55deb3a8747f6d23c658d83c2e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb12578f10847c9afc6cbcef67e9b3d3b678db5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951982"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543545"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Fehlermeldungen (Office-Entwicklung in Visual Studio)
   Jedes Thema zu einer Fehlermeldung enthält Informationen zu den möglichen Ursachen für einen Fehler sowie potenzielle Lösungen bzw. Problemumgehungen zur Behebung des Problems.
 
  Informationen zu einer Fehlermeldung können Sie auf folgende Arten abrufen.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |-|-|
-|F1|Wenn Sie eine Fehlermeldung erhalten, können Sie drücken **F1**. Dadurch wird das entsprechende Thema der Onlinedokumentation zur Fehlermeldung geöffnet.|
-|Volltextsuche|Sie können mit der Volltextsuche nach Wörtern aus dem ersten Satz des Fehlermeldungstexts suchen. Klicken Sie im Menü **Hilfe** auf **Suche**.|
+|F1|Wenn Sie eine Fehlermeldung erhalten, können Sie **F1**drücken. Dadurch wird das entsprechende Thema der Onlinedokumentation zur Fehlermeldung geöffnet.|
+|Volltextsuche|Sie können mit der Volltextsuche nach Wörtern aus dem ersten Satz des Fehlermeldungstexts suchen. Klicken Sie im Menü **Hilfe** auf **Suchen**.|
 
-## <a name="see-also"></a>Siehe auch
-- [Office und SharePoint-Entwicklung in Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Office-und SharePoint-Entwicklung in Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)

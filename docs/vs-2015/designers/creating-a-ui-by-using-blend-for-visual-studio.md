@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657993"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544286"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,28 +40,28 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 
 - [Überblick über den Bereich Eigenschaften](#Properties)
 
-## <a name="Tools"></a>Überblick über die Werkzeuge
+## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a>Tour durch den Werkzeug Panel
  Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in Ihrer Anwendung Objekte erstellen und ändern. Die Objekte werden erstellt, indem Sie ein Werkzeug auswählen und die Objekte mit der Maus auf die Zeichenfläche ziehen.
 
- ![Werkzeug Panel](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
+ ![Werkzeugbereich](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
-|||||
+|Image|Tooltyp|Image|Tooltyp|
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|**Auswahlwerkzeuge** Wählen Sie Objekte und Pfade aus.<br /><br /> Verwenden Sie das Werkzeug **Direktauswahl**, um geschachtelte Objekte und Pfadsegmente auszuwählen.|![Legende A](../designers/media/b5-label-a.png "b5_label_A")|**Pinsel mit Farbverlauf und die Werkzeuge**|
-|![](../designers/media/b1-2.png "B1_2")|**Ansichtswerkzeuge** Mit diesen Werkzeugen kann die Ansicht der Zeichenfläche beispielsweise zum Schwenken und Zoomen verwendet werden.|![Legende B](../designers/media/b5-label-b.png "b5_label_B")|**Pfadwerkzeuge**|
-|![](../designers/media/b1-3.png "B1_3")|**Pinselwerkzeuge** Sie dienen zum Bearbeiten der visuellen Attribute eines Objekts, beispielsweise Pinseltransformationen, Zeichnen eines Objekts oder Auswählen der Attribute eines Objekts zur Übertragung auf ein anderes Objekt.|![Legende C](../designers/media/b5-label-c.png "b5_label_C")|**Formenwerkzeuge**|
-|![](../designers/media/b1-4.png "B1_4")|**Objektbibliothekswerkzeuge** Sie dienen zum Zeichnen der gängigsten Objekte auf der Zeichenfläche, z.B. Pfade, Formen, Layoutbereiche, Text und Steuerelemente.|![Legende D](../designers/media/b5-label-d.png "b5_label_D")|**Layoutbereiche**|
-|![](../designers/media/b1-5.png "B1_5")|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5-label-e.png "b5_label_E")|**Textsteuerelemente**|
-|||![Legende F](../designers/media/b5-label-f.png "b5_label_F")|**Allgemeine Steuerelemente**|
+|![](../designers/media/b1-1.png "B1_1")|**Auswahlwerkzeuge** Wählen Sie Objekte und Pfade aus.<br /><br /> Verwenden Sie das Werkzeug **Direktauswahl**, um geschachtelte Objekte und Pfadsegmente auszuwählen.|![Legende A](../designers/media/b5-label-a.png "b5_label_A")|**Pinsel mit Farbverlauf und die Werkzeuge**|
+|![](../designers/media/b1-2.png "B1_2")|**Ansichtswerkzeuge** Mit diesen Werkzeugen kann die Ansicht der Zeichenfläche beispielsweise zum Schwenken und Zoomen verwendet werden.|![Legende B](../designers/media/b5-label-b.png "b5_label_B")|**Pfadwerkzeuge**|
+|![](../designers/media/b1-3.png "B1_3")|**Pinselwerkzeuge** Sie dienen zum Bearbeiten der visuellen Attribute eines Objekts, beispielsweise Pinseltransformationen, Zeichnen eines Objekts oder Auswählen der Attribute eines Objekts zur Übertragung auf ein anderes Objekt.|![Legende C](../designers/media/b5-label-c.png "b5_label_C")|**Formenwerkzeuge**|
+|![](../designers/media/b1-4.png "B1_4")|**Objektbibliothekswerkzeuge** Sie dienen zum Zeichnen der gängigsten Objekte auf der Zeichenfläche, z.B. Pfade, Formen, Layoutbereiche, Text und Steuerelemente.|![Legende D](../designers/media/b5-label-d.png "b5_label_D")|**Layoutpanels**|
+|![](../designers/media/b1-5.png "B1_5")|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5-label-e.png "b5_label_E")|**Textsteuerelemente**|
+|||![Legende F](../designers/media/b5-label-f.png "b5_label_F")|**Allgemeine Steuerelemente**|
 
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Die Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)
 
-## <a name="Assets"></a>Überblick über den Objektbereich
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a>Überblick über das Objekte Panel
  Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visual Studio ähnelt. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektbereich**, einschließlich Stile, Medien, Verhalten und Effekte.
 
- ![Objekte Panel](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![Objektebereich](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
-|||
+|Image|BESCHREIBUNG|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Suchfeld** Verwenden Sie das Feld **Suchen** zum Filtern der Liste der Objekte.|
 |![](../designers/media/b1-2.png "B1_2")|**Gittermodus und Listenmodus** Wechseln Sie zwischen der Ansicht **Gittermodus** und **Listenmodus** der Objekte.|
@@ -69,12 +69,12 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |![](../designers/media/b1-4.png "B1_4")|**Formatvorlagen** Zeigt alle Stile an, die im Ressourcenverzeichnis enthalten sind.|
 |![](../designers/media/b1-5.png "B1_5")|**Beschreibung** Zeigen Sie eine Beschreibung der ausgewählten Objektkategorie oder Unterkategorie an.|
 
-## <a name="Objects"></a>Überblick über die Bereiche Objekte und Zeitachse
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>Tour durch den Objekte und Zeitachsen Panel
  Verwenden Sie diesen Bereich, um die Objekte auf der Zeichenfläche zu organisieren und gegebenenfalls zu animieren.
 
- ![Objekt-und Zeitachsen Panel im Animationsmodus](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![Objekt- und Zeitachsenbereich im Animationsmodus](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
-|||
+|Image|BESCHREIBUNG|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Objektansicht** Zeigt die visuelle Struktur eines Dokuments an. Sie können einen Drilldown zu verschiedenen Detailebenen durchführen. Sie können auch zum Organisieren von Objekten auf der Zeichenfläche weitere Ebenen hinzufügen. Auf diese Weise können Sie sie sperren und als Gruppe ausblenden.|
 |![](../designers/media/b1-2.png "B1_2")|**Anzeige für Aufzeichnungsmodus** Zeigt an, wenn Sie Eigenschaftenänderungen in einer Zeitachse aufzeichnen.|
@@ -91,14 +91,14 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |![](../designers/media/b1-13.png "B1_13")|**Für Zeitachsen festgelegte Keyframes** Ändert den Wert einer Eigenschaftsänderung zu einem bestimmten Zeitpunkt.|
 |![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe")|**Änderungsreihenfolge von Objekten** Legt die Anzeigereihenfolge von Objekten fest. Klicken Sie auf diese Schaltfläche, um Objekte in der Strukturansicht gemäß der Z-Reihenfolge (von vorne nach hinten) oder gemäß der Markupreihenfolge (entspricht der Reihenfolge in der **XAML**-Ansicht) anzuordnen.|
 |![](../designers/media/b1-15.png "B1_15")|**Zeitachsenzoom** Legt die Zoomauflösung der Zeitachse fest. Durch Vergrößern können Sie eine detailliertere Animation bearbeiten, während Sie beim Verkleinern eine Übersicht der Ereignisse über einen längeren Zeitraum hinweg anzeigen können. Wenn Sie beim Vergrößern kein Keyframe zum gewünschten Zeitpunkt festlegen können, stellen Sie sicher, dass die Auflösung zum Andocken hoch genug eingestellt ist.|
-|![Legende 16](../designers/media/b5-label-16.png "b5_label_16")|**Zeitachsen-Erfassungsbereich** Zeigt die Zeitachse an und ermöglicht Ihnen das Verschieben der Keyframes durch Ziehen oder Verwenden der Kontextmenüs.|
+|![Legende 16](../designers/media/b5-label-16.png "b5_label_16")|**Zeitachsen-Erfassungsbereich** Zeigt die Zeitachse an und ermöglicht Ihnen das Verschieben der Keyframes durch Ziehen oder Verwenden der Kontextmenüs.|
 
-## <a name="Properties"></a>Überblick über den Bereich Eigenschaften
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>Überblick über das Eigenschaften Panel
  Verwenden Sie diesen Bereich, um die Eigenschaften eines Objekts anzuzeigen und zu ändern. Sie können sie auch direkt auf der Zeichenfläche festlegen. Wenn Sie dies tun, werden die Änderungen im Bereich **Eigenschaften** angezeigt.
 
- ![Eigenschaften Panel](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
+ ![Eigenschaftenbereich](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421A-BBB3-6f5055b67b64") **und reduzieren** ![reduzieren, um](../designers/media/b5-collapse-button.png "b5_collapse_button") Kategoriedetails anzuzeigen oder auszublenden.
+ **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421A-BBB3-6f5055b67b64") und auf **Reduzieren** ![Reduzieren](../designers/media/b5-collapse-button.png "b5_collapse_button"), um Kategoriedetails anzuzeigen oder auszublenden.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,10 +117,10 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **Alphakanal** Ändern Sie den Alphawert, indem Sie den Zahleneditor neben **A** verwenden.                                                                        |
 | ![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe") |                                       **Farbe in Ressource konvertieren** Konvertiert die ausgewählte Farbe in eine Farbressource. Farbressourcen sind verfügbar, wenn Sie auf die Farbressourcenregisterkarte klicken.                                        |
 |                                ![](../designers/media/b1-15.png "B1_15")                                |                                                                                 **Farbtonwert** Zeigt den hexadezimalen Wert der angezeigten Farbe an.                                                                                 |
-|                     ![Legende 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.                                                                                 |
+|                     ![Legende 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.                                                                      |
 
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Einfügen von Steuerelementen und Ändern des Verhaltens](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [Animieren von Objekten](../designers/animate-objects-in-xaml-designer.md) [Zeichnen von Formen und Pfaden](../designers/draw-shapes-and-paths.md) [Entwerfen von XAML in Visual Studio und Blend für Visual Studio](../designers/designing-xaml-in-visual-studio.md)

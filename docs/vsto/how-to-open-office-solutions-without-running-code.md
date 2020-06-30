@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Öffnen Sie Office-Projektmappen ohne die Ausführung von code'
+title: 'Gewusst wie: Öffnen von Office-Projektmappen ohne Ausführen von Code'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,39 +18,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441760"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543480"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Vorgehensweise: Öffnen Sie Office-Projektmappen ohne die Ausführung von code
-  Mit Erweiterungen durch verwalteten Code erstellte eine Microsoft Office-Projektmappe ausgeführt wird, auch wenn die sicherheitseinstellung in der Endbenutzer Office-Anwendung auf hoch festgelegt ist. Dies ist da die Sicherheit von Microsoft .NET Framework, nicht von Microsoft Office verwaltet wird.
+# <a name="how-to-open-office-solutions-without-running-code"></a>Gewusst wie: Öffnen von Office-Projektmappen ohne Ausführen von Code
+  Eine Microsoft Office Lösung, die mit Erweiterungen für verwalteten Code erstellt wurde, wird auch dann ausgeführt, wenn die Sicherheitseinstellung in der Office-Anwendung des Endbenutzers auf hoch festgelegt ist Dies liegt daran, dass die .net-Assemblycode-Sicherheit vom Microsoft .NET Framework verwaltet wird, nicht durch Microsoft Office.
 
- Es gibt jedoch auch vorkommen, dass Sie möglicherweise ein Dokument zu öffnen, ohne den Code ausführen möchten. Z. B. Code, der ausgeführt wird, wenn das Dokument geöffnet wird, kann den Inhalt ändern, aber die Möglichkeit, die das Dokument vor den Änderungen am Code hierfür, aktualisiert werden soll. Oder möglicherweise möchten das Dokument mit der bestimmte Informationen darin an jemanden senden, und nicht möchten, dass des Codes zum Ausführen und den Inhalt möglicherweise ändern.
+ Es kann jedoch vorkommen, dass Sie ein Dokument öffnen möchten, ohne den Code ausführen zu müssen. Beispielsweise kann Code, der ausgeführt wird, wenn das Dokument geöffnet wird, den Inhalt ändern, aber Sie möchten die Art und Weise aktualisieren, in der das Dokument aussieht, bevor es vom Code geändert wird. Oder Sie möchten das Dokument mit bestimmten Informationen an eine Person senden, und Sie möchten, dass der Code nicht ausgeführt wird und möglicherweise den Inhalt ändert.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Es gibt mehrere Möglichkeiten, ein Dokument oder eine Arbeitsmappe mit Erweiterungen durch verwalteten Code ohne Ausführung von Code für die Assembly zu öffnen.
+ Es gibt mehrere Möglichkeiten, ein Dokument oder eine Arbeitsmappe zu öffnen, die Erweiterungen durch verwalteten Code enthält, ohne den Assemblycode zu ausführen.
 
-## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>So umgehen Sie die Assembly mithilfe der UMSCHALT-Taste
+## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>So umgehen Sie die Assembly mit der UMSCHALTTASTE
 
-- Öffnen von Dokumenten und Arbeitsmappen aus der **Datei** Menü bei gedrückter der **UMSCHALT** Schlüssel, um zu verhindern, dass Word und Excel Initialisierungsereignisse auslösen, während das Dokument geöffnet wird.
+- Öffnen Sie Dokumente und Arbeitsmappen über das Menü **Datei** , und halten Sie die **UMSCHALT** Taste gedrückt, um zu verhindern, dass Word und Excel Initialisierungs Ereignisse beim Öffnen des Dokuments aufhebt.
 
     > [!NOTE]
-    > Wenn Sie ein Dokument oder eine Arbeitsmappe öffnen die **Einstieg** Aufgabenbereich gedrückt **UMSCHALT** wird den Code nicht umgangen. Darüber hinaus verhindert die UMSCHALTTASTE gedrückt gehalten nicht Ereignisse ausgelöst werden, nachdem das Dokument geöffnet ist.
+    > Wenn Sie im Aufgabenbereich " **Getting Started** " ein Dokument oder eine Arbeitsmappe öffnen, wird der Code durchhalten der **UMSCHALT** Taste nicht umgangen. Wenn Sie die UMSCHALTTASTE gedrückt halten, wird auch nicht verhindert, dass Ereignisse ausgelöst werden, nachdem das Dokument geöffnet ist.
 
-     Diese Methode ist nützlich, wenn Sie ein Dokument, um Änderungen vorzunehmen, ohne den Code ausführen und ändern zunächst das Dokument öffnen möchten.
+     Diese Methode ist hilfreich, wenn Sie ein Dokument öffnen möchten, um Änderungen vorzunehmen, ohne dass der Code ausgeführt wird, und das Dokument zuerst zu ändern.
 
-## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Um eine Assembly zu umgehen, indem Sie das Umbenennen oder entfernen
+## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>So umgehen Sie eine Assembly durch Umbenennen oder entfernen
 
-- Wenn Sie die erforderlichen Berechtigungen auf dem Computer haben, in dem die Assembly befindet, können Sie umbenennen oder entfernen Sie die Assembly, sodass das Dokument oder die Arbeitsmappe gefunden werden kann. Dadurch wird ein Fehler ausgelöst wird, jedes Mal, wenn das Office-Dokument geöffnet wird.
+- Wenn Sie auf dem Computer, auf dem sich die Assembly befindet, über die erforderlichen Berechtigungen verfügen, können Sie die Assembly umbenennen oder entfernen, sodass Sie vom Dokument oder der Arbeitsmappe nicht gefunden werden kann. Dies führt zu einem Fehler, wenn das Office-Dokument geöffnet wird.
 
-     Wenn die Lösung von mehreren Personen verwendet wird, verhindert diese Methode die Projektmappe ausgeführt wird für alle. Dies kann nützlich sein, wenn ein Problem, im Code oder einem Server auf die verwiesen wird gefunden wird, und Sie alle Benutzer aus der Ausführung beenden möchten.
+     Wenn die Lösung von mehreren Personen verwendet wird, verhindert diese Methode, dass die Lösung für alle ausgeführt wird. Dies kann hilfreich sein, wenn ein Problem im Code oder auf einem Server gefunden wird, auf den verwiesen wird, und Sie alle Benutzer daran hindern möchten, Sie auszuführen.
 
-## <a name="see-also"></a>Siehe auch
-- [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
-- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
-- [Anwendungs- und Bereitstellungsmanifeste in Office-Projektmappen](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
+- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
+- [Anwendungs-und Bereitstellungs Manifeste in Office-Lösungen](../vsto/application-and-deployment-manifests-in-office-solutions.md)
