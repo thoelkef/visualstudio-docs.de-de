@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 845c54f382a487578df4d8afbe78f4acde9f358a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e182d921e8ffb019d2044699e3a9c333492497b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664170"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531560"
 ---
 # <a name="shader-designer-examples"></a>Beispiele für den Shader-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Die Artikel in diesem Abschnitt der Dokumentation enthalten Beispiele, die veran
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|||
+|Titel|BESCHREIBUNG|
 |-|-|
-|[Gewusst wie: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md)|Zeigt einen Shader, der eine konstante Farbe auf ein Objekt anwendet|
+|[Gewusst wie: Erstellen eines grundlegenden farbshaders](../designers/how-to-create-a-basic-color-shader.md)|Zeigt einen Shader, der eine konstante Farbe auf ein Objekt anwendet|
 |[Gewusst wie: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md)|Zeigt einen Shader, der das klassische Lambert-Beleuchtungsmodell auf ein Objekt anwendet|
-|[Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md)|Zeigt einen Shader, der das klassische Phong-Beleuchtungsmodell auf ein Objekt anwendet|
-|[Gewusst wie: Erstellen eines Basistextur-Shaders](../designers/how-to-create-a-basic-texture-shader.md)|Zeigt einen Shader, der eine Textur auf ein Objekt anwendet|
+|[Vorgehensweise: Erstellen eines einfachen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md)|Zeigt einen Shader, der das klassische Phong-Beleuchtungsmodell auf ein Objekt anwendet|
+|[Gewusst wie: Erstellen eines basistextur-Shaders](../designers/how-to-create-a-basic-texture-shader.md)|Zeigt einen Shader, der eine Textur auf ein Objekt anwendet|
 |[Gewusst wie: Erstellen eines Graustufentextur-Shaders](../designers/how-to-create-a-grayscale-texture-shader.md)|Zeigt einen Shader, der eine Textur beim Rendering in Graustufen umwandelt und sie auf ein Objekt anwendet|
-|[Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders](../designers/how-to-create-a-geometry-based-gradient-shader.md)|Zeigt einen Shader, der eine Farbe auf Grundlage der Geometrie eines Objekts moduliert und auf das Objekt anwendet|
+|[Gewusst wie: Erstellen eines Geometrie basierten Farbverlauf-Shaders](../designers/how-to-create-a-geometry-based-gradient-shader.md)|Zeigt einen Shader, der eine Farbe auf Grundlage der Geometrie eines Objekts moduliert und auf das Objekt anwendet|
 |[Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel](../designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md)|Zeigt, wie Shader-Techniken und Texturressourcen kombiniert werden können, um einen realistischen Billardkugel-Shader zu erstellen|
 |[Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)|Erläutert, wie ein DGSL-Shader in ein Format exportiert wird, das die App verwenden kann|
