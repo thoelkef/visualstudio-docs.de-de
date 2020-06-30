@@ -15,28 +15,28 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 06d961fee28fa67f1e4f712564f6b3d5ff4073ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651621"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538800"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode beim Überschreiben von Equals überschreiben
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode beim Überschreiben von Equals überschreiben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|OverrideGetHashCodeOnOverridingEquals|
+|TypName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ überschreibt <xref:System.Object.Equals%2A?displayProperty=fullName>, überschreibt jedoch <xref:System.Object.GetHashCode%2A?displayProperty=fullName> nicht.
+ Ein öffentlicher Typ überschreibt, <xref:System.Object.Equals%2A?displayProperty=fullName> aber nicht außer Kraft <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
-## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Object.GetHashCode%2A> gibt basierend auf der aktuellen Instanz einen Wert zurück, der für Hash Algorithmen und Datenstrukturen (z. b. eine Hash Tabelle) geeignet ist. Zwei Objekte, die denselben Typ und gleich sind, müssen denselben Hashcode zurückgeben, um sicherzustellen, dass Instanzen der folgenden Typen ordnungsgemäß funktionieren:
+## <a name="rule-description"></a>Beschreibung der Regel
+ <xref:System.Object.GetHashCode%2A>gibt basierend auf der aktuellen Instanz einen-Wert zurück, der sich für Hash Algorithmen und Datenstrukturen eignet, z. b. eine Hash Tabelle. Zwei Objekte, die denselben Typ und gleich sind, müssen denselben Hashcode zurückgeben, um sicherzustellen, dass Instanzen der folgenden Typen ordnungsgemäß funktionieren:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,56 +54,56 @@ ms.locfileid: "72651621"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Typen, die <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName> implementieren
+- Typen, die implementieren<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung von <xref:System.Object.GetHashCode%2A> bereit. Bei einem Paar von Objekten desselben Typs müssen Sie sicherstellen, dass die Implementierung denselben Wert zurückgibt, wenn die Implementierung von <xref:System.Object.Equals%2A> `true` für das Paar zurückgibt.
+ Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung von bereit <xref:System.Object.GetHashCode%2A> . Bei einem Paar von Objekten desselben Typs müssen Sie sicherstellen, dass die Implementierung denselben Wert zurückgibt, wenn die Implementierung von <xref:System.Object.Equals%2A> `true` für das Paar zurückgibt.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
-## <a name="class-example"></a>Klassen Beispiel
+## <a name="class-example"></a>Klassenbeispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel zeigt eine Klasse (Verweistyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorClass/cs/FxCop.Usage.GetHashCodeErrorClass.cs#1)]
 
 ### <a name="comments"></a>Kommentare
- Im folgenden Beispiel wird die Verletzung durch Überschreiben von <xref:System.Object.GetHashCode> korrigiert.
+ Im folgenden Beispiel wird die Verletzung durch Überschreiben behoben <xref:System.Object.GetHashCode> .
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedClass/cs/FxCop.Usage.GetHashCodeFixedClass.cs#1)]
 
 ## <a name="structure-example"></a>Struktur Beispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel zeigt eine Struktur (Werttyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorStruct/cs/FxCop.Usage.GetHashCodeErrorStruct.cs#1)]
 
 ### <a name="comments"></a>Kommentare
- Im folgenden Beispiel wird die Verletzung durch Überschreiben von <xref:System.Object.GetHashCode> korrigiert.
+ Im folgenden Beispiel wird die Verletzung durch Überschreiben behoben <xref:System.Object.GetHashCode> .
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedStruct/cs/FxCop.Usage.GetHashCodeFixedStruct.cs#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: Gleichheitsoperator für Referenztypen nicht überladen.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Operatorüberladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Operatorüberladungen weisen benannte Alternativen auf.](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben.](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
-- [Gleichheitsoperatoren](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+- [Gleichheits Operatoren](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

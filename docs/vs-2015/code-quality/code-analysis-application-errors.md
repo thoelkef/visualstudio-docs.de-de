@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9fa92e773c3dc130d0c0fc0ce05cc270dc9b6e53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669006"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538554"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ Dieser Abschnitt ist ein Verweis auf die Fehlermeldungen, die vom Tool für die 
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|||
+|Element|Wert|
 |-|-|
 |[CA0001](ca0001.md)|Im Analysetool für verwalteten Code wurde eine Ausnahme ausgelöst, die keine erwartete Fehlerbedingung angibt.|
 |[CA0051](ca0051.md)|Es wurden keine Regeln ausgewählt.|
 |[CA0052](ca0052.md)|Es wurden keine Ziele zur Analyse ausgewählt.|
 |[CA0053](ca0053.md)|Die Regelassembly konnte nicht geladen werden.|
 |[CA0054](ca0054.md)|Eine benutzerdefinierte Regelassembly weist ungültige XML-Ressourcen auf.|
-|[CA0055](ca0055.md)|Datei konnte nicht geladen werden: \<path >|
+|[CA0055](ca0055.md)|Die Datei konnte nicht geladen werden:\<path>|
 |[CA0056](ca0056.md)|Eine Projektdatei weist eine falsche Version des Analysetools auf.|
 |[CA0057](ca0057.md)|Dem aktuellen Satz von Zielen und Regeln können keine Verstöße zugeordnet werden.|
 |[CA0058](ca0058.md)|Referenzierte Assemblys können nicht geladen werden.|
@@ -61,4 +61,4 @@ Dieser Abschnitt ist ein Verweis auf die Fehlermeldungen, die vom Tool für die 
 
 - [Richtlinien zum Schreiben von sicherem Code](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [Ressourcen zur Fehlerbehebung in Application Lifecycle Management Tools](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [Ressourcen für die Problembehandlung bei den Tools für die Verwaltung des Anwendungslebenszyklus](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

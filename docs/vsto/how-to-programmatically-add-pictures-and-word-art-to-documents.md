@@ -1,7 +1,7 @@
 ---
 title: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253826"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538085"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Vorgehensweise: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
   Sie können Ihren Dokumenten zur Entwurfszeit oder zur Laufzeit Bilder und Zeichnungsobjekte hinzufügen. Mithilfe von WordArt können Sie Microsoft Office Word-Dokumenten dekorativen Text hinzufügen. Diese Spezialeffekte für Text sind Zeichnungsobjekte, die Sie anpassen und in Ihr Dokument einfügen können.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -97,11 +97,11 @@ ms.locfileid: "71253826"
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
 
-- Ein Bild mit dem Namen *SamplePicture. jpg* muss auf Laufwerk C vorhanden sein.
+- Ein Bild mit dem Namen *SamplePicture.jpg* muss auf Laufwerk C vorhanden sein.
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Vorgehensweise: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Vorgehensweise: Programmgesteuerte Wiederherstellung der Auswahl nach Such Vorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Vorgehensweise: Programm gesteuertes Speichern von Dokumenten](../vsto/how-to-programmatically-save-documents.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Gewusst wie: Programm gesteuertes Speichern von Dokumenten](../vsto/how-to-programmatically-save-documents.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

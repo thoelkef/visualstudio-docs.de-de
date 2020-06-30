@@ -15,31 +15,31 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e21866fce69f768d927882d3ddd47ae3e431265
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af0017a7ee6918a80a93ca90c7cf3de78885d61f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663605"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539190"
 ---
-# <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions angeben
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|SpecifyMessageBoxOptions|
+|TypName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
-|Kategorie|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Methode ruft eine Überladung der <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> Methode auf, die kein <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> Argument annimmt.
+ Eine Methode ruft eine Überladung der <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> Methode auf, die kein- <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> Argument annimmt.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Um ein Meldungs Feld für Kulturen, die eine Lesereihenfolge von rechts nach Links verwenden, ordnungsgemäß anzuzeigen, müssen die <xref:System.Windows.Forms.MessageBoxOptions>-und <xref:System.Windows.Forms.MessageBoxOptions> Member der <xref:System.Windows.Forms.MessageBoxOptions>-Enumeration an die <xref:System.Windows.Forms.MessageBox.Show%2A>-Methode übermittelt werden. Überprüfen Sie die <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName>-Eigenschaft des enthaltenden Steuer Elements, um zu bestimmen, ob die Lesefolge von rechts nach Links verwendet werden soll.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Wenn ein Meldungs Feld für Kulturen, die eine Lesereihenfolge von rechts nach Links verwenden, ordnungsgemäß angezeigt werden soll, <xref:System.Windows.Forms.MessageBoxOptions> müssen die-und-Member <xref:System.Windows.Forms.MessageBoxOptions> der- <xref:System.Windows.Forms.MessageBoxOptions> Enumeration an die-Methode übermittelt werden <xref:System.Windows.Forms.MessageBox.Show%2A> . Überprüfen <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> Sie die-Eigenschaft des enthaltenden Steuer Elements, um zu bestimmen, ob die Lesefolge von rechts nach Links verwendet werden soll.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, müssen Sie eine Überladung der <xref:System.Windows.Forms.MessageBox.Show%2A>-Methode aufrufen, die ein <xref:System.Windows.Forms.MessageBoxOptions> Argument annimmt.
+ Um einen Verstoß gegen diese Regel zu beheben, müssen Sie eine Überladung der-Methode aufrufen, die <xref:System.Windows.Forms.MessageBox.Show%2A> ein- <xref:System.Windows.Forms.MessageBoxOptions> Argument annimmt.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Code Bibliothek nicht für eine Kultur lokalisiert wird, in der die Lesefolge von rechts nach Links verwendet wird.
@@ -50,5 +50,5 @@ ms.locfileid: "72663605"
  [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/cs/FxCop.Globalization.SpecifyMBOptions.cs#1)]
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
-## <a name="see-also"></a>Siehe auch
- <xref:System.Resources.ResourceManager?displayProperty=fullName> von [Ressourcen in Desktop-Apps](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Ressourcen in Desktop-Apps](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

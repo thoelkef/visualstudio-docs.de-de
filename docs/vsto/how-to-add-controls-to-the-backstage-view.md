@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht '
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986008"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538345"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht
   Mit dem Menüband-Designer können Sie dem Menü Steuerelemente hinzufügen, die geöffnet werden, wenn Sie auf die Registerkarte **Datei** klicken. Wenn Sie die Anwendung ausführen, werden Steuerelemente, die Sie der Registerkarte **Datei** hinzufügen, als Gruppe mit dem Namen **Add-ins**angezeigt.
@@ -50,7 +50,7 @@ ms.locfileid: "72986008"
 
     - CheckBox
 
-    - Katalog
+    - Galerie
 
     - Menü
 
@@ -62,9 +62,9 @@ ms.locfileid: "72986008"
 
 4. Ziehen Sie Steuerelemente, um Sie an neue Positionen im Menü zu verschieben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Menüband-Designer](../vsto/ribbon-designer.md)
-- [Menüband-XML](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Gewusst wie: Starten der Multifunktionsleiste](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

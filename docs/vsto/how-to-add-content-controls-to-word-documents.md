@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten'
+title: 'Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +26,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c84ae02bd2cafde7b6232c73bc75f0976e81bd0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254366"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538384"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Vorgehensweise: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten
+# <a name="how-to-add-content-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten
   In Word-Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfszeit oder Laufzeit Inhaltssteuerelemente hinzufügen. In Word-VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit Inhaltssteuerelemente hinzufügen.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -48,14 +48,14 @@ ms.locfileid: "71254366"
 
   Weitere Informationen zu Inhalts Steuerelementen finden Sie unter [Inhalts Steuerelemente](../vsto/content-controls.md).
 
-## <a name="designtime"></a>Hinzufügen von Inhalts Steuerelementen zur Entwurfszeit
+## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a>Hinzufügen von Inhalts Steuerelementen zur Entwurfszeit
  Es gibt mehrere Möglichkeiten zum Hinzufügen von Inhaltssteuerelementen zum Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit:
 
 - Fügen Sie ein Inhaltssteuerelement von der Registerkarte **Word-Steuerelemente** der **Toolbox**hinzu.
 
 - Fügen Sie Ihrem Dokument ein Inhaltssteuerelement auf die gleiche Weise wie ein systemeigenes Inhaltssteuerelement in Word hinzu.
 
-- Ziehen Sie ein Inhaltssteuerelement aus dem Fenster **Datenquellen** in Ihr Dokument. Dies ist hilfreich, wenn Sie das Steuerelement während der Erstellung an Daten binden möchten. Weitere Informationen finden Sie unter [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md) und [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md).
+- Ziehen Sie ein Inhaltssteuerelement aus dem Fenster **Datenquellen** in Ihr Dokument. Dies ist hilfreich, wenn Sie das Steuerelement während der Erstellung an Daten binden möchten. Weitere Informationen finden Sie unter Gewusst [wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md) und Gewusst [wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -90,11 +90,11 @@ ms.locfileid: "71254366"
 2. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
 
     > [!NOTE]
-    > Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler"](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)im Menüband.
+    > Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter Gewusst [wie: Anzeigen der Registerkarte "Entwickler" im Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Klicken Sie in der Gruppe **Steuerelemente** auf das Symbol für das Inhaltssteuerelement, das Sie hinzufügen möchten.
 
-## <a name="runtimedoclevel"></a>Hinzufügen von Inhalts Steuerelementen in einem Projekt auf Dokument Ebene zur Laufzeit
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Hinzufügen von Inhalts Steuerelementen in einem Projekt auf Dokument Ebene zur Laufzeit
  Sie können einem Dokument Inhaltssteuerelemente programmgesteuert zur Laufzeit hinzufügen, indem Sie Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft der `ThisDocument` -Klasse im Projekt verwenden. Jede Methode verfügt über drei Überladungen, mit denen Sie auf folgende Weisen ein Inhaltssteuerelement hinzufügen können:
 
 - Fügen Sie ein Steuerelement an der aktuellen Auswahl hinzu.
@@ -110,7 +110,7 @@ ms.locfileid: "71254366"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>So fügen Sie ein Steuerelement an der aktuellen Auswahl hinzu
 
-1. Verwenden Sie <xref:Microsoft.Office.Tools.Word.ControlCollection> eine Methode, die die `Add`Name \<- *Steuerelement Klasse*> (wobei die *Steuerelement Klasse* der Klassenname <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>des Inhalts Steuer Elements ist, das Sie hinzufügen möchten, z. b.), und das über einen einzelnen Parameter für das der Name des neuen Steuer Elements.
+1. Verwenden <xref:Microsoft.Office.Tools.Word.ControlCollection> Sie eine Methode mit dem Namen `Add` \<*control class*> (wobei die *Steuerelement Klasse* der Klassenname des Inhalts Steuer Elements ist, das Sie hinzufügen möchten, z. b <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> .), und das über einen einzelnen Parameter für den Namen des neuen Steuer Elements verfügt.
 
      Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um am Anfang des Dokuments ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzuzufügen. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `AddRichTextControlAtSelection` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.
 
@@ -119,7 +119,7 @@ ms.locfileid: "71254366"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>So fügen Sie ein Steuerelement in einem angegebenen Bereich hinzu
 
-1. Verwenden Sie <xref:Microsoft.Office.Tools.Word.ControlCollection> eine Methode, die über `Add`die Name \<- *Steuerelement Klasse*verfügt > (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>Sie hinzufügen <xref:Microsoft.Office.Interop.Word.Range> möchten, z. b.). Parame.
+1. Verwenden <xref:Microsoft.Office.Tools.Word.ControlCollection> Sie eine Methode mit dem Namen `Add` \<*control class*> (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die Sie hinzufügen möchten, z. b. <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ), und die über einen- <xref:Microsoft.Office.Interop.Word.Range> Parameter verfügt.
 
      Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um am Anfang des Dokuments ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzuzufügen. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `AddRichTextControlAtRange` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.
 
@@ -128,14 +128,14 @@ ms.locfileid: "71254366"
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>So fügen Sie ein Steuerelement hinzu, das auf einem systemeigenen Inhaltssteuerelement basiert
 
-1. Verwenden Sie <xref:Microsoft.Office.Tools.Word.ControlCollection> eine Methode, die über `Add`die Name \<- *Steuerelement Klasse*verfügt > (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>Sie hinzufügen `Microsoft.Office.Interop.Word.ContentControl` möchten, z. b.). Parame.
+1. Verwenden <xref:Microsoft.Office.Tools.Word.ControlCollection> Sie eine Methode mit dem Namen `Add` \<*control class*> (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die Sie hinzufügen möchten, z. b. <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ), und die über einen- `Microsoft.Office.Interop.Word.ContentControl` Parameter verfügt.
 
      Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um für jedes im Dokument enthaltene systemeigene Rich-Text-Steuerelement ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zu erstellen. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `CreateRichTextControlsFromNativeControls` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.
 
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="runtimeaddin"></a>Hinzufügen von Inhalts Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Hinzufügen von Inhalts Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können einem beliebigen geöffneten Dokument mithilfe eines VSTO-Add-Ins zur Laufzeit programmgesteuert Inhaltssteuerelemente hinzufügen. Zu diesem Zweck generieren Sie ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement, das auf einem geöffneten Dokument basiert, und verwenden dann die Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft dieses Hostelements. Jede Methode verfügt über drei Überladungen, mit denen Sie auf folgende Weisen ein Inhaltssteuerelement hinzufügen können:
 
 - Fügen Sie ein Steuerelement an der aktuellen Auswahl hinzu.
@@ -153,7 +153,7 @@ ms.locfileid: "71254366"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>So fügen Sie ein Steuerelement an der aktuellen Auswahl hinzu
 
-1. Verwenden Sie <xref:Microsoft.Office.Tools.Word.ControlCollection> eine Methode, die die `Add`Name \<- *Steuerelement Klasse*> (wobei die *Steuerelement Klasse* der Klassenname <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>des Inhalts Steuer Elements ist, das Sie hinzufügen möchten, z. b.), und das über einen einzelnen Parameter für das der Name des neuen Steuer Elements.
+1. Verwenden <xref:Microsoft.Office.Tools.Word.ControlCollection> Sie eine Methode mit dem Namen `Add` \<*control class*> (wobei die *Steuerelement Klasse* der Klassenname des Inhalts Steuer Elements ist, das Sie hinzufügen möchten, z. b <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> .), und das über einen einzelnen Parameter für den Namen des neuen Steuer Elements verfügt.
 
      Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um am Anfang des aktiven Dokuments ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzuzufügen. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn` -Klasse in Ihrem Projekt hinzu und rufen die `AddRichTextControlAtSelection` -Methode aus dem `ThisAddIn_Startup` -Ereignishandler auf.
 
@@ -162,7 +162,7 @@ ms.locfileid: "71254366"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>So fügen Sie ein Steuerelement in einem angegebenen Bereich hinzu
 
-1. Verwenden Sie <xref:Microsoft.Office.Tools.Word.ControlCollection> eine Methode, die über `Add`die Name \<- *Steuerelement Klasse*verfügt > (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>Sie hinzufügen <xref:Microsoft.Office.Interop.Word.Range> möchten, z. b.). Parame.
+1. Verwenden <xref:Microsoft.Office.Tools.Word.ControlCollection> Sie eine Methode mit dem Namen `Add` \<*control class*> (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die Sie hinzufügen möchten, z. b. <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ), und die über einen- <xref:Microsoft.Office.Interop.Word.Range> Parameter verfügt.
 
      Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um am Anfang des aktiven Dokuments ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzuzufügen. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn` -Klasse in Ihrem Projekt hinzu und rufen die `AddRichTextControlAtRange` -Methode aus dem `ThisAddIn_Startup` -Ereignishandler auf.
 
@@ -171,7 +171,7 @@ ms.locfileid: "71254366"
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>So fügen Sie ein Steuerelement hinzu, das auf einem systemeigenen Inhaltssteuerelement basiert
 
-1. Verwenden Sie <xref:Microsoft.Office.Tools.Word.ControlCollection> eine Methode, die über `Add`die Name \<- *Steuerelement Klasse*verfügt > (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>Sie hinzufügen `Microsoft.Office.Interop.Word.ContentControl` möchten, z. b.). Parame.
+1. Verwenden <xref:Microsoft.Office.Tools.Word.ControlCollection> Sie eine Methode mit dem Namen `Add` \<*control class*> (wobei *Control-Klasse* der Name der Inhalts Steuerelement Klasse ist, die Sie hinzufügen möchten, z. b. <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> ), und die über einen- `Microsoft.Office.Interop.Word.ContentControl` Parameter verfügt.
 
      Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> -Methode verwendet, um für jedes in einem Dokument enthaltene systemeigene Rich-Text-Steuerelement ein neues <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zu erstellen, nachdem das Dokument geöffnet wurde. Um diesen Code auszuführen, fügen Sie ihn der `ThisAddIn` -Klasse im Projekt hinzu.
 
@@ -182,7 +182,7 @@ ms.locfileid: "71254366"
 
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)

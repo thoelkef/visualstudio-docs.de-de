@@ -15,27 +15,27 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 647fef2968971cddb6a14cc19e53eed979b9c151
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 772c9bee3f43c42701bfa460c622f4a225ec59cb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661522"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539177"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Doppelte Zugriffstasten vermeiden
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Doppelte Zugriffstasten vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|AvoidDuplicateAccelerators|
+|TypName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
-|Kategorie|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Typ erweitert <xref:System.Windows.Forms.Control?displayProperty=fullName> und enthält mindestens zwei Steuerelemente der obersten Ebene, die über identische Zugriffsschlüssel verfügen, die in einer Ressourcen Datei gespeichert werden.
+ Ein Typ erweitert <xref:System.Windows.Forms.Control?displayProperty=fullName> und enthält zwei oder mehr Steuerelemente der obersten Ebene, die über identische Zugriffsschlüssel verfügen, die in einer Ressourcen Datei gespeichert werden.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Eine Zugriffstaste ermöglicht den Zugriff auf ein Steuerelement unter Verwendung der ALT-TASTE. Wenn mehrere Steuerelemente über doppelte Zugriffstasten verfügen, ist das Verhalten der Zugriffstaste nicht stringent. Möglicherweise ist der Benutzer nicht in der Lage, auf das vorgesehene Steuerelement zuzugreifen, indem er die Zugriffstaste verwendet, und ein anderes als das, was möglicherweise aktiviert ist.
 
  Die aktuelle Implementierung dieser Regel ignoriert Menü Elemente. Menü Elemente im gleichen Untermenü dürfen jedoch nicht über identische Zugriffstasten verfügen.
@@ -51,5 +51,5 @@ ms.locfileid: "72661522"
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.AvoidDuplicateAccels/cs/FxCop.Globalization.AvoidDuplicateAccels.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
- <xref:System.Resources.ResourceManager?displayProperty=fullName> von [Ressourcen in Desktop-Apps](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Ressourcen in Desktop-Apps](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

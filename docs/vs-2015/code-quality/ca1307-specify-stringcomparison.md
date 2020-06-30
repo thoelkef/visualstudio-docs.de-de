@@ -15,36 +15,36 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 111f0b85a601d931ac17bde46f7170fa81e71815
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 033d8f0e22ec040ffb10821993a5a9c647ee401e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661395"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538917"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison angeben
+# <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|SpecifyStringComparison|
+|TypName|SpecifyStringComparison|
 |CheckId|CA1307|
-|Kategorie|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Zeichen folgen Vergleichsoperation verwendet eine Methoden Überladung, die keinen <xref:System.StringComparison> Parameter festgelegt hat.
+ Eine Zeichen folgen Vergleichsoperation verwendet eine Methoden Überladung, die keinen Parameter festgelegt hat <xref:System.StringComparison> .
 
-## <a name="rule-description"></a>Regelbeschreibung
- Viele Zeichen folgen Operationen, die für die Methoden <xref:System.String.Compare%2A> und <xref:System.String.Equals%2A> am wichtigsten sind, stellen eine Überladung bereit, die einen <xref:System.StringComparison>-Enumerationswert als Parameter akzeptiert.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Viele Zeichen folgen Operationen, die am wichtigsten die <xref:System.String.Compare%2A> -und- <xref:System.String.Equals%2A> Methoden sind, stellen eine Überladung bereit, die einen- <xref:System.StringComparison> Enumerationswert als Parameter akzeptiert.
 
- Wenn eine Überladung vorhanden ist, die einen <xref:System.StringComparison>-Parameter annimmt, sollte Sie anstelle einer Überladung verwendet werden, die diesen Parameter nicht annimmt. Wenn Sie diesen Parameter explizit festlegen, wird der Code häufig übersichtlicher und leichter zu verwalten.
+ Wenn eine Überladung vorhanden ist, die einen- <xref:System.StringComparison> Parameter annimmt, sollte Sie anstelle einer-Überladung verwendet werden, die diesen Parameter nicht annimmt. Wenn Sie diesen Parameter explizit festlegen, wird der Code häufig übersichtlicher und leichter zu verwalten.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie Zeichen folgen Vergleichsmethoden in über Ladungen, die die <xref:System.StringComparison>-Enumeration als Parameter akzeptieren. Beispiel: Ändern Sie `String.Compare(str1, str2)` in `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie Zeichen folgen Vergleichsmethoden in über Ladungen, die die- <xref:System.StringComparison> Enumeration als Parameter akzeptieren. Beispiel: ändern `String.Compare(str1, str2)` Sie in `String.Compare(str1, str2, StringComparison.Ordinal)` .
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe vorgesehen ist und daher nicht lokalisiert wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Globalisierungs Warnungen](../code-quality/globalization-warnings.md) [CA1309: Ordnungszahl-StringComparison verwenden](../code-quality/ca1309-use-ordinal-stringcomparison.md)

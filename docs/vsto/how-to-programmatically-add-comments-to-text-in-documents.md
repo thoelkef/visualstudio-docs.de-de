@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten'
+title: 'Gewusst wie: Programm gesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967669"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538112"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Vorgehensweise: Programmgesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten
-  Die Comments-Eigenschaft der Document-Klasse hinzugefügt einen Textbereich in einem Microsoft Office Word-Dokument ein Kommentar.
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten
+  Die Comments-Eigenschaft der Document-Klasse fügt einen Kommentar zu einem Textbereich in einem Microsoft Office Word-Dokument hinzu.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "62967669"
      [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]
 
-## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Um einen neuen Kommentar zu Text in einem VSTO-Add-in hinzufügen
+## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>So fügen Sie einen neuen Kommentar zu Text in einem VSTO-Add-in hinzu
 
 1. Rufen Sie die Methode <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> der Eigenschaft <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> auf, und geben Sie einen Bereich sowie den Kommentartext ein.
 
@@ -46,6 +46,6 @@ ms.locfileid: "62967669"
 ## <a name="robust-programming"></a>Stabile Programmierung
  Zum Ändern der Benutzerinitialen, die Word Kommentaren hinzufügt, verwenden Sie die Eigenschaft <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Entfernen Sie aller Kommentare aus Dokumenten](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
-- [Dokumenthostelement](../vsto/document-host-item.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Programm gesteuertes Entfernen aller Kommentare aus Dokumenten](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
+- [Dokument Host Element](../vsto/document-host-item.md)
