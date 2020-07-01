@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128291"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285978"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
 
@@ -48,6 +48,8 @@ Im Folgenden finden Sie die grundlegenden Schritte:
 2. Klicken Sie auf **Debuggen/Leistungsprofiler**. Im Fenster ".diagsession" sollte eine Liste der Profilerstellungstools angezeigt werden.
 
 3. Wählen Sie **Anwendungszeitachse** aus, und klicken Sie unten im Fenster auf **Starten** .
+
+   ![Tool „Anwendungszeitachse“ ausgewählt](../profiling/media/apptimelineselect.png "Tool „Anwendungszeitachse“")
 
    > [!NOTE]
    > Möglicherweise wird das Fenster „Benutzerkontensteuerung“ angezeigt, in dem Sie zur Eingabe Ihrer Berechtigung zur Ausführung von *VsEtwCollector.exe* aufgefordert werden. Klicken Sie auf **Ja**.

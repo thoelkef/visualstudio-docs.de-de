@@ -1,7 +1,7 @@
 ---
-title: 'Gewusst wie: Auswählen eines Ergebnisrepositorys für Auslastungstests'
+title: 'Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.connectstringmissing
 - vs.test.load.dialog.databaseconnectstring
@@ -15,14 +15,14 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589005"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287570"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Ergebnisrepositorys für Auslastungstests
+# <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse
 
 Sie sind nicht auf einen lokalen Ergebnisspeicher beschränkt. Häufig werden Auslastungstests auf einem Remotesatz von Agent-Computern ausgeführt. Agents können zusammen mit einem Controller eine größere simulierte Last generieren als jeder einzelne Computer. Weitere Informationen finden Sie im Artikel zu [Testcontrollern und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -43,7 +43,7 @@ Testergebnisse von den Agents oder den lokalen Computern können auf einem belie
 4. Geben Sie in **Servername** den Namen des Servers ein, auf dem Sie die `LoadTest`-Skripts ausgeführt haben.
 
     > [!TIP]
-    > Wenn Sie SQL Express auf dem lokalen Computer für den Auslastungstestspeicher verwenden, geben Sie „\<Computername>\sqlexpress“ ein (z. B. **MyComputer\sqlexpress**).
+    > Wenn Sie SQL Express auf dem lokalen Computer für den Auslastungstestspeicher verwenden, geben Sie „\<computername>\sqlexpress“ ein (z. B. **MyComputer\sqlexpress**).
 
 5. Unter **Beim Server anmelden** können Sie **Windows-Authentifizierung verwenden** auswählen. Sie können einen Benutzernamen und das Kennwort angeben. In diesem Fall müssen Sie jedoch auch die Option **Kennwort speichern** auswählen.
 
@@ -53,7 +53,7 @@ Testergebnisse von den Agents oder den lokalen Computern können auf einem belie
 
 8. Klicken Sie im Dialogfeld **Testcontroller verwalten** auf **Schließen** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)

@@ -1,7 +1,7 @@
 ---
 title: Ändern der Methodensignatur
-description: Entfernen von Parametern einer Methode oder Ändern deren Reihenfolge Klicken Sie mit der rechten Maustaste auf eine Methode, wählen Sie „Schnelle Aktionen“ und anschließend „Refactorings“ aus, und klicken Sie auf „Signatur ändern“.
-ms.date: 01/26/2018
+description: Informationen zum Hinzufügen und Entfernen von Parametern einer Methode oder Ändern ihrer Reihenfolge. Klicken Sie mit der rechten Maustaste auf eine Methode, wählen Sie „Schnelle Aktionen“ und anschließend „Refactorings“ aus, und klicken Sie auf „Signatur ändern“.
+ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68711264"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283875"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Ändern einer Methodensignatur durch Refactoring
 
@@ -29,9 +29,9 @@ Dieses Refactoring gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie Parameter einer Methode entfernen oder deren Reihenfolge ändern.
+**Beschreibung:** Hiermit können Sie Parameter einer Methode entfernen oder deren Reihenfolge ändern.
 
-**Hintergrund**: Sie möchten einen Methodenparameter verschieben oder entfernen, der gegenwärtig an vielen Stellen verwendet wird.
+**Hintergrund:** Sie möchten einen Methodenparameter verschieben oder entfernen, der gegenwärtig an vielen Stellen verwendet wird.
 
 **Vorteile**: Sie könnten die Parameter manuell entfernen und neu anordnen und anschließend alle Aufrufe dieser Methode suchen und nacheinander ändern, was jedoch Fehler verursachen könnte.  Bei diesem Refactoringtool wird der Task automatisch ausgeführt.
 
@@ -59,19 +59,27 @@ Dieses Refactoring gilt für:
 
 3. Mit den Schaltflächen auf der rechten Seite im angezeigten Dialogfeld **Signatur ändern** können Sie die Methodensignatur ändern:
 
-   ![Dialogfeld „Signatur ändern“](media/changesignature-dialog-cs.png)
+   ![Dialogfeld „Signatur ändern“](media/change-signature.png)
 
    | Schaltfläche | Beschreibung
    | ------ | ---
    | **Nach oben/unten** | Den ausgewählten Parameter in der Liste nach oben oder nach unten verschieben
+   | **Add** | Einen neuen Parameter zur Liste hinzufügen
    | **Entfernen** | Den ausgewählten Parameter aus der Liste entfernen
    | **Wiederherstellen** | Den ausgewählten, durchgestrichenen Parameter in der Liste wiederherstellen
 
    > [!TIP]
    > Aktivieren Sie das Kontrollkästchen **Vorschau der Verweisänderungen**, um vor einer endgültigen Änderung das [Ergebnis zu sehen](../../ide/preview-changes.md).
 
-4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **OK**, um die Änderungen zu übernehmen.
+4. Durch Auswählen von **Hinzufügen** im Dialogfeld **Signatur ändern** wird das Dialogfeld **Parameter hinzufügen** geöffnet. Mit dem Dialogfeld **Parameter hinzufügen** können Sie einen Typnamen und einen Parameternamen hinzufügen. Sie können mit einem Standardwert festlegen, ob der Parameter erforderlich oder optional ist. Sie können dann auf der Aufrufsite einen Wert hinzufügen und ein benanntes Argument für diesen Wert auswählen, oder Sie können eine TODO-Variable einführen. Die TODO-Variable fügt ein TODO in Ihren Code ein, sodass Sie jeden Fehler untersuchen und jede Aufrufsite unabhängig durchlaufen und entscheiden können, was übergeben werden soll. Für optionale Parameter besteht die Möglichkeit, die Aufrufsite vollständig auszulassen.
 
+    ![Dialogfeld „Parameter hinzufügen“: C#](media/add-parameter-dialog.png)
+
+5. Wenn Sie mit dem Hinzufügen eines Parameters fertig sind, klicken Sie auf die Schaltfläche **OK**, um eine Vorschau der Änderungen anzuzeigen.
+
+    ![Dialogfeld „Signatur ändern“](media/change-signature.png)
+
+6. Klicken Sie auf **OK**, um die Änderungen anzuzeigen.
    - C#:
 
       ![Ergebnis der Signaturänderung in C#](media/changesignature-result-cs.png)
@@ -80,7 +88,7 @@ Dieses Refactoring gilt für:
 
       ![Ergebnis der Signaturänderung in Visual Basic](media/changesignature-result-vb.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

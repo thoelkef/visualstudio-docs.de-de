@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Festlegen eines Anwendungssymbols (Visual Basic, C#)'
+title: 'Vorgehensweise: Angeben eines Anwendungssymbols (Visual Basic, C#)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
@@ -11,14 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596137"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284060"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Vorgehensweise: Festlegen eines Anwendungssymbols (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Vorgehensweise: Angeben eines Anwendungssymbols (Visual Basic, C#)
 
 Die `Icon`-Eigenschaft für ein Projekt gibt die Symboldatei ( *.ico*) an, die für die kompilierte Anwendung im **Datei-Explorer** und in der Windows-Taskleiste angezeigt wird.
 
@@ -31,15 +31,15 @@ Auf die `Icon`-Eigenschaft können Sie im **Projekt-Designer** über den Bereich
 
 1. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe**) aus.
 
-1. Wählen Sie in der Menüleiste **Projekt** > **Eigenschaften** aus.
+1. Klicken Sie in der Menüleiste auf **Projekt** > **Eigenschaften**.
 
 1. Wählen Sie, wenn der **Projekt-Designer** angezeigt wird, die Registerkarte **Anwendung** aus.
 
 1. **(Visual Basic)** &mdash;Wählen Sie in der Liste **Symbol** eine Symboldatei (*ICO*-Datei) aus.
 
-    **C#** &mdash; Wählen Sie neben der Liste **Symbol** die Schaltfläche **\<Durchsuchen...>** aus, und navigieren Sie zum Speicherort der gewünschten Symboldatei.
+    **C#** &mdash; Wählen Sie neben der Liste **Symbol** die Schaltfläche **\<Browse...>** aus, und navigieren Sie zum Speicherort der gewünschten Symboldatei.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)

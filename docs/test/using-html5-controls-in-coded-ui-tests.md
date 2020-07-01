@@ -1,18 +1,18 @@
 ---
 title: Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585586"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289338"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 
@@ -20,7 +20,7 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Voraussetzungen**
+**Anforderungen**
 
 - Visual Studio Enterprise
 
@@ -28,22 +28,22 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 > In Versionen vor Internet Explorer 10 konnten Tests der programmierten UI im Vergleich zum Internet Explorer-Prozess mit einer höheren Berechtigungsstufe ausgeführt werden. Beim Ausführen von Tests der programmierten UI in Internet Explorer 10 müssen sowohl der Prozess für Tests der programmierten UI als auch der Internet Explorer-Prozess dieselbe Berechtigungsstufe aufweisen. Dies liegt an sichereren AppContainer-Features in Internet Explorer 10.
 
 > [!WARNING]
-> Wenn Sie einen Test der programmierten UI in Internet Explorer 10 erstellen, wird dieser mit Internet Explorer 9 oder Internet Explorer 8 möglicherweise nicht ausgeführt. Der Grund hierfür ist, dass Internet Explorer 10 HTML5-Steuerelemente wie Audio, Video, ProgressBar und Schieberegler enthält. Diese HTML5-Steuerelemente werden von Internet Explorer 9 oder Internet Explorer 8 nicht erkannt. Entsprechend kann der Test der codierten UI unter Verwendung von Internet Explorer 9 einige HTML5-Steuerelemente enthalten, die auch nicht von Internet Explorer 8 erkannt werden.
+> Wenn Sie einen Test der programmierten UI in Internet Explorer 10 erstellen, wird dieser mit Internet Explorer 9 oder Internet Explorer 8 möglicherweise nicht ausgeführt. Der Grund hierfür ist, dass Internet Explorer 10 HTML5-Steuerelemente wie Audio, Video, ProgressBar und Schieberegler enthält. Diese HTML5-Steuerelemente werden von Internet Explorer 9 oder Internet Explorer 8 nicht erkannt. Entsprechend kann der Test der codierten UI unter Verwendung von Internet Explorer 9 einige HTML5-Steuerelemente enthalten, die auch nicht von Internet Explorer 8 erkannt werden.
 
 ## <a name="audio-control"></a>Audio-Steuerelement
 
-**Audiosteuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
+**Audio-Steuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
 
 ![HTML5-Audiosteuerelement](../test/media/codedui_html5_audio.png)
 
 |Aktion|Aufzeichnung|Generierter Code|
 |-|---------------|-|
-|**Audiowiedergabe**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Audiodatei mit dem Namen \<name> ab 00:00:00 wiedergeben|HtmlAudio.Play(TimeSpan)|
-|**Einen bestimmten Zeitpunkt in der Audiodatei auswählen**|Audiodatei mit dem Namen \<name> ab 00:01:48 auswählen|HtmlAudio.Seek(TimeSpan)|
-|**Audiodatei anhalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Audiodatei mit dem Namen \<name> bei 00:01:53 anhalten|HtmlAudio.Pause(TimeSpan)|
-|**Ton ausschalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Audiodatei mit dem Namen \<name> stummschalten|HtmlAudio.Mute()|
-|**Stummschaltung der Audiodatei aufheben**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Stummschaltung der Audiodatei mit dem Namen \<name> aufheben|HtmlAudio.Unmute()|
-|**Ändern der Lautstärke der Audiodatei**|Lautstärke der Audiodatei mit dem Namen \<name> auf 79 % festlegen|HtmlAudio.SetVolume(float)|
+|**Audiowiedergabe**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Audio \<name> ab 00:00:00 wiedergeben|HtmlAudio.Play(TimeSpan)|
+|**Einen bestimmten Zeitpunkt in der Audiodatei auswählen**|Audio \<name> bis 00:01:48 suchen|HtmlAudio.Seek(TimeSpan)|
+|**Audiodatei anhalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Audio \<name> bei 00:01:53 anhalten|HtmlAudio.Pause(TimeSpan)|
+|**Ton ausschalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Audio \<name> stummschalten|HtmlAudio.Mute()|
+|**Stummschaltung der Audiodatei aufheben**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Stummschaltung des Audios \<name> aufheben|HtmlAudio.Unmute()|
+|**Ändern der Lautstärke der Audiodatei**|Lautstärke des Audios \<name> auf 79 % festlegen|HtmlAudio.SetVolume(float)|
 
 Unter [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) finden Sie eine Liste der Eigenschaften, zu denen Sie eine Assertion hinzufügen können.
 
@@ -61,12 +61,12 @@ Unter [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEle
 
 |Aktion|Aufzeichnung|Generierter Code|
 |-|---------------|-|
-|**Videowiedergabe**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Video mit dem Namen \<name> ab 00:00:00 wiedergeben|HtmlVideo.Play(TimeSpan)|
-|**Einen bestimmten Zeitpunkt im Video auswählen**|Video mit dem Namen \<name> ab 00:01:48 auswählen|HtmlVideo.Seek(TimeSpan)|
-|**Video anhalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Video mit dem Namen \<name> bei 00:01:53 anhalten|HtmlVideo.Pause(TimeSpan)|
-|**Video stummschalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Video mit dem Namen \<name> stummschalten|HtmlVideo.Mute()|
-|**Stummschaltung des Videos aufheben**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Stummschaltung des Videos mit dem Namen \<name> aufheben|HtmlVideo.Unmute()|
-|**Ändern der Lautstärke des Videos**|Lautstärke des Videos mit dem Namen \<name> auf 79 % festlegen||
+|**Videowiedergabe**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Video \<name> ab 00:00:00 wiedergeben|HtmlVideo.Play(TimeSpan)|
+|**Einen bestimmten Zeitpunkt im Video auswählen**|Video \<name> bis 00:01:48 suchen|HtmlVideo.Seek(TimeSpan)|
+|**Video anhalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Video \<name> bei 00:01:53 anhalten|HtmlVideo.Pause(TimeSpan)|
+|**Video stummschalten**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Video \<name> stummschalten|HtmlVideo.Mute()|
+|**Stummschaltung des Videos aufheben**<br /><br /> Direkt über das Steuerelement oder über das Steuerelement-Kontextmenü.|Stummschaltung des Videos \<name> aufheben|HtmlVideo.Unmute()|
+|**Ändern der Lautstärke des Videos**|Lautstärke des Videos \<name> auf 79 % festlegen||
 
 Unter [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) finden Sie eine Liste der Eigenschaften, zu denen Sie eine Assertion hinzufügen können.
 
@@ -82,7 +82,7 @@ Unter [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/vid
 
 ![HTML5 ProgressBar-Steuerelement](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [HTML-Elemente](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)

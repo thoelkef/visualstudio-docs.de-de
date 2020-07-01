@@ -1,7 +1,7 @@
 ---
 title: Auffinden von Vorlagen
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591046"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284242"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen
 
@@ -36,9 +36,9 @@ Standardmäßig werden Vorlagen, die gemeinsam mit Visual Studio installiert wer
 
 ::: moniker range="vs-2017"
 
-- *%Programme(x86)%\\Microsoft Visual Studio\\2017\\\<Edition>\\Common7\IDE\ProjectTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
+- *%Programme(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
 
-- *%Programme(x86)%\\Microsoft Visual Studio\\2017\\\<Edition>\Common7\IDE\ItemTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
+- *%Programme(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
 
 Das folgende Verzeichnis enthält beispielsweise die Elementvorlagen für Visual Basic für Englisch (LCID 1033):
 
@@ -48,9 +48,9 @@ Das folgende Verzeichnis enthält beispielsweise die Elementvorlagen für Visual
 
 ::: moniker range=">=vs-2019"
 
-- *%Programme(x86)%\\Microsoft Visual Studio\\2019\\\<Edition>\\Common7\IDE\ProjectTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
+- *%Programme(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
 
-- *%Programme(x86)%\\Microsoft Visual Studio\\2019\\\<Edition>\Common7\IDE\ItemTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
+- *%Programme(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Sprache\>\\<Gebietsschema-ID\>*
 
 Das folgende Verzeichnis enthält beispielsweise die Elementvorlagen für Visual Basic für Englisch (LCID 1033):
 
@@ -156,10 +156,10 @@ Sie können in Unterkategorien enthaltene Vorlagen in den übergeordneten Katego
 
 ::: moniker-end
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
-- [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+- [How to: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [How to: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)

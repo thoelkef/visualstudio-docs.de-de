@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79132716"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285295"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -23,6 +23,13 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Anmelden bei Visual Studio für Mac](/visualstudio/mac/signing-in).
+
+::: moniker range="vs-2017"
+
+> [! ACHTUNG] Wenn Sie Visual Studio 2017 verwenden, um auf Ressourcen zuzugreifen, die für bedingten Zugriff konfiguriert sind, kann dies zu einer verschlechterten Authentifizierung führen, da innerhalb derselben Visual Studio-Sitzung mehrmals eine erneute Authentifizierung angefordert wird. 
+> Um mit Ressourcen zu arbeiten, die für bedingten Zugriff konfiguriert sind, aktualisieren Sie mindestens auf Visual Studio 2019 Update 16.6. Weitere Informationen finden Sie unter [Erfahren Sie, wie Visual Studio mit Konten verwendet wird, die mehrstufige Authentifizierung erfordern](work-with-multi-factor-authentication.md).
+
+::: moniker-end
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Warum sollte ich mich in Visual Studio anmelden?
 

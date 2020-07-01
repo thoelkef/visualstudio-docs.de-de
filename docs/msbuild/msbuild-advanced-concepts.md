@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633446"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289286"
 ---
 # <a name="msbuild-advanced-concepts"></a>Weiterführende MSBuild-Konzepte
 
@@ -32,7 +32,8 @@ Die Dokumente in diesem Abschnitt wird beschrieben, wie erweiterte Techniken zum
 |[Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)|Beschreibt das Kompilieren einer Anwendung zur Ausführung in verschiedenen Versionen von .NET Framework.|
 |[Bewährte Methoden](../msbuild/msbuild-best-practices.md)|Empfiehlt bewährte Methoden zum Schreiben von MSBuild-Skripts.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
 - [Protokollierung in MSBuild](../msbuild/logging-in-msbuild.md)
+- [So erstellt MSBuild Projekte](build-process-overview.md)

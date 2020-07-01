@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Verweisen mit dem Verweis-Manager
 ms.date: 08/02/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595309"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284725"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -127,9 +127,9 @@ Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  *\<VersionMinimum\>* ist die niedrigste geltende Frameworkversion. Wenn *\<VersionMinimum\>* Version 3.0 ist, gelten in *AssemblyFoldersEx* angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.
+  *\<VersionMinimum\>* ist die niedrigste in Frage kommende .NET Framework-Version. Wenn *\<VersionMinimum\>* v3.0 ist, gelten in *AssemblyFoldersEx* angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.
 
-  *\<AssemblyLocation\>* ist das Verzeichnis der Assemblys, die Sie im Dialogfeld **Verweis hinzufügen** anzeigen möchten, z.B. *C:\MyAssemblies*.
+  *\<AssemblyLocation\>* ist das Verzeichnis der Assemblys, die Sie im Dialogfeld **Verweis hinzufügen** anzeigen möchten, z. B. *C:\MyAssemblies*.
 
   Indem der Registrierungsschlüssel unter dem `HKEY_LOCAL_MACHINE`-Knoten erstellt wird, können die Assemblys am angegebenen Speicherort für alle Benutzer im Dialogfeld **Verweis hinzufügen** angezeigt werden. Wenn der Registrierungsschlüssel unter dem `HKEY_CURRENT_USER`-Knoten erstellt wird, hat dies nur Einfluss auf die Einstellung für den aktuellen Benutzer.
 
@@ -186,11 +186,11 @@ Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben
 
 Sie können nicht zu einem SDK navigieren und es dem Projekt hinzufügen. Sie können nur zu einer Datei navigieren (beispielsweise zu einer Assembly oder einer *WINMD*-Datei) und sie dem Projekt hinzufügen.
 
-Beim Erstellen eines Dateiverweises auf ein WinMD wird als Layout erwartet, dass die *\<FileName>.winmd*-, *\<FileName>.dll*- und *\<FileName.pri*-Dateien alle nebeneinander platziert werden. Wenn Sie in den folgenden Szenarien auf ein WinMD verweisen, wird ein unvollständiger Satz von Dateien in das Projektausgabeverzeichnis kopiert und es treten infolgedessen Build- und Laufzeitfehler auf.
+Beim Erstellen eines Dateiverweises auf eine WinMD-Datei wird als Layout erwartet, dass die Dateien mit den Erweiterungen *\<FileName>.winmd*, *\<FileName>.dll* und *\<FileName>.pri* alle nebeneinander platziert werden. Wenn Sie in den folgenden Szenarien auf ein WinMD verweisen, wird ein unvollständiger Satz von Dateien in das Projektausgabeverzeichnis kopiert und es treten infolgedessen Build- und Laufzeitfehler auf.
 
-- **Native Komponente**: Ein natives Projekt erstellt ein WinMD für jeden unzusammenhängenden Satz von Namespaces und eine DLL, die aus der Implementierung besteht. Die WinMDs haben unterschiedliche Namen. Wenn auf diese native Komponentendatei verwiesen wird, erkennt MSBuild nicht, dass die ungleich benannten WinMDs eine Komponente darstellen. Folglich werden nur die *\<FileName>.dll*- und *\<FileName>.winmd*-Dateien mit identischem Namen kopiert, und es treten Laufzeitfehler auf. Erstellen Sie ein Erweiterungs-SDK, um dieses Problem zu umgehen. Weitere Informationen finden Sie unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md).
+- **Native Komponente**: Ein natives Projekt erstellt ein WinMD für jeden unzusammenhängenden Satz von Namespaces und eine DLL, die aus der Implementierung besteht. Die WinMDs haben unterschiedliche Namen. Wenn auf diese native Komponentendatei verwiesen wird, erkennt MSBuild nicht, dass die ungleich benannten WinMDs eine Komponente darstellen. Folglich werden nur die Dateien mit den Erweiterungen *\<FileName>.dll* und *\<FileName>.winmd* mit identischem Namen kopiert, und es treten Laufzeitfehler auf. Erstellen Sie ein Erweiterungs-SDK, um dieses Problem zu umgehen. Weitere Informationen finden Sie unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md).
 
-- **Verarbeiten von Steuerelementen**: Ein XAML-Steuerelement besteht mindestens aus einer *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* und einer *\<ImageName>.jpg*. Bei der Projekterstellung werden die Ressourcendateien, die mit dem Dateiverweis verknüpft sind, nicht in das Ausgabeverzeichnis des Projekts kopiert. Es werden nur die Dateien *\<FileName>.winmd*, *\<FileName>.dll* und *\<FileName>.pri* kopiert. Ein Buildfehler wird protokolliert, um den Benutzer zu informieren, dass die Ressourcen *\<XamlName>.xaml* und *\<ImageName>.jpg* fehlen. Damit der Vorgang erfolgreich abgeschlossen wird, muss der Benutzer diese Ressourcendateien manuell in das Projektausgabeverzeichnis für Build und Debuggen/Laufzeit kopieren. Erstellen Sie zur Umgehung des Problems entweder ein Erweiterungs-SDK, indem Sie die Schritte unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md) ausführen, oder bearbeiten Sie die Projektdatei, und fügen Sie folgende Eigenschaft hinzu:
+- **Verarbeiten von Steuerelementen**: Ein XAML-Steuerelement besteht mindestens aus den folgenden Dateien: *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* und *\<ImageName>.jpg*. Bei der Projekterstellung werden die Ressourcendateien, die mit dem Dateiverweis verknüpft sind, nicht in das Ausgabeverzeichnis des Projekts kopiert. Es werden nur die Dateien mit den Erweiterungen *\<FileName>.winmd*, *\<FileName>.dll* und *\<FileName>.pri* kopiert. Ein Buildfehler wird protokolliert, um den Benutzer zu informieren, dass die Ressourcen *\<XamlName>.xaml* und *\<ImageName>.jpg* fehlen. Damit der Vorgang erfolgreich abgeschlossen wird, muss der Benutzer diese Ressourcendateien manuell in das Projektausgabeverzeichnis für Build und Debuggen/Laufzeit kopieren. Erstellen Sie zur Umgehung des Problems entweder ein Erweiterungs-SDK, indem Sie die Schritte unter [Create a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md) ausführen, oder bearbeiten Sie die Projektdatei, und fügen Sie folgende Eigenschaft hinzu:
 
     ```xml
     <PropertyGroup>

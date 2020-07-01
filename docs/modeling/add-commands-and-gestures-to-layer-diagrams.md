@@ -1,21 +1,21 @@
 ---
 title: Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747671"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531390"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
 
@@ -38,7 +38,7 @@ Projektvorlagen stellen die schnellste Methode dar, eine Erweiterung zu erstelle
 
    Mit dieser Vorlage wird ein Projekt mit einem kleinen Arbeitsbeispiel erstellt.
 
-2. Um die Erweiterung zu testen, drücken Sie **STRG** +**F5** oder **F5**.
+2. Drücken Sie **STRG** + **F5** oder **F5**, um die Erweiterung zu testen.
 
     Eine experimentelle Instanz von Visual Studio wird gestartet. Erstellen Sie in dieser Instanz ein Abhängigkeits Diagramm. Der Befehl oder die Gestenerweiterung sollte in diesem Diagramm funktionieren.
 
@@ -48,7 +48,7 @@ Projektvorlagen stellen die schnellste Methode dar, eine Erweiterung zu erstelle
 
     [Definieren eines Menübefehls](#command)
 
-    [Definieren eines Gestenhandlers](#gesture)
+    [Definieren eines Gesten Handlers](#gesture)
 
 ::: moniker range="vs-2017"
 
@@ -83,11 +83,11 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
 
     3. Wählen Sie bei **Quelle**die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.
 
-    4. Speichern Sie die Datei.
+    4. Speichern Sie die Datei .
 
 5. Kehren Sie zum Befehls-oder gestenhandlerprojekt zurück, und fügen Sie die folgenden Projekt Verweise hinzu:
 
-   |**Verweis**|**Optionen**|
+   |**Referenz**|**Optionen**|
    |-|-|
    |Programme\Microsoft Visual Studio [Version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Erstellen und Bearbeiten von Ebenen|
    |Microsoft.VisualStudio.Uml.Interfaces|Erstellen und Bearbeiten von Ebenen|
@@ -100,15 +100,15 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
 
      [Definieren eines Menübefehls](#command)
 
-     [Definieren eines Gestenhandlers](#gesture)
+     [Definieren eines Gesten Handlers](#gesture)
 
-7. Um die Funktion zu testen, drücken Sie **STRG** +**F5** oder **F5**.
+7. Drücken Sie **STRG** + **F5** oder **F5**, um das Feature zu testen.
 
    Eine experimentelle Instanz von Visual Studio wird geöffnet. Erstellen oder öffnen Sie in dieser Instanz ein Abhängigkeits Diagramm.
 
 8. Um die VSIX in der Haupt Instanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen Sie die **VSIX** -Datei im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie im Datei-Explorer auf die vsix-Datei.
 
-## <a name="command"></a> Definieren eines Menübefehls
+## <a name="defining-a-menu-command"></a><a name="command"></a> Definieren eines Menübefehls
 
 Sie können einer vorhandenen Geste oder einem Befehlsprojekt mehrere Menübefehlsdefinitionen hinzufügen. Jeder Befehl wird von einer Klasse definiert, die über die folgenden Eigenschaften verfügt:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Definieren eines Gestenhandlers
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Definieren eines Gestenhandlers
 
 Ein Gesten Handler reagiert, wenn der Benutzer Elemente auf das Abhängigkeits Diagramm zieht und wenn der Benutzer auf eine beliebige Stelle im Diagramm doppelklickt.
 
@@ -246,7 +246,7 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
      **OnDragDrop** - Wird aufgerufen, wenn der Benutzer ein Element im Diagramm ablegt.
 
-- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Beispiel:
+- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

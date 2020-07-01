@@ -1,18 +1,18 @@
 ---
 title: Konfigurieren von Komponententests mit einer RUNSETTINGS-Datei
 ms.date: 10/03/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880350"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288766"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -214,6 +214,27 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
+  
+  <!-- Configuration for loggers -->
+  <LoggerRunSettings>
+    <Loggers>      
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
 
   <!-- Adapter Specific sections -->
 
@@ -310,6 +331,32 @@ public void HomePageTest()
 ```
 
 Fügen Sie Ihrer Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Feld und eine öffentliche <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Eigenschaft hinzu, um Testlaufparameter zu verwenden.
+
+### <a name="logger-run-settings"></a>Protokollierungslaufeinstellungen
+
+```xml
+<LoggerRunSettings>
+    <Loggers>        
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
+```
+
+Der Abschnitt `LoggerRunSettings` definiert eine oder mehrere Protokollierungen, die für den Testlauf verwendet werden. Die häufigsten Protokollierungen sind Console, TRX und HTML. 
 
 ### <a name="mstest-run-settings"></a>MSTest-Testlaufeinstellungen
 

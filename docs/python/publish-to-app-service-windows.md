@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586562"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289169"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Veröffentlichen in Azure App Service unter Windows
 
@@ -129,7 +129,7 @@ Wenn Sie eine App in Azure App Service über Visual Studio 2017 und höher verö
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    Fehler beim Hinzufügen Ihrer URL zu den Arrayergebnissen im Fehler „DisallowedHost at / Invalid HTTP_HOST header:“ \<Website-URL\>. Sie müssen ALLOWED_HOSTS möglicherweise die \<Website-URL\> hinzufügen.
+    Fehler beim Hinzufügen Ihrer URL zu den Arrayergebnissen im „Fehler DisallowedHost at/Invalid HTTP_HOST header: \<site URL\>. Sie müssen ALLOWED_HOSTS möglicherweise \<site URL\> hinzufügen.“
 
     Beachten Sie, dass wenn das Array leer ist, Django automatisch 'localhost' zulässt. Wenn Sie jedoch Ihre Produktions-URL hinzufügen, werden diese Funktionen entfernt. Aus diesem Grund sollten Sie separate Entwicklungs- und Produktionskopien von `settings.py` beibehalten, oder alternativ die Umgebungsvariablen verwenden, um die Laufzeitwerte zu kontrollieren.
 
@@ -209,7 +209,7 @@ Visual Studio führt ebenfalls die folgenden Schritte aus, die Bestandteil diese
 - Erstellen Sie eine `web.config`-Datei auf dem Server, der angemessene Zeiger auf die `wsgi_app`-Funktionen der App und den Standardinterpreter von App Service für Python 3.4 enthält.
 - Deaktivieren Sie die Verarbeitung von Dateien im `static`-Ordner des Projekts (die Regeln dazu finden Sie in der `web.config`-Datei).
 - Veröffentlichen Sie die virtuelle Umgebung auf dem Server.
-- Fügen Sie eine `web.debug.config`-Datei und die PTVSD-Tools zum Debuggen hinzu, um das Remotedebuggen zu aktivieren.
+- Fügen Sie eine `web.debug.config`-Datei und die Tools zum Debuggen hinzu, um das Remotedebuggen zu aktivieren. Für Visual Studio 2019 bis Version 16.4 bietet ptvsd die Tools zum Debuggen. Für Visual Studio 2019 ab Version 16.5 bietet debugpy die Tools zum Debuggen.
 
 Wie zuvor bereits erwähnt, vereinfachen diese automatischen Schritte zwar den Veröffentlichungsprozess, jedoch gestaltet sich dadurch auch die Kontrolle über die Python-Umgebung schwieriger. Beispielsweise wird die `web.config`-Datei nur auf dem Server erstellt und nicht dem Projekt hinzugefügt. Der Veröffentlichungsprozess nimmt außerdem zusätzliche Zeit in Anspruch, da die gesamte virtuelle Umgebung von Ihrem Entwicklungscomputer kopiert wird und keine Abhängigkeit von der Serverkonfiguration entsteht.
 

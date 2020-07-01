@@ -29,7 +29,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0001: Verwenden v
 |Element|Wert|  
 |-|-|  
 |Regel-ID|DA0001|  
-|Category|.NET Framework-Verwendung|  
+|Kategorie|.NET Framework-Verwendung|  
 |Profilerstellungsmethoden|Stichproben<br /><br /> Instrumentierung|  
 |`Message`|Verwenden Sie für Verkettungen ggf. StringBuilder.|  
 |Nachrichtentyp|Warnung|  

@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169351"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289013"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
 
 Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes Element, das in einem MSBuild-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.
 
-\<Project> \<ItemGroup> \<Item>
+\<Project>
+\<ItemGroup>
+\<Item>
 
 ## <a name="syntax"></a>Syntax
 
@@ -77,7 +79,7 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 |`KeepDuplicates`|Optionales Attribut.<br /><br /> Gibt an, ob ein Element der Zielgruppe hinzugefügt werden soll, wenn es sich um ein exaktes Duplikat eines vorhandenen Elements handelt. Wenn das Quell- und Zielelement den gleichen `Include`-Wert aber unterschiedliche Metadaten aufweisen, wird das Element auch dann hinzugefügt, wenn `KeepDuplicates` auf `false` festgelegt ist. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).<br /><br /> Dieses Attribut ist nur gültig, wenn es für ein Element in einer `ItemGroup` angegeben wird, die sich in einem `Target` befindet.|
 |`KeepMetadata`|Optionales Attribut.<br /><br /> Die Metadaten für die Quellelemente, die den Zielelementen hinzugefügt werden sollen. Nur die Metadaten, deren Namen in der durch Semikolon getrennten Liste angegeben werden, werden von einem Quellelement in ein Zielelement übertragen. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).<br /><br /> Dieses Attribut ist nur gültig, wenn es für ein Element in einer `ItemGroup` angegeben wird, die sich in einem `Target` befindet.|
 |`RemoveMetadata`|Optionales Attribut.<br /><br /> Die Metadaten für die Quellelemente, die nicht an der Zielelemente übertragen werden sollen. Alle Metadaten werden aus einem Quellelement in ein Zielelement mit Ausnahme von Metadaten übertragen, deren Namen in der durch Semikolons getrennten Liste der Namen enthalten sind. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).<br /><br /> Dieses Attribut ist nur gültig, wenn es für ein Element in einer `ItemGroup` angegeben wird, die sich in einem `Target` befindet.|
-|`Update`|Optionales Attribut. (Nur für .NET Core-Projekte in Visual Studio 2017 oder höher verfügbar.)<br /><br /> Ermöglicht es Ihnen, Metadaten einer Datei zu ändern, die mithilfe einer Glob enthalten waren.<br /><br /> Dieses Attribut ist nur gültig, wenn es für ein Element in einer `ItemGroup` angegeben wird, die sich nicht in einem `Target` befindet.|
+|`Update`|Optionales Attribut. (Nur für .NET Core-Projekte in Visual Studio 2017 oder höher verfügbar.)<br /><br /> Ermöglicht das Ändern der Metadaten eines Elements. Wird normalerweise verwendet, um die Standardmetadaten bestimmter Elemente zu überschreiben, nachdem eine Gruppe von Elementen anfänglich angegeben wurde (z. B. mit einem Platzhalter).<br /><br /> Dieses Attribut ist nur gültig, wenn es für ein Element in einer `ItemGroup` angegeben wird, die sich nicht in einem `Target` befindet.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -95,7 +97,7 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 
 `Item`-Elemente definieren Eingaben ins Buildsystem und sind basierend auf ihren benutzerdefinierten Auflistungsnamen in Elementauflistungen gruppiert. Diese Elementtypen können als Parameter für [Aufgaben](../msbuild/msbuild-tasks.md) verwendet werden, die mithilfe der einzelnen Elemente in den Auflistungen die Schritte des Buildprozesses ausführen. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
-Mithilfe der Notation @(\<myType>) kann eine Auflistung von Elementen vom Typ \<myType> in eine durch Semikolons getrennte Liste von Zeichenfolgen erweitert und an einen Parameter übergeben werden. Wenn der Parameter vom Typ `string` ist, entspricht der Wert des Parameters der Liste der Elemente, die durch Semikolons getrennt sind. Wenn der Parameter ein Array von Zeichenfolgen ist (`string[]`), werden die einzelnen Elemente ins Array basierend auf der Position der Semikolons eingefügt. Ist der Task-Parameter vom Typ <xref:Microsoft.Build.Framework.ITaskItem>`[]`, entspricht der Wert dem Inhalt der Elementauflistung einschließlich ggf. angefügter Metadaten. Um Elemente mit einem anderen Zeichen als einem Semikolon voneinander zu trennen, verwenden Sie die Syntax @(\<myType>, '\<separator>').
+Mithilfe der Notation @(\<myType>) kann eine Auflistung von Elementen vom Typ \<myType> in eine durch Semikolons getrennte Liste von Zeichenfolgen erweitert und an einen Parameter übergeben werden. Wenn der Parameter vom Typ `string` ist, entspricht der Wert des Parameters der Liste der Elemente, die durch Semikolons getrennt sind. Wenn der Parameter ein Array von Zeichenfolgen ist (`string[]`), werden die einzelnen Elemente ins Array basierend auf der Position der Semikolons eingefügt. Ist der Task-Parameter vom Typ <xref:Microsoft.Build.Framework.ITaskItem>`[]`, entspricht der Wert dem Inhalt der Elementauflistung einschließlich ggf. angefügter Metadaten. Um jedes Element durch ein anderes Zeichen als ein Semikolon voneinander zu trennen, verwenden Sie die Syntax @(\<myType>, '\<separator>').
 
 Die MSBuild-Engine kann Platzhalter wie `*` und `?` sowie rekursive Platzhalter wie */\*\*/\*.cs* auswerten. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 

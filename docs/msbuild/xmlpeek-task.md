@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a76bf033fa3eb85f0626478b965285f32e5fb6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094661"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286120"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek-Aufgabe
 
@@ -42,8 +42,6 @@ Gibt die Werte wie von der XPath-Abfrage angegeben aus einer XML-Datei zurück
 ## <a name="remarks"></a>Hinweise
 
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
-
-
 
 ## <a name="example"></a>Beispiel
 
@@ -74,7 +72,49 @@ Verwenden Sie in diesem Beispiel zum Lesen von `value` etwa folgenden Code:
 </Target>
 ```
 
+Bei XML-Namespaces verwenden Sie den Parameter `Namespaces`, wie im folgenden Beispiel gezeigt. Mit der XML-Eingabedatei `XMLFile1.xml`:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<class AccessModifier='public' Name='test' xmlns:s='http://nsurl'>
+  <s:variable Type='String' Name='a'>This</s:variable>
+  <s:variable Type='String' Name='b'>is</s:variable>
+  <s:variable Type='String' Name='c'>Sparta!</s:variable>
+  <method AccessModifier='public static' Name='GetVal' />
+</class>
+```
+
+Und dem folgenden `Target` in einer Projektdatei definiert:
+
+```xml
+  <Target Name="TestPeek" BeforeTargets="Build">
+    <!-- Find the Name attributes -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/@Name"
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value1" />
+    </XmlPeek>
+    <Message Text="@(value1)"/>
+    <!-- Find 'variable' nodes (XPath query includes ".") -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/."
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value2" />
+    </XmlPeek>
+    <Message Text="@(value2)"/>
+  </Target>
+```
+
+Die Ausgabe enthält Folgendes aus dem Ziel von `TestPeek`:
+
+```output
+  TestPeek output:
+  a;b;c
+  <s:variable Type="String" Name="a" xmlns:s="http://nsurl">This</s:variable>;<s:variable Type="String" Name="b" xmlns:s="http://nsurl">is</s:variable>;<s:variable Type="String" Name="c" xmlns:s="http://nsurl">Sparta!</s:variable>
+```
+
 ## <a name="see-also"></a>Siehe auch
 
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [XPath-Abfragesyntax](https://wikipedia.org/wiki/XPath)

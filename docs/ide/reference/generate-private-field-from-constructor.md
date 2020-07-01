@@ -1,6 +1,6 @@
 ---
-title: Generieren eines privaten Felds aus einem Konstruktor
-ms.date: 03/10/2020
+title: Generieren eines privaten Felds und einer privaten Eigenschaft anhand eines Konstruktors
+ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -10,26 +10,24 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094028"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283722"
 ---
-# <a name="generate-private-field-from-constructor"></a>Generieren eines privaten Felds aus einem Konstruktor
+# <a name="generate-private-field-and-property-from-constructor"></a>Generieren eines privaten Felds und einer privaten Eigenschaft anhand eines Konstruktors
 
 Dieses Refactoring gilt für: 
 
 - C# 
 
-- Visual Basic
+**Beschreibung:** Dient zum Generieren eines privaten Felds oder einer privaten Eigenschaft anhand eines Konstruktors. 
 
-**Beschreibung:** Dieses Refactoring dient zum Generieren eines privaten Felds aus einem Konstruktor. 
+**Hintergrund:** Sie möchten schnell ein privates Feld oder eine private Eigenschaft anhand eines Konstruktors hinzufügen und initialisieren.
 
-**Hintergrund:** Verwenden Sie dieses Refactoring, wenn Sie schnell ein privates Feld aus einem Konstruktor hinzufügen möchten.
-
-**Vorteile**: Das Schreiben privater Felder kann zeitaufwändig und monoton sein. Die Verwendung dieses Refactorings ist schnell und macht das Programm stabiler.
+**Vorteile**: Das Schreiben privater Felder und Eigenschaften kann zeitaufwändig und monoton sein. Die Verwendung dieses Refactorings ist schnell und macht das Programm stabiler.
 
 ## <a name="how-to"></a>Vorgehensweise 
 
@@ -37,7 +35,9 @@ Dieses Refactoring gilt für:
 
 2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    
-3. Wählen Sie die Option zum **Erstellen und Initialisieren des Felds** aus.
+3. Wählen Sie als Nächstes eine der folgenden Optionen aus:
+
+- **Feld erstellen und initialisieren** oder **Eigenschaft erstellen und initialisieren**.
 
    ![Generieren eines privaten Felds aus einem Konstruktor](media/generate-private-field-from-constructor.png)
 

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf712cf26c7d2dbc5924aa495a7008fb790c33d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 605b6ff67963c8df3e711c3f0b000c23f82050cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633394"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289247"
 ---
 # <a name="msbuild-concepts"></a>MSBuild-Grundlagen
 
@@ -33,5 +33,6 @@ MSBuild bietet ein einfaches XML-Schema, mit dem Sie steuern können, wie die Bu
 | [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md) | Beschreibt, wie Sie einige Zeichen, die MSBuild nur in bestimmten Kontexten verwendet, mit Escapezeichen versehen. |
 | [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird. |
 | [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md) | Bietet eine Einführung zu den Bausteinen von MSBuild und beschreibt, wie MSBuild-Projekte erstellt, bearbeitet und debuggt werden, ohne die Visual Studio-IDE zu schließen. |
+| [So erstellt MSBuild Projekte](build-process-overview.md) | Beschreibt den internen Buildprozess, der in MSBuild verwendet wird. |
 | [MSBuild-Referenz](../msbuild/msbuild-reference.md) | Enthält Links zu Referenzmaterial. |
 | [MSBuild](../msbuild/msbuild.md) | Bietet eine Übersicht über das XML-Schema für Projektdateien, und enthält Informationen dazu, wie sich damit Prozesse für das Erstellen von Software steuern lassen. |

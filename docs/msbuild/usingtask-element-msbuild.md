@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431448"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289156"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
 
@@ -51,8 +51,10 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
+|`Architecture`|Optionales Attribut.<br /><br /> Gibt an, dass der Task in einem Prozess mit der angegebenen Bitanzahl ausgeführt werden muss. Wenn der aktuelle Prozess die Anforderung nicht erfüllt, wird der Task in einem Taskhostprozess ausgeführt, der die Anforderung erfüllt.<br /><br /> Unterstützte Werte sind `x86` (32 Bit), `x64` (64 Bit), `CurrentArchitecture`und `*` (beliebige Architektur).|  
 |`AssemblyName`|Entweder ist das Attribut `AssemblyName` oder das Attribut `AssemblyFile` erforderlich.<br /><br /> Der Namen zu ladenden Assembly. Das Attribut `AssemblyName` akzeptiert Assemblys mit sicheren Namen, auch wenn sichere Namen nicht erforderlich sind. Die Verwendung dieses Attributs entspricht dem Laden einer Assembly mit der <xref:System.Reflection.Assembly.Load%2A>-Methode in .NET.<br /><br /> Sie können dieses Attribut nicht verwenden, wenn das `AssemblyFile`-Attribut verwendet wird.|
 |`AssemblyFile`|Entweder ist das Attribut `AssemblyName` oder das Attribut `AssemblyFile` erforderlich.<br /><br /> Der Dateipfad der Assemblydatei. Dieses Attribut akzeptiert vollständige oder relative Pfade. Relative Pfade sind relativ zum Verzeichnis der Projektdatei oder Zieldatei, in dem das `UsingTask`-Element deklariert ist. Die Verwendung dieses Attributs entspricht dem Laden einer Assembly mit der <xref:System.Reflection.Assembly.LoadFrom%2A>-Methode in .NET.<br /><br /> Sie können dieses Attribut nicht verwenden, wenn das `AssemblyName`-Attribut verwendet wird.|
+|`Runtime`|Optionales Attribut.<br /><br /> Gibt an, dass der Task in einer .NET Framework-Runtime mit der angegebenen Version ausgeführt werden muss. Wenn der aktuelle Prozess die Anforderung nicht erfüllt, wird der Task in einem Taskhostprozess ausgeführt, der die Anforderung erfüllt. In .NET Core MSBuild nicht unterstützt.<br /><br /> Unterstützte Werte sind `CLR2` (.NET Framework 3.5), `CLR4` (.NET Framework 4.7.2 oder höher), `CurrentRuntime` und `*` (beliebige Runtime).|  
 |`TaskFactory`|Optionales Attribut.<br /><br /> Gibt die Klasse in der Assembly an, die für das Generieren von Instanzen des angegebenen `Task`-Namens verantwortlich ist.  Der Benutzer kann auch `Task` als ein untergeordnetes Element angeben, welches durch die Aufgabenfactory empfangen und zum Generieren der Aufgabe verwendet wird. Der Inhalt von `Task` ist für die Aufgabenfactory spezifisch.|
 |`TaskName`|Erforderliches Attribut.<br /><br /> Der Name der aus einer Assembly zu referenzierenden Aufgabe. Wenn Mehrdeutigkeiten möglich sind, sollte dieses Attribut immer vollständige Namespaces angeben. Wenn Mehrdeutigkeiten vorliegen, wählt MSBuild eine willkürliche Übereinstimmung auf, die zu unerwarteten Ergebnissen führen kann.|
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
@@ -110,5 +112,6 @@ Die Assembly mit der benutzerdefinierten Aufgabe wird bei der ersten Verwendung 
 ## <a name="see-also"></a>Siehe auch
 
 - [Aufgaben](../msbuild/msbuild-tasks.md)
+- [How to: Konfigurieren von Zielen und Tasks](../msbuild/how-to-configure-targets-and-tasks.md)   
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

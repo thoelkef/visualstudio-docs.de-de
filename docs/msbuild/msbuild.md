@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2387526860b7d6da136a72cf83727f6714e2e52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633069"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289195"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -70,7 +70,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  In den folgenden Abschnitten werden einige der Grundelemente des MSBuild-Projektdateiformats beschrieben. Ein Tutorial zum Erstellen einer einfachen Projektdatei finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-### <a name="BKMK_Properties"></a> Eigenschaften
+### <a name="properties"></a><a name="BKMK_Properties"></a> Eigenschaften
 
  Eigenschaften stellen Schlüssel/Wert-Paare dar, die zur Konfiguration von Builds verwendet werden können. Eigenschaften werden deklariert, indem ein Element mit dem Namen der jeweiligen Eigenschaft als untergeordnetes Element eines [PropertyGroup](../msbuild/propertygroup-element-msbuild.md)-Elements erstellt wird. Durch den folgenden Code wird beispielsweise die Eigenschaft `BuildDir` mit dem Wert `Build` erstellt.
 
@@ -86,11 +86,11 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 <Configuration  Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 ```
 
- In der gesamten Projektdatei kann mithilfe der Syntax $(\<PropertyName>) auf Eigenschaften verwiesen werden. Beispielsweise wird mit `$(BuildDir)` und `$(Configuration)` auf die Eigenschaft in den vorangehenden Beispielen verwiesen.
+ In der Projektdatei wird mit der Syntax $(\<PropertyName>) auf Eigenschaften verwiesen. Beispielsweise wird mit `$(BuildDir)` und `$(Configuration)` auf die Eigenschaft in den vorangehenden Beispielen verwiesen.
 
  Weitere Informationen zu Eigenschaften finden Sie unter [MSBuild Properties (MSBuild-Eigenschaften)](../msbuild/msbuild-properties.md).
 
-### <a name="BKMK_Items"></a> Elemente
+### <a name="items"></a><a name="BKMK_Items"></a> Elemente
 
  Elemente sind Eingaben in das Buildsystem und stellen in der Regel Dateien dar. Elemente werden auf Grundlage von benutzerdefinierten Elementnamen in Elementtypen gruppiert. Diese Elementtypen können als Parameter für Aufgaben verwendet werden, die mithilfe der einzelnen Elemente die Schritte des Buildprozesses ausführen.
 
@@ -103,7 +103,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 </ItemGroup>
 ```
 
- In der gesamten Projektdatei kann mithilfe der Syntax @(\<ItemType>) auf Elementtypen verwiesen werden. Auf den Elementtyp im Beispiel wird beispielsweise mit `@(Compile)` verwiesen.
+ Auf Elementtypen kann in der gesamten Projektdatei mit der Syntax @(\<ItemType>) verwiesen werden. Auf den Elementtyp im Beispiel wird beispielsweise mit `@(Compile)` verwiesen.
 
  In MSBuild muss bei Elementen und Attributnamen die Groß-/Kleinschreibung beachtet werden. Bei Namen von Eigenschaften, Elementen und Metadaten ist dies nicht der Fall. Im folgenden Beispiel werden der `Compile`-Elementtyp oder der `comPile`-Elementtyp oder eine beliebige andere Fallvariante erstellt und der Wert "one.cs;two.cs" zugewiesen.
 
@@ -116,7 +116,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Elemente können mit Platzhalterzeichen deklariert werden und zusätzliche Metadaten für erweiterte Buildszenarios enthalten. Weitere Informationen zu Elementen finden Sie unter [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente).
 
-### <a name="BKMK_Tasks"></a> Aufgaben
+### <a name="tasks"></a><a name="BKMK_Tasks"></a> Aufgaben
 
  Aufgaben sind Einheiten ausführbaren Codes, die in MSBuild-Projekten zum Ausführen von Buildvorgängen verwendet werden. Eine Aufgabe kann beispielsweise Eingabedateien kompilieren oder ein externes Tool ausführen. Aufgaben können wiederverwendet werden, auch von verschiedenen Entwicklern in unterschiedlichen Projekten.
 
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Weitere Informationen zu Aufgaben finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).
 
-### <a name="BKMK_Targets"></a>Ziele
+### <a name="targets"></a><a name="BKMK_Targets"></a>Ziele
 
  Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert und Abschnitte der Projektdatei als Einstiegspunkte in den Buildprozess verfügbar gemacht. Ziele werden oft in logischen Abschnitten gruppiert, um ihre Lesbarkeit zu erhöhen und Erweiterungen zu ermöglichen. Wenn die Buildschritte in Ziele unterteilt werden, können Sie einen Teil des Buildprozesses in anderen Zielen aufrufen, ohne diesen Codeabschnitt in jedes Ziel kopieren zu müssen. Wenn mehrere Einstiegspunkte in den Buildprozess die Erstellung von Verweisen erfordern, können Sie beispielsweise ein Ziel erstellen, durch das Verweise erstellt werden, und dieses Ziel anschließend über jeden Einstiegspunkt ausführen, für den es erforderlich ist.
 
@@ -158,7 +158,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Ein Tutorial zur Verwendung von MSBuild in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="BKMK_Multitargeting"></a>Festlegen von Zielversionen
+## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a>Festlegen von Zielversionen
 
  Mit Visual Studio können Sie eine Anwendung für bestimmte Versionen von .NET Framework kompilieren. Sie können eine Anwendung z. B. zweimal kompilieren: einmal so, dass sie unter .NET Framework 2.0 auf einer 32-Bit-Plattform ausgeführt werden kann, und einmal so, dass sie auf .NET Framework 4.5 auf einer 64-Bit-Plattform ausgerichtet ist. Die Möglichkeit, für mehr als ein Framework zu kompilieren, wird Festlegung von Zielversionen genannt.
 
@@ -190,6 +190,7 @@ Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multi
 | [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen) | Hier wird erläutert, wie das `Condition`-Attribut in einem MSBuild-Element verwendet wird. |
 | [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md) | Hier werden die Batchverarbeitung, das Ausführen von Transformationen, die Festlegung von Zielversionen sowie andere erweiterte Verfahren veranschaulicht. |
 | [Protokollierung in MSBuild](../msbuild/logging-in-msbuild.md) | Hier wird erläutert, wie Buildereignisse, Meldungen, Fehler protokolliert werden. |
+| [So erstellt MSBuild Projekte](build-process-overview.md) | Beschreibt den internen Buildprozess, der in MSBuild verwendet wird. |
 | [Zusätzliche Ressourcen](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Hierin werden Community- und Unterstützungsressourcen für weitere Informationen zu MSBuild aufgeführt. |
 
 ## <a name="reference"></a>Referenz

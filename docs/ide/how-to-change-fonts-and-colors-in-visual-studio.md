@@ -1,7 +1,7 @@
 ---
 title: Ändern von Schriftarten und Farben
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 06/01/2020
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -11,61 +11,116 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0eb2373117b382cb19f374581ada45a5732b9c4c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588875"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284681"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio
 
-Sie können die Farbe der IDE-Frame- und -Toolfenster in Visual Studio auf verschiedene Arten anpassen.
+Sie können die Schriftarten und Farben in Visual Studio auf viele Arten ändern. Sie können z. B. das standardmäßige blaue Farbdesign in das dunkle Design (auch als „dunkler Modus“ bezeichnet) ändern. Ebenso können Sie die Standardschriftart und -textgröße in eine andere Schriftart und -größe ändern.
 
-> [!TIP]
-> Informationen zum Ändern der Farben im Code-Editor finden Sie unter [Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+## <a name="change-the-color-theme"></a>Ändern des Farbdesigns
 
-## <a name="change-the-color-theme-of-the-ide"></a>Ändern des Farbschemas der IDE
+Sie können das Farbdesign des IDE-Rahmens- und der Toolfenster in Visual Studio wie folgt ändern.
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 1. Klicken Sie in der Optionsliste auf **Umgebung** > **Allgemein**.
 
-1. Wählen Sie in der Liste **Farbdesign** entweder das Standardschema **Blau** oder **Dunkel** bzw. **Hell** aus.
+1. Wählen Sie in der Liste **Farbdesign** entweder das Standarddesign **Blau**, das Design **Hell**, das Design **Dunkel** oder das Design **Blau (zusätzlicher Kontrast)** .
 
-> [!NOTE]
-> Wenn Sie ein Farbschema ändern, wird der Text in der IDE auf die Standardeinstellung oder zuvor benutzerdefinierte Schriftarten und Größen zurückgesetzt.
+   ![Screenshot des Dialogfelds „Optionen“, in dem das Farbdesign geändert wird](media/fonts-colors-theme.png "Screenshot des Dialogfelds „Optionen“, in dem Sie das Farbdesign ändern können")
 
-> [!TIP]
-> Sie können Visual Studio-Themen erstellen und bearbeiten, indem Sie den [Visual Studio Color Theme Editor (Visual Studio-Editor für Farbdesign)](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren.
+    > [!NOTE]
+    > Wenn Sie ein Farbdesign ändern, wird der Text in der IDE auf die Standardeinstellung oder zuvor benutzerdefinierte Schriftarten und -größen für dieses Design zurückgesetzt.
 
-## <a name="use-windows-high-contrast-colors"></a>Verwenden kontrastreicher Windows-Farben
+    :::moniker range="vs-2017"
 
-Drücken Sie die Tasten **Linke ALT**+**Linke UMSCHALT**+**DRUCK**.
+    > [!TIP]
+    > Sie können Ihre eigenen Visual Studio-Designs erstellen und bearbeiten, indem Sie den [Farbdesign-Editor für Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren.
 
-> [!WARNING]
-> Diese Option legt einen hohen Kontrast für alle Anwendungen und die Benutzeroberfläche auf dem aktuellen Computer fest.
+    :::moniker-end
 
-## <a name="change-ide-fonts"></a>Ändern von IDE-Schriftarten
+    :::moniker range="vs-2019"
 
-Sie können die Schriftart und Textgröße für alle Fenster und Dialogfelder in der IDE ändern. Sie können festlegen, dass nur bestimmte Fenster und andere Textelemente angepasst werden.
+    > [!TIP]
+    > Sie können eigene Visual Studio-Designs erstellen und bearbeiten, indem Sie den [Farbdesign-Designer für Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner) installieren.
 
-### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Ändern der Schriftart und -größe des gesamten Texts in der IDE
+    :::moniker-end
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+## <a name="change-fonts-and-text-size"></a>Ändern von Schriftarten und Textgröße
+
+Sie können die Schriftart und Textgröße für alle IDE-Rahmen- und Toolfenster oder nur für bestimmte Fenster oder Textelemente ändern. Sie können die Schriftart und Textgröße auch im Editor ändern.
+
+### <a name="to-change-the-font-and-text-size-in-the-ide"></a>So ändern Sie Schriftart und Textgröße in der IDE
+
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 1. Klicken Sie in der Optionsliste auf **Umgebung** > **Schriftarten und Farben**.
 
-1. Wählen Sie in der Liste **Einstellungen anzeigen für** den Eintrag **Umgebungsschriftart** aus.
+1. Wählen Sie in der Liste **Einstellungen anzeigen für** den Eintrag **Umgebung** aus.
 
-    > [!TIP]
+   ![Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben in der IDE](media/fonts-colors-environment.png "Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben in der IDE")
+
+    > [!NOTE]
     > Wenn Sie die Schriftart nur für die Toolfenster ändern möchten, wählen Sie in der Liste **Einstellungen anzeigen für** den Eintrag **Alle Texttoolfenster** aus.
 
-1. Wählen Sie in der Liste **Schriftart** eine Schriftart aus.
+1. Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und Textgröße für die IDE zu ändern.
 
-1. Wählen Sie in der Liste **Größe** eine Textgröße aus, und klicken Sie dann auf **OK**.
+1. Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
 
-## <a name="see-also"></a>Weitere Informationen
+### <a name="to-change-the-font-and-text-size-in-the-editor"></a>So ändern Sie Schriftart und Textgröße im Editor
 
-- [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Vorgehensweise: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
+
+1. Klicken Sie in der Optionsliste auf **Umgebung** > **Schriftarten und Farben**.
+
+1. Wählen Sie in der Liste **Einstellungen anzeigen für** die Option **Text-Editor**aus.
+
+   ![Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben im Editor](media/fonts-colors-text-editor.png "Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben im Editor")
+
+1. Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und Textgröße für den Editor zu ändern.
+
+1. Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
+
+Weitere Informationen finden Sie auf der Seite [Ändern von Schriftarten und Farben für den Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+
+## <a name="accessibility-options"></a>Barrierefreiheitsoptionen
+
+Wenn Sie unter Sehschwäche leiden, haben Sie die Wahl zwischen verschiedenen Optionen für das Farbdesign. Sie können eine Option mit hohem Kontrast für *alle* Apps und die Benutzeroberfläche auf einem Computer oder eine Option für zusätzlichen Kontrast nur für Visual Studio angeben.
+
+### <a name="use-windows-high-contrast"></a>Verwenden von hohem Kontrast unter Windows
+
+Gehen Sie wie folgt vor, um die Windows-Option „Hoher Kontrast“ zu aktivieren:
+
+- Drücken Sie unter Windows oder in einer beliebigen Microsoft-Anwendung **Linke ALT**+**Linke UMSCHALT**+**DRUCK**.
+
+- Wählen Sie unter Windows **Start** > **Einstellungen** > **Erleichterte Bedienung** > **Hoher Kontrast**.
+
+    > [!WARNING]
+    > Diese Windows-Einstellung „Hoher Kontrast“ gilt für alle Anwendungen und die Benutzeroberfläche auf dem Computer.
+
+### <a name="use-visual-studio-extra-contrast"></a>Verwenden von „Zusätzlicher Kontrast“ in Visual Studio
+
+Gehen Sie wie folgt vor, um die Visual Studio-Option „Zusätzlicher Kontrast“ zu aktivieren:
+
+1. Wählen Sie in Visual Studio auf der Menüleiste **Tools** > **Optionen** und dann in der Liste „Optionen“ **Umgebung** > **Allgemein** aus.
+
+1. Wählen Sie in der Dropdownliste **Farbdesign** das Design **Blau (zusätzlicher Kontrast)** und dann **OK** aus.
+
+Weitere Informationen zu anderen Visual Studio-Barrierefreiheitsoptionen, die Ihnen zur Verfügung stehen, finden Sie auf der Seite [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md).
+
+> [!TIP]
+> Wenn es eine Barrierefreiheitsoption für Farben oder Schriftarten gibt, die Ihrer Meinung nach sinnvoll sein könnte, aber derzeit nicht in Visual Studio verfügbar ist, teilen Sie uns dies mit, indem Sie **Feature vorschlagen** in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) auswählen. Weitere Informationen zu diesem Forum und seiner Funktionsweise finden Sie auf der Seite [Vorschlagen eines Features für Visual Studio](../ide/suggest-a-feature.md).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Weitere Einzelheiten zu allen Elementen der Benutzeroberfläche, für die Sie Schriftart und Farbschemas ändern können, finden Sie auf Seite [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+
+## <a name="see-also"></a>Siehe auch
+
+- [Ändern von Schriftarten und Farben für den Code-Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Features des Visual Studio-Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

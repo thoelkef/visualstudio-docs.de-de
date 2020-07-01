@@ -1,18 +1,18 @@
 ---
 title: 'Vorgehensweise: Testen einer C++-DLL für UWP-Apps'
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77274455"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285608"
 ---
 # <a name="how-to-test-a-c-dll"></a>Testen einer C++-DLL
 
@@ -22,11 +22,11 @@ In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Ent
 
 In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen. Hinweise dazu, welche Struktur verwendet werden soll, erhalten Sie unter [Ausführen von Komponententests für vorhandene C++-Anwendungen mit dem Test-Explorer](../test/how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
 
 ::: moniker range="vs-2019"
 
-Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Geben Sie im Dialogfeld **Neues Projekt erstellen** „test“ in das Suchfeld ein, und legen Sie dann **Sprache** auf C++ fest. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
+Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Geben Sie im Dialogfeld **Neues Projekt erstellen** „test“ in das Suchfeld ein, und legen Sie dann **Sprache** auf C++ fest. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
 
    ![Erstellen eines neuen UWP-Testprojekts](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,7 +34,7 @@ Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **
 
 ::: moniker range="vs-2017"
 
-Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert** > **Visual C++** , und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
+Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert** > **Visual C++** , und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)** .
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **
 
          Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
 
 1. Fügen Sie den Testcode ein:
 
@@ -77,7 +77,7 @@ Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **
 
      ![Test-Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
 
 ::: moniker range="vs-2019"
 
@@ -130,7 +130,7 @@ Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Si
 
     2. Erweitern Sie im Dialogfeld **RooterLib Property Page** (RooterLib-Eigenschaftenseite) die Option **Konfigurationseigenschaften** und anschließend **C++** , und wählen Sie **Präprozessor** aus.
 
-    3. Wählen Sie **\<Bearbeiten...>** aus der Liste **Präprozessordefinitionen** aus, und fügen Sie anschließend `ROOTERLIB_EXPORTS` zum Dialogfeld **Präprozessordefinitionen** hinzu.
+    3. Wählen Sie **\<Edit...>** aus der Liste **Präprozessordefinitionen** aus, und fügen Sie anschließend `ROOTERLIB_EXPORTS` zum Dialogfeld **Präprozessordefinitionen** hinzu.
 
 4. Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie *RooterLib.cpp* und fügen Sie den folgenden Code hinzu:
 
@@ -148,7 +148,7 @@ Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Si
 
     ```
 
-## <a name="make_the_dll_functions_visible_to_the_test_code"></a> Sichtbarmachen der DLL-Funktionen für den Testcode
+## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a> Sichtbarmachen der DLL-Funktionen für den Testcode
 
 1. Fügen Sie dem Projekt "RooterLibTests" "RooterLib" hinzu.
 
@@ -196,7 +196,7 @@ Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Si
 
    Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
-## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
 1. Fügen Sie einen neuen Test hinzu:
 
@@ -256,7 +256,7 @@ Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Si
 > [!TIP]
 > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
 
-## <a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
 
 1. Fügen Sie einen anderen Test zu *unittest1.cpp* hinzu:
 
@@ -325,7 +325,7 @@ Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Si
 
    ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
 
-## <a name="Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
 
 1. Vereinfachen Sie die zentrale Berechnung in der `SquareRoot`-Funktion:
 

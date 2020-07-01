@@ -1,7 +1,7 @@
 ---
 title: Isolieren von getestetem Code mithilfe von Microsoft Fakes
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 06/03/2020
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566890"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286959"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -29,10 +29,11 @@ Es gibt zwei Arten von Fakes:
 
 ![Fakes ersetzen andere Komponenten](../test/media/fakes-2.png)
 
-**Voraussetzungen**
+**Anforderungen**
 
 - Visual Studio Enterprise
 - Ein .NET Framework-Projekt
+- Die Unterstützung für Projekte im .NET Core- und SDK-Stil befindet sich derzeit in der Vorschau. [Weitere Informationen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - .NET Standard-Projekte werden nicht unterstützt.
@@ -45,7 +46,7 @@ Als allgemeine Richtlinie verwenden Sie Stubs für Aufrufe in der Visual Studio-
 
 Weitere Überlegungen:
 
-**Leistung.** Shims werden langsamer ausgeführt, da der Code zur Laufzeit neu geschrieben wird. Die Leistung von Stubs wird nicht auf diese Weise beeinträchtigt. Sie sind so schnell, wie es bei virtuellen Methoden möglich ist.
+**Leistung** Shims werden langsamer ausgeführt, da der Code zur Laufzeit neu geschrieben wird. Die Leistung von Stubs wird nicht auf diese Weise beeinträchtigt. Sie sind so schnell, wie es bei virtuellen Methoden möglich ist.
 
 **Statische Methoden, versiegelte Typen:** Sie können Stubs nur verwenden, um Schnittstellen zu implementieren. Daher können Stubtypen für folgende Methoden nicht verwendet werden: statische Methoden, nicht virtuelle Methoden, versiegelte virtuelle Methoden, Methoden in versiegelten Typen usw.
 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167298"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288922"
 ---
 # <a name="exec-task"></a>Exec-Aufgabe
 
@@ -41,7 +41,7 @@ In der folgenden Tabelle werden die Parameter für die `Exec`-Aufgabe beschriebe
 |`CustomErrorRegularExpression`|Optionaler `String`-Parameter.<br /><br /> Legt einen regulären Ausdruck fest, der verwendet wird, um Fehlerzeilen in der Ausgabe des Tools zu erkennen. Dies ist nützlich für Tools, die eine außergewöhnlich formatierte Ausgabe erzeugen.<br /><br />Standardwert: `null` (keine benutzerdefinierte Verarbeitung).|
 |`CustomWarningRegularExpression`|Optionaler `String`-Parameter.<br /><br /> Legt einen regulären Ausdruck fest, der verwendet wird, um Warnungszeilen in der Ausgabe des Tools zu erkennen. Dies ist nützlich für Tools, die eine außergewöhnlich formatierte Ausgabe erzeugen.<br /><br />Standardwert: `null` (keine benutzerdefinierte Verarbeitung).|
 |`EchoOff`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, gibt der Task nicht die erweiterte Form von `Command` an das MSBuild-Protokoll aus.<br /><br />Standardwert: `false`.|
-|`ExitCode`|Optionaler schreibgeschützter `Int32`-Ausgabeparameter.<br /><br /> Gibt den durch den ausgeführten Befehl bereitgestellten Exitcode an.|
+|`ExitCode`|Optionaler schreibgeschützter `Int32`-Ausgabeparameter.<br /><br /> Gibt den Exitcode an, der vom ausgeführten Befehl bereitgestellt wird, mit der Ausnahme, dass, wenn der Task Fehler protokolliert hat, der Prozess aber einen Exitcode von 0 (Erfolg) hatte. `ExitCode` wird auf -1 festgelegt.|
 |`IgnoreExitCode`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, ignoriert die Aufgabe den durch den ausgeführten Befehl bereitgestellten Exitcode. Andernfalls gibt die Aufgabe `false` zurück, wenn der ausgeführte Befehl einen Exitcode ungleich null (0) zurückgibt.<br /><br />Standardwert: `false`.|
 |`IgnoreStandardErrorWarningFormat`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `false`, werden Zeilen in der Ausgabe ausgewählt, die dem standardmäßigen Fehler-/Warnungsformat entsprechen, und als Fehler/Warnungen protokolliert. Wenn `true`, wird dieses Verhalten deaktiviert.<br /><br />Standardwert: `false`.|
 |`Outputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Ausgabeelemente aus der Aufgabe. Die `Exec`-Aufgabe legt diese nicht selbst fest. Stattdessen können Sie sie so bereitstellen, als ob die Aufgabe sie festgelegt hätte, damit sie später im Projekt verwendet werden können.|

@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Elementvorlagen mit mehreren Dateien
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593732"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284424"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien
 
@@ -30,13 +30,13 @@ Elementvorlagen mit mehreren Dateien erfordern Parameter, um sicherzustellen, da
 
 ## <a name="use-the-export-template-wizard"></a>Verwenden des Assistenten zum Exportieren von Vorlagen
 
-Eine Elementvorlage mit mehreren Dateien wird auf dieselbe Weise erstellt, wie eine Elementvorlage mit nur einer Datei. Weitere Informationen dazu finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md). Wählen Sie auf der Seite **Zu exportierendes Element auswählen** die Datei aus, von denen anderen Dateien abhängig sind (z.B. eine Windows Forms-Formulardatei). Der Assistent fügt der Vorlage automatische sämtliche abhängigen Dateien hinzu, z.B. Designer- und Ressourcendateien.
+Eine Elementvorlage mit mehreren Dateien wird auf dieselbe Weise erstellt, wie eine Elementvorlage mit nur einer Datei. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md). Wählen Sie auf der Seite **Zu exportierendes Element auswählen** die Datei aus, von denen anderen Dateien abhängig sind (z.B. eine Windows Forms-Formulardatei). Der Assistent fügt der Vorlage automatische sämtliche abhängigen Dateien hinzu, z.B. Designer- und Ressourcendateien.
 
 ## <a name="manually-create-a-multi-file-item-template"></a>Manuelles Erstellen einer Elementvorlage mit mehreren Dateien
 
 1. Erstellen Sie die Elementvorlage auf dieselbe Weise, wie Sie manuell eine Elementvorlage erstellen würden, die nur aus einer Datei besteht. Fügen Sie dabei allerdings jede Datei hinzu, die Bestandteil des Elements mit mehreren Dateien ist.
 
-1. Fügen Sie der *VSTEMPLATE*-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließend diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie den Wert des `TargetFileName`-Attributs auf *$fileinputname$.FileExtension* fest, wobei *FileExtension* der Erweiterung der Datei entspricht, die in der Vorlage enthalten ist. Beispiel:
+1. Fügen Sie der *VSTEMPLATE*-XML-Datei für jede einzelne Datei ein `ProjectItem`-Element hinzu. Fügen Sie anschließend diesem Element ein `TargetFileName`-Attribut hinzu. Legen Sie den Wert des `TargetFileName`-Attributs auf *$fileinputname$.FileExtension* fest, wobei *FileExtension* der Erweiterung der Datei entspricht, die in der Vorlage enthalten ist. Zum Beispiel:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -92,9 +92,9 @@ Das folgende Beispiel zeigt eine Windows Forms-Vorlage. Wenn ein Element basiere
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+- [How to: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
-- [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)
+- [How to: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md)

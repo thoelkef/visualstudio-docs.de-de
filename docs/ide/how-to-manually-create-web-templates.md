@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Webvorlagen
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591007"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284177"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Vorgehensweise: Manuelles Erstellen von Webvorlagen
 
@@ -41,7 +41,7 @@ Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen
    - CSharp
    - Visual Basic
 
-     Beispiel:
+     Zum Beispiel:
 
      ```xml
      <TemplateData>
@@ -81,7 +81,7 @@ Im folgenden Beispiel wird eine einfache *VSTEMPLATE*-Datei für eine Webprojekt
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)

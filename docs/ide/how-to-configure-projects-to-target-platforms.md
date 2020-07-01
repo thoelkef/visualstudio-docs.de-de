@@ -2,7 +2,7 @@
 title: 'Vorgehensweise: Konfigurieren von Projekten für Zielplattformen'
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58b60e23bf08fb86a8dd7bc09d760085b6ea25f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112538"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284599"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für Zielplattformen
 
@@ -51,6 +51,10 @@ Mit dem **Konfigurations-Manager** können Sie für ein Projekt schnell eine neu
     3. Wenn Sie die Einstellungen aus der aktuellen Plattformkonfiguration kopieren möchten, wählen Sie diese aus, und wählen Sie anschließend die Schaltfläche **OK** aus.
 
 Es werden die Eigenschaften für alle Projekte mit der 64-Bit-Plattform als Zielplattform aktualisiert, und der nächste Build des Projekts wird für 64-Bit-Plattformen optimiert.
+
+> [!NOTE]
+> Der Plattformname **Win32** wird für C++-Projekte verwendet und bedeutet **x86**. Visual Studio berücksichtigt sowohl Plattformen auf Projekt- als auch auf Projektmappenebene, wobei die Projektplattformen aus den sprachspezifischen Projektsystemen stammen. In C++-Projekten werden **Win32** und **x64** verwendet, aber in Projektmappenplattformen werden **x86** und **x64** verwendet. Wenn Sie **x86** als Projektmappenkonfiguration wählen, wählt Visual Studio für C++-Projekte die Plattform **Win32** aus. Um Plattformeinstellungen auf Projekt- und Projektmappenebene einzusehen, öffnen Sie den **Konfigurations-Manager**, und notieren Sie sich die beiden Plattformeinstellungen. Die Plattform auf Projektmappenebene wird in der Dropdownliste **Aktive Projektmappenplattform** angezeigt. Die Tabelle zeigt für jedes Projekt die Plattform auf Projektebene.
+> ![Screenshot der Projektmappenplattform und Projektplattform](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>Zielplattformen im Projekt-Designer
 

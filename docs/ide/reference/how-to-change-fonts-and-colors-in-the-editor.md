@@ -1,6 +1,6 @@
 ---
 title: Ändern von Schriftarten und Farben im Editor
-ms.date: 11/26/2018
+ms.date: 06/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595565"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283701"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Vorgehensweise: Ändern der im Editor in Visual Studio verwendeten Schriftarten und Farben
 
@@ -31,20 +31,29 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 
 - Die Optionen **Elementvordergrund**, **Elementhintergrund** und **Fett** können für jeden Typ Textelement festgelegt werden. Wenn Sie z.B. Farben ändern und für **Kommentar** und **Lesezeichen** **Fett** auswählen, werden andere Typen Textelemente nicht betroffen.
 
+> [!IMPORTANT]
+> Informationen zum Anpassen der Schriftarten und Farben für die IDE und nicht nur für den Code-Editor finden Sie auf der Seite **[ Ändern von Schriftarten und Farben in Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)** .
+
 ## <a name="change-the-default-font-face-size-and-colors"></a>So ändern Sie die Standardschriftart, -größe und -farben
 
-1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus. Wählen Sie unter **Umgebung** die Option [Schriftarten und Farben](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) aus.
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus. Wählen Sie unter **Umgebung** die Option **Schriftarten und Farben** aus.
 
-2. Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.
+1. Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.
 
-3. Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.
+   ![Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben im Editor](../../ide/media/fonts-colors-text-editor.png "Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben im Editor")
 
-4. Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
+1. Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.
+
+1. Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
 
     > [!TIP]
-    > Klicken Sie auf **Standardwerte verwenden**, um die Standardeinstellungen wiederherzustellen.
+    > Klicken Sie zum Zurücksetzen auf die Standardeinstellungen auf **Standardwerte verwenden**.
 
-5. Klicken Sie auf **OK**.
+1. Klicken Sie auf **OK**.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Weitere Informationen über die Schrift- und Farbänderungen, die Sie im Dialogfeld **Optionen** an der IDE vornehmen können, finden Sie auf der Seite [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 ## <a name="see-also"></a>Siehe auch
 

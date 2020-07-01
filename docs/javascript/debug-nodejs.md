@@ -2,7 +2,7 @@
 title: Debuggen einer JavaScript- oder TypeScript-App
 description: Visual Studio unterstützt das Debuggen JavaScript- and TypeScript-Apps in Visual Studio
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75678973"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285191"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -58,7 +58,7 @@ Wenn Ihre Quelle verkleinert oder von einem Transpiler wie TypeScript oder Babel
 
 Informationen zum Generieren von Quellzuordnungsdateien finden Sie unter [Generieren von Quellzuordnungsdateien zum Debuggen](#generate_source_maps).
 
-### <a name="prepare_the_browser_for_debugging"></a> Vorbereiten des Browsers auf das Debuggen
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> Vorbereiten des Browsers auf das Debuggen
 
 ::: moniker range=">=vs-2019"
 Für dieses Szenario können Sie entweder Microsoft Edge (Chromium), was derzeit in der IDE **Microsoft Edge Beta** genannt wird, oder Chrome verwenden.
@@ -162,7 +162,7 @@ Der Debugger benötigt Hilfe beim Identifizieren des richtigen Prozesses, um den
 
    * Wenn Sie Code in einer transpilierten JavaScript-Datei (z. B. *app-bundle.js*) unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *Dateiname.js.map*.
 
-### <a name="troubleshooting_source_maps"></a> Problembehandlung für Breakpoints und Quellzuordnungsdateien
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> Problembehandlung für Breakpoints und Quellzuordnungsdateien
 
 Wenn Sie Code in einer TypeScript- oder JSX-Quelldatei unterbrechen müssen und nicht in der Lage dazu sind, verwenden Sie **An Prozess anhängen** wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Stellen Sie sicher, dass Ihre Umgebung ordnungsgemäß eingerichtet ist:
 
@@ -174,7 +174,7 @@ Wenn Sie Code in einer TypeScript- oder JSX-Quelldatei unterbrechen müssen und 
 
 Wenn Sie den Code in einer Quelldatei (z. B. in *app.tsx*) unterbrechen müssen und nicht in der Lage dazu sind, können Sie alternativ versuchen, die `debugger;`-Anweisung in der Quelldatei zu verwenden oder Breakpoints in den Chrome-Entwicklertools (oder in den F12-Tools für Microsoft Edge) festzulegen.
 
-## <a name="generate_source_maps"></a> Generieren von Quellzuordnungen zum Debuggen
+## <a name="generate-source-maps-for-debugging"></a><a name="generate_source_maps"></a> Generieren von Quellzuordnungen zum Debuggen
 
 In Visual Studio sind Funktionen zum Verwenden und Generieren von Quellzuordnungen für JavaScript-Quelldateien verfügbar. Diese werden häufig benötigt, wenn eine Quelle verkleinert oder von einem Transpiler wie TypeScript oder Babel erstellt wird. Die verfügbaren Optionen sind vom Projekttyp abhängig.
 
@@ -210,7 +210,7 @@ Dies ist eine reine Entwicklungseinstellung, die das Debuggen von clientseitigem
 
 In komplizierten Szenarios eignen sich manchmal die Browsertools (**F12**) am besten zum Debuggen, da sie keine Änderungen an benutzerdefinierten Präfixen erfordern.
 
-### <a name="configure_source_maps"></a> Konfigurieren von Quellzuordnungsdateien mithilfe einer „tsconfig.json“-Datei
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> Konfigurieren von Quellzuordnungsdateien mithilfe einer „tsconfig.json“-Datei
 
 Wenn Sie eine *tsconfig.json*-Datei zu Ihrem Projekt hinzufügen, behandelt Visual Studio den Verzeichnisstamm wie ein TypeScript-Projekt. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und klicken Sie dann auf **Hinzufügen > Neues Element > TypeScript-JSON-Konfigurationsdatei**, um die Datei hinzuzufügen. Dann wird eine der folgenden Datei ähnlichen *tsconfig.json*-Datei zu Ihrem Projekt hinzugefügt.
 

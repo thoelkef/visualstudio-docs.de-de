@@ -1,7 +1,7 @@
 ---
 title: Analysieren von Auslastungstestergebnissen
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - results, load test
 - load test results, accessing
@@ -14,12 +14,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596462"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288532"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse
 
@@ -37,11 +37,11 @@ Das Auslastungstestergebnis für den abgeschlossenen Auslastungstest enthält Le
 
      Das Dialogfeld **Ergebnisse öffnen und verwalten** wird angezeigt.
 
-3. Wählen Sie unter **Enter a controller name to find load test results** (Controllernamen für die Suche nach Auslastungstestergebnissen eingeben) einen Controller aus. Wählen Sie **\<Lokal> - Kein Controller** aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
+3. Wählen Sie unter **Enter a controller name to find load test results** (Controllernamen für die Suche nach Auslastungstestergebnissen eingeben) einen Controller aus. Wählen Sie **\<local> - No controller>** (<Lokal – Kein Controller>) aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
 
-4. Wählen Sie unter **Show results for the following load test** (Ergebnisse für den folgenden Auslastungstest anzeigen) den Auslastungstest aus, dessen Ergebnisse angezeigt werden sollen. Wählen Sie **\<Show results for all tests>** (<Ergebnisse für alle Tests anzeigen>) aus, um alle Ergebnisse für alle Tests anzuzeigen.
+4. Wählen Sie unter **Show results for the following load test** (Ergebnisse für den folgenden Auslastungstest anzeigen) den Auslastungstest aus, dessen Ergebnisse angezeigt werden sollen. Wählen Sie **\<Show results for all tests>** aus, um alle Ergebnisse für alle Tests anzuzeigen.
 
-     Wenn Auslastungstestergebnisse verfügbar sind, werden diese in der Liste **Auslastungstestergebnisse** angezeigt. Die Spalten lauten **Time**, **Duration**, **User**, **Outcome**, **Test**, and **Description** (Zeit, Dauer, Benutzer, Ergebnis, Test und Beschreibung). Unter **Test** ist der Name des Tests und unter **Beschreibung** die optionale Beschreibung angegeben, die vor der Ausführung des Tests hinzugefügt werden kann.
+     Wenn Auslastungstestergebnisse verfügbar sind, werden diese in der Liste **Auslastungstestergebnisse** angezeigt. Die Spalten lauten **Time**, **Duration**, **User**, **Outcome**, **Test**, and **Description** (Zeit, Dauer, Benutzer, Ergebnis, Test und Beschreibung). **Test** ist der Name des Tests und unter **Beschreibung** wird die optionale Beschreibung angegeben, die vor der Ausführung des Tests hinzugefügt wurde.
 
     > [!NOTE]
     > Die Ergebnisse werden mit den neuesten Ergebnissen am Anfang der Liste angezeigt.
@@ -52,6 +52,6 @@ Das Auslastungstestergebnis für den abgeschlossenen Auslastungstest enthält Le
 
      Im Dialogfeld **Ergebnisse öffnen und verwalten** können Sie andere Aspekte von Auslastungstests verwalten, etwa das Importieren, Exportieren und Entfernen von Auslastungstestergebnissen. Weitere Informationen finden Sie unter [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

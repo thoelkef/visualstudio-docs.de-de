@@ -1,6 +1,6 @@
 ---
-title: Aufgabe löschen | Microsoft-Dokumentation
-ms.date: 11/04/2016
+title: Delete-Aufgabe | Microsoft-Dokumentation
+ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Delete
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634278"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288909"
 ---
 # <a name="delete-task"></a>Delete-Aufgabe
 
@@ -31,11 +31,11 @@ Löscht die angegebene Datei.
 
 ## <a name="parameters"></a>Parameter
 
-In der folgenden Tabelle werden die Parameter der `Delete` -Aufgabe beschrieben.
+In der folgenden Tabelle werden die Parameter der `Delete`-Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`DeletedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die Dateien an, die erfolgreich gelöscht wurden.|
+|`DeletedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Ausgabeparameter.<br /><br /> Gibt die Dateien an, die erfolgreich gelöscht wurden.|
 |`Files`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Legt die zu löschenden Dateien fest.|
 |`TreatErrorsAsWarnings`|Optionaler `Boolean`-Parameter<br /><br /> Wenn `true`, werden Fehler als Warnungen protokolliert. Der Standardwert ist `false`.|
 
@@ -48,22 +48,59 @@ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter vo
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird die Datei *MyApp.pdb* gelöscht.
+Im folgenden Beispiel wird die Datei *MyApp.pdb* gelöscht, wenn Sie das Ziel `DeleteDebugSymbolFile` erstellen.
 
 ```xml
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
 
     <PropertyGroup>
-        <AppName>MyApp</AppName>
+        <AppName>ConsoleApp1</AppName>
     </PropertyGroup>
 
-    <Target Name="DeleteFiles">
-        <Delete Files="$(AppName).pdb" />
+    <Target Name="DeleteDebugSymbolFile">
+        <Message Text="Deleting $(OutDir)$(AppName).pdb"/>
+        <Delete Files="$(OutDir)$(AppName).pdb" />
     </Target>
+  
 </Project>
+
 ```
+
+Wenn Sie die gelöschten Dateien nachverfolgen müssen, legen Sie `TaskParameter` auf `DeletedFiles` mit dem Elementnamen wie folgt fest:
+
+```xml
+      <Target Name="DeleteDebugSymbolFile">
+        <Delete Files="$(OutDir)$(AppName).pdb" >
+              <Output TaskParameter="DeletedFiles" ItemName="DeletedList"/>
+        </Delete>
+        <Message Text="Deleted files: '@(DeletedList)'"/>
+    </Target>
+```
+
+Anstatt Platzhalterzeichen direkt in der `Delete`-Aufgabe zu verwenden, erstellen Sie eine `ItemGroup` von zu löschenden Dateien und wenden danach die `Delete`-Aufgabe auf diese an. Stellen Sie jedoch sicher, dass Sie die `ItemGroup` überlegt platzieren. Wenn Sie in einer Projektdatei eine `ItemGroup` auf der obersten Ebene platzieren, wird sie schon frühzeitig noch vor Beginn des Builds ausgewertet, sodass sie keine Dateien enthält, die beim Buildprozess erstellt wurden. Platzieren Sie daher die `ItemGroup`, die die Liste der zu löschenden Elemente erstellt, in einem Ziel in der Nähe der `Delete`-Aufgabe. Sie können auch eine Bedingung angeben, um zu prüfen, dass die Eigenschaft nicht leer ist, damit Sie keine Elementliste mit einem Pfad erstellen, der beim Stammverzeichnis des Laufwerks beginnt.
+
+Die `Delete`-Aufgabe dient zum Löschen von Dateien. Wenn Sie ein Verzeichnis löschen möchten, verwenden Sie [RemoveDir](removedir-task.md).
+
+Die `Delete`-Aufgabe bietet keine Option zum Löschen schreibgeschützter Dateien. Um schreibgeschützte Dateien zu löschen, können Sie die `Exec`-Aufgabe verwenden, um den Befehl `del` oder einen gleichwertigen Befehl mit der entsprechenden Option zum Aktivieren des Löschens schreibgeschützter Dateien auszuführen. Sie müssen auf die Länge der Eingabeelementliste achten, da eine Längenbeschränkung für die Befehlszeile gilt. Außerdem müssen Sie dafür sorgen, dass Dateinamen mit Leerzeichen wie in diesem Beispiel behandelt werden:
+
+```xml
+<Target Name="DeleteReadOnly">
+  <ItemGroup>
+    <FileToDelete Include="read only file.txt"/>
+  </ItemGroup>
+  <Exec Command="del /F /Q &quot;@(FileToDelete)&quot;"/>
+</Target>
+```
+
+Berücksichtigen Sie beim Schreiben von Buildskripts im Allgemeinen, ob Ihr Löschvorgang logisch Teil eines `Clean`-Vorgangs ist. Wenn Sie einige Dateien festlegen müssen, die als Teil eines normalen `Clean`-Vorgangs bereinigt werden sollen, können Sie sie zur Liste `@(FileWrites)` hinzufügen, damit sie beim nächsten `Clean`-Vorgang gelöscht werden. Wenn mehr benutzerdefinierte Verarbeitung erforderlich ist, definieren Sie ein Ziel. Geben Sie an, dass es ausgeführt werden soll, indem Sie das Attribut `BeforeTargets="Clean"` oder `AfterTargets="Clean"` festlegen, oder definieren Sie Ihre benutzerdefinierte Version der Ziele `BeforeClean` oder `AfterClean`. Weitere Informationen finden Sie unter [Anpassen Ihres Builds](customize-your-build.md).
 
 ## <a name="see-also"></a>Siehe auch
 
+- [RemoveDir-Aufgabe](removedir-task.md)
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

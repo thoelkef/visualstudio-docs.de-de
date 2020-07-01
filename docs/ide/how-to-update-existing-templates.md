@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren vorhandener Projektelementvorlagen
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - item templates, updating
 - Visual Studio templates, updating
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591358"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283917"
 ---
 # <a name="how-to-update-existing-templates"></a>Vorgehensweise: Aktualisieren vorhandener Vorlagen
 
@@ -37,7 +37,7 @@ Visual Studio stellt den **Assistenten zum Exportieren von Vorlagen** bereit, de
 
 1. Befolgen Sie die Anweisungen im Assistenten, um die Vorlage als *ZIP*-Datei zu exportieren.
 
-1. (Optional) Speichern Sie die *ZIP*-Datei im folgenden Verzeichnis: *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates*, um es zur Auswahl verfügbar zu machen. Sie müssen diesen Schritt ausführen, wenn Sie im **Assistenten zum Exportieren von Vorlagen** nicht die Option **Vorlage automatisch in Visual Studio importieren** ausgewählt haben.
+1. (Optional) Speichern Sie die *ZIP*-Datei im folgenden Verzeichnis: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*, um es zur Auswahl verfügbar zu machen. Sie müssen diesen Schritt ausführen, wenn Sie im **Assistenten zum Exportieren von Vorlagen** nicht die Option **Vorlage automatisch in Visual Studio importieren** ausgewählt haben.
 
 1. Löschen Sie die alte *ZIP*-Vorlagendatei.
 
@@ -65,7 +65,7 @@ Sie können eine vorhandene Vorlage ohne den **Assistenten zum Exportieren von V
 
 1. Löschen Sie die extrahierten Vorlagendateien und die alte *ZIP*-Datei der Vorlage.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 55092145d5760e235dc0c38c5a191760af2a2bc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183612"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279769"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -106,7 +106,7 @@ Antwort:  Die Übermittlung einer Supportanfrage aus dem Azure-Portal umfasst dr
 
 Ausführliche Informationen finden Sie in der Dokumentation zum [technischen Support](vs-tech-support.md).
 
-### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Frage: Wer ist der Besitzer des geistigen Eigentums, das ich mit meiner persönlichen Gutschrift für Azure DevTest erstellt habe?
+### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Frage: Wer ist der Besitzer des geistigen Eigentums, das ich mit meiner persönlichen Gutschrift für Azure DevTest erstellt habe?
 Antwort:  Geistiges Eigentum, das von einem Mitarbeiter auf Grundlage der vom jeweiligen Unternehmen bereitgestellten Ressourcen geschaffen wurde, ist folglich geistiges Eigentum des Unternehmens, das die Ressource bereitstellt. Wenn Sie Ihr Visual Studio-Abonnement von Ihrem Arbeitgeber erhalten haben, gelten dessen Richtlinien für geistiges Eigentum. 
 
 ## <a name="support-resources"></a>Supportressourcen

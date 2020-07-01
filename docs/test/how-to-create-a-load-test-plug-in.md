@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines Auslastungstest-Plug-Ins
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.loadtestplugin
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97952f65d78f7204410d07b90e0e538fb8499116
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589122"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288025"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins
 
@@ -82,7 +82,7 @@ Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungste
     > [!WARNING]
     > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
-    > **Fehler bei der Anforderung: Ausnahme in \<plug-in>-Ereignis: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
+    > **Fehler bei der Anforderung: Ausnahme im Ereignis \<plug-in>: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >
