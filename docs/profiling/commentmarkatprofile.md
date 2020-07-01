@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777841"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545612"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Die `CommentMarkAtProfile`-Methode fügt der *VSP-Datei* einen Zeitstempelwert, eine numerische Markierung und eine Kommentarzeichenfolge hinzu. Der Zeitstempelwert kann verwendet werden, um externe Ereignisse zu synchronisieren. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die Funktion CommentMarkAtProfile enthält, auf ON festgelegt sein.
@@ -57,8 +57,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |MARK_TEXTTOOLONG|Die Zeichenfolge überschreitet die maximale Länge von 256 Zeichen. Die Kommentarzeichenfolge wurde abgeschnitten, und die Markierung und der Kommentar werden aufgezeichnet.|
 |MARK_OK|Bei Erfolg wird MARK_OK zurückgegeben.|
 
-## <a name="remarks"></a>Bemerkungen
- Der Profilerstellungsstatus für den Thread, der die Funktion „mark profile“ (Profil markieren) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare mit dem Mark-Befehl oder mit API-Funktionen (CommentMarkAtProfile, CommentMarkProfile, oder MarkProfile) eingefügt werden. Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.
+## <a name="remarks"></a>Hinweise
+ Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ (Profil markieren) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare mit dem Mark-Befehl oder mit API-Funktionen (CommentMarkAtProfile, CommentMarkProfile, oder MarkProfile) eingefügt werden. Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.
 
 > [!IMPORTANT]
 > CommentMarkAtProfile-Methoden sollten nur mit der Instrumentierung verwendet werden.
@@ -68,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 ## <a name="function-information"></a>Funktionsinformationen
 
-|||
+|Element|Wert|
 |-|-|
 |**Header**|Enthält *VSPerf.h*|
 |**Bibliothek**|Verwendet *VSPerf.lib*|
@@ -115,5 +115,5 @@ void ExerciseCommentMarkAtProfile(void)
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -3,7 +3,7 @@ title: Ändern von Visual Studio 2017
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern.
 ms.date: 02/10/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2ec3ae3f253997b86c2403ce57d5e8db6e9920b4
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77125350"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419184"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 

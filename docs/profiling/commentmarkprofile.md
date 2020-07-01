@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772785"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546587"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 Die `CommentMarkProfile`-Funktion fügt der *VSP*-Datei eine numerische Markierung und eine Textzeichenfolge hinzu. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die `CommentMarkProfile`-Funktion enthält, auf ON festgelegt sein.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |MARK_TEXTTOOLONG|Die Zeichenfolge überschreitet die maximale Länge von 256 Zeichen. Die Kommentarzeichenfolge wurde abgeschnitten, und die Markierung und der Kommentar werden aufgezeichnet.|
 |MARK_OK|Bei Erfolg wird MARK_OK zurückgegeben.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ („Profil markieren“) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare über den Mark-Befehl „VSInstr“ oder über Funktionen („CommentMarkAtProfile“, „CommentMarkProfile“, oder „MarkProfile“) eingefügt werden.
 
  Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der *VSP*-Datei zu markieren.
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 ## <a name="function-information"></a>Funktionsinformationen
 
-|||
+|Element|Wert|
 |-|-|
 |**Header**|Enthält VSPerf.h|
 |**Bibliothek**|Verwendet VSPerf.lib|
@@ -110,5 +110,5 @@ void ExerciseCommentMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

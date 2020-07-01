@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Erfahren Sie, wie Sie Visual Studio auf das neueste Release aktualisieren.
 ms.date: 07/31/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5d101ee2a4ce3d7a97382d829188a9902ccbd0c0
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77453394"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419145"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualisieren von Visual Studio auf die neueste Version
 

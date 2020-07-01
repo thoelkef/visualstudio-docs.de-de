@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144703"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541712"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analysieren der Netzwerkauslastung in UWP-Apps
 Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.Web.Http-API](/uwp/api/windows.web.http) Daten zu Netzwerkoperationen. Durch Analysieren der Daten können Sie Probleme wie Zugriffs- und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung in den Griff bekommen.
@@ -53,7 +53,7 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
 
  ![Detailbereich des Netzwerktools](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Header**|Informationen zu den Anforderungsheadern des Ereignisses.|
 |**Text**|Die Nutzlastdaten von Anforderung und Antwort.|

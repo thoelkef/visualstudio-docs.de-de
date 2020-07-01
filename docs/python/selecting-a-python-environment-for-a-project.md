@@ -2,7 +2,7 @@
 title: Auswählen eines Python-Interpreters und einer -Umgebung für ein Projekt
 description: Sie können eine bestimmte Python-Umgebung auswählen, einschließlich Anaconda-Umgebungen und virtueller Umgebungen, und auf ein bestimmtes Projekt anwenden.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 34ceb2ec7cc923f6642977cf4c70fbfae07bf523
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8bcb349f8ff99d1567bf94b83a96be6b2824c208
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307082"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520470"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Auswählen einer Python-Umgebung für ein Projekt
 

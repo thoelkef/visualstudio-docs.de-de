@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Erfahren Sie mehr zur Bereitstellung von Visual Studio in einer Unternehmensumgebung.
 ms.date: 03/09/2020
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bda9a73a7a1aabb2d288653ff4d7b20b1c40db8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79190278"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419262"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 

@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307280"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543675"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Anzeigen der Codestruktur mithilfe verschiedener Toolfenster
 
@@ -54,7 +54,7 @@ Wenn Ihr Projekt in die Quellcodeverwaltung eingecheckt wird, zeigt jedes **Klas
 
 Die Symbolleiste der **Klassenansicht** enthält die folgenden Befehle:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Neuer Ordner**|Erstellt einen virtuellen Ordner oder Unterordner, in dem Sie häufig verwendete Elemente organisieren können. Sie werden in der aktiven Projektmappendatei (*SUO*) gespeichert. Nach dem Umbenennen oder Löschen eines Elements in Ihrem Code wird es in einem virtuellen Ordner möglicherweise als Fehlerknoten angezeigt. Löschen Sie den Fehlerknoten, um dieses Problem zu beheben. Wenn Sie ein Element umbenannt haben, können Sie es aus der Projekthierarchie erneut in den Ordner verschieben.|
 |**Zurück**|Navigiert zum zuvor ausgewählten Element.|
@@ -65,7 +65,7 @@ Die Symbolleiste der **Klassenansicht** enthält die folgenden Befehle:
 
 Die Schaltfläche **Klassenansicht: Einstellungen** auf der Symbolleiste weist die folgenden Einstellungen auf:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Basistypen anzeigen**|Es werden die Basistypen angezeigt.|
 |**Projektverweise anzeigen**|Projektverweise werden angezeigt.|
@@ -80,7 +80,7 @@ Die Schaltfläche **Klassenansicht: Einstellungen** auf der Symbolleiste weist d
 
 Das Kontextmenü in der **Klassenansicht** kann in Abhängigkeit des ausgewählten Projekts die folgenden Befehle enthalten:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Gehe zu Definition**|Sucht nach der Definition des Elements im Quellcode oder im **Objektkatalog**, wenn das Element nicht im geöffneten Projekt definiert ist.|
 |**Definition durchsuchen**|Zeigt das ausgewählte Element im **Objektkatalog** an.|
@@ -112,7 +112,7 @@ Das Fenster **Aufrufhierarchie** findet keine Methodengruppenverweise, die Stell
 
 Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Als neuen Stamm hinzufügen**|Fügt den ausgewählten Knoten als neuer Stammknoten hinzu.|
 |**Stamm entfernen**|Entfernt den ausgewählten Stammknoten aus dem Strukturansichtsbereich.|
@@ -121,7 +121,7 @@ Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle:
 |**Kopieren**|Kopiert den ausgewählten Knoten (aber nicht dessen untergeordnete Knoten).|
 |**Aktualisieren**|Aktualisiert die Informationen.|
 
-## <a name="BKMK_ObjectBrowser"></a> Objektkatalog
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Objektkatalog
 
 Das Fenster **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.
 
@@ -151,7 +151,7 @@ Sie können den **Objektkatalog** zum Hinzufügen eines Assemblyverweises auf ei
 
 Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste können Sie eine der folgenden Ansichten festlegen:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Namespaces anzeigen**|Zeigt im linken Bereich anstelle von physischen Containern die Namespaces an. Die in mehreren physischen Containern gespeicherten Namespaces werden zusammengeführt.|
 |**Container anzeigen**|Zeigt im linken Bereich anstelle von Namespaces die physischen Container an. **Namespaces anzeigen** und **Container anzeigen** sind sich gegenseitig ausschließende Einstellungen.|
@@ -168,7 +168,7 @@ Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste
 
 Das Kontextmenü im **Objektkatalog** kann in Abhängigkeit des ausgewählten Projekts die folgenden Befehle enthalten:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Definition durchsuchen**|Zeigt den primären Knoten für das ausgewählte Objekt an.|
 |**Alle Verweise suchen**|Sucht das aktuell ausgewählte Objektelement und zeigt die Ergebnisse im Fenster **Suchergebnisse** an.|
@@ -197,7 +197,7 @@ Obwohl dieses Fenster schreibgeschützt ist, können Sie darin Haltepunkte oder 
 
 Das Kontextmenü in der **Codedefinition** kann die folgenden Befehle enthalten:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Schnellaktionen und Refactorings**||
 |**Umbenennen**||
@@ -224,6 +224,6 @@ Das Kontextmenü in der **Codedefinition** kann die folgenden Befehle enthalten:
 
 Sie können das Fenster **Dokumentgliederung** in Verbindung mit Designeransichten verwenden, z.B. mit dem Designer für XAML-Seiten oder einem Windows Form-Designer oder mit HTML-Seiten. Dieses Fenster zeigt die Elemente in einer Strukturansicht an, damit Sie die logische Struktur des Formulars oder der Seite betrachten und Steuerelemente finden können, die tief eingebettet oder ausgeblendet sind.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Symbole in der Klassenansicht und im Objektbrowser](../ide/class-view-and-object-browser-icons.md)

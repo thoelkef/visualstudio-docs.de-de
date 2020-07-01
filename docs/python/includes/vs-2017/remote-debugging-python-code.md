@@ -2,7 +2,7 @@
 title: Debuggen von Python-Code auf Linux-Remotecomputern
 description: Verwenden von Visual Studio zum Debuggen von Python-Code, der auf Linux-Remotecomputern ausgeführt wird, einschließlich der erforderlichen Konfigurationsschritte, Sicherheit und Problembehandlung.
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2628bfe669af2cd02e79ffbf0c7ec1d5dcf0e98
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285674"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541073"
 ---
 Visual Studio kann Python-Anwendungen sowohl lokal als auch remote (siehe [Remotedebuggen](../../../debugger/remote-debugging.md)) auf einem Windows-Computer starten und debuggen. Mithilfe der [ptvsd-Bibliothek](https://pypi.python.org/pypi/ptvsd) kann PTVS das Remotedebuggen auch auf einem anderen Betriebssystem, einem anderen Gerät oder in einer anderen Python-Implementierung als CPython ausführen.
 

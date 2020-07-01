@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62776776"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537084"
 ---
 # <a name="channels-threads-view"></a>Kanäle (Threadansicht)
 Die Parallelitätsschnellansicht zeigt vier Arten von Kanälen an: Threadkanäle, Datenträgerkanäle, Markerkanäle und GPU-Kanäle.
@@ -25,7 +25,7 @@ Die Parallelitätsschnellansicht zeigt vier Arten von Kanälen an: Threadkanäle
 ## <a name="thread-channels"></a>Threadkanäle
  In einem Threadkanal wird der Threadzustand nach Farbe für einen einzigen Thread angezeigt. Wenn Sie den Cursor auf dem Kanalnamen ruhen lassen, wird die Startfunktion für den angegebenen Thread angezeigt. Die Parallelitätsschnellansicht erkennt mehrere Arten von Threads. Die am häufigsten verwendeten Arten werden in der folgenden Tabelle angezeigt.
 
-|||
+|Thread|Beschreibung|
 |-|-|
 |Hauptthread|Der Thread, der die App startete.|
 |Arbeitsthread|Ein Thread, der durch den Hauptthread der Anwendung erstellt wurde.|
@@ -47,5 +47,5 @@ Die Parallelitätsschnellansicht zeigt vier Arten von Kanälen an: Threadkanäle
 ## <a name="gpu-channels"></a>GPU-Kanäle
  GPU-Kanäle zeigen Informationen zu DirectX 11-Aktivität auf dem System an.  Jede DirectX-Engine, die mit der Grafikkarte verbunden ist, hat einen separaten Kanal.  Die einzelnen Segmente geben die Zeit an, die mit der Verarbeitung eines DMA-Pakets zugebracht wurde.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Threadansicht](../profiling/threads-view-parallel-performance.md)

@@ -2,19 +2,19 @@
 title: Analysieren der CPU-Auslastung | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638840"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543389"
 ---
 # <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
@@ -61,7 +61,7 @@ Ab Visual Studio 2019 können Sie auf die Schaltflächen **Langsamsten Pfad erwe
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Datenspalten der CPU-Auslastung
 
-|||
+|name|Beschreibung|
 |-|-|
 |**CPU gesamt [Einheit, %]**|![Gesamt % Datengleichung](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Die Millisekunden und der prozentuale CPU-Anteil, der im ausgewählten Zeitbereich durch Aufrufe der Funktion und die von der Funktion aufgerufenen Funktionen verwendet wurde. Dies unterscheidet sich vom Zeitachsendiagramm **CPU-Auslastung**, das die gesamte CPU-Aktivität in einem Zeitbereich mit der insgesamt verfügbaren CPU vergleicht.|
 |**Eigen-CPU [Einheit, %]**|![Selbst % Gleichung](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Die Millisekunden und der prozentuale CPU-Anteil, der im ausgewählten Zeitbereich durch Aufrufe der Funktion verwendet wurde. Die von der Funktion aufgerufenen Funktionen sind dabei ausgeschlossen.|
@@ -80,7 +80,7 @@ Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knote
 ![Struktur der Aufrufstruktur](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struktur der Aufrufstruktur")
 ::: moniker-end
 
-|||
+|Bild|Beschreibung|
 |-|-|
 |![Schritt 1](../profiling/media/procguid_1.png "ProcGuid_1")|Der oberste Knoten in Aufrufstrukturen der CPU-Auslastung ist ein Pseudoknoten.|
 |![Schritt 2](../profiling/media/procguid_2.png "ProcGuid_2")|In den meisten Apps ist bei deaktivierter Option **Externen Code anzeigen** der Knoten der zweiten Ebene ein **[Externer Code]** -Knoten. Der Knoten enthält den System- und Frameworkcode, der die App startet und beendet, die Benutzeroberfläche zeichnet, die Threadplanung steuert und der App weitere Dienste auf unterer Ebene bereitstellt.|
