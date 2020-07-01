@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Verwalten des Steuerelement Layouts in Aktionsbereichen'
+title: 'Gewusst wie: Verwalten des Steuerelement Layouts in Aktionsbereichen'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 043f93c12181d34e9d2a92435c854cdf76f18904
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255824"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520146"
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>Vorgehensweise: Verwalten des Steuerelement Layouts in Aktionsbereichen
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>Gewusst wie: Verwalten des Steuerelement Layouts in Aktionsbereichen
   Ein Aktionsbereich wird standardmäßig rechts von einem Dokument oder Arbeitsblatt angedockt. Sie kann jedoch Links, oben oder unten angedockt werden. Wenn Sie mehrere Benutzer Steuerelemente verwenden, können Sie Code schreiben, um die Benutzer Steuerelemente im Aktionsbereich ordnungsgemäß zu stapeln. Weitere Informationen finden Sie unter [Übersicht über den Aktions](../vsto/actions-pane-overview.md)Bereich.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -29,18 +29,18 @@ ms.locfileid: "71255824"
  Die Stapelreihenfolge der Steuerelemente hängt davon ab, ob der Aktionsbereich vertikal oder horizontal angedockt ist.
 
 > [!NOTE]
-> Wenn der Benutzer die Größe des Aktionsbereichs zur Laufzeit ändert, können Sie die Größe der Steuerelemente mit dem Aktionsbereich festlegen. Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>-Eigenschaft eines Windows Forms-Steuerelements verwenden, um Steuerelemente im Aktionsbereich zu verankern. Weitere Informationen finden Sie unter [Vorgehensweise: Verankern von Steuerelementen](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)auf Windows Forms.
+> Wenn der Benutzer die Größe des Aktionsbereichs zur Laufzeit ändert, können Sie die Größe der Steuerelemente mit dem Aktionsbereich festlegen. Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>-Eigenschaft eines Windows Forms-Steuerelements verwenden, um Steuerelemente im Aktionsbereich zu verankern. Weitere Informationen finden Sie unter Gewusst [wie: Verankern von Steuerelementen auf Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>So legen Sie die Stapelreihenfolge der Aktionsbereich-Steuerelemente fest
 
-1. Öffnen Sie ein Projekt auf Dokument Ebene für Microsoft Office Word, das einen Aktionsbereich mit mehreren Benutzer Steuerelementen oder Steuerelementen für den Bereich "Bereich" enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie Word-Dokumenten oder Excel-Arbeits](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)Mappen einen Aktionsbereich hinzu.
+1. Öffnen Sie ein Projekt auf Dokument Ebene für Microsoft Office Word, das einen Aktionsbereich mit mehreren Benutzer Steuerelementen oder Steuerelementen für den Bereich "Bereich" enthält. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeits](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)Mappen.
 
 2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisDocument.cs** oder **ThisDocument. vb** , und klicken Sie dann auf **Code anzeigen**.
 
-3. Überprüfen Sie im EreignishandlerdesAktionsbereichs,obdieAusrichtungdesAktionsbereichshorizontalist.<xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>
+3. <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>Überprüfen Sie im Ereignishandler des Aktionsbereichs, ob die Ausrichtung des Aktionsbereichs horizontal ist.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
      [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
@@ -50,7 +50,7 @@ ms.locfileid: "71255824"
      [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
      [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
 
-5. In C#müssen Sie dem <xref:Microsoft.Office.Tools.Word.Document.Startup> -Ereignishandler einen Ereignishandler `ActionsPane` für das Hinzufügen. Weitere Informationen zum Erstellen von Ereignis Handlern finden [Sie unter Gewusst wie: Erstellen von Ereignis Handlern in Office](../vsto/how-to-create-event-handlers-in-office-projects.md)-Projekten.
+5. In c# müssen Sie dem-Ereignishandler einen Ereignishandler für das Hinzufügen `ActionsPane` <xref:Microsoft.Office.Tools.Word.Document.Startup> . Weitere Informationen zum Erstellen von Ereignis Handlern finden [Sie unter Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
 
@@ -67,7 +67,7 @@ ms.locfileid: "71255824"
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)
-- [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)

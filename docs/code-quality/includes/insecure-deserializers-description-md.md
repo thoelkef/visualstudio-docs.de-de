@@ -10,4 +10,4 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68147098"
 ---
-Unsichere Deserialisierer sind anfällig, wenn nicht vertrauenswürdige Daten zu deserialisieren. Ein Angreifer könnte die serialisierten Daten unerwartete Typen zum Einfügen von Objekten mit schädlichen Nebeneffekten ändern. Ein Angriff auf eine unsichere Deserialisierungsprogramm kann z. B. Befehle ausführen, auf das zugrunde liegende Betriebssystem, über das Netzwerk kommunizieren, Dateien, oder löschen.
+Unsichere deserialisierungssoren sind beim Deserialisieren nicht vertrauenswürdiger Daten anfällig. Ein Angreifer könnte die serialisierten Daten so ändern, dass unerwartete Typen eingefügt werden, um Objekte mit bösartigen Nebeneffekten einzuschleusen. Ein Angriff auf ein unsicherer Deserialisierungsprogramm könnte z. b. Befehle für das zugrunde liegende Betriebssystem ausführen, über das Netzwerk kommunizieren oder Dateien löschen.

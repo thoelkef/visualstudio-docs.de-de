@@ -15,19 +15,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fd81f9ea250cd1592f755a2aa6cb3ca09280a533
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff42cc2b8543fe8e1cf980a3574ae15922febf9b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666039"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521042"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
+|TypName|DoNotDeclareReadOnlyMutableReferenceTypes|
 |CheckId|CA2104|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechend|
@@ -35,10 +35,10 @@ ms.locfileid: "72666039"
 ## <a name="cause"></a>Ursache
  Ein extern sichtbarer Typ enthält ein extern sichtbares schreibgeschütztes Feld, bei dem es sich um einen änderbaren Referenztyp handelt.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Ein änderbarer Typ ist ein Typ, dessen Instanzdaten geändert werden können. Die <xref:System.Text.StringBuilder?displayProperty=fullName>-Klasse ist ein Beispiel für einen änderbaren Referenztyp. Sie enthält Member, die den Wert einer Instanz der-Klasse ändern können. Ein Beispiel für einen unveränderlichen Verweistyp ist die <xref:System.String?displayProperty=fullName>-Klasse. Nachdem Sie instanziiert wurde, kann sich der Wert nie ändern.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Ein änderbarer Typ ist ein Typ, dessen Instanzdaten geändert werden können. Die- <xref:System.Text.StringBuilder?displayProperty=fullName> Klasse ist ein Beispiel für einen änderbaren Referenztyp. Sie enthält Member, die den Wert einer Instanz der-Klasse ändern können. Ein Beispiel für einen unveränderlichen Verweistyp ist die- <xref:System.String?displayProperty=fullName> Klasse. Nachdem Sie instanziiert wurde, kann sich der Wert nie ändern.
 
- Der schreibgeschützte Modifizierer (Schreib geschützter in C#, [Schreib](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) [geschützter in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) und [Konstanten](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) in C++) in einem Verweistyp Feld (Zeiger in C++) verhindert, dass das Feld durch eine andere Instanz des Verweis Typs ersetzt wird. Der-Modifizierer verhindert jedoch nicht, dass die Instanzdaten des Felds durch den Verweistyp geändert werden.
+ Der schreibgeschützte Modifizierer ([Schreib](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) [geschützt in c#, Schreib](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) geschützt in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und [Konstanten](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) in C++) in einem Verweistyp Feld (Zeiger in C++) verhindert, dass das Feld durch eine andere Instanz des Verweis Typs ersetzt wird. Der-Modifizierer verhindert jedoch nicht, dass die Instanzdaten des Felds durch den Verweistyp geändert werden.
 
  Felder mit Schreib geschütztem Array sind von dieser Regel ausgenommen, führen jedoch zu einem Verstoß gegen [CA2105: Array Felder dürfen nicht](../code-quality/ca2105-array-fields-should-not-be-read-only.md) schreibgeschützt sein.
 

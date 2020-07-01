@@ -29,7 +29,7 @@ ms.locfileid: "85521173"
 |-|-|
 |TypName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
-|Category|Microsoft.Reliability|
+|Kategorie|Microsoft.Reliability|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
