@@ -2,18 +2,18 @@
 title: Erste Schritte mit Grafikdiagnose | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 06/08/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 473946353a1ea044464e409a75a838eaf52a1483
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286543"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350458"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdiagnose vor. Anschließend erfassen Sie Frames aus einer Direct3D-App und untersuchen diese in der Grafikanalyse.

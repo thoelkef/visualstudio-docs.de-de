@@ -11,4 +11,4 @@ ms.lasthandoff: 04/02/2020
 ms.locfileid: "80573191"
 ---
 > [!NOTE]
-> Interessieren Sie sich für die Entwicklung von Lösungen, die die Office-Erfahrung auf mehrere Plattformen erweitern? Sehen Sie sich das neue [Office-Add-In-Modell](/office/dev/add-ins/)an. Office-Add-Ins haben im Vergleich zu VSTO-Add-Ins und -Lösungen einen geringen Platzbedarf, und Sie können diese mithilfe fast aller Webprogrammiertechnologie wie HTML5, JavaScript, CSS3 und XML erstellen.
+> Möchten Sie Lösungen entwickeln, die die Office-Funktionen auf mehrere Plattformen ausweiten? Sehen Sie sich das neue [Office-Add-ins-Modell](/office/dev/add-ins/)an. Office-Add-ins haben im Vergleich zu VSTO-Add-Ins und-Lösungen einen geringen Speicherbedarf, und Sie können Sie mithilfe von fast allen webprogrammierungs Technologien wie HTML5, JavaScript, CSS3 und XML erstellen.

@@ -6,4 +6,4 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68144242"
 ---
-  **Gilt für:** Die Informationen in diesem Thema gelten für Dokument\-Ebene Projekte und VSTO hinzufügen\-in-Projekten. Finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekt Typ](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Gilt für:** Die Informationen in diesem Thema betreffen Projekte auf Dokument \- Ebene und VSTO Add \- in-Projekte. Siehe [verfügbare Funktionen nach Office-Anwendung und Projekttyp](../../vsto/features-available-by-office-application-and-project-type.md).
