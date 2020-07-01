@@ -15,27 +15,27 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c91a7c9833d3d9d5ae283c28ae4d437bd07734
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4267b4f55f78106a4d1e8f3b2f9b296be9ddf618
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658750"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546535"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|SecuredTypesShouldNotExposeFields|
+|TypName|SecuredTypesShouldNotExposeFields|
 |CheckId|CA2112|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Ein öffentlicher oder geschützter Typ enthält öffentliche Felder und wird durch einen [Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)Aufruf gesichert.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Wenn Code auf eine Instanz eines Typs zugreifen muss, der durch einen Linkaufruf gesichert ist, muss der Code für den Zugriff auf die Felder des Typs nicht die Anforderungen des Linkaufrufs erfüllen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -45,7 +45,7 @@ ms.locfileid: "72658750"
  Sowohl für Sicherheitsprobleme als auch für einen guten Entwurf sollten Verstöße behoben werden, indem die öffentlichen Felder nicht öffentlich gemacht werden. Sie können eine Warnung aus dieser Regel unterdrücken, wenn das Feld keine Informationen enthält, die geschützt bleiben sollen, und Sie sich nicht auf den Inhalt des Felds verlassen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel besteht aus einem Bibliothekstyp (`SecuredTypeWithFields`) mit ungesicherten Feldern, einem Typ (`Distributor`), der Instanzen des Bibliotheks Typs erstellen kann, und irrtümlich übergibt Instanzen an Typen nicht über die Berechtigung zum Erstellen dieser Felder und Anwendungscode, der einen die Felder der-Instanz, auch wenn Sie nicht über die Berechtigung zum Sichern des Typs verfügen.
+ Das folgende Beispiel besteht aus einem Bibliothekstyp ( `SecuredTypeWithFields` ) mit ungesicherten Feldern, einem Typ (), der `Distributor` Instanzen des Bibliotheks Typs erstellen kann, und irrtümlich übergibt Instanzen an Typen keine Berechtigung zum Erstellen dieser Felder und Anwendungscode, der die Felder einer Instanz lesen kann, auch wenn Sie nicht über die Berechtigung zum Sichern des Typs verfügt.
 
  Der folgende Bibliotheks Code verstößt gegen die Regel.
 
@@ -64,11 +64,11 @@ ms.locfileid: "72658750"
  Folgende Ergebnisse werden zurückgegeben:
 
  **Erstellen einer Instanz von SecuredTypeWithFields.** 
-**gesicherte Typfelder: 22, 33** 
-**Ändern des Felds des gesicherten Typs...** 
-**zwischengespeicherte Objekt Felder: 99, 33**
+ **Felder mit sichertem Typ: 22, 33** 
+ **Feld des gesicherten Typs wird geändert...** 
+ **Zwischengespeicherte Objekt Felder: 99, 33**
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051: Sichtbare Instanzfelder nicht deklarieren.](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verknüpfen](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) von Anforderungs [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

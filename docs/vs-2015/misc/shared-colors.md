@@ -1,5 +1,5 @@
 ---
-title: Gemeinsame Farben | Microsoft Docs
+title: Freigegebene Farben | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 76c04680b63eb362e02fdf26d817660d671b3b52
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301314"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548355"
 ---
 # <a name="shared-colors"></a>Konsistente Farben
 Fügen Sie hier den Text der Einführung ein.  
@@ -35,7 +35,7 @@ Fügen Sie hier den Text der Einführung ein.
   
 ### <a name="command-structures"></a>Befehlsstrukturen  
   
-#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Menüs  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Kreiert  
  Menüs können an mehreren Stellen in Visual Studio 2013 vorkommen: in der Hauptmenüleiste, eingebettet in Dokument- oder Toolfenster oder beim Rechtsklicken an verschiedenen Stellen der IDE. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.  
   
  ![Menü (rote Linie)](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
@@ -88,7 +88,7 @@ Nicht empfohlen...
 |![Menütitel mit Glyphe, aufgerufen](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **Menütitel mit Glyphe**|Vordergrund (Glyphe)|`Environment.CommandBarMenuMouseDownGlyph`|  
 |![Menütitel mit Glyphe, aufgerufen](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **Menütitel mit Glyphe**|Rahmen|`Environment.CommandBarMenuBorder`<br /><br /> Nur linke, obere und rechte Seite|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -121,8 +121,8 @@ Nicht empfohlen...
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Symbolkanal-Hintergrund|`Environment.CommandBarMenuIconBackground`|  
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Trennzeichen|`Environment.CommandBarMenuSeparator`|  
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Shadow|`Environment.DropShadowBackground`|  
-|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Aktiviert**|Häkchen|`Environment.CommandBarCheckBox`|  
-|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Aktiviert**|Häkchenhintergrund|`Environment.CommandBarSelectedIcon`|  
+|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Über**|Häkchen|`Environment.CommandBarCheckBox`|  
+|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Über**|Häkchenhintergrund|`Environment.CommandBarSelectedIcon`|  
 |![Menü, ausgewählt](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Ausgewählt**|Symbolhintergrund|`Environment.CommandBarSelected`|  
 |![Menü, ausgewählt](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Ausgewählt**|Symbolrahmen|`Environment.CommandBarSelectedBorder`|  
   
@@ -130,15 +130,15 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menüelement**|Hintergrund|`Environment.CommandBarMenuItemMouseOver`|  
-|![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menüelement**|Vordergrund (Text)|`Environment.CommandBarMenuItemMouseOver`|  
-|![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menüelement**|Vordergrund (Untermenü-Glyphe)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
-|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Aktiviert**|Häkchen|`Environment.CommandBarCheckBoxMouseOver`|  
-|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Aktiviert**|Häkchenhintergrund|`Environment.CommandBarHoverOverSelectedIcon`|  
+|![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menü Element**|Hintergrund|`Environment.CommandBarMenuItemMouseOver`|  
+|![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menü Element**|Vordergrund (Text)|`Environment.CommandBarMenuItemMouseOver`|  
+|![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menü Element**|Vordergrund (Untermenü-Glyphe)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
+|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Über**|Häkchen|`Environment.CommandBarCheckBoxMouseOver`|  
+|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Über**|Häkchenhintergrund|`Environment.CommandBarHoverOverSelectedIcon`|  
 |![Menü, wenn darauf gezeigt wird (ausgewählt)](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Ausgewählt**|Symbolhintergrund|`Environment.CommandBarHoverOverSelected`|  
 |![Menü, wenn darauf gezeigt wird (ausgewählt)](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Ausgewählt**|Symbolrahmen|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -177,7 +177,7 @@ Nicht empfohlen...
 
 - für andere Befehlsleistenkomponenten als diejenigen, für die Tokennamen festgelegt wurden  
   
-  **Standard (keine** anderen Zustände)  
+  **Standard** (keine anderen Zustände)  
   
 |Element|Tokenname: Category.color|  
 |-------------|--------------------------------|  
@@ -229,7 +229,7 @@ Nicht empfohlen...
 |![Befehlssymbol, aufgerufen](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Gedrücktes Befehlssymbol**|Vordergrund (Text)|`Environment.CommandBarTextMouseDown`|  
 |![Befehlssymbol, aufgerufen](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Gedrücktes Befehlssymbol**|Rahmen|`Environment.CommandBarBorder`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -237,7 +237,7 @@ Nicht empfohlen...
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Vordergrund (Text)|`Environment.CommandBarTextInactive`|  
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Rahmen|–|  
   
-##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>Kombinationsfeld  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>Kombinations Feld  
   
 > [!IMPORTANT]
 > Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown keinen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)beschriebenen Farbtoken.  
@@ -262,11 +262,11 @@ Nicht empfohlen...
 |![Kombinationsfeld (Eingabefeld)](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`Environment.ComboBoxText`|  
 |![Kombinationsfeld (Eingabefeld)](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Eingabefeld**|Rahmen|`Environment.ComboBoxBorder`|  
 |![Kombinationsfeld (Eingabefeld)](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Eingabefeld**|Trennzeichen|Kein Trennzeichen|  
-|![Combo-Box Drop-&#45;-Down-Taste](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **Dropdownschaltfläche**|Hintergrund|N/V (erbt)|  
-|![Combo-Box Drop-&#45;-Down-Taste](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxGlyph`|  
-|![Combo-Feld&#47;&#45;-Down-Liste absetzen](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown-Liste**|Hintergrund|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Combo-Feld&#47;&#45;-Down-Liste absetzen](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown-Liste**|Vordergrund (Text)|`Environment.ComboBoxItemText`|  
-|![Combo-Feld&#47;&#45;-Down-Liste absetzen](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown-Liste**|Rahmen|`Environment.ComboBoxPopupBorder`|  
+|![Kombinations Feld, Dropdown&#45;Schaltfläche](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **Dropdownschaltfläche**|Hintergrund|N/V (erbt)|  
+|![Kombinations Feld, Dropdown&#45;Schaltfläche](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxGlyph`|  
+|![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown Liste**|Hintergrund|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown Liste**|Vordergrund (Text)|`Environment.ComboBoxItemText`|  
+|![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown Liste**|Rahmen|`Environment.ComboBoxPopupBorder`|  
   
  **Darauf zeigen (Hover)**  
   
@@ -276,13 +276,13 @@ Nicht empfohlen...
 |![Kombinationsfeld (Eingabefeld), wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`Environment.ComboBoxMouseOverText`|  
 |![Kombinationsfeld (Eingabefeld), wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Eingabefeld**|Rahmen|`Environment.ComboBoxMouseOverBorder`|  
 |![Kombinationsfeld (Eingabefeld), wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Eingabefeld**|Trennzeichen|`Environment.ComboBoxMouseOverSeparator`|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste auf Hover](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.ComboBoxButtonMouseOverBackground`|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste auf Hover](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxMouseOverGlyph`|  
-|![Combo-Box&#47;&#45;-Down-Liste auf Hover ablegen](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Dropdown-Liste**|Hintergrund (Menüelement)|`Environment.ComboBoxItemMouseOverBackground`|  
-|![Combo-Box&#47;&#45;-Down-Liste auf Hover ablegen](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Dropdown-Liste**|Vordergrund (Text)|`Environment.ComboBoxItemMouseOverText`|  
-|![Combo-Box&#47;&#45;-Down-Liste auf Hover ablegen](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Dropdown-Liste**|Rahmen (Menüelement)|`Environment.ComboBoxItemMouseOverBorder`|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche mit dem Mauszeiger](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.ComboBoxButtonMouseOverBackground`|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche mit dem Mauszeiger](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxMouseOverGlyph`|  
+|![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Dropdown Liste**|Hintergrund (Menüelement)|`Environment.ComboBoxItemMouseOverBackground`|  
+|![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Dropdown Liste**|Vordergrund (Text)|`Environment.ComboBoxItemMouseOverText`|  
+|![Kombinations Feld&#47;Dropdown&#45;Dropdown Liste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Dropdown Liste**|Rahmen (Menüelement)|`Environment.ComboBoxItemMouseOverBorder`|  
   
- **Mit Fokus**  
+ **Im Vordergrund**  
   
 |Komponente|Element|Tokenname: Color.category|  
 |---------------|-------------|--------------------------------|  
@@ -290,8 +290,8 @@ Nicht empfohlen...
 |![Kombinationsfeld (Eingabefeld) mit Fokus](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`Environment.ComboBoxFocusedText`|  
 |![Kombinationsfeld (Eingabefeld) mit Fokus](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Eingabefeld**|Rahmen|`Environment.ComboBoxFocusedBorder`|  
 |![Kombinationsfeld (Eingabefeld) mit Fokus](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Eingabefeld**|Trennzeichen|`Environment.ComboBoxFocusedButtonSeparator`|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste fokussiert](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.ComboBoxFocusedButtonBackground`|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste fokussiert](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxFocusedGlyph`|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.ComboBoxFocusedButtonBackground`|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxFocusedGlyph`|  
   
  **Gedrückt**  
   
@@ -301,10 +301,10 @@ Nicht empfohlen...
 |![Kombinationsfeld (Eingabefeld) im gedrückten Zustand](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`Environment.ComboBoxMouseDownText`|  
 |![Kombinationsfeld (Eingabefeld) im gedrückten Zustand](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Eingabefeld**|Rahmen|`Environment.ComboBoxMouseDownBorder`|  
 |![Kombinationsfeld (Eingabefeld) im gedrückten Zustand](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Eingabefeld**|Trennzeichen|`Environment.ComboBoxMouseDownSeparator`|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste gedrückt](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.ComboBoxButtonMouseDownBackground`|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste gedrückt](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxMouseDownGlyph`|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "gedrückt"](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.ComboBoxButtonMouseDownBackground`|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "gedrückt"](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxMouseDownGlyph`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Color.category|  
 |---------------|-------------|--------------------------------|  
@@ -312,15 +312,15 @@ Nicht empfohlen...
 |![Kombinationsfeld (Eingabefeld), deaktiviert](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`Environment.ComboBoxDisabledText`|  
 |![Kombinationsfeld (Eingabefeld), deaktiviert](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Eingabefeld**|Rahmen|`Environment.ComboBoxDisabledBorder`|  
 |![Kombinationsfeld (Eingabefeld), deaktiviert](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Eingabefeld**|Trennzeichen|Kein Trennzeichen|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Hintergrund|Keine|  
-|![Combo-Box&#47;Drop-&#45;-Down-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxDisabledGlyph`|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "deaktiviert"](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Hintergrund|Keine|  
+|![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "deaktiviert"](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>Drop-down  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>Dropdown  
   
 > [!IMPORTANT]
 > Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)beschriebenen Farbtoken.  
   
- ![Drop&#45;nach unten redline](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
+ ![Dropdown&#45;rote Linie ablegen](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
  Empfohlen...  
  für die Erstellung benutzerdefinierter Dropdownlisten-Steuerelemente  
@@ -334,52 +334,52 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop&#45;-Down-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownBackground`|  
-|![Drop&#45;-Down-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`DropDownText`|  
-|![Drop&#45;-Down-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Rahmen|`DropDownBorder`|  
-|![Drop&#45;-Down-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Trennzeichen|Kein Trennzeichen|  
-|![Drop-&#45;-Down-Taste](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **Dropdownschaltfläche**|Hintergrund|Keine|  
-|![Drop-&#45;-Down-Taste](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.DropDownGlyph`|  
-|![Drop-&#45;-Down-Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown-Liste**|Hintergrund|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Drop-&#45;-Down-Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown-Liste**|Vordergrund (Text)|`Environment.ComboBoxItemText`|  
-|![Drop-&#45;-Down-Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown-Liste**|Rahmen|`Environment.DropDownPopupBorder`|  
-|![Drop-&#45;-Down-Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown-Liste**|Shadow|`Environment.DropShadowBackground`|  
+|![Dropdown&#45;Dropdown-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownBackground`|  
+|![Dropdown&#45;Dropdown-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`DropDownText`|  
+|![Dropdown&#45;Dropdown-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Rahmen|`DropDownBorder`|  
+|![Dropdown&#45;Dropdown-Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Trennzeichen|Kein Trennzeichen|  
+|![Dropdown&#45;Schaltfläche](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **Dropdownschaltfläche**|Hintergrund|Keine|  
+|![Dropdown&#45;Schaltfläche](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.DropDownGlyph`|  
+|![Dropdown&#45;Dropdown Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown Liste**|Hintergrund|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Dropdown&#45;Dropdown Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown Liste**|Vordergrund (Text)|`Environment.ComboBoxItemText`|  
+|![Dropdown&#45;Dropdown Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown Liste**|Rahmen|`Environment.DropDownPopupBorder`|  
+|![Dropdown&#45;Dropdown Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown Liste**|Shadow|`Environment.DropShadowBackground`|  
   
  **Darauf zeigen (Hover)**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop&#45;-Down-Auswahlfeld auf Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Drop&#45;-Down-Auswahlfeld auf Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`Environment.DropDownMouseOverText`|  
-|![Drop&#45;-Down-Auswahlfeld auf Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Rahmen|`Environment.DropDownMouseOverBorder`|  
-|![Drop&#45;-Down-Auswahlfeld auf Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Trennzeichen|`Environment.DropDownButtonMouseOverSeparator`|  
-|![Drop&#45;-Down-Taste auf hover](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.DropDownButtonMouseOverBackground`|  
-|![Drop&#45;-Down-Taste auf hover](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.DropDownMouseOverGlyph`|  
-|![Drop&#45;-Down-Liste auf Hover](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Hintergrund (Menüelement)|`Environment.ComboBoxItemMouseOverBackground`|  
-|![Drop&#45;-Down-Liste auf Hover](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Vordergrund (Text)|`Environment.ComboBoxItemMouseOverText`|  
-|![Drop&#45;-Down-Liste auf Hover](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Rahmen (Menüelement)|`Environment.ComboBoxItemMouseOverBorder`|  
+|![Dropdown&#45;Auswahlfeld bei Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Dropdown&#45;Auswahlfeld bei Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`Environment.DropDownMouseOverText`|  
+|![Dropdown&#45;Auswahlfeld bei Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Rahmen|`Environment.DropDownMouseOverBorder`|  
+|![Dropdown&#45;Auswahlfeld bei Hover](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Trennzeichen|`Environment.DropDownButtonMouseOverSeparator`|  
+|![Dropdown&#45;Schaltfläche beim Hover](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.DropDownButtonMouseOverBackground`|  
+|![Dropdown&#45;Schaltfläche beim Hover](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.DropDownMouseOverGlyph`|  
+|![Dropdown Liste&#45;auf den Mauszeiger](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown Liste**|Hintergrund (Menüelement)|`Environment.ComboBoxItemMouseOverBackground`|  
+|![Dropdown Liste&#45;auf den Mauszeiger](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown Liste**|Vordergrund (Text)|`Environment.ComboBoxItemMouseOverText`|  
+|![Dropdown Liste&#45;auf den Mauszeiger](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown Liste**|Rahmen (Menüelement)|`Environment.ComboBoxItemMouseOverBorder`|  
   
  **Gedrückt**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop&#45;-Down-Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownMouseDownBackground`|  
-|![Drop&#45;-Down-Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`Environment.DropDownMouseDownText`|  
-|![Drop&#45;-Down-Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Rahmen|`Environment.DropDownMouseDownBorder`|  
-|![Drop&#45;-Down-Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Trennzeichen|`Environment.DropDownButtonMouseDownSeparator`|  
-|![Drop&#45;-Down-Taste gedrückt](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.DropDownButtonMouseDownBackground`|  
-|![Drop&#45;-Down-Taste gedrückt](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.DropDownMouseDownGlyph`|  
+|![Dropdown&#45;Dropdown Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownMouseDownBackground`|  
+|![Dropdown&#45;Dropdown Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`Environment.DropDownMouseDownText`|  
+|![Dropdown&#45;Dropdown Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Rahmen|`Environment.DropDownMouseDownBorder`|  
+|![Dropdown&#45;Dropdown Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Trennzeichen|`Environment.DropDownButtonMouseDownSeparator`|  
+|![Schaltfläche "Drop&#45;Down" gedrückt](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`Environment.DropDownButtonMouseDownBackground`|  
+|![Schaltfläche "Drop&#45;Down" gedrückt](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.DropDownMouseDownGlyph`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop-&#45;-Down-Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Hintergrund|`Environment.DropDownDisabledBackground`|  
-|![Drop-&#45;-Down-Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Vordergrund (Text)|`Environment.DropDownDisabledText`|  
-|![Drop-&#45;-Down-Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Rahmen|`Environment.DropDownDisabledBorder`|  
-|![Drop-&#45;-Down-Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Trennzeichen|Kein Trennzeichen|  
-|![Drop-&#45;-Down-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Hintergrund|–|  
-|![Drop-&#45;-Down-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Vordergrund (Glyphe)|`Environment.DropDownDisabledGlyph`|  
+|![Dropdown&#45;Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Hintergrund|`Environment.DropDownDisabledBackground`|  
+|![Dropdown&#45;Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Vordergrund (Text)|`Environment.DropDownDisabledText`|  
+|![Dropdown&#45;Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Rahmen|`Environment.DropDownDisabledBorder`|  
+|![Dropdown&#45;Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Trennzeichen|Kein Trennzeichen|  
+|![Dropdown&#45;Schaltfläche "deaktiviert"](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Hintergrund|–|  
+|![Dropdown&#45;Schaltfläche "deaktiviert"](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Vordergrund (Glyphe)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>Unterteilte Schaltfläche  
  Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Dropdownlisten für unterteilte Schaltflächen sind Implementierungen der Befehlsleiste [Menus](../misc/shared-colors.md#BKMK_CommandMenus).  
@@ -408,31 +408,31 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Split-Taste auf Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Hintergrund|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Split-Taste auf Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Vordergrund (Text)|`Environment.CommandBarTextHover`|  
-|![Split-Taste auf Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Vordergrund (Glyphe)|`Environment.CommandBarSplitButtonMouseOverGlyph`|  
-|![Split-Taste auf Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Rahmen|`Environment.CommandBarBorder`|  
-|![Split-Taste auf Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Trennzeichen|`Environment.CommandBarSplitButtonSeparator`|  
+|![Unterteilte Schaltfläche bei Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Hintergrund|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Unterteilte Schaltfläche bei Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Vordergrund (Text)|`Environment.CommandBarTextHover`|  
+|![Unterteilte Schaltfläche bei Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Vordergrund (Glyphe)|`Environment.CommandBarSplitButtonMouseOverGlyph`|  
+|![Unterteilte Schaltfläche bei Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Rahmen|`Environment.CommandBarBorder`|  
+|![Unterteilte Schaltfläche bei Hover](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Trennzeichen|`Environment.CommandBarSplitButtonSeparator`|  
   
  **Gedrückt**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Split-Taste gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Hintergrund|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Split-Taste gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Vordergrund (Text)|`Environment.CommandBarTextMouseDown`|  
-|![Split-Taste gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Vordergrund (Glyphe)|`Environment.CommandBarSplitButtonMouseDownGlyph`|  
-|![Split-Taste gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Rahmen|`Environment.CommandBarBorder`|  
-|![Split-Taste gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Trennzeichen|–|  
+|![Geteilte Schaltfläche gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Hintergrund|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Geteilte Schaltfläche gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Vordergrund (Text)|`Environment.CommandBarTextMouseDown`|  
+|![Geteilte Schaltfläche gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Vordergrund (Glyphe)|`Environment.CommandBarSplitButtonMouseDownGlyph`|  
+|![Geteilte Schaltfläche gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Rahmen|`Environment.CommandBarBorder`|  
+|![Geteilte Schaltfläche gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Trennzeichen|–|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Split-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Hintergrund|–|  
-|![Split-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Vordergrund (Text)|`Environment.ComboBoxItemTextInactive`|  
-|![Split-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Vordergrund (Glyphe)|`Environment.CommandBarTextInactive`|  
-|![Split-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Rahmen|–|  
-|![Split-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Trennzeichen|–|  
+|![Trenn Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Hintergrund|–|  
+|![Trenn Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Vordergrund (Text)|`Environment.ComboBoxItemTextInactive`|  
+|![Trenn Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Vordergrund (Glyphe)|`Environment.CommandBarTextInactive`|  
+|![Trenn Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Rahmen|–|  
+|![Trenn Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Trennzeichen|–|  
   
 ##### <a name="more-options-and-overflow-buttons"></a>Schaltflächen "Weitere Optionen" und "Überlauf"  
  Die Schaltfläche "Weitere Optionen" wird verwendet, wenn eine Befehlsleistengruppe angepasst werden kann, indem verwandte Befehlsleistenschaltflächen hinzugefügt oder entfernt werden. Die Schaltfläche "Überlauf" wird angezeigt, wenn eine Befehlsleiste aus Platzgründen in horizontaler Richtung abgeschnitten ist. Beim Klicken auf die Schaltfläche wird ein Menü mit den nicht angezeigten Befehlsleisten-Schaltflächen eingeblendet. Die Farben dieser beiden Schaltflächen werden über dieselbe Gruppe von Tokennamen gesteuert.  
@@ -547,7 +547,7 @@ Nicht empfohlen...
   
 - Die ausgewählte Registerkarte stellt das Dokument dar, das aktuell im Dokumentursprung angezeigt wird. Eine ausgewählte Registerkarte verfügt über einen Dokumentrahmen, der sich über den oberen Rand des Dokumentursprungs erstreckt.  
   
-- Hintergrundregisterkarten sind alle Dokumentregisterkarten, die nicht die aktuell ausgewählte Registerkarte sind. Sobald sie darauf geklickt haben, werden sie zur ausgewählten Registerkarte und erfassen alle Hintergrund-, Rahmen- und Textfarben aus diesen Tokennamen.  
+- Hintergrund Registerkarten sind Dokument Registerkarten, die nicht die derzeit ausgewählte Registerkarte sind. Nachdem Sie darauf geklickt haben, werden Sie zur ausgewählten Registerkarte und erhalten alle Hintergrund-, Rahmen-und Textfarben von den Tokennamen.  
   
   ![Registerkarte "Dokument öffnen" (rote Linie)](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
   
@@ -560,7 +560,7 @@ Nicht empfohlen...
 - für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
   
 ##### <a name="selected-tab"></a>Ausgewählte Registerkarte  
- **Mit Fokus**  
+ **Im Vordergrund**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -733,7 +733,7 @@ Nicht empfohlen...
  Nicht empfohlen...  
  für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
   
- **Mit Fokus**  
+ **Im Vordergrund**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -766,9 +766,9 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Titelleistenschaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Mit Fokus**|Hintergrund|–|  
-|![Titelleistenschaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonActiveGlyph`|  
-|![Titelleistenschaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Mit Fokus**|Rahmen|–|  
+|![Titelleistenschaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Im Vordergrund**|Hintergrund|–|  
+|![Titelleistenschaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Im Vordergrund**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonActiveGlyph`|  
+|![Titelleistenschaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Im Vordergrund**|Rahmen|–|  
 |![Titelleistenschaltfläche ohne Fokus](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Ohne Fokus**|Hintergrund|–|  
 |![Titelleistenschaltfläche ohne Fokus](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Ohne Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonInactiveGlyph`|  
 |![Titelleistenschaltfläche ohne Fokus](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Ohne Fokus**|Rahmen|–|  
@@ -777,9 +777,9 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Mit Fokus**|Hintergrund|`Environment.ToolWindowButtonHoverActive`|  
-|![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
-|![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Mit Fokus**|Rahmen|`Environment.ToolWindowButtonHoverActiveBorder`|  
+|![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Im Vordergrund**|Hintergrund|`Environment.ToolWindowButtonHoverActive`|  
+|![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Im Vordergrund**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
+|![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Im Vordergrund**|Rahmen|`Environment.ToolWindowButtonHoverActiveBorder`|  
 |![Titelleistenschaltfläche ohne Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br /><br /> **Ohne Fokus**|Hintergrund|`Environment.ToolWindowButtonHoverInactive`|  
 |![Titelleistenschaltfläche ohne Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br /><br /> **Ohne Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonHoverInactiveGlyph`|  
 |![Titelleistenschaltfläche ohne Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br /><br /> **Ohne Fokus**|Rahmen|`Environment.ToolWindowButtonHoverInactiveBorder`|  
@@ -788,9 +788,9 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Titelleistenschaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Mit Fokus**|Hintergrund|`Environment.ToolWindowButtonDown`|  
-|![Titelleistenschaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonDownActiveGlyph`|  
-|![Titelleistenschaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Mit Fokus**|Rahmen|`Environment.ToolWindowButtonDownBorder`|  
+|![Titelleistenschaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Im Vordergrund**|Hintergrund|`Environment.ToolWindowButtonDown`|  
+|![Titelleistenschaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Im Vordergrund**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonDownActiveGlyph`|  
+|![Titelleistenschaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Im Vordergrund**|Rahmen|`Environment.ToolWindowButtonDownBorder`|  
 |![Titelleistenschaltfläche ohne Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br /><br /> **Ohne Fokus**|Hintergrund|`Environment.ToolWindowButtonDown`|  
 |![Titelleistenschaltfläche ohne Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br /><br /> **Ohne Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonDownInactiveGlyph`|  
 |![Titelleistenschaltfläche ohne Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br /><br /> **Ohne Fokus**|Rahmen|`Environment.ToolWindowButtonDownBorder`|  
@@ -833,7 +833,7 @@ Nicht empfohlen...
 |![Toolfenster, Registerkarte "Hintergrund", wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Hintergrundregisterkarte im Toolfenster, wenn darauf gezeigt wird**|Rahmen|`Environment.ToolWindowTabMouseOverBorder`<br /><br /> Auf dieselbe Farbe wie der Hintergrund festgelegt|  
   
 #### <a name="auto-hide-tabs"></a>Automatisch ausgeblendete Registerkarten  
- ![Auto-&#45;redline ausblenden](../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303-107_AutoHideRedline")  
+ ![Automatisch&#45;rote Linie ausblenden](../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303-107_AutoHideRedline")  
   
  Empfohlen...  
  für alle Situationen, in denen Sie Ihre Benutzeroberfläche auf automatisch ausgeblendete Toolfenster-Registerkarten abstimmen möchten.  
@@ -845,17 +845,17 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Auto-&#45;-Registerkarte ausblenden](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Hintergrund|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Auto-&#45;-Registerkarte ausblenden](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Vordergrund (Text)|`Environment.AutoHideTabText`|  
-|![Auto-&#45;-Registerkarte ausblenden](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Rahmen|`Environment.AutoHideTabBorder`|  
+|![Registerkarte "automatisch&#45;ausblenden"](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Hintergrund|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Registerkarte "automatisch&#45;ausblenden"](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Vordergrund (Text)|`Environment.AutoHideTabText`|  
+|![Registerkarte "automatisch&#45;ausblenden"](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Rahmen|`Environment.AutoHideTabBorder`|  
   
  **Darauf zeigen (Hover)**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Auto&#45;-Ausblende-Registerkarte auf dem Mauszeiger](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Hintergrund|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Auto&#45;-Ausblende-Registerkarte auf dem Mauszeiger](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Vordergrund (Text)|`Environment.AutoHideTabMouseOverText`|  
-|![Auto&#45;-Ausblende-Registerkarte auf dem Mauszeiger](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Rahmen|`Environment.AutoHideTabMouseOverBorder`|  
+|![Registerkarte "automatisch&#45;ausblenden" bei Hover](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Hintergrund|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Registerkarte "automatisch&#45;ausblenden" bei Hover](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Vordergrund (Text)|`Environment.AutoHideTabMouseOverText`|  
+|![Registerkarte "automatisch&#45;ausblenden" bei Hover](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Rahmen|`Environment.AutoHideTabMouseOverBorder`|  
   
 ### <a name="common-shared-controls"></a>Gemeinsam verwendete Steuerelemente  
  Wenn Sie für Ihr Feature eine Visual Studio-Standardbefehlsleiste verwenden, haben Sie Zugriff auf formatierte Shell-Steuerelemente. Diese gemeinsam verwendeten Steuerelemente sollten nicht von einer Vorlage neu erstellt werden. Wenn Sie jedoch eine benutzerdefinierte Befehlsleiste erstellen müssen, kann es erforderlich sein, benutzerdefinierte Steuerelemente zu erstellen. Stellen Sie in diesem Fall sicher, dass Sie die richtigen Tokennamen für jedes der folgenden Steuerelemente verwenden, damit die Benutzeroberfläche mit den anderen Bereichen von Visual Studio konsistent ist.  
@@ -883,7 +883,7 @@ Nicht empfohlen...
   
 - für Elemente, die nicht generell auf die Suchfeld-Benutzeroberfläche abgestimmt sein sollen  
   
-  **Mit Fokus**  
+  **Im Vordergrund**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -891,14 +891,14 @@ Nicht empfohlen...
 |![Suche (Eingabefeld) mit Fokus](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`SearchControl.FocusedBackground`|  
 |![Suche (Eingabefeld) mit Fokus](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Eingabefeld**|Rahmen|`SearchControl.FocusedBorder`|  
 |![Suche (Eingabefeld) mit Fokus](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Eingabefeld**|Trennzeichen|`SearchControl.FocusedDropDownSeparator`|  
-|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktionsschaltfläche**|Hintergrund|Keine|  
-|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe "Suchen")|`SearchControl.SearchGlyph`|  
-|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe "Beenden")|`SearchControl.StopGlyph`|  
-|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe "Löschen")|`SearchControl.ClearGlyph`|  
-|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktionsschaltfläche**|Rahmen|–|  
-|![Suche Drop&#45;Down-Taste fokussiert](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`SearchControl.FocusedDropDownButton`|  
-|![Suche Drop&#45;Down-Taste fokussiert](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.FocusedDropDownButtonGlyph`|  
-|![Suche Drop&#45;Down-Taste fokussiert](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Rahmen|`SearchControl.FocusedDropDownButtonBorder`|  
+|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktions Schaltfläche**|Hintergrund|Keine|  
+|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe "Suchen")|`SearchControl.SearchGlyph`|  
+|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe "Beenden")|`SearchControl.StopGlyph`|  
+|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe "Löschen")|`SearchControl.ClearGlyph`|  
+|![Suche (Aktionsschaltfläche) mit Fokus](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Aktions Schaltfläche**|Rahmen|–|  
+|![Dropdown&#45;Dropdown Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`SearchControl.FocusedDropDownButton`|  
+|![Dropdown&#45;Dropdown Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.FocusedDropDownButtonGlyph`|  
+|![Dropdown&#45;Dropdown Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Dropdownschaltfläche**|Rahmen|`SearchControl.FocusedDropDownButtonBorder`|  
   
  **Ohne Fokus**  
   
@@ -912,25 +912,25 @@ Nicht empfohlen...
 |![Suche (Eingabefeld) ohne Fokus und inaktiv](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Inaktives Eingabefeld**|Vordergrund (Text)|`SearchControl.Unfocused`|  
 |![Suche (Eingabefeld) ohne Fokus und inaktiv](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Inaktives Eingabefeld**|Rahmen|`SearchControl.UnfocusedBorder`|  
 |![Suche (Eingabefeld) ohne Fokus und inaktiv](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Inaktives Eingabefeld**|Trennzeichen|`SearchControl.DropDownSeparator`|  
-|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktionsschaltfläche**|Hintergrund|–|  
-|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe "Suchen")|`SearchControl.SearchGlyph`|  
-|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe "Beenden")|`SearchControl.StopGlyph`|  
-|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe "Löschen")|`SearchControl.ClearGlyph`|  
-|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktionsschaltfläche**|Rahmen|–|  
-|![Suche Drop-&#45;-Down-Taste unkonzentriert](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`SearchControl.UnfocusedDropDownButton`|  
-|![Suche Drop-&#45;-Down-Taste unkonzentriert](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
-|![Suche Drop-&#45;-Down-Taste unkonzentriert](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Dropdownschaltfläche**|Rahmen|`SearchControl.UnfocusedDropDownButtonBorder`|  
+|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktions Schaltfläche**|Hintergrund|–|  
+|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe "Suchen")|`SearchControl.SearchGlyph`|  
+|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe "Beenden")|`SearchControl.StopGlyph`|  
+|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe "Löschen")|`SearchControl.ClearGlyph`|  
+|![Suche (Aktionsschaltfläche) ohne Fokus](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Aktions Schaltfläche**|Rahmen|–|  
+|![Suche&#45;Dropdown Schaltfläche ohne Fokus](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`SearchControl.UnfocusedDropDownButton`|  
+|![Suche&#45;Dropdown Schaltfläche ohne Fokus](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
+|![Suche&#45;Dropdown Schaltfläche ohne Fokus](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Dropdownschaltfläche**|Rahmen|`SearchControl.UnfocusedDropDownButtonBorder`|  
   
  **Gedrückt**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Suche (Aktionsschaltfläche), aufgerufen](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Aktionsschaltfläche**|Hintergrund|`SearchControl.ActionButtonMouseDown`|  
-|![Suche (Aktionsschaltfläche), aufgerufen](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe)|`SearchControl.ActionButtonMouseDownGlyph`|  
-|![Suche (Aktionsschaltfläche), aufgerufen](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Aktionsschaltfläche**|Rahmen|`SearchControl.ActionButtonMouseDownBorder`|  
-|![Suche Drop&#45;-Down-Taste gedrückt](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`SearchControl.MouseDownDropDownButton`|  
-|![Suche Drop&#45;-Down-Taste gedrückt](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.MouseDownDropDownButtonGlyph`|  
-|![Suche Drop&#45;-Down-Taste gedrückt](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Rahmen|`SearchControl.MouseDownDropDownButtonBorder`|  
+|![Suche (Aktionsschaltfläche), aufgerufen](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Aktions Schaltfläche**|Hintergrund|`SearchControl.ActionButtonMouseDown`|  
+|![Suche (Aktionsschaltfläche), aufgerufen](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe)|`SearchControl.ActionButtonMouseDownGlyph`|  
+|![Suche (Aktionsschaltfläche), aufgerufen](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Aktions Schaltfläche**|Rahmen|`SearchControl.ActionButtonMouseDownBorder`|  
+|![Dropdown&#45;Schaltfläche "Durchsuchen" gedrückt](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Hintergrund|`SearchControl.MouseDownDropDownButton`|  
+|![Dropdown&#45;Schaltfläche "Durchsuchen" gedrückt](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.MouseDownDropDownButtonGlyph`|  
+|![Dropdown&#45;Schaltfläche "Durchsuchen" gedrückt](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Dropdownschaltfläche**|Rahmen|`SearchControl.MouseDownDropDownButtonBorder`|  
   
  **Hervorgehoben (nur Text)**  
   
@@ -941,7 +941,7 @@ Nicht empfohlen...
 |![Suche (Eingabefeld), hervorgehoben](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem Text**|Rahmen|Keine|  
 |![Suche (Eingabefeld), hervorgehoben](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem Text**|Trennzeichen|`SearchControl.FocusedDropDownSeparator`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -949,17 +949,17 @@ Nicht empfohlen...
 |![Suche (Eingabefeld), deaktiviert](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`SearchControl.Disabled`|  
 |![Suche (Eingabefeld), deaktiviert](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Eingabefeld**|Rahmen|`SearchControl.DisabledBorder`|  
 |![Suche (Eingabefeld), deaktiviert](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Eingabefeld**|Trennzeichen|`SearchControl.DropDownSeparator`|  
-|![Suche (Aktionsschaltfläche), deaktiviert](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Aktionsschaltfläche**|Hintergrund|Keine|  
-|![Suche (Aktionsschaltfläche), deaktiviert](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Aktionsschaltfläche**|Vordergrund (Glyphe)|`SearchControl.ActionButtonDisabledGlyph`|  
-|![Suche (Aktionsschaltfläche), deaktiviert](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Aktionsschaltfläche**|Rahmen|Keine|  
-|![Suche Drop&#45;-Down-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Hintergrund|Keine|  
-|![Suche Drop&#45;-Down-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.DisabledDownButtonGlyph`|  
-|![Suche Drop&#45;-Down-Taste deaktiviert](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Rahmen|Keine|  
+|![Suche (Aktionsschaltfläche), deaktiviert](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Aktions Schaltfläche**|Hintergrund|Keine|  
+|![Suche (Aktionsschaltfläche), deaktiviert](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Aktions Schaltfläche**|Vordergrund (Glyphe)|`SearchControl.ActionButtonDisabledGlyph`|  
+|![Suche (Aktionsschaltfläche), deaktiviert](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Aktions Schaltfläche**|Rahmen|Keine|  
+|![Dropdown&#45;Dropdown Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Hintergrund|Keine|  
+|![Dropdown&#45;Dropdown Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`SearchControl.DisabledDownButtonGlyph`|  
+|![Dropdown&#45;Dropdown Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Rahmen|Keine|  
   
 ##### <a name="search-drop-down-lists"></a>Dropdownlisten im Suchfeld  
  Das Dropdownmenü im Suchfeld kann etwas komplexer sein als andere Dropdownmenüs in Visual Studio. Die Bereiche "Empfohlene Suchbegriffe" und "Suchoptionen" können alleine oder zusammen im Menü erscheinen, und jedem Bereich kann eine eigene Farbe zugeordnet sein. Die beiden Bereiche werden außerdem durch eine Linie getrennt, wenn sie zusammen auftreten, und das gesamte Dropdownmenü ist von einem Rahmen umgeben.  
   
- ![Suchdrop&#45;nach unten redline](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")  
+ ![Dropdown&#45;nach unten Redline](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")  
   
 Empfohlen...  
 - für die Erstellung einer benutzerdefinierten Dropdownliste im Suchfeld  
@@ -1027,7 +1027,7 @@ Nicht empfohlen...
 |!["Suchvorschlag" im gedrückten Zustand](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Empfohlene Suchbegriffe (Kontrollkästchen)**|Vordergrund (Linktext)|`SearchControl.PopupButtonMouseDownText`|  
 |!["Suchoptionen" im gedrückten Zustand](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Suchoptionen**|Vordergrund (Linktext)|`SearchControl.PopupButtonMouseDownText`|  
   
-#### <a name="hyperlink"></a>Link  
+#### <a name="hyperlink"></a>Hyperlink  
  Der Link ist ein Steuerelement, das keine Kombination aus Vordergrund-/Hintergrundfarbe darstellt. Sie verwenden grundsätzlich die Vordergrund-Linkfarbe, die auf dunklem, grauen und weißem Hintergrund ordnungsgemäß angezeigt wird. Wenn Sie nicht das Farbtoken für das Linksteuerelement verwenden, sehen Sie für den "gedrückten" Zustand die Standardsystemfarbe, die rot blinkend dargestellt wird. Das ist das Signal, dass das Steuerelement nicht das richtige Farbtoken für die Umgebung verwendet.  
   
  ![Hyperlink (rote Linie)](../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")  
@@ -1056,7 +1056,7 @@ Nicht empfohlen...
 |---------------|-------------|--------------------------------|  
 |![Hyperlink, aufgerufen](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")|Vordergrund (Text)|`Environment.PanelHyperlinkPressed`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1080,7 +1080,7 @@ Nicht empfohlen...
 |![Infoleiste](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infoleiste**|Rahmen|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Bildlaufleiste  
- Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Sie können jedoch entscheiden, dass Sie die farben nutzen möchten, die in Bildlaufleisten verwendet werden, damit die Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent angezeigt wird.  
+ Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Sie können jedoch entscheiden, dass Sie die in Scrollleisten verwendeten Farben nutzen möchten, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent erscheint.  
   
  ![Bildlaufleiste (rote Linie)](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
   
@@ -1094,8 +1094,8 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
-|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbBackground`|  
+|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Bild Lauf Leiste**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
+|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Bild Lauf Leiste**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbBackground`|  
 |![Bildlaufleiste, Pfeil](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleiste, Pfeil](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyph`|  
   
@@ -1103,8 +1103,8 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
-|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbMouseOverBackground`|  
+|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Bild Lauf Leiste**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
+|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Bild Lauf Leiste**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbMouseOverBackground`|  
 |![Bildlaufleiste (Pfeil), wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowMouseOverBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleiste (Pfeil), wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyphMouseOver`|  
   
@@ -1112,12 +1112,12 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Bildlaufleiste, aufgerufen](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
-|![Bildlaufleiste, aufgerufen](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbPressedBackground`|  
+|![Bildlaufleiste, aufgerufen](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Bild Lauf Leiste**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
+|![Bildlaufleiste, aufgerufen](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Bild Lauf Leiste**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbPressedBackground`|  
 |![Bildlaufleiste (Pfeil), aufgerufen](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleiste (Pfeil), aufgerufen](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>Baumansicht  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>Strukturansicht  
  Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und Klassenansicht, implementieren ein hierarchisches Organisationsschema, dessen Farben über Farbnamen in der TreeView-Kategorie gesteuert werden. Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.  
   
  ![Strukturansicht (rote Linie)](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
@@ -1134,10 +1134,10 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Baumansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Hintergrund|`TreeView.Background`|  
-|![Baumansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Vordergrund (Text)|`TreeView.Background`|  
-|![Baumansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Vordergrund (Glyphe)|`TreeView.Glyph`|  
-|![Baumansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Rahmen|Keine|  
+|![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Hintergrund|`TreeView.Background`|  
+|![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Vordergrund (Text)|`TreeView.Background`|  
+|![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Vordergrund (Glyphe)|`TreeView.Glyph`|  
+|![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Rahmen|Keine|  
   
  **Darauf zeigen (Hover)**  
   
@@ -1161,10 +1161,10 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`|  
-|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`|  
-|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActiveGlyph`|  
-|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Mit Fokus**|Rahmen|`TreeView.FocusVisualBorder`|  
+|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Im Vordergrund**|Hintergrund|`TreeView.SelectedItemActive`|  
+|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Im Vordergrund**|Vordergrund (Text)|`TreeView.SelectedItemActive`|  
+|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Im Vordergrund**|Vordergrund (Glyphe)|`TreeView.SelectedItemActiveGlyph`|  
+|![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Im Vordergrund**|Rahmen|`TreeView.FocusVisualBorder`|  
 |![Strukturansicht ohne Fokus](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **Ohne Fokus**|Hintergrund|`TreeView.SelectedItemInactive`|  
 |![Strukturansicht ohne Fokus](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **Ohne Fokus**|Vordergrund (Text)|`TreeView.SelectedItemInactive`|  
 |![Strukturansicht ohne Fokus](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **Ohne Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemInactiveGlyph`|  
@@ -1174,10 +1174,10 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`|  
-|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`|  
-|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Rahmen|Keiner`TreeView.FocusVisualBorder`|  
+|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Im Vordergrund**|Hintergrund|`TreeView.SelectedItemActive`|  
+|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Im Vordergrund**|Vordergrund (Text)|`TreeView.SelectedItemActive`|  
+|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Im Vordergrund**|Vordergrund (Glyphe)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
+|![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Im Vordergrund**|Rahmen|Keiner`TreeView.FocusVisualBorder`|  
 |![Strukturansicht ohne Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Ohne Fokus**|Hintergrund|`TreeView.SelectedItemInactive`|  
 |![Strukturansicht ohne Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Ohne Fokus**|Vordergrund (Text)|`TreeView.SelectedItemInactive`|  
 |![Strukturansicht ohne Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Ohne Fokus**|Vordergrund (Glyphe)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
@@ -1196,35 +1196,35 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Schaltfläche](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Taste|`CommonControls.Button`|  
+|![Schaltfläche](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Schaltfläche|`CommonControls.Button`|  
 |![Schaltfläche](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Schaltflächenrahmen|`CommonControls.ButtonBorder`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Schaltfläche, deaktiviert](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Taste|`CommonControls.ButtonDisabled`|  
+|![Schaltfläche, deaktiviert](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Schaltfläche|`CommonControls.ButtonDisabled`|  
 |![Schaltfläche, deaktiviert](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Schaltflächenrahmen|`CommonControls.ButtonBorderDisabled`|  
   
  **Darauf zeigen (Hover)**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Schaltfläche, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Taste|`CommonControls.ButtonHover`|  
+|![Schaltfläche, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Schaltfläche|`CommonControls.ButtonHover`|  
 |![Schaltfläche, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Schaltflächenrahmen|`CommonControls.ButtonBorderHover`|  
   
  **Gedrückt**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Schaltfläche, aufgerufen](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Taste|`CommonControls.ButtonPressed`|  
+|![Schaltfläche, aufgerufen](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Schaltfläche|`CommonControls.ButtonPressed`|  
 |![Schaltfläche, aufgerufen](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Schaltflächenrahmen|`CommonControls.ButtonBorderPressed`|  
   
- **Mit Fokus**  
+ **Im Vordergrund**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Taste|`CommonControls.ButtonFocused`|  
+|![Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Schaltfläche|`CommonControls.ButtonFocused`|  
 |![Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Schaltflächenrahmen|`CommonControls.ButtonBorderFocused`|  
   
 #### <a name="check-box-controls"></a>Kontrollkästchen-Steuerelemente  
@@ -1245,7 +1245,7 @@ Nicht empfohlen...
 |![Kontrollkästchen](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Text|`CommonControls.CheckBoxText`|  
 |![Kontrollkästchen](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Glyphe|`CommonControls.CheckBoxGlyph`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1272,7 +1272,7 @@ Nicht empfohlen...
 |![Kontrollkästchen, aufgerufen](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Text|`CommonControls.CheckBoxTextPressed`|  
 |![Kontrollkästchen, aufgerufen](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Glyphe|`CommonControls.CheckBoxGlyphPressed`|  
   
- **Mit Fokus**  
+ **Im Vordergrund**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1282,7 +1282,7 @@ Nicht empfohlen...
 |![Kontrollkästchen mit Fokus](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Glyphe|`CommonControls.CheckBoxGlyphFocused`|  
   
 #### <a name="drop-boxcombo-box-controls"></a>Dropdownlisten-/Kombinationsfeld-Steuerelement  
- ![Drop&#45;nach unten&#47;Combo-Box redline](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")  
+ ![Dropdown&#45;&#47;Kombinations Feld (rote Linie)](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")  
   
 Empfohlen...  
 für Dropdownlisten und Kombinationsfelder, die Teil des Dokumentursprungs sind.  
@@ -1296,85 +1296,85 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop-&#45;&#47;Combo-Box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Hintergrund|`CommonControls.ComboBoxBackground`|  
-|![Drop-&#45;&#47;Combo-Box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Rahmen|`CommonControls.ComboBoxBorder`|  
-|![Drop-&#45;&#47;Combo-Box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Text|`CommonControls.ComboBoxText`|  
-|![Drop-&#45;&#47;Combo-Box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Trennzeichen|`CommonControls.ComboBoxSeparator`|  
-|![Drop-&#45;&#47;Combo-Box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Glyphe|`CommonControls.ComboBoxGlyph`|  
-|![Drop-&#45;&#47;Combo-Box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackground`|  
+|![Dropdown&#45;&#47;Kombinations Feld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Hintergrund|`CommonControls.ComboBoxBackground`|  
+|![Dropdown&#45;&#47;Kombinations Feld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Rahmen|`CommonControls.ComboBoxBorder`|  
+|![Dropdown&#45;&#47;Kombinations Feld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Text|`CommonControls.ComboBoxText`|  
+|![Dropdown&#45;&#47;Kombinations Feld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Trennzeichen|`CommonControls.ComboBoxSeparator`|  
+|![Dropdown&#45;&#47;Kombinations Feld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Glyphe|`CommonControls.ComboBoxGlyph`|  
+|![Dropdown&#45;&#47;Kombinations Feld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackground`|  
   
- **Deaktiviert**  
+ **Disabled**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop-&#45;&#47;Combo-Box deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Hintergrund|`CommonControls.ComboBoxBackgroundDisabled`|  
-|![Drop-&#45;&#47;Combo-Box deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Rahmen|`CommonControls.ComboBoxBorderDisabled`|  
-|![Drop-&#45;&#47;Combo-Box deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Text|`CommonControls.ComboBoxTextDisabled`|  
-|![Drop-&#45;&#47;Combo-Box deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Trennzeichen|`CommonControls.ComboBoxSeparatorDisabled`|  
-|![Drop-&#45;&#47;Combo-Box deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Glyphe|`CommonControls.ComboBoxGlyphDisabled`|  
-|![Drop-&#45;&#47;Combo-Box deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundDisabled`|  
+|![Dropdown&#45;&#47;Kombinations Feld deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Hintergrund|`CommonControls.ComboBoxBackgroundDisabled`|  
+|![Dropdown&#45;&#47;Kombinations Feld deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Rahmen|`CommonControls.ComboBoxBorderDisabled`|  
+|![Dropdown&#45;&#47;Kombinations Feld deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Text|`CommonControls.ComboBoxTextDisabled`|  
+|![Dropdown&#45;&#47;Kombinations Feld deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Trennzeichen|`CommonControls.ComboBoxSeparatorDisabled`|  
+|![Dropdown&#45;&#47;Kombinations Feld deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Glyphe|`CommonControls.ComboBoxGlyphDisabled`|  
+|![Dropdown&#45;&#47;Kombinations Feld deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundDisabled`|  
   
  **Darauf zeigen (Hover)**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop&#45;unten&#47;Combo-Box auf Hover](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Hintergrund|`CommonControls.ComboBoxBackgroundHover`|  
-|![Drop&#45;unten&#47;Combo-Box auf Hover](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Rahmen|`CommonControls.ComboBoxBorderHover`|  
-|![Drop&#45;unten&#47;Combo-Box auf Hover](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Text|`CommonControls.ComboBoxTextHover`|  
-|![Drop&#45;unten&#47;Combo-Box auf Hover](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Trennzeichen|`CommonControls.ComboBoxSeparatorHover`|  
-|![Drop&#45;unten&#47;Combo-Box auf Hover](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Glyphe|`CommonControls.ComboBoxGlyphHover`|  
-|![Drop&#45;unten&#47;Combo-Box auf Hover](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Hintergrund|`CommonControls.ComboBoxBackgroundHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Rahmen|`CommonControls.ComboBoxBorderHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Text|`CommonControls.ComboBoxTextHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Trennzeichen|`CommonControls.ComboBoxSeparatorHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Glyphe|`CommonControls.ComboBoxGlyphHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundHover`|  
   
  **Gedrückt**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop&#45;nach unten&#47;Combo-Box gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Hintergrund|`CommonControls.ComboBoxBackgroundPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Rahmen|`CommonControls.ComboBoxBorderPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Text|`CommonControls.ComboBoxTextPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Trennzeichen|`CommonControls.ComboBoxSeparatorPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Glyphe|`CommonControls.ComboBoxGlyphPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Hintergrund|`CommonControls.ComboBoxBackgroundPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Rahmen|`CommonControls.ComboBoxBorderPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Text|`CommonControls.ComboBoxTextPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Trennzeichen|`CommonControls.ComboBoxSeparatorPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Glyphe|`CommonControls.ComboBoxGlyphPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld gedrückt](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
   
- **Mit Fokus**  
+ **Im Vordergrund**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop-&#45;&#47;Combo-Box fokussiert](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Hintergrund|`CommonControls.ComboBoxBackgroundFocused`|  
-|![Drop-&#45;&#47;Combo-Box fokussiert](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Rahmen|`CommonControls.ComboBoxBorderFocused`|  
-|![Drop-&#45;&#47;Combo-Box fokussiert](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Text|`CommonControls.ComboBoxTextFocused`|  
-|![Drop-&#45;&#47;Combo-Box fokussiert](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Trennzeichen|`CommonControls.ComboBoxSeparatorFocused`|  
-|![Drop-&#45;&#47;Combo-Box fokussiert](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Glyphe|`CommonControls.ComboBoxGlyphFocused`|  
-|![Drop-&#45;&#47;Combo-Box fokussiert](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Hintergrund|`CommonControls.ComboBoxBackgroundFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Rahmen|`CommonControls.ComboBoxBorderFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Text|`CommonControls.ComboBoxTextFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Trennzeichen|`CommonControls.ComboBoxSeparatorFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Glyphe|`CommonControls.ComboBoxGlyphFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
   
  **Texteingabeauswahl**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Drop-&#45;&#47;Combo-Feld-Texteingabe herunter](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|Hervorheben|`CommonControls.ComboBoxTextInputSelection`|  
+|![Dropdown&#45;&#47;-Kombinations Feld-Texteingabe](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|Markierung|`CommonControls.ComboBoxTextInputSelection`|  
   
  **Gedrückt – Listenelementansicht**  
   
 |Komponente|Element|Tokenname: Color.category|  
 |---------------|-------------|--------------------------------|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListBackground`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListBackgroundHover`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListItemBackgroundPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListItemBackgroundFocused`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorder`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorderHover`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorderPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorderFocused`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemText`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemTextHover`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemTextPressed`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemTextFocused`|  
-|![Drop&#45;nach unten&#47;Combo-Box-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrundschatten|`CommonControls.ComboBoxListBackgroundShadow`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListBackground`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListBackgroundHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListItemBackgroundPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrund|`CommonControls.ComboBoxListItemBackgroundFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorder`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorderHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorderPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Rahmen|`CommonControls.ComboBoxListBorderFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemText`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemTextHover`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemTextPressed`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Elementtext|`CommonControls.ComboBoxListItemTextFocused`|  
+|![Dropdown&#45;&#47;Kombinations Feld-Listenansicht](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Hintergrundschatten|`CommonControls.ComboBoxListBackgroundShadow`|  
   
 #### <a name="tabular-data-grid-controls"></a>Tabellendaten-Steuerelemente (Raster)  
  Tabellendaten-Steuerelemente, die auch als Rastersteuerelemente bezeichnet werden. Dies sind gebräuchliche Steuerelemente in Visual Studio, die werden verwendet, um große Datenmengen in mehreren Spalten darzustellen. Standardmäßige Tabellendaten-Steuerelemente sind in Visual Studio an mehreren Orten zu finden: z. a. in Fehlerlisten-Toolfenstern, IntelliTrace-Berichte und Speicherheapansichten. Verwenden Sie immer die standardmäßig bereitgestellten Tabellendaten-Steuerelemente. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die standardmäßigen Tabellendaten-Steuerelemente. Verwenden Sie in dieser Situation die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Tabellendaten-Steuerelementen in Visual Studio konsistent ist.  
   
- ![Tabellarische Daten &#40;Rastersteuerung&#41; Redline](../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")  
+ ![Tabellendaten &#40;Raster Steuerelement&#41; Redline](../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")  
   
  Empfohlen...  
  für Tabellen- oder Rastersteuerelemente  
@@ -1385,7 +1385,7 @@ Nicht empfohlen...
 ##### <a name="column-headers"></a>Spaltenüberschriften  
  Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionalen Glyphe zusammen, die normalerweise verwendet wird, wenn ein Raster nach dieser Spalte sortiert wird.  
   
-|State|Element|Tokenname: Category.color|  
+|Status|Element|Tokenname: Category.color|  
 |-----------|-------------|--------------------------------|  
 |Standard|Hintergrund|`Header.Default`|  
 |Standard|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -1403,7 +1403,7 @@ Nicht empfohlen...
 ##### <a name="list-view-items"></a>Listenansichtselemente  
  Listenansichtselemente bestehen aus einem Hintergrund und dem Inhalt. Der Inhalt kann Text, ein Symbol oder beides sein.  
   
-|State|Element|Tokenname: Category.color|  
+|Status|Element|Tokenname: Category.color|  
 |-----------|-------------|--------------------------------|  
 |Standard|Hintergrund|Transparent|  
 |Standard|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -1430,7 +1430,7 @@ Nicht empfohlen...
 
 - für Benutzeroberflächenelemente, die nicht wie der Manifest-Designer aufgebaut sind  
   
-|State|Komponente|Element|Tokenname: Category.color|  
+|Status|Komponente|Element|Tokenname: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Standard (ausgewählt)|Registerkarte|Hintergrund|`ManifestDesigner.TabActive`|  
 |Standard (ausgewählt)|Registerkarte|Rahmen|Keine|  
@@ -1455,8 +1455,8 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Etikett](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Standard**|Hintergrund|`Tag.Background`|  
-|![Etikett](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Standard**|Vordergrund (Text)|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Standard**|Hintergrund|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Standard**|Vordergrund (Text)|`Tag.Background`|  
 |![Tag, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Darauf zeigen (Hover)**|Hintergrund|`Tag.HoverBackground`|  
 |![Tag, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Darauf zeigen (Hover)**|Vordergrund (Text)|`Tag.HoverBackgroundText`|  
 |![Tag, aufgerufen](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")<br /><br /> **Gedrückt**|Hintergrund|`Tag.PressedBackground`|  
@@ -1469,24 +1469,24 @@ Nicht empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;-&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Standard (Tag, Standard)**|Hintergrund|–|  
-|![Tag &#40;-&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Standard (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyph`|  
+|![Tag &#40;Glyphe&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Standard (Tag, Standard)**|Hintergrund|–|  
+|![Tag &#40;Glyphe&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Standard (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyph`|  
   
  **Darauf zeigen (Hover)**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;-&#41; auf der Mauszeiger](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Darauf zeigen (Tag, Standard)**|Hintergrund|`Tag.TagHoverGlyphHoverBackground`|  
-|![Tag &#40;-&#41; auf der Mauszeiger](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Darauf zeigen (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyphHover`|  
-|![Tag &#40;-&#41; auf der Mauszeiger](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Darauf zeigen (Tag, Standard)**|Rahmen|`Tag.TagHoverGlyphHoverBorder`|  
+|![Markierung &#40;Glyphe&#41; bei Hover](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Darauf zeigen (Tag, Standard)**|Hintergrund|`Tag.TagHoverGlyphHoverBackground`|  
+|![Markierung &#40;Glyphe&#41; bei Hover](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Darauf zeigen (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyphHover`|  
+|![Markierung &#40;Glyphe&#41; bei Hover](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Darauf zeigen (Tag, Standard)**|Rahmen|`Tag.TagHoverGlyphHoverBorder`|  
   
  **Gedrückt**  
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;-&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Hintergrund|`Tag.TagHoverGlyphPressedBackground`|  
-|![Tag &#40;-&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyphPressed`|  
-|![Tag &#40;-&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Rahmen|`Tag.TagHoverGlyphPressedBorder`|  
+|![Tag &#40;Glyphe&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Hintergrund|`Tag.TagHoverGlyphPressedBackground`|  
+|![Tag &#40;Glyphe&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyphPressed`|  
+|![Tag &#40;Glyphe&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Rahmen|`Tag.TagHoverGlyphPressedBorder`|  
   
  **Tag ausgewählt/Glyphe, Standard**  
   
@@ -1545,7 +1545,7 @@ Nicht empfohlen...
 Empfohlen...  
 - für Bereiche, in denen Menüs oder Symbolleisten platziert werden.  
 
-- mit der richtigen Hintergrund-/Vordergrundtokennamenkombination.  
+- mit der richtigen Kombination aus Hintergrund-/vordergrundtokenname.  
   
   Nicht empfohlen...  
   für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen  
@@ -1559,7 +1559,7 @@ Empfohlen...
 |Befehlsleiste|Hintergrund<br /><br /> *Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps*|`Environment.CommandShelfBackgroundGradientMiddle`|  
 |Befehlsleiste|Hintergrund<br /><br /> *Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps*|`Environment.CommandShelfBackgroundGradientEnd`|  
   
-### <a name="toolbox"></a>Toolbox  
+### <a name="toolbox"></a>Werkzeugkasten  
  Der Werkzeugkasten ist eines der allgemeinen Toolfenster, die am häufigsten in Visual Studio verwendet werden. Es handelt sich um ein Struktursteuerelement, auf das ein bestimmtes Design und ein bestimmter Stil angewendet wurde.  
   
  ![Toolbox (rote Linie)](../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303-189_ToolboxRedline")  
@@ -1614,9 +1614,8 @@ Empfohlen...
   
 ## <a name="color-value-reference"></a>Farbwertverweis  
   
-|||||||||  
-|-|-|-|-|-|-|-|-|  
-|Komponente|Teil|Element|State|Leicht|Dark|Blau|Hoher Kontrast|  
+|Komponente|Teil|Element|Status|Hell|Dunkel|Blue|Hoher Kontrast|
+|---------|----|-------|-----|-----|----|----|----|  
 |Trennlinien|||Standard|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
 |Expander-Glyphe||Vordergrund|Standard|||||  
 |Expander-Glyphe||Vordergrund|Darauf zeigen (Hover)|||||  

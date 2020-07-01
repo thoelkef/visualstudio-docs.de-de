@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04c7eafd99d122c0b502e4b804b050bf7c59761f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985831"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547133"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Vorgehensweise: Programm gesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen
   Sie können jedes beliebige Arbeitsblatt in einer Arbeitsmappe löschen. Verwenden Sie zum Löschen eines Arbeitsblatts das Arbeitsblatt-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets-Auflistung der Arbeitsmappe zu.
@@ -64,7 +64,7 @@ ms.locfileid: "72985831"
      [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Arbeitsblättern](working-with-worksheets.md)
 - [Gewusst wie: Programm gesteuertes Ausblenden von Arbeitsblättern](how-to-programmatically-hide-worksheets.md)
 - [Gewusst wie: Programm gesteuertes Verschieben von Arbeitsblättern in Arbeitsmappen](how-to-programmatically-move-worksheets-within-workbooks.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,28 +17,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 551d27cf8d40f2e6e9c996b031fa6c4e0a233355
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189576"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546184"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server
   Sie können ein Datenelement markieren, das im Dokument zwischengespeichert werden soll, damit es offline verfügbar ist. Dies ermöglicht es auch, dass die Daten im Dokument durch anderen Code manipuliert werden, wenn das Dokument auf einem Server gespeichert wird.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Sie können ein Datenelement markieren, das zwischengespeichert werden soll, wenn das Datenelement im Code deklariert wird, oder wenn Sie eine <xref:System.Data.DataSet>verwenden, indem Sie im **Eigenschaften** Fenster eine Eigenschaft festlegen. Wenn Sie ein Datenelement Zwischenspeichern, das keine <xref:System.Data.DataSet> oder <xref:System.Data.DataTable>ist, müssen Sie sicherstellen, dass es die Kriterien für die Zwischenspeicherung im Dokument erfüllt. Weitere Informationen finden Sie unter zwischen [Speichern von Daten](../vsto/caching-data.md).
+ Sie können ein Datenelement markieren, das zwischengespeichert werden soll, wenn das Datenelement im Code deklariert wird, oder wenn Sie einen verwenden <xref:System.Data.DataSet> , indem Sie im **Eigenschaften** Fenster eine Eigenschaft festlegen. Wenn Sie ein Datenelement Zwischenspeichern, das keine <xref:System.Data.DataSet> oder ist <xref:System.Data.DataTable> , müssen Sie sicherstellen, dass es die Kriterien für die Zwischenspeicherung im Dokument erfüllt. Weitere Informationen finden Sie unter zwischen [Speichern von Daten](../vsto/caching-data.md).
 
 > [!NOTE]
-> Mit Visual Basic erstellte Datasets, die als **zwischengespeicherte** und **wiwitvents** gekennzeichnet sind (einschließlich Datasets, die aus **dem Datenquellen** Fenster oder der **Toolbox** gezogen werden, für die die **CacheInDocument** -Eigenschaft auf true festgelegt ist.) haben Sie einen Unterstrich mit vorangestellten Namen im Cache. Wenn Sie z. b. ein Dataset erstellen **und ihm einen**Namen geben, wird der <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> Name im Cache **_Customers** . Wenn Sie <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> für den Zugriff auf dieses zwischengespeicherte Element verwenden, müssen Sie **_Customers** anstelle von **Kunden**angeben.
+> Datasets, die mit Visual Basic erstellt werden, die als **zwischengespeicherte** und **widervents** gekennzeichnet sind (einschließlich Datasets, die aus dem **Datenquellen** Fenster oder der **Toolbox** gezogen werden, für die die **CacheInDocument** -Eigenschaft auf **true**festgelegt ist), haben einen Unterstrich mit dem Namen im Cache. Wenn Sie z. b. ein Dataset erstellen **und ihm einen**Namen geben, wird der <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> Name im Cache **_Customers** . Wenn Sie <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> für den Zugriff auf dieses zwischengespeicherte Element verwenden, müssen Sie **_Customers** anstelle von **Kunden**angeben.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>So speichern Sie Daten im Dokument mithilfe von Code zwischen
 
-1. Deklarieren Sie ein öffentliches Feld oder eine öffentliche Eigenschaft für das Datenelement als Member einer Host Element Klasse in Ihrem Projekt, z. b. die `ThisDocumen`t-Klasse in einem Word-Projekt oder die `ThisWorkbook`-Klasse in einem Excel-Projekt.
+1. Deklarieren Sie ein öffentliches Feld oder eine öffentliche Eigenschaft für das Datenelement als Member einer Host Element Klasse in Ihrem Projekt, z `ThisDocumen` . b. die t-Klasse in einem Word-Projekt oder die- `ThisWorkbook` Klasse in einem Excel-Projekt.
 
-2. Wenden Sie das <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>-Attribut auf das-Element an, um das Datenelement zu kennzeichnen, das im Daten Cache des Dokuments gespeichert werden soll. Im folgenden Beispiel wird dieses Attribut auf eine Feld Deklaration für eine <xref:System.Data.DataSet>angewendet.
+2. Wenden Sie das- <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Attribut auf das-Element an, um das Datenelement zu kennzeichnen, das im Daten Cache des Dokuments gespeichert werden soll. Im folgenden Beispiel wird dieses Attribut auf eine Feld Deklaration für eine angewendet <xref:System.Data.DataSet> .
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
@@ -59,9 +59,9 @@ ms.locfileid: "73189576"
 
 4. Legen Sie im Fenster **Eigenschaften** die **modifizierereigenschaft** auf **Public** fest (Standardmäßig ist Sie **intern**).
 
-## <a name="see-also"></a>Siehe auch
-- [Zwischenspeichern von Daten](../vsto/caching-data.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Vorgehensweise: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)
 - [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md)
-- [Daten speichern](../data-tools/save-data-back-to-the-database.md)
+- [Speichern von Daten](../data-tools/save-data-back-to-the-database.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Aktualisieren von Lesezeichentext'
+title: 'Gewusst wie: Programm gesteuertes Aktualisieren von Lesezeichen Text'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 436fefd425da46cea6a8cd1aba95fb9eb14362f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418960"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546951"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>Vorgehensweise: Programmgesteuertes Aktualisieren von Lesezeichentext
-  Sie können Text in ein Platzhalterlesezeichen in einem Microsoft Office Word-Dokument einfügen, um den Text zu einem späteren Zeitpunkt abzurufen oder Text in einem Lesezeichen zu ersetzen. Wenn Sie eine Anpassung auf Dokumentebene entwickeln, können Sie auch Text in einem an Daten gebundenen <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement aktualisieren. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).
+# <a name="how-to-programmatically-update-bookmark-text"></a>Gewusst wie: Programm gesteuertes Aktualisieren von Lesezeichen Text
+  Sie können Text in ein Platzhalterlesezeichen in einem Microsoft Office Word-Dokument einfügen, um den Text zu einem späteren Zeitpunkt abzurufen oder Text in einem Lesezeichen zu ersetzen. Wenn Sie eine Anpassung auf Dokumentebene entwickeln, können Sie auch Text in einem an Daten gebundenen <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement aktualisieren. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office](../vsto/binding-data-to-controls-in-office-solutions.md)-Projektmappen.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -30,15 +30,15 @@ ms.locfileid: "63418960"
 
 - Einem <xref:Microsoft.Office.Tools.Word.Bookmark>-Hoststeuerelement.
 
-   <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente erweitern systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte, indem sie die Datenbindung aktivieren und Ereignisse verfügbar machen. Weitere Informationen zu Hoststeuerelementen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
+   <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente erweitern systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte, indem sie die Datenbindung aktivieren und Ereignisse verfügbar machen. Weitere Informationen zu Host Steuerelementen finden Sie unter [Übersicht über Host Elemente und Host](../vsto/host-items-and-host-controls-overview.md)Steuerelemente.
 
-- Einem systemeigene <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt.
+- Ein systemeigenes <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt.
 
    <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekte verfügen über keine Ereignisse oder Datenbindungsfunktionen.
 
-  Wenn Sie einem Lesezeichen Text zuordnen, unterscheidet sich das Verhalten zwischen <xref:Microsoft.Office.Interop.Word.Bookmark> und <xref:Microsoft.Office.Tools.Word.Bookmark>. Weitere Informationen finden Sie unter [Bookmark-Steuerelement](../vsto/bookmark-control.md).
+  Wenn Sie einem Lesezeichen Text zuordnen, unterscheidet sich das Verhalten zwischen <xref:Microsoft.Office.Interop.Word.Bookmark> und <xref:Microsoft.Office.Tools.Word.Bookmark>. Weitere Informationen finden Sie unter [Bookmark Control](../vsto/bookmark-control.md).
 
-## <a name="use-host-controls"></a>Verwenden von Hoststeuerelementen
+## <a name="use-host-controls"></a>Verwenden von Host Steuerelementen
 
 ### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>So aktualisieren Lesezeicheninhalte mithilfe des Lesezeichen-Steuerelements
 
@@ -50,12 +50,12 @@ ms.locfileid: "63418960"
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
 
-2. Weisen Sie die *NewText* von string in die <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Word.Bookmark>.
+2. Weisen Sie die *Newtext* -Zeichenfolge der- <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> Eigenschaft von zu <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
      [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
      [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]
 
-## <a name="use-word-objects"></a>Verwenden von Word-Objekte
+## <a name="use-word-objects"></a>Verwenden von Word-Objekten
 
 ### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>So aktualisieren Lesezeicheninhalte mithilfe eines Word-Lesezeichenobjekts
 
@@ -67,7 +67,7 @@ ms.locfileid: "63418960"
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]
 
-2. Weisen Sie die *NewText* von string in die <xref:Microsoft.Office.Interop.Word.Range.Text%2A> -Eigenschaft des Lesezeichens zu, wodurch das Lesezeichen automatisch gelöscht. Fügen Sie das Lesezeichen der <xref:Microsoft.Office.Interop.Word.Bookmarks>-Auflistung dann erneut hinzu.
+2. Weisen Sie die *Newtext* -Zeichenfolge der- <xref:Microsoft.Office.Interop.Word.Range.Text%2A> Eigenschaft des Lesezeichens zu, wodurch das Lesezeichen automatisch gelöscht wird. Fügen Sie das Lesezeichen der <xref:Microsoft.Office.Interop.Word.Bookmarks>-Auflistung dann erneut hinzu.
 
      Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.
 
@@ -79,7 +79,7 @@ ms.locfileid: "63418960"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#66)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
 - [Bookmark-Steuerelement](../vsto/bookmark-control.md)

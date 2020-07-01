@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Anfügen von Dateien an Outlook-e-Mail-Elemente'
+title: 'Gewusst wie: Programm gesteuertes Anfügen von Dateien an Outlook-e-Mails'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546132"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Vorgehensweise: Programmgesteuertes Anfügen von Dateien an Outlook-e-Mail-Elemente
-  In diesem Beispiel fügt eine Datei in ein neues e-Mail-Element, und sendet sie an Armando Pinto. Im Beispiel wird davon ausgegangen, dass eine Person, die mit dem Namen Armando Pinto als Empfänger vorhanden ist.
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Gewusst wie: Programm gesteuertes Anfügen von Dateien an Outlook-e-Mails
+  In diesem Beispiel wird eine Datei an ein neues e-Mail-Element angefügt und an Armando Pinto gesendet. Im Beispiel wird davon ausgegangen, dass eine Person namens Armando Pinto als Empfänger vorhanden ist.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,8 +31,8 @@ ms.locfileid: "62575623"
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
 
-## <a name="see-also"></a>Siehe auch
-- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)
-- [Vorgehensweise: Programmgesteuertes Senden von e-Mail-Adresse](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Vorgehensweise: Programmgesteuertes Speichern von Anlagen von Outlook-e-Mail-Elementen](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
-- [Vorgehensweise: Programmgesteuertes Erstellen von e-Mail-Elementen](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Arbeiten mit e-Mail-Elementen](../vsto/working-with-mail-items.md)
+- [Gewusst wie: Programm gesteuertes Senden von e-Mails](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Gewusst wie: Programm gesteuertes Speichern von Anlagen von Outlook-e-Mail](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
+- [Gewusst wie: Programm gesteuertes Erstellen eines e-Mail-Elements](../vsto/how-to-programmatically-create-an-e-mail-item.md)

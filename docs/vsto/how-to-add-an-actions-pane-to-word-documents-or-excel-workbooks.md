@@ -1,7 +1,7 @@
 ---
-title: Hinzufügen des Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen
+title: Aktionsbereich zu Word-Dokumenten oder Excel-Arbeitsmappen hinzufügen
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,68 +15,68 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aed3ace3765bb9f160117503deb7373e12e510ad
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177774"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546223"
 ---
-# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen
-  Um ein Microsoft Office Word-Dokument oder einer Microsoft Excel-Arbeitsmappe einen Aktionsbereich hinzuzufügen, müssen Sie zuerst erstellen Sie ein Windows Forms-Benutzersteuerelement. Anschließend fügen das Benutzersteuerelement, um die <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft der `ThisDocument.ActionsPane` Feld (Wort) oder `ThisWorkbook.ActionsPane` Feld (Excel) in Ihrem Projekt.
+# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen
+  Um einem Microsoft Office Word-Dokument oder einer Microsoft Excel-Arbeitsmappe einen Aktionsbereich hinzuzufügen, erstellen Sie zunächst ein Windows Forms Benutzer Steuerelement. Fügen Sie dann das Benutzer Steuerelement der- <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft des `ThisDocument.ActionsPane` Felds (Word) oder `ThisWorkbook.ActionsPane` Feld (Excel) im Projekt hinzu.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Erstellen des Benutzersteuerelements
- Das folgende Verfahren zeigt, wie Benutzersteuerelemente in einem Word oder Excel-Projekt. Es fügt auch eine Schaltfläche auf das Benutzersteuerelement, das Text in das Dokument oder Arbeitsmappe schreibt, wenn darauf geklickt wird.
+ Im folgenden Verfahren wird gezeigt, wie ein Benutzer Steuerelement in einem Word-oder Excel-Projekt erstellt wird. Außerdem wird dem Benutzer Steuerelement eine Schaltfläche hinzugefügt, die Text in das Dokument oder die Arbeitsmappe schreibt, wenn darauf geklickt wird.
 
-#### <a name="to-create-the-user-control"></a>Um das Benutzersteuerelement zu erstellen.
+#### <a name="to-create-the-user-control"></a>So erstellen Sie das Benutzer Steuerelement
 
-1. Öffnen Sie Ihr Projekt für Word oder Excel auf Dokumentebene in Visual Studio.
+1. Öffnen Sie Ihr Word-oder Excel-Projekt auf Dokument Ebene in Visual Studio.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Aktionsbereich-Steuerelements**, nennen Sie sie **HelloControl**, und klicken Sie auf **hinzufügen**.
+3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option Aktionsbereich- **Steuer**Element aus, nennen Sie es **HelloControl**, und klicken Sie auf **Hinzufügen**.
 
     > [!NOTE]
-    > Sie können alternativ Hinzufügen einer **Benutzersteuerelement** Element zu Ihrem Projekt. Die Klassen generiert, indem die **Aktionsbereich-Steuerelements** und **Benutzersteuerelement** Elemente sind funktional äquivalent.
+    > Alternativ können Sie dem Projekt ein **Benutzer Steuer** Element hinzufügen. Die durch das Aktionsbereich- **Steuer** Element und die **Benutzer Steuer** Elemente generierten Klassen sind funktional äquivalent.
 
-4. Von der **Windows Forms** Registerkarte die **Toolbox** ziehen Sie eine **Schaltfläche** Steuerelement auf das Steuerelement.
+4. Ziehen Sie auf der Registerkarte **Windows Forms** der **Toolbox** ein **Schalt** Flächen-Steuerelement auf das-Steuerelement.
 
     > [!NOTE]
-    > Wenn das Steuerelement nicht im Designer angezeigt wird, doppelklicken klicken Sie auf **HelloControl** in **Projektmappen-Explorer**.
+    > Wenn das Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer**auf **HelloControl** .
 
-5. Fügen Sie den Code der <xref:System.Windows.Forms.Control.Click> -Ereignishandler der Schaltfläche. Das folgende Beispiel zeigt Code für Microsoft Office Word-Dokument.
+5. Fügen Sie dem- <xref:System.Windows.Forms.Control.Click> Ereignishandler der Schaltfläche den Code hinzu. Das folgende Beispiel zeigt Code für ein Microsoft Office Word-Dokument.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
 
-6. In c# müssen Sie einen Ereignishandler für das Schaltflächen-Klickereignis hinzufügen. Sie können diesen Code in Platzieren der `HelloControl` Konstruktor nach dem Aufruf von `InitializeComponent`.
+6. In c# müssen Sie einen Ereignishandler für den Schaltflächen Klick hinzufügen. Sie können diesen Code nach dem-Befehl im- `HelloControl` Konstruktor platzieren `InitializeComponent` .
 
-     Weitere Informationen über das Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).
+     Weitere Informationen zum Erstellen von Ereignis Handlern finden Sie unter Gewusst [wie: Erstellen von Ereignis Handlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]
 
-## <a name="add-the-user-control-to-the-actions-pane"></a>Fügen Sie das Benutzersteuerelement, um den Bereich "Aktionen"
- Fügen Sie das Benutzersteuerelement, um den Bereich "Aktionen" anzuzeigen, die <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft der `ThisDocument.ActionsPane` Feld (Word) oder `ThisWorkbook.ActionsPane` Feld (Excel).
+## <a name="add-the-user-control-to-the-actions-pane"></a>Hinzufügen des Benutzer Steuer Elements zum Aktionsbereich
+ Fügen Sie das Benutzer Steuerelement zur- <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft des `ThisDocument.ActionsPane` Felds (Word) oder `ThisWorkbook.ActionsPane` Feld (Excel) hinzu, um den Aktionsbereich anzuzeigen.
 
-### <a name="to-add-the-user-control-to-the-actions-pane"></a>Der Bereich "Aktionen" das Benutzersteuerelement hinzu
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>So fügen Sie das Benutzer Steuerelement zum Aktionsbereich hinzu
 
-1. Fügen Sie den folgenden Code der `ThisDocument` oder `ThisWorkbook` Klasse als eine Deklaration auf Klassenebene (Fügen Sie diesen Code nicht an eine Methode).
+1. Fügen Sie der-Klasse oder der-Klasse den folgenden Code `ThisDocument` `ThisWorkbook` als Deklaration auf Klassenebene hinzu (fügen Sie diesen Code nicht zu einer-Methode hinzu).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
 
-2. Fügen Sie den folgenden Code der `ThisDocument_Startup` -Ereignishandler des der `ThisDocument` Klasse oder die `ThisWorkbook_Startup` -Ereignishandler des der `ThisWorkbook` Klasse.
+2. Fügen Sie dem- `ThisDocument_Startup` Ereignishandler der- `ThisDocument` Klasse oder dem- `ThisWorkbook_Startup` Ereignishandler der-Klasse `ThisWorkbook` den folgenden Code hinzu.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)
 - [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
-- [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+- [Gewusst wie: Verwalten des Steuerelement Layouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)

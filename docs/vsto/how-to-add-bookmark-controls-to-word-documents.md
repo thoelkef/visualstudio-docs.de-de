@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Word-Dokumenten Lesezeichen-Steuerelemente hinzufügen'
+title: 'Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.Bookmark.Dialog
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce77736bfefdc2c2e70c489a91b147cb0d2ed74a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255993"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547250"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Vorgehensweise: Word-Dokumenten Lesezeichen-Steuerelemente hinzufügen
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten
   In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "71255993"
 
 - [Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)
 
-  Weitere Informationen zu <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelementen finden Sie unter [Lesezeichen-Steuer](../vsto/bookmark-control.md)Element.
+  Weitere Informationen zu- <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelementen finden Sie unter [Lesezeichen-Steuer](../vsto/bookmark-control.md)Element.
 
-## <a name="designtime"></a>Hinzufügen von Bookmark-Steuerelementen zur Entwurfszeit
+## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a>Hinzufügen von Bookmark-Steuerelementen zur Entwurfszeit
  Es gibt mehrere Möglichkeiten, wie Sie einem Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen können:
 
 - Die **Toolbox**von Visual Studio.
@@ -77,7 +77,7 @@ ms.locfileid: "71255993"
 
 3. Geben Sie im Dialogfeld **Lesezeichen** den Namen des neuen Lesezeichens ein, und klicken Sie auf **Hinzufügen**.
 
-## <a name="runtimedoclevel"></a>Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
+## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
  Sie können einem Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente programmgesteuert hinzufügen, indem Sie die Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft der `ThisDocument` -Klasse im Projekt verwenden. Es gibt zwei Methodenüberladungen, mit denen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement auf die folgenden Weisen hinzufügen können:
 
 - Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> in einem angegebenen Bereich hinzu.
@@ -96,7 +96,7 @@ ms.locfileid: "71255993"
     > [!NOTE]
     > Wenn Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement von einem vorhandenen <xref:Microsoft.Office.Interop.Word.Bookmark>erstellen möchten, verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> -Methode und übergeben das vorhandene <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
-## <a name="runtimeaddin"></a>Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können einem beliebigen geöffneten Dokument mithilfe eines VSTO-Add-Ins zur Laufzeit programmgesteuert <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. Zu diesem Zweck generieren Sie ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement, das auf einem geöffneten Dokument basiert, und verwenden dann die Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft dieses Hostelements. Es gibt zwei Methodenüberladungen, mit denen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement auf die folgenden Weisen hinzufügen können:
 
 - Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> in einem angegebenen Bereich hinzu.
@@ -125,11 +125,11 @@ ms.locfileid: "71255993"
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
-- [Vorgehensweise: Ändern der Größe von Bookmark](../vsto/how-to-resize-bookmark-controls.md)
+- [Gewusst wie: Ändern der Größe von Bookmark-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)

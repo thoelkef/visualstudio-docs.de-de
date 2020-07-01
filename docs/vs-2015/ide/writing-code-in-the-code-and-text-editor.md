@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8793dd08a5ed4aaf83c1ddd52948db4c8b22034b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa647d8a8d52588481d18347cb3400141978bd20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662640"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548030"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Schreiben von Code im Code- und Text-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 
  Code kann auf unterschiedliche Weise angezeigt werden. Öffnen Sie zum Anzeigen einer Projektmappe der Klassenansicht das Fenster **Klassenansicht** , oder erweitern Sie die Knoten im **Projektmappen-Explorer** unter den Klassendateien.
 
- Sie können Text in einzelnen oder mehreren Dateien suchen und ersetzen. Weitere Informationen finden Sie unter [Finding and Replacing Text](../ide/finding-and-replacing-text.md). Beachten Sie bei der Verwendung von regulären Ausdrücken, dass "Suchen und Ersetzen" jetzt reguläre .NET-Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+ Sie können Text in einzelnen oder mehreren Dateien suchen und ersetzen. Weitere Informationen finden Sie untersuchen [und Ersetzen von Text](../ide/finding-and-replacing-text.md). Beachten Sie bei der Verwendung von regulären Ausdrücken, dass "Suchen und Ersetzen" jetzt reguläre .NET-Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
  Für die verschiedenen Visual Studio-Sprachen werden unterschiedliche Funktionssätze angeboten, und in einigen Fällen verhalten sich die Funktionen in verschiedenen Sprachen unterschiedlich. Viele dieser Unterschiede werden in den Beschreibungen der Funktionen erläutert. Weitere Informationen können Sie den Abschnitten über einzelne Visual Studio-Sprachen entnehmen.
 
@@ -82,14 +82,14 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 
 ## <a name="editor-features"></a>Editor-Funktionen
 
-|||
+|Funktion|BESCHREIBUNG|
 |-|-|
 |Farben für Syntax|Einige Syntaxelemente in den Code- und Markupdateien sind unterschiedlich gefärbt, damit sie unterschieden werden können. Beispielsweise sind Schlüsselwörter (wie `using` in C# und `Imports` in Visual Basic) in einer Farbe gehalten, jedoch Typen (wie `Console` und `Uri`) haben eine andere Farbe. Andere Syntaxelemente werden auch farbig hervorgehoben, wie zum Beispiel Zeichenfolgenliterale und Kommentare. In C++ werden Farben verwendet, um Typen, Enumerationen und Makros von anderen Token zu unterscheiden.<br /><br /> Sie können die Standardfarbe für jeden Typ sehen, und Sie können die Farbe für spezifische Syntaxelemente im [Fonts and Colors, Environment, Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)ändern, auf das Sie über das Menü **Extras** zugreifen.|
 |Markierungen für Fehler und Warnungen|Wenn Sie Code hinzufügen und Ihre Projektmappe erstellen, werden möglicherweise (a) verschiedenfarbige Unterstreichungen (sogenannte Wellenlinien) oder (b) Glühbirnen in Ihrem Code angezeigt. Rote Wellenlinien kennzeichnen Syntaxfehler, blaue kennzeichnen Compilerfehler, grüne kennzeichnen Warnungen und lila Wellenlinien kennzeichnen alle anderen Arten von Fehlern. [Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md) schlagen Fehlerbehebungen für Probleme vor und vereinfachen das Anwenden der jeweiligen Fehlerbehebung.<br /><br /> Sie können die Standardfarben für alle Wellenlinien, die Fehler und Warnungen anzeigen, im Dialogfeld **Extras > Optionen > Umgebung > Schriftarten und Farben** aufrufen. Suchen Sie nach **Syntaxfehler**, **Compilerfehler**, **Warnung**und **Anderer Fehler**.|
-|Überprüfung des Klammergleichgewichts|Bei Platzierung der Einfügemarke auf eine öffnende geschweifte Klammer in einer Codedatei werden die öffnende und die schließende Klammer hervorgehoben. Durch diese Funktion erhalten Sie unmittelbar Feedback zu falsch platzierten oder fehlenden geschweiften Klammern. Sie können die Zuordnung von geschweiften Klammern mit der Einstellung **Trennzeichen automatisch hervorheben** (**Extras > Optionen > Text-Editor**) aktivieren bzw. deaktivieren. Sie können die in der Einstellung **Schriftarten und Farben** festgelegte Hervorhebungsfarbe ändern (**Extras > Optionen > Umgebung**). Suchen Sie nach **Zugehörige Klammer (Hervorhebung)** oder **Zugehörige Klammer (Rechteck)** .|
-|Zeilennummern|Zeilennummern können im linken Rand des Codefensters angezeigt werden. Standardmäßig werden sie nicht angezeigt. Sie können diese Option in den Einstellungen **Text-Editor &gt; Alle Sprachen** (**Extras &gt; Optionen &gt; Text-Editor &gt; Alle Sprachen**) deaktivieren. Sie können die Zeilennummern für einzelne Programmiersprachen anzeigen, indem Sie die Einstellungen für diese Sprachen ändern (**Extras/Optionen/Text-Editor/\<Sprache>** ). Damit die Zeilennummern ausgedruckt werden, müssen Sie im Dialogfeld **Drucken** die Option "Zeilennummern einschließen" auswählen.|
+|Überprüfung des Klammergleichgewichts|Bei Platzierung der Einfügemarke auf eine öffnende geschweifte Klammer in einer Codedatei werden die öffnende und die schließende Klammer hervorgehoben. Durch diese Funktion erhalten Sie unmittelbar Feedback zu falsch platzierten oder fehlenden geschweiften Klammern. Sie können die Zuordnung von geschweiften Klammern mit der Einstellung **Trennzeichen automatisch hervorheben** (**Extras > Optionen > Text-Editor**) aktivieren bzw. deaktivieren. Sie können die in der Einstellung **Schriftarten und Farben** festgelegte Hervorhebungsfarbe ändern (**Extras > Optionen > Umgebung**). Suchen Sie nach **Zugehörige Klammer (Hervorhebung)** oder **Zugehörige Klammer (Rechteck)**.|
+|Zeilennummern|Zeilennummern können im linken Rand des Codefensters angezeigt werden. Standardmäßig werden sie nicht angezeigt. Sie können diese Option in den Einstellungen **Text-Editor &gt; Alle Sprachen** (**Extras &gt; Optionen &gt; Text-Editor &gt; Alle Sprachen**) deaktivieren. Sie können Zeilennummern für einzelne Programmiersprachen anzeigen, indem Sie die Einstellungen für diese Sprachen ändern (Extras >**Optionen \<language> **> Text-Editor >). Damit die Zeilennummern ausgedruckt werden, müssen Sie im Dialogfeld **Drucken** die Option "Zeilennummern einschließen" auswählen.|
 |Änderungsnachverfolgung|Durch die Farbe am linken Rand können Sie die Änderungen verfolgen, die Sie an einer Datei vorgenommen haben. Änderungen, die Sie seit dem Öffnen der Datei vorgenommen, jedoch nicht gespeichert haben, werden durch eine gelbe Leiste am linken Rand gekennzeichnet (auch als "Auswahlrand" bezeichnet). Nach dem Speichern der Änderungen (jedoch vor dem Schließen der Datei), wird die Statusleiste grün. Wenn Sie eine Änderung rückgängig machen, nachdem Sie die Datei gespeichert haben, wird die Leiste orange. Wenn Sie diese Funktion aktivieren oder deaktivieren möchten, ändern Sie die Option **Änderungen nachverfolgen** in den Einstellungen des **Text-Editors** (**Extras > Optionen > Text-Editor**).|
-|Auswählen von Text und Code|Sie können Text entweder im standardmäßigen fortlaufenden Streammodus oder im Feldmodus auswählen, indem Sie einen rechteckigen Bereich des Texts anstelle eines Zeilensatzes auswählen. Um eine Auswahl im Feldmodus zu vorzunehmen, drücken Sie ALT, während Sie die Maus über die Auswahl ziehen (oder drücken Sie UMSCHALT+ALT+\<Pfeiltaste>). Die Auswahl umfasst alle Zeichen innerhalb des Rechtecks, das durch das erste und das letzte Zeichen in der Auswahl definiert wird. Eingaben oder Einfügungen im ausgewählten Bereich werden in jeder Zeile am gleichen Punkt eingefügt.|
+|Auswählen von Text und Code|Sie können Text entweder im standardmäßigen fortlaufenden Streammodus oder im Feldmodus auswählen, indem Sie einen rechteckigen Bereich des Texts anstelle eines Zeilensatzes auswählen. Um eine Auswahl im Feldmodus zu treffen, drücken Sie alt, während Sie die Maus über die Auswahl ziehen (oder drücken Sie ALT + UMSCHALT + \<arrow key> ). Die Auswahl umfasst alle Zeichen innerhalb des Rechtecks, das durch das erste und das letzte Zeichen in der Auswahl definiert wird. Eingaben oder Einfügungen im ausgewählten Bereich werden in jeder Zeile am gleichen Punkt eingefügt.|
 |Zoom|Sie können die Anzeige in jedem Codefenster vergrößern oder verkleinern, indem Sie die STRG-TASTE gedrückt halten und das Mausrad drehen (oder zum Vergrößern STRG+UMSCHALT+. und zum Verkleinern STRG+UMSCHALT+, drücken). Sie können auch mithilfe des Zoomfelds links unten im Codefenster einen bestimmten Zoomprozentsatz festlegen. Die Zoomfunktion funktioniert nicht in Toolfenstern.|
 |Virtueller Bereich|Standardmäßig enden Zeilen in Visual Studio-Editoren nach dem letzten Zeichen, sodass der Cursor am Ende einer Zeile mit der NACH RECHTS-TASTE an den Anfang der nächsten Zeile verschoben werden kann. In einigen Editoren endet eine Zeile nicht nach dem letzten Zeichen, und Sie können den Cursor an einer beliebigen Stelle in der Zeile platzieren. Der virtuelle Bereich kann im Editor über die Einstellungen **Extras > Optionen > Text-Editor > Alle Sprachen** aktiviert werden. Beachten Sie, dass Sie entweder **Virtueller Bereich** oder **Zeilenumbruch**aktivieren können, jedoch nicht beide Optionen gleichzeitig.|
 |Drucken|Beim Drucken einer Datei können Sie über die Optionen im Dialogfeld **Drucken** Zeilennummern einschließen oder reduzierte Bereiche des Codes ausblenden. Im Dialogfeld **Seite einrichten** können Sie auch festlegen, dass der vollständige Pfad und der Dateiname gedruckt werden, indem Sie **Kopfzeile**auswählen.<br /><br /> Im Dialogfeld **Extras > Optionen > Umgebung > Schriftarten und Farben** können Sie Farbdruckoptionen festlegen. Wählen Sie **Drucker** in der Liste **Einstellungen anzeigen für** aus, um den Farbdruck anzupassen. Sie können zum Drucken einer Datei andere Farben als beim Bearbeiten der Datei angeben.|
@@ -98,7 +98,7 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 ## <a name="advanced-editing-features"></a>Erweiterte Bearbeitungsfunktionen
  Einige erweiterte Funktionen befinden sich im Untermenü **Bearbeiten > Erweitert** . Nicht alle diese Funktionen sind für alle Typen von Codedateien verfügbar.
 
-|||
+|Funktion|BESCHREIBUNG|
 |-|-|
 |Dokument formatieren|Legt den richtigen Einzug von Codezeilen fest und verschiebt geschweifte Klammern in separate Zeilen im Dokument.|
 |Auswahl formatieren|Legt den richtigen Einzug von Codezeilen fest und verschiebt geschweifte Klammern in separate Zeilen in der Auswahl.|
@@ -110,7 +110,7 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 |Horizontale Leerstelle löschen|Löscht Tabstopps oder Leerzeichen am Ende der aktuellen Zeile.|
 |Leerstelle anzeigen|Zeigt Leerzeichen als Hochpunkte und Tabstopps als Pfeile an. Das Ende einer Datei wird als rechteckiges Symbol angezeigt. Wenn **Extras > Optionen > Text-Editor > Alle Sprachen > Zeilenumbruch > Visuelle Symbole für Zeilenumbruch anzeigen** ausgewählt ist, wird dieses Symbol ebenfalls angezeigt.|
 |Zeilenumbruch|Bewirkt, dass alle Zeilen in einem Dokument im Codefenster sichtbar sind. In der Einstellung "Alle Sprachen" im Text-Editor können Sie den Zeilenumbruch deaktivieren und aktivieren (**Extras > Optionen > Text-Editor > Alle Sprachen**).|
-|Kommentar aus Auswahl entfernen|Fügt Kommentarzeichen zur Auswahl oder aktuellen Zeile hinzu.|
+|Auskommentierung der Auswahl aufheben|Fügt Kommentarzeichen zur Auswahl oder aktuellen Zeile hinzu.|
 |Auswahl kommentieren|Entfernt Kommentarzeichen aus der Auswahl oder der aktuellen Zeile.|
 |Zeileneinzug vergrößern|Fügt eine Registerkarte (oder die entsprechenden Leerzeichen) zu den ausgewählten Zeilen oder zur aktuellen Zeile hinzu.|
 |Zeileneinzug verkleinern|Entfernt eine Registerkarte (oder die entsprechenden Leerzeichen) aus den ausgewählten Zeilen oder der aktuellen Zeile.|
@@ -120,21 +120,21 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 ## <a name="navigate-in-the-code-window"></a>Navigieren im Codefenster
  Sie können sich auf verschiedene Arten in einem Dokument bewegen. Zusätzlich zu den Standardvorgängen können Sie die Schaltflächen **Rückwärts navigieren** (oder STRG+MINUSZEICHEN) und **Vorwärts navigieren** (oder STRG+UMSCHALT+MINUSZEICHEN) auf der Symbolleiste verwenden, um die Einfügemarke im aktiven Dokument auf vorherige Positionen oder auf Positionen zu verschieben, die Sie gerade erst besucht haben. Diese Schaltflächen speichern die letzten 20 Positionen der Einfügemarke.
 
- ![Vorwärts-und rückwärts Navigations Schaltflächen](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")
+ ![Navigationsschaltflächen "Vor" und "Zurück"](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")
 
  Sie können ebenfalls die erweiterte Bildlaufleiste im Codefenster verwenden, um den Code aus der Vogelperspektive zu betrachten. Im Zuordnungsmodus können Sie eine Codevorschau sehen, wenn Sie den Cursor auf der Bildlaufleiste nach oben und unten bewegen. Weitere Informationen hierzu finden Sie unter [How to: Track Your Code by Customizing the Scrollbar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
  Die folgenden Befehle stehen für codespezifische Navigationsmethoden:
 
-|||
+|Get-Help|BESCHREIBUNG|
 |-|-|
-|Gehe zu \<Zeilennummer>|(**Bearbeiten &gt; Gehe zu** oder STRG+G): zu einer bestimmten Zeilennummer im aktiven Dokument wechseln.|
+|Gehe zu\<line number>|(**Bearbeiten &gt; Gehe zu** oder STRG+G): zu einer bestimmten Zeilennummer im aktiven Dokument wechseln.|
 |Navigieren zu|(**Bearbeiten/Navigieren zu** oder STRG+,): sucht ein Symbol oder eine Datei in der aktiven Projektmappe. Hiermit können Sie einen geeigneten Satz von übereinstimmenden Ergebnissen für eine Abfrage auswählen. Sie können nach Schlüsselwörtern in einem Symbol suchen, indem Sie die Kamel-Schreibweise und Unterstriche verwenden, um das Symbol in Schlüsselwörter aufzuteilen.|
 |Alle Verweise suchen|(Kontextmenü): sucht alle Verweise auf das ausgewählte Element in der Projektmappe.|
 |Gehe zu Definition|(Kontextmenü oder F12): sucht die Definition des ausgewählten Elements.|
-|Peek-Definition|(Kontextmenü oder ALT+F12): sucht die Definition des ausgewählten Elements und zeigt sie in einem Popupfenster an. Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|
+|Peek-Definition|(Kontextmenü oder ALT+F12): sucht die Definition des ausgewählten Elements und zeigt sie in einem Popupfenster an. Weitere Informationen finden Sie unter Gewusst [wie: anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (ALT + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|
 |Nächste Methode, Vorherige Methode|(**Bearbeiten > Nächste Methode, Vorherige Methode**): Verwenden Sie diese Befehle in Visual Basic-Codedateien, um die Einfügemarke zu den verschiedenen Methoden zu verschieben.|
-|Markieren von Verweisen|Wenn Sie auf ein Symbol im Quellcode klicken, werden alle Instanzen dieses Symbols im Dokument hervorgehoben. Die markierten Symbole können Deklarationen und Verweise sowie weitere Symbole umfassen, die von **Alle Verweise suchen** zurückgegeben werden können. Dazu zählen die Namen von Klassen, Objekten, Variablen, Methoden und Eigenschaften. In Visual Basic-Code werden auch Schlüsselwörter für viele Steuerungsstrukturen hervorgehoben. Um zum nächsten oder vorherigen hervorgehobenen Symbol zu springen, drücken Sie STRG+UMSCHALTTASTE+NACH-UNTEN-TASTE bzw. STRG+UMSCHALTTASTE+NACH-OBEN-TASTE. Sie können die Hervorhebungsfarbe in **Extras > Optionen > Umgebung > Schriftarten und Farben > Hervorgehobener Verweis**ändern.|
+|Markieren von Verweisen|Wenn Sie auf ein Symbol im Quellcode klicken, werden alle Instanzen dieses Symbols im Dokument hervorgehoben. Die markierten Symbole können Deklarationen und Verweise sowie weitere Symbole umfassen, die von **Alle Verweise suchen** zurückgegeben werden können. Dazu zählen die Namen von Klassen, Objekten, Variablen, Methoden und Eigenschaften. In Visual Basic-Code werden auch Schlüsselwörter für viele Steuerungsstrukturen hervorgehoben. Um zum nächsten oder vorherigen hervorgehobenen Symbol zu springen, drücken Sie STRG+UMSCHALTTASTE+NACH-UNTEN-TASTE bzw. STRG+UMSCHALTTASTE+NACH-OBEN-TASTE. Sie können die Hervorhebungs Farbe unter Extras **/Optionen/Umgebung/Schriftarten und Farben/hervorgehobene Verweis ändern.**|
 |Suchen von codebezogenen Informationen|Sie können Informationen über bestimmten Code, wie Änderungen und wer diese Änderungen vorgenommen hat, Verweise, Fehler, Arbeitselemente und Codeüberprüfungen sowie Komponententeststatus anzeigen, wenn Sie CodeLens im Code-Editor verwenden. CodeLens funktioniert wie ein Heads-up-Display, wenn Sie Visual Studio Enterprise mit Team Foundation Server verwenden. Weitere Informationen finden Sie unter [Ermitteln von Änderungen am Code und anderer Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md).|
 
  Sie können zum Navigieren in einer Codedatei ebenfalls die **Navigationsleiste**verwenden, d. h. die beiden Dropdownfelder, die im oberen Bereich des Codefensters angezeigt werden. Mit dieser Leiste können Sie direkt zu einem bestimmten Typ oder zu einem der Member innerhalb eines Typs navigieren. Die Navigationsleiste wird mit Codedateien von Visual Basic, C# und C++ angezeigt.
@@ -161,23 +161,23 @@ Der Visual Studio-Befehl „Navigieren zu“ führt eine zielgerichtete Suche in
 ### <a name="navigate-code-using-navigate-to"></a>Navigieren in Code mithilfe von Navigieren zu
 
 1. Öffnen Sie eine Projektmappe oder einen Ordner in Visual Studio.
-1. Wählen Sie im Hauptmenü **Bearbeiten**, **Navigieren zu** aus, oder drücken Sie **STRG + ,** .
+1. Wählen Sie im Hauptmenü **Bearbeiten**, **Navigieren zu** aus, oder drücken Sie **STRG + ,**.
 
     Ein kleines Textfeld wird in der oberen Ecke des Code-Editors angezeigt.
 1. Geben Sie im Textfeld den Namen des Codeelements ein, das Sie suchen.
 
-    ![Navigieren zu Fenster](../ide/media/vside-navigatetowindow.png "Fenster "Navigieren zu"")
+    ![Fenster "Navigieren zu"](../ide/media/vside-navigatetowindow.png "Fenster "Navigieren zu"")
 
     Während der Eingabe werden die Ergebnisse in einer Dropdownliste unterhalb des Textfelds angezeigt.
 1. Um zu einem Element zu wechseln, wählen Sie es in der Liste aus.
 
 ### <a name="filter-your-search"></a>Filtern der Suche
 
-Um die Suche nur auf Code Symbole zu beschränken, stellen Sie Ihrer Navigation zur Abfrage das Zeichen "\@" voran. Wenn Sie etwa nach `@application` suchen, zeigt Navigieren zu beispielsweise nur Klassen an, die das Wort „application“ enthalten.
+Um die Suche nur auf Code Symbole zu beschränken, stellen Sie Ihrer Navigation zur Abfrage ein " \@ "-Zeichen voran. Wenn Sie etwa nach `@application` suchen, zeigt Navigieren zu beispielsweise nur Klassen an, die das Wort „application“ enthalten.
 
 Wenn Sie Binnenmajuskeln im Code verwenden, können Sie Codeelemente schneller finden, wenn Sie nur die Großbuchstaben eines Codeelementnamens eingeben. Beispiel: Wenn Ihr Code eine Komponente namens `ViewSwitcher` enthält, können Sie sie finden, indem Sie im Fenster „Navigieren zu“ nur die Großbuchstaben des Namens (`"VS"`) eingeben.
 
-![Navigieren Sie zu Fenster Suche mit Großbuchstaben.](../ide/media/vside-capitalsearch.png "Fenster „Navigieren zu“ - Suchvorgänge mit Großbuchstaben")
+![Fenster „Navigieren zu“ - Suchvorgänge mit Großbuchstaben](../ide/media/vside-capitalsearch.png "Fenster „Navigieren zu“ - Suchvorgänge mit Großbuchstaben")
 
 Diese Funktion ist besonders nützlich, wenn Ihr Code lange Namen aufweist.
 
@@ -204,7 +204,7 @@ Diese Funktion ist besonders nützlich, wenn Ihr Code lange Namen aufweist.
 
 - [Refactoring](../ide/refactoring-in-visual-studio.md)
 
-- [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)
+- [Produktivitäts Tipps](../ide/productivity-tips-for-visual-studio.md)
 
 - [Verwenden von IntelliSense](../ide/using-intellisense.md)
 
@@ -212,7 +212,7 @@ Diese Funktion ist besonders nützlich, wenn Ihr Code lange Namen aufweist.
 
 - [Gewusst wie: Verfolgen von Code durch Anpassen der Scrollleiste](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 
-- [Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Gewusst wie: anzeigen und Bearbeiten von Code mithilfe von Peek Definition (ALT + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
 - [Ausführen von schnellen Aktionen mit Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md)
 
@@ -228,5 +228,5 @@ Diese Funktion ist besonders nützlich, wenn Ihr Code lange Namen aufweist.
 
 - [Ermitteln von Änderungen am Code und andere Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-IDE](../ide/visual-studio-ide.md)

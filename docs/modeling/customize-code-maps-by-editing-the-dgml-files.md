@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -20,12 +20,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590513"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547276"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
 
@@ -36,7 +36,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 > [!NOTE]
 > Zum Erstellen von Code Maps muss Visual Studio Enterprise Edition vorhanden sein. Wenn Sie eine Code Map in Visual Studio bearbeiten, werden alle nicht verwendeten DGML-Elemente und -Attribute beim Speichern der DGML-Datei gelöscht. Zudem werden automatisch Codeelemente erstellt, wenn Sie neue Links manuell hinzufügen. Wenn Sie die DGML-Datei speichern, werden möglicherweise alle Attribute, die Sie einem Element hinzugefügt haben, in alphabetischer Reihenfolge angeordnet.
 
-## <a name="OrganizeNodes"></a>Gruppieren von Code Elementen
+## <a name="group-code-elements"></a><a name="OrganizeNodes"></a>Gruppieren von Code Elementen
  Sie können neue Gruppen hinzufügen oder vorhandene Knoten in eine Gruppe konvertieren.
 
 1. Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.
@@ -75,16 +75,16 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
    </Links>
    ```
 
-    Weitere Informationen zum `Category`-Attribut finden Sie unter [Zuweisen von Kategorien zu Code Elementen und Links](#AssignCategories).
+    Weitere Informationen zum `Category` -Attribut finden Sie unter [Zuweisen von Kategorien zu Code Elementen und Links](#AssignCategories).
 
-## <a name="ChangeGraphStyle"></a>Ändern des Stils der Karte
+## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>Ändern des Stils der Karte
  Sie können die Hintergrundfarbe und die Rahmenfarbe der Map ändern, indem Sie die DGML-Datei der Map bearbeiten. Informationen zum Ändern des Stils von Code Elementen und Links finden Sie unter [Ändern des Stils von Code Elementen und Links](#Highlight).
 
 1. Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.
 
 2. Fügen Sie im `<DirectedGraph>`-Element beliebige der folgenden Attribute hinzu, um den Stil zu ändern:
 
-     Hintergrundfarbe:
+     Hintergrundfarbe
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
@@ -105,7 +105,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
     </DirectedGraph>
     ```
 
-## <a name="Highlight"></a>Ändern des Stils von Code Elementen und Links
+## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>Ändern des Stils von Code Elementen und Links
 
 ### <a name="CreateCustomStyles"></a>
  Benutzerdefinierte Stile können auf die folgenden Codeelemente angewendet werden:
@@ -125,13 +125,13 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 2. Suchen Sie das `<Node/>`-Element des Codeelements. Fügen Sie beliebige der folgenden Attribute hinzu, um den Stil anzupassen:
 
-     Hintergrundfarbe:
+     Hintergrundfarbe
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     Gliederung
+     Kontur
 
     ```xml
     Stroke="ColorNameOrHexadecimalValue"
@@ -193,7 +193,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
     Style="Plain"
     ```
 
-     Form
+     Formen
 
      Legen Sie für die `Shape`-Eigenschaft den Wert `None` und für die `Icon`-Eigenschaft den Pfad der Symboldatei fest, um die Form durch ein Symbol zu ersetzen.
 
@@ -254,9 +254,9 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
    - `TargetType="Node` &#124; `Link | Graph"`
 
-   - `GroupLabel="` *NameInLegendBox* `"`
+   - `GroupLabel="`*Nameilegendbox*`"`
 
-   - `ValueLabel="` *nameinstylepickerbox* -`"`
+   - `ValueLabel="`*Nameinstylepickerbox*`"`
 
      Verwenden Sie keine Bedingung, wenn Sie einen benutzerdefinierten Stil auf alle Zieltypen anwenden möchten.
 
@@ -286,31 +286,31 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
     In diesem Ausdruck wird die folgende BNF-Syntax (Backus-Naur-Form) verwendet:
 
-    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
+    \<Expression>:: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124;\<Number>
 
-    \<BinaryExpression >:: = \<Ausdrucks > \<Operator > \<Ausdrucks >
+    \<BinaryExpression>::= \<Expression> \<Operator>\<Expression>
 
-    \<UnaryExpression >:: = "!" \<Ausdruck > &#124; "+" \<Ausdruck > &#124; "-" \<Ausdrucks >
+    \<UnaryExpression>::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-"\<Expression>
 
-    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator>:: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "," &#124; "und" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<mitgliedbindungs Bindungen >:: = \<mitgliedbindungs &#124; Bindungen > \<mitgliedbindungs > "." \<mitgliedbindungs Bindung >
+    \<MemberBindings>:: = \<MemberBindings> &#124; \<MemberBinding> "."\<MemberBinding>
 
-    \<Mitgliedschafts Bindung >:: = \<MethodCall> &#124; \<PropertyGet >
+    \<MemberBinding>:: = \<MethodCall> &#124;\<PropertyGet>
 
-    \<MethodCall>:: = \<Identifier > "(" \<methodargs > ")"
+    \<MethodCall>::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet >:: = Identifier
+    \<PropertyGet>:: = Bezeichner
 
-    \<methodargs >:: = \<Ausdrucks > &#124; \<Ausdruck > "," \<methodargs > &#124; \<leer >
+    \<MethodArgs>:: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124;\<empty>
 
-    \<Bezeichner >:: = [^. ]*
+    \<Identifier>::= [^. ]*
 
     \<Literal>:: = Single-oder Double-Anführungszeichen für Zeichen folgen Literale
 
-    \<Number >:: = Zeichenfolge von Ziffern mit optionalem Dezimaltrennzeichen
+    \<Number>:: = Zeichenfolge von Ziffern mit optionalem Dezimaltrennzeichen
 
-    Sie können mehrere `<Condition/>` Elemente angeben, die für die Anwendung des Stils zutreffen müssen.
+    Sie können mehrere- `<Condition/>` Elemente angeben, die alle "true" sein müssen, um den Stil anzuwenden.
 
 3. Fügen Sie in der nächsten Zeile nach dem `<Condition/>`-Element mindestens ein `<Setter/>`-Element hinzu, um ein `Property`-Attribut anzugeben, sowie ein festes `Value`-Attribut oder ein berechnetes `Expression`-Attribut, das auf die Map, auf die Codeelemente oder auf die Links angewendet werden soll, von der bzw. von denen die Bedingung erfüllt wird.
 
@@ -373,9 +373,9 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
  In diesem Beispiel:
 
-1. Wenn `Coverage` > 80 ist, legen Sie die Eigenschaft `Background` auf grün fest.
+1. Wenn `Coverage` > 80 ist, legen Sie die- `Background` Eigenschaft auf grün fest.
 
-2. Wenn `Coverage` > 50 ist, legen Sie die Eigenschaft `Background` auf der Grundlage des Werts der `Coverage`-Eigenschaft auf einen Farbton von Orange fest.
+2. Wenn `Coverage` > 50 ist, legen Sie die- `Background` Eigenschaft basierend auf dem Wert der-Eigenschaft auf einen Farbton Orange fest `Coverage` .
 
 3. Legen Sie die `Background`-Eigenschaft abhängig vom Wert der `Coverage`-Eigenschaft auf Rot fest.
 
@@ -435,7 +435,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 </DirectedGraph>
 ```
 
-## <a name="AssignProperties"></a>Zuweisen von Eigenschaften zu Code Elementen und Links
+## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>Zuweisen von Eigenschaften zu Code Elementen und Links
  Sie können Codeelemente und Links organisieren, indem Sie ihnen Eigenschaften zuweisen. So können Sie beispielsweise Codeelemente auswählen, die über bestimmte Eigenschaften verfügen, um diese Codeelemente zu gruppieren, ihren Stil zu ändern oder sie auszublenden.
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>So weisen Sie einem Codeelement eine Eigenschaft zu
@@ -480,7 +480,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
     </Properties>
     ```
 
-## <a name="AssignCategories"></a>Zuweisen von Kategorien zu Code Elementen und Links
+## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>Zuweisen von Kategorien zu Code Elementen und Links
  In den folgenden Abschnitten wird gezeigt, wie Sie Codeelemente durch Zuweisen von Kategorien organisieren können und wie Sie hierarchische Kategorien erstellen können, die Ihnen helfen, Codeelemente zu organisieren und untergeordneten Kategorien mithilfe der Vererbung Attribute hinzuzufügen.
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>So weisen Sie einem Codeelement eine Kategorie zu
@@ -551,7 +551,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
      In diesem Beispiel ist der Hintergrund von `MyFirstNode` grün, da das `Category`-Attribut das `Background`-Attribut von `MyParentCategory` erbt.
 
-## <a name="AddReferences"></a>Verknüpfen von Dokumenten oder URLs mit Code Elementen und Links
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>Verknüpfen von Dokumenten oder URLs mit Code Elementen und Links
  Sie können Dokumente oder URLs mit Codeelementen oder Links verknüpfen, indem Sie die DGML-Datei der Map bearbeiten und ein `Reference`-Attribut für ein Codeelement zum `<Node/>`-Element und für einen Link zum `<Link/>`-Element hinzufügen. Anschließend können Sie den Inhalt über das Codeelement bzw. den Link öffnen und anzeigen. Das `Reference`-Attribut gibt den Pfad dieses Inhalts an. Dabei kann es sich um einen relativ zum Ort der DGML-Datei angegebenen Pfad oder um einen absoluten Pfad handeln.
 
 > [!CAUTION]
@@ -565,7 +565,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 - Möglicherweise verknüpfen Sie ein Komponentendiagramm mit dem Codeelement für eine Schnittstelle, um weitere Informationen über eine Komponente anzuzeigen, die diese Schnittstelle verfügbar macht.
 
-- Verknüpfen Sie ein Code Element mit einem Team Foundation Server Arbeits Element oder Fehler oder anderen Informationen, die mit dem Code Element verknüpft sind.
+- Verknüpfen Sie ein Codeelement mit einer Team Foundation Server-Arbeitsaufgabe, einem Team Foundation Server-Fehler oder anderen Informationen, die sich auf das Codeelement beziehen.
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>So verknüpfen Sie ein Dokument oder eine URL mit einem Codeelement
 
@@ -603,9 +603,9 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
       2. Legen Sie das `Id`-Attribut auf den Namen des neuen Verweisattributs fest.
 
-      3. Fügen Sie das `IsReference`-Attribut hinzu, und legen Sie es auf `True` fest, damit der Verweis im Kontextmenü **Gehe zu Verweis** des Code Elements angezeigt wird.
+      3. Fügen `IsReference` Sie das-Attribut hinzu, und legen Sie es auf fest `True` , damit der Verweis im Kontextmenü **Gehe zu Verweis** des Code Elements angezeigt wird.
 
-      4. Verwenden Sie das `Label`-Attribut, um den Anzeige Text im Kontextmenü **Gehe zu Verweis** des Code Elements anzugeben.
+      4. Verwenden Sie das- `Label` Attribut, um den Anzeige Text im Kontextmenü **Gehe zu Verweis** des Code Elements anzugeben.
 
       Beispiel:
 

@@ -1,7 +1,7 @@
 ---
-title: '&lt;PostAction&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;postAction- &gt; Element (Office-Entwicklung in Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976530"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546938"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;PostAction&gt; -Element (Office-Entwicklung in Visual Studio)
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `postAction` -Element des `vstav3` -Namespace enthält alle `entrypoint` -Elemente und alle `postActionData` -Elemente, die Aktionen nach der Bereitstellung zugeordnet sind, die ausgeführt werden, sobald Office-Projektmappen installiert sind.
 
 ## <a name="syntax"></a>Syntax
@@ -42,16 +42,16 @@ ms.locfileid: "62976530"
 
  `postAction` hat die folgenden Elemente:
 
-### <a name="entrypoint"></a>entrypoint
- Dies ist optional. Die Rolle der `entryPoint` Element in der `vstav3` Namespace definiert ist, [ &#60;EntryPoints&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+### <a name="entrypoint"></a>entryPoint
+ Optional. Die Rolle des- `entryPoint` Elements im- `vstav3` Namespace wird in [&#60;entryPoints&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)definiert.
 
 ### <a name="postactiondata"></a>postActionData
- Dies ist optional. Die Rolle der `postActionData` Element in der `vstav3` Namespace definiert ist, [ &#60;PostActionData&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ Optional. Die Rolle des- `postActionData` Elements im- `vstav3` Namespace wird in [&#60;postaktiondata&#62;-Elements &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)definiert.
 
-## <a name="post-deployment-action-example"></a>Beispiel für die Aktion nach der Bereitstellung
+## <a name="post-deployment-action-example"></a>Beispiel für eine Aktion nach der Bereitstellung
 
-### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht das `postAction` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+### <a name="description"></a>BESCHREIBUNG
+ Das folgende Codebeispiel veranschaulicht das `postAction` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -70,8 +70,8 @@ ms.locfileid: "62976530"
 </vstav3:postAction>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

@@ -15,28 +15,28 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73f94c45568a55cc098dd223deca9dab404f44ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b584e355f5b64984f57dd17606dfb0a2f781c62d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651631"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547666"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Enumerationen nicht mit FlagsAttribute markieren
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Enumerationen nicht mit FlagsAttribute markieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotMarkEnumsWithFlags|
+|TypName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine extern sichtbare Enumeration wird mit <xref:System.FlagsAttribute> gekennzeichnet und verfügt über einen oder mehrere Werte, die nicht aus zwei oder einer Kombination der anderen definierten Werte für die Enumeration bestehen.
+ Eine extern sichtbare Enumeration wird mit markiert <xref:System.FlagsAttribute> , und Sie verfügt über einen oder mehrere Werte, die nicht aus zwei oder einer Kombination der anderen definierten Werte für die Enumeration bestehen.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Eine Enumeration sollte <xref:System.FlagsAttribute> nur vorhanden sein, wenn jeder in der-Enumeration definierte Wert eine Potenz von zwei ist, oder eine Kombination von definierten Werten.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Eine Enumeration sollte <xref:System.FlagsAttribute> nur vorhanden sein, wenn jeder in der-Enumeration definierte Wert eine Potenz von zwei oder eine Kombination von definierten Werten ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie <xref:System.FlagsAttribute> aus der-Enumeration.
@@ -45,7 +45,7 @@ ms.locfileid: "72651631"
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Enumeration, Farbe, die den Wert 3 enthält, der weder eine Potenz von zwei ist, noch eine Kombination aus den definierten Werten. Die farbenumeration sollte nicht mit dem <xref:System.FlagsAttribute> gekennzeichnet werden.
+ Das folgende Beispiel zeigt eine Enumeration, Farbe, die den Wert 3 enthält, der weder eine Potenz von zwei ist, noch eine Kombination aus den definierten Werten. Die farbenumeration sollte nicht mit dem gekennzeichnet werden <xref:System.FlagsAttribute> .
 
  [!code-cpp[FxCop.Usage.EnumNoFlags#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cpp/FxCop.Usage.EnumNoFlags.cpp#1)]
  [!code-csharp[FxCop.Usage.EnumNoFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cs/FxCop.Usage.EnumNoFlags.cs#1)]
@@ -59,7 +59,7 @@ ms.locfileid: "72651631"
  [!code-vb[FxCop.Usage.EnumNoFlags2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags2/vb/FxCop.Usage.EnumNoFlags2.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: Enumerationen mit FlagsAttribute markieren.](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.FlagsAttribute?displayProperty=fullName>

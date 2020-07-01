@@ -15,27 +15,27 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: db2c667d0a3823460a084dc1e4806501d9b26693
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa67c33eac5d618c0a080323720775beea7b68c3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548212"
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Nicht konstante Felder sollten nicht sichtbar sein
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Nicht konstante Felder sollten nicht sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|NonConstantFieldsShouldNotBeVisible|
+|TypName|NonConstantFieldsShouldNotBeVisible|
 |CheckId|CA2211|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Ein öffentliches oder geschütztes statisches Feld ist nicht konstant und ist nicht schreibgeschützt.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Statische Felder, die weder konstant noch schreibgeschützt sind, sind nicht threadsicher. Der Zugriff auf ein solches Feld muss sorgfältig gesteuert werden und erfordert erweiterte Programmierverfahren für die Synchronisierung des Zugriffs auf das Klassenobjekt. Da es schwierig ist, die Kenntnisse zu erlernen und zu meistern, und das Testen eines solchen Objekts seine eigenen Herausforderungen darstellt, werden statische Felder am besten zum Speichern von Daten verwendet, die sich nicht ändern. Diese Regel gilt für Bibliotheken. Anwendungen sollten keine Felder verfügbar machen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen

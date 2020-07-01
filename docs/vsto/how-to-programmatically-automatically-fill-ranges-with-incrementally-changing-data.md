@@ -1,7 +1,7 @@
 ---
-title: AutoAusfüllen inkrementell Programmgesteuertes Ändern von Datenbereichen
+title: Inkrementelles ändern von Daten Bereichen automatisch ausfüllen
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,46 +15,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177698"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547471"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Vorgehensweise: Programmgesteuertes Automatisches Füllen von Bereichen mit inkrementellen Daten
-  Die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht Ihnen, einen Bereich in einem Arbeitsblatt automatisch mit Werten zu füllen. In den meisten Fällen die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode wird verwendet, um schrittweise erhöhen oder verringern die Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration.
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Gewusst wie: Programm gesteuertes automatisches Auffüllen von Bereichen mit inkrementellen Änderungs Daten
+  Mit der- <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode des- <xref:Microsoft.Office.Interop.Excel.Range> Objekts können Sie einen Bereich in einem Arbeitsblatt mit Werten automatisch auffüllen. In den meisten Fällen <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> wird die-Methode verwendet, um inkrementelle steigende oder abnehmende Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der- <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration bereitstellen.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Sie müssen zwei Bereiche angeben, bei Verwendung <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
+ Wenn Sie verwenden, müssen Sie zwei Bereiche angeben <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> :
 
-- Der Bereich, der die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> -Methode, die gibt den Ausgangspunkt der Füllung und einen Anfangswert enthält.
+- Der Bereich, der die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> -Methode aufruft, die den Anfangspunkt der Füllung angibt und einen Anfangswert enthält.
 
-- Der Bereich, die Sie füllen möchten, übergeben wird, als Parameter an die <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode. Dieser Zielbereich muss es sich um den Bereich enthalten, der den ursprünglichen Wert enthält.
+- Der Bereich, den Sie ausfüllen möchten, der als Parameter an die- <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode übergeben wird. Dieser Zielbereich muss den Bereich enthalten, der den Anfangswert enthält.
 
     > [!NOTE]
-    > Sie können keine übergeben eine <xref:Microsoft.Office.Tools.Excel.NamedRange> steuern anstelle von der <xref:Microsoft.Office.Interop.Excel.Range>. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+    > Anstelle von kann ein-Steuerelement übergeben werden <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Interop.Excel.Range> . Weitere Informationen finden Sie Unterprogramm gesteuerte [Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="example"></a>Beispiel
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
  [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
- Die erste Zelle des Bereichs, die zu füllende muss es sich um einen anfänglichen Wert enthalten.
+ Die erste Zelle des Bereichs, den Sie ausfüllen möchten, muss einen Anfangswert enthalten.
 
- Das Beispiel erfordert, dass Sie drei Regionen ausfüllen:
+ Das Beispiel setzt voraus, dass Sie drei Regionen ausfüllen:
 
-- Spalte B ist auf fünf Werktage enthalten. Geben Sie für den ersten Wert **Montag** in Zelle B1.
+- Spalte B enthält fünf Wochentage. Geben Sie als Anfangswert **Montag** in Zelle B1 ein.
 
-- Spalte C werden fünf Monate enthalten. Geben Sie für den ersten Wert **Januar** in Zelle C1.
+- In Spalte C sind fünf Monate enthalten. Geben Sie als Anfangswert **Januar** in Zelle C1 ein.
 
-- D-Spalte ist eine Reihe von Zahlen, besitzt eine Schrittweite von zwei für jede Zeile enthalten. Geben Sie für die Anfangswerte **4** in Zelle D1 und **6** in Zelle D2.
+- Spalte D soll eine Reihe von Zahlen enthalten, die für jede Zeile um zwei erhöht werden. Geben Sie für die Anfangswerte **4** in Zelle D1 und **6** in Zelle D2 ein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
-- [Vorgehensweise: Programmgesteuertes Verweisen Sie auf Arbeitsblattbereiche im code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Vorgehensweise: Programmgesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Gewusst wie: Programm gesteuertes verweisen auf Arbeitsblatt Bereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Gewusst wie: Programm gesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,28 +15,28 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 528b3a1f301544ccb20cfa6bddc31c0a5c50d1ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03d21a824d2d3a9151dad139575f32e3417cbd39
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668303"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546834"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|UseIntegralOrStringArgumentForIndexers|
+|TypName|UseIntegralOrStringArgumentForIndexers|
 |CheckId|CA1043|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ enthält einen öffentlichen oder geschützten Indexer, der einen anderen Indextyp als "<xref:System.Int32?displayProperty=fullName>", "<xref:System.Int64?displayProperty=fullName>", "<xref:System.Object?displayProperty=fullName>" oder "<xref:System.String?displayProperty=fullName>" verwendet.
+ Ein öffentlicher oder geschützter Typ enthält einen öffentlichen oder geschützten Indexer, der einen anderen Indextyp als <xref:System.Int32?displayProperty=fullName> , <xref:System.Int64?displayProperty=fullName> , oder verwendet <xref:System.Object?displayProperty=fullName> <xref:System.String?displayProperty=fullName> .
 
-## <a name="rule-description"></a>Regelbeschreibung
- Indexer, d. h. indizierte Eigenschaften, sollten ganzzahlige Typen oder Zeichen folgen Typen für den Index verwenden. Diese Typen werden in der Regel zum Indizieren von Datenstrukturen und zur Verbesserung der Benutzerfreundlichkeit der Bibliothek verwendet. Die Verwendung des <xref:System.Object> Typs sollte auf die Fälle beschränkt werden, in denen der jeweilige ganzzahlige Typ oder der Typ der Zeichenfolge zur Entwurfszeit nicht angegeben werden kann. Wenn der Entwurf andere Typen für den Index erfordert, überdenken Sie, ob der Typ einen logischen Datenspeicher darstellt. Wenn Sie keinen logischen Datenspeicher darstellt, verwenden Sie eine-Methode.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Indexer, d. h. indizierte Eigenschaften, sollten ganzzahlige Typen oder Zeichen folgen Typen für den Index verwenden. Diese Typen werden in der Regel zum Indizieren von Datenstrukturen und zur Verbesserung der Benutzerfreundlichkeit der Bibliothek verwendet. Die Verwendung des- <xref:System.Object> Typs sollte auf die Fälle beschränkt werden, in denen der jeweilige ganzzahlige oder Zeichen Folgentyp zur Entwurfszeit nicht angegeben werden kann. Wenn der Entwurf andere Typen für den Index erfordert, überdenken Sie, ob der Typ einen logischen Datenspeicher darstellt. Wenn Sie keinen logischen Datenspeicher darstellt, verwenden Sie eine-Methode.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Index in einen ganzzahligen oder Zeichen Folgentyp, oder verwenden Sie eine Methode anstelle des Indexers.
@@ -52,6 +52,6 @@ ms.locfileid: "72668303"
  [!code-vb[FxCop.Design.IntegralOrStringIndexers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.IntegralOrStringIndexers/vb/FxCop.Design.IntegralOrStringIndexers.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1023: Indexer sollten nicht mehrdimensional sein](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+ [CA1023: Indexer sollten nicht mehrdimensional sein.](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
- [CA1024: Nach Möglichkeit Eigenschaften verwenden](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Nach Möglichkeit Eigenschaften verwenden.](../code-quality/ca1024-use-properties-where-appropriate.md)

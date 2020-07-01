@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt'
+title: 'Gewusst wie: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f0b3c6a8a9292ceda03c9d0020b78d9518ca49d9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252030"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545794"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Vorgehensweise: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Gewusst wie: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt
   Im folgenden Verfahren wird gezeigt, wie der-Designer verwendet wird, um ein einzelnes Feld aus einer Datenbanktabelle in einem Microsoft Office Excel-Arbeitsblatt mit Steuerelementen anzuzeigen, die es dem Endbenutzer ermöglichen, einen Bildlauf durch alle Datensätze auszuführen.
 
- Der Designer kann nur in Projekten auf Dokument Ebene verwendet werden. Sie können jedoch auch Steuerelemente hinzufügen und diese zur Laufzeit Programm gesteuert an Daten binden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einfache Datenbindung im VSTO-Add-in](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)-Projekt.
+ Der Designer kann nur in Projekten auf Dokument Ebene verwendet werden. Sie können jedoch auch Steuerelemente hinzufügen und diese zur Laufzeit Programm gesteuert an Daten binden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: einfache Datenbindung in einem VSTO-Add-in-Projekt](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -39,9 +39,9 @@ ms.locfileid: "71252030"
 
 4. Öffnen Sie die Liste der Steuerelemente, und wählen Sie **NamedRange**aus.
 
-5. Ziehen Sie <xref:Microsoft.Office.Tools.Excel.NamedRange> das Steuerelement auf die Zelle, in der die Daten angezeigt werden sollen.
+5. Ziehen <xref:Microsoft.Office.Tools.Excel.NamedRange> Sie das Steuerelement auf die Zelle, in der die Daten angezeigt werden sollen.
 
-6. Fügen Sie auf der Registerkarte **Windows Forms** der **Toolbox**dem <xref:System.Windows.Forms.BindingNavigator> Arbeitsblatt ein-Steuerelement hinzu, und richten Sie die Steuerelemente ein, die Sie verwenden möchten. Weitere Informationen finden Sie unter [Übersicht über &#40;das BindingNavigator&#41;-Steuerelement Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. Fügen Sie auf der Registerkarte **Windows Forms** der **Toolbox**dem <xref:System.Windows.Forms.BindingNavigator> Arbeitsblatt ein-Steuerelement hinzu, und richten Sie die Steuerelemente ein, die Sie verwenden möchten. Weitere Informationen finden Sie unter [Übersicht über das BindingNavigator-Steuerelement &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)

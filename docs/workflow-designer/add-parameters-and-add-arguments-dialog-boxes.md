@@ -10,28 +10,28 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597125"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547354"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dialogfelder Parameter hinzufügen und Argumente hinzufügen
 
-In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Parameter hinzufügen** beschrieben, das vom <xref:System.Activities.Statements.InvokeMethod>-Designer verwendet wird:
+In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Parameter hinzufügen** beschrieben, das vom Designer verwendet wird <xref:System.Activities.Statements.InvokeMethod> :
 
-|||
+|Name|Wert|
 |-|-|
 |**Richtung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|
-|**Type**|Der Typname des neuen Parameters.|
+|**Typ**|Der Typname des neuen Parameters.|
 |**Wert**|Ein Visual Basic Ausdruck, der verwendet wird, um dem neuen Parameter einen Standardwert zuzuweisen.|
 
-In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Argumente hinzufügen** beschrieben, das vom <xref:System.Activities.Statements.InvokeDelegate>-Designer verwendet wird:
+In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Argumente hinzufügen** beschrieben, das vom Designer verwendet wird <xref:System.Activities.Statements.InvokeDelegate> :
 
-|||
+|Name|Wert|
 |-|-|
 |**Name**|Der Name des Arguments.|
 |**Richtung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|
-|**Type**|Der Typname des neuen Arguments.|
+|**Typ**|Der Typname des neuen Arguments.|
 |**Wert**|Der für diese Instanz des Delegatarguments zu verwendende Wert.|

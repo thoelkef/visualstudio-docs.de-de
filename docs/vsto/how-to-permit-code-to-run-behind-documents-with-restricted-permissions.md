@@ -1,7 +1,7 @@
 ---
-title: Zulassen Sie Code hinter Docs mit eingeschränkten Berechtigungen ausgeführt werden zu.
+title: Zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt wird
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402247"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547510"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Vorgehensweise: Zulassen Sie Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden zu.
-  Sie können das Feature (Information Rights Management, IRM) von Microsoft Office verwenden, um Berechtigungen auf ein Dokument oder eine Arbeitsmappe zu beschränken. Standardmäßig ist der Code hinter einem eingeschränkten Microsoft Office Word-Dokument oder einer Microsoft Office Excel-Arbeitsmappe nicht zulässig, ausgeführt wird. Sie können die Standardeinstellung ändern, so, dass Ihre Erweiterungen durch verwalteten Code auf das Objektmodell zugreifen können und Ihre Lösung funktioniert.
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Gewusst wie: zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt wird
+  Sie können die Funktion Information Rights Management (unm) von Microsoft Office verwenden, um die Berechtigungen für ein Dokument oder eine Arbeitsmappe einzuschränken. Standardmäßig darf der Code hinter einem eingeschränkten Microsoft Office Word-Dokument oder Microsoft Office Excel-Arbeitsmappe nicht ausgeführt werden. Sie können den Standardwert ändern, sodass die Erweiterungen des verwalteten Codes auf das Objektmodell zugreifen können und die Lösung funktioniert.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Sie müssen der Autor des Dokuments oder der Arbeitsmappe oder verfügen über Vollzugriff auf die berechtigungseinstellungen ändern können.
+ Sie müssen der Autor des Dokuments oder der Arbeitsmappe sein oder über Vollzugriff verfügen, um die Berechtigungseinstellungen ändern zu können.
 
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Um zuzulassen Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden.
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>So lassen Sie zu, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt wird
 
 1. Öffnen Sie das Dokument oder die Arbeitsmappe in Word oder Excel.
 
-2. Klicken Sie auf die **Datei** Registerkarte, zeigen Sie auf **vorbereiten**, zeigen Sie auf **Berechtigung einschränken**, und klicken Sie dann auf **eingeschränkten Zugriff**.
+2. Klicken Sie auf die Registerkarte **Datei** , zeigen Sie auf **vorbereiten**, zeigen Sie auf **Berechtigung einschränken**, und klicken Sie dann auf **Eingeschränkter Zugriff**.
 
    > [!NOTE]
-   > Bei der ersten Verwendung werden Sie aufgefordert, den Windows Rights Management-Client installieren. Nachdem Sie den Client installieren, müssen Sie die Schritte wiederholen.
+   > Bei der ersten Verwendung werden Sie aufgefordert, den Windows Rights Management-Client zu installieren. Nachdem Sie den-Client installiert haben, müssen Sie die Schritte möglicherweise wiederholen.
 
-3. In der **Berechtigung** wählen Sie im Dialogfeld **Zugriffsberechtigung auf dieses Dokument einschränken**, und klicken Sie dann auf **Weitere Optionen**.
+3. Wählen Sie im Dialogfeld **Berechtigung** die Option **Berechtigung einschränken für dieses Dokument**aus, und klicken Sie dann auf **Weitere Optionen**.
 
-4. Klicken Sie unter **zusätzliche Berechtigungen für Benutzer**Option **programmgesteuerten Zugriff auf Inhalt**.
+4. Wählen Sie unter **zusätzliche Berechtigungen für Benutzer**Programm gesteuert auf **Inhalt zugreifen**aus.
 
    Word oder Excel ermöglicht den programmgesteuerten Zugriff auf das Objektmodell.
 
-## <a name="see-also"></a>Siehe auch
-- [Verwaltung von Informationsrechten und Erweiterungen für verwalteten code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Dokumentschutz in Projektmappen auf Anwendungsebene](../vsto/document-protection-in-document-level-solutions.md)
-- [Kennwortschutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
-- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
-- [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Dokument Schutz in Projektmappen auf Dokument Ebene](../vsto/document-protection-in-document-level-solutions.md)
+- [Kenn Wort Schutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
+- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
+- [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)

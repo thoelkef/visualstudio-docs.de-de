@@ -1,7 +1,7 @@
 ---
-title: Ziel-Office-Anwendungen durch primäre Interopassemblys
+title: Office-Apps über primäre Interopassemblys als Ziel
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e92b3b4dd46885de7f30f5364d30f39b5c2bd7
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328876"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545768"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys
   Wenn Sie ein neues Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die primären Interopassemblys (PIAs) von Microsoft Office hinzu, die zum Erstellen des Projekts erforderlich sind. Verweise auf andere PIAs müssen in den folgenden Szenarien hinzugefügt werden:
 
 - Sie möchten Features anderer Microsoft Office-Anwendungen im Projekt verwenden. Sie möchten z. B. Features von Microsoft Office Excel in einem Projekt für Microsoft Office Word verwenden.
@@ -36,23 +36,23 @@ ms.locfileid: "67328876"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>So fügen Sie einen Verweis auf eine primäre Interopassembly hinzu
 
-1. Öffnen Sie das Office-Projekt, und wählen Sie den Namen des Projekts in **Projektmappen-Explorer**.
+1. Öffnen Sie das Office-Projekt, und wählen Sie den Projektnamen in **Projektmappen-Explorer**aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
 
-3. Auf der **Framework** Registerkarte, wählen Sie die PIA, Sie, in möchten, der **Komponentenname** Liste. Weitere Informationen zu den verfügbaren primären Interop-Assemblys für Microsoft Office finden Sie unter [primären Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md).
+3. Wählen Sie auf der Registerkarte **Framework** die gewünschte Pia in der Liste **Komponenten Name** aus. Weitere Informationen zu den verfügbaren Microsoft Office primären Interop-Assemblys finden Sie unter Primäre Interopassemblys für [Office](../vsto/office-primary-interop-assemblies.md).
 
-     Wenn das Projekt als Zielversion der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher, die **Embed Interop Types** für den Assemblyverweis-Eigenschaftensatz auf **"true"** standardmäßig. Mit dieser Einstellung erfordert die Lösung keine PIA auf Endbenutzercomputern. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).
+     Wenn das Projekt auf oder höher ausgerichtet [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ist, wird die Eigenschaft **Interop-Typen einbetten** für den Assemblyverweis standardmäßig auf **true** festgelegt. Mit dieser Einstellung erfordert die Lösung keine PIA auf Endbenutzercomputern. Weitere Informationen finden Sie unter [Entwerfen und Erstellen von Office-](../vsto/designing-and-creating-office-solutions.md)Projektmappen.
 
     > [!NOTE]
-    > In Office-Projekten mithilfe von Verweisen auf Office-PIAs immer Hinzufügen der **.NET** Registerkarte die **Verweis hinzufügen** Dialogfeld anstelle der **COM** Registerkarte. Weitere Informationen finden Sie unter [primären Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md).
+    > Fügen Sie in Office-Projekten Verweise auf Office-PIAs immer hinzu, indem Sie die Registerkarte **.net** des Dialog Felds **Verweis hinzufügen** anstelle der Registerkarte **com** verwenden. Weitere Informationen finden Sie unter [primäre Interop](../vsto/office-primary-interop-assemblies.md)-Assemblys in Office.
 
 4. Klicken Sie auf **OK**.
 
-     Der Assemblyname wird in der **Verweise** Ordner **Projektmappen-Explorer**.
+     Der AssemblyName wird im Ordner **Verweise** von **Projektmappen-Explorer**angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)
-- [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)
-- [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)
-- [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)
+- [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
+- [Gewusst wie: Installieren von primären Interop-Assemblys in Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

@@ -1,9 +1,9 @@
 ---
-title: '&lt;CustomHostSpecified&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;customhostspezifiziertes- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956178"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544910"
 ---
-# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;CustomHostSpecified&gt; -Element (Office-Entwicklung in Visual Studio)
-  Die `customHostSpecified` Element gibt an, dass diese Lösung nicht um eine eigenständige Anwendung ist. Office-Projektmappen enthalten die Komponenten, die in Microsoft Office-Anwendungen gehostet werden.
+# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customhostspezifiziertes- &gt; Element (Office-Entwicklung in Visual Studio)
+  Das- `customHostSpecified` Element gibt an, dass diese Lösung keine eigenständige Anwendung ist. Office-Projektmappen enthalten Komponenten, die in Microsoft Office Anwendungen gehostet werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,14 +33,14 @@ ms.locfileid: "62956178"
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `customHostSpecified` Element ist erforderlich für Office-Projektmappen. Dieses Element ist der `co.v1` Namespace und gibt an, dass diese Bereitstellung eine Komponente enthält, die innerhalb eines benutzerdefinierten Hosts bereitgestellt werden und ist keine eigenständige Anwendung.
+ Das- `customHostSpecified` Element ist für Office-Projektmappen erforderlich. Dieses Element befindet sich im `co.v1` -Namespace und gibt an, dass diese Bereitstellung eine Komponente enthält, die in einem benutzerdefinierten Host bereitgestellt wird und keine eigenständige Anwendung ist.
 
- Dieses Element ist ein untergeordnetes Element des ersten `<entrypoint>` Elements im Manifest Anwendung. Es können keine anderen untergeordneten Elemente in dieser werden `<entrypoint>` Element oder [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] löst einen Validierungsfehler während der Installation.
+ Dieses Element ist ein untergeordnetes Element des ersten `<entrypoint>` Elements im Anwendungs Manifest. Es dürfen keine weiteren untergeordneten Elemente in diesem Element vorhanden sein, `<entrypoint>` oder es [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] wird während der Installation ein Validierungs Fehler ausgegeben.
 
- Dieses Element weist keine Attribute und keine untergeordneten Elemente.
+ Dieses Element hat keine Attribute und keine untergeordneten Elemente.
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel veranschaulicht die `customHostSpecified` Element in einem Anwendungsmanifest für eine Office-Projektmappe. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+ Das folgende Codebeispiel veranschaulicht das- `customHostSpecified` Element in einem Anwendungs Manifest für eine Office-Projekt Mappe. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ```xml
 <entryPoint>
@@ -48,8 +48,8 @@ ms.locfileid: "62956178"
 </entryPoint>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

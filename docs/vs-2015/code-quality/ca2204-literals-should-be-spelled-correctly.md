@@ -15,30 +15,30 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ecf829251cbeab600cb95f8f0c0b0173cd7338d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659536"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546275"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|Literalsdbespelledrichtig|
+|TypName|Literalsdbespelledrichtig|
 |CheckId|CA2204|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
  Eine Methode übergibt eine Literalzeichenfolge an, die in einem Parameter oder einer Eigenschaft verwendet wird, für die eine lokalisierte Zeichenfolge erforderlich ist, und die Literalzeichenfolge enthält mindestens ein Wort, das von der Bibliothek der Microsoft-Rechtschreibprüfung
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Diese Regel überprüft eine Literalzeichenfolge, die als Wert an einen Parameter oder eine Eigenschaft übergeben wird, wenn mindestens einer der folgenden Fälle zutrifft:
 
-- Das <xref:System.ComponentModel.LocalizableAttribute>-Attribut des-Parameters oder der-Eigenschaft ist auf true festgelegt.
+- Das- <xref:System.ComponentModel.LocalizableAttribute> Attribut des-Parameters oder der-Eigenschaft ist auf true festgelegt.
 
 - Der Parameter-oder Eigenschaftsname enthält "Text", "Message" oder "Caption".
 
@@ -55,6 +55,6 @@ ms.locfileid: "72659536"
  Unterdrücken Sie keine Warnung dieser Regel. Korrekt geschriebene Wörter reduzieren die für neue Software Bibliotheken erforderliche Lernkurve.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

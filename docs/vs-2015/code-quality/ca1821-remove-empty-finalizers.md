@@ -14,36 +14,36 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3d340d69ee32de20142abf740f7fedc871c9733a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2e704202773447e353f041df66b05cb5f648c00
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657472"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545352"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Leere Finalizer entfernen
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Leere Finalizer entfernen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|Removeemptyfinalizers|
+|TypName|Removeemptyfinalizers|
 |CheckId|CA1821|
-|Kategorie|Microsoft. Performance|
+|Category|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
  Ein Typ implementiert einen Finalizer, der leer ist, nur den Basistyp Finalizer aufruft oder nur bedingt ausgegebene Methoden aufruft.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Finalizer sollten möglichst vermieden werden, da durch Verfolgung der Objektlebensdauer zusätzliche Leistung beansprucht wird. Der Garbage Collector führt den Finalizer aus, bevor das Objekt erfasst wird. Dies bedeutet, dass zwei Auflistungen erforderlich sind, um das Objekt zu erfassen. Ein leerer Finalizer verursacht diesen zusätzlichen Aufwand ohne jeglichen Vorteil.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie den leeren Finalizer. Wenn ein Finalizer für das Debuggen erforderlich ist, schließen Sie den gesamten Finalizer in `#if DEBUG / #endif` Anweisungen ein.
+ Entfernen Sie den leeren Finalizer. Wenn ein Finalizer für das Debuggen erforderlich ist, schließen Sie den gesamten Finalizer in `#if DEBUG / #endif` Direktiven ein.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Meldung von dieser Regel. Wenn die Finalisierung nicht unterdrückt wird, verringert sich die Leistung und bietet keine Vorteile.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen leeren Finalizer, der entfernt werden soll, einen Finalizer, der in `#if DEBUG / #endif` Direktiven eingeschlossen werden soll, und einen Finalizer, der die `#if DEBUG / #endif` Direktiven ordnungsgemäß verwendet.
+ Das folgende Beispiel zeigt einen leeren Finalizer, der entfernt werden soll, einen Finalizer, der in- `#if DEBUG / #endif` Direktiven eingeschlossen werden soll, und einen Finalizer, der die- `#if DEBUG / #endif` Direktiven ordnungsgemäß verwendet.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]

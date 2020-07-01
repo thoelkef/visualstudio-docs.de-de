@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage'
+title: 'Gewusst wie: Programm gesteuertes Erstellen einer Besprechungs Anfrage'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62ccf3b170b05e5954bc217f032480ecd1f8a921
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48233a051b42b01d5dce2c1a0fb4819882897d3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575158"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546015"
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage
+# <a name="how-to-programmatically-create-a-meeting-request"></a>Gewusst wie: Programm gesteuertes Erstellen einer Besprechungs Anfrage
   In diesem Beispiel wird in Microsoft Office Outlook eine Besprechungsanfrage erstellt und die Anforderung an einen erforderlichen Teilnehmer gesendet.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -30,6 +30,6 @@ ms.locfileid: "62575158"
  [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)
-- [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Einstieg in das Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)

@@ -15,28 +15,28 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3f867f14f7a2eca4482f1f8d5fb48149f02f43f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f13669959a5874c74753d304371b8ab7db14d4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661358"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547289"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invokes dürfen nicht sichtbar sein
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|PInvokesShouldNotBeVisible|
+|TypName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|Kategorie|Microsoft. Interoperabilität|
+|Category|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte Methode in einem öffentlichen Typ verfügt über das <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>-Attribut (auch durch das `Declare`-Schlüsselwort in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] implementiert).
+ Eine öffentliche oder geschützte Methode in einem öffentlichen Typ weist das- <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> Attribut auf (auch durch das- `Declare` Schlüsselwort implementiert [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
-## <a name="rule-description"></a>Regelbeschreibung
- Methoden, die mit dem <xref:System.Runtime.InteropServices.DllImportAttribute>-Attribut gekennzeichnet sind (oder Methoden, die mithilfe des Schlüssel Worts `Declare` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] definiert werden), verwenden Platt Form Aufruf Dienste, um auf nicht verwalteten Code zuzugreifen. Solche Methoden sollten nicht verfügbar gemacht werden. Wenn Sie diese Methoden als privat oder intern aufbewahren, stellen Sie sicher, dass die Bibliothek nicht zum verletzen der Sicherheit verwendet werden kann, indem Sie Aufrufern Zugriff auf nicht verwaltete APIs gewähren, die nicht anderweitig aufgerufen werden konnten.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Methoden, die mit dem- <xref:System.Runtime.InteropServices.DllImportAttribute> Attribut markiert sind (oder Methoden, die mit dem- `Declare` Schlüsselwort in definiert werden), [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] verwenden Platt Form Aufruf Dienste für den Zugriff auf nicht verwalteten Code. Solche Methoden sollten nicht verfügbar gemacht werden. Wenn Sie diese Methoden als privat oder intern aufbewahren, stellen Sie sicher, dass die Bibliothek nicht zum verletzen der Sicherheit verwendet werden kann, indem Sie Aufrufern Zugriff auf nicht verwaltete APIs gewähren, die nicht anderweitig aufgerufen werden konnten.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zugriffsebene der Methode.

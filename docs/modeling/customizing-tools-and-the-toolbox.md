@@ -1,7 +1,7 @@
 ---
 title: Anpassen der Tools und der Toolbox
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,18 +13,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589720"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548290"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 
 Sie müssen Toolboxelemente für die Elemente definieren, die die Benutzer ihren Modellen hinzufügen dürfen. Es gibt zwei Arten von Tools: Elementtools und Verbindungstools. Im generierten Designer kann ein Benutzer ein Elementtool auswählen, um Formen auf das Diagramm zu ziehen. Dann kann der Benutzer ein Verbindungstool auswählen, um die Verbindungen zwischen den Formen zu zeichnen. Im Allgemeinen können Benutzer mit Elementtools ihren Modellen Instanzen von Domänenklassen hinzufügen, und mit Verbindungstools können sie Instanzen von Domänenbeziehungen hinzufügen.
 
-## <a name="ToolboxDef"></a>Definition der Toolbox
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a>Definition der Toolbox
  Erweitern Sie im DSL-Explorer den Knoten "Editor" und die darunter liegenden Knoten. Normalerweise wird eine Hierarchie wie die folgende angezeigt:
 
 ```
@@ -69,7 +69,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
 3. Legen Sie die **Toolbox Icon** -Eigenschaft so fest, dass Sie auf eine 16x16-Bitmap verweist.
 
-     Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei in Projektmappen-Explorer im Ordner " **dsl\resources** ". Die Datei sollte die folgenden Eigenschaftswerte aufweisen: **Buildaktion** = **Inhalt**. **In Ausgabeverzeichnis kopieren** = **nicht kopieren**.
+     Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei in Projektmappen-Explorer im Ordner " **dsl\resources** ". Die Datei sollte die folgenden Eigenschaftswerte aufweisen: Inhalt der **Buildaktion**  =  **Content**; **In Ausgabeverzeichnis kopieren**  =  **Nicht kopieren**.
 
 4. **Für ein Element Tool:** Legen Sie die Eigenschaft **Klasse** des Tools so fest, dass Sie auf eine konkrete Domänen Klasse verweist, die einer Form zugeordnet ist.
 
@@ -79,7 +79,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
      Wenn das Tool nicht angezeigt wird, können Sie die experimentelle Visual Studio-Datei abbrechen. Führen Sie im Windows- **Startmenü** **die Option 2010 Microsoft Visual Studio experimentellen Instanz zurücksetzen**aus. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
 
-## <a name="customizing"></a>Anpassen von Element Tools
+## <a name="customizing-element-tools"></a><a name="customizing"></a>Anpassen von Element Tools
  Standardmäßig erstellt das Tool eine Instanz der angegebenen Klasse. Sie haben jedoch zwei Optionen, dies zu ändern:
 
 - Definieren Sie Direktiven für Elementzusammenführungen für andere Klassen, sodass sie neue Instanzen dieser Klasse akzeptieren und weitere Links erstellen können, wenn ein neues Element erstellt wird. Sie können beispielsweise zulassen, dass ein Benutzer einem anderen Element einen Kommentar hinzufügt und auf diese Weise einen Verweislink zwischen beiden erstellt.
@@ -90,7 +90,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
 - Schreiben Sie Code, um das Tool so anzupassen, dass es Gruppen von Elementen erstellen kann. Das Tool wird von Methoden in "ToolboxHelper.cs" initialisiert, die Sie überschreiben können. Weitere Informationen finden Sie unter [Erstellen von Elementgruppen aus einem Tool](#groups).
 
-## <a name="groups"></a>Erstellen von Elementgruppen aus einem Tool
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a>Erstellen von Elementgruppen aus einem Tool
  Jedes Elementtool enthält einen Prototyp der Elemente, die es erstellen soll. Standardmäßig erstellt jedes Elementtool ein Element. Es ist jedoch auch möglich, eine Gruppe verknüpfter Objekte mit einem Tool zu erstellen. Dazu initialisieren Sie das Tool mit einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>, der verknüpfte Elemente enthält.
 
  Das folgende Beispiel stammt aus DSL und enthält einen Typ "Transistor". Jeder Transistor weist drei benannte Terminals auf. Das Elementtool für Transistoren speichert einen Prototyp, der vier Modellelemente und drei Beziehungslinks enthält. Wenn der Benutzer das Tool auf das Diagramm zieht, wird der Prototyp instanziiert und mit dem Modellstamm verknüpft.
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="connections"></a>Anpassen von Verbindungs Tools
+## <a name="customizing-connection-tools"></a><a name="connections"></a>Anpassen von Verbindungs Tools
  Üblicherweise erstellen Sie ein Elementtool, wenn Sie eine neue Konnektorklasse erstellen. Alternativ können Sie ein Tool überladen, indem Sie den Beziehungstyp durch die Typen an den beiden Enden bestimmen lassen. Beispielsweise könnten Sie ein Verbindungstool erstellen, das Person-Person- und Person-Stadt-Beziehungen erstellen kann.
 
  Verbindungstools rufen Verbindungs-Generatoren auf. Verwenden Sie Verbindungs-Generatoren, um anzugeben, wie Benutzer Elemente im generierten Designer verknüpfen können. Mit Verbindungs-Generatoren werden die Elemente angegeben, die verknüpft werden können. Zudem wird die Art von Link bestimmt, der zwischen den Elementen erstellt werden kann.
@@ -159,7 +159,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Verbindungs-Generatoren mit mehreren Direktiven für Linkverbindungen
  Sie können einem Verbindungs-Generator mehr als eine Direktive für Linkverbindungen hinzufügen. Dies kann Ihnen dabei helfen, einige der Komplexitäten des Domänen Modells vor Benutzern auszublenden und zu verhindern, dass die **Toolbox** zu überlastet ist. Sie können in einem Verbindungs-Generator für mehrere verschiedene Domänenbeziehungen Direktiven für Linkverbindungen hinzufügen. Sie sollten Domänenbeziehungen jedoch kombinieren, wenn sie annähernd die gleiche Funktion ausführen.
 
- In der Lösung für den Task Ablauf wird das **Flow** -Verbindungs Tool zum Zeichnen von Instanzen der Daten **Fluss** -und **objectflow** -Domänen Beziehungen verwendet. Der **flowbuilder** -Verbindungs-Generator hat zusätzlich zur zuvor beschriebenen Anweisung für die **Fluss** Link Verbindung zwei Verknüpfungs Verbindungs Direktiven namens **objectflow**. Diese Direktiven legen fest, dass eine Instanz einer **objectflow** -Beziehung zwischen Instanzen der **objectinstate** -Domänen Klasse oder von einer Instanz von **objectinstate** in eine Instanz eines **Tasks, jedoch**nicht zwischen zwei Instanzen einer **Aufgabe**oder von einer Instanz eines Tasks in eine Instanz von **objectinstate**gezeichnet werden kann. Allerdings kann eine Instanz einer **Flow** -Beziehung zwischen zwei Instanzen einer **Aufgabe**gezeichnet werden. Wenn Sie die Lösung für den Task Ablauf kompilieren und ausführen, sehen Sie, dass das Zeichnen eines **Flows** von einer Instanz eines **objectinstate** zu einer Instanz eines Tasks eine Instanz eines **objectflow** **erstellt,** aber das Zeichnen eines **Flows** zwischen zwei Instanzen einer **Aufgabe** eine Instanz eines **Flows**erzeugt.
+ In der Lösung für den Task Ablauf wird das **Flow** -Verbindungs Tool zum Zeichnen von Instanzen der Daten **Fluss** -und **objectflow** -Domänen Beziehungen verwendet. Der **flowbuilder** -Verbindungs-Generator hat zusätzlich zur zuvor beschriebenen Anweisung für die **Fluss** Link Verbindung zwei Verknüpfungs Verbindungs Direktiven namens **objectflow**. Diese Direktiven legen fest, dass eine Instanz einer **objectflow** -Beziehung zwischen Instanzen der **objectinstate** -Domänen Klasse oder von einer Instanz von **objectinstate** in eine Instanz eines **Tasks, jedoch**nicht zwischen zwei Instanzen einer **Aufgabe**oder von einer Instanz eines Tasks in eine Instanz von **Task** **objectinstate**gezeichnet werden kann. Allerdings kann eine Instanz einer **Flow** -Beziehung zwischen zwei Instanzen einer **Aufgabe**gezeichnet werden. Wenn Sie die Lösung für den Task Ablauf kompilieren und ausführen, sehen Sie, dass das Zeichnen eines **Flows** von einer Instanz eines **objectinstate** zu einer Instanz eines Tasks eine Instanz eines **objectflow** **erstellt,** aber das Zeichnen eines **Flows** zwischen zwei Instanzen einer **Aufgabe** eine Instanz eines **Flows**erzeugt.
 
 ### <a name="custom-code-for-connection-builders"></a>Benutzerdefinierter Code für Verbindungs-Generatoren
  Es gibt vier Kontrollkästchen auf der Benutzeroberfläche, mit denen die unterschiedlichen Typen von Anpassungen der Verbindungs-Generatoren definiert werden:
@@ -184,17 +184,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Im Komponentendiagrammbeispiel wurde der Verbindungs-Generator für die Domänenbeziehung "Verbindung" angepasst, um die zwischen Ports möglichen Verbindungen zu beschränken. Die folgende Abbildung zeigt, dass Sie nur Verbindungen von `OutPort`-Elementen mit `InPort`-Elementen herstellen können. Zudem können Sie Komponenten ineinander schachteln.
 
- **Verbindung zu einem Outport von einer nicht in einer Komponente eingefügten Komponente**
+ **Eingehende Verbindung für "OutPort" aus einer geschachtelten Komponente**
 
  ![Verbindungsgenerator](../modeling/media/connectionbuilder_3.png)
 
  Daher könnten Sie angeben, dass eine Verbindung aus einer geschachtelten Komponente mit "OutPort" zulässig ist. Um eine solche Verbindung anzugeben, legen Sie im Fenster "DSL-Details" **benutzerdefinierte Annahme** für den **inporttyp** als Quell Rolle und den Typ **Outport** als Zielrolle im Fenster **DSL-Details** fest, wie in der folgenden Abbildung dargestellt:
 
- **Link Verbindungs Direktive im DSL-Explorer**
+ **Direktive für Linkverbindungen im DSL-Explorer**
 
  ![Verbindungsgenerator-Abbild](../modeling/media/connectionbuilder_4a.png)
 
- **Link Verbindungs Direktive im Fenster "DSL-Details"**
+ **Direktive für Linkverbindungen im Fenster "DSL-Details"**
 
  ![Link Verbindungs Direktive im Fenster "DSL-Details"](../modeling/media/connectionbuilder_4b.png)
 
@@ -232,7 +232,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Mithilfe von benutzerdefiniertem Code können Sie "harte" Einschränkungen anwenden. Sie sollten jedoch berücksichtigen, ob Benutzer in der Lage sein sollen, vorübergehend ungültige Verbindungen herzustellen. In dem Fall können Sie die Beschränkungen so ändern, dass die Verbindungen erst überprüft werden, wenn die Benutzer die Änderungen speichern möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen der Elementerstellung und -verschiebung](../modeling/customizing-element-creation-and-movement.md)
 - [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)

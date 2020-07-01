@@ -15,27 +15,27 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: aa2d07337ec48e41a9d8ad82602a387159192f92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ca0fb61c0973553ee6d410bc8b2718d19aeb28c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668272"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546860"
 ---
-# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Eigenschaften sollten nicht lesegeschützt sein
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Eigenschaften sollten nicht lesegeschützt sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|PropertiesShouldNotBeWriteOnly|
+|TypName|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Die öffentliche oder geschützte Eigenschaft verfügt über einen Set-Accessor, verfügt jedoch nicht über einen get-Accessor.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Get-Accessoren bieten Lesezugriff auf eine Eigenschaft, und Set-Accessoren stellen Schreibzugriff bereit. Obwohl eine schreibgeschützte Eigenschaft akzeptabel und oft erforderlich ist, verhindern die Entwurfsrichtlinien die Verwendung von Eigenschaften, die nur geschrieben werden können. Der Grund hierfür ist, dass ein Benutzer einen Wert festlegen kann und die Anzeige des Werts durch den Benutzer nicht gewährleistet. Außerdem kann der Zustand freigegebener Objekte ohne Lesezugriff nicht angezeigt werden, wodurch ihre Nützlichkeit eingeschränkt wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -45,7 +45,7 @@ ms.locfileid: "72668272"
  Es wird dringend empfohlen, dass Sie eine Warnung aus dieser Regel nicht unterdrücken.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel ist `BadClassWithWriteOnlyProperty` ein Typ mit einer schreibgeschützten Eigenschaft. `GoodClassWithReadWriteProperty` enthält den korrigierten Code.
+ Im folgenden Beispiel `BadClassWithWriteOnlyProperty` ist ein-Typ mit einer schreibgeschützten Eigenschaft. `GoodClassWithReadWriteProperty`enthält den korrigierten Code.
 
  [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/cs/FxCop.Design.PropertiesNotWriteOnly.cs#1)]
  [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/vb/PropertiesNotWriteOnly.vb#1)]

@@ -15,28 +15,28 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9931d29c818d95785146558637c32237e2c5276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652671"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547848"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invokes korrekt deklarieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DeclarePInvokesCorrectly|
+|TypName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
-|Kategorie|Microsoft. Interoperabilität|
+|Category|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Nicht unterbrechend: Wenn der P/Aufruf, der den Parameter deklariert, außerhalb der Assembly nicht sichtbar ist. Unterbrechung: Wenn der P/Aufruf, der den Parameter deklariert, außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
  Eine Platt Form Aufruf Methode wurde falsch deklariert.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Eine Platt Form Aufruf Methode greift auf nicht verwalteten Code zu und wird mit dem `Declare`-Schlüsselwort in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder dem <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> definiert. Derzeit sucht diese Regel nach Platt Form Aufruf-Methoden Deklarationen, die auf Win32-Funktionen abzielen, die einen Zeiger auf einen übergebenen Struktur Parameter aufweisen, und der entsprechende verwaltete Parameter ist kein Zeiger auf eine <xref:System.Threading.NativeOverlapped?displayProperty=fullName> Struktur.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Eine Platt Form Aufruf Methode greift auf nicht verwalteten Code zu und wird mithilfe des- `Declare` Schlüssel Worts in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder definiert <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . Derzeit sucht diese Regel nach Platt Form Aufruf-Methoden Deklarationen, die auf Win32-Funktionen abzielen, die einen Zeiger auf einen übergebenen Struktur Parameter aufweisen, und der entsprechende verwaltete Parameter ist kein Zeiger auf eine- <xref:System.Threading.NativeOverlapped?displayProperty=fullName> Struktur.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, deklarieren Sie die Platt Form Aufruf Methode ordnungsgemäß.
@@ -49,5 +49,5 @@ ms.locfileid: "72652671"
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DeclarePInvokes/cs/FxCop.Interoperability.DeclarePInvokes.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Interoperabilität mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

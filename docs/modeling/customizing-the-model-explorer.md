@@ -1,7 +1,7 @@
 ---
 title: Anpassen des Modell-Explorers
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c12ac2063e6b3ac04e3c0e9b0c20c69ea91a35
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589707"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548368"
 ---
 # <a name="customizing-the-model-explorer"></a>Anpassen des Modell-Explorers
 Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifischen sprach Designer wie folgt ändern:
@@ -33,14 +33,14 @@ Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifis
  Um den Fenstertitel des generierten Explorers zu ändern, wählen Sie im DSL- **Explorer** **Explorer-Verhalten** aus, und legen Sie dann im **Eigenschaften** Fenster die **Title** -Eigenschaft auf den gewünschten Titel fest.
 
 ## <a name="changing-the-tab-icon"></a>Ändern des Registerkarten Symbols
- Um das Registerkarten Symbol für den Explorer zu ändern, verwenden Sie ein 16x16-Pixel-Symbol in einer BMP-Datei. Fügen Sie die Symbol Datei in den Ordner \dslpackage\resources\ ein, und ändern Sie dann den Dateinamen in **modelexplorertoolwindowbitmaps. bmp**. Beispielsweise können Sie die Visual Studio-Symbol Datei "Setup. ico" in das BMP-Format ändern und in " **dsllanguagename\dslpackage\resources\modelexplorertoolwindowbitmaps.bmp**" umbenennen. Der generierte Designer zeigt dieses Symbol auf der Registerkarte Ihres Explorers an, wenn es mit **Projektmappen-Explorer**angedockt wird.
+ Um das Registerkarten Symbol für den Explorer zu ändern, verwenden Sie ein 16x16-Pixel-Symbol in einer BMP-Datei. Fügen Sie die Symbol Datei in den Ordner \dslpackage\resources\ ein, und ändern Sie dann den Dateinamen in **ModelExplorerToolWindowBitmaps.bmp**. Beispielsweise können Sie die Visual Studio-Symbol Datei "Setup. ico" in das BMP-Format ändern und in " **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**" umbenennen. Der generierte Designer zeigt dieses Symbol auf der Registerkarte Ihres Explorers an, wenn es mit **Projektmappen-Explorer**angedockt wird.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Festlegen von benutzerdefinierten Symbolen auf Explorer-Knoten
  Sie können Knoten im Explorer anpassen, indem Sie die Einstellungen für den Explorer-Knoten verwenden. Im folgenden Verfahren wird gezeigt, wie ein Symbol einem Knoten hinzugefügt wird.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>So fügen Sie einem Explorer-Knoten ein Symbol hinzu
 
-1. Erstellen Sie eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Lösung mithilfe der Lösungs Vorlage für den Task Fluss.
+1. Erstellen Sie eine Projekt Mappe [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] mithilfe der Lösungs Vorlage für den Task Fluss.
 
 2. Fügen Sie eine BMP-Datei mit einem 16x16-Pixel-Symbol im Ordner " **dsl\resources** " in der Projekt Mappe ein.
 
@@ -111,6 +111,6 @@ Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifis
 
      Im Explorer sollte nur ein **Actors** -Knoten angezeigt werden, und der Knoten **comments** sollte nicht angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

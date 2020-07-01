@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Erstellen eines benutzerdefinierten Kalenders'
+title: 'Gewusst wie: Programm gesteuertes Erstellen eines benutzerdefinierten Kalenders'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 653340d3a682664670998c874344bfc931105892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575220"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546054"
 ---
-# <a name="how-to-programmatically-create-a-custom-calendar"></a>Vorgehensweise: Programmgesteuertes Erstellen eines benutzerdefinierten Kalenders
-  In diesem Beispiel erstellt einen neuen Kalenderordner, die mit dem Namen **PersonalCalendar**, und klicken Sie dann einen neuer Termin erstellt, und fügt es dem Ordner "Kalender" hinzu. Der Code zeigt anschließend den Ordner "Kalender".
+# <a name="how-to-programmatically-create-a-custom-calendar"></a>Gewusst wie: Programm gesteuertes Erstellen eines benutzerdefinierten Kalenders
+  In diesem Beispiel wird ein neuer Kalender Ordner mit dem Namen " **Personal Calendar**" erstellt. Anschließend wird ein neues Termin Element erstellt, das dem Kalender Ordner hinzugefügt wird. Im Code wird dann der Kalender Ordner angezeigt.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Beispiel
  [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)
-- [Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)
-- [Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)
+- [Vorgehensweise: Programm gesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)
+- [Gewusst wie: Programm gesteuertes Erstellen einer Besprechungs Anfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)

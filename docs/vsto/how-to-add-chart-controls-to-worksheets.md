@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern'
+title: 'Gewusst wie: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80cc011cb9c2387b86e244f501fd5746ebb67535
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254657"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546236"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>Vorgehensweise: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern
-  Sie können <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente in einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Anpassungen auf Dokumentebene hinzufügen. Sie können auch <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelemente zur Laufzeit in VSTO-Add-Ins hinzufügen.
+# <a name="how-to-add-chart-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern
+  Sie können <xref:Microsoft.Office.Tools.Excel.Chart> einem Microsoft Office Excel-Arbeitsblatt Steuerelemente zur Entwurfszeit und zur Laufzeit in Anpassungen auf Dokument Ebene hinzufügen. Sie können auch Steuer <xref:Microsoft.Office.Tools.Excel.Chart> Elemente zur Laufzeit in VSTO-Add-Ins hinzufügen.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -35,11 +35,11 @@ ms.locfileid: "71254657"
 
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelementen finden Sie unter [Diagramm Steuer](../vsto/chart-control.md)Element.
 
-## <a name="designtime"></a>Hinzufügen von Diagramm Steuerelementen zur Entwurfszeit
+## <a name="add-chart-controls-at-design-time"></a><a name="designtime"></a>Hinzufügen von Diagramm Steuerelementen zur Entwurfszeit
  Sie können das <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement Ihrem Arbeitsblatt auf die gleiche Weise wie ein Diagramm innerhalb der Anwendung hinzufügen.
 
 > [!NOTE]
-> Das <xref:Microsoft.Office.Tools.Excel.Chart> -Steuerelement ist nicht über die **Toolbox** oder das **Datenquellen** Fenster verfügbar.
+> Das- <xref:Microsoft.Office.Tools.Excel.Chart> Steuerelement ist nicht über die **Toolbox** oder das **Datenquellen** Fenster verfügbar.
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>So fügen Sie einem Arbeitsblatt in Excel ein Chart-Hoststeuerelement hinzu
 
@@ -55,7 +55,7 @@ ms.locfileid: "71254657"
 
 6. Klicken Sie im Dialogfeld **Datenquelle auswählen** auf **OK**.
 
-## <a name="runtimedoclevel"></a>Hinzufügen von Diagramm Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
+## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Hinzufügen von Diagramm Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
  Sie können das <xref:Microsoft.Office.Tools.Excel.Chart> -Steuerelement dynamisch zur Laufzeit hinzufügen. Dynamisch erstellte Diagramme werden nicht im Dokument wie Hoststeuerelemente dauerhaft gespeichert, wenn das Dokument geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein Chart-Steuerelement programmgesteuert hinzu
@@ -65,7 +65,7 @@ ms.locfileid: "71254657"
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-## <a name="runtimeaddin"></a>Hinzufügen von Diagramm Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Hinzufügen von Diagramm Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können ein <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
  Dynamisch erstellte Chart-Steuerelemente werden nicht im Arbeitsblatt wie Hoststeuerelemente dauerhaft gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -82,7 +82,7 @@ ms.locfileid: "71254657"
 
 - Die Daten für das Diagramm sind im Bereich von A5 bis D8 im Arbeitsblatt gespeichert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Diagramm Steuerelement](../vsto/chart-control.md)

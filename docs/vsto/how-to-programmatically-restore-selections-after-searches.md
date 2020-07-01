@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorgängen'
+title: 'Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,33 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 672c66fef5d7400601ce69270b5cd4f525b34c7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30daa81c33070db3f9418b45b84b4acc6e243dc9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955698"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547094"
 ---
-# <a name="how-to-programmatically-restore-selections-after-searches"></a>Vorgehensweise: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorgängen
-  Wenn Sie suchen und Ersetzen von Text in einem Dokument, empfiehlt es sich um die ursprüngliche Auswahl des Benutzers wiederhergestellt werden, nachdem die Suche abgeschlossen ist.
+# <a name="how-to-programmatically-restore-selections-after-searches"></a>Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen
+  Wenn Sie Text in einem Dokument suchen und ersetzen, sollten Sie nach Abschluss der Suche die ursprüngliche Auswahl des Benutzers wiederherstellen.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Der Code in die Beispielprozedur verwendet zwei <xref:Microsoft.Office.Interop.Word.Range> Objekte. Eine speichert die aktuelle <xref:Microsoft.Office.Interop.Word.Selection>, und eine legt das gesamte Dokument als Suchbereich verwendet.
+ Der Code in der Beispiel Prozedur verwendet zwei- <xref:Microsoft.Office.Interop.Word.Range> Objekte. Eine speichert die aktuelle <xref:Microsoft.Office.Interop.Word.Selection> und eine legt das gesamte Dokument fest, das als Suchbereich verwendet werden soll.
 
-## <a name="to-restore-the-users-original-selection-after-a-search"></a>Zum Wiederherstellen der ursprünglichen Auswahl des Benutzers nach einer Suche
+## <a name="to-restore-the-users-original-selection-after-a-search"></a>So stellen Sie die ursprüngliche Auswahl des Benutzers nach einer Suche wieder her
 
-1. Erstellen der <xref:Microsoft.Office.Interop.Word.Range> Objekte für das Dokument und die aktuelle Auswahl.
+1. Erstellen Sie die <xref:Microsoft.Office.Interop.Word.Range> -Objekte für das Dokument und die aktuelle Auswahl.
 
     [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
     [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]
 
-2. Führen Sie die Suche, und der Ersetzungsvorgang ist.
+2. Führt den Such-und Ersetzungs Vorgang aus.
 
     [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
     [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]
 
-3. Wählen Sie den Start-Bereich zum Wiederherstellen der ursprünglichen Auswahl des Benutzers.
+3. Wählen Sie den Startbereich aus, um die ursprüngliche Auswahl des Benutzers wiederherzustellen.
 
     [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
     [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]
@@ -51,8 +51,8 @@ ms.locfileid: "62955698"
  [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes suchen und Ersetzen von Text in Dokumenten](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes Festlegen von Suchoptionen in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
-- [Vorgehensweise: Programmgesteuertes durchlaufen Sie gefundener Elemente in Dokumenten](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Programm gesteuertes suchen und Ersetzen von Text in Dokumenten](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Festlegen von Suchoptionen in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Gewusst wie: Programm gesteuertes durchlaufen gefundener Elemente in Dokumenten](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
