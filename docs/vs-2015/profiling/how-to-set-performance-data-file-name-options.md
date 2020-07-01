@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205785"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548394"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Vorgehensweise: Festlegen von Dateinamenoptionen für Leistungsdaten
+# <a name="how-to-set-performance-data-file-name-options"></a>Vorgehensweise: Dateinamenoptionen für Profilerstellungsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Standardmäßig speichern Sie eine Profilerstellungs-Datendatei (.vsp) mithilfe der folgenden Syntax:  
@@ -29,24 +29,24 @@ Standardmäßig speichern Sie eine Profilerstellungs-Datendatei (.vsp) mithilfe 
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-|||  
+|Syntax Element|Beschreibung|  
 |-|-|  
 |*Pfad*|Das Verzeichnis mit dem Bericht. Der Standardspeicherort ist der Projektmappenordner oder der Standardspeicherort für Projekte und Projektmappen des Benutzers.|  
 |*VSP-Datei*|Der Name der Profilerstellungs-Datendatei. Der Standardname ist der Name der Projektmappe oder der ausführbaren Datei, für die ein Profil erstellt wird.|  
 |*JJMMTT*|Ein Datumsstempel, der Jahr, Monat und Tag anzeigt, an dem die Profilerstellungsdaten gesammelt wurden.|  
-|*(N)*|Wenn mehr als eine Profilerstellungsdatendatei vorhanden ist, wird dem Dateinamen eine inkrementierte Zahl in Klammern hinzugefügt.|  
+|*Nr*|Wenn mehr als eine Profilerstellungsdatendatei vorhanden ist, wird dem Dateinamen eine inkrementierte Zahl in Klammern hinzugefügt.|  
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>So ändern Sie die Benennungssyntax der Profilerstellungs-Datendateien einer Leistungssitzung  
   
 1. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf den Namen der Leistungssitzung und anschließend auf **Eigenschaften**.  
   
-2. Klicken Sie auf **Allgemein**.  
+2. Klicken Sie auf **General**.  
   
 3. Ändern Sie unter **Bericht** eine der folgenden Einstellungen:  
   
-    |||  
+    |Name|BESCHREIBUNG|  
     |-|-|  
-    |**Berichtsspeicherort**|Geben Sie ein Verzeichnis zum Speichern der Profilerstellungs-Datendateien an.|  
+    |**Speicherort des Berichts**|Geben Sie ein Verzeichnis zum Speichern der Profilerstellungs-Datendateien an.|  
     |**Berichtsname**|Geben Sie einen Basisnamen für die Dateien an.|  
     |**Neue Berichte automatisch zur Sitzung hinzufügen**|Wählen Sie das Kontrollkästchen aus, um die Datendatei der Leistungssitzung automatisch hinzuzufügen.|  
     |**Generierte Berichte mit inkrementeller Nummer versehen**|Wählen Sie das Kontrollkästchen aus, um eine inkrementelle Nummer an den Dateinamen hinzuzufügen, wenn mehr als eine Datei mit demselben Namen vorhanden ist. Deaktivieren Sie das Kontrollkästchen, um eine vorhandene Datei zu überschreiben.|  

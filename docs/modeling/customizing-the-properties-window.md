@@ -1,7 +1,7 @@
 ---
 title: Anpassen des Eigenschaftenfensters
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589694"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548277"
 ---
 # <a name="customize-the-properties-window"></a>Anpassen des Eigenschaftenfenster
 
@@ -26,13 +26,13 @@ Sie können die Darstellung und das Verhalten des Fensters Eigenschaften in ihre
 
 Wenn Sie den Namen einer Eigenschaft in der DSL-Definition festlegen, wird der Anzeige Name automatisch auf eine Kopie des namensfest gelegt. Wenn Sie einen Namen für die Pascal-Schreibweise schreiben, z. b. "fuelmessgerät", enthält der Anzeige Name automatisch ein Leerzeichen: "Kraftstoff Messgerät". Sie können den anzeigen Amen jedoch explizit auf einen anderen Wert festlegen.
 
-**Beschreibung** Die Beschreibung einer Domänen Eigenschaft wird an zwei Stellen angezeigt:
+**Beschreibung**. Die Beschreibung einer Domänen Eigenschaft wird an zwei Stellen angezeigt:
 
 - Am unteren Rand des Fensters Eigenschaften, wenn der Benutzer die Eigenschaft auswählt. Sie können es verwenden, um dem Benutzer zu erklären, was die Eigenschaft darstellt.
 
 - Im generierten Programmcode. Wenn Sie die Dokumentations Funktionen zum Extrahieren der API-Dokumentation verwenden, wird Sie als Beschreibung dieser Eigenschaft in der API angezeigt.
 
-**Category**. Eine Kategorie ist eine Überschrift in der Eigenschaftenfenster.
+**Kategorie** Eine Kategorie ist eine Überschrift in der Eigenschaftenfenster.
 
 ## <a name="expose-style-features"></a>Verfügbar machen von Stil Features
 
@@ -40,7 +40,7 @@ Einige dynamische Features von grafischen Elementen *können als* Domänen Eigen
 
 Klicken Sie mit der rechten Maustaste auf eine Shape-Klasse in der DSL-Definition, zeigen **Sie auf verfügbar**machen, und wählen Sie dann eine Funktion
 
-In Shapes können Sie die Eigenschaften **FillColor**, **OutlineColor**, **TextColor**, **outlinedashstyle**, **outlinethickness** und **fillgradientmode** verfügbar machen. Auf Connectors können Sie die **Farbe**`,`**TextColor**-, **DashStyle**-und **Dicke** -Eigenschaften verfügbar machen. In Diagrammen können Sie die Eigenschaften **FillColor** und **TextColor** verfügbar machen.
+In Shapes können Sie die Eigenschaften **FillColor**, **OutlineColor**, **TextColor**, **outlinedashstyle**, **outlinethickness** und **fillgradientmode** verfügbar machen. Auf Connectors können Sie die **Farben** `,` **TextColor**, **DashStyle**und **Dicke** verfügbar machen. In Diagrammen können Sie die Eigenschaften **FillColor** und **TextColor** verfügbar machen.
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Weiterleitung: Anzeigen von Eigenschaften verwandter Elemente
 
@@ -52,7 +52,7 @@ Dieser Effekt wird als *Eigenschaften Weiterleitung*bezeichnet und erfolgt in me
 
 Wenn der Benutzer eine Form oder einen Connector oder ein Element im Explorer auswählt, werden die folgenden Eigenschaften im Eigenschaftenfenster angezeigt:
 
-- Die Domänen Eigenschaften, die für die Domänen Klasse des Modell Elements definiert sind, einschließlich derjenigen, die in Basisklassen definiert sind. Eine Ausnahme sind Domänen Eigenschaften, für die Sie festgelegt haben, dass Sie auf `False`festgelegt **ist** .
+- Die Domänen Eigenschaften, die für die Domänen Klasse des Modell Elements definiert sind, einschließlich derjenigen, die in Basisklassen definiert sind. Bei einer Ausnahme **handelt es sich** um Domänen Eigenschaften, für die Sie die durchsuchbar festgelegt haben `False` .
 
 - Die Namen von Elementen, die durch Beziehungen verknüpft werden, die eine Multiplizität von 0.. 1 aufweisen. Dies stellt eine bequeme Methode dar, optional verknüpfte Elemente zu sehen, auch wenn Sie keine Connector-Zuordnung für die Beziehung definiert haben.
 
@@ -71,7 +71,7 @@ Bei der folgenden Prozedur wird davon ausgegangen, dass Sie eine DSL erstellt ha
 
 #### <a name="forward-a-property-from-another-element"></a>Weiterleiten einer Eigenschaft von einem anderen Element
 
-1. Erstellen Sie eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Projekt Mappe, die mindestens zwei Klassen enthält, die in diesem Beispiel " **Book** " und " **Author**" genannt werden. Es sollte eine Beziehung zwischen **Buch** und **Autor**vorhanden sein.
+1. Erstellen Sie eine Projekt Mappe, die mindestens [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] zwei Klassen enthält, die in diesem Beispiel " **Book** " und " **Author**" genannt werden. Es sollte eine Beziehung zwischen **Buch** und **Autor**vorhanden sein.
 
     Die Multiplizität der Quell Rolle (die Rolle auf der **Buchseite** ) sollte 0.. 1 oder 1.. 1 lauten, damit jedes **Buch** über einen **Autor**verfügt.
 
@@ -132,7 +132,7 @@ Sie können jedoch die folgenden Editoren und Typen angeben:
 
     Wählen Sie im Eigenschaftenfenster den externen Typ aus der Dropdown Liste im Feld **Typ** aus.
 
-   In dieser Phase können Benutzer die Werte der Eigenschaft anzeigen, Sie können Sie jedoch nicht bearbeiten. Die angezeigten Werte werden aus der `ToString()`-Funktion abgerufen. Sie könnten Programmcode schreiben, mit dem der Wert der Eigenschaft festgelegt wird, z. b. in einem Befehl oder einer Regel.
+   In dieser Phase können Benutzer die Werte der Eigenschaft anzeigen, Sie können Sie jedoch nicht bearbeiten. Die angezeigten Werte werden von der- `ToString()` Funktion abgerufen. Sie könnten Programmcode schreiben, mit dem der Wert der Eigenschaft festgelegt wird, z. b. in einem Befehl oder einer Regel.
 
 ### <a name="set-a-property-editor"></a>Festlegen eines Eigenschaften-Editors
 
@@ -146,9 +146,9 @@ Fügen Sie der Domänen Eigenschaft in der folgenden Form ein CLR-Attribut hinzu
 
 Sie können das-Attribut für eine Eigenschaft festlegen, indem Sie in der Eigenschaftenfenster den Eintrag **benutzerdefiniertes Attribut** verwenden.
 
-Der Typ der `AnEditor` muss von dem Typ abgeleitet werden, der im zweiten Parameter angegeben ist. Der zweite Parameter muss entweder <xref:System.Drawing.Design.UITypeEditor> oder <xref:System.ComponentModel.ComponentEditor>sein. Weitere Informationen finden Sie unter <xref:System.ComponentModel.EditorAttribute>.
+Der Typ von `AnEditor` muss von dem Typ abgeleitet werden, der im zweiten Parameter angegeben ist. Der zweite Parameter muss entweder <xref:System.Drawing.Design.UITypeEditor> oder sein <xref:System.ComponentModel.ComponentEditor> . Weitere Informationen finden Sie unter <xref:System.ComponentModel.EditorAttribute>.
 
-Sie können einen eigenen Editor oder einen .net-Editor, z. b. <xref:System.Windows.Forms.Design.FileNameEditor> oder <xref:System.Drawing.Design.ImageEditor>, angeben. Verwenden Sie beispielsweise das folgende Verfahren, um eine Eigenschaft zu verwenden, in der der Benutzer einen Dateinamen eingeben kann.
+Sie können einen eigenen Editor oder einen .net-Editor, z <xref:System.Windows.Forms.Design.FileNameEditor> . b. oder, angeben <xref:System.Drawing.Design.ImageEditor> . Verwenden Sie beispielsweise das folgende Verfahren, um eine Eigenschaft zu verwenden, in der der Benutzer einen Dateinamen eingeben kann.
 
 #### <a name="define-a-file-name-domain-property"></a>Definieren einer Dateinamen-Domänen Eigenschaft
 
@@ -177,13 +177,13 @@ Sie können einen eigenen Editor oder einen .net-Editor, z. b. <xref:System.Wind
 
 Sie können einen eigenen Editor definieren. Dies würde dazu führen, dass der Benutzer entweder einen von Ihnen definierten Typ bearbeiten oder einen Standardtyp auf besondere Weise bearbeiten kann. Beispielsweise können Sie es dem Benutzer ermöglichen, eine Zeichenfolge einzugeben, die eine Formel darstellt.
 
-Sie definieren einen Editor, indem Sie eine Klasse schreiben, die von <xref:System.Drawing.Design.UITypeEditor>abgeleitet ist. Die Klasse muss Folgendes überschreiben:
+Sie definieren einen Editor, indem Sie eine Klasse schreiben, die von abgeleitet ist <xref:System.Drawing.Design.UITypeEditor> . Die Klasse muss Folgendes überschreiben:
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, um mit dem Benutzer zu interagieren und den Eigenschafts Wert zu aktualisieren.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, um anzugeben, ob der Editor ein Dialogfeld öffnet oder ein Dropdown Menü bereitstellt.
 
-Sie können auch eine grafische Darstellung des Eigenschafts Werts bereitstellen, die im Eigenschaften Raster angezeigt wird. Überschreiben Sie zu diesem Zweck `GetPaintValueSupported`und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
+Sie können auch eine grafische Darstellung des Eigenschafts Werts bereitstellen, die im Eigenschaften Raster angezeigt wird. Überschreiben Sie hierzu `GetPaintValueSupported` und `PaintValue` .  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Fügen Sie den Code in einer separaten Codedatei im **DSL** -Projekt hinzu.
@@ -319,6 +319,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)

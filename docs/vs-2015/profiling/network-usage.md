@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850753"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548420"
 ---
-# <a name="network-usage"></a>Analysieren der Netzwerkverwendung
+# <a name="network-usage"></a>Netzwerkauslastung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.Web.Http-API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx) Daten zu Netzwerkoperationen. Durch Analysieren der Daten können Sie Probleme wie Zugriffs- und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung in den Griff bekommen.  
@@ -31,7 +31,7 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
   
 1. Öffnen Sie das Projekt in Visual Studio.  
   
-2. Klicken Sie im Menü auf **Debuggen & gt; leistungsprofiler...** . Wählen Sie **Netzwerk**aus, und klicken Sie dann auf **starten**.  
+2. Klicken Sie im Menü auf **Debuggen & gt; leistungsprofiler...**. Wählen Sie **Netzwerk**aus, und klicken Sie dann auf **starten**.  
   
 3. Das Netzwerktool beginnt mit dem Erfassen des HTTP-Datenverkehrs Ihrer App.  
   
@@ -54,13 +54,13 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
   
  ![Detailbereich des Netzwerktools](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|||  
+|Name|BESCHREIBUNG|  
 |-|-|  
-|**Header**|Informationen zu den Anforderungsheadern des Ereignisses.|  
+|**Headers**|Informationen zu den Anforderungsheadern des Ereignisses.|  
 |**Text**|Die Nutzlastdaten von Anforderung und Antwort.|  
 |**Parameter**|Die Parameternamen und Werte der Abfragezeichenfolge.|  
 |**Cookies**|Cookiedaten von Antwort und Anforderung.|  
-|**Zeiten**|Ein Diagramm der Phasen beim Abrufen der ausgewählten Ressourcen.|  
+|**Zeitangaben**|Ein Diagramm der Phasen beim Abrufen der ausgewählten Ressourcen.|  
   
  Die **Zusammenfassungsleiste** in der Ansicht „Netzwerk“ zeigt die jeweils angezeigte Anzahl von Netzwerkoperationen, die Menge der übertragenen Daten, die für das Herunterladen der Daten aufgewendete Zeit und die Anzahl von sichtbaren Fehlern (Anforderungen mit Antworten „4xx“ oder „5xx“).  
   
@@ -73,7 +73,7 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
   
 3. Die Schaltfläche für eine strukturierte Ausgabe („Schöndruck“, auf der Registerkarte mit dem Haupttext) verbessert die Lesbarkeit des Inhalts und vereinfacht so das Analysieren großer Mengen von JSON-, XML-, HTML-, CSS-, JavaScript- und TypeScript-Antworten.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Ausführen von Profil Erstellungs Tools ohne Debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio blog: Introducing Visual Studio’s network inspector (Visual Studio-Blog: Einführung in den Netzwerkinspektor von Visual Studio)](https://blogs.msdn.com/b/visualstudio/)   
+ [Visual Studio-Blog: Einführung in den Netzwerk Inspektor von Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Channel 9 Video: VS Diagnostics tools – New Network Profiler (Channel-9-Video: Diagnosetools von Visual Studio – Neuer Profiler „Netzwerk“)](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
