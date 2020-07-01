@@ -1,7 +1,7 @@
 ---
 title: Senden von Meldungen an das Ausgabefenster | Microsoft-Dokumentation
 ms.date: 11/08/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - diagnostic messages [C#]
 - System.Diagnostics.Debug class, Output window
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605375"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350471"
 ---
 # <a name="send-messages-to-the-output-window"></a>Senden von Meldungen an das Ausgabefenster
 
