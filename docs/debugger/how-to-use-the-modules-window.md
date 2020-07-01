@@ -3,7 +3,7 @@ title: Anzeigen von DLLs und ausführbaren Dateien
 titleSuffix: Visual Studio Modules window
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400961eaa14b87d70a685a87be5df48ac92c8281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906141"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348677"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Anzeigen von DLLs und ausführbaren Dateien im Fenster „Module“ (C#, C++, Visual Basic, F#)
 
