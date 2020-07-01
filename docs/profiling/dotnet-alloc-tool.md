@@ -9,95 +9,134 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a812ea3dcddc2fa6093b2b5b99684d1d5194654
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75886761"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280034"
 ---
-# <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung
+# <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung
 
-Mithilfe des .NET-Tools für die Objektzuordnung können Sie sehen, wie viel Arbeitsspeicher Ihre App insgesamt belegt und bei welchen Codepfaden der Bedarf am höchsten ist.
+Mithilfe des .NET-Tools für die Objektzuordnung können Sie anzeigen, wie viel Arbeitsspeicher Ihre App insgesamt belegt und für welche Codepfade der Bedarf am höchsten ist.
 
-Nachdem Sie das Tool ausgeführt haben, werden Ihnen die Funktionsausführungspfade angezeigt, bei denen Objekte zugewiesen werden. So können Sie die Wurzel der Aufrufstruktur identifizieren, bei der der Speicherbedarf am größten ist.
+Nach der Ausführung des Tools können Sie die Pfad zur Funktionsausführung sehen, in denen Objekte zugewiesen werden. Anschließend können Sie durch eine Rückverfolgung bis zum Stamm die Aufrufstruktur ermitteln, die den meisten Arbeitsspeicher belegt.
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Setup
 
-1. Öffnen Sie den Leistungs-Profiler (**ALT + F2**) in Visual Studio.
-2.  Aktivieren Sie das Kontrollkästchen **Nachverfolgung der .NET-Objektzuordnung**.
+1. Öffnen Sie über **ALT+F2** den Leistungs-Profiler in Visual Studio.
 
-![Diagnosehub](../profiling/media/diaghub.png "Diagnosehub")
+1. Aktivieren Sie das Kontrollkästchen **Nachverfolgung der .NET-Objektzuordnung**.
 
-> [!NOTE]
-> Standardmäßig wird das Startprojekt als **Analyseziel** ausgewählt. Sie können aber auch einen laufenden Prozess, eine ausführbare Datei, eine laufende App und installierte Apps analysieren lassen. Klicken Sie dazu auf das Dropdownmenü **Ziel ändern**, und wählen Sie aus den verfügbaren Optionen aus.
+   ![Aktivierte Option „Nachverfolgung der .NET-Objektzuordnung“](../profiling/media/dotnetalloctoolselected.png "Aktivierte Option „Nachverfolgung der .NET-Objektzuordnung“")
 
-   Das Tool für die .NET-Objektzuordnung bietet aktuell nicht die Möglichkeit, ausführbare Dateien über das Dropdownmenü auszuwählen. Sie müssen das EXE-Projektsystem durchlaufen, um das Tool verwenden zu können. Schließen Sie dazu zuerst die aktuelle Projektmappe (**Datei** -> **Projektmappe schließen**), und wählen Sie dann unter **Datei** -> **Projekt oder Projektmappe öffnen** Ihre EXE-Datei aus.
+1. Klicken Sie auf die Schaltfläche **Start**, um das Tool auszuführen.
 
-![Analyseziel](../profiling/media/analysistarget.png "Analyseziel")
+1. Gehen Sie nach dem Start des Tools das Szenario durch, für das Sie in Ihrer App ein Profil erstellen möchten. Klicken Sie dann auf **Sammlung beenden**, oder schließen Sie Ihre App, um die Daten anzuzeigen.
 
-3. Klicken Sie auf die Schaltfläche **Start**, um das Tool auszuführen.
+   ![Fenster mit angezeigter Option „Sammlung beenden“](../profiling/media/stopcollectionlighttheme.png "Fenster mit angezeigter Option „Sammlung beenden“")
 
-![Sammlung beenden](../profiling/media/stopcollection.png "Sammlung beenden")
+1. Wählen Sie die Registerkarte **Zuordnung** aus. Die angezeigten Fensterinhalte sollten denen im folgenden Screenshot ähneln.
 
-4. Nachdem das Tool gestartet wurde, durchlaufen Sie das gewünschte Szenario in Ihrer App. Drücken Sie anschließend auf **Sammlung beenden**, oder schließen Sie Ihre App, um sich Ihre Daten anzeigen zu lassen.
-5. Klicken Sie auf die Registerkarte **Allocation** (Zuordnung). Die Anzeige auf Ihrem Bildschirm sollte nun ungefähr so aussehen.
+   ![Registerkarte „Zuordnung“](../profiling/media/allocationview.png "Registerkarte „Zuordnung“")
 
-![Speicherbelegung](../profiling/media/allocation.png "Zuordnung")
+Sie können jetzt die Speicherbelegung der Objekte analysieren.
 
-Glückwunsch! Sie können jetzt die Speicherbelegung der Objekte analysieren.
+Während der Sammlung kann das Überwachungstool die App verlangsamen, für die das Profil erstellt wird. Falls die Leistung des Tools oder der App herabgesetzt wird und Sie nicht jedes Objekt nachverfolgen müssen, können Sie die Stichprobenhäufigkeit anpassen. Klicken Sie hierzu auf der Seite mit der Profilerzusammenfassung auf das Zahnradsymbol neben dem Überwachungstool.
 
-## <a name="understand-your-data"></a>Erläuterungen zu den Daten
+![Einstellungen für das .NET-Zuordnungstool](../profiling/media/dotnetallocsettings.png "Einstellungen für das .NET-Zuordnungstool")
 
-### <a name="collection"></a>Collection
+Passen Sie die Stichprobenhäufigkeit wie gewünscht an. Diese Änderung verbessert die Leistung Ihrer App während der Datensammlung und Analyse.
 
-![Sammlung](../profiling/media/collection.png "Collection")
+![Angepasste Stichprobenhäufigkeit](../profiling/media/adjustedsamplingratedotnetalloctool.png "Angepasste Stichprobenhäufigkeit")
 
-In der Sammlungsansicht können Sie sehen, wie viele Objekte während der Garbage Collection gesammelt und wie viele davon beibehalten wurden. Hier finden Sie auch zwei Kreisdiagramme, mit denen diese Informationen für die einzelnen Typen grafisch dargestellt werden.
+Weitere Informationen zur Optimierung des Tools finden Sie unter [Optimieren der Profilereinstellungen](../profiling/optimize-profiler-settings.md).
 
-- In der Spalte **Collected** (Gesammelt) wird die Anzahl der Objekte angezeigt, die vom Garbage Collector erfasst wurden.
-- Die Spalte **Survived** (Verblieben) zeigt, wie viele Objekte nach der Ausführung des Garbage Collectors noch vorhanden waren.
+## <a name="understand-your-data"></a>Verstehen Ihrer Daten
+
+![Diagramm für das .NET-Zuordnungstool](../profiling/media/graphdotnetalloc.png "Diagramm für das .NET-Zuordnungstool")
+
+In der grafischen Darstellung oben wird im oberen Bereich die Anzahl von Liveobjekten in Ihrer App angezeigt. Das untere Diagramm **Objektdelta** zeigt die prozentuale Änderung von App-Objekten. Rote Linien kennzeichnen, wann eine Garbage Collection stattgefunden hat.
+
+![Gefiltertes Diagramm der .NET-Zuordnungszeit](../profiling/media/graphdotnetalloctimefiltered.png "Gefiltertes Diagramm der .NET-Zuordnungszeit")
+
+Sie können die tabellarischen Daten filtern, um nur Aktivitäten für einen angegebenen Zeitraum anzuzeigen. Außerdem können Sie einen Bereich des Diagramms vergrößern oder verkleinern.
 
 ### <a name="allocation"></a>Zuordnung
 
-![Zuordnung erweitert](../profiling/media/allocationexpanded.png "Zuordnung erweitert")
+![Erweiterte Zuordnungsansicht](../profiling/media/allocationexpandedlight.png "Erweiterte Zuordnungsansicht")
 
-Die Ansicht „Allocation“ (Zuordnung) ermöglicht es Ihnen, zu sehen, welche Objekte wie viel Arbeitsspeicher belegen und wo sie gespeichert sind.
+In der Ansicht **Zuordnung** können Sie sehen, welche Objekte wie viel Arbeitsspeicher belegen und wo sich diese Objekte befinden.
 
-- In der Spalte **Name** sind verschiedene Klassen und Strukturen aufgeführt, die Arbeitsspeicher belegen. Jedes Element in der Spalte ist ein Knoten, der erweitert werden kann, wenn es innerhalb dieser Kategorie Elemente gibt, die Arbeitsspeicher belegen. (nur in der Ansicht **Allocation** (Zuordnung) verfügbar)
-- In der Spalte **Total (Allocations)** ((Gesamt-)Zuordnungen) wird die Anzahl der Objekte eines bestimmten Zuordnungstyps angezeigt, die Arbeitsspeicher belegen. (In den Ansichten **Allocation** (Zuordnung), **Aufrufstruktur** und **Funktionen** verfügbar)
-- In der Spalte **Self (Allocations)** ((Selbst-)Zuordnungen) wird die Anzahl der Objekte in einem einzelnen Element angezeigt, das Arbeitsspeicher belegt. (In den Ansichten **Allocation** (Zuordnung), **Aufrufstruktur** und **Funktionen** verfügbar)
-- Alle drei Spalten sind sortierbar. Bei der Spalte **Name** erfolgt die Sortierung entweder alphabetisch vorwärts oder rückwärts. Bei den Spalten **Total (Allocations)** ((Gesamt-)Zuordnungen) und **Self (Allocations)** ((Selbst-)Zuordnungen) können Sie sich die Zahlen aufsteigend oder absteigend sortiert anzeigen lassen.
-- Die Spalten **Total Size (Bytes)** (Gesamtgröße (Byte)) und **Self Size (Bytes)** (Automatische Größe (Byte)) sind standardmäßig nicht aktiviert. Um diese zu aktivieren, klicken Sie mit der rechten Maustaste auf **Name**, **Total (Allocations)** ((Gesamt-)Zuordnungen) oder auf **Self (Allocations)** ((Selbst-)Zuordnungen) und dann auf die Optionen **Total Size (Bytes)** (Gesamtgröße (Byte)) und **Self Size** (Automatische Größe (Byte)), um sie dem Diagramm hinzuzufügen. Die beiden Spalten ähneln **Total (Allocations)** ((Gesamt-)Zuordnungen) und **Self (Allocations)** ((Selbst-)Zuordnungen) mit der Ausnahme, dass anstelle der Anzahl der Objekte, die Arbeitsspeicher belegen, die Gesamtgröße des Arbeitsspeichers in Byte angezeigt wird, den diese Objekte belegen. [Nur in der Ansicht „Allocation“ (Zuordnung) verfügbar]
+- Die Spalte  **Typ** enthält eine Liste der Klassen und Strukturen, die Arbeitsspeicher verbrauchen. Doppelklicken Sie auf einen Typ, um die Rückverfolgung als umgekehrte Aufrufstruktur anzuzeigen. Nur in der Ansicht **Zuordnung** können Sie Elemente innerhalb der ausgewählten Kategorie anzeigen, die Arbeitsspeicher beanspruchen.
+
+- Die Spalte  **Zuordnungen** zeigt die Anzahl von Objekten an, die innerhalb eines bestimmten Zuordnungstyps oder einer bestimmten Funktion Arbeitsspeicher belegen. Diese Spalte wird nur in den Ansichten **Zuordnung**, **Aufrufstruktur**und **Funktionen** angezeigt.
+
+- Die Spalten  **Bytes** und **Durchschnittliche Größe (Bytes)**  werden standardmäßig nicht angezeigt. Um sie einzublenden, klicken Sie mit der rechten Maustaste auf die Spalte **Typ** oder **Zuordnungen** und wählen dann die Optionen **Bytes** und **Durchschnittliche Größe (Bytes)**  aus, um sie dem Diagramm hinzuzufügen. 
+
+   Die zwei Spalten ähneln  **Gesamt (Zuordnungen)** und **Selbst (Zuordnungen)** , zeigen jedoch die Menge des belegten Arbeitsspeichers anstelle der Anzahl von Objekten an, die Arbeitsspeicher verbrauchen. Diese Spalten sind nur in der Ansicht **Zuordnung** enthalten.
+
+- Die Spalte  **Modulname** zeigt das Modul an, das die aufrufende Funktion oder den aufrufenden Prozess enthält.
+
+Alle diese Spalten sind sortierbar. Für die Spalten **Typ** und **Modulname** können Sie die Elemente alphabetisch sortieren (in aufsteigender oder absteigender Reihenfolge). Für **Zuordnungen**, **Bytes** und **Durchschnittliche Größe (Bytes)** können Sie Elemente sortieren, indem Sie den numerischen Wert erhöhen oder verringern.
+
+#### <a name="symbols"></a>Symbole
+
+Die folgenden Symbole erscheinen auf den Registerkarten **Zuordnungen**, **Aufrufstruktur** und **Funktionen**:
+
+- ![Das Symbol für einen Werttyp](../profiling/media/valuetypeicon.png "Das Symbol für einen Werttyp") – Ein Werttyp wie z. B. „Integer“
+
+- ![Das Symbol für eine Werttypsammlung](../profiling/media/valuetypecollectionicon.png "Das Symbol für eine Werttypsammlung") – Eine Werttypsammlung wie beispielsweise ein Array aus Ganzzahlen
+
+- ![Das Symbol für einen Verweistyp](../profiling/media/referencetypeicon.png "Das Symbol für einen Verweistyp") – Ein Verweistyp wie z. B. eine Zeichenfolge
+
+- ![Das Symbol für eine Verweistypsammlung](../profiling/media/referencetypecollectionicon.png "Das Symbol für eine Verweistypsammlung") – Eine Verweistypsammlung wie beispielsweise ein Array aus Zeichenfolgen
 
 ### <a name="call-tree"></a>Aufrufstruktur
 
-![Aufrufstruktur](../profiling/media/calltree.png "Aufrufstruktur")
+![Die Ansicht „Aufrufstruktur“](../profiling/media/calltreelight.png "Die Ansicht „Aufrufstruktur“")
 
-Mit der Ansicht **Aufrufstruktur** können Sie sich die Funktionsausführungspfade anzeigen lassen, die Objekte enthalten, die viel Arbeitsspeicher belegen.
+Die Ansicht **Aufrufstruktur** zeigt die Funktionsausführungspfade, die Objekte mit einem hohen Arbeitsspeicherverbrauch enthalten.
 
-- Die Spalte **Funktionsname** zeigt basierend auf der Ebene des Knotens, den Sie überprüfen, den Prozess oder den Namen einer Funktion an, die Objekte enthält, die Arbeitsspeicher belegen.
-- In den Spalten **Total (Allocations)** ((Gesamt-)Zuordnungen) und **Self (Allocations)** ((Selbst-)Zuordnungen) werden dieselben Informationen angezeigt wie in der Ansicht **Allocations** (Zuordnungen).
-- Die Spalte **Modulname** zeigt das Modul an, das die aufrufende Funktion oder den aufrufenden Prozess enthält.
+- Die Spalte **Funktionsname** zeigt den Prozess oder den Namen der Funktion an, die Objekte enthalten, die Arbeitsspeicher belegen. Die Anzeige basiert auf der Knotenebene, auf der die Untersuchung erfolgt.
+- Die Spalten **Gesamt (Zuordnungen)** und **Gesamtgröße (Bytes)**  zeigen die Anzahl von zugeordneten Objekten und die Gesamtmenge an Arbeitsspeicher, die von einer Funktion und allen von ihr aufgerufenen Funktionen verbraucht wird.
+- Die Spalten**Selbst (Zuordnungen)** und**Automatische Größe (Bytes)** zeigen die Anzahl von zugeordneten Objekten und die Gesamtmenge an Arbeitsspeicher, die von einer einzelnen ausgewählten Funktion oder dem Zuordnungstyp belegt wird.
+- Die Spalte **Durchschnittliche Größe (Bytes)** zeigt die gleichen Informationen wie in der Ansicht **Zuordnungen** an.
+- Die Spalte  **Modulname** zeigt das Modul an, das die aufrufende Funktion oder den aufrufenden Prozess enthält.
 
-![Langsamster Pfad](../profiling/media/hotpath.png "Langsamster Pfad")
+   ![Erweiterter langsamster Pfad](../profiling/media/hotpathlight.png "Erweiterter langsamster Pfad")
 
-- Wenn Sie auf die Schaltfläche **Langsamsten Pfad erweitern** klicken, wird ein Funktionsausführungspfad hervorgehoben, der viele Objekte enthält, die Arbeitsspeicher belegen. Der Algorithmus startet bei einem vom Benutzer ausgewählten Knoten, hebt den Pfad der meisten Zuordnungen hervor und hilft dem Benutzer bei der Untersuchung.
-- Die Schaltfläche **Langsamsten Pfad anzeigen** aktiviert oder deaktiviert das Flammensymbol, das zeigt, welche Knoten Teil des **langsamsten Pfads** sind.
+- Wenn Sie auf die Schaltfläche **Langsamsten Pfad erweitern** klicken, wird ein Funktionsausführungspfad hervorgehoben, der viele Objekte enthält, die Arbeitsspeicher belegen. Der Algorithmus startet beim ausgewählten Knoten, hebt den Pfad der meisten Zuordnungen hervor und unterstützt Sie bei der Untersuchung.
+- Die Schaltfläche **Langsamsten Pfad anzeigen** blendet das Flammensymbol ein oder aus, das zeigt, welche Knoten Teil des langsamsten Pfads sind.
 
 ### <a name="functions"></a>Funktionen
 
-![Funktionen](../profiling/media/functions.png "Funktionen")
+![Die Ansicht „Funktionen“](../profiling/media/functionslight.png "Die Ansicht „Funktionen“")
 
 Mit der Ansicht **Funktionen** können Sie sich Prozesse, Module und Funktionen anzeigen lassen, die Arbeitsspeicher belegen.
 
 - In der Spalte **Name** werden Prozesse als Knoten der obersten Ebene angezeigt. Unterhalb der Prozesse befinden sich die Module und darunter die Funktionen.
-- In den Spalten **Total (Allocations)** ((Gesamt-)Zuordnungen) und **Self (Allocations)** ((Selbst-)Zuordnungen) werden dieselben Informationen angezeigt wie in der Ansicht **Allocations** (Zuordnungen).
+- Diese Spalten zeigen die gleichen Informationen an wie in den Ansichten **Zuordnung** und **Aufrufstruktur**:
 
-Die Ansichten **Allocation** (Zuordnung), **Aufrufstruktur** und **Funktionen** enthalten alle die Optionen **Nur eigenen Code anzeigen**, **Show Native Code** (Nativen Code anzeigen) und **Suchen**:
+   - **Gesamt (Zuordnungen)**
+   - **Selbst (Zuordnungen)**
+   - **Gesamtgröße (Bytes)**
+   - **Automatische Größe (Bytes)**
+   - **Durchschnittliche Größe (Bytes)**
 
-![Filterleiste](../profiling/media/filterbar.png "Filterleiste")
+### <a name="collection"></a>Sammlung
 
-- **Nur eigenen Code anzeigen**: Damit der Benutzer sich auf seinen Code konzentrieren kann, werden Systeme, Frameworks und anderer nicht vom Benutzer stammender Code hinter Frames ( **[External Code]** ) verborgen. Weitere Informationen finden Sie unter [Funktion „Nur eigenen Code anzeigen“ verwenden, um nur eigenen Code zu debuggen](../debugger/just-my-code.md).
-- **Show Native Code** (Nativen Code anzeigen): Mit dieser Option wird im Analyseziel vorhandener native Code angezeigt, einschließlich Code, der nicht vom Benutzer stammt.
-- Im **Filterfeld** können Sie einen Parameter eingeben, nach dem in den Spalten **Name** oder **Funktionsname** gesucht werden soll. Wenn Sie hier etwas eingeben, werden nur die Typen angezeigt, die eine entsprechende Zeichenfolge enthalten.
+![Die Ansicht „Sammlung“](../profiling/media/collectionlight.png "Die Ansicht „Sammlung“")
+
+In der Ansicht **Sammlung** können Sie sehen, wie viele Objekte während der Garbage Collection gesammelt oder beibehalten wurden. Hier finden Sie auch zwei Kreisdiagramme, mit denen die Informationen zu den Objekten nach Typ grafisch dargestellt werden.
+
+- In der Spalte **Gesammelt** wird die Anzahl der Objekte angezeigt, die vom Garbage Collector erfasst wurden.
+- Die Spalte **Noch vorhanden** zeigt, wie viele Objekte nach der Ausführung des Garbage Collectors noch vorhanden waren.
+
+### <a name="filtering-tools"></a>Filtertools
+
+Die Ansichten **Zuordnungen**, **Aufrufstruktur** und **Funktionen** enthalten alle die Optionen **Nur eigenen Code anzeigen** und **Nativen Code anzeigen** und ein Filterfeld.
+
+- **Nur eigenen Code anzeigen**: Damit Sie sich auf den eigenen Code konzentrieren können, werden Systeme, Frameworks und anderer nicht vom Benutzer stammender Code hinter Frames ( **[Externer Code]** ) verborgen. Weitere Informationen finden Sie unter [Funktion „Nur eigenen Code anzeigen“ verwenden, um nur eigenen Code zu debuggen](../debugger/just-my-code.md).
+- **Nativen Code anzeigen**: Zeigt nativen Code in der Analyse an, einschließlich Code, der nicht vom Benutzer stammt.
+- Mit dem Filterfeld können Sie basierend auf dem angegebenen Wert die Spalten **Name** oder **Funktionsname** filtern. Geben Sie einen Zeichenfolgenwert in das Feld ein. Die Tabelle zeigt anschließend nur Typen an, die diese Zeichenfolge enthalten.

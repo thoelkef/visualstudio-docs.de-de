@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be69003d14d2c246f95249b5db0b1fa7d470598
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911435"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536512"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace für Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -39,7 +39,7 @@ Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoc
 
 ## <a name="what-do-you-want-to-do"></a>Wie möchten Sie vorgehen?
 
-|||
+|Szenario|Titel|
 |-|-|
 |**Meine Anwendung mit IntelliTrace debuggen:**<br /><br /> – Vergangene Ereignisse auflisten.<br />– Aufrufinformationen mit vergangenen Ereignissen anzeigen.<br />– Die IntelliTrace-Sitzung speichern.<br />– Die Daten steuern, die IntelliTrace erfasst.|- [Untersuchen von vorherigen App-Zuständen mithilfe des IntelliTrace-Features „Schritt zurück“ in Visual Studio (Visual Studio Enterprise)](../debugger/view-historical-application-state.md)<br />- [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace-Funktionen](../debugger/intellitrace-features.md)<br />- [Verlaufsbezogenes Debuggen](../debugger/historical-debugging.md)|
 |**Erfassen IntelliTrace-Daten aus bereitgestellten Anwendungen**|- [Verwenden des eigenständigen IntelliTrace-Collectors](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -47,7 +47,7 @@ Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoc
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Welche Anwendungen kann ich mit IntelliTrace debuggen?
 
-| | |
+| Supportebene| Anwendungstypen |
 |---------------------| - |
 | **Vollständige Unterstützung** | – Visual Basic- und Visual C#-Anwendungen, die .NET Framework 2.0 oder höher verwenden.<br/>Sie können die meisten Anwendungen debuggen, einschließlich ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 und 64-Bit-Anwendungen.<br/>Weitere Informationen zum Debuggen von SharePoint-Anwendungen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Weitere Informationen zum Debuggen von Microsoft Azure-Apps mit IntelliTrace finden Sie unter [Debuggen eines veröffentlichten Azure-Clouddiensts mit Visual Studio und IntelliTrace](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Eingeschränkte Unterstützung** | - Von C++-Apps für Windows wird das Anzeigen von Momentaufnahmen mithilfe des IntelliTrace-Features „Schritt zurück“ unterstützt. Nur Debugger- und Ausnahmeereignisse werden unterstützt.<br />- .NET Core- und ASP.NET Core-Apps werden nur für bestimmte Ereignisse (MVC-Controller-, ADO.NET- und HttpClient-Ereignisse) beim lokalen Debuggen unterstützt. Der eigenständige Collector wird für .NET Core- und ASP.NET Core-Apps nicht unterstützt.<br />– F#-Apps versuchsweise<br />- UWP-Apps werden nur für Ereignisse unterstützt. |

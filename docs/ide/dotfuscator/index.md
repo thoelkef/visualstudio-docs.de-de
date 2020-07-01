@@ -2,7 +2,7 @@
 title: Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
-ms.topic: conceptual
+ms.topic: overview
 keywords: dotfuscator, dotfuscator ce, dotfuscator community, preemptive, preemptive solutions, preemptive protection, protection, community edition, obfuskation, .NET, kostenlos, visual studio 2019, visual studio 2017, visual studio
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f1b2c0bfd4adbd4a952a64f20fc3d2639a8abb5f
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7a8602dc99ba63e6cba5035636af0fbd47263e58
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75918446"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769501"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
