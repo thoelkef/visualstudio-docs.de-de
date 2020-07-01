@@ -2,19 +2,19 @@
 title: 'Vorgehensweise: Ausschließen von Projekten aus einem Build'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114802"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284320"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Vorgehensweise: Ausschließen von Projekten aus einem Build
 
@@ -42,7 +42,7 @@ Weitere Informationen finden Sie unter [Grundlagen der Buildkonfigurationen](../
 
 1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager**.
 
-2. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<Neu>** aus.
+2. 2\. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<New>** aus.
 
 3. Geben Sie im Feld **Name** einen Namen für die Projektmappenkonfiguration ein.
 
@@ -67,8 +67,8 @@ Im Bereich **Build** des Fensters **Ausgabe** meldet Visual Studio die Anzahl de
 
 Wenn Sie herausfinden möchten, warum ein Projekt übersprungen wurde, notieren Sie sich die aktive Konfiguration (`Debug x86` im vorherigen Beispiel), und wählen Sie **Build** > **Konfigurations-Manager** aus. Sie können anzeigen oder ändern, welche Projekte für jede Konfiguration übersprungen werden, wie in diesem Artikel erläutert wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
-- [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
-- [Vorgehensweise: Gleichzeitiges Erstellen mehrerer Konfigurationen](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [How to: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
+- [How to: Gleichzeitiges Erstellen mehrerer Konfigurationen](../ide/how-to-build-multiple-configurations-simultaneously.md)

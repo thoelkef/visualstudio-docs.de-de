@@ -2,7 +2,7 @@
 title: 'Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114452"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284567"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen
 
@@ -29,7 +29,7 @@ Mit dem Dialogfeld **Konfigurations-Manager** können Sie Konfigurationen und Pl
 
 1. Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.
 
-2. Wählen Sie im Feld **Aktive Projektmappenplattform** die Plattform aus, die Ihre Projektmappe ansteuern soll, oder klicken Sie auf **\<Neu>** , um eine neue Plattform zu erstellen. Visual Studio kompiliert Ihre Plattform, damit diese die Plattform ansteuert, die als aktive Plattform im Dialogfeld **Konfigurations-Manager** festgelegt ist.
+2. Wählen Sie im Feld **Aktive Projektmappenplattform** die Plattform aus, die Ihre Projektmappe ansteuern soll, oder klicken Sie auf **\<New>** , um eine neue Plattform zu erstellen. Visual Studio kompiliert Ihre Plattform, damit diese die Plattform ansteuert, die als aktive Plattform im Dialogfeld **Konfigurations-Manager** festgelegt ist.
 
 ## <a name="remove-a-platform"></a>Entfernen einer Plattform
 
@@ -37,7 +37,7 @@ Wenn Sie feststellen, dass Sie keine Plattform benötigen, können Sie diese mit
 
 1. Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.
 
-2. Klicken Sie im Feld **Aktive Projektmappenplattform** auf **\<Bearbeiten>** . Das Dialogfeld **Projektmappenplattformen bearbeiten** wird geöffnet.
+2. Klicken Sie im Feld **Aktive Projektmappenplattform** auf **\<Edit>** . Das Dialogfeld **Projektmappenplattformen bearbeiten** wird geöffnet.
 
 3. Klicken Sie auf die Plattform, die Sie entfernen möchten, und dann auf **Entfernen**.
 
@@ -61,8 +61,8 @@ Da Sie die Einstellungen basierend auf der Kombination von Konfigurations- und P
 
    Es ist möglich, dass eine Plattform auf Projektebene vorhanden ist, die z.B. auf [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] festgelegt ist, aber keine Projekte innerhalb dieser Projektmappe vorhanden sind, die die gleiche Plattform ansteuern. Es ist ebenfalls möglich, dass mehrere Projekte in Ihrer Projektmappe vorhanden sind, die jeweils unterschiedliche Plattformen ansteuern. Es wird empfohlen, in einer dieser Situationen eine neue Konfiguration mit einem aussagekräftigen Namen zu erstellen, um Verwechselungen zu vermeiden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
+- [How to: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
 - [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)
 - [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

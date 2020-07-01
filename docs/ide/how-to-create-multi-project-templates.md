@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Vorlagen mit mehreren Projekten
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591085"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284411"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
@@ -46,14 +46,14 @@ Eine *ZIP*-Datei für eine Vorlage mit mehreren Projekten, die zwei Projekte ent
 
 Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:
 
-- Das **Type**-Attribut des **VSTemplate**-Elements hat den Wert **ProjectGroup** statt **Project**. Beispiel:
+- Das **Type**-Attribut des **VSTemplate**-Elements hat den Wert **ProjectGroup** statt **Project**. Zum Beispiel:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- Das **TemplateContent**-Element enthält ein **ProjectCollection**-Element, das über mindestens ein **ProjectTemplateLink**-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Beispiel:
+- Das **TemplateContent**-Element enthält ein **ProjectCollection**-Element, das über mindestens ein **ProjectTemplateLink**-Element verfügt, das den Pfad der *VSTEMPLATE*-Datei der enthaltenen Projekte definiert. Zum Beispiel:
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
     ```
 
 > [!TIP]
-> Wenn Sie möchten, dass nur die Vorlage mit mehreren Projekten im Dialogfenster des neuen Projekts angezeigt wird und nicht die darin enthaltenen Einzelprojekte, markieren Sie die inneren Vorlagen als [ausgeblendet](../extensibility/hidden-element-visual-studio-templates.md). Beispiel:
+> Wenn Sie möchten, dass nur die Vorlage mit mehreren Projekten im Dialogfenster des neuen Projekts angezeigt wird und nicht die darin enthaltenen Einzelprojekte, markieren Sie die inneren Vorlagen als [ausgeblendet](../extensibility/hidden-element-visual-studio-templates.md). Zum Beispiel:
 >
 > ```xml
 > <VSTemplate Type="Project" ... >
@@ -100,7 +100,7 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
 
 4. Wählen Sie auf der Seite **Vorlagentyp auswählen** die Option **Projektvorlage** aus. Wählen Sie eines der Projekte aus, die Sie in eine Vorlage exportieren möchten, und klicken Sie anschließend auf **Weiter**. (Sie müssen diese Schritte für jedes Projekt in der Projektmappe wiederholen.)
 
-5. Geben Sie auf der Seite **Vorlagenoptionen auswählen** einen Namen, ggf. eine Beschreibung sowie ein Symbol für Ihre Vorlage ein, und fügen Sie ein Vorschaubild hinzu. Wählen Sie **Fertig stellen** aus.
+5. Geben Sie auf der Seite **Vorlagenoptionen auswählen** einen Namen, ggf. eine Beschreibung sowie ein Symbol für Ihre Vorlage ein, und fügen Sie ein Vorschaubild hinzu. Klicken Sie auf **Fertig stellen**.
 
    Das Projekt wird als *ZIP*-Datei exportiert und am angegebenen Speicherort platziert.
 
@@ -117,7 +117,7 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
 
    Die Dateien und Ordner werden in eine *ZIP*-Datei komprimiert.
 
-10. Kopieren Sie die *ZIP*-Datei in das Verzeichnis für Benutzerprojektvorlagen. Standardmäßig ist das Verzeichnis *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates*.
+10. Kopieren Sie die *ZIP*-Datei in das Verzeichnis für Benutzerprojektvorlagen. Standardmäßig ist das Verzeichnis *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
 
 11. Wählen Sie in Visual Studio **Datei** > **Neu** > **Projekt** aus, und überprüfen Sie, ob Ihre Vorlage angezeigt wird.
 
@@ -186,10 +186,10 @@ In diesem Beispiel wird das **SolutionFolder**-Element verwendet, um die Projekt
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [How to: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
 - [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)
 - [SolutionFolder-Element (Visual Studio-Vorlagen)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [ProjectTemplateLink-Element (Visual Studio-Vorlagen)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

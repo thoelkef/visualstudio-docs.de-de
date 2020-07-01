@@ -1,7 +1,7 @@
 ---
 title: Debuggen von Python-Code
 description: Visual Studio bietet umfassendes Debugging für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
-ms.date: 03/13/2019
+ms.date: 05/12/2020
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307172"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285646"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -186,7 +186,7 @@ Beachten Sie, dass die standardmäßigen Debuggerfenster wie **Prozesse**, **Thr
 
 ## <a name="use-the-legacy-debugger"></a>Verwenden des Legacydebuggers
 
-Visual Studio 2017-Version 15.8 und höher verwendet einen Debugger, der auf ptvsd-Version 4.1 und höher basiert. Diese Version von ptvsd ist kompatibel mit Python 2.7 sowie Python 3.5 und höher. Wenn Sie Python 2.6, 3.1, 3.4 oder IronPython verwenden, zeigt Visual Studio den Fehler **Diese Python-Umgebung wird vom Debugger nicht unterstützt** an:
+Visual Studio 2017-Version 15.8 und höher verwendet einen Debugger, der auf ptvsd-Version 4.1 und höher basiert. Visual Studio 2019 verwendet ab Version 16.5 einen Debugger, der auf debugpy basiert. Diese Debuggerversionen sind mit Python 2.7 und Python 3.5 und höher kompatibel. Wenn Sie Python 2.6, 3.1, 3.4 oder IronPython verwenden, zeigt Visual Studio den Fehler **Diese Python-Umgebung wird vom Debugger nicht unterstützt** an:
 
 ![Fehler „Diese Python-Umgebung wird vom Debugger nicht unterstützt“ beim Verwenden des Debuggers](media/debugging-experimental-incompatible-error.png)
 
@@ -221,7 +221,8 @@ So verwalten Sie Ihre ptvsd-Installation:
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn Probleme mit dem Debugger auftreten, aktualisieren Sie zuerst Ihre Version von ptvsd wie folgt:
+### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Aktualisieren von ptvsd für Visual Studio 2019 (bis Version 16.4)
+Wenn Probleme mit dem Debugger auftreten, aktualisieren Sie zuerst Ihre Version des Debuggers wie folgt:
 
 1. Navigieren Sie im Fenster **Python-Umgebungen** zur Registerkarte **Pakete**.
 
@@ -229,7 +230,10 @@ Wenn Probleme mit dem Debugger auftreten, aktualisieren Sie zuerst Ihre Version 
 
     ![Eingeben des ptvsd-Upgradebefehls im Fenster „Python-Umgebungen“](media/debugging-experimental-upgrade-ptvsd.png)
 
-Wenn die Probleme weiterhin auftreten, melden Sie ein Problem im [PTVS GitHub-Repository](https://github.com/Microsoft/ptvs/issues).
+   Wenn die Probleme weiterhin auftreten, melden Sie ein Problem im [PTVS GitHub-Repository](https://github.com/Microsoft/ptvs/issues).
+
+   > [!NOTE]
+   > Für Visual Studio 2019 ab Version 16.5 ist debugpy Teil der Python-Workload von Visual Studio und wird zusammen mit Visual Studio aktualisiert.
 
 ### <a name="enable-debugger-logging"></a>Aktivieren der Debuggerprotokollierung
 

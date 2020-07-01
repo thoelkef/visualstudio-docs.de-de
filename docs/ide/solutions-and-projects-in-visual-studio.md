@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307292"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285230"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -42,7 +42,7 @@ Wenn Sie eine App oder eine Website in Visual Studio erstellen, beginnen Sie mit
 
 Visual Studio verwendet [MSBuild](../msbuild/msbuild.md), um ein Projekt in einer Projektmappe zu erstellen. Jedes Projekt enthält eine MSBuild-Projektdatei. Die Dateierweiterung zeigt den Projekttyp an, wobei z. B. C#- (.csproj), Visual Basic- (.vbproj) oder Datenbankprojekte (.dbproj) verfügbar sind. Die Projektdatei ist ein XML-Dokument, das alle Informationen und Anweisungen enthält, die MSBuild zur Erstellung des Projekts benötigt. Dazu zählen der Inhalt, Plattformanforderungen, Versionsinformationen, Einstellungen für den Web- oder Datenbankserver und die Aufgaben, die ausgeführt werden sollen.
 
-Projektdateien basieren auf dem [MSBuild-XML-Schema](../msbuild/msbuild-project-file-schema-reference.md). Klicken Sie in Visual Studio im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend auf **\<Projektname\> bearbeiten**, um sich den Inhalt neuer [Projektdateien im SDK-Format](../msbuild/how-to-use-project-sdk.md) anzeigen zu lassen. Wenn Sie sich den Inhalt von .NET Framework-Projekten und anderen Projekten in diesem Format anzeigen lassen möchten, müssen Sie zuerst das Projekt entladen. Klicken Sie dazu im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend auf **Projekt entladen**. Klicken Sie dann mit der rechten Maustaste auf das Projekt und auf **\<Projektname\> bearbeiten**.
+Projektdateien basieren auf dem [MSBuild-XML-Schema](../msbuild/msbuild-project-file-schema-reference.md). Klicken Sie in Visual Studio im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend auf **\<projectname\> bearbeiten**, um sich den Inhalt neuer [Projektdateien im SDK-Format](../msbuild/how-to-use-project-sdk.md) anzeigen zu lassen. Wenn Sie sich den Inhalt von .NET Framework-Projekten und anderen Projekten in diesem Format anzeigen lassen möchten, müssen Sie zuerst das Projekt entladen. Klicken Sie dazu im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend auf **Projekt entladen**. Klicken Sie dann mit der rechten Maustaste auf das Projekt und auf **\<projectname\>bearbeiten**.
 
 > [!NOTE]
 > Der Code muss in Visual Studio nicht mithilfe von Projektmappen oder Projekten bearbeitet, erstellt und debuggt werden. Zum Debuggen öffnen Sie einfach in Visual Studio den Ordner, der die Quelldateien enthält, und beginnen mit dem Bearbeiten. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -75,6 +75,9 @@ Nachdem Sie ein neues Projekt erstellt haben, können Sie mit dem **Projektmappe
 Viele Menübefehle sind über das Kontextmenü verschiedener Elemente im **Projektmappen-Explorer** verfügbar. Diese Befehle umfassen das Erstellen eines Projekts, das Verwalten von NuGet-Paketen, das Hinzufügen einer Referenz, das Umbenennen einer Datei und das Ausführen von Tests, um nur einige zu nennen. Die Symbolleiste oben im **Projektmappen-Explorer** bietet Schaltflächen, mit denen Sie von einer Projektmappenansicht zu einer Ordneransicht wechseln, ausgeblendete Dateien anzeigen, alle Knoten reduzieren und viele weitere Aktionen ausführen können.
 
 Bei ASP.NET Core-Projekten können Sie die Schachtelung von Dateien im **Projektmappen-Explorer** anpassen. Weitere Informationen finden Sie unter [Anpassen der Dateischachtelung im Projektmappen-Explorer](file-nesting-solution-explorer.md).
+
+> [!TIP]
+> Eine Liste einiger der Symbole, die im Projektmappen-Explorer angezeigt werden, finden Sie auf der Seite [Symbole in der Klassenansicht und im Objektkatalog](class-view-and-object-browser-icons.md).
 
 ## <a name="see-also"></a>Siehe auch
 

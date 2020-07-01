@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines Webleistungstest-Plug-Ins
 ms.date: 10/03/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.web.webtestplugin
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc2eeafa41b953f9d853c7ff435a6a9706ae73ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c9651f4003647e18ba52e916aeb21e176274de5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589109"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287934"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins
 
@@ -101,7 +101,7 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
     > [!WARNING]
     > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
-    > **Fehler bei der Anforderung: Ausnahme in \<plug-in>-Ereignis: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
+    > **Fehler bei der Anforderung: Ausnahme im Ereignis \<plug-in>: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >

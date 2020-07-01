@@ -1,19 +1,19 @@
 ---
 title: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589200"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288142"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -264,7 +264,7 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Erstellen und Bereitstellen der Plug-Ins
 
-1. Klicken Sie im Menü **Erstellen** auf **\<Name des Projekts der Windows Forms-Steuerelementbibliothek>erstellen**.
+1. Klicken Sie im Menü **Build** auf **Build\<Windows Form Control Library project name>** .
 
 2. Schließen Sie alle Instanzen von Visual Studio.
 
@@ -297,7 +297,7 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 Weitere Informationen finden Sie unter [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>
@@ -305,9 +305,9 @@ Weitere Informationen finden Sie unter [Seite „Anwendung“, Projekt-Designer 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)
+- [How to: Erstellen eines Anforderungsebenen-Plug-Ins](../test/how-to-create-a-request-level-plug-in.md)
 - [Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Kodieren einer benutzerdefinierten Validierungsregel für einen Webleistungstest](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
+- [How to: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)
 - [Generieren und Ausführen eines codierten Webleistungstests](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstestergebnis-Viewer](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [How to: Erstellen eines Visual Studio-Add-Ins für den Webleistungstest-Ergebnisviewer](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

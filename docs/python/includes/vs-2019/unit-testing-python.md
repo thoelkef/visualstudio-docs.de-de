@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8adce700524c4ade6c627aa91480460f8f2571f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e84b9de4eca681812209eb17f492d5e07522d3b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933491"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292075"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Auswählen des Testframeworks für ein Python-Projekt
 
@@ -130,7 +130,7 @@ Tests werden im Hintergrund ausgeführt, und der **Test-Explorer** aktualisiert 
 Da Unittests Codeteile sind, können sie genau wie jeder andere Code Fehler aufweisen und müssen gelegentlich in einem Debugger ausgeführt werden. Im Debugger können Sie Haltepunkte setzen, Variablen untersuchen und Code durchlaufen. Visual Studio bietet auch Diagnosetools für Unittests.
 
 > [!Note]
-> Standardmäßig wird zum Debuggen von Tests der Debugger „PTVSD 4“ verwendet. Wenn Sie stattdessen „PTVSD 3“ verwenden möchten, können Sie die Option **Legacydebugger verwenden** unter **Extras** > **Optionen** > **Python** > **Debuggen** aktivieren. 
+> Standardmäßig werden für das Testdebuggen die Debugger ptvsd 4 für Visual Studio 2017 (ab Version 15.8) und debugpy für Visual Studio 2019 (ab Version 16.5) verwendet. Wenn Sie stattdessen „PTVSD 3“ verwenden möchten, können Sie die Option **Legacydebugger verwenden** unter **Extras** > **Optionen** > **Python** > **Debuggen** aktivieren. 
 
 Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Code fest, klicken Sie im **Test-Explorer** mit der rechten Maustaste auf den Test (oder eine Auswahl), und wählen Sie **Ausgewählte Tests debuggen** aus. Visual Studio startet den Python-Debugger auf dieselbe Weise wie für Anwendungscode.
 

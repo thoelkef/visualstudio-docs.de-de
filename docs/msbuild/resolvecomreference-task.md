@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595201"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286179"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference-Aufgabe
 
@@ -31,7 +31,7 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `ResolveCOMReference`-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `ResolveCOMReference` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -78,13 +78,23 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 > [!NOTE]
 > Je mehr Informationen Sie zur Verfügung stellen, um eine Typbibliothek eindeutig identifizieren zu können, desto wahrscheinlicher ist es, dass der Task in die korrekten Dateien auf dem Datenträger auflöst.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).
 
 Die COM-DLL muss nicht auf dem Computer registriert werden, damit diese Aufgabe funktioniert.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="msb4803-error"></a>Fehler MSB4803
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+Wenn Sie versuchen, ein Projekt auszuführen, das die Aufgabe `ResolveCOMReference` aus den `dotnet`-Befehlen der CLI verwendet, erhalten Sie den Fehler:
+
+```output
+MSB4803: The task "ResolveComReference" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild.
+```
+
+Diese Aufgabe wird in der .NET Core-Version von MSBuild nicht unterstützt, die verwendet wird, wenn Sie den Befehl `dotnet build` über die Befehlszeile ausführen. Versuchen Sie, das Projekt zu erstellen, indem Sie [MSBuild.exe](msbuild-command-line-reference.md) an der Developer-Eingabeaufforderung von Visual Studio aufrufen, da diese die .NET Framework-Version von MSBuild verwendet.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

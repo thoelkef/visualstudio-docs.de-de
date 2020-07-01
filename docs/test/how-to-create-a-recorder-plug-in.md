@@ -1,19 +1,19 @@
 ---
 title: Erstellen eines Aufzeichnungs-Plug-Ins für Webleistungstests
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589146"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288005"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins
 
@@ -71,7 +71,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 8. Fügen Sie entsprechend den Aktionen, die das Aufzeichnungs-Plug-In nach der Webaufzeichnung ausführen soll, weiteren Code hinzu. Sie können z. B. Code hinzufügen, um die benutzerdefinierte Korrelation wie im folgenden Beispiel dargestellt zu behandeln. Ein Aufzeichnungs-Plug-In kann auch für Aufgaben wie das Konvertieren von Kommentaren in Transaktionen oder Hinzufügen von Validierungsregeln zum Webleistungstest erstellt werden.
 
-9. Klicken Sie im Menü **Erstellen** auf **\<Name des Klassenbibliotheksprojekts> erstellen**.
+9. Klicken Sie im Menü **Build** auf **Build\<class library project name>** .
 
 Stellen Sie als Nächstes das Aufzeichnungs-Plug-In bereit, um es in Visual Studio zu registrieren.
 
@@ -99,7 +99,7 @@ Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, speichern Sie die sich e
     > [!WARNING]
     > Möglicherweise erhalten Sie eine Fehlermeldung wie die folgende, wenn Sie einen Webleistungstest oder einen Auslastungstest ausführen, der das Plug-In verwendet:
     >
-    > **Fehler bei der Anforderung: Ausnahme in \<plug-in>-Ereignis: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
+    > **Fehler bei der Anforderung: Ausnahme im Ereignis \<plug-in>: Die Datei oder Assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' oder eine ihrer Abhängigkeiten konnte nicht geladen werden. Das System konnte die angegebene Datei nicht finden.**
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >

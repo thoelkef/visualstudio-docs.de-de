@@ -1,6 +1,6 @@
 ---
 title: Allgemein, Debuggen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
-ms.date: 11/12/2019
+ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bbd65d11b26d9b35000e4acbe4d28a585f8ddc
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472697"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286556"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Optionen zum Debuggen
 
@@ -89,7 +89,7 @@ Unter den Bedingungen 2 und 3 wird die Ausnahme gelegentlich von verwaltetem Cod
 
 - **Für alle Quellenlinkanforderungen Fallback auf die Authentifizierung über die Git-Anmeldeinformationsverwaltung durchführen**:   Wenn die Quelllinkunterstützung aktiviert ist und bei der Authentifizierung einer Quelllinkanforderung ein Fehler auftritt, ruft Visual Studio den Git Credential Manager auf.
 
-**Bei Haltepunkten und aktueller Anweisung gesamte Zeile markieren (nur C++)** : Wenn der Debugger einen Haltepunkt oder die aktuelle Anweisung hervorhebt, wird die ganze Zeile hervorgehoben.
+**Bei Haltepunkten und aktueller Anweisung gesamte Quellzeile markieren (nur C++)** : Wenn der Debugger einen Haltepunkt oder die aktuelle Anweisung hervorhebt, wird die ganze Zeile hervorgehoben.
 
 **Quelldateien müssen exakt mit der Originalversion übereinstimmen**: Fordert den Debugger auf, zu prüfen, ob die Quelldatei mit der Version des Quellcodes übereinstimmt, mit dem die ausführbare Datei erstellt wurde, die Sie debuggen. Wenn die Version nicht übereinstimmt, werden Sie aufgefordert, eine übereinstimmende Quelle zu suchen. Wenn keine übereinstimmende Quelle gefunden wird, wird der Quellcode während des Debuggens nicht angezeigt.
 
@@ -101,11 +101,9 @@ Unter den Bedingungen 2 und 3 wird die Ausnahme gelegentlich von verwaltetem Cod
 
 **JavaScript-Debugging für ASP.NET aktivieren (Chrome, Microsoft Edge und IE)** : Aktiviert den Skriptdebugger für ASP.NET-Apps. Bei der ersten Verwendung in Chrome müssen Sie sich möglicherweise beim Browser anmelden, um Chrome-Erweiterungen zu aktivieren, die Sie installiert haben. Deaktivieren Sie diese Option, um zum Legacy-Verhalten zurückzukehren.
 
-**Microsoft Edge-Entwicklertools für UWP-JavaScript-Apps aktivieren (experimentell)** : Aktiviert Entwicklertools für UWP-JavaScript-Apps in Microsoft Edge.
-
-**Legacy-Chrome-JavaScript-Debugger für ASP.NET aktivieren**: Aktiviert den Legacy-JavaScript-Skriptdebugger von Chrome für ASP.NET-Apps. Bei der ersten Verwendung in Chrome müssen Sie sich möglicherweise beim Browser anmelden, um Chrome-Erweiterungen zu aktivieren, die Sie installiert haben.
-
-**Bei der Ausführung von Visual Studio als Administrator experimentelle Möglichkeit zum Starten des Chrome-JavaScript-Debuggens verwenden**: Weist Visual Studio an, eine neue Methode zum Starten von Chrome während des JavaScript-Debuggens auszuprobieren.
+::: moniker range=">= vs-2019"
+**Verwendung des JavaScript-Debuggers mit mehreren Zielen zum Debuggen von JavaScript in anwendbaren Zielen aktivieren (erfordert Neustart des Debuggens)** Ermöglicht die gleichzeitige Verbindung mit dem Browser und dem Back-End, sodass Sie Ihren im Client und auf dem Server ausgeführten Code direkt im Editor debuggen können.
+::: moniker-end
 
 **DLL-Exporte laden (nur native)** : Lädt DLL‑Exporttabellen. Symbolinformationen aus DLL-Exporttabellen sind hilfreich, wenn Sie mit Windows-Meldungen, Windows-Prozeduren (WindowProcs), COM-Objekten, Marshalling oder DLLs arbeiten, für die Sie keine Symbole haben. Durch das Lesen von DLL-Exportinformationen fällt etwas Verwaltungsaufwand an. Deshalb ist diese Funktion standardmäßig deaktiviert.
 
@@ -124,7 +122,9 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 > [!NOTE]
 > Durch Auswählen des verwalteten Kompatibilitätsmodus werden einige Funktionen deaktiviert, die nur in der standardmäßigen Debug-Engine implementiert werden. Die Legacy-Debug-Engine wurde in Visual Studio 2012 ersetzt.
 
+::: moniker range="vs-2017"
 **Die älteren C#- and VB-Ausdrucksauswertungen verwenden**: Der Debugger verwendet anstelle der Visual Studio 2015 Roslyn-basierten Ausdrucksauswertungen die Visual Studio 2013 C# oder Visual Basic-Ausdrucksauswertungen.
+::: moniker-end
 
 **Warnen, wenn benutzerdefinierte Debugger für die Anzeige potenziell unsicherer Prozesse verwendet werden (nur verwaltet)** : Visual Studio warnt Sie bei Verwendung einer benutzerdefinierten Debuggerschnellansicht, die im zu debuggenden Prozess Code ausführt, da es sich um unsicheren Code handeln könnte.
 
@@ -142,6 +142,9 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 - **Nur meine XAML aktivieren**: Ab Visual Studio 2019, Version 16.4, zeigt die **visuelle Echtzeitstruktur** standardmäßig nur XAML-Code an, der als Benutzercode klassifiziert ist. Wenn Sie diese Option deaktivieren, wird der gesamte generierte XAML-Code im Tool angezeigt.
 
 - **Bei Auswahl eines Elements Auswahlmodus deaktivieren**: Ab Visual Studio 2019, Version 16.4, wird die Elementauswahlschaltfläche der App-Symbolleiste (**Auswahl aktivieren**) deaktiviert, wenn ein Element ausgewählt wird. Wenn Sie diese Option deaktivieren, bleibt die Elementauswahl aktiviert, bis Sie erneut auf die Schaltfläche der App-Symbolleiste klicken.
+
+- **XAML Hot Reload beim Speichern des Dokuments anwenden** Ab Visual Studio 2019 Version 16.6 wird beim Speichern Ihres Dokuments XAML Hot Reload angewendet.
+
 ::: moniker-end
 
 **Diagnosetools beim Debuggen aktivieren**: Das Fenster **Diagnosetools** wird während des Debuggens angezeigt.
@@ -162,15 +165,25 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 
 ::: moniker range=">= vs-2019"
 **Schnelle Ausdrucksauswertung aktivieren (nur verwaltet)** : Ermöglicht es dem Debugger, eine schnellere Auswertung zu versuchen, indem er die Ausführung einfacher Eigenschaften und Methoden simuliert.
+
+**Debugsymbole in externem Prozess laden (nur nativ)** Aktiviert diese [Arbeitsspeicheroptimierung](https://devblogs.microsoft.com/cppblog/out-of-process-debugger-for-c-in-visual-studio-2019/) beim Debuggen.
+
+**Visual Studio beim Wechsel zum Debugger in den Vordergrund rücken** Schaltet Visual Studio in den Vordergrund um, wenn Sie im Debugger anhalten.
 ::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>In älteren Versionen von Visual Studio verfügbare Optionen
 
 Wenn Sie eine ältere Version von Visual Studio verwenden, sind möglicherweise einige zusätzliche Optionen vorhanden.
 
+**Microsoft Edge-Entwicklertools für UWP-JavaScript-Apps aktivieren (experimentell)** : Aktiviert Entwicklertools für UWP-JavaScript-Apps in Microsoft Edge.
+
+**Legacy-Chrome-JavaScript-Debugger für ASP.NET aktivieren**: Aktiviert den Legacy-JavaScript-Skriptdebugger von Chrome für ASP.NET-Apps. Bei der ersten Verwendung in Chrome müssen Sie sich möglicherweise beim Browser anmelden, um Chrome-Erweiterungen zu aktivieren, die Sie installiert haben.
+
 **Ausnahmen-Assistent aktivieren**: Aktiviert für verwalteten Code den Ausnahme-Assistenten. Ab Visual Studio 2017 ersetzte die Ausnahmen-Hilfe den Ausnahme-Assistenten.
 
 **Aufrufliste für Ausnahmefehler entladen**: Führt dazu, dass das Fenster **Aufrufliste** die Aufrufliste an den Punkt zurücksetzt, bevor der Ausnahmefehler aufgetreten ist.
+
+**Bei der Ausführung von Visual Studio als Administrator experimentelle Möglichkeit zum Starten des Chrome-JavaScript-Debuggens verwenden**: Weist Visual Studio an, eine neue Methode zum Starten von Chrome während des JavaScript-Debuggens auszuprobieren.
 
 **Warnung, wenn keine Symbole beim Starten gefunden werden (nur nativ)** : Zeigt eine Warnungsdialogfeld an, wenn Sie ein Programm debuggen, für das der Debugger keine Symbolinformationen hat.
 

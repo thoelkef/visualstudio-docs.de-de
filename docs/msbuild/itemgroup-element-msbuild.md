@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173511"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288974"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup-Element (MSBuild)
 
@@ -51,7 +51,7 @@ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeor
 |Attribut|Beschreibung|
 |---------------|-----------------|
 |`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
-|`Label`|Optionales Attribut. Identifiziert die `ItemGroup`.|
+|`Label`|Optionales Attribut. Identifiziert die `ItemGroup`. |
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -90,6 +90,8 @@ Im folgenden Codebeispiel werden die benutzerdefinierten Elementsammlungen `Res`
 In einer einfachen Projektdatei verwenden Sie normalerweise ein einzelnes `ItemGroup`-Element, Sie können aber auch mehrere `ItemGroup`-Elemente verwenden. Wenn mehrere `ItemGroup`-Elemente verwendet werden, werden Elemente in einer einzelnen `ItemGroup`kombiniert. Beispielsweise können einige Elemente in einem separaten `ItemGroup`-Element enthalten sein, das in einer importierten Datei definiert wird.
 
 Auf ItemGroups können Bedingungen mithilfe des `Condition`-Attributs angewendet werden. In diesem Fall werden die Elemente der Elementliste nur dann hinzugefügt, wenn die Bedingung erfüllt ist. Weitere Informationen finden Sie unter [MSBuild-Bedingungen](msbuild-conditions.md).
+
+Das Attribut `Label` wird in einigen Buildsystemen als Möglichkeit zur Steuerung des Buildverhaltens verwendet. Sie können es nur in Deklarationen als eine Möglichkeit nutzen, um verständlichere MSBuild-Skripts zu erstellen, oder als eine Steuerungseinstellung, um Buildaktionen zu beeinflussen.
 
 ## <a name="see-also"></a>Siehe auch
 

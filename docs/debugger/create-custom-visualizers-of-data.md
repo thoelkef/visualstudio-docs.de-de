@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184548"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280875"
 ---
 # <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Datenschnellansichten
+
  Eine *Schnellansicht* ist Teil der Benutzeroberfläche des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debuggers, in der eine Variable oder ein Objekt auf eine für den jeweiligen Datentyp geeignete Weise angezeigt wird. Eine HTML-Schnellansicht interpretiert beispielsweise eine HTML-Zeichenfolge und zeigt das Ergebnis so an, wie es in einem Browserfenster angezeigt würde. Eine Bitmap-Schnellansicht interpretiert eine Bitmapstruktur und zeigt die zugehörige Grafik an. In einigen Schnellansichten können Sie die Daten nicht nur anzeigen, sondern auch bearbeiten.
 
  Der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Debugger beinhaltet sechs Standardschnellansichten. Die Text-, HTML-, XML-und JSON-Schnellansichten funktionieren bei Zeichenfolgenobjekten. Die WPF-Strukturschnellansicht zeigt die Eigenschaften der visuellen Struktur eines WPF-Objekts an. Die DataSet-Schnellansicht funktioniert für DataSet-, DataView- und DataTable-Objekte.
@@ -74,11 +75,23 @@ Zum Erstellen der Benutzeroberfläche der Schnellansicht auf Debuggerseite erste
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>So erstellen Sie die Schnellansichtobjektquelle für die zu debuggende Seite
 
-Sie geben den zu visualisierenden Typ (die Objektquelle der zu debuggenden Seite) an, indem Sie das <xref:System.Diagnostics.DebuggerVisualizerAttribute>-Element im debuggerseitigen Code verwenden.
+Bearbeiten Sie im debuggerseitigen Code das Element <xref:System.Diagnostics.DebuggerVisualizerAttribute>, indem Sie ihm den zu visualisierenden Typ angeben (die zu debuggende Objektquelle) (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Die `Target`-Eigenschaft legt die Objektquelle fest. Wenn Sie die Objektquelle weglassen, wird eine Standardobjektquelle für die Schnellansicht verwendet.
 
-1. Bearbeiten Sie im debuggerseitigen Code das <xref:System.Diagnostics.DebuggerVisualizerAttribute>-Element, indem Sie die Objektquelle (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) bereitstellen. Die `Target`-Eigenschaft legt die Objektquelle fest. Wenn Sie die Objektquelle weglassen, wird eine Standardobjektquelle für die Schnellansicht verwendet.
+::: moniker range=">=vs-2019"
+Der zu debuggende Code enthält die Objektquelle, die visualisiert wird. Das Datenobjekt kann Methoden von <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> überschreiben. Eine zu debuggende DLL ist erforderlich, wenn Sie eine eigenständige Schnellansicht erstellen möchten.
+::: moniker-end
 
-1. Damit Sie in der Schnellansicht Datenobjekte sowohl anzeigen als auch bearbeiten können, überschreiben Sie die `TransferData`- oder `CreateReplacementObject`-Methode von <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+Im zu debuggenden Code:
+
+- Damit Sie in der Schnellansicht Datenobjekte bearbeiten können, muss die Objektquelle von <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> erben und die Methoden `TransferData` oder `CreateReplacementObject` überschreiben.
+
+- Wenn Sie in Ihrer Schnellansicht mehrere Ziele unterstützen müssen, können Sie die folgenden Zielframeworkmoniker (Target Framework Monikers, TFMs) in die zu debuggende Projektdatei einfügen.
+
+   ```xml
+   <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+   ```
+
+   Dies sind die einzigen unterstützten TFMs.
 
 ## <a name="see-also"></a>Siehe auch
 

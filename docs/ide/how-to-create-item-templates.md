@@ -1,22 +1,22 @@
 ---
 title: Erstellen von Elementvorlagen
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594720"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284476"
 ---
 # <a name="how-to-create-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen
 
-In diesem Artikel wird erläutert, wie Sie eine Elementvorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.
+In diesem Artikel wird erläutert, wie Sie eine Elementvorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie im Artikel [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.
 
 ## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Hinzufügen einer Elementvorlage zum Dialogfeld „Neues Element hinzufügen“
 
@@ -133,8 +133,8 @@ In einigen Fällen sollten Sie eine Elementvorlage manuell von Grund auf neu ers
 
 ::: moniker-end
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md)
+- [How to: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md)
 - [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)

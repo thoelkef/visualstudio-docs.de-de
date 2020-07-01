@@ -1,8 +1,8 @@
 ---
-title: '&lt;AppAddin&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;appAddin- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2116576acb06e6291749d9c0176fcf4ebb426739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953243"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531637"
 ---
-# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;AppAddin&gt; -Element (Office-Entwicklung in Visual Studio)
-  Die **AppAddin** Element der `vstov4` Namespace werden anpassungsspezifische Informationen für VSTO-Add-ins gespeichert.
+# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin- &gt; Element (Office-Entwicklung in Visual Studio)
+  Im **appAddin** -Element des- `vstov4` Namespace werden Anpassungs spezifische Informationen für VSTO-Add-Ins gespeichert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,31 +37,31 @@ ms.locfileid: "62953243"
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die **AppAddin** Element ist erforderlich und befindet sich in der `vstov4` Namespace. Es gibt nur ein **AppAddin** Elements, das in einem Anwendungsmanifest definiert.
+ Das **appAddin** -Element ist erforderlich und befindet sich im- `vstov4` Namespace. In einem Anwendungs Manifest ist nur ein **appAddin** -Element definiert.
 
- Die **AppAddin** Element weist folgende Attribute.
+ Das **appAddin** -Element verfügt über die folgenden Attribute.
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
-|**application**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Der Wert kann in folgenden Formen vorliegen: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|
-|**loadBehavior**|Dies ist optional. In der Standardeinstellung die **LoadBehavior** ist aktiviert, wenn dieser Wert auf. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle LoadBehavior-Werte in [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**application**|Erforderlich. Identifiziert die Microsoft Office-Anwendung. Einer der folgenden Werte ist möglich: Excel, InfoPath, Outlook, PowerPoint, Project, Visio oder Word.|
+|**LoadBehavior**|Dies ist optional. Standardmäßig wird **LoadBehavior** aktiviert, indem dieser Wert auf festgelegt wird. Zum Debuggen kann das VSTO-Add-In deaktiviert werden, indem der Wert auf 2 festgelegt wird. Weitere Informationen finden Sie in der Tabelle mit dem Namen LoadBehavior-Werte in [Registrierungs Einträgen für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
 |**keyName**|Erforderlich. Dieser Wert ist der Name des Registrierungsschlüssels, der von der Anwendung zum Laden des VSTO-Add-Ins verwendet wird. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|
 
- Die **AppAddin** Element hat die folgenden untergeordneten Elemente.
+ Das **appAddin** -Element verfügt über die folgenden untergeordneten Elemente.
 
 ### <a name="friendlyname"></a>friendlyName
- Dies ist optional. Die **FriendlyName** Element wird in erläutert [ &#60;FriendlyName&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
+ Dies ist optional. Das **FriendlyName** -Element wird in [&#60;FriendlyName&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)erläutert.
 
 ### <a name="description"></a>description
- Dies ist optional. Die **Beschreibung** Element wird in erläutert [ &#60;Beschreibung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).
+ Dies ist optional. Das **Description** -Element wird in [&#60;Description&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)erläutert.
 
 ### <a name="formregions"></a>formRegions
- Nur für Outlook-VSTO-Add-Ins erforderlich, die Formularbereiche enthalten. Die **FormRegions** Element wird in erläutert [ &#60;FormRegions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).
+ Nur für Outlook-VSTO-Add-Ins erforderlich, die Formularbereiche enthalten. Das **FormRegions** -Element wird in [&#60;FormRegions&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)erläutert.
 
-## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in
+## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-in
 
 ### <a name="description"></a>Beschreibung
- Im folgenden Codebeispiel wird veranschaulicht, **AppAddin** Elemente in einer Outlook-Projektmappe bereitgestellt, mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+ Im folgenden Codebeispiel werden **appAddin** -Elemente in einer mit bereitgestellten Outlook-Projekt Mappe veranschaulicht [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -90,6 +90,6 @@ ms.locfileid: "62953243"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

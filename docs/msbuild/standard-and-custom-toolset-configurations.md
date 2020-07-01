@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef5a84285afdaa429606937f3e537863b060ec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632160"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289182"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
 
@@ -29,10 +29,10 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
 
 |ToolsVersion|Toolsetpfad (wie in der MSBuildToolsPath- oder MSBuildBinPath-Eigenschaft des Builds angegeben)|
 |------------------| - |
-|2.0|*\<Windows-Installationspfad>\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Windows-Installationspfad>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Windows-Installationspfad>\Microsoft.NET\Framework\v4.0.30319\\*|
-|Aktuell|*\<Visual Studio-Installationspfad>\MSBuild\Current\bin*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|Aktuell|*\<Visual Studio installation path>\MSBuild\Current\bin*|
 
  Der `ToolsVersion`-Wert bestimmt, welches Toolset von einem Projekt verwendet wird, das von Visual Studio generiert wird. In Visual Studio 2019 ist der Standardwert unabhängig von der in der Projektdatei angegebenen Version immer „Current“. Sie können dieses Attribut jedoch mit der Option **/toolsversion** in einer Eingabeaufforderung überschreiben. Weitere Informationen über dieses Attribut und andere Methoden, `ToolsVersion` anzugeben, finden Sie unter [Überschreiben von ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).
 
@@ -43,10 +43,10 @@ Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie ve
 
 |ToolsVersion|Toolsetpfad (wie in der MSBuildToolsPath- oder MSBuildBinPath-Eigenschaft des Builds angegeben)|
 |------------------| - |
-|2.0|*\<Windows-Installationspfad>\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Windows-Installationspfad>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Windows-Installationspfad>\Microsoft.NET\Framework\v4.0.30319\\*|
-|15.0|*\<Visual Studio-Installationspfad>\MSBuild\15.0\bin*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|15.0|*\<Visual Studio installation path>\MSBuild\15.0\bin*|
 
  Der `ToolsVersion`-Wert bestimmt, welches Toolset von einem Projekt verwendet wird, das von Visual Studio generiert wird. In Visual Studio 2017 ist der Standardwert unabhängig von der in der Projektdatei angegebenen Version immer „15.0“. Sie können dieses Attribut jedoch mit der Option **/toolsversion** in einer Eingabeaufforderung überschreiben. Weitere Informationen über dieses Attribut und andere Methoden, `ToolsVersion` anzugeben, finden Sie unter [Überschreiben von ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).
  ::: moniker-end
@@ -102,10 +102,7 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
 > [!NOTE]
 > Richtig gelesen ist `<configSections>` der erste Unterabschnitt im Abschnitt `<configuration>`.
 
- `ToolsetConfigurationSection` ist ein benutzerdefinierter Konfigurationsabschnitt, der von jedem MSBuild-Host für die benutzerdefinierte Konfiguration verwendet werden kann. Wenn Sie ein benutzerdefiniertes Toolset verwenden, muss ein Host keine Aktionen durchführen, um die Build-Engine zu initialisieren, sondern nur die Einträge in der Konfigurationsdatei zur Verfügung stellen. Indem Sie Einträge in der Registrierung definieren, können Sie computerübergreifende Toolsets angeben, die für *MSBuild.exe*, Visual Studio und alle Hosts von MSBuild angewendet werden können.
-
-> [!NOTE]
-> Wenn in einer Konfigurationsdatei die Einstellungen für eine `ToolsVersion` definiert werden, die bereits in der Registrierung definiert ist, werden diese beiden Definitionen nicht zusammengeführt. Die Definition in der Konfigurationsdatei hat Priorität, und die Einstellungen in der Registrierung für diese `ToolsVersion` werden ignoriert.
+ `ToolsetConfigurationSection` ist ein benutzerdefinierter Konfigurationsabschnitt, der von jedem MSBuild-Host für die benutzerdefinierte Konfiguration verwendet werden kann. Wenn Sie ein benutzerdefiniertes Toolset verwenden, muss ein Host keine Aktionen durchführen, um die Build-Engine zu initialisieren, sondern nur die Einträge in der Konfigurationsdatei zur Verfügung stellen.
 
  Die folgenden Eigenschaften sind für den Wert der `ToolsVersion`, die in Projekten verwendet wird, spezifisch:
 

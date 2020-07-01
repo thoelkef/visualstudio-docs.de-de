@@ -1,7 +1,7 @@
 ---
 title: Anfügen an laufende Prozesse mit dem Debugger | Microsoft-Dokumentation
 ms.custom: seodec18
-ms.date: 04/14/2020
+ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,14 +28,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385491"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281005"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
+
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, wählen Sie **Debuggen** > **An den Prozess anhängen** aus, oder drücken Sie in Visual Studio **STRG**+**ALT**+**P**, und verwenden Sie das Dialogfeld **An den Prozess anhängen**, um den Debugger an den Prozess anzuhängen.
 
 Sie können **An den Prozess anhängen** verwenden, um laufende Apps auf lokalen oder Remotecomputern zu debuggen, um mehrere Prozesse gleichzeitig zu debuggen, um Apps zu debuggen, die nicht in Visual Studio erstellt wurden, oder um Apps zu debuggen, die Sie nicht von Visual Studio aus mit dem angehängten Debugger gestartet haben. Wenn Sie z. B. eine App ohne den Debugger ausführen und eine Ausnahme auslösen, dann können Sie den Debugger an den Prozess anhängen, der die App ausführt, und mit dem Debuggen beginnen.
@@ -47,21 +48,19 @@ Sie können **An den Prozess anhängen** verwenden, um laufende Apps auf lokalen
 
 Informationen zum schnellen erneuten Anhängen an einen Prozess, an den Sie zuvor angehängt haben, finden Sie unter [Erneutes Anhängen an einen Prozess](#BKMK_reattach).
 
-Informationen zum Debuggen eines Prozesses auf einem Remotecomputer finden Sie unter [Anhängen an einen Prozess auf einem Remotecomputer](#BKMK_Attach_to_a_process_on_a_remote_computer).
-
-::: moniker range=">= vs-2019"
-Informationen zum Debuggen eines .NET Core-Prozesses in einem Linux-Docker-Container finden Sie unter [Anhängen an einen Linux-Docker-Container](#BKMK_Linux_Docker_Attach).
-::: moniker-end
-
 **So hängen Sie einen Prozess auf dem lokalen Computer an**
 
 1. Wählen Sie in Visual Studio **Debuggen** > **An den Prozess anhängen** aus (oder drücken Sie **STRG**+**ALT**+**P**), um das Dialogfeld **An den Prozess anhängen** zu öffnen.
 
-   **Verbindungstyp** sollte auf **Standard** festgelegt werden. **Verbindungsziel** sollte Ihr lokaler Computername sein.
+1. Überprüfen Sie den **Verbindungstyp**.
+
+   In den meisten Szenarien können Sie **Standard** verwenden. Für einige Szenarien ist möglicherweise ein anderer Verbindungstyp erforderlich. Weitere Informationen finden Sie in den anderen Abschnitten dieses Artikels oder unter [ Allgemeine Debugszenarien](#BKMK_Scenarios).
+
+1. Legen Sie **Verbindungsziel** auf den Namen Ihres lokalen Computers fest.
 
    ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
 
-2. Suchen und wählen Sie in der Liste **Verfügbare Prozesse** den Prozess oder die Prozesse aus, die Sie anhängen möchten.
+1. Suchen und wählen Sie in der Liste **Verfügbare Prozesse** den Prozess oder die Prozesse aus, die Sie anhängen möchten.
 
    - Geben Sie zur schnellen Auswahl eines Prozesses seinen Namen oder den Anfangsbuchstaben in das Feld **Prozesse filtern** ein.
 
@@ -70,15 +69,18 @@ Informationen zum Debuggen eines .NET Core-Prozesses in einem Linux-Docker-Conta
    >[!TIP]
    >Prozesse können im Hintergrund gestartet und beendet werden, während das Dialogfeld **An den Prozess anhängen** geöffnet ist, sodass die Liste der aktiven Prozesse möglicherweise nicht immer aktuell ist. Sie können jederzeit **Aktualisieren** auswählen, um die aktuelle Liste anzuzeigen.
 
-3. Stellen Sie sicher, dass im Feld **Anfügen an** der Typ des zu debuggenden Codes aufgeführt ist. Die Standardeinstellung **Automatisch** funktioniert für die meisten App-Typen.
+1. Stellen Sie sicher, dass im Feld **Anfügen an** der Typ des zu debuggenden Codes aufgeführt ist. Die Standardeinstellung **Automatisch** funktioniert für die meisten App-Typen.
+
+   Wenn Sie den Verbindungstyp **Standard** verwenden, können Sie den Typ des Codes, den Sie anfügen möchten, manuell auswählen. Andernfalls ist die Option **Auswählen** möglicherweise deaktiviert.
 
    So wählen Sie Codetypen manuell aus
    1. Klicken Sie auf **Auswählen**.
    1. Wählen Sie im Dialogfeld **Codetyp auswählen** die Option **Diese Codetypen debuggen** aus.
+      Wenn beim Versuch, einen Prozess in der Liste anzufügen, ein Fehler auftritt, können Sie das Dialogfeld [Codetyp auswählen](../debugger/select-code-type-dialog-box.md) verwenden, um die [Problembehandlung](#BKMK_Troubleshoot_attach_errors) zu erleichtern.
    1. Wählen Sie die zu debuggenden Codetypen aus.
    1. Klicken Sie auf **OK**.
 
-4. Wählen Sie **Anfügen** aus.
+1. Wählen Sie **Anfügen** aus.
 
 >[!NOTE]
 >Sie können zum Debuggen an mehrere Apps angefügt werden, aber jeweils nur eine App ist im Debugger aktiv. Sie können die aktive App auf der Visual Studio-Symbolleiste **Debugspeicherort** oder im Fenster **Prozesse** festlegen.
@@ -93,12 +95,16 @@ Ausführlichere Anweisungen zum Debuggen von ASP.NET-Anwendungen, die für IIS b
 
 1. Wählen Sie in Visual Studio **Debuggen** > **An den Prozess anhängen** aus (oder drücken Sie **STRG**+**ALT**+**P**), um das Dialogfeld **An den Prozess anhängen** zu öffnen.
 
-2. **Verbindungstyp** sollte in den meisten Fällen **Standard** sein. Wählen Sie im Feld **Verbindungsziel** den Remotecomputer mit einer der folgenden Methoden aus:
+1. Überprüfen Sie den **Verbindungstyp**.
+
+   In den meisten Szenarien können Sie **Standard** verwenden. Einige Szenarien wie das Debuggen von Linux oder einer Containeranwendung erfordern einen anderen Verbindungstyp. Weitere Informationen finden Sie in den anderen Abschnitten dieses Artikels oder unter [ Allgemeine Debugszenarien](#BKMK_Scenarios).
+
+1. Wählen Sie im Feld **Verbindungsziel** den Remotecomputer mit einer der folgenden Methoden aus:
 
    - Wählen Sie den Dropdownpfeil neben **Verbindungsziel** und dann den Computernamen aus der Dropdownliste aus.
    - Geben Sie den Computernamen in das Feld **Verbindungsziel** ein, und drücken Sie die **EINGABETASTE**.
 
-     Vergewissern Sie sich, dass Visual Studio den erforderlichen Port dem Computernamen hinzufügt, der im folgenden Format angezeigt wird: **\<Remotecomputername>:Port**.
+     Vergewissern Sie sich, dass Visual Studio den erforderlichen Port dem Computernamen hinzufügt, der im folgenden Format angezeigt wird: **\<remote computer name>:port**.
 
      ::: moniker range=">= vs-2019"
 
@@ -136,10 +142,12 @@ Ausführlichere Anweisungen zum Debuggen von ASP.NET-Anwendungen, die für IIS b
 
 5. Stellen Sie sicher, dass im Feld **Anfügen an** der Typ des zu debuggenden Codes aufgeführt ist. Die Standardeinstellung **Automatisch** funktioniert für die meisten App-Typen.
 
+   Wenn Sie den Verbindungstyp **Standard** verwenden, können Sie den Typ des Codes, den Sie anfügen möchten, manuell auswählen. Andernfalls ist die Option **Auswählen** möglicherweise deaktiviert.
+
    So wählen Sie Codetypen manuell aus
    1. Klicken Sie auf **Auswählen**.
    1. Wählen Sie im Dialogfeld **Codetyp auswählen** die Option **Diese Codetypen debuggen** aus.
-   1. Wählen Sie die zu debuggenden Codetypen aus.
+      Wenn beim Versuch, einen Prozess in der Liste anzufügen, ein Fehler auftritt, können Sie das Dialogfeld [Codetyp auswählen](../debugger/select-code-type-dialog-box.md) verwenden, um die [Problembehandlung](#BKMK_Troubleshoot_attach_errors) zu erleichtern.
    1. Klicken Sie auf **OK**.
 
 6. Wählen Sie **Anfügen** aus.
@@ -152,7 +160,6 @@ In einigen Fällen werden beim Debuggen in einer Remotedesktopsitzung (Terminald
 Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit den Prozess anfügen, indem Sie `vsjitdebugger.exe -p <ProcessId>` in der Windows-Befehlszeile ausführen. Die Prozess-ID kann mit *tlist.exe* ermittelt werden. Laden Sie die Debugtools für Windows unter [WDK and WinDbg downloads (Herunterladen von WDK und WinDbg)](/windows-hardware/drivers/download-the-wdk) herunter, um *tlist.exe* abzurufen.
 
 ::: moniker range=">= vs-2019"
-
 
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Anfügen an einen .NET Core-Prozess unter Linux mit SSH
 
@@ -264,7 +271,8 @@ Um schnell einen aktiven Prozess zum Anhängen auszuwählen, geben Sie in Visual
 |Debuggen clientseitiger Skripts auf einem lokalen IIS-Server, für unterstützte App-Typen |Verwenden von **An den Prozess anhängen**|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Skriptdebugging muss aktiviert sein. Für Chrome müssen Sie Chrome auch im Debugmodus ausführen (geben Sie `chrome.exe --remote-debugging-port=9222` von der Befehlszeile aus ein) und **JavaScript (Chrome)** im Feld **Anfügen** auswählen.|
 |Debuggen einer C#-, Visual Basic- oder C++-App auf dem lokalen Computer|Verwenden Sie entweder das Standarddebuggen (**F5**) oder **An den Prozess anhängen**.|*\<appname>.exe*|Verwenden Sie in den meisten Szenarien das Standarddebuggen und nicht **An den Prozess anhängen**.|
 |Remotedebuggen einer Windows-Desktop-App|Remotetools|Nicht zutreffend| Weitere Informationen finden Sie unter [Remotedebuggen einer C#- oder Visual Basic-App](../debugger/remote-debugging-csharp.md) oder [Remotedebuggen einer C++-App](../debugger/remote-debugging-cpp.md).|
-|Debuggen von .NET Core unter Linux|Verwenden von **An den Prozess anhängen**|*dotnet.exe*|Weitere Informationen zur Verwendung von SSH finden Sie unter [Remotedebuggen von .NET Core unter Linux mit SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |
+|Debuggen von .NET Core unter Linux|Verwenden von **An den Prozess anhängen**|*dotnet.exe*|Weitere Informationen zur Verwendung von SSH finden Sie unter [Remotedebuggen von .NET Core unter Linux mit SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Informationen zu Containeranwendungen finden Sie in den Abschnitten weiter oben in diesem Artikel.|
+|Remotedebuggen von Python unter Linux|Verwenden von **An den Prozess anhängen**|*debugpy*|Weitere Informationen finden Sie unter [Remoteanfügen über Python Tools](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools).|
 |Debuggen einer ASP. NET-App auf dem lokalen Computer, nachdem Sie die App ohne den Debugger gestartet haben|Verwenden von **An den Prozess anhängen**|*iiexpress.exe*|Dies kann hilfreich sein, damit Ihre App schneller geladen wird, z. B. bei der Profilerstellung. |
 |Debuggen anderer unterstützter App-Typen für einen Serverprozess|Wenn es sich um einen Remoteserver handelt, verwenden Sie Remotetools und **An den Prozess anhängen**.|*chrome.exe*, *iexplore.exe* oder andere Prozesse|Verwenden Sie bei Bedarf den Ressourcenmonitor, um den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote debugging (Remotedebuggen)](../debugger/remote-debugging.md).|
 |Remotedebuggen einer UWP- (Universelle Windows-App), OneCore-, HoloLens- oder IoT-App|Installiertes App-Paket debuggen|Nicht zutreffend|Weitere Informationen finden Sie unter [Debuggen eines installierten App-Pakets](debug-installed-app-package.md), anstatt **An den Prozess anhängen** zu verwenden.|
@@ -279,17 +287,23 @@ Für Remotedebuggingszenarien müssen Sie den Quellcode (oder eine Kopie des Que
 In einigen lokalen Debugszenarien können Sie in Visual Studio ohne Zugriff auf die Quelle debuggen, wenn die richtigen Symboldateien für die App vorhanden sind. Standardmäßig ist hierfür ein Debugbuild erforderlich. Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="troubleshoot-attach-errors"></a><a name="BKMK_Troubleshoot_attach_errors"></a> Beheben von Fehlern beim Anfügen
- Wenn der Debugger an einen laufenden Prozess angehängt wird, kann dieser Prozess mehrere Codetypen enthalten. Die Codetypen, an die der Debugger angefügt werden kann, werden im Dialogfeld **Codetyp auswählen** angezeigt und ausgewählt.
 
- Manchmal kann der Debugger erfolgreich an den einen Codetyp, nicht aber an den anderen Codetyp angehängt werden. Das kann bei dem Versuch vorkommen, den Debugger an einen Prozess anzufügen, der auf einem Remotecomputer ausgeführt wird. Auf dem Remotecomputer sind möglicherweise nur Remotedebugkomponenten für bestimmte Codetypen installiert. Das Gleiche kann passieren, wenn Sie versuchen, den Debugger an mehr als einen Prozess zum direkten Datenbankdebuggen anzufügen. SQL-Debuggen unterstützt lediglich das Anfügen an einen einzelnen Prozess.
+In einigen Szenarien kann der Debugger Hilfe benötigen, um den Typ des zu debuggenden Codes ordnungsgemäß zu bestimmen. Wenn die Verbindungswerte zwar richtig festgelegt sind (Sie können den ordnungsgemäßen Prozess in der Liste **Verfügbare Prozesse** einsehen), der Debugger aber nicht angefügt werden kann, versuchen Sie, in der Liste **Verbindungstyp** den geeignetsten Verbindungstyp auszuwählen. Dies kann beispielsweise erforderlich sein, wenn Sie eine Linux- oder Python-App debuggen. Bei Verwendung des Verbindungstyps „Standard“ können Sie alternativ den spezifischen Typ des Codes auswählen, mit dem eine Verbindung hergestellt werden soll, wie weiter unten in diesem Abschnitt beschrieben.
 
- Wenn der Debugger nur an bestimmte, nicht aber an alle Codetypen angefügt werden kann, wird eine Meldung mit den Typen angezeigt, die nicht angefügt werden konnten.
+Wenn der Debugger an einen laufenden Prozess angehängt wird, kann dieser Prozess mehrere Codetypen enthalten. Die Codetypen, an die der Debugger angefügt werden kann, werden im Dialogfeld [Codetyp auswählen](../debugger/select-code-type-dialog-box.md) angezeigt und ausgewählt.
 
- Wenn der Debugger erfolgreich an mindestens einen Codetyp angehängt werden kann, können Sie mit dem Debuggen des Prozesses fortfahren. Sie können nur die erfolgreich angehängten Codetypen debuggen. Der nicht angefügte Code im Prozess wird zwar weiterhin ausgeführt, doch Sie wären nicht in der Lage, Haltepunkte festzulegen, Daten anzuzeigen oder andere Debugoperationen für diesen Code durchzuführen.
+Manchmal kann der Debugger erfolgreich an den einen Codetyp, nicht aber an den anderen Codetyp angehängt werden. Dies tritt normalerweise in den folgenden Fällen auf:
 
- Um weitere Informationen darüber zu erhalten, warum der Debugger nicht an einen Codetyp angefügt werden konnte, versuchen Sie erneut, den Debugger nur an diesen Codetyp anzufügen.
+- Sie versuchen das Anfügen an einen Prozess, der auf einem Remotecomputer läuft. Auf dem Remotecomputer sind möglicherweise nur Remotedebugkomponenten für bestimmte Codetypen installiert.
+- Sie versuchen, den Debugger zum direkten Datenbankdebuggen an mehr als einen Prozess anzufügen. SQL-Debuggen unterstützt lediglich das Anfügen an einen einzelnen Prozess.
 
- **So erhalten Sie Informationen darüber, warum ein bestimmter Codetyp nicht angehängt werden konnte:**
+Wenn der Debugger nur an bestimmte, nicht aber an alle Codetypen angefügt werden kann, wird eine Meldung mit den Typen angezeigt, die nicht angefügt werden konnten.
+
+Wenn der Debugger erfolgreich an mindestens einen Codetyp angehängt werden kann, können Sie mit dem Debuggen des Prozesses fortfahren. Sie können nur die erfolgreich angehängten Codetypen debuggen. Der nicht angefügte Code im Prozess wird zwar weiterhin ausgeführt, doch Sie wären nicht in der Lage, Haltepunkte festzulegen, Daten anzuzeigen oder andere Debugoperationen für diesen Code durchzuführen.
+
+Um weitere Informationen darüber zu erhalten, warum der Debugger nicht an einen Codetyp angefügt werden konnte, versuchen Sie erneut, den Debugger nur an diesen Codetyp anzufügen.
+
+**So erhalten Sie Informationen darüber, warum ein bestimmter Codetyp nicht angehängt werden konnte:**
 
 1. Trennen Sie den Prozess. Wählen Sie im Menü **Debuggen** die Option **Alle trennen** aus.
 

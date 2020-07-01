@@ -1,6 +1,6 @@
 ---
 title: Synchronisieren der Einstellungen
-ms.date: 12/10/2018
+ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566786"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285204"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronisieren von Visual Studio-Einstellungen auf mehreren Computern
 
@@ -49,14 +49,14 @@ Standardmäßig werden die folgenden Einstellungen synchronisiert:
 
 Die synchronisierten Einstellungen für Visual Studio sind standardmäßig aktiviert. Sie können die synchronisierten Einstellungen auf einem Computer deaktivieren, indem Sie auf der Seite **Extras** > **Optionen** > **Umgebung** > **Konten** das Kontrollkästchen **Einstellungen geräteübergreifend synchronisieren, solange Sie bei Visual Studio angemeldet sind** deaktivieren.
 
-Angenommen, Sie möchten, dass die Einstellungen von Visual Studio auf Computer „A“ nicht synchronisiert werden. So werden alle auf Computer „A“ vorgenommenen Änderungen weder auf Computer „B“ noch auf Computer „C“ angezeigt. Computer „B“ und Computer „C“ werden weiterhin miteinander synchronisiert, jedoch nicht mit Computer „A“.
+Angenommen, Sie möchten, dass die Einstellungen in Visual Studio auf Computer „A“ nicht synchronisiert werden. So werden alle auf Computer „A“ vorgenommenen Änderungen weder auf Computer „B“ noch auf Computer „C“ angezeigt. Computer „B“ und Computer „C“ werden weiterhin miteinander synchronisiert, jedoch nicht mit Computer „A“.
 
 > [!NOTE]
 > Wenn Sie die Einstellungen nicht synchronisieren, indem Sie die Option auf der Seite **Extras** > **Optionen** > **Umgebung** > **Konten** deaktivieren, sind andere Versionen oder Editionen von Visual Studio, die auf dem gleichen Computer installiert sind, nicht betroffen. Diese parallelen Installationen von Visual Studio synchronisieren ihre Einstellungen weiterhin (außer, Sie deaktivieren die Option auch für jede einzelne Version von Visual Studio).
 
-## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronisieren von Einstellungen mit allen Produkten und Editionen der Visual Studio-Familie
+## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Synchronisieren von Einstellungen mit allen Produkten und Editionen der Visual Studio IDE
 
-Einstellungen werden zwischen allen *parallel* installierten Versionen und Editionen von Visual Studio synchronisiert. Die Einstellungen werden ebenfalls in der gesamten Visual Studio-Produktfamilie synchronisiert, einschließlich Blend für Visual Studio. Ein einzelnes Produkt kann jedoch auch über eigene Einstellungen verfügen, die nicht mit Visual Studio geteilt werden. Beispielsweise werden für Blend für Visual Studio spezifische Einstellungen auf Computer „A“ nicht mit Visual Studio auf den Computern „A“ oder „B“ geteilt.
+Einstellungen werden zwischen allen *parallel* installierten Versionen und Editionen von Visual Studio synchronisiert. Die Einstellungen werden ebenfalls in allen Produkten der Visual Studio IDE synchronisiert, einschließlich Blend für Visual Studio. Eine einzelnes Produkt der Visual Studio IDE kann jedoch auch über eigene Einstellungen verfügen, die nicht mit Visual Studio gemeinsam genutzt werden. Beispielsweise werden für Blend für Visual Studio spezifische Einstellungen auf Computer „A“ nicht mit Visual Studio auf den Computern „A“ oder „B“ geteilt.
 
 ## <a name="side-by-side-synchronized-settings"></a>Parallel synchronisierte Einstellungen
 
@@ -89,8 +89,9 @@ Bestimmte Einstellungen wie das Layout des Toolfensters werden nicht zwischen ve
 
 Melden Sie sich bei Visual Studio an, und klicken Sie dann auf **Extras** > **Einstellungen importieren/exportieren**, um den **Assistenten zum Importieren und Exportieren von Einstellungen** zu öffnen und alle Einstellungen auf die Standardeinstellung zurückzusetzen. Klicken Sie auf **Alle Einstellungen zurücksetzen**, und führen Sie dann die restlichen Schritte des Assistenten aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Umgebungseinstellungen](../ide/environment-settings.md)
 - [Umgebung > Dialogfeld „Kontenoptionen“](reference/accounts-environment-options-dialog-box.md)
+- [Parallele Installation mehrerer Visual Studio-Versionen](../install/install-visual-studio-versions-side-by-side.md)

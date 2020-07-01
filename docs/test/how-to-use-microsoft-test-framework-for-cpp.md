@@ -2,18 +2,18 @@
 title: Verwenden des Microsoft-Komponententest-Frameworks für C++
 description: Verwenden Sie das Microsoft-Komponententestframework für C++, um Komponententests für Ihren C++-Code zu erstellen.
 ms.date: 01/08/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75755565"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287115"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -33,7 +33,7 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
    1. Klicken Sie im Dialogfeld „Eigenschaftenseiten“ auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse**.
 
-   1. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Bearbeiten>** aus. Fügen Sie diese Pfade ein:
+   1. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Edit>** aus. Fügen Sie diese Pfade ein:
 
       | Verzeichnis | Eigenschaft |
       |-| - |
@@ -116,6 +116,6 @@ Die folgenden vordefinierten Merkmale befinden sich in `CppUnitTest.h`. Weitere 
 |`TEST_OWNER(ownerAlias)`|Verwenden Sie das vordefinierte Merkmal "Besitzer", um einen Besitzer der Testmethode anzugeben.|
 |`TEST_PRIORITY(priority)`|Verwenden Sie das vordefinierte Merkmal "Priorität", um den Testmethoden relative Prioritäten zuzuweisen.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)

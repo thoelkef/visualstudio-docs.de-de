@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
-ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: b2a80fce75f710d508f0d32df37bbcde73ee20e3
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273945"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292931"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .
@@ -52,7 +52,7 @@ Jeder Benutzer mit Zugriffsrechten als [Besitzer](https://docs.microsoft.com/azu
 > [!div class="mx-imgBorder"]
 > ![Wechseln zum Visual Studio-Portal für Abonnenten](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) anderen Personen Abonnements zuweisen.
+Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) anderen Personen Abonnements zuweisen.  Möglicherweise [müssen Sie Ihre neuen Abonnements dem Administrationsportal hinzufügen](add-monthly-subs.md), wenn Sie sie erstmals erworben haben.
 
 > [!div class="mx-imgBorder"]
 > ![Zuweisen von Abonnements zu anderen](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)

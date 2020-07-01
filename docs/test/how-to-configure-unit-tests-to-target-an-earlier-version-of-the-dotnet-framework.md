@@ -1,18 +1,18 @@
 ---
 title: Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596020"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288168"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 
@@ -83,7 +83,7 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 2. Wählen Sie im **Projektmappen-Explorer** aus Ihrem neuen C++-Testprojekt die Option **Projekt entladen** aus.
 
-3. Wählen Sie im **Projektmappen-Explorer** das entladene C++-Testprojekt und anschließend **Projektname\<>.vcxproj bearbeiten** aus.
+3. Wählen Sie im **Projektmappen-Explorer** das entladene C++-Testprojekt und anschließend **\<project name>.vcxproj bearbeiten** aus.
 
    Die *VCXPROJ*-Datei wird im Editor geöffnet.
 
@@ -104,7 +104,7 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 6. Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü Ihres neuen C++-Testprojekts die Option **Projekt erneut laden** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)

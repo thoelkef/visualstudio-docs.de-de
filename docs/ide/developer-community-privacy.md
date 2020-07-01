@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75775894"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284801"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -40,7 +40,8 @@ Wenn Sie um den Datenschutz besorgt sind, fügen Sie keine Informationen, die pr
 3. Fügen Sie die Beschreibung und weitere erforderliche Informationen, Bilder und Dateianlagen für die Reproduktion hinzu. Klicken Sie auf die Schaltfläche **Senden**, um diese Informationen privat zu senden.
 
    > [!NOTE]
-   > Es gibt einen Grenzwert von maximal 10 Dateien und maximal 2 GB in angehängten Dateien. Wenn Sie eine größere Datei hochladen müssen, können Sie einen neuen Problembericht senden oder in einem privaten Kommentar bei einem Microsoft-Mitarbeiter eine Upload-URL anfordern.
+   > Auf der Website der Entwicklercommunity gilt ein Grenzwert von maximal 10 Dateien und maximal 2 GB für angefügte Dateien. Wenn Sie eine größere Datei hochladen müssen, können Sie einen neuen Problembericht senden oder in einem privaten Kommentar bei einem Microsoft-Mitarbeiter eine Upload-URL anfordern.
+   > Wenn wir ein Issue schließen, werden zugehörige Anlagen nach 90 Tagen gelöscht.
 
 Wenn Sie Ihre Privatsphäre schützen und vertrauliche Daten nicht veröffentlichen möchten, sollte die gesamte Interaktion mit Microsoft unter einem Kommentar mit eingeschränkter Sichtbarkeit stattfinden. Antworten auf andere Kommentare können dazu führen, dass Sie versehentlich vertrauliche Informationen offenlegen.
 
@@ -85,7 +86,7 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
   > ![Problem melden: Zusammenfassung gesammelter Protokolle](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Datenschutz in C++-Problemberichten](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

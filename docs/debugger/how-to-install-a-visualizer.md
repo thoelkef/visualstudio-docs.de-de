@@ -1,6 +1,6 @@
 ---
 title: 'Vorgehensweise: Installieren einer Schnellansicht | Microsoft-Dokumentation'
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183625"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286387"
 ---
 # <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.
@@ -37,13 +37,13 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 
    In der Regel ist es am besten, wenn sowohl für die debuggerseitige DLL als auch für die zu debuggende DLL **Beliebige CPU** als Zielplattform angegeben ist. Für die debuggerseitige DLL muss entweder **Beliebige CPU** oder **32-Bit** ausgewählt sein. Die Zielplattform für die zu debuggende DLL sollte dem Prozess für zu debuggende Komponenten entsprechen.
 
-2. Kopieren Sie die [debuggerseitige](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL (und alle davon abgängigen DLLs) in einen der folgenden Speicherorte:
+2. Kopieren Sie die [debuggerseitige](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL (und alle davon abgängigen DLLs) an einen der folgenden Speicherorte:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Kopieren Sie die [zu debuggende](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) DLL in einen der folgenden Speicherorte:
+3. Kopieren Sie die [zu debuggende](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) DLL an einen der folgenden Speicherorte:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
@@ -53,6 +53,10 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
     - `net2.0` für zu debuggende Komponenten, die die `.NET Framework`-Runtime ausführen
     - `netstandard2.0` für zu debuggende Komponenten, die eine Runtime verwenden, die `netstandard 2.0` unterstützt (`.NET Framework v4.6.1+` oder `.NET Core 2.0+`)
     - `netcoreapp` für zu debuggende Komponenten, die die `.NET Core`-Runtime ausführen (Unterstützung für `.NET Core 2.0+`)
+
+   Eine zu debuggende DLL ist erforderlich, wenn Sie eine eigenständige Schnellansicht erstellen möchten. Diese DLL enthält Code für das Datenobjekt, das Methoden von <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> implementieren kann.
+
+   Wenn Sie den zu debuggenden Code mehrfach anvisieren, muss die zu debuggende DLL im Ordner für den minimal unterstützten Zielframeworkmoniker (TFM) abgelegt werden.
 
 4. Starten Sie die Debugsitzung neu.
 

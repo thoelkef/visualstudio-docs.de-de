@@ -1,19 +1,19 @@
 ---
 title: Erste Schritte mit Grafikdiagnose | Microsoft-Dokumentation
 ms.custom: seodec18
-ms.date: 05/26/2017
+ms.date: 06/08/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 473946353a1ea044464e409a75a838eaf52a1483
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557916"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286543"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdiagnose vor. Anschließend erfassen Sie Frames aus einer Direct3D-App und untersuchen diese in der Grafikanalyse.
@@ -52,12 +52,18 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
  Nun, da Sie alles haben, was Sie brauchen, können Sie mit der Verwendung der Grafikdiagnose beginnen. Führen Sie folgende Schritte aus:
 
 ### <a name="1---create-a-direct3d-app"></a>1\. Erstellen einer Direct3D-App
- Wenn Sie bereits über eine eigene Direct3D-App zum Erkunden von Grafikdiagnose verfügen, ist das eine gute Voraussetzung. Verwenden Sie andernfalls eines der folgenden Elemente:
 
+Wenn Sie bereits über eine eigene Direct3D-App zum Erkunden von Grafikdiagnose verfügen, ist das eine gute Voraussetzung. Verwenden Sie andernfalls eines der folgenden Elemente:
+
+::: moniker range=">=vs-2019"
+Laden Sie ein Beispiel aus [Direct3D Game Sample](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/) herunter.
+::: moniker-end
+::: moniker range="vs-2017"
 - Eine der Projektvorlagen **DirectX 11-App (Universelle Windows-App)** oder **DirectX 12-App (Universelle Windows-App)** für Windows 10.
 - Das [Direct3D 12-UAP-Beispiel](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) für Windows 10.
+::: moniker-end
 
-  Stellen Sie sicher, dass Sie die App erstellen können, bevor Sie fortfahren.
+Stellen Sie sicher, dass Sie die App erstellen und kompilieren können, bevor Sie fortfahren. Wählen Sie **Erstellen** > **Projektmappe erstellen** aus, um sicherzustellen, dass der Vorgang fehlerfrei erfolgt. Wählen Sie dann **Debuggen** > **Ohne Debuggen starten** (**STRG+F5**) aus, um sicherzustellen, dass sie ordnungsgemäß ausgeführt wird. Je nach Computer, auf dem Sie mit dem Tool testen, müssen Sie möglicherweise die Plattform und das Debugziel für das Beispiel anpassen. Um beispielsweise auf Ihrem Visual Studio-Hostcomputer die x64-Plattform zu testen, wählen Sie **x64** als Projektmappenplattform und **Lokaler Computer** als Debugziel aus. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2\. Starten einer Grafikdiagnosesitzung
  Nun können Sie mit Ihrer ersten Grafikdiagnosesitzung beginnen. Wählen Sie in Visual Studio im Hauptmenü **Debuggen, Grafik, Grafikdebuggen starten** aus, oder drücken Sie einfach **ALT+F5**. Daraufhin wird Ihre App unter „Grafikdiagnose“ gestartet, und das Fenster für die Diagnosesitzung wird in Visual Studio angezeigt.

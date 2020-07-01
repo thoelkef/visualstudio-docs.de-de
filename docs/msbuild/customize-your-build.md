@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180401"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288935"
 ---
 # <a name="customize-your-build"></a>Anpassen Ihres Builds
 
@@ -182,7 +182,7 @@ In `$(MSBuildUserExtensionsPath)` wird nach der gleichen Verzeichnisstruktur (je
 ## <a name="customize-the-solution-build"></a>Anpassen des Projektmappenbuilds
 
 > [!IMPORTANT]
-> Wenn auf diese Weise der Projektmappenbuild angepasst wird, werden die Änderungen nur auf Builds mit *MSBuild.exe* über die Befehlszeile angewendet. Sie werden **nicht** auf Builds innerhalb von Visual Studio angewendet.
+> Wenn auf diese Weise der Projektmappenbuild angepasst wird, werden die Änderungen nur auf Builds mit *MSBuild.exe* über die Befehlszeile angewendet. Sie werden **nicht** auf Builds innerhalb von Visual Studio angewendet. Aus diesem Grund ist es nicht empfehlenswert, Anpassungen auf Projektmappenebene abzulegen. Eine bessere Alternative für die benutzerdefinierte Anpassung aller Projekte in einer Projektmappe ist die Verwendung der Dateien *Directory.build.props* und *Directory.build.targets* im Projektmappenordner, wie an anderer Stelle in diesem Artikel erläutert.
 
 Wenn MSBuild eine Projektmappendatei erstellt, wird diese zuerst intern in eine Projektdatei übersetzt, die dann erstellt wird. Die generierte Projektdatei importiert `before.{solutionname}.sln.targets`, bevor sie Ziele definiert und `after.{solutionname}.sln.targets` nachdem sie Ziele importiert hat. Dazu gehören auch die Ziele, die in den Verzeichnissen `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` und `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` installiert sind.
 

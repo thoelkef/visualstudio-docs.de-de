@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631158"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289143"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen eines Inlinetasks
 
@@ -250,14 +250,16 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
 
 ### <a name="handle-reserved-characters"></a>Verwenden reservierter Zeichen
 
- Der MSBuild-Parser verarbeitet Inlineaufgaben als XML. Zeichen, deren Bedeutung in XML reserviert ist, z.B. „,\<“ und „>“, werden erkannt und behandelt, als ob es sich um XML- und nicht um .NET-Quellcode handelt. Wenn Sie die reservierten Zeichen in Codeausdrücke einfügen möchten, z.B. `Files.Length > 0`, schreiben Sie das `Code`-Element so, dass die zugehörigen Inhalte in einem CDATA-Ausdruck enthalten sind:
+ Der MSBuild-Parser verarbeitet Inlineaufgaben als XML. Zeichen, deren Bedeutung in XML reserviert ist, z. B. \<" and ">, werden erkannt und behandelt, als ob es sich um XML- und nicht um .NET-Quellcode handelt. Wenn Sie die reservierten Zeichen in Codeausdrücke einfügen möchten, z.B. `Files.Length > 0`, schreiben Sie das `Code`-Element so, dass die zugehörigen Inhalte in einem CDATA-Ausdruck enthalten sind:
 
  ```xml
 <Code Type="Fragment" Language="cs">
   <![CDATA[
 
-  // Your code goes here.
-
+  if (Files.Length > 0)
+  {
+      // Your code goes here.
+  }
   ]]>
 </Code>
 ```

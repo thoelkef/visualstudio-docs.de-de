@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40f8bc4847201d1bd0298bc91432996ecce58d65
-ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
+ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81615551"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289039"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -46,7 +46,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/Framework: [*Frameworkversion*]**|.NET-Zielversion, die für die Testausführung verwendet werden soll.<br />Beispielwerte: `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />„TargetFrameworkAttribute“ wird verwendet, um diese Option automatisch in Ihrer Assembly zu ermitteln. Wenn das Attribut nicht vorhanden ist, lautet der Standardwert `Framework40`. Diese Option muss explizit angegeben werden, wenn [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) aus Ihren .NET Core-Assemblys entfernt wird.<br />Wenn als Zielframework **Framework35** angegeben ist, werden die Tests in CLR 4.0 im „Kompatibilitätsmodus“ ausgeführt.<br />Ein Beispiel: `/Framework:framework40`|
 |**/TestCaseFilter:[*Ausdruck*]**|Führt Tests aus, die mit dem angegebenen Ausdruck übereinstimmen.<br /><Expression\> ist vom Format <property\>=<value\>[\|<Expression\>].<br />Ein Beispiel: `/TestCaseFilter:"Priority=1"`<br />Ein Beispiel: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Die Befehlszeilenoption **/TestsCaseFilter** kann nicht zusammen mit der Befehlszeilenoption **/Tests** verwendet werden. <br />Informationen zum Erstellen und Verwenden von Ausdrücken finden Sie unter [TestCase-Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zeigt Nutzungsinformationen an.|
-|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Wenn die Ergebnisse in einer TRX-Datei (Visual Studio Text Results) protokolliert werden sollen, geben Sie Folgendes an:<br />**/Logger: TRX**<br />**[; LogFileName =\<der Standardwert ist der eindeutige Dateiname >]**|
+|**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an. Geben Sie den Parameter mehrmals an, um mehrere Protokollierungen zu ermöglichen.<br />Beispiel: Wenn die Ergebnisse in einer TRX-Datei (Visual Studio Text Results) protokolliert werden sollen, geben Sie Folgendes an:<br />**/Logger: TRX**<br />**[;LogFileName=\<Defaults to unique file name>]**|
 |**/ListTests:[*Dateiname*]**|Listet gefundene Tests aus dem angegebenen Testcontainer auf.|
 |**/ListDiscoverers**|Listet alle installierten Test-Discoverer auf.|
 |**/ListExecutors**|Listet alle installierten Test-Executors auf.|

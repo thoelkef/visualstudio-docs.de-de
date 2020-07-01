@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638690"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285843"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Messen der Anwendungsleistung über die Befehlszeile
 
@@ -33,7 +33,7 @@ In dem Beispiel, das in diesem Artikel beschrieben wird, sammeln Sie Leistungsin
 
 * Kenntnisse im Umgang mit Befehlszeilentools
 
-* Installieren Sie die [Leistungstools für Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) auf dem Remotecomputer, um Leistungsinformationen auf einem Remotecomputer zu erfassen, auf dem Visual Studio nicht installiert ist. Die Version der Tools muss mit Ihrer Version von Visual Studio übereinstimmen.
+* Installieren Sie die [Leistungstools für Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) auf dem Remotecomputer, um Leistungsinformationen auf einem Remotecomputer zu erfassen, auf dem Visual Studio nicht installiert ist. Die Version der Tools muss mit Ihrer Version von Visual Studio übereinstimmen.
 
 ## <a name="collect-performance-data"></a>Sammeln von Leistungsdaten
 
@@ -53,9 +53,9 @@ Bei der Profilerstellung mithilfe der CLI-Diagnosetools von Visual Studio wird d
 
    Folgende Argumente müssen eingeschlossen werden:
 
-   * \<*id*> Identifiziert die Sammlungssitzung. Die ID muss eine Zahl zwischen 1 und 255 sein.
-   * \<*pid*>, Die PID des Prozesses, den Sie profilen möchten. Hier also die PID, die Sie in Schritt 1 abgerufen haben.
-   * \<*configFile*>, Konfigurationsdatei des Sammlungs-Agents, den Sie starten möchten. Weitere Informationen finden Sie unter [Runtime Configuration Files (Konfigurationsdateien der Runtime)](#config_file).
+   * \<*id*>: bestimmt die Sammlungssitzung. Die ID muss eine Zahl im Bereich von 1 bis 255 sein.
+   * \<*pid*>: die PID des Prozesses, den Sie profilen möchten. Hier also die PID, die Sie in Schritt 1 abgerufen haben.
+   * \<*configFile*>: Konfigurationsdatei des Sammlungs-Agents, den Sie starten möchten. Weitere Informationen finden Sie unter [Runtime Configuration Files (Konfigurationsdateien der Runtime)](#config_file).
 
 1. Ändern Sie die Größe des Notepads, oder geben Sie etwas ein, damit einige aussagekräftige Profilerstellungsinformationen gesammelt werden können.
 
@@ -73,10 +73,20 @@ Sammlungs-Agents sind austauschbare Komponenten, die verschiedene Datentypen sam
 
 Der Bequemlichkeit halber können Sie diese Informationen in einer Agent-Konfigurationsdatei speichern. Die Konfigurationsdatei ist eine *.json*-Datei, die mindestens den Namen der *.dll*-Datei und deren COM-CLSID enthält. Hier sehen Sie die Beispielkonfigurationsdateien, die Sie im folgenden Ordner finden können:
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* Konfigurationen für die CPU-Nutzung (CpuUsage) (Standard/Hoch/Niedrig). Dies entspricht den Daten, die für das Profilerstellungstool für die [CPU-Auslastung](../profiling/cpu-usage.md) gesammelt wurden.
-* DotNetObjectAlloc-Konfigurationen (Standard/Niedrig). Dies entspricht den Daten, die für das [.NET-Objektzuteilungstool](../profiling/dotnet-alloc-tool.md) gesammelt wurden.
+Unter den folgenden Links können Sie die Konfigurationsdateien für den Agent herunterladen und anzeigen:
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+Konfigurationen für die CPU-Nutzung (CpuUsage) (Standard/Hoch/Niedrig). entsprechen den Daten, die für das Profilerstellungstool für die [CPU-Auslastung](../profiling/cpu-usage.md) gesammelt wurden.
+DotNetObjectAlloc-Konfigurationen (Standard/Niedrig) entsprechen den Daten, die für das [.NET-Objektzuteilungstool](../profiling/dotnet-alloc-tool.md) gesammelt wurden.
 
 Die Konfigurationen „Standard“, „Niedrig“ und „Hoch“ beziehen sich auf die Stichprobenentnahmerate. So bedeutet „Niedrig“ z.B. 100 Stichproben pro Sekunde, und „Hoch“ 4000 Stichproben pro Sekunde.
 

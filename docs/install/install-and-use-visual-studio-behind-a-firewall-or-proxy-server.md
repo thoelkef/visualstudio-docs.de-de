@@ -1,7 +1,7 @@
 ---
 title: Installation und Verwendung hinter einer Firewall oder einem Proxy
 description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Zulassungsliste setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
-ms.date: 05/13/2020
+ms.date: 06/17/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180440"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283475"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -129,6 +129,8 @@ Um sicherzustellen, dass Sie bei der Verwendung von Visual Studio oder Azure-Die
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https/443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
 | Paketerstellungsdienst | [account].visualstudio.com <br/> [Konto].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | Die Domänen \*.npmjs.org, \*.nuget.org und \*.nodejs.org sind nur für bestimmte Buildtaskszenarios erforderlich (z. B.: NuGet-Toolinstaller, Node Tool-Installationsprogramm) oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Wird zum Herstellen einer Verbindung mit Azure DevOps Services verwendet. |
+| Azure-Servicebus | \*.servicebus.windows.net | ampq/5671 und 5672, </br> sbmp/9350-9354, </br> http/80, </br> https/443 | Dient zum Erstellen von Warteschlangen, Themen und Abonnements. </br> Dient auch zum Senden/Empfangen von Nachrichten an/von Service Bus-Warteschlangen und -Themen. |
+| Azure Cosmos DB | \*.documents.azure.com | https/443 | Dient zum Aufruf der APIs der zentralen Dokumentdatenbank. |
 | Entwicklercommunity | sendvsfeedback2.azurewebsites.net/api | https/443 | Wird zum Aufrufen von Developer Community Feedback Tool-APIs verwendet (Meine Probleme, Suchen, Abstimmungen, Kommentare, gegebenes Feedback, Uploads, Lebenslauf) |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Wird zum Aufrufen von Intellicode-APIs verwendet |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Wird zum Aufrufen von Live Share-APIs verwendet |

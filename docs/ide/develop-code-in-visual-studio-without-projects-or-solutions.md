@@ -1,6 +1,6 @@
 ---
 title: Entwickeln von Code ohne Projekte oder Projektmappen
-ms.date: 02/21/2018
+ms.date: 06/22/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596293"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284892"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen
 
@@ -26,7 +26,7 @@ Nach dem Öffnen der Codedateien in Visual Studio zeigt der **Projektmappen-Expl
 
 ## <a name="open-any-code"></a>Öffnen von beliebigem Code
 
-Sie können Code in Visual Studio auf eine der folgenden Arten öffnen:
+Sie können Code in Visual Studio auf folgende Arten öffnen:
 
 - Wählen Sie in der Visual Studio-Menüleiste die Einträge **Datei** > **Öffnen** > **Ordner**, und navigieren Sie zum Codespeicherort.
 
@@ -34,10 +34,18 @@ Sie können Code in Visual Studio auf eine der folgenden Arten öffnen:
 
 ::: moniker range="vs-2017"
 - Klicken Sie auf der Visual Studio-**Startseite** auf den Link **Ordner öffnen**.
+
+    > [!IMPORTANT]
+    > Nicht der gesamte Code kann auf der **Startseite** von Visual Studio über den Link **Ordner öffnen** geöffnet werden. Wenn Ihre Codedatei beispielsweise als Teil einer Projektmappe, also in einer SLN-Datei, gespeichert wurde, müssen Sie eine der anderen hier aufgeführten Optionen wählen, um Ihren Code zu öffnen.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - Wählen Sie im Startfenster den Link **Ordner öffnen** aus.
+
+    > [!IMPORTANT]
+    > Nicht der gesamte Code kann im Startfenster von Visual Studio über den Link **Ordner öffnen** geöffnet werden. Wenn Ihre Codedatei beispielsweise als Teil einer Projektmappe, also in einer SLN-Datei, gespeichert wurde, müssen Sie eine der anderen hier aufgeführten Optionen wählen, um Ihren Code zu öffnen.
+
 ::: moniker-end
 
 - Wenn Sie eine Tastatur verwenden, drücken Sie in Visual Studio die Tasten **STRG**+**UMSCHALT**+**ALT**+**O**.
@@ -115,7 +123,7 @@ Der Text der Schaltfläche **Start** ändert sich und zeigt an, dass das Projekt
 
 ![Schaltfläche „Start“ mit Projekt](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen von Build- und Debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Open Folder-Projekte für C++](/cpp/build/open-folder-projects-cpp)
