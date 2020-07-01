@@ -1,19 +1,19 @@
 ---
 title: Debuggen von Benutzercode mit nur eigenem Code | Microsoft-Dokumentation
 ms.date: 02/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535996"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536564"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuggen von Benutzercode mit nur eigenem Code
 
@@ -196,7 +196,7 @@ Eine *.natstepfilter*-Datei ist eine XML-Datei mit der folgenden Syntax:
 
 <a name="BKMK_JS_User_and_non_user_code"></a> „Nur eigenen Code“ in JavaScript steuert die Einzelschrittausführung und die Aufruflistenanzeige durch Kategorisieren von Code in einer dieser Klassifizierungen:
 
-|||
+|Klassifizierung|Beschreibung|
 |-|-|
 |**MyCode**|Benutzercode, den Sie besitzen und steuern.|
 |**LibraryCode**|Nichtbenutzercode aus Bibliotheken, den Sie regelmäßig verwenden und die für das ordnungsgemäße Funktionieren Ihrer Anwendung erforderlich sind (z. B. WinJS oder jQuery).|
@@ -279,7 +279,7 @@ Die Spezifikationen in dieser Datei setzen die Standardklassifizierungen und die
 
 Die Schlüsselwertpaare **Eval**, **Function** und **ScriptBlock** bestimmen, wie dynamisch erzeugter Code klassifiziert wird:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Eval**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die vom Host bereitgestellte `eval`-Funktion übergeben wird. Standardmäßig wird ein Eval-Skript als **MyCode** klassifiziert.|
 |**Function**|Skript, das ausgeführt wird, indem eine Zeichenfolge an den `Function`-Konstruktor übergeben wird. Standardmäßig wird ein Function-Skript als **LibraryCode** klassifiziert.|
@@ -295,7 +295,7 @@ Sie können den Wert auf eines dieser Schlüsselwörter ändern:
 
 Die Schlüsselwertpaare **MyCode**, **Libraries** und **Unrelated** geben die URLs oder Dateien an, die Sie in eine Klassifikation einschließen möchten:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**MyCode**|Ein Array von URLs oder Dateien, die als **MyCode** klassifiziert werden.|
 |**Libraries**|Ein Array von URLs oder Dateien, die als **LibraryCode** klassifiziert werden.|

@@ -2,7 +2,7 @@
 title: Verwenden von Breakpoints im Debugger | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a8ee96834fc20186ba6719a7c4f377fea45d6b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: af53cdd368d129fc23c3596a4e20d6e95ceb7a18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301026"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536590"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Breakpoints im Visual Studio-Debugger
 
@@ -50,7 +50,7 @@ Breakpoints sind eines der wichtigsten Debugverfahren in der Toolbox eines Entwi
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> Festlegen von Breakpoints im Quellcode
 
-Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Im folgenden C#-Code könnte Sie beispielsweise einen Breakpoint bei der Variablendeklaration, in der `for`-Schleife oder an einer beliebigen Stelle im Code innerhalb der `for`-Schleife festlegen. Sie können keinen Breakpoint im Namespace, in Klassendeklarationen oder in der Methodensignatur festlegen.
+Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Im folgenden C#-Code könnte Sie beispielsweise einen Breakpoint bei der Variablendeklaration, in der `for`-Schleife oder an einer beliebigen Stelle im Code innerhalb der `for`-Schleife festlegen. Sie können keinen Breakpoint in Deklarationen für einen Namespace, eine Klassen, einer Variable oder in der Methodensignatur festlegen.
 
 Wenn Sie einen Breakpoint im Quellcode festlegen möchten, klicken Sie links neben einer Codezeile auf den Rand. Sie können auch die entsprechende Zeile auswählen und **F9** drücken, auf **Debuggen**  >  **Haltepunkt ein/aus** klicken oder mit der rechten Maustaste klicken und **Haltepunkt**  >  **Haltepunkt einfügen** auswählen. Der Breakpoint wird als roter Punkt am linken Rand angezeigt.
 
