@@ -1,7 +1,7 @@
 ---
 title: Verwaltete Referenz (Office-Entwicklung in Visual Studio)
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985765"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519859"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Verwaltete Referenz (Office-Entwicklung in Visual Studio)
-  Dieser Abschnitt enthält eine API-Referenzdokumentation zu Namespaces und Typen, die in Office-Projekten für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](includes/net-v45-md.md)]verwendet werden. Eine API-Referenz Dokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die auf .NET Framework 3,5 abzielen, finden Sie im folgenden Referenz Abschnitt in der Visual Studio-Dokumentation: [verwaltete Referenz (Office-Entwicklung in Visual Studio). )](managed-reference-office-development-in-visual-studio.md).
+  Dieser Abschnitt enthält eine API-Referenzdokumentation zu Namespaces und Typen, die in Office-Projekten für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](includes/net-v45-md.md)]verwendet werden. Eine API-Referenz Dokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die auf .NET Framework 3,5 abzielen, finden Sie im folgenden Referenz Abschnitt in der Visual Studio-Dokumentation: [verwaltete Referenz (Office-Entwicklung in Visual Studio)](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -72,6 +72,6 @@ ms.locfileid: "72985765"
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Visual Studio-Tools für Office-Laufzeit](visual-studio-tools-for-office-runtime-overview.md)
-- [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](office-development-samples-and-walkthroughs.md)
 - [Entwerfen und Erstellen von Office-Lösungen](designing-and-creating-office-solutions.md)

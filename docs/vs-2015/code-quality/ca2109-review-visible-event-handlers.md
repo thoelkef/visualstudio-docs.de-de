@@ -15,19 +15,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 38a1b7c00c79c7a2e89ef64598b8c409709561ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ddcab6e0f416837bcd7b01521a6d77ddce691b9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658705"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520977"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Sichtbare Ereignishandler überprüfen
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Sichtbare Ereignishandler überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ReviewVisibleEventHandlers|
+|TypName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72658705"
 ## <a name="cause"></a>Ursache
  Eine öffentliche oder geschützte Ereignisbehandlungsmethode wurde erkannt.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Eine extern sichtbare Ereignis Behandlungsmethode stellt ein Sicherheitsproblem dar, das überprüft werden muss.
 
  Ereignisbehandlungsmethoden sollten nur dann verfügbar gemacht werden, wenn dies absolut notwendig ist. Ein Ereignishandler, ein Delegattyp, der die verfügbar gemachte Methode aufruft, kann beliebigen Ereignissen hinzugefügt werden, solange der Handler und die Ereignis Signaturen einander entsprechen. Ereignisse können potenziell von beliebigem Code ausgelöst werden und werden häufig durch hochgradig vertrauenswürdigen Systemcode als Reaktion auf Benutzeraktionen wie das Klicken auf eine Schaltfläche ausgelöst. Durch das Hinzufügen einer Sicherheitsüberprüfung zu einer Ereignis Behandlungsmethode wird nicht verhindert, dass Code einen Ereignishandler registriert, der die-Methode aufruft.
@@ -63,6 +63,6 @@ ms.locfileid: "72658705"
 
  [!code-csharp[FxCop.Security.EventSecLib#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.EventSecLib/cs/FxCop.Security.EventSecLib.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [Sicherheitsanforderungen](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [Sicherheitsforderungen](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

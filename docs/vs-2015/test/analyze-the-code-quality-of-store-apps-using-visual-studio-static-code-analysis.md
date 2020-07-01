@@ -26,14 +26,14 @@ Das Codeanalysetool in Visual Studio überprüft den Code auf eine Reihe von all
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-|-|
 |[Analysieren der Qualität von Visual Basic- und C#-Code](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden der Codeanalyse in Visual Basic- und C#-Projekten.|
 |[Analysieren der Qualität von C++-Code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Verwenden der Codeanalyse in C++-Projekten.|
 
 ## <a name="more-code-analysis-info"></a>Weitere Informationen zur Codeanalyse
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-|-|
 |[Codeanalyse in der MSDN Library](https://msdn.microsoft.com/library/dd264897.aspx)|Weitere Informationen zur Verwendung von Codeanalyse in Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional.|
 |[Blog des MSDN-Codeanalyseteams](https://blogs.msdn.com/b/codeanalysis/)|Weitere Informationen, einschließlich Fachbeiträgen und Beispielen, im Blog des Codeanalyseteams.|

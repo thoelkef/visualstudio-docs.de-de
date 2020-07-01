@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann keine rückverbindung mit diesem Computer Verbindung herstellen | Microsoft-Dokumentation'
+title: 'Fehler: der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann keine Verbindung mit diesem Computer herstellen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697345"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520509"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann die Verbindung mit diesem Computer nicht wiederherstellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,8 @@ Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benu
   
  Die folgende Tabelle zeigt, welche Konten auf den Computer zugreifen können:  
   
-|||||  
-|-|-|-|-|  
-||LocalSystem-Konto|Domänenkonto|Lokale Konten mit identischem Benutzernamen und -kennwort auf beiden Computern|  
+|Szenario|LocalSystem-Konto|Domänenkonto|Lokale Konten mit identischem Benutzernamen und -kennwort auf beiden Computern|  
+|-|-|-|-|-|  
 |Beide Computer in derselben Domäne|Ja|Ja|Ja|  
 |Beide Computer in Domänen mit bidirektionaler Vertrauenswürdigkeit|Nein|Nein|Ja|  
 |Einer oder beide Computer in einer Arbeitsgruppe|Nein|Nein|Ja|  
@@ -48,7 +47,7 @@ Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benu
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1. Stellen Sie sicher, dass der Visual Studio-Remotedebugdienst ordnungsgemäß auf dem Remotecomputer eingerichtet ist. Weitere Informationen finden Sie unter [festgelegt Einrichten der Remotetools auf dem Gerät](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+1. Stellen Sie sicher, dass der Visual Studio-Remotedebugdienst ordnungsgemäß auf dem Remotecomputer eingerichtet ist. Weitere Informationen finden Sie unter [Einrichten der Remotetools auf dem Gerät](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 2. Führen Sie den Remotedebugdienst unter einem Konto aus, über das auf den Hostcomputer des Debuggers zugegriffen werden kann (siehe obige Tabelle).  
   
@@ -76,6 +75,6 @@ Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benu
   
 - Führen Sie den Remotedebugmonitor als Anwendung statt als Dienst aus.  
   
-## <a name="see-also"></a>Siehe auch  
- [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Remote Debugging-Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

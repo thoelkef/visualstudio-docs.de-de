@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Beginnen Sie mit der Anpassung des Menübands'
+title: 'Gewusst wie: Starten der Anpassung des Menübands'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255859"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520067"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Vorgehensweise: Beginnen Sie mit der Anpassung des Menübands
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Gewusst wie: Starten der Anpassung des Menübands
   Fügen Sie einem Office-Projekt ein **Menüband (visueller Designer)** oder ein **Menüband (XML)** -Element hinzu, um das Menüband einer Microsoft Office-Anwendung anzupassen.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "71255859"
 
 3. Geben Sie im Feld **Name** einen Namen für das Menü Band Element ein.
 
-    Namen dürfen die folgenden Zeichen nicht enthalten:
+    Folgende Zeichen dürfen nicht in den Namen verwendet werden:
 
-   - Pfund (#)
+   - Nummernzeichen (#)
 
    - Prozent (%)
 
-   - Kaufmännisches und-(&)
+   - Kaufmännisches Und-Zeichen (&)
 
    - Sternchen (*)
 

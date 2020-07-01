@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren'
+title: 'Gewusst wie: Programm gesteuertes hinzufügen und Löschen von Arbeitsblatt Kommentaren'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7251efb4c7917b67b7b6e7642c78c1cd1041997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967695"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520080"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Vorgehensweise: Programmgesteuertes Hinzufügen und Löschen von Arbeitsblattkommentaren
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Gewusst wie: Programm gesteuertes hinzufügen und Löschen von Arbeitsblatt Kommentaren
   Sie können Kommentare in Microsoft Office Excel-Arbeitsblättern programmgesteuert hinzufügen und löschen. Kommentare können nur einzelnen Zellen, nicht Bereichen mit mehreren Zellen hinzugefügt werden.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>Fügen Sie hinzu und löschen Sie einen Kommentar in einem Projekt auf Dokumentebene
+## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>Hinzufügen und Löschen eines Kommentars in einem Projekt auf Dokument Ebene
  Im folgendem Beispiel wird davon ausgegangen, dass sich ein in einer Zelle befindliches <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement namens `dateComment` auf dem Arbeitsblatt `Sheet1`befindet.
 
 ### <a name="to-add-a-new-comment-to-a-named-range"></a>So fügen Sie einem benannten Bereich einen neuen Kommentar hinzu
@@ -43,7 +43,7 @@ ms.locfileid: "62967695"
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
 
-## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Fügen Sie hinzu und löschen Sie einen Kommentar in einem VSTO-Add-in-Projekt
+## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Hinzufügen und Löschen eines Kommentars in einem VSTO-Add-in-Projekt
  Im folgendem Beispiel wird davon ausgegangen, dass sich ein in einer Zelle befindliches <xref:Microsoft.Office.Interop.Excel.Range> -Steuerelement namens `dateComment` auf dem aktiven Arbeitsblatt befindet.
 
 ### <a name="to-add-a-new-comment-to-an-excel-range"></a>So fügen Sie einem Excel-Bereich einen neuen Kommentar hinzu
@@ -62,5 +62,5 @@ ms.locfileid: "62967695"
 
 ## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
-- [Vorgehensweise: Programmgesteuertes Anzeigen von Arbeitsblattkommentaren](../vsto/how-to-programmatically-display-worksheet-comments.md)
-- [NamedRange-Steuerelement](../vsto/namedrange-control.md)
+- [Gewusst wie: Programm gesteuertes Anzeigen von Arbeitsblatt Kommentaren](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [Name Drange-Steuerelement](../vsto/namedrange-control.md)

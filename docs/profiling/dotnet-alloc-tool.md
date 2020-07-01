@@ -1,7 +1,7 @@
 ---
 title: Analysieren der Speicherauslastung für .NET-Objekte | Microsoft-Dokumentation
 ms.date: 12/9/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - memory allocation, memory usage
 author: Sagar-S-S
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a812ea3dcddc2fa6093b2b5b99684d1d5194654
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f7ec98f8d17465e95369eb6e2ecd88051f8daa59
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280034"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330454"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung
 
@@ -124,14 +124,14 @@ Mit der Ansicht **Funktionen** können Sie sich Prozesse, Module und Funktionen 
    - **Automatische Größe (Bytes)**
    - **Durchschnittliche Größe (Bytes)**
 
-### <a name="collection"></a>Sammlung
+### <a name="collection"></a>Auflistung
 
 ![Die Ansicht „Sammlung“](../profiling/media/collectionlight.png "Die Ansicht „Sammlung“")
 
 In der Ansicht **Sammlung** können Sie sehen, wie viele Objekte während der Garbage Collection gesammelt oder beibehalten wurden. Hier finden Sie auch zwei Kreisdiagramme, mit denen die Informationen zu den Objekten nach Typ grafisch dargestellt werden.
 
-- In der Spalte **Gesammelt** wird die Anzahl der Objekte angezeigt, die vom Garbage Collector erfasst wurden.
-- Die Spalte **Noch vorhanden** zeigt, wie viele Objekte nach der Ausführung des Garbage Collectors noch vorhanden waren.
+- In der Spalte **Collected** (Gesammelt) wird die Anzahl der Objekte angezeigt, die vom Garbage Collector erfasst wurden.
+- Die Spalte **Survived** (Verblieben) zeigt, wie viele Objekte nach der Ausführung des Garbage Collectors noch vorhanden waren.
 
 ### <a name="filtering-tools"></a>Filtertools
 
