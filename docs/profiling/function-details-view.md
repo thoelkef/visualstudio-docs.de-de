@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2fa53ba1d2e805f744d6a817c65b77428d757a25
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779258"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536993"
 ---
 # <a name="function-details-view"></a>Funktionsdetailansicht
 Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
@@ -73,7 +73,7 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
 
 |Spalte|Beschreibung|
 |------------|-----------------|
-|**Exclusive**|– Der Betrag der Leistungsmetrik, die bei der Ausführung des Funktionsrumpfs aufgetreten ist.|
+|**Exklusiv**|– Der Betrag der Leistungsmetrik, die bei der Ausführung des Funktionsrumpfs aufgetreten ist.|
 |**In Aufrufen**|– Der Betrag der Leistungsmetrik, die in Funktionen aufgetreten ist, die von der ausgewählten Funktion aufgerufen wurden.|
 |**Inklusive insgesamt**|– Der Gesamtbetrag der Werte **Exklusiv** und **In Aufrufen**.|
 
@@ -82,17 +82,17 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
 
 ## <a name="cost-distribution-bar-chart-values"></a>Werte des Balkendiagramms zur Kostenverteilung
 
-### <a name="sampling"></a>Stichproben
+### <a name="sampling"></a>Sampling
  In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der Samplingmethode erfasst wurden.
 
-|||
+|Wert|Beschreibung|
 |-|-|
 |**Inklusive Samplings (Aufgelistete Samplings)**|– Bei einer aufrufenden Funktion die Anzahl der Samplings, die erfasst wurden, als die ausgewählte Funktion mit dieser aufrufenden Funktion aufgerufen wurde.<br />– Beim Funktionsrumpf die Anzahl der Samplings, die erfasst wurden, als die ausgewählte Funktion einen eigenen Code ausgeführt hat.<br />– Bei einer aufgerufenen Funktion die Anzahl der Samplings, die erfasst wurden, als die aufgerufene Funktion wegen eines Aufrufs der ausgewählten Funktion ausgeführt wurde.|
 
 ### <a name="instrumentation"></a>Instrumentierung
  In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der Instrumentierungsmethode erfasst wurden.
 
-|||
+|Wert|Beschreibung|
 |-|-|
 |**Verstrichene inklusive Zeit (verstrichene Zeit)**|Die verstrichene Zeit umfasst die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br /><br /> – Bei einer **Aufrufenden Funktion** die Zeit, die beim Ausführen der über die Funktion aufgerufenen zugehörigen Instanzen verstrichen ist. Dies umfasst die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.<br />– Beim **Funktionsrumpf** die Gesamtzeit, die beim Ausführen des Codes der ausgewählten Funktion verstrichen ist. Dies umfasst nicht die Zeit für aufgerufene Funktionen.<br />– Bei einer aufgerufenen Funktion die Zeit für die Ausführung der über die ausgewählte Funktion aufgerufenen zugehörigen Instanzen der Funktion. Die Summe umfasst die Zeit, die für von der Funktion aufgerufene Funktionen aufgewendet wurde. Dies umfasst die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.|
 |**Inklusive Anwendungszeit (Anwendungszeit)**|Die Anwendungszeit umfasst nicht die Zeit für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen.<br /><br /> – Bei einer **aufrufenden Funktion** die Anwendungszeit für die Ausführung der Instanzen der ausgewählten Funktion, die von der Funktion aufgerufen wurden. Dies umfasst die Zeit für Funktionen, die von der ausgewählten Funktion aufgerufen wurden.<br />– Beim **Funktionsrumpf** die gesamte Anwendungszeit für die Ausführung des Codes der ausgewählten Funktion. Dies umfasst nicht die Zeit für aufgerufene Funktionen.<br />– Bei einer aufgerufenen Funktion die Anwendungszeit für die Ausführung der über die ausgewählte Funktion aufgerufenen Instanzen der Funktion. Die Summe umfasst die Zeit, die für von der Funktion aufgerufene Funktionen aufgewendet wurde.|
@@ -100,7 +100,7 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
 ### <a name="net-memory"></a>.NET-Arbeitsspeicher
  In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der .NET-Profilerstellungsmethode erfasst wurden.
 
-|||
+|Wert|Beschreibung|
 |-|-|
 |**Inklusive Zuordnungen (Zuordnungen)**|– Bei einer **aufrufenden Funktion** die Anzahl von Objekten, die von den Instanzen der ausgewählten Funktion zugeordnet wurden, die von der Funktion aufgerufen wurden. Die Zahl umfasst Objekte, die von den von der ausgewählten Funktion aufgerufenen Funktionen zugeordnet wurden.<br />– Beim **Funktionsrumpf** die Anzahl von Objekten, die von der ausgewählten Funktion zugeordnet wurden, als diese ihren eigenen Code ausgeführt hat. In Funktionen zugeordnete Objekte, die von der ausgewählten Funktion aufgerufen wurden, sind nicht enthalten.<br />– Bei einer aufgerufenen Funktion die Anzahl von Objekten, die von den Instanzen der Funktion zugeordnet wurden, die von der ausgewählten Funktion aufgerufen wurden. Die Zahl umfasst Objekte, die von den von der Funktion aufgerufenen Funktionen zugeordnet wurden.|
 |**Inklusive Bytes (Bytes)**|– Bei einer **aufrufenden Funktion** die Anzahl von Bytes, die von den Instanzen der ausgewählten Funktion zugeordnet wurden, die von der Funktion aufgerufen wurden. Die Zahl umfasst Bytes, die in von der ausgewählten Funktion aufgerufenen Funktionen zugeordnet wurden.<br />– Beim **Funktionsrumpf** die Gesamtzahl von Objekten, die von der ausgewählten Funktion zugeordnet wurden, als diese ihren eigenen Code ausgeführt hat. In Funktionen zugeordnete Bytes, die von der ausgewählten Funktion aufgerufen wurden, sind nicht enthalten.<br />– Bei einer aufgerufenen Funktion die Anzahl von Bytes, die von den Instanzen der Funktion zugeordnet wurden, die von der ausgewählten Funktion aufgerufen wurden. Die Zahl umfasst Bytes, die in von der Funktion aufgerufenen Funktionen zugeordnet wurden.|
@@ -108,7 +108,7 @@ Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:
 ### <a name="concurrency"></a>Parallelität
  In der folgenden Tabelle werden die Werte in der Liste „Leistungsmetriken“ für Profilerstellungsdaten erläutert, die mit der Parallelitätsmethode erfasst wurden.
 
-|||
+|Wert|Beschreibung|
 |-|-|
 |**Inklusive Konflikte (Konflikte)**|– Bei einer **aufrufenden Funktion** die Anzahl von Ressourcenkonfliktereignissen, die in den Instanzen der ausgewählten Funktion aufgetreten sind, die von der Funktion aufgerufen wurden. Die Zahl umfasst Konfliktereignisse in Funktionen, die in von der ausgewählten Funktion aufgerufen wurden.<br />– Beim **Funktionsrumpf** die Gesamtzahl der Konfliktereignisse, die aufgetreten sind, als die Funktion ihren eigenen Code ausgeführt hat. Dies umfasst nicht die Konflikte, die von der ausgewählten Funktion aufgerufen wurden.<br />– Bei einer aufgerufenen Funktion die Anzahl von Ressourcenkonfliktereignissen, die in den Instanzen der ausgewählten Funktion aufgetreten sind, die von der Funktion aufgerufen wurden. Die Zahl umfasst Konfliktereignisse, die in von der Funktion aufgerufenen Funktionen aufgetreten sind.|
 |**Inklusive blockierte Zeit (Blockierte Zeit)**|– Bei einer aufrufenden Funktion die Zeit für Ressourcenkonfliktereignisse für die Instanzen der ausgewählten Funktion, die von der Funktion aufgerufen wurden. Die Zeit umfasst die blockierte Zeit in Funktionen, die die ausgewählte Funktion aufgerufen hat.<br />– Beim **Funktionsrumpf** die Gesamtzeit für Konfliktereignisse, die aufgetreten sind, als die Funktion ihren eigenen Code ausgeführt hat. Dies umfasst nicht die Konflikte, die in Funktionen auftreten, die von der ausgewählten Funktion aufgerufen wurden.<br />– Bei einer aufgerufenen Funktion die Zeit für Ressourcenkonfliktereignisse für die Instanzen der Funktion, die von der ausgewählten Funktion aufgerufen wurden. Die Zeit umfasst die blockierte Zeit in Funktionen, die die Funktion aufgerufen hat.|

@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778491"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541699"
 ---
 # <a name="nameprofile"></a>NameProfile
 Die `NameProfile`-Funktion weist dem angegebenen Prozess oder Thread eine Zeichenfolge zu.
@@ -74,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Die Textlänge des Namens überschreitet 32 Zeichen inklusive des NULL-Zeichens und wurde daher gekürzt.|
 |NAME_OK|Der Name wurde erfolgreich registriert.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Jedem Prozess oder Thread kann nur ein Name zugewiesen werden. Nachdem ein Profilerstellungselement benannt wird, werden nachfolgende Aufrufe von NameProfile für dieses Element ignoriert.
 
  Wenn verschiedenen Threads oder Prozessen der gleiche Name gegeben wird, enthält der Bericht die Daten aller Elemente auf dieser Ebene, die diesen Namen tragen.
@@ -89,7 +89,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 ## <a name="function-information"></a>Funktionsinformationen
 
-|||
+|Element|Wert|
 |-|-|
 |**Header**|Enthält *VSPerf.h*|
 |**Bibliothek**|Verwendet *VSPerf.lib*|
@@ -133,5 +133,5 @@ void ExerciseNameProfile()
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

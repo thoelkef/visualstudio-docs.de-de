@@ -28,12 +28,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568203"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544091"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Optionen, Text-Editor, XAML, Sonstiges
 
@@ -43,7 +43,7 @@ Verwenden Sie die Eigenschaftenseite **Sonstiges**, um anzugeben, wie Elemente u
 
 Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen automatisch generiert werden.
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Endtags**|Gibt an, ob das Endtag eines Elements automatisch generiert wird, wenn Sie das Starttag mit dem Größer-als-Zeichen (>) schließen.|
 |**Attributanführungszeichen**|Gibt an, ob einschließende Anführungszeichen generiert werden, wenn ein Attributwert aus der Drop-down-Liste der Anweisungsvervollständigung ausgewählt ist.|
@@ -54,6 +54,6 @@ Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen
 
 Verwenden Sie diese Einstellung, um zu steuern, wann Fehler und Warnungen automatisch generiert werden. Weitere Informationen finden Sie unter [XAML-Fehler und -Warnungen](../../xaml-tools/xaml-errors-warnings.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

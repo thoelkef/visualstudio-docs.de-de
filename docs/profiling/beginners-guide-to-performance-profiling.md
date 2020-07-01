@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638787"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537370"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 
@@ -134,7 +134,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
     ![Aufrufstruktur in den Diagnosetools](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |||
+    |Bild|Beschreibung|
     |-|-|
     |![Schritt 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Der oberste Knoten in CPU-Auslastungsaufrufstrukturen ist ein Pseudoknoten.|
     |![Schritt 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Wenn die Option [Externen Code anzeigen](#view-external-code) deaktiviert ist, ist in den meisten Apps der Knoten der zweiten Ebene ein **[External Code]** -Knoten, der den System- und Frameworkcode enthält, der die App startet und beendet, die Benutzeroberfläche zeichnet, die Threadplanung steuert und andere Dienste der unteren Ebene für die App bereitstellt.|

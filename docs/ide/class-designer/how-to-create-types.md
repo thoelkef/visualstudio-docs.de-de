@@ -17,18 +17,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7bdbc255320a2d17eb3c51191b3a425500dd345c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590175"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533691"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer
 
 Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie sie in einem Klassendiagramm. Vorhandene Typen finden Sie unter [How to: View Existing Types (Class Designer) (Vorgehensweise: Anzeigen von vorhandenen Typen (Klassen-Designer))](how-to-view-existing-types.md).
 
-## <a name="CreateType"></a> Erstellen eines neuen Typs
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Erstellen eines neuen Typs
 
 1. Ziehen Sie in der **Toolbox** unter **Klassen-Designer** eines der folgenden Elemente in ein Klassendiagramm:
 
@@ -56,9 +56,8 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
 4. Fügen Sie jetzt andere Elemente hinzu, um den Typ zu definieren:
 
-    |||
-    |-|-|
     |**For**|**Add**|
+    |-|-|
     |Klassen, abstrakte Klassen, Strukturen oder Structs|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode), Destruktoren (Methode) und Konstanten, die den Typ definieren|
     |Enumerationen|Feldwerte, die die Enumeration bilden|
     |Schnittstellen|Methoden, Eigenschaften und Ereignisse, die die Schnittstelle bilden|
@@ -67,7 +66,7 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
      Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
 
-## <a name="CustAttributeType"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typ
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typ
 
 1. Klicken Sie in einem Klassendiagramm auf die Form des Typs.
 
@@ -77,7 +76,7 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
    Die benutzerdefinierten Attribute werden auf den Typ angewendet.
 
-## <a name="CustAttributeMember"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typmember
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typmember
 
 1. Klicken Sie in einem Klassendiagramm in der Form des entsprechenden Typs auf den Namen des Members oder im Klassendetailsfenster auf die entsprechende Zeile.
 

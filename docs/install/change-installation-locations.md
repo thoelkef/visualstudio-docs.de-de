@@ -3,7 +3,7 @@ title: Auswählen von Installationspfaden
 description: Erfahren Sie, wie Sie den Speicherbedarf für die Installation von Visual Studio auf dem Systemlaufwerk reduzieren können, indem Sie den Downloadcache, die freigegebenen Komponenten, die SDKs und die Tools auf verschiedene Laufwerke verteilen. Verschieben Sie beispielsweise einige Dateien vom C- auf das D-Laufwerk.
 ms.date: 03/30/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7f80d3c30c536e58811f8ca92676694b6d010010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111791"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419119"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Auswählen der Installationspfade in Visual Studio
 

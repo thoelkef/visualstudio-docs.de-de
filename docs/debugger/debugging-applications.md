@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188370"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535160"
 ---
 # <a name="debugging-applications"></a>Debuggen von Anwendungen
 Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von Anwendungen. Verschiedene Anwendungstypen und Sprachen erfordern unterschiedliche Einstellungen und Techniken verursachen verschiedene Probleme, die debuggt werden müssen.
 
 ## <a name="debugging-for-different-types-of-applications"></a>Debuggen für verschiedene Arten von Anwendungen
 
-|||
+|Titel|BESCHREIBUNG|
 |-|-|
 |[Debuggen von UWP-Apps](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Beschreibt das Debuggen von UWP-Apps.|
 |[Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)|Beschreibt das Debuggen von verwaltetem Code (Visual C#, Visual Basic, F# und C++/CLI).|

@@ -1,7 +1,7 @@
 ---
 title: Debuggen bereitgestellter ASP.NET-Anwendungen | Microsoft-Dokumentation
 ms.date: 06/30/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c2b1838375ee878640d77a9c93808efafc9f519c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738291"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350549"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debuggen bereitgestellter ASP.NET-Anwendungen
 Um eine bereitgestellte und ausgeführte Anwendung über [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu debuggen, müssen Sie den Debugger an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess anhängen und sicherstellen, dass der Debugger auf Symbole für die Anwendung zugreifen kann. Außerdem müssen Sie die Quelldateien für die Anwendung lokalisieren und öffnen. Weitere Informationen finden Sie unter [Angeben von Symboldateien (PDB-Dateien) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens](../debugger/how-to-find-the-name-of-the-aspnet-process.md)und [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md).

@@ -2,7 +2,7 @@
 title: Analysieren der Speicherauslastung ohne Debuggen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638828"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543350"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analysieren der Speicherauslastung ohne den Debugger
 
@@ -76,7 +76,7 @@ Es handelt sich bei den Zahlen um Links, über die Sie ausführliche Berichtsans
 
   ![Links Snapshot-Ansicht](../profiling/media/memuse__snapshotview_numbered.png "Links Snapshot-Ansicht")
 
-|||
+|Bild|Beschreibung|
 |-|-|
 |![Schritt 1](../profiling/media/procguid_1.png "ProcGuid_1")|Die Gesamtanzahl der Bytes im Speicher zum Zeitpunkt der Momentaufnahme<br /><br /> Klicken Sie auf diesen Link, um einen Bericht mit Momentaufnahmedetails anzuzeigen, der anhand der Gesamtgröße der Typinstanzen geordnet ist.|
 |![Schritt 2](../profiling/media/procguid_2.png "ProcGuid_2")|Die Gesamtzahl der Objekte im Speicher zum Zeitpunkt der Momentaufnahme<br /><br /> Klicken Sie auf diesen Link, um einen Bericht mit Momentaufnahmedetails anzuzeigen, der anhand der Anzahl der Typinstanzen geordnet ist.|
@@ -130,7 +130,7 @@ Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der
 
 Eine **Verwalteter Heap**-Struktur in einem Bericht mit Momentaufnahmedetails weist die folgenden Spalten auf:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|
 |**Anzahl**|Die Anzahl der Objektinstanzen des Typs. Für eine Instanz ist die **Anzahl** stets 1.|
@@ -152,7 +152,7 @@ Die **Verweistypen**- oder die **Verweisobjekte**-Struktur zeigt die Objekte an,
 
 Eine **Verweistypen**-Struktur in einem Bericht mit Momentaufnahmedetails weist die folgenden Spalten auf. Eine **Verweisobjekte**-Struktur weist keine Spalte für die **Verweisanzahl** auf.
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Objekttyp** oder **Instanz**|Der Name des Typs oder der Instanz.|
 |**Verweisanzahl**|Für Typen: die Anzahl der Objektinstanzen des Typs.|
@@ -176,7 +176,7 @@ Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der
 
 Eine **Verwalteter Heap**-Struktur in einem Vergleichsbericht bei Momentaufnahmen weist die folgenden Spalten auf:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|
 |**Anzahl**|Die Zahl der Instanzen eines Typs in der primären Momentaufnahme. Für eine Instanz ist die **Anzahl** stets 1.|
@@ -203,7 +203,7 @@ Die **Verweistypen**- oder die **Verweisobjekte**-Struktur zeigt die Objekte an,
 
 Eine **Verweistypen**-Struktur in einem Momentaufnahmenvergleichsbericht weist die folgenden Spalten auf. Eine **Verweisobjekte**-Struktur umfasst die folgenden Spalten: **Instanz**, **Größe (Bytes)** , **Inklusive Größe (Bytes)** und **Modul**.
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Objekttyp** oder **Instanz**|Der Name des Typs oder der Objektinstanz.|
 |**Verweisanzahl**|Die Zahl der Instanzen eines Typs in der primären Momentaufnahme.|

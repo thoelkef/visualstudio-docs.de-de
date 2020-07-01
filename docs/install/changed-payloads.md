@@ -2,7 +2,7 @@
 title: Geänderte Paketnutzlasten nach Veröffentlichung eines Release
 description: Hier erfahren Sie, wie Sie beim Erstellen eines Layouts bestimmen, ob sich Paketnutzlasten geändert haben, nachdem ein Release bereits ausgeliefert wurde.
 ms.date: 05/22/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dec1478314e752ddace8fae822747e7c8e328b70
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 135a89534b17a509d75616b0819dae112901fef3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114590"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419249"
 ---
 # <a name="package-payload-changes"></a>Änderungen an der Nutzlast von Paketen
 
