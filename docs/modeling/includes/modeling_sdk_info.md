@@ -8,4 +8,4 @@ ms.lasthandoff: 07/15/2019
 ms.locfileid: "68145045"
 ---
 > [!NOTE]
-> Die **Textvorlagen-Transformationsprozess** Komponente wird automatisch installiert, als Teil der **Visual Studio-extensionentwicklung** arbeitsauslastung. Sie können auch Installation über die **Einzelkomponenten** Visual Studio-Installer auf der Registerkarte unter der **SDKs, Bibliotheken und Frameworks** Kategorie. Installieren Sie die **Modellierungs-SDK** -Komponente aus der **Einzelkomponenten** Registerkarte.
+> Die Komponente für die **Text Vorlagen Transformation** wird automatisch als Teil der **Visual Studio-Erweiterungs Entwicklung** installiert. Sie können Sie auch über die Registerkarte **einzelne Komponenten** der Visual Studio-Installer unter der Kategorie **SDK, Bibliotheken und Frameworks** installieren. Installieren Sie die **Modellierungs-SDK** -Komponente auf der Registerkarte **einzelne Komponenten** .
