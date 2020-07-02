@@ -1,49 +1,49 @@
 ---
-title: 'Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Erweiterungen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden des regelbasierten UI-Kontexts für Erweiterungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f66f635b2c248af01067d9dbd96fd997593593
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62425748"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535563"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Gewusst wie: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xref:Microsoft.VisualStudio.Shell.UIContext>s aktiviert werden. Diese Benutzeroberfläche-Kontexte sind nicht sehr gut abgestimmte, verlassen erweiterungsautoren keine andere Möglichkeit jedoch um eine verfügbare UI-Kontext zu übernehmen, die vor dem Zeitpunkt aktiviert sie wollten das VSPackage zu laden. Eine Liste der gut bekannte benutzerschnittstellenkontexte, finden Sie unter <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.
+Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xref:Microsoft.VisualStudio.Shell.UIContext> en aktiviert sind. Diese UI-Kontexte sind jedoch nicht sehr fein abgeglichen, sodass Erweiterungs Autoren nicht ausgewählt werden können, sondern ein verfügbarer UI-Kontext ausgewählt wird, der vor dem Punkt aktiviert wird, an dem das VSPackage wirklich geladen werden soll. Eine Liste der bekannten UI-Kontexte finden Sie unter <xref:Microsoft.VisualStudio.Shell.KnownUIContexts> .
 
- Laden von Paketen kann die Auswirkungen auf die Leistung haben, und Laden sie früher als sie benötigt werden, ist nicht die bewährte Methode. Visual Studio 2015 eingeführt, das Konzept der Benutzeroberflächenkontexte regelbasierten, ein Mechanismus, können Ersteller von Erweiterungen zum Definieren der präzisen Bedingungen, unter dem einen UI-Kontext aktiviert ist, und zugeordnete VSPackages geladen, wird.
+ Das Laden von Paketen kann sich negativ auf die Leistung auswirken und Sie schneller laden, als Sie benötigt werden. Dies ist nicht die bewährte Vorgehensweise. Visual Studio 2015 führte das Konzept von regelbasierten UI-Kontexten ein, einen Mechanismus, mit dem Erweiterungs Autoren die genauen Bedingungen definieren können, unter denen ein UI-Kontext aktiviert und zugeordnete VSPackages geladen werden.
 
-## <a name="rule-based-ui-context"></a>Regel-basierte Benutzeroberfläche-Kontext
- Eine "Regel" besteht aus einen neuen UI-Kontext (eine GUID) und ein boolescher Ausdruck, der eine oder mehrere "Terms" verweist auf zusammen mit logischen "und", "or", "not"-Vorgänge. "Terms" dynamisch zur Laufzeit ausgewertet, und der Ausdruck ist erneut ausgewertet, wenn die Bedingungen Änderungen. Wenn der Ausdruck "true" ergibt, wird die zugeordnete UI-Kontext aktiviert. Andernfalls ist der UI-Kontext de-activated.
+## <a name="rule-based-ui-context"></a>Regelbasierter UI-Kontext
+ Eine "Regel" besteht aus einem neuen UI-Kontext (eine GUID) und einem booleschen Ausdruck, der auf ein oder mehrere "Begriffe" in Kombination mit logischen "and"-, "or"-, "Not"-Vorgängen verweist. "Begriffe" werden zur Laufzeit dynamisch ausgewertet, und der Ausdruck wird immer dann neu ausgewertet, wenn sich die Begriffe ändern. Wenn der Ausdruck zu true ausgewertet wird, wird der zugehörige UI-Kontext aktiviert. Andernfalls wird der UI-Kontext deaktiviert.
 
- Regelbasierte UI-Kontext kann verwendet werden, in einer Vielzahl von Möglichkeiten:
+ Der regelbasierte UI-Kontext kann auf verschiedene Arten verwendet werden:
 
-1. Geben Sie die Sichtbarkeit von Einschränkungen für Befehle und Toolfenster. Sie können die Windows-Befehle/Tools ausblenden, bis die UI-Kontext Regel erfüllt ist.
+1. Geben Sie Sichtbarkeits Einschränkungen für Befehle und Tool Fenster an. Sie können die Fenster Befehle/Tools ausblenden, bis die UI-Kontext Regel erfüllt ist.
 
-2. Als Auto serverlastbeschränkungen: Automatisches Laden Pakete nur, wenn die Regel erfüllt ist
+2. Als Einschränkungen für automatisches Laden: Pakete automatisch laden, wenn die Regel erfüllt ist
 
-3. Verzögerte Aufgabe: verzögert geladen werden, bis ein angegebenes Intervall ist verstrichen, und weiterhin die Regel erfüllt ist.
+3. Verzögerte Aufgabe: verzögertes Laden, bis ein angegebenes Intervall verstrichen ist und die Regel noch erfüllt ist.
 
-   Der Mechanismus kann von jedem Visual Studio-Erweiterung verwendet werden.
+   Der Mechanismus kann von jeder Visual Studio-Erweiterung verwendet werden.
 
-## <a name="create-a-rule-based-ui-context"></a>Erstellen Sie einen regelbasierten UI-Kontext
- Angenommen, Sie haben es sich um eine Erweiterung TestPackage, das einen Menübefehl bietet die gilt nur für Dateien mit der Dateierweiterung ".config" aufgerufen. Vor Visual Studio 2015, wurde die beste Option zum Laden von TestPackage beim <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI-Kontext wurde aktiviert. Dies ist nicht effizient, da die geladene Projektmappe auch eine config-Datei möglicherweise keinen enthält. Lassen Sie uns finden Sie unter wie regelbasierten Benutzeroberflächenkontexts verwendet werden kann, um einen UI-Kontext nur, wenn eine Datei mit der Dateierweiterung .config aktivieren ausgewählt ist, und TestPackage zu laden, wenn diese UI-Kontext aktiviert ist.
+## <a name="create-a-rule-based-ui-context"></a>Erstellen eines regelbasierten UI-Kontexts
+ Angenommen, Sie verfügen über eine Erweiterung namens testpackage, die einen Menübefehl enthält, der nur auf Dateien mit der Erweiterung ". config" angewendet wird. Vor VS2015 war die beste Option, testpackage beim Aktivieren des <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI-Kontexts zu laden. Dies ist nicht effizient, da die geladene Projekt Mappe möglicherweise nicht einmal eine. config-Datei enthält. Sehen wir uns an, wie der regelbasierte UI-Kontext verwendet werden kann, um einen UI-Kontext nur dann zu aktivieren, wenn eine Datei mit der Erweiterung. config ausgewählt ist, und testpackage beim Aktivieren dieses UI-Kontexts zu laden.
 
-1. Definieren Sie eine neue UIContext-GUID und die VSPackage-Klasse hinzufügen <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.
+1. Definieren Sie eine neue UIContext-GUID, und fügen Sie der VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> -Klasse und hinzu <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute> .
 
-    Beispielsweise nehmen wir an einer neuen UIContext "UIContextGuid" wird hinzugefügt werden. Die GUID erstellt (Sie können eine GUID erstellen, indem Sie die Tools auf -> Guid erstellen) "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" ist. Sie fügen dann Folgendes in der Paketklasse:
+    Nehmen wir beispielsweise an, dass ein neues UIContext "uicontextguid" hinzugefügt werden muss. Die erstellte GUID (Sie können eine GUID erstellen, indem Sie auf Extras-> Create GUID klicken) ist "8b40d5e2-5626-42ae-99ef-3dd1eff46e7b". Fügen Sie dann in der Paket Klasse Folgendes hinzu:
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    Fügen Sie Folgendes hinzu, für die Attribute können: (Details zu diesen Attributen werden weiter unten erläutert)
+    Fügen Sie für die Attribute Folgendes hinzu: (Details zu diesen Attributen werden später erläutert.)
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -54,17 +54,17 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    Diese Metadaten definieren, die neue UIContext-GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) und einen Ausdruck verweisen auf einen einzelnen Begriff "DotConfig". Der Begriff "DotConfig" auf "true" ausgewertet wird, wenn die aktuelle Auswahl in der aktiven Hierarchie einen Namen verfügt, das Muster des regulären Ausdrucks entspricht "\\config$" (mit ".config" endet). Der Wert (Standard) definiert einen optionalen Namen für die Regel, die beim Debuggen nützlich.
+    Diese Metadaten definieren die neue UIContext-GUID (8b40d5e2-5626-42ae-99ef-3dd1eff46e7b) und einen Ausdruck, der auf einen einzelnen Begriff ("dotconfig") verweist. Der Begriff "dotconfig" wird als "true" ausgewertet, wenn die aktuelle Auswahl in der aktiven Hierarchie einen Namen aufweist, der mit dem Muster des regulären Ausdrucks " \\ . config $" übereinstimmt (endet mit ". config"). Der (standardmäßige) Wert definiert einen optionalen Namen für die Regel, die für das Debuggen nützlich ist.
 
-    Die Werte des Attributs werden generiert, bei der Erstellung danach Pkgdef hinzugefügt.
+    Die Werte des-Attributs werden dem während der Buildzeit generierten pkgdef hinzugefügt.
 
-2. Fügen Sie in der VSCT-Datei für die TestPackage Befehle auf den entsprechenden Befehlen das Flag "DynamicVisibility" hinzu:
+2. Fügen Sie in der vsct-Datei für die Befehle von testpackage dem entsprechenden Befehl das Flag "dynamicvisibility" hinzu:
 
    ```xml
    <CommandFlag>DynamicVisibility</CommandFlag>
    ```
 
-3. Klicken Sie im Abschnitt Sichtbarkeiten des der VSCT verknüpfen Sie die entsprechenden Befehle, um die neue UIContext-GUID in #1 definiert:
+3. Verknüpfen Sie die entsprechenden Befehle im Abschnitt "visibilitäten" von vsct mit der neuen UIContext-GUID, die in #1 definiert ist:
 
    ```xml
    <VisibilityConstraints>
@@ -72,30 +72,30 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
    </VisibilityConstraints>
    ```
 
-4. Fügen Sie im Abschnitt "Symbole" die Definition der UIContext hinzu:
+4. Fügen Sie im Abschnitt "Symbole" die Definition von "UIContext" hinzu:
 
    ```xml
    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    Die Kontextmenübefehle für *.config-Dateien werden nun sichtbar sein, nur, wenn das ausgewählte Element im Projektmappen-Explorer eine Datei ".config ist" und das Paket wird nicht geladen werden, bis eines dieser Befehle ausgewählt ist.
+    Nun werden die Kontextmenü Befehle für *. config-Dateien nur angezeigt, wenn das ausgewählte Element im Projektmappen-Explorer eine ". config"-Datei ist und das Paket erst geladen wird, wenn einer dieser Befehle ausgewählt ist.
 
-   Als Nächstes verwenden wir einen Debugger, um sicherzustellen, dass das Paket lädt nur wenn sie voraussichtlich. So debuggen Sie TestPackage:
+   Als nächstes verwenden wir einen Debugger, um zu bestätigen, dass das Paket nur geladen wird, wenn es erwartet wird. So debuggen Sie testpackage:
 
-5. Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.
+5. Legen Sie einen Haltepunkt in der- <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode fest.
 
-6. Erstellen Sie die TestPackage, und starten Sie das Debuggen.
+6. Erstellen Sie das testpackage, und starten Sie das Debugging.
 
-7. Erstellen Sie ein Projekt oder öffnen Sie eine.
+7. Erstellen Sie ein Projekt, oder öffnen Sie ein Projekt.
 
-8. Wählen Sie alle Dateien mit einer anderen Erweiterung als config. Der Haltepunkt sollte nicht erreicht werden.
+8. Wählen Sie eine beliebige Datei mit einer anderen Erweiterung als ". config" aus. Der Breakpoint sollte nicht gedrückt werden.
 
-9. Wählen Sie die Datei "App.config".
+9. Wählen Sie die App.Config Datei aus.
 
-   Die TestPackage lädt und die Ausführung am Haltepunkt beendet.
+   Das testpackage lädt und hält am Haltepunkt an.
 
-## <a name="adding-more-rules-for-ui-context"></a>Hinzufügen von weiteren Regeln für die UI-Kontext
- Da die UI-Kontext Regeln boolesche Ausdrücke sind, können Sie restriktivere Regeln für einen UI-Kontext hinzufügen. In den oben genannten UI-Kontext, können Sie beispielsweise angeben, dass die Regel gilt nur, wenn eine Projektmappe mit einem Projekt geladen wird. Auf diese Weise werden die Befehle angezeigt, wenn Sie eine Datei ".config" als eigenständige Datei und nicht als Teil eines Projekts öffnen.
+## <a name="adding-more-rules-for-ui-context"></a>Hinzufügen von weiteren Regeln für den UI-Kontext
+ Da es sich bei den UI-Kontextregeln um boolesche Ausdrücke handelt, können Sie eingeschränktere Regeln für einen UI-Kontext hinzufügen. Im obigen UI-Kontext können Sie z. b. angeben, dass die Regel nur angewendet wird, wenn eine Projekt Mappe mit einem Projekt geladen wird. Auf diese Weise werden die Befehle nicht angezeigt, wenn Sie eine config-Datei als eigenständige Datei öffnen, nicht als Teil eines Projekts.
 
 ```csharp
 [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -106,12 +106,12 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
     termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
 ```
 
- Der Ausdruck verweist jetzt drei Begriffe. Die ersten beiden Begriffe, "SingleProject" und "MultipleProjects", finden Sie in anderen gut bekannte Benutzerschnittstellenkontexte (anhand ihrer GUIDs). Der dritte Begriff ist, ist "DotConfig" den zuvor definierten Benutzeroberflächenkontext regelbasierte.
+ Nun verweist der Ausdruck auf drei Begriffe. Die ersten beiden Begriffe "singleproject" und "multipleprojects" beziehen sich auf andere bekannte UI-Kontexte (durch Ihre GUIDs). Der dritte Begriff "dotconfig" ist der regelbasierte UI-Kontext, den wir zuvor definiert haben.
 
 ## <a name="delayed-activation"></a>Verzögerte Aktivierung
- Regeln können eine optionale "Verzögerung" enthalten. Es ist die Verzögerung in Millisekunden angegeben. Falls vorhanden, wird die Verzögerung der Aktivierung oder Deaktivierung des UI-Kontext an einer Regel, die durch dieses Zeitintervalls verzögert werden. Wenn Änderungen an den zu bevor das Verzögerungsintervall sichern, passiert dann nichts. Dieser Mechanismus kann verwendet werden, um "Initialisierungsschritte – insbesondere einmalige Initialisierung, ohne auf Zeitgeber verlassen, oder Registrieren für im Leerlauf Benachrichtigungen staffeln".
+ Regeln können eine optionale "Verzögerung" aufweisen. Die Verzögerung wird in Millisekunden angegeben. Falls vorhanden, bewirkt die Verzögerung, dass die Aktivierung oder Deaktivierung des UI-Kontexts einer Regel durch dieses Zeitintervall verzögert wird. Wenn sich die Regel vor dem Verzögerungs Intervall ändert, geschieht nichts. Dieser Mechanismus kann verwendet werden, um Initialisierungs Schritte zu "Staffeln". Dies gilt insbesondere für die einmalige Initialisierung ohne Verwendung von Timern oder die Registrierung für Leerlauf Benachrichtigungen.
 
- Beispielsweise können Sie Ihre Test-Load-Regel, um eine Verzögerung von 100 Millisekunden angeben:
+ Beispielsweise können Sie für die Test Last Regel eine Verzögerung von 100 Millisekunden angeben:
 
 ```csharp
 [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -123,29 +123,29 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
     delay: 100)]
 ```
 
-## <a name="term-types"></a>Laufzeit-Typen
- Hier sind die verschiedenen Typen von Begriff, die unterstützt werden:
+## <a name="term-types"></a>Begriffs Typen
+ Hier sind die verschiedenen Typen von Begriffs, die unterstützt werden:
 
-|||
+|Term Type|Beschreibung|
 |-|-|
-|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Die GUID bezieht sich auf einen UI-Kontext. Der Begriff ist true, wenn der UI-Kontext aktiv und "false" ist.|
-|HierSingleSelectionName:\<pattern>|Der Begriff wird "true" sein, wenn die Auswahl in der aktiven Hierarchie ein einzelnes Element ist und der Namen des ausgewählten Elements dem regulären .net-Ausdruck, die durch "Pattern" angegeben entspricht.|
-|UserSettingsStoreQuery:\<query>|"Query" stellt einen vollständigen Pfad dar, in den Speicher für benutzereinstellungen die auf einen Wert ungleich NULL ergeben muss. Die Abfrage wird in eine "Auflistung" und "Eigenschaftsname" auf den letzten Schrägstrich geteilt.|
-|ConfigSettingsStoreQuery:\<query>|"Query" stellt einen vollständigen Pfad dar, in dem Konfigurationsspeicher für die Einstellungen für die auf einen Wert ungleich NULL ergeben muss. Die Abfrage wird in eine "Auflistung" und "Eigenschaftsname" auf den letzten Schrägstrich geteilt.|
-|ActiveProjectFlavor:\<projectTypeGuid>|Der Begriff wird "true" werden, wenn das aktuell ausgewählte Projekt flavored ist (aggregiert) und verfügt über eine Flavor Übereinstimmung den angegebenen Projekttyp-GUID.|
-|ActiveEditorContentType:\<contentType>|Der Ausdruck ist true, wenn das ausgewählte Dokument mit einem Text-Editor mit dem angegebenen Inhaltstyp ist.|
-|ActiveProjectCapability:\<Expression>|Der Begriff ist "true", wenn aktive Projektfunktionen entspricht dem angegebenen Ausdruck. Ein Ausdruck kann sein, etwa VB &#124; CSharp|
-|SolutionHasProjectCapability:\<Expression>|Ähnlich wie im oben genannten jedoch Ausdruck ist true, wenn Lösung alle geladenes Projekt, das mit dem Ausdruck übereinstimmt.|
-|SolutionHasProjectFlavor:\<projectTypeGuid>|Der Begriff ist true, wenn eine Lösung verfügt über Projekt, das flavored ist (aggregiert) und verfügt über eine Flavor Übereinstimmung den angegebenen Projekttyp GUID.|
+|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Der GUID bezieht sich auf einen UI-Kontext. Der Begriff ist "true", wenn der UI-Kontext aktiv ist, andernfalls "false".|
+|Hiersingleselectionname:\<pattern>|Der Begriff ist true, wenn es sich bei der Auswahl in der aktiven Hierarchie um ein einzelnes Element handelt und der Name des ausgewählten Elements mit dem regulären .net-Ausdruck übereinstimmt, der von "Pattern" angegeben wird.|
+|Usersettingsstorequery:\<query>|"Query" stellt einen vollständigen Pfad zum Benutzer Einstellungs Speicher dar, der zu einem Wert ungleich 0 (null) ausgewertet werden muss. Die Abfrage wird im letzten Schrägstrich in eine "Collection" und "PropertyName" aufgeteilt.|
+|Configsettingsstorequery:\<query>|"Query" stellt einen vollständigen Pfad zum Konfigurations Einstellungs Speicher dar, der zu einem Wert ungleich 0 (null) ausgewertet werden muss. Die Abfrage wird im letzten Schrägstrich in eine "Collection" und "PropertyName" aufgeteilt.|
+|Activeprojectflavor:\<projectTypeGuid>|Der Begriff ist "true", wenn das aktuell ausgewählte Projekt (aggregiert) und eine mit der angegebenen Projekttyp-GUID übereinstimmende Konfiguration verwendet wird.|
+|Activeeditor ContentType:\<contentType>|Der Begriff ist true, wenn es sich bei dem ausgewählten Dokument um einen Text-Editor mit dem angegebenen Inhaltstyp handelt.|
+|Activeprojectcapability:\<Expression>|Der Begriff ist "true", wenn aktive Projektfunktionen mit dem bereitgestellten Ausdruck übereinstimmen. Ein Ausdruck kann in etwa vb &#124; CSharp lauten.|
+|Solutionhasprojectcapability:\<Expression>|Ähnlich wie oben, aber Term ist true, wenn die Projekt Mappe über ein geladenes Projekt verfügt, das mit dem Ausdruck übereinstimmt.|
+|Solutionhasprojectflavor:\<projectTypeGuid>|Der Begriff ist "true", wenn eine Projekt Mappe über ein Projekt verfügt, das mit dem angegebenen Projekttyp-GUID übereinstimmt.|
 
-## <a name="compatibility-with-cross-version-extension"></a>Kompatibilität mit versionsübergreifende-Erweiterung
- Regel, die je Benutzeroberflächenkontexte ist ein neues Feature in Visual Studio 2015 und würde nicht mit früheren Versionen portiert werden. Dadurch wird ein Problem mit den Erweiterungen/Paketen, die auf mehrere Versionen von Visual Studio werden ausgerichtet, automatisch geladen werden, in Visual Studio 2013 und frühere Versionen, aber profitieren von einer Regel auf Basis der Benutzeroberfläche-Kontexte, um zu verhindern, wird automatisch geladen in Visual Studio 2015 erstellt.
+## <a name="compatibility-with-cross-version-extension"></a>Kompatibilität mit Versions übergreifenden Erweiterungen
+ Regelbasierte UI-Kontexte sind ein neues Feature in Visual Studio 2015 und werden nicht zu früheren Versionen portiert. Dadurch wird ein Problem mit Erweiterungen/Paketen verursacht, die mehrere Versionen von Visual Studio als Ziel haben, die in Visual Studio 2013 und früher automatisch geladen werden müssen. Sie können jedoch von regelbasierten UI-Kontexten profitieren, um zu verhindern, dass Sie automatisch in Visual Studio 2015 geladen werden.
 
- Um diese Pakete unterstützen, können AutoLoadPackages Einträge in der Registrierung jetzt bereitstellen ein Flag im Wertfeld um anzugeben, dass der Eintrag in Visual Studio 2015 und höher übersprungen werden soll. Dies ist möglich durch eine Flags-Option zum Hinzufügen <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. VSPackages können jetzt hinzufügen **SkipWhenUIContextRulesActive** die Möglichkeit, ihre <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Attribut, um anzugeben, der Eintrag in Visual Studio 2015 und höher ignoriert werden sollen.
+ Um solche Pakete zu unterstützen, können die autoloadpackages-Einträge in der Registrierung nun ein Flag in Ihrem Wertfeld bereitstellen, um anzugeben, dass der Eintrag in Visual Studio 2015 und höher ausgelassen werden soll. Hierzu können Sie eine Flags-Option hinzufügen <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> . VSPackages können jetzt die Option **skip\uicontextrulesactive** zu Ihrem <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Attribut hinzufügen, um anzugeben, dass der Eintrag in Visual Studio 2015 und höher ignoriert werden soll.
 
-## <a name="extensible-ui-context-rules"></a>Erweiterbare Benutzeroberfläche-Kontext-Regeln
- In einigen Fällen können keine Pakete statische Regeln für UI-Kontext. Nehmen wir beispielsweise an, dass ein Paket die Erweiterbarkeit unterstützen, sodass der Befehlsstatus basierend auf der Editor-Typen, die vom importierten MEF-Anbieter unterstützt werden. Der Befehl ist aktiviert, wenn es ist eine Erweiterung, die den aktuellen "Edit" unterstützen. In solchen Fällen kann nicht das Paket selbst eine statische Regel für die UI-Kontext verwenden, da die Bedingungen ändern würde je nach der, die MEF-Erweiterungen verfügbar sind.
+## <a name="extensible-ui-context-rules"></a>Erweiterbare UI-Kontextregeln
+ Manchmal können Pakete keine statischen UI-Kontextregeln verwenden. Angenommen, Sie haben ein Paket, das Erweiterbarkeit unterstützt, sodass der Befehls Zustand auf Editor-Typen basiert, die von importierten MEF-Anbietern unterstützt werden. Der Befehl ist aktiviert, wenn eine Erweiterung vorhanden ist, die den aktuellen Typ der Bearbeitung unterstützt. In solchen Fällen kann das Paket selbst keine statische UI-Kontext Regel verwenden, da sich die Bedingungen abhängig davon ändern, welche MEF-Erweiterungen verfügbar sind.
 
- Um diese Pakete unterstützen, unterstützen regelbasiert Benutzeroberflächenkontexte einen hartcodierter Ausdruck "*", der angibt, alle der untenstehenden Bestimmungen werden mit angehören oder. Dies ermöglicht das Masterpaket definieren, dass eine bekannte Regel UI-Kontext erstellt werden, und der Befehlsstatus an diesen Kontext zu verknüpfen. Anschließend kann alle MEF-Erweiterungen, die als Ziel für das Masterpaket die Nutzungsbedingungen für Editoren hinzufügen, die sie ohne Auswirkungen auf andere Begriffe oder der master-Ausdruck unterstützt.
+ Um solche Pakete zu unterstützen, unterstützen regelbasierte UI-Kontexte einen hart codierten Ausdruck "*", der angibt, dass alle unten aufgeführten Begriffe mit oder verknüpft werden. Dadurch kann das Master Paket einen bekannten regelbasierten Benutzeroberflächen Kontext definieren und dessen Befehls Zustand mit diesem Kontext verknüpfen. Anschließend kann jede MEF-Erweiterung, die für das Master Paket vorgesehen ist, ihre Begriffe für Editoren hinzufügen, die Sie unterstützt, ohne dass andere Begriffe oder der Master Ausdruck beeinträchtigt
 
- Der Konstruktor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> die Dokumentation zeigt die Syntax für die erweiterbare Benutzeroberfläche-Kontext-Regeln.
+ Die <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> konstruktordokumentation zeigt die Syntax für erweiterbare UI-Kontextregeln.

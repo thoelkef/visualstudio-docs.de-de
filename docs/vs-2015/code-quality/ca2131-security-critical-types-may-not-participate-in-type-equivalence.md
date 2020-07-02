@@ -11,28 +11,28 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0d32ebc08866a14755ddb8b2c70e2dd0c4ce61f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ccd556a5929e56597de678ad4ad8ea6c101b7c7f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655495"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535888"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|Criticaltypesmustnotparticipateingetypeäquivalenz|
+|TypName|Criticaltypesmustnotparticipateingetypeäquivalenz|
 |CheckId|CA2131|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ ist an typäquivalenz beteiligt, und der Typ selbst oder ein Member oder Feld des Typs ist mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut gekennzeichnet.
+ Ein Typ ist an typäquivalenz beteiligt, und der Typ selbst oder ein Member oder Feld des Typs ist mit dem-Attribut gekennzeichnet <xref:System.Security.SecurityCriticalAttribute> .
 
-## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel wird für alle wichtigen Typen ausgelöst oder für Typen, die wichtige Methoden oder Felder enthalten, die an der Typäquivalenz beteiligt sind. Wenn die CLR einen solchen Typ erkennt, kann Sie nicht mit einer <xref:System.TypeLoadException> zur Laufzeit geladen werden. In der Regel wird diese Regel nur ausgelöst, wenn Benutzer Typäquivalenz manuell implementieren und die Typäquivalenz nicht von tlbimp und den Compilern ausführen lassen.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Diese Regel wird für alle wichtigen Typen ausgelöst oder für Typen, die wichtige Methoden oder Felder enthalten, die an der Typäquivalenz beteiligt sind. Wenn die CLR einen solchen Typ erkennt, kann Sie zur Laufzeit nicht mit einem geladen werden <xref:System.TypeLoadException> . In der Regel wird diese Regel nur ausgelöst, wenn Benutzer Typäquivalenz manuell implementieren und die Typäquivalenz nicht von tlbimp und den Compilern ausführen lassen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Entfernen Sie das SecurityCritical-Attribut, um einen Verstoß gegen diese Regel zu beheben.
@@ -45,5 +45,5 @@ ms.locfileid: "72655495"
 
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2131.criticaltypesmustnotparticipateintypeequivalence/cs/ca2131 - criticaltypesmustnotparticipateintypeequivalence.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
- [Sicherheits transparenter Code, Ebene 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+## <a name="see-also"></a>Weitere Informationen
+ [Sicherheitstransparenter Code, Ebene 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

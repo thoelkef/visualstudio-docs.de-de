@@ -29,7 +29,7 @@ ms.locfileid: "85533353"
 |-|-|
 |TypName|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
-|Category|Microsoft. Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

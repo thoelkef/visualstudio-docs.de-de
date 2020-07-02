@@ -1,72 +1,71 @@
 ---
-title: Manifest aus Ressourcen | Microsoft-Dokumentation
+title: Manifest from Resources | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4827402b63eadf517f031b04b7c7cf2fe8a4f56b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68192614"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537097"
 ---
 # <a name="manifest-from-resources"></a>Manifest aus Ressourcen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine Liste von Bildressourcen (PNG oder XAML-Dateien) und generiert eine .imagemanifest-Datei, die diese Images mit dem Visual Studio-Image-Dienst verwendet werden kann. Darüber hinaus kann dieses Tool verwendet werden, eine vorhandene .imagemanifest Bilder hinzugefügt. Dieses Tool eignet sich für das Hinzufügen von hohen dpi- und Design-Unterstützung für Bilder für Visual Studio-Erweiterung. Die generierte .imagemanifest-Datei sollte in enthalten und als Teil der Visual Studio-Erweiterung (VSIX) bereitgestellt werden.  
+Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von Bild Ressourcen (PNG-oder XAML-Dateien) annimmt und eine imagemanifest-Datei generiert, mit der diese Bilder mit dem Visual Studio-Image Dienst verwendet werden können. Darüber hinaus kann dieses Tool zum Hinzufügen von Bildern zu einem vorhandenen imagemanifest verwendet werden. Dieses Tool ist nützlich, wenn Sie einer Visual Studio-Erweiterung High-dpi-und Designunterstützung für Bilder hinzufügen möchten. Die generierte. imagemanifest-Datei sollte in einer Visual Studio-Erweiterung (VSIX-Datei) enthalten und bereitgestellt werden.  
   
-## <a name="how-to-use-the-tool"></a>Gewusst wie: Verwenden Sie das tool  
+## <a name="how-to-use-the-tool"></a>Verwenden des Tools  
  **Syntax**  
   
- ManifestFromResources Systemablagen:\<Dir1 >;\< Img1 >/Assembly:\<AssemblyName > \<optionale Argumente >  
+ ManifestFromResources/Resources: \<Dir1> ; \<Img1> /Assembly: \<AssemblyName>\<Optional Args>  
   
  **Argumente**  
   
-||||  
+|**SwitchName**|**Notizen**|**Erforderlich oder optional**|  
 |-|-|-|  
-|**SwitchName**|**Notizen**|**Erforderlich oder Optional**|  
-|Systemablagen|Eine durch Semikolons getrennte Liste von Bildern oder Verzeichnisse. Diese Liste sollte immer die vollständige Liste der Bilder enthalten, die im Manifest werden. Wenn nur eine unvollständige Liste angegeben ist, werden die Einträge nicht enthalten gelöscht.<br /><br /> Wenn eine bestimmte Ressource-Datei einen Bildstreifen handelt, teilt das Tool es in einzelne Bilder vor dem Hinzufügen jedes Teilbild im Manifest.<br /><br /> Wenn das Bild eine PNG-Datei ist, wird empfohlen, dass Sie den Namen wie folgt formatieren, sodass das Tool in den richtigen Attributen für das Bild gefüllt werden kann: \<Name >. \<Breite >. \<Höhe > PNG.|Required|  
-|/ Assembly|Der Name, der die verwaltete Assembly (nicht einschließlich Erweiterung), oder der Common Language Runtime-Pfad, der systemeigenen Assembly, auf dem die Ressourcen (relativ zum Speicherort des Manifests Common Language Runtime) gehostet werden soll.|Required|  
-|"/ manifest"|Der Name der generierten .imagemanifest-Datei zugewiesen. Dies kann auch einen absoluten oder relativen Pfad zum Erstellen der Datei an einem anderen Speicherort enthalten. Der Standardname entspricht der Name der Assembly.<br /><br /> Standard: \<Aktuelles Verzeichnis >\\< Assembly\>.imagemanifest|Optional|  
-|/guidName|Der Name, auf das Symbol "GUID" für alle Images im generierten Manifest zu gewähren.<br /><br /> Standard: AssetsGuid|Optional|  
-|/rootPath|Der Stammpfad, der vor dem Erstellen von verwalteten Ressourcen-URIs entfernt werden muss. (Dieses Flag ist in Fällen helfen, in dem das Tool den relativen URI-Pfad falsch sein, sodass Ressourcen, die Fehler beim Laden der ruft.)<br /><br /> Standard: \<Aktuelles Verzeichnis >|Optional|  
-|Recursive|Wenn Sie dieses Flag weist das Tool rekursiv durchsucht Verzeichnisse im Systemablagen-Argument. Das Auslassen dieses Flags führt zu einer top-Ebenen nur Suche von Verzeichnissen.|Optional|  
-|/isNative|Legen Sie dieses Flag an, wenn das Assemblyargument einen Pfad für eine native Assembly ist. Lassen Sie dieses Flag an, wenn das Assemblyargument den Namen einer verwalteten Assembly ist. (Siehe Abschnitt "Hinweise" Weitere Informationen über dieses Flag).|Optional|  
-|/newGuids|Wenn Sie dieses Flag weist das Tool zum Erstellen eines neuen Werts für Bilder GUID-Symbol anstelle der Definition aus der vorhandenen Manifest zusammenführen.|Optional|  
-|/newIds|Wenn Sie dieses Flag weist das Tool zum Erstellen der neuen ID-Symbolwerte für jedes Bild anstelle von Werten aus dem vorhandenen Manifest zusammenführen.|Optional|  
-|/noLogo|Dieses Flag wird beendet, Produkt und das Copyright-Informationen aus drucken.|Optional|  
-|/?|Ausgeben von Hilfeinformationen.|Optional|  
-|/help|Ausgeben von Hilfeinformationen.|Optional|  
+|/resources|Eine durch Semikolons getrennte Liste von Bildern oder Verzeichnissen. Diese Liste sollte immer die vollständige Liste der Images enthalten, die im Manifest enthalten sein werden. Wenn nur eine partielle Liste angegeben wird, gehen die Einträge, die nicht eingeschlossen werden, verloren.<br /><br /> Wenn eine bestimmte Ressourcen Datei ein Bildstreifen ist, teilt das Tool Sie in separate Bilder auf, bevor jedes untergeordnete Element dem Manifest hinzugefügt wird.<br /><br /> Wenn das Image eine PNG-Datei ist, wird empfohlen, den Namen so zu formatieren, dass das Tool die richtigen Attribute für das Bild ausfüllen kann: \<Name> . \<Width> . \<Height> . PNG.|Erforderlich|  
+|/Assembly|Der Name der verwalteten Assembly (ohne die Erweiterung) oder der Lauf Zeit Pfad der systemeigenen Assembly, die die Ressourcen hostet (relativ zum Lauf Zeit Speicherort des Manifests).|Erforderlich|  
+|/Manifest|Der Name, der der generierten imagemanifest-Datei übergeben werden soll. Dies kann auch einen absoluten oder relativen Pfad enthalten, um die Datei an einem anderen Speicherort zu erstellen. Der Standardname entspricht dem Assemblynamen.<br /><br /> Standard: \<Current Directory> \\<Assembly \> . imagemanifest|Optional|  
+|/guidName|Der Name, der dem GUID-Symbol für alle Bilder im generierten Manifest übergeben werden soll.<br /><br /> Standard: assetguid|Optional|  
+|/rootPath|Der Stammpfad, der entfernt werden muss, bevor verwaltete Ressourcen-URIs erstellt werden. (Dieses Flag ist in Fällen hilfreich, in denen das Tool den relativen URI-Pfad falsch abruft, sodass Ressourcen nicht geladen werden können.)<br /><br /> Standard: \<Current Directory>|Optional|  
+|/recursive|Das Festlegen dieses Flags weist das Tool an, alle Verzeichnisse im/Resources-Argument rekursiv zu durchsuchen. Wenn Sie dieses Flag weglassen, führt dies zu einer einzigen Suche der Verzeichnisse der obersten Ebene.|Optional|  
+|/isNative|Legen Sie dieses Flag fest, wenn das assemblyargument ein Pfad für eine systemeigene Assembly ist. Lassen Sie dieses Flag aus, wenn das assemblyargument der Name einer verwalteten Assembly ist. (Weitere Informationen zu diesem Flag finden Sie im Abschnitt "Hinweise".)|Optional|  
+|/newGuids|Das Festlegen dieses Flags weist das Tool an, einen neuen Wert für das GUID-Symbol der Bilder zu erstellen, anstatt den aus dem vorhandenen Manifest zu mergen.|Optional|  
+|/newIds|Das Festlegen dieses Flags weist das Tool an, neue ID-Symbol Werte für jedes Bild zu erstellen, statt Werte aus dem vorhandenen Manifest zusammenzuführen.|Optional|  
+|/noLogo|Wenn Sie dieses Flag festlegen, werden die Produkt-und Copyright Informationen nicht gedruckt.|Optional|  
+|/?|Ausdrucken von Hilfe Informationen.|Optional|  
+|/help|Ausdrucken von Hilfe Informationen.|Optional|  
   
  **Beispiele**  
   
-- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+- ManifestFromResources/Resources: d:\Images/Assembly: My. Assembly. Name/isNative  
   
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources/resources:D:\Images\Image1.png;D: \images\image1.XAML/Assembly: My. Assembly. Name/Manifest: myimagemanifest. imagemanifest  
   
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources/resources:D:\Images\Image1.png;D: \images\image1.XAML/Assembly: My. Assembly. Name/guidName: myImages/newGuids/newIds  
   
 ## <a name="notes"></a>Hinweise  
   
-- Das Tool unterstützt nur PNG und XAML-Dateien. Alle anderen Bild oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen aufgetreten beim Analysieren von Ressourcen wird eine Warnung generiert. Wenn keine unterstützte Images befinden sich Wenn das Tool abgeschlossen ist analysieren die Ressourcen, wird ein Fehler generiert werden  
+- Das Tool unterstützt nur PNG-und XAML-Dateien. Alle anderen Bild-oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen, die beim Generieren der Ressourcen auftreten, wird eine Warnung generiert. Wenn keine unterstützten Images gefunden werden, nachdem das Tool die Ressourcenverarbeitung abgeschlossen hat, wird ein Fehler generiert.  
   
-- Befolgen Sie die vorgeschlagene Format für PNG-Bilder, wird das Tool der Größe/Dimensionen bestehenden Wert für die PNG-Format angegebene Größe des, festgelegt, auch wenn es die tatsächliche Größe des Bilds unterscheidet.  
+- Wenn das Tool auf das empfohlene Format für PNG-Bilder folgt, legt das Tool den Wert für die Größe bzw. den Dimensions Wert für die PNG-Datei auf das Format fest, auch wenn es von der tatsächlichen Größe des Bilds abweicht.  
   
-- Das Format der Breite/Höhe kann für PNG-Bilder weggelassen werden, aber das Tool des Bilds tatsächliche Breite und Höhe zu lesen und verwenden Sie diese für die Größe/Dimensionen bestehenden Wert des Bilds.  
+- Das width/height-Format kann für PNG-Bilder ausgelassen werden, aber das Tool liest die tatsächliche Breite bzw. Höhe des Bilds und verwendet diese für den Größen-/Dimensionswert des Bilds.  
   
-- Ausführen dieses Tools auf den gleichen Bildstreifen mehrmals für den gleichen .imagemanifest führt zu doppelten manifesteinträge, daran, dass das Tool versucht, teilen den Bildstreifen in separate Abbildungen und tragen Sie in der vorhandenen Manifest.  
+- Wenn Sie dieses Tool mehrmals auf demselben Bildstreifen ausführen, werden doppelte Manifest-Einträge ausgegeben, da das Tool versucht, den Bildstreifen in eigenständige Bilder aufzuteilen und diese dem vorhandenen Manifest hinzuzufügen.  
   
-- Zusammenführen (durch das weglassen /newGuids bzw. /newIds) sollte nur für die Tool-generierte Manifeste durchgeführt werden. Manifeste, die angepasst oder auf andere Weise generiert wurden möglicherweise nicht richtig gemergt werden.  
+- Das Zusammenführen (Weglassen von/newGuids oder/newIds) sollte nur für Tool generierte Manifeste erfolgen. Manifeste, die auf andere Weise angepasst oder generiert wurden, werden möglicherweise nicht ordnungsgemäß zusammengeführt.  
   
-- Manifeste, die für die systemeigenen Assemblys generiert werden müssen möglicherweise manuell bearbeitet werden, nach der Generierung, stellen die ID-Symbole, die die Ressourcen-IDs aus der nativen Assembly RC-Datei übereinstimmen werden.  
+- Manifeste, die für Native Assemblys generiert werden, müssen möglicherweise nach der Generierung Hand bearbeitet werden, damit die ID-Symbole den Ressourcen-IDs aus der RC-Datei der systemeigenen Assembly entsprechen.  
   
 ## <a name="sample-output"></a>Beispielausgabe  
- **Einfache bildmanifest**  
+ **Einfaches Bild Manifest**  
   
- Einem bildmanifest werden dieser XML-Datei ähnelt:  
+ Ein Bild Manifest ähnelt dieser XML-Datei:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -90,9 +89,9 @@ Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine
 </ImageManifest>  
 ```  
   
- **Bildmanifest für einen Bildstreifen**  
+ **Bild-Manifest für einen Bildstreifen**  
   
- Einem bildmanifest für einen Bildstreifen werden dieser XML-Datei ähnelt:  
+ Ein Bild-Manifest für einen Bildstreifen ähnelt dieser XML-Datei:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -127,9 +126,9 @@ Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine
 </ImageManifest>  
 ```  
   
- **Bildmanifest für systemeigene Assembly Bildressourcen**  
+ **Bild Manifest für Native assemblybildressourcen**  
   
- Einem bildmanifest für systemeigene Images werden dieser XML-Datei ähnelt:  
+ Ein Bild Manifest für Native Images ähnelt dieser XML-Datei:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671975"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535745"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|AttributeStringLiteralsShouldParseCorrectly|
+|TypName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
@@ -35,8 +35,8 @@ ms.locfileid: "72671975"
 ## <a name="cause"></a>Ursache
  Der zeichenfolgenliteralparameter eines Attributs wird für eine URL, eine GUID oder eine Version nicht ordnungsgemäß analysiert.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Da Attribute von <xref:System.Attribute?displayProperty=fullName> abgeleitet werden und Attribute zur Kompilierzeit verwendet werden, können nur konstante Werte an Ihre Konstruktoren übergeben werden. Attribut Parameter, die URLs, GUIDs und Versionen darstellen müssen, können nicht als <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> und <xref:System.Version?displayProperty=fullName> typisiert werden, da diese Typen nicht als Konstanten dargestellt werden können. Stattdessen müssen Sie durch Zeichen folgen dargestellt werden.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Da Attribute von abgeleitet werden <xref:System.Attribute?displayProperty=fullName> und Attribute zur Kompilierzeit verwendet werden, können nur konstante Werte an Ihre Konstruktoren übergeben werden. Attribut Parameter, die URLs, GUIDs und Versionen darstellen müssen, können nicht als <xref:System.Uri?displayProperty=fullName> , und eingegeben werden <xref:System.Guid?displayProperty=fullName> <xref:System.Version?displayProperty=fullName> , da diese Typen nicht als Konstanten dargestellt werden können. Stattdessen müssen Sie durch Zeichen folgen dargestellt werden.
 
  Da der-Parameter als Zeichenfolge typisiert ist, kann es vorkommen, dass ein falsch formatierter Parameter zum Zeitpunkt der Kompilierung übergeben werden kann.
 
@@ -61,5 +61,5 @@ ms.locfileid: "72671975"
 
 - Parameter, die ' URI ', ' urn ' oder ' URL ' enthalten und nicht in ' System. URI ' analysiert werden können.
 
-## <a name="see-also"></a>Siehe auch
- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+## <a name="see-also"></a>Weitere Informationen
+ [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

@@ -48,7 +48,7 @@ Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von 
 
 - ManifestFromResources/resources:D:\Images\Image1.png;D: \images\image1.XAML/Assembly: My. Assembly. Name/guidName: myImages/newGuids/newIds
 
-## <a name="notes"></a>Notizen
+## <a name="notes"></a>Hinweise
 
 - Das Tool unterstützt nur PNG-und XAML-Dateien. Alle anderen Bild-oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen, die beim Generieren der Ressourcen auftreten, wird eine Warnung generiert. Wenn keine unterstützten Images gefunden werden, nachdem das Tool die Ressourcenverarbeitung abgeschlossen hat, wird ein Fehler generiert.
 

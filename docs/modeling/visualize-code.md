@@ -20,7 +20,7 @@ ms.locfileid: "85535875"
 ---
 # <a name="visualize-code"></a>Visualisieren von Code
 
-Sie können die Visualisierungs- und Modellierungstools in Visual Studio verwenden, damit diese Ihnen dabei helfen, vorhandenen Code zu verstehen und Ihre Anwendung zu beschreiben. Dies lässt Sie visuell erfahren, wie sich die Änderungen auf den Code auswirken, und Sie können die Arbeit und die Risiken bewerten, die sich von den Änderungen ergeben. Beispiel:
+Sie können die Visualisierungs- und Modellierungstools in Visual Studio verwenden, damit diese Ihnen dabei helfen, vorhandenen Code zu verstehen und Ihre Anwendung zu beschreiben. Dies lässt Sie visuell erfahren, wie sich die Änderungen auf den Code auswirken, und Sie können die Arbeit und die Risiken bewerten, die sich von den Änderungen ergeben. Zum Beispiel:
 
 - Ordnen Sie Beziehungen visuell zu, um diese Beziehungen in Ihrem Code besser zu verstehen.
 
@@ -40,7 +40,7 @@ Welche Editionen von Visual Studio die einzelnen Features unterstützen, erfahre
 |**Verstehen von Klassenstrukturen:**<br /><br /> Visualisieren Sie die Struktur von Klassen in einem Projekt, indem Sie aus dem Code Klassendiagramme erstellen.|[Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**Beschreiben Sie den allgemeinen Systementwurf, und überprüfen Sie den Code anhand dieses Entwurfs:**<br /><br /> Beschreiben Sie den System Entwurf auf hoher Ebene und die beabsichtigten Abhängigkeiten, indem Sie Abhängigkeits Diagramme erstellen. Überprüfen Sie Code anhand dieses Entwurfs, um sicherzustellen, dass die Abhängigkeiten im Code konsistent zum Entwurf verlaufen.|- [Erstellen von Abhängigkeits Diagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Abhängigkeits Diagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />- [Abhängigkeits Diagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />- [Überprüfen von Code mit Abhängigkeits Diagrammen](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Analyse und Modell Architektur](../modeling/analyze-and-model-your-architecture.md)

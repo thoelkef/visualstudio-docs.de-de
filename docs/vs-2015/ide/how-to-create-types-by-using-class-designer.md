@@ -18,37 +18,37 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d05b8a492768dfe9163d7ede55c2bf4aef084c26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668025"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533145"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Gewusst wie: Erstellen von Typen mit dem Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen, erstellen Sie sie in einem Klassendiagramm. Vorhandene Typen finden Sie unter [Vorgehensweise: Anzeigen von vorhandenen Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md).
 
-- [Erstellen eines neuen Typs](#CreateType)
+- [Neuen Typ erstellen](#CreateType)
 
 - [Anwenden eines benutzerdefinierten Attributs auf einen Typ](#CustAttributeType)
 
 - [Anwenden eines benutzerdefinierten Attributs auf einen Typmember](#CustAttributeMember)
 
-## <a name="CreateType"></a> Erstellen eines neuen Typs
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Neuen Typ erstellen
 
 1. Ziehen Sie in der Toolbox unter „Klassen-Designer“ eines der folgenden Elemente in ein Klassendiagramm:
 
     - **Klasse** oder **Abstrakte Klasse**
 
-    - **Enum**
+    - **Enumeration**
 
-    - **Interface**
+    - **Schnittstelle**
 
     - **Struktur** (VB) oder **Struct** (C#)
 
-    - **Delegate**
+    - **Delegat**
 
     - **Modul** (nur VB)
 
@@ -64,28 +64,27 @@ Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen
 
 4. Fügen Sie jetzt andere Elemente hinzu, um den Typ zu definieren:
 
-    |||
+    |**Damit**|**Add (Hinzufügen)**|
     |-|-|
-    |**For**|**Add**|
     |Klassen, abstrakte Klassen, Strukturen oder Structs|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode), Destruktoren (Methode) und Konstanten, die den Typ definieren|
     |Enumerationen|Feldwerte, die die Enumeration bilden|
     |Schnittstellen|Methoden, Eigenschaften und Ereignisse, die die Schnittstelle bilden|
-    |delegate|Parameter, die den Delegaten definieren|
+    |Delegat|Parameter, die den Delegaten definieren|
     |Modul|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode) und Konstanten, die das Modul definieren|
 
      Weitere Informationen finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
-## <a name="CustAttributeType"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typ
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typ
 
 1. Klicken Sie in einem Klassendiagramm auf die Form des Typs.
 
-2. Klicken Sie im Eigenschaftenfenster neben der Eigenschaft **Benutzerdefinierte Attribute** für den Typ auf die Schaltfläche mit den Auslassungspunkten (…).
+2. Klicken Sie im Eigenschaftenfenster neben der Eigenschaft **benutzerdefinierte Attribute** für den Typ auf die Schaltfläche mit den Auslassungs Punkten (...).
 
 3. Fügen Sie ein oder mehrere benutzerdefinierte Attribute hinzu (eines pro Zeile). Schließen Sie sie nicht in Klammern ein.
 
      Anschließend werden die benutzerdefinierten Attribute auf den Typ angewendet.
 
-## <a name="CustAttributeMember"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typmember
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Anwenden eines benutzerdefinierten Attributs auf einen Typmember
 
 1. Klicken Sie in einem Klassendiagramm in der Form des entsprechenden Typs auf den Namen des Members oder im Klassendetailsfenster auf die entsprechende Zeile.
 
@@ -95,5 +94,5 @@ Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen
 
      Anschließend werden die benutzerdefinierten Attribute auf den Typ angewendet.
 
-## <a name="see-also"></a>Siehe auch
- Vorgehens [Weise: Erstellen von Vererbung zwischen Typen (Klassen-Designer)](../ide/how-to-create-inheritance-between-types-class-designer.md) Gewusst [wie: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)](../ide/how-to-create-associations-between-types-class-designer.md) erstellen [und Konfigurieren von Typmembern (Klassen-Designer)](../ide/creating-and-configuring-type-members-class-designer.md) [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Gewusst wie: Erstellen von Vererbung zwischen Typen (Klassen-Designer)](../ide/how-to-create-inheritance-between-types-class-designer.md) Gewusst [wie: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)](../ide/how-to-create-associations-between-types-class-designer.md) erstellen [und Konfigurieren von Typmembern (Klassen-Designer)](../ide/creating-and-configuring-type-members-class-designer.md) [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md)
