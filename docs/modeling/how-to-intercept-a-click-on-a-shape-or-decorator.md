@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
@@ -9,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114519"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532521"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator
 Die folgenden Prozeduren veranschaulichen, wie ein Klick auf eine Form oder einen symboldecorator abgefangen wird. Sie können Klicks, Doppelklicks, Drags und andere Gesten abfangen und das Element dann antworten.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>So fangen Sie Klicks auf Formen ab
- Schreiben Sie im DSL-Projekt in einer Code Datei, die von den generierten Code Dateien getrennt ist, eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie `OnDoubleClick()` oder eine der anderen Methoden mit einem Namen, der mit `On...`beginnt. Beispiel:
+ Schreiben Sie im DSL-Projekt in einer Code Datei, die von den generierten Code Dateien getrennt ist, eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie `OnDoubleClick()` oder eine der anderen Methoden mit einem Namen, der mit beginnt `On...` . Zum Beispiel:
 
 ```csharp
 public partial class MyShape // change
@@ -34,10 +34,10 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> Legen Sie `e.Handled` auf `true`fest, es sei denn, Sie möchten das Ereignis an die enthaltende Form oder das enthaltende Diagramm übertragen.
+> Legen `e.Handled` Sie auf fest `true` , es sei denn, Sie möchten, dass das Ereignis an die enthaltende Form oder das enthaltende Diagramm
 
 ## <a name="to-intercept-clicks-on-decorators"></a>So fangen Sie Klicks auf Decorators ab
- Bild-decoratoren werden auf eine Instanz der ImageField-Klasse übertragen, die über eine OnDoubleClick-Methode verfügt. Sie können die Klicks abfangen, wenn Sie eine ImageField-Unterklasse schreiben. Die Felder werden in der initializeshapeer Fields-Methode eingerichtet. Daher müssen Sie diese Methode ändern, um die Unterklasse anstelle des regulären ImageField zu instanziieren. Die initializeshapeer Fields-Methode befindet sich im generierten Code der Shape-Klasse. Sie können die Shape-Klasse überschreiben, wenn Sie die `Generates Double Derived`-Eigenschaft wie im folgenden Verfahren beschrieben festlegen.
+ Bild-decoratoren werden auf eine Instanz der ImageField-Klasse übertragen, die über eine OnDoubleClick-Methode verfügt. Sie können die Klicks abfangen, wenn Sie eine ImageField-Unterklasse schreiben. Die Felder werden in der initializeshapeer Fields-Methode eingerichtet. Daher müssen Sie diese Methode ändern, um die Unterklasse anstelle des regulären ImageField zu instanziieren. Die initializeshapeer Fields-Methode befindet sich im generierten Code der Shape-Klasse. Sie können die Shape-Klasse überschreiben, wenn Sie die- `Generates Double Derived` Eigenschaft wie im folgenden Verfahren beschrieben festlegen.
 
  Obwohl initializeshapeer Fields eine Instanzmethode ist, wird Sie nur einmal für jede Klasse aufgerufen. Daher ist für jedes Feld in jeder Klasse nur eine Instanz von clickableimagefield vorhanden, nicht für jede Form im Diagramm. Wenn der Benutzer auf eine Instanz doppelklickt, müssen Sie identifizieren, welche Instanz gefunden wurde, wie der Code im Beispiel veranschaulicht.
 
@@ -112,7 +112,7 @@ public partial class MyShape // change
     }
     ```
 
-1. Erstellen Sie die Projektmappe, und führen Sie sie aus.
+1. Erstellen Sie das Projekt, und führen Sie es aus.
 
 2. Doppelklicken Sie auf das Symbol für eine Instanz der Form. Die Testnachricht sollte angezeigt werden.
 
@@ -129,11 +129,11 @@ public partial class MyShape // change
 
 4. Passen Sie die Domänen Klassen-und Shape-Namen in diesem Code entsprechend ihrer eigenen DSL an.
 
-   Zusammenfassend funktioniert der Code wie folgt. In diesem Beispiel ist `ClassShape` der Name der Depot Form.
+   Zusammenfassend funktioniert der Code wie folgt. In diesem Beispiel `ClassShape` ist der Name der Depot Form.
 
 - Eine Reihe von Maus Ereignis Handlern wird bei der Erstellung an jede Depot Instanz angefügt.
 
-- Das `ClassShape.MouseDown`-Ereignis speichert das aktuelle Element.
+- Das- `ClassShape.MouseDown` Ereignis speichert das aktuelle Element.
 
 - Wenn die Maus aus dem aktuellen Element bewegt wird, wird eine Instanz von MouseAction erstellt, mit der der Cursor festgelegt und die Maus bis zur Freigabe erfasst wird.
 

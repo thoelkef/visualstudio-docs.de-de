@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586947"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532040"
 ---
 # <a name="memory-usage-without-debugging"></a>Speicherauslastung ohne Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
   Die nummerierten Objekte im Bild sind Links, die Momentaufnahmenberichte öffnen.  
   
-|||  
+|Bild|Beschreibung|  
 |-|-|  
 |![Schritt 1](../profiling/media/procguid-1.png "ProcGuid_1")|Der Text des Links zeigt die Gesamtzahl der Bytes im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Gesamtgröße der Typinstanzen geordnet ist.|  
 |![Schritt 2](../profiling/media/procguid-2.png "ProcGuid_2")|Der Text des Links zeigt die Gesamtzahl der Objekte im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Anzahl der Typinstanzen geordnet ist.|  
@@ -135,7 +135,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  ![Struktur „Verwalteter Heap“](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|Name|Beschreibung|  
 |-|-|  
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|  
 |**Anzahl**|Die Anzahl der Objektinstanzen des Typs. Für eine Instanz ist die Anzahl stets 1.|  
@@ -154,7 +154,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  ![Referenzierte Objektstruktur für Instanzen](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Name|Beschreibung|  
 |-|-|  
 |**Objekttyp / -instanz**|Der Name des Typs oder der Objektinstanz.|  
 |**Größe (Byte)**|Für Typen: Die Größe aller Instanzen des Typs ohne die Größe der in dem Typ enthaltenen Objekte.<br /><br /> Für Instanzen: Die Größe des Objekts ohne die Größe der in dem Objekt enthaltenen Objekte.|  
@@ -176,7 +176,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  Im Bild sind die Spalten **Anzahl**, **Größe (Bytes)** und **Inklusive Größe (Bytes)** reduziert.  
   
-|||  
+|Name|Beschreibung|  
 |-|-|  
 |**Objekttyp**|Der Name des Typs oder der Objektinstanz.|  
 |**Anzahl**|Die Zahl der Instanzen eines Typs in der primären Momentaufnahme. Für eine Instanz ist die **Anzahl** stets 1.|  
@@ -196,7 +196,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  ![Referenzierte Objektstruktur für Instanzen](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Name|Beschreibung|  
 |-|-|  
 |**Objekttyp / -instanz**|Der Name des Typs oder der Objektinstanz.|  
 |**Größe (Byte)**|Für Instanzen: Die Größe des Objekts in der primären Momentaufnahme ohne die Größe der in der Instanz enthaltenen Objekte.<br /><br /> Für Typen: Die Gesamtgröße der Instanzen des Typs in der primären Momentaufnahme ohne die Größe der in der Instanz enthaltenen Objekte.|  
