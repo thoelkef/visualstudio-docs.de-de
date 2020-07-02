@@ -15,19 +15,19 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662912"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534458"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotCallOverridableMethodsInConstructors|
+|TypName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
@@ -35,7 +35,7 @@ ms.locfileid: "72662912"
 ## <a name="cause"></a>Ursache
  Der Konstruktor eines nicht versiegelten Typs Ruft eine virtuelle Methode auf, die in der-Klasse definiert ist.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Wenn eine virtuelle Methode aufgerufen wird, wird der tatsächliche Typ, der die Methode ausführt, erst zur Laufzeit ausgewählt. Wenn ein Konstruktor eine virtuelle Methode aufruft, ist es möglich, dass der Konstruktor für die-Instanz, die die-Methode aufruft, nicht ausgeführt wurde.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -45,7 +45,7 @@ ms.locfileid: "72662912"
  Unterdrücken Sie keine Warnung dieser Regel. Der Konstruktor sollte neu gestaltet werden, um den aufzurufenden Befehl der virtuellen Methode auszuschließen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt die Auswirkung des Verstoßes gegen diese Regel. Die Testanwendung erstellt eine Instanz von `DerivedType`, die bewirkt, dass der Konstruktor der Basisklasse (`BadlyConstructedType`) ausgeführt wird. der Konstruktor von `BadlyConstructedType` ruft fälschlicherweise die virtuelle Methode `DoSomething` auf. Wie die Ausgabe zeigt, wird `DerivedType.DoSomething()` ausgeführt, und dies erfolgt vor der Ausführung `DerivedType` Konstruktors.
+ Das folgende Beispiel zeigt die Auswirkung des Verstoßes gegen diese Regel. Die Testanwendung erstellt eine Instanz von `DerivedType` , die bewirkt, dass der Basisklassenkonstruktor ( `BadlyConstructedType` ) ausgeführt wird. `BadlyConstructedType`der Konstruktor ruft fälschlicherweise die virtuelle Methode auf `DoSomething` . Wie die Ausgabe zeigt, wird `DerivedType.DoSomething()` ausgeführt und bewirkt, dass der `DerivedType` Konstruktor ausgeführt wird.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
@@ -53,5 +53,5 @@ ms.locfileid: "72662912"
  Folgende Ergebnisse werden zurückgegeben:
 
  Der **basisctor wird aufgerufen.** 
-**abgeleitetes DoSomething-Objekt heißt initialisiert? Keine** 
-**Aufruf von abgeleiteter ctor.**
+ **Abgeleitetes DoSomething wird als initialisiert bezeichnet? Kein** 
+ **Aufruf abgeleiteter ctor.**

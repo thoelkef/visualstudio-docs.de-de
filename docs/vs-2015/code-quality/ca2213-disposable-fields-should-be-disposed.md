@@ -15,44 +15,44 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8ebeae3e5e367bb2c1a09bc1cb38dcc80d2c3826
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662897"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534575"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Verwerfbare Felder verwerfen
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Verwerfbare Felder verwerfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DisposableFieldsShouldBeDisposed|
+|TypName|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein Typ, der <xref:System.IDisposable?displayProperty=fullName> implementiert, deklariert Felder mit Typen, die ebenfalls <xref:System.IDisposable> implementieren. Die <xref:System.IDisposable.Dispose%2A>-Methode des Felds wird nicht von der <xref:System.IDisposable.Dispose%2A>-Methode des deklarierenden Typs aufgerufen.
+ Ein Typ, der implementiert, <xref:System.IDisposable?displayProperty=fullName> deklariert Felder mit Typen, die ebenfalls implementieren <xref:System.IDisposable> . Die- <xref:System.IDisposable.Dispose%2A> Methode des-Felds wird nicht von der- <xref:System.IDisposable.Dispose%2A> Methode des deklarierenden Typs aufgerufen.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Ein Typ ist für das Verwerfen aller seiner nicht verwalteten Ressourcen zuständig. Dies wird erreicht, indem <xref:System.IDisposable> implementiert wird. Diese Regel überprüft, ob ein verwerfbarer Typ `T` ein Feld `F` deklariert, das eine Instanz eines verwerfbaren Typs `FT` ist. Für jedes Feld `F` versucht die Regel, einen aufzurufenden `FT.Dispose` zu suchen. Die Regel durchsucht die Methoden, die von `T.Dispose` aufgerufen werden, und eine Ebene niedriger (die Methoden, die von den Methoden aufgerufen werden, die von `FT.Dispose` aufgerufen werden)
+## <a name="rule-description"></a>Beschreibung der Regel
+ Ein Typ ist für das Verwerfen aller seiner nicht verwalteten Ressourcen zuständig. Dies wird durch Implementieren von erreicht <xref:System.IDisposable> . Mit dieser Regel wird überprüft, ob ein verwerfbarer Typ `T` ein Feld deklariert `F` , das eine Instanz eines verwerfbaren Typs ist `FT` . Für jedes Feld `F` versucht die Regel, einen-Rückruf zu suchen `FT.Dispose` . Die Regel durchsucht die Methoden, die von aufgerufen `T.Dispose` werden, und eine Ebene unten (die Methoden, die von den Methoden aufgerufen werden, die von aufgerufen werden `FT.Dispose` )
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, wenden Sie <xref:System.IDisposable.Dispose%2A> für Felder mit Typen an, die <xref:System.IDisposable> implementieren, wenn Sie für das zuordnen und Freigeben der nicht verwalteten Ressourcen, die im Feld gehalten werden, verantwortlich sind.
+ Um einen Verstoß gegen diese Regel zu beheben, müssen Sie für Felder mit Typen abrufen, die <xref:System.IDisposable.Dispose%2A> implementieren, <xref:System.IDisposable> Wenn Sie für das zuordnen und Freigeben der nicht verwalteten Ressourcen, die im Feld gehalten werden, verantwortlich sind.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn Sie nicht für die Freigabe der Ressource zuständig sind, die im Feld gehalten wird, oder wenn der Aufruf von <xref:System.IDisposable.Dispose%2A> auf einer tieferen Aufruf Ebene als die Regel Überprüfungen auftritt.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn Sie nicht für die Freigabe der Ressource zuständig sind, die im Feld enthalten ist, oder wenn der Aufruf von <xref:System.IDisposable.Dispose%2A> mit einer tieferen Aufruf Ebene erfolgt als die Regel Überprüfungen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Typ`TypeA`, die <xref:System.IDisposable> (`FT` in der vorherigen Diskussion) implementiert.
+ Das folgende Beispiel zeigt einen Typ `TypeA` , der implementiert <xref:System.IDisposable> ( `FT` in der vorherigen Diskussion).
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `TypeB`, der gegen diese Regel verstößt, indem ein Feld `aFieldOfADisposableType` (`F` in der vorherigen Diskussion) als verwerfbarer Typ (`TypeA`) deklariert und <xref:System.IDisposable.Dispose%2A> für das Feld nicht aufgerufen wird. `TypeB` entspricht `T` in der vorherigen Erörterung.
+ Das folgende Beispiel zeigt einen Typ `TypeB` , der gegen diese Regel verstößt, indem ein Feld `aFieldOfADisposableType` ( `F` in der vorherigen Erörterung) als verwerfbarer Typ ( `TypeA` ) deklariert und <xref:System.IDisposable.Dispose%2A> für das Feld nicht aufgerufen wird. `TypeB`entspricht `T` in der vorherigen Erörterung.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
- <xref:System.IDisposable?displayProperty=fullName> Lösch [Muster](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.IDisposable?displayProperty=fullName> [Dispose-Muster](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

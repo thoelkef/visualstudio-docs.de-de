@@ -28,7 +28,7 @@ Der Visual Studio-Debugger ermöglicht es Ihnen, die Ausführung eines Programms
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-|-|
 |[Starten einer Debugsitzung (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|"Ausführen einer Debugsitzung" beschreibt die Optionen, die zum Konfigurieren und Starten einer Debugsitzung für JavaScript-Apps zur Verfügung stehen.|
 |[Steuern der Ausführung in einer Debugsitzung (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|Die Debugger-Navigation führt Sie durch eine einfache App, die demonstriert, wie Sie den Debugvorgang starten und beenden, durch Code navigieren und den Programmstatus anzeigen.|

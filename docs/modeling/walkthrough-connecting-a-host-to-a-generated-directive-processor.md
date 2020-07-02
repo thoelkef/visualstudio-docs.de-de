@@ -1,7 +1,7 @@
 ---
 title: Host mit generiertem Direktivenprozessor verbinden
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593979"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535862"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 
@@ -31,21 +31,21 @@ In dieser exemplarischen Vorgehensweise erweitern Sie den benutzerdefinierten Ho
 
 Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
 
-- Mithilfe [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] können Sie einen Direktivenprozessor generieren, der auf einem Domänen Modell basiert.
+- Mithilfe [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] von können Sie einen Direktivenprozessor generieren, der auf einem Domänen Modell basiert.
 
 - Verbinden eines benutzerdefinierten Textvorlagen Hosts mit dem generierten Direktivenprozessor.
 
 - Testen des benutzerdefinierten Hosts mit dem generierten Direktivenprozessor.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 | | |
 |-|-|
-| öffnen | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
-| Visual Studio-Visualisierungs- und Modellierungs-SDK | |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -96,17 +96,17 @@ Nachdem Sie den Direktivenprozessor generiert haben, verbinden Sie den Direktive
 
 3. Fügen Sie die folgenden Verweise hinzu:
 
-    - Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. 11.0
 
-    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. Diagramms. 11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft. VisualStudio. TextTemplating. vshost. 11.0
 
 4. Fügen Sie am Anfang von Program.cs oder Module1. vb die folgende Codezeile hinzu:
 
@@ -118,7 +118,7 @@ Nachdem Sie den Direktivenprozessor generiert haben, verbinden Sie den Direktive
     Imports Microsoft.Win32
     ```
 
-5. Suchen Sie den Code für die Eigenschaft `StandardAssemblyReferences`, und ersetzen Sie ihn durch den folgenden Code:
+5. Suchen Sie den Code für die `StandardAssemblyReferences` -Eigenschaft, und ersetzen Sie ihn durch den folgenden Code:
 
     > [!NOTE]
     > In diesem Schritt fügen Sie Verweise auf die Assemblys hinzu, die vom generierten Direktivenprozessor benötigt werden, der vom Host unterstützt wird.
@@ -154,7 +154,7 @@ Nachdem Sie den Direktivenprozessor generiert haben, verbinden Sie den Direktive
     }
     ```
 
-6. Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor`, und ersetzen Sie ihn durch den folgenden Code:
+6. Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor` , und ersetzen Sie ihn durch den folgenden Code:
 
     > [!IMPORTANT]
     > Dieser Code enthält hart codierte Verweise auf den Namen des generierten direktivenprozessors, mit dem Sie eine Verbindung herstellen möchten. Dies kann auf einfache Weise allgemeineres sein. in diesem Fall sucht es nach allen in der Registrierung aufgelisteten direktivenprozessoren und versucht, eine Entsprechung zu finden. In diesem Fall würde der Host mit einem beliebigen generierten Direktivenprozessor funktionieren.
@@ -238,7 +238,7 @@ Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>Erstellen einer Textvorlage zum Testen des benutzerdefinierten Hosts
 
-1. Erstellen Sie eine Textdatei, und benennen Sie Sie `TestTemplateWithDP.tt`. Sie können einen beliebigen Text-Editor, z. b. Notepad, verwenden, um die Datei zu erstellen.
+1. Erstellen Sie eine Textdatei, und benennen Sie Sie `TestTemplateWithDP.tt` . Sie können einen beliebigen Text-Editor, z. b. Notepad, verwenden, um die Datei zu erstellen.
 
 2. Fügen Sie folgenden Text in der Textdatei ein:
 
@@ -312,7 +312,7 @@ Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine
     #>
     ```
 
-3. Ersetzen Sie im Code \<Pfad > durch den Pfad der Datei Sample. Min aus der Entwurfs spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
+3. Ersetzen Sie im Code \<YOUR PATH> durch den Pfad der Datei Sample. Min aus der Entwurfs spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
 
 4. Speichern und schließen Sie die Datei.
 
@@ -322,29 +322,29 @@ Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine
 
 2. Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.
 
-     Geben Sie z. B. Folgendes ein:
+     Beispiel:
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Anstatt die Adresse einzugeben, können Sie in **Windows-Explorer**zur Datei "customhost. exe" navigieren und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
+    > Anstatt die Adresse einzugeben, können Sie in **Windows-Explorer**zu der Datei CustomHost.exe navigieren und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
 
 3. Geben Sie ein Leerzeichen ein.
 
 4. Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.
 
-     Geben Sie z. B. Folgendes ein:
+     Beispiel:
 
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > Anstatt die Adresse einzugeben, können Sie die Datei "testtemplatewithdp. txt" im **Windows-Explorer**suchen und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
+    > Anstatt die Adresse einzugeben, können Sie in **Windows-Explorer**zu der Datei TestTemplateWithDP.txt navigieren und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
 
      Die Anwendung für benutzerdefinierte Hosts wird ausgeführt, und der Textvorlagen-Transformationsprozess wird gestartet.
 
-5. Navigieren Sie in **Windows-Explorer**zu dem Ordner, der die Datei "testtemplatewithdp. txt" enthält.
+5. Navigieren Sie in **Windows-Explorer**zu dem Ordner, der die Datei TestTemplateWithDP.txt enthält.
 
-     Der Ordner enthält auch die Datei "TestTemplateWithDP1. txt".
+     Der Ordner enthält auch die Datei TestTemplateWithDP1.txt.
 
 6. Öffnen Sie diese Datei, um die Ergebnisse der Textvorlagentransformation anzuzeigen.
 

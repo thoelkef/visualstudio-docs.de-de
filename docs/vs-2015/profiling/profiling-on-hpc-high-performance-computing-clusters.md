@@ -21,19 +21,19 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983804"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535537"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die [!INCLUDE[vsPreExt](../includes/vspreext-md.md)]-oder [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Big Compute: HPC & Batch](https://azure.microsoft.com/solutions/big-compute/) auf der Microsoft-Website.  
   
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen  
+## <a name="prerequisites"></a>Voraussetzungen  
  Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgendes ausführen:  
   
 - Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=2800) installieren.  
@@ -52,9 +52,9 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
-|||  
+|Syntax Element|Beschreibung|  
 |-|-|  
-|*%HeadNode%*|Der Name des Hauptknotens für den Cluster.|  
+|*Haupt Knoten*|Der Name des Hauptknotens für den Cluster.|  
 |*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Der Pfad auf den [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedien ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
 |*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf dem [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedium ist: Standalone Profiler\x64\vs_profiler.exe|  
   
@@ -126,22 +126,22 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften  
   
-|property|Beschreibung|  
+|Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
 |**Hauptknoten**|Gibt den Computer an, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält.|  
 |**Anzahl der Prozesse**|Gibt die Anzahl der Instanzen der Anwendung an, die in der Anwendung mit der Profilerstellung ausgeführt werden.|  
 |**Profil für Rang**|Um ein Profil für einen bestimmten Prozess im Cluster zu erstellen, wählen Sie die Option **Profil für Rang** aus, und wählen Sie dann den Rang des Prozesses aus der Dropdown-Liste aus.|  
 |**Profil für Knoten**|Um ein Profil für den Prozess oder die Prozesse zu erstellen, die auf einem bestimmten Knoten im HPC-Cluster ausgeführt werden, wählen Sie die Option **Profil für Knoten** aus, und wählen Sie dann den Knoten aus der Dropdown-Liste aus.|  
 |**Remote-Arbeitsverzeichnis**|Gibt den Pfad zu dem Ordner an, der von den Prozessinstanzen auf den einzelnen Berechnungsknoten verwendet wird.|  
-|**Bereitstellungsspeicherort**|Gibt den Pfad zu dem Verzeichnis an, das von den HPC-Servern zur Bereitstellung von Images für die Bereitstellung verwendet wird.|  
+|**Bereitstellungsort**|Gibt den Pfad zu dem Verzeichnis an, das von den HPC-Servern zur Bereitstellung von Images für die Bereitstellung verwendet wird.|  
   
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften  
   
-|property|Beschreibung|  
+|Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
 |**Projektname**|Der Name des aktuellen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Projekts oder -Lösung.|  
 |**Bereinigen beim Beenden des Profilers**|Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden.|  
-|**Zusätzliche bereitzustellende Dateien**|Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken ( **...** ), um mithilfe des Dialogfelds mehrere Dateien auszuwählen.|  
+|**Zusätzliche bereit zustellende Dateien**|Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken (**... **), um mithilfe des Dialogfelds mehrere Dateien auszuwählen.|  
 |**Mpiexec-Befehl**|Gibt die Anwendung an, die die MPI-Anwendung startet. Der Standardwert lautet **mpiexec.exe**|  
 |**Mpiexec-Argumente**|Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen.|  
 |**Angeforderte Knoten im Cluster**|Gibt die Anzahl der Knoten im Cluster an, auf denen die Anwendung ausgeführt wird.|  

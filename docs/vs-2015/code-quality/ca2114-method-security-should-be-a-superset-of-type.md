@@ -15,31 +15,31 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1adc8f610644d736bc4546d8299457ba0234a1d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7879d8b2aa9eb4ece1ce07f89681b6c0b0f5f31
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658675"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534705"
 ---
-# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Methodensicherheit sollte Superset des Typs sein
+# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Methodensicherheit sollte Superset des Typs sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|MethodSecurityShouldBeASupersetOfType|
+|TypName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ verfügt über deklarative Sicherheit, und eine seiner Methoden verfügt über deklarative Sicherheit für dieselbe Sicherheitsaktion, und die Sicherheitsaktion ist keine Verknüpfungs-oder [Vererbungs Anforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9), und die vom Typ geprüften Berechtigungen [sind keine](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) Teilmenge des Berechtigungen, die von der-Methode geprüft werden.
+ Ein Typ verfügt über deklarative Sicherheit, und eine seiner Methoden verfügt über deklarative Sicherheit für dieselbe Sicherheitsaktion, und die Sicherheitsaktion ist keine Verknüpfungs-oder [Vererbungs Anforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9), und die vom-Typ geprüften Berechtigungen [sind keine](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) Teilmenge der Berechtigungen, die von der-Methode geprüft werden.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Eine Methode sollte nicht sowohl eine deklarative Sicherheit auf Methoden Ebene als auch auf Typebene für dieselbe Aktion aufweisen. Die beiden Überprüfungen werden nicht kombiniert. nur die Anforderung auf Methoden Ebene wird angewendet. Wenn ein Typ z. b. die Berechtigung `X` verlangt und eine der Methoden Berechtigungen `Y` erfordert, muss Code nicht über die `X` Berechtigung zum Ausführen der Methode verfügen.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Eine Methode sollte nicht sowohl eine deklarative Sicherheit auf Methoden Ebene als auch auf Typebene für dieselbe Aktion aufweisen. Die beiden Überprüfungen werden nicht kombiniert. nur die Anforderung auf Methoden Ebene wird angewendet. Wenn z. b. ein Typ `X` die-Berechtigung erfordert und eine der Methoden die-Berechtigung erfordert `Y` , muss der Code nicht über `X` die Berechtigung zum Ausführen der Methode verfügen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Überprüfen Sie den Code, um sicherzustellen, dass beide Aktionen erforderlich sind. Wenn beide Aktionen erforderlich sind, stellen Sie sicher, dass die Aktion auf Methoden Ebene die auf der Typebene angegebene Sicherheit einschließt. Wenn Ihr Typ z. b. die Berechtigung `X` erfordert und die zugehörige Methode auch die Berechtigung `Y` erfordern muss, sollte die Methode explizit `X` und `Y` anfordern.
+ Überprüfen Sie den Code, um sicherzustellen, dass beide Aktionen erforderlich sind. Wenn beide Aktionen erforderlich sind, stellen Sie sicher, dass die Aktion auf Methoden Ebene die auf der Typebene angegebene Sicherheit einschließt. Wenn der Typ beispielsweise die-Berechtigung erfordert `X` und seine-Methode auch die-Berechtigung anfordern muss `Y` , sollte die `X` -Methode und explizit aufrufen `Y` .
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die-Methode nicht die vom-Typ angegebene Sicherheit erfordert. Dies ist jedoch kein normales Szenario und deutet möglicherweise auf eine sorgfältige Entwurfs Überprüfung hin.
@@ -59,7 +59,7 @@ ms.locfileid: "72658675"
  Folgende Ergebnisse werden zurückgegeben:
 
  **[Alle Berechtigungen] persönliche Informationen: 6/16/1964 12:00:00 Uhr** 
- **[keine Schreib Berechtigung (vom Typ gefordert)] persönliche Informationen: 6/16/1964 12:00:00 am** 
- **[keine Leseberechtigung (von der Methode angefordert)] Zugriff auf persönlich nicht möglich. Informationen:** Fehler bei der Anforderung.
-## <a name="see-also"></a>Siehe auch
+ **[Keine Schreib Berechtigung (vom Typ gefordert)] persönliche Informationen: 6/16/1964 12:00:00 Uhr** 
+ **[Keine Leseberechtigung (von der Methode gefordert)] konnte nicht auf persönliche Informationen zugreifen:** Fehler bei der Anforderung.
+## <a name="see-also"></a>Weitere Informationen
  [Sichere Codierungs Richtlinien](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Vererbungs Anforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Verknüpfungs [Anforderungen](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
