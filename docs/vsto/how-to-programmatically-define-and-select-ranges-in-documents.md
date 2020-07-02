@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten'
+title: 'Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574855"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545950"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Vorgehensweise: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten
-  Sie können einen Bereich in einem Microsoft Office Word-Dokument mithilfe eines <xref:Microsoft.Office.Interop.Word.Range>-Objekts definieren. Sie können das gesamte Dokument in eine Reihe von Möglichkeiten, z. B. auswählen, mit der <xref:Microsoft.Office.Interop.Word.Range.Select%2A> -Methode der der <xref:Microsoft.Office.Interop.Word.Range> -Objekts oder mithilfe der Content-Eigenschaft der <xref:Microsoft.Office.Tools.Word.Document> -Klasse (in einer Anpassung auf Dokumentebene) oder die <xref:Microsoft.Office.Interop.Word.Document> Klasse (in einer VSTO-Add-in).
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten
+  Sie können einen Bereich in einem Microsoft Office Word-Dokument mithilfe eines <xref:Microsoft.Office.Interop.Word.Range>-Objekts definieren. Sie können das gesamte Dokument auf verschiedene Weise auswählen, z. b. mithilfe der- <xref:Microsoft.Office.Interop.Word.Range.Select%2A> Methode des- <xref:Microsoft.Office.Interop.Word.Range> Objekts oder mithilfe der Content-Eigenschaft der- <xref:Microsoft.Office.Tools.Word.Document> Klasse (in einer Anpassung auf Dokument Ebene) oder der- <xref:Microsoft.Office.Interop.Word.Document> Klasse (in einem VSTO-Add-in).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="define-a-range"></a>Definieren Sie einen Bereich
+## <a name="define-a-range"></a>Definieren eines Bereichs
  Das folgende Beispiel veranschaulicht das Erstellen eines neuen <xref:Microsoft.Office.Interop.Word.Range>-Objekts, das die ersten sieben Zeichen im aktiven Dokument, einschließlich der nicht druckbaren Zeichen, enthält. Anschließend wird der Text innerhalb des Bereichs ausgewählt.
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>So definieren Sie einen Bereich in einer Anpassung auf Dokumentebene
@@ -45,7 +45,7 @@ ms.locfileid: "62574855"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
 
-## <a name="select-a-range-in-a-document-level-customization"></a>Wählen Sie einen Bereich in einer Anpassung auf Dokumentebene
+## <a name="select-a-range-in-a-document-level-customization"></a>Wählen Sie einen Bereich in einer Anpassung auf Dokument Ebene aus.
  Die folgenden Beispiele zeigen, wie Sie das gesamte Dokument mithilfe der <xref:Microsoft.Office.Interop.Word.Range.Select%2A>-Methode eines <xref:Microsoft.Office.Interop.Word.Range>-Objekts oder mithilfe der <xref:Microsoft.Office.Tools.Word.Document.Content%2A>-Eigenschaft der <xref:Microsoft.Office.Tools.Word.Document>-Klasse auswählen.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>So wählen Sie das gesamte Dokument als Bereich mithilfe der Select-Methode aus
@@ -80,12 +80,12 @@ ms.locfileid: "62574855"
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2. Überprüfen, ob mindestens zwei Sätze im Dokument stehen. Legen Sie die *starten* und *End* Argumente des Bereichs fest, und wählen Sie dann den Bereich.
+2. Überprüfen Sie, ob im Dokument mindestens zwei Sätze vorhanden sind, legen Sie die *Start* -und *endargumente* des Bereichs fest, und wählen Sie dann den Bereich aus.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
 
-## <a name="select-a-range-by-using-a-vsto-add-in"></a>Wählen Sie einen Bereich mithilfe eines VSTO-Add-Ins
+## <a name="select-a-range-by-using-a-vsto-add-in"></a>Auswählen eines Bereichs mithilfe eines VSTO-Add-ins
  Die folgenden Beispiele zeigen, wie Sie das gesamte Dokument mithilfe der <xref:Microsoft.Office.Interop.Word.Range.Select%2A>-Methode eines <xref:Microsoft.Office.Interop.Word.Range>-Objekts oder mithilfe der <xref:Microsoft.Office.Interop.Word._Document.Content%2A>-Eigenschaft der <xref:Microsoft.Office.Interop.Word.Document>-Klasse auswählen.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>So wählen Sie das gesamte Dokument als Bereich mithilfe der Select-Methode aus
@@ -120,16 +120,16 @@ ms.locfileid: "62574855"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2. Überprüfen, ob mindestens zwei Sätze im Dokument stehen. Legen Sie die *starten* und *End* Argumente des Bereichs fest, und wählen Sie dann den Bereich.
+2. Überprüfen Sie, ob im Dokument mindestens zwei Sätze vorhanden sind, legen Sie die *Start* -und *endargumente* des Bereichs fest, und wählen Sie dann den Bereich aus.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
-- [Vorgehensweise: Programmgesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes Abrufen von Start- und Endzeit von Zeichen in Bereichen](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Vorgehensweise: Programmgesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes Zurücksetzen von Bereichen in Word-Dokumenten](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Vorgehensweise: Programmgesteuertes Reduzieren von Bereichen oder Markierungen in Dokumenten](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes ausschließen Absatzmarken beim Erstellen von Bereichen](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [Gewusst wie: Programm gesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Abrufen von Start-und Endzeichen in Bereichen](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Gewusst wie: Programm gesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Zurücksetzen von Bereichen in Word-Dokumenten](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Gewusst wie: Programm gesteuertes reduzieren von Bereichen oder Auswahlen in Dokumenten](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Ausschließen von Absatzmarken beim Erstellen von Bereichen](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

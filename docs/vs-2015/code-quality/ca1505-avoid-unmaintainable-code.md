@@ -15,19 +15,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f2f731b1ac0d87b59c7690d0cf57ade3570ed5f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607590"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547822"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Nicht wartbaren Code vermeiden
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Nicht wartbaren Code vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|Vermeidunmantainablecode|
+|TypName|Vermeidunmantainablecode|
 |CheckId|CA1505|
 |Kategorie|Microsoft. Wartbarkeit|
 |Unterbrechende Änderung|Nicht unterbrechend|
@@ -35,7 +35,7 @@ ms.locfileid: "72607590"
 ## <a name="cause"></a>Ursache
  Ein Typ oder eine Methode verfügt über einen niedrigen Wartbarkeitsindexwert.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Der Wartbarkeitsindex wird mithilfe der folgenden Metriken berechnet: Codezeilen, Programm Volume und zyklomatische Komplexität. Das Programm Volume ist ein Maß für die Schwierigkeit, ein Typ oder eine Methode zu verstehen, die auf der Anzahl von Operatoren und Operanden im Code basiert. Die zyklomatische Komplexität ist ein Maß für die strukturelle Komplexität des Typs oder der Methode. Weitere Informationen zu Codemetriken finden Sie unter [Messen der Komplexität und Verwaltbarkeit von verwaltetem Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
 
  Ein niedriger Wartbarkeitsindex gibt an, dass ein Typ oder eine Methode wahrscheinlich schwierig zu verwalten ist, und wäre ein guter Kandidat für die Umgestaltung.
@@ -46,5 +46,5 @@ ms.locfileid: "72607590"
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Schließen Sie diese Warnung aus, wenn ein Typ oder eine Methode trotz ihrer großen Größe weiterhin als wart Bar eingestuft wird oder wenn der Typ oder die Methode nicht aufgeteilt werden kann.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Wart barkeits Warnungen](../code-quality/maintainability-warnings.md) , die die [Komplexität und Verwaltbarkeit von verwaltetem Code Messen](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

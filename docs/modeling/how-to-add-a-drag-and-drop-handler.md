@@ -1,18 +1,18 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines Drag & Drop-Handlers'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594694"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545664"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 
@@ -22,7 +22,7 @@ In diesem Thema werden Drag &amp; Drop-Gesten behandelt, deren Ursprung in ander
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>Definieren von Gestenhandlern durch Überschreiben von ShapeElement-Methoden
 
-`OnDragDrop`, `OnDoubleClick`, `OnDragOver`und andere Methoden können überschrieben werden.
+`OnDragDrop`, `OnDoubleClick` , `OnDragOver` und andere Methoden können überschrieben werden.
 
 Fügen Sie Ihrem DSL-Projekt eine neue Codedatei hinzu. Bei Gesten Handlern benötigen Sie in der Regel mindestens die folgenden `using` Direktiven:
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Diagrammklasse, die auf den Ziehvorgang reagieren soll. Überschreiben Sie die folgenden Methoden:
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>: Diese Methode wird aufgerufen, wenn der Mauszeiger während eines Zieh Vorgangs in die Form eintritt. Die Methode sollte das Element untersuchen, das der Benutzer zieht, und die Effect-Eigenschaft festlegen, um anzugeben, ob der Benutzer das Element auf der Form ablegen kann. Mit der Effect-Eigenschaft wird die Darstellung des Cursors bestimmt, während er sich über dieser Form befindet. Darüber hinaus wird mit der Eigenschaft festgelegt, ob `OnDragDrop()` aufgerufen wird, wenn der Benutzer die Maustaste loslässt.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>-Diese Methode wird aufgerufen, wenn der Mauszeiger während eines Zieh Vorgangs in die Form eintritt. Die Methode sollte das Element untersuchen, das der Benutzer zieht, und die Effect-Eigenschaft festlegen, um anzugeben, ob der Benutzer das Element auf der Form ablegen kann. Mit der Effect-Eigenschaft wird die Darstellung des Cursors bestimmt, während er sich über dieser Form befindet. Darüber hinaus wird mit der Eigenschaft festgelegt, ob `OnDragDrop()` aufgerufen wird, wenn der Benutzer die Maustaste loslässt.
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -50,7 +50,7 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>: Diese Methode wird aufgerufen, wenn der Benutzer die Maustaste loslässt, während sich der Mauszeiger über dieser Form oder diesem Diagramm befindet, wenn `OnDragOver(DiagramDragEventArgs e)` zuvor `e.Effect` auf einen anderen Wert als `None`festgelegt hat.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-Diese Methode wird aufgerufen, wenn der Benutzer die Maustaste loslässt, während sich der Mauszeiger über dieser Form oder diesem Diagramm befindet, wenn er `OnDragOver(DiagramDragEventArgs e)` zuvor `e.Effect` auf einen anderen Wert als festgelegt wurde `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>: Diese Methode wird aufgerufen, wenn der Benutzer auf die Form oder das Diagramm doppelklickt.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-Diese Methode wird aufgerufen, wenn der Benutzer auf die Form oder das Diagramm doppelklickt.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Abfangen eines Klick auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -124,17 +124,17 @@ Wenn der Benutzer ein Element auf Ihr Diagramm oder von einem Teil des Diagramm 
 
 Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen verfügbar sein können, indem Sie den Code im Debuggingmodus ausführen und einen Haltepunkt beim Beginn von `OnDragOver()` oder `CanDragDrop()` festlegen. Prüfen Sie die Werte des `DiagramDragEventArgs`-Parameters. Die Informationen werden in zwei Formen bereitgestellt:
 
-- <xref:System.Windows.Forms.IDataObject>`Data`: Diese Eigenschaft enthält serialisierte Versionen der Quell Objekte (in der Regel in mehr als einem Format). Die nützlichsten Funktionen sind:
+- <xref:System.Windows.Forms.IDataObject>  `Data`: Diese Eigenschaft enthält serialisierte Versionen der Quell Objekte (in der Regel in mehr als einem Format). Die nützlichsten Funktionen sind:
 
   - diagrammventargs. Data. getdataformats ()-listet die Formate auf, in denen Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).
 
-  - `diagramEventArgs.Data.GetData(format)` das gezogene Objekt im angegebenen Format decodiert. Wandeln Sie das Objekt in den geeigneten Typ um. Beispiel:
+  - `diagramEventArgs.Data.GetData(format)`-Decodiert das gezogene Objekt im angegebenen Format. Wandeln Sie das Objekt in den geeigneten Typ um. Zum Beispiel:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
     Sie können auch Objekte wie Modellbusverweise aus der Quelle in Ihr eigenes benutzerdefiniertes Format übertragen. Weitere Informationen finden Sie unter Gewusst [wie: Senden von modellbus verweisen per Drag & Drop](#to-send-an-object-from-a-source-dsl).
 
-- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` verwenden Sie diese Eigenschaft, wenn Sie möchten, dass Benutzer Elemente aus einem DSL-oder UML-Modell ziehen. Ein Elementgruppenprototyp enthält mindestens ein Objekt, einen Link und deren Eigenschaftswerte. Er kann auch bei Einfügevorgängen und beim Hinzufügen eines Elements aus der Toolbox verwendet werden. In einem Prototyp werden Objekte und deren Typen anhand der GUID identifiziert. Mit diesem Code kann der Benutzer beispielsweise Klassenelemente aus einem UML-Diagramm oder dem UML-Modell-Explorer ziehen:
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`-Verwenden Sie diese Eigenschaft, wenn Sie möchten, dass Benutzer Elemente aus einem DSL-oder UML-Modell ziehen. Ein Elementgruppenprototyp enthält mindestens ein Objekt, einen Link und deren Eigenschaftswerte. Er kann auch bei Einfügevorgängen und beim Hinzufügen eines Elements aus der Toolbox verwendet werden. In einem Prototyp werden Objekte und deren Typen anhand der GUID identifiziert. Mit diesem Code kann der Benutzer beispielsweise Klassenelemente aus einem UML-Diagramm oder dem UML-Modell-Explorer ziehen:
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -148,7 +148,7 @@ Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen v
 
      Um UML-Formen zu akzeptieren, bestimmen Sie die GUIDs der UML-Form Klassen nach Experiment. Denken Sie daran, dass ein Diagramm meist mehr als einen Elementtyp aufweist. Denken Sie außerdem daran, dass ein Objekt, das aus einem DSL- oder UML-Diagramm gezogen wird, die Form und nicht das Modellelement ist.
 
-`DiagramDragEventArgs` verfügt auch über Eigenschaften, die die aktuelle Mauszeigerposition angeben und angeben, ob der Benutzer die STRG-Taste, die Alt-Taste oder die UMSCHALTTASTE drückt.
+`DiagramDragEventArgs`verfügt auch über Eigenschaften, die die aktuelle Mauszeigerposition angeben und angeben, ob der Benutzer die STRG-Taste, die Alt-Taste oder die UMSCHALTTASTE drückt.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Abrufen des Originals eines gezogenen Elements
 
@@ -160,7 +160,7 @@ Die Eigenschaften `Data` und `Prototype` der Ereignisargumente enthalten nur ein
 
 Machen Sie die Quell-DSL für den Visual Studio-modellbus zugänglich:
 
-1. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Mit der rechten Maustaste in der Entwurfsoberfläche, und klicken Sie dann auf **Modelbus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
+1. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche und dann auf **ModelBus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
 
 2. Klicken Sie auf **alle Vorlagen transformieren** , und erstellen Sie die Lösung neu.
 

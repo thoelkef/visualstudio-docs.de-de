@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes schützen von Arbeitsblättern'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254584"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545898"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Vorgehensweise: Programm gesteuertes schützen von Arbeitsblättern
   Die Schutzfunktion in Microsoft Office Excel verhindert, dass Objekte in einem Arbeitsblatt durch Benutzer und Code geändert werden. Standardmäßig werden alle Zellen gesperrt, nachdem der Schutz aktiviert wurde.
@@ -69,7 +69,7 @@ ms.locfileid: "71254584"
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
 - [Vorgehensweise: Programm gesteuertes Entfernen des Schutzes von Arbeitsblättern](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [Vorgehensweise: Programm gesteuertes schützen von Arbeitsmappen](../vsto/how-to-programmatically-protect-workbooks.md)
-- [Vorgehensweise: Arbeitsblätter Programm gesteuert ausblenden](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Gewusst wie: Programm gesteuertes Ausblenden von Arbeitsblättern](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Arbeitsblatt-Host Element](../vsto/worksheet-host-item.md)
 - [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)

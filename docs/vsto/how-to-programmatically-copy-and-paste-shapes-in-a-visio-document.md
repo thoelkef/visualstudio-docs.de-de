@@ -1,7 +1,7 @@
 ---
-title: Kopieren und Einfügen von Shapes in Visio-Dokument programmgesteuert
+title: Programm gesteuertes kopieren und Einfügen von Shapes in ein Visio-Dokument
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074a276fe37ef713d38078f60c4bee95145c4d8b
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 05b0d20ba7bd560fc60090bba84b78691bb3e753
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402228"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546093"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Vorgehensweise: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Gewusst wie: Programm gesteuertes kopieren und Einfügen von Shapes in ein Visio-Dokument
   Sie können programmgesteuert Shapes auf einer Seite eines Dokuments kopieren und in eine neue Seite im selben Dokument einfügen. Sie können die Shapes wahlweise an der Standardposition (in der Mitte des aktiven Fensters) oder an der gleichen Koordinatenpositionen wie auf der ursprünglichen Seite einfügen.
 
-## <a name="copy-and-paste-shapes"></a>Kopieren und Einfügen von shapes
+## <a name="copy-and-paste-shapes"></a>Kopieren und Einfügen von Formen
  Ausführliche Informationen zum Objektmodell finden Sie in der VBA-Referenzdokumentation für die Methoden [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle), [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval), [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy)und [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) sowie das Flag [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNormal](/office/vba/api/Visio.viscutcopypastecodes) .
 
 ### <a name="to-copy-shapes-to-the-center-of-another-page"></a>So kopieren Sie Shapes in die Mitte einer anderen Seite
@@ -33,10 +33,10 @@ ms.locfileid: "66402228"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]
 
-## <a name="copy-and-paste-shapes-with-the-same-positions"></a>Kopieren und Einfügen von Shapes an der gleichen Position
+## <a name="copy-and-paste-shapes-with-the-same-positions"></a>Kopieren und Einfügen von Formen mit denselben Positionen
  Ausführliche Informationen zum Objektmodell finden Sie in der VBA-Referenzdokumentation für die Methoden [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle), [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval), [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy)und [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) sowie das Flag [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](/office/vba/api/Visio.viscutcopypastecodes) .
 
- Wenn Sie das Format der eingefügten Informationen steuern und (optional) eine Verknüpfung zu einer Quelldatei (z. B. Microsoft Office Word-Dokument) herstellen möchten, verwenden Sie die PasteSpecial-Methode.
+ Wenn Sie das Format der eingefügten Informationen steuern und (optional) einen Link zu einer Quelldatei (z. b. ein Microsoft Office Word-Dokument) herstellen müssen, verwenden Sie die PasteSpecial-Methode.
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>So kopieren Sie Shapes und ihre Positionen auf eine andere Seite
 
@@ -46,7 +46,7 @@ ms.locfileid: "66402228"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Visio-Projektmappen](../vsto/visio-solutions.md)
+- [Visio-Lösungen](../vsto/visio-solutions.md)
 - [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
-- [Arbeiten mit Visio-shapes](../vsto/working-with-visio-shapes.md)
-- [Vorgehensweise: Programmgesteuertes Hinzufügen von Shapes zu Visio-Dokumenten](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)
+- [Arbeiten mit Visio-Shapes](../vsto/working-with-visio-shapes.md)
+- [Gewusst wie: Programm gesteuertes Hinzufügen von Shapes zu einem Visio-Dokument](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)

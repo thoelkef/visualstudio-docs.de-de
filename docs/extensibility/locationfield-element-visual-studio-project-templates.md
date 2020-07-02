@@ -1,8 +1,8 @@
 ---
-title: LocationField-Element (Visual Studio-Projektvorlagen) | Microsoft Docs
+title: LocationField-Element (Visual Studio-Projektvorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702889"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770025"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField-Element (Visual Studio-Projektvorlagen)
-Gibt an, ob das Textfeld **Standort** im Dialogfeld **Neues Projekt** für die Projektvorlage aktiviert, deaktiviert oder ausgeblendet ist.
+Gibt an, ob das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** für die Projektvorlage aktiviert, deaktiviert oder ausgeblendet ist.
 
- \<VSTemplate \<> TemplateData> \<LocationField>
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,31 +39,31 @@ Gibt an, ob das Textfeld **Standort** im Dialogfeld **Neues Projekt** für die P
  Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie sie entweder im **neuen Projekt**angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie Sie im **neuen Projekt**angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
  Gültige Textwerte sind:
 
-- `Enabled`, die angibt, dass das **Feld Speicherort** des Dialogfelds **Neues Projekt** aktiviert ist.
+- `Enabled`, das angibt, dass das Feld **Speicherort** des Dialog Felds **Neues Projekt** aktiviert ist.
 
-- `Disabled`, die angibt, dass das **Feld Speicherort** des Dialogfelds **Neues Projekt** deaktiviert ist.
+- `Disabled`, das angibt, dass das Feld **Speicherort** des Dialog Felds **Neues Projekt** deaktiviert ist.
 
-- `Hidden`, die angibt, dass das **Feld Speicherort** des Dialogfelds **Neues Projekt** ausgeblendet ist.
+- `Hidden`, das angibt, dass das Feld **Speicherort** des Dialog Felds **Neues Projekt** ausgeblendet ist.
 
-## <a name="remarks"></a>Bemerkungen
- Der Standardwert ist `Enabled`.
+## <a name="remarks"></a>Hinweise
+ Standardwert: `Enabled`.
 
- Im Textfeld **Speicherort** im Dialogfeld **Neues Projekt** können Benutzer das Standardverzeichnis ändern, in dem neue Projekte gespeichert werden.
+ Das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** ermöglicht es Benutzern, das Standardverzeichnis zu ändern, in dem neue Projekte gespeichert werden.
 
- Der im `Location` Element angegebene Wert wird nur dann vom Dialogfeld berücksichtigt, wenn das zugrunde liegende Projektsystem ihn unterstützt.
+ Der im-Element angegebene Wert `Location` wird nur von dem Dialogfeld berücksichtigt, wenn es vom zugrunde liegenden Projekt System unterstützt wird.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.
@@ -92,6 +93,6 @@ Gibt an, ob das Textfeld **Standort** im Dialogfeld **Neues Projekt** für die P
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594733"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545716"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -48,7 +48,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
    In anderen Fällen können Sie die MEF-Methode zum Definieren von Befehlen in Betracht ziehen. Weitere Informationen finden Sie unter [Erweitern Ihrer DSL mithilfe von MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-## <a name="VSCT"></a>Deklarieren Sie den Befehl in "Commands. vsct".
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a>Deklarieren Sie den Befehl in "Commands. vsct".
  Menübefehle werden in "DslPackage\Commands.vsct" deklariert. Diese Definitionen definieren die Bezeichnungen der Menüelemente und ihre Position in den Menüs.
 
  Die Datei, die Sie bearbeiten, Commands. vsct, importiert Definitionen aus mehreren h-Dateien, die sich im Verzeichnis " *Visual Studio SDK-Installationspfad*\visualstudiointegration\common\inc" befinden. Sie enthält auch "generatedvsct. vsct", das aus ihrer DSL-Definition generiert wird.
@@ -86,7 +86,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
     ```
 
     > [!NOTE]
-    > Jede Schaltfläche oder Gruppe wird durch eine GUID und eine ganzzahlige ID identifiziert. Sie können mehrere Gruppen und Schaltflächen mit derselben GUID erstellen. Alle Gruppen und Schaltflächen müssen jedoch unterschiedliche IDs aufweisen. Die GUID-Namen und ID-Namen werden in tatsächliche GUIDs und numerische IDs im Knoten `<Symbols>` übersetzt.
+    > Jede Schaltfläche oder Gruppe wird durch eine GUID und eine ganzzahlige ID identifiziert. Sie können mehrere Gruppen und Schaltflächen mit derselben GUID erstellen. Alle Gruppen und Schaltflächen müssen jedoch unterschiedliche IDs aufweisen. Die GUID-Namen und ID-Namen werden in tatsächliche GUIDs und numerische IDs im `<Symbols>` Knoten übersetzt.
 
 3. Fügen Sie eine Sichtbarkeitseinschränkung für den Befehl hinzu, sodass er nur im Kontext der domänenspezifischen Sprache geladen wird. Weitere Informationen finden Sie unter [visibilityrestriselement](../extensibility/visibilityconstraints-element.md).
 
@@ -128,7 +128,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
     - `My Context Menu Command`
 
-## <a name="version"></a>Aktualisieren der Paket Version in Package.tt
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a>Aktualisieren der Paket Version in Package.tt
  Immer wenn Sie einen Befehl hinzufügen oder ändern, müssen Sie den `version`-Parameter des Attributs <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> aktualisieren, das auf die Paketklasse angewendet wird, bevor Sie die neue Version der domänenspezifischen Sprache veröffentlichen.
 
  Da die Paketklasse in einer generierten Datei definiert wird, müssen Sie das Attribut in der Textvorlagendatei aktualisieren, aus der die Datei Package.cs generiert wird.
@@ -139,13 +139,13 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
 2. Suchen Sie das `ProvideMenuResource`-Attribut.
 
-3. Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Beispiel:
+3. Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Zum Beispiel:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="CommandSet"></a>Definieren des Verhaltens des Befehls
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a>Definieren des Verhaltens des Befehls
 
-Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist in der Regel *\<yourdslname >* `CommandSet`. Es ist hilfreich zu beginnen, indem Sie den Namen der Klasse überprüfen und ihren Inhalt überprüfen.
+Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist in der Regel *\<YourDslName>* `CommandSet` . Es ist hilfreich zu beginnen, indem Sie den Namen der Klasse überprüfen und ihren Inhalt überprüfen.
 
 Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.
 
@@ -157,9 +157,9 @@ Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.Comma
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. Erstellen Sie in **dslpackage**einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs`.
+2. Erstellen Sie in **dslpackage**einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
 
-3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Beispiel:
+3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -193,7 +193,7 @@ namespace Company.Language1 /* Make sure this is correct */
 Sie müssen zwei Methoden definieren, eine, um zu bestimmen, wann der Befehl im Kontextmenü (Kontextmenü) angezeigt wird, und der andere, um den Befehl auszuführen. Diese Methoden sind keine Überschreibungen, sondern Sie registrieren sie in einer Liste von Befehlen.
 
 ### <a name="define-when-the-command-will-be-visible"></a>Definieren, wann der Befehl sichtbar ist
- Definieren Sie für jeden Befehl eine `OnStatus...` Methode, die bestimmt, ob der Befehl im Menü angezeigt wird und ob er aktiviert oder abgeblendet wird. Legen Sie die Eigenschaften `Visible` und `Enabled` der `MenuCommand`fest, wie im folgenden Beispiel gezeigt. Diese Methode wird jedes Mal, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, aufgerufen, um das Kontextmenü zu erstellen. Daher muss sie schnell ausführbar sein.
+ Definieren Sie für jeden Befehl eine `OnStatus...` Methode, die bestimmt, ob der Befehl im Menü angezeigt wird und ob er aktiviert oder abgeblendet wird. Legen Sie die `Visible` -Eigenschaft und die-Eigenschaft des fest `Enabled` `MenuCommand` , wie im folgenden Beispiel gezeigt. Diese Methode wird jedes Mal, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, aufgerufen, um das Kontextmenü zu erstellen. Daher muss sie schnell ausführbar sein.
 
  Im Beispiel ist der Befehl nur sichtbar, wenn der Benutzer einen bestimmten Formtyp ausgewählt hat. Und er wird nur aktiviert, wenn sich mindestens eines der ausgewählten Elemente in einem bestimmten Zustand befindet. Das Beispiel basiert auf der Vorlage "Klassendiagramm-DSL", und ClassShape und ModelClass sind in der DSL definierte Typen:
 
@@ -226,9 +226,9 @@ Die folgenden Fragmente sind häufig in OnStatus-Methoden nützlich:
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`: der Benutzer hat nicht mehrere Objekte ausgewählt.
+- `this.IsSingleSelection()`-der Benutzer hat nicht mehrere Objekte ausgewählt.
 
-- `this.SingleSelection`-die Form oder das Diagramm, auf die der Benutzer mit der rechten Maustaste geklickt hat
+- `this.SingleSelection`die Form oder das Diagramm, auf die der Benutzer mit der rechten Maustaste geklickt hat
 
 - `shape.ModelElement as MyLanguageElement`-das Modellelement, das durch eine Form dargestellt wird.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Wenn Sie den Abschnitt "Symbols" in der VSCT-Datei ändern, müssen Sie auch diese Deklarationen entsprechend ändern. Außerdem sollten Sie die Versionsnummer in Package.tt erhöhen.
 
- Registrieren Sie Ihre Menübefehle im Rahmen dieses Befehlssatzes. `GetMenuCommands()` wird einmal aufgerufen, wenn das Diagramm initialisiert wird:
+ Registrieren Sie Ihre Menübefehle im Rahmen dieses Befehlssatzes. `GetMenuCommands()`wird einmal aufgerufen, wenn das Diagramm initialisiert wird:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()

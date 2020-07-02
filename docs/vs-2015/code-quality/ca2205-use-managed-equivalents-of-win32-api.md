@@ -15,28 +15,28 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 931b1e5099bf221fefc7a8f4a19524d2531a4418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85e27ab04ca81f5513a0b09bc41548f4a7c2430d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609486"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547679"
 ---
-# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwaltete Entsprechungen der Win32 API verwenden
+# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwaltete Entsprechungen der Win32 API verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|UseManagedEquivalentsOfWin32Api|
+|TypName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine Platt Form Aufruf Methode ist definiert, und in der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Klassenbibliothek ist eine Methode mit der entsprechenden Funktionalität vorhanden.
+ Eine Platt Form Aufruf Methode ist definiert, und in der Klassenbibliothek ist eine Methode mit der entsprechenden Funktionalität vorhanden [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
-## <a name="rule-description"></a>Regelbeschreibung
- Eine Platt Form Aufruf Methode wird verwendet, um eine nicht verwaltete DLL-Funktion aufzurufen, und wird mithilfe des <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>-Attributs oder des Schlüssel Worts `Declare` in Visual Basic definiert. Eine fälschlicherweise definierte Platt Form Aufruf Methode kann aufgrund von Problemen, wie z. b. einer falsch benannten Funktion, fehlerhafter Zuordnung von Parameter-und Rückgabewert Datentypen und falscher Feld Spezifikationen, wie z. b. der Aufruf Konvention und des Zeichens, zu Lauf Zeit Ausnahmen führen Set. Falls verfügbar, ist es in der Regel einfacher und weniger fehleranfällig, die entsprechende verwaltete Methode aufzurufen, als die nicht verwaltete Methode direkt zu definieren und aufzurufen. Das Aufrufen einer Platt Form Aufruf Methode kann auch zu zusätzlichen Sicherheitsproblemen führen, die behoben werden müssen.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Eine Platt Form Aufruf Methode wird verwendet, um eine nicht verwaltete DLL-Funktion aufzurufen, und wird mithilfe des- <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> Attributs oder des- `Declare` Schlüssel Worts in Visual Basic definiert. Eine fälschlicherweise definierte Platt Form Aufruf Methode kann aufgrund von Problemen, wie z. b. einer falsch benannten Funktion, fehlerhafter Zuordnung von Datentypen von Parametern und Rückgabe Werten, und falschen Feld Spezifikationen (z. b. der Aufruf Konvention und dem Zeichensatz) zu Lauf Zeit Ausnahmen führen. Falls verfügbar, ist es in der Regel einfacher und weniger fehleranfällig, die entsprechende verwaltete Methode aufzurufen, als die nicht verwaltete Methode direkt zu definieren und aufzurufen. Das Aufrufen einer Platt Form Aufruf Methode kann auch zu zusätzlichen Sicherheitsproblemen führen, die behoben werden müssen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den-Befehl für die nicht verwaltete Funktion durch einen-Aufrufwert.
@@ -51,12 +51,12 @@ ms.locfileid: "72609486"
  [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1404: GetLastError unmittelbar nach P-Invoke aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+ [CA1404: GetLastError unmittelbar nach P/aufrufen aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 
- [CA1060: P-Invokes in NativeMethods-Klasse verschieben](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: P/Aufrufe in die NativeMethods-Klasse verschieben](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: Für P-Invoke müssen Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: P/aufrufende Einstiegspunkte müssen vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P-Invokes dürfen nicht sichtbar sein](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Aufrufe dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Marshalling für P-Invoke-Zeichenfolgenargumente festlegen](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Marshalling für P/Aufruf-Zeichen folgen Argumente angeben](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

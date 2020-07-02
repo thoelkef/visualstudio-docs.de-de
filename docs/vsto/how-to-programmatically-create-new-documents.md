@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programm gesteuertes Erstellen neuer Dokumente'
+title: 'Gewusst wie: Programm gesteuertes Erstellen neuer Dokumente'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71610d0bd2e957d932e31d83d06aca914bf8b585
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251952"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545989"
 ---
-# <a name="how-to-programmatically-create-new-documents"></a>Vorgehensweise: Programm gesteuertes Erstellen neuer Dokumente
+# <a name="how-to-programmatically-create-new-documents"></a>Gewusst wie: Programm gesteuertes Erstellen neuer Dokumente
   Wenn Sie ein Dokument programmgesteuert erstellen, ist das neue Dokument ein systemeigenes <xref:Microsoft.Office.Interop.Word.Document>-Objekt. Dieses Objekt verfügt nicht über die zusätzlichen Ereignisse und Datenbindungsfunktionen eines <xref:Microsoft.Office.Tools.Word.Document>-Hostelements. Weitere Informationen finden Sie Unterprogramm gesteuerte [Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "71251952"
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
 ## <a name="use-custom-templates"></a>Verwenden von benutzerdefinierten Vorlagen
- Die <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> -Methode verfügt über ein optionales *Vorlagen* Argument zum Erstellen eines neuen Dokuments, das auf einer anderen Vorlage als der normalen Vorlage basiert. Sie müssen den Dateinamen und den vollqualifizierten Pfad der Vorlage angeben.
+ Die- <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> Methode verfügt über ein optionales *Vorlagen* Argument zum Erstellen eines neuen Dokuments, das auf einer anderen Vorlage als der normalen Vorlage basiert. Sie müssen den Dateinamen und den vollqualifizierten Pfad der Vorlage angeben.
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>So erstellen Sie ein neues Dokument basierend auf einer benutzerdefinierten Vorlage
 
@@ -46,7 +46,7 @@ ms.locfileid: "71251952"
      [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

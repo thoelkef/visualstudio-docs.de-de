@@ -15,21 +15,21 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919190"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545599"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Bezeichner sollten ein korrektes Präfix aufweisen
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner sollten ein korrektes Präfix aufweisen](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|IdentifiersShouldHaveCorrectPrefix|
+|TypName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Kategorie|Microsoft.Naming|
 |Unterbrechende Änderung|Unterbrechen: beim Auslösen für Schnittstellen.<br /><br /> Nicht unterbrechend: Wenn Sie für generische Typparameter ausgelöst werden.|
@@ -37,11 +37,11 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner 
 ## <a name="cause"></a>Ursache
  Der Name einer extern sichtbaren Schnittstelle beginnt nicht mit einem Großbuchstaben "I".
 
- \- oder -
+ - oder -
 
  Der Name eines generischen Typparameters für einen extern sichtbaren Typ oder eine extern sichtbare Methode beginnt nicht mit einem Großbuchstaben "t".
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Gemäß der Konvention beginnen die Namen bestimmter Programmier Elemente mit einem bestimmten Präfix.
 
  Schnittstellennamen müssen mit einem Großbuchstaben "I" gefolgt von einem anderen Großbuchstaben beginnen. Diese Regel meldet Verstöße gegen Schnittstellennamen wie "MyInterface" und "IsolatedInterface".
@@ -85,4 +85,4 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner 
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1722: Bezeichner sollten kein falsches Präfix aufweisen](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+ [CA1722: Bezeichner sollten kein falsches Präfix aufweisen.](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
