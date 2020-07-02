@@ -187,6 +187,7 @@ f1_keywords:
 - CA2013
 - CA2014
 - CA2015
+- CA2016
 - CA2100
 - CA2101
 - CA2102
@@ -289,18 +290,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814809"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835432"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
 
 In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach dem CheckId-Bezeichner der Warnung aufgeführt.
 
-| CheckId | Warnung | BESCHREIBUNG |
+| CheckId | Warnung | Beschreibung |
 |---------| - | - |
 | CA1000 | [CA1000: Statische Member nicht in generischen Typen deklarieren.](../code-quality/ca1000.md) | Wenn ein statischer Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. In diesen beiden Fällen ist die Syntax zum Angeben des Typarguments unterschiedlich und leicht zu verwechseln. |
 | CA1001 | [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können.](../code-quality/ca1001.md) | Eine Klasse deklariert und implementiert ein Instanzenfeld, das den System.IDisposable-Typ aufweist, IDisposable jedoch nicht implementiert. Eine Klasse, die ein IDisposable-Feld deklariert, besitzt indirekt eine nicht verwaltete Ressource und sollte die IDisposable-Schnittstelle implementieren. |
@@ -433,7 +434,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA1801 | [CA1801: Nicht verwendete Parameter überprüfen.](../code-quality/ca1801.md) | Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. |
 | CA1802 |[CA1802: Nach Möglichkeit Literale verwenden.](../code-quality/ca1802.md) |Ein Feld wird als static und read-only deklariert (Shared und ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) und mit einem Wert initialisiert, der zur Kompilierungszeit berechnet werden kann. Da der Wert, der dem Zielfeld zugewiesen ist, zur Kompilierzeit komprimiert werden kann, ändern Sie die Deklaration in ein Konstantenfeld (Konstanten in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ), sodass der Wert zur Kompilierzeit anstelle der Laufzeit berechnet wird. |
 | CA1804 | [CA1804: Nicht verwendete lokale Variablen entfernen.](../code-quality/ca1804.md) | Nicht verwendete lokale Variablen und unnötige Zuweisungen vergrößern die Assembly unnötig und beeinträchtigen die Leistung. |
-| CA1805 | [CA1805: nicht unnötig initialisieren](../code-quality/ca1805.md) | Die .NET-Laufzeit initialisiert alle Felder von Verweis Typen mit ihren Standardwerten, bevor der Konstruktor ausgeführt wird. In den meisten Fällen ist das explizite Initialisieren eines Felds auf seinen Standardwert redundant, wodurch Wartungskosten erhöht und die Leistung beeinträchtigt werden kann (z. b. mit erhöhter assemblygröße). |
+| CA1805 | [CA1805: Keine unnötige Initialisierung.](../code-quality/ca1805.md) | Die .NET-Laufzeit initialisiert alle Felder von Verweis Typen mit ihren Standardwerten, bevor der Konstruktor ausgeführt wird. In den meisten Fällen ist das explizite Initialisieren eines Felds auf seinen Standardwert redundant, wodurch Wartungskosten erhöht und die Leistung beeinträchtigt werden kann (z. b. mit erhöhter assemblygröße). |
 | CA1806 | [CA1806: Methodenergebnisse nicht ignorieren.](../code-quality/ca1806.md) | Ein neues Objekt wird erstellt, aber nie verwendet, oder eine Methode wird aufgerufen, die eine neue Zeichenfolge erstellt und zurückgibt, die nie verwendet wird, oder eine COM-Methode oder P/Invoke-Methode gibt ein HRESULT oder einen Fehlercode zurück, das oder der nie verwendet wird. |
 | CA1809 |[CA1809: Übermäßige lokale Variablen vermeiden.](../code-quality/ca1809.md) | Zur Leistungsoptimierung wird ein Wert häufig in einem Prozessorregister statt im Speicher gespeichert. Dieser Vorgang wird als Registrierung des Werts bezeichnet. Um die Wahrscheinlichkeit zu erhöhen, dass alle lokalen Variablen registriert werden, müssen Sie die Anzahl der lokalen Variablen auf 64 beschränken. |
 | CA1810 | [CA1810: Statische Felder von Referenztypen inline initialisieren.](../code-quality/ca1810.md) | Wenn ein Typ einen expliziten statischen Konstruktor deklariert, überprüft der JIT-Compiler (Just in Time) jede statische Methode und jeden Instanzenkonstruktor des Typs. Dadurch wird sichergestellt, dass der statische Konstruktor zuvor aufgerufen wurde. Durch die Überprüfung statischer Konstruktoren kann die Leistung herabgesetzt werden. |
@@ -475,6 +476,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA2013 | [CA2013: Verwenden Sie ReferenceEquals nicht mit Werttypen.](ca2013.md) | Beim Vergleichen von Werten mit werden bei <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> objA und objB Werttypen verwendet, bevor Sie an die-Methode übermittelt werden <xref:System.Object.ReferenceEquals%2A> . Dies bedeutet, dass auch dann, wenn objA und objB dieselbe Instanz eines Werttyps darstellen, die <xref:System.Object.ReferenceEquals%2A> Methode trotzdem false zurückgibt. |
 | CA2014 | [CA2014: Verwenden Sie stackzuweisung nicht in Schleifen.](ca2014.md) | Der von stackzugewiesc zugewiesene Stapel Speicher wird nur am Ende des Aufruf der aktuellen Methode freigegeben.  Die Verwendung in einer-Schleife kann zu unbegrenzten Stapel Vergrößerung und letztlichen Stapelüberlauf Bedingungen führen. |
 | CA2015 | [CA2015: Finalizer nicht für Typen definieren, die von memorymanager &lt; T abgeleitet sind&gt;](ca2015.md) | Durch das Hinzufügen eines Finalizers zu einem von abgeleiteten Typ <xref:System.Buffers.MemoryManager%601> kann der Speicher freigegeben werden, während er noch von einem verwendet wird <xref:System.Span%601> . |
+| CA2016 | [CA2016: Parameter "CancellationToken" an Methoden weiterleiten, die diesen Parameter akzeptieren.](ca2016.md) | Leiten Sie den- `CancellationToken` Parameter an Methoden weiter, die einen annehmen, um sicherzustellen, dass die Vorgangs Abbruch Benachrichtigungen ordnungsgemäß weitergegeben werden, oder übergeben Sie `CancellationToken.None` explizit, um anzugeben, dass das Token absichtlich nicht |
 | CA2100 | [CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.](../code-quality/ca2100.md) | Eine Methode legt die System.Data.IDbCommand.CommandText-Eigenschaft mithilfe einer Zeichenfolge fest, die aus einem Zeichenfolgenargument für die Methode erstellt wird. Diese Regel setzt voraus, dass das Zeichenfolgenargument Benutzereingaben enthält. Eine aus Benutzereingaben erstellte SQL-Befehlszeichenfolge ist anfällig für SQL-Injection-Angriffe. |
 | CA2101 |[CA2101: Marshalling für P/Aufruf-Zeichen folgen Argumente angeben](../code-quality/ca2101.md) | Ein Plattformaufrufmember lässt teilweise vertrauenswürdige Aufrufer zu, enthält einen Zeichenfolgenparameter und führt kein explizites Marshalling der Zeichenfolge durch. Auf diese Weise kann potenziell eine Sicherheitslücke verursacht werden. |
 | CA2102 | [CA2102: Nicht-CLSCompliant-Ausnahmen in allgemeinen Handlern abfangen.](../code-quality/ca2102.md) | Ein Member in einer Assembly, die nicht mit dem RuntimeCompatibilityAttribute bzw. mit RuntimeCompatibility(WrapNonExceptionThrows = false) gekennzeichnet ist, enthält einen Catch-Block zur Behandlung von System.Exception und keinen unmittelbar folgenden allgemeinen Catch-Block. |

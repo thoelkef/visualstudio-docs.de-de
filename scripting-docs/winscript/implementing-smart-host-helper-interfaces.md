@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: deac5827aa38039099f1d0f5e621d473db96743d
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574373"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835601"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implementieren von Smart Host-Hilfsprogrammschnittstellen
 Die [IDebugDocumentHelper-Schnittstelle](../winscript/reference/idebugdocumenthelper-interface.md) vereinfacht das Erstellen eines Smarthosts für aktives Debuggen immens, da sie Implementierungen für viele Schnittstellen bereitstellt, die für Smarthosts benötigt werden.  
@@ -105,4 +105,4 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
 - Stellen Sie im Dateisystem einen Pfadnamen für das Dokument zur Verfügung. Diese Funktion verwenden einige Benutzeroberflächen zum Debuggen, damit der Benutzer Änderungen an dem Dokument bearbeiten und speichern kann. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) wird aufgerufen, um den Host zu benachrichtigen, nachdem das Dokument gespeichert wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen mit Active Script – Übersicht](../winscript/active-script-debugging-overview.md)
+ [Debuggen mit Active Script - Übersicht](../winscript/active-script-debugging-overview.md)
