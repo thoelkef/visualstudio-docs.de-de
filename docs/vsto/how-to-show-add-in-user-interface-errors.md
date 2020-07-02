@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Add-In-Benutzeroberflächenfehler anzeigen'
+title: 'Gewusst wie: Anzeigen von Add-in-Benutzeroberflächen Fehlern'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441793"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545781"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Vorgehensweise: Add-In-Benutzeroberflächenfehler anzeigen
-  Wenn ein VSTO-Add-in versucht, die Microsoft Office-Benutzeroberfläche (UI) und ein Fehler auftritt, bearbeiten, wird standardmäßig keine Fehlermeldung angezeigt. Sie können Microsoft Office-Anwendungen aber so konfigurieren, dass Meldungen für Fehler angezeigt werden, die sich auf die Benutzeroberfläche beziehen. Sie können diese Nachrichten verwenden, um zu ermitteln, warum ein Menüband nicht angezeigt wird, oder warum ein Menüband angezeigt wird, jedoch keine Steuerelemente angezeigt werden.
+# <a name="how-to-show-add-in-user-interface-errors"></a>Gewusst wie: Anzeigen von Add-in-Benutzeroberflächen Fehlern
+  Wenn ein VSTO-Add-in versucht, die Microsoft Office-Benutzeroberfläche zu bearbeiten, wird standardmäßig keine Fehlermeldung angezeigt. Sie können Microsoft Office-Anwendungen aber so konfigurieren, dass Meldungen für Fehler angezeigt werden, die sich auf die Benutzeroberfläche beziehen. Anhand dieser Meldungen können Sie feststellen, warum ein benutzerdefiniertes Menüband nicht angezeigt wird oder warum ein Menüband angezeigt wird, aber keine Steuerelemente angezeigt werden.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "63441793"
     > Für Outlook befindet sich das Kontrollkästchen **VSTO-Add-In-Benutzeroberflächenfehler anzeigen** im Abschnitt **Entwickler** des Detailbereichs. Für andere Anwendungen befindet sich das Kontrollkästchen im Abschnitt **Allgemein** des Detailbereichs.
 
 ## <a name="see-also"></a>Siehe auch
-- [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)
-- [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)
-- [Übersicht über das Menüband](../vsto/ribbon-overview.md)
+- [Office-Benutzeroberflächen Anpassung](../vsto/office-ui-customization.md)
+- [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
+- [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)

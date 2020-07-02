@@ -29,7 +29,7 @@ ms.locfileid: "85546275"
 |-|-|
 |TypName|Literalsdbespelledrichtig|
 |CheckId|CA2204|
-|Category|Microsoft. Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache

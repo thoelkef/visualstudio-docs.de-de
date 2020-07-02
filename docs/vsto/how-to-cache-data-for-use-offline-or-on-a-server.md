@@ -59,7 +59,7 @@ ms.locfileid: "85546184"
 
 4. Legen Sie im Fenster **Eigenschaften** die **modifizierereigenschaft** auf **Public** fest (Standardmäßig ist Sie **intern**).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Vorgehensweise: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)

@@ -1,7 +1,7 @@
 ---
-title: Programmgesteuertes Speichern von Anlagen von Outlook-e-Mail-Elemente
+title: Programm gesteuertes Speichern von Anlagen von Outlook-e-Mails
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e0cff4761b26bac8265592b681d4e56f2ad92f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328963"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545885"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Vorgehensweise: Programmgesteuertes Speichern von Anlagen von Outlook-e-Mail-Elementen
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Gewusst wie: Programm gesteuertes Speichern von Anlagen von Outlook-e-Mail
 
 In diesem Beispiel werden E-Mail-Anlagen in einem angegebenen Ordner gespeichert, wenn die E-Mail im Posteingang eingeht.
 
 > [!IMPORTANT]
-> Dieses Beispiel funktioniert nur, wenn Sie einen Ordner mit dem Namen hinzufügen **TestFileSave** im Stammverzeichnis c:.
+> Dieses Beispiel funktioniert nur, wenn Sie im Stammverzeichnis des C-Verzeichnisses einen Ordner mit dem Namen **TestFileSave** hinzufügen.
 
 [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -37,7 +37,7 @@ In diesem Beispiel werden E-Mail-Anlagen in einem angegebenen Ordner gespeichert
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)
-- [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Vorgehensweise: Programmgesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
-- [Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Arbeiten mit e-Mail-Elementen](../vsto/working-with-mail-items.md)
+- [Gewusst wie: Programm gesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Gewusst wie: Programm gesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Gewusst wie: Programm gesteuertes suchen innerhalb eines bestimmten Ordners](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

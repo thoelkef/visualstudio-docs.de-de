@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918169"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547783"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Überprüfen von nicht verwendeten Parametern](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ReviewUnusedParameters|
+|TypName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Kategorie|Microsoft.Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen.<br /><br /> Nicht unterbrechend: Wenn Sie den Member so ändern, dass er den-Parameter innerhalb seines Texts verwendet.<br /><br /> Unterbrechen: Wenn Sie den Parameter entfernen und dieser außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
@@ -42,15 +42,15 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Überprüfe
 
 - Methoden, die als Ereignishandler verwendet werden.
 
-- Methoden, die mit dem `abstract`-Modifizierer (`MustOverride` in Visual Basic) deklariert wurden.
+- Methoden, die mit dem- `abstract` `MustOverride` Modifizierer (in Visual Basic) deklariert wurden.
 
-- Methoden, die mit dem `virtual`-Modifizierer (`Overridable` in Visual Basic) deklariert wurden.
+- Methoden, die mit dem- `virtual` `Overridable` Modifizierer (in Visual Basic) deklariert wurden.
 
-- Methoden, die mit dem `override`-Modifizierer (`Overrides` in Visual Basic) deklariert wurden.
+- Methoden, die mit dem- `override` `Overrides` Modifizierer (in Visual Basic) deklariert wurden.
 
-- Methoden, die mit dem `extern`-Modifizierer (`Declare` Anweisung in Visual Basic) deklariert wurden.
+- Methoden, die mit dem- `extern` `Declare` Modifizierer (Anweisung in Visual Basic) deklariert wurden.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Überprüfen Sie Parameter in nicht virtuellen Methoden, die nicht im Methoden Text verwendet werden, um sicherzustellen, dass keine Richtigkeit bei einem Fehler auftritt. Nicht verwendete Parameter verursachen Wartungs-und Leistungskosten.
 
  Manchmal kann ein Verstoß gegen diese Regel auf einen Implementierungs Fehler in der-Methode hinweisen. Beispielsweise sollte der-Parameter im Methoden Text verwendet werden. Unterdrückt Warnungen dieser Regel, wenn der Parameter aufgrund der Abwärtskompatibilität vorhanden sein muss.
@@ -67,8 +67,8 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Überprüfe
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Nicht aufgerufenen privaten Code vermeiden.](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Nicht instanziierte interne Klassen vermeiden.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Nicht verwendete lokale Variablen entfernen.](../code-quality/ca1804-remove-unused-locals.md)

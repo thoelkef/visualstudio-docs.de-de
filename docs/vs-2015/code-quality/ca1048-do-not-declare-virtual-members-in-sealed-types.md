@@ -15,30 +15,30 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603328"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546795"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotDeclareVirtualMembersInSealedTypes|
+|TypName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
 |Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ ist versiegelt und deklariert eine Methode, die sowohl `virtual` (`Overridable` in Visual Basic) als auch nicht endgültig ist. Diese Regel meldet keine Verstöße gegen Delegattypen, die diesem Muster folgen müssen.
+ Ein öffentlicher Typ ist versiegelt und deklariert eine Methode, die sowohl `virtual` ( `Overridable` in Visual Basic) als auch nicht endgültig ist. Diese Regel meldet keine Verstöße gegen Delegattypen, die diesem Muster folgen müssen.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Typen deklarieren Methoden als virtuell, damit erbende Typen die Implementierung der virtuellen Methode überschreiben können. Definitionsgemäß können Sie nicht von einem versiegelten Typ erben, sodass eine virtuelle Methode für einen versiegelten Typ bedeutungslos ist.
 
- Die Visual Basic .net- C# und-Compiler lassen nicht zu, dass Typen gegen diese Regel verstoßen.
+ Die Visual Basic .net-und c#-Compiler lassen nicht zu, dass Typen gegen diese Regel verstoßen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, legen Sie die Methode als nicht virtuell fest, oder machen Sie den Typ vererbbar.

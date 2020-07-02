@@ -1,8 +1,8 @@
 ---
-title: FullClassName-Element (Erweiterung des VS-Vorlagen-Assistenten)
+title: FullClassName-Element (vs-Vorlagen-Assistenten Erweiterung)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e533fdf5b5497b17949581801721136b18bc2d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711419"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769608"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName-Element (Visual Studio-Vorlagen-Assistentenerweiterung)
-Der vollqualifizierte Name der Klasse, `IWizard` die die Schnittstelle implementiert.
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName-Element (Assistenten Erweiterung für Visual Studio-Vorlagen)
+Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle implementiert.
 
- \<VSTemplate \<> WizardExtension> ... \<FullClassName>
+ \<VSTemplate> \<WizardExtension>
+... \<FullClassName>
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,24 +39,24 @@ Der vollqualifizierte Name der Klasse, `IWizard` die die Schnittstelle implement
  Keine.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungselemente zum Anpassen des Vorlagen-Assistenten.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Dieser Text gibt die Klasse `IWizard` an, die die Schnittstelle implementiert. Die angegebene Klasse muss in der Assembly vorhanden sein, die vom [Assemblyelement](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) angegeben wird.
+ Dieser Text gibt die Klasse an, die die- `IWizard` Schnittstelle implementiert. Die angegebene Klasse muss in der Assembly vorhanden sein, die durch das [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) -Element angegeben wird.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `FullClassName` ist ein erforderliches untergeordnetes Element von `WizardExtension`.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden die Metadaten für [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] die Standardprojektvorlage für eine Windows-Anwendung veranschaulicht.
+ Im folgenden Beispiel werden die Metadaten für die Standard Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung veranschaulicht.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -85,7 +86,7 @@ Der vollqualifizierte Name der Klasse, `IWizard` die die Schnittstelle implement
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

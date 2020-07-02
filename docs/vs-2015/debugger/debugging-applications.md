@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b689a3be22c9fec775cf42b9d26393a886174daf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 747f96a31ace1267512b9327a0d6aaaf07e02631
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197520"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545586"
 ---
 # <a name="debugging-applications"></a>Debuggen von Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von
   
 ## <a name="debugging-for-different-types-of-applications"></a>Debuggen für verschiedene Arten von Anwendungen  
   
-|||  
+|Titel|Beschreibung|  
 |-|-|  
 |[Debuggen von Windows Store-Apps und universellen Windows-Apps](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Beschreibt das Debuggen von Windows Store-Apps und universellen Windows-Apps.|  
 |[Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)|Beschreibt das Debuggen von verwaltetem Code (Visual C#, Visual Basic und F3).|  

@@ -1,5 +1,5 @@
 ---
-title: ExtensionDataItem-Element | Microsoft-Dokumentation
+title: Extensiondataitem-Element | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967382"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546548"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem-Element
-  Eine benutzerdefinierte Daten-Element, das Schlüssel/Wert-Format der SharePoint-Projektelement zugeordnet ist. Sowohl der Schlüssel und Wert müssen Zeichenfolgen sein.
+  Ein benutzerdefiniertes Datenelement, das dem SharePoint-Projekt Element im Schlüssel-Wert-Format zugeordnet ist. Sowohl der Schlüssel als auch der Wert müssen Zeichen folgen sein.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,10 +34,10 @@ ms.locfileid: "62967382"
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|Attribut|BESCHREIBUNG|
 |---------------|-----------------|
-|**Key**|Erforderliche **Xs: String** Attribut.<br /><br /> Der Schlüssel, der zum Speichern und Abrufen des Datenelements verwendet wird.|
-|**Wert**|Erforderliche **xs: String** Attribut.<br /><br /> Der Wert des Datenelements.|
+|**Schlüssel**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Schlüssel, der verwendet wird, um das Datenelement zu speichern und abzurufen.|
+|**Wert**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Wert des Datenelements.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine
@@ -46,19 +46,19 @@ ms.locfileid: "62967382"
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Stellt eine Auflistung von benutzerdefinierten Daten-Elementen, die die SharePoint-Projektelement zugeordnet sind.|
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Stellt eine Auflistung benutzerdefinierter Datenelemente dar, die dem SharePoint-Projekt Element zugeordnet sind.|
 
 ## <a name="remarks"></a>Hinweise
- Wenn Sie benutzerdefinierte Daten mit einem SharePoint-Projektelement mit Zuordnen der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> Eigenschaft eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> Visual Studio speichert die Daten in ein neues Objekt **ExtensionDataItem** Element in der `.spdata` -Datei für die das Projektelement. Weitere Informationen finden Sie unter [Speichern von Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+ Wenn Sie einem SharePoint-Projekt Element mithilfe der-Eigenschaft eines Objekts benutzerdefinierte Daten zuordnen <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> , speichert Visual Studio die Daten in einem neuen **extensiondataitem** -Element in der- `.spdata` Datei für das Projekt Element. Weitere Informationen finden Sie unter [Speichern von Daten in Erweiterungen des SharePoint-Projekt Systems](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="element-information"></a>Elementinformationen
 
-|||
+|Eigenschaft|Wert|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Name des Schemas**|SharePoint-Projektelementschema|
-|**Validierungsdatei**|ProjectItemModelSchema.xsd|
-|**Kann leer sein.**|Nein|
+|**Namespace**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/sharepointtools/sharepointprojectitemmodel|
+|**Schema Name**|SharePoint-Projekt Element Schema|
+|**Validierungs Datei**|Projectitemmodelschema. xsd|
+|**Kann leer sein**|Nein|
 
 ## <a name="see-also"></a>Siehe auch
-- [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md)

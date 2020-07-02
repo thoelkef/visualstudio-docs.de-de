@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen'
+title: 'Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817452"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546158"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen
   Sie können benannte Formatvorlagen auf Bereiche in Arbeitsmappen anwenden. Excel stellt eine Reihe von vordefinierten Formaten bereit.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -68,6 +68,6 @@ ms.locfileid: "62817452"
 
 ## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
-- [NamedRange-Steuerelement](../vsto/namedrange-control.md)
+- [Name Drange-Steuerelement](../vsto/namedrange-control.md)
 - [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

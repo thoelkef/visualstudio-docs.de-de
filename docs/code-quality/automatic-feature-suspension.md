@@ -10,63 +10,63 @@ helpviewer_keywords:
 - performance
 - low-memory
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8480eb57a08905c2a593adbab519ae793638888
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431240"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769476"
 ---
 # <a name="automatic-feature-suspension"></a>Automatisches Anhalten von Features
 
-Wenn der verfügbare Systemspeicher auf 200 MB oder weniger fällt, zeigt Visual Studio die folgende Meldung im Code-Editor an:
+Wenn Ihr verfügbarer System Arbeitsspeicher auf 200 MB oder weniger fällt, zeigt Visual Studio im Code-Editor die folgende Meldung an:
 
-![Warnungstext, der die vollständige Lösungsanalyse aussetzt](../code-quality/media/fsa_alert.png)
+![Warnungs Text zum Anhalten der vollständigen Lösungs Analyse](../code-quality/media/fsa_alert.png)
 
-Wenn Visual Studio einen Speicherzustand mit geringem Arbeitsspeicher erkennt, werden bestimmte erweiterte Funktionen automatisch angehalten, damit es stabil bleibt. Visual Studio funktioniert weiterhin wie bisher, aber seine Leistung wird beeinträchtigt.
+Wenn Visual Studio eine nicht genügend Arbeitsspeicher Bedingung erkennt, werden bestimmte erweiterte Funktionen automatisch angehalten, damit Sie stabil bleiben. Visual Studio funktioniert weiterhin wie zuvor, aber seine Leistung ist beeinträchtigt.
 
-In einem Zustand mit geringem Arbeitsspeicher werden die folgenden Aktionen ausgeführt:
+Bei einem Mangel an Arbeitsspeicher erfolgen die folgenden Aktionen:
 
-- Die Livecodeanalyse für Visual C- und Visual Basic wird auf einen minimalen Umfang reduziert.
+- Die Live Code Analyse für Visual c# und Visual Basic wird auf einen minimalen Bereich reduziert.
 
-- Der Gc-Modus mit niedriger Latenz [(Garbage Collection)](/dotnet/standard/garbage-collection/index) für Visual C- und Visual Basic ist deaktiviert.
+- Der Modus für die [Garbage Collection](/dotnet/standard/garbage-collection/index) (GC) mit niedriger Latenz für Visual c# und Visual Basic ist deaktiviert.
 
 - Visual Studio-Caches werden geleert.
 
-## <a name="improve-visual-studio-performance"></a>Verbessern der Visual Studio-Leistung
+## <a name="improve-visual-studio-performance"></a>Verbessern der Leistung von Visual Studio
 
-Tipps und Tricks zur Verbesserung der Visual Studio-Leistung im Umgang mit großen Lösungen oder Speicherarmen finden Sie unter [Leistungsüberlegungen für große Lösungen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Tipps und Tricks zum Verbessern der Leistung von Visual Studio beim Umgang mit großen Lösungen oder Bedingungen mit geringem Arbeitsspeicher finden Sie unter [Überlegungen zur Leistung für große Lösungen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>Live-Code-Analyse wird auf minimalen Umfang reduziert
+## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>Die Live Code Analyse wird auf einen minimalen Bereich reduziert.
 
-Standardmäßig wird die Livecodeanalyse für geöffnete Dokumente und Projekte ausgeführt. Sie können diesen Analysebereich anpassen, um auf das aktuelle Dokument reduziert oder auf die gesamte Lösung erweitert zu werden. Weitere Informationen finden Sie unter [Gewusst wie: Konfigurieren des Livecodeanalysebereichs für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md). In einem Zustand mit geringem Arbeitsspeicher erzwingt Visual Studio, dass der Liveanalysebereich auf das aktuelle Dokument reduziert wird. Sie können jedoch den bevorzugten Analysebereich erneut aktivieren, indem Sie die Schaltfläche **Erneut aktivieren** in der Infoleiste auswählen, wenn er angezeigt wird, oder indem Sie Visual Studio neu starten. Im Dialogfeld Optionen werden immer die aktuellen Einstellungen für die Livecodeanalyse angezeigt.
+Standardmäßig wird die Live Code Analyse für geöffnete Dokumente und Projekte ausgeführt. Sie können diesen Analysebereich so anpassen, dass er auf das aktuelle Dokument reduziert oder auf die gesamte Projekt Mappe erweitert wird. Weitere Informationen finden Sie unter Gewusst [wie: Konfigurieren des Gültigkeits Bereichs der Live-Code Analyse für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md). Bei einem Mangel an Arbeitsspeicher erzwingt Visual Studio, dass der Live Analysebereich auf das aktuelle Dokument reduziert wird. Sie können jedoch Ihren bevorzugten Analysebereich erneut aktivieren, indem Sie die Schaltfläche **erneut aktivieren** in der Info Leiste auswählen, wenn Sie angezeigt wird, oder indem Sie Visual Studio neu starten. Im Dialogfeld Optionen werden immer die aktuellen Einstellungen für die Live-Code Analysebereiche angezeigt.
 
-## <a name="gc-low-latency-disabled"></a>GC-Niedrige Latenz deaktiviert
+## <a name="gc-low-latency-disabled"></a>GC mit geringer Latenzzeit deaktiviert
 
-Um den GC-Modus mit niedriger Latenz wieder zu aktivieren, starten Sie Visual Studio neu. Standardmäßig aktiviert Visual Studio den GC-Modus mit niedriger Latenz, wenn Sie eingeben, um sicherzustellen, dass ihre Eingabe keine GC-Vorgänge blockiert. Wenn jedoch ein Zustand mit geringem Arbeitsspeicher dazu führt, dass Visual Studio die automatische Sperrungswarnung anzeigt, ist der GC-Modus mit niedriger Latenz für diese Sitzung deaktiviert. Durch den Neustart von Visual Studio wird das standardmäßige GC-Verhalten erneut aktiviert. Weitere Informationen finden Sie unter <xref:System.Runtime.GCLatencyMode>.
+Starten Sie Visual Studio neu, um den GC-Modus mit niedriger Latenz wieder zu aktivieren. Standardmäßig ermöglicht Visual Studio den GC-Modus mit niedriger Latenz, wenn Sie eingeben, um sicherzustellen, dass Ihre Typisierung keine GC-Vorgänge blockiert. Wenn in Visual Studio jedoch aufgrund von geringem Arbeitsspeicher die automatische anhaltewarnung angezeigt wird, ist der GC-Modus mit niedriger Latenzzeit für diese Sitzung deaktiviert. Wenn Sie Visual Studio neu starten, wird das standardmäßige GC-Verhalten erneut aktiviert. Weitere Informationen finden Sie unter <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Visual Studio-Caches geleert
+## <a name="visual-studio-caches-flushed"></a>In Visual Studio geleerte Caches
 
-Wenn Sie die aktuelle Entwicklungssitzung fortsetzen oder Visual Studio neu starten, werden alle Visual Studio-Caches sofort geleert, beginnen jedoch mit dem erneuten Auffüllen. Die geleerten Caches umfassen Caches für die folgenden Features:
+Wenn Sie die aktuelle Entwicklungs Sitzung fortsetzen oder Visual Studio neu starten, werden alle Visual Studio-Caches sofort geleert, aber mit dem erneuten Auffüllen begonnen. Die geleerten Caches enthalten Caches für die folgenden Features:
 
 - Alle Verweise suchen
 
 - Navigieren zu
 
-- Hinzufügen von Verwendung
+- Hinzufügen mithilfe von
 
-Darüber hinaus werden Caches, die für interne Visual Studio-Vorgänge verwendet werden, ebenfalls gelöscht.
+Außerdem werden Caches, die für interne Visual Studio-Vorgänge verwendet werden, ebenfalls gelöscht.
 
 > [!NOTE]
-> Die automatische Feature-Suspension-Warnung erfolgt nur einmal pro Lösung, nicht pro Sitzung. Dies bedeutet, dass Sie möglicherweise eine weitere automatische Feature-Suspensionswarnung erhalten können, wenn Sie von Visual Basic zu Visual C-Funktion (oder umgekehrt) wechseln und in einem anderen Zustand mit niedrigem Arbeitsspeicher ausgeführt werden.
+> Die automatische Merkmals Unterbrechungs Warnung tritt nur einmal pro Lösung auf, nicht pro Sitzung. Dies bedeutet Folgendes: Wenn Sie von Visual Basic zu Visual c# wechseln (oder umgekehrt) und auf einen anderen Arbeitsspeicher Mangel stoßen, können Sie möglicherweise eine weitere Warnung zur automatischen Funktions Unterbrechung erhalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Konfigurieren des Livecodeanalysebereichs für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md)
+- [Gewusst wie: Konfigurieren des Gültigkeits Bereichs der Live-Code Analyse für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md)
 - [Grundlagen der Garbage Collection](/dotnet/standard/garbage-collection/fundamentals)
-- [Leistungsüberlegungen für große Lösungen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Überlegungen zur Leistung für große Lösungen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

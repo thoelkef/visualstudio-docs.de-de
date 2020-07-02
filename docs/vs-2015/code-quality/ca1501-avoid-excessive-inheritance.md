@@ -15,19 +15,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a2106042b552efbe824d7517abcc86e322b57aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf797ad67b7df2eb1f3ba1246e965ed6ebbd586d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607854"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547861"
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Übermäßige Vererbung vermeiden
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Übermäßige Vererbung vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|AvoidExcessiveInheritance|
+|TypName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
 |Kategorie|Microsoft. Wartbarkeit|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72607854"
 ## <a name="cause"></a>Ursache
  Ein Typ ist in seiner Vererbungshierarchie mehr als vier Ebenen tief.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Tief verschachtelte Typenhierarchien können schwer zu verfolgen, verstehen und verwalten sein. Diese Regel schränkt die Analyse auf Hierarchien im gleichen Modul ein.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen

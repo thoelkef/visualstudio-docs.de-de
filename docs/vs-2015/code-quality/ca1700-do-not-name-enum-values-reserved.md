@@ -29,7 +29,7 @@ ms.locfileid: "85545651"
 |-|-|
 |TypName|DoNotNameEnumValuesReserved|
 |CheckId|CA1700|
-|Category|Microsoft.Naming|
+|Kategorie|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

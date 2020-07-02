@@ -111,6 +111,6 @@ Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifis
 
      Im Explorer sollte nur ein **Actors** -Knoten angezeigt werden, und der Knoten **comments** sollte nicht angezeigt werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
