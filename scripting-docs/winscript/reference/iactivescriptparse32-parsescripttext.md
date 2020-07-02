@@ -5,19 +5,19 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: ec4e9539900ee39e99927bb9055a8c107f864653
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: e26b5cb1790cab38a6544a04307b7e336a952519
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574896"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835367"
 ---
-# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::P arsescripttext
+# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 Analysiert das angegebene Code-Scriptlet, fügt Deklarationen im Namespace hinzu und wertet, wo angebracht, Code aus.  
   
 ## <a name="syntax"></a>Syntax  
@@ -64,7 +64,7 @@ HRESULT ParseScriptText(
   
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
-|`S_OK`|Erfolgreich.|  
+|`S_OK`|Erfolg.|  
 |`DISP_E_EXCEPTION`|Eine Ausnahme tritt bei der Verarbeitung des Scriptlets auf. Der `pexcepinfo`-Parameter enthält Informationen zur Ausnahme.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
@@ -75,7 +75,7 @@ HRESULT ParseScriptText(
 ## <a name="remarks"></a>Hinweise  
  Wenn die Skript-Engine im initialisierten Zustand ist, wird kein Code tatsächlich während dieses Aufrufs ausgewertet; dieser Code wird vielmehr in die Warteschlange gestellt und ausgeführt, wenn die Skript-Engine in den gestarteten Zustand übergehen soll. Da die Ausführung im initialisierten Zustand nicht zulässig ist, ist es ein Fehler, diese Methode mit dem SCRIPTTEXT_ISEXPRESSIONS-Flag aufzurufen, wenn im initialisierten Zustand.  
   
- Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird z. b. bei der Auswertung der HTML-\<SCRIPT >-Tags verwendet, das das Ausführen von-Anweisungen ermöglicht, während die HTML-Seite erstellt wird, anstatt Sie lediglich in den Skript Zustand zu kompilieren.  
+ Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird z. b. bei der Auswertung des HTML- \<SCRIPT> Tags verwendet, das das Ausführen von Anweisungen ermöglicht, während die HTML-Seite erstellt wird, anstatt Sie lediglich in den Skript Zustand zu kompilieren.  
   
  Der Code, der an diese Methode übergeben wird, muss ein gültiger, vollständiger Teil des Codes sein. Beispielsweise ist es in VBScript nicht zulässig, diese Methode einmal mit "Sub Function(x)" aufzurufen und dann ein zweites Mal mit `End Sub`. Der Parser darf nicht auf den zweiten Aufruf warten, um die Unterroutine abzuschließen. Er muss stattdessen einen Analysefehler generieren, da eine Unterroutinendeklaration gestartet, aber nicht abgeschlossen wurde.  
   
