@@ -15,19 +15,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669177"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544013"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
+|TypName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
 |Kategorie|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72669177"
 ## <a name="cause"></a>Ursache
  Ein Bezeichner weist ein falsches Suffix auf.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Nur die Namen von Typen, die bestimmte Basistypen erweitern oder bestimmte Schnittstellen bzw. Typen implementieren, die von diesen Typen abgeleitet werden, sollten stets mit bestimmten reservierten Suffixen enden. Für andere Typnamen sollten diese reservierten Suffixe nicht verwendet werden.
 
  In der folgenden Tabelle werden die reservierten Suffixe sowie die Basistypen und die Schnittstellen aufgeführt, denen die Suffixe zugeordnet sind.
@@ -43,15 +43,15 @@ ms.locfileid: "72669177"
 |Suffix|Basistyp/Schnittstelle|
 |------------|--------------------------|
 |Attribut|<xref:System.Attribute?displayProperty=fullName>|
-|Auflistung|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
-|Dictionary|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
+|Sammlung|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
+|Wörterbuch|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|Ein Ereignishandlerdelegat.|
-|-Ausnahme|<xref:System.Exception?displayProperty=fullName>|
+|Ausnahme|<xref:System.Exception?displayProperty=fullName>|
 |Berechtigung|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Warteschlange|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stapel|<xref:System.Collections.Stack?displayProperty=fullName>|
-|Stream|<xref:System.IO.Stream?displayProperty=fullName>|
+|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
 
  Außerdem sollten die folgenden Suffixe **nicht** verwendet werden:
 
@@ -72,7 +72,7 @@ ms.locfileid: "72669177"
  Unterdrücken Sie keine Warnung dieser Regel, es sei denn, das Suffix hat eine eindeutige Bedeutung in der Anwendungsdomäne.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1710: Bezeichner sollten ein richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+ [CA1710: Bezeichner sollten ein richtiges Suffix aufweisen.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Attribute](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Ereignisse und](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115) Delegaten

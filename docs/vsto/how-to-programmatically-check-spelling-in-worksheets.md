@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern'
+title: 'Gewusst wie: Programm gesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feb284657932a0c20cd785b14db5e2b3de9366f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575562"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541543"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Vorgehensweise: Programmgesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Gewusst wie: Programm gesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern
   Sie können die Rechtschreibung von Wörtern in einem Arbeitsblatt programmgesteuert überprüfen. Das Dialogfeld **Rechtschreibung** wird automatisch angezeigt wird, wenn das Arbeitsblatt falsch geschriebene Wörter enthält.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "62575562"
      [!code-csharp[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#45)]
      [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]
 
-## <a name="to-check-spelling-in-a-worksheet-in-a-vsto-add-in"></a>Für die Rechtschreibprüfung in einem Arbeitsblatt in einem VSTO-Add-in
+## <a name="to-check-spelling-in-a-worksheet-in-a-vsto-add-in"></a>So überprüfen Sie die Rechtschreibung in einem Arbeitsblatt in einem VSTO-Add-in
 
 1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> -Methode des aktiven Arbeitsblatts auf.
 
@@ -43,6 +43,6 @@ ms.locfileid: "62575562"
 
 ## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
-- [Vorgehensweise: Programmgesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
-- [NamedRange-Steuerelement](../vsto/namedrange-control.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Gewusst wie: Programm gesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Name Drange-Steuerelement](../vsto/namedrange-control.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

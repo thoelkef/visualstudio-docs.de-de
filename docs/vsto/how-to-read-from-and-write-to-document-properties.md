@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Lesen von und Schreiben in Dokumenteigenschaften'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71a4b1a84c4544f4dc2b359e391f3c9f768e8eee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985811"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541322"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Gewusst wie: Lesen von und Schreiben in Dokumenteigenschaften
   Sie können Dokumenteigenschaften zusammen mit einem Dokument speichern. Office-Anwendungen stellen eine Reihe integrierter Eigenschaften (z. B. Autor, Titel und Betreff) bereit. In diesem Thema wird gezeigt, wie Dokumenteigenschaften in Microsoft Office Excel und Microsoft Office Word festgelegt werden.

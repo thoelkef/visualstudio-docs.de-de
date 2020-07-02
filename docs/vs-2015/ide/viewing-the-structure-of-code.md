@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 44036f519ae4d2b718c6eee40317e15fd4574077
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663092"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545014"
 ---
 # <a name="viewing-the-structure-of-code"></a>Anzeigen der Codestruktur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,20 +44,20 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 
  [Klassenansicht (Visual Basic, C#, C++)](#BKMK_ClassView)
 
- [Aufrufhierarchie (Visual Basic, C#, C++)](#BKMK_CallHierarchy)
+ [CallHierarchy (Visual Basic, c#, C++)](#BKMK_CallHierarchy)
 
  [Objektkatalog](#BKMK_ObjectBrowser)
 
- [Codedefinitionsfenster (C#, C++)](#BKMK_CodeDefinition)
+ [Code Definitions Fenster (c#, C++)](#BKMK_CodeDefinition)
 
- Sie können auch den **Projektmappen-Explorer** verwenden, um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen, Symbolverweisen und weiteren Inhalten zu suchen und die Aufrufhierarchie einer Methode anzuzeigen, ohne zwischen mehreren zuvor aufgelisteten Toolfenstern wechseln zu müssen.
+ Sie können auch **Projektmappen-Explorer** verwenden, um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen zu suchen, die Aufrufhierarchie einer Methode anzuzeigen, Symbol Verweise zu suchen und mehr, ohne zwischen den zuvor aufgeführten Tool Fenstern wechseln zu müssen.
 
  Wenn Sie Visual Studio Enterprise verwenden, können Sie zum Visualisieren der Struktur des Codes und seiner Abhängigkeiten in der gesamten Projektmappe entsprechende Code Maps verwenden und Detailinformationen zu Codekomponenten anzeigen, die Sie interessieren. Weitere Informationen finden Sie unter [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).
 
 > [!NOTE]
 > Die Visual Studio-Edition und die verwendeten Einstellungen können sich auf die Funktionen der IDE auswirken. Sie können sich daher von den in diesem Thema beschriebenen Funktionen unterscheiden.
 
-## <a name="BKMK_ClassView"></a> Klassenansicht (Visual Basic, C#, C++)
+## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a>Klassenansicht (Visual Basic, c#, C++)
  Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** sowie in einem separaten Fenster angezeigt. Das Fenster **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog**, wenn das Element außerhalb der Projektmappe definiert ist).
 
  Sie müssen ein Projekt nicht kompilieren, um seine Elemente in der **Klassenansicht** anzuzeigen. Das Fenster wird aktualisiert, wenn Sie im Projekt Änderungen am Code vornehmen.
@@ -69,7 +69,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 ### <a name="class-view-toolbar"></a>Symbolleiste der Klassenansicht
  Die Symbolleiste der Klassenansicht enthält die folgenden Befehle.
 
-|||
+|Befehl|Beschreibung|
 |-|-|
 |**Neuer Ordner**|Erstellt einen virtuellen Ordner oder Unterordner, in dem Sie häufig verwendete Elemente organisieren können. Sie werden in der aktiven Projektmappendatei (SUO) gespeichert. Nach dem Umbenennen oder Löschen eines Elements in Ihrem Code wird es in einem virtuellen Ordner möglicherweise als Fehlerknoten angezeigt. Löschen Sie den Fehlerknoten, um dieses Problem zu beheben. Wenn Sie ein Element umbenannt haben, können Sie es aus der Projekthierarchie erneut in den Ordner verschieben.|
 |**Zurück**|Navigiert zum zuvor ausgewählten Element.|
@@ -77,9 +77,9 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 |**Klassendiagramm anzeigen** (nur Projekte mit verwaltetem Code)|Dieser Befehl wird verfügbar, wenn Sie in der **Klassenansicht** einen Namespace oder Typ auswählen. Wenn ein Namespace ausgewählt ist, zeigt das Klassendiagramm alle darin enthaltenen Typen an. Wenn ein Typ ausgewählt ist, zeigt das Klassendiagramm nur diesen Typ an.|
 
 ### <a name="class-view-settings"></a>Klassenansicht: Einstellungen
- Die Schaltfläche **Klassenansicht: Einstellungen** auf der Symbolleiste weist die folgenden Einstellungen auf.
+ Die Schaltfläche **Klassenansicht Einstellungen** auf der Symbolleiste weist die folgenden Einstellungen auf.
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Basistypen anzeigen**|Es werden die Basistypen angezeigt.|
 |**Abgeleitete Typen anzeigen**|Es werden die abgeleiteten Typen angezeigt.|
@@ -94,12 +94,12 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 ### <a name="class-view-shortcut-menu"></a>Klassenansicht: Kontextmenü
  Das Kontextmenü in der **Klassenansicht** kann in Abhängigkeit des ausgewählten Projekts die folgenden Befehle enthalten.
 
-|||
+|Befehl|Beschreibung|
 |-|-|
 |**Gehe zu Definition**|Sucht nach der Definition des Elements im Quellcode oder im **Objektkatalog**, wenn das Element nicht im geöffneten Projekt definiert ist.|
 |**Definition durchsuchen**|Zeigt das ausgewählte Element im **Objektkatalog** an.|
 |**Alle Verweise suchen**|Sucht das aktuell ausgewählte Objektelement und zeigt die Ergebnisse im Fenster **Suchergebnisse** an.|
-|**Für Typ filtern** (nur verwalteter Code)|Zeigt nur den ausgewählten Typ oder Namespace an. Sie können den Filter entfernen, indem Sie die Schaltfläche **Suchergebnisse löschen** (X) neben dem Feld **Suchen** auswählen.|
+|**Für Typ filtern** (nur verwalteter Code)|Zeigt nur den ausgewählten Typ oder Namespace an. Sie können den Filter entfernen, indem Sie die Schaltfläche **Suchen** (X) neben dem Feld **Suchen** auswählen.|
 |**Kopieren**|Kopiert den vollqualifizierten Namen des Objekts.|
 |**Alphabetisch sortieren**|Listet Typen und Member alphabetisch nach Namen auf.|
 |**Nach Membertyp sortieren**|Listet Typen und Member nach Typ sortiert auf (sodass Klassen vor Schnittstellen, Schnittstellen vor Delegaten und Methoden vor Eigenschaften stehen).|
@@ -110,7 +110,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 |**Gehe zu Verweis**|Zeigt einen Verweis auf den Typ oder Member im Quellcode an, falls verfügbar.|
 |**Aufrufhierarchie anzeigen**|Zeigt die ausgewählte Methode im Fenster **Aufrufhierarchie** an.|
 
-## <a name="BKMK_CallHierarchy"></a> Aufrufhierarchie (Visual Basic, C#, C++)
+## <a name="call-hierarchy-visual-basic-c-c"></a><a name="BKMK_CallHierarchy"></a> Aufrufhierarchie (Visual Basic, C#, C++)
  Das Fenster **Aufrufhierarchie** zeigt an, wo eine bestimmte Methode (oder Eigenschaft oder ein Konstruktor) aufgerufen wird, und listet die von dieser Methode aufgerufenen Methoden auf. Sie können mehrere Ebenen des Aufrufdiagramms anzeigen, in dem die Aufrufer/Aufgerufenem-Beziehung zwischen den Methoden in einem angegebenen Bereich angezeigt wird.
 
  Sie können das Fenster **Aufrufhierarchie** anzeigen, indem Sie eine Methode (oder Eigenschaft oder einen Konstruktor) und dann im Kontextmenü **Aufrufhierarchie anzeigen** auswählen. Die Anzeige sollte in etwa der folgenden Abbildung entsprechen.
@@ -123,9 +123,9 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 
  Das Fenster **Aufrufhierarchie** findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um diese Verweise zu suchen.
 
- Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle.
+ Das Kontextmenü im Fenster " **CallHierarchy** " enthält die folgenden Befehle.
 
-|||
+|Befehl|Beschreibung|
 |-|-|
 |**Als neuen Stamm hinzufügen**|Fügt den ausgewählten Knoten als neuer Stammknoten hinzu.|
 |**Stamm entfernen**|Entfernt den ausgewählten Stammknoten aus dem Strukturansichtsbereich.|
@@ -134,7 +134,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 |**Kopieren**|Kopiert den ausgewählten Knoten (aber nicht dessen untergeordnete Knoten).|
 |**Aktualisieren**|Aktualisiert die Informationen.|
 
-## <a name="BKMK_ObjectBrowser"></a> Objektkatalog
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Objektkatalog
  Der **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.
 
  Sie können die Anzeige im **Objektkatalog** filtern. Mithilfe der Dropdownliste am oberen Rand des Fensters können Sie zwischen folgenden Optionen wählen:
@@ -151,16 +151,16 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 
   Im linken Bereich des **Objektkatalogs** werden physische Container wie .NET Framework- und COM-Komponenten angezeigt. Sie können die Containerknoten erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.
 
-  Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Wählen Sie die Schaltfläche **Suchergebnisse löschen** (X) neben dem Feld **Suchen**, um eine Suche zu löschen.
+  Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Um eine Suche zu löschen, wählen Sie die Schaltfläche **Suche löschen** (X) neben dem **Suchfeld** aus.
 
   Der **Objektkatalog** verfolgt die von Ihnen vorgenommene Auswahl, und Sie können zwischen Ihren Auswahlmöglichkeiten navigieren, indem Sie die Schaltflächen **Weiter** und **Zurück** auf der Symbolleiste verwenden.
 
   Sie können den **Objektkatalog** zum Hinzufügen eines Assemblyverweises auf eine geöffnete Projektmappe verwenden, indem Sie ein Objekt auswählen (Assembly, Namespace, Typ oder Member) und dann die Schaltfläche **Verweis hinzufügen** auf der Symbolleiste verwenden.
 
 ### <a name="object-browser-settings"></a>Objektkatalog: Einstellungen
- Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste können Sie eine der folgenden Ansichten festlegen.
+ Mithilfe der Schaltfläche **Objektkatalog Einstellungen** auf der Symbolleiste können Sie eine der folgenden Ansichten angeben.
 
-|||
+|name|BESCHREIBUNG|
 |-|-|
 |**Namespaces anzeigen**|Zeigt im linken Bereich anstelle von physischen Containern die Namespaces an. Die in mehreren physischen Containern gespeicherten Namespaces werden zusammengeführt.|
 |**Container anzeigen**|Zeigt im linken Bereich anstelle von Namespaces die physischen Container an. **Namespaces anzeigen** und **Container anzeigen** sind sich gegenseitig ausschließende Einstellungen.|
@@ -177,7 +177,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 ### <a name="object-browser-shortcut-menu-commands"></a>Kontextmenübefehle für den Objektkatalog
  Das Kontextmenü im **Objektkatalog** kann in Abhängigkeit vom Typ des ausgewählten Objekts die folgenden Befehle enthalten.
 
-|||
+|Befehl|Beschreibung|
 |-|-|
 |**Definition durchsuchen**|Zeigt den primären Knoten für das ausgewählte Objekt an.|
 |**Alle Verweise suchen**|Sucht das aktuell ausgewählte Objektelement und zeigt die Ergebnisse im Fenster **Suchergebnisse** an.|
@@ -193,7 +193,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 |**Gehe zu Verweis**|Zeigt einen Verweis auf den Typ oder Member im Quellcode an, falls verfügbar.|
 |**Aufrufhierarchie anzeigen**|Zeigt die ausgewählte Methode im Fenster **Aufrufhierarchie** an.|
 
-## <a name="BKMK_CodeDefinition"></a> Codedefinitionsfenster (C#, C++)
+## <a name="code-definition-window-c-c"></a><a name="BKMK_CodeDefinition"></a> Codedefinitionsfenster (C#, C++)
  Im Fenster **Codedefinition** wird die Definition eines ausgewählten Typs oder Members im aktiven Projekt angezeigt. Der Typ oder Member kann im Code-Editor oder in einem Codeansichtsfenster ausgewählt werden.
 
  Obwohl dieses Fenster schreibgeschützt ist, können Sie darin Haltepunkte oder Lesezeichen festlegen. Wählen Sie im Kontextmenü die Option **Definition bearbeiten** aus, um die angezeigte Definition zu ändern. Daraufhin wird die Quelldatei im Code-Editor geöffnet und die Einfügemarke in die Zeile verschoben, in der die Definition beginnt.
@@ -201,9 +201,9 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 ### <a name="code-definition-shortcut-menu"></a>Kontextmenü der Codedefinition
  Das Kontextmenü für die **Codedefinition** kann je nach Programmiersprache die folgenden Befehle enthalten.
 
-|||
+|Befehl|Beschreibung|
 |-|-|
-|**Komponententests erstellen**|Erstellt Komponententests für das ausgewählte Element.|
+|**Erstellen von Komponenten Tests**|Erstellt Komponententests für das ausgewählte Element.|
 |**Sequenzdiagramm generieren**|Wenn eine Methode ausgewählt ist, wird ein Sequenzdiagramm generiert.|
 |**Private Zugriffsmethode erstellen**|Wenn in der Projektmappe ein Komponententest vorhanden ist, wird eine Methode generiert, mit der im Test auf den Code zugegriffen wird.|
 |**Gehe zu Definition**|Sucht die Definition (oder Definitionen, für partielle Klassen) und zeigt sie im Fenster **Suchergebnisse** an.|
@@ -221,5 +221,5 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 ### <a name="document-outline-window"></a>Dokumentgliederung (Fenster)
  Sie können das Fenster **Dokumentgliederung** in Verbindung mit Designeransichten verwenden, z.B. mit dem Designer für XAML-Seiten oder einem Windows Form-Designer oder mit HTML-Seiten. Dieses Fenster zeigt die Elemente in einer Strukturansicht an, damit Sie die logische Struktur des Formulars oder der Seite betrachten und Steuerelemente finden können, die tief eingebettet oder ausgeblendet sind.
 
-## <a name="see-also"></a>Siehe auch
- [Symbole in der Klassenansicht und im Objektbrowser](../ide/class-view-and-object-browser-icons.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Symbole für Klassenansicht und Objektkatalog](../ide/class-view-and-object-browser-icons.md)

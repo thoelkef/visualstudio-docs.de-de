@@ -15,19 +15,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f0ac183321bd2a3070b1f1ddc54402b74c8fb823
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ece9105e8a0a854837924e4a2d4f4ec485a5e202
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668414"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543935"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Verzweigte Arrays mehrdimensionalen Arrays vorziehen
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Jagged Arrays mehrdimensionalen Arrays vorziehen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|PreferJaggedArraysOverMultidimensional|
+|TypName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
 |Kategorie|Microsoft. Performance|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72668414"
 ## <a name="cause"></a>Ursache
  Ein Member wird als mehrdimensionales Array deklariert.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Ein verzweigtes Array ist ein Array, dessen Elemente wiederum Arrays sind. Die Arrays, die die Elemente bilden, können unterschiedliche Größen haben, was bei einigen Gruppen von Daten dazu führt, dass weniger Speicherplatz vergeudet wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen

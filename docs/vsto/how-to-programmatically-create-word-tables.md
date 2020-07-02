@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen'
+title: 'Gewusst wie: Programm gesteuertes Erstellen von Word-Tabellen'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1bc20b277df90ae963d257137373457a0196e72
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574910"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544754"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen
+# <a name="how-to-programmatically-create-word-tables"></a>Gewusst wie: Programm gesteuertes Erstellen von Word-Tabellen
   Die Auflistung <xref:Microsoft.Office.Interop.Word.Tables> ist ein Element der Klassen <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> und <xref:Microsoft.Office.Interop.Word.Range>. Dies bedeutet, dass Sie in jedem dieser Kontexte eine Tabelle erstellen können. Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> der Auflistung <xref:Microsoft.Office.Interop.Word.Tables>, um eine Tabelle im angegebenen Bereich hinzuzufügen.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="create-tables-in-document-level-customizations"></a>Erstellen von Tabellen in Anpassungen auf Dokumentebene
+## <a name="create-tables-in-document-level-customizations"></a>Erstellen von Tabellen in Anpassungen auf Dokument Ebene
 
-### <a name="to-add-a-table-to-a-document"></a>Um eine Tabelle zu einem Dokument hinzuzufügen.
+### <a name="to-add-a-table-to-a-document"></a>So fügen Sie einem Dokument eine Tabelle hinzu
 
 - Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Tables.Add%2A>, um eine Tabelle am Anfang des Dokuments hinzufügen, die aus drei Zeilen und vier Spalten besteht.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62574910"
 
 ## <a name="create-tables-in-vsto-add-ins"></a>Erstellen von Tabellen in VSTO-Add-ins
 
-### <a name="to-add-a-table-to-a-document"></a>Um eine Tabelle zu einem Dokument hinzuzufügen.
+### <a name="to-add-a-table-to-a-document"></a>So fügen Sie einem Dokument eine Tabelle hinzu
 
 - Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Tables.Add%2A>, um eine Tabelle am Anfang des Dokuments hinzufügen, die aus drei Zeilen und vier Spalten besteht.
 
@@ -92,7 +92,7 @@ ms.locfileid: "62574910"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Hinzufügen von Text und Formatierungen zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Vorgehensweise: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Vorgehensweise: Programmgesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Gewusst wie: Programm gesteuertes Hinzufügen von Text und Formatierung zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Gewusst wie: Programm gesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Gewusst wie: Programm gesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

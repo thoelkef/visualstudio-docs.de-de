@@ -19,19 +19,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dd1c144f04150e3965e2c0264b80147cbd9b8f19
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2304b78073b806dfc4aec9686f061d946b379ded
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663210"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545417"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
+|TypName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
 |Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
@@ -39,10 +39,10 @@ ms.locfileid: "72663210"
 ## <a name="cause"></a>Ursache
  Ein öffentlicher oder geschützter Typ implementiert den Additions- oder Subtraktionsoperator, ohne den Gleichheitsoperator zu implementieren.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Wenn Instanzen eines Typs mithilfe von Vorgängen wie Addition und Subtraktion kombiniert werden können, sollten Sie fast immer Gleichheit definieren, um `true` für zwei Instanzen zurückzugeben, die dieselben Werte aufweisen.
 
- Der Standard Gleichheits Operator kann nicht in einer überladenen Implementierung des Gleichheits Operators verwendet werden. Dies führt zu einem Stapelüberlauf. Um den Gleichheits Operator zu implementieren, verwenden Sie die Object. gleich-Methode in der Implementierung. Weitere Informationen finden Sie im folgenden Beispiel.
+ Der Standard Gleichheits Operator kann nicht in einer überladenen Implementierung des Gleichheits Operators verwendet werden. Dies führt zu einem Stapelüberlauf. Um den Gleichheits Operator zu implementieren, verwenden Sie die Object. gleich-Methode in der Implementierung. Siehe folgendes Beispiel.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -65,7 +65,7 @@ return left.Equals(right);
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Standard Implementierung des Gleichheits Operators das richtige Verhalten für den Typ bereitstellt.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird ein Typ (`BadAddableType`) definiert, der gegen diese Regel verstößt. Dieser Typ sollte den Gleichheits Operator implementieren, damit zwei Instanzen, für die der gleiche Feldwert getestet wurde, auf Gleichheit `true` werden. Der Typ `GoodAddableType` der die korrigierte Implementierung anzeigt. Beachten Sie, dass dieser Typ auch den Ungleichheits Operator implementiert und <xref:System.Object.Equals%2A>, um andere Regeln zu erfüllen. Eine komplette Implementierung würde auch <xref:System.Object.GetHashCode%2A> implementieren.
+ Im folgenden Beispiel wird ein Typ ( `BadAddableType` ) definiert, der gegen diese Regel verstößt. Dieser Typ sollte den Gleichheits Operator implementieren, damit zwei Instanzen, die dieselben Feldwerte aufweisen, `true` auf Gleichheit überprüft werden. Der Typ `GoodAddableType` zeigt die korrigierte Implementierung. Beachten Sie, dass dieser Typ auch den Ungleichheits Operator und über schreibungen implementiert <xref:System.Object.Equals%2A> , um andere Regeln zu erfüllen. Eine komplette Implementierung würde ebenfalls implementieren <xref:System.Object.GetHashCode%2A> .
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
@@ -76,8 +76,10 @@ return left.Equals(right);
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Ungültiger Typ: {2,2} {2,2} gleich? Kein** 
-**guter Typ: {3,3} {3,3} sind gleich? Ja** 
-**guter Typ: {3,3} 0 sind = =?   Ja** 1**Ungültiger Typ: 3 4 sind gleich? Kein** 5**guter Typ: 7 8 sind = =?   Nein**
-## <a name="see-also"></a>Siehe auch
- [Gleichheitsoperatoren](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ Ungültiger **Typ: {2,2} {2,2} sind gleich? Kein** 
+ **guter Typ: {3,3} {3,3} sind gleich? Ja**, 
+ **guter Typ: {3,3} {3,3} sind = =?   Ja**, 
+ ** {2,2} {9,9} Ungültiger Typ: sind gleich? Kein** 
+ **guter Typ: {3,3} {9,9} sind = =?   Nein**
+## <a name="see-also"></a>Weitere Informationen
+ [Gleichheits Operatoren](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

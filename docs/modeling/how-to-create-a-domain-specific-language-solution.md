@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,21 +13,21 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594668"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541790"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
 Eine domänenspezifische Sprache (DSL) wird mithilfe einer spezialisierten Visual Studio-Projekt Mappe erstellt.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Komponenten:
 
-- öffnen
+- Visual Studio
 - Visual Studio SDK (installiert als Teil der **Visual Studio-Erweiterungs Entwicklung** )
 - Modellierungs-SDK (installiert als Visual Studio-Komponente)
 
@@ -38,7 +38,7 @@ Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Kompo
 1. Starten Sie den DSL-Assistenten, indem Sie ein neues **Domänen spezifisches sprach-Designer** -Projekt erstellen.
 
    > [!NOTE]
-   > Vorzugsweise sollte der Name, den Sie für das Projekt auswählen, ein gültiger C# visueller Bezeichner sein, da er zum Generieren von Code verwendet werden kann.
+   > Vorzugsweise sollte der Name, den Sie für das Projekt auswählen, ein gültiger Visual c#-Bezeichner sein, da er zum Generieren von Code verwendet werden kann.
 
    ::: moniker range="vs-2017"
 
@@ -65,7 +65,7 @@ Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Kompo
    > [!NOTE]
    > Wenn eine Meldung angezeigt wird, dass keine Textvorlagen aus nicht vertrauenswürdigen Quellen ausgeführt werden sollen, klicken Sie auf **OK**. Diese Meldung kann so festgelegt werden, dass Sie nicht erneut angezeigt wird.
 
-## <a name="settings"></a>Die Seiten des DSL-Designer-Assistenten
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Die Seiten des DSL-Designer-Assistenten
  Sie können einige der Felder unverändert lassen, um die Standardwerte zu ändern. Stellen Sie jedoch sicher, dass Sie das Feld Dateierweiterung festgelegt haben.
 
 ### <a name="solution-settings-page"></a>Seite "Lösungs Einstellungen"
@@ -73,7 +73,7 @@ Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Kompo
 Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt. Die verschiedenen Vorlagen bieten praktische Ausgangspunkte. Wenn Sie eine Projektmappenvorlage auswählen, zeigt der Assistent eine Beschreibung an. Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Lösungs Vorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Wie möchten Sie Ihre domänenspezifische Sprache benennen?**
-Der Standardwert ist der Projektmappenname. Der Code wird aus diesem Wert generiert. Er muss als C# Klassenname gültig sein.
+Der Standardwert ist der Projektmappenname. Der Code wird aus diesem Wert generiert. Er muss als c#-Klassenname gültig sein.
 
 ### <a name="file-extension-page"></a>Datei Erweiterungs Seite
  **Welche Erweiterung sollen Modelldateien verwenden?**

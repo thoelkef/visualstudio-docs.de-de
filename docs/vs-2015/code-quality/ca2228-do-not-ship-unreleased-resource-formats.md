@@ -15,31 +15,31 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9297ea0bb24eed54d0134a5f3c0fce87e6757adb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4adcae1c1cc616cdbcf5a7aa15342d221c2f4300
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662885"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540581"
 ---
-# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotShipUnreleasedResourceFormats|
+|TypName|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine Ressourcen Datei wurde mit einer Version der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] erstellt, die derzeit nicht unterstützt wird.
+ Eine Ressourcen Datei wurde mit einer Version von erstellt [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , die derzeit nicht unterstützt wird.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Ressourcen Dateien, die mithilfe von vorab Versionen der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] erstellt wurden, können möglicherweise nicht von unterstützten Versionen der .NET Framework verwendet werden.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Ressourcen Dateien, die mithilfe von vorab Versionen von erstellt wurden, können [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] möglicherweise nicht von unterstützten Versionen der .NET Framework verwendet werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, erstellen Sie die Ressource mit einer unterstützten Version der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]k.
+ Um einen Verstoß gegen diese Regel zu beheben, erstellen Sie die Ressource mit einer unterstützten Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] k.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.

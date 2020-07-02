@@ -15,40 +15,40 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0ce4aa6aef9c70d0d628603afa7a256c309f280d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 2416eb24c21ef0e61bdb6db3de66c892e1eb699f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917945"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545339"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1822: Markieren](/visualstudio/code-quality/ca1822-mark-members-as-static)von Membern als statisch.
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|MarkMethodsAsStatic|
+|TypName|MarkMethodsAsStatic|
 |CheckId|CA1822|
-|Kategorie|Microsoft.Performance|
-|Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen.<br /><br /> Nicht unterbrechend: Wenn Sie das Element nur mit dem `this`-Schlüsselwort in einen Instanzmember ändern.<br /><br /> Unterbrechen: Wenn Sie den Member von einem Instanzmember in einen statischen Member ändern und dieser außerhalb der Assembly sichtbar ist.|
+|Kategorie|Microsoft. Performance|
+|Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen.<br /><br /> Nicht unterbrechend: Wenn Sie das Element nur mit dem-Schlüsselwort in einen Instanzmember ändern `this` .<br /><br /> Unterbrechen: Wenn Sie den Member von einem Instanzmember in einen statischen Member ändern und dieser außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
- Ein Member, der nicht auf Instanzdaten zugreift, ist nicht als statisch gekennzeichnet (in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]freigegeben).
+ Ein Member, der nicht auf Instanzdaten zugreift, ist nicht als statisch gekennzeichnet (Shared in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Member, die nicht auf Instanzdaten zugreifen oder keine Instanzmethoden aufrufen, können als static markiert werden (Shared in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]). Danach gibt der Compiler nicht virtuelle Aufrufsites an diese Member aus. Durch das Ausgeben von nicht virtuellen-Aufrufsites wird für jeden-Befehl, der sicherstellt, dass der aktuelle Objekt Zeiger nicht NULL ist, zur Laufzeit eine Überprüfung verhindert. Dies kann zu einer messbaren Leistungssteigerung bei Leistungs sensiblem Code werden. In einigen Fällen stellt der Fehler beim Zugriff auf die aktuelle Objektinstanz ein Problem mit der Richtigkeit dar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Markieren Sie den Member als statisch (oder in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]freigegeben), oder verwenden Sie "This"/"Me" im Methoden Text, falls zutreffend.
+ Markieren Sie den Member als statisch (oder freigegeben [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), oder verwenden Sie "This"/"Me" im Methoden Text, falls zutreffend.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, eine Warnung aus dieser Regel für den zuvor gelieferten Code zu unterdrücken, dessen Behebung eine Breaking Change wäre.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Nicht aufgerufenen privaten Code vermeiden.](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: Nicht instanziierte interne Klassen vermeiden.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Nicht verwendete lokale Variablen entfernen.](../code-quality/ca1804-remove-unused-locals.md)

@@ -15,34 +15,34 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7a2a296f5dd3680209c14849b5bd863c01e6351d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e191ca10456f133e1213961ca2d1ed9cb8e040b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660244"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544299"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|WrapVulnerableFinallyClausesInOuterTry|
+|TypName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- In den Versionen 1,0 und 1,1 des [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] enthält eine öffentliche oder geschützte Methode eine `try` / `catch` / `finally` Block. Der `finally`-Block scheint den Sicherheitszustand zurückzusetzen und ist nicht in einen `finally` Block eingeschlossen.
+ In den Versionen 1,0 und 1,1 von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] enthält eine öffentliche oder geschützte Methode einen- `try` / `catch` / `finally` Block. Der `finally` -Block scheint den Sicherheitszustand zurückzusetzen und ist nicht in einen- `finally` Block eingeschlossen.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel findet `try` / `finally` Blöcke im Code, die auf die Versionen 1,0 und 1,1 der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ausgerichtet sind, die anfällig für schädliche Ausnahme Filter in der-Aufrufe sind. Wenn sensible Vorgänge wie der Identitätswechsel im try-Block auftreten und eine Ausnahme ausgelöst wird, kann der Filter vor dem `finally`-Block ausgeführt werden. Für das Beispiel für den Identitätswechsel bedeutet dies, dass der Filter als Benutzer mit Identitätswechsel ausgeführt wird. Filter sind zurzeit nur in Visual Basic implementierbar.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Diese Regel `try` / `finally` findet Blöcke im Code, die auf die Versionen 1,0 und 1,1 des ausgerichtet sind [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , die anfällig für schädliche Ausnahme Filter in der-Aufrufe sind. Wenn sensible Vorgänge wie der Identitätswechsel im try-Block auftreten und eine Ausnahme ausgelöst wird, kann der Filter vor dem-Block ausgeführt werden `finally` . Für das Beispiel für den Identitätswechsel bedeutet dies, dass der Filter als Benutzer mit Identitätswechsel ausgeführt wird. Filter sind zurzeit nur in Visual Basic implementierbar.
 
 > [!WARNING]
-> In den Versionen 2,0 und höher des [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] schützt die Common Language Runtime automatisch eine `try` / `catch` /  `finally` Block von bösartigen Ausnahme filtern, wenn die zurück Setzung direkt innerhalb der Methode auftritt, die den Ausnahme Block enthält.
+> In den Versionen 2,0 und höher von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] schützt die Common Language Runtime automatisch einen- `try` / `catch` /  `finally` Block vor bösartigen Ausnahme filtern, wenn die zurück Setzung direkt innerhalb der Methode auftritt, die den Ausnahme Block enthält.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Fügen Sie die nicht umschließende `try` / `finally` in einem äußeren try-Block ein. Siehe das zweite Beispiel, das folgt. Dadurch wird erzwungen, dass die `finally` vor dem Filtern von Code ausgeführt wird.
+ Fügen Sie den nicht umschließenen `try` / `finally` in einen äußeren try-Block ein. Siehe das zweite Beispiel, das folgt. Dadurch wird erzwungen `finally` , dass vor dem Filtern von Code ausgeführt wird.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.

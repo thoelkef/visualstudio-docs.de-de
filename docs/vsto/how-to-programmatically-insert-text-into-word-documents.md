@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programm gesteuertes Einfügen von Text in Word-Dokumente'
+title: 'Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: aef597099964333771fd488e0541b4ea4daf4553
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551807"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541504"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Vorgehensweise: Programm gesteuertes Einfügen von Text in Word-Dokumente
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente
   Es gibt drei Hauptmethoden zum Einfügen von Text in Microsoft Office Word-Dokumente:
 
 - Fügen Sie Text in einen Bereich ein.
@@ -93,7 +93,7 @@ ms.locfileid: "69551807"
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>So fügen Sie Text mithilfe der TypeText-Methode ein
 
-1. Deklarieren Sie eine <xref:Microsoft.Office.Interop.Word.Selection> -Objektvariable.
+1. Deklarieren Sie eine <xref:Microsoft.Office.Interop.Word.Selection>-Objektvariable.
 
     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]
@@ -120,7 +120,7 @@ ms.locfileid: "69551807"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   Sie können auch die <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> -Methode <xref:Microsoft.Office.Interop.Word.Selection> des-Objekts verwenden, die die Funktionalität der **RÜCKTASTE** auf der Tastatur imitiert. Wenn es jedoch um das Einfügen und Bearbeiten von Text geht, bietet Ihnen das <xref:Microsoft.Office.Interop.Word.Range> -Objekt mehr Steuerungsmöglichkeiten.
+   Sie können auch die- <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> Methode des- <xref:Microsoft.Office.Interop.Word.Selection> Objekts verwenden, die die Funktionalität der **RÜCKTASTE** auf der Tastatur imitiert. Wenn es jedoch um das Einfügen und Bearbeiten von Text geht, bietet Ihnen das <xref:Microsoft.Office.Interop.Word.Range> -Objekt mehr Steuerungsmöglichkeiten.
 
    Das folgende Beispiel enthält den vollständigen Code. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisDocument` -Klasse oder `ThisAddIn` -Klasse im Projekt aus.
 
@@ -128,6 +128,6 @@ ms.locfileid: "69551807"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programm gesteuertes Formatieren von Text in Dokumenten](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [Vorgehensweise: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Vorgehensweise: Programm gesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Formatieren von Text in Dokumenten](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Erweitern von Bereichen in Dokumenten](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

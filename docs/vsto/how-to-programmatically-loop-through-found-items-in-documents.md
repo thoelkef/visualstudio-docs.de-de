@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes durchlaufen Sie gefundener Elemente in Dokumenten'
+title: 'Gewusst wie: Programm gesteuertes durchlaufen gefundener Elemente in Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22f8035cc7c1b09e7fd54f3c10842237ee6273b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e200f910e002bb9380bd5a1b556dc6f1cab08810
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812409"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544741"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Vorgehensweise: Programmgesteuertes durchlaufen Sie gefundener Elemente in Dokumenten
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Gewusst wie: Programm gesteuertes durchlaufen gefundener Elemente in Dokumenten
   Die <xref:Microsoft.Office.Interop.Word.Find> -Klasse hat eine <xref:Microsoft.Office.Interop.Word.Find.Found%2A> -Eigenschaft, die jedes Mal **true** zurückgibt, wenn ein gesuchtes Element gefunden wurde. Sie können alle in einem <xref:Microsoft.Office.Interop.Word.Range> -Objekt gefundenen Instanzen mit der <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> -Methode durchlaufen.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "62812409"
 
    Die folgenden Beispiele zeigen die vollständige Methode.
 
-## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene
+## <a name="document-level-customization-example"></a>Beispiel für eine Anpassung auf Dokument Ebene
 
 ### <a name="to-loop-through-items-in-a-document-level-customization"></a>So durchlaufen Sie Elemente in einer Anpassung auf Dokumentebene
 
@@ -61,7 +61,7 @@ ms.locfileid: "62812409"
      [!code-vb[Trin_VstcoreWordAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#78)]
      [!code-csharp[Trin_VstcoreWordAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#78)]
 
-## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in
+## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-in
 
 ### <a name="to-loop-through-items-in-a-vsto-add-in"></a>So durchlaufen Sie Elemente in einem VSTO-Add-in
 
@@ -71,8 +71,8 @@ ms.locfileid: "62812409"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes suchen Sie und Ersetzen Sie Rext in Dokumenten](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes Festlegen von Suchoptionen in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
-- [Vorgehensweise: Programmgesteuertes definieren und Markieren von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Vorgehensweise: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Gewusst wie: Programm gesteuertes suchen und Ersetzen von Text in Dokumenten](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Festlegen von Suchoptionen in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

@@ -8,34 +8,34 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 558e205fa37569bfa12d7b93f989d0f8ebabab43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2b3e06bb7a150c4bb07eefc0571818f1127fe460
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669060"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545118"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|InsecureXSLTScriptExecution|
+|TypName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Wenn Sie [Extensible Stylesheets Language Transformations (XSLT)](https://support.microsoft.com/kb/313997) ungesichert in .NET-Anwendungen ausführen, könnte der Prozessor möglicherweise [nicht vertrauenswürdige URI-Verweise auflösen](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) , wodurch Angreifern sensible Informationen offengelegt werden könnten, was wiederum zu Denial-of-Service- und Cross-Site-Angriffen führen kann.
+ Wenn Sie [Extensible Stylesheets Language Transformations (XSLT)](https://support.microsoft.com/kb/313997) in .NET-Anwendungen unsicher ausführen, löst der Prozessor möglicherweise [nicht vertrauenswürdige URI-Verweise](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) auf, die Angreifern vertrauliche Informationen offenlegen, was zu Denial-of-Service-und Site übergreifenden Angriffen führt.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) ist ein W3C-Standard (World Wide Web Consortium) zum Transformieren von XML-Daten. XSLT wird in der Regel verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate (z. B.in HTML, Text fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format) zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
 
- Um sicherzustellen, dass Sie keine Angriffsfläche verfügbar machen, wird diese Regel immer dann ausgelöst, wenn XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> empfängt unsichere Kombinationen von Instanzen von <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung bösartiger Skripts ermöglicht wird.
+ Um sicherzustellen, dass Sie keine Angriffsfläche verfügbar machen, wird diese Regel immer dann ausgelöst, wenn XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> empfängt unsichere Kombinations Instanzen von <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver> , wodurch die Verarbeitung bösartiger Skripts ermöglicht wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings. <xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer-Instanz, die die Dokument Funktion und Skriptausführung deaktiviert hat.
+- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer-Instanz, die die Dokument Funktion und Skriptausführung deaktiviert hat.
 
 - Ersetzen Sie das <xref:System.Xml.XmlResolver> -Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver> -Instanz.
 

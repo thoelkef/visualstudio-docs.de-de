@@ -15,19 +15,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3dda56e6980133b0e33893fbb814c4a3a7008c49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04109e821d3a739b96ad63e1a441089a5d479cd8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656060"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540776"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Sichtbarkeit für geerbte Member nicht verringern
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Sichtbarkeit für geerbte Member nicht verringern.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotDecreaseInheritedMemberVisibility|
+|TypName|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
@@ -35,7 +35,7 @@ ms.locfileid: "72656060"
 ## <a name="cause"></a>Ursache
  Eine private Methode in einem nicht versiegelten Typ hat eine Signatur, die mit einer öffentlichen Methode identisch ist, die in einem Basistyp deklariert ist. Die private Methode ist nicht Final.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Sie sollten den Zugriffsmodifizierer für geerbte Member nicht ändern. Wenn Sie einen geerbten Member in private ändern, werden Aufrufer nicht am Zugriff auf die Implementierung der Basisklasse der Methode gehindert. Wenn der Member privat gemacht wird und der Typ nicht versiegelt ist, kann der erbende Typ die letzte öffentliche Implementierung der Methode in der Vererbungs Hierarchie aufzurufen. Wenn Sie den Zugriffsmodifizierer ändern müssen, muss entweder die Methode als Final markiert werden, oder der Typ muss versiegelt sein, um zu verhindern, dass die Methode überschrieben wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen

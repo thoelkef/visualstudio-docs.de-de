@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255670"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541244"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements
   Sie können ein Hoststeuerelement an eine Datenquelle binden und die Datenquelle mit den Änderungen aktualisieren, die im Steuerelement an den Daten vorgenommen werden. In diesem Prozess gibt es zwei Hauptschritte:
@@ -54,7 +54,7 @@ ms.locfileid: "71255670"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>So legen Sie fest, dass ein Steuerelement die In-Memory-Datenquelle automatisch über Code aktualisiert
 
-1. Verwenden Sie den System. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged-Modus <xref:System.Windows.Forms.Binding> des Objekts, das das Steuerelement an die Datenquelle bindet. Es gibt zwei Optionen zum Aktualisieren der Datenquelle:
+1. Verwenden Sie den System. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged-Modus des <xref:System.Windows.Forms.Binding> Objekts, das das Steuerelement an die Datenquelle bindet. Es gibt zwei Optionen zum Aktualisieren der Datenquelle:
 
    - Um die Datenquelle zu aktualisieren, wenn das Steuerelement überprüft wird, legen Sie diese Eigenschaft auf System. Windows. Forms. DataSourceUpdateMode. OnValidation fest.
 
@@ -76,7 +76,7 @@ ms.locfileid: "71255670"
 
 3. Erweitern Sie im Fenster **Eigenschaften** die **(DataBindings)** -Eigenschaft.
 
-4. Klicken Sie neben der **(Advanced)** -Eigenschaft auf die Schaltfläche mit den Auslassungs Punkten (![visualstudioellipsesbutton]-Bildschirm Abbildung(../vsto/media/vbellipsesbutton.png "visualstudioellipsesbutton Screenshot")).
+4. Klicken Sie neben der **(Advanced)** -Eigenschaft auf die Schaltfläche mit den Auslassungs Punkten (Bildschirm Abbildung von![visualstudioellipsesbutton](../vsto/media/vbellipsesbutton.png "Bildschirmabbildung von VisualStudioEllipsesButton")).
 
 5. Klicken Sie im Dialogfeld **Formatierung und erweiterte Bindung** auf die Dropdownliste **Datenquellen-Aktualisierungsmodus** , und wählen Sie einen der folgenden Werte aus:
 
@@ -103,11 +103,11 @@ ms.locfileid: "71255670"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2. Ruft die `Update` -Methode des generierten TableAdapter in Ihrem Projekt auf.
+2. Ruft die- `Update` Methode des generierten TableAdapter in Ihrem Projekt auf.
 
      Der TableAdapter wird automatisch generiert, wenn Sie einem Dokument oder einer Arbeitsmappe zur Entwurfszeit ein Daten gebundenes Steuerelement hinzufügen. Der TableAdapter verbindet das typisierte DataSet in Ihrem Projekt mit der Datenbank. Weitere Informationen finden Sie unter [Übersicht über TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-     Im folgenden Codebeispiel wird davon ausgegangen, dass Sie über eine Verbindung mit der Customers-Tabelle in der Northwind-Datenbank verfügen und dass das Projekt `customersTableAdapter` einen TableAdapter mit dem Namen `northwindDataSet`und ein typisiertes DataSet mit dem Namen enthält.
+     Im folgenden Codebeispiel wird davon ausgegangen, dass Sie über eine Verbindung mit der Customers-Tabelle in der Northwind-Datenbank verfügen und dass das Projekt einen TableAdapter mit dem Namen `customersTableAdapter` und ein typisiertes DataSet mit dem Namen enthält `northwindDataSet` .
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
@@ -116,8 +116,8 @@ ms.locfileid: "71255670"
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
 - [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Vorgehensweise: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Gewusst wie: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)

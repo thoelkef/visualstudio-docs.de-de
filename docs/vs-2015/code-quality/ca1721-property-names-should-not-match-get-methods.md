@@ -15,19 +15,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 366932c83328c6810e0103308db1c73a3e3076cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ec48a1164c7065ba5033ef51eb704b8361dc1c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671606"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544455"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|PropertyNamesShouldNotMatchGetMethods|
+|TypName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
 |Kategorie|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72671606"
 ## <a name="cause"></a>Ursache
  Der Name eines öffentlichen oder geschützten Members beginnt mit "Get" und stimmt andernfalls mit dem Namen einer öffentlichen oder geschützten Eigenschaft überein. Ein Typ, der eine Methode mit dem Namen "GetColor" und eine Eigenschaft mit dem Namen "Color" enthält, verstößt z. b. gegen diese Regel.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Get-Methoden und-Eigenschaften sollten Namen aufweisen, die ihre Funktion eindeutig unterscheiden.
 
  Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dies reduziert die Zeit, die erforderlich ist, um eine neue Software Bibliothek kennenzulernen, und steigert das Kunden Vertrauen, dass die Bibliothek von einem Benutzer entwickelt wurde, der über Kenntnisse in der Entwicklung von verwaltetem Code verfügt.
@@ -56,4 +56,4 @@ ms.locfileid: "72671606"
  [!code-vb[FxCop.Naming.GetMethod#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/vb/FxCop.Naming.GetMethod.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1024: Nach Möglichkeit Eigenschaften verwenden](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Nach Möglichkeit Eigenschaften verwenden.](../code-quality/ca1024-use-properties-where-appropriate.md)

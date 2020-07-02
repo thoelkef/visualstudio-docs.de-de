@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60823c1fe17613f36e800a2cdf69dd19049ddb27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919106"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545573"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 - Wenn sich im **Eigenschaften** Fenster die nach Verfolgungs Eigenschaft im aktualisierten Benutzer Zustand befindet, wird der Wert in einer fett formatierten Schriftart angezeigt.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
  Bevor Sie diese exemplarische Vorgehensweise starten können, müssen Sie zunächst die folgenden Komponenten installieren:
 
-|||
+|Produkt|Downloadlink|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
-|Visual Studio-Visualisierungs- und Modellierungs-SDK|[Modellierungs-SDK-Download](https://www.microsoft.com/download/details.aspx?id=48148)|
+|Visual Studio Visualization and Modeling SDK|[Modellierungs-SDK-Download](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-the-dsl-project"></a>Erstellen des DSL-Projekts
  Erstellen Sie das Projekt für Ihre domänenspezifische Sprache.
 
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt
 
-1. Erstellen Sie ein Domänen spezifisches sprach-Designer-Projekt. Nennen Sie es `TrackingPropertyDSL`.
+1. Erstellen Sie ein Domänen spezifisches sprach-Designer-Projekt. Nenne es `TrackingPropertyDSL`.
 
 2. Legen Sie im **Assistenten für domänenspezifische sprach-Designer**die folgenden Optionen fest:
 
     1. Wählen Sie die Vorlage " **minimallanguage** " aus.
 
-    2. Verwenden Sie den Standardnamen für die domänenspezifische Sprache, `TrackingPropertyDSL`.
+    2. Verwenden Sie den Standardnamen für die domänenspezifische Sprache `TrackingPropertyDSL` .
 
-    3. Legen Sie die Erweiterung für Modelldateien auf `trackingPropertyDsl`fest.
+    3. Legen Sie die Erweiterung für Modelldateien auf fest `trackingPropertyDsl` .
 
     4. Verwenden Sie das Standardvorlagen Symbol für die Modelldateien.
 
-    5. Legen Sie den Namen des Produkts auf `Product Name`fest.
+    5. Legen Sie den Namen des Produkts auf fest `Product Name` .
 
-    6. Legen Sie den Namen des Unternehmens auf `Company Name`fest.
+    6. Legen Sie den Namen des Unternehmens auf fest `Company Name` .
 
-    7. Verwenden Sie den Standardwert für den Stamm Namespace für Projekte in der Projekt Mappe, `CompanyName.ProductName.TrackingPropertyDSL`.
+    7. Verwenden Sie den Standardwert für den Stamm Namespace für Projekte in der Projekt Mappe `CompanyName.ProductName.TrackingPropertyDSL` .
 
     8. Hiermit wird der Assistent ermöglicht, eine Schlüsseldatei mit starkem Namen für die Assemblys zu erstellen.
 
@@ -96,27 +96,27 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 1. Klicken Sie im DSL-Designer mit der rechten Maustaste auf die Domänen Klasse **examplemodel** , zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **DomainProperty**.
 
-    1. Benennen Sie die neue Eigenschaft `DefaultNamespace`.
+    1. Benennen Sie die neue Eigenschaft `DefaultNamespace` .
 
-    2. Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft **Standardwert** auf `DefaultNamespace`fest, und legen Sie **Typ** auf **Zeichenfolge**fest.
+    2. Legen Sie im **Eigenschaften** Fenster für die neue Eigenschaft den **Standardwert** auf fest `DefaultNamespace` , und legen Sie **Typ** auf **Zeichenfolge**fest.
 
-2. Fügen Sie der Domänen Klasse **examplemodel** eine Domänen Eigenschaft mit dem Namen `CustomElements`hinzu.
+2. Fügen Sie der Domänen Klasse **examplemodel** eine Domänen Eigenschaft mit dem Namen hinzu `CustomElements` .
 
      Legen Sie im **Eigenschaften** Fenster für die neue Eigenschaft **Art** auf **berechnet**fest.
 
-3. Fügen Sie der **ExampleElement** -Domänen Klasse eine Domänen Eigenschaft mit dem Namen `Namespace`hinzu.
+3. Fügen Sie der " **ExampleElement** "-Domänen Klasse eine Domänen Eigenschaft mit dem Namen hinzu `Namespace` .
 
      Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft den Wert durchsuchbar auf **false**fest, und **legen Sie** **Art** auf **CustomStorage**fest.
 
-4. Fügen Sie der **ExampleElement** -Domänen Klasse eine Domänen Eigenschaft mit dem Namen `IsNamespaceTracking`hinzu.
+4. Fügen Sie der " **ExampleElement** "-Domänen Klasse eine Domänen Eigenschaft mit dem Namen hinzu `IsNamespaceTracking` .
 
-     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft den Wert durchsuchbar **auf false** **fest,** legen Sie den **Standardwert** auf `true`fest, und legen Sie **Typ** auf **Boolean**fest.
+     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft die Einstellung **ist browsefähig** auf **false**fest, legen Sie den **Standardwert** auf fest `true` , und legen Sie **Typ** auf **Boolean**fest.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>So aktualisieren Sie die Diagramm Elemente und DSL-Details
 
 1. Klicken Sie im DSL-Designer mit der rechten Maustaste auf die Form " **exampleshape** Geometry", zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Text Decorator**.
 
-    1. Benennen Sie die neue Text-Decorator-`NamespaceDecorator`.
+    1. Benennen Sie den neuen Text Decorator `NamespaceDecorator` .
 
     2. Legen Sie im **Eigenschaften** Fenster für den Text-Decorator die **Position** auf **InnerBottomLeft**fest.
 
@@ -152,20 +152,20 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 #### <a name="to-create-the-code-files"></a>So erstellen Sie die Code Dateien
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das **DSL** -Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **neuer Ordner**. Benennen Sie den neuen Ordner `CustomCode`.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das **DSL** -Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **neuer Ordner**. Benennen Sie den neuen Ordner `CustomCode` .
 
 2. Klicken Sie mit der rechten Maustaste auf den neuen Ordner **customcode** , zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.
 
-3. Wählen Sie die Vorlage **Code Datei** aus, legen Sie den **Namen** auf `NamespaceTrackingProperty.cs`fest, und klicken Sie dann auf **OK**.
+3. Wählen Sie die Vorlage **Code Datei** aus, legen Sie den **Namen** auf fest `NamespaceTrackingProperty.cs` , und klicken Sie dann auf **OK**.
 
      Die Datei NamespaceTrackingProperty.cs wird erstellt und zur Bearbeitung geöffnet.
 
-4. Erstellen Sie im Ordner die folgenden Code Dateien: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`und `TypeDescriptor.cs`.
+4. Erstellen Sie im Ordner die folgenden Code Dateien: `ExampleModel.cs,``HelperClasses.cs` , `Serialization.cs` und `TypeDescriptor.cs` .
 
 5. Erstellen Sie im **dslpackage** -Projekt auch einen `CustomCode` Ordner, und fügen Sie ihm eine `Package.cs` Codedatei hinzu.
 
 ## <a name="adding-helper-classes-to-support-tracking-properties"></a>Hinzufügen von Hilfsklassen zur Unterstützung von nach Verfolgungs Eigenschaften
- Fügen Sie der Datei HelperClasses.cs die Klassen `TrackingHelper` und `CriticalException` wie folgt hinzu. Diese Klassen werden später in dieser exemplarischen Vorgehensweise referenziert.
+ Fügen Sie der Datei HelperClasses.cs die `TrackingHelper` Klassen und `CriticalException` wie folgt hinzu. Diese Klassen werden später in dieser exemplarischen Vorgehensweise referenziert.
 
 #### <a name="to-add-the-helper-classes"></a>So fügen Sie die Hilfsklassen hinzu
 
@@ -245,10 +245,10 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
     ```
 
 ## <a name="adding-custom-code-for-the-custom-type-descriptor"></a>Hinzufügen von benutzerdefiniertem Code für den benutzerdefinierten Typdeskriptor
- Implementieren Sie die `GetCustomProperties`-Methode für den Typdeskriptor für die `ExampleModel` Domänen Klasse.
+ Implementieren Sie die- `GetCustomProperties` Methode für den Typdeskriptor für die `ExampleModel` Domänen Klasse.
 
 > [!NOTE]
-> Der Code, den die DSL-Tools für den benutzerdefinierten Typdeskriptor für `ExampleModel` Aufrufe generiert `GetCustomProperties`; die DSL-Tools generieren jedoch keinen Code, der die-Methode implementiert.
+> Der Code, der von den DSL-Tools für den benutzerdefinierten Typdeskriptor für- `ExampleModel` Aufrufe generiert `GetCustomProperties` wird. die DSL-Tools generieren jedoch keinen Code, der die-Methode implementiert.
 
  Wenn Sie diese Methode definieren, wird der nach Verfolgungs Eigenschaften Deskriptor für die Eigenschaft Namespace-Nachverfolgung erstellt. Außerdem ermöglicht das Bereitstellen von Attributen für die nach Verfolgungs Eigenschaft dem **Eigenschaften** Fenster das ordnungsgemäße Anzeigen der Eigenschaft.
 
@@ -341,16 +341,16 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
     ```
 
 ## <a name="adding-custom-code-for-the-model"></a>Hinzufügen von benutzerdefiniertem Code für das Modell
- Implementieren Sie die `GetCustomElementsValue`-Methode für die `ExampleModel`-Domänen Klasse.
+ Implementieren Sie die- `GetCustomElementsValue` Methode für die- `ExampleModel` Domänen Klasse.
 
 > [!NOTE]
-> Der Code, der von den DSL-Tools für `ExampleModel`-Aufrufe generiert wird `GetCustomElementsValue`; die DSL-Tools generieren jedoch keinen Code, der die-Methode implementiert.
+> Der Code, der von den DSL-Tools für `ExampleModel` Aufrufe generiert `GetCustomElementsValue` wird. die DSL-Tools generieren jedoch keinen Code, der die-Methode implementiert.
 
- Wenn Sie die `GetCustomElementsValue`-Methode definieren, wird die Logik für die berechnete Eigenschaft customelements von `ExampleModel`bereitstellt. Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die über einen vom Benutzer aktualisierten Wert verfügt, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
+ Durch die Definition der- `GetCustomElementsValue` Methode wird die Logik für die berechnete Eigenschaft customelements von bereitstellt `ExampleModel` . Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die über einen vom Benutzer aktualisierten Wert verfügt, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
 
- Fügen Sie der `ExampleModel`außerdem eine `OnDefaultNamespaceChanged` Methode hinzu, und überschreiben Sie die `OnValueChanged`-Methode der `DefaultNamespacePropertyHandler` `ExampleModel`-Klasse, um `OnDefaultNamespaceChanged`aufzurufen.
+ Fügen Sie außerdem eine `OnDefaultNamespaceChanged` -Methode zu hinzu `ExampleModel` , und überschreiben Sie die- `OnValueChanged` Methode der-Klasse, `DefaultNamespacePropertyHandler` `ExampleModel` um aufzurufen `OnDefaultNamespaceChanged` .
 
- Da die Eigenschaft DefaultNamespace verwendet wird, um die Eigenschaft Namespace Verfolgung zu berechnen, müssen `ExampleModel` alle `ExampleElement` Domänen Klassen Benachrichtigen, die der Wert von DefaultNamespace geändert hat.
+ Da die Eigenschaft DefaultNamespace verwendet wird, um die Eigenschaft Namespace Verfolgung zu berechnen, `ExampleModel` muss alle `ExampleElement` Domänen Klassen Benachrichtigen, dass sich der Wert von DefaultNamespace geändert hat.
 
 #### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>So ändern Sie den Eigenschafts Handler für die nach verfolgte Eigenschaft
 
@@ -418,14 +418,14 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
     ```
 
 ## <a name="adding-custom-code-for-the-tracking-property"></a>Hinzufügen von benutzerdefiniertem Code für die nach Verfolgungs Eigenschaft
- Fügen Sie der `ExampleElement` Domänen Klasse eine `CalculateNamespace`-Methode hinzu.
+ Fügen Sie `CalculateNamespace` der `ExampleElement` Domänen Klasse eine Methode hinzu.
 
- Wenn Sie diese Methode definieren, wird die Logik für die berechnete Eigenschaft customelements von `ExampleModel`bereitstellt. Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die im aktualisierten Benutzer Zustand ist, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
+ Wenn Sie diese Methode definieren, wird die Logik für die berechnete Eigenschaft customelements von bereitstellt `ExampleModel` . Diese Methode zählt die Anzahl der `ExampleElement` Domänen Klassen, die über eine Namespace-nach Verfolgungs Eigenschaft verfügen, die im aktualisierten Benutzer Zustand ist, und gibt eine Zeichenfolge zurück, die diese Anzahl als Anteil der Gesamt Elemente im Modell darstellt.
 
- Fügen Sie außerdem Speicher für die Methoden, und hinzu, um die Eigenschaft Namespace Custom Storage der `ExampleElement` Domänen Klasse zu erhalten und festzulegen.
+ Fügen Sie außerdem Speicher für die-,-und-Methode hinzu, um die Eigenschaft Namespace Custom Storage der Domänen Klasse zu erhalten und festzulegen `ExampleElement` .
 
 > [!NOTE]
-> Der Code, den die DSL-Tools für `ExampleModel` generieren, ruft die Get-und Set-Methoden auf. die DSL-Tools generieren jedoch keinen Code, der die-Methoden implementiert.
+> Der Code, den die DSL-Tools für generieren, `ExampleModel` Ruft die Get-und Set-Methode auf. die DSL-Tools generieren jedoch keinen Code, der die Methoden implementiert.
 
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>So fügen Sie die Methode für den benutzerdefinierten Typdeskriptor hinzu
 
@@ -591,7 +591,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
  Fügen Sie Code hinzu, um das benutzerdefinierte nach Ladeverhalten für die XML-Serialisierung zu unterstützen.
 
 > [!NOTE]
-> Der Code, den die DSL-Tools generiert, ruft die Methoden `OnPostLoadModel` und `OnPostLoadModelAndDiagram` auf. die DSL-Tools generieren jedoch keinen Code, der diese Methoden implementiert.
+> Der Code, den die DSL-Tools generiert, ruft die `OnPostLoadModel` -Methode und die- `OnPostLoadModelAndDiagram` Methode auf. die DSL-Tools generieren jedoch keinen Code, der diese Methoden implementiert.
 
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>So fügen Sie Code hinzu, um das benutzerdefinierte nach Ladeverhalten zu unterstützen
 
@@ -718,7 +718,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
     ```
 
 ## <a name="testing-the-language"></a>Testen der Sprache
- Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zu erstellen und auszuführen, damit Sie überprüfen können, ob die nach Verfolgungs Eigenschaft ordnungsgemäß funktioniert.
+ Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von zu erstellen und auszuführen, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] damit Sie überprüfen können, ob die nach Verfolgungs Eigenschaft ordnungsgemäß funktioniert.
 
 #### <a name="to-exercise-the-language"></a>So führen Sie die Sprache aus
 
@@ -726,7 +726,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 2. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 
-     Der experimentelle Build von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] öffnet die **debugginglösung** , die eine leere Testdatei enthält.
+     Der experimentelle Build von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] öffnet die **debugprojektmappe** , die eine leere Testdatei enthält.
 
 3. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei Test. trackingpropertydsl, um Sie im Designer zu öffnen, und klicken Sie dann auf die Entwurfs Oberfläche.
 
@@ -759,6 +759,6 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 ## <a name="next-steps"></a>Nächste Schritte
  Wenn Sie planen, mehr als eine nach Verfolgungs Eigenschaft zu verwenden oder nach Verfolgungs Eigenschaften in mehr als einer DSL zu implementieren, können Sie eine Textvorlage erstellen, um den allgemeinen Code für die Unterstützung der einzelnen Überwachungs Eigenschaften zu generieren. Weitere Informationen zu Textvorlagen finden Sie unter [Code Generierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
  [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md) Gewusst [wie: Erstellen einer Domänen](../modeling/how-to-create-a-domain-specific-language-solution.md) spezifischen Sprachlösung Exemplarische Vorgehensweise [: Anpassen der domänenspezifischen sprach Definition](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
