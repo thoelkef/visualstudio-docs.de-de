@@ -29,7 +29,7 @@ ms.locfileid: "85539255"
 |-|-|
 |TypName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Category|Microsoft. Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache

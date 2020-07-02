@@ -88,7 +88,7 @@ Für dieses Codebeispiel benötigen Sie Folgendes:
 
 - Um ein Dokument mit einem neuen Namen zu speichern, muss ein Verzeichnis mit dem Namen " *Test* " auf Laufwerk "C" vorhanden sein.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Gewusst wie: Programm gesteuertes schließen von Dokumenten](../vsto/how-to-programmatically-close-documents.md)
 - [Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)

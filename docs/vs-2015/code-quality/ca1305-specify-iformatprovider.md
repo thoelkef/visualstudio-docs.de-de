@@ -29,7 +29,7 @@ ms.locfileid: "85539085"
 |-|-|
 |TypName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Category|Microsoft. Globalization|
+|Kategorie|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache

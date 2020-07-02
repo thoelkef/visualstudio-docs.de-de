@@ -1,7 +1,7 @@
 ---
 title: Beheben von Fehlern in Office-Projektmappen
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2aa971a79c0b0f5592c0da5c52a457c585bb0f15
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985569"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537318"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Beheben von Fehlern in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:
@@ -40,7 +40,7 @@ ms.locfileid: "72985569"
 
 - [Projekte Debuggen](#debugging)
 
-## <a name="creating"></a>Erstellen, aktualisieren und Öffnen von Projekten
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Erstellen, aktualisieren und Öffnen von Projekten
  Die folgenden Fehler können auftreten, wenn Sie Office-Projekte erstellen oder öffnen.
 
 ### <a name="the-project-cannot-be-created"></a>Das Projekt kann nicht erstellt werden.
@@ -84,7 +84,7 @@ ms.locfileid: "72985569"
 
  Nachdem Sie das Projekt aktualisiert haben, können Sie die Visual Studio 2005-Tools für Office Second Edition-Laufzeit vom Entwicklungscomputer deinstallieren, wenn sie nicht von anderen Office-Projektmappen verwendet wird.
 
-## <a name="designers"></a>Verwenden der Designer
+## <a name="use-the-designers"></a><a name="designers"></a>Verwenden der Designer
  Die folgenden Fehler können auftreten, wenn Sie in Projekten auf Dokumentebene mit dem Dokument-, Arbeitsmappen- oder Arbeitsblatt-Designer arbeiten.
 
 ### <a name="designer-failed-to-load-correctly"></a>Der Designer konnte nicht ordnungsgemäß geladen werden
@@ -105,17 +105,17 @@ ms.locfileid: "72985569"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Befehl "Clip-Art einfügen" führt keine Aktion im Visual Studio-Designer aus
  Wenn Excel oder Word im Visual Studio-Designer geöffnet ist, wird durch Klicken auf die Schaltfläche **Clip-Art** auf der Registerkarte **Abbildungen** im Menüband nicht der Aufgabenbereich **Clip-Art** geöffnet. Um Clip Art hinzuzufügen, müssen Sie die Kopie der Arbeitsmappe oder des Dokuments, das sich im Hauptprojekt Ordner befindet (nicht die Kopie im Ordner " *\bin* ") außerhalb von Visual Studio öffnen, das ClipArt hinzufügen und dann die Arbeitsmappe oder das Dokument speichern.
 
-## <a name="code"></a>Schreiben von Code
+## <a name="write-code"></a><a name="code"></a>Schreiben von Code
  Die folgenden Fehler können auftreten, wenn Sie Code in Office-Projekten schreiben.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Einige Ereignisse von Office-Objekten sind bei Verwendung von C nicht verfügbar\#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Einige Ereignisse von Office-Objekten sind bei Verwendung von C nicht verfügbar.\#
  In einigen Fällen kann ein Compilerfehler wie der folgende angezeigt werden, wenn Sie versuchen, auf ein bestimmtes Ereignis einer Instanz eines primären Interopassemblytyps (PIA) für Office in einem Visual C#-Projekt zuzugreifen.
 
  "Mehrdeutigkeit zwischen 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' und 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"
 
  Dieser Fehler bedeutet, dass Sie auf ein Ereignis zuzugreifen versuchen, das den gleichen Namen wie eine andere Eigenschaft oder Methode des Objekts besitzt. Um auf das-Ereignis zuzugreifen, müssen Sie das-Objekt in seine *Ereignis Schnittstelle*umwandeln.
 
- Office-PIA-Typen mit Ereignissen implementieren zwei Schnittstellen: eine Kernschnittstelle mit allen Eigenschaften und Methoden und eine Ereignisschnittstelle, die die vom Objekt verfügbar gemachten Ereignisse enthält. Diese Ereignis Schnittstellen verwenden die Benennungs Konvention *objectName*Events*n*_Event, z. b. <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> und <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. Wenn Sie nicht auf ein Ereignis zugreifen können, das in einem Objekt vorhanden sein sollte, wandeln Sie das Objekt in die zugehörige Ereignisschnittstelle um.
+ Office-PIA-Typen mit Ereignissen implementieren zwei Schnittstellen: eine Kernschnittstelle mit allen Eigenschaften und Methoden und eine Ereignisschnittstelle, die die vom Objekt verfügbar gemachten Ereignisse enthält. Diese Ereignis Schnittstellen verwenden die Benennungs Konvention *objectName*Events*n*_Event, z <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . b. und. Wenn Sie nicht auf ein Ereignis zugreifen können, das in einem Objekt vorhanden sein sollte, wandeln Sie das Objekt in die zugehörige Ereignisschnittstelle um.
 
  <xref:Microsoft.Office.Interop.Excel.Application>-Objekte verfügen beispielsweise über ein <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>-Ereignis und eine <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>-Eigenschaft. Um das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>-Ereignis zu behandeln, wandeln Sie <xref:Microsoft.Office.Interop.Excel.Application> in die <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>-Schnittstelle um. Im folgenden Codebeispiel wird dies für ein Projekt auf Dokumentebene für Excel veranschaulicht.
 
@@ -123,8 +123,8 @@ ms.locfileid: "72985569"
 
  Weitere Informationen zu Ereignis Schnittstellen in den Office-PIAs finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop-](/previous-versions/office/office-12//ms247299(v=office.12))Assemblys von Office.
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenet_v40_shortsharepointincludesnet-v40-short-mdmd-or-the-includenet_v45vstoincludesnet-v45-mdmd"></a>Auf Office-Pia-Klassen in Projekten, die auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] abzielen, oder auf die [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ausgerichtet sind, wird Code, der auf eine in einer Office-PIA definierte Klasse verweist, standardmäßig nicht kompiliert. Die Klassen in den PIAs verwenden die *objectName*-Klasse der Benennungs Konvention, z. b. <xref:Microsoft.Office.Interop.Word.DocumentClass> und <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Der folgende Code aus einem Word-VSTO-Add-In-Projekt wird z. B. nicht kompiliert.
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Auf Office Pia-Klassen in Projekten, die auf oder abzielen, kann nicht verwiesen werden. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)][!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+ In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ausgerichtet sind, wird Code, der auf eine in einer Office-PIA definierte Klasse verweist, standardmäßig nicht kompiliert. Klassen in den PIAs verwenden die *objectName*-Klasse der Benennungs Konvention, z <xref:Microsoft.Office.Interop.Word.DocumentClass> <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . b. und. Der folgende Code aus einem Word-VSTO-Add-In-Projekt wird z. B. nicht kompiliert.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -138,7 +138,7 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
 
 - Visual Basic: "der Verweis auf die Klasse ' DocumentClass ' ist nicht zulässig, wenn die zugehörige Assembly im No-PIA-Modus verknüpft ist."
 
-- Visual C#: der Interoptyp "Microsoft. Office. Interop. Word. DocumentClass" kann nicht eingebettet werden. Verwenden Sie stattdessen die entsprechende Schnittstelle."
+- Visual c#: der Interoptyp "Microsoft.Office.Interop.Word.Docenumerclass" kann nicht eingebettet werden. Verwenden Sie stattdessen die entsprechende Schnittstelle."
 
   Um diesen Fehler zu beheben, ändern Sie den Code, sodass er stattdessen auf die entsprechende Schnittstelle verweist. Verwenden Sie z. B. anstelle eines Verweises auf ein <xref:Microsoft.Office.Interop.Word.DocumentClass>-Objekt einen Verweis auf eine Instanz der <xref:Microsoft.Office.Interop.Word.Document>-Schnittstelle.
 
@@ -153,12 +153,12 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Projekte, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ausgerichtet sind, betten alle Interop-Typen aus Office-PIAs standardmäßig automatisch ein. Dieser Kompilierungsfehler tritt auf, weil das Feature für eingebettete Interoptypen nur für Schnittstellen funktioniert, aber nicht für Klassen. Weitere Informationen zu Schnittstellen und Klassen in den Office-PIAs finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop](/previous-versions/office/office-12/ms247299(v=office.12))-Assemblys von Office. Weitere Informationen zur Funktion für eingebettete Interoptypen in Office-Projekten finden Sie unter [Entwerfen und Erstellen von Office-](../vsto/designing-and-creating-office-solutions.md)Projektmappen.
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>Verweise auf Office-Klassen werden nicht erkannt.
- Einige Klassennamen, z. b. eine Anwendung, sind in mehreren Namespaces wie <xref:Microsoft.Office.Interop.Word> und <xref:System.Windows.Forms>enthalten. Aus diesem Grund enthält die **Imports** -/**using** -Anweisung am Anfang der Projektvorlagen eine kurzanqualifizier Ende Konstante, z. b.:
+ Einige Klassennamen, z. b. eine Anwendung, befinden sich in mehreren Namespaces, z <xref:Microsoft.Office.Interop.Word> <xref:System.Windows.Forms> . b. und. Aus diesem Grund enthält die **Imports** / **using** -Anweisung am Anfang der Projektvorlagen eine kurzanqualifizier Ende Konstante, z. b.:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
 
- Diese Verwendung der **Importe**/**using** -Anweisung erfordert, dass Sie Verweise auf Office-Klassen mit dem Word-oder Excel-Qualifizierer unterscheiden, z. b.:
+ Diese Verwendung der **Imports** / **using** -Anweisung erfordert, dass Sie Verweise auf Office-Klassen mit dem Word-oder Excel-Qualifizierer unterscheiden, z. b.:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Obwohl Sie den Word-oder Excel-Namespace importiert haben und Zugriff auf alle darin enthaltenen Klassen haben, müssen Sie alle Typen mit Word oder Excel vollständig qualifizieren, um die Mehrdeutigkeit von Namespaces zu entfernen.
 
-## <a name="building"></a> Erstellen von Projekten
+## <a name="build-projects"></a><a name="building"></a>Erstellen von Projekten
  Beim Erstellen von Office-Projekten können die folgenden Fehler auftreten.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Ein Projekt auf Dokument Ebene kann nicht erstellt werden, das auf einem Dokument mit eingeschränkten Berechtigungen basiert.
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Compilerfehler treten auf, nachdem ein Name Drange-Steuerelement gelöscht wurde.
  Wenn Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement aus einem Arbeitsblatt löschen, das nicht das aktive Arbeitsblatt im Designer ist, wird der automatisch generierte Code möglicherweise nicht aus dem Projekt entfernt, und es können Compilerfehler auftreten. Um sicherzustellen, dass der Code entfernt wird, müssen Sie vor dem Löschen des Steuerelements immer das Arbeitsblatt auswählen, das das <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement enthält, um dieses als aktives Arbeitsblatt festzulegen. Wenn automatisch generierter Code beim Löschen des Steuerelements nicht gelöscht wird, können Sie den Designer anweisen, den Code zu löschen. Aktivieren Sie dazu das Arbeitsblatt, und nehmen Sie eine Änderung vor, sodass das Arbeitsblatt als geändert markiert wird. Beim Neuerstellen des Projekts wird der Code entfernt.
 
-## <a name="debugging"></a>Projekte Debuggen
+## <a name="debug-projects"></a><a name="debugging"></a>Projekte Debuggen
  Beim Debuggen von Office-Projekten können die folgenden Fehler auftreten.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Die Aufforderung zur Deinstallation wird angezeigt, wenn Sie eine Lösung auf dem Entwicklungs Computer veröffentlichen und installieren.
@@ -197,7 +197,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Wenn Sie ein Projekt auf Dokumentebene für Excel oder Word an einem UNC-Netzwerkspeicherort erstellen, müssen Sie den Speicherort des Dokuments der Liste vertrauenswürdiger Speicherorte in Word oder Excel hinzufügen. Andernfalls wird die Anpassung nicht geladen, wenn Sie versuchen, das Projekt in Visual Studio auszuführen oder zu debuggen. Weitere Informationen zu vertrauenswürdigen Speicherorten finden [Sie unter Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Threads werden nach dem Debuggen nicht ordnungsgemäß beendet.
- Office-Projekte in Visual Studio folgen einer Threadnamenskonvention, die den Debugger in die Lage versetzt, das Programm ordnungsgemäß zu schließen. Wenn Sie in der Projektmappe Threads erstellen, versehen Sie den Namen jedes einzelnen Threads mit dem Präfix "VSTA_", um sicherzustellen, dass diese Threads ordnungsgemäß behandelt werden, wenn Sie das Debuggen beenden. Beispielsweise können Sie die `Name`-Eigenschaft eines Threads festlegen, der auf das **VSTA_NetworkListener**-Netzwerk Ereignis wartet.
+ Office-Projekte in Visual Studio folgen einer Threadnamenskonvention, die den Debugger in die Lage versetzt, das Programm ordnungsgemäß zu schließen. Wenn Sie in der Projektmappe Threads erstellen, versehen Sie den Namen jedes einzelnen Threads mit dem Präfix "VSTA_", um sicherzustellen, dass diese Threads ordnungsgemäß behandelt werden, wenn Sie das Debuggen beenden. Beispielsweise können Sie die-Eigenschaft eines Threads festlegen, der auf das `Name` **VSTA_NetworkListener**eines Netzwerk Ereignisses wartet.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Kann keine Office-Projekt Mappe auf dem Entwicklungs Computer ausführen oder Debuggen
  Wenn Sie ein Office-Projekt auf dem Entwicklungscomputer nicht ausführen oder entwickeln können, wird möglicherweise die folgende Fehlermeldung angezeigt.

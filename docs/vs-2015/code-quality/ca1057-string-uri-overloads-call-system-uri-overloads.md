@@ -15,31 +15,31 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ba7e7de4f3ef6336ed3d82dc1e1da03ec0bf2575
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcdb4d8333b0a4d2d06580d882cf736d4527eca4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603076"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539528"
 ---
-# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf
+# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|StringUriOverloadsCallSystemUriOverloads|
+|TypName|StringUriOverloadsCallSystemUriOverloads|
 |CheckId|CA1057|
 |Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Typ deklariert Methoden Überladungen, die sich nur durch die Ersetzung eines Zeichen folgen Parameters mit einem <xref:System.Uri?displayProperty=fullName>-Parameter unterscheiden, und die Überladung, die den Zeichen folgen Parameter annimmt, ruft nicht die Überladung auf, die den <xref:System.Uri>-Parameter annimmt.
+ Ein Typ deklariert Methoden Überladungen, die sich nur durch die Ersetzung eines Zeichen folgen Parameters mit einem Parameter unterscheiden <xref:System.Uri?displayProperty=fullName> , und die Überladung, die den Zeichen folgen Parameter annimmt, ruft nicht die Überladung auf, die den- <xref:System.Uri> Parameter annimmt.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Da die über Ladungen sich nur durch den String/<xref:System.Uri>-Parameter unterscheiden, wird davon ausgegangen, dass die Zeichenfolge einen URI (Uniform Resource Identifier) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die Klasse <xref:System.Uri> stellt diese Dienste auf sichere und sichere Weise bereit. Um die Vorteile der <xref:System.Uri>-Klasse zu nutzen, sollte die Zeichen folgen Überladung die <xref:System.Uri>-Überladung mithilfe des Zeichen folgen Arguments aufrufen.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Da sich die über Ladungen nur durch die Zeichenfolge/den Parameter unterscheiden <xref:System.Uri> , wird davon ausgegangen, dass die Zeichenfolge einen URI (Uniform Resource Identifier) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri> -Klasse stellt diese Dienste auf sichere und sichere Weise bereit. <xref:System.Uri>Die Zeichen folgen Überladung sollte die-Überladung mithilfe des Zeichen folgen Arguments aufrufen, um die Vorteile der-Klasse zu nutzen <xref:System.Uri> .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Implementieren Sie die-Methode, die die Zeichen folgen Darstellung des URI verwendet, so, dass Sie mithilfe des Zeichen folgen Arguments eine Instanz der <xref:System.Uri>-Klasse erstellt, und übergeben Sie dann das <xref:System.Uri>-Objekt an die-Überladung mit dem <xref:System.Uri>-Parameter.
+ Implementieren Sie die-Methode, die die Zeichen folgen Darstellung des URI verwendet, so, dass eine Instanz der- <xref:System.Uri> Klasse mithilfe des Zeichen folgen Arguments erstellt wird, und übergeben Sie dann das- <xref:System.Uri> Objekt an die-Überladung, die den- <xref:System.Uri> Parameter aufweist.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Zeichen folgen Parameter keinen URI darstellt.
@@ -52,10 +52,10 @@ ms.locfileid: "72603076"
  [!code-vb[FxCop.Design.CallUriOverload#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CallUriOverload/vb/FxCop.Design.CallUriOverload.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+ [CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
- [CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+ [CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055: URI-Rückgabewerte dürfen keine Zeichenfolgen sein](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055: URI-Rückgabewerte dürfen keine Zeichenfolgen sein.](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

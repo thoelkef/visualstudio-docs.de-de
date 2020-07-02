@@ -15,19 +15,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a7c64337af94f9e88944fd15480f4b7ce1e2cb08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e7a96c95313ffee82448e3485c90868c8103814a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655265"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539801"
 ---
-# <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generische Methoden müssen den Typparameter angeben
+# <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generische Methoden müssen den Typparameter angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|GenericMethodsShouldProvideTypeParameter|
+|TypName|GenericMethodsShouldProvideTypeParameter|
 |CheckId|CA1004|
 |Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72655265"
 ## <a name="cause"></a>Ursache
  Die Parameter Signatur einer extern sichtbaren generischen Methode enthält keine Typen, die allen Typparametern der Methode entsprechen.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Mithilfe eines Rückschlusses wird das Typargument einer generischen Methode nach dem Typ des an die Methode übergebenen Arguments festgelegt, anstatt nach der expliziten Spezifikation des Typarguments. Um den Rückschluss zu aktivieren, muss die Parametersignatur einer generischen Methode einen Parameter einschließen, der vom selben Typ wie der Typparameter für die Methode ist. In diesem Fall muss das Typargument nicht angegeben werden. Wenn Sie den Rückschluss für alle Typparameter verwenden, ist die Syntax zum Aufrufen von generischen und nicht generischen Instanzmethoden identisch. Dies vereinfacht die Verwendbarkeit generischer Methoden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -51,16 +51,16 @@ ms.locfileid: "72655265"
  [!code-vb[FxCop.Design.Inference#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/vb/FxCop.Design.Inference.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden.](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+ [CA1010: Sammlungen müssen eine generische Schnittstelle implementieren.](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000: Statische Member nicht in generischen Typen deklarieren.](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)
+ [CA1002: Generische Listen nicht verfügbar machen.](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: Generische Typen in Membersignaturen nicht schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA1006: Generische Typen in Membersignaturen nicht schachteln.](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA1003: Generische Ereignishandlerinstanzen verwenden.](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Nach Möglichkeit Generics verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Nach Möglichkeit Generics verwenden.](../code-quality/ca1007-use-generics-where-appropriate.md)

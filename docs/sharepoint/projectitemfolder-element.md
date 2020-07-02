@@ -1,5 +1,5 @@
 ---
-title: ProjectItemFolder-Element | Microsoft-Dokumentation
+title: Projectitemfolder-Element | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 124716f8c40a8adc0a0ae1a28cda21dcb5e00ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562701"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539814"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder-Element
-  Stellt einen zugeordneten Ordner an.
+  Stellt einen zugeordneten Ordner dar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,17 +30,17 @@ ms.locfileid: "62562701"
 ```
 
 ## <a name="type"></a>Typ
- **ProjectItemFolderType**
+ **Projectitemfoldertype**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|Attribut|BESCHREIBUNG|
 |---------------|-----------------|
-|**Target**|Erforderliche **Xs: String** Attribut.<br /><br /> Der Pfad des Ordners, in der SharePoint-Installation, die der zugeordnete Ordner, relativ zum Stammordner Bereitstellung entspricht. Bereitstellungsstammordner richtet sich nach der Bereitstellungstyp anhand der **Typ** Attribut.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen der **Bereitstellungspfad** und **Deployment Root** Eigenschaften von SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
-|**Type**|Erforderliche **xs: String** Attribut.<br /><br /> Der Typ der Bereitstellung für den zugeordneten Ordner. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft des SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
+|**Target**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Pfad des Ordners in der SharePoint-Installation, dem der zugeordnete Ordner entspricht, relativ zum Stamm Ordner der Bereitstellung. Der Stamm Ordner der Bereitstellung wird durch den Bereitstellungstyp bestimmt, der durch das **Type** -Attribut angegeben wird.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen für den **Bereitstellungs Pfad** und die **Bereitstellungs** Stamm Eigenschaften von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
+|**Type**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Bereitstellungstyp für den zugeordneten Ordner. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung der Eigenschaft " **Bereitstellungstyp** " von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine
@@ -49,20 +49,20 @@ ms.locfileid: "62562701"
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projektelement dar. Dieses Element ist das erforderliche Stammelement der *SPDATA* Datei.|
+|[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projekt Element dar. Dieses Element ist das erforderliche Stamm Element der *spdata* -Datei.|
 
 ## <a name="remarks"></a>Hinweise
- Weitere Informationen zum zugeordneten Ordnern finden Sie unter [Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+ Weitere Informationen zu zugeordneten Ordnern finden Sie unter Gewusst [wie: Hinzufügen und entfernen](../sharepoint/how-to-add-and-remove-mapped-folders.md)von zugeordneten Ordnern.
 
 ## <a name="element-information"></a>Elementinformationen
 
-|||
+|Eigenschaft|Wert|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
-|**Name des Schemas**|SharePoint-Projektelementschema|
-|**Validierungsdatei**|ProjectItemModelSchema.xsd|
-|**Kann leer sein.**|Nein|
+|**Namespace**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/2010/<br>Sharepointtools/sharepointprojectitemmodel|
+|**Schema Name**|SharePoint-Projekt Element Schema|
+|**Validierungs Datei**|Projectitemmodelschema. xsd|
+|**Kann leer sein**|Nein|
 
 ## <a name="see-also"></a>Siehe auch
-- [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md)

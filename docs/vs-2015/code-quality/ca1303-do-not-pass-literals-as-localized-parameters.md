@@ -30,7 +30,7 @@ ms.locfileid: "85539112"
 |-|-|
 |TypName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
-|Category|Microsoft. Globalization|
+|Kategorie|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache

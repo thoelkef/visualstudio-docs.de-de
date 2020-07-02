@@ -15,19 +15,19 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c56de70daeabd05215f68024339d5855686d529b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0a4dcc53fac7dc9b7e189686a3b32e2fb4fd030
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653834"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539593"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Typen in Namespaces deklarieren
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Typen in Namespaces deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DeclareTypesInNamespaces|
+|TypName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
 |Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72653834"
 ## <a name="cause"></a>Ursache
  Ein öffentlicher oder geschützter Typ wird außerhalb des Gültigkeits Bereichs eines benannten Namespace definiert.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Typen werden in Namespaces deklariert, um Namenskonflikte zu verhindern, und als Möglichkeit, verwandte Typen in einer Objekthierarchie zu organisieren. Typen, die sich außerhalb eines benannten Namespace befinden, befinden sich in einem globalen Namespace, auf den im Code nicht verwiesen werden kann.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -51,7 +51,7 @@ ms.locfileid: "72653834"
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TypesLiveInNamespaces/vb/FxCop.Design.TypesLiveInNamespaces.vb#1)]
 
 ## <a name="example"></a>Beispiel
- Die folgende Anwendung verwendet die zuvor definierte Bibliothek. Beachten Sie, dass der Typ, der außerhalb eines Namespaces deklariert ist, erstellt wird, wenn der Name `Test` nicht durch einen Namespace qualifiziert ist. Beachten Sie auch, dass der Namespace Name erforderlich ist, um auf den `Test` Typ in `Goodspace` zuzugreifen.
+ Die folgende Anwendung verwendet die zuvor definierte Bibliothek. Beachten Sie, dass der Typ, der außerhalb eines Namespaces deklariert ist, erstellt wird, wenn der Name `Test` nicht durch einen Namespace qualifiziert ist. Beachten Sie außerdem, dass für den Zugriff auf den- `Test` Typ in `Goodspace` der Namespace Name erforderlich ist.
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/cs/FxCop.Design.TestTypesLive.cs#1)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/vb/FxCop.Design.TestTypesLive.vb#1)]

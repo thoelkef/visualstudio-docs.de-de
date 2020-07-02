@@ -1,5 +1,5 @@
 ---
-title: ProjectItemFile-Element | Microsoft-Dokumentation
+title: Projectitemfile-Element | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562361"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539853"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile-Element
-  Stellt eine SharePoint-Datei, z. B. Feature-Element-Datei, um mit dem Projektelement enthalten, wenn sie in SharePoint bereitgestellt wird.
+  Stellt eine SharePoint-Datei (z. b. eine featureelementdatei) dar, die beim Bereitstellen in SharePoint in das Projekt Element eingeschlossen werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,18 +31,18 @@ ms.locfileid: "62562361"
 ```
 
 ## <a name="type"></a>Typ
- **ProjectItemFileType**
+ **Projectitemfiletype**
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|Attribut|BESCHREIBUNG|
 |---------------|-----------------|
-|**Quelle**|Erforderliche **xs: String** Attribut.<br /><br /> Der Name der Datei, die mit dem Projektelement bereitstellen.|
-|**Target**|Optionale **xs: String** Attribut.<br /><br /> Der Pfad, in dem die Datei in SharePoint relativ zum Stammordner Bereitstellung bereitgestellt wird. Bereitstellungsstammordner richtet sich nach der Bereitstellungstyp anhand der **Typ** Attribut. Wenn die **Ziel** Attribut nicht angegeben ist, wird die Datei in einem Ordner bereitgestellt werden, mit dem Namen im angegebenen die **Quelle** Attribut.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen der **Bereitstellungspfad** und **Deployment Root** Eigenschaften von SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
-|**Type**|Erforderliche **xs: String** Attribut.<br /><br /> Der Typ der Bereitstellung für die Datei. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung für die **Bereitstellungstyp** Eigenschaft des SharePoint-Projektelemente in [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
+|**Quelle**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Name der Datei, die mit dem Projekt Element bereitgestellt werden soll.|
+|**Target**|Optionales **xs: String** -Attribut.<br /><br /> Der Pfad, in dem die Datei in SharePoint in Relation zum Stamm Ordner der Bereitstellung bereitgestellt wird. Der Stamm Ordner der Bereitstellung wird durch den Bereitstellungstyp bestimmt, der durch das **Type** -Attribut angegeben wird. Wenn das **Ziel** Attribut nicht angegeben ist, wird die Datei in einem Ordner mit dem Namen bereitgestellt, der im **Quell** Attribut angegeben ist.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen für den **Bereitstellungs Pfad** und die **Bereitstellungs** Stamm Eigenschaften von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
+|**Type**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Bereitstellungstyp für die Datei. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung der Eigenschaft " **Bereitstellungstyp** " von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine
@@ -51,19 +51,19 @@ ms.locfileid: "62562361"
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien mit SharePoint-Projektelements eingeschlossen werden soll, wenn sie in SharePoint bereitgestellt wird.|
+|[Dateien](../sharepoint/files-element.md)|Gibt die Dateien an, die mit dem SharePoint-Projekt Element beim Bereitstellung in SharePoint eingeschlossen werden sollen.|
 
 ## <a name="remarks"></a>Hinweise
- SharePoint-Dateien, auf die in der Regel verweist **ProjectItemFile** Elemente umfassen featureelementen (*"Elements.xml"*), Schemadateien für Listendefinitionen (*"Schema.xml"*), und die Webpart-Definitionsdateien für die Webparts (*.webpart*).
+ Zu SharePoint-Dateien, auf die in der Regel in **projectitemfile** -Elementen verwiesen wird, gehören featureelementdateien (*Elements.xml*), Schema Dateien für Listen Definitionen (*Schema.xml*) und webpartdefinitions Dateien für Webparts (*. WebPart*).
 
 ## <a name="element-information"></a>Elementinformationen
 
-|||
+|Eigenschaft|Wert|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Name des Schemas**|SharePoint-Projektelementschema|
-|**Validierungsdatei**|ProjectItemModelSchema.xsd|
-|**Kann leer sein.**|Nein|
+|**Namespace**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/sharepointtools/sharepointprojectitemmodel|
+|**Schema Name**|SharePoint-Projekt Element Schema|
+|**Validierungs Datei**|Projectitemmodelschema. xsd|
+|**Kann leer sein**|Nein|
 
 ## <a name="see-also"></a>Siehe auch
-- [SharePoint-Projektelementschema](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md)

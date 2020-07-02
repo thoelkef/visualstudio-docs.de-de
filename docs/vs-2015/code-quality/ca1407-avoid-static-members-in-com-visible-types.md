@@ -29,7 +29,7 @@ ms.locfileid: "85538852"
 |-|-|
 |TypName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
-|Category|Microsoft. Interoperabilität|
+|Kategorie|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -69,7 +69,7 @@ namespace Samples
 
 ## <a name="example-violation"></a>Beispiel Verstoß
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
  Das folgende Beispiel zeigt eine `static` Methode, die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -80,7 +80,7 @@ namespace Samples
 
 ## <a name="example-fix"></a>Beispiel Korrektur
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
  Um die Verletzung im vorherigen Beispiel zu beheben, können Sie die Methode in eine Instanzmethode ändern, aber dies ist in dieser Instanz nicht sinnvoll. Eine bessere Lösung besteht darin, explizit `ComVisible(false)` auf die-Methode anzuwenden, um anderen Entwicklern zu helfen, dass die Methode von com nicht angezeigt werden kann.
 
  Das folgende Beispiel gilt <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> für die-Methode.

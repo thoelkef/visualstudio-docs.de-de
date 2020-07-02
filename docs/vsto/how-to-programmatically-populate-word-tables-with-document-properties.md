@@ -1,7 +1,7 @@
 ---
-title: Programmgesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften
+title: Programm gesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177784"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537812"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Vorgehensweise: Programmgesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Gewusst wie: Programm gesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften
   Im folgenden Beispiel wird eine Microsoft Office Word-Tabelle am Anfang des Dokuments erstellt und mit den Eigenschaften des Hostdokuments aufgefüllt.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="populate-tables-in-a-document-level-customization"></a>Auffüllen von Tabellen in einer Anpassung auf Dokumentebene
+## <a name="populate-tables-in-a-document-level-customization"></a>Auffüllen von Tabellen in einer Anpassung auf Dokument Ebene
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>So erstellen Sie eine Tabelle und füllen sie mit Dokumenteigenschaften auf
 
@@ -94,7 +94,7 @@ ms.locfileid: "66177784"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen](../vsto/how-to-programmatically-create-word-tables.md)
-- [Vorgehensweise: Programmgesteuertes Hinzufügen von Text und Formatierungen zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Vorgehensweise: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Gewusst wie: Programm gesteuertes Erstellen von Word-Tabellen](../vsto/how-to-programmatically-create-word-tables.md)
+- [Gewusst wie: Programm gesteuertes Hinzufügen von Text und Formatierung zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Gewusst wie: Programm gesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
