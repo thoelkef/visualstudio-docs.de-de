@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten'
+title: 'Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,42 +15,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 537bae766b71744a61e5158b1a859cade4cdcda7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419650"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538306"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten
-  Es gibt verschiedene Möglichkeiten zum Erstellen von Ereignishandlern in Visual Basic und c#. In der Entwurfsansicht können Sie den Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder Ereignisse im Bereich von der **Eigenschaften** Fenster aus, um Handler für alle Ereignisse für das Steuerelement zu erstellen. Wenn Sie in der Codeansicht sind, kann nicht beliebig So wechseln Sie zur Entwurfsansicht, um einen Ereignishandler zu erstellen.
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten
+  Es gibt mehrere Möglichkeiten zum Erstellen von Ereignis Handlern in Visual Basic und c#. In der Entwurfs Ansicht können Sie die Standard Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder im Fenster "Ereignisse" im Fenster " **Eigenschaften** " Handler für ein beliebiges Ereignis im Steuerelement erstellen. Wenn Sie jedoch in der Code Ansicht sind, möchten Sie möglicherweise nicht zu Designansicht wechseln, um einen Ereignishandler zu erstellen.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-### <a name="to-create-an-event-handler-in-visual-basic"></a>Zum Erstellen eines ereignishandlers in Visual Basic
+### <a name="to-create-an-event-handler-in-visual-basic"></a>So erstellen Sie einen Ereignishandler in Visual Basic
 
-1. Von der **Klassenname** Dropdownliste am oberen Rand des Code-Editor, wählen Sie das Objekt, das möchten Sie erstellen einen Ereignishandler für.
+1. Wählen Sie in der Dropdown Liste **Klassen Name** am oberen Rand des Code-Editors das Objekt aus, für das Sie einen Ereignishandler erstellen möchten.
 
     > [!NOTE]
-    > Wenn Sie Ereignishandler für erstellen möchten `ThisDocument` oder `ThisWorkbook`, wählen Sie **(ThisDocument-Ereignisse)** oder **(ThisWorkbook-Ereignisse)** in die **Klassenname**Dropdown-Liste
+    > Wenn Sie Ereignishandler für oder erstellen möchten `ThisDocument` `ThisWorkbook` , müssen Sie **(ThisDocument-Ereignisse)** oder **(ThisWorkbook-Ereignisse)** in der Dropdown Liste **Klassen Name** auswählen.
 
-2. Von der **Methodenname** Dropdown-Listenfeld oben im Code-Editor, wählen Sie das Ereignis.
+2. Wählen Sie in der Dropdown Liste **Methoden Name** am oberen Rand des Code-Editors das Ereignis aus.
 
-     Visual Studio erstellt den Ereignishandler und verschiebt die Einfügemarke an den neu erstellten Ereignishandler. Wenn der Ereignishandler bereits vorhanden ist, verschiebt die Einfügemarke, mit dem vorhandenen Ereignishandler.
+     Visual Studio erstellt den Ereignishandler und verschiebt die Einfügemarke in den neu erstellten Ereignishandler. Wenn der Ereignishandler bereits vorhanden ist, wechselt die Einfügemarke in den vorhandenen Ereignishandler.
 
-### <a name="to-create-an-event-handler-in-c"></a>So erstellen einen Ereignishandler in C\#
+### <a name="to-create-an-event-handler-in-c"></a>So erstellen Sie einen Ereignishandler in C\#
 
-1. Erstellen der Ereignisdelegat in die **Start** -Ereignis der Klasse durch den vollqualifizierten Namen des Ereignisses gefolgt von einem Leerzeichen, und geben dann **+=** anschließend ohne Leerzeichen. Zum Beispiel:
+1. Erstellen Sie den Ereignis Delegaten im **Startup** -Ereignis der-Klasse, indem Sie den qualifizierten Ereignis Namen, gefolgt von einem Leerzeichen, eingeben und **+=** anschließend ohne Leerzeichen eingeben. Zum Beispiel:
 
      `this.<object name>.<event name> +=`
 
-2. Am Ende der Zeile des Codes drücken Sie zweimal die TAB-Taste aus.
+2. Drücken Sie am Ende der Codezeile zweimal die Tab-Taste.
 
-     Visual Studio automatisch abgeschlossen wird die Zeile des Codes, den Ereignishandler erstellt, und verschiebt die Einfügemarke an den neu erstellten Ereignishandler.
+     Visual Studio schließt die Codezeile automatisch ab, erstellt den Ereignishandler und verschiebt die Einfügemarke in den neu erstellten Ereignishandler.
 
 ## <a name="see-also"></a>Siehe auch
-- [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)
-- [Exemplarische Vorgehensweise: Programmieren in Abhängigkeit von Ereignissen eines NamedRange-Steuerelements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
-- [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)
+- [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)
+- [Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)

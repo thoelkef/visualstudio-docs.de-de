@@ -29,7 +29,7 @@ ms.locfileid: "85539021"
 |-|-|
 |TypName|SetLocaleForDataTypes|
 |CheckId|CA1306|
-|Category|Microsoft. Globalization|
+|Kategorie|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache

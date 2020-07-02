@@ -15,25 +15,25 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663636"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539359"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ImplementIDisposableCorrectly|
+|TypName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
 |Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- `IDisposable` ist nicht ordnungsgemäß implementiert. Einige Gründe für dieses Problem sind hier aufgeführt:
+ `IDisposable`ist nicht ordnungsgemäß implementiert. Einige Gründe für dieses Problem sind hier aufgeführt:
 
 - Iverwerfist in der-Klasse neu implementiert.
 
@@ -53,27 +53,27 @@ ms.locfileid: "72663636"
 
   Alle nicht versiegelten root-iverwerf-Typen müssen eine eigene geschützte Methode für die virtuelle void-Freigabe (bool) bereitstellen. Verwerfen () sollte "verwerfen (true)" und "Finalize" den Befehl "verwerfen (false)" aufzurufen. Wenn Sie einen nicht versiegelten Stamm-iverwerf-Typ erstellen, müssen Sie verwerfen (bool) definieren und ihn anrufen. Weitere Informationen finden Sie im Abschnitt zum [Bereinigen nicht verwalteter Ressourcen](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) im Abschnitt [Framework-Entwurfs Richtlinien](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) in der .NET Framework-Dokumentation.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Überprüfen Sie den Code, und legen Sie fest, welche der folgenden Auflösungen diese Verletzung beheben soll.
 
-- Entfernen Sie iverwerfaus der Liste der Schnittstellen, die von {0} implementiert werden, und überschreiben Sie stattdessen die b-Implementierung der Basisklasse.
+- Entfernen Sie iverwerfaus der Liste der Schnittstellen, die von implementiert werden, {0} und überschreiben Sie stattdessen die b-Implementierung der Basisklasse.
 
-- Entfernen Sie den Finalizer aus dem Typ {0}, überschreiben Sie verwerfen (bool disposing), und platzieren Sie die finalisierungslogik in den Codepfad, in dem "disposing" "false" ist.
+- Entfernen Sie den Finalizer aus dem Typ, überschreiben Sie verwerfen {0} (bool disposing), und platzieren Sie die finalisierungslogik in den Codepfad, in dem "disposing" "false" ist.
 
-- Entfernen Sie {0}, überschreiben Sie verwerfen (bool disposing), und platzieren Sie die Lösch Logik in den Codepfad, in dem "disposing" "true" ist.
+- Entfernen Sie, überschreiben Sie verwerfen {0} (bool disposing), und platzieren Sie die Lösch Logik in den Codepfad, in dem "disposing" "true" ist.
 
 - Stellen Sie sicher, dass {0} als öffentlich und versiegelt deklariert ist.
 
-- Benennen Sie {0} in "verwerfen" um, und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
+- Benennen {0} Sie in "verwerfen" um, und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
 
-- Stellen Sie sicher, dass {0} als "Protected", "Virtual" und "unsealed" deklariert ist.
+- Stellen Sie sicher, dass {0} als geschützt, virtuell und nicht versiegelt deklariert ist.
 
-- Ändern Sie {0} so, dass verwerfen (true) aufgerufen und dann GC aufgerufen wird. SuppressFinalize auf der aktuellen Objektinstanz ("This" oder "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) und gibt dann zurück.
+- Ändern {0} Sie, damit "verwerfen (true)" aufgerufen wird, und rufen Sie dann GC auf. SuppressFinalize auf der aktuellen Objektinstanz ("This" oder "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), und gibt dann zurück.
 
-- Ändern Sie {0}, sodass Sie verwerfen (false) aufruft und dann zurückgibt.
+- Ändern {0} Sie, sodass verwerfen (false) aufgerufen wird, und gibt dann zurück.
 
 - Wenn Sie eine nicht versiegelte iverwerf-Stamm Klasse schreiben, stellen Sie sicher, dass die Implementierung von iverwerfdas Muster befolgt, das weiter oben in diesem Abschnitt beschrieben wird.
 

@@ -45,7 +45,7 @@ ms.locfileid: "85537617"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Programm gesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

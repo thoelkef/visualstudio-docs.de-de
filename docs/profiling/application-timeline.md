@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285978"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537279"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
 
@@ -100,7 +100,7 @@ Die Detailansicht benötigen Sie am häufigsten, um den Bericht zu analysieren. 
 
 Die folgenden Ereignisse werden unterstützt:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Analyse**|Für das Analysieren von XAML-Dateien und Erstellen von Objekten benötigte Zeit.<br /><br /> Beim Erweitern eines **Analyse**-Knotens im Bereich **Zeitachsendetails** wird die Abhängigkeitskette aller XAML-Dateien anzeigt, die aufgrund des Ausgangsereignisses analysiert wurden. Mit diesem Tipp können Sie unnötige Dateianalysen und Objekterstellungen in leistungssensiblen Szenarios finden und entfernen.|
 |**Layout**|In großen Anwendungen können Tausende von Elementen zur gleichen Zeit auf dem Bildschirm angezeigt werden. Diese Anzeige kann zu einer niedrigen UI-Framerate und einer entsprechend geringen Reaktionsfähigkeit der Anwendung führen. Das Layoutereignis bestimmt genau die Kosten für die Anordnung jedes Elements (d.h. die Zeit, die für die Vorgänge Arrange, Measure, ApplyTemplate, ArrangeOverride und MeasureOverride aufgewendet wird). Es erstellt auch die visuellen Strukturen, die an einem Layoutdurchlauf beteiligt waren. Sie können diese Visualisierung verwenden, um zu bestimmen, welche logischen Strukturen gelöscht werden müssen, oder um andere Mechanismen mit Verzögerungen auszuwerten, um Ihren Layoutdurchlauf zu optimieren.|
@@ -116,7 +116,7 @@ Die folgenden Ereignisse werden unterstützt:
 
 Verwenden Sie die Symbolleiste **Zeitachsendetails** zum Sortieren, Filtern und Angeben der Anmerkungen zu Einträgen in der Ansicht **Zeitachsendetails** .
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Sortieren nach**|Sortieren Sie nach Startzeit oder Ereignisdauer.|
 |![Gruppieren von Ereignissen nach Frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dient zum Hinzufügen oder Entfernen einer Kategorie **Frame** der obersten Ebene, die Ereignisse nach Frame gruppiert.|

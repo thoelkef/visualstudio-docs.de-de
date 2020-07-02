@@ -1,9 +1,9 @@
 ---
-title: '&lt;FormRegions&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;FormRegions- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a24560df1da153702cfca2a206ea38cc8fac94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f98c74c2df998f0e79f5b95a316a7917304e029
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972329"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538358"
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;FormRegions&gt; -Element (Office-Entwicklung in Visual Studio)
-  Die `formRegions` Element der `vstov4` -Namespace enthält die Microsoft Office Outlook-Formularbereiche, die einem VSTO-Add-in zugeordnet sind.
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;FormRegions- &gt; Element (Office-Entwicklung in Visual Studio)
+  Das- `formRegions` Element des- `vstov4` Namespace enthält die Microsoft Office Outlook-Formular Bereiche, die einem VSTO-Add-in zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,17 +40,17 @@ ms.locfileid: "62972329"
 
  In einem Anwendungsmanifest kann nur ein `formRegions` -Element definiert sein.
 
- Das `formRegions` -Element hat keine Attribute.
+ Das `formRegions` -Element weist keine Attribute auf.
 
  Das `formRegions` -Element hat das folgende Element.
 
 ### <a name="formregion"></a>formRegion
- Erforderlich für Outlook-VSTO-Add-Ins, die Formularbereiche beinhalten. Die `formRegion` Element wird in definiert [ &#60;FormRegion&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
+ Erforderlich für Outlook-VSTO-Add-Ins, die Formularbereiche beinhalten. Das- `formRegion` Element wird in [&#60;FormRegion-&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)definiert.
 
-## <a name="vsto-add-in-example"></a>Beispiel für VSTO-Add-in
+## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-in
 
 ### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht ein `formRegions` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+ Das folgende Codebeispiel veranschaulicht ein `formRegions` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe auf Anwendungsebene. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -67,6 +67,6 @@ ms.locfileid: "62972329"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

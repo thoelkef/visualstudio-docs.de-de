@@ -1,7 +1,7 @@
 ---
-title: Problembehandlung bei Office-Projektmappen
+title: Problembehandlung für Office-Lösungen
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -14,46 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978262"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537215"
 ---
-# <a name="troubleshoot-office-solutions"></a>Problembehandlung bei Office-Projektmappen
+# <a name="troubleshoot-office-solutions"></a>Problembehandlung für Office-Lösungen
   Dieser Abschnitt enthält Tipps zur Lösung allgemeiner Probleme, die beim Erstellen von Projektmappen mithilfe von Office-Entwicklungstools in Visual Studio auftreten können.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Behandeln von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Beheben von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  Beschreibt allgemeine Probleme, die beim Entwerfen, Ausführen und Testen von Office-Projektmappen in Visual Studio auftreten können.
 
-- [Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+- [Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 
- Beschreibt, wie ein VSTO-Add-in wieder zu aktivieren, das hart oder weich deaktiviert wurde.
+ Beschreibt, wie ein VSTO-Add-in, das hart oder weich deaktiviert wurde, erneut aktiviert wird.
 
 - [Zusätzliche Unterstützung für Fehler in Office-Projektmappen](../vsto/additional-support-for-errors-in-office-solutions.md)
 
  Beschreibt weitere Ressourcen zur Problembehandlung von Fehlern und Warnungen in Office-Projektmappen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)
+- [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
 
  Beschreibt allgemeine Probleme, die beim Absichern von Office-Projektmappen auftreten können.
 
-- [Problembehandlung bei Office-projektmappenbereitstellung](../vsto/troubleshooting-office-solution-deployment.md)
+- [Problembehandlung bei der Bereitstellung von Office](../vsto/troubleshooting-office-solution-deployment.md)
 
  Beschreibt allgemeine Probleme, die beim Bereitstellen von Office-Projektmappen auftreten können.
 
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 
  Enthält Links zu Informationen über die Bereitstellung von Projektmappen, einschließlich Sicherheitsaspekten und Problemen bei der Auswahl eines Bereitstellungsmodells.
 
-- [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)
+- [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
 
  Enthält Themen, in denen erläutert wird, wie die in .NET Framework verfügbaren Sicherheitsfeatures in Office-Projektmappen integriert werden.
 
-- [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)
+- [Häufige Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md)
 
  Eine Liste häufig gestellter Fragen zum Programmieren von Office-Projektmappen sowie Links zu Themen, die zur Lösung häufiger Probleme beitragen können.

@@ -1,7 +1,7 @@
 ---
-title: SetWefProcessId-Methode
+title: Setwef ProcessID-Methode
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1352ccc9318061be4a2f9ad2da7d63715acd6721
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978354"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537331"
 ---
-# <a name="setwefprocessid-method"></a>SetWefProcessId-Methode
-  Enthält die Prozess-ID, die Inhalte der Web-Extensions-Framework (WEF) ausgeführt wird.
+# <a name="setwefprocessid-method"></a>Setwef ProcessID-Methode
+  Stellt den Prozess Bezeichner bereit, mit dem WEF-Inhalte (Web Extensions Framework) ausgeführt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,12 +32,12 @@ HRESULT SetWefProcessId(
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|*dwProcessId*|Die Prozess-ID, die zum Ausführen von Windows-Ereignisweiterleitung Inhalt verwendet werden.|
+|*dwProcessId*|Der Prozess Bezeichner, der zum Ausführen von WEF-Inhalten verwendet wird.|
 
 ## <a name="return-value"></a>Rückgabewert
  Ein HRESULT-Wert, der angibt, ob die Methode erfolgreich abgeschlossen wurde.
 
 ## <a name="remarks"></a>Hinweise
- Diese Methode muss aufgerufen werden, nachdem der Inhalt WEF-Prozess erstellt wurde, aber bevor Inhalte WEF ausgeführt wird.
+ Diese Methode muss aufgerufen werden, nachdem der WEF-Inhalts Prozess erstellt wurde, aber bevor WEF-Inhalte ausgeführt werden.
 
- Wenn Sie die Entwicklungsumgebung einen Debugger an den Windows-Ereignisweiterleitung Content-Prozess anfügen möchten, muss die Umgebung diesen Vorgang in der Implementierung dieser Methode ausführen.
+ Wenn Sie möchten, dass die Entwicklungsumgebung einen Debugger an den WEF-Inhalts Prozess anfügt, muss die Umgebung diesen Vorgang in der Implementierung dieser Methode ausführen.

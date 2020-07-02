@@ -15,31 +15,31 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3ddd2c90d23884bd08a90560dcc5ed0fe700aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f001a2bb4920ebfb3f5cff3745639bd346a0a920
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652712"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540140"
 ---
-# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Die COM-Registrierungsmethoden dürfen nicht sichtbar sein
+# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Die COM-Registrierungsmethoden dürfen nicht sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|ComRegistrationMethodsShouldNotBeVisible|
+|TypName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
 |Kategorie|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methode, die mit dem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> gekennzeichnet ist, oder das <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> Attribut ist extern sichtbar.
+ Eine Methode, die mit dem- <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> Attribut oder dem-Attribut markiert ist, <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> ist extern sichtbar.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Wenn eine Assembly mit Component Object Model (com) registriert wird, werden der Registrierung für jeden COM-sichtbaren Typ in der Assembly Einträge hinzugefügt. Methoden, die mit den Attributen "<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>" und "<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>" gekennzeichnet sind, werden während der Registrierungs-bzw. der Aufhebung der Registrierung aufgerufen, um Benutzercode auszuführen, der für die Registrierung/Aufhebung der Registrierung dieser Typen spezifisch ist. Dieser Code sollte nicht außerhalb dieser Prozesse aufgerufen werden.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Wenn eine Assembly mit Component Object Model (com) registriert wird, werden der Registrierung für jeden COM-sichtbaren Typ in der Assembly Einträge hinzugefügt. Methoden, die mit dem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> -Attribut und dem-Attribut markiert sind, <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> werden während der Registrierungs-bzw. der Aufhebung der Registrierung aufgerufen, um Benutzercode auszuführen, der für die Registrierung/Aufhebung der Registrierung dieser Typen spezifisch ist. Dieser Code sollte nicht außerhalb dieser Prozesse aufgerufen werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Zugriff auf die-Methode in `private` oder `internal` (`Friend` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Zugriff der-Methode in `private` oder `internal` ( `Friend` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
@@ -51,7 +51,7 @@ ms.locfileid: "72652712"
  [!code-vb[FxCop.Interoperability.ComRegistration2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComRegistration2/vb/FxCop.Interoperability.ComRegistration2.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1410: Die COM-Registrierungsmethoden müssen übereinstimmen](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+ [CA1410: Die COM-Registrierungsmethoden müssen übereinstimmen.](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
-## <a name="see-also"></a>Siehe auch
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Registrieren von Assemblys mit com](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm. exe (Assembly Registration Tool)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>[Registrieren von](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) Assemblys mit com- [Regasm.exe (Assembly Registration Tool)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)

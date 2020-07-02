@@ -65,6 +65,6 @@ ms.locfileid: "85538137"
 
      Wenn Sie ein sich wiederholendes Schema Element ziehen, generiert das Office-Projekt ein Steuerelement, <xref:Microsoft.Office.Tools.Excel.ListObject> das nicht automatisch an eine Datenquelle gebunden ist. Weitere Informationen finden Sie unter [XML-Schemas und-Daten in Anpassungen auf Dokument Ebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [XML-Schemas und-Daten in Anpassungen auf Dokument Ebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

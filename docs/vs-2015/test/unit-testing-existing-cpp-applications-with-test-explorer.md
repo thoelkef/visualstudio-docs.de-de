@@ -8,12 +8,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34d1918522711f3070cf6988a83ebdbd1e80b2f4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659584"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540074"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Ausführen von Unittests für vorhandene C++-Anwendungen mit dem Test-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +49,11 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
 ## <a name="creating-the-tests"></a>Erstellen der Tests
 
-### <a name="staticLink"></a> So ändern Sie den zu testenden Code in eine statische Bibliothek
+### <a name="to-change-the-code-under-test-to-a-static-library"></a><a name="staticLink"></a> So ändern Sie den zu testenden Code in eine statische Bibliothek
 
 - Wenn die Tests Member verwenden müssen, die nicht von einem zu testenden Projekt exportiert werden, und das zu testende Projekt als dynamische Bibliothek erstellt wird, erwägen Sie, es in eine statische Bibliothek zu konvertieren.
 
-  1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das zu testende Projekt, und wählen Sie **Eigenschaften** aus. Das Fenster mit den Projekteigenschaften wird geöffnet.
+  1. Wählen Sie in Projektmappen-Explorer im Kontextmenü des zu testenden Projekts **Eigenschaften**aus. Das Fenster mit den Projekteigenschaften wird geöffnet.
 
   2. Wählen Sie **Konfigurationseigenschaften** und dann **Allgemein** aus.
 
@@ -61,7 +61,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
   Fahren Sie mit der Prozedur [So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien](#objectRef) fort.
 
-### <a name="projectRef"></a> So verweisen Sie vom Testprojekt auf exportierte Funktionen
+### <a name="to-reference-exported-functions-from-the-test-project"></a><a name="projectRef"></a> So verweisen Sie vom Testprojekt auf exportierte Funktionen
 
 - Wenn ein zu testendes Projekt die Funktionen, die Sie testen möchten, exportiert, können Sie vom Testprojekt einen Verweis auf das Codeprojekt hinzufügen.
 
@@ -69,7 +69,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
       1. Wählen Sie im Menü **Datei** die Optionen **Neu**, **Projekt**, **Visual C++-Test**, **C++-Komponententestprojekt** aus.
 
-  2. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Testprojekt, und wählen Sie **Verweise** aus. Das Fenster mit den Projekteigenschaften wird geöffnet.
+  2. Wählen Sie in Projektmappen-Explorer im Kontextmenü des Testprojekts die Option **Verweise**aus. Das Fenster mit den Projekteigenschaften wird geöffnet.
 
   3. Wählen Sie **Allgemeine Eigenschaften**, **Framework und Verweise** aus, und klicken Sie dann auf die Schaltfläche **Neuen Verweis hinzufügen**.
 
@@ -85,7 +85,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
   Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
-### <a name="objectRef"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
 
 - Wenn der zu testende Code die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die **.obj**- oder **.lib**-Ausgabedatei zu den Abhängigkeiten des Testprojekts hinzufügen.
 
@@ -109,7 +109,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
   Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
-### <a name="sameProject"></a> So fügen Sie Komponententests im gleichen Projekt hinzu
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> So fügen Sie Komponententests im gleichen Projekt hinzu
 
 1. Ändern Sie die Produktcodeprojekteigenschaften, um die Header und Bibliotheksdateien einzuschließen, die für die Unittests erforderlich sind.
 
@@ -119,7 +119,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
    3. Bearbeiten Sie die Include- und Bibliotheksverzeichnisse:
 
-       |||
+       |Eigenschaft|Wert|
        |-|-|
        |**Includeverzeichnisse**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Bibliotheksverzeichnisse**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -130,11 +130,11 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
    Wechseln Sie zu [Schreiben der Komponententests](#addTests).
 
-## <a name="addTests"></a> Schreiben der Komponententests
+## <a name="writing-the-unit-tests"></a><a name="addTests"></a> Schreiben der Komponententests
 
 1. Fügen Sie in jeder Komponententestcodedatei eine `#include`-Anweisung für die Header des zu testenden Projekts hinzu.
 
-2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Beispiel:
+2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Zum Beispiel:
 
    ```cpp
    #include "stdafx.h"
@@ -160,6 +160,6 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
 1. Wählen Sie im Menü **Ansicht** die Optionen **Weitere Fenster**, **Test-Explorer**aus.
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
    Weitere Informationen finden Sie unter [Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md).

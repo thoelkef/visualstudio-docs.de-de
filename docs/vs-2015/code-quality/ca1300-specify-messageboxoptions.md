@@ -29,7 +29,7 @@ ms.locfileid: "85539190"
 |-|-|
 |TypName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
-|Category|Microsoft. Globalization|
+|Kategorie|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache

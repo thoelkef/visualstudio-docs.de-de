@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten'
+title: 'Gewusst wie: Programm gesteuertes Drucken von Visio-Dokumenten'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e31a55e49d42311b5ec5fff82769584cc55ce09
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955867"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537799"
 ---
-# <a name="how-to-programmatically-print-visio-documents"></a>Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten
+# <a name="how-to-programmatically-print-visio-documents"></a>Gewusst wie: Programm gesteuertes Drucken von Visio-Dokumenten
   Sie können ein vollständiges Microsoft Office Visio-Dokument oder nur eine bestimmte Seite drucken.
 
  Ausführliche Informationen zu den Druckmethoden finden Sie in der VBA-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) -Methode und [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) -Methode.
 
-## <a name="print-a-visio-document"></a>Drucken von Visio-Dokumenten
+## <a name="print-a-visio-document"></a>Drucken eines Visio-Dokuments
 
 ### <a name="to-print-a-complete-document"></a>So drucken Sie ein vollständiges Dokument
 
@@ -36,7 +36,7 @@ ms.locfileid: "62955867"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#8)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#8)]
 
-## <a name="print-a-page-of-a-visio-document"></a>Drucken Sie eine Seite eines Visio-Dokuments
+## <a name="print-a-page-of-a-visio-document"></a>Drucken einer Seite eines Visio-Dokuments
 
 ### <a name="to-print-a-page-of-a-document"></a>So drucken Sie eine Seite eines Dokuments
 
@@ -48,9 +48,9 @@ ms.locfileid: "62955867"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#9)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Visio-Projektmappen](../vsto/visio-solutions.md)
+- [Visio-Lösungen](../vsto/visio-solutions.md)
 - [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
-- [Vorgehensweise: Programmgesteuertes Erstellen Sie Neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Vorgehensweise: Programmgesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Vorgehensweise: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Vorgehensweise: Programmgesteuertes Speichern von Visio-Dokumenten](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Gewusst wie: Programm gesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Gewusst wie: Programm gesteuertes Öffnen von Visio-Dokumenten](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Gewusst wie: Programm gesteuertes schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Gewusst wie: Programm gesteuertes Speichern von Visio-Dokumenten](../vsto/how-to-programmatically-save-visio-documents.md)

@@ -15,19 +15,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7e75b2e295a561e026b437b3c62724536a3ac64e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56c69badf76a05351b37a7c8a41a9cacf54f9974
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671987"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539723"
 ---
-# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden
+# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|AvoidExcessiveParametersOnGenericTypes|
+|TypName|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
 |Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
@@ -35,8 +35,8 @@ ms.locfileid: "72671987"
 ## <a name="cause"></a>Ursache
  Ein extern sichtbarer generischer Typ weist mehr als zwei Typparameter auf.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen. Es ist in der Regel mit einem Typparameter offensichtlich, wie in `List<T>`, und in bestimmten Fällen mit zwei Typparametern, wie in `Dictionary<TKey, TValue>`. Wenn mehr als zwei Typparameter vorhanden sind, wird die Schwierigkeit für die meisten Benutzer zu groß (z. b C# . `TooManyTypeParameters<T, K, V>` in oder `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+## <a name="rule-description"></a>Beschreibung der Regel
+ Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen. Es ist in der Regel mit einem Typparameter offensichtlich, wie in `List<T>` , und in bestimmten Fällen mit zwei Typparametern, wie in `Dictionary<TKey, TValue>` . Wenn mehr als zwei Typparameter vorhanden sind, wird die Schwierigkeit für die meisten Benutzer zu groß (z `TooManyTypeParameters<T, K, V>` . b. in c# oder `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf so, dass er nicht mehr als zwei Typparameter verwendet.
@@ -45,19 +45,19 @@ ms.locfileid: "72671987"
  Unterdrücken Sie keine Warnung dieser Regel, es sei denn, der Entwurf erfordert unbedingt mehr als zwei Typparameter. Das Bereitstellen von Generika in einer Syntax, die leicht zu verstehen und zu verwenden ist, reduziert die Zeit, die erforderlich ist, um zu lernen und die Akzeptanz Rate neuer Bibliotheken zu erhöhen.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+ [CA1010: Sammlungen müssen eine generische Schnittstelle implementieren.](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000: Statische Member nicht in generischen Typen deklarieren.](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)
+ [CA1002: Generische Listen nicht verfügbar machen.](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: Generische Typen in Membersignaturen nicht schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA1006: Generische Typen in Membersignaturen nicht schachteln.](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004: Generische Methoden müssen den Typparameter angeben.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA1003: Generische Ereignishandlerinstanzen verwenden.](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Nach Möglichkeit Generics verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Nach Möglichkeit Generics verwenden.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Generics](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

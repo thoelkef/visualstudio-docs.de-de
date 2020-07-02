@@ -29,7 +29,7 @@ ms.locfileid: "85538800"
 |-|-|
 |TypName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|Category|Microsoft. Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -64,7 +64,7 @@ ms.locfileid: "85538800"
 
 ## <a name="class-example"></a>Klassenbeispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
  Das folgende Beispiel zeigt eine Klasse (Verweistyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -78,7 +78,7 @@ ms.locfileid: "85538800"
 
 ## <a name="structure-example"></a>Struktur Beispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
  Das folgende Beispiel zeigt eine Struktur (Werttyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -101,7 +101,7 @@ ms.locfileid: "85538800"
 
  [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

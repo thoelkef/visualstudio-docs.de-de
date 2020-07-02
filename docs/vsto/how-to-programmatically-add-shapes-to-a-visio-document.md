@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Hinzufügen von Shapes zu Visio-Dokumenten'
+title: 'Gewusst wie: Programm gesteuertes Hinzufügen von Shapes zu einem Visio-Dokument'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e172ff57fb784d6ae768dde1e705ef645b3f9a9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adde20bff07b54a7fb5777bd9e03a995b4fbd7df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967519"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538059"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Vorgehensweise: Programmgesteuertes Hinzufügen von Shapes zu Visio-Dokumenten
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Shapes zu einem Visio-Dokument
   Sie können einem Microsoft Office Visio-Dokument Shapes hinzufügen, indem Sie die Master-Shapes aus einer Schablone abrufen und auf der aktiven Seite ablegen.
 
  Weitere Informationen finden Sie in der VBA-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) -Methode, [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) -Eigenschaft und [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) -Methode.
 
-## <a name="add-shapes-to-a-visio-document"></a>Hinzufügen von Shapes zu Visio-Dokumenten
+## <a name="add-shapes-to-a-visio-document"></a>Hinzufügen von Shapes zu einem Visio-Dokument
 
 ### <a name="to-add-shapes-to-a-visio-document"></a>So fügen Sie einem Visio-Dokument Shapes hinzu
 
@@ -37,7 +37,7 @@ ms.locfileid: "62967519"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Visio-Projektmappen](../vsto/visio-solutions.md)
+- [Visio-Lösungen](../vsto/visio-solutions.md)
 - [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
-- [Arbeiten mit Visio-shapes](../vsto/working-with-visio-shapes.md)
-- [Vorgehensweise: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)
+- [Arbeiten mit Visio-Shapes](../vsto/working-with-visio-shapes.md)
+- [Gewusst wie: Programm gesteuertes kopieren und Einfügen von Shapes in ein Visio-Dokument](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene'
+title: 'Gewusst wie: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokument Ebene'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,20 +17,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4de0471dcc94a709156f5dc9fcce57dca8fb82bd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 92148a6f084a4cc04b4587781e750e4fd0df133f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427594"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538332"
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene
-  Sie können XML-Daten in einer Microsoft Office Excel-Arbeitsmappe oder in einem Microsoft Office Word-Dokument speichern, indem Sie einen benutzerdefinierten XML-Abschnitt in einer Anpassung auf Dokumentebene erstellen. Weitere Informationen finden Sie unter [Übersicht über die benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Gewusst wie: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokument Ebene
+  Sie können XML-Daten in einer Microsoft Office Excel-Arbeitsmappe oder in einem Microsoft Office Word-Dokument speichern, indem Sie einen benutzerdefinierten XML-Abschnitt in einer Anpassung auf Dokumentebene erstellen. Weitere Informationen finden Sie unter [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
-> Visual Studio stellt keine Projekte auf Dokumentebene für Microsoft Office PowerPoint bereit. Weitere Informationen zum Hinzufügen eines benutzerdefinierten XML-Abschnitt einer PowerPoint-Präsentation mithilfe eines VSTO-Add-Ins, finden Sie unter [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).
+> Visual Studio stellt keine Projekte auf Dokumentebene für Microsoft Office PowerPoint bereit. Weitere Informationen zum Hinzufügen eines benutzerdefinierten XML-Teils zu einer PowerPoint-Präsentation mithilfe eines VSTO-Add-Ins finden Sie unter Gewusst [wie: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).
 
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>So fügen Sie einer Excel-Arbeitsmappe ein benutzerdefiniertes XML-Element hinzu
 
@@ -58,5 +58,5 @@ ms.locfileid: "63427594"
  Zur Vereinfachung verwendet dieses Beispiel eine XML-Zeichenfolge, die als lokale Variable in der Methode definiert ist. In der Regel sollten Sie den XML-Code aus einer externen Quelle, z. B. einer Datei oder Datenbank, abrufen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Übersicht über benutzerdefinierte XML-Teile](../vsto/custom-xml-parts-overview.md)
-- [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md)
+- [Gewusst wie: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

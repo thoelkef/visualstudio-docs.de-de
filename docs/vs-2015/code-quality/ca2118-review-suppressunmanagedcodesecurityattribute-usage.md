@@ -29,7 +29,7 @@ ms.locfileid: "85538657"
 |-|-|
 |TypName|ReviewSuppressUnmanagedCodeSecurityUsage|
 |CheckId|CA2118|
-|Category|Microsoft.Security|
+|Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

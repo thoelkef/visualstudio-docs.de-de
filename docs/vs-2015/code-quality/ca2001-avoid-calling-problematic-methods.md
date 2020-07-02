@@ -29,7 +29,7 @@ ms.locfileid: "85538579"
 |-|-|
 |TypName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
-|Category|Microsoft.Reliability|
+|Kategorie|Microsoft.Reliability|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -40,7 +40,7 @@ ms.locfileid: "85538579"
 
  Ein Verstoß gegen diese Regel tritt auf, wenn ein Member eine der folgenden Methoden aufruft.
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|GC wird aufgerufen. Collect kann die Anwendungsleistung erheblich beeinträchtigen und ist nur selten erforderlich. Weitere Informationen finden Sie auf der MSDN-Website im Blogbeitrag von [Rico Mariani Performance tidbits](https://docs.microsoft.com/archive/blogs/ricom/when-to-call-gc-collect) .|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|"Thread. Suspend" und "Thread. Resume" wurden aufgrund des unvorhersehbaren Verhaltens als veraltet markiert.  Verwenden Sie andere Klassen im <xref:System.Threading> -Namespace, z <xref:System.Threading.Monitor> . b., <xref:System.Threading.Mutex> und, <xref:System.Threading.Semaphore> um Threads zu synchronisieren oder Ressourcen zu schützen.|

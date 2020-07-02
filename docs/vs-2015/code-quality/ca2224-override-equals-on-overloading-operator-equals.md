@@ -16,77 +16,77 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d35052bb2a1efb1a466ffc67c95c83e5b3a76533
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671877"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538635"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|OverrideEqualsOnOverloadingOperatorEquals|
+|TypName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ implementiert den Gleichheits Operator, überschreibt jedoch <xref:System.Object.Equals%2A?displayProperty=fullName> nicht.
+ Ein öffentlicher Typ implementiert den Gleichheits Operator, überschreibt jedoch nicht <xref:System.Object.Equals%2A?displayProperty=fullName> .
 
-## <a name="rule-description"></a>Regelbeschreibung
- Der Gleichheits Operator soll eine syntaktisch bequeme Methode für den Zugriff auf die Funktionen der <xref:System.Object.Equals%2A> Methode sein. Wenn Sie den Gleichheits Operator implementieren, muss die zugehörige Logik mit der von <xref:System.Object.Equals%2A> identisch sein.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Der Gleichheits Operator soll eine syntaktisch bequeme Methode für den Zugriff auf die Funktionen der <xref:System.Object.Equals%2A> Methode sein. Wenn Sie den Gleichheits Operator implementieren, muss die zugehörige Logik mit der von identisch sein <xref:System.Object.Equals%2A> .
 
- Der C# Compiler gibt eine Warnung aus, wenn Ihr Code gegen diese Regel verstößt.
+ Der c#-Compiler gibt eine Warnung aus, wenn Ihr Code gegen diese Regel verstößt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, sollten Sie entweder die Implementierung des Gleichheits Operators entfernen oder <xref:System.Object.Equals%2A> überschreiben und festlegen, dass die beiden Methoden dieselben Werte zurückgeben. Wenn der Gleichheits Operator kein inkonsistentes Verhalten einführt, können Sie die Verletzung beheben, indem Sie eine Implementierung von <xref:System.Object.Equals%2A> bereitstellen, die die <xref:System.Object.Equals%2A>-Methode in der Basisklasse aufruft.
+ Um einen Verstoß gegen diese Regel zu beheben, sollten Sie entweder die Implementierung des Gleichheits Operators entfernen oder überschreiben und festlegen, dass <xref:System.Object.Equals%2A> die beiden Methoden dieselben Werte zurückgeben. Wenn der Gleichheits Operator kein inkonsistentes Verhalten einführt, können Sie die Verletzung beheben, indem Sie eine Implementierung von bereitstellen <xref:System.Object.Equals%2A> , die die- <xref:System.Object.Equals%2A> Methode in der Basisklasse aufruft.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Gleichheits Operator denselben Wert zurückgibt wie die geerbte Implementierung <xref:System.Object.Equals%2A>. Der Beispiel Abschnitt enthält einen Typ, der eine Warnung aus dieser Regel sicher unterdrücken könnte.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Gleichheits Operator denselben Wert zurückgibt wie die geerbte Implementierung von <xref:System.Object.Equals%2A> . Der Beispiel Abschnitt enthält einen Typ, der eine Warnung aus dieser Regel sicher unterdrücken könnte.
 
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Beispiele für inkonsistente Gleichheits Definitionen
 
 ### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt einen Typ mit inkonsistenten Definitionen der Gleichheit. `BadPoint` ändert die Bedeutung von Gleichheit durch Bereitstellen einer benutzerdefinierten Implementierung des Gleichheits Operators, überschreibt <xref:System.Object.Equals%2A> jedoch nicht, sodass Sie identisch verhält.
+ Das folgende Beispiel zeigt einen Typ mit inkonsistenten Definitionen der Gleichheit. `BadPoint`ändert die Bedeutung von Gleichheit durch Bereitstellen einer benutzerdefinierten Implementierung des Gleichheits Operators, jedoch nicht, <xref:System.Object.Equals%2A> sodass Sie identisch verhält.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Der folgende Code testet das Verhalten von `BadPoint`.
+ Der folgende Code testet das Verhalten von `BadPoint` .
 
  [!code-csharp[FxCop.Usage.TestOperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestOperatorEqualsRequiresEquals/cs/FxCop.Usage.TestOperatorEqualsRequiresEquals.cs#1)]
 
  Folgende Ergebnisse werden zurückgegeben:
 
  **a = ([0] 1, 1) und b = ([1] 2, 2) sind gleich? Nein** 
-**a = = b? Nein** 
-**a1 und ein sind gleich? Ja** 
-**a1 = = a? Ja** 
-**b und bcopy sind gleich? Nein** 
-**b = = bcopy? Ja**
+ **= = b? ** 
+ **A1 und a sind gleich? Ja** 
+ **a1 = = a? Ja** 
+ **b und bcopy sind gleich? Nein** 
+ **b = = bcopy? Ja**
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel wird ein Typ gezeigt, der technisch gegen diese Regel verstößt, sich aber nicht auf inkonsistente Weise verhält.
 
  [!code-csharp[FxCop.Usage.ValueTypeEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ValueTypeEquals/cs/FxCop.Usage.ValueTypeEquals.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Der folgende Code testet das Verhalten von `GoodPoint`.
+ Der folgende Code testet das Verhalten von `GoodPoint` .
 
  [!code-csharp[FxCop.Usage.TestValueTypeEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestValueTypeEquals/cs/FxCop.Usage.TestValueTypeEquals.cs#1)]
 
  Folgende Ergebnisse werden zurückgegeben:
 
  **a = (1, 1) und b = (2, 2) sind gleich? Nein** 
-**a = = b? Nein** 
-**a1 und ein sind gleich? Ja** 
-**a1 = = a? Ja** 
-**b und bcopy sind gleich? Ja** 
-**b = = bcopy? Ja**
-## <a name="class-example"></a>Klassen Beispiel
+ **= = b? ** 
+ **A1 und a sind gleich? Ja** 
+ **a1 = = a? Ja** 
+ **b und bcopy sind gleich? Ja** 
+ **b = = bcopy? Ja**
+## <a name="class-example"></a>Klassenbeispiel
 
 ### <a name="description"></a>Beschreibung
  Das folgende Beispiel zeigt eine Klasse (Verweistyp), die gegen diese Regel verstößt.
@@ -95,7 +95,7 @@ ms.locfileid: "72671877"
  [!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsClassViolation/cs/FxCop.Usage.OverrideEqualsClassViolation.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird die Verletzung durch Überschreiben von <xref:System.Object.Equals%2A?displayProperty=fullName> korrigiert.
+ Im folgenden Beispiel wird die Verletzung durch Überschreiben behoben <xref:System.Object.Equals%2A?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Usage.OverrideEqualsClassFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsClassFixed/cs/FxCop.Usage.OverrideEqualsClassFixed.cs#1)]
 
@@ -108,17 +108,17 @@ ms.locfileid: "72671877"
  [!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructViolation/cs/FxCop.Usage.OverrideEqualsStructViolation.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird die Verletzung durch Überschreiben von <xref:System.ValueType.Equals%2A?displayProperty=fullName> korrigiert.
+ Im folgenden Beispiel wird die Verletzung durch Überschreiben behoben <xref:System.ValueType.Equals%2A?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructFixed/cs/FxCop.Usage.OverrideEqualsStructFixed.cs#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: Gleichheitsoperator für Referenztypen nicht überladen.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Operatorüberladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Operatorüberladungen weisen benannte Alternativen auf.](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2218: GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: GetHashCode beim Überschreiben von Equals überschreiben.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
