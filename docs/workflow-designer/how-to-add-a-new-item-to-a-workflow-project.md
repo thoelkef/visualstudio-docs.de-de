@@ -1,19 +1,19 @@
 ---
 title: 'Workflow-Designer: ein neues Element zum Workflow Projekt hinzufügen'
 ms.date: 06/25/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7bedc36af2e8fbe19fbb3cc85d82be09d8673de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593953"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814615"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Gewusst wie: Hinzufügen eines neuen Elements zu einem Workflow Projekt
 
@@ -21,16 +21,16 @@ Nachdem Sie ein Workflow Projekt erstellt haben, können Sie dem Projekt Workflo
 
 In der folgenden Tabelle sind die Windows Workflow Foundation (WF)-Elemente aufgelistet, die Sie einem Workflow Projekt hinzufügen können:
 
-| -Name | Beschreibung |
+| name | BESCHREIBUNG |
 |-| - |
-| Activity | Eine Aktivität, die aus anderen Aktivitäten besteht. Wenn Sie dieses Element auswählen, wird dem Projekt die gleiche XAML-Datei hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Bibliothek** für ein neues Projekt. Weitere Informationen zu diesem Verfahren finden Sie unter [Erstellen eines Workflow Projekts](creating-a-workflow-project.md). |
+| Aktivität | Eine Aktivität, die aus anderen Aktivitäten besteht. Wenn Sie dieses Element auswählen, wird dem Projekt die gleiche XAML-Datei hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Bibliothek** für ein neues Projekt. Weitere Informationen zu diesem Verfahren finden Sie unter [Erstellen eines Workflow Projekts](creating-a-workflow-project.md). |
 | Aktivitätsdesigner | Ein Designer, mit dem die Behandlung einer Aktivität zur Entwurfszeit angepasst wird. Durch die Auswahl dieses Elements werden dem Projekt die gleichen Dateien hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Designer Bibliothek** für ein neues Projekt. |
 | Codeaktivität | Eine Aktivität mit in Code geschriebener Ausführungslogik. Eine Quellcodedatei mit einer Überschreibung der <xref:System.Activities.CodeActivity.Execute%2A>-Methode wird bereits für Sie generiert. |
 | WCF-Workflowdienst | Ein [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)]-Dienst, der mithilfe von Workflowaktivitäten erstellt wurde. Durch die Auswahl dieses Elements werden dem Projekt die gleichen Dateien hinzugefügt wie beim Auswählen der Vorlage **WCF-Workflow Dienst Anwendung** für ein neues Projekt. Weitere Informationen zu diesem Verfahren finden Sie unter Gewusst [wie: Erstellen einer WCF-Workflow Dienst Anwendung](creating-a-workflow-project.md). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>So fügen Sie ein neues Element zu einem Workflowprojekt hinzu
 
-1. Wählen Sie im Menü **Projekt** die Option **Neues Element hinzufügen** aus.
+1. Wählen Sie im Menü **Projekt** den Eintrag **Neues Element hinzufügen** aus.
 
    Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -43,6 +43,6 @@ In der folgenden Tabelle sind die Windows Workflow Foundation (WF)-Elemente aufg
 
 1. Wählen Sie **Hinzufügen** aus, um das Element dem Projekt hinzuzufügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen eines Workflow Projekts](../workflow-designer/creating-a-workflow-project.md)

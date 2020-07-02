@@ -15,24 +15,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: a3fc631a2a99dd6090893393ee20ecec23945713
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382665"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814927"
 ---
 # <a name="performance-warnings"></a>Leistungswarnungen
 Leistungs Warnungen unterstützen Hochleistungs Bibliotheken und-Anwendungen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-| Regel | BESCHREIBUNG |
+| Regel | Beschreibung |
 | - | - |
 | [CA1800: Keine unnötigen Umwandlungen.](../code-quality/ca1800.md) | Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. |
 | [CA1801: Nicht verwendete Parameter überprüfen.](../code-quality/ca1801.md) | Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. |
 | [CA1802: Nach Möglichkeit Literale verwenden.](../code-quality/ca1802.md) | Ein Feld wird als statisch und schreibgeschützt deklariert (Shared und Read only in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) und wird mit einem Wert initialisiert, der zur Kompilierzeit berechnet werden kann. Da der Wert, der dem Zielfeld zugewiesen ist, zur Kompilierzeit komprimiert werden kann, ändern Sie die Deklaration in ein Konstantenfeld (Konstanten in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ), sodass der Wert zur Kompilierzeit anstelle der Laufzeit berechnet wird. |
 | [CA1804: Nicht verwendete lokale Variablen entfernen.](../code-quality/ca1804.md) | Nicht verwendete lokale Variablen und unnötige Zuweisungen vergrößern die Assembly unnötig und beeinträchtigen die Leistung. |
+| [CA1805: nicht unnötig initialisieren](../code-quality/ca1805.md) | Die .NET-Laufzeit initialisiert alle Felder von Verweis Typen mit ihren Standardwerten, bevor der Konstruktor ausgeführt wird. In den meisten Fällen ist das explizite Initialisieren eines Felds auf seinen Standardwert redundant, wodurch Wartungskosten erhöht und die Leistung beeinträchtigt werden kann (z. b. mit erhöhter assemblygröße). |
 | [CA1806: Methodenergebnisse nicht ignorieren.](../code-quality/ca1806.md) | Ein neues-Objekt wird erstellt, aber nie verwendet, oder eine Methode, die eine neue Zeichenfolge erstellt und zurückgibt, wird aufgerufen, und die neue Zeichenfolge wird nie verwendet, oder eine Component Object Model (com)-oder P/aufrufen-Methode gibt ein HRESULT oder einen Fehlercode zurück, das nie verwendet wird. |
 | [CA1809: Übermäßige lokale Variablen vermeiden.](../code-quality/ca1809.md) | Zur Leistungsoptimierung wird ein Wert häufig in einem Prozessorregister statt im Speicher gespeichert. Dieser Vorgang wird als Registrierung des Werts bezeichnet.  Um die Wahrscheinlichkeit zu erhöhen, dass alle lokalen Variablen registriert werden, müssen Sie die Anzahl der lokalen Variablen auf 64 beschränken. |
 | [CA1810: Statische Felder von Referenztypen inline initialisieren.](../code-quality/ca1810.md) | Wenn ein Typ einen expliziten statischen Konstruktor deklariert, überprüft der JIT-Compiler (Just in Time) jede statische Methode und jeden Instanzenkonstruktor des Typs. Dadurch wird sichergestellt, dass der statische Konstruktor zuvor aufgerufen wurde. Durch die Überprüfung statischer Konstruktoren kann die Leistung herabgesetzt werden. |

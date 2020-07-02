@@ -3,7 +3,7 @@ title: "\")\" In regulärem Ausdruck erwartet (JavaScript) | Microsoft-Dokumenta
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5020
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c10449df9ef3331949695b7423da3eb08b65433
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: af32127476c83100c0340021428e3abc572ef2f7
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72577540"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815641"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Im regulären Ausdruck wurde ')' erwartet (JavaScript)
 Sie haben versucht, eine Erfassung, eine Assertion oder eine Gruppe für reguläre Ausdrücke zu erstellen, jedoch nicht die schließende Klammer. In regulären Ausdrücken haben Klammern mehrere Zwecke. Hauptsächlich werden Sie verwendet, um unter Ausdrücke zu erfassen, Assertionen anzugeben oder Muster zu gruppieren, sodass die Elemente als einzelne Einheit durch *, +,? usw. behandelt werden können.  
@@ -29,8 +29,8 @@ Sie haben versucht, eine Erfassung, eine Assertion oder eine Gruppe für regulä
 - Fügen Sie die schließenden ganz rechts Klammern hinzu.  
   
     > [!NOTE]
-    > Wenn eine einzelne Klammer abgeglichen werden soll, versehen Sie Sie mit einem umgekehrten Schrägstrich \\(), damit Sie von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]nicht als Sonderzeichen interpretiert wird.  
+    > Wenn eine einzelne Klammer abgeglichen werden soll, versehen Sie Sie mit einem umgekehrten Schrägstrich \\ (), sodass Sie nicht als Sonderzeichen von interpretiert wird [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>Siehe auch  
- [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Reguläres Ausdrucks Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

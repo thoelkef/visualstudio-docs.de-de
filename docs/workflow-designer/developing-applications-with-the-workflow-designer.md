@@ -1,7 +1,7 @@
 ---
 title: Entwickeln von Anwendungen mit dem Workflow-Designer
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -16,32 +16,32 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300948"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814719"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Entwickeln von Apps mit dem Workflow-Designer
 
-Der Workflow-Designer ist ein visueller Designer und Debugger für die grafische Erstellung und das Debuggen von [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF)-Anwendungen in Visual Studio. Sie können eine zusammengesetzte Workflowanwendung, eine Aktivitätsbibliothek oder einen Windows Communication Foundation (WCF)-Dienst mithilfe von Vorlagen und Aktivitätsdesignern erstellen.
+Der Workflow-Designer ist ein visueller Designer und Debugger für die grafische Erstellung und das Debuggen von [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF)-Anwendungen in Visual Studio. Sie können mithilfe von Vorlagen und Aktivitäts Designern eine zusammengesetzte Workflow Anwendung, Aktivitäts Bibliothek oder einen Windows Communication Foundation (WCF)-Dienst erstellen.
 
 ## <a name="install-windows-workflow-foundation"></a>Installieren von Windows Workflow Foundation
 
-Um Workflow-Projektvorlagen in Visual Studio zu verwenden, installieren Sie zunächst die **Windows Workflow Foundation-Komponente.**
+Wenn Sie Workflow Projektvorlagen in Visual Studio verwenden möchten, installieren Sie zunächst die **Windows Workflow Foundation** Komponente.
 
-1. Öffnen Sie Visual Studio Installer. Eine schnelle Möglichkeit, es zu öffnen, ist durch die Auswahl **Tools** > **Abrufen von Tools und Features** in Visual Studio.
+1. Öffnen Sie Visual Studio-Installer. Eine schnelle Möglichkeit, Sie zu öffnen, besteht darin, **Tools**  >  **und Features** von Visual Studio in Visual Studio zu öffnen.
 
-1. Wählen Sie in Visual Studio Installer die Registerkarte **Einzelne Komponenten** aus.
+1. Wählen Sie in Visual Studio-Installer die Registerkarte **einzelne Komponenten** aus.
 
-1. Scrollen Sie nach unten zur Kategorie **Entwicklungsaktivitäten,** und wählen Sie dann die **Windows Workflow Foundation-Komponente** aus.
+1. Scrollen Sie nach unten zur Kategorie **Entwicklungsaktivitäten** , und wählen Sie dann die **Windows Workflow Foundation** Komponente aus.
 
-   ![Windows Workflow Foundation-Komponente für Visual Studio](media/windows-workflow-foundation-component.png)
+   ![Windows Workflow Foundation Komponente für Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Wählen Sie **Ändern** aus.
 
-   Visual Studio installiert die **Windows Workflow Foundation-Komponente.**
+   Visual Studio installiert die **Windows Workflow Foundation** Komponente.
 
 ## <a name="see-also"></a>Weitere Informationen
 
