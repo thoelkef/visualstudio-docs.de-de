@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -29,12 +29,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfed51812b034d63f250a56548b88f09a98214fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590409"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771049"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Erstellen und Konfigurieren von Typmembern im Klassen-Designer
 
@@ -98,7 +98,7 @@ Sie können einen Member mit einem der folgenden Tools erstellen:
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Fenster **Klassendetails** angezeigt.
 
-2. Klicken Sie auf der Symbolleiste des Fensters **Klassendetails** auf das obere Symbol, und wählen Sie **Neuer \<Member>** aus der Dropdownliste aus.
+2. Klicken Sie auf der Symbolleiste des Fensters **Klassendetails** auf das obere Symbol, und wählen Sie **Neuer \<member>** aus der Dropdownliste aus.
 
      Der Cursor wird in das Feld **Name** in einer Zeile für die gewünschte Art von Member verschoben. Wenn Sie z.B. auf **Neue Eigenschaft** klicken, wird der Cursor in eine neue Zeile im Abschnitt **Eigenschaften** des Fensters **Klassendetails** verschoben.
 
@@ -114,7 +114,7 @@ Sie können einen Member mit einem der folgenden Tools erstellen:
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Fenster **Klassendetails** angezeigt.
 
-2. Klicken Sie im Fenster **Klassendetails** in dem Abschnitt, der die Art von Member enthält, die hinzugefügt werden soll, auf **\<Member hinzufügen>** . Wenn Sie z.B. ein Feld hinzufügen möchten, klicken Sie auf **\<Feld hinzufügen>** .
+2. Klicken Sie im Fenster **Klassendetails** in dem Abschnitt, der die Art von Member enthält, die hinzugefügt werden soll, auf **\<add member>** . Wenn Sie z. B. ein Feld hinzufügen möchten, klicken Sie auf **\<add field>** .
 
 3. Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE.
 
@@ -153,9 +153,9 @@ In jeder Memberzeile werden die folgenden Elemente angezeigt:
 
      Ändern Sie den Sichtbarkeitsmodifizierer eines Members in `Public` (`public`), `Private` (`private`), `Friend` (`internal`), `Protected` (`protected`), `Protected Friend` (`protected internal`) oder `Default`.
 
-- **\<Member hinzufügen>**
+- **\<add member>**
 
-     Die letzte Zeile des Fensters **Klassendetails** enthält in der Zelle **Name** den Text **\<Member hinzufügen>**. Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
+     Die letzte Zeile des Fensters **Klassendetails** enthält in der Zelle **Name** den Text **\<add member>** . Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
 
 - **Membereigenschaften im Eigenschaftenfenster**
 
@@ -204,9 +204,9 @@ Parameterzeilen enthalten die folgenden Elemente:
 
      In der Zelle **Zusammenfassung** in einer Parameterzeile können Sie Codekommentare eingeben, die in IntelliSense angezeigt werden, wenn Sie den Parameter in den Code-Editor eingeben.
 
-- **\<Parameter hinzufügen>**
+- **\<add parameter>**
 
-     Die letzte Parameterzeile eines Members enthält im Feld **Name** den Text **<Parameter hinzufügen\>**. Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Die letzte Parameterzeile eines Members enthält im Feld **Name** den Text **<Parameter hinzufügen\>** . Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeigt wie im Fenster **Klassendetails**: **Name**, **Typ**, **Modifizierer**, **Zusammenfassung** sowie die Eigenschaft **Optional Default** (Optionaler Standard). Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.
 
@@ -224,9 +224,9 @@ Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeig
 
 2. Erweitern Sie im Fenster **Klassendetails** die Zeile der Methode, der Sie einen Parameter hinzufügen möchten.
 
-     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
+     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<add parameter>** enthält.
 
-3. Klicken Sie auf **\<Parameter hinzufügen>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<add parameter>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird der Methode und dem Code der Methode hinzugefügt. Er wird im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 
@@ -240,9 +240,9 @@ Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeig
 
 2. Erweitern Sie im Fenster **Klassendetails** die Zeile der Methode, der Sie einen optionalen Parameter hinzufügen möchten.
 
-     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
+     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<add parameter>** enthält.
 
-3. Klicken Sie auf **\<Parameter hinzufügen>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<add parameter>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird der Methode und dem Code der Methode hinzugefügt. Er wird im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 

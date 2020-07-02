@@ -1,19 +1,19 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cde4f3a41a1a07f982f85c0c19e9f16b047068
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593927"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815824"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox
 
@@ -25,7 +25,7 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 2. Fügen Sie der Aktivität benutzerdefinierte Logik hinzu.
 
-3. Erstellen Sie das Projekt. Wenn der Buildvorgang erfolgreich war, wird eine neue Kategorie in der **Toolbox** namens "\<*Project Name*>" mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
+3. Erstellen Sie das Projekt. Wenn der Buildvorgang erfolgreich war, wird eine neue Kategorie mit dem Namen "" in der **Toolbox** \<*project name*> mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
 
     > [!NOTE]
     > Wenn die Toolbox zurückgesetzt wird, werden benutzerdefinierte Aktivitäten entfernt. Dies gilt auch, wenn die Projektmappe erneut erstellt wird. Zum erneuten Auffüllen der Toolbox mit benutzerdefinierten Aktivitäten nach dem Zurücksetzen starten Sie Visual Studio neu.
@@ -40,7 +40,7 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 1. Öffnen Sie eine Projektmappe, die mindestens ein Workflowprojekt und entweder ein benutzerdefiniertes Aktivitätsbibliotheksprojekt oder ein anderes Workflowprojekt enthält, in dem eine benutzerdefinierte Aktivität definiert wird.
 
-2. Erstellen Sie beide Projekte. Wenn die Builds erfolgreich waren, wird eine neue Kategorie in der **Toolbox** namens "\<*Project Name*>" mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
+2. Erstellen Sie beide Projekte. Wenn die Builds erfolgreich waren, wird eine neue Kategorie mit dem Namen "" in der **Toolbox** \<*project name*> mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>So fügen Sie eine Aktivität aus einer Assembly der Toolbox hinzu
 
@@ -52,12 +52,12 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 4. Wählen Sie die Assembly aus, und klicken Sie auf **OK**. Die benutzerdefinierte Aktivitätskomponente wird der Liste der Komponenten hinzugefügt und automatisch ausgewählt.
 
-    1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+    1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 5. Um die Toolbox anzuzeigen, wählen Sie im Menü **Ansicht** die Option **Toolbox** aus.
 
 6. Die benutzerdefinierte Aktivität wird in der **Toolbox** unter der Kategorie angezeigt, die sich vor dem Hinzufügen des Elements im Fokus befand. Wenn z. b. die Kategorie **Allgemein** in der **Toolbox** vor dem Hinzufügen des Toolbox Elements ausgewählt wurde, wird die Aktivität unter der Kategorie **Allgemein** angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)

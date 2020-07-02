@@ -3,7 +3,7 @@ title: Die Genauigkeit liegt außerhalb des gültigen Bereichs. | Microsoft-Doku
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5027
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364794472cbf17643cebbd926cd3fda6e93be1f9
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: aea1e999928d9d3f9bc8bdfe8c6a0a88ce8b2c84
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72577283"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814784"
 ---
 # <a name="the-precision-is-out-of-range"></a>Die Genauigkeit liegt außerhalb des gültigen Bereichs.
 Sie haben versucht, ein ungültiges Argument an die Funktions **Nummer. Prototype. toPrecision**zu übergeben. Das Argument für **toPrecision** muss zwischen 1 und 21 (einschließlich) liegen.  
@@ -28,5 +28,5 @@ Sie haben versucht, ein ungültiges Argument an die Funktions **Nummer. Prototyp
   
 - Stellen Sie sicher, dass das Argument für `toPrecision` nicht zu groß oder zu klein ist.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [toPrecision-Methode (Zahl)](../../javascript/reference/toprecision-method-number-javascript.md)

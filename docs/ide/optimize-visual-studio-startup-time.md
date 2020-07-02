@@ -1,7 +1,7 @@
 ---
 title: Verbessern der Uptime
 ms.date: 11/15/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306836"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770970"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 
@@ -35,7 +35,7 @@ Wenn Visual Studio einen langsamen Start erkennt, wird eine Popupmeldung angezei
 
 Im Dialogfeld werden die Erweiterungen und Toolfenster aufgelistet, die sich auf die Startleistung auswirken. Sie können die Einstellungen für Erweiterungen und Toolfenster ändern, um die Leistung beim Start zu verbessern.
 
-## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Ändern der Erweiterungseinstellungen zum Verbessern der Leistung des Startens, des Ladens von Projekten und der Eingabe
+## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Ändern der Erweiterungseinstellungen zum Verbessern der Leistung des Startens, des Ladens von Projekten und der Eingabe
 
 1. Öffnen Sie das Dialogfeld **Visual Studio-Leistung verwalten**, indem Sie in der Menüleiste auf **Hilfe** > **Visual Studio-Leistung verwalten** klicken.
 
@@ -47,7 +47,7 @@ Im Dialogfeld werden die Erweiterungen und Toolfenster aufgelistet, die sich auf
 
 Sie können die Erweiterung jederzeit über den **Erweiterungs-Manager** oder das Dialogfeld **Visual Studio-Leistung verwalten** für zukünftige Sitzungen wieder aktivieren.
 
-## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Ändern der Einstellungen für Toolfenster zum Verbessern der Startzeit
+## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Ändern der Einstellungen für Toolfenster zum Verbessern der Startzeit
 
 1. Öffnen Sie das Dialogfeld **Visual Studio-Leistung verwalten**, indem Sie in der Menüleiste auf **Hilfe** > **Visual Studio-Leistung verwalten** klicken.
 

@@ -3,7 +3,7 @@ title: Übersicht für C#-Entwickler
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306842"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771119"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Willkommen in der Visual Studio-IDE | C\#
 
@@ -48,7 +48,7 @@ Informationen zu weiteren Features von Visual Studio finden Sie in den folgenden
 > [!div class="nextstepaction"]
 > [Erfahren Sie mehr über Projekte und Projektmappen](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - Entdecken Sie [weitere Visual Studio-Features](../../ide/advanced-feature-overview.md).
 - Besuche Sie [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
