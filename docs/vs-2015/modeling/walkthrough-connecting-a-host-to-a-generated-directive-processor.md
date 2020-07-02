@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 17ec8199e99e76d5995e49570c82ad8523505ebe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915990"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532963"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,20 +31,20 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
  Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
 
-- Mithilfe [!INCLUDE[dsl](../includes/dsl-md.md)] können Sie einen Direktivenprozessor generieren, der auf einem Domänen Modell basiert.
+- Mithilfe [!INCLUDE[dsl](../includes/dsl-md.md)] von können Sie einen Direktivenprozessor generieren, der auf einem Domänen Modell basiert.
 
 - Verbinden eines benutzerdefinierten Textvorlagen Hosts mit dem generierten Direktivenprozessor.
 
 - Testen des benutzerdefinierten Hosts mit dem generierten Direktivenprozessor.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
-|||
+|Produkt|Downloadlink|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
-|Visual Studio-Visualisierungs- und Modellierungs-SDK|[Modellierungs-SDK-Download](https://www.microsoft.com/download/details.aspx?id=48148)|
+|Visual Studio Visualization and Modeling SDK|[Modellierungs-SDK-Download](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  Außerdem muss die Transformation für benutzerdefinierte Textvorlagen in Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Textvorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)erstellt werden.
 
@@ -72,13 +72,13 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 3. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 
-    Eine zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet.
+    Eine zweite Instanz von wird [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geöffnet.
 
 4. Doppelklicken Sie im experimentellen Build in **Projektmappen-Explorer**auf die Datei **Sample. min**.
 
     Die Datei wird im Designer geöffnet. Beachten Sie, dass das Modell zwei Elemente, ExampleElement1 und ExampleElement2, und einen Link zwischen Ihnen enthält.
 
-5. Schließen Sie die zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. Schließen Sie die zweite Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 6. Speichern Sie die Projekt Mappe, und schließen Sie dann den domänenspezifischen sprach Designer.
 
@@ -95,17 +95,17 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 3. Fügen Sie die folgenden Verweise hinzu:
 
-    - Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. 11.0
 
-    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. Diagramms. 11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft. VisualStudio. TextTemplating. vshost. 11.0
 
 4. Fügen Sie am Anfang von Program.cs oder Module1. vb die folgende Codezeile hinzu:
 
@@ -117,7 +117,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
     Imports Microsoft.Win32
     ```
 
-5. Suchen Sie den Code für die Eigenschaft `StandardAssemblyReferences`, und ersetzen Sie ihn durch den folgenden Code:
+5. Suchen Sie den Code für die `StandardAssemblyReferences` -Eigenschaft, und ersetzen Sie ihn durch den folgenden Code:
 
     > [!NOTE]
     > In diesem Schritt fügen Sie Verweise auf die Assemblys hinzu, die vom generierten Direktivenprozessor benötigt werden, der vom Host unterstützt wird.
@@ -153,7 +153,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
     }
     ```
 
-6. Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor`, und ersetzen Sie ihn durch den folgenden Code:
+6. Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor` , und ersetzen Sie ihn durch den folgenden Code:
 
     > [!IMPORTANT]
     > Dieser Code enthält hart codierte Verweise auf den Namen des generierten direktivenprozessors, mit dem Sie eine Verbindung herstellen möchten. Dies kann auf einfache Weise allgemeineres sein. in diesem Fall sucht es nach allen in der Registrierung aufgelisteten direktivenprozessoren und versucht, eine Entsprechung zu finden. In diesem Fall würde der Host mit einem beliebigen generierten Direktivenprozessor funktionieren.
@@ -236,7 +236,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>So erstellen Sie eine Textvorlage zum Testen des benutzerdefinierten Hosts
 
-1. Erstellen Sie eine Textdatei, und benennen Sie Sie `TestTemplateWithDP.tt`. Sie können einen beliebigen Text-Editor, z. b. Notepad, verwenden, um die Datei zu erstellen.
+1. Erstellen Sie eine Textdatei, und benennen Sie Sie `TestTemplateWithDP.tt` . Sie können einen beliebigen Text-Editor, z. b. Notepad, verwenden, um die Datei zu erstellen.
 
 2. Fügen Sie folgenden Text in der Textdatei ein:
 
@@ -310,7 +310,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
     #>
     ```
 
-3. Ersetzen Sie im Code \<Pfad > durch den Pfad der Datei Sample. Min aus der Entwurfs spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
+3. Ersetzen Sie im Code \<YOUR PATH> durch den Pfad der Datei Sample. Min aus der Entwurfs spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
 
 4. Speichern und schließen Sie die Datei.
 
@@ -320,29 +320,29 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 2. Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.
 
-     Geben Sie z. B. Folgendes ein:
+     Beispiel:
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Anstatt die Adresse einzugeben, können Sie in **Windows-Explorer**zur Datei "customhost. exe" navigieren und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
+    > Anstatt die Adresse einzugeben, können Sie in **Windows-Explorer**zu der Datei CustomHost.exe navigieren und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
 
 3. Geben Sie ein Leerzeichen ein.
 
 4. Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.
 
-     Geben Sie z. B. Folgendes ein:
+     Beispiel:
 
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > Anstatt die Adresse einzugeben, können Sie die Datei "testtemplatewithdp. txt" im **Windows-Explorer**suchen und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
+    > Anstatt die Adresse einzugeben, können Sie in **Windows-Explorer**zu der Datei TestTemplateWithDP.txt navigieren und die Datei dann in das Eingabe Aufforderungs Fenster ziehen.
 
      Die Anwendung für benutzerdefinierte Hosts wird ausgeführt, und der Textvorlagen-Transformationsprozess wird gestartet.
 
-5. Navigieren Sie in **Windows-Explorer**zu dem Ordner, der die Datei "testtemplatewithdp. txt" enthält.
+5. Navigieren Sie in **Windows-Explorer**zu dem Ordner, der die Datei TestTemplateWithDP.txt enthält.
 
-     Der Ordner enthält auch die Datei "TestTemplateWithDP1. txt".
+     Der Ordner enthält auch die Datei TestTemplateWithDP1.txt.
 
 6. Öffnen Sie diese Datei, um die Ergebnisse der Textvorlagentransformation anzuzeigen.
 
@@ -358,5 +358,5 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)

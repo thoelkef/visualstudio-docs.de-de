@@ -1,30 +1,30 @@
 ---
 title: 'Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747554"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532610"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
-Sie können Projekte, die domänenspezifische Sprache definieren und verwenden, [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] aus der Version von [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] migrieren, die mit [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] verteilt wurde.
+Sie können Projekte, die domänenspezifische Sprache definieren und verwenden, [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] von der Version von migrieren, die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] mit verteilt wurde [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
 
- Ein Migrationstool wird als Teil [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] bereitgestellt. Das Tool konvertiert Visual Studio-Projekte und-Projektmappen, die DSL-Tools verwenden oder definieren.
+ Ein Migrationstool wird als Teil von bereitgestellt [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] . Das Tool konvertiert Visual Studio-Projekte und-Projektmappen, die DSL-Tools verwenden oder definieren.
 
  Das Migrationstool muss explizit ausgeführt werden: Es wird nicht automatisch gestartet, wenn Sie eine Projekt Mappe in Visual Studio öffnen. Das Tool und das ausführliche Leit Faden Dokument finden Sie unter diesem Pfad:
 
- **%Programme%\Microsoft Visual Studio 2010 sdk\visualstudiointegration\tools\dsltools\dslprojectionmigrationtool.exe**
+ **%Programme%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Vor dem Migrieren Ihrer DSL-Projekte
- Das Migrationstool ändert Visual Studio-Projektdateien ( **. csproj**) und Projektmappendateien ( **. sln**).
+ Das Migrationstool ändert Visual Studio-Projektdateien (**. csproj**) und Projektmappendateien (**. sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>So bereiten Sie Projekte für die Migration vor
 
@@ -40,7 +40,7 @@ Sie können Projekte, die domänenspezifische Sprache definieren und verwenden, 
 
    - Sie können auf das Tool im Windows-Explorer (oder Datei-Explorer) doppelklicken oder das Tool an einer Eingabeaufforderung starten. Das Tool befindet sich an diesem Speicherort:
 
-        **%ProgramFiles%\Microsoft Visual Studio 2010 sdk\visualstudiointegration\tools\dsltools\dslprojectionmigrationtool.exe**
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 2. Wählen Sie einen Ordner aus, der Projektmappen und Projekte enthält, die Sie konvertieren möchten.
 
@@ -59,9 +59,9 @@ Sie können Projekte, die domänenspezifische Sprache definieren und verwenden, 
 
    1. Klicken Sie auf **konvertieren**.
 
-        Bevor jede Projektdatei konvertiert wird, wird eine Kopie von _Project_ **. csproj** als _Project_ **. VS2008. csproj** gespeichert.
+        Bevor jede Projektdatei konvertiert wird, wird eine Kopie von _Project_**. csproj** als _Project_**. VS2008. csproj** gespeichert.
 
-        Eine Kopie _der einzelnen Projekt_Mappen **. sln** wird als _Solution_ **. VS2008. sln** gespeichert.
+        Eine Kopie _der einzelnen Projekt_Mappen **. sln** wird als _Solution_**. VS2008. sln** gespeichert.
 
    2. Untersuchen Sie alle gemeldeten fehlgeschlagenen Konvertierungen.
 
@@ -69,7 +69,7 @@ Sie können Projekte, die domänenspezifische Sprache definieren und verwenden, 
 
 5. **Transformieren Sie alle Vorlagen** in Projektmappen mit erfolgreich konvertierten Projekten.
 
-   1. Öffnen Sie die Projekt Mappe.
+   1. Öffnen Sie die Projektmappe.
 
    2. Klicken Sie im Header der Projektmappen-Explorer auf die Schaltfläche **alle Vorlagen transformieren** .
 

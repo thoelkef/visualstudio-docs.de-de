@@ -1,18 +1,18 @@
 ---
 title: 'Gewusst wie: Erweitern des DSL-Designers'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605591"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532585"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 
@@ -68,7 +68,7 @@ Erstellen Sie die Projekt Mappe, und führen Sie Sie aus, um eine der Erweiterun
 
 Führen Sie die folgenden Schritte aus, um die Erweiterungen für Visual Studio und andere Computer bereitzustellen:
 
-1. Suchen Sie die VSIX-Installationsdatei in Ihrem VSIX-Projekt in bin \\ * \\ \*. VSIX.
+1. Suchen Sie die VSIX-Installationsdatei in Ihrem VSIX-Projekt in bin \\ * \\ \* . VSIX.
 
 2. Kopieren Sie diese Datei auf den Zielcomputer, und doppelklicken Sie dann im Windows-Explorer (oder Datei-Explorer) auf die Datei.
 
@@ -84,7 +84,7 @@ Um die Erweiterung zu deinstallieren, führen Sie die folgenden Schritte aus:
 
 Damit ein Kontextmenü Befehl auf der DSL-Designer-Oberfläche oder im Fenster DSL-Explorer angezeigt wird, schreiben Sie eine Klasse, die der folgenden ähnelt.
 
-Die Klasse muss `ICommandExtension` implementieren, und das-Attribut muss `DslDefinitionModelCommandExtension` sein.
+Die-Klasse muss implementieren `ICommandExtension` und muss über das-Attribut verfügen `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

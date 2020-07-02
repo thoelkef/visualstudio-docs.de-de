@@ -1,7 +1,7 @@
 ---
 title: Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d6139caa84be5097ececd700c73aa6e231174f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566110"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532404"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
 Wenn Sie zum ersten Mal eine DSL-Tools Projekt Mappe (DSL-Tools) in Visual Studio öffnen, ähnelt die Benutzeroberfläche der folgenden Abbildung.
@@ -28,7 +28,7 @@ Wenn Sie zum ersten Mal eine DSL-Tools Projekt Mappe (DSL-Tools) in Visual Studi
 |**Element**|**Definition**|
 |-|-|
 |Diagramm|Das Diagramm zeigt das Domänenmodell an.<br /><br /> Es hat zwei Seiten: Die eine Seite definiert die Elementtypen in Ihren Modellen. Die andere Seite definiert, wie Ihre Modelle auf dem Bildschirm angezeigt werden.|
-|Toolbox|Ziehen Sie Tools aus der Toolbox, um Domänenklassen hinzuzufügen und um Typen für das Diagramm zu formen. Wenn Sie Beziehungen, Connectors und Formzuordnungen hinzufügen möchten, klicken Sie erst auf das Tool, dann auf den Quellknoten im Diagramm und anschließend auf den Zielknoten.|
+|Werkzeugkasten|Ziehen Sie Tools aus der Toolbox, um Domänenklassen hinzuzufügen und um Typen für das Diagramm zu formen. Wenn Sie Beziehungen, Connectors und Formzuordnungen hinzufügen möchten, klicken Sie erst auf das Tool, dann auf den Quellknoten im Diagramm und anschließend auf den Zielknoten.|
 |DSL-Explorer|Der **DSL-Explorer** wird angezeigt, wenn die DSL-Definition in einem aktiven Fenster angezeigt wird. Er stellt die DSL als Struktur dar. Sie können mithilfe des DSL-Explorers Features des Modells bearbeiten, die nicht in dem Diagramm angezeigt werden. Beispielsweise können Sie Toolboxelemente hinzufügen und den Validierungsprozess mithilfe des **DSL-Explorers** starten.|
 |Das Fenster „DSL-Details“|Im Fenster **DSL-Details** werden Eigenschaften der Elemente des Domänenmodells angezeigt, mit denen Sie die Anzeige, das Löschen und das Kopieren von Elementen steuern können.<br /><br /> Standardmäßig wird das Fenster **DSL-Details** neben den Fenstern **Fehlerliste** und **Ausgabe** angezeigt.|
 
