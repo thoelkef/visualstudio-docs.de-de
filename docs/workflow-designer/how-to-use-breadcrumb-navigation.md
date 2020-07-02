@@ -1,19 +1,19 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Verwenden der Breadcrumb-Navigation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584568"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817462"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Vorgehensweise: Verwenden der Brotkrümelnavigation
 
@@ -47,7 +47,7 @@ Es gibt drei Hauptmöglichkeiten, den Satz von Aktivitäten zu ändern, die in W
 2. Nachdem Sie den Zustand "Alle erweitern" oder "Alle reduzieren" angewendet haben, können Sie auf die Schaltfläche **Wiederherstellen** klicken, um den zuvor auf die jeweilige Aktivität angewendeten Zustand zurückzusehen.
 
     > [!WARNING]
-    > Wenn eine Aktivität, z. b. <xref:System.Activities.Statements.Flowchart>, nicht mehr direkt erweitert ist, wird die der Schaltfläche **Alle erweitern** und **alle** reduzieren zugeordnete Funktionalität im **Flussdiagramm** -Designer deaktiviert. Weitere Informationen zum **Flussdiagramm** -Designer finden Sie im Abschnitt [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) .
+    > Wenn eine Aktivität, z. b. <xref:System.Activities.Statements.Flowchart> , nicht mehr direkt erweitert ist, wird die der Schaltfläche **Alle erweitern** und **alle** reduzieren zugeordnete Funktionalität im **Flussdiagramm** -Designer deaktiviert. Weitere Informationen zum **Flussdiagramm** -Designer finden Sie im Abschnitt [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > "Alle erweitern" wirkt sich auch auf die **Switch** -und **trycatch** -Aktivitäts Designer aus. Wenn Sie auf **Alle erweitern**klicken, werden alle switchfälle und alle try/catch/schließlich-Blöcke angezeigt. Wenn Sie auf " **Wiederherstellen** **" oder "** reduzieren" klicken, werden diese Designer auf ihren Standardzustand zurückversetzt, in dem Sie auf einen einzelnen Fall/Block klicken können, um den Inhalt

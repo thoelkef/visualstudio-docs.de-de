@@ -3,7 +3,7 @@ title: "\"Continue\" ist außerhalb der Schleife nicht möglich | Microsoft-Doku
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1020
 dev_langs:
@@ -14,19 +14,19 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e19c85baf8576d1c1db411146c80a53c6a819cdb
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: e1223b3cee7f0246d8d685260fb6ea9ad0045347
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572381"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817644"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>"continue" ist außerhalb der Schleife unzulässig
 Sie haben versucht, die **Continue** -Anweisung außerhalb einer-Schleife zu verwenden. Die **Continue** -Anweisung kann nur im Text eines verwendet werden:  
   
-- `do-while` Schleife,  
+- `do-while`ESE  
   
-- `while` Schleife,  
+- `while`ESE  
   
 - **for** -Schleife,  
   
@@ -36,15 +36,15 @@ Sie haben versucht, die **Continue** -Anweisung außerhalb einer-Schleife zu ver
   
 - Stellen Sie sicher, dass die **Continue** -Anweisung innerhalb des Texts eines angezeigt wird:  
   
-  - `do-while` Schleife,  
+  - `do-while`ESE  
 
-  - `while` Schleife,  
+  - `while`ESE  
 
   - **for** -Schleife,  
 
   - **for/in-** Schleife.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)   
  [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
  [Problembehandlung bei Skripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

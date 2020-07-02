@@ -3,7 +3,7 @@ title: Der Array Länge muss eine endliche positive Zahl zugewiesen werden | Mic
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5030
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cff9c8c42199e106cca5f6f2808866e46a26afe2
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 30e02f4f90300e2c05076553419cda5f8c353ab0
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576065"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817683"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Der Arraylänge muss eine endliche positive Ganzzahl zugewiesen sein.
-Beim Festlegen der **length** -Eigenschaft eines vorhandenen **Array** Objekts haben Sie eine Array Länge angegeben, die keine positive Zahl oder 0 (null) war. Dieser Fehler tritt auf, wenn Sie der **length** -Eigenschaft eines `Array` Objekts, das eine negative oder keine Zahl (`NaN`) ist, einen Wert zuweisen. Beachten Sie, dass [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Bruchzahlen automatisch in ganze Zahlen konvertiert.  
+Beim Festlegen der **length** -Eigenschaft eines vorhandenen **Array** Objekts haben Sie eine Array Länge angegeben, die keine positive Zahl oder 0 (null) war. Dieser Fehler tritt auf, wenn Sie der **length** -Eigenschaft eines `Array` Objekts, das negativ oder keine Zahl ist (), einen Wert zuweisen `NaN` . Beachten Sie, dass [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Bruchzahlen von automatisch in ganze Zahlen konvertiert werden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
@@ -33,5 +33,5 @@ Beim Festlegen der **length** -Eigenschaft eines vorhandenen **Array** Objekts h
     my_array.length = 99;  
     ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)

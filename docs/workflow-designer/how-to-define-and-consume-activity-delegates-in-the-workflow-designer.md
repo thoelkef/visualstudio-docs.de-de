@@ -1,23 +1,23 @@
 ---
 title: 'Workflow-Designer: Aktivitäts Delegaten definieren und nutzen'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593901"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817501"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
-.NET Framework 4,5 enthält einen Out-of-Box-Designer für die <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Der Designer kann verwendet werden, um der Aktivität Delegate zuzuweisen, die von <xref:System.Activities.ActivityDelegate>, z. B. <xref:System.Activities.ActivityAction> oder <xref:System.Activities.ActivityFunc%601>, abgeleitet werden.
+.NET Framework 4,5 enthält einen Out-of-Box-Designer für die- <xref:System.Activities.Statements.InvokeDelegate> Aktivität. Der Designer kann verwendet werden, um der Aktivität Delegate zuzuweisen, die von <xref:System.Activities.ActivityDelegate>, z. B. <xref:System.Activities.ActivityAction> oder <xref:System.Activities.ActivityFunc%601>, abgeleitet werden.
 
 ## <a name="define-an-activity-delegate"></a>Definieren eines Aktivitätsdelegaten
 
@@ -26,7 +26,7 @@ ms.locfileid: "75593901"
    > [!NOTE]
    > Wenn die **Workflow** -Projektvorlagen nicht angezeigt werden, installieren Sie zunächst die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie > **Neues Element** **Hinzufügen** aus. Wählen Sie die Kategorie **Workflow** aus, und wählen Sie dann die Vorlage **Aktivitäts** Element aus. Nennen Sie die neue Aktivität **myforeach. XAML** , und wählen Sie dann **OK**aus.
+3. Klicken Sie mit der rechten Maustaste auf das Projekt in **Projektmappen-Explorer** und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wählen Sie die Kategorie **Workflow** aus, und wählen Sie dann die Vorlage **Aktivitäts** Element aus. Nennen Sie die neue Aktivität **myforeach. XAML** , und wählen Sie dann **OK**aus.
 
    Die-Aktivität wird im Workflow-Designer geöffnet.
 
@@ -42,9 +42,9 @@ ms.locfileid: "75593901"
 
 9. Wählen Sie in der Spalte Argumenttyp die Option **nach Typen suchen aus** .
 
-10. Geben Sie im Typbrowser im Feld **Typname den Namen** **ActivityAction** ein. Wählen Sie in der Strukturansicht **ActivityAction\<t >** aus. Wählen Sie in der Dropdown Liste die Option **Objekt** aus, die den Typ **ActivityAction\<Objekt >** dem Argument zuweist.
+10. Geben Sie im Typbrowser im Feld **Typname den Namen** **ActivityAction** ein. Wählen Sie **ActivityAction \<T> ** in der Strukturansicht aus. Wählen Sie in der Dropdown Liste die Option **Objekt** aus, die den Typ **ActivityAction \<Object> ** dem Argument zuweist.
 
-11. Ziehen Sie eine <xref:System.Activities.Statements.While>-Aktivität aus dem Abschnitt **Ablauf Steuerung** der Toolbox auf die Designer Oberfläche.
+11. Ziehen Sie eine- <xref:System.Activities.Statements.While> Aktivität aus dem Abschnitt Ablauf **Steuerung** der Toolbox auf die Designer Oberfläche.
 
 12. Wählen Sie die <xref:System.Activities.Statements.While> Aktivität aus, und klicken Sie auf die Registerkarte **Variablen** .
 
@@ -52,25 +52,25 @@ ms.locfileid: "75593901"
 
 14. Wählen Sie in der Spalte **Variablentyp** die Option **Int32**aus. Belassen Sie den Gültigkeits **Bereich** als **while**, und die **Standard** Spalte ist leer.
 
-15. Legen Sie die **Condition** -Eigenschaft der <xref:System.Activities.Statements.While>-Aktivität auf **Index < Items. length;** fest.
+15. Legen Sie die **Condition** -Eigenschaft der- <xref:System.Activities.Statements.While> Aktivität auf **Index < Items. length;** fest.
 
-16. Ziehen Sie eine <xref:System.Activities.Statements.InvokeDelegate>-Aktivität aus dem Abschnitt **primitive** der Toolbox in den **Text** der Aktivität <xref:System.Activities.Statements.While>.
+16. Ziehen <xref:System.Activities.Statements.InvokeDelegate> Sie eine Aktivität aus dem Abschnitt **primitive** der Toolbox in den **Text** der- <xref:System.Activities.Statements.While> Aktivität.
 
 17. Wählen Sie in der Dropdown-Dropdown-Auflistung **Text** aus.
 
-18. Klicken Sie im **Eigenschaften** Raster für die <xref:System.Activities.Statements.InvokeDelegate>-Aktivität auf die Schaltfläche **...** in der Eigenschaft Delegatargumente.
+18. Klicken Sie im **Eigenschaften** Raster für die- <xref:System.Activities.Statements.InvokeDelegate> Aktivität auf die Schaltfläche **...** in der Eigenschaft Delegatargumente. **Delegate Arguments**
 
 19. Geben Sie in der Spalte **Wert** des Arguments mit dem Namen **Argument**den Wert **Items [index]** ein. Klicken Sie auf **OK** , um das Dialogfeld **delegatearguments** zu schließen.
 
-20. Ziehen Sie eine <xref:System.Activities.Statements.Assign>-Aktivität auf die horizontale Linie unterhalb der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Die <xref:System.Activities.Statements.Assign>-Aktivität wird erstellt, und es wird automatisch eine <xref:System.Activities.Statements.Sequence> Aktivität erstellt, die die beiden Aktivitäten im **Body** -Abschnitt der **myforeach** -Aktivität enthält. Die Sequenz wird benötigt, da der **Text** Abschnitt nur eine einzelne Aktivität enthalten kann. Das automatische Erstellen einer neuen <xref:System.Activities.Statements.Sequence> Aktivität ist ein neues Feature von .NET Framework 4,5.
+20. Ziehen Sie eine <xref:System.Activities.Statements.Assign>-Aktivität auf die horizontale Linie unterhalb der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Die <xref:System.Activities.Statements.Assign> -Aktivität wird erstellt, und <xref:System.Activities.Statements.Sequence> es wird automatisch eine-Aktivität erstellt, die die beiden Aktivitäten im **Body** -Abschnitt der **myforeach** -Aktivität enthält. Die Sequenz wird benötigt, da der **Text** Abschnitt nur eine einzelne Aktivität enthalten kann. Das automatische Erstellen einer neuen <xref:System.Activities.Statements.Sequence> Aktivität ist ein neues Feature von .NET Framework 4,5.
 
-21. Legen Sie die Eigenschaft **auf** des <xref:System.Activities.Statements.Assign> Aktivität auf **Index**fest. Legen Sie die **value** -Eigenschaft der **assign** -Aktivität auf **Index + 1**fest.
+21. Legen Sie die Eigenschaft **to** der <xref:System.Activities.Statements.Assign> Aktivität auf **Index**fest. Legen Sie die **value** -Eigenschaft der **assign** -Aktivität auf **Index + 1**fest.
 
     Die benutzerdefinierte **myforeach** -Aktivität ruft eine beliebige Aktivität einmal für jeden Wert auf, der über die **Items** -Auflistung an Sie übermittelt wird, wobei die Werte in der Auflistung als Eingaben für die Aktivität angegeben werden.
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Verwenden der benutzerdefinierten Aktivität in einem Workflow
 
-1. Erstellen Sie das Projekt, indem Sie **STRG**+**UMSCHALT**+**B**drücken.
+1. Erstellen Sie das Projekt, indem Sie **STRG** + **UMSCHALT** + **B**drücken.
 
 2. Öffnen Sie **Workflow1. XAML** in **Projektmappen-Explorer**im Designer.
 
@@ -78,11 +78,11 @@ ms.locfileid: "75593901"
 
 4. Legen Sie die **Items** -Eigenschaft der **myforeach** -Aktivität auf **New Object [] {1, "ABC"}** fest.
 
-5. Ziehen Sie eine <xref:System.Activities.Statements.WriteLine>-Aktivität aus dem Abschnitt **primitive** der Toolbox in den Abschnitt Delegat **: Body** der **myforeach** -Aktivität.
+5. Ziehen Sie eine- <xref:System.Activities.Statements.WriteLine> Aktivität aus dem Abschnitt **primitive** der Toolbox in den Abschnitt Delegat **: Body** der **myforeach** -Aktivität.
 
-6. Legen Sie die **Text** -Eigenschaft der <xref:System.Activities.Statements.WriteLine>-Aktivität auf " **Argument.-Zeichenfolge ()** " fest.
+6. Legen Sie die **Text** -Eigenschaft der- <xref:System.Activities.Statements.WriteLine> Aktivität auf **Argument.-Zeichenfolge ()** fest.
 
 Beim Ausführen des Workflows wird in der-Konsole die folgende Ausgabe angezeigt:
 
-**1**
-**abc**
+**1** 
+ **ABC**

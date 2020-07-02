@@ -3,7 +3,7 @@ title: Ungültiges Replacer-Argument | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573808"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816825"
 ---
 # <a name="invalid-replacer-argument"></a>Ungültiges replacer-Argument
-Es wurde versucht, `JSON.stringify` mit einem ungültigen Argument aufzurufen. Das `replacer`-Argument muss eine Funktion oder ein Array sein.  
+Es wurde versucht, mit einem ungültigen Argument aufzurufen `JSON.stringify` . Das `replacer` Argument muss eine Funktion oder ein Array sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Ändern Sie das `replacer`-Argument in eine Funktion oder ein Array.  
+- Ändern Sie das- `replacer` Argument in eine Funktion oder ein Array.  
   
 ## <a name="example"></a>Beispiel  
  Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `memberfilter` ein Objekt anstelle einer Funktion oder eines Arrays ist.  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [JSON-Objekt](../../javascript/reference/json-object-javascript.md)   
- [JSON.](../../javascript/reference/json-parse-function-javascript.md) Analyse-Funktion   
+ [JSON. Analyse-Funktion](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript-Laufzeitfehler](../../javascript/reference/javascript-run-time-errors.md)

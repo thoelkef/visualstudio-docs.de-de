@@ -1,9 +1,9 @@
 ---
-title: Erwartet ')' (JavaScript) | Microsoft-Dokumentation
+title: "\")\" Erwartet (JavaScript) | Microsoft-Dokumentation"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1006
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: 2fb72012-0f83-40fa-b747-167940d90bdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7338ac776fababe5d1801708a0de5a305af78d1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d109f91e447bc96612dae82d0141d717eaa1f20c
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934725"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817579"
 ---
 # <a name="expected--javascript"></a>")" erwartet (JavaScript)
-Sie haben versucht, einen Ausdruck in Klammern einschließen, aber es hat keine die schließenden Klammer. Einige Ausdruck muss in einer Gruppe von öffnende und schließende Klammern eingeschlossen werden. Beachten Sie die Verwendung von Klammern, die im folgenden Beispiel aus.  
+Sie haben versucht, einen Ausdruck innerhalb eines Satzes von Klammern einzuschließen, ohne die schließende Klammer zu schließen. Ein Ausdruck muss in einen Satz von öffnenden und schließenden Klammern eingeschlossen werden. Beachten Sie die Verwendung von Klammern im folgenden Beispiel.  
   
 ```JavaScript  
 for (initialize; test; increment) {  
@@ -32,4 +32,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Fügen Sie die richtigen Klammern, der Auswertungsausdruck hinzu.
+- Fügen Sie dem Auswertungs Ausdruck die rechteckige Klammern hinzu.

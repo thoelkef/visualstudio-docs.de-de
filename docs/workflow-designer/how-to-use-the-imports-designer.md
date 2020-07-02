@@ -1,7 +1,7 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Verwenden des Imports-Designers'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
@@ -10,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f221efea08444a4dc3e31ade2a081753eb77242c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593186"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817423"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Vorgehensweise: Verwenden des Imports-Designers
 
-Der Importe-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben, die Sie in den Ausdrücken verwenden. Ähnlich wie beim **importieren** oder **verwenden** von Schlüsselwörtern in C#Visual Basic und ermöglicht das Angeben von Namespaces im Imports-Designer, dass Sie einfach einen Typnamen in ihren Ausdruck eingeben und keinen voll qualifizierten Versionstyp Namen.
+Der Importe-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben, die Sie in den Ausdrücken verwenden. Ähnlich wie bei den **Imports** -oder **using** -Schlüsselwörtern in Visual Basic und c# können Sie mit dem Angeben von Namespaces im Imports-Designer einfach einen Typnamen in ihren Ausdruck anstelle eines voll qualifizierten Versions Typnamens eingeben.
 
-Der Importe-Designer reagiert sowohl auf Änderungen, die in der Benutzeroberfläche vorgenommen werden, als auch auf Änderungen, die beim Speichern des Workflows gespeichert werden. Wenn der Workflow gespeichert wird, können dem Importe-Designer automatisch Namespaces hinzugefügt werden. Hierzu gehört Folgendes:
+Der Importe-Designer reagiert sowohl auf Änderungen, die in der Benutzeroberfläche vorgenommen werden, als auch auf Änderungen, die beim Speichern des Workflows gespeichert werden. Wenn der Workflow gespeichert wird, können dem Importe-Designer automatisch Namespaces hinzugefügt werden. Dabei handelt es sich z. B. um:
 
 - Namespaces für alle Typen, die in Variablen- und Argumentdeklarationen verwendet werden.
 

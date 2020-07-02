@@ -3,7 +3,7 @@ title: Hexadezimale Ziffer erwartet | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1023
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6672046e0f7bf5e39c334dc0ba30f22eaff6e9a
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c0797d44115fb5b44cb0c670153e8476356bd533
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573372"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816565"
 ---
 # <a name="expected-hexadecimal-digit"></a>Hexadezimalzahl erwartet
 Sie haben eine falsche Unicode-Escapesequenz erstellt. Unicode-Escapesequenzen beginnen mit \u, gefolgt von genau vier hexadezimalen Ziffern (nicht mehr und nicht weniger). Hexadezimale Unicode-Ziffern können nur die Zahlen 0-9, die Großbuchstaben a-f und die Kleinbuchstaben a-f enthalten. Das folgende Beispiel veranschaulicht eine ordnungsgemäß formatierte Unicode-Escapesequenz.  
@@ -33,7 +33,7 @@ z = "\u1A5F";
 - Stellen Sie sicher, dass die hexadezimalen Unicode-Ziffern mit \u beginnen und nur die Zahlen 0-9, die Großbuchstaben a-f, die Kleinbuchstaben a-f; enthalten. und sind in vier Ziffern gruppiert.  
   
     > [!NOTE]
-    > Wenn Sie den Literaltext \u in einer Zeichenfolge verwenden möchten, verwenden Sie zwei umgekehrte Schrägstriche (\\ \u)-eine, um den ersten umgekehrten Schrägstrich zu Escapezeichen zu versehen.  
+    > Wenn Sie den Literaltext \u in einer Zeichenfolge verwenden möchten, verwenden Sie zwei umgekehrte Schrägstriche ( \\ \u)-One, um den ersten umgekehrten Schrägstrich mit Escapezeichen zu versehen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Datentypen](../../javascript/data-types-javascript.md)

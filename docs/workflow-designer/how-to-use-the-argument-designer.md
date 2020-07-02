@@ -1,7 +1,7 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Verwenden des Argument-Designers'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584555"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817449"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Vorgehensweise: Verwenden des Argument-Designers
 
@@ -33,7 +33,7 @@ Mit dem Argument-Designer können Daten problemlos in eine und aus einer Aktivit
     > [!NOTE]
     > Wählen Sie zum Löschen eines Arguments das Argument aus, indem Sie darauf klicken, und drücken Sie dann die ENTF **-Taste.**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)
 - [Variablen und Argumente](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
