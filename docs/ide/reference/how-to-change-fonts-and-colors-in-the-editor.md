@@ -1,7 +1,7 @@
 ---
 title: Ändern von Schriftarten und Farben im Editor
 ms.date: 06/01/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283701"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770428"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Vorgehensweise: Ändern der im Editor in Visual Studio verwendeten Schriftarten und Farben
 
@@ -32,7 +32,7 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 - Die Optionen **Elementvordergrund**, **Elementhintergrund** und **Fett** können für jeden Typ Textelement festgelegt werden. Wenn Sie z.B. Farben ändern und für **Kommentar** und **Lesezeichen** **Fett** auswählen, werden andere Typen Textelemente nicht betroffen.
 
 > [!IMPORTANT]
-> Informationen zum Anpassen der Schriftarten und Farben für die IDE und nicht nur für den Code-Editor finden Sie auf der Seite **[ Ändern von Schriftarten und Farben in Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)** .
+> Informationen zum Anpassen der Schriftarten und Farben für die IDE und nicht nur für den Code-Editor finden Sie auf der Seite **[Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)** .
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>So ändern Sie die Standardschriftart, -größe und -farben
 

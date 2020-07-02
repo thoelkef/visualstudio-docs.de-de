@@ -1464,5 +1464,7 @@
           href: ide/report-a-problem-perfview.md
     - name: Vorschlagen eines Features
       href: ide/suggest-a-feature.md
+    - name: Richtlinien für die Entwicklercommunity
+      href: ide/developer-community-guidelines.md
     - name: Datenschutz in der Developer Community
       href: ide/developer-community-privacy.md

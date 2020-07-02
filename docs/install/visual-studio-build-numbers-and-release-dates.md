@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 06/23/2020
+ms.date: 06/30/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: fd2e26dcb026b25923b08c572aa203d06a076844
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 08190b7c2109f8a5344264786b5c1e3906c4c7b5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85292918"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770918"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,8 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.3 | Freigabe | 30. Juni 2020 | 16.6.30225.117 |
+| 16.7.0 | Preview 3.1 | 25. Juni 2020 | 16.7.30223.230 |
 | 16.7.0 | Preview 3 | 23. Juni 2020 | 16.7.30218.91 |
 | 16.0.15 | Freigabe | 9\. Juni 2020 | 16.0.28803.753 |
 | 16.6.2 | Freigabe | 9\. Juni 2020 | 16.6.30204.135 |
