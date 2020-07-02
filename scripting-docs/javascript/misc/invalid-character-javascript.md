@@ -3,7 +3,7 @@ title: Ungültiges Zeichen (JavaScript) | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1014
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576570"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816942"
 ---
 # <a name="invalid-character-javascript"></a>Ungültiges Zeichen (JavaScript)
-Sie haben einen Bezeichner mithilfe eines Zeichens (oder eines Zeichens) verfasst, das vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht als gültig erkannt wurde. Gültige Zeichen verwenden die folgenden Regeln:  
+Sie haben einen Bezeichner mithilfe eines Zeichens (oder eines Zeichens) verfasst, das vom Compiler nicht als gültig erkannt wurde [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] . Gültige Zeichen verwenden die folgenden Regeln:  
   
 - Das erste Zeichen muss ein ASCII-Buchstabe (entweder groß-oder Kleinbuchstabe) oder ein Unterstrich (_) sein.  
   
@@ -34,7 +34,7 @@ Sie haben einen Bezeichner mithilfe eines Zeichens (oder eines Zeichens) verfass
   
 - Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachdefinition sind.  
   
-## <a name="see-also"></a>Siehe auch  
- [Variablen](../../javascript/variables-javascript.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Instan](../../javascript/variables-javascript.md)   
  [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)   
  [Datentypen](../../javascript/data-types-javascript.md)
