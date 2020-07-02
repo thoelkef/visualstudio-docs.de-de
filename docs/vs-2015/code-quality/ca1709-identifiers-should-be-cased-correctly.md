@@ -15,21 +15,21 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919232"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544000"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1709: Bezeichner sollten korrekt geschrieben werden](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|IdentifiersShouldBeCasedCorrectly|
+|TypName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Kategorie|Microsoft.Naming|
 |Unterbrechende Änderung|Unterbrechen: Wenn Assemblys, Namespaces, Typen, Member und Parameter ausgelöst werden.<br /><br /> Nicht unterbrechend: Wenn Sie für generische Typparameter ausgelöst werden.|
@@ -45,7 +45,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1709: Bezeichner 
 
  Der Name eines Bezeichners enthält ein Akronym von drei oder mehr Großbuchstaben.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
  Gemäß der Konvention verwenden Parameternamen die Kamel Schreibweise. Namespace-, Typ-und Elementnamen verwenden Pascal-Schreibweise. Bei einem Kamel Namen ist der erste Buchstabe klein geschrieben, und der erste Buchstabe der restlichen Wörter im Namen ist in Großbuchstaben. Beispiele für die Namen von Kamel Namen sind "Packetsniffer", "IOFile" und "FatalErrorCode". In einem Namen mit Pascal-Schreibweise ist der erste Buchstabe Großbuchstaben, und der erste Buchstabe der restlichen Wörter im Namen ist in Großbuchstaben. Beispiele für Namen von Pascal-Bezeichnernamen sind "Packetsniffer", "IOFile" und "FatalErrorCode".
@@ -65,4 +65,4 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1709: Bezeichner 
  Sie können einem benutzerdefinierten Code Analyse Wörterbuch auch bestimmte Begriffe, Abkürzungen und Akronyme hinzufügen. Im benutzerdefinierten Wörterbuch angegebene Begriffe verursachen keine Verstöße gegen diese Regel. Weitere Informationen finden Sie unter Gewusst [wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md) .
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

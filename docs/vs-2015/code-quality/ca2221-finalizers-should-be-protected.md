@@ -15,19 +15,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e30dd2945820a61aa7c96d4e6c6fd59354e0c3ae
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651959"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540737"
 ---
-# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizer sollten geschützt sein
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizer sollten geschützt sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|FinalizersShouldBeProtected|
+|TypName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
@@ -35,8 +35,8 @@ ms.locfileid: "72651959"
 ## <a name="cause"></a>Ursache
  Ein öffentlicher Typ implementiert einen Finalizer, der keinen Zugriff auf die Familie (geschützter Zugriff) angibt.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Finalizer müssen den Familienzugriffsmodifizierer verwenden. Diese Regel wird von den C#Compilern, Visual Basic und Visual C++ erzwungen.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Finalizer müssen den Familienzugriffsmodifizierer verwenden. Diese Regel wird von den Compilern c#, Visual Basic und Visual C++ erzwungen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Finalizer so, dass er auf die Familie zugreifen kann.
@@ -80,5 +80,5 @@ ms.locfileid: "72651959"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Dispose-Muster](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen von XMLMappedRange-Steuerelementen zu Arbeitsblättern'
+title: 'Gewusst wie: Hinzufügen von XmlMappedRange-Steuerelementen zu Arbeitsblättern'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,56 +13,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427435"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544884"
 ---
-# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Vorgehensweise: Hinzufügen von XMLMappedRange-Steuerelementen zu Arbeitsblättern
-  Wenn Sie ein XML-Element auf eine Zelle in der Microsoft Office Excel zuordnen, fügt Visual Studio automatisch eine <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement Ihrem Arbeitsblatt.
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von XmlMappedRange-Steuerelementen zu Arbeitsblättern
+  Wenn Sie ein XML-Element einer Zelle in Microsoft Office Excel zuordnen, fügt Visual Studio dem Arbeitsblatt automatisch ein-Steuerelement hinzu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> .
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
-> Die <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement ist nicht verfügbar, auf die **Toolbox** oder **Datenquellen** Fenster. Darüber hinaus kann nicht erstellt <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> programmgesteuert gesteuert werden.
+> Das- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement ist in der **Toolbox** oder im **Datenquellen** Fenster nicht verfügbar. Darüber hinaus können Steuer <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Elemente nicht Programm gesteuert erstellt werden.
 
-## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Zum Hinzufügen von XMLMappedRange-Steuerelement zu einem Arbeitsblatt
+## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>So fügen Sie ein XmlMappedRange-Steuerelement zu einem Arbeitsblatt hinzu
 
-1. Öffnen Sie die Excel-Arbeitsmappe in Visual Studio-Designer an.
+1. Öffnen Sie die Excel-Arbeitsmappe im Visual Studio-Designer.
 
-2. Öffnen Sie das Arbeitsblatt, das das Steuerelement hinzugefügt werden sollen.
+2. Öffnen Sie das Arbeitsblatt, dem Sie das Steuerelement hinzufügen möchten.
 
-3. Auf der **Developer** auf **Quelle**.
-
-    > [!NOTE]
-    > Wenn die **Developer** Registerkarte ist nicht auf dem Menüband angezeigt, müssen Sie es aktivieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
-
-     Die **XML-Quelle** Aufgabenbereich angezeigt wird.
-
-4. In der **XML-Quelle** Aufgabenbereich, klicken Sie auf **XML-Zuordnungen**.
-
-5. In der **XML-Zuordnungen** Dialogfeld klicken Sie auf **hinzufügen**.
-
-     Die **XML-Quelle** Dialogfeld wird angezeigt.
-
-6. Wählen Sie eine XML-Schema aus der **XML-Quelle** Dialogfeld und klicken Sie auf **öffnen**.
-
-     Das Schema wird hinzugefügt, um die **XML-Zuordnungen** Dialogfeld.
-
-7. In der **XML-Zuordnungen** Dialogfeld klicken Sie auf **OK**.
-
-8. Ziehen Sie ein Element aus der **XML-Quelle** im Aufgabenbereich auf eine Zelle im Arbeitsblatt.
-
-     Ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> erstellt und dem Projekt hinzugefügt.
+3. Klicken Sie auf der Registerkarte **Entwickler** auf **Quelle**.
 
     > [!NOTE]
-    > Wenn Sie ein übergeordnetes Element von Ziehen die **XML-Quelle** klicken Sie im Aufgabenbereich eine <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement wird erstellt.
+    > Wenn die Registerkarte " **Entwickler** " im Menüband nicht angezeigt wird, müssen Sie Sie aktivieren. Weitere Informationen finden Sie unter Gewusst [wie: Anzeigen der Registerkarte "Entwickler" im Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+
+     Der Aufgabenbereich " **XML-Quelle** " wird angezeigt.
+
+4. Klicken Sie im Aufgabenbereich der **XML-Quelle** auf **XML**-Zuordnungen.
+
+5. Klicken Sie im Dialogfeld **XML** -Zuordnungen auf **Hinzufügen**.
+
+     Das Dialogfeld **XML-Quelle** wird angezeigt.
+
+6. Wählen Sie im Dialogfeld **XML-Quelle** ein XML-Schema aus, und klicken Sie auf **Öffnen**.
+
+     Das Schema wird dem Dialogfeld **XML** -Zuordnungen hinzugefügt.
+
+7. Klicken Sie im Dialogfeld **XML** -Zuordnungen auf **OK**.
+
+8. Ziehen Sie ein Element aus dem **XML-Quell** Aufgabenbereich in eine Zelle im Arbeitsblatt.
+
+     Eine <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> wird erstellt und dem Projekt hinzugefügt.
+
+    > [!NOTE]
+    > Wenn Sie ein übergeordnetes Element aus dem **XML-Quell** Aufgabenbereich ziehen, wird ein- <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 - [XmlMappedRange-Steuerelement](../vsto/xmlmappedrange-control.md)
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
-- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Vorgehensweise: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
+- [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Gewusst wie: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)

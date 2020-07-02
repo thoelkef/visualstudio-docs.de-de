@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Windows Store und Windows Universal-apps | Microsoft-Dokumentation
+title: Debuggen von Windows Store und universellen Windows-apps | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205656"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545560"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Debuggen von Windows Store-Apps und universellen Windows-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio-Debugger bietet vollständige Unterstützung für das Debuggen von Windows Store-apps.  
+Der Visual Studio-Debugger bietet umfassende Unterstützung zum Debuggen von Windows Store-Apps.  
   
- Weitere Informationen zum Debuggen von Windows-Universal-apps finden Sie unter [bereitstellen und Debuggen von apps für universelle Windows-Plattform](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  
+ Weitere Informationen zum Debuggen von universellen Windows-apps finden Sie unter Bereitstellen [und Debuggen von Windows Universal Platform](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx)  
   
- Zum Debuggen von Windows Phone-apps finden Sie unter [Debuggen von apps für Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx).  
+ Informationen zum Debuggen von Windows Phone-apps finden Sie unter [Debugging apps for Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
-|||  
+|Titel|Beschreibung|  
 |-|-|  
 |[Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Führen Sie Store-Apps auf einem lokalen Computer, in einem App-Simulator oder -Emulator oder auf einem Remotegerät aus.|  
 |[Debuggen von Apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Suchen Sie über den Visual Studio-Debugger nach Fehlern in Ihren Store-Apps, und korrigieren Sie diese.|  
-|[Vorabrufen von Inhalt für Windows Store-Apps](../debugger/prefetch-content-for-windows-store-apps.md)|Analysieren Sie die Auswirkung der ContentPrefetcher-Klasse auf Windows Store-Apps.|  
+|[Vorabrufen von Inhalt für Windows Store-Apps](../debugger/prefetch-content-for-windows-store-apps.md)|Analysieren Sie die Auswirkung der ContentPrefetcher-Klasse auf Windows Store-Apps.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Analysieren der Codequalität mit der statischen Codeanalyse](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

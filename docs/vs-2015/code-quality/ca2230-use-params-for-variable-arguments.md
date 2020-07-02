@@ -15,33 +15,33 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a690544a7ed03094587a2aaf1c44b7ed68e8f2a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce66e04272618b9df2ab1957af305bb9bf40ee9c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662829"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540360"
 ---
-# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: params für Variablenargumente verwenden
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: params für Variablenargumente verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|UseParamsForVariableArguments|
+|TypName|UseParamsForVariableArguments|
 |CheckId|CA2230|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ enthält eine öffentliche oder geschützte Methode, die die `VarArgs`-Aufruf Konvention verwendet.
+ Ein öffentlicher oder geschützter Typ enthält eine öffentliche oder geschützte Methode, die die `VarArgs` Aufruf Konvention verwendet.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Die `VarArgs`-Aufruf Konvention wird mit bestimmten Methoden Definitionen verwendet, die eine Variable Anzahl von Parametern akzeptieren. Eine Methode, die die `VarArgs`-Aufruf Konvention verwendet, ist nicht Common Language Specification (CLS) kompatibel und ist möglicherweise nicht über Programmiersprachen zugänglich.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Die `VarArgs` Aufruf Konvention wird mit bestimmten Methoden Definitionen verwendet, die eine Variable Anzahl von Parametern akzeptieren. Eine Methode, die die `VarArgs` Aufruf Konvention verwendet, ist nicht Common Language Specification (CLS) kompatibel und ist möglicherweise nicht über Programmiersprachen zugänglich.
 
- In C#wird die `VarArgs`-Aufruf Konvention verwendet, wenn die Parameterliste einer Methode mit dem Schlüsselwort `__arglist` endet. Visual Basic unterstützt die `VarArgs`-Aufruf Konvention nicht, und C++ Visual ermöglicht die Verwendung nur in nicht verwaltetem Code, der die Ellipse `...`-Notation verwendet.
+ In c# wird die `VarArgs` -Aufruf Konvention verwendet, wenn die Parameterliste einer Methode mit dem- `__arglist` Schlüsselwort endet. Visual Basic unterstützt die `VarArgs` Aufruf Konvention nicht, und Visual C++ ermöglicht die Verwendung nur in nicht verwaltetem Code, der die Ellipse- `...` Notation verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel in C#zu beheben, verwenden Sie das Schlüsselwort " [para](https://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) " anstelle von "`__arglist`".
+ Um einen Verstoß gegen diese Regel in c# zu beheben, verwenden Sie das Schlüsselwort " [para](https://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) " anstelle von `__arglist` .
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
@@ -51,5 +51,5 @@ ms.locfileid: "72662829"
 
  [!code-csharp[FxCop.Usage.UseParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.UseParams/cs/FxCop.Usage.UseParams.cs#1)]
 
-## <a name="see-also"></a>Siehe auch
- <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Sprachen Unabhängigkeit und sprachunabhängige Komponenten](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.Reflection.CallingConventions?displayProperty=fullName>[Sprachunabhängigkeit und sprachunabhängige Komponenten](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

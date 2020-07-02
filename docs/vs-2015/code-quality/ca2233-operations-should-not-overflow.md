@@ -15,19 +15,19 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 70a0bab8cfb3bf14a763f759e0e44a754ad878d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662780"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545235"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|OperationsShouldNotOverflow|
+|TypName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
@@ -35,8 +35,8 @@ ms.locfileid: "72662780"
 ## <a name="cause"></a>Ursache
  Eine Methode führt eine arithmetische Operation aus und überprüft die Operanden nicht im voraus, um einen Überlauf zu verhindern.
 
-## <a name="rule-description"></a>Regelbeschreibung
- Arithmetische Operationen sollten nicht ausgeführt werden, ohne zuerst die Operanden zu überprüfen, um sicherzustellen, dass sich das Ergebnis des Vorgangs nicht außerhalb des Bereichs der möglichen Werte für die betroffenen Datentypen befindet. Abhängig vom Ausführungs Kontext und den beteiligten Datentypen kann der arithmetische Überlauf dazu führen, dass entweder eine <xref:System.OverflowException?displayProperty=fullName> oder die signifikantesten Bits des Ergebnisses verworfen werden.
+## <a name="rule-description"></a>Beschreibung der Regel
+ Arithmetische Operationen sollten nicht ausgeführt werden, ohne zuerst die Operanden zu überprüfen, um sicherzustellen, dass sich das Ergebnis des Vorgangs nicht außerhalb des Bereichs der möglichen Werte für die betroffenen Datentypen befindet. Abhängig vom Ausführungs Kontext und den beteiligten Datentypen kann der arithmetische Überlauf dazu führen, dass entweder ein <xref:System.OverflowException?displayProperty=fullName> oder die signifikantesten Bits des Ergebnisses verworfen werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie die Operanden, bevor Sie den Vorgang ausführen.
@@ -47,14 +47,14 @@ ms.locfileid: "72662780"
 ## <a name="example-of-a-violation"></a>Beispiel für eine Verletzung
 
 ### <a name="description"></a>Beschreibung
- Eine Methode im folgenden Beispiel bearbeitet eine Ganzzahl, die gegen diese Regel verstößt. für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] muss die Option ganzzahlige Überlauf **Entfernen** deaktiviert sein, damit diese ausgelöst wird.
+ Eine Methode im folgenden Beispiel bearbeitet eine Ganzzahl, die gegen diese Regel verstößt. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]erfordert, dass die Option zum **Entfernen** ganz Zahl Überlauf deaktiviert wird, damit diese ausgelöst wird.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
  [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]
 
 ### <a name="comments"></a>Kommentare
- Wenn die Methode in diesem Beispiel <xref:System.Int32.MinValue?displayProperty=fullName> weitergeleitet wird, würde der Vorgang zu einem Unterlauf. Dies bewirkt, dass das signifikanteste Bit des Ergebnisses verworfen wird. Der folgende Code zeigt, wie dies geschieht.
+ Wenn die-Methode in diesem Beispiel weitergegeben wird <xref:System.Int32.MinValue?displayProperty=fullName> , würde der Vorgang zu einem Unterlauf. Dies bewirkt, dass das signifikanteste Bit des Ergebnisses verworfen wird. Der folgende Code zeigt, wie dies geschieht.
 
  [C#]
 
@@ -95,17 +95,17 @@ End Sub
 ## <a name="fix-with-a-checked-block"></a>Korrektur mit einem aktivierten Block
 
 ### <a name="description"></a>Beschreibung
- Im folgenden Beispiel wird der vorherige Verstoß behoben, indem der-Vorgang in einen aktivierten-Block umwickelt wird. Wenn der Vorgang einen Überlauf verursacht, wird eine <xref:System.OverflowException?displayProperty=fullName> ausgelöst.
+ Im folgenden Beispiel wird der vorherige Verstoß behoben, indem der-Vorgang in einen aktivierten-Block umwickelt wird. Wenn der Vorgang einen Überlauf verursacht, wird eine ausgelöst <xref:System.OverflowException?displayProperty=fullName> .
 
- Beachten Sie, dass aktivierte Blöcke in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nicht unterstützt werden.
+ Beachten Sie, dass aktivierte Blöcke in nicht unterstützt werden [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aktivierten arithmetischen Überlauf/Unterlauf aktivieren
- Wenn Sie den aktivierten arithmetischen Überlauf/Unterlauf C#in aktivieren, entspricht dies dem umwickeln aller ganzzahligen Vorgänge in einem aktivierten Block.
+ Wenn Sie den überprüften arithmetischen Überlauf/Unterlauf in c# aktivieren, entspricht dies dem Umtragen jeder ganzzahligen Operation in einem aktivierten Block.
 
- **So aktivieren Sie den überprüften arithmetischen Überlauf/Unterlauf inC#**
+ **So aktivieren Sie den überprüften arithmetischen Überlauf/Unterlauf in C #**
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus.
 
@@ -113,5 +113,5 @@ End Sub
 
 3. Wählen Sie **auf arithmetischen Überlauf/Unterlauf prüfen aus** , und klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
- aktivierte und nicht über [prüfte](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e) [ C# <xref:System.OverflowException?displayProperty=fullName>](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.OverflowException?displayProperty=fullName>Aktivierte [und überprüfte](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e) [c#-Operatoren](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)

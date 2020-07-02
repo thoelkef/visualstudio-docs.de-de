@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen'
+title: 'Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 129962209d8cfa541a34bc1575a73382cd63d7c4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254668"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541348"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen
   Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie, dass Benutzer Inhalte in diesem Teil des Dokuments ändern oder löschen. Es gibt mehrere Möglichkeiten, Teile eines Microsoft Office Word-Dokuments mithilfe von Inhaltssteuerelementen zu schützen.
 
 - Sie können ein Inhaltssteuerelement schützen.
@@ -34,10 +34,10 @@ ms.locfileid: "71254668"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="EditDeleteControl"></a>Schützen eines Inhalts Steuer Elements
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Schützen eines Inhalts Steuer Elements
  Sie können verhindern, dass Benutzer ein Inhaltssteuerelement bearbeiten oder löschen, indem Sie Eigenschaften des Steuerelements in einem Projekt auf Dokumentebene zur Entwurfszeit oder zur Laufzeit festlegen.
 
- Sie können auch Inhaltssteuerelemente schützen, die Sie einem Dokument zur Laufzeit hinzufügen, indem Sie ein VSTO-Add-In-Projekt verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Inhalts Steuerelementen](../vsto/how-to-add-content-controls-to-word-documents.md)zu Word-Dokumenten.
+ Sie können auch Inhaltssteuerelemente schützen, die Sie einem Dokument zur Laufzeit hinzufügen, indem Sie ein VSTO-Add-In-Projekt verwenden. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>So schützen Sie ein Inhaltssteuerelement zur Entwurfszeit
 
@@ -53,7 +53,7 @@ ms.locfileid: "71254668"
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>So schützen Sie ein Inhaltssteuerelement zur Laufzeit
 
-1. Legen Sie `LockContents` die-Eigenschaft des Inhalts Steuer Elements auf **true** fest, um zu verhindern, dass Benutzer das `LockContentControl` Steuerelement bearbeiten, und legen Sie die-Eigenschaft auf **true** fest, um zu verhindern, dass Benutzer das
+1. Legen Sie die `LockContents` -Eigenschaft des Inhalts Steuer Elements auf **true** fest, um zu verhindern, dass Benutzer das Steuerelement bearbeiten, und legen Sie die- `LockContentControl` Eigenschaft auf **true** fest, um zu verhindern, dass Benutzer das
 
      Das folgende Codebeispiel veranschaulicht die Verwendung der <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A>-Eigenschaft und <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A>-Eigenschaft zwei verschiedener <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Objekte in einem Projekt auf Dokumentebene. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `AddProtectedContentControls` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.
 
@@ -82,7 +82,7 @@ ms.locfileid: "71254668"
 2. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
 
     > [!NOTE]
-    > Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler"](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)im Menüband.
+    > Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter Gewusst [wie: Anzeigen der Registerkarte "Entwickler" im Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Klicken Sie in der Gruppe Steuer **Elemente** auf die Dropdown Schaltfläche **Gruppe** , und klicken Sie dann auf **Gruppe**.
 
@@ -104,8 +104,8 @@ ms.locfileid: "71254668"
 
 ## <a name="see-also"></a>Siehe auch
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
-- [Inhalts Steuerelemente](../vsto/content-controls.md)
-- [Vorgehensweise: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [ContentControl-Elemente](../vsto/content-controls.md)
+- [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)

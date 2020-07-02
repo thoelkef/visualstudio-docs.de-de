@@ -1,7 +1,7 @@
 ---
-title: '&lt;PostActionData&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;postaktiondata- &gt; Element (Office-Entwicklung in Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cda7829fc615c64be75f295a0cbc26b2ebbc7eea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561485"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541868"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;PostActionData&gt; -Element (Office-Entwicklung in Visual Studio)
+# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postaktiondata- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `postActionData` -Element des `vstav3` -Namespace gibt die Daten an, die jeder Aktion nach der Bereitstellung zugeordnet sind, die nach der Installation von Office-Projektmappen ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
@@ -38,10 +38,10 @@ ms.locfileid: "62561485"
 
  `postActions` hat keine untergeordneten Elemente.
 
-## <a name="post-deployment-action-example"></a>Beispiel für die Aktion nach der Bereitstellung
+## <a name="post-deployment-action-example"></a>Beispiel für eine Aktion nach der Bereitstellung
 
 ### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht das `postAction` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+ Das folgende Codebeispiel veranschaulicht das `postAction` -Element in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]bereitgestellte Office-Projektmappe. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -53,6 +53,6 @@ ms.locfileid: "62561485"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

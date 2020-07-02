@@ -15,19 +15,19 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661061"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545261"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklarationen von P/Invoke müssen portabel sein
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|PInvokeDeclarationsShouldBePortable|
+|TypName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Kategorie|Microsoft. Portabilität|
 |Unterbrechende Änderung|Unterbrechung: Wenn P/aufrufen außerhalb der Assembly sichtbar ist. Nicht unterbrechend: Wenn der P/Aufruf außerhalb der Assembly nicht sichtbar ist.|
@@ -35,15 +35,15 @@ ms.locfileid: "72661061"
 ## <a name="cause"></a>Ursache
  Diese Regel wertet die Größe der einzelnen Parameter und den Rückgabewert von P/aufrufen aus und überprüft, ob ihre Größe beim Mars Hallen an nicht verwalteten Code auf 32-Bit-und 64-Bit-Plattformen korrekt ist. Der häufigste Verstoß gegen diese Regel besteht darin, eine ganze Zahl mit fester Größe zu übergeben, bei der eine Platt Form abhängige Variable mit Zeiger Größe erforderlich ist.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Beide der folgenden Szenarien verstoßen gegen diese Regel:
 
-- Der Rückgabewert oder-Parameter wird als ganze Zahl mit fester Größe typisiert, wenn er als `IntPtr` typisiert werden soll.
+- Der Rückgabewert oder-Parameter wird als ganze Zahl mit fester Größe typisiert, wenn er als typisiert werden soll `IntPtr` .
 
-- Der Rückgabewert oder-Parameter wird als `IntPtr` typisiert, wenn er als Ganzzahl mit fester Größe typisiert werden soll.
+- Der Rückgabewert oder-Parameter wird als typisiert, `IntPtr` Wenn er als Ganzzahl mit fester Größe typisiert werden soll.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Sie können diese Verletzung beheben, indem Sie `IntPtr` oder `UIntPtr` verwenden, um Handles anstelle von `Int32` oder `UInt32` darzustellen.
+ Sie können diese Verletzung beheben, indem Sie `IntPtr` oder verwenden `UIntPtr` , um Handles anstelle von `Int32` oder darzustellen `UInt32` .
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Sie sollten diese Warnung nicht unterdrücken.
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- In diesem Beispiel wird der `nIconIndex`-Parameter als `IntPtr` deklariert, der auf einer 32-Bit-Plattform 4 Bytes breit und auf einer 64-Bit-Plattform eine Breite von 8 Bytes hat. In der folgenden nicht verwalteten Deklaration sehen Sie, dass `nIconIndex` eine 4-Byte-Ganzzahl ohne Vorzeichen auf allen Plattformen ist.
+ In diesem Beispiel wird der `nIconIndex` -Parameter als deklariert `IntPtr` , d. h. bei einer 32-Bit-Plattform auf einer-Bit-Plattform und bei einer 64-Bit-Plattform auf 8 Byte Breite. In der folgenden nicht verwalteten Deklaration sehen Sie, dass `nIconIndex` eine 4-Byte-Ganzzahl ohne Vorzeichen auf allen Plattformen ist.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -78,5 +78,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
- [Portabilitätswarnungen](../code-quality/portability-warnings.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Portabilitäts Warnungen](../code-quality/portability-warnings.md)

@@ -8,19 +8,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7b4a15530a43937b4f73fba1779216391c862c11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669019"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545053"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|DoNotUseBrokenCryptographicAlgorithms|
+|TypName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |Kategorie|Microsoft.Cryptography|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
@@ -33,7 +33,7 @@ ms.locfileid: "72669019"
 
  Die kryptografischen Algorithmen in der folgenden Liste sind anfällig für bekannte kryptografische Angriffe. Der kryptografische Hashalgorithmus <xref:System.Security.Cryptography.MD5> ist anfällig für Kollisionsangriffe gegen Hashfunktionen.  Je nach Einsatzbereich führen Kollisionsangriffe gegen Hashfunktionen zu Identitätswechseln, Manipulationen oder anderen Arten von Angriffen auf Systeme, die auf der eindeutigen kryptografischen Ausgabe einer Hashfunktion beruhen. Die Verschlüsselungsalgorithmen <xref:System.Security.Cryptography.DES> und <xref:System.Security.Cryptography.RC2> sind anfällig für kryptografische Angriffe, die zu einer unbeabsichtigten Offenlegung von verschlüsselten Daten führen können.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Unterbrochene kryptografische Algorithmen werden nicht als sicher betrachtet; ihre Verwendung sollte unterbunden werden. Der MD5-Hashalgorithmus ist anfällig für bekannte Kollisionsangriffe. Die spezielle Sicherheitslücke hängt jedoch vom Verwendungszusammenhang ab.  Zum Sicherstellen der Datenintegrität (z. B. Dateisignatur oder digitales Zertifikat) verwendete Hashalgorithmen sind besonders anfällig.  In diesem Kontext könnten Angreifer zwei separate Teile der Daten generieren und nützliche Daten durch schädliche Daten ersetzen, ohne den Hashwert zu ändern oder eine zugeordnete digitale Signatur für ungültig zu erklären.
 
  Bei Verschlüsselungsalgorithmen:
@@ -47,7 +47,7 @@ ms.locfileid: "72669019"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Verwenden Sie kryptografisch sicherere Optionen:
 
-- Verwenden Sie für MD5 Hashes der [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) -Familie (z. B. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Verwenden Sie für MD5 Hashes in der [SHA-2-](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) Familie (z. b., <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> , <xref:System.Security.Cryptography.SHA256> ).
 
 - Verwenden Sie für DES und RC2 eine <xref:System.Security.Cryptography.Aes> -Verschlüsselung.
 

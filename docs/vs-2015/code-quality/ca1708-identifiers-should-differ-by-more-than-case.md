@@ -29,7 +29,7 @@ ms.locfileid: "85544039"
 |-|-|
 |TypName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|Category|Microsoft.Naming|
+|Kategorie|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

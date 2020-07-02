@@ -30,7 +30,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 
 ### <a name="parameters"></a>Parameter
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |*bstrManifestURL*|Der vollständige Pfad des Manifests für das VSTO-Add-In.|
 |*pdispapplication*|Ein Zeiger auf eine IDispatch, die die Host Anwendung darstellt, die das VSTO-Add-in lädt.|
@@ -45,6 +45,6 @@ HRESULT Load([in] BSTR bstrManifestURL,
 
  Implementieren Sie die Methode [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) , um Aufgaben wie das Konfigurieren der Anwendungsdomäne und der Sicherheitsrichtlinie für das VSTO-Add-In auszuführen, das geladen wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)

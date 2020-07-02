@@ -29,7 +29,7 @@ ms.locfileid: "85540659"
 |-|-|
 |TypName|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
-|Category|Microsoft. Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache

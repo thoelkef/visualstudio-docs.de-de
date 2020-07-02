@@ -1,5 +1,5 @@
 ---
-title: Führen Sie Store-apps
+title: Ausführen von Store-Apps
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,23 +14,23 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d5dfe0d5e5e9af35334629bd2bcd27f414dac11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154189"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540308"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Ausführen von Store-Apps aus Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Store-Apps können auf einer breiten Auswahl an Geräten ausgeführt werden, und Visual Studio bietet Ihnen eine Reihe von Möglichkeiten, diese Apps auszuführen und damit zu interagieren. Die F5-Funktion wird erweitert, um ein einfaches Debuggen, Profilieren und Testen von Apps während der Entwicklung zu ermöglichen.
 
- ![Starten Sie das Debuggen, und wählen Sie Ziel](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
+ ![Starten Sie das Debuggen wählen Sie ein Ziel](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|||
+|Titel|Beschreibung|
 |-|-|
 |[Ausführen von Windows Store-Apps auf einem lokalen Computer](../debugger/run-windows-store-apps-on-the-local-machine.md)|Führen Sie Ihre Windows Store-App auf dem Visual Studio-Gerät aus.|
 |[Ausführen von Windows Store-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md)|Führen Sie Ihre Windows Store-App in einem Desktopfenster aus, das [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Funktionen wie Toucheingabe und Ausrichtung simuliert.|

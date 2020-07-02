@@ -15,19 +15,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658897"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540841"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wert|
 |-|-|
-|TypeName|MembersShouldDifferByMoreThanReturnType|
+|TypName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
 |Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Breaking|
@@ -35,7 +35,7 @@ ms.locfileid: "72658897"
 ## <a name="cause"></a>Ursache
  Zwei öffentliche oder geschützte Member haben Signaturen, die mit Ausnahme des Rückgabe Typs identisch sind.
 
-## <a name="rule-description"></a>Regelbeschreibung
+## <a name="rule-description"></a>Beschreibung der Regel
  Obwohl das Common Language Runtime die Verwendung von Rückgabe Typen ermöglicht, um zwischen ansonsten identischen Membern zu unterscheiden, befindet sich dieses Feature nicht im Common Language Specification, und es ist auch kein gängiges Feature von .NET-Programmiersprachen. Wenn sich Elemente nur nach Rückgabetyp unterscheiden, unterscheiden Entwickler und Entwicklungs Tools möglicherweise nicht ordnungsgemäß zwischen Ihnen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
@@ -45,7 +45,7 @@ ms.locfileid: "72658897"
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt in der Microsoft Intermediate Language (MSIL) einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass diese Regel nicht mithilfe C# von oder Visual Basic .net verletzt werden kann.
+ Das folgende Beispiel zeigt in der Microsoft Intermediate Language (MSIL) einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass diese Regel nicht mit c# oder Visual Basic .net verletzt werden kann.
 
 ```
 

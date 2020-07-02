@@ -29,7 +29,7 @@ ms.locfileid: "85544312"
 |-|-|
 |TypName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
-|Category|Microsoft.Security|
+|Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache

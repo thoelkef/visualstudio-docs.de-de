@@ -12,19 +12,19 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850453"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544988"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen definieren. Auf diese Weise können Sie die Diagramme und Modelle Ihren eigenen Anforderungen anpassen. Sie können z. B. Menübefehle, UML-Profile, Validierungseinschränkungen und Toolboxelemente definieren. In einer Erweiterung können mehrere Komponenten definiert werden. Sie können diese Erweiterungen auch anderen Visual Studio-Benutzern in Form einer [Visual Studio Integration Extension (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)bereitstellen. Eine VSIX können Sie mithilfe eines VSIX-Projekts in Visual Studio erstellen.
 
-## <a name="requirements"></a>-Anforderungen
+## <a name="requirements"></a>Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,7 +42,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Erstellen eines Klassenbibliothekprojekts für Menübefehle, Gestenhandler oder Überprüfung
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
 
 2. Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus, und wählen Sie anschließend **Klassenbibliothek**aus.
 
@@ -58,7 +58,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 3. Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.
 
-    - Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.
+    - Wählen Sie in Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **als Startprojekt festlegen**aus.
 
 4. Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Manifest-Editor geöffnet.
 
@@ -68,15 +68,15 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 7. Fügen Sie Ihre Komponenten auf der Registerkarte **Objekte** der Visual Studio-Erweiterung hinzu.
 
-    1. Wählen Sie **Neu**aus.
+    1. Wählen Sie **Neu**.
 
     2. Legen Sie diese Felder für eine Komponente mit Code im Dialogfeld **Neues Objekt hinzufügen** fest:
 
-        |||
+        |Feld|Wert|
         |-|-|
-        |**Typ** =|**Microsoft.VisualStudio.MefComponent**|
-        |**Source** =|**Ein Projekt in der aktuellen Projekt Mappe.**|
-        |**Project** =|*Ihr Klassen Bibliotheksprojekt*|
+        |**Sorte** =|**Microsoft.VisualStudio.MefComponent**|
+        |**Ausgangs** =|**Ein Projekt in der aktuellen Projektmappe**|
+        |**Project** =|*Ihr Klassenbibliotheksprojekt*|
         |**In diesen Ordner einbetten** =|*leer*|
 
          Informationen zu anderen Komponententypen finden Sie unter den Links im nächsten Abschnitt.
@@ -84,7 +84,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 ## <a name="developing-the-component"></a>Entwickeln der Komponente
  Sie müssen für jede Komponente (z. B. für einen Menübefehl oder Gestenhandler) einen separaten Handler definieren. Sie können mehrere Handler in das gleiche Klassenbibliotheksprojekt einfügen. In der folgenden Tabelle erhalten Sie eine Übersicht über die verschiedenen Arten von Handlern.
 
-|Erweiterungstyp|Topic|Typische Deklaration der einzelnen Komponenten|
+|Erweiterungstyp|Thema|Typische Deklaration der einzelnen Komponenten|
 |--------------------|-----------|----------------------------------------------|
 |Menübefehl|[Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|
 |Drag & Drop oder Doppelklick|[Definieren eines Gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|
@@ -97,7 +97,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 #### <a name="to-run-an-extension-during-its-development"></a>So führen Sie eine Erweiterung während ihrer Entwicklung aus
 
-1. Wählen Sie im Menü **Debuggen** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen starten**aus.
+1. Wählen Sie im Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** das Element **Start Debuggenging**aus.
 
      Das Projekt wird erstellt, und eine neue Instanz von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird im Testmodus gestartet.
 
@@ -109,14 +109,14 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 3. Wenn Sie **Starten ohne Debugging** ausgewählt haben, den Debugger aber verwenden möchten, wechseln Sie zurück zur Hauptinstanz von Visual Studio. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie im Dialogfeld die experimentelle Instanz von Visual Studio aus, die den Programmnamen **devenv**hat.
 
-## <a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
  Führen Sie die folgenden Schritte aus, um Ihre Erweiterung in der Hauptinstanz von Visual Studio auszuführen, entweder auf dem eigenen Computer oder auf anderen Computern.
 
 1. Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom Erweiterungsprojekt erstellt wurde.
 
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü Ihres Projekts **Ordner in Windows Explorer öffnen**aus.
 
-    2. Suchen Sie den Datei- **bin\\\*\\** _yourproject_ **. VSIX.**
+    2. Suchen Sie die **Datei \\ \* \\ bin**_yourproject_**. VSIX.**
 
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 
@@ -136,9 +136,9 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 3. Wählen Sie die Erweiterung aus, und klicken Sie dann auf **Deinstallieren**.
 
-   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, indem Sie die Datei von folgendem Speicherort löschen: *% LocalAppData%* ist in der Regel *driveName*: \Users\\*username*\AppData\Local:
+   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, indem Sie die Datei von folgendem Speicherort löschen: *% LocalAppData%* ist in der Regel *driveName*: \Users \\ *username*\AppData\Local:
 
-   *% LocalAppData%* **\microsoft\visualstudio\\[Version] \extensions**
+   *% LocalAppData%* **\microsoft\visualstudio \\ [Version] \extensions**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md) [Definieren eines benutzerdefinierten Modellierungs Toolbox Elements](../modeling/define-a-custom-modeling-toolbox-item.md) definieren von [Validierungs Einschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md) definieren [eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

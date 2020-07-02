@@ -67,7 +67,7 @@ ms.locfileid: "85543493"
 
      Ein <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement wird erstellt und dem Projekt hinzugefügt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
