@@ -1,6 +1,6 @@
 ---
 title: Projektmappen und Projekte
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285230"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468729"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -74,13 +74,16 @@ Nachdem Sie ein neues Projekt erstellt haben, können Sie mit dem **Projektmappe
 
 Viele Menübefehle sind über das Kontextmenü verschiedener Elemente im **Projektmappen-Explorer** verfügbar. Diese Befehle umfassen das Erstellen eines Projekts, das Verwalten von NuGet-Paketen, das Hinzufügen einer Referenz, das Umbenennen einer Datei und das Ausführen von Tests, um nur einige zu nennen. Die Symbolleiste oben im **Projektmappen-Explorer** bietet Schaltflächen, mit denen Sie von einer Projektmappenansicht zu einer Ordneransicht wechseln, ausgeblendete Dateien anzeigen, alle Knoten reduzieren und viele weitere Aktionen ausführen können.
 
+> [!TIP]
+> Wenn Sie den Projektmappen-Explorer geschlossen haben und diesen wieder öffnen möchten, klicken Sie in der Menüleiste auf **Fenster** > **Fensterlayout zurücksetzen**.
+
 Bei ASP.NET Core-Projekten können Sie die Schachtelung von Dateien im **Projektmappen-Explorer** anpassen. Weitere Informationen finden Sie unter [Anpassen der Dateischachtelung im Projektmappen-Explorer](file-nesting-solution-explorer.md).
 
-> [!TIP]
-> Eine Liste einiger der Symbole, die im Projektmappen-Explorer angezeigt werden, finden Sie auf der Seite [Symbole in der Klassenansicht und im Objektkatalog](class-view-and-object-browser-icons.md).
+Eine Liste einiger der Symbole, die im Projektmappen-Explorer angezeigt werden, finden Sie unter [Symbole in der Klassenansicht und im Objektkatalog](class-view-and-object-browser-icons.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-IDE](../get-started/visual-studio-ide.md)
+- [Portieren, Migrieren und Aktualisieren von Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Projekte und Projektmappen (Visual Studio für Mac)](/visualstudio/mac/projects-and-solutions)
 - [Hinzufügen und Entfernen von Projektelementen (Visual Studio für Mac)](/visualstudio/mac/add-and-remove-project-items)

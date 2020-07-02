@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Installieren einer Schnellansicht | Microsoft-Dokumentation'
+title: Installieren einer Schnellansicht | Microsoft-Dokumentation
 ms.date: 06/10/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286387"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349561"
 ---
 # <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.

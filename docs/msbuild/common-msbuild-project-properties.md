@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288948"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770871"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 
@@ -51,7 +51,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | CleanFile | Alle | Der Name der Datei, die als "Löschcache" verwendet wird. Der Löschcache ist eine Liste generierter Dateien, die während des Bereinigungsvorgangs gelöscht werden. Die Datei wird vom Buildprozess im Zwischenausgabepfad abgelegt.<br /><br /> Diese Eigenschaft gibt nur Dateinamen an, die keine Pfadinformationen aufweisen. |
 | CodePage | .NET | Gibt für alle Quellcodedateien in der Kompilierung die zu verwendende Codepage an. Diese Eigenschaft entspricht dem `/codepage`-Compilerschalter. |
 | CompilerResponseFile | .NET | Eine optionale Antwortdatei, die an die Compileraufgaben übergeben werden kann. |
-| Konfiguration | Alle | Die Konfiguration, die Sie erstellen, entweder "Debug" oder "Release". |
+| Konfiguration | Alle | Die Konfiguration, die Sie erstellen, in der Regel `Debug` oder `Release`, die jedoch auf Projektmappen- und Projektebene konfigurierbar ist. |
 | CscToolPath | C# | Der Pfad von *csc.exe*, dem C#-Compiler. |
 | CustomBeforeMicrosoftCommonTargets | Alle | Der Name einer Projektdatei oder TARGETS-Datei, die vor dem allgemeinen TARGETS-Import automatisch importiert werden soll. |
 | DebugSymbols | Alle | Ein boolescher Wert, der angibt, ob Symbole vom Build generiert werden.<br /><br /> Durch das Festlegen von **-p:DebugSymbols=false** in der Befehlszeile wird die Generierung von Programmdatenbank-Symboldateien (*PDB*-Dateien) deaktiviert. |
