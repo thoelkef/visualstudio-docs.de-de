@@ -1,19 +1,19 @@
 ---
 title: Bilder und Symbole für Visual Studio | Microsoft-Dokumentation
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537539"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906117"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Verwendung von Images in Visual Studio
@@ -247,7 +247,7 @@ ms.locfileid: "85537539"
 
 - So unterscheiden Sie Elemente in IntelliSense
 
-### <a name="accessibility"></a>Barrierefreiheit
+### <a name="accessibility"></a>Zugriff
  Visual Studio-Kompatibilitätsrichtlinien erfordern, dass alle in das Produkt eingecheckten Symbole die Barrierefreiheits Anforderungen für Farbe und Kontrast erfüllen. Farben in der Palette der visuellen Sprache wurden getestet und erfüllen diese Anforderungen.
 
 #### <a name="color-inversion-for-dark-themes"></a>Farb Inversion für dunkles Design
@@ -258,7 +258,7 @@ ms.locfileid: "85537539"
 ### <a name="base-palette"></a>Basis Palette
  Alle Standardsymbole enthalten drei Basis Farben. Symbole enthalten keine Farbverläufe oder Schlag Schatten, mit einer oder zwei Ausnahmen für 3D-Tool Symbole.
 
-|Verbrauch|Name|Value (helles Design)|Swatch|Beispiel|
+|Verbrauch|name|Value (helles Design)|Swatch|Beispiel|
 |-----------|----------|---------------------------|------------|-------------|
 |Hintergrund/dunkel|VS BG|424242/66, 66, 66|![Muster 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Beispiel für Basispalette](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Vordergrund/Licht|VS FG|F0EFF1/240.239.241|![Muster F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -271,7 +271,7 @@ ms.locfileid: "85537539"
 #### <a name="action-modifiers"></a>Aktionsmodifizierer
  Die vier folgenden Farben geben die Typen von Aktionen an, die von Aktionsmodifizierer benötigt werden:
 
-|Verbrauch|Name|Wert (alle Designs)|Swatch|
+|Verbrauch|name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Positiv|VS-Aktion grün|388a34/56138, 52|![Muster 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negativ|VS-Aktion rot|A1260D/161, 38, 13|![Muster A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -281,7 +281,7 @@ ms.locfileid: "85537539"
 ##### <a name="examples"></a>Beispiele
  Grün wird für positive Aktionsmodifizierer wie "Add", "Run", "Play" und "Validate" verwendet.
 
-|Führen Sie|Abfrage ausführen|Alle Schritte wiedergeben|Steuerelement hinzufügen|
+|Ausführen|Abfrage ausführen|Alle Schritte wiedergeben|Steuerelement hinzufügen|
 |-|-|-|-|
 |![Symbol "Ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Symbol "Abfrage ausführen"](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")|![Symbol "Alle Schritte wiedergeben"](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")|![Symbol "Steuerelement hinzufügen"](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")|
 
@@ -306,7 +306,7 @@ ms.locfileid: "85537539"
 #### <a name="special-cases"></a>Spezialfälle
  In besonderen Fällen kann ein farbiger Aktionsmodifizierer unabhängig als eigenständiges Symbol verwendet werden. Die Farbe, die für das Symbol verwendet wird, spiegelt die Aktionen wider, denen das Symbol zugeordnet ist. Diese Verwendung ist auf eine kleine Teilmenge von Symbolen beschränkt, einschließlich:
 
-|Führen Sie|Beenden|Löschen|Speichern|Rückwärts navigieren|
+|Ausführen|Beenden|Löschen|Speichern|Rückwärts navigieren|
 |-|-|-|-|-|
 |![Symbol "Ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Stoppsymbol](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Symbol "Löschen"](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Symbol „Speichern“](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Symbol "Rückwärts navigieren"](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
@@ -314,14 +314,14 @@ ms.locfileid: "85537539"
 
 #### <a name="folder"></a>Ordner
 
-|Verbrauch|Name|Wert (alle Designs)|Swatch|Beispiel|
+|Verbrauch|name|Wert (alle Designs)|Swatch|Beispiel|
 |-----------|----------|--------------------------|------------|-------------|
 |Ordner|Ordner|DCB67A/220.182.122|![Muster DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Symbol "Ordnerfarbe"](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio-Sprachen
  Jede der in Visual Studio verfügbaren allgemeinen Sprachen oder Plattformen weist eine zugehörige Farbe auf. Diese Farben werden für das Basis Symbol oder für sprach Modifizierer verwendet, die in der oberen rechten Ecke der Verbund Symbole angezeigt werden.
 
-|Verbrauch|Name|Wert (alle Designs)|Swatch|
+|Verbrauch|name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF Blue|0095d7/0149.215|![Muster 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|Cpp-lila|9b4f 96/155, 79150|![Muster 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,7 +346,7 @@ ms.locfileid: "85537539"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense-Symbole verwenden eine exklusive Farbpalette. Diese Farben werden verwendet, um Benutzern zu helfen, schnell zwischen den verschiedenen Elementen in der IntelliSense-Popup Liste zu unterscheiden.
 
-|Verbrauch|Name|Wert (alle Designs)|Swatch|
+|Verbrauch|name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Klasse, Ereignis|VS-Aktion Orange|C27D1A/194125, 26|![Muster C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Erweiterungsmethode, Methode, Modul, Delegat|VS-Aktion, lila|652d90/101, 45144|![Muster 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -367,7 +367,7 @@ ms.locfileid: "85537539"
 ### <a name="notifications"></a>Benachrichtigungen
  Benachrichtigungen in Visual Studio werden verwendet, um den Status anzugeben. In der Benachrichtigungs Palette werden die folgenden vier Farben verwendet, sowie die Füll Optionen schwarz oder weiß, um Benachrichtigungen mit den folgenden Status Ebenen zu definieren.
 
-|Verbrauch|Name|Wert (alle Designs)|Swatch|
+|Verbrauch|name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Status: neutral|Benachrichtigung blau (vs Blue)|1ba1e2/27.161.226|![Muster 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Status: positiv|Benachrichtigungs grün (vs grün)|339933/51153, 51|![Muster 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|

@@ -1,100 +1,100 @@
 ---
-title: 'Vorgehensweise: Leistung der diagnoseerweiterung | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Diagnostizieren der Erweiterungs Leistung | Microsoft-Dokumentation'
 ms.date: 11/08/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
 ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 542d8a6d6d90091aa7a800ef18f847fea6b1a81c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863296"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905903"
 ---
-# <a name="measuring-extension-impact-in-startup"></a>Messen der Auswirkungen der Erweiterung in der Startdatei
+# <a name="measuring-extension-impact-in-startup"></a>Messen der Erweiterungs Auswirkung beim Starten
 
-## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>Konzentrieren Sie sich auf die erweiterungsleistung in Visual Studio 2017
+## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>Konzentrieren Sie sich auf die Erweiterungs Leistung in Visual Studio 2017
 
-Basierend auf Kundenfeedback, war einer der Bereiche den Fokus für Visual Studio 2017 Version Leistung beim Start und -Lösung laden. Wie im Visual Studio-Platform-Team haben unsere Arbeit an der Verbesserung der Leistung beim Start und -Lösung laden. Im Allgemeinen sollten unsere Messungen installierte Erweiterungen auch einen erheblichen Einfluss auf die Szenarios haben können.
+Basierend auf Kundenfeedback war einer der Schwerpunktbereiche für die Visual Studio 2017-Version der Start-und Lösungs Ladeleistung. Als das Visual Studio-Platt Form Team haben wir daran gearbeitet, die Leistung beim Laden von Starts und Lösungen zu verbessern. Im Allgemeinen können die Messungen für installierte Erweiterungen eine beträchtliche Auswirkung auf diese Szenarien haben.
 
-Damit können Benutzer diese Auswirkungen zu verstehen, haben wir ein neues Feature in Visual Studio zum Benachrichtigen von Benutzern langsamer Erweiterungen hinzugefügt. In einigen Fällen erkennt Visual Studio eine neue Erweiterung, die entweder-Ladevorgang für Projektmappen oder beim Start verlangsamt. Wenn zu eine Verlangsamung Ihrer erkannt wird, wird Benutzern eine Benachrichtigung in der IDE auf neuen "Visual Studio-Leistung verwalten"-Dialogfeld angezeigt. Dieses Dialogfeld kann auch immer vom Menü "Hilfe", um zuvor erkannten Extensions durchsuchen zugegriffen werden.
+Damit Benutzer diese Auswirkung besser verstehen können, haben wir in Visual Studio ein neues Feature hinzugefügt, um Benutzer über langsame Erweiterungen zu benachrichtigen. In einigen Fällen erkennt Visual Studio eine neue Erweiterung, die entweder den Lade-oder Startvorgang der Projekt Mappe verlangsamt. Wenn eine Verlangsamung erkannt wird, wird Benutzern in der IDE eine Benachrichtigung angezeigt, die auf das Dialogfeld "Visual Studio-Leistung verwalten" hinweist. Auf dieses Dialogfeld kann auch immer über das Menü Hilfe zugegriffen werden, um zuvor erkannte Erweiterungen zu durchsuchen.
 
-![Visual Studio-Leistung verwalten](media/manage-performance.png)
+![Verwalten der Leistung von Visual Studio](media/manage-performance.png)
 
-Dieses Dokument soll ermöglicht es erweiterungsentwicklern, von beschreiben, wie die Erweiterung Auswirkungen berechnet wird. Dieses Dokument beschreibt auch, wie die Erweiterung Auswirkungen lokal analysiert werden kann. Lokal Analysieren der Auswirkungen auf die Erweiterung wird bestimmt, ob eine Erweiterung als eine Leistung, die Auswirkungen auf die Erweiterung angezeigt werden kann.
+Dieses Dokument soll Erweiterungs Entwicklern helfen, indem die Berechnung der Erweiterungs Auswirkung beschrieben wird. Außerdem wird in diesem Dokument beschrieben, wie die Auswirkungen der Erweiterung lokal analysiert werden können. Durch das lokale analysieren der Erweiterungs Auswirkung wird festgelegt, ob eine Erweiterung möglicherweise als Leistungs Beeinträchtigung der Erweiterung angezeigt wird.
 
 > [!NOTE]
-> Dieses Dokument konzentriert sich auf die Auswirkungen von Erweiterungen beim Starten und die Projektmappe laden. Erweiterungen haben ebenfalls Auswirkungen auf Visual Studio-Leistung, wenn sie dazu führen, die Benutzeroberfläche dass reagiert. Weitere Informationen zu diesem Thema finden Sie unter [Vorgehensweise: Analysieren von Benutzeroberflächen Verzögerungen durch Erweiterungen](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Dieses Dokument konzentriert sich auf die Auswirkungen von Erweiterungen beim Starten und Laden von Projektmappen. Erweiterungen haben auch Auswirkungen auf die Visual Studio-Leistung, wenn Sie bewirken, dass die Benutzeroberfläche nicht mehr reagiert. Weitere Informationen zu diesem Thema finden Sie unter Gewusst [wie: Diagnostizieren von UI-Verzögerungen durch Erweiterungen](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
-## <a name="how-extensions-can-impact-startup"></a>Erweiterungen können wie Start auswirken.
+## <a name="how-extensions-can-impact-startup"></a>Auswirkungen von Erweiterungen auf den Start
 
-Eine der am häufigsten verwendeten Methoden für Erweiterungen für die startleistung auswirken wird durch automatisches Laden eines bekannten Start-Benutzeroberflächen-Kontexten wie z. B. NoSolutionExists oder ShellInitialized auswählen. Diese Benutzeroberfläche-Kontexte erhalten während des Starts aktiviert. Alle enthaltenen Pakete die `ProvideAutoLoad` -Attribut in ihrer Definition mit diesen Kontexten geladen und initialisiert Sie zu diesem Zeitpunkt.
+Eine der gängigsten Methoden für Erweiterungen, die die Startleistung beeinflussen, besteht darin, die automatische Auslastung in einem der bekannten Kontext der Start Benutzeroberfläche, wie z. b. nosolutionist oder shellinitialized, auszuwählen. Diese UI-Kontexte werden während des Starts aktiviert. Alle Pakete, die das- `ProvideAutoLoad` Attribut in ihrer Definition mit diesen Kontexten enthalten, werden zu diesem Zeitpunkt geladen und initialisiert.
 
-Wenn wir die Auswirkungen einer Erweiterung messen, konzentrieren wir uns in erster Linie auf die Zeit, diese Erweiterungen, die automatisch geladen, in den oben genannten Kontexten auswählen. Gemessen Mal enthalten würde, aber nicht darauf beschränkt:
+Wenn die Auswirkung einer Erweiterung gemessen wird, konzentrieren wir uns in erster Linie auf die Zeit, die für die Erweiterungen aufgewendet wird, die automatisch in den obigen Kontexten geladen werden. Zu den gemessenen Zeiten zählen u. a. die folgenden:
 
-* Laden von Assemblys für die Erweiterung für synchrone Pakete
-* In den Konstruktor der Paket-Klasse für synchrone Pakete verbrachte Zeit
-* Paketmethode initialisieren (oder SetSite) für synchrone Pakete verbrachte Zeit
-* Führen für asynchrone-Pakete die oben genannten Vorgänge Hintergrundthread.  Daher werden die Vorgänge von der Überwachung ausgeschlossen.
-* Zeit im irgendwelche asynchronen Vorgänge, die während der Initialisierung des Pakets im Hauptthread die Ausführung geplant
-* In den Ereignishandlern, insbesondere die Shell initialisiert Kontext-Aktivierung oder die Shell Zombie-statusänderung verbrachte Zeit
-* Ab Visual Studio 2017 Update 3 wird außerdem beginnen wir Zeitspanne im für aufrufen im Leerlauf aufgewendet wird, bevor die Shell initialisiert wurde. Lange Operationen in den Leerlauf Handler auch dazu führen, dass nicht mehr reagiert IDE und tragen zu einer vom Benutzer wahrgenommene Startzeit.
+* Laden von Erweiterungsassemblys für synchrone Pakete
+* Die im paketklassenkonstruktor für synchrone Pakete verbrachte Zeit.
+* Zeitaufwand für die Paket Initialisierungs Methode (oder SetSite) für synchrone Pakete
+* Bei asynchronen Paketen werden die obigen Vorgänge im Hintergrund Thread ausgeführt.  Daher werden die Vorgänge von der Überwachung ausgeschlossen.
+* Zeit, die für alle asynchronen Arbeiten aufgewendet wird, die während der Paket Initialisierung zur Ausführung im Haupt Thread geplant sind
+* Die Zeit, die für Ereignishandler aufgewendet wurde, insbesondere die shellinitialisierte Kontext Aktivierung oder die shellzombie-Statusänderung.
+* Ab Visual Studio 2017 Update 3 beginnen wir auch mit der Überwachung der Zeit, die für Aufrufe im Leerlauf aufgewendet wurde, bevor Shell initialisiert wird. Lange Vorgänge in Leerlauf Handlern bewirken auch eine nicht reagierende IDE und tragen zu einer vom Benutzer erkannten Startzeit bei.
 
-Wir haben viele Features, die beginnend mit Visual Studio 2015 hinzugefügt. Diese Funktionen können mit müssen Sie die Pakete automatisch geladen. Die Features verschieben auch die Notwendigkeit von Paketen zum Laden in spezifischere Fällen. Zu diesen Szenarien gehören Beispiele, wo Benutzer mehr bestimmte verwenden Sie die Erweiterung, oder eine Erweiterung-Auswirkungen zu reduzieren wären, wenn automatisch geladen.
+Wir haben ab Visual Studio 2015 viele Features hinzugefügt. Diese Features helfen dabei, das automatische Laden von Paketen zu entfernen. Die-Funktionen verschieben außerdem die Notwendigkeit von Paketen, in spezifischere Fälle geladen zu werden. Zu diesen Fällen zählen Beispiele, in denen Benutzer die Erweiterung verwenden oder die Auswirkungen auf die Erweiterung beim automatischen Laden verringern würden.
 
-Weitere Informationen zu diesen Funktionen finden Sie in den folgenden Dokumenten:
+Weitere Informationen zu diesen Features finden Sie in den folgenden Dokumenten:
 
-[Regel-basierte Benutzeroberfläche-Kontexte](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Eine umfangreichere regelbasierte Engine benutzeroberflächenkontexte so konzipiert, können Sie benutzerdefinierte Kontexte, die basierend auf Projekttypen, Typen und Attribute erstellen. Benutzerdefinierte Kontexte können verwendet werden, ein Paket während der spezifischere Szenarios zu laden. Diesen speziellen Szenarien umfassen das Vorhandensein eines Projekts mit einer bestimmten Funktion starten. Können Sie auch benutzerdefinierte Kontexten [Befehl Sichtbarkeit für einen benutzerdefinierten Kontext gebunden werden](visibilityconstraints-element.md) basierend auf Projektkomponenten oder andere Bedingungen verfügbaren. Diese entfällt die Notwendigkeit zum Laden eines Pakets, um die Abfrage einen Befehlshandler-Status zu registrieren.
+[Regelbasierte UI-Kontexte](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): ein umfangreicheres Regelbasiertes Modul, das um UI-Kontexte aufbaut, ermöglicht Ihnen die Erstellung benutzerdefinierter Kontexte auf der Grundlage von Projekttypen,-Varianten und-Attributen. Benutzerdefinierte Kontexte können zum Laden eines Pakets in spezifischeren Szenarien verwendet werden. Diese spezifischen Szenarien umfassen das vorhanden sein eines Projekts mit einer bestimmten Funktion anstelle des Starts. Benutzerdefinierte Kontexte ermöglichen außerdem das [Binden der Befehls Sichtbarkeit an einen benutzerdefinierten Kontext](visibilityconstraints-element.md) , der auf Projektkomponenten oder anderen verfügbaren Begriffen basiert. Diese Funktion macht das Laden eines Pakets zum Registrieren eines Befehlsstatus-Abfrage Handlers nicht mehr erforderlich.
 
-[Unterstützung für asynchrone Bereitstellungspaket](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Die neue Asyncpackage-Basisklasse in Visual Studio 2015 ermöglicht Visual Studio-Pakete, wenn das Laden des Pakets von einer Auto-Load-Attribut oder ein Dienst für die asynchrone Abfrage angefordert wurde asynchron im Hintergrund geladen. Diese laden im Hintergrund kann die IDE reaktionsfähig bleiben. Die IDE reagiert auch, wenn die Erweiterung im Hintergrund initialisiert wird und kritische Szenarien wie starten und -Lösung laden wäre nicht beeinträchtigt werden.
+[Unterstützung für asynchrone](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)Pakete: die neue asyncpackage-Basisklasse in Visual Studio 2015 ermöglicht, dass Visual Studio-Pakete asynchron im Hintergrund geladen werden, wenn das Paket Ladevorgang durch ein Attribut für automatisches Laden oder eine asynchrone Dienst Abfrage angefordert wurde. Dieses Hintergrund Laden ermöglicht der IDE, reaktionsfähig zu bleiben. Die IDE reagiert auch dann, wenn die Erweiterung im Hintergrund initialisiert wird und kritische Szenarien wie das Starten und Laden von Projektmappen nicht beeinträchtigt werden.
 
-[Asynchrone Dienste](how-to-provide-an-asynchronous-visual-studio-service.md): Durch die Unterstützung asynchroner Pakets haben wir auch Unterstützung für Abfragen von Diensten asynchron und asynchrone Dienste registrieren wird hinzugefügt. Darüber hinaus arbeiten wir zum Konvertieren von Visual Studio-Basisdienste, um asynchrone Abfrage unterstützt, sodass der Großteil der Arbeit in einer Async-Abfrage in Hintergrundthreads auftritt. SComponentModel (Visual Studio MEF-Host) ist eine der wichtigsten Dienste, die unterstützt jetzt die asynchrone Abfrage von Erweiterungen zur Unterstützung asynchronen Laden vollständig zu ermöglichen.
+[Asynchrone Dienste](how-to-provide-an-asynchronous-visual-studio-service.md): mit Unterstützung für asynchrone Pakete haben wir auch die Unterstützung für das asynchrone Abfragen von Diensten und das Registrieren asynchroner Dienste hinzugefügt. Noch wichtiger ist, dass wir an der Umstellung von Visual Studio-Kerndiensten zur Unterstützung asynchroner Abfragen arbeiten, sodass der Großteil der Arbeit in einer asynchronen Abfrage in Hintergrundthreads auftritt. Scomponentmodel (Visual Studio-MEF-Host) ist einer der wichtigsten Dienste, der nun die asynchrone Abfrage unterstützt, damit Erweiterungen das asynchrone Laden vollständig unterstützen können.
 
-## <a name="reducing-impact-of-auto-loaded-extensions"></a>Reduzieren der Auswirkungen von "Auto" Erweiterungen geladen
+## <a name="reducing-impact-of-auto-loaded-extensions"></a>Verringern der Auswirkung von automatisch geladenen Erweiterungen
 
-Wenn ein Paket weiterhin automatisch beim Start geladen werden muss, ist es wichtig, um die Arbeit, die während der Initialisierung des Pakets zu minimieren. Minimieren der Initialisierungsarbeit Pakets verringert die Wahrscheinlichkeit, dass die Erweiterung beim Start beeinträchtigen.
+Wenn ein Paket während des Starts weiterhin automatisch geladen werden muss, ist es wichtig, die während der Paket Initialisierung durchgeführte Arbeit zu minimieren. Wenn Sie die Paket Initialisierungs Arbeit minimieren, verringert sich die Wahrscheinlichkeit, dass die Erweiterung den Startvorgang beeinträchtigt.
 
-Sind einige Beispiele, die Paket-Initialisierung teuer verursachen könnte:
+Einige Beispiele, die eine aufwändige Paket Initialisierung verursachen können, sind:
 
-### <a name="use-of-synchronous-package-load-instead-of-asynchronous-package-load"></a>Verwendung von synchronen Paket Last anstelle der das Laden des asynchroner Pakets
+### <a name="use-of-synchronous-package-load-instead-of-asynchronous-package-load"></a>Verwendung synchroner Paket Ladevorgang anstelle der asynchronen Paket Auslastung
 
-Da auf dem Hauptthread synchron Pakete standardmäßig geladen werden, empfehlen wir die Erweiterung-Besitzer, die automatisch geladen Pakete verwenden die Basisklasse asynchroner Pakets stattdessen, wie bereits erwähnt haben. Ändern eines Pakets automatisch geladen, um das asynchrone Laden zu unterstützen wird auch die anderen Probleme, die folgenden lösen erleichtern.
+Da synchrone Pakete standardmäßig auf dem Haupt Thread geladen werden, empfehlen wir Erweiterungs Besitzern, die automatisch geladene Pakete haben, stattdessen die asynchrone Paketbasis Klasse zu verwenden, wie bereits erwähnt. Wenn Sie ein automatisch geladenes Paket ändern, um das asynchrone Laden zu unterstützen, wird es auch einfacher, die anderen Probleme zu beheben.
 
-### <a name="synchronous-filenetwork-io-requests"></a>Synchrone Datei/Netzwerk-e/a-Anforderungen
+### <a name="synchronous-filenetwork-io-requests"></a>Synchrone e/a-Anforderungen
 
-Im Idealfall sollten alle synchronen e/a-Anforderungen von Datei- oder Netzwerkvorgänge im Hauptthread vermieden werden. Ihre Auswirkungen werden, hängt davon ab, Zustand des Computers und kann für längere Zeit in einigen Fällen blockiert.
+Im Idealfall sollten alle synchronen Dateien oder Netzwerk-e/a-Anforderungen im Haupt Thread vermieden werden. Ihre Auswirkung hängt vom Computer Status ab und kann in einigen Fällen über längere Zeiträume hinweg blockiert werden.
 
-Verwenden asynchroner Pakets laden und asynchrone e/a-APIs sollten sicherstellen, dass die Initialisierung des Pakets den Hauptthread in solchen Fällen nicht blockiert. Benutzer können auch weiterhin mit Visual Studio zu interagieren, während der e/a-Anforderungen im Hintergrund ausgeführt.
+Die Verwendung des asynchronen Pakets und der asynchronen e/a-APIs sollte sicherstellen, dass die Paket Initialisierung den Haupt Thread in solchen Fällen nicht blockiert. Benutzer können auch weiterhin mit Visual Studio interagieren, während e/a-Anforderungen im Hintergrund auftreten.
 
-### <a name="early-initialization-of-services-components"></a>Frühe Initialisierung der Services, Komponenten
+### <a name="early-initialization-of-services-components"></a>Frühe Initialisierung von Diensten, Komponenten
 
-Eine allgemeine Muster im Paket-Initialisierung ist zum Initialisieren der Dienste, die von verwendet und bereitgestellt werden, indem Sie das Paket in das Paket `constructor` oder `initialize` Methode. Während dadurch wird, dass die Dienste für die sichergestellt Verwendung bereit sind, können sie auch hinzufügen unnötige Kosten, wenn Sie ein Paket geladen wird, wenn diese Dienste nicht sofort verwendet werden. Stattdessen sollten solche Dienste bei Bedarf, um die Arbeit, die im Paket-Initialisierung zu minimieren initialisiert werden.
+Eines der allgemeinen Muster bei der Paket Initialisierung ist die Initialisierung von Diensten, die von dem Paket oder der Methode verwendet werden `constructor` `initialize` . Obwohl dadurch sichergestellt wird, dass Dienste verwendet werden können, kann es auch unnötige Kosten für das Laden von Paketen verursachen, wenn diese Dienste nicht sofort verwendet werden. Stattdessen sollten solche Dienste bei Bedarf initialisiert werden, um die Arbeit zu minimieren, die bei der Paket Initialisierung durchgeführt wurde.
 
-Für globale Dienste, die von einem Paket bereitgestellt werden, können Sie `AddService` Methoden, die eine Funktion des Diensts verzögert initialisiert wird, nur, wenn sie von einer Komponente angefordert werden. Für Dienste, die innerhalb des Pakets verwendet werden, können Sie verzögert\<T > oder AsyncLazy\<T > um sicherzustellen, dass Dienste bei der ersten Verwendung initialisiert/abgefragt werden.
+Für globale Dienste, die von einem Paket bereitgestellt werden, können Sie Methoden verwenden, die `AddService` eine Funktion zum verzögerten Initialisieren des Diensts verwenden, wenn er von einer Komponente angefordert wird. Bei Diensten, die innerhalb des Pakets verwendet werden, können Sie Lazy \<T> oder asynclazy verwenden, \<T> um sicherzustellen, dass Dienste bei der ersten Verwendung initialisiert bzw. abgefragt werden.
 
-## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Messen der Auswirkungen von "Auto" Erweiterungen mit Aktivitätsprotokoll geladen
+## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Messen der Auswirkung von automatisch geladenen Erweiterungen mithilfe des Aktivitäts Protokolls
 
-Ab Visual Studio 2017 Update 3 können enthält Visual Studio-Aktivitätsprotokoll jetzt Einträge für die Auswirkungen auf die Leistung von Paketen beim Laden von Start- und die Lösung. Um diese Messungen angezeigt wird, müssen Sie Visual Studio öffnen, mit dem/Log-Schalter, und öffnen Sie *ActivityLog.xml* Datei.
+Ab Visual Studio 2017 Update 3 enthält das Visual Studio-Aktivitätsprotokoll nun Einträge, die sich auf die Leistung von Paketen beim Starten und Laden von Projektmappen auswirken. Um diese Messungen anzuzeigen, müssen Sie Visual Studio mit/log Switch öffnen und *ActivityLog.xml* Datei öffnen.
 
-Im Aktivitätsprotokoll aufgeführt die Einträge werden unter "Visual Studio-Leistung verwalten"-Quelle, und sieht wie im folgenden Beispiel:
+Im Aktivitätsprotokoll befinden sich die Einträge unter der Quelle "Visual Studio-Leistung verwalten" und sehen wie im folgenden Beispiel aus:
 
 ```Component: 3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c, Inclusive Cost: 2008.9381, Exclusive Cost: 2008.9381, Top Level Inclusive Cost: 2008.9381```
 
-Dieses Beispiel zeigt, in ein Paket mit der GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" 2008 ms beim Start von Visual Studio hat. Beachten Sie, dass Visual Studio der obersten Ebene Kosten als primäre Telefonnummer, beim Berechnen der Auswirkungen eines Pakets berücksichtigt, wie dies, dass die einsparungen-Benutzern angezeigt wäre, wenn sie die Erweiterung für das Paket zu deaktivieren.
+Dieses Beispiel zeigt, dass ein Paket mit der GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" 2008 MS beim Start von Visual Studio aufgewendet hat. Beachten Sie, dass Visual Studio bei der Berechnung der Auswirkungen eines Pakets die Kosten der obersten Ebene als primär Nummer ansieht, da dies die Einsparungen ist, die Benutzer sehen, wenn Sie die Erweiterung für das Paket deaktivieren.
 
-## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>Messen der Auswirkungen von "Auto" Erweiterungen unter Verwendung von PerfView geladen
+## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>Messen der Auswirkung von automatisch geladenen Erweiterungen mithilfe von perfview
 
-Während der Codeanalyse kann Codepfade zu identifizieren, die Initialisierung des Pakets verlangsamen können, können Sie auch Ablaufverfolgung verwenden, mit, dass Anwendungen wie PerfView um die Auswirkungen einer Laden des Pakets in der Start von Visual Studio zu verstehen.
+Obwohl die Code Analyse bei der Identifizierung von Codepfade helfen kann, mit denen die Paket Initialisierung verlangsamt werden kann, können Sie die Ablauf Verfolgung auch verwenden, indem Sie Anwendungen wie perfview verwenden, um die Auswirkungen einer Paket Auslastung in Visual Studio zu verstehen.
 
-PerfView ist ein Ablaufverfolgungstool, eine systemweite. Dieses Tool wird Ihnen ein Verständnis Langsamster Pfade in einer Anwendung, entweder aufgrund von CPU-Auslastung oder Systemaufrufe zum Blockieren. Im folgenden finden Sie ein kurzes Beispiel analysiert eine beispielerweiterung, die PerfView unter Verwendung der [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=28567).
+Perfview ist ein systemweites Ablaufverfolgungs-Tool. Dieses Tool unterstützt Sie beim besseren Verständnis von Pfaden in einer Anwendung, entweder aufgrund der CPU-Auslastung oder Blockierungs Systemaufrufe. Im folgenden finden Sie ein kurzes Beispiel für die Analyse einer Beispiel Erweiterung mithilfe von perfview, die im [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=28567)verfügbar ist.
 
 **Beispielcode:**
 
-Dieses Beispiel basiert auf dem Beispiel folgenden Code zum Anzeigen vorgesehen ist Fall einige häufige Ursachen für die Verzögerung:
+Dieses Beispiel basiert auf dem unten aufgeführten Beispielcode, der die Groß-/Kleinschreibung bei einigen häufigen Verzögerungen anzeigt:
 
 ```csharp
 protected override void Initialize()
@@ -135,47 +135,47 @@ private void DoMoreWork()
 }
 ```
 
-**Aufzeichnen einer Ablaufverfolgungs mit PerfView:**
+**Aufzeichnen einer Ablauf Verfolgung mit perfview:**
 
-Nachdem Sie mit der Erweiterung installiert der Visual Studio-Umgebung eingerichtet haben, können Sie eine Ablaufverfolgung starten aufzeichnen, indem PerfView öffnen und die **sammeln** Dialogfeld aus der **sammeln** Menü.
+Nachdem Sie die Visual Studio-Umgebung mit installierter Erweiterung eingerichtet haben, können Sie eine Ablauf Verfolgung des Starts aufzeichnen, indem Sie perfview öffnen und im Menü **sammeln** das Dialogfeld **sammeln** öffnen.
 
-![Perfview Menü "erfassen"](media/perfview-collect-menu.png)
+![perfview-Menü "erfassen"](media/perfview-collect-menu.png)
 
-Stellt die Standardoptionen Aufruflisten für CPU-Auslastung, doch da Blockierungszeit auch interessiert sind, Sie sollten aktivieren **Thread Zeit** Stapel. Sobald die Einstellungen bereit sind, klicken Sie auf **Sammlung starten** und öffnen Sie Visual Studio nach der Aufzeichnung beginnt.
+Mit den Standardoptionen werden Aufruf Listen für die CPU-Auslastung bereitgestellt, aber da wir daran interessiert sind, die Zeit zu blockieren, sollten Sie auch **Thread Zeit** Stapel aktivieren. Wenn die Einstellungen fertig sind, können Sie auf **Sammlung starten** klicken und dann Visual Studio öffnen, nachdem die Aufzeichnung gestartet wurde.
 
-Bevor Sie die Datenerfassung beenden, um sicherzustellen, dass Visual Studio vollständig initialisiert, das Hauptfenster vollständig sichtbar ist und wenn die Erweiterung auf alle Teile der Benutzeroberfläche, die automatisch angezeigt verfügt, sind auch angezeigt werden soll. Wenn Visual Studio vollständig geladen ist, und die Erweiterung initialisiert wird, können Sie beenden, zum Analysieren der Ablaufverfolgungs aufgezeichnet.
+Bevor Sie die Auflistung beendet haben, möchten Sie sicherstellen, dass Visual Studio vollständig initialisiert ist. das Hauptfenster ist vollständig sichtbar, und wenn Ihre Erweiterung Benutzeroberflächen Elemente enthält, die automatisch angezeigt werden, sind Sie ebenfalls sichtbar. Wenn Visual Studio vollständig geladen ist und die Erweiterung initialisiert ist, können Sie die Aufzeichnung beenden, um die Ablauf Verfolgung zu analysieren.
 
-**Analysieren eine Ablaufverfolgung mit PerfView:**
+**Analysieren einer Ablauf Verfolgung mit perfview:**
 
-Nach Abschluss der Aufzeichnung PerfView automatisch die Ablaufverfolgung zu öffnen und erweitern Sie die Optionen.
+Nachdem die Aufzeichnung abgeschlossen ist, öffnet perfview automatisch die Ablauf Verfolgung und erweitert die Optionen.
 
-Für die Zwecke dieses Beispiels, interessieren wir uns vor allem die **Thread Zeit Stapel** Ansicht finden Sie unter **Gruppe erweitert**. Diese Ansicht zeigt die Gesamtzeit für einen Thread eine Methode, einschließlich CPU-Zeit und blockierte Zeit an, wie z. B. Datenträger-e/a oder auf Handles warten.
+In diesem Beispiel interessieren wir uns hauptsächlich für die **Thread Zeit Stapel** Ansicht, die Sie unter **Advanced Group**finden. In dieser Ansicht wird die Gesamtzeit angezeigt, die von einer Methode für einen Thread aufgewendet wurde, einschließlich der CPU-Zeit und der blockierten Zeit, z. b. der Datenträger-e/a
 
- ![Threadstapel-Zeit](media/perfview-thread-time-stacks.png)
+ ![Thread Zeit Stapel](media/perfview-thread-time-stacks.png)
 
- Beim Öffnen **Thread Zeit Stapel** anzuzeigen, wählen Sie die **Devenv** Prozess zur Analyse zu starten.
+ Beim Öffnen der **Thread Zeit Stapel** Ansicht sollten Sie den **devenv** -Prozess zum Starten der Analyse auswählen.
 
-PerfView detaillierte Anleitungen zum Thread Zeit-Stapel unter eigene Menü "Hilfe", um eine ausführlichere Analyse lesen. Dieses Beispiel möchten wir in dieser Ansicht weiter zu filtern, indem nur einschließlich Stapel mit unserer Pakete-Modul und der Starttyp Thread.
+Perfview enthält eine ausführliche Anleitung zum Lesen von Thread Zeit Stapeln in einem eigenen Hilfe Menü für eine ausführlichere Analyse. In diesem Beispiel möchten wir diese Ansicht weiter filtern, indem wir nur Stapel mit dem Modulnamen des Pakets und dem Start Thread einschließen.
 
-1. Legen Sie **GroupPats** , leerer Text So entfernen Sie alle möglichen Gruppierungen, die standardmäßig hinzugefügt.
-2. Legen Sie **IncPats** Teil Ihrer Assemblyname und Thread-Start zusätzlich zu vorhandenen Prozessfilter einschließen. In diesem Fall wird **Devenv; Startupthread. MakeVsSlowExtension**.
+1. Legen Sie **grouppats** auf leeren Text fest, um alle standardmäßig hinzugefügten Gruppierungen zu entfernen.
+2. Legen Sie " **incpats** " fest, um einen Teil des Assemblynamens und des Start Threads zusätzlich zum vorhandenen Prozessfilter einzubeziehen. In diesem Fall sollte Sie "Debug" lauten **. Start Thread; Makevsslowextension**.
 
-Die Ansicht zeigt jetzt nur Kosten, die mit den Assemblys, die im Zusammenhang mit der Erweiterung zugeordnet ist. In dieser Ansicht können jederzeit aufgeführt, unter dem **Inc (inklusive Kosten)** -Spalte der Start-Thread bezieht sich auf unsere gefilterte Erweiterung, und wird beim Start beeinträchtigt werden.
+Nun werden in der Ansicht nur Kosten angezeigt, die den mit der Erweiterung verbundenen Assemblys zugeordnet sind. In dieser Ansicht bezieht sich die Zeit, die in der Spalte **inkl (inklusive Kosten)** des Start Threads aufgeführt ist, auf unsere gefilterte Erweiterung und wirkt sich auf den Start aus.
 
-Im Beispiel oben einige interessante Aufruf wäre Stapel:
+Im obigen Beispiel würden einige interessante Aufruf Stapel lauten:
 
-1. Mithilfe von e/a- `System.IO` Klasse: Zwar inklusive Kosten für diese Frames zu teuer in der Ablaufverfolgung unter nicht Umständen sind jedoch eine mögliche Ursache eines Problems, da die Datei-e/a-Geschwindigkeit von Computer zu Computer unterschiedlich sind.
+1. E/ `System.IO` a mithilfe der Klasse: Obwohl die inklusiven Kosten dieser Frames in der Ablauf Verfolgung möglicherweise nicht zu teuer sind, ist dies eine mögliche Ursache für ein Problem, da die Datei-e/a-Geschwindigkeit von Computer zu Computer variiert.
 
-   ![System-e/a-frames](media/perfview-system-io-frames.png)
+   ![systemio-Frames](media/perfview-system-io-frames.png)
 
-2. Warten auf andere asynchrone Arbeit Aufrufe zum Blockieren: In diesem Fall würde der inklusiven Zeit, die Uhrzeit darzustellen, die auf den Abschluss asynchroner Arbeit der Hauptthread blockiert wird.
+2. Blockierende Aufrufe, die auf andere asynchrone Aufgaben warten: in diesem Fall würde die inklusive Zeit die Zeit darstellen, zu der der Haupt Thread nach dem Abschluss der asynchronen Arbeit blockiert wird.
 
-   ![blockierende Aufrufframes](media/perfview-blocking-call-frames.png)
+   ![Blockieren von Aufrufframes](media/perfview-blocking-call-frames.png)
 
-Für eine der anderen Ansichten in der Ablaufverfolgung, die nützlich, um zu bestimmen, Auswirkungen gibt es die **Image-Load-Stapel**. Sie können die gleichen Filter angewendet, wie auf **Thread Zeit Stapel** anzuzeigen, und erfahren Sie, alle Assemblys, die aufgrund des Codes ausgeführt, indem Ihr Auto geladene Paket geladen.
+Eine der anderen Sichten in der Ablauf Verfolgung, die zum Ermitteln der Auswirkung nützlich sein wird, sind die **Bild Lade Stapel**. Sie können dieselben Filter anwenden, die auf die **Thread Zeit Stapel** Ansicht angewendet werden, und alle Assemblys ermitteln, die aufgrund des Codes, der von dem automatisch geladenen Paket ausgeführt wird, geladen wurden.
 
-Es ist wichtig, um die Anzahl der geladenen Assemblys in einem Paket Initialisierungsroutine zu minimieren, wie jede zusätzliche Assembly zusätzlichen Datenträger-e/a umfasst die Start auf langsameren Computern erheblich verlangsamen können.
+Es ist wichtig, die Anzahl der geladenen Assemblys in einer Paket Initialisierungs Routine zu minimieren, da jede zusätzliche Assembly zusätzliche Datenträger-e/a-Vorgänge umfasst, die den Start auf langsameren Computern erheblich verlangsamen können.
 
 ## <a name="summary"></a>Zusammenfassung
 
-Beim Start von Visual Studio wurde einer der Bereiche, die wir laufend Feedback erhalten, auf. Unser Ziel, wie bereits erwähnt, ist für alle Benutzer, damit eine konsistente Start auftreten, unabhängig von Komponenten und -Erweiterungen, die sie installiert haben. Wir möchten die Arbeit mit Besitzern von Erweiterung sie uns bei der Erreichung dieses Ziels unterstützen können. In den Anweisungen oben sind hilfreich zum Verständnis der Auswirkungen Erweiterungen beim Start und zum Vermeiden von entweder der Notwendigkeit, automatisch laden "oder" Laden Sie sie asynchron, um die Auswirkungen auf die Produktivität der Benutzer zu minimieren.
+Der Start von Visual Studio war einer der Bereiche, zu denen wir ständig Feedback erhalten. Unser Ziel, wie bereits erwähnt, besteht darin, dass alle Benutzer unabhängig von den installierten Komponenten und Erweiterungen eine konsistente Start Funktion haben. Wir möchten mit Erweiterungs Besitzern zusammenarbeiten, um uns dabei zu unterstützen, dieses Ziel zu erreichen. Der obige Leitfaden sollte hilfreich sein, um die Auswirkungen von Erweiterungen auf den Start zu verstehen und entweder zu vermeiden, dass Sie automatisch geladen oder geladen werden müssen, um die Auswirkungen auf die Benutzerproduktivität zu minimieren.

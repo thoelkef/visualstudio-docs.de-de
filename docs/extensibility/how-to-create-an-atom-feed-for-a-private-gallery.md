@@ -1,7 +1,7 @@
 ---
-title: 'Gewusst wie: Erstellen eines Atomfeeds für eine private Galerie | Microsoft Docs'
+title: 'Vorgehensweise: Erstellen eines Atom-Feeds für einen privaten Katalog | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
@@ -11,30 +11,30 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72fbf2d3973ffd84de1cf6f33788c43511c3ce4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711015"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905861"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Gewusst wie: Erstellen eines Atom-Feeds für eine private Galerie
-Sie können einen Atom-Feed (RSS) an einem Intranetspeicherort erstellen, der Erweiterungen enthält, und den Feed **zu Erweiterungen und Updates** als private Galerie hinzufügen. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Vorgehensweise: Erstellen eines Atom-Feeds für einen privaten Katalog
+Sie können einen Atom (RSS)-Feed an einem Intranetspeicherort erstellen, der Erweiterungen enthält, und den Feed zu **Erweiterungen und Updates** als privaten Katalog hinzufügen. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).
 
 ## <a name="create-an-atom-feed"></a>Erstellen eines Atom-Feeds
- Um einen Atom-Feed als private Galerie zu erstellen, sammeln Sie zuerst Ihre Erweiterungen (*.vsix-Dateien)* in einem Ordner. Sie können sie in Unterordnern organisieren, wenn Sie möchten. Außerdem benötigen Sie die folgenden Ressourcen:
+ Um einen Atom-Feed als privaten Katalog zu erstellen, erfassen Sie zunächst die Erweiterungen (*VSIX* -Dateien) in einem Ordner. Wenn Sie möchten, können Sie Sie in Unterordnern organisieren. Außerdem benötigen Sie die folgenden Ressourcen:
 
-- Eine *atom.xml-Datei,* die die Erweiterungen als private Galerie verfügbar macht. Informationen zum Verbinden der *datei atom.xml* mit **Erweiterungen und Updates**finden Sie unter Private [Galerien](../extensibility/private-galleries.md).
+- Eine *atom.xml* Datei, die die Erweiterungen als private Galerie verfügbar macht. Informationen dazu, wie Sie die *atom.xml* Datei mit **Erweiterungen und Updates**verbinden, finden Sie unter [private Galerien](../extensibility/private-galleries.md).
 
-- Ein Ordner, der alle Bilddateien enthält, die aus den Erweiterungen extrahiert wurden (z. B. Screenshots). Die *Datei atom.xml* enthält relative Links zu diesen Bildern, sodass sie in **Erweiterungen und Updates**verfügbar sind.
+- Ein Ordner, der alle Bilddateien enthält, die aus den Erweiterungen extrahiert wurden (z. b. Bildschirmaufnahmen). Die *atom.xml* Datei enthält relative Links zu diesen Bildern, sodass Sie in **Erweiterungen und Updates**verfügbar sind.
 
-  Angenommen, Sie haben die folgenden beiden Erweiterungen in einem Ordner gesammelt:
+  Nehmen Sie beispielsweise an, dass Sie die folgenden beiden Erweiterungen in einem Ordner gesammelt haben:
 
-- *Template_Wizard_239.vsix*, bei dem es sich um eine leere VSIX-Projektvorlage handelt.
+- *Template_Wizard_239. vsix*, eine leere VSIX-Projektvorlage.
 
-- *SelectionHighlight.vsix*, ein Werkzeug zum Hervorheben aller Instanzen eines ausgewählten Wortes.
+- *Selectionhighlight. vsix*, bei dem es sich um ein Tool zum Hervorheben aller Instanzen eines ausgewählten Worts handelt.
 
-  Der Inhalt der *Datei atom.xml* würde dem folgenden Beispiel ähneln:
+  Der Inhalt der *atom.xml* Datei ähnelt dem folgenden Beispiel:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,7 +70,7 @@ Sie können einen Atom-Feed (RSS) an einem Intranetspeicherort erstellen, der Er
 </feed>
 ```
 
- Beachten Sie, dass sich die beiden Link-Tags auf Screenshots im generierten Bildordner beziehen.
+ Beachten Sie, dass sich die beiden Linktags auf Screenshots im generierten Ordner von Images beziehen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Private Galerien](../extensibility/private-galleries.md)

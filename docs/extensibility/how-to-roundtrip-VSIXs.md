@@ -1,19 +1,19 @@
 ---
 title: Roundtrip-Erweiterungen
 ms.date: 06/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
 ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269064"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905776"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Gewusst wie: Erstellen von mit Visual Studio 2019/2017 und Visual Studio 2015 kompatiblen Erweiterungen
 
@@ -29,16 +29,16 @@ Im folgenden finden Sie einen Überblick über die Schritte, die Sie in diesem D
 1. Importieren Sie richtige nuget-Pakete.
 2. Erweiterungs Manifest aktualisieren:
     * Installationsziel
-    * Erforderliche Komponenten
+    * Voraussetzungen
 3. Aktualisieren Sie csproj:
     * Aktualisieren Sie `<MinimumVisualStudioVersion>`.
     * Hinzufügen der `<VsixType>`-Eigenschaft
     * Fügen Sie die Debugeigenschaft `($DevEnvDir)` 3 Mal hinzu.
     * Fügen Sie Bedingungen zum Importieren von Buildtools und Zielen hinzu.
 
-4. Kompilieren und testen
+4. Build und Test
 
-## <a name="environment-setup"></a>Umgebungseinrichtung
+## <a name="environment-setup"></a>Einrichten der Umgebung
 
 In diesem Dokument wird davon ausgegangen, dass Sie Folgendes auf Ihrem Computer installiert haben:
 
@@ -49,16 +49,16 @@ In diesem Dokument wird davon ausgegangen, dass Sie Folgendes auf Ihrem Computer
 
 Es wird dringend empfohlen, dieses Upgrade mit Visual Studio 2015 anstelle von Visual Studio 2019 oder 2017 zu starten. Der Hauptvorteil der Entwicklung in Visual Studio 2015 besteht darin, sicherzustellen, dass Sie nicht auf Assemblys verweisen, die in Visual Studio 2015 nicht verfügbar sind. Wenn Sie in Visual Studio 2019 oder 2017 entwickeln, besteht das Risiko, dass Sie eine Abhängigkeit von einer Assembly einführen, die nur in Visual Studio 2019 oder 2017 vorhanden ist.
 
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>Stellen Sie sicher, dass kein Verweis auf Project. JSON vorhanden ist.
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>Stellen Sie sicher, dass kein Verweis auf project.jsvorhanden ist.
 
-Später in diesem Dokument fügen wir Anweisungen für den bedingten Import in die*csproj* -Datei ein. Dies funktioniert nicht, wenn Ihre nuget-Verweise in " *Project. JSON*" gespeichert werden. Daher wird empfohlen, alle nuget-Verweise in die Datei " *Packages. config* " zu verschieben.
-Wenn das Projekt eine *Project. JSON* -Datei enthält:
+Später in diesem Dokument fügen wir Anweisungen für den bedingten Import in die*csproj* -Datei ein. Dies funktioniert nicht, wenn Ihre nuget-Verweise in *project.js*gespeichert werden. Daher wird empfohlen, alle nuget-Verweise in die *packages.config* Datei zu verschieben.
+Wenn das Projekt einen *project.jsfür* die Datei enthält:
 
-* Notieren Sie sich die Verweise in *Project. JSON*.
-* Löschen Sie im **Projektmappen-Explorer**die Datei *Project. JSON* aus dem Projekt. Dadurch wird die Datei " *Project. JSON* " gelöscht und aus dem Projekt entfernt.
+* Notieren Sie sich die Verweise in *project.js*.
+* Löschen Sie aus dem **Projektmappen-Explorer**den *project.jsfür* die Datei aus dem Projekt. Dadurch wird der *project.jsfür* die Datei gelöscht und aus dem Projekt entfernt.
 * Fügen Sie dem Projekt die nuget-Verweise wieder hinzu:
   * Klicken Sie mit der rechten Maustaste auf die **Lösung** , und wählen Sie **nuget-Pakete für**Projekt Mappe verwalten.
-  * Visual Studio erstellt automatisch die Datei " *Packages. config* " für Sie.
+  * Visual Studio erstellt die *packages.config* Datei automatisch für Sie.
 
 > [!NOTE]
 > Wenn in Ihrem Projekt die Option zum Hinzufügen von Paketen enthalten ist, müssen Sie möglicherweise hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Verweise** **Verweis hinzufügen** und den entsprechenden Verweis hinzufügen Die Verwendung von nuget-Paketen kann beim Erstellen des Projekts zu Fehlern führen.
@@ -71,8 +71,8 @@ Zum Erstellen und Bereitstellen eines VSIXv3 in Visual Studio 2015 und 2019/2017
 
 Version | Integrierte Tools
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2019 oder 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2015 | Microsoft. VisualStudio. SDK. BuildTasks. 14,0
+Visual Studio 2019 oder 2017 | Microsoft. VSSDK. Buildtool
 
 Gehen Sie hierzu wie folgt vor:
 
@@ -127,7 +127,7 @@ Es wird dringend empfohlen, während dieses Schritts einen Verweis auf eine geä
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. aktualisieren Sie die minimumvisualstudioversion.
 
-* Legen Sie die minimale Visual Studio-Version auf `$(VisualStudioVersion)` fest, und fügen Sie eine bedingte Anweisung dafür hinzu. Fügen Sie diese Tags hinzu, wenn Sie nicht vorhanden sind. Stellen Sie Folgendes sicher:
+* Legen Sie die minimale Visual Studio-Version auf fest, `$(VisualStudioVersion)` und fügen Sie dafür eine bedingte Anweisung hinzu. Fügen Sie diese Tags hinzu, wenn Sie nicht vorhanden sind. Stellen Sie Folgendes sicher:
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -136,10 +136,10 @@ Es wird dringend empfohlen, während dieses Schritts einen Verweis auf eine geä
 
 ### <a name="2-add-the-vsixtype-property"></a>2. Fügen Sie die vsixtype-Eigenschaft hinzu.
 
-* Fügen Sie den folgenden Tag `<VsixType>v3</VsixType>` einer Eigenschaften Gruppe hinzu.
+* Fügen Sie das folgende-Tag `<VsixType>v3</VsixType>` zu einer Eigenschaften Gruppe hinzu.
 
 > [!NOTE]
-> Es wird empfohlen, dieses unter dem `<OutputType></OutputType>`-Tag hinzuzufügen.
+> Es wird empfohlen, dieses unter dem- `<OutputType></OutputType>` Tag hinzuzufügen.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Hinzufügen der Debugeigenschaften
 
@@ -163,7 +163,7 @@ Es wird dringend empfohlen, während dieses Schritts einen Verweis auf eine geä
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Hinzufügen von Bedingungen zu den Build Tools Imports
 
-* Fügen Sie den `<import>`-Tags, die über eine Microsoft. VSSDK. Buildtools-Referenz verfügen, zusätzliche Bedingungs Anweisungen hinzu. Fügen Sie `'$(VisualStudioVersion)' != '14.0' And` an der Vorderseite der Bedingungs Anweisung ein. Diese Anweisungen werden in der Kopfzeile und Fußzeile der CSPROJ-Datei angezeigt.
+* Fügen Sie den `<import>` Tags, die über eine Microsoft. VSSDK. Buildtools-Referenz verfügen, zusätzliche bedingte Anweisungen hinzu. INSERT `'$(VisualStudioVersion)' != '14.0' And` an der Vorderseite der Bedingungs Anweisung. Diese Anweisungen werden in der Kopfzeile und Fußzeile der CSPROJ-Datei angezeigt.
 
 Beispiel:
 
@@ -171,7 +171,7 @@ Beispiel:
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Fügen Sie den `<import>`-Tags, die über eine Microsoft. VisualStudio. SDK. BuildTasks. 14,0 verfügen, zusätzliche Bedingungs Anweisungen hinzu. Fügen Sie `'$(VisualStudioVersion)' == '14.0' And` an der Vorderseite der Bedingungs Anweisung ein. Diese Anweisungen werden in der Kopfzeile und Fußzeile der CSPROJ-Datei angezeigt.
+* Fügen Sie den `<import>` Tags, die über eine Microsoft. VisualStudio. SDK. BuildTasks. 14,0 verfügen, zusätzliche Bedingungs Anweisungen hinzu. INSERT `'$(VisualStudioVersion)' == '14.0' And` an der Vorderseite der Bedingungs Anweisung. Diese Anweisungen werden in der Kopfzeile und Fußzeile der CSPROJ-Datei angezeigt.
 
 Beispiel:
 
@@ -179,7 +179,7 @@ Beispiel:
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Fügen Sie den `<Error>`-Tags, die über eine Microsoft. VSSDK. Buildtools-Referenz verfügen, zusätzliche Bedingungs Anweisungen hinzu. Fügen Sie hierzu `'$(VisualStudioVersion)' != '14.0' And` an der Vorderseite der Bedingungs Anweisung ein. Diese Anweisungen werden in der Fußzeile der CSPROJ-Datei angezeigt.
+* Fügen Sie den `<Error>` Tags, die über eine Microsoft. VSSDK. Buildtools-Referenz verfügen, zusätzliche bedingte Anweisungen hinzu. Fügen Sie hierzu `'$(VisualStudioVersion)' != '14.0' And` am Anfang der Condition-Anweisung ein. Diese Anweisungen werden in der Fußzeile der CSPROJ-Datei angezeigt.
 
 Beispiel:
 
@@ -187,7 +187,7 @@ Beispiel:
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Fügen Sie den `<Error>`-Tags, die über eine Microsoft. VisualStudio. SDK. BuildTasks. 14,0 verfügen, zusätzliche Bedingungs Anweisungen hinzu. Fügen Sie `'$(VisualStudioVersion)' == '14.0' And` an der Vorderseite der Bedingungs Anweisung ein. Diese Anweisungen werden in der Fußzeile der CSPROJ-Datei angezeigt.
+* Fügen Sie den `<Error>` Tags, die über eine Microsoft. VisualStudio. SDK. BuildTasks. 14,0 verfügen, zusätzliche Bedingungs Anweisungen hinzu. INSERT `'$(VisualStudioVersion)' == '14.0' And` an der Vorderseite der Bedingungs Anweisung. Diese Anweisungen werden in der Fußzeile der CSPROJ-Datei angezeigt.
 
 Beispiel:
 
@@ -207,7 +207,7 @@ An diesem Punkt sollte Ihr Projekt bereit sein, ein VSIXv3 zu erstellen, das sow
 * Navigieren Sie zu Ihrem Projektverzeichnis.
 * Öffnen Sie den Ordner *\bin\debug* .
 * Doppelklicken Sie auf die vsix-Datei, und installieren Sie die Erweiterung in Visual Studio 2015 und Visual Studio 2019/2017.
-* Stellen Sie sicher, dass die **Erweiterung unter Extras > ** **Erweiterungen und Updates** im Abschnitt **installiert** angezeigt wird.
+* Stellen Sie sicher, dass die **Erweiterung unter Extras**  >  **Erweiterungen und Updates** im Abschnitt **installiert** angezeigt wird.
 * Versuchen Sie, die Erweiterung auszuführen, und überprüfen Sie, ob die Erweiterung funktioniert.
 
 ![VSIX suchen](media/finding-a-VSIX-example.png)

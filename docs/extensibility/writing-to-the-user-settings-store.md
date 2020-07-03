@@ -1,28 +1,28 @@
 ---
-title: Schreiben in den Benutzereinstellungen Store | Microsoft Docs
+title: Schreiben in den Benutzer Einstellungs Speicher | Microsoft-Dokumentation
 ms.date: 05/23/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bed721cc084042c3ebe57639af28b7e9f13d206
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: ec4d9cdda975d0f80e9d8523ec18a19c24c9418a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740360"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906201"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen
-Benutzereinstellungen sind schreibbare Einstellungen wie die im Dialogfeld **Extras / Optionen,** Eigenschaftenfenster und bestimmte andere Dialogfelder. Visual Studio-Erweiterungen können diese zum Speichern kleiner Datenmengen verwenden. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Visual Studio Als externes Tool notizen, indem Sie aus dem Benutzereinstellungsspeicher lesen und in den Benutzereinstellungen-Speicher schreiben.
+Benutzereinstellungen sind beschreibbare Einstellungen wie diejenigen im Dialogfeld Extras **/Optionen** , Eigenschaften Fenster und bestimmte andere Dialogfelder. In Visual Studio-Erweiterungen können diese zum Speichern kleiner Datenmengen verwendet werden. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in Visual Studio Notepad als externes Tool hinzufügen, indem Sie aus dem Benutzer Einstellungs Speicher lesen und darin schreiben.
 
 ## <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen UserSettingsStoreExtension, und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen UserSettingsStoreCommand hinzu. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Erstellen Sie ein VSIX-Projekt namens usersettingsstoreextension, und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen usersettingsstorecommand hinzu. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .
 
-2. Fügen Sie in UserSettingsStoreCommand.cs die folgenden Anweisungen mithilfe von Direktiven hinzu:
+2. Fügen Sie in UserSettingsStoreCommand.cs die folgenden using-Direktiven hinzu:
 
     ```csharp
     using System.Collections.Generic;
@@ -30,7 +30,7 @@ Benutzereinstellungen sind schreibbare Einstellungen wie die im Dialogfeld **Ext
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3. Löschen Sie in MenuItemCallback den Text der Methode, und rufen Sie den Benutzereinstellungenspeicher wie folgt ab:
+3. Löschen Sie in MenuItemCallBack den Text der-Methode, und rufen Sie den Benutzer Einstellungs Speicher wie folgt ab:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -40,7 +40,7 @@ Benutzereinstellungen sind schreibbare Einstellungen wie die im Dialogfeld **Ext
     }
     ```
 
-4. Finden Sie nun heraus, ob Notepad bereits als externes Werkzeug festgelegt ist. Sie müssen alle externen Tools durchlaufen, um zu bestimmen, ob die ToolCmd-Einstellung "Notepad" ist, wie folgt:
+4. Stellen Sie nun fest, ob Notepad bereits als externes Tool festgelegt ist. Sie müssen alle externen Tools durchlaufen, um zu bestimmen, ob die toolcmd-Einstellung wie folgt "Notepad" lautet:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -64,7 +64,7 @@ Benutzereinstellungen sind schreibbare Einstellungen wie die im Dialogfeld **Ext
 
     ```
 
-5. Wenn Notepad nicht als externes Werkzeug festgelegt wurde, legen Sie es wie folgt fest:
+5. Wenn Notepad nicht als externes Tool festgelegt wurde, legen Sie es wie folgt fest:
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -100,10 +100,10 @@ Benutzereinstellungen sind schreibbare Einstellungen wie die im Dialogfeld **Ext
     }
     ```
 
-6. Testen des Codes Denken Sie daran, dass es Notepad als externes Tool hinzufügt, daher müssen Sie die Registrierung zurücksetzen, bevor Sie sie ein zweites Mal ausführen.
+6. Testen des Codes Beachten Sie, dass Sie Notepad als externes Tool hinzufügt, sodass Sie ein Rollback der Registrierung ausführen müssen, bevor Sie ein zweites Mal ausgeführt wird.
 
-7. Erstellen Sie den Code, und beginnen Sie mit dem Debuggen.
+7. Erstellen Sie den Code, und starten Sie das Debugging.
 
-8. Klicken Sie im Menü **Extras** auf **UserSettingsStoreCommand aufrufen**. Dadurch wird Notepad zum **Menü Extras** hinzugefügt.
+8. Klicken Sie **im Menü Extras** auf **usersettingsstorecommand aufrufen**. Dadurch wird Notepad **zum Menü Extras** hinzugefügt.
 
-9. Jetzt sollten Sie Notepad im Menü Extras / Optionen sehen, und wenn Sie **auf Notepad** klicken, sollte eine Instanz von Notepad angezeigt werden.
+9. Nun sollte im Menü Extras/Optionen Notepad angezeigt werden, und durch Klicken auf **Notepad** sollte eine Instanz von Notepad angezeigt werden.

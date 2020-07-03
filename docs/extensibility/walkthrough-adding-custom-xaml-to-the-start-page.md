@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Startseite | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Start Seite | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - custom start page
 - xaml start page
@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4e2afc90dc96978e8a8290afaa2d3278e8b621b3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: a13aada6cca9b54d8469885ab4c314a89cd06d6c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697675"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905958"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Startseite
 
-In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine benutzerdefinierte Visual Studio-Startseite erstellen, die einen Webbrowser enthält.
+In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine benutzerdefinierte Visual Studio-Startseite erstellt wird, die einen Webbrowser enthält.
 
-## <a name="add-custom-xaml"></a>Hinzufügen von benutzerdefiniertem XAML
+## <a name="add-custom-xaml"></a>Benutzerdefiniertes XAML hinzufügen
 
-1. Erstellen Sie eine Startseite, indem Sie den Anweisungen unter [Erstellen einer benutzerdefinierten Startseite](../extensibility/creating-a-custom-start-page.md)folgen.
+1. Erstellen Sie eine Startseite, indem Sie die Anweisungen unter [Erstellen einer benutzerdefinierten Startseite](../extensibility/creating-a-custom-start-page.md)befolgen.
 
-2. Suchen Sie in der Datei *MainWindow.xaml* den \<Abschnitt Grid>.
+2. Suchen Sie in der Datei " *MainWindow. XAML* " den \<Grid> Abschnitt.
 
-3. Fügen \<Sie ein TabControl->-Element und einen \<TabItem-> innerhalb des \< Grid->-Elements hinzu, wie im folgenden Beispiel gezeigt.
+3. Fügen Sie im \<TabControl> -Element ein-Element und ein-Element hinzu \<TabItem> \< Grid> , wie im folgenden Beispiel gezeigt.
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine benutzerdefin
     </Grid>
     ```
 
-4. Fügen Sie \<ein zweites TabItem-> hinzu, mit einem \<Button->-Element, das ein neues Projekt öffnet:
+4. Fügen Sie eine Sekunde \<TabItem> mit einem-Element hinzu, \<Button> das ein neues Projekt öffnet:
 
     ```xml
     <Grid>
@@ -63,31 +63,31 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine benutzerdefin
 
 1. Drücken Sie **F5**.
 
-     Die experimentelle Instanz von Visual Studio wird geöffnet, wobei die benutzerdefinierte Startseite installiert, aber nicht ausgewählt ist.
+     Die experimentelle Instanz von Visual Studio wird geöffnet, und die benutzerdefinierte Startseite ist installiert, aber nicht ausgewählt.
 
-2. Öffnen Sie in der experimentellen Instanz von Visual Studio die Seite **Extras /Optionen / Umgebung.**
+2. Öffnen Sie in der experimentellen Instanz von Visual Studio die Seite Extras **/options/Umgebung** .
 
-3. Wählen Sie **Start**. Wählen Sie in der Liste **Startseite anpassen** Ihre *.xaml-Datei* aus, und klicken Sie auf **OK**.
+3. Wählen Sie **Start**aus. Wählen Sie in der Liste **Start Seite anpassen** die *XAML* -Datei aus, und klicken Sie auf **OK**.
 
 4. Klicken Sie im Menü **Ansicht** auf **Startseite**.
 
-5. Klicken Sie auf die **Registerkarte Bing.**
+5. Klicken Sie **auf die Register** Karte "von
 
-     Es sollte eine Bing-Webseite angezeigt werden.
+     Sie sollten eine Seite mit der Seite "Web" sehen.
 
-6. Klicken Sie auf die Registerkarte **MyButton.**
+6. Klicken Sie auf die Registerkarte **myButton** .
 
-     Es sollte eine **MyProject-Schaltfläche** angezeigt werden, die das Dialogfeld **Neues Projekt** öffnet.
+     Es sollte eine Schaltfläche " **MyProject** " angezeigt werden, die das Dialogfeld " **Neues Projekt** " öffnet.
 
 7. Schließen Sie die experimentelle Instanz.
 
-Um die benutzerdefinierte Startseite anzuwenden, wählen Sie unter **Tools** > **Options** > **Environment**die Option **Start**aus. Wählen Sie in der Liste **Startseite anpassen** Ihre *.xaml-Datei* aus, und klicken Sie auf **OK**.
+Wählen Sie zum Anwenden der benutzerdefinierten Start **Tools**Seite unter Extras  >  **Optionen**  >  **Umgebung**die Option **Start**aus. Wählen Sie in der Liste **Start Seite anpassen** die *XAML* -Datei aus, und klicken Sie auf **OK**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die Startseite von Visual Studio enthält jetzt eine Registerkarte, auf der eine Webbrowser-Registerkarte und eine MyButton-Registerkarte angezeigt wird. Sie können benutzerdefinierte Startseiten mit anderen Funktionen erstellen, indem Sie das *CodeBehind-Modell* verwenden, um eine benutzerdefinierte DLL hinzuzufügen, wie unter [Hinzufügen der Benutzersteuerung zur Startseite](../extensibility/adding-user-control-to-the-start-page.md)gezeigt. Sie können benutzerdefinierte Startseiten für andere Benutzer freigeben, indem Sie die resultierende .vSix-Datei auf der [Visual Studio Marketplace-Website](https://marketplace.visualstudio.com/) oder auf einer anderen Website oder Netzwerkfreigabe veröffentlichen. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
+Die Visual Studio-Startseite enthält jetzt eine Registerkarte, auf der eine Registerkarte mit dem Webbrowser und die Registerkarte MyButton angezeigt wird. Sie können benutzerdefinierte Startseiten mit anderer Funktionalität erstellen, indem Sie das *Code Behind-* Modell zum Hinzufügen einer benutzerdefinierten DLL verwenden, wie unter [Hinzufügen eines Benutzer Steuer Elements zur Startseite](../extensibility/adding-user-control-to-the-start-page.md)gezeigt. Sie können benutzerdefinierte Startseiten für andere Benutzer freigeben, indem Sie die resultierende vsix-Datei auf der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website oder auf einer anderen Website oder Netzwerkfreigabe veröffentlichen. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)
-- [WPF-Containersteuerelemente](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [WPF-Container Steuerelemente](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
