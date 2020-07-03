@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0181ee305c99a1d0af1d3e1e965c6ac8fe16f375
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572271"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835666"
 ---
 # <a name="active-script-debugging-overview"></a>Debuggen mit Active Script - Übersicht
 Die Schnittstellen zum Debuggen mit Active Script ermöglichen ein sprachneutrales, hostneutrales Debuggen und unterstützen eine Vielzahl von Entwicklungsumgebungen.  
   
- ![Skript Host Prozess](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Script Host-Prozess](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Abbildung 1  
   
  Eine sprachneutrale Debugumgebung kann alle Programmiersprachen oder eine Kombination aus Programmiersprachen unterstützen, ohne dass bestimmte Kenntnisse einer dieser Sprachen erforderlich sind. Zudem unterstützt die Debugumgebung sprachübergreifendes Stepping sowie sprachübergreifende Haltepunkte. (Hauptschwerpunkt dieser Übersicht ist die Unterstützung von Skriptsprachen, wie z.B. VBScript und [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  
@@ -43,19 +43,19 @@ Abbildung 1
   
  **Computerbasierter Debug-Manager** Eine Komponente, die eine Registrierung von debugfähigen Anwendungsprozessen verwaltet.  
   
- **Prozessbasierter Debug-Manager**  
+ **Process Debug Manager**  
  Eine Komponente, die die Struktur von debugfähigen Dokumenten für eine bestimmte Anwendung verwaltet, die ausgeführten Threads nachverfolgt usw.  
   
- **Dokumentkontext**  
+ **Dokument Kontext**  
  Ein Dokumentenkontext ist eine Abstraktion, die einen bestimmten Bereich im Quellcode eines Hostdokuments darstellt.  
   
- **Codekontext**  
+ **Code Kontext**  
  Ein Codekontext stellt eine bestimmte Position im ausgeführten Code einer Sprach-Engine dar (einen „virtuellen Anweisungszeiger“) dar.  
   
  **Ausdruckskontext**  
  Ein bestimmter Kontext (z.B. ein Stapelrahmen), in dem Ausdrücke von einer Sprach-Engine ausgewertet werden können.  
   
- **Objektsuche**  
+ **Objektkatalog**  
  Eine strukturierte, sprachunabhängige Darstellung von Name, Typ, Wert und Unterobjekten eines Objekts, die für die Implementierung einer „Überwachungsfenster“-Benutzeroberfläche geeignet ist.  
   
  Es folgt eine Übersicht über alle Active Debugging-Schlüsselkomponenten und entsprechenden, zugeordneten Schnittstellen, gefolgt von den Details zu diesen Schnittstellen.  
@@ -184,7 +184,7 @@ Abbildung 1
  Erweitert die Funktionalität der `IDebugDocumentProvider`-Schnittstelle durch die Bereitstellung eines Kontexts innerhalb einer Projektstruktur.  
   
 ## <a name="debugger-ide"></a>Debugger-IDE  
- Die IDE ist eine sprachunabhängige Debugging-Benutzeroberfläche. Sie stellt Folgendes bereit:  
+ Die IDE ist eine sprachunabhängige Debugging-Benutzeroberfläche. Die Lösung umfasst Folgendes:  
   
 - Dokumentviewer/-editoren.  
   

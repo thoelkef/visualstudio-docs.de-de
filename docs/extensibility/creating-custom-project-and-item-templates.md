@@ -1,90 +1,90 @@
 ---
-title: Erstellen benutzerdefinierter Projekt- und Elementvorlagen | Microsoft Docs
+title: Erstellen von benutzerdefinierten Projekt-und Element Vorlagen | Microsoft-Dokumentation
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae404004f2660048ef7581a661d8f785495ed95a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 5c702aaaa51d86e2b8aac18a6b55201be03a635f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739449"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903319"
 ---
-# <a name="create-custom-project-and-item-templates"></a>Erstellen benutzerdefinierter Projekt- und Elementvorlagen
+# <a name="create-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt-und Element Vorlagen
 
-Das Visual Studio SDK enthält Projektvorlagen, die eine benutzerdefinierte Projektvorlage und eine benutzerdefinierte Elementvorlage erstellen. Diese Vorlagen enthalten einige häufige Parameterersetzungen und werden als ZIP-Dateien erstellt. Sie werden nicht automatisch bereitgestellt und sind in der experimentellen Instanz nicht verfügbar. Sie müssen die generierte ZIP-Datei in das Benutzervorlagenverzeichnis kopieren.
+Das Visual Studio SDK enthält Projektvorlagen, die eine benutzerdefinierte Projektvorlage und eine benutzerdefinierte Element Vorlage erstellen. Diese Vorlagen enthalten einige allgemeine Parameter Ersetzungen und erstellen als ZIP-Dateien. Sie werden nicht automatisch bereitgestellt und sind in der experimentellen Instanz nicht verfügbar. Sie müssen die generierte ZIP-Datei in das Verzeichnis der Benutzer Vorlage kopieren.
 
-Mit den Vorlagenerstellungsvorlagen können Sie Vorlagen in größere Erweiterungen einschließen. Auf diese Weise können Sie die Versionskontrolle für die Quelldateien implementieren und eine Gruppe von Vorlagenprojekten in einem VSIX-Paket erstellen.
+Mit Vorlagen Erstellungs Vorlagen können Sie Vorlagen in größeren Erweiterungen einschließen. Auf diese Weise können Sie die Versionskontrolle für die Quelldateien implementieren und eine Gruppe von Vorlagen Projekten in einem VSIX-Paket erstellen.
 
-Sie können auch eine Vorlage für die Installation von NuGet-Paketen konfigurieren. Weitere Informationen finden Sie unter [NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates).
+Sie können auch eine Vorlage für die Installation von nuget-Paketen konfigurieren. Weitere Informationen finden Sie unter [nuget-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates).
 
-Für grundlegende Vorlagenerstellungsszenarien sollten Sie den **Assistenten zum Exportieren** von Vorlagen verwenden, der in einer komprimierten Datei ausgegeben wird. Weitere Informationen zur Erstellung grundlegender Vorlagen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
+Für grundlegende Vorlagen Erstellungs Szenarien sollten Sie den Assistenten zum **Exportieren von Vorlagen** verwenden, der in eine komprimierte Datei ausgibt. Weitere Informationen zum Erstellen von grundlegenden Vorlagen finden Sie unter [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md).
 
 > [!NOTE]
-> Ab Visual Studio 2017 wird das Scannen nach benutzerdefinierten Projekt- und Elementvorlagen nicht mehr ausgeführt. Stattdessen muss die Erweiterung Vorlagenmanifestdateien bereitstellen, die den Installationsspeicherort dieser Vorlagen beschreiben. Sie können Visual Studio 2017 verwenden, um Ihre VSIX-Erweiterungen zu aktualisieren. Wenn Sie ihre Erweiterung mit einer MSI bereitstellen, müssen Sie die Vorlagenmanifestdateien von Hand generieren. Weitere Informationen finden Sie unter [Aktualisieren benutzerdefinierter Projekt- und Elementvorlagen für Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Das Vorlagenmanifestschema wird in [Visual Studio-Vorlagenmanifestschemareferenz](../extensibility/visual-studio-template-manifest-schema-reference.md)dokumentiert.
+> Ab Visual Studio 2017 wird das Scannen von benutzerdefinierten Projekt-und Element Vorlagen nicht mehr durchgeführt. Stattdessen muss die Erweiterung Vorlagen Manifest-Dateien bereitstellen, die den Installationsort dieser Vorlagen beschreiben. Sie können Visual Studio 2017 zum Aktualisieren der VSIX-Erweiterungen verwenden. Wenn Sie Ihre Erweiterung mithilfe einer MSI-Datei bereitstellen, müssen Sie die Vorlagen Manifest-Dateien per Hand generieren. Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekt-und Element Vorlagen für Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Das Vorlagen Manifest-Schema ist in der [Schema Referenz für den Visual Studio-Vorlagen Manifest](../extensibility/visual-studio-template-manifest-schema-reference.md)dokumentiert.
 
 ## <a name="create-a-project-template"></a>Erstellen einer Projektvorlage
 
-1. Erstellen Sie ein Projektvorlagenprojekt. Sie können die Projektvorlage im Dialogfeld **"Neues Projekt"** finden, indem Sie nach "Projektvorlage" suchen und entweder die Version "C" oder "Visual Basic" auswählen.
+1. Erstellen Sie ein Projektvorlagen Projekt. Sie finden die Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "Projektvorlage" suchen und entweder die c#-oder Visual Basic-Version auswählen.
 
-     Die Vorlage generiert eine Klassendatei, ein Symbol, eine *.vstemplate-Datei,* eine bearbeitbare Projektdatei namens *ProjectTemplate.vbproj* oder *ProjectTemplate.csproj*und einige Dateien, die normalerweise von anderen Projekttypen generiert werden, z. B. einer *Datei resources.resx,* einer *AssemblyInfo-Datei* und einer *.settings-Datei.* Jede Codedatei enthält ggf. allgemeine Parameterersetzungen.
+     Die Vorlage generiert eine Klassendatei, ein Symbol, eine *VSTEMPLATE* -Datei, eine bearbeitbare Projektdatei namens " *ProjectTemplate. vbproj* " oder " *ProjectTemplate. csproj*" sowie einige Dateien, die in der Regel von anderen Projekttypen generiert werden, z. *b.* *die Datei "* *Resources* Jede Codedatei enthält ggf. allgemeine Parameter Ersetzungen.
 
-![Projektvorlagenprojektauswahl](media/project-template-selection.png)
+![Projektvorlagen Projektauswahl](media/project-template-selection.png)
 
-2. Fügen Sie Elemente nach Bedarf für Ihr Projekt hinzu und entfernen Sie sie aus dem Projekt. Entfernen Sie nicht die bearbeitbare Projektdatei, die *AssemblyInfo-Datei* oder die *.vstemplate-Datei.*
+2. Fügen Sie dem Projekt, wie für Ihr Projekt erforderlich, Elemente hinzu, und entfernen Sie Sie. Entfernen Sie die bearbeitbare Projektdatei, die *AssemblyInfo* -Datei oder die *VSTEMPLATE* -Datei nicht.
 
-3. Aktualisieren Sie die *.vstemplate-Datei,* um alle Hinzufügungen und Löschungen widerzuspiegeln. Das [Project-Element](../extensibility/project-element-visual-studio-templates.md) muss ein [ProjectItem-Element](../extensibility/projectitem-element-visual-studio-item-templates.md) für jede Datei enthalten, die in die Vorlage aufgenommen werden soll.
+3. Aktualisieren Sie die *VSTEMPLATE* -Datei, um Ergänzungen und Löschvorgänge widerzuspiegeln. Das [Project](../extensibility/project-element-visual-studio-templates.md) -Element muss ein [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei enthalten, die in der Vorlage enthalten sein soll.
 
-4. Ändern Sie Ihre Codedateien und andere benutzerbezogene Inhalte, und fügen Sie entsprechende Parameterersetzungen hinzu.
+4. Ändern Sie die Code Dateien und anderen Benutzer seitigen Inhalt, und fügen Sie entsprechende Parameter Ersetzungen hinzu.
 
 5. Ändern Sie den generierten Inhalt nach Bedarf.
 
 6. Erstellen Sie das Projekt.
 
-     Visual Studio *.zip* erstellt eine ZIP-Datei, die Ihre Vorlage enthält. Sie wird nicht bereitgestellt und ist in der experimentellen Instanz nicht verfügbar.
+     Visual Studio erstellt eine *ZIP* -Datei, die Ihre Vorlage enthält. Sie wurde nicht bereitgestellt und ist in der experimentellen Instanz nicht verfügbar.
 
 ## <a name="create-an-item-template"></a>Erstellen einer Elementvorlage
 
-1. Erstellen Sie ein Elementvorlagenprojekt.
+1. Erstellen Sie ein Element Vorlagen Projekt.
 
-     Die Vorlage generiert eine Klassendatei, ein Symbol, eine *.vstemplate-Datei* und eine *AssemblyInfo-Datei.* Die Klassendatei enthält einige häufige Parameterersetzungen.
+     Die Vorlage generiert eine Klassendatei, ein Symbol, eine *VSTEMPLATE* -Datei und eine *AssemblyInfo* -Datei. Die Klassendatei enthält einige allgemeine Parameter Ersetzungen.
 
-2. Fügen Sie Elemente nach Bedarf für Ihr Projekt hinzu und entfernen Sie sie aus dem Projekt.
+2. Fügen Sie dem Projekt, wie für Ihr Projekt erforderlich, Elemente hinzu, und entfernen Sie Sie.
 
-3. Aktualisieren Sie die *.vstemplate-Datei,* um alle Hinzufügungen und Löschungen widerzuspiegeln. Das [Project-Element](../extensibility/project-element-visual-studio-templates.md) muss ein [ProjectItem-Element](../extensibility/projectitem-element-visual-studio-item-templates.md) für jede Datei enthalten, die in die Vorlage aufgenommen werden soll.
+3. Aktualisieren Sie die *VSTEMPLATE* -Datei, um Ergänzungen und Löschvorgänge widerzuspiegeln. Das [Project](../extensibility/project-element-visual-studio-templates.md) -Element muss ein [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei enthalten, die in der Vorlage enthalten sein soll.
 
-4. Ändern Sie Ihre Codedateien und andere benutzerbezogene Inhalte, und fügen Sie entsprechende Parameterersetzungen hinzu.
+4. Ändern Sie die Code Dateien und anderen Benutzer seitigen Inhalt, und fügen Sie entsprechende Parameter Ersetzungen hinzu.
 
-5. Ändern Sie generierte Inhalte nach Bedarf.
+5. Ändern Sie den generierten Inhalt nach Bedarf.
 
 6. Erstellen Sie das Projekt.
 
-     Visual Studio erstellt eine komprimierte Datei, die Ihre Vorlage enthält. Sie wird nicht bereitgestellt und ist in der experimentellen Instanz nicht verfügbar.
+     Visual Studio erstellt eine komprimierte Datei, die Ihre Vorlage enthält. Sie wurde nicht bereitgestellt und ist in der experimentellen Instanz nicht verfügbar.
 
 ## <a name="deployment"></a>Bereitstellung
 
-### <a name="to-deploy-the-project-or-item-template"></a>So stellen Sie das Projekt oder die Elementvorlage bereit
+### <a name="to-deploy-the-project-or-item-template"></a>So stellen Sie das Projekt oder die Element Vorlage bereit
 
 1. Erstellen eines VSIX-Projekts Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
 
-2. Legen Sie das VSIX-Projekt als Startprojekt fest. Wählen Sie im **Projektmappen-Explorer**den VSIX-Projektknoten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Als Startprojekt festlegen**aus.
+2. Legen Sie das VSIX-Projekt als Startprojekt fest. Wählen Sie im **Projektmappen-Explorer**den Knoten VSIX-Projekt aus, klicken Sie mit der rechten Maustaste, und wählen Sie **als Startprojekt festlegen**aus.
 
-3. Legen Sie das Projektvorlagenprojekt als Asset des VSIX-Projekts fest. Öffnen Sie die *.vsixmanifest-Datei.* Wechseln Sie zur Registerkarte **Assets,** und klicken Sie auf **Neu**.
+3. Legen Sie das Projektvorlagen Projekt als Medienobjekt des VSIX-Projekts fest. Öffnen Sie die *vsixmanifest* -Datei. Wechseln Sie zur Registerkarte **Objekte** , und klicken Sie auf **neu**.
 
-    1. Legen Sie das **Feld Typ** auf **Microsoft.VisualStudio.ProjectTemplate** oder **Microsoft.VisualStudio.ItemTemplate**fest.
+    1. Legen Sie das **Typenfeld** auf **Microsoft. VisualStudio. ProjectTemplate** oder **Microsoft. VisualStudio. ItemTemplate**fest.
 
-    2. Wählen Sie für Quelle die Option **Ein Projekt in der aktuellen Projektmappe** aus, und wählen Sie dann das Projekt aus, das die Vorlage enthält.
+    2. Wählen Sie für Quelle die Option **ein Projekt in der aktuellen Projekt** Mappe aus, und wählen Sie dann das Projekt aus, das Ihre Vorlage enthält.
 
-4. Erstellen Sie die Lösung, und drücken Sie **F5**. Die experimentelle Instanz wird angezeigt.
+4. Erstellen Sie die Projekt Mappe, und drücken Sie **F5**. Die experimentelle Instanz wird angezeigt.
 
-5. Bei einem Projektvorlagenprojekt sollte die Projektvorlage im Dialogfeld **Neues Projekt** ( Neues**New** > **Projekt****datei)** > im Knoten Visual C oder Visual Basic aufgeführt sein. Bei einem Elementvorlagenprojekt sollte die Elementvorlage im Dialogfeld **Neues Element** hinzufügen aufgeführt angezeigt werden. Um das Dialogfeld **Neues Element hinzufügen** anzuzeigen, wählen Sie im **Projektmappen-Explorer**den Projektknoten aus, und klicken Sie auf**Neues Element** **hinzufügen** > .
+5. Für ein Projektvorlagen Projekt sollten Sie sehen, dass die Projektvorlage im Dialogfeld " **Neues Projekt** " (**Datei**"  >  **Neues**  >  **Projekt**") im Visual c#-oder Visual Basic-Knoten aufgeführt wird. Für ein Element Vorlagen Projekt sollte die Element Vorlage im Dialogfeld **Neues Element hinzufügen** aufgelistet werden. Um das Dialogfeld **Neues Element hinzufügen** anzuzeigen, wählen Sie auf der **Projektmappen-Explorer**den Projekt Knoten aus, und klicken Sie auf Neues Element **Hinzufügen**  >  **New Item**.)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Visual Studio-Vorlagenreferenz](../ide/creating-project-and-item-templates.md)
+- [Referenz zu Visual Studio-Vorlagen](../ide/creating-project-and-item-templates.md)
 - [NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates)

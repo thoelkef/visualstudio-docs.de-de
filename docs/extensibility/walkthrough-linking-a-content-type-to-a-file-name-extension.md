@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
@@ -10,24 +10,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328be013b5d522938cd7450fc53d4866c632abb3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697088"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904687"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung
-Sie können Ihren eigenen Inhaltstyp definieren und eine Dateinamenerweiterung mit ihm verknüpfen, indem Sie die MEF-Erweiterung (Managed Extensibility Framework) des Editors verwenden. In einigen Fällen ist die Dateinamenerweiterung bereits durch einen Sprachdienst definiert. Um es jedoch mit MEF verwenden zu können, müssen Sie es dennoch mit einem Inhaltstyp verknüpfen.
+Sie können einen eigenen Inhaltstyp definieren und eine Dateinamenerweiterung mit dem Editor-Managed Extensibility Framework (MEF)-Erweiterungen verknüpfen. In einigen Fällen ist die Dateinamenerweiterung bereits durch einen Sprachdienst definiert. Wenn Sie es jedoch mit MEF verwenden möchten, müssen Sie es dennoch mit einem Inhaltstyp verknüpfen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
 
-1. Erstellen Sie ein Projekt von C-VSIX. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual C/ Erweiterbarkeit**aus, dann **VSIX-Projekt**.) Benennen Sie `ContentTypeTest`die Lösung .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `ContentTypeTest` .
 
-2. Wechseln Sie in der Datei **source.extension.vsixmanifest** zur Registerkarte **Assets,** und legen Sie das **Feld Typ** auf **Microsoft.VisualStudio.MefComponent**, das **Feld Quelle** auf Ein Projekt in der **aktuellen Projektmappe**und das **Feld Projekt** auf den Namen des Projekts fest.
+2. Wechseln Sie in der Datei **Source. Extension. vsixmanifest** zur Registerkarte **Objekte** , und legen Sie das Feld **Typ** auf **Microsoft. VisualStudio. MEFComponent**, das Feld **Quelle** auf **ein Projekt in der aktuellen**Projekt Mappe und das **Projekt** Feld auf den Namen des Projekts fest.
 
 ## <a name="define-the-content-type"></a>Definieren des Inhaltstyps
 
@@ -37,11 +37,11 @@ Sie können Ihren eigenen Inhaltstyp definieren und eine Dateinamenerweiterung m
 
     1. System.ComponentModel.Composition
 
-    2. Microsoft.VisualStudio.Text.Logic
+    2. Microsoft. VisualStudio. Text. Logic
 
-    3. Microsoft.VisualStudio.CoreUtility
+    3. Microsoft. VisualStudio. coreutility
 
-3. Fügen Sie `using` die folgenden Direktiven hinzu.
+3. Fügen Sie die folgenden `using` Direktiven hinzu.
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -57,7 +57,7 @@ Sie können Ihren eigenen Inhaltstyp definieren und eine Dateinamenerweiterung m
     {. . .}
     ```
 
-5. Exportieren Sie in <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> dieser Klasse einen benannten "hid" und deklarieren Sie seine Basisdefinition als "Text".
+5. Exportieren Sie in dieser Klasse einen <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> mit dem Namen "HID", und deklarieren Sie die Basis Definition als "Text".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -71,7 +71,7 @@ Sie können Ihren eigenen Inhaltstyp definieren und eine Dateinamenerweiterung m
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>Verknüpfen einer Dateinamenerweiterung mit einem Inhaltstyp
 
-- Um diesen Inhaltstyp einer Dateinamenerweiterung <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> zuzuordnen, exportieren Sie eine mit der Erweiterung *.hid* und dem Inhaltstyp "hid".
+- Um diesen Inhaltstyp einer Dateinamenerweiterung zuzuordnen, exportieren Sie eine mit <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> der Erweiterung *. HID* und dem Inhaltstyp "HID".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -88,18 +88,18 @@ Sie können Ihren eigenen Inhaltstyp definieren und eine Dateinamenerweiterung m
     }
     ```
 
-## <a name="add-the-content-type-to-an-editor-export"></a>Hinzufügen des Inhaltstyps zu einem Editorexport
+## <a name="add-the-content-type-to-an-editor-export"></a>Hinzufügen des Inhaltstyps zu einem Editor-Export
 
-1. Erstellen Sie eine Editorerweiterung. Sie können z. B. die in Walkthrough beschriebene Erweiterung der Randglyphen [verwenden: Erstellen einer Randglyphe](../extensibility/walkthrough-creating-a-margin-glyph.md).
+1. Erstellen Sie eine Editor-Erweiterung. Sie können z. b. die in Exemplarische Vorgehensweise [: Erstellen eines Rand](../extensibility/walkthrough-creating-a-margin-glyph.md)Symbols beschriebene Rand Symbol Erweiterung verwenden.
 
 2. Fügen Sie die Klasse hinzu, die Sie in dieser Prozedur definiert haben.
 
-3. Wenn Sie die Erweiterungsklasse <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> exportieren, fügen Sie ihr einen Vom Typ "hid" hinzu.
+3. Fügen Sie beim Exportieren der Erweiterungs Klasse der den <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Typ "HID" hinzu.
 
     ```csharp
     [Export]
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Sprachdienst- und Editorerweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Siehe auch
+- [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)

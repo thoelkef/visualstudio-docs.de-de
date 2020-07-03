@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Befehls zeilenschaltern | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c692787a63a7ab06fb3f0e0e94e2839190f58c9d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536278"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903471"
 ---
 # <a name="add-command-line-switches"></a>Befehls Zeilenschalter hinzufügen
 Sie können Befehls Zeilenschalter hinzufügen, die für das VSPackage gelten, wenn *devenv.exe* ausgeführt wird. Verwenden <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> Sie, um den Namen des Schalters und seine Eigenschaften zu deklarieren. In diesem Beispiel wird der Schalter "mySwitch" für eine Unterklasse von VSPackage mit dem Namen " **addcommandswitchpackage** " ohne Argumente und dem automatischen Laden des VSPackages hinzugefügt.
@@ -29,12 +29,12 @@ Sie können Befehls Zeilenschalter hinzufügen, die für das VSPackage gelten, w
 
  Die benannten Parameter sind in den folgenden Beschreibungen aufgeführt.
 
-|Name|BESCHREIBUNG|
+|name|Beschreibung|
 |-|-|
 | Argumente | Die Anzahl der Argumente für den Schalter. Kann "*" oder eine Liste von Argumenten sein. |
 | Einen DemandLoad | Laden Sie das VSPackage automatisch, wenn dies auf 1 festgelegt ist; andernfalls wird 0 festgelegt. |
 | HelpString | Die Hilfe Zeichenfolge oder Ressourcen-ID der Zeichenfolge, die mit " **tovenv/?**" angezeigt wird. |
-| Name | Der-Schalter. |
+| name | Der-Schalter. |
 | PackageGuid | GUID des Pakets |
 
  Der erste Wert von Argumenten ist in der Regel 0 oder 1. Der spezielle Wert "*" kann verwendet werden, um anzugeben, dass der gesamte Rest der Befehlszeile das Argument ist. Dies kann bei debuggingszenarien nützlich sein, in denen ein Benutzer eine Debugger-Befehls Zeichenfolge übergeben muss.
@@ -67,7 +67,7 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 
  Es liegt in ihrer Verantwortung, die Befehls Zeilenschalter bei jedem Laden des Pakets zu überprüfen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv-Befehlszeilenparameter](../ide/reference/devenv-command-line-switches.md)

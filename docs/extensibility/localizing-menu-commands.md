@@ -1,7 +1,7 @@
 ---
-title: Lokalisieren von Menübefehlen | Microsoft Docs
+title: Lokalisieren von Menübefehlen | Microsoft-Dokumentation
 ms.date: 10/08/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - localize
 - localization
@@ -15,40 +15,40 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d363b495eb84dc3bfeabd7bf7c5d05fabcbc4d36
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702949"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904561"
 ---
 # <a name="localize-menu-commands"></a>Lokalisieren von Menübefehlen
 
-Sie können lokalisierten Text für Menü- und Symbolleistenbefehle bereitstellen, indem Sie lokalisierte *.vsct-Dateien* und lokalisierte *.resx-Dateien* für Ihr VSPackage erstellen und dann die Projektdateien aktualisieren, um die Änderungen zu integrieren.
+Sie können lokalisierten Text für Menü-und Symbolleisten Befehle angeben, indem Sie lokalisierte *vsct* -Dateien und lokalisierte *RESX* -Dateien für das VSPackage erstellen und dann die Projektdateien aktualisieren, um die Änderungen einzubeziehen.
 
-Informationen zum Lokalisieren der Installationsumgebung finden Sie unter Lokalisieren von [VSIX-Paketen](../extensibility/localizing-vsix-packages.md).
+Informationen dazu, wie Sie die Installation lokalisieren, finden Sie unter [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md).
 
 ## <a name="localize-command-names"></a>Lokalisieren von Befehlsnamen
 
-In VSPackages werden Menübefehle und Symbolleistenschaltflächen in der *.vsct-Datei* definiert.
+In VSPackages werden Menübefehle und Symbolleisten Schaltflächen in der *vsct* -Datei definiert.
 
-1. Ändern Sie im **Projektmappen-Explorer**den Namen der *.vsct-Datei* von *filename.vsct* in *filename.en-US.vsct*.
+1. Ändern Sie in **Projektmappen-Explorer**den Namen der *vsct* -Datei von *Dateiname. vsct* in *filename. en-US. vsct*.
 
-2. Erstellen Sie eine Kopie von *filename.en-US.vsct* für jede lokalisierte Sprache.
+2. Erstellen Sie für jede lokalisierte Sprache eine Kopie von *Dateiname. en-US. vsct* .
 
-    Benennen Sie jede Kopie *Dateiname. Locale.vsct*, wobei *"Locale"* ein bestimmter Kulturname ist. Eine Liste der Kulturnamenwerte finden Sie [unter Gebietsschema-IDs, die von Microsoft zugewiesen wurden.](/windows/uwp/publish/supported-languages)
+    Benennen Sie die einzelnen Kopier *Dateinamen. { Locale}. vsct*, wobei " *{locale}* " ein bestimmter Kultur Name ist. Eine Liste der Kultur Namen Werte finden Sie unter [von Microsoft zugewiesene](/windows/uwp/publish/supported-languages)Gebiets Schema-IDs.
 
-    Diese *Dateinamen. Locale.vsct-Dateien* enthalten den lokalisierten Menütext für Ihr Paket.
+    Diese *Dateinamen. Locale. vsct* -Dateien enthalten den lokalisierten Menütext für das Paket.
 
-3. Öffnen Sie jeden *Dateinamen. Locale.vsct-Datei,* um den Text zu lokalisieren.
+3. Öffnen Sie jeden *Dateinamen. Locale. vsct* -Datei, um den Text zu lokalisieren.
 
-   1. Ändern Sie die [ButtonText-Elementwerte](../extensibility/buttontext-element.md) entsprechend der jeweiligen Sprache.
+   1. Ändern Sie die Werte für das [ButtonText](../extensibility/buttontext-element.md) -Element entsprechend der jeweiligen Sprache.
 
-   2. Wenn Sie lokalisierte Symbole bereitstellen, ändern Sie die [Bitmap-Werte](../extensibility/bitmap-element.md) so, dass sie auf die Zieldateien verweisen.
+   2. Wenn Sie lokalisierte Symbole bereitstellen, ändern Sie die [Bitmap](../extensibility/bitmap-element.md) -Werte so, dass Sie auf die Zieldateien zeigen.
 
-      Das folgende Beispiel zeigt den englischen und spanischen Schaltflächentext für einen Befehl zum Öffnen eines Familienbaum-Explorer-Toolfensters.
+      Das folgende Beispiel zeigt den Text der Schaltfläche Englisch und Spanisch für einen Befehl zum Öffnen eines Fensters des Fensters "Familienstruktur-Explorer".
 
-      [*FamilyTree.de-US.vsct*]
+      [*FamilyTree. en-US. vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -61,7 +61,7 @@ In VSPackages werden Menübefehle und Symbolleistenschaltflächen in der *.vsct-
    </Button>
    ```
 
-    [*FamilyTree.es-ES.vsct*]
+    [*FamilyTree.es-es. vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -76,23 +76,23 @@ In VSPackages werden Menübefehle und Symbolleistenschaltflächen in der *.vsct-
 
 ## <a name="localize-other-text-resources"></a>Lokalisieren anderer Textressourcen
 
-Textressourcen außer Befehlsnamen werden in Ressourcendateien (*.resx*) definiert.
+Andere Text Ressourcen als Befehlsnamen werden in Ressourcen Dateien (*RESX*-Dateien) definiert.
 
-1. *VsPackage.resx* in *VSPackage.en-US.resx*umbenennen.
+1. Benennen Sie *VSPackage. resx* in *VSPackage. en-US. resx*um.
 
-2. Erstellen Sie eine Kopie der *Datei VSPackage.en-US.resx* für jede lokalisierte Sprache.
+2. Erstellen Sie für jede lokalisierte Sprache eine Kopie der Datei " *VSPackage. en-US. resx* ".
 
-     Benennen Sie jede Kopie *VSPackage. Locale.resx*, wobei *"Locale"* ein bestimmter Kulturname ist.
+     Benennen Sie jedes Kopie- *VSPackage. { Locale}. resx*, wobei *{locale}* ein bestimmter Kultur Name ist.
 
-3. *Resources.resx* in *Resources.en-US.resx umbenennen.*
+3. Benennen Sie *Resources. resx* in *Resources. en-US. resx*um.
 
-4. Erstellen Sie eine Kopie der Datei *Resources.en-US.resx* für jede lokalisierte Sprache.
+4. Erstellen Sie für jede lokalisierte Sprache eine Kopie der Datei " *Resources. en-US. resx* ".
 
-     Benennen Sie jede Kopie *Ressourcen. Locale.resx*, wobei *"Locale"* ein bestimmter Kulturname ist.
+     Benennen Sie die einzelnen Kopier *Ressourcen. { Locale}. resx*, wobei *{locale}* ein bestimmter Kultur Name ist.
 
-5. Öffnen Sie jede *.resx-Datei,* um die Zeichenfolgenwerte entsprechend der jeweiligen Sprache und Kultur zu ändern. Das folgende Beispiel zeigt die lokalisierte Ressourcendefinition für die Titelleiste eines Werkzeugfensters.
+5. Öffnen Sie jede *RESX* -Datei, um die Zeichen folgen Werte entsprechend der jeweiligen Sprache und Kultur zu ändern. Das folgende Beispiel zeigt die lokalisierte Ressourcendefinition für die Titelleiste eines Tool Fensters.
 
-     [*Ressourcen.de-US.resx*]
+     [*Resources. en-US. resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -100,7 +100,7 @@ Textressourcen außer Befehlsnamen werden in Ressourcendateien (*.resx*) definie
     </data>
     ```
 
-     [*Resources.es-ES.resx*]
+     [*Resources.es-es. resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -108,11 +108,11 @@ Textressourcen außer Befehlsnamen werden in Ressourcendateien (*.resx*) definie
     </data>
     ```
 
-## <a name="incorporate-localized-resources-into-the-project"></a>Integrieren lokalisierter Ressourcen in das Projekt
+## <a name="incorporate-localized-resources-into-the-project"></a>Einbinden lokalisierter Ressourcen in das Projekt
 
-Sie müssen die *assemblyinfo.cs* Und die Projektdatei ändern, um die lokalisierten Ressourcen zu integrieren.
+Sie müssen die Datei *AssemblyInfo.cs* und die Projektdatei ändern, um die lokalisierten Ressourcen zu integrieren.
 
-1. Öffnen Sie im **Eigenschaftenknoten** im **Projektmappen-Explorer** *assemblyinfo.cs* oder *assemblyinfo.vb* im Editor.
+1. Öffnen Sie im-Editor aus dem Knoten **Eigenschaften** in **Projektmappen-Explorer** *AssemblyInfo.cs* oder *AssemblyInfo. vb* .
 
 2. Fügen Sie den folgenden Eintrag hinzu.
 
@@ -126,7 +126,7 @@ Sie müssen die *assemblyinfo.cs* Und die Projektdatei ändern, um die lokalisie
 
 4. Öffnen Sie die Projektdatei im Editor.
 
-5. Fügen Sie `Project` im Stammelement `PropertyGroup` ein `UICulture` Element mit einem Element hinzu, das mit der Standardsprache übereinstimmt.
+5. Fügen Sie im root- `Project` Element ein- `PropertyGroup` Element mit einem- `UICulture` Element hinzu, das Ihrer Standardsprache entspricht.
 
     ```xml
     <PropertyGroup>
@@ -134,11 +134,11 @@ Sie müssen die *assemblyinfo.cs* Und die Projektdatei ändern, um die lokalisie
     </PropertyGroup>
     ```
 
-     Dadurch wird US-Englisch als Standard-UI-Kultur für Windows Presentation Foundation (WPF)-Steuerelemente festgelegt.
+     Dadurch wird US-Englisch als standardmäßige Benutzeroberflächen Kultur für Windows Presentation Foundation (WPF)-Steuerelemente festgelegt.
 
-6. Suchen `ItemGroup` Sie das `EmbeddedResource` Element, das Elemente enthält.
+6. Suchen Sie das- `ItemGroup` Element, das- `EmbeddedResource` Elemente enthält.
 
-7. Ersetzen `EmbeddedResource` Sie im Element *VSPackage.en-US.resx*das `ManifestResourceName` `LogicalName` Element wie folgt `VSPackage.en-US.Resources`durch ein Element, das auf festgelegt ist:
+7. `EmbeddedResource`Ersetzen Sie im-Element, das *VSPackage. en-US. resx*aufruft, das `ManifestResourceName` -Element durch ein `LogicalName` -Element, das auf festgelegt ist `VSPackage.en-US.Resources` , wie folgt:
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -147,9 +147,9 @@ Sie müssen die *assemblyinfo.cs* Und die Projektdatei ändern, um die lokalisie
     </EmbeddedResource>
     ```
 
-8. Kopieren Sie für jede `EmbeddedResource` lokalisierte `VsPackage.en-US`Sprache das Element für , und legen Sie das **Include-Attribut** und das **LogicalName-Element** der Kopie auf das Zielgebietsschema fest.
+8. Kopieren Sie für jede lokalisierte Sprache das- `EmbeddedResource` Element für `VsPackage.en-US` , und legen Sie das **include** -Attribut und das **LogicalName** -Element der Kopie auf das Ziel Gebiets Schema fest.
 
-9. Fügen Sie `VSCTCompile` jedem lokalisierten `ResourceName` Element ein `Menus.ctmenu`Element hinzu, das auf zeigt, wie im folgenden Beispiel gezeigt:
+9. Fügen Sie für jedes lokalisierte `VSCTCompile` Element ein-Element hinzu, `ResourceName` das auf verweist `Menus.ctmenu` , wie im folgenden Beispiel gezeigt:
 
     ```xml
     <ItemGroup>
@@ -159,13 +159,13 @@ Sie müssen die *assemblyinfo.cs* Und die Projektdatei ändern, um die lokalisie
     </ItemGroup>
     ```
 
-10. Speichern Sie die Projektdatei, und laden Sie das Projekt neu.
+10. Speichern Sie die Projektdatei, und laden Sie das Projekt erneut.
 
 11. Erstellen Sie das Projekt.
 
-     Dadurch werden eine Hauptassembly und Ressourcenassemblys für jede Sprache erstellt. Informationen zur Lokalisierung des Bereitstellungsprozesses finden Sie unter [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)
+     Dadurch werden eine Hauptassembly und Ressourcenassemblys für jede Sprache erstellt. Informationen zum Lokalisieren des Bereitstellungs Prozesses finden Sie unter [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md) .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)

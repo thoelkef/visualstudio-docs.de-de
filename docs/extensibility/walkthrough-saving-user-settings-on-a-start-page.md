@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Startseite | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Start Seite | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: acangialosi
 ms.author: anthc
@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8c791bb33d6c6a3952c14d5073857b0c3131cecf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697071"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903165"
 ---
-# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Startseite
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Start Seite
 
-Sie können die Benutzereinstellungen für Ihre Startseite beibehalten. Wenn Sie dieser exemplarischen Vorgehensweise folgen, können Sie ein Steuerelement erstellen, das eine Einstellung in der Registrierung speichert, wenn der Benutzer auf eine Schaltfläche klickt, und diese Einstellung dann jedes Mal abruft, wenn die Startseite geladen wird. Da die Projektvorlage Startseite ein anpassbares Benutzersteuerelement und die standardmäßigen XAML-Aufrufe der Startseite dieses Steuerelements enthält, müssen Sie die Startseite selbst nicht ändern.
+Sie können die Benutzereinstellungen für die Start Seite persistent speichern. Mithilfe dieser exemplarischen Vorgehensweise können Sie ein Steuerelement erstellen, mit dem eine Einstellung in der Registrierung gespeichert wird, wenn der Benutzer auf eine Schaltfläche klickt, und diese Einstellung bei jedem Laden der Start Seite abruft. Da die Projektvorlage für Startseiten ein anpassbares Benutzer Steuerelement enthält und die standardmäßige XAML-Startseite dieses Steuerelement aufruft, müssen Sie die Startseite nicht ändern.
 
-Der Einstellungsspeicher, der in dieser exemplarischen Vorgehensweise <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> instanziiert wird, ist eine Instanz der Schnittstelle, die den folgenden Registrierungsspeicherort liest und schreibt, wenn er aufgerufen wird: **HKCU-Software-Microsoft-VisualStudio-14.0\\\<CollectionName>**
+Der Einstellungs Speicher, der in dieser exemplarischen Vorgehensweise instanziiert wird, ist eine Instanz der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> -Schnittstelle, die liest und in den folgenden Registrierungs Speicherort schreibt, wenn Sie aufgerufen wird: **hkcu\software\microsoft\visualstudio\14,0 \\ \<CollectionName> **
 
-Wenn es in der experimentellen Instanz von Visual Studio ausgeführt wird, liest und schreibt der Einstellungsspeicher> in **HKCU-Software,Microsoft-VisualStudio-14.0Exp\\\<CollectionName.**
+Wenn Sie in der experimentellen Instanz von Visual Studio ausgeführt wird, werden in den Einstellungen " **hkcu\software\microsoft\visualstudio\14.0exp \\ \<CollectionName> ** " Lese-und Schreibvorgänge gespeichert.
 
-Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter Erweitern von [Benutzereinstellungen und -optionen](../extensibility/extending-user-settings-and-options.md).
+Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweitern von Benutzereinstellungen und-Optionen](../extensibility/extending-user-settings-and-options.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 > [!NOTE]
 > Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 >
-> Sie können die Projektvorlage Startseite mit **Extension Manager**herunterladen.
+> Sie können die Projektvorlage für Start Seiten mit dem **Erweiterungs-Manager**herunterladen.
 
 ## <a name="set-up-the-project"></a>Einrichten des Projekts
 
-1. Erstellen Sie ein Startseitenprojekt, wie unter [Erstellen einer benutzerdefinierten Startseite](creating-a-custom-start-page.md)beschrieben. Benennen Sie das Projekt **SaveMySettings**.
+1. Erstellen Sie ein Start Seiten Projekt, wie unter [Erstellen einer benutzerdefinierten Startseite](creating-a-custom-start-page.md)beschrieben. Nennen Sie das Projekt **savemysettings**.
 
-2. Fügen Sie im **Projektmappen-Explorer**die folgenden Assemblyverweise zum StartPageControl-Projekt hinzu:
+2. Fügen Sie in **Projektmappen-Explorer**dem startpagecontrol-Projekt die folgenden Assemblyverweise hinzu:
 
     - EnvDTE
 
@@ -47,23 +47,23 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter Erweite
 
     - Microsoft.VisualStudio.Shell.Interop.11.0
 
-3. Öffnen Sie *MyControl.xaml*.
+3. Öffnen Sie " *MyControl. XAML*".
 
-4. Fügen Sie im XAML-Bereich <xref:System.Windows.Controls.UserControl> in der Elementdefinition der obersten Ebene die folgende Ereignisdeklaration nach den Namespacedeklarationen hinzu.
+4. Fügen Sie im XAML-Bereich in der Element Definition der obersten Ebene <xref:System.Windows.Controls.UserControl> nach den Namespace Deklarationen die folgende Ereignis Deklaration hinzu.
 
     ```xml
     Loaded="OnLoaded"
     ```
 
-5. Klicken Sie im Entwurfsbereich auf den Hauptbereich des Steuerelements, und drücken Sie dann **Löschen**.
+5. Klicken Sie im Entwurfs Bereich auf den Hauptbereich des-Steuer Elements, **und drücken Sie**dann ENTF.
 
-     In diesem Schritt <xref:System.Windows.Controls.Border> werden das Element und alles darin <xref:System.Windows.Controls.Grid> entfernt, und es bleibt nur das Element der obersten Ebene.
+     Durch diesen Schritt <xref:System.Windows.Controls.Border> wird das-Element und alles darin entfernt, und es wird nur das Element der obersten Ebene beibehalten <xref:System.Windows.Controls.Grid> .
 
-6. Ziehen **Toolbox**Sie aus <xref:System.Windows.Controls.StackPanel> der Toolbox ein Steuerelement in das Raster.
+6. Ziehen Sie aus der **Toolbox**ein- <xref:System.Windows.Controls.StackPanel> Steuerelement in das Raster.
 
-7. Ziehen Sie <xref:System.Windows.Controls.TextBlock>nun <xref:System.Windows.Controls.TextBox>a , a <xref:System.Windows.Controls.StackPanel>und eine Schaltfläche auf die .
+7. Ziehen Sie nun eine <xref:System.Windows.Controls.TextBlock> , eine <xref:System.Windows.Controls.TextBox> und eine Schaltfläche in den <xref:System.Windows.Controls.StackPanel> .
 
-8. Fügen Sie ein **x:Name-Attribut** für das <xref:System.Windows.Controls.TextBox>hinzu und ein `Click` Ereignis für die <xref:System.Windows.Controls.Button>, wie im folgenden Beispiel gezeigt.
+8. Fügen Sie ein **x:Name** -Attribut für den <xref:System.Windows.Controls.TextBox> und ein- `Click` Ereignis für das hinzu <xref:System.Windows.Controls.Button> , wie im folgenden Beispiel gezeigt.
 
     ```xml
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -73,17 +73,17 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter Erweite
     </StackPanel>
     ```
 
-## <a name="implement-the-user-control"></a>Implementieren des Benutzersteuerelements
+## <a name="implement-the-user-control"></a>Implementieren des Benutzer Steuer Elements
 
-1. Klicken Sie im XAML-Bereich `Click` mit <xref:System.Windows.Controls.Button> der rechten Maustaste auf das Attribut des Elements, und klicken Sie dann auf **Navigieren zum Ereignishandler**.
+1. Klicken Sie im XAML-Bereich mit der rechten Maustaste auf das- `Click` Attribut des- <xref:System.Windows.Controls.Button> Elements, und klicken Sie dann auf **zu Ereignis Handler navigieren**.
 
-     Dieser Schritt öffnet *MyControl.xaml.cs*und erstellt `Button_Click` einen Stubhandler für das Ereignis.
+     In diesem Schritt wird *MyControl.XAML.cs*geöffnet, und es wird ein Stub-Handler für das- `Button_Click` Ereignis erstellt.
 
-2. Fügen Sie `using` die folgenden Direktiven am oberen Rand der Datei hinzu.
+2. Fügen Sie am Anfang der Datei die folgenden- `using` Direktiven hinzu.
 
      [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]
 
-3. Fügen Sie `SettingsStore` eine private Eigenschaft hinzu, wie im folgenden Beispiel gezeigt.
+3. Fügen Sie eine private- `SettingsStore` Eigenschaft hinzu, wie im folgenden Beispiel gezeigt.
 
     ```csharp
     private IVsWritableSettingsStore _settingsStore = null;
@@ -115,9 +115,9 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter Erweite
     }
     ```
 
-     Diese Eigenschaft ruft zuerst <xref:EnvDTE80.DTE2> einen Verweis auf die Schnittstelle ab, die das Automation-Objektmodell enthält, aus <xref:System.Windows.FrameworkElement.DataContext%2A> dem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> Benutzersteuerelement und verwendet dann die DTE, um eine Instanz der Schnittstelle abzuverweisen. Anschließend wird diese Instanz verwendet, um die aktuellen Benutzereinstellungen zurückzugeben.
+     Diese Eigenschaft ruft zuerst einen Verweis auf die- <xref:EnvDTE80.DTE2> Schnittstelle ab, die das Automatisierungs Objektmodell aus dem <xref:System.Windows.FrameworkElement.DataContext%2A> des Benutzer Steuer Elements enthält, und verwendet dann den DTE, um eine Instanz der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> Schnittstelle zu erhalten. Anschließend wird diese Instanz verwendet, um die aktuellen Benutzereinstellungen zurückzugeben.
 
-4. Füllen Sie `Button_Click` das Ereignis wie folgt aus.
+4. Füllen Sie das `Button_Click` Ereignis wie folgt aus.
 
     ```csharp
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -132,9 +132,9 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter Erweite
     }
     ```
 
-     Dadurch wird der Inhalt des Textfelds in ein "MySetting"-Feld in einer "MySettings"-Auflistung in der Registrierung geschrieben. Wenn die Auflistung nicht vorhanden ist, wird sie erstellt.
+     Dadurch wird der Inhalt des Textfelds in das Feld "MySetting" in der Sammlung "MySettings" in der Registrierung geschrieben. Wenn die Auflistung nicht vorhanden ist, wird Sie erstellt.
 
-5. Fügen Sie den `OnLoaded` folgenden Handler für das Ereignis des Benutzersteuerelements hinzu.
+5. Fügen Sie den folgenden Handler für das- `OnLoaded` Ereignis des Benutzer Steuer Elements hinzu.
 
     ```csharp
     private void OnLoaded(Object sender, RoutedEventArgs e)
@@ -146,17 +146,17 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter Erweite
     }
     ```
 
-     Dieser Code legt den Text des Textfeldes auf den aktuellen Wert von "MySetting" fest.
+     Mit diesem Code wird der Text des Textfelds auf den aktuellen Wert von "MySetting" festgelegt.
 
-6. Erstellen Sie das Benutzersteuerelement.
+6. Erstellen Sie das Benutzer Steuerelement.
 
-7. Im **Projektmappen-Explorer**open *source.extension.vsixmanifest*.
+7. Öffnen Sie in **Projektmappen-Explorer**die Datei *Source. Extension. vsixmanifest*.
 
-8. Legen Sie im Manifest-Editor den **Produktnamen** auf **Startseite "Meine Einstellungen speichern"** fest.
+8. Legen Sie im Manifest-Editor den **Product Name** auf **Start Seite Meine Einstellungen speichern**fest.
 
-     Diese Funktion legt den Namen der Startseite so fest, wie sie in der Liste **Startseite anpassen** im Dialogfeld **Optionen** angezeigt werden soll.
+     Mit dieser Funktion wird der Name der Startseite so festgelegt, dass Sie im Dialogfeld **Optionen** in der Liste **Startseite anpassen** angezeigt wird.
 
-9. Erstellen Sie *StartPage.xaml*.
+9. Build *StartPage. XAML*.
 
 ## <a name="test-the-control"></a>Testen des Steuerelements
 
@@ -164,39 +164,39 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter Erweite
 
      Die experimentelle Instanz von Visual Studio wird geöffnet.
 
-2. Klicken Sie in der experimentellen Instanz im Menü **Extras** auf **Optionen**.
+2. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **Optionen**.
 
-3. Klicken Sie im **Umgebungsknoten** auf **Start**, und wählen Sie dann in der Liste **Startseite anpassen** **[Installierte Erweiterung] Startseite meine Einstellungen**speichern aus .
+3. Klicken Sie im Knoten **Umgebung** auf **Start**, und wählen Sie dann in der Liste **Startseite anpassen** die Option **[installierte Erweiterung] Startseite Einstellungen speichern**aus.
 
      Klicken Sie auf **OK**.
 
-4. Schließen Sie die Startseite, wenn sie geöffnet ist, und klicken Sie dann im Menü **Ansicht** auf **Startseite**.
+4. Schließen Sie die Startseite, wenn Sie geöffnet ist, und klicken Sie dann im Menü **Ansicht** auf **Start Seite**.
 
-5. Klicken Sie auf der Startseite auf die Registerkarte **MyControl.**
+5. Klicken Sie auf der Start Seite auf die Registerkarte **MyControl** .
 
-6. Geben Sie im Textfeld **Cat**ein, und klicken Sie dann auf **Meine Einstellung speichern**.
+6. Geben Sie im Textfeld **Cat**ein, und klicken Sie dann auf **meine Einstellung speichern**.
 
-7. Schließen Sie die Startseite, und öffnen Sie sie erneut.
+7. Schließen Sie die Start Seite, und öffnen Sie Sie erneut.
 
-     Das Wort "Katze" sollte im Textfeld angezeigt werden.
+     Das Wort "Cat" sollte im Textfeld angezeigt werden.
 
-8. Ersetzen Sie das Wort "Katze" durch das Wort "Hund". Klicken Sie nicht auf die Schaltfläche.
+8. Ersetzen Sie das Wort "Cat" durch das Wort "Dog". Klicken Sie nicht auf die Schaltfläche.
 
-9. Schließen Sie die Startseite, und öffnen Sie sie erneut.
+9. Schließen Sie die Start Seite, und öffnen Sie Sie erneut.
 
-     Das Wort "Hund" sollte im Textfeld angezeigt werden, auch wenn Sie die Einstellung nicht gespeichert haben, da Visual Studio Toolfenster im Arbeitsspeicher speichert, auch wenn sie geschlossen sind, bis Visual Studio selbst geschlossen wird.
+     Das Wort "Dog" sollte im Textfeld angezeigt werden, auch wenn Sie die Einstellung nicht gespeichert haben, da Visual Studio die Tool Fenster im Arbeitsspeicher beibehält, auch wenn Sie geschlossen sind, bis Visual Studio selbst geschlossen wird.
 
 10. Schließen Sie die experimentelle Instanz von Visual Studio.
 
-11. Drücken Sie **F5,** um die experimentelle Instanz erneut zu öffnen.
+11. Drücken Sie **F5** , um die experimentelle Instanz erneut zu öffnen
 
-12. Das Wort "Katze" sollte im Textfeld angezeigt werden.
+12. Das Wort "Cat" sollte im Textfeld angezeigt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie können dieses Benutzersteuerelement ändern, um eine beliebige Anzahl benutzerdefinierter Einstellungen zu speichern `SettingsStore` und abzurufen, indem Sie verschiedene Werte von verschiedenen Ereignishandlern verwenden, um die Eigenschaft abzurufen und festzulegen. Solange Sie für jeden `propertyName` Aufruf einen <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>anderen Parameter verwenden, überschreiben sich die Werte in der Registrierung nicht gegenseitig.
+Sie können dieses Benutzer Steuerelement ändern, um eine beliebige Anzahl benutzerdefinierter Einstellungen zu speichern und abzurufen, indem Sie unterschiedliche Werte aus unterschiedlichen Ereignis Handlern verwenden, um die Eigenschaft abzurufen und festzulegen `SettingsStore` . Solange Sie `propertyName` für jeden-Rückruf einen anderen Parameter verwenden, über <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> schreiben die Werte in der Registrierung nicht einander.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
-- [Hinzufügen von Visual Studio-Befehlen zu einer Startseite](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
+- [Hinzufügen von Visual Studio-Befehlen zu einer Start Seite](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
