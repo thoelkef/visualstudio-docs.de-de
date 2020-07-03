@@ -1,7 +1,7 @@
 ---
-title: 'Gewusst wie: Bereitstellen von Automatisierung für Windows | Microsoft Docs'
+title: 'Vorgehensweise: Bereitstellen von Automatisierung für Windows | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
 - tool windows, automation
@@ -11,35 +11,35 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8716fbaa56cdb77063597fd5e07f6e469cc86a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fec2b9ef6612a294dc70d129cf4bdd3dde843262
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707949"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905258"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Gewusst wie: Bereitstellen von Automatisierung für Fenster
+# <a name="how-to-provide-automation-for-windows"></a>Vorgehensweise: Bereitstellen von Automatisierung für Windows
 
-Sie können die Automatisierung für Dokument- und Werkzeugfenster bereitstellen. Die Bereitstellung von Automatisierung ist ratsam, wenn Sie Automatisierungsobjekte in einem Fenster verfügbar machen möchten, und die Umgebung stellt noch kein vorgefertigtes Automatisierungsobjekt bereit, wie dies bei einer Aufgabenliste der Fall ist.
+Sie können die Automatisierung für Dokument-und Tool Fenster bereitstellen. Das Bereitstellen von Automatisierung ist ratsam, wenn Sie Automation-Objekte in einem Fenster verfügbar machen möchten und die Umgebung nicht bereits ein vorgefertigte Automatisierungs Objekt bereitstellt, wie es bei einer Aufgabenliste der Fall ist.
 
-## <a name="automation-for-tool-windows"></a>Automatisierung für Werkzeugfenster
+## <a name="automation-for-tool-windows"></a>Automatisierung für Tool Fenster
 
-Die Umgebung stellt die Automatisierung eines <xref:EnvDTE.Window> Werkzeugfensters bereit, indem ein Standardobjekt zurückgegeben wird, wie im folgenden Verfahren erläutert:
+Die Umgebung ermöglicht die Automatisierung in einem Tool Fenster, indem ein Standard Objekt zurückgegeben wird, <xref:EnvDTE.Window> wie im folgenden Verfahren erläutert:
 
-1. Rufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Sie die Methode über die Umgebung mit [__VSFPROPID auf. VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>) `VSFPROPID` als Parameter, `Window` um das Objekt abzubekommen.
+1. Wenden Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Methode über die Umgebung mit [__VSFPROPID an. VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>) als `VSFPROPID` Parameter, um das `Window` Objekt zu erhalten.
 
-2. Wenn ein Aufrufer ein VSPackage-spezifisches Automatisierungsobjekt für Ihr `IExtensibleObject` <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>Toolfenster `IDispatch` durch <xref:EnvDTE.Window.Object%2A>anfordert, ruft `QueryInterface` die Umgebung nach , oder die Schnittstellen auf. `IExtensibleObject` Beides `IVsExtensibleObject` und <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> bieten eine Methode.
+2. Wenn ein Aufrufer ein VSPackage-spezifisches Automatisierungs Objekt für das Tool Fenster durch anfordert <xref:EnvDTE.Window.Object%2A> , ruft die Umgebung die `QueryInterface` `IExtensibleObject` <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject> Schnittstellen, oder auf `IDispatch` . `IExtensibleObject`Und `IVsExtensibleObject` stellen eine- <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> Methode bereit.
 
-3. Wenn die Umgebung `GetAutomationObject` dann `NULL`die Methode passing aufruft, antworten Sie, indem Sie Ihr VSPackage-spezifisches Objekt zurückgeben.
+3. Wenn die Umgebung dann die `GetAutomationObject` -Methode übergibt `NULL` , reagieren Sie, indem Sie das VSPackage-spezifische Objekt zurückgibt.
 
-4. Wenn `QueryInterface` `IExtensibleObject` dies `IVsExtensibleObject` der Aufruf und `QueryInterface` `IDispatch`das Scheitern der Aufforderung ist, fordert die Umgebung .
+4. Wenn für und ein Fehler auftritt `QueryInterface` `IExtensibleObject` `IVsExtensibleObject` , ruft die Umgebung `QueryInterface` für auf `IDispatch` .
 
-## <a name="automation-for-document-windows"></a>Automatisierung für Dokumentfenster
+## <a name="automation-for-document-windows"></a>Automatisierung für Dokument Fenster
 
-Ein <xref:EnvDTE.Document> Standardobjekt ist auch in der Umgebung verfügbar, obwohl <xref:EnvDTE.Document> ein Editor `IExtensibleObject` über eine `GetAutomationObject`eigene Implementierung des Objekts verfügen kann, indem er die Schnittstelle implementiert und auf reagiert.
+Ein Standard <xref:EnvDTE.Document> Objekt steht auch in der Umgebung zur Verfügung, obwohl ein Editor über eine eigene Implementierung des Objekts verfügen kann, indem er eine <xref:EnvDTE.Document> `IExtensibleObject` Schnittstelle implementiert und auf antwortet `GetAutomationObject` .
 
-Darüber hinaus kann ein Editor ein VSPackage-spezifisches <xref:EnvDTE.Document.Object%2A> Automatisierungsobjekt bereitstellen, das über die Methode abgerufen wird, indem er die `IVsExtensibleObject` oder `IExtensibleObject` Schnittstellen implementiert. Die [VSSDK-Beispiele](https://github.com/Microsoft/VSSDK-Extensibility-Samples) tragen ein DOKUMENTspezifisches RTF-Automatisierungsobjekt bei.
+Außerdem kann ein Editor ein VSPackage-spezifisches Automatisierungs Objekt bereitstellen, das durch die-Methode abgerufen wird, <xref:EnvDTE.Document.Object%2A> indem die-Schnittstelle oder die-Schnittstelle implementiert wird `IVsExtensibleObject` `IExtensibleObject` . Die [VSSDK-Beispiele](https://github.com/Microsoft/VSSDK-Extensibility-Samples) tragen zu einem RTF-Dokument spezifischen Automatisierungs Objekt bei.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

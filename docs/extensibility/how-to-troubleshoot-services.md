@@ -1,7 +1,7 @@
 ---
-title: 'Gewusst wie: Troubleshoot Services | Microsoft Docs'
+title: 'Vorgehensweise: Problembehandlung bei Diensten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
@@ -10,25 +10,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49560acdf57f5dad2c57f2a8e4649f194d6d8298
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 588396f3f152222c4e79b03a1d733524a8ff3ca9
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710750"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905724"
 ---
-# <a name="how-to-troubleshoot-services"></a>Gewusst wie: Fehlerbehebungsdienste
-Es gibt mehrere häufige Probleme, die auftreten können, wenn Sie versuchen, einen Dienst abzubekommen:
+# <a name="how-to-troubleshoot-services"></a>Vorgehensweise: Problembehandlung bei Diensten
+Es gibt mehrere häufige Probleme, die auftreten können, wenn Sie versuchen, einen Dienst zu erhalten:
 
-- Der Dienst ist [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]nicht bei registriert.
+- Der Dienst ist nicht bei registriert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Der Dienst wird nach Schnittstellentyp und nicht nach Diensttyp angefordert.
+- Der Dienst wird vom Schnittstellentyp und nicht vom Diensttyp angefordert.
 
-- Das VSPackage, das den Dienst anfordert, wurde nicht standortseither eingerichtet.
+- Das VSPackage, das den Dienst anfordert, wurde nicht positioniert.
 
 - Es wird der falsche Dienstanbieter verwendet.
 
-  Wenn der angeforderte Dienst nicht <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> abgerufen werden kann, wird der Aufruf von null zurückgegeben. Sie sollten immer auf NULL testen, nachdem Sie einen Dienst angefordert haben:
+  Wenn der angeforderte Dienst nicht abgerufen werden kann, gibt der-Rückruf den Wert <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> NULL zurück. Nach dem Anfordern eines Dienstanbieter sollten Sie immer auf NULL testen:
 
 ```csharp
 IVsActivityLog log =
@@ -36,11 +36,11 @@ IVsActivityLog log =
 if (log == null) return;
 ```
 
-## <a name="to-troubleshoot-a-service"></a>So beheben Sie einen Dienst
+## <a name="to-troubleshoot-a-service"></a>So beheben Sie Probleme mit einem Dienst
 
-1. Überprüfen Sie die Systemregistrierung, um festzustellen, ob der Dienst ordnungsgemäß registriert wurde. Weitere Informationen finden Sie unter [Gewusst wie: Bereitstellen eines Dienstes](../extensibility/how-to-provide-a-service.md).
+1. Überprüfen Sie die Systemregistrierung, um festzustellen, ob der Dienst ordnungsgemäß registriert wurde. Weitere Informationen finden Sie unter Vorgehens [Weise: Bereitstellen eines Dienstanbieter](../extensibility/how-to-provide-a-service.md).
 
-    Das folgende *.reg-Dateifragment* zeigt, wie der SVsTextManager-Dienst registriert werden kann:
+    Das folgende *. reg* -Datei Fragment zeigt, wie der SVsTextManager-Dienst registriert werden kann:
 
    ```
    [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]
@@ -48,25 +48,25 @@ if (log == null) return;
    "Name"="SVsTextManager"
    ```
 
-    Im obigen Beispiel ist versionsnummer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]die Version von , z. B. 12.0 oder 14.0, der Schlüssel "F5E7E71D-1401-11d1-883B-0000F87579D2" ist die Dienstkennung (SID) des Dienstes, SVsTextManager und der Standardwert "F5E7E720-1401-11d1-883B-0000F87579D2" ist die Paket-GUID des Text-Managers VSPackage, der den Dienst bereitstellt.
+    Im obigen Beispiel ist die Versionsnummer die Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , wie z. b. 12,0 oder 14,0, der Schlüssel {F5E7E71D-1401-11d1-883B-0000F87579D2} ist die Dienst-ID (SID) des Diensts (SVsTextManager), und der Standardwert {F5E7E720-1401-11d1-883B-0000F87579D2} ist die Paket-GUID des Text Manager-VSPackage, das den Dienst bereitstellt.
 
-2. Verwenden Sie den Diensttyp und nicht den Schnittstellentyp, wenn Sie GetService aufrufen. Beim Anfordern [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]eines <xref:Microsoft.VisualStudio.Shell.Package> Dienstes aus extrahiert die GUID aus dem Typ. Ein Dienst wird nicht gefunden, wenn die folgenden Bedingungen vorhanden sind:
+2. Verwenden Sie den Diensttyp und nicht den Schnittstellentyp, wenn Sie GetService aufrufen. Wenn Sie einen Dienst von anfordern [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , <xref:Microsoft.VisualStudio.Shell.Package> extrahiert die GUID aus dem-Typ. Ein Dienst wird nicht gefunden, wenn die folgenden Bedingungen erfüllt sind:
 
-   1. Anstelle des Diensttyps wird ein Schnittstellentyp an GetService übergeben.
+   1. Ein Schnittstellentyp wird an GetService statt an den Diensttyp übermittelt.
 
-   2. Der Schnittstelle ist keine GUID explizit zugewiesen. Daher erstellt das System bei Bedarf eine Standard-GUID für ein Objekt.
+   2. Der-Schnittstelle ist keine GUID explizit zugewiesen. Daher erstellt das System bei Bedarf eine Standard-GUID für ein Objekt.
 
-3. Stellen Sie sicher, dass das VSPackage, das den Dienst anfordert, standortseitfest eingerichtet wurde. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ein VSPackage nach dem Erstellen <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>und vor dem Aufruf von .
+3. Stellen Sie sicher, dass das VSPackage, das den Dienst anfordert, positioniert wurde. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Websites ein VSPackage nach dem Erstellen und vor dem Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
-    Wenn Sie Code in einem VSPackage-Konstruktor haben, `Initialize` der einen Dienst benötigt, verschieben Sie ihn in die Methode.
+    Wenn Sie über Code in einem VSPackage-Konstruktor verfügen, der einen Dienst benötigt, verschieben Sie ihn in die- `Initialize` Methode.
 
 4. Stellen Sie sicher, dass Sie den richtigen Dienstanbieter verwenden.
 
-    Nicht alle Dienstleister sind gleich. Der Dienstanbieter, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] der an ein Toolfenster übergibt, unterscheidet sich von dem, das er an ein VSPackage übergibt. Der Toolfensterdienstanbieter kennt <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, aber nicht <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>von . Sie können <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> aufrufen, um einen VSPackage-Dienstanbieter innerhalb eines Toolfensters abzurufen.
+    Nicht alle Dienstanbieter sind gleich. Der Dienstanbieter, der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] an ein Tool Fenster übergibt, unterscheidet sich von dem, der an ein VSPackage weitergeleitet wird. Der Tool Fenster-Dienstanbieter kennt <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> sich, weiß aber nicht <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . Sie können abrufen <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> , um einen VSPackage-Dienstanbieter innerhalb eines Tool Fensters abzurufen.
 
-    Wenn ein Toolfenster ein Benutzersteuerelement oder einen anderen Steuerelementcontainer hostet, wird der Container vom [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Windows-Komponentenmodell erstellt und hat keinen Zugriff auf Dienste. Sie können <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> aufrufen, um einen VSPackage-Dienstanbieter innerhalb eines Steuerelementcontainers abzurufen.
+    Wenn ein Tool Fenster ein Benutzer Steuerelement oder einen anderen Steuerelement Container hostet, wird der Container vom Windows-Komponentenmodell positioniert und hat keinen Zugriff auf [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dienste. Sie können abrufen <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> , um einen VSPackage-Dienstanbieter innerhalb eines Steuerelement Containers abzurufen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Liste der verfügbaren Dienste](../extensibility/internals/list-of-available-services.md)
-- [Nutzung und Bereitstellung von Dienstleistungen](../extensibility/using-and-providing-services.md)
-- [Service-Essentials](../extensibility/internals/service-essentials.md)
+- [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)
+- [Service Essentials](../extensibility/internals/service-essentials.md)
