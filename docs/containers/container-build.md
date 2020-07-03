@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027259"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536863"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Wie Visual Studio Containeranwendungen erstellt
 
@@ -76,7 +76,7 @@ docker build -f Dockerfile ..
 
 Dockerfiles, die von Visual Studio für .NET Framework-Projekte (und für .NET Core-Projekte, die mit älteren Versionen als Update 4 von Visual Studio 2017 erstellt wurden) erstellt werden, entsprechen nicht dem Multistagetyp.  Mit den Schritten in diesen Dockerfiles wird der Code nicht kompiliert.  Wenn Visual Studio ein .NET Framework-Dockerfile erstellt, kompiliert die IDE stattdessen zuerst das Projekt mithilfe von MSBuild.  Wenn dieser Vorgang erfolgreich ist, erstellt Visual Studio anschließend das Dockerfile, wodurch einfach die Buildausgabe von MSBuild in das resultierende Docker-Image kopiert wird.  Da die Schritte zum Kompilieren des Codes nicht im Dockerfile enthalten sind, können Sie .NET Framework-Dockerfiles nicht mithilfe von `docker build` über die Befehlszeile erstellen. Sie sollten MSBuild verwenden, um diese Projekte zu erstellen.
 
-Zum Erstellen eines Images für ein einzelnes Docker-Containerprojekt können Sie MSBuild mit der Befehlsoption `/t:ContainerBuild` verwenden. Beispiel:
+Zum Erstellen eines Images für ein einzelnes Docker-Containerprojekt können Sie MSBuild mit der Befehlsoption `/t:ContainerBuild` verwenden. Zum Beispiel:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
@@ -105,7 +105,7 @@ Die Aufwärmphase findet nur im Modus **Schnell** statt, sodass für den aktiven
 
 Damit das Debuggen in Containern funktioniert, verwendet Visual Studio die Volumezuordnung, um den Debugger und die NuGet-Ordner vom Hostcomputer zuzuordnen. Die Volumezuordnung ist in der [Dokumentation zu Docker](https://docs.docker.com/storage/volumes/) beschrieben. Hier sind die Volumes, die in Ihrem Container bereitgestellt werden:
 
-|||
+|Lautstärke|Beschreibung|
 |-|-|
 | **Remotedebugger** | Enthält die Bits, die abhängig vom Projekttyp erforderlich sind, um den Debugger im Container auszuführen. Dies wird im Abschnitt |[Debuggen](#debugging) ausführlicher beschrieben.
 | **App-Ordner** | Enthält den Projektordner, in dem sich die Dockerfile befindet.|
@@ -144,7 +144,7 @@ Wenn Ihre Konfiguration sowohl containerisierte als auch nicht in Containern ent
 
 Weitere Informationen zur Verwendung von SSL mit ASP.NET Core-Apps in Containern finden Sie unter [Hosten von ASP.NET Core-Images mit Docker über HTTPS](/aspnet/core/security/docker-https).
 
-## <a name="debugging"></a>Debugging
+## <a name="debugging"></a>Debuggen
 
 Beim Erstellen von Builds in der Konfiguration **Debuggen** führt Visual Studio mehrere Optimierungen durch, um die Leistung des Buildprozesses für Containerprojekte zu erhöhen. Der Buildprozess für Container-Apps ist komplexer, sodass nicht einfach die in der Dockerfile beschriebenen Schritte ausgeführt werden können. Ein Build in einem Container ist deutlich langsamer als ein Build auf einem lokalen Computer.  Wenn Sie also für den Build die **Debugkonfiguration** nutzen, erstellt Visual Studio Ihre Projekte auf dem lokalen Computer und gibt den Ausgabeordner dann für den Container frei, indem das Volume eingebunden wird. Ein Build mit dieser Optimierung wird auch als *Schnellmodusbuild* bezeichnet.
 
@@ -166,7 +166,7 @@ Wenn Sie die Leistungsoptimierung wiederherstellen möchten, entfernen Sie die E
 
 Die Ausführung des Debuggers hängt von der Art des Projekts und dem Containerbetriebssystem ab:
 
-|||
+|Szenario|Debuggerprozess|
 |-|-|
 | **.NET Core-Apps (Linux-Container)**| Visual Studio lädt `vsdbg` herunter und ordnet es dem Container zu. Dann wird es mit Ihrem Programm und Argumenten (d. h. `dotnet webapp.dll`) aufgerufen, und anschließend wird der Debugger an den Prozess angefügt. |
 | **.NET Core-Apps (Windows-Container)**| Visual Studio verwendet `onecoremsvsmon`, ordnet es dem Container zu und führt es als Einstiegspunkt aus. Dann stellt Visual Studio eine Verbindung damit her und fügt es an Ihr Programm an. Dies ähnelt der Vorgehensweise beim Einrichten des Remotedebuggens auf einem anderen oder virtuellen Computer.|
@@ -178,7 +178,7 @@ Informationen zu `vsdbg.exe` finden Sie unter [Offroad-Debuggen von .NET Core un
 
 Visual Studio verwendet einen benutzerdefinierten Containereinstiegspunkt abhängig vom Projekttyp und Containerbetriebssystem. Es folgen die verschiedenen Kombinationen:
 
-|||
+|Containertyp|Einstiegspunkt|
 |-|-|
 | **Linux-Container** | Der Einstiegspunkt ist `tail -f /dev/null`. Dabei handelt es sich um eine unbegrenzte Wartezeit, um den Container aktiv zu halten. Wenn die App über den Debugger gestartet wird, ist der Debugger für die Ausführung der App verantwortlich (d. h. `dotnet webapp.dll`). Bei Starten ohne Debuggen führt das Tool `docker exec -i {containerId} dotnet webapp.dll` aus, um die App auszuführen.|
 | **Windows-Container**| Der Einstiegspunkt ist so etwas wie `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`, womit der Debugger so ausgeführt wird, dass er auf Verbindungen lauscht. Gleiches gilt für die Ausführung der App durch den Debugger und den Befehl `docker exec` beim Starten ohne Debuggen. Bei .NET Framework-Web-Apps ist der Einstiegspunkt etwas anders, da `ServiceMonitor` zum Befehl hinzugefügt wird.|
@@ -189,7 +189,7 @@ Der Containereinstiegspunkt kann nur in Docker-Compose-Projekten, nicht in Einze
 
 Erfahren Sie, wie Sie Ihre Builds weiter anpassen, indem Sie zusätzliche MSBuild-Eigenschaften in Ihren Projektdateien festlegen. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften für Containerprojekte](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [MSBuild](../msbuild/msbuild.md)
 [Dockerfile unter Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

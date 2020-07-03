@@ -1,7 +1,7 @@
 ---
 title: 'DA0004: Hohe Prozessorauslastung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -14,21 +14,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e0ac8d8558ee73903898e920ed8174c73ea66c4d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777724"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548173"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Hohe Prozessorauslastung
 
-|||
+|Element|Wert|
 |-|-|
 |Regel-ID|DA0004|
 |Kategorie|Verwendung der Profilerstellungstools|
-|Profilerstellungsmethoden|Instrumentierung<br /><br /> Stichproben|
-|Nachricht|Die Prozessorauslastung liegt permanent über 75 %. Sie sollten die Verwendung des Samplingmodus für CPU-gebundene Anwendungen in Betracht ziehen.|
+|Profilerstellungsmethoden|Instrumentierung<br /><br /> Sampling|
+|Meldung|Die Prozessorauslastung liegt permanent über 75 %. Sie sollten die Verwendung des Samplingmodus für CPU-gebundene Anwendungen in Betracht ziehen.|
 |Regeltyp|Information|
 
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.

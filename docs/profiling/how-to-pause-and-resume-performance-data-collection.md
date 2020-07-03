@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778790"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331469"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
 Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Profilerstellungsdaten interaktiv steuern.
@@ -38,6 +38,6 @@ Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Pro
 
   - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
-- [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [How to: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)

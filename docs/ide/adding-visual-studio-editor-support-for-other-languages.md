@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892774"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533756"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 
@@ -35,14 +35,43 @@ Features wie farbige Syntaxhervorhebung, Anweisungsvervollständigung (auch beka
 
 Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für Anweisungsvervollständigung mithilfe von [TextMate Grammatiken](https://manual.macromates.com/en/language_grammars) für die folgenden Sprachen. Wenn Sie Ihre bevorzugte Sprache nicht in der Liste finden, können Sie sie hinzufügen.
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Gehe zu|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Make|Ruby|TypeScript|YAML|
+
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- Gehe zu
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Make
+- Ruby
+- TypeScript
+- YAML
 
 Über die farbige Syntaxhervorhebung und einfache Anweisungsvervollständigung hinaus bietet Visual Studio noch eine Funktion mit dem Namen [Navigieren zu](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Mithilfe dieses Features können Sie schnell Codedateien, Dateipfade und Codesymbole durchsuchen. Visual Studio bietet Unterstützung für Navigieren zu für die folgenden Sprachen.
 
@@ -76,11 +105,11 @@ Fügen Sie unter diesem Basispfad die folgenden Ordner hinzu, wenn sie für Ihre
 
 |Ordnername|Beschreibung|
 |-----------------|-----------------|
-|\\ *\<Sprachenname*|Der Sprachordner. Ersetzen Sie *\<Sprachenname* durch den Namen der Sprache. Beispiel: *\Matlab*.|
+|\\*\<language name>*|Der Sprachordner. Ersetzen Sie *\<language name>* durch den Namen der Sprache. Beispiel: *\Matlab*.|
 |*\Syntaxes*|Der Grammatikordner. Enthält die *JSON*-Grammatikdateien für die Sprache, wie etwa *Matlab.json*.|
 |*\Snippets*|Der Codeausschnittordner. Enthält die Ausschnitte für die Sprache.|
 
-Unter Windows wird *%userprofile%* in den Pfad *C:\Benutzer\\\<Benutzername>* aufgelöst. Wenn der *Erweiterungsordner* auf Ihrem System nicht vorhanden ist, müssen Sie ihn erstellen. Wenn der Ordner bereits vorhanden ist, ist er verborgen.
+Unter Windows wird *%userprofile%* in den Pfad *C:\Benutzer\\\<user name>* aufgelöst. Wenn der *Erweiterungsordner* auf Ihrem System nicht vorhanden ist, müssen Sie ihn erstellen. Wenn der Ordner bereits vorhanden ist, ist er verborgen.
 
 > [!TIP]
 > Wenn Sie Dateien im Editor geöffnet haben, müssen Sie sie schließen und erneut öffnen, um die Syntaxhervorhebung anzuzeigen, nachdem Sie die TextMate-Grammatiken hinzugefügt haben.

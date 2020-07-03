@@ -1,7 +1,7 @@
 ---
-title: 'Profiler-Befehlszeile: Instrumentieren der .NET-Clientkomponente, Abrufen von Zeitdaten'
+title: 'Profilerbefehlszeile: Instrumentieren von .NET-Clientkomponenten und Abrufen von Zeitdaten'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef50983d964c4b7ef6479117ed2501569a77a62d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64c69a8f38e7b0e4705fb8cca187936b96264f55
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778907"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328028"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Vorgehensweise: Instrumentieren einer eigenständigen .NET Framework-Komponente und Sammeln von Zeitsteuerungsdaten über die Befehlszeile mit dem Profiler
 In diesem Artikel wird beschrieben, wie die zu den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools gehörenden Befehlszeilentools zum Instrumentieren einer .NET Framework-Komponente (z.B. eine *EXE*- oder *DLL*-Datei) verwendet und ausführliche Zeiterfassungsdaten gesammelt werden.

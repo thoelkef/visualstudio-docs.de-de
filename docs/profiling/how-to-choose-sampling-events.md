@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Auswählen von Samplingereignissen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779050"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329276"
 ---
 # <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
 Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:
@@ -59,9 +59,9 @@ Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
 
 5. Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
-- [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
+- [How to: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)
 - [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
 - [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283176"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536889"
 ---
 # <a name="deploy-to-docker-hub"></a>Bereitstellen in Docker Hub
 
@@ -29,17 +29,17 @@ Wenn Sie über kein Docker Hub-Repository verfügen, erstellen Sie ein Konto in 
 
 1. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Veröffentlichen...** aus. Daraufhin wird eine Anzeige mit Bereitstellungsoptionen angezeigt.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Screenshot: Bereitstellungsoptionen](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. Wählen Sie unter **Veröffentlichungsziel auswählen** die Option **Container Registry** aus, und wählen Sie dann **Docker Hub** aus. Daraufhin wird das Dialogfeld **Docker Hub** angezeigt.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Screenshot: Docker Hub-Dialogfeld](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. Wenn Sie eine Verbindung zu Ihrem eigenen Repository herstellen (das nicht zu einer Organisation gehört), lassen Sie das Kontrollkästchen **Publish to a personal repository** (In einem persönlichen Repository veröffentlichen) aktiviert. Wenn sich das Repository im Besitz einer Organisation befindet, deaktivieren Sie das Kontrollkästchen, und geben Sie den Namen der Organisation ein. Geben Sie Ihren Benutzernamen und Ihr Kennwort für Ihr Docker-Konto ein, das über die Berechtigungen für den Zugriff auf das Repository verfügt, zu dem Sie eine Verbindung herstellen, und klicken Sie dann auf **Speichern**.  
 
    Visual Studio versucht, Ihr Image in Docker Hub bereitzustellen.  Bei erfolgreicher Ausführung wird die Anzeige **Veröffentlichen** mit der URL für das Repositoryimage, dem Imagetag, dem Repository und der Buildkonfiguration (z. B. **Release**) angezeigt.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![Screenshot: Anzeige „Veröffentlichen“](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. Sie können das Image jederzeit aktualisieren, indem Sie auf dieser Seite auf **Veröffentlichen** klicken.  Alternativ können Sie das Profil mithilfe der Links unter der URL anpassen oder entfernen.
 

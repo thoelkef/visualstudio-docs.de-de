@@ -1,19 +1,19 @@
 ---
 title: Diagnostizieren von Problemen nach der Bereitstellung | Microsoft-Dokumentation
 ms.date: 04/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae6a7f5e95f2d853978cf1f8d9665a51ae80fd3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911371"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350588"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostizieren von Problemen nach der Bereitstellung mithilfe von IntelliTrace (C#, Visual Basic)
 
@@ -73,7 +73,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 5. Wenn Sie eine benutzerdefinierte Vorlage verwenden, fügen Sie dieses MSBuild-Argument hinzu, um anzugeben, wo die Symboldatei gespeichert werden soll:
 
-     **/p:BuildSymbolStorePath=** \<*Pfad zu Symbolen*>
+     **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
      ![Einschließen von Buildserverinformationen in Builddefinitionen in TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
@@ -110,7 +110,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
     - **/p:IncludeServerNameInBuildInfo=True**
 
-    - **/p:BuildSymbolStorePath=** \<*Pfad zu Symbolen*>
+    - **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 4. Führen Sie einen neuen Build aus.
 
@@ -150,7 +150,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
  **/p:IncludeServerNameInBuildInfo=True**
 
- **/p:BuildSymbolStorePath=** \<*Pfad zu Symbolen*>
+ **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a> Schritt 2: Veröffentlichen Ihrer App
  Wenn Sie das [Web.Deploy-Paket](https://msdn.microsoft.com/library/dd394698.aspx) verwenden, das vom Build-Prozess zum Bereitstellen Ihrer App erstellt wurde, wird das Buildmanifest automatisch von „*Projektname*.BuildInfo.config“ zu „BuildInfo.config“ umbenannt und auf dem Webserver im gleichen Verzeichnis wie die Web.config-Datei Ihrer App abgelegt.
@@ -370,9 +370,9 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 - Visual Studio konnte die Projektmappe oder das Projekt nicht in der aktuellen Teamauflistung finden.
 
-     Wenn die Buildmanifestdatei (\<*ProjektName*>.BuildInfo.config) nicht angibt, wo Visual Studio die entsprechende Quelle finden kann, verwendet Visual Studio den aktuell verbundenen TFS, um die entsprechende Projektmappe oder das Projekt zu suchen. Wenn die aktuelle Teamauflistung nicht über die entsprechende Quelle verfügt, fordert Visual Studio Sie auf, eine Verbindung mit einer anderen Teamauflistung herzustellen.
+     Wenn die Buildmanifestdatei (\<*ProjectName*>.BuildInfo.config) nicht angibt, wo Visual Studio die entsprechende Quelle finden kann, verwendet Visual Studio den aktuell verbundenen TFS, um die entsprechende Projektmappe oder das Projekt zu suchen. Wenn die aktuelle Teamauflistung nicht über die entsprechende Quelle verfügt, fordert Visual Studio Sie auf, eine Verbindung mit einer anderen Teamauflistung herzustellen.
 
-- Visual Studio konnte die Projektmappe oder das Projekt nicht in der von der Buildmanifestdatei (\<*ProjektName*>.BuildInfo.config) angegeben Sammlung finden.
+- Visual Studio konnte die Projektmappe oder das Projekt nicht in der von der Buildmanifestdatei (\<*ProjectName*>.BuildInfo.config) angegeben Sammlung finden.
 
      Der angegebene TFS verfügt möglicherweise nicht mehr über die entsprechende Quelle oder Sie ist nicht mehr vorhanden, da Sie möglicherweise zu einem neuen TFS migriert sind. Wenn der angegebene TFS nicht vorhanden ist, kann bei Visual Studio nach etwa einer Minute ein Timeout auftreten, und Sie werden anschließend aufgefordert, eine Verbindung mit einer anderen Auflistung herzustellen. Um den Vorgang fortzusetzen, stellen Sie eine Verbindung mit dem richtigen TFS her.
 

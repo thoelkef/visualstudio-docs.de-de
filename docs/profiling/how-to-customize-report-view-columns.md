@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Anpassen von Spalten in Berichtsansichten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.columnchooser.dialogbox
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778972"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329800"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Vorgehensweise: Anpassen von Spalten in Berichtsansichten
 Leistungstools in Visual Studio Team System Development Edition sind in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE), vollständig integriert, um eine reibungslose Benutzererfahrung anzubieten Die folgende Liste stellt für Ansichten dar, die durch Hinzufügen, Entfernen und Neuanordnen von Spalten angepasst werden können:
@@ -34,13 +34,13 @@ Leistungstools in Visual Studio Team System Development Edition sind in der inte
 
 - [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md)
 
-- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view.md)
+- [Aufrufstrukturansicht](../profiling/call-tree-view.md)
 
-- [Allocations View (Zuordnungsansicht)](../profiling/dotnet-memory-allocations-view.md)
+- [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)
 
-- [Object Lifetime View (Objektlebensdaueransicht)](../profiling/object-lifetime-view.md)
+- [Objektlebensdaueransicht](../profiling/object-lifetime-view.md)
 
-- [Marks View (Markierungsansicht)](../profiling/marks-view.md)
+- [Markierungsansicht](../profiling/marks-view.md)
 
 - [Prozessansicht](../profiling/process-view.md)
 
@@ -50,7 +50,7 @@ Leistungstools in Visual Studio Team System Development Edition sind in der inte
 
 2. Klicken Sie mit der rechten Maustaste auf die Berichtsansichtsoberfläche und anschließend auf **Spalten hinzufügen/entfernen**.
 
-     Das Dialogfeld **Spalten hinzufügen/entfernen** wird angezeigt.
+     Es wird das Dialogfeld **Spalten hinzufügen/entfernen** angezeigt.
 
 3. Wählen Sie die Spalten aus, die Sie hinzufügen möchten.
 

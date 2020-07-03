@@ -1,7 +1,7 @@
 ---
 title: Festlegen von Debug- und Releasekonfigurationen | Microsoft-Dokumentation
 ms.date: 10/05/2018
-ms.topic: reference
+ms.topic: how-to
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75acf0a3a821b4d2561ea14e583e71761b8b476e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925477"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349158"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 
@@ -60,7 +60,7 @@ oder
 
 * Wählen Sie auf der Symbolleiste im Listenfeld **Projektmappenkonfigurationen** die Option **Debuggen** oder **Release** aus.
 
-  ![Symbolleisten für die Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
+  ![Symbolleiste für die Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
 ## <a name="generate-symbol-pdb-files-for-a-build-c-c-visual-basic-f"></a><a name="BKMK_symbols_release"></a>Generieren von Symboldateien (PDB-Dateien) für einen Build (C#, C++, Visual Basic, F#)
 

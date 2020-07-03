@@ -1,7 +1,7 @@
 ---
 title: Behandlung von Installationsproblemen oder Problemen beim Upgrade
 description: Manchmal kann etwas schiefgehen. Wenn die Installation oder das Upgrade von Visual Studio fehlschlägt, kann diese Seite Ihnen helfen.
-ms.date: 03/23/2020
+ms.date: 06/24/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233115"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350809"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern
 
@@ -47,11 +47,15 @@ Es gibt einige bekannte Probleme mit dem Visual Studio-Installer, an deren Beheb
 
 ::: moniker-end
 
-### <a name="step-2---check-with-the-developer-community"></a>Schritt 2: Nachfragen in der Entwicklercommunity
+### <a name="step-2---try-repairing-visual-studio"></a>Schritt 2: Reparieren von Visual Studio
+
+Mit der Reparatur werden viele gängige Updateprobleme behoben. Weitere Informationen dazu, wann und wie Sie die Reparaturfunktion in Visual Studio verwenden, finden Sie unter [Reparieren von Visual Studio](repair-visual-studio.md).
+
+### <a name="step-3---check-with-the-developer-community"></a>Schritt 3: Nachfragen in der Entwicklercommunity
 
 Suchen Sie in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/spaces/8/index.html) nach der Fehlermeldung. Andere Mitglieder der Community haben ggf. eine Lösung für Ihr Problem dokumentiert.
 
-### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Schritt 3: Löschen des Visual Studio-Installer-Verzeichnisses, um Probleme mit Upgrades zu beheben
+### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Schritt 4: Löschen des Visual Studio-Installer-Verzeichnisses zum Beheben von Problemen mit Upgrades
 
 Der Visual Studio-Installer-Bootstrapper ist eine kleine schlanke ausführbare Datei, mit der der Rest des Visual Studio-Installers installiert wird. Das Löschen von Visual Studio-Installer-Dateien und anschließende erneute Ausführen des Bootstrappers hilft ggf. bei der Behebung einiger Updatefehler.
 
@@ -76,7 +80,7 @@ Der Visual Studio-Installer-Bootstrapper ist eine kleine schlanke ausführbare D
 
 ::: moniker-end
 
-### <a name="step-4---report-a-problem"></a>Schritt 4: Melden eines Problems
+### <a name="step-5---report-a-problem"></a>Schritt 5: Melden eines Problems
 
 In einigen Situationen, z. B. bei beschädigten Dateien, müssen die Probleme ggf. fallweise untersucht werden. Bitte gehen Sie wie folgt vor, damit wir Sie besser unterstützen können:
 
@@ -100,15 +104,15 @@ In einigen Situationen, z. B. bei beschädigten Dateien, müssen die Probleme gg
 
 ::: moniker-end
 
-### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Schritt 5: Ausführen von „InstallCleanup.exe“, um die Installationsdateien zu entfernen
+### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>Schritt 6: Ausführen von „InstallCleanup.exe“ zum Entfernen der Installationsdateien
 
 Als letzten Ausweg können Sie [Visual Studio entfernen](remove-visual-studio.md), um alle Installationsdateien und Produktinformationen zu entfernen.
 
 1. Folgen Sie den Anweisungen unter [Entfernen von Visual Studio](remove-visual-studio.md).
-2. Führen Sie den in [Schritt 3: Löschen des Visual Studio-Installer-Verzeichnisses, um Probleme mit Upgrades zu beheben](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems) beschriebenen Bootstrapper erneut aus.
+2. Führen Sie den in [Schritt 4: Löschen des Visual Studio-Installer-Verzeichnisses zum Beheben von Problemen mit Upgrades](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems) beschriebenen Bootstrapper erneut aus.
 3. Versuchen Sie, Visual Studio erneut zu installieren oder zu aktualisieren.
 
-### <a name="step-6---contact-us-optional"></a>Schritt 6: Wenden Sie sich an uns (optional)
+### <a name="step-7---contact-us-optional"></a>Schritt 7: Kontaktieren Sie Microsoft (optional)
 
 Wenn Ihnen keiner der vorherigen Schritte zu einer erfolgreichen Installation oder einem erfolgreichen Upgrade von Visual Studio verholfen hat, setzen Sie sich über unsere [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous)-Supportoption (nur englischsprachig) mit uns in Verbindung, um weitere Hilfe zu erhalten.
 
@@ -145,6 +149,7 @@ Wenn die in diesem Leitfaden zur Problembehandlung aufgeführten Lösungen Ihnen
 
 ## <a name="see-also"></a>Siehe auch
 
+* [Reparieren von Visual Studio](repair-visual-studio.md)
 * [Entfernen von Visual Studio](remove-visual-studio.md)
 * [Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Tools zum Erkennen und Verwalten von Visual Studio-Instanzen](tools-for-managing-visual-studio-instances.md)

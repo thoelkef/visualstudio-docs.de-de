@@ -2,7 +2,7 @@
 title: Anzeigen der Aufrufliste im Debugger | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535989"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348742"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>In diesem Artikel erhalten Sie Informationen zum Anzeigen der Aufrufliste und Verwenden des Fensters „Aufrufliste“ im Debugger.
 
@@ -108,7 +108,7 @@ IDE-generierter Code ist sämtlicher Code, der nicht angezeigt wird, wenn [Nur e
 
 ## <a name="change-the-optional-information-displayed"></a>Ändern der Anzeige optionaler Informationen
 
-- Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste, und legen Sie **\<** _Gewünschte Informationen_ **> anzeigen** fest, oder heben Sie die Festlegung auf.
+- Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und aktivieren oder deaktivieren Sie **\<**_the information that you want_**> anzeigen**.
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Laden von Symbolen für ein Modul (C#, C++, Visual Basic, F#)
 

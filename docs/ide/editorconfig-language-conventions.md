@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544015"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533457"
 ---
 # <a name="language-conventions"></a>Sprachkonventionen
 
@@ -66,7 +66,7 @@ Ab Version 16.3 von Visual Studio 2019 können Sie Regeln für Codeformate üb
 
 So ändern Sie die Codeformatkonvention:
 
-1. Zeigen Sie im Editor auf die Wellenlinie, und öffnen Sie dann das angezeigte Fehlerbehebungsmenü. Klicken Sie auf **Issues konfigurieren oder unterdrücken** > **Konfigurieren\<Regel-ID >Codeformat**.
+1. Zeigen Sie im Editor auf die Wellenlinie, und öffnen Sie dann das angezeigte Fehlerbehebungsmenü. Klicken Sie auf **Issues konfigurieren oder unterdrücken** > **Codeformat \<rule ID> konfigurieren**.
 
    ![Konfigurieren des Codeformats über das Fehlerbehebungsmenü in Visual Studio](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ So ändern Sie die Codeformatkonvention:
 
    Visual Studio fügt der EditorConfig-Datei die Konfigurationseinstellung hinzu oder bearbeitet diese Einstellung, wie im Vorschaufeld veranschaulicht wird.
 
-Wenn Sie den Schweregrad für einen Verstoß gegen Codeformate ändern möchten, gehen Sie ähnlich vor, wählen jedoch **Konfigurieren \<Regel-ID > Schweregrad** anstelle von **Konfigurieren \<Regel-ID > Codeformat** aus. Weitere Informationen finden Sie unter [Automatisches Konfigurieren des Regelschweregrads](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Führen Sie dieselben Schritte aus, um den Schweregrad für den Verstoß gegen das Codeformat zu ändern, aber wählen Sie **Schweregrad \<rule ID> konfigurieren** anstelle von **Codeformat \<rule ID> konfigurieren** aus. Weitere Informationen finden Sie unter [Automatisches Konfigurieren des Regelschweregrads](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
 
 ::: moniker-end
 
@@ -133,7 +133,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 #### <a name="dotnet_style_qualification_for_field"></a>dotnet\_style\_qualification\_for_field
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_qualification_for_field |
 | **Regel-ID** | IDE0003 und IDE0009 |
@@ -161,7 +161,7 @@ capacity = 0
 
 #### <a name="dotnet_style_qualification_for_property"></a>dotnet\_style\_qualification\_for_property
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_qualification_for_property |
 | **Regel-ID** | IDE0003 und IDE0009 |
@@ -189,7 +189,7 @@ ID = 0
 
 #### <a name="dotnet_style_qualification_for_method"></a>dotnet\_style\_qualification\_for_method
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_qualification_for_method |
 | **Regel-ID** | IDE0003 und IDE0009 |
@@ -217,7 +217,7 @@ Display()
 
 #### <a name="dotnet_style_qualification_for_event"></a>dotnet\_style\_qualification\_for_event
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_qualification_for_event |
 | **Regel-ID** | IDE0003 und IDE0009 |
@@ -258,7 +258,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="dotnet_style_predefined_type_for_locals_parameters_members"></a>dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_predefined_type_for_locals_parameters_members |
 | **Regel-ID** | IDE0012 und IDE0014 |
@@ -286,7 +286,7 @@ Private _member As Int32
 
 #### <a name="dotnet_style_predefined_type_for_member_access"></a>dotnet\_style\_predefined\_type\_for\_member_access
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_predefined_type_for_member_access |
 | **Regel-ID** | IDE0013 und IDE0015 |
@@ -335,7 +335,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="dotnet_style_require_accessibility_modifiers"></a>dotnet\_style\_require\_accessibility_modifiers
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_require_accessibility_modifiers |
 | **Regel-ID** | IDE0040 |
@@ -363,7 +363,7 @@ class MyClass
 
 #### <a name="csharp_preferred_modifier_order"></a>csharp_preferred_modifier_order
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_preferred_modifier_order |
 | **Regel-ID** | IDE0036 |
@@ -387,7 +387,7 @@ class MyClass
 
 #### <a name="visual_basic_preferred_modifier_order"></a>visual_basic_preferred_modifier_order
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | visual_basic_preferred_modifier_order |
 | **Regel-ID** | IDE0036 |
@@ -410,7 +410,7 @@ End Class
 
 #### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | visual_basic_style_unused_value_expression_statement_preference |
 | **Regel-ID** | IDE0058 |
@@ -428,7 +428,7 @@ Dim unused = Computation()
 
 #### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | visual_basic_style_unused_value_assignment_preference |
 | **Regel-ID** | IDE0059 |
@@ -447,7 +447,7 @@ Dim x = 1;
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_readonly_field |
 | **Regel-ID** | IDE0044 |
@@ -490,7 +490,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 #### <a name="dotnet_style_parentheses_in_arithmetic_binary_operators"></a>dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_parentheses_in_arithmetic_binary_operators |
 | **Regel-ID** | IDE0047 |
@@ -519,7 +519,7 @@ Dim v = a + b * c
 
 #### <a name="dotnet_style_parentheses_in_relational_binary_operators"></a>dotnet\_style\_parentheses\_in\_relational\_binary_operators
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_parentheses_in_relational_binary_operators |
 | **Regel-ID** | IDE0047 |
@@ -548,7 +548,7 @@ Dim v = a < b = c > d
 
 #### <a name="dotnet_style_parentheses_in_other_binary_operators"></a>dotnet\_style\_parentheses\_in\_other\_binary_operators
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_parentheses_in_other_binary_operators |
 | **Regel-ID** | IDE0047 |
@@ -577,7 +577,7 @@ Dim v = a OrElse b AndAlso c
 
 #### <a name="dotnet_style_parentheses_in_other_operators"></a>dotnet\_style\_parentheses\_in\_other_operators
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_parentheses_in_other_operators |
 | **Regel-ID** | IDE0047 |
@@ -626,7 +626,7 @@ dotnet_style_prefer_compound_assignment = true:suggestion
 
 #### <a name="dotnet_style_object_initializer"></a>dotnet\_style\_object_initializer
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_object_initializer |
 | **Regel-ID** | IDE0017 |
@@ -656,7 +656,7 @@ c.Age = 21
 
 #### <a name="dotnet_style_collection_initializer"></a>dotnet\_style\_collection_initializer
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_collection_initializer |
 | **Regel-ID** | IDE0028 |
@@ -690,7 +690,7 @@ list.Add(3)
 
 #### <a name="dotnet_style_explicit_tuple_names"></a>dotnet\_style\_explicit\_tuple_names
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_explicit_tuple_names |
 | **Regel-ID** | IDE0033 |
@@ -722,7 +722,7 @@ Dim name = customer.Item1
 
 #### <a name="dotnet_style_prefer_inferred_tuple_names"></a>dotnet\_style\_prefer\_inferred\_tuple_names
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_inferred_tuple_names |
 | **Regel-ID** | IDE0037 |
@@ -751,7 +751,7 @@ Dim tuple = (name:=name, age:=age)
 
 #### <a name="dotnet_style_prefer_inferred_anonymous_type_member_names"></a>dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_inferred_anonymous_type_member_names |
 | **Regel-ID** | IDE0037 |
@@ -780,7 +780,7 @@ Dim anon = New With {.name = name, .age = age}
 
 #### <a name="dotnet_style_prefer_auto_properties"></a>dotnet\_style\_prefer\_auto\_properties
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_auto_properties |
 | **Regel-ID** | IDE0032 |
@@ -823,7 +823,7 @@ End Property
 
 #### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **Regel-ID** | IDE0041 |
@@ -858,7 +858,7 @@ End If
 
 #### <a name="dotnet_style_prefer_conditional_expression_over_assignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_conditional_expression_over_assignment |
 | **Regel-ID** | IDE0045 |
@@ -900,7 +900,7 @@ End If
 
 #### <a name="dotnet_style_prefer_conditional_expression_over_return"></a>dotnet\_style\_prefer\_conditional\_expression\_over_return
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_conditional_expression_over_return |
 | **Regel-ID** | IDE0046 |
@@ -940,7 +940,7 @@ End If
 
 #### <a name="dotnet_style_prefer_compound_assignment"></a>dotnet\_style\_prefer\_compound\_assignment
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_compound_assignment |
 | **Regel-ID** | IDE0054 |
@@ -982,7 +982,7 @@ dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_coalesce_expression |
 | **Regel-ID** | IDE0029 |
@@ -1012,7 +1012,7 @@ Dim v = If(x IsNot Nothing, x, y)
 
 #### <a name="dotnet_style_null_propagation"></a>dotnet\_style\_null_propagation
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_null_propagation |
 | **Regel-ID** | IDE0031 |
@@ -1042,7 +1042,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 ### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **Regel-ID** | IDE0041 |
@@ -1071,7 +1071,7 @@ dotnet_code_quality_unused_parameters = all:suggestion
 
 #### <a name="dotnet_code_quality_unused_parameters"></a>dotnet\_code\_quality\_unused\_parameters
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | dotnet_code_quality_unused_parameters |
 | **Regel-ID** | IDE0060 |
@@ -1162,7 +1162,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 #### <a name="csharp_style_var_for_built_in_types"></a>csharp\_style\_var\_for\_built\_in_types
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_var_for_built_in_types |
 | **Regel-ID** | IDE0007 und IDE0008 |
@@ -1182,7 +1182,7 @@ int x = 5;
 
 #### <a name="csharp_style_var_when_type_is_apparent"></a>csharp\_style\_var\_when\_type\_is_apparent
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_var_when_type_is_apparent |
 | **Regel-ID** | IDE0007 und IDE0008 |
@@ -1202,7 +1202,7 @@ Customer obj = new Customer();
 
 #### <a name="csharp_style_var_elsewhere"></a>csharp\_style\_var_elsewhere
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_var_elsewhere |
 | **Regel-ID** | IDE0007 und IDE0008 |
@@ -1241,7 +1241,7 @@ csharp_style_expression_bodied_local_functions = false:silent
 
 #### <a name="csharp_style_expression_bodied_methods"></a>csharp\_style\_expression\_bodied_methods
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_methods |
 | **Regel-ID** | IDE0022 |
@@ -1261,7 +1261,7 @@ public int GetAge() { return this.Age; }
 
 #### <a name="csharp_style_expression_bodied_constructors"></a>csharp\_style\_expression\_bodied_constructors
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_constructors |
 | **Regel-ID** | IDE0021 |
@@ -1281,7 +1281,7 @@ public Customer(int age) { Age = age; }
 
 #### <a name="csharp_style_expression_bodied_operators"></a>csharp\_style\_expression\_bodied_operators
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_operators |
 | **Regel-ID** | IDE0023 und IDE0024 |
@@ -1303,7 +1303,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 #### <a name="csharp_style_expression_bodied_properties"></a>csharp\_style\_expression\_bodied_properties
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_properties |
 | **Regel-ID** | IDE0025 |
@@ -1323,7 +1323,7 @@ public int Age { get { return _age; }}
 
 #### <a name="csharp_style_expression_bodied_indexers"></a>csharp\_style\_expression\_bodied_indexers
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_indexers |
 | **Regel-ID** | IDE0026 |
@@ -1343,7 +1343,7 @@ public T this[int i] { get { return _values[i]; } }
 
 #### <a name="csharp_style_expression_bodied_accessors"></a>csharp\_style\_expression\_bodied_accessors
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_accessors |
 | **Regel-ID** | IDE0027 |
@@ -1363,7 +1363,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 #### <a name="csharp_style_expression_bodied_lambdas"></a>csharp\_style\_expression\_bodied_lambdas
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_lambdas |
 | **Regel-ID** | IDE0053 |
@@ -1384,7 +1384,7 @@ Func<int, int> square = x => { return x * x; };
 
 Ab C#-7.0 unterstützt C# [lokale Funktionen](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Lokale Funktionen sind private Methoden eines Typs, die in einem anderen Member geschachtelt sind.
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_expression_bodied_local_functions |
 | **Regel-ID** | IDE0061 |
@@ -1428,7 +1428,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 #### <a name="csharp_style_pattern_matching_over_is_with_cast_check"></a>csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **Regel-ID** | IDE0020 |
@@ -1448,7 +1448,7 @@ if (o is int) {var i = (int)o; ... }
 
 #### <a name="csharp_style_pattern_matching_over_as_with_null_check"></a>csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_pattern_matching_over_as_with_null_check |
 | **Regel-ID** | IDE0019 |
@@ -1473,7 +1473,7 @@ Diese Formatregel bezieht sich darauf, ob `out`-Variablen inline deklariert werd
 
 #### <a name="csharp_style_inlined_variable_declaration"></a>csharp\_style\_inlined\_variable_declaration
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_inlined_variable_declaration |
 | **Regel-ID** | IDE0018 |
@@ -1516,7 +1516,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 Diese Formatregel bezieht sich auf die Verwendung des [`default`-Literals für Standardwertausdrücke](/dotnet/csharp/language-reference/operators/default#default-literal), wenn der Compiler den Typ des Ausdrucks ableiten kann.
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_prefer_simple_default_expression |
 | **Regel-ID** | IDE0034 |
@@ -1549,7 +1549,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 #### <a name="csharp_style_throw_expression"></a>csharp\_style\_throw_expression
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_throw_expression |
 | **Regel-ID** | IDE0016 |
@@ -1570,7 +1570,7 @@ this.s = s;
 
 #### <a name="csharp_style_conditional_delegate_call"></a>csharp\_style\_conditional\_delegate_call
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_conditional_delegate_call |
 | **Regel-ID** | IDE0041 |
@@ -1602,7 +1602,7 @@ csharp_prefer_braces = true:silent
 
 #### <a name="csharp_prefer_braces"></a>csharp\_prefer\_braces
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_prefer_braces |
 | **Regel-ID** | IDE0011 |
@@ -1635,7 +1635,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 
 #### <a name="csharp_style_unused_value_expression_statement_preference"></a>csharp_style_unused_value_expression_statement_preference
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_unused_value_expression_statement_preference |
 | **Regel-ID** | IDE0058 |
@@ -1660,7 +1660,7 @@ var unused = Convert.ToInt32("35");
 
 #### <a name="csharp_style_unused_value_assignment_preference"></a>csharp_style_unused_value_assignment_preference
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_unused_value_assignment_preference |
 | **Regel-ID** | IDE0059 |
@@ -1701,7 +1701,7 @@ csharp_style_prefer_range_operator = true:suggestion
 
 #### <a name="csharp_style_prefer_index_operator"></a>csharp\_style\_prefer\_index_operator
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_prefer_index_operator |
 | **Regel-ID** | IDE0056 |
@@ -1723,7 +1723,7 @@ var index = names[names.Length - 1];
 
 #### <a name="csharp_style_prefer_range_operator"></a>csharp\_style\_prefer\_range_operator
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_prefer_range_operator |
 | **Regel-ID** | IDE0057 |
@@ -1762,7 +1762,7 @@ csharp_style_prefer_switch_expression = true:suggestion
 
 #### <a name="csharp_style_deconstructed_variable_declaration"></a>csharp\_style\_deconstructed\_variable_declaration
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_deconstructed_variable_declaration |
 | **Regel-ID** | IDE0042 |
@@ -1792,7 +1792,7 @@ Console.WriteLine($"{point.x} {point.y}");
 
 Ab C#-7.0 unterstützt C# [lokale Funktionen](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Lokale Funktionen sind private Methoden eines Typs, die in einem anderen Member geschachtelt sind.
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_pattern_local_over_anonymous_function |
 | **Regel-ID** | IDE0039 |
@@ -1819,7 +1819,7 @@ fibonacci = (int n) =>
 
 #### <a name="csharp_using_directive_placement"></a>csharp\_using\_directive_placement
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_using_directive_placement |
 | **Regel-ID** | IDE0065 |
@@ -1848,7 +1848,7 @@ namespace Conventions
 
 #### <a name="csharp_prefer_static_local_function"></a>csharp\_prefer\_static\_local_function
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_prefer_static_local_function |
 | **Regel-ID** | IDE0062 |
@@ -1882,7 +1882,7 @@ void M()
 
 #### <a name="csharp_prefer_simple_using_statement"></a>csharp\_prefer\_simple\_using_statement
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_prefer_simple_using_statement |
 | **Regel-ID** | IDE0063 |
@@ -1902,7 +1902,7 @@ using (var a = b) { }
 
 #### <a name="csharp_style_prefer_switch_expression"></a>csharp\_style\_prefer\_switch_expression
 
-|||
+|Eigenschaft|Wert|
 |-|-|
 | **Regelname** | csharp_style_prefer_switch_expression |
 | **Regel-ID** | IDE0066 |

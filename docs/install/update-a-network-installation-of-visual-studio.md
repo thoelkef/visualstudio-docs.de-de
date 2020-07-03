@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren einer netzwerkbasierten Installation
 description: Erfahren Sie, wie Sie eine netzwerkbasierte Installation von Visual Studio mit dem Befehl „--layout“ aktualisieren.
-ms.date: 01/08/2020
+ms.date: 06/29/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114978"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545430"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualisieren einer netzwerkbasierten Installation von Visual Studio
 
@@ -74,7 +74,7 @@ Hier finden Sie einige ausführliche Beispiele für das Erstellen und Aktualisie
   ```
 
     > [!IMPORTANT]
-    > Ein Updatevorgang installiert keine neu hinzugefügten optionalen Komponenten, auch wenn Sie diese in den add-Abschnitt einer [Antwortdatei](automated-installation-with-response-file.md) einfügen. Das liegt daran, dass der add-Vorgang während eines Updates nicht verwendet wird.
+    > Neu hinzugefügte optionale Komponenten werden nicht durch einen Updatevorgang installiert. Wenn Sie die neu hinzugefügten optionalen Komponenten benötigen, entfernen Sie die alten optionalen Komponenten in der [Antwortdatei](automated-installation-with-response-file.md) `Layout.JSON`, und fügen Sie die erforderlichen Komponenten im Abschnitt „Hinzufügen“ von `Layout.JSON` ein. 
     >
     > **Problemumgehung:** Führen Sie einen separaten modify-Vorgang nach einem Upgrade aus, um die fehlenden Komponenten zu installieren.
 

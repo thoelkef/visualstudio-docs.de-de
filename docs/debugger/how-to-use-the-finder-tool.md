@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden des Suchtools | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f96fe87137c6b14e32fb2648e93c54a1c5b094a0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732162"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348729"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Vorgehensweise: Verwenden des Suchtools
 Sie können das Suchtool im Dialogfeld **Fenster suchen** verwenden, um Fenstereigenschaften oder Meldungen anzuzeigen. Mit dem Suchtool können auch deaktivierte untergeordnete Fenster gesucht werden, und es kann erkennen, welches Fenster hervorgehoben werden soll, wenn sich deaktivierte untergeordnete Fenster überlappen.

@@ -2,7 +2,7 @@
 title: Festlegen einer Überwachung für Variablen | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 10/11/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301014"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348027"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Überwachen von Variablen mit Überwachungsfenstern und Schnellüberwachung
 
@@ -76,7 +76,7 @@ int main()
 >Nur für C++:
 >- Möglicherweise müssen Sie den Kontext eines Variablennamens oder eines Ausdrucks, der einen Variablennamen verwendet, qualifizieren. Mit dem Kontext sind die Funktion, die Quelldatei oder das Modul gemeint, in der bzw. dem eine Variable enthalten ist. Wenn Sie den Kontext qualifizieren müssen, verwenden Sie die Syntax des [Kontextoperators (C++)](../debugger/context-operator-cpp.md) für **Name** im Fenster **Überwachen**.
 >
->- Sie können Registernamen und Variablennamen mithilfe von **$\<Registername>** &nbsp;oder **@\<Registername>** &nbsp;zu **Name** im Fenster **Überwachen** hinzufügen. Weitere Informationen finden Sie unter [Pseudovariables](../debugger/pseudovariables.md).
+>- Sie können Registernamen und Variablennamen mithilfe von **$\<register&nbsp;name>** oder **@\<register&nbsp;name>** zum **Namen** im Fenster **Überwachen** hinzufügen. Weitere Informationen finden Sie unter [Pseudovariables](../debugger/pseudovariables.md).
 
 ## <a name="use-expressions-in-a-watch-window"></a>Verwenden von Ausdrücken in einem Überwachungsfenster
 
@@ -167,7 +167,7 @@ Ein Ausdruck mit Nebeneffekten wird nur bei der ersten Eingabe ausgewertet. Dana
 
 Eine Möglichkeit, die Angabe von Nebeneffekten zu verhindern, ist das Deaktivieren der automatischen Funktionsauswertung. Deaktivieren Sie unter **Extras** > **Optionen** > **Debuggen** > **Allgemein** die Option **Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**.
 
-Nur für C#: Wenn die Auswertung von Eigenschaften oder impliziten Funktionsaufrufen deaktiviert ist, können Sie die Auswertung erzwingen, indem Sie den **ac**-Formatmodifizierer zu einer Variablen unter **Name** im Fenster **Überwachen** hinzufügen. Weitere Informationen finden Sie unter [Formatbezeichner in C#](../debugger/format-specifiers-in-csharp.md).
+Nur für C#: Wenn die Auswertung von Eigenschaften oder impliziten Funktionsaufrufen deaktiviert ist, können Sie die Auswertung erzwingen, indem Sie den **ac**-Formatmodifizierer zu einer Variablen unter **Name** im Fenster **Überwachen** hinzufügen. Weitere Informationen finden Sie unter [Formatieren von Spezifizierern in C#](../debugger/format-specifiers-in-csharp.md).
 
 ## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a> Verwenden von Objekt-IDs im Überwachungsfenster (C# und Visual Basic)
 
@@ -227,7 +227,7 @@ Um den Namen von `Person` in der `DoSomething()`-Methode zu ermitteln, können S
 
 1. Legen Sie einen anderen Haltepunkt in der `DoSomething()`-Methode fest.
 
-1. Setzen Sie das Debuggen fort. Wenn die Ausführung in der `DoSomething()`-Methode anhält, wird im Fenster **Überwachen** das `Person`-Objekt angezeigt.
+1. Debuggen fortsetzen. Wenn die Ausführung in der `DoSomething()`-Methode anhält, wird im Fenster **Überwachen** das `Person`-Objekt angezeigt.
 
    > [!NOTE]
    > Wenn Sie die Eigenschaften des Objekts anzeigen möchten (z. B. `Person.Name`), müssen Sie die Eigenschaftenauswertung aktivieren. Dazu wählen Sie **Extras** > **Optionen** > **Debuggen** > **Allgemein** > **Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen** aus.
@@ -300,10 +300,10 @@ Zum Beobachten der Variablen `a` gehen Sie folgendermaßen vor:
 
 1. Wählen Sie **Schließen** aus, um das Fenster **Schnellüberwachung** zu schließen. (**Schnellüberwachung** ist ein modales Dialogfeld, d. h., Sie können den Debugvorgang nicht fortsetzen, solange es geöffnet ist.)
 
-1. Setzen Sie das Debuggen fort. Sie können die Variable im Fenster **Überwachen** beobachten.
+1. Debuggen fortsetzen. Sie können die Variable im Fenster **Überwachen** beobachten.
 
 ## <a name="see-also"></a>Siehe auch
 - [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
-- [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md)
+- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
 - [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md)
 - [Debuggerfenster](../debugger/debugger-windows.md)

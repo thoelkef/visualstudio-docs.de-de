@@ -2,7 +2,7 @@
 title: Analysieren von JavaScript-Speicherauslastung in UWP-Apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189383"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331273"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren der JavaScript-Arbeitsspeicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
@@ -255,14 +255,14 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 
   Um die Differenzinformationen zwischen den Momentaufnahmen zu filtern, wählen Sie einen der **Bereichsfilter** oben in den Differenzansichten aus.
 
-- **Übrige Objekte der Momentaufnahme #\<Zahl>** . Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.
+- **Übrige Objekte der Momentaufnahme \<number>** . Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.
 
   > [!TIP]
   > Um mit diesem Filter die nützlichsten Informationen anzuzeigen, befolgen Sie die unter [Isolate a memory leak](#isolate-a-memory-leak)beschriebenen Schritte.
 
-- **Objekte zwischen Momentaufnahme #\<Zahl> und #\<Zahl>** eingefügt. Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.
+- **Zwischen Momentaufnahme \<number> und \<number> hinzugefügte Objekte** Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.
 
-- **Alle Objekte in Momentaufnahme #\<Zahl>** . Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.
+- **Alle Objekte in Momentaufnahme \<number>** Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.
 
   Zum Anzeigen von Objektverweisen, die nicht dem aktuellen Filter **Bereich** entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") (Dropdownliste „Einstellungen“ in Speicheranalyse) aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.
 
@@ -347,7 +347,7 @@ if (performance && performance.mark) {
 
 ## <a name="tips-to-identify-memory-issues"></a>Tipps zum Identifizieren von Arbeitsspeicherproblemen
 
-- Führen Sie den unter [Isolieren eines Speicherverlusts](#isolate-a-memory-leak) beschriebenen Workflow aus, und verwenden Sie den Filter **Übrige Objekte der Momentaufnahme #\<Zahl>** in einer Differenzansicht, um Kandidaten zu identifizieren, die wahrscheinlich für die Speicherverluste verantwortlich sind.
+- Führen Sie den unter [Isolieren eines Speicherverlusts](#isolate-a-memory-leak) beschriebenen Workflow aus, und verwenden Sie den Filter **Übrige Objekte der Momentaufnahme \<number>** in einer Differenzansicht, um Kandidaten zu identifizieren, die wahrscheinlich für die Speicherverluste verantwortlich sind.
 
 - Verwenden Sie [Suchen eines Objekts in der Objektstruktur](#find-an-object-in-the-object-tree) können Sie anzeigen, an welcher Stelle in der Speicherhierarchie auf ein Objekt verwiesen wird. Die Stammansicht zeigt, wie ein Objekt mit dem globalen Objekt als Stamm verknüpft ist, was die Garbage Collection für dieses Objekt verhindern würde.
 

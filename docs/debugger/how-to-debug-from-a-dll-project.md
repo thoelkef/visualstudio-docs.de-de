@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Debuggen über ein DLL-Projekt | Microsoft-Dokumentation'
 ms.date: 10/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 081e897b0ff76dd97d2c174bf8c6fbfa2334f8ff
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847983"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350120"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Vorgehensweise: Debuggen über ein DLL-Projekt in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -37,7 +37,7 @@ Native und verwaltete DLL-Projekte verfügen über unterschiedliche Einstellunge
 
 1. Wählen Sie im **Projektmappen-Explorer** das C++-DLL-Projekt aus. Wählen Sie das Symbol **Eigenschaften** aus, und drücken Sie **ALT**+**EINGABETASTE**, oder klicken Sie mit der rechten Maustaste, und wählen Sie **Eigenschaften** aus.
 
-1. Stellen Sie im Dialogfeld **\<Projekt > Eigenschaftenseiten** sicher, dass das Feld **Konfiguration** am oberen Rand des Fensters auf **Debuggen** eingestellt ist.
+1. Stellen Sie im Dialogfeld **\<Project>-Eigenschaftenseiten** sicher, dass das Feld **Konfiguration** am oberen Rand des Fensters auf **Debuggen** festgelegt ist.
 
 1. Wählen Sie **Konfigurationseigenschaften** > **Debuggen** aus.
 
@@ -79,7 +79,7 @@ Native und verwaltete DLL-Projekte verfügen über unterschiedliche Einstellunge
 
 1. Stellen Sie sicher, dass das Feld **Projektmappenkonfiguration** auf **Debuggen** eingestellt ist. Drücken Sie **F5**, und klicken Sie auf den grünen **Startpfeil**, oder wählen Sie **Debuggen** > **Debuggen starten** aus.
 
-Wenn beim Debuggen die Haltepunkte nicht getroffen werden, stellen Sie sicher, dass die DLL-Ausgabe (standardmäßig der Ordner *\<project>\Debug*) in den Speicherort erfolgt, den die aufrufende App aufruft.
+Wenn die Breakpoints beim Debuggen nicht erreicht werden, stellen Sie sicher, dass die DLL-Ausgabe (standardmäßig der Ordner *\<project>\Debug*) in den Speicherort erfolgt, den die aufrufende App aufruft.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debugging DLL projects (Debuggen von DLL-Projekten)](../debugger/debugging-dll-projects.md)

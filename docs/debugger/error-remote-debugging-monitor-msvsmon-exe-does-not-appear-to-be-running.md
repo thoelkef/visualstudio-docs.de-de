@@ -1,9 +1,9 @@
 ---
-title: 'Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend auf dem Remotecomputer nicht ausgeführt.'
+title: 'Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend auf dem Remotecomputer nicht ausgeführt'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.server_machine_no_default
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9558ff4d470d30df19ea5982eb6acbcc708eea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916258"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460610"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend auf dem Remotecomputer nicht ausgeführt.
 Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine passende Instanz des Visual Studio-Remotedebugmonitors finden konnte. Der Visual Studio-Remotedebugmonitor muss installiert werden, damit das Remotedebuggen funktioniert. Informationen zum Herunterladen und Einrichten des Remotedebuggers finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
@@ -51,7 +51,7 @@ Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine pa
 
 - Sie können den Remotedebugger beenden und unter dem Konto, das Sie auf dem lokalen Computer verwenden, erneut starten.
 
-- Sie können den Remotedebugger über die Befehlszeile mit dem Parameter **/allow \<Benutzername>** erneut starten: `msvsmon /allow <username@computer>`
+- Sie können den Remotedebugger über die Befehlszeile mit dem Parameter **/allow \<username>** starten: `msvsmon /allow <username@computer>`.
 
 - Sie können dem Benutzer Remotedebuggerberechtigungen (im Remotedebuggerfenster unter **Extras > Berechtigungen**) hinzufügen.
 
@@ -70,9 +70,9 @@ Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine pa
  Möglicherweise müssen Sie das Remotedebuggen zu einem anderen Zeitpunkt ausführen oder die Arbeiten im Netzwerk für einen anderen Zeitpunkt planen.
 
 ## <a name="more-help"></a>Weitere Hilfe
- Klicken Sie im Fenster des Remotedebuggers auf **Hilfe > Verwendung**, um weitere Informationen zum Remotedebugger einschließlich Befehlszeilenoptionen zu erhalten. Wenn Sie diesen nicht geöffnet haben, können Sie die Webseite anzeigen, indem Sie die folgende Zeile in ein **Datei-Explorer**-Fenster kopieren. (Sie müssen „\<Visual Studio-Installationsverzeichnis“ durch den Speicherort Ihrer Visual Studio-Installation ersetzen.)
+ Klicken Sie im Fenster des Remotedebuggers auf **Hilfe > Verwendung**, um weitere Informationen zum Remotedebugger einschließlich Befehlszeilenoptionen zu erhalten. Wenn Sie diesen nicht geöffnet haben, können Sie die Webseite anzeigen, indem Sie die folgende Zeile in ein **Datei-Explorer**-Fenster kopieren. (Sie müssen \<Visual Studio installation directory> durch den Speicherort Ihrer Visual Studio-Installation ersetzen.)
 
- res:// *\<Visual Studio-Installationsverzeichnis>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 
 ## <a name="see-also"></a>Siehe auch
 - [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733234"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349626"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung (C#, Visual Basic, C++)
 
@@ -31,7 +31,7 @@ Gekennzeichnete Threads werden auch in der Liste **Thread** auf der Symbolleiste
 ### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf
 
 - Suchen Sie in den Fenstern **Threads** oder **Parallele Überwachung** den gewünschten Thread, und klicken Sie auf das Flagsymbol, um das Flag auszuwählen oder zu löschen.
-- Klicken Sie im Fenster **Parallele Stapel** mit der rechten Maustaste auf einen einzelnen Thread oder eine Gruppe von Threads, und klicken Sie dann entweder auf **Kennzeichnen / \<Thread>** oder auf **Kennzeichnung aufheben / \<Thread>** .
+- Klicken Sie im Fenster **Parallele Stapel** mit der rechten Maustaste auf einen einzelnen Thread oder eine Gruppe von Threads, und klicken Sie dann entweder auf **\<thread> kennzeichnen** oder auf **Kennzeichnung von \<thread> aufheben**.
 
 ### <a name="to-unflag-all-threads"></a>So heben Sie die Kennzeichnung aller Threads auf
 

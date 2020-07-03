@@ -1,7 +1,7 @@
 ---
 title: Debuggen von UWP-Apps auf Remotecomputern | Microsoft-Dokumentation
 ms.date: 10/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902871"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348118"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-Apps auf Remotecomputern in Visual Studio
 
@@ -53,7 +53,7 @@ Für das Debuggen einer UWP-App auf einem Remotegerät in Visual Studio müssen 
 
 1. Geben Sie bei einem Remotecomputer den Netzwerknamen oder die IP-Adresse in das Feld **Remotecomputer** ein, oder klicken Sie im [Dialogfeld Remoteverbindungen](#remote-connections) auf **Suchen**, um nach dem Gerät zu suchen.
 
-    ![Verwaltete Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_managed_projprop_remote.png "Verwaltete Projekteigenschaften unter „Debuggen“")
+    ![Verwaltete Projekteigenschaften für Remotedebuggen](../debugger/media/vsrun_managed_projprop_remote.png "Verwaltete Debugprojekteigenschaften")
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurieren eines C++-Projekts für das Remotedebuggen
 
@@ -65,13 +65,13 @@ Für das Debuggen einer UWP-App auf einem Remotegerät in Visual Studio müssen 
 
 1. Geben Sie bei einem Remotecomputer den Netzwerknamen oder die IP-Adresse in das Feld **Computername** ein. Alternativ können Sie die entsprechende Dropdownliste aufklappen und auf **Suchen** klicken, um über das [Dialogfeld Remoteverbindungen](#remote-connections) nach dem Gerät zu suchen.
 
-    ![C++-Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "C++-Projekteigenschaften unter „Debuggen“")
+    ![C++-Projekteigenschaften für Remotedebugging](../debugger/media/vsrun_cpp_projprop_remote.png "Projekteigenschaften für C++-Debugging")
 
 ### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> Verwenden des Dialogfelds „Remoteverbindungen“
 
 Im Dialogfeld **Remoteverbindungen** können Sie entweder nach einem bestimmten Remotecomputernamen oder einer bestimmten IP-Adresse suchen oder per Klick auf das Aktualisierungssymbol mit dem gebogenen Pfeil die automatische Erkennung von Verbindungen verwenden. Das Dialogfeld sucht nur nach Geräten im lokalen Subnetz, auf denen derzeit der Remotedebugger ausgeführt wird. Nicht alle Geräte können im Dialogfeld **Remoteverbindungen** erkannt werden.
 
- ![Dialogfeld „Remoteverbindungen“](../debugger/media/vsrun_selectremotedebuggerdlg.png "Dialogfeld „Remoteverbindungen“")
+ ![Dialogfeld „Remoteverbindung“](../debugger/media/vsrun_selectremotedebuggerdlg.png "Dialogfeld „Remoteverbindungen“")
 
 >[!TIP]
 >Wenn Sie mit einem Remotegerät über den Namen keine Verbindung herstellen können, versuchen Sie es mit der IP-Adresse. Ermitteln Sie die IP-Adresse, indem Sie auf dem Remotegerät **ipconfig** in ein Befehlsfenster eingeben. Die IP-Adresse wird als **IPv4-Adresse** angezeigt.

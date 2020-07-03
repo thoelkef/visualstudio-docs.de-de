@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306818"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533639"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -32,34 +32,50 @@ Eine Liste häufiger Tastenkombinationen und andere Informationen zum Thema Prod
 
 Weitere Informationen zur Barrierefreiheit in Visual Studio finden Sie unter [Tipps und Tricks zu Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md) und [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-|||||
-|-|-|-|-|
-|[Analyse](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Bearbeiten](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projekt](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architektur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Editor-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Kontextmenüs für Projekte und Projektmappen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Test-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[Erstellen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Datei](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refactor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Extras](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Kontextmenüs der Klassenansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Hilfe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Projektmappen-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Ansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Debuggen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Auslastungstest](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Fenster](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[Debugger-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Weitere Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[Diagnosehub](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+- [Analyse](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
+- [Bearbeiten](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
+- [Projekt](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
+- [Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [Architektur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
+- [Editor-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
+- [Kontextmenüs für Projekte und Projektmappen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [Test-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [Erstellen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
+- [Datei](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
+- [Refactor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
+- [Extras](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
+- [Kontextmenüs der Klassenansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
+- [Hilfe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
+- [Projektmappen-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
+- [Ansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [Debuggen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [Auslastungstest](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
+- [Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
+- [Fenster](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
+- [Debugger-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
+- [Weitere Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
+- [Team Foundation-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
+- [Diagnosehub](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
 ## <a name="global-shortcuts"></a>Globale Tastenkombinationen
 
 Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual Studio-Fenster verwendet werden, das den Fokus besitzt.
 
-### <a name="bkmk_analyze"></a> Analyse
+### <a name="analyze"></a><a name="bkmk_analyze"></a> Analyse
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |Analyze.NavigateBackward|**UMSCHALT+ALT+3**|
 |Analyze.NavigateForward|**UMSCHALT+ALT+4**|
 
-### <a name="bkmk_architecture"></a> Architektur
+### <a name="architecture"></a><a name="bkmk_architecture"></a> Architektur
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |Architecture.NewDiagram|**STRG+\\, STRG+N**|
 
-### <a name="bkmk_build"></a> Erstellen
+### <a name="build"></a><a name="bkmk_build"></a> Erstellen
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -69,13 +85,13 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Build.Compile|**STRG+F7**|
 |Build.RunCodeAnalysisonSolution|**ALT+F11**|
 
-### <a name="bkmk_classview"></a> Klassenansicht: Kontextmenüs
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Klassenansicht: Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+EINGABETASTE**|
 
-### <a name="bkmk_debug"></a> Debuggen
+### <a name="debug"></a><a name="bkmk_debug"></a> Debuggen
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -144,7 +160,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Debug.Watch3|**STRG+ALT+W, 3**|
 |Debug.Watch4|**STRG+ALT+W, 4**|
 
-### <a name="bkmk_debugger"></a> Debugger-Kontextmenüs
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> Debugger-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -152,13 +168,13 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
 
-### <a name="bkmk_diagnostics"></a> Diagnosehub
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Diagnosehub
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**STRG+ALT+F2**|
 
-### <a name="bkmk_edit"></a> Bearbeiten
+### <a name="edit"></a><a name="bkmk_edit"></a> Bearbeiten
 
 |Befehle|Tastenkombinationen|
 |--------------|-|
@@ -218,7 +234,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Edit.SurroundWith|**STRG+K, STRG+S**|
 |Edit.Undo|**STRG+Z**<br /><br /> oder<br /><br /> **ALT+RÜCKTASTE**|
 
-### <a name="bkmk_editorContext"></a> Editor-Kontextmenüs
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> Editor-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -229,7 +245,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**STRG+K, STRG+O** (Buchstabe „O“)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**STRG+K, STRG+T**<br /><br /> oder<br /><br /> **STRG+K, T**|
 
-### <a name="bkmk_file"></a> Datei
+### <a name="file"></a><a name="bkmk_file"></a> Datei
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -245,7 +261,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |File.SaveSelectedItems|**STRG+S**|
 |File.ViewinBrowser|**STRG+UMSCHALT+W**|
 
-### <a name="bkmk_help"></a> Hilfe
+### <a name="help"></a><a name="bkmk_help"></a> Hilfe
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -254,19 +270,19 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Help.ViewHelp|**STRG+F1**|
 |Help.WindowHelp|**UMSCHALTTASTE+F1**|
 
-### <a name="bkmk_loadtest"></a> Auslastungstest
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> Auslastungstest
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**STRG+R, Q**|
 
-### <a name="bkmk_otherContext"></a> Weitere Kontextmenüs
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> Weitere Kontextmenüs
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Einfügen**|
 
-### <a name="bkmk_project"></a> Projekt
+### <a name="project"></a><a name="bkmk_project"></a> Projekt
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -278,14 +294,14 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Project.Publishselectedfiles|**ALT+;** , dann **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**ALT+;** , dann **Alt+R**|
 
-### <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT+NACH-UNTEN-TASTE**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT+NACH-OBEN-TASTE**|
 
-### <a name="bkmk_refactor"></a> Refactor
+### <a name="refactor"></a><a name="bkmk_refactor"></a> Refactor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -296,7 +312,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Refactor.Rename|**STRG+R, STRG+R**|
 |Refactor.ReorderParameters|**STRG+R, STRG+O** (Buchstabe „O“)|
 
-### <a name="bkmk_solutionexplorerGLOBAL"></a> Projektmappen-Explorer
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Projektmappen-Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -304,7 +320,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |SolutionExplorer.PendingChangesFilter|**STRG+[** , **P**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+P**|
 |SolutionExplorer.SyncWithActiveDocument|**STRG+[** , **S**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+S**|
 
-### <a name="bkmk_team"></a> Team
+### <a name="team"></a><a name="bkmk_team"></a> Team
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -313,7 +329,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Team.Git.GoToGitCommits|**STRG+0** (null), **STRG+O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+0**|
 |Team.TeamExplorerSearch|**STRG+'**|
 
-### <a name="bkmk_TFcontext"></a> Team Foundation-Kontextmenüs
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Team Foundation-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -328,14 +344,14 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**STRG+0** (null), **STRG+A**<br /><br /> oder<br /><br /> **STRG+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**STRG+0** (null), **STRG+W**<br /><br /> oder<br /><br /> **STRG+0, W**|
 
-### <a name="bkmk_test"></a> Test
+### <a name="test"></a><a name="bkmk_test"></a> Test
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**STRG+\\, STRG+C**|
 |Test.UseExistingActionRecording|**STRG+\\, STRG+A**|
 
-### <a name="bkmk_testexplorerGLOBAL"></a> Test-Explorer
+### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> Test-Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -349,7 +365,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |LiveUnitTesting.OpenTab|**STRG+E, L**|
 |Test.CodeCoverageResults|**STRG+E, C**|
 
-### <a name="bkmk_tools"></a> Extras
+### <a name="tools"></a><a name="bkmk_tools"></a> Extras
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -357,7 +373,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Tools.CodeSnippetsManager|**STRG+K, STRG+B**|
 |Tools.ForceGC|**STRG+UMSCHALT+ALT+F12, STRG+UMSCHALT+ALT+F12**|
 
-### <a name="bkmk_view"></a> Ansicht
+### <a name="view"></a><a name="bkmk_view"></a> Ansicht
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -407,7 +423,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |View.ZoomOut|**STRG+UMSCHALT+,**|
 |TestExplorer.ShowTestExplorer|**STRG+E, T**|
 
-### <a name="bkmk_window"></a> Fenster
+### <a name="window"></a><a name="bkmk_window"></a> Fenster
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -438,7 +454,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Window.SolutionExplorerSearch|**STRG+;**|
 |Window.WindowSearch|**ALT+`**|
 
-### <a name="bkmk_windowsazure"></a> Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |Befehle|Tastenkombinationen|
 |--------------| - |

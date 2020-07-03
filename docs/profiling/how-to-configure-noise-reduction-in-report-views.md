@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2920d2d7f6a77fe8fdbd62a0788f570818390eea
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776331"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330802"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten
 Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl von Daten, die in der Aufrufstrukturansicht und der Zuordnungsansicht angezeigt werden, eingeschränkt werden. Leistungsprobleme werden mithilfe der Rauschunterdrückung erkennbarer. Dies ist hilfreich bei der Analyse von Leistungsberichten.
@@ -77,8 +77,8 @@ Berichte können zur Rauschunterdrückung konfiguriert werden, indem die Anzahl 
 
 4. Klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)
-- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentierung](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view.md)
-- [Allocations View (Zuordnungsansicht)](../profiling/dotnet-memory-allocations-view.md)
+- [How to: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [Aufrufstrukturansicht](../profiling/call-tree-view.md)
+- [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)

@@ -1,7 +1,7 @@
 ---
 title: 'DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -13,21 +13,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 74fed5f0dcbac45f603f16743eb2635fcf35292a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780064"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548147"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird mit den vom Prozess verwalteten Speicherlimits ausgeführt
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
 
-|||
+|Element|Wert|
 |-|-|
 |Regel-ID|DA0018|
 |Kategorie|Verwendung der Profilerstellungstools|
-|Profilerstellungsmethode|Stichproben|
-|Nachricht|Die verwalteten Speicherbelegungen erreichen beinahe das Standardlimit für einen 32-Bit-Prozess. Die Anwendung ist möglicherweise speichergebunden.|
+|Profilerstellungsmethode|Sampling|
+|Meldung|Die verwalteten Speicherbelegungen erreichen beinahe das Standardlimit für einen 32-Bit-Prozess. Die Anwendung ist möglicherweise speichergebunden.|
 |Regeltyp|Warnung|
 
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.
@@ -55,7 +55,7 @@ ms.locfileid: "74780064"
 
 - Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.
 
-   \- oder -
+   - oder -
 
 - Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.
 

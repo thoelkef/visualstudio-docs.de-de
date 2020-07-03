@@ -2,7 +2,7 @@
 title: Referenz zum Fenster „Python-Umgebungen“
 description: Dieser Artikel beschreibt jede der Registerkarten, die im Fenster „Python-Umgebungen“ in Visual Studio angezeigt werden.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307118"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545495"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -60,7 +60,7 @@ Beim Verwenden von interaktiven Fenstern in ihrem alltäglichen Workflow entwick
 
 Startskripts enthalten Code, der vom **interaktiven** Fenster automatisch geladen und ausgeführt wird, einschließlich Importe, Funktionsdefinitionen und vieles mehr. Auf derartige Skripts kann auf zwei Weisen verwiesen werden:
 
-1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner *Documents\Visual Studio \<version>\Python Scripts\\\<Umgebung>* , wobei &lt;Version&gt; der Visual Studio-Version (wie etwa 2017 oder 2019) und &lt;Umgebung&gt; dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das **interaktive** Fenster für diese Umgebung starten, lädt es alle hier gefundenen *.py*-Dateien und führt diese in alphabetischer Reihenfolge aus.
+1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* , wobei &lt;Version&gt; der Visual Studio-Version (wie etwa 2017 oder 2019) und &lt;Environment&gt; dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das **interaktive** Fenster für diese Umgebung starten, lädt es alle hier gefundenen *.py*-Dateien und führt diese in alphabetischer Reihenfolge aus.
 
 1. Das Steuerelement **Skripts** auf der Registerkarte **Extras** > **Optionen** > **Python** > **Interaktives Fenster** (siehe Optionen für das [interaktive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options) Fenster) gibt einen zusätzlichen Ordner für Startskripts an, die in allen Umgebungen geladen und ausgeführt werden. Diese Funktion funktioniert aktuell noch nicht.
 
@@ -105,7 +105,7 @@ Bei Eingabe eines Suchbegriffs werden sowohl die Liste der installierten Pakete 
 ![Registerkarte mit Python-Umgebungspaketen mit einer Suche nach „num“](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-In der obigen Abbildung können Sie erkennen, dass die Suchergebnisse einige Pakete anzeigt, die dem Suchbegriff entsprechen. Der erste Eintrag in der Liste ist jedoch ein Befehl, um **pip install \<Name>** direkt auszuführen. Wenn Sie sich auf der Registerkarte **Pakete (Conda)** befinden, wird Ihnen stattdessen **conda install \<Name>** angezeigt:
+In der obigen Abbildung können Sie erkennen, dass die Suchergebnisse einige Pakete anzeigt, die dem Suchbegriff entsprechen. Der erste Eintrag in der Liste ist jedoch ein Befehl, um **pip install \<name>** direkt auszuführen. Wenn Sie sich auf der Registerkarte **Pakete (Conda)** befinden, wird Ihnen stattdessen **conda install \<name>** angezeigt:
 
 ::: moniker range="vs-2017"
 ![Registerkarte „Pakete (Conda)“, auf der ein Conda-Installationsbefehl angezeigt wird](media/environments/environments-conda-tab-install.png)

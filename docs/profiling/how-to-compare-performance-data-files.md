@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vsperf.choosediffbinaries
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb8057823732503a215fb4f2c12ebee33b34c4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778998"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330811"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Vorgehensweise: Vergleichen von Leistungsdatendateien
 Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.*vsp* oder .*vsps*) vergleichen, indem Sie einen Vergleichsbericht („Diff“) oder eine Ansicht erstellen. Der Vergleich zeigt die Unterschiede, Leistungsabnahmen und -verbesserungen, die von einer Profilerstellungssitzung in die andere aufgetreten sind.
@@ -54,6 +54,6 @@ Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.*vs
 
 1. Klicken Sie im Menü **Analysieren** auf **Leistungsberichte vergleichen**.
 
-2. Durchsuchen Sie das Fenster **Analysedateien für den Vergleich auswählen** und wählen Sie die Analysedatei **Baselinedatei** und die **Vergleichsdatei** (jeweils im *VSP*- oder *VSPS*-Format) aus.
+2. Durchsuchen Sie das Fenster **Analysedateien für den Vergleich auswählen** und wählen Sie die Analysedatei **Baselinedatei** (jeweils im *VSP*- oder *VSPS*-Format) und die **Vergleichsdatei** (jeweils im *VSP*- oder *VSPS*-Format) aus.
 
 3. Klicken Sie auf **OK**.
