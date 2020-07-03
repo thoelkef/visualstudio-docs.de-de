@@ -1,7 +1,7 @@
 ---
-title: Veröffentlichen der Erweiterung mithilfe der Befehlszeile
+title: Erweiterung mit Befehlszeile veröffentlichen
 ms.date: 07/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - publishing extensions
 - extension, publishing
@@ -11,74 +11,74 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40be0252218f39b4ff98b58caedd7f9f20ce6d5d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697128"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904667"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
 
-In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie eine Visual Studio-Erweiterung im Visual Studio Marketplace mithilfe der Befehlszeile veröffentlichen. Wenn Sie Ihre Erweiterung zum Marketplace hinzufügen, können Entwickler das Dialogfeld [**Erweiterungen und Updates**](../ide/finding-and-using-visual-studio-extensions.md) verwenden, um dort nach neuen und aktualisierten Erweiterungen zu suchen.
+In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie eine Visual Studio-Erweiterung mithilfe der Befehlszeile in der Visual Studio Marketplace veröffentlichen. Wenn Sie Ihre Erweiterung zum Marketplace hinzufügen, können Entwickler das Dialogfeld [**Erweiterungen und Updates**](../ide/finding-and-using-visual-studio-extensions.md) verwenden, um dort nach neuen und aktualisierten Erweiterungen zu suchen.
 
-VsixPublisher.exe ist das Befehlszeilentool zum Veröffentlichen von Visual Studio-Erweiterungen im Marketplace. Auf sie kann von der Datei "VSInstallDir" und "VSSDK" und "VisualStudioIntegration" auf die Datei "Tools" und "Bin" und "VsixPublisher.exe" zugegriffen werden. Die in diesem Tool verfügbaren Befehle sind: **publish**, **createPublisher**, **deletePublisher**, **deleteExtension**, **login**, **logout**.
+VsixPublisher.exe ist das Befehlszeilen Tool zum Veröffentlichen von Visual Studio-Erweiterungen im Marketplace. Der Zugriff ist über "$ {VSInstallDir}" \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe möglich. Für dieses Tool sind folgende Befehle verfügbar: **Publish**, up **Publisher**, **deletepublisher**, **deleteextension**, **Login**, **Abmelde**.
 
 ## <a name="commands"></a>Befehle
 
 ### <a name="publish"></a>Veröffentlichen
 
-Veröffentlicht eine Erweiterung für den Marketplace. Die Erweiterung kann eine vsix, eine exe/msi-Datei oder ein Link sein. Wenn die Erweiterung bereits mit derselben Version vorhanden ist, wird die Erweiterung überschrieben. Wenn die Erweiterung noch nicht vorhanden ist, wird eine neue Erweiterung erstellt.
+Veröffentlicht eine Erweiterung im Marketplace. Bei der Erweiterung kann es sich um eine VSIX, eine exe/MSI-Datei oder einen Link handeln. Wenn die Erweiterung bereits mit derselben Version vorhanden ist, wird die Erweiterung überschrieben. Wenn die Erweiterung nicht bereits vorhanden ist, wird eine neue Erweiterung erstellt.
 
-|Befehlsoptionen |BESCHREIBUNG |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|Nutzlast (erforderlich) | Entweder ein Pfad zur zu veröffentlichenden Nutzlast oder ein Link, der als "mehr Info-URL" verwendet werden soll. |
-|publishManifest (erforderlich) | Pfad zur zu verwendenden Veröffentlichungsmanifestdatei. |
-|IgnoreWarnings | Liste der Warnungen, die beim Veröffentlichen einer Erweiterung ignoriert werden sollen. Diese Warnungen werden beim Veröffentlichen einer Erweiterung als Befehlszeilenmeldungen angezeigt. (z. B. "VSIXValidatorWarning01, VSIXValidatorWarning02")
-|personalAccessToken | Persönlicher Zugriffstoken (PERSONAL Access Token, PAT), der zur Authentifizierung des Herausgebers verwendet wird. Wenn dies nicht angegeben wird, wird die PAT von den angemeldeten Benutzern übernommen. |
+|Nutzlast (erforderlich) | Entweder ein Pfad zur zu veröffentlichenden Nutzlast oder ein Link, der als "Weitere Info-URL" verwendet werden soll. |
+|publishmanifest (erforderlich) | Pfad zur zu verwendenden Veröffentlichungs Manifest-Datei. |
+|ignorewarning | Liste der Warnungen, die beim Veröffentlichen einer Erweiterung ignoriert werden sollen. Diese Warnungen werden beim Veröffentlichen einer Erweiterung als Befehlszeilen Meldungen angezeigt. (z. b. "VSIXValidatorWarning01, VSIXValidatorWarning02")
+|personalaccesstoken | Persönliches Zugriffs Token (Pat), das zum Authentifizieren des Verlegers verwendet wird. Wenn keine Angabe erfolgt, wird Pat von den angemeldeten Benutzern abgerufen. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
 ```
 
-### <a name="createpublisher"></a>createPublisher
+### <a name="createpublisher"></a>"kreatepublisher"
 
-Erstellt einen Herausgeber auf dem Marketplace. Protokolliert den Herausgeber auch für zukünftige Aktionen (z. B. Löschen/Veröffentlichen einer Erweiterung) am Computer.
+Erstellt einen Verleger im Marketplace. Protokolliert auch den Verleger bei zukünftigen Aktionen (z. b. beim Löschen/Veröffentlichen einer Erweiterung) auf dem Computer.
 
-|Befehlsoptionen |BESCHREIBUNG |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|displayName (erforderlich) | Anzeigename des Herausgebers. |
-|publisherName (erforderlich) | Der Name des Herausgebers (z. B. der Bezeichner). |
-|personalAccessToken (erforderlich) | Persönliches Zugriffstoken, das zum Authentifizieren des Herausgebers verwendet wird. |
-|shortBeschreibung | Eine kurze Beschreibung des Herausgebers (keine Datei). |
-|longDescription | Eine lange Beschreibung des Herausgebers (keine Datei). |
+|Display Name (erforderlich) | Anzeige Name des Verlegers. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
+|Personal Access Token (erforderlich) | Persönliches Zugriffs Token, das verwendet wird, um den Verleger zu authentifizieren. |
+|Kurzbeschreibung | Eine kurze Beschreibung des Verlegers (keine Datei). |
+|LongDescription | Eine lange Beschreibung des Verlegers (keine Datei). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
 ```
 
-### <a name="deletepublisher"></a>deletePublisher
+### <a name="deletepublisher"></a>deletepublisher
 
-Löscht einen Herausgeber auf dem Marketplace.
+Löscht einen Verleger im Marketplace.
 
-|Befehlsoptionen |BESCHREIBUNG |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|publisherName (erforderlich) | Der Name des Herausgebers (z. B. der Bezeichner). |
-|personalAccessToken (erforderlich) | Persönliches Zugriffstoken, das zum Authentifizieren des Herausgebers verwendet wird. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
+|Personal Access Token (erforderlich) | Persönliches Zugriffs Token, das verwendet wird, um den Verleger zu authentifizieren. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
 ```
 
-### <a name="deleteextension"></a>deleteExtension
+### <a name="deleteextension"></a>deleteextension
 
 Löscht eine Erweiterung aus dem Marketplace.
 
-|Befehlsoptionen |BESCHREIBUNG |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|extensionName (erforderlich) | Der Name der zu löschenden Erweiterung. |
-|publisherName (erforderlich) | Der Name des Herausgebers (z. B. der Bezeichner). |
-|personalAccessToken | Persönliches Zugriffstoken, das zum Authentifizieren des Herausgebers verwendet wird. Wenn dies nicht angegeben wird, wird der Pat von den angemeldeten Benutzern übernommen. |
+|ExtensionName (erforderlich) | Der Name der zu löschenden Erweiterung. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
+|personalaccesstoken | Persönliches Zugriffs Token, das verwendet wird, um den Verleger zu authentifizieren. Wenn keine Angabe erfolgt, wird Pat von den angemeldeten Benutzern abgerufen. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -86,13 +86,13 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 ### <a name="login"></a>login
 
-Protokolliert einen Herausgeber in den Computer.
+Protokolliert einen Verleger auf dem Computer.
 
-|Befehlsoptionen |BESCHREIBUNG |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|personalAccessToken (erforderlich | Persönliches Zugriffstoken, das zum Authentifizieren des Herausgebers verwendet wird. |
-|publisherName (erforderlich) | Der Name des Herausgebers (z. B. der Bezeichner). |
-|overwrite | Gibt an, dass jeder vorhandene Herausgeber mit dem neuen persönlichen Zugriffstoken überschrieben werden soll. |
+|personalaccesstoken (erforderlich | Persönliches Zugriffs Token, das verwendet wird, um den Verleger zu authentifizieren. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
+|overwrite | Gibt an, dass jeder vorhandene Verleger mit dem neuen persönlichen Zugriffs Token überschrieben werden soll. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -100,22 +100,22 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 ### <a name="logout"></a>logout
 
-Protokolliert einen Herausgeber vom Computer.
+Protokolliert einen Verleger von dem Computer.
 
-|Befehlsoptionen |BESCHREIBUNG |
+|Befehlsoptionen |Beschreibung |
 |---------|---------|
-|publisherName (erforderlich) | Der Name des Herausgebers (z. B. der Bezeichner). |
-|ignoreMissingPublisher | Gibt an, dass das Tool nicht fehlerfrei sein soll, wenn der angegebene Herausgeber noch nicht angemeldet ist. |
+|PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
+|ignoremissingpublisher | Gibt an, dass das Tool nicht fehlerhaft sein sollte, wenn der angegebene Verleger nicht bereits angemeldet ist. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"
 ```
 
-## <a name="publishmanifest-file"></a>publishManifest-Datei
+## <a name="publishmanifest-file"></a>publishmanifest-Datei
 
-Eine publishManifest-Datei wird vom **Publish-Befehl** verwendet. Sie stellt alle Metadaten über die Erweiterung dar, die der Marketplace kennen muss. Wenn die hochgeladene Erweiterung von einer VSIX-Erweiterung stammt, muss die Eigenschaft "identity" nur den "internalName"-Satz haben. Dies liegt daran, dass die restlichen "Identitäts"-Eigenschaften aus der datei vsixmanifest generiert werden können. Wenn es sich bei der Erweiterung um eine msi/exe- oder eine Linkerweiterung handelt, muss der Benutzer die erforderlichen Felder in der Eigenschaft "identity" angeben. Der Rest des Manifests enthält Informationen, die für den Marketplace spezifisch sind (z. B. Kategorien, ob Q&A aktiviert ist usw.).
+Eine publishmanifest-Datei wird vom **Publish** -Befehl verwendet. Sie stellt alle Metadaten zu der Erweiterung dar, die der Marketplace kennen muss. Wenn die hoch zuladende Erweiterung aus einer VSIX-Erweiterung besteht, muss für die Identity-Eigenschaft nur der "InternalName"-Wert festgelegt sein. Dies liegt daran, dass der Rest der "Identity"-Eigenschaften aus der vsixmanifest-Datei generiert werden kann. Wenn es sich bei der Erweiterung um eine MSI/exe-oder Link Erweiterung handelt, muss der Benutzer die erforderlichen Felder in der Identity-Eigenschaft angeben. Der Rest des Manifests enthält spezifische Informationen zum Marketplace (z. b. Kategorien, ob Q&A aktiviert ist usw.).
 
-VSIX-Erweiterung publishManifest Dateibeispiel:
+VSIX-Erweiterung publishmanifest-Datei Beispiel:
 
 ```json
 {
@@ -134,7 +134,7 @@ VSIX-Erweiterung publishManifest Dateibeispiel:
 }
 ```
 
-MSI/EXE- oder LINK publishManifest-Dateibeispiel:
+Beispiel für MSI/exe oder Link publishmanifest-Datei:
 
 ```json
 {
@@ -165,9 +165,9 @@ MSI/EXE- oder LINK publishManifest-Dateibeispiel:
 }
 ```
 
-## <a name="asset-files"></a>Asset-Dateien
+## <a name="asset-files"></a>Medienobjekt Dateien
 
-Asset-Dateien können zum Einbetten von Dingen wie Bildern in die Readme-Datei bereitgestellt werden. Wenn eine Erweiterung beispielsweise über das folgende Markdown-Dokument "Übersicht" verfügt:
+Medienobjekt Dateien können zum Einbetten von Bildern in der Infodatei bereitgestellt werden. Wenn eine Erweiterung z. b. das folgende markdown-Dokument "Übersicht" enthält:
 
 ```markdown
 TestExtension
@@ -176,7 +176,7 @@ This is test extension.
 ![Test logo](images/testlogo.png "Test logo")
 ```
 
-Um "images/testlogo.png" im vorherigen Beispiel aufzulösen, kann ein Benutzer "assetFiles" in seinem Veröffentlichungsmanifest wie folgt bereitstellen:
+Um "Images/testlogo.png" im vorherigen Beispiel aufzulösen, kann ein Benutzer wie folgt "assetfiles" im Veröffentlichungs Manifest bereitstellen:
 
 ```json
 {
@@ -190,7 +190,7 @@ Um "images/testlogo.png" im vorherigen Beispiel aufzulösen, kann ein Benutzer "
 }
 ```
 
-## <a name="publishing-walkthrough"></a>Veröffentlichen der exemplarischen Vorgehensweise
+## <a name="publishing-walkthrough"></a>Exemplarische Vorgehensweise
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
@@ -198,73 +198,73 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
 
 ### <a name="create-a-visual-studio-extension"></a>Erstellen einer Visual Studio-Erweiterung
 
-In diesem Fall verwenden wir eine standardmäßige VSPackage-Erweiterung, aber die gleichen Schritte gelten für jede Art von Erweiterung.
+In diesem Fall wird eine standardmäßige VSPackage-Erweiterung verwendet, aber die gleichen Schritte sind für jede Art von Erweiterung gültig.
 
-1. Erstellen Sie ein VSPackage mit dem Namen "TestPublish" mit einem Menübefehl. Weitere Informationen finden Sie unter [Erstellen Ihrer ersten Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
+1. Erstellen Sie ein VSPackage in c# mit dem Namen "testpublish", das über einen Menübefehl verfügt. Weitere Informationen finden Sie unter [Erstellen der ersten Erweiterung: Hallo Welt](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Packen der Erweiterung
 
-1. Aktualisieren Sie die Erweiterung vsixmanifest mit den richtigen Informationen zu Produktname, Autor und Version.
+1. Aktualisieren Sie das vsixmanifest-Erweiterungs Manifest mit den korrekten Informationen zu Produktname, Autor und Version.
 
-   ![Update-Erweiterung vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![Erweiterungs-vsixmanifest aktualisieren](media/update-extension-vsixmanifest.png)
 
-2. Erstellen Sie **Release** Ihre Erweiterung im Release-Modus. Jetzt wird Ihre Erweiterung als VSIX im Ordner .bin-Release verpackt.
+2. Erstellen Sie die Erweiterung im **Releasemodus** . Nun wird Ihre Erweiterung als VSIX im Ordner "\bin\release" verpackt.
 
-3. Sie können auf den VSIX doppelklicken, um die Installation zu überprüfen.
+3. Sie können auf die VSIX doppelklicken, um die Installation zu überprüfen.
 
 ### <a name="test-the-extension"></a>Testen der Erweiterung
 
- Bevor Sie die Erweiterung verteilen, erstellen und testen Sie sie, um sicherzustellen, dass sie in der experimentellen Instanz von Visual Studio ordnungsgemäß installiert ist.
+ Bevor Sie die Erweiterung verteilen, erstellen und testen, um sicherzustellen, dass Sie ordnungsgemäß in der experimentellen Instanz von Visual Studio installiert ist.
 
-1. Beginnen Sie in Visual Studio mit dem Debuggen. , um eine experimentelle Instanz von Visual Studio zu öffnen.
+1. Starten Sie in Visual Studio das Debuggen. , um eine experimentelle Instanz von Visual Studio zu öffnen.
 
-2. Wechseln Sie in der experimentellen Instanz zum Menü **Extras** und klicken Sie auf **Erweiterungen und Updates...**. Die TestPublish-Erweiterung sollte im mittleren Bereich angezeigt und aktiviert sein.
+2. Wechseln Sie **in der experimentellen Instanz zum Menü Extras** , und klicken Sie dann auf **Erweiterungen und Updates...**. Die Erweiterung testpublish sollte im mittleren Bereich angezeigt und aktiviert werden.
 
-3. Stellen Sie im Menü **Extras** sicher, dass der Testbefehl angezeigt wird.
+3. Vergewissern Sie sich, dass **im Menü Extras der Befehl** Test angezeigt wird.
 
-### <a name="publish-the-extension-to-the-marketplace-via-command-line"></a>Veröffentlichen der Erweiterung auf dem Marketplace über die Befehlszeile
+### <a name="publish-the-extension-to-the-marketplace-via-command-line"></a>Veröffentlichen der Erweiterung im Marketplace über die Befehlszeile
 
-1. Stellen Sie sicher, dass Sie die Release-Version Ihrer Erweiterung erstellt haben und dass sie auf dem neuesten Stand ist.
+1. Stellen Sie sicher, dass Sie die Releaseversion ihrer Erweiterung erstellt haben und auf dem neuesten Stand sind.
 
-2. Stellen Sie sicher, dass Sie publishmanifest.json und overview.md Dateien erstellt haben.
+2. Stellen Sie sicher, dass Sie publishmanifest.json-und Overview.MD-Dateien erstellt haben.
 
-3. Öffnen Sie die Befehlszeile, und navigieren Sie zu dem Verzeichnis "VSInstallDir", "VSSDK" und "VisualStudioIntegration", "Tools" und "Bin"-Verzeichnis.
+3. Öffnen Sie die Befehlszeile, und navigieren Sie zu "$ {VSInstallDir} \vssdk\visualstudiointegration\tools\bin\".
 
-4. Um einen neuen Herausgeber zu erstellen, verwenden Sie den folgenden Befehl:
+4. Verwenden Sie den folgenden Befehl, um einen neuen Verleger zu erstellen:
 
    ```
    VsixPublisher.exe createPublisher -publisherName "TestVSIXPublisher" -displayName "Test VSIX Publisher" -personalAccessToken "{Personal Access Token that is used to authenticate the publisher. If not provided, the pat is acquired from the logged-in users.}"
    ```
 
-5. Bei erfolgreicher Erstellung des Herausgebers wird die folgende Befehlszeilenmeldung angezeigt:
+5. Bei erfolgreicher Erstellung des Verlegers wird die folgende Befehlszeilen Meldung angezeigt:
 
    ```
    Added 'Test VSIX Publisher' as a publisher on the Marketplace.
    ```
 
-6. Sie können den neuen Herausgeber überprüfen, den Sie erstellt haben, indem Sie zu [Visual Studio Marketplace](https://marketplace.visualstudio.com/manage/publishers) navigieren.
+6. Sie können den erstellten neuen Verleger überprüfen, indem Sie zu [Visual Studio Marketplace](https://marketplace.visualstudio.com/manage/publishers)
 
-7. Um eine neue Erweiterung zu veröffentlichen, verwenden Sie den folgenden Befehl:
+7. Verwenden Sie den folgenden Befehl, um eine neue Erweiterung zu veröffentlichen:
 
    ```
    VsixPublisher.exe publish -payload "{Path to vsix file}"  -publishManifest "{path to publishManifest file}"
    ```
 
-8. Bei erfolgreicher Erstellung des Herausgebers wird die folgende Befehlszeilenmeldung angezeigt:
+8. Bei erfolgreicher Erstellung des Verlegers wird die folgende Befehlszeilen Meldung angezeigt:
 
    ```
    Uploaded 'MyVsixExtension' to the Marketplace.
    ```
 
-9. Sie können die neue Erweiterung, die Sie veröffentlicht haben, überprüfen, indem Sie zu [Visual Studio Marketplace](https://marketplace.visualstudio.com/) navigieren.
+9. Sie können die neue Erweiterung, die Sie veröffentlicht haben, überprüfen, indem Sie zu [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
-### <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installieren der Erweiterung aus dem Visual Studio Marketplace
+### <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installieren Sie die Erweiterung aus der Visual Studio Marketplace
 
-Nachdem die Erweiterung veröffentlicht wurde, installieren Sie sie in Visual Studio und testen Sie sie dort.
+Nachdem die Erweiterung veröffentlicht wurde, installieren Sie Sie in Visual Studio und testen Sie dort.
 
-1. Klicken Sie in Visual Studio im Menü **Extras** auf **Erweiterungen und Updates...**.
+1. Klicken Sie in Visual Studio im **Menü Extras** auf **Erweiterungen und Updates...**.
 
-2. Klicken Sie auf **Online,** und suchen Sie dann nach TestPublish.
+2. Klicken Sie auf **Online** , und suchen Sie nach testpublish.
 
 3. Klicken Sie auf **Download**. Die Erweiterung wird dann für die Installation geplant.
 
@@ -274,7 +274,7 @@ Nachdem die Erweiterung veröffentlicht wurde, installieren Sie sie in Visual St
 
 Sie können die Erweiterung aus dem Visual Studio Marketplace und von Ihrem Computer entfernen.
 
-### <a name="to-remove-the-extension-from-the-marketplace-via-command-line"></a>So entfernen Sie die Erweiterung aus dem Marketplace über die Befehlszeile
+### <a name="to-remove-the-extension-from-the-marketplace-via-command-line"></a>So entfernen Sie die Erweiterung über die Befehlszeile aus dem Marketplace
 
 1. Wenn Sie eine Erweiterung entfernen möchten, verwenden Sie den folgenden Befehl:
 
@@ -282,16 +282,16 @@ Sie können die Erweiterung aus dem Visual Studio Marketplace und von Ihrem Comp
    VsixPublisher.exe deleteExtension -publisherName "TestVSIXPublisher" -extensionName "MyVsixExtension"
    ```
 
-2. Beim erfolgreichen Löschen der Erweiterung wird die folgende Befehlszeilenmeldung angezeigt:
+2. Nach erfolgreicher Löschung der Erweiterung wird die folgende Befehlszeilen Meldung angezeigt:
 
    ```
    Removed 'MyVsixExtension' from the Marketplace.
    ```
 
-### <a name="to-remove-the-extension-from-your-computer"></a>So entfernen Sie die Erweiterung von Ihrem Computer
+### <a name="to-remove-the-extension-from-your-computer"></a>So entfernen Sie die Erweiterung auf dem Computer
 
-1. Klicken Sie in Visual Studio im Menü **Extras** auf **Erweiterungen und Updates**.
+1. Klicken Sie in Visual Studio im **Menü Extras** auf **Erweiterungen und Updates**.
 
-2. Wählen Sie "MyVsixExtension" und klicken Sie dann auf **Deinstallieren**. Die Erweiterung wird dann für die Deinstallation geplant.
+2. Wählen Sie "myvsixextension" aus, und klicken Sie dann auf **deinstallieren**. Die Erweiterung wird dann für die Deinstallation geplant.
 
-3. Schließen Sie alle Instanzen von Visual Studio, um die Deinstallation abzuschließen.
+3. Schließen Sie alle Instanzen von Visual Studio, um die Installation abzuschließen.

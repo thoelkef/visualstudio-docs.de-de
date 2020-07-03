@@ -1,7 +1,7 @@
 ---
-title: Erstellen einer Erweiterung mit einer Editorelementvorlage | Microsoft Docs
+title: Erstellen einer Erweiterung mit einer Editor-Element Vorlage | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
@@ -10,91 +10,91 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac19d99bf75c79ad011bfd0d5a56ecf3880b100
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739505"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903837"
 ---
-# <a name="create-an-extension-with-an-editor-item-template"></a>Erstellen einer Erweiterung mit einer Editorelementvorlage
-Sie können Elementvorlagen verwenden, die im Visual Studio SDK enthalten sind, um grundlegende Editorerweiterungen zu erstellen, die dem Editor Klassifikatoren, Verzierungen und Ränder hinzufügen. Die Editorelementvorlagen sind für Visual C- oder Visual Basic VSIX-Projekte verfügbar.
+# <a name="create-an-extension-with-an-editor-item-template"></a>Erstellen einer Erweiterung mit einer Editor-Element Vorlage
+Mithilfe von Element Vorlagen, die im Visual Studio SDK enthalten sind, können Sie grundlegende Editor-Erweiterungen erstellen, mit denen Klassifizierer, Zusatzelemente und Ränder zum Editor hinzugefügt werden. Die Editor-Element Vorlagen sind für Visual c#-oder Visual Basic VSIX-Projekte verfügbar.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-classifier-extension"></a>Erstellen einer Klassifiererweiterung
- Die Editor-Klassifierelementvorlage erstellt einen Editorklassifier, der den entsprechenden Text (in diesem Fall alles) in einer beliebigen Textdatei färbt.
+## <a name="create-a-classifier-extension"></a>Erstellen einer Klassifizierungs Erweiterung
+ Die Element Vorlage für den Editor-Klassifizierer erstellt einen editorklassifizierer, der den entsprechenden Text (in diesem Fall alles) in einer beliebigen Textdatei färbt.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** Visual **C oder** Visual **Basic,** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** **VSIX Project**aus. Geben Sie im Feld **Name** die Zeichenfolge `TestClassifier` ein. Klicken Sie auf **OK**.
+1. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual c#** , oder **Visual Basic** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** die Option **VSIX-Projekt**aus. Geben Sie im Feld **Name**`TestClassifier`ein. Klicken Sie auf **OK**.
 
-2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus. Wechseln Sie zum Knoten "Visual **C-Extensibility",** und wählen Sie **Editor-Klassifizierer**aus. Lassen Sie den Standarddateinamen (*EditorClassifier1.cs*).
+2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie zum Visual c#- **Erweiterbarkeits** Knoten, und wählen Sie **Editor Klassifizierer**aus. Belassen Sie den Standard Dateinamen (*EditorClassifier1.cs*).
 
-3. Es gibt vier Codedateien, wie folgt:
+3. Es gibt vier Code Dateien, wie im folgenden dargestellt:
 
-    - *EditorClassifier1.cs* enthält `EditorClassifier1` die Klasse.
+    - *EditorClassifier1.cs* enthält die- `EditorClassifier1` Klasse.
 
-    - *EditorClassifier1ClassificationDefinition.cs* enthält `EditorClassifier1ClassificationDefinition` die Klasse.
+    - *EditorClassifier1ClassificationDefinition.cs* enthält die- `EditorClassifier1ClassificationDefinition` Klasse.
 
-    - *EditorClassifier1Format.cs* enthält `EditorClassifier1Format` die Klasse.
+    - *EditorClassifier1Format.cs* enthält die- `EditorClassifier1Format` Klasse.
 
-    - *EditorClassifier1Provider.cs* enthält `EditorClassifier1Provider` die Klasse.
+    - *EditorClassifier1Provider.cs* enthält die- `EditorClassifier1Provider` Klasse.
 
 4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio wird angezeigt.
 
-     Wenn Sie eine Textdatei öffnen, wird der gesamte Text vor einem violetten Hintergrund unterstrichen.
+     Wenn Sie eine Textdatei öffnen, wird der gesamte Text gegen einen violetten Hintergrund unterstrichen.
 
-## <a name="create-a-text-relative-adornment-extension"></a>Erstellen einer textrelativen Verzierungserweiterung
- Die Vorlage "Editor Text Adornment" erstellt eine textrelative Verzierung, die alle Instanzen des Textzeichens "a" mit einem Feld mit roter Umriss und blauem Hintergrund schmückt. Sie ist textrelativ, da das Feld die "a"-Zeichen immer überlagert, auch wenn sie verschoben oder neu formatiert werden.
+## <a name="create-a-text-relative-adornment-extension"></a>Erstellen einer Erweiterung für Text-relative Zusatzelemente
+ Mit der Editor-Text Zusatz Vorlage wird ein Text relativer Zusatzelement erstellt, das alle Instanzen des Text Zeichens "a" mit einem Feld mit einer roten Kontur und einem blauen Hintergrund ergänzt. Er ist Text relativ, da das Feld immer die Zeichen "a" überlagert, auch wenn Sie verschoben oder neu formatiert werden.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** Visual **C oder** Visual **Basic,** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** **VSIX Project**aus. Geben Sie im Feld **Name** die Zeichenfolge `TestAdornment` ein. Klicken Sie auf **OK**.
+1. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual c#** , oder **Visual Basic** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** die Option **VSIX-Projekt**aus. Geben Sie im Feld **Name**`TestAdornment`ein. Klicken Sie auf **OK**.
 
-2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus. Wechseln Sie zum Knoten "Visual **C-Extensibility",** und wählen Sie **Editor Text Adornment**aus. Lassen Sie den Standarddateinamen (*TextAdornment1.cs/vb*).
+2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie zum Visual c#- **Erweiterbarkeits** Knoten, und wählen Sie **Editor-Text**Zusatzelement aus. Belassen Sie den Standard Dateinamen (*TextAdornment1.cs/VB*).
 
-3. Es gibt zwei Codedateien, wie folgt:
+3. Es gibt zwei Code Dateien, wie im folgenden dargestellt:
 
-    - *TextAdornment1.cs* enthält `TextAdornment1` die Klasse.
+    - *TextAdornment1.cs* enthält die- `TextAdornment1` Klasse.
 
-    - *TextAdornment1TextViewCreationListener.cs* enthält `TextAdornment1TextViewCreationListener` die Klasse.
+    - *TextAdornment1TextViewCreationListener.cs* enthält die- `TextAdornment1TextViewCreationListener` Klasse.
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine Textdatei öffnen, werden alle A-Zeichen im Text rot vor einem blauen Hintergrund umrandet.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine Textdatei öffnen, werden alle "a"-Zeichen im Text rot vor einem blauen Hintergrund dargestellt.
 
-## <a name="create-a-viewport-relative-adornment-extension"></a>Erstellen einer Ansichtsfenster-relativen Verzierungserweiterung
- Die Vorlage "Editor Viewport Adornment" erstellt eine Ansichtsfenster-relative Verzierung, die ein violettes Feld mit einer roten Umrisslinie zur oberen rechten Ecke des Ansichtsfensters hinzufügt.
+## <a name="create-a-viewport-relative-adornment-extension"></a>Erstellen einer Viewport-relativen Zusatzelement Erweiterung
+ Mit der-Editor-Zusatzelement Vorlage wird ein Viewport-relativer Zusatzelement erstellt, das ein violettfeld mit einer roten Kontur in der oberen rechten Ecke des Viewports hinzufügt.
 
 > [!NOTE]
-> Das **Ansichtsfenster** ist der Bereich der Textansicht, der derzeit angezeigt wird.
+> Der **Viewport** ist der Bereich der aktuell angezeigten Textansicht.
 
-### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>So erstellen Sie eine Ansichtsfenster-Verzierungserweiterung mithilfe der Vorlage "Editor Viewport Adornment"
+### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>So erstellen Sie eine Viewport-Zusatzelement-Erweiterung mithilfe der Editor-Zusatzelement Vorlage
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** Visual **C oder** Visual **Basic,** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** **VSIX Project**aus. Geben Sie im Feld **Name** die Zeichenfolge `ViewportAdornment` ein. Klicken Sie auf **OK**.
+1. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual c#** , oder **Visual Basic** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** die Option **VSIX-Projekt**aus. Geben Sie im Feld **Name**`ViewportAdornment`ein. Klicken Sie auf **OK**.
 
-2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus. Wechseln Sie zum Knoten "Visual **C-Extensibility",** und wählen Sie **Editor Viewport Adornment**aus. Lassen Sie den Standarddateinamen (*ViewportAdornment1.cs/vb*).
+2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie zum Visual c#- **Erweiterbarkeits** Knoten, und wählen Sie **Editor Viewport**-Zusatzelement aus. Belassen Sie den Standard Dateinamen (*ViewportAdornment1.cs/VB*).
 
-3. Es gibt zwei Codedateien, wie folgt:
+3. Es gibt zwei Code Dateien, wie im folgenden dargestellt:
 
-    - *ViewportAdornment1.cs* enthält `ViewportAdornment1` die Klasse.
+    - *ViewportAdornment1.cs* enthält die- `ViewportAdornment1` Klasse.
 
-    - *ViewportAdornment1TextViewCreationListener.cs* enthält `ViewportAdornment1TextViewCreationListener` die Klasse
+    - *ViewportAdornment1TextViewCreationListener.cs* enthält die- `ViewportAdornment1TextViewCreationListener` Klasse.
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine neue Textdatei erstellen, wird in der oberen rechten Ecke des Ansichtsfensters ein violettes Feld mit einer roten Umrisslinie angezeigt.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine neue Textdatei erstellen, wird in der oberen rechten Ecke des Viewports ein violettfeld mit einem roten Umriss angezeigt.
 
-## <a name="create-a-margin-extension"></a>Erstellen einer Margin-Erweiterung
- Die Editor Margin-Vorlage erstellt einen grünen Rand, der zusammen mit den Wörtern **Hallo Welt!* unterhalb der horizontalen Bildlaufleiste.
+## <a name="create-a-margin-extension"></a>Erstellen einer Rand Erweiterung
+ Die Vorlage für den Editor Rand erstellt einen grünen Rand, der mit den Wörtern **Hello World!* unterhalb der horizontalen Schiebe Leiste.
 
-### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>So erstellen Sie eine Margin-Erweiterung mithilfe der Editor-Margin-Vorlage
+### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>So erstellen Sie eine Rand Erweiterung mithilfe der Editor-Rand Vorlage
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** Visual **C oder** Visual **Basic,** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** **VSIX Project**aus. Geben Sie im Feld **Name** die Zeichenfolge `MarginExtension` ein. Klicken Sie auf **OK**.
+1. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual c#** , oder **Visual Basic** und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie im Bereich **Vorlagen** die Option **VSIX-Projekt**aus. Geben Sie im Feld **Name**`MarginExtension`ein. Klicken Sie auf **OK**.
 
-2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus. Wechseln Sie zum Knoten "Visual **C-Extensibility",** und wählen Sie **Editor Margin aus.** Lassen Sie den Standarddateinamen (EditorMargin1.cs/vb).
+2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie zum Visual c#- **Erweiterbarkeits** Knoten, und wählen Sie **Editor-Rand**aus. Belassen Sie den Standard Dateinamen (EditorMargin1.cs/VB).
 
-3. Es gibt zwei Codedateien, wie folgt:
+3. Es gibt zwei Code Dateien, wie im folgenden dargestellt:
 
-    - *EditorMargin1.cs* enthält `EditorMargin1` die Klasse.
+    - *EditorMargin1.cs* enthält die- `EditorMargin1` Klasse.
 
-    - *EditorMargin1Factory.cs* enthält `EditorMargin1Factory` die Klasse.
+    - *EditorMargin1Factory.cs* enthält die- `EditorMargin1Factory` Klasse.
 
-4. Erstellen Sie dieses Projekt, und beginnen Sie mit dem Debuggen. Die experimentelle Instanz wird angezeigt. Wenn Sie eine Textdatei öffnen, wird unterhalb der horizontalen Bildlaufleiste ein grüner Rand mit den Worten **Hello EditorMargin1** angezeigt.
+4. Erstellen Sie dieses Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt. Wenn Sie eine Textdatei öffnen, wird unterhalb der horizontalen Schiebe Leiste ein grüner Rand angezeigt, der die Wörter **Hello EditorMargin1** enthält.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Sprachdienst- und Editorerweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Siehe auch
+- [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)

@@ -1,7 +1,7 @@
 ---
-title: Erstellen eines Windows Forms Toolbox-Steuerelements | Microsoft Docs
+title: Erstellen eines Windows Forms Toolbox-Steuer Elements | Microsoft-Dokumentation
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -12,48 +12,48 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7e7749302252c5d56f21c58de9b6ac23f898572
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: d7c4d14f2970f9d77e78fd90dd58efcdac100e4c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739582"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903963"
 ---
-# <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms Toolbox-Steuerelements
+# <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms Toolbox-Steuer Elements
 
-Mit der Elementevorlage Windows Forms Toolbox Control, die in den Visual Studio Extensibility Tools (VS SDK) enthalten ist, können Sie ein **Toolbox-Steuerelement** erstellen, das automatisch hinzugefügt wird, wenn die Erweiterung installiert wird. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie die Vorlage verwenden, um ein einfaches Leistungsindikatorsteuerelement zu erstellen, das Sie an andere Benutzer verteilen können.
+Mit der Windows Forms Toolbox-Steuerelement Vorlage, die in der Visual Studio-Erweiterungstools (vs SDK) enthalten ist, können Sie ein **Toolbox** -Steuerelement erstellen, das automatisch hinzugefügt wird, wenn die Erweiterung installiert wird. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie die Vorlage verwenden, um ein einfaches Counter-Steuerelement zu erstellen, das Sie an andere Benutzer verteilen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-the-toolbox-control"></a>Erstellen des Toolbox-Steuerelements
+## <a name="create-the-toolbox-control"></a>Erstellen des Toolbox-Steuer Elements
 
-Die Windows Forms Toolbox Control-Vorlage erstellt ein nicht definiertes Benutzersteuerelement und stellt alle Funktionen bereit, die zum Hinzufügen des Steuerelements zur **Toolbox**erforderlich sind.
+Mit der Windows Forms Toolbox-Steuerelement Vorlage wird ein nicht definiertes Benutzer Steuerelement erstellt und die gesamte Funktionalität bereitstellt, die zum Hinzufügen des Steuer Elements zur **Toolbox**erforderlich ist.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Erstellen einer Erweiterung mit einem Windows Forms Toolbox-Steuerelement
 
-1. Erstellen Sie ein `MyWinFormsControl`VSIX-Projekt mit dem Namen . Die VSIX-Projektvorlage finden Sie im Dialogfeld **Neues Projekt,** indem Sie nach "vsix" suchen.
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `MyWinFormsControl` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie `Counter`eine Windows Forms Toolbox **Control-Elementvorlage** mit dem Namen hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu Visual **C-Erweiterbarkeit,** > **Extensibility** und wählen Sie Windows Forms **Toolbox Control** aus.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine **Windows Forms Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `Counter` . Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **Windows Forms Toolbox-Steuer** Element aus.
 
-3. Dadurch wird ein Benutzersteuerelement, ein `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> zum Platzieren des Steuerelements in der **Toolbox**und ein **Microsoft.VisualStudio.ToolboxControl** Asset-Eintrag im VSIX-Manifest für die Bereitstellung hinzugefügt.
+3. Dadurch wird ein Benutzer Steuerelement, ein `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> zum Platzieren des Steuer Elements in der **Toolbox**und ein **Microsoft. VisualStudio. ToolboxControl** -Asset-Eintrag im VSIX-Manifest für die Bereitstellung hinzugefügt.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Erstellen einer Benutzeroberfläche für das Steuerelement
 
-Das `Counter` Steuerelement erfordert zwei <xref:System.Windows.Forms.Label> untergeordnete Steuerelemente: eine, <xref:System.Windows.Forms.Button> um die aktuelle Anzahl anzuzeigen, und eine, um die Anzahl auf 0 zurückzusetzen. Es sind keine anderen untergeordneten Steuerelemente erforderlich, da Aufrufer den Zähler programmgesteuert erhöhen.
+Das `Counter` -Steuerelement erfordert zwei untergeordnete Steuerelemente: a <xref:System.Windows.Forms.Label> zum Anzeigen der aktuellen Anzahl und ein, <xref:System.Windows.Forms.Button> um die Anzahl auf 0 zurückzusetzen. Es sind keine weiteren untergeordneten Steuerelemente erforderlich, da Aufrufer den Counter Programm gesteuert erhöhen.
 
 #### <a name="to-build-the-user-interface"></a>So erstellen Sie die Benutzeroberfläche
 
-1. Doppelklicken Sie im **Projektmappen-Explorer**auf *Counter.cs,* um sie im Designer zu öffnen.
+1. Doppelklicken Sie in **Projektmappen-Explorer**auf *counter.cs* , um Sie im Designer zu öffnen.
 
-2. Entfernen Sie die **Klicken Sie hier !** Schaltfläche, die standardmäßig beim Hinzufügen der Windows Forms Toolbox Control-Elementvorlage enthalten ist.
+2. **Klicken Sie hier.** Schaltfläche, die standardmäßig eingeschlossen ist, wenn Sie die Windows Forms Toolbox-Steuerelement Vorlage hinzufügen.
 
-3. Ziehen **Toolbox**Sie aus `Label` der Toolbox `Button` ein Steuerelement und dann ein Steuerelement darunter auf die Entwurfsoberfläche.
+3. Ziehen Sie aus der **Toolbox**ein `Label` -Steuerelement und dann ein `Button` Steuerelement unterhalb der Entwurfs Oberfläche.
 
-4. Ändern Sie die Größe des gesamten Benutzersteuerelements auf 150, 50 Pixel, und ändern Sie die Größe des Schaltflächensteuerelements auf 50, 20 Pixel.
+4. Ändern Sie die Größe des gesamten Benutzer Steuer Elements auf 150, 50 Pixel, und ändern Sie die Größe des Schaltflächen-Steuer Elements auf 50, 20 Pixel.
 
-5. Legen Sie im **Fenster Eigenschaften** die folgenden Werte für die Steuerelemente auf der Entwurfsoberfläche fest.
+5. Legen Sie im Fenster **Eigenschaften** die folgenden Werte für die Steuerelemente auf der Entwurfs Oberfläche fest.
 
     |Control|Eigenschaft|Wert|
     |-------------|--------------|-----------|
@@ -61,22 +61,22 @@ Das `Counter` Steuerelement erfordert zwei <xref:System.Windows.Forms.Label> unt
     |`Button1`|**Name**|btnReset|
     |`Button1`|**Text**|Reset|
 
-### <a name="code-the-user-control"></a>Codeieren des Benutzersteuerelements
+### <a name="code-the-user-control"></a>Codieren des Benutzer Steuer Elements
 
-Das `Counter` Steuerelement macht eine Methode zum Erhöhen des Leistungsindikators verfügbar, ein Ereignis, das ausgelöst werden soll, wenn der Zähler erhöht wird, eine **Reset-Schaltfläche** und drei Eigenschaften zum Speichern der aktuellen Anzahl, des Anzeigetexts und zum Ein- oder Ausblenden der **Schaltfläche Zurücksetzen.** Das `ProvideToolboxControl` -Attribut bestimmt, an welcher Stelle in der **Toolbox** das `Counter` -Steuerelement angezeigt wird.
+Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erhöhen, ein Ereignis, das ausgelöst wird, wenn der Zähler inkrementiert wird, eine Schaltfläche **Zurücksetzen** und drei Eigenschaften zum Speichern der aktuellen Anzahl, den Anzeige Text und ob die Schaltfläche **Zurücksetzen** angezeigt oder ausgeblendet wird. Das `ProvideToolboxControl` -Attribut bestimmt, an welcher Stelle in der **Toolbox** das `Counter` -Steuerelement angezeigt wird.
 
-#### <a name="to-code-the-user-control"></a>So codieren Sie das Benutzersteuerelement
+#### <a name="to-code-the-user-control"></a>So codieren Sie das Benutzer Steuerelement
 
-1. Doppelklicken Sie auf das Formular, um den Ladeereignishandler im Codefenster zu öffnen.
+1. Doppelklicken Sie auf das Formular, um den Lade Ereignishandler im Code Fenster zu öffnen.
 
-2. Oberhalb der Ereignishandlermethode erstellen Sie in der Steuerelementklasse eine ganze Zahl zum Speichern des Leistungsindikatorwerts und eine Zeichenfolge zum Speichern des Anzeigetexts, wie im folgenden Beispiel gezeigt.
+2. Erstellen Sie oberhalb der Ereignishandlermethode in der Steuerelement Klasse eine Ganzzahl, um den Leistungswert und eine Zeichenfolge zum Speichern des Anzeige Texts zu speichern, wie im folgenden Beispiel gezeigt.
 
     ```csharp
     int currentValue;
     string displayText;
     ```
 
-3. Erstellen Sie die folgenden öffentlichen Eigenschaftsdeklarationen.
+3. Erstellen Sie die folgenden öffentlichen Eigenschaften Deklarationen.
 
     ```csharp
     public int Value {
@@ -95,9 +95,9 @@ Das `Counter` Steuerelement macht eine Methode zum Erhöhen des Leistungsindikat
 
     ```
 
-    Anrufer können auf diese Eigenschaften zugreifen, um den Anzeigetext des Leistungsindikators abzurufen und festzulegen und die **Schaltfläche Zurücksetzen ein-** oder auszublenden. Aufrufer können den aktuellen Wert der `Value` schreibgeschützten Eigenschaft abrufen, aber sie können den Wert nicht direkt festlegen.
+    Aufrufer können auf diese Eigenschaften zugreifen, um den Anzeige Text des Zählers zu erhalten und festzulegen und um die Schaltfläche **Zurücksetzen** anzuzeigen oder auszublenden. Aufrufer können den aktuellen Wert der schreibgeschützten `Value` Eigenschaft abrufen, aber Sie können den Wert nicht direkt festlegen.
 
-4. Setzen Sie den `Load` folgenden Code in das Ereignis für das Steuerelement.
+4. Fügen Sie den folgenden Code in das- `Load` Ereignis für das-Steuerelement ein.
 
     ```csharp
     private void Counter_Load(object sender, EventArgs e)
@@ -108,9 +108,9 @@ Das `Counter` Steuerelement macht eine Methode zum Erhöhen des Leistungsindikat
 
     ```
 
-    Wenn Sie den <xref:System.Windows.Forms.UserControl.Load> **Label-Text** im Ereignis festlegen, können die Zieleigenschaften geladen werden, bevor ihre Werte angewendet werden. Das Festlegen des **Label-Textes** im Konstruktor würde zu einer leeren **Beschriftung**führen.
+    Wenn Sie den Bezeichnungs **Text im** <xref:System.Windows.Forms.UserControl.Load> Ereignis festlegen, können die Zieleigenschaften geladen werden, bevor ihre Werte angewendet werden. Das Festlegen **des** Bezeichnungs Texts im Konstruktor führt zu einer leeren **Bezeichnung**.
 
-5. Erstellen Sie die folgende öffentliche Methode, um den Leistungsindikator zu erhöhen.
+5. Erstellen Sie die folgende öffentliche Methode, um den-Wert zu erhöhen.
 
     ```csharp
     public void Increment()
@@ -122,15 +122,15 @@ Das `Counter` Steuerelement macht eine Methode zum Erhöhen des Leistungsindikat
 
     ```
 
-6. Fügen Sie der `Incremented` Steuerelementklasse eine Deklaration für das Ereignis hinzu.
+6. Fügen Sie der Steuerelement Klasse eine Deklaration für das- `Incremented` Ereignis hinzu.
 
     ```csharp
     public event EventHandler Incremented;
     ```
 
-    Aufrufer können diesem Ereignis Handler hinzufügen, um auf Änderungen im Wert des Leistungsindikators zu reagieren.
+    Aufrufer können diesem Ereignishandler hinzufügen, um auf Änderungen im Wert des Zählers zu reagieren.
 
-7. Kehren Sie zur Entwurfsansicht zurück, und `btnReset_Click` doppelklicken Sie auf die Schaltfläche **Zurücksetzen,** um den Ereignishandler zu generieren, und füllen Sie ihn dann aus, wie im folgenden Beispiel gezeigt.
+7. Kehren Sie zur Entwurfs Ansicht zurück, und doppelklicken Sie auf die Schaltfläche **Zurücksetzen** , um den `btnReset_Click` Ereignishandler zu generieren, und füllen Sie ihn aus, wie im folgenden Beispiel gezeigt.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -152,37 +152,37 @@ Das `Counter` Steuerelement macht eine Methode zum Erhöhen des Leistungsindikat
 
 ### <a name="test-the-control"></a>Testen des Steuerelements
 
- Um ein **Toolbox-Steuerelement** zu testen, testen Sie es zunächst in der Entwicklungsumgebung, und testen Sie es dann in einer kompilierten Anwendung.
+ Zum Testen eines **Toolbox** -Steuer Elements testen Sie es zunächst in der Entwicklungsumgebung, und testen Sie es dann in einer kompilierten Anwendung.
 
 #### <a name="to-test-the-control"></a>So testen Sie das Steuerelement
 
-1. Drücken Sie **F5,** um mit **dem Debuggen**zu beginnen.
+1. Drücken Sie **F5** , um das **Debugging zu starten**.
 
-    Dieser Befehl erstellt das Projekt und öffnet eine zweite Experimentelle Instanz von Visual Studio, auf der das Steuerelement installiert ist.
+    Mit diesem Befehl wird das Projekt erstellt und eine zweite experimentelle Instanz von Visual Studio geöffnet, in der das-Steuerelement installiert ist.
 
-2. Erstellen Sie in der experimentellen Instanz von Visual Studio ein **Windows Forms Application-Projekt.**
+2. Erstellen Sie in der experimentellen Instanz von Visual Studio ein **Windows Forms-Anwendungs** Projekt.
 
-3. Doppelklicken Sie im **Projektmappen-Explorer**auf *Form1.cs,* um sie im Designer zu öffnen, wenn sie noch nicht geöffnet ist.
+3. Doppelklicken Sie in **Projektmappen-Explorer**auf *Form1.cs* , um Sie im Designer zu öffnen, wenn Sie nicht bereits geöffnet ist.
 
-4. In **Toolbox**der Toolbox `Counter` sollte das Steuerelement im Abschnitt **Allgemein** angezeigt werden.
+4. In der **Toolbox**sollte das `Counter` Steuerelement im Abschnitt **Allgemein** angezeigt werden.
 
-5. Ziehen `Counter` Sie ein Steuerelement in das Formular, und wählen Sie es aus. Die `Value` `Message`, `ShowReset` und Eigenschaften werden im **Eigenschaftenfenster** zusammen mit den Eigenschaften <xref:System.Windows.Forms.UserControl>angezeigt, die von geerbt werden.
+5. Ziehen `Counter` Sie ein-Steuerelement auf das Formular, und wählen Sie es aus. Die `Value` `Message` Eigenschaften, und werden `ShowReset` im Fenster **Eigenschaften** sowie in den Eigenschaften, die von geerbt werden, angezeigt <xref:System.Windows.Forms.UserControl> .
 
-6. Setzen Sie die `Message`-Eigenschaft auf `Count:`.
+6. Legen Sie die `Message` -Eigenschaft auf `Count:`fest.
 
-7. Ziehen <xref:System.Windows.Forms.Button> Sie ein Steuerelement in das Formular, und legen `Test`Sie dann den Namen und die Texteigenschaften der Schaltfläche auf fest.
+7. Ziehen <xref:System.Windows.Forms.Button> Sie ein-Steuerelement auf das Formular, und legen Sie dann die Eigenschaften Name und Text der Schaltfläche auf fest `Test` .
 
-8. Doppelklicken Sie auf die Schaltfläche, um *Form1.cs* in der Codeansicht zu öffnen und einen Klickhandler zu erstellen.
+8. Doppelklicken Sie auf die Schaltfläche, um *Form1.cs* in der Code Ansicht zu öffnen, und erstellen Sie einen Klick Handler.
 
-9. Rufen Sie im `counter1.Increment()`Klickhandler an.
+9. Klicken Sie im Click-Handler auf `counter1.Increment()` .
 
-10. Geben Sie in der Konstruktorfunktion `counter1``.``Incremented +=` nach dem Aufruf von `InitializeComponent`ein, und drücken Sie dann zweimal die **Tabulatortaste.**
+10. Geben Sie in der Konstruktorfunktion nach dem-Befehl ein `InitializeComponent` , `counter1``.``Incremented +=` und drücken Sie dann zweimal die **Tab** -Taste.
 
-    Visual Studio generiert einen Handler `counter1.Incremented` auf Formularebene für das Ereignis.
+    Visual Studio generiert einen Handler auf Formular Ebene für das- `counter1.Incremented` Ereignis.
 
-11. Markieren `Throw` Sie die Anweisung im `mbox`Ereignishandler, geben Sie ein, und drücken Sie dann zweimal die **Tabulatortaste,** um ein Meldungsfeld aus dem mbox-Codeausschnitt zu generieren.
+11. Markieren `Throw` Sie die Anweisung im Ereignishandler, geben `mbox` Sie ein, und drücken Sie dann zweimal die **Tab** -Taste, um ein Meldungs Feld aus dem mbox-Code Ausschnitt zu generieren.
 
-12. Fügen Sie in der `if` / `else` nächsten Zeile den folgenden Block hinzu, um die Sichtbarkeit der **Schaltfläche Zurücksetzen festzulegen.**
+12. Fügen Sie in der nächsten Zeile den folgenden-Block hinzu, `if` / `else` um die Sichtbarkeit der Schaltfläche **Zurücksetzen** festzulegen.
 
     ```csharp
     if (counter1.Value < 5) counter1.ShowReset = false;
@@ -191,33 +191,33 @@ Das `Counter` Steuerelement macht eine Methode zum Erhöhen des Leistungsindikat
 
 13. Drücken Sie **F5**.
 
-    Das Formular wird geöffnet. Das `Counter` Steuerelement zeigt den folgenden Text an.
+    Das Formular wird geöffnet. Das- `Counter` Steuerelement zeigt den folgenden Text an.
 
     **Anzahl: 0**
 
-14. Klicken Sie auf **Testen**.
+14. Klicken Sie auf **Test**.
 
-    Die Leistungsindikatorinkremente werden erhöht, und Visual Studio zeigt ein Meldungsfeld an.
+    Die-Wert Inkremente und Visual Studio zeigen ein Meldungs Feld an.
 
-15. Schließen Sie das Meldungsfeld.
+15. Schließen Sie das Meldungs Feld.
 
-    Die **Reset-Taste** verschwindet.
+    Die Schaltfläche **Zurücksetzen** wird ausgeblendet.
 
-16. Klicken Sie auf **Testen,** bis der Zähler **5** erreicht, die die Meldungsfelder jedes Mal schließen.
+16. Klicken Sie auf " **Testen** ", bis der Wert für jedes Mal **5** schließt.
 
-    Die **Reset-Schaltfläche** wird erneut angezeigt.
+    Die Schaltfläche **Zurücksetzen** wird erneut angezeigt.
 
 17. Klicken Sie auf **Zurücksetzen**.
 
-    Der Zähler wird auf **0**zurückgesetzt.
+    Der Indikatorensatz wird auf **0**zurückgesetzt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie ein **Toolbox-Steuerelement** erstellen, erstellt Visual Studio eine Datei mit dem Namen *ProjectName.vsix* im Ordner "bin"-Debug" ihres Projekts. Sie können das Steuerelement bereitstellen, indem Sie die *vSix-Datei* in ein Netzwerk oder eine Website hochladen. Wenn ein Benutzer die *.vsix-Datei* öffnet, wird das Steuerelement installiert und der Visual Studio **Toolbox** auf dem Computer des Benutzers hinzugefügt. Alternativ können Sie die *.vsix-Datei* in [Visual Studio Marketplace](https://marketplace.visualstudio.com/) hochladen, damit Benutzer sie finden können, indem Sie im Dialogfeld**Tools-Erweiterungen** **Tools** > und Updates navigieren.
+Wenn Sie ein **Toolbox** -Steuerelement erstellen, erstellt Visual Studio eine Datei namens *Projektname. vsix* im Ordner "" \bin\debug\ "des Projekts. Sie können das-Steuerelement bereitstellen, indem Sie die *VSIX* -Datei in ein Netzwerk oder auf eine Website hochladen. Wenn ein Benutzer die *VSIX* -Datei öffnet, wird das Steuerelement installiert und der Visual Studio- **Toolbox** auf dem Computer des Benutzers hinzugefügt. Alternativ dazu können **Sie die** *VSIX* -Datei in [Visual Studio Marketplace](https://marketplace.visualstudio.com/) hochladen, damit Benutzer Sie finden können, indem Sie im Dialogfeld Extras  >  **Erweiterungen und Updates** suchen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
-- [Erstellen eines WPF Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Erstellen eines WPF-Toolbox-Steuer Elements](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
-- [Grundlagen der Windows Forms-Steuerelemententwicklung](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Grundlagen zur Windows Forms Steuerung der Entwicklung](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

@@ -1,7 +1,7 @@
 ---
-title: Debuggen von Aufgaben | Microsoft Docs
+title: Debugaufgaben | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
@@ -10,39 +10,39 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41f53ab1392ea3c31908faf65a871fa100fbb3f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80738953"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903559"
 ---
-# <a name="debug-tasks"></a>Debug-Aufgaben
-Um ein Programm zu debuggen, muss es gestartet werden, und ein Debugmodul (DE) muss daran angefügt werden, andernfalls muss die DE an ein zuvor gestartetes Programm angefügt werden. Nach dem Anhängen muss die DE bestimmte Startereignisse generieren. Als Reaktion darauf versucht das Debugpaket, die in der IDE festgelegten Haltepunkte zu binden. Wenn das Programm einen gebundenen Haltepunkt erreicht, hält es an und wartet auf Benutzereingaben.
+# <a name="debug-tasks"></a>Aufgaben Debuggen
+Zum Debuggen eines Programms muss es gestartet werden, und es muss eine Debug-Engine (de) angefügt werden. andernfalls muss die de an ein zuvor gestartetes Programm angefügt werden. Nach dem Anfügen muss der de bestimmte Start Ereignisse generieren. Als Antwort versucht das Debug-Paket, die Breakpoints zu binden, die in der IDE festgelegt sind. Wenn das Programm auf einen gebundenen Haltepunkt trifft, wird es angehalten, und es wird auf eine Benutzereingabe gewartet.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Sicherheitsfragen](../../extensibility/debugger/security-issues.md) Erläutert die Sicherheitsschritte, die zum Debuggen eines Programms erforderlich sind.
+ [Sicherheitsprobleme](../../extensibility/debugger/security-issues.md) Erläutert die Sicherheits Schritte, die zum Debuggen eines Programms erforderlich sind.
 
- [Starten eines Programms](../../extensibility/debugger/launching-a-program.md) Enthält schritt für Schritt Anweisungen zum Angeben einer DE, die das Betriebssystem aufruft, um das Programm zu starten.
+ [Programm starten](../../extensibility/debugger/launching-a-program.md) Enthält Schritt-für-Schritt-Anleitungen zum Angeben einer de, die das Betriebssystem aufruft, um das Programm zu starten.
 
- [Direkt an ein Programm anhängen](../../extensibility/debugger/attaching-directly-to-a-program.md) Beschreibt den Prozess, der zum Debuggen eines Programms in einem Prozess verwendet wird, der bereits ausgeführt wird.
+ [Direkt an ein Programm anfügen](../../extensibility/debugger/attaching-directly-to-a-program.md) Beschreibt den Prozess, der zum Debuggen eines Programms in einem Prozess verwendet wird, der bereits ausgeführt wird.
 
- [Senden von Startereignissen nach einem Start](../../extensibility/debugger/sending-startup-events-after-a-launch.md) Listet die Ereignisse auf, die stattfinden, sobald die DE an das Programm angefügt ist, bis sich das Programm am Haupteinstiegspunkt befindet und zum Debuggen bereit ist.
+ [Start Ereignisse nach einem Start senden](../../extensibility/debugger/sending-startup-events-after-a-launch.md) Listet die Ereignisse auf, die nach dem Anfügen von de an das Programm stattfinden, bis sich das Programm an seinem Haupteinstiegspunkt befindet und zum Debuggen bereit ist.
 
- [Kontrolle der Ausführung](../../extensibility/debugger/control-of-execution.md) Erläutert, wie die DE in der Regel ein Einstiegspunktereignis, ein Load-Complete-Ereignis oder ein Beenden-Ereignis sendet, je nach den Umständen.
+ [Kontrolle der Ausführung](../../extensibility/debugger/control-of-execution.md) Erläutert, wie der de in der Regel abhängig von den jeweiligen Umständen ein Einstiegspunkt Ereignis, ein Ereignis zum Laden eines Ladevorgangs oder ein anhalteereignis sendet.
 
- [Binden von Haltepunkten](../../extensibility/debugger/binding-breakpoints.md) Beschreibt, wie die IDE, wenn der Benutzer einen Haltepunkt festlegt, die Anforderung formuliert und die Debugsitzung zum Erstellen des Haltepunkts auffordert.
+ [Binden](../../extensibility/debugger/binding-breakpoints.md) von Haltepunkten Beschreibt, wie die IDE die Anforderung formuliert und die Debugsitzung anfordert, den Breakpoint zu erstellen, wenn der Benutzer einen Haltepunkt festlegt.
 
- [Ausdrücken auswerten](../../extensibility/debugger/evaluating-expressions.md) Erläutert, wie Ausdrücke erstellt werden und was geschieht, wenn ein Ausdruck ausgewertet wird.
+ [Auswerten von Ausdrücken](../../extensibility/debugger/evaluating-expressions.md) Erläutert, wie Ausdrücke erstellt werden und was geschieht, wenn ein Ausdruck ausgewertet wird.
 
- [Visualisieren und Anzeigen](../../extensibility/debugger/visualizing-and-viewing-data.md) von Daten Erläutert, wie Typvisualisierer und benutzerdefinierte Viewer vom Ausdrucksevaluator (EE) unterstützt werden.
+ [Visualisieren und Anzeigen von Daten](../../extensibility/debugger/visualizing-and-viewing-data.md) Erläutert, wie typvisualisierungen und benutzerdefinierte Viewer von der Ausdrucks Auswertung unterstützt werden.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
+ [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Konzepte der debuggingarchitektur.
 
- [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md) Bietet eine Übersicht über die Visual Studio-Debugkomponenten, zu denen der DE-, EE- und Symbolhandler (SH) gehört.
+ [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md) Bietet eine Übersicht über die Visual Studio-debuggingkomponenten, die de, EE und Symbol Handler (SH) enthalten.
 
- [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert, wie die DE gleichzeitig in Code-, Dokumentations- und Ausdrucksauswertungskontexten arbeitet. Beschreibt für jeden der drei Kontexte den Standort, die Position oder die Bewertung, die für ihn relevant sind.
+ [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert die gleichzeitige Funktionsweise von de innerhalb von Code-, Dokumentations-und Ausdrucks Auswertungs Kontexten. Beschreibt für jeden der drei Kontexte den Speicherort, die Position oder die Auswertung, die für ihn relevant sind.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
  [Erste Schritte](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

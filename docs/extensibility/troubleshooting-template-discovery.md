@@ -1,75 +1,75 @@
 ---
-title: Fehlerbehebung bei der Vorlagenermittlung in Visual Studio | Microsoft Docs
+title: Problembehandlung bei der Vorlagen Ermittlung in Visual Studio | Microsoft-Dokumentation
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 078d06c797c3b228c1ea5b1d836dceb0394b3174
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c5225c741206e6a43ff024a5f184404f1ac2bc63
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80698932"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904493"
 ---
-# <a name="troubleshooting-template-installation"></a>Fehlerbehebung bei der Installation von Vorlagen
+# <a name="troubleshooting-template-installation"></a>Problembehandlung der Vorlagen Installation
 
-Wenn bei der Bereitstellung Ihrer Projekt- oder Elementvorlagen Probleme auftreten, können Sie die Diagnoseprotokollierung aktivieren.
+Wenn bei der Bereitstellung der Projekt-oder Element Vorlagen Probleme auftreten, können Sie die Diagnoseprotokollierung aktivieren.
 
 ::: moniker range="vs-2017"
 
-1. Erstellen Sie eine pkgdef-Datei im Ordner *Common7-IDE-CommonExtensions* für Ihre Installation. Zum *Beispiel: C:-Programmdateien (x86) , Microsoft Visual Studio, 2017, Enterprise, Common7, IDE, CommonExtensions, EnablePkgDefLogging.pkgdef*.
+1. Erstellen Sie eine pkgdef-Datei im Ordner *Common7\IDE\CommonExtensions* für die Installation. Beispiel: *c:\Programme (x86) \Microsoft Visual studio\2017\enterprise\common7\ide\commonextensions\enablepkgdeflogging.pkgdef*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Erstellen Sie eine pkgdef-Datei im Ordner *Common7-IDE-CommonExtensions* für Ihre Installation. Zum *Beispiel: C:-Programmdateien (x86) , Microsoft Visual Studio, 2019, Enterprise, Common7, IDE, CommonExtensions, EnablePkgDefLogging.pkgdef*.
+1. Erstellen Sie eine pkgdef-Datei im Ordner *Common7\IDE\CommonExtensions* für die Installation. Beispiel: *c:\Programme (x86) \Microsoft Visual studio\2019\enterprise\common7\ide\commonextensions\enablepkgdeflogging.pkgdef*.
 
 ::: moniker-end
 
-2. Fügen Sie der datei pkgdef Folgendes hinzu:
+2. Fügen Sie der pkgdef-Datei Folgendes hinzu:
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. Öffnen Sie eine [Entwicklereingabeaufforderung](/dotnet/framework/tools/developer-command-prompt-for-vs) `devenv /updateConfiguration`für Ihre Installation und Ausführung .
+3. Öffnen Sie eine [Developer-Eingabeaufforderung](/dotnet/framework/tools/developer-command-prompt-for-vs) für die-Installation, und führen Sie aus `devenv /updateConfiguration` .
 
 ::: moniker range="vs-2017"
 
-4. Öffnen Sie Visual Studio, und starten Sie die Dialogfelder "Neues Projekt" und "Neues Element", um beide Vorlagenstrukturen zu initialisieren.
+4. Öffnen Sie Visual Studio, und starten Sie die Dialogfelder Neues Projekt und neues Element, um beide Vorlagen Strukturen zu initialisieren.
 
-   Das Vorlagenprotokoll wird jetzt in **%LOCALAPPDATA%-Microsoft-VisualStudio-15.0_[instanceid]-VsTemplateDiagnosticsList.csv** (Instanceid entspricht der Installations-ID Ihrer Instanz von Visual Studio). Jede Vorlagenbauminitialisierung fügt Einträge an dieses Protokoll an.
+   Das Vorlagen Protokoll wird jetzt in **%LocalAppData%\microsoft\visualstudio\15.0_ [InstanceId] \VsTemplateDiagnosticsList.csv** angezeigt (die InstanceId entspricht der Installations-ID Ihrer Instanz von Visual Studio). Jede Vorlagen Struktur Initialisierung fügt Einträge an dieses Protokoll an.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Öffnen Sie Visual Studio, und starten Sie die Dialogfelder **Erstellen eines neuen Projekts** und Neuer **Artikel,** um beide Vorlagenstrukturen zu initialisieren.
+4. Öffnen Sie Visual Studio, und starten Sie die Dialogfelder **Neues Projekt** und **Neues Element** erstellen, um beide Vorlagen Strukturen zu initialisieren.
 
-   Das Vorlagenprotokoll wird jetzt in **%LOCALAPPDATA%-Microsoft-VisualStudio-16.0_[instanceid]-VsTemplateDiagnosticsList.csv** (Instanceid entspricht der Installations-ID Ihrer Instanz von Visual Studio). Jede Vorlagenbauminitialisierung fügt Einträge an dieses Protokoll an.
+   Das Vorlagen Protokoll wird jetzt in **%LocalAppData%\microsoft\visualstudio\16.0_ [InstanceId] \VsTemplateDiagnosticsList.csv** angezeigt (die InstanceId entspricht der Installations-ID Ihrer Instanz von Visual Studio). Jede Vorlagen Struktur Initialisierung fügt Einträge an dieses Protokoll an.
 
 ::: moniker-end
 
 Die Protokolldatei enthält die folgenden Spalten:
 
-- **FullPathToTemplate**, die die folgenden Werte hat:
+- **Fullpathto Template**mit den folgenden Werten:
 
-  - 1 für die manifestbasierte Bereitstellung
+  - 1 für die manifestressourcenbasierte Bereitstellung
 
-  - 0 für die datenträgerbasierte Bereitstellung
+  - 0 für Datenträger basierte Bereitstellung
 
-- **TemplateFileName**
+- **Templatefilename**
 
-- Andere Vorlageneigenschaften
+- Weitere Vorlagen Eigenschaften
 
 > [!NOTE]
-> Um die Protokollierung zu deaktivieren, entfernen Sie entweder `EnableTemplateDiscoveryLog` `dword:00000000`die pkgdef-Datei, oder ändern Sie den Wert von in , und führen Sie dann erneut aus. `devenv /updateConfiguration`
+> Um die Protokollierung zu deaktivieren, entfernen Sie entweder die pkgdef-Datei, oder ändern Sie den Wert von `EnableTemplateDiscoveryLog` in `dword:00000000` , und führen Sie dann `devenv /updateConfiguration` erneut aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Erstellen benutzerdefinierter Projekt- und Elementvorlagen](creating-custom-project-and-item-templates.md)
+- [Erstellen von benutzerdefinierten Projekt-und Element Vorlagen](creating-custom-project-and-item-templates.md)

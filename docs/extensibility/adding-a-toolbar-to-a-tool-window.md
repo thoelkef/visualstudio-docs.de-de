@@ -1,7 +1,7 @@
 ---
-title: Hinzufügen einer Symbolleiste zu einem Werkzeugfenster | Microsoft Docs
+title: Hinzufügen einer Symbolleiste zu einem Tool Fenster | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
@@ -11,37 +11,37 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094515eb94279623974bd7b55cc9923c49625a70
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740249"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904125"
 ---
-# <a name="add-a-toolbar-to-a-tool-window"></a>Hinzufügen einer Symbolleiste zu einem Toolfenster
-In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einem Werkzeugfenster eine Symbolleiste hinzufügen.
+# <a name="add-a-toolbar-to-a-tool-window"></a>Hinzufügen einer Symbolleiste zu einem Tool Fenster
+In dieser exemplarischen Vorgehensweise wird gezeigt, wie einem Tool Fenster eine Symbolleiste hinzugefügt wird.
 
- Eine Symbolleiste ist ein horizontaler oder vertikaler Streifen, der Schaltflächen enthält, die an Befehle gebunden sind. Die Länge einer Symbolleiste in einem Werkzeugfenster entspricht immer der Breite oder Höhe des Werkzeugfensters, je nachdem, wo die Symbolleiste angedockt ist.
+ Eine Symbolleiste ist ein horizontaler oder vertikaler Strich, der auf Befehle gebundene Schaltflächen enthält. Die Länge einer Symbolleiste in einem Tool Fenster entspricht immer der Breite oder Höhe des Tool Fensters, je nachdem, wo die Symbolleiste angedockt ist.
 
- Im Gegensatz zu Symbolleisten in der IDE muss eine Symbolleiste in einem Werkzeugfenster angedockt sein und kann nicht verschoben oder angepasst werden. Wenn das VSPackage in umanaged Code geschrieben wird, kann die Symbolleiste an jeder Kante angedockt werden.
+ Im Gegensatz zu Symbolleisten in der IDE muss eine Symbolleiste in einem Tool Fenster angedockt werden und kann nicht verschoben oder angepasst werden. Wenn das VSPackage in umanaged Code geschrieben wird, kann die Symbolleiste an einem beliebigen Rand angedockt werden.
 
  Weitere Informationen zum Hinzufügen einer Symbolleiste finden Sie unter [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-toolbar-for-a-tool-window"></a>Erstellen einer Symbolleiste für ein Werkzeugfenster
+## <a name="create-a-toolbar-for-a-tool-window"></a>Erstellen einer Symbolleiste für ein Tool Fenster
 
-1. Erstellen Sie ein `TWToolbar` VSIX-Projekt mit dem Namen, das sowohl einen Menübefehl mit dem Namen **TWTestCommand als** auch ein Toolfenster mit dem Namen **TestToolWindow**enthält. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) und Erstellen einer Erweiterung mit einem [Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md). Sie müssen die Befehlselementvorlage hinzufügen, bevor Sie die Vorlagenvorlage für das Toolfenster hinzufügen.
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TWToolbar` , das sowohl einen Menübefehl namens **twtestcommand** als auch ein Tool Fenster mit dem Namen **testtoolwindow**enthält. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) und [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md). Sie müssen die Befehls Element Vorlage hinzufügen, bevor Sie die Tool Fenster Vorlage hinzufügen.
 
-2. Suchen Sie in *TWTestCommandPackage.vsct*nach dem Abschnitt Symbole. Im GuidSymbol-Knoten mit dem Namen guidTWTestPackagePackageCmdSet deklarieren Sie eine Symbolleiste und eine Symbolleistengruppe wie folgt.
+2. Suchen Sie in der Datei " *twtestcommandpackage. vsct*" nach dem Abschnitt "Symbole". Deklarieren Sie im Knoten "guidsymbol" mit dem Namen "guidtwtestcommandpackagecmdset" wie folgt eine Symbolleiste und eine Symbolleisten Gruppe.
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
     <IDSymbol name="TWToolbarGroup" value="0x1050" />
     ```
 
-3. Erstellen Sie oben `Commands` im Abschnitt `Menus` einen Abschnitt. Fügen `Menu` Sie ein Element hinzu, um die Symbolleiste zu definieren.
+3. Erstellen Sie am oberen Rand des `Commands` Abschnitts einen `Menus` Abschnitt. Fügen Sie ein- `Menu` Element zum Definieren der Symbolleiste hinzu.
 
     ```xml
     <Menus>
@@ -55,9 +55,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einem Werkzeugfens
     </Menus>
     ```
 
-     Symbolleisten können nicht wie Untermenüs verschachtelt werden. Daher müssen Sie kein übergeordnetes Element zuweisen. Außerdem müssen Sie keine Priorität festlegen, da der Benutzer Symbolleisten verschieben kann. In der Regel wird die Erstplatzierung einer Symbolleiste programmgesteuert definiert, aber nachfolgende Änderungen durch den Benutzer bleiben erhalten.
+     Symbolleisten können nicht wie Untermenüs eingefügt werden. Daher müssen Sie kein übergeordnetes Element zuweisen. Außerdem müssen Sie keine Priorität festlegen, da der Benutzer Symbolleisten verschieben kann. In der Regel wird die anfängliche Platzierung einer Symbolleiste Programm gesteuert definiert, nachfolgende Änderungen durch den Benutzer werden jedoch beibehalten.
 
-4. Definieren Sie im Abschnitt Gruppen eine Gruppe, die die Befehle für die Symbolleiste enthält.
+4. Definieren Sie im Abschnitt Gruppen eine Gruppe, in der die Befehle für die Symbolleiste enthalten sein sollen.
 
     ```xml
 
@@ -66,7 +66,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einem Werkzeugfens
     </Group>
     ```
 
-5. Ändern Sie im Abschnitt Schaltflächen das übergeordnete Element des vorhandenen Button-Elements in die Symbolleistengruppe, sodass die Symbolleiste angezeigt wird.
+5. Ändern Sie im Schaltflächen Abschnitt das übergeordnete Element des vorhandenen Button-Elements in die Symbolleisten Gruppe, sodass die Symbolleiste angezeigt wird.
 
     ```xml
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">
@@ -78,40 +78,40 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einem Werkzeugfens
     </Button>
     ```
 
-     Wenn eine Symbolleiste keine Befehle hat, wird sie standardmäßig nicht angezeigt.
+     Wenn eine Symbolleiste keine Befehle enthält, wird Sie standardmäßig nicht angezeigt.
 
-     Da die neue Symbolleiste nicht automatisch zum Werkzeugfenster hinzugefügt wird, muss die Symbolleiste explizit hinzugefügt werden. Dies wird im nächsten Abschnitt erläutert.
+     Da die neue Symbolleiste dem Tool Fenster nicht automatisch hinzugefügt wird, muss die Symbolleiste explizit hinzugefügt werden. Dies wird im nächsten Abschnitt erläutert.
 
-## <a name="add-the-toolbar-to-the-tool-window"></a>Hinzufügen der Symbolleiste zum Werkzeugfenster
+## <a name="add-the-toolbar-to-the-tool-window"></a>Hinzufügen der Symbolleiste zum Tool Fenster
 
-1. Fügen *Sie TWTestCommandPackageGuids.cs* die folgenden Zeilen hinzu.
+1. Fügen Sie in *TWTestCommandPackageGuids.cs* die folgenden Zeilen hinzu.
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. Fügen *Sie TestToolWindow.cs* die folgende Usingsanweisung hinzu.
+2. Fügen Sie in *TestToolWindow.cs* die folgende using-Anweisung hinzu.
 
     ```csharp
     using System.ComponentModel.Design;
     ```
 
-3. Fügen Sie im TestToolWindow-Konstruktor die folgende Zeile hinzu.
+3. Fügen Sie im testtoolwindow-Konstruktor die folgende Zeile hinzu.
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);
     ```
 
-## <a name="test-the-toolbar-in-the-tool-window"></a>Testen der Symbolleiste im Werkzeugfenster
+## <a name="test-the-toolbar-in-the-tool-window"></a>Testen der Symbolleiste im Tool Fenster
 
 1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio sollte angezeigt werden.
 
-2. Klicken Sie im Menü **Ansicht / Andere Windows** auf **ToolWindow testen,** um das Toolfenster anzuzeigen.
+2. Klicken Sie im Menü Ansicht > **andere Fenster** auf Tool **Fenster testen** , um das Tool Fenster anzuzeigen.
 
-     Sie sollten eine Symbolleiste (es sieht aus wie das Standardsymbol) oben links im Werkzeugfenster sehen, direkt unter dem Titel.
+     Oben links im Tool Fenster sollte eine Symbolleiste angezeigt werden (Sie sieht wie das Standard Symbol aus), direkt unterhalb des Titels.
 
-3. Klicken Sie auf der Symbolleiste auf das Symbol, um die Meldung **TWTestCommandPackage Inside TWToolbar.TWTestCommand.MenuItemCallback()** anzuzeigen.
+3. Klicken Sie auf der Symbolleiste auf das Symbol, um die Nachricht **twtestcommandpackage in twtoolbar. twtestcommand. MenuItemCallBack ()** anzuzeigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)

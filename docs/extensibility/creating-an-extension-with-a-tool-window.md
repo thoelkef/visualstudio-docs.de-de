@@ -1,40 +1,40 @@
 ---
-title: Erstellen einer Erweiterung mit einem Toolfenster | Microsoft Docs
+title: Erstellen einer Erweiterung mit einem Tool Fenster | Microsoft-Dokumentation
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17f72cf130c5ff0f2d6d03ca8c460aa98ea39111
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 597b84854dd398abee9dc21090e085273bc94c75
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739539"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903890"
 ---
-# <a name="create-an-extension-with-a-tool-window"></a>Erstellen einer Erweiterung mit einem Werkzeugfenster
+# <a name="create-an-extension-with-a-tool-window"></a>Erstellen einer Erweiterung mit einem Tool Fenster
 
-In diesem Verfahren erfahren Sie, wie Sie die VSIX-Projektvorlage und die **Elementvorlage für benutzerdefinierte seufzende Werkzeuge verwenden,** um eine Erweiterung mit einem Toolfenster zu erstellen.
+In diesem Verfahren erfahren Sie, wie Sie mithilfe der VSIX-Projektvorlage und der Element Vorlage für **benutzerdefinierte Tool Fenster** eine Erweiterung mit einem Tool Fenster erstellen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-### <a name="create-a-tool-window"></a>Erstellen eines Werkzeugfensters
+### <a name="create-a-tool-window"></a>Erstellen eines Tool Fensters
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstWindow**. Die VSIX-Projektvorlage finden Sie im Dialogfeld **Neues Projekt,** indem Sie nach "vsix" suchen.
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen **firstwindow**. Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine Vorlagenvorlage für das Toolfenster mit dem Namen **MyWindow**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu Visual **C-Extensibility,** > **Extensibility** und wählen Sie **Benutzerdefiniertes Werkzeugfenster**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Dateinamen des Werkzeugfensters in *MyWindow.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine Tool Fenster-Element Vorlage mit dem Namen **MyWindow**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefiniertes Tool Fenster**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Dateinamen des Tool Fensters in *MyWindow.cs*.
 
 3. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
-   Die experimentelle Instanz von Visual Studio wird angezeigt. Weitere Informationen zur experimentellen Instanz finden Sie unter [Die experimentelle Instanz](../extensibility/the-experimental-instance.md).
+   Die experimentelle Instanz von Visual Studio wird angezeigt. Weitere Informationen über die experimentelle Instanz finden Sie in [der experimentellen Instanz](../extensibility/the-experimental-instance.md).
 
-4. Wechseln Sie in der experimentellen Instanz zu**Andere Windows** **anzeigen** > .
+4. Wechseln Sie in der experimentellen Instanz zu **View**  >  **Weitere Fenster**anzeigen.
 
-   Sie sollten ein Menüelement für **MyWindow**sehen. Klicken Sie auf diese Schaltfläche.
+   Ein Menü Element für " **MyWindow**" sollte angezeigt werden. Klicken Sie auf diese Schaltfläche.
 
-   Sie sollten ein Tool-Fenster mit dem Titel **MyWindow** und einer Schaltfläche sehen, die **Click Me! sagt.**
+   Es sollte ein Tool Fenster mit dem Titel " **MyWindow** " und eine Schaltfläche mit dem Namen " **Click me!** " angezeigt werden.

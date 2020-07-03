@@ -1,7 +1,7 @@
 ---
-title: Hinzufügen eines Toolfensters | Microsoft Docs
+title: Hinzufügen eines Tool Fensters | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tutorials
 - tool windows
@@ -11,57 +11,57 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 573f01043d8b1b0c2293a3ebf6e0c246a8727d6a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740254"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904145"
 ---
-# <a name="add-a-tool-window"></a>Hinzufügen eines Werkzeugfensters
+# <a name="add-a-tool-window"></a>Hinzufügen eines Tool Fensters
 
-In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein Toolfenster erstellen und es auf folgende Weise in Visual Studio integrieren:
+In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein Tool Fenster erstellen und es auf folgende Weise in Visual Studio integrieren:
 
-- Fügen Sie dem Toolfenster ein Steuerelement hinzu.
+- Fügen Sie dem Tool Fenster ein-Steuerelement hinzu.
 
-- Fügen Sie einem Werkzeugfenster eine Symbolleiste hinzu.
+- Fügen Sie einem Tool Fenster eine Symbolleiste hinzu.
 
 - Fügen Sie der Symbolleiste einen Befehl hinzu.
 
 - Implementieren Sie die Befehle.
 
-- Legen Sie die Standardposition für das Werkzeugfenster fest.
+- Legen Sie die Standardposition für das Tool Fenster fest.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Das Visual Studio SDK ist als optionale Funktion in Visual Studio-Setup enthalten. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Das Visual Studio SDK ist als optionales Feature in Visual Studio-Setup enthalten. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-tool-window"></a>Erstellen eines Werkzeugfensters
+## <a name="create-a-tool-window"></a>Erstellen eines Tool Fensters
 
-1. Erstellen Sie ein Projekt mit dem Namen **FirstToolWin** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Vorlagenvorlage für das Toolfenster mit dem Namen **FirstToolWindow**hinzu.
+1. Erstellen Sie ein Projekt namens **firsttoolwin** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage namens **firsttoolwindow**hinzu.
 
     > [!NOTE]
-    > Weitere Informationen zum Erstellen einer Erweiterung mit einem Toolfenster finden Sie unter [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Weitere Informationen zum Erstellen einer Erweiterung mit einem Tool Fenster finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-## <a name="add-a-control-to-the-tool-window"></a>Hinzufügen eines Steuerelements zum Werkzeugfenster
+## <a name="add-a-control-to-the-tool-window"></a>Hinzufügen eines Steuer Elements zum Tool Fenster
 
-1. Entfernen Sie das Standardsteuerelement. Öffnen Sie *FirstToolWindowControl.xaml* und löschen Sie die **Click Me!** .
+1. Entfernen Sie das Standard Steuerelement. Öffnen Sie *firsttoolwindowcontrol. XAML* , und löschen Sie die Schaltfläche **Klicken Sie!** .
 
-2. Erweitern Sie in der **Toolbox**den Abschnitt **Alle WPF-Steuerelemente,** und ziehen Sie das **Steuerelement Medienelement** in das **Formular FirstToolWindowControl.** Wählen Sie das Steuerelement aus, und benennen Sie im **Fenster Eigenschaften** dieses Element **mediaElement1**.
+2. Erweitern Sie in der **Toolbox**den Abschnitt **alle WPF** -Steuerelemente, und ziehen Sie das Steuer **Element Media Element** in das Formular **firsttoolwindowcontrol** . Wählen Sie das Steuerelement aus, und benennen Sie im **Eigenschaften** Fenster dieses Element **mediaElement1**.
 
-## <a name="add-a-toolbar-to-the-tool-window"></a>Hinzufügen einer Symbolleiste zum Werkzeugfenster
-Durch Hinzufügen einer Symbolleiste auf folgende Weise stellen Sie sicher, dass ihre Farbverläufe und Farben mit dem Rest der IDE konsistent sind.
+## <a name="add-a-toolbar-to-the-tool-window"></a>Hinzufügen einer Symbolleiste zum Tool Fenster
+Indem Sie eine Symbolleiste auf folgende Weise hinzufügen, gewährleisten Sie, dass die Farbverläufe und Farben mit dem Rest der IDE konsistent sind.
 
-1. Öffnen Sie im **Projektmappen-Explorer** *FirstToolWindowPackage.vsct*. Die *.vsct-Datei* definiert die grafischen Benutzeroberflächenelemente (GUI) in Ihrem Toolfenster mithilfe von XML.
+1. Öffnen Sie in **Projektmappen-Explorer**die Datei *firsttoolwindowpackage. vsct*. Die *vsct* -Datei definiert die grafischen Benutzeroberflächen Elemente (GUI) in Ihrem Tool Fenster mithilfe von XML.
 
-2. Suchen `<Symbols>` Sie im `<GuidSymbol>` Abschnitt `name` den `guidFirstToolWindowPackageCmdSet`Knoten, dessen Attribut lautet. Fügen Sie `<IDSymbol>` die folgenden beiden `<IDSymbol>` Elemente der Liste der Elemente in diesem Knoten hinzu, um eine Symbolleiste und eine Symbolleistengruppe zu definieren.
+2. Suchen Sie im- `<Symbols>` Abschnitt nach dem `<GuidSymbol>` Knoten, dessen- `name` Attribut ist `guidFirstToolWindowPackageCmdSet` . Fügen Sie der `<IDSymbol>` Liste der Elemente in diesem Knoten die folgenden zwei Elemente hinzu `<IDSymbol>` , um eine Symbolleiste und eine Symbolleisten Gruppe zu definieren.
 
     ```xml
     <IDSymbol name="ToolbarID" value="0x1000" />
     <IDSymbol name="ToolbarGroupID" value="0x1001" />
     ```
 
-3. Erstellen Sie `<Buttons>` direkt über `<Menus>` dem Abschnitt einen Abschnitt, der diesem ähnelt:
+3. Erstellen Sie direkt oberhalb des Abschnitts einen Abschnitt, der dem folgenden `<Buttons>` `<Menus>` ähnelt:
 
     ```xml
     <Menus>
@@ -75,11 +75,11 @@ Durch Hinzufügen einer Symbolleiste auf folgende Weise stellen Sie sicher, dass
     </Menus>
     ```
 
-    Es gibt verschiedene Arten von Menü. Dieses Menü ist eine Symbolleiste in einem `type` Werkzeugfenster, definiert durch sein Attribut. Die `guid` `id` und Einstellungen bilden die vollqualifizierte ID der Symbolleiste. In der `<Parent>` Regel ist das eines Menüs die enthaltende Gruppe. Eine Symbolleiste ist jedoch als eigenes übergeordnetes Element definiert. Daher wird derselbe Bezeichner `<Menu>` `<Parent>` für die und-Elemente verwendet. Das `priority` Attribut ist nur '0'.
+    Es gibt mehrere verschiedene Arten von Menüs. Dieses Menü ist eine Symbolleiste in einem Tool Fenster, das durch das zugehörige-Attribut definiert wird `type` . Die `guid` -und- `id` Einstellungen bilden die voll qualifizierte ID der Symbolleiste. In der Regel `<Parent>` ist der eines Menüs die enthaltende Gruppe. Eine Symbolleiste wird jedoch als eigenes übergeordnetes Element definiert. Daher wird derselbe Bezeichner für das `<Menu>` -Element und das- `<Parent>` Element verwendet. Das `priority` Attribut ist nur "0".
 
-4. Symbolleisten ähneln Menüs in vielerlei Hinsicht. So wie z. B. ein Menü Gruppen von Befehlen haben kann, können Symbolleisten auch Gruppen haben. (In Menüs werden die Befehlsgruppen durch horizontale Linien getrennt. Auf Symbolleisten werden die Gruppen nicht durch visuelle Trennwände getrennt.)
+4. Symbolleisten ähneln Menüs in vielerlei Hinsicht. So können z. b., wie ein Menü möglicherweise Gruppen von Befehlen hat, Symbolleisten auch Gruppen enthalten. (In Menüs werden die Befehls Gruppen durch horizontale Linien getrennt. Auf Symbolleisten werden die Gruppen nicht durch visuelle unter Teiler getrennt.)
 
-    Fügen `<Groups>` Sie einen `<Group>` Abschnitt hinzu, der ein Element enthält. Dadurch wird die Gruppe definiert, `<Symbols>` deren ID Sie im Abschnitt deklariert haben. Fügen `<Groups>` Sie den `<Menus>` Abschnitt direkt nach dem Abschnitt hinzu.
+    Fügen Sie einen `<Groups>` Abschnitt hinzu, der ein- `<Group>` Element enthält. Dadurch wird die Gruppe definiert, deren ID Sie im `<Symbols>` Abschnitt deklariert haben. Fügen Sie den `<Groups>` Abschnitt direkt nach dem- `<Menus>` Abschnitt hinzu.
 
     ```xml
     <Groups>
@@ -89,20 +89,20 @@ Durch Hinzufügen einer Symbolleiste auf folgende Weise stellen Sie sicher, dass
     </Groups>
     ```
 
-    Indem Sie die übergeordnete GUID und ID auf die GUID und ID der Symbolleiste festlegen, fügen Sie die Gruppe der Symbolleiste hinzu.
+    Wenn Sie die übergeordnete GUID und die ID auf die GUID und die ID der Symbolleiste festlegen, fügen Sie die Gruppe der Symbolleiste hinzu.
 
-## <a name="add-a-command-to-the-toolbar"></a>Hinzufügen eines Befehls zur Symbolleiste
+## <a name="add-a-command-to-the-toolbar"></a>Fügen Sie der Symbolleiste einen Befehl hinzu.
 
 Fügen Sie der Symbolleiste einen Befehl hinzu, der als Schaltfläche angezeigt wird.
 
-1. Deklarieren Sie im `<Symbols>` Abschnitt die folgenden IDSymbol-Elemente direkt nach den Symbolleisten- und Symbolleistengruppendeklarationen.
+1. Deklarieren Sie im- `<Symbols>` Abschnitt die folgenden idsymbol-Elemente direkt nach den Deklarationen der Symbolleiste und der Symbolleiste.
 
     ```xml
     <IDSymbol name="cmdidWindowsMedia" value="0x0100" />
     <IDSymbol name="cmdidWindowsMediaOpen" value="0x132" />
     ```
 
-2. Fügen Sie ein `<Buttons>` Button-Element innerhalb des Abschnitts hinzu. Dieses Element wird auf der Symbolleiste im Werkzeugfenster mit einem **Suchsymbol** (Vergrößerungsglas) angezeigt.
+2. Fügen Sie im-Abschnitt ein Button-Element hinzu `<Buttons>` . Dieses Element wird auf der Symbolleiste im Tool Fenster mit einem **Suchsymbol** (Lupensymbol) angezeigt.
 
     ```xml
     <Button guid="guidFirstToolWindowPackageCmdSet" id="cmdidWindowsMediaOpen" priority="0x0101" type="Button">
@@ -115,7 +115,7 @@ Fügen Sie der Symbolleiste einen Befehl hinzu, der als Schaltfläche angezeigt 
     </Button>
     ```
 
-3. Öffnen *Sie FirstToolWindowCommand.cs* und fügen Sie die folgenden Zeilen in der Klasse direkt nach den vorhandenen Feldern hinzu.
+3. Öffnen Sie *FirstToolWindowCommand.cs* , und fügen Sie die folgenden Zeilen in der-Klasse direkt nach den vorhandenen Feldern hinzu.
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -124,12 +124,12 @@ Fügen Sie der Symbolleiste einen Befehl hinzu, der als Schaltfläche angezeigt 
     public const int ToolbarID = 0x1000;
     ```
 
-    Dadurch werden Ihre Befehle im Code verfügbar.
+    Dadurch sind die Befehle im Code verfügbar.
 
-## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Hinzufügen einer MediaPlayer-Eigenschaft zu FirstToolWindowControl
-Über die Ereignishandler für die Symbolleistensteuerelemente muss Der Code auf das Media Player-Steuerelement zugreifen können, das ein untergeordnetes Element der FirstToolWindowControl-Klasse ist.
+## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Hinzufügen einer Media Player-Eigenschaft zu firsttoolwindowcontrol
+In den Ereignis Handlern für die Symbolleisten-Steuerelemente muss Ihr Code auf das Media Player-Steuerelement zugreifen können, das ein untergeordnetes Element der firsttoolwindowcontrol-Klasse ist.
 
-Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf *FirstToolWindowControl.xaml*, klicken Sie auf **Code anzeigen**, und fügen Sie den folgenden Code zur FirstToolWindowControl-Klasse hinzu.
+Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf *firsttoolwindowcontrol. XAML*, klicken Sie auf **Code anzeigen**, und fügen Sie der firsttoolwindowcontrol-Klasse den folgenden Code hinzu.
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -138,10 +138,10 @@ public System.Windows.Controls.MediaElement MediaPlayer
 }
 ```
 
-## <a name="instantiate-the-tool-window-and-toolbar"></a>Instanziieren des Werkzeugfensters und der Symbolleiste
-Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld **Datei** öffnen aufruft und die ausgewählte Mediendatei wiedergibt.
+## <a name="instantiate-the-tool-window-and-toolbar"></a>Instanziieren des Tool Fensters und der Symbolleiste
+Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld " **Datei öffnen** " aufruft und die ausgewählte Mediendatei wieder gibt.
 
-1. Öffnen *Sie FirstToolWindow.cs,* und fügen Sie die folgenden `using` Direktiven hinzu:
+1. Öffnen Sie *FirstToolWindow.cs* , und fügen Sie die folgenden `using` Anweisungen hinzu:
 
     ```csharp
     using System.ComponentModel.Design;
@@ -149,20 +149,20 @@ Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld **D
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-2. Fügen Sie innerhalb der FirstToolWindow-Klasse einen öffentlichen Verweis auf das FirstToolWindowControl-Steuerelement hinzu.
+2. Fügen Sie in der firsttoolwindow-Klasse einen öffentlichen Verweis auf das firsttoolwindowcontrol-Steuerelement hinzu.
 
     ```csharp
     public FirstToolWindowControl control;
     ```
 
-3. Legen Sie diese Steuerelementvariable am Ende des Konstruktors auf das neu erstellte Steuerelement fest.
+3. Legen Sie diese Steuerelement Variable am Ende des Konstruktors auf das neu erstellte Steuerelement fest.
 
     ```csharp
     control = new FirstToolWindowControl();
     base.Content = control;
     ```
 
-4. Instanziieren Sie die Symbolleiste im Konstruktor.
+4. Instanziieren Sie die Symbolleiste innerhalb des Konstruktors.
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(FirstToolWindowCommand.guidFirstToolWindowPackageCmdSet),
@@ -170,7 +170,7 @@ Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld **D
     this.ToolBarLocation = (int)VSTWT_LOCATION.VSTWT_TOP;
     ```
 
-5. An dieser Stelle sollte der FirstToolWindow-Konstruktor wie folgt aussehen:
+5. An diesem Punkt sollte der firsttoolwindow-Konstruktor wie folgt aussehen:
 
     ```csharp
     public FirstToolWindow() : base(null)
@@ -186,13 +186,13 @@ Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld **D
     }
     ```
 
-6. Fügen Sie den Menübefehl zur Symbolleiste hinzu. Fügen Sie in der FirstToolWindowCommand.cs-Klasse die folgende Direktive hinzu:
+6. Fügen Sie der Symbolleiste den Menübefehl hinzu. Fügen Sie in der FirstToolWindowCommand.cs-Klasse die folgende using-Direktive hinzu:
 
     ```csharp
     using System.Windows.Forms;
     ```
 
-7. Fügen Sie in der FirstToolWindowCommand-Klasse den folgenden Code am Ende der ShowToolWindow()-Methode hinzu. Der ButtonHandler-Befehl wird im nächsten Abschnitt implementiert.
+7. Fügen Sie in der firsttoolwindowcommand-Klasse am Ende der ShowToolWindow ()-Methode den folgenden Code hinzu. Der ButtonHandler-Befehl wird im nächsten Abschnitt implementiert.
 
     ```csharp
     // Create the handles for the toolbar command.
@@ -204,17 +204,17 @@ Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld **D
     mcs.AddCommand(menuItem);
     ```
 
-### <a name="to-implement-a-menu-command-in-the-tool-window"></a>So implementieren Sie einen Menübefehl im Toolfenster
+### <a name="to-implement-a-menu-command-in-the-tool-window"></a>So implementieren Sie einen Menübefehl im Tool Fenster
 
-1. Fügen Sie in der FirstToolWindowCommand-Klasse eine ButtonHandler-Methode hinzu, die das Dialogfeld **Datei öffnen** aufruft. Wenn eine Datei ausgewählt wurde, wird die Mediendatei wiedergegeben.
+1. Fügen Sie in der firsttoolwindowcommand-Klasse eine ButtonHandler-Methode hinzu, die das Dialogfeld " **Datei öffnen** " aufruft. Wenn eine Datei ausgewählt wurde, wird die Mediendatei wiedergegeben.
 
-2. Fügen Sie in der FirstToolWindowCommand-Klasse einen privaten Verweis auf das FirstToolWindow-Fenster hinzu, das in der FindToolWindow()-Methode erstellt wird.
+2. Fügen Sie in der firsttoolwindowcommand-Klasse einen privaten Verweis auf das Fenster firsttoolwindow hinzu, das in der FindToolWindow ()-Methode erstellt wird.
 
     ```csharp
     private FirstToolWindow window;
     ```
 
-3. Ändern Sie die ShowToolWindow()-Methode, um das oben definierte Fenster festzulegen (damit der ButtonHandler-Befehlshandler auf das Fenstersteuerelement zugreifen kann). Hier ist die komplette ShowToolWindow()-Methode.
+3. Ändern Sie die ShowToolWindow ()-Methode, um das Fenster festzulegen, das Sie oben definiert haben (damit der Befehls Handler für ButtonHandler auf das Fenster Steuerelement zugreifen kann. Hier ist die Complete ShowToolWindow ()-Methode.
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -237,7 +237,7 @@ Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld **D
     }
     ```
 
-4. Fügen Sie die ButtonHandler-Methode hinzu. Es erstellt einen OpenFileDialog, mit dem der Benutzer die Mediendatei angeben kann, die wiedergegeben werden soll, und dann die ausgewählte Datei wiedergibt.
+4. Fügen Sie die ButtonHandler-Methode hinzu. Es wird ein OpenFileDialog-Dialogfeld erstellt, in dem der Benutzer die wieder zugebende Mediendatei angeben kann. Anschließend wird die ausgewählte Datei wiedergegeben.
 
     ```csharp
     private void ButtonHandler(object sender, EventArgs arguments)
@@ -251,11 +251,11 @@ Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld **D
     }
     ```
 
-## <a name="set-the-default-position-for-the-tool-window"></a>Festlegen der Standardposition für das Werkzeugfenster
+## <a name="set-the-default-position-for-the-tool-window"></a>Festlegen der Standardposition für das Tool Fenster
 
-Geben Sie als Nächstes einen Standardspeicherort in der IDE für das Toolfenster an. Konfigurationsinformationen für das Toolfenster befinden sich in der *FirstToolWindowPackage.cs* Datei.
+Geben Sie als nächstes einen Standard Speicherort in der IDE für das Tool Fenster an. Konfigurationsinformationen für das Tool Fenster befinden sich in der Datei *FirstToolWindowPackage.cs* .
 
-1. Suchen *Sie*in <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> FirstToolWindowPackage.cs `FirstToolWindowPackage` das Attribut für die Klasse, die den Typ FirstToolWindow an den Konstruktor übergibt. Um eine Standardposition anzugeben, müssen Sie dem Konstruktor im folgenden Beispiel weitere Parameter hinzufügen.
+1. Suchen Sie in *FirstToolWindowPackage.cs*das- <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> Attribut in der- `FirstToolWindowPackage` Klasse, die den Typ firsttoolwindow an den-Konstruktor übergibt. Um eine Standardposition anzugeben, müssen Sie dem Konstruktor im folgenden Beispiel weitere Parameter hinzufügen.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -263,22 +263,22 @@ Geben Sie als Nächstes einen Standardspeicherort in der IDE für das Toolfenste
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    Der erste benannte Parameter `Style` `Tabbed`ist und sein Wert ist , was bedeutet, dass das Fenster eine Registerkarte in einem vorhandenen Fenster ist. Die Andockposition wird `Window` durch den Parameter, n in diesem Fall, die GUID des **Projektmappen-Explorers**angegeben.
+    Der erste benannte Parameter ist `Style` , und sein Wert ist. `Tabbed` Dies bedeutet, dass das Fenster eine Registerkarte in einem vorhandenen Fenster ist. Die Andock Position wird durch den- `Window` Parameter angegeben, in diesem Fall die GUID der **Projektmappen-Explorer**.
 
     > [!NOTE]
-    > Weitere Informationen zu den Fenstertypen in <xref:EnvDTE.vsWindowType>der IDE finden Sie unter .
+    > Weitere Informationen zu den Windows-Typen in der IDE finden Sie unter <xref:EnvDTE.vsWindowType> .
 
-## <a name="test-the-tool-window"></a>Testen des Werkzeugfensters
+## <a name="test-the-tool-window"></a>Testen des Tool Fensters
 
-1. Drücken Sie **F5,** um eine neue Instanz des experimentellen Visual Studio-Builds zu öffnen.
+1. Drücken Sie **F5** , um eine neue Instanz des experimentellen Visual Studio-Builds zu öffnen.
 
-2. Zeigen Sie im Menü **Ansicht** auf **Andere Fenster,** und klicken Sie dann auf **Erstes Toolfenster**.
+2. Zeigen Sie im Menü **Ansicht** auf **Weitere Fenster** , und klicken Sie dann auf **erstes Tool Fenster**.
 
-    Das Media Player-Toolfenster sollte an der gleichen Position wie der **Projektmappen-Explorer**geöffnet werden. Wenn es immer noch an der gleichen Position wie zuvor angezeigt wird, setzen Sie das Fensterlayout zurück (**Fenster / Fensterlayout zurücksetzen**).
+    Das Media Player-Tool Fenster sollte an derselben Position wie **Projektmappen-Explorer**geöffnet werden. Wenn Sie immer noch an derselben Position wie zuvor angezeigt wird, setzen Sie das Fenster Layout zurück (Fenster **/Fenster Layout zurücksetzen**).
 
-3. Klicken Sie im Toolfenster auf die Schaltfläche (es verfügt über das **Suchsymbol).** Wählen Sie eine unterstützte Ton- oder Videodatei aus, z. B. *C:-Windows-Media-Chimes.wav*, und drücken Sie dann **Öffnen**.
+3. Klicken Sie im Tool Fenster auf die Schaltfläche (mit dem **Such** Symbol). Wählen Sie eine unterstützte Sound-oder Videodatei aus, z. b. *c:\Windows\Media\chimes.wav*, und drücken Sie dann **Öffnen**.
 
-    Sie sollten das Glockenspiel hören.
+    Sie sollten den Glocke-Sound hören.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

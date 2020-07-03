@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anpassen der Textansicht | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Anpassen der Text Ansicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
@@ -10,36 +10,36 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d99f9201761bbe079c34ccf61339158863509dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697465"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904933"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Exemplarische Vorgehensweise: Anpassen der Textansicht
-Sie können eine Textansicht anpassen, indem Sie eine der folgenden Eigenschaften in der Editor-Format-Zuordnung ändern:
+Sie können eine Textansicht anpassen, indem Sie die folgenden Eigenschaften in der Editor-Format-Karte ändern:
 
 - Indikatorrand
 
-- Einfügungspflege
+- Einfügemarke
 
-- Pflege überschreiben
+- Caretzeichen überschreiben
 
 - Ausgewählter Text
 
-- Inaktiver markierter Text (d. h. markierter Text, der den Fokus verloren hat)
+- Inaktiver ausgewählter Text (d. h. ausgewählter Text, der den Fokus verliert)
 
-- Sichtbarer Leerraum
+- Sichtbare Leerräume
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
 
-1. Erstellen Sie ein Projekt von C-VSIX. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual C/ Erweiterbarkeit**aus, dann **VSIX-Projekt**.) Benennen Sie `ViewPropertyTest`die Lösung .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `ViewPropertyTest` .
 
-2. Fügen Sie dem Projekt eine Editor-Klassifierelementvorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editorelementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Fügen Sie dem Projekt eine Editor-Klassifizierungs Element Vorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
 3. Löschen Sie die vorhandenen Klassendateien.
 
@@ -52,23 +52,23 @@ Sie können eine Textansicht anpassen, indem Sie eine der folgenden Eigenschafte
     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]
 
-3. Deklarieren `TestViewCreationListener` Sie eine Klasse <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>mit dem Namen, die von erbt. Exportieren Sie diese Klasse mit den folgenden Attributen:
+3. Deklarieren Sie eine Klasse mit dem Namen `TestViewCreationListener` , die von erbt <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Exportieren Sie diese Klasse mit den folgenden Attributen:
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, um den Inhaltstyp anzugeben, auf den dieser Listener angewendet wird.
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, um den Inhaltstyp anzugeben, für den dieser Listener gilt.
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>, um die Rolle dieses Listeners anzugeben.
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>zum Angeben der Rolle dieses Listener.
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
 
-4. Importieren Sie in <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>dieser Klasse die .
+4. Importieren Sie in dieser Klasse <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> .
 
     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]
 
-## <a name="change-the-view-properties"></a>Ändern der Ansichtseigenschaften
+## <a name="change-the-view-properties"></a>Ändern der Ansichts Eigenschaften
 
-1. Richten Sie <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> die Methode so ein, dass die Ansichtseigenschaften beim Öffnen der Ansicht geändert werden. Um die Änderung vorzunehmen, <xref:System.Windows.ResourceDictionary> suchen Sie zuerst die, die dem Aspekt der Ansicht entspricht, die Sie suchen möchten. Ändern Sie dann die entsprechende Eigenschaft im Ressourcenwörterbuch, und legen Sie die Eigenschaften fest. Batch die Aufrufe <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> der Methode <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> durch Aufrufen der Methode, <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> bevor Sie die Eigenschaften und dann die nachdem Sie die Eigenschaften festlegen.
+1. Richten Sie die- <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Methode so ein, dass die Ansichts Eigenschaften beim Öffnen der Ansicht geändert werden. Um die Änderung vorzunehmen, suchen Sie zuerst <xref:System.Windows.ResourceDictionary> nach der, die dem Aspekt der Ansicht entspricht, die Sie suchen möchten. Ändern Sie dann die entsprechende Eigenschaft im Ressourcen Wörterbuch, und legen Sie die Eigenschaften fest. Stapeln Sie die Aufrufe der- <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> Methode, indem Sie die <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> -Methode aufrufen, bevor Sie die Eigenschaften festlegen, und dann die, <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> nachdem Sie die Eigenschaften festgelegt haben.
 
      [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
      [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
@@ -81,15 +81,15 @@ Sie können eine Textansicht anpassen, indem Sie eine der folgenden Eigenschafte
 
 2. Erstellen Sie eine Textdatei, und geben Sie Text ein.
 
-    - Die Einfügepflege sollte magenta und die überschreibende Pflege türkis sein.
+    - Die Einfügemarke muss Magenta lauten, und der über schreibungscaretzeichen sollte Türkis sein.
 
-    - Der Indikatorrand (links in der Textansicht) sollte hellgrün sein.
+    - Der Indikator Rand (Links von der Textansicht) sollte hellgrün sein.
 
-3. Wählen Sie den eingegebenen Text aus. Die Farbe des markierten Textes sollte hellrosa sein.
+3. Wählen Sie den eingegebenen Text aus. Die Farbe des ausgewählten Texts sollte hellrosa sein.
 
-4. Wenn der Text ausgewählt ist, klicken Sie auf eine beliebige Stelle außerhalb des Textfensters. Die Farbe des markierten Textes sollte dunkelrosa sein.
+4. Klicken Sie bei ausgewähltem Text auf eine beliebige Stelle außerhalb des Text Fensters. Die Farbe des ausgewählten Texts sollte dunkelrosa sein.
 
-5. Aktivieren Sie den sichtbaren Leerraum. (Zeigen Sie im Menü **Bearbeiten** auf **Erweitert,** und klicken Sie dann auf **Leerraum anzeigen**). Geben Sie einige Registerkarten in den Text ein. Rote Pfeile, die die Registerkarten darstellen, sollten angezeigt werden.
+5. Aktivieren Sie sichtbare Leerzeichen. (Zeigen Sie im Menü **Bearbeiten** auf **erweitert** , und klicken Sie dann auf **Leerraum anzeigen**). Geben Sie einige Registerkarten in den Text ein. Rote Pfeile, die die Registerkarten darstellen, sollten angezeigt werden.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Sprachdienst- und Editorerweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Siehe auch
+- [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)

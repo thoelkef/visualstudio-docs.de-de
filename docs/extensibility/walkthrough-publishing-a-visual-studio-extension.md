@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
@@ -11,16 +11,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a34260124baedeba297dbd64e8a2c1856b55ec5a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697143"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904739"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung
 
-In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie eine Visual Studio-Erweiterung im Visual Studio Marketplace veröffentlichen. Wenn Sie Ihre Erweiterung zum Marketplace hinzufügen, können Entwickler **Erweiterungen und Updates** verwenden, um nach neuen und aktualisierten Erweiterungen zu suchen.
+In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie eine Visual Studio-Erweiterung für den Visual Studio Marketplace veröffentlichen. Wenn Sie Ihre Erweiterung zum Marketplace hinzufügen, können Entwickler **Erweiterungen und Updates** verwenden, um nach neuen und aktualisierten Erweiterungen zu suchen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -28,113 +28,113 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie eine Visual Studio
 
 ## <a name="create-a-visual-studio-extension"></a>Erstellen einer Visual Studio-Erweiterung
 
-Dieser Artikel verwendet eine standardmäßige VSPackage-Erweiterung, aber die Schritte sind für jede Art von Erweiterung gültig.
+In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung verwendet, die Schritte sind jedoch für jede Art von Erweiterung gültig.
 
-1. Erstellen Sie ein VSPackage `TestPublish` mit dem Namen "C" mit einem Menübefehl. Weitere Informationen finden Sie unter [Erstellen Ihrer ersten Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
+1. Erstellen Sie ein VSPackage in c# mit `TestPublish` dem Namen, das über einen Menübefehl verfügt. Weitere Informationen finden Sie unter [Erstellen der ersten Erweiterung: Hallo Welt](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Packen der Erweiterung
 
-1. Aktualisieren Sie die Erweiterung *.vsixmanifest* mit den richtigen Informationen zu Produktname, Autor und Version.
+1. Aktualisieren Sie die Erweiterung " *. vsixmanifest* " mit den korrekten Informationen zu "Produktname", "Autor" und "Version".
 
-   ![Update-Erweiterung vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![Erweiterungs-vsixmanifest aktualisieren](media/update-extension-vsixmanifest.png)
 
-2. Erstellen Sie **Release** Ihre Erweiterung im Release-Modus. Jetzt wird Ihre Erweiterung als VSIX im Ordner .bin-Release verpackt.
+2. Erstellen Sie die Erweiterung im **Releasemodus** . Nun wird Ihre Erweiterung als VSIX im Ordner "\bin\release" verpackt.
 
-3. Sie können auf den VSIX doppelklicken, um die Installation zu überprüfen.
+3. Sie können auf die VSIX doppelklicken, um die Installation zu überprüfen.
 
 ## <a name="test-the-extension"></a>Testen der Erweiterung
 
- Bevor Sie die Erweiterung verteilen, erstellen und testen Sie sie, um sicherzustellen, dass sie in der experimentellen Instanz von Visual Studio ordnungsgemäß installiert ist.
+ Bevor Sie die Erweiterung verteilen, erstellen und testen Sie Sie, um sicherzustellen, dass Sie ordnungsgemäß in der experimentellen Instanz von Visual Studio installiert ist.
 
-1. Starten Sie in Visual Studio mit dem Debuggen, um eine experimentelle Instanz von Visual Studio zu öffnen.
+1. Starten Sie in Visual Studio das Debuggen, um eine experimentelle Instanz von Visual Studio zu öffnen.
 
-2. Wechseln Sie in der experimentellen Instanz zum Menü **Extras,** und klicken Sie auf **Erweiterungen und Updates**. Die TestPublish-Erweiterung sollte im mittleren Bereich angezeigt und aktiviert sein.
+2. Wechseln Sie **in der experimentellen Instanz zum Menü Extras** , und klicken Sie dann auf **Erweiterungen und Updates**. Die Erweiterung testpublish sollte im mittleren Bereich angezeigt und aktiviert werden.
 
-3. Stellen Sie im Menü **Extras** sicher, dass der Testbefehl angezeigt wird.
+3. Vergewissern Sie sich, dass **im Menü Extras der Befehl** Test angezeigt wird.
 
-## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Veröffentlichen der Erweiterung im Visual Studio Marketplace
+## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Veröffentlichen Sie die Erweiterung auf dem Visual Studio Marketplace
 
-1. Stellen Sie sicher, dass Sie die Release-Version Ihrer Erweiterung erstellt haben und dass sie auf dem neuesten Stand ist.
+1. Stellen Sie sicher, dass Sie die Releaseversion ihrer Erweiterung erstellt haben und auf dem neuesten Stand sind.
 
-2. Öffnen Sie in einem Webbrowser die [Visual Studio Marketplace-Website.](https://marketplace.visualstudio.com/vs)
+2. Öffnen Sie in einem Webbrowser die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Website.
 
-3. Klicken Sie in der oberen rechten Ecke auf **Anmelden .**
+3. Klicken Sie in der oberen rechten Ecke auf **Anmelden**.
 
-4. Melden Sie sich mit dem Microsoft-Konto an. Wenn Sie kein Microsoft-Konto haben, können Sie an dieser Stelle eines erstellen.
+4. Melden Sie sich mit dem Microsoft-Konto an. Wenn Sie keine Microsoft-Konto haben, können Sie an dieser Stelle eine erstellen.
 
-5. Klicken Sie auf **Erweiterungen veröffentlichen**.  Mit dieser Option gelangen Sie zur Seite Verwalten für alle Erweiterungen. Wenn Sie kein Publisher-Konto haben, werden Sie zu diesem Zeitpunkt aufgefordert, eines zu erstellen.
+5. Klicken Sie auf **Erweiterungen veröffentlichen**.  Mit dieser Option gelangen Sie zur Seite verwalten für alle Ihre Erweiterungen. Wenn Sie über kein Herausgeber Konto verfügen, werden Sie aufgefordert, das Konto zu diesem Zeitpunkt zu erstellen.
 
-   ![Hochladen in den Marketplace](media/upload-to-marketplace.png)
+   ![In Marketplace hochladen](media/upload-to-marketplace.png)
 
-6. Wählen Sie den Herausgeber aus, den Sie zum Hochladen Ihrer Erweiterung verwenden möchten. Sie können Herausgeber ändern, indem Sie auf die auf der linken Seite aufgeführten Herausgebernamen klicken. Klicken Sie auf **Neue Erweiterung** und wählen Sie **Visual Studio**.
+6. Wählen Sie den Verleger aus, den Sie zum Hochladen der Erweiterung verwenden möchten. Sie können den Verleger ändern, indem Sie auf die auf der linken Seite aufgeführten Verleger Namen klicken. Klicken Sie auf **neue Erweiterung** , und wählen Sie **Visual Studio**aus.
 
-7. In **1: Upload-Erweiterung**können Sie eine VSIX-Datei direkt in Visual Studio Marketplace hochladen oder einfach einen Link zu Ihrer eigenen Website hinzufügen. In diesem Beispiel wird die Erweiterung *TestPublish.vsix* hochgeladen. Ziehen Sie Ihre Erweiterung per Drag & Drop oder verwenden Sie den **Klicklink,** um nach der Datei zu suchen. Suchen Sie Ihre Erweiterung im Ordner "bin-Release" des Projekts.  Klicken Sie auf **Weiter**.
+7. In **1: Hochladen der Erweiterung**können Sie auswählen, dass Sie eine VSIX-Datei direkt in Visual Studio Marketplace hochladen oder einfach einen Link zu ihrer eigenen Website hinzufügen. In diesem Beispiel wird die Erweiterung *testpublish. vsix* hochgeladen. Ziehen Sie die Erweiterung per Drag & Drop, oder **Klicken Sie** auf den Link klicken, um die Datei zu suchen. Suchen Sie die Erweiterung im Ordner "\bin\release" des Projekts.  Klicken Sie auf **Continue**(Weiter).
 
-8. In **2: Geben Sie Erweiterungsdetails**an, einige Felder werden automatisch aus der *Datei source.extension.vsixmanifest* aus Ihrer Erweiterung aufgefüllt. Weitere Informationen zu den folgenden Finden Sie unter:
+8. In **2: Geben Sie Erweiterungs Details**an. einige Felder werden automatisch aus der Datei " *Source. Extension. vsixmanifest* " aus der Erweiterung aufgefüllt. Weitere Details finden Sie unten:
 
-    * **Interner Name** wird in der URL der Detailseite der Erweiterung verwendet. Beispielsweise führt das Veröffentlichen einer Erweiterung unter dem Herausgebernamen "myname" und das Angeben des internen Namens "meine Erweiterung" zu einer URL von "marketplace.visualstudio\.com/items?itemName=myname.myextension" für die Detailseite Ihrer Erweiterung.
+    * Der **interne Name** wird in der URL der Detailseite der Erweiterung verwendet. Beispiel: Wenn Sie eine Erweiterung unter dem Verleger Namen "myname" veröffentlichen und den internen Namen als "meine Erweiterung" angeben, ergibt sich die URL "marketplace. VisualStudio \. com/Items? ItemName = myname. MyExtension" für die Detailseite ihrer Erweiterung.
 
-    * **Anzeigename** Ihrer Erweiterung. Dieser Name wird automatisch aus der Datei *source.extension.vsixmanifest* aufgefüllt.
+    * **Anzeige Name** der Erweiterung. Dieser Name wird automatisch aus der Datei " *Source. Extension. vsixmanifest* " aufgefüllt.
 
-    * **Versionsnummer** der Erweiterung, die Sie hochladen. Diese Version wird automatisch aus der Datei *source.extension.vsixmanifest* aufgefüllt.
+    * **Versions** Nummer der Erweiterung, die Sie hochladen. Diese Version wird automatisch aus der Datei " *Source. Extension. vsixmanifest* " aufgefüllt.
 
-    * **VSIX-ID** ist der eindeutige Bezeichner, den Visual Studio für Ihre Erweiterung verwendet. Dieser Bezeichner ist erforderlich, wenn Sie Ihre Erweiterung automatisch aktualisieren möchten. Dieser Bezeichner wird automatisch aus der Datei *source.extension.vsixmanifest* aufgefüllt.
+    * **VSIX-ID** ist der eindeutige Bezeichner, der von Visual Studio für die Erweiterung verwendet wird. Dieser Bezeichner ist erforderlich, wenn Sie möchten, dass die Erweiterung automatisch aktualisiert wird. Dieser Bezeichner wird automatisch aus der Datei " *Source. Extension. vsixmanifest* " aufgefüllt.
 
-    * **Logo,** das für Ihre Erweiterung verwendet wird. Dieses Logo wird automatisch aus der Datei *source.extension.vsixmanifest* aufgefüllt, sofern angegeben.
+    * **Logo** , das für die Erweiterung verwendet wird. Dieses Logo wird automatisch aus der Datei " *Source. Extension. vsixmanifest* ", sofern angegeben, aufgefüllt.
 
-    * **Kurze Beschreibung,** was Ihre Erweiterung tut. Diese Beschreibung wird automatisch aus der Datei *source.extension.vsixmanifest* aufgefüllt.
+    * **Kurze Beschreibung** der Funktionsweise der Erweiterung. Diese Beschreibung wird automatisch aus der Datei " *Source. Extension. vsixmanifest* " aufgefüllt.
 
-    * **Übersicht** ist ein guter Ort, um Screenshots und detaillierte Informationen darüber, was Ihre Erweiterung tut.
+    * **Übersicht** ist ein guter Ort, um Screenshots und ausführliche Informationen zu den Funktionen ihrer Erweiterung einzuschließen.
 
-    * **Mit unterstützten Visual Studio-Versionen** können Sie auswählen, an welchen Versionen von Visual Studio Ihre Erweiterung arbeiten soll. Ihre Erweiterung wird nur in diesen Versionen installiert.
+    * **Unterstützte Visual Studio-Versionen** ermöglicht Ihnen die Auswahl der Versionen von Visual Studio, in denen Ihre Erweiterung funktioniert. Die Erweiterung wird nur für diese Versionen installiert.
 
-    * **Unterstützte Visual Studio-Edition enkt mit der Auswahl der Editionen von Visual Studio, an denen Ihre Erweiterung funktioniert. Ihre Erweiterung wird nur für diese Editionen installiert.
+    * * * Die unterstützte Visual Studio-Edition ermöglicht Ihnen die Auswahl der Editionen von Visual Studio, in denen Ihre Erweiterung funktioniert. Die Erweiterung wird nur für diese Editionen installiert.
 
-    * **Typ**. Die häufigste Art von Erweiterungen sind **Tools**.
+    * **Typ**. Die gängigsten Typen von Erweiterungen sind **Tools**.
 
-    * **Kategorien**. Holen Sie sich bis zu drei, die am besten für Ihre Erweiterung passen.
+    * **Kategorien**. Wählen Sie bis zu drei aus, die für Ihre Erweiterung am besten geeignet sind.
 
-    * **Tags** sind Schlüsselwörter, die Benutzern helfen, Ihre Erweiterung zu finden. Tags können dazu beitragen, die Suchrelevanz Ihrer Erweiterungen im Marketplace zu erhöhen.
+    * **Tags** sind Schlüsselwörter, die Benutzer beim Auffinden Ihrer Erweiterung unterstützen. Mithilfe von Tags können Sie die Such Relevanz Ihrer Erweiterungen im Marketplace steigern.
 
-    * **Die Preiskategorie** ist der Preis für Ihre Erweiterung.
+    * **Kategorie Preise** sind die Kosten ihrer Erweiterung.
 
-    * Mit dem **Quellcode-Repository** können Sie einen Link zu Ihrem Quellcode für die Community freigeben.
+    * Mit dem **Quellcoderepository** können Sie einen Link zu Ihrem Quellcode mit der Community freigeben.
 
-    * **Lassen Sie Q&A für Ihre Erweiterung** zulassen, können Benutzer Fragen auf Ihrer Erweiterungseingabeseite hinterlassen.
+    * **Wenn Sie Q&A für Ihre Erweiterung zulassen** , können Benutzer auf der Erweiterungs Eintrags Seite Fragen hinterlassen.
 
-9. Klicken Sie auf **Speichern & Hochladen**. Mit dieser Option gelangen Sie zurück zu Ihrer Publisher-Verwaltungsseite. Ihre Erweiterung wurde noch nicht veröffentlicht. Um Ihre Erweiterung zu veröffentlichen, klicken Sie mit der rechten Maustaste auf Ihre Erweiterung und wählen **Sie Öffentlich machen**. Sie können anzeigen, wie Ihre Erweiterung auf Marketplace aussehen wird, indem Sie **Erweiterung anzeigen**auswählen. Für Akquisitionsnummern klicken Sie auf **Berichte**. Um Änderungen an Ihrer Erweiterung vorzunehmen, klicken Sie auf **Bearbeiten**.
+9. Klicken Sie auf **speichern & hochladen**. Mit dieser Option gelangen Sie zurück zur Seite für die Verwaltung des Verlegers. Ihre Erweiterung wurde noch nicht veröffentlicht. Um die Erweiterung zu veröffentlichen, klicken Sie mit der rechten Maustaste auf die Erweiterung, und wählen Sie **dann**veröffentlichen aus. Durch Auswahl von **Erweiterung anzeigen**können Sie anzeigen, wie Ihre Erweiterung im Marketplace aussehen soll. Klicken Sie für Erwerbs Nummern auf **Berichte**. Wenn Sie Änderungen an der Erweiterung vornehmen möchten, klicken Sie auf **Bearbeiten**.
 
-   ![Erweiterungseintragsmenü](media/extension-entry-menu.png)
+   ![Erweiterungs Eingabe Menü](media/extension-entry-menu.png)
 
-10. Nachdem Sie auf **"Öffentlich erstellen"** geklickt haben, ist Ihre Erweiterung nun öffentlich. Durchsuchen Sie den Visual Studio Marketplace nach Ihrer Erweiterung.
+10. Nachdem Sie auf " **öffentlich machen**" geklickt haben, ist die Erweiterung jetzt öffentlich. Durchsuchen Sie die Visual Studio Marketplace nach ihrer Erweiterung.
 
-## <a name="add-additional-users-to-manage-your-publisher-account"></a>Hinzufügen zusätzlicher Benutzer zum Verwalten Ihres Publisher-Kontos
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Hinzufügen zusätzlicher Benutzer zum Verwalten Ihres Herausgeber Kontos
 
-Marketplace unterstützt das Gewähren zusätzlicher Benutzerberechtigungen für den Zugriff auf und die Verwaltung eines Publisher-Kontos.
+Marketplace unterstützt das erteilen zusätzlicher Benutzerberechtigungen für den Zugriff auf und die Verwaltung eines Verleger Kontos.
 
-1. Navigieren Sie zu dem Publisher-Konto, dem Sie weitere Benutzer hinzufügen möchten.
+1. Navigieren Sie zu dem Verleger Konto, dem Sie weitere Benutzer hinzufügen möchten.
 
-2. Wählen Sie **Mitglieder** aus und klicken Sie auf **Hinzufügen**.
+2. Wählen Sie **Mitglieder** aus, und klicken Sie auf **Hinzufügen**.
 
-   ![Hinzufügen von zusätzlichen Benutzern](media/add-users.png)
+   ![Zusätzlichen Benutzer hinzufügen](media/add-users.png)
 
-3. Sie können dann die E-Mail-Adresse des Benutzers angeben, den Sie hinzufügen möchten, und die richtige Zugriffsebene unter **Rolle auswählen**angeben.  Sie können zwischen folgenden Optionen wählen:
+3. Sie können dann die e-Mail-Adresse des Benutzers angeben, den Sie hinzufügen möchten, und unter **Rolle auswählen**die richtige Zugriffsebene erteilen.  Sie können zwischen folgenden Optionen wählen:
 
-   * **Ersteller**: Der Benutzer kann Erweiterungen veröffentlichen, aber keine von anderen Benutzern veröffentlichten Erweiterungen anzeigen oder verwalten.
+   * **Ersteller**: der Benutzer kann Erweiterungen veröffentlichen, aber keine von anderen Benutzern veröffentlichten Erweiterungen anzeigen oder verwalten.
 
-   * **Reader**: Der Benutzer kann Erweiterungen anzeigen, aber keine Erweiterungen veröffentlichen oder verwalten.
+   * **Reader**: der Benutzer kann Erweiterungen anzeigen, aber keine Erweiterungen veröffentlichen oder verwalten.
 
-   * **Mitwirkender**: Der Benutzer kann Erweiterungen veröffentlichen und verwalten, aber keine Herausgebereinstellungen bearbeiten oder den Zugriff verwalten.
+   * **Mitwirkender**: der Benutzer kann Erweiterungen veröffentlichen und verwalten, aber keine Verleger Einstellungen bearbeiten oder den Zugriff verwalten.
 
-   * **Besitzer**: Der Benutzer kann Erweiterungen veröffentlichen und verwalten, Herausgebereinstellungen bearbeiten und den Zugriff verwalten.
+   * **Besitzer**: der Benutzer kann Erweiterungen veröffentlichen und verwalten, Herausgeber Einstellungen bearbeiten und den Zugriff verwalten.
 
-## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installieren der Erweiterung aus dem Visual Studio Marketplace
+## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installieren Sie die Erweiterung aus der Visual Studio Marketplace
 
-Nachdem die Erweiterung veröffentlicht wurde, installieren Sie sie in Visual Studio und testen Sie sie dort.
+Nachdem die Erweiterung veröffentlicht wurde, installieren Sie Sie in Visual Studio und testen Sie dort.
 
-1. Klicken Sie in Visual Studio im Menü **Extras** auf **Erweiterungen und Updates**.
+1. Klicken Sie in Visual Studio im **Menü Extras** auf **Erweiterungen und Updates**.
 
-2. Klicken Sie auf **Online,** und suchen Sie dann nach **TestPublish**.
+2. Klicken Sie auf **Online** , und suchen Sie nach **testpublish**.
 
 3. Klicken Sie auf **Download**. Die Erweiterung wird dann für die Installation geplant.
 
@@ -144,18 +144,18 @@ Nachdem die Erweiterung veröffentlicht wurde, installieren Sie sie in Visual St
 
 Sie können die Erweiterung aus dem Visual Studio Marketplace und von Ihrem Computer entfernen.
 
-### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>So entfernen Sie die Erweiterung aus dem Visual Studio Marketplace
+### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>So entfernen Sie die Erweiterung aus der Visual Studio Marketplace
 
-1. Öffnen Sie die [Visual Studio Marketplace-Website.](https://marketplace.visualstudio.com/vs)
+1. Öffnen Sie die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Website.
 
-2. Klicken Sie in der oberen rechten Ecke auf Erweiterungen **veröffentlichen.** Wählen Sie den Herausgeber aus, den Sie zum Veröffentlichen von **TestPublish**verwendet haben. Die Auflistung für **TestPublish** wird angezeigt.
+2. Klicken Sie in der oberen rechten Ecke auf Erweiterungen **veröffentlichen** . Wählen Sie den Verleger aus, den Sie zum Veröffentlichen von **testpublish**verwendet haben. Die Auflistung für **testpublish** wird angezeigt.
 
-3. Klicken Sie mit der rechten Maustaste auf den Erweiterungseintrag und klicken Sie auf **Entfernen**. Sie werden aufgefordert zu bestätigen, ob Sie die Erweiterung entfernen möchten. Klicken Sie auf **OK**.
+3. Klicken Sie mit der rechten Maustaste auf den Erweiterungs Eintrag und dann auf **Entfernen**. Sie werden aufgefordert zu bestätigen, dass Sie die Erweiterung entfernen möchten. Klicken Sie auf **OK**.
 
-### <a name="to-remove-the-extension-from-your-computer"></a>So entfernen Sie die Erweiterung von Ihrem Computer
+### <a name="to-remove-the-extension-from-your-computer"></a>So entfernen Sie die Erweiterung auf dem Computer
 
-1. Klicken Sie in Visual Studio im Menü **Extras** auf **Erweiterungen und Updates**.
+1. Klicken Sie in Visual Studio im **Menü Extras** auf **Erweiterungen und Updates**.
 
-2. Wählen Sie **TestPublish** aus, und klicken Sie dann auf **Deinstallieren**. Die Erweiterung wird dann für die Deinstallation geplant.
+2. Wählen Sie **testpublish** aus, und klicken Sie auf **deinstallieren** Die Erweiterung wird dann für die Deinstallation geplant.
 
-3. Schließen Sie alle Instanzen von Visual Studio, um die Deinstallation abzuschließen.
+3. Schließen Sie alle Instanzen von Visual Studio, um die Installation abzuschließen.
