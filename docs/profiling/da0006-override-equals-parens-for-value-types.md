@@ -1,7 +1,7 @@
 ---
 title: 'DA0006: Equals() für Werttypen überschreiben | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
@@ -14,21 +14,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4309b1a38e99cda262bf7558f050754656419e88
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779531"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520821"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Equals() für Werttypen überschreiben
 
-|||
+|Element|Wert|
 |-|-|
 |Regel-ID|DA0006|
 |Kategorie|.NET Framework-Verwendung|
-|Profilerstellungsmethoden|Stichproben|
-|Nachricht|Equals und Gleichheitsoperator für Werttypen überschreiben|
+|Profilerstellungsmethoden|Sampling|
+|Meldung|Equals und Gleichheitsoperator für Werttypen überschreiben|
 |Nachrichtentyp|Warnung|
 
 ## <a name="cause"></a>Ursache
@@ -40,4 +40,4 @@ ms.locfileid: "74779531"
  Weitere Informationen zum Überschreiben von Equals und Gleichheitsoperatoren finden Sie unter [Guidelines for Implementing Equals and the Equality Operator (==) (Richtlinien für die Implementierung von Equals und Gleichheitsoperator (==))](/dotnet/standard/design-guidelines/equality-operators).
 
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise zur Überprüfung einer Warnung
- Ein Beispiel für die Implementierung von Equals und Gleichheitsoperatoren finden Sie in der Regel für die Codeanalyse [CA1815: Equals und Gleichheitsoperator für Werttypen überschreiben](../code-quality/ca1815.md).
+ Ein Beispiel für die Implementierung von Equals und Gleichheitsoperatoren finden Sie in der Regel für die Codeanalyse [CA1815: Override equals and operator equals on value types (CA1815: Equals und Gleichheitsoperator für Werttypen überschreiben)](../code-quality/ca1815.md).

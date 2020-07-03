@@ -1,19 +1,19 @@
 ---
 title: Untersuchen Ihrer App mit verlaufsbezogenem Debuggen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848217"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350445"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Untersuchen der App mit verlaufsbezogenem Debuggen (C#, Visual Basic, C++)
 
@@ -61,7 +61,7 @@ Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von
 
 4. Öffnen Sie das Fenster **Diagnosetools** (**Debuggen > Diagnosetools anzeigen**). Das Code-Fenster sieht wie folgt aus:
 
-    ![Codefenster am Haltepunkt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
+    ![Codefenster am Breakpoint](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
 
 5. Neben dem linken Rand sollte ein doppelter Pfeil angezeigt werden, genau über dem Haltepunkt. Dieser Bereich wird als Navigationsbundsteg bezeichnet und dient zum verlaufsbezogenen Debuggen. Klicken Sie auf den Pfeil.
 
@@ -69,7 +69,7 @@ Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von
 
     Das Codefenster sieht nun folgendermaßen aus:
 
-    ![Codefenster im verlaufsbezogenen Debugmodus](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
+    ![Codefenster im verlaufsbezogenen Debuggingmodus](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
 
 6. Jetzt können Sie per Einzelschritt auf die `AddAll()`-Methode zugreifen (**F11** oder die **Einzelschritt**-Schaltfläche auf dem Navigationsbundsteg). Gehen Sie mit **F10** oder mit **Zum nächsten Aufruf wechseln** im Navigationsbundsteg schrittweise vorwärts. Die rosa Linie befindet sich jetzt in der `j = AddInt(j);`-Zeile. Durch Drücken von **F10** gelangen Sie in diesem Fall nicht in die nächste Codezeile. Stattdessen fährt es mit dem nächsten Funktionsaufruf fort. Das verlaufsbezogene Debugging navigiert von Aufruf zu Aufruf, und überspringt Codezeilen, die nicht in einem Funktionsaufruf enthalten sind.
 

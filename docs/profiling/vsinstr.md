@@ -1,7 +1,7 @@
 ---
 title: VSInstr | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - performance tools, instrumentation
 - instrumentation, VSInstr tool
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e51a8bd82a4bd79309dfe2a055c44d986e94c4
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760149"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330507"
 ---
 # <a name="vsinstr"></a>VSInstr
 Das VSInstr-Tool wird zum Instrumentieren von Binärdateien verwendet. Es wird mithilfe der folgenden Syntax aufgerufen:
@@ -40,8 +40,8 @@ VSInstr [/U] filename [/options]
 |**U**|Schreibt die umgeleitete Konsolenausgabe als Unicode. Dabei muss es sich um die erste angegebene Option handeln.|
 |`@filename`|Gibt den Namen einer Antwortdatei an, die eine Befehlsoption pro Zeile enthält.  Verwenden Sie keine Anführungszeichen.|
 |**OutputPath** `:path`|Gibt ein Zielverzeichnis für das instrumentierte Image an. Wenn kein Ausgabepfad angegeben wird, wird die ursprüngliche Binärdatei umbenannt, indem „Orig“ an den Dateinamen im gleichen Verzeichnis angefügt wird, und es wird eine Kopie der Binärdatei instrumentiert.|
-|**Exclude:** `funcspec`|Gibt eine Funktionsspezifikation zum Ausschließen von der Instrumentierung durch Überprüfungen an. Dies ist hilfreich, wenn die Profilerstellung zum Einfügen der Überprüfung in einer Funktion unvorhersehbare oder unerwünschte Ergebnisse verursacht.<br /><br /> Verwenden Sie keine **Exclude**- und **Include**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Exclude**-Optionen angeben.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [Namespace\<Trennzeichen1>] [Klasse\<Trennzeichen2>]Funktion<br /><br /> \<Trennzeichen1 > ist `::` für nativen Code und `.` für verwalteten Code.<br /><br /> \<Trennzeichen2> ist immer `::`<br /><br /> **Exclude** wird mit Code Coverage unterstützt.<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace auszuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|
-|**Include:** `funcspec`|Gibt eine Funktionsspezifikation in einer Binärdatei an, um mit Überprüfungen zu instrumentieren. Alle anderen Funktionen in den Binärdateien werden nicht instrumentiert.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Include**-Optionen angeben.<br /><br /> Verwenden Sie keine **Include**- und **Exclude**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> **Include** wird mit Code Coverage nicht unterstützt.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [Namespace\<Trennzeichen1>] [Klasse\<Trennzeichen2>]Funktion<br /><br /> \<Trennzeichen1 > ist `::` für nativen Code und `.` für verwalteten Code.<br /><br /> \<Trennzeichen2> ist immer `::`<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace einzuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|
+|**Exclude:** `funcspec`|Gibt eine Funktionsspezifikation zum Ausschließen von der Instrumentierung durch Überprüfungen an. Dies ist hilfreich, wenn die Profilerstellung zum Einfügen der Überprüfung in einer Funktion unvorhersehbare oder unerwünschte Ergebnisse verursacht.<br /><br /> Verwenden Sie keine **Exclude**- und **Include**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Exclude**-Optionen angeben.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1> entspricht bei nativem Code `::` und bei verwaltetem Code `.`.<br /><br /> \<separator2> entspricht immer `::`.<br /><br /> **Exclude** wird mit Code Coverage unterstützt.<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace auszuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|
+|**Include:** `funcspec`|Gibt eine Funktionsspezifikation in einer Binärdatei an, um mit Überprüfungen zu instrumentieren. Alle anderen Funktionen in den Binärdateien werden nicht instrumentiert.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Include**-Optionen angeben.<br /><br /> Verwenden Sie keine **Include**- und **Exclude**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> **Include** wird mit Code Coverage nicht unterstützt.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1> entspricht bei nativem Code `::` und bei verwaltetem Code `.`.<br /><br /> \<separator2> entspricht immer `::`.<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace einzuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|
 |**DumpFuncs**|Listet die Funktionen innerhalb des angegebenen Images auf. Es wird keine Instrumentierung durchgeführt.|
 |**ExcludeSmallFuncs**|Schließt kleine Funktionen, also kurze Funktionen, die keine Funktionsaufrufe ausführen, aus der Instrumentierung aus. Die Option **ExcludeSmallFuncs** bietet bei weniger Instrumentierungsoverhead eine daher verbesserte Instrumentierungsgeschwindigkeit.<br /><br /> Der Ausschluss kleiner Funktionen reduziert auch die Größe der *VSP-Datei* und den Zeitaufwand für die Analyse.|
 |**Mark:** {**Before**\|**After**\|**Top**\|**Bottom**}`,funcname,markid`|Fügt eine Profilmarkierung (ein Bezeichner, der zum Einschränken der Daten in Berichten verwendet wird) ein, die Sie zum Identifizieren des Beginns oder des Endes eines Datenbereichs in der VSP-Berichtsdatei verwenden können.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion<br /><br /> `Markid`: Eine positive ganze Zahl (lang), die als Bezeichner der Profilmarkierung verwendet werden soll.|

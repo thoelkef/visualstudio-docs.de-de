@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Debuggen im gemischten Modus | Microsoft-Dokumentation'
 ms.date: 11/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894377"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350107"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Vorgehensweise: Debuggen im gemischten Modus (C#, C++, Visual Basic)
 
@@ -43,7 +43,7 @@ Wenn Sie keinen Zugriff auf das Projekt einer aufrufenden App haben, können Sie
 
 1. Wählen Sie in **Projektmappen-Explorer** das C++-Projekt aus, klicken Sie auf das Symbol **Eigenschaften**, und drücken Sie **ALT**+**EINGABETASTE**, oder klicken Sie mit der rechten Maustaste, und wählen Sie **Eigenschaften** aus.
 
-1. Erweitern Sie im Dialogfeld **\<Projekt>-Eigenschaftenseiten** den Knoten **Konfigurationseigenschaften**, und wählen Sie dann **Debuggen** aus.
+1. Erweitern Sie im Dialogfeld **\<Project>-Eigenschaftenseiten** den Knoten **Konfigurationseigenschaften**, und wählen Sie dann **Debugging** aus.
 
 1. Legen Sie **Debuggertyp** auf **Gemischt** oder **Automatisch** fest.
 

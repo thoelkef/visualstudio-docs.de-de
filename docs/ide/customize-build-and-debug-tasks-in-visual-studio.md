@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542684"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533718"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
@@ -201,7 +201,7 @@ Dieser Abschnitt beschreibt einige der Eigenschaften, die Sie in *tasks.vs.json*
 
 Sie können Tasks für jede Datei und jeden Ordner erstellen, indem Sie den Namen der Datei bzw. des Ordners im Feld `appliesTo` angeben. Beispiel: `"appliesTo": "hello.js"`. Die folgenden Dateimasken können als Werte verwendet werden:
 
-|||
+|Dateimaske|Beschreibung|
 |-|-|
 |`"*"`| Der Task ist für alle Dateien und Ordner im Arbeitsbereich verfügbar.|
 |`"*/"`| Der Task ist für alle Ordner im Arbeitsbereich verfügbar.|
@@ -213,7 +213,7 @@ Sie können Tasks für jede Datei und jeden Ordner erstellen, indem Sie den Name
 
 #### <a name="macros-for-tasksvsjson"></a>Makros für „tasks.vs.json“
 
-|||
+|Makro|Beschreibung|
 |-|-|
 |`${env.<VARIABLE>}`| Gibt jede Umgebungsvariable an (z.B. ${env.PATH}, ${env.COMSPEC} usw.), die für die Developer-Eingabeaufforderung festgelegt ist. Weitere Informationen finden Sie unter [Developer-Eingabeaufforderung für Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
 |`${workspaceRoot}`| Der vollständige Pfad zum Arbeitsbereichsordner (z.B. *C:\sources\hello*).|

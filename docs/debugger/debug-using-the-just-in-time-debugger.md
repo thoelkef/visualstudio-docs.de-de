@@ -1,7 +1,7 @@
 ---
 title: Debuggen mit dem Just-In-Time-Debugger | Microsoft-Dokumentation
 ms.date: 09/24/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188669"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350575"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen mit dem Just-In-Time-Debugger in Visual Studio
 
@@ -79,7 +79,7 @@ Standardmäßig verfügen Windows Forms-Apps über einen Ausnahmehandler der obe
 
 Um statt der standardmäßigen Windows Forms-Fehlerbehandlung Just-In-Time-Debuggen zu aktivieren, fügen Sie diese Einstellungen hinzu:
 
-- Legen Sie im Abschnitt `system.windows.forms` der Datei *machine.config* oder *\<App-Name>.exe.config* den Wert `jitDebugging` auf `true` fest:
+- Legen Sie im Abschnitt `system.windows.forms` der Datei *machine.config* oder *\<app name>.exe.config* den Wert `jitDebugging` auf `true` fest:
 
     ```xml
     <configuration>
@@ -134,7 +134,7 @@ In diesem Beispiel erstellen Sie in Visual Studio eine C#-Konsolen-App, die eine
 
    ![Just-In-Time-Debugger – Dialogfeld](../debugger/media/justintimedialog.png "Just-In-Time-Debugger – Dialogfeld")
 
-   Wählen Sie unter **Available Debuggers** (Verfügbare Debugger) die Option **Neue Instanz von \<Ihre bevorzugte Visual Studio-Version/Edition >** aus, sofern diese nicht bereits ausgewählt ist.
+   Wählen Sie unter **Verfügbare Debugger** die Option **Neue Instanz von \<your preferred Visual Studio version/edition>** aus, sofern diese noch nicht ausgewählt war.
 
 1. Klicken Sie auf **OK**.
 

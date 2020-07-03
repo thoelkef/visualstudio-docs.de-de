@@ -2,7 +2,7 @@
 title: Starten einer Debugsitzung für eine UWP-App | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4504dda362c8a50f33168a12839e894a14316d7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72436008"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536551"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Starten einer Debugsitzung für eine UWP-App
 
@@ -76,7 +76,7 @@ Das Debuggen wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie es man
 
 Sie können das Debugziel in der Visual Studio-Symbolleiste oder auf der Seite mit den Debugeigenschaften des Projekts festlegen. Wählen Sie einen der folgenden Optionen aus:
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Lokaler Computer**|Debuggen Sie die Anwendung in der aktuellen Sitzung auf dem lokalen Computer.|
 |**Simulator**|Debuggen Sie die Anwendung im Visual Studio-Simulator für UWP-Apps. Der Simulator ist ein Desktopfenster, das Gerätefunktionen simuliert, wie z. B. Touchgesten und Gerätedrehung, die auf dem lokalen Computer möglicherweise nicht vorhanden sind. Die Simulatoroption ist nur verfügbar, wenn die **Mindestversion der Zielplattform** Ihrer App kleiner oder gleich dem Betriebssystem auf dem lokalen Rechner ist. Weitere Informationen finden Sie unter [Ausführen von UWP-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +114,7 @@ In C++-Apps ist das Debuggen von nativem Code in Visual Studio eine Standardeins
 
 - Wählen Sie für C++-Apps einen der folgenden Debugger auf der Eigenschaftsseite **Debuggen** aus der Dropdownliste **Debuggertyp** aus.
 
-|||
+|name|Beschreibung|
 |-|-|
 |**Nur verwaltet**|Für das Debuggen des verwalteten Codes der Anwendung. JavaScript- und systemeigener C/C++-Code werden ignoriert.|
 |**Nur systemeigen**|Für das Debuggen des systemeigenen C/C++-Codes der Anwendung. Verwalteter und JavaScript-Code werden ignoriert.|
@@ -189,7 +189,7 @@ Um den Debugger an eine [!INCLUDE[win8_appname_long](../debugger/includes/win8_a
 
    1. Um eine Liste anzuzeigen, die PackageFullName für alle Apps enthält, geben Sie in der PowerShell-Eingabeaufforderung `Get-AppxPackage` ein.
 
-   1. Geben Sie in der PowerShell-Eingabeaufforderung `Enable-AppxDebug <PackageFullName>` ein, wobei \<PackageFullName> der PackageFullName-Bezeichner der App ist.
+   1. Geben Sie `Enable-AppxDebug <PackageFullName>` in der PowerShell-Eingabeaufforderung ein, wobei \<PackageFullName> dem PackageFullName-Bezeichner der App entspricht.
 
 1. Wählen Sie **Debuggen** > **An den Prozess anhängen** aus.
 

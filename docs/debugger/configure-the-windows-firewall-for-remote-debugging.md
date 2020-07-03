@@ -1,19 +1,19 @@
 ---
 title: Konfigurieren der Windows-Firewall für das Remotedebuggen | Microsoft-Dokumentation
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563720"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350692"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurieren der Windows-Firewall für das Remotedebuggen
 
@@ -94,7 +94,7 @@ Sie können die Remotedebugtools auf dem Remotecomputer installieren oder sie au
 
 Auf einem Remotecomputer befinden sich die Remotedebugtools in folgendem Pfad:
 
-*\<Visual Studio-Installationsverzeichnis\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64* oder *AppX*\>
+*\<Visual Studio installation directory\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64*, or *Appx*\>
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Zulassen und Konfigurieren des Remotedebuggers über die Windows-Firewall
 
@@ -104,7 +104,7 @@ Auf einem Remotecomputer befinden sich die Remotedebugtools in folgendem Pfad:
 
 1. Wenn unter **Zulässige Apps und Features** die Option **Remotedebugger** bzw. **Visual Studio-Remotedebugger** nicht angezeigt wird, wählen Sie **Einstellungen ändern** und dann **Andere App zulassen** aus.
 
-1. Wenn die Remotedebugger-App im Dialogfeld **App hinzufügen** nicht aufgeführt ist, wählen Sie **Durchsuchen** aus, und navigieren Sie in Abhängigkeit von der jeweiligen Architektur für Ihre App zu *\<Visual Studio-Installationsverzeichnis\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64* oder *AppX*\>. Wählen Sie *msvsmon.exe* und dann **Hinzufügen** aus.
+1. Wenn die Remotedebugger-App weiterhin nicht im Dialogfeld **App hinzufügen** aufgeführt wird, klicken Sie auf **Durchsuchen**, und navigieren Sie abhängig von der entsprechenden Architektur Ihrer App zu *\<Visual Studio installation directory\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64*, or *Appx*\>. Wählen Sie *msvsmon.exe* und dann **Hinzufügen** aus.
 
 1. Wählen Sie in der Liste **Apps** den **Remotedebugger** aus, den Sie soeben hinzugefügt haben. Wählen Sie **Netzwerktypen** aus, und wählen Sie dann einen oder mehrere Netzwerktypen aus, die aktiviert werden sollen, darunter auch den Netzwerktyp für die Remoteverbindung.
 

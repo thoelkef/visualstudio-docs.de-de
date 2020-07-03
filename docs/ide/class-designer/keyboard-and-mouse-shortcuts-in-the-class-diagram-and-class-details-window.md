@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30932a6c94bc6104aeea0244f06f471d0a639b21
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590760"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533665"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“
 
@@ -63,8 +63,8 @@ Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 |**UMSCHALT**+**Pfeiltasten**|In Typformen|Erstellen einer fortlaufenden Auswahl, die aus Formelementen wie Member, geschachtelte Typen oder Depots besteht. Diese Tastenkombinationen unterstützen kein Umschließen.|
 |**Home**|In Typformen|Navigiert zum Titel der Form der obersten Ebene.|
 |**Home**|Formen der obersten Ebene|Navigiert zur ersten Form im Diagramm.|
-|**Ende**|In Typformen|Navigiert zum letzten sichtbaren Element in der Form.|
-|**Ende**|Formen der obersten Ebene|Navigiert zur letzten Form im Diagramm.|
+|**ENDE**|In Typformen|Navigiert zum letzten sichtbaren Element in der Form.|
+|**ENDE**|Formen der obersten Ebene|Navigiert zur letzten Form im Diagramm.|
 |**UMSCHALT**+**POS1**|In Typform|Wählt Elemente innerhalb der Form aus, beginnend mit dem aktuellen Element und endend mit dem obersten Element in derselben Form.|
 |**UMSCHALT**+**Ende**|In Typform|Identisch mit **UMSCHALT**+**POS1**, aber in Von-oben-nach-unten-Richtung.|
 |**EINGABETASTE**|Alle Kontexte|Ruft die Standardaktion für die Form auf, die auch durch Doppelklicken verfügbar ist. In den meisten Fällen ist dies "Code anzeigen", aber für einige Elemente ist das unterschiedlich definiert (Lollipops, Depot-Header, Lollipop Bezeichnungen).|
@@ -87,20 +87,19 @@ Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 
 Verwenden Sie die folgenden Tasten, um im Fenster **Klassendetails** zu navigieren:
 
-|||
-|-|-|
 |Key|Ergebnis|
-|**,** (Komma)|Wenn sich der Cursor in einer Parameterzeile befindet, wird der Cursor nach Eingabe eines Kommas in das "Name"-Feld des nächsten Parameters verschoben. Befindet sich der Cursor in der letzten Parameterzeile einer Methode, wird der Cursor in das Feld \<add parameter> verschoben, das Sie dazu verwenden können, einen neuen Parameter zu erstellen.<br /><br /> Befindet sich der Cursor an einer anderen Stelle im Fenster **Klassendetails**, wird durch ein Eingeben eines Kommas ein tatsächliches Komma im aktuellen Feld hinzugefügt.|
+|-|-|
+|**,** (Komma)|Wenn sich der Cursor in einer Parameterzeile befindet, wird der Cursor nach Eingabe eines Kommas in das "Name"-Feld des nächsten Parameters verschoben. Wenn der Cursor sich in der letzten Parameterzeile einer Methode befindet, wird er in das Feld \<add parameter> verschoben, das Sie verwenden können, um einen neuen Parameter zu erstellen.<br /><br /> Befindet sich der Cursor an einer anderen Stelle im Fenster **Klassendetails**, wird durch ein Eingeben eines Kommas ein tatsächliches Komma im aktuellen Feld hinzugefügt.|
 |**;** (Semikolon) oder **)** (schließende Klammer)|Verschiebt den Cursor in das Feld „Name“ der nächsten Memberzeile im Raster des Fensters **Klassendetails**.|
-|**TAB**|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Wird der Cursor aus einem Feld bewegt, in das Text eingegeben wurde, wird dieser Text vom Fenster **Klassendetails** verarbeitet und gespeichert, sofern er keine Fehler erzeugt.<br /><br /> Befindet sich der Cursor in einem leeren Feld wie \<Parameter hinzufügen>, bewirkt TAB, dass der Cursor in das erste Feld der nächsten Zeile verschoben wird.|
-|**LEERTASTE**|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Befindet sich der Cursor in einem leeren Feld wie \<Parameter hinzufügen>, wird er in das erste Feld der nächsten Zeile verschoben. Wenn Sie \<Leerzeichen> unmittelbar nach einem Komma drücken, wird dies ignoriert.<br /><br /> Befindet sich der Cursor im Feld "Zusammenfassung", wird durch Eingeben eines Leerzeichens ein Leerzeichen hinzugefügt.<br /><br /> Befindet sich der Cursor in der "Ausblenden"-Spalte einer Zeile, bewirkt ein Eingeben eines Leerzeichens, dass der Wert des Kontrollkästchen "Ausblenden" umgeschaltet wird.|
+|**TAB**|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Wird der Cursor aus einem Feld bewegt, in das Text eingegeben wurde, wird dieser Text vom Fenster **Klassendetails** verarbeitet und gespeichert, sofern er keine Fehler erzeugt.<br /><br /> Befindet sich der Cursor in einem leeren Feld wie \<add parameter>, bewirkt TAB, dass der Cursor in das erste Feld der nächsten Zeile verschoben wird.|
+|**LEERTASTE**|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Befindet sich der Cursor in einem leeren Feld wie \<add parameter>, wird er in das erste Feld der nächsten Zeile verschoben. Beachten Sie, dass \<space> unmittelbar nach einem Komma ignoriert wird.<br /><br /> Befindet sich der Cursor im Feld "Zusammenfassung", wird durch Eingeben eines Leerzeichens ein Leerzeichen hinzugefügt.<br /><br /> Befindet sich der Cursor in der "Ausblenden"-Spalte einer Zeile, bewirkt ein Eingeben eines Leerzeichens, dass der Wert des Kontrollkästchen "Ausblenden" umgeschaltet wird.|
 |**STRG**+**TAB**|Wechselt zu einem anderen Dokumentfenster. Beispielsweise können Sie aus dem Fenster **Klassendetails** in eine geöffnete Codedatei wechseln.|
 |**ESC**|Wenn Sie begonnen haben, Text in ein Feld einzugeben, fungiert Drücken von ESC wie eine Rückgängig-Taste, sodass der Inhalt des Feldes auf seinen vorherigen Wert zurückgesetzt wird. Wenn das Fenster „Klassendetails“ den allgemeinen Fokus besitzt, aber keine bestimmte Zelle fokussiert wird, bewirkt ein Drücken von ESC, dass der Fokus aus dem Fenster **Klassendetails** verschoben wird.|
 |**NACH-OBEN**- und **NACH-UNTEN-TASTE**|Mit diesen Tasten wird der Cursor vertikal von Zeile zu Zeile im Raster des Fensters **Klassendetails** verschoben.|
 |**NACH-LINKS-TASTE**|Befindet sich der Cursor in der Spalte "Name", bewirkt ein Drücken der NACH-LINKS-TASTE, dass der aktuelle Knoten in der Hierarchie reduziert wird (falls er geöffnet ist).|
 |**NACH-RECHTS-TASTE**|Befindet sich der Cursor in der Spalte „Name“, bewirkt ein Drücken der NACH-RECHTS-TASTE, dass der aktuelle Knoten in der Hierarchie erweitert wird (falls er reduziert ist).|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Konfigurieren von Typmembern](creating-and-configuring-type-members.md)
 - [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../reference/how-to-use-the-keyboard-exclusively.md)

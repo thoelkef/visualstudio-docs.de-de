@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Auswählen von Sammlungsmethoden | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776344"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329271"
 ---
 # <a name="how-to-choose-collection-methods"></a>Vorgehensweise: Auswählen von Sammlungsmethoden
 
@@ -36,7 +36,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 | **CPU-Sampling** | Sammelt Anwendungsstatistiken, die für die erste Analyse und zum Analysieren von CPU-Auslastungsproblemen nützlich sind. |
 | **Instrumentation** | Sammelt ausführliche Zeitsteuerungsdaten, die zur gezielten Analyse und zur Analyse von Eingabe/Ausgabe-Leistungsproblemen nützlich sind. |
 | **.NET-Speicherbelegung** | Sammelt .NET Framework-Speicherbelegungsdaten mithilfe der Sampling-Profilerstellungsmethode. |
-| **Concurrency** | Sammelt numerischen Ressourcenkonfliktdaten. |
+| **Parallelität** | Sammelt numerischen Ressourcenkonfliktdaten. |
 
 ## <a name="performance-explorer"></a>Leistungs-Explorer
 
@@ -90,7 +90,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 3. Klicken Sie auf **Parallelität**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
 [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

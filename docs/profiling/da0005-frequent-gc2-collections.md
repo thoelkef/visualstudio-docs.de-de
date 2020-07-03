@@ -1,7 +1,7 @@
 ---
 title: 'DA0005: Häufige GC2-Auflistungen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -14,21 +14,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a50567a101d77ed6498aaae13a5fe5556d9c1056
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28969dd6f5adf1d0f32fe419a17f14ac4069a298
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777711"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539918"
 ---
-# <a name="da0005-frequent-gc2-collections"></a>DA0005: Häufige GC2-Auflistung
+# <a name="da0005-frequent-gc2-collections"></a>DA0005: Häufige GC2-Auflistungen
 
-|||
+|Element|Wert|
 |-|-|
 |RuleId|DA0005|
 |Kategorie|.NET Framework-Verwendung|
 |Profilerstellungsmethode|.NET-Arbeitsspeicher|
-|Nachricht|Einige Ihrer Objekte werden bei der Garbage Collection der zweiten Generation gesammelt.|
+|Meldung|Einige Ihrer Objekte werden bei der Garbage Collection der zweiten Generation gesammelt.|
 |Nachrichtentyp|Warnung|
 
 ## <a name="cause"></a>Ursache

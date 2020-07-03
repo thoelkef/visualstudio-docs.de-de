@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Site verwendet IP-Adresse | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_siteusesipaddress
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96786efad0349dec7c9e8e9a02cca40af3668341
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737504"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460545"
 ---
 # <a name="error-site-uses-ip-address"></a>Fehler: Site verwendet IP-Adresse
 Zu diesem Fehler kommt es beim Versuch des Debuggers, sich automatisch an eine Webanwendung anzuhängen, die eine IP-Adresse verwendet. Dies passiert, wenn Sie in IIS **Identifikation der Webseite** in **Spezielle IP-Adresse verwenden** ändern.

@@ -1,7 +1,7 @@
 ---
 title: 'DA0024: Übermäßige GC-CPU-Zeit | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0024
 - vs.performance.24
@@ -13,21 +13,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8352095bcf31c137d391c2ed2e832d34e0ec7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20736e7af905bbbc72c1c2bec1e5b79d68259217
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779349"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544650"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Übermäßige GC-CPU-Zeit
 
-|||
+|Element|Wert|
 |-|-|
 |Regel-ID|DA0024|
 |Kategorie|.NET Framework-Verwendung|
 |Profilerstellungsmethode|Alle|
-|Nachricht|Die GC-Zeitdauer in Prozent ist sehr hoch. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.|
+|Meldung|Die GC-Zeitdauer in Prozent ist sehr hoch. Ein hohes Maß an Mehraufwand für die Garbage Collection wurde festgestellt.|
 |Regeltyp|Warnung|
 
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.

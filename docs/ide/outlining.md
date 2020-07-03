@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585755"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545443"
 ---
 # <a name="outlining"></a>Gliedern
 
@@ -40,7 +40,7 @@ Diese Aktionen werden durch die Befehle **Rückgängig** und **Wiederholen** im 
 
 Die folgenden Befehle befinden sich im Untermenü **Bearbeiten** > **Gliedern**.
 
-|||
+|name|Beschreibung|
 |-|-|
 |Aktuelles Element umschalten|(**STRG**+**M**, **STRG**+**H**): Reduziert einen ausgewählten Codeblock, der normalerweise nicht für eine Gliederung verfügbar wäre, beispielsweise einen `if`-Block. Verwenden Sie die Option **Gliederung in aktuellem Element entfernen**, oder drücken Sie **STRG**+**M**, **STRG**+**U**, um den benutzerdefinierten Bereich zu entfernen. Nicht in Visual Basic verfügbar.|
 |Gliederungserweiterung umschalten|- Kehrt den aktuellen Zustand (ausgeblendet oder erweitert) des innersten Gliederungsbereichs um, wenn sich der Cursor in einem verschachtelten reduzierten Bereich befindet.|
@@ -48,12 +48,12 @@ Die folgenden Befehle befinden sich im Untermenü **Bearbeiten** > **Gliedern**.
 |Gliederung entfernen|(**STRG**+**M**, **STRG**+**P**): Entfernt alle Gliederungsinformationen für das gesamte Dokument.|
 |Gliederung in aktuellem Element entfernen|(**STRG**+**M**, **STRG**+**U**): Entfernt die Gliederungsinformationen für den aktuell ausgewählten benutzerdefinierten Bereich. Nicht in Visual Basic verfügbar.|
 |Nur Definitionen anzeigen|(**STRG**+**M**, **STRG**+**O**): Reduziert die Members aller Typen.|
-|Block zuklappen:\<logische Begrenzung>|(C++) Reduziert einen Bereich in der Funktion mit der Einfügemarke. Wenn beispielsweise die Einfügemarke innerhalb einer Schleife platziert ist, wird die Schleife ausgeblendet.|
-|Alle zuklappen in: \<logische Strukturen>|(C++) Reduziert alle Strukturen innerhalb der Funktion.|
+|Block reduzieren:\<logical boundary>|(C++) Reduziert einen Bereich in der Funktion mit der Einfügemarke. Wenn beispielsweise die Einfügemarke innerhalb einer Schleife platziert ist, wird die Schleife ausgeblendet.|
+|Alle reduzieren in:\<logical structures>|(C++) Reduziert alle Strukturen innerhalb der Funktion.|
 
 Sie können auch das Visual Studio SDK verwenden, um die Textbereiche zu definieren, die Sie erweitern oder reduzieren möchten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../extensibility/walkthrough-outlining.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Quellcode-Editor (Visual Studio für Mac)](/visualstudio/mac/source-editor)

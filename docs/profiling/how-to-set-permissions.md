@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Festlegen von Berechtigungen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774588"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328947"
 ---
 # <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen
 
@@ -64,13 +64,13 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
 2. Klicken Sie mit der rechten Maustaste auf den Ordner und anschließend auf **Eigenschaften**.
 
-     Das Dialogfeld **\<Ordnername> Eigenschaften** wird angezeigt.
+     Daraufhin wird das Dialogfeld **\<folder name>-Eigenschaften** angezeigt.
 
 3. Klicken Sie auf die Registerkarte **Sicherheit** .
 
 4. Klicken Sie auf den Namen eines Benutzerkontos im Feld **Gruppen- oder Benutzernamen**.
 
-5. Im Feld **Berechtigungen für \<Benutzername >** wählen Sie das Kontrollkästchen für **Vollzugriff**.
+5. Aktivieren Sie im Feld **Berechtigungen für \<user name>** das Kontrollkästchen für **Vollzugriff**.
 
 6. Klicken Sie auf **OK**.
 
@@ -104,7 +104,7 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Dieser Befehl erteilt den \<Benutzernamen> oder \<Gruppennamen> -Kontozugriff auf die Profilerstellungstools. Die \<rechts> Option bestimmt die Profilerstellungsfunktionalität, auf die der Benutzer zugreifen kann. Die \<rechts> Option kann eine oder mehrere der folgenden Werte sein:
+     Dieser Befehl gewährt dem \<user name>- oder \<group name>-Konto den Zugriff auf die Profilerstellungstools. Mit der Option \<right> werden die Profilerstellungsfunktionen bestimmt, auf die der Benutzer zugreifen kann. Mit der Option \<right> können folgende Werte festgelegt werden:
 
     - FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich dem Erfassen von Leistungsdaten von Diensten, dem Sampling und der sitzungsübergreifenden Profilerstellung.
 
@@ -120,7 +120,7 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
    Die angegebenen Benutzer werden nun nach der Anmeldung in der Lage sein, die Profilerstellungstools ohne Administratorberechtigungen zu verwenden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)

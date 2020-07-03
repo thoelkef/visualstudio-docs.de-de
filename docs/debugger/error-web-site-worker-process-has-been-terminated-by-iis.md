@@ -1,7 +1,7 @@
 ---
 title: 'Fehler: Websiteworkerprozess wurde von IIS beendet | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736351"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459999"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Fehler: Websiteworkerprozess wurde von IIS beendet
 Der Debugger hat die Codeausführung auf der Website beendet. Dadurch gehen die Internetinformationsdienste (IIS) davon aus, dass der Arbeitsprozess nicht mehr reagiert. Folglich wurde der Arbeitsprozess von IIS beendet.
@@ -38,9 +38,9 @@ Der Debugger hat die Codeausführung auf der Website beendet. Dadurch gehen die 
 
     Der IIS-Manager wird geöffnet.
 
-3. Erweitern Sie ggf. den Knoten \<Computername> im Bereich **Verbindungen**.
+3. Erweitern Sie im Bereich **Verbindungen** ggf. den Knoten \<computer name>.
 
-4. Klicken Sie unter \<Computername> auf **Anwendungspools**.
+4. Klicken Sie unter dem Knoten \<computer name> auf **Anwendungspools**.
 
 5. Klicken Sie in der Liste **Anwendungspools** mit der rechten Maustaste auf den Namen des Pools, in dem Ihre Anwendung ausgeführt wird, und klicken Sie dann auf **Erweiterte Einstellungen**.
 

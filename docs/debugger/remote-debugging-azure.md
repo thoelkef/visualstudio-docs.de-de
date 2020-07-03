@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184249"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536785"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Remotedebuggen von ASP.NET Core in IIS in Azure in Visual Studio
 
@@ -132,7 +132,7 @@ Wenn Sie die Software herunterladen, erhalten Sie möglicherweise Anforderungen 
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Installieren von ASP.NET Core unter Windows Server
 
-1. Installieren Sie das Paket „.NET Core Hosting“ auf dem Hostsystem. Das Paket installiert die .NET Core-Runtime, die .NET Core-Bibliothek und das ASP.NET Core-Modul. Ausführlichere Informationen finden Sie unter [IIS-Konfiguration](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Installieren Sie das Paket „.NET Core Hosting“ auf dem Hostingsystem. Das Paket installiert die .NET Core-Runtime, die .NET Core-Bibliothek und das ASP.NET Core-Modul. Ausführlichere Informationen finden Sie unter [IIS-Konfiguration](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     Installieren Sie für .NET Core 3 das [.NET Core-Hostingpaket](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer).
     Installieren Sie für .NET Core 2 das Paket [.NET Core Windows Server Hosting](https://aka.ms/dotnetcore-2-windowshosting).
@@ -175,8 +175,8 @@ Sie können diese Option verwenden, um eine Datei mit Veröffentlichungseinstell
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-    > [!NOTE]
-    > If you restart an Azure VM, the IP address may change.
+> [!NOTE]
+> Wenn Sie eine Azure-VM neu starten, wird die IP-Adresse möglicherweise geändert.
 
 Nachdem die App erfolgreich bereitgestellt wurde, sollte sie automatisch gestartet werden. Wenn die App nicht aus Visual Studio gestartet wird, starten Sie die App in IIS, um zu bestätigen, dass sie ordnungsgemäß ausgeführt wird. Für ASP.NET Core müssen Sie außerdem sicherstellen, dass das Feld „Anwendungspool“ für **DefaultAppPool** auf **Kein verwalteter Code** festgelegt ist.
 

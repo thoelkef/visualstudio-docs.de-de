@@ -1,7 +1,7 @@
 ---
 title: Anzeigen benutzerdefinierter Informationen mit DebuggerDisplay | Microsoft-Dokumentation
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728679"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418781"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Debugger mit dem DebuggerDisplay-Attribut anweisen, was angezeigt werden soll (C#, Visual Basic, F#, C++/CLI)
 
@@ -27,10 +27,10 @@ Das `DebuggerDisplay` -Attribut verfügt über ein einziges Argument, das als Ze
 
 Wenn eine Klasse eine überschriebene `ToString()` -Methode aufweist, verwendet der Debugger die überschriebene Methode anstelle des standardmäßigen `{<typeName>}`. Wenn Sie also die `ToString()` -Methode überschrieben haben, verwendet der Debugger die überschriebene Methode anstelle des standardmäßigen`{<typeName>}`, und Sie brauchen `DebuggerDisplay`nicht zu verwenden. Wenn Sie beides verwenden, hat das `DebuggerDisplay`-Attribut Vorrang vor der überschriebenen `ToString()`-Methode. Das `DebuggerDisplay`-Attribut besitzt auch Vorrang vor der überschriebenen `ToString()`-Methode in einer Unterklasse.
 
-Ob der Debugger diesen impliziten `ToString()` -Aufruf auswertet, hängt von einer Benutzereinstellung im Dialogfeld **Extras / Optionen / Debugging** ab. Visual Basic implementiert diese implizite `ToString()` -Auswertung nicht.
+Ob der Debugger diesen impliziten `ToString()`-Aufruf auswertet, hängt von einer Benutzereinstellung im Dialogfeld **Extras/Optionen/Debugging** ab.
 
 > [!IMPORTANT]
-> Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras / Optionen / Debugging** aktiviert ist, wird das `DebuggerDisplay` -Attribut ignoriert.
+> Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras/Optionen/Debugging** aktiviert ist, wird das `DebuggerDisplay`-Attribut ignoriert.
 
 > [!NOTE]
 > Für nativen Code wird dieses Attribut nur in C++-/CLI-Code unterstützt.

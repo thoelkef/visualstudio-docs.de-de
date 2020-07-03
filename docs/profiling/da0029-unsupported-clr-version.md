@@ -1,7 +1,7 @@
 ---
 title: 'DA0029: Nicht unterstützte CLR-Version | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.29
 - vs.performance.rules.DA0029
@@ -16,21 +16,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14e0bb4290ad155b7094c0f60810df4f86cb8d65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777514"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544637"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nicht unterstützte CLR-Version
 
-|||
+|Element|Wert|
 |-|-|
 |Regel-ID|DA0029|
 |Kategorie|Verwendung der Profilerstellungstools|
 |Profilerstellungsmethode|Profilerstellung mithilfe der Befehlszeile|
-|Nachricht|Während der Sammlung wurde eine nicht unterstützte CLR-Version erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|
+|Meldung|Während der Sammlung wurde eine nicht unterstützte CLR-Version erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|
 |Regeltyp|Information|
 
 ## <a name="cause"></a>Ursache
@@ -40,4 +40,4 @@ ms.locfileid: "74777514"
  Diese Warnung tritt auf, da die Profilerstellungstools keine Symbole für den verwalteten Code auflösen können, der in der Anwendung ausgeführt wird. Die Profilerstellungstools können keine verwalteten Codesymbole für Anwendungen auflösen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] ausführen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Keine.
+ Keine

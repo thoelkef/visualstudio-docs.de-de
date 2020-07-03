@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Öffnen der Meldungsansicht aus dem Fenster „Suchen“ | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Öffnen der Meldungsansicht über das Fenster „Suchen“ | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fef9288a662b6726c185b50a79c8007b586b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906579"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349483"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Vorgehensweise: Öffnen der Meldungsansicht aus dem Fenster „Suchen“
 Möglicherweise finden Sie es bequem, das Dialogfeld **Fenster suchen** zum Auswählen eines Zielfensters zu verwenden, um dann eine Meldungsansicht dieses Fensters zu öffnen.

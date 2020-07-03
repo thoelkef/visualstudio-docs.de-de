@@ -1,7 +1,7 @@
 ---
 title: 'DA0002: „VSPerfCorProf.dll“ fehlt | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0002
 - vs.performance.2
@@ -14,21 +14,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f768a35e7c50ec55867ae49901718063ca39bd0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 36c9f3b33eab8428cd14aa26896c3813422d3dd7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777750"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537071"
 ---
-# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll fehlt
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: „VSPerfCorProf.dll“ fehlt
 
-|||
+|Element|Wert|
 |-|-|
 |Regel-ID|DA0002|
 |Kategorie|Verwendung der Profilerstellungstools|
 |Profilerstellungsmethoden|Profilerstellung mithilfe der Befehlszeilentools VSPerfCmd und VSPerfASPNETCmd|
-|Nachricht|Anscheinend wurden bei der Dateierfassung die Umgebungsvariablen mit *VSPerfCLREnv.cmd* nicht korrekt eingerichtet. Die Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden.|
+|Meldung|Anscheinend wurden bei der Dateierfassung die Umgebungsvariablen mit *VSPerfCLREnv.cmd* nicht korrekt eingerichtet. Die Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden.|
 |Regeltyp|Information|
 
 ## <a name="cause"></a>Ursache

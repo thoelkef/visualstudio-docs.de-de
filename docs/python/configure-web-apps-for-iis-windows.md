@@ -2,7 +2,7 @@
 title: Konfigurieren von Python-Web-Apps für IIS
 description: Konfigurieren von Python-Web-Apps für die Ausführung mit Internetinformationsdienste (Internet Information Services, IIS) von einem virtuellen Windows-Computer aus.
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957372"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540932"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurieren von Python-Web-Apps für IIS
 
@@ -139,7 +139,7 @@ Um die Schnittstelle zu verwenden, installieren und konfigurieren Sie zunächst 
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    Fehler beim Hinzufügen Ihrer URL zu den Arrayergebnissen im Fehler **DisallowedHost at / Invalid HTTP_HOST header: \<Website-URL\>. Sie müssen ALLOWED_HOSTS möglicherweise die \<Website-URL\> hinzufügen.**
+    Fehler beim Hinzufügen Ihrer URL zu den Arrayergebnissen im Fehler **DisallowedHost at / Invalid HTTP_HOST header: '\<site URL\>'. Möglicherweise müssen Sie '\<site URL\>' zu ALLOWED_HOSTS hinzufügen.**
 
     Beachten Sie, dass Django automatisch „localhost“ und „127.0.0.1“ zulässt, wenn das Array leer ist. Wenn Sie jedoch Ihre Produktions-URL hinzufügen, werden diese Funktionen entfernt. Aus diesem Grund sollten Sie separate Entwicklungs- und Produktionskopien von *settings.py* beibehalten oder alternativ die Umgebungsvariablen verwenden, um die Laufzeitwerte zu kontrollieren.
 

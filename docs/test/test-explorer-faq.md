@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen zum Test-Explorer
-ms.date: 08/14/2019
+ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,24 +14,14 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf22c54da4af43c4953a8b92620031a14e25ec05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846806"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468742"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
-::: moniker range=">=vs-2019"
-
-## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Wo befindet sich die Gruppierung nach Merkmalen in Visual Studio 2019?
-Diese Gruppierung ist nun eine Spalte. Durch die mehrschichtige und anpassbare Hierarchie in Visual Studio 2019 Version 16.2 haben wir beschlossen, dass die Gruppierung nach Merkmalen zu einer unnötig komplexen Darstellung führt. Wir sind auf Ihr Feedback zu diesem Design gespannt! [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
-
-Aktuell können Sie mit der rechten Maustaste auf die Spalte im Test-Explorer und dann auf „Spalten“ klicken. Wenn Sie das Kontrollkästchen neben „Merkmal“ aktivieren, wird diese Spalte im Test-Explorer angezeigt. Sie können diese Spalte nun nach den für Sie relevanten Merkmalen filtern.
-
-![Spalte „Merkmal“ anzeigen](media/vs-2019/trait-column.png)
-![Spalte „Merkmal“ filtern](media/vs-2019/trait-column-filter.png)
-::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Ermitteln dynamischer Tests
 
@@ -91,9 +81,7 @@ UWP-Tests sind auf eine andere Runtime ausgerichtet, wenn die App bereitgestellt
 
 **Wie können in der Hierarchieansicht Testergebnisse sortiert werden?**
 
-In der Hierarchieansicht werden Tests alphabetisch und nicht anhand ihrer Ergebnisse sortiert. Über andere Einstellungen zum Sortieren werden Testergebnisse in der Regel erst anhand ihrer Ergebnisse und dann alphabetisch sortiert. Beachten Sie zum Vergleich die unterschiedlichen „Gruppieren nach“-Optionen in der folgenden Abbildung. Feedback zum Entwurf können Sie [in diesem GitHub-Problem](https://github.com/Microsoft/vstest/issues/1425) geben.
-
-![Sortierungsbeispiele](media/testex-sortingex.png)
+In der Hierarchieansicht werden Tests alphabetisch und nicht anhand ihrer Ergebnisse sortiert. In der vorherigen Gruppierung nach Einstellungen wurden die Testergebnisse zunächst anhand ihrer Ergebnisse und dann alphabetisch sortiert. Sie können die Sortierung nach Ergebnissen weiterhin aktivieren, indem Sie im Test-Explorer mit der rechten Maustaste auf den Spaltenheader klicken, die Spalte „State“ (Zustand) aktivieren und dann auf den Spaltenheader „State“ klicken, um die Sortierung auf diese Spalte anzuwenden. Sie können Ihr Feedback zu diesem Design in diesem [GitHub-Issue](https://github.com/Microsoft/vstest/issues/1425) beitragen.
 
 ## <a name="test-explorer-hierarchy-view"></a>Hierarchieansicht des Test-Explorers
 
@@ -138,7 +126,7 @@ Anstelle der Verwendung von Testadaptererweiterungen müssen Projekte NuGet-Pake
 
 In aktuellen UWP-Testprojekten wird für die Testplattform eine Buildeigenschaft festgelegt, die eine höhere Leistung bei der Ermittlung von Test-Apps ermöglicht. Wenn Sie über ein UWP-Testprojekt verfügen, das vor Visual Studio Version 15.7 initialisiert wurde, wird möglicherweise der folgende Fehler unter **Ausgabe** > **Tests** angezeigt:
 
-**System.AggregateException: One or more errors occurred. ---> System.InvalidOperationException: The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()** (Der folgende TestContainer wurde unter Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext() nicht gefunden)
+**System.AggregateException: One or more errors occurred. ---> System.InvalidOperationException: The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()** (System.AggregateException: Mindestens ein Fehler. ---> System.InvalidOperationException: Der folgende TestContainer wurde nicht gefunden {} unter Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider)
 
 So beheben Sie diesen Fehler
 
@@ -153,7 +141,12 @@ So beheben Sie diesen Fehler
 ```XML
 <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
 ```
+::: moniker range=">=vs-2019"
+## <a name="using-preview-features"></a>Verwenden von Previewfunktionen
 
+In Visual Studio 2019 können Sie die Previewfunktionen unter **Extras > Optionen > Umgebung > Previewfunktionen** aktivieren.
+::: moniker-end
+::: moniker range=">=vs-2017"
 ## <a name="using-feature-flags"></a>Verwenden von Featureflags
 
 **Wie kann ich Featureflags aktivieren, um neue Testfunktionen auszuprobieren?**
@@ -170,7 +163,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > Sie können das Flag mit dem gleichen Befehl deaktivieren, indem Sie den Wert 0 statt 1 nach dem Dword verwenden.
-
+::: moniker-end
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>

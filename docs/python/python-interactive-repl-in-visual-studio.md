@@ -2,7 +2,7 @@
 title: Interaktives Python-Fenster (REPL)
 description: Verwenden Sie das interaktive Fenster (REPL) für die schnelle Entwicklung von Python-Code in Visual Studio.
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307112"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533548"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -48,7 +48,7 @@ Zweitens: Am unteren Rand des Menüs **Ansicht** > **Weitere Fenster** finden Si
 
 ![Menüelemente für interaktives Fenster in „Ansicht > Weitere Fenster“](media/interactive-window-menu.png)
 
-Drittens: Sie können in der Startdatei Ihres Projekts – oder für eine eigenständige Datei – durch Auswahl des Menübefehls **Debuggen** >  **[Projekt | Datei] in interaktivem Python ausführen\<** (**UMSCHALT**+**ALT**+**F5**) ein **interaktives** Fenster öffnen:
+Drittens: Sie können in der Startdatei Ihres Projekts – oder für eine eigenständige Datei – ein **interaktives** Fenster öffnen, indem Sie die Menübefehle **Debuggen** >  **\<Project | File> in interaktivem Python ausführen** (**UMSCHALT**+**ALT**+**F5**) auswählen:
 
 ![Ausführen des Projekts im interaktiven Python-Menü](media/interactive-execute-project.png)
 

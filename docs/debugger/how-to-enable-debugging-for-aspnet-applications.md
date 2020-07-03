@@ -2,7 +2,7 @@
 title: Aktivieren des Debuggens von ASP.NET-Anwendungen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 09/21/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6f20a2272214a525b00ebf07ebc6e5e803b138c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911356"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349756"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debuggen von ASP.NET- oder ASP.NET Core-Apps in Visual Studio
 
@@ -62,9 +62,9 @@ IIS Express ist die vorkonfigurierte Standardeinstellung. Wenn Sie auf einem lok
 
 1. Verwenden Sie **Datei** > **Ausgewählte Elemente speichern** oder **STRG**+**S**, um jegliche Änderungen zu speichern.
 
-1. Legen Sie Haltepunkte für den Code fest, um die App in Ihrem Projekt zu debuggen. Stellen Sie in der Visual Studio-Symbolleiste sicher, dass die Konfiguration auf **Debuggen** festgelegt ist und dass der gewünschte Browser unter **IIS Express (\<Browsername>)** oder **Lokales IIS (\<Browsername>)** im Emulatorfeld angezeigt wird.
+1. Legen Sie Haltepunkte für den Code fest, um die App in Ihrem Projekt zu debuggen. Stellen Sie in der Visual Studio-Symbolleiste sicher, dass die Konfiguration auf **Debuggen** festgelegt ist und dass der gewünschte Browser unter **IIS Express (\<Browser name>)** oder **Lokales IIS (\<Browser name>)** im Emulatorfeld angezeigt wird.
 
-1. Klicken Sie in der Symbolleiste auf **IIS Express (\<Browsername>)** oder **Lokales IIS (\<Browsername>)** , und klicken Sie dann auf **Debuggen starten** im Menü **Debuggen**, oder drücken Sie **F5**, um mit dem Debuggen zu beginnen. Der Debugger hält an dem Haltepunkt an. Wenn der Debugger die Haltepunkte nicht erreichen kann, finden Sie weitere Informationen im Abschnitt [Behandeln von Problemen beim Debuggen](#troubleshoot-debugging).
+1. Klicken Sie in der Symbolleiste auf **IIS Express (\<Browser name>)** oder **Lokales IIS (\<Browser name>)** , und wählen Sie im Menü **Debuggen** die Option **Debuggen starten** aus, oder drücken Sie **F5**. Der Debugger hält an dem Haltepunkt an. Wenn der Debugger die Haltepunkte nicht erreichen kann, finden Sie weitere Informationen im Abschnitt [Behandeln von Problemen beim Debuggen](#troubleshoot-debugging).
 
 ## <a name="debug-aspnet-core-apps"></a>Debuggen von ASP.NET Core-Apps
 
@@ -90,7 +90,7 @@ IIS Express ist die vorkonfigurierte Standardeinstellung. Wenn Sie auf einem lok
 
 1. Legen Sie Haltepunkte für den Code fest, um die App in Ihrem Projekt zu debuggen. Stellen Sie in der Visual Studio-Symbolleiste sicher, dass die Konfiguration auf **Debuggen** festgelegt ist und dass entweder **IIS Express** oder der neue IIS-Profilname im Emulatorfeld angezeigt wird.
 
-1. Klicken Sie auf **IIS Express** oder auf den **\<IIS-Profilnamen>** in der Symbolleiste, und klicken Sie dann auf **Debuggen starten** im Menü **Debuggen**, oder drücken Sie **F5**, um mit dem Debuggen zu beginnen. Der Debugger hält an dem Haltepunkt an. Wenn der Debugger die Haltepunkte nicht erreichen kann, finden Sie weitere Informationen im Abschnitt [Behandeln von Problemen beim Debuggen](#troubleshoot-debugging).
+1. Klicken Sie in der Symbolleiste auf **IIS Express** oder **\<IIS profile name>** , und wählen Sie im Menü **Debuggen** die Option **Debuggen starten** aus, oder drücken Sie **F5**. Der Debugger hält an dem Haltepunkt an. Wenn der Debugger die Haltepunkte nicht erreichen kann, finden Sie weitere Informationen im Abschnitt [Behandeln von Problemen beim Debuggen](#troubleshoot-debugging).
 
 ## <a name="troubleshoot-debugging"></a>Behandeln von Problemen beim Debuggen
 

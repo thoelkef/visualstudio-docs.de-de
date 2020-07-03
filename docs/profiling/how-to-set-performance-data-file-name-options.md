@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Dateinamenoptionen für Profilerstellungsdaten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc42b63524a867c0893aa255180c740d03d4b5fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778764"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548121"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten
 
@@ -24,7 +24,7 @@ Standardmäßig speichern Sie eine Profilerstellungs-Datendatei (.*vsp*) mithilf
 
 Sie können auf der Seite **Allgemein** im Dialogfeld „Eigenschaften“ für die Leistungssitzung jeden beliebigen Namensparameter ändern.
 
-|||
+|Parameter|Beschreibung|
 |-|-|
 |*Pfad*|Das Verzeichnis mit dem Bericht. Der Standardspeicherort ist der Projektmappenordner oder der Standardspeicherort für Projekte und Projektmappen des Benutzers.|
 |*VSP-Datei*|Der Name der Profilerstellungs-Datendatei. Der Standardname ist der Name der Projektmappe oder der ausführbaren Datei, für die ein Profil erstellt wird.|
@@ -39,7 +39,7 @@ Sie können auf der Seite **Allgemein** im Dialogfeld „Eigenschaften“ für d
 
 3. Ändern Sie unter **Bericht** eine der folgenden Einstellungen:
 
-    |||
+    |name|Beschreibung|
     |-|-|
     |**Berichtsspeicherort**|Geben Sie ein Verzeichnis zum Speichern der Profilerstellungs-Datendateien an.|
     |**Berichtsname**|Geben Sie einen Basisnamen für die Dateien an.|
