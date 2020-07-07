@@ -14,13 +14,13 @@
       href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
     - name: Erstellen eines Vue.js-Projekts
       href: quickstart-vuejs-with-nodejs.md
-- name: Lernprogramme
+- name: Tutorials
   items:
     - name: Erstellen einer Node.js-App mit Express
       href: tutorial-nodejs.md
     - name: Erstellen einer Node.js-App mit React
       href: tutorial-nodejs-with-react-and-jsx.md
-    - name: Erstellen einer ASP.NET Core-App mit TypeScript
+    - name: Erstellen einer ASP.net Core-App mit TypeScript
       href: tutorial-aspnet-with-typescript.md
     - name: Veröffentlichen einer Node.js-App in Linux App Service
       href: publish-nodejs-app-azure.md
@@ -38,9 +38,9 @@
       href: nodejs-interactive-repl.md
     - name: JavaScript IntelliSense
       href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-    - name: Debuggen einer JavaScript-Anwendung
+    - name: Debug
       href: debug-nodejs.md
-    - name: Komponententest für JavaScript
+    - name: Komponententest
       href: unit-testing-javascript-with-visual-studio.md
 - name: Ressourcen
   items:
