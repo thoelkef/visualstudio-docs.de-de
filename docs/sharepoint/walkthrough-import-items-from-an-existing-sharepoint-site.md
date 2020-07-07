@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,134 +13,133 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446609"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017121"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website
-  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren von Elementen aus einer vorhandenen SharePoint-Website in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.
+  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Elemente aus einer vorhandenen SharePoint-Website in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt importiert werden.
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
-- Anpassen von einer SharePoint-Website durch eine benutzerdefinierte Spalte hinzufügen (auch bekannt als eine *Feld*.
+- Anpassen einer SharePoint-Website durch Hinzufügen einer benutzerdefinierten Website Spalte (auch als *Feld*bezeichnet).
 
-- Eine SharePoint-Website exportiert in eine WSP-Datei.
+- Exportieren einer SharePoint-Website in eine wsp-Datei.
 
-- Importieren von WSP-Datei in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint mithilfe der WSP-Projekt importieren.
+- Importieren der wsp-Datei in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint mithilfe des. wsp-Import Projekts.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
 - Visual Studio.
 
-## <a name="customize-a-sharepoint-site"></a>Anpassen einer SharePoint-Websites
- In diesem Beispiel werden Sie erstellen und Anpassen eine SharePoint-Unterwebsite, indem eine neue Websitespalte hinzugefügt wird und erstellen eine weitere Unterwebsite zur späteren Verwendung. Sie werden später erste Unterwebsite in eine WSP-Datei exportieren und dann die benutzerdefinierte Website-Spalte in die zweite Unterwebsite mit dem WSP-Import-Projekt importieren.
+## <a name="customize-a-sharepoint-site"></a>Anpassen einer SharePoint-Website
+ In diesem Beispiel erstellen Sie eine SharePoint-unter Website und passen Sie an, indem Sie Ihr eine neue Website Spalte hinzufügen, und Sie erstellen eine weitere unter Website für die spätere Verwendung. Später exportieren Sie die erste unter Website in eine wsp-Datei und importieren dann die benutzerdefinierte Website Spalte mithilfe des WSP-Import Projekts in die zweite unter Website.
 
-### <a name="to-create-and-customize-a-sharepoint-site"></a>Zum Erstellen und Anpassen einer SharePoint-Websites
+### <a name="to-create-and-customize-a-sharepoint-site"></a>So erstellen Sie eine SharePoint-Website und passen diese an
 
-1. Öffnen Sie eine SharePoint-Website mithilfe eines Webbrowsers, wie z. B. http://<em>Systemname</em>  /SitePages/Home.aspx.
+1. Öffnen Sie eine SharePoint-Website mithilfe eines Webbrowsers, z. b. http://<em>Systemname</em>/SitePages/Home.aspx.
 
-2. Erstellen eine Unterwebsite auf der SharePoint-Website öffnen die **Websiteaktionen** Menü auswählen und dann **neuen Standort**.
+2. Erstellen Sie eine unter Website außerhalb der SharePoint-Hauptwebsite, indem Sie das Menü **Website Aktionen** öffnen und dann **neue Website**auswählen.
 
-3. In der Website **erstellen** Dialogfeld auf die **Blank Site** Typ.
+3. Wählen Sie im Dialogfeld **Erstellen** des Standorts den **leeren** Standorttyp aus.
 
-4. In der **Titel** geben **Site Column Test 1**, in der **URL-Name** Geben Sie **"columntest1"**; behalten Sie die anderen Einstellungen für ihren Standardwert -Werte und wählen Sie dann die **erstellen** Schaltfläche.
+4. Geben Sie im Feld **Titel den Text** **Site Column Test 1; ein**. Geben Sie im Feld **URL** -Name **columntest1**ein. überlassen Sie die anderen Einstellungen auf die Standardwerte. und klicken Sie dann auf die Schaltfläche **Erstellen** .
 
-5. Nachdem die Website erstellt wurde, navigieren Sie im Browser an den zentralen Standort http://<em>Systemname</em>  /SitePages/Home.aspx.
+5. Nachdem der Standort erstellt wurde, navigieren Sie im Browser zurück zum Hauptstandort http://<em>Systemname</em>/SitePages/Home.aspx.
 
-6. In diesem Fall eine leere Unterwebsite der SharePoint-Website erstellen möchten, öffnen die **Websiteaktionen** im Menü auswählen **neuen Standort**, und wählen Sie dann die **Blank Site** Typ.
+6. Erstellen Sie erneut eine leere unter Website außerhalb der SharePoint-Hauptwebsite, indem Sie das Menü **Website Aktionen** öffnen, **neue Website**auswählen und dann den **leeren** Standorttyp auswählen.
 
-7. In der **Titel** geben **Site Column Test 2**, in der **URL-Name** Geben Sie **"columntest2"**; behalten Sie die anderen Einstellungen für ihren Standardwert -Werte und wählen Sie dann die **erstellen** Schaltfläche.
+7. Geben Sie im Feld **Titel den Text** **Site Column Test 2**; ein. Geben Sie im Feld **URL** -Name **columntest2**ein. überlassen Sie die anderen Einstellungen auf die Standardwerte. und klicken Sie dann auf die Schaltfläche **Erstellen** .
 
-8. Navigieren Sie zurück zur ersten Unterwebsite, http://<em>SystemName</em>/columntest1/default.aspx.
+8. Navigieren Sie zurück zur ersten unter Website http://<em>Systemname</em>/columntest1/default.aspx.
 
-9. Auf der **Websiteaktionen** Menü wählen **Standorteinstellungen** auf die Seite Siteeinstellungen anzeigen.
+9. Klicken Sie im Menü **Website Aktionen** auf **Website Einstellungen** , um die Seite Site Einstellungen anzuzeigen.
 
-10. In der **Galerien** Abschnitt der **Site Spalten** Link.
+10. Wählen Sie im Abschnitt **Galerien** den Link **Site Columns** aus.
 
-11. Am oberen Rand der **Spalte Websitekatalog** Seite die **erstellen** Schaltfläche.
+11. Wählen Sie oben auf der Seite " **Site Column Gallery** " die Schaltfläche **Erstellen** aus.
 
-12. In der **Spaltenname** geben **Spalte Test**, behalten die anderen Standardwerte, und wählen Sie dann die **OK** Schaltfläche.
+12. Geben Sie im Feld **Spaltenname** die Option **Test Spalte**ein, behalten Sie die anderen Standardwerte bei, und klicken Sie dann auf die Schaltfläche **OK** .
 
-13. Die **Spalte Test** Spalte wird in den Spalten, die benutzerdefinierte Überschrift in der Spalte-Websitekatalog.
+13. Die Spalte **Test Spalte** wird unter der Überschrift benutzerdefinierte Spalten in der Site Column Gallery angezeigt.
 
-## <a name="exporting-the-sharepoint-site"></a>Exportieren die SharePoint-Website
- Als Nächstes erhalten Sie eine SharePoint-Setup (.wsp)-Datei mit dem SharePoint-Elemente und Elemente, die Sie in importieren möchten Ihre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt. Wenn Sie nicht bereits über eine WSP-Datei verfügen, müssen Sie eine aus einer vorhandenen SharePoint-Website erstellen. In diesem Beispiel werden Sie der Standard-SharePoint-Website in eine WSP-Datei exportieren.
+## <a name="exporting-the-sharepoint-site"></a>Exportieren der SharePoint-Website
+ Rufen Sie als nächstes eine SharePoint-Setup Datei (. wsp) ab, die die SharePoint-Elemente und-Elemente enthält, die Sie in Ihr [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt importieren möchten. Wenn Sie noch nicht über eine wsp-Datei verfügen, müssen Sie eine Datei aus einer vorhandenen SharePoint-Website erstellen. In diesem Beispiel exportieren Sie die SharePoint-Standard Website in eine wsp-Datei.
 
 > [!IMPORTANT]
-> Wenn Sie einen Laufzeitfehler, die den folgenden Schritten erhalten haben, müssen Sie das Verfahren auf einem System ausführen, die zur SharePoint-Website zugreifen.
+> Wenn Sie mit dem folgenden Verfahren einen Laufzeitfehler erhalten, müssen Sie das Verfahren in einem System ausführen, das Zugriff auf die SharePoint-Website hat.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>So exportieren Sie eine vorhandene SharePoint-Website
 
-1. Wählen Sie in der SharePoint-Website **Standorteinstellungen** auf die **Websiteaktionen** Tab, um die Seite Siteeinstellungen anzeigen.
+1. Wählen Sie auf der SharePoint-Website auf der Registerkarte **Website Aktionen** die Option **Website Einstellungen** aus, um die Seite Site Einstellungen anzuzeigen.
 
-2. In der **Websiteaktionen** Abschnitt wählen Sie die Seite Siteeinstellungen der **speichern-Website als Vorlage** Link.
+2. Wählen Sie auf der Seite "Site Einstellungen" im Abschnitt **Website Aktionen** den Link **Site als Vorlage speichern** aus.
 
-3. In der **Dateiname** geben **ExampleSite**, und klicken Sie in der **Vorlagennamen** Geben Sie **Beispielwebsite**.
+3. Geben Sie im Feld **Dateiname den Namen** **ExampleSite**ein, und geben Sie im Feld **Vorlagen Name die Bezeichnung** **Beispiel Website**ein.
 
-4. In diesem Beispiel lassen den **Inhalte einschließen** Kontrollkästchen deaktivieren.
+4. Lassen Sie für dieses Beispiel das Kontrollkästchen **Inhalt einschließen** deaktiviert.
 
-     Wenn Sie dieses Kontrollkästchen aktivieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] speichert Sie in der .wsp-Datei alle Listen und Dokumentbibliotheken und ihren Inhalt zu. Obwohl dies unter bestimmten Umständen nützlich ist, ist es nicht für dieses Beispiel erforderlich.
+     Wenn Sie dieses Kontrollkästchen aktivieren, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] speichert alle Listen und Dokument Bibliotheken sowie deren Inhalt in der wsp-Datei. Obwohl dies in einigen Fällen nützlich ist, ist es für dieses Beispiel nicht erforderlich.
 
-5. Wenn der Vorgang erfolgreich abgeschlossen wurde, wählen Sie die **Lösungskatalog** Link, um die .wsp-Datei anzuzeigen.
+5. Wenn der Vorgang erfolgreich abgeschlossen wurde, klicken Sie auf den Link **Solution Gallery** , um die wsp-Datei anzuzeigen.
 
-     Zum Anzeigen der Solutions Gallery Seite höher, öffnen die **Websiteaktionen** im Menü wählen **Standorteinstellungen**, wählen Sie die **wechseln Sie zu Einstellungen des Standorts auf höchster Ebene** -link in der  **Verwaltung der Websitesammlung** aus, und wählen Sie dann die **Lösungen** -link in der **Galerien** Abschnitt.
+     Um die Lösungs Galerieseite zu einem späteren Zeitpunkt anzuzeigen, öffnen Sie das Menü **Website Aktionen** , wählen Sie **Website Einstellungen**aus, klicken Sie im Abschnitt **Website Sammlungsverwaltung** auf den Link **zum Standort der obersten Ebene** , und wählen Sie dann im Abschnitt **Galerien** den Link **Lösungen** aus.
 
-6. Wählen Sie im Lösungskatalog der **ExampleSite** Link.
+6. Wählen Sie in der Lösungs Galerie den Link **ExampleSite** aus.
 
-7. In der **Dateidownload** Dialogfeld auf die **speichern** aus, um die Datei auf Ihrem lokalen System standardmäßig im Ordner "Downloads" zu speichern.
+7. Wählen Sie im Dialogfeld **Datei Download** die Schaltfläche **Speichern** aus, um die Datei standardmäßig in Ihrem Downloadordner auf Ihrem lokalen System zu speichern.
 
-## <a name="import-the-wsp-file"></a>Die WSP-Datei importieren
- Nun, Sie haben eine *.wsp* -Datei, die ein Element, die Sie möchten enthält (die benutzerdefinierte Spalte Test-Spalte) wiederverwenden, importieren die *.wsp* Datei für den Zugriff.
+## <a name="import-the-wsp-file"></a>Importieren der wsp-Datei
+ Nun, da Sie über eine *wsp* -Datei verfügen, die ein Element enthält, das Sie wieder verwenden möchten (die Test Spalte für benutzerdefinierte Websites), importieren Sie die *wsp* -Datei, um darauf zuzugreifen.
 
-### <a name="to-import-a-wsp-file"></a>Um eine WSP-Datei zu importieren.
+### <a name="to-import-a-wsp-file"></a>So importieren Sie eine wsp-Datei
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt**Dialogfeld. Wenn Ihre IDE auf der Menüleiste mit Visual Basic-entwicklungseinstellungen festgelegt ist, wählen Sie **Datei** > **neues Projekt**.
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Wählen Sie in in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen. Wenn die IDE für die Verwendung Visual Basic Entwicklungseinstellungen festgelegt ist, wählen Sie in der Menüleiste **Datei**  >  **neu Projekt**aus.
 
-2. Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.
+2. Erweitern Sie den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
 
-3. Wählen Sie die **SharePoint 2010-Lösungspaket importieren** Vorlage in der **Vorlagen** , lassen Sie den Namen des Projekts als WspImportProject1, und wählen Sie dann die **OK** Schaltfläche ".
+3. Wählen Sie im Bereich **Vorlagen** die Vorlage **SharePoint 2010-Lösungspaket importieren** aus, belassen Sie den Namen des Projekts als WspImportProject1, und klicken Sie dann auf die Schaltfläche **OK** .
 
-    Die **SharePoint Customization Wizard** angezeigt wird.
+    Der Assistent zum Anpassen von **SharePoint** wird angezeigt.
 
-4. Auf der **Geben Sie die Website und Sicherheitsebene für debugging** geben die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] für den zweiten SharePoint-Unterwebsite, die Sie zuvor erstellt haben. Fügen Sie die neue benutzerdefinierte Feld, http://<em>Systemname</em>/columntest2, um diese Unterwebsite.
+4. Geben Sie auf der Seite **Geben Sie die Website und die Sicherheitsstufe für das Debugging** an den [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] für die zweite SharePoint-unter Website ein, die Sie zuvor erstellt haben. Sie fügen das neue benutzerdefinierte Feld Element http://<em>Systemname</em>/columntest2 zu dieser unter Website hinzu.
 
-5. In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt, ändern Sie die Auswahl **als sandkastenlösung bereitstellen**.
+5. Belassen Sie im Abschnitt **Was ist die Vertrauens Ebene für diese SharePoint-Lösung?** die Auswahl als **Sandkasten Lösung**bereitstellen.
 
-6. In der **neue Projektquelle angeben** Seite, navigieren Sie zum Speicherort auf dem System, in dem Sie gespeichert haben, die *.wsp* Datei zuvor aus, und wählen Sie dann die **Weiter** Schaltfläche.
+6. Navigieren Sie auf der Seite **neue Projekt Quelle angeben** zum Speicherort auf dem System, in dem Sie die *wsp* -Datei zuvor gespeichert haben, und klicken Sie dann auf die Schaltfläche **weiter** .
 
    > [!NOTE]
-   > Bei Auswahl der **Fertig stellen** Schaltfläche auf dieser Seite, die alle verfügbaren Elemente in der *.wsp* Datei importiert werden soll.
+   > Wenn Sie auf dieser Seite die Schaltfläche **Fertig** stellen auswählen, werden alle verfügbaren Elemente in der *wsp* -Datei importiert.
 
-7. In der **zu importierende Elemente auswählen** Deaktivieren aller Kontrollkästchen in der Liste mit Ausnahme von **Spalte Test**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
+7. Deaktivieren Sie im Feld **zu importierende Elemente auswählen** alle Kontrollkästchen in der Liste mit Ausnahme von **Test Spalte**, und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
 
-    Da die Liste viele Elemente enthält, können Sie die **STRG**+**ein** Schlüssel auf alle Elemente in der Liste aus, wählen Sie die LEERTASTE, um alle Kontrollkästchen zu deaktivieren, und wählen Sie dann nur die Überprüfung im Feld neben dem **Spalte Test** Element.
+    Da die Liste viele Elemente enthält, können Sie die Tastenkombination **STRG** + **A** drücken, um alle Elemente in der Liste auszuwählen. Wählen Sie die Leertaste aus, um alle Kontrollkästchen zu deaktivieren, und aktivieren Sie dann nur das Kontrollkästchen neben dem Element **Test Spalte** .
 
-    Nachdem der Importvorgang abgeschlossen ist, wird ein neues Projekt namens **WspImportProject1** erstellt wird, enthält einen Ordner namens **Felder**. In diesem Ordner wird die benutzerdefinierte Websitespalte **Spalte Test** und seine Berichtsdefinitionsdatei *"Elements.xml"*.
+    Nachdem der Import Vorgang abgeschlossen ist, wird ein neues Projekt mit dem Namen **WspImportProject1** erstellt, das einen Ordner mit dem Namen **Fields**enthält. In diesem Ordner befindet sich die **Test Spalte** für benutzerdefinierte Websites und deren Definitionsdatei *Elements.xml*.
 
 ## <a name="deploy-the-project"></a>Bereitstellen des Projekts
- Stellen Sie abschließend **WspImportProject1** auf der zweiten SharePoint-Unterwebsite, dass Sie zuvor zum Anzeigen der Spalte für die benutzerdefinierte Website erstellt haben.
+ Stellen Sie schließlich **WspImportProject1** auf der zweiten SharePoint-unter Website bereit, die Sie zuvor erstellt haben, um die Spalte benutzerdefinierte Websites anzuzeigen.
 
-### <a name="to-deploy-the-project"></a>Um das Projekt bereitzustellen
+### <a name="to-deploy-the-project"></a>So stellen Sie das Projekt bereit
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie die **F5** Schlüssel zum Bereitstellen und Ausführen der *.wsp* Projekt importieren.
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Wählen Sie in die Taste **F5** aus, um das *. wsp* -Import Projekt bereitzustellen und auszuführen.
 
-2. Öffnen Sie auf der SharePoint-Website die **Websiteaktionen** Menü, und wählen Sie dann **Standorteinstellungen** auf die Seite Siteeinstellungen anzeigen.
+2. Öffnen Sie auf der SharePoint-Website das Menü **Website Aktionen** , und wählen Sie dann **Website Einstellungen** aus, um die Seite Site Einstellungen anzuzeigen.
 
-3. In der **Galerien** Abschnitt der **Site Spalten** Link.
+3. Wählen Sie im Abschnitt **Galerien** den Link **Site Columns** aus.
 
-4. Führen Sie einen Bildlauf nach unten, um die **benutzerdefinierte Spalten** Abschnitt.
+4. Scrollen Sie nach unten zum Abschnitt **benutzerdefinierte Spalten** .
 
-     Beachten Sie, dass die benutzerdefinierte Website-Spalte, die Sie importiert haben, aus dem ersten SharePoint-Standort in der Liste angezeigt wird.
+     Beachten Sie, dass die benutzerdefinierte Website Spalte, die Sie von der ersten SharePoint-Website importiert haben, in der Liste angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
-- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

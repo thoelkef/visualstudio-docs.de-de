@@ -1,7 +1,7 @@
 ---
-title: Anpassen von SharePoint-Lösungspakets mithilfe von MSBuild-Ziele
+title: Anpassen des SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,22 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401509"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016884"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Ziele
-  Durch die Verwendung von MSBuild-Ziele an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien erstellt ( *.wsp*). Beispielsweise können Sie anpassen, die MSBuild-Eigenschaften, um das Zwischenverzeichnis Verpacken und die MSBuild-Element-Gruppen, die angeben, die aufgelisteten Dateien zu ändern.
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen
+  Mithilfe von MSBuild-Zielen an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien (*. wsp*) erstellt. Beispielsweise können Sie die MSBuild-Eigenschaften anpassen, um das Verpackungs zwischen Verzeichnis und die MSBuild-Elementgruppen zu ändern, die die aufgelisteten Dateien angeben.
 
-## <a name="customize-and-run-msbuild-targets"></a>Anpassen und Ausführen von MSBuild-Ziele
- Wenn Sie die Ziele BeforeLayout und AfterLayout anpassen, können Sie Aufgaben vor dem paketlayout, z. B. hinzufügen, entfernen oder Ändern von Dateien, die verpackt, ausführen.
+## <a name="customize-and-run-msbuild-targets"></a>Anpassen und Ausführen von MSBuild-Zielen
+ Wenn Sie die Ziele "beforelayout" und "AfterLayout" anpassen, können Sie Aufgaben vor dem Paket Layout ausführen, z. b. das Hinzufügen, entfernen oder Ändern von Dateien, die verpackt werden.
 
-#### <a name="to-customize-the-beforelayout-target"></a>Das Ziel BeforeLayout anpassen
+#### <a name="to-customize-the-beforelayout-target"></a>So passen Sie das Ziel "beforelayout" an
 
-1. Öffnen eines Editors, z. B. Editor, und fügen Sie den folgenden Code.
+1. Öffnen Sie einen Editor, z. b. Notepad, und fügen Sie dann den folgenden Code hinzu.
 
    ```xml
    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -37,33 +36,33 @@ ms.locfileid: "66401509"
    </Project>
    ```
 
-    Dieses Beispiel zeigt eine Meldung, bevor Sie dieses Ziel für die paketerstellung.
+    In diesem Beispiel wird vor dem Verpacken dieses Ziels eine Meldung angezeigt.
 
-2. Nennen Sie die Datei **CustomLayout.SharePoint.targets**, und klicken Sie dann in den Ordner für das SharePoint-Projekt zu speichern.
+2. Benennen Sie die Datei " **CustomLayout. SharePoint. targets**", und speichern Sie Sie im Ordner für das SharePoint-Projekt.
 
-3. Öffnen Sie das Projekt, öffnen Sie das Kontextmenü und wählen Sie dann **Projekt entladen**.
+3. Öffnen Sie das Projekt, öffnen Sie das zugehörige Kontextmenü, und wählen Sie dann **Projekt entladen**aus.
 
-4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **bearbeiten** *\<Projektname > vbproj* oder **Bearbeiten** *\<Projektname > .csproj*.
+4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten** * \<ProjectName> . vbproj* oder **Bearbeiten** * \<ProjectName> . csproj*aus.
 
-5. Nach der `Import` Zeile am Ende der Projektdatei, fügen Sie die folgende Zeile hinzu.
+5. `Import`Fügen Sie nach der Zeile am Ende der Projektdatei die folgende Zeile hinzu.
 
    ```xml
    <Import Project="CustomLayout.SharePoint.targets" />
    ```
 
-6. Speichern und schließen Sie die Projektdatei.
+6. Speichere und schließe die Projektdatei.
 
-7. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **Projekt erneut laden**.
+7. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie dann **Projekt erneut laden**aus.
 
-   Wenn Sie das Projekt veröffentlichen, wird die Nachricht vor dem Packen beginnt in der Ausgabe angezeigt.
+   Wenn Sie das Projekt veröffentlichen, wird die Meldung vor dem Beginn der Paket Erstellung in der Ausgabe angezeigt.
 
-#### <a name="to-customize-the-afterlayout-target"></a>Das Ziel AfterLayout anpassen
+#### <a name="to-customize-the-afterlayout-target"></a>So passen Sie das AfterLayout-Ziel an
 
-1. Wählen Sie auf der Menüleiste **Datei** > **öffnen** > **Datei**.
+1. Wählen Sie in der Menüleiste **Datei Datei**  >  **Öffnen**aus  >  **File**.
 
-2. In der **geöffnete Datei** navigieren Sie zum Projektordner, wählen Sie die Datei CustomLayout.target und wählen Sie dann im Dialogfeld die **öffnen** Schaltfläche.
+2. Navigieren Sie im Dialogfeld **Datei öffnen** zum Projektordner, wählen Sie die Datei CustomLayout. Target aus, und klicken Sie dann auf die Schaltfläche **Öffnen** .
 
-3. Kurz vor dem Ausführen der `</Project>` markieren, fügen Sie den folgenden Code hinzu:
+3. Fügen Sie direkt vor dem- `</Project>` Tag den folgenden Code hinzu:
 
    ```xml
    <Target Name="AfterLayout">
@@ -71,13 +70,13 @@ ms.locfileid: "66401509"
    </Target>
    ```
 
-    Dieses Beispiel zeigt eine Meldung an, nachdem dieses Ziel verpackt wird.
+    In diesem Beispiel wird eine Meldung angezeigt, nachdem dieses Ziel verpackt wurde.
 
-4. Speichern Sie und schließen Sie die Zieldatei.
+4. Speichern und schließen Sie die Zieldatei.
 
-5. Starten Sie Visual Studio neu, und öffnen Sie das Projekt.
+5. Starten Sie Visual Studio neu, und öffnen Sie dann das Projekt.
 
-   Wenn Sie das Projekt veröffentlichen, die BeforeLayout Meldung vor dem Packen beginnt, und die AfterLayout-Meldung angezeigt wird, nach Abschluss der paketerstellung.
+   Wenn Sie das Projekt veröffentlichen, wird die Meldung "beforelayout" vor Beginn der Paket Erstellung angezeigt, und die AfterLayout-Meldung wird nach Abschluss der Paket Erstellung angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

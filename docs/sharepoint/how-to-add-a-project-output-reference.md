@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen eine Projektausgabereferenz | Microsoft-Dokumentation'
+title: 'Gewusst wie: Hinzufügen eines Projekt Ausgabe Verweises | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,33 +14,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967252"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016755"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Vorgehensweise: Hinzufügen einer Projektausgabereferenz
-  Fügen Sie sie zum Bereitstellen von Assemblys für nicht-SharePoint-Projekt (oder XAP-Dateien in Silverlight-Projekten) in SharePoint als Ausgabe Projektverweis hinzu.
+# <a name="how-to-add-a-project-output-reference"></a>Gewusst wie: Hinzufügen eines Projekt Ausgabe Verweises
+  Wenn Sie nicht-SharePoint-projekterassemblys (oder XAP-Dateien in Silverlight-Projekten) in SharePoint bereitstellen möchten, fügen Sie Sie als Projekt Ausgabe Verweis hinzu.
 
- Dieser Vorgang erstellt eine Projektmappe Buildabhängigkeit zwischen den beiden Projekten. Projekte Projektausgabeverweise zugeordnet werden erstellt, bevor das SharePoint-Projekt erstellt und bereitgestellt wird.
+ Dieser Prozess erstellt eine Projektmappenbuild-Abhängigkeit zwischen den beiden Projekten. Projekte, die Projekt Ausgabe verweisen zugeordnet sind, werden erstellt, bevor das SharePoint-Projekt erstellt und bereitgestellt wird.
 
-### <a name="to-add-a-project-output-reference"></a>Hinzufügen eine Projektausgabereferenz
+### <a name="to-add-a-project-output-reference"></a>So fügen Sie einen Projekt Ausgabe Verweis hinzu
 
-1. Laden Sie eine Lösung, die mindestens eine SharePoint-Projekt und eine nicht-SharePoint-Projekt enthält.
+1. Laden Sie eine Projekt Mappe, die mindestens ein SharePoint-Projekt und ein nicht-SharePoint-Projekt enthält.
 
-2. In **Projektmappen-Explorer**, wählen Sie ein Element in der SharePoint-Projektknoten.
+2. Wählen Sie in **Projektmappen-Explorer**ein Element im SharePoint-Projekt Knoten aus.
 
-3. In der **Eigenschaften** Fenster, wählen Sie die **Projektausgabeverweise** -Eigenschaft, und klicken Sie dann auf die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP. NET-Mobile-Designer Ellipse")) Schaltfläche daneben.
+3. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft **Projekt Ausgabe Verweise** aus, und wählen Sie dann die Schaltfläche mit den Auslassungs Punkten (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) Daneben aus.
 
-4. In der **Projektausgabeverweise** Dialogfeld auf die **hinzufügen** Schaltfläche.
+4. Wählen Sie im Dialogfeld **Projekt Ausgabe Verweise** die Schaltfläche **Hinzufügen** aus.
 
-5. Wählen Sie im Eigenschaftenbereich den Pfeil neben der **Bereitstellungstyp** -Eigenschaft, und wählen Sie dann einen geeigneten Wert für das nicht-SharePoint-Element, das Sie verweisen auf, wie z. B. **ElementFile**.
+5. Wählen Sie im Bereich Eigenschaften den Pfeil neben der Eigenschaft **Bereitstellungstyp** aus, und wählen Sie dann einen geeigneten Wert für das nicht-SharePoint-Element, auf das verwiesen wird, z. b. **Element File**.
 
-6. Wählen Sie den Pfeil neben **Projektname**, wählen Sie den Namen des nicht-SharePoint-Projektelements, und wählen Sie dann die **OK** Schaltfläche.
+6. Wählen Sie den Pfeil neben **Projekt Name**aus, wählen Sie den Namen des nicht-SharePoint-Projekt Elements aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-## <a name="see-also"></a>Siehe auch
-- [Angaben Sie zu packen und-Bereitstellen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
-- [Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

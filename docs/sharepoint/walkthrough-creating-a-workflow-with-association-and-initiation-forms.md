@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7946e48502ea4fd8e9e9382a20de3c8ce25987b3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984679"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017133"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines grundlegenden sequenziellen Workflows, der die Verwendung von Zuordnungs-und Initiierungs Formularen einschließt. Hierbei handelt es sich um ASPX-Formulare, die das Hinzufügen von Parametern zu einem Workflow ermöglichen, wenn er dem SharePoint-Administrator (dem Zuordnungs Formular) zuerst zugeordnet ist, und wenn der Workflow vom Benutzer gestartet wird (Initiierungs Formular).
@@ -37,7 +36,7 @@ ms.locfileid: "72984679"
 
   In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
-- Erstellen eines sequenziellen Workflow Projekts für eine SharePoint-Listen Definition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+- Erstellen eines sequenziellen Workflow Projekts für eine SharePoint-Listen Definition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 - Erstellen eines Workflow Zeitplans
 
@@ -52,23 +51,23 @@ ms.locfileid: "72984679"
 > [!NOTE]
 > Obwohl in dieser exemplarischen Vorgehensweise ein sequenzielles Workflow Projekt verwendet wird, ist der Prozess für Zustandsautomatworkflows identisch.
 >
-> Der Computer kann auch unterschiedliche Namen oder Speicherorte für einige der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Benutzeroberflächen Elemente in den folgenden Anweisungen anzeigen. Die von Ihnen verwendeten [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Edition und die verwendeten Einstellungen bestimmen diese Elemente. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Außerdem kann der Computer in den folgenden Anweisungen verschiedene Namen oder Speicherorte für einige der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Benutzeroberflächen Elemente anzeigen. Diese Elemente werden in der von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ihnen verwendeten Edition und den von Ihnen verwendeten Einstellungen festgelegt. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
 - Visual Studio.
 
 ## <a name="create-a-sharepoint-sequential-workflow-project"></a>Erstellen eines sequenziellen SharePoint-Workflow Projekts
- Erstellen Sie zunächst in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ein sequenzielles Workflow Projekt. Ein sequenzieller Workflow ist eine Reihe von Schritten, die nacheinander ausgeführt werden, bis die letzte Aktivität abgeschlossen ist. In diesem Verfahren erstellen Sie einen sequenziellen Workflow, der auf die Liste der freigegebenen Dokumente in SharePoint angewendet wird. Mit dem Assistenten für den-Workflow können Sie den Workflow entweder der Website oder der Listen Definition zuordnen und ermitteln, wann der Workflow gestartet wird.
+ Erstellen Sie zunächst in ein sequenzielles Workflow Projekt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Ein sequenzieller Workflow ist eine Reihe von Schritten, die nacheinander ausgeführt werden, bis die letzte Aktivität abgeschlossen ist. In diesem Verfahren erstellen Sie einen sequenziellen Workflow, der auf die Liste der freigegebenen Dokumente in SharePoint angewendet wird. Mit dem Assistenten für den-Workflow können Sie den Workflow entweder der Website oder der Listen Definition zuordnen und ermitteln, wann der Workflow gestartet wird.
 
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>So erstellen Sie ein sequenzielles SharePoint-Workflow Projekt
 
-1. Wählen Sie in der Menüleiste **Datei**  > **neue**  > **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
+1. Wählen Sie in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
 
-2. Erweitern Sie den **SharePoint** -Knoten entweder unter  **C# Visual** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
+2. Erweitern Sie den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
 
 3. Wählen Sie im Bereich **Vorlagen** die Vorlage **SharePoint 2010 Project** Project aus.
 
@@ -82,9 +81,9 @@ ms.locfileid: "72984679"
 
 6. Wählen Sie im **Projektmappen-Explorer**den Projektknoten aus.
 
-7. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+7. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
 
-8. Erweitern Sie **unter C# Visual** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
+8. Erweitern Sie unter **Visual c#** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 9. Wählen Sie im Bereich **Vorlagen** die Vorlage **sequenzieller Workflow (nur Farm Lösung)** aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -96,7 +95,7 @@ ms.locfileid: "72984679"
 
      Mit diesem Schritt können Sie den Workflow der Liste der freigegebenen Dokumente später manuell zuordnen, wodurch das Zuordnungs Formular angezeigt wird.
 
-12. Wählen Sie die Schaltfläche **Fertig** stellen.
+12. Klicken Sie auf die Schaltfläche **Fertig stellen**.
 
 ## <a name="add-an-association-form-to-the-workflow"></a>Hinzufügen eines Zuordnungs Formulars zum Workflow
  Erstellen Sie als nächstes eine. Aspx-Zuordnungs Formular, das angezeigt wird, wenn der SharePoint-Administrator den Workflow zunächst einem Ausgaben Berichts Dokument zuordnet.
@@ -105,9 +104,9 @@ ms.locfileid: "72984679"
 
 1. Wählen Sie in **Projektmappen-Explorer**den Knoten **Workflow1** aus.
 
-2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus, um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.
+2. Klicken Sie in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen** , um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.
 
-3. Erweitern Sie in der Strukturansicht des Dialog Felds **entweder C# Visual** oder **Visual Basic** (abhängig von der Projektsprache), erweitern Sie den **SharePoint** -Knoten, und wählen Sie dann den Knoten **2010** aus.
+3. Erweitern Sie in der Strukturansicht des Dialog Felds entweder **Visual c#** oder **Visual Basic** (abhängig von der Projektsprache), erweitern Sie den **SharePoint** -Knoten, und wählen Sie dann den Knoten **2010** aus.
 
 4. Wählen Sie in der Liste der Vorlagen die Vorlage **Workflow Association-Formular** aus.
 
@@ -120,7 +119,7 @@ ms.locfileid: "72984679"
 
 #### <a name="to-design-and-code-the-association-form"></a>So entwerfen und codieren Sie das Zuordnungs Formular
 
-1. Suchen Sie im Zuordnungs Formular (ExpenseReportAssocForm. aspx) das `asp:Content` Element, das `ID="Main"`hat.
+1. Suchen Sie im Zuordnungs Formular (ExpenseReportAssocForm. aspx) das- `asp:Content` Element, das hat `ID="Main"` .
 
 2. Fügen Sie direkt nach der ersten Zeile in diesem Inhalts Element den folgenden Code hinzu, um eine Bezeichnung und ein Textfeld zu erstellen, die zur Eingabe des Genehmigungs Limits für Ausgaben (*AutoApproveLimit*) aufgefordert werden:
 
@@ -134,11 +133,11 @@ ms.locfileid: "72984679"
 3. Erweitern Sie in **Projektmappen-Explorer** die Datei **ExpenseReportAssocForm. aspx** , um die abhängigen Dateien anzuzeigen.
 
     > [!NOTE]
-    > Wenn sich das Projekt in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]befindet, müssen Sie die Schaltfläche **alle Dateien anzeigen** auswählen, um diesen Schritt auszuführen.
+    > Wenn das Projekt in ist [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] , müssen Sie die Schaltfläche **alle Dateien anzeigen** auswählen, um diesen Schritt auszuführen.
 
 4. Öffnen Sie das Kontextmenü für die Datei ExpenseReportAssocForm. aspx, und wählen Sie **Code anzeigen**aus.
 
-5. Ersetzen Sie die `GetAssociationData`-Methode durch:
+5. Ersetzen Sie die- `GetAssociationData` Methode durch:
 
     ```vb
     Private Function GetAssociationData() As String
@@ -166,9 +165,9 @@ ms.locfileid: "72984679"
 
 1. Wählen Sie in **Projektmappen-Explorer**den Knoten **Workflow1** aus.
 
-2. Klicken Sie in der Menüleiste auf **Projekt** > **Neues Element hinzufügen** , um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.
+2. Klicken Sie in der Menüleiste auf **Projekt**  >  **Neues Element hinzu** fügen, um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.
 
-3. Erweitern Sie in der Strukturansicht des Dialog Felds **entweder C# Visual** oder **Visual Basic** (abhängig von der Projektsprache), erweitern Sie den **SharePoint** -Knoten, und wählen Sie dann den Knoten **2010** aus.
+3. Erweitern Sie in der Strukturansicht des Dialog Felds entweder **Visual c#** oder **Visual Basic** (abhängig von der Projektsprache), erweitern Sie den **SharePoint** -Knoten, und wählen Sie dann den Knoten **2010** aus.
 
 4. Wählen Sie in der Liste der Vorlagen die Vorlage **Workflow Initiierungs Formular aus** .
 
@@ -181,9 +180,9 @@ ms.locfileid: "72984679"
 
 #### <a name="to-code-the-initiation-form"></a>So codieren Sie das Initiierungs Formular
 
-1. Suchen Sie im Initialisierungs Formular (ExpenseReportInitForm. aspx) das `asp:Content` Element, das `ID="Main"`enthält.
+1. Suchen Sie im Initialisierungs Formular (ExpenseReportInitForm. aspx) das- `asp:Content` Element, das enthält `ID="Main"` .
 
-2. Fügen Sie direkt nach der ersten Zeile in diesem Inhalts Element den folgenden Code hinzu, um eine Bezeichnung und ein Textfeld-Element zu erstellen, das das im Zuordnungs Formular eingegebene Limit für die Kosten Genehmigung (*AutoApproveLimit*) anzeigt, und eine weitere Bezeichnung und Textfeld, in der die Eingabeaufforderung für das Summe der Ausgaben (*expensekunden Gesamt*):
+2. Fügen Sie direkt nach der ersten Zeile in diesem Inhalts Element den folgenden Code hinzu, um eine Bezeichnung und ein Textfeld-Element zu erstellen, das das im Zuordnungs Formular eingegebene Limit für die Kosten Genehmigung (*AutoApproveLimit*) anzeigt, und eine weitere Bezeichnung und Textfeld, um die Summe der Ausgaben (*ExpenseTotal*) aufzuräumen:
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -200,7 +199,7 @@ ms.locfileid: "72984679"
 
 4. Öffnen Sie das Kontextmenü für die Datei ExpenseReportInitForm. aspx, und wählen Sie **Code anzeigen**aus.
 
-5. Ersetzen Sie die `Page_Load`-Methode durch das folgende Beispiel:
+5. Ersetzen Sie die- `Page_Load` Methode durch das folgende Beispiel:
 
     ```vb
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As
@@ -222,7 +221,7 @@ ms.locfileid: "72984679"
     }
     ```
 
-6. Ersetzen Sie die `GetInitiationData`-Methode durch das folgende Beispiel:
+6. Ersetzen Sie die- `GetInitiationData` Methode durch das folgende Beispiel:
 
     ```vb
     ' This method is called when the user clicks the button to start the workflow.
@@ -287,7 +286,7 @@ ms.locfileid: "72984679"
 
 14. Fügen Sie dem Workflow diese Aktivität hinzu, indem Sie einen der folgenden Schritte ausführen:
 
-    - Öffnen Sie das Kontextmenü für die **LogToHistoryListActivity** -Aktivität, wählen Sie **Kopieren**aus, öffnen Sie das Kontextmenü für den anderen Bereich Ablage **Aktivitäten hier** in **IfElseActivity1** im Workflow-Designer, und wählen Sie dann einfügen aus..
+    - Öffnen Sie das Kontextmenü für die **LogToHistoryListActivity** -Aktivität, wählen Sie **Kopieren**aus, öffnen Sie das Kontextmenü für den anderen Bereich Ablage **Aktivitäten hier** in **IfElseActivity1** im Workflow-Designer, und wählen Sie dann **Einfügen**aus.
 
     - Ziehen Sie die **logrehistorylistactivity** -Aktivität aus der **Toolbox**, und legen Sie Sie auf dem anderen Bereich Ablage **Aktivitäten hier** in **IfElseActivity1**ab.
 
@@ -325,9 +324,9 @@ ms.locfileid: "72984679"
     ```
 
     > [!NOTE]
-    > Ersetzen Sie im Code `somedomain\\someuser` durch einen Domänen-und Benutzernamen, für den eine Aufgabe erstellt wird, z. b. "`Office\\JoeSch`". Zum Testen ist es am einfachsten, das Konto zu verwenden, mit dem Sie entwickeln.
+    > Ersetzen Sie im Code `somedomain\\someuser` durch einen Domänen-und Benutzernamen, für den eine Aufgabe erstellt wird, z. b `Office\\JoeSch` . "". Zum Testen ist es am einfachsten, das Konto zu verwenden, mit dem Sie entwickeln.
 
-3. Fügen Sie unter der `MethodInvoking`-Methode das folgende Beispiel hinzu:
+3. Fügen Sie unter der- `MethodInvoking` Methode das folgende Beispiel hinzu:
 
     ```vb
     Private Sub checkApprovalNeeded(ByVal sender As Object, ByVal e As
@@ -361,7 +360,7 @@ ms.locfileid: "72984679"
 
 6. Erweitern Sie die **Condition** -Eigenschaft, indem Sie neben dem Pluszeichen (TreeView Plus) das Pluszeichen (![TreeView Plus](../sharepoint/media/plus.gif "TreeView-Plus")) auswählen, und legen Sie dessen Wert auf *checkapprovalbenö*
 
-7. Öffnen Sie im Workflow-Designer das Kontextmenü für die **logToHistoryListActivity1** -Aktivität, und wählen Sie dann **Handler generieren** aus, um eine leere Methode für das `MethodInvoking`-Ereignis zu generieren.
+7. Öffnen Sie im Workflow-Designer das Kontextmenü für die **logToHistoryListActivity1** -Aktivität, und wählen Sie dann **Handler generieren** aus, um eine leere Methode für das Ereignis zu generieren `MethodInvoking` .
 
 8. Ersetzen Sie den `MethodInvoking` Code durch Folgendes:
 
@@ -438,13 +437,13 @@ ms.locfileid: "72984679"
 
 11. Geben Sie eine Menge auf der Initiierungs Seite ein, die kleiner oder gleich dem auf der Zuordnungs Seite eingegebenen Betrag (**1200**) ist.
 
-     In diesem Fall wird ein Eintrag in der Verlaufs Liste anstelle einer Aufgabe erstellt. Der Eintrag wird im Abschnitt **Workflow Verlauf** der Seite Workflow Status angezeigt. Beachten Sie die Meldung in der Spalte **Ergebnis** des Verlaufs Ereignisses. Sie enthält den Text, der in das `logToHistoryListActivity1.MethodInvoking`-Ereignis eingegeben wurde, das die automatisch genehmigte Menge enthält.
+     In diesem Fall wird ein Eintrag in der Verlaufs Liste anstelle einer Aufgabe erstellt. Der Eintrag wird im Abschnitt **Workflow Verlauf** der Seite Workflow Status angezeigt. Beachten Sie die Meldung in der Spalte **Ergebnis** des Verlaufs Ereignisses. Sie enthält den Text, der in das `logToHistoryListActivity1.MethodInvoking` Ereignis eingegeben wurde, das die automatisch genehmigte Menge enthält.
 
 ## <a name="next-steps"></a>Nächste Schritte
  Weitere Informationen zum Erstellen von Workflow Vorlagen finden Sie in den folgenden Themen:
 
 - Weitere Informationen zu SharePoint-Workflows finden Sie unter [Workflows in Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von SharePoint-Workflow Lösungen](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

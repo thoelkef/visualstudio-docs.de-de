@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen eine Finder-Methode | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Hinzufügen einer Finder-Methode | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,57 +17,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428727"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016730"
 ---
-# <a name="how-to-add-a-finder-method"></a>Vorgehensweise: Hinzufügen einer Finder-Methode
-  Damit können den Business Data Connectivity (BDC)-Dienst, um eine Liste von Entitäten in einem Webpart oder einer Liste anzuzeigen, müssen Sie erstellen eine *Finder* Methode. Eine Finder-Methode ist eine besondere Methode, die eine Auflistung von Instanzen der Entität zurückgibt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-finder-method"></a>Gewusst wie: Hinzufügen einer Finder-Methode
+  Um den BDC-Dienst (Business Data Connectivity) zum Anzeigen einer Liste von Entitäten in einem Webpart oder einer Liste zu aktivieren, müssen Sie eine *Finder* -Methode erstellen. Eine Finder-Methode ist eine spezielle Methode, die eine Auflistung von Entitäts Instanzen zurückgibt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-### <a name="to-create-a-finder-method"></a>Erstellen eine Finder-Methode
+### <a name="to-create-a-finder-method"></a>So erstellen Sie eine Finder-Methode
 
-1. Auf der **BDC-Designer**, wählen Sie eine Entität.
+1. Wählen Sie im **BDC-Designer**eine Entität aus.
 
-    Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eine Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).
+    Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Wählen Sie auf der Menüleiste **Ansicht** > **Other Windows** > **BDC-Methodendetails**.
+2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details**anzeigen aus.
 
-    Die **BDC-Methodendetails** Fenster wird geöffnet. Weitere Informationen zu den **BDC-Methodendetails** Fenster finden Sie unter [BDC-Modell-Designtools Übersicht](../sharepoint/bdc-model-design-tools-overview.md).
+    Das Fenster **BDC-Methoden Details** wird geöffnet. Weitere Informationen zum Details-Fenster der **BDC-Methode** finden Sie unter Übersicht über die [BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. In der **Hinzufügen einer Methode** wählen **Finder-Methode erstellen**.
+3. Wählen Sie in der Liste **Methode hinzufügen** die Option **Finder-Methode erstellen**aus.
 
-    Visual Studio fügt eine Methode, einen Rückgabeparameter und ein Typdeskriptor.
+    Visual Studio fügt eine Methode, einen Rückgabe Parameter und einen Typdeskriptor hinzu.
 
-4. Konfigurieren Sie den Typdeskriptor als Typdeskriptor eine Entity-Auflistung. Weitere Informationen zum Erstellen der Sammlung Entitätstypdeskriptor finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+4. Konfigurieren Sie den Typdeskriptor als einen entitätsammlungstyp-Deskriptor. Weitere Informationen zum Erstellen eines Deskriptors für den entitätsammlungstyp finden Sie unter Gewusst [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   > Sie müssen nicht diesen Schritt ausführen, wenn Sie eine spezifische Finder-Methode für die Entität hinzugefügt haben. Visual Studio verwendet den Typdeskriptor, den Sie in der spezifische Finder-Methode definiert.
+   > Sie müssen diesen Schritt nicht ausführen, wenn Sie der Entität eine bestimmte Finder-Methode hinzugefügt haben. Visual Studio verwendet den Typdeskriptor, den Sie in der spezifischen Finder-Methode definiert haben.
 
-5. In **Projektmappen-Explorer**, öffnen Sie im Kontextmenü des der Authentifizierungsdienst-Codedatei, die generiert wurde für die Entität aus, und wählen Sie dann **Ansichtscode**. Weitere Informationen zu den Authentifizierungsdienst-Codedatei, finden Sie unter [erstellen ein Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
+5. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü der Dienst Code Datei, die für die Entität generiert wurde, und wählen Sie dann **Code anzeigen**aus. Weitere Informationen zur Dienst Code Datei finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-6. Fügen Sie Code hinzu, um die Finder-Methode. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+6. Fügen Sie der Finder-Methode Code hinzu. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Ruft Daten aus einer Datenquelle ab.
 
-   - Gibt eine Liste der Entitäten mit dem BDC-Dienst zurück.
+   - Gibt eine Liste von Entitäten für den BDC-Dienst zurück.
 
-     Das folgende Beispiel gibt eine Auflistung von `Contact` Entitäten durch Verwenden von Daten aus der AdventureWorks-Beispieldatenbank für SQL Server.
+     Im folgenden Beispiel wird eine Auflistung von `Contact` Entitäten zurückgegeben, indem Daten aus der AdventureWorks-Beispieldatenbank für SQL Server verwendet werden.
 
    > [!NOTE]
-   > Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
+   > Ersetzen Sie den Wert des `ServerName` Felds durch den Namen des Servers.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="see-also"></a>Siehe auch
-- [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Vorgehensweise: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Vorgehensweise: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)
-- [Vorgehensweise: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)
-- [Vorgehensweise: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)
-- [Vorgehensweise: Fügen Sie einen Parameter einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)
+- [Gewusst wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Gewusst wie: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)
+- [Gewusst wie: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)
+- [Gewusst wie: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)
+- [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Gewusst wie: Definieren einer Methoden Instanz](../sharepoint/how-to-define-a-method-instance.md)

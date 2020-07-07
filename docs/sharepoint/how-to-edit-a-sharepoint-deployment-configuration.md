@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
@@ -14,42 +14,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444702"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016773"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration
-  Sie können eine Bereitstellungskonfiguration erstellen oder eine vorhandene Bereitstellungskonfiguration zu ändern. Sie können z. B. einen einzigen Schritt ausführen oder Ändern der Reihenfolge der Schritte im Bereitstellungsprozess. Möglicherweise möchten erstellen oder Ändern von Bereitstellungskonfigurationen, da die integrierte und die programmgesteuert hinzugefügten Konfiguration nicht geändert werden können.
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration
+  Sie können eine Bereitstellungs Konfiguration erstellen oder eine vorhandene Bereitstellungs Konfiguration ändern. Beispielsweise können Sie einen einzelnen Schritt ausführen oder die Reihenfolge der Schritte im Bereitstellungs Prozess ändern. Möglicherweise möchten Sie Bereitstellungs Konfigurationen erstellen oder ändern, da die integrierten und Programm gesteuert hinzugefügten Konfigurationen nicht geändert werden können.
 
-## <a name="create-a-sharepoint-deployment-configuration"></a>Erstellen Sie eine SharePoint-Bereitstellungskonfiguration
+## <a name="create-a-sharepoint-deployment-configuration"></a>Erstellen einer SharePoint-Bereitstellungs Konfiguration
 
-#### <a name="to-create-a-sharepoint-deployment-configuration"></a>Zum Erstellen einer SharePoint-Bereitstellungskonfiguration
+#### <a name="to-create-a-sharepoint-deployment-configuration"></a>So erstellen Sie eine SharePoint-Bereitstellungs Konfiguration
 
-1. In **Projektmappen-Explorer**, wählen Sie ein SharePoint-Projekt und dann auf der Menüleiste die Option **Projekt**, _ProjectName_**Eigenschaften**.
+1. Wählen Sie in **Projektmappen-Explorer**ein SharePoint-Projekt aus, und wählen Sie dann in der Menüleiste **Projekt, Projekt** _Name_**Eigenschaften**aus.
 
-2. Auf der **SharePoint** Registerkarte die **neu** Schaltfläche.
+2. Wählen Sie auf der Registerkarte **SharePoint** die Schaltfläche **neu** aus.
 
-     Die **neue Bereitstellungskonfiguration hinzufügen** Dialogfeld wird angezeigt.
+     Das Dialogfeld **Neue Bereitstellungs Konfiguration hinzufügen** wird angezeigt.
 
-3. In der **Namen** Text Geben Sie einen Namen für die Bereitstellungskonfiguration.
+3. Geben Sie im Textfeld **Name** einen Namen für die Bereitstellungs Konfiguration ein.
 
-4. In der **Verfügbare Bereitstellungsschritte** Bereich, wählen Sie die Schritte aus, die Sie verwenden möchten, an der Bereitstellungskonfiguration hinzuzufügen, wählen Sie die (**>**) Schaltfläche, und wählen Sie dann die **OK** Schaltfläche.
+4. Wählen Sie im Bereich **Verfügbare Bereitstellungs Schritte** die Schritte aus, die Sie der Bereitstellungs Konfiguration hinzufügen möchten, klicken Sie auf die **>** Schaltfläche (), und klicken Sie dann auf die Schaltfläche **OK** .
 
     > [!NOTE]
-    > Wenn Sie einen Befehl vor der Bereitstellung oder ein Befehl nach der Bereitstellung konfiguriert haben, führen Sie diese Schritte nur, wenn Sie eine angepasste Bereitstellungskonfiguration hinzugefügt.
+    > Wenn Sie einen Befehl vor der Bereitstellung oder einen Befehl nach der Bereitstellung konfiguriert haben, werden diese Schritte nur ausgeführt, wenn Sie Sie einer angepassten Bereitstellungs Konfiguration hinzufügen.
 
-## <a name="change-the-active-deployment-configuration"></a>Ändern der aktiven Bereitstellungskonfiguration
+## <a name="change-the-active-deployment-configuration"></a>Ändern der aktiven Bereitstellungs Konfiguration
 
-#### <a name="to-change-the-active-deployment-configuration"></a>Die aktiven Bereitstellungskonfiguration ändern
+#### <a name="to-change-the-active-deployment-configuration"></a>So ändern Sie die aktive Bereitstellungs Konfiguration
 
-1. In **Projektmappen-Explorer**, wählen Sie ein SharePoint-Projekt und dann auf der Menüleiste die Option **Projekt** > **\<*ProjectName*> Eigenschaften**.
+1. Wählen Sie in **Projektmappen-Explorer**ein SharePoint-Projekt aus, und wählen Sie dann in der Menüleiste die Option **Projekt**  >  ** \<*ProjectName*> Eigenschaften**aus.
 
-2. Wählen Sie die **SharePoint** Registerkarte.
+2. Wählen Sie die Registerkarte **SharePoint** aus.
 
-3. In der **aktive Bereitstellungskonfiguration** Listenfeld, wählen Sie den Namen der Bereitstellungskonfiguration, die Sie verwenden möchten.
+3. Wählen Sie im Listenfeld **aktive Bereitstellungs Konfiguration** den Namen der Bereitstellungs Konfiguration aus, die Sie verwenden möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

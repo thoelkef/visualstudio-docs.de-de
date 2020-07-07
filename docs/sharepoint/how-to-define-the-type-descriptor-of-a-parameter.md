@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Definieren des Typdeskriptors für einen Parameter | Microsoft-Dokumentation'
+title: 'Gewusst wie: Definieren des Typdeskriptors eines Parameters | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,63 +15,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971328"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016840"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Vorgehensweise: Definieren des Typdeskriptors für einen parameter
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Gewusst wie: Definieren des Typdeskriptors für einen Parameter
   Ein Typdeskriptor enthält Eigenschaften, mit denen der Datentyp eines Parameters beschrieben wird. Von einem Typdeskriptor kann ein Feld, eine Entität oder eine Auflistung von Entitäten definiert werden. Weitere Informationen finden Sie unter [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>So definieren Sie den Typdeskriptor für einen Parameter
 
-1. In der **BDC-Methodendetails** Fenster, wählen Sie den Typdeskriptor des Parameters.
+1. Wählen Sie im Fenster **BDC-Methoden Details** den Typdeskriptor des Parameters aus.
 
-2. Wählen Sie auf der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.
+2. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaften Fenster**aus.
 
-3. In der **Eigenschaften** legen die Eigenschaften des Typdeskriptors.
+3. Legen Sie im **Eigenschaften** Fenster die Eigenschaften des Typdeskriptors fest.
 
      In den folgenden Prozeduren wird beschrieben, wie ein Typdeskriptor als Feld, Entität oder Entitätsauflistung definiert wird.
 
 ### <a name="to-define-a-field"></a>So definieren Sie ein Feld
 
-1. In der **Eigenschaften** legen die **Namen** Eigenschaft des Typdeskriptors auf den Namen eines Felds in den Typ, der die Entität darstellt (z. B.: **FirstName**).
+1. Legen Sie im Fenster **Eigenschaften** die **Name** -Eigenschaft des Typdeskriptors auf den Namen eines Felds in dem Typ fest, der die Entität darstellt (z. b. **FirstName**).
 
-2. In der Liste neben der **TypeName** -Eigenschaft, wählen Sie den entsprechenden Datentyp aufweisen (z. B. **Int32**).
+2. Wählen Sie in der Liste neben der **tykame** -Eigenschaft den entsprechenden Datentyp aus (z. b. **Int32**).
 
      Weitere Informationen zu anderen optionalen Parametern finden Sie unter [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-an-entity"></a>So definieren Sie eine Entität
 
-1. In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen Namen, der die Entität beschrieben (z. B.: **Wenden Sie sich an**).
+1. Legen Sie im Fenster **Eigenschaften** die **Name** -Eigenschaft auf einen Namen fest, der die Entität beschreibt (z. b. **Contact**).
 
-2. Legen Sie die **TypeName** Eigenschaft, um den vollqualifizierten Namen des Typs, der die Entität darstellt. Bei diesem Typ kann es sich um eine Klasse im Projekt, um einen im BDC-Objektmodell definierten Typ oder um einen Typ handeln, der in einer Assembly definiert ist, auf die in der Lösung verwiesen wird.
+2. Legen Sie die Eigenschaft **tykame** auf den voll qualifizierten Namen des Typs fest, der die Entität darstellt. Bei diesem Typ kann es sich um eine Klasse im Projekt, um einen im BDC-Objektmodell definierten Typ oder um einen Typ handeln, der in einer Assembly definiert ist, auf die in der Lösung verwiesen wird.
 
-    - Für eine Klasse in Ihrem Projekt, wählen Sie den Pfeil nach unten neben der **TypeName** -Eigenschaft, wählen Sie die **aktuelles Projekt** Registerkarte im Dialogfeld, das angezeigt wird, und wählen Sie dann die Klasse in Ihrem Projekt.
+    - Wählen Sie für eine Klasse im Projekt den Pfeil nach unten neben der Eigenschaft **tykame** aus, wählen Sie im angezeigten Dialogfeld die Registerkarte **Aktuelles Projekt** aus, und wählen Sie dann die Klasse in Ihrem Projekt aus.
 
-         Der vollqualifizierte Name enthält den Namespace und den Namen der Klasse, gefolgt vom Namen des LOB-Systems. Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft zu einer Klasse in Ihrem Projekt.
+         Der vollqualifizierte Name enthält den Namespace und den Namen der Klasse, gefolgt vom Namen des LOB-Systems. Im folgenden Beispiel wird der Wert der Eigenschaft **tykame** auf eine Klasse im Projekt festgelegt.
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
     - Bei Verwendung eines Typs, der sich in einer Assembly der Lösung befindet, enthält der vollqualifizierte Name den Namen des Typs, den Namen der Assembly, die Versionsnummer, die Kultur sowie das öffentliche Schlüsseltoken.
 
-         Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft auf einen Typ in einer Assembly, die Sie in der Projektmappe verweisen definiert.
+         Im folgenden Beispiel wird der Wert der **tykame** -Eigenschaft auf einen Typ festgelegt, der in einer Assembly definiert ist, auf die Sie in der Projekt Mappe verweisen.
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
     - Bei Verwendung eines im BDC-Objektmodell definierten Typs enthält der vollqualifizierte Name den Namespace und den Namen des Typs.
 
-         Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft auf einen Typ im BDC-Objektmodell.
+         Im folgenden Beispiel wird der Wert der **tykame** -Eigenschaft auf einen Typ im BDC-Objektmodell festgelegt.
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3. In der **BDC-Methodendetails** , öffnen Sie die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **bearbeiten**.
+3. Öffnen Sie im Fenster **BDC-Methoden Details** die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **Bearbeiten**aus.
 
-     Die **BDC-Explorer** Fenster wird geöffnet.
+     Das **BDC-Explorer** -Fenster wird geöffnet.
 
-4. In der **BDC-Explorer**, öffnen Sie das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen**.
+4. Öffnen Sie im **BDC-Explorer**das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen**aus.
 
      Dem Entitätstypdeskriptor wird ein neuer Typdeskriptor als untergeordnetes Element hinzugefügt. Konfigurieren Sie diesen Typdeskriptor als Feld.
 
@@ -79,47 +78,47 @@ ms.locfileid: "62971328"
 
 ### <a name="to-define-a-collection-of-entities"></a>So definieren Sie eine Auflistung von Entitäten
 
-1. In der **BDC-Methodendetails** Fenster, wählen Sie den Typdeskriptor des Parameters, den Sie möchten.
+1. Wählen Sie im Fenster **BDC-Methoden Details** den Typdeskriptor des gewünschten Parameters aus.
 
-2. Wählen Sie auf der Menüleiste **Ansicht**, **Fenster "Eigenschaften"**.
+2. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaften Fenster**aus.
 
-3. In der **Eigenschaften** legen die **Namen** Eigenschaft, um einen Namen, der die Entität beschrieben (z. B.: **Kontaktiert**).
+3. Legen Sie im Fenster **Eigenschaften** die **Name** -Eigenschaft auf einen Namen fest, der die Entität beschreibt (z. b. **Kontakte**).
 
-4. Legen Sie die **"IsCollection"** Eigenschaft **"true"**. Dadurch wird angegeben, dass es sich bei diesem Typdeskriptor um eine Auflistung von Entitäten handelt.
+4. Legen Sie die **IsCollection** -Eigenschaft auf **true**fest. Dadurch wird angegeben, dass es sich bei diesem Typdeskriptor um eine Auflistung von Entitäten handelt.
 
-5. Legen Sie die **TypeName** Eigenschaft, um eine Zeichenfolge, enthält einen Verweis auf, die <xref:System.Collections.Generic.IEnumerable%601> Schnittstelle und der vollqualifizierte Name des Typs, der die Entität darstellt. Bei diesem Typ kann es sich um eine Klasse im Projekt, um einen im BDC-Objektmodell definierten Typ oder um einen Typ handeln, der in einer Assembly definiert ist, auf die in der Lösung verwiesen wird.
+5. Legen Sie die Eigenschaft **tykame** auf eine Zeichenfolge fest, die einen Verweis auf die <xref:System.Collections.Generic.IEnumerable%601> -Schnittstelle enthält, und auf den voll qualifizierten Namen des Typs, der die Entität darstellt. Bei diesem Typ kann es sich um eine Klasse im Projekt, um einen im BDC-Objektmodell definierten Typ oder um einen Typ handeln, der in einer Assembly definiert ist, auf die in der Lösung verwiesen wird.
 
-   - Für eine Klasse in Ihrem Projekt, wählen Sie den Pfeil nach unten neben der **TypeName** -Eigenschaft, wählen Sie die **aktuelles Projekt** Registerkarte im Dialogfeld, das angezeigt wird, und wählen Sie dann die Klasse in Ihrem Projekt.
+   - Wählen Sie für eine Klasse im Projekt den Pfeil nach unten neben der Eigenschaft **tykame** aus, wählen Sie im angezeigten Dialogfeld die Registerkarte **Aktuelles Projekt** aus, und wählen Sie dann die Klasse in Ihrem Projekt aus.
 
       Der vollqualifizierte Name enthält den Namespace und den Namen der Klasse, gefolgt vom Namen des LOB-Systems.
 
-      Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft, um eine Auflistung von Klassen in Ihrem Projekt.
+      Im folgenden Beispiel wird der Wert der Eigenschaft **tykame** auf eine Auflistung von Klassen in Ihrem Projekt festgelegt.
 
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.BdcModel1.Contact, BdcModel1]`
+      `System.Collections.Generic.IEnumerable`1 [mybdcnamespace. BdcModel1. Contact, BdcModel1] '
 
    - Bei Verwendung eines Typs, der sich in einer Assembly der Lösung befindet, enthält der vollqualifizierte Name den Namen des Typs, den Namen der Assembly, die Versionsnummer, die Kultur sowie das öffentliche Schlüsseltoken.
 
-      Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft, um eine Auflistung von Typen in einer Assembly, die Sie in der Projektmappe verweisen.
+      Im folgenden Beispiel wird der Wert der Eigenschaft **tykame** auf eine Auflistung von Typen in einer Assembly festgelegt, auf die Sie in der Projekt Mappe verweisen.
 
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace. Contact, myAssemblyName, Version = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089] '
 
    - Bei Verwendung eines im BDC-Objektmodell definierten Typs enthält der vollqualifizierte Name lediglich den Namespace und den Namen des Typs.
 
-      Im folgenden Beispiel wird den Wert des der **TypeName** Eigenschaft, um eine Auflistung von im BDC-Objektmodell definierten Typen.
+      Im folgenden Beispiel wird der Wert der **tykame** -Eigenschaft auf eine Auflistung von Typen festgelegt, die im BDC-Objektmodell definiert sind.
 
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`
+      `System.Collections.Generic.IEnumerable`1 [Microsoft. businessdata. Runtime. dynamictype] '
 
-6. In der **BDC-Methodendetails** , öffnen Sie die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **bearbeiten**.
+6. Öffnen Sie im Fenster **BDC-Methoden Details** die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **Bearbeiten**aus.
 
-    Die **BDC-Explorer** Fenster wird geöffnet.
+    Das **BDC-Explorer** -Fenster wird geöffnet.
 
-7. In der **BDC-Explorer**, öffnen Sie das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen**.
+7. Öffnen Sie im **BDC-Explorer**das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen**aus.
 
     Dem Auflistungstypdeskriptor wird ein neuer Typdeskriptor als untergeordnetes Element hinzugefügt. Konfigurieren Sie diesen Typdeskriptor als Entität.
 
-## <a name="see-also"></a>Siehe auch
-- [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)
-- [Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [Vorgehensweise: Fügen Sie einen Parameter einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Vorgehensweise: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)
+- [Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Gewusst wie: Definieren einer Methoden Instanz](../sharepoint/how-to-define-a-method-instance.md)
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
