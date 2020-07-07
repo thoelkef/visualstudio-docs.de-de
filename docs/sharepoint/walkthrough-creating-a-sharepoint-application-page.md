@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0eaf7bda4ac4ed67dae79b8dd83bb59ba6985343
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985028"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016492"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite
 
@@ -37,7 +36,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Unterstützte Editionen von Windows und SharePoint.
 
@@ -61,7 +60,7 @@ Fügen Sie dem Projekt ein **Anwendungs Seiten** Element hinzu, um eine Anwendun
 
 1. Wählen Sie in **Projektmappen-Explorer**das Projekt **mysharepointproject** aus.
 
-2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+2. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
 
 3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die **Anwendungsseite (nur Farm Lösung** ) aus.
 
@@ -73,7 +72,7 @@ Fügen Sie dem Projekt ein **Anwendungs Seiten** Element hinzu, um eine Anwendun
 
 Das Element Anwendungsseite ermöglicht Ihnen die Verwendung eines Designers, um der Anwendungsseite ASP.NET-Steuerelemente hinzuzufügen. Dieser Designer ist mit dem in Visual Web Developer verwendeten Designer identisch. Fügen Sie der **Quell** Ansicht des Designers eine Bezeichnung, eine Optionsfeld Liste und eine Tabelle hinzu, und legen Sie dann die Eigenschaften genauso fest wie beim Entwerfen einer beliebigen Standard-ASP.NET-Seite.
 
-1. Wählen Sie in der Menüleiste **Ansicht** > **Toolbox** aus.
+1. Wählen Sie in der Menüleiste **View**  >  **Toolbox**anzeigen aus.
 
 2. Führen Sie im Knoten Standard der **Toolbox**einen der folgenden Schritte aus:
 
@@ -83,7 +82,7 @@ Das Element Anwendungsseite ermöglicht Ihnen die Verwendung eines Designers, um
 
 3. Wiederholen Sie den vorherigen Schritt, um ein **Dropdown List** -Element und ein **Tabellen** Element zum **PlaceHolderMain** -Inhalts Steuerelement hinzuzufügen.
 
-4. Ändern Sie im Designer den Wert des `Text`-Attributs des Label-Steuer Elements, um **alle Elemente anzuzeigen**.
+4. Ändern Sie im Designer den Wert des- `Text` Attributs des Label-Steuer Elements, um **alle Elemente anzuzeigen**.
 
 5. Oder ersetzen Sie im Designer das `<asp:DropDownList>`-Element durch folgendes XML.
 
@@ -103,7 +102,7 @@ Behandeln Sie Steuerelemente auf einer Anwendungsseite ebenso wie bei einer ASP.
 
      Die Codedatei für die Anwendungsseite wird im Code-Editor geöffnet.
 
-2. Fügen Sie der `SearchItems` -Klasse die folgende Methode hinzu. In diesem Code wird das <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged>-Ereignis der <xref:System.Web.UI.WebControls.DropDownList> behandelt, indem eine Methode aufgerufen wird, die Sie später in dieser exemplarischen Vorgehensweise erstellen.
+2. Fügen Sie der `SearchItems`-Klasse die folgende Methode hinzu. In diesem Code wird das <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged>-Ereignis der <xref:System.Web.UI.WebControls.DropDownList> behandelt, indem eine Methode aufgerufen wird, die Sie später in dieser exemplarischen Vorgehensweise erstellen.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +112,12 @@ Behandeln Sie Steuerelemente auf einer Anwendungsseite ebenso wie bei einer ASP.
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Fügen Sie der `SearchItems` -Klasse die folgende Methode hinzu. Diese Methode durchläuft alle Websites der Serverfarm und sucht nach Elementen, die vom aktuellen Benutzer erstellt oder geändert wurden.
+4. Fügen Sie der `SearchItems`-Klasse die folgende Methode hinzu. Diese Methode durchläuft alle Websites der Serverfarm und sucht nach Elementen, die vom aktuellen Benutzer erstellt oder geändert wurden.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Fügen Sie der `SearchItems` -Klasse die folgende Methode hinzu. Diese Methode zeigt Elemente an, die vom aktuellen Benutzer in der Tabelle erstellt oder geändert wurden.
+5. Fügen Sie der `SearchItems`-Klasse die folgende Methode hinzu. Diese Methode zeigt Elemente an, die vom aktuellen Benutzer in der Tabelle erstellt oder geändert wurden.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -151,7 +150,7 @@ Weitere Informationen zum Entwerfen von SharePoint-Seiteninhalten mit dem Visual
 
 - [Erstellen Sie wiederverwendbare Steuerelemente für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-Gewusst [wie: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)
-[Anwendungs _layouts Seitentyp](/previous-versions/office/aa979604(v=office.14))
+Vorgehens [Weise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md) 
+ [Anwendung_layouts Seitentyp](/previous-versions/office/aa979604(v=office.14))

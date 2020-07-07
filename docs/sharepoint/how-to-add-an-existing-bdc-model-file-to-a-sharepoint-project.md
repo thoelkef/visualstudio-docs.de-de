@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen eine vorhandene BDC-Modelldatei zu einem SharePoint-Projekt | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.ImportDialog
 dev_langs:
@@ -17,37 +17,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c10dcf48e5c047778b86c524b35b4e1d5d8cc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967052"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016513"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt
-  Sie können anpassen, Verpacken und erneutes Bereitstellen ein Business Data Connectivity (BDC)-Modells mithilfe von Visual Studio zum Hinzufügen der Modelldatei (*.bdcm*) auf jedem SharePoint-Farm-Projekt. Weitere Informationen finden Sie unter [erstellen ein Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
+  Sie können ein Business Data Connectivity (BDC)-Modell mithilfe von Visual Studio anpassen, Verpacken und erneut bereitstellen, indem Sie die Modelldatei (*. bdcm*) zu einem SharePoint-Farm Projekt hinzufügen. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Eine BDC-Modelldatei zu einem SharePoint-Projekt hinzufügen
+### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>So fügen Sie eine BDC-Modelldatei zu einem SharePoint-Projekt hinzu
 
-1. In **Projektmappen-Explorer**, wählen Sie den Ordner für eine SharePoint-Projekt.
+1. Wählen Sie in **Projektmappen-Explorer**den Ordner für ein SharePoint-Projekt aus.
 
-2. Wählen Sie auf der Menüleiste **Projekt** > **vorhandenes Element hinzufügen**.
+2. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Vorhandenes Element hinzufügen**aus.
 
-3. In der **vorhandenes Element hinzufügen** wechseln zum Speicherort der die Modelldefinitionsdatei, die Sie verwenden möchten, fügen Sie Ihrem Projekt hinzu, wählen Sie die Datei, und wählen Sie im Dialogfeld die **hinzufügen** Schaltfläche.
+3. Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zum Speicherort der Modell Definitionsdatei, die Sie dem Projekt hinzufügen möchten, wählen Sie die Datei aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
-    Wenn das Modell zu definieren, keine *Line of Business (LOB)-System vom Typ .NET Assembly*, **Hinzufügen von .NET Framework-Assembly LobSystem** Dialogfeld wird geöffnet.
+    Wenn das Modell kein Lob- *System (Line of Business) vom Typ .NET-Assembly*definiert, wird das Dialogfeld **.NET-Assembly-LobSystem hinzufügen** geöffnet.
 
-4. Wenn Sie das Dialogfeld angezeigt wird, führen Sie einen der folgenden Schritte aus:
+4. Wenn das Dialogfeld angezeigt wird, führen Sie einen der folgenden Schritte aus:
 
-   - Sollten Sie benutzerdefinierten Code schreiben und verwenden einen Designer, um die Metadaten für die importierte Modelle zu definieren, wählen die **Ja** Schaltfläche nennen Sie das System, und wählen Sie dann die **OK** Schaltfläche.
+   - Wenn Sie benutzerdefinierten Code schreiben und einen Designer verwenden möchten, um die Metadaten für das importierte Modell zu definieren, klicken Sie auf die Schaltfläche **Ja** , benennen Sie das System, und klicken Sie dann auf die Schaltfläche **OK** .
 
-   - Wählen Sie andernfalls die **keine** Schaltfläche, und wählen Sie dann die **OK** Schaltfläche.
+   - Wählen Sie andernfalls die Schaltfläche **Nein** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     Die **Business Data Connectivity-Modells** Element wird dem Projekt hinzugefügt.
+     Das **Business Data Connectivity-Modell** Element wird dem Projekt hinzugefügt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)
-- [Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
+- [Gewusst wie: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcen Datei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Vorgehensweise: Einschließen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

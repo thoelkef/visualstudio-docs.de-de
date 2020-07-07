@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MT
+ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77277652"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017107"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Mit dem Visual Studio-Profiler können Sie den teuersten (langsamsten) Teil des Projekts suchen und eliminieren, auch bekannt als Langsamster *Pfad*.
@@ -37,21 +36,21 @@ ms.locfileid: "77277652"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
  Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
-- [https://login.microsoftonline.com/consumers/]([!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]).
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Erstellen eines SharePoint-Projekts
  Erstellen Sie zunächst eine SharePoint-Projekt.
 
 ### <a name="to-create-a-sharepoint-project"></a>So erstellen Sie ein SharePoint-Projekt
 
-1. Wählen Sie in der Menüleiste **Datei** > **neue** > **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
+1. Wählen Sie in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
 
-2. Erweitern Sie den **SharePoint** -Knoten entweder unter  **C# Visual** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
+2. Erweitern Sie den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
 
 3. Wählen Sie im Bereich Vorlagen die **SharePoint 2010-Projekt** Vorlage aus.
 
@@ -151,7 +150,7 @@ ms.locfileid: "77277652"
     }
     ```
 
-5. Fügen Sie das folgende Verfahren unterhalb der Prozedur `FeatureActivated`hinzu.
+5. Fügen Sie das folgende Verfahren unterhalb der `FeatureActivated` Prozedur hinzu.
 
     ```vb
 
@@ -237,17 +236,17 @@ ms.locfileid: "77277652"
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>Anzeigen und Interpretieren der Profil Ergebnisse
 
-1. Beachten Sie, dass sich `TimeCounter` im Abschnitt **Funktionen mit den meisten einzelnen Aufgaben** des Beispiel Profil Erstellungs Berichts am Anfang der Liste befindet.
+1. Beachten Sie, dass im Abschnitt **Funktionen mit den meisten einzelnen Aufgaben** des Beispiel Profil Erstellungs Berichts angezeigt wird, dass sich in der Nähe des oberen Rands der `TimeCounter` Liste befindet.
 
      Diese Position deutet darauf hin, dass es sich bei `TimeCounter` um eine der Funktionen mit der höchsten Anzahl an Beispielen gehandelt hat. Hierbei handelt es sich also um einen der größten Leistungsengpässe in der Anwendung. Diese Situation ist nicht überraschend, da dies für Demonstrationszwecke extra so entworfen wurde.
 
-2. Wählen Sie im Abschnitt **Funktionen mit den meisten einzelnen Aufgaben** den `ProcessRequest` Link aus, um die Kostenverteilung für die `ProcessRequest`-Funktion anzuzeigen.
+2. Wählen Sie im Abschnitt **Funktionen mit den meisten einzelnen** Aufgaben den `ProcessRequest` Link aus, um die Kostenverteilung für die `ProcessRequest` Funktion anzuzeigen.
 
-     Beachten Sie im Abschnitt **aufgerufene Funktionen** für `ProcessRequest`, dass die Funktion **featureactiviated** als die teuersten aufgerufene Funktion aufgeführt ist.
+     Beachten Sie im Abschnitt **aufgerufene Funktionen** für `ProcessRequest` , dass die Funktion **featureactiviated** als die teuersten aufgerufene Funktion aufgeführt ist.
 
 3. Wählen Sie im Abschnitt **aufgerufene Funktionen** die Schaltfläche **featureaktiviert** aus.
 
-     Im Abschnitt **aufgerufene Funktionen** für **featureaktivierte**wird die `TimeCounter`-Funktion als die teuersten aufgerufene Funktion aufgelistet. Im Bereich **Funktions Code Ansicht** ist der hervorgehobene Code (`TimeCounter`) der Hotspot und gibt an, wo die Korrektur erforderlich ist.
+     Im Abschnitt **aufgerufene Funktionen** für **featureaktivierte** `TimeCounter` wird die Funktion als die teuersten aufgerufene Funktion aufgelistet. Im Bereich **Funktions Code Ansicht** ist der hervorgehobene Code ( `TimeCounter` ) der Hotspot und gibt an, wo die Korrektur erforderlich ist.
 
 4. Schließen Sie den Beispiel-Profilerstellungsbericht.
 
@@ -272,7 +271,7 @@ ms.locfileid: "77277652"
 
      Die Funktion sollte nun weitaus schneller aktiviert werden, da der Aufruf der Leerlaufschleife beseitigt wurde. Im Beispiel-Profilerstellungsbericht wird dies berücksichtigt.
 
-## <a name="see-also"></a>Siehe auch
-- [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
-- [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)
-- [Auffinden von Anwendungs Engpässen mit Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
+## <a name="see-also"></a>Weitere Informationen
+- [Übersicht über Leistungs Sitzungen](../profiling/performance-session-overview.md)
+- [Einführung in die Leistungsprofil Erstellung](../profiling/beginners-guide-to-performance-profiling.md)
+- [Aufspüren von Anwendungsengpässen mit Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

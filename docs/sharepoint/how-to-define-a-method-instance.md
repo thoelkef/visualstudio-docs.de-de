@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Definieren einer Methoden Instanz | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981801"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016834"
 ---
 # <a name="how-to-define-a-method-instance"></a>Gewusst wie: Definieren einer Methoden Instanz
   Sie müssen mindestens eine Methoden Instanz für jede Methode im Modell definieren.
 
- Fügen Sie mithilfe des Fensters **BDC-Methoden Details** eine Methoden Instanz hinzu. Wenn Sie die-Methoden Instanz hinzufügen, fügt Visual Studio dem XML-Code der Modelldatei in Ihrem Projekt ein `<MethodInstance>`-Element hinzu. Weitere Informationen zu den Attributen eines `<MethodInstance>`-Elements finden Sie unter [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+ Fügen Sie mithilfe des Fensters **BDC-Methoden Details** eine Methoden Instanz hinzu. Wenn Sie die-Methoden Instanz hinzufügen, fügt Visual Studio dem XML-Code der `<MethodInstance>` Modelldatei in Ihrem Projekt ein-Element hinzu. Weitere Informationen zu den Attributen eines- `<MethodInstance>` Elements finden Sie unter [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
 ### <a name="to-define-a-method-instance"></a>So definieren Sie eine Methoden Instanz
 
@@ -35,11 +34,11 @@ ms.locfileid: "72981801"
 
      Unterhalb des Knotens **Instanzen** wird eine neue Methoden Instanz angezeigt.
 
-3. Wählen Sie in der Menüleiste **Ansicht** > **Eigenschaften Fenster**aus.
+3. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
 
 4. Legen Sie im **Eigenschaften** Fenster die Eigenschaften der Methoden Instanz fest. Weitere Informationen zu den einzelnen Eigenschaften finden Sie unter [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)
 - [Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)

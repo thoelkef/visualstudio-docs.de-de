@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981831"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016936"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten
   Sie können Beziehungen zwischen Entitäten in Ihrem Business Data Connectivity (BDC)-Modell definieren, indem Sie Zuordnungen erstellen. Visual Studio generiert Methoden, die Consumer des Modells mit Informationen zu den einzelnen Zuordnungen bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen genutzt werden, um Daten Beziehungen in einer Benutzeroberfläche (UI) anzuzeigen.
@@ -45,7 +44,7 @@ ms.locfileid: "72981831"
 
     1. Wählen Sie in der Spalte **Quell-ID** der **bezeichnerzuordnungs** Tabelle den Bezeichner neben jedem passenden Typdeskriptor aus, der in der Spalte **Feld** angezeigt wird.
 
-         Wählen Sie z. b. in der Spalte **Quell-ID** `ContactID` neben dem `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` Typdeskriptor und dem `ReadItem.salesOrder.SalesOrder.ContactID` Typdeskriptor aus.
+         Wählen Sie z. b **Source ID** . in der Spalte Quell `ContactID` -ID neben dem `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` Typdeskriptor und dem `ReadItem.salesOrder.SalesOrder.ContactID` Typdeskriptor aus.
 
 4. Wenn Sie eine Fremdschlüssel Zuordnung erstellen möchten, deaktivieren Sie das Kontrollkästchen **ist Fremdschlüssel** Zuordnung.
 
@@ -61,7 +60,7 @@ ms.locfileid: "72981831"
 
      Beispiele für Association Navigator-Methoden finden Sie unter [Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md)
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)

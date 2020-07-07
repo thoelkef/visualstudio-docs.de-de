@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines Parameters zu einer Methode | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986238"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016719"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Gewusst wie: Hinzufügen eines Parameters zu einer Methode
   Verwenden Sie einen-Parameter, um Informationen an die-Methode zu übergeben oder um Informationen von einer Methode zurückzugeben. Alle Methoden müssen mindestens einen Parameter aufweisen. Weitere Informationen zum Entwerfen eines Parameters, der den Typ der Methode unterstützt, die Sie erstellen möchten, finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986238"
 
 1. Fügen Sie einer Entität eine Methode hinzu.
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **Weitere Windows** > **BDC-Methoden Details**aus.
+2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details**anzeigen aus.
 
      Das Fenster **BDC-Methoden Details** wird geöffnet. Weitere Informationen finden Sie unter [Übersicht über die Entwurfs Tools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -43,7 +42,7 @@ ms.locfileid: "72986238"
 
      Unterhalb des **para** meters-Knotens wird ein neuer Parameter angezeigt.
 
-5. Wählen Sie in der Menüleiste **Ansicht** > **Eigenschaften Fenster**aus.
+5. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
 
 6. Legen Sie im **Eigenschaften** Fenster die **Name** -Eigenschaft auf einen beliebigen Namen fest, der sinnvoll ist. Wenn die Methode z. b. Kunden zurückgibt, können Sie die Methode " **GetCustomers**" benennen.
 
@@ -53,7 +52,7 @@ ms.locfileid: "72986238"
 
 8. Ändern Sie den Typdeskriptor des Parameters. Weitere Informationen finden Sie unter Gewusst [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)
 - [Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Gewusst wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)

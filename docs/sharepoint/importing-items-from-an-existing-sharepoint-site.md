@@ -1,7 +1,7 @@
 ---
 title: Importieren von Elementen aus einer vorhandenen SharePoint-Website | Microsoft-Dokumentation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -18,18 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820e7c6f2ac7ea3e65e2156f33464bec96fce091
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982590"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017027"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importieren von Elementen aus einer vorhandenen SharePoint-Website
   Mit der Projektvorlage „SharePoint-Lösungspaket importieren“ können Sie Elemente wie Inhaltstypen und Felder aus vorhandenen SharePoint-Websites in einer neuen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projektmappe wiederverwenden. Obwohl Sie die meisten importierten Projektmappen ohne Änderung ausführen können, müssen bestimmte Einschränkungen und Probleme berücksichtigt werden, insbesondere, wenn Sie Elemente nach deren Import ändern.
 
 > [!NOTE]
-> Wenn Sie wiederverwendbare Workflows importieren möchten, verwenden Sie die Projektvorlage „Wiederverwendbaren Workflow importieren“. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Richtlinien für den Import wiederverwendbarer Workflows](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Wenn Sie wiederverwendbare Workflows importieren möchten, verwenden Sie die Projektvorlage „Wiederverwendbaren Workflow importieren“. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Richtlinien für den Import wiederverwendbarer Workflows](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Unterstützte SharePoint-Lösungen
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] unterstützt uneingeschränkt das Importieren von Projektmappen, die in [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oder [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]erstellt wurden.
@@ -59,7 +58,7 @@ ms.locfileid: "72982590"
 
 - Visuelle Webparts (.ascx)
 
-- Webdienste ( *. asmx*)
+- Webdienste (*. asmx*)
 
 - Inhaltstypbindungen
 
@@ -69,10 +68,10 @@ ms.locfileid: "72982590"
 
 - Websitedefinitionen
 
-  Wenn Sie eine Projekt Mappe aus [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oder [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]exportieren, werden diese Elemente automatisch aus der *wsp* -Datei ausgeschlossen. Andere *. wsp* -Dateien, die von nicht unterstützten Tools generiert werden, können diese Elemente jedoch enthalten. (Siehe „Unterstützte SharePoint-Projektmappen (SharePoint-Lösungen)“ weiter oben in diesem Thema.)
+  Wenn Sie eine Projekt Mappe aus [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oder exportieren [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] , werden diese Elemente automatisch aus der *wsp* -Datei ausgeschlossen. Andere *. wsp* -Dateien, die von nicht unterstützten Tools generiert werden, können diese Elemente jedoch enthalten. (Siehe „Unterstützte SharePoint-Projektmappen (SharePoint-Lösungen)“ weiter oben in diesem Thema.)
 
 ## <a name="what-happens-when-you-import-a-solution"></a>Was geschieht beim Importieren einer Projekt Mappe?
- Wenn Sie eine Projekt Mappe mit der Vorlage "SharePoint-Lösungspaket importieren" importieren, kopiert [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] den gesamten Inhalt der *wsp* -Datei und versucht, so viele Zuordnungen und Verweise zwischen importierten Elementen und deren Dateien abzugleichen und beizubehalten. man.
+ Wenn Sie eine Projekt Mappe mit der Vorlage "SharePoint-Lösungspaket importieren" importieren, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kopiert den gesamten Inhalt der *wsp* -Datei und versucht, so viele Zuordnungen und Verweise wie möglich zwischen importierten Elementen und deren Dateien abzugleichen und beizubehalten.
 
  Alle importierten Elemente werden in entsprechende Ordner im **Projektmappen-Explorer**kopiert. Inhaltstypen werden z. B. im Ordner **Inhaltstypen** und Listeninstanzen werden unter **Listeninstanzen**angezeigt. Dateien, die einem importierten Element zugeordnet sind, werden ebenfalls in den Ordner des Elements kopiert. Beispielsweise umfasst eine importierte Listeninstanz ihre Module, Formulare und ASPX-Seiten.
 
@@ -89,28 +88,28 @@ ms.locfileid: "72982590"
 ### <a name="handle-special-cases"></a>Behandeln von Sonderfällen
  In einigen Fällen kann Visual Studio ein Element nicht mit seinen abhängigen Dateien zusammenführen. Alle Dateien, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht auflösen konnte, werden im Ordner **Andere importierte Dateien**angezeigt. Außerdem werden deren **DeploymentType** -Eigenschaften auf **NoDeployment** festgelegt, sodass sie nicht mit der Projektmappe bereitgestellt werden.
 
- Wenn Sie z. b. die Listen Definition "expenseforms" importieren, wird eine Listen Definition mit diesem Namen in **Projektmappen-Explorer** zusammen mit den Dateien " *Elements. XML* " und " *Schema. XML* " unter dem Ordner **Listen Definitionen** angezeigt. Allerdings werden die zugeordneten ASPX- und HTML-Formulare ggf. in einem Ordner namens **ExpenseForms** im Ordner **Andere importierte Dateien** angeordnet. Um den Import abzuschließen, verschieben Sie diese Dateien im **Projektmappen-Explorer** in die Listendefinition „ExpenseForms“, und ändern Sie die **DeploymentType** -Eigenschaft für jede Datei von **NoDeployment** in **ElementFile**.
+ Wenn Sie z. b. die Listen Definition "expenseforms" importieren, wird eine Listen Definition mit diesem Namen zusammen mit den *Elements.xml* -und *Schema.xml* Dateien unter dem Ordner **Listen Definitionen** in **Projektmappen-Explorer** angezeigt. Allerdings werden die zugeordneten ASPX- und HTML-Formulare ggf. in einem Ordner namens **ExpenseForms** im Ordner **Andere importierte Dateien** angeordnet. Um den Import abzuschließen, verschieben Sie diese Dateien im **Projektmappen-Explorer** in die Listendefinition „ExpenseForms“, und ändern Sie die **DeploymentType** -Eigenschaft für jede Datei von **NoDeployment** in **ElementFile**.
 
- Wenn Sie Ereignis Empfänger importieren, wird die Datei " *Elements. XML* " in den richtigen Speicherort kopiert, aber Sie müssen die Assembly manuell in das Projektmappenpaket einschließen, damit Sie mit der Lösung bereitgestellt wird. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] Vorgehensweise finden Sie unter Gewusst [wie: Hinzufügen und Entfernen zusätzlicher](../sharepoint/how-to-add-and-remove-additional-assemblies.md)Assemblys.
+ Beim Importieren von Ereignis Empfängern wird die *Elements.xml* Datei an den richtigen Speicherort kopiert, aber Sie müssen die Assembly manuell in das Projektmappenpaket einschließen, damit Sie mit der Lösung bereitgestellt wird. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]hierzu finden Sie unter Gewusst [wie: Hinzufügen und Entfernen zusätzlicher](../sharepoint/how-to-add-and-remove-additional-assemblies.md)Assemblys.
 
  Wenn Sie Workflows importieren, werden InfoPath-Formulare in den Ordner **Andere importierte Dateien** kopiert. Wenn die *wsp* -Datei eine Webvorlage enthält, wird Sie in **Projektmappen-Explorer**als Startseite festgelegt.
 
 ## <a name="import-fields-and-property-bags"></a>Importieren von Feldern und Eigenschaften Säcken
- Wenn Sie eine Projekt Mappe importieren, die mehrere Felder enthält, werden alle separaten Feld Definitionen in einer einzelnen " *Elements. XML* "-Datei unter einem Knoten in **Projektmappen-Explorer** namens **Felder**zusammengeführt. Ebenso werden alle Eigenschaften Behälter Einträge in der Datei " *Elements. XML* " unter einem Knoten namens " **PropertyBag**" zusammengeführt.
+ Wenn Sie eine Projekt Mappe importieren, die mehrere Felder enthält, werden alle separaten Feld Definitionen in einer einzelnen *Elements.xml* Datei unter einem Knoten in **Projektmappen-Explorer** als **Felder**zusammengeführt. Ebenso werden alle Eigenschaften Behälter Einträge in einer *Elements.xml* -Datei unter einem Knoten namens **propertybags**zusammengeführt.
 
  Felder in SharePoint sind Spalten mit einem angegebenen Datentyp, z. B. „Text“, „Boolesch“ oder „Nachschlagen“. Weitere Informationen finden Sie unter [Baustein: Spalten und Feldtypen](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14)). Mithilfe von Eigenschaftenbehältern können Sie Eigenschaften zu Objekten in SharePoint hinzufügen, wobei alles von einer Farm bis zu einer Liste auf einer SharePoint-Website möglich ist. Eigenschaftenbehälter sind als Hashtabelle mit Eigenschaftennamen und -werten implementiert. Weitere Informationen finden Sie unter [Verwalten der SharePoint-Konfiguration](/previous-versions/msp-n-p/ff647766(v=pandp.10)) oder [SharePoint Property Bag Settings](https://archive.codeplex.com/?p=pbs).
 
 ## <a name="delete-items-in-the-project"></a>Löschen von Elementen im Projekt
- Die meisten Elemente in SharePoint-Projektmappen haben mindestens ein abhängiges Element. Listeninstanzen sind z. B. von Inhaltstypen abhängig, und Inhaltstypen sind von Feldern abhängig. Nachdem Sie eine SharePoint-Projektmappe importiert haben, gibt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wenn Sie ein Element, nicht aber dessen abhängige Elemente in der Projektmappe gelöscht haben, erst dann eine Benachrichtigungen zu Verweisproblemen aus, wenn Sie versuchen, die Projektmappe bereitzustellen. Wenn eine importierte Projektmappe beispielsweise eine Listeninstanz beinhaltet, die von einem Inhaltstyp abhängt, und Sie diesen Inhaltstyp löschen, kann bei der Bereitstellung ein Fehler auftreten. Der Fehler tritt auf, wenn das abhängige Element auf dem SharePoint-Server nicht vorhanden ist. Wenn ein gelöschtes Element auch über einen zugehörigen Eigenschaften Behälter verfügt, löschen Sie diese Eigenschaften Behälter Einträge in der Datei **PropertyBag** *Elements. XML* . Daher empfiehlt es sich, wenn Sie Elemente aus einer importierten Projektmappe löschen und dann Bereitstellungsfehler auftreten, dass Sie überprüfen, ob es abhängige Elementen gibt, die ebenfalls gelöscht werden müssen.
+ Die meisten Elemente in SharePoint-Projektmappen haben mindestens ein abhängiges Element. Listeninstanzen sind z. B. von Inhaltstypen abhängig, und Inhaltstypen sind von Feldern abhängig. Nachdem Sie eine SharePoint-Projektmappe importiert haben, gibt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wenn Sie ein Element, nicht aber dessen abhängige Elemente in der Projektmappe gelöscht haben, erst dann eine Benachrichtigungen zu Verweisproblemen aus, wenn Sie versuchen, die Projektmappe bereitzustellen. Wenn eine importierte Projektmappe beispielsweise eine Listeninstanz beinhaltet, die von einem Inhaltstyp abhängt, und Sie diesen Inhaltstyp löschen, kann bei der Bereitstellung ein Fehler auftreten. Der Fehler tritt auf, wenn das abhängige Element auf dem SharePoint-Server nicht vorhanden ist. Wenn ein gelöschtes Element auch über einen zugehörigen Eigenschaften Behälter verfügt, löschen Sie diese Eigenschaften Behälter Einträge aus der **PropertyBag** - *Elements.xml* Datei. Daher empfiehlt es sich, wenn Sie Elemente aus einer importierten Projektmappe löschen und dann Bereitstellungsfehler auftreten, dass Sie überprüfen, ob es abhängige Elementen gibt, die ebenfalls gelöscht werden müssen.
 
 ## <a name="restore-missing-feature-attributes"></a>Fehlende Funktions Attribute wiederherstellen
  Wenn Projektmappen importiert werden, werden einige optionale Funktionsattribute (Featureattribute) aus dem importierten Funktionsmanifest nicht übernommen. Wenn Sie diese Attribute in der neuen Funktions Datei wiederherstellen möchten, ermitteln Sie die fehlenden Attribute, indem Sie die ursprüngliche Funktions Datei mit dem neuen Funktions Manifest vergleichen, und befolgen Sie die Anweisungen im Thema Gewusst [wie: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Die Erkennung von Bereitstellungs Konflikten wird für integrierte Listen Instanzen nicht durchgeführt.
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt keine Erkennung von Bereitstellungskonflikten für integrierte Listeninstanzen (dies sind die Standardlisteninstanzen, die mit SharePoint geliefert werden) aus. Die Konflikterkennung wird nicht ausgeführt, damit verhindert wird, dass die integrierten Listeninstanzen in SharePoint überschrieben werden. Die integrierten Listeninstanzen werden weiterhin bereitgestellt bzw. aktualisiert, werden aber niemals gelöscht oder überschrieben. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] Problembehandlung bei der [SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt keine Erkennung von Bereitstellungskonflikten für integrierte Listeninstanzen (dies sind die Standardlisteninstanzen, die mit SharePoint geliefert werden) aus. Die Konflikterkennung wird nicht ausgeführt, damit verhindert wird, dass die integrierten Listeninstanzen in SharePoint überschrieben werden. Die integrierten Listeninstanzen werden weiterhin bereitgestellt bzw. aktualisiert, werden aber niemals gelöscht oder überschrieben. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)]Problembehandlung bei [SharePoint-Paketen und-bereit](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)Stellungen.
 
 ## <a name="import-sharepoint-server-2010-workflows"></a>Importieren von SharePoint Server 2010-Workflows
- Wenn Sie einen in [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]erstellten Workflow importieren, wird dieser nach der Bereitstellung nicht ordnungsgemäß ausgeführt. Der Workflow wird nicht ordnungsgemäß ausgeführt, da bestimmte Assemblys fehlen und  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Workflows InfoPath-Formulare enthalten, die in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Workflowprojektmappen derzeit nicht unterstützt werden. Importierte [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Workflows können jedoch ordnungsgemäß ausgeführt werden, nachdem Sie bestimmte Elemente korrigiert haben, so z. B. Hinzufügen von Verweisen auf die [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Assemblys und erneutes Verbinden der InfoPath-Formulare. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Importieren von SharePoint Server 2010-Workflows](/sharepoint/dev/).
+ Wenn Sie einen in [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]erstellten Workflow importieren, wird dieser nach der Bereitstellung nicht ordnungsgemäß ausgeführt. Der Workflow wird nicht ordnungsgemäß ausgeführt, da bestimmte Assemblys fehlen und  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Workflows InfoPath-Formulare enthalten, die in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Workflowprojektmappen derzeit nicht unterstützt werden. Importierte [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Workflows können jedoch ordnungsgemäß ausgeführt werden, nachdem Sie bestimmte Elemente korrigiert haben, so z. B. Hinzufügen von Verweisen auf die [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] -Assemblys und erneutes Verbinden der InfoPath-Formulare. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Importieren von SharePoint Server 2010-Workflows](/sharepoint/dev/).
 
 ## <a name="item-name-character-limit"></a>Zeichenlimit für Elementnamen
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hat für Projekt- und Projektelementnamen samt Pfad eine maximale Länge von 260 Zeichen. Wenn Sie eine Projektmappe importieren und ein Elementname diese Grenze überschreitet, wird folgender Fehler angezeigt:
@@ -133,7 +132,7 @@ ms.locfileid: "72982590"
 
  Das Fehlen eines Skript-Manager-Steuerelements kann ein Problem darstellen, wenn Sie ein [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] - oder ein [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] -Projekt in [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]importieren, da das SharePointProductVersion-Attribut aller neuen Projekte auf 14.0 festgelegt wird. Wenn Sie ein aktualisiertes Projekt bereitstellen, das ein Webformular ohne Skript-Manager hat, wird das Formular in SharePoint nicht angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)
 - [Richtlinien zum Importieren wiederverwendbarer Workflows](../sharepoint/guidelines-for-importing-reusable-workflows.md)
 - [Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
 title: Entwickeln von SharePoint-Lösungen | Microsoft-Dokumentation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
-ms.translationtype: MT
+ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586894"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016790"
 ---
 # <a name="develop-sharepoint-solutions"></a>Entwickeln von SharePoint-Lösungen
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sind mehrere SharePoint-Projekttypvorlagen zum Erstellen von SharePoint-Websites und -Websiteelementen verfügbar. Eine Liste der verfügbaren Projekttypen finden Sie unter [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md). Im Folgenden finden Sie eine Beschreibung der Elemente und Eigenschaften eines SharePoint-Projekts.
@@ -99,9 +98,9 @@ ms.locfileid: "82586894"
 |Benutzerdefiniertes Tool|Gibt ggf. den Namen eines Tools an, das die Datei zur Entwurfszeit umwandelt und die Ausgabe der Umwandlung in einer anderen Datei platziert. Eine DataSet-Datei (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) enthält beispielsweise ein benutzerdefiniertes Standardtool. Weitere Informationen finden Sie unter [Dateieigenschaften](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Namespace des benutzerdefinierten Tools|Der Namespace, in den die Ausgabe des benutzerdefinierten Tools kopiert wird. Weitere Informationen finden Sie unter [Dateieigenschaften](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Bereitstellungsort|Der vollqualifizierte Pfad der Datei auf dem SharePoint-Server. Dieser Pfad setzt sich aus den untergeordneten Bereitstellungsstamm- und Bereitstellungspfadeigenschaften zusammen.|
-|Bereitstellungspfad|Der relative Pfad der Datei in der SharePoint Server-Datei, z. b\\. Workflow1. Der vollqualifizierte Pfad für die Datei wird erstellt, indem der Wert *Deployment Path* mit dem Ende des Werts *Deployment Root* verkettet wird.<br /><br /> Wenn Sie \<den Wert *RootFile* für die *Eigenschaft Bereitstellungstyp* auswählen, wird die Stamm Eigenschaft der *Bereitstellung* in \\SharePointRoot>geändert, was zu \<einem voll qualifizierten Pfad von SharePointRoot\\> \Workflow1 führt. Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
-|Deployment Root|Eine Zeichenfolge. Der Stammordner, in dem die Datei auf dem SharePoint-Server bereitgestellt wird. Beispiel: \<SharePointRoot> \Template\Features\\\<Featurename>\\.<br /><br /> Der Wert der *Deployment Root* -Eigenschaft wird vom Wert der *Deployment Type* -Einstellung bestimmt.|
-|Bereitstellungstyp|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Es kann sich um einen der folgenden Werte handeln:<br /><br /> Nodeployment: * \<kein Wert>*<br /><br /> Element Manifest: * \<SharePointRoot> \Template\Features\\\<Featurename>*\\<br /><br /> Element file: * \<SharePointRoot> \Template\Features\\\<Featurename>\\*<br /><br /> TemplateFile: * \<SharePointRoot> \TEMPLATE\\*<br /><br /> RootFile: * \<SharePointRoot->\\*<br /><br /> Globalresource: * \<SharePointRoot> \Resources\\*<br /><br /> ClassResource: * \<classresourcepath>\\*<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Bereitstellungspfad|Der relative Pfad der Datei in der SharePoint Server-Datei, z. b \\ . Workflow1. Der vollqualifizierte Pfad für die Datei wird erstellt, indem der Wert *Deployment Path* mit dem Ende des Werts *Deployment Root* verkettet wird.<br /><br /> Wenn Sie den Wert *RootFile* für die Eigenschaft *Bereitstellungstyp* auswählen, wird die Eigenschaft " *Bereitstellungs* Stamm" \<SharePointRoot> \\ in geändert, was zu einem voll qualifizierten Pfad von " \<SharePointRoot> \Workflow1" führt \\ . Weitere Informationen finden Sie unter [Verpacken und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
+|Deployment Root|Eine Zeichenfolge. Der Stammordner, in dem die Datei auf dem SharePoint-Server bereitgestellt wird. Beispiel: \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> Der Wert der *Deployment Root* -Eigenschaft wird vom Wert der *Deployment Type* -Einstellung bestimmt.|
+|Bereitstellungstyp|Der Bereitstellungstyp der Datei, der den zugehörigen *Deployment Root* -Wert bestimmt. Es kann sich um einen der folgenden Werte handeln:<br /><br /> NoDeployment*\<no value>*<br /><br /> Element Manifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> Element file: * \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \TEMPLATE \\ *<br /><br /> RootFile*\<SharePointRoot>\\*<br /><br /> Globalresource: * \<SharePointRoot> \ressourcen \\ *<br /><br /> ClassResource*\<ClassResourcePath>\\*<br /><br /> Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Dateiname|Der Name der Datei oder des Ordners für die Elementdatei.|
 |Vollständiger Pfad|Der Speicherort der Datei für das Element. (Schreibgeschützt.)|
 

@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines Filter Deskriptors zu einer Finder-Methode | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986249"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016743"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Gewusst wie: Hinzufügen eines Filter Deskriptors zu einer Finder-Methode
   Filter Deskriptoren ermöglichen es Consumern des Modells, Werte vor der Ausführung an Methoden zu übergeben. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986249"
 
 2. Wählen Sie im Fenster **Methoden Details** den Typdeskriptor des Parameters aus.
 
-3. Wählen Sie in der Menüleiste **Ansicht** > **Eigenschaften Fenster**aus.
+3. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
 
 4. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Typname** auf einen Datentyp fest, der für den Filter geeignet ist.
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986249"
 
      Unterhalb des Knotens **Filter Deskriptoren** wird ein neuer Filter Deskriptor angezeigt.
 
-7. Wählen Sie in der Menüleiste **Ansicht** > **Eigenschaften Fenster**aus.
+7. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
 
 8. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft **Typ** aus.
 
@@ -62,12 +61,12 @@ ms.locfileid: "72986249"
      Im folgenden Beispiel werden Verkaufsaufträge zurückgegeben, die das angegebene Bestelldatum aufweisen.
 
     > [!NOTE]
-    > Ersetzen Sie den Wert des Felds `ServerName` durch den Namen des Servers.
+    > Ersetzen Sie den Wert des `ServerName` Felds durch den Namen des Servers.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)
 - [Gewusst wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
