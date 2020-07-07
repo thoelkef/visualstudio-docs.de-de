@@ -1,7 +1,7 @@
 ---
 title: Erstellen & Debuggen einer SharePoint-Workflow Lösung
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
@@ -16,19 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
-ms.translationtype: MT
+ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983731"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014620"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow Lösung
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine grundlegende sequenzielle Workflow Vorlage erstellt wird. Der Workflow überprüft eine Eigenschaft einer freigegebenen Dokumentbibliothek, um zu bestimmen, ob ein Dokument überprüft wurde. Wenn das Dokument überprüft wurde, wird der Workflow beendet.
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
-- Erstellen eines sequenziellen Workflow Projekts für eine SharePoint-Listen Definition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+- Erstellen eines sequenziellen Workflow Projekts für eine SharePoint-Listen Definition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 - Erstellen von Workflow Aktivitäten.
 
@@ -39,19 +38,19 @@ ms.locfileid: "73983731"
 >
 > Der Computer kann auch unterschiedliche Namen oder Speicherorte für einige der Visual Studio-Benutzeroberflächen Elemente in den folgenden Anweisungen anzeigen. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
 - Visual Studio.
 
 ## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Hinzufügen von Eigenschaften zur SharePoint-Bibliothek für freigegebene Dokumente
- Um den Überprüfungs Status von Dokumenten in der Bibliothek für frei **gegebene Dokumente** zu verfolgen, erstellen wir drei neue Eigenschaften für freigegebene Dokumente auf unserer SharePoint-Website: `Status`, `Assignee`und `Review Comments`. Diese Eigenschaften werden in der Bibliothek für frei **gegebene Dokumente** definiert.
+ Um den Überprüfungs Status von Dokumenten in der Bibliothek für frei **gegebene Dokumente** zu verfolgen, erstellen wir drei neue Eigenschaften für freigegebene Dokumente auf unserer SharePoint-Website: `Status` , `Assignee` und `Review Comments` . Diese Eigenschaften werden in der Bibliothek für frei **gegebene Dokumente** definiert.
 
 #### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>So fügen Sie der SharePoint-Bibliothek für freigegebene Dokumente Eigenschaften hinzu
 
-1. Öffnen Sie eine SharePoint-Website, z. b. http://\<Systemname >/SitePages/Home.aspx, in einem Webbrowser.
+1. Öffnen Sie eine SharePoint-Website, z \<system name> . b. http:///SitePages/Home.aspx, in einem Webbrowser.
 
 2. Wählen Sie auf der Schnellstartleiste **SharedDocuments**aus.
 
@@ -78,7 +77,7 @@ ms.locfileid: "73983731"
 
 3. Wählen Sie im Abschnitt **Allgemeine Einstellungen** den Link **Versions Verwaltungs Einstellungen** aus, um die Seite Einstellungen für die **Versions** Verwaltung anzuzeigen.
 
-4. Vergewissern Sie sich, dass die Einstellung für das **Auschecken von Dokumenten erforderlich ist, bevor Sie bearbeitet werden können** . Wenn dies nicht der Fall ist, ändern Sie den Wert in **Nein** , und wählen Sie dann die Schaltfläche **OK** .
+4. Vergewissern Sie sich, dass die Einstellung für das **No** **Auschecken von Dokumenten erforderlich ist, bevor Sie bearbeitet werden können** . Wenn dies nicht der Fall ist, ändern Sie den Wert in **Nein** , und wählen Sie dann die Schaltfläche **OK** .
 
 5. Schließen Sie den Browser.
 
@@ -89,9 +88,9 @@ ms.locfileid: "73983731"
 
 1. Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Wählen Sie in der Menüleiste **Datei**  > **neue**  > **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
+2. Wählen Sie in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
 
-3. Erweitern Sie den **SharePoint** -Knoten entweder unter  **C# Visual** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
+3. Erweitern Sie den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
 
 4. Wählen Sie im Bereich **Vorlagen** die **SharePoint 2010-Projekt** Vorlage aus.
 
@@ -103,9 +102,9 @@ ms.locfileid: "73983731"
 
      In diesem Schritt wird die Vertrauens Ebene für die Lösung als Farm Lösung festgelegt, die einzige verfügbare Option für Workflow Projekte. Weitere Informationen finden Sie unter [Überlegungen zu Sandkasten Lösungen](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus, und wählen Sie dann in der Menüleiste **Projekt** > **Neues Element hinzufügen**aus.
+7. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
 
-8. Erweitern Sie **unter C# Visual** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
+8. Erweitern Sie unter **Visual c#** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 9. Wählen Sie im Bereich **Vorlagen** die Vorlage **sequenzieller Workflow (nur Farm Lösung)** aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -162,17 +161,17 @@ ms.locfileid: "73983731"
 
 12. Legen Sie im **Eigenschaften** Fenster die Eigenschaften fest, wie in der folgenden Tabelle dargestellt.
 
-    |property|Wert|
+    |Eigenschaft|Wert|
     |--------------|-----------|
     |**CorrelationToken**|**Workflow Token**|
-    |**Worben**|**"onWorkflowItemChanged"**|
+    |**Aufgerufen**|**"onWorkflowItemChanged"**|
 
 ## <a name="handle-activity-events"></a>Behandeln von Aktivitäts Ereignissen
  Überprüfen Sie schließlich den Status des Dokuments aus jeder Aktivität. Wenn das Dokument überprüft wurde, ist der Workflow abgeschlossen.
 
 #### <a name="to-handle-activity-events"></a>So verarbeiten Sie Aktivitäts Ereignisse
 
-1. Fügen Sie in *Workflow1.cs* oder *Workflow1. vb*am Anfang der `Workflow1`-Klasse das folgende Feld hinzu. Dieses Feld wird in einer-Aktivität verwendet, um zu bestimmen, ob der Workflow abgeschlossen ist.
+1. Fügen Sie in *Workflow1.cs* oder *Workflow1. vb*das folgende Feld am Anfang der Klasse hinzu `Workflow1` . Dieses Feld wird in einer-Aktivität verwendet, um zu bestimmen, ob der Workflow abgeschlossen ist.
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -182,7 +181,7 @@ ms.locfileid: "73983731"
     Boolean workflowPending = true;
     ```
 
-2. Fügen Sie der `Workflow1` -Klasse die folgende Methode hinzu. Diese Methode überprüft den Wert der `Document Status`-Eigenschaft der Liste Dokumente, um zu bestimmen, ob das Dokument überprüft wurde. Wenn die `Document Status`-Eigenschaft auf `Review Complete`festgelegt ist, legt die `checkStatus`-Methode das `workflowPending`-Feld auf **false** fest, um anzugeben, dass der Workflow fertig zum Abschluss ist.
+2. Fügen Sie der `Workflow1`-Klasse die folgende Methode hinzu. Diese Methode überprüft den Wert der- `Document Status` Eigenschaft der Liste Dokumente, um zu bestimmen, ob das Dokument überprüft wurde. Wenn die- `Document Status` Eigenschaft auf festgelegt ist `Review Complete` , `checkStatus` legt die-Methode das- `workflowPending` Feld auf **false** fest, um anzugeben, dass der Workflow fertig zu Ende ist.
 
     ```vb
     Private Sub checkStatus()
@@ -200,7 +199,7 @@ ms.locfileid: "73983731"
     }
     ```
 
-3. Fügen Sie den folgenden Code in die Methoden `onWorkflowActivated` und `onWorkflowItemChanged` ein, um die `checkStatus`-Methode aufzurufen. Wenn der Workflow gestartet wird, ruft die `onWorkflowActivated`-Methode die `checkStatus`-Methode auf, um zu bestimmen, ob das Dokument bereits überprüft wurde. Wenn Sie nicht überprüft wurde, wird der Workflow fortgesetzt. Wenn das Dokument gespeichert wird, ruft die `onWorkflowItemChanged`-Methode die `checkStatus`-Methode erneut auf, um zu bestimmen, ob das Dokument überprüft wurde. Während das `workflowPending`-Feld auf **true**festgelegt ist, wird der Workflow weiterhin ausgeführt.
+3. Fügen Sie den folgenden Code in die `onWorkflowActivated` -und- `onWorkflowItemChanged` Methoden ein, um die-Methode aufzurufen `checkStatus` Wenn der Workflow gestartet wird, `onWorkflowActivated` Ruft die-Methode die- `checkStatus` Methode auf, um zu bestimmen, ob das Dokument bereits überprüft wurde. Wenn Sie nicht überprüft wurde, wird der Workflow fortgesetzt. Wenn das Dokument gespeichert wird, ruft die- `onWorkflowItemChanged` Methode die- `checkStatus` Methode erneut auf, um zu bestimmen, ob das Dokument überprüft wurde. Obwohl das `workflowPending` Feld auf **true**festgelegt ist, wird der Workflow weiterhin ausgeführt.
 
     ```vb
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)
@@ -226,7 +225,7 @@ ms.locfileid: "73983731"
     }
     ```
 
-4. Fügen Sie der `isWorkflowPending`-Methode den folgenden Code hinzu, um den Status der `workflowPending`-Eigenschaft zu überprüfen. Jedes Mal, wenn das Dokument gespeichert wird, ruft die **whileActivity1** -Aktivität die `isWorkflowPending`-Methode auf. Diese Methode überprüft die <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A>-Eigenschaft des <xref:System.Workflow.Activities.ConditionalEventArgs>-Objekts, um zu bestimmen, ob die **whileActivity1** -Aktivität fortgesetzt oder beendet werden soll. Wenn die-Eigenschaft auf **true**festgelegt ist, wird die-Aktivität fortgesetzt. Andernfalls wird die-Aktivität abgeschlossen, und der Workflow wird beendet.
+4. Fügen Sie der-Methode den folgenden Code hinzu `isWorkflowPending` , um den Status der-Eigenschaft zu überprüfen `workflowPending` . Jedes Mal, wenn das Dokument gespeichert wird, ruft die **whileActivity1** -Aktivität die- `isWorkflowPending` Methode auf. Diese Methode untersucht die- <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> Eigenschaft des- <xref:System.Workflow.Activities.ConditionalEventArgs> Objekts, um zu bestimmen, ob die **whileActivity1** -Aktivität fortgesetzt oder beendet werden soll. Wenn die-Eigenschaft auf **true**festgelegt ist, wird die-Aktivität fortgesetzt. Andernfalls wird die-Aktivität abgeschlossen, und der Workflow wird beendet.
 
     ```vb
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)
@@ -244,7 +243,7 @@ ms.locfileid: "73983731"
 5. Speichern Sie das Projekt.
 
 ## <a name="test-the-sharepoint-workflow-template"></a>Testen der SharePoint-Workflow Vorlage
- Wenn Sie den Debugger starten, wird von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Workflow Vorlage für den SharePoint-Server bereitgestellt, und der Workflow wird der Liste der frei **gegebenen Dokumente** zugeordnet. Um den Workflow zu testen, starten Sie eine Instanz des Workflows aus einem Dokument in der Liste der frei **gegebenen Dokumente** .
+ Wenn Sie den Debugger starten, wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Workflow Vorlage für den SharePoint-Server bereitgestellt, und der Workflow wird der Liste der frei **gegebenen Dokumente** zugeordnet. Um den Workflow zu testen, starten Sie eine Instanz des Workflows aus einem Dokument in der Liste der frei **gegebenen Dokumente** .
 
 #### <a name="to-test-the-sharepoint-workflow-template"></a>So testen Sie die SharePoint-Workflow Vorlage
 
@@ -262,7 +261,7 @@ ms.locfileid: "73983731"
 
      Dadurch wird das ausgewählte Dokument in die Liste der frei **gegebenen Dokumente** hochgeladen, und der Workflow wird gestartet.
 
-6. Überprüfen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ob der Debugger am Haltepunkt neben der `onWorkflowActivated`-Methode angehalten wird.
+6. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Überprüfen Sie in, ob der Debugger am Haltepunkt neben der-Methode angehalten wird `onWorkflowActivated` .
 
 7. Drücken Sie die Taste **F5** , um die Ausführung fortzusetzen.
 
@@ -287,7 +286,7 @@ ms.locfileid: "73983731"
 
 - Weitere Informationen zu Windows Workflow Foundation Aktivitäten finden Sie unter [System. Workflow. Activities-Namespace](/dotnet/api/system.windows.media.color).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von SharePoint-Workflow Lösungen](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)

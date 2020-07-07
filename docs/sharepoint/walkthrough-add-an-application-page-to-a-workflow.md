@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Hinzufügen eine Anwendungsseite zu einem Workflow | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,45 +15,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409546"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015486"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem workflow
-  Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die zu einem Workflowprojekt von einem Workflow abgeleitete Daten angezeigt werden. Er baut auf das Projekt, das in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow
+  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die von einem Workflow abgeleitete Daten einem Workflow Projekt anzeigt. Es baut auf dem Projekt auf, das im Thema Exemplarische Vorgehensweise [: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)beschrieben wird.
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
-- Hinzufügen einer ASPX-Anwendungsseite zu einem SharePoint-Workflowprojekt.
+- Hinzufügen einer aspx-Anwendungsseite zu einem SharePoint-Workflow Projekt.
 
-- Abrufen von Daten aus dem Workflowprojekt, und bearbeiten es.
+- Abrufen von Daten aus dem Workflow Projekt und deren Bearbeitung.
 
-- Anzeigen von Daten in eine Tabelle auf der Seite "Anwendung" aus.
+- Anzeigen von Daten in einer Tabelle auf der Anwendungsseite.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
 - Visual Studio.
 
-- Müssen Sie auch das Projekt in das Thema abschließen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- Sie müssen das Projekt auch im Thema Exemplarische Vorgehensweise [: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)ausführen.
 
-## <a name="ammend-the-workflow-code"></a>Ammend Workflowcode
- Fügen Sie zunächst eine einzige Zeile Code an den Workflow, den Wert der Ergebnisspalte angezeigt, der den Betrag der Spesenabrechnung festzulegen. Dieser Wert wird weiter unten in der Expense Report Zusammenfassung Berechnung verwendet.
+## <a name="ammend-the-workflow-code"></a>Den Workflow Code ammend
+ Fügen Sie zunächst dem Workflow eine Codezeile hinzu, um den Wert der Spalte Ergebnis auf den Betrag des Ausgaben Berichts festzulegen. Dieser Wert wird später in der Zusammenfassungs Berechnung für Ausgaben Berichte verwendet.
 
-#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Den Wert der Ergebnisspalte angezeigt im Workflow festgelegt
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>So legen Sie den Wert der Ergebnisspalte im Workflow fest
 
-1. Laden Sie das abgeschlossene Projekt aus dem Thema [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Laden Sie das abgeschlossene Projekt aus dem Thema Exemplarische Vorgehensweise [: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-2. Öffnen Sie den Code für *Workflow1.cs* oder *Workflow1.vb* (abhängig von der Programmiersprache).
+2. Öffnen Sie den Code für *Workflow1.cs* oder *Workflow1. vb* (abhängig von ihrer Programmiersprache).
 
-3. Am unteren Rand der `createTask1_MethodInvoking` -Methode, fügen Sie den folgenden Code hinzu:
+3. Fügen Sie am Ende der `createTask1_MethodInvoking` Methode den folgenden Code hinzu:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -66,15 +65,15 @@ ms.locfileid: "63409546"
     ```
 
 ## <a name="create-an-application-page"></a>Erstellen einer Anwendungsseite
- Fügen Sie anschließend eine ASPX-Webformular, für das Projekt. Dieses Formular wird aus das Expense Report-Workflowprojekt abgerufene Daten angezeigt. Zu diesem Zweck fügen Sie eine Anwendungsseite. Eine Anwendungsseite verwendet dieselbe Masterseite als andere SharePoint-Seiten, was bedeutet, dass es anderen Seiten auf der SharePoint-Website ähnelt.
+ Fügen Sie dem Projekt als nächstes ein ASPX-Formular hinzu. In diesem Formular werden Daten angezeigt, die aus dem Workflow Projekt für Ausgaben Berichte abgerufen wurden. Hierzu fügen Sie eine Anwendungsseite hinzu. Auf einer Anwendungsseite wird dieselbe Master Seite wie andere SharePoint-Seiten verwendet, was bedeutet, dass Sie anderen Seiten auf der SharePoint-Website ähnelt.
 
-#### <a name="to-add-an-application-page-to-the-project"></a>Hinzufügen eine Anwendungsseite zum Projekt
+#### <a name="to-add-an-application-page-to-the-project"></a>So fügen Sie dem Projekt eine Anwendungsseite hinzu
 
-1. Wählen Sie das Projekt "ExpenseReport" und dann auf der Menüleiste die Option **Projekt** > **neues Element hinzufügen**.
+1. Wählen Sie das Projekt ExpenseReport aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
 
-2. In der **Vorlagen** Bereich Wählen Sie die **Seite "Anwendung"** Vorlage verwenden Sie den Standardnamen für das Projektelement (**ApplicationPage1.aspx**), und wählen Sie die **Hinzufügen** Schaltfläche.
+2. Wählen Sie im Bereich **Vorlagen** die Vorlage **Anwendungsseite** aus, verwenden Sie den Standardnamen für das Projekt Element (**ApplicationPage1. aspx**), und klicken Sie auf die Schaltfläche **Hinzufügen** .
 
-3. In der [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] von ApplicationPage1.aspx, ersetzen die `PlaceHolderMain` -Abschnitt folgendermaßen:
+3. Ersetzen Sie im [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] von ApplicationPage1. aspx den `PlaceHolderMain` Abschnitt durch Folgendes:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -86,9 +85,9 @@ ms.locfileid: "63409546"
     </asp:Content>
     ```
 
-     Dieser Code Fügt eine Tabelle auf der Seite zusammen mit einem Titel.
+     Mit diesem Code wird der Seite eine Tabelle mit einem Titel hinzugefügt.
 
-4. Fügen Sie einen Titel auf der Seite "Anwendung" hinzu, indem Sie ersetzt die `PlaceHolderPageTitleInTitleArea` -Abschnitt folgendermaßen:
+4. Fügen Sie der Anwendungsseite einen Titel hinzu, indem Sie den `PlaceHolderPageTitleInTitleArea` Abschnitt durch Folgendes ersetzen:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -96,14 +95,14 @@ ms.locfileid: "63409546"
     </asp:Content>
     ```
 
-## <a name="code-the-application-page"></a>Code der Seite "Anwendung"
- Als Nächstes fügen Sie Code hinzu, um die Zusammenfassung der Anwendung für die Spesenabrechnungsseite. Wenn Sie die Seite zu öffnen, durchsucht der Code die Aufgabenliste in SharePoint für Ausgaben, die das zugeordnete Ausgabenlimit überschritten haben. Der Bericht listet jedes Element zusammen mit der Summe der Ausgaben.
+## <a name="code-the-application-page"></a>Programmieren der Anwendungsseite
+ Fügen Sie als nächstes der Seite Zusammenfassung der Ausgaben Berichte Code hinzu. Wenn Sie die Seite öffnen, scannt der Code die Aufgabenliste in SharePoint auf Ausgaben, die das zugewiesene Ausgabenlimit überschritten haben. Im Bericht werden alle Elemente zusammen mit der Summe der Ausgaben aufgelistet.
 
-#### <a name="to-code-the-application-page"></a>Code der Seite "Anwendung"
+#### <a name="to-code-the-application-page"></a>So codieren Sie die Anwendungsseite
 
-1. Wählen Sie die **ApplicationPage1.aspx** Knoten und anschließend auf der Menüleiste die Optionen **Ansicht** > **Code** um den Code hinter der Seite "Anwendung" anzuzeigen.
+1. Wählen Sie den Knoten " **ApplicationPage1. aspx** " aus, und wählen Sie dann in der Menüleiste Code **anzeigen**aus,  >  **Code** um den Code hinter der Anwendungsseite anzuzeigen.
 
-2. Ersetzen Sie die **mit** oder **Import** Anweisungen (abhängig von der Programmiersprache) am Anfang der Klasse durch den folgenden:
+2. Ersetzen **Sie die using** -Anweisung oder die **Import** -Anweisung (abhängig von ihrer Programmiersprache) am Anfang der Klasse mit folgendem:
 
     ```vb
     Imports System
@@ -131,7 +130,7 @@ ms.locfileid: "63409546"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3. Fügen Sie der `Page_Load`-Methode folgenden Code hinzu:
+3. Fügen Sie den folgenden Code in die Methode `Page_Load` ein:
 
     ```vb
     Try
@@ -295,61 +294,61 @@ ms.locfileid: "63409546"
     ```
 
     > [!WARNING]
-    > Achten Sie darauf, dass "TestServer" im Code mit dem Namen eines gültigen Servers ersetzen, auf dem SharePoint ausgeführt wird.
+    > Stellen Sie sicher, dass Sie "Testserver" im Code durch den Namen eines gültigen Servers ersetzen, auf dem SharePoint ausgeführt wird.
 
-## <a name="test-the-application-page"></a>Testen Sie die Seite "Anwendung"
- Als Nächstes zu bestimmen, ob die Seite "Anwendung" der Ausgabedaten ordnungsgemäß angezeigt.
+## <a name="test-the-application-page"></a>Testen der Anwendungsseite
+ Überprüfen Sie als nächstes, ob die Abrechnungsdaten auf der Anwendungsseite ordnungsgemäß angezeigt werden.
 
 #### <a name="to-test-the-application-page"></a>So testen Sie die Anwendungsseite
 
-1. Wählen Sie die **F5** Schlüssel ausführen und Bereitstellen des Projekts in SharePoint.
+1. Drücken Sie die Taste **F5** , um das Projekt auszuführen und in SharePoint bereitzustellen.
 
-2. Wählen Sie die **Startseite** Schaltfläche, und wählen Sie dann die **freigegebene Dokumente** Link auf der Schnellstartleiste auf die Liste Freigegebene Dokumente auf SharePoint-Website angezeigt.
+2. Klicken Sie auf die Schaltfläche **Home** , und wählen Sie dann den Link frei **gegebene Dokumente** auf der Schnellstartleiste aus, um die Liste der freigegebenen Dokumente auf der SharePoint-Website anzuzeigen.
 
-3. Hochladen von zur Darstellung von spesenabrechnungen für dieses Beispiel einige neue Dokumente in die Liste der Dokumente durch Auswählen der **Dokumente** auf einen link auf die **LibraryTools** Registerkarte am oberen Rand der Seite auswählen und dann die  **Dokument hochladen** Schaltfläche im Menüband des Tools.
+3. Um Ausgaben Berichte für dieses Beispiel darzustellen, laden Sie neue Dokumente in die Liste Dokumente hoch, indem Sie auf der Registerkarte **librarytools** oben auf der Seite auf den Link **Dokumente** klicken und dann im Menüband auf die Schaltfläche **Dokument hochladen** klicken.
 
-4. Nachdem Sie einige Dokumente hochladen, instanziieren Sie den Workflow durch Auswahl der **Bibliothek** auf einen link auf die **LibraryTools** Registerkarte am oberen Rand der Seite auswählen und dann die **Bibliothekseinstellungen**Schaltfläche im Menüband des Tools.
+4. Nachdem Sie einige Dokumente hochgeladen haben, instanziieren Sie den Workflow, indem Sie auf der Registerkarte **librarytools** oben auf der Seite den Link **Bibliothek** auswählen und dann im Menüband auf die Schaltfläche **Bibliotheks Einstellungen** klicken.
 
-5. In der **Dokumentbibliothekseinstellungen** Seite die **Workfloweinstellungen** -link in der **Berechtigungen und Verwaltung** Abschnitt.
+5. Wählen Sie auf der Seite " **Dokument Bibliotheks Einstellungen** " im Abschnitt " **Berechtigungen und Verwaltung** " den Link **Workflow Einstellungen** aus.
 
-6. In der **Workfloweinstellungen** Seite die **fügen Sie einen Workflow** Link.
+6. Wählen Sie auf der Seite **Workflow Einstellungen** den Link **Workflow hinzufügen** aus.
 
-7. In der **fügen Sie einen Workflow** Seite die **ExpenseReport - Workflow1** Workflow, geben Sie einen Namen für den Workflow, z. B. **ExpenseTest**, und wählen Sie dann die **Weiter** Schaltfläche.
+7. Wählen Sie auf der Seite **Workflow hinzufügen** den **ExpenseReport-Workflow1-** Workflow aus, geben Sie einen Namen für den Workflow ein, z. b. **expensetest**, und klicken Sie dann auf die Schaltfläche **weiter** .
 
-    Die Workflowzuordnungsformular wird angezeigt. Verwenden sie zum Melden der Ausgaben an.
+    Das Formular für die Workflow Zuordnung wird angezeigt. Verwenden Sie es, um den Betrag der Ausgabenbeschränkung zu melden.
 
-8. Geben Sie im Formular Zuordnung **1000** in die **automatisch Genehmigungsgrenzwert** ein, und wählen Sie dann die **Workflow zuordnen** Schaltfläche.
+8. Geben Sie im Formular Association den Wert **1000** in das Feld **automatische Genehmigung** ein, und wählen Sie dann die Schaltfläche **Workflow zuordnen** aus.
 
-9. Wählen Sie die **Home** Schaltfläche, um auf die SharePoint-Startseite zurückzukehren.
+9. Wählen Sie die **Start** Schaltfläche, um zur SharePoint-Startseite zurückzukehren.
 
-10. Wählen Sie die **freigegebene Dokumente** Link auf der Schnellstartleiste.
+10. Wählen Sie auf der Schnellstartleiste den Link frei **gegebene Dokumente** aus.
 
-11. Wählen Sie eine der hochgeladenen Dokumente, um eine Dropdown-Pfeil angezeigt, wählen Sie diese, und wählen Sie dann die **Workflows** Element.
+11. Wählen Sie eines der hochgeladenen Dokumente aus, um einen Dropdown Pfeil anzuzeigen, wählen Sie es aus, und wählen Sie dann das Element **Workflows** aus.
 
-12. Wählen Sie das Image neben ExpenseTest, um den Workflow Initiierungsformular anzuzeigen.
+12. Wählen Sie das Bild neben dem expensetest aus, um das Workflow Initiierungs Formular anzuzeigen.
 
-13. In der **Expense Total** im Textfeld Geben Sie einen Wert, der größer als 1000 ist, und wählen Sie dann die **Workflow starten** Schaltfläche.
+13. Geben Sie im Textfeld **Ausgaben gesamt** einen Wert ein, der größer als 1000 ist, und wählen Sie dann die Schaltfläche **Workflow starten** aus.
 
-     Wenn eine gemeldete Ausgabe der zugeordneten Gesamtausgaben überschreitet, wird eine Aufgabe zur Aufgabenliste hinzugefügt. Eine Spalte namens **ExpenseTest** mit dem Wert **abgeschlossen** wird auch das Kosten-Berichtselement in der Liste Freigegebene Dokumente hinzugefügt.
+     Wenn eine gemeldete Ausgaben den zugeordneten Ausgabenbetrag überschreitet, wird dem Aufgabenliste eine Aufgabe hinzugefügt. Eine Spalte mit dem Namen **expensetest** mit dem Wert **abgeschlossen** wird auch dem Ausgaben Berichts Element in der Liste der freigegebenen Dokumente hinzugefügt.
 
-14. Wiederholen Sie die Schritte 11 bis 13 mit anderen Dokumenten in der Liste Freigegebene Dokumente. (Die genaue Anzahl von Dokumenten ist nicht wichtig.)
+14. Wiederholen Sie die Schritte 11-13 mit anderen Dokumenten in der Liste freigegebene Dokumente. (Die genaue Anzahl von Dokumenten ist nicht wichtig.)
 
-15. Die Spesenabrechnungsseite für die Zusammenfassung der Anwendung anzeigen, indem Sie die folgende URL in einem Webbrowser öffnen: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Zeigen Sie die Anwendungsseite Zusammenfassung der Ausgaben Berichte an, indem Sie die folgende URL in einem Webbrowser öffnen: **http://**<em>Systemname</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
-     Die Spesenabrechnungsseite Zusammenfassung zeigt eine Liste aller für die spesenabrechnungen, die die zugewiesene Menge überschritten, die Menge, die, der Sie von überschritten, und den Gesamtbetrag für alle Berichte.
+     Auf der Seite Zusammenfassung der Ausgaben Berichte werden alle Ausgaben Berichte aufgelistet, die den zugeordneten Betrag überschritten haben, den Betrag, um den Sie den Betrag überschritten haben, und den Gesamtbetrag für alle Berichte.
 
 ## <a name="next-steps"></a>Nächste Schritte
- Weitere Informationen zu SharePoint-Anwendungsseiten, finden Sie unter [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+ Weitere Informationen zu SharePoint-Anwendungs Seiten finden Sie unter [Erstellen von Anwendungs Seiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
- Erfahren Sie mehr über das SharePoint-Seiteninhalten zu entwerfen, indem Sie mit dem Visual Web Designer in Visual Studio in den folgenden Themen:
+ In den folgenden Themen erfahren Sie mehr über das Entwerfen von SharePoint-Seiten Inhalten mithilfe des visuellen Web-Designers in Visual Studio:
 
-- [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Erstellen Sie Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Erstellen Sie wiederverwendbare Steuerelemente für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
 - [Vorgehensweise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)
-- [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Erstellen von Anwendungs Seiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

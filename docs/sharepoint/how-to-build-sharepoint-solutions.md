@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen von SharePoint-Lösungen | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,25 +14,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: d3beb1602a6572ed578208d6dd85951f1ea1c30b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966886"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014523"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Vorgehensweise: Erstellen von SharePoint-Lösungen
+# <a name="how-to-build-sharepoint-solutions"></a>Gewusst wie: Erstellen von SharePoint-Lösungen
 
-Erstellen Sie Ihre SharePoint Lösung funktioniert genauso wie andere Anwendungen in Visual Studio erstellen. Weitere Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Eine Erläuterung der einige Aspekte jedoch spezifisch für SharePoint-Lösungen sind, finden Sie unter [Vorgehensweise: Bereitstellen und veröffentlichen eine SharePoint-Lösung auf einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
+Das Erstellen der SharePoint-Lösung unterscheidet sich nicht von der Erstellung anderer Anwendungen in Visual Studio. Weitere Informationen zum Erstellen von Anwendungen finden Sie unter [Kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Eine Erläuterung einiger Besonderheiten, die für SharePoint-Lösungen spezifisch sind, finden Sie unter Gewusst [wie: Bereitstellen und Veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
 
-## <a name="to-build-sharepoint-solutions"></a>Zum Erstellen von SharePoint-Lösungen
+## <a name="to-build-sharepoint-solutions"></a>So erstellen Sie SharePoint-Lösungen
 
-1. Entscheiden Sie, ob Sie eine Debug- oder ein Releasebuild erstellt werden. Weitere Informationen finden Sie unter [Debuggerprojekteinstellungen](../debugger/debugger-project-settings.md).
+1. Entscheiden Sie, ob Sie einen Debug-oder Releasebuild erstellen. Weitere Informationen finden Sie unter [debuggerprojekteinstellungen](../debugger/debugger-project-settings.md).
 
-2. Wählen Sie die entsprechende Option zum Erstellen oder Neuerstellen der Projektmappe oder Projekt. Weitere Informationen finden Sie unter [kompilieren und generieren in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+2. Wählen Sie die geeignete Option zum Erstellen oder Neuerstellen der Projekt Mappe oder des Projekts aus. Weitere Informationen finden Sie unter [Kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
 3. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)

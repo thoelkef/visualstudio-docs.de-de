@@ -1,7 +1,7 @@
 ---
 title: Verpacken und Bereitstellen von SharePoint-Lösungen | Microsoft-Dokumentation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45815e03d887f4d22f2559acf741f612cab34c49
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986206"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015596"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Packen und Bereitstellen von SharePoint-Lösungen
   In der Regel wird eine SharePoint-Lösung auf einem SharePoint-Server bereitgestellt, indem eine Projektmappenpaketdatei (. wsp) verwendet wird. Sie können Visual Studio verwenden, um die SharePoint-Projekt Elemente in Funktionen zu organisieren und ein Paket zum Bereitstellen der SharePoint-Funktionen zu erstellen.
 
- Dieses Thema enthält folgende Informationen:
+ Dieses Thema enthält die folgenden Informationen:
 
 - [Erstellen von Features und Paketen](#create-features-and-packages)
 
@@ -37,7 +36,7 @@ ms.locfileid: "72986206"
 ## <a name="create-features-and-packages"></a>Erstellen von Features und Paketen
  Sie können Visual Studio verwenden, um verwandte SharePoint-Elemente in einer *Funktion*zu gruppieren. Beispielsweise kann eine Funktion für eine Kontaktlisten Definition die Listen Instanz und die Listen Definition enthalten. Sie können diese beiden Elemente zu Bereitstellungs Zwecken in einer einzigen Funktion kombinieren. Weitere Informationen zu Features finden Sie unter [Baustein: Features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)).
 
- Als nächstes können Sie ein SharePoint-Lösungspaket ( *. wsp*) erstellen, um mehrere Features, Site Definitionen, Assemblys und andere Dateien in einem einzelnen Paket zu bündeln, das die Dateien in einem von SharePoint benötigten Format speichert, um die Dateien auf dem Server bereitzustellen. Weitere Informationen finden Sie unter [Building Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
+ Als nächstes können Sie ein SharePoint-Lösungspaket (*. wsp*) erstellen, um mehrere Features, Site Definitionen, Assemblys und andere Dateien in einem einzelnen Paket zu bündeln, das die Dateien in einem von SharePoint benötigten Format speichert, um die Dateien auf dem Server bereitzustellen. Weitere Informationen finden Sie unter [Building Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
 
 ## <a name="feature-and-packaging-tool-support"></a>Unterstützung für Funktionen und Verpackungs Tools
  Sie können die SharePoint-Entwicklungs Tools in Visual Studio verwenden, um Ihre SharePoint-Dateien schnell in Features und Lösungs Paketen zu organisieren, um die Bereitstellung zu vereinfachen. Sie können die folgenden Tools verwenden, um das Feature und das Lösungspaket zu konfigurieren.
@@ -95,12 +94,12 @@ ms.locfileid: "72986206"
 
  Um z. b. eine *XML* -Datei zu einem SharePoint-Projekt hinzuzufügen, führen Sie eine der folgenden Aktionen aus:
 
-- Fügen Sie dem Projekt einen für den SharePoint-Ordner "Layouts" zugeordneten Ordner hinzu. Dadurch wird in **Projektmappen-Explorer** einem Ordner mit dem Namen **Layouts** erstellt, der einen Unterordner für das Projekt enthält. Fügen Sie die *XML* -Datei dem neuen Unterordner hinzu. Standardmäßig wird die Datei im SharePoint-Dateisystem unter. bereitgestellt.  *\Template\layouts\\\<Ordnernamen >* . Weitere Informationen zum Hinzufügen von zugeordneten Ordnern finden Sie unter Gewusst [wie: Hinzufügen und entfernen](../sharepoint/how-to-add-and-remove-mapped-folders.md)von zugeordneten Ordnern.
+- Fügen Sie dem Projekt einen für den SharePoint-Ordner "Layouts" zugeordneten Ordner hinzu. Dadurch wird in **Projektmappen-Explorer** einem Ordner mit dem Namen **Layouts** erstellt, der einen Unterordner für das Projekt enthält. Fügen Sie die *XML* -Datei dem neuen Unterordner hinzu. Standardmäßig wird die Datei im SharePoint-Dateisystem unter. bereitgestellt. * \template\layouts \\ \<Folder Name> *. Weitere Informationen zum Hinzufügen von zugeordneten Ordnern finden Sie unter Gewusst [wie: Hinzufügen und entfernen](../sharepoint/how-to-add-and-remove-mapped-folders.md)von zugeordneten Ordnern.
 
 - Fügen Sie die *XML* -Datei zum Ordner eines SharePoint-Projekt Elements hinzu, und ändern Sie dann die Eigenschaft **Bereitstellungstyp** der *XML* -Datei von **nodeployment** in eine andere Einstellung, z. b. **RootFile** oder **Element File**. Die geeignete Einstellung für den **Bereitstellungstyp** hängt von der Datei und dem Projekt ab. Weitere Informationen zu den Eigenschaften Einstellungen für den **Bereitstellungstyp** finden Sie unter [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).
 
   Wenn eine hinzugefügte Datei nicht auf ein bestimmtes Projekt in der Projekt Mappe angewendet wird, können Sie der Projekt Mappe ein leeres SharePoint-Projekt hinzufügen und dann die zusätzlichen Dateien hinzufügen. Eine weitere Alternative zum Bereitstellen von Dateien für SharePoint, insbesondere für die Inhalts Datenbank, besteht darin, dem Projekt ein Modul hinzuzufügen und die Dateien dem Modul hinzuzufügen. Weitere Informationen finden Sie unter [Verwenden von Modulen zum Einschließen von Dateien in die](../sharepoint/using-modules-to-include-files-in-the-solution.md)Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)

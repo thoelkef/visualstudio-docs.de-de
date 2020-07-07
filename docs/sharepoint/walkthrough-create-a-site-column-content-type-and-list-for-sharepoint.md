@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer Website Spalte, eines Inhaltstyps und einer Liste für SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
-ms.translationtype: MT
+ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879351"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015270"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websites palte, eines Inhaltstyps und einer Liste für SharePoint
   Die folgenden Verfahren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Website Spalten – oder *Felder*– sowie einen Inhaltstyp erstellen, der die Websites Palten verwendet. Außerdem wird gezeigt, wie eine Liste erstellt wird, in der der neue Inhaltstyp verwendet wird.
@@ -41,33 +40,33 @@ ms.locfileid: "74879351"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von Windows und SharePoint.
 
 - [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Erstellen von benutzerdefinierten Websites Palten
- Dieses Beispiel erstellt eine Liste zum Verwalten von Patienten in einem Krankenhaus. Zuerst müssen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ein SharePoint-Projekt erstellen und diesem wie folgt Websites Palten hinzufügen.
+ Dieses Beispiel erstellt eine Liste zum Verwalten von Patienten in einem Krankenhaus. Zuerst müssen Sie ein SharePoint-Projekt in Erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und diesem wie folgt Websites Palten hinzufügen.
 
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt
 
-1. Klicken Sie im Menü [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Datei** auf **neu** > **Projekt**.
+1. Wählen Sie im Menü [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Datei** die Optionsfolge **Neu** > **Projekt**aus.
 ::: moniker range="=vs-2017"
-2. Erweitern Sie im Dialogfeld **Neues Projekt** unter **Visual C#**  oder **Visual Basic**den Knoten **Office/SharePoint** , und wählen Sie dann **SharePoint-Lösungen**aus.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** unter **Visual c#** oder **Visual Basic**den Knoten **Office/SharePoint** , und wählen Sie dann **SharePoint-Lösungen**aus.
 
 3. Wählen Sie im Bereich **Vorlagen** das **leere SharePoint-Projekt** für die bestimmte Version von SharePoint aus, die Sie installiert haben. Wenn Sie z. b. SharePoint 2016-Installation haben, wählen Sie die **Projektvorlage SharePoint 2016-Empty** aus.  
 
 4. Ändern Sie den Namen des Projekts in **Clinic**, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Geben Sie im Dialogfeld **Geben Sie den Standort und die Sicherheitsstufe für das Debuggen** an die URL für die lokale SharePoint-Website ein, der Sie das neue benutzerdefinierte Feld Element hinzufügen möchten, oder verwenden Sie den Standard Speicherort (`http://<`*Systemname*`>/)`.
+5. Geben Sie im Dialogfeld **Geben Sie den Standort und die Sicherheitsstufe für das Debuggen** an die URL für die lokale SharePoint-Website ein, der Sie das neue benutzerdefinierte Feld Element hinzufügen möchten, oder verwenden Sie den Standard Speicherort ( `http://<` *Systemname*) `>/)` .
 
 6. Verwenden Sie im Abschnitt **Was ist die Vertrauens Ebene für diese SharePoint-Lösung?** den Standardwert, der **als Sandkasten Lösung**bereitgestellt wird.
 
      Weitere Informationen zu Sandkasten-und Farm Lösungen finden Sie unter [Überlegungen zu Sandkasten](../sharepoint/sandboxed-solution-considerations.md)Lösungen.
 
-7. Klicken Sie auf die Schaltfläche **Fertig stellen** . Das Projekt ist nun in **Projektmappen-Explorer**aufgeführt.
+7. Klicken Sie auf die Schaltfläche **Fertig stellen**. Das Projekt ist nun in **Projektmappen-Explorer**aufgeführt.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 2.  Wählen Sie im Dialogfeld **Neues Projekt erstellen** das **leere SharePoint-Projekt** für die bestimmte Version von SharePoint aus, die Sie installiert haben. Wenn Sie z. b. SharePoint 2016-Installation haben, wählen Sie die **Projektvorlage SharePoint 2016-Empty** aus.
@@ -75,22 +74,22 @@ ms.locfileid: "74879351"
 
 3. Ändern Sie den Namen des Projekts in **Clinic**, und wählen Sie dann die Schaltfläche **Erstellen** aus.
 
-4. Geben Sie im Dialogfeld **Geben Sie den Standort und die Sicherheitsstufe für das Debuggen** an die URL für die lokale SharePoint-Website ein, der Sie das neue benutzerdefinierte Feld Element hinzufügen möchten, oder verwenden Sie den Standard Speicherort (`http://<`*Systemname*`>/)`.
+4. Geben Sie im Dialogfeld **Geben Sie den Standort und die Sicherheitsstufe für das Debuggen** an die URL für die lokale SharePoint-Website ein, der Sie das neue benutzerdefinierte Feld Element hinzufügen möchten, oder verwenden Sie den Standard Speicherort ( `http://<` *Systemname*) `>/)` .
 
 5. Verwenden Sie im Abschnitt **Was ist die Vertrauens Ebene für diese SharePoint-Lösung?** den Standardwert, der **als Sandkasten Lösung**bereitgestellt wird.
 
      Weitere Informationen zu Sandkasten-und Farm Lösungen finden Sie unter [Überlegungen zu Sandkasten](../sharepoint/sandboxed-solution-considerations.md)Lösungen.
 
-6. Klicken Sie auf die Schaltfläche **Fertig stellen** . Das Projekt ist nun in **Projektmappen-Explorer**aufgeführt.
+6. Klicken Sie auf die Schaltfläche **Fertig stellen**. Das Projekt ist nun in **Projektmappen-Explorer**aufgeführt.
 ::: moniker-end
 
 #### <a name="to-add-site-columns"></a>So fügen Sie Site Spalten hinzu
 
-1. Fügen Sie eine neue Website Spalte hinzu. Klicken Sie hierzu in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **Clinic** , und wählen Sie dann > **Neues Element** **Hinzufügen** aus.
+1. Fügen Sie eine neue Website Spalte hinzu. Klicken Sie hierzu in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **Clinic** , und wählen Sie dann **Add**  >  **Neues Element**hinzufügen aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Website Spalte**aus, ändern Sie den Namen in **patientName**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
-3. Belassen Sie in der Datei " *Elements. XML* " der Website Spalte den **Typ** " **Text**", und ändern Sie die **Gruppen** Einstellung in " **Clinic Site Columns**". Nach Abschluss des Vorgangs sollte die Datei " *Elements. XML* " der Website Spalte wie im folgenden Beispiel aussehen.
+3. Belassen Sie in der *Elements.xml* -Datei der Website den **Typ** " **Text**", und ändern Sie die **Gruppen** Einstellung in " **Clinic Site Columns**". Nach Abschluss des Vorgangs sollte die *Elements.xml* Datei der Website Spalte wie im folgenden Beispiel aussehen.
 
     ```xml
     <Field
@@ -116,9 +115,9 @@ ms.locfileid: "74879351"
 
 1. Fügen Sie dem Projekt einen Inhaltstyp hinzu. Wählen Sie hierzu in **Projektmappen-Explorer**den Projekt Knoten aus.
 
-2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+2. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
 
-3. Erweitern Sie **unter C# Visual** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
+3. Erweitern Sie unter **Visual c#** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 4. Wählen Sie im Bereich **Vorlagen** die Vorlage **Inhaltstyp** aus, ändern Sie den Namen in **Patienteninformationen**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
@@ -141,18 +140,18 @@ ms.locfileid: "74879351"
 
 10. Ändern Sie den **Gruppennamen** in **Clinic-Inhaltstypen**, und belassen Sie die anderen Einstellungen auf die Standardwerte.
 
-11. Wählen Sie in der Menüleiste **Datei** > **Alle speichern**aus, und schließen Sie dann den Inhaltstyp-Designer.
+11. Klicken Sie in der Menüleiste auf **Datei**  >  **Alle speichern**, und schließen Sie dann den Inhaltstyp-Designer.
 
-## <a name="create-a-list"></a>Erstellen einer Liste
+## <a name="create-a-list"></a>Erstelle eine Liste.
  Erstellen Sie nun eine Liste, in der der neue Inhaltstyp und die Website Spalten verwendet werden.
 
 #### <a name="to-create-a-list"></a>So erstellen Sie eine Liste
 
 1. Fügen Sie dem Projekt eine Liste hinzu. Wählen Sie hierzu in **Projektmappen-Explorer**den Projekt Knoten aus.
 
-2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+2. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
 
-3. Erweitern Sie **unter C# Visual** oder **Visual Basic**den **SharePoint** -Knoten.
+3. Erweitern Sie unter **Visual c#** oder **Visual Basic**den **SharePoint** -Knoten.
 
 4. Wählen Sie im Bereich **Vorlagen** die Vorlage **Liste** aus, ändern Sie den Namen in **Patienten**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
@@ -176,7 +175,7 @@ ms.locfileid: "74879351"
 
     - Name des Arztes
 
-    - Comments
+    - Kommentare
 
 9. Wählen Sie unter **Spalten Anzeige Name**eine leere Zeile aus, fügen Sie eine benutzerdefinierte Listen Spalte hinzu, und benennen Sie Sie als **Krankenhaus**. Belassen Sie den Datentyp als **einzelne Textzeile**.
 
@@ -211,7 +210,7 @@ ms.locfileid: "74879351"
 
     - Hospital
 
-    - Comments
+    - Kommentare
 
 14. Wählen Sie in der Liste **Eigenschaften** die Eigenschaft **Sortieren und Gruppieren** aus, und klicken Sie dann auf das ![Symbol](../sharepoint/media/ellipsisicon.gif "Symbol "Ellipse"") mit den Auslassungs Punkten mit den Auslassungs Punkten, um das Dialogfeld **Sortieren und Gruppieren** anzuzeigen.
 
@@ -222,7 +221,7 @@ ms.locfileid: "74879351"
 
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Alle speichern**.
+1. Klicken Sie in der Menüleiste auf **Datei**  >  **Alle speichern**.
 
 2. Drücken Sie die Taste **F5** , um die Anwendung auszuführen.
 
@@ -230,7 +229,7 @@ ms.locfileid: "74879351"
 
 3. Wählen Sie auf der Navigationsleiste den Link **Patienten** aus, um die Liste **Patienten** anzuzeigen.
 
-     Die Spaltennamen in der Liste sollten mit denjenigen identisch sein, die Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]auf der Registerkarte **Sichten** eingegeben haben.
+     Die Spaltennamen in der Liste sollten mit denjenigen identisch sein, die Sie auf der Registerkarte **Sichten** in eingegeben haben [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 4. Wählen Sie den Link **Neues Element hinzufügen** aus, um eine Patienten Informationskarte zu erstellen.
 
@@ -238,7 +237,7 @@ ms.locfileid: "74879351"
 
      Der neue Datensatz wird in der Liste angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
 - [Gewusst wie: Erstellen eines benutzerdefinierten Feldtyps](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))

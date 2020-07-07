@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen oder Entfernen von SharePoint-Verbindungen | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,34 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cec1389294c8baf169db055acb87619114d7d19b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435489"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014574"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Vorgehensweise: Hinzufügen oder Entfernen von SharePoint-Verbindungen
-  Server-Explorer können Sie SharePoint-Websites als auch für datenverbindungen zu durchsuchen. Aber bevor Sie den Inhalt der SharePoint-Website durchsuchen können müssen Sie diese hinzufügen, die **SharePoint-Verbindungen** Knoten.
+  Mit Server-Explorer können Sie SharePoint-Websites und Datenverbindungen durchsuchen. Bevor Sie jedoch den Inhalt einer SharePoint-Website durchsuchen können, müssen Sie Sie dem Knoten **SharePoint-Verbindungen** hinzufügen.
 
-### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>Eine SharePoint-Website der SharePoint-Verbindungsknotens hinzu
+### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>So fügen Sie dem Knoten "SharePoint-Verbindungen" eine SharePoint-Website hinzu
 
-1. Wählen Sie auf der Menüleiste **Ansicht**, **Server-Explorer**.
+1. Wählen Sie in der Menüleiste **Ansicht**, **Server-Explorer**aus.
 
-2. In **Server-Explorer**, wählen Sie die **SharePoint-Verbindungen** Knoten und anschließend auf der Menüleiste die Optionen **Tools** > **SharePoint hinzufügen Verbindung**.
+2. Wählen Sie in **Server-Explorer**den Knoten **SharePoint-Verbindungen** aus, und klicken Sie dann in der Menü **Tools**Leiste auf Extras  >  **SharePoint-Verbindung hinzufügen**.
 
-3. In der **SharePoint-Verbindung hinzufügen** Geben Sie die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] für die SharePoint-Website (z. B. http://testserver/sites/unittests).
+3. Geben Sie im Feld **SharePoint-Verbindung hinzufügen** den Wert [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] für die SharePoint-Website ein (z http://testserver/sites/unittests) . b..
 
-### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>So löschen Sie eine SharePoint-Website aus der SharePoint-Verbindungsknotens
+### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>So löschen Sie eine SharePoint-Website aus dem Knoten "SharePoint-Verbindungen"
 
-1. Wählen Sie auf der Menüleiste **Ansicht**, **Server-Explorer** öffnen **Server-Explorer**.
+1. Wählen Sie in der Menüleiste **Ansicht**, **Server-Explorer** aus, um **Server-Explorer**zu öffnen.
 
-2. Erweitern Sie die **SharePoint-Verbindungen** Knoten aus, um die SharePoint-Website anzeigen, die Sie aus löschen möchten **Server-Explorer**.
+2. Erweitern Sie den Knoten **SharePoint-Verbindungen** , um die SharePoint-Website anzuzeigen, die Sie aus **Server-Explorer**löschen möchten.
 
-3. Wählen Sie den Standort aus, und anschließend auf der Menüleiste die Optionen **bearbeiten** > **löschen**.
+3. Wählen Sie den Standort aus, und wählen Sie dann in der Menü **Edit**Leiste die Option  >  **Löschen**bearbeiten aus.
 
     > [!NOTE]
-    > Dieser Schritt nicht die zugrunde liegenden Website nicht löschen. Löscht nur die Verbindung von **Server-Explorer**.
+    > Durch diesen Schritt wird die zugrunde liegende Site nicht gelöscht. Es wird nur die Verbindung aus **Server-Explorer**gelöscht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Durchsuchen von SharePoint-Verbindungen mit Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

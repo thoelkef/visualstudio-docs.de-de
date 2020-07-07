@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit Element Vorlage, Teil 2
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
@@ -11,17 +11,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189151"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016102"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ von SharePoint-Projekt Element definiert und einer Element Vorlage in Visual Studio zugeordnet haben, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitstellen. Sie können den Assistenten verwenden, um Informationen von Benutzern zu sammeln, wenn Sie die Vorlage verwenden, um einem Projekt eine neue Instanz des Projekt Elements hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
 
- In dieser exemplarischen Vorgehensweise fügen Sie dem Projekt Element für benutzerdefinierte Aktionen einen Assistenten hinzu, der in Exemplarische [Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1,](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)veranschaulicht wird. Wenn ein Benutzer ein benutzerdefiniertes Aktionsprojekt Element einem SharePoint-Projekt hinzufügt, sammelt der Assistent Informationen über die benutzerdefinierte Aktion (z. b. den Speicherort und die URL, zu der navigiert werden soll, wenn ein Endbenutzer Sie auswählt) und fügt diese Informationen der Datei " *Elements. XML* " im Neues Projekt Element.
+ In dieser exemplarischen Vorgehensweise fügen Sie dem Projekt Element für benutzerdefinierte Aktionen einen Assistenten hinzu, der in Exemplarische [Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1,](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)veranschaulicht wird. Wenn ein Benutzer ein benutzerdefiniertes Aktionsprojekt Element einem SharePoint-Projekt hinzufügt, sammelt der Assistent Informationen über die benutzerdefinierte Aktion (z. b. den Speicherort und die URL, zu der navigiert werden soll, wenn ein Endbenutzer diese auswählt) und fügt diese Informationen der *Elements.xml* -Datei im neuen Projekt Element hinzu.
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
@@ -36,7 +35,7 @@ ms.locfileid: "73189151"
 > [!NOTE]
 > Sie können ein Beispiel von [GitHub](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) herunterladen, das zeigt, wie benutzerdefinierte Aktivitäten für einen Workflow erstellt werden.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Um diese exemplarische Vorgehensweise auszuführen, müssen Sie zuerst die Projekt Mappe "CustomAction ProjectItem" erstellen, indem Sie Exemplarische [Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1,](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)abschließen.
 
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer außerdem die folgenden Komponenten benötigt:
@@ -47,7 +46,7 @@ ms.locfileid: "73189151"
 
   Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
-- Assistenten für Projekt- und Elementvorlagen in Visual Studio. Weitere Informationen finden Sie unter Gewusst [wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md) und der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle.
+- Assistenten für Projekt- und Elementvorlagen in Visual Studio. Weitere Informationen finden Sie unter Gewusst [wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md) und der- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle.
 
 - Benutzerdefinierte Aktionen in SharePoint. Weitere Informationen finden Sie unter [Custom Action](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14)).
 
@@ -60,13 +59,13 @@ ms.locfileid: "73189151"
 
 2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#**  oder **Visual Basic** , und wählen Sie dann den Knoten **Windows** aus.
+3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** , und wählen Sie dann den Knoten **Windows** aus.
 
 4. Stellen Sie oben im Dialogfeld **Neues Projekt** sicher, dass **.NET Framework 4,5** in der Liste der .NET Framework Versionen ausgewählt ist.
 
 5. Wählen Sie die Projektvorlage **WPF-Benutzer Steuerelement Bibliothek** aus, benennen Sie das Projekt **itemtemplatewizard**, und wählen Sie dann die Schaltfläche **OK** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt der Projekt **Mappe das itemtemplatewizard** -Projekt hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt **Mappe das itemtemplatewizard** -Projekt hinzu.
 
 6. Löschen Sie das UserControl1-Element aus dem Projekt.
 
@@ -79,7 +78,7 @@ ms.locfileid: "73189151"
 
 2. Vergewissern Sie sich, dass das Ziel Framework im **Projekt-Designer**auf .NET Framework 4,5 festgelegt ist.
 
-     Für visuelle C# Projekte können Sie diesen Wert auf der Registerkarte **Anwendung** festlegen. Für Visual Basic Projekte können Sie diesen Wert auf der Registerkarte **Kompilieren** festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+     Für Visual c#-Projekte können Sie diesen Wert auf der Registerkarte **Anwendung** festlegen. Für Visual Basic Projekte können Sie diesen Wert auf der Registerkarte **Kompilieren** festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 3. Fügen Sie im Projekt **itemtemplatewizard** dem Projekt ein **Fenster (WPF)** -Element hinzu, und benennen Sie das Element **wizardwindow**.
 
@@ -102,7 +101,7 @@ ms.locfileid: "73189151"
 9. Ändern Sie im **Eigenschaften** Fenster den Wert der Eigenschaft **Interop-Typen einbetten** in **false**.
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>Definieren des Standard Speicher Orts und der ID-Zeichen folgen für benutzerdefinierte Aktionen
- Jede benutzerdefinierte Aktion verfügt über einen Speicherort und eine ID, die in den `GroupID`-und `Location` Attribute des `CustomAction`-Elements in der Datei " *Elements. XML* " angegeben sind. In diesem Schritt definieren Sie einige der gültigen Zeichen folgen für diese Attribute im itemtemplatewizard-Projekt. Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden diese Zeichen folgen in die Datei " *Elements. XML* " im Projekt Element für benutzerdefinierte Aktionen geschrieben, wenn Benutzer einen Speicherort und eine ID im Assistenten angeben.
+ Jede benutzerdefinierte Aktion verfügt über einen Speicherort und eine ID, der im `GroupID` -Attribut und im- `Location` Attribut des- `CustomAction` Elements in der *Elements.xml* -Datei angegeben ist. In diesem Schritt definieren Sie einige der gültigen Zeichen folgen für diese Attribute im itemtemplatewizard-Projekt. Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden diese Zeichen folgen in die *Elements.xml* -Datei im Projekt Element für benutzerdefinierte Aktionen geschrieben, wenn Benutzer einen Speicherort und eine ID im Assistenten angeben.
 
  Der Einfachheit halber wird in diesem Beispiel nur eine Teilmenge der verfügbaren Standard Speicherorte und IDs unterstützt. Eine vollständige Liste finden Sie unter [standardmäßige benutzerdefinierte Aktions Orte und IDs](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14)).
 
@@ -130,9 +129,9 @@ ms.locfileid: "73189151"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > Das Fenster, das in diesem XAML-Code erstellt wird, wird von der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Basisklasse abgeleitet. Wenn Sie Visual Studio ein benutzerdefiniertes WPF-Dialogfeld hinzufügen, wird empfohlen, dass Sie das Dialogfeld von dieser Klasse ableiten, um das konsistente formatieren mit anderen Dialogfeldern in Visual Studio zu erhalten und Probleme zu vermeiden, die andernfalls bei modalen Dialogfeldern auftreten können. Weitere Informationen finden Sie unter [Erstellen und Verwalten von modalen Dialog Feldern](../extensibility/creating-and-managing-modal-dialog-boxes.md).
+    > Das Fenster, das in diesem XAML-Code erstellt wird, wird von der- <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Basisklasse abgeleitet. Wenn Sie Visual Studio ein benutzerdefiniertes WPF-Dialogfeld hinzufügen, wird empfohlen, dass Sie das Dialogfeld von dieser Klasse ableiten, um das konsistente formatieren mit anderen Dialogfeldern in Visual Studio zu erhalten und Probleme zu vermeiden, die andernfalls bei modalen Dialogfeldern auftreten können. Weitere Informationen finden Sie unter [Erstellen und Verwalten von modalen Dialog Feldern](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
-3. Wenn Sie ein Visual Basic Projekt entwickeln, entfernen Sie den `ItemTemplateWizard`-Namespace aus dem `WizardWindow` Klassennamen im `x:Class`-Attribut des `Window` Elements. Dieses Element befindet sich in der ersten XAML-Zeile. Wenn Sie fertig sind, sollte die erste Zeile dem folgenden Code ähneln:
+3. Wenn Sie ein Visual Basic Projekt entwickeln, entfernen Sie den `ItemTemplateWizard` Namespace aus dem `WizardWindow` Klassennamen im- `x:Class` Attribut des- `Window` Elements. Dieses Element befindet sich in der ersten XAML-Zeile. Wenn Sie fertig sind, sollte die erste Zeile dem folgenden Code ähneln:
 
     ```xml
     <Window x:Class="WizardWindow"
@@ -144,7 +143,7 @@ ms.locfileid: "73189151"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
 
 ## <a name="implement-the-wizard"></a>Implementieren des Assistenten
- Definieren Sie die Funktionalität des Assistenten, indem Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle implementieren.
+ Definieren Sie die Funktionalität des Assistenten, indem Sie die- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle implementieren.
 
 #### <a name="to-implement-the-wizard"></a>So implementieren Sie den Assistenten
 
@@ -153,7 +152,7 @@ ms.locfileid: "73189151"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
 
-## <a name="checkpoint"></a>Checkpoint
+## <a name="checkpoint"></a>Prüfpunkt
  Ab diesem Punkt in der exemplarischen Vorgehensweise wurde der gesamte für den Assistenten benötigte Code in das Projekt eingefügt. Erstellen Sie das Projekt, um sicherzustellen, dass es ohne Fehler kompiliert wird.
 
 #### <a name="to-build-your-project"></a>So erstellen Sie das Projekt
@@ -173,9 +172,9 @@ ms.locfileid: "73189151"
 
 1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü im Projekt Knoten **itemtemplatewizard** , und wählen Sie dann **Eigenschaften**aus.
 
-2. Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren** .
+2. Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.
 
-3. Wählen Sie in der Liste **Schlüsseldatei mit starkem Namen auswählen** die Option **\<neu... >** .
+3. Wählen Sie in der Liste **Schlüsseldatei mit starkem Namen auswählen** die Option aus **\<New...>** .
 
 4. Geben Sie im Dialogfeld Schlüssel für einen **starken Namen erstellen** einen Namen ein, deaktivieren Sie das Kontrollkästchen **Schlüsseldatei mit Kennwort schützen** , und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -183,13 +182,13 @@ ms.locfileid: "73189151"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>So rufen Sie das öffentliche Schlüsseltoken der Assistenten-Assembly ab
 
-1. Führen Sie in einem Visual Studio-Eingabe Aufforderungs Fenster den folgenden Befehl aus, und ersetzen Sie *pathtowizardassembly* durch den vollständigen Pfad zur erstellten itemtemplatewizard. dll-Assembly für das itemtemplatewizard-Projekt auf Ihrem Entwicklungs Computer.
+1. Führen Sie in einem Visual Studio-Eingabe Aufforderungs Fenster den folgenden Befehl aus, und ersetzen Sie *pathtowizardassembly* durch den vollständigen Pfad zur erstellten ItemTemplateWizard.dll-Assembly für das itemtemplatewizard-Projekt auf Ihrem Entwicklungs Computer.
 
     ```xml
     sn.exe -T PathToWizardAssembly
     ```
 
-     Das öffentliche Schlüssel Token für die *itemtemplatewizard. dll* -Assembly wird in das Visual Studio-Eingabe Aufforderungs Fenster geschrieben.
+     Das öffentliche Schlüssel Token für die *ItemTemplateWizard.dll* -Assembly wird in das Visual Studio-Eingabe Aufforderungs Fenster geschrieben.
 
 2. Lassen Sie das Fenster der Visual Studio-Eingabeaufforderung geöffnet. Sie benötigen das öffentliche Schlüssel Token, um das nächste Verfahren abzuschließen.
 
@@ -197,7 +196,7 @@ ms.locfileid: "73189151"
 
 1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten **ItemTemplate** , und öffnen Sie dann die Datei *ItemTemplate. vstemplate* .
 
-2. Fügen Sie das folgende `WizardExtension`-Element zwischen dem `</TemplateContent>`-Tag und dem `</VSTemplate>`-Tag am Ende der Datei hinzu. Ersetzen Sie den *yourtoken* -Wert des `PublicKeyToken`-Attributs durch das öffentliche Schlüssel Token, das Sie im vorherigen Verfahren abgerufen haben.
+2. Fügen Sie das folgende `WizardExtension`-Element zwischen dem `</TemplateContent>`-Tag und dem `</VSTemplate>`-Tag am Ende der Datei hinzu. Ersetzen Sie den *yourtoken* -Wert des- `PublicKeyToken` Attributs durch das öffentliche Schlüssel Token, das Sie im vorherigen Verfahren abgerufen haben.
 
     ```xml
     <WizardExtension>
@@ -206,18 +205,18 @@ ms.locfileid: "73189151"
     </WizardExtension>
     ```
 
-     Weitere Informationen zum `WizardExtension`-Element finden Sie unter [Visual Studio-Vorlagen &#40;&#41;für das WizardExtension-Element](../extensibility/wizardextension-element-visual-studio-templates.md).
+     Weitere Informationen zum- `WizardExtension` Element finden Sie unter [WizardExtension-Element &#40;Visual Studio-Vorlagen&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Speichern und schließen Sie die Datei.
 
-## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Fügen Sie der Datei " *Elements. XML* " in der Element Vorlage austauschbare Parameter hinzu.
- Fügen Sie der Datei " *Elements. XML* " im Projekt "ItemTemplate" mehrere austauschbare Parameter hinzu. Diese Parameter werden in der `PopulateReplacementDictionary`-Methode in der zuvor definierten `CustomActionWizard`-Klasse initialisiert. Wenn ein Benutzer ein benutzerdefiniertes Aktionsprojekt Element einem Projekt hinzufügt, ersetzt Visual Studio diese Parameter automatisch in der Datei " *Elements. XML* " im neuen Projekt Element durch die Werte, die Sie im Assistenten angegeben haben.
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Hinzufügen von austauschbaren Parametern zur *Elements.xml* Datei in der Element Vorlage
+ Fügen Sie der *Elements.xml* -Datei im Projekt "ItemTemplate" mehrere austauschbare Parameter hinzu. Diese Parameter werden in der `PopulateReplacementDictionary`-Methode in der zuvor definierten `CustomActionWizard`-Klasse initialisiert. Wenn ein Benutzer ein benutzerdefiniertes Aktionsprojekt Element einem Projekt hinzufügt, ersetzt Visual Studio diese Parameter automatisch in der *Elements.xml* -Datei im neuen Projekt Element durch die Werte, die Sie im Assistenten angegeben haben.
 
  Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen ($) beginnt und endet. Zusätzlich zum Definieren der eigenen ersetzbaren Parameter können Sie integrierte Parameter verwenden, die vom SharePoint-Projekt System definiert und initialisiert werden. Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).
 
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>So fügen Sie der Datei " *Elements. XML* " austauschbare Parameter hinzu
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>So fügen Sie dem *Elements.xml* Dateiaustausch Bare Parameter hinzu
 
-1. Ersetzen Sie im Projekt "ItemTemplate" den Inhalt der Datei " *Elements. XML* " durch den folgenden XML-Code.
+1. Ersetzen Sie im Projekt ItemTemplate den Inhalt der *Elements.xml* -Datei durch den folgenden XML-Code.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -233,7 +232,7 @@ ms.locfileid: "73189151"
     </Elements>
     ```
 
-     Der neue XML-Code ändert die Werte der Attribute `Id`, `GroupId`, `Location`, `Description`und `Url` in ersetzbare Parameter.
+     Der neue XML-Code ändert die Werte `Id` der `GroupId` Attribute,,, `Location` `Description` und `Url` in ersetzbare Parameter.
 
 2. Speichern und schließen Sie die Datei.
 
@@ -250,11 +249,11 @@ ms.locfileid: "73189151"
 
 3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. Assembly**aus.
 
-4. Wählen Sie in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
 
 5. Wählen Sie in der Liste **Projekt** die Option **itemtemplatewizard**aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-6. Wählen Sie in der Menüleiste **Erstellen** > Projekt Mappe **Erstellen**aus, und stellen Sie sicher, dass die Projekt Mappe ohne Fehler kompiliert wird.
+6. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen**aus, und vergewissern Sie sich,  >  **Build Solution**dass die Projekt Mappe ohne Fehler kompiliert wird.
 
 ## <a name="test-the-wizard"></a>Testen des Assistenten
  Sie können den Assistenten jetzt testen. Beginnen Sie zunächst mit dem Debuggen der Projekt Mappe "customaktionprojectitem" in der experimentellen Instanz von Visual Studio. Testen Sie dann den Assistenten für das Projekt Element benutzerdefinierte Aktion in einem SharePoint-Projekt in der experimentellen Instanz von Visual Studio. Erstellen und führen Sie zum Schluss das SharePoint-Projekt aus, um sicherzustellen, dass die benutzerdefinierte Aktion ordnungsgemäß funktioniert.
@@ -263,21 +262,21 @@ ms.locfileid: "73189151"
 
 1. Starten Sie Visual Studio erneut mit Administratoranmeldeinformationen, und öffnen Sie dann die Projektmappe "CustomActionProjectItem".
 
-2. Öffnen Sie im Projekt "itemtemplatewizard" die Codedatei "customaktionwizard", und fügen Sie der ersten Codezeile in der `RunStarted`-Methode einen Haltepunkt hinzu.
+2. Öffnen Sie im Projekt "itemtemplatewizard" die Codedatei "customaktionwizard", und fügen Sie der ersten Codezeile in der-Methode einen Haltepunkt hinzu `RunStarted` .
 
-3. Wählen Sie in der Menüleiste **Debuggen** > **Ausnahmen**aus.
+3. Wählen Sie in der Menüleiste **debugausnahmen**aus  >  **Exceptions**.
 
 4. Stellen Sie im Dialogfeld **Ausnahmen** sicher, dass die Kontrollkästchen ausgelöste **und** **Benutzer unbehandelt** für **Common Language Runtime-Ausnahmen** deaktiviert sind, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Starten Sie das Debuggen, indem Sie die **F5** -Taste drücken, oder wählen Sie in der Menüleiste **Debuggen** > **Debugging starten**.
+5. Starten Sie das Debugging, indem Sie die Taste **F5** drücken, oder wählen Sie in der Menüleiste **Debuggen**  >  **Debuggen starten**aus.
 
      Visual Studio installiert die Erweiterung in%USERPROFILE%\appdata\local\microsoft\visualstudio\11.0exp\extensions\condeso\custom Action Project Item\1.0 und startet eine experimentelle Instanz von Visual Studio. Sie testen das Projektelement in dieser Instanz von Visual Studio.
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>So testen Sie den Assistenten in Visual Studio
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei** > **Neues** > **Projekt**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt**aus.
 
-2. Erweitern Sie den Knoten **Visual C#**  oder **Visual Basic** (abhängig von der Sprache, die von der Element Vorlage unterstützt wird), erweitern Sie den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
+2. Erweitern Sie den Knoten **Visual c#** oder **Visual Basic** (abhängig von der von der Element Vorlage unterstützten Sprache), erweitern Sie den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 3. Wählen Sie in der Liste der Projektvorlagen **SharePoint 2010-Projekt**aus, nennen Sie das Projekt **customaktionwizardtest**, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -291,7 +290,7 @@ ms.locfileid: "73189151"
 
 8. Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `RunStarted`-Methode festgelegt haben.
 
-9. **Fahren Sie**mit dem Debuggen des Projekts fort, indem Sie die **F5** -Taste drücken, oder wählen Sie in der Menüleiste **Debuggen** > 
+9. Fahren Sie mit dem Debuggen des Projekts fort, indem Sie die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **fortfahren**auswählen
 
      Der Assistent zum Anpassen von SharePoint wird angezeigt.
 
@@ -303,13 +302,13 @@ ms.locfileid: "73189151"
 
 13. Geben Sie im Feld **Beschreibung** **die SharePoint Developer Center-Website**ein.
 
-14. Geben Sie im Feld **URL** **https://docs.microsoft.com/sharepoint/dev/** ein, und klicken Sie dann auf die Schaltfläche **Fertig** stellen.
+14. Geben Sie im Feld **URL** ein **https://docs.microsoft.com/sharepoint/dev/** , und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
 
-     Visual Studio fügt dem Projekt ein Element mit dem Namen **CustomAction1** hinzu und öffnet die Datei " *Elements. XML* " im Editor. Vergewissern Sie sich, dass " *Elements. XML* " die Werte enthält, die Sie im Assistenten angegeben haben.
+     Visual Studio fügt dem Projekt ein Element mit dem Namen **CustomAction1** hinzu und öffnet die Datei *Elements.xml* im Editor. Vergewissern Sie sich, dass *Elements.xml* die Werte enthält, die Sie im Assistenten angegeben haben.
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>So testen Sie die benutzerdefinierte Aktion in SharePoint
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio die **F5** -Taste, oder wählen Sie in der Menüleiste **Debuggen** > **Debuggen starten**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio die **F5** -Taste, oder wählen Sie in der Menüleiste **Debuggen**  >  **Debuggen starten**aus.
 
      Die benutzerdefinierte Aktion wird verpackt und auf der SharePoint-Website bereitgestellt, die von der **Website-URL** -Eigenschaft des Projekts angegeben wird, und der Webbrowser wird mit der Standardseite dieser Website geöffnet.
 
@@ -324,14 +323,14 @@ ms.locfileid: "73189151"
 
      Die Seite " **Listen Einstellungen** " wird angezeigt.
 
-4. Wählen Sie unter der Überschrift " **Communications** " oben auf der Seite den Link **SharePoint Developer Center** aus, vergewissern Sie sich, dass der Browser die Website https://docs.microsoft.com/sharepoint/dev/ öffnet, und schließen Sie dann den Browser.
+4. Wählen Sie unter der Überschrift Übertragung im oberen Bereich der **Seite den Link** **SharePoint Developer Center** aus, vergewissern Sie sich, dass der Browser die Website öffnet https://docs.microsoft.com/sharepoint/dev/ , und schließen Sie dann den Browser.
 
 ## <a name="cleaning-up-the-development-computer"></a>Bereinigen des Entwicklungs Computers
  Nachdem Sie die Tests des Projektelements abgeschlossen haben, entfernen Sie die Projektelementvorlage aus der experimentellen Instanz von Visual Studio.
 
 #### <a name="to-clean-up-the-development-computer"></a>So bereinigen Sie den Entwicklungscomputer
 
-1. **Wählen Sie** in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras > **Erweiterungen und Updates**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates**aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 
@@ -341,10 +340,10 @@ ms.locfileid: "73189151"
 
 4. Schließen Sie beide Instanzen von Visual Studio (die experimentelle Instanz und die Instanz von Visual Studio, in der die Projekt Mappe "customaktionprojectitem" geöffnet ist).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Standardmäßige benutzerdefinierte Aktions Orte und IDs](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

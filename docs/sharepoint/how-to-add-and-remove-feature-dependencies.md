@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen und Entfernen von Funktionsabhängigkeiten | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Hinzufügen und Entfernen von Featureabhängigkeiten | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
@@ -15,56 +15,55 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9373ed07ec49bd41dad343dc447b4b2026793492
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: c318a7dc4672a10e993d0149ec77e7f94679d465
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967004"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014777"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>Vorgehensweise: Hinzufügen und Entfernen von funktionsabhängigkeiten
-  Die SharePoint-Funktion kann von anderen Funktionen für Funktionen oder Daten abhängen. In diesen Fällen können Sie diese anderen Funktionen als Abhängigkeiten für das Feature markieren. Auf diese Weise wird der SharePoint-Server sichergestellt, abhängigen Features aktiviert werden, bevor das Feature aktiviert ist.
+# <a name="how-to-add-and-remove-feature-dependencies"></a>Vorgehensweise: Hinzufügen und Entfernen von Featureabhängigkeiten
+  Die SharePoint-Funktion kann von anderen Features für Funktionen oder Daten abhängen. In diesen Fällen können Sie diese anderen Features als Abhängigkeiten für ihre Funktion markieren. Auf diese Weise wird vom SharePoint-Server sichergestellt, dass abhängige Features aktiviert werden, bevor das Feature aktiviert wird.
 
 ## <a name="add-dependencies"></a>Hinzufügen von Abhängigkeiten
- Sie können andere Funktionen in der Projektmappe als Abhängigkeiten hinzufügen. Auf diese Weise können Sie sicherstellen, dass es sich bei benötigten Funktionen installiert und aktiviert werden, bevor die Funktion installiert ist.
+ Sie können weitere Funktionen in der Projekt Mappe als Abhängigkeiten hinzufügen. Auf diese Weise können Sie sicherstellen, dass erforderliche Funktionen installiert und aktiviert sind, bevor die Funktion installiert ist.
 
-#### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Hinzufügen eine Abhängigkeit auf einer Funktion in der Projektmappe
+#### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>So fügen Sie eine Abhängigkeit zu einer Funktion in der Projekt Mappe hinzu
 
-1. Die Funktions-Designer öffnen, erweitern Sie die **Funktionsaktivierungsabhängigkeiten** Knoten, und wählen Sie dann die **hinzufügen** Schaltfläche.
+1. Öffnen Sie den Funktions-Designer, erweitern Sie den Knoten **Funktions Aktivierungs Abhängigkeiten** , und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
-2. In der **Funktionsaktivierungsabhängigkeiten hinzufügen** Dialogfeld auf die **Funktionen in der Projektmappe eine Abhängigkeit hinzufügen** Optionsfeld, wählen Sie den Titel der Funktion, die Sie als eine Abhängigkeit hinzufügen möchten und klicken Sie dann Wählen Sie die **hinzufügen** Schaltfläche.
+2. Wählen Sie im Dialogfeld **Abhängigkeiten von Featureaktivierung hinzu** fügen die Option **Abhängigkeit von Features in der Projekt Mappe hinzufügen** aus, wählen Sie den Titel der Funktion aus, die Sie als Abhängigkeit hinzufügen möchten, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
-     Sie können mehrere Funktionen hinzufügen, indem Sie mehrere Titel auswählen, bei der Auswahl der **STRG** Schlüssel.
+     Sie können mehr als eine Funktion hinzufügen, indem Sie beim Auswählen der **STRG** -Taste mehrere Titel auswählen.
 
-## <a name="addi-custom-dependencies"></a>Benutzerdefinierter Addi-Abhängigkeiten
- Sie können Funktionen, die bereits bereitgestellt wurden, auf einem SharePoint-Server als Abhängigkeit hinzufügen. Auf diese Weise überprüft der SharePoint-Aktivierung, um sicherzustellen, dass alle abhängigen Features aktiviert werden, bevor die Funktion installiert ist.
+## <a name="addi-custom-dependencies"></a>Benutzerdefinierte ADDI-Abhängigkeiten
+ Sie können Funktionen hinzufügen, die bereits auf einem SharePoint-Server als Abhängigkeit bereitgestellt wurden. Auf diese Weise prüft der SharePoint-Aktivierungsprozess, ob alle abhängigen Features aktiviert sind, bevor das Feature installiert wird.
 
-#### <a name="to-add-a-dependency-by-the-feature-id"></a>Hinzufügen eine Abhängigkeit von der Feature-ID
+#### <a name="to-add-a-dependency-by-the-feature-id"></a>So fügen Sie eine Abhängigkeit mithilfe der Funktions-ID hinzu
 
-1. Die Funktions-Designer öffnen, erweitern Sie die **Funktionsaktivierungsabhängigkeiten** Knoten, und wählen Sie dann die **hinzufügen** Schaltfläche.
+1. Öffnen Sie den Funktions-Designer, erweitern Sie den Knoten **Funktions Aktivierungs Abhängigkeiten** , und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
-2. In der **Funktionsaktivierungsabhängigkeiten hinzufügen** Dialogfeld auf die **benutzerdefinierte Abhängigkeit hinzufügen** Optionsfeld aus.
+2. Wählen Sie im Dialogfeld **Abhängigkeiten von Featureaktivierung hinzu** fügen die Options Schaltfläche **benutzerdefinierte Abhängigkeit hinzufügen** aus.
 
-3. In der **Funktions-ID** Text Geben Sie die GUID für die Funktion, die Sie verwenden möchten, markieren Sie als eine aktivierungsabhängigkeit, und wählen Sie dann die **hinzufügen** Schaltfläche.
+3. Geben Sie im Textfeld **Funktions-ID** die GUID für die Funktion ein, die Sie als Aktivierungs Abhängigkeit markieren möchten, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
-## <a name="edit-custom-dependencies"></a>Bearbeiten benutzerdefinierte Abhängigkeiten
- Sie können benutzerdefinierte Abhängigkeiten bearbeiten, die Sie zuvor hinzugefügt haben. Abhängige Funktionen, die in der Projektmappe können nur entfernt werden, jedoch nicht mehr bearbeitet.
+## <a name="edit-custom-dependencies"></a>Benutzerdefinierte Abhängigkeiten bearbeiten
+ Sie können benutzerdefinierte Abhängigkeiten bearbeiten, die Sie zuvor hinzugefügt haben. Abhängige Features, die in der Projekt Mappe enthalten sind, können jedoch nur entfernt, nicht bearbeitet werden.
 
-#### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>So ändern Sie eine Abhängigkeit für eine Funktion in der Projektmappe
+#### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>So ändern Sie eine Abhängigkeit von einer Funktion in der Projekt Mappe
 
-1. Öffnen Sie die Funktions-Designer, und erweitern Sie dann die **Funktionsaktivierungsabhängigkeiten** Knoten.
+1. Öffnen Sie den Funktions-Designer, und erweitern Sie dann den Knoten **Funktions Aktivierungs Abhängigkeiten** .
 
-2. Wählen Sie den Namen der Funktion, die Sie bearbeiten möchten, und wählen Sie dann die **bearbeiten** Schaltfläche.
+2. Wählen Sie den Namen der Funktion aus, die Sie bearbeiten möchten, und klicken Sie dann auf die Schaltfläche **Bearbeiten** .
 
-3. In der **benutzerdefinierte Funktionsaktivierungsabhängigkeit bearbeiten** im Dialogfeld ändern Sie den Titel, Funktions-ID oder Beschreibung, und wählen Sie dann die **senden** Schaltfläche.
+3. Ändern Sie im Dialogfeld **benutzerdefinierte Funktions Aktivierungs Abhängigkeit bearbeiten** den Titel, die Funktions-ID oder die Beschreibung, und wählen Sie dann die Schaltfläche **senden** aus.
 
-## <a name="remove-dependencies"></a>Entfernen Sie Abhängigkeiten
+## <a name="remove-dependencies"></a>Abhängigkeiten entfernen
 
-#### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>So entfernen Sie eine Abhängigkeit für eine Funktion in der Projektmappe
+#### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>So entfernen Sie eine Abhängigkeit von einer Funktion in der Projekt Mappe
 
-1. Erweitern Sie in der Funktions-Designer die **Funktionsaktivierungsabhängigkeiten** Knoten, wählen Sie den Namen der Funktion, die Sie verwenden möchten, entfernen Sie aus, und wählen Sie dann die **entfernen** Schaltfläche.
+1. Erweitern Sie im Funktions-Designer den Knoten **Funktions Aktivierungs Abhängigkeiten** , wählen Sie den Namen des zu entfernenden Features aus, und klicken Sie dann auf die Schaltfläche **Entfernen** .
 
-## <a name="see-also"></a>Siehe auch
-- [Erstellen von SharePoint-features](../sharepoint/creating-sharepoint-features.md)
+## <a name="see-also"></a>Weitere Informationen
+- [SharePoint-Features erstellen](../sharepoint/creating-sharepoint-features.md)
 - [Vorgehensweise: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [Gewusst wie: Hinzufügen und Entfernen von Elementen zu SharePoint-Features](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
