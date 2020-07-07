@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Webparts für SharePoint | Microsoft-Dokumentation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -23,12 +23,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e0d860f21f0fe2744c8c05c4ebeb3590be68fc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984477"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015056"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Erstellen von Webparts für SharePoint
   Unter Verwendung von Webparts können Benutzer Inhalt, Darstellung und Verhalten der Seiten einer SharePoint-Website mithilfe eines Browsers ändern. Webparts sind serverseitige Steuerelemente, die in einer Webpartseite ausgeführt werden. Diese sind die Bausteine der Seiten, die auf einer SharePoint-Website angezeigt werden. Weitere Informationen finden Sie unter [Building Block: Webparts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -43,9 +42,9 @@ ms.locfileid: "72984477"
 ### <a name="web-part-item"></a>WebPartElement
  Ein **Webpartelement** stellt Dateien bereit, die Sie verwenden können, um ein Webpart für eine SharePoint-Website zu entwerfen. Wenn Sie ein **Webpartelement** hinzufügen, erstellt Visual Studio einen Ordner in Ihrem Projekt und fügt dann dem Ordner mehrere Dateien hinzu. In der folgenden Tabelle werden die einzelnen Dateien beschrieben.
 
-|Datei|Beschreibung|
+|Datei|BESCHREIBUNG|
 |----------|-----------------|
-|*"Elements. xml"*|Enthält Informationen, die von der Funktionsdefinitionsdatei im Projekt verwendet werden, um das Webpart bereitzustellen.|
+|*Elements.xml*|Enthält Informationen, die von der Funktionsdefinitionsdatei im Projekt verwendet werden, um das Webpart bereitzustellen.|
 |WEBPART-Datei|Stellt Informationen bereit, die SharePoint benötigt, um das Webpart in einem Webpartkatalog anzuzeigen.|
 |Codedatei|Enthält Methoden, die Steuerelemente zum Webpart hinzufügen und benutzerdefinierten Inhalt innerhalb des Webparts generieren.|
 
@@ -57,7 +56,7 @@ ms.locfileid: "72984477"
 ## <a name="sharepoint-controls"></a>SharePoint-Steuerelemente
  Visual Studio stellt einige Steuerelemente zum Erstellen von SharePoint-Seiten (beispielsweise Anwendungsseiten) bereit. Diese Steuerelemente werden in der **Toolbox** unter **SharePoint**-Steuerelemente angezeigt. Die Funktionalität für diese Steuerelemente wird vom [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) -Namespace abgeleitet, der ASP.NET-Server Steuerelemente enthält, die auf SharePoint-Website-und-Listenseiten verwendet werden.
 
-|Steuerelementname|Beschreibung|
+|Name des Steuerelements|BESCHREIBUNG|
 |------------------|-----------------|
 |[Aspmenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|Fügt ein ASP-Menü ein. Weitere Informationen finden Sie unter [Übersicht über das Menü Steuer](/previous-versions/ecs0x9w5(v=vs.140))Element.|
 |[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|Fügt ein **Link** Element in die *aspx* -Seite ein und wendet mindestens ein externes Stylesheet an, das durch **cssregistration**definiert ist.|
@@ -108,7 +107,7 @@ ms.locfileid: "72984477"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Zeigt das Erstellen von Webparts für SharePoint-Seiten.|
 |[Vorgehensweise: Erstellen eines SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Zeigt das Erstellen von Webparts für SharePoint mithilfe einer visuellen Entwurfsoberfläche.|

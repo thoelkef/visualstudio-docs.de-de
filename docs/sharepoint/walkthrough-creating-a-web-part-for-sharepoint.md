@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbc4b9a2eecd6eb9853c515eb5358009c32843a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655911"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014585"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint
 
@@ -42,7 +41,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
     > [!NOTE]
     > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
@@ -52,9 +51,9 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 Erstellen Sie zunächst ein leeres SharePoint-Projekt. Später fügen Sie dem Projekt ein Webpart hinzu, indem Sie die Element Vorlage für das **Webpart** verwenden.
 
-1. Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], indem Sie die Option **als Administrator ausführen** verwenden.
+1. Starten [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sie mit der Option **als Administrator ausführen** .
 
-2. Wählen Sie auf der Leiste "Männer" die Option **Datei**  > **neue**  > **Projekt**aus.
+2. Wählen Sie auf der Leiste "Männer" die Option **Datei**  >  **neu**  >  **Projekt**aus.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **SharePoint** unter der Sprache, die Sie verwenden möchten, und wählen Sie dann den Knoten **2010** aus.
 
@@ -68,7 +67,7 @@ Erstellen Sie zunächst ein leeres SharePoint-Projekt. Später fügen Sie dem Pr
 
 Fügen Sie dem Projekt ein **Webpartelement** hinzu. Das **Webpartelement** fügt die Codedatei für das Webpart hinzu. Später fügen Sie der Codedatei für das Webpart Code hinzu, um den Inhalt des Webparts zu rendern.
 
-1. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
 
 2. Erweitern Sie im Dialogfeld **Neues Element hinzufügen** im Bereich **installierte Vorlagen** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
@@ -80,7 +79,7 @@ Fügen Sie dem Projekt ein **Webpartelement** hinzu. Das **Webpartelement** füg
 
 Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Sie diese der Steuerelementauflistung der Webpartklasse hinzufügen.
 
-1. ÖffnenSie in Projektmappen-Explorer *WebPart1. vb* (in Visual Basic) oder *WebPart1.cs* (in C#).
+1. Öffnen **Solution Explorer**Sie in Projektmappen-Explorer *WebPart1. vb* (in Visual Basic) oder *WebPart1.cs* (in c#).
 
      Die Codedatei für das Webpart wird im Code-Editor geöffnet.
 
@@ -89,7 +88,7 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Fügen Sie der `WebPart1` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Felder deklariert:
+3. Fügen Sie der `WebPart1` -Klasse den folgenden Code hinzu. Mit diesem Code werden die folgenden Felder deklariert:
 
    - Ein Datenraster, um Mitarbeiter im Webpart anzuzeigen.
 
@@ -102,12 +101,12 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Fügen Sie der `WebPart1` -Klasse folgenden Code hinzu. In diesem Code wird dem Webpart eine benutzerdefinierte Eigenschaft mit dem Namen `DataFilePath` hinzugefügt. Eine benutzerdefinierte Eigenschaft ist eine Eigenschaft, die vom Benutzer in SharePoint festgelegt werden kann. Diese Eigenschaft ruft den Speicherort einer XML-Datendatei ab, die zum Auffüllen des Datenrasters verwendet wird, und legt diesen Speicherort fest.
+4. Fügen Sie der `WebPart1` -Klasse den folgenden Code hinzu. In diesem Code wird dem Webpart eine benutzerdefinierte Eigenschaft mit dem Namen `DataFilePath` hinzugefügt. Eine benutzerdefinierte Eigenschaft ist eine Eigenschaft, die vom Benutzer in SharePoint festgelegt werden kann. Diese Eigenschaft ruft den Speicherort einer XML-Datendatei ab, die zum Auffüllen des Datenrasters verwendet wird, und legt diesen Speicherort fest.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
-5. Ersetzen Sie die `CreateChildControls` -Methode durch folgenden Code: Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+5. Ersetzen Sie die `CreateChildControls`-Methode durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Fügt das Datenraster und die Bezeichnung hinzu, die Sie im vorherigen Schritt deklariert haben.
 
@@ -116,7 +115,7 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Fügen Sie der `WebPart1` -Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+6. Fügen Sie der `WebPart1`-Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Erstellt ein Verb, das im Verbmenü des gerenderten Webparts angezeigt wird.
 
@@ -162,11 +161,11 @@ Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webp
         </employees>
     ```
 
-2. Wählen Sie im Editor in der Menüleiste **Datei**  > **Speichern**unter aus.
+2. Wählen Sie in Editor in der Menüleiste **Datei**  >  **Speichern**unter aus.
 
 3. Wählen Sie im Dialogfeld **Speichern** unter in der Liste **Dateityp** die Option **alle Dateien**aus.
 
-4. Geben Sie im Feld **Dateiname** den Text **Data. XML**ein.
+4. Geben Sie im Feld **Dateiname** **data.xml**ein.
 
 5. Wählen Sie mithilfe der Schaltfläche **Ordner durchsuchen** einen beliebigen Ordner aus, und klicken Sie dann auf die Schaltfläche **Speichern** .
 
@@ -214,9 +213,9 @@ Zeigen Sie Mitarbeiter an, die keine Manager sind, und blenden Sie diese aus, in
 
      Alle Mitarbeiter werden im Webpart angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
- Gewusst[wie: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
- Gewusst[wie: Erstellen eines SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
- Exemplarische Vorgehensweise[: Erstellen eines Webparts für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+ Vorgehens [Weise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
+ Vorgehens [Weise: Erstellen eines SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
+ Exemplarische Vorgehensweise [: Erstellen eines Webparts für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

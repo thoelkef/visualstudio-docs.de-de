@@ -1,7 +1,7 @@
 ---
-title: 'Exemplarische Vorgehensweise: Hinzufügen von Funktionsereignisempfängern | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Hinzufügen von Funktions Ereignis Empfängern | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +16,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008278"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015365"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>Exemplarische Vorgehensweise: Feature-Ereignisempfänger hinzufügen
-  Feature-Ereignisempfänger sind Methoden, die ausgeführt werden, wenn eines der folgenden Feature-bezogene Ereignisse in SharePoint auftritt:
+# <a name="walkthrough-add-feature-event-receivers"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktions Ereignis Empfängern
+  Funktions Ereignis Empfänger sind Methoden, die ausgeführt werden, wenn eines der folgenden Funktions bezogenen Ereignisse in SharePoint auftritt:
 
-- Ein Feature installiert ist.
+- Eine Funktion ist installiert.
 
 - Eine Funktion ist aktiviert.
 
@@ -34,90 +33,90 @@ ms.locfileid: "63008278"
 
 - Eine Funktion wird entfernt.
 
-  Diese exemplarische Vorgehensweise veranschaulicht, wie Sie einen Ereignisempfänger mit einer Funktion in einer SharePoint-Projekt hinzufügen. Die folgenden Aufgaben veranschaulicht:
+  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Ereignis Empfänger zu einer Funktion in einem SharePoint-Projekt hinzugefügt wird. Es werden die folgenden Aufgaben veranschaulicht:
 
-- Erstellen ein leeres Projekt mit einem Funktionsereignisempfänger aus.
+- Erstellen eines leeren Projekts mit einem Funktions Ereignis Empfänger.
 
-- Behandeln der **FeatureDeactivating** Methode.
+- Verarbeiten der **featuredeaktivierungs** -Methode.
 
-- Verwenden der SharePoint-Projektobjektmodell zum Hinzufügen von einer Ankündigung in die Liste der Ankündigungen
+- Verwenden Sie das SharePoint-Projekt Objektmodell, um der Ankündigungsliste eine Ankündigung hinzuzufügen.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
 - Visual Studio.
 
-## <a name="create-a-feature-event-receiver-project"></a>Eine Funktion Ereignisempfängerprojekt erstellen
- Erstellen Sie zunächst ein Projekt, um den featureereignisempfänger enthält.
+## <a name="create-a-feature-event-receiver-project"></a>Erstellen eines Features-Ereignis Empfänger Projekts
+ Erstellen Sie zunächst ein Projekt, das den Funktions Ereignis Empfänger enthalten soll.
 
-#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Zum Erstellen eines Projekts mit einem Funktionsereignisempfänger
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>So erstellen Sie ein Projekt mit einem Funktions Ereignis Empfänger
 
-1. Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.
+1. Wählen Sie in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus, um das Dialogfeld **Neues Projekt** anzuzeigen.
 
-2. Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.
+2. Erweitern Sie den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann den Knoten **2010** aus.
 
-3. In der **Vorlagen** Bereich, wählen Sie die **SharePoint 2010-Projekt** Vorlage.
+3. Wählen Sie im Bereich **Vorlagen** die **SharePoint 2010-Projekt** Vorlage aus.
 
-     Verwenden Sie diesen Projekttyp für Feature-Ereignisempfänger, da sie keine Projektvorlage aufweisen.
+     Sie verwenden diesen Projekttyp für Funktions Ereignis Empfänger, da Sie keine Projektvorlage haben.
 
-4. In der **Namen** Geben Sie **FeatureEvtTest**, und wählen Sie dann die **OK** anzuzeigenden Schaltfläche die **SharePoint Customization Wizard**.
+4. Geben Sie im Feld **Name den Namen** **FeatureEvtTest**ein, und klicken Sie dann auf die Schaltfläche **OK** , um den Assistenten zum Anpassen von **SharePoint**anzuzeigen.
 
-5. Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite Geben Sie die URL der SharePoint-Website, Server, der Sie das neue Element für benutzerdefiniertes Feld hinzufügen möchten, oder verwenden Sie den Standardspeicherort (http://\<*System Namen*> /).
+5. Geben Sie auf der Seite **Site und Sicherheitsebene für Debugging angeben** die URL für die SharePoint-Serversite ein, der Sie das neue benutzerdefinierte Feld Element hinzufügen möchten, oder verwenden Sie den Standard Speicherort (http:// \<*system name*> /).
 
-6. In der **was der Vertrauensebene für diese SharePoint-Lösung ist?** Abschnitt der **als farmlösung bereitstellen** Optionsfeld aus.
+6. Wählen Sie im Abschnitt **Was ist die Vertrauens Ebene für diese SharePoint-Lösung?** das Optionsfeld **als Farm Lösung** bereitstellen aus.
 
-     Weitere Informationen über sandkastenlösungen im Vergleich zu farmlösungen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).
+     Weitere Informationen zu Sandkasten Lösungen im Vergleich zu Farm Lösungen finden Sie unter [Überlegungen zu Sandkasten](../sharepoint/sandboxed-solution-considerations.md)Lösungen.
 
-7. Wählen Sie die **Fertig stellen** Schaltfläche, und klicken Sie dann Beachten Sie, dass eine Funktion mit dem Namen Feature1 unter der **Features** Knoten.
+7. Wählen Sie die Schaltfläche **Fertig** stellen aus, und beachten Sie, dass unter dem Knoten **Features** eine Funktion mit dem Namen Feature1 angezeigt wird.
 
-## <a name="add-an-event-receiver-to-the-feature"></a>Das Feature einen Ereignisempfänger hinzufügen
- Als Nächstes das Feature fügen Sie einen Ereignisempfänger hinzu, und fügen Sie Code, der ausgeführt wird, wenn die Funktion deaktiviert ist.
+## <a name="add-an-event-receiver-to-the-feature"></a>Hinzufügen eines Ereignis Empfängers zum Feature
+ Fügen Sie als nächstes der Funktion einen Ereignis Empfänger hinzu, und fügen Sie Code hinzu, der ausgeführt wird, wenn die Funktion deaktiviert wird.
 
-#### <a name="to-add-an-event-receiver-to-the-feature"></a>Um das Feature einen Ereignisempfänger hinzufügen
+#### <a name="to-add-an-event-receiver-to-the-feature"></a>So fügen Sie der Funktion einen Ereignis Empfänger hinzu
 
-1. Öffnen Sie das Kontextmenü für den Knoten "Features", und wählen Sie dann **Feature hinzufügen** um eine Funktion zu erstellen.
+1. Öffnen Sie das Kontextmenü für den Knoten Features, und wählen Sie dann **Feature hinzufügen** aus, um ein Feature zu erstellen.
 
-2. Unter den **Features** Knoten, öffnen Sie das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignisempfänger hinzufügen** das Feature einen Ereignisempfänger hinzu.
+2. Öffnen Sie unter dem Knoten **Features** das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignis Empfänger hinzufügen** aus, um der Funktion einen Ereignis Empfänger hinzuzufügen.
 
-     Dadurch wird eine Codedatei unter Feature1 hinzugefügt. In diesem Fall es heißt entweder *Feature1.EventReceiver.cs* oder *Feature1.EventReceiver.vb*, je nach Programmiersprache Ihres Projekts.
+     Dadurch wird eine Codedatei unter Feature1 hinzugefügt. In diesem Fall wird Sie abhängig von der Entwicklungssprache Ihres Projekts entweder *Feature1.EventReceiver.cs* oder *Feature1. EventReceiver. vb*benannt.
 
-3. Wenn Ihr Projekt, im geschrieben wird [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], fügen Sie den folgenden Code am Anfang der Ereignisempfänger, wenn sie nicht bereits vorhanden ist:
+3. Wenn Ihr Projekt in geschrieben ist [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] , fügen Sie den folgenden Code am Anfang des Ereignis Empfängers hinzu, wenn er nicht bereits vorhanden ist:
 
      [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
 
-4. Die Ereignisempfängerklasse enthält mehrere auskommentierte-Methoden, die als Ereignisse fungieren. Ersetzen Sie die **FeatureDeactivating** -Methode durch Folgendes:
+4. Die Ereignis Empfängerklasse enthält mehrere auskommentierten Methoden, die als Ereignisse fungieren. Ersetzen Sie die **featuredeaktivierungs** -Methode durch Folgendes:
 
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
      [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
 
-## <a name="test-the-feature-event-receiver"></a>Testen Sie den Funktionsereignisempfänger
- Deaktivieren Sie als Nächstes die Funktion zum Testen, ob die **FeatureDeactivating** Methode gibt eine Ankündigung der Ankündigungen für SharePoint-Liste.
+## <a name="test-the-feature-event-receiver"></a>Testen des Funktions Ereignis Empfängers
+ Deaktivieren Sie als nächstes das Feature, um zu testen, ob die **featueinlösen** -Methode eine Ankündigung an die SharePoint-Ankündigungsliste ausgibt.
 
-#### <a name="to-test-the-feature-event-receiver"></a>So testen Sie den Funktionsereignisempfänger
+#### <a name="to-test-the-feature-event-receiver"></a>So testen Sie den Funktions Ereignis Empfänger
 
-1. Legen Sie den Wert der Projekt **aktive Bereitstellungskonfiguration** Eigenschaft **keine Aktivierung**.
+1. Legen Sie den Wert der Eigenschaft **aktive Bereitstellungs Konfiguration** des Projekts auf **keine Aktivierung**fest.
 
-     Durch Festlegen dieser Eigenschaft wird verhindert, dass die Funktion in SharePoint aktiviert und können Sie das Debuggen von Funktionsereignisempfängern. Weitere Informationen finden Sie unter [Debuggen von SharePoint-Lösungen](../sharepoint/debugging-sharepoint-solutions.md).
+     Durch Festlegen dieser Eigenschaft wird verhindert, dass das Feature in SharePoint aktiviert wird, und Sie können Funktions Ereignis Empfänger Debuggen. Weitere Informationen finden Sie unter [Debuggen von SharePoint-Lösungen](../sharepoint/debugging-sharepoint-solutions.md).
 
-2. Wählen Sie die **F5** Taste, um das Projekt ausführen und in SharePoint bereitzustellen.
+2. Drücken Sie die Taste **F5** , um das Projekt auszuführen und in SharePoint bereitzustellen.
 
-3. Öffnen Sie am oberen Rand der Seite für die SharePoint-Webanwendung, die **Websiteaktionen** Menü und wählen Sie dann **Standorteinstellungen**.
+3. Öffnen Sie oben auf der SharePoint-Webseite das Menü **Website Aktionen** , und wählen Sie dann **Website Einstellungen**aus.
 
-4. Unter den **Websiteaktionen** Teil der **Standorteinstellungen** Seite die **Websitefeatures verwalten** Link.
+4. Wählen Sie auf der Seite **Standorteinstellungen** im Abschnitt **Website Aktionen** den Link **Website Features verwalten** aus.
 
-5. Auf der **Features** Seite die **aktivieren** neben der **FeatureEvtTest Feature1** Feature.
+5. Wählen Sie auf der Seite **Features** neben dem Feature **FeatureEvtTest Feature1** die Schaltfläche **aktivieren** aus.
 
-6. Auf der **Features** Seite die **deaktivieren** neben der **FeatureEvtTest Feature1** Feature, und wählen Sie dann die **dieses Feature deaktivieren**  Bestätigungslink zum Deaktivieren der Funktion.
+6. Wählen Sie auf der Seite **Features** neben dem Feature **FeatureEvtTest Feature1** die Schaltfläche **Deaktivieren** aus, und wählen Sie dann den Link diese featurebestätigung **Deaktivieren** aus, um die Funktion zu deaktivieren.
 
-7. Wählen Sie die **Startseite** Schaltfläche.
+7. Wählen Sie die Schaltfläche **Start** aus.
 
-     Eine Ankündigung angezeigt, in der **Ankündigungen** Liste, nachdem die Funktion deaktiviert wird.
+     Beachten Sie, dass eine Ankündigung in der **Ankündigungs** Liste angezeigt wird, nachdem die Funktion deaktiviert wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)
+- [Vorgehensweise: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

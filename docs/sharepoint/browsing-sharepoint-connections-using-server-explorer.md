@@ -1,7 +1,7 @@
 ---
-title: Durchsuchen von SharePoint-Verbindungen mithilfe von Server-Explorer | Microsoft-Dokumentation
+title: Durchsuchen von SharePoint-Verbindungen mit Server-Explorer | Microsoft-Dokumentation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.SharePointExplorer.SharePointConnection
 dev_langs:
@@ -16,38 +16,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8dfde37125b78e2ff8077712321b3a19816582cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387803"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016356"
 ---
-# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Durchsuchen von SharePoint-Verbindungen mithilfe von Server-Explorer
-  Jetzt können Sie lokale SharePoint-Verbindungen in Durchsuchen **Server-Explorer**. Mit diesem Verfahren können Sie auf Ihrem System durch die Komponenten einer SharePoint-Website navigieren. SharePoint-Site-Komponenten, z. B. Listendefinitionen und Inhaltstypen, angezeigt in einem Knoten mit dem Namen **SharePoint-Verbindungen** in der Strukturansicht des **Server-Explorer**. Anzuzeigende **Server-Explorer**, wählen Sie auf der Menüleiste **Ansicht** > **Server-Explorer**. Zusätzlich zur Anzeige der SharePoint-Site-Komponenten, können Sie Elemente entfernen, deren Eigenschaften anzeigen oder Aktualisieren mithilfe der Befehle im Kontextmenü der Strukturansicht.
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Durchsuchen von SharePoint-Verbindungen mit Server-Explorer
+  Sie können jetzt in **Server-Explorer**lokale SharePoint-Verbindungen durchsuchen. Mithilfe dieser Technik können Sie durch die Komponenten einer SharePoint-Website auf Ihrem System navigieren. SharePoint-Website Komponenten, z. b. Listen Definitionen und Inhaltstypen, werden in der Strukturansicht von **Server-Explorer**in einem Knoten mit dem Namen **SharePoint-Verbindungen** angezeigt. Um **Server-Explorer**anzuzeigen, wählen Sie in der Menüleiste **View**die Option  >  **Server-Explorer**anzeigen aus. Zusätzlich zum Anzeigen der SharePoint-Website Komponenten können Sie Elemente entfernen, ihre Eigenschaften anzeigen oder die Strukturansicht mithilfe der Befehle im Kontextmenü aktualisieren.
 
 > [!IMPORTANT]
-> Um einer SharePoint-Website zu durchsuchen, müssen Sie Administrator der SharePoint-Websitesammlung sein, und Sie werden Sie als Administrator des lokalen Computers müssen Visual Studio ausführen. Andernfalls die Website wird in **Server-Explorer**, aber Sie können nicht den Knoten erweitern. Öffnen Sie die Website in einem Webbrowser öffnen, um zu überprüfen, ob Sie ein Administrator der Websitesammlung sind, die **Websiteaktionen** Menü wählen **Websiteberechtigungen**, und klicken Sie auf die **Berechtigungen: Teamwebsite** Seite die **Websitesammlungsadministratoren** Befehl die **verwalten** -Gruppe auf dem Menüband. Ihr Name wird im Textfeld angezeigt, wenn Sie Administrator einer Websitesammlung sind. Wenn die **Websitesammlungsadministratoren** Befehl nicht in der Gruppe "verwalten" auf dem Menüband angezeigt wird, Sie sind ein Administrator für die Websitesammlung nicht und die entsprechenden Berechtigungen müssen vom Administrator Website abrufen.
+> Um eine SharePoint-Website zu durchsuchen, müssen Sie Administrator der SharePoint-Website Sammlung sein, und Sie müssen Visual Studio als Administrator des lokalen Computers ausführen. Andernfalls wird die Site in **Server-Explorer**angezeigt, aber Sie können Ihren Knoten nicht erweitern. Um zu überprüfen, ob Sie ein Administrator der Website Sammlung sind, öffnen Sie die Website in einem Webbrowser, öffnen Sie das Menü " **Website Aktionen** ", wählen Sie " **Website Berechtigungen**" aus, und wählen Sie dann auf der Seite **Berechtigungen: Team Website** den Befehl **Website Sammlungs Administratoren** aus der Gruppe **Verwalten** auf dem Menüband aus. Wenn Sie ein Website Sammlungs Administrator sind, wird Ihr Name im Textfeld angezeigt. Wenn der Befehl " **Website Sammlungs Administratoren** " nicht in der Gruppe "verwalten" auf dem Menüband angezeigt wird, sind Sie kein Administrator für die Website Sammlung, und Sie müssen die entsprechenden Berechtigungen vom Website Administrator erhalten.
 
-## <a name="server-explorer-nodes"></a>Server-Explorer-Knoten
- Jede Komponente von einer SharePoint-Website wird dargestellt, durch einen Knoten in der **Server-Explorer** Strukturansicht unter **SharePoint-Verbindungen**. Standard-SharePoint-Websites enthalten z. B. einen Inhaltstyp namens-Lösung, die einen Diskussionstyp, der darstellt in zeigt die **Diskussionen** auf der Seite der SharePoint-Website. Der Inhaltstyp Diskussion enthält mehrere Felder. An diese Felder in **Server-Explorer**, erweitern Sie die **"ContentTypes"** Knoten, und klicken Sie dann die **Diskussion** Knoten. Darunter befinden sich mehrere Feldknoten, z. B. Text, Betreff der Diskussion und Titel.
+## <a name="server-explorer-nodes"></a>Server-Explorer Knoten
+ Jede Komponente einer SharePoint-Website wird durch einen Knoten in der **Server-Explorer** Strukturansicht unter **SharePoint-Verbindungen**dargestellt. Standardmäßige SharePoint-Sites enthalten beispielsweise einen Inhaltstyp namens "Diskussion", der einen Diskussions Typ darstellt, der auf der Seite " **Diskussionen** " der SharePoint-Website angezeigt wird. Der Inhaltstyp für die Diskussion enthält mehrere Felder. Um diese Felder in **Server-Explorer**anzuzeigen, erweitern Sie den Knoten **ContentTypes** und dann den Knoten **Erörterung** . Darunter sind mehrere Feld Knoten, z. b. Text, Diskussions Betreff und Titel.
 
-## <a name="node-shortcut-menu-commands"></a>Knoten: Kontextmenübefehle
- Jeder Knoten verfügt über ein Kontextmenü aufrufen, die Sie zugreifen, indem Sie mit der rechten Maustaste des Knotens, oder Sie ihn auswählen, und wählen Sie dann die **UMSCHALT**+**F10** Schlüssel. Node-Befehle können Folgendes umfassen:
+## <a name="node-shortcut-menu-commands"></a>Befehle für Knoten Kontextmenü
+ Jeder Knoten verfügt über ein Kontextmenü, auf das Sie zugreifen, indem Sie mit der rechten Maustaste auf den Knoten klicken oder es auswählen und **dann die** + Taste**F10** drücken. Knoten Befehle können Folgendes umfassen:
 
-|Befehlsname|Beschreibung|
+|Befehlsname|BESCHREIBUNG|
 |------------------|-----------------|
-|Aktualisieren|Aktualisiert die Strukturansicht, um Änderungen widerzuspiegeln, die seit dem letzten möglicherweise aufgetreten, die der Knoten angezeigt wurde.|
-|Löschen|Entfernt den ausgewählten Knoten in der Strukturansicht. **Hinweis**:  Mit diesem Befehl ist aktiviert, nur auf SharePoint-Verbindungen aufgeführt, unter dem **SharePoint-Verbindungen** Knoten.|
-|Eigenschaften|Zeigt die verfügbaren Eigenschaften für den ausgewählten Knoten in der **Eigenschaften** Fenster. Die Eigenschaften sind alle schreibgeschützt, und nicht jeder Knoten verfügt über Eigenschaften zugeordnet.|
-|Verbindung hinzufügen|Ermöglicht Ihnen die Angabe eine SharePoint-Website, die Sie durchsuchen möchten. Auf der **SharePoint-Verbindungen** und Unterwebsite-Knoten.|
-|In Browser anzeigen|Zeigt die ausgewählte Liste in einem Webbrowser. Mit diesem Befehl steht für einige Listen unter der **listet** Knoten, der in enthalten ist **Listen und Bibliotheken**.|
+|Aktualisieren|Aktualisiert die Strukturansicht, um Änderungen widerzuspiegeln, die möglicherweise seit der letzten Anzeige des Knotens aufgetreten sind.|
+|Löschen|Entfernt den ausgewählten Knoten aus der Strukturansicht. **Hinweis:**  Dieser Befehl ist nur für SharePoint-Verbindungen aktiviert, die unter dem Knoten **SharePoint-Verbindungen** aufgelistet sind.|
+|Eigenschaften|Zeigt die im **Eigenschaften** Fenster verfügbaren Eigenschaften für den ausgewählten Knoten an. Die Eigenschaften sind schreibgeschützt, und nicht jedem Knoten sind Eigenschaften zugeordnet.|
+|Verbindung hinzufügen|Ermöglicht es Ihnen, eine SharePoint-Website anzugeben, die Sie durchsuchen möchten. Verfügbar für den Knoten **SharePoint-Verbindungen** und untergeordnete Knoten.|
+|In Browser anzeigen|Zeigt die ausgewählte Liste im Webbrowser an. Dieser Befehl ist in einigen Listen unter dem Knoten " **Listen** " verfügbar, der in **Listen und Bibliotheken**enthalten ist.|
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
-|[Vorgehensweise: Hinzufügen oder Entfernen von SharePoint-Verbindungen](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Beschreibt die erforderlichen Schritte zum Hinzufügen einer neuen SharePoint-Website auf der **SharePoint-Verbindungen** Knoten **Server-Explorer**.|
+|[Vorgehensweise: Hinzufügen oder Entfernen von SharePoint-Verbindungen](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Beschreibt die Schritte, die zum Hinzufügen einer neuen SharePoint-Website zum Knoten **SharePoint-Verbindungen** in **Server-Explorer**erforderlich sind.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

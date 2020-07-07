@@ -1,7 +1,7 @@
 ---
-title: Beispiele für die SharePoint-Entwicklung und exemplarische Vorgehensweisen | Microsoft-Dokumentation
+title: Beispiele und Exemplarische Vorgehensweisen für SharePoint-Entwicklung | Microsoft-Dokumentation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -13,24 +13,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976256"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015807"
 ---
-# <a name="sharepoint-development-samples-and-walkthroughs"></a>Beispiele für die SharePoint-Entwicklung und exemplarische Vorgehensweisen
-  Dieser Abschnitt enthält Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen, die die Syntax, Struktur und Techniken, die zum Erstellen von SharePoint-Projektmappen zu veranschaulichen.
+# <a name="sharepoint-development-samples-and-walkthroughs"></a>Beispiele und Exemplarische Vorgehensweisen für die SharePoint-Entwicklung
+  Dieser Abschnitt enthält Beispielanwendungen, Beispielcode und schrittweise exemplarische Vorgehensweisen, in denen die Syntax, Struktur und Techniken veranschaulicht werden, die zum Erstellen von SharePoint-Lösungen verwendet werden.
 
- Der Beispielcode dient zu Lehrzwecken und sollte nicht ohne Änderungen in bereitgestellten Projektmappen verwendet werden. Vor allem müssen Sicherheitsaspekte stärker berücksichtigt werden.
+ Der Beispielcode ist für Lehrzwecke gedacht und sollte nicht in bereitgestellten Lösungen ohne Änderungen verwendet werden. Vor allem müssen Sicherheitsaspekte stärker berücksichtigt werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Thema|Beschreibung|
+|Thema|BESCHREIBUNG|
 |-----------|-----------------|
-|[Beispiele für die SharePoint-Entwicklung](../sharepoint/sharepoint-development-samples.md)|Beschreibt Beispielanwendungen, die veranschaulichen, wie Sie die SharePoint-Entwicklungstools in Visual Studio verwenden.|
-|[Exemplarische Vorgehensweisen zu SharePoint-Entwicklung](../sharepoint/sharepoint-development-walkthroughs.md)|Enthält schrittweise Anleitungen, die eine Einführung in die SharePoint-Entwicklungstools in Visual Studio bereitstellen.|
+|[Beispiele für die SharePoint-Entwicklung](../sharepoint/sharepoint-development-samples.md)|Beschreibt Beispielanwendungen, die veranschaulichen, wie die SharePoint-Entwicklungs Tools in Visual Studio verwendet werden.|
+|[Exemplarische Vorgehensweisen für SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Listet Schritt-für-Schritt-Anleitungen auf, die eine Einführung in die SharePoint-Entwicklungs Tools in Visual Studio bereitstellen.|
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Behandeln von Bereitstellungskonflikten | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Behandeln von Bereitstellungs Konflikten | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
@@ -9,38 +9,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e7740915d341eee1bbf5e112c4f09297c98be1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813798"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015315"
 ---
-# <a name="how-to-handle-deployment-conflicts"></a>Vorgehensweise: Behandeln von Bereitstellungskonflikten
-  Sie können Ihren eigenen Code zum Behandeln von Bereitstellungskonflikten für ein SharePoint-Projektelement bereitstellen. Beispielsweise können Sie bestimmen, ob alle Dateien in das aktuelle Projektelement bereits in den Speicherort der Bereitstellung vorhanden sein, und klicken Sie dann die bereitgestellten Dateien löschen, bevor das aktuelle Projektelement bereitgestellt wird. Weitere Informationen zu Bereitstellungskonflikte, finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+# <a name="how-to-handle-deployment-conflicts"></a>Vorgehensweise: Behandeln von Bereitstellungs Konflikten
+  Sie können eigenen Code bereitstellen, um Bereitstellungs Konflikte für ein SharePoint-Projekt Element zu behandeln. Beispielsweise können Sie feststellen, ob Dateien im aktuellen Projekt Element bereits am Bereitstellungs Speicherort vorhanden sind, und dann die bereitgestellten Dateien löschen, bevor das aktuelle Projekt Element bereitgestellt wird. Weitere Informationen zu Bereitstellungs Konflikten finden Sie unter [Erweitern der SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
-### <a name="to-handle-a-deployment-conflict"></a>Um einen Bereitstellungskonflikt zu behandeln.
+### <a name="to-handle-a-deployment-conflict"></a>So behandeln Sie einen Bereitstellungs Konflikt
 
-1. Erstellen Sie eine projektelementerweiterung, ein projekterweiterung oder einen neuen Projektelementtyp eine Definition. Weitere Informationen finden Sie unter den folgenden Themen:
+1. Erstellen Sie eine Projekt Element Erweiterung, eine Projekt Erweiterung oder eine Definition eines neuen Projekt Elementtyps. Weitere Informationen finden Sie unter den folgenden Themen:
 
-    - [Vorgehensweise: Erstellen einer SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+    - [Vorgehensweise: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-    - [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+    - [Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-    - [Vorgehensweise: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+    - [Gewusst wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2. In der Erweiterung verarbeiten die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> Ereignis eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> Objekt (in einem projektelementerweiterung oder projekterweiterung) oder ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> Objekt (in einer Definition von einer neuen Projektelementtyp).
+2. Behandeln Sie in der-Erweiterung das- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> Ereignis eines- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> Objekts (in einer Projekt Element Erweiterung oder Projekt Erweiterung) oder eines- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> Objekts (in einer Definition eines neuen Projekt Elementtyps).
 
-3. Bestimmen Sie im Ereignishandler, ob es sich bei einem Konflikt zwischen dem Projektelement, das bereitgestellt wird und die bereitgestellte Projektmappe auf der SharePoint-Website, die basierend auf Kriterien, die für Ihr Szenario gelten. Sie können die <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> -Eigenschaft des Parameters für Ereignisargumente des Projektelements zu analysieren, das bereitgestellt wird, und Sie können die Dateien auf den Speicherort für die Bereitstellung analysieren, durch den Aufruf eines SharePoint-Befehls, die Sie zu diesem Zweck definieren.
+3. Bestimmen Sie im-Ereignishandler, ob ein Konflikt zwischen dem bereitgestellten Projekt Element und der bereitgestellten Lösung auf der SharePoint-Website vorliegt, basierend auf den Kriterien, die für Ihr Szenario gelten. Mit der- <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> Eigenschaft des Parameters Ereignis Argumente können Sie das Projekt Element analysieren, das bereitgestellt wird, und Sie können die Dateien am Bereitstellungs Speicherort analysieren, indem Sie einen SharePoint-Befehl aufrufen, den Sie zu diesem Zweck definieren.
 
-     Für viele Arten von Konflikten zunächst empfiehlt um zu bestimmen, welche Bereitstellungsschritt ausgeführt wird. Sie erreichen dies, indem die <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> Eigenschaft des Parameters für Ereignisargumente. Obwohl es in der Regel zum Erkennen von Konflikten bei der integrierten sinnvoll <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> Bereitstellungsschritt, sehen Sie sich für Konflikte bei jedem Bereitstellungsschritt.
+     Für viele Arten von Konflikten können Sie zuerst bestimmen, welcher Bereitstellungs Schritt ausgeführt wird. Verwenden Sie hierzu die- <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> Eigenschaft des Parameters Ereignis Argumente. Obwohl es in der Regel sinnvoll ist, Konflikte während der integrierten <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> Bereitstellung zu erkennen, können Sie während eines beliebigen Bereitstellungs Schritts auf Konflikte überprüfen.
 
-4. Wenn ein Konflikt vorhanden ist, verwenden Sie die <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> -Methode der der <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> Eigenschaft der Ereignisargumente zum Erstellen eines neuen <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> Objekt. Dieses Objekt stellt den Bereitstellungskonflikt dar. Der Aufruf der <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> -Methode, geben Sie auch die Methode, die aufgerufen wird, um den Konflikt zu lösen.
+4. Wenn ein Konflikt vorliegt, verwenden Sie die- <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> Methode der- <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> Eigenschaft der Ereignis Argumente, um ein neues-Objekt zu erstellen <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> . Dieses Objekt stellt den Bereitstellungs Konflikt dar. Geben Sie in Ihrem Aufruf der- <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> Methode auch die Methode an, die aufgerufen wird, um den Konflikt aufzulösen.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Codebeispiel wird veranschaulicht, der grundlegende Prozess für die Behandlung von Umgebungskonflikts in einer projektelementerweiterung für die Definition Projektelemente. Um einen Bereitstellungskonflikt für einen anderen Typ des Projektelements zu behandeln, eine andere Zeichenfolge übergeben, die die <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md).
+ Im folgenden Codebeispiel wird der grundlegende Prozess für die Behandlung eines Bereitstellungs Konflikts in einer Projekt Element Erweiterung für Listen Definitions Projekt Elemente veranschaulicht. Um einen Bereitstellungs Konflikt für einen anderen Projekttyp zu behandeln, übergeben Sie eine andere Zeichenfolge an <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> . Weitere Informationen finden Sie unter [Erweitern von SharePoint-Projekt Elementen](../sharepoint/extending-sharepoint-project-items.md).
 
- Aus Gründen der Einfachheit der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> -Ereignishandler in diesem Beispiel wird davon ausgegangen, dass ein Bereitstellungskonflikt vorhanden ist (d. h. es immer Fügt ein neues <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> Objekt), und die `Resolve` -Methode einfach zurückgegeben **"true"** an, dass der Konflikt wurde gelöst. In einem realen Szenario Ihre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> -Ereignishandler wird zuerst fest, ob ein Konflikt zwischen einer Datei in das aktuelle Projektelement und eine Datei am Speicherort Bereitstellung vorhanden ist, und fügen Sie eine <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> -Objekt nur, wenn ein Konflikt vorhanden ist. Sie können z. B. Verwenden der `e.ProjectItem.Files` Eigenschaft im Ereignishandler zum Analysieren von Dateien in das Projektelement, und Sie können einen SharePoint-Befehl, um die Dateien auf den Speicherort für die Bereitstellung zu analysieren aufrufen. Auf ähnliche Weise, in einem realen Szenario der `Resolve` Methode kann einen SharePoint-Befehl zum Auflösen des Konflikts in der SharePoint-Website aufrufen. Weitere Informationen zum Erstellen von SharePoint-Befehle finden Sie unter [Vorgehensweise: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md).
+ Der Einfachheit halber <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> geht der Ereignishandler in diesem Beispiel davon aus, dass ein Bereitstellungs Konflikt vorliegt (d. h., er fügt immer ein neues- <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> Objekt hinzu), und die- `Resolve` Methode gibt einfach **true** zurück, um anzugeben, dass der Konflikt gelöst wurde. In einem realen Szenario ermittelt der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> Ereignishandler zunächst, ob zwischen einer Datei im aktuellen Projekt Element und einer Datei am Bereitstellungsort ein Konflikt besteht, und fügt dann ein Objekt nur dann hinzu, <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> Wenn ein Konflikt vorliegt. Beispielsweise können Sie die- `e.ProjectItem.Files` Eigenschaft im-Ereignishandler verwenden, um die Dateien im Projekt Element zu analysieren, und Sie können einen SharePoint-Befehl zum Analysieren der Dateien am Bereitstellungsort abrufen. Ebenso kann die Methode in einem realen Szenario `Resolve` einen SharePoint-Befehl zum Auflösen des Konflikts auf der SharePoint-Website aufzurufen. Weitere Informationen zum Erstellen von SharePoint-Befehlen finden [Sie unter Gewusst wie: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md).
 
  [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
@@ -53,10 +52,10 @@ ms.locfileid: "62813798"
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Bereitstellen der Erweiterung
- Erstellen Sie zum Bereitstellen der Erweiterungs eine [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Zum Bereitstellen der Erweiterung erstellen [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sie ein Erweiterungspaket (VSIX) für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Erweitern von SharePoint-Packen und-bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md)
-- [Vorgehensweise: Ausführen von Code bei der Bereitstellung ausgeführt werden](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Erweitern von SharePoint-Projekt Elementen](../sharepoint/extending-sharepoint-project-items.md)
+- [Gewusst wie: Ausführen von Code bei der Ausführung von Bereitstellungs Schritten](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Vorgehensweise: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md)

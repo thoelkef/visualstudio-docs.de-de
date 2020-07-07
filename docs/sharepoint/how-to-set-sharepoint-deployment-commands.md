@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Festlegen von SharePoint-Bereitstellungs Befehlen | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,35 +12,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7664dfcfe11d7ab7dc6ab03045533bbd9e69fb9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: c2329efef64e7d8605f8483ff7dce3107cd702fa
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812909"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015506"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen
-  Sie können während des Bereitstellungsvorgangs anpassen, indem Sie Befehle für vor und nach der Bereitstellung festlegen. Diese Befehle führen vor und nach anderen Bereitstellungsaktionen, beim Debuggen von SharePoint-Lösungen in Visual Studio.
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Vorgehensweise: Festlegen von SharePoint-Bereitstellungs Befehlen
+  Sie können den Bereitstellungs Prozess anpassen, indem Sie Befehle vor und nach der Bereitstellung festlegen. Diese Befehle werden vor und nach anderen Bereitstellungs Aktionen ausgeführt, wenn Sie SharePoint-Lösungen aus Visual Studio debuggen.
 
-### <a name="to-add-a-pre-deployment-command"></a>Befehl vor der Bereitstellung hinzufügen
+### <a name="to-add-a-pre-deployment-command"></a>So fügen Sie einen Befehl vor der Bereitstellung hinzu
 
-1. Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.
+1. Wählen Sie in der Menüleiste die Option **Projekt**  >  ** \<*ProjectName*> Eigenschaften**aus.
 
-2. Wählen Sie die **SharePoint** Registerkarte.
+2. Wählen Sie die Registerkarte **SharePoint** aus.
 
-3. In der **vor der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.
+3. Geben Sie im Textfeld **Befehlszeile vor der Bereitstellung** MS-DOS-oder MSBuild-Befehle ein, um diesen Schritt anzupassen.
 
-     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalte aus, bevor die Bereitstellung abgeschlossen ist, **Dir**.
+     Wenn Sie z. b. den Verzeichnis Inhalt vor dem Abschluss der Bereitstellung auflisten möchten, geben Sie **dir**ein.
 
-### <a name="to-add-a-post-deployment-command"></a>Hinzufügen eines Befehls nach der Bereitstellung
+### <a name="to-add-a-post-deployment-command"></a>So fügen Sie einen Befehl nach der Bereitstellung hinzu
 
-1. Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.
+1. Wählen Sie in der Menüleiste die Option **Projekt**  >  ** \<*ProjectName*> Eigenschaften**aus.
 
-2. Wählen Sie die **SharePoint** Registerkarte.
+2. Wählen Sie die Registerkarte **SharePoint** aus.
 
-3. In der **Befehlszeile nach der Bereitstellung** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.
+3. Geben Sie im Textfeld für die **Befehlszeile nach der Bereitstellung** MS-DOS-oder MSBuild-Befehle ein, um diesen Schritt anzupassen.
 
-     Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalte aus, nachdem die Bereitstellung abgeschlossen ist, **Dir**. Um eine MSBuild-Variable verwenden, um die Assembly aus dem Buildverzeichnis zu kopieren, geben Sie **kopieren $(TargetPath) c:\DeploymentDirectory**.
+     Wenn Sie z. b. den Verzeichnis Inhalt nach Abschluss der Bereitstellung auflisten möchten, geben Sie **dir**ein. Wenn Sie eine MSBuild-Variable zum Kopieren der Assembly aus dem Buildverzeichnis verwenden möchten, geben Sie **Copy $ (TargetPath) c:\deploymentdirectory**ein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

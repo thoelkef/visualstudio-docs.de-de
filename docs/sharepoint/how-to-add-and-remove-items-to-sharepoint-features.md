@@ -1,7 +1,7 @@
 ---
-title: 'Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Hinzufügen und Entfernen von Elementen zu SharePoint-Features | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
@@ -14,44 +14,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966899"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014534"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Vorgehensweise: Hinzufügen und Entfernen von Elementen in SharePoint-Funktionen
-  Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die standardmäßigen SharePoint-Projektelemente zu Ihrer Funktion. Vor der Bereitstellung können Sie hinzufügen und Entfernen von SharePoint-Projektelemente, um die SharePoint-Funktion zu ändern.
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Gewusst wie: Hinzufügen und Entfernen von Elementen zu SharePoint-Features
+  Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die SharePoint-Standard Projekt Elemente zu ihrer Funktion hinzu. Vor der Bereitstellung können Sie SharePoint-Projekt Elemente hinzufügen und entfernen, um die SharePoint-Funktion zu ändern.
 
-## <a name="add-sharepoint-project-items-to-a-feature"></a>Fügen Sie SharePoint-Projektelemente hinzu, einer Funktion
+## <a name="add-sharepoint-project-items-to-a-feature"></a>Hinzufügen von SharePoint-Projekt Elementen zu einer Funktion
 
-#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>SharePoint-Projektelemente mit dem Funktions-Designer hinzufügen
+#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>So fügen Sie SharePoint-Projekt Elemente mit dem Funktions-Designer hinzu
 
-1. Öffnen Sie die Funktions-Designer.
+1. Öffnen Sie den Funktions-Designer.
 
-    Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+    Weitere Informationen finden Sie unter Gewusst [wie: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
-2. Fügen Sie eine oder mehrere Elemente aus der **Elemente in der Lösung** Liste der **Elemente in der Funktion** Liste anhand mindestens eines der folgenden Schritte aus:
+2. Fügen Sie einen oder mehrere Elemente aus den **Elementen in der** projektmappenliste zu den **Elementen in der** Featureliste hinzu, indem Sie einen oder mehrere der folgenden Schritte ausführen:
 
-   - Doppelklicken Sie auf jedes Element, das Sie hinzufügen möchten.
+   - Doppelklicken Sie auf die einzelnen Elemente, die Sie hinzufügen möchten.
 
-   - Wählen Sie ein Element, das Sie hinzufügen möchten, und wählen Sie dann die **hinzufügen** Schaltfläche (>).
+   - Wählen Sie ein Element aus, das Sie hinzufügen möchten, und wählen Sie dann die Schaltfläche **Hinzufügen** (>) aus.
 
-   - Wählen Sie die **alle hinzufügen** Schaltfläche (>>).
+   - Wählen Sie die Schaltfläche **Alle hinzufügen** (>>) aus.
 
-     Die SharePoint-Projektelemente werden in der **Elemente in der Funktion** Liste.
+     Die SharePoint-Projekt Elemente werden in den **Elementen in der** Featureliste angezeigt.
 
-## <a name="remove-sharepoint-project-items-from-a-feature"></a>Entfernen von SharePoint-Projektelemente aus einer Funktion
+## <a name="remove-sharepoint-project-items-from-a-feature"></a>Entfernen von SharePoint-Projekt Elementen aus einer Funktion
 
-#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>So entfernen Sie die SharePoint-Elemente mit dem Funktions-Designer
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>So entfernen Sie SharePoint-Elemente mit dem Funktions-Designer
 
-1. Wählen Sie eine oder mehrere Elemente in der **Elemente in der Funktion** Liste.
+1. Wählen Sie ein oder mehrere Elemente in den **Elementen in der** Featureliste aus.
 
-2. Wählen Sie die **entfernen** Schaltfläche (<), um ein Element zu einem Zeitpunkt entfernen, oder wählen die **alle entfernen** Schaltfläche (<<) alle Elemente entfernt.
+2. Wählen Sie die Schaltfläche **Entfernen** (<) aus, um ein Element gleichzeitig zu entfernen, oder klicken Sie auf die Schaltfläche **Alle entfernen** (<<), um alle Elemente zu entfernen.
 
-     Die SharePoint-Projektelemente werden in der **Elemente in der Lösung** Liste.
+     Die SharePoint-Projekt Elemente werden in den **Elementen in der** projektmappenliste angezeigt.
 
-## <a name="see-also"></a>Siehe auch
-- [Erstellen von SharePoint-features](../sharepoint/creating-sharepoint-features.md)
+## <a name="see-also"></a>Weitere Informationen
+- [SharePoint-Features erstellen](../sharepoint/creating-sharepoint-features.md)
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

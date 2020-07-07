@@ -1,7 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Bereitstellen eines Projekts Aufgabenliste Definition | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,20 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
-ms.translationtype: MT
+ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661872"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015760"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlisten Definition für Projekte
 
-In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mit [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] eine SharePoint-Liste erstellen, anpassen, Debuggen und bereitstellen, um Projektaufgaben zu verfolgen.
+In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] eine SharePoint-Liste erstellen, anpassen, Debuggen und bereitstellen, um Projektaufgaben zu verfolgen.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Unterstützte Editionen von Microsoft Windows und SharePoint.
 
@@ -43,7 +42,7 @@ Erstellen Sie ein SharePoint-Listen Projekt, und ordnen Sie die Listen Definitio
 
 3. Geben Sie die lokale SharePoint-Website an, die Sie für das Debugging verwenden, wählen Sie das Optionsfeld **als Farm Lösung** bereitstellen aus, und klicken Sie dann auf die Schaltfläche **Fertig** stellen
 
-4. Öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann > **Neues Element** **Hinzufügen** aus.
+4. Öffnen Sie das Kontextmenü für das Projekt, und wählen **Add**Sie dann  >  **Neues Element**hinzufügen aus.
 
 5. Wählen Sie im Bereich **Vorlagen** die **Liste** Vorlage aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -73,7 +72,7 @@ In der Aufgabenliste können Sie einen Ereignis Empfänger hinzufügen, der auto
 
      Dem Projekt wird ein neuer Ereignis Empfänger Knoten mit einer Codedatei mit dem Namen **projecttasklisteventreceiver**hinzugefügt.
 
-6. Fügen Sie der `ItemAdded`-Methode in der Codedatei **projecttasklisteventreceiver** Code hinzu. Jedes Mal, wenn eine neue Aufgabe hinzugefügt wird, wird der Aufgabe ein Standard Fälligkeitsdatum und eine Beschreibung hinzugefügt. Das Standard Fälligkeitsdatum ist der 1. Juli 2009.
+6. Fügen Sie der- `ItemAdded` Methode in der Codedatei **projecttasklisteventreceiver** Code hinzu. Jedes Mal, wenn eine neue Aufgabe hinzugefügt wird, wird der Aufgabe ein Standard Fälligkeitsdatum und eine Beschreibung hinzugefügt. Das Standard Fälligkeitsdatum ist der 1. Juli 2009.
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
@@ -136,31 +135,31 @@ Nachdem Sie die Projektaufgaben Liste erstellt und getestet haben, können Sie S
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>So stellen Sie die Projektaufgaben Liste auf dem lokalen System bereit
 
-Wählen Sie in der Visual Studio-Menüleiste die Option **Erstellen** ** > Projekt**Mappe bereitstellen aus.
+Wählen Sie in der Visual Studio-Menüleiste erstellen Projekt Mappe **Erstellen**aus  >  **Deploy Solution**.
 
-Visual Studio wieder verwendet den IIS-Anwendungs Pool, zieht alle vorhandenen Versionen der Projekt Mappe zurück, kopiert die Projektmappenpaketdatei ( *. wsp*) nach SharePoint und aktiviert dann seine Features. Sie können jetzt die Projekt Mappe in SharePoint verwenden. Weitere Informationen zu Bereitstellungs Konfigurationsschritten finden Sie unter Gewusst [wie: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio wieder verwendet den IIS-Anwendungs Pool, zieht alle vorhandenen Versionen der Projekt Mappe zurück, kopiert die Projektmappenpaketdatei (*. wsp*) nach SharePoint und aktiviert dann seine Features. Sie können jetzt die Projekt Mappe in SharePoint verwenden. Weitere Informationen zu Bereitstellungs Konfigurationsschritten finden Sie unter Gewusst [wie: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>So stellen Sie die Projektaufgaben Liste auf einem Remote System bereit
 
-1. Wählen Sie in der Visual Studio-Menüleiste die Option **Build** > **veröffentlichen**aus.
+1. Wählen Sie in der Visual Studio-Menüleiste die Option **Build**  >  **veröffentlichen**aus.
 
 2. Klicken Sie im Dialogfeld **veröffentlichen** auf das Optionsfeld **in Datei System veröffentlichen** .
 
      Sie können den Zielort im Dialogfeld **veröffentlichen** ändern, indem Sie auf das ![Symbol](../sharepoint/media/ellipsisicon.gif "Symbol "Ellipse"") mit den Auslassungs Punkten mit den Auslassungs Punkten klicken und dann zu einem anderen Speicherort navigieren.
 
-3. Wählen Sie die Schaltfläche **veröffentlichen** aus.
+3. Klicken Sie auf die Schaltfläche **Veröffentlichen**.
 
      Eine *wsp* -Datei wird für die Projekt Mappe erstellt.
 
 4. Kopieren Sie die *wsp* -Datei auf das Remote-SharePoint-System.
 
-5. Verwenden Sie den PowerShell-`Add-SPUserSolution` Befehl, um das Paket auf der Remote-SharePoint-Installation zu installieren. (Verwenden Sie für Farm Lösungen den `Add-SPSolution`-Befehl.)
+5. Verwenden Sie den PowerShell- `Add-SPUserSolution` Befehl, um das Paket auf der Remote-SharePoint-Installation zu installieren. (Verwenden Sie für Farm Lösungen den `Add-SPSolution` Befehl.)
 
-     Beispielsweise `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Beispiel: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Verwenden Sie den PowerShell-`Install-SPUserSolution`-Befehl, um die Lösung bereitzustellen. (Verwenden Sie für Farm Lösungen den `Install-SPSolution`-Befehl.)
+6. Verwenden Sie den PowerShell- `Install-SPUserSolution` Befehl, um die Lösung bereitzustellen. (Verwenden Sie für Farm Lösungen den `Install-SPSolution` Befehl.)
 
-     Beispielsweise `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Beispiel: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Weitere Informationen zur Remote Bereitstellung finden [Sie unter Verwenden von Lösungen](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) und hinzufügen und Bereitstellen von [Lösungen mit PowerShell in SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 
@@ -174,5 +173,5 @@ Weitere Informationen zum Anpassen und Bereitstellen von SharePoint-Lösungen fi
 
 - [Windows PowerShell für SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Lokalisieren einer Funktion | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,52 +13,51 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813666"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016141"
 ---
 # <a name="how-to-localize-a-feature"></a>Vorgehensweise: Lokalisieren einer Funktion
-  Standardmäßig die featuretitel und Beschreibungen, verwenden die hartcodierten Zeichenfolgenwerte. Um den Funktionstitel und die Beschreibung lokalisieren möchten, ersetzen Sie die Zeichenfolgen mit Ausdrücken, die lokalisierte Ressourcen zu verweisen.
+  Standardmäßig verwenden Funktions Titel und Beschreibungen hart codierte Zeichen folgen Werte. Um den Titel und die Beschreibung der Funktion zu lokalisieren, ersetzen Sie die Zeichen folgen durch Ausdrücke, die auf lokalisierte Ressourcen verweisen.
 
 ## <a name="localize-a-feature"></a>Lokalisieren einer Funktion
 
-#### <a name="to-localize-a-feature"></a>Zum Lokalisieren einer Funktion
+#### <a name="to-localize-a-feature"></a>So lokalisieren Sie ein Feature
 
-1. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Feature1** Knoten, und wählen Sie dann **Funktionsressource hinzufügen**.
+1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Knoten **Feature1** , und wählen Sie dann **Funktions Ressource hinzufügen**aus.
 
-2. In der **Ressource hinzufügen** Dialogfeld wählen **invarianten Sprache** aus der Liste als Kultur für die Funktionsressourcendatei der Standardsprache.
+2. Wählen Sie im Dialogfeld **Ressource hinzufügen** in der Liste die Option **invariante Sprache** aus, als Kultur für die Ressourcen Datei der Standard Sprachfunktion.
 
-3. Wiederholen Sie den vorherigen Schritt für jede lokalisierte Sprache, und wählen die Sprachen Ihrer Wahl für das lokalisierte Feature Ressourcendateien.
+3. Wiederholen Sie den vorherigen Schritt für jede lokalisierte Sprache, und wählen Sie die Sprachen Ihrer Wahl für die lokalisierten featureressourcendateien aus.
 
-     Separates Feature Ressourcendateien werden erstellt: eine für die Standardsprache und eine für jede lokalisierte Sprache, die Sie unterstützen möchten.
+     Es werden separate featureressourcendateien erstellt: eine für die Standardsprache und eine für jede lokalisierte Sprache, die Sie unterstützen möchten.
 
-4. Öffnen Sie alle Ressourcen im Ressourcen-Editor, und geben Sie dann die Zeichenfolgen-IDs und ihre Werte.
+4. Öffnen Sie jede Ressourcen Datei im Ressourcen-Editor, und geben Sie dann alle Zeichen folgen-IDs und deren Werte ein.
 
-     Geben Sie beispielsweise in der Standard-Funktionsressourcendatei eine Zeichenfolgen-ID der **Titel** mit einem Wert von **Meine Funktionstitel**, und ein zweites Zeichenfolgen-ID des **Beschreibung** mit einem Wert von **Meine Featurebeschreibung**. Verwenden Sie für jede lokalisierte Ressourcendatei die gleiche Zeichenfolgen-IDs, die in der Standard-Feature-Ressource verwendet allerdings Geben Sie lokalisierte Zeichenfolgen für die Werte ein.
+     Geben Sie z. b. in der standardmäßigen featureressourcendatei eine Zeichen folgen-ID des **Titels** mit dem Wert " **My Feature Title**" und eine zweite Zeichen folgen-ID der **Beschreibung** mit dem Wert " **My Feature Description**" ein. Verwenden Sie für jede lokalisierte Ressourcen Datei dieselben Zeichen folgen-IDs, die in der Standard Funktions Ressource verwendet werden, aber geben Sie lokalisierte Zeichen folgen für die Werte ein.
 
-5. Nachdem Sie alle Werte der eingegeben haben, öffnen Sie das Kontextmenü für das Feature (z. B. *"Feature1.Feature"*), und wählen Sie dann **Ansicht-Designer** um das Feature in der Funktions-Designer zu öffnen.
+5. Nachdem Sie alle Ressourcen Werte eingegeben haben, öffnen Sie das Kontextmenü für das Feature (z *. Feature1. Feature*), und wählen Sie dann **Ansicht-Designer** aus, um die Funktion im Funktions-Designer zu öffnen.
 
-6. Zum Lokalisieren der **Titel** und **Beschreibung** Felder in der Funktion verwenden Sie das folgende Format, Werte in die Felder einzugeben:
+6. Um die **Titel** -und **Beschreibungs** Felder in der Funktion zu lokalisieren, verwenden Sie das folgende Format, um Werte in Ihre Felder einzugeben:
 
      `$Resources:` *Zeichenfolgen-ID*
 
-     Geben Sie beispielsweise die $Resources:**Titel** in die **Funktionstitel** Box und $Resources:**Beschreibung** in die **Featurebeschreibung** Feld .
+     Geben Sie z. b. $Resources:**Title** in das Feld **Funktions Titel** ein, und $Resources:**Description** im Feld **Funktionsbeschreibung** .
 
-     Die Zeichenfolgen-IDs muss denen entsprechen, die in den Ressourcendateien verwendet werden.
+     Die Zeichen folgen-IDs müssen mit den in den Ressourcen Dateien verwendeten Zeichen folgen identisch sein.
 
-7. Wählen Sie die **F5** Schlüssel zu erstellen und Ausführen der Anwendung.
+7. Drücken Sie die Taste **F5** , um die Anwendung zu erstellen und auszuführen.
 
-8. Öffnen Sie in SharePoint die **Websiteaktionen** Menü wählen **Standorteinstellungen**, und dann auf die **Websiteaktionen** "die Option" der **Websitefunktionen verwalten** Link.
+8. Öffnen Sie in SharePoint das Menü **Website Aktionen** , wählen Sie **Website Einstellungen**aus, und wählen Sie dann im Abschnitt **Website Aktionen** den Link **Website Features verwalten** aus.
 
 9. Legen Sie die Anzeigesprache in SharePoint auf eine Sprache fest, die nicht der Standardsprache entspricht.
 
-     Lokalisierte Feature Titel und Beschreibung werden in der Anwendung angezeigt. Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint-Server ein Sprachpaket installiert sein, das der Kultur der Ressourcendatei entspricht.
+     Der lokalisierte Titel und die Beschreibung der Funktion werden in der Anwendung angezeigt. Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint-Server ein Sprachpaket installiert sein, das der Kultur der Ressourcendatei entspricht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)
-- [Vorgehensweise: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)
-- [Vorgehensweise: Lokalisieren von ASPX-markup](../sharepoint/how-to-localize-aspx-markup.md)
-- [Vorgehensweise: Lokalisieren von code](../sharepoint/how-to-localize-code.md)
+- [Vorgehensweise: Hinzufügen einer Ressourcen Datei](../sharepoint/how-to-add-a-resource-file.md)
+- [Gewusst wie: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)
+- [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)

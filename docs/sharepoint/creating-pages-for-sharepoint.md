@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Seiten für SharePoint | Microsoft-Dokumentation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986351"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015162"
 ---
 # <a name="create-pages-for-sharepoint"></a>Erstellen von Seiten für SharePoint
   Sie können Anwendungs Seiten, Website Seiten, Masterseiten und Seitenlayouts für eine SharePoint-Website erstellen.
@@ -34,12 +33,12 @@ ms.locfileid: "72986351"
 ## <a name="types-of-sharepoint-pages"></a>Typen von SharePoint-Seiten
  In der folgenden Tabelle werden die vier Haupttypen von Seiten beschrieben, die eine SharePoint-Website enthält.
 
-|Seitentyp|Beschreibung|
+|Seitentyp|BESCHREIBUNG|
 |---------------|-----------------|
 |Anwendungs Seiten|Erstellen Sie eine Anwendungsseite, wenn die Seite benutzerdefinierten Code enthalten soll oder wenn die Seite für mehrere Websites freigegeben werden soll. Andernfalls ist eine Website Seite möglicherweise die beste Wahl.|
 |Website Seiten|Erstellen Sie eine Website Seite, wenn Sie eine der folgenden Aufgaben ausführen möchten:<br /><br /> -Hinzufügen der Seite zu einer SharePoint-Bibliothek.<br />-Aktivieren Sie die Seite, um Funktionen wie dynamische Webparts und Webpartzonen zu hosten.<br />-Ermöglicht Benutzern das Anpassen der Seite mithilfe von SharePoint Designer.<br /><br /> Erstellen Sie keine Website Seite, wenn die Seite benutzerdefinierten Code enthalten soll. Obwohl Sie benutzerdefinierten Code zu einer Website Seite hinzufügen können, wird der Code nicht mehr ausgeführt, wenn der Benutzer die Seite mithilfe von SharePoint Designer anpasst.|
 |Master Seiten|Erstellen Sie eine Master Seite, wenn Sie eine gemeinsame Struktur für Website Seiten und Anwendungs Seiten definieren möchten.|
-|Seitenlayouts|Seitenlayouts sind für [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] spezifisch und ermöglichen es Ihnen, eine gemeinsame Struktur für Website Seiten und Anwendungs Seiten zu definieren.|
+|Seitenlayouts|Seitenlayouts sind spezifisch für [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] und ermöglichen es Ihnen, eine gemeinsame Struktur für Website Seiten und Anwendungs Seiten weiter zu definieren.|
 
  Eine Übersicht über die einzelnen Seiten Typen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14))sowie Seiten [Layouts und Master Seiten](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14)).
 
@@ -62,7 +61,7 @@ ms.locfileid: "72986351"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Erstellen von Anwendungs Seiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Hier wird beschrieben, wie Anwendungs Seiten hinzugefügt werden: *aspx* -Inhalte, die mit einer SharePoint-Master Seite zusammengeführt werden.|
 |[Vorgehensweise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)|Zeigt, wie Sie ASP.NET-Seiten erstellen, die auf einer SharePoint-Website ausgeführt werden.|

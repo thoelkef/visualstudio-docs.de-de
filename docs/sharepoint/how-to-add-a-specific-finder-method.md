@@ -1,7 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer bestimmten Finder-Methode | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985260"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014816"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Gewusst wie: Hinzufügen einer bestimmten Finder-Methode
   Sie können eine einzelne Entitäts Instanz zurückgeben, indem Sie eine *bestimmte Finder* -Methode erstellen. Der Business Data Connectivity (BDC)-Dienst führt die spezifische Finder-Methode aus, wenn ein Benutzer eine Entität in einem Geschäftsdaten-Webpart oder einer externen Liste auswählt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72985260"
 
     Weitere Informationen zum Hinzufügen einer Entität zum **BDC-Designer** in Visual Studio finden Sie unter Gewusst [wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **Weitere Fenster**, **BDC-Methoden Details**aus.
+2. Wählen Sie in der Menüleiste **View**die Option  >  **Weitere Fenster**anzeigen, **Details der BDC-Methode**aus.
 
     Das Fenster **BDC-Methoden Details** wird geöffnet. Weitere Informationen zu diesem Fenster finden Sie unter [Übersicht über die Entwurfs Tools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -71,7 +70,7 @@ ms.locfileid: "72985260"
 
     Die Entitäts Dienst-Codedatei wird im Code-Editor geöffnet. Weitere Informationen zur Entitäts Dienst-Codedatei finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-9. Fügen Sie der spezifischen Finder-Methode Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+9. Fügen Sie der spezifischen Finder-Methode Code hinzu. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Ruft einen Datensatz aus einer Datenquelle ab.
 
@@ -80,12 +79,12 @@ ms.locfileid: "72985260"
      Im folgenden Beispiel wird ein Kontakt aus der AdventureWorks-Beispieldatenbank für SQL Server zurückgegeben.
 
      > [!NOTE]
-     > Ersetzen Sie den Wert des Felds `ServerName` durch den Namen des Servers.
+     > Ersetzen Sie den Wert des `ServerName` Felds durch den Namen des Servers.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)
 - [Gewusst wie: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)

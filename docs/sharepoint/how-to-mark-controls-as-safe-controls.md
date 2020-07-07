@@ -1,7 +1,7 @@
 ---
 title: 'Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente | Microsoft-Dokumentation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982732"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016256"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente
   Aus Sicherheitsgründen unterscheidet SharePoint zwischen websteuer Elementen, die vor Skript Injektion und websteuer Elementen geschützt sind. Auf geschützte Steuerelemente oder *sichere Steuerelemente*kann von nicht vertrauenswürdigen Benutzern zugegriffen werden. Sie können Steuerelemente als sicher in der Eigenschaft Safe Control Entries eines SharePoint-Projekt Elements oder im **Paket-Designer** markieren, wenn Sie dem Paket eine Assembly hinzufügen. Weitere Informationen finden Sie unter
 
-- die [Web. config-Datei Einstellungen ändern](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) und [registrieren eine Webpartassembly als sicheres Steuer](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))Element.
+- [web.config Datei Einstellungen ändern](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) und [Registrieren einer Webpartassembly als sicheres Steuer](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))Element.
 
 > [!IMPORTANT]
 > Diese Prozeduren dienen der Veranschaulichung. Markieren Sie Steuerelemente nur dann, wenn Sie sicher sind, dass Sie sicher sind.
@@ -63,7 +62,7 @@ ms.locfileid: "72982732"
 
      Notieren Sie sich den Namespace des Steuer Elements, da er später verwendet wird.
 
-3. Wählen Sie in der Menüleiste **Erstellen** > Projekt Mappe **Erstellen** aus, um das Projekt zu erstellen.
+3. Wählen Sie in der Menüleiste **Build**-Projekt Mappe erstellen aus,  >  **Build Solution** um das Projekt zu erstellen.
 
 4. Erstellen Sie eine weitere SharePoint-Lösung.
 
@@ -90,7 +89,7 @@ ms.locfileid: "72982732"
     |Namespace|Der voll qualifizierte Namespace für das Steuerelement, z. b **. BdcModelProject1. VisualWebPart1**.|
     |Typname|Schaltfläche1|
     |Assemblyname|Einen starken Assemblynamen, z. b.: Microsoft. Office. SharePoint. clientextensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Sauberem|Deaktivieren Sie das Kontrollkästchen **sicher** .|
+    |Safe|Deaktivieren Sie das Kontrollkästchen **sicher** .|
     |Gegen Skript sichern|Deaktivieren Sie das Kontrollkästchen für das **sichere gegen Skript** .|
 
     > [!NOTE]
@@ -107,11 +106,11 @@ ms.locfileid: "72982732"
     |Namespace|Der voll qualifizierte Namespace für das Steuerelement, z. b **. BdcModelProject1. VisualWebPart1**.|
     |Typname|TextBox1|
     |Assemblyname|Einen starken Assemblynamen, z. b.: Microsoft. Office. SharePoint. clientextensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Sauberem|Aktivieren Sie das Kontrollkästchen **sicher** .|
+    |Safe|Aktivieren Sie das Kontrollkästchen **sicher** .|
     |Gegen Skript sichern|Aktivieren Sie das Kontrollkästchen für **Skript sichern** .|
 
 16. Wählen Sie die **Tab** -Taste, und klicken Sie dann auf die Schaltfläche **OK** , um das Dialogfeld zu schließen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

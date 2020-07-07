@@ -1,7 +1,7 @@
 ---
 title: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984142"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015750"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace
 
@@ -35,19 +34,19 @@ Mit IntelliTrace können Sie SharePoint-Lösungen einfacher debuggen. Herkömmli
 
 - [Erstellen eines Funktions Empfängers](#create-a-feature-receiver)
 
-- [Hinzufügen von Code zum Funktions Empfänger](#add-code-to-the-feature-receiver)
+- [Dem Funktionsempfänger Code hinzufügen](#add-code-to-the-feature-receiver)
 
 - [Testen des Projekts](#test-the-project)
 
-- [Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
+- [Sammeln Sie IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent.](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Debuggen und korrigieren der SharePoint-Lösung](#debug-and-fix-the-sharepoint-solution)
+- [Die SharePoint-Lösung debuggen und korrigieren](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
-Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Unterstützte Editionen von Windows und SharePoint.
 
@@ -89,7 +88,7 @@ Fügen Sie anschließend zwei Methoden im Funktionsempfänger Code hinzu: `Featu
     private string webUrl = "/";
     ```
 
-2. Ersetzen Sie die `FeatureActivated`-Methode durch folgenden Code:
+2. Ersetzen Sie die `FeatureActivated`-Methode durch den folgenden Code:
 
     ```vb
     Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)
@@ -155,7 +154,7 @@ Fügen Sie anschließend zwei Methoden im Funktionsempfänger Code hinzu: `Featu
     }
     ```
 
-3. Ersetzen Sie die `FeatureDeactivating`-Methode durch folgenden Code:
+3. Ersetzen Sie die `FeatureDeactivating`-Methode durch den folgenden Code:
 
     ```vb
     Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)
@@ -258,7 +257,7 @@ Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler au
 
 2. Zeigen Sie den Inhalt der Listen mit Ankündigungen und Aufgaben an.
 
-     Die Ankündigungsliste sollte eine neue Ankündigung mit dem Namen " **aktiviertes Feature: IntelliTraceTest_Feature1**" aufweisen, und die Aufgabenliste sollte eine neue Aufgabe mit dem Namen " **Feature deaktivieren: IntelliTraceTest_Feature1**" aufweisen. Wenn eines der Elemente fehlt, überprüfen Sie, ob die Funktion aktiviert ist. Aktivieren Sie sie andernfalls.
+     Die Ankündigungsliste sollte eine neue Ankündigung mit dem Namen **aktivierte Funktion: IntelliTraceTest_Feature1 enthalten**, und die Aufgabenliste sollte eine neue Aufgabe mit dem Namen " **Feature deaktivieren: IntelliTraceTest_Feature1**" aufweisen. Wenn eines der Elemente fehlt, überprüfen Sie, ob die Funktion aktiviert ist. Aktivieren Sie sie andernfalls.
 
 3. Deaktivieren Sie die Funktion, indem Sie die folgenden Schritte ausführen:
 
@@ -295,7 +294,7 @@ Wenn Sie Microsoft Monitoring Agent auf dem System installieren, auf dem SharePo
 
 3. Führen Sie im PowerShell-Fenster den Befehl " [beendet-webapplicationmonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) " aus, um die itrace-Datei zu erstellen, die Überwachung anzuhalten und die SharePoint-Lösung neu zu starten.
 
-     "Break **-webapplicationmonitoring** *"\<SharePointSite >\\< sharepointappname\>"*
+     "" **Beendet-webapplicationmonitoring***" \<SharePointSite> \\<sharepointappname \> "*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Debuggen und korrigieren der SharePoint-Lösung
 
@@ -329,7 +328,7 @@ Jetzt können Sie die IntelliTrace-Protokolldatei in Visual Studio anzeigen, um 
 
      Der Code wird jetzt ordnungsgemäß ausgeführt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Prüfen und Debuggen von SharePoint-Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)
