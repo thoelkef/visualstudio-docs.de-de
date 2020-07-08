@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
-ms.topic: conceptual
+ms.topic: overview
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
-ms.openlocfilehash: b2a80fce75f710d508f0d32df37bbcde73ee20e3
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85292931"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906026"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .

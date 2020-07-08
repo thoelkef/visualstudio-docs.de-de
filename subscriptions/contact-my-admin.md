@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Erfahren Sie, wie Sie Ihren Abonnementadministrator bei Fragen oder Problemen kontaktieren können.
-ms.openlocfilehash: 117bdb82c878e498862dd967615fde9d6ba632eb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289104"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904575"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Anfordern von Unterstützung durch einen Abonnementadministrator
 Wenn Ihr Visual Studio-Abonnement von einem Unternehmen, einer Schule oder einer Universität bereitgestellt wurde, hat Ihnen dieses Abonnement vermutlich ein Abonnementadministrator zugewiesen.  Administratoren können Abonnements zuweisen oder diese Zuweisung rückgängig machen, die E-Mail-Adressen für Anmeldungen ändern, feststellen, ob Sie Software herunterladen können, und weitere abonnementbezogene Funktionen ausführen.

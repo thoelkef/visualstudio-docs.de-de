@@ -1,18 +1,18 @@
 ---
 title: 'Vorgehensweise: Schreiben von Komponententests für C++-DLLs'
 ms.date: 06/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275422"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816006"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -34,7 +34,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 8. [Isolieren Sie Einheiten von externen Ressourcen](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). In der Regel ist eine DLL abhängig von anderen Komponenten des Systems, das Sie entwickeln, wie z. B. anderen DLLs, Datenbanken, oder Remotesubsystemen. Es ist hilfreich, jede Einheit isoliert von seinen Abhängigkeiten zu testen. Externe Komponenten können bewirken, dass Tests langsamer ausgeführt werden. Während der Entwicklung sind die anderen Komponenten möglicherweise noch nicht vollständig.
 
-## <a name="create_test_project"></a> Ein natives Komponententestprojekt erstellen
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> Ein natives Komponententestprojekt erstellen
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus.
 
@@ -82,7 +82,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          ![Komponententest-Explorer mit einem bestandenen Test](../test/media/utecpp04.png)
 
-## <a name="create_dll_project"></a> Erstellen eines DLL-Projekts
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Erstellen eines DLL-Projekts
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 
 ::: moniker-end
 
-## <a name="make_functions_visible"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
 
 1. Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
 
@@ -194,7 +194,7 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 
    Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
-## <a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
 1. Fügen Sie einen neuen Test hinzu:
 
@@ -252,7 +252,7 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
     > [!TIP]
     > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
 
-## <a name="debug"></a> Einen nicht bestandenen Test debuggen
+## <a name="debug-a-failing-test"></a><a name="debug"></a> Einen nicht bestandenen Test debuggen
 
 1. Fügen Sie einen anderen Test hinzu:
 
@@ -337,7 +337,7 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 
 ::: moniker-end
 
-## <a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern
 
 1. Vereinfachen Sie die zentrale Berechnung in der SquareRoot-Funktion:
 

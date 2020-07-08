@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289429"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906090"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können Probleme bei der Problemlösung für Produkte in **produktionsfernen Umgebungen** gelöst werden, die sich noch in der Standardsupportphase des [Supportlebenszyklus](https://support.microsoft.com/lifecycle/search) befinden. Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden; bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents, geltend 1 Jahr lang ab Aktivierung des Vorteils. Die Aktivierung des Vorteils muss stattfinden, während das Abonnement aktiv ist.

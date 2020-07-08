@@ -7,14 +7,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770522"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092309"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)
 
 Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe von **Definition einsehen** können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu verlassen.
 
@@ -74,7 +74,7 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 |-------------------|:-----------------------:|
 |Öffnen des Definitionsfensters|**ALT**+**F12**|
 |Schließen des Definitionsfensters|**ESC**|
-|Höherstufen des Definitionsfensters auf eine reguläre Dokumentregisterkarte|**UMSCHALT**+**ALT**+**Start**|
+|Höherstufen des Definitionsfensters auf eine reguläre Dokumentregisterkarte|**STRG**+**Alt**+**Pos1**|
 |Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+ **-** und **STRG**+**ALT**+ **=**|
 |Zwischen mehreren Ergebnissen navigieren|**F8** und **UMSCHALT**+**F8**|
 |Umschalten zwischen den Fenstern "Code-Editor" und "Definition"|**UMSCHALT**+**ESC**|
@@ -82,7 +82,7 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 > [!NOTE]
 > Sie können die gleichen Tastenkombinationen zum Bearbeiten in einem **Definition einsehen**-Fenster verwenden, die Sie an anderer Stelle in Visual Studio nutzen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Navigieren durch den Code](../ide/navigating-code.md)
 - [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)

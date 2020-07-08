@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 5fafb47be3c3a5b99a2ae7d07277d0977db93fa0
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983585"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950078"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Erstellen und Bearbeiten von Buildkonfigurationen
 
@@ -29,7 +30,7 @@ Führen Sie die folgenden Schritte aus, um eine Projektbuildkonfiguration zu ers
 
     ![Konfigurations-Manager in Projektoptionen](media/create-and-edit-configurations-image2.png)
 
-3. Klicken Sie auf **Hinzufügen**, um eine neue Konfiguration zu erstellen. Alternativ können Sie auch eine der bestehenden Konfigurationen kopieren.
+3. Klicken Sie auf **Add** (Hinzufügen), um eine neue Konfiguration zu erstellen. Alternativ können Sie auch eine der bestehenden Konfigurationen kopieren.
 
 Sobald die Konfiguration erstellt wurde, können Sie den Abschnitt **Build** (Erstellen) in den Projektoptionen verwenden, um Eigenschaften gemäß Ihrer Konfigurationen anzupassen:
 
@@ -65,6 +66,6 @@ Klicken Sie auf die Schaltfläche **Umbenennen**.
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Bearbeiten der Buildkonfiguration (Visual Studio unter Windows)](/visualstudio/ide/how-to-create-and-edit-configurations)

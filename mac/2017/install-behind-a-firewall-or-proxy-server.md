@@ -1,17 +1,16 @@
 ---
 title: Installieren und Verwenden von Visual Studio für Mac hinter einer Firewall oder einem Proxyserver
 description: In diesem Dokument wird eine Liste der Hosts bereitgestellt, die von Ihrer Firewall zugelassen sein müssen, damit Visual Studio für Mac (und die zugehörigen Workloads, einschließlich Xamarin) in einer Unternehmensumgebung funktioniert.
-ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 10/23/2018
-ms.openlocfilehash: 738c5277ca6a669a834635f5c626e0cbabd7a7ef
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d488d56bdecd2801ecd94a2551c3be0f9834d0d7
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984936"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938669"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio für Mac hinter einer Firewall oder einem Proxyserver
 

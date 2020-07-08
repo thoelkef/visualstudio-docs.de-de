@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Hier erfahren Sie mehr über Microsoft 365-Apps for Enterprise und die Installation.
-ms.openlocfilehash: 95eaece45d6d261605a653efbb80bc03d6199dbf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85364141"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902982"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365-Apps for Enterprise in Visual Studio-Abonnements
 Microsoft 365-Apps for Enterprise (ehemals Office 365 Pro Plus) ist in ausgewählten Visual Studio-Abonnements verfügbar. 

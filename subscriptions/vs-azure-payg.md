@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
-ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444848"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902898"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
