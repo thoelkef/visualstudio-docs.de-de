@@ -5,12 +5,13 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 2966d8b89a2609d3fbfc2b6b4561288433641ca1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: a0aa3de91f1a2c75d73409d89f3cbc8894faacab
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67693110"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939111"
 ---
 # <a name="comments"></a>Kommentare
 
@@ -20,7 +21,7 @@ So kommentieren Sie einen kompletten Codeblock:
 
 * Wählen Sie den Code aus und klicken Sie dann im Kontextmenü auf **Zeilenkommentar umschalten**.
 
-oder
+ODER
 
 * Verwenden Sie die Schlüsselbindung `cmd + /` für den ausgewählten Code.
 
@@ -48,6 +49,6 @@ Kommentare sind zudem beim Dokumentieren von Code für die Interaktion zukünfti
 *)
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Auskommentieren von Code (Visual Studio unter Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

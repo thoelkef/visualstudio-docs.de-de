@@ -1,18 +1,19 @@
 ---
-title: Barrierefreiheit
+title: Zugriff
 description: In diesem Artikel werden die Barrierefreiheitsfunktionen in Visual Studio für Mac eingeführt, und es wird erklärt, wie sie aktiviert werden können.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: a2f151cbf593d2b8e26be7ac60eaf8ff3c687499
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306656"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938924"
 ---
-# <a name="accessibility"></a>Barrierefreiheit
+# <a name="accessibility"></a>Zugriff
 
 Neben den Barrierefreiheitsfunktionen und Hilfsprogrammen in macOS bietet Visual Studio für Mac folgende Features, um Personen mit Behinderungen den Zugang zu erleichtern:
 
@@ -64,11 +65,11 @@ Aktivieren oder deaktivieren Sie VoiceOver, indem Sie **BEFEHLSTASTE + F5** drü
 
 Um zwischen VoiceOver-Befehlen der Benutzeroberfläche zu navigieren, verwenden Sie folgende Befehle:
 
-- Bewegen des VoiceOver-Cursors zwischen Steuerelementen: **STRG + ALT + Linke Pfeiltaste bzw. rechte Pfeiltaste**
+- Bewegen des VoiceOver-Cursors zwischen Steuerelementen: **STRG + ALT + NACH-LINKS-TASTE/NACH-RECHTS-TASTE**
 
    VoiceOver liest die Namen der Steuerelemente sowie einige Informationen und mögliche Aktionen vor.
 
-- Geben Sie Gruppen und Steuerelemente ein (z.B. Lösungspad, Toolbox und andere Pads): **STRG + ALT + UMSCHALTTASTE + Pfeiltaste nach unten**
+- Geben Sie Gruppen und Steuerelemente ein (z. B. Lösungspad, Toolbox und andere Pads): **STRG + ALT + UMSCHALT + NACH-UNTEN-TASTE**
 
    Wenn Sie sich innerhalb eines Steuerelements befinden, können Sie **STRG + ALT + Pfeiltasten** verwenden, um darin zu navigieren.
 
@@ -77,6 +78,6 @@ Allgemeine Informationen zur Verwendung von VoiceOver in macOS finden Sie in fol
 - [VoiceOver-Einführungshandbuch](https://help.apple.com/voiceover/info/guide/10.12/)
 - [VoiceOver Commands in macOS](https://lab.dotjay.com/notes/voiceover-commands/) (VoiceOver-Befehle in macOS)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Barrierefreiheitsfunktionen in Visual Studio (unter Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

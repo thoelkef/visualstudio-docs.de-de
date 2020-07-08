@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985016"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938794"
 ---
 # <a name="debugging-with-xamarin"></a>Debuggen mit Xamarin
 
@@ -41,7 +42,7 @@ Sie können alle gesetzten Haltepunkte in Ihrem Code anzeigen lassen, indem Sie 
 
 ![Liste der Haltepunkte](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>Starten des Debugvorgangs
+## <a name="start-debugging"></a>Debugging starten
 
 Wählen Sie zum Starten des Debuggens das Zielgerät (oder ähnliches) oder den Emulator in Ihrer IDE:
 
@@ -94,6 +95,6 @@ Navigieren Sie zu **Visual Studio for Mac > Preferences > Debugger** (Visual Stu
 
 ![Option „Keinen Einzelschritt in Frameworkcode ausführen“](media/debugging-image8.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Debuggen in Visual Studio (unter Windows)](/visualstudio/debugger/)

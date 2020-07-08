@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Erfahren Sie, wie Administratoren einzelne Abonnenten oder Gruppen im Verwaltungsportal suchen können.
-ms.openlocfilehash: e2ca2683d1c14180fb70a5f80a781f774ed65e71
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: c7ef5cd61a689be1757793b223ebc1a9295bf8bd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233274"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906174"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Suchen und Filtern von Abonnenten in Visual Studio-Abonnements
 Mithilfe des Portals für die Verwaltung von Visual Studio-Abonnements können Sie anhand verschiedener Kriterien bestimmte Abonnenten suchen. Sie können die Abonnentenliste nach Name, E-Mail-Adresse, Abonnementstufe und vielen anderen Informationen filtern.

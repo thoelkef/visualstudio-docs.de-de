@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Hier erfahren Sie, wie Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233207"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906132"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit dem Geschäfts-, Schul- oder Unikonto 
 

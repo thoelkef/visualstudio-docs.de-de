@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280241"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816695"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
+# <a name="first-look-at-profiling-tools"></a>Einführung in Profilerstellungstools
 
 Visual Studio bietet eine Vielzahl von Profilerstellungstools, um Ihnen bei der Diagnose von unterschiedlichen Leistungsprobleme zu helfen, die von dem App-Typ abhängen. In diesem Artikel werfen wir einen kurzen Blick auf die gängigsten Profilerstellungstools.
 
@@ -75,7 +75,7 @@ Doppelklicken Sie auf eine Funktion, an der Sie interessiert sind. Ihnen wird ei
 
 Im Fenster **Diagnosetools** können Sie auch das Tool **Speicherauslastung** verwenden, um die Arbeitsspeicherauslastung in Ihrer App auszuwerten. Beispielsweise können Sie die Anzahl und Größe der Objekte auf dem Heap anzeigen. Ausführlichere Anweisungen zum Analysieren von Speicher finden Sie unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Arbeitsspeicherauslastung). Ein anderes Arbeitsspeicheranalysetool, [.NET-Objektzuordnung](../profiling/dotnet-alloc-tool.md), unterstützt Sie beim Identifizieren von Speicherbelegungsmustern und Anomalien in Ihrem .NET-Code.
 
-Sie müssen mindestens eine Arbeitsspeichermomentaufnahme erfassen, um die Arbeitsspeicherauslastung mit dem debuggerintegrierten Speicherauslastungstool zu analysieren. Häufig ist es zum Analysieren von Arbeitsspeicher am besten, wenn zwei Momentaufnahmen erstellt werden – die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite direkt nach Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat.
+Sie müssen mindestens eine Arbeitsspeichermomentaufnahme erfassen, um die Arbeitsspeicherauslastung mit dem debuggerintegrierten Speicherauslastungstool zu analysieren. Häufig ist es zum Analysieren von Arbeitsspeicher am Besten, wenn man zwei Momentaufnahmen macht, die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite Momentaufnahme direkt nach dem Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat.
 
 ![Erstellen einer Momentaufnahme in den Diagnosetools](../profiling/media/prof-tour-take-snapshots.gif "Diagnosetools: Momentaufnahmen erstellen")
 
@@ -168,7 +168,7 @@ Verwenden Sie das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analysieren der Netzwerkverwendung (UWP)
 
-In UWP-Apps können Sie Netzwerkvorgänge mithilfe der `Windows.Web.Http`-API analysieren. Mit diesem Tool können Sie Probleme wie Zugriffs- und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung lösen. Wählen Sie **Netzwerk** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
+In UWP-Apps können Sie Netzwerkoperationen mithilfe der `Windows.Web.Http`-API analysieren. Mit diesem Tool können Sie Probleme wie Zugriffs-und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung lösen. Wählen Sie **Netzwerk** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
 
 ![Profilerstellungstool „Netzwerkauslastung“](../profiling/media/prof-tour-network-usage.png "Diagramm „Netzwerkauslastung“")
 
@@ -204,9 +204,9 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |[.NET-Objektzuordnung](../profiling/dotnet-alloc-tool.md)|Ja (Nur .NET)|ja|ja|
 |[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|ja|Nein|
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
-|[Ereignisanzeige](../profiling/perftips.md)|ja|ja|ja|
-|[.NET Async](../profiling/perftips.md)|Ja (Nur .NET)|ja|ja|
-|[Datenbank](../profiling/perftips.md)|Ja (nur .NET Core)|Nein|Ja (nur ASP.NET Core)|
+|[Ereignisanzeige](../profiling/events-viewer.md)|ja|ja|ja|
+|[.NET Async](../profiling/analyze-async.md)|Ja (Nur .NET)|ja|ja|
+|[Datenbank](../profiling/analyze-database.md)|Ja (nur .NET Core)|Nein|Ja (nur ASP.NET Core)|
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Nein|Nein|
 |[IntelliTrace](../debugger/intellitrace.md)|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|
 ::: moniker-end
