@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734767"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835653"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.
@@ -37,7 +37,7 @@ In diesem Abschnitt wird gezeigt, wie folgende Aufgaben ausgeführt werden:
 - Aufzeichnen von Grafikinformationen
 
 > [!NOTE]
-> Frühere Implementierungen der programmgesteuerten Erfassung beruhten auf Remotetools für Visual Studio, um in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Erfassungsfunktionen bereitzustellen.
+> Frühere Implementierungen der programmgesteuerten Erfassung beruhten auf Remotetools für Visual Studio, um Erfassungsfunktionen bereitzustellen.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung
 Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese die erforderlichen Header enthalten. Diese Header sind Bestandteile des Windows 10 SDK.

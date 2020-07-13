@@ -1,7 +1,7 @@
 ---
 title: Komponententests für JavaScript und TypeScript
 description: Visual Studio bietet Unterstützung zum Durchführen von Komponententests für JavaScript- und TypeScript Code mithilfe der Node.js-Tools für Visual Studio.
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289000"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033350"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Komponententests für JavaScript und TypeScript in Visual Studio
 
@@ -72,25 +72,32 @@ Nach dem Öffnen des Test-Explorers (wählen Sie **Test** > **Windows** > **Test
 ![Test-Explorer](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Die Optionen `outdir` und `outfile` in *tsconfig.json* können nicht verwendet werden, da der Test-Explorer Komponententests in TypeScript-Dateien nicht findet.
+> Verwenden Sie für TypeScript nicht die Optionen `outdir` und `outfile` in *tsconfig.json*, da der Test-Explorer Ihre Komponententests nicht finden würde.
 
 ## <a name="run-tests"></a>Tests durchführen
 
-Tests können in Visual Studio 2017 oder über die Befehlszeile ausgeführt werden.
+Tests können in Visual Studio oder über die Befehlszeile ausgeführt werden.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Ausführen von Komponententests in Visual Studio 2017
+### <a name="run-tests-in-visual-studio"></a>Ausführen von Tests in Visual Studio
 
+::: moniker range=">=vs-2019"
+Sie können die Tests durchführen, indem Sie im Test-Explorer auf den Link **Alle ausführen** klicken. Alternativ können Sie Tests ausführen, indem Sie mindestens einen Test oder eine Gruppe auswählen, mit der rechten Maustaste klicken und im Kontextmenü auf **Ausführen** klicken. Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert die Ergebnisse automatisch und zeigt diese an. Darüber hinaus können Sie auch ausgewählte Tests debuggen, indem Sie auf **Debuggen** klicken.
+::: moniker-end
+::: moniker range="vs-2017"
 Sie können die Tests durchführen, indem Sie im Test-Explorer auf den Link **Alle ausführen** klicken. Alternativ können sie Tests ausführen, indem Sie mindestens einen Test oder eine Gruppe auswählen, mit der rechten Maustaste klicken und im Kontextmenü die Option **Ausgewählte Tests ausführen** auswählen. Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert die Ergebnisse automatisch und zeigt diese an. Darüber hinaus können Sie auch ausgewählte Tests debuggen, indem Sie **Ausgewählte Tests debuggen** auswählen.
+::: moniker-end
 
-> [!Warning]
-> Das Debuggen von Komponententests mit Node 8 und höher funktioniert derzeit nur bei JavaScript-Testdateien. Bei TypeScript-Testdateien werden die Breakpoints nicht erreicht. Verwenden Sie zur Umgehung dieses Problems das Schlüsselwort `debugger`.
+Für TypeScript werden Komponententests für den generierten JavaScript-Code ausgeführt.
+
+> [!NOTE]
+> In den meisten TypeScript-Szenarios können Sie einen Komponententest debuggen, indem Sie einen Haltepunkt im TypeScript-Code festlegen, mit der rechten Maustaste auf einen Test im Test-Explorer klicken und auf **Debuggen** klicken. In komplexeren Szenarios, wenn z. B. Quellzuordnungen verwendet werden, kann es schwierig sein, Haltepunkte im TypeScript-Code zu erreichen. Verwenden Sie zur Umgehung dieses Problems das Schlüsselwort `debugger`.
 
 > [!NOTE]
 > Die Profilerstellung bei Tests und Code Coverage wird derzeit nicht unterstützt.
 
 ### <a name="run-tests-from-the-command-line"></a>Ausführen von Tests über die Befehlszeile
 
-Sie können die Tests über die [Developer-Eingabeaufforderung](/dotnet/framework/tools/developer-command-prompt-for-vs) für Visual Studio 2017 mithilfe des folgenden Befehls ausführen:
+Sie können die Tests über die [Developer-Eingabeaufforderung](/dotnet/framework/tools/developer-command-prompt-for-vs) für Visual Studio mithilfe des folgenden Befehls ausführen:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
