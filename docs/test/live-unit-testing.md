@@ -1,19 +1,19 @@
 ---
 title: Live Unit Testing
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223701"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906215"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Konfigurieren und Verwenden von Live Unit Testing
 
@@ -198,9 +198,9 @@ Um die einzelnen Projekte in Komponententests auszuwählen, gehen Sie nach dem S
 
 Im Code-Editor-Fenster können Sie einzelne Testmethoden ein- oder ausschließen. Klicken Sie mit der rechten Maustaste auf die Signatur der Testmethode im Code-Editor-Fenster, und wählen Sie eine der folgenden Optionen aus:
 
-- **Live Tests**  >  **\<ausgewählte Methode> einschließen**
-- **Live Tests**  >  **\<ausgewählte Methode> ausschließen**
-- **Live Tests**  > **Alle ausschließen außer \<ausgewählte Methode>**
+- **Live Tests** > **Include \<selected method>** (Livetests > <ausgewählte Methode> einschließen)
+- **Live Tests** > **Exclude \<selected method>** (Livetests > <ausgewählte Methode> ausschließen)
+- **Live Tests**  > **Exclude All But \<selected method>** (Livetests > Alle ausschließen außer <ausgewählte Methode>)
 
 ### <a name="exclude-tests-programmatically"></a>Programmgesteuertes Ausschließen von Tests
 
