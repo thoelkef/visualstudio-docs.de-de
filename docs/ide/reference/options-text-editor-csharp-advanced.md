@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431487"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181065"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -87,7 +87,14 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using System.Linq;
    ```
 
+::: moniker range=">=vs-2019"                                              
 - Using-Anweisungen für Typen in .NET Framework-Assemblys vorschlagen
+::: moniker-end
+                                         
+::: moniker range="vs-2017"                                                
+- Using-Direktiven für Typen in Verweisassemblys vorschlagen
+::: moniker-end                                                            
+
 - Using-Direktiven für Typen in NuGet-Paketen vorschlagen
 
    Wenn diese Optionen ausgewählt wurden, ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.

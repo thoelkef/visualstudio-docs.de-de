@@ -1,30 +1,27 @@
 ---
 title: Konvertieren einer ForEach-Schleife in LINQ
 descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
-ms.date: 03/10/2020
+ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 12c03830ccd37e0970e3c74bc78cdd9c8a8732b7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 390e66fa01d49f217140c3c030bcc54fd349e402
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094225"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285393"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Konvertieren einer ForEach-Schleife in LINQ
 
 Dieses Refactoring gilt für:
 
 - C#
-
-- Visual Basic
 
 **Beschreibung:** Hiermit können Sie Ihre *ForEach*-Schleife, die eine IEnumerable verwendet, in das Format von LINQ-Abfragen oder -Aufrufen (auch bekannt als LINQ-Methode) konvertieren.
 

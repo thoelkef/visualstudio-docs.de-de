@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d52dd064e895b1e35230b93c85a7a8499032943e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1c658d97ed678950869c9a011af04e04eeacf5b1
+ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114834"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86156818"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 
@@ -178,7 +178,7 @@ vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.Mana
 Anschließend führen Sie mit dem folgenden Befehl die Installation aus:
 
 ```cmd
-c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
+c:\vslayout\vs_community.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
 Weitere Beispiele für die Verwendung von [Befehlszeilenparametern](use-command-line-parameters-to-install-visual-studio.md) finden Sie auf der Seite [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio](command-line-parameter-examples.md). 

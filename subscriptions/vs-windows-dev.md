@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Hier erfahren Sie mehr über das Windows-Entwicklerkonto, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905997"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301459"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows-Entwicklerkonto in Visual Studio-Abonnements
 Mit Ihrem Windows-Entwicklerkonto, das in ausgewählten Visual Studio-Abonnements enthalten ist, können Sie kostenlose und kostenpflichtige Windows-Apps an den Windows Store übermitteln.
@@ -26,7 +26,7 @@ Es wird empfohlen, dass Sie dafür ein privates Browserfenster erstellen.  Erste
 2. Suchen Sie im Abschnitt „Tools“ die Kachel „Windows Developer Account“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Code abrufen**.  Kopieren Sie den Code in die Zwischenablage, und klicken Sie auf **Activate** (Aktivieren).
    > [!div class="mx-imgBorder"]
    > ![Kachel des Vorteils „Windows-Entwickler“](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. Besuchen Sie die Website [https://developer.microsoft.com](https://developer.microsoft.com), um die Registrierung durchzuführen.  Klicken Sie auf **Sign up** (Registrieren), um den Vorgang fortzusetzen.
+3. Besuchen Sie die Website [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/), um die Registrierung durchzuführen.  Klicken Sie auf **Sign up** (Registrieren), um den Vorgang fortzusetzen.
    > [!div class="mx-imgBorder"]
    > ![Registrierung für den Vorteil „Windows-Entwickler“](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. Melden Sie sich bei Ihrem Abonnement an.  Wenn Sie mehrere Konten haben, wählen Sie das aus, das Ihrem Enterprise-Abonnement zugeordnet ist.
