@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Auswerten der Funktion &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen | Microsoft-Dokumentation'
+title: 'Fehler: Timeout beim Auswerten der Funktion &#39;Funktion&#39;. Der Abbruch musste auf unsichere Weise erfolgen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.topic: reference
 f1_keywords:
@@ -9,40 +9,40 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a27bf67770eef770fddef0301a804e6c45579539
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197061"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387121"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Auswerten der Funktion &#39;Funktion&#39; Timeout und musste auf unsichere Weise abgebrochen werden
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Timeout beim Auswerten der Funktion &#39;Funktion&#39;. Der Abbruch musste auf unsichere Weise erfolgen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vollständige Nachrichtentext: Auswerten der Funktion 'Funktion' Timeout und musste auf unsichere Weise abgebrochen werden. Dies kann den Zielprozess beschädigt. 
+Vollständiger Meldungstext: Timeout beim Auswerten der Funktion „Funktion“. Der Abbruch musste auf unsichere Weise erfolgen. Dies hat den Zielprozess ggf. beschädigt. 
 
-Zum Überprüfen des Status von Objekten für .NET zu vereinfachen, wird der Debugger automatisch den gedebuggten Prozess zum Ausführen von zusätzlichen Codes (in der Regel die Eigenschaft Getter-Methoden und Funktionen mit ToString) erzwungen. In den meisten Szenarien alle diese Funktionen schnell ausführen und Debuggen deutlich vereinfacht. Der Debugger nicht jedoch die Anwendung in einer Sandbox ausgeführt wird. Daher kann eine Abruf- oder die ToString-Methode, die eine native Funktion aufruft, das hängt zu lange Timeouts führen, die nicht wiederhergestellt werden kann. Wenn Sie diese Fehlermeldung auftritt, ist dies aufgetreten.
+Um das Überprüfen des Status von .NET-Objekten zu vereinfachen, zwingt der Debugger den debuggten Prozess automatisch zur Ausführung von zusätzlichem Code (in der Regel Eigenschaftengettermethoden und ToString-Funktionen). In den meisten Szenarien werden diese Funktionen schnell ausgeführt, und sie vereinfachen das Debuggen erheblich. Der Debugger führt die Anwendung jedoch nicht in einem Sandkasten aus. Demzufolge kann eine Eigenschaft Getter oder eine Methode, die eine native Funktion aufruft, die nicht mehr reagiert, zu langen Timeouts führen, die möglicherweise nicht wiederherstellbar sind. Wenn diese Fehlermeldung angezeigt wird, ist dieser Fall eingetreten.
  
-Ein häufiger Grund für dieses Problem ist, dass wenn der Debugger eine Eigenschaft ausgewertet wird, nur den Thread wird überprüft, um Sie ausführen können. Also wird ob die Eigenschaft in der debuggten Anwendung Ausführung anderer Threads warten ist und wenn es auf eine Weise, die die .NET Runtime unterbrechen, können nicht im Wartezustand befindet, dieses Problem auftreten.
+Ein häufiger Grund für dieses Problem liegt darin, dass der Debugger beim Auswerten einer Eigenschaft nur die Ausführung des zu überprüfenden Threads zulässt. Wenn die Eigenschaft also darauf wartet, dass andere Threads innerhalb der debuggten Anwendung ausgeführt werden, und wenn Sie darauf wartet, dass die .NET-Runtime nicht unterbrechen kann, tritt dieses Problem auf.
  
 ## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
  
 Es gibt drei mögliche Lösungen für dieses Problem.
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1-Lösung: Verhindern Sie, dass des Debuggers beim Aufrufen der Getter-Eigenschaft oder die ToString-Methode
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Lösung 1: Verhindern, dass der Debugger die Eigenschaftengetter- oder ToString-Methode aufruft
  
-Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versucht hat, aufgerufen. Wenn Sie diese Funktion ändern können, können Sie verhindern, dass den Debugger die Getter für eine Eigenschaft oder die ToString-Methode aufrufen. Versuchen Sie Folgendes:
+In der Fehlermeldung wird der Name der Funktion angegeben, die der Debugger aufzurufen versucht hat. Wenn es Ihnen möglich ist, diese Funktion zu ändern, können Sie verhindern, dass der Debugger die Eigenschaftengetter- oder ToString-Methode aufruft. Probieren Sie einen der folgenden Lösungsschritte aus:
  
-* Ändern Sie die Methode in eine andere Art von Code als einen Eigenschaften-Getter oder ToString-Methode und das Problem werden verschwinden.
-    -oder-
-* (Für ToString) Einem DebuggerDisplay-Attribut für den Typ definieren und Sie können den Debugger, einen anderen Wert als ToString ausgewertet.
-    -oder-
-* (Für einen Eigenschaften-Getter) Platzieren der `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` Attribut für die Eigenschaft. Dies ist hilfreich, wenn Sie eine Methode verwenden, die eine Eigenschaft aus Gründen der Kompatibilität von API-bleiben muss, aber es sollte eigentlich eine Methode sein.
+* Ändern Sie die Methode in einen anderen Codetyp neben einer Eigenschaftengetter- oder ToString-Methode. Dadurch wird das Problem gelöst.
+    - oder -
+* (Für ToString) Definieren Sie ein DebuggerDisplay-Attribut für den Typ. Dann kann der Debugger etwas anderes als ToString auswerten.
+    - oder -
+* (Für einen Eigenschaftengetter) Legen Sie das Attribut `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` für die Eigenschaft fest. Dies kann sinnvoll sein, wenn Sie über eine Methode verfügen, die aus Gründen der API-Kompatibilität eine Eigenschaft bleiben muss, aber tatsächlich eine Methode sein sollte.
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Lösung #2: Haben Sie den Code des ereignisdateiziels, bitten Sie den Debugger an die Auswertung Abbrechen
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Lösung 2: Veranlassen, dass der Zielcode den Debugger zum Abbrechen der Auswertung auffordert
  
-Die Fehlermeldung informiert Sie den Namen der Funktion, die der Debugger versucht hat, aufgerufen. Wenn der Eigenschaftengetter oder eine ToString-Methode in einigen Fällen nicht ordnungsgemäß ausgeführt werden, insbesondere in Situationen, in denen das Problem, das Code einem anderen Thread zum Ausführen von Code benötigt, und die implementierungsfunktion aufrufen kann `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` , bitten Sie den Debugger an die Funktion abgebrochen nützlich. Mit dieser Lösung ist es weiterhin möglich, diese Funktionen bewerten, aber das Standardverhalten ist, dass die Ausführung hält bei der NotifyOfCrossThreadDependency des Anrufs gewählt.
+In der Fehlermeldung wird der Name der Funktion angegeben, die der Debugger aufzurufen versucht hat. Wenn die Eigenschaftengetter- oder ToString-Methode manchmal nicht ordnungsgemäß ausgeführt wird, insbesondere in Situationen, in denen der Code einen anderen Thread zum Ausführen von Code benötigt, kann die Implementierungsfunktion `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` aufrufen, um den Debugger zum Abbrechen der Funktionsauswertung aufzufordern. Bei dieser Lösung ist es immer noch möglich, diese Funktionen explizit auszuwerten. Das Standardverhalten besteht jedoch darin, dass die Ausführung beendet wird, wenn der NotifyOfCrossThreadDependency-Aufruf erfolgt.
  
-### <a name="solution-3-disable-all-implicit-evaluation"></a>#3-Lösung: Deaktivieren Sie alle implizite Auswertung
+### <a name="solution-3-disable-all-implicit-evaluation"></a>Lösung 3: Deaktivieren aller impliziten Auswertungen
  
-Wenn die vorherigen Lösungen das Problem nicht beheben, wechseln Sie zu *Tools* / *Optionen*, und deaktivieren Sie die Einstellung *Debuggen*  /   *Allgemeine* / *eigenschaftenauswertung und andere implizite Funktionsaufrufe*. Dadurch werden die meisten Evaluierungsversionen von impliziten Funktionen deaktiviert und sollte das Problem zu beheben.
+Wenn das Problem durch die vorherigen Lösungen nicht behoben werden kann, navigieren Sie zu *Extras* / *Optionen*, und deaktivieren Sie die Einstellung *Debuggen* / *Allgemein* / *Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen*. Dadurch werden die meisten impliziten Funktionsauswertungen deaktiviert, und das Problem sollte behoben sein.

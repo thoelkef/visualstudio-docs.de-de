@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Weiter | Microsoft Docs
+title: 'IDebugProgram2:: Continue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d04445a7a1c444f30a0ef5c156dcd7ad744c6f1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: ee73ea3a9b65635cf14d4d345bf22de4e9593989
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723075"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387082"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
-Setzt die Ausführung dieses Programms unter einem angehaltenen Zustand fort. Alle vorherigen Ausführungsstatus (z. B. ein Schritt) bleiben erhalten, und das Programm beginnt erneut mit der Ausführung.
+Setzt die Ausführung dieses Programms mit dem Status "beendet" fort. Alle vorherigen Ausführungs Zustände (z. b. ein Schritt) werden beibehalten, und die Ausführung des Programms beginnt erneut.
 
 > [!NOTE]
-> Diese Methode ist als veraltet markiert. Verwenden [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) Sie stattdessen die Continue-Methode.
+> Diese Methode ist als veraltet markiert. Verwenden Sie stattdessen die [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) -Methode.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,17 +43,17 @@ int Continue( 
 ```
 
 ## <a name="parameters"></a>Parameter
-`pThread`[in] Ein [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den Thread darstellt.
+`pThread`in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird für dieses Programm aufgerufen, unabhängig davon, wie viele Programme gedebuggen werden oder welches Programm das Stoppereignis generiert hat. Die Implementierung muss den vorherigen Ausführungsstatus (z. B. einen Schritt) beibehalten und die Ausführung so fortsetzen, als ob sie nie beendet worden wäre, bevor die vorherige Ausführung abgeschlossen wurde. Das heißt, wenn ein Thread in diesem Programm einen Stepover-Vorgang ausführt und angehalten wurde, weil ein anderes Programm angehalten wurde, und dann diese Methode aufgerufen wurde, muss das Programm den ursprünglichen Stepovervorgang abschließen.
+ Diese Methode wird für dieses Programm aufgerufen, unabhängig davon, wie viele Programme gedebuggt werden oder welches Programm das anhalteereignis generiert hat. Die Implementierung muss den vorherigen Ausführungs Zustand beibehalten (z. b. einen Schritt) und die Ausführung fortsetzen, als ob Sie vor dem Abschließen der vorherigen Ausführung nie beendet worden wäre. Das heißt, wenn ein Thread in diesem Programm einen Schritt-für-Vorgang ausgeführt hat und beendet wurde, weil ein anderes Programm angehalten wurde, und diese Methode aufgerufen wurde, muss das Programm den ursprünglichen Step-over-Vorgang beenden.
 
 > [!WARNING]
-> Senden Sie während der Verarbeitung dieses Aufrufs kein Beenden- oder ein sofortiges (synchrones) Ereignis an [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls kann der Debugger hängen bleiben.
+> Senden Sie während der Behandlung dieses Aufrufes kein anhalteereignis oder ein sofortiges (synchrones [) Ereignis.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls reagiert der Debugger möglicherweise nicht mehr.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

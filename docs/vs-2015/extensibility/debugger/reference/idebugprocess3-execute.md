@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Execute | Microsoft-Dokumentation
+title: 'IDebugProcess3:: Execute | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b6647db9e3a013be0ffd3a0a12f92e9cb6cc738
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9b70deabd4cb7996d76373c6216057678c0bd3
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405825"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386172"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wird fortgesetzt, das Ausführen dieses Prozesses vom Status "beendet". Alle vorherigen Ausführungsstatus (z. B. in einem Schritt) deaktiviert ist, und der Prozess gestartet wird, erneut ausführen.  
+Setzt die Ausführung dieses Prozesses mit dem Status "beendet" fort. Alle vorherigen Ausführungs Zustände (z. b. ein Schritt) werden gelöscht, und der Prozess beginnt erneut mit der Ausführung.  
   
 > [!NOTE]
-> Diese Methode sollte verwendet werden, anstelle von [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).  
+> Diese Methode sollte anstelle von [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)verwendet werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,19 +43,19 @@ int Execute(
   
 #### <a name="parameters"></a>Parameter  
  `pThread`  
- [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt, das Ausführen des Threads darstellt.  
+ in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den auszuführenden Thread darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Benutzer die Ausführung von Status "beendet" im Thread von einem anderen Prozess startet, wird diese Methode zu diesem Vorgang aufgerufen. Diese Methode wird auch aufgerufen, wenn der Benutzer wählt die **starten** Befehl die **Debuggen** Menü in der IDE. Die Implementierung dieser Methode ist möglicherweise so einfach wie das Aufrufen der [fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md) Methode für den aktuellen Thread im Prozess.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Benutzer die Ausführung von einem beendeten Zustand in einem anderen Prozess Thread startet, wird diese Methode für diesen Prozess aufgerufen. Diese Methode wird auch aufgerufen, wenn der Benutzer den Befehl **Start** im Menü **Debuggen** in der IDE auswählt. Die Implementierung dieser Methode kann so einfach sein wie das Aufrufen der [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) -Methode für den aktuellen Thread im Prozess.  
   
 > [!WARNING]
-> Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.  
+> Senden Sie während der Behandlung dieses Aufrufes kein anhalteereignis oder ein sofortiges (synchrones [) Ereignis.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls reagiert der Debugger möglicherweise nicht mehr.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
+ [Zusetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

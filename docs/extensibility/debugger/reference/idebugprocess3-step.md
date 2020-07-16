@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Schritt | Microsoft Docs
+title: 'IDebugProcess3:: Step | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5c4927f3f997b7fdbdca2b32977f2aa31a51219
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723552"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386692"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-Bewirkt, dass der Prozess eine Anweisung oder Anweisung schritt.
+Bewirkt, dass der Prozess eine Anweisung oder eine Anweisung schrittweise durch nimmt.
 
 > [!NOTE]
 > Diese Methode sollte anstelle von [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)verwendet werden.
@@ -48,25 +48,25 @@ int Step(
 
 ## <a name="parameters"></a>Parameter
 `pThread`\
-[in] Ein [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den gestuften Thread darstellt.
+in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den abgestuften Thread darstellt.
 
 `sk`\
-[in] Einer der [STEPKIND-Werte.](../../../extensibility/debugger/reference/stepkind.md)
+in Einer der [stepkind](../../../extensibility/debugger/reference/stepkind.md) -Werte.
 
 `step`\
-[in] Einer der [STEPUNIT-Werte.](../../../extensibility/debugger/reference/stepunit.md)
+in Einer der [stepunit](../../../extensibility/debugger/reference/stepunit.md) -Werte.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird der Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Falls threadsynchronisierung oder -kommunikation zwischen Threads vorhanden ist, sollten andere Threads im Prozess ausgeführt werden, wenn ein bestimmter Thread schritt.
+ Wenn eine Thread Synchronisierung oder Kommunikation zwischen Threads vorhanden ist, sollten andere Threads im Prozess ausgeführt werden, wenn ein bestimmter Thread schrittweise ausgeführt wird.
 
- **Warnung** Senden Sie während der Verarbeitung dieses Aufrufs kein Beenden- oder ein sofortiges (synchrones) Ereignis an [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls kann der Debugger hängen bleiben.
+ **Warnung** Senden Sie während der Behandlung dieses Aufrufes kein anhalteereignis oder ein sofortiges (synchrones [) Ereignis.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls reagiert der Debugger möglicherweise nicht mehr.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)
 - [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)
-- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

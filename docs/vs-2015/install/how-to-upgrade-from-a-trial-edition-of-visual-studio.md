@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298064"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386679"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Gewusst wie: Aktualisieren von einer Visual Studio-Testversion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können das Vorabrelease von Visual Studio 14 Tage lang testen, ohne das Produkt zu registrieren. Nach der Registrierung durch Anmelden mit einem Microsoft-Konto ist die Vorabreleaselizenz bis zum Ablaufdatum gültig.
+Sie können das Vorabrelease von Visual Studio 14 Tage lang testen, ohne das Produkt zu registrieren. Nachdem Sie sich registriert haben, indem Sie sich mit einem Microsoft-Konto angemeldet haben, ist die Vorabversion der Lizenz bis zum Ablaufdatum gültig.
 
  Sie können die Releaseversion der Professional und Enterprise Edition von Visual Studio nach der Installation bis zu 30 Tage lang testen. Durch [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md) wird der Evaluierungszeitraum um 60 Tage auf insgesamt 90 Tage erweitert. Wenn Sie eine Testedition von Visual Studio nicht innerhalb von 30 Tagen registrieren, läuft der Testzeitraum 30 Tage nach der Installation ab.
 
@@ -43,5 +43,5 @@ Sie können das Vorabrelease von Visual Studio 14 Tage lang testen, ohne das Pro
     > [!NOTE]
     > Zur Registrierung und Freischaltung jede Edition von Visual Studio ist eine Internetverbindung erforderlich. Nach der Registrierung von Visual Studio ist die Internetverbindung optional.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Installieren von Visual Studio](../install/install-visual-studio-2015.md) [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md) [Gewusst wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) [Suchen oder Ändern des Product Key für Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
