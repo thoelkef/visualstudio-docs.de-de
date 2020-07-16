@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: db9267fe9f06569dadea240e5d78c8b35c84b8c4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651784"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386549"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Melden eines Problems mit Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Wählen Sie **Screenshot einfügen** aus, um Ihren aktuellen Bildschirm an Micro
 
 1. Ablaufverfolgungs- und Heapspeicherabbild-Dateien sind sehr nützlich für die Diagnose von Problemen.   Wir schätzen es sehr, wenn Sie das Tool „Problem melden“ verwenden, um die Schritte zum Reproduzieren des Problems zu erfassen und die Daten an Microsoft zu senden.
 
-2. Klicken Sie auf das Chevron neben **Zeichnen Sie Ihre Aktionen auf, damit das Problem reproduziert werden kann**. Wenn das Problem dazu führt, dass Visual Studio hängt oder abstürzt, öffnen Sie einer andere Instanz von Visual Studio, und wählen Sie die Option aus der Listenansicht aus.
+2. Klicken Sie auf das Chevron neben **Zeichnen Sie Ihre Aktionen auf, damit das Problem reproduziert werden kann**. Wenn das Problem dazu führt, dass Visual Studio nicht mehr reagiert oder abstürzt, öffnen Sie eine andere Instanz von Visual Studio, und wählen Sie Sie in der Listenansicht aus.
 
 3. Klicken Sie auf **Aufzeichnung starten** , und führen Sie die Schritte zum Reproduzieren des Problems aus. Wenn Sie fertig sind, klicken Sie im unverankerten Fenster auf die Schaltfläche **Aufzeichnung beenden** .
 
@@ -67,8 +67,8 @@ Wenn Sie das Problem umgehen konnten, beschreiben Sie die Problemumgehung in dem
 
 ## <a name="submit-the-report"></a>Senden Sie den Bericht
 
-Klicken Sie auf die Schaltfläche zum Senden des Berichts zusammen mit allen Bildern, Ablaufverfolgungs- und Speicherabbilddateien. Wenn die Schaltfläche **Senden** abgeblendet ist, vergewissern Sie sich, dass Sie einen Titel und eine Beschreibung eingegeben haben.
+Klicken Sie auf die Schaltfläche zum Senden des Berichts zusammen mit allen Bildern, Ablaufverfolgungs- und Speicherabbilddateien. Wenn die Schaltfläche **Senden** abgeblendet ist, stellen Sie sicher, dass Sie einen Titel und eine Beschreibung eingegeben haben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sprechen Sie mit uns](../ide/talk-to-us.md)

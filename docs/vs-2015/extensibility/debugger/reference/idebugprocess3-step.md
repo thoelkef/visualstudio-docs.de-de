@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Step | Microsoft-Dokumentation
+title: 'IDebugProcess3:: Step | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 45f60aaac3b89b7273a5f548b4716b6aee392256
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5069a40f4e3ea4b1fba74c8133a18b46f2b3f2d2
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405600"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386224"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bewirkt, dass den Prozess eine Anweisung oder Anweisung wechseln.  
+Bewirkt, dass der Prozess eine Anweisung oder eine Anweisung schrittweise durch nimmt.  
   
 > [!NOTE]
-> Diese Methode sollte verwendet werden, anstelle von [Schritt](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
+> Diese Methode sollte anstelle von [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)verwendet werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,25 +47,25 @@ int Step(
   
 #### <a name="parameters"></a>Parameter  
  `pThread`  
- [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt, das den Thread wird abgestuften darstellt.  
+ in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den abgestuften Thread darstellt.  
   
  `sk`  
- [in] Eines der [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) Werte.  
+ in Einer der [stepkind](../../../extensibility/debugger/reference/stepkind.md) -Werte.  
   
  `step`  
- [in] Eines der [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) Werte.  
+ in Einer der [stepunit](../../../extensibility/debugger/reference/stepunit.md) -Werte.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Für den Fall, dass alle Threadsynchronisierung oder die Kommunikation zwischen Threads vorhanden ist, sollte die andere Threads im Prozess ausgeführt, wenn ein bestimmter Thread stepping ist.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn eine Thread Synchronisierung oder Kommunikation zwischen Threads vorhanden ist, sollten andere Threads im Prozess ausgeführt werden, wenn ein bestimmter Thread schrittweise ausgeführt wird.  
   
- **Warnung** senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.  
+ **Warnung** Senden Sie während der Behandlung dieses Aufrufes kein anhalteereignis oder ein sofortiges (synchrones [) Ereignis.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls reagiert der Debugger möglicherweise nicht mehr.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)   
- [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)   
+ [Stepkind](../../../extensibility/debugger/reference/stepkind.md)   
+ [Stepunit](../../../extensibility/debugger/reference/stepunit.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

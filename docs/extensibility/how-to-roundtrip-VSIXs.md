@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905776"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387277"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Gewusst wie: Erstellen von mit Visual Studio 2019/2017 und Visual Studio 2015 kompatiblen Erweiterungen
 
@@ -74,7 +74,7 @@ Version | Integrierte Tools
 Visual Studio 2015 | Microsoft. VisualStudio. SDK. BuildTasks. 14,0
 Visual Studio 2019 oder 2017 | Microsoft. VSSDK. Buildtool
 
-Gehen Sie hierzu wie folgt vor:
+Dazu gehen Sie wie folgt vor:
 
 * Fügen Sie das nuget-Paket "Microsoft. VisualStudio. SDK. BuildTasks. 14,0" zu Ihrem Projekt hinzu.
 * Wenn das Projekt nicht Microsoft. VSSDK. Buildtools enthält, fügen Sie es hinzu.
@@ -213,5 +213,4 @@ An diesem Punkt sollte Ihr Projekt bereit sein, ein VSIXv3 zu erstellen, das sow
 ![VSIX suchen](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> Wenn das Projekt mit der Meldung, **die die Datei öffnet**, nicht mehr reagiert, erzwingen Sie das Herunterfahren von Visual Studio, navigieren Sie zum Projektverzeichnis, zeigen Sie ausgeblendete Ordner an, und Löschen *Sie den Ordner*
- 
+> Wenn das Projekt nicht mehr mit der Meldung antwortet, **die die Datei öffnet**, erzwingen Sie das Herunterfahren von Visual Studio, navigieren Sie zu Ihrem Projektverzeichnis, zeigen Sie ausgeblendete Ordner an, und löschen Sie den Ordner *.*

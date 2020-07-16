@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Schritt | Microsoft Docs
+title: 'IDebugProgram2:: Step | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 194e72eba5a3f137e4650752a090d91ad7c402fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80722761"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387238"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Führt einen Schritt aus.
 
 > [!NOTE]
-> Diese Methode ist als veraltet markiert. Verwenden [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) Sie stattdessen die Step-Methode.
+> Diese Methode ist als veraltet markiert. Verwenden Sie stattdessen die [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) -Methode.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,24 +48,24 @@ int Step( 
 
 ## <a name="parameters"></a>Parameter
 `pThread`\
-[in] Ein [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den gestuften Thread darstellt.
+in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den abgestuften Thread darstellt.
 
 `sk`\
-[in] Ein Wert [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) aus der STEPKIND-Enumeration, der die Art des Schritts angibt.
+in Ein Wert aus der [stepkind](../../../extensibility/debugger/reference/stepkind.md) -Enumeration, der die Art des Schritts angibt.
 
 `step`\
-[in] Ein Wert [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) aus der STEPUNIT-Enumeration, der die Schritteinheit angibt (z. B. durch Anweisung oder Anweisung).
+in Ein Wert aus der [stepunit](../../../extensibility/debugger/reference/stepunit.md) -Enumeration, der die Einheit des Schritts angibt (z. b. durch Anweisung oder Anweisung).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Falls eine Threadsynchronisierung oder -kommunikation zwischen Threads besteht, sollten andere Threads im Programm ausgeführt werden, wenn ein bestimmter Thread schritt.
+ Wenn eine Thread Synchronisierung oder Kommunikation zwischen Threads vorhanden ist, sollten andere Threads im Programm ausgeführt werden, wenn ein bestimmter Thread schrittweise ausgeführt wird.
 
 > [!WARNING]
-> Senden Sie während der Verarbeitung dieses Aufrufs kein Beenden- oder ein sofortiges (synchrones) Ereignis an [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls kann der Debugger hängen bleiben.
+> Senden Sie während der Behandlung dieses Aufrufes kein anhalteereignis oder ein sofortiges (synchrones [) Ereignis.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls reagiert der Debugger möglicherweise nicht mehr.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

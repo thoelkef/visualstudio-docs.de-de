@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Weiter | Microsoft Docs
+title: 'IDebugProcess3:: Continue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8fa2e21e31297279a173c9c9edd087adc560903
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: aba0863ad7c50bf5c14e7a30c06097825b8cf5ec
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723781"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386796"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Setzt die Ausführung dieses Prozesses von einem angehaltenen Zustand aus fort. Alle vorherigen Ausführungsstatus (z. B. ein Schritt) bleiben erhalten, und der Prozess wird erneut ausgeführt.
+Setzt die Ausführung dieses Prozesses mit dem Status "beendet" fort. Alle vorherigen Ausführungs Zustände (z. b. ein Schritt) werden beibehalten, und der Prozess wird erneut ausgeführt.
 
 > [!NOTE]
 > Diese Methode sollte anstelle von [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)verwendet werden.
@@ -44,17 +44,17 @@ int Continue(
 
 ## <a name="parameters"></a>Parameter
 `pThread`\
-[in] Ein [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den Thread darstellt, der fortgesetzt werden soll.
+in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den fort zufügenden Thread darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird für diesen Prozess aufgerufen, unabhängig davon, wie viele Prozesse gedebughandelt werden oder welcher Prozess das Stoppereignis generiert hat. Die Implementierung muss den vorherigen Ausführungsstatus (z. B. einen Schritt) beibehalten und die Ausführung so fortsetzen, als ob sie nie beendet worden wäre, bevor die vorherige Ausführung abgeschlossen wurde. Das heißt, wenn ein Thread in diesem Prozess einen Stepovervorgang ausführt und `Continue` angehalten wurde, weil ein anderer Prozess angehalten wurde und dann aufgerufen wurde, muss der angegebene Thread den ursprünglichen Stepovervorgang abschließen.
+ Diese Methode wird für diesen Prozess aufgerufen, unabhängig davon, wie viele Prozesse gedebuggt werden oder welcher Prozess das anhalteereignis generiert hat. Die Implementierung muss den vorherigen Ausführungs Zustand beibehalten (z. b. einen Schritt) und die Ausführung fortsetzen, als ob Sie vor dem Abschließen der vorherigen Ausführung nie beendet worden wäre. Das heißt, wenn ein Thread in diesem Prozess einen Schritt-für-Vorgang ausgeführt hat und beendet wurde, weil ein anderer Prozess angehalten wurde, und dann `Continue` aufgerufen wurde, muss der angegebene Thread den ursprünglichen Step-over-Vorgang beenden.
 
- **Warnung** Senden Sie während der Verarbeitung dieses Aufrufs kein Beenden- oder ein sofortiges (synchrones) Ereignis an [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls kann der Debugger hängen bleiben.
+ **Warnung** Senden Sie während der Behandlung dieses Aufrufes kein anhalteereignis oder ein sofortiges (synchrones [) Ereignis.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Andernfalls reagiert der Debugger möglicherweise nicht mehr.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
