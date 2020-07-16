@@ -42,6 +42,8 @@
       items:
         - name: Ausführen von Komponententests mit dem Test-Explorer
           href: run-unit-tests-with-test-explorer.md
+        - name: Debuggen von Komponententests mit dem Test-Explorer
+          href: debug-unit-tests-with-test-explorer.md
         - name: Häufig gestellte Fragen zum Test-Explorer
           href: test-explorer-faq.md
     - name: Ausführen von Tests über die Befehlszeile
@@ -103,7 +105,7 @@
       items:
         - name: Komponententests bei einer C++-UWP-DLL
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Komponententests von Visual C#-Code in UWP-Apps'
+        - name: Komponententests von Visual C#-Code in UWP-Apps
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für UWP-Apps'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
