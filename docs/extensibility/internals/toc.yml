@@ -38,7 +38,7 @@
           href: command-design.md
         - name: Befehlsimplementierung
           href: command-implementation.md
-        - name: Verfügbarkeit von Befehlen
+        - name: Befehlsverfügbarkeit
           href: command-availability.md
         - name: Algorithmus für das Befehlsrouting
           href: command-routing-algorithm.md
@@ -208,9 +208,9 @@
   items:
     - name: Projekte
       href: projects.md
-    - name: 'Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1'
+    - name: 'Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1'
       href: new-project-generation-under-the-hood-part-one.md
-    - name: 'Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2'
+    - name: 'Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2'
       href: new-project-generation-under-the-hood-part-two.md
     - name: Projekttypen
       items:
@@ -228,7 +228,7 @@
               href: checklist-creating-new-project-types.md
             - name: Erstellen von Projektinstanzen mithilfe von Projektfactorys
               href: creating-project-instances-by-using-project-factories.md
-            - name: 'Verwenden des Managed Package Framework zum Implementieren eines Projekttyps (C#)'
+            - name: Verwenden des Managed Package Framework zum Implementieren eines Projekttyps (C#)
               href: using-the-managed-package-framework-to-implement-a-project-type-csharp.md
             - name: Registrieren eines Projekttyps
               href: registering-a-project-type.md
@@ -400,9 +400,9 @@
           href: using-the-automation-model.md
         - name: Automatisierung für Konfigurations- und SelectedItem-Objekte
           href: automation-for-configuration-and-selecteditem-objects.md
-- name: Lösungen
+- name: Projektmappen
   items:
-    - name: Lösungen
+    - name: Projektmappen
       href: solutions-overview.md
     - name: Projektmappendatei (SLN)
       href: solution-dot-sln-file.md

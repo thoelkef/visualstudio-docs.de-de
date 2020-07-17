@@ -1,4 +1,4 @@
-- name: 'C#-Tutorials'
+- name: C#-Tutorials
   href: index.yml
 - name: Übersicht
   items:
@@ -10,10 +10,10 @@
       href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Weitere Visual Studio-Features
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-- name: Erstellen einer App
+- name: Erstellen Sie eine App
   expanded: true
   items:
-    - name: 'Erstellen Ihrer ersten C#-App'
+    - name: Erstellen Ihrer ersten C#-App
       href: tutorial-console.md
     - name: Erstellen einer Web-App
       href: tutorial-aspnet-core.md
@@ -48,9 +48,9 @@
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Debuggen Ihres Codes
       href: ../csharp/tutorial-debugger.md
-    - name: Komponententests
+    - name: Komponententest
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Bereitstellen des Projekts
       href: ../../deployment/index.yml
-    - name: Zugreifen auf Daten
+    - name: Zugriff auf Daten
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
