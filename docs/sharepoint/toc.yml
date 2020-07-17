@@ -32,15 +32,15 @@
               href: creating-sharepoint-workflow-solutions.md
             - name: Unterstütung von Formularen in Workflows
               href: form-support-in-workflows.md
-            - name: 'Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Projektmappe'
+            - name: 'Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflowlösung'
               href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
             - name: 'Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen'
               href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
             - name: 'Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow'
               href: walkthrough-add-an-application-page-to-a-workflow.md
-            - name: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivität'
+            - name: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Site-Workflowaktivität'
               href: walkthrough-create-a-custom-site-workflow-activity.md
-            - name: 'Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint-Designer in Visual Studio'
+            - name: 'Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio 2010'
               href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
         - name: Erstellen von Seiten für SharePoint
           items:
@@ -198,7 +198,7 @@
           items:
             - name: Profilerstellung für die Leistung von SharePoint-Anwendungen
               href: profiling-the-performance-of-sharepoint-applications.md
-            - name: 'Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung'
+            - name: 'Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung'
               href: walkthrough-profiling-a-sharepoint-application.md
         - name: Unterschiede zwischen Sandkasten- und Farmlösungen
           href: differences-between-sandboxed-and-farm-solutions.md
@@ -290,9 +290,9 @@
                   href: how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md
                 - name: Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente
                   href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
-                - name: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements „Benutzerdefinierte Aktion“ mit einer Elementvorlage, Teil 1'
+                - name: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements "Benutzerdefinierte Aktion" mit einer Elementvorlage, Teil 1'
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
-                - name: "Exemplarische Vorgehensweise: Erstellen eines Projektelements \"Benutzerdefinierte Aktion\" mit einer Elementvorlage, Teil\_2"
+                - name: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements "Benutzerdefinierte Aktion" mit einer Elementvorlage, Teil 2'
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
                 - name: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1'
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
@@ -308,7 +308,7 @@
                   href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
                 - name: Hinzufügen einer Eigenschaft zu einer SharePoint-Projektelementerweiterung
                   href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
-                - name: 'Exemplarische Vorgehensweise: Erweitern eines SharePoint-Elementtyps'
+                - name: 'Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps'
                   href: walkthrough-extending-a-sharepoint-project-item-type.md
             - name: Erweitern von SharePoint-Projekten
               items:
@@ -364,7 +364,7 @@
                   href: how-to-create-a-sharepoint-command.md
                 - name: Ausführen eines SharePoint-Befehls
                   href: how-to-execute-a-sharepoint-command.md
-                - name: 'Exemplarische Vorgehensweise: Aufrufe in das SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung'
+                - name: 'Exemplarische Vorgehensweise: Aufrufe in das SharePoint-Clientobjektmodell innerhalb einer Server-Explorer-Erweiterung'
                   href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
             - name: Verwenden des SharePoint-Projektdiensts
               items:
@@ -378,9 +378,9 @@
           href: debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md
         - name: "Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual\_Studio"
           href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
-        - name: Verweis
+        - name: Referenz
           items:
-            - name: Verweis
+            - name: Referenz
               href: reference-sharepoint-tools-extensibility.md
             - name: Referenz zum SharePoint-Projektelementschema
               items:
