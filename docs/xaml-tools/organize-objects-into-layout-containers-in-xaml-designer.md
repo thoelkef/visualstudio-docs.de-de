@@ -1,17 +1,17 @@
 ---
 title: Organisieren von Objekten in Layoutcontainern im XAML-Designer
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921106"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459293"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 
@@ -23,7 +23,7 @@ Nachdem Sie sich Gedanken über das Erscheinungsbild der Seite gemacht haben, w�
 
 LayoutPanel-Elemente helfen Ihnen, Objekte auf einer Seite anzuordnen, aber sie können noch mehr. Sie helfen Ihnen, für verschiedene Bildschirmgrößen und Auflösungen zu entwerfen. Wenn Benutzer Ihre Anwendung ausführen, wird alles in einem Layoutpanel passend zur Bildschirmfläche des Geräts angepasst. Wenn Sie dies nicht möchten, können Sie dieses Verhalten für einen Teil des Layouts oder das gesamte Layout natürlich überschreiben. Um dies zu steuern, können Sie Höhen-und Breiteneigenschaften verwenden.
 
-## <a name="layout-panels"></a>Layoutbereiche
+## <a name="layout-panels"></a>Layoutpanels
 
 Starten Sie die Seite durch Auswahl eines dieser Layoutpanels. Ihre Seite kann mehrere Panele enthalten. Sie können z.B. mit einem Layoutbereich des Typs **Raster** beginnen und dann einem Bereich des **Rasters** ein **StackPanel** hinzufügen, um in diesem Element Steuerelemente vertikal anzuordnen.
 
@@ -98,8 +98,6 @@ Ermöglicht es Benutzern, auf einer Seite oder auf einem Bereich einer Seite nac
 ### <a name="viewbox"></a>Viewbox
 
 Skalieren von Objekten ähnlich wie bei einem Zoomsteuerelement. Sie können einer **Viewbox** nur ein Objekt hinzufügen. Wenn Sie diesen Effekt auf mehr als ein Objekt anwenden möchten, fügen Sie der **ViewBox** einen Layoutbereich mit Steuerelementen hinzu.
-
-(Nur für WPF-Projekte verfügbar.)
 
 ![Layoutsteuerelement „ViewBox“](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

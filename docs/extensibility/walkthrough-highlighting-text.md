@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bfd94a55fe207f5c20e2ed1e5630d62c73c9ba2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
+ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904720"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86418070"
 ---
 # <a name="walkthrough-highlight-text"></a>Exemplarische Vorgehensweise: Markieren von Text
 Sie können dem Editor andere visuelle Effekte hinzufügen, indem Sie Managed Extensibility Framework Komponenten Teile (MEF) erstellen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie jedes Vorkommen des aktuellen Worts in einer Textdatei hervorgehoben wird. Wenn ein Wort mehr als einmal in einer Textdatei vorkommt und Sie die Einfügemarke in einem Vorkommen positionieren, wird jedes Vorkommen hervorgehoben.
@@ -104,7 +104,7 @@ Sie können dem Editor andere visuelle Effekte hinzufügen, indem Sie Managed Ex
     ```csharp
     public HighlightWordFormatDefinition()
     {
-                this.BackgroundColor = Colors.LightBlue;
+        this.BackgroundColor = Colors.LightBlue;
         this.ForegroundColor = Colors.DarkBlue;
         this.DisplayName = "Highlight Word";
         this.ZOrder = 5;
@@ -405,5 +405,5 @@ Sie können dem Editor andere visuelle Effekte hinzufügen, indem Sie Managed Ex
 
 4. Positionieren Sie den Cursor in einem der Vorkommen von "Hello". Jedes Vorkommen sollte blau hervorgehoben werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

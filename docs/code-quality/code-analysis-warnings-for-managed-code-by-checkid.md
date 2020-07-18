@@ -171,6 +171,7 @@ f1_keywords:
 - CA1832
 - CA1833
 - CA1835
+- CA1836
 - CA1900
 - CA1901
 - CA1903
@@ -290,18 +291,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835432"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454188"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
 
 In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach dem CheckId-Bezeichner der Warnung aufgeführt.
 
-| CheckId | Warnung | Beschreibung |
+| CheckId | Warnung | BESCHREIBUNG |
 |---------| - | - |
 | CA1000 | [CA1000: Statische Member nicht in generischen Typen deklarieren.](../code-quality/ca1000.md) | Wenn ein statischer Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. In diesen beiden Fällen ist die Syntax zum Angeben des Typarguments unterschiedlich und leicht zu verwechseln. |
 | CA1001 | [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können.](../code-quality/ca1001.md) | Eine Klasse deklariert und implementiert ein Instanzenfeld, das den System.IDisposable-Typ aufweist, IDisposable jedoch nicht implementiert. Eine Klasse, die ein IDisposable-Feld deklariert, besitzt indirekt eine nicht verwaltete Ressource und sollte die IDisposable-Schnittstelle implementieren. |
@@ -460,6 +461,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA1832 |[CA1832: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines ReadOnlySpan- oder ReadOnlyMemory-Teils eines Arrays.](../code-quality/ca1832.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.ReadOnlySpan%601> oder- <xref:System.ReadOnlyMemory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
 | CA1833 |[CA1833: Verwenden Sie „AsSpan“ oder „AsMemory“ anstelle von Range-basierten Indexern zum Abrufen eines Span- oder Memory-Teils eines Arrays.](../code-quality/ca1833.md) | Wenn Sie einen Range-Indexer für ein Array verwenden und den Wert implizit einem- <xref:System.Span%601> oder- <xref:System.Memory%601> Typ zuweisen, wird die-Methode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> anstelle von verwendet <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , wodurch eine Kopie des angeforderten Teils des Arrays erzeugt wird. |
 | CA1835 |[CA1835: bevorzugen Sie die "Memory"-basierten über Ladungen für "Read Async" und "schreiteasync".](../code-quality/ca1835.md) | ' Stream ' weist eine ' Schreib async '-Überladung auf, die ein ' Memory &lt; Byte &gt; ' als erstes Argument annimmt, und eine ' schreiteasync '-Überladung, die ein ' Read onlymemory &lt; Byte &gt; ' als erstes Argument annimmt. Bevorzugen Sie das Aufrufen der Speicher basierten über Ladungen, die effizienter sind. |
+| CA1836 |[CA1836: bevorzugen `IsEmpty` , `Count` Wenn verfügbar](../code-quality/ca1836.md) | Bevorzugt eine `IsEmpty` Eigenschaft, die effizienter ist als `Count` , oder, `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> um zu bestimmen, ob das Objekt Elemente enthält oder nicht. |
 | CA1900 | [CA1900: Werttypfelder sollten portabel sein.](../code-quality/ca1900.md) | Anhand dieser Regel wird überprüft, ob die mit explizitem Layout deklarierten Strukturen korrekt ausgerichtet werden, wenn sie auf 64-Bit-Betriebssystemen an nicht verwalteten Code gemarshallt werden. |
 | CA1901 | [CA1901: P/Aufruf Deklarationen sollten portabel sein.](../code-quality/ca1901.md) | Diese Regel wertet die Größe der einzelnen Parameter und den Rückgabewert einer P/Invoke-Deklaration aus und überprüft die zugehörige Größe der Parameter beim Marshallen an nicht verwalteten Code unter einem 32-Bit- oder 64-Bit-Betriebssystem. |
 | CA1903 | [CA1903: Nur API aus Zielframework verwenden.](../code-quality/ca1903.md) | Ein Member oder Typ verwendet ein Member oder einen Typ, das bzw. der in einem Service Pack eingeführt wurde, das nicht im Zielframework des Projekts enthalten ist. |
