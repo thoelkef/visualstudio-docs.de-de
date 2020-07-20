@@ -15,18 +15,20 @@ helpviewer_keywords:
 - debugging [Visual Studio], engine selection
 - debugger, engine selection
 - debugging engine selection dialog box
+no-loc:
+- Blazor WebAssembly
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6831837853f2e8dd5502e57d0976899c5d31a1a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285425"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211576"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogfeld "Codetyp auswählen"
 
@@ -37,7 +39,7 @@ Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhä
 **Diese Codetypen debuggen:** Wählen Sie in der bereitgestellten Liste die zu debuggenden Codetypen aus. Dies kann hilfreich sein, wenn [ein Fehler beim Anfügen behandelt wird](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Diese Option schränkt die Erkennung auf die Typen von Code ein, die Sie debuggen möchten.
 
    ::: moniker range=">=vs-2019"
-   - Blazor WebAssembly – Blazor WebAssembly auf Clientseite
+   - Blazor WebAssembly – clientseitige Blazor WebAssembly-Instanz
    - GPU – Softwareemulator – In einem GPU-Softwareemulator ausgeführter C++-Code
    - JavaScript (Chrome) – In Chrome ausgeführtes JavaScript
    - JavaScript (Microsoft Edge – Chromium) – In auf Chromium basierendem Microsoft Edge für Windows 10 ausgeführtes JavaScript

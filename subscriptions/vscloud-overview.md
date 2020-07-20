@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906026"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211616"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .
@@ -40,7 +40,7 @@ Jeder Benutzer mit Zugriffsrechten als [Besitzer](https://docs.microsoft.com/azu
 
 4. Wählen Sie die Anzahl der zu erwerbenden Abonnements aus.
     > [!div class="mx-imgBorder"]
-    > ![Auswählen mehrerer Abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![Auswählen mehrerer Abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Anzahl der zu kaufenden Abonnements auswählen")
 
     Wenn Sie nicht möchten, dass Abonnements Ihnen persönlich zugewiesen werden, deaktivieren Sie die Option **Assign this subscription to me** (Dieses Abonnement mir zuweisen).
 
@@ -62,12 +62,18 @@ Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verw
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Abbrechen der Erneuerungen von erworbenen Cloudabonnements
 
-* So ändern Sie die Anzahl der erworbenen Abonnements:
+Wenn Sie Abonnements kündigen möchten, müssen Sie die Anzahl der Abonnements für Ihre Vereinbarung auf 0 festlegen.  Befolgen Sie diese Schritte, um die Anzahl der Abonnements zu verringern:
+1. Melden Sie sich bei <https://manage.visualstudio.com> an.
+1. Wenn Sie mehr als eine Vereinbarung abgeschlossen haben, wählen Sie die gewünschte Vereinbarung aus der Dropdownliste aus.
+1. Klicken Sie oben links auf das Symbol **Übersicht**, um Informationen zu Ihren Abonnements anzuzeigen.  
+> [!div class="mx-imgBorder"]
+> ![Übersicht über Abonnementinformationen](_img/buy-vs-subscriptions/overview-button.png "Auf „Übersicht“ klicken, um Abonnementdetails anzuzeigen")
+
+4. Suchen Sie die Einträge für die Abonnements, die Sie kündigen möchten, und klicken Sie auf **Menge ändern**.
+1. Legen Sie die Menge auf 0 fest. Ihre Abonnements bleiben bis zum geplanten Abrechnungsdatum bestehen, werden jedoch nicht verlängert, wenn das Abrechnungsdatum erreicht ist.   
 
 > [!div class="mx-imgBorder"]
-> ![Ändern von Abonnements](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* Senken Sie die Anzahl der Abonnements auf null (0), um diese Abonnements zu kündigen. Sie werden nicht am Anfang des nächsten Abrechnungszyklus erneuert (der erste Tag des nächsten Monats bei monatlichen Abonnements, alle zwölf Monate bei jährlichen Cloudabonnements).
+> ![Ändern von Abonnements](_img/buy-vs-subscriptions/manage-subscriptions.png "Auf „Menge ändern“ klicken, um Abonnements zu kündigen")
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815057"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386263"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools f체r Unity)
 
@@ -50,7 +50,7 @@ Dadurch sollte das Problem behoben werden. Wenn Sie immer noch auf Probleme sto�
  devenv /setup
 ```
 
-## <a name="visual-studio-hangs"></a>Visual Studio reagiert nicht mehr
+## <a name="visual-studio-stops-responding"></a>Visual Studio reagiert nicht mehr
 
 Mehrere Unity-Plug-Ins wie Parse, FMOD, UMP (Universal Media Player), ZFBrowser oder Embedded Browser verwenden native Threads. Wenn ein Plug-In der Runtime einen nativen Thread hinzuf체gt, f체hrt dies zu einem Problem, da die Runtime dann Blockierungsaufrufe an das Betriebssystem ausgibt. Das bedeutet, dass Unity den Thread f체r den Debugger (oder das Neuladen einer Dom채ne) nicht unterbrechen kann und nicht mehr reagiert.
 

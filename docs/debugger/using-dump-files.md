@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676368"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386952"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Speicherabbilddateien im Visual Studio-Debugger
 
@@ -35,7 +35,7 @@ ms.locfileid: "65676368"
 
 Das Öffnen einer Speicherabbilddatei mit einem Heap in Visual Studio ist vergleichbar mit dem Anhalten an einem Haltepunkt in einer Debugsitzung. Obwohl die Ausführung nicht fortgesetzt werden kann, können Sie die Stapel-, Thread- und Variablenwerte der App zum Zeitpunkt der Erstellung des Speicherabbilds überprüfen.
 
-Speicherabbilder werden hauptsächlich dazu verwendet, Probleme auf Computern zu debuggen, auf die Entwickler keinen Zugriff haben. Sie können eine Speicherabbilddatei vom Computer eines Kunden verwenden, wenn der Absturz des Kundencomputers nicht reproduzierbar oder Ihr Computer blockiert ist. Tester erstellen außerdem Speicherabbilder, um Daten eines Absturzes oder von Blockaden für weitere Tests zu speichern.
+Speicherabbilder werden hauptsächlich dazu verwendet, Probleme auf Computern zu debuggen, auf die Entwickler keinen Zugriff haben. Sie können eine Speicherabbilddatei vom Computer eines Kunden verwenden, wenn der Absturz des Kundencomputers oder ein nicht reagierendes Programm auf Ihrem Computer nicht reproduzierbar ist. Tester erstellen außerdem Speicherabbilder, um Daten zu Abstürzen oder nicht reagierenden Programmen für weitere Tests zu speichern.
 
 Der Visual Studio-Debugger kann Dumpdateien für verwalteten oder systemeigenen Code speichern. Er kann Speicherabbilddateien debuggen, die von Visual Studio oder anderen Apps erstellt wurden, die Dateien im *Minidump*-Format speichern.
 
@@ -84,7 +84,7 @@ Wenn [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio
 
    Das Fenster **Zusammenfassung der Minidump-Datei** zeigt eine Zusammenfassung und Informationen zum Modul für die Speicherabbilddatei sowie Aktionen, die Sie ausführen können.
 
-   ![Seite „Zusammenfassung der Minidump-Datei“](../debugger/media/dbg_dump_summarypage.png "Seite „Zusammenfassung der Minidump-Datei“")
+   ![Minidump-Zusammenfassungsseite](../debugger/media/dbg_dump_summarypage.png "Minidump-Zusammenfassungsseite")
 
 1. Führen Sie unter **Aktionen** Folgendes aus:
    - Klicken Sie auf **Symbolpfade festlegen**, um Speicherorte für das Laden der Symbole festzulegen.

@@ -563,6 +563,8 @@
                   href: ca1833.md
                 - name: 'CA1835: Arbeitsspeicherüberladungen von „ReadAsync/WriteAsync“-Methoden des Datenstroms bevorzugen.'
                   href: ca1835.md
+                - name: 'CA1836: Ziehen Sie "IsEmpty" gegenüber "Count" vor (falls verfügbar)'
+                  href: ca1836.md
             - name: Portabilitätswarnungen
               items:
                 - name: Übersicht

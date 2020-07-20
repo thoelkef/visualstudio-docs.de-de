@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769936"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387316"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Melden eines Problems mit Visual Studio oder Visual Studio-Installer
 
@@ -69,7 +69,7 @@ Ablaufverfolgungs- und Heap-Abbilddateien sind nützlich für die Diagnose von P
 
 1. Klicken Sie auf die Registerkarte **Datensatz**.
 
-1. Wählen Sie unter **Zeichnen Sie Ihre Aktionen auf** die aktuelle Visual Studio-Instanz aus, wenn Sie das Problem dort reproduzieren können. Falls dies nicht der Fall ist, z. B. weil Visual Studio abgestürzt ist, klicken Sie auf **\<Create a new instance>** , um die Aktionen in einer neuen Visual Studio-Instanz aufzuzeichnen.
+1. Wählen Sie unter **Zeichnen Sie Ihre Aktionen auf** die aktuelle Visual Studio-Instanz aus, wenn Sie das Problem dort reproduzieren können. Wenn das nicht der Fall ist, weil Visual Studio beispielsweise nicht mehr reagiert, klicken Sie auf **\<Create a new instance>** , um die Aktionen in einer neuen Visual Studio-Instanz aufzuzeichnen.
 
 1. Klicken Sie auf **Aufzeichnung starten**. Erteilen Sie die Berechtigung zum Ausführen des Tools.
 

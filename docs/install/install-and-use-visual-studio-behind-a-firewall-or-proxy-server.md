@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce11689cc8cba45473a918668a07ddcc6cdc2ee3
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283475"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387160"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -112,7 +112,7 @@ Um sicherzustellen, dass Sie bei der Verwendung von Visual Studio oder Azure-Die
 | Office Web <br>Add-In <br> Manifest <br>Überprüfung <br>Dienst | verificationservice.osi.office.net | https/443 | Wird zum Validieren von Manifesten für Office Web-Add-Ins verwendet. |
 | SharePoint- und <br>Office-Add-ins | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Wird zum Veröffentlichen und Testen von SharePoint- und Office-Add-Ins in SharePoint Online und Office 365 verwendet |
 | Workflow-Manager- <br>Testdienst-<br> Host | | http/12292 | Eine Firewall, die zum Testen von SharePoint-Add-Ins mit Workflows automatisch erstellt wird. |
-| Automatisch gesammelte <br>Zuverlässigkeitsstatistiken <br>und weitere Daten des <br>Programms zur Verbesserung <br>der Benutzerfreundlichkeit<br> für Azure SDK und <br>SQL-Tools <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Wird zum Senden von Zuverlässigkeitsstatistiken (Daten zu Abstürzen/Stillständen) vom Benutzer an Microsoft verwendet. Die eigentlichen Abbilder zu Abstürzen/Stillständen werden weiterhin hochgeladen, wenn die Windows-Fehlerberichterstattung aktiviert ist. Es werden lediglich statistische Informationen unterdrückt. <br>Wird verwendet, um anonyme Nutzungsmuster der Azure-Tools SDK-Erweiterung sowie Nutzungsmuster der SQL-Tools für Visual Studio offenzulegen. |
+| Automatisch gesammelte <br>Zuverlässigkeitsstatistiken <br>und weitere Daten des <br>Programms zur Verbesserung <br>der Benutzerfreundlichkeit<br> für Azure SDK und <br>SQL-Tools <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Wird zum Senden von Zuverlässigkeitsstatistiken (Daten zu Abstürzen/Nichtreaktionen) vom Benutzer an Microsoft verwendet. Die eigentlichen Speicherabbilder zu Abstürzen/Nichtreaktionen werden weiterhin hochgeladen, wenn die Windows-Fehlerberichterstattung aktiviert ist. Es werden lediglich statistische Informationen unterdrückt. <br>Wird verwendet, um anonyme Nutzungsmuster der Azure-Tools SDK-Erweiterung sowie Nutzungsmuster der SQL-Tools für Visual Studio offenzulegen. |
 | Visual Studio <br> Programm zur Verbesserung <br>der Benutzerfreundlichkeit (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Dient zum Sammeln von anonymen Nutzungsmustern und Fehlerprotokollen. <br><br>Hiermit werden Probleme mit einer nicht reagierenden Benutzeroberfläche nachverfolgt. |
 | Erstellung und<br>Verwaltung von <br>Azure-Ressourcen | management.azure.com <br>management.core.windows.net | https/443 | Wird verwendet, um Azure-Websites oder andere Ressourcen zur Unterstützung der Veröffentlichung von Webanwendungen, Azure-Funktionen oder WebJobs zu unterstützen. |
 | Überprüfung auf aktualisierte Tools <br>und Erweiterungsempfehlungen <br>für die Webveröffentlichung | marketplace.visualstudio.com | https/443 | Wird verwendet, um nach aktualisierten Veröffentlichungstools zu suchen. Sofern deaktiviert, wird eine potenziell empfohlene Erweiterung für die Webveröffentlichung möglicherweise nicht angezeigt. |

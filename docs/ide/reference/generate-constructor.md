@@ -1,18 +1,18 @@
 ---
 title: Generieren einer Konstruktorschnellaktion
-ms.date: 01/26/2018
+ms.date: 07/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306788"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285411"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generieren eines Konstruktors in Visual Studio
 
@@ -22,21 +22,22 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie sofort den Code für einen neuen Konstruktor in einer Klasse generieren.
+**Beschreibung:** Hiermit können Sie sofort den Code für einen neuen Konstruktor in einer Klasse generieren.
 
-**Hintergrund**: Sie führen einen neuen Konstruktor ein, der ordnungsgemäß automatisch deklariert werden soll, oder ändern einen vorhandenen Konstruktor.
+**Hintergrund:** Sie führen einen neuen Konstruktor ein, der ordnungsgemäß automatisch deklariert werden soll, oder ändern einen vorhandenen Konstruktor.
 
 **Vorteile**: Sie können den Konstruktor vor der Verwendung zwar deklarieren, bei diesem Feature wird dieser jedoch automatisch mit den entsprechenden Parametern generiert. Darüber hinaus müssen durch das Ändern eines vorhandenen Konstruktors alle Aufrufsites aktualisiert werden, es sei denn, Sie aktualisieren diese automatisch mithilfe dieses Features.
 
 **Vorgehensweise**: Es gibt mehrere Möglichkeiten zum Generieren eines Konstruktors:
 
 - [Generieren eines Konstruktors und Auswählen von Membern](#pick)
+- [Generieren eines Konstruktors mit Eigenschaften](#with)
 - [Generieren eines Konstruktors über ausgewählte Felder](#selection)
 - [Generieren eines Konstruktors aus der neuen Verwendung](#usage)
 - [Hinzufügen eines Parameters zu einem vorhandenen Konstruktor](#addparameter)
 - [Erstellen und Initialisieren eines Felds bzw. einer Eigenschaft anhand eines Konstruktorparameters](#create)
 
-## <a id = "pick"></a> Generieren eines Konstruktors und Auswählen von Membern (nur in C#)
+## <a name="generate-constructor-and-pick-members-c-only"></a><a id = "pick"></a> Generieren eines Konstruktors und Auswählen von Membern (nur in C#)
 
 1. Platzieren Sie den Cursor in eine beliebige leere Zeile in einer Klasse:
 
@@ -67,7 +68,17 @@ Diese Codegenerierung gilt für:
 
    ![Ergebnis der Aktion zum Generieren eines Konstruktors](media/constructor1-result-cs.png)
 
-## <a id="selection"></a> Generieren eines Konstruktors aus ausgewählten Feldern (nur in C#)
+## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> Generieren eines Konstruktors mit Eigenschaften (nur C#)
+
+1. Platzieren Sie den Cursor auf der Instanz.
+
+2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+
+3. Klicken Sie auf **Konstruktor in `<QualifiedName>` (mit Eigenschaften) generieren**.
+
+   ![Vorschau der Aktion zum Generieren eines Konstruktors](media/generate-constructor-with-properties.png)
+
+## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Generieren eines Konstruktors aus ausgewählten Feldern (nur in C#)
 
 1. Markieren Sie die Member, die im generierten Konstruktor enthalten sein sollen:
 
@@ -89,7 +100,7 @@ Diese Codegenerierung gilt für:
 
    ![Ergebnis der Generierung eines Konstruktors](media/constructor2-result-cs.png)
 
-## <a id="usage"></a> Generieren eines Konstruktors aus der neuen Verwendung (C# und Visual Basic)
+## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> Generieren eines Konstruktors aus der neuen Verwendung (C# und Visual Basic)
 
 1. Platzieren Sie Ihren Cursor auf der Zeile, in der eine rote Wellenlinie angezeigt wird. Die rote Wellenlinie weist auf einen Aufruf eines Konstruktors hin, der noch nicht vorhanden ist.
 
@@ -127,7 +138,7 @@ Diese Codegenerierung gilt für:
 
        ![Ergebnis der Methodengenerierung in Visual Basic](media/constructor-result-vb.png)
 
-## <a id="addparameter"></a> Hinzufügen eines Parameters zu einem vorhandenen Konstruktor (nur in C#)
+## <a name="add-parameter-to-existing-constructor-c-only"></a><a id="addparameter"></a> Hinzufügen eines Parameters zu einem vorhandenen Konstruktor (nur in C#)
 
 1. Fügen Sie einem vorhandenen Konstruktor einen Parameter hinzu.
 
@@ -154,7 +165,7 @@ Diese Codegenerierung gilt für:
 
 Sie können auch einer vorhandenen Methode einen Parameter hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen eines Parameters zu einer Methode](add-parameter.md).
 
-## <a id="create"></a> Erstellen und Initialisieren eines Felds oder einer Eigenschaft anhand eines Konstruktorparameters (nur in C#)
+## <a name="create-and-initialize-a-field-or-property-from-a-constructor-parameter-c-only"></a><a id="create"></a> Erstellen und Initialisieren eines Felds oder einer Eigenschaft anhand eines Konstruktorparameters (nur in C#)
 
 1. Suchen Sie einen vorhandenen Konstruktor, und fügen Sie ihm einen Parameter hinzu:
 
@@ -178,7 +189,7 @@ Sie können auch einer vorhandenen Methode einen Parameter hinzufügen. Weitere 
 
    ![Ergebnis der Aktion zum Generieren eines Konstruktors](media/constructor5-result-cs.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

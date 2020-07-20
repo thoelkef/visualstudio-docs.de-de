@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350770"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386250"
 ---
 # <a name="debug-64-bit-applications"></a>Debuggen von 64-Bit-Anwendungen
 Sie können eine 64-Bit-Anwendung debuggen, die auf dem lokalen Computer oder einem Remotecomputer ausgeführt wird.
@@ -50,7 +50,7 @@ Sie können eine 64-Bit-Anwendung debuggen, die auf dem lokalen Computer oder ei
 
 - Sie haben Netzwerksicherheitssoftware auf dem Computer installiert, die dazu geführt hat, dass der Netzwerkstapel unzuverlässig wurde und über Localhost gesendete Pakete gelöscht wurden. Deaktivieren Sie jegliche Netzwerksicherheitssoftware, und ermitteln Sie, ob das Problem damit behoben ist. Wenn ja, teilen Sie dem Hersteller der Netzwerksicherheitssoftware mit, dass die Software zu einem Konflikt mit Localhost-Datenverkehr führt.
 
-- Sie treffen auf ein Absturz- oder Leistungsproblem mit Visual Studio. Tritt dieses Problem regelmäßig auf, können Sie Speicherabbilder von Visual Studio (devenv.exe) und vom Arbeitsprozess (msvsmon.exe) sammeln und diese an Microsoft senden. Weitere Informationen zum Berichten eines Problems finden Sie unter [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+- Visual Studio reagiert nicht mehr, oder andere Leistungsprobleme treten auf. Tritt dieses Problem regelmäßig auf, können Sie Speicherabbilder von Visual Studio (devenv.exe) und vom Arbeitsprozess (msvsmon.exe) sammeln und diese an Microsoft senden. Weitere Informationen zum Berichten eines Problems finden Sie unter [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Siehe auch
 

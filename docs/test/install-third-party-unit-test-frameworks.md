@@ -1,18 +1,18 @@
 ---
 title: Installieren von Frameworks für Komponententests von Drittanbietern
-ms.date: 04/01/2019
+ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286972"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387186"
 ---
 # <a name="install-unit-test-frameworks"></a>Installieren von Komponententestframeworks
 
@@ -20,7 +20,12 @@ Der Visual Studio-Test-Explorer kann Tests aus beliebigen Frameworks für Kompon
 
 Eine Visual Studio-Projektmappe kann Komponententestprojekte enthalten, die verschiedene Frameworks verwenden und verschiedene Zielsprachen aufweisen.
 
+::: moniker range=">=vs-2019"
+Für .NET sind [MSTest, NUnit und xUnit](getting-started-with-unit-testing.md) die von Visual Studio bereitgestellten und standardmäßig installierten Testframeworks.
+::: moniker-end
+::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) ist das Testframework von Visual Studio und wird standardmäßig installiert.
+::: moniker-end
 
 ## <a name="acquire-frameworks"></a>Herunterladen von Frameworks
 
@@ -48,6 +53,6 @@ Aktualisieren Sie auf den neuesten stabilen Testadapter, um eine bessere Testerm
 
    ![Aktualisieren des Testadapters](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540867"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386984"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definieren von benutzerdefinierten Befehlen für Python-Projekte
 
@@ -384,7 +384,7 @@ Gibt an, dass der Inhalt der Elemente `<Target>` oder `<CreatePythonCommandItem>
 
 Attributwerte können leer sein, wenn Sie auf eine nicht definierte Eigenschaft verweisen. Wenn Sie zum Beispiel das Token `$(StartupFile)` verwenden, aber keine Startdatei für das Projekt definiert haben, dann wird das Token zu einer leeren Zeichenfolge aufgelöst. In solchen Fällen sollten Sie einen Standardwert definieren. Die Befehle **Run server** (Server ausführen) und **Run debug server** (Debugserver ausführen) sind zum Beispiel in den Projektvorlagen „Bottle“, „Flask“ und „Django“ standardmäßig als *manage.py* definiert, wenn Sie keine andere Serverstartdatei in den Projekteigenschaften angegeben haben.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Visual Studio stürzt ab, wenn der Befehl ausgeführt wird.
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio reagiert beim Ausführen des Befehls nicht mehr und stürzt ab
 
 Wenn Sie versuchen, einen Konsolenbefehl mit `ExecuteIn="output"` auszuführen, kann es sein, dass Visual Studio bei dem Versuch, die Ausgabe zu analysieren, abstürzt. Verwenden Sie stattdessen `ExecuteIn="console"`. (Siehe [Problem 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
