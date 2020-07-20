@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289039"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211563"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -52,7 +52,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/ListExecutors**|Listet alle installierten Test-Executors auf.|
 |**/ListLoggers**|Listet alle installierten Testprotokollierungen auf.|
 |**/ListSettingsProviders**|Listet alle installierten Testeinstellungsanbieter auf.|
-|**/Blame**|Verfolgt die Tests während ihrer Ausführung und verfolgt, ob der Test-Hostprozess abstürzt, gibt die Testnamen in der Reihenfolge ihrer Ausführung einschließlich des spezifischen Tests aus, der zum Zeitpunkt des Absturzes ausgeführt wurde. Durch diese Ausgabe kann der betreffende Test besser isoliert und weiter diagnostiziert werden. [Weitere Informationen](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Blame**|Führt die Tests im blame-Modus aus. Diese Option hilft beim Isolieren von fehlerhaften Tests, die den Absturz des Testhosts verursachen. Wenn ein Absturz erkannt wird, wird in `TestResults/<Guid>/<Guid>_Sequence.xml` eine Sequenzdatei erstellt, die die Reihenfolge der Tests erfasst, die vor dem Absturz ausgeführt wurden. Weitere Informationen finden Sie unter [Datensammlung mit /Blame](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*Dateiname*]**|Schreibt Protokolle zur Diagnoseablaufverfolgung für die angegebene Datei.|
 |**/ResultsDirectory:[*path*]**|Das Verzeichnis mit den Testergebnissen wird am angegebenen Pfad erstellt, falls es noch nicht vorhanden ist.<br />Ein Beispiel: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|Prozess-ID des übergeordneten Prozesses, der für den Start des aktuellen Prozesses verantwortlich ist.|
@@ -64,24 +64,44 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 
 ## <a name="examples"></a>Beispiele
 
-Die Syntax für die Ausführung von *VSTest.Console.exe* lautet wie folgt:
+Die Syntax für die Ausführung von *vstest.console.exe* lautet:
 
-`Vstest.console.exe [TestFileNames] [Options]`
+`vstest.console.exe [TestFileNames] [Options]`
 
-Mit dem folgenden Befehl wird *VSTest.Console.exe* für die Bibliothek **myTestProject.dll** ausgeführt:
+Mit dem folgenden Befehl wird *vstest.console.exe* für die Bibliothek *myTestProject.dll* ausgeführt:
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-Mit dem folgenden Befehl wird *VSTest.Console.exe* mit mehreren Testdateien ausgeführt. Trennt Testdateinamen durch Leerzeichen:
+Mit dem folgenden Befehl wird *vstest.console.exe* mit mehreren Testdateien ausgeführt. Trennt Testdateinamen durch Leerzeichen:
 
 ```cmd
-Vstest.console.exe myTestFile.dll myOtherTestFile.dll
+vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-Mit dem folgenden Befehl wird *VSTest.Console.exe* mit verschiedenen Optionen ausgeführt. Die Tests werden in der Datei *myTestFile.dll* in einem isolierten Prozess ausgeführt. Zudem werden Einstellungen verwendet, die in der Datei *Local.RunSettings* angegeben sind. Darüber hinaus werden mit dem Befehl nur Tests ausgeführt, die mit „Priorität = 1“ gekennzeichnet sind. Die Ergebnisse werden in einer *TRX*-Datei protokolliert.
+Mit dem folgenden Befehl wird *vstest.console.exe* mit verschiedenen Optionen ausgeführt. Die Tests werden in der Datei *myTestFile.dll* in einem isolierten Prozess ausgeführt. Zudem werden Einstellungen verwendet, die in der Datei *Local.RunSettings* angegeben sind. Darüber hinaus werden mit dem Befehl nur Tests ausgeführt, die mit „Priorität = 1“ gekennzeichnet sind. Die Ergebnisse werden in einer *TRX*-Datei protokolliert.
 
 ```cmd
-vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+```
+
+Mit dem folgenden Befehl wird *vstest.console.exe* mit der Option `/blame` für die Bibliothek *myTestProject.dll* ausgeführt:
+
+```cmd
+vstest.console.exe myTestFile.dll /blame
+```
+
+Wenn ein Testhost abstürzt, wird die Datei *sequence.xml* generiert. Die Datei enthält die vollqualifizierten Namen der Tests in Reihenfolge ihrer Ausführung bis einschließlich des Tests, der zum Zeitpunkt des Absturzes ausgeführt wurde.
+
+Wenn der Testhost nicht abstürzt, wird die Datei *sequence.xml* nicht generiert.
+
+Hier sehen Sie ein Beispiel für die Datei *sequence.xml*: 
+
+```xml
+<?xml version="1.0"?>
+<TestSequence>
+  <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+  <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+</TestSequence>
 ```

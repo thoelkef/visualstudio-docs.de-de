@@ -1,7 +1,7 @@
 ---
-title: Ausführen und Debuggen von Komponententests mit dem Test-Explorer
-description: Erfahren Sie, wie Sie mit dem Test-Explorer in Visual Studio Tests ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
-ms.date: 07/29/2019
+title: Ausführen von Komponententests mit dem Test-Explorer
+description: Erfahren Sie, wie Sie mit dem Test-Explorer in Visual Studio Tests ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen und Tastenkombinationen für Tests verwenden.
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285633"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386640"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
-Verwenden Sie den Test-Explorer zum Ausführen von Komponententests von Visual Studio oder Komponententestprojekten von Drittanbietern. Sie können den Test-Explorer auch dazu verwenden, Tests in Kategorien zu gruppieren, die Testliste zu filtern und Ausführungslisten zu erstellen, zu speichern und auszuführen. Zudem können Sie Tests debuggen und die Leistung und Code Coverage von Tests analysieren.
+Verwenden Sie den Test-Explorer zum Ausführen von Komponententests von Visual Studio oder Komponententestprojekten von Drittanbietern. Sie können den Test-Explorer auch dazu verwenden, Tests in Kategorien zu gruppieren, die Testliste zu filtern und Ausführungslisten zu erstellen, zu speichern und auszuführen. Sie können auch die Code Coverage analysieren und [Komponententests debuggen](../test/debug-unit-tests-with-test-explorer.md).
+
+Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Für Testprojekte können verschiedene Komponententest-Frameworks verwendet werden. Wenn der zu testende Code für .NET geschrieben wird, kann das Testprojekt in jeder Sprache geschrieben werden, die ebenfalls auf .NET abzielt, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.
+
+## <a name="build-your-test-project"></a>Erstellen des Testprojekts
+
+Wenn Sie noch kein Testprojekt in der Visual Studio-Projektmappe eingerichtet haben, müssen Sie zunächst ein Testprojekt erstellen und kompilieren.
+
+- [Erste Schritte mit Unittests (.NET)](../test/getting-started-with-unit-testing.md)
+- [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 
 Visual Studio enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch systemeigenen Code. Im Test-Explorer kann jedoch auch jedes Komponententest-Framework mit implementiertem Test-Explorer-Adapter ausgeführt werden. Weitere Informationen zum Installieren von Komponententest-Frameworks von Drittanbietern finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
 
-Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Für Testprojekte können verschiedene Komponententest-Frameworks verwendet werden. Wenn der zu testende Code für .NET geschrieben wird, kann das Testprojekt in jeder Sprache geschrieben werden, die ebenfalls auf .NET abzielt, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ ](writing-unit-tests-for-c-cpp.md).
-
 ## <a name="run-tests-in-test-explorer"></a>Ausführen von Tests im Test-Explorer
 
-Wenn Sie das [Testprojekt erstellen](../test/getting-started-with-unit-testing.md), werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
+Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
 ::: moniker range="vs-2017"
 ![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)
@@ -211,11 +218,21 @@ Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mi
 
 Die Wiedergabeliste wird in einer neuen Registerkarte im Test-Explorer geöffnet. Sie können diese Wiedergabeliste einmal verwenden und dann verwerfen, oder Sie können auf die Schaltfläche **Speichern** in der Symbolleiste des Wiedergabelistenfensters klicken und dann einen Namen und einen Ort zum Speichern der Wiedergabeliste auswählen.
 
-![Die Wiedergabeliste wird in einer separaten Registerkarte im Test-Explorer geöffnet.](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+![Die Wiedergabeliste wird in einer separaten Registerkarte im Test-Explorer geöffnet.](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
 Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
 
 **Um eine Wiedergabeliste zu öffnen**, wählen Sie das Wiedergabelistensymbol in der Visual Studio-Symbolleiste, und wählen Sie eine zuvor gespeicherte Wiedergabelistendatei aus dem Menü.
+
+Sie können **eine Wiedergabeliste bearbeiten**, indem Sie mit der rechten Maustaste auf einen beliebigen Test klicken und diesen über die Menüoptionen zu einer Wiedergabeliste hinzufügen oder aus einer entfernen.
+
+Ab Visual Studio 2019 Version 16.7 können Sie in der Symbolleiste auf **Bearbeiten** klicken. Daraufhin werden neben Ihren Tests Kontrollkästchen angezeigt, sodass Sie sehen, welche Tests in die Wiedergabeliste eingeschlossen oder aus dieser ausgeschlossen werden. Bearbeiten Sie Gruppen wie gewünscht.
+
+![Schaltfläche „Wiedergabeliste bearbeiten“](../test/media/vs-2019/test-explorer-playlist-edit-16-7.png)
+
+Sie können die Kontrollkästchen der übergeordneten Gruppen in der Hierarchie auch aktivieren oder deaktivieren. Dadurch wird eine dynamische Wiedergabeliste erstellt, die basierend auf den Tests in der Gruppe immer aktualisiert wird. Wenn Sie beispielsweise ein Kontrollkästchen neben einer Klasse aktivieren, wird jeder Test, den diese Klasse hinzufügt, in die Wiedergabeliste aufgenommen. Wenn Sie einen Test aus dieser Klasse löschen, wird er aus der Wiedergabeliste entfernt. Weitere Informationen zu den Regeln finden Sie, indem Sie die Wiedergabeliste mit der Schaltfläche „Speichern“ auf der Symbolleiste speichern und die *PLAYLIST-Datei* öffnen, die auf dem Datenträger erstellt wird. In dieser Datei werden alle Regeln und die einzelnen Tests aufgelistet, aus denen eine Wiedergabeliste besteht.
+
+![XML-Datei für Wiedergabeliste](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -294,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 Zum Beispiel gibt `FullName:"MyClass" - FullName:"PerfTest"` alle Tests mit „MyClass“ im Namen zurück, mit Ausnahme der Tests, deren Namen auch „PerfTest“ enthalten.
 
-## <a name="debug-and-analyze-unit-tests"></a>Debugging und Analyse von Komponententests
-
-Mit dem Test-Explorer können Sie Debugsitzungen für Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
-
-1. Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
-
-    > [!NOTE]
-    > Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
-
-2. Wählen Sie im Test-Explorer die Testmethoden und dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
-
-   Weitere Informationen zum Debugger finden Sie unter [Debuggen in Visual Studio](../debugger/debugger-feature-tour.md).
-
-### <a name="diagnose-test-method-performance-issues"></a>Diagnose von Leistungsproblemen bei Testmethoden
-
-Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange dauert, müssen Sie im Test-Explorer die Methode auswählen und anschließend im Kontextmenü auf **Profil für ausgewählten Test erstellen** klicken. Weitere Informationen finden Sie unter [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
-
 ### <a name="analyze-unit-test-code-coverage"></a>Analysieren der Codeabdeckung für Komponententests
 
 Mithilfe des Codeabdeckungstools von Visual Studio, das in der Visual Studio Enterprise-Edition verfügbar ist, können Sie die Menge des Produktcodes ermitteln, die tatsächlich von den Komponententests getestet wird. Das Codeabdeckungstool kann für ausgewählte oder alle Tests in einer Projektmappe ausgeführt werden.
@@ -341,7 +341,7 @@ Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden C
 
 ## <a name="test-shortcuts"></a>Tastenkombinationen für Tests
 
-Sie können Tests im Test-Explorer ausführen, indem Sie mit der rechten Maustaste auf einen Test im Code-Editor klicken und dann **Test ausführen** auswählen oder indem Sie die standardmäßigen [Test-Explorer-Tastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) in Visual Studio verwenden. Manche dieser Tastenkombinationen sind vom Kontext abhängig. Das heißt, dass sie Tests basierend auf der Position Ihres Cursors im Code ausführen oder debuggen. Wenn Ihr Cursor sich in einer Testmethode befindet, wird diese Testmethode ausgeführt. Wenn Ihr Cursor sich auf der Klassenebene befindet, werden alle Tests in dieser Klasse ausgeführt. Dies gilt ebenfalls für die Namespaceebene.
+Sie können Tests im Test-Explorer ausführen, indem Sie mit der rechten Maustaste auf einen Test im Code-Editor klicken und dann **Test ausführen** auswählen oder indem Sie die standardmäßigen [Test-Explorer-Tastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) in Visual Studio verwenden. Manche dieser Tastenkombinationen sind vom Kontext abhängig. Das heißt, dass sie Tests basierend auf der Position Ihres Cursors im Code ausführen oder [debuggen](../test/debug-unit-tests-with-test-explorer.md). Wenn Ihr Cursor sich in einer Testmethode befindet, wird diese Testmethode ausgeführt. Wenn Ihr Cursor sich auf der Klassenebene befindet, werden alle Tests in dieser Klasse ausgeführt. Dies gilt ebenfalls für die Namespaceebene.
 
 |Häufig verwendete Befehle| Tastenkombinationen|
 |-|------------------------|
@@ -356,5 +356,6 @@ Sie können Tests im Test-Explorer ausführen, indem Sie mit der rechten Maustas
 ## <a name="see-also"></a>Siehe auch
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
+- [Debuggen von Komponententests mit dem Test-Explorer](../test/debug-unit-tests-with-test-explorer.md)
 - [Ausführen eines Komponententest als 64-Bit-Prozess](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Häufig gestellte Fragen zum Test-Explorer](test-explorer-faq.md)

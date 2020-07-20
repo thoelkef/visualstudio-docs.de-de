@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77476868"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386731"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -120,7 +120,7 @@ Nachdem Sie Code erstellt und einige Bereinigungen durchgeführt haben, führen 
 
 Beenden Sie die App, indem Sie **UMSCHALT**+**F5** drücken oder auf **Beenden**  klicken. Alternativ können Sie einfach das Hauptfenster (oder das Befehlszeilen-Dialogfeld) der App schließen.
 
-Wenn Ihr Code ohne besondere Vorkommnisse genau wie erwartet ausgeführt wurde, sind Sie damit fertig! Wenn der Code jedoch nicht mehr reagiert oder abgestürzt, oder wenn Sie unerwartete Ergebnissen erhalten, müssen Sie die Ursache dieser Probleme suchen und die Fehler beheben.
+Wenn Ihr Code ohne besondere Vorkommnisse genau wie erwartet ausgeführt wurde, sind Sie damit fertig! Wenn der Code jedoch nicht mehr reagiert oder abgestürzt, oder wenn Sie unerwartete Ergebnisse erhalten, müssen Sie die Ursache dieser Probleme suchen und die Fehler beheben.
 
 ### <a name="set-simple-breakpoints"></a>Festlegen einfacher Haltepunkte
 
@@ -132,7 +132,7 @@ Legen Sie einen Haltepunkt fest, indem Sie auf den äußeren Rand der Zeile klic
 
 Für Folgendes werden Haltepunkte häufig verwendet:
 
-- Zum Eingrenzen der Ursache eines Absturzes können Sie im gesamten Code und in der Nähe des Codes für den Methodenaufruf, von dem Sie annehmen, dass er den Fehler verursacht, Breakpoints platzieren. Wenn Sie den Code im Debugger ausführen, entfernen Sie die Haltepunkte, und platzieren Sie diese dann näher beieinander, bis Sie die fehlerhafte Codezeile finden. Im nächsten Abschnitt erfahren Sie, wie Sie Code im Debugger ausführen.
+- Sie können die Ursachen eines Absturzes oder nicht reagierenden Programmes eingrenzen, indem Sie im gesamten Code und um den Code für den Methodenaufruf Breakpoints platzieren, von dem Sie annehmen, dass er den Fehler verursacht. Wenn Sie den Code im Debugger ausführen, entfernen Sie die Haltepunkte, und platzieren Sie diese dann näher beieinander, bis Sie die fehlerhafte Codezeile finden. Im nächsten Abschnitt erfahren Sie, wie Sie Code im Debugger ausführen.
 
 - Wenn Sie neuen Code einführen, platzieren Sie am Anfang einen Breakpoint, und führen Sie diesen Code aus, um sicherzustellen, dass er sich wie erwartet verhält.
 

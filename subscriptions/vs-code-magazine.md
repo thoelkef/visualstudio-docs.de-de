@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Hier erfahren Sie mehr über den CODE Magazine-Vorteil, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 30b97c42c3ead60859aed593a3ffbad6ed721227
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906073"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387173"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine in Visual Studio-Abonnements
 
@@ -28,7 +28,7 @@ Ein CODE Magazine-Abonnement einzurichten ist einfach.  Führen Sie folgende Sch
 3. Es wird eine Meldung angezeigt, dass Ihr Code abgerufen wurde.  Klicken Sie zum Fortfahren auf **Activate** (Aktivieren).  (Wenn Sie noch nicht dazu bereit sind, ist das kein Problem.  Sie können jederzeit zu der Kachel zurückkehren, um den Code zu aktivieren.  Nachdem Sie den Code abgerufen haben, wird anstelle des Links „Code abrufen“ die Schaltfläche „Aktivieren“ angezeigt.)
    > [!div class="mx-imgBorder"]
    > ![CODE Magazine – abgerufener Code](_img/vs-code-magazine/vs-code-magazine-success.png "Code erfolgreich abgerufen")
-4. Sie werden auf die Angebotsseite des CODE Magazine umgeleitet. Wählen Sie Ihr Land/Ihre Region aus und die Form, in der Sie das Magazin erhalten möchten. 
+4. Sie werden auf die Angebotsseite des CODE Magazine umgeleitet. Wählen Sie Ihr Land/Ihre Region und das Format aus, in dem Sie das Magazin erhalten möchten. 
    > [!NOTE]
    > Visual Studio Dev Essentials-Mitglieder haben nur Zugriff auf das digitale Abonnement. 
 5. Je nach getroffener Auswahl wird ein Hinweis mit dem Preis Ihres Abonnements sowie dem Betrag des angewendeten Gutscheins angezeigt.

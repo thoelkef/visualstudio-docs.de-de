@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288766"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211598"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -67,7 +67,7 @@ Es gibt drei Möglichkeiten, in Visual Studio 2019, Version 16.4 und höher, e
     </Project>
     ```
 
-- Fügen Sie im Stammverzeichnis Ihrer Projektmappe eine Datei mit Laufzeiteinstellungen namens „RUNSETTINGS“ ein.
+- Fügen Sie im Stammverzeichnis Ihrer Projektmappe eine *RUNSETTINGS-Datei* mit Laufzeiteinstellungen ein.
 
   Wenn die automatische Erkennung der Datei mit Laufzeiteinstellungen aktiviert ist, werden die Einstellungen in dieser Datei auf alle ausgeführten Tests angewendet. Die können die automatische Erkennung der RUNSETTINGS-Datei an zwei Stellen aktivieren:
   
@@ -205,6 +205,11 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ Der Videodatensammler erfasst einen Bildschirm bei der Ausführung von Tests. Di
 
 Um andere Typen von Adaptern für diagnostische Daten anzupassen, verwenden Sie eine [Testeinstellungsdatei](../test/collect-diagnostic-information-using-test-settings.md).
 
+
+### <a name="blame-data-collector"></a>Datensammlung mit blame
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+Mit dieser Option können Sie einen problematischen Test isolieren, der zu einem Absturz des Testhosts führt. Wenn Sie den Collector ausführen, wird eine Ausgabedatei (*Sequence.xml*) in *TestResults* generiert, in der die Ausführungsreihenfolge des Tests vor dem Absturz erfasst wird. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -386,6 +402,33 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 |**MapInconclusiveToFailed**|False|Wenn ein Test mit einem nicht eindeutigen Status abgeschlossen wird, wird er im **Test-Explorer** dem Status „Übersprungen“ zugeordnet. Wenn nicht eindeutige Tests als fehlerhaft angezeigt werden sollen, verwenden Sie den Wert **TRUE**.|
 |**InProcMode**|False|Wenn die Tests im selben Prozess wie der MSTest-Adapter ausgeführt werden sollen, legen Sie diesen Wert auf **true** fest. Diese Einstellung führt zu einer geringen Leistungssteigerung. Wenn ein Test allerdings mit einer Ausnahme beendet wird, werden die restlichen Tests nicht ausgeführt.|
 |**AssemblyResolution**|False|Sie können Pfade zu weiteren Assemblys angeben, wenn Komponententests gefunden und ausgeführt werden. Verwenden Sie diese Pfade beispielsweise für Abhängigkeitsassemblys, die sich nicht im selben Verzeichnis wie die Testassembly befinden. Um einen Pfad anzugeben, verwenden Sie ein **Directory Path**-Element. Pfade können Umgebungsvariablen enthalten.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>Angeben von Umgebungsvariablen in der *RUNSETTINGS-Datei*
+
+Umgebungsvariablen können in der *RUNSETTINGS-Datei* festgelegt werden, die direkt mit dem Testhost interagieren kann. Sie müssen Umgebungsvariablen in der *RUNSETTINGS-Datei* angeben, um nicht triviale Projekte zu unterstützen, für die Umgebungsvariablen wie *DOTNET_ROOT* festgelegt werden müssen. Diese Variablen werden festgelegt, wenn der Testhostprozess erzeugt wird und diese im Host verfügbar sind.
+
+### <a name="example"></a>Beispiel
+
+Der folgende Code entspricht einer *RUNSETTINGS-Beispieldatei*, die eine Umgebungsvariable übergibt:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+Der Knoten **RunConfiguration** muss einen **EnvironmentVariables**-Knoten enthalten. Eine Umgebungsvariable kann als Elementname und -wert angegeben werden.
+
+> [!NOTE]
+> Da diese Umgebungsvariablen immer beim Start des Testhosts festgelegt werden sollten, sollten die Tests immer in einem separaten Prozess ausgeführt werden. Hierfür wird das Flag */InIsolation* festgelegt, wenn Umgebungsvariablen vorhanden sind, sodass der Testhost immer aufgerufen wird.
 
 ## <a name="see-also"></a>Siehe auch
 

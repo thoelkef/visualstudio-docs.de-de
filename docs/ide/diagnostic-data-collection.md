@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652472"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387251"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Vom System generierte Protokolle, die von Visual Studio gesammelt werden
 
@@ -20,11 +20,11 @@ Visual Studio sammelt vom System generierte Protokolle zum Beheben von Fehlern u
 
 ## <a name="types-of-collected-data"></a>Gesammelte Datentypen
 
-Visual Studio sammelt vom System generierte Protokolle für Abstürze, Hängen, nicht reagierende Benutzeroberfläche und hohe Auslastung der CPU oder des Arbeitsspeichers. Außerdem werden Informationen zu Fehlern gesammelt, die während der Installation oder Verwendung eines Produkts auftreten. Die gesammelten Daten variieren basierend auf dem Fehler und können Stapelüberwachungen, Speicherabbilder und Ausnahmeinformationen enthalten:
+Visual Studio sammelt vom System generierte Protokolle für Abstürze, nicht reagierende Benutzeroberflächen und hohe Auslastung der CPU oder des Arbeitsspeichers. Außerdem werden Informationen zu Fehlern gesammelt, die während der Installation oder Verwendung eines Produkts auftreten. Die gesammelten Daten variieren basierend auf dem Fehler und können Stapelüberwachungen, Speicherabbilder und Ausnahmeinformationen enthalten:
 
 - Bei hoher CPU-Auslastung und Nichtreaktion werden Stapelüberwachungen von relevanten Visual Studio-Threads gesammelt.
 
-- In Fällen, bei denen die Stapelüberwachungen mancher Threads nicht ausreichen, um die Ursache des Fehlers zu bestimmen, wie Abstürzen, Hängen oder hoher Speicherauslastung wird ein *Speicherabbild* gesammelt. Das Abbild stellt den Zustand des Prozesses zu dem Zeitpunkt dar, an dem der Fehler aufgetreten ist.
+- In Fällen, bei denen die Stapelüberwachungen mancher Threads nicht ausreichen, um die Ursache von Fehlern wie Abstürzen, nicht reagierenden Programmen oder hoher Arbeitsspeicherauslastung zu ermitteln, wird ein *Speicherabbild* gesammelt. Das Abbild stellt den Zustand des Prozesses zu dem Zeitpunkt dar, an dem der Fehler aufgetreten ist.
 
 - Bei unerwarteten Fehlerbedingungen, z.B. einer Ausnahme beim Schreiben in eine Datei auf dem Datenträger, werden Informationen über die Ausnahme gesammelt. Die Informationen enthalten den Namen der Ausnahme, die Stapelüberwachung des Threads, in dem die Ausnahme aufgetreten ist, die der Ausnahme zugeordnete Meldung und weitere Informationen, die für die spezifische Ausnahme relevant sind.
 
@@ -52,7 +52,7 @@ Der Workflow zum Bestimmen der Fehlerursache variiert je nach Fehlertyp und Schw
 
 ### <a name="error-classification"></a>Fehlerklassifizierung
 
-Fehler werden anhand der Protokolle klassifiziert und gezählt, um deren Untersuchung zu priorisieren. Beispielsweise wird ermittelt, dass „System.IO.\__Error.WinIOError“ in Version \<x> des Produkts 500 mal in „System.IO.FileStream.Init“ aufgetreten ist und über die höchste Häufigkeitsrate verfügt.
+Fehler werden anhand der Protokolle klassifiziert und gezählt, um deren Untersuchung zu priorisieren. Beispielsweise wird ermittelt, dass „System.IO.\__Error.WinIOError“ in Version \<x> des Produkts mit 500-mal am häufigsten in „System.IO.FileStream.Init“ aufgetreten ist.
 
 ### <a name="work-items-for-tracking"></a>Arbeitselemente für die Nachverfolgung
 
@@ -70,7 +70,7 @@ Erweiterungsersteller sollten die Offenlegung personenbezogener Informationen ei
 
 Aufgrund des Zwecks der gesammelten Daten und deren Einschränkungen des Zugriffs und der Aufbewahrung, wird empfohlen, dass Sie die Standardeinstellungen für den Datenschutz für Visual Studio und Windows verwenden. Sie können das Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio jedoch [deaktivieren](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out). Informationen zum Deaktivieren der vom System generierten Protokollsammlung für alle Programme finden Sie unter [Diagnose, Feedback und Datenschutz unter Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Die Optionen variieren je nach der verwendeten Version von Windows.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Programm zur Verbesserung der Visual Studio-Benutzerfreundlichkeit](visual-studio-experience-improvement-program.md)
 - [Diagnose, Feedback und Datenschutz unter Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

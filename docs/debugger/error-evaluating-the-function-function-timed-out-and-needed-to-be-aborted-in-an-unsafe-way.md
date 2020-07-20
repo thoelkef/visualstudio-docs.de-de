@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f687672de4bc3511fa0c9198f7ad4145b26dcd11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460797"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386718"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Timeout beim Auswerten der Funktion &#39;Funktion&#39;. Der Abbruch musste auf unsichere Weise erfolgen
 
 Vollständiger Meldungstext: Timeout beim Auswerten der Funktion „Funktion“. Der Abbruch musste auf unsichere Weise erfolgen. Dies hat den Zielprozess ggf. beschädigt.
 
-Um das Überprüfen des Status von .NET-Objekten zu vereinfachen, zwingt der Debugger den debuggten Prozess automatisch zur Ausführung von zusätzlichem Code (in der Regel Eigenschaftengettermethoden und ToString-Funktionen). In den meisten Szenarien werden diese Funktionen schnell ausgeführt, und sie vereinfachen das Debuggen erheblich. Der Debugger führt die Anwendung jedoch nicht in einer Sandbox aus. Folglich kann eine Eigenschaftengetter- oder ToString-Methode, die eine native Funktion aufruft, die nicht mehr reagiert, zu langen Timeouts führen, die möglicherweise nicht behebbar sind. Wenn diese Fehlermeldung angezeigt wird, ist dieser Fall eingetreten.
+Um das Überprüfen des Status von .NET-Objekten zu vereinfachen, zwingt der Debugger den debuggten Prozess automatisch zur Ausführung von zusätzlichem Code (in der Regel Eigenschaftengettermethoden und ToString-Funktionen). In den meisten Szenarien werden diese Funktionen schnell ausgeführt, und sie vereinfachen das Debuggen erheblich. Der Debugger führt die Anwendung jedoch nicht in einer Sandbox aus. Folglich kann eine Getter-Methode für Eigenschaften oder eine ToString-Methode, die eine native Funktion aufruft, die nicht mehr reagiert, zu langen Timeouts führen, die möglicherweise nicht behebbar sind. Wenn diese Fehlermeldung angezeigt wird, ist dieser Fall eingetreten.
 
 Ein häufiger Grund für dieses Problem liegt darin, dass der Debugger beim Auswerten einer Eigenschaft nur die Ausführung des zu überprüfenden Threads zulässt. Wenn die Eigenschaft also auf die Ausführung weiterer Threads innerhalb der debuggten Anwendung wartet und die .NET Runtime dies nicht unterbrechen kann, tritt dieses Problem auf.
 

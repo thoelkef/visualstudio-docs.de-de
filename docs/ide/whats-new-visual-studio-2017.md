@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74955035"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386848"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -108,11 +108,11 @@ Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiteru
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen in Ihrer Liste bemerken:
 
-* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_** : Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_**: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol für „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_** : Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
+* ![Symbol für „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_**: Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol für „Installiert“](media/vs2017ide-installedicon.png) **_Installiert_** : Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol für „Installiert“](media/vs2017ide-installedicon.png) **_Installiert_**: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu Ihrer Liste als **Roamed & Installed** (Roaming und Installation) hinzugefügt. Die Erweiterung wird dann zu Ihrer Roamingliste hinzugefügt, über die Sie auf diese über Ihren Computer zugreifen können.
@@ -381,7 +381,7 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
 
 ### <a name="report-a-problem"></a>Problem melden
 
-Manchmal reicht eine Nachricht nicht aus, um das gesamte Ausmaß eines Problems, auf das Sie gestoßen sind, deutlich zu machen. Wenn Ihr Programm nicht mehr reagiert und Abstürze oder andere Leistungsprobleme auftreten, können Sie die Schritte zur Reproduktion und unterstützende Dateien (wie etwa Screenshots, Ablaufverfolgungsdateien und Heap-Dumpdateien) auf einfache Weise mithilfe des Tools **Problem melden** mit uns teilen. Weitere Informationen zur Verwendung dieses Tools finden Sie auf der Seite [Melden eines Problems](how-to-report-a-problem-with-visual-studio.md).
+Manchmal reicht eine Nachricht nicht aus, um das gesamte Ausmaß eines Problems, auf das Sie gestoßen sind, deutlich zu machen. Wenn Visual Studio bei Ihnen nicht reagiert, abstürzt oder Leistungsprobleme auftreten, können Sie die Schritte zur Reproduktion und unterstützende Dateien (wie Screenshots, Überwachungs- und Heap-Speicherabbilddateien) mithilfe des Tools **Problem melden** an uns weiterleiten. Weitere Informationen zur Verwendung dieses Tools finden Sie auf der Seite [Melden eines Problems](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Siehe auch
 

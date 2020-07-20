@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informationen zur Produktverfügbarkeit in Softwaredownloads für Visual Studio-Abonnements
-ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 27950fa2a4589ee5068e7d5f294f651132c229ea
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232305"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387212"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Produktverfügbarkeit für Softwaredownloads in Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.
@@ -27,7 +27,7 @@ Es gibt einige Gründe dafür, warum bestimmte Produkte möglicherweise für die
 - **Das Produkt ist nicht in Abonnements enthalten.** Aufgrund besonderer Lizenzbedingungen, technischer Einschränkungen oder mangelnder Relevanz für Entwickler sind einige Microsoft-Produkte nicht in Abonnements enthalten. Wenn Sie das Hinzufügen eines Produkts zum Abonnement vorschlagen möchten, senden Sie eine E-Mail an den [Kundendienst](https://visualstudio.microsoft.com/subscriptions/support/).
 - **Das Produkt ist frei verfügbar.** Einige Tools, SDKs, DDKs und Service Packs sind über das [Microsoft Download Center](https://www.microsoft.com/download) öffentlich verfügbar. Einige dieser Produkte werden möglicherweise nicht in den Downloads veröffentlicht.
 - **Das Produkt wurde noch nicht veröffentlicht.**  Viele Vorabversionen (Betaversionen) und Release Candidates stehen über die Downloadseite für Abonnenten zur Verfügung. Möglicherweise sind jedoch nicht alle Betaversionen enthalten. Beispielsweise kann für einige Betaversionen eine besondere Registrierung oder Berechtigung erforderlich sein. Weitere Informationen zu offenen technischen Betaprogrammen finden Sie unter [Microsoft Connect](https://connect.microsoft.com/).
-- **Das Produkt ist in Ihrem Land nicht verfügbar.** Einige Microsoft-Produkte sind aufgrund von regionalen Einschränkungen nicht verfügbar.
+- **Das Produkt ist in Ihrem Land/Ihrer Region nicht verfügbar.** Einige Microsoft-Produkte sind aufgrund von regionalen Einschränkungen nicht verfügbar.
 - **Redundante Software.** In Abonnements, die Office enthalten, sind bestimmte Office-Suites, eigenständige Office-Downloads und Product Keys nicht mehr verfügbar. Downloads und Product Keys sind für die höchste zugehörige Office-Suite derselben Version verfügbar.  Wenn Sie beispielsweise nach PowerPoint 2010 suchen, gibt die Suche keine Ergebnisse zurück.  Allerdings können Sie nach Office 2010 suchen (die Office-Suite, die PowerPoint 2010 enthält) und die Suite herunterladen.
 
 ## <a name="what-do-i-get"></a>Meine Vorteile
@@ -38,7 +38,7 @@ Es hängt von Ihrer Abonnementstufe und den Programmmitgliedschaften ab, wie vie
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)
