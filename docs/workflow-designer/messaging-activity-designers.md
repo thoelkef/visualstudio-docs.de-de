@@ -3,17 +3,17 @@ title: Workflow-Designer-Messaging-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b58a4c6f369f9a5338365e215805c2379db8d2ba
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189738"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876189"
 ---
 # <a name="messaging-activity-designers"></a>Aktivitäts-Designer für Messaging
 
@@ -39,7 +39,7 @@ Die Themen in diesem Abschnitt und die in der folgenden Tabelle aufgeführten Th
 
 Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folgenden Themen:
 
-- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+- [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)
 
 - [Verwenden der Aktivitätsdesigner](control-flow-activity-designers.md)
 
@@ -51,7 +51,7 @@ Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folge
 
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 
-- [Auflistung](../workflow-designer/collection-activity-designers.md)
+- [Sammlung](../workflow-designer/collection-activity-designers.md)
 
 - [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)
 

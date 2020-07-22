@@ -3,17 +3,17 @@ title: Workflow-Designer-FinalState-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: b8f25167f3a67e2d1349354ce568c076697e3e73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650470"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875591"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState-Aktivitäts-Designer
 
@@ -21,7 +21,7 @@ Der <xref:System.Activities.Core.Presentation.FinalState>-Designer wird verwende
 
 ## <a name="using-the-finalstate-activity-designer"></a>Verwenden des FinalState-Aktivitäts-Designers
 
-Der **FinalState** -Designer wird verwendet, um eine <xref:System.Activities.Statements.State> zu erstellen, die als Beendigungs Zustand in einem Zustands Automaten vorkonfiguriert ist. Für eine <xref:System.Activities.Statements.State>, die mit dem <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts Designer erstellt wird, ist die <xref:System.Activities.Statements.State.IsFinal%2A>-Eigenschaft auf **true**festgelegt, es sind keine <xref:System.Activities.Statements.State.Exit%2A> Aktivitäten und keine Übergänge von der Datei. Wenn Sie den <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts Designer verwenden möchten, um eine <xref:System.Activities.Statements.State> Aktivität hinzuzufügen, die als Beendigungs Zustand in einem Zustands Automaten vorkonfiguriert ist, ziehen Sie den **FinalState** -Aktivitäts Designer aus dem Abschnitt **Zustands Automat** der **Toolbox** , und legen Sie ihn auf dem Workflow-Designer. Der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer kann auf einem <xref:System.Activities.Statements.StateMachine> abgelegt werden, und es können später Übergänge hinzugefügt werden, oder es kann ein Übergang erstellt werden, wenn der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer abgelegt wird. Weitere Informationen zum Erstellen von Übergängen finden Sie unter [Transition](../workflow-designer/transition-activity-designer.md).
+Der **FinalState** -Designer wird verwendet, um einen zu erstellen, der als Beendigungs <xref:System.Activities.Statements.State> Zustand in einem Zustands Automaten vorkonfiguriert ist. Eine <xref:System.Activities.Statements.State> , die mit dem <xref:System.Activities.Core.Presentation.FinalState> Aktivitäts Designer erstellt wird <xref:System.Activities.Statements.State.IsFinal%2A> , ist für die-Eigenschaft auf **true**festgelegt, es sind keine <xref:System.Activities.Statements.State.Exit%2A> Aktivitäten und keine Übergänge aus der-Eigenschaft. Wenn Sie mit dem <xref:System.Activities.Core.Presentation.FinalState> Aktivitäts Designer eine-Aktivität hinzufügen möchten <xref:System.Activities.Statements.State> , die in einem Zustands Automat als Beendigungs Zustand vorkonfiguriert ist, ziehen Sie den **FinalState** -Aktivitäts Designer aus dem Abschnitt **Zustands Automat** der **Toolbox** , und legen Sie ihn auf dem Workflow-Designer ab. Der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer kann auf einem <xref:System.Activities.Statements.StateMachine> abgelegt werden, und es können später Übergänge hinzugefügt werden, oder es kann ein Übergang erstellt werden, wenn der <xref:System.Activities.Core.Presentation.FinalState>-Aktivitäts-Designer abgelegt wird. Weitere Informationen zum Erstellen von Übergängen finden Sie unter [Transition](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Zustandsaktivitätseigenschaften im Workflow-Designer
 
@@ -36,4 +36,4 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die mithilfe des <x
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [Zustand](../workflow-designer/state-activity-designer.md)
-- [Transition](../workflow-designer/transition-activity-designer.md)
+- [Umstellung](../workflow-designer/transition-activity-designer.md)

@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5190807bba08f05e176acc15ac8daf42ac028c50
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650546"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876111"
 ---
 # <a name="delay-activity-designer"></a>Delay-Aktivitätsdesigner
 
-Der **Delay** -Aktivitäts Designer wird verwendet, um eine <xref:System.Activities.Statements.Delay>-Aktivität zu erstellen und zu konfigurieren.
+Der **Delay** -Aktivitäts Designer wird verwendet, um eine-Aktivität zu erstellen und zu konfigurieren <xref:System.Activities.Statements.Delay> .
 
 ## <a name="the-delay-activity"></a>Die Delay-Aktivität
 
@@ -27,13 +27,13 @@ Die <xref:System.Activities.Statements.Delay>-Aktivität verzögert die Ausführ
 
 ### <a name="use-the-delay-activity-designer"></a>Verwenden des Delay-Aktivitäts Designers
 
-Der **Verzögerungs** Aktivitäts Designer befindet sich in der Kategorie **Primitives** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** +**alt** +**X**drücken.
+Der **Verzögerungs** Aktivitäts Designer befindet sich in der Kategorie **Primitives** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X**drücken.
 
-Der **Verzögerungs** Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence>. Beim Löschen des Aktivitäts Designers wird eine <xref:System.Activities.Statements.Delay>-Aktivität mit einem Standard <xref:System.Activities.Activity.DisplayName%2A> der Verzögerung erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann im Header des **Delay** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
+Der **Verzögerungs** Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence> . Beim Löschen des Aktivitäts Designers wird eine- <xref:System.Activities.Statements.Delay> Aktivität mit dem Standardwert <xref:System.Activities.Activity.DisplayName%2A> Delay erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann im Header des **Verzögerungs** Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
 ### <a name="the-delay-properties"></a>Die Verzögerungs Eigenschaften
 
-In der folgenden Tabelle sind die <xref:System.Activities.Statements.Delay> Eigenschaften aufgeführt, und es wird beschrieben, wie Sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige von Ihnen können auf der Workflow-Designer Oberfläche bearbeitet werden.
+In der folgenden Tabelle sind die Eigenschaften aufgeführt, <xref:System.Activities.Statements.Delay> und es wird beschrieben, wie Sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige von Ihnen können auf der Workflow-Designer Oberfläche bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|

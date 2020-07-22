@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Pick.UI
 ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 983a3ee3539617bf7ee5864c2138b2f0369e228f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01ebd0dbfa8274b370a7e84b1033465e2be0b4a9
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650075"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876033"
 ---
 # <a name="pick-activity-designer"></a>Pick-Aktivitätsdesigner
 
@@ -27,9 +27,9 @@ Eine <xref:System.Activities.Statements.Pick>-Aktivität enthält eine Auflistun
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>So verwenden Sie den Pick-Aktivitätsdesigner
 
-Greifen Sie in der Kategorie **Ablauf Steuerung** der **Toolbox**auf den **Pick** -Aktivitäts Designer zu. Der **Pick** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, z. b. innerhalb eines **Sequence** -Aktivitäts Designers. Nach dem Ablegen in Workflow-Designer wird eine <xref:System.Activities.Statements.Pick>-Aktivität erstellt, die standardmäßig zwei leere <xref:System.Activities.Statements.PickBranch> Aktivitäten als Elemente mit den anzeigen Amen Branch1 und Branch2 enthält. Diese entsprechenden <xref:System.Activities.Statements.PickBranch.DisplayName%2A> Eigenschaftswerte können im Header des **PickBranch** -Aktivitäts Designers oder innerhalb des **Eigenschaften** Fensters für jede Verzweigung bearbeitet werden.
+Greifen Sie in der Kategorie **Ablauf Steuerung** der **Toolbox**auf den **Pick** -Aktivitäts Designer zu. Der **Pick** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, z. b. innerhalb eines **Sequence** -Aktivitäts Designers. Nach dem Ablegen in Workflow-Designer wird eine- <xref:System.Activities.Statements.Pick> Aktivität erstellt, die standardmäßig zwei leere <xref:System.Activities.Statements.PickBranch> Aktivitäten als Elemente mit den anzeigen Amen Branch1 und Branch2 enthält. Diese entsprechenden <xref:System.Activities.Statements.PickBranch.DisplayName%2A> Eigenschaftswerte können im Header des **PickBranch** -Aktivitäts Designers oder innerhalb des **Eigenschaften** Fensters für jede Verzweigung bearbeitet werden.
 
-Es gibt zwei Möglichkeiten, der Auflistung eines <xref:System.Activities.Statements.Pick> Objekts <xref:System.Activities.Statements.PickBranch> Aktivitäten hinzuzufügen: ziehen Sie den **PickBranch** -Designer aus der **Toolbox** , oder verwenden Sie das Kontextmenü in der **Pick** -Entwurfs Oberfläche, um Aktivitäten hinzuzufügen. Weitere Informationen finden Sie im Thema [PickBranch](../workflow-designer/pickbranch-activity-designer.md) . Beachten Sie, dass das einzige Element, das in einem **Pick** -Aktivitäts Designer platziert werden kann, ein **PickBranch** -Aktivitäts Designer ist.
+Es gibt zwei Möglichkeiten, <xref:System.Activities.Statements.PickBranch> Aktivitäten zur-Auflistung eines <xref:System.Activities.Statements.Pick> -Objekts hinzuzufügen: ziehen Sie den **PickBranch** -Designer aus der **Toolbox** , oder verwenden Sie das Kontextmenü in der **Pick** -Entwurfs Oberfläche, um Aktivitäten hinzuzufügen. Weitere Informationen finden Sie im Thema [PickBranch](../workflow-designer/pickbranch-activity-designer.md) . Beachten Sie, dass das einzige Element, das in einem **Pick** -Aktivitäts Designer platziert werden kann, ein **PickBranch** -Aktivitäts Designer ist.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Eigenschaften für Pick-Aktivitäten im Workflow-Designer
 
@@ -41,6 +41,6 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Pick>-Eig
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+- [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)
 - [Auswahlaktivität](/dotnet/framework/windows-workflow-foundation/pick-activity)
 - [Verwenden der Pick-Aktivität](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)

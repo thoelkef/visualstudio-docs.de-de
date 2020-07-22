@@ -3,17 +3,17 @@ title: Machine Activity-Designer für Workflow-Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 8a2ad311c5ea9b992b8e68a8250433354ea48f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188908"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876059"
 ---
 # <a name="state-machine-activity-designers"></a>Zustandsautomatenaktivitäts-Designer
 
@@ -31,13 +31,13 @@ Workflow-Designer enthält eine Reihe von Aktivitäts Designern, die Sie beim Er
 ## <a name="related-sections"></a>Verwandte Abschnitte
  Andere Typen von Aktivitätsdesignern werden in den folgenden Themen behandelt.
 
- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+ [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)
 
  [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)
 
  [Verwenden der Aktivitätsdesigner](control-flow-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Nachrichten](../workflow-designer/messaging-activity-designers.md)
 
  [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
@@ -45,6 +45,6 @@ Workflow-Designer enthält eine Reihe von Aktivitäts Designern, die Sie beim Er
 
  [Transaktion](../workflow-designer/transaction-activity-designers.md)
 
- [Auflistung](../workflow-designer/collection-activity-designers.md)
+ [Sammlung](../workflow-designer/collection-activity-designers.md)
 
  [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)
