@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 116e8c31a6d7cad2e5c6da95bc66e34a0d11163a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77980077a580724f6db6bb5a544200890421d8e5
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649946"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875968"
 ---
 # <a name="sequence-activity-designer"></a>Sequence-Aktivitätsdesigner
 
@@ -25,7 +25,7 @@ Eine andere Möglichkeit, eine Gruppe von Aktivitäten in einer bestimmten Reihe
 
 ## <a name="using-the-sequence-activity-designer"></a>Verwenden des Sequence-Aktivitätsdesigners
 
-Um eine <xref:System.Activities.Statements.Sequence>-Aktivität hinzuzufügen, ziehen Sie den **Sequence** -Aktivitäts Designer aus der **Toolbox** , und legen Sie ihn auf der Workflow-Designer Oberfläche ab. Um dieser <xref:System.Activities.Statements.Sequence> Aktivität eine untergeordnete Aktivität hinzuzufügen, ziehen Sie eine andere Aktivität aus der **Toolbox** , und legen Sie Sie auf dem Dreieck im Feld mit dem Hinweis Text "Aktivität hier ablegen" ab.
+Ziehen Sie zum Hinzufügen einer- <xref:System.Activities.Statements.Sequence> Aktivität den **Sequence** -Aktivitäts Designer aus der **Toolbox** , und legen Sie ihn auf der Workflow-Designer Oberfläche ab. Um dieser Aktivität eine untergeordnete Aktivität hinzuzufügen <xref:System.Activities.Statements.Sequence> , ziehen Sie eine andere Aktivität aus der **Toolbox** , und legen Sie Sie auf dem Dreieck im Feld mit dem Hinweis Text "Aktivität hier ablegen" ab.
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Eigenschaften der Sequence-Aktivität im Workflow-Designer
 
@@ -38,4 +38,4 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Sequence>
 ## <a name="see-also"></a>Siehe auch
 
 - [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md)
-- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+- [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)
