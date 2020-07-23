@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39dee051991efe05b9a661ce1d213e71b456590b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 61321555a6896fad926d2ee38c5d73d50801d6b9
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904261"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972347"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Hinzufügen eines Menüs zur Visual Studio-Menüleiste
 
@@ -26,7 +26,7 @@ Bevor Sie der Visual Studio-Menüleiste ein neues Menü hinzufügen, sollten Sie
 
 Menüs werden in der *vsct* -Datei des Projekts deklariert. Weitere Informationen zu Menüs und *vsct* -Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
 
-Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, können Sie ein Menü mit dem Namen **testmenu** erstellen, das einen Befehl enthält.
+Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, können Sie ein Menü mit dem Namen **Testmenü** erstellen, das einen Befehl enthält.
 
 :::moniker range=">=vs-2019"
 > [!NOTE]
@@ -41,7 +41,17 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TopLevelMenu` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.  Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
+::: moniker range="vs-2017"
+
 2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie dann **Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
+
+::: moniker-end
 
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Erstellen eines Menüs auf der IDE-Menüleiste
 
@@ -49,13 +59,13 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 1. Öffnen Sie in **Projektmappen-Explorer**die Datei " *testcommandpackage. vsct*".
 
-    Am Ende der Datei befindet sich ein \<Symbols> Knoten, der mehrere \<GuidSymbol> Knoten enthält. Fügen Sie im Knoten guidtestcommandpackagecmdset wie folgt ein neues Symbol hinzu:
+    Am Ende der Datei befindet sich ein `<Symbols>` Knoten, der mehrere `<GuidSymbol>` Knoten enthält. Fügen Sie im Knoten mit dem Namen `guidTestCommandPackageCmdSet` ein neues Symbol wie folgt hinzu:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Erstellen Sie \<Menus> direkt zuvor einen leeren Knoten im \<Commands> Knoten \<Groups> . \<Menus>Fügen Sie im-Knoten \<Menu> wie folgt einen-Knoten hinzu:
+2. Erstellen Sie `<Menus>` direkt zuvor einen leeren Knoten im `<Commands>` Knoten `<Groups>` . `<Menus>`Fügen Sie im-Knoten `<Menu>` wie folgt einen-Knoten hinzu:
 
    ```xml
    <Menus>
@@ -63,8 +73,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -74,9 +83,9 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
     Die `guid` -und-Werte der über `id` geordneten positionieren das Menü im-Abschnitt der Visual Studio-Menüleiste, die die Menüs Tools und Add-Ins enthält.
 
-    Der Wert der `CommandName` Zeichenfolge gibt an, dass der Text im Menü Element angezeigt werden soll.
+    Das- `<ButtonText>` Element gibt an, dass der Text im Menü Element angezeigt werden soll.
 
-3. Suchen Sie im \<Groups> \<Group> -Abschnitt nach, und ändern Sie das-Element so, dass \<Parent> es auf das soeben hinzugefügte Menü verweist:
+3. Suchen Sie im `<Groups>` `<Group>` -Abschnitt nach, und ändern Sie das-Element so, dass `<Parent>` es auf das soeben hinzugefügte Menü verweist:
 
    ```xml
    <Groups>
@@ -94,13 +103,13 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 1. Öffnen Sie in **Projektmappen-Explorer**die Datei " *toplevelmenupackage. vsct*".
 
-    Am Ende der Datei befindet sich ein \<Symbols> Knoten, der mehrere \<GuidSymbol> Knoten enthält. Fügen Sie in dem Knoten mit dem Namen "guidtoplevelmenupackagecmdset" wie folgt ein neues Symbol hinzu:
+    Am Ende der Datei befindet sich ein `<Symbols>` Knoten, der mehrere `<GuidSymbol>` Knoten enthält. Fügen Sie im Knoten mit dem Namen `guidTopLevelMenuPackageCmdSet` ein neues Symbol wie folgt hinzu:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Erstellen Sie \<Menus> direkt zuvor einen leeren Knoten im \<Commands> Knoten \<Groups> . \<Menus>Fügen Sie im-Knoten \<Menu> wie folgt einen-Knoten hinzu:
+2. Erstellen Sie `<Menus>` direkt zuvor einen leeren Knoten im `<Commands>` Knoten `<Groups>` . `<Menus>`Fügen Sie im-Knoten `<Menu>` wie folgt einen-Knoten hinzu:
 
    ```xml
    <Menus>
@@ -108,8 +117,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -119,9 +127,9 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
     Die `guid` -und-Werte der über `id` geordneten positionieren das Menü im-Abschnitt der Visual Studio-Menüleiste, die die Menüs Tools und Add-Ins enthält.
 
-    Der Wert der `CommandName` Zeichenfolge gibt an, dass der Text im Menü Element angezeigt werden soll.
+    Das- `<ButtonText>` Element gibt an, dass der Text im Menü Element angezeigt werden soll.
 
-3. Suchen Sie im \<Groups> \<Group> -Abschnitt nach, und ändern Sie das-Element so, dass \<Parent> es auf das soeben hinzugefügte Menü verweist:
+3. Suchen Sie im `<Groups>` `<Group>` -Abschnitt nach, und ändern Sie das-Element so, dass `<Parent>` es auf das soeben hinzugefügte Menü verweist:
 
    ```xml
    <Groups>
@@ -135,7 +143,9 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker-end
 
-4. Suchen Sie nach dem Abschnitt `Buttons`. Beachten Sie, dass die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket Vorlage ein-Element generiert hat `Button` , dessen übergeordnetes Element auf festgelegt ist `MyMenuGroup` . Daher wird dieser Befehl im Menü angezeigt.
+4. Suchen Sie im- `<Buttons>` Abschnitt nach dem- `<Button>` Knoten. Ändern Sie dann im- `<Strings>` Knoten das- `<ButtonText>` Element in `Test Command` .
+
+    Beachten Sie, dass die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket Vorlage ein-Element generiert hat `Button` , dessen übergeordnetes Element auf festgelegt ist `MyMenuGroup` . Daher wird dieser Befehl im Menü angezeigt.
 
 ## <a name="build-and-test-the-extension"></a>Erstellen und Testen der Erweiterung
 
@@ -143,20 +153,20 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker range="vs-2017"
 
-2. Die Menüleiste in der experimentellen Instanz sollte ein **testmenu** -Menü enthalten.
+2. Die Menüleiste in der experimentellen Instanz sollte ein Menü Menü Menü " **Test** " enthalten.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Das Menü **Erweiterungen** in der experimentellen Instanz sollte ein **testmenu** -Menü enthalten.
+2. Das Menü **Erweiterungen** in der experimentellen Instanz sollte ein Menü Menü Menü " **Test** " enthalten.
 
 ::: moniker-end
 
-3. Klicken Sie im Menü **Testmenü** auf **Test Befehl aufrufen**.
+3. Klicken Sie im Menü **Test** auf **Test**.
 
-     Es sollte ein Meldungs Feld angezeigt werden, in dem die Meldung "TestCommand-Paket in toplevelmenu. TestCommand. MenuItemCallBack ()" angezeigt wird.
+    Es sollte ein Meldungs Feld angezeigt werden, in dem die Meldung "TestCommand in toplevelmenu. TestCommand. MenuItemCallBack ()" angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

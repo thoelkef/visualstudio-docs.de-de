@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e9963e05b0991beaea7da4027f4db3df4e4eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903913"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972334"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl
 
@@ -32,7 +32,17 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen **firstmenucommand**. Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
+::: moniker range="vs-2017"
+
 2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **firstcommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstCommand.cs*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **firstcommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie dann **Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstCommand.cs*.
+
+::: moniker-end
 
 3. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
@@ -50,7 +60,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker-end
 
-Wechseln Sie nun zum **Menü Extras in der experimentellen** Instanz. Der Befehl " **firstcommand aufrufen** " sollte angezeigt werden. An diesem Punkt wird mit dem Befehl ein Meldungs Feld angezeigt, das **firstcommandpackage in firstmenucommand. firstcommand. MenuItemCallBack ()** anzeigt. Im nächsten Abschnitt erfahren Sie, wie Sie Notepad tatsächlich mit diesem Befehl starten.
+Wechseln Sie nun zum **Menü Extras in der experimentellen** Instanz. Der Befehl " **firstcommand aufrufen** " sollte angezeigt werden. An diesem Punkt zeigt der Befehl ein Meldungs Feld an, das **firstcommand in firstmenucommand. firstcommand. MenuItemCallBack ()** anzeigt. Im nächsten Abschnitt erfahren Sie, wie Sie Notepad tatsächlich mit diesem Befehl starten.
 
 ## <a name="change-the-menu-command-handler"></a>Ändern des Menübefehls Handlers
 
@@ -77,11 +87,13 @@ Nun aktualisieren wir den Befehls Handler, um Notepad zu starten.
     }
     ```
 
-3. Entfernen `MenuItemCallback` Sie die-Methode, und fügen Sie eine- `StartNotepad` Methode hinzu, die nur den Notepad startet:
+3. Entfernen `Execute` Sie die-Methode, und fügen Sie eine- `StartNotepad` Methode hinzu, die nur den Notepad startet:
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
     {
+        ThreadHelper.ThrowIfNotOnUIThread();
+
         Process proc = new Process();
         proc.StartInfo.FileName = "notepad.exe";
         proc.Start();
@@ -102,7 +114,7 @@ Dieses Skript kann auf zwei Arten erreicht werden:
 
 2. Führen Sie die folgenden Befehle über die Befehlszeile aus:
 
-    ```xml
+    ```cmd
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
@@ -113,7 +125,7 @@ Nachdem Sie nun die Tool Erweiterung auf die gewünschte Weise ausgeführt haben
 
 Die *VSIX* -Datei für diese Erweiterung finden Sie im Verzeichnis " *firstmenucommand* bin". Insbesondere, wenn Sie die Releasekonfiguration erstellt haben, befindet Sie sich in:
 
-*\<code directory>\Firstmenucommand\firstmenucommand\bin\release\ firstmenucommand. vsix*
+*\<code directory>\Firstmenucommand\firstmenucommand\bin\release\firstmenucommand.vsix*
 
 Um die Erweiterung zu installieren, muss Ihr Freund alle geöffneten Instanzen von Visual Studio schließen und dann auf die *VSIX* -Datei doppelklicken, um das **VSIX-Installations**Programm aufzurufen. Die Dateien werden in das Verzeichnis " *%LocalAppData%\microsoft\visualstudio \<version> \extensions* " kopiert.
 
