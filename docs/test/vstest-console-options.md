@@ -1,6 +1,6 @@
 ---
 title: Befehlszeilenoptionen für VSTest.Console.exe
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211563"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869593"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -35,7 +35,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 | Option | Beschreibung |
 |---|---|
 |**[*Testdateinamen*]**|Führt Tests auf Grundlage der angegebenen Dateien aus. Trennt mehrere Testdateinamen durch Leerzeichen.<br />Beispiele: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/Settings: [*Dateiname*]**|Führen Sie Tests mit zusätzlichen Einstellungen wie Datensammlern aus.<br />Ein Beispiel: `/Settings:Local.RunSettings`|
+|**/Settings: [*Dateiname*]**|Führen Sie Tests mit zusätzlichen Einstellungen wie Datensammlern aus. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Komponententests mithilfe einer RUNSETTINGS-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).<br />Ein Beispiel: `/Settings:local.runsettings`|
 |**/Tests: [*Testname*]**|Führt Tests aus, die mit den eingegebenen Werten übereinstimmen. Um mehrere Werte bereitzustellen, trennen Sie diese durch Kommas.<br />Ein Beispiel: `/Tests:TestMethod1,testMethod2`<br />Die Befehlszeilenoption **/Tests** kann nicht zusammen mit der Befehlszeilenoption **/TestCaseFilter** verwendet werden.|
 |**/Parallel**|Gibt an, dass die Tests parallel ausgeführt werden. Standardmäßig können alle verfügbaren Kerne auf dem Computer verwendet werden. Die Anzahl der zu verwendenden Kerne kann mithilfe einer Einstellungsdatei konfiguriert werden.|
 |**/Enablecodecoverage**|Aktiviert den CodeCoverage-Datendiagnoseadapter im Testlauf.<br />Die Standardeinstellungen werden verwendet, wenn keine Einstellungsdatei angegeben wurde.|

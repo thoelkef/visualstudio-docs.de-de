@@ -1,6 +1,6 @@
 ---
 title: Ressourcen für die Problembehandlung bei Fehlern
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593615"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459280"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressourcen für die Problembehandlung bei Fehlern der integrierten Entwicklungsumgebung
 
@@ -109,7 +109,7 @@ Es gibt nicht für alle Fehlermeldungen ein zugehöriges Hilfethema. Wenn Sie da
 
 ## <a name="knowledge-base-articles"></a>Knowledge Base-Artikel
 
-Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Auf der [Microsoft-Support](https://support.microsoft.com)-Website erhalten Sie Zugriff auf KB-Artikel.
+Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Auf der [Microsoft-Support](https://support.microsoft.com)-Website erhalten Sie Zugriff auf KB-Artikel. Sie können auf der Seite [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) auch eine Sammlung von KB-Artikeln für Visual Studio anzeigen.
 
 ## <a name="developer-forums"></a>Entwicklerforen
 
@@ -121,7 +121,7 @@ Sie können auf der Website der [Technischen Microsoft-Communitys](https://techc
 
 Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angesehen haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Support](https://support.microsoft.com/en-us). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie auf der Seite [Visual Studio-Feedbackoptionen](../../ide/feedback-options.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Problembehandlung von Netzwerk- oder Proxyfehlern](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Problembehandlung (Visual Studio für Mac)](/visualstudio/mac/troubleshooting)
