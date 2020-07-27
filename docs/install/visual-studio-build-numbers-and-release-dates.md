@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 07/14/2020
+ms.date: 07/21/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 2b63d8e269d88b15d4ca057282ebad061f6ea04d
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386185"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876020"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,8 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Preview 5 | 21. Juli 2020 | 16.7.30317.65 |
+| 16.6.5 | Freigabe | 21. Juli 2020 | 16.6.30320.27 |
 | 16.7.0 | Preview 4 | 14. Juli 2020 | 16.7.30310.162 |
 | 16.6.4 | Freigabe | 14. Juli 2020 | 16.6.30309.148 |
 | 16.4.11 | Freigabe | 14. Juli 2020 | 16.4.30308.118 |
@@ -339,7 +341,8 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Releasezyklus von Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Visual Studio-Roadmap](/visualstudio/productinfo/vs-roadmap)
+* [Releasezyklus von Visual Studio](/visualstudio/productinfo/release-rhythm)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Tools zum Erkennen und Verwalten von Visual Studio-Instanzen](tools-for-managing-visual-studio-instances.md)

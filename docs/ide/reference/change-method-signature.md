@@ -1,7 +1,7 @@
 ---
 title: Ändern der Methodensignatur
 description: Informationen zum Hinzufügen und Entfernen von Parametern einer Methode oder Ändern ihrer Reihenfolge. Klicken Sie mit der rechten Maustaste auf eine Methode, wählen Sie „Schnelle Aktionen“ und anschließend „Refactorings“ aus, und klicken Sie auf „Signatur ändern“.
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283875"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869567"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Ändern einer Methodensignatur durch Refactoring
 
@@ -78,15 +78,6 @@ Dieses Refactoring gilt für:
 5. Wenn Sie mit dem Hinzufügen eines Parameters fertig sind, klicken Sie auf die Schaltfläche **OK**, um eine Vorschau der Änderungen anzuzeigen.
 
     ![Dialogfeld „Signatur ändern“](media/change-signature.png)
-
-6. Klicken Sie auf **OK**, um die Änderungen anzuzeigen.
-   - C#:
-
-      ![Ergebnis der Signaturänderung in C#](media/changesignature-result-cs.png)
-
-   - Visual Basic:
-
-      ![Ergebnis der Signaturänderung in Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>Siehe auch
 
