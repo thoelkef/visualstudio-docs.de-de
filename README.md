@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62422084"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115291"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio-Dokumentation
 
@@ -12,7 +12,7 @@ Willkommen! Dieses Repository enthält Quelldateien für die technische Dokument
 
 Dieses Repository wurde am 23. Juni 2017 aus https://github.com/Microsoft/vsdocs verschoben. Datenverkehr zu den alten URL wird hierher weitergeleitet.
 
-Die Dokumentation für Visual Basic und Visual C# befindet sich im [dotnet-Dokumentations-Repository](https://github.com/dotnet/docs/tree/master/docs), und die Dokumentation für Visual C++ im [C++-Dokumentations-Repository](http://github.com/MicrosoftDocs/cpp-docs).
+Die Dokumentation für Visual Basic und Visual C# befindet sich im [dotnet-Dokumentations-Repository](https://github.com/dotnet/docs/tree/master/docs), und die Dokumentation für Visual C++ im [C++-Dokumentations-Repository](https://github.com/MicrosoftDocs/cpp-docs).
 
 ## <a name="contribute-to-the-documentation"></a>Beitrag zur Dokumentation
 
@@ -22,6 +22,6 @@ Mehrere Funktionsbereiche von Visual Studio verfügen über eigene Ordner in die
 
 Weitere Informationen dazu, wie Sie beitragen können, finden Sie in der [Anleitung für Beiträge](CONTRIBUTING.md).
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source-Verhaltensregeln
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open-Source-Verhaltenskodex
 
-Dieses Projekt hat die [Microsoft Open Source Code of Conduct (Microsoft Open Source-Verhaltensregeln)](https://opensource.microsoft.com/codeofconduct/) übernommen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zum Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/faq/) oder indem Sie sich mit Fragen und Kommentaren an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.
+Für dieses Projekt gelten die Microsoft-Verhaltensregeln für Open Source ([Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)). Weitere Informationen finden Sie unter [Häufig gestellte Fragen zum Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/faq/) oder indem Sie sich mit Fragen und Kommentaren an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.

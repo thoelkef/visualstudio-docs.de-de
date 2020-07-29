@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
+ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276474"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87330959"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Problem melden: Status und häufig gestellte Fragen
 
@@ -95,12 +95,6 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 ![Status „Geschlossen – Anderes Produkt“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
 **Geschlossen – Anderes Produkt** gibt an, dass wir festgestellt haben, dass sich Ihr Problem auf ein anderes Produkt bezieht. Sehen Sie sich den Kommentar von Microsoft für das externe Produkt und ggf. verwandte Links an.
-
-- - -
-
-![Status „Geschlossen (nicht behebbar)“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/ClosedWontFix.jpg)
-
-**Geschlossen (nicht behebbar)** gibt an, dass wir dieses Problem aufgrund von Faktoren wie fehlender Produktausrichtung oder Bedeutung für die Community nicht weiterverfolgen. Sehen Sie sich für weitere Informationen den Kommentar von Microsoft an.  Auch wenn wir dieses bestimmte Problem nicht beheben können, ist Ihr Feedback dennoch wertvoll und trägt zur Verbesserung von Visual Studio bei.
 
 - - -
 
