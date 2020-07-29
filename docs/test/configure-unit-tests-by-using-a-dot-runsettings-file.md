@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1a840d4aca1a6eda3f549278e36a1d64725cd8ad
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869619"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972295"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -238,7 +238,7 @@ Mit dieser Option können Sie einen problematischen Test isolieren, der zu einem
 </DataCollector>
 ```
 
-### <a name="testrunparameters"></a>TestRunParameters
+## <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
 <TestRunParameters>
