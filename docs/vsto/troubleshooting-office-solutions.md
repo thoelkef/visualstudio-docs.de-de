@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537215"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234717"
 ---
 # <a name="troubleshoot-office-solutions"></a>Problembehandlung für Office-Lösungen
   Dieser Abschnitt enthält Tipps zur Lösung allgemeiner Probleme, die beim Erstellen von Projektmappen mithilfe von Office-Entwicklungstools in Visual Studio auftreten können.
@@ -57,3 +57,7 @@ ms.locfileid: "85537215"
 - [Häufige Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md)
 
  Eine Liste häufig gestellter Fragen zum Programmieren von Office-Projektmappen sowie Links zu Themen, die zur Lösung häufiger Probleme beitragen können.
+
+## <a name="see-also"></a>Weitere Informationen
+
+- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

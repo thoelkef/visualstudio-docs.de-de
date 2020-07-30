@@ -7,12 +7,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5225c741206e6a43ff024a5f184404f1ac2bc63
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904493"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235042"
 ---
 # <a name="troubleshooting-template-installation"></a>Problembehandlung der Vorlagen Installation
 
@@ -70,6 +70,7 @@ Die Protokolldatei enthält die folgenden Spalten:
 > [!NOTE]
 > Um die Protokollierung zu deaktivieren, entfernen Sie entweder die pkgdef-Datei, oder ändern Sie den Wert von `EnableTemplateDiscoveryLog` in `dword:00000000` , und führen Sie dann `devenv /updateConfiguration` erneut aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von benutzerdefinierten Projekt-und Element Vorlagen](creating-custom-project-and-item-templates.md)
+- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
