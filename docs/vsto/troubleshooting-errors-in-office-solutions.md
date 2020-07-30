@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537318"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234691"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Beheben von Fehlern in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:
@@ -213,7 +213,8 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Unabhängig davon, ob Sie im Dialogfeld auf " **Ja** " oder " **Nein** " klicken, beendet Visual Studio den Excel-oder Word-Prozess und beendet den Debugger. Um das Debuggen des Projekts ohne Anzeige dieses Dialogfelds zu beenden, beenden Sie Excel oder Word direkt, anstatt den Debugger in Visual Studio zu beenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Problembehandlung für Office-Lösungen](../vsto/troubleshooting-office-solutions.md)
 - [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
 - [Problembehandlung bei der Bereitstellung von Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

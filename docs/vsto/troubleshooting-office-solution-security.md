@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76cd454cd66e31db8c521d71183aa479da1fe2a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537409"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234808"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Behandeln von Problemen mit der Sicherheit von Office
   Dieses Thema enthält Tipps zum Lösen allgemeiner Probleme, die bei der Arbeit mit dem Sichern von Office-Lösungen auftreten können.
@@ -50,3 +50,4 @@ ms.locfileid: "85537409"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
+- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

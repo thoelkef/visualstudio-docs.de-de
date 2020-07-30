@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65acd78ef2591a84a1f48bd6a694996f48078d68
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: b5266579ff235a0f6c4f3e555d79d5a00de2c194
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905123"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234860"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Problembehandlung bei der Registrierung des RegPkg-Pakets
 > [!NOTE]
@@ -36,5 +36,6 @@ ms.locfileid: "85905123"
 
    Mit der früheren Version von regpkg können Pakete registriert werden, die mit der Microsoft.VisualStudio.Shell.dll-Assembly erstellt wurden. Es ist jedoch nicht möglich, Pakete zu registrieren, die mit neueren Versionen dieser Assembly erstellt wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSPackages](../../extensibility/internals/vspackages.md)
+- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
