@@ -58,6 +58,6 @@ ms.locfileid: "87234717"
 
  Eine Liste häufig gestellter Fragen zum Programmieren von Office-Projektmappen sowie Links zu Themen, die zur Lösung häufiger Probleme beitragen können.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

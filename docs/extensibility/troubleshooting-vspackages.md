@@ -123,6 +123,6 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
 
    Stellen Sie sicher, dass der InprocServer32-Eintrag über den richtigen Pfad der VSPackage-dll verfügt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [VSPackages](../extensibility/internals/vspackages.md)
 - [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
