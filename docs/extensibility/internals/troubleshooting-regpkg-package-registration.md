@@ -36,6 +36,6 @@ ms.locfileid: "87234860"
 
    Mit der früheren Version von regpkg können Pakete registriert werden, die mit der Microsoft.VisualStudio.Shell.dll-Assembly erstellt wurden. Es ist jedoch nicht möglich, Pakete zu registrieren, die mit neueren Versionen dieser Assembly erstellt wurden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

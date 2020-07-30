@@ -66,7 +66,7 @@ if (log == null) return;
 
     Wenn ein Tool Fenster ein Benutzer Steuerelement oder einen anderen Steuerelement Container hostet, wird der Container vom Windows-Komponentenmodell positioniert und hat keinen Zugriff auf [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dienste. Sie können abrufen <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> , um einen VSPackage-Dienstanbieter innerhalb eines Steuerelement Containers abzurufen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Liste der verfügbaren Dienste](../extensibility/internals/list-of-available-services.md)
 - [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)
 - [Service Essentials](../extensibility/internals/service-essentials.md)
