@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a98a822cd9aac6d93b4964e2e8bdadc98972e5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85381898"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235159"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung auftreten können, und es werden die Schritte zum Beheben der einzelnen Probleme beschrieben.
@@ -136,6 +136,7 @@ In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei d
 | Verknüpfungen können nicht über das Netzwerk aktiviert werden. | Verknüpfungen zu einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung können nur auf der lokalen Festplatte gestartet werden. Sie können nicht gestartet werden, indem Sie eine URL öffnen, die auf eine Verknüpfungs Datei auf einem Remote Server verweist. |
 | Die Anwendung ist zu groß, um in teilweiser Vertrauenswürdigkeit online auszuführen. Wenden Sie sich an den Hersteller der Anwendung oder an den Systemadministrator. | Eine Anwendung, die mit teilweiser Vertrauenswürdigkeit ausgeführt wird, darf nicht größer als die Hälfte der Größe des Online Anwendungs Kontingents sein, das standardmäßig 250 MB beträgt. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
+- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
