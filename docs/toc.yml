@@ -42,6 +42,8 @@
       items:
         - name: Übersicht
           href: install/visual-studio-administrator-guide.md
+        - name: Leitfaden zu Visual Studio Enterprise
+          href: install/visual-studio-enterprise-guide.md
         - name: Verwenden der Befehlszeile
           items:
             - name: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
