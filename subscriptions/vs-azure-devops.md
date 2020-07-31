@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 03/24/2020
+ms.date: 07/22/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
-ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444822"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115322"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in Azure DevOps, die als Vorteil in Ihrem Abonnement enthalten sind. Sie können diese Features in jeder Azure DevOps-Organisation verwenden, bei dem Sie Mitglied sind. Dabei spielt es keine Rolle, ob Sie die Organisation erstellt haben oder von jemandem hinzugefügt wurden.
@@ -30,22 +30,27 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>  | Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Pipelines (selbstgehostet)       |  Ja          |
-| Visual Studio Enterprise mit GitHub Enterprise   | VL| Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Pipelines (selbstgehostet)       |  Ja          |
-| Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail                                        | Azure Boards und Repositorys (Basic)                                                            |  Ja          |
-| Visual Studio Professional mit GitHub Enterprise | VL| Azure Boards und Repositorys (Basic)                                                            |  Ja          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
+| Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>  | Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans, selbstgehostete Parallelaufträge [Weitere Informationen](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Ja          |
+| Visual Studio Enterprise mit GitHub Enterprise   | VL| Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans, selbstgehostete Parallelaufträge [Weitere Informationen](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Ja          |
+| Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail                                        | Azure Boards und Repositorys (Basic<sup>2</sup>) [Weitere Informationen](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Ja          |
+| Visual Studio Professional mit GitHub Enterprise | VL| Azure Boards und Repositorys (Basic<sup>2</sup>) [Weitere Informationen](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Ja          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans [Weitere Informationen](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Ja          |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans [Weitere Informationen](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Ja          |
 ||
 
 <sup>1</sup> *Enthält:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
 
+<sup>2</sup> *Der Basic-Tarif umfasst das Definieren von Releasepipelines und mehrstufigen Continuous-Deployment-Pipelines (CD) sowie die Verwendung von Genehmigungen und Gates zum Steuern von Bereitstellungen. Wenn der kostenlose Zugriff auf das Pipeline-Vorschaufeature aktiviert ist, erhalten Projektbeteiligte Zugriff auf alle Features von Azure Pipelines. Weitere Informationen über die in Tarifen enthaltenen Features finden Sie auf der Azure-Seite [Informationen zu Zugriffsebenen](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops).*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihnen zugewiesen sind.
 Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+### <a name="q-as-a-visual-studio-enterprise-subscriber-do-i-get-additional-parallel-jobs-for-tfs-and-azure-pipelines"></a>Frage: Erhalte ich als Visual Studio Enterprise-Abonnent zusätzliche Parallelaufträge für TFS und Azure Pipelines?
+Antwort:  Ja. Visual Studio Enterprise-Abonnenten erhalten einen Parallelauftrag in Team Foundation Server 2017 oder höher und einen selbstgehosteten Parallelauftrag in jeder Azure DevOps Services-Organisation, in der sie Mitglied sind.
 
 ## <a name="support-resources"></a>Supportressourcen
 - Wenn Sie Unterstützung beim Vertrieb, bei Abonnements und Konten sowie bei der Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.

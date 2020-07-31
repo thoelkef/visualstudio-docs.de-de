@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
-ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509056"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234639"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet.
@@ -36,7 +36,7 @@ Wenn in einem Unternehmen Active Directory eingerichtet ist und der Benutzerprin
 2. Stellen Sie sicher, dass die Anmelde-E-Mail-Adresse oben rechts auf der Seite mit der Adresse übereinstimmt, die Sie zur Anmeldung verwendet haben.  Andernfalls liegt ein UPN-Konflikt vor, und Sie sind nicht in der Lage, Ihr Abonnement anzuzeigen. 
 
 > [!div class="mx-imgBorder"]
-> ![Anmelde-E-Mail-Adresse](_img//aliasing/sign-in-email.png)
+> ![Anmelde-E-Mail-Adresse](_img//aliasing/sign-in-email.png "Stellen Sie sicher, dass die oben rechts angezeigte E-Mail-Adresse mit der übereinstimmt, die Sie zum Anmelden verwenden.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Beheben eines UPN-Konflikts
 
@@ -69,7 +69,7 @@ Die Visual Studio-Plattform priorisiert den primären Alias, um Abonnementdetail
 2. Klicken Sie unter Kontoaliase neben der E-Mail-Adresse, die für die Zuweisung des Abonnements verwendet wurde, auf die Option **Als primär festlegen**. 
 
 > [!div class="mx-imgBorder"]
-> ![Festlegen der primären E-Mail-Adresse](_img//aliasing/account-aliases.png)
+> ![Festlegen der primären E-Mail-Adresse](_img//aliasing/account-aliases.png "Verwenden Sie den Link „Als primär festlegen“, um den primären Alias für Ihre Abonnements auszuwählen.")
 
 3. Melden Sie sich vom Visual Studio-Abonnementportal ab (https://my.visualstudio.com). 
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Abonnenten spezifische Abonnement-GUIDs zuweisen können.
-ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072592"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235185"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen spezifischer Abonnements im Portal für die Verwaltung von Visual Studio-Abonnements
 
@@ -32,7 +32,7 @@ So führen Sie den Export aus:
 1. Melden Sie sich beim [Verwaltungsportal](https://manage.visualstudio.com) an.
 2. Wählen Sie die Registerkarte **Exportieren** aus, und die Datei wird auf Ihren lokalen Computer heruntergeladen. Die Datei enthält den Namen der Vereinbarung, die Ihre Benutzerabonnements enthält, sowie das Datum des Exports.
 > [!div class="mx-imgBorder"]
-> ![Abonnenten exportieren](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![Abonnenten exportieren](_img/exporting-subscriptions/exporting-subscriptions.png "Klicken Sie auf „Exportieren“, um die Liste Ihrer zugewiesenen Abonnement mit Abonnenteninformationen zu speichern.")
 
 ### <a name="identify-the-guids-you-want-to-assign"></a>Ermitteln der GUIDs, die Sie zuweisen möchten
 

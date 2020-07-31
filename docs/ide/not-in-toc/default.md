@@ -1,6 +1,6 @@
 ---
 title: Standardseite für F1-Hilfe
-ms.date: 02/28/2018
+ms.date: 07/20/2020
 ms.topic: troubleshooting
 robots: noindex,nofollow
 f1_keywords:
@@ -9,12 +9,12 @@ f1_keywords:
 manager: jillfra
 author: TerryGLee
 ms.author: tglee
-ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fabd640b503c480662239dac4920aa9875d62c9
+ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597008"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86944567"
 ---
 # <a name="f1-help"></a>F1-Hilfe
 
@@ -22,11 +22,12 @@ Leider konnte der von Ihnen gesuchte Inhalt nicht gefunden werden. Sie können u
 
 ## <a name="cursor-position"></a>Cursorposition
 
-Wenn Sie ein Schlüsselwort oder einen API-Namen in der F1-Hilfe suchen möchten, positionieren Sie den Cursor in dem Wort oder direkt rechts neben dem Wort, bevor Sie **F1** drücken. Wenn das Problem weiterhin besteht, wählen Sie eine Option aus der Liste [Nützliche Links](#useful-links) aus, oder führen Sie eine Suche unter https://docs.microsoft.com durch.
+Wenn Sie die F1-Hilfe zu einem Schlüsselwort oder einem API-Namen aufrufen möchten, stellen Sie sicher, dass Sie den Cursor auf oder direkt rechts neben dem Wort platzieren, bevor Sie **F1** drücken. Wenn das Problem weiterhin besteht, können Sie einen der Links aus der folgenden Liste [nützlicher Links](#useful-links) verwenden, oder auf https://docs.microsoft.com suchen.
 
 ## <a name="useful-links"></a>Nützliche Links
 
 - Suchen Sie nach Referenzdokumentation im [.NET API-Browser](/dotnet/api/).
+- Auf der Seite [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) können Sie eine Liste der Wissensdatenbankartikel durchsuchen.
 - Unterstützung zu C# finden Sie im [C#-Leitfaden](/dotnet/csharp/index).
 - Unterstützung zu Visual Basic finden Sie im [Visual Basic-Leitfaden](/dotnet/visual-basic/).
 - Unterstützung zu F# finden Sie im [F#-Leitfaden](/dotnet/fsharp/).
