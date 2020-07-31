@@ -1,5 +1,5 @@
 ---
-title: Menüelement | Microsoft Docs
+title: Menu-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc4731f95e31781f6b10704d7cb14dc83e96d7a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 020098a3026f600629b8ab186431a1d2d5d7795a
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702599"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453651"
 ---
-# <a name="menu-element"></a>Menüelement
-Definiert ein Menüelement. Dies sind die sechs Arten von Menüs: Kontext, Menü, MenuController, MenuControllerLatched, Toolbar und ToolWindowToolbar.
+# <a name="menu-element"></a>Menu-Element
+Definiert ein Menü Element. Dies sind die sechs Arten von Menüs: Kontext, Menü, menucontroller, menucontrollerlatched, Symbolleiste und toolwindowtoolbar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,43 +36,42 @@ Definiert ein Menüelement. Dies sind die sechs Arten von Menüs: Kontext, Menü
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|Attribut|BESCHREIBUNG|
 |---------------|-----------------|
-|guid|Erforderlich. GUID des Befehlsbezeichners GUID/ID.|
-|id|Erforderlich. ID des BEFEHLsbezeichners GUID/ID.|
+|guid|Erforderlich. GUID des GUID-/ID-befehlsbezeichners.|
+|id|Erforderlich. ID des GUID-/ID-befehlsbezeichners.|
 |priority|Optional. Ein numerischer Wert, der die relative Position eines Menüs in einer Gruppe von Menüs angibt.|
-|ToolbarPriorityInBand|Optional. Ein numerischer Wert, der die relative Position einer Symbolleiste in einem Band angibt, wenn das Fenster angedockt wird.|
-|type|Optional. Ein aufgezählter Wert, der die Art des Elements angibt.<br /><br /> Wenn nicht vorhanden, ist der Standardtyp Menü.<br /><br /> Kontext<br /> Ein Kontextmenü, das angezeigt wird, wenn ein Benutzer mit der rechten Maustaste auf ein Fenster klickt. Ein Kontextmenü weist die folgenden Merkmale auf:<br /><br /> - Verwendet nicht die **Felder "Eltern"** und **"Priorität",** wenn das Menü als Kontextmenü angezeigt werden soll.<br />- Kann als Untermenü und auch als Shortcut-Menü verwendet werden. In diesem Fall werden sowohl **die Gruppen-ID** als auch die **Prioritätsfelder** respektiert.<br />- Ist nicht immer verfügbar.<br /><br /> Ein Kontextmenü wird nur angezeigt, wenn die folgenden Bedingungen zutreffen:<br /><br /> - Das Fenster, in dem es gehostet wird, wird angezeigt.<br />- Ein Maushandler im VSPackage erkennt einen Rechtsklick auf das Fenster und ruft dann eine Methode auf, die den Befehl verarbeitet.<br />- Das Kontextmenü wird <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A> angezeigt, indem die Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> (der empfohlene Ansatz) oder die Methode aufgerufen wird.<br /><br /> Menü<br /> Stellt ein Dropdown-Menü bereit. Ein Dropdown-Menü weist folgende Merkmale auf:<br /><br /> - Respektiert die Eltern in ihrer Definition.<br />- Muss eine übergeordnete Gruppe oder eine CommandPlacement zu einer Gruppe haben.<br />- Kann ein Untermenü in jeder anderen Art von Menü sein.<br />- Wird automatisch angezeigt, wenn das übergeordnete Menü angezeigt wird.<br />- Erfordert keine Implementierung von VSPackage-Code, um ihn angezeigt zu machen.<br /><br /> MenuController<br /> Stellt ein Dropdown-Menü mit geteilten Schaltflächen bereit, das in der Regel in Symbolleisten verwendet wird. Ein MenuController-Menü weist die folgenden Merkmale auf:<br /><br /> - Muss in einem anderen Menü über Parent oder CommandPlacement enthalten sein.<br />- Respektiert die Eltern in ihrer Definition.<br />- Kann jede Art von Menü als übergeordnete.<br />- Wird automatisch zur Verfügung gestellt, wenn das übergeordnete Menü angezeigt wird.<br />- Erfordert keine programmgesteuerte Unterstützung, um das Menü anzuzeigen.<br /><br /> Ein Befehl aus dem Menü mit split-button wird auf der Menüschaltfläche angezeigt. Der angezeigte Befehl weist eines der folgenden Merkmale auf:<br /><br /> - Es ist der letzte Befehl, der verwendet wurde, wenn der Befehl noch angezeigt und aktiviert ist.<br />- Es ist der erste angezeigte Befehl.<br /><br /> MenuControllerLatched<br /> Stellt ein Dropdown-Menü mit geteilten Schaltflächen bereit, für das ein Befehl als Standardauswahl angegeben werden kann, indem der Befehl als gesperrt markiert wird.<br /><br /> Ein gesperrter Befehl ist ein Befehl, der im Menü als ausgewählt markiert ist, in der Regel durch Anzeigen eines Häkchens. Ein Befehl kann als gesperrt markiert werden, wenn in einer Implementierung `QueryStatus` der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Methode der Schnittstelle das OLECMDF_LATCHED-Flag darauf gesetzt ist. Ein MenuControllerLatched-Menü weist die folgenden Eigenschaften auf:<br /><br /> - Muss in einem anderen Menü über eine übergeordnete Gruppe oder CommandPlacement enthalten sein.<br />- Respektiert die Eltern in ihrer Definition.<br />- Kann jede Art von Menü als übergeordnete.<br />- Wird zur Verfügung gestellt, wenn das übergeordnete Menü angezeigt wird.<br />- Erfordert keine programmgesteuerte Unterstützung, um das Menü anzuzeigen.<br /><br /> Ein Befehl aus dem Menü mit split-button wird auf der Menüschaltfläche angezeigt. Der angezeigte Befehl weist eines der folgenden Merkmale auf:<br /><br /> - Es ist der erste angezeigte Befehl, der gesperrt ist.<br />- Es ist der erste angezeigte Befehl.<br /><br /> Symbolleiste<br /> Stellt eine Symbolleiste bereit. Eine Symbolleiste weist die folgenden Eigenschaften auf:<br /><br /> - Ignoriert das Übergeordnete in seiner Definition.<br />- Kann nicht zu einem Untermenü einer Gruppe gemacht werden, auch nicht mit CommandPlacement.<br />- Kann immer angezeigt **werden,** indem Sie im Menü **Ansicht** auf Symbolleisten klicken.<br />- Kann mit einem [VisibilityItem](../extensibility/visibilityitem-element.md)angezeigt werden.<br />- Erfordert keinen Code, um ihn zu erstellen. Ein Beispiel zum Erstellen einer Symbolleiste finden Sie unter [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md).<br /><br /> ToolWindowToolbar<br /> Stellt eine Symbolleiste bereit, die an ein bestimmtes Werkzeugfenster angefügt ist, genau wie eine Symbolleiste an die Entwicklungsumgebung angefügt ist.<br /><br /> - Ignoriert das Übergeordnete in seiner Definition.<br />- Kann nicht zu einem Untermenü einer Gruppe gemacht werden, auch nicht mit CommandPlacement.<br />- Wird nur angezeigt, wenn das Toolfenster, in dem die Symbolleiste gehostet wird, angezeigt wird und das VSPackage dem Toolfenster explizit die Symbolleiste hinzufügt. Dies geschieht in der Regel, wenn das Toolfenster erstellt wird, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost> indem die Symbolleistenhosteigenschaft (wie durch die Schnittstelle dargestellt) aus dem Werkzeugfensterrahmen abruft und dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A> Methode aufruft.|
-|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Toolbarpriorityinband|Optional. Ein numerischer Wert, der die relative Position einer Symbolleiste in einem Band angibt, wenn das Fenster angedockt ist.|
+|type|Optional. Ein-Enumerationswert, der die Art des-Elements angibt.<br /><br /> Wenn diese Option nicht vorhanden ist, wird der Standardtyp Menü angezeigt.<br /><br /> Kontext<br /> Ein Kontextmenü, das angezeigt wird, wenn ein Benutzer mit der rechten Maustaste auf ein Fenster klickt. Ein Kontextmenü weist die folgenden Eigenschaften auf:<br /><br /> : Verwendet nicht die Felder übergeordnet und **Priorität** , **Wenn das Menü** als Kontextmenü angezeigt werden soll.<br />-Kann als Untermenü und auch als Kontextmenü verwendet werden. In diesem Fall werden die Felder " **Gruppen-ID** " und " **Priorität** " berücksichtigt.<br />-Ist nicht immer verfügbar.<br /><br /> Ein Kontextmenü wird nur angezeigt, wenn die folgenden Bedingungen zutreffen:<br /><br /> -Das Fenster, in dem es gehostet wird, wird angezeigt.<br />-Ein Maus Handler im VSPackage erkennt einen Rechtsklick auf das Fenster und ruft dann eine Methode auf, die den Befehl behandelt.<br />-Das Kontextmenü wird angezeigt, indem die- <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A> Methode (die empfohlene Vorgehensweise) oder die-Methode aufgerufen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> .<br /><br /> Menü<br /> Stellt ein Dropdown Menü bereit. Ein Dropdown Menü weist die folgenden Eigenschaften auf:<br /><br /> -Respektiert das übergeordnete Element in seiner Definition.<br />-Muss über eine übergeordnete Gruppe oder eine commandplacement für eine Gruppe verfügen.<br />: Kann ein Untermenü in einer beliebigen anderen Art von Menü sein.<br />-Wird automatisch angezeigt, wenn das übergeordnete Menü angezeigt wird.<br />-Erfordert nicht die Implementierung eines VSPackage-Codes, damit er angezeigt wird.<br /><br /> Menucontroller<br /> Stellt ein Dropdown Menü mit einer Trenn Schaltfläche bereit, das in der Regel in Symbolleisten verwendet wird. Ein menucontroller-Menü weist die folgenden Eigenschaften auf:<br /><br /> -Muss in einem anderen Menü über Parent oder commandplacement enthalten sein.<br />-Respektiert das übergeordnete Element in seiner Definition.<br />: Kann über eine beliebige Art von Menü als übergeordnetes Element verfügen.<br />-Wird automatisch zur Verfügung gestellt, wenn das übergeordnete Menü angezeigt wird.<br />-Erfordert keine programmgesteuerte Unterstützung, damit das Menü angezeigt wird.<br /><br /> Ein Befehl aus dem Menü unterteilte Schaltfläche wird auf der Menü Schaltfläche angezeigt. Der angezeigte Befehl hat eine der folgenden Eigenschaften:<br /><br /> -Dies ist der letzte Befehl, der verwendet wurde, wenn der Befehl weiterhin angezeigt und aktiviert wird.<br />-Dies ist der erste angezeigte Befehl.<br /><br /> Menucontrollerlatched<br /> Enthält ein Dropdown Menü mit einer Trenn Schaltfläche, für das ein Befehl als Standardauswahl angegeben werden kann, indem der Befehl als "latched" markiert wird.<br /><br /> Bei einem Latch-Befehl handelt es sich um einen Befehl, der im Menü als ausgewählt gekennzeichnet ist, in der Regel durch Anzeigen eines Häkchens. Ein Befehl kann als "Latch" gekennzeichnet werden, wenn das OLECMDF_LATCHED-Flag in einer Implementierung der- `QueryStatus` Methode der-Schnittstelle darauf festgelegt ist <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . Ein menucontrollerlatched-Menü weist die folgenden Eigenschaften auf:<br /><br /> -Muss in einem anderen Menü über eine übergeordnete Gruppe oder commandplacement enthalten sein.<br />-Respektiert das übergeordnete Element in seiner Definition.<br />: Kann über eine beliebige Art von Menü als übergeordnetes Element verfügen.<br />-Wird immer verfügbar gemacht, wenn das übergeordnete Menü angezeigt wird.<br />-Erfordert keine programmgesteuerte Unterstützung, damit das Menü angezeigt wird.<br /><br /> Ein Befehl aus dem Menü unterteilte Schaltfläche wird auf der Menü Schaltfläche angezeigt. Der angezeigte Befehl hat eine der folgenden Eigenschaften:<br /><br /> -Dies ist der erste angezeigte Befehl, der in einem latchmodus angezeigt wird.<br />-Dies ist der erste angezeigte Befehl.<br /><br /> Symbolleiste<br /> Stellt eine Symbolleiste bereit. Eine Symbolleiste weist die folgenden Eigenschaften auf:<br /><br /> -Ignoriert das übergeordnete Element in seiner Definition.<br />: Kann nicht selbst mithilfe von commandplacement als Untermenü einer beliebigen Gruppe erstellt werden.<br />-Kann immer angezeigt werden, indem Sie im Menü **Ansicht** auf **Symbolleisten** klicken.<br />-Kann mithilfe eines [visibilityitem](../extensibility/visibilityitem-element.md)angezeigt werden.<br />-Erfordert keinen Code, um ihn zu erstellen. Ein Beispiel zum Erstellen einer Symbolleiste finden [Sie unter Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md).<br /><br /> Toolwindowtoolbar<br /> Stellt eine Symbolleiste bereit, die an ein bestimmtes Tool Fenster angefügt ist, ebenso wie eine Symbolleiste an die Entwicklungsumgebung angefügt wird.<br /><br /> -Ignoriert das übergeordnete Element in seiner Definition.<br />: Kann nicht selbst mithilfe von commandplacement als Untermenü einer beliebigen Gruppe erstellt werden.<br />-Wird nur angezeigt, wenn das Tool Fenster angezeigt wird, das die Symbolleiste hostet, und das VSPackage die Symbolleiste explizit dem Tool Fenster hinzufügt. Dies erfolgt in der Regel, wenn das Tool Fenster erstellt wird, indem die Symbolleisten Host-Eigenschaft (wie durch die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost> Schnittstelle dargestellt) vom Tool Fensterrahmen erhalten und dann die-Methode aufgerufen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A> .|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Parent|Optional. Das übergeordnete Element des Menüelements.|
-|CommandFlag|Erforderlich. Siehe [Befehlsflag-Element](../extensibility/command-flag-element.md). Die gültigen CommandFlag-Werte für ein Menü lauten wie folgt:<br /><br /> -   **Alwayscreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** - Dieses Flag wirkt sich nicht auf die Anzeige von Symbolleisten aus.<br />-   **DontCache**<br />-   **DynamicVisibility** - Dieses Flag wirkt sich nicht auf die Anzeige von Symbolleisten aus.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextÄnderungen**<br />-   **TextIsAnchorCommand**|
-|Zeichenfolgen|Erforderlich. Siehe [Strings-Element](../extensibility/strings-element.md). Das `ButtonText` untergeordnete Element muss definiert werden.|
+|Parent|Optional. Das übergeordnete Element des Menü Elements.|
+|CommandFlag|Erforderlich. Siehe [Befehlsflag-Element](../extensibility/command-flag-element.md). Die gültigen CommandFlag-Werte für ein Menü lauten wie folgt:<br /><br /> -   **AlwaysCreate**<br />-   **Defaultangedockt**<br />-   **Defaultinvisible** : dieses Flag wirkt sich nicht auf die Anzeige von Symbolleisten aus.<br />-   **DontCache**<br />-   **Dynamicvisibility** : dieses Flag wirkt sich nicht auf die Anzeige von Symbolleisten aus.<br />-   **Iconandtext**<br />-   **Nocustomize**<br />-   **Notintblist**<br />-   **Notoolbarclose**<br />-   **Textchanges Befehlsflag**<br />-   **Textisanchorcommand**|
+|Zeichenfolgen|Erforderlich. Siehe [Strings-Element](../extensibility/strings-element.md). Das untergeordnete- `ButtonText` Element muss definiert werden.|
 |Anmerkung|Optionaler Kommentar.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Menus-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die ein VSPackage implementiert.|
+|[Menüs-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die von einem VSPackage implementiert werden.|
 
 ## <a name="example"></a>Beispiel
 
 ```
 <Menu guid="cmdGuidWidgetCommands" id="menuIDEditWidget"
   priority="0x0002" type="Menu">
-  <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">
-    <CommandFlag>AlwaysCreate</CommandFlag>
-    <Strings>
-      <ButtonText>Edit Widget</ButtonText>
-    </Strings>
-    </Parent>
+  <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit"/>
+  <CommandFlag>AlwaysCreate</CommandFlag>
+  <Strings>
+    <ButtonText>Edit Widget</ButtonText>
+  </Strings>
 </Menu>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabelle (.vsct) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Siehe auch
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
