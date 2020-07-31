@@ -415,6 +415,8 @@
                   href: ca1414.md
                 - name: 'CA1415: P/Invokes korrekt deklarieren.'
                   href: ca1415.md
+                - name: 'CA1417: "OutAttribute" nicht für Zeichenfolgenparameter für P/Invokes verwenden.'
+                  href: ca1417.md
             - name: Verwaltbarkeitswarnungen
               items:
                 - name: Übersicht
