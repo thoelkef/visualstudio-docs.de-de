@@ -1,6 +1,6 @@
 ---
 title: Parallele Installation mehrerer Visual Studio-Versionen
-ms.date: 03/05/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114646"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234990"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 
@@ -45,6 +45,22 @@ Bevor Sie Versionen parallel installieren, sollten Sie sich mit folgenden Beding
 * Wenn Sie eine Visual Studio-Version auf einem Computer deinstallieren, auf dem mehrere Versionen installiert sind, werden die Visual Studio-Dateizuordnungen für alle Versionen entfernt.
 
 * Visual Studio aktualisiert die Erweiterungen nicht automatisch, da nicht alle Erweiterungen kompatibel sind. Installieren Sie erneut die Erweiterungen aus dem [Visual Studio Marketplace](https://marketplace.visualstudio.com/) oder vom Softwareherausgeber.
+
+## <a name="install-minor-visual-studio-versions-side-by-side"></a>Parallele Installation von Visual Studio-Nebenversionen
+
+Beim Durchführen eines Upgrades von einer Visual Studio-Nebenversion zur nächsten, aktualisiert das Visual Studio-Installationsprogramm Ihre aktuelle Installation standardmäßig auf die nächste Version dieses Kanals. Wenn Sie beispielsweise Preview 16.6.4 installieren, versucht das Installationsprogramm, Ihre aktuelle Installation von Preview 16.6.3 zu ersetzen, da beide Versionen sich im Previewkanal 16.6 befinden. Dadurch wird sichergestellt, dass ältere Versionen von Visual Studio keinen Speicherplatz auf Ihrem Computer belegen. In einigen spezifischen Fällen kann es hilfreich sein, Nebenversionen parallel zu installieren. Im genannten Beispiel bedeutet dies, dass sich die Versionen 16.6.3 und 16.6.4 auf dem gleichen Computer befinden.
+
+1. Laden Sie die [Visual Studio-Bootstrapperdatei](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) für die Nebenversion herunter, die Sie parallel mit Ihren vorhandenen Versionen von Visual Studio installieren möchten.
+2. Öffnen Sie die Eingabeaufforderung im Administratormodus. Hierzu öffnen Sie das Windows-Startmenü, geben Sie „cmd“ ein, klicken Sie mit der rechten Maustaste auf die gefundene Eingabeaufforderung, und wählen Sie dann die Option **Als Administrator ausführen** aus. Ändern Sie in der Eingabeaufforderung das Verzeichnis in den Ordner, in dem sich Ihre Visual Studio-Bootstrapperdatei befindet.
+3. Führen Sie den folgenden Befehl aus, legen Sie einen neuen Ordnerpfad für den Installationsspeicherort fest, und ersetzen Sie den Namen der EXE-Datei durch den Namen der entsprechenden Bootstrapperdatei für die Version von Visual Studio, die Sie installieren. Der Name der EXE-Datei sollte mit einer der folgenden Dateien übereinstimmen oder ähneln:
+   * „vs_community.exe“ für Visual Studio Community
+   * „vs_professional.exe“ für Visual Studio Professional
+   * „vs_enterprise.exe“ für Visual Studio Enterprise
+
+```
+vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+```
+4. Befolgen Sie die Installationsanweisungen, um die Komponenten auszuwählen, die Sie für Ihre Installation benötigen. Weitere Informationen finden Sie unter [Installieren von Visual Studio](install-visual-studio.md#step-4---choose-workloads).
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework-Versionen und parallele Installationen
 

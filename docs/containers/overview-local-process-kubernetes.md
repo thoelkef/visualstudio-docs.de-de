@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: Beschreibt die Prozesse zum Verwenden des lokalen Prozesses mit Kubernetes zum Herstellen einer Verbindung zwischen Ihrem Entwicklungscomputer und Ihrem Kubernetes-Cluster
 keywords: Lokaler Prozess mit Kubernetes, Docker, Kubernetes, Azure, Container
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454359"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133974"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Funktionsweise des lokalen Prozesses mit Kubernetes
 
@@ -40,6 +40,44 @@ Wenn der lokale Prozess mit Kubernetes eine Verbindung mit Ihrem Cluster herstel
 
 Nachdem Sie eine Verbindung mit Ihrem Cluster hergestellt haben, können Sie Code ohne Containerisierung nativ auf Ihrem Computer ausführen und debuggen, und der Code kann direkt mit dem Rest Ihres Clusters interagieren. Sämtlicher Netzwerkverkehr, den der Remote-Agent empfängt, wird an den während der Verbindung angegebenen lokalen Port umgeleitet, sodass der nativ ausgeführte Code diesen Datenverkehr akzeptieren und verarbeiten kann. Die Umgebungsvariablen, Volumes und Geheimnisse aus dem Cluster werden für Code zur Verfügung gestellt, der auf dem Entwicklungscomputer ausgeführt wird. Aufgrund der Hostdateieinträge und der Portweiterleitung, die auf dem Entwicklercomputer durch den lokalen Prozess mit Kubernetes hinzugefügt wurden, kann Ihr Code außerdem Netzwerkdatenverkehr an Dienste senden, die in Ihrem Cluster ausgeführt werden. Dabei werden die Dienstnamen aus dem Cluster verwendet, und dieser Datenverkehr wird an die Dienste weitergeleitet, die in Ihrem Cluster ausgeführt werden. Der Datenverkehr wird zwischen dem Entwicklungscomputer und Ihrem Cluster weitergeleitet, solange die Verbindung besteht.
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Verwenden von Routingfunktionen für die isolierte Entwicklung
+
+Der lokale Prozess mit Kubernetes leitet den gesamten Datenverkehr standardmäßig für einen Dienst an Ihren Entwicklungscomputer um. Außerdem können Sie Routingfunktionen verwenden, um Anforderungen an einen Dienst von einer Unterdomäne an Ihren Entwicklungscomputer umzuleiten. Mithilfe dieser Routingfunktionen können Sie den lokalen Prozess mit Kubernetes verwenden, um Ihre Entwicklung isoliert durchzuführen und Unterbrechungen des anderen Datenverkehrs in Ihrem Cluster zu vermeiden.
+
+In der folgenden Animation werden zwei Entwickler veranschaulicht, die isoliert auf demselben Cluster arbeiten:
+
+![Animierte GIF zur Veranschaulichung der Isolierung](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+Wenn Sie die isolierte Entwicklung ermöglichen, führt der lokale Prozess mit Kubernetes zusätzlich zum Herstellen einer Verbindung mit Ihrem Kubernetes-Cluster Folgendes durch:
+
+* Er überprüft, ob Azure Dev Spaces für den Kubernetes-Cluster aktiviert ist.
+* Er repliziert Ihren ausgewählten Dienst im Cluster im gleichen Namespace und fügt die Bezeichnung *routing.visualstudio.io/route-from=SERVICE_NAME* und die Anmerkung *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* hinzu.
+* Er konfiguriert und startet den Routing-Manager im gleichen Namespace auf dem Kubernetes-Cluster. Der Routing-Manager verwendet eine Bezeichnungsauswahl, um nach der Bezeichnung *routing.visualstudio.io/route-from=SERVICE_NAME* und der Anmerkung *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* zu suchen, wenn das Routing für Ihren Namespace konfiguriert wird.
+
+Wenn der lokale Prozess mit Kubernetes ermittelt, dass Azure Dev Spaces auf Ihrem Kubernetes-Cluster aktiviert ist, werden Sie dazu aufgefordert, Azure Dev Spaces zu deaktivieren, bevor Sie den lokalen Prozess mit Kubernetes verwenden können.
+
+Der Routing-Manager ergreift folgende Aktionen, wenn er gestartet wird:
+* Er dupliziert alle Eingänge im Namespace mithilfe von *GENERATED_NAME* für die Unterdomäne. 
+* Er erstellt einen Envoy-Pod für jeden Dienst, der einem duplizierten Eingang mit der Unterdomäne *GENERATED_NAME* zugeordnet ist.
+* Er erstellt einen zusätzlichen Envoy-Pod für den Dienst, an dem Sie isoliert arbeiten. Dies ermöglicht das Weiterleiten von Anforderungen mit der Unterdomäne an Ihren Entwicklungscomputer.
+* Er konfiguriert Routingregeln für jeden Envoy-Pod, um das Routing für Dienste mit der Unterdomäne zu verarbeiten.
+
+Wenn eine Anforderung mit der Unterdomäne *GENERATED_NAME* vom Cluster empfangen wird, wird der Header *kubernetes-route-as=GENERATED_NAME* zur Anforderung hinzugefügt. Die Envoy-Pods verarbeiten das Routing der Anforderung an den entsprechenden Dienst im Cluster. Wenn die Anforderung an den Dienst weitergeleitet wird, der isoliert bearbeitet wird, wird diese Anforderung vom Remote-Agent an Ihren Entwicklungscomputer umgeleitet.
+
+Wenn eine Anforderung ohne die Unterdomäne *GENERATED_NAME* vom Cluster empfangen wird, wird kein Header zur Anforderung hinzugefügt. Die Envoy-Pods verarbeiten das Routing der Anforderung an den entsprechenden Dienst im Cluster. Wenn die Anforderung an den Dienst weitergeleitet wird, der ersetzt wird, wird diese Anforderung an den ursprünglichen Dienst anstelle des Remote-Agents weitergeleitet.
+
+> [!IMPORTANT]
+> Jeder Dienst auf Ihrem Cluster muss den Header *kubernetes-route-as=GENERATED_NAME* weiterleiten, wenn zusätzliche Anforderungen gestellt werden. Wenn *serviceA* beispielsweise eine Anforderung empfängt, wird eine Anforderung an *serviceB* gestellt, bevor eine Antwort zurückgegeben wird. In diesem Beispiel muss *serviceA* den Header *kubernetes-route-as=GENERATED_NAME* in der Anforderung an *serviceB* weiterleiten. Einige Sprachen, z. B. [ASP.NET][asp-net-header], verfügen möglicherweise über Methoden zum Verarbeiten der Headerweitergabe.
+
+Wenn Sie die Verbindung mit Ihrem Cluster trennen, entfernt der lokale Prozess mit Kubernetes standardmäßig alle Envoy-Pods und den duplizierten Dienst. 
+
+> [HINWEIS] Die Bereitstellung und der Dienst werden weiterhin in Ihrem Namespace ausgeführt. Führen Sie die folgenden Befehle für Ihren Namespace aus, um die Bereitstellung und den Dienst zu entfernen.
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>Diagnose und Protokollierung
 
 Wenn Sie den lokalen Prozess mit Kubernetes zum Herstellen einer Verbindung mit Ihrem Cluster verwenden, werden Diagnoseprotokolle von Ihrem Cluster im [temporären Verzeichnis][azds-tmp-dir] Ihres Entwicklungscomputers protokolliert.
@@ -52,11 +90,17 @@ Wenn Sie den lokalen Prozess mit Kubernetes zum Herstellen einer Verbindung mit 
 * Ein Dienst muss von einem einzelnen Pod unterstützt werden, um eine Verbindung mit diesem Dienst herzustellen. Sie können keine Verbindung mit einem Dienst mit mehreren Pods herstellen, z. B. einem Dienst mit Replikaten.
 * In einem Pod darf nur ein einzelner Container ausgeführt werden, damit „Lokaler Prozess mit Kubernetes“ erfolgreich eine Verbindung herstellen kann. „Lokaler Prozess mit Kubernetes“ kann keine Verbindung mit Diensten mit Pods herstellen, die über zusätzliche Container verfügen, wie z. B. Sidecar-Container, die von Dienstgittermodellen eingefügt werden.
 * „Lokaler Prozess mit Kubernetes“ benötigt erhöhte Rechte, damit er auf Ihrem Entwicklungscomputer ausgeführt werden kann, um Ihre Hostdatei zu bearbeiten.
+* Der lokale Prozess mit Kubernetes kann nicht auf Clustern verwendet werden, auf denen Azure Dev Spaces aktiviert ist.
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Lokaler Prozess mit Kubernetes und Cluster, auf denen Azure Dev Spaces aktiviert ist
+
+Sie können den lokalen Prozess mit Kubernetes nicht auf Clustern verwenden, auf denen Azure Dev Spaces aktiviert ist. Wenn Sie den lokalen Prozess mit Kubernetes auf einem Cluster verwenden möchten, auf dem Azure Dev Spaces aktiviert ist, müssen Sie Azure Dev Spaces deaktivieren, bevor Sie eine Verbindung mit Ihrem Cluster herstellen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Informationen zu den ersten Schritten bei der Verwendung des lokalen Prozesses mit Kubernetes zum Herstellen einer Verbindung zwischen Ihrem lokalen Entwicklungscomputer und Ihrem Cluster finden Sie unter [Verwenden des lokalen Prozesses mit Kubernetes (Vorschau)](local-process-kubernetes.md).
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest

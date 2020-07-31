@@ -2,7 +2,7 @@
 title: Anmelden bei Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285295"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235198"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -38,7 +38,7 @@ Wenn Sie sich anmelden, haben Sie im vollen Umfang Zugang zu den Funktionen von 
 Im Folgenden werden alle Anmeldevorteile aufgeführt:
 - **Verlängerung des Visual Studio-Testzeitraums:** Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt. Weitere Informationen finden Sie unter [Erweitern einer Testversion oder Aktualisieren einer Lizenz](../ide/how-to-unlock-visual-studio.md).
 
-- **Entsperrung der Visual Studio-Community Edition:** Wenn das Community Edition-Installationsprogramm eine Lizenz anfordert, können Sie sich bei der IDE anmelden, um Ihre Sperrung aufzuheben.
+- **Visual Studio Community-Edition weiter verwenden:** Wenn die Installation Ihrer Community-Edition eine Lizenz von Ihnen anfordert, melden Sie sich bei der IDE an, um Visual Studio Community weiterhin **kostenlos** zu verwenden. 
 
 - **Machen Sie Visual Studio verfügbar, wenn Sie ein Konto verwenden, das mit einem Visual Studio-Abonnement oder mit einer Azure DevOps-Organisation verknüpft ist**. Ausführliche Informationen finden Sie unter [Erweitern einer Testversion oder Aktualisieren einer Lizenz](../ide/how-to-unlock-visual-studio.md).
 

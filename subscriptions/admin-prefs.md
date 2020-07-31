@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Einstellungen u. a. für Sprachen, Kontakte und die Abonnementebene im Verwaltungsportal festlegen.
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183495"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234613"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Festlegen der Vertragseinstellungen im Verwaltungsportal
 Superadministratoren können bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen füllen automatisch die Abonnementdaten für Ihre Administratoren aus, wenn diese Abonnenten hinzufügen, und können nur von Superadministratoren global geändert werden.  
@@ -24,13 +24,13 @@ So legen Sie Ihre Einstellungen fest:
 1. Melden Sie sich beim Verwaltungsportal mit einer ID an, der Superadministratorberechtigungen zugewiesen sind.
 2. Klicken Sie auf die Registerkarte **Administratoren verwalten**.
    > [!div class="mx-imgBorder"]
-   > ![Schaltfläche für Administratoreinstellungen](_img/admin-prefs/admin-prefs-button.png)
+   > ![Schaltfläche für Administratoreinstellungen](_img/admin-prefs/admin-prefs-button.png "Klicken Sie auf „Administratoren verwalten“ und dann auf „Agreement Preferences“ (Vereinbarungseinstellungen), um die Einstellungen anzuzeigen.")
 
 3. Klicken Sie auf **Agreement Preferences** (Vertragseinstellungen).
 Auf der rechten Seite wird ein Bereich angezeigt, in dem die verfügbaren Einstellungen aufgeführt sind. 
 
    > [!div class="mx-imgBorder"]
-   > ![Flyoutdialogfeld für Administratoreinstellungen](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![Flyoutdialogfeld für Administratoreinstellungen](_img/admin-prefs/admin-prefs-flyout.png "Legen Sie die gewünschten Einstellungen fest, und klicken Sie dann auf „Speichern“.")
 
 ## <a name="set-your-preferences"></a>Festlegen der Einstellungen
 Im Folgenden werden die jeweiligen Einstellungen und ihre Auswirkungen beschrieben. 
@@ -86,6 +86,3 @@ In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual S
 - [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
 - [Bearbeiten von Abonnements](edit-license.md)
 - [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)
-
-
-

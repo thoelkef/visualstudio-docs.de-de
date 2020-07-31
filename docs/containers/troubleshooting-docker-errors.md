@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 1f4ca9d53900d0dc0c2392296303a94121103158
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283111"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235107"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Problembehandlung bei der Entwicklung von Visual Studio mit Docker
 
@@ -96,3 +96,7 @@ Klicken Sie auf **Anwenden**, damit Docker neu gestartet wird. Durch diese Schri
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub-Repository
 
 Für alle anderen Probleme, die auftreten, wechseln Sie zu [Microsoft/DockerTools](https://github.com/microsoft/dockertools/issues)-Probleme.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

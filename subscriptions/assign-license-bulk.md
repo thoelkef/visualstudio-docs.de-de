@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren entweder Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903279"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235133"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
@@ -30,7 +30,7 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
 
 1. Die Funktion zum Massenhinzufügen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenteninformationen. Klicken Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) auf **Herunterladen**, um die Vorlage herunterzuladen.
    > [!div class="mx-imgBorder"]
-   > ![Excel-Vorlage zum Hochladen mehrerer Abonnenten herunterladen](media/download-template-upload-subscribers.png)
+   > ![Excel-Vorlage zum Hochladen mehrerer Abonnenten herunterladen](media/download-template-upload-subscribers.png "Laden Sie die leere Excel-Vorlage herunter, um mit dem Massenzuweisungsprozess zu beginnen.")
    >
    > [!NOTE]
    > Laden sie stets die neueste Vorlagenversion herunter. Wenn Sie eine ältere Version herunterladen, schlägt Ihr Massenupload möglicherweise fehl.
@@ -50,17 +50,17 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
 
 1. Kehren Sie zum Portal für die Verwaltung von Visual Studio-Abonnements zurück. Klicken Sie im Dialogfeld **Mehrere Abonnenten hochladen** auf **Durchsuchen**.
    > [!div class="mx-imgBorder"]
-   > ![Zum Hochladen mehrerer Abonnenten zur gespeicherten Vorlage navigieren](media/bulk-add-browse-saved-template.png)
+   > ![Zum Hochladen mehrerer Abonnenten zur gespeicherten Vorlage navigieren](media/bulk-add-browse-saved-template.png "Sie können zum Dateispeicherort navigieren oder diesen per Drag and Drop in diesem Dialogfeld ablegen.")
 
 1. Navigieren Sie zur Excel-Datei, die Sie gespeichert haben, und klicken Sie anschließend auf **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Excel-Vorlage zum Upload mehrerer Abonnenten hochladen](media/bulk-upload-subscribers.png)
+   > ![Excel-Vorlage zum Upload mehrerer Abonnenten hochladen](media/bulk-upload-subscribers.png "Hier wird die Vorlage mit Ihren Daten angezeigt.  Klicken Sie auf „OK“, um den Upload zu starten.")
 
     Es wird ein Statusdialogfeld zum Uploadprozess angezeigt.
 
     Wenn die Vorlage Fehler enthält, schlägt auch der Upload fehl, und die Fehler werden angezeigt, damit Sie die Vorlage korrigieren und einen neuen Versuch für den Massenupload starten können.
    > [!div class="mx-imgBorder"]
-   > ![Fehlermeldung nach fehlgeschlagenem Upload mehrerer Abonnenten](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![Fehlermeldung nach fehlgeschlagenem Upload mehrerer Abonnenten](_img/assign-license-bulk/bulk-add-upload-failure.png "Diese Meldung wird angezeigt, wenn die hochgeladene Datei Fehler enthält.  Beheben Sie die Fehler, und führen Sie den Vorgang zum Massenhinzufügen noch mal durch.")
 
    Befolgen Sie diese Schritte, wenn ein Fehler auftritt:
    1. Öffnen Sie die erstellte Excel-Datei, beheben Sie die Probleme, und speichern Sie die Datei.
@@ -72,7 +72,7 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
 
     Wenn der Upload erfolgreich ausgeführt wurde, wird Ihnen eine Liste mit den Abonnenten und eine Bestätigungsmeldung angezeigt.
    > [!div class="mx-imgBorder"]
-   > ![Bestätigungsmeldung bei erfolgreichem Upload mehrerer Abonnenten](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![Bestätigungsmeldung bei erfolgreichem Upload mehrerer Abonnenten](_img/assign-license-bulk/bulk-add-upload-success.png "Sobald Ihr Upload erfolgreich abgeschlossen wird, erhalten Sie eine Bestätigungsmeldung.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Verwenden von Azure Active Directory-Gruppen zum Zuweisen von Abonnements 
 Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre Abonnementzuweisungen zu behalten. Sie können Azure Active Directory-Sicherheitsgruppen im Portal für die Abonnementverwaltung hinzufügen, um sicherzustellen, dass allen Personen in der Gruppe ein Abonnement zugewiesen wird. Und wenn einzelne Personen Ihre Organisation verlassen und aus dem Azure Active Directory entfernt werden, kann ihnen auf diese Weise auch einfacher der Zugriff auf die Abonnements entzogen werden. 
@@ -100,14 +100,14 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 3. Klicken Sie auf die Registerkarte **Hinzufügen**, und wählen Sie im Dropdownmenü die Option **Azure Active Directory-Gruppe** aus.  
 
    > [!div class="mx-imgBorder"]
-   > ![Auswahl zum Massenhinzufügen über Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Auswahl zum Massenhinzufügen über Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Wählen Sie „Massenhinzufügen“ mit dem Azure AD-Feature aus, um Abonnenten aus Ihrer Azure Active Directory-Gruppe abzurufen.")
 
 4. Geben Sie im Formularfeld den Namen der Azure AD-Gruppe ein, die Sie hinzufügen möchten. Hierdurch wird nach den verfügbaren Azure AD-Gruppen innerhalb Ihrer Organisation gesucht. 
 
 5. Wenn Sie die Gruppe auswählen, wird das Feld automatisch mit dem Gruppennamen aufgefüllt. Sie können die Benutzer in dieser Gruppe anzeigen, bevor Sie sie hinzufügen. Im nächsten Schritt können Sie die Abonnementebene, Downloadrechte und Kommunikationseinstellungen für die Gruppe auswählen. Sofern gewünscht, können Sie im Referenzfeld Detailinformationen hinzufügen. 
 
    > [!div class="mx-imgBorder"]
-   > ![Auswahl zum Massenhinzufügen über Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Auswählen Ihrer Azure AD-Gruppe](_img/assign-license-bulk/bulk-add-aad-details.png "Wählen Sie den Namen Ihrer Azure AD-Gruppe aus, um Abonnenten aus dieser Gruppe hinzuzufügen.")
 
 6. Klicken Sie auf **Hinzufügen** und anschließend auf **Bestätigen**. 
 
