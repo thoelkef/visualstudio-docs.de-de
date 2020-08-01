@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371871"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453641"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Gewusst wie: Anpassen des Codeanalysewörterbuchs
 
@@ -266,12 +266,12 @@ Begriffe im Knoten "Dictionary/acronyme/CasingExceptions" werden auf die folgend
 
 1. Verwenden Sie in **Projektmappen-Explorer**eines der folgenden Verfahren:
 
-2. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und klicken Sie dann auf **Vorhandenes Element hinzufügen**. Geben Sie die Datei im Dialogfeld **Vorhandenes Element hinzufügen** an.
+    - Klicken Sie mit der rechten Maustaste auf den Projektnamen, und klicken Sie dann auf **Vorhandenes Element hinzufügen**. Geben Sie die Datei im Dialogfeld **Vorhandenes Element hinzufügen** an.
+  
+    - Wenn Sie ein Wörterbuch hinzufügen möchten, das von zwei oder mehr Projekten gemeinsam verwendet wird, suchen Sie im Dialogfeld **Vorhandenes Element hinzufügen** die Datei, die Sie freigeben möchten, klicken Sie auf die Schaltfläche **Hinzufügen** und dann auf **als Link hinzu**fügen.
 
-3. Wenn Sie ein Wörterbuch hinzufügen möchten, das von zwei oder mehr Projekten gemeinsam verwendet wird, suchen Sie im Dialogfeld **Vorhandenes Element hinzufügen** die Datei, die Sie freigeben möchten, klicken Sie auf die Schaltfläche **Hinzufügen** und dann auf **als Link hinzu**fügen.
+2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Dateinamen **CustomDictionary.xml** , und klicken Sie auf **Eigenschaften**.
 
-4. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Dateinamen **CustomDictionary.xml** , und klicken Sie auf **Eigenschaften**.
+3. Wählen Sie in **der Liste** Buildvorgang die Option **codeanalysisdictionary**aus.
 
-5. Wählen Sie in **der Liste** Buildvorgang die Option **codeanalysisdictionary**aus.
-
-6. Wählen Sie **in der Liste in Ausgabeverzeichnis kopieren** die Option **nicht kopieren**aus.
+4. Wählen Sie **in der Liste in Ausgabeverzeichnis kopieren** die Option **nicht kopieren**aus.
