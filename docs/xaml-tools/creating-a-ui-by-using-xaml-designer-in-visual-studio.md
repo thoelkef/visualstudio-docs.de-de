@@ -8,16 +8,17 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
+ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "82921352"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507962"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer
 
@@ -122,8 +123,8 @@ Das Fenster „Dokumentgliederung“ in Visual Studio ist ähnelt dem Fenster [O
 
 - [Erstellen von Animationen](animate-objects-in-xaml-designer.md) (nur Blend für Visual Studio).
 
-Um das Dokument Gliederungs Fenster in Visual Studio anzuzeigen, wählen Sie in der Menüleiste die Option**Weitere Windows** > -**Dokument**Gliederung **anzeigen** > aus.
-Um das Fenster Objekte und Zeitachsen in Blend für Visual Studio anzuzeigen, wählen Sie in der Menüleiste**Dokument**Gliederung **anzeigen** > aus.
+Um das Dokument Gliederungs Fenster in Visual Studio anzuzeigen, wählen Sie in **View**der Menüleiste die Option  >  **Weitere Windows**-  >  **Dokument**Gliederung anzeigen aus.
+Um das Fenster Objekte und Zeitachsen in Blend für Visual Studio anzuzeigen, wählen Sie in der Menüleiste Dokument Gliederung **anzeigen**aus  >  **Document Outline**.
 
 ![Screenshot: Fenster „Dokumentgliederung“ in Visual Studio](media/document-outline-window.png)
 
@@ -131,11 +132,11 @@ Die Hauptansicht im Fenster „Dokumentgliederung/Objekte und Zeitachse“ zeigt
 
 **Ein-/ausblenden**
 
-Zeigt Zeichenflächenelemente an oder blendet sie aus. Wird als Auges dargestellt, wenn es eingeblendet wird. Sie können auch **STRG**+**h** drücken, um ein Element auszublenden, und **UMSCHALT**+**STRG**+**h** , um es anzuzeigen.
+Zeigt Zeichenflächenelemente an oder blendet sie aus. Wird als Auges dargestellt, wenn es eingeblendet wird. Sie können auch **STRG** + **h** drücken, um ein Element auszublenden, und **UMSCHALT** + **STRG** + **h** , um es anzuzeigen.
 
 **Sperren/Entsperren**
 
-Sperrt oder entsperrt Zeichenflächenelemente. Gesperrte Elemente können nicht geändert werden. Es wird ein Vorhängeschloss angezeigt, wenn ein Element gesperrt ist. Sie können auch **STRG**+**l** drücken, um ein Element zu sperren, und **UMSCHALT**+Taste**STRG**+**l** , um es zu entsperren.
+Sperrt oder entsperrt Zeichenflächenelemente. Gesperrte Elemente können nicht geändert werden. Es wird ein Vorhängeschloss angezeigt, wenn ein Element gesperrt ist. Sie können auch **STRG** + **l** drücken, um ein Element zu sperren, und **UMSCHALT**Taste + **STRG** + **l** , um es zu entsperren.
 
 **Bereich zurücksetzen auf**
 
@@ -143,7 +144,7 @@ Sperrt oder entsperrt Zeichenflächenelemente. Gesperrte Elemente können nicht 
 
 ## <a name="properties-window"></a>Eigenschaftenfenster
 
-Im Fenster **Eigenschaften** können Sie Eigenschaftswerte für Steuerelemente festlegen. Hier sehen Sie, wie es aussieht:
+Im Fenster **Eigenschaften** können Sie Eigenschaftswerte für Steuerelemente festlegen. Das Fenster sieht so aus:
 
 ![Eigenschaftenfenster](media/xaml-designer-properties-window.png)
 
@@ -161,7 +162,7 @@ Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der
 
 Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Einführung in Steuerelemente und Muster](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Arbeiten mit Elementen im XAML-Designer](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [So erstellen Sie eine Ressource und wenden Sie an](../xaml-tools/how-to-create-and-apply-a-resource.md)
