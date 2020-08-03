@@ -97,6 +97,6 @@ Standardmäßig wird allen verwalteten Projekten einer Projekt Mappe der Code An
 
 5. Wählen Sie das Feld **Regelsatz** eines Projekts aus, und wählen Sie dann den Namen des Regelsatzes aus, den Sie anwenden möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)

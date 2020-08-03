@@ -48,6 +48,6 @@ ms.locfileid: "87234808"
 
  Um die Auswirkungen von IEESC und Internet Explorer 7 und höher zu verwalten, identifizieren Sie Websites und UNC-Pfade (Universal Naming Convention), denen Sie Vertrauen, und fügen Sie Sie einer vertrauenswürdigen Sicherheitszone (Lokales Intranet oder Vertrauenswürdige Sites) hinzu. Weitere Informationen zum Verwalten von Zonen finden Sie unter [Konfigurieren von ClickOnce-vertrauenswürdigen Verlegern](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
-- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
