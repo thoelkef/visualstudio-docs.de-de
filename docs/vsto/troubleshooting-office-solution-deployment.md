@@ -125,8 +125,8 @@ ms.locfileid: "87234977"
 
  Legen Sie die Erweiterung auf **.vsto** und den MIME-Typ auf **application/x-ms-vsto**fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
-- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
