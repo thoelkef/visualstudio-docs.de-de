@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 08c790af5504c902bf5fe37d2cddba9b9f63aa40
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770871"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425367"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 
@@ -137,3 +137,5 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 ## <a name="see-also"></a>Siehe auch
 
 - [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
+- [Gemeinsame MSBuild-Elementmetadaten](common-msbuild-item-metadata.md)
+- [Reservierte und bekannte Eigenschaften für MSBuild](msbuild-reserved-and-well-known-properties.md)

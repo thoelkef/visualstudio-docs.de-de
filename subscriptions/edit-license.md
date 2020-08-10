@@ -2,17 +2,17 @@
 title: Bearbeiten von Abonnements im Verwaltungsportal | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren Abonnementzuweisungen bearbeiten können.
-ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902934"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453737"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 Als Abonnementadministrator können Sie Änderungen an den Abonnements vornehmen, die Personen innerhalb Ihrer Organisation zugewiesen sind.  Dieser Artikel beschreibt die Arten von Änderungen, die Sie vornehmen können, und enthält die notwendigen Schritte.
@@ -25,7 +25,7 @@ Sie können die Informationen eines Abonnenten bearbeiten, um Fehler zu beheben 
 
 Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten**, um die Details des Abonnenten zu ändern. 
 > [!div class="mx-imgBorder"]
-> ![Auswählen des zu bearbeitenden Abonnenten](_img/edit-license/select-subscriber.png)
+> ![Auswählen des zu bearbeitenden Abonnenten](_img/edit-license/select-subscriber.png "Klicken Sie auf die Auslassungspunkte, und wählen Sie „Bearbeiten“ aus.")
 
 Sie können Vornamen, Nachnamen, Abonnementebene, E-Mail-Adresse, Land/Region, Sprache, Downloads und Referenz für den Abonnenten aktualisieren. Bearbeiten Sie die Informationen zum Abonnenten, und klicken Sie dann auf **Speichern**.
 
@@ -45,13 +45,13 @@ Sie können mehrere Abonnenten gleichzeitig bearbeiten, wenn Sie die Massenbearb
 
 2. Die Massenbearbeitung verwendet eine Excel-Vorlage, um Änderungen an Abonnenteninformationen vorzunehmen. Klicken Sie im Feld „Massenbearbeitung“ auf **Export this Excel** (Diese Excel-Datei exportieren), um die aktuelle Liste der Abonnenten einschließlich aller Informationen herunterzuladen.
    > [!div class="mx-imgBorder"]
-   > ![Bearbeiten einer Lizenz: Exportieren der Massenbearbeitungsliste](_img/edit-license/edit-license-bulk-edit-export.png)
+   > ![Bearbeiten einer Lizenz: Exportieren der Massenbearbeitungsliste](_img/edit-license/edit-license-bulk-edit-export.png "Klicken Sie auf „Diese Excel-Datei exportieren“, um eine Liste Ihrer aktuellen Abonnements zu erstellen.")
 
 3. Speichern Sie die Datei lokal, damit Sie diese einfach finden und vor dem Upload erforderliche Änderungen vornehmen können. Für einen erfolgreichen Upload darf die **Abonnementebene oder Abonnement-GUID nicht in der Massenbearbeitungsdatei bearbeitet werden**, da dies zu einem Fehler beim Upload führt.
 
 4. Wechseln Sie zum Administratorportal für Visual Studio-Abonnements, und klicken Sie im Dialogfeld „Massenbearbeitung“ auf **Durchsuchen**. Wählen Sie die Excel-Datei aus, die Sie gespeichert haben, und klicken Sie auf **OK**. Der Fortschritt des Uploads wird auf dem Bildschirm angezeigt.
    > [!div class="mx-imgBorder"]
-   > ![Bearbeiten einer Lizenz: Massenbearbeitungen – Dateiupload](_img/edit-license/edit-license-bulk-file-upload1.png)
+   > ![Bearbeiten einer Lizenz: Massenbearbeitungen – Dateiupload](_img/edit-license/edit-license-bulk-file-upload1.png "Navigieren Sie zum Speicherort Ihrer fertig gestellten Excel-Datei, wählen Sie die Datei aus, und klicken Sie auf OK.")
 
 5. Sobald Sie die Datei hochgeladen haben, wird Ihnen eine Benachrichtigung angezeigt, dass der Upload erfolgreich war. Jetzt sind Ihre Änderungen in den Abonnenteninformationen zu enthalten.
 
@@ -65,5 +65,3 @@ Sie können mehrere Abonnenten gleichzeitig bearbeiten, wenn Sie die Massenbearb
 - Sie müssen eine bestimmte Abonnement-ID zuweisen? Lesen Sie „Zuweisen einer Abonnement-ID“. 
 - Um ein bestimmtes Abonnement zu finden, informieren Sie sich unter [Suchen nach einem Abonnement](search-license.md).
 - Müssen Sie eine Liste all Ihrer Abonnements erstellen?  Informieren Sie sich unter [Exportieren von Abonnements](exporting-subscriptions.md).
-
-

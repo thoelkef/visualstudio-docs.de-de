@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182910"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425393"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 
@@ -170,3 +170,4 @@ Stellt Assemblys dar, deren Namespaces vom Visual Basic-Compiler importiert werd
 
 - [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)
 - [MSBuild-Eigenschaften für .NET Core SDK-Projekte](/dotnet/core/project-sdk/msbuild-props)
+- [Gemeinsame MSBuild-Elementmetadaten](common-msbuild-item-metadata.md)

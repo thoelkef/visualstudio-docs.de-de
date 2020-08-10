@@ -2,17 +2,17 @@
 title: Suchen und Beanspruchen von Product Keys in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 03/09/2020
+ms.date: 07/30/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Suchen, Beanspruchen und Exportieren Ihrer Product Keys in Visual Studio-Abonnements.
-ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 8ee21c544a44bfd5eca831cdc9fd1c8e00adb35b
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232487"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453752"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Suchen und Beanspruchen von Product Keys in Visual Studio-Abonnements
 In diesem Artikel wird das Suchen, Beanspruchen und Exportieren von Product Keys über https://my.visualstudio.com/productkeys erläutert.  Weitere Informationen zum Aktivieren eines Produkts mit einem Product Key, den Einzelhandels- und Volumenlizenzversionen von Product Keys und den Anspruchseinschränkungen für Product Keys pro Tag finden Sie in der [Übersicht über Product Keys](product-keys.md).
@@ -20,7 +20,7 @@ In diesem Artikel wird das Suchen, Beanspruchen und Exportieren von Product Keys
 ## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
 Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 > [!div class="mx-imgBorder"]
-> ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
+> ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png "Klicken Sie auf der Informationsseite für einen Download auf „Schlüssel abrufen“, um einen Schlüssel für diese Produkt zu erhalten.")
 
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
@@ -53,7 +53,7 @@ So nehmen Sie einen Product Key in Anspruch:
 2. Klicken Sie auf die Registerkarte [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3. Die Product Keys werden in alphabetischer Reihenfolge nach dem Namen des Produkts aufgelistet.  Sie können den Fensterinhalt bis zum gewünschten Produkt nach unten verschieben oder über die Suchleiste oben auf der Seite nach dem Namen suchen.
 > [!div class="mx-imgBorder"]
-> ![Nach Product Key suchen](_img/product-keys/search-keys.png)
+> ![Nach Product Key suchen](_img/product-keys/search-keys.png "Scrollen Sie zum gewünschten Produkt, oder verwenden Sie das Suchfeld, um schnell ein beliebiges Produkt zu finden.")
    
 In diesem Beispiel wird die Suchleiste verwendet, um einen Product Key für Visual Studio Enterprise 2019 zu suchen.
 Wie Sie sehen können, werden mehrere Versionen aufgeführt.  Es wurde bereits ein Schlüssel für die Visual Studio Enterprise 2019-Versionen 16.0 und 16.1 beansprucht.  Für beide Versionen sind noch weitere Schlüssel unterschiedlicher Typen verfügbar. Beachten Sie, dass Sie in der Spalte **Hinweise** eine kurze Notiz zu den beanspruchten Schlüsseln hinterlassen können.  Diese können Sie zusammen mit dem Datum in der Spalte **Beansprucht** verwenden, um den Überblick über in Anspruch genommene Schlüssel zu behalten.  Sie könnten beispielsweise Notizen machen, wenn Sie die Installation eines Produkts mit dem Schlüssel aktivieren.

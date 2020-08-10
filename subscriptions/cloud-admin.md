@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Einrichten von Administratoren für Monatsabonnements
-ms.openlocfilehash: ef1536eb27beb501fc278d1a95521905c9d9485a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903116"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434312"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Einrichten von Administratoren für Visual Studio-Monatsabonnements
 
@@ -36,19 +36,19 @@ So fügen Sie Administratoren hinzu
 2. Melden Sie sich mit dem Konto an, das Sie verwendet haben, um die Visual Studio-Monatsabonnements zu erwerben.
 3. Wählen Sie unter **Azure-Dienste** die Option **Kostenverwaltung + Abrechnung** aus.
    > [!div class="mx-imgBorder"]
-   > ![Auswahl der Option „Kostenverwaltung + Abrechnung“ unter „Azure-Dienste“](_img/cloud-admin/azure-cost-billing.png)
+   > ![Auswahl der Option „Kostenverwaltung + Abrechnung“ unter „Azure-Dienste“](_img/cloud-admin/azure-cost-billing.png "Auswählen von „Cost Management“ aus der Gruppe der Azure-Dienste")
 4. Wählen Sie in der Liste **Meine Abonnements** das Azure-Abonnement aus, das Sie für den Kauf verwendet haben.
    > [!div class="mx-imgBorder"]
-   > ![Auswählen des Abonnements](_img/cloud-admin/subscription-list.png)
+   > ![Auswählen des Abonnements](_img/cloud-admin/subscription-list.png "Wählen Sie das Azure-Abonnement aus, das Sie für den Kauf verwenden möchten.")
 5. Klicken Sie im oberen Bereich der Liste im linken Navigationsbereich auf **Zugriffssteuerung (IAM)** .
 6. Klicken Sie oben auf der Seite auf die Registerkarte **Hinzufügen**.
 7. Klicken Sie auf **Rollenzuweisung hinzufügen**.
    > [!div class="mx-imgBorder"]
-   > ![Auswahl der Option „Zugriffssteuerung > Hinzufügen > Rollenzuweisung hinzufügen“](_img/cloud-admin/access-control-add.png)
+   > ![Auswahl der Option „Zugriffssteuerung > Hinzufügen > Rollenzuweisung hinzufügen“](_img/cloud-admin/access-control-add.png "Wählen Sie aus der Liste auf der linken Seite die Option „Zugriffssteuerung“ aus, und klicken Sie auf „Hinzufügen“.")
 8. Klicken Sie oben rechts auf die Dropdownliste **Rolle**, scrollen Sie nach unten, und wählen Sie **Benutzerzugriffsadministrator** aus.
 9. Scrollen Sie in der Benutzerliste zu dem Benutzer, den Sie als Administrator festlegen möchten, und wählen Sie ihn aus. 
    > [!div class="mx-imgBorder"]
-   > ![Auswahl der Option „Rolle > Benutzerzugriffsadministrator“](_img/cloud-admin/add-role-user-access-admin.png)
+   > ![Auswahl der Option „Rolle > Benutzerzugriffsadministrator“](_img/cloud-admin/add-role-user-access-admin.png "Wählen Sie „Rolle“ und „Benutzerzugriffsadministrator“ aus, und wählen Sie dann den Namen des Benutzers aus, um diesen zum Administrator zu machen.")
 10. Klicken Sie auf **Speichern**.
 11. Klicken Sie auf die Registerkarte **Rollenzuweisungen**, um zu überprüfen, ob der ausgewählte Benutzer nun als Benutzerzugriffsadministrator aufgeführt wird.
 
