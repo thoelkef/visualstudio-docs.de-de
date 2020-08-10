@@ -10,16 +10,74 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4fa5a68a15dd5b53d5a626ff5c46e9739db504fc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
+ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184561"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87471531"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="2710"></a>2.7.1.0
+Veröffentlichung: 5. August 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Unity-Nachrichten-API auf 2019.4 aktualisiert.
+
+  - [`USP0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0013.md)-Unterdrückung für `CA1823` wurde hinzugefügt. Private Felder mit dem Attribut `SerializeField` oder `SerializeReference` sollten nicht als nicht verwendet gekennzeichnet werden (FxCop).
+  
+  - [`USP0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0014.md)-Unterdrückung für `CA1822` wurde hinzugefügt. Unity-Nachrichten sollten nicht als Kandidaten für den `static`-Modifizierer gekennzeichnet werden (FxCop).
+
+  - [`USP0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0015.md)-Unterdrückung für `CA1801` wurde hinzugefügt. Nicht verwendete Parameter sollten nicht aus Unity-Nachrichten entfernt werden (FxCop).
+  
+  - `MenuItem`-Unterstützung zum [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md)-Unterdrückungsmodul hinzugefügt.  
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Die Unterdrückungsmodule [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) und [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) wurden korrigiert, weil sie nicht mit zusätzlichen Klammern oder Methodenargumenten funktionierten.
+  
+  - Die obligatorische Aktualisierung der Ressourcendatenbank, auch wenn die automatische Aktualisierung in den Unity-Einstellungen deaktiviert wurde, wurde korrigiert.
+
+## <a name="2700"></a>2.7.0.0
+Veröffentlicht: 23. Juni 2020
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Projektmappenordner können jetzt beibehalten werden, wenn Unity Projektmappen und Projekte neu generiert.
+
+  - [`UNT0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0015.md)-Diagnose wurde hinzugefügt. Falsche Methodensignaturen mit dem Attribut `InitializeOnLoadMethod` oder `RuntimeInitializeOnLoadMethod` werden erkannt.
+
+  - [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md)-Diagnose wurde hinzugefügt. Die Verwendung von `Invoke`, `InvokeRepeating`, `StartCoroutine` oder `StopCoroutine`, wenn das erste Argument ein Zeichenfolgenliteral ist, ist nicht typsicher.
+
+  - [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md)-Diagnose wurde hinzugefügt. Der Aufruf von `SetPixels` ist langsam.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Debugger:**
+
+  - Das Erstellen von Breakpoints während der Ausführung des Spiels in der alten Mono-Laufzeit (Versuch, den Breakpoint direkt nach der Erstellung zu binden) wurde korrigiert. 
+  
+- **Integration:**
+
+  - Setzen Sie die Auswahl nicht zurück, wenn Sie Nachrichten im Nachrichten-Assistent von Unity filtern.
+  
+  - Die Unterdrückungsmodule [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) und [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) wurden mit folgenden Regeln korrigiert: `IDE0044` (schreibgeschützt), `IDE0051` (nicht verwendet) und `CS0649` (nie zugewiesen) für alle Felder mit dem SerializeField-Attribut unterdrücken. `CS0649` (nie zugewiesen) wird für öffentliche Felder aller Typen unterdrückt, die `Unity.Object` erweitern.
+
+  - Die Überprüfung auf generische Typparameter für [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) wurde korrigiert.
+
+- **Auswertung:**
+
+  - Der Gleichheitsvergleich mit Enumerationen wurde korrigiert.
 
 ## <a name="2610"></a>2.6.1.0
 Veröffentlicht am 19. Mai 2020
@@ -43,19 +101,19 @@ Veröffentlichung: 14. April 2020
 
 - **Integration:**
 
-  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md)-Diagnose wurde hinzugefügt. Erkennen und Umschließen von Aufrufen von Coroutinen in `StartCoroutine()`.
+  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md)-Diagnose wurde hinzugefügt. Erkennen und Umschließen von Aufrufen von Coroutinen in `StartCoroutine()`.
 
-  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md)-Diagnose wurde hinzugefügt. Erkennen und Entfernen eines ungültigen oder redundanten `SerializeField`-Attributs.
+  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md)-Diagnose wurde hinzugefügt. Erkennen und Entfernen eines ungültigen oder redundanten `SerializeField`-Attributs.
 
-  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md)-Diagnose wurde hinzugefügt. Erkennen, dass `GetComponent()` mit einem Nicht-Komponenten- oder Nicht-Schnittstellentyp aufgerufen wurde.
+  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md)-Diagnose wurde hinzugefügt. Erkennen, dass `GetComponent()` mit einem Nicht-Komponenten- oder Nicht-Schnittstellentyp aufgerufen wurde.
 
-  - [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Methoden mit dem `ContextMenu`-Attribut oder über ein Feld mit dem `ContextMenuItem`-Attribut referenziert nicht als nicht verwendet kennzeichnen.
+  - [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Methoden mit dem `ContextMenu`-Attribut oder über ein Feld mit dem `ContextMenuItem`-Attribut referenziert nicht als nicht verwendet kennzeichnen.
 
-  - [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Methoden mit dem `ContextMenuItem`-Attribut nicht als nicht verwendet kennzeichnen.
+  - [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Methoden mit dem `ContextMenuItem`-Attribut nicht als nicht verwendet kennzeichnen.
 
-  - [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md)-Unterdrückung für `IDE0044` wurde hinzugefügt. Felder mit dem `ContextMenuItem`-Attribut nicht mit Schreibschutz versehen.
+  - [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md)-Unterdrückung für `IDE0044` wurde hinzugefügt. Felder mit dem `ContextMenuItem`-Attribut nicht mit Schreibschutz versehen.
 
-  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) und [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) funktionieren jetzt für die `SerializeReference`- und `SerializeField`-Attribute.
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) und [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) funktionieren jetzt für die `SerializeReference`- und `SerializeField`-Attribute.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -67,7 +125,7 @@ Veröffentlichung: 14. April 2020
 
   - Der Nachrichtenbereich für die `CreateInspectorGUI`-Nachricht wurde korrigiert.
 
-  - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) nicht für Methoden mit polymorphen Modifizierern melden.
+  - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md) nicht für Methoden mit polymorphen Modifizierern melden.
 
 - **Auswertung:**
 
@@ -93,7 +151,7 @@ Veröffentlichung: 3. März 2020
 
 - **Integration:**
 
-  - [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Private Methoden, die mit Invoke, InvokeRepeating, StartCoroutine oder StopCoroutine verwendet werden, sollten nicht als nicht verwendet gekennzeichnet werden.
+  - [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Private Methoden, die mit Invoke, InvokeRepeating, StartCoroutine oder StopCoroutine verwendet werden, sollten nicht als nicht verwendet gekennzeichnet werden.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -113,7 +171,7 @@ Veröffentlichung: 19. Februar 2020
 
 - **Integration:**
 
-  - Ein Fehler wurde behoben, durch den die falsche Nachrichtensignatur bei der [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md)-Diagnose überprüft wurde. Beim Untersuchen von Typen mit mehreren Vererbungsstufen kann diese Diagnose mit der folgenden Meldung fehlschlagen: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+  - Ein Fehler wurde behoben, durch den die falsche Nachrichtensignatur bei der [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)-Diagnose überprüft wurde. Beim Untersuchen von Typen mit mehreren Vererbungsstufen kann diese Diagnose mit der folgenden Meldung fehlschlagen: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
 
 ## <a name="2500"></a>2.5.0.0
 
@@ -129,9 +187,9 @@ Veröffentlichung: 22. Januar 2020
   
   - In den Einstellungen wird ein neues zugänglicheres Eigenschaftsraster verwendet.
 
-  - [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Private Felder mit dem `SerializeField`-Attribut sollten nicht als nicht verwendet gekennzeichnet werden.
+  - [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md)-Unterdrückung für `IDE0051` wurde hinzugefügt. Private Felder mit dem `SerializeField`-Attribut sollten nicht als nicht verwendet gekennzeichnet werden.
 
-  - [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)-Unterdrückung für `CS0649` wurde hinzugefügt. Felder mit dem `SerializeField`-Attribut sollten nicht als nicht zugewiesen gekennzeichnet werden.  
+  - [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md)-Unterdrückung für `CS0649` wurde hinzugefügt. Felder mit dem `SerializeField`-Attribut sollten nicht als nicht zugewiesen gekennzeichnet werden.  
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -187,7 +245,7 @@ Veröffentlichung: 15. Oktober 2019
 
 - **Integration:**
 
-  - [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md)-Unterdrückung für `IDE0060` (nicht verwendeter Parameter) wurde für alle Unity-Meldungen hinzugefügt.
+  - [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md)-Unterdrückung für `IDE0060` (nicht verwendeter Parameter) wurde für alle Unity-Meldungen hinzugefügt.
 
   - QuickInfo für mit `TooltipAttribute` markierte Felder hinzugefügt. (Dies funktioniert auch für einen einfachen get-Accessor, der dieses Feld verwendet).
 

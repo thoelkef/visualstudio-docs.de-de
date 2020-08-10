@@ -1,6 +1,6 @@
 ---
 title: Anpassen von Fensterlayouts
-ms.date: 01/23/2017
+ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -23,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1963c76b67eaedea4cdf013739c112275ecffb2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
+ms.sourcegitcommit: 30a810f39c06958c79505773f052e96b982e5d5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596709"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87546070"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 
@@ -36,33 +36,55 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
 Sie können ein benutzerdefiniertes Layout auch benennen und speichern und dann mit einem einzelnen Befehl zwischen den Layouts wechseln. Beispielsweise können Sie ein Layout für die Bearbeitung und ein Layout für das Debuggen erstellen und zwischen diesen mithilfe des Menübefehls **Fenster** > **Fensterlayout anwenden** wechseln.
 
-## <a name="kinds-of-windows"></a>Fensterarten
-
-### <a name="tool-and-document-windows"></a>Tool- und Dokumentfenster
+## <a name="tool-and-document-windows"></a>Tool- und Dokumentfenster
 
 Die IDE verfügt über zwei grundlegende Fenstertypen *Toolfenster* und *Dokumentfenster*. Toolfenster sind in **Projektmappen-Explorer**, **Server-Explorer**, **Ausgabefenster**, **Fehlerliste** sowie im Designer, in den Debuggerfenstern usw. enthalten. Dokumentfenster enthalten Quellcodedateien, beliebige Textdateien, Konfigurationsdateien usw. Die Größe der Toolfenster kann angepasst werden, und sie können an der Titelleiste gezogen werden. Dokumentfenster können an der Registerkarte gezogen werden. Klicken Sie zum Festlegen anderer Optionen für das Fenster mit der rechten Maustaste auf die Registerkarte oder die Titelleiste.
 
-Im Menü **Fenster** werden Optionen zum Andocken, Verankern und Ausblenden von Fenstern in der IDE angezeigt. Klicken Sie mit der rechten Maustaste auf eine Fensterregisterkarte oder Titelleiste, um weitere Optionen für ein bestimmtes Fenster anzuzeigen. Sie können mehrere Instanzen bestimmter Toolfenster gleichzeitig anzeigen. Sie können z. B. mehrere Webbrowserfenster anzeigen und zusätzliche Instanzen bestimmter Toolfenster erstellen, indem Sie **Neues Fenster** im Menü **Fenster** wählen.
-
-### <a name="preview-tab-document-windows"></a>Registerkarte „Vorschau“ (Dokumentfenster)
-
-Auf der Registerkarte **Vorschau** können Sie Dateien im Editor anzeigen, ohne sie zu öffnen. Sie können die Vorschau für Dateien anzeigen, indem Sie diese im **Projektmappen-Explorer** auswählen, während des Debuggens die einzelnen Dateien durchlaufen, mit der Option **Gehe zu Definition** oder beim Durchsuchen der Suchergebnisse. Vorschaudateien werden auch in einer Registerkarte auf der rechten Seite der Dokumentregisterkarte angezeigt. Die Datei wird zum Bearbeiten geöffnet, wenn Sie sie ändern oder auf **Öffnen** klicken.
-
-### <a name="tab-groups"></a>Registerkartengruppen
-
-Mit Registerkartengruppen können Sie die Verwaltung des eingeschränkten Arbeitsbereichs beim Arbeiten mit mindestens zwei geöffneten Dokumenten in der IDE erweitern. Sie können mehrere Dokument- und Toolfenster in vertikalen oder horizontalen Registerkartengruppen anordnen und Dokumente zwischen den Registerkartengruppen verschieben.
+Im Menü **Fenster** werden Optionen zum Andocken, Abdocken und Ausblenden von Fenstern in der IDE angezeigt. Klicken Sie mit der rechten Maustaste auf eine Fensterregisterkarte oder Titelleiste, um weitere Optionen für ein bestimmtes Fenster anzuzeigen. Sie können mehrere Instanzen bestimmter Toolfenster gleichzeitig anzeigen. Sie können z. B. mehrere Webbrowserfenster anzeigen und zusätzliche Instanzen bestimmter Toolfenster erstellen, indem Sie **Neues Fenster** im Menü **Fenster** wählen.
 
 ### <a name="split-windows"></a>Geteilte Fenster
 
 Wenn Sie zwei Positionen gleichzeitig in einem Dokument anzeigen oder bearbeiten müssen, können Sie die Fenster teilen. Um das Dokument in zwei Abschnitte zu teilen, durch die unabhängig voneinander gescrollt werden kann, klicken Sie auf **Teilen** im Menü **Fenster** . Klicken Sie auf **Teilung aufheben** im Menü **Fenster** , um die ursprüngliche Ansicht wiederherzustellen.
 
+### <a name="tabs"></a>Registerkarten
+
+Mithilfe von Registerkarten können Sie Ihr Layout auf unterschiedliche Weise anordnen. Sie können beispielsweise eine Vorschau einer Datei im Editor anzeigen, ohne die Datei zu öffnen. Sie können Ihre Registerkarten gruppieren und viele weitere Anpassungen vornehmen.
+
+#### <a name="preview-tab-document-windows"></a>Registerkarte „Vorschau“ (Dokumentfenster)
+
+Auf der Registerkarte **Vorschau** können Sie Dateien im Editor anzeigen, ohne sie zu öffnen. Sie können die Vorschau für Dateien anzeigen, indem Sie diese im **Projektmappen-Explorer** auswählen, während des Debuggens die einzelnen Dateien durchlaufen, mit der Option **Gehe zu Definition** oder beim Durchsuchen der Suchergebnisse. Vorschaudateien werden auch in einer Registerkarte auf der rechten Seite der Dokumentregisterkarte angezeigt. Die Datei wird zum Bearbeiten geöffnet, wenn Sie sie ändern oder auf **Öffnen** klicken.
+
+::: moniker range="vs-2019"
+
+#### <a name="vertical-document-tabs"></a>Vertikale Registerkarten für Dokumente
+
+**[Neu in Version 16.4](/visualstudio/releases/2019/release-notes-v16.4/)** : Wir haben eine der häufigsten Featureanfragen in die Visual Studio 2019-Version 16.4 eingebaut: [vertikale Registerkarten für Dokumente](https://developercommunity.visualstudio.com/idea/467369/vertical-group-tab.html). Jetzt können Sie Ihre Dokumentregisterkarten in einer vertikalen Liste auf der linken oder rechten Seite des Editors verwalten.
+
+Sie können vertikale Registerkarten für Dokumente auf folgende Weise anwenden:
+
+- Wählen Sie in der Menüleiste die Optionen **Extras** > **Optionen** > **Umgebung** > **Registerkarten und Fenster** aus. Wählen Sie dann im Steuerelement **Registerkartenlayout festlegen** aus der Dropdownliste **Oben**, **Links** oder **Rechts** aus.
+
+- Klicken Sie mit der rechten Maustaste auf eine Registerkarte, wählen Sie **Registerkartenlayout festlegen** aus, und wählen Sie dann **Links** oder **Rechts** aus. (Um die Registerkarten auf ihre Standardposition zurückzusetzen, wählen Sie **Oben** aus.)
+
+    :::image type="content" source="./media/vs-2019/vertical-tabs.gif" alt-text="Eine Animation, die vertikale Dokumentregisterkarten in Aktion zeigt":::
+
+::: moniker-end
+
+#### <a name="tab-groups"></a>Registerkartengruppen
+
+Mit Registerkartengruppen können Sie den begrenzten Platz im Arbeitsbereich besser verwalten, wenn Sie mit zwei oder mehr offenen Dokumenten in der IDE arbeiten. Sie können mehrere Dokument- und Toolfenster in vertikalen oder horizontalen Registerkartengruppen anordnen und Dokumente zwischen den Registerkartengruppen verschieben.
+
 ### <a name="toolbars"></a>Symbolleisten
 
-Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zur Anordnung und Anpassung von Symbolleisten finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Sie können Symbolleisten anordnen, indem Sie sie per Drag & Drop an die gewünschte Position ziehen oder indem Sie die Positionen im Dialogfeld **Anpassen** festlegen. Weitere Informationen zur Anordnung und Anpassung von Symbolleisten finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Anordnen und Andocken von Fenstern
 
-Dokumentfenster und Toolfenster können *angedockt* werden, sodass sie eine Position und Größe innerhalb des Rahmens des IDE-Fensters haben oder als unverankerte Fenster der IDE angezeigt werden. Toolfenster können an einer beliebigen Stelle innerhalb des IDE-Rahmens angedockt werden; manche Toolfenster können im Registerkartenformat angedockt werden. Dokumentfenster können innerhalb des Editorrahmens angedockt und an ihre aktuelle Position in der Aktivierreihenfolge angeheftet werden. Sie können mehrere Fenster per *Rafting* außerhalb der IDE andocken. Toolfenster können ausgeblendet oder minimiert werden.
+Dokumentfenster und Toolfenster können *angedockt* werden, sodass sie innerhalb des Rahmens des IDE-Fensters eine bestimmte Position und Größe haben. Sie können die Fenster auch als abgedockte Fenster außerhalb der IDE positionieren.
+
+Ein Toolfenster kann an jeder Stelle innerhalb des IDE-Rahmens angedockt werden. Einige Toolfenster lassen sich auch als Fenster mit Registerkarten im Editor-Rahmen andocken. Sie können Dokumentfenster innerhalb des Editor-Rahmens andocken und an ihrer aktuellen Position in der Registerkartenreihe anheften.
+
+Sie können auch mehrere Fenster per *Rafting* außerhalb der IDE andocken. Toolfenster können ausgeblendet oder minimiert werden.
 
 Fenster können auf die folgenden Weisen angeordnet werden:
 
@@ -80,7 +102,7 @@ Fenster können auf die folgenden Weisen angeordnet werden:
 
 - Zurücksetzen der Fensteranordnung auf das Standardlayout oder ein gespeichertes benutzerdefiniertes Layout.
 
-Ordnen Sie Tool- und Dokumentfenster durch Ziehen, mit Befehlen im Menü **Fenster** und durch Klicken mit der rechten Maustaste auf die Titelleiste des anzuordnenden Fensters an.
+Um Tool- und Dokumentfenster anzuordnen, können Sie den Cursor auf die Titelleiste eines Fensters platzieren und ihn dann dahin ziehen, wo Sie das Fenster positionieren möchten. Alternativ dazu können Sie mit der rechten Maustaste auf die Titelleiste des Fensters klicken und das Kontextmenü verwenden, oder Sie können die Befehle im Menü **Fenster** verwenden.
 
 ### <a name="dock-windows"></a>Andocken von Fenstern
 
@@ -114,7 +136,7 @@ Sie können ein Toolfenster schließen, indem Sie auf das **X** oben rechts in d
 > [!NOTE]
 > Toolfenster, für die die Option „Automatisch im Hintergrund“ aktiviert ist, werden möglicherweise kurz eingeblendet, sobald das Fenster den Fokus erhält. Zum Ausblenden des Fensters wählen Sie ein Element außerhalb des aktuellen Fensters aus. Wenn das Fenster den Fokus verliert, wird es ausgeblendet.
 
-### <a name="specifying-a-second-monitor"></a>Angeben eines zweiten Monitors
+### <a name="use-a-second-monitor"></a>Verwenden eines zweiten Monitors
 
 Wenn Sie einen zweiten Bildschirm besitzen und dieser vom Betriebssystem unterstützt wird, können Sie angeben, auf welchem Bildschirm ein Fenster angezeigt werden soll. Sie können mehrere Fenster sogar in *Rafts* auf anderen Bildschirmen gruppieren.
 
@@ -141,7 +163,7 @@ Erstellen Sie zunächst eine Testprojektmappe mit zwei Projekten, die jeweils ü
 
 1. Erstellen Sie ein neues C# **WPF-App** Projekt. Stellen Sie sich vor, dass Sie in diesem Projekt eine Benutzeroberfläche entwickeln werden. Sie möchten den Platz für das Designerfenster maximieren und andere Toolfenster aus dem Weg räumen.
 
-2. Wenn Sie über mehrere Monitore verfügen, ziehen Sie das **Projektmappen-Explorerfenster** und das Fenster **Eigenschaften** auf den zweiten Monitor. Versuchen Sie, wenn Ihnen nur ein Monitor zur Verfügung steht, alle Fenster außer dem Designerfenster zu schließen.
+2. Wenn Sie über mehrere Monitore verfügen, ziehen Sie das Fenster **Projektmappen-Explorer** und das Fenster **Eigenschaften** auf den zweiten Monitor. Versuchen Sie, wenn Ihnen nur ein Monitor zur Verfügung steht, alle Fenster außer dem Designerfenster zu schließen.
 
 3. Drücken Sie **STRG**+**ALT**+**X**, um das **Toolboxfenster** anzuzeigen. Ist das Fenster angedockt, ziehen Sie es so, dass es sich freischwebend dort befindet, wo Sie es platzieren möchten.
 
@@ -174,13 +196,13 @@ Wenn Sie an Ihrem Arbeitsplatz mehrere Monitore und zuhause einen Laptop mit nur
 
 #### <a name="manage-and-roam-your-layouts"></a>Verwalten der Layouts und Ausführen von Roamings
 
-Sie können benutzerdefinierte Layouts entfernen, umbenennen oder neu arrangieren, indem Sie auf **Fenster** > **Fensterlayouts verwalten** klicken. Wenn Sie ein Layout verschieben, wird die Schlüsselbindung automatisch so angepasst, dass die neue Position in der Liste wiedergegeben wird. Die Bindung kann nicht auf andere Weise geändert werden. Daher können Sie maximal 10 Layouts gleichzeitig speichern.
+Sie können benutzerdefinierte Layouts entfernen, umbenennen oder neu arrangieren, indem Sie auf **Fenster** > **Fensterlayouts verwalten** klicken. Wenn Sie ein Layout verschieben, wird die Schlüsselbindung automatisch so angepasst, dass die neue Position in der Liste wiedergegeben wird. Die Bindung kann nicht auf andere Weise geändert werden. Daher können Sie maximal 10 Layouts gleichzeitig speichern.
 
 ![Fensterlayouts verwalten](../ide/media/managewindowlayouts.png)
 
 Klicken Sie auf **Fenster** > **Fensterlayout anwenden**, um nachzusehen, welche Tastenkombination welchem Layout zugeordnet ist.
 
-Für diese Layouts wird automatisch Roaming zwischen Visual Studio-Editionen ausgeführt, ebenso zwischen Blend-Instanzen auf unterschiedlichen Computern sowie zwischen einer Express-Edition und jeder beliebigen anderen Express-Organisation. Es kann jedoch kein Roaming der Layouts zwischen Visual Studio, Blend und Express ausgeführt werden.
+Für diese Layouts wird automatisch Roaming zwischen Visual Studio-Editionen ausgeführt, ebenso zwischen Blend-Instanzen auf unterschiedlichen Computern sowie zwischen einer Express-Edition und jeder beliebigen anderen Express-Organisation. Die Layouts können jedoch nicht zwischen Visual Studio, Blend und Express wandern.
 
 ## <a name="see-also"></a>Siehe auch
 

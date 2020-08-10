@@ -2,7 +2,7 @@
 title: Administratorhandbuch für Visual Studio
 titleSuffix: ''
 description: Erfahren Sie mehr zur Bereitstellung von Visual Studio in einer Unternehmensumgebung.
-ms.date: 03/09/2020
+ms.date: 07/29/2020
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419262"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425406"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
@@ -40,13 +40,17 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 * Ihren Wartungsbedarf ermitteln
 
-  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Supportoptionen für Enterprise- und Professional-Kunden*** der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) sowie unter [Vorgehensweise: Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
+  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Supportoptionen für Enterprise- und Professional-Kunden*** der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) sowie auf der Seite [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
 
   Wenn Sie Wartungsupdates zusammen mit kumulativen Funktionsupdates anwenden möchten, können Sie die neuesten Bits auswählen.
 
 * Ein Aktualisierungsmodell festlegen
 
   Wo sollen einzelne Clientcomputer Updates abrufen? Entscheiden Sie insbesondere, ob Sie Updates aus dem Internet oder von einer lokalen Unternehmensfreigabe abrufen möchten. Wenn Sie die lokale Freigabe wählen, müssen Sie entscheiden, ob einzelne Benutzer ihre eigenen Clients aktualisieren können oder ob ein Administrator die Clients programmgesteuert aktualisieren sollen.
+
+  Es ist möglich, ein Layout für die Netzwerkinstallation von Visual Studio mit den neuesten Produktupdates zu aktualisieren, sodass es sowohl als Installationspfad für das neueste Update von Visual Studio als auch zum Warten von Installationen verwendet werden kann, die bereits auf Clientarbeitsstationen bereitgestellt wurden. Weitere Informationen finden Sie unter [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  Für Computer, die nicht mit dem Internet verbunden sind, ist das Erstellen eines minimalen Layouts die einfachste und schnellste Möglichkeit, Ihre Offlineinstanzen in Visual Studio zu aktualisieren. Weitere Informationen finden Sie unter [Aktualisieren von Visual Studio mit einem minimalen Offlinelayout](update-minimal-layout.md).
 
 * Entscheiden, welche [Workloads und Komponenten](workload-and-component-ids.md?view=vs-2019) Ihr Unternehmen benötigt
 
@@ -62,13 +66,17 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 * Ihren Wartungsbedarf ermitteln
 
-  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Support für ältere Versionen von Visual Studio*** der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) sowie unter [Vorgehensweise: Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
+  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Support für ältere Versionen von Visual Studio*** der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) sowie auf der Seite [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
 
   Wenn Sie Wartungsupdates zusammen mit kumulativen Funktionsupdates anwenden möchten, können Sie die neuesten Bits auswählen.
 
 * Ein Aktualisierungsmodell festlegen
 
   Wo sollen einzelne Clientcomputer Updates abrufen? Entscheiden Sie insbesondere, ob Sie Updates aus dem Internet oder von einer lokalen Unternehmensfreigabe abrufen möchten. Wenn Sie die lokale Freigabe wählen, müssen Sie entscheiden, ob einzelne Benutzer ihre eigenen Clients aktualisieren können oder ob ein Administrator die Clients programmgesteuert aktualisieren sollen.
+
+  Es ist möglich, ein Layout für die Netzwerkinstallation von Visual Studio mit den neuesten Produktupdates zu aktualisieren, sodass es sowohl als Installationspfad für das neueste Update von Visual Studio als auch zum Warten von Installationen verwendet werden kann, die bereits auf Clientarbeitsstationen bereitgestellt wurden. Weitere Informationen finden Sie unter [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  Für Computer, die nicht mit dem Internet verbunden sind, ist das Erstellen eines minimalen Layouts die einfachste und schnellste Möglichkeit, Ihre Offlineinstanzen in Visual Studio zu aktualisieren. Weitere Informationen finden Sie unter [Aktualisieren von Visual Studio mit einem minimalen Offlinelayout](update-minimal-layout.md).
 
 * Entscheiden, welche [Workloads und Komponenten](workload-and-component-ids.md?view=vs-2017) Ihr Unternehmen benötigt
 

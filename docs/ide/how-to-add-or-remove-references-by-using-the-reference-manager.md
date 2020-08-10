@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284725"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390261"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -47,6 +47,9 @@ Das Dialogfeld „Verweis-Manager“ zeigt die verschiedenen Kategorien je nach 
 - **Windows** mit den Untergruppen **Core** und **Erweiterungen**. Sie können die Verweise im Windows SDK oder im Erweiterungs-SDK mit dem **Objektkatalog** untersuchen.
 
 - **Durchsuchen** mit der Untergruppe **Aktuell**.
+ 
+    > [!NOTE]
+    > Beim Entwickeln von C++-Projekten wird die Option **Durchsuchen** im Dialogfeld „Verweis-Manager“ möglicherweise nicht angezeigt.
 
 ## <a name="add-a-reference"></a>Hinzufügen eines Verweises
 

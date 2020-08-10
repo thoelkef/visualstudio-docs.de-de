@@ -2,17 +2,17 @@
 title: Exportieren von Abonnementinformationen | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie eine Liste von Abonnenten und Details zu den zugewiesenen Abonnements exportiert werden.
-ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ff0941dc25d16ad520b20613c2d4136c3c63c937
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232495"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453564"
 ---
 # <a name="export-subscription-information"></a>Exportieren der Abonnementinformationen
 Im [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonnements können Sie eine Liste Ihrer Abonnenten und Details zu deren Zuweisungen exportieren. Folgende Informationen sind enthalten: Name, E-Mail-Adresse, alternative E-Mail-Adresse, Abonnementebene, Datum der Zuweisung, Aktivierungsstatus, Ablaufdatum, Verweisfeld, Informationen zur Aktivierung von Downloads, Land/Region, Sprache, Abonnementstatus und Abonnement-GUID.  Die Liste wird als CSV-Datei exportiert und kann zum Erstellen von Diagrammen, Pivots und anderen Artefakten ganz einfach in Microsoft Excel geöffnet werden.
@@ -30,7 +30,7 @@ So führen Sie den Export aus:
 1. Melden Sie sich beim [Verwaltungsportal](https://manage.visualstudio.com) an.
 2. Wählen Sie die Registerkarte **Exportieren** aus, und die Datei wird auf Ihren lokalen Computer heruntergeladen. Die Datei enthält den Namen der Vereinbarung, die Ihre Benutzerabonnements enthält, sowie das Datum des Exports.
 > [!div class="mx-imgBorder"]
-> ![Abonnenten exportieren](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![Abonnenten exportieren](_img/exporting-subscriptions/exporting-subscriptions.png "Klicken Sie auf „Export“, um eine vollständige Liste Ihrer zugewiesenen Abonnements herunterzuladen.")
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)

@@ -6,15 +6,15 @@ manager: lank
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
-description: Erfahren Sie, wie Administratoren mit zu viel zugewiesenen Abonnements umgehen.
-ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+description: Erfahren Sie, wie Administratoren mit Überbelegungen bei Abonnements umgehen.
+ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232454"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453728"
 ---
-# <a name="overallocated-subscriptions"></a>Zu viel zugewiesene Abonnements
+# <a name="over-allocated-subscriptions"></a>Überbelegte Abonnements
 Teilweise werden Bestellungen geändert, obwohl bereits Abonnenten hinzugefügt wurden, wodurch es dazu kommen kann, dass mehr Abonnements zugewiesen wurden als Lizenzen für Ihr Unternehmen vorhanden sind. Dies wird als „Überbelegung“ bezeichnet.  
 
 Klicken Sie auf das Symbol oben links, um den Zuweisungsbereich zu öffnen und Abonnementzuweisungen anzuzeigen.  
@@ -23,11 +23,11 @@ Klicken Sie auf das Symbol oben links, um den Zuweisungsbereich zu öffnen und A
 > Überbelegungen sind in Open License-Programmen nicht zulässig.  Außerdem werden diese Informationen im Portal möglicherweise von anderen Programmen unterschiedlich angezeigt.
 >
 > [!div class="mx-imgBorder"]
-> ![Benachrichtigung über zu häufig in Anspruch genommene Abonnements](_img/over-claimed/over-claimed-alert.png)
+> ![Benachrichtigung über zu häufig in Anspruch genommene Abonnements](_img/over-claimed/over-claimed-alert.png "Die Anzahl von Überbelegungen ist in der Übersicht aufgeführt und wird im Diagramm durch den schraffierten Balken für jeden Abonnementtyp dargestellt.")
 
-Überbelegte Abonnements werden mit einem diagonal gestreiften Balken dargestellt.  Die Anzahl der überbelegten Abonnements für alle Abonnementtypen wird oben im Bereich „Übersicht“ angegeben. Zudem zeigt jede Abonnementstufe einen eigenen Zuweisungsstatus an.  
+Beachten Sie, dass überbelegte Abonnements mit einem schraffierten Balken dargestellt werden.  Die Anzahl der überbelegten Abonnements für alle Abonnementtypen wird oben im Bereich „Übersicht“ angegeben. Zudem zeigt jede Abonnementstufe einen eigenen Zuweisungsstatus an.  
 
-## <a name="resolve-overallocated-subscriptions"></a>Beheben von Abonnementüberbelegungen
+## <a name="resolve-over-allocated-subscriptions"></a>Beheben von Abonnementüberbelegungen
 Es gibt mehrere Möglichkeiten, Überbelegungen zu beheben:
 - Wenden Sie sich an Ihren Handelspartner, um weitere Abonnements zu erwerben.
 - Warten Sie bis zur jährlichen Abgleichperiode, und bezahlen Sie die zu viel zugewiesenen Abonnements zu diesem Zeitpunkt. 

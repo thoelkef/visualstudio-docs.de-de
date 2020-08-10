@@ -3,7 +3,11 @@ title: Messen von Leistung mit Profilerstellungstools
 description: Einführung in die verschiedenen für Visual Studio verfügbaren Diagnosetools
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816695"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507988"
 ---
 # <a name="first-look-at-profiling-tools"></a>Einführung in Profilerstellungstools
 
@@ -168,7 +172,7 @@ Verwenden Sie das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analysieren der Netzwerkverwendung (UWP)
 
-In UWP-Apps können Sie Netzwerkoperationen mithilfe der `Windows.Web.Http`-API analysieren. Mit diesem Tool können Sie Probleme wie Zugriffs-und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung lösen. Wählen Sie **Netzwerk** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
+In UWP-Apps können Sie mit der `Windows.Web.Http`-API ausgeführte Netzwerkvorgänge analysieren. Dieses Tool hilft Ihnen beim Lösen von Problemen beispielsweise mit dem Zugriff oder der Authentifizierung, einer falschen Cachenutzung oder einer unzureichenden Leistung bei Anzeige und Downloads. Wählen Sie **Netzwerk** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
 
 ![Profilerstellungstool „Netzwerkauslastung“](../profiling/media/prof-tour-network-usage.png "Diagramm „Netzwerkauslastung“")
 
@@ -202,8 +206,8 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|
 |[.NET-Objektzuordnung](../profiling/dotnet-alloc-tool.md)|Ja (Nur .NET)|ja|ja|
-|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|ja|Nein|
-|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
+|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|Ja|nein|
+|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|Ja|nein|
 |[Ereignisanzeige](../profiling/events-viewer.md)|ja|ja|ja|
 |[.NET Async](../profiling/analyze-async.md)|Ja (Nur .NET)|ja|ja|
 |[Datenbank](../profiling/analyze-database.md)|Ja (nur .NET Core)|Nein|Ja (nur ASP.NET Core)|
@@ -216,12 +220,12 @@ Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, di
 |----------------------|---------------------|-------------|-------------|
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|
-|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|ja|Nein|
-|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
+|[GPU-Nutzung](/visualstudio/debugger/graphics/gpu-usage)|ja|Ja|nein|
+|[Anwendungszeitachse](../profiling/application-timeline.md)|ja|Ja|nein|
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|ja|
+|[Leistungs-Explorer](../profiling/performance-explorer.md)|Ja|nein|ja|
 |[IntelliTrace](../debugger/intellitrace.md)|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|
-|[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein|
+|[Netzwerkverwendung](../profiling/network-usage.md)|nein|Ja|nein|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein|
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|
 ::: moniker-end

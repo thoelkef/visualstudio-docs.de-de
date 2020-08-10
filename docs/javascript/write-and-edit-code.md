@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289091"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453764"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
 In dieser kurzen Einführung in den Code-Editor von Visual Studio wird erläutert, inwiefern Visual Studio das Schreiben und Verstehen von sowie das Navigieren in Code vereinfacht.
 
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren. Weitere Informationen dazu, wie Sie den Sprachdienst für TypeScript erhalten, finden Sie unter [TypeScript-Unterstützung](../javascript/javascript-in-vs-2019.md#typescript-support).
 
 In diesem Artikel wird vorausgesetzt, dass Sie bereits mit der JavaScript-Entwicklung vertraut sind. Wenn dies nicht der Fall ist, sollten Sie sich zunächst ein Tutorial dazu ansehen, z. B.: [Erstellen einer Node.js- und Express-App in Visual Studio](../javascript/tutorial-nodejs.md).
 
@@ -65,6 +65,8 @@ Im unteren Bereich können Sie auf die Registerkarte **Fehlerliste** klicken, um
 ![Fehlerliste anzeigen](../javascript/media/write-code-error-list.png)
 
 Sie können den Code korrigieren, indem Sie das Komma (`,`) vor `"data"` hinzufügen.
+
+Weitere Informationen zum Linten finden Sie unter [Linting](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md).
 
 ## <a name="comment-out-code"></a>Auskommentieren von Code
 
