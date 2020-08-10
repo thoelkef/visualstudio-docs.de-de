@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253446"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041050"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globaler Zugriff auf Objekte in Office-Projekten
   Wenn Sie ein Office-Projekt erstellen, generiert Visual Studio im Projekt automatisch eine Klasse mit dem Namen `Globals` . Mit der `Globals` -Klasse können Sie von beliebigem Code im Projekt aus zur Laufzeit auf mehrere verschiedene Projektelemente zugreifen.
@@ -49,7 +49,7 @@ ms.locfileid: "71253446"
 
 - Die `ThisDocument` -Klasse in einem Word-Dokument oder einem Vorlagenprojekt. Sie können mit der `Globals.ThisDocument` -Eigenschaft auf dieses Objekt zugreifen.
 
-- Die `ThisAddIn` -Klasse in einem VSTO-Add-in-Projekt. Sie können mit der `Globals.ThisAddIn` -Eigenschaft auf dieses Objekt zugreifen.
+- Die- `ThisAddIn` Klasse in einem VSTO-Add-in-Projekt. Sie können mit der `Globals.ThisAddIn` -Eigenschaft auf dieses Objekt zugreifen.
 
 - Alle Menübänder im Projekt, das Sie mit dem Menüband-Designer angepasst haben. Sie können mit der `Globals.Ribbons` -Eigenschaft auf die Menübänder zugreifen. Weitere Informationen finden Sie unter [zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md).
 
@@ -57,24 +57,23 @@ ms.locfileid: "71253446"
 
 - Ein Factoryobjekt, das Ihnen ermöglicht, Menübandsteuerelemente zu erstellen und Hostelemente zur Laufzeit in Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]abzielen. Sie können mit der `Globals.Factory` -Eigenschaft auf dieses Objekt zugreifen. Dieses Objekt ist eine Instanz einer Klasse, die eine der folgenden Schnittstellen implementiert:
 
-  - <xref:Microsoft.Office.Tools.Factory>
+  - [Microsoft. Office. Tools. Factory](xref:Microsoft.Office.Tools.Factory)
 
-  - <xref:Microsoft.Office.Tools.Excel.Factory>
+  - [Microsoft. Office. Tools. Excel. Factory](xref:Microsoft.Office.Tools.Excel.Factory)
 
-  - <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - [Microsoft. Office. Tools. Outlook. Factory](xref:Microsoft.Office.Tools.Outlook.Factory)
 
-  - <xref:Microsoft.Office.Tools.Word.Factory>
+  - [Microsoft. Office. Tools. Word. Factory](xref:Microsoft.Office.Tools.Word.Factory)
 
   Beispielsweise können Sie Text mithilfe der `Globals.Sheet1` -Eigenschaft in ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement auf `Sheet1` einfügen, wenn ein Benutzer in einem Projekt auf Dokumentebene für Excel auf eine Schaltfläche im Aktionsbereich klickt.
 
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
-## <a name="initialize-the-globals-class"></a>Initialisieren der Globals-Klasse
- Code, der versucht, die `Globals` -Klasse vor dem Initialisieren des Dokuments oder des VSTO-Add-Ins zu verwenden, kann eine Lauf Zeit Ausnahme auslösen. So kann beispielsweise die Verwendung von `Globals` beim Deklarieren einer Variablen auf Klassenebene fehlschlagen, da die `Globals` -Klasse vor der Instanziierung des deklarierten Objekts möglicherweise noch nicht mit Verweisen auf alle Hostelemente initialisiert wurde.
+ Code, der versucht, die- `Globals` Klasse vor dem Initialisieren des Dokuments oder des VSTO-Add-Ins zu verwenden, kann eine Lauf Zeit Ausnahme auslösen. So kann beispielsweise die Verwendung von `Globals` beim Deklarieren einer Variablen auf Klassenebene fehlschlagen, da die `Globals` -Klasse vor der Instanziierung des deklarierten Objekts möglicherweise noch nicht mit Verweisen auf alle Hostelemente initialisiert wurde.
 
 > [!NOTE]
-> Die `Globals` -Klasse wird zur Entwurfszeit nie initialisiert, vom Designer werden jedoch Steuerelementinstanzen erstellt. Dies bedeutet Folgendes: Wenn Sie ein Benutzer Steuerelement erstellen, das eine Eigenschaft `Globals` der Klasse innerhalb einer Benutzer Steuerelement Klasse verwendet, müssen Sie überprüfen, ob die-Eigenschaft **null** zurückgibt, bevor Sie versuchen, das zurückgegebene-Objekt zu verwenden.
+> Die `Globals` -Klasse wird zur Entwurfszeit nie initialisiert, vom Designer werden jedoch Steuerelementinstanzen erstellt. Dies bedeutet Folgendes: Wenn Sie ein Benutzer Steuerelement erstellen, das eine Eigenschaft der `Globals` Klasse innerhalb einer Benutzer Steuerelement Klasse verwendet, müssen Sie überprüfen, ob die-Eigenschaft **null** zurückgibt, bevor Sie versuchen, das zurückgegebene-Objekt zu verwenden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
