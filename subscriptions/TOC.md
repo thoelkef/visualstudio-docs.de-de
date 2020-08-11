@@ -16,6 +16,7 @@
 ### [Anmelden mit Microsoft-Konten](sign-in-msa.md)
 ### [Anmelden mit einem Geschäfts-, Schul- oder Unikonto](sign-in-work.md)
 ### [Anmelden mit GitHub](sign-in-github.md)
+### [Verbundene Identitäten](use-connected-identities.md)
 ### [Alternative Identitäten](vs-alternate-identity.md)
 ### [Probleme bei der Anmeldung](sign-in-issues.md)
 ### [Anonymisierungen von Abonnentendaten](anonymization.md)
