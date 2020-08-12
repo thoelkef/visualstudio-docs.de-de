@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85521237"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114118"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und -katalog
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 </ImageManifest>  
 ```  
 
- **Symbole**  
+ **MB**  
 
  Zur Unterstützung der Lesbarkeit und Wartung kann das Bild Manifest Symbole für Attributwerte verwenden. Symbole werden wie folgt definiert:  
 
@@ -104,7 +104,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |**Unterelement**|**Definition**|  
 |-|-|  
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei zur Verwendung im aktuellen Manifest.|  
-|GUID|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|  
+|Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|  
 |id|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|  
 |String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|  
 
@@ -143,7 +143,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 
 |**Attribut**|**Definition**|  
 |-|-|  
-|GUID|Benötigten Der GUID-Teil des bilmonikers.|  
+|Guid|Benötigten Der GUID-Teil des bilmonikers.|  
 |id|Benötigten Der ID-Teil des bilmonikers.|  
 |Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|  
 
@@ -157,12 +157,10 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
  </Source>  
 ```  
 
-|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Attribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      Uri      |                                                                                                                                                                                                                                                                                                               Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Folgende Werte sind möglich:<br /><br /> -Ein [Paket-URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält.                                                                                                                                                                                                                                                                                                               |
-|  Hintergrund   | Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em> Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert. |
-|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|**Attribut**|**Definition**|  
+|-|-|  
+| Uri | Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Folgende Werte sind möglich:<br /><br /> -Ein [Paket-URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält. |
+| Hintergrund  | Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em> Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert. |
 
  Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente aufweisen:  
 
@@ -197,7 +195,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 
 |**Attribut**|**Definition**|  
 |-|-|  
-|GUID|Benötigten Der GUID-Teil des bilmonikers.|  
+|Guid|Benötigten Der GUID-Teil des bilmonikers.|  
 |id|Benötigten Der ID-Teil des bilmonikers.|  
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|  
 
@@ -437,11 +435,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;  
        ```  
 
-   2. Weitere Informationen finden Sie unterschritt #1 im Abschnitt "wie verwende ich bildmoniker in einem neuen Tool Fenster?". der obige Abschnitt.  
+   2. Weitere Informationen finden Sie unterschritt #1 im Abschnitt "wie verwende ich bildmoniker in einem neuen Tool Fenster?". im oben stehenden Absatz.  
 
 4. Der Befehl zum Öffnen des Tool Fensters.  
 
-   - Weitere Informationen finden Sie unterschritt #2 im Abschnitt "wie verwende ich bildmoniker in einem neuen Tool Fenster?". der obige Abschnitt.  
+   - Weitere Informationen finden Sie unterschritt #2 im Abschnitt "wie verwende ich bildmoniker in einem neuen Tool Fenster?". im oben stehenden Absatz.  
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Gewusst wie verwenden Sie bildmoniker in einer vsct-Datei?  
  Aktualisieren Sie die vsct-Datei, wie in den nachfolgenden nachfolgenden Zeilen angegeben:  
