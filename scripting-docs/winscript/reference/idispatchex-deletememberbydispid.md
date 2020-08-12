@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0c3dbb040e39fd15b77e42b2eaa9fb2cdda0b1b2
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576635"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144635"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 Löscht einen Member durch DISPID.  
@@ -37,18 +37,18 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- Elementbezeichner Verwendet `GetDispID` oder `GetNextDispID`, um den Dispatchbezeichner abzurufen.  
+ Elementbezeichner Verwendet `GetDispID` oder `GetNextDispID` , um den Dispatchbezeichner abzurufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
   
-|||  
+|Wert|Bedeutung|
 |-|-|  
-|`S_OK`|Erfolgreich.|  
+|`S_OK`|Erfolg.|  
 |`S_FALSE`|Der Member ist vorhanden, kann aber nicht gelöscht werden.|  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Member gelöscht wird, muss die DISPID für `GetNextDispID`gültig bleiben.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Member gelöscht wird, muss die DISPID für gültig bleiben `GetNextDispID` .  
   
  Wenn ein Element mit einem bestimmten Namen gelöscht und später ein Member mit demselben Namen neu erstellt wird, sollte die DISPID identisch sein. (Unabhängig davon, ob die Elementnamen, die sich nur durch die Groß-/Kleinschreibung unterscheiden, vom Objekt abhängig sind.)  
   
@@ -66,5 +66,5 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
   
 ## <a name="see-also"></a>Siehe auch  
  [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

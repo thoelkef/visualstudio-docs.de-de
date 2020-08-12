@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: cf62972b192d73bd130d15066d79ea70fe24beb8
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576609"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144596"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Löscht einen Member nach dem Namen.  
@@ -41,7 +41,7 @@ HRESULT DeleteMemberByName(
  Der Name des zu löschenden Members.  
   
  `grfdex`  
- Bestimmt, ob der Elementname die Groß-/Kleinschreibung beachtet. Dies kann einer der folgenden Werte sein:  
+ Bestimmt, ob der Elementname die Groß-/Kleinschreibung beachtet. Mögliche Werte:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
@@ -51,13 +51,13 @@ HRESULT DeleteMemberByName(
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
   
-|||  
+|Wert|Bedeutung|
 |-|-|  
-|`S_OK`|Erfolgreich.|  
+|`S_OK`|Erfolg.|  
 |`S_FALSE`|Der Member ist vorhanden, kann aber nicht gelöscht werden.|  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Member gelöscht wird, muss die DISPID für `GetNextDispID` gültig bleiben.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Member gelöscht wird, muss die DISPID für gültig bleiben `GetNextDispID` .  
   
  Wenn ein Element mit einem bestimmten Namen gelöscht und später ein Member mit demselben Namen neu erstellt wird, sollte die DISPID identisch sein. (Unabhängig davon, ob Elemente, die sich nur durch die Groß-/Kleinschreibung unterscheiden, sind Objekt abhängig.)  
   

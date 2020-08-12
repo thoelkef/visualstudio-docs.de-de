@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4f35b398a7348f4e2bdbaaa9ab3e322bf69ddb6
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 6eadf367de224261207fd594322235ff89957b55
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72561621"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144622"
 ---
 # <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
 Analysiert das angegebene Code-Scriptlet, fügt Deklarationen im Namespace hinzu und wertet, wo angebracht, Code aus.  
@@ -45,7 +45,7 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parameter  
   
-|||  
+| Parameter | BESCHREIBUNG |  
 |-|-|  
 |`pstrCode`|[in] Adresse des auszuwertenden Scriptlet-Texts. Die Darstellung dieser Zeichenfolge hängt von der Skriptsprache ab.|  
 |`pstrItemName`|[in] Adresse des Elementnamens, der den Kontext angibt, in dem das Scriptlet ausgewertet werden soll. Wenn dieser Parameter NULL ist, wird der Code im globalen Kontext der Skript-Engine ausgewertet.|  
@@ -61,7 +61,7 @@ HRESULT ParseScriptText(
 |SCRIPTTEXT_ISPERSISTENT|Gibt an, dass der Code, der während dieses Aufrufs hinzugefügt wird, gespeichert werden soll, wenn die Skript-Engine (beispielsweise durch einen Aufruf von `IPersist*::Save`) gespeichert wird oder wenn die Skript-Engine durch einen Übergang zurück zum initialisierten Zustand zurückgesetzt wird.|  
 |SCRIPTTEXT_ISVISIBLE|Gibt an, dass der Skripttext sichtbar (und daher durch Namen aufgerufen werden kann) als globale Methode im Namespace des Skripts sein soll.|  
   
-|||  
+| Parameter | BESCHREIBUNG |  
 |-|-|  
 |`pvarResult`|[out] Adresse eines Puffers, der die Ergebnisse des Scriptlet-Verarbeitung empfängt oder `NULL`, wenn der Aufrufer kein Ergebnis erwartet (das heißt, dass der SCRIPTTEXT_ISEXPRESSIONS-Wert nicht festgelegt ist).|  
 |`pexcepinfo`|[out] Adresse einer Struktur, die Ausnahmeinformationen erhält. Diese Struktur wird ausgefüllt, wenn `IActiveScriptParse::ParseScriptText` DISP_E_EXCEPTION zurückgibt.|  
@@ -71,7 +71,7 @@ HRESULT ParseScriptText(
   
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
-|`S_OK`|Erfolgreich.|  
+|`S_OK`|Erfolg.|  
 |`DISP_E_EXCEPTION`|Eine Ausnahme tritt bei der Verarbeitung des Scriptlets auf. Der `pexcepinfo`-Parameter enthält Informationen zur Ausnahme.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
@@ -79,10 +79,10 @@ HRESULT ParseScriptText(
 |`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (beispielsweise, wenn die Skript-Engine im nicht initialisierten oder geschlossenen Zustand ist oder der SCRIPTTEXT_ISEXPRESSIONS-Flag festgelegt war und sich die Skript-Engine im initialisierten Zustand befindet).|  
 |`OLESCRIPT_E_SYNTAX`|Ein nicht spezifizierter Syntaxfehler trat im Scriptlet auf.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Wenn die Skript-Engine im initialisierten Zustand ist, wird kein Code tatsächlich während dieses Aufrufs ausgewertet; dieser Code wird vielmehr in die Warteschlange gestellt und ausgeführt, wenn die Skript-Engine in den gestarteten Zustand übergehen soll. Da die Ausführung im initialisierten Zustand nicht zulässig ist, ist es ein Fehler, diese Methode mit dem SCRIPTTEXT_ISEXPRESSIONS-Flag aufzurufen, wenn im initialisierten Zustand.  
   
- Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird z. b. bei der Auswertung der HTML-\<SCRIPT >-Tags verwendet, das das Ausführen von-Anweisungen ermöglicht, während die HTML-Seite erstellt wird, anstatt Sie lediglich in den Skript Zustand zu kompilieren.  
+ Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird z. b. bei der Auswertung des HTML- \<SCRIPT> Tags verwendet, das das Ausführen von Anweisungen ermöglicht, während die HTML-Seite erstellt wird, anstatt Sie lediglich in den Skript Zustand zu kompilieren.  
   
  Der Code, der an diese Methode übergeben wird, muss ein gültiger, vollständiger Teil des Codes sein. Beispielsweise ist es in VBScript nicht zulässig, diese Methode einmal mit "Sub Function(x)" aufzurufen und dann ein zweites Mal mit `End Sub`. Der Parser darf nicht auf den zweiten Aufruf warten, um die Unterroutine abzuschließen. Er muss stattdessen einen Analysefehler generieren, da eine Unterroutinendeklaration gestartet, aber nicht abgeschlossen wurde.  
   
