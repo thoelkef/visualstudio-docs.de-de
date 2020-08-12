@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093937"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041037"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Vorgehensweise: Erweitern des Visual Studio-Buildprozesses
 
@@ -32,7 +32,6 @@ Der Visual Studio-Buildprozess wird durch eine Reihe von MSBuild-*TARGETS*-Datei
 ## <a name="override-predefined-targets"></a>Überschreiben vordefinierter Ziele
 
 Die allgemeinen Ziele enthalten vordefinierte, leere Ziele, die vor und nach einigen der wichtigen Ziele im Buildprozess aufgerufen werden. Beispielsweise ruft MSBuild das `BeforeBuild`-Ziel vor dem `CoreBuild`-Hauptziel und das `AfterBuild`-Ziel nach dem `CoreBuild`-Ziel auf. Die leeren Ziele in den allgemeinen Zielen führen standardmäßig keine Aktionen aus. Sie können aber ihr Standardverhalten überschreiben, indem Sie die Ziele definieren, die in einer Projektdatei enthalten sein sollen, die allgemeine Ziele importiert. Durch das Überschreiben der vordefinierten Ziele können Sie den Buildprozess mit MSBuild-Aufgaben besser steuern.
-Die allgemeinen Ziele enthalten vordefinierte, leere Ziele, die vor und nach einigen der wichtigen Ziele im Buildprozess aufgerufen werden. Beispielsweise ruft MSBuild das `BeforeBuild`-Ziel vor dem `CoreBuild`-Hauptziel und das `AfterBuild`-Ziel nach dem `CoreBuild`-Ziel auf. Die leeren Ziele in den allgemeinen Zielen führen standardmäßig keine Aktionen aus. Sie können aber ihr Standardverhalten überschreiben, indem Sie die Ziele definieren, die in einer Projektdatei enthalten sein sollen, die allgemeine Ziele importiert. Durch das Überschreiben der vordefinierten Ziele können Sie den Buildprozess mit MSBuild-Aufgaben besser steuern.
 
 > [!NOTE]
 > Projekte im Format von SDKs importieren Ziele implizit *nach der letzten Codezeile der Projektdatei*. Das heißt, Sie können die Standardziele nicht überschreiben, es sei denn, Sie legen Ihre Importe wie unter [Vorgehensweise: Verwenden von SDKs für MSBuild-Projekte](how-to-use-project-sdk.md) beschrieben manuell fest.
@@ -41,7 +40,7 @@ Die allgemeinen Ziele enthalten vordefinierte, leere Ziele, die vor und nach ein
 
 1. Identifizieren Sie ein vordefiniertes Ziel in den allgemeinen Zielen, das Sie überschreiben möchten. In der Tabelle unten finden Sie die vollständige Liste der Ziele, die Sie bedenkenlos überschreiben können.
 
-2. Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Zum Beispiel:
+2. Definieren Sie das Ziel bzw. die Ziele am Ende der Projektdatei, unmittelbar vor dem `</Project>`-Tag. Beispiel:
 
     ```xml
     <Project>
@@ -59,10 +58,10 @@ Die allgemeinen Ziele enthalten vordefinierte, leere Ziele, die vor und nach ein
 
 In der folgenden Tabelle werden alle Ziele in den allgemeinen Zielen aufgeführt, die Sie bedenkenlos überschreiben können.
 
-|Zielname|Beschreibung|
+|Zielname|BESCHREIBUNG|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden vor oder nach Abschluss der Kompilierung ausgeführt. Die meisten Anpassungen werden in einem dieser beiden Ziele ausgeführt.|
-|`BeforeBuild`, `AfterBuild`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem alles Weitere erstellt wurde. **Hinweis**:  Die Ziele `BeforeBuild` und `AfterBuild` wurden bereits in Kommentaren am Ende der meisten Projektdateien definiert. Dadurch können Sie ohne großen Aufwand Pre- und Postbuildereignisse zu Ihrer Projektdatei hinzufügen.|
+|`BeforeBuild`, `AfterBuild`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem alles Weitere erstellt wurde. **Hinweis:** Die Ziele `BeforeBuild` und `AfterBuild` wurden bereits in Kommentaren am Ende der meisten Projektdateien definiert. Dadurch können Sie ohne großen Aufwand Pre- und Postbuildereignisse zu Ihrer Projektdatei hinzufügen.|
 |`BeforeRebuild`, `AfterRebuild`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem die Funktion zum Neuerstellen von Kernen aufgerufen wurde. Die Reihenfolge der Ausführung der Ziele in *Microsoft.Common.targets* lautet wie folgt: `BeforeRebuild`, `Clean`, `Build` und anschließend `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem die Funktion zum Löschen von Kernen aufgerufen wurde.|
 |`BeforePublish`, `AfterPublish`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem die Funktion zum Veröffentlichen von Kernen aufgerufen wurde.|
@@ -112,7 +111,7 @@ Im folgenden Beispiel sehen Sie, wie Sie mit dem `AfterTargets`-Attribut ein ben
 
 Mit dem Überschreiben von vordefinierten Zielen lässt sich der Buildprozess leicht erweitern. Da MSBuild die Definition von Zielen aber nacheinander auswertet, können Sie ein anderes Projekt, das Ihr Projekt importiert, nicht daran hindern, die bereits überschriebenen Ziele noch einmal zu überschreiben. Das letzte in der Projektdatei definierte `AfterBuild`-Ziel wird z.B. während des Buildprozesses verwendet, nachdem alle anderen Projekte importiert wurden.
 
-Sie können sich vor dem unbeabsichtigten Überschreiben von Zielen schützen, indem Sie die DependsOn-Eigenschaften überschreiben, die in den `DependsOnTargets`-Attributen der allgemeinen Ziele verwendet werden. So enthält das `Build`-Ziel z.B. einen `DependsOnTargets`-Attributwert von `"$(BuildDependsOn)"`. Betrachten Sie das folgende Beispiel:
+Sie können sich vor dem unbeabsichtigten Überschreiben von Zielen schützen, indem Sie die DependsOn-Eigenschaften überschreiben, die in den `DependsOnTargets`-Attributen der allgemeinen Ziele verwendet werden. So enthält das `Build`-Ziel z.B. einen `DependsOnTargets`-Attributwert von `"$(BuildDependsOn)"`. Zu berücksichtigen:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -130,7 +129,7 @@ Dieser XML-Codeausschnitt gibt an, dass vor der Ausführung des `Build`-Ziels al
 </PropertyGroup>
 ```
 
-Sie können diesen Eigenschaftswert überschreiben, indem Sie eine andere Eigenschaft mit dem Namen `BuildDependsOn` am Ende der Projektdatei deklarieren. Durch Einschließen der vorherigen `BuildDependsOn`-Eigenschaft in die neue Eigenschaft können Sie neue Ziele am Anfang und Ende der Zielliste hinzufügen. Zum Beispiel:
+Sie können diesen Eigenschaftswert überschreiben, indem Sie eine andere Eigenschaft mit dem Namen `BuildDependsOn` am Ende der Projektdatei deklarieren. Durch Einschließen der vorherigen `BuildDependsOn`-Eigenschaft in die neue Eigenschaft können Sie neue Ziele am Anfang und Ende der Zielliste hinzufügen. Beispiel:
 
 ```xml
 <PropertyGroup>
@@ -163,7 +162,7 @@ Projekte, in die Ihre Projektdateien importiert werden, können diese Eigenschaf
 
 ### <a name="commonly-overridden-dependson-properties"></a>Häufig überschriebene DependsOn-Eigenschaften
 
-|Name der Eigenschaft|Beschreibung|
+|Eigenschaftenname|BESCHREIBUNG|
 |-------------------|-----------------|
 |`BuildDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie benutzerdefinierte Ziele vor oder nach dem gesamten Buildprozess einfügen möchten|
 |`CleanDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie die Ausgabe Ihres benutzerdefinierten Buildprozesses bereinigen möchten|
@@ -223,7 +222,7 @@ In diesem Beispiel handelt es sich um ein Projekt im SDK-Format. Wie bereits wei
 
 Die Reihenfolge der Elemente spielt eine wichtige Rolle. Die Elemente `BuildDependsOn` und `CleanDependsOn` müssen nach dem Import der Standarddatei für SDK-Ziele angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Integration von Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
