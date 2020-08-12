@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536187"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114257"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -445,7 +445,7 @@ Hinweis: die von "{n}" notierten Variablen weisen Code Abhängigkeiten auf. Wenn
 
 **Branding.xml**
 
-| | |
+| Funktion | Beschreibung |
 | - | - |
 | Feature: | **Redusiblearea** |
 | Verwendung: | Erweitern des Inhalts Steuer Elements "reduziert" |
