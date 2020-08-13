@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: Automatisches Anhalten von Features
               href: automatic-feature-suspension.md
+            - name: Veröffentlichen von Warnungen
+              items:
+                - name: Übersicht
+                  displayName: publish warnings
+                - name: 'IL3000: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
+                  href: il3000.md
