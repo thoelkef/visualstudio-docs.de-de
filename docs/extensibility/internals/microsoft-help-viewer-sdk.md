@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114257"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168735"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -360,7 +360,7 @@ Wählen Sie in der IDE unter dem Menü Element Hilfe die Option **Debughilfe Kon
 
 In der folgenden Tabelle ist jede Zeichenfolge, die zwischen eckigen Klammern steht, ein Platzhalter, der durch einen anerkannten Wert ersetzt werden muss. In \<meta name="Microsoft.Help.Locale" content="[language code]" /> muss "[Sprachcode]" z. b. durch einen Wert wie "en-US" ersetzt werden.
 
-| Property (HTML-Darstellung) | Beschreibung |
+| Property (HTML-Darstellung) | BESCHREIBUNG |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | Legt ein Gebiets Schema für dieses Thema fest. Wenn dieses Tag in einem Thema verwendet wird, muss es nur einmal verwendet werden, und es muss über alle anderen Microsoft-Hilfe Tags eingefügt werden. Wenn dieses Tag nicht verwendet wird, wird der Textkörper des Themas mithilfe der Wörter Trennung indiziert, die dem Gebiets Schema des Produkts zugeordnet ist, sofern angegeben. Andernfalls wird die Wörter Trennung "en-US" verwendet. Dieses Tag entspricht der ISOC RFC 4646. Um sicherzustellen, dass die Microsoft-Hilfe ordnungsgemäß funktioniert, verwenden Sie diese Eigenschaft anstelle des allgemeinen sprach Attributs. |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | Legt ein Gebiets Schema für dieses Thema fest, wenn auch andere Gebiets Schemas verwendet werden. Wenn dieses Tag in einem Thema verwendet wird, muss es nur einmal verwendet werden. Verwenden Sie dieses Tag, wenn der Katalog Inhalte in mehr als einer Sprache enthält. Mehrere Themen in einem Katalog können dieselbe ID aufweisen, aber jeder muss eine eindeutige topiclocale angeben. Das Thema, das ein topiclocale angibt, das mit dem Gebiets Schema des Katalogs übereinstimmt, ist das Thema, das im Inhaltsverzeichnis angezeigt wird. Allerdings werden alle Sprachversionen des Themas in den Suchergebnissen angezeigt. |
@@ -445,7 +445,7 @@ Hinweis: die von "{n}" notierten Variablen weisen Code Abhängigkeiten auf. Wenn
 
 **Branding.xml**
 
-| Funktion | Beschreibung |
+| Element | BESCHREIBUNG |
 | - | - |
 | Feature: | **Redusiblearea** |
 | Verwendung: | Erweitern des Inhalts Steuer Elements "reduziert" |
@@ -459,7 +459,7 @@ Hinweis: die von "{n}" notierten Variablen weisen Code Abhängigkeiten auf. Wenn
 | Viewcolorizedtext | Farbige Ansicht |
 | Combinedvbtabdisplaylanguage | Visual Basic (Beispiel) |
 | Vbdeclaration | Deklaration |
-| Vbusage | Verbrauch |
+| Vbusage | Verwendung |
 | Feature: | **Feedback, Fußzeile und Logo** |
 | Verwendung: | Stellen Sie ein Feedback-Steuerelement bereit, mit dem Kundenfeedback zum aktuellen Thema per e-Mail senden können.  Copyright Text für den Inhalt.  Logo Definition. |
 | **Element** | **Value (diese Zeichen folgen können so geändert werden, dass Sie die Anforderungen der Inhalts Adoption erfüllen.)** |
