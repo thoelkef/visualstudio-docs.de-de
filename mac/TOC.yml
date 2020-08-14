@@ -92,6 +92,10 @@
       href: data-visualizations.md
     - name: Debuggen von NuGet-Paketen mithilfe von SourceLink
       href: source-link.md
+- name: Test
+  items:
+    - name: Übersicht
+      href: testing.md
 - name: Kompilieren und Erstellen
   items:
     - name: Übersicht
