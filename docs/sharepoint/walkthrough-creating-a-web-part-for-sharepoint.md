@@ -14,11 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "86014585"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247648"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint
 
@@ -203,7 +204,7 @@ Um das im Webpart angezeigte Datenraster aufzufüllen, geben Sie den Pfad der XM
 
 ## <a name="test-the-web-part-verb"></a>Testen des webpartverbs
 
-Zeigen Sie Mitarbeiter an, die keine Manager sind, und blenden Sie diese aus, indem Sie auf ein Element klicken, das im Verbmenü des Webparts angezeigt wird.
+Anzeigen und Ausblenden von Mitarbeitern, die keine Manager sind, indem Sie ein Element auswählen, das im webpartverben-Menü angezeigt wird.
 
 1. Wählen Sie den Pfeil aus, der auf der rechten Seite des Webparts angezeigt wird, und wählen Sie dann im angezeigten Menü **nur Manager anzeigen** aus.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078bce0778122b296dcd918d4a9074eed5397f54
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371845"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250545"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
@@ -163,6 +163,7 @@ Build succeeded.
 Die generierte XML-Ausgabe hat folgendes Format:
 
 ::: moniker range=">=vs-2019"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -217,8 +218,10 @@ Die generierte XML-Ausgabe hat folgendes Format:
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 ::: moniker range="vs-2017"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -269,6 +272,7 @@ Die generierte XML-Ausgabe hat folgendes Format:
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 
 ### <a name="metricsexe"></a>Metrics.exe
@@ -277,7 +281,7 @@ Wenn Sie das nuget-Paket nicht installieren möchten, können Sie die ausführba
 
 1. Klonen Sie das Repository [dotnet/Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers) .
 2. Öffnen Sie Developer-Eingabeaufforderung für Visual Studio als Administrator.
-3. Führen Sie im Stamm **Verzeichnis des Roslyn-Analyzers-** Repository den folgenden Befehl aus:`Restore.cmd`
+3. Führen Sie im Stamm **Verzeichnis des Roslyn-Analyzers-** Repository den folgenden Befehl aus: `Restore.cmd`
 4. Wechseln Sie in das Verzeichnis *src\tools*.
 5. Führen Sie den folgenden Befehl aus, um das Projekt " **Metrics. csproj** " zu erstellen:
 
@@ -332,7 +336,7 @@ Die `LinesOfCode` Metrik ist im neuen befehlszeilencodemetriktool präziser und 
 
 Andere Metriken wie `CyclomaticComplexity` und `MaintainabilityIndex` verwenden dieselben Formeln wie frühere Versionen von *Metrics.exe*, aber das neue Tool zählt die Anzahl der `IOperations` (logischen Quell Anweisungen) anstelle von Intermediate Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig von den Werten, die von der Visual Studio-IDE und früheren Versionen von *Metrics.exe*generiert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden des Fensters "Code Metrikergebnisse"](../code-quality/working-with-code-metrics-data.md)
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
