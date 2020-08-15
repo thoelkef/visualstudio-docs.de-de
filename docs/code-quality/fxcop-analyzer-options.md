@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e87ec97acd7aa0ab668c0840aec8bbd84df7e9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7d6b56bec2174ca71cc66f5424b7bdc309330d95
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587627"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248803"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Optionen für den Regelbereich für FxCop-Analysen
 
@@ -21,12 +21,12 @@ Mit einigen FxCop-Analyse Regeln können Sie verfeinern, auf welche Teile Ihrer 
 Diese Konfigurationsoptionen sind ab Version 2.6.3 des nuget-Pakets [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) verfügbar.
 
 > [!TIP]
-> Die vollständige Liste der Optionen, die für eine bestimmte Version des Pakets "fxcopanalyzers" verfügbar sind, finden Sie in der *Analyse Configuration.MD* -Datei im *Dokumentations* Ordner für das Paket. Die Datei befindet sich unter *% User Profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\<Version\>\documentation\analyzer Configuration.MD*. Diese Konfigurations Dokumentations Datei ist in jeder Version des Pakets enthalten, beginnend mit Version 2.6.5. Im folgenden finden Sie ein Beispiel dafür, wie eine Option in der Datei *Analyzer Configuration.MD* dokumentiert wird:
+> Die vollständige Liste der Optionen, die für eine bestimmte Version des Pakets "fxcopanalyzers" verfügbar sind, finden Sie in der *Analyse Configuration.MD* -Datei im *Dokumentations* Ordner für das Paket. Die Datei befindet sich unter *% User Profile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \documentation\analyzer Configuration.MD*. Diese Konfigurations Dokumentations Datei ist in jeder Version des Pakets enthalten, beginnend mit Version 2.6.5. Im folgenden finden Sie ein Beispiel dafür, wie eine Option in der Datei *Analyzer Configuration.MD* dokumentiert wird:
 >
 > Options Name: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Optionswerte: ganzzahlige Werte \
 > Standardwert: spezifisch für jede konfigurierbare Regel (standardmäßig "100000" für die meisten Regeln) \
-> Ein Beispiel: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
+> Beispiel: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
 
@@ -41,22 +41,22 @@ Diese Konfigurationsoptionen sind ab Version 2.6.3 des nuget-Pakets [Microsoft. 
 | Gibt an, ob asynchrone Methoden ignoriert werden sollen, die keinen Wert zurückgeben. | `true`<br/>`false` | `false` | [CA2007](ca2007.md) |
 
 > [!NOTE]
-> In Version 2.6.3 und früher des Analyzer-Pakets wurde diese Option `skip_async_void_methods`benannt.
+> In Version 2.6.3 und früher des Analyzer-Pakets hieß diese Option `skip_async_void_methods` .
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Ob Einzelzeichen- [Typparameter](/dotnet/csharp/programming-guide/generics/generic-type-parameters) aus der Regel ausgeschlossen werden sollen, z. b. `S` in `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715.md) |
+| Ob [Typparameter](/dotnet/csharp/programming-guide/generics/generic-type-parameters) mit einem Zeichen aus der Regel ausgeschlossen werden sollen, z. b. `S` in `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715.md) |
 
 > [!NOTE]
-> In Version 2.6.3 und früher des Analyzer-Pakets wurde diese Option `allow_single_letter_type_parameters`benannt.
+> In Version 2.6.3 und früher des Analyzer-Pakets hieß diese Option `allow_single_letter_type_parameters` .
 
 ## <a name="output_kind"></a>output_kind
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Gibt an, dass Code in einem Projekt analysiert werden soll, das diesen Assemblytyp generiert. | Ein oder mehrere Felder der <xref:Microsoft.CodeAnalysis.OutputKind>-Enumeration<br/><br/>Trennen Sie mehrere Werte durch ein Komma (,). | Alle Ausgabearten | [CA2007](ca2007.md) |
+| Gibt an, dass Code in einem Projekt analysiert werden soll, das diesen Assemblytyp generiert. | Ein oder mehrere Felder der- <xref:Microsoft.CodeAnalysis.OutputKind> Enumeration.<br/><br/>Trennen Sie mehrere Werte durch ein Komma (,). | Alle Ausgabearten | [CA2007](ca2007.md) |
 
 ## <a name="required_modifiers"></a>required_modifiers
 
@@ -64,7 +64,7 @@ Diese Konfigurationsoptionen sind ab Version 2.6.3 des nuget-Pakets [Microsoft. 
 | - | - | - | - |
 | Gibt die erforderlichen modifiziererer für APIs an, die analysiert werden sollen. | Mindestens ein Wert aus der unten angegebenen Tabelle mit den Modifiziererwerten<br/><br/>Trennen Sie mehrere Werte durch ein Komma (,). | Hängt von jeder Regel ab | [CA1802](ca1802.md) |
 
-| Zulässiger Modifizierer | Summary |
+| Zulässiger Modifizierer | Zusammenfassung |
 | --- | --- |
 | `none` | Keine modifiziereranforderung |
 | `static` oder `Shared` | Muss in Visual Basic als "static" ("Shared") deklariert werden. |
@@ -81,35 +81,34 @@ Diese Konfigurationsoptionen sind ab Version 2.6.3 des nuget-Pakets [Microsoft. 
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Ob die Analyse für den `this`-Parameter der Erweiterungs Methoden übersprungen werden soll. | `true`<br/>`false` | `false` | [CA1062](ca1062.md) |
+| Ob die Analyse für den `this` Parameter der Erweiterungs Methoden übersprungen werden soll. | `true`<br/>`false` | `false` | [CA1062](ca1062.md) |
 
 ## <a name="null_check_validation_methods"></a>null_check_validation_methods
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Namen der Überprüfungsmethoden zur Validierung von Null-Überprüfungen, die die an die Methode übergebenen Argumente überprüfen | Zulässige Methodennamen Formate (durch `|`getrennt):<br/> -Nur Methodenname (schließt alle Methoden mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols mit einem optionalen `M:` Präfix | Keine | [CA1062](ca1062.md) |
+| Namen der Überprüfungsmethoden zur Validierung von Null-Überprüfungen, die die an die Methode übergebenen Argumente überprüfen | Zulässige Methodennamen Formate (durch Trennzeichen getrennt `|` ):<br/> -Nur Methodenname (schließt alle Methoden mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols mit einem optionalen `M:` Präfix | Keine | [CA1062](ca1062.md) |
 
 ## <a name="additional_string_formatting_methods"></a>additional_string_formatting_methods
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Namen von zusätzlichen Zeichen folgen-Formatierungs Methoden | Zulässige Methodennamen Formate (durch `|`getrennt):<br/> -Nur Methodenname (schließt alle Methoden mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols mit einem optionalen `M:` Präfix | Keine | [CA2241](ca2241.md) |
+| Namen von zusätzlichen Zeichen folgen-Formatierungs Methoden | Zulässige Methodennamen Formate (durch Trennzeichen getrennt `|` ):<br/> -Nur Methodenname (schließt alle Methoden mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols mit einem optionalen `M:` Präfix | Keine | [CA2241](ca2241.md) |
 
 ## <a name="excluded_type_names_with_derived_types"></a>excluded_type_names_with_derived_types
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Namen von Typen, sodass der Typ und alle abgeleiteten Typen für die Analyse ausgeschlossen sind | Zulässige Symbolnamen Formate (durch `|`getrennt):<br/> -Nur Typname (schließt alle Typen mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols mit einem optionalen `T:` Präfix | Keine | [CA1303](ca1303.md) |
+| Namen von Typen, sodass der Typ und alle abgeleiteten Typen für die Analyse ausgeschlossen sind | Zulässige Symbolnamen Formate (durch Trennzeichen getrennt `|` ):<br/> -Nur Typname (schließt alle Typen mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols mit einem optionalen `T:` Präfix | Keine | [CA1303](ca1303.md) |
 
 ## <a name="excluded_symbol_names"></a>excluded_symbol_names
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Namen von Symbolen, die für die Analyse ausgeschlossen sind | Zulässige Symbolnamen Formate (durch `|`getrennt):<br/> -Nur Symbol Name (schließt alle Symbole mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols. Jeder Symbol Name erfordert ein Symbolart-Präfix, z. b. "M:"-Präfix für Methoden, "T:"-Präfix für Typen, "N:"-Präfix für Namespaces usw.<br/> - `.ctor` für Konstruktoren und `.cctor` für statische Konstruktoren | Keine | [CA1062](ca1062.md) [CA1303](ca1303.md) [CA2000](ca2000.md) [CA2100](ca2100.md) [CA2301](ca2301.md) [CA2302](ca2302.md)<br/>[CA2311](ca2311.md) [CA2312](ca2312.md) [CA2321](ca2321.md) [CA2322](ca2322.md) [CA2327](ca2327.md) [CA2328](ca2328.md)<br/>[CA2329](ca2329.md) [CA2330](ca2330.md) [CA3001](ca3001.md) [CA3002](ca3002.md) [CA3003](ca3003.md) [CA3004](ca3004.md)<br/>[CA3005](ca3005.md) [CA3006](ca3006.md) [CA3007](ca3007.md) [CA3008](ca3008.md) [CA3009](ca3009.md) [CA3010](ca3010.md)<br/>[CA3011](ca3011.md) [CA3012](ca3012.md) [CA5361](ca5361.md) CA5376 CA5377 [CA5378](ca5378.md)<br/>[CA5380](ca5380.md) [CA5381](ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](ca5389.md) CA5390 |
+| Namen von Symbolen, die für die Analyse ausgeschlossen sind | Zulässige Symbolnamen Formate (durch Trennzeichen getrennt `|` ):<br/> -Nur Symbol Name (schließt alle Symbole mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols. Jeder Symbol Name erfordert ein Symbolart-Präfix, z. b. "M:"-Präfix für Methoden, "T:"-Präfix für Typen, "N:"-Präfix für Namespaces usw.<br/> - `.ctor` für Konstruktoren und `.cctor` für statische Konstruktoren | Keine | [CA1062](ca1062.md) [CA1303](ca1303.md) [CA2000](ca2000.md) [CA2100](ca2100.md) [CA2301](ca2301.md) [CA2302](ca2302.md)<br/>[CA2311](ca2311.md) [CA2312](ca2312.md) [CA2321](ca2321.md) [CA2322](ca2322.md) [CA2327](ca2327.md) [CA2328](ca2328.md)<br/>[CA2329](ca2329.md) [CA2330](ca2330.md) [CA3001](ca3001.md) [CA3002](ca3002.md) [CA3003](ca3003.md) [CA3004](ca3004.md)<br/>[CA3005](ca3005.md) [CA3006](ca3006.md) [CA3007](ca3007.md) [CA3008](ca3008.md) [CA3009](ca3009.md) [CA3010](ca3010.md)<br/>[CA3011](ca3011.md) [CA3012](ca3012.md) [CA5361](ca5361.md) CA5376 CA5377 [CA5378](ca5378.md)<br/>[CA5380](ca5380.md) [CA5381](ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](ca5389.md) CA5390 |
 
 ## <a name="disallowed_symbol_names"></a>disallowed_symbol_names
 
 | Beschreibung | Zulässige Werte | Standardwert | Konfigurierbare Regeln |
 | - | - | - | - |
-| Namen von Symbolen, die im Kontext der Analyse nicht zulässig sind | Zulässige Symbolnamen Formate (durch `|`getrennt):<br/> -Nur Symbol Name (schließt alle Symbole mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols. Jeder Symbol Name erfordert ein Symbolart-Präfix, z. b. "M:"-Präfix für Methoden, "T:"-Präfix für Typen, "N:"-Präfix für Namespaces usw.<br/> - `.ctor` für Konstruktoren und `.cctor` für statische Konstruktoren | Keine | [CA1031](ca1031.md) |
-
+| Namen von Symbolen, die im Kontext der Analyse nicht zulässig sind | Zulässige Symbolnamen Formate (durch Trennzeichen getrennt `|` ):<br/> -Nur Symbol Name (schließt alle Symbole mit dem Namen ein, unabhängig vom enthaltenden Typ oder Namespace)<br/> -Voll qualifizierte Namen im [Dokumentations-ID-Format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)des Symbols. Jeder Symbol Name erfordert ein Symbolart-Präfix, z. b. "M:"-Präfix für Methoden, "T:"-Präfix für Typen, "N:"-Präfix für Namespaces usw.<br/> - `.ctor` für Konstruktoren und `.cctor` für statische Konstruktoren | Keine | [CA1031](ca1031.md) |

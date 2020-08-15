@@ -1,5 +1,5 @@
 ---
-title: Anatomie eines VSIX-Pakets | Microsoft Docs
+title: Anatomie eines VSIX-Pakets | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,49 +12,49 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a6d3f994c531bd36ab4281c5f0b27e993cd3392
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c52f87426b9f06ad40d77c2cc9e7be1627d2c82d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740096"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250828"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie eines VSIX-Pakets
-Ein VSIX-Paket ist eine *VSIX-Datei,* die eine oder mehrere Visual Studio-Erweiterungen enthält, zusammen mit den Metadaten, die Visual Studio zum Klassifizieren und Installieren der Erweiterungen verwendet. Diese Metadaten sind im VSIX-Manifest und in der Datei *[Content_Types].xml* enthalten. Ein VSIX-Paket kann auch eine oder mehrere *Extension.vsixlangpack-Dateien* enthalten, um lokalisierten Setuptext bereitzustellen, und möglicherweise zusätzliche VSIX-Pakete zum Installieren von Abhängigkeiten enthalten.
+Bei einem VSIX-Paket handelt es sich um eine *VSIX* -Datei, die eine oder mehrere Visual Studio-Erweiterungen enthält, sowie die Metadaten, die Visual Studio zum klassifizieren und Installieren der Erweiterungen verwendet. Diese Metadaten sind im VSIX-Manifest und in der Datei *[Content_Types]. XML* enthalten. Ein VSIX-Paket kann auch eine oder mehrere *Extension. vsixlangpack* -Dateien enthalten, um lokalisierten Setup Text bereitzustellen, und kann weitere VSIX-Pakete enthalten, um Abhängigkeiten zu installieren.
 
- Das VSIX-Paketformat folgt dem Open Packaging Conventions (OPC)-Standard. Das Paket enthält Binärdateien und unterstützende Dateien sowie eine *[Content_Types].xml-Datei* und eine *.vsix-Manifestdatei.* Ein VSIX-Paket kann die Ausgabe mehrerer Projekte oder sogar mehrerer Pakete enthalten, die eigene Manifeste haben.
+ Das VSIX-Paketformat folgt dem OPC-Standard (Open Packaging Conventions). Das Paket enthält Binärdateien und unterstützende Dateien sowie eine *[Content_Types]. XML* -Datei und eine *VSIX* -Manifest-Datei. Ein VSIX-Paket kann die Ausgabe mehrerer Projekte oder sogar mehrerer Pakete enthalten, die eigene Manifeste enthalten.
 
 > [!NOTE]
-> Die Namen der in VSIX-Paketen enthaltenen Dateien dürfen keine Leerzeichen oder Zeichen enthalten, die in Uniform Resource Identifiers (URI) reserviert sind, wie unter [ \[RFC2396\]](https://www.rfc-editor.org/rfc/rfc2396.txt)definiert.
+> Die Namen der Dateien, die in VSIX-Paketen enthalten sind, dürfen keine Leerzeichen und keine Zeichen enthalten, die in URI (Uniform Resource Identifier) reserviert sind, wie unter [ \[ rfc2396 \] ](https://www.rfc-editor.org/rfc/rfc2396.txt)definiert.
 
 ## <a name="the-vsix-manifest"></a>Das VSIX-Manifest
- Das VSIX-Manifest enthält Informationen über die zu installierende Erweiterung und folgt dem VSX-Schema. Weitere Informationen finden Sie unter [VSIX-Erweiterungsschema 1.0-Referenz](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Ein Beispiel vSIX-Manifest finden Sie unter [PackageManifest-Element (root-Element, VSX-Schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).
+ Das VSIX-Manifest enthält Informationen über die zu installierende Erweiterung und folgt dem VSX-Schema. Weitere Informationen finden Sie in der [Referenz zum VSIX-Erweiterungs Schema 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Ein Beispiel für ein VSIX-Manifest finden Sie unter [packagemanifest-Element (Stamm Element, VSX-Schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).
 
- Das VSIX-Manifest `extension.vsixmanifest` muss benannt werden, wenn es in einer Datei mit dem Namen .vsix* enthalten ist.
+ Das VSIX-Manifest muss benannt werden, `extension.vsixmanifest` Wenn es in einer ^. vsix *-Datei enthalten ist.
 
 ## <a name="the-content"></a>der Inhalt
- Ein VSIX-Paket kann Vorlagen, Toolboxelemente, VSPackages oder jede andere Art von Erweiterung enthalten, die von Visual Studio unterstützt wird.
+ Ein VSIX-Paket kann Vorlagen, Toolbox Elemente, VSPackages oder eine beliebige andere Art von Erweiterung enthalten, die von Visual Studio unterstützt wird.
 
-## <a name="language-packs"></a>Language Packs
- Ein VSIX-Paket kann ein oder mehr *Extension.vsixlangpack-Dateien* enthalten, um lokalisierten Text während der Installation bereitzustellen. Weitere Informationen finden Sie unter [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md).
+## <a name="language-packs"></a>Sprachpakete
+ Ein VSIX-Paket kann eine oder mehrere *Extension. vsixlangpack* -Dateien enthalten, um lokalisierten Text während der Installation bereitzustellen. Weitere Informationen finden Sie unter [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md).
 
-## <a name="dependencies-and-references"></a>Abhängigkeiten und Referenzen
- Ein VSIX-Paket kann andere VSIX-Pakete als Referenzen enthalten. Jedes dieser anderen Pakete muss ein eigenes VSIX-Manifest enthalten.
+## <a name="dependencies-and-references"></a>Abhängigkeiten und Verweise
+ Ein VSIX-Paket kann andere VSIX-Pakete als Verweise enthalten. Jedes dieser anderen Pakete muss ein eigenes VSIX-Manifest enthalten.
 
- Wenn ein Benutzer versucht, eine Erweiterung mit Abhängigkeiten zu installieren, überprüft das Installationsprogramm, ob die erforderlichen Assemblys auf dem Benutzersystem installiert sind. Wenn die erforderlichen Assemblys nicht gefunden werden, zeigt **Extensions and Updates** eine Liste der fehlenden Assemblys an.
+ Wenn ein Benutzer versucht, eine Erweiterung zu installieren, die Abhängigkeiten aufweist, wird vom Installationsprogramm überprüft, ob die erforderlichen Assemblys auf dem Benutzersystem installiert sind. Wenn die erforderlichen Assemblys nicht gefunden werden, wird in **Erweiterungen und Updates** eine Liste der fehlenden Assemblys angezeigt.
 
- Wenn das Erweiterungsmanifest ein oder mehrere [Referenzelemente](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) enthält, vergleicht **Extensions and Updates** das Manifest jedes Verweises mit den Erweiterungen, die auf dem System installiert sind, und installiert die referenzierte Erweiterung, wenn sie nicht bereits installiert ist. Wenn eine frühere Version einer referenzierten Erweiterung installiert ist, ersetzt sie durch die neuere Version.
+ Wenn das Erweiterungs Manifest ein oder mehrere [Verweis](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) Elemente enthält, vergleicht **Erweiterungen und Updates** das Manifest jedes Verweises mit den Erweiterungen, die auf dem System installiert sind, und installiert die referenzierte Erweiterung, wenn Sie nicht bereits installiert ist. Wenn eine frühere Version einer Erweiterung installiert ist, auf die verwiesen wird, ersetzt Sie die neuere Version.
 
- Wenn ein Projekt in einer Projektmappe mit mehreren Projekten einen Verweis auf ein anderes Projekt in derselben Projektmappe enthält, enthält das VSIX-Paket die Abhängigkeiten dieses Projekts. Sie können dieses Verhalten überschreiben, indem Sie auf die Referenz für das interne Projekt klicken und `BuiltProjectOutputGroup`dann im Fenster **Eigenschaften** die in der **VSIX-Eigenschaft enthaltenen Ausgabegruppen** auf festlegen.
+ Wenn ein Projekt in einer Projekt Mappe mit mehreren Projekten einen Verweis auf ein anderes Projekt in der gleichen Projekt Mappe enthält, enthält das VSIX-Paket die Abhängigkeiten des Projekts. Sie können dieses Verhalten überschreiben, indem Sie den Verweis für das interne Projekt auswählen und dann im **Eigenschaften** Fenster die in der **VSIX-Eigenschaft enthaltenen Ausgabe Gruppen** auf festlegen `BuiltProjectOutputGroup` .
 
- Um Satelliten-DLLs aus Assemblys, auf die `SatelliteDllsProjectOutputGroup` verwiesen wird, in das VSIX-Paket einzuschließen, fügen Sie die in der **VSIX-Eigenschaft enthaltene Ausgabegruppen** hinzu.
+ Um Satelliten-DLLs aus referenzierten Assemblys im VSIX-Paket einzuschließen, fügen Sie `SatelliteDllsProjectOutputGroup` den **in der VSIX-Eigenschaft enthaltenen Ausgabe Gruppen** hinzu.
 
 ## <a name="installation-location"></a>Installationspfad
- Während der Installation sucht **Extensions and Updates** nach dem Inhalt des VSIX-Pakets in einem Ordner unter *%LocalAppData%-Microsoft-VisualStudio-Erweiterungen*.
+ Während der Installation sucht **Extensions und Updates** nach dem Inhalt des VSIX-Pakets in einem Ordner unter *%LocalAppData%\microsoft\visualstudio\14.0\Extensions*.
 
- Standardmäßig gilt die Installation nur für den aktuellen Benutzer, da *%LocalAppData%* ein benutzerspezifisches Verzeichnis ist. Wenn Sie jedoch das [AllUsers-Element](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) `True`des Manifests auf festlegen, wird die Erweiterung unter <em>installiert. \\ </em>VisualStudioInstallationFolder<em>, Common7, IDE, Erweiterungen</em> und steht allen Benutzern des Computers zur Verfügung.
+ Standardmäßig gilt die Installation nur für den aktuellen Benutzer, da *% LocalAppData%* ein benutzerspezifisches Verzeichnis ist. Wenn Sie jedoch das [ALLUSERS](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) -Element des Manifests auf festlegen `True` , wird die Erweiterung unter installiert <em>. \\ </em> Visualstudioinstallationfolder<em>\common7\ide\Extensions</em> und steht allen Benutzern des Computers zur Verfügung.
 
-## <a name="content_typesxml"></a>[Content_Types].xml
- Die Datei *[Content_Types].xml* identifiziert die Dateitypen in der erweiterten *.vsix-Datei.* Visual Studio verwendet diese Datei während der Installation des Pakets, installiert die Datei jedoch nicht selbst. Weitere Informationen zu dieser Datei finden Sie unter [Die Struktur der Datei [Content_types].xml](the-structure-of-the-content-types-dot-xml-file.md).
+## <a name="content_typesxml"></a>[Content_Types]. XML
+ Die Datei *[Content_Types]. XML* identifiziert die Dateitypen in der erweiterten *VSIX* -Datei. Visual Studio verwendet diese Datei bei der Installation des Pakets, installiert die Datei jedoch nicht selbst. Weitere Informationen zu dieser Datei finden Sie [in der Struktur der Datei [Content_Types]. XML](the-structure-of-the-content-types-dot-xml-file.md).
 
- Eine *[Content_Types].xml-Datei* ist nach dem Open Packaging Conventions (OPC)-Standard erforderlich. Weitere Informationen zu OPC finden Sie unter [OPC: Ein neuer Standard für](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) das Verpacken Ihrer Daten auf der MSDN-Website.
+ Eine *[Content_Types]. XML* -Datei wird vom OPC-Standard (Open Packaging Conventions) benötigt. Weitere Informationen zu OPC finden Sie unter [OPC: ein neuer Standard zum Verpacken Ihrer Daten](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) auf der MSDN-Website.
