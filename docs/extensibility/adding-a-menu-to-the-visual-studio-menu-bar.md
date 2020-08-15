@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61321555a6896fad926d2ee38c5d73d50801d6b9
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.openlocfilehash: aa3ab53bbda2582d1a9b3c60ac07fd3617d51ddf
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86972347"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248778"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Hinzufügen eines Menüs zur Visual Studio-Menüleiste
 
@@ -43,13 +43,13 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker range="vs-2017"
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Wählen Sie im **Projektmappen-Explorer**den Projekt Knoten aus, und **halten Sie ihn**gedrückt (bzw. Klicken Sie mit der rechten Maustaste darauf)  >   **New Item**. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie dann **Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Wählen Sie im **Projektmappen-Explorer**den Projekt Knoten aus, und **halten Sie ihn**gedrückt (bzw. Klicken Sie mit der rechten Maustaste darauf)  >   **New Item**. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie dann **Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
 
 ::: moniker-end
 
@@ -163,7 +163,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker-end
 
-3. Klicken Sie im Menü **Test** auf **Test**.
+3. Klicken Sie im Menü **Test** auf **Test Befehl**.
 
     Es sollte ein Meldungs Feld angezeigt werden, in dem die Meldung "TestCommand in toplevelmenu. TestCommand. MenuItemCallBack ()" angezeigt wird.
 
