@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7c4d14f2970f9d77e78fd90dd58efcdac100e4c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: cb0f0e66d623f53c641126f1e07edaa476d831ae
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903963"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248596"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms Toolbox-Steuer Elements
 
@@ -35,7 +35,7 @@ Mit der Windows Forms Toolbox-Steuerelement Vorlage wird ein nicht definiertes B
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen `MyWinFormsControl` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine **Windows Forms Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `Counter` . Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **Windows Forms Toolbox-Steuer** Element aus.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine **Windows Forms Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `Counter` . Wählen Sie im **Projektmappen-Explorer**den Projekt Knoten aus, und **halten Sie ihn**gedrückt (bzw. Klicken Sie mit der rechten Maustaste darauf)  >  **New Item**. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **Windows Forms Toolbox-Steuer** Element aus.
 
 3. Dadurch wird ein Benutzer Steuerelement, ein `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> zum Platzieren des Steuer Elements in der **Toolbox**und ein **Microsoft. VisualStudio. ToolboxControl** -Asset-Eintrag im VSIX-Manifest für die Bereitstellung hinzugefügt.
 
@@ -45,7 +45,7 @@ Das `Counter` -Steuerelement erfordert zwei untergeordnete Steuerelemente: a <xr
 
 #### <a name="to-build-the-user-interface"></a>So erstellen Sie die Benutzeroberfläche
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf *counter.cs* , um Sie im Designer zu öffnen.
+1. Doppel Tippen Sie in **Projektmappen-Explorer**auf *counter.cs* , oder Doppelklicken Sie darauf, um es im Designer zu öffnen.
 
 2. **Klicken Sie hier.** Schaltfläche, die standardmäßig eingeschlossen ist, wenn Sie die Windows Forms Toolbox-Steuerelement Vorlage hinzufügen.
 
@@ -67,7 +67,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
 #### <a name="to-code-the-user-control"></a>So codieren Sie das Benutzer Steuerelement
 
-1. Doppelklicken Sie auf das Formular, um den Lade Ereignishandler im Code Fenster zu öffnen.
+1. Doppel tippen oder Doppelklicken Sie auf das Formular, um den Lade Ereignishandler im Code Fenster zu öffnen.
 
 2. Erstellen Sie oberhalb der Ereignishandlermethode in der Steuerelement Klasse eine Ganzzahl, um den Leistungswert und eine Zeichenfolge zum Speichern des Anzeige Texts zu speichern, wie im folgenden Beispiel gezeigt.
 
@@ -130,7 +130,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
     Aufrufer können diesem Ereignishandler hinzufügen, um auf Änderungen im Wert des Zählers zu reagieren.
 
-7. Kehren Sie zur Entwurfs Ansicht zurück, und doppelklicken Sie auf die Schaltfläche **Zurücksetzen** , um den `btnReset_Click` Ereignishandler zu generieren, und füllen Sie ihn aus, wie im folgenden Beispiel gezeigt.
+7. Kehren Sie zur Entwurfs Ansicht zurück, und Doppel tippen oder Doppelklicken Sie auf die Schaltfläche **Zurücksetzen** , um den `btnReset_Click` Ereignishandler zu generieren. Füllen Sie ihn dann wie im folgenden Beispiel gezeigt aus.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -162,7 +162,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
 2. Erstellen Sie in der experimentellen Instanz von Visual Studio ein **Windows Forms-Anwendungs** Projekt.
 
-3. Doppelklicken Sie in **Projektmappen-Explorer**auf *Form1.cs* , um Sie im Designer zu öffnen, wenn Sie nicht bereits geöffnet ist.
+3. Doppel Tippen Sie in **Projektmappen-Explorer**auf *Form1.cs* , oder Doppelklicken Sie darauf, um es im Designer zu öffnen, wenn es nicht bereits geöffnet ist.
 
 4. In der **Toolbox**sollte das `Counter` Steuerelement im Abschnitt **Allgemein** angezeigt werden.
 
@@ -172,7 +172,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
 7. Ziehen <xref:System.Windows.Forms.Button> Sie ein-Steuerelement auf das Formular, und legen Sie dann die Eigenschaften Name und Text der Schaltfläche auf fest `Test` .
 
-8. Doppelklicken Sie auf die Schaltfläche, um *Form1.cs* in der Code Ansicht zu öffnen, und erstellen Sie einen Klick Handler.
+8. Doppel Tippen Sie auf die Schaltfläche, um *Form1.cs* in der Code Ansicht zu öffnen, und erstellen Sie einen Klick Handler.
 
 9. Klicken Sie im Click-Handler auf `counter1.Increment()` .
 
@@ -203,7 +203,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
     Die Schaltfläche **Zurücksetzen** wird ausgeblendet.
 
-16. Klicken Sie auf " **Testen** ", bis der Wert für jedes Mal **5** schließt.
+16. Wählen Sie **Test** aus, bis der Wert **5** jedes Mal zum Schließen der Meldungs Felder erreicht wird.
 
     Die Schaltfläche **Zurücksetzen** wird erneut angezeigt.
 
@@ -215,7 +215,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
 Wenn Sie ein **Toolbox** -Steuerelement erstellen, erstellt Visual Studio eine Datei namens *Projektname. vsix* im Ordner "" \bin\debug\ "des Projekts. Sie können das-Steuerelement bereitstellen, indem Sie die *VSIX* -Datei in ein Netzwerk oder auf eine Website hochladen. Wenn ein Benutzer die *VSIX* -Datei öffnet, wird das Steuerelement installiert und der Visual Studio- **Toolbox** auf dem Computer des Benutzers hinzugefügt. Alternativ dazu können **Sie die** *VSIX* -Datei in [Visual Studio Marketplace](https://marketplace.visualstudio.com/) hochladen, damit Benutzer Sie finden können, indem Sie im Dialogfeld Extras  >  **Erweiterungen und Updates** suchen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Erstellen eines WPF-Toolbox-Steuer Elements](../extensibility/creating-a-wpf-toolbox-control.md)
