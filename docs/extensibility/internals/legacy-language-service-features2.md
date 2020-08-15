@@ -1,5 +1,5 @@
 ---
-title: Legacy-Sprachdienstfunktionen2 | Microsoft Docs
+title: Legacy Sprachdienst Features2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,44 +10,44 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f12e816476aa54f334988b99b9e86e820784f6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 04e7df7fc5c7532d2db45bc2b643a249d1e566c7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707370"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237905"
 ---
-# <a name="legacy-language-service-features"></a>Funktionen von Legacysprachdiensten
-In den folgenden Themen werden einige der älteren Sprachdienstfeatures aufgeführt, die Sie bereitstellen können.
+# <a name="legacy-language-service-features-2"></a>Funktionen von Legacy Sprachdiensten 2
+In den folgenden Themen werden einige der Funktionen von Legacy Sprachdiensten aufgelistet, die Sie bereitstellen können.
 
- Ältere Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Möglichkeit zum Implementieren von Sprachdienstfunktionen besteht darin, MEF-Erweiterungen zu verwenden. Weitere Informationen zur neuen Möglichkeit zum Implementieren eines Sprachdienstes finden Sie unter [Editor- und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren eines sprach Dienstanbieter finden Sie unter [Editor-und Sprachdienst Erweiterungen](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Es wird empfohlen, die neue Editor-API so schnell wie möglich zu verwenden. Dadurch wird die Leistung Ihres Sprachdienstes verbessert und Sie können die neuen Editorfunktionen nutzen.
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Syntaxfarben in einem Legacysprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Erläutert, wie Syntaxfarben implementiert werden.
+ Erläutert, wie Syntax Farben implementiert werden.
 
 - [Automatisches Formatieren in einem Legacysprachdienst](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)
 
- Erläutert das Implementieren der automatischen Formatierung.
+ Erläutert, wie die automatische Formatierung implementiert wird.
 
 - [Parameterinformationen in einem Legacysprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Erläutert, wie das IntelliSense Parameter Info Tooltip implementiert wird.
+ Erläutert, wie die IntelliSense-Parameter Info-QuickInfo implementiert wird.
 
 - [Anweisungsvervollständigung in einem Legacysprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- Erläutert, wie die IntelliSense-Anweisungsliste und die Mitgliedervervollständigungsliste implementiert werden.
+ Erläutert, wie die IntelliSense-Anweisungs Liste und die Element Vervollständigungsliste implementiert werden.
 
 - [Gliederung und ausgeblendeter Text in einem Legacysprachdienst](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)
 
- Erläutert, wie Umriss oder ausgeblendeter Text implementiert wird.
+ Erläutert, wie Gliederung oder ausgeblendeter Text implementiert wird.
 
 - [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Erläutert einige der Schritte zum Implementieren der Debuggerunterstützung.
+ Erläutert einige der Schritte zum Implementieren der Debugger-Unterstützung.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
