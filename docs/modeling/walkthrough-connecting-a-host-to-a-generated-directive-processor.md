@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535862"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237996"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 
@@ -41,7 +41,7 @@ Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
-| | |
+| Komponente | Link |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
@@ -67,7 +67,7 @@ In dieser exemplarischen Vorgehensweise verwenden Sie den Assistenten für domä
 
    Weitere Informationen zum Erstellen einer domänenspezifischen Sprachlösung finden Sie unter Gewusst [wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+2. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
    > [!IMPORTANT]
    > In diesem Schritt wird der Direktivenprozessor generiert und der Schlüssel für ihn in der Registrierung hinzugefügt.
@@ -90,7 +90,7 @@ Nachdem Sie den Direktivenprozessor generiert haben, verbinden Sie den Direktive
 
 1. Öffnen Sie die Projekt Mappe "customhost".
 
-2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
+2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen**.
 
      Das Dialogfeld **Verweis hinzufügen** wird geöffnet, und die Registerkarte **.net** wird angezeigt.
 
@@ -230,7 +230,7 @@ Nachdem Sie den Direktivenprozessor generiert haben, verbinden Sie den Direktive
 
 7. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
-8. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+8. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>Testen des benutzerdefinierten Hosts mit dem Direktivenprozessor
 
@@ -360,6 +360,6 @@ Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)

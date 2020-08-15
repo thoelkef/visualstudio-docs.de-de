@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547315"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238360"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms basierten domänenspezifischen Sprache
 
@@ -30,10 +30,8 @@ Mit der Vorlage für den **minimalen WinForm-Designer** DSL wird eine minimale D
 
     In dieser exemplarischen Vorgehensweise werden die folgenden Namen angenommen:
 
-   | | |
-   |-|-|
-   | Lösungs-und DSL-Name | Farmapp |
-   | Namespace | Company. farmapp |
+    - Lösungs-und DSL-Name: `FarmApp`
+    - Namespace: `Company.FarmApp`
 
 2. Experimentieren Sie mit dem ersten Beispiel, das von der Vorlage bereitstellt wird:
 
@@ -51,9 +49,9 @@ Mit der Vorlage für den **minimalen WinForm-Designer** DSL wird eine minimale D
 
    Beachten Sie in der Haupt Instanz von Visual Studio die folgenden Punkte zur DSL-Lösung:
 
-- `DslDefinition.dsl`enthält keine Diagramm Elemente. Dies liegt daran, dass Sie keine DSL-Diagramme verwenden, um instanzmodelle dieser DSL anzuzeigen. Stattdessen binden Sie ein Windows Form an das Modell, und die Elemente im Formular zeigen das Modell an.
+- `DslDefinition.dsl` enthält keine Diagramm Elemente. Dies liegt daran, dass Sie keine DSL-Diagramme verwenden, um instanzmodelle dieser DSL anzuzeigen. Stattdessen binden Sie ein Windows Form an das Modell, und die Elemente im Formular zeigen das Modell an.
 
-- Zusätzlich zu den `Dsl` -und- `DslPackage` Projekten enthält die Projekt Mappe ein drittes Projekt mit dem Namen " `UI.` **UI** Project", das die Definition eines Windows Forms-Steuer Elements enthält. `DslPackage`hängt von ab `UI` und ist von abhängig `UI` `Dsl` .
+- Zusätzlich zu den `Dsl` -und- `DslPackage` Projekten enthält die Projekt Mappe ein drittes Projekt mit dem Namen " `UI.` **UI** Project", das die Definition eines Windows Forms-Steuer Elements enthält. `DslPackage` hängt von ab `UI` und ist von abhängig `UI` `Dsl` .
 
 - Enthält im- `DslPackage` Projekt `UI\DocView.cs` den Code, der das Windows Forms Steuerelement anzeigt, das im Projekt definiert ist `UI` .
 
@@ -86,9 +84,9 @@ Die folgende DSL-Definition wird in dieser exemplarischen Vorgehensweise verwend
 
 4. Verwenden Sie das **benannte Domänen Klassen** Tool, um die folgenden Domänen Klassen zu erstellen:
 
-    - `Field`-Übergeben Sie eine zusätzliche Domänen Eigenschaft mit dem Namen `Size` .
+    - `Field` -Übergeben Sie eine zusätzliche Domänen Eigenschaft mit dem Namen `Size` .
 
-    - `Animal`-Legen Sie in der Eigenschaftenfenster **Vererbungs Modifizierer** auf **abstract**fest.
+    - `Animal` -Legen Sie in der Eigenschaftenfenster **Vererbungs Modifizierer** auf **abstract**fest.
 
 5. Verwenden Sie das **Domänen Klassen** Tool, um die folgenden Klassen zu erstellen:
 
@@ -162,7 +160,7 @@ Nun können Sie ein neues Benutzer Steuerelement erstellen, in dem die im DSL-Mo
 
      Legen Sie die **DataMember** -Eigenschaft auf **animals** oder **Fields**fest.
 
-10. Legen Sie die **DataSource** -Eigenschaften von `AnimalGridView` auf `AnimalBinding` und von `FieldGridView` auf fest `FieldBinding` .
+10. Legen Sie die **DataSource** -Eigenschaften von `AnimalGridView` auf `AnimalBinding` und von  `FieldGridView` auf fest `FieldBinding` .
 
 11. Passen Sie das Layout des Steuer Elements Farm an Ihren Geschmack an.
 
@@ -220,7 +218,7 @@ Die DSL-Lösung kann nun erstellt und ausgeführt werden, obwohl Sie möglicherw
 
 3. Öffnen Sie im **farmapp-Explorer**das Kontextmenü für den Stamm Knoten **Farm** , und wählen Sie **neue Ziege hinzufügen**aus.
 
-     `Goat1`wird in der Ansicht " **Tiere** " angezeigt.
+     `Goat1` wird in der Ansicht " **Tiere** " angezeigt.
 
     > [!WARNING]
     > Sie müssen das Kontextmenü auf dem **Farm** Knoten und nicht auf dem Knoten " **animals** " verwenden.

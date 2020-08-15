@@ -1,5 +1,5 @@
 ---
-title: Parameterinformationen in einem Legacy Language Service2 | Microsoft Docs
+title: Parameter Informationen in einer Legacy Sprache Service2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2c40c9ca5c038a70714545f4133db0c0dd686d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80706745"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237957"
 ---
-# <a name="parameter-info-in-a-legacy-language-service"></a>Parameterinformationen in einem Legacysprachdienst
-IntelliSense Parameter Info ist eine QuickInfo, die die Signatur einer Methode anzeigt, wenn der Benutzer das Parameterlistenstartzeichen (in der Regel eine offene Klammer) für die Methodenparameterliste eingibt. Wenn jeder Parameter eingegeben wird und das Parametertrennzeichen (in der Regel ein Komma) eingegeben wird, wird die QuickInfo aktualisiert, um den nächsten Parameter fett anzuzeigen.
+# <a name="parameter-info-in-a-legacy-language-service-2"></a>Parameter Informationen in einem Legacy Sprachdienst 2
+IntelliSense-Parameter Info ist eine QuickInfo, die die Signatur einer Methode anzeigt, wenn der Benutzer das Parameter Listen-Startzeichen (in der Regel eine öffnende Klammer) für die Methoden Parameter Liste eingibt. Wenn jeder Parameter eingegeben und das Parameter Trennzeichen (in der Regel ein Komma) eingegeben wird, wird die QuickInfo aktualisiert, um den nächsten Parameter fett anzuzeigen.
 
- Die MPF-Klassen (Managed Package Framework) unterstützen die Verwaltung des Tooltips "Parameterinfo". Der Parser muss Parameterstart, Parameter next und Parameterendzeichen erkennen und eine Liste der Methodensignaturen und der zugehörigen Parameter bereitstellen.
+ Die MPF-Klassen (Managed Package Framework) unterstützen die Verwaltung der QuickInfo-Parameter info. Der Parser muss Parameter Start-, Parameter-Next-und Parameter Endzeichen erkennen, und er muss eine Liste der Methoden Signaturen und der zugehörigen Parameter angeben.
 
- Ältere Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Möglichkeit zum Implementieren von Sprachdienstfunktionen besteht darin, MEF-Erweiterungen zu verwenden. Weitere Informationen finden Sie unter [Erweitern des Editors und der Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen finden Sie unter [Erweitern des Editors und der Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Es wird empfohlen, die neue Editor-API so schnell wie möglich zu verwenden. Dadurch wird die Leistung Ihres Sprachdienstes verbessert und Sie können die neuen Editorfunktionen nutzen.
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.
 
 ## <a name="implementation"></a>Implementierung
- Der Parser sollte festlegen, dass der Triggerwert <xref:Microsoft.VisualStudio.Package.TokenTriggers> festgelegt wird, wenn er ein Parameterlistenstartzeichen findet (häufig eine offene Klammer). Es sollte <xref:Microsoft.VisualStudio.Package.TokenTriggers> einen Trigger setzen, wenn ein Parametertrennzeichen (häufig ein Komma) gefunden wird. Dadurch wird eine Parameterinfo-Tooltip aktualisiert und der nächste Parameter fett dargestellt. Der Parser sollte den <xref:Microsoft.VisualStudio.Package.TokenTriggers> Triggerwert festlegen, wenn das Endzeichen der Parameterliste gefunden wird (häufig eine enge Klammer).
+ Der Parser sollte festlegen, dass der Wert des Auslösers <xref:Microsoft.VisualStudio.Package.TokenTriggers> festgelegt wird, wenn er ein Startzeichen für eine Parameterliste findet (häufig eine öffnende Klammer). Sie sollte einen- <xref:Microsoft.VisualStudio.Package.TokenTriggers> Parameter festlegen, wenn ein Parameter Trennzeichen (häufig ein Komma) gefunden wird. Dies bewirkt, dass die QuickInfo für die Parameter Info aktualisiert und der nächste Parameter fett angezeigt wird. Der Parser sollte den Wert des Auslösers festlegen, wenn <xref:Microsoft.VisualStudio.Package.TokenTriggers> der das Parameterlisten-Endzeichen findet (häufig eine schließende Klammer).
 
- Der <xref:Microsoft.VisualStudio.Package.TokenTriggers> Triggerwert initiiert einen <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> Aufruf der Methode, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> die wiederum den Methodenparser <xref:Microsoft.VisualStudio.Package.ParseReason>mit einem Parse-Grund von aufruft. Wenn der Parser feststellt, dass der Bezeichner vor dem Parameterlistenstartzeichen ein <xref:Microsoft.VisualStudio.Package.AuthoringScope> erkannter Methodenname ist, gibt er eine Liste übereinstimmender Methodensignaturen im Objekt zurück. Wenn Methodensignaturen gefunden wurden, wird die Parameterinfo-Tooltip mit der ersten Signatur in der Liste angezeigt. Diese QuickInfo wird dann aktualisiert, wenn mehr von der Signatur eingegeben wird. Wenn das Parameterlistenendzeichen eingegeben wird, wird die Werkzeugspitze Parameterinfo aus der Ansicht entfernt.
+ Der <xref:Microsoft.VisualStudio.Package.TokenTriggers> Triggerwert initiiert einen Aufruf der- <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> Methode, die wiederum den <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methoden Parser mit einer analysieren-Ursache von aufruft <xref:Microsoft.VisualStudio.Package.ParseReason> . Wenn der Parser feststellt, dass der Bezeichner vor dem Startzeichen der Parameterliste ein bekannter Methodenname ist, wird eine Liste der übereinstimmenden Methoden Signaturen im-Objekt zurückgegeben <xref:Microsoft.VisualStudio.Package.AuthoringScope> . Wenn Methoden Signaturen gefunden wurden, wird die QuickInfo für die Parameter Info mit der ersten Signatur in der Liste angezeigt. Diese QuickInfo wird dann aktualisiert, sobald mehr Signatur eingegeben wurde. Wenn das Parameterlisten-Endzeichen eingegeben wird, wird die QuickInfo für die Parameter Info aus der Ansicht entfernt.
 
 > [!NOTE]
-> Um sicherzustellen, dass die Parameterinfo-Tooltip ordnungsgemäß formatiert ist, müssen Sie die Eigenschaften der <xref:Microsoft.VisualStudio.Package.Methods> Klasse überschreiben, um die entsprechenden Zeichen anzugeben. Die <xref:Microsoft.VisualStudio.Package.Methods> Basisklasse setzt eine Methodensignatur im C-Stil an. Weitere <xref:Microsoft.VisualStudio.Package.Methods> Informationen dazu, wie dies geschehen kann, finden Sie in der Klasse.
+> Um sicherzustellen, dass die QuickInfo für die QuickInfo ordnungsgemäß formatiert ist, müssen Sie die Eigenschaften der Klasse überschreiben, <xref:Microsoft.VisualStudio.Package.Methods> um die entsprechenden Zeichen bereitzustellen. Die Basis <xref:Microsoft.VisualStudio.Package.Methods> Klasse geht von einer Methoden Signatur im c#-Stil aus. Ausführliche Informationen zur Vorgehensweise finden Sie in der- <xref:Microsoft.VisualStudio.Package.Methods> Klasse.
 
-## <a name="enabling-support-for-the-parameter-info"></a>Aktivieren der Unterstützung für die Parameterinfo
- Um Parameterinfo-Tooltips zu unterstützen, müssen Sie den `ShowCompletion` benannten Parameter des <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . `true` Der Sprachdienst liest den Wert dieses <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Registrierungseintrags aus der Eigenschaft.
+## <a name="enabling-support-for-the-parameter-info"></a>Aktivieren der Unterstützung für die Parameter Informationen
+ Um Quick Infos für Parameter Info zu unterstützen, müssen Sie den `ShowCompletion` benannten Parameter von <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> auf festlegen `true` . Der Sprachdienst liest den Wert dieses Registrierungs Eintrags aus der- <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Eigenschaft.
 
- Darüber hinaus <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> muss die Eigenschaft `true` auf "Parameter Info tooltip" festgelegt werden.
+ Außerdem muss die- <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> Eigenschaft auf festgelegt werden, `true` damit die QuickInfo für die Parameter angezeigt wird.
 
 ### <a name="example"></a>Beispiel
- Hier ist ein vereinfachtes Beispiel für die Erkennung der Parameterlistenzeichen und das Festlegen der entsprechenden Trigger. Dieses Beispiel dient nur zur Veranschaulichung. Es wird davon ausgegangen, `GetNextToken` dass Ihr Scanner eine Methode enthält, die Token aus einer Textzeile identifiziert und zurückgibt. Der Beispielcode legt die Trigger einfach fest, wenn er die richtige Art von Zeichen sieht.
+ Im folgenden finden Sie ein vereinfachtes Beispiel für das Erkennen der Parameterlisten Zeichen und das Festlegen der entsprechenden Trigger. Dieses Beispiel dient nur zu Illustrations Zwecken. Dabei wird davon ausgegangen, dass der Scanner eine Methode enthält `GetNextToken` , die Token aus einer Textzeile identifiziert und zurückgibt. Der Beispielcode legt die Trigger einfach fest, wenn Sie die richtige Art von Zeichen sehen.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -91,17 +91,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Unterstützung des Parameter Info ToolTip im Parser
- Die <xref:Microsoft.VisualStudio.Package.Source> Klasse macht einige Annahmen über <xref:Microsoft.VisualStudio.Package.AuthoringScope> <xref:Microsoft.VisualStudio.Package.AuthoringSink> den Inhalt der und Klassen, wenn die Parameterinfo-Tooltip angezeigt und aktualisiert wird.
+## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Unterstützen der QuickInfo-Parameter Info im Parser
+ Die <xref:Microsoft.VisualStudio.Package.Source> -Klasse macht einige Annahmen über den Inhalt der <xref:Microsoft.VisualStudio.Package.AuthoringScope> -Klasse und der-Klasse, <xref:Microsoft.VisualStudio.Package.AuthoringSink> Wenn die QuickInfo für die Parameter Info angezeigt und aktualisiert wird.
 
-- Der Parser <xref:Microsoft.VisualStudio.Package.ParseReason> wird angegeben, wenn das Parameterlistenstartzeichen eingegeben wird.
+- Der Parser wird angegeben, <xref:Microsoft.VisualStudio.Package.ParseReason> Wenn das Parameterlisten-Startzeichen eingegeben wird.
 
-- Die im <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt angegebene Position befindet sich unmittelbar nach dem Startzeichen der Parameterliste. Der Parser muss die Signaturen aller an dieser Position verfügbaren Methodendeklarationen <xref:Microsoft.VisualStudio.Package.AuthoringScope> sammeln und in einer Liste in der Version des Objekts speichern. Diese Liste enthält den Methodennamen, den Methodentyp (oder rückgabetyp) und eine Liste möglicher Parameter. Diese Liste wird später nach der Methodensignatur oder den Signaturen durchsucht, die in der Werkzeuginfo-Info-Parameterangezeigt angezeigt werden sollen.
+- Der im-Objekt angegebene Speicherort <xref:Microsoft.VisualStudio.Package.ParseRequest> ist unmittelbar nach dem Startzeichen der Parameterliste. Der Parser muss die Signaturen aller Methoden Deklarationen erfassen, die an dieser Position verfügbar sind, und Sie in einer Liste in Ihrer Version des <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekts speichern. Diese Liste enthält den Methodennamen, den Methodentyp (oder Rückgabetyp) und eine Liste möglicher Parameter. Diese Liste wird später nach der Methoden Signatur oder den Signaturen durchsucht, die in der QuickInfo für die Parameter Info angezeigt werden sollen.
 
-  Der Parser muss dann die vom <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt angegebene Linie analysieren, um den Namen der eingegebenen Methode sowie die Anzahl der Fehler beim Eingeben von Parametern zu erfassen. Dies wird erreicht, indem der <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> Name der <xref:Microsoft.VisualStudio.Package.AuthoringSink> Methode an <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> die Methode für das Objekt übergeben und <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> dann die Methode aufgerufen wird, wenn das <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> Parameterlistenstartzeichen analysiert wird, indem die Methode aufgerufen wird, wenn das nächste Zeichen der Parameterliste analysiert wird, und schließlich die Methode aufruft, wenn das Parameterlistenendzeichen analysiert wird. Die Ergebnisse dieser Methodenaufrufe werden <xref:Microsoft.VisualStudio.Package.Source> von der Klasse verwendet, um die Parameterinfo-Tooltip entsprechend zu aktualisieren.
+  Der Parser muss dann die durch das-Objekt angegebene Zeile analysieren <xref:Microsoft.VisualStudio.Package.ParseRequest> , um den Namen der eingegebenen Methode zu erfassen und zu erfahren, wie weit der Benutzer in der Eingabe von Parametern ist. Dies wird erreicht, indem der Name der Methode an die <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> -Methode des <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Objekts übergeben und dann die- <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> Methode aufgerufen wird, wenn das Startzeichen der Parameterliste analysiert wird. dabei wird die-Methode aufgerufen, <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> Wenn das nächste Zeichen in der Parameterliste analysiert wird, und schließlich wird die-Methode aufgerufen, <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> Wenn das Endzeichen der Parameterliste analysiert wird. Die Ergebnisse dieser Methodenaufrufe werden von der- <xref:Microsoft.VisualStudio.Package.Source> Klasse verwendet, um die QuickInfo für die Parameter Informationen entsprechend zu aktualisieren.
 
 ### <a name="example"></a>Beispiel
- Hier ist eine Textzeile, die der Benutzer eingeben könnte. Die Zahlen unterhalb der Zeile geben an, welcher Schritt der Parser an dieser Position in der Zeile macht (vorausgesetzt, die Analyse bewegt sich von links nach rechts). Hier wird davon ausgegangen, dass alles vor der Zeile bereits auf Methodensignaturen analysiert wurde, einschließlich der Signatur der "testfunc"-Methode.
+ Hier ist eine Textzeile, die der Benutzer eingeben kann. Die Zahlen unterhalb der Zeile geben an, welcher Schritt vom Parser an dieser Position in der Zeile durchgeführt wird (vorausgesetzt, die Analyse wird von links nach rechts verschoben). Die Annahme besteht darin, dass alles, was vor der Zeile bereits für Methoden Signaturen, einschließlich der Methoden Signatur "testfunc", analysiert wurde.
 
 ```
 testfunc("a string",3);
@@ -109,12 +109,12 @@ testfunc("a string",3);
      12          3 4
 ```
 
- Die Schritte, die der Parser ausführt, werden im Folgenden beschrieben:
+ Die Schritte, die der Parser durchführt, werden im folgenden beschrieben:
 
-1. Der Parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> ruft mit dem Text "testfunc" auf.
+1. Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> mit dem Text "testfunc" auf.
 
-2. Der Parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>ruft auf.
+2. Der Parser Ruft auf <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> .
 
-3. Der Parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>ruft auf.
+3. Der Parser Ruft auf <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> .
 
-4. Der Parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>ruft auf.
+4. Der Parser Ruft auf <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> .

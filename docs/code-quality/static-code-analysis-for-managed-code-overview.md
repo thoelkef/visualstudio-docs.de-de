@@ -1,5 +1,5 @@
 ---
-title: Codeanalyse für verwalteten Code
+title: Legacy Analyse für verwalteten Code
 ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974923"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238373"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die Code Analyse für verwalteten Code in Visual Studio
+# <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die Legacy-Analyse für verwalteten Code in Visual Studio
 
 Visual Studio kann eine Code Analyse von verwaltetem Code auf zweierlei Weise durchführen: mit [Legacy Analyse](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), auch als "FxCop Static Analysis of Managed Assemblys" bezeichnet, und mit den moderneren .NET Compiler Platform basierten [Code](../code-quality/roslyn-analyzers-overview.md)Analysemodulen. In diesem Thema wird die Legacy Analyse behandelt. Weitere Informationen zur .NET Compiler Platform basierten Code Analyse finden Sie unter [Übersicht über .NET Compiler Platform-basierte Analysen](../code-quality/roslyn-analyzers-overview.md).
 
@@ -26,7 +26,7 @@ Die Code Analyse für verwalteten Code analysiert verwaltete Assemblys und melde
 Das Analysetool stellt die während einer Analyse durchgeführten Prüfungen als Warnmeldungen dar. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.
 
 > [!NOTE]
-> Die Legacy Analyse (statische Code Analyse) wird für .net Core-und .NET Standard-Projekte in Visual Studio nicht unterstützt. Wenn Sie die Code Analyse in einem .net Core-oder .NET Standard Projekt als Teil von MSBuild ausführen, wird eine Fehlermeldung ähnlich der folgenden angezeigt **: CA0055: Es konnte keine Plattform für \<der DLL-> identifiziert**werden. Verwenden Sie stattdessen [Code Analysen](../code-quality/roslyn-analyzers-overview.md) , um Code in .net Core-oder .NET Standard Projekten zu analysieren.
+> Die Legacy Analyse (statische Code Analyse) wird für .net Core-und .NET Standard-Projekte in Visual Studio nicht unterstützt. Wenn Sie die Code Analyse in einem .net Core-oder .NET Standard Projekt als Teil von MSBuild ausführen, wird eine Fehlermeldung ähnlich der folgenden angezeigt **: CA0055: die \<your.dll> Plattform konnte nicht identifiziert **werden. Verwenden Sie stattdessen [Code Analysen](../code-quality/roslyn-analyzers-overview.md) , um Code in .net Core-oder .NET Standard Projekten zu analysieren.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integration der IDE (integrierte Entwicklungsumgebung)
 
@@ -34,7 +34,7 @@ Sie können die Code Analyse für Ihr Projekt manuell oder automatisch ausführe
 
 Wenn Sie die Code Analyse bei jedem Erstellen eines Projekts ausführen möchten, wählen Sie die Option auf der Eigenschaften Seite **Code Analyse** des Projekts aus. Weitere Informationen finden Sie unter Gewusst [wie: Aktivieren und Deaktivieren der automatischen Code Analyse](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Um die Code Analyse für ein Projekt manuell auszuführen, wählen Sie in der Menüleiste **analysieren** aus, > **Code Analyse ausführen** > **Code Analyse auf \<Projekt >** auszuführen.
+Um die Code Analyse für ein Projekt manuell auszuführen, wählen Sie in der Menüleiste **Analyse**  >  **Ausführen Code Analyse**  >  **Ausführen Code \<project> Analyse für **aus.
 
 ## <a name="rule-sets"></a>Regelsätze
 
@@ -59,7 +59,7 @@ Weitere Informationen finden Sie unter unter [drücken von Warnungen](../code-qu
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie **analysieren** > **Code Analyse ausführen und aktive Probleme unterdrücken**auswählen.
+> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie **analysieren**  >  **Code Analyse ausführen und aktive Probleme unterdrücken**auswählen.
 >
 > ![Ausführen der Code Analyse und unterdrücken von Problemen in Visual Studio](media/suppress-active-issues.png)
 
@@ -68,7 +68,7 @@ Weitere Informationen finden Sie unter unter [drücken von Warnungen](../code-qu
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2019 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie auf **analysieren** > **erstellen klicken und aktive Probleme unterdrücken**.
+> Wenn Sie ein Projekt zu Visual Studio 2019 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie die Option Build **analysieren**  >  **und aktive Probleme unterdrücken**auswählen.
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ Die Einhaltung dieser Vorgaben können Sie durch das Definieren von Eincheckrich
 
 Sie können die integrierten Features des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über .NET Compiler Platform-basierte Analysetools](../code-quality/roslyn-analyzers-overview.md)
 - [Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

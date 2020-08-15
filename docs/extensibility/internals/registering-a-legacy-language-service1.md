@@ -1,5 +1,5 @@
 ---
-title: Registrieren eines Legacy Language Service1 | Microsoft Docs
+title: Registrieren einer Legacy Sprache Service1 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91776382fff1818986049558c9d86e8fce4d0dd7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80705904"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238880"
 ---
-# <a name="registering-a-legacy-language-service"></a>Registrieren eines Legacysprachdiensts
-Im Managed Package Framework (MPF) wird der Sprachdienst von einem VSPackage angeboten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (siehe [VSPackages](../../extensibility/internals/vspackages.md)) und durch Hinzufügen von Registrierungsschlüsseln und Einträgen registriert. Dieser Registrierungsprozess erfolgt teils während der Installation und teilweise zur Laufzeit.
+# <a name="registering-a-legacy-language-service-1"></a>Registrieren eines Legacy sprach Dienstanbieter 1
+Im Managed Package Framework (MPF) wird der Sprachdienst von einem VSPackage (siehe [VSPackages](../../extensibility/internals/vspackages.md)) bereitgestellt und mit registriert, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] indem Registrierungsschlüssel und Einträge hinzugefügt werden. Dieser Registrierungsvorgang erfolgt teilweise während der Installation und teilweise zur Laufzeit.
 
-## <a name="register-the-language-service-by-using-attributes"></a>Registrieren des Sprachdienstes mithilfe von Attributen
- Die folgenden Attribute werden zum Registrieren eines Sprachdienstes verwendet.
+## <a name="register-the-language-service-by-using-attributes"></a>Registrieren des sprach Dienstanbieter mithilfe von Attributen
+ Die folgenden Attribute werden zum Registrieren eines sprach Dienstanbieter verwendet.
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>
 
@@ -33,10 +33,10 @@ Im Managed Package Framework (MPF) wird der Sprachdienst von einem VSPackage ang
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>
 
-  Diese Attribute werden im Folgenden erläutert.
+  Diese Attribute werden unten erläutert.
 
-### <a name="provideserviceattribute"></a>ProvideServiceAttribute
- Dieses Attribut registriert Ihren Sprachdienst als Dienst.
+### <a name="provideserviceattribute"></a>Provide Service Attribute
+ Dieses Attribut registriert ihren Sprachdienst als Dienst.
 
 ### <a name="example"></a>Beispiel
 
@@ -54,8 +54,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute
- Dieses Attribut registriert Ihren Sprachdienst speziell als Sprachdienst. Sie können Optionen festlegen, die die Funktionen angeben, die Ihr Sprachdienst bietet. Das Beispiel zeigt eine Teilmenge der Optionen, die ein Sprachdienst bereitstellen kann. Den vollständigen Satz an Sprachdienstoptionen finden Sie unter <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.
+### <a name="providelanguageserviceattribute"></a>Providelta anguageserviceattribute
+ Mit diesem Attribut wird der Sprachdienst speziell als Sprachdienst registriert. Hiermit können Sie Optionen festlegen, die die von Ihrem Sprachdienst angebotenen Features angeben. Das Beispiel zeigt eine Teilmenge der Optionen, die ein Sprachdienst bereitstellen kann. Den vollständigen Satz von Sprachdienst Optionen finden Sie unter <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> .
 
 ### <a name="example"></a>Beispiel
 
@@ -79,8 +79,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute
- Dieses Attribut ordnet Ihren Sprachdienst einer Dateierweiterung zu. Immer wenn eine Datei mit dieser Erweiterung geladen wird, wird in jedem Projekt der Sprachdienst gestartet und zum Anzeigen des Inhalts der Datei verwendet.
+### <a name="providelanguageextensionattribute"></a>Providelta anguageextensionattribute
+ Mit diesem Attribut wird der Sprachdienst einer Dateierweiterung zugeordnet. Wenn eine Datei mit dieser Erweiterung geladen wird, wird der Sprachdienst in jedem Projekt gestartet und zum Anzeigen des Datei Inhalts verwendet.
 
 ### <a name="example"></a>Beispiel
 
@@ -98,8 +98,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute
- Dieses Attribut registriert einen Speicherort, von dem Codeerweiterungs- oder Ausschnittvorlagen abgerufen werden. Diese Informationen werden vom **Code Snippets Browser** und vom Editor verwendet, wenn ein Codeausschnitt in die Quelldatei eingefügt wird.
+### <a name="providelanguagecodeexpansionattribute"></a>Providelta anguagecodeexpansionattribute
+ Dieses Attribut registriert einen Speicherort, von dem Code Erweiterungs-oder Ausschnitt Vorlagen abgerufen werden. Diese Informationen werden vom- **Code Ausschnitt Browser** und vom-Editor verwendet, wenn ein Code Ausschnitt in die Quelldatei eingefügt wird.
 
 ### <a name="example"></a>Beispiel
 
@@ -124,11 +124,11 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute
- Dieses Attribut registriert eine Eigenschaftenseite, die im Dialogfeld **Optionen** unter der Kategorie **Texteditor** angezeigt werden soll. Verwenden Sie eines dieser Attribute für jede Seite, die für Ihren Sprachdienst angezeigt werden soll. Wenn Sie Ihre Seiten in einer Baumstruktur organisieren müssen, verwenden Sie zusätzliche Attribute, um jeden Knoten der Struktur zu definieren.
+### <a name="providelanguageeditoroptionpageattribute"></a>Providelta optionpageattribute
+ Dieses Attribut registriert eine Eigenschaften Seite, die im Dialogfeld **Optionen** unter der Kategorie **Text-Editor** angezeigt werden soll. Verwenden Sie eines dieser Attribute für jede Seite, die für Ihren Sprachdienst angezeigt werden soll. Wenn Sie die Seiten in einer Baumstruktur organisieren müssen, verwenden Sie zusätzliche Attribute, um jeden Knoten der Struktur zu definieren.
 
 ### <a name="example"></a>Beispiel
- Dieses Beispiel zeigt zwei Eigenschaftenseiten, **Optionen** und **Einzug**, und einen Knoten, der die zweite Eigenschaftenseite enthält.
+ In diesem Beispiel werden zwei Eigenschaften Seiten, **Optionen** und **Einzug**sowie ein Knoten angezeigt, der die zweite Eigenschaften Seite enthält.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -159,11 +159,11 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="proffer-the-language-service-at-run-time"></a>Bieten Sie den Sprachdienst zur Laufzeit
- Wenn Ihr Sprachpaket geladen ist, müssen Sie mitteilen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dass Ihr Sprachdienst bereit ist. Sie tun dies, indem Sie den Service anbieten. Dies geschieht <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> in der Methode. Darüber hinaus müssen Sie einen Timer starten, der Ihren Sprachdienst während Leerlaufzeiten aufruft, damit die Hintergrundanalyse durchgeführt werden kann. Dieser Leerlauf-Timer wird auch verwendet, um Dokumenteigenschaften zu aktualisieren, wenn Sie über die <xref:Microsoft.VisualStudio.Package.DocumentProperties> Klasse implementiert haben. Um einen Timer zu unterstützen, muss <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> Ihr Paket <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> die Schnittstelle implementieren (nur die Methode muss vollständig implementiert werden; die verbleibenden Methoden können Standardwerte zurückgeben).
+## <a name="proffer-the-language-service-at-run-time"></a>Proxy des sprach Dienstanbieter zur Laufzeit
+ Wenn Sie das Sprachpaket geladen haben, müssen Sie wissen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , dass der Sprachdienst bereit ist. Hierzu wird der Dienst angeboten. Dies erfolgt in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode. Außerdem müssen Sie einen Timer starten, der Ihren Sprachdienst während der Leerlaufzeit aufruft, damit die Hintergrundverarbeitung erreicht werden kann. Dieser Leerlaufzeit Geber wird auch zum Aktualisieren von Dokumenteigenschaften verwendet, wenn Sie durch die-Klasse implementiert haben <xref:Microsoft.VisualStudio.Package.DocumentProperties> . Um einen Timer zu unterstützen, muss das Paket die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> Schnittstelle implementieren (nur die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> Methode muss vollständig implementiert werden. die restlichen Methoden können Standardwerte zurückgeben).
 
 ### <a name="example"></a>Beispiel
- Dieses Beispiel zeigt einen typischen Ansatz zum Anbieten eines Dienstes und zum Bereitstellen eines Leerlaufzeitgebers.
+ Dieses Beispiel zeigt eine typische Vorgehensweise zum Bereitstellen eines Diensts und Bereitstellen eines Timers im Leerlauf.
 
 ```csharp
 
