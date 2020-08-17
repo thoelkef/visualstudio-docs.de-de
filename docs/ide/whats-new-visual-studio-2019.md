@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387043"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818585"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
-**Für [Release 16.6](/visualstudio/releases/2019/release-notes/) aktualisiert**
+**Für [Release 16.7](/visualstudio/releases/2019/release-notes/) aktualisiert**
 
 >[!div class="button"]
 >[Herunterladen von Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ Weitere Informationen zu IntelliCode finden Sie in den Blogbeiträgen [Announcin
 
 ### <a name="code-cleanup"></a>Codebereinigung
 
-Neben einem neuen Integritätsindikator für Dokumente gibt es auch einen neuen Befehl für die Codebereinigung. Mit diesem neuen Befehl können Sie Warnungen und Vorschläge mit nur einem Knopfdruck ermitteln und anschließend beheben bzw. umsetzen.
+Neben einem neuen Integritätsindikator für Dokumente gibt es auch einen neuen Befehl für die Codebereinigung. Mit diesem neuen Befehl können Sie Warnungen und Vorschläge mit nur einer Aktion (oder einem Klick auf eine Schaltfläche) ermitteln und anschließend beheben bzw. umsetzen.
 
 Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorrekturen vorgenommen, die von [aktuellen Einstellungen](code-styles-and-code-cleanup.md) und [EDITORCONFIG-Dateien](create-portable-custom-editor-options.md) vorgeschlagen werden.
 
@@ -178,7 +178,7 @@ Sie haben sicher schon mal im Überwachungsfenster unter einer Reihe von Werten 
 
    ![Animation: das Fenster für die Suche während des Debuggens in Visual Studio 2019](media/vs-2019/debug-window-search.gif)
 
-Sie können auch formatieren, wie ein Wert in den Fenstern „Überwachung“, „Lokal“ und „Auto“ angezeigt wird.  Doppelklicken Sie in einem Fenster auf eines der Elemente, und fügen Sie ein Komma („,“) hinzu, um auf die Dropdown-Liste der möglichen Formatbezeichner Zugriff zu haben, von denen jeder eine Beschreibung des erwarteten Ergebnisses enthält.
+Sie können auch formatieren, wie ein Wert in den Fenstern „Überwachung“, „Lokal“ und „Auto“ angezeigt wird. Wählen Sie (per Doppelklick) in einem Fenster eines der Elemente aus, und fügen Sie ein Komma („,“) hinzu, um auf die Dropdownliste der möglichen Formatbezeichner Zugriff zu haben, von denen jeder eine Beschreibung des erwarteten Ergebnisses enthält.
 
    ![Das neue Überwachungsfenster und das Feature zur Wertformatierung in Visual Studio 2019](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Weitere Informationen finden Sie unter [Anheftbare Eigenschaften: Debuggen und A
 
 Wir aktualisieren Visual Studio 2019 häufig mit neuen Features, die die Entwicklung immer weiter verbessern. Weitere Informationen zu unseren aktuellen Innovationen finden Sie im [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/). Was wir zurzeit in der Vorschau veröffentlicht haben, können Sie den [Anmerkungen zur Vorschauversion](/visualstudio/releases/2019/release-notes-preview/) entnehmen. Eine Liste der geplanten Releases finden Sie in der [Visual Studio-Roadmap](/visualstudio/productinfo/vs-roadmap).
 
-Sie möchten mehr über unsere Pläne für Visual Studio 2019 erfahren? Weitere Informationen finden Sie in der [Visual Studio-Roadmap](/visualstudio/productinfo/vs-roadmap/).
+In der Zwischenzeit finden Sie hier einige unserer neuen Features, die derzeit in Arbeit sind.
+
+- **Visual Studio 2019-Unterstützung für Visual Studio Codespaces (Vorschau)**
+
+  Heute mehr denn je jonglieren Entwickler bei der Arbeit und zu Hause mit mehreren Projekten. Neue Features, Fehlerbehebungen, PR-Reviews und &amp;-Prototypen konkurrieren alle um Zeit und erfordern einen ständigen Kontextwechsel. Hier kann [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) helfen. Sie können vollständig in der Cloud entwickeln und in Sekundenschnelle dedizierte, benutzerdefinierte Umgebungen für jedes Ihrer Projekte einrichten. Mit Visual Studio 2019 können Sie eine Verbindung mit Ihrem Codespace herstellen und wie in der lokalen Umgebung arbeiten.
+
+  Weitere Informationen finden Sie auf der Seite [Was ist Visual Studio Codespaces?](/visualstudio/codespaces/overview/what-is-vsonline/).
+
+- **Verbesserte Git-Erfahrung in Visual Studio 2019 (Vorschau)**
+
+   Wir arbeiten kontinuierlich an einer verbesserten Git-Erfahrung, um Ihre Produktivität bei der Arbeit mit Code auf GitHub, in Azure-Repos und anderen Remotehostingdiensten zu verbessern. Sie können in Visual Studio 2019 mit einer einzelnen Aktion (einem einzelnen Klick) initialisieren und pushen. Sie können auch neue Branches erstellen, aktuelle Branches verwalten und Mergekonflikte lösen.
+
+   Weitere Informationen finden Sie im Blogbeitrag [Exciting new updates to the Git experience in Visual Studio (Spannende neue Updates für die Git-Erfahrung in Visual Studio)](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/).
+
+Weitere Informationen zum Vorschaurelease &mdash;und einen Downloadlink, wenn Sie sie ausprobieren möchten,&mdash; finden Sie auf der Seite **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** .
 
 ## <a name="give-us-feedback"></a>Geben Sie uns Feedback
 

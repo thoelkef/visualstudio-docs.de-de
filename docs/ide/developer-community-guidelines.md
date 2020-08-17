@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137567"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972472"
 ---
 # <a name="developer-community-guidelines"></a>Richtlinien für die Entwicklercommunity
 
@@ -89,12 +89,15 @@ Wenn Sie ein Feature vorschlagen, sind Sie möglicherweise enttäuscht, dass wir
 
 Folgendes beeinflusst unseren Entscheidungsfindungsprozess in Bezug auf Featurevorschläge:
 
+- Entspricht er der allgemeinen Produktrichtung?
 - Können wir uns die Erstellung und Verwaltung leisten?
 - Passt es zu unserer Gesamt-[Roadmap](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)-Strategie?
 - Findet es Unterstützung in der Community, worauf die Stimmen und Kommentare hindeuten?
 - Gefällt uns der Vorschlag richtig gut, obwohl die Unterstützung in der Community eher gering ausfällt?
 
 Wenn wir keine dieser Fragen mit „Ja“ beantworten können, schließen wir die Anfrage. In vielen Fällen bleibt der Vorschlag jedoch mit dem Status _In Bearbeitung_ offen, um mehr Feedback von der Community zu sammeln.
+
+Wenn ein Vorschlag nicht mit unserer allgemeinen Produktrichtung übereinstimmt, schließen wir ihn als *Außerhalb des gültigen Bereichs*. Beispielsweise haben wir möglicherweise ähnliche Investitionen in andere Elemente der Visual Studio-Produktfamilie getätigt. Oder das vorgeschlagene Feature könnte nur für einige wenige Personen relevant sein, weshalb dafür eine Erweiterung besser geeignet ist.
 
 Verfolgen Sie den Status Ihres Featurevorschlags unter Bezugnahme auf den [Status und die häufig gestellten Fragen](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
 

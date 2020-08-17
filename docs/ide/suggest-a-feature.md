@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276487"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114209"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Vorschlagen eines Features für Visual Studio
 
@@ -86,6 +86,13 @@ Ein Featurevorschlag mit der Markierung **Weitere Informationen erforderlich** b
 **Geschlossen – nicht genügend Informationen** gibt an, dass wir nach mehreren Versuchen nicht genügend Informationen erhalten haben, um Ihren Featurevorschlag vollständig nachvollziehen zu können. Wir müssen den Vorschlag für ein neues Feature schließen, da wir zum jetzigen Zeitpunkt keine weiteren Maßnahmen ergreifen können.
 
 Haben Sie die Informationen gefunden, nach denen wir gesucht haben? Sie können die Reaktivierung des Tickets anfordern, wenn Sie über die zusätzlichen Informationen verfügen.
+
+- - -
+
+![Statusangabe „Außerhalb des gültigen Bereichs“ für Vorschläge in der Entwicklercommunity](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**Geschlossen – Außerhalb des gültigen Bereichs** Wenn ein Vorschlag nicht mit unserer allgemeinen Produktrichtung übereinstimmt, schließen wir ihn als *Außerhalb des gültigen Bereichs*. Beispielsweise haben wir möglicherweise ähnliche Investitionen in andere Elemente der Visual Studio-Produktfamilie getätigt. Oder das vorgeschlagene Feature könnte nur für einige wenige Personen relevant sein, weshalb dafür eine Erweiterung besser geeignet ist.
+
 
 - - -
 
