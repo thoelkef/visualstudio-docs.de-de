@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8deed53d2789afb964989e4e995e3120e9842bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543844"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913316"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -262,7 +262,7 @@ Umgebungen, die Sie behalten möchten, lassen sich korrigieren, indem Sie zunäc
 Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption verfügt, oder eine ungültige Umgebung entfernen, führen Sie die folgenden Schritte aus, um die Registrierung direkt zu ändern. Visual Studio aktualisiert das Fenster **Python-Umgebungen** automatisch, wenn Sie Änderungen an der Registrierung vornehmen.
 
 1. Führen Sie *regedit.exe* aus.
-1. Navigieren Sie zu **HKEY_LOCAL_MACHINE\SOFTWARE\Python**. Für IronPython müssen Sie stattdessen nach  **IronPython** suchen.
+1. Navigieren Sie zu **HKEY_LOCAL_MACHINE\SOFTWARE\Python** oder **HKEY_CURRENT_USER\SOFTWARE\Python**. Für IronPython müssen Sie stattdessen nach  **IronPython** suchen.
 1. Erweitern Sie den Knoten, der der Verteilung entspricht, z. B. **Python Core** für CPython oder **ContinuumAnalytics** für Anaconda. Erweitern Sie für IronPython den Versionsnummerknoten.
 1. Überprüfen Sie die Werte im Knoten **InstallPath**:
 
@@ -270,7 +270,8 @@ Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption ver
 
     - Wenn die Umgebung weiterhin auf dem Computer vorhanden ist, ändern Sie den Wert von **ExecutablePath** in den richtigen Speicherort. Korrigieren Sie wenn nötig auch die Werte **(Standard)** und **WindowedExecutablePath**.
     - Wenn die Umgebung nicht mehr auf Ihrem Computer vorhanden ist und Sie sie aus dem Fenster **Python-Umgebungen** entfernen möchten, löschen Sie den übergeordneten Knoten von **InstallPath**, z.B. **3.6** in der Abbildung oben.
-
+    - Ungültige Einstellungen in **HKEY_CURRENT_USER\SOFTWARE\Python** überschreiben die Einstellungen in **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
+    
 ## <a name="see-also"></a>Siehe auch
 
 - [Installieren von Python-Interpretern](installing-python-interpreters.md)

@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 07/28/2020
+ms.date: 08/11/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 98b2a8cf7c4eece8bbbaeaed8e119b6eea342448
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 263df4e98053eea6ee0ee447f2f0e12e0f32226f
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375910"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114283"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,11 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.1 | Freigabe | 11. August 2020 | 16.7.30406.217 |
+| 16.4.12 | Freigabe | 11. August 2020 | 16.4.30406.169 |
+| 16.0.17 | Freigabe | 11. August 2020 | 16.0.28803.806 |
+| 16.8.0 | Vorschauversion 1 | 5\. August 2020 | 16.8.30404.54 |
+| 16.7.0 | Freigabe | 5\. August 2020 | 16.7.30330.147 |
 | 16.7.0 | Vorschau 6 | 28. Juli 2020 | 16.7.30323.103 |
 | 16.7.0 | Preview 5 | 21. Juli 2020 | 16.7.30317.65 |
 | 16.6.5 | Freigabe | 21. Juli 2020 | 16.6.30320.27 |
@@ -164,6 +169,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.26 | Freigabe | 11. August 2020 | 15.9.28307.1234 |
 | 15.9.25 | Freigabe | 14. Juli 2020 | 15.9.28307.1216 |
 | 15.9.24 | Freigabe | 9\. Juni 2020 | 15.9.28307.1177 |
 | 15.9.23 | Freigabe | 12. Mai 2020 | 15.9.28307.1146 |

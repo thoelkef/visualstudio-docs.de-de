@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Erfahren Sie, wie Sie mit verbundenen Microsoft-Konten und Azure Active Directory-Identitäten arbeiten.
-ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233177"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805609"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Verwenden von verbundenen Identitäten in Visual Studio-Abonnements
 Wenn Sie über Ihr Geschäfts-, Schul- oder Unikonto ein Visual Studio-Abonnement erhalten und Ihr Microsoft-Konto (MSA) zum Anmelden verwenden, verknüpft Ihr Abonnementadministrator möglicherweise Ihr MSA mit Ihrer Identität im Azure Active Directory (Azure AD) Ihrer Organisation.  Damit ändert sich der Zugriff auf einige der Vorteile, die in Ihrem Abonnement enthalten sind. 
@@ -38,6 +38,9 @@ Wenn Sie Ihrem Visual Studio-Abonnement ein alternatives Konto hinzufügen, habe
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>Frage: Wie kontaktiere ich meinen Administrator zu diesem Thema?
 Antwort:  Informationen zur Kontaktaufnahme mit Ihrem Administrator finden Sie im Artikel [Kontaktieren des Abonnementadministrators](contact-my-admin.md).  
+
+### <a name="q-im-an-admin--how-do-i-use-this"></a>Frage: Ich bin Administrator.  Wie verwende ich dies?
+Antwort:  Das Implementieren verbundener Identitäten ist einfach.  Weitere Informationen finden Sie in [diesem Artikel](personal-email-sign-ins.md). 
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
