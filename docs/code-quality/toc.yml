@@ -567,6 +567,8 @@
                   href: ca1835.md
                 - name: 'CA1836: Ziehen Sie "IsEmpty" gegenüber "Count" vor (falls verfügbar)'
                   href: ca1836.md
+                - name: 'CA1838: StringBuilder-Parameter für "P/Invokes" vermeiden.'
+                  href: ca1838.md
             - name: Portabilitätswarnungen
               items:
                 - name: Übersicht
