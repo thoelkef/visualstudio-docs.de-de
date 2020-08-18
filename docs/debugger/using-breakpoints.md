@@ -271,7 +271,7 @@ Im Fenster **Haltepunkte** können Sie nach Breakpoints suchen, sie sortieren, f
 
 Klicken Sie auf **Debuggen**  >  **Fenster**  >  **Haltepunkte**, oder drücken Sie **ALT**+**F9** oder **STRG**+**ALT**+**B**, um das Fenster **Haltepunkte** zu öffnen.
 
-![Fenster „Haltepunkte“](../debugger/media/breakpointswindow.png ""Haltepunkte" (Fenster)")
+![Fenster „Haltepunkte“](../debugger/media/breakpointswindow.png "Haltepunkte(Fenster)")
 
 Klicken Sie auf die Option **Spalten anzeigen**, um die Spalten auszuwählen, die im Fenster **Haltepunkte** angezeigt werden sollen. Wählen Sie eine Spaltenüberschrift aus, um die Breakpointliste nach der entsprechenden Spalte zu sortieren.
 
