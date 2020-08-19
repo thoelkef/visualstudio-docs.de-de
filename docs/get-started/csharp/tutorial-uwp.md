@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543930"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249255"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Erstellen Ihrer ersten Anwendung für die Universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -160,7 +160,6 @@ Ein „Ereignishandler“ klingt kompliziert, ist aber nur ein anderer Name für
 Der Code verwendet einige Windows-APIs, um eine Sprachsyntheseobjekt zu erstellen, und weist diesem dann Text für die Ausgabe zu. (Weitere Informationen zur Verwendung von `SpeechSynthesis` finden Sie unter <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
-
 
 ::: moniker range="vs-2017"
 Jetzt können wir die UWP-App „Hallo Welt“ erstellen, bereitstellen und starten, um sie uns anzusehen. Gehen Sie folgendermaßen vor:

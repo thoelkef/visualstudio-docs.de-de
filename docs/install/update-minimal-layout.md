@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869907"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168748"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aktualisieren von Visual Studio mit einem minimalen Offlinelayout
 
@@ -56,12 +56,13 @@ Dieses Tool erstellt Updatelayouts ab Visual Studio 2017 (15.9). Das Layout kan
 #### <a name="commands"></a>Befehle
 * **Vorschau**: Verwenden Sie diesen Befehl, um als Vorschau zu sehen, wie viele Pakete heruntergeladen werden und wie viel Speicherplatz erforderlich ist, um das Layout zu erstellen. 
 * **Generieren**: Verwenden Sie diesen Befehl, um das minimale Layout für das Aktualisieren von Visual Studio zu generieren.
-* **regenerate:** Verwenden Sie diesen Befehl, um ein Layout mithilfe einer Antwortdatei für minimale Layouts erneut zu generieren. Jedes minimale Layout erzeugt eine `MinimalLayout.json`-Antwortdatei, die die Eingabeparameter für das ursprüngliche minimale Layout enthält. Sie können den Befehl **regenerate** und eine `MinimalLayout.json`-Antwortdatei verwenden, um das minimale Layout erneut zu generieren. Dies ist dann hilfreich, wenn Sie ein minimales Layout für eine neue Visual Studio-Aktualisierung erstellen möchten, die auf der Antwortdatei des vorherigen minimalen Layouts basieren soll. 
-   - Für diesen Befehl ist ein `MinimalLayout.json`-Dateipfad von einem bereits generierten Layout erforderlich. 
+* **regenerate:** Verwenden Sie diesen Befehl, um ein Layout mithilfe einer Antwortdatei für minimale Layouts erneut zu generieren. Jedes minimale Layout erzeugt eine `MinimalLayout.json`-Antwortdatei, die die Eingabeparameter für das ursprüngliche minimale Layout enthält. Sie können den Befehl **regenerate** und eine `MinimalLayout.json`-Antwortdatei verwenden, um das minimale Layout erneut zu generieren. Dies ist dann hilfreich, wenn Sie ein minimales Layout für eine neue Visual Studio-Aktualisierung erstellen möchten, die auf der Antwortdatei des vorherigen minimalen Layouts basieren soll.
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   Für diesen Befehl ist ein `MinimalLayout.json`-Dateipfad von einem bereits generierten Layout erforderlich. 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **verify:** Verwenden Sie diesen Befehl, um zu bestimmen, ob der Layoutordner beschädigt ist.
 * **Problemlösung:** Verwenden Sie diesen Befehl, um Fehlerbehebungen für den beschädigten Layoutordner durchzuführen, einschließlich des Ersetzens jeglicher fehlender Pakete aus dem Layoutordner.

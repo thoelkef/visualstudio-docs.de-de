@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: a6fefcea57b97ad3b31e4d10330756565c005184
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211576"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248769"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogfeld "Codetyp auswählen"
 
@@ -38,26 +38,26 @@ Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhä
 
 **Diese Codetypen debuggen:** Wählen Sie in der bereitgestellten Liste die zu debuggenden Codetypen aus. Dies kann hilfreich sein, wenn [ein Fehler beim Anfügen behandelt wird](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Diese Option schränkt die Erkennung auf die Typen von Code ein, die Sie debuggen möchten.
 
-   ::: moniker range=">=vs-2019"
-   - Blazor WebAssembly – clientseitige Blazor WebAssembly-Instanz
-   - GPU – Softwareemulator – In einem GPU-Softwareemulator ausgeführter C++-Code
-   - JavaScript (Chrome) – In Chrome ausgeführtes JavaScript
-   - JavaScript (Microsoft Edge – Chromium) – In auf Chromium basierendem Microsoft Edge für Windows 10 ausgeführtes JavaScript
-   - JavaScript CDP (V3)-Debugger – Für das Debuggen in einem CDP-Client verwendetes Chrome DevTools Protocol, Version 3
-   - Verwaltet (CoreCLR) – .NET Core
-   - Verwaltet (Native Kompilierung) – C++-/CLR-Code
-   - Verwaltet (v3.5, v3.0, v2.0) – .NET Framework-Code für .NET Framework 2.0 und höher (bis 3.5)
-   - Verwaltet (v. 4.6, v 4.5, v 4.0) – .NET Framework-Code für .NET Framework 4.0 und höher
-   - Nativ – C/C++
-   - Debuggen von Node.js – Von Node.js-Runtime gehosteter Code
-   - Python – Python 
-   - Skript – Gibt den allgemeinen Skriptdebugger für JavaScript an. Wählen Sie restriktivere Optionen, wenn sie für Ihr Szenario zutreffen, wie z. B. JavaScript (Chrome).
-   - T-SQL – Transact-SQL
-   - Unity – Unity
-   - Verwalteter Kompatibilitätsmodus – Gibt den Legacydebugger für verwalteten Code an, der typischerweise beim Debuggen im gemischten Modus mit C++-/CLR-Code verwendet wird (aktiviert „Bearbeiten und fortfahren“ für den gemischten Modus) oder um Erweiterungen für den Legacydebugger zu unterstützen. In den meisten Szenarien für das Debuggen im gemischtem Modus wählen Sie **Nativ** und die entsprechenden **verwalteten** Codetypen anstelle des verwalteten Kompatibilitätsmodus aus.
-   ::: moniker-end
+::: moniker range=">=vs-2019"
+- Blazor WebAssembly – clientseitige Blazor WebAssembly-Instanz
+- GPU – Softwareemulator – In einem GPU-Softwareemulator ausgeführter C++-Code
+- JavaScript (Chrome) – In Chrome ausgeführtes JavaScript
+- JavaScript (Microsoft Edge – Chromium) – In auf Chromium basierendem Microsoft Edge für Windows 10 ausgeführtes JavaScript
+- JavaScript CDP (V3)-Debugger – Für das Debuggen in einem CDP-Client verwendetes Chrome DevTools Protocol, Version 3
+- Verwaltet (CoreCLR) – .NET Core
+- Verwaltet (Native Kompilierung) – C++-/CLR-Code
+- Verwaltet (v3.5, v3.0, v2.0) – .NET Framework-Code für .NET Framework 2.0 und höher (bis 3.5)
+- Verwaltet (v. 4.6, v 4.5, v 4.0) – .NET Framework-Code für .NET Framework 4.0 und höher
+- Nativ – C/C++
+- Debuggen von Node.js – Von Node.js-Runtime gehosteter Code
+- Python – Python 
+- Skript – Gibt den allgemeinen Skriptdebugger für JavaScript an. Wählen Sie restriktivere Optionen, wenn sie für Ihr Szenario zutreffen, wie z. B. JavaScript (Chrome).
+- T-SQL – Transact-SQL
+- Unity – Unity
+- Verwalteter Kompatibilitätsmodus – Gibt den Legacydebugger für verwalteten Code an, der typischerweise beim Debuggen im gemischten Modus mit C++-/CLR-Code verwendet wird (aktiviert „Bearbeiten und fortfahren“ für den gemischten Modus) oder um Erweiterungen für den Legacydebugger zu unterstützen. In den meisten Szenarien für das Debuggen im gemischtem Modus wählen Sie **Nativ** und die entsprechenden **verwalteten** Codetypen anstelle des verwalteten Kompatibilitätsmodus aus.
+::: moniker-end
 
-   In den meisten Szenarien wird das Anfügen mehrerer Debugger in derselben Debugsitzung nicht unterstützt. Möglicherweise können Sie dazu eine zweite Instanz von Visual Studio verwenden.
+In den meisten Szenarien wird das Anfügen mehrerer Debugger in derselben Debugsitzung nicht unterstützt. Möglicherweise können Sie dazu eine zweite Instanz von Visual Studio verwenden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

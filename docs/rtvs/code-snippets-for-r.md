@@ -8,14 +8,14 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969447"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238724"
 ---
-# <a name="code-snippets"></a>Codeausschnitte
+# <a name="code-snippets-for-r"></a>Codeausschnitte für R
 
 Codeausschnitte in Visual Studio bieten Verknüpfungen zum schnellen Einfügen von Codeblöcken mit beliebiger Länge, und es wird vermieden, dass der gleiche Code immer wieder eingegeben werden muss. Die R Tools für Visual Studio (RTVS) fügen Dutzende nützlicher R-Ausschnitte zur Sammlung von Visual Studio hinzu.
 

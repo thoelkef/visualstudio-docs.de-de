@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286829"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144687"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -34,9 +34,14 @@ Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstopologien:
 |![Laborumgebung in der Cloud](../media/topology_cloud.png)| Diese Laborumgebung bietet ähnliche Funktionen wie die _Servertopologie_, aber erfordert keine physischen oder virtuellen Computer, die in einer lokalen Umgebung ausgeführt werden. Dadurch kann die Einrichtungszeit gesenkt sowie die Wartung vereinfacht und die Kosten verringert werden. Das Einrichten mehrere Websites und virtueller Computer sowie das benutzerdefinierte Vernetzen können Sie in einer Cloudumgebung wie Microsoft Azure schnell und einfach durchführen.|
 |![Client-Server-Lab-Umgebung](../media/topology_clientserver.png)| Diese Lab-Umgebung verfügt über eine *Client-/Servertopologie*, die oftmals zum Testen einer Anwendung verwendet wird, die Server- und Clientkomponenten aufweist. In einer Client-/Servertopologie befinden sich alle zum Testen Ihrer Anwendung verwendeten Clientcomputer und Server in Ihrer Lab-Umgebung. Bei Verwendung dieser Topologie können Sie Testdaten von jedem Computer erfassen, der sich auf Ihre Tests auswirkt.|
 
-| | |
-|---|---|
-| ![Kamerasymbol für Video](../../install/media/video-icon.png) | [Schauen Sie sich ein Video an](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) zum Verwalten von Lab-Umgebungen für Tests. |
+:::row:::
+    :::column:::
+        ![Kamerasymbol für Video](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        [Schauen Sie sich ein Video an](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) zum Verwalten von Lab-Umgebungen für Tests.
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Verwenden der Cloud mit Azure Pipelines oder Build und Release in Team Foundation Server
 
