@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285750"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250770"
 ---
 # <a name="understand-performance-collection-methods"></a>Grundlegendes zu Leistungserfassungsmethoden
 
@@ -86,21 +86,21 @@ Mithilfe der Instrumentierungsmethode können auch CPU- sowie Softwareleistungsi
 
 Bei der Parallelitätsprofilerstellung werden Informationen zu Multithread-Apps gesammelt. Bei der Profilerstellung für Ressourcenkonflikte werden immer dann ausführliche Aufruflisteninformationen gesammelt, wenn konkurrierende Threads auf den Zugriff auf eine freigegebene Ressource warten müssen. Bei der Parallelitätsvisualisierung werden zusätzlich allgemeinere Informationen zur Interaktion der Multithread-App mit folgenden Elementen gesammelt:
 
-  - Sich selbst
-  - Der Hardware
-  - Dem Betriebssystem
-  - Anderen Prozessen auf dem Hostcomputer
+- Sich selbst
+- Der Hardware
+- Dem Betriebssystem
+- Anderen Prozessen auf dem Hostcomputer
 
 In Berichten zu Ressourcenkonflikten wird die Gesamtanzahl der Konflikte angezeigt. Sie melden außerdem die Gesamtzeit, die Module, Funktionen, Quellcodezeilen und Anweisungen auf eine Ressource gewartet haben. Die aufgetretenen Konflikte werden in Zeitachsendiagrammen dargestellt.
 
 In der Parallelitätsschnellansicht werden grafische Informationen gezeigt, mit deren Hilfe Sie Folgendes finden:
 
-  - Leistungsengpässe
-  - CPU-Unterauslastung
-  - Threadkonflikte
-  - Threadmigration
-  - Synchronisierungsverzögerungen
-  - Bereiche mit überlappenden E/A-Vorgängen
+- Leistungsengpässe
+- CPU-Unterauslastung
+- Threadkonflikte
+- Threadmigration
+- Synchronisierungsverzögerungen
+- Bereiche mit überlappenden E/A-Vorgängen
 
   Nach Möglichkeit ist die grafische Ausgabe mit Daten aus der Aufrufliste und dem Quellcode verknüpft. Daten zur Parallelitätsvisualisierung können nur für Befehlszeilen- und Windows-Apps gesammelt werden.
 

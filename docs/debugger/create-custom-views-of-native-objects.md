@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5720511c15526a54a82018b2079b91aaf5dd6430
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350705"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248060"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Erstellen benutzerdefinierter Ansichten von C++-Objekten im Debugger mit dem Natvis-Framework
 
@@ -99,6 +99,7 @@ Der Visual Studio-Debugger lädt *NATVIS*-Dateien in C++-Projekte automatisch un
 Mit einem VSIX-Paket können *NATVIS*-Dateien installiert und registriert werden. Unabhängig davon, wo Sie installiert sind, werden alle registrierten *NATVIS*-Dateien beim Debuggen automatisch abgeholt.
 
 1. Schließen Sie die *NATVIS*-Datei in das VSIX-Paket ein. Beispielsweise für die folgende Projektdatei:
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
@@ -109,6 +110,7 @@ Mit einem VSIX-Paket können *NATVIS*-Dateien installiert und registriert werden
    ```
 
 2. Registrieren Sie die *NATVIS*-Datei in der Datei *source.extension.vsixmanifest*:
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
@@ -702,7 +704,7 @@ Es ist viel aufwendiger, eine benutzerdefinierte Visualisierung zu schreiben als
 
  Sie können die Attribute `Condition`, `IncludeView` und `ExcludeView` für `CustomVisualizer`-Elemente verwenden.
 
- ## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a>Einschränkungen
 
 Natvis-Anpassungen arbeiten mit Klassen und Strukturen, jedoch nicht mit Typedefs.
 

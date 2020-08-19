@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62811193"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144700"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
@@ -21,9 +21,14 @@ Das Erstellen von Grafiken ist ein wichtiger Bestandteil der Arbeit von Datenana
 
 ![Plotfenster](media/plotting-hero-image.png)
 
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
+:::row:::
+    :::column:::
+        ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen")
+    :::column-end:::
+    :::column:::
+        [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s).
+    :::column-end:::
+:::row-end:::
 
 ## <a name="the-plot-window"></a>Das Plotfenster
 

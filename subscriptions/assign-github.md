@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Verwalten von Abonnements im Visual Studio- und GitHub Enterprise-Angebot
-ms.openlocfilehash: d7100c2b9cfdd12579419927fd0bf8885038048b
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509004"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249839"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Verwalten von Visual Studio-Abonnements mit GitHub Enterprise
 Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnement zu erwerben, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist die einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
@@ -46,8 +46,8 @@ Weitere Informationen zum Verwalten von „GitHub.com“ finden Sie in den folge
 + [Vollständige Liste der Hilfethemen](https://help.github.com/en)
 + [Verwalten der Mitgliedschaft in Ihrer Organisation](https://help.github.com/en/articles/managing-membership-in-your-organization)
 + [Einladen von Benutzern zum Beitritt zu Ihrer Organisation](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-    - [Entfernen von Benutzern aus Teams/Organisationen](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-    - [Reaktivieren eines ehemaligen Mitglieds Ihrer Organisation](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
+  - [Entfernen von Benutzern aus Teams/Organisationen](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+  - [Reaktivieren eines ehemaligen Mitglieds Ihrer Organisation](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
 + [Verwalten des Zugriffs mithilfe von Rollen](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
 + [Organisieren von Benutzern in Teams](https://help.github.com/en/articles/organizing-members-into-teams)
 + [Verwalten des Zugriffs auf die Repositorys Ihrer Organisation](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
@@ -57,15 +57,16 @@ Die GitHub-Hilfe bietet eine Reihe von Administratoranleitungen, in denen Fragen
 
 + [Anzeigen aller Administratoranleitungen](https://help.github.com/en/enterprise/2.16/admin)
 + [Benutzerverwaltung](https://help.github.com/en/enterprise/2.16/admin/user-management)
-    - [Organisationen und Teams](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-        - [Erstellen von Organisationen](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-        - [Erstellen von Teams](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-        - [Hinzufügen von Personen zu Teams](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-        - [Entfernen von Personen aus Teams und Organisationen](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-    - [Benutzersicherheit](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
+  - [Organisationen und Teams](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
+    - [Erstellen von Organisationen](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+    - [Erstellen von Teams](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
+    - [Hinzufügen von Personen zu Teams](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+    - [Entfernen von Personen aus Teams und Organisationen](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+  - [Benutzersicherheit](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
 + [Installieren und Konfigurieren von GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Supportressourcen
+
 - Antworten auf Fragen zu einer Vielzahl von GitHub-Themen finden Sie unter [GitHub-Hilfe](https://help.github.com/en).
 - Hilfe von anderen GitHub-Benutzern finden Sie im [GitHub-Community-Forum](https://github.community/).
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
@@ -73,12 +74,14 @@ Die GitHub-Hilfe bietet eine Reihe von Administratoranleitungen, in denen Fragen
 - Erhalten Sie [technischen Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) für GitHub Enterprise.   
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Azure-Dokumentation](https://docs.microsoft.com/azure/)
 - [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual Studio-Abonnements.
 - [Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements](assign-license.md)
 - [Zuweisen von Abonnements zu mehreren Benutzern](assign-license-bulk.md)
@@ -87,5 +90,3 @@ In diesen Artikeln erhalten Sie weitere Informationen zum Verwalten von Visual S
 - [Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements](maximum-usage.md)
 
 Weitere Informationen zum Verwalten von Visual Studio-Abonnements mit GitHub Enterprise finden Sie im Visual Studio-[Abonnementverwaltungsportal](https://visualstudio.microsoft.com/subscriptions-administration/).
-
-

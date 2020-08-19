@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77567971"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247381"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Standardtastenkombinationen in Visual Studio für Mac
 
@@ -25,8 +25,8 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 
 In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwendeten und nützlichsten Tastenkombinationen zusammengefasst. Es stehen zwei Versionen zur Auswahl: eine für Tastenkombinationen in Visual Studio für Mac, und eine Version mit Visual Studio-Tastenkombinationen für Benutzer, die beide Versionen parallel verwenden und bereits mit Visual Studio unter Windows vertraut sind.
 
- - [Kurzreferenz: Standardtastenkombinationen in Visual Studio für Mac](https://aka.ms/vsm-keys)
- - [Kurzreferenz: Standardtastenkombinationen in Visual Studio und Visual Studio für Mac](https://aka.ms/vsm-vs-keys)
+- [Kurzreferenz: Standardtastenkombinationen in Visual Studio für Mac](https://aka.ms/vsm-keys)
+- [Kurzreferenz: Standardtastenkombinationen in Visual Studio und Visual Studio für Mac](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>Codenavigation
 
@@ -50,9 +50,9 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |Festlegen der nächsten Anweisung|**⇧⌘F10**|
 |Nächste Anweisung anzeigen|**⌥\***|
 |Einzelschritt|**⇧⌘I**, **⌘F11**|
-|Ausführen bis Rücksprung|**⇧⌘U**, **⇧⌘F11**|
+|Rücksprung|**⇧⌘U**, **⇧⌘F11**|
 |Prozedurschritt|**⇧⌘O**, **F10**|
-|Haltepunkt ein/aus|**⌘\\** , **F9**|
+|Breakpoint ein/aus|**⌘\\**, **F9**|
 |Haltepunkte anzeigen|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -81,7 +81,7 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |Definitionen umschalten|**⌥⇧⌘↓**|
 |Faltung umschalten|**⌥⇧⌘←**|
 |Zeilenkommentar umschalten|**⌘/**|
-|undo|**⌘Z**|
+|Rückgängig|**⌘Z**|
 |Auswahl nicht einziehen|**⌘[**|
 |Frame auf der Grundlage von Einschränkungen aktualisieren|**⇧⌘R**|
 
@@ -106,7 +106,7 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |Neue Datei|**⌘N**|
 |Neue Projektmappe|**⇧⌘N**|
 |Öffnen|**⌘O**|
-|Print|**⌘P**|
+|Drucken|**⌘P**|
 |Beenden|**⌘Q**|
 |Zurücksetzen|**⌘U**|
 |Speichern|**⌘S**|
@@ -119,28 +119,28 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |API-Dokumentation|**⌥⌘?**|
 |Unity-API-Referenz|**⌘'**|
 
-## <a name="other"></a>Andere
+## <a name="other"></a>Sonstiges
 
 |Befehle|Tastenkombinationen|
 |-|-|
 |Unity-Nachrichten implementieren|**⇧⌘M**|
 |Überprüfen|**⌥⌘I**|
 
-## <a name="project"></a>Projekt
+## <a name="project"></a>Project
 
 |Befehle|Tastenkombinationen|
 |-|-|
 |Dateien hinzufügen|**⌥⌘A**|
-|Build|**⌘K**, **⇧F6**|
+|Entwickeln|**⌘K**, **⇧F6**|
 |Alle erstellen|**⌘B**, **F6**|
-|Bereinigen|**⇧⌘K**|
+|Clean|**⇧⌘K**|
 |Neu erstellen|**⌃⌘K**|
 |Alle neu erstellen|**⌃⌘B**|
 |Debugging starten|**⌘⏎**, **F5**|
 |Starten ohne Debugging|**⌥⌘⏎**, **⌃F5**|
 |Beenden|**⇧⌘⏎**, **⇧F5**|
 
-## <a name="refactoring"></a>Umgestaltung
+## <a name="refactoring"></a>Refactoring
 
 |Befehle|Tastenkombinationen|
 |-|-|
@@ -151,19 +151,19 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 
 |Befehle|Tastenkombinationen|
 |-|-|
-|Befehl|**⇧⌘P**|
+|Get-Help|**⇧⌘P**|
 |Suchen in Dateien|**⇧⌘F**|
 |Weitersuchen|**⌘G**, **F3**|
 |Nächste Zeichenfolge wie in Auswahl suchen|**⌘E**, **⌘F3**|
-|Vorheriges Element suchen|**⇧⌘G**, **⇧F3**|
+|Vorheriges suchen|**⇧⌘G**, **⇧F3**|
 |Vorherige Zeichenfolge wie in Auswahl suchen|**⇧⌘F3**|
-|Find|**⌘F**|
+|Suchen|**⌘F**|
 |Gehe zu Datei|**⇧⌘D**|
 |Gehe zu Zeile|**⌘L**|
 |Gehen zu Typ|**⇧⌘T**|
 |Navigieren zu|**⌘.**|
 |In Dateien ersetzen|**⌥⇧⌘F**|
-|Ersetzen von|**⌥⌘F**|
+|Replace|**⌥⌘F**|
 
 ## <a name="text-editor"></a>Text-Editor
 
@@ -216,7 +216,7 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |Zeichen versetzen|**⌃T**|
 |Umbruch mit &lt;div&gt;|**⌥⇧W**|
 
-## <a name="view"></a>Ansicht
+## <a name="view"></a>Sicht
 
 |Befehle|Tastenkombinationen|
 |-|-|
@@ -252,7 +252,7 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |Visual Studio ausblenden|**⌘H**|
 |Minimieren|**⌘M**|
 |Nächstes Dokument|**⌘}** , **⌘F6**|
-|Vorheriges Dokument|**⌘{** , **⇧⌘F6**|
+|Vorheriges Dokument|**⌘{**, **⇧⌘F6**|
 |Zum nächsten Dokument wechseln|**⌃⇥**|
 |Zum nächsten Bereich wechseln|**⌃⌥⇥**|
 |Zum vorherigen Dokument wechseln|**⌃⇧⇥**|
@@ -260,11 +260,11 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 
 ## <a name="macos-key-symbols-lookup"></a>Tabelle mit macOS-Tastensymbolen
 
-|Symbol|Key|
+|Symbol|Schlüssel|
 |-|-|
 |⌘|**Befehl** (**CMD**)|
 |⌥|**Wahl** (**ALT**)|
-|⇧|**UMSCHALTTASTE**|
+|⇧|**Shift**|
 |⌃|**Steuerung** (**CTRL**)
 |⇞|**Seite nach oben** (**BILD-AUF**)|
 |⇟|**Seite nach unten** (**BILD-AB**)|
@@ -275,8 +275,8 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |↖|**Home**|
 |↘|**ENDE**|
 |␣|**LEERTASTE**|
-|⇥|**TAB**|
+|⇥|**Registerkarte**|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Tastenkombinationen in Visual Studio (unter Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

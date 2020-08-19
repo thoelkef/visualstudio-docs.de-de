@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183664"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247586"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Aktualisieren von Metadaten für Elemente in einer ItemGroup außerhalb eines Ziels
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Aktualisieren von Metadaten für Elemente in einer ItemGroup außerhalb eines Ziels
 
 Für Elemente außerhalb von Zielen können vorhandene Metadaten über das `Update`-Attribut aktualisiert werden. Dieses Attribut ist **nicht** für Elemente unter Zielen verfügbar.
 
