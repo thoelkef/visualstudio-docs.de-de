@@ -1,45 +1,53 @@
 ---
 title: Hinzufügen von Azure Storage mithilfe von verbundenen Diensten | Microsoft-Dokumentation
-description: Fügen Sie Ihrer App mithilfe des Dialogfelds "Verbundene Dienste hinzufügen" in Visual Studio Azure Storage hinzu
+description: Fügen Sie eine Azure Storage Dienst Abhängigkeit zu Ihrer APP hinzu, indem Sie Visual Studio verbundene Dienste
 author: ghogen
 manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
-ms.date: 03/26/2017
+ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280682"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639434"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure-Speicher mithilfe von verbundenen Visual Studio-Diensten
 
-Mit Visual Studio können Sie über das Dialogfeld **Verbundene Dienste hinzufügen** eine Verbindung zwischen jedem der folgenden Elemente und Azure Storage herstellen:
+Mit Visual Studio können Sie eine der folgenden Funktionen mit Azure Storage verbinden, indem Sie die **verbundene Dienste** -Funktion verwenden:
 
-- C#-Clouddienst
-- Mobiler .NET-Back-End-Dienst
-- ASP-NET-Website oder -Dienst
-- ASP.NET Core-Dienst
-- Azure WebJob-Dienst
+- Konsolen-app .NET Framework
+- ASP.NET MVC (.NET Framework) 
+- ASP.NET Core
+- .Net Core (einschließlich Konsolen-APP, WPF, Windows Forms, Klassenbibliothek)
+- .Net Core-workerrolle
+- Azure-Funktionen
+- Universelle Windows-Plattform-App
+- Xamarin
+- Cordova
 
 Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der Verbindungscode zu Ihrem Projekt hinzugefügt und Ihre Konfigurationsdateien entsprechend geändert.
 
-Nach Abschluss zeigt das Dialogfeld **Verbundene Dienste hinzufügen** automatisch die ausführlichen Schritte an, die erforderlich sind, um mit der Arbeit mit Blob Storage, Warteschlangen und Tabellen zu beginnen.
-
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Verbundene Dienste in Visual Studio für Mac](/visualstudio/mac/connected-services).
+## <a name="prerequisites"></a>Voraussetzungen
 
-## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>Herstellen einer Verbindung mit Azure Storage mithilfe des Dialogfelds "Verbundene Dienste"
+- Visual Studio mit installierter Azure-Arbeitsauslastung.
+- Ein Projekt mit einem der unterstützten Typen.
+
+## <a name="connect-to-azure-storage-using-connected-services"></a>Herstellen einer Verbindung mit Azure Storage mithilfe verbundene Dienste
+
+::: moniker range="vs-2017"
 
 1. Öffnen Sie Ihr Projekt in Visual Studio.
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **Verbundene Dienste**, und wählen Sie im Kontextmenü die Option **Verbundene Dienste hinzufügen** aus.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen**aus.
 
-    ![Verbundenen Azure-Dienst hinzufügen](./media/vs-azure-tools-connected-services-storage/IC796702.png)
+    ![Verbundenen Azure-Dienst hinzufügen](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
 1. Wählen Sie auf der Seite **Verbundene Dienste** die Option **Cloudspeicher mit Azure Storage** aus.
 
@@ -62,19 +70,55 @@ Nach Abschluss zeigt das Dialogfeld **Verbundene Dienste hinzufügen** automatis
    1. Wenn das Dialogfeld **Azure Storage** erneut geöffnet wird, wird das neue Speicherkonto in der Liste angezeigt. Wählen Sie das neue Speicherkonto in der Liste aus, und klicken Sie auf **Hinzufügen**.
 
 1. Der verbundene Speicherdienst wird unter dem Knoten **Dienstverweise** Ihres Projekts angezeigt.
+:::moniker-end
 
-## <a name="how-your-project-is-modified"></a>Änderungen am Projekt
+:::moniker range=">=vs-2019"
 
-Wenn Sie die Bearbeitung des Dialogfelds abschließen, fügt Visual Studio Verweise hinzu und ändert bestimmte Konfigurationsdateien. Die genauen Änderungen hängen vom Projekttyp ab:
+1. Öffnen Sie Ihr Projekt in Visual Studio.
 
-- ASP.NET-Projekt: [Was ist passiert – ASP.NET-Projekte](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
-- ASP.NET Core-Projekt: [Was ist passiert – ASP.NET 5-Projekte](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
-- Clouddienstprojekt (Web- und Workerrollen): [Was ist passiert – Clouddienstprojekte](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
-- WebJob-Projekt: [Was ist passiert – WebJob-Projekte](/azure/visual-studio/vs-storage-webjobs-what-happened)
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen**aus.
+
+    ![Verbundenen Azure-Dienst hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
+
+1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten**aus.
+
+    ![Dienst Abhängigkeit hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
+
+1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure Storage**aus.
+
+    ![Azure Storage hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
+
+    Wenn Sie noch nicht angemeldet sind, melden Sie sich bei Ihrem Azure-Konto an. Wenn Sie nicht über ein Azure-Konto verfügen, können Sie sich für eine [Kostenlose Testversion](https://azure.microsoft.com/account/free)registrieren.
+
+1. Wählen Sie auf dem Bildschirm **Azure Storage konfigurieren** ein vorhandenes Speicherkonto aus, und klicken Sie auf **weiter**.
+
+    Wenn Sie ein neues Speicherkonto erstellen müssen, fahren Sie mit dem nächsten Schritt fort. Fahren Sie ansonsten mit Schritt 6 fort.
+
+    ![Vorhandenes Speicherkonto zum Projekt hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/select-azure-storage-account.png)
+
+1. So erstellen Sie ein Speicherkonto:
+
+   1. Wählen Sie unten im Dialogfeld **Speicherkonto erstellen** aus.
+
+   1. Füllen Sie das **Azure Storage:** Dialogfeld "neu erstellen" aus, und klicken Sie auf **Erstellen**.
+
+       ![Neues Azure-Speicherkonto](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
+
+   1. Wenn das Dialogfeld **Azure Storage** erneut geöffnet wird, wird das neue Speicherkonto in der Liste angezeigt. Wählen Sie das neue Speicherkonto in der Liste aus, und klicken Sie auf **weiter**.
+
+1. Geben Sie einen Namen für die Verbindungs Zeichenfolge ein, und wählen Sie aus, ob die Verbindungs Zeichenfolge in einer lokalen Geheimnis Datei oder in [Azure Key Vault](/azure/key-vault)gespeichert werden soll
+
+   ![Verbindungs Zeichenfolge angeben](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
+
+1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig**stellen.
+
+   ![Zusammenfassung der Änderungen](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
+
+1. Der verbundene Speicherdienst wird unter dem Knoten **Dienstverweise** Ihres Projekts angezeigt.
+:::moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 
-- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure Storage-Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Dokumentation zu Azure Storage](/azure/storage/)
 - [Verbundene Dienste (Visual Studio für Mac)](/visualstudio/mac/connected-services)
