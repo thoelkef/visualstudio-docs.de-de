@@ -11,26 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250545"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706515"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
 Sie können Codemetrikdaten auf drei Arten generieren:
 
-- Durch Installieren von [FxCop-Analyzern](#fxcop-analyzers-code-metrics-rules) und Aktivieren der vier Code metrikregeln (Wartbarkeit), die Sie enthält.
+- Durch Aktivieren von [.NET-Code Qualitätsanalysen](#net-code-quality-analyzers-code-metrics-rules) und Aktivieren der vier Code metrikregeln (Wartbarkeit), die Sie enthält.
 
 - Durch Auswählen des Menübefehls [ **Analyze**  >  **Code Metrik berechnen** ](#calculate-code-metrics-menu-command) in Visual Studio.
 
 - In der [Befehlszeile](#command-line-code-metrics) für c#-und Visual Basic-Projekte.
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>Codemetrikregeln für FxCop-Analysen
+## <a name="net-code-quality-analyzers-code-metrics-rules"></a>Code metrikregeln für .net-Codequalität-Analysen
 
-Das [nuget-Paket "fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) " umfasst mehrere Code Metrik- [Analyse](roslyn-analyzers-overview.md) Regeln:
+Die .NET-Code Qualitätsanalysen enthalten mehrere Regeln für [codemetrikanalytiker](roslyn-analyzers-overview.md) :
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
@@ -50,7 +50,7 @@ Diese Regeln sind standardmäßig deaktiviert, aber Sie können Sie über [**Pro
 
 ### <a name="configuration"></a>Konfiguration
 
-Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln im Paket FxCop Analyzer ausgelöst werden.
+Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln ausgelöst werden.
 
 1. Erstellen einer Textdatei Beispielsweise können Sie *CodeMetricsConfig.txt*benennen.
 
