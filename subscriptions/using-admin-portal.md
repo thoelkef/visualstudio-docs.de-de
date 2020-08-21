@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: Erfahren Sie, wie Sie die Visual Studio-Abonnements Ihrer Organisation mit dem Verwaltungsportal für Abonnements verwalten.
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902949"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249866"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Übersicht über das Verwaltungsportal für Visual Studio-Abonnements
 
@@ -42,7 +42,7 @@ Sobald Sie Abonnements zugewiesen haben, können Sie auf der Registerkarte „Ma
 
 Oben links auf der Seite sind mehrere Symbole vorhanden, auf die Sie klicken können, um die Übersicht über die Abonnementzuweisungen, die Vereinbarungsdetails und den Bericht zur maximalen Auslastung anzuzeigen.
 
-Sie können zusätzliche Informationen zur Anzahl der in Ihrer Organisation für jede Vereinbarung erworbenen, zugewiesenen und noch verfügbaren Abonnementlizenzen einsehen, indem Sie auf das Symbol ganz oben klicken, damit der entsprechende Bereich eingeblendet wird.
+Sie können zusätzliche Informationen zur Anzahl der in Ihrer Organisation für jede Vereinbarung erworbenen, zugewiesenen und noch verfügbaren Abonnementlizenzen einsehen, indem Sie das Symbol ganz oben auswählen, damit der entsprechende Bereich eingeblendet wird.
 > [!div class="mx-imgBorder"]
 > ![Seite „Abonnenten“ des Portals zur Verwaltung von Visual Studio-Abonnements](_img/using-admin-portal/subscribers-page.png)
 

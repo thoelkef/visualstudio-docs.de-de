@@ -6,12 +6,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589564"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249970"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Deaktivieren der DPI-Fähigkeit in Visual Studio
 
@@ -54,7 +54,7 @@ Wenn Visual Studio als ein nicht DPI-fähiger Prozess ausgeführt wird, werden d
 > - Wenn Sie Toolfenster in Visual Studio nicht angedockt hatten, als Sie die Option zum Neustart als nicht DPI-fähiger Prozess ausgewählt haben, kann sich die Position dieser Toolfenster ändern.
 > - Wenn Sie das Visual Basic-Standardprofil verwenden oder Sie die Option **Neue Projekte beim Erstellen speichern** unter **Extras** > **Optionen** > **Projekte und Projektmappen** deaktiviert haben, kann Visual Studio Ihr Projekt nicht erneut öffnen, wenn die Anwendung als nicht DPI-fähiger Prozess neu gestartet wird. Allerdings können Sie das Projekt öffnen, indem Sie es unter**Datei** > **Zuletzt verwendete Projekte und Projektmappen** auswählen.
 
-Es ist wichtig, Visual Studio als DPI-fähigen Prozess neu zu starten, wenn Sie die Arbeit im **Windows Forms-Designer** abgeschlossen haben. Wenn die Ausführung als nicht DPI-fähiger Prozess erfolgt, können Schriftarten verschwommen aussehen, und es werden möglicherweise Probleme in anderen Designern angezeigt, z.B. im **XAML-Designer**. Wenn Sie Visual Studio schließen und erneut öffnen, wenn die Anwendung im nicht DPI-fähigen Modus ausgeführt wird, wird Visual Studio erneut DPI-fähig. Sie können auch auf die Option **Neustarten von Visual Studio als DPI-fähiger Prozess** in der Informationsleiste klicken.
+Es ist wichtig, Visual Studio als DPI-fähigen Prozess neu zu starten, wenn Sie die Arbeit im **Windows Forms-Designer** abgeschlossen haben. Wenn die Ausführung als nicht DPI-fähiger Prozess erfolgt, können Schriftarten verschwommen aussehen, und es werden möglicherweise Probleme in anderen Designern angezeigt, z.B. im **XAML-Designer**. Wenn Sie Visual Studio schließen und erneut öffnen, wenn die Anwendung im nicht DPI-fähigen Modus ausgeführt wird, wird Visual Studio erneut DPI-fähig. Sie können auch die Option **Neustarten von Visual Studio als DPI-fähiger Prozess** in der Informationsleiste auswählen.
 
 ### <a name="add-a-registry-entry"></a>Hinzufügen eines Registrierungseintrags
 

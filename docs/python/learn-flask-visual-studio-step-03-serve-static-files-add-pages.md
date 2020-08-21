@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72985187"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238741"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung mit der Flask-App
 
 **Vorheriger Schritt:[Erstellen einer Flask-App mit Ansichten und Seitenvorlagen](learn-flask-visual-studio-step-02-create-app.md)**
 

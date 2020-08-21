@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren entweder Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235133"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249620"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
@@ -28,7 +28,7 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
 
 1. Navigieren Sie zur Registerkarte **Abonnenten verwalten**, um mehrere Abonnenten gleichzeitig hinzuzufügen. Klicken Sie auf die Registerkarte **Hinzufügen**, und wählen Sie im Dropdownmenü **Massenhinzufügen** aus.  
 
-1. Die Funktion zum Massenhinzufügen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenteninformationen. Klicken Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) auf **Herunterladen**, um die Vorlage herunterzuladen.
+1. Die Funktion zum Massenhinzufügen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenteninformationen. Wählen Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) **Herunterladen** aus, um die Vorlage herunterzuladen.
    > [!div class="mx-imgBorder"]
    > ![Excel-Vorlage zum Hochladen mehrerer Abonnenten herunterladen](media/download-template-upload-subscribers.png "Laden Sie die leere Excel-Vorlage herunter, um mit dem Massenzuweisungsprozess zu beginnen.")
    >
@@ -48,13 +48,13 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
     - Stellen Sie sicher, dass alle erforderlichen Felder ausgefüllt sind. 
     - Überprüfen Sie die Spalte **Fehlermeldung**.  Falls Fehler aufgeführt werden, lösen Sie diese, bevor Sie die Datei hochladen. 
 
-1. Kehren Sie zum Portal für die Verwaltung von Visual Studio-Abonnements zurück. Klicken Sie im Dialogfeld **Mehrere Abonnenten hochladen** auf **Durchsuchen**.
+1. Kehren Sie zum Portal für die Verwaltung von Visual Studio-Abonnements zurück. Wählen Sie im Dialogfeld **Mehrere Abonnenten hochladen** die Option **Durchsuchen** aus.
    > [!div class="mx-imgBorder"]
    > ![Zum Hochladen mehrerer Abonnenten zur gespeicherten Vorlage navigieren](media/bulk-add-browse-saved-template.png "Sie können zum Dateispeicherort navigieren oder diesen per Drag and Drop in diesem Dialogfeld ablegen.")
 
-1. Navigieren Sie zur Excel-Datei, die Sie gespeichert haben, und klicken Sie anschließend auf **OK**.
+1. Navigieren Sie zur Excel-Datei, die Sie gespeichert haben, und wählen Sie anschließend **OK** aus.
    > [!div class="mx-imgBorder"]
-   > ![Excel-Vorlage zum Upload mehrerer Abonnenten hochladen](media/bulk-upload-subscribers.png "Hier wird die Vorlage mit Ihren Daten angezeigt.  Klicken Sie auf „OK“, um den Upload zu starten.")
+   > ![Excel-Vorlage zum Upload mehrerer Abonnenten hochladen](media/bulk-upload-subscribers.png "Hier wird die Vorlage mit Ihren Daten angezeigt.  Wählen Sie „OK“ aus, um den Uploadvorgang zu starten.")
 
     Es wird ein Statusdialogfeld zum Uploadprozess angezeigt.
 
@@ -66,7 +66,7 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
    1. Öffnen Sie die erstellte Excel-Datei, beheben Sie die Probleme, und speichern Sie die Datei.
    0. Kehren Sie zum Verwaltungsportal zurück, und klicken Sie auf **Hinzufügen**.
    0. Klicken Sie auf **Massenhinzufügen**.
-   0. Da Sie die Excel-Datei bereits gespeichert haben, müssen Sie die Vorlage nicht herunterladen.  Klicken Sie auf **Durchsuchen**, suchen Sie nach der gerade gespeicherten Datei, und klicken Sie auf **Öffnen**.
+   0. Da Sie die Excel-Datei bereits gespeichert haben, müssen Sie die Vorlage nicht herunterladen.  Wählen Sie **Durchsuchen** aus, suchen Sie nach der gerade gespeicherten Datei, und wählen Sie dann **Öffnen** aus.
    0. Klicken Sie auf **OK**.
 
 
@@ -109,7 +109,7 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
    > [!div class="mx-imgBorder"]
    > ![Auswählen Ihrer Azure AD-Gruppe](_img/assign-license-bulk/bulk-add-aad-details.png "Wählen Sie den Namen Ihrer Azure AD-Gruppe aus, um Abonnenten aus dieser Gruppe hinzuzufügen.")
 
-6. Klicken Sie auf **Hinzufügen** und anschließend auf **Bestätigen**. 
+6. Wählen Sie **Hinzufügen** und dann **Bestätigen** aus. 
 
 7. Um die hinzugefügte Gruppe anzuzeigen, scrollen Sie zum Ende Ihrer Benutzerliste.  
 

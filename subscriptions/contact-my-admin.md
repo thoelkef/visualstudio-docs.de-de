@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Ihren Abonnementadministrator bei Fragen oder Problemen kontaktieren können.
-ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434254"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247430"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Anfordern von Unterstützung durch einen Abonnementadministrator
 Wenn Ihr Visual Studio-Abonnement von einem Unternehmen, einer Schule oder einer Universität bereitgestellt wurde, hat Ihnen dieses Abonnement vermutlich ein Abonnementadministrator zugewiesen.  Administratoren können Abonnements zuweisen oder diese Zuweisung rückgängig machen, die E-Mail-Adressen für Anmeldungen ändern, feststellen, ob Sie Software herunterladen können, und weitere abonnementbezogene Funktionen ausführen.
@@ -21,12 +21,12 @@ Angesichts der Größe und Komplexität vieler Organisationen wissen Sie möglic
 
 ## <a name="how-to-contact-your-admin"></a>Kontaktieren Ihres Administrators
 1. Melden Sie sich beim Abonnentenportal unter <https://my.visualstudio.com> an.
-2. Klicken Sie auf die Registerkarte **Abonnements**. 
-3. Klicken Sie oben rechts auf **Contact my Admin** (Administrator kontaktieren). 
+2. Wählen Sie die Registerkarte **Abonnements** aus. 
+3. Wählen Sie oben rechts **Contact my Admin** (Administrator kontaktieren) aus. 
    > [!div class="mx-imgBorder"]
-   > ![Contact my Admin](_img/contact-my-admin/contact-my-admin-button.png "Klicken Sie auf die Schaltfläche „Administrator kontaktieren“, geben Sie Ihre Nachricht ein, und klicken Sie auf „Senden“.") (Administrator kontaktieren)
+   > ![Contact my Admin](_img/contact-my-admin/contact-my-admin-button.png "Wählen Sie die Schaltfläche „Administrator kontaktieren“ aus, geben Sie Ihre Nachricht ein, und wählen Sie dann „Senden“ aus.") (Administrator kontaktieren)
 4. Geben Sie die Nachricht ein, die an den Administrator gesendet werden soll.
-5. Wenn Sie eine Kopie der Nachricht erhalten möchten, die an Ihren Administrator gesendet wird, klicken Sie auf das Kontrollkästchen neben **Send me a copy** (Kopie an mich senden). 
+5. Wenn Sie eine Kopie der Nachricht erhalten möchten, die an Ihren Administrator gesendet wird, wählen Sie das Kontrollkästchen neben **Send me a copy** (Kopie an mich senden) aus. 
 6. Klicken Sie abschließend auf **Senden**.
 
 > [!NOTE]

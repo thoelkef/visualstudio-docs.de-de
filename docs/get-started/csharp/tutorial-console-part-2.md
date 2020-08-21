@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aae83c43a106fd68b03a83124ad2ddcea4652c8d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375926"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507955"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: Erweitern einer einfachen C#-Konsolen-App
 
-In diesem Tutorial erfahren Sie, wie Sie Visual Studio verwenden, um die Konsolen-App zu erweitern, die Sie im ersten Teil erstellt haben. Dabei lernen Sie einige Features von Visual Studio kennen, die Sie Ihre Produktivität als Entwickler steigern, z. B. erweiterter Editor- und Debugfeatures.
+In diesem Tutorial erfahren Sie, wie Sie Visual Studio verwenden, um die Konsolen-App zu erweitern, die Sie im ersten Teil erstellt haben. Sie lernen einige der Features in Visual Studio kennen, die Sie für die tägliche Entwicklung benötigen, z. B. für die Verwaltung mehrerer Projekte und das Verweisen auf Drittanbieterpakete.
 
 Wenn Sie den [ersten Teil](tutorial-console.md) dieser Reihe abgeschlossen haben, verfügen Sie bereits über die Calculator-Konsolen-App.  Sie können damit beginnen, das Projekt aus einem GitHub-Repository zu öffnen, um Teil 1 zu überspringen. Die C#-App „Calculator“ finden Sie im Repository [vs-tutorial-samples](https://github.com/MicrosoftDocs/vs-tutorial-samples). Sie können also einfach die Schritte im [Tutorial: Öffnen eines Projekts aus einem Repository](../tutorial-open-project-from-repo.md) ausführen, um zu beginnen.
 

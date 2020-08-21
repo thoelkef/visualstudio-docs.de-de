@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Superadministrator- und Administratorrolle und das Zuweisen von Administratoren.
-ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: bf10b95d44a960fea50bff6b2fba7b9a8dc98a26
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234626"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248446"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Superadministratoren und Administratoren für Visual Studio-Abonnementverträge
 
@@ -27,18 +27,18 @@ Im neuen Portal zur Verwaltung von Visual Studio-Abonnements für Kunden mit Vol
 ## <a name="assigning-administrators"></a>Zuweisen von Administratoren
 So weisen Sie neue Administratoren zu:
 1. Melden Sie sich bei https://manage.visualstudio.com mit einer E-Mail-Adresse an, der die Rolle des Superadministrators entsprechend dem Vertrag zugewiesen ist, über den die Abonnements erworben wurden.
-2. Klicken Sie auf die Registerkarte **Administratoren verwalten**.
-3. Klicken Sie auf **Hinzufügen**.
+2. Wählen Sie die Registerkarte **Administratoren verwalten** aus.
+3. Wählen Sie **Hinzufügen**.
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen von Administratoren](_img/admin-roles/add-admins.png "Klicken Sie auf das Blatt „Administratoren verwalten“, und klicken Sie dann auf „Hinzufügen“, um neue Administratoren hinzuzufügen.")
+   > ![Hinzufügen von Administratoren](_img/admin-roles/add-admins.png "Wählen Sie das Blatt „Administratoren verwalten“ aus, und wählen Sie dann „Hinzufügen“ aus, um neue Administratoren hinzuzufügen.")
 4. Füllen Sie das Formular mit den Informationen des neuen Administrators aus.  
    > [!div class="mx-imgBorder"]
-   > ![Formular „Administrator hinzufügen“](_img/admin-roles/add-form.png "Geben Sie die Anmeldedaten für den neuen Administrator ein, und entscheiden Sie, ob dieser ein Superadministrator sein soll.  Klicken Sie anschließend auf „Hinzufügen“.")
+   > ![Formular „Administrator hinzufügen“](_img/admin-roles/add-form.png "Geben Sie die Anmeldedaten für den neuen Administrator ein, und entscheiden Sie, ob dieser ein Superadministrator sein soll.  Wählen Sie „Hinzufügen“ aus.")
 
    > [!NOTE]
    > Wenn dieser Administrator in der Lage sein soll, weitere Administratoren zuzuweisen, müssen Sie das Kontrollkästchen neben **Super Admin** (Superadministrator) aktivieren.
 
-5. Klicken Sie auf **Hinzufügen**, um den neuen Administrator zuzuweisen. Dieser erhält dann eine E-Mail, in der er aufgefordert wird, sich beim Portal anzumelden.  
+5. Nachdem Sie **Hinzufügen** ausgewählt haben, um den neuen Administrator zuzuweisen, erhält dieser eine E-Mail, in der er aufgefordert wird, sich am Portal anzumelden.  
 
 ## <a name="resources"></a>Ressourcen
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)

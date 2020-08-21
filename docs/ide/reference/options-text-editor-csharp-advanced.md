@@ -1,21 +1,21 @@
 ---
 title: Optionen, Text-Editor, C#, Erweitert
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181065"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214669"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -128,7 +128,13 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
 Aktivieren Sie diese Kontrollkästchen, um gestrichelte vertikale Linien zwischen geschweiften Klammern ( **{}** ) in Ihrem Code anzuzeigen. Dann können Sie leicht einzelne Codeblöcke für Ihre Deklarations- und Codeebenen erkennen.
 
 ## <a name="editor-help"></a>Editor-Hilfe
-
+::: moniker range=">=vs-2019"
+- Hinweise zu Inlineparameternamen 
+    
+    Wenn diese Option ausgewählt ist, werden Hinweise zu Parameternamen für Literale, umgewandelte Literale und Objektinstanziierungen vor jedem Argument in Funktionsaufrufen eingefügt.  
+    
+    ![Hinweise zu Parameternamen für CSharp](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - XML-Dokumentationskommentare generieren für ///
 
    Bei Auswahl dieser Option werden die XML-Elemente für XML-Dokumentationskommentare eingefügt, wenn Sie die `///`-Kommentareinführung eingegeben haben. Weitere Informationen über die XML-Dokumentation finden Sie unter [XML-Dokumentationskommentare (C#-Programmierhandbuch)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902912"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247328"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -20,19 +20,19 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Azure“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Aktivieren**.
+2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Azure“, und wählen Sie im unteren Bereich der Kachel mit den Vorteilen den Link **Aktivieren** aus.
    > [!div class="mx-imgBorder"]
    > ![Azure-Kachel](_img/vs-azure/vs-azure-tile.png)
 
-3. Wenn Sie kein Azure-Abonnement haben, füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen.  Der erste Schritt besteht darin, Ihre persönlichen Daten anzugeben und dann auf **Weiter** zu klicken.
+3. Wenn Sie kein Azure-Abonnement haben, füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen.  Der erste Schritt besteht darin, Ihre persönlichen Daten anzugeben und dann **Weiter** auszuwählen.
    > [!div class="mx-imgBorder"]
    > ![Azure-Registrierung](_img/vs-azure/vs-azure-about-you.png)
 
-4. Als nächstes müssen Sie Ihre Identität mit einem einfachen Überprüfungscode verifizieren. Geben Sie Ihre Telefonnummer an, und wählen Sie, ob Sie den Code per SMS oder Telefon erhalten möchten.  Geben Sie den empfangenen Code ein, und klicken Sie auf **Code überprüfen**.   
+4. Als nächstes müssen Sie Ihre Identität mit einem einfachen Überprüfungscode verifizieren. Geben Sie Ihre Telefonnummer an, und wählen Sie, ob Sie den Code per SMS oder Telefon erhalten möchten.  Geben Sie den empfangenen Code ein, und wählen Sie dann **Code überprüfen** aus.   
    > [!div class="mx-imgBorder"]
    > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Klicken Sie für den letzten Schritt auf das Kontrollkästchen, um die Bedingungen zu akzeptieren, und klicken Sie dann auf **Registrieren**.  Das ist schon alles!
+5. Wählen Sie als letzten Schritt das Kontrollkästchen ais, um die Bedingungen zu akzeptieren, und wählen Sie dann **Registrieren** aus.  Das ist schon alles!
    > [!div class="mx-imgBorder"]
    > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-agreement.png)
 

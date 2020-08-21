@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307148"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238789"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python-Projekte in Visual Studio
 
@@ -39,9 +39,7 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 >
 > Es ist einfach, ein Visual Studio-Projekt aus vorhandenem Code zu erstellen, wie unter [Erstellen eines Projekts aus vorhandenen Dateien](#create-project-from-existing-files) beschrieben.
 
-|   |   |
-|---|---|
-| ![Symbol für Filmkamera für das Video](../install/media/video-icon.png "Video ansehen") | [Vertiefung: Use source control with Python projects (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Minuten und 55 Sekunden). |
+![Filmkamerasymbol für Video](../install/media/video-icon.png "Video ansehen") [Deep Dive: Use source control with Python projects (Vertiefung: Verwenden der Quellcodeverwaltung mit Python-Projekten)](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 Minuten und 55 Sekunden).
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen
 
@@ -77,7 +75,7 @@ Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-P
 
 Die folgende Tabelle fasst die in Visual Studio 2017 und höher verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
-| Vorlage | Beschreibung |
+| Vorlage | BESCHREIBUNG |
 | --- | --- |
 | [**Aus vorhandenem Python-Code**](#create-project-from-existing-files) | Erstellt ein Visual Studio-Projekt aus vorhandenem Python-Code in einer Ordnerstruktur.  |
 | **Python-Anwendung** | Eine grundlegende Projektstruktur für eine neue Python-Anwendung mit einer einzelnen, leeren Quelldatei. Standardmäßig wird das Projekt im Konsoleninterpreter der globalen Standardumgebung ausgeführt, die Sie durch [Zuweisen einer anderen Umgebung](selecting-a-python-environment-for-a-project.md) ändern können. |
@@ -131,7 +129,7 @@ Wenn Sie eine verknüpfte Datei im **Projektmappen-Explorer** verschieben, wird 
 
 Verknüpfte Dateien können nicht umbenannt werden.
 
-## <a name="references"></a>Verweise
+## <a name="references"></a>Referenzen
 
 Visual Studio-Projekte unterstützen das Hinzufügen von Verweisen auf Projekte und Erweiterungen, die im **Projektmappen-Explorer** unter dem Knoten **Verweise** angezeigt werden:
 

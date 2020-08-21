@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 9d6fd5ffefcd6696fa67302a8d59fd46e498a472
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950595"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214693"
 ---
 # <a name="set-up-a-git-repository"></a>Einrichten eines Git-Repositorys
 
@@ -55,7 +55,7 @@ Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_
 
 3. Wählen Sie die Registerkarte **Aus registrierten auswählen**, und klicken Sie auf die Schaltfläche **Hinzufügen**:
 
-    ![](media/version-control-git5.png)
+    ![Hinzufügen eines registrierten Repositorydialogfelds.](media/version-control-git5.png)
 
 4. Geben Sie den Namen des Repositorys an, den Sie lokal angezeigt haben möchten, und kopieren Sie diesen in die URL aus Schritt 3. Das Dialogfeld „Repositorykonfiguration“ sollte nun der folgenden Abbildung ähneln. Klicken Sie auf „OK“:
 

@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Lernen Sie unser neues Angebot für Visual Studio in Kombination mit GitHub kennen.
-ms.openlocfilehash: d2d4e3d3bef5b4e9c6f7cb4ba93f8b62cc13275a
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232786"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248189"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
 
@@ -66,7 +66,7 @@ Wenn Sie mit GitHub noch nicht vertraut sind, finden Sie hier einige Ressourcen,
 Antwort:  Der Prozess zum Einrichten des GitHub-Abonnements kann eine Weile dauern.  Wenn Sie schon länger warten und nichts gehört haben, können Sie sich an Ihren GitHub-Administrator wenden.  Es ist möglich, dass Ihr Administrator noch daran arbeitet oder sich entschieden hat, Ihnen kein GitHub-Abonnement zuzuweisen. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Frage:  Wie erreiche ich meinen GitHub-Administrator?
-Antwort:  Wenn Sie GitHub Enterprise Server verwenden, klicken Sie auf den **Support**-Link am unteren Rand des Clients, um eine Verbindung mit Ihrem Administrator herzustellen.
+Antwort:  Wenn Sie GitHub Enterprise Server verwenden, wählen Sie den Link **Support** am unteren Rand des Clients aus, um eine Verbindung mit Ihrem Administrator herzustellen.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Frage: Erhalte ich das vollständige Visual Studio-Abonnement (Professional oder Enterprise), oder erhalte ich lediglich die IDE mit diesem Angebot?
 Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein vollständiges Visual Studio-Abonnement.  Sie erhalten alle Vorteile wie Softwaredownloads, Clouddienste, technischen Support und Partnervorteile im Rahmen dieses Abonnements, genau so, als ob das Abonnement separat erworben worden wäre.

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569191"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249878"
 ---
 # <a name="go-to-line-dialog-box"></a>Gehe zu Zeile (Dialogfeld)
 
@@ -26,7 +26,7 @@ Mit dem Dialogfeld **Gehe zu Zeile** können Sie im aktiven Dokument zu einer be
 
 ![Dialogfeld „Gehe zu Zeile“ in Visual Studio](media/go-to-line-dialog-box.png)
 
-## <a name="line-number-1---n"></a>Zeilennummer (1 - \<n>)
+## <a name="line-number-1---n"></a>Zeilennummer (1 – \<n>)
 
 Geben Sie im Dialogfeld **Zeilennummer (1 - \<n>)** die Nummer der Zeile im aktiven Dokument ein, in die Sie wechseln möchten. Die eingegebene Zahl muss zwischen 1 und der letzten Zeilenummer im aktuellen Dokument liegen.
 
@@ -36,3 +36,4 @@ Geben Sie im Dialogfeld **Zeilennummer (1 - \<n>)** die Nummer der Zeile im akti
 - [Festlegen von Textmarken im Code](../../ide/setting-bookmarks-in-code.md)
 - [Suchen und Ersetzen von Text](../../ide/finding-and-replacing-text.md)
 - [Funktionen des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Befehl „Gehe zu“](go-to-command.md)

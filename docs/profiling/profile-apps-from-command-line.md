@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285843"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507998"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Messen der Anwendungsleistung über die Befehlszeile
 
@@ -41,9 +41,9 @@ Bei der Profilerstellung mithilfe der CLI-Diagnosetools von Visual Studio wird d
 
 1. Starten Sie das Notepad, und öffnen Sie dann den Taskmanager, um seine Prozess-ID (PID) zu erhalten. Im Taskmanager finden Sie die PID in der Registerkarte **Details**.
 
-1. Öffnen Sie eine Eingabeaufforderung, und wechseln Sie zum Verzeichnis mit dem ausführbaren Sammlungs-Agent, das sich normalerweise hier befindet:
+1. Öffnen Sie eine Eingabeaufforderung, und wechseln Sie zum Verzeichnis mit dem ausführbaren Sammlungs-Agent, das sich normalerweise hier (für Visual Studio Enterprise) befindet:
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. Starten Sie *VSDiagnostics.exe*, indem Sie den folgenden Befehl ausführen.
 
@@ -54,8 +54,14 @@ Bei der Profilerstellung mithilfe der CLI-Diagnosetools von Visual Studio wird d
    Folgende Argumente müssen eingeschlossen werden:
 
    * \<*id*>: bestimmt die Sammlungssitzung. Die ID muss eine Zahl im Bereich von 1 bis 255 sein.
-   * \<*pid*>: die PID des Prozesses, den Sie profilen möchten. Hier also die PID, die Sie in Schritt 1 abgerufen haben.
+   * \<*pid*>: Die PID des Prozesses, den Sie profilen möchten. Hier also die PID, die Sie in Schritt 1 abgerufen haben.
    * \<*configFile*>: Konfigurationsdatei des Sammlungs-Agents, den Sie starten möchten. Weitere Informationen finden Sie unter [Runtime Configuration Files (Konfigurationsdateien der Runtime)](#config_file).
+
+   Beispielsweise können Sie den folgenden Befehl für den CPUUsageBase-Agent verwenden, indem Sie die *pid* wie zuvor beschrieben ersetzen.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. Ändern Sie die Größe des Notepads, oder geben Sie etwas ein, damit einige aussagekräftige Profilerstellungsinformationen gesammelt werden können.
 
@@ -65,7 +71,9 @@ Bei der Profilerstellung mithilfe der CLI-Diagnosetools von Visual Studio wird d
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Wechseln Sie zur Dateiausgabe des vorherigen Befehls, und öffnen Sie sie in Visual Studio, um die gesammelten Informationen zu untersuchen.
+1. Wechseln Sie zur Ausgabe der *DIAGSESSION*-Datei aus dem vorherigen Befehl, und öffnen Sie sie in Visual Studio (**Datei** > **Öffnen**), um die erfassten Informationen zu untersuchen.
+
+   Informationen zum Analysieren der Ergebnisse finden Sie in der Dokumentation zum entsprechenden Leistungstool. Dies kann z. B. [CPU-Auslastung](../profiling/cpu-usage.md), das [.NET-Objektzuordnungstool](../profiling/dotnet-alloc-tool.md) oder das [Datenbanktool](../profiling/analyze-database.md) sein.
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> Agent-Konfigurationsdateien
 

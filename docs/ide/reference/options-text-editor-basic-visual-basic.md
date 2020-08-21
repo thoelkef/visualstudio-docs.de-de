@@ -1,6 +1,6 @@
 ---
 title: Optionen, Text-Editor, Standard (VB), Erweitert
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431474"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214645"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Optionen, Text-Editor, Standard (Visual Basic), Erweitert
 Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) umfasst die folgenden Eigenschaften:
@@ -78,6 +78,13 @@ Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelld
 Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die sich mit strukturierten Codeblöcken decken, sodass Sie die einzelnen Codeblöcke leicht identifizieren können. Beispielsweise würden Sie in einer `Sub`-Anweisung eine Linie zwischen `Sub` und `EndSub` sehen.
 
 ## <a name="editor-help"></a>Editor-Hilfe
+
+::: moniker range=">=vs-2019"
+**Hinweise zu Inlineparameternamen**    
+Wenn diese Option ausgewählt ist, werden Hinweise zu Parameternamen für Literale, umgewandelte Literale und Objektinstanziierungen vor jedem Argument in Funktionsaufrufen eingefügt.  
+
+![Hinweise zu Parameternamen für Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
 **Automatische Strukturierung und Einrückung des Programmcodes:** Der Text-Editor formatiert den Code entsprechend neu. Wenn diese Option aktiviert ist, führt der Code-Editor die folgenden Aufgaben durch:
 
