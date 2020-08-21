@@ -1,5 +1,5 @@
 ---
-title: Workflow-Designer ClearCollection- <T> Aktivitäts Designer
+title: Workflow-Designer-ClearCollection &lt; T- &gt; Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96f0b56172684c5c82910b34f40aa44fd6aec81
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86876176"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711624"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T>-Aktivitätsdesigner
 
@@ -41,7 +41,7 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.ClearColl
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Gibt die Auflistung an, deren Elemente gelöscht werden sollen. Diese Auflistung ist vom Typ **ICollection \<TypeArgument> .** Geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein, um die Auflistung anzugeben.|
 |*TypeArgument*|True|Gibt den Typ T der in <xref:System.Collections.Generic.ICollection%601> enthaltenen Elemente an. Standardmäßig ist dieser *TypeArgument* -Typ auf **Int32**festgelegt. Ändern Sie den Wert von *TypeArgument* im Kombinations Feld des Eigenschaften Rasters, um den Typ zu ändern.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sammlung](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
