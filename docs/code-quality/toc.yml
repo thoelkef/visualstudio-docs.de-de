@@ -991,3 +991,5 @@
                   displayName: publish warnings
                 - name: 'IL3000: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
                   href: il3000.md
+                - name: 'IL3001: Vermeiden des Zugriffs auf den Assemblydateipfad beim Veröffentlichen als Einzeldatei'
+                  href: il3001.md
