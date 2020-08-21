@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2e5718740b9219ee988859e530591305394fb239
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284307"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250516"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Erhöhen der Wahrscheinlichkeit der Behebung eines Leistungsproblems
 
@@ -32,15 +32,15 @@ Viele Probleme weisen möglicherweise keine ausgeprägten Merkmale oder reproduz
 
 Im Folgenden werden Probleme beschrieben, die ohne brauchbare Diagnosedateien schwer zu analysieren sind. Nachdem Sie den Sachverhalt bestimmt haben, der Ihr Problem am besten beschreibt, befolgen Sie die für diesen Sachverhalt spezifischen Feedbackschritte.
 
--   [Abstürze:](#crashes) Ein Absturz tritt auf, wenn der Prozess (Visual Studio) unerwartet beendet wird.
+- [Abstürze:](#crashes) Ein Absturz tritt auf, wenn der Prozess (Visual Studio) unerwartet beendet wird.
 
--   [Fehlende Reaktionsfähigkeit:](#unresponsiveness) VS verliert über einen längeren Zeitraum die Reaktionsfähigkeit.
+- [Fehlende Reaktionsfähigkeit:](#unresponsiveness) VS verliert über einen längeren Zeitraum die Reaktionsfähigkeit.
 
--   [Probleme wegen Langsamkeit:](#slowness-and-high-cpu-issues) Eine bestimmte Aktion in VS erfolgt langsamer als gewünscht.
+- [Probleme wegen Langsamkeit:](#slowness-and-high-cpu-issues) Eine bestimmte Aktion in VS erfolgt langsamer als gewünscht.
 
--   [Hohe CPU-Auslastung:](#slowness-and-high-cpu-issues) Längere Zeiträume mit unerwartet hoher CPU-Auslastung
+- [Hohe CPU-Auslastung:](#slowness-and-high-cpu-issues) Längere Zeiträume mit unerwartet hoher CPU-Auslastung
 
--   [Out-of-Process-Probleme:](#out-of-process-issues) Ein durch einen Visual Studio-Satellitenvorgang verursachtes Problem.
+- [Out-of-Process-Probleme:](#out-of-process-issues) Ein durch einen Visual Studio-Satellitenvorgang verursachtes Problem.
 
 ## <a name="crashes"></a>Abstürze
 Ein Absturz tritt auf, wenn der Prozess (Visual Studio) unerwartet beendet wird.
@@ -57,14 +57,13 @@ Direkt reproduzierbare Abstürze sind Sachverhalte mit allen folgenden Merkmalen
 
 Befolgen Sie für diese Probleme die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), und stellen Sie sicher, dass Sie Folgendes angeben:
 
--   Die Schritte zum Reproduzieren des Problems
+- Die Schritte zum Reproduzieren des Problems
 
--   Ein eigenständiges Reproduzierungsprojekt (wie oben beschrieben) Wenn eine eigenständige Reproduzierung nicht möglich ist, geben Sie Folgendes an:
+- Ein eigenständiges Reproduzierungsprojekt (wie oben beschrieben) Wenn eine eigenständige Reproduzierung nicht möglich ist, geben Sie Folgendes an:
 
-    -   Die Sprache der geöffneten Projekte (C\#, C++ usw.)
+  - Die Sprache der geöffneten Projekte (C\#, C++ usw.)
 
-    -   Die Art des Projekts (Konsolenanwendung, ASP.NET usw.)
-
+  - Die Art des Projekts (Konsolenanwendung, ASP.NET usw.)
 
 > [!NOTE]
 > **Das nützlichste Feedback:** In diesem Fall ist das nützlichste Feedback die Abfolge der Schritte zum Reproduzieren des Problems sowie Beispielquellcode.
@@ -99,11 +98,11 @@ Bei jedem Absturz von Visual Studio wird am konfigurierten Speicherort eine Spei
 
 Verwenden Sie anschließend die Visual Studio-Funktion „Problem melden“. Dies ermöglicht Ihnen, das entsprechende Speicherabbild anzufügen.
 
-1.  Wechseln Sie zu der zum Absturz gehörigen Speicherabbilddatei (suchen Sie nach einer Datei mit dem passenden Erstellungszeitpunkt).
+1. Ermitteln Sie die zum Absturz gehörige Speicherabbilddatei (suchen Sie nach einer Datei mit dem passenden Erstellungszeitpunkt).
 
-2.  Zippen Sie die Datei (\*.zip) nach Möglichkeit, um sie zu verkleinern, bevor Sie Feedback übermitteln.
+2. Zippen Sie die Datei (\*.zip) nach Möglichkeit, um sie zu verkleinern, bevor Sie Feedback übermitteln.
 
-3.  Befolgen Sie die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), und fügen Sie die Heap-Abbilddatei an ein neues Feedbackelement an.
+3. Befolgen Sie die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), und fügen Sie die Heap-Abbilddatei an ein neues Feedbackelement an.
 
 > [!NOTE] 
 > **Das nützlichste Feedback:** Für diesen Sachverhalt ist das nützlichste Feedback die zum Zeitpunkt des Absturzes erfasste Heap-Abbilddatei.
@@ -135,33 +134,33 @@ Wenn beispielsweise Eingabe und Navigation langsam erfolgen, führen Sie die fol
 
 Führen Sie die folgenden Schritte aus, um die Leistung optimal zu erfassen:
 
-1.  Falls noch nicht geschehen, halten Sie eine Kopie von Visual Studio geöffnet, in der Sie das Problem reproduzieren können.
+1. Falls noch nicht geschehen, öffnen Sie eine Instanz von Visual Studio, in der Sie das Problem reproduzieren können.
 
-    -   Richten Sie alles ein, um das Problem zu reproduzieren. Wenn Sie beispielsweise möchten, dass ein bestimmtes Projekt mit einer bestimmten geöffneten Datei geladen wird, stellen Sie sicher, dass beide Schritte abgeschlossen sind, bevor Sie fortfahren.
+    - Richten Sie alles ein, um das Problem zu reproduzieren. Wenn Sie beispielsweise möchten, dass ein bestimmtes Projekt mit einer bestimmten geöffneten Datei geladen wird, stellen Sie sicher, dass beide Schritte abgeschlossen sind, bevor Sie fortfahren.
 
-    -   Wenn Sie *kein* spezifisches Problem beim Laden einer Projektmappe melden, warten Sie nach dem Öffnen der Projektmappe 5-10 Minuten (oder je nach Größe der Projektmappe noch länger), bevor Sie die Leistungsüberwachung aufzeichnen. Beim Laden der Projektmappe werden viele Daten erzeugt, sodass das Warten einiger Minuten uns hilft, uns auf das spezifische Problem zu konzentrieren, das Sie melden.
+    - Wenn Sie *kein* spezifisches Problem beim Laden einer Projektmappe melden, warten Sie nach dem Öffnen der Projektmappe 5-10 Minuten (oder je nach Größe der Projektmappe noch länger), bevor Sie die Leistungsüberwachung aufzeichnen. Beim Laden der Projektmappe werden viele Daten erzeugt, sodass das Warten einiger Minuten uns hilft, uns auf das spezifische Problem zu konzentrieren, das Sie melden.
 
-2.  Starten Sie eine zweite Kopie von Visual Studio, *ohne dass eine Projektmappe geöffnet ist*.
+2. Starten Sie eine zweite Kopie von Visual Studio, *ohne dass eine Projektmappe geöffnet ist*.
 
-3.  Öffnen Sie in der neuen Kopie von Visual Studio das Tool **Problem melden**.
+3. Öffnen Sie in der neuen Kopie von Visual Studio das Tool **Problem melden**.
 
-4.  Führen Sie die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) aus, bis Sie den Schritt zum „Bereitstellen einer Ablaufverfolgung und Heap-Abbilddatei (optional)“ erreichen.
+4. Führen Sie die Schritte unter [Melden eines Problems](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) aus, bis Sie den Schritt zum „Bereitstellen einer Ablaufverfolgung und Heap-Abbilddatei (optional)“ erreichen.
 
-5.  Wählen Sie die Aufzeichnung der ersten Kopie von Visual Studio (in der ein Leistungsproblem auftritt), und starten Sie die Aufzeichnung.
+5. Wählen Sie die Aufzeichnung der ersten Kopie von Visual Studio (in der ein Leistungsproblem auftritt), und starten Sie die Aufzeichnung.
 
-    -   Die Anwendung „Schrittaufzeichnung“ wird eingeblendet und beginnt mit der Aufzeichnung.
+    - Die Anwendung „Schrittaufzeichnung“ wird eingeblendet und beginnt mit der Aufzeichnung.
 
-    -   Führen Sie **während der Aufzeichnung** in der ersten Kopie von Visual Studio die problematische Aktion aus. Es ist für uns schwierig, spezifische Leistungsprobleme zu beheben, wenn sie nicht innerhalb der aufgezeichneten Zeit auftreten.
+    - Führen Sie **während der Aufzeichnung** in der ersten Kopie von Visual Studio die problematische Aktion aus. Es ist für uns schwierig, spezifische Leistungsprobleme zu beheben, wenn sie nicht innerhalb der aufgezeichneten Zeit auftreten.
 
-    -   Wenn die Aktion kürzer als 30 Sekunden ist und sich leicht wiederholen lässt, wiederholen Sie die Aktion, um das Problem weiter zu demonstrieren.
+    - Wenn die Aktion kürzer als 30 Sekunden ist und sich leicht wiederholen lässt, wiederholen Sie die Aktion, um das Problem weiter zu demonstrieren.
 
-    -   In den meisten Fällen genügt eine Ablaufverfolgung von 60 Sekunden, um die Probleme aufzuzeigen, insbesondere wenn die problematische Aktion länger als 30 Sekunden gedauert hat (oder wiederholt wurde). Die Dauer kann bei Bedarf angepasst werden, um das Verhalten zu erfassen, das korrigiert werden soll.
+    - In den meisten Fällen genügt eine Ablaufverfolgung von 60 Sekunden, um die Probleme aufzuzeigen, insbesondere wenn die problematische Aktion länger als 30 Sekunden gedauert hat (oder wiederholt wurde). Die Dauer kann bei Bedarf angepasst werden, um das Verhalten zu erfassen, das korrigiert werden soll.
 
-6.  Klicken Sie in der Schrittaufzeichnung auf „Aufzeichnung beenden“, sobald das Ereignis mit verlangsamten Betrieb oder hoher CPU-Auslastung, das Sie melden möchten, beendet ist. Die Verarbeitung der Leistungsüberwachungsdaten kann einige Minuten dauern.
+6. Klicken Sie in der Schrittaufzeichnung auf „Aufzeichnung beenden“, sobald das Ereignis mit verlangsamten Betrieb oder hoher CPU-Auslastung, das Sie melden möchten, beendet ist. Die Verarbeitung der Leistungsüberwachungsdaten kann einige Minuten dauern.
 
-7.  Nach Abschluss des Vorgangs weist Ihr Feedback mehrere Anlagen auf. Fügen Sie beliebige zusätzliche Dateien hinzu, die helfen können, das Problem zu reproduzieren (ein Beispielprojekt, Screenshots, Videos usw.).
+7. Nach Abschluss des Vorgangs weist Ihr Feedback mehrere Anlagen auf. Fügen Sie beliebige zusätzliche Dateien hinzu, die helfen können, das Problem zu reproduzieren (ein Beispielprojekt, Screenshots, Videos usw.).
 
-8.  Senden Sie das Feedback.
+8. Senden Sie das Feedback.
 
 Wenn während der Aufzeichnung einer Leistungsüberwachung die Verlangsamung oder hohe CPU-Auslastung, die Sie melden, endet, beenden Sie sofort die Aufzeichnung. Bei Erfassung von zu vielen Informationen werden die ältesten Informationen überschrieben. Wenn die Ablaufverfolgung nicht rechtzeitig (innerhalb weniger Sekunden) nach dem betreffenden Vorgang beendet wird, werden nützliche Ablaufverfolgungsdaten überschrieben.
 
@@ -183,13 +182,13 @@ Es gibt eine Reihe von Satellitenprozessen, die parallel zu Visual Studio ausgef
 
 Was diese Art von Problemen am einfachsten gestaltet, ist die Bereitstellung zusätzlicher Protokolle, die durch die folgenden Schritte gesammelt werden können:
 
-1.  Wenn es sich um ein direkt reproduzierbares Problem handelt, löschen Sie zunächst den Ordner **%temp%/servicehub/logs**. Wenn Sie dieses Problem nicht reproduzieren können, halten Sie diesen Ordner intakt und ignorieren Sie die folgenden Aufzählungen:
+1. Wenn es sich um ein direkt reproduzierbares Problem handelt, löschen Sie zunächst den Ordner **%temp%/servicehub/logs**. Wenn Sie dieses Problem nicht reproduzieren können, halten Sie diesen Ordner intakt und ignorieren Sie die folgenden Aufzählungen:
 
-    -   Legen Sie die globale Umgebungsvariable **ServiceHubTraceLevel** auf **Alle** fest.
-    -   Reproduzieren Sie das Problem.
+    - Legen Sie die globale Umgebungsvariable **ServiceHubTraceLevel** auf **Alle** fest.
+    - Reproduzieren Sie das Problem.
 
-2.  Laden Sie Microsoft Visual Studio und das .NET Framework-Protokollerfassungstool [hier](https://www.microsoft.com/download/details.aspx?id=12493) herunter.
-3.  Führen Sie das Tool aus. Dadurch wird eine ZIP-Datei an **%temp%/vslogs.zip** ausgegeben. Fügen Sie diese Datei an Ihr Feedback an.
+2. Laden Sie Microsoft Visual Studio und das .NET Framework-Protokollerfassungstool [hier](https://www.microsoft.com/download/details.aspx?id=12493) herunter.
+3. Führen Sie das Tool aus. Dadurch wird eine ZIP-Datei an **%temp%/vslogs.zip** ausgegeben. Fügen Sie diese Datei an Ihr Feedback an.
 
 ## <a name="see-also"></a>Siehe auch
 

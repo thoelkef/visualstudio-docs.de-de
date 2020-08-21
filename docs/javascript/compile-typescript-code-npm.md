@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d7bd89f8e7840db8615c74170bb5cb9998aeb678
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454616"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250172"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Kompilieren von TypeScript-Code (Node.js)
 
@@ -109,7 +109,7 @@ Das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) fügt TypeS
 
    Obwohl die App bei der Ausführung automatisch kompiliert wird, sollten Sie sich etwas ansehen, das während des Buildvorgangs geschieht:
 
-   Wenn Sie Quellzuordnungsdateien generiert haben, öffnen Sie den in der *outDir*-Option angegebenen Ordner. Dort finden Sie die generierten *.js-Dateien sowie die generierten *js.map-Dateien.
+   Wenn Sie Quellzuordnungsdateien generiert haben, öffnen Sie den in der *outDir*-Option angegebenen Ordner. Dort finden Sie die generierten \*.js-Dateien sowie die generierten \*js.map-Dateien.
 
    Quellzuordnungsdateien werden zum [Debuggen](../javascript/debug-nodejs.md) benötigt.
 

@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389957"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186301"
 ---
 Mit Visual Studio können Sie .NET-, ASP.NET- und ASP.NET Core-Apps in Containern mühelos erstellen, debuggen, ausführen und anschließend in Azure Container Registry (ACR), Docker Hub, Azure App Service oder Ihrer eigenen Containerregistrierung veröffentlichen. In diesem Artikel veröffentlichen wir eine ASP.NET Core-App in ACR.
 
@@ -42,27 +42,27 @@ Lesen Sie vor der Installation von Docker zunächst [Docker Desktop for Windows:
 
 Eine *Dockerfile*-Datei, der wichtigste Bestandteil beim Erstellen eines endgültigen Docker-Images, wird im Projekt erstellt. Einen Überblick über die enthaltenen Befehle finden Sie in der [Dockerfile-Referenz](https://docs.docker.com/engine/reference/builder/):
 
-```
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
+```dockerfile
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM microsoft/dotnet:2.2-sdk-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
 WORKDIR /src
-COPY ["HelloDockerTools/HelloDockerTools.csproj", "HelloDockerTools/"]
-RUN dotnet restore "HelloDockerTools/HelloDockerTools.csproj"
+COPY ["WebApplication1/WebApplication1.csproj", "WebApplication1/"]
+RUN dotnet restore "WebApplication1/WebApplication1.csproj"
 COPY . .
-WORKDIR "/src/HelloDockerTools"
-RUN dotnet build "HelloDockerTools.csproj" -c Release -o /app
+WORKDIR "/src/WebApplication1"
+RUN dotnet build "WebApplication1.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "HelloDockerTools.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication1.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
 Das obige *Dockerfile* basiert auf dem Image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) und enthält Anweisungen zum Anpassen des Basisimages durch Erstellen Ihres Projekts und anschließendem Hinzufügen zum Container. Wenn Sie .NET Framework verwenden, unterscheidet sich das Basisimage.
@@ -98,8 +98,14 @@ Sobald der Entwicklungs- und Debugzyklus der App abgeschlossen ist, können Sie 
 
 1. Wählen Sie im Dropdownmenü „Konfiguration“ die Option **Release** aus, und erstellen Sie die App.
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Veröffentlichen**.
-1. Wählen Sie im Dialogfeld „Ziel veröffentlichen“ die Registerkarte **Container Registry**.
-1. Klicken Sie auf **Neue Azure Container Registry-Instanz erstellen**, und klicken Sie dann auf **Veröffentlichen**.
+1. Wählen Sie im Dialogfeld **Veröffentlichen** die Registerkarte **Docker-Containerregistrierung** aus.
+
+   ![Screenshot des Dialogfelds „Veröffentlichen“: Auswählen von „Docker-Containerregistrierung“](../../media/container-tools/vs-2019/docker-container-registry.png)
+
+1. Wählen Sie **Neue Azure Container Registry-Instanz erstellen**.
+
+   ![Screenshot des Dialogfelds „Veröffentlichen“: Auswählen von „Neue Azure Container Registry erstellen“](../../media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+
 1. Geben Sie die gewünschten Werte im Feld **Neue Azure-Containerregistrierung erstellen** ein.
 
     | Einstellung      | Empfohlener Wert  | Beschreibung                                |
@@ -112,9 +118,13 @@ Sobald der Entwicklungs- und Debugzyklus der App abgeschlossen ist, können Sie 
 
     ![Visual Studio-Dialogfeld zum Erstellen einer Azure-Containerregistrierung][0]
 
-1. Klicken Sie auf **Erstellen**
+1. Klicken Sie auf **Erstellen**. Im Dialogfeld **Veröffentlichen** wird jetzt die erstellte Registrierung angezeigt.
 
-   ![Screenshot mit erfolgreicher Veröffentlichung](../../media/container-tools/publish-succeeded.png)
+   ![Screenshot des Dialogfelds „Veröffentlichen“ mit der erstellen Azure Container Registry](../../media/container-tools/vs-2019/created-azure-container-registry.png)
+
+1. Wählen Sie **Fertig stellen** aus, um den Veröffentlichungsvorgang Ihres Containerimages in der neu erstellten Registrierung in Azure abzuschließen.
+
+   ![Screenshot mit erfolgreicher Veröffentlichung](../../media/container-tools/vs-2019/publish-succeeded.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -7,12 +7,12 @@ ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Visual Studio-Abonnements im Microsoft Store erwerben und im Visual Studio-Abonnementportal aktivieren.
-ms.openlocfilehash: 217c19ea0f8c4a793fc11a84eaa8f276960af3da
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903096"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247482"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio-Abonnements sind über den Microsoft Store verfügbar
 Visual Studio-Abonnements können über verschiedene Kanäle erworben werden. Dazu zählen u. a. die [Volumenlizenzierung](https://www.microsoft.com/licensing/default), Cloud Solution Provider, den [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) und den Microsoft Store.  In diesem Artikel wird erläutert, wie Abonnements über den [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) erworben und aktiviert werden.  
@@ -33,15 +33,15 @@ Bei jedem dieser Abonnements können Sie wählen, ob Sie ein neues Abonnement er
 ## <a name="how-to-activate-subscriptions"></a>So aktivieren Sie ein Abonnement
 Nachdem Sie ein Visual Studio-Abonnement über den Microsoft Store erworben haben, können Sie die Schritte zur Aktivierung auf der „Bestätigungsseite“ für Ihre Zahlung oder über die „Bestätigungs-E-Mail“ beginnen, die Sie nach dem Kauf erhalten haben.
 
-1. Klicken Sie in der Bestätigungs-E-Mail oder auf der Bestätigungsseite auf **Click here to sign in** (Klicken Sie hier, um sich anzumelden).
+1. Wählen Sie in der Bestätigungs-E-Mail oder auf der Bestätigungsseite **Click here to sign in** (Klicken Sie hier, um sich anzumelden) aus.
 2. Sie werden in Kürze zu [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) umgeleitet.
-3. Geben Sie die E-Mail-Adresse an, mit der Sie auf das Visual Studio-Abonnement zugreifen, und klicken Sie auf **Fortfahren**.
+3. Geben Sie die E-Mail-Adresse ein, mit der Sie auf das Visual Studio-Abonnement zugreifen, und wählen Sie dann **Fortfahren** aus.
 4. Je nach Typ des Kontos, das Sie verwenden, können Sie auf eine von zwei verschiedenen Anmeldeseiten umgeleitet werden:
     - Für Abonnenten, die ihr persönliches „Microsoft-Konto“ (MSA) verwenden, wird die Kennwortseite für das Microsoft-Konto angezeigt.
     - Abonnenten, die ihr Geschäfts-, Schul- oder Unikonto verwenden, werden auf die Anmeldeseite ihrer Organisation umgeleitet.
 5. Geben Sie Ihr Kennwort ein, oder erfüllen Sie die Anmeldeanforderungen Ihrer Organisation.
 6. Bei erfolgreicher Anmeldung wird das Fenster „Aktivieren Sie Ihr Visual Studio-Abonnement“ angezeigt.
-7. Geben Sie die Product Key-Informationen ein, die Sie über die Bestätigungsseite oder die Bestätigungs-E-Mail erhalten haben, und klicken Sie auf **Aktivieren**.
+7. Geben Sie die Product Key-Informationen ein, die Sie über die Bestätigungsseite oder die Bestätigungs-E-Mail erhalten haben, und wählen Sie **Aktivieren** aus.
 8. Das Abonnement sollte jetzt auf der Seite [Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) sichtbar sein, und Sie sollten auf Ihre gesamten Abonnementvorteile zugreifen können.
 
 ## <a name="support-for-microsoft-store"></a>Support für den Microsoft Store

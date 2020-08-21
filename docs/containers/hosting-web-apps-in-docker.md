@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 9778590d804a72ff896b190a743fc08293f5b9ca
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4626b64f5e733fec049d56dfe53407cc0fe31566
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283137"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168693"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Bereitstellen eines ASP.NET-Containers an eine Containerregistrierung mithilfe von Visual Studio
 
@@ -38,6 +38,7 @@ Zum Abschließen dieses Tutorials benötigen Sie Folgendes:
 * Installieren von [Docker für Windows](https://docs.docker.com/docker-for-windows/install/)
 
 ## <a name="create-an-aspnet-core-web-app"></a>Erstellen einer ASP.NET Core-Web-App
+
 Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET Core-App, die in diesem Tutorial verwendet wird. Wenn Sie bereits über ein Projekt verfügen, können Sie diesen Abschnitt überspringen.
 
 ::: moniker range="vs-2017"
@@ -47,9 +48,12 @@ Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET 
 [!INCLUDE [create-aspnet5-app](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
+::: moniker range="vs-2017"
+
 ## <a name="publish-your-container-to-azure-container-registry"></a>Veröffentlichen Ihres Containers in Azure Container Registry
+
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Veröffentlichen**.
-2. Wählen Sie im Dialogfeld „Ziel veröffentlichen“ die Registerkarte **Container Registry**.
+2. Wählen Sie im Dialogfeld **Ziel veröffentlichen** die Registerkarte **Container Registry** aus.
 3. Wählen Sie **Neue Azure-Containerregistrierung**, und klicken Sie auf **Veröffentlichen**.
 4. Geben Sie die gewünschten Werte im Feld **Neue Azure-Containerregistrierung erstellen** ein.
 
@@ -64,9 +68,38 @@ Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET 
     ![Visual Studio-Dialogfeld zum Erstellen einer Azure-Containerregistrierung](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
 5. Klicken Sie auf **Erstellen**
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="publish-your-container-to-azure-container-registry"></a>Veröffentlichen Ihres Containers in Azure Container Registry
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Veröffentlichen**.
+2. Wählen Sie im Dialogfeld **Veröffentlichen** die Option **Docker-Containerregistrierung** aus.
+
+   ![Screenshot des Dialogfelds „Veröffentlichen“: Auswählen von „Docker-Containerregistrierung“](media/container-tools/vs-2019/docker-container-registry.png)
+
+3. Wählen Sie **Neue Azure Container Registry-Instanz erstellen**.
+ 
+   ![Screenshot des Dialogfelds „Veröffentlichen“: Auswählen von „Neue Azure Container Registry erstellen“](media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+
+4. Geben Sie die gewünschten Werte auf dem Bildschirm **Azure Container Registry** ein.
+
+    | Einstellung      | Vorgeschlagener Wert  | Beschreibung                                |
+    | ------------ |  ------- | -------------------------------------------------- |
+    | **DNS-Präfix** | Global eindeutiger Name | Name, der Ihre Containerregistrierung eindeutig identifiziert. |
+    | **Abonnement** | Auswählen Ihres Abonnements | Das zu verwendende Azure-Abonnement. |
+    | **[Ressourcengruppe](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Name der Ressourcengruppe, in der die Containerregistrierung erstellt werden soll. Wählen Sie **Neu** aus, um eine neue Ressourcengruppe zu erstellen.|
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Dienstebene der Containerregistrierung  |
+    | **Registrierungsstandort** | Ein Standort in Ihrer Nähe | Wählen Sie einen Standort in einer [Region](https://azure.microsoft.com/regions/) in Ihrer Nähe oder in der Nähe anderer Dienste aus, die Ihre Containerregistrierung verwenden werden. |
+
+    ![Visual Studio-Dialogfeld zum Erstellen einer Azure-Containerregistrierung](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png)
+
+5. Klicken Sie auf **Erstellen**.
+
+6. Wählen Sie **Fertig stellen** aus, um den Vorgang abzuschließen.
+::: moniker-end
 
 Sie können jetzt den Container aus der Registrierung auf einen beliebigen Host ziehen, auf dem Docker-Images ausgeführt werden können. Beispiel: [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Schnellstart: Bereitstellen einer Containerinstanz in Azure mithilfe der Azure CLI](/azure/container-instances/container-instances-quickstart)

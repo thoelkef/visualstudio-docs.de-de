@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453678"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248438"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -30,10 +30,10 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Sie haben folgende Möglichkeiten zum Wechseln zwischen Abonnements:
 
-- Klicken Sie oben rechts auf das Dropdownfeld, und wählen Sie das Abonnement aus der Liste aus
-- Klicken Sie auf die Registerkarte „Abonnements“ und anschließend auf das gewünschte Abonnement
+- Auswählen des Dropdownfelds oben rechts und Auswählen des Abonnements aus der Liste
+- Auswählen der Registerkarte „Abonnements“ und anschließendes Auswählen des gewünschten Abonnements
   > [!div class="mx-imgBorder"]
-  > ![Wechseln von Abonnements](_img/manage-vs-subscriptions/change-subscription-resized.png "Klicken Sie auf die Registerkarte „Abonnements“, um detaillierte Informationen zu all Ihren Abonnements anzuzeigen und zwischen den Abonnements zu wechseln.")
+  > ![Wechseln von Abonnements](_img/manage-vs-subscriptions/change-subscription-resized.png "Wählen Sie die Registerkarte „Abonnements“ aus, um detaillierte Informationen zu all Ihren Abonnements anzuzeigen und zwischen den Abonnements zu wechseln.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Wenn Ihr Abonnement nicht sichtbar ist...
 
@@ -68,17 +68,17 @@ Im Abonnementportal haben Sie die Möglichkeit, ein Profil zu erstellen und zu v
 
 Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfache Weise ändern.
 
-1. Klicken Sie in der oberen rechten Ecke des Abonnentenportals auf Ihren Namen.
+1. Wählen Sie in der oberen rechten Ecke des Abonnentenportals Ihren Namen aus.
 2. Klicken Sie auf die Schaltfläche **Profil bearbeiten**.
 3. Sie können auf der Registerkarte **Info** Namen, E-Mail-Adresse, Land/Region, Profilbild und Kontakteinstellungen ändern. Sie können auf der Registerkarte **Einstellungen** Ihre bevorzugte Sprache, Datums- und Uhrzeitmuster, die Zeitzone und das Design der Benutzeroberfläche auswählen.
-4. Klicken Sie auf **Speichern**, wenn Sie die Änderungen abgeschlossen haben.
+4. Wählen Sie **Speichern** aus, wenn Sie die Änderungen abgeschlossen haben.
 5. Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück**, um zur Seite „Vorteile“ zurückzukehren.
 
 ### <a name="setting-communications-preferences"></a>Festlegen von Kommunikationseinstellungen
 Wenn Sie regelmäßige Updates zu Ihrem Abonnement und Ihren Vorteilen sowie den monatlichen Newsletter zu Visual Studio-Abonnements erhalten möchten, [aktualisieren Sie Ihre Einstellungen](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), in dem Sie in Ihrem Visual Studio-Profil das Kontrollkästchen für Visual Studio-Abonnements aktivieren. Sie können diese Einstellungen jederzeit ändern und die Updates kündigen. 
 
    > [!div class="mx-imgBorder"]
-   > ![Festlegen von Einstellungen](_img/manage-vs-subscriptions/change-prefs.png "Klicken Sie auf das Kontrollkästchen für E-Mails zum Visual Studio-Abonnementprogramm, um Updates zu erhalten.")
+   > ![Festlegen von Einstellungen](_img/manage-vs-subscriptions/change-prefs.png "Wählen Sie das Kontrollkästchen für E-Mails zum Visual Studio-Abonnementprogramm aus, um Updates zu erhalten.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Verknüpfen eines Abonnements mit vorhandenen Azure DevOps Services- oder Azure-Abonnements
 Wenn Sie sich mit einem persönlichen Microsoft-Konto (MSA) bei Ihrem Abonnement anmelden und ein Abonnement besitzen, für das Azure DevOps Services oder Microsoft Azure zusammen mit einem von Azure verwalteten Geschäfts-, Schul- oder Unikonto verwendet wird, können Sie die beiden Abonnements miteinander verknüpfen. Dies wird als „alternatives Konto“ bezeichnet und ermöglicht Ihnen die Weiternutzung Ihres Microsoft-Kontos zum Anmelden bei Ihrem Abonnement sowie den Zugriff auf vorhandene Azure-, Azure DevOps Services- und IDE-Ressourcen, die Ihrem Geschäfts-, Schul- oder Unikonto zugeordnet sind.
@@ -88,11 +88,11 @@ Auch wenn beide Konten dieselbe E-Mail-Adresse nutzen, müssen Sie Ihr Geschäft
 So fügen Sie ein alternatives Konto hinzu:
 
 1. Melden Sie sich mit Ihrem Microsoft-Konto (Microsoft Account, MSA) beim [Abonnentenportal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) an.
-2. Klicken Sie auf die Registerkarte **Abonnements**.
+2. Wählen Sie die Registerkarte **Abonnements** aus.
 3. Wählen Sie unter **Verwandte Links** den Eintrag **Alternatives Konto hinzufügen** aus.
-4. Geben Sie die E-Mail-Adresse Ihres Unternehmens/Ihrer Schule/Ihrer Universität ein, und klicken Sie auf **Hinzufügen**.
+4. Geben Sie die E-Mail-Adresse Ihres Geschäfts-, Schul- oder Unikontos ein, und klicken Sie auf **Hinzufügen**.
 
-Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie auf die Registerkarte **Abonnements** klicken und die entsprechende Option im Abschnitt **Verwandte Links** auswählen.
+Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie die Registerkarte **Abonnements** und dann die entsprechende Option im Abschnitt **Verwandte Links** auswählen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

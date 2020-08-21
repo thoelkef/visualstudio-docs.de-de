@@ -8,12 +8,13 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536889"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168638"
 ---
 # <a name="deploy-to-docker-hub"></a>Bereitstellen in Docker Hub
 
@@ -29,9 +30,13 @@ Wenn Sie über kein Docker Hub-Repository verfügen, erstellen Sie ein Konto in 
 
 1. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Veröffentlichen...** aus. Daraufhin wird eine Anzeige mit Bereitstellungsoptionen angezeigt.
 
-   ![Screenshot: Bereitstellungsoptionen](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Screenshot: Bereitstellungsoptionen](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. Wählen Sie unter **Veröffentlichungsziel auswählen** die Option **Container Registry** aus, und wählen Sie dann **Docker Hub** aus. Daraufhin wird das Dialogfeld **Docker Hub** angezeigt.
+1. Wählen Sie **Docker-Containerregistrierung** und dann **Docker Hub** aus.
+
+   ![Screenshot des Dialogfelds „Veröffentlichen“: Auswählen von „Docker Hub“](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+
+1. Geben Sie Ihre Docker-Anmeldeinformationen ein.
 
    ![Screenshot: Docker Hub-Dialogfeld](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 

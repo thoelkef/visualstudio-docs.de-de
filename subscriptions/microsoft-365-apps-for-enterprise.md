@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Hier erfahren Sie mehr über Microsoft 365-Apps for Enterprise und die Installation.
-ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902982"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250741"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365-Apps for Enterprise in Visual Studio-Abonnements
 Microsoft 365-Apps for Enterprise (ehemals Office 365 Pro Plus) ist in ausgewählten Visual Studio-Abonnements verfügbar. 
@@ -26,29 +26,29 @@ Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer
 Die Vorgehensweise zum Aktivieren Ihres Abonnements für Microsoft 365-Apps for Enterprise ist einfach.  Führen Sie die folgenden Schritte aus, um Ihr Abonnement zu aktivieren und Ihre Anwendungen zu installieren:
 
 1. Melden Sie sich unter [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) bei Ihrem Visual Studio-Abonnement an.
-1. Suchen Sie die Kachel für Microsoft 365-Apps for Enterprise, und klicken Sie auf **Aktivieren**.
+1. Suchen Sie die Kachel für Microsoft 365-Apps for Enterprise, und wählen Sie **Aktivieren** aus.
    > [!div class="mx-imgBorder"]
-   > ![Kachel für Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Klicken Sie auf „Aktivieren“, um mit Ihrem Abonnement zu beginnen.")
+   > ![Kachel für Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Wählen Sie „Aktivieren“ aus, um mit Ihrem Abonnement zu beginnen.")
 
-1. Geben Sie im Dialogfeld „Willkommen, erlauben Sie uns, Sie kennenzulernen“ die erforderlichen persönlichen Kontaktinformationen ein, und klicken Sie dann auf **Weiter**.
+1. Geben Sie im Dialogfeld „Willkommen, erlauben Sie uns, Sie kennenzulernen“ die erforderlichen persönlichen Kontaktinformationen ein, und wählen Sie dann **Weiter** aus.
    > [!div class="mx-imgBorder"]
    > ![Kundeninformationen für Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Geben Sie Ihre Kontaktinformationen ein.")
 
-1. Erstellen Sie im Dialogfeld „Erstellen Ihrer Benutzer-ID“ Ihren Benutzernamen und Ihr Kennwort für Ihren Mandanten, und klicken Sie dann auf **Konto erstellen**.
+1. Erstellen Sie im Dialogfeld „Erstellen Ihrer Benutzer-ID“ Ihren Benutzernamen und Ihr Kennwort für Ihren Mandanten, und wählen Sie dann **Konto erstellen** aus.
    > [!div class="mx-imgBorder"]
    > ![Erstellen der Benutzer-ID für Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Erstellen Sie Ihre Benutzer-ID und ein Kennwort.")
 
-1. Als Nächstes werden Sie dazu aufgefordert, einen Code einzugeben, um zu beweisen, dass Sie kein Bot sind.  Diesen Code können Sie per Textnachricht erhalten.  Geben Sie den Code ein, und klicken Sie auf **Next** (Weiter). 
+1. Als Nächstes werden Sie dazu aufgefordert, einen Code einzugeben, um zu beweisen, dass Sie kein Bot sind.  Diesen Code können Sie per Textnachricht erhalten.  Geben Sie den Code ein, und wählen Sie **Next** (Weiter) aus. 
    > [!div class="mx-imgBorder"]
    > ![Dialogfeld „Zeigen Sie uns, dass Sie kein Robot sind“ für Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/prove-youre-not-a-robot.png "Fordern Sie einen Code an, und geben Sie ihn ein, um fortzufahren.")
 
-1. Nachdem Ihr Konto erfolgreich erstellt wurde, wird Ihnen ein Dialogfeld mit der Anmeldeseite für das Office-Portal und Ihrer neuen Benutzer-ID angezeigt.  Notieren Sie sich diese Informationen für später, und klicken Sie auf **Setup starten**, um mit der Installation Ihrer Microsoft 365-Apps zu beginnen.
+1. Nachdem Ihr Konto erfolgreich erstellt wurde, wird Ihnen ein Dialogfeld mit der Anmeldeseite für das Office-Portal und Ihrer neuen Benutzer-ID angezeigt.  Notieren Sie sich diese Informationen für später, und wählen Sie **Setup starten** aus, um mit der Installation Ihrer Microsoft 365-Apps zu beginnen.
    > [!div class="mx-imgBorder"]
    > ![Speichern Sie diese Informationen für Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/save-this-info.png "Speichern Sie Ihre neue Benutzer-ID und den Link zum Office-Portal.")
 
-1. Sie werden automatisch beim Office-Portal angemeldet, und können jetzt Ihre Anwendungen installieren.  Klicken Sie auf **Installieren**, um zu beginnen.
+1. Sie werden automatisch beim Office-Portal angemeldet, und können jetzt Ihre Anwendungen installieren.  Wählen Sie die Schaltfläche **Installieren** aus, um zu beginnen.
    > [!div class="mx-imgBorder"]
-   > ![Installation von Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Klicken Sie auf „Installieren“, um Ihre Anwendungen zu installieren.")
+   > ![Installation von Microsoft 365-Apps for Enterprise](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Wählen Sie die Schaltfläche „Installieren“ aus, um Ihre Anwendungen zu installieren.")
 1. Führen Sie die Anweisungen zum Installieren Ihrer ausgewählten Apps aus.  
 
 ## <a name="eligibility"></a>Berechtigung

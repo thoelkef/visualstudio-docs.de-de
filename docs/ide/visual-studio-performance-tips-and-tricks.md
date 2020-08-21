@@ -1,18 +1,18 @@
 ---
 title: Tipps zum Verbessern der Leistung
-ms.date: 08/14/2018
+ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307250"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214585"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -117,11 +117,25 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 
    ::: moniker-end
 
+- **Deaktivieren des Zuordnungsmodus**
+
+    Im [**Zuordnungsmodus**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) werden Codezeilen als Miniaturansicht auf der Scrollleiste angezeigt. Der Zuordnungsmodus ist standardmäßig aktiviert.
+
+    Um den Zuordnungsmodus zu deaktivieren, navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **Scrollleisten**, und deaktivieren Sie im Abschnitt **Verhalten** die Option **Zuordnungsmodus für vertikale Scrollleiste verwenden**.
+
+- **Deaktivieren des Zeilenumbruchs**
+
+    [**Zeilenumbruch**](./reference/how-to-manage-word-wrap-in-the-editor.md) zeigt den Teil einer langen Zeilean, der über die aktuelle Breite des Code-Editor-Fensters hinausgeht. Zeilenumbruch ist standardmäßig aktiviert.
+
+    Um den Zeilenumbruch für ein Projekt zu deaktivieren, an dem Sie aktuelle arbeiten, navigieren Sie zu **Bearbeiten** > **Erweitert** > **Zeilenumbruch**. (Sie können diese Einstellung mithilfe derselben Menübefehle umschalten.)
+
+    Um Zeilenumbruch für alle Projekte zu deaktivieren, navigieren Sie zu **Extras** > **Optionen** > **Allgemein** > **Text-Editor** > **Alle Sprachen** > **Allgemein**, und deaktivieren Sie dann im Abschnitt **Einstellungen** die Option **Zeilenumbruch**.
+
 - **Deaktivieren des XAML-Designers**
 
     Der XAML-Designer ist standardmäßig aktiviert. Es werden aber nur Ressourcen belegt, wenn Sie eine *XAML*-Datei öffnen. Wenn Sie mit XAML-Dateien arbeiten, den Designer aber nicht verwenden möchten, deaktivieren Sie diese Funktion, um Arbeitsspeicher freizugeben.
 
-    Um den **XAML-Designer** zu deaktivieren, wechseln Sie zu **Extras** > **Optionen** > **XAML-Designer** > **XAML-Designer aktivieren**, und deaktivieren Sie die Option.
+    Um den XAML-Designer zu deaktivieren, navigieren Sie zu **Extras** > **Optionen** > **XAML-Designer** > **XAML-Designer aktivieren**, und deaktivieren Sie die Option.
 
 - **Entfernen von Workloads**
 
@@ -139,5 +153,5 @@ Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fun
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Optimieren der Visual Studio-Leistung](../ide/optimize-visual-studio-performance.md)
 - [Load solutions faster with Visual Studio 2017 version 15.6 (Schnelleres Laden großer Projektmappen in Visual Studio 2017-Version 15.6)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

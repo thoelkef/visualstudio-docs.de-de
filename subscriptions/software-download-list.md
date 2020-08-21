@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Suchen Sie nach einer Liste der Softwaredownloads, die in Ihrem Visual Studio-Abonnement enthalten sind.
-ms.openlocfilehash: debf1904fc502f15f4fd6f52cc38e29a84dc763a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906101"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250690"
 ---
 # <a name="what-software-is-available-for-download"></a>Welche Software ist zum Herunterladen verfügbar?
 
@@ -23,10 +23,10 @@ Wenn Sie bereits über ein Visual Studio-Abonnement verfügen:
 2. Melden Sie sich bei Ihrem Abonnement an. (Weitere Informationen zur Anmeldung mit Ihrem [Microsoft-Konto](sign-in-msa.md), [Geschäfts-, Schul- oder Unikonto](sign-in-work.md) oder [GitHub-Konto](sign-in-github.md))
 3. Nach der erfolgreichen Anmeldung können Sie nach den gewünschten Downloads suchen.  Sie sehen auch eine Liste beliebter Downloads, die nach mehreren Kriterien sortiert werden können.
 
-Um Produkte schnell zu suchen, verwenden Sie die Funktion „Suchen“ am oberen Rand der Seite, oder klicken Sie links auf die verschiedenen Produkttypen.
+Um Produkte schnell zu suchen, verwenden Sie die Funktion „Suchen“ am oberen Rand der Seite, oder wählen Sie links die verschiedenen Produkttypen aus.
 
 > [!TIP]
-> Wenn Sie Ihre Product Keys suchen, klicken Sie oben auf der Seite auf die Registerkarte **Product Keys**.
+> Wenn Sie Ihre Product Keys suchen, wählen Sie oben auf der Seite die Registerkarte **Product Keys** aus.
 
 Sie können auch eine Excel-Tabelle herunterladen, die eine umfassende Liste von [verfügbaren Softwaretiteln](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) für jeden Abonnementtyp enthält.
 

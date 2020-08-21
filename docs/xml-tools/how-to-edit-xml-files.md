@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817202"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249506"
 ---
 # <a name="how-to-edit-xml-files"></a>Vorgehensweise: Bearbeiten von XML-Dateien
 
@@ -22,7 +22,7 @@ Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenstä
 > [!NOTE]
 > XHTML-Dokumente werden vom HTML-Editor behandelt.
 
-Um eine XML-Datei zu bearbeiten, doppelklicken Sie auf die Datei, die Sie bearbeiten möchten.
+Um eine XML-Datei zu bearbeiten, öffnen Sie die Datei, die Sie bearbeiten möchten.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>Hinzufügen einer neuen XML-Datei zu einem Projekt
 
@@ -50,7 +50,7 @@ Um eine XML-Datei zu bearbeiten, doppelklicken Sie auf die Datei, die Sie bearbe
 
 2. Wählen Sie **XML-Datei** aus, um eine neue XML-Datei zu erstellen, oder wählen Sie **XSLT-Datei** aus, um ein neues XSLT-Stylesheet zu erstellen.
 
-3. Klicken Sie auf **Öffnen**.
+3. Wählen Sie **Open**(Öffnen).
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Erstellen eines leeren Projekts für XML-Dateien
 
@@ -70,7 +70,7 @@ Um eine XML-Datei zu bearbeiten, doppelklicken Sie auf die Datei, die Sie bearbe
 
 1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
 
-2. Geben Sie **Empty Project** (Leeres Projekt) in das Vorlagensuchfeld ein, wählen Sie die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) aus, und klicken Sie dann auf **Weiter**.
+2. Geben Sie **Empty Project** (Leeres Projekt) in das Vorlagensuchfeld ein, wählen Sie die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) aus, und wählen Sie dann **Weiter** aus.
 
 3. Klicken Sie auf **Erstellen**.
 

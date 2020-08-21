@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
-ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211616"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248340"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .
@@ -65,15 +65,15 @@ Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verw
 Wenn Sie Abonnements kündigen möchten, müssen Sie die Anzahl der Abonnements für Ihre Vereinbarung auf 0 festlegen.  Befolgen Sie diese Schritte, um die Anzahl der Abonnements zu verringern:
 1. Melden Sie sich bei <https://manage.visualstudio.com> an.
 1. Wenn Sie mehr als eine Vereinbarung abgeschlossen haben, wählen Sie die gewünschte Vereinbarung aus der Dropdownliste aus.
-1. Klicken Sie oben links auf das Symbol **Übersicht**, um Informationen zu Ihren Abonnements anzuzeigen.  
+1. Wählen Sie oben links das Symbol **Übersicht** aus, um Informationen zu Ihren Abonnements anzuzeigen.  
 > [!div class="mx-imgBorder"]
-> ![Übersicht über Abonnementinformationen](_img/buy-vs-subscriptions/overview-button.png "Auf „Übersicht“ klicken, um Abonnementdetails anzuzeigen")
+> ![Übersicht über Abonnementinformationen](_img/buy-vs-subscriptions/overview-button.png "Schaltfläche „Übersicht“ auswählen, um Abonnementdetails anzuzeigen")
 
-4. Suchen Sie die Einträge für die Abonnements, die Sie kündigen möchten, und klicken Sie auf **Menge ändern**.
+4. Suchen Sie die Einträge für die Abonnements, die Sie kündigen möchten, und wählen Sie **Menge ändern** aus.
 1. Legen Sie die Menge auf 0 fest. Ihre Abonnements bleiben bis zum geplanten Abrechnungsdatum bestehen, werden jedoch nicht verlängert, wenn das Abrechnungsdatum erreicht ist.   
 
 > [!div class="mx-imgBorder"]
-> ![Ändern von Abonnements](_img/buy-vs-subscriptions/manage-subscriptions.png "Auf „Menge ändern“ klicken, um Abonnements zu kündigen")
+> ![Ändern von Abonnements](_img/buy-vs-subscriptions/manage-subscriptions.png "„Menge ändern“ auswählen, um Abonnements zu kündigen")
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

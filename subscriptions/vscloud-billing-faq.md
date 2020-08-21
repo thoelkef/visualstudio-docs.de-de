@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273828"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249386"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
@@ -34,7 +34,7 @@ Antwort: Nein. Wenn Sie über Azure nur Visual Studio-Cloudabonnements kaufen m�
 Antwort: Ja, das ist möglich. Sie müssen Besitzer oder Mitwirkender des Azure-Abonnements sein, das für Enterprise Agreement erstellt wurde. Stellen Sie sicher, dass Sie Käufe für Visual Studio-Cloudabonnements direkt im Visual Studio Marketplace durchführen. Sie können Visual Studio-Cloudabonnements nicht mithilfe einer Bestellung kaufen.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Frage: Wie kann ich herausfinden, ob ich über die erforderlichen Berechtigungen verfüge, um Dienste im Visual Studio Marketplace über das Enterprise Agreement meiner Organisation zu kaufen?
-Antwort: Sie können am einfachsten feststellen, ob Sie über die erforderlichen Berechtigungen verfügen, indem Sie bei einem Dienst im Visual Studio Marketplace auf **Kaufen** klicken.
+Antwort: Sie können am einfachsten feststellen, ob Sie über die erforderlichen Berechtigungen verfügen, indem Sie für einen in Visual Studio Marketplace angebotenen Dienst **Kaufen** auswählen.
 Sie müssen ein Azure-Abonnement (also ein Rechnungskonto) aus der angezeigten Liste der Azure-Abonnements auswählen, die derzeit mit Ihrem Konto verknüpft sind.
 Da der Name des Azure-Abonnements standardmäßig der Art des Rechnungskontos (Nutzungsbasierte Bezahlung, Enterprise Agreement usw.) entspricht, ist oft eindeutig, ob das Azure-Abonnement Teil von Enterprise Agreement ist.
 
