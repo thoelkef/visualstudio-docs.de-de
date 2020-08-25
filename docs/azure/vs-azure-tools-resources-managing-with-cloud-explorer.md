@@ -9,36 +9,36 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 5a69fb83f28f4446a91e4125e75706400401ea1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 175aa7111d77e92fb29a3983db7365e068abba2f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911733"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800384"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten im Visual Studio Cloud-Explorer zugeordneten Ressourcen
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten zugeordneten Ressourcen im Visual Studio Cloud-Explorer
 
 Mit dem Cloud-Explorer können Sie Ihre Azure-Ressourcen und -Ressourcengruppen anzeigen, deren Eigenschaften überprüfen und wichtige Entwickleraktionen für die Diagnose in Visual Studio ausführen.
 
 Der Cloud-Explorer setzt wie das [Azure-Portal](https://portal.azure.com) auf dem Azure Resource Manager-Stapel auf. Daher kann der Cloud-Explorer mit Ressourcen wie Azure-Ressourcengruppen und Azure-Diensten wie Logic Apps und API-Apps arbeiten und unterstützt die [rollenbasierte Zugriffssteuerung](/azure/role-based-access-control/role-assignments-portal) (Role-Based Access Control, RBAC).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 * Visual Studio 2017 oder höher (siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads)) mit der ausgewählten **Azure-Workload**. Sie können auch eine frühere Version von Visual Studio mit dem [Microsoft Azure SDK für .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) verwenden.
 * Microsoft Azure-Konto: Wenn Sie noch nicht über ein Konto verfügen, können Sie sich [für eine kostenlose Testversion registrieren](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) oder Ihre [Visual Studio-Abonnentenvorteile aktivieren](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).
 
 > [!NOTE]
-> Wenn der Cloud-Explorer angezeigt werden soll, drücken Sie **STRG**+**Q**, um das Suchfeld zu aktivieren, und geben Sie dort dann **Cloud-Explorer** ein.
+> Um Cloud-Explorer anzuzeigen, drücken Sie **STRG** + **Q** , um das Suchfeld zu aktivieren, und geben Sie dann **Cloud-Explorer**ein.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Hinzufügen eines Azure-Kontos zum Cloud-Explorer
 
-Um die Ressourcen anzuzeigen, die einem Azure-Konto zugeordnet sind, müssen Sie das Konto zuerst dem **Cloud-Explorer** hinzufügen.
+Um die einem Azure-Konto zugeordneten Ressourcen anzuzeigen, müssen Sie das Konto zunächst **Cloud-Explorer**hinzufügen.
 
-1. Wählen Sie im **Cloud-Explorer** die Schaltfläche **Kontoverwaltung** aus.
+1. Wählen Sie in **Cloud-Explorer**die Schaltfläche **Kontoverwaltung** aus.
 
    ![Symbol für die Azure-Kontoeinstellungen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Wählen Sie **Konten verwalten** aus.
+1. Wählen Sie **Konten verwalten**aus.
 
    ![Cloud-Explorer-Link zum Hinzufügen eines Kontos](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
@@ -48,13 +48,13 @@ Um die Ressourcen anzuzeigen, die einem Azure-Konto zugeordnet sind, müssen Sie
 
    ![Cloud-Explorer: anzuzeigende Azure-Abonnements auswählen](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. Nach der Auswahl der Abonnements, deren Ressourcen Sie durchsuchen möchten, werden diese Abonnements und Ressourcen im Cloud-Explorer angezeigt.
+1. Nachdem Sie die Abonnements ausgewählt haben, deren Ressourcen Sie durchsuchen möchten, werden diese Abonnements und Ressourcen im **Cloud-Explorer**angezeigt.
 
    ![Ressourcenliste für ein Azure-Konto im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>Entfernen eines Azure-Kontos aus dem Cloud-Explorer
 
-1. Wählen Sie im **Cloud-Explorer** die Option **Kontenverwaltung** aus.
+1. Wählen Sie unter **Cloud-Explorer**die Option **Kontoverwaltung**aus.
 
    ![Symbol für die Azure-Kontoeinstellungen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -101,8 +101,8 @@ Zusätzliche Aktionen und Eigenschaftswerte können auch basierend auf der Azure
 
 ## <a name="find-resources-in-cloud-explorer"></a>Suchen von Ressourcen im Cloud-Explorer
 
-Um in Ihren Azure-Kontoabonnements Ressourcen mit einem bestimmten Namen zu suchen, geben Sie den Namen in das Feld **Suchen** im Cloud-Explorer ein.
+Um Ressourcen mit einem bestimmten Namen in ihren Azure-Konto Abonnements zu suchen, geben Sie den Namen in **Cloud-Explorer**in das **Suchfeld** ein.
 
   ![Suchen von Ressourcen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-Bei der Eingabe von Zeichen in das Feld **Suchen** werden in der Ressourcenstruktur nur die Ressourcen angezeigt, die mit diesen Zeichen übereinstimmen.
+Wenn Sie Zeichen in das **Suchfeld** eingeben, werden nur die Ressourcen in der Ressourcenstruktur angezeigt, die diesen Zeichen entsprechen.

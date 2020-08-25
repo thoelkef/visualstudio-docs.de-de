@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286652"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800969"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installieren von FxCop-Analyzern in Visual Studio
 
@@ -28,7 +28,7 @@ Sie können diese FxCop-Analysen entweder als nuget-Paket oder als VSIX-Erweiter
 
 In Visual Studio 2019 Version 16,3 und höher können Sie das nuget-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) direkt über die Eigenschaften Seite Code Analyse des Projekts installieren:
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, wählen Sie **Eigenschaften**aus, und wählen Sie dann die Registerkarte **Code Analyse** aus.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, wählen Sie diesen aus, wählen Sie **Eigenschaften**aus, und wechseln Sie dann zur Registerkarte **Code Analyse** .
 
    ![Paket "FxCop-Analysen" über die Seite "Eigenschaften" in Visual Studio installieren](media/install-fxcop-properties-page.png)
 

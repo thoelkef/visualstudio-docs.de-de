@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371910"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801034"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -26,9 +26,9 @@ Sie können einen benutzerdefinierten Regelsatz erstellen, um bestimmte Projekta
 
 Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integrierten Regelsatz im **Regelsatz-Editor**öffnen. Von dort aus können Sie bestimmte Regeln hinzufügen oder entfernen, und Sie können die Aktion ändern, die auftritt, wenn eine Regel verletzt wird &mdash; , z. b. eine Warnung oder einen Fehler.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
+1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus, halten Sie es (oder klicken Sie mit der rechten Maustaste darauf), und wählen Sie dann **Eigenschaften**
 
-2. Wählen Sie auf den **Eigenschaften** Seiten die Registerkarte **Code Analyse** aus.
+2. Wechseln Sie auf den **Eigenschaften** Seiten zur Registerkarte **Code Analyse** .
 
 ::: moniker range="vs-2017"
 
@@ -70,9 +70,9 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 > [!NOTE]
 > Das folgende Verfahren gilt nicht für .net Core-Projekte, die nicht über eine Registerkarte für die **Code Analyse** Eigenschaft verfügen.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
+1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus, halten Sie es (oder klicken Sie mit der rechten Maustaste darauf), und wählen Sie dann **Eigenschaften**
 
-2. Wählen Sie auf den **Eigenschaften** Seiten die Registerkarte **Code Analyse** aus.
+2. Wechseln Sie auf den **Eigenschaften** Seiten zur Registerkarte **Code Analyse** .
 
 ::: moniker range="vs-2017"
 
@@ -98,7 +98,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 ## <a name="rule-precedence"></a>Rangfolge der Regeln
 
-- Wenn dieselbe Regel mindestens zwei Mal in einem Regelsatz mit unterschiedlichen Schweregraden aufgeführt ist, generiert der Compiler einen Fehler. Beispiel:
+- Wenn dieselbe Regel mindestens zwei Mal in einem Regelsatz mit unterschiedlichen Schweregraden aufgeführt ist, generiert der Compiler einen Fehler. Zum Beispiel:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
    **CA0063: Fehler beim Laden der Regel Satz Datei " \[ your]. RuleSet" oder einer der abhängigen Regel Satz Dateien. Die Datei entspricht nicht dem Regel Satz Schema.**
 
-- Wenn der Regelsatz mithilfe eines **include** -Tags einen untergeordneten Regelsatz enthält und die untergeordnete und übergeordnete Regel beide die gleiche Regel, aber unterschiedliche Schweregrade, enthält, hat der Schweregrad im übergeordneten Regelsatz Vorrang. Beispiel:
+- Wenn der Regelsatz mithilfe eines **include** -Tags einen untergeordneten Regelsatz enthält und die untergeordnete und übergeordnete Regel beide die gleiche Regel, aber unterschiedliche Schweregrade, enthält, hat der Schweregrad im übergeordneten Regelsatz Vorrang. Zum Beispiel:
 
    ```xml
    <!-- Parent rule set -->
@@ -145,7 +145,7 @@ Nachdem Sie nun über einen Regelsatz verfügen, besteht der nächste Schritt in
 > [!div class="nextstepaction"]
 > [Ändern von Regeln im Regelsatz-Editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)

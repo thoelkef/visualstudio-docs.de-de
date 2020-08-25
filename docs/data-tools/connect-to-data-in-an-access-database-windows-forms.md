@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282734"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800631"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank
 
@@ -29,7 +29,7 @@ Um diese Prozeduren verwenden zu können, benötigen Sie ein Windows Forms-oder 
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Erstellen eines Datasets für eine ACCDB-Datei
 
-Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken her, die mit Office 365, Access 2013, Access 2010 oder Access 2007 erstellt wurden.
+Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken her, die mit Microsoft 365 erstellt wurden, auf 2013, Access 2010 oder Access 2007.
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
@@ -115,7 +115,7 @@ Das soeben erstellte Dataset ist im **Datenquellen** Fenster verfügbar. Sie kö
 
 - Fügen Sie dem- <xref:System.Data.DataTable.ColumnChanging> Ereignis oder dem- <xref:System.Data.DataTable.RowChanging> Ereignis der Datentabellen im DataSet eine Validierungs Logik hinzu (siehe [Validieren von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen von Verbindungen](../data-tools/add-new-connections.md)
 - [Übersicht über die WPF-Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)

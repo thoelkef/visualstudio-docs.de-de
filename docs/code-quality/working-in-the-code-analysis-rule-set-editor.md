@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Regelsatz-Editors für die Code Analyse
+title: Verwenden des Regelsatz-Editors für die Codeanalyse
 ms.date: 04/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587133"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801541"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Verwenden des Regelsatz-Editors für die Code Analyse
 
@@ -28,7 +28,7 @@ In der folgenden Tabelle werden die Schweregrad Optionen angezeigt:
 |Warnung|Generiert eine Warnung in der **Fehlerliste** und auch zur Buildzeit.|
 |Fehler|Generiert einen Fehler in der **Fehlerliste** und auch zur Buildzeit.|
 |Info|Generiert eine Meldung in der **Fehlerliste**.|
-|Hidden|Der Verstoß ist für den Benutzer nicht sichtbar. Die IDE wird jedoch über den Verstoß benachrichtigt.|
+|Ausgeblendet|Der Verstoß ist für den Benutzer nicht sichtbar. Die IDE wird jedoch über den Verstoß benachrichtigt.|
 |Keine|Die Regel wird unterdrückt. Das Verhalten entspricht dem, wenn die Regel aus dem Regelsatz entfernt wurde.|
 
 Der Editor zeigt die Regeln in einer Baumstruktur an, in der die Regeln nach einem von Ihnen angegebenen Regelsatz Feld gruppiert werden. Um Regeln zu einem Regelsatz hinzuzufügen oder daraus zu entfernen, führen Sie einen oder mehrere der folgenden Schritte aus:
@@ -38,11 +38,11 @@ Der Editor zeigt die Regeln in einer Baumstruktur an, in der die Regeln nach ein
    > [!TIP]
    > Sie können die Gruppierung von Regeln in der Dropdown- **Gruppe gruppieren nach** ändern.
 
-- Klicken Sie auf das Feld **Aktion** einer Gruppe, und geben Sie dann die Aktion an, die auf alle Regeln in der Gruppe angewendet werden soll.
+- Geben Sie im Feld **Aktion** einer Gruppe die Aktion an, die auf alle Regeln in der Gruppe angewendet werden soll.
 
-- Aktivieren oder deaktivieren Sie das Kontrollkästchen für eine einzelne Regel. Wenn Sie das Kontrollkästchen für eine Regel aktivieren, wird die Regel auf die Warnungs Aktion festgelegt.
+- Aktivieren oder deaktivieren Sie das Kontrollkästchen für eine einzelne Regel. Wenn Sie das Kontrollkästchen für eine Regel aktivieren, wird die Regel auf die **Warnungs** Aktion festgelegt.
 
-## <a name="toolbar"></a>ToolBar
+## <a name="toolbar"></a>Symbolleiste
 
 Mithilfe der Symbolleiste des Regelsatz-Editors können Sie die Daten gruppieren, Filtern und Durchsuchen, die im Regel Satz Raster angezeigt werden.
 
@@ -50,9 +50,9 @@ In der folgenden Tabelle werden die Steuerelemente auf der Symbolleiste des Rege
 
 |ToolBar-Steuerelement|Beschreibung|
 |---------------------|-----------------|
-|**Alle aufklappen**|Zeigt die Regeln in allen Gruppen an.|
+|**Alle erweitern**|Zeigt die Regeln in allen Gruppen an.|
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen aus.|
-|**Group By**|Gibt das Feld an, nach dem Regeln gruppiert werden. Klicken Sie auf **\<keine >** , um die Regeln ohne Gruppen anzuzeigen.|
+|**Gruppieren nach**|Gibt das Feld an, nach dem Regeln gruppiert werden. Klicken Sie **\<None>** hierauf, um die Regeln ohne Gruppen anzuzeigen.|
 |**Spaltenoptionen**|Gibt die anzuzeigenden Regel Felder an.|
 |**Regeln ausblenden, die nicht für die aktuelle Projekt Mappe gelten**|Zeigt Regeln an, die nicht denselben Zieltyp wie die Projekt Mappe haben, oder blendet sie aus.|
 |**Regeln anzeigen, die Code Analysefehler generieren können**|Blendet Regeln ein oder aus, denen die Fehler Aktion zugewiesen wird.|
@@ -67,7 +67,7 @@ Regelsatz-Felder zeigen Informationen zu einem Regelsatz an und können verwende
 
 In der folgenden Tabelle werden die Felder eines Regelsatzes beschrieben:
 
-|Field|Beschreibung|
+|Feld|BESCHREIBUNG|
 |-----------|-----------------|
 |**ID**|Der Bezeichner der Regel.|
 |**Kategorie**|Zusätzlich zur Mitgliedschaft in Regelsätzen werden Code Analyse Regeln auch nach Kategorie gruppiert. Weitere Informationen finden Sie unter [Code Analyse Warnungen](../code-quality/code-analysis-for-managed-code-warnings.md).|
@@ -81,10 +81,10 @@ In der folgenden Tabelle werden die Felder eines Regelsatzes beschrieben:
 
 In den Spalten Headern des Regel Satz-Rasters können Sie die Regeln nach den Werten des Felds sortieren und filtern.
 
-- Um die Regelsatz Listen zu sortieren, klicken Sie auf den Spaltenheader des Felds, nach dem sortiert werden soll. Wenn die Regelsätze gruppiert sind, wird jede Gruppe einzeln sortiert.
+- Wählen Sie zum Sortieren der Regelsatz Listen die Spaltenüberschrift des Felds aus, nach dem sortiert werden soll. Wenn die Regelsätze gruppiert sind, wird jede Gruppe einzeln sortiert.
 
-- Wenn Sie die Regelsätze nach dem Wert eines Felds filtern möchten, klicken Sie auf die Schaltfläche Filter in der Spaltenüberschrift des Felds, nach dem Sie filtern möchten. Aktivieren Sie die Kontrollkästchen der Werte, die Sie anzeigen möchten, und deaktivieren Sie die Kontrollkästchen der Werte, die Sie ausblenden möchten.
+- Wenn Sie die Regelsätze nach dem Wert eines Felds filtern möchten, wählen Sie die Filter Schaltfläche in der Spaltenüberschrift des Felds aus, nach dem Sie filtern möchten. Aktivieren Sie die Kontrollkästchen der Werte, die Sie anzeigen möchten, und deaktivieren Sie die Kontrollkästchen der Werte, die Sie ausblenden möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen eines benutzerdefinierten Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md)

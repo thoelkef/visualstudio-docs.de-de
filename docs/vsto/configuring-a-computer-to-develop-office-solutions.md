@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e559ddfec8570077a78fe980632366b4a57605de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930954"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801840"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
 
@@ -25,31 +25,31 @@ Installieren Sie eine unterstützte Version von Visual Studio, .NET Framework un
 
 |Software|Unterstützte Versionen|
 |--------------|------------------------|
-|Visual Studio 2017| Eine beliebige Edition, mit der **Office/SharePoint-Entwicklung** arbeitsauslastung.|
-|.NET Framework|– Die .NET Framework 4 oder höher.|
-|Microsoft Office|<ul><li>Eine Suite-Edition von Office, einschließlich Office Professional Plus für Office 365</li><li>Eine der folgenden eigenständigen Anwendungen:<br /><br /> <ul><li>Excel</li><li>InfoPath (nur Office 2013 und Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) muss als Teil von Office installiert sein. **Wichtig:** Klick-und-Los-Versionen von Office 2010-Anwendungen werden nicht unterstützt.|
+|Visual Studio 2017| Eine beliebige Edition mit der Arbeitsauslastung für **Office/SharePoint-Entwicklung** .|
+|.NET Framework|-Die .NET Framework 4 oder höher.|
+|Microsoft Office|<ul><li>Jede Suite-Edition von Office, einschließlich Microsoft 365 Apps für Unternehmen.</li><li>Eine der folgenden eigenständigen Anwendungen:<br /><br /> <ul><li>Excel</li><li>InfoPath (nur Office 2013 und Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) muss als Teil von Office installiert sein. **Wichtig:** Click-to-Run-Versionen von Office 2010-Anwendungen werden nicht unterstützt.|
 
-Ausführliche Installationsschritte finden Sie unter [Vorgehensweise: Konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
+Ausführliche Installationsschritte finden Sie unter Gewusst [wie: Konfigurieren eines Computers zum Entwickeln von Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)-Projektmappen.
 
-## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Wenn Projektvorlagen nicht angezeigt wird oder nicht in Visual Studio funktionieren
+## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Wenn Projektvorlagen nicht angezeigt werden oder Sie nicht in Visual Studio funktionieren
 
-Wenn Sie eine unterstützte Version von Visual Studio, die .NET Framework und Microsoft Office installieren, aber die Office-Projektvorlagen nicht angezeigt in der Visual Studio werden **neues Projekt** (Dialogfeld), oder Sie erhalten einen Fehler auf, wenn Sie versuchen, einen verwenden Überprüfen Sie Folgendes:
+Wenn Sie eine unterstützte Version von Visual Studio, die .NET Framework und Microsoft Office installieren, aber Office-Projektvorlagen nicht im Visual Studio-Dialogfeld " **Neues Projekt** " angezeigt werden, oder wenn Sie einen Fehler erhalten, wenn Sie versuchen, eine Version zu verwenden, überprüfen Sie Folgendes:
 
 - Stellen Sie sicher, dass die Microsoft Office Developer Tools auf Ihrem Computer installiert sind.
 
-     Office Developer Tools sind eine optionale Komponente von Visual Studio, aber sie werden automatisch zusammen mit Visual Studio installiert. Wenn Sie die Visual Studio-Installation anpassen, indem Sie die zu installierenden Funktionen auswählen, legen Sie beim Setup zum Installieren der Tools **Microsoft Office Developer Tools** fest.
+     Office Developer Tools sind eine optionale Komponente von Visual Studio, werden aber automatisch zusammen mit Visual Studio installiert. Wenn Sie die Visual Studio-Installation anpassen, indem Sie die zu installierenden Funktionen auswählen, legen Sie beim Setup zum Installieren der Tools **Microsoft Office Developer Tools** fest.
 
-     Um sicherzustellen, dass diese Tools installiert sind, starten Sie das Visual Studio-Setup-Programm, und wählen die **ändern** Schaltfläche. Aktivieren Sie das Kontrollkästchen **Microsoft Office Developer Tools** , und wählen Sie dann die Schaltfläche **Aktualisieren** aus.
+     Um sicherzustellen, dass diese Tools installiert sind, starten Sie das Visual Studio-Setup Programm, und klicken Sie auf die Schaltfläche **ändern** . Aktivieren Sie das Kontrollkästchen **Microsoft Office Developer Tools** , und wählen Sie dann die Schaltfläche **Aktualisieren** aus.
 
-- Stellen Sie sicher, dass Sie eine Version von Office nicht ausführen, die mittels Klick-und-Los bereitgestellt wurde. Weitere Informationen finden Sie unter [How to: Überprüfen Sie, ob Outlook auf einem Computer eine Klick-und-Los-Anwendung ist](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
+- Stellen Sie sicher, dass Sie keine Version von Office ausführen, die durch Klicken auf die Ausführung übermittelt wurde. Weitere Informationen finden [Sie unter Gewusst wie: überprüfen, ob Outlook eine Klick-und-Los-Anwendung auf einem Computer ist](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
-- Stellen Sie sicher, dass Sie nur eine Version von Microsoft Office ausführen.
+- Stellen Sie sicher, dass nur eine Version von Microsoft Office ausgeführt wird.
 
-Wenn Sie Probleme auftreten weiterhin, finden Sie unter [zusätzliche Unterstützung für Fehler in Office-Projektmappen](../vsto/additional-support-for-errors-in-office-solutions.md).
+Wenn weiterhin Probleme auftreten, finden Sie [Weitere Informationen unter zusätzliche Unterstützung für Fehler in Office](../vsto/additional-support-for-errors-in-office-solutions.md)-Projektmappen.
 
-## <a name="see-also"></a>Siehe auch
-- [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
-- [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
-- [Verfügbare Funktionen nach Office-Anwendung und Projekt geben.](../vsto/features-available-by-office-application-and-project-type.md)
+- [Vorgehensweise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Gewusst wie: Installieren von primären Interop-Assemblys in Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md)

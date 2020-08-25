@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: d70f2038881cd422b9c5a1015c4f88a49f2a3c9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0a6bbf5c846007cb1fa8d8cad91aa252f3d06a72
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280582"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800371"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Verwenden von Emulator Express zum Ausführen und Debuggen eines Azure-Clouddiensts auf einem lokalen Computer
 Mithilfe von Emulator Express können Sie einen Clouddienst testen und debuggen, ohne Visual Studio als Administrator auszuführen. Abhängig von den Anforderungen Ihres Clouddiensts können Sie die Projekteinstellungen für die Verwendung von Emulator Express oder des vollständigen Emulators festlegen. Weitere Informationen zum vollständigen Emulator finden Sie unter [Ausführen einer Azure-Anwendung im Serveremulator](/azure/storage/common/storage-use-emulator).
@@ -23,7 +23,7 @@ Wenn Sie ein Azure-Projekt in Azure SDK 2.3 oder höher erstellen, wird Emulator
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie im Kontextmenü die Option **Eigenschaften** aus.
+1. Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und wählen Sie im Kontextmenü **Eigenschaften**aus.
 
 1. Wählen Sie auf den Eigenschaftenseiten die Registerkarte **Web** aus.
 
