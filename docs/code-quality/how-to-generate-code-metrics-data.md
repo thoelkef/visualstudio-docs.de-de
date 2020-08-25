@@ -62,7 +62,7 @@ Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln aus
 
    In diesem Beispiel ist die Regel [CA1502](ca1502.md) so konfiguriert, dass Sie ausgelöst wird, wenn die zyklomatische Komplexität einer Methode größer als 10 ist.
 
-3. Markieren Sie im **Eigenschaften** Fenster von Visual Studio oder in der Projektdatei die Buildaktion der Konfigurationsdatei als [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Zum Beispiel:
+3. Markieren Sie im **Eigenschaften** Fenster von Visual Studio oder in der Projektdatei die Buildaktion der Konfigurationsdatei als [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Beispiel:
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ Sie können Codemetrikdaten über die Befehlszeile für c#-und Visual Basic Proj
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft. Code Analysis. Metrics-nuget-Paket
 
-Die einfachste Möglichkeit zum Generieren von Codemetrikdaten über die Befehlszeile besteht darin, das nuget-Paket [Microsoft. Code Analysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) zu installieren. Nachdem Sie das Paket installiert haben, führen Sie `msbuild /t:Metrics` aus dem Verzeichnis aus, das die Projektdatei enthält. Zum Beispiel:
+Die einfachste Möglichkeit zum Generieren von Codemetrikdaten über die Befehlszeile besteht darin, das nuget-Paket [Microsoft. Code Analysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) zu installieren. Nachdem Sie das Paket installiert haben, führen Sie `msbuild /t:Metrics` aus dem Verzeichnis aus, das die Projektdatei enthält. Beispiel:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Sie können den Namen der Ausgabedatei überschreiben, indem Sie angeben `/p:MetricsOutputFile=<filename>` . Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, indem Sie angeben `/p:LEGACY_CODE_METRICS_MODE=true` . Zum Beispiel:
+Sie können den Namen der Ausgabedatei überschreiben, indem Sie angeben `/p:MetricsOutputFile=<filename>` . Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, indem Sie angeben `/p:LEGACY_CODE_METRICS_MODE=true` . Beispiel:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -293,7 +293,7 @@ Wenn Sie das nuget-Paket nicht installieren möchten, können Sie die ausführba
 
 #### <a name="metricsexe-usage"></a>Metrics.exe Verwendung
 
-Um *Metrics.exe*auszuführen, stellen Sie ein Projekt oder eine Projekt Mappe und eine XML-Ausgabedatei als Argumente bereit. Zum Beispiel:
+Um *Metrics.exe*auszuführen, stellen Sie ein Projekt oder eine Projekt Mappe und eine XML-Ausgabedatei als Argumente bereit. Beispiel:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
