@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7ff64d43714fa69c2543a9bb12bb3cd12826c8
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706489"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800852"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Code Analyse Warnungen unterdrücken
 
@@ -50,7 +50,7 @@ Verwenden Sie in C++/CLI die Makros-ZS-unter \_ drückt- \_ Nachricht oder die \
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage-Attribut
 
-Wenn Sie im **Fehlerliste**die Option unter **drücken** im Kontextmenü oder im Kontextmenü einer Code Analyse Warnung auswählen, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> wird entweder im Code oder in der globalen Unterdrückungs Datei des Projekts ein-Attribut hinzugefügt.
+Wenn Sie im **Fehlerliste**die Option unter **drücken** auswählen oder mit der rechten Maustaste auf das Menü einer Code Analyse Warnung (oder auswählen und halten) klicken, wird ein- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut entweder im Code oder in der globalen Unterdrückungs Datei des Projekts hinzugefügt.
 
 Das- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut weist das folgende Format auf:
 
@@ -98,11 +98,11 @@ Wenn in Visual Studio Warnungen angezeigt werden, können Sie Beispiele von anze
 
 Code Analyse Warnungen werden auf der Ebene unterdrückt, auf die das <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut angewendet wird. Das-Attribut kann z. b. auf Assembly-, Modul-, Typ-, Element-oder Parameter Ebene angewendet werden. Dies dient dazu, die Unterdrückungs Informationen eng mit dem Code zu verknüpfen, in dem die Verletzung auftritt.
 
-Die allgemeine Form der Unterdrückung schließt die Regel Kategorie und einen Regel Bezeichner ein, der eine optionale, lesbare Darstellung des Regel namens enthält. Beispiel:
+Die allgemeine Form der Unterdrückung schließt die Regel Kategorie und einen Regel Bezeichner ein, der eine optionale, lesbare Darstellung des Regel namens enthält. Zum Beispiel:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-Wenn für das Minimieren von in-Source-Unterdrückungs Metadaten strenge Leistungs Gründe vorliegen, kann der Regelname ausgelassen werden. Die Regel Kategorie und Ihre Regel-ID bilden zusammen einen ausreichend eindeutigen Regel Bezeichner. Beispiel:
+Wenn für das Minimieren von in-Source-Unterdrückungs Metadaten strenge Leistungs Gründe vorliegen, kann der Regelname ausgelassen werden. Die Regel Kategorie und Ihre Regel-ID bilden zusammen einen ausreichend eindeutigen Regel Bezeichner. Zum Beispiel:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

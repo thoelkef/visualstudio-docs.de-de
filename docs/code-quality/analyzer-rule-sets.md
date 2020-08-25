@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573286"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800215"
 ---
 # <a name="enable-a-category-of-rules"></a>Aktivieren der Regelkategorie
 
@@ -27,9 +27,9 @@ Analysepakete können vordefinierte [Editor config](use-roslyn-analyzers.md#rule
 Das nuget-Paket FxCop Analyzer enthält vordefinierte Regelsätze und Editor config-Dateien für die folgenden Regel Kategorien:
 
 - Alle Regeln
-- Datenfluss
-- Entwerfen
-- Documentation
+- Dataflow
+- Entwurf
+- Dokumentation
 - Globalisierung
 - Interoperabilität
 - Wartbarkeit
@@ -38,7 +38,7 @@ Das nuget-Paket FxCop Analyzer enthält vordefinierte Regelsätze und Editor con
 - Portiert von FxCop
 - Zuverlässigkeit
 - Sicherheit
-- Verwendungs-
+- Verwendung
 
 Jede dieser Kategorien von Regeln verfügt über eine Editor config-oder Regel Satz Datei für Folgendes:
 
@@ -53,13 +53,13 @@ Jede dieser Kategorien von Regeln verfügt über eine Editor config-oder Regel S
 
 ## <a name="predefined-editorconfig-files"></a>Vordefinierte Editor config-Dateien
 
-Die vordefinierten Editor config-Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im Verzeichnis *% User Profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\<Version\>\editor config* . Beispielsweise befindet sich die Editor config-Datei, um alle Sicherheitsregeln zu aktivieren, unter *% User Profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\<Version\>\editor config\securityrulesenabled\\. Editor config*.
+Die vordefinierten Editor config-Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im Verzeichnis " *% User Profile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editor config* ". Beispielsweise befindet sich die Datei "Editor config", um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editoriconfig\securityrulesenabled \\ . Editor config*.
 
 Kopieren Sie die ausgewählte Editor config-Datei in das Stammverzeichnis Ihres Projekts.
 
 ## <a name="predefined-rule-sets"></a>Vordefinierter Regelsatz
 
-Die vordefinierten Regel Satz Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im Verzeichnis *% User Profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\<Version\>\rulesets* . Beispielsweise befindet sich die Regel Satz Datei, um alle Sicherheitsregeln zu aktivieren, unter *% User Profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\<Version\>\ruleseung\securityrulesenabled.RuleSet*.
+Die vordefinierten Regel Satz Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im Verzeichnis *% User Profile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets* . Beispielsweise befindet sich die Regel Satz Datei, um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \ruleset\securityrulesenabled.RuleSet*.
 
 Kopieren Sie mindestens einen Regelsatz, und fügen Sie ihn in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
 
@@ -71,7 +71,7 @@ Der Vorgang zum Festlegen des aktiven Regelsatzes ist ein wenig anders, je nachd
 
 #### <a name="net-core"></a>.NET Core
 
-Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Core-oder .NET Standard-Projekten festlegen möchten, fügen Sie die Eigenschaft " **codeanalysisruleset** " manuell zu Ihrer Projektdatei hinzu. Der folgende Code Ausschnitt legt z. b. `HelloWorld.ruleset` als aktiven Regelsatz fest.
+Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Core-oder .NET Standard-Projekten festlegen möchten, fügen Sie die Eigenschaft " **codeanalysisruleset** " manuell zu Ihrer Projektdatei hinzu. Der folgende Code Ausschnitt legt z `HelloWorld.ruleset` . b. den aktiven Regelsatz fest.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -84,7 +84,7 @@ Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Cor
 
 So erstellen Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .NET Framework Projekten:
 
-- Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus.
+- Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** aus.
 
 - Wählen Sie auf den Eigenschaften Seiten des Projekts die Registerkarte **Code Analyse** aus.
 
@@ -102,10 +102,10 @@ So erstellen Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in 
 
    Nun sehen Sie nur Regel Verletzungen für die Regeln, die im ausgewählten Regelsatz aktiviert sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [FAQ zu Analysetools](analyzers-faq.md)
-- [Overview of .NET Compiler Platform analyzers (Übersicht über .NET Compiler Platform-Analysetools)](roslyn-analyzers-overview.md)
+- [Übersicht über .NET Compiler Platform-Analysetools](roslyn-analyzers-overview.md)
 - [Installieren von Analyzern](install-roslyn-analyzers.md)
 - [Analysen konfigurieren](use-roslyn-analyzers.md)
 - [Verwenden von Regelsätzen zum Gruppieren von Code Analyse Regeln](using-rule-sets-to-group-code-analysis-rules.md)

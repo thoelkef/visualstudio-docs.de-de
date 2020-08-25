@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88639434"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800514"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure-Speicher mithilfe von verbundenen Visual Studio-Diensten
 
 Mit Visual Studio können Sie eine der folgenden Funktionen mit Azure Storage verbinden, indem Sie die **verbundene Dienste** -Funktion verwenden:
 
 - Konsolen-app .NET Framework
-- ASP.NET MVC (.NET Framework) 
+- ASP.NET MVC (.NET Framework)
 - ASP.NET Core
 - .Net Core (einschließlich Konsolen-APP, WPF, Windows Forms, Klassenbibliothek)
 - .Net Core-workerrolle
@@ -117,7 +117,7 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 1. Der verbundene Speicherdienst wird unter dem Knoten **Dienstverweise** Ihres Projekts angezeigt.
 :::moniker-end
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Azure Storage-Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Dokumentation zu Azure Storage](/azure/storage/)

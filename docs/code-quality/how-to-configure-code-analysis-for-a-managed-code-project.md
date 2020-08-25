@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507858"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801047"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Vorgehensweise: Konfigurieren der Legacy Analyse für verwalteten Code
 
@@ -91,9 +91,9 @@ Standardmäßig wird allen verwalteten Projekten einer Projekt Mappe der Code An
 
     - Um einen Regelsatz für ein einzelnes Projekt anzugeben, wählen Sie den Projektnamen aus.
 
-    - Halten Sie die **STRG** -Taste gedrückt, und wählen Sie die Projektnamen aus, um einen Regelsatz für mehrere Projekte anzugeben.
+    - Um einen Regelsatz für mehrere Projekte anzugeben, wählen Sie **STRG** und die Projektnamen aus.
 
-    - Wenn Sie alle Projekte in der Projekt Mappe angeben möchten, halten Sie die **UMSCHALT** Taste gedrückt, und klicken Sie in die Projektliste.
+    - Um alle Projekte in der Projekt Mappe anzugeben, wählen Sie **Shift** und die Projektliste aus.
 
 5. Wählen Sie das Feld **Regelsatz** eines Projekts aus, und wählen Sie dann den Namen des Regelsatzes aus, den Sie anwenden möchten.
 

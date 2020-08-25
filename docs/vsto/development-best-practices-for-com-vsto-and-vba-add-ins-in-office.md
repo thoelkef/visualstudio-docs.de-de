@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918628"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801502"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Methoden für die Entwicklung von com-, VSTO-und VBA-Add-Ins in Office
   Wenn Sie com-, VSTO-oder VBA-Add-Ins für Office entwickeln, befolgen Sie die in diesem Artikel beschriebenen bewährten Methoden für die Entwicklung.   Vorteile:
@@ -57,7 +57,7 @@ Wenn die Lösung aus einem Add-in und einem externen Prozess für Office besteht
 Legen Sie die Versionsnummer der Binärdateien in der Projekt Mappe fest, und erhöhen Sie Sie mit jedem Update. Dadurch wird es für Benutzer einfacher, Änderungen Zwischenversionen zu erkennen und die Kompatibilität zu bewerten.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Bereitstellen von Support Anweisungen für die neuesten Versionen von Office
-Kunden bitten Sie ISVs, Support Anweisungen für Ihre com-, VSTO-und VBA-Add-Ins bereitzustellen, die in Office ausgeführt werden. Durch das Auflisten ihrer expliziten Support Anweisungen können Kunden, die Office 365 ProPlus Readiness Tools verwenden, ihre Unterstützung verstehen.
+Kunden bitten Sie ISVs, Support Anweisungen für Ihre com-, VSTO-und VBA-Add-Ins bereitzustellen, die in Office ausgeführt werden. Durch das Auflisten ihrer expliziten Support Anweisungen können Kunden, die Microsoft 365-Apps für Unternehmens Bereitschafts Tools verwenden, Ihren Support verstehen.
 
 Zum Bereitstellen von Support Anweisungen für Office-Client Anwendungen (z. b. Word oder Excel) überprüfen Sie zunächst, ob Ihre Add-Ins in der aktuellen Office-Version ausgeführt werden, und führen Sie dann die Bereitstellung von Updates durch, wenn das Add-in in einer zukünftigen Version unterbrochen wird. Sie müssen Ihre Add-Ins nicht testen, wenn Microsoft einen neuen Build oder ein Update für Office freigibt. Microsoft ändert die Erweiterbarkeits Plattform für com, VSTO und VBA in Office selten, und diese Änderungen werden gut dokumentiert.
 

@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 06344d536f0bb6db5f13329ece2c5202205bcefb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280712"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800488"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio
 
@@ -29,7 +29,7 @@ Der Emulator simuliert den Azure-Computedienst und wird in Ihrer lokalen Umgebun
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>So debuggen Sie den Clouddienst auf dem lokalen Computer
 
-1. Wählen Sie auf der Menüleiste **Debuggen**, **Debuggen starten** aus, um Ihr Azure-Cloud-Dienstprojekt auszuführen. Alternativ können Sie F5 drücken. Eine Meldung wird angezeigt, dass der Serveremulator gestartet wurde. Wenn der Emulator gestartet wird, wird dies durch das Taskleistensymbol bestätigt.
+1. Wählen Sie in der Menüleiste **Debug**  >  **Debuggen Debuggen starten** aus, um Ihr Azure-clouddienstprojekt auszuführen. Alternativ können Sie F5 drücken. Eine Meldung wird angezeigt, dass der Serveremulator gestartet wurde. Wenn der Emulator gestartet wird, wird dies durch das Taskleistensymbol bestätigt.
 
     ![Azure-Emulator in der Taskleiste](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -37,7 +37,7 @@ Der Emulator simuliert den Azure-Computedienst und wird in Ihrer lokalen Umgebun
 
     Im linken Bereich der Benutzeroberfläche werden die Dienste angezeigt, die zurzeit im Serveremulator bereitgestellt sind, sowie die Rolleninstanzen, die in jedem Dienst ausgeführt werden. Sie können den Dienst oder die Rollen auswählen, um Lebenszyklus-, Protokollierungs- und Diagnoseinformationen im rechten Bereich anzuzeigen. Wenn Sie den Fokus in den oberen Rand eines enthaltenen Fensters setzen, wird es erweitert und füllt den rechten Bereich aus.
 
-3. Durchlaufen Sie Ihre Anwendung schrittweise, indem Sie auf die Befehle im Menü **Debuggen** klicken und Haltepunkte in Ihrem Code setzen. Wenn Sie die Anwendung im Debugger schrittweise durchlaufen, werden die Bereiche mit dem aktuellen Status der Anwendung aktualisiert. Wenn Sie das Debuggen beenden, wird die Anwendungsbereitstellung gelöscht. Wenn Ihre Anwendung eine Webrolle umfasst und Sie als Startaktion das Starten des Webbrowsers festgelegt haben, startet Visual Studio Ihre Webanwendung im Browser. Wenn Sie die Anzahl der Instanzen einer Rolle in der Dienstkonfiguration ändern, müssen Sie den Clouddienst beenden und dann das Debuggen neu starten, damit Sie diese neuen Instanzen der Rolle debuggen können.
+3. Gehen Sie durch die Anwendung, indem Sie im Menü **Debuggen** die Option Befehle auswählen und Haltepunkte im Code festlegen. Wenn Sie die Anwendung im Debugger schrittweise durchlaufen, werden die Bereiche mit dem aktuellen Status der Anwendung aktualisiert. Wenn Sie das Debuggen beenden, wird die Anwendungsbereitstellung gelöscht. Wenn Ihre Anwendung eine Webrolle umfasst und Sie als Startaktion das Starten des Webbrowsers festgelegt haben, startet Visual Studio Ihre Webanwendung im Browser. Wenn Sie die Anzahl der Instanzen einer Rolle in der Dienstkonfiguration ändern, müssen Sie den Clouddienst beenden und dann das Debuggen neu starten, damit Sie diese neuen Instanzen der Rolle debuggen können.
 
     > [!NOTE]
     > Wenn Sie das Ausführen oder Debuggen des Diensts beenden, werden der lokale Serveremulator und der Speicheremulator nicht beendet. Sie müssen explizit über den Infobereich beendet werden.
@@ -79,7 +79,7 @@ Wenn Sie das Remotedebuggen für einen Clouddienst aktivieren, führt dies nicht
 
     ![Dialogfeld "Codetyp auswählen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Zum Identifizieren der Prozesse, an die der Debugger angefügt ist, öffnen Sie das Dialogfeld "Prozesse", indem Sie auf der Menüleiste "Debuggen", "Fenster" und dann "Prozesse" auswählen. (Tastatur: Strg+Alt+Z) Um einen bestimmten Prozess zu trennen, öffnen Sie dessen Kontextmenü, und klicken Sie dann auf **Prozess abtrennen**. Sie können auch den Instanzknoten im Server-Explorer suchen, dann den Prozess suchen, das Kontextmenü öffnen und auf **Prozess abtrennen**klicken.
+4. Zum Identifizieren der Prozesse, an die der Debugger angefügt ist, wählen Sie in der Menüleiste die Option Windows-Prozesse **Debuggen**aus  >  **Windows**  >  **Processes**, und öffnen Sie das Dialogfeld **Prozesse** . (Tastatur: Strg+Alt+Z) Um einen bestimmten Prozess zu trennen, öffnen Sie dessen Kontextmenü, und klicken Sie dann auf **Prozess abtrennen**. Sie können auch den Instanzknoten im Server-Explorer suchen, dann den Prozess suchen, das Kontextmenü öffnen und auf **Prozess abtrennen**klicken.
 
     ![Prozesse debuggen](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -120,7 +120,7 @@ Sie können Programme debuggen, die auf virtuellen Computern in Azure ausgeführ
 
 3. Nachdem die Installation der Remotedebugerweiterung abgeschlossen ist, öffnen Sie das Kontextmenü des virtuellen Computers und klicken dann auf **Debugger anfügen**
 
-    Azure ruft eine Liste der Prozesse auf dem virtuellen Computer ab und zeigt diese im Dialogfeld "An den Prozess anhängen" an.
+    Azure ruft eine Liste der Prozesse auf dem virtuellen Computer ab und zeigt diese im Dialogfeld **An den Prozess anhängen** an.
 
     ![Befehl "Debugger anfügen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -128,7 +128,7 @@ Sie können Programme debuggen, die auf virtuellen Computern in Azure ausgeführ
 
     ![Dialogfeld "Codetyp auswählen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Klicken Sie auf die Prozesse, die Sie auf dem virtuellen Computer debuggen möchten, und anschließend auf **Anfügen**. Beispielsweise können Sie den Prozess "w3wp.exe" auswählen, wenn Sie eine Web-App auf dem virtuellen Computer debuggen möchten. Weitere Informationen finden Sie unter [Debuggen von mindestens einem Prozess in Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) und im Blogbeitrag zur [Azure-Rollenarchitektur](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/).
+5. Wählen Sie die Prozesse aus, die Sie auf dem virtuellen Computer debuggen möchten, und wählen Sie dann **Anfügen** Beispielsweise können Sie den Prozess "w3wp.exe" auswählen, wenn Sie eine Web-App auf dem virtuellen Computer debuggen möchten. Weitere Informationen finden Sie unter [Debuggen von mindestens einem Prozess in Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) und im Blogbeitrag zur [Azure-Rollenarchitektur](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/).
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Erstellen eines Webprojekts und eines virtuellen Computers zum Debuggen
 
@@ -140,7 +140,7 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
 1. Erstellen Sie eine neue ASP.NET-Webanwendung in Visual Studio.
 
-2. Wählen Sie im Dialogfeld "Neues ASP.NET-Projekt" im Abschnitt "Azure" im Dropdownlistenfeld **Virtueller Computer** aus. Lassen Sie das Kontrollkästchen **Remoteressourcen erstellen** aktiviert. Klicken Sie zum Fortfahren auf **OK** .
+2. Wählen Sie im Dialogfeld Neues ASP.net-Projekt im Abschnitt Azure im Dropdown-Listenfeld **virtueller Computer** aus. Lassen Sie das Kontrollkästchen **Remoteressourcen erstellen** aktiviert. Klicken Sie zum Fortfahren auf **OK** .
 
     Das Dialogfeld **Virtuellen Computer in Azure erstellen** wird angezeigt.
 
@@ -155,7 +155,7 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
     ![Dialogfeld zum Erstellen eines virtuellen Computers in Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746724.png)
 
-    Azure erstellt den virtuellen Computer und stellt anschließend die Endpunkte wie Remotedesktop und Web Deploy bereit und konfiguriert sie.
+    Azure erstellt den virtuellen Computer und stellt dann die Endpunkte (z. b. Remotedesktop und Web deploy bereit und konfiguriert sie.
 
 4. Nachdem der virtuelle Computer vollständig konfiguriert wurde, wählen Sie im Server-Explorer den Knoten des virtuellen Computers aus.
 
@@ -175,7 +175,7 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
 8. Nachdem das Projekt veröffentlicht wurde, klicken Sie im Kontextmenü des virtuellen Computers in Server-Explorer auf **Debugger anfügen**
 
-    Azure ruft eine Liste der Prozesse auf dem virtuellen Computer ab und zeigt diese im Dialogfeld "An den Prozess anhängen" an.
+    Azure ruft eine Liste der Prozesse auf dem virtuellen Computer ab und zeigt diese im Dialogfeld **An den Prozess anhängen** an.
 
     ![Befehl "Debugger anfügen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
     ![Dialogfeld "Codetyp auswählen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. Klicken Sie auf die Prozesse, die Sie auf dem virtuellen Computer debuggen möchten, und anschließend auf **Anfügen**. Beispielsweise können Sie den Prozess "w3wp.exe" auswählen, wenn Sie eine Web-App auf dem virtuellen Computer debuggen möchten. Weitere Informationen finden Sie unter [Debugging von mindestens einem Prozess in Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) .
+10. Wählen Sie die Prozesse aus, die Sie auf dem virtuellen Computer debuggen möchten, und wählen Sie dann **Anfügen** Beispielsweise können Sie den Prozess "w3wp.exe" auswählen, wenn Sie eine Web-App auf dem virtuellen Computer debuggen möchten. Weitere Informationen finden Sie unter [Debugging von mindestens einem Prozess in Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) .
 
 ## <a name="next-steps"></a>Nächste Schritte
 
