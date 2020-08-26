@@ -2,12 +2,12 @@
   href: index.yml
 - name: Übersicht
   items:
-    - name: Übersicht über die Bereitstellung
+    - name: Erster Einblick in die Bereitstellung
+      href: deploying-applications-services-and-components.md
+    - name: 'Bereitstellen in einem Ordner, in IIS oder in Azure'
       href: deploying-applications-services-and-components-resources.md
 - name: Schnellstarts
   items:
-    - name: Erster Einblick in die Bereitstellung
-      href: deploying-applications-services-and-components.md
     - name: Bereitstellen in Azure App Service
       href: quickstart-deploy-to-azure.md
     - name: Bereitstellung in App Service für Linux
