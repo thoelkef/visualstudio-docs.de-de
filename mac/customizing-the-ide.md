@@ -1,17 +1,17 @@
 ---
 title: Anpassen der IDE
 description: Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. In diesem Artikel werden die verschiedenen Arten erläutert, auf die Sie Visual Studio für Mac Ihren Bedürfnissen anpassen können.
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306680"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801775"
 ---
 # <a name="customizing-the-ide"></a>Anpassen der IDE
 
