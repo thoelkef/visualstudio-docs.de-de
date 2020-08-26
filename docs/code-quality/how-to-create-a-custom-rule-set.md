@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801034"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893267"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -26,9 +26,9 @@ Sie können einen benutzerdefinierten Regelsatz erstellen, um bestimmte Projekta
 
 Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integrierten Regelsatz im **Regelsatz-Editor**öffnen. Von dort aus können Sie bestimmte Regeln hinzufügen oder entfernen, und Sie können die Aktion ändern, die auftritt, wenn eine Regel verletzt wird &mdash; , z. b. eine Warnung oder einen Fehler.
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus, halten Sie es (oder klicken Sie mit der rechten Maustaste darauf), und wählen Sie dann **Eigenschaften**
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
 
-2. Wechseln Sie auf den **Eigenschaften** Seiten zur Registerkarte **Code Analyse** .
+2. Wählen Sie auf den **Eigenschaften** Seiten die Registerkarte **Code Analyse** aus.
 
 ::: moniker range="vs-2017"
 
@@ -61,7 +61,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 2. Wählen Sie im Dialogfeld **neue Datei** auf der linken Seite die Kategorie **Allgemein** aus, und wählen Sie dann **Code Analyse-Regelsatz**aus.
 
-3. Wählen Sie **Open**(Öffnen).
+3. Wähle **Öffnen** aus.
 
    Die neue *RuleSet* -Datei wird im Regelsatz-Editor geöffnet.
 
@@ -70,9 +70,9 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 > [!NOTE]
 > Das folgende Verfahren gilt nicht für .net Core-Projekte, die nicht über eine Registerkarte für die **Code Analyse** Eigenschaft verfügen.
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus, halten Sie es (oder klicken Sie mit der rechten Maustaste darauf), und wählen Sie dann **Eigenschaften**
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
 
-2. Wechseln Sie auf den **Eigenschaften** Seiten zur Registerkarte **Code Analyse** .
+2. Wählen Sie auf den **Eigenschaften** Seiten die Registerkarte **Code Analyse** aus.
 
 ::: moniker range="vs-2017"
 
@@ -98,7 +98,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 ## <a name="rule-precedence"></a>Rangfolge der Regeln
 
-- Wenn dieselbe Regel mindestens zwei Mal in einem Regelsatz mit unterschiedlichen Schweregraden aufgeführt ist, generiert der Compiler einen Fehler. Zum Beispiel:
+- Wenn dieselbe Regel mindestens zwei Mal in einem Regelsatz mit unterschiedlichen Schweregraden aufgeführt ist, generiert der Compiler einen Fehler. Beispiel:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
    **CA0063: Fehler beim Laden der Regel Satz Datei " \[ your]. RuleSet" oder einer der abhängigen Regel Satz Dateien. Die Datei entspricht nicht dem Regel Satz Schema.**
 
-- Wenn der Regelsatz mithilfe eines **include** -Tags einen untergeordneten Regelsatz enthält und die untergeordnete und übergeordnete Regel beide die gleiche Regel, aber unterschiedliche Schweregrade, enthält, hat der Schweregrad im übergeordneten Regelsatz Vorrang. Zum Beispiel:
+- Wenn der Regelsatz mithilfe eines **include** -Tags einen untergeordneten Regelsatz enthält und die untergeordnete und übergeordnete Regel beide die gleiche Regel, aber unterschiedliche Schweregrade, enthält, hat der Schweregrad im übergeordneten Regelsatz Vorrang. Beispiel:
 
    ```xml
    <!-- Parent rule set -->

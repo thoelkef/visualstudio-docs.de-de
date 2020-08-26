@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800956"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893410"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
@@ -72,7 +72,7 @@ Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln aus
 
 ## <a name="calculate-code-metrics-menu-command"></a>Menübefehl "Code Metrik berechnen"
 
-Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE, indem **Sie zum**  >  Menü "**Code Metrik berechnen** " navigieren.
+Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE, indem Sie **Analyze**das  >  Menü**Code Metrik** analysieren verwenden.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generieren von Codemetrikergebnissen für eine gesamte Projekt Mappe
 
@@ -80,7 +80,7 @@ Sie können Code Metrikergebnisse für eine gesamte Lösung auf eine der folgend
 
 - Wählen Sie in der Menüleiste **Analyse**  >  **Code Metrik**für Projekt Mappe berechnen aus  >  **For Solution**.
 
-- Wählen Sie in **Projektmappen-Explorer**die Projekt Mappe aus, wählen Sie Sie aus, und wählen Sie Sie aus, und wählen Sie dann **Codemetriken berechnen**
+- Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Lösung, und wählen Sie dann **Codemetriken berechnen**aus.
 
 - Wählen Sie im Fenster **Code Metrikergebnisse** die Schaltfläche **Code Metrik für Projekt Mappe berechnen aus** .
 

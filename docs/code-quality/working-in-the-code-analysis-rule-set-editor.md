@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801541"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893306"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Verwenden des Regelsatz-Editors für die Code Analyse
 
@@ -23,7 +23,7 @@ Mit dem Regelsatz-Editor für die Code Analyse können Sie die Regeln angeben, d
 
 In der folgenden Tabelle werden die Schweregrad Optionen angezeigt:
 
-|Aktion (Schweregrad)|Beschreibung|
+|Aktion (Schweregrad)|BESCHREIBUNG|
 |-|-|
 |Warnung|Generiert eine Warnung in der **Fehlerliste** und auch zur Buildzeit.|
 |Fehler|Generiert einen Fehler in der **Fehlerliste** und auch zur Buildzeit.|
@@ -38,7 +38,7 @@ Der Editor zeigt die Regeln in einer Baumstruktur an, in der die Regeln nach ein
    > [!TIP]
    > Sie können die Gruppierung von Regeln in der Dropdown- **Gruppe gruppieren nach** ändern.
 
-- Geben Sie im Feld **Aktion** einer Gruppe die Aktion an, die auf alle Regeln in der Gruppe angewendet werden soll.
+- Klicken Sie auf das Feld **Aktion** einer Gruppe, und geben Sie die Aktion an, die auf alle Regeln in der Gruppe angewendet werden soll.
 
 - Aktivieren oder deaktivieren Sie das Kontrollkästchen für eine einzelne Regel. Wenn Sie das Kontrollkästchen für eine Regel aktivieren, wird die Regel auf die **Warnungs** Aktion festgelegt.
 
@@ -48,7 +48,7 @@ Mithilfe der Symbolleiste des Regelsatz-Editors können Sie die Daten gruppieren
 
 In der folgenden Tabelle werden die Steuerelemente auf der Symbolleiste des Regelsatz-Editors beschrieben.
 
-|ToolBar-Steuerelement|Beschreibung|
+|ToolBar-Steuerelement|BESCHREIBUNG|
 |---------------------|-----------------|
 |**Alle erweitern**|Zeigt die Regeln in allen Gruppen an.|
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen aus.|

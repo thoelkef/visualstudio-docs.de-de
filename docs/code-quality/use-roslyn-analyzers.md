@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801606"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893423"
 ---
 # <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
 
@@ -28,11 +28,11 @@ Sie können einen Großteil der Anpassung der Analyzer-Diagnose von **Projektmap
 
 ![Analyzers-Knoten in Projektmappen-Explorer](media/analyzers-expanded-in-solution-explorer.png)
 
-Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, oder wählen Sie Sie aus, und wählen Sie **Eigenschaften**aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + **eingeben**.
+Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Eigenschaften**aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + **Enter**
 
 ![Diagnose Eigenschaften in Eigenschaftenfenster](media/analyzer-diagnostic-properties.png)
 
-Um die Online Dokumentation für eine Diagnose anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagnose, oder wählen Sie Sie aus, und wählen Sie **Hilfe anzeigen**aus.
+Um die Online Dokumentation für eine Diagnose anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagnose und wählen **Hilfe anzeigen**aus.
 
 Die Symbole neben den einzelnen Diagnose in **Projektmappen-Explorer** entsprechen den Symbolen, die im Regelsatz angezeigt werden, wenn Sie Sie im Editor öffnen:
 
@@ -225,7 +225,7 @@ Visual Studio bietet eine bequeme Möglichkeit, den Schweregrad einer Regel im G
 
 Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwere Grads einer Regel im Kontextmenü "Fehlerliste".
 
-1. Wenn eine Verletzung auftritt, klicken Sie mit der rechten Maustaste auf den diagnoseeintrag in der Fehlerliste (oder wählen Sie ihn aus).
+1. Wenn eine Verletzung auftritt, klicken Sie mit der rechten Maustaste auf den diagnoseeintrag in der Fehlerliste.
 
 2. Wählen Sie im Kontextmenü die Option **Schweregrad festlegen**aus.
 
@@ -242,12 +242,12 @@ Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwer
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen des schwere Grads der Regel Projektmappen-Explorer
 
-1. Wählen Sie in Projektmappen-Explorer **Verweise**-  >  **Analyzers** (oder **Abhängigkeits**  >  **Analyse** Tools für .net Core-Projekte) aus.
+1. Erweitern Sie in Projektmappen-Explorer **Verweise**-  >  **Analyzers** (oder **Abhängigkeits**  >  **Analyse** Tools für .net Core-Projekte).
 
 2. Erweitern Sie die Assembly, die die Regel enthält, für die Sie den Schweregrad festlegen möchten.
 
 ::: moniker range=">=vs-2019"
-3. Klicken Sie mit der rechten Maustaste (oder wählen Sie die Regel aus), und wählen Sie **Schweregrad festlegen**aus. Wählen Sie im Kontextmenü eine der Optionen für den Schweregrad aus.
+3. Klicken Sie mit der rechten Maustaste auf die Regel und wählen Sie **Schweregrad festlegen** Wählen Sie im Kontextmenü eine der Optionen für den Schweregrad aus.
 
    Visual Studio fügt der Datei Editor config einen Eintrag hinzu, um die Regel auf der angeforderten Ebene zu konfigurieren. Wenn das Projekt eine RuleSet-Datei anstelle einer Editor config-Datei verwendet, wird der Eintrag für den Schweregrad der RuleSet-Datei hinzugefügt.
 
@@ -256,7 +256,7 @@ Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwer
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. Klicken Sie mit der rechten Maustaste auf die Regel, oder wählen Sie Sie aus, und wählen Sie **Regelsatz Schweregrad festlegen**. Wählen Sie im Kontextmenü eine der Optionen für den Schweregrad aus.
+3. Klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Regelsatz Schweregrad festlegen** Wählen Sie im Kontextmenü eine der Optionen für den Schweregrad aus.
 
    Der Schweregrad für die Regel wird in der aktiven Regel Satz Datei gespeichert.
 ::: moniker-end
@@ -267,7 +267,7 @@ Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwer
 
 1. Öffnen Sie die aktive Regel Satz Datei mit einer der folgenden Methoden:
 
-- Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei, klicken Sie mit der rechten Maustaste auf (oder wählen Sie aus) **verweist**auf den  >  Knoten**Analyzers** , und wählen Sie **aktiven Regelsatz öffnen**aus.
+- Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei, klicken Sie mit der rechten Maustaste auf **Verweise**-  >  **Analyzers** -Knoten, und wählen Sie **aktiven Regelsatz öffnen**aus.
 - Wählen Sie auf der Eigenschaften Seite **Code Analyse** für das Projekt die Option **Öffnen** aus.
 
   Wenn Sie den Regelsatz zum ersten Mal bearbeiten, erstellt Visual Studio eine Kopie der standardmäßigen Regel Satz Datei, benennt Sie " * \<projectname> . RuleSet*" und fügt Sie dem Projekt hinzu. Dieser benutzerdefinierte Regelsatz wird auch zum aktiven Regelsatz für Ihr Projekt.
@@ -336,13 +336,13 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 - Im **Code-Editor**
 
-  Platzieren Sie den Cursor in der Codezeile, und wählen Sie **STRG**- + **Zeit (.)** aus, um das Menü **schnell Aktionen** zu öffnen. Wählen Sie **CAXXXX**  >  **in Quelle/in Unterdrückungs Datei unter**drücken.
+  Platzieren Sie den Cursor in der Codezeile mit der Verletzung, und drücken Sie die **STRG**- + Taste **(.)** , um das Menü **schnell Aktionen** zu öffnen. Wählen Sie **CAXXXX**  >  **in Quelle/in Unterdrückungs Datei unter**drücken.
 
   ![Diagnose über das Menü "schnelle Aktionen" unterdrücken](media/suppress-diagnostic-from-editor.png)
 
 - Aus der **Fehlerliste**
 
-  Wählen Sie die zu unterdrückenden Regeln aus, und klicken Sie dann mit der rechten Maustaste auf (oder **Suppress**wählen Sie aus, und wählen Sie Sie aus), und wählen Sie  >  **in Quelle unter**drücken
+  Wählen Sie die zu unterdrückenden Regeln aus, und klicken Sie dann mit **Suppress**der rechten Maustaste, und wählen Sie  >  **in Quelle unterdrücken/in Unterdrückungs Datei**.
 
   - Wenn Sie **in Quelle**unterdrücken, wird das Dialogfeld **Vorschau der Änderungen** geöffnet, in dem eine Vorschau der c#- [#pragma Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warning](/dotnet/visual-basic/language-reference/directives/directives) -Direktive angezeigt wird, die dem Quellcode hinzugefügt wird.
 
