@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520587"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801645"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
@@ -95,8 +95,8 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 ::: moniker-end
 
 - [Zusammenarbeiten mithilfe von Visual Studio](/visualstudio/liveshare/)
-  
-    Visual Studio Live Share ermöglicht Ihnen eine Zusammenarbeit in Echtzeit, um gemeinsam mit anderen Benutzern Projekte zu bearbeiten und zu debuggen – unabhängig von den verwendeten Programmiersprachen oder den erstellten App-Typen. 
+
+    Visual Studio Live Share ermöglicht Ihnen eine Zusammenarbeit in Echtzeit, um gemeinsam mit anderen Benutzern Projekte zu bearbeiten und zu debuggen – unabhängig von den verwendeten Programmiersprachen oder den erstellten App-Typen.
 
 - [Interaktive Python-REPL](python-interactive-repl-in-visual-studio.md)
 
