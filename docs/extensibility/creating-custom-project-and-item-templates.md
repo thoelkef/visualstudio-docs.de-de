@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248576"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801255"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt- und Elementvorlagen
 
@@ -72,7 +72,7 @@ Bei der Erstellung einfacher Vorlagen sollten Sie den Assistenten **Vorlage expo
 
 1. Erstellen eines VSIX-Projekts Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
 
-2. Legen Sie das VSIX-Projekt als Startprojekt fest. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den VSIX-Projektknoten (oder halten Sie die linke Maustaste gedrückt), und wählen Sie **Als Startprojekt festlegen** aus.
+2. Legen Sie das VSIX-Projekt als Startprojekt fest. Klicken Sie im **Projektmappen-Explorer** auf den VSIX-Projektknoten, klicken Sie mit der rechten Maustaste, und wählen Sie **Als Startprojekt festlegen** aus.
 
 3. Legen Sie das Projektvorlagenprojekt als Objekt des VSIX-Projekts fest. Öffnen Sie die *VSIXMANIFEST*-Datei. Wechseln Sie zur Registerkarte **Objekte**, und klicken Sie auf **Neu**.
 
