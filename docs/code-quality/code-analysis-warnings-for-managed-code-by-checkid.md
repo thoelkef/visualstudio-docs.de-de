@@ -295,12 +295,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091485"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176064"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
 
@@ -577,6 +577,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA2245 | [CA2245: Keine Zuweisung einer Eigenschaft zu sich selbst](../code-quality/ca2245.md) | Eine Eigenschaft wurde versehentlich selbst zugewiesen. |
 | CA2246 | [CA2246: Keine Zuweisung eines Symbols und seines Members in der gleichen Anweisung](../code-quality/ca2246.md) | Es wird nicht empfohlen, ein Symbol und dessen Member, d. h. ein Feld oder eine Eigenschaft, in derselben Anweisung zuzuweisen. Es ist nicht klar, ob der Element Zugriff dazu gedacht war, den alten Wert des Symbols vor der Zuweisung oder den neuen Wert aus der Zuweisung in dieser Anweisung zu verwenden. |
 | CA2247 | [CA2247: das Argument, das an den TaskCompletionSource-Konstruktor übergeben wurde, sollte eine taskupationoptions-Enumeration anstelle der TaskContinuationOptions-Enumeration sein.](../code-quality/ca2247.md) | TaskCompletionSource verfügt über Konstruktoren, die taskkreationoptions verwenden, die die zugrunde liegende Aufgabe steuern, und Konstruktoren, die den Objektzustand annehmen, der in der Aufgabe gespeichert ist.  Das versehentliche übergeben von TaskContinuationOptions anstelle von taskkreationoptions führt dazu, dass der Aufruf die Optionen als Zustand behandelt. |
+| CA2249 | [CA2249: CA2249: Verwenden Sie "String. enthält" anstelle von "String. IndexOf".](../code-quality/ca2249.md) | Aufrufe `string.IndexOf` von, bei denen das Ergebnis verwendet wird, um zu überprüfen, ob eine Teil Zeichenfolge vorhanden oder nicht vorhanden ist, können durch ersetzt werden `string.Contains` . |
 | CA5122 | [CA5122 P/Aufruf Deklarationen sollten nicht sicher kritisch sein](../code-quality/ca5122.md) | Methoden werden als SecuritySafeCritical markiert, wenn sie einen sicherheitsrelevanten Vorgang ausführen. Sie können jedoch auch mit transparentem Code verwendet werden. Transparenter Code ruft systemeigenen Code möglicherweise nie direkt mit P/Invoke auf. Wenn daher P/Invoke als sicherungskritisch markiert wird, kann es nicht von transparentem Code aufgerufen werden, was bei der Sicherheitsanalyse irreführend ist. |
 | CA5359 | [CA5359 die Zertifikats Überprüfung nicht deaktivieren](../code-quality/ca5359.md) | Ein Zertifikat kann bei der Authentifizierung der Identität des Servers helfen. Clients sollten das Serverzertifikat überprüfen, um sicherzustellen, dass Anforderungen an den vorgesehenen Server gesendet werden. Wenn servercertifikatevalidationcallback immer zurück `true` gegeben wird, übergibt jedes Zertifikat die Validierung. |
 | CA5360 | [CA5360 keine gefährlichen Methoden bei der Deserialisierung aufzurufen](../code-quality/ca5360.md) | Unsichere Deserialisierung ist ein Sicherheitsrisiko, das auftritt, wenn nicht vertrauenswürdige Daten verwendet werden, um die Logik einer Anwendung zu missbrauchen, einen Denial-of-Service-Angriff (DOS) zu verursachen oder sogar beliebigen Code auszuführen, wenn Sie deserialisiert werden. Es ist oft möglich, dass böswillige Benutzer diese deserialisierungsfeatures missbrauchen, wenn die Anwendung nicht vertrauenswürdige Daten deserialisiert, die unter ihrer Kontrolle liegen. Rufen Sie insbesondere gefährliche Methoden im Prozess der Deserialisierung auf. Erfolgreiche unsichere deserialisierungsangriffe können einem Angreifer ermöglichen, Angriffe wie DOS-Angriffe, Authentifizierungs Umgehungen und Remote Codeausführung auszuführen. |
