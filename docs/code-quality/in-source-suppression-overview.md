@@ -1,12 +1,12 @@
 ---
-title: Code Analyse Warnungen unterdrücken
-ms.date: 12/01/2018
+title: Verletzungen der Code Analyse unterdrücken
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893371"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091437"
 ---
-# <a name="suppress-code-analysis-warnings"></a>Code Analyse Warnungen unterdrücken
+# <a name="suppress-code-analysis-violations"></a>Verletzungen der Code Analyse unterdrücken
 
 Häufig ist es hilfreich, anzugeben, dass eine Warnung nicht anwendbar ist. Dies weist Teammitgliedern an, dass der Code überprüft wurde und dass die Warnung unterdrückt werden kann. In-Source-Unterdrückung (ISS) verwendet das- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut, um eine Warnung zu unterdrücken. Das-Attribut kann in der Nähe des Code Segments platziert werden, das die Warnung generiert hat. Sie können das- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut zur Quelldatei hinzufügen, indem Sie es eingeben, oder Sie können das Kontextmenü für eine Warnung im **Fehlerliste** verwenden, um es automatisch hinzuzufügen.
 

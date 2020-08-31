@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 06/03/2020
-  ms.openlocfilehash: 4f522f6613424c3251344207381d2eaf31705c9c
-  ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+  ms.openlocfilehash: 3509706045ecb8736a1d14faced352a85147c8f8
+  ms.sourcegitcommit: 5823b184bf47fbedaca40e32ca0b3f640a643cd0
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/23/2020
-  ms.locfileid: "85289117"
+  ms.lasthandoff: 08/28/2020
+  ms.locfileid: "89053415"
 landingContent:
 - title: Erste Schritte
   linkLists:
@@ -54,10 +54,10 @@ landingContent:
       url: memory-usage-without-debugging2.md
     - text: Nachverfolgung der .NET-Objektzuordnung
       url: dotnet-alloc-tool.md
-    - text: GPU-Auslastung (Direct3D)
-      url: gpu-usage.md
     - text: .NET Async
       url: analyze-async.md
+    - text: GPU-Auslastung (Direct3D)
+      url: gpu-usage.md
     - text: Analysieren des Ressourcenverbrauchs (XAML)
       url: application-timeline.md
 - title: Führungslinien

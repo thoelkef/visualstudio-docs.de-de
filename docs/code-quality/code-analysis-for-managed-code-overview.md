@@ -1,24 +1,22 @@
 ---
 title: Codeanalyse für verwalteten Code
-ms.date: 06/12/2019
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6515c0df7a9c3389e754d5238788d716be49e2e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d13a8afdfcbeb6ae9f91e39779af8b82b2461000
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800085"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091399"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die Code Analyse für verwalteten Code in Visual Studio
+# <a name="overview-of-code-analysis-for-net-in-visual-studio"></a>Übersicht über die Code Analyse für .net in Visual Studio
 
-Visual Studio kann eine Code Analyse von verwaltetem Code auf zwei Arten durchführen:
-- Mit der [Legacy Analyse](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), auch als "FxCop Static Analysis of Managed Assemblys" bezeichnet.
-- Mit den moderneren [.NET Compiler Platform basierten Code Analysen](../code-quality/roslyn-analyzers-overview.md). .NET Compiler Platform basierten Code Analysen, die Ihren Code während der durch zugabeart analysieren, ersetzen Sie die statische Code Analyse der veralteten FxCop-Code, die nur kompilierten Code analysiert.
+Visual Studio kann eine Code Analyse von verwaltetem Code auf zweierlei Weise durchführen: mit [Legacy Analyse](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), auch als "FxCop Static Analysis of Managed Assemblys" bezeichnet, und mit den moderneren [.NET Compiler Platform basierten Code](../code-quality/roslyn-analyzers-overview.md)Analysemodulen. .NET Compiler Platform basierten Code Analysen, die Ihren Code während der durch zugabeart analysieren, ersetzen Sie die statische Code Analyse der veralteten FxCop-Code, die nur kompilierten Code analysiert.
