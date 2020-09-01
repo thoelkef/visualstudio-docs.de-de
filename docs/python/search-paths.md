@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520379"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801164"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Verwenden von Python-Suchpfaden in Visual Studio
 
@@ -29,7 +29,7 @@ Die Umgebungsvariable für den Suchpfad wird von Visual Studio jedoch ignoriert,
 
 Visual Studio bietet daher eine Möglichkeit, Suchpfade direkt in Umgebungen und Projekten anzugeben. Suchpfade werden als Wert von `PYTHONPATH` (oder anderen entsprechenden Variablen) beim Debuggen oder Ausführen des Skripts in Visual Studio übergeben. Durch das Hinzufügen von Suchpfaden überprüft Visual Studio die Bibliotheken an diesen Speicherorten und erstellt ggf. entsprechende IntelliSense-Datenbanken für sie (Visual Studio 2017 Version 15.5 und früher; das Erstellen der Datenbank kann je nach Anzahl der Bibliotheken einige Zeit in Anspruch nehmen).
 
-Wenn Sie einen Suchpfad hinzufügen möchten, wechseln Sie zum **Projektmappen-Explorer**, erweitern Sie Ihren Projektknoten, klicken Sie mit der rechten Maustaste auf **Suchpfade**, und wählen Sie **Add Folder to Search Path** (Ordner zu Suchpfad hinzufügen) aus:
+Wenn Sie einen Suchpfad hinzufügen möchten, wechseln Sie zum **Projektmappen-Explorer**, erweitern Sie Ihren Projektknoten, klicken Sie mit der rechten Maustaste auf **Suchpfade**, und wählen Sie **Ordner zu Suchpfad hinzufügen** aus:
 
 ::: moniker range="vs-2017"
 ![Befehl zum Hinzufügen eines Ordners zum Suchpfad in Suchpfaden im Projektmappen-Explorer](media/search-paths-command.png)

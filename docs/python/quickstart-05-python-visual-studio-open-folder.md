@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431096"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801671"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner
 
@@ -77,7 +77,7 @@ In diesem Fall müssen Sie der JSON-Datei mit der Startkonfiguration außerdem e
     ![Befehl „Einstellungen für Debuggen und Starten“ für eine Python-Datei](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > Wenn **Standard** nicht zur Auswahl zur Verfügung steht, vergewissern Sie sich, dass Sie mit der rechten Maustaste auf eine Python-Datei ( *.py*) geklickt haben, als Sie den Befehl **Einstellungen für Debuggen und Starten** ausgewählt haben. Visual Studio bestimmt anhand des Dateityps, welche Debuggeroptionen angezeigt werden.
+    > Wenn **Standard** nicht zur Auswahl zur Verfügung steht, vergewissern Sie sich, dass Sie eine Python-Datei ( *.py*) ausgewählt haben, als Sie den Befehl **Einstellungen für Debuggen und Starten** ausgewählt haben. Visual Studio bestimmt anhand des Dateityps, welche Debuggeroptionen angezeigt werden.
 
 1. Visual Studio öffnet eine Datei namens *launch.vs.json*, die sich im ausgeblendeten Ordner *.vs* befindet. Diese Datei beschreibt den Debugkontext für das Projekt. Fügen Sie zum Angeben eines Arbeitsverzeichnisses einen Wert für `"workingDirectory"` hinzu, wie in `"workingDirectory": "python3"` im folgenden Beispiel für „python-koans“:
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63000512"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801177"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Erste Schritte mit R Tools für Visual Studio
 
@@ -137,7 +137,7 @@ Eine der größten Stärken von Visual Studio ist die Debugger-Benutzeroberfläc
 
 1. Wenn Sie starten möchten, setzen Sie den aktuellen Arbeitsbereich zurück, um alles, was Sie bisher gemacht haben, zu löschen. Hierzu verwenden Sie den Menübefehl **R Tools** > **Sitzung** > **Zurücksetzen**. Standardmäßig wird alles, was Sie im interaktiven Fenster tun, in die aktuelle Sitzung übertragen, die dann auch vom Debugger verwendet wird. Durch das Zurücksetzen der Sitzung stellen Sie sicher, dass die Debugsitzung ohne bereits vorhandene Daten beginnt. Der Befehl **Zurücksetzen** beeinträchtigt jedoch nicht die Quelldatei *script.R*, da diese außerhalb des Arbeitsbereichs verwaltet und gespeichert wird.
 
-1. Mit der im vorherigen Abschnitt erstellten Datei *script.R* legen Sie einen Breakpoint auf der Zeile fest, die mit `pop <-` beginnt, indem Sie das Caretzeichen auf dieser Zeile platzieren und **F9** drücken. Alternativ können Sie auch den Menübefehl **Debuggen** > **Toggle Breakpoint** (Breakpoint umschalten) auswählen. Alternativ können Sie einfach in den linken Rand (oder den Bundsteg) für diese Zeile klicken, wo der rote Punkt erscheint, der den Haltepunkt anzeigt:
+1. Mit der im vorherigen Abschnitt erstellten Datei *script.R* legen Sie einen Breakpoint auf der Zeile fest, die mit `pop <-` beginnt, indem Sie das Caretzeichen auf dieser Zeile platzieren und **F9** drücken. Alternativ können Sie auch den Menübefehl **Debuggen** > **Toggle Breakpoint** (Breakpoint umschalten) auswählen. Alternativ können Sie auf den linken Rand (oder den Bundsteg) für diese Zeile klicken, wo sich der rote Punkt befindet, der den Haltepunkt anzeigt:
 
     ![Festlegen eines Haltepunkts im Editor](media/getting-started-11-debug1.png)
 

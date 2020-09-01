@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027331"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711663"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Erstellen einer App mit mehreren Containern mit Docker Compose
 
@@ -55,7 +55,7 @@ Klicken Sie nicht auf **Docker-Unterstützung aktivieren**. Die Docker-Unterstü
 
 ## <a name="create-a-web-api-project"></a>Erstellen eines Web-API-Projekts
 
-Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWebAPI*. Wählen Sie **API** als Projekttyp aus, und deaktivieren Sie das Kontrollkästchen **Für HTTPS konfigurieren**. Bei diesem Entwurf wird SSL nur für die Kommunikation mit dem Client verwendet und nicht für die Kommunikation zwischen Containern in derselben Webanwendung. Nur `WebFrontEnd` erfordert HTTPS und der Code in den Beispielen geht davon aus, dass Sie dieses Kontrollkästchen deaktiviert haben.
+Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWebAPI*. Wählen Sie **API** als Projekttyp aus, und deaktivieren Sie das Kontrollkästchen **Für HTTPS konfigurieren**. Bei diesem Entwurf wird SSL nur für die Kommunikation mit dem Client verwendet und nicht für die Kommunikation zwischen Containern in derselben Webanwendung. Nur `WebFrontEnd` erfordert HTTPS und der Code in den Beispielen geht davon aus, dass Sie dieses Kontrollkästchen deaktiviert haben. Im Allgemeinen werden die von Visual Studio verwendeten .NET-Entwicklerzertifikate nur für externe Anforderungen an Container unterstützt, nicht für Anforderungen zwischen Containern.
 
 ::: moniker range="vs-2017"
    ![Screenshot: Erstellen des Web-API-Projekts](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -192,7 +192,7 @@ Fügen Sie ein Projekt zur gleichen Projektmappe hinzu, und nennen Sie es *MyWeb
 
 Sehen Sie sich die Optionen zum Bereitstellen Ihrer [Container in Azure](/azure/containers) an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Containertools](/visualstudio/containers/)

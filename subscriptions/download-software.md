@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Informationen zum Suchen und Herunterladen von Microsoft-Softwaretiteln in Visual Studio-Abonnements
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248229"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801827"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Herunterladen von Softwaretiteln in Visual Studio-Abonnements
 Je nachdem, über welches Visual Studio-Abonnement Sie verfügen, können Sie auf eine Vielzahl von Softwaretiteln zurückgreifen.  In diesem Artikel wird erläutert, wie Sie die benötigte Software suchen und finden, um Ihr Abonnement optimal zu nutzen. 
@@ -22,7 +22,7 @@ Nur die Downloads, die in Ihrem Abonnement enthalten sind, werden auf der Seite 
 Wenn Ihr Abonnement von Ihrem Unternehmen oder Ihrer Schule/Universität bereitgestellt wird, steuert Ihr Abonnementadministrator, ob Sie Zugriff auf Downloads haben. Durch das Deaktivieren des Zugriffs auf Downloads wird auch der Zugriff auf Product Keys deaktiviert. Wenn Sie keinen Zugriff auf Downloads und Product Keys haben, jedoch Zugriff benötigen, [wenden Sie sich an Ihren Administrator](contact-my-admin.md).
 
 > [!NOTE]
-> Ein Problem mit der Verfügbarkeit von Office 365-Product Keys ist bekannt.  Die Ursache wird derzeit untersucht. Dieser Artikel wird aktualisiert, sobald das Problem behoben wurde. 
+> Ein Problem mit der Verfügbarkeit von Microsoft 365-Product Keys ist bekannt.  Die Ursache wird derzeit untersucht. Dieser Artikel wird aktualisiert, sobald das Problem behoben wurde. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Downloads im Abonnentenportal
 Wenn Sie die Seite [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) aufrufen, werden Ihnen beliebte Downloads angezeigt, die nach Produkttyp in Gruppen angeordnet sind.  Sie können einen der angezeigten beliebten Downloads auswählen oder nach einem beliebigen Produkt über die Suchleiste im oberen Bereich der Seite suchen.

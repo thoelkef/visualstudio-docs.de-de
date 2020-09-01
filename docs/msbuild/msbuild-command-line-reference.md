@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2074c4f15daf6a5ee5986a473ad98d7868409a3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a393afa3346b42786ff352dc0c2d48ea6c8b1152
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289260"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639379"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild-Befehlszeilenreferenz
 
@@ -47,7 +47,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |Schalter|Kurzform|Beschreibung|
 |------------|----------------|-----------------|
 |-detailedSummary|-ds|Zeigt am Ende des Buildprotokolls ausführliche Informationen zu den erstellten Konfigurationen und deren Planung in Knoten an.|
-|-graphBuild[:`True` oder `False`]|-graph[:`True` oder `False`]|Führt dazu, dass MSBuild einen Projektgraph konstruiert und erstellt. Das Konstruieren eines Graphs beinhaltet das Identifizieren der Projektverweise, um Abhängigkeiten zu erstellen. Das Erstellen dieses Graphs beinhaltet den Versuch, Projektverweise vor den Projekten zu erstellen, die die Verweise enthalten. Dieses Vorgehen unterscheidet sich vom herkömmlichen MSBuild-Vorgehen.|
+|-graphBuild[:`True` oder `False`]|-graph[:`True` oder `False`]|Führt dazu, dass MSBuild einen Projektgraph konstruiert und erstellt. Das Konstruieren eines Graphs beinhaltet das Identifizieren der Projektverweise, um Abhängigkeiten zu erstellen. Das Erstellen dieses Graphs beinhaltet den Versuch, Projektverweise vor den Projekten zu erstellen, die die Verweise enthalten. Dieses Vorgehen unterscheidet sich vom herkömmlichen MSBuild-Vorgehen. Erfordert MSBuild 16 oder höher.|
 |-help|/? oder -h|Zeigt Nutzungsinformationen an. Der folgende Befehl ist ein Beispiel:<br /><br /> `msbuild.exe -?`|
 |-ignoreProjectExtensions: `extensions`|-ignore: `extensions`|Ignoriert beim Bestimmen der zu erstellenden Projektdatei die angegebenen Erweiterungen. Mehrere Erweiterungen werden mit einem Semikolon oder einem Komma getrennt, wie im folgenden Beispiel gezeigt:<br /><br /> `-ignoreprojectextensions:.vcproj,.sln`|
 |-interactive[:`True` oder `False`]|-|Gibt an, dass Aktionen im Build mit dem Benutzer interagieren dürfen.  Verwenden Sie dieses Argument nicht in einem automatisierten Szenario, in dem keine Interaktivität erwartet wird. Das Angeben von -interactive ist identisch mit dem Angeben von -interactive:true.  Verwenden Sie den Parameter, um einen Wert zu überschreiben, der aus einer Antwortdatei stammt.

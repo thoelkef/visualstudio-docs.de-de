@@ -7,17 +7,17 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Hier erfahren Sie mehr über Microsoft 365-Apps for Enterprise und die Installation.
-ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250741"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800813"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365-Apps for Enterprise in Visual Studio-Abonnements
 Microsoft 365-Apps for Enterprise (ehemals Office 365 Pro Plus) ist in ausgewählten Visual Studio-Abonnements verfügbar. 
 
-Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 Pro Plus ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
+Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Microsoft 365 Apps for Enterprise ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
 
 > [!NOTE]
 > Wenn sie in Ihrem Visual Studio-Abonnement enthalten sind, verfügen Sie über die Lizenz, um Microsoft 365-Apps for Enterprise zu Produktionszwecken zu verwenden.  

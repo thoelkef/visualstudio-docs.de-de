@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535147"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801580"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) stellt eine grafische Benutzeroberfläche bereit, auf der Sie Vorlagen ermitteln, Vorlageoptionen eingeben und Projekte und Dateien erstellen können. Die Erweiterung ist im Lieferumfang von Visual Studio 2017 und höher enthalten und kann separat in früheren Versionen von Visual Studio installiert werden.
 
-Cookiecutter erfordert Python 3.3 oder höher (32-Bit oder 64-Bit) oder Anaconda 3 4.2 oder höher (32-Bit oder 64 Bit). Wenn kein geeigneter Python-Interpreter verfügbar ist, zeigt Visual Studio eine Warnung an. Wenn Sie einen Python-Interpreter installieren, während Visual Studio ausgeführt wird, klicken Sie auf der Symbolleiste von Cookiecutter auf die **Startschaltfläche**, um den neu installierten Interpreter zu erkennen. (Unter [Python-Umgebungen](managing-python-environments-in-visual-studio.md) finden Sie Informationen zu Umgebungen im Allgemeinen.)
+Cookiecutter erfordert Python 3.3 oder höher (32-Bit oder 64-Bit) oder Anaconda 3 4.2 oder höher (32-Bit oder 64 Bit). Wenn kein geeigneter Python-Interpreter verfügbar ist, zeigt Visual Studio eine Warnung an. Wenn Sie einen Python-Interpreter installieren, während Visual Studio ausgeführt wird, wählen Sie auf der Symbolleiste von Cookiecutter die **Startschaltfläche** aus, um den neu installierten Interpreter zu erkennen. (Unter [Python-Umgebungen](managing-python-environments-in-visual-studio.md) finden Sie Informationen zu Umgebungen im Allgemeinen.)
 
 Wählen Sie nach der Installation **Ansicht** > **Cookiecutter-Explorer** aus, um das Fenster von Cookiecutter zu öffnen:
 
@@ -99,7 +99,7 @@ Dieses Rendering kann verbessert werden, indem Sie zusätzliche Metadaten in Ihr
 | --- | --- |
 | Bezeichnung | Gibt an, was statt des Variablennamens über dem Editor für die Variable angezeigt werden soll. |
 | Beschreibung | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
-| URL | Ändert die Bezeichnung in einen Hyperlink mit einer QuickInfo, in der die URL angezeigt wird. Durch Klicken auf den Hyperlink wird diese URL im Standardbrowser des Benutzers geöffnet. |
+| URL | Ändert die Bezeichnung in einen Hyperlink mit einer QuickInfo, in der die URL angezeigt wird. Durch Auswählen des Hyperlinks wird diese URL im Standardbrowser des Benutzers geöffnet. |
 | Auswahl | Ermöglicht die Anpassung des Editors für eine Variable. Folgende Auswahlmöglichkeiten werden zurzeit unterstützt:<ul><li>`string`: Standardtextfeld, standardmäßig für Zeichenfolgen.</li><li>`list`: Standardkombinationsfeld, standardmäßig für Listen.</li><li>`yesno`: Kombinationsfeld zur Auswahl zwischen `y` und `n`, für Zeichenfolgen.</li><li>`odbcConnection`: Textfeld mit einer **...** -Schaltfläche, die ein Dialogfeld für eine Datenbankverbindung öffnet.</li></ul> |
 
 Beispiel:

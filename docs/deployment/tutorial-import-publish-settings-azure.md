@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183313"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801710"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in Azure App Service durch Importieren von Veröffentlichungseinstellungen in Visual Studio
 
@@ -57,15 +57,15 @@ Eine Veröffentlichungseinstellungsdatei ( *\*.publishsettings*) unterscheidet s
 
 1. Erstellen Sie ein neues Projekt auf dem Computer, auf dem Visual Studio ausgeführt wird.
 
-    Wählen Sie die richtige Vorlage aus. Wählen Sie für dieses Beispiel entweder **ASP.NET-Webanwendung (.NET Framework)** oder **ASP.NET Core-Webanwendung** (nur für C#) aus, und klicken Sie anschließend auf **OK**.
+    Wählen Sie die richtige Vorlage aus. Wählen Sie für dieses Beispiel entweder **ASP.NET-Webanwendung (.NET Framework)** oder **ASP.NET Core-Webanwendung** (nur für C#) aus, und wählen Sie anschließend **OK** aus.
 
-    Wenn Ihnen die angegebenen Projektvorlagen nicht angezeigt werden, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Installieren Sie die Workload **ASP.NET und Webentwicklung**.
+    Wenn Ihnen die angegebenen Projektvorlagen nicht angezeigt werden, navigieren Sie im linken Bereich des Dialogfelds **Neues Projekt** zum Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Installieren Sie die Workload **ASP.NET und Webentwicklung**.
 
     Die ausgewählte Projektvorlage (ASP.NET oder ASP.NET Core) muss der ASP.NET-Version entsprechen, die auf dem Webserver installiert ist.
 
-1. Wählen Sie entweder **MVC** (für .NET Framework) oder **Webanwendung (Model-View-Controller)** (für .NET Core) aus, und stellen Sie sicher, dass **Keine Authentifizierung** ausgewählt ist, klicken Sie anschließend auf **OK**.
+1. Wählen Sie entweder **MVC** (für .NET Framework) oder **Webanwendung (Model-View-Controller)** (für .NET Core) aus, und stellen Sie sicher, dass **Keine Authentifizierung** ausgewählt ist. Wählen Sie anschließend **OK** aus.
 
-1. Geben Sie einen Namen wie **MyWebApp** ein, und klicken Sie auf **OK**.
+1. Geben Sie einen Namen wie **MyWebApp** ein, und wählen Sie **OK** aus.
 
     Visual Studio erstellt daraufhin das Projekt.
 
@@ -75,7 +75,7 @@ Eine Veröffentlichungseinstellungsdatei ( *\*.publishsettings*) unterscheidet s
 
 1. Öffnen Sie Azure App Service im Azure-Portal.
 
-1. Klicken Sie auf **Veröffentlichungsprofil abrufen**, und speichern Sie das Profil lokal.
+1. Gehen Sie zu **Veröffentlichungsprofil abrufen**, und speichern Sie das Profil lokal.
 
     ![Abrufen des Veröffentlichungsprofils](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72986215"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801567"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 
@@ -54,7 +54,7 @@ In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Wählen Sie in der *.py*-Datei nur die Anweisungen `import`, `from` und `make_dot_string` aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **An Interactive senden** aus (oder drücken Sie **STRG**+**EINGABE**). Das Codefragment wird direkt in das **interaktive** Fenster eingefügt und ausgeführt. Da der Code eine Funktion definiert hat, können Sie diese Funktion schnell testen, indem Sie sie mehrmals aufrufen:
+1. Wählen Sie die Funktionsanweisungen `import`, `from` und `make_dot_string` in der *PY*-Datei aus. Klicken Sie mit der rechten Maustaste auf den ausgewählten Text, und wählen Sie **An interaktives Fenster senden** aus (oder drücken Sie **STRG**+**EINGABETASTE**). Das Codefragment wird direkt in das **interaktive** Fenster eingefügt und ausgeführt. Da der Code eine Funktion definiert hat, können Sie diese Funktion schnell testen, indem Sie sie mehrmals aufrufen:
 
     ![Code an das interaktive Fenster senden und diesen testen](media/vs-getting-started-python-14-interactive4.png)
 
@@ -77,7 +77,7 @@ In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable
 
 1. Probieren Sie durch Wiederholen des Vorgangs verschiedene Schritteinstellungen aus, bis Sie den Wert gefunden haben, der für Sie am besten ist. Sie können auch veranlassen, dass die Welle wiederholt wird, indem Sie deren Bereich erweitern, z.B. `range(0, 1800, 12)`.
 
-1. Wenn Sie mit dem Code, den Sie im **interaktiven** Fenster geschrieben haben, zufrieden sind, wählen Sie ihn aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Code kopieren** (**STRG**+**UMSCHALT**+**C**) aus. Fügen Sie ihn anschließend in den Editor ein. Durch diese besondere Funktion werden in Visual Studio sowohl sämtliche Ausgaben als auch die Eingabeaufforderungen `>>>` und `...` automatisch ausgelassen. Die folgende Abbildung zeigt z.B. das Verwenden des **Code kopieren**-Befehls bei einer Auswahl, die Eingabeaufforderungen und Ausgaben enthält:
+1. Wenn Sie zufrieden sind mit dem Code, den Sie im **Interactive-Fenster** geschrieben haben, wählen Sie ihn aus. Klicken Sie dann mit der rechten Maustaste auf den Code, und wählen Sie **Code kopieren** aus (**STRG**+**UMSCHALTTASTE**+**C**). Fügen Sie abschließend den ausgewählten Code in den Editor ein. Durch diese besondere Funktion werden in Visual Studio sowohl sämtliche Ausgaben als auch die Eingabeaufforderungen `>>>` und `...` automatisch ausgelassen. Die folgende Abbildung zeigt z.B. das Verwenden des **Code kopieren**-Befehls bei einer Auswahl, die Eingabeaufforderungen und Ausgaben enthält:
 
     ![Befehl „Code kopieren“ im interaktiven Fenster auf Auswahl mit Eingabeaufforderungen und Ausgaben anwenden](media/vs-getting-started-python-17-interactive7.png)
 

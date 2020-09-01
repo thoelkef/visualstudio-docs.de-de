@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115322"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801073"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in Azure DevOps, die als Vorteil in Ihrem Abonnement enthalten sind. Sie können diese Features in jeder Azure DevOps-Organisation verwenden, bei dem Sie Mitglied sind. Dabei spielt es keine Rolle, ob Sie die Organisation erstellt haben oder von jemandem hinzugefügt wurden.
@@ -23,7 +23,7 @@ Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in 
    > ![Azure DevOps-Kachel](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anmelden, die Sie zur Aktivierung Ihres Visual Studio-Abonnements verwendet haben, oder mit Ihrer [alternativen Identität](vs-alternate-identity.md).  So können Sie auch ein Geschäfts-, Schul- oder Unikonto (das Sie zum Anmelden in Visual Studio, Office 365 oder Ihrem Geschäfts-, Schul- oder Uninetzwerk verwenden) hinzufügen und auf Azure DevOps über Ihr persönliches sowie über Ihr Geschäfts-, Schul- oder Unikonto zugreifen.
+Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anmelden, die Sie zur Aktivierung Ihres Visual Studio-Abonnements verwendet haben, oder mit Ihrer [alternativen Identität](vs-alternate-identity.md).  So können Sie auch ein Geschäfts-, Schul- oder Unikonto (das Sie zum Anmelden in Visual Studio, Microsoft 365 oder bei Ihrem Geschäfts-, Schul- oder Uninetzwerk verwenden) hinzufügen und auf Azure DevOps über Ihr persönliches sowie über Ihr Geschäfts-, Schul- oder Unikonto zugreifen.
 
 [Für eine kostenloses Azure DevOps-Organisation registrieren](https://visualstudio.microsoft.com/team-services/)
 

@@ -1,22 +1,24 @@
 ---
-title: Festlegen des Farbdesigns und der Schriftarten
-ms.date: 03/23/2020
-ms.topic: quickstart
+title: Festlegen des dunklen Visual Studio-Designs und Ändern von Textfarben
+description: Erfahren Sie, wie Sie das Standardfarbdesign von Visual Studio in den dunklen Modus und die Schriftfarben im Code-Editor ändern.
+ms.date: 08/20/2020
+ms.topic: how-to
+ms.custom: contperfq1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233148"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801398"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalisieren der Visual Studio-IDE und des Editors
+# <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Vorgehensweise: Personalisieren von Visual Studio-IDE und Editor
 
-In diesem 5- bis 10-minütigen Tutorial erfahren Sie, wie Sie das Visual Studio-Farbdesign anpassen, indem Sie das Design „Dunkel“ auswählen. Außerdem passen Sie die Farben für zwei verschiedene Texttypen im Text-Editor an.
+In diesem Artikel zur Vorgehensweise wird das standardmäßige blaue Design des Visual Studio-Farbschemas in das dunkle Design geändert. Außerdem passen wir die Farben für zwei verschiedene Texttypen im Code-Editor an.
 
 ::: moniker range="vs-2017"
 
@@ -30,7 +32,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker-end
 
-## <a name="set-the-color-theme"></a>Festlegen des Farbdesigns
+## <a name="set-the-color-theme-for-the-ide"></a>Festlegen des Farbdesigns für die IDE
 
 Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio heißt **Blau**. Ändern Sie es in **Dunkel**.
 
@@ -66,7 +68,7 @@ Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio heißt **B
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>Ändern der Textfarbe
+## <a name="change-text-colors-in-the-editor"></a>Ändern der Textfarben im Editor
 
 Nun passen Sie einige Textfarben für den Editor an. Erstellen Sie zunächst eine XML-Datei, um die Standardfarben anzuzeigen.
 
@@ -124,9 +126,10 @@ Nun passen Sie einige Textfarben für den Editor an. Erstellen Sie zunächst ein
 
    ![XML-Datei mit neuen Schriftfarben](media/quickstart-personalize-xml-file-new-colors.png)
 
-Wir haben nur ein paar Methoden zum Anpassen der Farben in Visual Studio untersucht. Wir hoffen, dass Sie die anderen Anpassungsoptionen im Dialogfeld **Optionen** ebenfalls nutzen, um Visual Studio ganz an Ihre Vorstellungen anzupassen.
+Wir haben nur ein paar Methoden zum Anpassen der Farben in Visual Studio untersucht. Wir hoffen, dass Sie die anderen Anpassungsoptionen im Dialogfeld [**Optionen**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) ebenfalls nutzen, um Visual Studio ganz Ihren Vorstellungen anzupassen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Anpassen des Editors](../ide/how-to-change-text-case-in-the-editor.md)
+- [How to: Ändern von Schriftarten, Farben und Designs in Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Vorgehensweise: Ändern der Groß-/Kleinschreibung von Text im Editor](../ide/how-to-change-text-case-in-the-editor.md)
 - [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)

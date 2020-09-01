@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374168"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801320"
 ---
 # <a name="add-file-header"></a>Hinzufügen von Dateiheadern
 
@@ -34,12 +34,12 @@ Diese Codegenerierung gilt für:
 
 2. Fügen Sie Ihrer EditorConfig-Datei die folgende Regel hinzu: *file_header_template*.
 
-3. Legen Sie den Wert der Regel so fest, dass er dem gewünschten Headertext entspricht.
+3. Legen Sie den Wert der Regel so fest, dass er dem gewünschten Headertext entspricht. Sie können `{fileName}` als Platzhalter für den Dateinamen verwenden.
 
     ![Headerregel in einer EditorConfig-Datei](media/add-file-header-rule.png)
 
-> [!NOTE]
-> In einer EditorConfig-Datei sind mehrere Zeilen explizit nicht möglich, weshalb Sie zum Einfügen neuer Zeilen das UNIX-Zeichen für Zeilenumbrüche verwenden müssen.
+    > [!NOTE]
+    > In einer EditorConfig-Datei sind mehrere Zeilen explizit nicht möglich, weshalb Sie zum Einfügen neuer Zeilen das UNIX-Zeichen für Zeilenumbrüche verwenden müssen.
 
 4. Platzieren Sie die Einfügemarke in der ersten Zeile einer beliebigen C#- oder Visual Basic-Datei.
 
