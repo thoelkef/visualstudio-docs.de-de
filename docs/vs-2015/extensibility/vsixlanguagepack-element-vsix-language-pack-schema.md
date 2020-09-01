@@ -8,12 +8,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd3ed1477d1c4d345e5fc6f6496d12044d4af244
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: e2e1df362fddeab5be98ff90460a8a1a7d4b7876
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114231"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284337"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack-Element (Schema für das VSIX-Sprachpaket)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,65 +36,39 @@ Erforderlich. Stellt das Stamm Element für ein VSIX-Sprachpaket bereit. Das VSI
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
 |`xmlns`|Der XML-Namespace, in dem das VSIX-Sprachpaket Schema definiert ist.|  
   
 ## <a name="xmlns-attribute"></a>xmlns-Attribut  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
 |`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|Erforderlich. Der Speicherort der Datei, die das Schema für Sprachpakete definiert.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |[LocalizedName-Element](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Erforderlich. Der lokalisierte Name der zu installierenden Erweiterung.|  
 |[LocalizedDescription-Element](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Erforderlich. Die lokalisierte Beschreibung der zu installierenden Erweiterung.|  
-|[MoreInfoURL-Element](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|Dies ist optional. Ein Link zu lokalisierten Informationen über die Erweiterung.|  
-|[License-Element](../extensibility/license-element-vsix-language-pack-schema.md)|Dies ist optional. Der Pfad einer lokalisierten Version der Lizenzdatei für die Erweiterung.|  
+|[MoreInfoURL-Element](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|Optional. Ein Link zu lokalisierten Informationen über die Erweiterung.|  
+|[License-Element](../extensibility/license-element-vsix-language-pack-schema.md)|Optional. Der Pfad einer lokalisierten Version der Lizenzdatei für die Erweiterung.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |Keine||  
   
 ## <a name="element-information"></a>Elementinformationen  
-
-:::row:::
-    :::column:::
-        Namespace
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Name des Schemas
-    :::column-end:::
-    :::column:::
-        VSIX-Sprachpaket Schema
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Validierungsdatei
-    :::column-end:::
-    :::column:::
-        Vsixlanguagepackschema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Kann leer sein
-    :::column-end:::
-    :::column:::
-        Nein
-    :::column-end:::
-:::row-end:::
   
-## <a name="see-also"></a>Weitere Informationen  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Namespace    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Name des Schemas   |                 VSIX-Sprachpaket Schema                 |
+| Validierungsdatei |                Vsixlanguagepackschema. xsd                 |
+|  Kann leer sein   |                            Nein                             |
+  
+## <a name="see-also"></a>Siehe auch  
  [VSX Language Pack Schema Referenz](../extensibility/vsx-language-pack-schema-reference.md) [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md) [VSIX-Erweiterungs Schema 1,0 Referenz](/previous-versions/dd393700(v=vs.110))

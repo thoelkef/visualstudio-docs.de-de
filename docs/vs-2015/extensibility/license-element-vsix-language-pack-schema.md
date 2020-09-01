@@ -8,17 +8,17 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114171"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284381"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>License-Element (Schema für das VSIX-Sprachpaket)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dies ist optional. Der Pfad einer lokalisierten Version der Lizenzdatei für die Erweiterung.  
+Optional. Der Pfad einer lokalisierten Version der Lizenzdatei für die Erweiterung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,19 +31,19 @@ Dies ist optional. Der Pfad einer lokalisierten Version der Lizenzdatei für die
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
 |Keine||  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |Keine||  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |[VSIX-LanguagePack-Element](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Erforderlich. Stellt das Stamm Element für ein VSIX-Sprachpaket bereit.|  
   
@@ -54,39 +54,13 @@ Dies ist optional. Der Pfad einer lokalisierten Version der Lizenzdatei für die
  Wenn das- `License` Element definiert ist, wird der Text der angegebenen Lizenzdatei während des Setups angezeigt, und der Benutzer muss die Lizenz akzeptieren, um den Vorgang fortzusetzen.  
   
 ## <a name="element-information"></a>Elementinformationen  
-
-:::row:::
-    :::column:::
-        Namespace  
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Name des Schemas
-    :::column-end:::
-    :::column:::
-        VSIX-Sprachpaket Schema
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Validierungsdatei
-    :::column-end:::
-    :::column:::
-        Vsixlanguagepackschema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Kann leer sein
-    :::column-end:::
-    :::column:::
-        Nicht verfügbar
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Namespace    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Name des Schemas   |                 VSIX-Sprachpaket Schema                 |
+| Validierungsdatei |                Vsixlanguagepackschema. xsd                 |
+|  Kann leer sein   |                      Nicht zutreffend                       |
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Schema Referenz für das VSX-Sprachpaket](../extensibility/vsx-language-pack-schema-reference.md)   

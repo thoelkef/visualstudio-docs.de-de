@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114118"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284359"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und -katalog
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 </ImageManifest>  
 ```  
 
- **MB**  
+ **Symbols**  
 
  Zur Unterstützung der Lesbarkeit und Wartung kann das Bild Manifest Symbole für Attributwerte verwenden. Symbole werden wie folgt definiert:  
 
@@ -106,7 +106,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei zur Verwendung im aktuellen Manifest.|  
 |Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|  
 |id|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|  
-|String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|  
+|Zeichenfolge|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|  
 
  Bei Symbolen wird die Groß-/Kleinschreibung beachtet und mithilfe der Syntax $ (Symbol Name) auf Sie verwiesen:  
 
@@ -157,10 +157,12 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
  </Source>  
 ```  
 
-|**Attribut**|**Definition**|  
-|-|-|  
-| Uri | Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Folgende Werte sind möglich:<br /><br /> -Ein [Paket-URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält. |
-| Hintergrund  | Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em> Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Attribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      Uri      |                                                                                                                                                                                                                                                                                                               Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Folgende Werte sind möglich:<br /><br /> -Ein [Paket-URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält.                                                                                                                                                                                                                                                                                                               |
+|  Hintergrund   | Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em> Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente aufweisen:  
 
@@ -179,7 +181,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 
 |**Attribut**|**Definition**|  
 |-|-|  
-|Typ|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|  
+|type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|  
 |id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|  
 
  **ImageList**  
@@ -569,7 +571,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Ersetzen Sie jede **containedimage**-GUID durch $ (imagecatalogguid), ersetzen Sie jede **containedimage**-ID durch $ ( \<moniker> ), und fügen Sie jedem **containedimage** das Attribut extern = "true" hinzu.  
 
-       - \<moniker>muss durch den **knownmoniker** ersetzt werden, der mit dem Bild übereinstimmt, aber mit "knownmoniker". aus dem Namen entfernt.  
+       - \<moniker> muss durch den **knownmoniker** ersetzt werden, der mit dem Bild übereinstimmt, aber mit "knownmoniker". aus dem Namen entfernt.  
 
    - Fügen Sie <Import Manifest = "$ (ManifestFolder) \\<relative install dir path to \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \> oben im Abschnitt hinzu \<Symbols> .  
 
@@ -665,7 +667,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Das Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und es dem Benutzer ermöglichen, diese auf die gleiche Weise zu manipulieren wie Visual Studio, um sicherzustellen, dass das Manifest ordnungsgemäß erstellt wurde. Der Benutzer kann Hintergrund, Größe, dpi-Einstellung, hoher Kontrast und andere Einstellungen ändern. Außerdem werden ladeinformationen angezeigt, um Fehler in den Manifesten zu finden, und die Quell Informationen für jedes Bild im Manifest werden angezeigt.  
 
-## <a name="faq"></a>Häufig gestellte Fragen  
+## <a name="faq"></a>FAQ  
 
 - Gibt es Abhängigkeiten, die Sie beim Laden einschließen müssen \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ?  
 
@@ -938,7 +940,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |Glyphgroupjsharpinterface|Glyphitemshortcut|Interfakeshortcut|  
     |Glyphgrouperror||StatusError|  
     |Glyphbscfile||Classfile|  
-    |Glyphassembly||Referenz|  
+    |Glyphassembly||Verweis|  
     |Glyphlibrary||Bibliothek|  
     |Glyphvbproject||Vbprojectnode|  
     |Glyphcoolproject||Csprojectnode|  
