@@ -10,12 +10,12 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 2bafba53a131ca440b7d1e9cb68d18ac0ac833dd
-  ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+  ms.openlocfilehash: 94dcd1cf66ed1893a8cdfd069314d689cb1e9329
+  ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "85462095"
+  ms.lasthandoff: 08/29/2020
+  ms.locfileid: "89091400"
 landingContent:
 - title: Analysieren von C- und C++-Code
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: C++-Codeanalysewarnungen
       url: code-analysis-for-c-cpp-warnings.md
-- title: Analysieren der Qualität von verwaltetem Code
+- title: Analyse der .NET-Codequalität
   linkLists:
   - linkListType: overview
     links:
@@ -41,17 +41,17 @@ landingContent:
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
-    - text: Installieren von FxCop-Analysetools
+    - text: Konfigurieren der Codequalitätsanalyse
       url: install-fxcop-analyzers.md
   - linkListType: reference
     links:
-    - text: Analysen für verwalteten Code (Warnungen)
+    - text: Regeln für .NET-Codequalität
       url: code-analysis-for-managed-code-warnings.md
-- title: Analysieren des Stils von verwaltetem Code
+- title: Analyse des .NET-Codeformats
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Analysieren des Codestils
+    - text: Konfigurieren der Codeformatanalyse
       url: ../ide/create-portable-custom-editor-options.md
 - title: Messen der Komplexität von Code
   linkLists:

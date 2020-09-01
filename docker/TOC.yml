@@ -1,2 +1,34 @@
-- name: Index
-  href: index.md
+- name: Docker
+  expanded: true
+  items:
+    - name: Einführung in Docker für Visual Studio Code-Benutzer
+      expanded: true
+      items:
+        - name: Erste Schritte
+          href: tutorials/docker-tutorial.md
+        - name: 'Teil 1: Anwendung'
+          href: tutorials/your-application.md
+        - name: 'Teil 2: Aktualisieren Ihrer App'
+          href: tutorials/update-your-app.md
+        - name: 'Teil 3: Freigeben der App'
+          href: tutorials/share-your-app.md
+        - name: 'Teil 4: Beibehalten von Datenbank'
+          href: tutorials/persist-your-data.md
+        - name: 'Teil 5: Verwenden von Bindungsbereitstellungen'
+          href: tutorials/use-bind-mounts.md
+        - name: 'Teil 6: Apps mit mehreren Containern'
+          href: tutorials/multi-container-apps.md
+        - name: 'Teil 7: Verwenden von Docker Compose'
+          href: tutorials/use-docker-compose.md
+        - name: 'Teil 8: Bewährte Methoden für die Imageerstellung'
+          href: tutorials/image-building-best-practices.md
+        - name: 'Teil 9: Bereitstellen in der Cloud'
+          href: tutorials/deploy-to-cloud.md
+        - name: Nächste Schritte
+          href: tutorials/whats-next.md
+        - name: Quellen
+          items:
+            - name: Beispiele
+              href: 'https://github.com/docker/awesome-compose'
+            - name: Docker-Integration mit ACI
+              href: 'https://github.com/docker/aci-integration-beta/'
