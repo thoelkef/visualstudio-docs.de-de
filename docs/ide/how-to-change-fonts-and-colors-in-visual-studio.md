@@ -1,7 +1,9 @@
 ---
-title: Ändern von Schriftarten und Farben
-ms.date: 06/01/2020
+title: Ändern von Designs, Schriftarten, Text und Kontrast für Barrierefreiheit
+description: Erfahren Sie, wie Sie zugunsten von Benutzerfreundlichkeit und Barrierefreiheit Farbdesigns, Schriftfarben und Textgrößen ändern und besonders kontrastreiche Farben verwenden können.
+ms.date: 08/20/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb2373117b382cb19f374581ada45a5732b9c4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284681"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801437"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Vorgehensweise: Ändern von Schriftarten und Farben in Visual Studio
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Vorgehensweise: Ändern von Schriftarten, Farben und Designs in Visual Studio
 
-Sie können die Schriftarten und Farben in Visual Studio auf viele Arten ändern. Sie können z. B. das standardmäßige blaue Farbdesign in das dunkle Design (auch als „dunkler Modus“ bezeichnet) ändern. Ebenso können Sie die Standardschriftart und -textgröße in eine andere Schriftart und -größe ändern.
+Sie können die Schriftarten und Farben in Visual Studio auf viele Arten ändern. Beispielsweise können Sie das standardmäßige blaue Farbdesign in das (auch als „dunkler Modus“ bezeichnete) dunkle Design ändern. Sie können auch ein besonders kontrastreiches Design auswählen, wenn dies Ihren Anforderungen am besten entspricht. Außerdem können Sie standardmäßige Schriftart und Textgröße sowohl in der IDE als auch im Code-Editor ändern.
 
 ## <a name="change-the-color-theme"></a>Ändern des Farbdesigns
 
@@ -122,5 +124,6 @@ Weitere Einzelheiten zu allen Elementen der Benutzeroberfläche, für die Sie Sc
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ändern von Schriftarten und Farben für den Code-Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Vorgehensweise: Ändern der im Editor in Visual Studio verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Features des Visual Studio-Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalisieren von Visual Studio-IDE und Editor](../ide/quickstart-personalize-the-ide.md)

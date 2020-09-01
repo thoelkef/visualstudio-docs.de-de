@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289234"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711702"
 ---
 # <a name="msbuild-conditions"></a>MSBuild-Bedingungen
 
@@ -57,6 +57,12 @@ Sie können Zeichenfolgenmethoden in Bedingungen wie im folgenden Beispiel gezei
 
 </Project>
 ```
+
+In MSBuild-Projektdateien gibt es keinen echten booleschen Typ. Boolesche Daten werden in Eigenschaften dargestellt, die möglicherweise leer oder auf einen beliebigen Wert festgelegt sind. Daher bedeutet `'$(Prop)' == 'true'` „wenn Prop `true` ist“, aber `'$(Prop)' != 'false'` bedeutet „wenn Prop `true` oder nicht festgelegt oder auf etwas anderes festgelegt ist“.
+
+Boolesche Logik wird nur im Kontext von Bedingungen ausgewertet, sodass Eigenschaftseinstellungen wie `<Prop2>'$(Prop1)' == 'true'</Prop>` als Zeichenfolge (nach der Variablenerweiterung) dargestellt und nicht als boolesche Werte ausgewertet werden.  
+
+MSBuild implementiert einige besondere Verarbeitungsregeln, um die Arbeit mit Zeichenfolgeneigenschaften zu vereinfachen, die als boolesche Werte verwendet werden. Boolesche Literale werden akzeptiert, sodass `Condition="true"` und `Condition="false"` erwartungsgemäß funktionieren. MSBuild enthält auch spezielle Regeln, um den booleschen Negationsoperator zu unterstützen. Wenn `$(Prop)` den Wert „true“ hat, wird `!$(Prop)` zu `!true` erweitert. Dies entspricht erwartungsgemäß `false`.
 
 ## <a name="see-also"></a>Siehe auch
 

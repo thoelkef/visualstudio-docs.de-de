@@ -7,23 +7,23 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
-ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247321"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801463"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
 Wenn Sie Visual Studio-Abonnements über das MPSA-Programm erworben haben, müssen Sie einige Dinge beachten, bevor Sie ein Administrator von Visual Studio-Abonnements werden und Abonnements für Ihre Benutzer zuweisen können. Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements wechseln.
 
-MPSA-Kunden verwalten ihre über MPSA erworbenen Ressourcen jetzt in einem neuen Portal namens [Business Center](https://businessaccount.microsoft.com/Customer), das ähnliche Funktionen unterstützt wie das Volume Licensing Service Center (VLSC). Dazu gehören die Anzeige Ihrer Lizenzzusammenfassung, Aufträge, Downloads, Schlüssel, Benutzer usw. Visual Studio-Abonnements in MPSA verhalten sich jedoch ähnlich wie Clouddienste. Das Business Center verwendet zudem Geschäftskonten statt Microsoft-Konten (MSA) zur Anmeldung. Wenn Ihre Organisation Clouddienste wie Office 365 oder Azure Active Directory verwendet und Ihre E-Mail-Adresse Teil eines dieser beiden Dienste ist, ist es bereits ein Geschäftskonto. Dadurch können Sie sich mit Ihrem vorhandenen Kennwort beim Business Center registrieren. Wenn Ihre Organisation keine Clouddienste verwendet und Ihre E-Mail-Adresse kein Geschäftskonto ist, können Sie die Adresse dennoch für die Registrierung beim Business Center verwenden.
+MPSA-Kunden verwalten ihre über MPSA erworbenen Ressourcen jetzt in einem neuen Portal namens [Business Center](https://businessaccount.microsoft.com/Customer), das ähnliche Funktionen unterstützt wie das Volume Licensing Service Center (VLSC). Dazu gehören die Anzeige Ihrer Lizenzzusammenfassung, Aufträge, Downloads, Schlüssel, Benutzer usw. Visual Studio-Abonnements in MPSA verhalten sich jedoch ähnlich wie Clouddienste. Das Business Center verwendet zudem Geschäftskonten statt Microsoft-Konten (MSA) zur Anmeldung. Wenn Ihre Organisation Clouddienste wie Microsoft 365 oder Azure Active Directory verwendet und Ihre E-Mail-Adresse Teil eines dieser beiden Dienste ist, ist es bereits ein Geschäftskonto. Dadurch können Sie sich mit Ihrem vorhandenen Kennwort beim Business Center registrieren. Wenn Ihre Organisation keine Clouddienste verwendet und Ihre E-Mail-Adresse kein Geschäftskonto ist, können Sie die Adresse dennoch für die Registrierung beim Business Center verwenden.
 
 Darüber hinaus ist das [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements der Ort, an dem die Abonnements den Abonnenten zugewiesen werden, sobald Sie Administrator für Visual Studio-Abonnements sind. In MPSA müssen Visual Studio-Abonnements in ihrem jeweiligen Verwaltungsportal bereitgestellt werden, also im Verwaltungsportal für Visual Studio-Abonnements. Zu diesem Zweck müssen Sie Ihr Einkaufskonto einem Mandanten zuordnen (z.B. „contoso.onmicrosoft.com“).
 
 Beachten Sie, dass es zwei Arten von Mandanten gibt: verwaltete und nicht verwaltete Mandanten. Der Begriff „verwalteter Mandant“ bezieht sich auf einen Mandanten, der bereits von internen Administratoren der Organisation verwaltet wird.
 
-Ein nicht verwalteter Mandant ist ein Mandant ohne zugewiesene Administratoren und kann nicht für Onlinedienste wie Office 365 verwendet werden. Nicht verwaltete Mandanten werden auch erstellt, wenn die Registrierung beim Business Center mit einer E-Mail-Adresse durchgeführt wird, die kein Geschäftskonto ist. Wenn Sie während der Registrierung beim Business Center aufgefordert wurden, ein Kennwort zu erstellen, bedeutet dies, dass Ihre E-Mail-Adresse kein Geschäftskonto war und ein nicht verwalteter Mandant erstellt wurde.
+Ein nicht verwalteter Mandant ist ein Mandant ohne zugewiesene Administratoren und kann nicht für Onlinedienste wie Microsoft 365 verwendet werden. Nicht verwaltete Mandanten werden auch erstellt, wenn die Registrierung beim Business Center mit einer E-Mail-Adresse durchgeführt wird, die kein Geschäftskonto ist. Wenn Sie während der Registrierung beim Business Center aufgefordert wurden, ein Kennwort zu erstellen, bedeutet dies, dass Ihre E-Mail-Adresse kein Geschäftskonto war und ein nicht verwalteter Mandant erstellt wurde.
 
 Im Folgenden finden Sie einige Anforderungen/Schritte, die erforderlich sind, um Administrator für Visual Studio-Abonnements zu werden, bevor die Mandantenzuordnung abgeschlossen werden kann.
 

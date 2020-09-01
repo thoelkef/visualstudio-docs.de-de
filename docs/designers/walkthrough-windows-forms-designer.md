@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816461"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801294"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Tutorial: Erste Schritte mit dem Windows Forms-Designer
 
@@ -43,7 +43,7 @@ Der erste Schritt besteht darin, das DemoCalculator-Steuerelementprojekt zu erst
 
    ::: moniker-end
 
-2. Um die Datei umzubenennen, wählen Sie im **Projektmappen-Explorer** mit der rechten Maustaste **UserControl1.vb** oder **UserControl1.cs**, wählen Sie **Umbenennen** und ändern den Dateinamen in „DemoCalculator.vb“ oder „DemoCalculator.cs“. Wählen Sie **Ja** aus, wenn Sie gefragt werden, ob alle Verweise auf das Codeelement „UserControl1“ umbenannt werden sollen.
+2. Um die Datei umzubenennen, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **UserControl1.vb** oder **UserControl1.cs**, wählen Sie **Umbenennen** aus, und ändern Sie den Dateinamen in „DemoCalculator.vb“ oder „DemoCalculator.cs“. Wählen Sie **Ja** aus, wenn Sie gefragt werden, ob alle Verweise auf das Codeelement „UserControl1“ umbenannt werden sollen.
 
 Der Windows Forms-Designer zeigt die Designeroberfläche für das DemoCalculator-Steuerelement an. In dieser Ansicht können Sie das Aussehen des Steuerelements grafisch gestalten, indem Sie Steuerelemente und Komponenten aus der Toolbox auswählen und auf der Designeroberfläche platzieren. Weitere Informationen zu benutzerdefinierten Steuerelementen finden Sie unter [Varianten von benutzerdefinierten Steuerelementen](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
@@ -111,7 +111,7 @@ Das DemoCalculator-Steuerelement enthält mehrere Windows Forms-Steuerelemente. 
 
 Nachdem das Layout des Steuerelements eingerichtet ist, können Sie das Steuerelement des DemoCalculators mit Schaltflächen und einer Anzeige füllen.
 
-1. Doppelklicken Sie in der **Toolbox** auf das Symbol des `TextBox`-Steuerelements.
+1. Wählen Sie in der **Toolbox** das `TextBox`-Steuerelementsymbol aus.
 
    Ein `TextBox`-Steuerelement wird in der ersten Zelle des `TableLayoutPanel`-Steuerelements platziert.
 
@@ -129,11 +129,11 @@ Nachdem das Layout des Steuerelements eingerichtet ist, können Sie das Steuerel
 
 6. Wählen Sie das `TableLayoutPanel`-Steuerelement.
 
-7. Doppelklicken Sie in der **Toolbox** auf das `Button`-Symbol.
+7. Wählen Sie in der **Toolbox** das `Button`-Symbol aus.
 
    Ein `Button`-Steuerelement wird in der nächsten offenen Zelle des `TableLayoutPanel`-Steuerelements platziert.
 
-8. Doppelklicken Sie in der **Toolbox** vier weitere Male auf das `Button`-Symbol, um die zweite Zeile des `TableLayoutPanel`-Steuerelements aufzufüllen.
+8. Wählen Sie in der **Toolbox** vier weitere Male das `Button`-Symbol aus, um die zweite Zeile des `TableLayoutPanel`-Steuerelements aufzufüllen.
 
 9. Markieren Sie alle fünf `Button`-Steuerelemente, indem Sie sie auswählen, während Sie die **UMSCHALTTASTE** gedrückt halten. Drücken Sie **STRG**+**C**, um die `Button`-Steuerelemente in die Zwischenablage zu kopieren.
 
@@ -161,7 +161,7 @@ Wenn Ihr Steuerelement oder Formular mit mehreren Steuerelementen gefüllt ist, 
 
    Das Fenster „Dokumentgliederung“ zeigt eine Strukturansicht des DemoCalculator-Steuerelements und der zugehörigen Steuerelemente an. Containersteuerelemente wie `SplitContainer` zeigen ihre untergeordneten Steuerelemente als Unterknoten in der Struktur an. Über das Fenster „Dokumentgliederung“ können Sie vorhandene Steuerelemente auch umbenennen.
 
-2. Wählen Sie im Fenster **Dokumentgliederung** mit der rechten Maustaste **button1** und dann **Umbenennen** aus. Ändern Sie den Namen in „sevenButton“.
+2. Klicken Sie im Fenster **Dokumentgliederung** mit der rechten Maustaste auf **button1**, und wählen Sie dann **Umbenennen** aus. Ändern Sie den Namen in „sevenButton“.
 
 3. Benutzen Sie das Fenster **Dokumentgliederung**, um die `Button`-Steuerelemente vom vom Designer generierten Namen gemäß der folgenden Liste in den Produktionsnamen umzubenennen:
 
@@ -247,11 +247,11 @@ Damit ist der Entwurf des DemoCalculator-Steuerelements abgeschlossen. Es muss n
 
 ## <a name="implement-event-handlers"></a>Implementieren von Ereignishandlern
 
-Die Schaltflächen im DemoCalculator-Steuerelement verfügen über Ereignishandler, die zum Implementieren eines Großteil der Rechnerlogik verwendet werden können. Mit dem Windows Forms-Designer können Sie die Stubs aller Ereignishandler für alle Schaltflächen mit einem Doppelklick implementieren.
+Die Schaltflächen im DemoCalculator-Steuerelement verfügen über Ereignishandler, die zum Implementieren eines Großteil der Rechnerlogik verwendet werden können. Mit dem Windows Forms-Designer können Sie die Stubs aller Ereignishandler für alle Schaltflächen mit einer einzigen Auswahl implementieren.
 
 1. Wählen Sie in der Designeroberfläche alle `Button`-Steuerelemente, indem Sie sie auswählen, während Sie die **UMSCHALTTASTE** gedrückt halten.
 
-2. Doppelklicken Sie auf eines der `Button`-Steuerelemente.
+2. Wählen Sie eines der `Button`-Steuerelemente aus.
 
    Der Code-Editor wird mit den vom Designer generierten Ereignishandlern geöffnet.
 
@@ -277,7 +277,7 @@ Im ersten Schritt erstellen Sie das Anwendungsprojekt. Damit erstellen Sie die A
 
 2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **DemoCalculatorTest**, und wählen Sie **Verweis hinzufügen** aus, um das Dialogfeld **Verweis hinzufügen** zu öffnen.
 
-3. Wählen Sie die Registerkarte **Projekte** aus, und doppelklicken Sie dann auf das Projekt „DemoCalculatorLib“, um den Verweis zum Testprojekt hinzuzufügen.
+3. Gehen Sie zur Registerkarte **Projekte**, und wählen Sie dann das Projekt DemoCalculatorLib aus, um den Verweis dem Testprojekt hinzuzufügen.
 
 4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **DemoCalculatorTest**, und wählen Sie dann **Als Startprojekt festlegen** aus.
 

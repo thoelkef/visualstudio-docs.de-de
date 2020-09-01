@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcb349f8ff99d1567bf94b83a96be6b2824c208
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520470"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801203"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Auswählen einer Python-Umgebung für ein Projekt
 
@@ -46,7 +46,7 @@ Das Kontextmenü des Knotens **Python-Umgebungen** stellt ebenfalls zusätzliche
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Wenn Sie die Umgebung für ein Projekt ändern möchten, klicken Sie mit der rechten Maustaste auf den Knoten **Python-Umgebungen**, und wählen Sie **Umgebung hinzufügen** aus. Alternativ kann **Umgebung hinzufügen** auch in der Dropdownliste auf der Python-Symbolleiste ausgewählt werden.
+Klicken Sie mit der rechten Maustaste auf den Knoten **Python-Umgebungen**, und wählen Sie **Umgebung hinzufügen** aus. Sie können **Umgebung hinzufügen** auch aus der Umgebungs-Dropdownliste in der Python-Symbolleiste auswählen.
 
 Wählen Sie im Dialogfeld **Umgebung hinzufügen** die Registerkarte **Vorhandene Umgebung** und anschließend in der Dropdownliste **Umgebung** eine neue Umgebung aus:
 
@@ -86,7 +86,7 @@ Sie können eine neue virtuelle Umgebung direkt in Visual Studio erstellen:
 
 1. Wählen Sie eine Umgebung als Basisinterpreter aus, und klicken Sie auf **Erstellen**. Visual Studio zeigt eine Statusanzeige an, während die Umgebung erstellt wird und alle erforderlichen Pakete heruntergeladen werden. Nach Abschluss des Vorgangs wird die virtuelle Umgebung im Fenster **Python-Umgebungen** für das Projekt angezeigt, das die Umgebung enthält.
 
-1. Die virtuelle Umgebung ist nicht standardmäßig aktiviert. Um sie für das Projekt zu aktivieren, klicken Sie mit der rechten Maustaste darauf und wählen **Umgebung aktivieren** aus.
+1. Die virtuelle Umgebung ist nicht standardmäßig aktiviert. Um die virtuelle Umgebung für das Projekt zu aktivieren, klicken Sie mit der rechten Maustaste darauf und wählen **Umgebung aktivieren** aus.
 
 > [!Note]
 > Wenn der Pfad zum Speicherort eine vorhandene virtuelle Umgebung bezeichnet, erkennt Visual Studio den Basisinterpreter automatisch (mithilfe der *orig-prefix.txt*-Datei im Verzeichnis *lib* der Umgebung) und ändert die Schaltfläche **Erstellen** in **Hinzufügen**.
@@ -121,7 +121,7 @@ Sie können eine neue virtuelle Umgebung direkt in Visual Studio erstellen:
 
 1. Überprüfen Sie die restlichen Optionen des Dialogfelds:
 
-    | Option | Beschreibung |
+    | Option | BESCHREIBUNG |
     | --- | --- |
     | Als aktuelle Umgebung festlegen | Aktiviert die neue Umgebung nach der Erstellung im ausgewählten Projekt. |
     | Als Standardumgebung für neue Projekte festlegen | Dient zum automatischen Festlegen und Aktivieren der virtuellen Umgebung in allen neuen Projekten, die in Visual Studio erstellt werden. Bei Verwendung dieser Option muss sich die virtuelle Umgebung an einem Ort außerhalb eines bestimmten Projekts befinden.  |
@@ -169,7 +169,7 @@ Hinweis: Die angezeigten Einträge sind nicht immer unbedingt richtig, und eine 
 Beachten Sie auch, dass Visual Studio die Verwendung von `conda` zum Installieren von Paketen in einer Conda-Umgebung derzeit nicht unterstützt. Verwenden Sie stattdessen `conda` über die Befehlszeile.
 
 > [!Tip]
-> Eine gängige Situation, in der pip ein Paket nicht installieren kann, liegt vor, wenn das Paket Quellcode für native Komponenten in *\*.pyd*-Dateien enthält. Wenn die erforderliche Version von Visual Studio nicht installiert ist, kann pip diese Komponenten nicht kompilieren. Die Fehlermeldung, die in derartigen Situationen angezeigt wird, ist **error: Unable to find vcvarsall.bat** (Fehler: vcvarsall.bat wurde nicht gefunden). `easy_install` kann häufig vorkompilierte Binärdateien herunterladen, und Sie können einen geeigneten Compiler für ältere Python-Versionen von [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) herunterladen. Weitere Informationen finden Sie unter [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Umgang mit der Fehlermeldung, dass vcvarsallbat nicht gefunden werden konnte) im Teamblog zu Python-Tools.
+> Eine gängige Situation, in der pip ein Paket nicht installieren kann, liegt vor, wenn das Paket Quellcode für native Komponenten in *\*.pyd*-Dateien enthält. Wenn die erforderliche Version von Visual Studio nicht installiert ist, kann pip diese Komponenten nicht kompilieren. Die in dieser Situation angezeigte Fehlermeldung ist **Fehler: „vcvarsall.bat“ wurde nicht gefunden**. `easy_install` kann häufig vorkompilierte Binärdateien herunterladen, und Sie können einen geeigneten Compiler für ältere Python-Versionen von [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) herunterladen. Weitere Informationen finden Sie unter [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Umgang mit der Fehlermeldung, dass vcvarsallbat nicht gefunden werden konnte) im Teamblog zu Python-Tools.
 
 ## <a name="see-also"></a>Siehe auch
 

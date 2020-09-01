@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e2644ccfff0e7c653f4ce2680299aea95a55ef9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79372916"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801658"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -31,11 +31,11 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
    ![Fenster „Python-Umgebungen“](media/environments/environments-default-view-2019.png)
 
    > [!NOTE]
-   > Sie können das Fenster „Python-Umgebungen“ auch öffnen, indem Sie auf das Fenster „Projektmappen-Explorer“ klicken und die Tastenkombination „STRG + K, STRG + `“ drücken. Wenn die Tastenkombination nicht funktioniert und Sie das Fenster „Python-Umgebungen“ nicht im Menü finden können, haben Sie die Python-Workload möglicherweise nicht installiert. Anleitungen zum Installieren von Python finden Sie unter [Installieren der Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md).
+   > Sie können das Fenster „Python-Umgebungen“ auch öffnen, indem Sie das Fenster „Projektmappen-Explorer“ auswählen und die Tastenkombination **STRG+K, STRG+`** drücken. Wenn die Tastenkombination nicht funktioniert und Sie das Fenster „Python-Umgebungen“ nicht im Menü finden können, haben Sie die Python-Workload möglicherweise nicht installiert. Anleitungen zum Installieren von Python finden Sie unter [Installieren der Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md).
 
 2. Die Registerkarte **Übersicht** der Umgebung bietet schnellen Zugriff auf ein **interaktives** Fenster für diese Umgebung zusammen mit dem Installationsordner und den Interpretern der Umgebung. Klicken Sie beispielsweise auf **Interaktives Fenster öffnen**, und ein **interaktives** Fenster für diese bestimmte Umgebung wird in Visual Studio angezeigt.
 
-3. Erstellen Sie nun ein Projekt, indem Sie auf **Datei** > **Neu** > **Projekt** klicken und die Vorlage **Python-Anwendung** auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird. Alternativ können Sie das zuvor erstellte Projekt verwenden und den Code darin ersetzen. 
+3. Erstellen Sie nun ein Projekt, indem Sie auf **Datei** > **Neu** > **Projekt** klicken und die Vorlage **Python-Anwendung** auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird. Alternativ können Sie das zuvor erstellte Projekt verwenden und den Code darin ersetzen.
 
     ```python
     from math import radians
@@ -50,7 +50,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
     main()
     ```
 
-4. Wenn Sie ein Python-Projekt geöffnet haben, können Sie auch das Fenster „Python-Umgebungen“ öffnen, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf Python-Umgebungen klicken und dann **Alle Python-Umgebungen anzeigen** auswählen.
+4. Wenn Sie ein Python-Projekt geöffnet haben, können Sie auch das Fenster „Python-Umgebungen“ öffnen, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Python-Umgebungen** klicken und dann **Alle Python-Umgebungen anzeigen** auswählen.
 
    ![Umgebung](media/environments/environments-view-all-2019.png)
 
@@ -60,7 +60,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
 ## <a name="install-packages-using-the-python-environments-window"></a>Installieren von Paketen mithilfe des Fensters „Python-Umgebungen“
 
-1. Klicken Sie im Fenster „Python-Umgebungen“ auf die Standardumgebung für neue Python-Projekte, und wählen Sie dann die Registerkarte **Pakete** aus. Daraufhin wird eine Liste der Pakete angezeigt, die derzeit in der Umgebung installiert sind.
+1. Wählen Sie im Fenster „Python-Umgebungen“ die Standardumgebung für neue Python-Projekte und dann die Registerkarte **Pakete** aus. Daraufhin wird eine Liste der Pakete angezeigt, die derzeit in der Umgebung installiert sind.
 
    ![In einer Umgebung installierte Pakete](media/environments/environments-installed-packages-2019.png)
 
@@ -76,7 +76,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
    > [!NOTE]
    > Unterhalb der Umgebung wird möglicherweise eine kleine Statusanzeige eingeblendet, um darauf hinzuweisen, dass Visual Studio die IntelliSense-Datenbank für neu installierte Pakete erstellt. Die Registerkarte **IntelliSense** zeigt ausführlichere Informationen an. Beachten Sie, dass IntelliSense-Features wie die automatische Vervollständigung und die Syntaxüberprüfung für dieses Paket nicht im Editor aktiv sind, bis die Datenbank vollständig erstellt ist.
-   > 
+   >
    > Ab Visual Studio 2017 Version 15.6 wird eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet. Auf der Registerkarte **IntelliSense** wird eine Meldung diesbezüglich angezeigt.
 
 ## <a name="run-the-program"></a>Ausführen des Programms

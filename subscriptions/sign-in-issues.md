@@ -7,18 +7,18 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: In diesem Artikel erfahren Sie etwas über Probleme, die bei der Anmeldung bei Visual Studio-Abonnements auftreten können.
-ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233247"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801879"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Probleme beim Anmelden bei Visual Studio-Abonnements
 Um Ihr Visual Studio-Abonnement zu nutzen, müssen Sie sich zuerst anmelden.  Je nach Abonnement haben Sie es entweder mit einem Microsoft-Konto (MSA) oder einer Azure Active Directory-Identität (AAD) eingerichtet.  In diesem Artikel werden einige der Probleme besprochen, die beim Anmelden bei Ihrem Abonnement auftreten können.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>Microsoft-Konten (MSA) können nicht mit Geschäfts-, Schul- oder Uni-E-Mail-Adressen erstellt werden
-Ein neues persönliches Microsoft-Konto (MSA) mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse zu erstellen, ist nicht länger zulässig, wenn die E-Mail-Domäne in Azure AD konfiguriert wurde. Was bedeutet dies? Wenn Ihre Organisation Office 365 oder andere Unternehmensdienste von Microsoft verwendet, die auf Azure AD basieren, und Sie einen Domänennamen zu Ihrem Azure AD-Mandanten hinzugefügt haben, können Benutzer kein neues persönliches Microsoft-Konto mit einer E-Mail-Adresse in Ihrer Domäne mehr erstellen.
+Ein neues persönliches Microsoft-Konto (MSA) mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse zu erstellen, ist nicht länger zulässig, wenn die E-Mail-Domäne in Azure AD konfiguriert wurde. Was bedeutet dies? Wenn Ihre Organisation Microsoft 365 oder andere Unternehmensdienste von Microsoft verwendet, die auf Azure AD basieren, und Sie einen Domänennamen zu Ihrem Azure AD-Mandanten hinzugefügt haben, können Benutzer kein neues persönliches Microsoft-Konto mit einer E-Mail-Adresse in Ihrer Domäne mehr erstellen.
 
 ### <a name="why-was-this-change-made"></a>Warum wurde diese Änderung vorgenommen?
 Über ein persönliches Microsoft-Konto mit einer Arbeitsadresse als Benutzername zu verfügen, stellt sowohl Endbenutzer als auch IT-Abteilungen vor Probleme. Beispiel:
@@ -40,7 +40,7 @@ Wenn Sie jedoch versuchen, sich bei einer Microsoft-App anzumelden, die persönl
    > ![Geschäfts-, Schul- und Uni-Konten werden unterstützt](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>Sind bestehende Konten davon betroffen?
-Die hier beschriebene Blockierung der Anmeldung verhindert nur die Erstellung neuer Konten. Sie wirkt sich nicht auf Benutzer aus, die bereits über ein Microsoft-Konto mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse verfügen. Falls Sie bereits in dieser Situation sind, haben wir das Umbenennen eines persönlichen Microsoft-Kontos vereinfacht. Dieser [Support-Artikel](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) enthält eine einfache Schritt-für-Schritt-Anleitung. Das Umbenennen Ihres persönlichen Microsoft-Kontos bedeutet, dass der Benutzername geändert wird, und hat keine Auswirkung auf Ihre geschäftlichen E-Mails oder auf die Art und Weise, wie Sie sich bei Unternehmensdiensten wie Office 365 anmelden. Es hat auch keine Auswirkung auf Ihre persönlichen Angelegenheiten. Es ändert sich nur die Art und Weise, wie Sie sich anmelden. Sie können eine andere (persönliche) E-Mail-Adresse verwenden, eine neue @outlook.com-E-Mail-Adresse von Microsoft anfordern oder Ihre Telefonnummer als neuen Benutzernamen verwenden.
+Die hier beschriebene Blockierung der Anmeldung verhindert nur die Erstellung neuer Konten. Sie wirkt sich nicht auf Benutzer aus, die bereits über ein Microsoft-Konto mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse verfügen. Falls Sie bereits in dieser Situation sind, haben wir das Umbenennen eines persönlichen Microsoft-Kontos vereinfacht. Dieser [Support-Artikel](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) enthält eine einfache Schritt-für-Schritt-Anleitung. Das Umbenennen Ihres persönlichen Microsoft-Kontos bedeutet, dass der Benutzername geändert wird, und hat keine Auswirkung auf Ihre geschäftlichen E-Mails oder auf die Art und Weise, wie Sie sich bei Unternehmensdiensten wie Microsoft 365 anmelden. Es hat auch keine Auswirkung auf Ihre persönlichen Angelegenheiten. Es ändert sich nur die Art und Weise, wie Sie sich anmelden. Sie können eine andere (persönliche) E-Mail-Adresse verwenden, eine neue @outlook.com-E-Mail-Adresse von Microsoft anfordern oder Ihre Telefonnummer als neuen Benutzernamen verwenden.
 
 > [!NOTE]
 > Wenn Ihre IT-Abteilung Sie darum gebeten hat, ein persönliches Microsoft-Konto mit Ihrer Geschäfts-, Schul- oder Uni-E-Mail-Adresse zu erstellen, um zum Beispiel auf Microsoft-Unternehmensdienste wie Premier Support zuzugreifen, sollten Sie zuerst mit Ihrem Administratorenteam sprechen, bevor Sie Ihr Konto umbenennen.

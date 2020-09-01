@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d7fe5a8b2275248c0fc68f9237e9e259973c567b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63002790"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801723"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Schritt 4: Ausführen von Code im Debugger
 
@@ -79,7 +79,7 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 
 1. Überspringen Sie den Code mehrmals, und beobachten Sie, wie sich die Werte im Fenster **Lokal** oder **Auto** ändern.
 
-1. Doppelklicken Sie im Fenster **Lokal** oder **Auto** in die Spalte **Wert** der `i`- oder `s`-Variablen, um den Wert zu bearbeiten. Drücken Sie die **EINGABETASTE**, oder klicken Sie außerhalb dieses Werts, damit alle Änderungen übernommen werden.
+1. Doppelklicken Sie im Fenster **Lokal** oder **Auto** in die Spalte **Wert** der `i`- oder `s`-Variablen, um den Wert zu bearbeiten. Drücken Sie die **EINGABETASTE**, oder klicken Sie auf einen beliebigen Bereich außerhalb dieses Werts, damit alle Änderungen übernommen werden.
 
 1. Fahren Sie mithilfe von **Schrittweise ausführen** mit der ausführlichen Ausführung des Codes fort. **Schrittweise ausführen** bedeutet, dass der Debugger zu einem beliebigen Funktionsaufruf wechselt, zu dem ihm Debuginformationen vorliegen, z.B. `make_dot_string`. Wenn Sie sich in `make_dot_string` befinden, können Sie die zugehörigen lokalen Variablen untersuchen und den zugehörigen Code gezielt durchlaufen.
 
@@ -93,7 +93,7 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 
     ![Festlegen einer Haltepunktbedingung](media/vs-getting-started-python-21-debugging4.png)
 
-1. Wenn Sie das Programm bis zum Ende ausführen möchten, deaktivieren Sie den Haltepunkt, indem Sie einen Rechtsklick durchführen und **Haltepunkt deaktivieren** (**STRG**+**F9**) auswählen. Wählen Sie anschließend **Weiter** aus (oder drücken Sie **F5**), um das Programm auszuführen. Wenn das Programm beendet wird, beendet Visual Studio die zugehörige Debugsitzung und versetzt sie wieder in den Bearbeitungsmodus. Beachten Sie, dass Sie den Haltepunkt auch löschen können, indem Sie auf den zugehörigen Punkt klicken. Dadurch werden jedoch auch sämtliche von Ihnen festgelegten Bedingungen gelöscht.
+1. Wenn Sie das Programm bis zum Ende ausführen möchten, deaktivieren Sie den Haltepunkt, indem Sie mit der rechten Maustaste auf den Punkt im Rand klicken und **Haltepunkt deaktivieren** (**STRG**+**F9**) auswählen. Wählen Sie anschließend **Weiter** aus (oder drücken Sie **F5**), um das Programm auszuführen. Wenn das Programm beendet wird, beendet Visual Studio die zugehörige Debugsitzung und versetzt sie wieder in den Bearbeitungsmodus. Beachten Sie, dass Sie den Haltepunkt auch löschen können, indem Sie den Punkt auswählen, oder indem Sie mit der rechten Maustaste auf den Punkt klicken und **Haltepunkt löschen** auswählen. Dadurch werden jedoch auch alle von Ihnen festgelegten Bedingungen gelöscht.
 
 > [!Tip]
 > In einigen Situationen, z.B. bei Auftreten eines Fehlers beim Starten des Python-Interpreters, erscheint das Fenster „Ausgabe“ möglicherweise nur kurz und wird anschließend automatisch geschlossen, ohne dass Sie die Möglichkeit haben, Fehlermeldungen anzuzeigen. Klicken Sie in einem solchen Fall mit der rechten Maustaste im **Projektmappen-Explorer** auf das Projekt, wählen Sie **Eigenschaften** und die Registerkarte **Debuggen** aus, und fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Durch dieses Argument wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt. Das Fenster bleibt dabei geöffnet, bis Sie **STRG**+**Z** > **EINGABETASTE** zum Beenden drücken.

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144700"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801619"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
@@ -82,7 +82,7 @@ Der Verlauf zeigt eine Liste von Miniaturansichten für die Plots an, die in die
 
 ![Plotverlaufsfenster](media/plotting-plot-history-window.png)
 
-Um einen Plot in einem zugehörigen Fenster zu öffnen, doppelklicken Sie auf den Plot, wählen Sie ihn aus, und wählen Sie im Kontextmenü (Rechtsklick) die Option **Plot anzeigen** oder die Symbolschaltfläche **Plot anzeigen** aus. Sie können auch einen einzelnen Plot auswählen und ihn über das Kontextmenü oder die Menüs **Bearbeiten** kopieren, ausschneiden und löschen.
+Um einen Plot in einem zugehörigen Fenster zu öffnen, doppelklicken Sie auf den Plot, wählen Sie ihn aus, und wählen Sie die Symbolleistenschaltfläche **Plot anzeigen** aus. Klicken Sie alternativ mit der rechten Maustaste auf den Plot, und wählen Sie **Plot anzeigen** aus. Sie können auch einen einzelnen Plot auswählen und ihn über das Kontextmenü oder das Menü **Bearbeiten** kopieren, ausschneiden und löschen.
 
 Die Lebensdauer des fensterübergreifenden Plotverlaufs ist an die Lebensdauer der interaktiven R-Sitzung gebunden. Wenn Sie Ihre R-Sitzung zurücksetzen, oder Visual Studio beenden oder neu starten, wird Ihr Plotverlauf zurückgesetzt.
 

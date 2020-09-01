@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 461b99261eb88d5267b062cb5d471f1b6ed4ee60
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248028"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800306"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Veröffentlichen einer Web-App in Azure App Service mit Visual Studio
 
@@ -31,7 +31,7 @@ In diesem Artikel wird beschrieben, wie Sie das Tool zum **Veröffentlichen** f�
 
 ## <a name="publish-to-azure-app-service-on-windows"></a>Veröffentlichen in Azure App Service unter Windows
 
-1. Klicken Sie im Projektmappen-Explorer erst mit der rechten Maustaste auf das Projekt und anschließend mit der linken auf **Veröffentlichen**. Alternativ können Sie auch das Menüelement **Erstellen** > **Veröffentlichen** verwenden.
+1. Klicken Sie im Projektmappen-Explorer erst mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Veröffentlichen** aus. Alternativ können Sie auch das Menüelement **Erstellen** > **Veröffentlichen** verwenden.
 
     ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "„Veröffentlichen“ auswählen")
 
@@ -51,7 +51,7 @@ In diesem Artikel wird beschrieben, wie Sie das Tool zum **Veröffentlichen** f�
 
     ![Azure App Service auswählen](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
-1. Im Dialogfeld **Veröffentlichen** wurde die neu erstellte Instanz automatisch ausgewählt. Wenn Sie dazu bereit sind, klicken Sie auf **Fertig stellen**.
+1. Im Dialogfeld **Veröffentlichen** wurde die neu erstellte Instanz automatisch ausgewählt. Wenn Sie bereit sind, wählen Sie **Fertig stellen** aus.
 
     ![Azure App Service auswählen](../deployment/media/quickstart-publish-windows-select-instance.png)
 

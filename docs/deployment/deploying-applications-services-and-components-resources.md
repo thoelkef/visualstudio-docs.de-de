@@ -1,7 +1,8 @@
 ---
-title: Übersicht über die Bereitstellung | Microsoft-Dokumentation
-ms.custom: seodec18
-ms.date: 06/22/2018
+title: Stellen Sie Ihre Visual Studio-App in einem Ordner, in IIS, in Azure oder in einem anderen Ziel bereit.
+description: Weitere Informationen zu Veröffentlichungsoptionen für Ihre App mit dem Veröffentlichungs-Assistenten
+ms.custom: contperfq1
+ms.date: 08/21/2020
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -13,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173725"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800831"
 ---
-# <a name="overview-of-deployment-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
+# <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Stellen Sie Ihre App in einem Ordner, in IIS, in Azure oder einem anderen Ziel bereit.
 
 Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, verteilen Sie diese für die Installation auf anderen Computern, Geräten, Servern oder in der Cloud. Wählen Sie die entsprechende Methode für den Typ der Bereitstellung in Visual Studio aus, den Sie benötigen.
 
@@ -35,11 +36,19 @@ Apps können aus Visual Studio direkt auf die folgenden Ziele veröffentlicht we
 - [Azure](#azure)
 - [Docker-Containerregistrierung](#docker-container-registry)
 - [Ordner](#folder)
-- [Benutzerdefinierte Ziele (IIS, FTP)](#Custom targets (IIS, FTP))
-
-Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffentlichungsprofil auswählen, ein vorhandenes Veröffentlichungsprofil importieren oder ein neues Veröffentlichungsprofil mit den hier beschriebenen Optionen erstellen. Einen Überblick über Veröffentlichungsoptionen in der IDE für unterschiedliche App-Typen finden Sie unter [Erster Einblick in die Bereitstellung](../deployment/deploying-applications-services-and-components.md).
+- [FTP/FTPS-Server](#ftpftps-server)
+- [Webserver (IIS)](#web-server-iis)
+- [Profil importieren](#import-profile)
 
 ## <a name="azure"></a>Azure 
+
+Wenn Sie Azure auswählen, können Sie zwischen den folgenden Optionen wählen:
+
+- Azure App Service unter Windows, Linux oder als Docker-Image ausgeführt
+- Ein Docker-Image, das der Azure Container Registry bereitgestellt wird
+- Eine VM von Azure
+
+![Auswahl eines Azure-Diensts](../deployment/media/quickstart-choose-azure-service.png)
 
 ### <a name="azure-app-service"></a>Azure App Service
 
@@ -47,7 +56,7 @@ Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffen
 
 Sie bestimmen, wie viel Computingleistung dem App Service zur Verfügung stehen, indem Sie einen [Tarif oder Plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) für den enthaltenden App Service auswählen. Sie können mehrere Web-Apps (und andere App-Typen) ohne Tarifänderung den gleichen App Service nutzen lassen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-Apps gemeinsam im selben App Service hosten.
 
-### <a name="when-to-choose-azure-app-service"></a>Wann sollten Sie Azure App Service wählen?
+#### <a name="when-to-choose-azure-app-service"></a>Wann sollten Sie Azure App Service wählen?
 
 - Sie möchten eine Webanwendung bereitstellen, auf die über das Internet zugegriffen werden kann.
 - Sie möchten Ihre Webanwendung automatisch entsprechend Ihrem Bedarf skalieren, ohne sie erneut bereitstellen zu müssen.
@@ -56,7 +65,18 @@ Sie bestimmen, wie viel Computingleistung dem App Service zur Verfügung stehen,
 
 > Wenn Sie Azure App Service in Ihrem eigenen Datencenter oder anderen lokalen Computern verwenden möchten, können Sie dazu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) verwenden.
 
-Weitere Informationen zur Veröffentlichung in App Service finden Sie in den Schnellstarts zum [Veröffentlichen von Web-Apps in Azure App Service](quickstart-deploy-to-azure.md) und [Veröffentlichen einer ASP.NET Core-App unter Linux](quickstart-deploy-to-linux.md).
+Weitere Informationen zum Veröffentlichen in App Service finden Sie unter:
+- [Veröffentlichen einer Web-App in Azure App Service mit Visual Studio](quickstart-deploy-to-azure.md) und [Veröffentlichen einer ASP.NET Core-App in Azure App Service mit Visual Studio unter Linux](quickstart-deploy-to-linux.md).
+- [Problembehandlung bei ASP.NET Core in Azure App Service und IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+### <a name="azure-container-registry"></a>Azure Container Registry
+
+Mit [Azure Container Registry](/azure/container-registry/) können Sie Docker-Containerimages und -artefakte in einer privaten Registrierung für alle Arten von Containerbereitstellungen erstellen, speichern und verwalten.
+
+#### <a name="when-to-choose-azure-container-registry"></a>Unter welchen Umständen Azure Container Registry ausgewählt werden sollte
+
+- Wenn Sie über eine Entwicklungs- und Bereitstellungspipeline für Docker-Container verfügen.
+- Wenn Sie Docker-Containerimages in Azure erstellen möchten.
 
 ### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
@@ -66,7 +86,7 @@ Beim Skalieren einer App, die auf virtuellen Computern gehostet wird, werden zus
 
 Weitere Informationen finden Sie in dem [detaillierten Vergleich](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) zwischen Azure App Service, Azure Virtual Machines und anderen Azure-Diensten, die Sie als Bereitstellungsziel mithilfe der Option „Benutzerdefiniert“ in Visual Studio verwenden können.
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>Wann sollten Sie Azure Virtual Machines wählen?
+#### <a name="when-to-choose-azure-virtual-machines"></a>Unter welchen Umständen Sie Azure Virtual Machines wählen sollten
 
 - Sie möchten eine über das Internet zugängliche Webanwendung mit vollständiger Kontrolle über die Lebensdauer der zugewiesenen IP-Adressen bereitstellen.
 - Sie benötigen auf den Servern Anpassungen auf Computerebene, einschließlich Software, wie z.B. ein spezielles Datenbanksysten, bestimmte Netzwerkkonfigurationen, Datenträgerpartitionen und so weiter.
@@ -99,26 +119,61 @@ Beachten Sie Folgendes: Wenn die Verwendung von Clouddiensten wie Azure App Serv
 
 Weitere Informationen finden Sie unter [Quickstart – Deploy to a local folder (Schnellstart: Bereitstellen einer App in einem lokalen Ordner)](quickstart-deploy-to-local-folder.md).
 
-## <a name="custom-targets-iis-ftp"></a>Benutzerdefinierte Ziele (IIS, FTP)
+## <a name="ftpftps-server"></a>FTP/FTPS-Server
 
-Ein benutzerdefiniertes Ziel ermöglicht Ihnen die Bereitstellung Ihrer App auf einem anderen Ziel als Azure App Service, Azure Virtual Machines oder dem lokalen Dateisystem. Sie können die Webanwendung in einem Dateisystem oder auf einem anderen Server (Internet oder Intranet) bereitstellen, auf das bzw. den Sie Zugriff haben, einschließlich Ziele in anderen Clouddiensten. Es funktioniert mit Web Deploy (Dateien oder ZIP) und FTP.
+Mit einem FTP/FTPS-Server können Sie die Anwendung auf einem anderen Server als Azure bereitstellen. Sie können die Webanwendung in einem Dateisystem oder auf einem anderen Server (Internet oder Intranet) bereitstellen, auf das bzw. den Sie Zugriff haben, einschließlich Ziele in anderen Clouddiensten. Es funktioniert mit Web Deploy (Dateien oder ZIP) und FTP.
 
-Wenn Sie ein benutzerdefiniertes Ziel auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung**, einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
+Wenn Sie einen FTP/FTPS-Server auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung**, einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
 
 - Die Konfiguration, die Sie bereitstellen möchten.
 - Ob vorhandene Dateien aus dem Ziel entfernt werden.
 - Ob während der Veröffentlichung vorkompiliert wird.
 - Ob Dateien im Ordner „App_Data“ von der Bereitstellung ausgeschlossen sind.
 
-Sie können in Visual Studio beliebig viele benutzerdefinierte Bereitstellungsprofile erstellen, wodurch Sie Profile mit unterschiedlichen Einstellungen verwalten können.
+Sie können in Visual Studio beliebig viele FTP/FTPS-Bereitstellungsprofile erstellen, wodurch Sie Profile mit unterschiedlichen Einstellungen verwalten können.
 
-### <a name="when-to-choose-custom-deployment"></a>Wann sollten Sie die benutzerdefinierte Bereitstellung wählen?
+### <a name="when-to-choose-ftpftps-server-deployment"></a>Unter welchen Umständen Sie die FTP/FTPS-Serverbereitstellung auswählen sollten
 
 - Sie verwenden Clouddienste auf einem anderen Anbieter als Azure, auf den über URLs zugegriffen werden kann.
 - Sie möchten eine Bereitstellung mit anderen als den in Visual Studio verwendeten oder den direkt mit Ihren Azure-Konten verknüpften Anmeldeinformationen durchführen.
 - Sie möchten bei jeder Bereitstellung Dateien vom Ziel löschen.
 
-Weitere Informationen finden Sie unter [Quickstart – Deploy to a local folder (Schnellstart: Bereitstellen einer App in einem lokalen Ordner)](quickstart-deploy-to-a-web-site.md).
+## <a name="web-server-iis"></a>Webserver (IIS)
+
+Mit einem IIS-Webserver können Sie die Anwendung auf einem anderen Webserver als Azure bereitstellen. Sie können die Webanwendung auf einem IIS-Server (Internet oder Intranet) bereitstellen, auf den Sie Zugriff haben, einschließlich solchen in anderen Clouddiensten. Der Einsatz in Verbindung mit Web Deploy oder einem Web Deploy-Paket ist möglich.
+
+Wenn Sie einen IIS-Webserver auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung**, einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
+
+- Die Konfiguration, die Sie bereitstellen möchten.
+- Ob vorhandene Dateien aus dem Ziel entfernt werden.
+- Ob während der Veröffentlichung vorkompiliert wird.
+- Ob Dateien im Ordner „App_Data“ von der Bereitstellung ausgeschlossen sind.
+
+Sie können in Visual Studio beliebig viele IIS-Webserver-Bereitstellungsprofile erstellen, wodurch Sie Profile mit unterschiedlichen Einstellungen verwalten können.
+
+### <a name="when-to-choose-web-server-iis-deployment"></a>Unter welchen Umständen Sie die IIS-Webserverbereitstellung wählen sollten
+
+- Sie verwenden IIS, um eine Website oder einen Dienst zu veröffentlichen, auf die über URLs zugegriffen werden kann.
+- Sie möchten eine Bereitstellung mit anderen als den in Visual Studio verwendeten oder den direkt mit Ihren Azure-Konten verknüpften Anmeldeinformationen durchführen.
+- Sie möchten bei jeder Bereitstellung Dateien vom Ziel löschen.
+
+Weitere Informationen finden Sie unter [Veröffentlichen einer Web-App auf einer Website mithilfe von Visual Studio](quickstart-deploy-to-a-web-site.md). Weitere Informationen zur Problembehandlung von ASP.NET Core in IIS finden Sie unter [Problembehandlung bei ASP.NET Core in Azure App Service und IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+## <a name="import-profile"></a>Profil importieren
+
+Sie können ein Profil beim Veröffentlichen in IIS oder Azure App Service importieren. Sie können die Bereitstellung mithilfe einer *Datei mit Veröffentlichungseinstellungen* ( *\*.publishsettings*) konfigurieren. Eine Veröffentlichungseinstellungsdatei wird von IIS oder Azure App Service erstellt. Sie können sie aber auch manuell erstellen und dann in Visual Studio importieren.
+
+Die Verwendung einer Datei mit Veröffentlichungseinstellungen kann die Bereitstellungskonfiguration vereinfachen und hat in einer Teamumgebung Vorteile gegenüber der manuellen Konfiguration eines einzelnen Bereitstellungsprofils.
+
+### <a name="when-to-choose-import-profile"></a>Unter welchen Umständen Sie ein Importprofil auswählen sollten
+
+- Sie veröffentlichen in IIS und möchten die Bereitstellungskonfiguration vereinfachen.
+- Sie veröffentlichen in IIS oder Azure App Service und möchten die Bereitstellungskonfiguration für die erneute Verwendung oder für Teammitglieder beschleunigen, die im selben Dienst veröffentlichen.
+
+Weitere Informationen finden Sie unter
+
+- [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in IIS](tutorial-import-publish-settings-iis.md)
+- [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in Azure](tutorial-import-publish-settings-azure.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie Microsoft Windows Virtual Desktop über Ihr Visual Studio-Abonnement nutzen können.
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183586"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800605"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Zugriff auf Windows Virtual Desktop in Abonnements 
 Visual Studio-Abonnenten können nun ihr Azure DevTest-Einzelguthaben für Microsoft Windows Virtual Desktop-Dienste verwenden.  
-Bei Windows Virtual Desktop handelt es sich um einen umfassenden Dienst für die Desktop- und App-Virtualisierung, der in der Cloud ausgeführt wird. Dieser Dienst ist die einzige virtuelle Desktopinfrastruktur, die vereinfachte Verwaltung, Windows 10 mit mehreren Sitzungen, Optimierungen für Office 365 ProPlus sowie Unterstützung für Umgebungen von Remotedesktopdiensten bietet. Stellen Sie Ihre Windows-Desktops und -Apps innerhalb weniger Minuten bereit, und skalieren Sie diese. Außerdem profitieren Sie von integrierten Sicherheits- und Konformitätsfeatures.
+Bei Windows Virtual Desktop handelt es sich um einen umfassenden Dienst für die Desktop- und App-Virtualisierung, der in der Cloud ausgeführt wird. Es ist die einzige virtuelle Desktopinfrastruktur (VDI), die eine vereinfachte Verwaltung, Windows 10-Multisessionoptimierungen für Microsoft 365 Apps for Enterprise und Unterstützung für RDS-Umgebungen (Remote Desktop Services, Remotedesktopdienste) bietet. Stellen Sie Ihre Windows-Desktops und -Apps innerhalb weniger Minuten bereit, und skalieren Sie diese. Außerdem profitieren Sie von integrierten Sicherheits- und Konformitätsfeatures.
 Windows Virtual Desktop in Azure ermöglicht Folgendes:
 - Einrichten einer Windows 10-Bereitstellung mit mehreren Sitzungen, die eine vollständige Windows 10-Umgebung mit Skalierbarkeit bietet
-- Virtualisieren von Office 365 ProPlus und Optimieren der Ausführung in virtuellen Szenarien mit mehreren Benutzern
+- Virtualisieren von Microsoft 365 Apps for Enterprise und Optimieren der Ausführung in virtuellen Szenarien mit mehreren Benutzern
 - Bereitstellen virtueller Windows 7-Desktops mit kostenlosen erweiterten Sicherheitsupdates
 - Verwenden bereits vorhandener Remotedesktopdienste (Remote Desktop Services, RDS) und Windows Server-Desktops/-Apps auf einem beliebigen Computer
 - Virtualisieren von Desktops und Apps
