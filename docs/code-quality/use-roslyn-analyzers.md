@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893423"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219776"
 ---
 # <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
 
@@ -102,6 +102,9 @@ Sie können den Schweregrad für eine bestimmte Kategorie von Analyzer-Regeln od
 - Festlegen des Regel schwere Grads für alle Analyse Regeln:
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> Einträge zum gleichzeitigen Konfigurieren mehrerer Analyse Regeln gelten nur für Regeln, die *standardmäßig aktiviert*sind. Analyse Regeln, die im Analyzer-Paket standardmäßig als deaktiviert gekennzeichnet sind, müssen durch explizite `dotnet_diagnostic.<rule ID>.severity = <severity>` Einträge aktiviert werden.
 
 Wenn Sie über mehrere Einträge verfügen, die auf eine bestimmte Regel-ID anwendbar sind, ist Folgendes die Rangfolge, um den entsprechenden Eintrag auszuwählen:
 

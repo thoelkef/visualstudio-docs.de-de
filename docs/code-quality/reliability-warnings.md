@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 095631abc5678a27a4e79611433ff446337b956c
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835614"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219607"
 ---
 # <a name="reliability-warnings"></a>Zuverlässigkeitswarnungen
 
@@ -34,7 +34,8 @@ Zuverlässigkeits Warnungen unterstützen die Zuverlässigkeit von Bibliotheken 
 |[CA2004: Aufrufe an GC.KeepAlive entfernen.](../code-quality/ca2004.md)|Wenn Sie eine Umstellung auf die SafeHandle-Verwendung durchlaufen, entfernen Sie alle Aufrufe von GC. KeepAlive (-Objekt). In diesem Fall dürfen Klassen nicht GC abrufen. KeepAlive, angenommen, Sie verfügen über keinen Finalizer, verwenden jedoch SafeHandle, um das Betriebssystem Handle für Sie zu finalisieren.|
 |[CA2006: SafeHandle verwenden, um native Ressourcen zu kapseln.](../code-quality/ca2006.md)|Die Verwendung von IntPtr in verwaltetem Code kann auf ein potenzielles Sicherheitsrisiko und Zuverlässigkeitsproblem hinweisen. Alle Vorkommen von IntPtr müssen daher überprüft werden, um festzustellen, ob stattdessen die Verwendung von SafeHandle (oder einer ähnlichen Technologie) erforderlich ist.|
 |[CA2007: Eine Aufgabe nicht direkt abwarten](../code-quality/ca2007.md)|Eine asynchrone Methode [erwartet](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> direkt ein.|
-|[CA2009: „ToImmutableCollection“ nicht für einen ImmutableCollection-Wert aufrufen.](../code-quality/ca2009.md)|`ToImmutable`die Methode wurde für eine unveränderliche Auflistung aus dem <xref:System.Collections.Immutable> Namespace unnötig aufgerufen.|
+|[CA2008: Erstellen Sie keine Aufgaben, ohne einen TaskScheduler zu übergeben.](../code-quality/ca2008.md)|Ein Task Erstellungs-oder Fortsetzungs Vorgang verwendet eine Methoden Überladung, die keinen <xref:System.Threading.Tasks.TaskScheduler> Parameter angibt.|
+|[CA2009: „ToImmutableCollection“ nicht für einen ImmutableCollection-Wert aufrufen.](../code-quality/ca2009.md)|`ToImmutable` die Methode wurde für eine unveränderliche Auflistung aus dem <xref:System.Collections.Immutable> Namespace unnötig aufgerufen.|
 |[CA2011: Eigenschaft nicht innerhalb ihres Setters zuweisen](../code-quality/ca2011.md) | Einer Eigenschaft wurde versehentlich ein Wert innerhalb ihrer eigenen [Set-Zugriffs](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)Methode zugewiesen. |
 |[CA2012: Verwenden Sie ValueTasks ordnungsgemäß.](../code-quality/ca2012.md) | Valuetasks, die von Element aufrufen zurückgegeben wurden, sollen direkt gewartet werden.  Versucht, eine valuetask mehrmals zu verwenden oder direkt auf das Ergebnis zuzugreifen, bevor es als abgeschlossen bezeichnet wird, kann zu einer Ausnahme oder Beschädigung führen.  Das ignorieren einer solchen valuetask ist wahrscheinlich ein Hinweis auf einen Funktionsfehler und kann die Leistung beeinträchtigen. |
 |[CA2013: Verwenden Sie ReferenceEquals nicht mit Werttypen.](../code-quality/ca2013.md) | Beim Vergleichen von Werten mit werden bei <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> objA und objB Werttypen verwendet, bevor Sie an die-Methode übermittelt werden <xref:System.Object.ReferenceEquals%2A> . Dies bedeutet, dass auch dann, wenn objA und objB dieselbe Instanz eines Werttyps darstellen, die <xref:System.Object.ReferenceEquals%2A> Methode trotzdem false zurückgibt. |

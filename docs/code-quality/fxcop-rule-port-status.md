@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189475"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219724"
 ---
 # <a name="fxcop-rule-port-status"></a>Port Status der FxCop-Regel
 
@@ -68,14 +68,14 @@ Regel-ID | Titel
 [CA1063](ca1063.md) | Ordnungsgemäße Implementierung von iverwerf
 [CA1064](ca1064.md) | Ausnahmen sollten öffentlich sein.
 [CA1065](ca1065.md) | Keine Ausnahmen an unerwarteten Speicherorten auslösen.
-[CA1066](ca1066.md) | Der {0} Typ muss IEquatable\<T> implementieren, weil er "ist" überschreibt.
-[CA1067](ca1067.md) | Überschreiben Sie Object. Gleichheits (Objekt) bei der\<Implementierung von IEquatable T>
+[CA1066](ca1066.md) | Der Typ {0} muss "IEquatable" implementieren, \<T> da er "ist mit"
+[CA1067](ca1067.md) | Überschreiben Sie Object. Gleichheits (Objekt), wenn Sie IEquatable implementieren.\<T>
 [CA1068](ca1068.md) | CancellationToken-Parameter müssen zuletzt aufgeführt werden.
 CA1200 | Verwenden Sie keine cref-Tags mit einem Präfix.
 [CA1303](ca1303.md) | Literale nicht als lokalisierte Parameter übergeben.
 [CA1304](ca1304.md) | CultureInfo angeben.
 [CA1305](ca1305.md) | IFormatProvider angeben.
-[CA1307](ca1307.md) | StringComparison angeben.
+[CA1307](ca1307.md) | StringComparison zur Übersichtlichkeit angeben
 [CA1308](ca1308.md) | Zeichenfolgen in Großbuchstaben normalisieren.
 [CA1309](ca1309.md) | Ordinalzeichenfolgen-Vergleich verwenden
 [CA1401](ca1401.md) | P/Invokes dürfen nicht sichtbar sein.
@@ -119,7 +119,7 @@ CA1826 | Verwenden Sie keine Enumerable-Methoden für indizierbare Auflistungen.
 [CA2000](ca2000.md) | Objekte verwerfen, bevor Bereich verloren geht.
 [CA2002](ca2002.md) | Auf Objekten mit schwacher Identität nicht sperren.
 [CA2007](ca2007.md) | Es empfiehlt sich, die Konfiguration für die erwartete Aufgabe zu aktivieren.
-CA2008 | Erstellen Sie keine Aufgaben, ohne einen TaskScheduler zu übergeben.
+[CA2008](ca2008.md) | Erstellen Sie keine Aufgaben, ohne einen TaskScheduler zu übergeben.
 CA2009 | "Nicht aufzurufende Sammlung" für einen immutablecollection-Wert
 CA2010 | Verwenden Sie immer den Wert, der von mit PreserveSigAttribute markierten Methoden zurückgegeben wird.
 [CA2100](ca2100.md) | SQL-Abfragen auf Sicherheitsrisiken überprüfen.
