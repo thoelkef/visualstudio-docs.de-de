@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646824"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronisierte Einstellungen in Visual Studio
@@ -44,7 +44,7 @@ Wenn Sie dasselbe Personalisierungskonto verwenden, um sich auf mehreren Compute
 
 - Alle Einstellungen auf den Optionsseiten für den XAML-Designer
 
-- Benutzerdefinierte Befehlsaliase. Weitere Informationen zur Definition von Befehlsaliasen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).
+- Benutzerdefinierte Befehlsaliase. Weitere Informationen zum Definieren von Befehls Aliasen finden Sie unter [Visual Studio-Befehls Aliase](../ide/reference/visual-studio-command-aliases.md).
 
 - Benutzerdefinierte Fensterlayouts auf der Seite **Fenster &#124; Fensterlayouts verwalten**
 
@@ -57,5 +57,5 @@ Wenn Sie dasselbe Personalisierungskonto verwenden, um sich auf mehreren Compute
 > [!WARNING]
 > Die Einstellungen werden zwischen Visual Studio 2013 und Visual Studio 2015 nicht synchronisiert. Beim erstmaligen Öffnen von Visual Studio 2015 werden Ihre Einstellungen aus Visual Studio 2013 migriert, sie können danach aber nicht wieder zurück zu Visual Studio 2013 migriert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)

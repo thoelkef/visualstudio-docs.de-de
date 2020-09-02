@@ -28,7 +28,7 @@ Das Setup-Programm versucht bei der Installation des Emulators, diese Voraussetz
 > [!IMPORTANT]
 > Das Setup-Programm für den Emulator überprüft die Voraussetzungen zum Ausführen von Visual Studio-Emulator für Android. Es zeigt Warnungen an, wenn die erforderlichen Komponenten nicht vorhanden sind, es benötigt sie jedoch nicht.
 
-## <a name="Checklist"></a> Kurze Checkliste
+## <a name="quick-checklist"></a><a name="Checklist"></a> Kurze Checkliste
 
 Es folgt eine kurze Checkliste zu den Anforderungen zum Ausführen des Visual Studio-Emulators für Android. Ausführlichere Informationen finden Sie in den nachfolgenden Abschnitten in diesem Thema.
 
