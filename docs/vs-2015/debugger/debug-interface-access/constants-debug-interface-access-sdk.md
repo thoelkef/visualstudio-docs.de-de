@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 931e1ab46793a5ff7e0434949330eaf4dbc820e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164427"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Konstanten (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Diese Zeichenfolgenkonstanten können zum Identifizieren der verschiedenen Abschnitte der ein Programm debuggen Programmdatenbankdatei (PDB) an, über das DIA-SDK verwendet werden.  
+Diese Zeichen folgen Konstanten können verwendet werden, um verschiedene Abschnitte einer Programm-Debug-Datenbankdatei (PDB-Datei) über die Dia SDK zu identifizieren.  
   
 ## <a name="constants"></a>Konstanten  
- Im folgenden werden als C/C++-Makros deklariert.  
+ Folgendes wird als C/C++-Makros deklariert.  
   
 |Makro|Wert|  
 |-----------|-----------|  
@@ -37,11 +37,11 @@ Diese Zeichenfolgenkonstanten können zum Identifizieren der verschiedenen Absch
 |`DiaTable_LineNums`|L"LineNumbers"|  
 |`DiaTable_SegMap`|L"SegmentMap"|  
 |`DiaTable_Dbg`|L"Dbg"|  
-|`DiaTable_InjSrc`|L "InjectedSource"|  
+|`DiaTable_InjSrc`|L "injetedsource"|  
 |`DiaTable_FrameData`|L"FrameData"|  
   
 ## <a name="example"></a>Beispiel  
- Hier ist ein Beispiel mit einer der folgenden Symbole:  
+ Im folgenden finden Sie ein Beispiel für die Verwendung eines der folgenden Symbole:  
   
 ```cpp#  
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)  
@@ -58,8 +58,8 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>Anforderungen  
  Header: dia2.h  
   
-## <a name="see-also"></a>Siehe auch  
- [Referenz](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Angabe](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

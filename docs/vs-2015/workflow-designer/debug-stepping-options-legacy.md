@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656875"
 ---
 # <a name="debug-stepping-options-legacy"></a>Optionen zum schrittweisen Debuggen (Vorgängerversion)
@@ -35,5 +35,5 @@ In diesem Thema wird beschrieben, wie [!INCLUDE[wf](../includes/wf-md.md)]-Anwen
 
   Wählen Sie zum Debuggen von Zustandsautomatworkflows der Vorgängerversion die Option zum schrittweisen Ausführen von Instanzen aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Debuggen von Legacy Workflows](../workflow-designer/debugging-legacy-workflows.md) Gewusst [wie: Ändern der Option zum schrittweise Debuggen](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

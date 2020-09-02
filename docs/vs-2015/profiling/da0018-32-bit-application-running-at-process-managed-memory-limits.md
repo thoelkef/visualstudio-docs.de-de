@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844733"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Regel-ID | DA0018 |  
@@ -38,7 +38,7 @@ Regel-ID | DA0018 |
   
  Die Regel wird nur für 32-Bit-Anwendungen ausgelöst, die auf 32-Bit-Computern ausgeführt werden.  
   
-## <a name="rule-description"></a>Regelbeschreibung  
+## <a name="rule-description"></a>Beschreibung der Regel  
  Die Microsoft .NET-CLR (Common Language Runtime) verfügt über einen automatischen Speicherverwaltungsmechanismus, durch den der Speicher von Objekten, die von der Anwendung nicht mehr verwendet werden, mithilfe eines Garbage Collectors freigegeben wird. Der Garbage Collector ist generationsorientiert, da angenommen wird, dass viele Speicherbelegungen kurzlebig sind. Lokale Variablen müssen beispielsweise kurzlebig sein. Neu erstellte Objekte beginnen in Generation 0 (gen 0) und werden zu Generation 1, wenn sie nach einer Ausführung der Garbage Collection noch vorhanden sind, und schließlich zu Generation 2, wenn sie von der Anwendung auch weiterhin verwendet werden.  
   
  Verwaltete Objekte, die größer als 85 KB sind, werden dem Heap für große Objekte zugewiesen. Dort werden Garbage Collections und Komprimierungen seltener ausgeführt als bei kleineren Objekten. Große Objekte werden separat verwaltet, da angenommen wird, dass sie beständiger sind, und da das Mischen von beständigen und großen Objekten mit häufig zugewiesenen kleineren Objekten zu einer starken Fragmentierung des Heaps führen kann.  
@@ -54,13 +54,13 @@ Regel-ID | DA0018 |
   
 - Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.  
   
-   \- oder -  
+   - oder -  
   
 - Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.  
   
-  Wenn Sie die Verwendung von verwalteten Speicherressourcen optimieren möchten, sammeln Sie im Rahmen einer .NET-Speicherbelegungsprofilerstellung Daten zur verwalteten Speicherbelegung. In den [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md) finden Sie Informationen zum Speicherbelegungsmuster der Anwendung.  
+  Wenn Sie die Verwendung von verwalteten Speicherressourcen optimieren möchten, sammeln Sie im Rahmen einer .NET-Speicherbelegungsprofilerstellung Daten zur verwalteten Speicherbelegung. Überprüfen Sie die Berichte der .net-Arbeits [Speicherdaten Sichten](../profiling/dotnet-memory-data-views.md) , um das Muster der Speicher Belegung der Anwendung zu verstehen.  
   
-  Ermitteln Sie mithilfe der [Objektlebensdaueransicht](../profiling/object-lifetime-view.md) welche Datenobjekte des Programms bei der Generierung noch vorhanden sind und von dort aus freigegeben werden.  
+  Verwenden Sie die [Objekt Lebensdauer-Ansicht](../profiling/object-lifetime-view.md) , um zu bestimmen, welche der Datenobjekte des Programms in Generierung verbleiben und dann von dort aus freigegeben werden.  
   
   Ermitteln Sie mithilfe der [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md) den Ausführungspfad, der zu diesen Speicherbelegungen geführt hat.  
   

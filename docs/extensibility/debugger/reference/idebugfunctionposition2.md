@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2 | Microsoft Docs
+title: IDebugFunctionPosition2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728307"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
@@ -29,13 +29,13 @@ IDebugFunctionPosition2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debug-Modul (DE) implementiert diese Schnittstelle, um die Position einer Funktion in einem Quelldokument darzustellen.
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um die Position einer Funktion innerhalb eines Quelldokuments darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Diese Schnittstelle wird als Teil einer [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Union (insbesondere einer [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) Struktur) bereitgestellt, die wiederum Teil der [BP_REQUEST_INFO-Struktur](../../../extensibility/debugger/reference/bp-request-info.md) ist, die zum Erstellen eines ausstehenden Haltepunkts verwendet wird.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Diese Schnittstelle wird als Teil einer [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Union (insbesondere einer [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) Struktur) bereitgestellt, die wiederum Teil der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur ist, die beim Erstellen eines ausstehenden halte Punkts verwendet wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IDebugFunctionPosition2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugFunctionPosition2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
@@ -43,12 +43,12 @@ IDebugFunctionPosition2 : IUnknown
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Ruft den Offset vom Anfang der Funktion ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Die Position, die durch diese Schnittstelle dargestellt wird, ist textbasiert, insbesondere eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur.
+ Die durch diese Schnittstelle dargestellte Position ist Text basiert, insbesondere eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

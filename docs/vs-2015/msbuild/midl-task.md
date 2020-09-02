@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 336a02927374e856a2d6f5a55eb03c5ae1ac7037
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845191"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
@@ -40,7 +40,7 @@ ms.locfileid: "75845191"
 Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („midl.exe“). Weitere Informationen finden Sie auf der [MSDN](https://msdn.microsoft.com/)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
 ## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
+ In der folgenden Tabelle werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.  
   
 - **AdditionalIncludeDirectories**  
   
@@ -52,9 +52,9 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **AdditionalOptions**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
-     Eine Liste der Befehlszeilenoptionen. Zum Beispiel **„** _/option1 /option2 /option#_ “. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.  
+     Eine Liste der Befehlszeilenoptionen. Beispiel: **"**_/option1/option2/Option #_". Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.  
   
      Weitere Informationen finden Sie auf der [MSDN](https://msdn.microsoft.com/)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
@@ -68,7 +68,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **ClientStubFile**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Namen der Client-Stub-Datei für eine RPC-Schnittstelle an.  
   
@@ -76,7 +76,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **CPreprocessOptions**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt Optionen für die Übergabe an den C++-Präprozessor an. Geben eine durch Leerzeichen getrennte Liste mit Präprozessoroptionen an.  
   
@@ -84,7 +84,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **DefaultCharType**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den standardmäßigen Zeichentyp an, den der C-Compiler verwendet, um den generierten Code zu kompilieren.  
   
@@ -100,7 +100,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **DllDataFileName**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Dateinamen für die generierte *dlldata*-Datei für eine Proxy-DLL an.  
   
@@ -108,7 +108,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **EnableErrorChecks**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Fehlertyp an, und überprüft, dass die generierten Stubs in der Laufzeit ausgeführt werden.  
   
@@ -118,7 +118,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
     |-----------|--------------------------|  
     |**Keine**|**/error none**|  
     |**EnableCustom**|**/error**|  
-    |**All**|**/error all**|  
+    |**Alle**|**/error all**|  
   
      Weitere Informationen finden Sie auf der [MSDN](https://msdn.microsoft.com/)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error**.  
   
@@ -144,7 +144,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, wird überprüft, ob sich die Enumerationswerte im zulässigen Bereich befinden.  
   
-     Weitere Informationen finden Sie auf der Seite „Befehlszeilenhilfe“ ( **/?** ) für midl.exe unter der Option **error-Enumeration**.  
+     Weitere Informationen finden Sie auf der Seite „Befehlszeilenhilfe“ (**/?**) für midl.exe unter der Option **error-Enumeration**.  
   
 - **ErrorCheckRefPointers**  
   
@@ -164,7 +164,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **GenerateClientFiles**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Legt fest, ob der Compiler clientseitige C-Quelldateien für eine RPC-Schnittstelle generiert.  
   
@@ -179,7 +179,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **GenerateServerFiles**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Legt fest, ob der Compiler serverseitige C-Quelldateien für eine RPC-Schnittstelle generiert.  
   
@@ -210,7 +210,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **HeaderFileName**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Namen der generierten Headerdatei an.  
   
@@ -226,7 +226,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **InterfaceIdentifierFileName**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Namen für die *Schnittstellen-Bezeichnerdatei* für die COM-Schnittstelle an. Dies setzt den Standardnamen außer Kraft, der durch ein Anhängen von „_i.c“ an den IDL-Dateinamen entsteht.  
   
@@ -242,7 +242,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **MkTypLibCompatible**  
   
-     Optionaler **boolescher**-Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Wenn `true`, dann muss das Format der Eingabedatei mit mktyplib.exe Version 2.03 kompatibel sein.  
   
@@ -250,7 +250,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **OutputDirectory**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt das Standardverzeichnis an, in dem die MIDL-Aufgabe Ausgabedateien schreibt.  
   
@@ -266,7 +266,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **ProxyFileName**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Namen für die Schnittstellen-Proxydatei für die COM-Schnittstelle an.  
   
@@ -274,7 +274,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **RedirectOutputAndErrors**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Leitet Ausgaben, wie z.B. Fehlermeldungen und Warnungen, aus der Standardausgabe in die angegebenen Dateien weiter.  
   
@@ -282,13 +282,13 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **ServerStubFile**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Namen der Server-Stub-Datei für eine RPC-Schnittstelle an.  
   
      Weitere Informationen finden Sie auf der [MSDN](https://msdn.microsoft.com/)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/sstub**. Siehe auch den Parameter **ClientStubFile** in dieser Tabelle.  
   
-- **Source**  
+- **Quelle**  
   
      Erforderlicher `ITaskItem[]`-Parameter.  
   
@@ -296,7 +296,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **StructMemberAlignment**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt die Zuweisung (*Komprimierungsebene*) der Strukturen im Zielsystem an.  
   
@@ -314,7 +314,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **SuppressCompilerWarnings**  
   
-     Optionaler **Boolean**-Parameter.  
+     Optionaler **boolescher** Parameter.  
   
      Wenn `true`, dann werden Warnmeldungen aus der MIDL-Aufgabe unterdrückt.  
   
@@ -330,7 +330,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **TargetEnvironment**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt die Umgebung an, in der die Anwendung ausgeführt wird.  
   
@@ -353,7 +353,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **TypeLibFormat**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt das Format der Typbibliotheksdatei an.  
   
@@ -368,7 +368,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **TypeLibraryName**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Namen der Typbibliotheksdatei an.  
   
@@ -376,7 +376,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **UndefinePreprocessorDefinitions**  
   
-     Optionaler **String[]** -Parameter.  
+     Optionaler **String []** -Parameter.  
   
      Entfernt jede vorherige Definition eines Namens, indem er den Namen wie eine `#undefine`-Direktive an den C-Präprozessor weitergibt. Geben Sie eine oder mehrere vorher definierte Namen ein.  
   
@@ -402,7 +402,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **WarningLevel**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Schweregrad (*Warnstufe*) von auszugebenden Warnungen an. Für den Wert 0 wird keine Warnung ausgegeben. Andernfalls wird eine Warnung ausgegeben, wenn ihre Warnstufe numerisch kleiner als oder gleich der angegebene Wert ist.  
   
@@ -418,7 +418,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Weitere Informationen finden Sie auf der [MSDN](https://msdn.microsoft.com/)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/W**. Siehe auch den Parameter **WarningLevel** in dieser Tabelle.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

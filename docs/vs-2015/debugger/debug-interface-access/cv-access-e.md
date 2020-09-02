@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce5997555b37cf5ab30f091e7124b5025284c0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164374"
 ---
-# <a name="cvaccesse"></a>CV_access_e
+# <a name="cv_access_e"></a>CV_access_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt den Bereich, Sichtbarkeit (Zugriffsebene) von Memberfunktionen und Variablen.  
+Gibt den Bereich der Sichtbarkeit (Zugriffsebene) von Element Funktionen und Variablen an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,23 +35,23 @@ typedef enum CV_access_e { 
 } CV_access_e;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  CV_private  
- Element verfügt über privaten Zugriff.  
+ Mitglied hat privaten Zugriff.  
   
  CV_protected  
- Member hat Zugriff geschützt werden.  
+ Mitglied hat geschützten Zugriff.  
   
  CV_public  
- Element verfügt über öffentlichen Zugriff.  
+ Mitglied hat öffentlichen Zugriff.  
   
-## <a name="remarks"></a>Hinweise  
- Die `friend` Zugriffsspezifizierer ist hier nicht enthalten, da sie in der Regel von nicht-Memberfunktionen verwendet wird, die Zugriff auf private oder geschützte Elemente der Klasse haben. Verwenden der [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) Methode zum Suchen von Symbolen mit `SymTagFriend` Zugriff.  
+## <a name="remarks"></a>Bemerkungen  
+ Der `friend` Zugriffsspezifizierer ist hier nicht enthalten, da er in der Regel von nicht-Member-Funktionen verwendet wird, die Zugriff auf private und geschützte Elemente der Klasse haben. Verwenden Sie die [idiasymmetribol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) -Methode, um Symbole mit Zugriff zu suchen `SymTagFriend` .  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [Idiasymmetribol:: get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

@@ -1,5 +1,5 @@
 ---
-title: Grafik Ereignisliste | Microsoft-Dokumentation
+title: Grafikereignisliste | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845045"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
@@ -25,7 +25,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
   
  Dies ist die Ereignisliste:  
   
- ![Eine Liste von Ereignissen mit "index" im Namen.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![Eine Liste von Ereignissen mit „Index“ im Namen.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Verwenden der Ereignisliste  
  Wenn Sie ein Ereignis in der Ereignisliste auswählen, wird dieses in den Informationen wiedergegeben, die von anderen Grafikanalysetools angezeigt werden. Wenn Sie die Ereignisliste in Verbindung mit diesen anderen Tools verwenden, können Sie ein eventuelles Renderingproblem detailliert untersuchen, um seine Ursache zu ermitteln. Mehr Informationen über die Lösung von Renderingproblemen durch Verwendung der Ereignisliste in Verbindung mit anderen Grafikanalysetools finden Sie unter [Beispiele](../debugger/graphics-diagnostics-examples.md).  
@@ -71,9 +71,9 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 |Symbol|Ereignisbeschreibung|  
 |----------|-----------------------|  
 |(kein Symbol)|Allgemeines Ereignis<br /> Ein Ereignis, das kein benutzerdefiniertes Ereignis, keine benutzerdefinierte Ereignisgruppe und kein Zeichnen-Ereignis ist.|  
-|![Das Zeichnungs Ereignis Symbol](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Zeichnen-Ereignis<br /> Markiert ein Zeichnen-Ereignis, das während des erfassten Frames aufgetreten ist.|  
-|![Symbol für&#45;benutzerdefiniertes Ereignis Marker](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Benutzerdefinierte Ereignisgruppe<br /> Gruppiert verwandte Ereignisse auf von der App definierte Art.|  
-|![Symbol für&#45;benutzerdefiniertes Ereignis Marker](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Benutzerdefinierter Ereignismarker<br /> Markiert einen bestimmten Speicherort auf von der App definierte Art.|  
+|![Symbol für Zeichnen-Ereignis](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Zeichnen-Ereignis<br /> Markiert ein Zeichnen-Ereignis, das während des erfassten Frames aufgetreten ist.|  
+|![Symbol „Benutzerdefinierter Ereignismarker“](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Benutzerdefinierte Ereignisgruppe<br /> Gruppiert verwandte Ereignisse auf von der App definierte Art.|  
+|![Symbol „Benutzerdefinierter Ereignismarker“](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Benutzerdefinierter Ereignismarker<br /> Markiert einen bestimmten Speicherort auf von der App definierte Art.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Markieren von benutzerdefinierten Ereignissen in Ihrer App  
  Benutzerdefinierte Ereignisse sind spezifisch für Ihre App. Sie können sie verwenden, um wichtige Ereignisse zuzuordnen, die in Ihrer App mit Ereignissen in der Grafikereignisliste auftreten. Sie können z. B. benutzerdefinierte Ereignisgruppen erstellen, um verwandte Ereignisse in Gruppen oder Hierarchien zu organisieren – z. B. diejenigen, die Ihre Benutzeroberfläche rendern –, sodass Sie die Ereignisliste leichter durchsuchen können, oder Sie können Marker erstellen, wenn eine bestimmte Art von Objekten gezeichnet wird, sodass Sie leicht die entsprechenden Grafikereignisse in der Ereignisliste finden können.  
@@ -101,5 +101,5 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
   
  Sie können jede dieser APIs verwenden, die Ihre Version von Direct3D unterstützt – wenn Sie z. B. wenn Sie die API Direct3D 11.1 verwenden möchten, können Sie entweder `SetMarker` oder `D3DPerf_SetMarker` verwenden, um einen Ereignismarker zu erstellen, aber nicht `SetMarkerInt` , da es nur in Direct3D 11.2 enthalten ist. Sie können auch APIs, die verschiedene Versionen von Direct3D verwenden, zusammen in derselben App kombinieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus](../debugger/walkthrough-missing-objects-due-to-device-state.md)

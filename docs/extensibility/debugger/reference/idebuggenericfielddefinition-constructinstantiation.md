@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::KonstruktInstantiation | Microsoft Docs
+title: 'Idebuggenericfielddefinition:: constructinstantiierung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728261"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-Erstellt eine Feldinstanz, die ein Array von Typargumenten erhält.
+Erstellt eine Feld Instanz, wenn ein Array von Typargumenten angegeben wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,19 +44,19 @@ int ConstructInstantiation(
 
 ## <a name="parameters"></a>Parameter
 `cArgs`\
-[in] Anzahl der Argumente `ppArgs` im Array.
+in Anzahl der Argumente im `ppArgs` Array.
 
 `ppArgs`\
-[in] Array, das die Typargumente enthält. Die Typargumente müssen geschlossene Typen sein (nicht generische oder vollständig instanziierte Generika).
+in Ein Array, das die Typargumente enthält. Die Typargumente müssen geschlossene Typen sein (nicht generische oder vollständig instanziierte Generika).
 
 `ppConstructedField`\
-[out] Gibt die [IDebugField-Schnittstelle](../../../extensibility/debugger/reference/idebugfield.md) zurück, die das neue Feld darstellt.
+vorgenommen Gibt die [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle zurück, die das neue Feld darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Einschränkungen werden nicht überprüft.
+ Einschränkungen werden nicht geprüft.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)
