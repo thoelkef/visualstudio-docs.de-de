@@ -1,5 +1,5 @@
 ---
-title: Refactoring umbenennenC#() | Microsoft-Dokumentation
+title: Refactoring umbenennen (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0db7696268e5e3d24d005fbf35a08b330f2dc849
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667477"
 ---
 # <a name="rename-refactoring-c"></a>Umgestaltung durch Umbenennen (C#)
@@ -33,7 +33,7 @@ ms.locfileid: "72667477"
 
  Refactoring umbenennen ist in den folgenden Visual Studio-Features verfügbar:
 
-|Feature|Verhalten der Umgestaltung in der IDE|
+|Funktion|Verhalten der Umgestaltung in der IDE|
 |-------------|----------------------------------------|
 |Code-Editor|Im Code-Editor ist Refactoring Umbenennen verfügbar, wenn Sie den Cursor auf bestimmten Typen von Code Symbolen positionieren. Wenn sich der Cursor an dieser Position befindet, können Sie den Befehl **Umbenennen** aufrufen, indem Sie die Tastenkombination (Strg + r, Strg + r) eingeben, oder indem Sie den Befehl **Umbenennen** in einem Smarttag, einem Kontextmenü oder dem Menü **umgestalten** auswählen.|
 |Klassenansicht|Wenn Sie in Klassenansicht einen Bezeichner auswählen, ist im Kontextmenü und **Umgestaltungs** Menü die Option Umgestaltung umbenennen verfügbar.|
@@ -49,9 +49,9 @@ ms.locfileid: "72667477"
 |Feld|Ändert die Deklaration und die Verwendungen des Felds in den neuen Namen.|
 |Lokale Variable|Ändert die Deklaration und die Verwendungen der Variablen in den neuen Namen.|
 |Methode|Ändert den Namen der Methode und alle Verweise auf diese Methode in den neuen Namen. **Hinweis:**  Wenn Sie eine Erweiterungsmethode umbenennen, wird der Umbenennungs Vorgang an alle Instanzen der Methode weitergegeben, die sich im Gültigkeitsbereich befinden, unabhängig davon, ob die Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird. Weitere Informationen finden Sie unter [Erweiterungsmethoden](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|
-|Namespace|Ändert den Namen des Namespace in die-Deklaration, alle `using`-Anweisungen und voll qualifizierte Namen in den neuen Namen. **Hinweis:**  Wenn Sie einen Namespace umbenennen, aktualisiert [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auch die Eigenschaft **Standard Namespace** auf der Seite **Anwendung** des **Projekt-Designers**. Diese Eigenschaft kann nicht zurückgesetzt werden, indem Sie im Menü **Bearbeiten** die Option **Rückgängig** auswählen. Zum Zurücksetzen des **Standard Namespace** -Eigenschafts Werts müssen Sie die-Eigenschaft im **Projekt-Designer**ändern. Weitere Informationen finden Sie unter [Seite "Anwendung](../ide/reference/application-page-project-designer-csharp.md)".|
-|property|Ändert die Deklaration und die Verwendungen der Eigenschaft in den neuen Namen.|
-|Geben Sie Folgendes ein:|Ändert alle Deklarationen und alle Verwendungen des Typs in den neuen Namen, einschließlich Konstruktoren und Dekonstruktoren. Bei partiellen Typen wird der Umbenennungs Vorgang an alle Teile weitergegeben.|
+|Namespace|Ändert den Namen des Namespace in der Deklaration, allen `using` Anweisungen und voll qualifizierten Namen in den neuen Namen. **Hinweis:**  Wenn Sie einen Namespace umbenennen, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualisiert auch die Eigenschaft **Standard Namespace** auf der Seite **Anwendung** des **Projekt-Designers**. Diese Eigenschaft kann nicht zurückgesetzt werden, indem Sie im Menü **Bearbeiten** die Option **Rückgängig** auswählen. Zum Zurücksetzen des **Standard Namespace** -Eigenschafts Werts müssen Sie die-Eigenschaft im **Projekt-Designer**ändern. Weitere Informationen finden Sie unter [Seite "Anwendung](../ide/reference/application-page-project-designer-csharp.md)".|
+|Eigenschaft|Ändert die Deklaration und die Verwendungen der Eigenschaft in den neuen Namen.|
+|type|Ändert alle Deklarationen und alle Verwendungen des Typs in den neuen Namen, einschließlich Konstruktoren und Dekonstruktoren. Bei partiellen Typen wird der Umbenennungs Vorgang an alle Teile weitergegeben.|
 
 #### <a name="to-rename-an-identifier"></a>So benennen Sie einen Bezeichner um
 
@@ -76,13 +76,13 @@ ms.locfileid: "72667477"
     }
     ```
 
-2. Platzieren Sie den Cursor in `MethodB`, entweder in der Methoden Deklaration oder im Methoden Aufruf.
+2. Platzieren Sie den Cursor `MethodB` entweder in der Methoden Deklaration oder im Methoden Aufruf.
 
 3. Wählen Sie im Menü **umgestalten** die Option **Umbenennen**aus. Das Dialogfeld **Umbenennen** wird angezeigt.
 
      Sie können auch mit der rechten Maustaste auf den Cursor klicken, im Kontextmenü auf **umgestalten** zeigen und dann auf **Umbenennen** klicken, um das Dialogfeld **Umbenennen** anzuzeigen.
 
-4. Geben Sie im Feld **neuer Name** `MethodC` ein.
+4. Geben Sie im Feld **neuer Name den Namen** ein `MethodC` .
 
 5. Aktivieren Sie das Kontrollkästchen **in Kommentaren suchen** .
 
@@ -124,24 +124,24 @@ ms.locfileid: "72667477"
 
      Bewegen Sie den Mauszeiger über die Smarttag-Eingabeaufforderung, um das Smarttag anzuzeigen. Bewegen Sie dann den Mauszeiger über das Smarttag, und klicken Sie auf den Pfeil nach unten, um das Smarttag-Menü anzuzeigen.
 
-4. Wählen Sie das Menü Element **"\<identifer1 >" in "\<identifier2 >" Umbenennen** aus, um Umbenennungs Umgestaltung ohne Vorschau der Änderungen an Ihrem Code aufzurufen. Alle Verweise auf **\<identifer1 >** werden automatisch auf **\<identifier2 >** aktualisiert.
+4. Wählen Sie das Menü Element **" \<identifer1> " \<identifier2> in "" Umbenennen** aus, um Umbenennungs Umgestaltung ohne Vorschau der Änderungen an Ihrem Code aufzurufen. Alle Verweise auf werden **\<identifer1>** automatisch auf aktualisiert **\<identifier2>** .
 
      - oder -
 
      Wählen Sie das Menü Element **Umbenennen mit Vorschau** aus, um Umbenennungs Umgestaltung mit einer Vorschau der Änderungen an Ihrem Code aufzurufen. Das Dialogfeld **Vorschau der Änderungen** wird angezeigt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 ## <a name="renaming-implemented-or-overridden-members"></a>Umbenennen implementierter oder überschriebener Member
- Wenn Sie einen Member **Umbenennen** , der entweder implementiert bzw. außer Kraft gesetzt wird oder von Membern in anderen Typen implementiert bzw. überschrieben wird, zeigt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Dialogfeld an, das besagt, dass der Umbenennungs Vorgang kaskadierende Updates verursacht. Wenn Sie auf " **weiter**" klicken, sucht die Refactoring-Engine rekursiv alle Elemente in Basis Typen und abgeleiteten Typen, die über die Beziehung "implementiert"/"Overrides" mit dem umbenannten Member verfügen.
+ Wenn Sie einen Member **Umbenennen** , der entweder implementiert bzw. außer Kraft gesetzt oder von Membern in anderen Typen implementiert bzw. überschrieben wird, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zeigt ein Dialogfeld an, das besagt, dass der Umbenennungs Vorgang zu kaskadierenden Updates führt. Wenn Sie auf " **weiter**" klicken, sucht die Refactoring-Engine rekursiv alle Elemente in Basis Typen und abgeleiteten Typen, die über die Beziehung "implementiert"/"Overrides" mit dem umbenannten Member verfügen.
 
  Das folgende Codebeispiel enthält Elemente mit implementierten/über schreibungen-Beziehungen.
 
  [!code-csharp[CsUsingCsIDERefactor#1](../snippets/csharp/VS_Snippets_VBCSharp/CsUsingCsIDERefactor/CS/Class1.cs#1)]
 
- Im vorherigen Beispiel benennt das Umbenennen von `C.Method()` ebenfalls `Ibase.Method()` um, da `C.Method()` `Ibase.Method()` implementiert. Als nächstes sieht das Umgestalten Engine rekursiv, dass `Ibase.Method()` von `Derived.Method()` implementiert wird, und benennt `Derived.Method()` um. Die umgestalten Engine benennt `Base.Method()` nicht um, da `Derived.Method()` nicht `Base.Method()` überschreibt. Die Refactoring-Engine wird hier angehalten, es sei denn, Sie haben **über Ladungen umbenennen** im Dialogfeld **Umbenennen** aktiviert.
+ Im vorherigen Beispiel wird durch das Umbenennen `C.Method()` ebenfalls umbenannt, `Ibase.Method()` da `C.Method()` implementiert `Ibase.Method()` . Im nächsten Schritt wird die umgestalten Engine rekursiv sehen, dass `Ibase.Method()` von implementiert wird `Derived.Method()` und umbenannt wird `Derived.Method()` . Die umgestalten Engine wird nicht umbenannt `Base.Method()` , da von `Derived.Method()` nicht überschrieben wird `Base.Method()` . Die Refactoring-Engine wird hier angehalten, es sei denn, Sie haben **über Ladungen umbenennen** im Dialogfeld **Umbenennen** aktiviert.
 
- Wenn **Überladungen umbenennen** aktiviert ist, benennt das Umgestalten Engine `Derived.Method(int i)` um, da es `Derived.Method()` überlastet, `Base.Method(int i)`, weil es durch `Derived.Method(int i)` überschrieben wurde, und `Base.Method()`, weil es eine Überladung von `Base.Method(int i)` ist.
+ Wenn **Überladungen umbenennen** aktiviert ist, wird die Umgestaltungs-Engine umbenannt `Derived.Method(int i)` , da `Derived.Method()` Sie `Base.Method(int i)` überladen wird, da Sie von überschrieben wird, `Derived.Method(int i)` und da es sich um eine Überladung `Base.Method()` von handelt `Base.Method(int i)` .
 
 > [!NOTE]
 > Wenn Sie einen Member umbenennen, der in einer referenzierten Assembly definiert wurde, wird in einem Dialogfeld erläutert, dass das Umbenennen zu Buildfehlern führt.
@@ -154,7 +154,7 @@ var a = new { ID = 1};
 var b = new { ID = 2};
 ```
 
- Im vorangehenden Code wird das Umbenennen von `ID` `ID` in beiden Anweisungen geändert, da Sie denselben zugrunde liegenden anonymen Typ aufweisen.
+ Im vorangehenden Code wird die Umbenennung `ID` `ID` in beiden Anweisungen geändert, da Sie denselben zugrunde liegenden anonymen Typ aufweisen.
 
 ```csharp
 var companyIDs =
@@ -166,7 +166,7 @@ var orderIDs =
     select new { ID = o.ID, Item = o.Name};
 ```
 
- Im vorangehenden Code wird durch das Umbenennen von `ID` nur eine Instanz von `ID` umbenannt, da `companyIDs` und `orderIDs` nicht über die gleichen Eigenschaften verfügen.
+ Im vorangehenden Code `ID` wird durch das Umbenennen nur eine Instanz von umbenannt, `ID` da `companyIDs` und `orderIDs` nicht über die gleichen Eigenschaften verfügen.
 
-## <a name="see-also"></a>Siehe auch
- [Refactoring (C#)](../csharp-ide/refactoring-csharp.md) [Anonyme Typen](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+## <a name="see-also"></a>Weitere Informationen
+ Anonyme [Refactoring-Typen (c#)](../csharp-ide/refactoring-csharp.md) [Anonymous Types](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

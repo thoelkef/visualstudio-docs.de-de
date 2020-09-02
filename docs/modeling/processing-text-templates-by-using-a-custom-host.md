@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591683"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
@@ -44,16 +44,16 @@ string output = engine.ProcessTemplate(templateString, host);
 
  Die Anwendung muss die Vorlage finden und bereitstellen und die Ausgabe verarbeiten.
 
- Im `host`-Parameter müssen Sie eine Klasse bereitstellen, die [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))implementiert. Diese Methode wird von der Engine aufgerufen.
+ Im- `host` Parameter müssen Sie eine Klasse bereitstellen, die [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))implementiert. Diese Methode wird von der Engine aufgerufen.
 
  Der Host muss in der Lage sein, Fehler zu protokollieren und Verweise auf Assemblys und Includedateien aufzulösen, er muss eine Anwendungsdomäne bereitstellen, in der die Vorlage ausgeführt werden kann, und den entsprechenden Prozessor für jede Direktive aufrufen.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> ist in " **Microsoft. VisualStudio. TextTemplating.\*0. dll**" definiert, und " [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) " ist in " **Microsoft. VisualStudio. TextTemplating. Interfaces.\*. 0. dll**" definiert.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> ist in **Microsoft. VisualStudio. TextTemplating. \*.0.dll**definiert, und [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) ist in **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0.dll**definiert.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Exemplarische Vorgehensweise: Beim Erstellen eines benutzerdefinierten Textvorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md) wird gezeigt, wie Sie einen benutzerdefinierten Textvorlagen Host erstellen, der die Text Vorlagen Funktionalität außerhalb von Visual Studio verfügbar macht.
+ Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Text Vorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md) Zeigt, wie Sie einen benutzerdefinierten Textvorlagen Host erstellen, der die Textvorlagen Funktionalität außerhalb von Visual Studio verfügbar macht.
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
  [Itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Verwandte Abschnitte

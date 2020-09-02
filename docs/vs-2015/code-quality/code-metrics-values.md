@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23dba7b7c29c05b55af2c461f36bdaa4b46b948f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667721"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
@@ -37,7 +37,7 @@ Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die En
 
 - **Vererbungs Tiefe** – gibt die Anzahl der Klassendefinitionen an, die sich auf den Stamm der Klassenhierarchie ausdehnen. Die tiefere Hierarchie umso schwieriger ist es, zu verstehen, wo bestimmte Methoden und Felder definiert oder/neu definiert werden.
 
-- **Klassen Kopplung** – misst die Kopplung mit eindeutigen Klassen durch Parameter, lokale Variablen, Rückgabe Typen, Methodenaufrufe, generische oder Vorlagen Instanziierungen, Basisklassen, Schnittstellen Implementierungen, für externe Typen definierte Felder und Attribute Auszeichnung. Ein guter Software Entwurf legt fest, dass die Typen und Methoden eine hohe Kohäsion und eine geringe Kopplung aufweisen sollten. Hohe Kopplung weist auf einen Entwurf hin, der aufgrund der vielen Abhängigkeiten von anderen Typen schwierig zu verwenden und zu warten ist.
+- **Klassen Kopplung** – misst die Kopplung mit eindeutigen Klassen durch Parameter, lokale Variablen, Rückgabe Typen, Methodenaufrufe, generische oder Vorlagen Instanziierungen, Basisklassen, Schnittstellen Implementierungen, für externe Typen definierte Felder und die Attribut Ergänzung. Ein guter Software Entwurf legt fest, dass die Typen und Methoden eine hohe Kohäsion und eine geringe Kopplung aufweisen sollten. Hohe Kopplung weist auf einen Entwurf hin, der aufgrund der vielen Abhängigkeiten von anderen Typen schwierig zu verwenden und zu warten ist.
 
 - **Codezeilen** – gibt die ungefähre Anzahl von Zeilen im Code an. Die Anzahl basiert auf dem IL-Code und ist daher nicht die genaue Anzahl von Zeilen in der Quell Code Datei. Eine sehr hohe Anzahl kann darauf hindeuten, dass ein Typ oder eine Methode versucht, zu viele Aufgaben zu erledigen, und dass Sie aufgeteilt werden sollte. Es kann auch darauf hindeuten, dass der Typ oder die Methode möglicherweise schwierig zu verwalten ist.
 
@@ -51,5 +51,5 @@ Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die En
 
  Für Windows Forms generierter Code wird nicht ignoriert, da es sich um einen Code handelt, den der Entwickler sehen und ändern kann.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

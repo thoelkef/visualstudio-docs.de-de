@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591813"
 ---
 # <a name="t4-output-directive"></a>T4 Output-Direktive
 
-In Visual Studio-Textvorlagen wird die `output`-Anweisung verwendet, um die Dateinamenerweiterung und die Codierung der transformierten Datei zu definieren.
+In Visual Studio-Textvorlagen `output` wird die-Direktive verwendet, um die Dateinamenerweiterung und die Codierung der transformierten Datei zu definieren.
 
  Wenn Ihr Visual Studio-Projekt beispielsweise eine Vorlagen Datei mit dem Namen **MyTemplate.tt** enthält, die die folgende Anweisung enthält:
 

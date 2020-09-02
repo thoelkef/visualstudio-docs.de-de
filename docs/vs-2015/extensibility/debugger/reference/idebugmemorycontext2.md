@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f5a0533e2f7ce50dce7ccdf1285e4ab28a4b7a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146359"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle stellt eine Position im Adressraum des Computers, die zu debuggende Programm wird ausgeführt.  
+Diese Schnittstelle stellt eine Position im Adressraum des Computers dar, auf dem das gedestete Programm ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,35 +31,35 @@ IDebugMemoryContext2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle, um eine Adresse im Speicher darstellen.  
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um eine Adresse im Arbeitsspeicher darzustellen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ein Aufruf von [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) oder [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md) dieser Schnittstelle zurück. Außerdem Aufrufe von [hinzufügen](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md) und [Subtract](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md) neue Kopien dieser Schnittstelle zurück, nachdem die entsprechenden arithmetische Operation angewendet wurde.  
+ Diese Schnittstelle wird von einem [getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) -oder [getmemorycontext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md) -Befehl zurückgegeben. Außerdem geben Aufrufe zum [addieren](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md) und [subtrahieren](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md) neue Kopien dieser Schnittstelle zurück, nachdem die entsprechende arithmetische Operation angewendet wurde.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugMemoryContext2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugMemoryContext2` .  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|Ruft den Benutzer angezeigten Namen für diesen Kontext ab.|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|Ruft die Informationen, die diesem Kontext zu beschreiben.|  
-|[Hinzufügen](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|Fügt einen angegebenen Wert auf dem aktuellen Kontext-Adresse, die ein neuer Kontext erstellt.|  
-|[Subtrahieren](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Subtrahiert einen angegebenen Wert aus dem aktuellen Kontext-Adresse, ein neuer Kontext erstellt.|  
-|[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Vergleicht zwei Kontexten wie angegeben Vergleichsflags.|  
+|[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|Ruft den vom Benutzer anzeigbaren Namen für diesen Kontext ab.|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|Ruft Informationen ab, die diesen Kontext beschreiben.|  
+|[Add (Hinzufügen)](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|Fügt der Adresse des aktuellen Kontexts einen angegebenen Wert hinzu, um einen neuen Kontext zu erstellen.|  
+|[Subtrahieren](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Subtrahiert einen angegebenen Wert von der Adresse des aktuellen Kontexts, um einen neuen Kontext zu erstellen.|  
+|[Vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Vergleicht zwei Kontexte in der durch Compare-Flags gekennzeichneten Weise.|  
   
-## <a name="remarks"></a>Hinweise  
- Visual Studio **Arbeitsspeicher** Fenster Aufrufe [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) zum Abrufen der `IDebugMemoryContext2` -Schnittstelle, den ausgewerteten Ausdruck für die Speicheradresse enthält. Dieser Kontext wird dann an übergeben [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) und [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) an die Adresse für das Lesen und schreiben.  
+## <a name="remarks"></a>Bemerkungen  
+ Das Fenster Arbeits **Speicher** von Visual Studio ruft [getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) auf, um die `IDebugMemoryContext2` Schnittstelle abzurufen, die den ausgewerteten Ausdruck für die Speicheradresse enthält. Dieser Kontext wird dann an " [leseat](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) " und "Write" weitergegeben, um die zu lesende oder zu Schreib [Ende](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) Adresse anzugeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)   
- [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)   
- [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)   
+ [Getmemorycontext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)   
+ [ReadAt '](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)   
  [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)

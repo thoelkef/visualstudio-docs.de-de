@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146096"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Gewusst wie: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen
@@ -37,5 +37,5 @@ Visual Studio 2010 Premium stellt Filter für Leistungsberichte bereit, sodass d
   
 3. Deaktivieren Sie unter **Allgemeine Einstellungen** das Kontrollkästchen **Enable Just My Code** (Nur eigenen COde aktivieren).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)

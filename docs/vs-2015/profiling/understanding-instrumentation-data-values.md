@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145478"
 ---
-# <a name="understanding-instrumentation-data-values"></a>Grundlagen zu Instrumentierungsdatenwerten
+# <a name="understanding-instrumentation-data-values"></a>Grundlagen zu Instrumentationsdatenwerten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Profilerstellungsmethode *Instrumentation* von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zeichnet detaillierte Informationen zur zeitlichen Steuerung für die Funktionsaufrufe, Zeilen und Anweisungen in der profilierten Anwendung auf.  
@@ -34,7 +34,7 @@ Die Profilerstellungsmethode *Instrumentation* von [!INCLUDE[vsprvs](../includes
   
 - Ob das Betriebssystem während des Intervalls einen Vorgang ausgeführt hat. Das Betriebssystem könnte z.B. von der Festplatte lesen oder auf die Festplatte schreiben oder zwischen dem Zielthread und einem anderen Thread in einem anderen Prozess wechseln.  
   
-  **Voraussetzungen**  
+  **Anforderungen**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -98,6 +98,6 @@ Die Profilerstellungsmethode *Instrumentation* von [!INCLUDE[vsprvs](../includes
   
  100 * Exklusive Anwendungszeit der Funktion / Inklusive Anwendungszeit der Sitzung  
   
-## <a name="see-also"></a>Siehe auch  
- [Analysieren der durch Profilerstellungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)   
- [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Analysieren von Leistungs Tool Daten](../profiling/analyzing-performance-tools-data.md)   
+ [Vorgehensweise: Auswählen von Sammlungs Methoden](../profiling/how-to-choose-collection-methods.md)

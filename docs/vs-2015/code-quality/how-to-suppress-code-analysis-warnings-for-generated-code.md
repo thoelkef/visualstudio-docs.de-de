@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 52caadd7f4dd9349eccb80a366a1458212aba5ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646273"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Gewusst wie: Unterdrücken von Codeanalysewarnungen für generierten Code
@@ -32,6 +32,6 @@ Compiler verwalteter Code generieren häufig Code, der einem Projekt hinzugefüg
 
 1. Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie auf **Code Analyse**.
+2. Klicken Sie auf **Codeanalyse**.
 
 3. Aktivieren Sie das Kontrollkästchen **Ergebnisse aus generiertem Code unterdrücken** .

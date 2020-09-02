@@ -1,5 +1,5 @@
 ---
-title: Paket-GUIDs von Visual Studio 2015-Funktionen | Microsoft-Dokumentation
+title: Paket-GUIDs von Visual Studio 2015-Features | Microsoft-Dokumentation
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,75 +12,75 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8601b4f072c206ab19fdcb4a7248e79784af934a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546810"
 ---
-# <a name="package-guids-of-visual-studio-features"></a>Paket-GUIDs von Visual Studio-Funktionen
+# <a name="package-guids-of-visual-studio-features"></a>Paket-GUIDs von Visual Studio-Features
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können die folgenden GUIDs in der pkgundef-Datei Ihrer isolierten Shell-Anwendung verwenden, um bestimmte Pakete aus der Anwendung zu auszuschließen.
+Sie können die folgenden GUIDs in der pkgundef-Datei Ihrer isolierten Shellanwendung verwenden, um bestimmte Pakete von der Anwendung auszuschließen.
 
 ## <a name="package-guids"></a>Paket-GUIDs
 
-|Bereich „Funktionen“|RAW-Paketname|Paket-GUID|
+|Featurebereich|Rohdatenpaketname|Paket-GUID|
 |------------------|----------------------|------------------|
-|Core-IDE|Rückgängig: Paket|{1D76B2E0-F11B-11D2-AFC3-00105A9991EF}|
-||Visual Studio-Umgebungspakets|{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}|
-||Paket für die Definition von Visual Studio-Befehle|{44E07B02-29A5-11D3-B882-00C04F79F802}|
-||Paket von Visual Studio-Verzeichnis auflisten|{5010C52F-44AB-4051-8CE1-D36C20D989B4}|
-||Allgemeine Visual Studio-IDE-Paket|{6E87CFAD-6C05-4ADF-9CD7-3B7943875B7C}|
-||Visual Studio-Umgebung im Menü-Paket|{715F10EB-9E99-11D2-BFC2-00C04F990235}|
-||Visual Studio COM +-Bibliotheks-Manager-Paket|{ED8979BC-B02F-4dA9-A667-D3256C36220A}|
-||Visual Studio-Integration Quellcodeverwaltungspaket|{53544C4D-E3F8-4AA0-8195-8A8D16019423}|
-||Visual Studio-Build-Lösungspakets|{282BD676-8B5B-11D0-8A34-00A0C91E2ACD}|
-||Text-Verwaltungspaket|{F5E7E720-1401-11d1-883B-0000F87579D2}|
-||Visual Studio VsSettings-Paket|{F74C5077-D848-4630-80C9-B00E68A1CA0C}|
-|Help|Hilfe zu Visual Studio-Paket|{4A791146-19E4-11D3-B86B-00C04F79F802}|
-|Aufgabenliste, Fehlerliste|ErrorListPackage|{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}|
-|Gliederung der Klasse|Class-Gliederung-Paket|{21AF45B0-FFA5-11D0-G63F-00A0C922E851}|
-|Installer für Toolbox-Steuerelemente|Installer-Paket für Toolbox-Steuerelemente|{2C298B35-07DA-45F1-96A3-BE55D91C8d7A}|
-|Webprojekte|Microsoft.VisualStudio.Web|{349C5850-65DF-11DA-9384-00065B846F21}|
-||Visual Web Developer-Projektpaket System|{39C9C826-8EF8-4079-8C95-428F5B1C323F}|
-||Visual Web Developer-Projektpaket Persistenz|{8FF02D1A-C177-4AC8-A62F-88FC6EA65F57}|
-||Visual Web Developer Migration Webpaket|{C1DAB116-2D63-493A-B970-10D7DD0B476E}|
-||Visual Web Developer-Webpakets|{E7f851C8-6267-4794-B0FE-7BCAB6DACBB4}|
-||Visual Web Developer Web|{DC7F691A-91FC-4F7B-923E-FE829C3A18DC}|
-|HTML-Editor|Visual Studio HTM-Editorpaket|{1B437D20-F8FE-11D2-A6AE-00104BCC7269}|
-||Visual Web Developer HTML Quellen-Editor-Paket|{BFCC0C3C-6F87-4285-A6C8-BB616061800D}|
-|CSS-Editor|Bearbeiten von Visual Studio CSS-Paket|{A764E895-518D-11d2-9A89-00C04F79EFC3}|
-|XML-Editor|Visual Studio-XML-Editor-Paket|{87569308-4813-40A0-9CD0-D7A30838CA3F}|
-|Webbrowser|Visual Studio Web-Browser-Paket|{E8B06F41-6D01-11D2-AA7D-00C04F990343}|
-||Web Application-Projekt-Factory, für die Ansicht im Webbrowser-Funktionen|{349C5851-65DF-11DA-9384-00065B846F21}|
-|Binär-Editor|Binär-Editor von Visual Studio-Paket|{5B98C2C0-CD7B-11D0-92DF-00A0C9138C45}|
-|Windows Forms-Designer|Windows Forms Designer Hosting-Pakets|{68939055-38E0-4D17-92CB-8909710D8178}|
-||Windows Forms-Designer-Paket|{7494682B-37A0-11D2-A273-00C04F8EF4FF}|
-||Windows Forms-Ressourcen-Designer-Paket|{7B5D447B-0B12-41EA-A84E-C822034422D4}|
-||Konfigurationspaket für Windows Forms-Anwendung|{80C7728B-70A6-4528-8669-73E02D1B9C41}|
-||ElementHost-Designer-Paket|{7EAB3C71-59FF-4571-A5F3-643F255FC2E6}|
+|Core-IDE|Paket rückgängig machen|{1d76b2e0-b-11d2-afc3-00105a9991ef}|
+||Visual Studio-Umgebungs Paket|{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}|
+||Visual Studio-Befehls Definitions Paket|{44e07b02-29a5-11d3-b882-00c04f 79F|
+||Visual Studio-Verzeichnis für die Verzeichnis Auflistung|{5010c52f -44ab-4051-8ce1-d36c20d989b4}|
+||Gemeinsames Visual Studio-IDE-Paket|{6e87cfad-6c05-4adf-9cd7-3b7943875b7c}|
+||Menü Paket für Visual Studio-Umgebung|{715f -9e99-11d2-BFC2-00c04f 990235}|
+||Visual Studio com+-Bibliotheks-Manager-Paket|{ED8979BC-B02F-4dA9-A667-D3256C36220A}|
+||Integrationspaket für die Visual Studio-Quell Code Verwaltung|{53544c4d-E3F 8-4aa0-8195-8a8d16019423}|
+||Visual Studio projektmappenbuildpaket|{282bd676-8b5b-11D0-8a34-00a0c91e2acd}|
+||Text Verwaltungspaket|F5E7E720-1401-11d1-883B-0000F87579D2|
+||Visual Studio VSSETTINGS-Paket|{F74C5077-D848-4630-80C9-B00E68A1CA0C}|
+|Hilfe|Visual Studio-Hilfe Paket|{4a791146-19e4-11d3-b86b-00c04b79f 802}|
+|Aufgabenliste Fehlerliste|Errorlistpackage|{4a9b7e50aa16-11D0-a8c5-00a0c921a4d2}|
+|Klassen Gliederung|Klassen Gliederungs Paket|{21af45b0-FFA5-11D0-G63F-00a0c922e851}|
+|Installer für Toolbox Steuerelemente|Toolbox steuert Installer-Paket|{2c298b35-07da-45F 1-96a3-be55d91c8d7a}|
+|Webprojekte|Microsoft. VisualStudio. Web|{349c5850-65df-11da-9384-00065b846f}|
+||Visual Web Developer-Projekt System Paket|{39c9c826-8ef8-4079-8c95-428 b1c323f}|
+||Persistenzpaket für Visual Web Developer-Projekt|{8ff02d1a-c177-4ac8-a62f-88fc6ea65f57}|
+||Webmigrations Paket für Visual Web Developer|{C1DAB116-2D63-493A-B970-10D7DD0B476E}|
+||Visual Web Developer-Webpaket|{E7f851C8-6267-4794-B0FE-7BCAB6DACBB4}|
+||Visual Web Developer-Web|{DC7F691A-91FC-4F7B-923E-FE829C3A18DC}|
+|HTML-Editor|Visual Studio htm-Editor-Paket|{1b437d20fi8fe-11d2-a6ae-00104bcc7269}|
+||Visual Web Developer-HTML-Quellen-Editor-Paket|{BFCC0C3C-6F87-4285-A6C8-BB616061800D}|
+|CSS-Editor|Visual Studio-CSS-Bearbeitungs Paket|{A764E895-518D-11d2-9A89-00C04F79EFC3}|
+|XML-Editor|Visual Studio-XML-Editor-Paket|{87569308-4813-40A0-9cd0-d7a30838ca3f}|
+|Webbrowser|Visual Studio-Webbrowser Paket|{E8B06F41-6D01-11D2-AA7D-00C04F990343}|
+||Webanwendungs-projektfactory, für Ansicht in Browser Funktionalität|{349c5851-65df-11da-9384-00065b846f}|
+|Binär-Editor|Paket für Binär-Editor von Visual Studio|{5b98c2c0-cd7b-11D0-92df-00a0c9138c45}|
+|Windows Forms-Designer|Windows Forms-Designer Hostingpaket|{68939055-38e0-4d17-92cb-8909710d8178}|
+||Paket Windows Forms-Designer|{7494682b-37a0-11d2-A273-00c04t8ef4ff}|
+||Ressourcenpaket Windows Forms-Designer|{7b5d447b-0b12-41ea-A84 e-c822034422d4}|
+||Anwendungs Konfigurationspaket Windows Forms|{80c7728b-70a6-4528-8669-73e02d1b9c41}|
+||Elemumthost-Designer-Paket|{7eab3c71-59ff-4571-A5F3-643f 255 fc2e6}|
 |Debugger-Benutzeroberfläche|Visual Studio Debugger|{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}|
-|Datenbanktools|Visual Database Tools-Pakets|{220A4C17-7E7C-4663-BBCC-5E607C6543CD}|
-||Designer in Visual Studio Database Tools|{EF828E39-70F5-4b8e-A3A0-4C0ECD28A69A}|
-||Daten-Designer von Visual Studio|{D6C919AA-1217-41E2-a13B-9B92E1866305}|
-||Visual Studio-Daten-Paket|{E1AA7737-69BE-43d0-A425-E3097651E192}|
-||Visual Studio-Daten-Designer-Erweiterbarkeit-Paket|{A8F602E2-40CE-4dAF-AE82-A457A91728B9}|
-||Visual Studio-Explorern und Designer-Paket|{8D8529D3-625D-4496-8354-3DAD630ECC1B}|
-||Microsoft Berichts-Designer|{F3A96850-E2AE-4E00-9278-8FE23F225A0D}|
-|DSL-Laufzeit|CommonModelingPackage|{D1091694-EA72-4BDD-8918-78324CC25448}|
-||Microsoft.VisualStudio.TextTemplating|{A9696DE6-E209-414D-BBEC-A0506fb0E924}|
-|SourceSafe-Unterstützung|Visual SourceSafe-Anbieterpaket|{AA8EB8CD-7A51-11D0-92C3-00A0C9138C45}|
-||Anbieter von Visual SourceSafe-Stubpaket|{53544C4D-B03D-4209-A7D0-D9DD13A4019B}|
-|WPF-Designer|WPFFlavor.WPFPackage|{B3BAE735-386C-4030-8329-EF48EEDA4036}|
-||XamlDesignerPackage|{512be089-83ec-4cc6-8483-cf16565ae209}|
-||XamlLanguagePackage|{2ef1ec52-c8bf-4fe0-8ece-ba9c0d5d1603}|
-||XamlDiagnosticsPackage|{8291c340-36b8-4c91-8c40-cce75398ff75}|
-|Codeausschnitte|Visual Studio Code Snippets-Paket|{0B680757-2C29-4531-80FA-535A5178AA98}|
-|Verwaltet die sprachunterstützung für Projekt|Enumerator für Visual Studio-Komponente|{588205E0-66e0-11D3-8600-00C04F6123B3}|
-||Visual Studio-Einstellungen und Projekt-Designer-Paket|{67909B06-91E9-4F3E-AB50-495046BE9A9A}|
-|Exportieren Sie Vorlage...|Vorlagenpaket exportieren|{F1E4CFCA-4573-4345-8718-7BDE2b1F0BE8}|
+|Datenbanktools|Visual Database Tools-Paket|{220a4c17-7e7c-4663-BBCC-5e607c6543cd}|
+||Designer für Visual Studio-Daten Bank Tools|{EF828E39-70F5-4b8e-A3A0-4C0ECD28A69A}|
+||Visual Studio-Daten-Designer|{D6C919AA-1217-41E2-a13B-9B92E1866305}|
+||Visual Studio-Datenpaket|{E1AA7737-69BE-43d0-A425-E3097651E192}|
+||Erweiterbarkeits Paket für das Visual Studio-Daten-Designer|{A8F602E2-40CE-4dAF-AE82-A457A91728B9}|
+||Visual Studio-Explorer und Designer-Paket|{8d8529d3-625d-4496-8354-3dad630ecc1b}|
+||Microsoft-Berichts-Designer|{F3A96850-E2AE-4E00-9278-8FE23F225A0D}|
+|DSL-Laufzeit|Commonmodelingpackage|{D1091694-EA72-4BDD-8918-78324CC25448}|
+||Microsoft. VisualStudio. TextTemplating|{A9696DE6-E209-414D-BBEC-A0506fb0E924}|
+|SourceSafe-Unterstützung|Visual SourceSafe-Anbieter Paket|{AA8EB8CD-7A51-11D0-92C3-00A0C9138C45}|
+||Visual SourceSafe-Anbieter-Stub-Paket|{53544c4d-B03D-4209-A7D0-D9DD13A4019B}|
+|WPF-Designer|Wpfflavor. wpfpackage|{B3BAE735-386c-4030-8329-EF48EEDA4036}|
+||Xamldesignerpackage|{512 be089-83ec-4cc6-8483-cf16565ae209}|
+||Xamllanguagepackage|{2ef1ec52-c8bf -4fe0-8ece-ba9c0d5d1603}|
+||Xamldiagnosticspackage|{8291c340-36b8-4c91-8c40-cce75398ff75}|
+|Codeausschnitte|Visual Studio Code Snippets-Paket|{0b680757-2c29-4531-80fa-535a5178aa98}|
+|Unterstützung für verwaltete Sprachprojekte|Visual Studio-Komponenten Enumerator|{588205e0-66e0-11d3-8600-00c04f 6123b3}|
+||Visual Studio-Einstellungen und Projekt-Designer-Paket|{67909b06-91e9-4f-ab50-495046be9a9a}|
+|Vorlage exportieren...|Vorlagen Paket exportieren|{F1E4CFCA-4573-4345-8718-7BDE2b1F0BE8}|
 
- Einige Pakete sollten niemals entfernt werden, da viele andere Features diese Abhängigkeiten übernehmen. Die aufgelisteten unter "Core-IDE" sollte beispielsweise niemals entfernt werden.
+ Einige Pakete sollten nie entfernt werden, da von vielen anderen Features Abhängigkeiten abhängig sind. Beispielsweise sollten die unter "Core IDE" aufgeführten Werte nie entfernt werden.
 
- Einige Funktionen werden nicht vollständig entfernt. Beispielsweise ist kein Paket, das nicht registriert werden kann, um entfernen **Klassenansicht** und seine zugehörigen Menüs, Optionen und Dienste. Die **Klassenansicht** Fenster wird von der Visual Studio-Umgebung-Paket, das die andere wichtige IDE-Features ermöglicht bereitgestellt. Wenn Sie entfernen möchten **Klassenansicht**, man musste auch entfernen **suchen und Ersetzen**, die Umgebung **Optionen** Seiten, die **Befehlsfenster**, und die **Ausgabe** Fenster.
+ Einige Features können nicht vollständig entfernt werden. Beispielsweise ist kein Paket vorhanden, dessen Registrierung aufgehoben werden kann, um **Klassenansicht** und die zugehörigen Menüs, Optionen und Dienste zu entfernen. Das Fenster **Klassenansicht** wird durch das Visual Studio-Umgebungs Paket bereitgestellt, das auch andere wichtige IDE-Features bereitstellt. Wenn Sie **Klassenansicht**entfernen möchten, müssen Sie auch die Optionen **Suchen und ersetzen**, die Umgebungs **Optionen** , das **Befehlsfenster**und das Fenster **Ausgabe** entfernen.

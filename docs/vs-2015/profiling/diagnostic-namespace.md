@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157578"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic-Namespace
@@ -35,21 +35,21 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Klassen  
   
-|name|BESCHREIBUNG|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[marker_series-Klasse](../profiling/marker-series-class.md)|Stellt einen seriellen Kanal mit Ereignissen dar, die von einem einzelnen Anbieter generiert werden.|  
 |[span-Klasse](../profiling/span-class.md)|Definiert eine Phase der Anwendung.|  
   
 ### <a name="enumerations"></a>Enumerationen  
   
-|name|BESCHREIBUNG|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[marker_importance-Enumeration](../profiling/marker-importance-enumeration.md)|Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.|  
   
-## <a name="requirements"></a>Requirements (Anforderungen)  
+## <a name="requirements"></a>Anforderungen  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Parallelität  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Concurrency-Namespace (Parallelitätsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)

@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591839"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 
-Eine Visual Studio T4-Textvorlage beginnt normalerweise mit einer `template`-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
+Eine Visual Studio T4-Textvorlage beginnt normalerweise mit einer- `template` Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
 
 Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
@@ -68,7 +68,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standard)
+`false` (Standardwert)
 
 Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
@@ -88,7 +88,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standard)
+`false` (Standardwert)
 
 `trueFromBase`
 
@@ -96,7 +96,7 @@ Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvo
 
 Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Wenn `hostspecific` `true` ist und Sie Visual Studio verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
+Wenn `hostspecific` ist `true` und Sie Visual Studio verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -128,11 +128,11 @@ Beispiel:
 
 Gültige Werte:
 
-`C#` (Standard)
+`C#` (Standardwert)
 
 `VB`
 
-Das `language`-Attribut gibt die Sprache ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
+Das- `language` Attribut gibt die Sprache ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
 Beispiel:
 
@@ -245,7 +245,7 @@ Beispiel:
 
 Gültige Werte:
 
-`true` (Standard)
+`true` (Standardwert)
 
 `false`
 
@@ -261,7 +261,7 @@ Beispiel:
 
 Gültige Werte:
 
-`public` (Standard)
+`public` (Standardwert)
 
 `internal`
 

@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591891"
 ---
 # <a name="t4-assembly-directive"></a>T4-Assemblydirektive
 
-In einer Visual Studio-Entwurfszeit Textvorlage lädt die `assembly`-Direktive eine Assembly, sodass der Vorlagen Code seine Typen verwenden kann. Der Effekt ähnelt dem Hinzufügen eines Assemblyverweises in einem Visual Studio-Projekt.
+In einer Visual Studio-Textvorlage für die Entwurfszeit `assembly` lädt die-Direktive eine Assembly, sodass der Vorlagen Code seine Typen verwenden kann. Der Effekt ähnelt dem Hinzufügen eines Assemblyverweises in einem Visual Studio-Projekt.
 
  Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
@@ -36,13 +36,13 @@ In einer Visual Studio-Entwurfszeit Textvorlage lädt die `assembly`-Direktive e
 
 - Absoluter Pfad der Assembly
 
-  Sie können die `$(variableName)`-Syntax verwenden, um auf die Visual Studio-Variablen, z. b. `$(SolutionDir)`, und `%VariableName%` auf Umgebungsvariablen zu verweisen. Beispiel:
+  Sie können die `$(variableName)` -Syntax verwenden, um auf die Visual Studio `$(SolutionDir)` -Variablen, z. b., und `%VariableName%` auf Umgebungsvariablen zu verweisen. Beispiel:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- Die assembly-Direktive hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Fügen Sie stattdessen die erforderlichen Verweise in den **Verweis** Bereich Ihres Visual Studio-Projekts ein. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Die assembly-Anweisung hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Fügen Sie stattdessen die erforderlichen Verweise in den **Verweis** Bereich Ihres Visual Studio-Projekts ein. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Standardassemblys
  Die folgenden Assemblys werden automatisch geladen, damit Sie keine Assemblyanweisungen dafür schreiben müssen:
@@ -63,7 +63,7 @@ In einer Visual Studio-Entwurfszeit Textvorlage lädt die `assembly`-Direktive e
 
 - Die Assembly mit der DSL.
 
-## <a name="msbuild"></a>Verwenden von Projekteigenschaften in MSBuild und Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio
  Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Wenn Sie Vorlagen im Buildcomputer transformieren möchten, müssen Sie dies mithilfe von Projekteigenschaften tun.
 
  Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myLibFolder` definiert:
@@ -88,6 +88,6 @@ In einer Visual Studio-Entwurfszeit Textvorlage lädt die `assembly`-Direktive e
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [T4-Include-Direktive](../modeling/t4-include-directive.md)

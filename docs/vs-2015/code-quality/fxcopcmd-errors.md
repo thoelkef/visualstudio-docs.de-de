@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85441e90bfecc89688ce0ba6ec0ae10082562f0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667597"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Fehler des FxCopCmd-Tools
@@ -28,7 +28,7 @@ In der folgenden Tabelle werden die von FxCopCmd zurückgegebenen Fehlercodes be
 |-----------|-------------------|
 |Keine Fehler|0x0|
 |Analysefehler|0x1|
-|Regel Ausnahmen|0x2|
+|Regelausnahmen|0x2|
 |Fehler beim Laden des Projekts|0x4|
 |Fehler beim Laden der Assembly|0x8|
 |Fehler beim Laden der Regel Bibliothek.|0x10|
@@ -53,6 +53,6 @@ Bei schwerwiegenden Fehlern wird ein **Analysefehler** zurückgegeben. Gibt an, 
 > [!NOTE]
 > Der FxCopCmd-Rückgabetyp verweist darauf, dass der **Fehler** 0x200 allein eine Warnung und kein Fehler ist. Dieser Rückgabecode gibt an, dass indirekte Verweise fehlen, aber von FxCopCmd verarbeitet werden konnte. Die Warnung bedeutet, dass es möglich ist, dass einige Analyseergebnisse kompromittiert wurden. **Fehler** beim Behandeln von Assemblyverweisen als Fehler, wenn er mit einem anderen Rückgabecode kombiniert wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anwendungsfehler bei der Codeanalyse](../code-quality/code-analysis-application-errors.md)

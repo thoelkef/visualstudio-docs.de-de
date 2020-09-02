@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f34422dfd47efdce9bf837f923da0e139a13398
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667921"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Codegenerierung und T4-Textvorlagen
@@ -102,7 +102,7 @@ namespace Fabrikam.FirstJob
 
  [Code Generierung zur Entwurfszeit mithilfe von T4-Text Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Das Erstellen von Code und anderen Ressourcen aus einem Modell ermöglicht es Ihnen, Ihre Anwendung durch Aktualisieren des Modells zu aktualisieren.
 
- [Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md) Wenn Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs-und Modellierungs-SDK installiert haben, können Sie sicherstellen, dass die generierte Software mit Änderungen im Modell auf dem neuesten Stand gehalten wird.
+ [Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md) Wenn Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] das Visualisierungs-und Modellierungs-SDK installiert haben, können Sie sicherstellen, dass die generierte Software mit Änderungen im Modell auf dem neuesten Stand gehalten wird.
 
  [Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md) Die Syntax einer Textvorlagen Datei.
 
@@ -114,5 +114,5 @@ namespace Fabrikam.FirstJob
 
  [Anpassen der T4-Text Transformation](../modeling/customizing-t4-text-transformation.md) Schreiben von direktivenprozessoren und benutzerdefinierten Vorlagen Hosts für Ihre eigenen Datenquellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md) generieren [von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md)

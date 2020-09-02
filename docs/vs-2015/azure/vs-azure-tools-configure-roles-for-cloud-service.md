@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301464"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315160"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -60,7 +60,7 @@ Um die Leistung des Clouddiensts zu verbessern, können Sie die Anzahl der ausge
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -76,7 +76,7 @@ Um die Leistung des Clouddiensts zu verbessern, können Sie die Anzahl der ausge
 
     ![Aktualisieren der Anzahl der Instanzen](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. Wählen Sie in Visual Studio, Symbolleiste, **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>Verwalten von Verbindungszeichenfolgen für Speicherkonten
 Sie können Verbindungszeichenfolgen für Ihre Dienstkonfigurationen hinzufügen, entfernen oder ändern. Beispielsweise möchten Sie eine lokale Verbindungszeichenfolge für eine lokale Dienstkonfiguration mit dem Wert `UseDevelopmentStorage=true`festlegen. Sie können auch eine Clouddienstkonfiguration konfigurieren, die ein Speicherkonto in Azure verwendet.
@@ -90,7 +90,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -116,13 +116,13 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Wählen Sie im Dialogfeld **Verbindungszeichenfolge für den Speicher erstellen** eine Option für **Herstellen einer Verbindung mit** aus. Befolgen Sie dann die Anweisungen für die ausgewählte Option:
 
-    - **Microsoft Azure-Speicheremulator**: Wenn Sie diese Option auswählen, werden die restlichen Einstellungen im Dialogfeld deaktiviert, da sie nur für Azure gelten. Wählen Sie **OK** aus.
-    - **Ihr Abonnement**: Wenn Sie diese Option auswählen, verwenden Sie entweder die Dropdownliste, um ein Microsoft-Konto auszuwählen und sich anzumelden, oder fügen Sie ein Microsoft-Konto hinzu. Wählen Sie ein Azure-Abonnement- und -Speicherkonto aus. Wählen Sie **OK** aus.
-    - **Manuell eingegebene Anmeldeinformationen**: Geben Sie den Speicherkontonamen und dann entweder den primären oder den sekundären Schlüssel ein. Wählen Sie eine Option für **Die Verbindung** aus (HTTPS wird für die meisten Szenarien empfohlen).) Wählen Sie **OK**.
+    - **Microsoft Azure-Speicheremulator**: Wenn Sie diese Option auswählen, werden die restlichen Einstellungen im Dialogfeld deaktiviert, da sie nur für Azure gelten. Klicken Sie auf **OK**.
+    - **Ihr Abonnement**: Wenn Sie diese Option auswählen, verwenden Sie entweder die Dropdownliste, um ein Microsoft-Konto auszuwählen und sich anzumelden, oder fügen Sie ein Microsoft-Konto hinzu. Wählen Sie ein Azure-Abonnement- und -Speicherkonto aus. Klicken Sie auf **OK**.
+    - **Manuell eingegebene Anmeldeinformationen**: Geben Sie den Speicherkontonamen und dann entweder den primären oder den sekundären Schlüssel ein. Wählen Sie eine Option für die **Verbindung** aus (HTTPS wird in den meisten Szenarien empfohlen). Wählen Sie **OK**aus.
 
 1. Um eine Verbindungszeichenfolge zu löschen, wählen Sie die Verbindungszeichenfolge aus, und wählen Sie dann **Einstellung entfernen** aus.
 
-1. Wählen Sie in Visual Studio, Symbolleiste, **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
 
 ## <a name="programmatically-access-a-connection-string"></a>Programmgesteuerter Zugriff auf eine Verbindungszeichenfolge
 
@@ -152,7 +152,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -178,7 +178,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Um eine benutzerdefinierte Einstellung zu löschen, wählen Sie die Einstellung aus, und wählen Sie dann **Einstellung entfernen** aus.
 
-1. Wählen Sie in Visual Studio, Symbolleiste, **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>Programmgesteuerter Zugriff auf den Wert einer benutzerdefinierten Einstellung
 
@@ -203,7 +203,7 @@ Sie können lokalen Dateisystemspeicher für jede Instanz einer Rolle hinzufüge
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -229,7 +229,7 @@ Sie können lokalen Dateisystemspeicher für jede Instanz einer Rolle hinzufüge
 
 1. Um einen lokalen Speichereintrag zu löschen, wählen Sie den Eintrag aus, und wählen Sie dann **Lokalen Speicher entfernen** aus.
 
-1. Wählen Sie in Visual Studio, Symbolleiste, **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
 
 ## <a name="programmatically-accessing-local-storage"></a>Programmgesteuerter Zugriff auf lokalen Speicher
 

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667447"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
@@ -27,7 +27,7 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 
  Eine vollständige Liste von Befehlen und ihrer Syntax finden Sie im Dialogfeld **Tastatur, Umgebungsoptionen** .
 
- Das Escapezeichen für Visual Studio-Befehle ist das Caretzeichen (^). Das direkt darauf folgende Zeichen wird also wörtlich interpretiert und nicht als Steuerzeichen. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter
+ Das Escapezeichen für Visual Studio-Befehle ist das Caretzeichen (^). Das direkt darauf folgende Zeichen wird also wörtlich interpretiert und nicht als Steuerzeichen. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:
 
 ```
 >Edit.Find ^^t /regex
@@ -41,15 +41,15 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 
  Die folgenden Befehle verwenden Argumente und/oder Schalter.
 
-|Befehlsname|Beschreibung|
+|Befehlsname|BESCHREIBUNG|
 |------------------|-----------------|
 |[Vorhandenes Element hinzufügen](../../ide/reference/add-existing-item-command.md)|Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese.|
 |[Vorhandenes Projekt hinzufügen](../../ide/reference/add-existing-project-command.md)|Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.|
 |[Neues Element hinzufügen](../../ide/reference/add-new-item-command.md)|Fügt der aktuellen Projektmappe ein neues Projektmappenelement wie eine HTM-, CSS-, TXT- oder Framesetdatei hinzu und öffnet dieses.|
 |[Alias](../../ide/reference/alias-command.md)|Erstellt einen neuen Alias für einen vollständigen Befehl, einen vollständigen Befehl und seine Argumente oder sogar für einen anderen Alias.|
 |[Anweisung auswerten](../../ide/reference/evaluate-statement-command.md)|Wertet die angegebene Anweisung aus und zeigt sie an.|
-|[Find](../../ide/reference/find-command.md)|Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|
-|[Suchen in Dateien](../../ide/reference/find-in-files-command.md)|Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement [Suchen in Dateien](../../ide/find-in-files.md).|
+|[Suchen](../../ide/reference/find-command.md)|Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|
+|[In Dateien suchen](../../ide/reference/find-in-files-command.md)|Durchsucht Dateien mit einer Teilmenge der Optionen, die auf dem Steuerelement [Suchen in Dateien](../../ide/find-in-files.md).|
 |[Gehe zu](../../ide/reference/go-to-command.md)|Bewegt den Cursor in die angegebene Zeile.|
 |[Aufrufliste auflisten](../../ide/reference/list-call-stack-command.md)|Zeigt die aktuelle Aufrufliste an.|
 |[Disassembly auflisten](../../ide/reference/list-disassembly-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|
@@ -63,19 +63,19 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 |[Datei öffnen](../../ide/reference/open-file-command.md)|Öffnet eine vorhandene Datei und ermöglicht die Angabe eines Editors.|
 |[Projekt öffnen](../../ide/reference/open-project-command.md)|Öffnet ein vorhandenes Projekt und ermöglicht das Hinzufügen des Projekts zur aktuellen Projektmappe.|
 |[Projektmappe öffnen](../../ide/reference/open-solution-command.md)|Öffnet eine vorhandene Projektmappe.|
-|[Print](../../ide/reference/print-command.md)|Wertet den Ausdruck aus und zeigt das Ergebnis oder den angegebenen Text an.|
-|[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|Zeigt den ausgewählten oder angegebenen Text im Feld **Ausdruck** des Dialogfelds **Schnellansicht** an.|
-|[Ersetzen](../../ide/reference/replace-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|
-|[Ersetzen in Dateien](../../ide/reference/replace-in-files-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md).|
+|[Drucken](../../ide/reference/print-command.md)|Wertet den Ausdruck aus und zeigt das Ergebnis oder den angegebenen Text an.|
+|[Befehl "schnell Überwachung"](../../ide/reference/quick-watch-command.md)|Zeigt den ausgewählten oder angegebenen Text im Feld **Ausdruck** des Dialogfelds **Schnellansicht** an.|
+|[Replace](../../ide/reference/replace-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|
+|[In Dateien ersetzen](../../ide/reference/replace-in-files-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md).|
 |[Aktuellen Stapelrahmen festlegen](../../ide/reference/set-current-stack-frame-command.md)|Ermöglicht die Anzeige eines bestimmten Stapelrahmens.|
 |[Aktuellen Thread festlegen](../../ide/reference/set-current-thread-command.md)|Ermöglicht die Anzeige eines bestimmten Threads.|
 |[Basis festlegen](../../ide/reference/set-radix-command.md)|Legt die Zahl der anzuzeigenden Bytes fest.|
 |[Shell](../../ide/reference/shell-command.md)|Startet Programme in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , als ob der Befehl in der Befehlszeile ausgeführt würde.|
-|[Befehl "ShowWebBrowser"](../../ide/reference/showwebbrowser-command.md)|Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.|
-|[Start](../../ide/reference/start-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|
-|[Pfad](../../ide/reference/symbol-path-command.md)|Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht.|
-|[Haltepunkt ein/aus](../../ide/reference/toggle-breakpoint-command.md)|Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.|
+|[ShowWebBrowser-Befehl](../../ide/reference/showwebbrowser-command.md)|Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.|
+|[Starten](../../ide/reference/start-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|
+|[Path](../../ide/reference/symbol-path-command.md)|Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht.|
+|[Haltepunkt umschalten](../../ide/reference/toggle-breakpoint-command.md)|Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.|
 |[Befehl "Überwachung"](../../ide/reference/watch-command.md)|Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** .|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)
