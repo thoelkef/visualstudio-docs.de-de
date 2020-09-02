@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153590"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Grund für die Debug-Engine (DE) Verbindung mit einem Programm-Knoten.  
+Gibt den Grund für das Anfügen der Debug-Engine (de) an einen Programmknoten an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,25 +45,25 @@ public enum enum_ATTACH_REASON { 
   
 ## <a name="members"></a>Member  
  ATTACH_REASON_AUTO  
- Angefügt werden, da der Prozess derzeit im Debugmodus befindet.  
+ Anfügen, da sich der Prozess derzeit im Debugmodus befindet.  
   
  ATTACH_REASON_LAUNCH  
- Angefügt werden, da der Prozess gestartet wurde.  
+ Anfügen, da der Prozess gestartet wurde.  
   
  ATTACH_REASON_USER  
- Fügen Sie aufgrund einer benutzeranforderung.  
+ Anfügen aufgrund einer Benutzer Anforderung.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Werte werden verwendet, als Parameter an die [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md) und [Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) Methoden.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Werte werden als Parameter für die [Anfüge](../../../extensibility/debugger/reference/idebugengine2-attach.md) -und [Anfüge](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) Methoden verwendet.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [An](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

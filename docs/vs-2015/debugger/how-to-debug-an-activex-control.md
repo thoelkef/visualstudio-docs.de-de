@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704465"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Vorgehensweise: Debuggen von ActiveX-Steuerelementen
@@ -44,7 +44,7 @@ HINWEIS]
   
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus.  
   
-2. Von der **Ansicht** Menü wählen **Eigenschaftenseiten**.  
+2. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenseiten**.  
   
 3. Öffnen Sie im Dialogfeld **Projekteigenschaftenseiten** den Ordner **Konfigurationseigenschaften**, und wählen Sie **Debuggen** aus.  
   
@@ -58,8 +58,8 @@ HINWEIS]
   
      Wenn Sie keinen Container im Dialogfeld **Projekteigenschaftenseiten** festlegen, können Sie dies zu Beginn des Debuggens nachholen. Falls Sie zum Starten des Debugvorgangs einen Ausführungsbefehl wählen, wird das Dialogfeld [Executable for Debugging Session](../debugger/executable-for-debugging-session-dialog-box.md) (Ausführbare Datei für die Debugsitzung) angezeigt. Geben Sie den Pfadnamen des Containers im Dialogfeld an.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [ActiveX-Steuerelemente](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [Testen der Eigenschaften und Ereignisse mit Testcontainer](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
- [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Testen von Eigenschaften und Ereignissen mit dem Test Container](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [COM-und ActiveX-Debugging](../debugger/com-and-activex-debugging.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

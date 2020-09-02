@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651290"
 ---
 # <a name="immediate-window"></a>Direktfenster
@@ -30,7 +30,7 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
  Sie können in diesem Fenster einzelne [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehle ausgeben. Zu den verfügbaren Befehlen gehört `EvaluateStatement`. Damit können Variablen Werte zugewiesen werden. Das Fenster **Direkt** unterstützt auch IntelliSense.
 
 ## <a name="displaying-the-values-of-variables"></a>Anzeigen der Werte von Variablen
- Dieses Fenster kann besonders beim Debuggen einer Anwendung von Nutzen sein. Um beispielsweise den Wert der Variablen `varA` zu überprüfen, können Sie den [Drucken-Befehl](../../ide/reference/print-command.md) verwenden:
+ Dieses Fenster kann besonders beim Debuggen einer Anwendung von Nutzen sein. Um z. b. den Wert einer Variablen zu überprüfen `varA` , können Sie den [Befehl Drucken](../../ide/reference/print-command.md)verwenden:
 
 ```
 >Debug.Print varA
@@ -45,7 +45,7 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
  Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.
 
 > [!NOTE]
-> Wenn Sie einen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehl im Fenster **Direkt** angeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum Fenster **Befehl**, wenn Sie mehrere Befehle eingeben möchten.
+> Wenn Sie einen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehl im Fenster **Direkt** angeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wenn Sie mehrere Befehle eingeben möchten, wechseln Sie zum **Befehls** Fenster.
 
 ## <a name="design-time-expression-evaluation"></a>Ausdrucksauswertung zur Entwurfszeit
  Sie können das Fenster **Direkt** verwenden, um eine Funktion oder Unterroutine zur Entwurfszeit auszuführen.
@@ -70,11 +70,11 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
 
 2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie dann auf **Direkt**.
 
-3. Geben `?MyFunction(2)` im Fenster **Direkt** ein, und drücken Sie die EINGABETASTE.
+3. Geben `?MyFunction(2)` Sie im **direkt** Fenster ein, und drücken Sie die EINGABETASTE.
 
     Das Fenster **Direkt** führt `MyFunction` aus und zeigt `4` an.
 
-   Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Walkthrough: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).
+   Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md).
 
    Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z. B. [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.
 
@@ -122,5 +122,5 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
 
 2. Klicken Sie mit der rechten Maustaste auf den Textbereich des **Ausgabefensters**, und aktivieren bzw. deaktivieren Sie die Option **Ausnahmemeldungen**.
 
-## <a name="see-also"></a>Siehe auch
- [Navigieren durch Code mithilfe des Debuggers](../../debugger/navigating-through-code-with-the-debugger.md) [Befehlsfenster](../../ide/reference/command-window.md) [Debuggen in Visual Studio](../../debugger/debugging-in-visual-studio.md) [Debugger Grundlagen](../../debugger/debugger-basics.md) [Walkthrough: Debuggen zur Entwurfszeit ](../../debugger/walkthrough-debugging-at-design-time.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md) [mit regulären Ausdrücken in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Navigieren durch Code mit dem](../../debugger/navigating-through-code-with-the-debugger.md) [debuggerbefehlsfenster](../../ide/reference/command-window.md) [Debuggen in Visual Studio](../../debugger/debugging-in-visual-studio.md) [Debugger Grundlagen](../../debugger/debugger-basics.md) Exemplarische Vorgehensweise [: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md) [mit regulären Ausdrücken in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

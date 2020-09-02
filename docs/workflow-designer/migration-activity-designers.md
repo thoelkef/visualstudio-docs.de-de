@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189733"
 ---
 # <a name="migration-activity-designers"></a>Aktivitäts-Designer für Migrationen
@@ -31,14 +31,14 @@ Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folge
 
 - [Verwenden der Aktivitätsdesigner](control-flow-activity-designers.md)
 
-- [Messaging](../workflow-designer/messaging-activity-designers.md)
+- [Nachrichten](../workflow-designer/messaging-activity-designers.md)
 
 - [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
-- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
 
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 
-- [Auflistung](../workflow-designer/collection-activity-designers.md)
+- [Sammlung](../workflow-designer/collection-activity-designers.md)
 
 - [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)

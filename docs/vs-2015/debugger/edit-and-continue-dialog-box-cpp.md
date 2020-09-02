@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren (Dialogfeld) (C++) | Microsoft-Dokumentation
+title: Dialogfeld „Bearbeiten und fortfahren“ (C++) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efd6d9a6628c5d5052d2195e08074e7688a71f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704158"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Bearbeiten und Fortfahren (Dialogfeld) (C++)
@@ -34,5 +34,5 @@ Mit der Funktion „Bearbeiten und Fortfahren“ konnten die von Ihnen vorgenomm
   
  Sie können den Code während des Debuggens bearbeiten, um den Fehler zu beheben. Alternativ können Sie den Fehler ignorieren und mit dem Debuggen fortfahren. Wenn Sie fortfahren, ohne den Fehler zu beheben, werden Ihre Codeänderungen nicht sofort übernommen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

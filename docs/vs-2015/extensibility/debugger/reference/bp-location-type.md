@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb8074317e52b43806a61d6486c53d7409333e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153402"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Typ des Haltepunkts für eine Haltepunkt-Anforderung an.  
+Gibt den Speicherorttyp des Breakpoints für eine Haltepunkt Anforderung an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -69,65 +69,65 @@ public enum enum_BP_LOCATION_TYPE { 
   
 ## <a name="members"></a>Member  
  BPLT_NONE  
- Gibt keine Position des Haltepunkts an.  
+ Gibt keine Haltepunkt Position an.  
   
  BPLT_FILE_LINE  
- Gibt den Typ des Haltepunkts als eine Dateizeile an.  
+ Gibt den Speicherorttyp des Breakpoints als Datei Zeile an.  
   
  BPLT_FUNC_OFFSET  
- Gibt den Typ des Haltepunkts als Funktion Offset an.  
+ Gibt den Speicherorttyp des Breakpoints als Funktions Offset an.  
   
  BPLT_CONTEXT  
- Gibt den Typ des Haltepunkts als Kontext.  
+ Gibt den Speicherorttyp des Breakpoints als Kontext an.  
   
  BPLT_STRING  
- Gibt den Typ des Haltepunkts als Zeichenfolge an.  
+ Gibt den Speicherorttyp des Breakpoints als Zeichenfolge an.  
   
  BPLT_ADDRESS  
- Gibt den Typ des Haltepunkts als Adresse an.  
+ Gibt den Speicherorttyp des Breakpoints als Adresse an.  
   
  BPLT_RESOLUTION  
- Gibt den Typ des Haltepunkts als Lösung an.  
+ Gibt den Speicherorttyp des Breakpoints als Auflösung an.  
   
  BPLT_CODE_FILE_LINE  
- Gibt den Typ des Haltepunkts als eine Zeile des Quellcodes an.  
+ Gibt den Speicherorttyp des Breakpoints als Zeile des Quellcodes an.  
   
  BPLT_CODE_FUNC_OFFSET  
- Gibt den Typ des Haltepunkts als Offset-Funktion Code an.  
+ Gibt den Speicherorttyp des Breakpoints als Offset der Code Funktion an.  
   
  BPLT_CODE_CONTEXT  
- Gibt den Typ des Haltepunkts als Codekontext an.  
+ Gibt den Speicherorttyp des Breakpoints als Code Kontext an.  
   
  BPLT_CODE_STRING  
- Gibt den Typ des Haltepunkts als eine Zeichenfolge an.  
+ Gibt den Speicherorttyp des Breakpoints als Code Zeichenfolge an.  
   
  BPLT_CODE_ADDRESS  
- Gibt den Typ des Haltepunkts als eine Adresse an.  
+ Gibt den Speicherorttyp des Breakpoints als Code Adresse an.  
   
  BPLT_DATA_STRING  
- Gibt den Typ des Haltepunkts als eine Zeichenfolge mit Daten an.  
+ Gibt den Speicherorttyp des Breakpoints als Daten Zeichenfolge an.  
   
  BPLT_TYPE_MASK  
- Gibt eine Bitmaske, damit der Haltepunkttyp aus dem Wert extrahiert werden kann.  
+ Gibt eine Bitmaske an, sodass der breakpointtyp aus dem Wert extrahiert werden kann.  
   
  BPLT_LOCATION_TYPE_MASK  
- Gibt eine Bitmaske, damit die Haltepunktpositionstyp aus dem Wert extrahiert werden kann.  
+ Gibt eine Bitmaske an, sodass der breakpointtyp aus dem Wert extrahiert werden kann.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Parameter an die [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird als Parameter an die [getlocationtype](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) -Methode übergeben.  
   
- Eine Haltepunktpositionstyp besteht aus einem Haltepunkt und einen Speicherorttyp. Dies bedeutet, dass eine Haltepunktpositionstyp nie nur einen Haltepunkttyp ist (z. B. `BPT_CODE`) oder einen Standorttyp (z. B. `BPLT_FILE_LINE`). Vordefinierte Konstanten für alle Haltepunkttypen, Speicherort unterstützt derzeit befinden sich in dieser Enumeration (`BPLT_CODE_FILE_LINE` über `BPLT_DATA_STRING`).  
+ Ein breakpointtyp besteht aus einem breakpointtyp und einem lokationstyp. Dies bedeutet, dass ein breakpointtyp nie nur ein breakpointtyp (z. b. `BPT_CODE` ) oder ein Location-Type (z `BPLT_FILE_LINE` . b.) ist. Vordefinierte Konstanten für alle derzeit unterstützten Haltepunkt-Speicherort Typen sind in dieser Enumeration ( `BPLT_CODE_FILE_LINE` bis `BPLT_DATA_STRING` ) enthalten.  
   
- `BPT_CODE` und `BPT_DATA` sind Mitglied der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration.  
+ `BPT_CODE` und `BPT_DATA` sind Member der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) -Enumeration.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)   
+ [Getlocationtype](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

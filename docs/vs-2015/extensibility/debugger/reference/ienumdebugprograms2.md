@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d9d1030616fa8d7f3a1bfc6b533c4ed8433ea89
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703902"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle Listet die in der aktuellen Debuggingsitzung ausgeführten Programme.  
+Diese Schnittstelle listet die Programme auf, die in der aktuellen Debugsitzung ausgeführt werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,41 +31,41 @@ IEnumDebugPrograms2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle, um eine Liste von durch die DE gedebuggten Programme bereitstellen.  
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um eine Liste der Programme bereitzustellen, die von der de debuggt werden.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Visual Studio-Aufrufe [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) dieser Schnittstelle abgerufen. [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) wird von Visual Studio nicht verwendet.  
+ Visual Studio ruft [enumprogramme](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) auf, um diese Schnittstelle zu erhalten. [Enumprogramme](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) werden von Visual Studio nicht verwendet.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IEnumDebugPrograms2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugPrograms2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[Nächste](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Ruft eine angegebene Anzahl von Programmen in einer Enumerationsfolge ab.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Überspringt eine angegebene Anzahl von Programmen in einer Enumerationsfolge.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Ruft die Anzahl der Programme in einen Enumerator ab.|  
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Ruft eine angegebene Anzahl von Programmen in einer enumerationssequenz ab.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Überspringt eine angegebene Anzahl von Programmen in einer enumerationssequenz.|  
+|[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
+|[Klonen](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Ruft die Anzahl der Programme in einem Enumerator ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Visual Studio verwendet diese Schnittstelle:  
+## <a name="remarks"></a>Bemerkungen  
+ Visual Studio verwendet diese Schnittstelle für Folgendes:  
   
-- Füllen Sie die **Module** Fenster (durch Aufrufen von [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) und dem anschließenden Aufrufen [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) für jedes Programm).  
+- Füllen Sie das Fenster **Module** (durch Aufrufen von [enumprograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) und anschließendes Aufrufen von [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) für jedes Programm).  
   
-- Füllen Sie die **an den Prozess anhängen** Liste (durch Aufrufen von `IDebugProcess2::EnumPrograms` und dem anschließenden Aufrufen [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf jedem [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle zum Abrufen einer [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) Schnittstelle).  
+- Füllen Sie die Liste **an den Prozess anhängen** (durch Aufrufen von und anschließendes `IDebugProcess2::EnumPrograms` Aufrufen von [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für jede [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle zum Abrufen einer [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) -Schnittstelle).  
   
-- Generiert eine Liste mit DEs, den jedes Programm in den Prozess zu debuggen, können (mit [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).  
+- Generiert eine Liste von des, die jedes Programm im Prozess Debuggen können (mithilfe von [getengineingefo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).  
   
-- Anwenden von Updates für bearbeiten und Fortfahren "(ENC) für jedes Programm (durch Aufrufen von IDebugProcess2::EnumPrograms und dem anschließenden Aufrufen [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).  
+- Anwenden von "Bearbeiten und Fortfahren"-Aktualisierungen (ENC) auf jedes Programm (durch Aufrufen von "IDebugProcess2:: enumprograms" und anschließendes Aufrufen von [getencupdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).  
   
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+## <a name="requirements"></a>Requirements (Anforderungen)  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Enumprogramme](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)   
  [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)

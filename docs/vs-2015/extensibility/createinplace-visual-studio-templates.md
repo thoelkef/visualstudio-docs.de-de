@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: "\"Kreatanplace\" (Visual Studio-Vorlagen) | Microsoft-Dokumentation"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184242"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in der angegebenen Position oder führen Sie die parameterersetzung in einen temporären Speicherort und speichern Sie das Projekt am angegebenen Speicherort.  
+Gibt an, ob das Projekt erstellt und die Parameter Ersetzung am angegebenen Speicherort durchgeführt werden soll, oder ob die Parameter Ersetzung an einem temporären Speicherort durchgeführt und das Projekt am angegebenen Speicherort gespeichert werden soll.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<CreateInPlace >  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,10 +53,10 @@ Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in 
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false` sein. Wenn `true`, das Projekt wird erstellt und parameterersetzungen erfolgt in der angegebenen Position der **neues Projekt** Dialogfeld. Wenn `false`, die parameterersetzung in einen temporären Speicherort durchgeführt und das Projekt wird dann an den angegebenen Speicherort kopiert.  
+ Der Text muss entweder `true` oder `false` sein. Gibt `true` an, dass das Projekt erstellt und die Parameter Ersetzung an der im Dialogfeld **Neues Projekt** angegebenen Position ausgeführt wird. Wenn `false` der Wert ist, wird die Parameter Ersetzung an einem temporären Speicherort durchgeführt, und das Projekt wird dann an den angegebenen Speicherort kopiert.  
   
-## <a name="remarks"></a>Hinweise  
- `CreateInPlace` ist ein optionales Element. Der Standardwert ist `true`.  
+## <a name="remarks"></a>Bemerkungen  
+ `CreateInPlace` ist ein optionales Element. Standardwert: `true`.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Vorlage veranschaulicht.  
@@ -86,6 +86,6 @@ Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in 
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)   
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

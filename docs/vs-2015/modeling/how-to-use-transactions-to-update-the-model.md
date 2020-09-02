@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd66c62d74bfe63d8376b5520b42cb20c8c0a3a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651610"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
@@ -21,12 +21,12 @@ ms.locfileid: "72651610"
 
 Transaktionen stellen sicher, dass Änderungen, die an dem Speicher vorgenommen wurden, als Gruppe behandelt werden. Für Änderungen, die gruppiert werden, kann ein Commit oder ein Rollback als einzelne Einheit ausgeführt werden.
 
- Jedes Mal, wenn der Programmcode Elemente im Speicher in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs-und Modellierungs-SDK ändert, hinzufügt oder löscht, muss dies innerhalb einer Transaktion durchzuführen sein. Wenn die Änderung erfolgt, muss dem Speicher eine aktive Instanz von <xref:Microsoft.VisualStudio.Modeling.Transaction> zugeordnet sein. Dies gilt für alle Modellelemente, Beziehungen, Formen, Diagramme und deren Eigenschaften.
+ Jedes Mal, wenn der Programmcode Elemente im Speicher im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs-und Modellierungs-SDK ändert, hinzufügt oder löscht, muss dies innerhalb einer Transaktion durchzuführen sein. Es muss eine aktive Instanz von vorhanden sein, <xref:Microsoft.VisualStudio.Modeling.Transaction> die dem Speicher zugeordnet ist, wenn die Änderung auftritt. Dies gilt für alle Modellelemente, Beziehungen, Formen, Diagramme und deren Eigenschaften.
 
  Mit dem Transaktions Mechanismus können inkonsistente Zustände vermieden werden. Wenn während einer Transaktion ein Fehler auftritt, wird für alle Änderungen ein Rollback ausgeführt. Wenn der Benutzer einen Rückgängig-Befehl ausführt, wird jede aktuelle Transaktion als einzelner Schritt behandelt. Der Benutzer kann Teile einer aktuellen Änderung nicht rückgängig machen, es sei denn, Sie haben Sie explizit in separaten Transaktionen abgelegt.
 
 ## <a name="opening-a-transaction"></a>Öffnen einer Transaktion
- Die einfachste Methode zur Verwaltung einer Transaktion ist eine `using`-Anweisung, die in einer `try...catch`-Anweisung eingeschlossen ist:
+ Die einfachste Methode zur Verwaltung einer Transaktion ist eine-Anweisung, die `using` in einer-Anweisung eingeschlossen ist `try...catch` :
 
 ```
 Store store; ...
@@ -52,13 +52,13 @@ catch (Exception ex)
 }
 ```
 
- Wenn eine Ausnahme, die die abschließende `Commit()` verhindert, während der Änderungen auftritt, wird der Speicher auf seinen vorherigen Zustand zurückgesetzt. Auf diese Weise können Sie sicherstellen, dass das Modell nicht in einem inkonsistenten Zustand belassen wird.
+ Wenn eine Ausnahme, die das abschließende verhindert `Commit()` , während der Änderungen auftritt, wird der Speicher auf seinen vorherigen Zustand zurückgesetzt. Auf diese Weise können Sie sicherstellen, dass das Modell nicht in einem inkonsistenten Zustand belassen wird.
 
- Sie können eine beliebige Anzahl von Änderungen innerhalb einer Transaktion vornehmen. Sie können neue Transaktionen innerhalb einer aktiven Transaktion öffnen. Vor dem Ende der enthaltenden Transaktion muss für die Vorgängen ein Commit oder ein Rollback ausgeführt werden. Weitere Informationen finden Sie im Beispiel für die <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>-Eigenschaft.
+ Sie können eine beliebige Anzahl von Änderungen innerhalb einer Transaktion vornehmen. Sie können neue Transaktionen innerhalb einer aktiven Transaktion öffnen. Vor dem Ende der enthaltenden Transaktion muss für die Vorgängen ein Commit oder ein Rollback ausgeführt werden. Weitere Informationen finden Sie im Beispiel für die- <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> Eigenschaft.
 
- Um die Änderungen dauerhaft zu machen, sollten Sie die Transaktion `Commit`, bevor Sie verworfen wird. Wenn eine Ausnahme auftritt, die nicht innerhalb der Transaktion abgefangen wird, wird der Speicher auf seinen Zustand vor den Änderungen zurückgesetzt.
+ Um die Änderungen dauerhaft zu machen, sollten Sie `Commit` die Transaktion ausführen, bevor Sie verworfen wird. Wenn eine Ausnahme auftritt, die nicht innerhalb der Transaktion abgefangen wird, wird der Speicher auf seinen Zustand vor den Änderungen zurückgesetzt.
 
-## <a name="rolling-back-a-transaction"></a>Rollback einer Transaktion
+## <a name="rolling-back-a-transaction"></a>Ausführen eines Rollbacks für eine Transaktion
  Um sicherzustellen, dass der Speicher in seinem Zustand vor der Transaktion verbleibt oder wieder hergestellt wird, können Sie eine der folgenden Taktiken verwenden:
 
 1. Gibt eine Ausnahme aus, die nicht innerhalb des Bereichs der Transaktion abgefangen wird.

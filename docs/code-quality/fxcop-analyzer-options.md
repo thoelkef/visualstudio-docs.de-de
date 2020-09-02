@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706567"
 ---
 # <a name="rule-scope-options-for-net-code-quality-analyzers"></a>Optionen für den Regelbereich für .NET-Code Qualitätsanalysen
@@ -24,7 +24,7 @@ Mit einigen .NET Code Quality Analyzer-Regeln können Sie verfeinern, auf welche
 > Options Name: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Optionswerte: ganzzahlige Werte \
 > Standardwert: spezifisch für jede konfigurierbare Regel (standardmäßig "100000" für die meisten Regeln) \
-> Beispiel: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
+> Ein Beispiel: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
 

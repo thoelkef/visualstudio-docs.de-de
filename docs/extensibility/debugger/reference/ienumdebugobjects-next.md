@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::Weiter | Microsoft Docs
+title: 'Ienumdebugobjects:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 99b2bc35b63a4e97f888365f1d11231ae620b69c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716336"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
-Diese Methode gibt den nächsten Satz von Elementen aus der Enumeration zurück.
+Diese Methode gibt den nächsten Satz von Elementen aus der-Enumeration zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale `rgelt` Größe des Arrays an.
+[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe des `rgelt` Arrays an.
 
 `rgelt`\
-[in, out] Array von [IDebugObject-Elementen,](../../../extensibility/debugger/reference/idebugobject.md) die ausgefüllt werden sollen.
+[in, out] Array von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Elementen, das ausgefüllt werden soll.
 
 `pceltFetched`\
-[out] Gibt die Anzahl der `rgelt`tatsächlich in zurückgegebenen Elemente zurück.
+vorgenommen Gibt die Anzahl der Elemente zurück, die tatsächlich in zurückgegeben werden `rgelt` .
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden kann. andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

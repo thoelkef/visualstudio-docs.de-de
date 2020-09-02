@@ -1,5 +1,5 @@
 ---
-title: CreateNewFolder-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Kreatenewfolder-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,10 +13,10 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7401ed7ed097c6e20bf4cd0bbf30820bcb33b514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184254"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder-Element (Visual Studio-Vorlagen)
@@ -26,7 +26,7 @@ Bestimmt, ob geprüft werden soll, dass das Zielverzeichnis, indem das Projekt e
   
  \<VSTemplate>  
  \<TemplateData>  
- \<CreateNewFolder >  
+ \<CreateNewFolder>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,7 +36,7 @@ Bestimmt, ob geprüft werden soll, dass das Zielverzeichnis, indem das Projekt e
 </CreateNewFolder>  
 ```  
   
-## <a name="type"></a>Typ  
+## <a name="type"></a>type  
  `Boolean`  
   
 ## <a name="attributes-and-elements"></a>Attribute und Elemente  
@@ -59,8 +59,8 @@ Bestimmt, ob geprüft werden soll, dass das Zielverzeichnis, indem das Projekt e
   
  Der Text muss `true` oder `false` sein, um anzugeben, ob ein neuer Containerordner beim Erstellen eines Projekts anhand einer Vorlage angelegt werden soll.  
   
-## <a name="remarks"></a>Hinweise  
- `CreateNewFolder` ist ein optionales Element. Der Standardwert ist `true`.  
+## <a name="remarks"></a>Bemerkungen  
+ `CreateNewFolder` ist ein optionales Element. Standardwert: `true`.  
   
  Der im `CreateNewFolder`-Element angegebene Wert wird nur von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] berücksichtigt, wenn das zugrunde liegende Projektsystem ihn unterstützt.  
   
@@ -92,6 +92,6 @@ Bestimmt, ob geprüft werden soll, dass das Zielverzeichnis, indem das Projekt e
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

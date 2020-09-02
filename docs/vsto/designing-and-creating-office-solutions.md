@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189717"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Lösungen
@@ -44,7 +44,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  Die .NET Framework Version, die Sie für Ihr Projekt auswählen, ist auf Endbenutzer Computern erforderlich, damit die Projekt Mappe ausgeführt werden kann. Wenn Ihr Projekt beispielsweise auf den [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]abzielt, ist die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] auf Endbenutzer Computern erforderlich. In diesem Beispiel wird die Projekt Mappe nicht ausgeführt, wenn nur der .NET Framework 3,5 auf Endbenutzer Computern installiert ist.
+  Die .NET Framework Version, die Sie für Ihr Projekt auswählen, ist auf Endbenutzer Computern erforderlich, damit die Projekt Mappe ausgeführt werden kann. Wenn das Projekt z [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . b. auf abzielt, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ist auf Endbenutzer Computern erforderlich. In diesem Beispiel wird die Projekt Mappe nicht ausgeführt, wenn nur der .NET Framework 3,5 auf Endbenutzer Computern installiert ist.
 
   Wenn Sie ein VSTO-Add-In-Projekt migrieren, das .NET Framework 3.5 als Ziel verwendet, ändert Visual Studio das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher, je nach installierter Office-Version.
 
@@ -56,7 +56,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 > Sie können .NET Framework 3.5 oder frühere Versionen in Office-Projekten, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, nicht als Ziel verwenden. Office-Projekte, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, erfordern Funktionen, die anfänglich in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] eingeführt wurden.
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Verstehen, wann die Office-PIAs auf Endbenutzer Computern erforderlich sind
- Standardmäßig müssen primäre Interop-Assemblys (PIAs) von Office nicht auf Endbenutzer Computern installiert werden, wenn die Eigenschaft **Interoptypen einbetten** jedes Office-Pia-Verweises im Projekt auf **true**festgelegt ist. Dies ist der Standardwert. In diesem Szenario werden die in der Projektmappe für die PIA-Typen verwendeten Typinformationen beim Erstellen des Projekts in die Projektmappenassembly eingebettet. Zur Laufzeit werden die eingebetteten Typinformationen anstelle der PIAs verwendet, um das COM-basierte Objektmodell der Office-Anwendung aufzurufen. Weitere Informationen zur Einbettung von Typen aus PIAs in die Projekt Mappe finden Sie unter [typäquivalenz und eingebettete Interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
+ Standardmäßig müssen primäre Interop-Assemblys (PIAs) von Office nicht auf Endbenutzer Computern installiert werden, wenn die Eigenschaft **Interoptypen einbetten** jedes Office-Pia-Verweises im Projekt auf **true**festgelegt ist. Dies ist der Standardwert. In diesem Szenario werden die in der Projektmappe für die PIA-Typen verwendeten Typinformationen beim Erstellen des Projekts in die Projektmappenassembly eingebettet. Zur Laufzeit werden die eingebetteten Typinformationen statt der PIAs verwendet, um das COM-basierte Objektmodell der Office-Anwendung aufzurufen. Weitere Informationen zur Einbettung von Typen aus PIAs in die Projekt Mappe finden Sie unter [typäquivalenz und eingebettete Interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
  Wenn die Eigenschaft **Interop-Typen einbetten** jedes Office-Pia-Verweises im Projekt auf **false**festgelegt ist, muss Office PIAs im globalen Assemblycache auf jedem Endbenutzer Computer installiert und registriert werden, auf dem die Lösung ausgeführt wird. In den meisten Fällen werden die PIAs standardmäßig mit Office installiert, Sie können die verteilbare PIA jedoch auch als erforderliche Komponente für die Lösung einschließen. Weitere Informationen finden Sie unter [Voraussetzungen für Office-Lösungen für die Bereitstellung](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
 
@@ -91,7 +91,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 ## <a name="referenced-assemblies"></a>Assemblys, auf die verwiesen wird
  Eine Assembly kann auf andere Assemblys verweisen, die in den Verweisen des Projekts aufgelistet sind. Eine Assembly in einem Projekt auf Dokumentebene kann jedoch auf keine andere Assembly in einem Projekt auf Dokumentebene verweisen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)

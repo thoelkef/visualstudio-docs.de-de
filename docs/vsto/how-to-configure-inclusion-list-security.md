@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541634"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Vorgehensweise: Konfigurieren der Sicherheit für die Aufnahme Liste
@@ -52,7 +52,7 @@ ms.locfileid: "85541634"
 
 3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
 
-    |Zeichen folgen Wert-Unterschlüssel|Wert|
+    |Zeichen folgen Wert-Unterschlüssel|value|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**Nicht treudsites**|**Disabled**|
@@ -111,7 +111,7 @@ ms.locfileid: "85541634"
 
 3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
 
-    |Zeichen folgen Wert-Unterschlüssel|Wert|
+    |Zeichen folgen Wert-Unterschlüssel|value|
     |-------------------------|-----------|
     |**Nicht treudsites**|**Disabled**|
     |**Internet**|**AuthenticodeRequired**|
@@ -168,7 +168,7 @@ ms.locfileid: "85541634"
 
 3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
 
-    |Zeichen folgen Wert-Unterschlüssel|Wert|
+    |Zeichen folgen Wert-Unterschlüssel|value|
     |-------------------------|-----------|
     |**Nicht treudsites**|**Disabled**|
     |**Internet**|**Disabled**|
@@ -207,6 +207,6 @@ ms.locfileid: "85541634"
 
 3. Erstellen Sie die Anwendung, und führen Sie sie aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vertrauen von Office-Projektmappen mithilfe von Inklusions Listen](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
