@@ -12,16 +12,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7842bd2e0a6cebc5980781bae1fc89c1401fc08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184397"
 ---
 # <a name="combos-element"></a>Combos-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gruppen [Combo-Element](../extensibility/combo-element.md) Elemente.  
+Gruppiert Kombinations [Element](../extensibility/combo-element.md) -Elemente.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,22 +37,22 @@ Gruppen [Combo-Element](../extensibility/combo-element.md) Elemente.
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
-|Bedingung|Optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[Combos-Element](../extensibility/combos-element.md)|Gruppen-Kombinationsfeld Elemente.|  
-|[Combo-Element](../extensibility/combo-element.md)|Definiert die Befehle, die in einem Kombinationsfeld angezeigt werden.|  
+|[Combos-Element](../extensibility/combos-element.md)|Gruppiert Kombinations Elemente.|  
+|[Combo-Element](../extensibility/combo-element.md)|Definiert die Befehle, die in einem Kombinations Feld angezeigt werden.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -78,6 +78,6 @@ Gruppen [Combo-Element](../extensibility/combo-element.md) Elemente.
 </Combos>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87a27cdb6b278a01434662017e05e5dca38b8c9d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665858"
 ---
 # <a name="customizing-the-editor"></a>Anpassen des Editors
@@ -33,5 +33,5 @@ Durch Ändern der Optionen können Sie Formatierung, Registerkarten, Schriftarte
 
  Gewusst [wie: Verwalten von Editor Modi](../ide/how-to-manage-editor-modes.md) Erläutert die Verwendung der Modi "Vollbild" und "virtueller Raum".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md) [einstellenden Lesezeichen im Code](../ide/setting-bookmarks-in-code.md) [Allgemein, Umgebung,](../ide/reference/general-environment-options-dialog-box.md) Dialogfeld "Optionen" [, Umgebung, Umgebung, Dialogfeld "Optionen](../ide/reference/documents-environment-options-dialog-box.md) " [und Farben, Umgebung, Dialogfeld "Optionen](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) "

@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8abf4d4c5d2158ab4a3c9deeb11ab93e31b4cc3
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649338"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Regelsatz für systemeigene Mindestregeln
 
-Die Microsoft Native Minimum Rules konzentrieren sich auf die wichtigsten Probleme im systemeigenen Code, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürze.
+Die systemeigenen minimalen Regeln von Microsoft konzentrieren sich auf die kritischsten Probleme in nativem Code, einschließlich möglicher Sicherheitslücken und Anwendungs Abstürze.
 
-Schließen Sie diesen Regelsatz in jeden benutzerdefinierten Regelsatz ein, den Sie für systemeigene Projekte erstellen.
+Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie für Native Projekte erstellen.
 
-|Regel|BESCHREIBUNG|
+|Regel|Beschreibung|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Nicht initialisierter Speicher wird verwendet|
 |[C6011](../code-quality/c6011.md)|Dereferenzierender NULL-Zeiger|
@@ -92,18 +92,18 @@ Schließen Sie diesen Regelsatz in jeden benutzerdefinierten Regelsatz ein, den 
 |[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|
 |[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
 |[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|
-|[C28205](../code-quality/c28205.md)|\_Erfolg\_ \_oder\_\_ Fehler in einem illegalen Kontext verwendet|
+|[C28205](../code-quality/c28205.md)|\_Erfolg \_ oder \_ bei fehlgeschlagener \_ \_ Verwendung in unzulässigem Kontext|
 |[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|
 |[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|
 |[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|
 |[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|
 |[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|
-|[C28213](../code-quality/c28213.md)|Die \_\_Anmerkungen\_zum\_ Verwenden von decl-Anmerkungen müssen verwendet werden, um ohne Änderung auf eine vorherige Deklaration zu verweisen.|
+|[C28213](../code-quality/c28213.md)|Die Anmerkung \_ use \_ decl \_ Anmerkungen \_ muss verwendet werden, um eine vorherige Deklaration ohne Änderung zu verweisen.|
 |[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
 |[C28217](../code-quality/c28217.md)|Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein|
-|[C28218](../code-quality/c28218.md)|Für Funktionsparameter stimmt der Parameter der Anmerkung nicht mit dem in der Datei|
+|[C28218](../code-quality/c28218.md)|Für den Funktionsparameter stimmt der Parameter der Anmerkung nicht mit der in der Datei gefundenen ab.|
 |[C28219](../code-quality/c28219.md)|Member von Enumeration für den Parameter in der Anmerkung erwartet|
 |[C28220](../code-quality/c28220.md)|Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck|
 |[C28221](../code-quality/c28221.md)|Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck|
@@ -140,7 +140,7 @@ Schließen Sie diesen Regelsatz in jeden benutzerdefinierten Regelsatz ein, den 
 |[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|
 |[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|
 |[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|
-|[C28275](../code-quality/c28275.md)|Der Parameter \_\_für\_ den Makrowert ist null|
+|[C28275](../code-quality/c28275.md)|Der Parameter für den \_ Makro \_ Wert \_ ist NULL.|
 |[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|
 |[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|
 |[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|

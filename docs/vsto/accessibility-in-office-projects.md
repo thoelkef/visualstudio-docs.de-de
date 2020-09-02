@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189618"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
@@ -84,9 +84,9 @@ Visual Studio weist die folgenden Einschränkungen im Zusammenhang mit den Anzei
 
 Sie können die Bildschirmlupe verwenden, um diese Einschränkungen zu überwinden. Die Bildschirmlupe ist ein Anzeige Dienstprogramm in Windows, das ein separates Fenster erstellt, in dem ein vergrößerter Teil des Bildschirms angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Barrierefreiheit für Personen mit Behinderungen](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Barrierefreiheits Funktionen in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

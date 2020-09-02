@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7fa9aa7a4a19ebd5ae45ee84364e71043a28f6be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651465"
 ---
 # <a name="localizing-applications"></a>Lokalisieren von Anwendungen
@@ -37,10 +37,10 @@ Die *Lokalisierung* ist der Prozess des Anpassens einer Anwendung an die jeweili
  [Neutrale Ressourcensprachen für die Lokalisierung:](../ide/neutral-resources-languages-for-localization.md) Führt die Klasse <xref:System.Resources.NeutralResourcesLanguageAttribute> ein, die die Kultur einer Ressource angibt, die in der Hauptassembly einer Anwendung enthalten ist.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Einführung in internationale Anwendungen basierend auf dem .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Erläutert die Konzepte im Zusammenhang mit der Entwicklung von Software für einen internationalen Markt C#mithilfe von Visual Basic oder Visual.
+ [Einführung in internationale Anwendungen basierend auf dem .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Erläutert die Konzepte im Zusammenhang mit der Entwicklung von Software für einen internationalen Markt mithilfe von Visual Basic oder Visual c#.
 
  [Globalisieren von Windows Forms:](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) Enthält Links zu Seiten, die Informationen zum Erstellen von Windows-Anwendungen enthalten, die mehrere Kulturen unterstützen.
 
- [Globalisierung und Lokalisierung:](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Enthält Links zu Seiten, die Informationen zum Erstellen von Webanwendungen enthalten, die mehrere Kulturen unterstützen.
+ [Globalisierung und Lokalisierung](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Enthält Links zu Seiten über das Erstellen von Webanwendungen, die mehrere Kulturen unterstützen.
 
  [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. zu Entwurfsproblemen und Terminologie.

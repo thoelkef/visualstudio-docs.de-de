@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Microsoft-Dokumentation
+title: Assemblylokresolution | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153603"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt an, in denen eine Assembly befindet.  
+Gibt an, wo sich eine Assembly befindet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,30 +47,30 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
   
 ## <a name="members"></a>Member  
  ALR_NAME  
- Assembly befindet sich im aktuellen Namespace.  
+ Die Assembly befindet sich im aktuellen Namespace.  
   
  ALR_USERDIR  
- Assembly befindet sich in einem Benutzerverzeichnis.  
+ Die Assembly befindet sich in einem Benutzerverzeichnis.  
   
  ALR_SHAREDDIR  
- Assembly befindet sich in freigegebenen Verzeichnis.  
+ Die Assembly befindet sich im freigegebenen Verzeichnis.  
   
  ALR_REMOTEDIR  
- Assembly befindet sich in einem Remoteverzeichnis.  
+ Die Assembly befindet sich in einem Remote Verzeichnis.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Werte werden zurückgegeben, durch die [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) und [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) Methoden.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Werte werden von der [resolveassemblyref](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) -Methode und der [getmanagedviewerkreationdata](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) -Methode zurückgegeben.  
   
- Diese Werte können kombiniert werden, mit der `OR` Vorgang.  
+ Diese Werte können mit dem-Vorgang kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
+ [Resolveassemblyref](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

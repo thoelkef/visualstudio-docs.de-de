@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen eines Paketmanifests | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Erstellen eines Paket Manifests | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,30 +20,30 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153837"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Vorgehensweise: Erstellen eines Paketmanifests
+# <a name="how-to-create-a-package-manifest"></a>Gewusst wie: Erstellen eines Paketmanifests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können Sie ein Bootstrapperpaket. Ein Bootstrapperpaket enthält eine einzelnes Produkt-Manifestdatei jedoch ein Paketmanifest für jedes Gebietsschema. Gemeinsam genutzte Funktionen in den verschiedenen lokalisierten Versionen sollten das Produktmanifest näher betrachten.  
+Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie ein Bootstrapperpaket verwenden. Ein Bootstrapperpaket enthält eine einzelne Produkt Manifest-Datei, aber ein Paket Manifest für jedes Gebiets Schema. Gemeinsam genutzte Funktionen über verschiedene lokalisierte Versionen hinweg sollten in das Produkt Manifest gelangen.  
   
- Weitere Informationen zu Paketmanifesten, finden Sie unter [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md).  
+ Weitere Informationen zu Paket [Manifesten finden Sie unter Gewusst wie: Erstellen eines Produkt Manifests](../deployment/how-to-create-a-product-manifest.md).  
   
-## <a name="creating-the-package-manifest"></a>Erstellen des Paketmanifests  
+## <a name="creating-the-package-manifest"></a>Erstellen des Paket Manifests  
   
-#### <a name="to-create-the-package-manifest"></a>Zum Erstellen des Paketmanifests  
+#### <a name="to-create-the-package-manifest"></a>So erstellen Sie das Paket Manifest  
   
-1. Erstellen Sie ein Verzeichnis für die Bootstrapper-Paket. Dieses Beispiel verwendet die C:\package.  
+1. Erstellen Sie ein Verzeichnis für das Bootstrapperpaket. In diesem Beispiel wird c:\packageverwendet.  
   
-2. Erstellen Sie ein Unterverzeichnis mit dem Namen des Gebietsschemas, beispielsweise "En" für Englisch aus.  
+2. Erstellen Sie ein Unterverzeichnis mit dem Namen des Gebiets Schemas, z. b. "en" für Englisch.  
   
-3. In Visual Studio, erstellen Sie eine XML-Datei mit dem Namen `package.xml`, und speichern Sie sie in den Ordner C:\package\en.  
+3. Erstellen Sie in Visual Studio eine XML-Datei mit dem Namen `package.xml` , und speichern Sie Sie im Ordner "c:\package\en".  
   
-4. Fügen Sie XML-Code, zum Auflisten der Name der Bootstrapper-Pakets, die Kultur für dieses lokalisierte Paketmanifest und die optionale Lizenzvertrag. Die folgende XML-Code verwendet die Variablen `DisplayName` und `Culture`, die in einem späteren Element definiert sind.  
+4. Fügen Sie XML hinzu, um den Namen des Bootstrapperpakets, die Kultur für dieses lokalisierte Paket Manifest und den optionalen Lizenzvertrag aufzulisten. Der folgende XML-Code verwendet die Variablen `DisplayName` und `Culture` , die in einem späteren Element definiert sind.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
         LicenseAgreement="eula.txt">  
     ```  
   
-5. Fügen Sie XML-Code, um alle Dateien aufgelistet, die sich im Verzeichnis gebietsschemaspezifische befinden. Das folgende XML verwendet, eine Datei mit dem Namen eula.txt, die für gilt die **En** Gebietsschema.  
+5. Fügen Sie XML hinzu, um alle Dateien aufzulisten, die im Gebiets Schema spezifischen Verzeichnis enthalten sind. Der folgende XML-Code verwendet eine Datei mit dem Namen eula.txt, die für das Gebiets Schema " **en** " anwendbar ist.  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
     </PackageFiles>  
     ```  
   
-6. Fügen Sie XML-Code, um lokalisierbare Zeichenfolgen für die Bootstrapper-Paket zu definieren. Das folgende XML fügt für das de-Gebietsschema-Zeichenfolgen.  
+6. Hinzufügen von XML zum Definieren Lokalisier barer Zeichen folgen für das Bootstrapperpaket. Das folgende XML fügt Fehler Zeichenfolgen für das en-Gebiets Schema hinzu.  
   
     ```  
       <Strings>  
@@ -74,10 +74,10 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
     </Strings>  
     ```  
   
-7. Kopieren Sie den C:\package-Ordner, in das Visual Studio-Bootstrapper-Verzeichnis. Für Visual Studio 2010 ist dies das Verzeichnis \Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+7. Kopieren Sie den Ordner c:\Package in das Verzeichnis von Visual Studio Boots Trapper. Für Visual Studio 2010 ist dies das Verzeichnis "\Programme\Microsoft SDKs\Windows\v7.0a\bootstrapper\packages".  
   
 ## <a name="example"></a>Beispiel  
- Die Paketmanifest enthält gebietsschemaspezifischen Informationen, z. B. Fehlermeldungen, Software-Lizenzbedingungen, und Language Packs.  
+ Das Paket Manifest enthält Gebiets Schema spezifische Informationen, wie z. b. Fehlermeldungen, Software Lizenzbedingungen und Sprachpakete.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -101,5 +101,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

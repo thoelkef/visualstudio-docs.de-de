@@ -11,50 +11,50 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c4009ab6268140117c8fd1294adcc52ac347b799
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153718"
 ---
 # <a name="operational-modes"></a>Betriebsmodi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Es gibt drei Modi, die in denen IDE, wie folgt verwendet werden kann:  
+Es gibt drei Modi, in denen die IDE funktionieren kann, wie im folgenden dargestellt:  
   
 - [Entwurfsmodus](#vsconoperationalmodesanchor1)  
   
-- [Ausführungsmodus](#vsconoperationalmodesanchor2)  
+- [Lauf Modus](#vsconoperationalmodesanchor2)  
   
-- [Unterbrechungsmodus](#vsconoperationalmodesanchor3)  
+- [Break-Modus](#vsconoperationalmodesanchor3)  
   
-  Wie Ihre benutzerdefinierten Debug-Engine (DE) zwischen diesen Modus wechselt, ist eine implementierungsentscheidung, die Sie mit der übergangsmechanismen vertraut sein muss. Die DE kann oder dieser Modi kann nicht direkt implementieren. Diese Modi sind tatsächlich Debug Paket Modi, die Schalter basierend auf der Benutzeraktion oder Ereignisse aus dem DE. Der Übergang vom ausführungs-in den Unterbrechungsmodus ist z. B. durch eine Beenden-Ereignis aus dem DE ausgelöst hat. Der Übergang von Unterbrechung entweder oder Schritt Modus ausgeführt wird durch den Benutzer, die Vorgänge wie z. B. Schritt oder Execute ausgelöst hat. Weitere Informationen zu DE Übergänge, finden Sie unter [Steuern der Ausführung von](../../extensibility/debugger/control-of-execution.md).  
+  Die Art und Weise, wie Ihre benutzerdefinierte Debug-Engine (de) zwischen diesen Modi wechselt, ist eine Implementierungs Entscheidung, bei der Sie mit den Übergangsmechanismen vertraut sein müssen. Diese Modi können von de oder nicht direkt implementiert werden. Diese Modi sind wirklich Debug-paketmodi, die auf der Grundlage von Benutzeraktionen oder Ereignissen aus der de wechseln. Beispielsweise wird der Übergang vom Lauf Modus zum Break-Modus durch ein anhalteereignis aus der de ausgelöst. Der Übergang von der Pause zum Ausführungs Modus oder Schritt Modus wird durch den Benutzer ausgelöst, der Vorgänge ausführt, z. b. Schritt oder ausführen. Weitere Informationen zu de-Übergängen finden Sie unter [Steuerung der Ausführung](../../extensibility/debugger/control-of-execution.md).  
   
-## <a name="vsconoperationalmodesanchor1"></a> Entwurfsmodus  
- Im Entwurfsmodus ist der nonrunning Zustand Visual Studio zu debuggen, während dieses, den Zeitraums Debugfunktionen in Ihrer Anwendung festlegen können.  
+## <a name="design-mode"></a><a name="vsconoperationalmodesanchor1"></a> Entwurfs Modus  
+ Beim Entwurfs Modus handelt es sich um den nicht ausgestellten Status des Visual Studio-Debuggens. in diesem Zeitraum können Sie Debuggingfunktionen in der Anwendung  
   
- Nur ein paar Debuggen während der Entwurfsmodus Features verwendet werden. Entwickler kann auch Haltepunkte festzulegen, oder sehen Sie sich Ausdrücke erstellen. Die DE wird nie geladen oder aufgerufen, während die IDE im Entwurfsmodus befindet. Interaktion mit der er findet statt, während der Ausführung und Break-Modi.  
+ Im Entwurfs Modus werden nur einige Debuggingfunktionen verwendet. Ein Entwickler kann festlegen, dass Breakpoints festgelegt oder Überwachungs Ausdrücke erstellt werden. Die de wird niemals geladen oder aufgerufen, während sich die IDE im Entwurfs Modus befindet. Die Interaktion mit der de findet nur während der Lauf-und Umbruch Modi statt.  
   
-## <a name="vsconoperationalmodesanchor2"></a> Ausführungsmodus  
- Ausführungsmodus tritt auf, wenn ein Programm in einer Debugsitzung in der IDE ausgeführt wird. Die Anwendung führt bis zum Beenden, bis ein Haltepunkt erreicht wird, oder eine Ausnahme ausgelöst wird. Wenn die Anwendung zu beenden, die DE-Übergänge im Entwurfsmodus ausgeführt wird. Wenn ein Haltepunkt erreicht wird, oder eine Ausnahme ausgelöst wird, geht die DE, um in den Unterbrechungsmodus.  
+## <a name="run-mode"></a><a name="vsconoperationalmodesanchor2"></a> Lauf Modus  
+ Der Ausführungs Modus tritt auf, wenn ein Programm in einer Debugsitzung in der IDE ausgeführt wird. Die Anwendung wird bis zum Abbruch ausgeführt, bis ein Breakpoint gedrückt wird oder bis eine Ausnahme ausgelöst wird. Wenn die Anwendung bis zum Beenden ausgeführt wird, wechselt die de in den Entwurfs Modus. Wenn ein Breakpoint gedrückt wird oder eine Ausnahme ausgelöst wird, wechselt die de in den Break-Modus.  
   
-## <a name="vsconoperationalmodesanchor3"></a> Unterbrechungsmodus  
- Im Unterbrechungsmodus tritt auf, wenn die Ausführung des Programms Debuggen angehalten wird. Im Unterbrechungsmodus bietet dem Entwickler einen Überblick über die Anwendung zum Zeitpunkt der Unterbrechung und ermöglicht dem Entwickler, die den Status der Anwendung analysieren und zu ändern, wie die Anwendung ausgeführt wird. Der Entwickler kann anzeigen und Bearbeiten von Code, zu überprüfen oder Ändern von Daten, die Anwendung neu starten, Ausführung beenden oder Fortsetzen der Ausführung an der Stelle.  
+## <a name="break-mode"></a><a name="vsconoperationalmodesanchor3"></a> Break-Modus  
+ Der unterbruchs Modus tritt auf, wenn die Ausführung des debugprogramms angehalten wird. Der Break-Modus bietet dem Entwickler eine Momentaufnahme der Anwendung zum Zeitpunkt der Unterbrechung und ermöglicht es dem Entwickler, den Zustand der Anwendung zu analysieren und zu ändern, wie die Anwendung ausgeführt wird. Der Entwickler kann Code anzeigen und bearbeiten, Daten überprüfen oder ändern, die Anwendung neu starten, die Ausführung beenden oder die Ausführung von demselben Punkt aus fortsetzen.  
   
- Im Unterbrechungsmodus eingegeben wird, wenn die DE eine synchrone Stopping-Ereignis sendet. Synchrone beenden-Ereignissen, die Ereignisse zu beenden, so genannte benachrichtigen der sitzungsbasierter Debug-Manager (SDM) und die IDE, die die Anwendung im Debugmodus befindlichen Ausführen von Code beendet wurde. Die [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) und [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) Schnittstellen sind Beispiele für die beenden-Ereignissen.  
+ Der Break-Modus wird eingegeben, wenn von de ein synchrones anhalteereignis gesendet wird. Beim synchronen Beenden von Ereignissen, auch als Beendigungs Ereignisse bezeichnet, wird der Sitzungs-Debug-Manager (SDM) und die IDE benachrichtigt, dass die zu debuggende Anwendung nicht mehr ausgeführt wird. Die [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) -und [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) -Schnittstellen sind Beispiele für das Beenden von Ereignissen.  
   
- Beenden Ereignisse werden durch einen Aufruf einer der folgenden Methoden, fortgesetzt, die den Debugger im Unterbrechungsmodus auszuführen oder Schritt Modus wechseln:  
+ Das Beenden von Ereignissen wird durch einen Rückruf einer der folgenden Methoden fortgesetzt, die den Debugger vom Unterbrechungs Modus zum Ausführen oder Schritt Modus übergehen:  
   
-- [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+- [Ausführen](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
-- [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
+- [Schritt](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   
-- [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
+- [Fortsetzen](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
   
-### <a name="vsconoperationalmodesanchor4"></a> Schritt-Modus  
- Schritt-Modus tritt auf, wenn das Programm die nächste Zeile von Code oder in, überspringen oder aus einer Funktion der Schritte. Ein Schritt wird ausgeführt, durch Aufrufen der Methode [Schritt](../../extensibility/debugger/reference/idebugprocess3-step.md). Diese Methode erfordert `DWORD`s, die angeben, die [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) und [STEPKIND](../../extensibility/debugger/reference/stepkind.md) Enumerationen als Eingabeparameter.  
+### <a name="step-mode"></a><a name="vsconoperationalmodesanchor4"></a> Schritt Modus  
+ Der Schritt Modus tritt auf, wenn das Programm die nächste Codezeile oder eine Funktion in eine Funktion wechselt. Ein Schritt wird ausgeführt, indem der Methoden [Schritt](../../extensibility/debugger/reference/idebugprocess3-step.md)aufgerufen wird. Diese Methode erfordert `DWORD` s, die die [stepunit](../../extensibility/debugger/reference/stepunit.md) -und [stepkind](../../extensibility/debugger/reference/stepkind.md) -Enumerationen als Eingabeparameter angeben.  
   
- Wenn das Programm erfolgreich Schritte aus, um die nächste Zeile des Codes oder in einer Funktion oder erfolgt die Ausführung bis zum Cursor oder um einen Haltepunkt festlegen, die DE erfolgt automatisch ein Übergang zurück, um den Unterbrechungsmodus.  
+ Wenn das Programm erfolgreich in die nächste Codezeile oder in eine Funktion wechselt oder bis zum Cursor oder zu einem festgelegten Breakpoint ausgeführt wird, wechselt der de automatisch zurück in den Break-Modus.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Steuern der Ausführung](../../extensibility/debugger/control-of-execution.md)

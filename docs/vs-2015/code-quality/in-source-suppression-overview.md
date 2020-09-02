@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 63d405b0e62735c0c1e3d7bb716ea2db29bc19fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651572"
 ---
 # <a name="in-source-suppression-overview"></a>Übersicht über die Unterdrückung im Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die in-Source-Unterdrückung ist die Fähigkeit, Code Analyse Verletzungen in verwaltetem Code zu unterdrücken oder zu ignorieren, indem das **SuppressMessage** -Attribut zu den Code Segmenten hinzugefügt wird, die die Verstöße verursachen. Das **SuppressMessage** -Attribut ist ein bedingtes Attribut, das in den IL-Metadaten der verwalteten Codeassembly nur enthalten ist, wenn das CODE_ANALYSIS-Kompilierungs Symbol zur Kompilierzeit definiert ist.
+Die in-Source-Unterdrückung ist die Fähigkeit, Code Analyse Verletzungen in verwaltetem Code zu unterdrücken oder zu ignorieren, indem das **SuppressMessage** -Attribut zu den Code Segmenten hinzugefügt wird, die die Verstöße verursachen. Das **SuppressMessage** -Attribut ist ein bedingtes Attribut, das in den IL-Metadaten der verwalteten Codeassembly nur enthalten ist, wenn das CODE_ANALYSIS Kompilierungs Symbol zum Zeitpunkt der Kompilierung definiert wird.
 
- Verwenden C++Sie in/CLI die Makros CA_SUPPRESS_MESSAGE oder CA_GLOBAL_SUPPRESS_MESSAGE in der Header Datei, um das-Attribut hinzuzufügen.
+ Verwenden Sie in C++/CLI die Makros CA_SUPPRESS_MESSAGE oder CA_GLOBAL_SUPPRESS_MESSAGE in der Header Datei, um das-Attribut hinzuzufügen.
 
  Sie sollten keine in-Source-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die in-Source-Unterdrückungs Metadaten versehentlich versendet werden. Aufgrund der Verarbeitungskosten der in-Source-Unterdrückung kann die Leistung der Anwendung auch durch Einbeziehen der in-Source-Unterdrückungs Metadaten beeinträchtigt werden.
 
 > [!NOTE]
-> Sie müssen diese Attribute nicht selbst manuell codieren. Weitere Informationen finden Sie unter Gewusst [wie: Unterdrücken von Warnungen mithilfe des Menü Elements](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Das Menü Element ist für C++ Code nicht verfügbar.
+> Sie müssen diese Attribute nicht selbst manuell codieren. Weitere Informationen finden Sie unter Gewusst [wie: Unterdrücken von Warnungen mithilfe des Menü Elements](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Das Menü Element ist für C++-Code nicht verfügbar.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage-Attribut
  Wenn Sie im **Fehlerliste** mit der rechten Maustaste auf eine Code Analyse Warnung klicken und dann auf **Nachricht unterdrücken**klicken, wird entweder im Code oder in der globalen Unterdrückungsdatei des Projekts ein **SuppressMessage** -Attribut hinzugefügt.
@@ -52,7 +52,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 ```
 
- Ort:
+ Hierbei gilt Folgendes:
 
 - **Regel Kategorie** : die Kategorie, in der die Regel definiert ist. Weitere Informationen zu Code Analyse-Regel Kategorien finden Sie unter [Code Analyse für Warnungen für verwalteten Code](../code-quality/code-analysis-for-managed-code-warnings.md).
 
@@ -68,9 +68,9 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
   - Namespace
 
-  - Ressource
+  - Resource
 
-  - Geben Sie Folgendes ein:
+  - Typ
 
   - Member
 
@@ -79,11 +79,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="suppressmessage-usage"></a>SuppressMessage-Verwendung
  Code Analyse Warnungen werden auf der Ebene unterdrückt, auf die eine Instanz des **SuppressMessage** -Attributs angewendet wird. Dies dient dazu, die Unterdrückungs Informationen eng mit dem Code zu verknüpfen, in dem die Verletzung auftritt.
 
- Die allgemeine Form der Unterdrückung schließt die Regel Kategorie und einen Regel Bezeichner ein, der eine optionale, lesbare Darstellung des Regel namens enthält. Ein auf ein Objekt angewendeter
+ Die allgemeine Form der Unterdrückung schließt die Regel Kategorie und einen Regel Bezeichner ein, der eine optionale, lesbare Darstellung des Regel namens enthält. Beispiel:
 
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
- Wenn es strenge Leistungs Gründe für das Minimieren von in-Source-Unterdrückungs Metadaten gibt, kann der Regelname selbst ausgelassen werden. Die Regel Kategorie und Ihre Regel-ID bilden zusammen einen ausreichend eindeutigen Regel Bezeichner. Ein auf ein Objekt angewendeter
+ Wenn es strenge Leistungs Gründe für das Minimieren von in-Source-Unterdrückungs Metadaten gibt, kann der Regelname selbst ausgelassen werden. Die Regel Kategorie und Ihre Regel-ID bilden zusammen einen ausreichend eindeutigen Regel Bezeichner. Beispiel:
 
  `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -123,5 +123,5 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="global-suppression-file"></a>Globale Unterdrückungs Datei
  Die globale Unterdrückungs Datei verwaltet Unterdrückungen, bei denen es sich entweder um Unterdrückungen auf globaler Ebene oder um Unterdrückungen handelt, die kein Ziel angeben. Beispielsweise werden Unterdrückungen für Verstöße auf Assemblyebene in dieser Datei gespeichert. Außerdem werden einige ASP.net Unterdrückungen in dieser Datei gespeichert, da Einstellungen auf Projektebene für Code hinter einem Formular nicht verfügbar sind. Eine globale Unterdrückung wird erstellt und dem Projekt hinzugefügt, wenn Sie zum ersten Mal die Option **in der Projekt Unterdrückungs Datei** des Befehls unter **drücken der Nachricht (en)** im Fehlerliste Fenster auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Unterdrücken von Warnungen mithilfe des Menü Elements](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.Diagnostics.CodeAnalysis>

@@ -13,16 +13,16 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2b036bd68aca126675f26b9823d2c786a0ae652
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675326"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle kann die Sitzung mit dem Debug-Manager (SDM) einen Prozess, den zum Anfügen oder Trennen vom Prozess zu benachrichtigen.  
+Mit dieser Schnittstelle kann der Sitzungs-Debug-Manager (SDM) einen Prozess Benachrichtigen, der an den Prozess angefügt oder von diesem getrennt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,37 +31,37 @@ IDebugProcessEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle auf dasselbe Objekt wie die [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) um Schnittstelle:  
+ Ein benutzerdefinierter Port Lieferant implementiert diese Schnittstelle für das gleiche Objekt wie die [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, um Folgendes zu tun:  
   
-- Unterstützung der nachverfolgung von Sitzungen, die an einen Prozess verbunden  
+- Unterstützung der Nachverfolgung von mit einem Prozess verbundenen Sitzungen  
   
-- Unterstützung für das automatische Anhängen über mehrere Debug-engines  
+- Unterstützung für Automatisches Anfügen über mehrere Debug-engines hinweg  
   
-  Benutzerdefinierte Anschlusslieferanten kann diese Schnittstelle implementieren, wenn er entscheidet.  
+  Der benutzerdefinierte portlieferant kann diese Schnittstelle implementieren, wenn er Sie auswählt.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
   
-- Die SDM-Aufrufe [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf eine `IDebugProcess2` Schnittstelle, um diese Schnittstelle zu erhalten.  
+- Der SDM ruft [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für eine `IDebugProcess2` Schnittstelle auf, um diese Schnittstelle zu erhalten.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugProcessEx2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProcessEx2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[Anfügen](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informiert dem Prozess, eine Sitzung jetzt Debuggen des Prozesses ist.|  
-|[Trennen](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informiert dem Prozess, eine Sitzung nicht mehr Debuggen des Prozesses ist.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Programmknoten eine Liste von Debug-Engines hinzugefügt.|  
+|[Anfügen](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informiert den Prozess, dass eine Sitzung den Prozess jetzt debuggt.|  
+|[Trennen](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informiert den Prozess, dass eine Sitzung den Prozess nicht mehr debuggt.|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Fügt Programmknoten für eine Liste von Debug-engines hinzu.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle ist privat zwischen den SDM und dem Prozess.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Schnittstelle ist für die SDM und den Prozess privat.  
   
-## <a name="requirements"></a>Anforderungen  
- Header: Portpriv.h  
+## <a name="requirements"></a>Requirements (Anforderungen)  
+ Header: portpriv. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

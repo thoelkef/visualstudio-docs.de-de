@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4e266d1b5d0976ebc910a8228a3724f80001b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153317"
 ---
-# <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
+# <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt das Ergebnis der Bindung eines Haltepunkts für Daten.  
+Beschreibt das Ergebnis der Bindung eines Daten Breakpoints.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,28 +46,28 @@ public struct BP_RESOLUTION_DATA { 
   
 ## <a name="members"></a>Member  
  `bstrDataExpr`  
- Die Datenausdruck, der gebunden wurde.  
+ Der Daten Ausdruck, der gebunden wurde.  
   
  `bstrFunc`  
- Der Name der Funktion hat der Datenhaltepunkt in (sofern vorhanden) gebunden.  
+ Der Name der Funktion, an die der Daten Breakpoint gebunden ist (sofern vorhanden).  
   
  `bstrImage`  
- Der Name des Moduls (z. B. MyModule.dll), das in der Datenhaltepunkt gebunden ist.  
+ Der Name des Moduls (z. b. MyModule.dll), an das der Daten Breakpoint gebunden ist.  
   
  `dwFlags`  
- Ein Wert aus der [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) Enumeration, die beschreibt, wie der Datenhaltepunkt implementiert wird.  
+ Ein Wert aus der [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) -Enumeration, die beschreibt, wie der Daten Haltepunkt implementiert wird.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur ist ein Mitglied der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) -Struktur, die in ein Mitglied zu aktivieren ist die [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) vom zurückgegebene Struktur der [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur ist ein Member der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Struktur, der wiederum ein Member der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur ist, die von der [getresolutioninfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) -Methode zurückgegeben wird.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   

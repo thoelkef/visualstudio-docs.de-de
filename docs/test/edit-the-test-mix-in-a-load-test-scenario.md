@@ -71,7 +71,7 @@ Sie können der Testmischung des Szenarios mithilfe des **Auslastungstest-Editor
 
 4. Wenn Sie keine weiteren Tests entfernen möchten, klicken Sie auf **OK**.
 
-## <a name="EditingTestMixAboutMixControl"></a> Informationen zur Mischungssteuerung
+## <a name="about-the-mix-control"></a><a name="EditingTestMixAboutMixControl"></a> Informationen zur Mischungssteuerung
 Mithilfe der Mischungssteuerung können Sie die Lastprozentsätze anpassen, die in einem Auslastungstestszenario auf die Tests, Browsertypen bzw. Netzwerktypen verteilt werden. Die Prozentsätze werden mit Schiebereglern angepasst. Die Testmischung gibt die Wahrscheinlichkeit an, mit der ein virtueller Benutzer einen bestimmten Test in einem Auslastungstestszenario ausführt.
 
 Wenn Sie einen Schieberegler bewegen, werden die Prozentwerte aller verfügbaren Elemente geändert. Wenn mehr als zwei Elemente vorhanden sind, wird der hinzugefügte bzw. entfernte Betrag gleichmäßig auf die anderen Elemente verteilt. Dieses Verhalten kann geändert werden. Wenn Sie für ein bestimmtes Element das Kontrollkästchen in der Sperrspalte aktivieren, wird der für dieses Element festgelegte Prozentsatz gesperrt. Wenn Sie anschließend einen Schieberegler bewegen, wird der hinzugefügte bzw. entfernte Betrag nur auf die verbleibenden, nicht gesperrten Elemente verteilt.

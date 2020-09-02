@@ -11,16 +11,16 @@ ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681543"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, z. B. einem Editor oder Designer, die Mitgliedschaft in und Darstellung der **Toolbox**zu verwalten.  
   
- Darüber hinaus kann die **Toolbox** selbst mittels Automatisierung verwaltet werden. Weitere Informationen zum Verwalten einer Toolbox mittels Automatisierung finden Sie unter [Vorgehensweise: Steuern die Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Darüber hinaus kann die **Toolbox** selbst mittels Automatisierung verwaltet werden. Weitere Informationen zum Verwalten einer Toolbox mittels Automatisierung finden Sie unter [How to: Control the Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Automatische Toolbox-Registerkartenauswahl  
  Eine bestimmte Registerkarte oder Kategorie der **Toolbox** kann automatisch basierend auf dem aktuell aktiven Editor oder Designer aktiviert werden. Wenn z. B. ein Forms-Designer aktiviert ist, soll möglicherweise die Registerkarte **Alle Windows Forms** ausgewählt sein.  
@@ -34,9 +34,9 @@ Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, 
 ## <a name="controlling-the-toolbox"></a>Steuern der Toolbox  
  Durch Erweiterung der Automatisierungsunterstützung stellt das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] folgende Schnittstellen bereit, damit VSPackages die Verwaltung der **Toolbox** besser steuern können.  
   
-|Interface|Beschreibung|  
+|Schnittstelle|BESCHREIBUNG|  
 |---------------|-----------------|  
-|<xref:System.Drawing.Design.IToolboxService>|Ermöglicht es Anwendungen zu verwalten, hinzufügen und Entfernen von <xref:System.Drawing.Design.ToolboxItem> Objekte aus der **Toolbox**. Ermöglicht zudem die Konfiguration der Darstellung und von **Toolbox** -Kategorien.|  
+|<xref:System.Drawing.Design.IToolboxService>|Ermöglicht es Anwendungen, <xref:System.Drawing.Design.ToolboxItem> Objekte aus der **Toolbox**zu verwalten, hinzuzufügen und zu entfernen. Ermöglicht zudem die Konfiguration der Darstellung und von **Toolbox** -Kategorien.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>|Ermöglicht Anwendungen, Active-basierte **Toolbox** -Steuerelemente zu verwalten, hinzuzufügen und zu entfernen sowie Kategorien und Darstellung der **Toolbox** zu konfigurieren.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>|Erweitert die Funktionalität der <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> durch die Bereitstellung umfassender Unterstützung für Persistenz und Lokalisierung.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox4>||  
@@ -47,11 +47,11 @@ Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, 
   
 - <xref:System.Drawing.Design.IToolboxService> ist nur für VSPackages verfügbar, die auf dem Managed Package Framework basieren.  
   
-- Steuerelemente können nicht direkt hinzugefügt werden, um die **Toolbox** mit <xref:System.Drawing.Design.IToolboxService>.  
+- Steuerelemente können der **Toolbox** nicht mithilfe von direkt hinzugefügt werden <xref:System.Drawing.Design.IToolboxService> .  
   
 - Ein VSPackage muss entweder <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> verwenden, um Steuerelemente hinzuzufügen, oder das Steuerelement in einen Wrapper-Steuerelement hosten, das von <xref:System.Windows.Forms.AxHost> abgeleitet wird.  
   
-   Visual Studio enthält das `Aximp.exe`-Tool für die Automatisierung der Einbindung eines ActiveX-Steuerelements in einem Steuerelement, das von <xref:System.Windows.Forms.AxHost> abgeleitet wird. Weitere Informationen finden Sie unter [Aximp.exe (Windows Forms ActiveX Control Importer)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio enthält das `Aximp.exe`-Tool für die Automatisierung der Einbindung eines ActiveX-Steuerelements in einem Steuerelement, das von <xref:System.Windows.Forms.AxHost> abgeleitet wird. Weitere Informationen finden Sie unter [Aximp.exe (Windows Forms ActiveX-Steuer](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)Element-Import Programm).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, und <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sind COM-basierte Schnittstellen, die über die Interop-Assemblys verfügbar sind.  
   
@@ -69,5 +69,5 @@ Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, 
   
   Verwenden Sie den Einstellungsmechanismus, um für Benutzer das Speichern von **Toolbox** -Einstellungen zu ermöglichen, auf die von Benutzern über den Befehl **Import- und Exporteinstellungen** im Menü **Extras** der IDE zugegriffen wird. Weitere Informationen zur Verwendung von Einstellungen finden Sie unter [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Erweitern der Toolbox](../misc/extending-the-toolbox.md)

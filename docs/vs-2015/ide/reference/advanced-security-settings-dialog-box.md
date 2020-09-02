@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 000c3c4e2996869e96fd0d6097b5bab8576936a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651741"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Erweiterte Sicherheitseinstellungen (Dialogfeld)
@@ -30,7 +30,7 @@ ms.locfileid: "72651741"
 
 Mit diesem Dialogfeld können Sie Sicherheitseinstellungen bezüglich des Debuggens in einer Zone angeben.
 
- Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Sicherheit**. Wählen Sie auf der Seite **Sicherheit** die Option **ClickOnce-Sicherheitseinstellungen aktivieren** aus, klicken Sie auf **Teilweise vertrauenswürdige Anwendung**, und klicken Sie dann auf **Erweitert**.
+ Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Wenn der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Sicherheit** . Aktivieren Sie auf der Seite **Sicherheit** die Option **ClickOnce-Sicherheitseinstellungen aktivieren**, klicken Sie auf **diese Anwendung ist eine teilweise vertrauenswürdige Anwendung**, und klicken Sie dann auf **erweitert**.
 
 ## <a name="uielement-list"></a>UIElement-Liste
  **Diese Anwendung mit dem ausgewählten Berechtigungssatz debuggen:** Wenn Sie dieses Kontrollkästchen aktivieren, wird der auf der Seite **Sicherheit** ausgewählte Berechtigungssatz während des Debuggens verwendet. Diese Option ist standardmäßig ausgewählt.
@@ -43,5 +43,5 @@ Mit diesem Dialogfeld können Sie Sicherheitseinstellungen bezüglich des Debugg
 
  **Diese Anwendung debuggen, als ob sie von folgender URL heruntergeladen würde:** Wenn Sie der Anwendung gestatten müssen, auf die Website oder die Serverfreigabe entsprechend der **Installations-URL** zuzugreifen, die Sie auf der Seite **Veröffentlichen** angegeben haben, geben Sie die URL hier ein. Diese Option ist nur verfügbar, wenn **Der Anwendung Zugriff auf die Ursprungssite gewähren** ausgewählt ist.
 
-## <a name="see-also"></a>Siehe auch
- [Seite „Sicherheit“, Projekt-Designer](../../ide/reference/security-page-project-designer.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Seite "Sicherheit", Projekt-Designer](../../ide/reference/security-page-project-designer.md)

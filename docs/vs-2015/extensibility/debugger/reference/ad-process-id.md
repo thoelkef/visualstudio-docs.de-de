@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea06d8e007e2df88cb46c2f0e6dd4a79ebe711b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153627"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
+# <a name="ad_process_id"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt die Prozess-ID, die möglicherweise eine System-ID oder eine GUID an.  
+Gibt die Prozess-ID an, bei der es sich entweder um eine System-ID oder eine GUID handeln kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,19 +48,19 @@ public struct AD_PROCESS_ID {
   
 ## <a name="members"></a>Member  
  `ProcessIdType`  
- Ein Wert aus der [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Enumeration, die angibt, wie der zum Interpretieren der `ProcessId` union (oder für verwalteten Code, den Zugriff auf die Member der Struktur).  
+ Ein Wert aus der [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Enumeration, der angibt, wie die `ProcessId` Union interpretiert werden soll (oder für verwalteten Code, auf den der Member der Struktur zugreifen soll).  
   
  dwProcessId  
  Die Prozess-ID als Wert aus dem System.  
   
- guidProcessId  
+ guidprocessid  
  Die Prozess-ID als GUID.  
   
- dwUnused  
+ dwunused  
  Auffüllung.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird für die folgenden Methoden übergeben:  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird an die folgenden Methoden übermittelt:  
   
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
@@ -70,26 +70,26 @@ public struct AD_PROCESS_ID {
   
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
-  Und wird zurückgegeben, aus den folgenden Methoden:  
+  Und werden von den folgenden Methoden zurückgegeben:  
   
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)   
  [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)   
- [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   
- [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)   
- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   
- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   
+ [Getphysicalprocessid](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   
+ [Gethostid](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)   
+ [Getproviderprogramnode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   
+ [Watchforproviderevents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

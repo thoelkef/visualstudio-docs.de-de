@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf6016b2c12fd5ebe7cfb76c14c776508d99d2db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651475"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
@@ -36,7 +36,7 @@ Gibt den Speicherort und den Typ der Sidecardatei an, die lokalisierte IntelliSe
 
  `format` ist optional. Der Typ der für die Lokalisierung verwendeten Sidecardatei. Verwenden Sie `messagebundle`, um die Verwendung der von Open Ajax-Metadaten definierten Meldungsbündel festzulegen. Das empfohlene Format ist `messagebundle`. Allerdings wird dieses Format nicht in Microsoft Ajax oder in WINMD-Dateien unterstützt. Verwenden Sie `vsdoc`, um das standardmäßige .NET Framework-Lokalisierungsformat anzugeben, das von Microsoft Ajax und Windows-Runtime verwendet wird. Dieses Attribut ist optional. Das Standardformat ist `vsdoc`.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Das `<loc>`-Element muss am Dateianfang in demselben Abschnitt wie das `<reference>`-Element angezeigt werden. Verwendungsregeln für das `<loc>`-Element entsprechen denen für das `<reference>`-Element. Weitere Informationen finden Sie im Abschnitt "References-Direktiven" in [JavaScript IntelliSense](../ide/javascript-intellisense.md).
 
  Visual Studio verarbeitet ein einzelnes `<loc>`-Element für jede JS-Datei. Wenn mehrere `<loc>`-Elemente vorhanden sind, wird nur ein einzelnes `<loc>`-Element verwendet. Verhalten für das Bestimmen, welches zu verwendende `<loc>`-Element nicht definiert ist.
@@ -101,5 +101,5 @@ function illuminate(a)
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)

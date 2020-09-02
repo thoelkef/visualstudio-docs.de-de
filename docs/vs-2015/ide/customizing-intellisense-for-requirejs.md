@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 279ac7737460c90f86918ae673e8f64ef1215546
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665880"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Anpassen von IntelliSense für RequireJS
@@ -23,14 +23,14 @@ Beginnend mit Visual Studio 2013 Update 4 wird Unterstützung für die beliebte 
 
  Visual Studio unterstützt standardmäßig eine sehr einfache Konfiguration zur Unterstützung von RequireJS, aber es ist üblich, dass Sie Ihre eigenen benutzerdefinierten Konfigurationseinstellungen einrichten (das heißt, Aliase für Bibliotheken definieren). Dieses Thema beschreibt die verschiedenen Möglichkeiten, über die Sie Visual Studio so anpassen können, dass es mit der einzigartigen Einrichtung Ihres Projekts funktioniert.
 
- In diesem Thema wird Folgendes erläutert:
+ In diesem Thema wird Folgendes beschrieben:
 
 - Anpassen von RequireJS in ASP.NET-Projekten
 
 - Anpassen von RequireJS in JSProj-Projekten, die verwendet werden, um Apache Cordova-apps, Windows Store-Apps und LightSwitch-HTML-Apps zu erstellen.
 
 ## <a name="customize-requirejs-in-aspnet-projects"></a>Anpassen von RequireJS in ASP.NET-Projekten
- Die Unterstützung für RequireJS wird automatisch aktiviert, wenn auf eine Datei mit dem Namen „require.js“ durch Ihre aktuelle JavaScript-Datei verwiesen wird. (Weitere Informationen finden Sie im Abschnitt „Bestimmen des IntelliSense-Kontexts“ unter [JavaScript IntelliSense](../ide/javascript-intellisense.md)). In ASP.NET-Projekten erfolgt das Verweisen auf „require.js“ in der Regel mithilfe einer /// \<reference/>-Anweisung in einer _references.js-Datei.
+ Die Unterstützung für RequireJS wird automatisch aktiviert, wenn auf eine Datei mit dem Namen „require.js“ durch Ihre aktuelle JavaScript-Datei verwiesen wird. (Weitere Informationen finden Sie im Abschnitt „Bestimmen des IntelliSense-Kontexts“ unter [JavaScript IntelliSense](../ide/javascript-intellisense.md)). In ASP.NET-Projekten erfolgt die Referenzierung require.js in der Regel mithilfe einer///- \<reference/> Direktive innerhalb einer _references.js Datei.
 
 ### <a name="configure-the-data-main-attribute-in-an-aspnet-project"></a>Konfigurieren des Data-Main-Attributs in einem ASP.NET-Projekt
  Um korrekt zu simulieren, wie Ihre App bei Ausführung funktioniert, muss der JavaScript-Editor wissen, welche Datei zuerst geladen werden soll, wenn Sie "require.js" einrichten. Dies wird in der Regel in der Anwendungs-HTML-Datei mit dem `data-main`-Attribut für das Script-Element konfiguriert, das auf "require.js" verweist, wie nachfolgend dargestellt.
@@ -39,14 +39,14 @@ Beginnend mit Visual Studio 2013 Update 4 wird Unterstützung für die beliebte 
 <script src="js/require.js" data-main="js/app.js"></script>
 ```
 
- In diesem Beispiel wird das Skript, auf das von data-main (js/app.js) verwiesen wird, unmittelbar nach "require.js" geladen. Die Datei, die sofort geladen wird, ist am besten geeignet, um zuerst die Nutzung von RequireJS zu konfigurieren (mithilfe von `require.config()`). Fügen Sie ein `data-main`-Attribut hinzu, um dem JavaScript-Editor mitzuteilen, welche Datei für `data-main` in der Anwendung verwendet werden soll, und ändern Sie dann eine /// \<reference/>-Anweisung, die in der Anwendung auf „require.js“ verweist. Sie können diese Anweisung beispielsweise für Folgendes verwenden:
+ In diesem Beispiel wird das Skript, auf das von data-main (js/app.js) verwiesen wird, unmittelbar nach "require.js" geladen. Die Datei, die sofort geladen wird, ist der beste Ort für die Erstkonfiguration der Verwendung von Requirements JS (mithilfe von `require.config()` ). Um dem JavaScript-Editor mitzuteilen, welche Datei für `data-main` in der Anwendung verwendet werden soll, fügen Sie ein `data-main` -Attribut hinzu, und ändern Sie dann eine///- \<reference/> Direktive, die auf require.js in der Anwendung verweist. Sie können diese Anweisung beispielsweise für Folgendes verwenden:
 
 ```javascript
 /// <reference path="js/require.js" data-main="js/app.js" />
 ```
 
 ### <a name="configure-the-application-start-page-in-an-aspnet-project"></a>Konfigurieren der Startseite der Anwendung in einem ASP.NET-Projekt
- Wenn die app ausgeführt wird, geht Requirements js davon aus, dass relative Pfade zu Dateien (z. b. ".. \\ "Pfade" sind relativ zur HTML-Datei, die die "require. js"-Bibliothek geladen hat. Beim Schreiben von Code im Visual Studio-Editor für ein ASP.NET-Projekt, ist diese Startseite unbekannt, und Sie müssen dem Editor mitteilen, welche Startseite verwendet werden soll, wenn Sie relative Dateipfade verwenden. Fügen Sie zu diesem Zweck ein `start-page`-Attribut zu der /// \<reference/>-Anweisung hinzu.
+ Wenn die app ausgeführt wird, geht Requirements js davon aus, dass relative Pfade zu Dateien (z. b. ".. \\ "-Pfade) relativ zur HTML-Datei sind, die die require.js Bibliothek geladen hat. Beim Schreiben von Code im Visual Studio-Editor für ein ASP.NET-Projekt, ist diese Startseite unbekannt, und Sie müssen dem Editor mitteilen, welche Startseite verwendet werden soll, wenn Sie relative Dateipfade verwenden. Fügen Sie zu diesem Zweck ein `start-page` -Attribut zu Ihrer///- \<reference/> Direktive hinzu.
 
 ```javascript
 /// <reference path="js/require.js" data-main="js/app.js" start-page="/app/index.html" />
@@ -59,5 +59,5 @@ Beginnend mit Visual Studio 2013 Update 4 wird Unterstützung für die beliebte 
 
  Die Anpassungsschritte für ASP.NET-Projekte sind in einer JSProj-Projektdatei nicht erforderlich. Das heißt, dass Skriptdateien, die vom `data-main`-Attribut Skript-Tag verwendet werden, das auf "require.js" verweist, automatisch zur Konfiguration von "require.js" geladen werden. Die HTML-Datei, die auf "reuqire.js" verweist, wird auch als Startseite für die Anwendung verwendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)
