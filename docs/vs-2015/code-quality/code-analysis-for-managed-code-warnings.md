@@ -1,6 +1,6 @@
 ---
 title: Code Analyse für Warnungen für verwalteten Code | Microsoft-Dokumentation
-ms.date: 11/15/2016
+ms.date: 08/31/2020
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 22
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: wpickett
-ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e689d137e071096d096e117ef3b79df405a060ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535732"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285748"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>Warnungen bei der Analyse von verwaltetem Code
+# <a name="net-code-analysis-rules"></a>.NET-Code Analyse Regeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverletzungen in verwalteten Codebibliotheken bereit. Die Warnungen werden in Regelbereichen, etwa Design, Lokalisierung, Leistung und Sicherheit, angeordnet. Jede Warnung steht für die Verletzung einer Analyseregel für verwalteten Code. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Warnung zur Analyse von verwaltetem Code.
