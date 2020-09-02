@@ -1,5 +1,5 @@
 ---
-title: SccWillCreateSccFile-Funktion | Microsoft Docs
+title: Sccwillkreatesccfile-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0694fd6b4ba82faf8b05354765fc5734efe2ef4d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700212"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile-Funktion
-Diese Funktion bestimmt, ob das Quellcodeverwaltungs-Plug-In die Erstellung des MSSCCPRJ unterstützt. SCC-Datei für jede der angegebenen Dateien.
+Diese Funktion bestimmt, ob das Quellcodeverwaltungs-Plug-in die Erstellung von Mssccprj unterstützt. SCC-Datei für jede der angegebenen Dateien.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,31 +36,31 @@ SCCRTN SccWillCreateSccFile(
 #### <a name="parameters"></a>Parameter
  pContext
 
-[in] Der Kontextzeiger für die Quellcodeverwaltung.
+in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
 
- nFiles
+ nnoch
 
-[in] Die Anzahl der im `lpFileNames` Array enthaltenen Dateinamen sowie `pbSccFiles` die Länge des Arrays.
+in Die Anzahl von Dateinamen, die im Array enthalten sind, sowie `lpFileNames` die Länge des `pbSccFiles` Arrays.
 
- lpFileNames
+ lpfile-Namen
 
-[in] Ein Array vollqualifizierter Dateinamen, die überprüft werden sollen (Array muss vom Aufrufer zugewiesen werden).
+in Ein Array von voll qualifizierten Dateinamen, die überprüft werden sollen (das Array muss vom Aufrufer zugeordnet werden).
 
- pbSccFiles
+ pbsccfiles
 
-[in, out] Array, in dem die Ergebnisse gespeichert werden sollen.
+[in, out] Das Array, in dem die Ergebnisse gespeichert werden sollen.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Erfolg.|
 |SCC_E_INVALIDFILEPATH|Einer der Pfade im Array ist ungültig.|
-|SCC_E_NONSPECIFICERROR|Unspezifischer Fehler.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler.|
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Funktion wird mit einer Liste von Dateien aufgerufen, um zu bestimmen, ob das Quellcodeverwaltungs-Plug-In Unterstützung im MSSCCPRJ bietet. SCC-Datei für jede der angegebenen Dateien (weitere Informationen zum MSSCCPRJ. SCC-Datei, siehe [MSSCCPRJ. SCC-Datei](../extensibility/mssccprj-scc-file.md)). Quellcodeverwaltungs-Plug-Ins können deklarieren, ob sie MSSCCPRJ erstellen können. SCC-Dateien, `SCC_CAP_SCCFILE` indem sie während der Initialisierung deklariert werden. Das Plug-In `TRUE` `FALSE` gibt oder `pbSccFiles` pro Datei im Array an, welche der angegebenen Dateien MSSCCPRJ enthält. SCC-Unterstützung. Wenn das Plug-In einen Erfolgscode aus der Funktion zurückgibt, werden die Werte im Rückgabearray berücksichtigt. Bei einem Fehler wird das Array ignoriert.
+ Diese Funktion wird mit einer Liste von Dateien aufgerufen, um zu bestimmen, ob das Quellcodeverwaltungs-Plug-in Unterstützung in Mssccprj bereitstellt. SCC-Datei für jede der angegebenen Dateien (Weitere Informationen zu Mssccprj. SCC-Datei finden Sie unter [Mssccprj. SCC-Datei](../extensibility/mssccprj-scc-file.md)). Quellcodeverwaltungs-Plug-Ins können deklarieren, ob Sie Mssccprj erstellen können. SCC-Dateien durch deklarieren `SCC_CAP_SCCFILE` während der Initialisierung. Das Plug-in gibt `TRUE` oder `FALSE` pro Datei im `pbSccFiles` Array zurück, um anzugeben, welche der angegebenen Dateien über Mssccprj verfügen. SCC-Unterstützung. Wenn das Plug-in einen Erfolgs Code aus der Funktion zurückgibt, werden die Werte im Rückgabe Array berücksichtigt. Bei einem Fehler wird das Array ignoriert.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

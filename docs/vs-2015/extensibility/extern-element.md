@@ -14,18 +14,18 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204401"
 ---
 # <a name="extern-element"></a>Extern-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Element "extern" verweist auf externe Headerdateien (. h) zum Zeitpunkt der Kompilierung mit der VSCT-Datei zusammengeführt. Die Dateien, die zusammengeführt werden muss auf dem Include-Pfad, dem VSCT-Compiler zugewiesen oder mithilfe einer [Include-Element](../extensibility/include-element.md). Die Dateien sind möglicherweise andere VSCT-Dateien oder C++-Headerdateien.  
+Das extern-Element verweist auf alle externen Header Dateien (. h), die zur Kompilierzeit mit der vsct-Datei zusammengeführt werden sollen. Die zusammen zuführenden Dateien müssen sich auf dem Includepfad befinden, der dem VSCT-Compiler übergeben wird oder auf den von einem [include-Element](../extensibility/include-element.md)verwiesen wird. Die Dateien können andere vsct-Dateien oder C++-Header Dateien sein.  
   
- Definitionen in Headerdateien muss im Format "#define [Symbol] [Wert]" der Wert kann ein anderes Symbol sein, wenn sie zuvor definiert wird. Definitionen können in bedingten Anweisungen der Befehl-Elemente verwendet werden. Jedes Symbol nicht verwendet werden verworfen.  
+ Definitionen in Header Dateien müssen das Format "#define [Symbol] [Wert]" aufweisen. der Wert ist möglicherweise ein anderes Symbol, wenn er zuvor definiert wurde. Definitionen können in Bedingungs Anweisungen von Befehls Elementen verwendet werden. Jedes Symbol, das nicht tatsächlich verwendet wird, wird verworfen.  
   
  CommandTable-Element  
 Extern-Element  
@@ -41,23 +41,23 @@ Extern-Element
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
-|href|Erforderlich. Der Pfad zur Headerdatei:<br /><br /> href="stdidcmd.h"|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|language|Dies ist optional. Die Standardsprache für alle [ \<Zeichenfolgen >](../extensibility/strings-element.md) Elemente in der Befehlstabelle:<br /><br /> language="en-us"|  
+|href|Erforderlich. Der Pfad zur Header Datei:<br /><br /> href = "stdidcmd. h"|  
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|language|Optional. Die Standardsprache aller [\<Strings>](../extensibility/strings-element.md) Elemente in der Befehls Tabelle:<br /><br /> language = "en-US"|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |Keine|Keine|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, d. h. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern –, die eine VSPackage für die IDE bietet.|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen – d. h. Menü Elemente, Menüs, Symbolleisten und Kombinations Felder –, die ein VSPackage für die IDE bereitstellt.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -71,7 +71,7 @@ Extern-Element
 </CommandTable>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Visual Studio-Befehls Tabelle (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

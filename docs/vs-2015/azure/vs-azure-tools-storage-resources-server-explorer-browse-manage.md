@@ -12,27 +12,27 @@ ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
 ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849868"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Übersicht über
+## <a name="overview"></a>Übersicht
 
-Wenn Sie die Azure-Tools für Microsoft Visual Studio installiert haben, können Sie Blob-, Warteschlangen- und Tabellendaten von Ihren Speicherkonten für Azure aus anzeigen. Der Knoten für Azure **Storage** im Server-Explorer zeigt Daten, die sich in Ihrem lokalen Speicheremulatorkonto und Ihren anderen Azure-Speicherkonten befinden.
+Wenn Sie die Azure-Tools für Microsoft Visual Studio installiert haben, können Sie Blob-, Warteschlangen- und Tabellendaten von Ihren Speicherkonten für Azure aus anzeigen. Der Knoten Azure **Storage** in Server-Explorer zeigt Daten an, die sich in Ihrem lokalen speicheremulatorkonto und ihren anderen Azure-Speicher Konten befinden.
 
-Wählen Sie zum Anzeigen des Server-Explorers in Visual Studio auf der Menüleiste nacheinander die Optionen **Ansicht** > **Server-Explorer**. Der Knoten **Storage** zeigt alle Speicherkonten an, die unter jedem Azure-Abonnement oder -Zertifikat vorhanden sind, mit dem Sie verbunden sind. Wird das Speicherkonto nicht angezeigt, befolgen Sie die Anweisungen am [Ende des Artikels](#add-storage-accounts-by-using-server-explorer), um das Konto hinzuzufügen.
+Um Server-Explorer in Visual Studio anzuzeigen, wählen Sie in der Menüleiste **View**die Option  >  **Server-Explorer**anzeigen aus. Der Knoten **Storage** zeigt alle Speicherkonten an, die unter jedem Azure-Abonnement oder -Zertifikat vorhanden sind, mit dem Sie verbunden sind. Wird das Speicherkonto nicht angezeigt, befolgen Sie die Anweisungen am [Ende des Artikels](#add-storage-accounts-by-using-server-explorer), um das Konto hinzuzufügen.
 
-Ab dem Azure SDK 2.7 können Sie auch den Cloud-Explorer zum Anzeigen und Verwalten von Azure-Ressourcen verwenden. Weitere Informationen finden Sie unter [Verwalten von Azure-Ressourcen mit dem Cloud-Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
+Ab dem Azure SDK 2.7 können Sie auch den Cloud-Explorer zum Anzeigen und Verwalten von Azure-Ressourcen verwenden. Weitere Informationen finden Sie unter [Verwalten von Azure-Ressourcen mit Cloud-Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Anzeigen und Verwalten von Speicherressourcen in Visual Studio
 
-Server-Explorer zeigt automatisch eine Liste von Blobs, Warteschlangen und Tabellen in Ihrem Speicheremulatorkonto. Das Speicheremulatorkonto wird als der Knoten **Entwicklung** unter dem Knoten **Storage** im Server-Explorer angezeigt.
+Der Server-Explorer zeigt automatisch eine Liste von Blobs, Warteschlangen und Tabellen in Ihrem Speicheremulatorkonto an. Das speicheremulatorkonto wird in Server-Explorer unter dem Knoten " **Speicher** " als **Entwicklungs** Knoten aufgeführt.
 
 Erweitern Sie zum Anzeigen der Ressourcen des Speicheremulatorkontos den Knoten **Entwicklung** . Wenn der Speicheremulator nicht gestartet wurde, wird er automatisch gestartet, wenn Sie den Knoten **Entwicklung** erweitern. Dieser Prozess kann mehrere Sekunden dauern. Sie können weiterhin in anderen Bereichen von Visual Studio arbeiten, während der Speicheremulator gestartet wird.
 
@@ -78,11 +78,11 @@ Sie können die folgenden Vorgänge für Blobs mithilfe der Schaltflächen in de
 
 1. Wählen Sie im Dialogfeld **Neue Datei hochladen** die Schaltfläche **Durchsuchen**, um die Datei anzugeben, die Sie hochladen möchten. Geben Sie dann einen Ordnernamen im Feld **Ordner (optional)** ein.
 
-   ![Hochladen einer Datei in einen BLOB-Ordner](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![Hochladen einer Datei in einen Blobordner](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
    Sie können den Containerordnern Unterordner hinzufügen, indem Sie den Schritt wie beschrieben erneut durchführen. Wenn Sie keinen Ordnernamen angeben, wird die Datei auf der obersten Ebene des Blobcontainers hochgeladen. Die Datei wird im angegebenen Ordner im Container angezeigt.
 
-   ![Ordner, der einem BLOB-Container hinzugefügt wurde](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![Ordner, der einem Blobcontainer hinzugefügt wurde](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
 1. Doppelklicken Sie auf den Ordner, oder drücken Sie die EINGABETASTE, um den Inhalt des Ordners anzuzeigen. Wenn Sie sich im Ordner des Containers befinden, können Sie in das Stammverzeichnis des Containers zurückkehren, indem Sie die Schaltfläche **Übergeordnetes Verzeichnis öffnen** (Pfeilschaltfläche) wählen.
 
@@ -96,7 +96,7 @@ Da es sich bei Ordnern in Blobcontainern um virtuelle Ordner handelt, ist es nic
 
 Sie können die angezeigten Blobs filtern, indem Sie ein gemeinsames Präfix angeben.
 
-Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** ( **!** ) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
+Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** (**!**) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
 
 ![Filtertextfeld](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -110,7 +110,7 @@ Verwenden Sie im Cloud-Explorer eine der folgenden Methoden:
 * Wählen Sie den Blobnamen und anschließend die Schaltfläche **Öffnen** aus.
 * Doppelklicken Sie auf den Blobnamen.
 
-Der Status eines Blobdownloads wird im Fenster **Azure-Aktivitätsprotokoll** angezeigt.
+Der Status eines Blob-Downloads wird im Fenster **Azure-Aktivitätsprotokoll** angezeigt.
 
 Das Blob wird im Standard-Editor für diesen Dateityp geöffnet. Wenn das Betriebssystem den Dateityp erkennt, wird die Datei in einer lokal installierten Anwendung geöffnet. Andernfalls werden Sie aufgefordert, eine für den Dateityp des Blobs geeignete Anwendung auszuwählen. Die beim Herunterladen von Blobs erstellte lokale Datei ist als schreibgeschützt gekennzeichnet.
 
@@ -142,11 +142,11 @@ Die Datei wird an einen temporären Speicherort heruntergeladen und auf dem loka
 
 ## <a name="work-with-queue-resources"></a>Arbeiten mit Warteschlangenressourcen
 
-Speicherdienstwarteschlangen werden in einem Azure-Speicherkonto gehostet. Dieses ermöglicht die Kommunikation der Clouddienstrollen untereinander und mit anderen Diensten über einen Nachrichtenübergabemechanismus. Greifen Sie auf die Warteschlange programmgesteuert über einen Clouddienst und einen Webdienst für externe Clients zu. Oder greifen Sie mit Server-Explorer in Visual Studio direkt auf die Warteschlange zu.
+Speicherdienstwarteschlangen werden in einem Azure-Speicherkonto gehostet. Dieses ermöglicht die Kommunikation der Clouddienstrollen untereinander und mit anderen Diensten über einen Nachrichtenübergabemechanismus. Greifen Sie auf die Warteschlange programmgesteuert über einen Clouddienst und einen Webdienst für externe Clients zu. Oder greifen Sie mit dem Server-Explorer in Visual Studio direkt auf die Warteschlange zu.
 
 Wenn Sie einen Clouddienst entwickeln, in dem Warteschlangen verwendet werden, können Sie Warteschlangen mit Visual Studio erstellen und interaktiv mit ihnen arbeiten, während Sie Ihren Code entwickeln und testen.
 
-Im Dialogfeld Server-Explorer können Sie die Warteschlangen in einem Speicherkonto anzeigen, Warteschlangen erstellen und löschen, eine Warteschlange zum Anzeigen von Nachrichten öffnen und einer Warteschlange Nachrichten hinzufügen. Ist eine Warteschlange zum Anzeigen geöffnet, können Sie die einzelnen Nachrichten anzeigen. Mit den Schaltflächen in der linken oberen Ecke können Sie die folgenden Aktionen für die Warteschlange ausführen:
+Im Server-Explorer können Sie die Warteschlangen in einem Speicherkonto anzeigen, Warteschlangen erstellen und löschen, eine Warteschlange zum Anzeigen von Nachrichten öffnen und einer Warteschlange Nachrichten hinzufügen. Ist eine Warteschlange zum Anzeigen geöffnet, können Sie die einzelnen Nachrichten anzeigen. Mit den Schaltflächen in der linken oberen Ecke können Sie die folgenden Aktionen für die Warteschlange ausführen:
 
 * Aktualisieren der Ansicht der Warteschlange
 * Fügen Sie eine Meldung in die Warteschlange hinzu.
@@ -160,7 +160,7 @@ Die folgende Abbildung zeigt eine Warteschlange, die zwei Nachrichten enthält:
 Weitere Informationen zu Speicherdienstwarteschlangen finden Sie unter [Erste Schritte mit Azure Queue Storage mit .NET](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/). Weitere Informationen zum Webdienst für Speicherdienstwarteschlangen finden Sie unter [Konzepte des Warteschlangendiensts](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx). Informationen dazu, wie Nachrichten mithilfe von Visual Studio an eine Speicherdienstwarteschlange gesendet werden, finden Sie unter [Senden von Nachrichten an eine Speicherdienstwarteschlange](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Speicherdienstwarteschlangen unterscheiden sich von Azure Service Bus-Warteschlangen. Weitere Informationen zu Service Bus-Warteschlangen finden Sie unter [Service Bus-Warteschlangen, -Themen und -Abonnements](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Speicherdienstwarteschlangen unterscheiden sich von Azure Service Bus-Warteschlangen. Weitere Informationen zu Service Bus Warteschlangen finden Sie unter [Service Bus Warteschlangen, Themen und Abonnements](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Arbeiten mit Tabellenressourcen
 
@@ -190,9 +190,9 @@ Die Tabelle ist in Entitäten (Anzeige in Zeilen) und Eigenschaften (Anzeige in 
 Entitäten in einer einzelnen Tabelle müssen nicht denselben Eigenschaftensatz (Spalten) aufweisen. Beachten Sie beim Anzeigen und Bearbeiten von Tabellendaten folgende Einschränkungen:
 
 * Binäre Daten (`type byte[]`) können zwar nicht angezeigt oder bearbeitet, sie können aber in einer Tabelle gespeichert werden.
-* Die **PartitionKey**- oder **RowKey**-Werte können nicht bearbeitet werden, da dieser Vorgang vom Tabellenspeicher in Azure nicht unterstützt wird.
+* Die **PartitionKey** -oder **RowKey** -Werte können nicht bearbeitet werden, da der Tabellen Speicher in Azure diesen Vorgang nicht unterstützt.
 * Sie können keine Eigenschaft mit dem Namen **Timestamp** erstellen. Azure-Speicherdienste verwenden eine Eigenschaft mit diesem Namen.
-* **DateTime**-Werte müssen den Regions- und Spracheinstellungen des Computers (Beispiel: TT.MM.JJJJ HH:MM:SS für „Deutsch (Deutschland)“) entsprechend eingegeben werden.
+* Wenn Sie einen **DateTime** -Wert eingeben, müssen Sie einem Format folgen, das den Regions-und Spracheinstellungen des Computers entspricht (z. b. mm/dd/yyyy HH: mm: SS [am | PM] für Englisch (USA)).
 
 ### <a name="to-add-entities"></a>So fügen Sie Entitäten hinzu
 
@@ -219,7 +219,7 @@ Mit dem Abfrage-Generator können Sie den Satz von Entitäten anpassen, der in e
 1. Schließen Sie das Dialogfeld, wenn Sie die Abfrage erstellt haben. Die resultierende Textform der Abfrage wird in einem Textfeld als WCF Data Services-Filter angezeigt.
 1. Klicken Sie auf das grüne Dreieckssymbol, um die Abfrage auszuführen.
 
-Sie können im Tabellen-Designer angezeigte Entitätsdaten filtern, indem Sie im Filtertextfeld direkt eine WCF Data Services-Filterzeichenfolge eingeben. Diese Art von Zeichenfolge ist mit einer SQL-WHERE-Klausel vergleichbar, wird jedoch als HTTP-Anforderung an den Server gesendet. Informationen zum Erstellen von Filterzeichenfolgen finden Sie unter [Erstellen von Filterzeichenfolgen für den Tabellen-Designer](/azure/vs-azure-tools-table-designer-construct-filter-strings).
+Sie können im Tabellen-Designer angezeigte Entitätsdaten filtern, indem Sie im Filtertextfeld direkt eine WCF Data Services-Filterzeichenfolge eingeben. Diese Art von Zeichenfolge ist mit einer SQL-WHERE-Klausel vergleichbar, wird jedoch als HTTP-Anforderung an den Server gesendet. Weitere Informationen zum Erstellen von Filter Zeichenfolgen finden Sie unter [Erstellen von Filter Zeichenfolgen für den Tabellen-Designer](/azure/vs-azure-tools-table-designer-construct-filter-strings).
 
 Die folgende Abbildung zeigt ein Beispiel für eine gültige Filterzeichenfolge:
 
@@ -259,12 +259,12 @@ Es gibt zwei Möglichkeiten, Speicherkonten mithilfe des Server-Explorers hinzuz
 
    * Das Azure-Abonnement, dem Sie das Speicherkonto hinzufügen möchten
    * Den Namen, den Sie für das neue Speicherkonto verwenden möchten
-   * Die Region oder Affinitätsgruppe (z. B. Westliche USA oder Ostasien)
+   * Die Region oder Affinitätsgruppe (z. B. USA, Westen oder Ostasien)
    * Den Typ der Replikation, den Sie für das Speicherkonto verwenden möchten, zum Beispiel „Lokal redundant“
 
-   ![Azure-Speicherkonto erstellen](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
+   ![Erstellen eines Azure-Speicherkontos](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Wählen Sie **Erstellen** aus.
+1. Klicken Sie auf **Erstellen**.
 
 Das neue Speicherkonto wird im Projektmappen-Explorer in der Liste **Speicher** angezeigt.
 

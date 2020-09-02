@@ -1,5 +1,5 @@
 ---
-title: TASK_STATE_WAITING_ON_CHILDREN-Feld | Microsoft-Dokumentation
+title: TASK_STATE_WAITING_ON_CHILDREN Feld | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2dfb7ca683b7a05151539feda92a2575197b189
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176716"
 ---
-# <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN-Feld
+# <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN-Feld
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die Aufgabe der Delegat Ausführung abgeschlossen hat und wartet implizit angefügter untergeordneter Aufgaben ausführen.  
+Der Task hat das Ausführen seines Delegaten abgeschlossen und wartet implizit auf den Abschluss angefügter untergeordneter Aufgaben.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,8 +34,8 @@ Die Aufgabe der Delegat Ausführung abgeschlossen hat und wartet implizit angef�
 .field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)  
 ```  
   
-## <a name="remarks"></a>Hinweise  
- Wenn die [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) Feld enthält diesen Wert, der <xref:System.Threading.Tasks.Task.Status%2A> -Eigenschaft gibt <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn das [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) -Feld diesen Wert enthält, <xref:System.Threading.Tasks.Task.Status%2A> gibt die-Eigenschaft zurück <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufgabenklasse](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef861d13387c013659e5e4c1714680b71896858c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657865"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
@@ -46,7 +46,7 @@ In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]
  **Nein** Deaktiviert die Generierung der buildprotokolllierungsdatei.
 
 ## <a name="build-timing"></a>Buildzeitgeber
- **Ja** Schaltet die Buildzeitdauer ein. Wenn diese Option ausgewählt ist, wird die Dauer der Builderstellung im Ausgabefenster ausgegeben. Weitere Informationen finden Sie im [Ausgabefenster](../../ide/reference/output-window.md).
+ **Ja** Schaltet die Buildzeitdauer ein. Wenn diese Option ausgewählt ist, wird die Dauer der Builderstellung im Ausgabefenster ausgegeben. Weitere Informationen finden Sie unter [Ausgabefenster](../../ide/reference/output-window.md).
 
  **Nein** Deaktiviert die Erstellung des Zeitpunkts.
 
@@ -69,5 +69,5 @@ In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]
 
  **Alle Dateien anzeigen** Konfiguriert **Projektmappen-Explorer** , um Dateien im Projekt und Dateien auf dem Datenträger im Projektordner anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
- [C/C++ Programme](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [-c/C++ -Referenz](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) wird aufgebaut
+## <a name="see-also"></a>Weitere Informationen
+ Aufbauen von c/ [C++-Programmen](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [c/C++-Referenz](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

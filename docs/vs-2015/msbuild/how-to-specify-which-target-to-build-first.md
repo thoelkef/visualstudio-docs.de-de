@@ -14,23 +14,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178339"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Vorgehensweise: Angeben des zuerst zu erstellenden Ziels
+# <a name="how-to-specify-which-target-to-build-first"></a>Gewusst wie: Angeben des zuerst zu erstellenden Ziels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definieren, wie das Projekt erstellt wird. Die [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)])-Engine erstellt das erste Projekt, das es findet, sowie alle Abhängigkeiten, es sei denn, die Projektdatei enthält ein `DefaultTargets`-Attribut, ein `InitialTargets`-Attribut oder ein Ziel, das in der Befehlszeile unter Verwendung des **/target**-Schalters angegeben ist.  
+Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definieren, wie das Projekt erstellt wird. Die [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ( [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] )-Engine erstellt das erste gefundene Projekt und alle Abhängigkeiten, es sei denn, die Projektdatei enthält ein- `DefaultTargets` Attribut, ein- `InitialTargets` Attribut oder ein-Ziel wird in der Befehlszeile mithilfe des **/target** -Schalters angegeben.  
   
 ## <a name="using-the-initialtargets-attribute"></a>Verwenden des InitialTargets-Attributs  
  Das `InitialTargets`-Attribut des `Project`-Elements gibt ein Ziel an, das zuerst ausgeführt wird, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
   
 #### <a name="to-specify-one-initial-target"></a>Angeben eines ersten Ziels  
   
-- Geben Sie das Standardziel im `InitialTargets`-Attribut des `Project`-Elements an. Beispiel:  
+- Geben Sie das Standardziel im `InitialTargets`-Attribut des `Project`-Elements an. Zum Beispiel:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -47,7 +47,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-specify-one-default-target"></a>Ein Standardziel angeben  
   
-- Geben Sie das Standardziel im `DefaultTargets`-Attribut des `Project`-Elements an. Beispiel:  
+- Geben Sie das Standardziel im `DefaultTargets`-Attribut des `Project`-Elements an. Zum Beispiel:  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -60,21 +60,21 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
      `<Project DefaultTargets="Clean;Compile">`  
   
 ## <a name="using-the-target-switch"></a>Verwenden des /target-Schalters  
- Wenn ein Standardziel nicht in der Projektdatei definiert ist, oder wenn Sie das Standardziel nicht verwenden möchten, können Sie den Befehlszeilenschalter **/target** verwenden, um ein anderes Ziel anzugeben. Das Ziel oder die Ziele, die mit dem **/target**-Schalter angegeben werden, werden anstelle der festgelegten Ziele des `DefaultTargets`-Attribut ausgeführt. Die im `InitialTargets`-Attribut angegebenen Ziele werden immer zuerst ausgeführt.  
+ Wenn kein Standardziel in der Projektdatei definiert ist oder Sie dieses Standardziel nicht verwenden möchten, können Sie den Befehls Zeilenschalter **/target** verwenden, um ein anderes Ziel anzugeben. Die mit dem Schalter **/target** angegebenen Ziele werden anstelle der Ziele ausgeführt, die vom-Attribut angegeben werden `DefaultTargets` . Die im `InitialTargets`-Attribut angegebenen Ziele werden immer zuerst ausgeführt.  
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Zuerst ein anderen Ziels und nicht das Standardziel verwenden  
   
-- Geben Sie das Ziel als das erstes Ziel mithilfe des **/target**-Befehlszeilenschalters ein. Beispiel:  
+- Legen Sie das Ziel mithilfe des Befehls Zeilenschalters **/target** als erstes Ziel fest. Zum Beispiel:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>So können Sie zuerst mehrere Ziele, die nicht die Standardziele sind, verwenden  
   
-- Listen Sie die Ziele, getrennt durch Semikolons oder Kommas, mit dem **/target**-Befehlszeilenschalter auf. Beispiel:  
+- Auflisten der durch Semikolons oder Kommas getrennten Ziele mithilfe des Befehls Zeilenschalters **/target** . Zum Beispiel:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
   [MSBuild](msbuild.md)  
- [Ziele](../msbuild/msbuild-targets.md)   
+ [Lern](../msbuild/msbuild-targets.md)   
  [Vorgehensweise: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)

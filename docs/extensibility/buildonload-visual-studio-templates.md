@@ -1,5 +1,5 @@
 ---
-title: BuildOnLoad-Attribut und -Element (Visual Studio-Vorlagen)
+title: BuildOnLoad-Attribut und-Element (Visual Studio-Vorlagen)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739956"
 ---
-# <a name="buildonload-attribute-and-element"></a>BuildOnLoad-Attribut und -Element
+# <a name="buildonload-attribute-and-element"></a>BuildOnLoad-Attribut und-Element
 
-Gibt an, ob das Projekt unmittelbar nach der Erstellung erstellt werden soll. **BuildOnLoad** ist sowohl ein Attribut als auch ein Element.
+Gibt an, ob das Projekt sofort nach der Erstellung erstellt werden soll. **BuildOnLoad** ist sowohl ein Attribut als auch ein Element.
 
-Elementhierarchie:
+Element Hierarchie:
 
 ```xml
 <VSTemplate>
@@ -33,7 +33,7 @@ Elementhierarchie:
     <BuildOnLoad>
 ```
 
-## <a name="element-syntax"></a>Elementsyntax
+## <a name="element-syntax"></a>Element Syntax
 
 ```xml
 <BuildOnLoad> true/false </BuildOnLoad>
@@ -41,21 +41,21 @@ Elementhierarchie:
 
 ## <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
 
-Für das **BuildOnLoad-Element** ist ein Textwert erforderlich. Der Text muss `true` `false`entweder oder sein, was angibt, ob das Projekt unmittelbar nach der Erstellung erstellt werden soll.
+Ein Textwert ist für das **BuildOnLoad** -Element erforderlich. Der Text muss entweder `true` oder sein `false` , um anzugeben, ob das Projekt sofort nach der Erstellung erstellt werden soll.
 
 ## <a name="remarks"></a>Bemerkungen
 
-**BuildOnLoad** ist ein optionales Attribut. Der Standardwert ist `false`.
+**BuildOnLoad** ist ein optionales Attribut. Standardwert: `false`.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel werden die Metadaten für eine C-Vorlage veranschaulicht, wenn **BuildOnLoad** als Element verwendet wird:
+Im folgenden Beispiel werden die Metadaten für eine c#-Vorlage veranschaulicht, wenn **BuildOnLoad** als Element verwendet wird:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -82,9 +82,9 @@ Im folgenden Beispiel werden die Metadaten für eine C-Vorlage veranschaulicht, 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [BuildProjectOnload-Element](buildprojectonload-element-visual-studio-templates.md)
+- [Buildprojectonload-Element](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent-Element](../extensibility/templatecontent-element-visual-studio-templates.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

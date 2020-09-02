@@ -27,25 +27,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 58500e59a624dac55824033b8b9667754a9040c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657372"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Direktes Zugreifen auf die Datenbank mit einem TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zusätzlich zu den `InsertCommand`, `UpdateCommand` und `DeleteCommand` werden TableAdapters mit Methoden erstellt, die direkt für die Datenbank ausgeführt werden können. Diese Methoden (`TableAdapter.Insert`, `TableAdapter.Update` und `TableAdapter.Delete`) können aufgerufen werden, um Daten direkt in der Datenbank zu bearbeiten.
+Zusätzlich zu den `InsertCommand` -, `UpdateCommand` -und- `DeleteCommand` Tabellen werden TableAdapters mit Methoden erstellt, die direkt für die-Datenbank ausgeführt werden können. Diese Methoden ( `TableAdapter.Insert` , `TableAdapter.Update` und `TableAdapter.Delete` ) können aufgerufen werden, um Daten direkt in der Datenbank zu bearbeiten.
 
- Wenn Sie diese direkten Methoden nicht erstellen möchten, legen Sie die `GenerateDbDirectMethods`-Eigenschaft des TableAdapter auf `false` im **Eigenschaften** Fenster fest. Wenn einer TableAdapter-Abfrage zusätzlich zur Haupt Abfrage des TableAdapters Abfragen hinzugefügt werden, handelt es sich hierbei um eigenständige Abfragen, die diese DBDirect-Methoden nicht generieren.
+ Wenn Sie diese direkten Methoden nicht erstellen möchten, legen Sie die-Eigenschaft des TableAdapter `GenerateDbDirectMethods` `false` im **Eigenschaften** Fenster auf fest. Wenn einer TableAdapter-Abfrage zusätzlich zur Haupt Abfrage des TableAdapters Abfragen hinzugefügt werden, handelt es sich hierbei um eigenständige Abfragen, die diese DBDirect-Methoden nicht generieren.
 
 ## <a name="sendcommandsdirectly-to-a-database"></a>Sendcommandsdirekt zu einer Datenbank
  Nennen Sie die TableAdapter-DBDirect-Methode, die die Aufgabe ausführt, die Sie ausführen möchten.
 
 #### <a name="to-insert-new-records-directly-into-a-database"></a>So fügen Sie neue Datensätze direkt in eine Datenbank ein
 
-- Nennen Sie die `Insert`-Methode des TableAdapter, und übergeben Sie die Werte für jede Spalte als Parameter. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel verwendet.
+- Wenden Sie die-Methode des TableAdapter `Insert` an, und übergeben Sie die Werte für jede Spalte als Parameter. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel verwendet.
 
     > [!NOTE]
     > Wenn keine Instanz verfügbar ist, instanziieren Sie den TableAdapter, den Sie verwenden möchten.
@@ -55,7 +55,7 @@ Zusätzlich zu den `InsertCommand`, `UpdateCommand` und `DeleteCommand` werden T
 
 #### <a name="to-update-records-directly-in-a-database"></a>So aktualisieren Sie Datensätze direkt in einer Datenbank
 
-- Nennen Sie die `Update`-Methode des TableAdapter, und übergeben Sie die neuen und ursprünglichen Werte für jede Spalte als Parameter.
+- Ruft die-Methode des TableAdapter `Update` auf und übergibt die neuen und ursprünglichen Werte für jede Spalte als Parameter.
 
     > [!NOTE]
     > Wenn keine Instanz verfügbar ist, instanziieren Sie den TableAdapter, den Sie verwenden möchten.
@@ -65,7 +65,7 @@ Zusätzlich zu den `InsertCommand`, `UpdateCommand` und `DeleteCommand` werden T
 
 #### <a name="to-delete-records-directly-from-a-database"></a>So löschen Sie Datensätze direkt aus einer Datenbank
 
-- Wenden Sie die `Delete`-Methode des TableAdapter an, und übergeben Sie die Werte für jede Spalte als Parameter der `Delete` Methode. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel verwendet.
+- Wenden Sie die-Methode des TableAdapter `Delete` an, und übergeben Sie die Werte für jede Spalte als Parameter der- `Delete` Methode. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel verwendet.
 
     > [!NOTE]
     > Wenn keine Instanz verfügbar ist, instanziieren Sie den TableAdapter, den Sie verwenden möchten.
@@ -73,5 +73,5 @@ Zusätzlich zu den `InsertCommand`, `UpdateCommand` und `DeleteCommand` werden T
      [!code-csharp[VbRaddataSaving#21](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#21)]
      [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
