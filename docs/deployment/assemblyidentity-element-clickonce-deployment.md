@@ -1,5 +1,5 @@
 ---
-title: '&lt;AssemblyIdentity&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+title: '&lt;AssemblyIdentity- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929066"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;AssemblyIdentity&gt; -Element (ClickOnce-Bereitstellung)
-Identifiziert die primäre Assembly von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;AssemblyIdentity- &gt; Element (ClickOnce-Bereitstellung)
+Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,20 +40,20 @@ Identifiziert die primäre Assembly von der [!INCLUDE[ndptecclick](../deployment
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `assemblyIdentity` Element ist erforderlich. Es enthält keine untergeordneten Elemente und weist folgende Attribute.
+ Das `assemblyIdentity`-Element ist erforderlich. Sie enthält keine untergeordneten Elemente und weist die folgenden Attribute auf.
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|`name`|Erforderlich. Gibt den lesbaren Namen der Bereitstellung um zu Informationszwecken.<br /><br /> Wenn `name` Sonderzeichen enthält, z. B. einfache oder doppelte Anführungszeichen, die Anwendung möglicherweise nicht aktiviert.|
-|`version`|Erforderlich. Gibt die Versionsnummer der Assembly im folgenden Format an: `major.minor.build.revision`.<br /><br /> Dieser Wert muss in einem aktualisierten Manifest zum Auslösen eines Anwendungsupdates erhöht werden.|
-|`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge von 16 Zeichen, die die letzten 8 Bytes des SHA-1-Hash-Wert des öffentlichen Schlüssels darstellt, unter dem das Bereitstellungsmanifest signiert wurde. Der öffentliche Schlüssel, der zum Signieren verwendet wird, muss 2048 Bits betragen.<br /><br /> Obwohl das Signieren einer Assembly empfohlen aber optional ist, ist dieses Attribut erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie Kopieren eines Werts aus einem selbst signierten Assembly oder verwenden Sie den Wert "dummy" nur Nullen.|
-|`processorArchitecture`|Erforderlich. Gibt den Prozessor. Gültige Werte sind `msil` für alle Prozessoren `x86` für 32-Bit-Windows `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itaniumprozessoren gegeben.|
-|`type`|Erforderlich. Für die Kompatibilität mit Windows-Seite-an-Seite-installationstechnologie. Der einzige zulässige Wert ist `win32`.|
+|`name`|Erforderlich. Identifiziert den lesbaren Namen der Bereitstellung zu Informationszwecken.<br /><br /> Wenn `name` Sonderzeichen (z. b. einfache oder doppelte Anführungszeichen) enthält, kann die Anwendung möglicherweise nicht aktiviert werden.|
+|`version`|Erforderlich. Gibt die Versionsnummer der Assembly im folgenden Format an: `major.minor.build.revision` .<br /><br /> Dieser Wert muss in einem aktualisierten Manifest inkrementiert werden, um ein Anwendungs Update zu initiieren.|
+|`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge mit 16 Zeichen an, die die letzten 8 Bytes des SHA-1-Hashwerts des öffentlichen Schlüssels darstellt, unter dem das Bereitstellungs Manifest signiert ist. Der öffentliche Schlüssel, der zum Signieren verwendet wird, muss 2048 Bit oder größer sein.<br /><br /> Das Signieren einer Assembly wird zwar empfohlen, ist aber optional, aber dieses Attribut ist erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie einen Wert aus einer selbst signierten Assembly kopieren oder einen "Dummy"-Wert aller Nullen verwenden.|
+|`processorArchitecture`|Erforderlich. Gibt den Prozessor an. Gültige Werte sind `msil` für alle Prozessoren, `x86` für 32-Bit-Windows, `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itanium-Prozessoren.|
+|`type`|Erforderlich. Aus Gründen der Kompatibilität mit der parallelen Installation von Windows. Der einzige zulässige Wert ist `win32` .|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel veranschaulicht ein `assemblyIdentity` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Thema.
+ Das folgende Codebeispiel veranschaulicht ein- `assemblyIdentity` Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Manifest. Dieses Codebeispiel ist Teil eines größeren Beispiels, das für das [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md) -Thema bereitgestellt wird.
 
 ```xml
 <!-- Identify the deployment. -->
@@ -66,6 +66,6 @@ Identifiziert die primäre Assembly von der [!INCLUDE[ndptecclick](../deployment
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)
-- [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-application.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
+- [\<assemblyIdentity> gewisses](../deployment/assemblyidentity-element-clickonce-application.md)
