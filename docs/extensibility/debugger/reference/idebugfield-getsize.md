@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetSize | Microsoft Docs
+title: 'Idebugfield:: GetSize | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9f19a914de2e74613e987753c8062215fd0d0403
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728805"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
@@ -41,13 +41,13 @@ int GetSize(
 
 ## <a name="parameters"></a>Parameter
 `pdwSize`\
-[out] Gibt die Größe zurück.
+vorgenommen Gibt die Größe zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Alle Felder haben einen Typ und alle Typen haben eine Größe. Beispielsweise hat ein Feld mit einem Bytetyp eine Größe von 1 Byte.
+ Alle Felder haben einen Typ, und alle Typen haben eine Größe. Ein Feld mit einem Bytetyp hat z. b. eine Größe von 1 Byte.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845580"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
@@ -91,7 +91,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
 
 ### <a name="adding-description-and-shortcut-fields"></a>Hinzufügen von Beschreibungs- und Verknüpfungsfeldern
 
-1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, den Sie hinzugefügt haben, indem Sie die Datei `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`öffnen.
+1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, den Sie hinzugefügt haben, indem Sie die Datei öffnen `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` .
 
 2. Fügen Sie dem Headerelement Autor- und Beschreibungselemente hinzu, und füllen Sie diese aus.
 
@@ -126,7 +126,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
 
 ### <a name="to-add-references-and-imports"></a>So fügen Sie Verweise und Importe hinzu
 
-1. Mit Visual Basic-Ausschnitten können Sie mithilfe des Verweiselements einen Verweis auf ein Projekt und mithilfe des Import-Elements eine Import-Deklaration hinzufügen. (Code Ausschnitte in anderen Sprachen haben dieses Feature nicht.) Wenn Sie z. b. `Console.WriteLine` im Codebeispiel in `MessageBox.Show`ändern, müssen Sie möglicherweise die System. Windows. Forms. dll-Assembly dem Projekt hinzufügen.
+1. Mit Visual Basic-Ausschnitten können Sie mithilfe des Verweiselements einen Verweis auf ein Projekt und mithilfe des Import-Elements eine Import-Deklaration hinzufügen. (Code Ausschnitte in anderen Sprachen haben dieses Feature nicht.) Wenn Sie z. b `Console.WriteLine` . im Codebeispiel in ändern `MessageBox.Show` , müssen Sie möglicherweise dem Projekt die System.Windows.Forms.dll-Assembly hinzufügen.
 
 2. Öffnen Sie den Ausschnitt.
 
@@ -261,5 +261,5 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
 
     ```
 
-## <a name="see-also"></a>Siehe auch
- [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Schema Referenz für Code Ausschnitte](../ide/code-snippets-schema-reference.md)

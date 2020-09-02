@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObject | Microsoft Docs
+title: 'Idebugfunctionobject:: kreateobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728599"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
-Erstellt ein Objekt mit einem Konstruktor.
+Erstellt ein-Objekt mithilfe eines Konstruktors.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,24 +47,24 @@ int CreateObject(
 
 ## <a name="parameters"></a>Parameter
 `pConstructor`\
-[in] Ein [IDebugFunctionObject-Objekt,](../../../extensibility/debugger/reference/idebugfunctionobject.md) das den Konstruktor des zu erstellenden Objekts darstellt.
+in Ein [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Objekt, das den Konstruktor des zu erstellenden Objekts darstellt.
 
 `dwArgs`\
-[in] Die Anzahl der `pArg` Parameter im Array. Stellt die Anzahl der Parameter dar, die an den Konstruktor übergeben werden.
+in Die Anzahl der Parameter im `pArg` Array. Stellt die Anzahl von Parametern dar, die an den Konstruktor übergeben werden.
 
 `pArg`\
-[in] Ein Array von [IDebugObject-Objekten,](../../../extensibility/debugger/reference/idebugobject.md) die die an den Konstruktor übergebenen Parameter darstellen.
+in Ein Array von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekten, das die Parameter darstellt, die an den Konstruktor übergeben werden.
 
 `ppObject`\
-[out] Gibt `IDebugObject` eine Darstellung des neu erstellten Objekts zurück.
+vorgenommen Gibt ein zurück, `IDebugObject` das das neu erstellte-Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das eine Instanz einer Klasse (oder eines anderen komplexen Typs, der einen Konstruktor erfordert) darstellt, der ein Parameter für die Funktion ist, die durch die [IDebugFunctionObject-Schnittstelle](../../../extensibility/debugger/reference/idebugfunctionobject.md) dargestellt wird.
+ Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das eine Instanz einer Klasse (oder einen anderen komplexen Typ, der einen Konstruktor erfordert) darstellt, bei dem es sich um einen Parameter für die Funktion handelt, die durch die [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Schnittstelle dargestellt wird
 
- Wenn für den Objektparameter kein Konstruktor erforderlich ist, rufen Sie die [CreateObjectNoConstructor-Methode](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) auf.
+ Wenn für den Object-Parameter kein Konstruktor erforderlich ist, müssen Sie die Methode "up- [objectnoconstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) " aufrufen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

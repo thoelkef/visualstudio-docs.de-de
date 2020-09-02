@@ -1,5 +1,5 @@
 ---
-title: '&lt;Anpassungen&gt; -Element (Office-Entwicklung in Visual Studio)'
+title: '&lt;customialisierungen- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445513"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64790008"
 ---
-# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;Anpassungen&gt; -Element (Office-Entwicklung in Visual Studio)
+# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;customialisierungen- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `customizations` -Element des `vstov4` -Namespace enthält alle Informationen zum Installieren und Laden der einzelnen Office-Projektmappen.
 
-## <a name="syntax-for-document-level-customizations"></a>Syntax für Anpassungen auf Dokumentebene
+## <a name="syntax-for-document-level-customizations"></a>Syntax für Anpassungen auf Dokument Ebene
 
 ```xml
 <customizations>
@@ -61,18 +61,18 @@ ms.locfileid: "63445513"
 
  Das `customizations` -Element weist keine Attribute auf.
 
- Das `customizations` -Element weist die folgenden untergeordneten Elemente auf.
+ Das `customizations` -Element hat das folgende untergeordnete Element:
 
 ### <a name="customization"></a>Anpassung
- Erforderlich. Die `customization` Element in der `vstov4` Namespace wird im definiert [ &#60;Anpassung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Erforderlich. Das- `customization` Element im- `vstov4` Namespace wird in [&#60;Anpassung&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)definiert.
 
-## <a name="example-of-a-document-level-customization"></a>Beispiel für eine Anpassung auf Dokumentebene
+## <a name="example-of-a-document-level-customization"></a>Beispiel für eine Anpassung auf Dokument Ebene
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Codebeispiel wird das `customizations` -Element für eine Anpassung auf Dokumentebene veranschaulicht.
 
 > [!NOTE]
-> Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+> Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -88,8 +88,8 @@ ms.locfileid: "63445513"
 
 ## <a name="example-of-a-vsto-add-in"></a>Beispiel für ein VSTO-Add-in
 
-### <a name="description"></a>Beschreibung
- Das folgende Codebeispiel veranschaulicht die `customizations` -Element für ein VSTO-Add-in. Das Add-In ist ein Outlook-VSTO-Add-in, das Formularbereiche enthält. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+### <a name="description"></a>BESCHREIBUNG
+ Im folgenden Codebeispiel wird das- `customizations` Element für ein VSTO-Add-in veranschaulicht. Das Add-In ist ein Outlook-VSTO-Add-in, das Formularbereiche enthält. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
 
@@ -123,6 +123,6 @@ ms.locfileid: "63445513"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md)
-- [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
+- [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
+- [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

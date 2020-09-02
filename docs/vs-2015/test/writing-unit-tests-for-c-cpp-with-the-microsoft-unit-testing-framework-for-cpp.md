@@ -9,10 +9,10 @@ caps.latest.revision: 16
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b6f358f43dcace230e1d58773e58be011d9033e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657080"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
@@ -60,7 +60,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
     - `Assert` enthält mehrere statische Funktionen, die Sie verwenden können, um das Ergebnis eines Tests zu überprüfen.
 
-    - Der Parameter `LINE_INFO()` ist optional. Wenn es keine PDB-Datei gibt, ermöglicht dieser dem Test Runner, die Position eines Fehlers zu identifizieren.
+    - Das `LINE_INFO()` ist optional. Wenn es keine PDB-Datei gibt, ermöglicht dieser dem Test Runner, die Position eines Fehlers zu identifizieren.
 
     - Sie können auch Methoden zum Testaufbau und zur Testbereinigung schreiben. Um weitere Informationen zu erhalten, öffnen Sie die Definition des Makros `TEST_METHOD` , und lesen Sie die Kommentare in CppUnitTest.h.
 
@@ -72,7 +72,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
     2. Erstellen Sie die Visual Studio-Projektmappe.
 
-    3. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+    3. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
     4. So können Sie einen Test im Test-Explorer ausführlicher untersuchen
 
@@ -82,10 +82,10 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
         3. Wählen Sie im Kontextmenü für einen Test **Ausgewählten Test debuggen** , um den Test im Debugger auszuführen.
 
-## <a name="walkthrough"></a> Exemplarische Vorgehensweise: Entwickeln einer nicht verwalteten DLL mit Test-Explorer
+## <a name="walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> Exemplarische Vorgehensweise: Entwickeln einer nicht verwalteten DLL mit Test-Explorer
  Sie können diese exemplarische Vorgehensweise für die Entwicklung Ihrer eigenen DLL anpassen. Die wichtigsten Schritte werden im Folgenden beschrieben:
 
-1. [Erstellen Sie ein systemeigenes Testprojekt](#unitTestProject). Die Tests werden in einem anderem Projekt als dem DLL-Projekt erstellt, das Sie entwickeln.
+1. [Erstellen Sie ein System eigenes Test Projekt](#unitTestProject). Die Tests werden in einem anderem Projekt als dem DLL-Projekt erstellt, das Sie entwickeln.
 
 2. [Erstellen Sie ein DLL-Projekt](#createDllProject). In dieser exemplarischen Vorgehensweise wird eine neue DLL erstellt, die Vorgehensweise für das Testen einer vorhandenen DLL ist aber ähnlich.
 
@@ -101,17 +101,17 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
 8. [Isolieren Sie Einheiten von externen Ressourcen](https://msdn.microsoft.com/library/hh549174.aspx). In der Regel ist eine DLL abhängig von anderen Komponenten des Systems, das Sie entwickeln, wie z. B. anderen DLLs, Datenbanken, oder Remotesubsystemen. Es ist hilfreich, jede Einheit isoliert von seinen Abhängigkeiten zu testen. Externe Komponenten können bewirken, dass Tests langsamer ausgeführt werden. Während der Entwicklung sind die anderen Komponenten möglicherweise noch nicht vollständig.
 
-### <a name="unitTestProject"></a> Ein natives Komponententestprojekt erstellen
+### <a name="create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Ein natives Komponententestprojekt erstellen
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
 
-     Erweitern Sie im Dialogfeld die Optionen **Installiert**, **Vorlagen**, **Visual C++** , **Test**.
+     Erweitern Sie im Dialogfeld die Optionen **Installiert**, **Vorlagen**, **Visual C++**, **Test**.
 
      Wählen Sie die Vorlage **Systemeigenes Testprojekt** aus.
 
      In dieser exemplarischen Vorgehensweise wird das Testprojekt `NativeRooterTest`benannt.
 
-     ![Erstellen eines C&#43; &#43; -Komponenten Test Projekts](../test/media/utecpp01.png "UteCpp01")
+     ![Erstellen eines C&#43;&#43; -Komponenten Test Projekts](../test/media/utecpp01.png "UteCpp01")
 
 2. Überprüfen Sie im neuen Projekt **unittest1.cpp**.
 
@@ -119,7 +119,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
      Beachten Sie Folgendes:
 
-    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}`verwendet wird.
+    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}` verwendet wird.
 
          Sie müssen keine herkömmliche Funktionssignatur schreiben. Die Signatur wird durch das Makro TEST_METHOD erstellt. Das Makro generiert eine Instanzfunktion ohne Rückgabe. Es generiert außerdem eine statische Funktion, die Informationen zur Testmethode zurückgibt. Diese Informationen ermöglichen dem Test-Explorer, die Methode zu finden.
 
@@ -140,7 +140,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
          Beachten Sie, dass die `Assert` -Klasse mehrere statische Methoden zur Verfügung stellt, die Sie verwenden können, um Ergebnisse in den Testmethoden zu überprüfen.
 
-    2. Klicken Sie im Menü **Test** auf **Ausführen** und **Alle Tests**.
+    2. Klicken Sie im Menü **Test** auf **Ausführen** und dann auf **alle Tests**.
 
          Der Test wird erstellt und ausgeführt.
 
@@ -148,25 +148,25 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
          Der Test wird unter **Bestandene Tests**angezeigt.
 
-         ![Komponenten Test-Explorer mit einem bestandenen Test](../test/media/utecpp04.png "UteCpp04")
+         ![Komponententest-Explorer mit einem bestandenen Test](../test/media/utecpp04.png "UteCpp04")
 
-### <a name="createDllProject"></a> Erstellen eines nicht verwalteten DLL-Projekts
+### <a name="create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Erstellen eines nicht verwalteten DLL-Projekts
 
 1. Erstellen Sie ein **Visual C++** -Projekt mithilfe der Vorlage **Win32-Projekt** .
 
      In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.
 
-     ![Erstellen eines C&#43; &#43; -Win32-Projekts](../test/media/utecpp05.png "UteCpp05")
+     ![Erstellen eines C-&#43;&#43; Win32-Projekts](../test/media/utecpp05.png "UteCpp05")
 
 2. Wählen Sie **DLL** und **Symbole exportieren** im Win32-Anwendungs-Assistenten aus.
 
      Die Option **Symbole exportieren** generiert ein komfortables Makro, das Sie verwenden können, um exportierte Methoden zu deklarieren.
 
-     ![C&#43; &#43; -Projekt-Assistent für dll-und Export Symbole](../test/media/utecpp06.png "UteCpp06")
+     ![C-&#43;&#43; Projekt-Assistent für dll-und Export Symbole](../test/media/utecpp06.png "UteCpp06")
 
 3. Deklarieren Sie eine exportierte Funktion in der wichtigsten .h-Datei:
 
-     ![Neues DLL-Code Projekt und. h-Datei mit API-Makros](../test/media/utecpp07.png "UteCpp07")
+     ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png "UteCpp07")
 
      Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).
 
@@ -180,19 +180,19 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
     }
     ```
 
-### <a name="coupleProjects"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
+### <a name="couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
 
 1. Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
 
    1. Öffnen Sie die Eigenschaften des Testprojekts, und wählen Sie **Allgemeine Eigenschaften**, **Framework und Verweise**aus.
 
-        ![C&#43; &#43; -Projekt &#45; Eigenschaften-Framework und-Verweise](../test/media/utecpp08.png "UteCpp08")
+        ![C&#43;&#43; Projekteigenschaften &#45; Framework und Verweise](../test/media/utecpp08.png "UteCpp08")
 
-   2. Wählen Sie **Neuen Verweis hinzufügen**.
+   2. Wählen Sie **neuen Verweis hinzufügen**aus.
 
         Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.
 
-        ![C&#43; &#43; -Projekt &#45; Eigenschaften neuen Verweis hinzufügen](../test/media/utecpp09.png "Hinzufügen utecpp09")
+        ![C&#43;&#43; Projekteigenschaften &#45; neuen Verweis hinzufügen](../test/media/utecpp09.png "Hinzufügen utecpp09")
 
 2. Schließen Sie in der Komponententest-CPP-Datei die .h-Datei des DLL-Codes ein:
 
@@ -224,13 +224,13 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
     Der neue Test wird im Test-Explorer angezeigt.
 
-5. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
-    ![Grundlegender Test &#45; für Komponenten Test-Explorer erfolgreich](../test/media/utecpp10.png "UteCpp10")
+    ![Komponenten Test-Explorer &#45; grundlegender Test erfolgreich](../test/media/utecpp10.png "UteCpp10")
 
    Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
-### <a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen
+### <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
 1. Fügen Sie einen neuen Test hinzu:
 
@@ -251,11 +251,11 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
     >
     >  Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2. Erstellen Sie die Projektmappe, und wählen Sie dann im Test-Explorer **Alle ausführen**aus.
+2. Erstellen Sie die Projekt Mappe, und wählen Sie dann im Test-Explorer **alle ausführen**aus.
 
      Beim neuen Test tritt ein Fehler auf.
 
-     ![RangeTest schlägt fehl](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Fehler beim RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
@@ -279,16 +279,16 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
     }
     ```
 
-4. Erstellen Sie die Projektmappe, und wählen Sie dann im Test-Explorer **Alle ausführen**aus.
+4. Erstellen Sie die Projekt Mappe, und wählen Sie dann im Test-Explorer **alle ausführen**aus.
 
      Beide Tests sind erfolgreich.
 
-     ![Bereichs Test für &#45; Komponenten Test-Explorer erfolgreich](../test/media/utecpp12.png "UteCpp12")
+     ![Komponenten Test-Explorer &#45; Bereichs Test erfolgreich](../test/media/utecpp12.png "UteCpp12")
 
     > [!TIP]
     > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
 
-### <a name="debug"></a> Einen nicht bestandenen Test debuggen
+### <a name="debug-a-failing-test"></a><a name="debug"></a> Einen nicht bestandenen Test debuggen
 
 1. Fügen Sie einen anderen Test hinzu:
 
@@ -330,7 +330,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
      Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom Test-Explorer angezeigt.
 
-     ![Fehler bei negativerangetests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Fehler bei NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 4. Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
 
@@ -358,12 +358,12 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
 6. Alle Tests sind nun erfolgreich.
 
-     ![Alle Tests bestanden](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Alle Tests erfolgreich](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
 > [!TIP]
 > Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-Small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
-### <a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern
+### <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern
 
 1. Vereinfachen Sie die zentrale Berechnung in der SquareRoot-Funktion:
 
@@ -384,7 +384,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- **Isolation.** Die meisten DLLs sind von anderen Subsystemen abhängig, z. B. Datenbanken und anderen DLLs. Häufig werden diese anderen Komponenten parallel entwickelt. Um Komponententests zu ermöglichen während die anderen Komponenten noch nicht verfügbar sind, müssen Sie Pseudoobjekte ersetzen oder
+- **Isoli.** Die meisten DLLs sind von anderen Subsystemen abhängig, z. B. Datenbanken und anderen DLLs. Häufig werden diese anderen Komponenten parallel entwickelt. Um Komponententests zu ermöglichen während die anderen Komponenten noch nicht verfügbar sind, müssen Sie Pseudoobjekte ersetzen oder
 
 - **Buildüberprüfungstests.** Sie können Tests haben, die auf dem Buildserver des Teams in festgelegten Intervallen ausgeführt werden. Dadurch wird sichergestellt, dass Fehler nicht eingefügt werden, wenn die Arbeit von Teammitgliedern integriert wird.
 
@@ -392,5 +392,5 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 
      Sie können auch eine Untergrenze der Codeabdeckung vorgeben.
 
-## <a name="see-also"></a>Siehe auch
- [Hinzufügen von Komponententests C++ zu vorhandenen Anwendungen](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [mithilfe von Microsoft. VisualStudio. TestTools. cppunittestframework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [eine Übersicht über verwaltete/nicht verwaltete Code Interoperabilitäts](https://msdn.microsoft.com/library/ms973872.aspx) [Debuggen](../debugger/debugging-native-code.md) von System eigenem Code Exemplarische Vorgehensweise [: Erstellen und Verwenden einer Dynamic Link Library (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [importieren und exportieren](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+## <a name="see-also"></a>Weitere Informationen
+ [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [mithilfe von Microsoft. VisualStudio. TestTools. cppunittestframework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [eine Übersicht über verwalteten/nicht verwalteten Code Interoperabilität](https://msdn.microsoft.com/library/ms973872.aspx) [Debuggen](../debugger/debugging-native-code.md) von System eigenem Code Exemplarische Vorgehensweise [: Erstellen und Verwenden einer Dynamic Link Library (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [importieren und exportieren](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

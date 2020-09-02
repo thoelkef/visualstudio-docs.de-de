@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerModule::GetSourceServerData | Microsoft-Dokumentation
+title: 'Idebugsourceservermodule:: GetSourceServerData | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e40c8542dad9ea64dda3041f8781d0d38b4e6bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164809"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft ein Array von Quellserverinformationen ab.  
+Ruft ein Array von Quell Server Informationen ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ public int GetSourceServerData(
   
 #### <a name="parameters"></a>Parameter  
  `pDataByteCount`  
- [out] Anzahl der Bytes im Datenarray.  
+ vorgenommen Anzahl von Bytes im Daten Array.  
   
  `ppData`  
- [out] Verweis auf das Datenarray.  
+ vorgenommen Verweis auf das Daten Array.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CModule** -Objekt, das macht die [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cmodule** -Objekt implementiert wird, das die [idebugsourceservermodule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  
@@ -73,5 +73,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

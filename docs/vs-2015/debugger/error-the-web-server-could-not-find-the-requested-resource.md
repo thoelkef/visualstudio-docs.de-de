@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: der Webserver konnte die angeforderte Ressource nicht finden. Microsoft-Dokumentation'
+title: 'Fehler: Der Webserver konnte die angeforderte Ressource nicht finden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845120"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Fehler: Der Webserver konnte die angeforderte Ressource nicht finden
@@ -34,6 +34,6 @@ Aufgrund von Sicherheitsüberlegungen wurde von IIS ein generischer Fehler zurü
   
  Weitere Informationen über die Problembehandlung bei IIS finden Sie unter [IIS-Verwaltung](https://www.iis.net/learn/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [URLScan-Sicherheits Tool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

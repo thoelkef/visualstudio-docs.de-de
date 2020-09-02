@@ -11,36 +11,36 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696077"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist selbst eine Auflistung von VSPackages, die Dienste für andere VSPackages bereitstellt.  
+Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage stellt einen bestimmten Satz von Schnittstellen für ein anderes VSPackage bereit, das verwendet werden soll. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist selbst eine Sammlung von VSPackages, die Dienste für andere VSPackages bereitstellt.  
   
- Sie können z. B. der SVsActivityLog-Dienst verwenden, beim Abrufen einer IVsActivityLog-Schnittstelle, die Sie zum Schreiben in das Aktivitätsprotokoll verwenden können. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../../extensibility/how-to-use-the-activity-log.md).  
+ Beispielsweise können Sie den Dienst SVsActivityLog zum Abrufen einer IVsActivityLog-Schnittstelle verwenden, die Sie verwenden können, um in das Aktivitätsprotokoll zu schreiben. Weitere Informationen finden Sie unter Gewusst [wie: Verwenden des Aktivitäts Protokolls](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet außerdem einige integrierte Dienste, die nicht registriert sind. VSPackages können integrierte oder andere Dienste ersetzen Sie dies durch die Bereitstellung von einem Dienst außer Kraft setzen. Nur ein Dienst außer Kraft setzen, ist für jeden Dienst zulässig.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet auch einige integrierte Dienste, die nicht registriert sind. VSPackages können integrierte oder andere Dienste durch Bereitstellen einer Dienst Überschreibung ersetzen. Nur eine Dienst Außerkraftsetzung ist für einen beliebigen Dienst zulässig.  
   
- Dienste verfügen über keine ermittelbarkeit. Aus diesem Grund benötigen Sie die Dienst-ID (SID) eines Diensts, die Sie nutzen möchten, und Sie müssen wissen, welche Schnittstellen es bietet. Die Referenzdokumentation für den Dienst stellt diese Informationen bereit.  
+ Dienste können nicht gefunden werden. Daher müssen Sie die Dienst Kennung (SID) eines dienstanzdienstaners kennen, den Sie verwenden möchten, und Sie müssen wissen, welche Schnittstellen Sie bereitstellt. Diese Informationen finden Sie in der Referenz Dokumentation für den-Dienst.  
   
 - VSPackages, die Dienste bereitstellen, werden als Dienstanbieter bezeichnet.  
   
-- Dienste, die anderen VSPackages bereitgestellt werden, werden als globale Dienste bezeichnet.  
+- Dienste, die für andere VSPackages bereitgestellt werden, werden als globale Dienste bezeichnet.  
   
-- Dienste, die nur für das VSPackage, das sie implementiert, oder auf ein beliebiges Objekt damit erstellten verfügbar sind, werden als lokale Dienste bezeichnet.  
+- Dienste, die nur für das VSPackage, das Sie implementiert, oder für ein beliebiges Objekt verfügbar sind, werden als lokale Dienste bezeichnet.  
   
-- Dienste, die integrierten Dienste oder Dienste von anderen Paketen zu ersetzen, werden als dienstüberschreibungen bezeichnet.  
+- Dienste, die integrierte Dienste oder Dienste ersetzen, die von anderen Paketen bereitgestellt werden, werden als Dienst Überschreibungen bezeichnet.  
   
-- Dienste oder dienstüberschreibungen, bei Bedarf geladen werden, die der Dienstanbieter ist, also geladen, wenn der bereitgestellte Dienst von einem anderen VSPackage angefordert wird.  
+- Dienste oder Dienst Überschreibungen werden bei Bedarf geladen, d. h., der Dienstanbieter wird geladen, wenn der bereitgestellte Dienst von einem anderen VSPackage angefordert wird.  
   
-- Um das bedarfsgesteuerte Laden zu unterstützen, registriert ein Dienstanbieter seine globalen Dienste mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Registrieren von Diensten](../../misc/registering-services.md).  
+- Um das Bedarfs gesteuerte laden zu unterstützen, registriert ein Dienstanbieter seine globalen Dienste bei [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter [Registrieren von Diensten](../../misc/registering-services.md).  
   
-- Verwenden Sie nach dem Erwerb eines Diensts [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (nicht verwaltetem Code) oder umwandeln (verwalteter Code), um die gewünschte Schnittstelle, z. B. zu erhalten:  
+- Nachdem Sie einen Dienst abgerufen haben, verwenden Sie [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (nicht verwalteter Code) oder Umwandlungs (verwalteter Code), um die gewünschte Schnittstelle abzurufen, z. b.:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,16 +51,16 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
   
     ```  
   
-- Verwalteter Code verweist auf einen Dienst anhand des Typs, auf, während an einen Dienst durch ihre GUID nicht verwalteter Code bezeichnet.  
+- Verwalteter Code bezieht sich auf einen Dienst über seinen Typ, wohingegen nicht verwalteter Code über seine GUID auf einen Dienst verweist.  
   
-- Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lädt ein VSPackage, übergibt einen Dienstanbieter für dem VSPackage die VSPackage-Zugriff auf globale Dienste gewähren. Dies wird als "Positionierung" VSPackage bezeichnet.  
+- Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ein VSPackage lädt, übergibt es einen Dienstanbieter an das VSPackage, um dem VSPackage Zugriff auf globale Dienste zu verschaffen. Dies wird als "siting" des VSPackage bezeichnet.  
   
-- VSPackages kann es sich um Dienstanbieter für die Objekte sein, die sie erstellen. Ein Formular könnte z. B. eine Anforderung für einen Dienst für die Farbe an die Rahmen, der der Anforderung übergeben kann senden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- VSPackages können Dienstanbieter für die Objekte sein, die Sie erstellen. Beispielsweise kann ein Formular eine Anforderung für einen Farb Dienst an seinen Frame senden, der die Anforderung möglicherweise an übergibt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-- Verwaltete Objekte, die tief verschachtelt sind, oder überhaupt nicht positioniert können aufgerufen werden <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> für direkten Zugriff auf globale Dienste. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
+- Verwaltete Objekte, die tief geschachtelt sind oder überhaupt nicht positioniert sind, können <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> für den direkten Zugriff auf globale Dienste aufrufen. Weitere Informationen finden Sie unter Gewusst [wie: Verwenden von GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Liste der verfügbaren Dienste](../../extensibility/internals/list-of-available-services.md)   
- [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)   
+ [Verwenden von und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)   
  [Umwandlung und Typkonvertierungen](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
  [Umwandlung](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

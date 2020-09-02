@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateArrayObject | Microsoft Docs
+title: 'Idebugfunctionobject:: anatearrayobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728615"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
-Erstellt ein Arrayobjekt. Dieses Array kann entweder primitive oder Objektinstanzwerte enthalten.
+Erstellt ein Array Objekt. Dieses Array kann entweder primitive Werte oder Objektinstanzwerte enthalten.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,28 +51,28 @@ int CreateArrayObject(
 
 ## <a name="parameters"></a>Parameter
 `ot`\
-[in] Gibt einen Wert [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) aus der OBJECT_TYPE-Enumeration an, der den Typ des neuen Arrayobjekts angibt.
+in Gibt einen Wert aus der [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) Enumeration an, der den Typ des neuen Array Objekts angibt.
 
 `pClassField`\
-[in] Ein [IDebugField-Objekt,](../../../extensibility/debugger/reference/idebugfield.md) das die Klasse eines Objekts darstellt, wenn ein Array von Objektinstanzwerten erstellt wird. Wenn Sie ein Array primitiver Objekte erstellen, ist dieser Parameter ein NULL-Wert.
+in Ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das die Klasse eines Objekts darstellt, wenn ein Array von objektinstanzwerten erstellt wird. Wenn Sie ein Array primitiver Objekte erstellen, ist dieser Parameter ein NULL-Wert.
 
 `dwRank`\
-[in] Der Rang oder die Anzahl der Dimensionen des Arrays.
+in Der Rang oder die Anzahl der Dimensionen des Arrays.
 
 `dwDims`\
-[in] Die Größe jeder Dimension des Arrays.
+in Die Größe der einzelnen Dimensionen des Arrays.
 
 `dwLowBounds`\
-[in] Der Ursprung jeder Dimension (in der Regel 0 oder 1).
+in Der Ursprung der einzelnen Dimensionen (in der Regel 0 oder 1).
 
 `ppObject`\
-[out] Gibt ein [IDebugObject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) zurück, das das neu erstellte Array darstellt. Dies ist eigentlich ein [IDebugArrayObject-Objekt.](../../../extensibility/debugger/reference/idebugarrayobject.md)
+vorgenommen Gibt ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zurück, das das neu erstellte Array darstellt. Dabei handelt es sich eigentlich um ein [idebugarrayobject](../../../extensibility/debugger/reference/idebugarrayobject.md) -Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das einen Arrayparameter für die Funktion darstellt, die durch die [IDebugFunctionObject-Schnittstelle](../../../extensibility/debugger/reference/idebugfunctionobject.md) dargestellt wird.
+ Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das einen Array Parameter für die Funktion darstellt, die durch die [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Schnittstelle dargestellt wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

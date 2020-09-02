@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Microsoft-Dokumentation
+title: 'Idebugbinder:: resolveruntimetype | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69b1418c76e01b87bcd6d992a82ce58287e79ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192291"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode bestimmt der Laufzeittyp eines Objekts.  
+Diese Methode bestimmt den Lauf Zeittyp eines Objekts.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,18 +42,18 @@ int ResolveRuntimeType(
   
 #### <a name="parameters"></a>Parameter  
  `pObject`  
- [in] Die [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) aufgelöst werden.  
+ in Das zu lösende [idebugobject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) .  
   
  `ppResolved`  
- [out] Gibt den Typ des Objekts als ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ vorgenommen Gibt den Typ des Objekts als [idebugfield](../../../extensibility/debugger/reference/idebugfield.md)zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Der Laufzeittyp eines Objekts ist nicht immer zum Zeitpunkt der Kompilierung bekannt. Beispielsweise kann Polymorphismus verwendet wird, ein Argument an eine Funktion als Basisklasse, z. B. eine Button-Klasse übergeben werden. Das tatsächliche Argument möglicherweise eine abgeleitete Klasse wie z. B. eine Radio Button-Klasse.  
+## <a name="remarks"></a>Bemerkungen  
+ Der Lauf Zeittyp eines Objekts ist zur Kompilierzeit nicht immer bekannt. Beispielsweise kann mithilfe von Polymorphie ein Argument an eine Funktion als Basisklasse, z. b. eine Schaltflächen Klasse, übermittelt werden. Das tatsächliche Argument kann eine abgeleitete Klasse sein, z. b. eine Optionsfeld Klasse.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+ [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
