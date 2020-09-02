@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Anzeigen von WPF-Überwachungsinformationen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537958"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen
@@ -49,7 +49,7 @@ ms.locfileid: "62537958"
   
      Ein Dropdownlisten-Steuerelement wird in der Spalte „Einstellungen“ neben **Datenbindung** oder der Kategorie, auf die geklickt wurde, angezeigt.  
   
-8. Klicken Sie auf die Dropdown-Liste, und wählen Sie den Typ der Ablaufverfolgungsinformationen, die Sie anzeigen möchten: **Alle**, **kritische**, **Fehler**, **Warnung**, **Informationen**, **ausführliche**, oder **ActivityTracing**.  
+8. Klicken Sie auf die Dropdownliste, und wählen Sie den Überwachungsinformationstyp aus, der angezeigt werden soll: **Alle**, **Kritisch**, **Fehler**, **Warnung**, **Informationen**, **Ausführlich** oder **Aktivitätsablaufverfolgung**.  
   
      **Kritisch** ermöglich nur die Verfolgung von kritischen Ereignissen.  
   
@@ -87,5 +87,5 @@ ms.locfileid: "62537958"
   
 8. Klicken Sie auf **OK**.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen von WPF](../debugger/debugging-wpf.md)

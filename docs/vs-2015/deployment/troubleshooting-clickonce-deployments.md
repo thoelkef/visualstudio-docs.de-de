@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung bei ClickOnce-Bereitstellungen | Microsoft-Dokumentation
+title: Problembehandlung bei ClickOnce-bereit Stellungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,37 +20,37 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26bf92a2401b0355ed149e6b9de20614969812e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422860"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Problembehandlung bei ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieses Thema hilft Ihnen bei der diagnose und Behebung der häufigsten Probleme mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungen.  
+Dieses Thema hilft Ihnen bei der Diagnose und Behebung der häufigsten Probleme bei bereit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Stellungen.  
   
- In den meisten Fällen eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung herunterladen, auf dem Computer eines Benutzers und ohne Probleme ausgeführt werden. Es gibt einige Fälle, jedoch, in dem Web-Server oder eine Anwendung Konfigurationsprobleme auf unvorhergesehene Probleme auftreten können.  
+ In den meisten Fällen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wird eine Anwendung auf den Computer eines Benutzers heruntergeladen und ohne Probleme ausgeführt. Es gibt jedoch einige Fälle, in denen Webserver-oder Anwendungs Konfigurationsprobleme unvorhergesehene Probleme verursachen können.  
   
- [Vorgehensweise: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
- Beschreibt, wie Sie alle umleiten [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Aktivierung auf einem Computer in einer einzelnen Protokolldatei.  
+ [Gewusst wie: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ Beschreibt, wie alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Aktivierungs Fehler auf einem Computer in eine einzelne Protokolldatei umgeleitet werden.  
   
- [Vorgehensweise: Angeben von ausführlichen Protokolldateien für ClickOnce-Bereitstellungen](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
- Beschreibt, wie Sie die Details zu erhöhen, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] in Protokolldateien geschrieben.  
+ [Gewusst wie: Angeben von ausführlichen Protokolldateien für ClickOnce-Bereitstellungen](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ Beschreibt, wie die Details, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] in Protokolldateien geschrieben werden, vergrößert werden.  
   
- [Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
- Beschreibt verschiedene Probleme mit der Konfiguration des Webservers, das Herunterladen von schwierigkeiten verursachen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen.  
+ [Probleme mit der Server-und Client Konfiguration in ClickOnce-bereit Stellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
+ Beschreibt verschiedene Probleme bei der Konfiguration des Webservers, die Probleme beim Herunterladen von Anwendungen verursachen könnten [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
- [Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
- Beschreibt verschiedene Probleme im Zusammenhang mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungen.  
+ [Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-bereit Stellungen](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ Beschreibt verschiedene Probleme im Zusammenhang mit bereit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Stellungen.  
   
  [Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
- Beschreibt bestimmte Szenarien, in dem eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung ist nicht erfolgreich, und enthält eine schrittweise Anleitung zu deren Behebung.  
+ Beschreibt bestimmte Szenarien, in denen eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung nicht erfolgreich sein kann, und stellt Schritte zum Beheben dieser Szenarien bereit.  
   
  [Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
- Beschreibt ein Verfahren zum Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden.  
+ Beschreibt eine Technik zum Debuggen von ClickOnce-Anwendungen, die System. Deployment. Application verwenden.  
   
-## <a name="see-also"></a>Siehe auch  
- [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)   
+ [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

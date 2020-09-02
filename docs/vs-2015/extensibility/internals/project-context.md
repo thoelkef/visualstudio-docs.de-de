@@ -1,5 +1,5 @@
 ---
-title: Projekt-Kontext | Microsoft-Dokumentation
+title: Projektkontext | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,23 +11,23 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d4ee4da5fdea63cf1bdd33554c72f6dac30d0334
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429937"
 ---
 # <a name="project-context"></a>Projektkontext
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wenn der Benutzer hinzufügt, oder es mit Projekten und Projektelementen funktioniert, verwendet die IDE das Konzept der Projektkontext, um zu bestimmen, wie verschiedene Vorgänge ausgeführt werden soll.  
+Wenn der Benutzer Projekte und Projekt Elemente hinzufügt oder damit arbeitet, verwendet die IDE das Konzept des Projekt Kontexts, um zu bestimmen, wie verschiedene Vorgänge ausgeführt werden sollen.  
   
- Dateien sind in der Regel die standard-Projekt-Objekte, die der Benutzer explizit dazu erstellt das **neues Projekt** Befehl oder durch Auswahl zur Verfügung. die **Projekt öffnen** Befehl der  **Datei** Menü. In diesen Fällen Dateien erstellt und im Kontext eines Projekts geöffnet, und der Projekttyp definiert den Kontext für die Bearbeitung des Dokuments.  
+ In der Regel handelt es sich bei Dateien um die Standard Projekt Objekte, die der Benutzer explizit erstellt, indem er den Befehl " **Neues Projekt** " oder den Befehl " **Projekt öffnen** " im Menü **Datei** auswählt. In diesen Fällen werden Dateien im Kontext eines Projekts erstellt und geöffnet, und der Projekttyp definiert den Kontext für die Bearbeitung des Dokuments.  
   
- Einige Projekte bieten eine sehr umfassende Kontextdaten. Das Projekt z. B. verwaltet, einen Projektumfang, programmgesteuerte-Namespace oder ein Projekt abgestimmten datenbankverbindung für die Datenbindung. Der Benutzer kann häufig Dateien oder Verbindungen mit der Datenbank öffnen, direkt unter Verwendung eines bestimmten Projekts-Objekts, z.B. ein Projektelement im Projektmappen-Explorer angezeigt.  
+ Einige Projekte bieten einen sehr umfangreichen Kontext. Das Projekt verwaltet z. b. einen projektbezogenen, programmatischen Namespace oder eine projektbezogene Datenbankverbindung für die Datenbindung. Der Benutzer kann Dateien oder Datenbankverbindungen häufig direkt mithilfe eines bestimmten Projekt Objekts öffnen, z. b. eines in Projektmappen-Explorer angezeigten Projekt Elements.  
   
- In anderen Fällen ist dem Projektkontext eines Elements nicht explizit angegeben. Beispielsweise im Rahmen eines Elements ist nicht verfügbar, wenn der Benutzer dazu auf eine Datei geöffnet wird die **vorhandene Datei öffnen** Befehl die **Datei** Menü, wenn der Debugger ausgeführt wird, auf eine Datei oder klickt der Benutzer die **In Dateien suchen** -Befehl in der **suchen und Ersetzen** Dialogfeld. Zu diesen Situationen können die IDE-Aufrufe verarbeiten <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> zum Verwalten der Vorgang des Ermittelns der besten-Projekts, ein Dokument zu öffnen.  
+ Zu anderen Zeiten wird der Projektkontext eines Elements nicht explizit angegeben. Beispielsweise ist der Kontext eines Elements nicht verfügbar, wenn der Benutzer eine Datei öffnet, indem er den Befehl **vorhandene Datei öffnen** im Menü **Datei** auswählt, wenn der Debugger mit einer Datei arbeitet oder wenn der Benutzer im Dialogfeld **Suchen und ersetzen** auf den Befehl **in Dateien suchen** klickt. Um diese Situationen zu behandeln, ruft die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> auf, um den Prozess der Suche nach dem besten Projekt zum Öffnen eines Dokuments zu verwalten.  
   
-## <a name="see-also"></a>Siehe auch  
- [Projektpriorität](../../extensibility/internals/project-priority.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Projekt Priorität](../../extensibility/internals/project-priority.md)   
  [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md)

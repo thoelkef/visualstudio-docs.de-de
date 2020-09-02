@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT | Microsoft-Dokumentation
+title: Stepunit | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d97f4f065d48b2b9c56bf029fb944eb3e4e7cb11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414592"
 ---
 # <a name="stepunit"></a>STEPUNIT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt die Schrittweite für die schrittweise Ausführung.  
+Gibt die Schritt Einheit für die schrittweise Angabe an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,7 +45,7 @@ enum enum_STEPUNIT { 
   
 ## <a name="members"></a>Member  
  STEP_STATEMENT  
- Schritte nach Anweisung.  
+ Steps by-Anweisung.  
   
  STEP_LINE  
  Schritte nach Zeile.  
@@ -53,16 +53,16 @@ enum enum_STEPUNIT { 
  STEP_INSTRUCTION  
  Schritte nach Anweisung.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird als Argument an die [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) -Methode übermittelt.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+ [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)

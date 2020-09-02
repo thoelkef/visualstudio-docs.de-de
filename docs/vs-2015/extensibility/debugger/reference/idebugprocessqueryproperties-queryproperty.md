@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty | Microsoft Docs
+title: 'Idebugprocessqueryproperties:: queryproperty | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72f91d6cf8554567807e958ae9a32b93f9228c8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537666"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode fragt eine angegebene Eigenschaft-Wert, der den Debugprozess.  
+Diese Methode fragt einen angegebenen Eigenschafts Wert des Debugprozesses ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,7 +38,7 @@ int QueryProperty(
   
 #### <a name="parameters"></a>Parameter  
  `dwPropType`  
- [in] Die Definition der Eigenschaft abgefragt. Folgende Werte sind möglich:  
+ in Definition der abgefragten Eigenschaft. Die Werte sind:  
   
 - PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -50,10 +50,10 @@ int QueryProperty(
   [out] Der Wert der Eigenschaft.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Diese Methode wird nur selten verwendet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

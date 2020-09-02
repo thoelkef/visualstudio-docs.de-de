@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537183"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Erstellen einfacher Profilerstellungsberichte über die Befehlszeile
@@ -27,7 +27,7 @@ In diesem Thema werden die grundlegenden VSPerfReport-Befehle beschrieben, über
  **VSPerfReport** `VSPFile` **/Summary:All**  
  Generiert alle für die VSP- oder VSPS-Datei verfügbaren Berichte.  
   
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType` [,`ReportType`...]  
  Generiert die angegebenen Berichtstypen.  
   
  **VSPerfReport** `VSPFile` **/CallTrace**  
@@ -38,19 +38,19 @@ In diesem Thema werden die grundlegenden VSPerfReport-Befehle beschrieben, über
   
 |Zusammenfassungsparameter|Berichtsbeschreibung|Berichtsverweis|  
 |-----------------------|------------------------|----------------------|  
-|**CallerCallee**|Stellt über- und untergeordnete Beziehungen zwischen Funktionen dar.|-   [Samplingdaten](../profiling/caller-callee-view-sampling-data.md)<br />-   [Instrumentierungsdaten](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [.NET-Speichersamplingdaten](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicherinstrumentierungsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Konfliktdaten](../profiling/caller-callee-view-contention-data.md)|  
-|**Function**|Führt Profilerstellungsdaten nach Funktion auf.|-   [Samplingdaten](../profiling/functions-view-sampling-data.md)<br />-   [Instrumentierungsdaten](../profiling/functions-view-instrumentation-data.md)<br />-   [.NET-Speichersamplingdaten](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicherinstrumentierungsdaten](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Konfliktdaten](../profiling/functions-view-contention-data.md)|  
-|**CallTree**|Stellt die Ausführungspfade und die Profilerstellungsdaten von Funktionen in der Profilerstellungsausführung dar.|-   [Instrumentierungsdaten](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Samplingdaten](../profiling/call-tree-view-sampling-data.md)<br />-   [.NET-Speichersamplingdaten](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicherinstrumentierungsdaten](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Konfliktdaten](../profiling/call-tree-view-contention-data.md)|  
-|**Zähler**|Führt Profilerstellungsmarkierungen und Windows-Leistungsindikatorwerte auf, die während der Profilerstellungsausführung gesammelt wurden.|-   [Markierungsansicht](../profiling/marks-view.md)|  
-|**Ip**|Führt Profilerstellungsdaten nach Anweisung auf.|-   [Samplingdaten](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET-Speichersamplingdaten](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Konfliktdaten](../profiling/instruction-pointers-ips-view-contention-data.md)|  
-|**Life**|Führt die Lebensdauer von zugeordneten Objekten auf.|-   [Objektlebensdaueransicht](../profiling/object-lifetime-view.md)|  
-|**Line**|Führt Profilerstellungsdaten nach Quellcodezeile auf.|-   [Samplingdaten](../profiling/lines-view-sampling-data.md)<br />-   [.NET-Speichersamplingdaten](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Konfliktdaten](../profiling/lines-view-contention-data.md)|  
-|**Header**|Headerinformationen der Profilerstellungs-Datendatei.|Dateispezifisch.|  
-|**Markieren**|Profilerstellungsmarkierungen, die während der Profilerstellungsausführung gesammelt wurden.|-   [Markierungsansicht](../profiling/marks-view.md)|  
-|**Modul**|Führt Profilerstellungsdaten für Module auf.|-   [Samplingdaten](../profiling/modules-view-sampling-data.md)<br />-   [Instrumentierungsdaten](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET-Speichersamplingdaten](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicherinstrumentierungsdaten](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Konfliktdaten](../profiling/modules-view-contention-data.md)|  
-|**Process**|Führt Profilerstellungsdaten für Prozesse auf.|-   [Prozessansicht](../profiling/process-view.md)<br />-   [Konfliktdaten](../profiling/process-view-contention-data.md)|  
+|**CallerCallee**|Stellt über- und untergeordnete Beziehungen zwischen Funktionen dar.|-   [Stichprobendaten](../profiling/caller-callee-view-sampling-data.md)<br />-   [Instrumentierungs Daten](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [.NET-Speicher Abtast Daten](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicher Instrumentations Daten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Konflikt Daten](../profiling/caller-callee-view-contention-data.md)|  
+|**Function**|Führt Profilerstellungsdaten nach Funktion auf.|-   [Stichprobendaten](../profiling/functions-view-sampling-data.md)<br />-   [Instrumentierungs Daten](../profiling/functions-view-instrumentation-data.md)<br />-   [.NET-Speicher Abtast Daten](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicher Instrumentations Daten](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Konflikt Daten](../profiling/functions-view-contention-data.md)|  
+|**CallTree**|Stellt die Ausführungspfade und die Profilerstellungsdaten von Funktionen in der Profilerstellungsausführung dar.|-   [Instrumentierungs Daten](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Stichprobendaten](../profiling/call-tree-view-sampling-data.md)<br />-   [.NET-Speicher Abtast Daten](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicher Instrumentations Daten](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Konflikt Daten](../profiling/call-tree-view-contention-data.md)|  
+|**Leistungsindikator**|Führt Profilerstellungsmarkierungen und Windows-Leistungsindikatorwerte auf, die während der Profilerstellungsausführung gesammelt wurden.|-   [Markierungs Ansicht](../profiling/marks-view.md)|  
+|**-**|Führt Profilerstellungsdaten nach Anweisung auf.|-   [Stichprobendaten](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET-Speicher Abtast Daten](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Konflikt Daten](../profiling/instruction-pointers-ips-view-contention-data.md)|  
+|**Life**|Führt die Lebensdauer von zugeordneten Objekten auf.|-   [Objekt Lebensdauer Ansicht](../profiling/object-lifetime-view.md)|  
+|**Linie**|Führt Profilerstellungsdaten nach Quellcodezeile auf.|-   [Stichprobendaten](../profiling/lines-view-sampling-data.md)<br />-   [.NET-Speicher Abtast Daten](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Konflikt Daten](../profiling/lines-view-contention-data.md)|  
+|**Kopfzeile**|Headerinformationen der Profilerstellungs-Datendatei.|Dateispezifisch.|  
+|**Mark**|Profilerstellungsmarkierungen, die während der Profilerstellungsausführung gesammelt wurden.|-   [Markierungs Ansicht](../profiling/marks-view.md)|  
+|**Modul**|Führt Profilerstellungsdaten für Module auf.|-   [Stichprobendaten](../profiling/modules-view-sampling-data.md)<br />-   [Instrumentierungs Daten](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET-Speicher Abtast Daten](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET-Speicher Instrumentations Daten](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Konflikt Daten](../profiling/modules-view-contention-data.md)|  
+|**Prozess**|Führt Profilerstellungsdaten für Prozesse auf.|-   [Prozessansicht](../profiling/process-view.md)<br />-   [Konflikt Daten](../profiling/process-view-contention-data.md)|  
 |**Thread**|Führt Profilerstellungsdaten für Threads auf.|-   [Prozessansicht](../profiling/process-view.md)|  
-|**Type**|Führt Zuordnungsprofilerstellungsdaten nach Typ auf.|-   [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md)|  
-|**Konflikt**|Ressourcenkonflikte.|-   [Ressourcenkonflikte](../profiling/resource-contentions-view-contention-data.md)|  
+|**Type**|Führt Zuordnungsprofilerstellungsdaten nach Typ auf.|-   [Zuordnungs Ansicht](../profiling/dotnet-memory-allocations-view.md)|  
+|**Punkte**|Ressourcenkonflikte.|-   [Ressourcenkonflikte](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Führt Leistungsregelprobleme auf.|– Führt die CheckId, die Beschreibung und den Quellcodespeicherort des Regelproblems auf.|  
-|**ETW**|Führt alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows (ETW) auf.|-   [ETW-Bericht](../profiling/event-tracing-for-windows-etw-report.md)|
+|**ETW**|Führt alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows (ETW) auf.|-   [Etw-Bericht](../profiling/event-tracing-for-windows-etw-report.md)|

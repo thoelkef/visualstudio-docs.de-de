@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e18e906cbc65ea811e765553a8d2711b3e4eb0f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423737"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
+# <a name="field_info"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Struktur wird eine lokale Variable, Parameter oder andere Feld beschrieben.  
+Diese Struktur beschreibt eine lokale Variable, einen Parameter oder ein anderes Feld.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,32 +47,32 @@ public struct FIELD_INFO {
 ```  
   
 ## <a name="members"></a>Member  
- dwFields  
- Eine Kombination von Flags aus der [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Enumeration, der angibt, welche Elemente ausgefüllt werden.  
+ dwfields  
+ Eine Kombination von Flags aus der [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Enumeration, die angibt, welche Member ausgefüllt werden.  
   
- bstrFullName  
+ bstraufullname  
  Der vollständige Name des Felds.  
   
  bstrName  
- Der kurze Name des Felds.  
+ Der Kurzname des Felds.  
   
- bstrType  
+ bstrintype  
  Der Typ des Felds.  
   
- dwModifiers  
- Eine Kombination von Flags aus der [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) -Enumeration, die das Feld beschreibt.  
+ dwmodifier  
+ Eine Kombination von Flags aus der [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) Enumeration, die das Feld beschreibt.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) Methode, in denen es ausgefüllt wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird an die [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) -Methode, in der Sie ausgefüllt ist, übermittelt.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: sh.h  
+ Header: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   

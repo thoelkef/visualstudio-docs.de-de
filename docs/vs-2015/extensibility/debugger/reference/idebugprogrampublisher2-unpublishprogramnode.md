@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft-Dokumentation
+title: 'IDebugProgramPublisher2:: unpublishprogramnode | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4fed7f35b87ec3e4a761b7adc33876affe778d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423133"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Entfernt einen angegebenes Programm Knoten aus Verfügbarkeit für die debug-Engines (DEs) und sitzungsbasierter Debug-Manager (SDM).  
+Entfernt einen angegebenen Programmknoten von der Verfügbarkeit zu debugengines (des) und vom Sitzungs-Debug-Manager (SDM).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,17 +40,17 @@ int UnpublishProgramNode(
   
 #### <a name="parameters"></a>Parameter  
  `pProgramNode`  
- [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das diesem Programm Knoten darstellt.  
+ in Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das den zu entfernende Programmknoten darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Nachdem es entfernt wurde, ist der Programm-Knoten nicht mehr verfügbar, Programm Informationen abgefragt werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Nach dem Entfernen kann der Programmknoten nicht mehr auf Programminformationen abgefragt werden.  
   
- Um ein Programm-Knoten verfügbar zu machen, rufen Sie die [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) Methode.  
+ Um einen Programmknoten verfügbar zu machen, müssen Sie die [publishprogramnode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) -Methode aufrufen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

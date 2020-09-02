@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBOOL | Microsoft-Dokumentation
+title: 'Idiapropertystorage:: Read-OL | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64eee421a5ed5bd46a64b51694d913a4f2dc4d41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538875"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Liest `BOOL` Werte in einem Eigenschaftensatz.  
+Liest `BOOL` Werte in einem Eigenschaften Satz.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,16 +36,16 @@ HRESULT ReadBOOL ( 
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- [in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist in WTypes.h als definiert eine `ULONG`).  
+ in Der Bezeichner der zu lesenden Eigenschaft ( `PROPID` ist in Wtypes. h als definiert `ULONG` ).  
   
  `pValue`  
- [out] Gibt den Wert der Eigenschaft zurück.  
+ vorgenommen Gibt den Eigenschafts Wert zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `BOOL`.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben. Gibt zurück, `E_INVALIDARG` Wenn die Eigenschaft nicht vom Typ ist `BOOL` .  
   
-## <a name="remarks"></a>Hinweise  
- Für einheitliche Ergebnisse interpretiert die `BOOL` Wert, sodass Werte ungleich NULL sind `TRUE` und 0 (null) ist `FALSE`.  
+## <a name="remarks"></a>Bemerkungen  
+ Um konsistente Ergebnisse zu erzielen, interpretieren Sie den `BOOL` Wert so, dass Werte ungleich NULL `TRUE` und NULL gleich sind `FALSE` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

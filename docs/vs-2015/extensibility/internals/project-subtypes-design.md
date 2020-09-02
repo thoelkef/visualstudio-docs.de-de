@@ -1,5 +1,5 @@
 ---
-title: Projekt Untertypen Entwurf | Microsoft-Dokumentation
+title: Entwerfen von Projekt Untertypen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,84 +11,84 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62430541"
 ---
 # <a name="project-subtypes-design"></a>Entwurf von Projektuntertypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Projektuntertypen können VSPackages, Projekte, die basierend auf der Microsoft Build Engine (MSBuild) zu erweitern. Die Verwendung der Aggregation ermöglicht Ihnen die Wiederverwendung der größte Teil das verwaltete Core-Projektsystem implementiert [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] noch immer noch das Verhalten für ein bestimmtes Szenario anpassen.  
+Mithilfe von Projekt Untertypen können VSPackages Projekte basierend auf dem Microsoft-Build-Engine (MSBuild) erweitern. Durch die Verwendung von Aggregationen können Sie den Großteil des verwalteten, in implementierten Projekt Systems wieder verwenden, indem Sie trotzdem [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] das Verhalten für ein bestimmtes Szenario anpassen.  
   
- In den folgenden Themen beschreiben den grundlegenden Aufbau und die Implementierung von Projektuntertypen:  
+ In den folgenden Themen wird das grundlegende Design und die Implementierung von Projekt Untertypen ausführlich erläutert:  
   
-- Untertyp Projektentwurf.  
+- Design des Projekt unter Typs.  
   
-- Die Aggregation mit mehreren Ebenen.  
+- Aggregation auf mehreren Ebenen.  
   
 - Unterstützende Schnittstellen.  
   
-## <a name="project-subtype-design"></a>Untertyp Projektentwurf  
- Die Initialisierung von einem Projektuntertyp erfolgt durch das Zusammenfassen der Hauptseite <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> Objekte. Diese Aggregation ermöglicht einem Projektuntertyp zu überschreiben, oder erhöhen die meisten Funktionen des Basisprojekts. Projektuntertypen Abrufen der ersten Gelegenheit verlassen, Eigenschaften, die mit behandeln <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, Befehle mit <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>, und Verwenden von Project Item Management <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Projektuntertypen können erweitern:  
+## <a name="project-subtype-design"></a>Design des Projekt unter Typs  
+ Die Initialisierung eines Projekt unter Typs wird durch aggregierten der Haupt <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> -und- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> Objekte erreicht. Diese Aggregation ermöglicht einem Projekt Untertyp, die meisten Funktionen des Basis Projekts zu überschreiben oder zu verbessern. Projekt Untertypen erhalten die erste Möglichkeit, Eigenschaften mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , Befehlen mit <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> und der Projekt Element Verwaltung mithilfe von zu verarbeiten <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> . Projekt Untertypen können auch erweitert werden:  
   
-- Projekt-Konfigurationsobjekte.  
+- Projekt Konfigurationsobjekte.  
   
-- Konfigurationsabhängig-Objekte.  
+- Konfigurations abhängige Objekte.  
   
-- Durchsuchen der konfigurationsunabhängigen-Objekte.  
+- Konfigurations unabhängige Objekte zum Durchsuchen.  
   
-- Projekt-Automation-Objekte.  
+- Project Automation-Objekte.  
   
-- Teamprojektsammlungen Sie Automation-Eigenschaft.  
+- Eigenschaften Auflistungen für Projektautomatisierung.  
   
-  Weitere Informationen zur Erweiterbarkeit von Projektuntertypen finden Sie unter [Eigenschaften und Methoden von Projektuntertypen erweitert](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Weitere Informationen zur Erweiterbarkeit durch Projekt Untertypen finden Sie unter [Eigenschaften und Methoden, die von Projekt Untertypen erweitert](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)wurden.  
   
 ##### <a name="policy-files"></a>Richtliniendateien  
- Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Umgebung bietet ein Beispiel für das Basisprojektsystem mit einem Projektuntertyp in seiner Implementierung von Richtliniendateien zu erweitern. Eine Richtliniendatei ermöglicht das Strukturieren der der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Umgebung durch die Verwaltung von Features, die im Projektmappen-Explorer enthalten **Projekt hinzufügen** im Dialogfeld **neues Element hinzufügen** Dialogfeld und der  **Eigenschaften** Dialogfeld. Der Untertyp der Richtlinie überschrieben und erweitert diese Funktionen auch über <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Implementierungen.  
+ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Umgebung bietet ein Beispiel für die Erweiterung des Basisprojekt Systems mit einem Projekt Untertyp in der Implementierung von Richtlinien Dateien. Eine Richtlinien Datei ermöglicht die Strukturierung der Umgebung durch die Verwaltung von Funktionen, die das Dialogfeld [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektmappen-Explorer, **Projekt hinzufügen** , Dialogfeld **Neues Element hinzufügen** und das Dialogfeld **Eigenschaften** enthalten. Der Richtlinientyp überschreibt und erweitert diese Features durch <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> `IOleCommandTarget` -Implementierungen und- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Implementierungen.  
   
-##### <a name="aggregation-mechanism"></a>Aggregation-Mechanismus  
- Der Umgebung Projekt Untertyp Aggregation Mechanismus unterstützt mehrere Ebenen von Aggregation, sodass eine erweiterte Untertyp für die Implementierung weiterer flavoring ein Projekt. Darüber hinaus die unterstützende Objekte eines Projekts Untertyp, z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>, ermöglichen es mehrere Ebenen von Schichten. In Übereinstimmung mit den Einschränkungen des COM- und COM müssen Aggregationsregeln, Projektuntertypen und des Basisprojekts kooperativ programmiert werden, um den inneren Untertyp oder dem Basisprojekt ordnungsgemäß beim Delegieren der Methodenaufrufe, und Verwalten von Verweiszähler teilnehmen kann . Zur Unterstützung der Aggregation programmiert werden, also muss das Projekt zu aggregiert werden.  
+##### <a name="aggregation-mechanism"></a>Aggregations Mechanismus  
+ Der Aggregations Mechanismus des Projekt unter Typs der Umgebung unterstützt mehrere Aggregations Ebenen, sodass ein erweiterter Untertyp implementiert werden kann, indem ein Projekt mit einem Projekt erweitert wird. Außerdem werden die unterstützenden Objekte eines Projekt unter Typs, wie z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> . b., so entworfen, dass Sie mehrere Ebenen von Schichten ermöglichen. In Übereinstimmung mit den Einschränkungen von com-und com-Aggregations Regeln müssen Projekt Untertypen und Basisprojekte kooperativ programmiert werden, damit der innere Untertyp oder das Basisprojekt ordnungsgemäß an delegierenden Methoden aufrufen und der Verwaltung von Verweis Zählungen beteiligt sein kann. Das heißt, das Projekt, das aggregiert werden soll, muss zur Unterstützung von Aggregationen programmiert werden.  
   
- Die folgende Abbildung zeigt eine schematische Darstellung einer mehrstufigen Projekt Untertyp Aggregation.  
+ In der folgenden Abbildung ist eine Schema übergreifende Darstellung einer Projekt Untertypen Aggregation mit mehreren Ebenen dargestellt.  
   
- ![Grafik zum Visual Studio Mehrebenen-](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
-Mit mehreren Ebenen Projektuntertyp.  
+ ![Grafik zu Visual Studio-Mehrebenen-Projekttyp](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
+Mehrstufiges Projekt Untertyp  
   
- Eine auf mehreren Ebenen Projekt Untertyp Aggregation besteht aus drei Ebenen enthält, ein Basis-Projekt, das von einem Projektuntertyp aggregiert, wird durch eine erweiterte Projektuntertyp weiter aggregiert. In der Abbildung konzentriert sich auf einige unterstützenden Schnittstellen, die im Rahmen der bereitgestellt werden die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Untertyp Projektarchitektur.  
+ Eine mehrstufige Projekt Untertyp Aggregation besteht aus drei Ebenen, einem Basisprojekt, das durch einen Projekt Untertyp aggregiert wird, und wird dann durch einen erweiterten Projekt Untertyp aggregiert. Die Abbildung konzentriert sich auf einige der unterstützenden Schnittstellen, die als Teil der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Architektur des Projekt unter Typs bereitgestellt werden.  
   
-##### <a name="deployment-mechanisms"></a>Mechanismen zur Bereitstellung  
- Zu viele das Basisprojektsystem gehören Funktionen, die von einem Projektuntertyp erweiterte Mechanismen zur Bereitstellung von. Einem Projektuntertyp wirkt sich auf Mechanismen zur Bereitstellung von Konfigurationsschnittstellen implementieren (z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>), werden abgerufen, indem Sie QueryInterface für Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. In einem Szenario, in dem sowohl für den Projektuntertyp als auch für den erweiterten Projektuntertyp andere Konfiguration-Implementierungen hinzufügen, ruft das Basisprojekt `QueryInterface` auf des erweiterten projektuntertyps `IUnknown`. Wenn der inneren Projektuntertyp die Implementierung für die Konfiguration, der das Basisprojekt angefordert wird enthält, der erweiterte Projektuntertyp, die an die Implementierung von der inneren Projektuntertyp delegiert werden. Implementieren Sie als Mechanismus zum Status von Aggregationsebene ein in eine andere beibehalten, alle Ebenen von Projektuntertypen <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> beziehen Sie XML-Daten in den Projektdateien, nicht mit dem Build beibehalten werden. Weitere Informationen finden Sie unter [beibehalten von Daten in der MSBuild-Projektdatei](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> wird als Mechanismus zum Abrufen von Automatisierungsextendern aus der Projektuntertypen implementiert.  
+##### <a name="deployment-mechanisms"></a>Bereitstellungs Mechanismen  
+ Zu vielen der grundlegenden Projekt Systemfunktionen, die durch einen Projekt Untertyp erweitert werden, sind Bereitstellungs Mechanismen. Ein Projekt Untertyp wirkt sich auf Bereitstellungs Mechanismen durch Implementieren von Konfigurations Schnittstellen (z. b. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ) aus, die durch den Aufruf von QueryInterface in abgerufen werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> In einem Szenario, in dem sowohl der Projekt Untertyp als auch der erweiterte Projekt Untertyp verschiedene Konfigurations Implementierungen hinzufügen, ruft das Basisprojekt `QueryInterface` auf dem des erweiterten Projekt unter Typs auf `IUnknown` . Wenn der innere Projekt Untertyp die Konfigurations Implementierung enthält, die das Basisprojekt anfordert, delegiert der erweiterte Projekt Untertyp an die-Implementierung, die vom inneren Projekt Untertyp bereitgestellt wird. Um den Zustand von einer Aggregations Ebene in eine andere beizubehalten, werden alle Ebenen von Projekt Untertypen implementiert, <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> um nicht auf Builds bezogene XML-Daten in den Projektdateien beizubehalten. Weitere Informationen finden Sie unter [persistente Daten in der MSBuild-Projektdatei](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> ist als Mechanismus zum Abrufen von Automatisierungsextendern aus den Projekt Untertypen implementiert.  
   
- Die folgende Abbildung konzentriert sich auf die Automation-Extender-Implementierung, die projektkonfigurationssuchobjekt vor allem von Projektuntertypen verwendet werden, um das Basisprojektsystem zu erweitern.  
+ In der folgenden Abbildung liegt der Schwerpunkt auf der Implementierung des Automation-Extenders, dem speziellen Projekt Konfigurations Such Objekt, das von Projekt Untertypen verwendet wird, um das Basisprojekt System zu erweitern.  
   
  ![Grafik zu VS-Projekttyp Automatisierungsextender](../../extensibility/internals/media/vs-projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
-Project Subtype Automation Extender.  
+Project SubType Automation Extender.  
   
- Projektuntertypen können das Basisprojektsystem durch Erweitern des Automatisierungsmodells für das Objekt weiter erweitern. Diese werden als Teil des DTE-Automatisierungsobjekt definiert und dienen zum Erweitern der Project-Objekt, das `ProjectItem` Objekt und die `Configuration` Objekt. Weitere Informationen finden Sie unter [Erweitern des Objektmodells des Projekts Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
+ Projekt Untertypen können das Basisprojekt System durch Erweitern des Automatisierungs Objektmodells weiter erweitern. Diese werden als Teil des DTE-Automatisierungs Objekts definiert und zum Erweitern des Project-Objekts, des `ProjectItem` -Objekts und des- `Configuration` Objekts verwendet. Weitere Informationen finden Sie unter [Erweitern des Objektmodells des Basis Projekts](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
   
-## <a name="multi-level-aggregation"></a>Mit mehreren Ebenen Aggregation  
- Eine Implementierung der Projekt-Untertyp, die eine niedrigere Ebene Projektuntertyp umschließt muss kooperativ programmiert werden, um die ordnungsgemäße Funktion den inneren Projektuntertyp zulassen. Eine Liste der Aufgaben Programmieren enthält:  
+## <a name="multi-level-aggregation"></a>Aggregation auf mehreren Ebenen  
+ Eine Projekt Untertyp Implementierung, die einen Projekt Untertyp auf niedrigerer Ebene umschließt, muss kooperativ programmiert werden, damit der innere Projekt Untertyp ordnungsgemäß funktioniert. Eine Liste der Programmier Zuständigkeiten umfasst:  
   
-- Die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementierung des projektuntertyps, die den inneren Untertyp umschlossen wird, muss zum Delegieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> der inneren Projektuntertyp-Implementierung für beide <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> Methoden.  
+- Die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementierung des Projekt unter Typs, der den inneren Untertyp umwickelt, muss für die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> -Methode und die-Methode an die-Implementierung des inneren Projekt unter Typs delegieren <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> .  
   
-- Die <xref:EnvDTE80.IInternalExtenderProvider> Implementierung des projektuntertyps Wrapper muss an, die von der inneren Projektuntertyp delegieren. Insbesondere für die Implementierung der <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> muss die Zeichenfolge mit den Namen der von der inneren Projektuntertyp und verkettet Sie dann die Zeichenfolgen, die als Extender hinzufügen möchte.  
+- Die <xref:EnvDTE80.IInternalExtenderProvider> Implementierung des Wrapper Projekt unter Typs muss an den des inneren Projekt unter Typs delegieren. Insbesondere muss die Implementierung von <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> die Zeichenfolge der Namen aus dem inneren Projekt Untertyp erhalten und dann die Zeichen folgen verketten, die als Extender hinzugefügt werden sollen.  
   
-- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> -Implementierung von einem Projektuntertyp Wrapper instanziieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> Objekt der inneren Projektuntertyp und halten Sie ihn als einen privaten Delegaten, da nur das Basisprojekt projektkonfigurationsobjekt direkt weiß, dass der Wrapper Projektuntertyp-Konfigurationsobjekt vorhanden ist. Äußeren Projektuntertyp kann anfänglich Konfigurationsschnittstellen direkt behandeln möchte, und Delegieren dann den Rest der inneren Projektuntertyp-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Implementierung eines Wrapper Projekt unter Typs muss das <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> Objekt seines inneren Projekt unter Typs instanziieren und als privaten Delegaten speichern, da nur das Projekt Konfigurationsobjekt des Basis Projekts direkt weiß, dass das Konfigurationsobjekt des Wrapper Projekt unter Typs vorhanden ist. Der äußere Projekt Untertyp kann anfänglich Konfigurations Schnittstellen auswählen, die direkt behandelt werden sollen, und dann den Rest an die Implementierung von des inneren Projekt unter Typs delegieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A> .  
   
 ## <a name="supporting-interfaces"></a>Unterstützende Schnittstellen  
- Das Basisprojekt delegiert Aufrufe zu unterstützenden Schnittstellen hinzugefügt, die von einem Projektuntertyp, um verschiedene Aspekte der Implementierung zu erweitern. Dies schließt die Projekt-Konfigurationsobjekte und den verschiedenen Eigenschaft Objektkatalog: Objekte erweitern. Diese Schnittstellen werden abgerufen, durch den Aufruf `QueryInterface` auf `punkOuter` (ein Zeiger auf die `IUnknown`) das äußere Projekt Untertyp-Aggregators.  
+ Das Basisprojekt delegiert Aufrufe an unterstützende Schnittstellen, die von einem Projekt Untertyp hinzugefügt werden, um verschiedene Aspekte der Implementierung zu erweitern. Dies schließt die Erweiterung der Projekt Konfigurationsobjekte und verschiedener Eigenschaften Browser Objekte ein. Diese Schnittstellen werden durch Aufrufen `QueryInterface` von `punkOuter` (einem Zeiger auf `IUnknown` ) des äußersten Projekt Untertyp Aggregators abgerufen.  
   
-|Interface|Projektuntertyp|  
+|Schnittstelle|Projekt Untertyp|  
 |---------------|---------------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>|Ermöglicht den Projektuntertyp an:<br /><br /> -Stellen Sie eine Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>.<br />: Ermöglicht den Projektuntertyp eine eigene Implementierung der Steuern des Start des Debuggers <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>.<br />– Deaktivieren Sie die ausdrucksauswertung zur Entwurfszeit durch angemessen behandelt die `DBGLAUNCH_DesignTimeExprEval` in seiner Implementierung von Groß-/Kleinschreibung <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.QueryDebugLaunch%2A>.|  
-|<xref:EnvDTE80.IInternalExtenderProvider>|Ermöglicht den Projektuntertyp an:<br /><br /> -Erweitern die <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> des Projekts, das Hinzufügen oder Entfernen von unabhängigen Konfigurationseigenschaften des Projekts.<br />– Erweitern Sie das Automation-Projektobjekt (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) des Projekts.<br /><br /> Eigenschaftswerte, die oben genannten stammen aus <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> Enumeration.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>|Ermöglicht dem Projektuntertyp zurück zum Zuordnen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> Objekt, die dem projektkonfigurationssuchobjekt angegeben.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBrowseObject>|Ermöglicht dem Projektuntertyp zurück zum Zuordnen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oder `VSITEMID` -Objekt, das projektkonfigurationssuchobjekt angegeben.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Ermöglicht den Projektuntertyp beliebige strukturierte XML-Daten in der Projektdatei (VBPROJ oder csproj) beibehalten werden. Diese Daten sind nicht für MSBuild sichtbar.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Ermöglicht den Projektuntertyp an:<br /><br /> -Hinzufügen von neuen MSBuild-Eigenschaften beibehalten werden sollen.<br />-Entfernen Sie unnötige Eigenschaften von MSBuild.<br />-Abfrage für einen aktuellen Wert der MSBuild-Eigenschaft.<br />-Ändern Sie den aktuellen Wert der MSBuild-Eigenschaft.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>|Ermöglicht dem Projekt Untertyp Folgendes:<br /><br /> : Stellen Sie eine Implementierung von bereit <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> .<br />-Steuern Sie den Start des Debuggers, indem Sie zulassen, dass der Projekt Untertyp seine eigene Implementierung von bereitstellt <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> .<br />-Deaktivieren Sie die Ausdrucks Auswertung zur Entwurfszeit, indem Sie den `DBGLAUNCH_DesignTimeExprEval` Fall in der Implementierung von ordnungsgemäß behandeln <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.QueryDebugLaunch%2A> .|  
+|<xref:EnvDTE80.IInternalExtenderProvider>|Ermöglicht dem Projekt Untertyp Folgendes:<br /><br /> -Erweitern <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> Sie den des Projekts, um die Konfigurations unabhängigen Eigenschaften des Projekts hinzuzufügen oder zu entfernen.<br />-Erweitern Sie das Project Automation-Objekt ( <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> ) des Projekts.<br /><br /> Die oben aufgeführten Eigenschaftswerte werden aus der- <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> Enumeration entnommen.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>|Ermöglicht, dass der Projekt Untertyp dem-Objekt zurückgegeben wird, <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> Wenn das Projekt Konfigurations Such Objekt angezeigt wird.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBrowseObject>|Ermöglicht, dass der Projekt Untertyp dem- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt oder dem- `VSITEMID` Objekt zugeordnet wird, wenn das Projekt Konfigurations Such Objekt angezeigt wird.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Ermöglicht dem Projekt Untertyp, beliebige strukturierte XML-Daten in der Projektdatei (. vbproj oder. csproj) beizubehalten. Diese Daten sind für MSBuild nicht sichtbar.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Ermöglicht dem Projekt Untertyp Folgendes:<br /><br /> -Hinzufügen neuer MSBuild-Eigenschaften, die persistent gespeichert werden sollen.<br />-Entfernen Sie unnötige Eigenschaften aus MSBuild.<br />-Abfrage für einen aktuellen Wert einer MSBuild-Eigenschaft.<br />: Ändert den aktuellen Wert einer MSBuild-Eigenschaft.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

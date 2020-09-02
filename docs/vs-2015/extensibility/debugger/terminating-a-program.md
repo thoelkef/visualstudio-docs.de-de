@@ -12,24 +12,24 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f0b9ad248751af0885fa4edc0275be2ede5ddd9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421862"
 ---
 # <a name="terminating-a-program"></a>Beenden eines Programms
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Folgendes ist eine Beschreibung für die Beendigung der ein einzelnes Programm mit einem Thread.  
+Im folgenden finden Sie eine Beschreibung der Beendigung eines einzelnen Programms mit einem Thread.  
   
-## <a name="termination-process"></a>-Verbindungsbeendigungs-Prozess  
+## <a name="termination-process"></a>Beendigungs Prozess  
   
-1. Der DE sendet eine [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) mit einer gültigen [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).  
+1. Der de sendet eine [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) mit einem gültigen [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).  
   
-2. Der DE sendet eine [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) mit einer gültigen [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).  
+2. Der de sendet eine [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) mit einem gültigen [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).  
   
-   Die IDE wechselt in den Entwurfsmodus. Die Debug-Engine oder die Laufzeitumgebung Aufrufe [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) , das Programm über den Port zu entfernen.  
+   Die IDE wechselt in den Entwurfs Modus. Mit der Debug-Engine oder der Laufzeitumgebung wird [IDebugPortNotify2:: removeprogramnode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) aufgerufen, um das Programm aus dem Port zu entfernen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

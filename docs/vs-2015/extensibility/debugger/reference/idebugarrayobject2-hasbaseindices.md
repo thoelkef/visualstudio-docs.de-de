@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::HasBaseIndices | Microsoft-Dokumentation
+title: 'IDebugArrayObject2:: hasbaseindices | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9d0c06ad921ad43bcb7a79446062bc6feda8009
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423646"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bestimmt, ob das Array Basis Indizes (untere Grenzen) definiert hat.  
+Bestimmt, ob für das Array Basis Indizes (untere Begrenzungen) definiert sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,7 +39,7 @@ int HasBaseIndices (
   
 #### <a name="parameters"></a>Parameter  
  `pfHasBaseIndices`  
- [out] "True", um anzugeben, dass das Array Basis Indizes (untere Grenzen); hat andernfalls "false".  
+ vorgenommen TRUE, um anzugeben, dass das Array über Basis Indizes (untere Begrenzungen) verfügt; andernfalls false.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

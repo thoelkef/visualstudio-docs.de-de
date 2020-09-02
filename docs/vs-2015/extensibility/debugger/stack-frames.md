@@ -1,5 +1,5 @@
 ---
-title: Stapelrahmen | Microsoft-Dokumentation
+title: Stapel Rahmen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,27 +13,27 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3050e89db2f5cbb138f3d358b10c7cd936c560e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423386"
 ---
 # <a name="stack-frames"></a>Stapelrahmen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Im Hinblick auf die Debugger-Architektur eine **Stapelrahmen**:  
+Im Hinblick auf die Debugger-Architektur ein **Stapel Rahmen**:  
   
-- Ist eine Abstraktion eines Stapels, der den Ausführungskontext eines Threads bereitstellt. Ein Thread wird immer innerhalb einer Funktion ausgeführt. Ein Stapelrahmen werden die lokalen Variablen der Funktion und die Argumente, enthält. Um mit Visual Studio zu debuggen, muss die Sprache oder Umgebung, die im Debugmodus befindlichen Stapelrahmen unterstützen.  
+- Eine Abstraktion eines Stapels, der den Ausführungs Kontext eines Threads bereitstellt. Ein Thread wird immer innerhalb einer Funktion ausgeführt. Ein Stapel Rahmen enthält die lokalen Variablen der Funktion und die Argumente für Sie. Zum Debuggen mit Visual Studio muss die zu debuggende Sprache oder Umgebung Stapel Rahmen unterstützen.  
   
-- Kann sowohl zu identifizieren und selbst beschreiben und können den zugeordneten Thread zurück. Ein Stapelrahmen kann der Codekontext, der den aktuellen Anweisungszeiger, sowie die zugehörige Dokumentation darstellt und ausdruckskontexten-Auswertung zurückgegeben werden.  
+- Kann identifizieren und beschreiben und den zugeordneten Thread zurückgeben. Ein Stapel Rahmen kann auch den Code Kontext zurückgeben, der den aktuellen Anweisungs Zeiger darstellt, sowie die zugeordneten Kontexte der Dokumentation und Ausdrucks Auswertung.  
   
-- Verfügt über Eigenschaften, die den Namen, Typ und Wert der lokalen Variablen und Argumente, die beschreiben, und die in verschiedene IDE-Debug-Fenster angezeigt werden.  
+- Verfügt über Eigenschaften, die den Namen, den Typ und den Wert lokaler Variablen und Argumente beschreiben und in verschiedenen IDE-Debugfenstern angezeigt werden.  
   
-- Wird durch dargestellt eine [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) Schnittstelle, die in der Regel von einem Debug-Engine (DE) oder den virtuellen Computer als Folge eines Threads erstellt.  
+- Wird durch eine [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) -Schnittstelle dargestellt, die in der Regel durch eine Debug-Engine (de) oder eine virtuelle Maschine erstellt wird, wenn ein Thread ausgeführt wird.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)   
- [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md)   
+ [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
  [Debug-Engine](../../extensibility/debugger/debug-engine.md)   
  [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

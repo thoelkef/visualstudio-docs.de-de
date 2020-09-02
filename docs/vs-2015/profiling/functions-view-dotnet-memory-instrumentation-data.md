@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 340a12bfb8dc9a26c4200682851bb0acc684dddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419909"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Funktionsansicht – .NET-Speicherinstrumentierungsdaten
@@ -55,7 +55,7 @@ In der Funktionsansicht der Profilerstellungsdaten für die .NET-Speicherbelegun
 |**Exklusive Bytes**|Die Anzahl der Bytes im Arbeitsspeicher, die von dieser Funktion, nicht jedoch von von dieser Funktion aufgerufenen Funktionen belegt wurden.|  
 |**Exklusive Bytes %**|Der Prozentsatz aller Bytes im Arbeitsspeicher, die während der Profilerstellung belegt wurden und exklusive Belegungen dieser Funktion waren.|  
   
-## <a name="elapsed-inclusive-values"></a>Verstrichene inklusive Zeit  
+## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit  
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst den zeitlichen Aufwand für untergeordnete Funktionen und Aufrufe des Betriebssystems (z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen).  
   
 |Spalte|Beschreibung|  
@@ -88,7 +88,7 @@ In der Funktionsansicht der Profilerstellungsdaten für die .NET-Speicherbelegun
 |**Maximale inklusive Anwendungszeit**|Die maximal verstrichene inklusive Zeit für einen Aufruf dieser Funktion.|  
 |**Minimale inklusive Anwendungszeit**|Die mindestens verstrichene inklusive Zeit für einen Aufruf dieser Funktion.|  
   
-## <a name="application-exclusive-values"></a>Exklusive Anwendungszeit  
+## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit  
  Werte für exklusive Anwendungszeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Diese Zeit umfasst weder die Zeit in Aufrufen an das Betriebssystem (z.B. Kontextwechsel und Eingabe-/Ausgabevorgänge) noch die Zeit in untergeordneten Funktionen.  
   
 |Spalte|Beschreibung|  
@@ -99,8 +99,8 @@ In der Funktionsansicht der Profilerstellungsdaten für die .NET-Speicherbelegun
 |**Maximale exklusive Anwendungszeit**|Die maximale exklusive Anwendungszeit für einen Aufruf dieser Funktion.|  
 |**Minimale exklusive Anwendungszeit**|Die exklusive Mindestanwendungszeit für einen Aufruf dieser Funktion.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Funktionsansicht - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Funktionsansicht](../profiling/functions-view-instrumentation-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Funktions Ansicht-Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Funktions Ansicht](../profiling/functions-view-instrumentation-data.md)   
  [Funktionsansicht](../profiling/functions-view-sampling-data.md)

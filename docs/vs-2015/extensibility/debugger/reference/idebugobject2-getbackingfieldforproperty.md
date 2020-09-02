@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetBackingFieldForProperty | Microsoft-Dokumentation
+title: 'IDebugObject2:: getbackingfieldforproperty | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5eadbed61638ff1442c4ed7033426e245abf930a
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62536385"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft ab, das Feld oder eine Variable (sofern vorhanden), die von diesem Objekt dargestellte Eigenschaft sichern.  
+Ruft das Feld oder die Variable (sofern vorhanden) ab, die möglicherweise die von diesem-Objekt dargestellte Eigenschaft unterstützt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int GetBackingFieldForProperty(
   
 #### <a name="parameters"></a>Parameter  
  `ppObject`  
- [out] Ein [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) Objekt, das das dahinter liegende Feld beschreibt.  
+ vorgenommen Ein [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) -Objekt, das das Unterstützungs Feld beschreibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) Objekt stellt verwalteten Code Klasseneigenschaft, d. h. eine Methode mit einer Get bzw. set-Accessor. Diese Eigenschaften erfordern in der Regel eine Variable, die den Wert, der bearbeitet werden, durch die Eigenschaft enthalten. Diese Variable wird als das dahinter liegende Feld bezeichnet. Liegt keine dahinter liegende Feld für das Objekt, dann stellen Sie sicher auf einen Nullwert zurückgibt: Einige Aufrufer kann keine Achten Sie darauf, den Rückgabewert, aber sehen Sie sich stattdessen um festzustellen, ob ein null-Wert, in zurückgegeben wurde `ppObject`.  
+## <a name="remarks"></a>Bemerkungen  
+ Das [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) -Objekt stellt eine Eigenschaft der verwalteten Code Klasse dar, d. h. eine Methode mit einem Get-und/oder Set-Accessor. Diese Eigenschaften erfordern im Allgemeinen, dass eine Variable den von der-Eigenschaft bearbeiteten Wert enthält. Diese Variable wird als dahinter liegendes Feld bezeichnet. Wenn kein dahinter liegendes Feld für das Objekt vorhanden ist, stellen Sie sicher, dass Sie einen NULL-Wert zurückgeben: einige Aufrufer achten möglicherweise nicht auf den Rückgabewert, sondern sehen stattdessen, ob ein NULL-Wert in zurückgegeben wurde `ppObject` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

@@ -25,21 +25,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431627"
 ---
 # <a name="macros-for-reporting"></a>Makros für die Berichterstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können die **_RPTn**, und **_RPTFn** in CRTDBG.H definierten Makros. H, ersetzen Sie die Verwendung von `printf` Anweisungen für das Debuggen. Diese Makros automatisch dem Releasebuild entfernt werden beim Erstellen **_DEBUG** nicht definiert ist, daher keine Notwendigkeit zum Einschließen in besteht **#ifdef**s.  
+Sie können die in CRTDBG definierten **_RPTn**-und **_RPTFn** -Makros verwenden. H, um die Verwendung von- `printf` Anweisungen für das Debuggen zu ersetzen. Diese Makros verschwinden automatisch in Ihrem Releasebuild, wenn **_DEBUG** nicht definiert ist. Daher müssen Sie Sie nicht in **#ifdef**s einschließen.  
   
 |Makro|Beschreibung|  
 |-----------|-----------------|  
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4** fungiert die Meldungszeichenfolge als printf-Formatzeichenfolge für die Argumente.|  
-|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|Identisch mit **_RPTn** , aber diese Makros auch ausgeben, die Datei Dateiname und Zeilennummer angegeben, wo das Makro befindet.|  
+|**_RPTF0**, **_RPTF1**, **, _RPTF2** **_RPTF4**|Identisch mit **_RPTn** , aber diese Makros geben auch den Dateinamen und die Zeilennummer aus, in der sich das Makro befindet.|  
   
  Betrachten Sie das folgende Beispiel:  
   
@@ -74,7 +74,7 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- Ein Aufruf von **ALERT_IF2** konnte ausgeführt werden, alle Funktionen von der **Printf** Code am Anfang dieses Themas:  
+ Ein Aufrufen von **ALERT_IF2** kann alle Funktionen des **printf** -Codes am Anfang dieses Themas ausführen:  
   
 ```  
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
@@ -83,5 +83,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
  Da benutzerdefinierte Makros problemlos geändert werden können, um bedarfsabhängig mehr oder auch weniger Informationen an bestimmte Ziele zu senden, kann sich dieser Ansatz insbesondere bei steigenden Debuganforderungen als nützlich erweisen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)

@@ -1,5 +1,5 @@
 ---
-title: Migrieren von 64-Bit-Debugger-COM-klassenregistrierung | Microsoft-Dokumentation
+title: COM-Klassen Registrierung für 64-Bit-Debugger migrieren | Microsoft-Dokumentation
 ms.date: 11/10/2016
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
@@ -9,23 +9,23 @@ manager: jillfra
 ms.workload:
 - greggm
 ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62433694"
 ---
-# <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrieren von 64-Bit-Debugger COM-klassenregistrierung
+# <a name="migrate-64-bit-debugger-com-class-registration"></a>COM-Klassen Registrierung für 64-Bit-Debugger migrieren
 
-Debuggererweiterungen, die Registrierung von COM-Klassen in HKEY_CLASSES_ROOT unter Verwendung von Regasm "," regsvr32, oder Schreiben direkt in die Registrierung und in den geladen *msvsmon.exe* Remotedebugger (), es ist jetzt möglich, diesen bereitstellen "msvsmon" zum Schreiben in HKEY_CLASSES_ROOT ohne Registrierung. Dies wirkt sich auf älteren .NET Debugger ausdrucksauswertungen oder Debug-Engines, die konfiguriert sind, zum Laden von in die *msvsmon.exe* Prozess.
+Bei Debugger-Erweiterungen, die com-Klassen in HKEY_CLASSES_ROOT registrieren, indem Regasm, regsvr32 oder direkt in die Registrierung geschrieben und in *msvsmon.exe* (der Remote Debugger) geladen werden, ist es jetzt möglich, diese Registrierung für msvsmon bereitzustellen, ohne in HKEY_CLASSES_ROOT schreiben zu müssen. Dies wirkt sich auf ältere .NET Debugger-Ausdrucksauswertungen oder debugengines aus, die für das Laden in den *msvsmon.exe* Prozess konfiguriert sind.
 
-## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
+## <a name="msvsmon-comclass-def"></a>msvsmon-ComClass-DEF
 
-Um dieses Verfahren verwenden, fügen einen  **.msvsmon-Comclass-def.json* Datei neben "msvsmon" (InstallDir:* \Common7\IDE\Remote Debugger\x64*).
+Um dieses Verfahren zu verwenden, fügen Sie *neben msvsmon (INSTALLDIR: *.msvsmon-comclass-def.json* * \common7\ide\remotedebugger\x64 *) einen.msvsmon-comclass-def.jsfür die Datei hinzu.
 
-Hier ist ein Beispiel für "msvsmon"-Comclass-Def-Datei, die verwaltet registriert, und eine native Klasse:
+Im folgenden finden Sie ein Beispiel für eine msvsmon-ComClass-DEF-Datei, die eine verwaltete und eine native Klasse registriert:
 
-FileName: *MyCompany.MyExample.msvsmon-comclass-def.json*
+Dateiname: *MyCompany.MyExample.msvsmon-comclass-def.js*
 
 ```json
 {

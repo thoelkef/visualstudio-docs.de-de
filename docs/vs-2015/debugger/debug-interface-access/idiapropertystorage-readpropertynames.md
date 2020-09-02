@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadPropertyNames | Microsoft-Dokumentation
+title: 'Idiapropertystorage:: Read PropertyNames | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f6d3ac520a396b5207767a3fec0913c801c287
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537354"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft entsprechende Zeichenfolgennamen für angegebenen Eigenschaftenbezeichner.  
+Ruft entsprechende Zeichen folgen Namen für angegebene Eigenschaften Bezeichner ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,19 +37,19 @@ HRESULT ReadPropertyNames (
   
 #### <a name="parameters"></a>Parameter  
  `cpropid`  
- [in] Anzahl der Eigenschafts-Ids in `rgpropid`.  
+ in Anzahl der Eigenschaften-IDs in `rgpropid` .  
   
  `rgpropid`  
- [in] Array von Eigenschaften-Ids für die Namen die abzurufenden (`PROPID` ist in WTypes.h als definiert eine `ULONG`).  
+ in Ein Array von Eigenschaften-IDs, für die die Namen abzurufen `PROPID` sind (wird in Wtypes. h als definiert `ULONG` ).  
   
  `rglpwstrName`  
- [in, out] Ein Array von Eigenschaftennamen für die angegebene Eigenschaft-Ids. Das Array müssen nicht vorab zugewiesen ist, um die angeforderte Anzahl der Namen von aufzunehmen und muss in der Lage, enthalten mindestens `cpropid``BSTR` Zeichenfolgen.  
+ [in, out] Array von Eigenschaften Namen für die angegebenen Eigenschaften-IDs. Das Array muss vorab zugeordnet werden, um die angeforderte Anzahl von Eigenschaftsnamen zu speichern, und es muss mindestens Zeichen folgen enthalten können `cpropid``BSTR` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die zurückgegebenen Eigenschaftennamen müssen freigegeben werden (durch Aufrufen der `SysFreeString` Funktion) Wenn sie nicht mehr benötigt.  
+## <a name="remarks"></a>Bemerkungen  
+ Die zurückgegebenen Eigenschaftsnamen müssen freigegeben werden (durch Aufrufen der- `SysFreeString` Funktion), wenn Sie nicht mehr benötigt werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
