@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von nativen DLLs | Microsoft-Dokumentation'
+title: 'Gewusst wie: Debuggen von nativen DLLs | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702682"
 ---
-# <a name="how-to-debug-native-dlls"></a>Vorgehensweise: Debuggen von systemeigenen DLLs
+# <a name="how-to-debug-native-dlls"></a>Gewusst wie: Debuggen von systemeigenen DLLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
@@ -40,7 +40,7 @@ ms.locfileid: "65702682"
   
 - Über das Projekt, das zum Erstellen der ausführbaren Datei verwendet wurde, durch die die DLL aufgerufen wird.  
   
-  \- oder –  
+  \- oder -  
   
 - Über das Projekt, durch das die DLL selbst erstellt wurde.  
   
@@ -50,18 +50,18 @@ ms.locfileid: "65702682"
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>So legen Sie eine ausführbare Datei für die Debugsitzung fest  
   
-1. In **Projektmappen-Explorer**, wählen Sie das Projekt, das die DLL erstellt.  
+1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus, das die dll erstellt.  
   
-2. Von der **Ansicht** Menü wählen**Eigenschaftenseiten**.  
+2. Wählen Sie im Menü **Ansicht** die Option**Eigenschaften Seiten**aus.  
   
-3. In der **Eigenschaftenseiten** öffnen Sie im Dialogfeld die **Konfigurationseigenschaften** Ordner, und wählen die **Debuggen** Kategorie.  
+3. Öffnen Sie im Dialogfeld Eigenschaften **Seiten** den Ordner **Konfigurations Eigenschaften** , und wählen Sie die Kategorie **Debuggen** aus.  
   
-4. In der **Befehl** geben den Pfadnamen für den Container. Beispielsweise C:\Programme\MeineAnwendung\MEINEANW.EXE.  
+4. Geben Sie im Feld **Befehl** den Pfadnamen für den Container an. Beispielsweise C:\Programme\MeineAnwendung\MEINEANW.EXE.  
   
-5. In der **Befehlsargumente** geben erforderlichen Argumente für die ausführbare Datei.  
+5. Geben Sie im Feld **Befehlsargumente** die erforderlichen Argumente für die ausführbare Datei an.  
   
-   Wenn Sie nicht die ausführbare Datei in angeben der _Projekt_**Eigenschaftenseiten** im Dialogfeld die [ausführbare für Dialogfeld "Sitzung" Debuggen](../debugger/executable-for-debugging-session-dialog-box.md) angezeigt wird, wenn Sie das Debuggen starten.  
+   Wenn Sie die ausführbare Datei nicht im Dialogfeld _Projekt_**Eigenschaften Seiten** angeben, wird das [Dialogfeld ausführbare Datei für Debugsitzung](../debugger/executable-for-debugging-session-dialog-box.md) angezeigt, wenn Sie mit dem Debuggen beginnen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: de59aac6bc40e58b6da9b71fd0cc81d432fe41bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670845"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Gewusst wie: Ausdrucken von Diagrammen in der Diagrammansicht und der Inhaltsmodellansicht
@@ -31,5 +31,5 @@ In diesem Thema wird beschrieben, wie ein Diagramm in der Diagramm- oder Inhalts
 
 3. Drucken Sie das gespeicherte Bild in der XPS-Datei mit einem XPS-Viewer aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Inhalts Modell Ansicht](../xml-tools/content-model-view.md) im [XML-Schema-Designer](../xml-tools/xml-schema-designer-workspace.md) in der [Diagramm Ansicht](../xml-tools/graph-view.md)

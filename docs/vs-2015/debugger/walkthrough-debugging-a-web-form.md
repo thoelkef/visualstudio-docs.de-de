@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Debuggen eines Web Forms | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Debuggen eines Webformulars | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704922"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Exemplarische Vorgehensweise: Debuggen eines Webformulars
@@ -50,13 +50,13 @@ Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zu
   
 3. Klicken Sie im Bereich **Vorlagen** auf **ASP.NET-Website**.  
   
-4. Auf der **Speicherort** Zeile, klicken Sie auf **HTTP** aus der Liste, und klicken Sie im Textfeld geben **http://localhost/WebSite**.  
+4. Klicken Sie in der Liste in der Zeile **Speicherort** auf die Option **HTTP**, und geben Sie **http://localhost/WebSite** in das Textfeld ein.  
   
 5. Klicken Sie in der Liste **Sprache** auf **Visual C#** oder **Visual Basic**.  
   
 6. Klicken Sie auf **OK**.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt ein neues Projekt und zeigt den standardmäßigen HTML-Quellcode an. Außerdem wird unter der **Standardwebsite** von IIS ein neues virtuelles Verzeichnis mit dem Namen **WebSite** erstellt.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt ein neues Projekt und zeigt den HTML-Standardquellcode an. Außerdem wird unter der **Standardwebsite** von IIS ein neues virtuelles Verzeichnis mit dem Namen **WebSite** erstellt.  
   
 7. Klicken Sie am unteren Rand auf die Registerkarte **Entwurf**.  
   
@@ -70,7 +70,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zu
   
 11. Doppelklicken Sie auf das abgelegte Button-Steuerelement.  
   
-     Dadurch gelangen Sie zur Codepage: Default.aspx.cs bei C# oder Default.aspx.vb bei [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Der Cursor sollte sich in der `Button1_Click`-Funktion befinden.  
+     Dadurch gelangen Sie auf die Codepage: „Default.aspx.cs“ für C# oder „default.aspx.vb“ für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Der Cursor sollte sich in der `Button1_Click`-Funktion befinden.  
   
 12. Fügen Sie folgenden Code in die `Button1_Click`-Funktion ein:  
   
@@ -160,7 +160,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zu
   
      Das Web Form wird in Internet Explorer gestartet, der Debugger ist jedoch nicht angehängt.  
   
-4. Fügen Sie den Debugger an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Prozess an. Weitere Informationen finden Sie unter [bereitgestellte Web-Anwendungen Debuggen](../debugger/debugging-deployed-web-applications.md).  
+4. Fügen Sie den Debugger an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Prozess an. Weitere Informationen finden Sie unter [Debuggen von bereitgestellten Webanwendungen](../debugger/debugging-deployed-web-applications.md).  
   
 5. Klicken Sie im Internet Explorer auf die Schaltfläche im Formular.  
   
@@ -168,5 +168,5 @@ Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zu
   
 6. Wenn der Debugvorgang abgeschlossen ist, klicken Sie im Menü **Debuggen** auf **Debuggen beenden**.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)

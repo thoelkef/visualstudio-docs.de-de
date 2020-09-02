@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e1669affa89c91ca3ae1958c22ff3ec4d56bb8c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670956"
 ---
 # <a name="editing-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
@@ -24,7 +24,7 @@ Mit dem XML-Editor können auch XSLT-Stylesheets bearbeitet werden. Sie können 
 ## <a name="xslt-features"></a>XSLT-Funktionen
  In der folgenden Tabelle werden die für die Arbeit mit XSLT-Stylesheets spezifischen Features beschrieben.
 
- **Syntax Farbgebung** XSLT-Schlüsselwörter (z. b. `template`, `match` usw.) werden in der XSLT-Schlüsselwort Farbe angezeigt, die in den Einstellungen für **Schriftarten und Farben** angegeben ist.
+ **Syntax Farbgebung** XSLT-Schlüsselwörter, wie z. b. `template` , `match` usw., werden in der XSLT-Schlüsselwort Farbe angezeigt, die in den Einstellungen für **Schriftarten und Farben** angegeben ist.
 
  **Wellenförmige Unterstreichungen** Der XML-Editor verwendet die installierte XSLT. xsd-Datei, um XSLT-Stylesheets zu validieren. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Der XML-Editor kompiliert auch das Stylesheet im Hintergrund und meldet Compilerfehler oder -warnungen mit entsprechenden wellenförmigen Unterstreichungen.
 
@@ -34,5 +34,5 @@ Mit dem XML-Editor können auch XSLT-Stylesheets bearbeitet werden. Sie können 
 
  **XSLT Debuggen** Sie können den XSLT-Debugger über eine XSLT-Datei im XML-Editor starten. Der Debugger unterstützt das Festlegen von Haltepunkten in der XSLT-Datei, das Anzeigen des Ausführungszustands und weitere Vorgänge. Wenn auf eine XSLT-Variable gezeigt wird, wird eine QuickInfo mit dem Variablenwert angezeigt. Mit dem Debugger kann ein Stylesheet oder eine aus einer anderen Anwendung aufgerufene, kompilierte XSL-Transformation debuggt werden. Weitere Informationen finden Sie unter [Debuggen von XSLT](../xml-tools/debugging-xslt.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Editor](../xml-tools/xml-editor.md)

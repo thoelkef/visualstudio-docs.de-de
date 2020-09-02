@@ -1,5 +1,5 @@
 ---
-title: SccGetVersion-Funktion | Microsoft Docs
+title: Sccgetversion-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a563a7d1d65dc4c6564abd4e337242eea1aa9924
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700679"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion-Funktion
-Diese Funktion ruft die Versionsnummer der Quellcodeverwaltungs-Plug-In-API ab, die vom Quellcodeverwaltungs-Plug-In unterstützt wird.
+Diese Funktion Ruft die Versionsnummer der Quellcodeverwaltungs-Plug-in-API ab, die vom Quellcodeverwaltungs-Plug-in unterstützt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,7 +32,7 @@ LONG SccGetVersion(void);
  Keine.
 
 ## <a name="return-value"></a>Rückgabewert
- Ein `LONG` Datentyp, der die Versionsnummer der unterstützten Quellcodeverwaltungs-Plug-In-API enthält:
+ Ein `LONG` Datentyp, der die Versionsnummer der unterstützten Quellcodeverwaltungs-Plug-in-API enthält:
 
 |WORD|BESCHREIBUNG|
 |----------|-----------------|
@@ -40,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|Nebenversion|
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn z. B. ein Quellcodeverwaltungs-Plug-In Version 1.3 der Quellcodeverwaltungs-Plug-In-API unterstützt, würde diese Funktion 0x0103 zurückgeben.
+ Wenn ein Quellcodeverwaltungs-Plug-in z. b. Version 1,3 der Quellcodeverwaltungs-Plug-in-API unterstützt, würde diese Funktion 0x0103 zurückgeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo | Microsoft-Dokumentation
+title: 'IDebugThread2:: enumframeinfo | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: efda31daae198befbda35803ef71e1d0322e9bbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153083"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft eine Liste der Stapelrahmen für diesen Thread.  
+Ruft eine Liste der Stapel Rahmen für diesen Thread ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,21 +44,21 @@ int EnumFrameInfo ( 
   
 #### <a name="parameters"></a>Parameter  
  `dwFieldSpec`  
- [in] Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder von der [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen sind ausgefüllt werden müssen. Geben Sie die `FIF_FUNCNAME_FORMAT` Flag, um den Namen der Funktion in einer einzelnen Zeichenfolge formatieren.  
+ in Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, die angibt, welche Felder der [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen ausgefüllt werden sollen. Geben `FIF_FUNCNAME_FORMAT` Sie das Flag an, um den Funktionsnamen in einer einzelnen Zeichenfolge zu formatieren.  
   
  `nRadix`  
- [in] Die Basis, die in die numerische Formatierungsinformationen im Enumerator verwendet.  
+ in Der zum Formatieren von numerischen Informationen im Enumerator verwendete Radix.  
   
  `ppEnum`  
- [out] Gibt eine [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Objekt, das eine Liste der enthält [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen, die den Stapelrahmen beschreibt.  
+ vorgenommen Gibt ein [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Objekt zurück, das eine Liste der [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen enthält, die den Stapel Rahmen beschreiben.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Des Threads Frames werden mit den aktuellen Frame zuerst aufgelistet und der ältesten Rahmen zuletzt aufgelistet in der Reihenfolge aufgelistet.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Rahmen des Threads werden in der Reihenfolge aufgelistet, wobei der aktuelle Frame zuerst aufgezählt und der älteste enumerationsframe zuletzt aufgeführt wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   

@@ -10,24 +10,24 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278442"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Microsoft-Quell Code Anmerkung (Source-Code Anmerkung Language, SAL) stellt eine Reihe von Anmerkungen bereit, mit denen Sie beschreiben können, wie eine Funktion Ihre Parameter verwendet, die Annahmen, die Sie für Sie vornimmt, und die Garantien, die Sie nach dem Abschluss trifft. Die Anmerkungen werden in der Header Datei `<sal.h>`definiert. Die Visual Studio-Code C++ Analyse für verwendet SAL-Anmerkungen, um die Analyse von Funktionen zu ändern. Weitere Informationen zu SAL 2,0 für die Windows-Treiberentwicklung finden Sie unter [SAL 2,0-Anmerkungen für Windows-Treiber](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
+Die Microsoft-Quell Code Anmerkung (Source-Code Anmerkung Language, SAL) stellt eine Reihe von Anmerkungen bereit, mit denen Sie beschreiben können, wie eine Funktion Ihre Parameter verwendet, die Annahmen, die Sie für Sie vornimmt, und die Garantien, die Sie nach dem Abschluss trifft. Die Anmerkungen sind in der Header Datei definiert `<sal.h>` . Die Visual Studio-Code Analyse für C++ verwendet SAL-Anmerkungen, um die Analyse von Funktionen zu ändern. Weitere Informationen zu SAL 2,0 für die Windows-Treiberentwicklung finden Sie unter [SAL 2,0-Anmerkungen für Windows-Treiber](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
   
- Nativ, C und C++ bieten nur eingeschränkte Möglichkeiten für Entwickler, Absicht und Invarianz konsistent auszudrücken. Mithilfe von Sal-Anmerkungen können Sie Ihre Funktionen ausführlicher beschreiben, damit Entwickler, die Sie nutzen, besser verstehen können, wie Sie verwendet werden.  
+ C und C++ bieten Entwicklern nur eingeschränkte Möglichkeiten, Absicht und Invarianz konsistent auszudrücken. Mithilfe von Sal-Anmerkungen können Sie Ihre Funktionen ausführlicher beschreiben, damit Entwickler, die Sie nutzen, besser verstehen können, wie Sie verwendet werden.  
   
 ## <a name="what-is-sal-and-why-should-you-use-it"></a>Was ist SAL und warum sollten Sie es verwenden?  
  Einfach ausgedrückt ist SAL eine kostengünstige Möglichkeit, um dem Compiler das Überprüfen des Codes für Sie zu ermöglichen.  
   
 ### <a name="sal-makes-code-more-valuable"></a>SAL steigert den Wert des Codes  
- SAL kann Ihnen helfen, den Code Entwurf verständlicher zu machen, sowohl für Benutzer als auch für Code Analysetools. Sehen Sie sich dieses Beispiel an, das die C-Lauf Zeitfunktion `memcpy`zeigt  
+ SAL kann Ihnen helfen, den Code Entwurf verständlicher zu machen, sowohl für Benutzer als auch für Code Analysetools. Beachten Sie dieses Beispiel, das die C-Lauf Zeitfunktion veranschaulicht `memcpy` :  
   
 ```cpp  
   
@@ -39,7 +39,7 @@ void * memcpy(
   
 ```  
   
- Können Sie wissen, was diese Funktion macht? Wenn eine Funktion implementiert oder aufgerufen wird, müssen bestimmte Eigenschaften beibehalten werden, um die Richtigkeit des Programms sicherzustellen. Wenn Sie sich einfach eine Deklaration ansehen, z. b. die im Beispiel, wissen Sie nicht, was Sie sind. Ohne SAL-Anmerkungen müssten Sie sich auf Dokumentation oder Code Kommentare verlassen. In der MSDN-Dokumentation für `memcpy` wird Folgendes angegeben:  
+ Können Sie wissen, was diese Funktion macht? Wenn eine Funktion implementiert oder aufgerufen wird, müssen bestimmte Eigenschaften beibehalten werden, um die Richtigkeit des Programms sicherzustellen. Wenn Sie sich einfach eine Deklaration ansehen, z. b. die im Beispiel, wissen Sie nicht, was Sie sind. Ohne SAL-Anmerkungen müssten Sie sich auf Dokumentation oder Code Kommentare verlassen. In der MSDN-Dokumentation finden Sie Folgendes `memcpy` :  
   
 > "Kopiert Anzahl Bytes von src in dest. Wenn sich Quelle und Ziel überlappen, ist das Verhalten von memcpy nicht definiert. Verwenden Sie memmove zum Verarbeiten überlappenden Bereiche.   
 > **Sicherheitshinweis:** Stellen Sie sicher, dass der Ziel Puffer dieselbe Größe oder größer als der Quell Puffer ist. Weitere Informationen finden Sie unter Vermeiden von Pufferüberläufen.  
@@ -50,7 +50,7 @@ void * memcpy(
   
 - Der Ziel Puffer muss mindestens so groß sein wie der Quell Puffer.  
   
-  Der Compiler kann die Dokumentation oder informelle Kommentare jedoch nicht lesen. Es ist nicht bekannt, dass zwischen den beiden Puffern und `count`eine Beziehung besteht, und es ist auch nicht möglich, eine Beziehung zu erraten. SAL könnte mehr Klarheit über die Eigenschaften und die Implementierung der Funktion bieten, wie hier gezeigt:  
+  Der Compiler kann die Dokumentation oder informelle Kommentare jedoch nicht lesen. Es ist nicht bekannt, dass es eine Beziehung zwischen den beiden Puffern und gibt `count` , und es ist auch nicht möglich, eine Beziehung zu erraten. SAL könnte mehr Klarheit über die Eigenschaften und die Implementierung der Funktion bieten, wie hier gezeigt:  
   
 ```cpp  
   
@@ -61,7 +61,7 @@ void * memcpy(
 );  
 ```  
   
- Beachten Sie, dass diese Anmerkungen den Informationen in der MSDN-Dokumentation ähneln, aber präziser sind und einem semantischen Muster folgen. Wenn Sie diesen Code lesen, können Sie sich schnell mit den Eigenschaften dieser Funktion vertraut machen und verhindern, dass Sicherheitsprobleme mit Pufferüberlauf vermieden werden. Noch besser ist, dass die von Sal bereitgestellten Semantik Muster die Effizienz und Effektivität automatisierter Code Analysetools bei der frühen Ermittlung potenzieller Fehler verbessern können. Stellen Sie sich vor, dass jemand diese fehlerhafte Implementierung von `wmemcpy`schreibt:  
+ Beachten Sie, dass diese Anmerkungen den Informationen in der MSDN-Dokumentation ähneln, aber präziser sind und einem semantischen Muster folgen. Wenn Sie diesen Code lesen, können Sie sich schnell mit den Eigenschaften dieser Funktion vertraut machen und verhindern, dass Sicherheitsprobleme mit Pufferüberlauf vermieden werden. Noch besser ist, dass die von Sal bereitgestellten Semantik Muster die Effizienz und Effektivität automatisierter Code Analysetools bei der frühen Ermittlung potenzieller Fehler verbessern können. Stellen Sie sich vor, dass jemand diese fehlerhafte Implementierung von schreibt `wmemcpy` :  
   
 ```cpp  
   
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Grundlagen von SAL  
  SAL definiert vier grundlegende Arten von Parametern, die nach Verwendungs Mustern kategorisiert werden.  
   
-|Kategorie|Parameter Anmerkung|Beschreibung|  
+|Category|Parameter Anmerkung|Beschreibung|  
 |--------------|--------------------------|-----------------|  
 |**Eingabe in aufgerufene Funktion**|`_In_`|Daten werden an die aufgerufene Funktion weitergegeben und als schreibgeschützt behandelt.|  
 |**Eingabe in aufgerufene Funktion und Ausgabe an Aufrufer**|`_Inout_`|Verwendbare Daten werden an die Funktion geleitet und potenziell geändert.|  
@@ -108,21 +108,21 @@ wchar_t * wmemcpy(
  Dieser Abschnitt enthält Codebeispiele für die grundlegenden SAL-Anmerkungen.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio-Codeanalysetools  
- In den Beispielen wird das Visual Studio Code Analysetool in Verbindung mit SAL-Anmerkungen verwendet, um Code Fehler zu finden. Gehen Sie dazu wie folgt vor.  
+ In den Beispielen wird das Visual Studio Code Analysetool in Verbindung mit SAL-Anmerkungen verwendet, um Code Fehler zu finden. Hierzu gehst du wie folgt vor.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL  
   
-1. Öffnen Sie in Visual Studio ein C++ Projekt, das SAL-Anmerkungen enthält.  
+1. Öffnen Sie in Visual Studio ein C++-Projekt, das SAL-Anmerkungen enthält.  
   
 2. Wählen Sie in der Menüleiste die Option **Erstellen**und dann **Code Analyse für Projekt Mappe ausführen aus**.  
   
-    Beachten Sie die \_in\_ Beispiel in diesem Abschnitt. Wenn Sie eine Code Analyse ausführen, wird diese Warnung angezeigt:  
+    Sehen Sie sich das \_ \_ Beispiel in diesem Abschnitt an. Wenn Sie eine Code Analyse ausführen, wird diese Warnung angezeigt:  
   
    > **C6387 Ungültiger Parameter Wert**   
    > "Pint" kann "0" sein: Dies entspricht nicht der Spezifikation für die Funktion "incallee".  
   
-### <a name="example-the-_in_-annotation"></a>Beispiel: der \_in\_ Anmerkung  
- Die `_In_` Anmerkung zeigt Folgendes an:  
+### <a name="example-the-_in_-annotation"></a>Beispiel: die \_ in- \_ Anmerkung  
+ Die- `_In_` Anmerkung zeigt Folgendes an:  
   
 - Der-Parameter muss gültig sein und wird nicht geändert.  
   
@@ -130,7 +130,7 @@ wchar_t * wmemcpy(
   
 - Der Aufrufer muss den Puffer bereitstellen und ihn initialisieren.  
   
-- `_In_` gibt "schreibgeschützt" an. Ein häufiger Fehler ist das Anwenden von `_In_` auf einen Parameter, der stattdessen die `_Inout_` Anmerkung enthalten soll.  
+- `_In_` gibt "schreibgeschützt" an. Ein häufiger Fehler ist die Anwendung `_In_` auf einen Parameter, der stattdessen die Anmerkung enthalten sollte `_Inout_` .  
   
 - `_In_` ist zulässig, wird aber vom Analyzer für nicht-Zeiger-skalare ignoriert.  
   
@@ -157,10 +157,10 @@ void BadInCaller()
   
 ```  
   
- Wenn Sie in diesem Beispiel Visual Studio Code Analyse verwenden, wird überprüft, ob die Aufrufer einen nicht-NULL-Zeiger auf einen initialisierten Puffer für `pInt`übergeben. In diesem Fall kann `pInt` Zeiger nicht NULL sein.  
+ Wenn Sie in diesem Beispiel Visual Studio Code Analyse verwenden, wird überprüft, ob die Aufrufer einen nicht-NULL-Zeiger an einen initialisierten Puffer für übergeben `pInt` . In diesem Fall `pInt` kann der Zeiger nicht NULL sein.  
   
-### <a name="example-the-_in_opt_-annotation"></a>Beispiel: die \_In_opt\_ Anmerkung  
- `_In_opt_` ist identisch mit `_In_`, mit dem Unterschied, dass der Eingabeparameter NULL sein darf und die Funktion daher diese überprüfen sollte.  
+### <a name="example-the-_in_opt_-annotation"></a>Beispiel: die \_ In_opt \_ Anmerkung  
+ `_In_opt_` ist identisch `_In_` mit, mit der Ausnahme, dass der Input-Parameter NULL sein darf und daher die-Funktion diese überprüfen sollte.  
   
 ```cpp  
   
@@ -187,7 +187,7 @@ void InOptCaller()
   
  Visual Studio Code Analyse überprüft, ob die Funktion auf NULL überprüft, bevor Sie auf den Puffer zugreift.  
   
-### <a name="example-the-_out_-annotation"></a>Beispiel: die \_out-\_ Anmerkung  
+### <a name="example-the-_out_-annotation"></a>Beispiel: die \_ out- \_ Anmerkung  
  `_Out_` unterstützt ein häufiges Szenario, in dem ein nicht-NULL-Zeiger, der auf einen Element Puffer zeigt, übermittelt wird und die Funktion das Element initialisiert. Der Aufrufer muss den Puffer vor dem Aufruf nicht initialisieren. die aufgerufene Funktion verspricht, Sie zu initialisieren, bevor Sie zurückkehrt.  
   
 ```cpp  
@@ -212,10 +212,10 @@ void OutCaller()
   
 ```  
   
- Visual Studio Code Analyse Tool überprüft, ob der Aufrufer einen nicht-NULL-Zeiger an einen Puffer für `pInt` übergibt und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
+ Visual Studio Code Analyse Tool überprüft, ob der Aufrufer einen nicht-NULL-Zeiger an einen Puffer für übergibt `pInt` und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
   
-### <a name="example-the-_out_opt_-annotation"></a>Beispiel: die \_Out_opt\_ Anmerkung  
- `_Out_opt_` ist mit `_Out_`identisch, mit dem Unterschied, dass der-Parameter NULL sein darf und daher die-Funktion diese überprüfen sollte.  
+### <a name="example-the-_out_opt_-annotation"></a>Beispiel: die \_ Out_opt \_ Anmerkung  
+ `_Out_opt_` ist identisch `_Out_` mit, mit der Ausnahme, dass der-Parameter NULL sein darf und daher die-Funktion diese überprüfen soll.  
   
 ```cpp  
   
@@ -240,13 +240,13 @@ void OutOptCaller()
   
 ```  
   
- Visual Studio Code Analyse überprüft, ob diese Funktion nach NULL sucht, bevor `pInt` dereferenziert wird, und wenn `pInt` nicht NULL ist, wird der Puffer von der Funktion initialisiert, bevor er zurückgegeben wird.  
+ Visual Studio Code Analyse überprüft, ob diese Funktion vor der `pInt` Dereferenzierung auf NULL überprüft, und wenn `pInt` nicht NULL ist, dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
   
-### <a name="example-the-_inout_-annotation"></a>Beispiel: die \_INOUT-\_ Anmerkung  
+### <a name="example-the-_inout_-annotation"></a>Beispiel: die \_ INOUT- \_ Anmerkung  
  `_Inout_` wird verwendet, um einen Zeiger Parameter zu kommentieren, der von der Funktion geändert werden kann. Der Zeiger muss vor dem-Befehl auf gültige initialisierte Daten verweisen, und auch wenn er sich ändert, muss er bei der Rückgabe weiterhin über einen gültigen Wert verfügen. Die-Anmerkung gibt an, dass die Funktion aus dem Puffer mit einem einzelnen Element frei lesen und in diesen schreiben kann. Der Aufrufer muss den Puffer bereitstellen und ihn initialisieren.  
   
 > [!NOTE]
-> Wie `_Out_`müssen `_Inout_` auf einen änderbaren Wert angewendet werden.  
+> Ebenso `_Out_` wie `_Inout_` muss auf einen änderbaren Wert angewendet werden.  
   
 ```cpp  
   
@@ -272,10 +272,10 @@ void BadInOutCaller()
   
 ```  
   
- Visual Studio Code Analyse überprüft, ob Aufrufer einen nicht-NULL-Zeiger an einen initialisierten Puffer für `pInt`übergeben, und dass `pInt` vor der Rückgabe noch nicht NULL ist und der Puffer initialisiert wird.  
+ Visual Studio Code Analyse überprüft, ob Aufrufer einen nicht-NULL-Zeiger an einen initialisierten Puffer für übergeben `pInt` , und dass vor `pInt` der Rückgabe von noch nicht NULL ist und der Puffer initialisiert wird.  
   
-### <a name="example-the-_inout_opt_-annotation"></a>Beispiel: die \_Inout_opt\_ Anmerkung  
- `_Inout_opt_` ist identisch mit `_Inout_`, mit dem Unterschied, dass der Eingabeparameter NULL sein darf und die Funktion daher diese überprüfen sollte.  
+### <a name="example-the-_inout_opt_-annotation"></a>Beispiel: die \_ Inout_opt \_ Anmerkung  
+ `_Inout_opt_` ist identisch `_Inout_` mit, mit der Ausnahme, dass der Input-Parameter NULL sein darf und daher die-Funktion diese überprüfen sollte.  
   
 ```cpp  
   
@@ -302,9 +302,9 @@ void InOutOptCaller()
   
 ```  
   
- Visual Studio Code Analyse überprüft, ob diese Funktion auf NULL überprüft, bevor Sie auf den Puffer zugreift, und wenn `pInt` nicht NULL ist, wird der Puffer von der Funktion initialisiert, bevor er zurückgegeben wird.  
+ Visual Studio Code Analyse überprüft, ob diese Funktion auf NULL überprüft, bevor Sie auf den Puffer zugreift, und wenn `pInt` nicht NULL ist, dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
   
-### <a name="example-the-_outptr_-annotation"></a>Beispiel: die \_outptr-\_ Anmerkung  
+### <a name="example-the-_outptr_-annotation"></a>Beispiel: die \_ outptr \_ -Anmerkung  
  `_Outptr_` wird verwendet, um einen Parameter zu kommentieren, der einen Zeiger zurückgeben soll.  Der Parameter selbst darf nicht NULL sein, und die aufgerufene Funktion gibt einen nicht-NULL-Zeiger darin zurück, und der Zeiger verweist auf initialisierte Daten.  
   
 ```cpp  
@@ -333,10 +333,10 @@ void OutPtrCaller()
   
 ```  
   
- Visual Studio Code Analyse überprüft, ob der Aufrufer einen nicht-NULL-Zeiger für `*pInt`übergibt, und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
+ Visual Studio Code Analyse überprüft, ob der Aufrufer einen nicht-NULL-Zeiger für übergibt `*pInt` , und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
   
-### <a name="example-the-_outptr_opt_-annotation"></a>Beispiel: die \_Outptr_opt\_ Anmerkung  
- `_Outptr_opt_` ist identisch mit `_Outptr_`, mit dem Unterschied, dass der Parameter optional ist – der Aufrufer kann einen NULL-Zeiger für den-Parameter übergeben.  
+### <a name="example-the-_outptr_opt_-annotation"></a>Beispiel: die \_ Outptr_opt \_ Anmerkung  
+ `_Outptr_opt_` ist identisch `_Outptr_` mit, mit der Ausnahme, dass der Parameter optional ist – der Aufrufer kann einen NULL-Zeiger für den-Parameter übergeben.  
   
 ```cpp  
   
@@ -366,10 +366,10 @@ void OutPtrOptCaller()
   
 ```  
   
- Visual Studio Code Analyse überprüft, ob diese Funktion nach NULL sucht, bevor `*pInt` dereferenziert wird, und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
+ Visual Studio Code Analyse überprüft, ob diese Funktion vor der `*pInt` Dereferenzierung auf NULL überprüft und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
   
-### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Beispiel: der \_Erfolg\_ Anmerkung in Kombination mit \_out\_  
- Anmerkungen können auf die meisten-Objekte angewendet werden.  Vor allem können Sie eine ganze Funktion mit Anmerkungen versehen.  Eine der offensichtlichsten Merkmale einer Funktion besteht darin, dass Sie erfolgreich ausgeführt werden kann oder fehlschlägt. Aber wie bei der Zuordnung zwischen einem Puffer und seiner Größe kann CC++ /die Funktion Erfolg oder Fehler nicht ausdrücken. Mit der `_Success_`-Anmerkung können Sie angeben, wie erfolgreich eine Funktion aussieht.  Der Parameter für die `_Success_` Anmerkung ist nur ein Ausdruck, der angibt, dass die Funktion erfolgreich war, wenn Sie true ist. Der Ausdruck kann alles sein, was der Anmerkung-Parser behandeln kann. Die Auswirkungen der Anmerkungen, die nach der Rückgabe der Funktion auftreten, sind nur anwendbar, wenn die Funktion erfolgreich ausgeführt wird. Dieses Beispiel zeigt, wie `_Success_` mit `_Out_` interagiert, um das richtige zu tun. Sie können das Schlüsselwort `return` verwenden, um den Rückgabewert darzustellen.  
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Beispiel: die \_ Erfolgs \_ Anmerkung in Kombination mit " \_ out"\_  
+ Anmerkungen können auf die meisten-Objekte angewendet werden.  Vor allem können Sie eine ganze Funktion mit Anmerkungen versehen.  Eine der offensichtlichsten Merkmale einer Funktion besteht darin, dass Sie erfolgreich ausgeführt werden kann oder fehlschlägt. Wie bei der Zuordnung zwischen einem Puffer und seiner Größe kann C/C++ die Funktion jedoch nicht als Erfolg oder Fehler Ausdrücken. Mithilfe der-Anmerkung `_Success_` können Sie angeben, wie erfolgreich eine Funktion aussieht.  Der Parameter für die `_Success_` Anmerkung ist nur ein Ausdruck, der angibt, dass die Funktion erfolgreich war, wenn Sie true ist. Der Ausdruck kann alles sein, was der Anmerkung-Parser behandeln kann. Die Auswirkungen der Anmerkungen, die nach der Rückgabe der Funktion auftreten, sind nur anwendbar, wenn die Funktion erfolgreich ausgeführt wird. Dieses Beispiel zeigt `_Success_` , wie mit mit interagiert `_Out_` , um das richtige zu tun. Sie können das Schlüsselwort verwenden `return` , um den Rückgabewert darzustellen.  
   
 ```cpp  
   
@@ -386,7 +386,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   
 ```  
   
- Die `_Out_`-Anmerkung bewirkt, dass Visual Studio Code Analyse überprüft, ob der Aufrufer einen nicht-NULL-Zeiger an einen Puffer für `pInt`übergibt, und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
+ Die-Anmerkung `_Out_` bewirkt, dass Visual Studio Code Analyse überprüft, ob der Aufrufer einen nicht-NULL-Zeiger an einen Puffer für übergibt `pInt` , und dass der Puffer von der Funktion initialisiert wird, bevor er zurückgegeben wird.  
   
 ## <a name="sal-best-practice"></a>Bewährte Methoden für SAL  
   
@@ -412,10 +412,10 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Blog des Code Analyseteams](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- Hinzufügen von [Anmerkungen zu Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)   
- Hinzufügen einer [Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   
- Hinzufügen einer [Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)   
- Hinzufügen einer [Anmerkung zum Sperr Verhalten](../code-quality/annotating-locking-behavior.md)   
- [Angeben, wann und wo eine Anmerkung angewendet](../code-quality/specifying-when-and-where-an-annotation-applies.md) wird   
+ [Verwenden von Sal-Anmerkungen zum Reduzieren von C/C++-Code Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Kommentieren von Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   
+ [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)   
+ [Hinzufügen einer Anmerkung zum Sperr Verhalten](../code-quality/annotating-locking-behavior.md)   
+ [Angeben, wann und wo eine Anmerkung angewendet wird](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)

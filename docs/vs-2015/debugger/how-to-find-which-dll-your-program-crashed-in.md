@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Feststellen, welche DLL Absturz des Programms | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Feststellen, in welcher DLL das Programm abstürzt | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,13 +27,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44ebe042ff6e2507530e4be410e768550e922b44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703629"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Vorgehensweise: Feststellen Sie, welche DLL Absturz des Programms
+# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Gewusst wie: Feststellen, welche DLL zum Absturz des Programms geführt hat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
@@ -55,6 +55,6 @@ HINWEIS]
   
 6. Namen und Pfad der DLL finden Sie in der Spalte **Name** bzw. **Pfad**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Debuggen von systemeigenen DLLs](../debugger/how-to-debug-native-dlls.md)   
- [Vorgehensweise: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Debuggen von nativen DLLs](../debugger/how-to-debug-native-dlls.md)   
+ [How to: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md)

@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152737"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger-Methode
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Array aller geplanten Aufgaben.  
+Ruft ein Array aller geplanten Tasks ab.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ Ruft ein Array aller geplanten Aufgaben.
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Ein Array aller geplanten Aufgaben. Jede Aufgabe wird ausgeführt oder Ausführung abgeschlossen hat.  
+ Ein Array aller geplanten Tasks. Jede Aufgabe wird ausgeführt oder die Ausführung ist abgeschlossen.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode ist nicht threadsicher und sollte nicht verwendet werden, gleichzeitig mit anderen Instanzen der <xref:System.Threading.Tasks.TaskScheduler> sollte aufgerufen werden von einem Debugger nur, wenn der Debugger alle anderen Threads angehalten hat.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode ist nicht Thread sicher und sollte nicht gleichzeitig mit anderen Instanzen von verwendet werden, <xref:System.Threading.Tasks.TaskScheduler> Wenn Sie nur von einem Debugger aufgerufen werden soll, wenn der Debugger alle anderen Threads angehalten hat.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [TaskScheduler-Klasse](../../extensibility/debugger/taskscheduler-class-internal-members.md)

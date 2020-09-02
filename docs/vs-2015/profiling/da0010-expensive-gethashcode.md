@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af234cd130d06c2a76c5ddbc958a67eb064d9128
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547575"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Speicherintensive GetHashCode-Funktionen
@@ -29,9 +29,9 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0010: teure GetHa
 |Element|Wert|  
 |-|-|  
 |Regel-ID|DA0010|  
-|Category|.NET Framework-Verwendung|  
-|Profilerstellungsmethoden|Stichproben<br /><br /> .NET-Arbeitsspeicher|  
-|`Message`|GetHashCode-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der Hashcodefunktionen.|  
+|Kategorie|.NET Framework-Verwendung|  
+|Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|  
+|Meldung|GetHashCode-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der Hashcodefunktionen.|  
 |Nachrichtentyp|Warnung|  
   
 ## <a name="cause"></a>Ursache  

@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703694"
 ---
 # <a name="uidmanager-task"></a>UidManager-Aufgabe
@@ -37,7 +37,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisie
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`IntermediateDirectory`|Optionaler **String**-Parameter.<br /><br /> Gibt das Verzeichnis an, das zur Sicherung der Quell-[!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien verwendet wird, die vom **MarkupFiles**-Parameter angegeben werden.|  
-|`MarkupFiles`|Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt die Quell-[!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien an, die für UID-Überprüfung, -Aktualisierung oder -Entfernung einbezogen werden.|  
+|`MarkupFiles`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt die Quell-[!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien an, die für UID-Überprüfung, -Aktualisierung oder -Entfernung einbezogen werden.|  
 |`Task`|Erforderlicher **String**-Parameter.<br /><br /> Gibt die UID-Verwaltungsaufgabe an, die Sie ausführen möchten. Gültige Optionen sind **Check**, **Update** oder **Remove**.|  
   
 ## <a name="example"></a>Beispiel  
@@ -57,10 +57,10 @@ Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisie
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Erstellen einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Vorgehensweise: Lokalisieren einer Anwendung](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [Aufgaben Referenz](../msbuild/wpf-msbuild-task-reference.md)   
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)   
+ [Entwickeln einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Gewusst wie: Lokalisieren einer Anwendung](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

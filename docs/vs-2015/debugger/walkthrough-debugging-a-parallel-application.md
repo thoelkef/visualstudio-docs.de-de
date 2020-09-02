@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Debuggen einer Parallelanwendung | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,16 +23,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705233"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwendung mithilfe der Fenster **Parallele Aufgaben** und **Parallele Stapel** erläutert. Diese Fenster unterstützen Sie besser verstehen und prüfen das Laufzeitverhalten von Code, verwendet der [Task Parallel Library (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) oder [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Diese exemplarische Vorgehensweise bietet Beispielcode mit integrierten Haltepunkte. Es wird erläutert, wie der Code nach Unterbrechung der Ausführung mithilfe der Fenster **Parallele Aufgaben** und **Parallele Stapel** untersucht wird.  
+In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwendung mithilfe der Fenster **Parallele Aufgaben** und **Parallele Stapel** erläutert. Diese Fenster helfen Ihnen, das Laufzeitverhalten von Code zu verstehen und zu überprüfen, der die [Task Parallel Library (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) oder die [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)verwendet. Diese exemplarische Vorgehensweise bietet Beispielcode mit integrierten Haltepunkte. Es wird erläutert, wie der Code nach Unterbrechung der Ausführung mithilfe der Fenster **Parallele Aufgaben** und **Parallele Stapel** untersucht wird.  
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben erklärt:  
   
@@ -46,8 +46,8 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 - Skalieren der Fenster durch Gruppieren, Vergrößern/Verkleinern und sonstigen entsprechenden Funktionen.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
- In dieser exemplarischen Vorgehensweise wird vorausgesetzt, dass **nur mein Code** aktiviert ist. Klicken Sie im Menü **Extras** auf **Optionen**, und erweitern Sie den Knoten **Debuggen**. Wählen Sie **Allgemein** aus, und wählen Sie dann **Nur eigenen Code aktivieren (nur verwaltet)** aus. Wenn Sie diese Funktion nicht festlegen, können Sie die vorliegende exemplarische Vorgehensweise zwar verwenden, Ihre Ergebnisse weichen jedoch möglicherweise von den Abbildungen ab.  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Diese exemplarische Vorgehensweise setzt voraus, dass **nur eigenen Code** aktiviert ist. Klicken Sie im Menü **Extras** auf **Optionen**, und erweitern Sie den Knoten **Debuggen**. Wählen Sie **Allgemein** aus, und wählen Sie dann **Nur eigenen Code aktivieren (nur verwaltet)** aus. Wenn Sie diese Funktion nicht festlegen, können Sie die vorliegende exemplarische Vorgehensweise zwar verwenden, Ihre Ergebnisse weichen jedoch möglicherweise von den Abbildungen ab.  
   
 ## <a name="c-sample"></a>C#-Beispiel  
  Wenn Sie das C#-Beispiel verwenden, wird in dieser exemplarischen Vorgehensweise auch davon ausgegangen, dass externer Code ausgeblendet ist. Klicken Sie mit der rechten Maustaste im Fenster **Aufrufliste** auf den Tabellenheader **Name**, und aktivieren bzw. deaktivieren Sie **Externen Code anzeigen**, um die Anzeige von externem Code umzuschalten. Wenn Sie diese Funktion nicht festlegen, können Sie die vorliegende exemplarische Vorgehensweise zwar verwenden, Ihre Ergebnisse weichen jedoch möglicherweise von den Abbildungen ab.  
@@ -65,9 +65,9 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 1. Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.  
   
-2. In der **installierte Vorlagen** Bereich, wählen Sie entweder Visual c#, Visual Basic oder Visual C++. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
+2. Wählen Sie im Bereich **installierte Vorlagen** entweder Visual c#, Visual Basic oder Visual C++ aus. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
   
-3. Wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
+3. Wählen Sie **Konsolenanwendung** aus, und klicken Sie auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
   
 4. Öffnen Sie die CPP-, CS- oder VB-Codedatei im Projekt. Löschen Sie den Dateiinhalt, um eine leere Codedatei zu erstellen.  
   
@@ -98,13 +98,13 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 1. Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Parallele Stapel**. Vergewissern Sie sich, dass im Feld in der oberen linken Ecke **Threads** ausgewählt ist.  
   
-     Mithilfe der **parallele Stapel** Fenster können Sie mehrere Aufruflisten gleichzeitig in einer Ansicht anzeigen. Die folgende Abbildung zeigt die **parallele Stapel** oben im Fenster der **Aufrufliste** Fenster.  
+     Im Fenster **Parallele Stapel** können Sie mehrere Aufruflisten gleichzeitig in einer Ansicht anzeigen. In der folgenden Abbildung wird das Fenster **Parallele Stapel** über dem Fenster **Aufrufliste** angezeigt.  
   
-     ![Threadansicht im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-1.png "PDB_Walkthrough_1")  
+     ![Ansicht „Threads“ im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-1.png "PDB_Walkthrough_1")  
   
-     Die Aufrufliste des Hauptthreads wird in einem Feld angezeigt, während die Aufruflisten für die anderen vier Threads als Gruppe in einem anderen Feld angezeigt werden. Vier Threads werden als Gruppe angezeigt, da für ihre Stapelrahmen dieselben Methodenkontexte verwendet werden; d. h., sie befinden sich in denselben Methoden: `A`, `B` und `C`. Zum Anzeigen, die die Thread-IDs und Namen der Threads, die gemeinsam das gleiche Feld, zeigen den Header (**4 Threads**). Der aktuelle Thread wird fett formatiert angezeigt, wie in der folgenden Abbildung veranschaulicht.  
+     Die Aufrufliste des Hauptthreads wird in einem Feld angezeigt, während die Aufruflisten für die anderen vier Threads als Gruppe in einem anderen Feld angezeigt werden. Vier Threads werden als Gruppe angezeigt, da für ihre Stapelrahmen dieselben Methodenkontexte verwendet werden; d. h., sie befinden sich in denselben Methoden: `A`, `B` und `C`. Um die Thread-IDs und die Namen der Threads anzuzeigen, die das gleiche Feld verwenden, zeigen Sie auf den Header (**4 Threads**). Der aktuelle Thread wird fett formatiert angezeigt, wie in der folgenden Abbildung veranschaulicht.  
   
-     ![QuickInfo, die Thread-IDs-Namen und](../debugger/media/pdb-walkthrough-1a.png "PDB_Walkthrough_1A")  
+     ![QuickInfo mit Thread-IDs und -Namen](../debugger/media/pdb-walkthrough-1a.png "PDB_Walkthrough_1A")  
   
      Der gelbe Pfeil gibt den aktiven Stapelrahmen des aktuellen Threads an. Zeigen Sie mit dem Mauszeiger darauf, um weitere Informationen anzuzeigen.  
   
@@ -114,13 +114,13 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
      Durch eine blaue Hervorhebung um ein Feld wird angegeben, dass der aktuelle Thread zu diesem Feld gehört. Der aktuelle Thread wird auch durch den fett formatierten Stapelrahmen in der QuickInfo angegeben. Wenn Sie im Fenster Threads auf den Hauptthread doppelklicken, können Sie beobachten, wie die blaue Hervorhebung im Fenster **Parallele Stapel** entsprechend verschoben wird.  
   
-     ![Hervorgehobener Hauptthread im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-1c.png "PDB_Walkthrough_1C")  
+     ![Hervorgehobener Hauptthread im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-1c.png "PDB_Walkthrough_1C")  
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>So setzen Sie die Ausführung bis zum zweiten Haltepunkt fort  
   
 1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum zweiten Breakpoint fortzusetzen. In der folgenden Abbildung wird die Threadstruktur beim zweiten Haltepunkt dargestellt.  
   
-     ![Fenster "Parallele Stapel", die vielen Branches](../debugger/media/pdb-walkthrough-2.png "PDB_Walkthrough_2")  
+     ![Fenster „Parallele Stapel“ mit vielen Branches](../debugger/media/pdb-walkthrough-2.png "PDB_Walkthrough_2")  
   
      Beim ersten Haltepunkt gingen alle vier Threads von den Methoden S.A zu S.B zu S.C über. Diese Informationen werden im Fenster **Parallele Stapel** immer noch angezeigt, die vier Threads wurden jedoch weiter ausgeführt. Ein Thread ist zu S.D und dann zu S.E übergegangen. Ein anderer hat mit S.F, S.G und S.H fortgefahren. Zwei andere wechselten zu S.I und S.J. Von dort ging einer zu S.K über, während der andere zu nicht vom Benutzer stammendem externen Code wechselte.  
   
@@ -132,19 +132,19 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
      Sie können über das Kontextmenü im Fenster **Parallele Stapel** zu einem anderen Thread oder zu einem anderen Frame eines anderen Threads wechseln. Klicken Sie z. B. mit der rechten Maustaste auf S.J, zeigen Sie auf **Zu Rahmen wechseln**, und klicken Sie dann auf einen Befehl.  
   
-     ![Parallele Stapel-Ausführungspfad](../debugger/media/pdb-walkthrough-2b.png "PDB_Walkthrough_2B")  
+     ![Parallele Stapel: Ausführungspfad](../debugger/media/pdb-walkthrough-2b.png "PDB_Walkthrough_2B")  
   
      Klicken Sie mit der rechten Maustaste auf S.C, und zeigen Sie auf **Zu Rahmen wechseln**. Ein Befehl ist mit einem Häkchen versehen, das den Stapelrahmen des aktuellen Threads angibt. Sie können zu diesem Frame desselben Threads (nur der grüne Pfeil wird verschoben) wechseln, oder Sie können zum anderen Thread (die blaue Hervorhebung wird ebenfalls verschoben) wechseln. Die folgende Abbildung zeigt das Untermenü.  
   
-     ![Menü "Stapel" mit 2 Optionen auf C, während J aktuell ist](../debugger/media/pdb-walkthrough-3.png "PDB_Walkthrough_3")  
+     ![Menü „Stapel“ mit zwei Optionen auf C, während J aktuell ist](../debugger/media/pdb-walkthrough-3.png "PDB_Walkthrough_3")  
   
      Wenn ein Methodenkontext nur einem Stapelrahmen zugeordnet ist, wird im Feldheader **1 Thread** angezeigt, und Sie können durch Doppelklicken zu diesem wechseln. Wenn Sie auf einen Methodenkontext doppelklicken, dem mehrere Frames zugeordnet sind, wird das Menü automatisch aufgerufen. Wie Sie mit dem Mauszeiger auf die Methodenkontexte zeigen, wird rechts ein schwarzes Dreieck angezeigt. Wenn Sie auf dieses Dreieck klicken, wird ebenfalls das Kontextmenü geöffnet.  
   
      Bei großen Anwendungen mit einer Vielzahl von Threads kann es sich empfehlen, sich nur auf eine Teilmenge von Threads zu konzentrieren. Im Fenster **Parallele Stapel** können Aufruflisten nur für gekennzeichnete Threads angezeigt werden. Klicken Sie auf der Symbolleiste neben dem Listenfeld auf die Schaltfläche **Nur gekennzeichnete anzeigen**.  
   
-     ![Leere Fenster "Parallele Stapel" und QuickInfo](../debugger/media/pdb-walkthrough-3a.png "PDB_Walkthrough_3A")  
+     ![Fenster "Leere parallele Stapel" und QuickInfo](../debugger/media/pdb-walkthrough-3a.png "PDB_Walkthrough_3A")  
   
-     Als Nächstes wird in der **Threads** Fenster Flag einzelnen threads, um festzustellen, wie deren Aufruflisten in angezeigt werden die **parallele Stapel** Fenster. Verwenden Sie zum Kennzeichnen von Threads das Kontextmenü oder die erste Zelle eines Threads. Klicken Sie auf die **nur gekennzeichnete Elemente anzeigen** Symbolleisten-Schaltfläche erneut aus, um alle Threads anzuzeigen.  
+     Markieren Sie dann im Fenster **Threads** nacheinander die Threads, um anzuzeigen, wie Ihre Aufruf Listen im Fenster **parallele Stapel** angezeigt werden. Verwenden Sie zum Kennzeichnen von Threads das Kontextmenü oder die erste Zelle eines Threads. Klicken Sie erneut auf die Symbolleisten Schaltfläche **nur markierte anzeigen** , um alle Threads anzuzeigen.  
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>So setzen Sie die Ausführung bis zum dritten Haltepunkt fort  
   
@@ -152,11 +152,11 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
     Wenn mehrere Threads in derselben Methode enthalten sind, diese sich jedoch nicht am Anfang der Aufrufliste befand, wird die Methode in verschiedenen Feldern angezeigt. Ein Beispiel am aktuellen Haltepunkt ist S.L. Hierin sind drei Threads enthalten, und die Methode wird in drei Feldern angezeigt. Doppelklicken Sie auf S.L.  
   
-    ![Ausführungspfad im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Ausführungspfad im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-    Beachten Sie, dass S.L in den anderen beiden Feldern fett formatiert ist, damit dort ersichtlich ist, an welcher Stelle die Methode außerdem angezeigt wird. Wenn Sie bestimmen möchten, welche Frames S.L aufrufen und welche Frames von der Methode aufgerufen werden, klicken Sie auf der Symbolleiste auf die Schaltfläche **Methodenansicht umschalten**. Die folgende Abbildung zeigt die Methodenansicht des der **parallele Stapel** Fenster.  
+    Beachten Sie, dass S.L in den anderen beiden Feldern fett formatiert ist, damit dort ersichtlich ist, an welcher Stelle die Methode außerdem angezeigt wird. Wenn Sie bestimmen möchten, welche Frames S.L aufrufen und welche Frames von der Methode aufgerufen werden, klicken Sie auf der Symbolleiste auf die Schaltfläche **Methodenansicht umschalten**. In der folgenden Abbildung wird die Methodenansicht des Fensters **Parallele Stapel** angezeigt.  
   
-    ![Methodenansicht im Fenster "Parallele Stapel"](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Methodenansicht im Fenster „Parallele Stapel“](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
     Das Diagramm wurde für die ausgewählte Methode pivotiert, und diese wurde in einem eigenen Feld in der Mitte der Ansicht positioniert. Die Aufgerufenen und die Aufrufer werden am oberen und unteren Rand angezeigt. Klicken Sie auf die Schaltfläche **Methodenansicht umschalten**, um diesen Modus wieder zu verlassen.  
   
@@ -164,15 +164,15 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
    - Mit **Hexadezimale Anzeige** wird die Anzeige der Zahlen in den QuickInfos zwischen Dezimal- und Hexadezimaldarstellung umgeschaltet.  
   
-   - **Symbolladeinformationen** und **Symboleinstellungen** die entsprechenden Dialogfelder zu öffnen.  
+   - **Symbol ladeinformationen** und **Symbol Einstellungen** öffnen Sie die entsprechenden Dialogfelder.  
   
-   - **Gehe zu Quellcode** und **Gehe zu Disassembly** im Editor zur ausgewählten Methode navigiert.  
+   - Wechseln **Sie zum Quellcode,** und wechseln **Sie zu Disassembly** navigieren Sie im Editor zur ausgewählten Methode.  
   
    - Mit **Externen Code anzeigen** werden alle Frames angezeigt, auch wenn sie sich nicht im Benutzercode befinden. Das Diagramm wird erweitert, um die zusätzlichen Frames aufzunehmen (die möglicherweise abgeblendet dargestellt werden, da keine Symbole dafür vorhanden sind).  
   
      Wenn Sie bei großen Diagrammen zum nächsten Haltepunkt wechseln, können Sie einen automatischen Bildlauf der Anzeige zum aktiven Stapelrahmen des aktuellen Threads ausführen lassen (d. h. des Threads, der den Haltepunkt zuerst erreicht hat). Vergewissern Sie sich, dass im Fenster **Parallele Stapel** die Symbolleistenschaltfläche **Autom. Bildlauf zu aktuellem Stapelrahmen** aktiviert ist.  
   
-     ![Automatischer Bildlauf in das Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
+     ![Automatischer Bildlauf in Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
 2. Scrollen Sie vor dem Fortfahren im Fenster **Parallele Stapel** zunächst ganz nach links und ganz nach unten.  
   
@@ -182,9 +182,9 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
      Beachten Sie, wie ein automatischer Bildlauf der Ansicht an die korrekte Position stattfindet. Schalten Sie zwischen Threads im Fenster **Threads** um, oder schalten Sie zwischen Stapelrahmen im Fenster **Aufrufliste** um. Sie werden feststellen, dass immer ein automatischer Bildlauf der Ansicht zum richtigen Frame erfolgt. Deaktivieren Sie die Option **Autom. Bildlauf zu aktuellem Stapelrahmen**, und beobachten Sie den Unterschied.  
   
-     Die **Vogelperspektive** ist auch hilfreich bei großen Diagrammen im Fenster **Parallele Stapel**. Sie sehen die **Vogelperspektive** mit der Schaltfläche zwischen den Bildlaufleisten in der unteren rechten Ecke des Fensters, wie in der folgenden Abbildung dargestellt.  
+     Die **Vogelperspektive** ist auch hilfreich bei großen Diagrammen im Fenster **Parallele Stapel**. Sie können die **Vogel Ansicht** ansehen, indem Sie auf die Schaltfläche zwischen den Schiebe leisten in der unteren rechten Ecke des Fensters klicken, wie in der folgenden Abbildung dargestellt.  
   
-     ![Der Vogelperspektive&#45;-Augen-Ansicht im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-5.png "PDB_Walkthrough_5")  
+     ![Vogelperspektive im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-5.png "PDB_Walkthrough_5")  
   
      Sie können das Rechteck verschieben, um einen schnellen Schwenk um das Diagramm auszuführen.  
   
@@ -211,9 +211,9 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 4. Doppelklicken Sie im Fenster **Threads** auf einen Thread, um diesen als aktuellen Thread festzulegen. Aktuelle Threads sind durch einen gelben Pfeil gekennzeichnet. Wenn Sie den aktuellen Thread ändern, werden die anderen Fenster aktualisiert. Nun werden Aufgaben untersucht.  
   
-5. Auf der **Debuggen** Startmenü **Windows** , und klicken Sie dann auf **Parallele Aufgaben**. Die folgende Abbildung zeigt die **Parallele Aufgaben** Fenster.  
+5. Zeigen Sie im Menü **Debuggen** auf **Fenster** , und klicken Sie dann auf **parallele Aufgaben**. In der folgenden Abbildung wird das Fenster **parallele Aufgaben** dargestellt.  
   
-     ![Vier mit Aufgaben im Fenster "Parallele Aufgaben"](../debugger/media/pdw-walkthrough-6.png "PDW_Walkthrough_6")  
+     ![4 ausgeführte Aufgaben im Fenster „Parallele Aufgaben“](../debugger/media/pdw-walkthrough-6.png "PDW_Walkthrough_6")  
   
      Für jede ausgeführte Aufgabe können Sie die zugehörige ID lesen. Diese wird zusammen mit der gleichnamigen Eigenschaft, der ID und dem Namen des ausführenden Threads und ihrer Position zurückgegeben (wenn Sie mit dem Mauszeiger darauf zeigen, wird eine QuickInfo mit der gesamten Aufrufliste angezeigt). Unter der Spalte **Aufgabe** wird auch die Methode angezeigt, die in die Aufgabe übergeben wurde (mit anderen Worten, den Ausgangspunkt).  
   
@@ -227,27 +227,27 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum zweiten Breakpoint fortzusetzen.  
   
-     Zuvor die **Status** Artikel haben Sie alle Aufgaben ausgeführt, aber nun werden zwei Aufgaben wartet. Aufgaben können aus vielen anderen Gründen blockiert werden. Zeigen Sie in der Spalte **Status** auf eine wartende Aufgabe, um den Grund für ihre Blockierung anzuzeigen. In der folgenden Abbildung wartet beispielsweise Aufgabe 3 auf Aufgabe 4.  
+     Zuvor zeigte die Spalte " **Status** " alle Aufgaben als "wird ausgeführt" an, aber jetzt warten zwei Tasks. Aufgaben können aus vielen anderen Gründen blockiert werden. Zeigen Sie in der Spalte **Status** auf eine wartende Aufgabe, um den Grund für ihre Blockierung anzuzeigen. In der folgenden Abbildung wartet beispielsweise Aufgabe 3 auf Aufgabe 4.  
   
-     ![2 wartende Aufgaben im Fenster "Parallele Aufgaben"](../debugger/media/pdb-walkthrough-7.png "PDB_Walkthrough_7")  
+     ![2 wartende Aufgaben im Fenster „Parallele Aufgaben“](../debugger/media/pdb-walkthrough-7.png "PDB_Walkthrough_7")  
   
      Aufgabe 4 wiederum wartet auf einen Monitor, der zu dem Thread gehört, der Aufgabe 2 zugewiesen ist.  
   
-     ![Wartende Aufgabe und QuickInfo im Aufgabenfenster](../debugger/media/pdb-walkthrough-7a.png "PDB_Walkthrough_7A")  
+     ![Wartende Aufgabe und QuickInfo im Fenster „Aufgaben“](../debugger/media/pdb-walkthrough-7a.png "PDB_Walkthrough_7A")  
   
-     Sie können eine Aufgabe kennzeichnen, indem Sie auf das Flag in der ersten Spalte der **Parallele Aufgaben** Fenster.  
+     Sie können eine Aufgabe markieren, indem Sie auf das-Flag in der ersten Spalte des Fensters **parallele Aufgaben** klicken.  
   
      Durch das Kennzeichnen können Sie Aufgaben zwischen den verschiedenen Breakpoints einer Debugsitzung verfolgen oder Aufgaben filtern, deren Aufruflisten im Fenster **Parallele Stapel** angezeigt werden.  
   
      Als Sie das Fenster **Parallele Stapel** weiter oben verwendet haben, haben Sie die Anwendungsthreads angezeigt. Rufen Sie das Fenster **Parallele Stapel** erneut auf, zeigen Sie dieses Mal jedoch die Anwendungsaufgaben an. Wählen Sie dazu im Feld in der oberen linken Ecke **Aufgaben** aus. In der folgenden Abbildung wird die Aufgabenansicht dargestellt.  
   
-     ![Threadansicht im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-8.png "PDB_Walkthrough_8")  
+     ![Ansicht „Threads“ im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-8.png "PDB_Walkthrough_8")  
   
      Threads, die derzeit keine Aufgaben ausführen, werden in der Aufgabenansicht des Fensters **Parallele Stapel** nicht angezeigt. Auch für Threads, die Aufgaben ausführen, werden einige der für Aufgaben irrelevanten Stapelrahmen im Stapel von oben und unten gefiltert.  
   
-     Anzeigen der **Parallele Aufgaben** Fenster erneut. Klicken Sie mit der rechten Maustaste auf einen Spaltenheader, um das Kontextmenü für die betreffende Spalte aufzurufen.  
+     Zeigen Sie das Fenster **parallele Aufgaben** erneut an. Klicken Sie mit der rechten Maustaste auf einen Spaltenheader, um das Kontextmenü für die betreffende Spalte aufzurufen.  
   
-     ![Ansicht "Kontextmenü" im Fenster "Parallele Aufgaben"](../debugger/media/pdb-walkthrough-8a.png "PDB_Walkthrough_8A")  
+     ![Ansicht „Kontextmenü“ im Fenster „Parallele Aufgaben“](../debugger/media/pdb-walkthrough-8a.png "PDB_Walkthrough_8A")  
   
      Über das Kontextmenü können Spalten hinzugefügt und entfernt werden. Die Spalte AppDomain ist z. B. nicht ausgewählt. Daher wird sie in der Liste nicht aufgeführt. Klicken Sie auf **Übergeordnetes Element**. Die Spalte **Übergeordnetes Element** wird ohne Werte für die vier Aufgaben angezeigt.  
   
@@ -255,19 +255,19 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum dritten Breakpoint fortzusetzen.  
   
-     Eine neue Aufgabe, Aufgabe 5, wird nun ausgeführt, und Aufgabe 4 ist nun wartend. Sie können dies überprüfen, indem Sie im Fenster **Status** mit dem Mauszeiger auf die wartende Aufgabe zeigen. In der **übergeordneten** Spalte, beachten Sie, dass Aufgabe 4 ist das übergeordnete Element von Aufgabe 5.  
+     Eine neue Aufgabe, Aufgabe 5, wird nun ausgeführt, und Aufgabe 4 ist nun wartend. Sie können dies überprüfen, indem Sie im Fenster **Status** mit dem Mauszeiger auf die wartende Aufgabe zeigen. Beachten Sie in der Spalte **Übergeordnetes Element**, dass Aufgabe 4 das übergeordnete Element von Aufgabe 5 ist.  
   
-     Um die über-/ unterordnungsbeziehung besser zu visualisieren, Maustaste den **übergeordneten** Spaltenüberschrift, und klicken Sie dann auf **übergeordneten untergeordneten Ansicht**. Die Anzeige entspricht der folgenden Abbildung:  
+     Um die über-/Unterordnungsbeziehung besser darzustellen, klicken Sie mit der rechten Maustaste auf den über **geordneten** Spaltenheader, und klicken Sie dann auf über **geordnete** Die Anzeige entspricht der folgenden Abbildung:  
   
      ![Übergeordnete&#45;untergeordnete Ansicht im Fenster "Parallele Aufgaben"](../debugger/media/pdb-walkthrough-9.png "PDB_Walkthrough_9")  
   
-     Sie stellen fest, dass Aufgabe 4 und Aufgabe 5 im selben Thread ausgeführt werden. Diese Informationen werden nicht angezeigt, der **Threads** Fenster; sehen sie hier ein weiterer Vorteil ist die **Parallele Aufgaben** Fenster. Überprüfen Sie dies, indem Sie das Fenster **Parallele Stapel** öffnen. Stellen Sie sicher, dass Sie sich **Aufgaben** ansehen. Suchen Sie die Aufgaben 4 und 5 durch Doppelklicken in der **Parallele Aufgaben** Fenster. In diesem Fall wird die blaue Hervorhebung im Fenster **Parallele Stapel** aktualisiert. Sie können die Aufgaben 4 und 5 auch suchen, indem Sie die QuickInfos im Fenster **Parallele Stapel** überprüfen.  
+     Sie stellen fest, dass Aufgabe 4 und Aufgabe 5 im selben Thread ausgeführt werden. Diese Informationen werden im **Thread** Fenster nicht angezeigt. Dies ist ein weiterer Vorteil des Fensters " **parallele Aufgaben** ". Überprüfen Sie dies, indem Sie das Fenster **Parallele Stapel** öffnen. Stellen Sie sicher, dass Sie sich **Aufgaben** ansehen. Suchen Sie die Aufgaben 4 und 5, indem Sie im Fenster **parallele Aufgaben** auf Sie doppelklicken. In diesem Fall wird die blaue Hervorhebung im Fenster **Parallele Stapel** aktualisiert. Sie können die Aufgaben 4 und 5 auch suchen, indem Sie die QuickInfos im Fenster **Parallele Stapel** überprüfen.  
   
-     ![Aufgabe der Ansicht im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-9a.png "PDB_Walkthrough_9A")  
+     ![Aufgabenansicht im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-9a.png "PDB_Walkthrough_9A")  
   
      Klicken Sie im Fenster **Parallele Stapel** mit der rechten Maustaste auf S.P, und klicken Sie anschließend auf **Zu Thread wechseln**. Das Fenster wechselt zur Threadansicht, und der entsprechende Frame wird angezeigt. Sie können beide Aufgaben im selben Thread sehen.  
   
-     ![Hervorgehobener Thread in der Ansicht "Threads"](../debugger/media/pdb-walkthrough-9b.png "PDB_Walkthrough_9B")  
+     ![Hervorgehobener Thread in der Ansicht „Threads“](../debugger/media/pdb-walkthrough-9b.png "PDB_Walkthrough_9B")  
   
      Dies ist ein weiterer Vorteil der Aufgabenansicht im Fenster **Parallele Stapel** gegenüber dem Fenster **Threads**.  
   
@@ -275,7 +275,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum dritten Breakpoint fortzusetzen. Klicken Sie auf den Spaltenheader **ID**, um die Einträge nach ID zu sortieren. Die Anzeige entspricht der folgenden Abbildung:  
   
-     ![Aufgaben in 4 Zuständen im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-10.png "PDB_Walkthrough_10")  
+     ![Aufgaben mit vier Zuständen im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-10.png "PDB_Walkthrough_10")  
   
      Da Aufgabe 5 abgeschlossen wurde, wird sie nicht mehr angezeigt. Wenn dies auf Ihrem Computer nicht der Fall ist und der Deadlock nicht angezeigt wird, führen Sie einen Schritt aus, indem Sie F11 drücken.  
   
@@ -283,32 +283,32 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
      Rufen Sie das Fenster **Parallele Stapel** erneut auf. Der Header der einzelnen Felder weist jeweils eine QuickInfo auf, in der die Thread-IDs und -Namen angegeben werden. Wechseln Sie im Fenster **Parallele Stapel** zur Aufgabenansicht. Zeigen Sie auf einen Header, um die Aufgaben-ID sowie den Namen und den Status der Aufgabe anzuzeigen, wie in der folgenden Abbildung veranschaulicht.  
   
-     ![Header-QuickInfo im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-11.png "PDB_Walkthrough_11")  
+     ![Header-QuickInfo im Fenster „Parallele Stapel“](../debugger/media/pdb-walkthrough-11.png "PDB_Walkthrough_11")  
   
-     Sie können die Aufgaben nach Spalten gruppieren. In der **Parallele Aufgaben** Fenster mit der rechten Maustaste die **Status** Spaltenüberschrift, und klicken Sie dann auf **Gruppieren nach Status**. Die folgende Abbildung zeigt die **Parallele Aufgaben** nach Status gruppierte Fenster.  
+     Sie können die Aufgaben nach Spalten gruppieren. Klicken Sie im Fenster **parallele Aufgaben** mit der rechten Maustaste auf den Spaltenheader **Status** , und klicken Sie dann auf **Gruppieren nach Status**. Die folgende Abbildung zeigt das Fenster **parallele Aufgaben** nach Status gruppiert.  
   
-     ![Gruppiert Aufgaben im Fenster "Parallele Aufgaben"](../debugger/media/pdb-walkthrough-12.png "PDB_Walkthrough_12")  
+     ![Gruppierte Aufgaben im Fenster „Parallele Aufgaben“](../debugger/media/pdb-walkthrough-12.png "PDB_Walkthrough_12")  
   
-     Sie können auch nach einer beliebigen anderen Spalte gruppieren. Durch das Gruppieren von Aufgaben können sich auf eine Teilmenge von Aufgaben konzentrieren. Jede reduzierbare Gruppe weist eine Anzahl von Elementen auf, die zu einer Gruppe gehören. Sie können alle Elemente in der Gruppe auch schnell kennzeichnen, indem Sie auf die **Flag** Schaltfläche rechts neben der **reduzieren** Schaltfläche.  
+     Sie können auch nach einer beliebigen anderen Spalte gruppieren. Durch das Gruppieren von Aufgaben können sich auf eine Teilmenge von Aufgaben konzentrieren. Jede reduzierbare Gruppe weist eine Anzahl von Elementen auf, die zu einer Gruppe gehören. Sie können auch schnell alle Elemente in der Gruppe markieren, indem Sie auf die Schaltfläche **Flag** rechts neben der **Schaltfläche reduzieren** klicken.  
   
      ![Gruppierte Stapel im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-12a.png "PDB_Walkthrough_12A")  
   
-     Das letzte Feature von der **Parallele Aufgaben** Fenster, um zu überprüfen ist im Kontextmenü angezeigt wird, wenn Sie eine Aufgabe mit der rechten Maustaste.  
+     Das letzte Feature des Fensters **parallele Aufgaben** , das Sie überprüfen möchten, ist das Kontextmenü, das angezeigt wird, wenn Sie mit der rechten Maustaste auf eine Aufgabe klicken.  
   
-     ![Kontextmenü im Fenster "Parallele Aufgaben"](../debugger/media/pdb-walkthrough-12b.png "PDB_Walkthrough_12B")  
+     ![Kontextmenü im Fenster „Parallele Aufgaben“](../debugger/media/pdb-walkthrough-12b.png "PDB_Walkthrough_12B")  
   
      Im Kontextmenü sind weitere Befehle enthalten, die vom Status der Aufgabe abhängen. Zu diesen können folgende Befehle zählen: **Kopieren**, **Alle auswählen**, **Hexadezimale Anzeige**, **Zu Aufgabe wechseln**, **Zugewiesenen Thread fixieren**, **Alle Threads bis auf diesen einfrieren** und **Zugewiesenen Thread reaktivieren** sowie **Flag**.  
   
-     Sie können den zugrunde liegenden Thread einer Aufgabe oder mehrerer Aufgaben einfrieren, oder Sie können alle Threads außer dem zugewiesenen Thread einfrieren. Ein eingefrorener Thread wird dargestellt, der **Parallele Aufgaben** Fenster befindet sich in der **Threads** Fenster durch ein blaues *anhalten* Symbol.  
+     Sie können den zugrunde liegenden Thread einer Aufgabe oder mehrerer Aufgaben einfrieren, oder Sie können alle Threads außer dem zugewiesenen Thread einfrieren. Ein fixierter Thread wird im Fenster **parallele Aufgaben** dargestellt, wie er im Fenster **Threads** durch ein blaues *Pausen* Symbol angezeigt wird.  
   
 ## <a name="summary"></a>Zusammenfassung  
  In dieser exemplarischen Vorgehensweise wurden die Debuggerfenster **Parallele Aufgaben** und **Parallele Stapel** veranschaulicht. Verwenden Sie diese Fenster für tatsächliche Projekte, in denen Code mit mehreren Threads enthalten ist. Sie können parallelen Code in C++, C# oder Visual Basic untersuchen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen von Multithreadanwendungen](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)   
- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
+ [Debugger-Grundlagen](../debugger/debugger-basics.md)   
+ [Debugging von verwaltetem Code](../debugger/debugging-managed-code.md)   
  [Parallele Programmierung](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
- [View threads and tasks in the Parallel Stacks window (Anzeigen von Threads und Aufgaben im Fenster „Parallele Stapel“)](../debugger/using-the-parallel-stacks-window.md)   
+ [Verwenden des Fensters "parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)   
  [Verwenden des Fensters „Aufgaben“](../debugger/using-the-tasks-window.md)

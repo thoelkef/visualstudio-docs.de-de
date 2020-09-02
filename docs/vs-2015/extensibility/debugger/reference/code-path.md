@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e75f5417ffabd26b87afb2a62812904446674c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153162"
 ---
-# <a name="codepath"></a>CODE_PATH
+# <a name="code_path"></a>CODE_PATH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt eine Methode oder einen Funktionsaufruf an.  
+Beschreibt eine Methode oder einen Funktions Aufruf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,22 +42,22 @@ public struct CODE_PATH {
   
 ## <a name="members"></a>Member  
  bstrName  
- Der Name des Codepfads.  
+ Der Name des Codepfade.  
   
  pCode  
- Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, an welcher Stelle in den Code einer Funktion in Einzelschritten identifiziert.  
+ Das [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das angibt, an welcher Stelle im Code eine Funktion durchlaufen werden soll.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird verwendet, um Einzelschritt in eine Funktion zu implementieren. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) gibt alle Aufrufe von der aktuellen Position in die Anwendung gedebuggt wird. Diese Struktur stellt ein solcher Aufruf dar.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird verwendet, um Schritt-für-Schritt-Funktionen zu implementieren. [Enumcodepath](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) gibt alle Aufrufe von der aktuellen Position im debuggten Programm zurück. Diese Struktur stellt einen solchen-Rückruf dar.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)
