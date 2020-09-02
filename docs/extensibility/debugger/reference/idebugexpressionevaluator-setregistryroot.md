@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
+title: 'Idebugexpressionevaluator:: "abtregistryroot" | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729415"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Diese Methode legt den Registrierungsstamm fest. Wird für das side-by-side-Debugging verwendet.
+Diese Methode legt den Registrierungs Stamm fest. Wird für Paralleles Debuggen verwendet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int SetRegistryRoot(
 
 ## <a name="parameters"></a>Parameter
 `ustrRegistryRoot`\
-[in] Der neue Registrierungsstamm.
+in Der neue Registrierungs Stamm.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der angegebene Registrierungsstamm wird in der Regel festgelegt, wenn der Ausdrucksauswertungswert zuerst instanziiert wird und auf den\\Registrierungsschlüssel für eine bestimmte Version von Visual Studio verweist (HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio*X.Y*, wobei *X.Y* eine Versionsnummer ist).
+ Der angegebene Registrierungs Stamm wird in der Regel festgelegt, wenn die Ausdrucks Auswertung zuerst instanziiert wird, und verweist auf den Registrierungsschlüssel für eine bestimmte Version von Visual Studio (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. y*, wobei *x. y* eine Versionsnummer ist).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

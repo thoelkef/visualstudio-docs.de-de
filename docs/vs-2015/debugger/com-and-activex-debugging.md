@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702320"
 ---
 # <a name="com-and-activex-debugging"></a>Debuggen von COM und ActiveX
@@ -48,8 +48,8 @@ Dieser Abschnitt enthält Tipps zum Debuggen von COM‑Anwendungen und ActiveX-S
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Die Informationen umfassen: Neues im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von Visual C++-Projekten, Debuggen von COM und ActiveX, Debuggen von DLLs, Debuggen von SQL sowie Referenzen zur Benutzeroberfläche.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Einführung in COM](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
+ [Einführung in com](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
  [ActiveX-Steuerelemente](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [SDI-Serveranwendungen](../debugger/sdi-server-applications.md)

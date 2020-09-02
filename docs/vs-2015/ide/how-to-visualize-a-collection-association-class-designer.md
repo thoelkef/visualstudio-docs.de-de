@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 434cfc541da3c670d8d444b9a4259b33476a17d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670511"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Gewusst wie: Darstellen einer Auflistungszuordnung (Klassen-Designer)
@@ -38,5 +38,5 @@ Eigenschaften und Felder, die Auflistungen eines anderen Typs darstellen, könne
 
      Die Eigenschaft oder das Feld wird als Zuordnungslinie dargestellt, die mit dem gesammelten Typ verknüpft ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer) Entwerfen von](../ide/how-to-create-associations-between-types-class-designer.md) [Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md) [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)

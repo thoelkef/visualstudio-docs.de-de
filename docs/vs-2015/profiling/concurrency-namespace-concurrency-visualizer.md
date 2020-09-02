@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700486"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency-Namespace (Parallelitätsschnellansicht)
@@ -31,7 +31,7 @@ Der `Concurrency`-Namespace stellt Klassen und Funktionen bereit, die Ihnen den 
 namespace Concurrency;  
 ```  
   
-## <a name="members"></a>Member  
+## <a name="members"></a>Members  
   
 ### <a name="namespaces"></a>Namespaces  
   
@@ -42,5 +42,5 @@ namespace Concurrency;
 ## <a name="requirements"></a>Anforderungen  
  **Header:** cvmarkersobj.h  
   
-## <a name="see-also"></a>Siehe auch  
- [C Bibliotheksreferenz](../profiling/c-library-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [C Bibliotheksverweis](../profiling/c-library-reference.md)

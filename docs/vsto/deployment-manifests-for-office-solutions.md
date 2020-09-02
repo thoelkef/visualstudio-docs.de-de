@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547549"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Bereitstellungs Manifeste für Office-Lösungen
@@ -27,7 +27,7 @@ ms.locfileid: "85547549"
 
  Die Office-Entwicklung in Visual Studio verwendet das [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Schema des Bereitstellungs Manifests, das in der [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md) -Referenz definiert ist
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Die Bereitstellungs Manifest-Datei für Office-Projektmappen identifiziert die aktuelle Version und andere Bereitstellungs Einstellungen. Sie verweist auf das Anwendungs Manifest und beschreibt die aktuelle Version der Projekt Mappe und alle Dateien in der Projekt Mappe.
 
 ## <a name="file-name-syntax"></a>Dateinamenssyntax
@@ -183,6 +183,6 @@ ms.locfileid: "85547549"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)

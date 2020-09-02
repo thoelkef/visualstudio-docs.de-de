@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192899"
 ---
 # <a name="item-functions"></a>Elementfunktionen
@@ -54,7 +54,7 @@ Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Info
 ## <a name="intrinsic-item-functions"></a>Systeminterne Elementfunktionen  
  In der unten stehenden Tabelle werden die systeminternen Funktionen aufgelistet, die für Elemente zur Verfügung stehen.  
   
-|Funktion|Beispiel|BESCHREIBUNG|  
+|Funktion|Beispiel|Beschreibung|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Gibt die Anzahl der Elemente zurück|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Gibt das entsprechende `Path.DirectoryName`-Objekt für jedes Element zurück|  
@@ -102,5 +102,5 @@ Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Info
   -->  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Elemente](../msbuild/msbuild-items.md)
