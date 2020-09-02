@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 569254c9df668c7755116f37a819fe65a3ecaa59
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670463"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
@@ -36,7 +36,7 @@ ms.locfileid: "72670463"
 
 Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf dem Computer installiert ist, hinzufügen, entfernen, aktualisieren oder verschieben, um ihn an die Softwareanforderungen anzupassen.
 
- Um Inhalt auf dem lokalen Computer zu verwalten, müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt. Außerdem können Sie möglicherweise keine lokalen Inhalte verwalten, wenn Sie in einer Unternehmensumgebung arbeiten, da diese Entscheidungen möglicherweise von Systemadministratoren für Ihre Organisation getroffen werden. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).
+ Um Inhalt auf dem lokalen Computer zu verwalten, müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt. Außerdem können Sie möglicherweise keine lokalen Inhalte verwalten, wenn Sie in einer Unternehmensumgebung arbeiten, da diese Entscheidungen möglicherweise von Systemadministratoren für Ihre Organisation getroffen werden. Weitere Informationen finden Sie im [Help Viewer-Administrator Handbuch](../ide/help-viewer-administrator-guide.md).
 
 ## <a name="changing-the-content-installation-source"></a>Ändern der Installationsquelle für Inhalte
  Standardmäßig installiert der Help Viewer Inhalte, indem er einen Microsoft-Onlinedienst als Quelle verwendet. Sie sollten die Inhaltsquelle im Allgemeinen nicht ändern, es sei denn, Sie arbeiten in einer Unternehmensumgebung, für die ein Systemadministrator bereits Inhalte an einem anderen Speicherort installiert hat.
@@ -46,13 +46,13 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
 1. Wählen Sie auf der Registerkarte **Inhalt verwalten** das Optionsfeld **Datenträger** aus.
 
     > [!NOTE]
-    > Die Option **Datenträger** ist nicht verfügbar, wenn der Administrator keine Berechtigungen zum Ändern der Inhaltsinstallationsquelle erteilt hat. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).
+    > Die Option **Datenträger** ist nicht verfügbar, wenn der Administrator keine Berechtigungen zum Ändern der Inhaltsinstallationsquelle erteilt hat. Weitere Informationen finden Sie im [Help Viewer-Administrator Handbuch](../ide/help-viewer-administrator-guide.md).
 
 2. Führen Sie einen der folgenden Schritte aus:
 
     - Geben Sie den Pfad einer MSHA-Datei oder die URL eines Dienstendpunkts ein.
 
-    - Klicken Sie auf die Schaltfläche „Durchsuchen“ ( **…** ), um zu einer MSHA-Datei zu navigieren.
+    - Klicken Sie auf die Schaltfläche „Durchsuchen“ (**…**), um zu einer MSHA-Datei zu navigieren.
 
     - Wählen Sie in der Liste den zuletzt verwendeten Eintrag aus.
 
@@ -124,5 +124,5 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
 
 3. Klicken Sie auf die Schaltfläche **Schließen**, wenn die Inhalte verschoben wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

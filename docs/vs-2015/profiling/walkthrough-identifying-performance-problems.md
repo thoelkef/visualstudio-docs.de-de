@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695006"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen
@@ -38,11 +38,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 - Analysieren der Ergebnisse der Profilerstellung, für die eine Instrumentation durchgeführt wurde, um ein Leistungsproblem zu lokalisieren und zu beheben  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Voraussetzungen  
   
 - Grundlegende Kenntnisse über C#.  
   
-- Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md).  
+- Eine Kopie des [People Trax](../profiling/peopletrax-sample-profiling-tools.md)-Beispiels.  
   
   Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.  
   
@@ -103,7 +103,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
      Beachten Sie, dass bei der GetPeople-Methode und der GetNames-Methode eine beträchtliche Leistungssteigerung zu verzeichnen ist.  
   
-## <a name="profiling-by-using-the-instrumentation-method"></a>Profilerstellung mithilfe der Instrumentationsmethode  
+## <a name="profiling-by-using-the-instrumentation-method"></a>Profilerstellung mithilfe der Instrumentierungsmethode  
  Bei der Instrumentation handelt es sich um eine Profilerstellungsmethode, bei der vom Profiler Testfunktionen in speziell erstellte Versionen der Binärdateien eingefügt werden, für die das Profil erstellt wird. Von den Testfunktionen werden am Start und am Ende von Funktionen in den instrumentierten Modulen sowie an allen Aufrufsites in diesen Funktionen Zeitsteuerungsinformationen gesammelt. Der Instrumentationsprozess ist hilfreich beim Untersuchen von Problemen mit Eingabe-/Ausgabeoperationen wie dem Schreiben auf einen Datenträger oder der Kommunikation in einem Netzwerk. Bei der Instrumentation erhalten Sie zwar ausführlichere Informationen als beim Sampling, dafür wird jedoch stärker in die Prozessausführung eingegriffen, und auch der Mehraufwand fällt höher aus. Instrumentierte Binärdateien sind zudem größer als Binärdateien für eine Debug- oder Releaseversion und nicht für die Bereitstellung vorgesehen.  
   
  In diesem Abschnitt der exemplarischen Vorgehensweise wird in der Anwendung "PeopleTrax", für die bereits zuvor eine Profilerstellung ausgeführt wurde, mithilfe der Instrumentationsmethode weiterer optimierbarer Code gesucht. Mithilfe des Filters der Zeitachse in der Zusammenfassungsansicht wird die Analyse auf das Exportdatenszenario der Anwendung konzentriert, für die ein Profil erstellt wurde und in der eine Liste mit Personen in eine Editor-Datei geschrieben wird.  
@@ -128,7 +128,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
      In **Editor** wird eine neue Datei angezeigt, die eine Liste der Personen aus PeopleTrax enthält. Durch das Warten lässt sich die Datenexportprozedur für die Filterung leichter identifizieren.  
   
-6. Schließen Sie **Editor**, und schließen Sie dann die Anwendung **PeopleTrax**.  
+6. Schließen Sie **Notepad**, und schließen Sie dann die Anwendung " **People Trax** ".  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] generiert einen Bericht über die Leistungssitzung (* .vsp).  
   
@@ -158,7 +158,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
    Wenn Sie die Anwendung erneut ausführen, stellen Sie bei der Leistung merkliche Verbesserungen fest. Es wird empfohlen, die Profilerstellungssitzung auch dann erneut auszuführen, wenn sich in der Leistung für den Benutzer erkennbare Verbesserungen eingestellt haben. Der erneute Review der Daten nach Behebung eines Problems ist überaus wichtig, da unter Umständen noch andere Probleme vorhanden sind, die aufgrund des ersten Problems nicht ersichtlich waren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Übersichten](../profiling/overviews-performance-tools.md)   
- [Getting Started (Erste Schritte)](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [Einstieg](../profiling/getting-started-with-performance-tools.md)   
+ [/Z7,/Zi,/Zi (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

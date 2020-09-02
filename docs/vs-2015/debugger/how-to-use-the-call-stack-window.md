@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden des Fensters Aufrufliste | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden des Fensters "aufrufsstapel" | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,28 +30,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697474"
 ---
-# <a name="how-to-use-the-call-stack-window"></a>Vorgehensweise: Verwenden des Fensters Aufrufliste
+# <a name="how-to-use-the-call-stack-window"></a>Gewusst wie: Verwenden des Fensters Aufrufliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozeduraufrufe anzeigen, die sich derzeit im Stapel befinden.  
   
- Die **Aufrufliste** Fenster zeigt den Namen der Funktionen und die Programmiersprache, die es geschrieben ist. Der Name der Funktion oder der Prozedur wird möglicherweise von optionalen Informationen begleitet, z. B. Modulname, Zeilennummer, Parameternamen, -typen und -werte. Die Anzeige dieser optionalen Informationen kann ein- bzw. ausgeschaltet werden:  
+ Das Fenster " **aufrufsstapel** " zeigt den Namen der einzelnen Funktionen und die Programmiersprache an, in der Sie geschrieben ist. Der Name der Funktion oder der Prozedur wird möglicherweise von optionalen Informationen begleitet, z. B. Modulname, Zeilennummer, Parameternamen, -typen und -werte. Die Anzeige dieser optionalen Informationen kann ein- bzw. ausgeschaltet werden:  
   
- Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger derzeit befindet. Standardmäßig ist dies der Rahmen, dessen Informationen in der Quelle **Disassembly**, **"lokal"**, **Watch**, und **"Auto"** Windows. Wenn Sie den Kontext zu einem anderen Frame im Stapel ändern möchten, erreichen Sie, die der **Aufrufliste** Fenster.  
+ Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger derzeit befindet. Standardmäßig ist dies der Frame, dessen Informationen in **den Fenstern Quelle** , **Disassembly**, **lokal, über** **Wachen**und Auto angezeigt werden. Wenn Sie den Kontext in einen anderen Frame auf dem Stapel ändern möchten, können Sie dies im Fenster "Fenster" **aufzurufen** .  
   
- Wenn keine Debugsymbole verfügbar sind, für den Teil der Aufrufliste, sind die **Aufrufliste** Fenster möglicherweise nicht korrekten Informationen für den jeweiligen Teil der Aufrufliste angezeigt. Die folgende Notation wird angezeigt:  
+ Wenn das Debuggen von Symbolen für einen Teil einer Aufruf Stapel nicht verfügbar ist, kann das Fenster **Aufruf Stapel** möglicherweise keine korrekten Informationen für diesen Teil der Aufruf Stapel anzeigen. Die folgende Notation wird angezeigt:  
   
  [Die Rahmen unten sind möglicherweise falsch und/oder fehlen, für name.dll wurden keine Symbole geladen]  
   
- In verwaltetem Code in der Standardeinstellung. die **Aufrufliste** Fenster werden Informationen für Nichtbenutzercode ausgeblendet. Die folgende Notation wird anstelle der ausgeblendeten Informationen angezeigt:  
+ In verwaltetem Code standardmäßig. Das Fenster " **aufrufsstapel** " blendet Informationen für Nichtbenutzer Code aus. Die folgende Notation wird anstelle der ausgeblendeten Informationen angezeigt:  
   
- **[\<Externen Code >]**  
+ **[\<External Code>]**  
   
  Beim Nichtbenutzercode handelt es sich um Code, der nicht vom Typ "Mein Code" ist. Sie können angeben, die Aufruflisteninformationen für Nichtbenutzercode anzuzeigen, indem Sie das Kontextmenü verwenden.  
   
@@ -62,11 +62,11 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>So zeigen Sie das Fenster "Aufrufliste" im Unterbrechungsmodus oder im Ausführmodus an  
   
-- Auf der **Debuggen** , wählen Sie im Menü **Windows** , und klicken Sie dann auf **Aufrufliste**.  
+- Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, **und klicken Sie dann auf die**Option  
   
 ### <a name="to-change-the-optional-information-displayed"></a>So ändern Sie die Anzeige optionaler Informationen  
   
-- Mit der rechten Maustaste die **Aufrufliste** Fenster und aktivieren oder deaktivieren **anzeigen \<**  _die gewünschten Informationen_ **>**.  
+- Klicken Sie **mit der rechten** Maustaste auf das Fenster "Fenster", und legen Sie ** \<**_the information that you want_**> anzeigen **fest.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>So zeigen Sie Rahmen mit nicht benutzerseitigem Code im Fenster "Aufrufliste" an  
   
@@ -74,7 +74,7 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
 ### <a name="to-switch-to-another-stack-frame"></a>So wechseln Sie in einen anderen Stapelrahmen  
   
-1. In der **Aufrufliste** Fenster mit der rechten Maustaste in des Rahmens, dessen Code und Daten, die Sie anzeigen möchten.  
+1. Klicken Sie im Fenster " **aufrufsstapel** " mit der rechten Maustaste auf den Frame, dessen Code und Daten Sie anzeigen möchten.  
   
 2. Wählen Sie **Switch to Frame** (Zu Frame wechseln) aus.  
   
@@ -90,9 +90,9 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
 ### <a name="to-visually-trace-the-call-stack"></a>So verfolgen Sie die Aufrufliste visuell  
   
-1. Öffnen Sie das Kontextmenü im Fenster **Aufrufliste**. Wählen Sie **Aufrufliste auf Code Map anzeigen**. (Tastatur: **STRG** + **UMSCHALT** + **`**)  
+1. Öffnen Sie das Kontextmenü im Fenster **Aufrufliste**. Wählen Sie **in Code Map die Option aufrufsstapel anzeigen** (Tastatur: **STRG**  +  **UMSCHALT**  +  **`** )  
   
-     Finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+     Weitere Informationen finden Sie [unter Map-Methoden in der-aufrufsstapel](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>So zeigen Sie den Disassembly-Code für eine Funktion in der Aufrufliste an  
   
@@ -100,15 +100,15 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>So führen Sie im Aufruflistenfenster das Programm bis zu einer angegebenen Funktion aus  
   
-- In der **Aufrufliste** Fenster, wählen Sie die Funktion, mit der rechten Maustaste und wählen Sie **Ausführen bis Cursor**.  
+- Wählen Sie im Fenster " **CallStack** " die Funktion aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Ausführen bis Cursor**aus.  
   
 ### <a name="to-set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>So legen Sie einen Haltepunkt am Exitpunkt eines Funktionsaufrufs fest  
   
-- Finden Sie unter [Festlegen eines Haltepunkts in einer Call Stack-Funktion](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
+- Weitere Informationen finden Sie unter [Festlegen von Breakpoints in Debuggerfenstern](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
   
 ### <a name="to-load-symbols-for-a-module"></a>So laden Sie Symbole für ein Modul  
   
-- In der **Aufrufliste** Fenster mit der rechten Maustaste in des Frames mit dem Modul, dessen Symbole Sie erneut laden, und wählen Sie möchten **Symbole laden**.  
+- Klicken Sie im Fenster " **CallStack** " mit der rechten Maustaste auf den Frame, der das Modul anzeigt, dessen Symbole Sie erneut laden möchten, und wählen Sie **Symbole laden**aus.  
   
 ## <a name="loading-symbols"></a>Laden von Symbolen  
  Im Fenster **Aufrufliste** können Sie Debugsymbole für Code laden, für den derzeit keine Symbole geladen sind. Bei diesen Symbolen kann es sich um .NET Framework-Symbole oder Systemsymbole handeln, die von den öffentlichen Microsoft-Symbolservern heruntergeladen wurden, oder um Symbole in einem Symbolpfad auf dem Computer, den Sie debuggen.  
@@ -117,9 +117,9 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
 #### <a name="to-load-symbols"></a>So laden Sie Symbole  
   
-1. In der **Aufrufliste** der rechten Maustaste auf der Frame aus, für welche Symbole nicht geladen werden. Der Rahmen wird abgeblendet.  
+1. Klicken Sie im Fenster " **aufrufsstapel** " mit der rechten Maustaste auf den Frame, für den Symbole nicht geladen werden. Der Rahmen wird abgeblendet.  
   
-2. Zeigen Sie auf **Symbole laden aus** , und klicken Sie dann auf **Microsoft-Symbolserver** oder **Symbolpfad**.  
+2. Zeigen Sie auf **Symbole laden aus** , und klicken Sie dann auf **Microsoft-Symbol Server** oder **Symbol Pfad**.  
   
 #### <a name="to-set-the-symbol-path"></a>So legen Sie den Symbolpfad fest  
   
@@ -127,7 +127,7 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
      Das Dialogfeld **Optionen** wird geöffnet, und die Seite **Symbole** wird angezeigt.  
   
-2. Klicken Sie auf **Symboleinstellungen**.  
+2. Klicken Sie auf **Symbol Einstellungen**.  
   
 3. Klicken Sie im Dialogfeld **Optionen** auf das Ordnersymbol.  
   
@@ -137,9 +137,9 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
 5. Klicken Sie auf **OK**, um das Dialogfeld **Optionen** zu schließen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Gemischter Code und fehlende Daten im Aufruflistenfenster](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Vorgehensweise: Ändern des numerischen Formats von Debugger-Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Gemischter Code und fehlende Informationen im Fenster "aufrufsstapel"](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
+ [Gewusst wie: Ändern des numerischen Formats von Debuggerfenstern](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Angeben von Symboldateien (PDB) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Angeben von Symbol-(PDB-) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)

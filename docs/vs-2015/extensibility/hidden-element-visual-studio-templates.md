@@ -1,5 +1,5 @@
 ---
-title: Ausgeblendet-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Hidden-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f5150cda1b1285132fd70cd7bd7fa4572121057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204242"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.  
+Gibt an, ob die Vorlage im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<Ausgeblendet >  
+ \<Hidden>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,12 +52,12 @@ Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder *
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob die Vorlage angezeigt wird, in der **neues Projekt** oder **neues Element hinzufügen** Dialogfelder.  
+ Der Text muss entweder `true` oder sein `false` , um anzugeben, ob die Vorlage in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  `Hidden` ist ein optionales Element.  
   
- Wenn angegeben, keine anderen untergeordneten Elementen der `TemplateData` Element sind erforderlich.  
+ Wenn angegeben, sind keine weiteren untergeordneten Elemente des- `TemplateData` Elements erforderlich.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Vorlage veranschaulicht.  
@@ -87,6 +87,6 @@ Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder *
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
