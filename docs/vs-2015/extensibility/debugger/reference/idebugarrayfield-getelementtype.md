@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetElementType | Microsoft-Dokumentation
+title: 'Idebugarrayfield:: GetElementType | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 00ae24c2449d9bd26895647fc8f7b026291c4288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68142979"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
@@ -40,14 +40,14 @@ int GetElementType(
   
 #### <a name="parameters"></a>Parameter  
  `ppType`  
- [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das den Typ des Elements beschreibt.  
+ vorgenommen Gibt ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt zurück, das den Typ des Elements beschreibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) Objekt wird davon ausgegangen, dass alle Elemente des Arrays den gleichen Typ sind.  
+## <a name="remarks"></a>Bemerkungen  
+ Das [idebugarrayfield](../../../extensibility/debugger/reference/idebugarrayfield.md) -Objekt geht davon aus, dass alle Elemente des Arrays denselben Typ haben.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugarrayfield](../../../extensibility/debugger/reference/idebugarrayfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

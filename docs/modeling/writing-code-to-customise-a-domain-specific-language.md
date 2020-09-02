@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546873"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Schreiben von Code zum Anpassen einer domänenspezifischen Sprache
@@ -70,7 +70,7 @@ das Beibehalten von Objekten im Speicher (anstelle der normalen Objekte) bietet 
 
 - **Regeln und Ereignisse**. Sie können Regeln definieren, die immer dann ausgelöst werden, wenn bestimmte Änderungen vorgenommen werden. Regeln werden z. b. verwendet, um die Formen im Diagramm mit den Modellelementen auf dem neuesten Stand zu halten. Weitere Informationen finden Sie unter [reagieren auf und](../modeling/responding-to-and-propagating-changes.md)weitergeben von Änderungen.
 
-- **Serialisierung**. Der Speicher bietet eine Standardmethode zum Serialisieren der darin enthaltenen Objekte in eine Datei. Sie können die Regeln für die Serialisierung und Deserialisierung anpassen. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
+- **Serialisierung:** Der Speicher bietet eine Standardmethode zum Serialisieren der darin enthaltenen Objekte in eine Datei. Sie können die Regeln für die Serialisierung und Deserialisierung anpassen. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 

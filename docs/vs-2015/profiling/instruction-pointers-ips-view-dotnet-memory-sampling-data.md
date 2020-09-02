@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143677"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Anweisungszeigeransicht: .NET-Speichersamplingdaten
@@ -25,10 +25,10 @@ In der Anweisungszeigeransicht der Profilerstellungsdaten für die .NET-Speicher
   
  Es sind nur exklusive Werte aufgeführt.  
   
-|Spalte|BESCHREIBUNG|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
-|**Prozessname**|Der Prozessname.|  
+|**Prozessname**|Der Name des Prozesses.|  
 |**Modulname**|Der Name des Moduls, das die Anweisung enthält|  
 |**Modulpfad**|Der Pfad des Moduls, das die Anweisung enthält|  
 |**Quelldatei**|Die Quelldatei, die die Anweisung enthält|  
@@ -45,5 +45,5 @@ In der Anweisungszeigeransicht der Profilerstellungsdaten für die .NET-Speicher
 |**Exklusive Bytes**|Die Anzahl von Bytes im Speicher, die während der Profilerstellung von der Anweisung zugeordnet wurden.|  
 |**Exklusive Bytes %**|Der Anteil aller Bytes im Speicher, die während der Profilerstellung durch diese Anweisung zugeordnet wurden.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Anweisungszeigeransicht](../profiling/instruction-pointers-ips-view-sampling-data.md)

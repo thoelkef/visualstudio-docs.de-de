@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419686756fb996a44cb6355a9776cc08baed576d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663881"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>WPF-Datenbindung mit LINQ to XML
@@ -26,15 +26,15 @@ In diesem Abschnitt erfahren Sie, wie Sie LINQ to XML als Datenquelle für die D
 |Thema|BESCHREIBUNG|
 |-----------|-----------------|
 |[Übersicht über WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|Enthält eine Übersicht über die Funktionen zur dynamischen Datenbindung, die vom <xref:System.Xml.Linq>-Namespace bereitgestellt werden, und erläutert, wie diese Funktionen als Datenquelle für Benutzeroberflächenkomponenten in WPF-Anwendungen verwendet werden können.|
-|[Dynamische Eigenschaften in LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)|Enthält Referenzinformationen zu den dynamischen Eigenschaften, die durch die <xref:System.Xml.Linq.XAttribute>-Klasse und die <xref:System.Xml.Linq.XElement>-Klasse verfügbar gemacht werden.|
-|[Beispiel für die WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)|Enthält ein WPF-Beispiel, das Benutzeroberflächenkomponenten an eine XML-Datenquelle bindet.|
+|[Dynamische Eigenschaften LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)|Enthält Referenzinformationen zu den dynamischen Eigenschaften, die durch die <xref:System.Xml.Linq.XAttribute>-Klasse und die <xref:System.Xml.Linq.XElement>-Klasse verfügbar gemacht werden.|
+|[WPF-Datenbindung mit LINQ to XML Beispiel](../designers/wpf-data-binding-using-linq-to-xml-example.md)|Enthält ein WPF-Beispiel, das Benutzeroberflächenkomponenten an eine XML-Datenquelle bindet.|
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
  <xref:System.Xml.Linq>
 
  <xref:System.Xml.Linq.XElement>
 
  <xref:System.Xml.Linq.XAttribute>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erweiterte LINQ to XML-Programmierung](https://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)

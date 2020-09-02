@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d28972575e8da9ef499e6d33a4a4a1deb3b07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143000"
 ---
-# <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
+# <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt an, welche Informationen Sie über ein Debug-Eigenschaft-Objekt abzurufen.  
+Gibt an, welche Informationen über ein Debug-Eigenschaften Objekt abgerufen werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -71,62 +71,62 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
   
 ## <a name="members"></a>Member  
  DEBUGPROP_INFO_FULLNAME  
- Initialisieren und Verwenden der `bstrFullName` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrFullName` .  
   
  DEBUGPROP_INFO_NAME  
- Initialisieren und Verwenden der `bstrName` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrName` .  
   
  DEBUGPROP_INFO_TYPE  
- Initialisieren und Verwenden der `bstrType` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrType` .  
   
  DEBUGPROP_INFO_VALUE  
- Initialisieren und Verwenden der `bstrValue` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrValue` .  
   
  DEBUGPROP_INFO_ATTRIB  
- Initialisieren und Verwenden der `dwAttrib` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `dwAttrib` .  
   
  DEBUGPROP_INFO_PROP,  
- Initialisieren und Verwenden der `pProperty` Feld mit einem [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle.  
+ Initialisieren/verwenden Sie das `pProperty` Feld, das eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle enthält.  
   
  DEBUGPROP_INFO_VALUE_AUTOEXPAND  
- Gibt an, dass das Feld "Wert" den Wert automatisch erweitert, für diesen Objekttyp enthalten soll.  
+ Gibt an, dass das Wertfeld für diesen Objekttyp den automatisch erweiterten Wert enthalten soll, falls verfügbar.  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
  Veraltet.  
   
  DEBUGPROP_INFO_VALUE_RAW  
- Alle Werte verschönert bzw. die Elemente keine zurück (d. h. nicht formatieren die Werte).  
+ Geben Sie keine verzierten Werte oder Member zurück (d. h. die Werte nicht formatieren).  
   
  DEBUGPROP_INFO_VALUE_NO_TOSTRING  
- Ist keine spezielle synthetischen Werte zurückgegeben (rufen Sie z. B. nicht `ToString()` auf ein Objekt, das einen Wert zu erzeugen).  
+ Geben Sie keine besonderen Werte mit synthetischer Wert zurück (z. b. nicht für `ToString()` ein Objekt aufzurufen, um einen Wert zu erhalten).  
   
  DEBUGPROP_INFO_NONE  
- Gibt an, dass keine Flags festgelegt sind.  
+ Gibt an, dass keine Flags festgelegt wurden.  
   
  DEBUGPROP_INFO_STANDARD  
- Initialisieren und Verwenden der `dwAttrib`, `bstrName`, `bstrType`, und `bstrValue` Felder.  
+ Initialisieren/verwenden Sie `dwAttrib` die `bstrName` Felder,, `bstrType` und `bstrValue` .  
   
  DEBUGPROP_INFO_All  
  Gibt eine Maske aller Flags an.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Werte werden übergeben, um die [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), und [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) Methoden, um anzugeben, welche Felder initialisiert werden, werden die [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Werte werden an die Methoden [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)und [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) übermittelt, um anzugeben, welche Felder [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Struktur initialisiert werden sollen.  
   
- Diese Werte werden auch verwendet, für die `dwFields` Mitglied der `DEBUG_PROPERTY_INFO` Struktur, um anzugeben, welche Felder der Struktur verwendet und gültig sind, wenn die Struktur zurückgegeben wird.  
+ Diese Werte werden auch für den `dwFields` -Member der `DEBUG_PROPERTY_INFO` -Struktur verwendet, um anzugeben, welche Felder der Struktur verwendet und gültig sind, wenn die Struktur zurückgegeben wird.  
   
- Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
+ Diese Werte können mit einem bitweisen kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
+ [Enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
  [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

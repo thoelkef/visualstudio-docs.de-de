@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Item | Microsoft-Dokumentation'
+title: 'Idiaenumdebug bugstreamdata:: Item | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b80f71b2ca5d718f2de834389b4caab728e1f1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197887"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
@@ -38,23 +38,23 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>Parameter  
  Index  
- [in] Der Index des Datensatzes abgerufen werden sollen. Der Index befindet sich im Bereich von 0 bis `count`-1, wobei `count` von zurückgegeben wird [idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).  
+ in Der Index des abzurufenden Datensatzes. Der Index liegt zwischen 0 und `count` -1, wobei `count` von [idiaenumdebug bugstreamdata:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)zurückgegeben wird.  
   
  cbData  
- [in] Größe des Datenpuffers in Byte.  
+ in Größe des Daten Puffers in Bytes.  
   
  pcbData  
- [out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten in den angegebenen Datensatz verfügbar sind.  
+ vorgenommen Gibt die Anzahl der zurückgegebenen Bytes zurück. Wenn `data` ist `NULL` , `pcbData` enthält die Gesamtanzahl der Daten bytes, die im angegebenen Datensatz verfügbar sind.  
   
  data[]  
- [out] Ein Puffer, der mit der Debug-Stream-Datensatzdaten gefüllt wird.  
+ vorgenommen Ein Puffer, der mit den Daten des Debug-Datensatzes aufgefüllt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` für ungültige Parameter und, wenn die `index` -Parameter ist außerhalb des gültigen Bereichs.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` für ungültige Parameter und zurück `index` , wenn der Parameter außerhalb des gültigen Bereichs liegt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
- [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
+ [Idiaenumdebug bugstreamdata:: Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
+ [Idiaenumdebug:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [Idiaenumdebug bugstreamdata:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
  [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8fc2af704ab587480913c51cdbc593e6cc0f483a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663465"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox
@@ -21,11 +21,11 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>So fügen Sie innerhalb des aktuellen Projekts eine Aktivität hinzu
 
-1. Fügen Sie dem aktuellen Workflowprojekt eine neue benutzerdefinierte Aktivität hinzu. [!INCLUDE[crabout](../includes/crabout-md.md)] Hinzufügen einer neuen benutzerdefinierten Aktivität zum Projekt finden Sie unter Gewusst [wie: Hinzufügen eines neuen Elements zu einem Workflow Projekt](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1. Fügen Sie dem aktuellen Workflowprojekt eine neue benutzerdefinierte Aktivität hinzu. [!INCLUDE[crabout](../includes/crabout-md.md)] zum Hinzufügen einer neuen benutzerdefinierten Aktivität zum Projekt finden Sie unter Gewusst [wie: Hinzufügen eines neuen Elements zu einem Workflow Projekt](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2. Fügen Sie der Aktivität benutzerdefinierte Logik hinzu.
 
-3. Erstellen Sie das Projekt. Wenn der Buildvorgang erfolgreich war, wird eine neue Kategorie in der **Toolbox** namens "\<*Project Name*>" mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
+3. Erstellen Sie das Projekt. Wenn der Buildvorgang erfolgreich war, wird eine neue Kategorie mit dem Namen "" in der **Toolbox** \<*project name*> mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
 
     > [!NOTE]
     > Wenn die Toolbox zurückgesetzt wird, werden benutzerdefinierte Aktivitäten entfernt. Dies gilt auch, wenn die Projektmappe erneut erstellt wird. Um die Toolbox erneut mit benutzerdefinierten Aktivitäten aufzufüllen, nachdem sie zurückgesetzt wurde, starten Sie [!INCLUDE[vs2010](../includes/vs2010-md.md)] erneut.
@@ -40,7 +40,7 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 1. Öffnen Sie eine Projektmappe, die mindestens ein Workflowprojekt und entweder ein benutzerdefiniertes Aktivitätsbibliotheksprojekt oder ein anderes Workflowprojekt enthält, in dem eine benutzerdefinierte Aktivität definiert wird.
 
-2. Erstellen Sie beide Projekte. Wenn die Builds erfolgreich waren, wird eine neue Kategorie in der **Toolbox** namens "\<*Project Name*>" mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
+2. Erstellen Sie beide Projekte. Wenn die Builds erfolgreich waren, wird eine neue Kategorie mit dem Namen "" in der **Toolbox** \<*project name*> mit der benutzerdefinierten Aktivität angezeigt, die in dieser Kategorie enthalten ist.
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>So fügen Sie eine Aktivität aus einer Assembly der Toolbox hinzu
 
@@ -52,11 +52,11 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 4. Wählen Sie die Assembly aus, und klicken Sie auf **OK**. Die benutzerdefinierte Aktivitätskomponente wird der Liste der Komponenten hinzugefügt und automatisch ausgewählt.
 
-    1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+    1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 5. Um die Toolbox anzuzeigen, wählen Sie im Menü **Ansicht** die Option **Toolbox** aus.
 
 6. Die benutzerdefinierte Aktivität wird in der **Toolbox** unter der Kategorie angezeigt, die sich vor dem Hinzufügen des Elements im Fokus befand. Wenn z. b. die Kategorie **Allgemein** in der **Toolbox** vor dem Hinzufügen des Toolbox Elements ausgewählt wurde, wird die Aktivität unter der Kategorie **Allgemein** angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden des Workflow-Designers](../workflow-designer/using-the-workflow-designer.md)

@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89091450"
 ---
-# <a name="install-third-party-analyzers"></a>Installieren von Drittanbieter-Analysen
+# <a name="install-third-party-analyzers"></a>Installieren von Drittanbieteranalysetools
 
 Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Roslyn*). Diese Analysen sind immer eingeschaltet. Sie können zusätzliche Analysen entweder als nuget-Pakete oder als Visual Studio-Erweiterungen in *VSIX* -Dateien installieren.
 
@@ -63,7 +63,7 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Ros
 
 3. Geben Sie im Suchfeld den Namen der Analyzer-Erweiterung ein, die Sie installieren möchten. Beispielsweise können Sie [die Microsoft FxCop-Analysen installieren](install-fxcop-analyzers.md#vsix) , um den Code unter anderem auf Sicherheits-und Leistungsprobleme zu überprüfen.
 
-4. Wählen Sie **Herunterladen** aus.
+4. Klicken Sie auf **Herunterladen**.
 
    Die Erweiterung wird heruntergeladen.
 

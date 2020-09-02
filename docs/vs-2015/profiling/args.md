@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65759da4363891c713f906e6cb10f00443bcbceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197909"
 ---
 # <a name="args"></a>Args
@@ -34,7 +34,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  Eine Liste von Argumenten für die Zielanwendung des Befehls **Starten**.  
   
 ## <a name="required-options"></a>Erforderliche Optionen  
- **Starten:** `AppName`  
+ **Starten** Sie Folgendes: `AppName`  
  Startet die angegebene Anwendung und beginnt die Profilerstellung mit der Samplingmethode.  
   
 ## <a name="example"></a>Beispiel  
@@ -45,8 +45,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595019"
 ---
 # <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Umgebung"
@@ -27,7 +27,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="general"></a>Allgemein
  `DTE.Properties("Environment", "General")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |ShowStatusBar|Get/Set (boolesch)|Bestimmt, ob die Statusleiste sichtbar ist.|
 |WindowMenuContainsNItems|Get/Set (kurzer Name)|Bestimmt, wie Dokumentfenster unten im Windows-Menü erfasst werden.|
@@ -42,7 +42,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="add-inmacros-security"></a>Add-In/Makrosicherheit
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |MacrosEnabled|Get/Set (boolesch)|Ermöglicht die Ausführung von Makros.|
 |AddinsEnabled|Get/Set (boolesch)|Ermöglicht das Laden von Add-Ins.|
@@ -51,7 +51,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="documents"></a>Dokumente
  `DTE.Properties("Environment", "Documents")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (boolesch)|Bestimmt, ob zum Öffnen einer neuen Datei das aktuelle Dokumentfenster verwendet wird, wenn das aktuelle Dokument gespeichert wird. `false` bedeutet, dass für jedes geöffnete Dokument immer ein neues Dokumentfenster verwendet wird.|
 |DetectFileChangesOutsideIDE|Get/Set (boolesch)|Bestimmt, ob die Umgebung in der IDE geöffnete Dateien automatisch neu lädt, wenn das Betriebssystem die IDE benachrichtigt, dass die Dateien auf der Festplatte geändert wurden.|
@@ -63,12 +63,12 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (boolesch)|Speichert Dokumente als Unicode, wenn Daten nicht in der Codepage gespeichert werden können.|
 |DontShowGlobalUndoChangeLossDialog|Get/Set (boolesch)|Zeigt eine Warnung an, wenn andere bearbeitete Dateien durch globales Rückgängigmachen geändert werden.|
 |AllowEditingReadOnlyFiles|Get/Set (boolesch)|Ermöglicht das Bearbeiten schreibgeschützter Dateien, gibt jedoch eine Warnung aus, wenn versucht wird, die Dateien zu speichern.|
-|DocumentDockPreference|Get/Set (Enumeration)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions> Die Position in der Gruppe der Registerkarten, an der das geöffnete Dokument eingefügt wird.|
+|DocumentDockPreference|Get/Set (Enumeration)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Die Position in der Gruppe der Registerkarten, an der das geöffnete Dokument eingefügt wird.|
 
 ## <a name="extension-manager"></a>Erweiterungs-Manager
  `DTE.Properties("Environment", "ExtensionManager")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |EnableAdminExtensions|Get/Set (boolesch)|Lädt Erweiterungen pro Benutzer, wenn Visual Studio mit Administratoranmeldeinformationen ausgeführt wird. Visual Studio muss neu gestartet werden, nachdem dieser Wert geändert wurde.|
 |EnableOnline|Get/Set (boolesch)|Ermöglicht den Zugriff auf die Erweiterungen in der Visual Studio Gallery.|
@@ -77,7 +77,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="find-and-replace"></a>Suchen und Ersetzen
  `DTE.Properties("Environment", "FindAndReplace")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |ShowWarningMessages|Get/Set (boolesch)|Zeigt Warnmeldungen an.|
 |InitializeFromEditor|Get/Set (boolesch)|Füllt das Feld **Suchen nach** automatisch mit Text aus dem Editor auf.|
@@ -87,7 +87,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="import-and-export-settings"></a>Einstellungen importieren und exportieren
  `DTE.Properties("Environment", "Import and Export Settings")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |TrackTeamSettings|Get/Set (boolesch)|Verwendet die Einstellungen in der von TeamSettingsFile angegebenen Datei.|
 |TeamSettingsFile|Get/Set (Zeichenfolge)|Der Name der Datei, die über Teameinstellungen verfügt.|
@@ -96,21 +96,21 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="international-settings"></a>Internationale Einstellungen
  `DTE.Properties("Environment", "International")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |Sprache|Get/Set (Zeichenfolge)|Der LCID-Wert der aktuellen Sprache für Visual Studio.|
 
 ## <a name="keyboard"></a>Tastatur
  `DTE.Properties("Environment", "Keyboard")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |Schema|Get/Set (Zeichenfolge)|Gibt eine Zeichenfolge zurück, die ein integriertes Schema oder den vollständigen Pfad der geladenen VSK-Datei enthält, oder gibt "(Standard)" zurück, wenn keine VSK-Datei geladen ist.|
 
 ## <a name="projects-and-solution"></a>Projekte und Projektmappe
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |OnRunOrPreview|Get/Set (Zeichenfolge)|Bestimmt, ob die IDE alles speichert, bevor ein erstelltes Projekt in der Vorschau angezeigt oder ausgeführt wird.|
 |ProjectsLocation|Get/Set (Zeichenfolge)|Bestimmt das Standardverzeichnis, in dem das Dialogfeld **Projekt hinzufügen** neue Projekte speichert.|
@@ -133,7 +133,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="startup"></a>Start
  `DTE.Properties("Environment", "Startup")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |OnStartUp|Get/Set (Enumeration)|Beim Starten auszuführende Aktion aus <xref:EnvDTE.vsStartUp> mit Werten von 0 bis 5:<br /><br /> -   0: Startseite öffnen<br />-   1: Letzte Projektmappe laden<br />-   2: Dialogfeld **Projekt öffnen** anzeigen<br />-   3: Dialogfeld **Neues Projekt** anzeigen<br />-   4: Leere Umgebung anzeigen<br />-   5: Startseite anzeigen|
 |StartPageRSSUrl|Get/Set (Zeichenfolge)|Die URL für den RSS-Feed, der beim Starten verwendet wird.|
@@ -143,7 +143,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="tasklist"></a>TaskList
  `DTE.Properties("Environment", "TaskList")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (boolesch)|Gibt an, ob beim Löschen von Aufgaben aus der **Aufgabenliste** ein Bestätigungsdialogfeld angezeigt wird.|
 |WarnOnAddingHiddenItem|Get/Set (boolesch)|Gibt an, ob beim Hinzufügen einer Benutzeraufgabe, die nicht angezeigt wird, eine Warnung angezeigt wird.|
@@ -153,17 +153,17 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 ## <a name="web-browser"></a>Webbrowser
  `DTE.Properties("Environment", "WebBrowser")`
 
-|Eigenschaftenelementname|Wert|Beschreibung|
+|Eigenschaftenelementname|Wert|BESCHREIBUNG|
 |------------------------|-----------|-----------------|
 |HomePage|Get/Set (Zeichenfolge)|Stellt die URL der Homepage dar.|
 |SearchPage|Get/Set (Zeichenfolge)|Stellt die URL der Suchseite dar.|
 |ViewSourceIn|Get/Set (Enumeration)|<xref:EnvDTE.vsBrowserViewSource> (Quelle, Entwurf, Extern).|
 |ViewSourceExternalProgram|Get/Set (Zeichenfolge)|Der Pfad für die externe Quellanzeige.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Steuern der Einstellungen im Dialogfeld „Optionen“](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Bestimmen der Namen von Eigenschaftenelementen auf Optionsseiten](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Optionsseite, Eigenschaften des Knotens „Schriftarten und Farben“](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-- [Optionsseite, Eigenschaften des Knotens „Text-Editor“](../../ide/reference/options-page-text-editor-node-properties.md)
-- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
+- [Optionsseite, Eigenschaften des Knotens "Text-Editor"](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbafba72829a5dff8dd5665b6271088a3f9339db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663873"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Dynamische Eigenschaften der XAttribute-Klasse
@@ -23,9 +23,9 @@ In diesem Abschnitt werden die dynamischen Eigenschaften des <xref:System.Xml.Li
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Topic|Beschreibung|
+|Thema|BESCHREIBUNG|
 |-----------|-----------------|
 |[Wert](../designers/value-xattribute-dynamic-property.md)|Ruft den Wert des XML-Attributs ab oder legt ihn fest.|
 
-## <a name="see-also"></a>Siehe auch
- [dynamische Eigenschaften der XElement-Klasse](../designers/xelement-class-dynamic-properties.md) <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> [LINQ to XML dynamische Eigenschaften](../designers/linq-to-xml-dynamic-properties.md)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>Dynamische Eigenschaften der [XElement-Klasse](../designers/xelement-class-dynamic-properties.md) [LINQ to XML dynamischen Eigenschaften](../designers/linq-to-xml-dynamic-properties.md)

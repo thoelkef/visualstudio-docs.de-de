@@ -1,5 +1,5 @@
 ---
-title: UnterstütztLanguageDropDown-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: SupportsLanguageDropDown-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1230b493fe746a272cf4ca4cffe9d197afd8ba1b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699467"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown-Element (Visual Studio-Vorlagen)
-Gibt an, ob die Webelementvorlage für mehrere Sprachen identisch ist und ob die Option **Sprache** im Dialogfeld **Neues Element** hinzufügen aktiviert ist.
+Gibt an, ob die Webelement Vorlage für mehrere Sprachen identisch ist und ob die **sprach** Option im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
- \<VSTemplate \<> TemplateData> \<unterstütztLanguageDropDown>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsLanguageDropDown>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,31 +37,31 @@ Gibt an, ob die Webelementvorlage für mehrere Sprachen identisch ist und ob die
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss `true` `false`entweder oder sein, was angibt, ob die Option **Sprache** im Dialogfeld **Neues Element** hinzufügen verfügbar ist.
+ Der Text muss entweder `true` oder lauten `false` und gibt an, ob die **sprach** Option im Dialogfeld **Neues Element hinzufügen** verfügbar ist.
 
 ## <a name="remarks"></a>Bemerkungen
- `SupportsLanguageDropDown` ist ein optionales Element. Der Standardwert ist `false`.
+ `SupportsLanguageDropDown` ist ein optionales Element. Standardwert: `false`.
 
- Das `SupportsLanguageDropDown` Element ist nur für Webelementvorlagen verfügbar.
+ Das- `SupportsLanguageDropDown` Element ist nur für Webelement Vorlagen verfügbar.
 
- Wenn der Wert für dieses `true`Element auf festgelegt ist, ist die Elementvorlage für alle Programmiersprachen identisch, und die Option **Sprache** ist im Dialogfeld **Neues Element hinzufügen** aktiviert. Mit dieser Option können Sie die Programmiersprache des neuen Elements auswählen, das Sie aus der Vorlage erstellen möchten.
+ Wenn der Wert für dieses Element auf festgelegt ist `true` , ist die Element Vorlage für alle Programmiersprachen identisch, und die **sprach** Option ist im Dialogfeld **Neues Element hinzufügen** aktiviert. Mit dieser Option können Sie die Programmiersprache des neuen Elements auswählen, das Sie aus der Vorlage erstellen möchten.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird angegeben, dass die Dropdown-Option **Sprache** angezeigt wird.
+ Im folgenden Beispiel wird angegeben, dass die Dropdown Option **Sprache** angezeigt werden soll.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -85,5 +86,5 @@ Gibt an, ob die Webelementvorlage für mehrere Sprachen identisch ist und ob die
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

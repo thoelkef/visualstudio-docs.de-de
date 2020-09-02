@@ -1,5 +1,5 @@
 ---
-title: Dialogfeld "Schriftart" (Microsoft Spy++-Hilfe) | Microsoft-Dokumentation
+title: Dialogfeld „Schriftart“ (Hilfe zu Microsoft Spy++) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,37 +12,37 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 41028caa5ef792941f82251cac1d6e5203464240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159578"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Dialogfeld "Schriftart" (Hilfe zu Microsoft Spy++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mithilfe dieses Dialogfelds konfigurieren Sie die Schriftart verwendet eine [Spy++-Ansichten](../debugger/spy-increment-views.md) Fenster. Um das Dialogfeld anzuzeigen, erweitern Sie die **Ansicht** Menü, und wählen Sie **Schriftart**.  
+Verwenden Sie dieses Dialogfeld, um die Schriftart zu konfigurieren, die in einem [Spy++-Ansichtsfenster](../debugger/spy-increment-views.md) verwendet wird. Um dieses Dialogfeld anzuzeigen, erweitern Sie das Menü **Ansicht** und wählen dann **Schriftart** aus.  
   
  Die folgenden Einstellungen sind verfügbar:  
   
  **Schriftart**  
- Die Schriftart für das Spy++-Ansichten-Fenster, das Fokus besitzt.  
+ Die Zeichen Schriftart für das Spy + +-Ansichts Fenster, das den Fokus besitzt.  
   
- **Schriftschnitt**  
- Der Schriftschnitt für das Spy++-Ansichten-Fenster, das Fokus besitzt.  
+ **Schriftart Stil**  
+ Der Schriftart Stil für das Spy + +-Ansichts Fenster, das den Fokus besitzt.  
   
  **Größe**  
- Der Schriftgrad für das Spy++-Ansichten-Fenster, das Fokus besitzt.  
+ Die Schriftgröße für das Spy + +-Ansichts Fenster, das den Fokus besitzt.  
   
  **Als Standard speichern**  
- Beim Öffnen von Spy++-Ansichten, wird die aktuelle schriftarteinstellungen als Ihre Einstellungen gespeichert.  
+ Speichert die aktuellen Schriftart Einstellungen als Vorlieben, wenn Spy + +-Ansichten geöffnet werden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
+ Erläutert die Spy + +-Struktur Ansichten von Fenstern, Meldungen, Prozessen und Threads.  
   
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
+ Stellt das Spy + +-Tool vor und erläutert, wie es verwendet werden kann.  
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+ Enthält Abschnitte, in denen jedes Spy + +-Menü und Dialogfeld beschrieben werden.

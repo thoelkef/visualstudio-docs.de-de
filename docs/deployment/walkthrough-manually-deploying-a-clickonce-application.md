@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249986"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung
@@ -149,7 +149,7 @@ Wenn Sie Visual Studio nicht verwenden können, um Ihre [!INCLUDE[ndptecclick](.
 
 13. Wenn Sie ein Zertifikat haben, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem aus, indem Sie die Schaltfläche mit den Auslassungs Punkten (**...**) verwenden. Geben Sie dann Ihr Zertifikat Kennwort ein.
 
-     - oder -
+     Oder
 
      Wenn Ihr Zertifikat in einem Zertifikat Speicher gespeichert ist, der von Ihrem Computer aus zugänglich ist, aktivieren Sie die Option **gespeichertes Zertifikat signieren** , und wählen Sie das Zertifikat aus der Liste bereitgestellt aus.
 
@@ -177,7 +177,7 @@ Wenn Sie Visual Studio nicht verwenden können, um Ihre [!INCLUDE[ndptecclick](.
 
 25. Wenn Sie ein Zertifikat haben, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem aus, indem Sie die Schaltfläche mit den Auslassungs Punkten (**...**) verwenden. Geben Sie dann Ihr Zertifikat Kennwort ein.
 
-     - oder -
+     Oder
 
      Wenn Ihr Zertifikat in einem Zertifikat Speicher gespeichert ist, der von Ihrem Computer aus zugänglich ist, aktivieren Sie die Option **gespeichertes Zertifikat signieren** , und wählen Sie das Zertifikat aus der Liste bereitgestellt aus.
 

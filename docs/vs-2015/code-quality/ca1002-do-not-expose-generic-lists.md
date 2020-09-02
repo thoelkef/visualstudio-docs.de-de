@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546847"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Generische Listen nicht verfügbar machen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|DoNotExposeGenericLists|
 |CheckId|CA1002|
@@ -36,7 +36,7 @@ ms.locfileid: "85546847"
  Ein Typ enthält einen extern sichtbaren Member, bei dem es sich um einen <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ handelt, der einen-Typ zurückgibt <xref:System.Collections.Generic.List%601?displayProperty=fullName> oder dessen Signatur einen- <xref:System.Collections.Generic.List%601?displayProperty=fullName> Parameter enthält.
 
 ## <a name="rule-description"></a>Beschreibung der Regel
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>ist eine generische Auflistung, die für die Leistung und nicht Vererbung konzipiert ist. <xref:System.Collections.Generic.List%601?displayProperty=fullName>enthält keine virtuellen Member, die das Ändern des Verhaltens einer geerbten Klasse vereinfachen. Die folgenden generischen Auflistungen sind für Vererbung konzipiert und sollten anstelle von verfügbar gemacht werden <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> ist eine generische Auflistung, die für die Leistung und nicht Vererbung konzipiert ist. <xref:System.Collections.Generic.List%601?displayProperty=fullName> enthält keine virtuellen Member, die das Ändern des Verhaltens einer geerbten Klasse vereinfachen. Die folgenden generischen Auflistungen sind für Vererbung konzipiert und sollten anstelle von verfügbar gemacht werden <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 

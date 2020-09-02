@@ -1,5 +1,5 @@
 ---
-title: UnterstütztMasterPage-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: SupportsMasterPage-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699453"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage-Element (Visual Studio-Vorlagen)
-Gibt an, ob das Kontrollkästchen **Masterseite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
+Gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
- \<VSTemplate \<> TemplateData> \<unterstütztMasterPage>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsMasterPage>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,29 +37,29 @@ Gibt an, ob das Kontrollkästchen **Masterseite auswählen** im Dialogfeld **Neu
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gibt Daten an, die die Vorlage kategorisieren, und definiert, wie sie im Dialogfeld **Neues Projekt** oder **Neues Element** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gibt Daten an, die die Vorlage kategorisieren, und definiert, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss `true` `false`entweder oder sein, was darauf hinweist, ob das Kontrollkästchen **Masterseite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
+ Der Text muss entweder `true` oder lauten `false` und gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
 ## <a name="remarks"></a>Bemerkungen
- `SupportsMasterPage` ist ein optionales Element. Der Standardwert ist `false`.
+ `SupportsMasterPage` ist ein optionales Element. Standardwert: `false`.
 
- Das `SupportsMasterPage` Element ist nur für Webelementvorlagen verfügbar.
+ Das- `SupportsMasterPage` Element ist nur für Webelement Vorlagen verfügbar.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden die Metadaten für ein Webprojekt veranschaulicht, das Unterstützung für eine Masterseite enthält.
+ Im folgenden Beispiel werden die Metadaten für ein Webprojekt veranschaulicht, das die Unterstützung für eine Master Seite enthält.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -83,5 +84,5 @@ Gibt an, ob das Kontrollkästchen **Masterseite auswählen** im Dialogfeld **Neu
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

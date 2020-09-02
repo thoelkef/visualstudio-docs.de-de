@@ -8,56 +8,56 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952698"
 ---
 # <a name="workspaces-and-language-services"></a>Arbeitsbereiche und Sprachdienste
 
-Sprachdienste bieten ["Ordner öffnen"](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Benutzer die gleichen umfassenden Sprachfunktionen werden verwendet, um bei der Arbeit mit Projektmappen und Projekten. Aktivieren eines Sprachdiensts möglicherweise selbst basierend auf die Dateierweiterung oder den Inhalt eines geöffneten Dokuments, obwohl diesem Sprachdienst "lose Datei" auf die syntaxhervorhebung beschränkt ist. Weitere Informationen sind erforderlich, um eine reichhaltigere Erfahrung zu bieten, beim Bearbeiten von/Überprüfen von Quellcode. Jeder Sprachdienst verfügt über eine eigene API für die Initialisierung mit diesen zusätzlichen kontextbezogenen Daten für ein Dokument. Dies wird in der Regel von ein Projektsystem, verwaltet die eng, auf den Sprachdienst sowohl für das Buildsystem gekoppelt ist.
+Sprachdienste können den Benutzern offener Ordner die gleichen Rich-Language-Funktionen bereitstellen, die bei der Arbeit mit Projekt [Mappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) und Projekten verwendet werden. Ein Sprachdienst kann basierend auf der Dateierweiterung oder dem Inhalt eines geöffneten Dokuments selbst aktiviert werden, obwohl der Sprachdienst "lose Datei" auf Syntax Hervorhebung beschränkt ist. Zusätzliche Informationen sind erforderlich, um beim Bearbeiten/überprüfen von Quellcode ein umfasseneres Verhalten zu bieten. Jeder Sprachdienst verfügt über eine eigene API für die Initialisierung mit diesen zusätzlichen kontextbezogenen Daten für ein Dokument. Dies wird in der Regel von einem Projekt System verwaltet, das sowohl mit dem Sprachdienst als auch mit dem Buildsystem eng gekoppelt ist.
 
 ## <a name="initialization"></a>Initialisierung
 
-In einem [Arbeitsbereich](workspaces.md), Sprachdienste werden initialisiert, indem ein <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> -Erweiterungspunkt an, die nur in diesem Sprachdienst spezialisiert und nicht bekannt ist, der die Erstellung von Builds. Auf diese Weise kann Besitzer einer Sprache des Diensts einen einzelnen öffnen-Ordner, die Erweiterung unabhängig davon, wie viele Muster befinden sich in Ordnern und Dateien für die Ausführung ihrer Compiler während eines Builds (z. B. MSBuild, Makefiles, usw.) verwalten. Wenn Dateien, die aus denen ein Kontext erstellt wurde, werden auf dem Datenträger geändert, und der Kontext aktualisiert wird, wird der aktualisierte Satz der dateikontexte des Sprachanbieters für den Dienst informiert. Der Dienstanbieter für die Sprache kann dann ein Modell aktualisieren.
+In einem [Arbeitsbereich](workspaces.md)werden Sprachdienste von einem <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> Erweiterungs Punkt initialisiert, der sich nur auf diesen Sprachdienst spezialisiert hat und nichts über die Builderstellung weiß. Auf diese Weise kann der Besitzer eines sprach Dienstanbieter unabhängig davon, wie viele Muster in Ordnern und Dateien für die Ausführung des Compilers während eines Builds vorhanden sind (z. b. MSBuild, Makefiles usw.), eine einzelne Erweiterung für geöffnete Ordner verwalten. Wenn Dateien, aus denen ein Datei Kontext erstellt wurde, auf dem Datenträger geändert werden und der Datei Kontext aktualisiert wird, wird der sprach Dienstanbieter über den aktualisierten Satz von Datei Kontexten benachrichtigt. Der sprach Dienstanbieter kann dann sein Modell aktualisieren.
 
-Wenn ein Dokument im Editor geöffnet ist, berücksichtigt Visual Studio nur Sprache Dienstanbieter, die Kontext-Dateitypen erfordern für die eine übereinstimmende Datei Kontextanbieter gefunden werden kann. Es übergibt dann die Datei Kontext(e) aus der entsprechenden Anbieter an den Dienstanbieter für ausgewählte Sprache über `ILanguageServiceProvider.InitializeAsync`. Der Dienstanbieter für die Sprache mit Funktionsweise, dass Kontextdaten für die Datei ein Implementierungsdetail des Dienstanbieters Sprache ist, aber die erwartete Benutzeroberfläche eine umfangreichere Sprachdienst ist, Dokument geöffnet.
+Wenn ein Dokument im Editor geöffnet wird, berücksichtigt Visual Studio nur sprach Dienstanbieter, die Datei Kontext Typen benötigen, für die ein übereinstimmender Datei Kontext Anbieter gefunden werden kann. Anschließend übergibt er die Datei Kontext von den übereinstimmenden Anbietern an den ausgewählten sprach Dienstanbieter über `ILanguageServiceProvider.InitializeAsync` . Das, was der Sprachdienst Anbieter mit den Datei Kontext Daten durchführt, ist ein Implementierungsdetail des sprach Dienstanbieters, aber die erwartete Benutzer Leistung ist ein umfangreicherer Sprachdienst für das geöffnete Dokument.
 
-## <a name="using-ilanguageserviceprovider"></a>Verwenden von ILanguageServiceProvider
+## <a name="using-ilanguageserviceprovider"></a>Verwenden von ilanguageserviceprovider
 
-Der Sprachdienst benachrichtigt werden, wenn ein Kontext erstellt wird eine `ContextType` entspricht einer der der `SupportedContextTypes` Werte des Servers Sprache export-Attribut.
+Der Sprachdienst wird benachrichtigt, wenn ein Datei Kontext mit einem erstellt wird, der mit einem der `ContextType` `SupportedContextTypes` Werte des Language Server-Export Attributs übereinstimmt.
 
-Um einen Sprachdienst zu unterstützen, müssen eine Erweiterung:
+Um einen Sprachdienst zu unterstützen, benötigt eine Erweiterung Folgendes:
 
-- Eine eindeutige `Guid`. Dies wird zum `SupportedContextTypes` Attribut Argumente und in eine `FileContext` Objekt.
-- Language-Dateikontext
+- Eine eindeutige `Guid` . Diese wird für `SupportedContextTypes` Attribut Argumente und in einem- `FileContext` Objekt verwendet.
+- Sprachdatei Kontext
   - Anbieterfactory
-    - `ExportFileContextProviderAttribute` Attribut, mit den oben generiert, die eindeutig `Guid` in `SupportedContextTypes`
+    - `ExportFileContextProviderAttribute`Attribut mit dem obigen, das in eindeutig generiert wurde `Guid``SupportedContextTypes`
     - Implementiert `IWorkspaceProviderFactory<IFileContextProvider>`
-  - Anbieterimplementierung der `IFileContextProvider.GetContextsForFileAsync`
-    - Erstellt ein neues `FileContext` mit der `contextType` Konstruktorargument als eindeutig generierten `Guid`
-    - Verwenden der `Context` Eigenschaft der `FileContext` um zusätzliche Daten zu gewähren. der `ILanguageServiceProvider`
+  - Anbieter Implementierung von `IFileContextProvider.GetContextsForFileAsync`
+    - Erstellen Sie eine neue `FileContext` mit dem `contextType` Konstruktorargument als eindeutig generierte `Guid`
+    - Verwenden Sie die- `Context` Eigenschaft des `FileContext` , um zusätzliche Daten für das `ILanguageServiceProvider`
 - Sprachdienst
   - Anbieterfactory
-    - `ExportLanguageServiceProvider` Attribut, mit den oben generiert, die eindeutig `Guid` in `SupportedContextTypes`
+    - `ExportLanguageServiceProvider`Attribut mit dem obigen, das in eindeutig generiert wurde `Guid``SupportedContextTypes`
     - Implementiert `IWorkspaceProviderFactory<ILanguageServiceProvider>`
   - Anbieter
     - Implementiert `ILanguageServiceProvider`
-    - Verwendung `ILanguageServiceProvider.InitializeAsync` Sprachdienste für die angegebenen Argumente aktivieren, wenn eine Datei geöffnet ist
-    - Verwendung `ILanguageServiceProvider.UninitializeAsync` , deaktivieren Sprachdienste für die angegebenen Argumente aus, wenn eine Datei geschlossen wird
+    - Verwenden `ILanguageServiceProvider.InitializeAsync` Sie, um Sprachdienste für die bereitgestellten Argumente zu aktivieren, wenn eine Datei geöffnet wird.
+    - Verwenden `ILanguageServiceProvider.UninitializeAsync` Sie, um Sprachdienste für die bereitgestellten Argumente zu deaktivieren, wenn eine Datei geschlossen wird.
 
 >[!WARNING]
->Die `ILanguageServiceProvider` Methoden durch den Arbeitsbereich auf dem Hauptthread aufgerufen werden können. Erwägen Sie die Planung von Arbeiten in einem anderen Thread aus, um zu vermeiden, Einführung in die Verzögerungen.
+>Die `ILanguageServiceProvider` Methoden können vom Arbeitsbereich im Haupt Thread aufgerufen werden. Planen Sie die Planung von Arbeitsaufgaben in einem anderen Thread, um die Einführung von UI-Verzögerungen
 
 ## <a name="language-server-protocol"></a>Sprachserverprotokoll
 
-Die `Microsoft.VisualStudio.Workspace.*` APIs sind nicht die einzige Möglichkeit, den Sprachdienst im "Ordner öffnen" zu aktivieren. Eine weitere Option ist einen Sprache-Server verwenden. Weitere Informationen finden Sie Informationen zu den [Sprachserverprotokoll](language-server-protocol.md).
+Die `Microsoft.VisualStudio.Workspace.*` APIs sind nicht die einzige Möglichkeit, ihren Sprachdienst im geöffneten Ordner zu aktivieren. Eine andere Möglichkeit besteht darin, einen Sprachserver zu verwenden. Weitere Informationen finden Sie unter [sprach Server Protokoll](language-server-protocol.md).
 
-## <a name="related-interfaces"></a>Zugehörigen Schnittstellen
+## <a name="related-interfaces"></a>Verwandte Schnittstellen
 
-- <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> wird aufgerufen, wenn eine Datei mit übereinstimmenden Dateitypen geöffnet oder für die Bearbeitung geschlossen wird.
+- <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> wird aufgerufen, wenn eine Datei mit übereinstimmenden Dateitypen zum Bearbeiten geöffnet oder geschlossen wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Arbeitsbereich erstellen](workspace-build.md) -Buildsysteme für "Ordner öffnen" unterstützt z.B. MSBuild und Makefiles.
+* Der [Arbeitsbereich Build](workspace-build.md) : der Ordner wird geöffnet und unterstützt Buildsysteme wie MSBuild und Makefiles.

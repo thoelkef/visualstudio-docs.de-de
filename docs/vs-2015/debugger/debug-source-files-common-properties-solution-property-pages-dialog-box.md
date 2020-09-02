@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Quelle, allgemeine Eigenschaften, Lösung Eigenschaft Eigenschaftenseiten (Dialogfeld) | Microsoft-Dokumentation
+title: Quelldateien debuggen, allgemeine Eigenschaften, Projektmappen-Eigenschaften Seiten (Dialog Feld) Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47fb2511e39153753a2c27483dd6ac96c26c9e83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143031"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)
@@ -46,6 +46,6 @@ Auf dieser Eigenschaftenseite wird angegeben, wo der Debugger beim Debuggen der 
  **Nach folgenden Quelldateien nicht suchen**  
  Geben Sie hier die Namen aller Quelldateien ein, die vom Debugger nicht gelesen werden sollen. Wird eine dieser Dateien vom Debugger in einem der oben angegebenen Verzeichnisse gefunden, wird diese ignoriert. Wenn während des Debuggens das Dialogfeld **Quellcode suchen** angezeigt wird und Sie auf **Abbrechen** klicken, wird die gesuchte Datei dieser Liste hinzugefügt, sodass der Debugger nicht länger nach dieser Datei sucht.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

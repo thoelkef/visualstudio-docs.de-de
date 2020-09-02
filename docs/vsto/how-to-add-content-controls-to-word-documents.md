@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538384"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten
@@ -48,7 +48,7 @@ ms.locfileid: "85538384"
 
   Weitere Informationen zu Inhalts Steuerelementen finden Sie unter [Inhalts Steuerelemente](../vsto/content-controls.md).
 
-## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a>Hinzufügen von Inhalts Steuerelementen zur Entwurfszeit
+## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> Hinzufügen von Inhalts Steuerelementen zur Entwurfszeit
  Es gibt mehrere Möglichkeiten zum Hinzufügen von Inhaltssteuerelementen zum Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit:
 
 - Fügen Sie ein Inhaltssteuerelement von der Registerkarte **Word-Steuerelemente** der **Toolbox**hinzu.
@@ -94,7 +94,7 @@ ms.locfileid: "85538384"
 
 3. Klicken Sie in der Gruppe **Steuerelemente** auf das Symbol für das Inhaltssteuerelement, das Sie hinzufügen möchten.
 
-## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Hinzufügen von Inhalts Steuerelementen in einem Projekt auf Dokument Ebene zur Laufzeit
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Hinzufügen von Inhalts Steuerelementen in einem Projekt auf Dokument Ebene zur Laufzeit
  Sie können einem Dokument Inhaltssteuerelemente programmgesteuert zur Laufzeit hinzufügen, indem Sie Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft der `ThisDocument` -Klasse im Projekt verwenden. Jede Methode verfügt über drei Überladungen, mit denen Sie auf folgende Weisen ein Inhaltssteuerelement hinzufügen können:
 
 - Fügen Sie ein Steuerelement an der aktuellen Auswahl hinzu.
@@ -135,7 +135,7 @@ ms.locfileid: "85538384"
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Hinzufügen von Inhalts Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Hinzufügen von Inhalts Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können einem beliebigen geöffneten Dokument mithilfe eines VSTO-Add-Ins zur Laufzeit programmgesteuert Inhaltssteuerelemente hinzufügen. Zu diesem Zweck generieren Sie ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement, das auf einem geöffneten Dokument basiert, und verwenden dann die Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft dieses Hostelements. Jede Methode verfügt über drei Überladungen, mit denen Sie auf folgende Weisen ein Inhaltssteuerelement hinzufügen können:
 
 - Fügen Sie ein Steuerelement an der aktuellen Auswahl hinzu.

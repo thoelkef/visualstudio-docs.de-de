@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::IsUserCode | Microsoft-Dokumentation
+title: 'IDebugModule3:: isusercode | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 338c292868cd22a93113cc22e51a5aca995a517d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157295"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft Informationen zu gibt an, ob das Modul Benutzercode oder nicht darstellt.  
+Ruft Informationen darüber ab, ob das Modul Benutzercode darstellt oder nicht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int IsUserCode(
   
 #### <a name="parameters"></a>Parameter  
  `pfUser`  
- [out] Ungleich Null (`TRUE`), wenn das Modul Benutzercode darstellt, NULL (`FALSE`), wenn dies nicht der Fall.  
+ vorgenommen Ungleich NULL ( `TRUE` ), wenn das Modul Benutzercode darstellt, `FALSE` andernfalls NULL ().  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

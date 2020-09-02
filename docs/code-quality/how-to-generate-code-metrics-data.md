@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893410"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
@@ -336,7 +336,7 @@ Die `LinesOfCode` Metrik ist im neuen befehlszeilencodemetriktool präziser und 
 
 Andere Metriken wie `CyclomaticComplexity` und `MaintainabilityIndex` verwenden dieselben Formeln wie frühere Versionen von *Metrics.exe*, aber das neue Tool zählt die Anzahl der `IOperations` (logischen Quell Anweisungen) anstelle von Intermediate Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig von den Werten, die von der Visual Studio-IDE und früheren Versionen von *Metrics.exe*generiert werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden des Fensters "Code Metrikergebnisse"](../code-quality/working-with-code-metrics-data.md)
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)

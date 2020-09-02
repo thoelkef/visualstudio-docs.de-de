@@ -1,5 +1,5 @@
 ---
-title: Attribute der Websiteunterstützung | Microsoft-Dokumentation
+title: Attribute für die Website Unterstützung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144298"
 ---
 # <a name="web-site-support-attributes"></a>Attribute der Websiteunterstützung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Websiteprojekt kann erweitert werden, um Unterstützung für Web bietet Programmiersprachen zu vergleichen. Die Sprache muss selbst registrieren, mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , damit Projektvorlagen angezeigt werden können, in der **neue Website** im Dialogfeld, wenn die Sprache ausgewählt ist.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Das Website Projekt kann erweitert werden, um Unterstützung für webprogrammier Sprachen bereitzustellen. Die Sprache muss sich bei registrieren [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , damit Projektvorlagen im Dialogfeld **neue Website** angezeigt werden können, wenn die Sprache ausgewählt ist.  
   
- Das IronPython Studio-Beispiel enthält der Support-Website. Sie finden ihn mit der [VSSDK-Beispiele](../../misc/vssdk-samples.md). Sie enthält die folgenden Attributklassen zum Registrieren von IronPython als eine Codebehind-Sprache für die neue Web-Projekte.  
+ Das IronPython Studio-Beispiel enthält Website Unterstützung. Sie finden ihn mit den [VSSDK-Beispielen](../../misc/vssdk-samples.md). Sie enthält die folgenden Attribut Klassen, um IronPython als Code Behind-Sprache für neue Webprojekte zu registrieren.  
   
-## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute  
- Dieses Attribut befindet sich auf das Sprachprojekt. Die Liste der Web-Programmiersprachen, in der Sprache hinzugefügt der **Sprache** Liste der **neue Website** Dialogfeld. Z. B. die folgenden IronPython der Liste hinzugefügt:  
+## <a name="websiteprojectattribute"></a>Websiteprojectattribute  
+ Dieses Attribut wird in das Sprachprojekt eingefügt. Die Sprache wird der Liste der webprogrammier Sprachen in der Liste **Sprache** im Dialogfeld **neue Website** hinzugefügt. Im folgenden Beispiel wird IronPython zur Liste hinzugefügt:  
   
 ```  
 [WebSiteProject("IronPython", "Iron Python")]public class PythonProjectPackage : ProjectPackage  
 ```  
   
- Dieses Attribut legt auch fest, den Vorlagenpfad zum Ordner "Templates" verweisen. Weitere Informationen zu den Speicherort der Ordner "Templates", finden Sie unter [Vorlagen für die Websiteunterstützung](../../extensibility/internals/web-site-support-templates.md).  
+ Dieses Attribut legt auch den Vorlagen Pfad so fest, dass er auf den Vorlagen Ordner verweist. Weitere Informationen zum Speicherort des Ordners "Vorlagen" finden Sie [unter Vorlagen für Website Unterstützung](../../extensibility/internals/web-site-support-templates.md).  
   
-## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute  
- Dieses Attribut befindet sich auf das Sprachprojekt. Es ermöglicht das Websiteprojekt zu schachteln, einen Dateityp (verknüpft) unter einem anderen Dateityp (primär) in der **Projektmappen-Explorer**.  
+## <a name="websiteprojectrelatedfilesattribute"></a>Websiteprojectrelatedfilesattribute  
+ Dieses Attribut wird in das Sprachprojekt eingefügt. Dadurch kann das Website Projekt einen Dateityp (Related) unter einem anderen Dateityp (primär) im **Projektmappen-Explorer**Schachteln.  
   
  Beispiel:  
   
@@ -42,10 +42,10 @@ ms.locfileid: "68144298"
 [WebSiteProjectRelatedFiles("aspx", "py")]public class PythonProjectPackage : ProjectPackage  
 ```  
   
- Gibt an, dass eine IronPython-Codebehind-Datei mit einer ASPX-Datei verknüpft ist. Wenn eine neue ASPX-Webseite in einer Projektmappe der IronPython-Web-Standort erstellt wird, wird eine neue .py-Quelldatei wird generiert und als untergeordneter Knoten der ASPX-Seite angezeigt wird.  
+ Gibt an, dass eine IronPython-Code Behind-Datei mit einer ASPX-Datei verknüpft ist. Wenn eine neue ASPX-Webseite in einer IronPython-Website Lösung erstellt wird, wird eine neue py-Quelldatei generiert und als untergeordneter Knoten der ASPX-Seite angezeigt.  
   
-## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
- Dieses Attribut wird auf das Sprachpaket für das Projekt eingefügt. Er wählt den Intellisense-Anbieter für die Sprache aus.  
+## <a name="provideintellisenseproviderattribute"></a>Provideintellisentsproviderattribute  
+ Dieses Attribut wird im Sprachprojekt Paket abgelegt. Er wählt den IntelliSense-Anbieter für die Sprache aus.  
   
  Beispiel:  
   
@@ -53,9 +53,9 @@ ms.locfileid: "68144298"
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  
 ```  
   
- Gibt an, dass eine Instanz von PythonIntellisenseProvider, die implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, bei Bedarf auf Sprachdienste bieten erstellt werden soll.  
+ Gibt an, dass eine Instanz von pythonintellisenseprovider, die implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> , bei Bedarf erstellt werden soll, um Sprachdienste bereitzustellen.  
   
- Die IVsIntellisenseProject Implementierung Verweise verarbeitet und des Sprachcompilers aufruft, wenn eine Webseite mit Code angefordert wird jedoch nicht zwischengespeichert.  
+ Die ivsintellisenseproject-Implementierung behandelt Verweise und ruft den sprach Compiler auf, wenn eine Webseite mit Code angefordert, jedoch nicht zwischengespeichert wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Websiteunterstützung](../../extensibility/internals/web-site-support.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Abhängigkeit&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+title: '&lt;Abhängigkeits &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928956"
 ---
-# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Bereitstellung)
-Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendungsmanifests.
+# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeits &gt; Element (ClickOnce-Bereitstellung)
+Identifiziert die Version der zu installierenden Anwendung und den Speicherort des Anwendungs Manifests.
 
 ## <a name="syntax"></a>Syntax
 
@@ -71,63 +71,63 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `dependency` Element ist erforderlich. Es besitzt keine Attribute. Ein Bereitstellungsmanifest kann verfügen über mehrere `dependency` Elemente.
+ Das `dependency`-Element ist erforderlich. Sie besitzt keine Attribute. Ein Bereitstellungs Manifest kann mehrere `dependency` Elemente aufweisen.
 
- Die `dependency` Element drückt Abhängigkeiten für die hauptanwendung in der Regel für Assemblys, die innerhalb einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Wenn der Main.exe-Anwendung eine Assembly mit dem Namen DotNetAssembly.dll verarbeitet, muss die Assembly in einem Abhängigkeitsabschnitt aufgeführt werden. Abhängigkeiten kann jedoch auch andere Arten von Abhängigkeiten, z. B. eine bestimmte Version der common Language Runtime, Abhängigkeiten auf eine Assembly im globalen Assemblycache (GAC) oder auf ein COM-Objekt Ausdrücken. Da es sich um eine ohne-Touch-bereitstellungstechnologie handelt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann nicht initiieren herunter und installiert diese Arten von Abhängigkeiten, sondern es verhindert, dass die Anwendung ausgeführt wird, wenn eine oder mehrere der angegebenen Abhängigkeiten nicht vorhanden sind.
+ Das- `dependency` Element drückt normalerweise Abhängigkeiten für die Hauptanwendung auf Assemblys aus, die in einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung enthalten Wenn die Main.exe-Anwendung eine Assembly mit dem Namen DotNetAssembly.dll verwendet, muss diese Assembly in einem Abhängigkeits Abschnitt aufgeführt werden. Die Abhängigkeit kann jedoch auch andere Typen von Abhängigkeiten (z. b. Abhängigkeiten von einer bestimmten Version der Common Language Runtime, für eine Assembly im globalen Assemblycache (GAC) oder für ein COM-Objekt Ausdrücken. Da es sich um eine nicht Berührungs fähige Bereitstellungs Technologie handelt, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann den Download und die Installation dieser Abhängigkeits Typen nicht initiieren, aber es wird verhindert, dass die Anwendung ausgeführt wird, wenn mindestens eine der angegebenen Abhängigkeiten nicht vorhanden ist.
 
 ## <a name="dependentassembly"></a>dependentAssembly
- Erforderlich. Dieses Element enthält die `assemblyIdentity` Element. Die folgende Tabelle zeigt die Attribute der `dependentAssembly` unterstützt.
+ Erforderlich. Dieses Element enthält das- `assemblyIdentity` Element. In der folgenden Tabelle werden die von `dependentAssembly` unterstützten Attribute angezeigt.
 
-| Attribut | Beschreibung |
+| attribute | Beschreibung |
 |------------------| - |
-| `preRequisite` | Dies ist optional. Gibt an, dass diese Assembly im GAC bereits vorhanden sein sollte. Gültige Werte sind `true` und `false`. Wenn `true`, und die angegebene Assembly im globalen Assemblycache nicht vorhanden, die Anwendung nicht ausgeführt. |
-| `visible` | Dies ist optional. Gibt die obersten Ebene, einschließlich ihrer projektabhängigkeiten Anwendungsidentität. Intern vom [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsspeicher und Aktivierung zu verwalten. |
-| `dependencyType` | Erforderlich. Die Beziehung zwischen dieser Abhängigkeit und der Anwendung. Gültige Werte sind:<br /><br /> -   `install`. Komponente stellt eine separate Installation aus der aktuellen Anwendung dar.<br />-   `preRequisite`. Komponente ist von der aktuellen Anwendung erforderlich. |
-| `codebase` | Dies ist optional. Der vollständige Pfad zum Anwendungsmanifest. |
-| `size` | Dies ist optional. Die Größe des Anwendungsmanifests, in Bytes. |
+| `preRequisite` | Optional. Gibt an, dass diese Assembly bereits im GAC vorhanden sein soll. Gültige Werte sind `true` und `false`. Wenn `true` , und die angegebene Assembly nicht im GAC vorhanden ist, kann die Anwendung nicht ausgeführt werden. |
+| `visible` | Optional. Identifiziert die Anwendungs Identität der obersten Ebene, einschließlich ihrer Abhängigkeiten. Wird intern von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zum Verwalten des Anwendungs Speichers und der Aktivierung verwendet. |
+| `dependencyType` | Erforderlich. Die Beziehung zwischen dieser Abhängigkeit und der Anwendung. Gültige Werte sind:<br /><br /> -   `install`. Die Komponente stellt eine separate Installation aus der aktuellen Anwendung dar.<br />-   `preRequisite`. Die Komponente ist für die aktuelle Anwendung erforderlich. |
+| `codebase` | Optional. Der vollständige Pfad zum Anwendungs Manifest. |
+| `size` | Optional. Die Größe des Anwendungs Manifests (in Bytes). |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements. Der Inhalt des `assemblyIdentity` muss genau wie beschrieben in der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungsmanifest. Die folgende Tabelle zeigt die Attribute der `assemblyIdentity` Element.
+ Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements. Der Inhalt von `assemblyIdentity` muss mit dem im Anwendungs Manifest beschriebenen identisch sein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . In der folgenden Tabelle werden die Attribute des- `assemblyIdentity` Elements angezeigt.
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Name`|Erforderlich. Identifiziert den Namen der Anwendung.|
-|`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung, die im folgenden Format an: `major.minor.build.revision`|
-|`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge von 16 Zeichen, die die letzten 8 Bytes des SHA-1-Hashs des öffentlichen Schlüssels darstellt, unter denen die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel zum Signieren muss auf 2048 Bits betragen.|
-|`processorArchitecture`|Erforderlich. Gibt den Mikroprozessor an. Gültige Werte sind `x86` für 32-Bit-Windows und `IA64` für 64-Bit-Windows.|
-|`Language`|Dies ist optional. Identifiziert den zweiteiligen Sprachcodes der Assembly. So steht z. B. EN-US, der für Englisch (USA). Die Standardeinstellung ist `neutral`. Dieses Element ist der `asmv2` Namespace.|
-|`type`|Dies ist optional. Abwärtskompatibilität der Kompatibilität mit Windows-Seite-an-Seite-Technologie installieren. Der einzige zulässige Wert ist `win32`.|
+|`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|
+|`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge mit 16 Zeichen an, die die letzten 8 Bytes des SHA-1-Hashs des öffentlichen Schlüssels darstellt, unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren verwendet wird, muss 2048 Bit oder größer sein.|
+|`processorArchitecture`|Erforderlich. Gibt den Mikroprozessor an. Gültige Werte sind `x86` 32-Bit-Windows und `IA64` für 64-Bit-Windows.|
+|`Language`|Optional. Gibt die zwei teiligen Sprachcodes der Assembly an. Beispielsweise en-US, die für Englisch (USA) steht. Der Standardwert lautet `neutral`. Dieses Element befindet sich im- `asmv2` Namespace.|
+|`type`|Optional. Aus Gründen der Abwärtskompatibilität mit der parallelen Installation von Windows. Der einzige zulässige Wert ist `win32` .|
 
 ## <a name="hash"></a>hash
- Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Das `hash` -Element weist keine Attribute auf.
+ Das- `hash` Element ist ein optionales untergeordnetes Element des- `file` Elements. Das `hash` -Element weist keine Attribute auf.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als Sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurde. Wenn das `hash` Element nicht enthalten ist, wird diese Überprüfung nicht ausgeführt. Daher wird das Weglassen des- `hash` Elements nicht empfohlen.
 
 ## <a name="dsigtransforms"></a>dsig:Transforms
- Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.
+ Das- `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:Transforms` -Element weist keine Attribute auf.
 
 ## <a name="dsigtransform"></a>dsig:Transform
- Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Die folgende Tabelle zeigt die Attribute der `dsig:Transform` Element.
+ Das- `dsig:Transform` Element ist ein erforderliches untergeordnetes Element des- `dsig:Transforms` Elements. In der folgenden Tabelle werden die Attribute des- `dsig:Transform` Elements angezeigt.
 
-| Attribut | Beschreibung |
+| attribute | Beschreibung |
 |-------------| - |
-| `Algorithm` | Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`. |
+| `Algorithm` | Der Algorithmus, der verwendet wird, um den Digest für diese Datei zu berechnen. Derzeit ist der einzige Wert, der von verwendet [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird `urn:schemas-microsoft-com:HashTransforms.Identity` . |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
- Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Die folgende Tabelle zeigt die Attribute der `dsig:DigestMethod` Element.
+ Das- `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. In der folgenden Tabelle werden die Attribute des- `dsig:DigestMethod` Elements angezeigt.
 
-| Attribut | Beschreibung |
+| attribute | Beschreibung |
 |-------------| - |
-| `Algorithm` | Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`. |
+| `Algorithm` | Der Algorithmus, der verwendet wird, um den Digest für diese Datei zu berechnen. Derzeit ist der einzige Wert, der von verwendet [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird `http://www.w3.org/2000/09/xmldsig#sha1` . |
 
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
- Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
+ Das- `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
 
-## <a name="remarks"></a>Hinweise
- Bereitstellungsmanifeste verfügen in der Regel über eine einzige `assemblyIdentity` -Element, das den Namen und die Version des Anwendungsmanifests bezeichnet.
+## <a name="remarks"></a>Bemerkungen
+ Bereitstellungs Manifeste verfügen in der Regel über ein einzelnes- `assemblyIdentity` Element, das den Namen und die Version des Anwendungs Manifests identifiziert.
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel zeigt eine `dependency` Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest.
+ Das folgende Codebeispiel zeigt ein- `dependency` Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Manifest.
 
 ```xml
 <!-- Identify the assembly dependencies -->
@@ -146,7 +146,7 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ```
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel gibt eine Abhängigkeit für eine Assembly bereits im globalen Assemblycache installiert.
+ Im folgenden Codebeispiel wird eine Abhängigkeit von einer Assembly angegeben, die bereits im GAC installiert ist.
 
 ```xml
 <dependency>
@@ -157,7 +157,7 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ```
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel gibt eine Abhängigkeit von einer bestimmten Version der common Language Runtime.
+ Im folgenden Codebeispiel wird eine Abhängigkeit von einer bestimmten Version des Common Language Runtime angegeben.
 
 ```xml
 <dependency>
@@ -168,7 +168,7 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ```
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel gibt an, eine Betriebssystem-Abhängigkeit.
+ Das folgende Codebeispiel gibt eine Betriebssystem Abhängigkeit an.
 
 ```xml
 <dependency>
@@ -180,6 +180,6 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 </dependency>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)
-- [\<Dependency >-Element](../deployment/dependency-element-clickonce-application.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
+- [\<dependency> gewisses](../deployment/dependency-element-clickonce-application.md)

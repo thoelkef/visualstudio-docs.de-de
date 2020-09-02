@@ -1,5 +1,5 @@
 ---
-title: Ereignisprotokollierung für Office-Projektmappen
+title: Ereignisprotokollierung für Office-Lösungen
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,23 +16,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951938"
 ---
-# <a name="event-logging-for-office-solutions"></a>Ereignisprotokollierung für Office-Projektmappen
+# <a name="event-logging-for-office-solutions"></a>Ereignisprotokollierung für Office-Lösungen
   Sie können die Ereignisanzeige in Windows verwenden, um Ausnahmemeldungen anzuzeigen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgezeichnet werden, wenn Sie Office-Lösungen installieren oder deinstallieren. Sie können diese Meldungen aus der Ereignisprotokollierung verwenden, um Installations- und Bereitstellungsprobleme zu beheben.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="read-the-event-log"></a>Lesen Sie das Ereignisprotokoll
+## <a name="read-the-event-log"></a>Lesen des Ereignis Protokolls
  Öffnen Sie die **Ereignisanzeige** , und filtern Sie nach den Ereignissen, die Sie sehen möchten.
 
-### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Lesen Sie das Ereignisprotokoll in Windows Server 2003 und Windows XP
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>So lesen Sie das Ereignisprotokoll in Windows Server 2003 und Windows XP
 
-1. Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.
+1. Öffnen Sie in der Systemsteuerung die Option **Verwaltung**.
 
 2. Starten Sie **Ereignisanzeige**.
 
@@ -46,9 +46,9 @@ ms.locfileid: "62951938"
 
 7. Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.
 
-### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Lesen Sie das Ereignisprotokoll in Windows 7, Windows Vista und Windows Server 2008
+### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>So lesen Sie das Ereignisprotokoll in Windows 7, Windows Vista und Windows Server 2008
 
-1. Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.
+1. Öffnen Sie in der Systemsteuerung die Option **Verwaltung**.
 
 2. Starten Sie **Ereignisanzeige**.
 
@@ -74,12 +74,12 @@ ms.locfileid: "62951938"
 
   Nachdem eine Office-Projektmappe deinstalliert wurde, verbleiben die Ausnahmemeldungen im Ereignisprotokoll.
 
-  Um anzuzeigen, oder melden Sie ausnahmemeldungen, wenn eine Office-Projektmappe ausgeführt wird, finden Sie unter [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md) und [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md).
+  Informationen zum Anzeigen oder Protokollieren von Ausnahme Meldungen bei Ausführung einer Office-Projekt Mappe finden Sie unter [Debuggen von Office-Projekten](../vsto/debugging-office-projects.md) und [Debuggen](../vsto/debugging-office-projects.md)
 
 ### <a name="localization"></a>Lokalisierung
- Die Sprache einer Ausnahmemeldung wird durch die Sprache der Visual Studio-Tools für Office Runtime bestimmt. Wenn es sich bei der Computer des Endbenutzers das japanische Sprachpaket installiert hat, ist die Ausnahmemeldung z. B. in das Ereignisprotokoll in japanischer Sprache geschrieben.
+ Die Sprache einer Ausnahmemeldung wird durch die Sprache der Visual Studio-Tools für Office Runtime bestimmt. Wenn auf dem Computer des Endbenutzers beispielsweise das Language Pack Japanisch installiert ist, wird die Ausnahme Meldung in Japanisch in das Ereignisprotokoll geschrieben.
 
-## <a name="disable-the-event-logger"></a>Die ereignisprotokollierung deaktivieren
+## <a name="disable-the-event-logger"></a>Deaktivieren der Ereignisprotokollierung
  Standardmäßig wird die Ereignisprotokollierung aktiviert, wenn Sie Office-Projektmappen installieren oder deinstallieren. Sie können die Ereignisprotokollierung deaktivieren, indem Sie die Umgebungsvariable VSTO_EVENTLOGDISABLED auf „1“ (eins) festlegen.
 
 ### <a name="to-disable-the-event-log"></a>So deaktivieren Sie das Ereignisprotokoll
@@ -97,5 +97,5 @@ ms.locfileid: "62951938"
 6. Klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
-- [Problembehandlung bei Office-projektmappenbereitstellung](../vsto/troubleshooting-office-solution-deployment.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
+- [Problembehandlung bei der Bereitstellung von Office](../vsto/troubleshooting-office-solution-deployment.md)

@@ -1,5 +1,5 @@
 ---
-title: Symbole Element | Microsoft Docs
+title: Symbols-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699349"
 ---
 # <a name="symbols-element"></a>Symbols-Element
-Definiert GUIDs und IDs, die von anderen VSCT-Elementen verwendet werden. Bei nicht verwaltetem Code stammen diese Informationen in der Regel aus den Headerdateien, die von [Extern Element](../extensibility/extern-element.md)angegeben werden. Verwalteter Code verwendet die untergeordneten Elemente des Symbols-Elements, um diese Informationen zu definieren.
+Definiert GUIDs und IDs, die von anderen vsct-Elementen verwendet werden. Bei nicht verwaltetem Code stammen diese Informationen in der Regel aus den Header Dateien, die durch das [extern-Element](../extensibility/extern-element.md)angegeben werden. Verwalteter Code verwendet die untergeordneten Elemente des Symbols-Elements, um diese Informationen zu definieren.
 
- Wenn Sie eine .vsct-Datei aus einer vorhandenen Cto-Datei erstellen, werden die Symbole als untergeordnete Elemente des Symbols-Elements generiert. Weitere Informationen finden Sie unter [Gewusst wie: Erstellen einer . Vsct-Datei aus einer vorhandenen . Cto-Datei](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ Wenn Sie eine vsct-Datei aus einer vorhandenen CTO-Datei erstellen, werden die Symbole als untergeordnete Elemente des Elements "Symbols" generiert. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen einer. Vsct-Datei aus einer vorhandenen. CTO-Datei](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
- Das Symbols-Element sollte nicht mit dem [Define Element](../extensibility/define-element.md)verwechselt werden, das Name-Wert-Paare für die Verwendung durch den Präprozessor definiert.
+ Das Symbols-Element sollte nicht mit dem [define-Element](../extensibility/define-element.md)verwechselt werden, das Name-Wert-Paare für die Verwendung durch den Präprozessor definiert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,14 +47,14 @@ Definiert GUIDs und IDs, die von anderen VSCT-Elementen verwendet werden. Bei ni
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Guidsymbol|Definiert ein GUID-Symbol. GuidSymbol hat zwei erforderliche Attribute: Name und Wert. Der Name ist der Name des Symbols, und der Wert ist der Wert der GUID als Zeichenfolge.<br /><br /> Beispiel:\<GuidSymbol name="guidVsPackage1Pkg" value="'c5f54698-101a-4846-84d3-dc748f9cd848' />|
-|IDSymbol|Definiert ein Symbol. IDSymbol hat zwei erforderliche Attribute: Name und Wert. Der Name ist der Name des Symbols, und der Wert ist der Wert des Symbols als Zeichenfolge.<br /><br /> Beispiel:\<IDSymbol name="MyMenuGroup" value="0x1020" />|
+|GuidSymbol|Definiert ein GUID-Symbol. "Guidsymbol" hat zwei erforderliche Attribute: "Name" und "Value". Der Name ist der Name des Symbols, und der Wert ist der Wert der GUID als Zeichenfolge.<br /><br /> Beispiel: \<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
+|IDSymbol|Definiert ein Symbol. Idsymbol verfügt über zwei erforderliche Attribute: Name und Wert. Der Name ist der Name des Symbols, und der Wert ist der Wert des Symbols als Zeichenfolge.<br /><br /> Beispiel: \<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Das Stammelement der .vsct-Datei.|
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Das Stamm Element der vsct-Datei.|
 
 ## <a name="example"></a>Beispiel
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft-Dokumentation
+title: 'IDebugBreakpointRequest3:: GetRequestInfo2 | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d01d1b5e3aef83d948f058dfbf5dbdbb4c7cb782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158789"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft Informationen zu den Haltepunkt, der diese Anforderung Breakpoint beschreibt.  
+Diese Methode ruft die Haltepunkt-Anforderungs Informationen ab, die diese breakpointanforderung beschreiben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,19 +42,19 @@ int GetRequestInfo2(
   
 #### <a name="parameters"></a>Parameter  
  `dwFields`  
- [in] Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration, die bestimmen, welche Felder der `pBPRequestInfo` in ausgefüllt werden.  
+ in Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration, die bestimmen, welche Felder von `pBPRequestInfo` ausgefüllt werden sollen.  
   
  `bBPRequestInfo`  
- [out] Die [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur gefüllt werden soll.  
+ vorgenommen Die [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur, die ausgefüllt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Weitere Informationen in dieser Anforderung als von zurückgegeben wird das [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ In dieser Anforderung gibt es weitere Informationen, als von der [getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) -Methode zurückgegeben werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)   
- [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
+ [Getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
  [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

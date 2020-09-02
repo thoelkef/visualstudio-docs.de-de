@@ -1,5 +1,5 @@
 ---
-title: 16bpp-Renderzielformat-Variante zu rendern | Microsoft-Dokumentation
+title: 16 bpp-Renderzielformat-Variante | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157570"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp-Renderzielformat-Variante
@@ -30,7 +30,7 @@ Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf DXGI_FORMA
   
  Wenn die Szenen, die durch Ihre App gerendert werden, eine Wiedergabe mit hoher Farbtreue oder einen Alpha-Kanal erfordern oder wenn weiche Gradienten gelten, bedenken Sie andere Strategien zur Reduzierung der Bandbreitennutzung – z. B. reduziertes Überzeichnen oder Alphablending, Reduzierung der Größe des Framepuffers oder Modifikation von Texturressourcen, um weniger Speicherbandbreite zu verbrauchen, indem Sie eine Komprimierung aktivieren oder ihre Größen reduzieren. Wie gewohnt müssen Sie die Kompromisse bei der Bildqualität bedenken, die mit jeder dieser Optimierungen einhergehen.  
   
- Wenn Ihre App von einem Umschalten auf einen 16bpp-Hintergrundpuffer profitiert, aber Teil Ihrer Swapkette ist, müssen Sie zusätzliche Schritte ausführen, da DXGI_FORMAT_B5G6R5_UNORM kein unterstütztes Hintergrundpufferformat für Swapketten ist, die mit `D3D11CreateDeviceAndSwapChain` oder `IDXGIFactory::CreateSwapChain` erstellt wurden. Stattdessen müssen Sie ein Renderziel im Format B5G6R5_UNORM erstellen, indem Sie `CreateTexture2D` verwenden. Kopieren Sie dann, bevor Sie "Vorhanden" auf Ihrer Swapkette aufrufen, das Renderziel in den Hintergrundpuffer der Swapkette, indem Sie ein Quadrat über den kompletten Bildschirm mit dem Renderziel als Quelltextur zeichnen. Obwohl dies ein zusätzlicher Schritt, der einige Speicherbandbreite verbraucht wird ist, werden die meisten Renderingvorgänge weniger Bandbreite nutzen, da sie sich auf das 16bpp-Renderziel auswirken; Wenn dadurch mehr Bandbreite als durch Kopieren des Renderziels, die der Swapkette verbraucht wird, wird dann Renderingleistung verbessert.  
+ Wenn Ihre App von einem Umschalten auf einen 16bpp-Hintergrundpuffer profitiert, aber Teil Ihrer Swapkette ist, müssen Sie zusätzliche Schritte ausführen, da DXGI_FORMAT_B5G6R5_UNORM kein unterstütztes Hintergrundpufferformat für Swapketten ist, die mit `D3D11CreateDeviceAndSwapChain` oder `IDXGIFactory::CreateSwapChain` erstellt wurden. Stattdessen müssen Sie ein Renderziel im Format B5G6R5_UNORM erstellen, indem Sie `CreateTexture2D` verwenden. Kopieren Sie dann, bevor Sie "Vorhanden" auf Ihrer Swapkette aufrufen, das Renderziel in den Hintergrundpuffer der Swapkette, indem Sie ein Quadrat über den kompletten Bildschirm mit dem Renderziel als Quelltextur zeichnen. Obwohl dies ein zusätzlicher Schritt ist, der eine gewisse Speicherbandbreite beansprucht, verbrauchen die meisten Renderingvorgänge weniger Bandbreite, da Sie sich auf das 16bpp renderzielformat-Renderziel auswirken Wenn dadurch mehr Bandbreite eingespart wird, als durch Kopieren des Renderziels in den Hintergrund Puffer der Austausch Kette verbraucht wird, wird die Renderingleistung verbessert.  
   
  GPU-Architekturen, die Kachel-Rendering-Techniken verwenden, können große Leistungssteigerungen erfahren, wenn Sie ein 16bpp-Framepuffer-Format verwenden, da ein größerer Teil des Framepuffers in den lokalen Framepuffer-Cache jeder Kachel passt. Kachel-Rendering-Architekturen sind manchmal in GPUs in mobilen Handsets und Tablet-Computern zu finden; außerhalb dieser Nische kommen sie selten vor.  
   
@@ -47,7 +47,7 @@ Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf DXGI_FORMA
  Da das Format B5G6R5 über keinen Alpha-Kanal verfügt, werden Alpha-Inhalte von dieser Variante nicht beibehalten. Wenn das Rendering Ihrer App einen Alpha-Kanal in Ihrem Renderziel erfordert, können Sie nicht einfach zum Format B5G6R5 wechseln.  
   
 ## <a name="example"></a>Beispiel  
- Die **16bpp-Renderzielformat** Variante für mithilfe von erstellte Renderziele reproduziert werden kann `CreateTexture2D` mithilfe von Code wie folgt:  
+ Die Variante **16bpp renderzielformat-renderzielformat** kann für Renderziele, die mithilfe von erstellt wurden, mithilfe `CreateTexture2D` von Code wie dem folgenden reproduziert werden:  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

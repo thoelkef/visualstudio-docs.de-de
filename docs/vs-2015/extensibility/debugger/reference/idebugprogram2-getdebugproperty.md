@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDebugProperty | Microsoft-Dokumentation
+title: 'IDebugProgram2:: getdebug Property | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29b86a1aa144e553b126445a865330a8edb786ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187905"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Anwendung die Eigenschaften ab.  
+Ruft die Eigenschaften des Programms ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,17 +40,17 @@ int GetDebugProperty( 
   
 #### <a name="parameters"></a>Parameter  
  `ppProperty`  
- [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das die Eigenschaften des Programms darstellt.  
+ vorgenommen Gibt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt zurück, das die Eigenschaften des Programms darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die von dieser Methode zurückgegebenen Eigenschaften sind spezifisch für die Anwendung. Wenn die Anwendung mehr als eine Eigenschaft zurückgeben muss die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) von dieser Methode zurückgegebene Objekt ist ein Container für zusätzliche Eigenschaften und Aufrufen der [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) Methode gibt ein Liste aller Eigenschaften.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Eigenschaften, die von dieser Methode zurückgegeben werden, sind spezifisch für das Programm. Wenn das Programm mehr als eine Eigenschaft zurückgeben muss, ist das von dieser Methode zurückgegebene [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt ein Container mit zusätzlichen Eigenschaften, und der Aufruf der [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) -Methode gibt eine Liste aller Eigenschaften zurück.  
   
- Ein Programm kann verfügbar machen, beliebiger Anzahl und Art von zusätzlichen Eigenschaften, die über beschrieben werden, kann die `IDebugProperty2` Schnittstelle. Eine IDE möglicherweise die Eigenschaften der zusätzliche Anwendung über eine generische Eigenschaft-Browser-Benutzeroberfläche angezeigt.  
+ Ein Programm kann eine beliebige Anzahl und einen Typ zusätzlicher Eigenschaften verfügbar machen, die über die-Schnittstelle beschrieben werden können `IDebugProperty2` . Eine IDE zeigt möglicherweise die zusätzlichen Programm Eigenschaften über eine Benutzeroberfläche des generischen Eigenschaften Browsers an.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)

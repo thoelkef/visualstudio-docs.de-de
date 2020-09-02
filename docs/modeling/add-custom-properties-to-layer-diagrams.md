@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546913"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen
@@ -63,9 +63,9 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Sie können Eigenschaften für [ilayerelement](/previous-versions/ff644511(v=vs.140)) oder eine der abgeleiteten Klassen definieren, die Folgendes umfassen:
 
-- `ILayerModel`-das Modell
+- `ILayerModel` -das Modell
 
-- `ILayer`-jede Ebene
+- `ILayer` -jede Ebene
 
 - `ILayerDependencyLink` - die Links zwischen Ebenen
 

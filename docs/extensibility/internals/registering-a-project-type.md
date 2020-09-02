@@ -1,5 +1,5 @@
 ---
-title: Registrieren eines Projekttyps | Microsoft Docs
+title: Registrieren eines Projekt Typs | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05ac1f393632934f193f5f4efaaf9e5459ffbb14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705871"
 ---
 # <a name="registering-a-project-type"></a>Registrieren eines Projekttyps
-Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Sie Registrierungseinträge erstellen, mit denen Sie ihren Projekttyp erkennen und mit ihm arbeiten können. In der Regel erstellen Sie diese Registrierungseinträge mithilfe einer Registrierungsskriptdatei (.rgs).
+Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge erstellen, die es ermöglichen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Projekttyp zu erkennen und zu bearbeiten. Diese Registrierungseinträge werden in der Regel mithilfe einer Registrierungs Skriptdatei (. rgs) erstellt.
 
- Im folgenden Beispiel stellen die Anweisungen aus der Registrierung ggf. Standardpfade und Daten bereit, gefolgt von einer Tabelle, die Einträge aus dem Registrierungsskript für jede Anweisung enthält. Die Tabellen enthalten die Skripteinträge und zusätzliche Informationen zu den Anweisungen.
+ Im folgenden Beispiel stellen die Anweisungen aus der Registrierung Standard Pfade und-Daten bereit, sofern zutreffend, gefolgt von einer Tabelle, die Einträge aus dem Registrierungs Skript für jede Anweisung enthält. Die Tabellen stellen die Skript Einträge und zusätzliche Informationen zu den-Anweisungen bereit.
 
 > [!NOTE]
-> Die folgenden Registrierungsinformationen sollen ein Beispiel für den Typ und die Zwecke der Einträge in den Registrierungsskripts sein, die Sie schreiben, um Ihren Projekttyp zu registrieren. Ihre tatsächlichen Einträge und deren Verwendung können je nach den spezifischen Anforderungen Ihres Projekttyps variieren. Sie sollten die verfügbaren Beispiele überprüfen, um eine zu finden, die dem Typ des Projekts, das Sie entwickeln, sehr ähnlich ist, und dann das Registrierungsskript für dieses Beispiel überprüfen.
+> Die folgenden Registrierungsinformationen sind ein Beispiel für den Typ und die Zwecke der Einträge in den Registrierungs Skripts, die Sie schreiben, um den Projekttyp zu registrieren. Die tatsächlichen Einträge und ihre Verwendungsmöglichkeiten variieren je nach den spezifischen Anforderungen Ihres Projekt Typs. Überprüfen Sie die verfügbaren Beispiele, um eine zu finden, die dem Projekttyp ähnelt, den Sie entwickeln, und überprüfen Sie dann das Registrierungs Skript für dieses Beispiel.
 
  Die folgenden Beispiele stammen aus HKEY_CLASSES_ROOT.
 
@@ -47,16 +47,16 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
    @="devenv.exe \"%1\""
 ```
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|`FigPrjFile`|Name und Beschreibung der Projekttypdateien mit der Erweiterung .figp.|
-|`Content Type`|REG_SZ|`Text/plain`|Inhaltstyp für die Projektdateien.|
+|`@`|REG_SZ|`FigPrjFile`|Name und Beschreibung der Projekttyp Dateien mit der Erweiterung. figp.|
+|`Content Type`|REG_SZ|`Text/plain`|Der Inhaltstyp für die Projektdateien.|
 |`NullFile`|REG_SZ|`Null`||
-|`@`|REG_SZ|`%MODULE%,-206`|Standardsymbol, das für ein Projekt dieses Typs verwendet wird. Die %MODULE%-Anweisung wird in der Registrierung an den Standardspeicherort der Projekttyp-DLL abgeschlossen.|
+|`@`|REG_SZ|`%MODULE%,-206`|Standard Symbol, das für das Projekt dieses Typs verwendet wird. Die% Module%-Anweisung wird in der Registrierung am Standard Speicherort der Projekttyp-dll abgeschlossen.|
 |`@`|REG_SZ|`&Open in Visual Studio`|Standardanwendung, in der dieser Projekttyp geöffnet wird.|
-|`@`|REG_SZ|`devenv.exe "%1"`|Standardbefehl, der ausgeführt wird, wenn ein Projekt dieses Typs geöffnet wird.|
+|`@`|REG_SZ|`devenv.exe "%1"`|Der Standardbefehl, der ausgeführt wird, wenn ein Projekt dieses Typs geöffnet wird.|
 
- Die folgenden Beispiele stammen aus HKEY_LOCAL_MACHINE und befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-99.0Exp-Pakete].
+ Die folgenden Beispiele stammen aus HKEY_LOCAL_MACHINE und befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\99.0exp\packages].
 
 ## <a name="example"></a>Beispiel
 
@@ -79,21 +79,21 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
-|`@` (Standard)|REG_SZ|`FigPrj Project VSPackage`|Lokalisierbarer Name dieses registrierten VSPackage (Projekttyp).|
-|`InprocServer32`|REG_SZ|`%MODULE%`|Pfad des Projekttyps DLL. Die IDE lädt diese DLL und übergibt die VSPackage CLSID, `DllGetClassObject` um das <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> Objekt zu erstellen.|
+|`@` (Standard)|REG_SZ|`FigPrj Project VSPackage`|Lokalisier barer Name dieses registrierten VSPackages (Projekttyp).|
+|`InprocServer32`|REG_SZ|`%MODULE%`|Der Pfad der Projekttyp-dll. Die IDE lädt diese DLL und übergibt die VSPackage-CLSID an `DllGetClassObject` , um <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> das Objekt zu erstellen <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> .|
 |`CompanyName`|REG_SZ|`Microsoft`|Name des Unternehmens, das den Projekttyp entwickelt hat.|
-|`ProductName`|REG_SZ|`Figure Project Sample`|Name für den Projekttyp.|
-|`ProductVersion`|REG_SZ|`9.0`|Versionsnummer der Projekttypfreigabe.|
-|`MinEdition`|REG_SZ|`professional`|Ausgabe des VSPackage, das registriert wird.|
-|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Der Paketladeschlüssel für das Projekt VSPackage. Der Schlüssel wird überprüft, wenn ein Projekt geladen wird, nachdem die Umgebung gestartet wurde.|
-|`DllName`|REG_SZ|`%RESOURCE_DLL%`|Dateiname der Satelliten-DLL, die lokalisierte Ressourcen für den Projekttyp enthält.|
-|`Path`|REG_SZ|`%RESOURCE_PATH%`|Pfad der Satelliten-DLL.|
-|`FigProjectsEvents`|REG_SZ|Siehe Anweisung für Wert.|Bestimmt die Textzeichenfolge, die für dieses Automatisierungsereignis zurückgegeben wird.|
-|`FigProjectItemsEvents`|REG_SZ|Siehe Anweisung für Wert.|Bestimmt die Textzeichenfolge, die für dieses Automatisierungsereignis zurückgegeben wird.|
+|`ProductName`|REG_SZ|`Figure Project Sample`|Der Name für den Projekttyp.|
+|`ProductVersion`|REG_SZ|`9.0`|Versionsnummer der Projekttyp Version.|
+|`MinEdition`|REG_SZ|`professional`|Die Edition des VSPackages, das registriert wird.|
+|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Der Paket Lade Schlüssel für das Projekt-VSPackage. Der Schlüssel wird überprüft, wenn ein Projekt geladen wird, nachdem die Umgebung gestartet wurde.|
+|`DllName`|REG_SZ|`%RESOURCE_DLL%`|Der Dateiname der Satelliten-DLL, die lokalisierte Ressourcen für den Projekttyp enthält.|
+|`Path`|REG_SZ|`%RESOURCE_PATH%`|Der Pfad der Satelliten-DLL.|
+|`FigProjectsEvents`|REG_SZ|Siehe Anweisung für Wert.|Bestimmt die für dieses Automatisierungs Ereignis zurückgegebene Text Zeichenfolge.|
+|`FigProjectItemsEvents`|REG_SZ|Siehe Anweisung für Wert.|Bestimmt die für dieses Automatisierungs Ereignis zurückgegebene Text Zeichenfolge.|
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-9.0Exp-Projekte].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\projects].
 
 ## <a name="example"></a>Beispiel
 
@@ -130,34 +130,34 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
    "SortPriority"=dword:00000064
 ```
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|Standardname der Projekte dieses Typs.|
-|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Ressourcen-ID des Namens, der aus der unter Pakete registrierten Satelliten-DLL abgerufen werden soll.|
-|`Package`|REG_SZ|`%CLSID_Package%`|Klassen-ID des VSPackage, das unter Pakete registriert ist.|
-|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Standardpfad der Projektvorlagendateien. Dies sind die Dateien, die in der Vorlage "Neues Projekt" angezeigt werden.|
-|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Standardpfad der Projektelementvorlagendateien. Dies sind die Dateien, die in der Vorlage "Neues Element hinzufügen" angezeigt werden.|
-|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Aktiviert die IDE, das Dialogfeld **Öffnen** zu implementieren.|
-|`PossibleProjectExtensions`|REG_SZ|`figp`|Wird von der IDE verwendet, um zu bestimmen, ob das zu öffnende Projekt von diesem Projekttyp (Projektfactory) verarbeitet wird. Das Format für mehr als einen Eintrag ist eine durch Semikolons getrennte Liste. Beispiel: "vdproj;vdp".|
-|`DefaultProjectExtension`|REG_SZ|`.figp`|Wird von der IDE als Standarddateinamenerweiterung für den Vorgang Speichern unter verwendet.|
-|`Filter Settings`|REG_DWORD|Verschiedene, siehe Anweisungen und Kommentare nach der Tabelle.|Diese Einstellungen werden verwendet, um die verschiedenen Filter für die Anzeige von Dateien in UI-Dialogfeldern festzulegen.|
-|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Ressourcen-ID für Elementvorlagen hinzufügen.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Pfad der Projektelemente, die im Dialogfeld für die Vorlage **"Neues Element hinzufügen"** angezeigt werden.|
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Bestimmt die Sortierreihenfolge im Strukturknoten von Dateien, die im Dialogfeld **Neues Element** hinzufügen angezeigt werden.|
+|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Die Ressourcen-ID des Namens, der von der Satelliten-DLL abgerufen werden soll, die unter Packages registriert ist.|
+|`Package`|REG_SZ|`%CLSID_Package%`|Die Klassen-ID des VSPackage, das unter "Packages" registriert ist.|
+|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Standardpfad der Projektvorlagen Dateien. Dies sind die Dateien, die von der neuen Projektvorlage angezeigt werden.|
+|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Standardpfad der Projekt Element-Vorlagen Dateien. Dies sind die Dateien, die von der Vorlage Neues Element hinzufügen angezeigt werden.|
+|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Ermöglicht der IDE das Implementieren des Dialog Felds **Öffnen** .|
+|`PossibleProjectExtensions`|REG_SZ|`figp`|Wird von der IDE verwendet, um zu bestimmen, ob das geöffnete Projekt von diesem Projekttyp (projektfactory) verarbeitet wird. Das Format für mehr als einen Eintrag ist eine durch Semikolons getrennte Liste. Beispiel: "vdproj; VDP".|
+|`DefaultProjectExtension`|REG_SZ|`.figp`|Wird von der IDE als standardmäßige Dateinamenerweiterung für den Save as-Vorgang verwendet.|
+|`Filter Settings`|REG_DWORD|Verschiedene Informationen finden Sie in der folgenden Tabelle unter Anweisungen und Kommentare.|Diese Einstellungen werden verwendet, um die verschiedenen Filter zum Anzeigen von Dateien in Benutzeroberflächen-Dialogfeldern festzulegen.|
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Ressourcen-ID für Element Vorlagen hinzufügen.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Der Pfad der Projekt Elemente, die im Dialogfeld für die Vorlage " **Neues Element hinzufügen** " angezeigt werden.|
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Bestimmt die Sortierreihenfolge im Struktur Knoten von Dateien, die im Dialogfeld **Neues Element hinzufügen** angezeigt werden.|
 
- Die folgende Tabelle zeigt die Filteroptionen, die im vorherigen Codesegment verfügbar sind.
+ In der folgenden Tabelle werden die im vorherigen Codesegment verfügbaren Filteroptionen aufgeführt.
 
-|Filteroption|BESCHREIBUNG|
+|Filter Option|BESCHREIBUNG|
 |-------------------|-----------------|
-|`CommonFindFilesFilter`|Gibt an, dass der Filter einer der allgemeinen Filter im Dialogfeld **"In Dateien suchen"** ist. Die allgemeinen Filter werden in der Filterliste aufgeführt, bevor die Filter nicht als häufig markiert sind.|
-|`CommonOpenFilesFilter`|Gibt an, dass der Filter einer der allgemeinen Filter im Dialogfeld **Datei** öffnen ist. Die allgemeinen Filter werden in der Filterliste aufgeführt, bevor die Filter nicht als häufig markiert sind.|
-|`FindInFilesFilter`|Gibt an, dass der Filter einer der Filter im Dialogfeld **"In Dateien suchen"** sein wird und nach den allgemeinen Filtern aufgelistet wird.|
-|`NotOpenFileFilter`|Gibt an, dass der Filter nicht im Dialogfeld **Datei** öffnen verwendet wird.|
-|`NotAddExistingItemFilter`|Gibt an, dass der Filter nicht im Dialogfeld **VorhandeneElemente** hinzufügen verwendet wird.|
+|`CommonFindFilesFilter`|Gibt an, dass der Filter einer der allgemeinen Filter im Dialogfeld **in Dateien suchen** ist. Die allgemeinen Filter sind in der Filterliste aufgeführt, bevor die Filter als "Allgemein" gekennzeichnet sind.|
+|`CommonOpenFilesFilter`|Gibt an, dass es sich bei dem Filter um einen der allgemeinen Filter im Dialogfeld **Datei öffnen** handelt. Die allgemeinen Filter sind in der Filterliste aufgeführt, bevor die Filter als "Allgemein" gekennzeichnet sind.|
+|`FindInFilesFilter`|Gibt an, dass der Filter einer der Filter im Dialogfeld **in Dateien suchen** ist und nach den allgemeinen Filtern aufgeführt wird.|
+|`NotOpenFileFilter`|Gibt an, dass der Filter nicht im Dialogfeld " **Datei öffnen** " verwendet wird.|
+|`NotAddExistingItemFilter`|Gibt an, dass der Filter nicht im Dialogfeld **Vorhandenes Element** hinzufügen verwendet wird.|
 
- Wenn für einen Filter nicht eines oder mehrere dieser Flags festgelegt sind, wird der Filter standardmäßig im Dialogfeld Vorhandene Elemente **hinzufügen** und im Dialogfeld **Datei** öffnen verwendet, nachdem die allgemeinen Filter aufgelistet wurden. Der Filter wird im Dialogfeld **"In Dateien suchen"** nicht verwendet.
+ Wenn für einen Filter mindestens eines dieser Flags festgelegt ist, wird der Filter standardmäßig im Dialogfeld **Vorhandenes Element hinzufügen** und im Dialogfeld **Datei öffnen** nach dem Auflisten der allgemeinen Filter verwendet. Der Filter wird im Dialogfeld **in Dateien suchen** nicht verwendet.
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-9.0Exp-Projekte].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\projects].
 
 ## <a name="example"></a>Beispiel
 
@@ -170,14 +170,14 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Ressourcen-ID für neue Projektvorlagen.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Standardpfad für Projekte des registrierten Projekttyps.|
-|`SortPriority`|REG_DWORD|`41 (x29)`|Legt die Sortierreihenfolge von Projekten fest, die im Dialogfeld des Assistenten für neue Projekte angezeigt werden.|
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 gibt an, dass Projekte dieses Typs nur im Dialogfeld Neues Projekt angezeigt werden.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Standardpfad für Projekte des registrierten Projekt Typs.|
+|`SortPriority`|REG_DWORD|`41 (x29)`|Legt die Sortierreihenfolge der im Dialogfeld "neue Projekte" angezeigten Projekte fest.|
+|`NewProjectDialogOnly`|REG_DWORD|`0`|der Wert 0 gibt an, dass Projekte dieses Typs nur im Dialogfeld Neues Projekt angezeigt werden.|
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-9.0Exp-Projekte].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\projects].
 
 ## <a name="example"></a>Beispiel
 
@@ -191,14 +191,14 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
    "SortPriority"=dword:00000064
 ```
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|Keine|Standardwert, der angibt, dass die folgenden Einträge für die Projekteinträge "Verschiedene Dateien" gelten.|
-|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Ressourcen-ID-Wert für die Vorlagendateien Neue Elemente hinzufügen.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Standardpfad der Elemente, die im Dialogfeld **Neues Element** hinzufügen angezeigt werden.|
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Legt die Sortierreihenfolge für die Anzeige im Strukturknoten des Dialogfelds **Neues Element hinzufügen** fest.|
+|`@`|REG_SZ|Keine|Standardwert, der angibt, dass die folgenden Einträge für die Projekt Einträge für verschiedene Dateien gelten.|
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Der Wert der Ressourcen-ID für die Vorlagen Dateien zum Hinzufügen neuer Elemente.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Standardpfad der Elemente, die im Dialogfeld **Neues Element hinzufügen** angezeigt werden.|
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Legt die Sortierreihenfolge für die Anzeige im Struktur Knoten des Dialog Felds **Neues Element hinzufügen** fest.|
 
- Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-9.0Exp-Menüs].
+ Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\menüs].
 
 ## <a name="example"></a>Beispiel
 
@@ -206,25 +206,25 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"
 ```
 
- Der Menüeintrag verweist die IDE auf die Ressource, die zum Abrufen der Menüinformationen verwendet wird. Wenn diese Daten in der Menüdatenbank zusammengeführt wurden, wird derselbe Schlüssel im Abschnitt MenusMerged der Registrierung hinzugefügt. Das VSPackage sollte nichts unter dem Abschnitt MenusMerged direkt ändern. Im Feld Daten in der folgenden Tabelle befinden sich drei durch Kommas getrennte Felder. Das erste Feld identifiziert einen vollständigen Pfad einer Menüressourcendatei:
+ Der Menüeintrag zeigt die IDE auf die Ressource, die zum Abrufen der Menü Informationen verwendet wurde. Wenn diese Daten in der Menü Datenbank zusammengeführt wurden, wird der gleiche Schlüssel im Abschnitt "mengegemergt" der Registrierung hinzugefügt. Das VSPackage sollte nichts im Abschnitt "mengegemergt" direkt ändern. Im Datenfeld in der folgenden Tabelle sind drei durch Trennzeichen getrennte Felder vorhanden. Das erste Feld identifiziert den vollständigen Pfad einer Menü Ressourcen Datei:
 
-- Wenn das erste Feld weggelassen wird, wird die Menüressource aus der Satelliten-DLL geladen, die von der VSPackage-GUID identifiziert wird.
+- Wenn das erste Feld weggelassen wird, wird die Menü Ressource aus der Satelliten-DLL geladen, die durch die VSPackage-GUID identifiziert wird.
 
-  Das zweite Feld identifiziert eine Menüressourcen-ID vom Typ CTMENU:
+  Das zweite Feld identifiziert eine Menü Ressourcen-ID des Typs ctmenu:
 
-- Wenn die Ressourcen-ID angegeben ist und der Dateipfad vom ersten Parameter bereitgestellt wird, wird eine Menüressource aus dem vollständigen Dateipfad geladen.
+- Wenn die Ressourcen-ID angegeben wird und der Dateipfad vom ersten Parameter bereitgestellt wird, wird eine Menü Ressource aus dem vollständigen Dateipfad geladen.
 
-- Wenn die Ressourcen-ID angegeben wird, der Dateipfad jedoch nicht, wird die Menüressource aus der Satelliten-DLL geladen.
+- Wenn die Ressourcen-ID angegeben wird, der Dateipfad jedoch nicht ist, wird die Menü Ressource aus der Satelliten-DLL geladen.
 
-- Wenn der vollständige Dateipfad angegeben und die Ressourcen-ID weggelassen wird, wird erwartet, dass es sich bei der zu ladenden Datei um eine CTO-Datei handelt.
+- Wenn der vollständige Dateipfad angegeben wird und die Ressourcen-ID weggelassen wird, wird die zu ladende Datei als CTO-Datei erwartet.
 
-  Das letzte Feld gibt die Versionsnummer für die CTMENU-Ressource an. Sie können das Menü erneut zusammenführen, indem Sie die Versionsnummer ändern.
+  Das letzte Feld identifiziert die Versionsnummer für die ctmenu-Ressource. Sie können das Menü erneut zusammenführen, indem Sie die Versionsnummer ändern.
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
-|%CLSID_Package %|REG_SZ|`,1000,1`|Die Ressource, die die Menüinformationen abrufen soll.|
+|% CLSID_Package%|REG_SZ|`,1000,1`|Die Ressource, mit der die Menü Informationen abgerufen werden sollen.|
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-9.0Exp-NewProjectTemplates].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\newprojecttemplates].
 
 ```
 \TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
@@ -234,14 +234,14 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Ressourcen-ID-Wert für die Vorlagen für das neue Projekt des Figures-Projekts.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Standardpfad des Verzeichnisses "Neue Projekte". Elemente in diesem Verzeichnis werden im Dialogfeld des **Assistenten für neues Projekt** angezeigt.|
-|`SortPriority`|REG_DWORD|`41 (x29)`|Legt die Reihenfolge fest, in der Projekte im Strukturknoten des Dialogfelds **Neues Projekt** angezeigt werden.|
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 gibt an, dass Projekte dieses Typs nur im Dialogfeld **Neues Projekt** angezeigt werden.|
+|`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Ressourcen-ID-Wert für die Abbildungen Projekt neue Projektvorlagen.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Der Standardpfad des Verzeichnisses für neue Projekte. Elemente in diesem Verzeichnis werden im Dialogfeld **Assistent für neue Projekte** angezeigt.|
+|`SortPriority`|REG_DWORD|`41 (x29)`|Legt die Reihenfolge fest, in der Projekte im Struktur Knoten des Dialog Felds **Neues Projekt** angezeigt werden.|
+|`NewProjectDialogOnly`|REG_DWORD|`0`|der Wert 0 gibt an, dass Projekte dieses Typs nur im Dialogfeld **Neues Projekt** angezeigt werden.|
 
- Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-9.0Exp-InstalledProducts].
+ Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\installedproducts].
 
 ```
 \FiguresProductSample
@@ -249,20 +249,20 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen [!INCLUDE[vsprvs](../../code-
    "UseInterface"=dword:00000001
 ```
 
-|Name|type|Daten|BESCHREIBUNG|
+|Name|Typ|Daten|BESCHREIBUNG|
 |----------|----------|----------|-----------------|
-|`Package`|REG_SZ|`%CLSID_Package%`|Klassen-ID des registrierten VSPackage.|
-|`UseInterface`|REG_DWORD|`1`|1 gibt an, dass die Benutzeroberfläche für die Interaktion mit diesem Projekt verwendet wird. 0 gibt an, dass keine UI-Schnittstelle vorhanden ist.|
+|`Package`|REG_SZ|`%CLSID_Package%`|Die Klassen-ID des registrierten VSPackages.|
+|`UseInterface`|REG_DWORD|`1`|der Wert 1 gibt an, dass die Benutzeroberfläche verwendet wird, um mit diesem Projekt zu interagieren. 0 gibt an, dass keine UI-Schnittstelle vorhanden ist.|
 
- Die.vsz-Dateien, die neue Projekttypen steuern, enthalten häufig einen RELATIVE_PATH Eintrag. Dieser Pfad ist relativ zum Pfad, der unter dem Eintrag "ProductDir" des Projekttyps im folgenden Setupschlüssel angegeben ist:
+ Die VSZ-Dateien, die neue Projekttypen steuern, enthalten häufig einen RELATIVE_PATH Eintrag. Dieser Pfad ist relativ zum Pfad, der unter "\productdir Entry of the Project Type" im folgenden Setup Schlüssel angegeben ist:
 
- HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-7.0Exp-Setup
+ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0exp\setup
 
- Die Enterprise Frameworks-Projektvorlagen fügen beispielsweise die folgenden Registrierungseinträge hinzu:
+ Die Projektvorlagen für Enterprise Frameworks fügen beispielsweise die folgenden Registrierungseinträge hinzu:
 
- HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-7.0Exp-Setup-EF-ProductDir = C:-Programmdateien, Microsoft Visual Studio, EnterpriseFrameworks
+ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0exp\setup\ef\productdir = c:\Programme\Microsoft Visual studio\enterpriseframeworks\
 
- Das bedeutet, wenn Sie einen PROJECT_TYPE=EF-Eintrag in die .vsz-Datei aufnehmen, findet die Umgebung Ihre .vsz-Dateien im zuvor angegebenen ProductDir-Verzeichnis.
+ Das heißt, wenn Sie einen PROJECT_TYPE = EF-Eintrag in die VSZ-Datei einschließen, sucht die Umgebung Ihre VSZ-Dateien im zuvor angegebenen productdir-Verzeichnis.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
