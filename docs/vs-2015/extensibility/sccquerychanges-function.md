@@ -1,5 +1,5 @@
 ---
-title: SccQueryChanges-Funktion | Microsoft-Dokumentation
+title: Sccquerychanges-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: baa6059a1668be5507994921cb96ac3ed1cfd5fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200011"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion Listet die angegebenen Dateien mit Informationen zu Änderungen des Computernamens für jede Datei über eine Callback-Funktion.  
+Diese Funktion Listet eine angegebene Liste von Dateien auf, die Informationen über Namensänderungen für jede Datei über eine Rückruffunktion bereitstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,35 +37,35 @@ SCCRTN SccQueryChanges(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- "pContext"  
- [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
+ pContext  
+ in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.  
   
- nFiles  
- [in] Anzahl der Dateien im `lpFileNames` Array.  
+ nnoch  
+ in Anzahl der Dateien im `lpFileNames` Array.  
   
- lpFileNames  
- [in] Array von Dateinamen, zu dem Informationen abgerufen werden soll.  
+ lpfile-Namen  
+ in Array von Dateinamen, über die Informationen erhalten werden.  
   
- pfnCallback  
- [in] Rückruffunktion für jedes Dateinamen in der Liste (finden Sie unter [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) Einzelheiten).  
+ pfncallback  
+ in Rückruffunktion, die für jeden Dateinamen in der Liste aufgerufen werden soll (Weitere Informationen finden Sie unter [querychangesfunc](../extensibility/querychangesfunc.md) ).  
   
- pvCallerData  
- [in] Wert, der unverändert an die Rückruffunktion übergeben wird.  
+ pvcallerdata  
+ in Der Wert, der unverändert an die Rückruffunktion übermittelt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_OK|Der Abfragevorgang erfolgreich abgeschlossen wurde.|  
-|SCC_E_PROJNOTOPEN|Das Projekt wurde nicht in der quellcodeverwaltung geöffnet.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen.|  
-|SCC_E_NONSPECIFICERROR|Ein Unbekannter oder allgemeiner Fehler aufgetreten.|  
+|SCC_OK|Der Abfrageprozess wurde erfolgreich abgeschlossen.|  
+|SCC_E_PROJNOTOPEN|Das Projekt wurde nicht in der Quell Code Verwaltung geöffnet.|  
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen.|  
+|SCC_E_NONSPECIFICERROR|Ein nicht spezifizierter oder allgemeiner Fehler ist aufgetreten.|  
   
-## <a name="remarks"></a>Hinweise  
- Änderungen, die abgefragt wird, die auf den Namespace sind: insbesondere umbenennen, hinzufügen und Entfernen einer Datei.  
+## <a name="remarks"></a>Bemerkungen  
+ Änderungen, die abgefragt werden, sind der Namespace: das Umbenennen, hinzufügen und Entfernen einer Datei.  
   
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)   
+ [Querychangesfunc](../extensibility/querychangesfunc.md)   
  [Fehlercodes](../extensibility/error-codes.md)

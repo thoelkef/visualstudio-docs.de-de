@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_issafebuffers | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isSafeBuffers | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 046744fda09f272ca80c2760e880dce23d45ae36
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65673757"
 ---
-# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+# <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob die Präprozessordirektive für einen sicheren Puffer verwendet wird. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) nastaven NA hodnotu `SymTagFunction`.  
+Ruft ein Flag ab, das angibt, ob die preprocesser-Direktive für einen sicheren Puffer verwendet wird. Verwenden Sie, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) auf festgelegt ist `SymTagFunction` .  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,23 +35,23 @@ HRESULT get_isSafeBuffers( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` , wenn der Zeiger eine Präprozessordirektive für einen sicheren Puffer verwendet, andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn der Zeiger eine Präprozessordirektive für einen sicheren Puffer verwendet; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [strict_gs_check](https://msdn.microsoft.com/library/decfec81-c916-42e0-a07f-8cc26df6a7ce)
