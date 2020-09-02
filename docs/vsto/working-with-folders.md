@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 32dca296ef286e4c892791a1e71cfc765df80f19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815496"
 ---
 # <a name="work-with-folders"></a>Arbeiten mit Ordnern
@@ -28,16 +28,16 @@ ms.locfileid: "62815496"
 
 |Aufgabe|Prozedur|
 |----------|---------------|
-|Suchen Sie Zeichenfolgen in der Betreffzeile von Nachrichten im **Posteingang**.|[Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|
-|Rufen Sie einen Verweis auf einen Ordner ab, und zeigen Sie den Inhalt an.|[Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|
-|Erstellen Sie einen Ordner, in dem eine Webseite im Vorschaubereich angezeigt wird.|[Vorgehensweise: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|
-|Erstellen Sie einen Ordner, der über die aktuelle Benutzer-ID als Namen verfügt.|[Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)|
-|Verschieben Sie Nachrichten, die bestimmte Kriterien erfüllen, in einen angegebenen Ordner.|[Vorgehensweise: Programmgesteuertes Verschieben von Elementen in Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|
+|Suchen Sie Zeichenfolgen in der Betreffzeile von Nachrichten im **Posteingang**.|[Gewusst wie: Programm gesteuertes suchen innerhalb eines bestimmten Ordners](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|
+|Rufen Sie einen Verweis auf einen Ordner ab, und zeigen Sie den Inhalt an.|[Gewusst wie: Programm gesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|
+|Erstellen Sie einen Ordner, in dem eine Webseite im Vorschaubereich angezeigt wird.|[Gewusst wie: Programm gesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|
+|Erstellen Sie einen Ordner, der über die aktuelle Benutzer-ID als Namen verfügt.|[Gewusst wie: Programm gesteuertes Erstellen von benutzerdefinierten Ordner Elementen](../vsto/how-to-programmatically-create-custom-folder-items.md)|
+|Verschieben Sie Nachrichten, die bestimmte Kriterien erfüllen, in einen angegebenen Ordner.|[Gewusst wie: Programm gesteuertes Verschieben von Elementen in Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|
 
- Weitere Informationen zu Outlook-Aufgaben und Outlook-Objektmodell finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
+ Weitere Informationen zu Outlook-Aufgaben und zum Outlook-Objektmodell finden Sie unter Übersicht über das [Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)
-- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)
+- [Arbeiten mit e-Mail-Elementen](../vsto/working-with-mail-items.md)
 - [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)
-- [Outlook-Projektmappen](../vsto/outlook-solutions.md)
+- [Outlook-Lösungen](../vsto/outlook-solutions.md)

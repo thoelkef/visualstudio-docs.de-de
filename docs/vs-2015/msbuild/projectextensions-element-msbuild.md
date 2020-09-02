@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551252"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions-Element (MSBuild)
@@ -46,10 +46,10 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektd
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
 ### <a name="attributes"></a>Attribute  
- Keiner  
+ Keine  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
- Keiner  
+ Keine  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
@@ -57,7 +57,7 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektd
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] -Projektdatei.|  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Bemerkungen  
  Nur ein `ProjectExtensions`-Element kann in einem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt verwendet werden.  
   
 ## <a name="example"></a>Beispiel  
@@ -75,6 +75,6 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektd
 </ProjectExtensions>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)  
+## <a name="see-also"></a>Weitere Informationen  
+ [Referenz zum Projektdatei Schema](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)

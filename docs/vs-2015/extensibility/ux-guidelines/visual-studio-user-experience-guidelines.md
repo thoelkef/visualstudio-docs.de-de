@@ -1,5 +1,5 @@
 ---
-title: Richtlinien zur Benutzerfreundlichkeit von Visual Studio-Benutzer | Microsoft-Dokumentation
+title: Richtlinien für die Visual Studio-Benutzer Darstellung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,23 +9,23 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584930"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die Visual Studio Richtlinien dienen für diejenigen, die neue Funktionen für Visual Studio entwickeln. Diese Richtlinien enthalten Informationen über allgemeine Benutzer-Modelle und interaktionsmustern, damit Designer neue Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die nahtlose und einheitliche, in der Entwicklungsumgebung sind.  
+Die Visual Studio-Benutzeroberflächen-Richtlinien sind für diejenigen gedacht, die neue Features für Visual Studio entwerfen. Diese Richtlinien enthalten Informationen zu gängigen Benutzer Modellen und Interaktionsmustern, damit Entwickler von neuen Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die in der Entwicklungsumgebung nahtlos und konsistent sind.  
   
- Entwicklung von Software für Microsoft-Produkte bedeutet, dass verstehen die Anleitung, die von Windows bereitgestellt. Es gibt drei wichtige Ressourcen, zu berücksichtigen:  
+ Die Entwicklung von Software für Microsoft-Produkte bedeutet das Verständnis der von Windows bereitgestellten Anleitungen. Es gibt drei wichtige Ressourcen, die Sie beachten sollten:  
   
-- Die [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/aa511258.aspx). Diese Richtlinien sind die Grundlagen für Windows desktop-Verhalten und aussehen.  
+- Die [Richtlinien für die Interaktion der Windows-Benutzerinteraktion](https://msdn.microsoft.com/library/aa511258.aspx). Diese Richtlinien sind die Grundlagen für das Verhalten und die Darstellung von Windows-Desktops.  
   
-- Diese Visual Studio-Richtlinien, plattformspezifischen Leitfäden, die die allgemeinen Windows-Richtlinien in unserer Umgebung ggf. ersetzen.  
+- Diese Visual Studio-Richtlinien sind plattformspezifische Richtlinien, die die allgemeinen Windows-Richtlinien ersetzen, wenn dies für unsere Umgebung geeignet ist.  
   
-- Die [Steuerelemente und Muster für die UWP-apps](/windows/uwp/design/controls-and-patterns) sind eine Referenz für die zukünftigen Muster, die in einigen Fällen, in Visual Studio verwendet werden kann.  
+- Die Steuer [Elemente und Muster für UWP-apps](/windows/uwp/design/controls-and-patterns) sind ein Verweis auf neue Muster, die in einigen Instanzen von Visual Studio verwendet werden können.  
   
-  Diese Richtlinien bieten Ihnen die Informationen darüber, was Sie beim Entwerfen von Visual Studio, und in einigen Fällen auch Informationen darüber, wie es enthalten ist. Ausführlichere Informationen der Implementierung und erfahren Sie mehr über bestimmte Anwendungsprogrammierschnittstellen (APIs), mit denen Sie schreiben Code für Lösungen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio integrieren, verwenden Sie die [Visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).
+  Diese Richtlinien enthalten Informationen dazu, was beim Entwerfen für Visual Studio zu tun ist, und in einigen Fällen auch Informationen dazu, wie Sie dies tun können. Ausführlichere Implementierungs Informationen und Informationen zu bestimmten Anwendungs Programmierschnittstellen (Application Programming Interfaces, APIs), mit denen Sie Code für Projektmappen schreiben können, die in die integrierte Entwicklungsumgebung (IDE) von Visual Studio integriert sind, finden Sie im [Visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Microsoft-Dokumentation
+title: 'IDebugProgram2:: causeelbreak | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5520d624b2789488c7ab6a5cab353d78d2cd69ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555708"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Fordert an, dass das Programm die Ausführung der nächsten beenden Zeitpunkt eins seiner Threads Versuche ausgeführt.  
+Fordert an, dass das Programm die Ausführung beendet, wenn ein Thread das nächste Mal ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,13 +37,13 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ein [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) Ereignis wird immer dann gesendet, wenn Sie als Nächstes versucht das Programm, um Code auszuführen, nachdem diese Methode aufgerufen wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) -Ereignis wird gesendet, wenn das Programm das nächste Mal versucht, Code auszuführen, nachdem diese Methode aufgerufen wurde.  
   
- Diese Methode ist asynchron, darin, dass die Methode sofort zurückgegeben, ohne dass unbedingt zum Beenden des Programms.  
+ Diese Methode ist asynchron, da die Methode sofort zurückgegeben wird, ohne notwendigerweise darauf zu warten, dass das Programm beendet wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

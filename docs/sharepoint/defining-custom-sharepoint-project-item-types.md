@@ -1,5 +1,5 @@
 ---
-title: Definieren von benutzerdefinierten SharePoint-Projektelementtypen | Microsoft-Dokumentation
+title: Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,38 +15,38 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580783"
 ---
-# <a name="define-custom-sharepoint-project-item-types"></a>Definieren von benutzerdefinierten SharePoint-Projektelementtypen
-  Definieren Sie einen neuen SharePoint-Projektelementtyp, wenn Sie eine neue Art von SharePoint-Projektelement erstellen möchten. Visual Studio umfasst z. B. keine SharePoint-Projektelemente zum Hinzufügen von Feldern oder benutzerdefinierte Aktionen auf einer SharePoint-Website. Sie können eigene Typen von SharePoint-Projektelemente zum Erstellen von Feldern, benutzerdefinierte Aktionen oder andere Typen von SharePoint-Komponenten definieren.
+# <a name="define-custom-sharepoint-project-item-types"></a>Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen
+  Definieren Sie einen neuen SharePoint-Projekt Elementtyp, wenn Sie eine neue Art von SharePoint-Projekt Element erstellen möchten. Beispielsweise enthält Visual Studio keine SharePoint-Projekt Elemente zum Hinzufügen von Feldern oder benutzerdefinierten Aktionen zu einer SharePoint-Website. Sie können eigene Typen von SharePoint-Projekt Elementen definieren, um Felder, benutzerdefinierte Aktionen oder andere Typen von SharePoint-Komponenten zu erstellen.
 
-## <a name="tasks-for-defining-sharepoint-project-item-types"></a>Aufgaben zum Definieren von SharePoint-Projektelementtypen
- Um einen benutzerdefinierten Projektelementtyp definieren möchten, erstellen Sie eine Visual Studio-Erweiterungsassembly, implementiert die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> Schnittstelle. Weitere Informationen finden Sie unter [Vorgehensweise: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
+## <a name="tasks-for-defining-sharepoint-project-item-types"></a>Aufgaben zum Definieren von SharePoint-Projekt Elementtypen
+ Um einen benutzerdefinierten Projekt Elementtyp zu definieren, erstellen Sie eine Visual Studio-Erweiterungsassembly, die die- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> Schnittstelle implementiert. Weitere Informationen finden Sie unter Gewusst [wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
- Wenn Sie einen benutzerdefinierten Projektelementtyp definieren, können Sie auch die folgende Funktionen auf das Projektelement hinzufügen:
+ Wenn Sie einen benutzerdefinierten Projekt Elementtyp definieren, können Sie dem Projekt Element auch die folgenden Funktionen hinzufügen:
 
-- Hinzufügen eines Kontextmenüelements auf das Projektelement. Das Menüelement angezeigt wird, wenn Sie das Kontextmenü für das Projektelement in öffnen **Projektmappen-Explorer** durch Rechtsklick auf das Projektelement, oder indem Sie ihn auswählen und dann auf die **UMSCHALT** +  **F10** Schlüssel. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen ein Kontextmenüelements zu einer benutzerdefinierten SharePoint-Projektelementtyp](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).
+- Fügen Sie dem Projekt Element ein Kontextmenü Element hinzu. Das Menü Element wird angezeigt, wenn Sie das Kontextmenü für das Projekt Element in **Projektmappen-Explorer** öffnen, indem Sie mit der rechten Maustaste auf das Projekt Element klicken oder es auswählen und **dann die** + Taste**F10** drücken. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Kontextmenü Elements zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).
 
-- Fügen Sie eine benutzerdefinierte Eigenschaft, auf das Projektelement. Die Eigenschaft wird in der **Eigenschaften** Fenster bei der Auswahl des Projektelement im **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen einer Eigenschaft zu einer benutzerdefinierten SharePoint-Projektelementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).
+- Fügen Sie dem Projekt Element eine benutzerdefinierte Eigenschaft hinzu. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie das Projekt Element in **Projektmappen-Explorer**auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).
 
-  Damit können andere Entwickler, um Ihr Projektelement in Visual Studio verwenden, erstellen Sie eine SPDATA-Datei aus, und erstellen Sie eine Elementvorlage oder die Projektvorlage, die mit dem Projektelement zugeordnet ist. Weitere Informationen finden Sie unter [Erstellen von Vorlagen und Projektvorlagen für SharePoint-Projektelemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
+  Damit andere Entwickler ihr Projekt Element in Visual Studio verwenden können, erstellen Sie eine spdata-Datei, und erstellen Sie eine Element Vorlage oder Projektvorlage, die dem Projekt Element zugeordnet ist. Weitere Informationen finden Sie unter [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
-## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>Verstehen Sie die Beziehung zwischen Projektelementtypen und Instanzen von Project-Element
- Wenn Sie einen SharePoint-Projektelementtyp definieren, lädt Visual Studio die Erweiterung aus, wenn ein SharePoint-Projekt ein Projektelement des zugeordneten Typs hinzugefügt wird. Z. B., wenn Sie einen neuen definieren **benutzerdefinierte Aktion** Projektelementtyp, Visual Studio lädt die Erweiterung aus, wenn ein Benutzer fügt eine **benutzerdefinierte Aktion** Projektelements, das ein Projekt. Visual Studio verwendet die gleiche Instanz der Erweiterung für alle Instanzen der zugeordneten Projektelementtyps. Im vorherigen Beispiel, wenn der Benutzer eine zweite Befehl fügt der **benutzerdefinierte Aktion** Projektelement für das Projekt, die gleiche Instanz der Erweiterung wird verwendet, um das zweite Projektelement anpassen.
+## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>Verstehen der Beziehung zwischen Projekt Elementtypen und Projekt Element Instanzen
+ Wenn Sie einen SharePoint-Projekt Elementtyp definieren, lädt Visual Studio die Erweiterung, wenn ein Projekt Element des zugeordneten Typs einem SharePoint-Projekt hinzugefügt wird. Wenn Sie z. b. einen neuen Projekt Elementtyp für eine **benutzerdefinierte Aktion** definieren, lädt Visual Studio die Erweiterung, wenn ein Benutzer ein Benutzer **definiertes Aktions** Projekt Element zu einem Projekt hinzufügt. Visual Studio verwendet die gleiche Instanz Ihrer Erweiterung für alle Instanzen des zugeordneten Projekt Elementtyps. Wenn dem Projekt im vorherigen Beispiel ein zweites Benutzer **definiertes Aktions** Projekt Element hinzugefügt wird, wird die gleiche Instanz Ihrer Erweiterung zum Anpassen des zweiten Projekt Elements verwendet.
 
- Für den Zugriff auf eine bestimmte Instanz des Projektelementtyps, behandeln Sie eines der der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> Ereignisse der *ProjectItemTypeDefinition* Parameter in der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> Methode. Um zu bestimmen, wann ein Projektelement des benutzerdefinierten Typs zu einem Projekt hinzugefügt wird, z. B. Behandeln der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> Ereignis. Weitere Informationen finden Sie unter [Vorgehensweise: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
+ Um auf eine bestimmte Instanz des Projekt Elementtyps zuzugreifen, behandeln Sie eines der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> Ereignisse des *projectItemTypeDefinition* -Parameters in der Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> Methode. Um z. b. zu ermitteln, ob ein Projekt Element des benutzerdefinierten Typs einem Projekt hinzugefügt wird, behandeln Sie das- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> Ereignis. Weitere Informationen finden Sie unter Gewusst [wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Definieren Sie einen SharePoint-Projektelementtyp](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
-- [Vorgehensweise: Hinzufügen einer Eigenschaft zu einer benutzerdefinierten SharePoint-Projektelementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
-- [Vorgehensweise: Hinzufügen eines Kontextmenüelements zu einer benutzerdefinierten SharePoint-Projektelementtyp](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)
-- [Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Exemplarische Vorgehensweise: Erstellen Sie benutzerdefinierte Aktionsprojektelement, mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
-- [Exemplarische Vorgehensweise: Erstellen von Website-Spaltenelement-Projekt mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
-- [Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
-- [Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
-- [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+- [Gewusst wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+- [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)
+- [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
+- [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
+- [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
+- [Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
+- [Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

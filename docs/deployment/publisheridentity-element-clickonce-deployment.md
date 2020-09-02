@@ -1,5 +1,5 @@
 ---
-title: '&lt;PublisherIdentity&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+title: '&lt;publisherIdentity- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62927538"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;PublisherIdentity&gt; -Element (ClickOnce-Bereitstellung)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity- &gt; Element (ClickOnce-Bereitstellung)
 Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.
 
 ## <a name="syntax"></a>Syntax
@@ -36,12 +36,12 @@ Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signi
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `publisherIdentity` Element für signierte Manifeste erforderlich ist. Die folgende Tabelle zeigt die Attribute an, dass die `publisherIdentity` Element unterstützt.
+ Das- `publisherIdentity` Element ist für signierte Manifeste erforderlich. In der folgenden Tabelle sind die Attribute aufgeführt, die das- `publisherIdentity` Element unterstützt.
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|`name`|Erforderlich. Beschreibt die Identität der Partei, die diese Anwendung veröffentlicht.|
-|`issuerKeyHash`|Erforderlich. Enthält den SHA-1-Hash des öffentlichen Schlüssels des Zertifikatausstellers.|
+|`name`|Erforderlich. Beschreibt die Identität der Partei, die diese Anwendung veröffentlicht hat.|
+|`issuerKeyHash`|Erforderlich. Enthält den SHA-1-Hash des öffentlichen Schlüssels des Zertifikat Ausstellers.|
 
 #### <a name="parameters"></a>Parameter
 
@@ -49,8 +49,8 @@ Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signi
 
 ## <a name="exceptions"></a>Ausnahmen
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 ## <a name="subhead"></a>Untertitel

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576407"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legt fest, Thunk-Typen.  
+Legt Thunk-Typen fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,34 +41,34 @@ typedef enum THUNK_ORDINAL { 
 } THUNK_ORDINAL;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  THUNK_ORDINAL_NOTYPE  
  Standard-Thunk.  
   
  THUNK_ORDINAL_ADJUSTOR  
- Ein `this` Abwicklung Thunk.  
+ Ein- `this` oder-Thunk.  
   
  THUNK_ORDINAL_VCALL  
- Virtueller Aufruf Thunk.  
+ Virtueller Rückruf.  
   
  THUNK_ORDINAL_PCODE  
- Thunk für P-Code.  
+ P-Code Thunk.  
   
  THUNK_ORDINAL_LOAD  
- Verzögert Thunk.  
+ Verzögert Lade Thunk.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Inkrementelle Trampoline-Thunk (ein Thunk Trampoline wird verwendet, um die Aufrufe aus einem Speicher in einen anderen zu springen).  
+ Inkrementelles Trampolin Thunk (ein Trampolin-Thunk wird verwendet, um Aufrufe von einem Speicherplatz zu einem anderen zu überspringen).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Branch Punkt Trampoline Thunk.  
+ Ein Zweig Punkt-Trampolin-Thunk.  
   
-## <a name="remarks"></a>Hinweise  
- Die Werte in dieser Enumeration werden zurückgegeben, von einem Aufruf der [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Werte in dieser Enumeration werden von einem Rückruf der [idiasymmetribol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
