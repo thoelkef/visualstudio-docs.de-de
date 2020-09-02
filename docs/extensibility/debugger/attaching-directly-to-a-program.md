@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc78234b31b98865f1779dd65d743d4196f9cbf5
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903264"
 ---
 # <a name="attach-directly-to-a-program"></a>Direkt an ein Programm anfügen
@@ -40,6 +40,6 @@ Benutzer, die Programme in einem Prozess debuggen möchten, der bereits ausgefü
 
    Die zweite Ausnahme besteht darin, dass die Start Ereignisse, die von einem Anfügen an ein bereits ausgelaufendes Programm gesendet werden, in der Regel nicht das Einstiegspunkt Ereignis enthalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Senden von Start Ereignissen nach einem Start](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [Debugtasks](../../extensibility/debugger/debugging-tasks.md)

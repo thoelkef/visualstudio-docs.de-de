@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41c3fd765977a1f92f5cf125bb64bb7f5b0cd2cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664303"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Tastenkombinationen in Blend
@@ -21,20 +21,20 @@ ms.locfileid: "72664303"
 
 Tastenkombinationen für Projekte
 
-|Aufgabe|Vorgehensweise|
+|Aufgabe|Aktion|
 |----------------|-------------|
-|Erstellt ein neues Projekt|STRG+UMSCHALT+N|
+|Erstellen eines neuen Projekts|STRG+UMSCHALT+N|
 |Öffnet ein Projekt oder eine Projektmappe (keine Website)|STRG+UMSCHALT+O|
 |Schließt eine Projektmappe|STRG+UMSCHALT+C|
 |Speichert eine Kopie der Projektmappe oder Website|STRG+UMSCHALT+P|
 |Fügt dem Projekt ein vorhandenes Element hinzu|STRG+I|
 |Fügt einen Verweis auf eine DLL-Datei (WPF) hinzu|ALT+UMSCHALT+R|
-|Erstellen des Projekts|STRG+UMSCHALT+B|
+|Erstellen des Projekts|CTRL+UMSCHALT+B|
 |Testet das Projekt oder die Website|F5|
 
 ## <a name="document-shortcuts"></a>Tastenkombinationen für Dokumente
 
-|Aufgabe|Vorgehensweise|
+|Aufgabe|Aktion|
 |----------------|-------------|
 |Schaltet zwischen geöffneten Dokumenten um|STRG+TAB|
 |Speichert das aktive Dokument|STRG+S|
@@ -47,15 +47,15 @@ Tastenkombinationen für Projekte
 |Ausschneiden|STRG+X|
 |Kopieren|STRG+C|
 |Einfügen|STRG+V|
-|Löschen|DELETE|
+|Löschen|Delete|
 |Sucht nach Text (nur XAML-Ansicht oder JavaScript-Editor)|STRG+F|
 |Sucht nach dem nächsten Vorkommen des Texts (nur XAML-Ansicht oder JavaScript-Editor)|F3 oder STRG+H|
 
 ## <a name="object-shortcuts"></a>Tastenkombinationen für Objekte
 
-|Aufgabe|Vorgehensweise|
+|Aufgabe|Aktion|
 |----------------|-------------|
-|Erstellt ein neues Element|STRG+N|
+|Erstellen eines neuen Elements|STRG+N|
 |Ein Objekt duplizieren|Halten Sie die ALT-TASTE gerückt und ziehen Sie das Objekt|
 |Ein Objekt neu zuordnen|Ziehen Sie das Objekt über ein Layoutpanel und drücken Sie die ALT-TASTE|
 |Bearbeitet den Text in einem Steuerelement|F2 (ESC zum Beenden)|
@@ -94,11 +94,11 @@ Tastenkombinationen für Projekte
 
 ## <a name="view-shortcuts"></a>Tastenkombinationen für Ansichten
 
-|Aufgabe|Vorgehensweise|
+|Aufgabe|Aktion|
 |----------------|-------------|
 |Zwischen der **Design**-, der **Code**- und der **geteilten** Ansicht wechseln|F11|
 |Zeichenfläche vergrößern|STRG+PLUSZEICHEN|
-|Verkleinert die Zeichenfläche|STRG+MINUSZEICHEN (-)|
+|Verkleinert die Zeichenfläche|STRG+Minuszeichen (-)|
 |Verkleinert oder vergrößert die Zeichenfläche|Drehen Sie das Mausrad|
 |Verschiebt die Zeichenfläche nach links oder rechts|Halten Sie die UMSCHALTTASTE gedrückt und drehen Sie das Mausrad|
 |Verschiebt die Zeichenfläche nach oben oder unten|Halten Sie die STRG-TASTE gedrückt und drehen Sie das Mausrad|
@@ -110,7 +110,7 @@ Tastenkombinationen für Projekte
 
 ## <a name="workspace-shortcuts"></a>Tastenkombinationen für Arbeitsbereiche
 
-|Aufgabe|Vorgehensweise|
+|Aufgabe|Aktion|
 |----------------|-------------|
 |Wechselt zwischen den Arbeitsbereichen **Animation** und **Design**|STRG+F11|
 |Blendet das **Objektepanel** ein oder aus|STRG+PUNKT|

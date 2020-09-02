@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word
+title: Einstieg in das Programmieren von Anpassungen auf Dokument Ebene für Word
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,60 +14,60 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62971796"
 ---
-# <a name="get-started-programming-document-level-customizations-for-word"></a>Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word
-  Wenn Sie gerade die Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word mit Visual Studio Schritte ersten, ist hier was Sie wissen müssen.
+# <a name="get-started-programming-document-level-customizations-for-word"></a>Einstieg in das Programmieren von Anpassungen auf Dokument Ebene für Word
+  Wenn Sie gerade erst mit dem Erstellen von Anpassungen auf Dokument Ebene für Microsoft Office Word mithilfe von Visual Studio beginnen, müssen Sie Folgendes wissen.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
-## <a name="understand-how-document-level-customizations-for-word-work"></a>Verstehen Sie, wie Anpassungen auf Dokumentebene für Word Arbeit
- Jede Anpassung von Word, die Sie erstellen, basiert auf einem einzelnen Dokument. Nutzen Sie die Anpassung, der Endbenutzer Öffnet das Dokument oder das Dokument aus einer Word-Vorlage erstellt. Ereignisse in das Dokument, z. B. das Verschieben des Cursors in bestimmte Bereiche oder durch Klicken auf Schaltflächen und Menüelemente, können zur Verarbeitung von Ereignissen-Methoden in der Assembly aufrufen. Wenn das Dokument geschlossen wird, sind die von der Anpassung bereitgestellten Funktionen nicht mehr verfügbar in Word.
+## <a name="understand-how-document-level-customizations-for-word-work"></a>Verstehen, wie Anpassungen auf Dokument Ebene für Word funktionieren
+ Jede von Ihnen erstellte Wort Anpassung basiert auf einem einzelnen Dokument. Damit die Anpassung verwendet werden kann, öffnet der Endbenutzer das Dokument oder erstellt das Dokument aus einer Word-Vorlage. Ereignisse im Dokument, z. b. das Verschieben des Cursors in bestimmte Bereiche oder das Klicken auf Schaltflächen und Menü Elemente, können Ereignis Behandlungsmethoden in der Assembly aufzurufen. Wenn das Dokument geschlossen wird, sind die Funktionen, die von der Anpassung bereitgestellt werden, nicht mehr in Word verfügbar.
 
- Weitere Informationen finden Sie unter [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md).
+ Weitere Informationen finden Sie unter [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md).
 
-## <a name="create-document-level-projects-for-word"></a>Erstellen von Projekten auf Dokumentebene für Word
- Um eine Anpassung auf Dokumentebene für Word zu erstellen, verwenden Sie die Projektvorlage für Word-Dokument oder Word-Vorlage in der **neues Projekt** Dialogfeld. Diese Vorlagen enthalten erforderliche Assemblyverweise und Projektdateien.
+## <a name="create-document-level-projects-for-word"></a>Erstellen von Projekten auf Dokument Ebene für Word
+ Um eine Anpassung auf Dokument Ebene für Word zu erstellen, verwenden Sie die Word-Dokument-oder Word-Vorlagen-Projektvorlage im Dialogfeld **Neues Projekt** . Diese Vorlagen enthalten erforderliche Assemblyverweise und Projektdateien.
 
- Weitere Informationen dazu, wie Sie ein Projekt auf Dokumentebene für Word erstellen, finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
+ Weitere Informationen zum Erstellen eines Projekts auf Dokument Ebene für Word finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
 
-## <a name="program-word-documents-by-using-host-items-host-controls"></a>Programm-Word-Dokumenten mithilfe von Hostelementen und Hoststeuerelementen
- *Hostelemente* und *Hoststeuerelemente* sind Klassen, die das Programmiermodell für Anpassungen auf Dokumentebene bereitstellen.
+## <a name="program-word-documents-by-using-host-items-host-controls"></a>Program mieren von Word-Dokumenten mithilfe von Host Steuerelementen für Host Elemente
+ *Host Elemente* und *Host Steuerelemente* sind Klassen, die das Programmiermodell für Anpassungen auf Dokument Ebene bereitstellen.
 
- Hostelemente bieten einen Einstiegspunkt für Ihren Code, und sie können auch dienen als Container für Hoststeuerelemente und Windows Forms-Steuerelemente. In Projekten auf Dokumentebene für Word, wird durch das Hostelement dargestellt die `ThisDocument` Klasse.
+ Host Elemente stellen einen Einstiegspunkt für Ihren Code bereit, und Sie können auch als Container für Host Steuerelemente und Windows Forms Steuerelemente fungieren. In Projekten auf Dokument Ebene für Word wird das-Host Element durch die- `ThisDocument` Klasse dargestellt.
 
- Hosten von Steuerelementen basieren auf systemeigene Word-Objekte, z. B. ContentControl-Elemente, Lesezeichen und XML-Knoten. Hoststeuerelemente stellen ähnliche Funktionen wie die systemeigene Word-Objekte, sie haben jedoch auch neue Ereignisse, Designer-Unterstützung und Funktion der Datenbindung. Sie sind als Objekte erster Klasse in Ihrem Projektcode und IntelliSense, dadurch wird es einfacher, die für bestimmte Objekte direkt in Ihrem Code verweisen, ohne die Word-Objektmodell Navigieren zu müssen.
+ Host Steuerelemente basieren auf nativen Word-Objekten, z. b. Inhalts Steuerelementen, Lesezeichen und XML-Knoten. Host Steuerelemente bieten ähnliche Funktionen wie die systemeigenen Word-Objekte, haben aber auch neue Ereignisse, Designer Unterstützung und Daten Bindungs Funktion. Sie werden als First-Class-Objekte im Projekt Code und in IntelliSense angezeigt, wodurch es einfacher ist, auf bestimmte Objekte direkt in Ihrem Code zu verweisen, ohne im Word-Objektmodell navigieren zu müssen.
 
  Weitere Informationen finden Sie unter den folgenden Themen:
 
-- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
+- [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 
-## <a name="customize-the-user-interface-of-word"></a>Anpassen der Benutzeroberfläche von Word
- Die meisten Microsoft Office-Projektmappen ändern der Benutzeroberfläche (UI) der Office-Anwendung eine Möglichkeit für Benutzer, für die Interaktion mit der Lösung bereitstellen. Es gibt viele Möglichkeiten, die in denen Sie die Benutzeroberfläche von Word mithilfe einer Anpassung auf Dokumentebene ändern können. Beispielsweise können Sie Steuerelemente hinzufügen, auf dem Menüband, und Sie können einen Aktionsbereich anzeigen. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
+## <a name="customize-the-user-interface-of-word"></a>Benutzeroberfläche von Word anpassen
+ Die meisten Microsoft Office Lösungen ändern die Benutzeroberfläche (User Interface, UI) der Office-Anwendung, um Benutzern die Interaktion mit der Lösung zu ermöglichen. Es gibt viele Möglichkeiten, wie Sie die Benutzeroberfläche von Word ändern können, indem Sie eine Anpassung auf Dokument Ebene verwenden. Beispielsweise können Sie dem Menüband Steuerelemente hinzufügen, und Sie können einen Aktionsbereich anzeigen. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
 
- Sie können auch das Dokument öffnen, das dem Projekt direkt in Visual Studio zugeordnet ist. Wenn das Dokument in Visual Studio geöffnet ist, können Sie das Dokument mithilfe der Word-Benutzeroberfläche ändern. Sie können auch das Dokument als Entwurfsoberfläche, die Sie Steuerelemente ziehen können. Weitere Informationen finden Sie unter [Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
+ Sie können das Dokument, das dem Projekt zugeordnet ist, auch direkt in Visual Studio öffnen. Wenn das Dokument in Visual Studio geöffnet ist, können Sie das Dokument mithilfe der Word-Benutzeroberfläche ändern. Sie können das Dokument auch als Entwurfs Oberfläche verwenden, die es Ihnen ermöglicht, Steuerelemente auf das Dokument zu ziehen. Weitere Informationen finden Sie unter [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
 
 ## <a name="bind-controls-to-data"></a>Binden von Steuerelementen an Daten
- Die Inhaltssteuerelemente und <xref:Microsoft.Office.Tools.Word.Bookmark> sind in der Liste der Steuerelemente, die Sie ziehen können, aus der **Datenquellen** Fenster. Hinzufügen Inhaltssteuerelemente und Lesezeichen in dieser Weise automatisch, bindet sie an die Datenquelle, die Sie eingerichtet haben, mithilfe des Fensters. Ohne Code schreiben zu müssen, können Sie Daten aus Datenbanken, Diensten und Geschäftsobjekten anzeigen. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).
+ Die Inhalts Steuerelemente und das- <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement sind in der Liste der Steuerelemente enthalten, die Sie aus dem **Datenquellen** Fenster ziehen können. Durch das Hinzufügen von Inhalts Steuerelementen und Lesezeichen auf diese Weise werden diese automatisch an die Datenquelle gebunden, die Sie mithilfe des-Fensters eingerichtet haben. Sie können Daten aus Datenbanken, Diensten und Geschäftsobjekten anzeigen, ohne Code schreiben zu müssen. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office](../vsto/binding-data-to-controls-in-office-solutions.md)-Projektmappen.
 
 ## <a name="next-steps"></a>Nächste Schritte
- Um zu erfahren, wie Sie eine Anpassung auf Dokumentebene für Word zu erstellen, finden Sie unter [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md). Diese exemplarische Vorgehensweise führt Sie in Office-Entwicklungstools in Visual Studio und das Programmiermodell für Anpassungen auf Anwendungsebene Word.
+ Informationen zum Erstellen einer Anpassung auf Dokument Ebene für Word finden Sie unter Exemplarische Vorgehensweise [: Erstellen der ersten Anpassung auf Dokument Ebene für Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md). In dieser exemplarischen Vorgehensweise werden die Office-Entwicklungs Tools in Visual Studio und das Programmiermodell für Word-Anpassungen auf Dokument Ebene vorgestellt.
 
- Eine Liste der Themen, die Sie durch einige der allgemeinen Aufgaben in Word-Projekten zu führen, finden Sie unter [häufig anfallenden Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md).
+ Eine Liste der Themen, die Sie durch einige der allgemeinen Aufgaben in Word-Projekten führen, finden Sie unter [Allgemeine Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
-- [Word-Projektmappen](../vsto/word-solutions.md)
-- [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
+- [Word-Lösungen](../vsto/word-solutions.md)
+- [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokument Ebene für Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 - [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
-- [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)
+- [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)

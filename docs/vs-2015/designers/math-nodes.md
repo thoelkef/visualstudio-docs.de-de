@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2d29899ec7d519d97d9d393b8a6a057ddb01ee1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664251"
 ---
 # <a name="math-nodes"></a>Berechnungsknoten
@@ -22,11 +22,11 @@ ms.locfileid: "72664251"
 Im Shader-Designer führen Berechnungsknoten algebraische, logische, trigonometrische und andere mathematische Vorgänge aus.
 
 > [!NOTE]
-> Wenn Sie mit Berechnungsknoten im Shader-Designer arbeiten, macht sich die Typerweiterung besonders bemerkbar. Um zu erfahren, wie sich die Typerweiterung auf Eingabeparameter auswirkt, gehen Sie in den Abschnitt „Erweiterung von Eingaben“ auf der Seite [Shader-Designer-Knoten](../designers/shader-designer-nodes.md).
+> Wenn Sie mit Berechnungsknoten im Shader-Designer arbeiten, macht sich die Typerweiterung besonders bemerkbar. Informationen dazu, wie sich die Typerweiterung auf Eingabeparameter auswirkt, finden Sie im Abschnitt "herauf Stufen von Eingaben" unter [Shader-Designer-Knoten](../designers/shader-designer-nodes.md).
 
 ## <a name="math-node-reference"></a>Berechnungsknotenverweis
 
-|Knoten|Details|Eigenschaften|
+|Node|Details|Eigenschaften|
 |----------|-------------|----------------|
 |**Abs**|Berechnet den absoluten Wert der angegebenen Eingabe pro Komponente.<br /><br /> Für jede Komponente der Eingabe `X` werden negative Werte in positive umgewandelt, sodass alle Komponenten des Ergebnisses einen positiven Wert aufweisen.<br /><br /> **Eingabe:**<br /><br /> `X`: `float`, `float2`, `float3` oder `float4`<br /> Die Werte, für die der absolute Wert bestimmt wird.<br /><br /> `Output:`<br /><br /> `Output`: identisch mit der Eingabe `X`<br /> Der absolute Wert pro Komponente.|Keiner|
 |**Add**|Berechnet die komponentenbezogene Summe der angegebenen Eingaben pro Komponente.<br /><br /> Für jede Komponente des Ergebnisses werden die entsprechenden Komponenten der Eingaben `X` und `Y` zusammenaddiert.<br /><br /> **Eingabe:**<br /><br /> `X`: `float`, `float2`, `float3` oder `float4`<br /> Einer der Werte, der addiert wird.<br /><br /> `Y`: identisch mit der Eingabe `X`<br /> Einer der Werte, der addiert wird.<br /><br /> **Ausgabe:**<br /><br /> `Output`: identisch mit der Eingabe `X`<br /> Die Summe pro Komponente.|Keiner|

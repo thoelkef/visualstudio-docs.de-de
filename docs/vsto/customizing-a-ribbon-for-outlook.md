@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986108"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Anpassen eines Menübands für Outlook
@@ -39,17 +39,17 @@ ms.locfileid: "72986108"
  Sie können einem Projekt mehrere Menübänder hinzufügen. Wenn sich mehrere Menübänder eine Menüband-ID teilen, überschreiben Sie die `CreateRibbonExtensibilityObject`-Methode in der `ThisAddin`-Klasse des Projekts, um anzugeben, welches Menüband zur Laufzeit angezeigt werden soll. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md). Weitere Informationen zu den einzelnen Menü Band Typen finden Sie im technischen Artikel [Anpassen des Menübands in Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Angeben des Menü Band Typs mithilfe von Menüband-XML
- Wenn Sie das Element **Menüband (XML)** verwenden, überprüfen Sie den Wert des *ribbonID* -Parameters in der <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>-Methode, und geben Sie das entsprechende Menüband zurück.
+ Wenn Sie das Element **Menüband (XML)** verwenden, überprüfen Sie den Wert des *ribbonID* -Parameters in der <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> -Methode, und geben Sie das entsprechende Menüband zurück.
 
  Die <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>-Methode wird automatisch von Visual Studio in der Menüband-Codedatei generiert. Der *ribbonID* -Parameter ist eine Zeichenfolge, die den Explorer oder einen bestimmten Inspektortyp identifiziert. Eine umfassende Liste der möglichen Werte für den *ribbonID* -Parameter finden Sie im technischen Artikel [Anpassen des Menübands in Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
- Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Menüband nur im `Microsoft.Outlook.Mail.Compose`-Inspektor angezeigt wird. Dies ist der Inspektor, der geöffnet wird, wenn ein Benutzer eine neue E-Mail erstellt. Das anzuzeigende Menüband wird in der `GetResourceText()`-Methode angegeben, die in der **Ribbon** -Klasse generiert wird. Weitere Informationen zur Menü **Band** Klasse finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md).
+ Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Menüband nur im `Microsoft.Outlook.Mail.Compose`-Inspektor angezeigt wird. Dies ist der Inspektor, der geöffnet wird, wenn ein Benutzer eine neue E-Mail erstellt. Das anzuzeigende Menüband wird in der- `GetResourceText()` Methode angegeben, die in der **Ribbon** -Klasse generiert wird. Weitere Informationen zur Menü **Band** Klasse finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Menüband-Designer](../vsto/ribbon-designer.md)
-- [Menüband-XML](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)

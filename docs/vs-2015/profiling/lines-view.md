@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145626"
 ---
 # <a name="lines-view"></a>Zeilenansicht
@@ -45,7 +45,7 @@ Die Zeilenansicht ist nur für Profilerdaten verfügbar, die mit der Samplingmet
   
 - Das Zeichen in der Quellzeile, an dem die Anweisung endet.  
   
-## <a name="see-also"></a>Siehe auch  
- [Zeilenansicht](../profiling/lines-view-sampling-data.md)   
- [Zeilenansicht - Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Zeilen Ansicht](../profiling/lines-view-sampling-data.md)   
+ [Zeilen Ansicht-Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Zeilenansicht](../profiling/lines-view-contention-data.md)

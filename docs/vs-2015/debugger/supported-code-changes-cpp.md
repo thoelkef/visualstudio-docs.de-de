@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684916"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
@@ -38,7 +38,7 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
  Weitere Informationen zum Arbeiten mit „Bearbeiten und Fortfahren“ für C++ in Visual Studio finden Sie unter [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .  
   
-## <a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen  
+## <a name="unsupported-changes"></a><a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen  
 
 Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:  
   
@@ -68,7 +68,7 @@ Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Code
   
 - Von "Bearbeiten und Fortfahren" werden keine statischen Bibliotheken aktualisiert. Wenn Sie eine Änderung an einer statischen Bibliothek vornehmen, wird die Ausführung ohne Warnung mit der alten Version fortgeführt.  
   
-## <a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
+## <a name="unsupported-scenarios"></a><a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
  "Bearbeiten und Fortfahren" steht für C/C++ in den folgenden Debugszenarien nicht zur Verfügung:  
   
 - Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)kompiliert sind  
@@ -93,26 +93,26 @@ Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Code
   
 - Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
   
-## <a name="BKMK_Linking_limitations"></a> Einschränkungen für Verknüpfungen  
+## <a name="linking-limitations"></a><a name="BKMK_Linking_limitations"></a> Einschränkungen für Verknüpfungen  
   
-### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Optionen des Linkers, durch die "Bearbeiten und Fortfahren" deaktiviert wird  
+### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Optionen des Linkers, durch die "Bearbeiten und Fortfahren" deaktiviert wird  
  Die folgenden Optionen des Linkers deaktivieren Bearbeiten und Fortfahren:  
   
 - Durch die Einstellung **/OPT:REF**, **/OPT:ICF**oder **/INCREMENTAL:NO** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
   
      LINK : Warnung LNK4075: ignoriere /EDITANDCONTINUE aufgrund von /OPT  
   
-     Angabe  
+     specification  
   
 - Durch die Einstellung von **/ORDER**, **/RELEASE**oder **/FORCE** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
   
      LINK: Warnung LNK4075: /INCREMENTAL wird aufgrund von /option ignoriert  
   
-     Angabe  
+     specification  
   
 - Durch das Festlegen einer beliebigen Option, die die Erstellung einer Programmdatenbankdatei (.pdb) verhindert, wird Bearbeiten und Fortfahren deaktiviert, wobei keine spezifische Warnung ausgegeben wird.  
   
-### <a name="BKMK_Auto_relinking_limitations"></a> Automatisches Neuverknüpfen von Einschränkungen  
+### <a name="auto-relinking-limitations"></a><a name="BKMK_Auto_relinking_limitations"></a> Automatisches Neuverknüpfen von Einschränkungen  
  In der Standardeinstellung wird durch Bearbeiten und Fortfahren das Programm am Ende der Debugsitzung neu gebunden, um eine aktuelle ausführbare Datei zu erstellen.  
   
  Bearbeiten und Fortfahren kann das Programm nicht erneut binden, wenn Sie an einer anderen Position als der der ursprünglichen Erstellung debuggen. Ihnen wird in einer Meldung mitgeteilt, dass Sie manuell neu erstellen müssen.  
@@ -129,7 +129,7 @@ Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Code
   
 3. Deaktivieren Sie das Kontrollkästchen **Codeänderungen nach dem Debuggen erneut binden** .  
   
-## <a name="BKMK_Precompiled_Header_Limitations"></a> Einschränkungen für vorkompilierte Header  
+## <a name="precompiled-header-limitations"></a><a name="BKMK_Precompiled_Header_Limitations"></a> Einschränkungen für vorkompilierte Header  
  Durch Bearbeiten und Fortfahren werden vorkompilierte Header standardmäßig im Hintergrund geladen und verarbeitet, um die Verarbeitung von Codeänderungen zu beschleunigen. Zum Laden vorkompilierter Header muss physischer Speicher belegt werden. Daher können beim Kompilieren auf einem Computer mit begrenztem Arbeitsspeicher Probleme auftreten. Sie können feststellen, ob möglicherweise ein solches Problem besteht, indem Sie mithilfe des Windows Task-Managers den während des Debuggens verfügbaren physischen Speicher bestimmen. Wenn dabei die Größe der vorkompilierten Header überschritten wird, kann Bearbeiten und Fortfahren problemlos ausgeführt werden. Wenn der Speicherplatz geringer als die vorkompilierten Header ist, können Sie das Laden von vorkompilierten Headern im Hintergrund durch Bearbeiten und Fortfahren verhindern.  
   
  **So deaktivieren Sie das Laden vorkompilierter Header im Hintergrund für "Bearbeiten und Fortfahren"**  
@@ -140,8 +140,8 @@ Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Code
   
 3. Deaktivieren Sie das Kontrollkästchen **Präkompilierung zulassen** .  
   
-## <a name="BKMK_IDL_Attribute_Limitations"></a> Einschränkungen für IDL-Attribute  
+## <a name="idl-attribute-limitations"></a><a name="BKMK_IDL_Attribute_Limitations"></a> Einschränkungen für IDL-Attribute  
  "Bearbeiten und Fortfahren" unterstützt nicht das Neugenerieren von IDL-Dateien (Interface Definiton Language). Aus diesem Grund werden Änderungen an IDL-Attributen während des Debuggens nicht widergespiegelt. Wenn Sie die Ergebnisse von Änderungen an IDL-Attributen anzeigen möchten, müssen Sie das Debuggen beenden und die App neu erstellen. "Bearbeiten und Fortfahren" erzeugt keinen Fehler bzw. keine Fehlermeldung, wenn IDL-Attribute geändert wurden. Weitere Informationen finden Sie unter [IDL-Attribute](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
-## <a name="see-also"></a>Siehe auch  
- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

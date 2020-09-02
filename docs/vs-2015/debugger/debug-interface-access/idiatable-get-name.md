@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Get_name | Microsoft-Dokumentation'
+title: 'Idisierbar:: get_name | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d4865bff057165405cac89f169348576f8b4c0fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145722"
 ---
-# <a name="idiatablegetname"></a>IDiaTable::get_name
+# <a name="idiatableget_name"></a>IDiaTable::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ruft den Namen der Tabelle ab.  
@@ -35,10 +35,10 @@ HRESULT get_name ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Der Name der Tabelle zurückgegeben.  
+ vorgenommen Gibt den Namen der Tabelle zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

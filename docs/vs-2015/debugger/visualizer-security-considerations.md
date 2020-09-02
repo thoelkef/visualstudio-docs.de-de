@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146466"
 ---
 # <a name="visualizer-security-considerations"></a>Sicherheitsüberlegungen zu Schnellansichten
@@ -40,8 +40,8 @@ Das Schreiben einer Schnellansicht kann potenzielle Sicherheitsrisiken nach sich
   
  Beachten Sie die von der Schnellansicht verfügbar gemachten Schnittstellen, wenn Sie dieses Sicherheitsproblem vermeiden möchten.  
   
-## <a name="see-also"></a>Siehe auch  
- [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)   
- [Vorgehensweise: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)   
- [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Architektur der Schnellansicht](../debugger/visualizer-architecture.md)   
+ [Gewusst wie: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)   
+ [Erstellen von benutzerdefinierten Visualisierungen](../debugger/create-custom-visualizers-of-data.md)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

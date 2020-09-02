@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986065"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Einstieg (Office-Entwicklung in Visual Studio)
@@ -27,7 +27,7 @@ ms.locfileid: "72986065"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Übersicht über &#40;die Entwicklung von Office-Lösungen VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Bietet Hintergrundinformationen zum Entwickeln von Office-Projektmappen in Visual Studio.
 

@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 525b5fe8f2726ab1f7f2ff80abf7bc06937a7a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964231"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Beibehalten einer konstanten virtuellen IP-Adresse für einen Azure-Clouddienst
@@ -37,11 +37,11 @@ Sie können im **Veröffentlichungs-Assistenten** die entsprechenden Bereitstell
 
     ![Azure-Anwendung veröffentlichen – Seite „Anmelden“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Überprüfen Sie auf der Registerkarte **Allgemeine Einstellungen**, ob der Name des Clouddiensts, für den die Bereitstellung durchgeführt wird, sowie die Angaben für **Umgebung**, **Buildkonfiguration** und **Dienstkonfiguration** richtig sind.
+4. Überprüfen Sie auf der Registerkarte **Allgemeine Einstellungen** , ob der Name des clouddiensts, für den Sie bereitstellen, die **Umgebung**, die **Buildkonfiguration**und die **Dienst Konfiguration** richtig sind.
 
     ![Azure-Anwendung veröffentlichen – Registerkarte „Allgemeine Einstellungen“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Vergewissern Sie sich auf der Registerkarte **Erweiterte Einstellungen**, dass die Angaben für **Bereitstellungsbezeichnung** und **Speicherkonto** korrekt sind. Stellen Sie sicher, dass das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktiviert und das Kontrollkästchen **Bereitstellungsaktualisierung** aktiviert ist. Durch Deaktivierung von **Bereitstellung bei Fehler löschen** stellen Sie sicher, dass die VIP beibehalten wird, wenn während der Bereitstellung ein Fehler auftritt. Durch Aktivierung des Kontrollkästchens **Bereitstellungsaktualisierung** wird sichergestellt, dass die Bereitstellung nicht gelöscht und die VIP beibehalten wird, wenn Sie die Anwendung erneut veröffentlichen. 
+5. Vergewissern Sie sich auf der Registerkarte **Erweiterte Einstellungen**, dass die Angaben für **Bereitstellungsbezeichnung** und **Speicherkonto** korrekt sind. Stellen Sie sicher, dass das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktiviert und das Kontrollkästchen **Bereitstellungsaktualisierung** aktiviert ist. Wenn Sie das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktivieren, stellen Sie sicher, dass die VIP nicht verloren geht, wenn während der Bereitstellung ein Fehler auftritt. Durch Aktivierung des Kontrollkästchens **Bereitstellungsaktualisierung** wird sichergestellt, dass die Bereitstellung nicht gelöscht und die VIP beibehalten wird, wenn Sie die Anwendung erneut veröffentlichen. 
 
     ![Azure-Anwendung veröffentlichen – Registerkarte „Erweiterte Einstellungen“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
@@ -54,4 +54,4 @@ Sie können im **Veröffentlichungs-Assistenten** die entsprechenden Bereitstell
     ![Azure-Anwendung veröffentlichen – Seite „Zusammenfassung“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Verwenden des Visual Studio-Assistenten zur Veröffentlichung einer Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md)
+- [Verwenden des Visual Studio-Assistenten zum Veröffentlichen von Azure-Anwendungen](vs-azure-tools-publish-azure-application-wizard.md)

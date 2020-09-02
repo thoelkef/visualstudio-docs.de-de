@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe77e8cb0f21789c7311d9c337b3b973c4dd44f9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645505"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Gewusst wie: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)
@@ -37,5 +37,5 @@ Sie können Kommentarformen zum Hinzufügen von Anmerkungen für Klassendiagramm
 
 2. Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) Gewusst [wie: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)
