@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank | Microsoft Docs
+title: 'Idebugarrayfield:: GetRank | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736311"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>Parameter
 `pdwRank`\
-[out] Gibt den Rang zurück.
+vorgenommen Gibt den Rang zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der Rang eines Arrays entspricht der Anzahl der Dimensionen. In C++ und C' sind mehrdimensionale Arrays wirklich Arrays von Arrays und können `GetRank` daher nur als eindimensionales Array betrachtet werden (und die Methode gibt immer 1 zurück). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]hingegen werden mehrdimensionale Arrays unterschiedlich behandelt, und der Rang eines solchen Arrays gibt `GetRank` die Anzahl der Dimensionen an (und die Methode gibt immer die Anzahl der Dimensionen zurück).
+ Der Rang eines Arrays entspricht der Anzahl von Dimensionen. In C++ und c# sind mehrdimensionale Arrays tatsächlich Arrays von Arrays und können daher nur als eindimensionales Array betrachtet werden (und die `GetRank` Methode gibt immer 1 zurück). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] werden mehrdimensionale Arrays unterschiedlich behandelt, und der Rang eines solchen Arrays spiegelt die Anzahl der Dimensionen wider (und die- `GetRank` Methode gibt immer die Anzahl der Dimensionen zurück).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

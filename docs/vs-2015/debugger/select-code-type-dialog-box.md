@@ -1,5 +1,5 @@
 ---
-title: Wählen Sie im Dialogfeld "Typ" Code | Microsoft-Dokumentation
+title: Dialogfeld „Codetyp auswählen“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 21e678df1fa3dc9ca237e9a8cb4e377fb27b0aaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148142"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogfeld "Codetyp auswählen"
@@ -43,6 +43,6 @@ Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhä
  **Diese Codetypen debuggen:**  
  Wählen Sie den zu debuggenden Codetyp in der angegebenen Liste aus.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

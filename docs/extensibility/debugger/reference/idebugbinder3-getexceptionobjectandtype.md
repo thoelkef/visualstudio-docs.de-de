@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
+title: 'IDebugBinder3:: getexceptionobjectandtype | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735754"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
-Diese Methode ruft ggf. die einem Objekt zugeordnete Ausnahme ab.
+Diese Methode ruft die Ausnahme ab, die einem Objekt zugeordnet ist, sofern vorhanden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetExceptionObjectAndType(
 
 ## <a name="parameters"></a>Parameter
 `ppException`\
-[out] Gibt das Objekt zurück, das die Ausnahme darstellt.
+vorgenommen Gibt das-Objekt zurück, das die Ausnahme darstellt.
 
 `ppField`\
-[out] Gibt das Objekt zurück, das ein bestimmtes Feld darstellt, das möglicherweise die Ausnahme verursacht hat (dies kann ein NULL-Wert sein).
+vorgenommen Gibt das-Objekt zurück, das ein bestimmtes Feld darstellt, das möglicherweise die Ausnahme verursacht hat (Dies kann ein NULL-Wert sein).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Um zu überprüfen, ob es eine `ppException`Ausnahme gibt, überprüfen Sie den Wert, der von zurückgegeben wird: wenn es sich um einen NULL-Wert handelt, dann ist diesem Objekt keine Ausnahme zugeordnet.
+> Um zu überprüfen, ob eine Ausnahme vorliegt, überprüfen Sie den von zurückgegebenen Wert `ppException` : Wenn es sich um einen NULL-Wert handelt, wird diesem-Objekt keine Ausnahme zugeordnet.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -10,10 +10,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903675"
 ---
 # <a name="creating-a-custom-start-page"></a>Erstellen einer benutzerdefinierten Start Seite
@@ -85,7 +85,7 @@ Legen Sie die primäre Instanz von Visual Studio nicht so fest, dass die benutze
 
 - Nachdem Sie die Startseite getestet und als stabil festgestellt haben, verwenden Sie im Dialogfeld **Optionen** die Option **Startseite anpassen** , um Sie in der primären Instanz von Visual Studio als Startseite auszuwählen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Start Seite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [Hinzufügen eines Benutzer Steuer Elements zur Start Seite](../extensibility/adding-user-control-to-the-start-page.md)

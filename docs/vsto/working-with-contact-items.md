@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 325f6b1b7ee489102d1ed4d2ef72350b3a6f5f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008637"
 ---
 # <a name="work-with-contact-items"></a>Arbeiten mit Kontaktelementen
@@ -27,16 +27,16 @@ ms.locfileid: "63008637"
 
 |Aufgabe|Prozedur|
 |----------|---------------|
-|Abrufen aller Kontakte, deren Nachname eine angegebene Zeichenfolge enthält.|[Vorgehensweise: Programmgesteuertes Zugreifen auf Outlook-Kontakte](../vsto/how-to-programmatically-access-outlook-contacts.md)|
-|Suchen eines Kontakts nach Vor- und Nachname.|[Vorgehensweise: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|
-|Erstellen eines neuen Kontakts und Ausfüllen der Kontaktinformationen.|[Vorgehensweise: Programmgesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|
-|Suchen nach Kontakten, deren E-Mail-Adresse eine bestimmte Domäne enthält.|[Vorgehensweise: Suchen Sie programmgesteuert eine e-Mail-Adresse in den Kontakten](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|
-|Löschen eines Kontakts, der einen angegebenen Namen aufweist.|[Vorgehensweise: Programmgesteuertes Löschen von Outlook-Kontakten](../vsto/how-to-programmatically-delete-outlook-contacts.md)|
+|Abrufen aller Kontakte, deren Nachname eine angegebene Zeichenfolge enthält.|[Gewusst wie: Programm gesteuertes zugreifen auf Outlook-Kontakte](../vsto/how-to-programmatically-access-outlook-contacts.md)|
+|Suchen eines Kontakts nach Vor- und Nachname.|[Gewusst wie: Programm gesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|
+|Erstellen eines neuen Kontakts und Ausfüllen der Kontaktinformationen.|[Gewusst wie: Programm gesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|
+|Suchen nach Kontakten, deren E-Mail-Adresse eine bestimmte Domäne enthält.|[Gewusst wie: Programm gesteuertes suchen nach einer e-Mail-Adresse in Kontakten](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|
+|Löschen eines Kontakts, der einen angegebenen Namen aufweist.|[Vorgehensweise: Programm gesteuertes Löschen von Outlook-Kontakten](../vsto/how-to-programmatically-delete-outlook-contacts.md)|
 
- Weitere Informationen zu Outlook-Aufgaben und Outlook-Objektmodell finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
+ Weitere Informationen zu Outlook-Aufgaben und zum Outlook-Objektmodell finden Sie unter Übersicht über das [Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Arbeiten mit e-Mail-Elementen](../vsto/working-with-mail-items.md)
 - [Arbeiten mit Ordnern](../vsto/working-with-folders.md)
 - [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)
-- [Outlook-Projektmappen](../vsto/outlook-solutions.md)
+- [Outlook-Lösungen](../vsto/outlook-solutions.md)

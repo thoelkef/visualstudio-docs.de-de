@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState | Microsoft Docs
+title: 'IDebugProcess3:: getencavailablestate | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723640"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Diese Methode ruft den aktuellen Bearbeitungs- und Fortsetzungsstatus des Prozesses ab. Ein benutzerdefinierter Portlieferant sollte immer zurückgeben. `E_NOTIMPL`
+Diese Methode ruft den aktuellen Zustand "Bearbeiten und Fortfahren" des Prozesses ab. Ein benutzerdefinierter Port Lieferant sollte immer zurückgeben `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,18 +41,18 @@ int GetENCAvailableState(
 
 ## <a name="parameters"></a>Parameter
 `pReason`\
-[out] Ein Wert aus der [EncUnavailableReason-Enumeration.](../../../extensibility/debugger/reference/encunavailablereason.md)
+vorgenommen Ein Wert [aus der](../../../extensibility/debugger/reference/encunavailablereason.md) Enumeration "Enumeration" in "Enumeration".
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Ein benutzerdefinierter Portlieferant sollte immer zurückgeben. `E_NOTIMPL`
+> Ein benutzerdefinierter Port Lieferant sollte immer zurückgeben `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Bemerkungen
- Dieser Zustand kann von [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)beeinflusst werden.
+ Dieser Status kann von [disableumc](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)beeinflusst werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

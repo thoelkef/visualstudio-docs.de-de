@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Geben Sie einen Link für den technischen Support | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Angeben eines Links für technischen Support | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,31 +22,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148111"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Vorgehensweise: Angeben eines Links für den technischen Support
+# <a name="how-to-specify-a-link-for-technical-support"></a>Gewusst wie: Angeben eines Links für technischen Support
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung, die **Support-URL** Eigenschaft identifiziert, einer Webseite oder Dateifreigabe, in dem Benutzer zum Abrufen von Informationen zur Anwendung gelangen. Diese Eigenschaft ist optional. Wenn angegeben, wird die URL in der Eintrag der Anwendung angezeigt werden **Software** Dialogfeld.  
+Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung identifiziert die Eigenschaft **Support-URL** eine Webseite oder eine Dateifreigabe, mit der Benutzerinformationen zur Anwendung erhalten können. Diese Eigenschaft ist optional. Wenn diese Option angegeben ist, wird die URL **im Dialogfeld** "Software" der Anwendung angezeigt.  
   
- Die **Support-URL** Eigenschaft kann festgelegt werden, auf die **veröffentlichen** auf der Seite die **Projekt-Designer**.  
+ Die Eigenschaft **Support-URL** kann auf der Seite **veröffentlichen** des Projekt- **Designers**festgelegt werden.  
   
-### <a name="to-specify-a-support-url"></a>Angeben ein Support-URLs  
+### <a name="to-specify-a-support-url"></a>So geben Sie eine Support-URL an  
   
 1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3. Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.  
+3. Klicken Sie auf die Schaltfläche **Optionen** , um das Dialogfeld **Veröffentlichungs Optionen** zu öffnen.  
   
 4. Klicken Sie auf **Beschreibung**.  
   
-5. In der **Support-URL** Geben Sie einen vollqualifizierten Pfad zu einer Website, Webseite oder UNC-Freigabe.  
+5. Geben Sie im Feld **Unterstützungs-URL** einen voll qualifizierten Pfad zu einer Website, einer Webseite oder einer UNC-Freigabe ein.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [How to: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

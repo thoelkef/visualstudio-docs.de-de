@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986054"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisierung und Lokalisierung von Excel-Lösungen
@@ -47,7 +47,7 @@ ms.locfileid: "72986054"
  Sie müssen weiterhin sicherstellen, dass jeder Teil des Codes, der mit dem Dokumenttext interagiert, stets mit der Sprache des Texts übereinstimmt, und dass sich Lesezeichen, benannte Bereiche und andere Anzeigefelder allen neuen Formatierungen des Office-Dokuments anpassen, die hinsichtlich einer anderen Grammatik und Textlänge geändert werden mussten. Für Dokumentvorlagen, die relativ wenig Text enthalten, können Sie erwägen, den Text in Ressourcendateien zu speichern und dann zur Laufzeit zu laden.
 
 ### <a name="text-direction"></a>Text Richtung
- In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Host Steuerelemente oder beliebige Steuerelemente, die über eine `RightToLeft`-Eigenschaft verfügen, die im Designer platziert wird, entsprechen diesen Einstellungen zur Laufzeit automatisch. Word verfügt nicht über eine Dokument Einstellung für bidirektionalen Text (Sie ändern einfach die Textausrichtung), sodass die Steuerelemente dieser Einstellung nicht zugeordnet werden können. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.
+ In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Host Steuerelemente oder beliebige Steuerelemente, die `RightToLeft` über eine Eigenschaft verfügen, die im Designer platziert wird, entsprechen diesen Einstellungen zur Laufzeit automatisch. Word verfügt nicht über eine Dokument Einstellung für bidirektionalen Text (Sie ändern einfach die Textausrichtung), sodass die Steuerelemente dieser Einstellung nicht zugeordnet werden können. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.
 
 ### <a name="change-culture"></a>Kultur ändern
  Ihr Anpassungscode auf Dokumentebene teilt in der Regel den primären UI-Thread von Excel. Daher wirken sich alle Änderungen, die Sie an der Threadkultur vornehmen, auf alles andere aus, das in diesem Thread ausgeführt wird. Die Änderung ist nicht auf Ihre Anpassung beschränkt.
@@ -55,7 +55,7 @@ ms.locfileid: "72986054"
  Windows Forms-Steuerelemente werden initialisiert, bevor VSTO-Add-Ins der Anwendungsebene von der Hostanwendung gestartet werden. In diesen Situationen sollte die Kultur vor dem Festlegen der UI-Steuerelemente geändert werden.
 
 ## <a name="install-the-language-packs"></a>Installieren der Sprachpakete
- Wenn Sie andere Einstellungen als „Englisch“ für Windows verwenden, können Sie die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprachpakete installieren, um [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Meldungen in der unter Windows ausgewählten Sprache anzuzeigen. Wenn Benutzer Ihre Projektmappen mit anderen Einstellungen als „Englisch“ für Windows ausführen, müssen sie über das richtige Sprachpaket verfügen, um Laufzeitmeldungen in derselben Sprache wie Windows anzeigen zu können. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Packs sind im [Microsoft Download Center](https://www.microsoft.com/download)verfügbar.
+ Wenn Sie andere Einstellungen als „Englisch“ für Windows verwenden, können Sie die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprachpakete installieren, um [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Meldungen in der unter Windows ausgewählten Sprache anzuzeigen. Wenn Benutzer Ihre Projektmappen mit anderen Einstellungen als „Englisch“ für Windows ausführen, müssen sie über das richtige Sprachpaket verfügen, um Laufzeitmeldungen in derselben Sprache wie Windows anzeigen zu können. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprachpakete sind im [Microsoft Download Center](https://www.microsoft.com/download)verfügbar.
 
  Darüber hinaus sind die verteilbaren .NET Framework Language Packs für ClickOnce-Meldungen erforderlich. Die .NET Framework Language Packs sind im [Microsoft Download Center](https://www.microsoft.com/download)verfügbar.
 
@@ -95,7 +95,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>Anwendungen, die externe Daten verwenden
  Möglicherweise ist auch jeglicher Code, der externe Daten öffnet oder anderweitig verwendet, betroffen, z. B. Dateien mit durch Trennzeichen getrennten Werten (CSV-Dateien), die aus einem Legacysystem exportiert wurden, wenn diese Dateien in einem anderen Format als „en-US“ exportiert werden. Der Zugriff auf die Datenbank ist möglicherweise nicht beeinträchtigt, da alle Werte im binären Format vorliegen sollten, sofern die Datenbank die Daten nicht als Zeichenfolgen speichert oder Vorgänge ausführt, die kein binäres Format verwenden. Wenn Sie SQL-Abfragen mithilfe von Daten aus Excel erstellen, müssen Sie zudem möglicherweise sicherstellen, dass diese in Abhängigkeit von der verwendeten Funktion im Format „en-US“ vorliegen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Ausrichten der mehrsprachigen Office-Benutzeroberfläche](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

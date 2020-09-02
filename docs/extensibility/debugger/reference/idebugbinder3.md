@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3 | Microsoft Docs
+title: IDebugBinder3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa85872337fdc1f7519d0de98cffe1436ef41c67
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735666"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Expressionsevaluatoren finden Sie unter [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Diese Schnittstelle bietet Zugriff auf Typen, Aliase und benutzerdefinierte Visualisierungsdienste.
+ Diese Schnittstelle ermöglicht den Zugriff auf Typen, Aliase und benutzerdefinierte Visualisierungs Dienste.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,29 +32,29 @@ IDebugBinder3 : IDebugBinder
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein Debugmodul implementiert diese Schnittstelle, um Aliase, benutzerdefinierte Visualisierungsdienste und den Zugriff auf Objekttypinformationen zu unterstützen.
+ Eine Debug-Engine implementiert diese Schnittstelle, um Aliase, benutzerdefinierte Visualisierungs Dienste und Zugriff auf Objekttyp Informationen zu unterstützen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Eine [IDebugBinder-Schnittstelle](../../../extensibility/debugger/reference/idebugbinder.md) ruft diese Schnittstelle mithilfe von [QueryInterface](/cpp/atl/queryinterface)ab.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Eine [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle erhält diese Schnittstelle mithilfe von [QueryInterface](/cpp/atl/queryinterface).
 
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den Methoden, die von der [IDebugBinder-Schnittstelle](../../../extensibility/debugger/reference/idebugbinder.md) bereitgestellt werden, implementiert diese Schnittstelle Folgendes:
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
+ Zusätzlich zu den Methoden, die von der [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle bereitgestellt werden, implementiert diese Schnittstelle Folgendes:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Ruft ein Speicherobjekt ab, das den Speicher darstellt, an den dieses Objekt gebunden ist.|
-|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Ruft die diesem Objekt zugeordnete Ausnahme ab (falls vorhanden),|
-|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Ruft einen Alias mit seinem Namen ab,|
-|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Ruft ein Array aller Aliase für dieses Objekt ab,|
-|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Ruft die Anzahl der Argumenttypen ab, die diesem Objekt zugeordnet sind,|
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Ruft eine Liste der Argumenttypen ab, die diesem Objekt zugeordnet sind,|
-|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Ruft eine Schnittstelle zu einem Visualisierungsdienst ab,|
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konvertiert entweder einen Objektspeicherort oder eine 64-Bit-Speicheradresse in einen Speicherkontext.|
+|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Ruft ein Speicher Objekt ab, das den Speicher darstellt, an den dieses-Objekt gebunden ist.|
+|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Ruft die Ausnahme ab, die diesem-Objekt zugeordnet ist (falls vorhanden).|
+|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Ruft einen Alias anhand seines Namens ab.|
+|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Ruft ein Array aller Aliase für dieses-Objekt ab.|
+|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Ruft die Anzahl von Argument Typen ab, die diesem-Objekt zugeordnet sind.|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Ruft eine Liste von Argument Typen ab, die diesem-Objekt zugeordnet sind.|
+|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Ruft eine Schnittstelle zu einem schnell Ansichts Dienst ab.|
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konvertiert entweder einen Objekt Speicherort oder eine 64-Bit-Speicheradresse in einen Speicher Kontext.|
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: ee.h
+## <a name="requirements"></a>Anforderungen
+ Header: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

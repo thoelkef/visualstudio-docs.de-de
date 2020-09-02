@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650784"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Abrufen von Code in einem VSTO-Add-in aus VBA
@@ -42,8 +42,8 @@ ms.locfileid: "72650784"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -92,12 +92,12 @@ ms.locfileid: "72650784"
 
 2. Klicken Sie mit der rechten Maustaste auf **ThisAddIn.cs** bzw. **ThisAddIn.vb**, und klicken Sie dann auf **Code anzeigen**.
 
-3. Fügen Sie der `ThisAddIn` -Klasse folgenden Code hinzu.
+3. Fügen Sie der `ThisAddIn` -Klasse den folgenden Code hinzu.
 
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
-4. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+4. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
      Überprüfen Sie, ob die Lösung ohne Fehler erstellt wurde.
 
@@ -108,7 +108,7 @@ ms.locfileid: "72650784"
 
 1. Drücken Sie **F5** , um das Projekt auszuführen.
 
-2. Speichern Sie in Excel die aktive Arbeitsmappe als Excel-Arbeitsmappe mit Makros (*.xlsm). Speichern Sie es an einem geeigneten Speicherort, z. B. auf dem Desktop.
+2. Speichern Sie in Excel die aktive Arbeitsmappe als Excel-Arbeitsmappe mit Makros (*.xlsm). Speichern Sie sie an einem geeigneten Speicherort, z. B. auf dem Desktop.
 
 3. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
 
@@ -123,7 +123,7 @@ ms.locfileid: "72650784"
 
      Die Codedatei für das `ThisWorkbook` -Objekt wird geöffnet.
 
-6. Fügen Sie der Codedatei den folgenden VBA-Code hinzu. Mit diesem Code wird zuerst ein COMAddIn-Objekt abgerufen, das das **ExcelImportData** -VSTO-Add-in darstellt. Anschließend wird im Code die Object-Eigenschaft des COMAddIn-Objekts verwendet, um die `ImportData`-Methode aufzurufen.
+6. Fügen Sie der Codedatei den folgenden VBA-Code hinzu. Mit diesem Code wird zuerst ein COMAddIn-Objekt abgerufen, das das **ExcelImportData** -VSTO-Add-in darstellt. Anschließend wird im Code die Object-Eigenschaft des COMAddIn-Objekts verwendet, um die-Methode aufzurufen `ImportData` .
 
     ```vb
     Sub CallVSTOMethod()
@@ -150,10 +150,10 @@ ms.locfileid: "72650784"
 
 - Passen Sie das Menüband in einem VSTO-Add-in an. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md) und Gewusst [wie: Einstieg in die Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Code in VSTO-Add-Ins aus anderen Office-Projektmappen aufzurufen](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterbarkeits Schnittstellen](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

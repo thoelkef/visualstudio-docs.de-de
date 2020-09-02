@@ -11,47 +11,47 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e58ebd736f7bb9f35df6e41d5235f36f7037259
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687627"
 ---
 # <a name="wizards"></a>Assistenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nachdem Sie einen Assistenten erstellen, in der Regel damit hinzufügen möchten die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Entwicklungsumgebung (IDE) integriert, sodass andere sie verwenden können. Die hinzugefügten dann erscheint der Assistent die **neues Projekt hinzufügen** oder **neues Element hinzufügen** Dialogfelder. Anzeigen der **neues Projekt hinzufügen** oder **neues Element hinzufügen** Dialogfeld Felder mit der rechten Maustaste in einer geöffneten Projektmappe **Projektmappen-Explorer**, zeigen Sie auf **hinzufügen**, und Klicken Sie dann auf **neues Projekt** oder **neues Element**.  
+Nachdem Sie einen Assistenten erstellt haben, möchten Sie ihn in der Regel der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) hinzufügen, damit er von anderen Benutzern verwendet werden kann. Der hinzugefügte Assistent wird dann in den Dialogfeldern **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** angezeigt. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf eine geöffnete Projekt Mappe, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt** oder **Neues Element**, um die Dialogfelder **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** anzuzeigen.  
   
- Assistenten können implementiert werden, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzer informieren, wählen Sie aus der Strukturansicht der verfügbaren Werte, die beim Öffnen der **neues Projekt hinzufügen** Dialogfeld oder **neues Element hinzufügen** im Dialogfeld oder wenn sie mit der rechten Maustaste ein Element im **Projektmappen-Explorer**.  
+ Assistenten können in implementiert werden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , um Benutzern die Auswahl aus einer Strukturansicht verfügbarer Werte zu ermöglichen, wenn Sie das Dialogfeld **Neues Projekt hinzufügen** oder das Dialogfeld **Neues Element hinzufügen** öffnen, oder wenn Sie mit der rechten Maustaste auf ein Element in **Projektmappen-Explorer**klicken.  
   
- Im Assistenten können Sie die Möglichkeit, Lokalisieren den Namen eines neuen Projekts oder einer Ites bereitstellen, und Sie können bestimmen, dass das Symbol, das Benutzern angezeigt wird, wenn sie den Assistenten auswählen. Sie können auch die Reihenfolge steuern, in der neuen Elemente relativ zu anderen verfügbaren Elemente angezeigt werden; Elemente keine alphabetisch angeordnet werden.  
+ In Ihrem Assistenten können Sie die Option zum Lokalisieren des Namens eines neuen Projekts oder von "Ites" bereitstellen, und Sie können das Symbol ermitteln, das Benutzern angezeigt wird, wenn Sie den Assistenten auswählen. Sie können auch die Reihenfolge steuern, in der neue Elemente relativ zu anderen verfügbaren Elementen angezeigt werden. Elemente müssen nicht alphabetisch angeordnet werden.  
   
- Sie können auch einen Assistenten angeben, der anders beginnt auf der Grundlage benutzerdefinierter Parameter, die dem Assistenten übergeben werden, wenn dieses geöffnet wird.  
+ Sie können auch einen Assistenten bereitstellen, der je nach benutzerdefinierten Parametern, die beim Öffnen an den Assistenten übergeben werden, unterschiedlich gestartet werden.  
   
- Die Themen in diesem Abschnitt erläutern die Dateien, die Sie implementieren, um die dazu führen, dass die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **neues Projekt hinzufügen** und **neues Element hinzufügen** Dialogfelder, um den Assistenten für die verfügbaren Assistenten und Vorlagen, Liste und die Anforderungen, die der Assistent erfüllen muss, um ordnungsgemäß ausgeführt wird, in der IDE.  
+ In den Themen in diesem Abschnitt werden die Dateien erläutert, die Sie implementieren, um die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Dialogfelder **Neues Projekt hinzufügen** und **Neues Element hinzufügen** zu veranlassen, den Assistenten unter den verfügbaren Assistenten und Vorlagen aufzulisten und die Anforderungen zu erfüllen, die der Assistent erfüllen muss, damit er in der IDE ordnungsgemäß funktioniert.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
- Bietet eine Übersicht über welche Vorlage Directory Description-Dateien, und erläutert, wie sie funktionieren in der IDE zum Anzeigen von Ordnern, Assistenten VSZ-Dateien und Vorlagendateien, die einem Projekt in den Dialogfeldern zugeordnet sind.  
+ Bietet einen Überblick über die Vorlagen Verzeichnis Beschreibungsdateien und erläutert, wie Sie in der IDE funktionieren, um Ordner, Assistenten. VSZ-Dateien und Vorlagen Dateien anzuzeigen, die einem Projekt in den Dialogfeldern zugeordnet sind.  
   
  [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)  
- Erläutert, wie der IDE Assistenten gestartet und führt die drei Teile der VSZ-Datei.  
+ Erläutert, wie die IDE die Assistenten startet und die drei Teile der VSZ-Datei auflistet.  
   
  [Assistentenschnittstelle (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)  
- Beschreibt die `IDTWizard` Schnittstelle, Assistenten implementieren müssen, um in der IDE zu arbeiten.  
+ Beschreibt die `IDTWizard` Schnittstelle, die Assistenten implementieren müssen, damit Sie in der IDE funktioniert.  
   
  [Kontextparameter](../../extensibility/internals/context-parameters.md)  
- Erläutert, wie die Assistenten implementiert werden und was geschieht, wenn die IDE Kontextparameter für die Implementierung übergeben.  
+ Erläutert, wie Assistenten implementiert werden und was geschieht, wenn die IDE Kontext Parameter an die-Implementierung übergibt.  
   
  [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)  
- Es wird erläutert, wie benutzerdefinierte-Parameter verwenden, um den Vorgang des Assistenten zu steuern, nachdem der Assistent gestartet wird.  
+ Erläutert die Verwendung von benutzerdefinierten Parametern zum Steuern des Vorgangs des Assistenten, nachdem der Assistent gestartet wurde.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projekttypen](../../extensibility/internals/project-types.md)  
- Enthält Links zu weiteren Themen, die Informationen zum Entwerfen von neuen Projekttypen anbieten.  
+ Enthält Links zu weiteren Themen, in denen Informationen zum Entwerfen neuer Projekttypen angeboten werden.  
   
  [Exemplarische Vorgehensweise: Erstellen eines Assistenten](https://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
- Veranschaulicht, wie zum Erstellen eines Assistenten.  
+ Veranschaulicht, wie ein Assistent erstellt wird.  
   
  [Erweitern von Projekten](../../extensibility/extending-projects.md)  
  Beschreibt, wie Codedateien und Ressourcendateien mithilfe von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projekten und -Projektmappen organisiert werden und wie die Quellcodeverwaltung implementiert wird.

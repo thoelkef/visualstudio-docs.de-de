@@ -1,5 +1,5 @@
 ---
-title: Komponentenverwaltung | Microsoft Docs
+title: Komponenten Verwaltung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,41 +12,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709334"
 ---
-# <a name="component-management"></a>Komponentenmanagement
-Aufgabeneinheiten im Windows Installer werden als Windows Installer-Komponenten bezeichnet (manchmal auch als WICs oder nur als Komponenten bezeichnet). Eine GUID identifiziert jedes WIC, die grundlegende Einheit der Installation und Referenzzählung für Setups, die Windows Installer verwenden.
+# <a name="component-management"></a>Komponenten Verwaltung
+Aufgaben Einheiten in der Windows Installer werden als Windows Installer Komponenten (manchmal als "wics" oder "nur Komponenten" bezeichnet) bezeichnet. Eine GUID identifiziert jedes WIC, bei dem es sich um die grundlegende Einheit für die Installation und die Verweis Zählung für Setups handelt, die Windows Installer verwenden.
 
- Obwohl Sie mehrere Produkte verwenden können, um Ihr VSPackage-Installationsprogramm zu erstellen, setzt diese Diskussion die Verwendung von Windows Installer -*.msi*) Dateien voraus. Beim Erstellen des Installationsprogramms müssen Sie die Dateibereitstellung ordnungsgemäß verwalten, sodass die korrekte Verweiszählung jederzeit erfolgt. Folglich werden verschiedene Versionen Ihres Produkts sich in einer Mischung aus Installations- und Deinstallationsszenarien nicht gegenseitig stören oder brechen.
+ Obwohl Sie zum Erstellen des VSPackage-Installers mehrere Produkte verwenden können, wird in dieser Erläuterung die Verwendung von Windows Installer-Dateien (*MSI*-Dateien) vorausgesetzt. Wenn Sie das Installationsprogramm erstellen, müssen Sie die Datei Bereitstellung ordnungsgemäß verwalten, damit die richtige Verweis Zählung immer erfolgt. Folglich stören verschiedene Versionen Ihres Produkts in einer Mischung aus Installations-und Deinstallations Szenarios nicht gegenseitig.
 
- In Windows Installer erfolgt die Verweiszählung auf Komponentenebene. Sie müssen Ihre Ressourcen – Dateien, Registrierungseinträge usw. – sorgfältig in Komponenten organisieren. Es gibt andere Organisationsebenen, z. B. Module, Features und Produkte, die in verschiedenen Szenarien hilfreich sein können. Weitere Informationen finden Sie unter [Windows Installer-Grundlagen](../../extensibility/internals/windows-installer-basics.md).
+ In Windows Installer erfolgt die Verweis Zählung auf Komponentenebene. Sie müssen ihre Ressourcen sorgfältig organisieren – Dateien, Registrierungseinträge usw. – in Komponenten. Es gibt andere Ebenen der Organisation – z. b. Module, Features und Produkte –, die in verschiedenen Szenarien hilfreich sein können. Weitere Informationen finden Sie unter [Windows Installer Grundlagen](../../extensibility/internals/windows-installer-basics.md).
 
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Richtlinien für die Erstellung von Erstellungseinstellungen für die nebeneinander-installation
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Richtlinien zum Erstellen von Setup für die parallele Installation
 
-- Erstellen Sie Dateien und Registrierungsschlüssel, die von Versionen in ihren eigenen Komponenten gemeinsam verwendet werden.
+- Verfassen von Dateien und Registrierungs Schlüsseln, die von Versionen gemeinsam genutzt werden, in Ihre eigenen Komponenten.
 
-     Auf diese Weise können Sie sie in der nächsten Version einfach nutzen. Geben Sie beispielsweise Bibliotheken ein, die global registriert sind, Dateierweiterungen, andere Elemente, die in **HKEY_CLASSES_ROOT**registriert sind usw.
+     Auf diese Weise können Sie Sie problemlos in der nächsten Version verwenden. Beispielsweise können Sie Bibliotheken, die Global registriert sind, Dateierweiterungen, andere in **HKEY_CLASSES_ROOT**registrierte Elemente usw. eingeben.
 
-- Gruppieren Sie gemeinsam genutzte Komponenten in separate Mergemodule.
+- Gruppieren Sie freigegebene Komponenten in separaten Mergemodulen.
 
-     Diese Strategie hilft Ihnen, die erstellung sie korrekt für die nebeneinander gerichtete Installation zu erstellen.
+     Diese Strategie hilft Ihnen beim Erstellen einer ordnungsgemäßen Installation für eine parallele Installation.
 
-- Installieren Sie freigegebene Dateien und Registrierungsschlüssel, indem Sie die gleichen Windows Installer-Komponenten versionenübergreifend verwenden.
+- Installieren Sie freigegebene Dateien und Registrierungsschlüssel, indem Sie die gleichen Windows Installer Komponenten in verschiedenen Versionen verwenden.
 
-     Wenn Sie eine andere Komponente verwenden, werden Dateien und Registrierungseinträge deinstalliert, wenn ein versioniertes VSPackage deinstalliert wird, aber ein anderes VSPackage noch installiert ist.
+     Wenn Sie eine andere Komponente verwenden, werden Dateien und Registrierungseinträge deinstalliert, wenn ein VSPackage mit Versions Angabe deinstalliert wird, aber noch ein anderes VSPackage installiert ist.
 
-- Mischen Sie keine versionierten und freigegebenen Elemente in derselben Komponente.
+- Mischen Sie versionierte und freigegebene Elemente in derselben Komponente nicht.
 
-     Dies macht es unmöglich, freigegebene Elemente an einem globalen Speicherort und versionierte Elemente an isolierten Speicherorten zu installieren.
+     Dadurch ist es nicht mehr möglich, freigegebene Elemente an einem globalen Speicherort zu installieren und Elemente mit Versions Angabe für isolierte Standorte zu installieren.
 
-- Sie verfügen nicht über freigegebene Registrierungsschlüssel, die auf versionierte Dateien verweisen.
+- Verwenden Sie keine freigegebenen Registrierungsschlüssel, die auf Dateien mit Versions Angabe verweisen.
 
-     Wenn Sie dies tun, werden die freigegebenen Schlüssel überschrieben, wenn ein anderes versioniertes VSPackage installiert wird. Nachdem Sie die zweite Version entfernt haben, ist die Datei, auf die der Schlüssel zeigt, verschwunden.
+     Wenn Sie dies tun, werden die freigegebenen Schlüssel überschrieben, wenn ein anderes VSPackage mit Versions Angabe installiert wird. Nachdem Sie die zweite Version entfernt haben, ist die Datei, auf die der Schlüssel verweist, nicht mehr vorhanden.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Wählen Sie zwischen freigegebenen und versionierten VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
-- [VSPackage-Setup-Szenarien](../../extensibility/internals/vspackage-setup-scenarios.md)
+- [Auswählen zwischen freigegebenen und versionierten VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [VSPackage-Setup Szenarien](../../extensibility/internals/vspackage-setup-scenarios.md)

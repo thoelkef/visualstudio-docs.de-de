@@ -1,5 +1,5 @@
 ---
-title: Symbole Element | Microsoft-Dokumentation
+title: Symbols-Element | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160458"
 ---
 # <a name="symbols-element"></a>Symbols-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für nicht verwalteten Code, diese Informationen in der Regel stammen aus den Headerdateien, die vom angegebenen [Extern-Element](../extensibility/extern-element.md). Verwalteten Code verwendet die untergeordneten Elemente des Symbols-Element, um diese Informationen zu definieren.  
+Definiert GUIDs und IDs, die von anderen vsct-Elementen verwendet werden. Bei nicht verwaltetem Code stammen diese Informationen in der Regel aus den Header Dateien, die durch das [extern-Element](../extensibility/extern-element.md)angegeben werden. Verwalteter Code verwendet die untergeordneten Elemente des Symbols-Elements, um diese Informationen zu definieren.  
   
- Wenn Sie eine VSCT-Datei aus einer vorhandenen CTO-Datei erstellen, werden die Symbole als untergeordnete Elemente des Elements Symbole generiert. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie ein. VSCT-Datei aus einem vorhandenen. CTO-Datei](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ Wenn Sie eine vsct-Datei aus einer vorhandenen CTO-Datei erstellen, werden die Symbole als untergeordnete Elemente des Elements "Symbols" generiert. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen einer. Vsct-Datei aus einer vorhandenen. CTO-Datei](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
- Das Element Symbole dürfen nicht verwechselt werden, mit der [Element definieren](../extensibility/define-element.md), das Name-Wert-Paare für die Verwendung durch den Präprozessor definiert.  
+ Das Symbols-Element sollte nicht mit dem [define-Element](../extensibility/define-element.md)verwechselt werden, das Name-Wert-Paare für die Verwendung durch den Präprozessor definiert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,22 +41,22 @@ Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für n
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
-|None||  
+|Keine||  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|GuidSymbol|Definiert eine GUID-Symbol. GuidSymbol hat zwei obligatorische Attribute: Name-Wert. Der Name ist der Name des Symbols, und der Wert ist der Wert der GUID als Zeichenfolge.<br /><br /> Zum Beispiel:\<GuidSymbol-Name = "guidVsPackage1Pkg" Value = "{c5f54698-101a-4846-84d3-dc748f9cd848}" / >|  
-|IDSymbol|Definiert ein Symbol an. IDSymbol hat zwei obligatorische Attribute: Name-Wert. Der Name ist der Name des Symbols, und der Wert ist der Wert des Symbols als Zeichenfolge.<br /><br /> Zum Beispiel:\<IDSymbol-Name = "MyMenuGroup" Value = "0x1020" / >|  
+|GuidSymbol|Definiert ein GUID-Symbol. "Guidsymbol" hat zwei erforderliche Attribute: "Name" und "Value". Der Name ist der Name des Symbols, und der Wert ist der Wert der GUID als Zeichenfolge.<br /><br /> Beispiel: \<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|  
+|IDSymbol|Definiert ein Symbol. Idsymbol verfügt über zwei erforderliche Attribute: Name und Wert. Der Name ist der Name des Symbols, und der Wert ist der Wert des Symbols als Zeichenfolge.<br /><br /> Beispiel: \<IDSymbol name="MyMenuGroup" value="0x1020" />|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Das Stammelement der VSCT-Datei.|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Das Stamm Element der vsct-Datei.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -71,5 +71,5 @@ Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für n
 </Symbols>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

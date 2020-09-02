@@ -1,5 +1,5 @@
 ---
-title: Threading-Unterstützung in Office
+title: Threading Unterstützung in Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,23 +16,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978766"
 ---
-# <a name="threading-support-in-office"></a>Threading-Unterstützung in Office
-  Dieser Artikel enthält Informationen darüber, wie die threading in Microsoft Office-Objektmodell unterstützt wird. Das Office-Objektmodell ist nicht threadsicher, aber es ist möglich, die Arbeit mit mehreren Threads in einer Office-Projektmappe. Office-Anwendungen sind Component Object Model (COM)-Servern. COM ermöglicht Clients, die zum Aufrufen von COM-Server in beliebigen Threads. Für COM-Server, die nicht threadsicher sind, bietet COM über einen Mechanismus, um gleichzeitige Aufrufe zu serialisieren, sodass nur einen logischen Thread zu einem beliebigen Zeitpunkt auf dem Server ausgeführt wird. Dieser Mechanismus wird als das Singlethread-Apartment (STA)-Modell bezeichnet. Da Aufrufe serialisiert werden, möglicherweise Aufrufer für einen Zeitraum blockiert, während der Server ausgelastet ist oder andere Aufrufe in einem Hintergrundthread behandelt wird.
+# <a name="threading-support-in-office"></a>Threading Unterstützung in Office
+  Dieser Artikel enthält Informationen dazu, wie Threading im Microsoft Office-Objektmodell unterstützt wird. Das Office-Objektmodell ist nicht Thread sicher, aber es ist möglich, mit mehreren Threads in einer Office-Projekt Mappe zu arbeiten. Office-Anwendungen sind Component Object Model (com)-Server. Com ermöglicht Clients, com-Server für beliebige Threads aufzurufen. Bei com-Servern, die nicht Thread sicher sind, bietet com einen Mechanismus zum Serialisieren gleichzeitiger Aufrufe, sodass immer nur ein logischer Thread auf dem Server ausgeführt wird. Dieser Mechanismus wird als Single Thread-Apartment-Modell (STA) bezeichnet. Da Aufrufe serialisiert werden, werden Aufrufer möglicherweise für Zeiträume blockiert, während der Server ausgelastet ist oder andere Aufrufe in einem Hintergrund Thread verarbeitet.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="knowledge-required-when-using-multiple-threads"></a>Erforderliche Kenntnisse für die Verwendung von mehreren threads
- Um mit mehreren Threads zu arbeiten, benötigen Sie mindestens über grundlegende Kenntnisse in die folgenden Aspekte von multithreading:
+## <a name="knowledge-required-when-using-multiple-threads"></a>Erforderliche Kenntnisse bei der Verwendung mehrerer Threads
+ Um mit mehreren Threads arbeiten zu können, müssen Sie mindestens über grundlegende Kenntnisse der folgenden Aspekte von Multithreading verfügen:
 
 - Windows-APIs
 
-- COM Multithread-Konzepte
+- COM-Multithread-Konzepte
 
 - Parallelität
 
@@ -40,39 +40,39 @@ ms.locfileid: "62978766"
 
 - Marshalling
 
-  Allgemeine Informationen zum multithreading finden Sie unter [Managed threading](/dotnet/standard/threading/).
+  Allgemeine Informationen zum Multithreading finden Sie unter [verwaltetes Threading](/dotnet/standard/threading/).
 
-  Office wird in die wichtigsten im STA ausgeführt. Kenntnis der Auswirkungen dieser ermöglicht es, zu verstehen, wie die Verwendung mehrerer Threads in Office.
+  Office wird im Haupt-STA ausgeführt. Wenn Sie sich mit den Auswirkungen von vertraut machen, können Sie verstehen, wie mehrere Threads mit Office verwendet werden.
 
-## <a name="basic-multithreading-scenario"></a>Grundlegende multithreading-Szenario
- Code in Office-Projektmappen wird immer auf dem Hauptbenutzeroberflächen-Thread ausgeführt. Möglicherweise möchten die Leistung der Anwendung glätten, indem Sie einen gesonderten Task in einem Hintergrundthread ausführen. Das Ziel besteht darin, zwei scheinbar gleichzeitig statt einer Aufgabe, gefolgt von der anderen Aufgaben, die reibungslose Ausführung (der Hauptgrund Verwendung mehrerer Threads) führen soll. Beispielsweise Sie möglicherweise Ihre Ereigniscode im Excel-UI-Hauptthread, und in einem Hintergrundthread können Sie eine Aufgabe, die sammelt Daten von einem Server, und aktualisiert Zellen in der Excel-Benutzeroberfläche mit den Daten auf dem Server, ausführen.
+## <a name="basic-multithreading-scenario"></a>Grundlegendes Multithreading-Szenario
+ Code in Office-Projektmappen wird immer auf dem Hauptbenutzer Oberflächen-Thread ausgeführt. Möglicherweise möchten Sie die Anwendungsleistung durch Ausführen einer separaten Aufgabe in einem Hintergrund Thread glätten. Das Ziel besteht darin, zwei Aufgaben scheinbar gleichzeitig auszuführen, anstatt eine Aufgabe gefolgt von einer anderen Aufgabe, die zu einer reibungsloseren Ausführung führen sollte (der Hauptgrund für die Verwendung mehrerer Threads). Beispielsweise können Sie Ihren Ereignis Code im Haupt Thread der Excel-Benutzeroberfläche ausführen, und in einem Hintergrund Thread können Sie eine Aufgabe ausführen, die Daten von einem Server sammelt und Zellen in der Excel-Benutzeroberfläche mit den Daten vom Server aktualisiert.
 
-## <a name="background-threads-that-call-into-the-office-object-model"></a>Hintergrundthreads, die in der Office-Objektmodell aufgerufen werden soll.
- Wenn ein Hintergrundthread der Office-Anwendung aufruft, wird der Aufruf automatisch über die STA-Grenze hinweg gemarshallt. Allerdings besteht keine Garantie, dass die Office-Anwendung den Aufruf zum Zeitpunkt, dass der Hintergrundthread vereinfacht verarbeiten kann. Es gibt mehrere Möglichkeiten:
+## <a name="background-threads-that-call-into-the-office-object-model"></a>Hintergrundthreads, die das Office-Objektmodell aufzurufen
+ Wenn ein Hintergrund Thread eine Office-Anwendung aufruft, wird der-Befehl automatisch über die STA-Grenze gemarshallt. Es gibt jedoch keine Garantie dafür, dass die Office-Anwendung den Aufruf zu dem Zeitpunkt verarbeiten kann, zu dem der Hintergrund Thread dies vornimmt. Es gibt mehrere Möglichkeiten:
 
-1. Die Office-Anwendung muss Nachrichten für die Gelegenheit haben, geben den Aufruf senden. Wenn das Programm wird konnte Arbeitsprozessen ausgelastet dies Zeit in Anspruch nehmen.
+1. Die Office-Anwendung muss Nachrichten Nachrichten, die die Möglichkeit haben, in den-Befehl einzugeben. Wenn eine hohe Verarbeitung durchgeführt wird, ohne dies zu erzielen, kann es eine Weile dauern.
 
-2. Wenn Sie einen anderen logischen Thread bereits im Apartment vorhanden ist, kann keine der neue Thread eingeben. Dies geschieht häufig, wenn Sie ein logischer Thread wechselt von der Office-Anwendung und anschließend einen reeentrant-Aufruf zurück an den Aufrufer des Apartment. Die Anwendung wird blockiert, Aufrufs warten.
+2. Wenn bereits ein anderer logischer Thread im Apartment vorhanden ist, kann der neue Thread nicht eingegeben werden. Dies ist oft der Fall, wenn ein logischer Thread in die Office-Anwendung gelangt und dann einen wieder eintretende Rückruf an das Apartment des Aufrufers sendet. Die Anwendung ist blockiert und wartet darauf, dass der Rückruf zurückgegeben wird.
 
-3. Excel kann in einem Zustand sein, dass sie keinen eingehenden Anruf sofort verarbeiten kann. Beispielsweise könnte die Office-Anwendung ein modales Dialogfeld anzeigen.
+3. Excel befindet sich möglicherweise in einem Status, in dem ein eingehender-Vorgang nicht sofort behandelt werden kann. Beispielsweise kann die Office-Anwendung ein modales Dialogfeld anzeigen.
 
-   Möglichkeiten, 2 und 3, COM stellt die [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) Schnittstelle. Wenn es sich bei der Server implementiert wird, geben Sie alle Aufrufe über die [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) Methode. Möglichkeit, 2 werden die Aufrufe automatisch zurückgewiesen. Möglichkeit, 3 kann der Server den Aufruf, je nach den Umständen zurückweisen. Wenn der Aufruf abgelehnt wird, muss der Aufrufer bei Ihrer Entscheidung. In der Regel implementiert die Aufrufer [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), in diesem Fall über die Ablehnung von nicht benachrichtigt werden sollen die [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) Methode.
+   Für die Möglichkeiten 2 und 3 stellt com die [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) -Schnittstelle bereit. Wenn der Server ihn implementiert, werden alle Aufrufe durch die [handleincomingcallmethode](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) eingegeben. Für die Möglichkeit 2 werden Aufrufe automatisch abgelehnt. Der Server kann den-Befehl abhängig von den jeweiligen Umständen ablehnen. Wenn der Aufruf abgelehnt wird, muss der Aufrufer entscheiden, was zu tun ist. Normalerweise implementiert der Aufrufer [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter). in diesem Fall wird er über die Ablehnung durch die [retryrejectedcallmethode](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) benachrichtigt.
 
-   COM-Interop konvertiert jedoch im Fall von Lösungen, die mithilfe von Office-Entwicklungstools in Visual Studio erstellt werden, alle abgelehnten Aufrufe an eine <xref:System.Runtime.InteropServices.COMException> ("der Meldungsfilter gibt an, dass die Anwendung ausgelastet ist."). Jedes Mal, wenn Sie ein Objektmodell, rufen Sie stellen in einem Hintergrundthread, Sie müssen darauf vorbereitet sein, diese Ausnahme zu behandeln. In der Regel umfasst, die für einen bestimmten Zeitraum wiederholen, und klicken Sie dann ein Dialogfeld angezeigt wird. Allerdings können Sie auch erstellen, den Hintergrundthread als STA und einen Nachrichtenfilter für diesen Thread in diesem Fall registriert.
+   Im Fall von Projektmappen, die mithilfe der Office-Entwicklungs Tools in Visual Studio erstellt wurden, konvertiert COM-Interop allerdings alle abgelehnten Aufrufe in eine <xref:System.Runtime.InteropServices.COMException> ("der Nachrichtenfilter gibt an, dass die Anwendung ausgelastet ist"). Wenn Sie einen Objektmodell Aufruf in einem Hintergrund Thread durchführen, müssen Sie darauf vorbereitet sein, diese Ausnahme zu behandeln. In der Regel umfasst dies einen Wiederholungsversuch für eine bestimmte Zeitspanne und dann das Anzeigen eines Dialog Felds. Sie können den Hintergrund Thread jedoch auch als STA erstellen und dann einen Nachrichtenfilter für diesen Thread registrieren, um diesen Fall zu behandeln.
 
-## <a name="start-the-thread-correctly"></a>Der Thread wird korrekt gestartet.
- Wenn Sie einen neuen STA-Thread erstellen, werden festlegen Sie den Apartmentzustand auf STA, bevor Sie den Thread zu starten. Das folgende Codebeispiel veranschaulicht, wie Sie dabei vorgehen:
+## <a name="start-the-thread-correctly"></a>Thread ordnungsgemäß starten
+ Wenn Sie einen neuen STA-Thread erstellen, legen Sie den Apartment Zustand auf STA fest, bevor Sie den Thread starten. Das folgende Codebeispiel veranschaulicht, wie Sie dabei vorgehen:
 
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
 
- Weitere Informationen finden Sie unter [Managed threading best Practices](/dotnet/standard/threading/managed-threading-best-practices).
+ Weitere Informationen finden Sie unter [bewährte Methoden für das verwaltete Threading](/dotnet/standard/threading/managed-threading-best-practices).
 
-## <a name="modeless-forms"></a>Nicht modale Formulare
- Ein nicht modales Formular ermöglicht eine Art von Interaktion mit der Anwendung, während das Formular angezeigt wird. Der Benutzer interagiert mit dem Formular und das Formular interagiert, mit der Anwendung ohne zu schließen. Das Office-Objektmodell unterstützt verwaltete nicht modale Formulare. Sie sollten jedoch nicht in einem Hintergrundthread verwendet werden.
+## <a name="modeless-forms"></a>Nicht modante Formulare
+ Ein nicht modalem Formular ermöglicht eine bestimmte Art von Interaktion mit der Anwendung, während das Formular angezeigt wird. Der Benutzer interagiert mit dem Formular, und das Formular interagiert mit der Anwendung, ohne zu schließen. Das Office-Objektmodell unterstützt verwaltete, nicht Modalformen. Sie sollten jedoch nicht in einem Hintergrund Thread verwendet werden.
 
-## <a name="see-also"></a>Siehe auch
-- [Threading (C#)](/dotnet/csharp/programming-guide/concepts/threading/index)
+## <a name="see-also"></a>Weitere Informationen
+- [Threading (c#)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
-- [Verwenden von Threads und threading](/dotnet/standard/threading/using-threads-and-threading)
-- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
+- [Verwenden von Threads und Threading](/dotnet/standard/threading/using-threads-and-threading)
+- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetName | Microsoft Docs
+title: 'IDebugProcess2:: GetName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 68026ed56aabd08f93588277c8d2b44e13604974
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723970"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
-Ruft den Titel, den Anzeigenamen oder den Dateinamen des Prozesses ab.
+Ruft den Titel, den anzeigen Amen oder den Dateinamen des Prozesses ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int GetName( 
 
 ## <a name="parameters"></a>Parameter
 `gnType`\
-[in] Ein Wert [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) aus der GETNAME_TYPE-Enumeration, der angibt, welcher Namestyp zurückgegeben werden soll.
+in Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) Enumeration, der angibt, welcher Typ von Name zurückgegeben werden soll.
 
 `pbstrName`\
-[out] Gibt den Namen des Prozesses zurück.
+vorgenommen Gibt den Namen des Prozesses zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

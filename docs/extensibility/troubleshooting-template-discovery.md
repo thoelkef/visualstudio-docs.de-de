@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235042"
 ---
 # <a name="troubleshooting-template-installation"></a>Problembehandlung der Vorlagen Installation
@@ -73,4 +73,4 @@ Die Protokolldatei enthält die folgenden Spalten:
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von benutzerdefinierten Projekt-und Element Vorlagen](creating-custom-project-and-item-templates.md)
-- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 954bd976317f5b5ad577b1236c9d7421c2d50315
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688209"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
@@ -40,11 +40,11 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1. Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie auf **Neues Projekt**.  
   
-2. In der **neues Projekt** Dialogfeld **Projekttyp**s, klicken Sie auf **Visual Basic**.  
+2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Projekttyp**s auf **Visual Basic**.  
   
-3. In der **Vorlagen** auf **Klassenbibliothek**.  
+3. Klicken Sie im Feld **Vorlagen** auf **Klassenbibliothek**.  
   
-4. Geben Sie im Feld **Name** einen entsprechenden Namen für die Klassenbibliothek ein, zum Beispiel **MyFirstVisualizer**.  
+4. Geben Sie im Feld **Name** einen geeigneten Namen für die Klassenbibliothek ein, z. b. **MyFirstVisualizer**.  
   
 5. Klicken Sie auf **OK**.  
   
@@ -167,7 +167,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 1. Klicken Sie im Menü **Datei** auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt**.  
   
-2. In der **neues Projekt hinzufügen** Dialogfeld die **Vorlagen** auf **Konsolenanwendung**.  
+2. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** im Feld **Vorlagen** auf **Konsolenanwendung**.  
   
 3. Geben Sie im Feld **Name** einen aussagekräftigen Namen für die Konsolenanwendung ein, zum Beispiel **MyTestConsole**.  
   
@@ -200,7 +200,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passt die Klassendeklaration in TestConsole.vb automatisch an den neuen Dateinamen an.  
   
-3. In TestConsole.vb. VB, fügen Sie die folgenden `Imports` Anweisung:  
+3. Fügen Sie in „TestConsole. vb“ Sie die folgende `Imports`-Anweisung hinzu:  
   
    ```  
    Imports MyFirstVisualizer  
@@ -227,7 +227,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
    Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)   
- [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Architektur der Schnellansicht](../debugger/visualizer-architecture.md)   
+ [Gewusst wie: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)   
  [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)

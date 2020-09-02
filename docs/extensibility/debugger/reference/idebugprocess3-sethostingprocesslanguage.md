@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
+title: 'IDebugProcess3:: Einstellungs Sprache | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723567"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-Diese Methode legt die Sprache fest, unter der der Prozess gehostet wird. Diese Sprache kann dann vom Debugmodul (DE) verwendet werden, um den entsprechenden Ausdrucksevaluator zu laden.
+Mit dieser Methode wird die Sprache festgelegt, unter der der Prozess gehostet wird. Diese Sprache kann dann von der Debug-Engine (de) zum Laden der entsprechenden Ausdrucks Auswertung verwendet werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,14 +41,14 @@ int SetHostingProcessLanguage(
 
 ## <a name="parameters"></a>Parameter
 `guidLang`\
-[in] `GUID` der Sprache, die die DE verwenden sollte. Geben `GUID_NULL` Sie (C++) oder `Guid.Empty` (C)an, damit die DE die Standardsprache verwendet.
+[in] `GUID` der Sprache, die von der de verwendet werden soll. Geben `GUID_NULL` Sie (C++) oder `Guid.Empty` (c#) an, damit der de die Standardsprache verwendet.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) kann verwendet werden, um die aktuelle Spracheinstellung abzurufen.
+- [Gethostingprocesslanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) kann verwendet werden, um die aktuelle Spracheinstellung abzurufen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)

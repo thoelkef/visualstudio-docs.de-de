@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Dateierweiterungen | Microsoft-Dokumentation
+title: Informationen zu Dateinamen Erweiterungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 866a30279ca2c79f4a490a040f76bc3a86c6a6e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148035"
 ---
 # <a name="about-file-name-extensions"></a>Informationen zu Dateierweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Beim Registrieren einer Dateierweiterung aus einem VSPackage ordnen Sie es mit einer Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dies ist wichtig, wenn mehr als eine Version der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf einem Computer installiert ist.  
+Wenn Sie eine Dateierweiterung eines VSPackage registrieren, ordnen Sie es einer Version von zu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Dies ist wichtig, wenn auf einem Computer mehr als eine Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert ist.  
   
- Dateierweiterungen für VSPackages sind unter HKEY_CLASSES_ROOT Schlüssel mit einem Standardwert registriert, die auf den zugeordneten Programmbezeichner (ProgID) verweist.  
+ Dateierweiterungen für VSPackages werden unter HKEY_CLASSES_ROOT Schlüssel mit einem Standardwert registriert, der auf den zugeordneten programmatischen Bezeichner (ProgID) verweist.  
   
- Im folgenden finden ein Beispiel für die Registrierungsinformationen für die VCPROJ-Dateierweiterung:  
+ Im folgenden finden Sie ein Beispiel für die Registrierungsinformationen für die Dateierweiterung. vcproj:  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -33,10 +33,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"   
 ```  
   
- Mit verknüpften Dateien [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] müssen mit versionsverwaltung durch das ProgID, z. B. `VisualStudio.vcproj.8.0`, um die Seite-an-Seite-Installationen des Produkts statusleisteneinstellungen zwischen Produktversionen verwalten können. Eine bestimmte Version ProgID auch können Sie standard-Verben wie öffnen, bearbeiten und so weiter, ohne überschreiben oder überschrieben wird, indem Sie andere Anwendungen oder Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Dateien [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , die zugeordnet sind, müssen eine ProgID mit Versions Angabe aufweisen, wie z `VisualStudio.vcproj.8.0` . b., um parallele Installationen des Produkts zuzulassen, um Datei Erweiterungs Zuordnungen Zwischenprodukt Versionen beizubehalten. Eine versionsspezifische ProgID ermöglicht Ihnen außerdem die Verwendung von Standard Verben, wie z. b. öffnen, bearbeiten usw., ohne das Überschreiben oder Überschreiben durch andere Anwendungen oder Versionen von zu überschreiben [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- In bestimmten Fällen sollte die Programm-ID verknüpft ist, mit der Dateierweiterung nicht geändert werden. Z. B. die ProgID für die Erweiterung des htm-Datei (progid Htmlfile =) ist fest programmiert auf verschiedene Stellen in das Betriebssystem und ist allgemein bekannt und verwendet eine Verknüpfung mit htm- und HTML-Dateien.  
+ In bestimmten Fällen sollte die mit einer Dateierweiterung verknüpfte ProgID nicht geändert werden. Beispielsweise ist die ProgID für die. htm-Dateierweiterung (ProgID = HTMLFILE) an mehreren Stellen im Betriebssystem hart codiert und in Verbindung mit. htm-und HTML-Dateien häufig bekannt und wird verwendet.  
   
-## <a name="see-also"></a>Siehe auch  
- [Registrieren von Dateierweiterungen für Seite-an-Seite-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Registrieren von Dateinamen Erweiterungen für parallele bereit Stellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [Angeben von Dateihandlern für Dateierweiterungen](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
