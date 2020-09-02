@@ -1,5 +1,5 @@
 ---
-title: Schnittstellen (Visual Studio Debugging) | Microsoft Docs
+title: Schnittstellen (Visual Studio-Debuggen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,32 +11,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715078"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Schnittstellen (Visual Studio-Debugging)
-Methoden werden unter jeder Schnittstelle im Inhaltsverzeichnis und auf der Schnittstellenseite in Vtable-Reihenfolge alphabetisch aufgelistet.
+Die Methoden werden alphabetisch unter jeder Schnittstelle im Inhaltsverzeichnis und auf der Schnittstellen Seite in der Vtable-Reihenfolge aufgelistet.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 
- Beschreibt die im Debugmodul verwendeten Schnittstellen.
+ Beschreibt die Schnittstellen, die in der Debug-Engine verwendet werden.
 
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 
- Beschreibt die Schnittstellen, die Ausdrücke in einer Aufrufliste während des Unterbrechungsmodus auswerten.
+ Beschreibt die Schnittstellen, die Ausdrücke in einer-aufrufsstapel im Break-Modus auswerten.
 
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 
- Beschreibt die Schnittstellen, die ein Symbolanbieter implementiert, um Typen Bezeichnern zuzuordnen.
+ Beschreibt die Schnittstellen, die von einem Symbol Anbieter implementiert werden, um Typen zu bezeichern zuzuordnen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
- Enthält Dokumentation für die Schnittstellen, Enumeratoren [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] und Strukturen des Debugging SDK.
+ Enthält Dokumentation für die Schnittstellen, Enumeratoren und Strukturen des [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging SDK.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

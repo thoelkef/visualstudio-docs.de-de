@@ -7,13 +7,13 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849147"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Gewusst wie: Diagnostizieren von UI-Verzögerungen durch Erweiterungen
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Gewusst wie: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
 
 Wenn die Benutzeroberfläche nicht mehr reagiert, untersucht Visual Studio den Aufrufstapel des UI-Threads, beginnend mit dem Blatt und arbeitet an der Basis. Wenn Visual Studio feststellt, dass ein Aufrufstapel Rahmen zu einem Modul gehört, das Teil einer installierten und aktivierten Erweiterung ist, wird eine Benachrichtigung angezeigt.
 
@@ -43,7 +43,7 @@ Um eine Benutzeroberflächen Verzögerung zu diagnostizieren, müssen Sie zuerst
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Neustart im Vergleich mit der Aktivitäts Protokollierung
 
-Visual Studio kann ein "Aktivitätsprotokoll" generieren, das beim Debuggen eines Problems nützliche Informationen bereitstellt. Öffnen Sie Visual Studio mit der `/log`-Befehlszeilenoption, um die Aktivitäts Protokollierung in Visual Studio zu aktivieren. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
+Visual Studio kann ein "Aktivitätsprotokoll" generieren, das beim Debuggen eines Problems nützliche Informationen bereitstellt. Öffnen Sie Visual Studio mit der Befehlszeilenoption, um die Aktivitäts Protokollierung in Visual Studio zu `/log` aktivieren. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -71,7 +71,7 @@ Um die Ablauf Verfolgungs Sammlung anzuhalten, verwenden Sie einfach die Schaltf
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Überprüfen des Aktivitäts Protokolls, um die Verzögerungs-ID zu erhalten
 
-Wie bereits erwähnt, finden Sie das Aktivitätsprotokoll unter *%AppData%\microsoft\visualstudio\<vs_instance_id > \activitylog.XML*. Jedes Mal, wenn Visual Studio eine Benutzeroberflächen Verzögerung der Erweiterung erkennt, wird ein Knoten mit `UIDelayNotifications` als Quelle in das Aktivitätsprotokoll geschrieben. Dieser Knoten enthält vier Informationen über die Benutzeroberflächen Verzögerung:
+Wie bereits erwähnt, finden Sie das Aktivitätsprotokoll unter *%AppData%\microsoft\visualstudio \<vs_instance_id>\ActivityLog.xml*. Jedes Mal, wenn Visual Studio eine Benutzeroberflächen Verzögerung der Erweiterung erkennt, wird ein Knoten mit als Quelle in das Aktivitätsprotokoll geschrieben `UIDelayNotifications` . Dieser Knoten enthält vier Informationen über die Benutzeroberflächen Verzögerung:
 
 - Die UI-Verzögerungs-ID, eine sequenzielle Zahl, die eine Benutzeroberflächen Verzögerung in einer vs-Sitzung eindeutig identifiziert
 - Die Sitzungs-ID, die die Visual Studio-Sitzung von Anfang bis Ende eindeutig identifiziert.
@@ -102,7 +102,7 @@ Nachdem Sie die korrekte Benutzeroberflächen Verzögerung im Aktivitätsprotoko
 Wählen Sie dann im linken Bereich die Ablauf Verfolgungs Datei aus, und öffnen Sie Sie, indem Sie im Kontextmenü auf **Öffnen** klicken.
 
 > [!NOTE]
-> Standardmäßig gibt perfview ein ZIP-Archiv aus. Wenn Sie *Trace. zip*öffnen, wird das Archiv automatisch deaktiviert und die Ablauf Verfolgung geöffnet. Sie können dies überspringen, indem Sie die **ZIP** -Datei während der Ablauf Verfolgungs Sammlung deaktivieren. Wenn Sie jedoch die Übertragung und Verwendung von Ablauf Verfolgungen auf verschiedenen Computern planen, wird dringend empfohlen, das **ZIP** -Feld nicht zu deaktivieren. Ohne diese Option werden die erforderlichen PDBs für ngen-Assemblys nicht mit der Ablauf Verfolgung begleitet, sodass Symbole aus ngen-Assemblys auf dem Zielcomputer nicht aufgelöst werden. (Weitere Informationen zu pdsb für ngen-Assemblys finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) .)
+> Standardmäßig gibt perfview ein ZIP-Archiv aus. Wenn Sie *trace.zip*öffnen, wird das Archiv automatisch deaktiviert und die Ablauf Verfolgung geöffnet. Sie können dies überspringen, indem Sie die **ZIP** -Datei während der Ablauf Verfolgungs Sammlung deaktivieren. Wenn Sie jedoch die Übertragung und Verwendung von Ablauf Verfolgungen auf verschiedenen Computern planen, wird dringend empfohlen, das **ZIP** -Feld nicht zu deaktivieren. Ohne diese Option werden die erforderlichen PDBs für ngen-Assemblys nicht mit der Ablauf Verfolgung begleitet, sodass Symbole aus ngen-Assemblys auf dem Zielcomputer nicht aufgelöst werden. (Weitere Informationen zu pdsb für ngen-Assemblys finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) .)
 
 Es kann einige Minuten dauern, bis perfview die Ablauf Verfolgung verarbeitet und geöffnet hat. Nachdem die Ablauf Verfolgung geöffnet ist, wird eine Liste mit verschiedenen "Ansichten" darunter angezeigt.
 
@@ -110,9 +110,9 @@ Es kann einige Minuten dauern, bis perfview die Ablauf Verfolgung verarbeitet un
 
 Zuerst wird die **Ereignis** Ansicht verwendet, um den Zeitbereich der Benutzeroberflächen Verzögerung zu ermitteln:
 
-1. Öffnen Sie die **Ereignis** Ansicht, indem Sie unter der Ablauf Verfolgung `Events` Knoten auswählen und dann im Kontextmenü auf **Öffnen** klicken.
-2. Klicken Sie im linken Bereich auf "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`".
-3. EINGABETASTE drücken
+1. Öffnen Sie die Ansicht **Ereignisse** , indem `Events` Sie unter der Ablauf Verfolgung den Knoten auswählen und im Kontextmenü die Option **Öffnen** auswählen.
+2. Wählen Sie `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` im linken Bereich "" aus.
+3. Drücken Sie die EINGABETASTE.
 
 Die Auswahl wird angewendet, und alle `ExtensionUIUnresponsiveness` Ereignisse werden im rechten Bereich angezeigt.
 
@@ -137,7 +137,7 @@ Wählen Sie beim Öffnen der **Thread Zeit Stapel** Ansicht den **devenv** -Proz
 In der Ansicht **Thread Zeit Stapel** oben links auf der Seite können Sie den Zeitbereich auf die Werte festlegen, die wir im vorherigen Schritt berechnet haben, und die **Eingabe** Taste drücken, damit die Stapel an diesen Zeitbereich angepasst werden.
 
 > [!NOTE]
-> Zu bestimmen, welcher Thread der UI-Thread (Start Thread) ist, kann kontraintuitiv sein, wenn die Ablauf Verfolgungs Sammlung gestartet wird, nachdem Visual Studio bereits geöffnet ist. Allerdings sind die ersten Elemente im Stapel des UI-Threads (Start) wahrscheinlich immer Betriebssystem-DLLs (*ntdll. dll* und *Kernel32. dll*), gefolgt von `devenv!?` und dann `msenv!?`. Mithilfe dieser Sequenz kann der UI-Thread identifiziert werden.
+> Zu bestimmen, welcher Thread der UI-Thread (Start Thread) ist, kann kontraintuitiv sein, wenn die Ablauf Verfolgungs Sammlung gestartet wird, nachdem Visual Studio bereits geöffnet ist. Allerdings sind die ersten Elemente im Stapel des UI-Threads (Start) wahrscheinlich immer Betriebssystem-DLLs (*ntdll.dll* und *kernel32.dll*), gefolgt von `devenv!?` und dann `msenv!?` . Mithilfe dieser Sequenz kann der UI-Thread identifiziert werden.
 
  ![Identifizieren des Start Threads](media/ui-delay-startup-thread.png)
 

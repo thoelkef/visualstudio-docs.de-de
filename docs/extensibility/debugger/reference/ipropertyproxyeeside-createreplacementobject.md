@@ -1,5 +1,5 @@
 ---
-title: iPropertyProxyeeside::CreateReplacementObject | Microsoft Docs
+title: 'Ipropertyproxyeeside:: kreatereplacementobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715041"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
-Erstellt eine Kopie eines Datenobjekts, das für den Ausdrucksevaluator (EE) spezifisch ist.
+Erstellt eine Kopie eines Datenobjekts, das spezifisch für die-Ausdrucks Auswertung (EE) ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,7 +43,7 @@ int CreateReplacementObject(
 
 ## <a name="parameters"></a>Parameter
 `dataIn`\
-[in] Ein [IEEDataStorage-Objekt,](../../../extensibility/debugger/reference/ieedatastorage.md) das die zu kopierenden Daten enthält.
+in Ein [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das die zu kopierenden Daten enthält.
 
 `dataOut`\
 [out] Gibt ein neues `IEEDataStorage`-Objekt zurück.
@@ -52,9 +52,9 @@ int CreateReplacementObject(
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode erhält ein [IEEDataStorage-Objekt,](../../../extensibility/debugger/reference/ieedatastorage.md) das ein Array von Bytes darstellt. Dieses eingehende Datenobjekt wird in der Regel nicht von der EE implementiert. Das von dieser Methode zurückgegebene Objekt wird jedoch immer vom EE `IEEDataStorage` implementiert, wodurch der EE die Schnittstelle auf jeder gewünschten Klasse implementieren kann.
+ Diese Methode erhält ein [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das ein Bytearray darstellt. Dieses eingehende Datenobjekt wird in der Regel nicht von EE implementiert. Allerdings wird das von dieser Methode zurückgegebene-Objekt immer von der EE implementiert, sodass das EE die- `IEEDataStorage` Schnittstelle für jede gewünschte Klasse implementieren kann.
 
- Beachten Sie, dass die `IEEDataStorage` vom eingehenden Objekt bereitgestellten `IEEDataStorage` Daten dieselben Daten im ausgehenden Objekt sein müssen.
+ Beachten Sie, dass die vom eingehenden Objekt bereitgestellten Daten `IEEDataStorage` die gleichen Daten im ausgehenden Objekt sein müssen `IEEDataStorage` .
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a4a9d52ae16b77b40461a314c6008f8cdd741bcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537643"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Gewusst wie: Programm gesteuertes suchen nach einer e-Mail-Adresse in Kontakten
@@ -34,7 +34,7 @@ ms.locfileid: "85537643"
 
 - Kontakte mit dem Domänennamen **example.com** in ihren E-Mail-Adressen (z. B. `somebody@example.com`), die einen Vor- und Nachnamen aufweisen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)
 - [Gewusst wie: Programm gesteuertes Senden von e-Mails](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
 - [Gewusst wie: Programm gesteuertes zugreifen auf Outlook-Kontakte](../vsto/how-to-programmatically-access-outlook-contacts.md)

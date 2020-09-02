@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017133"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen
@@ -167,7 +168,7 @@ ms.locfileid: "86017133"
 
 2. Klicken Sie in der Menüleiste auf **Projekt**  >  **Neues Element hinzu** fügen, um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.
 
-3. Erweitern Sie in der Strukturansicht des Dialog Felds entweder **Visual c#** oder **Visual Basic** (abhängig von der Projektsprache), erweitern Sie den **SharePoint** -Knoten, und wählen Sie dann den Knoten **2010** aus.
+3. Erweitern Sie in der Strukturansicht des Dialog Felds entweder **Visual c#** oder **Visual Basic**  (abhängig von der Projektsprache), erweitern Sie den **SharePoint** -Knoten, und wählen Sie dann den Knoten **2010** aus.
 
 4. Wählen Sie in der Liste der Vorlagen die Vorlage **Workflow Initiierungs Formular aus** .
 

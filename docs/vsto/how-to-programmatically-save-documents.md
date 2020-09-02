@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537591"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Gewusst wie: Programm gesteuertes Speichern von Dokumenten
@@ -88,7 +88,7 @@ Für dieses Codebeispiel benötigen Sie Folgendes:
 
 - Um ein Dokument mit einem neuen Namen zu speichern, muss ein Verzeichnis mit dem Namen " *Test* " auf Laufwerk "C" vorhanden sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Programm gesteuertes schließen von Dokumenten](../vsto/how-to-programmatically-close-documents.md)
 - [Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)

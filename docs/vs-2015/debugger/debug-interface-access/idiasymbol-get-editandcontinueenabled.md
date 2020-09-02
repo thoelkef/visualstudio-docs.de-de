@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_editandcontinueenabled | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_editAndContinueEnabled | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 74ac007a3b9d42677c77989ea36c6e20f9cd35f7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697719"
 ---
-# <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
+# <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, der angibt, ob das Modul kompiliert wurde, mit der [/Z7, / Zi, / Zi (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) Compilerschalter.  
+Ruft ein Flag ab, das angibt, ob das Modul mit dem Compilerschalter [/Z7,/Zi,/Zi (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) kompiliert wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,21 +35,21 @@ HRESULT get_editAndContinueEnabled ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` Wenn Bearbeiten und Fortfahren bei der Kompilierung; aktiviert wurde, andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn "Edit-and-Continue" bei der Kompilierung aktiviert wurde; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK V7. 0|  
+|Version:|Dia SDK v 7.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/Z7, /Zi, /ZI (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7,/Zi,/Zi (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

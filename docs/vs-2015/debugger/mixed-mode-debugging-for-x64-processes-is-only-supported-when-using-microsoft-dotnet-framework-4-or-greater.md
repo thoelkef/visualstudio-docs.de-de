@@ -1,5 +1,5 @@
 ---
-title: Im gemischten Modus Debuggen für X64 Prozesse wird nur unterstützt, wenn Microsoft.NET Framework 4 oder höher | Microsoft-Dokumentation
+title: Debuggen im gemischten Modus für x64-Prozesse wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e974269cccb65db66ee59735f7acc5de494e2106
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697833"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Debuggen im gemischten Modus für x64-Prozess wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-.NET Framework-Versionen bereits als 4 bieten keine Unterstützung ist für das Debuggen im gemischten Modus von X64 verarbeitet. Das bedeutet, dass Sie während des Debuggens nicht von verwaltetem Code zu nativem Code oder von nativem Code zu verwaltetem Code wechseln können.  
+.NET Framework-Versionen vor 4 bieten keine Unterstützung für das Debuggen im gemischten Modus von x64-Prozessen. Das bedeutet, dass Sie während des Debuggens nicht von verwaltetem Code zu nativem Code oder von nativem Code zu verwaltetem Code wechseln können.  
   
 ### <a name="workarounds"></a>Problemumgehung  
   
@@ -58,7 +58,7 @@ ms.locfileid: "65697833"
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Finden Sie unter [Einrichten von SQL-Debugging](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Siehe [Einrichten des Transact-SQL-Debuggings](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)

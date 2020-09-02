@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Veröffentlichen Sie ein Projekt, das einem bestimmten Gebietsschema | Microsoft-Dokumentation'
+title: 'Gewusst wie: Veröffentlichen eines Projekts mit einem bestimmten Gebiets Schema | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,19 +22,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697606"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Vorgehensweise: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Gewusst wie: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es ist nicht ungewöhnlich, dass eine Anwendung Komponenten mit unterschiedlichen Gebietsschemas enthält. In diesem Szenario würden Sie eine Projektmappe aus mehreren Projekten erstellen und dann gesonderte Projekte für jedes Gebietsschema veröffentlichen. Dieses Verfahren zeigt, wie Sie das erste Projekt in einer Projektmappe mit dem Gebietsschema "en" mit einem Makro veröffentlichen können. Wenn Sie das Verfahren mit einem anderen Gebietsschema als "en" verwenden möchten, müssen Sie `localeString` im Makro auf das verwendete Gebietsschema festlegen (beispielsweise auf "de" oder "de-DE").  
   
 > [!NOTE]
-> Wenn Sie dieses Makro verwenden, sollte der Ort der Veröffentlichung eine gültige URL oder UNC-Freigabe (Universal Naming Convention) sein. Darüberhinaus müssen Internetinformationsdienste (Internet Information Services, IIS) auf Ihrem Computer installiert sein. Klicken Sie zur Installation von IIS im Menü **Start** auf **Systemsteuerung**. Doppelklicken Sie auf **Software**. Klicken Sie unter **Software** auf **Windows-Komponenten hinzufügen/entfernen**. Aktivieren Sie unter **Assistent für Windows-Komponenten** in der Liste **Komponenten** das Kontrollkästchen **Internetinformationsdienste (IIS)**. Klicken Sie dann auf **Fertig stellen**, um den Assistenten zu schließen.  
+> Wenn Sie dieses Makro verwenden, sollte der Ort der Veröffentlichung eine gültige URL oder UNC-Freigabe (Universal Naming Convention) sein. Darüberhinaus müssen Internetinformationsdienste (Internet Information Services, IIS) auf Ihrem Computer installiert sein. Klicken Sie zur Installation von IIS im Menü **Start** auf **Systemsteuerung**. Doppelklicken Sie auf **Software**. Klicken Sie unter **Software** auf **Windows-Komponenten hinzufügen/entfernen**. Aktivieren Sie unter **Assistent für Windows-Komponenten** in der Liste **Komponenten** das Kontrollkästchen **Internetinformationsdienste (IIS)**. Klicken Sie anschließend auf **Fertig stellen**, um den Assistenten zu schließen.  
   
 ### <a name="to-create-the-publishing-macro"></a>So erstellen Sie das Makro zum Veröffentlichen  
   
@@ -152,20 +152,20 @@ Es ist nicht ungewöhnlich, dass eine Anwendung Komponenten mit unterschiedliche
   
 4. Veröffentlichen Sie "PublishLocales" mit der Visual Studio-IDE.  
   
-     In **Projektmappen-Explorer**, wählen Sie "PublishLocales". Wählen Sie im Menü **Projekt** die Option **Eigenschaften** aus. Im Projekt-Designer auf die **veröffentlichen** Seite, geben Sie als Veröffentlichungsort **http://localhost/PublishLocales**, und klicken Sie dann auf **jetzt veröffentlichen**.  
+     Wählen Sie in **Projektmappen-Explorer**die Option PublishLocales aus. Wählen Sie im Menü **Projekt** die Option **Eigenschaften** aus. Geben Sie im Projekt-Designer auf der Seite **veröffentlichen** einen Veröffentlichungs Speicherort an **http://localhost/PublishLocales** , und klicken Sie dann auf **Jetzt veröffentlichen**.  
   
      Wenn die veröffentlichte Webseite angezeigt wird, schließen Sie sie. (Für diesen Schritt müssen Sie das Projekt nur veröffentlichen, Sie müssen es nicht installieren.)  
   
-5. Veröffentlichen Sie "PublishLocales" erneut, indem Sie das Makro über die Visual Studio-Eingabeaufforderung aufrufen. Anzeigen im Eingabeaufforderungsfenster auf den **anzeigen** , zeigen Sie auf **andere Windows** , und klicken Sie dann auf **Befehlsfenster**, oder drücken Sie STRG + ALT + A. Geben Sie im Eingabeaufforderungsfenster Befehl `macros`, automatische Vervollständigung wird eine Liste der verfügbaren Makros bieten. Wählen Sie das folgende Makro aus, und drücken Sie die EINGABETASTE:  
+5. Veröffentlichen Sie "PublishLocales" erneut, indem Sie das Makro über die Visual Studio-Eingabeaufforderung aufrufen. Um das Eingabe Aufforderungs Fenster anzuzeigen, zeigen Sie im Menü **Ansicht** auf **Weitere Fenster** , und klicken Sie dann auf **Befehlsfenster**, oder drücken Sie STRG + ALT + A. Geben Sie im Eingabe Aufforderungs Fenster `macros` ein. die automatische Vervollständigung enthält eine Liste der verfügbaren Makros. Wählen Sie das folgende Makro aus, und drücken Sie die EINGABETASTE:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6. Bei einer erfolgreichen Veröffentlichung wird in einer Meldung angegeben, dass die Veröffentlichung von "PublishLocales\PublishLocales.vbproj" erfolgreich war Die Sprache für die Veröffentlichung war „en“. Klicken Sie im Meldungsfeld auf **OK**. Wenn die veröffentlichte Webseite angezeigt wird, klicken Sie auf **Installieren**.  
+6. Bei einer erfolgreichen Veröffentlichung wird in einer Meldung angegeben, dass die Veröffentlichung von "PublishLocales\PublishLocales.vbproj" erfolgreich war Die Veröffentlichungs Sprache war ' en '. " Klicken Sie im Meldungs Feld auf **OK** . Wenn die veröffentlichte Webseite angezeigt wird, klicken Sie auf **Installieren**.  
   
 7. Sehen Sie unter "C:\Inetpub\wwwroot\PublishLocales\en" nach. Sie sollten die installierten Dateien wie Manifeste, "setup.exe" und die veröffentlichte Webseitendatei sowie die lokalisierte Ressourcen-DLL finden. (Standardmäßig fügt ClickOnce eine DEPLOY-Erweiterung an EXEs und DLLs an. Sie können diese Erweiterung nach der Bereitstellung entfernen.)  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Makros-Entwicklungsumgebung](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Makro-Explorer-Fenster](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Vorgehensweise: Bearbeiten und Programmgesteuertes Erstellen von Makros](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Makros Entwicklungsumgebung](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Fenster des Makro-Explorers](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Gewusst wie: Bearbeiten und Programm gesteuertes Erstellen von Makros](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
