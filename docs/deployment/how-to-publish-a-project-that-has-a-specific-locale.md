@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382223"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Vorgehensweise: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
@@ -161,7 +161,7 @@ Es ist nicht ungewöhnlich, dass eine Anwendung Komponenten mit unterschiedliche
 
 7. Sehen Sie unter *C:\Inetpub\wwwroot\PublishLocales\en* nach. Sie sollten die installierten Dateien, z. b. die Manifeste, *setup.exe*und die Veröffentlichungs Webseite, zusätzlich zur lokalisierten Ressourcen-DLL sehen. (Standardmäßig fügt ClickOnce eine *DEPLOY*-Erweiterung an EXEs und DLLs an. Sie können diese Erweiterung nach der Bereitstellung entfernen.)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 - [Makros Entwicklungsumgebung](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Fenster „Makro-Explorer“](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))

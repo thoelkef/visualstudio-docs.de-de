@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Microsoft-Dokumentation
+title: 'IDebugPortSupplier3:: canpersistports | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: edc989771b41cc4a5cc5b4710de4cbb5632873e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188185"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode bestimmt, ob die anschlusslieferant Ports gespeichert werden kann (indem sie auf den Datenträger geschrieben werden müssen) zwischen den Aufrufen des Debuggers.  
+Diese Methode bestimmt, ob der Port Lieferant Ports (durch das Schreiben auf den Datenträger) zwischen den Aufrufen des Debuggers beibehalten kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ int CanPersistPorts();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Keine  
+ Keine.  
   
 ## <a name="return-value"></a>Rückgabewert  
- `S_OK` Wenn Ports beibehalten werden können, oder `S_FALSE` um anzugeben, dass die Ports nicht beibehalten werden können.  
+ `S_OK` , wenn Ports persistent sein können, oder, `S_FALSE` um anzugeben, dass die Ports nicht persistent sein können.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn Anschlusslieferanten Ports beibehalten kann, muss Sie tun, wenn es zerstört wird und Laden sie dann erneut, wenn er erneut instanziiert wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Port Lieferant Ports beibehalten kann, sollte er dies tun, wenn er zerstört wird, und ihn dann erneut laden, wenn er erneut instanziiert wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

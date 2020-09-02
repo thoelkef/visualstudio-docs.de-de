@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382353"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Vorgehensweise: Verwalten von Updates für eine ClickOnce-Anwendung
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen können automatisch oder Programm gesteuert nach Updates suchen. Als Entwickler haben Sie viele Flexibilität bei der Angabe, wann und wie Update Überprüfungen durchgeführt werden, ob Updates obligatorisch sind und wo die Anwendung nach Updates suchen soll.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können automatisch oder Programm gesteuert nach Updates suchen. Als Entwickler haben Sie viele Flexibilität bei der Angabe, wann und wie Update Überprüfungen durchgeführt werden, ob Updates obligatorisch sind und wo die Anwendung nach Updates suchen soll.
 
  Sie können die Anwendung so konfigurieren, dass nach Updates vor dem Start der Anwendung oder in festgelegten Intervallen nach dem Start der Anwendung gesucht wird. Außerdem können Sie eine mindestens erforderliche Version angeben. Das heißt, dass ein Update installiert wird, wenn die Version des Benutzers niedriger als die erforderliche Version ist.
 
@@ -110,5 +110,5 @@ ms.locfileid: "85382353"
 - [Application updates dialog box (Dialogfeld „Anwendungsupdates“)](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
-- [How to: Publish a ClickOnce application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Vorgehensweise: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

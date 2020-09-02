@@ -13,48 +13,48 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3402eefb480efe2ec1d82b9f689f94235c2934a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148127"
 ---
 # <a name="spy-reference"></a>Spy++-Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Finden Sie in den Beschreibungen der einzelnen Spy++-Menü und das Dialogfeld unten aufgeführten Abschnitten:  
+In den folgenden Abschnitten finden Sie Beschreibungen für jedes Spy++-Menü und -Dialogfeld:  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Menübefehle](../debugger/menu-commands.md)  
- Beschreibt die verfügbaren Befehle für jedes Spy++-Menü.  
+ Beschreibt die Befehle, die in jedem Spy + +-Menü verfügbar sind.  
   
  [Dialogfeld „Schriftart“](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- So konfigurieren Sie die in einem Fenster Spy++-Ansichten verwendete Schriftart verwendet.  
+ Wird verwendet, um die in einem Spy + +-Ansichts Fenster verwendete Zeichen Schriftart zu konfigurieren.  
   
  [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md)  
- Dialogfelder verwendet, um einen bestimmten Knoten in einem Fenster Spy++-Ansichten zu suchen.  
+ Dialog Felder, die verwendet werden, um einen bestimmten Knoten in einem Spy + +-Ansichts Fenster zu suchen.  
   
  [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md)  
- Verwendet zum Anzeigen der Eigenschaften eines Fensters in Windows-Ansicht ausgewählt.  
+ Wird verwendet, um die Eigenschaften eines Fensters anzuzeigen, das in der Windows-Ansicht ausgewählt ist.  
   
  [Dialogfeld "Meldungsoptionen"](../debugger/message-options-dialog-box.md)  
- Wird verwendet, um auszuwählen, welche Nachrichten in der Ansicht "Nachrichten" aufgeführt sind.  
+ Wird verwendet, um auszuwählen, welche Meldungen in der Meldungs Ansicht aufgeführt sind.  
   
  [Dialogfeld "Meldungseigenschaften"](../debugger/message-properties-dialog-box.md)  
- Verwendet zum Anzeigen der Eigenschaften einer Nachricht in der Ansicht "Nachrichten" ausgewählt.  
+ Wird verwendet, um die Eigenschaften einer in der Meldungs Ansicht ausgewählten Nachricht anzuzeigen.  
   
  [Dialogfeld "Prozesseigenschaften"](../debugger/process-properties-dialog-box.md)  
- Verwendet zum Anzeigen der Eigenschaften eines Prozesses, der in der Prozessansicht ausgewählt.  
+ Wird verwendet, um die Eigenschaften eines in der Prozessansicht ausgewählten Prozesses anzuzeigen.  
   
  [Dialogfeld "Threadeigenschaften"](../debugger/thread-properties-dialog-box.md)  
- Verwendet zum Anzeigen der Eigenschaften eines Threads, die in der Ansicht "Threads" ausgewählt.  
+ Wird verwendet, um die Eigenschaften eines in der Thread Ansicht ausgewählten Threads anzuzeigen.  
   
  [Weitere Dialogfelder](../debugger/other-dialog-boxes.md)  
- Zum Anzeigen von Informationen über die Spy++-Anwendung verwendet.  
+ Wird zum Anzeigen von Informationen über das Spy + +-Programm verwendet.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
+ Stellt das Spy + +-Tool vor und erläutert, wie es verwendet werden kann.  
   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+ Erläutert die Spy + +-Struktur Ansichten von Fenstern, Meldungen, Prozessen und Threads.

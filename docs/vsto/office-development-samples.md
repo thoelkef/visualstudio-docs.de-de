@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985729"
 ---
 # <a name="office-development-samples"></a>Office-Entwicklungs Beispiele
@@ -28,7 +28,7 @@ ms.locfileid: "72985729"
 
 ## <a name="office-development-samples"></a>Office-Entwicklungs Beispiele
 
-|Beispiel|Beschreibung|
+|Beispiel|BESCHREIBUNG|
 |------------|-----------------|
 |Excel-Master-Detail-Datenbeispiel|Erklärt, wie Daten aus einer relationalen Datenbank oder aus einer XML-Datei abgerufen und dann in Excel verwendet werden.|
 |Beispiel für Excel-Dokumentschutztechniken|Veranschaulicht verschiedene Techniken zum Schutz der strukturellen Komponenten eines Arbeitsblattes, die verhindern, dass Benutzer versehentlich Steuerelemente löschen oder anderweitig wichtige Teile Ihres Projektmappendokuments ändern.|
@@ -40,5 +40,5 @@ ms.locfileid: "72985729"
 |UI-Manager &ndash; Beispiel|Zeigt, wie eine Menübandanpassung, ein benutzerdefinierter Aufgabenbereich und ein benutzerdefinierter Formularbereich für Outlook durch Implementieren von Erweiterbarkeitsschnittstellen in einem VSTO-Add-In erstellt werden. Alle Instanzen von Menüband, Aufgabenbereich und Formularbereich können ordnungsgemäß miteinander kommunizieren.|
 |Beispiel für VBA- und VSTO-Interoperabilität|Veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Excel in VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird.<br /><br /> Das Beispiel steht nur online zur Verfügung.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Häufige Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md)

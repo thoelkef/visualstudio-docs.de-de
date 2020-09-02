@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008728"
 ---
 # <a name="work-with-calendar-items"></a>Arbeiten mit Kalenderelementen
@@ -30,15 +30,15 @@ ms.locfileid: "63008728"
 
 |Aufgabe|Prozedur|
 |----------|---------------|
-|Erstellen Sie einen Termin, und fügen Sie Empfänger hinzu.|[Vorgehensweise: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)|
-|Löschen Sie eine Instanz einer Terminserie.|[Vorgehensweise: Programmgesteuertes Löschen von Terminen](../vsto/how-to-programmatically-delete-appointments.md)|
-|Erstellen Sie einen Kalenderordner, und fügen Sie ein Terminelement hinzu.|[Vorgehensweise: Programmgesteuertes Erstellen eines benutzerdefinierten Kalenders](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
-|Erstellen und senden Sie eine Besprechungsanfrage.|[Vorgehensweise: Programmgesteuertes Erstellen einer Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)|
+|Erstellen Sie einen Termin, und fügen Sie Empfänger hinzu.|[Vorgehensweise: Programm gesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)|
+|Löschen Sie eine Instanz einer Terminserie.|[Vorgehensweise: Programm gesteuertes Löschen von Terminen](../vsto/how-to-programmatically-delete-appointments.md)|
+|Erstellen Sie einen Kalenderordner, und fügen Sie ein Terminelement hinzu.|[Gewusst wie: Programm gesteuertes Erstellen eines benutzerdefinierten Kalenders](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
+|Erstellen und senden Sie eine Besprechungsanfrage.|[Gewusst wie: Programm gesteuertes Erstellen einer Besprechungs Anfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- Weitere Informationen zu Outlook-Aufgaben und Outlook-Objektmodell finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
+ Weitere Informationen zu Outlook-Aufgaben und zum Outlook-Objektmodell finden Sie unter Übersicht über das [Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)
 - [Arbeiten mit Ordnern](../vsto/working-with-folders.md)
-- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)
-- [Outlook-Projektmappen](../vsto/outlook-solutions.md)
+- [Arbeiten mit e-Mail-Elementen](../vsto/working-with-mail-items.md)
+- [Outlook-Lösungen](../vsto/outlook-solutions.md)

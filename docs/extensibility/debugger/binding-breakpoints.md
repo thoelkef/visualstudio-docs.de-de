@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903227"
 ---
 # <a name="bind-breakpoints"></a>Binden von Haltepunkten
@@ -53,5 +53,5 @@ Wenn der Benutzer einen Haltepunkt festlegt, vielleicht durch Drücken von **F9*
 
  Wenn eine de einen Haltepunkt behandelt, kann Sie nicht binden, aber eine andere von de bindet Sie möglicherweise, Sie gibt eine Warnung zurück. Die IDE antwortet, indem ein Frage Symbol innerhalb des breakpointsymbols links neben der Quell Code Zeile platziert wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debugtasks](../../extensibility/debugger/debugging-tasks.md)

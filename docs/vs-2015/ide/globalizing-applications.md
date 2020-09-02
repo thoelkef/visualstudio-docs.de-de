@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645598"
 ---
 # <a name="globalizing-applications"></a>Globalisieren von Anwendungen
@@ -33,6 +33,6 @@ Unter „Globalisierung“ versteht man das Entwerfen und Entwickeln eines Softw
 
  [Globalisierung und Lokalisierung](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Enthält Links zu Hilfeseiten über die Globalisierung von Web Forms Seiten.
 
- [Einführung in internationale Anwendungen basierend auf dem .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Erläutert die wesentlichen Konzepte der Softwareentwicklung für einen internationalen Markt mithilfe von Visual Basic oder C#Visual.
+ [Einführung in internationale Anwendungen basierend auf dem .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Erläutert die wesentlichen Konzepte der Softwareentwicklung für einen internationalen Markt mithilfe von Visual Basic oder Visual c#.
 
  [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. zu Entwurfsproblemen und Terminologie.
