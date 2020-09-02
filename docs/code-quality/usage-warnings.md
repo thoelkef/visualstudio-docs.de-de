@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176077"
 ---
 # <a name="usage-warnings"></a>Verwendungswarnungen
@@ -77,4 +77,4 @@ Verwendungs Warnungen unterstützen die ordnungsgemäße Verwendung von .net.
 |[CA2246: Keine Zuweisung eines Symbols und seines Members in der gleichen Anweisung](../code-quality/ca2246.md)|Es wird nicht empfohlen, ein Symbol und dessen Member, d. h. ein Feld oder eine Eigenschaft, in derselben Anweisung zuzuweisen. Es ist nicht klar, ob der Element Zugriff dazu gedacht war, den alten Wert des Symbols vor der Zuweisung oder den neuen Wert aus der Zuweisung in dieser Anweisung zu verwenden.|
 |[CA2247: Anstelle einer TaskContinuationOptions-Enumeration muss eine TaskCreationOptions-Enumeration als Argument an den TaskCompletionSource-Konstruktor übergeben werden.](../code-quality/ca2246.md)|TaskCompletionSource verfügt über Konstruktoren, die taskkreationoptions verwenden, die die zugrunde liegende Aufgabe steuern, und Konstruktoren, die den Objektzustand annehmen, der in der Aufgabe gespeichert ist.  Das versehentliche übergeben von TaskContinuationOptions anstelle von taskkreationoptions führt dazu, dass der Aufruf die Optionen als Zustand behandelt.|
 |[CA2248: Geben Sie ein korrektes "Aufzählungs Argument" für "" "" "" ".](../code-quality/ca2248.md)|Der als Argument an den `HasFlag` Methodenaufruf umgegebene Aufzählungs Typ unterscheidet sich vom aufrufenden Aufzählungs Typen.|
-|[CA2249: Verwenden Sie "String. enthält" anstelle von "String. IndexOf".](../code-quality/ca2249.md)|Aufrufe `string.IndexOf` von, bei denen das Ergebnis verwendet wird, um zu überprüfen, ob eine Teil Zeichenfolge vorhanden oder nicht vorhanden ist, können durch ersetzt werden `string.Contains` .|
+|[CA2249: Erwägen Sie die Verwendung von "String.Contains" anstelle von "String.IndexOf"](../code-quality/ca2249.md)|Aufrufe `string.IndexOf` von, bei denen das Ergebnis verwendet wird, um zu überprüfen, ob eine Teil Zeichenfolge vorhanden oder nicht vorhanden ist, können durch ersetzt werden `string.Contains` .|

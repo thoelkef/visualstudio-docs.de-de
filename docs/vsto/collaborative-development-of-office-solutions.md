@@ -1,5 +1,5 @@
 ---
-title: Gemeinsame Entwicklung von Office-Projektmappen
+title: Gemeinsame Entwicklung von Office-Lösungen
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,33 +16,33 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62949486"
 ---
-# <a name="collaborative-development-of-office-solutions"></a>Gemeinsame Entwicklung von Office-Projektmappen
-  Mehrere Entwickler können auf einem Office-Projekt auf die gleiche Weise arbeiten, die sie an andere Visual Studio-Projekten arbeiten. Visual Studio findet die Microsoft Office-Installation auf jedem Computer, selbst wenn Office an verschiedenen Speicherorten installiert ist. Es gibt jedoch einige wichtige Punkte zu berücksichtigen.
+# <a name="collaborative-development-of-office-solutions"></a>Gemeinsame Entwicklung von Office-Lösungen
+  Mehrere Entwickler können wie in anderen Visual Studio-Projekten an einem Office-Projekt arbeiten. Visual Studio sucht die Microsoft Office Installation ordnungsgemäß auf den einzelnen Computern, auch wenn Office an verschiedenen Standorten installiert ist. Es gibt jedoch einige wichtige Überlegungen, die zu beachten sind.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="debug-properties-are-not-shared"></a>Debuggen von Eigenschaften werden nicht freigegeben.
- In der Quellcodeverwaltung werden Debugeigenschaften nicht für mehrere Benutzer gemeinsam verwendet. Visual Basic und Visual C# Projekte speichern die Debugeigenschaften in einer benutzerspezifischen Datei (*ProjectName*. vbproj.user oder *ProjectName*. csproj.user), und diese Datei befindet sich nicht unter quellcodeverwaltung . Wenn mehrere Personen debuggen, muss jede Person die Debugeigenschaften manuell eingeben.
+## <a name="debug-properties-are-not-shared"></a>Debug-Eigenschaften werden nicht freigegeben.
+ In der Quellcodeverwaltung werden Debugeigenschaften nicht für mehrere Benutzer gemeinsam verwendet. In Visual Basic-und Visual c#-Projekten werden die Debugeigenschaften in einer benutzerspezifischen Datei ("*ProjectName*. vbproj. User" oder " *ProjectName*. csproj. User") gespeichert, und diese Datei befindet sich nicht in der Quell Code Verwaltung. Wenn mehrere Personen debuggen, muss jede Person die Debugeigenschaften manuell eingeben.
 
- Wenn das Projekt auf einer Netzwerkfreigabe statt in der quellcodeverwaltung gespeichert ist, müssen einige zusätzliche Schritte ausgeführt werden, mit denen die zusammenarbeitenden Entwickler die Projektmappe öffnen, und Testen Sie die Assembly.
+ Wenn das Projekt auf einer Netzwerkfreigabe statt in der Quell Code Verwaltung abgelegt ist, müssen einige zusätzliche Schritte ausgeführt werden, damit die zusammenarbeitenden Entwickler die Projekt Mappe öffnen und die Assembly testen können.
 
-## <a name="source-control-requires-checking-out-all-files"></a>Datenquellen-Steuerelement ist erforderlich, alle Dateien werden ausgecheckt
- Wenn Sie die quellcodeverwaltung für Ihre Projekte verwenden, sollten Sie sehen Sie sich alle Dateien in einer Codedatei im **Projektmappen-Explorer** (z. B. die *ThisDocument*, *ThisWorkbook*, oder *ThisAddIn* Codedateien) jedes Mal, wenn Sie die Codedatei "" ändern, auch die Dateien, die standardmäßig ausgeblendet sind. Wenn Sie nur auf der obersten Ebene Codedatei Auschecken, können Ihre Änderungen verloren gehen.
+## <a name="source-control-requires-checking-out-all-files"></a>Die Quell Code Verwaltung erfordert das Auschecken aller Dateien.
+ Wenn Sie die Quell Code Verwaltung für Ihre Projekte verwenden, sollten Sie jedes Mal, wenn Sie die Codedatei ändern (z. b. die Code Dateien *ThisDocument*, *ThisWorkbook*oder *ThisAddIn* ), alle Dateien **Projektmappen-Explorer** in einer Codedatei Auschecken, wenn Sie die Codedatei ändern, auch die Dateien, die standardmäßig ausgeblendet sind. Wenn Sie nur die Codedatei der obersten Ebene Auschecken, können Ihre Änderungen verloren gehen.
 
- Nachdem Sie Ihre Änderungen vornehmen, alle Dateien wieder eingecheckt. Weitere Informationen zu den ausgeblendeten Codedateien in Projekten, finden Sie unter [Office-Projekten in Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
+ Nachdem Sie die Änderungen vorgenommen haben, überprüfen Sie alle Dateien wieder in. Weitere Informationen zu ausgeblendeten Code Dateien in-Projekten finden Sie unter [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
 
 ## <a name="security-for-informal-collaboration-on-a-network"></a>Sicherheit für die informelle Zusammenarbeit in einem Netzwerk
- Für alle Projektmappen auf Anwendungsebene, die in einem Speicherort im Netzwerk befinden (z. B. \\ \\ *Servername*\\*Sharename*), muss der vollqualifizierte Speicherort hinzugefügt werden der Liste vertrauenswürdiger Ordner in der Microsoft Office-Anwendung, mit der Sie arbeiten werden. Wählen Sie die Option zum Einschließen der Unterverzeichnisse unter dem Hauptordner oder speziell Debuggen hinzufügen und Erstellen von Ordnern zur Liste vertrauenswürdiger Ordner. Weitere Informationen hierzu finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).
+ Für alle Lösungen auf Dokument Ebene, die sich an einem Netzwerk Speicherort (z. b. \\ \\ *Servername* \\ *ShareName*) befinden, muss der voll qualifizierte Speicherort der Liste vertrauenswürdiger Ordner in der Microsoft Office Anwendung hinzugefügt werden, mit der Sie arbeiten. Wählen Sie die Option zum Einschließen der Unterverzeichnisse in den Hauptordner aus, oder fügen Sie der Liste vertrauenswürdiger Ordner den Ordner Debug und Build hinzu. Weitere Informationen hierzu finden Sie unter Gewähren von Vertrauenswürdigkeit [für Dokumente](../vsto/granting-trust-to-documents.md).
 
- Die temporäre Zertifikate, die zum Zeitpunkt der Erstellung automatisch generiert werden, werden nicht durch Kennwörter gesichert. Die Zertifikate enthalten den Namen des Entwicklers Anmeldung und andere persönliche Informationen. Wenn Sie Anpassungen, die von temporären Zertifikaten signiert sind bereitstellen, anderen Benutzern Zugriff auf diese Informationen möglicherweise.
+ Die temporären Zertifikate, die automatisch zur Buildzeit generiert werden, werden nicht durch Kenn Wörter gesichert. Die Zertifikate enthalten den Anmelde Namen des Entwicklers und andere persönliche Informationen. Wenn Sie Anpassungen bereitstellen, die mit temporären Zertifikaten signiert sind, können andere möglicherweise auf diese Informationen zugreifen.
 
-## <a name="see-also"></a>Siehe auch
-- [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)
-- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
-- [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
+- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
+- [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)

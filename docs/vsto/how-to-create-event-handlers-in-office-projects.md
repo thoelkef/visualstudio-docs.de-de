@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538306"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten
@@ -42,7 +42,7 @@ ms.locfileid: "85538306"
 
 ### <a name="to-create-an-event-handler-in-c"></a>So erstellen Sie einen Ereignishandler in C\#
 
-1. Erstellen Sie den Ereignis Delegaten im **Startup** -Ereignis der-Klasse, indem Sie den qualifizierten Ereignis Namen, gefolgt von einem Leerzeichen, eingeben und **+=** anschließend ohne Leerzeichen eingeben. Zum Beispiel:
+1. Erstellen Sie den Ereignis Delegaten im **Startup** -Ereignis der-Klasse, indem Sie den qualifizierten Ereignis Namen, gefolgt von einem Leerzeichen, eingeben und **+=** anschließend ohne Leerzeichen eingeben. Beispiel:
 
      `this.<object name>.<event name> +=`
 
@@ -50,7 +50,7 @@ ms.locfileid: "85538306"
 
      Visual Studio schließt die Codezeile automatisch ab, erstellt den Ereignishandler und verschiebt die Einfügemarke in den neu erstellten Ereignishandler.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)
 - [Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)

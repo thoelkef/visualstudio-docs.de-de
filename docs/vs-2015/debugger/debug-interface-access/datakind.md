@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197632"
 ---
 # <a name="datakind"></a>DataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt an, die bestimmten Bereich eines Datenwerts.  
+Gibt den bestimmten Bereich eines Daten Werts an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,43 +42,43 @@ enum DataKind { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  DataIsUnknown  
- Symbol "Daten" kann nicht bestimmt werden.  
+ Das Daten Symbol kann nicht bestimmt werden.  
   
  DataIsLocal  
- Datenelement ist eine lokale Variable.  
+ Das Datenelement ist eine lokale Variable.  
   
  DataIsStaticLocal  
- Datenelement ist eine statische lokale Variable.  
+ Das Datenelement ist eine statische lokale Variable.  
   
  DataIsParam  
- Datenelement ist ein formaler Parameter.  
+ Das Datenelement ist ein formaler Parameter.  
   
  DataIsObjectPtr  
- Datenelement ist einem Zeiger (`this`).  
+ Das Datenelement ist ein Objekt Zeiger ( `this` ).  
   
  DataIsFileStatic  
- Datenelement ist eine Variable im Bereich einer Datei.  
+ Das Datenelement ist eine Variable mit Datei Bereich.  
   
  DataIsGlobal  
- Datenelement ist eine globale Variable.  
+ Das Datenelement ist eine globale Variable.  
   
  DataIsMember  
- Datenelement ist eine Objektvariable des Elements.  
+ Das Datenelement ist eine Objektmember-Variable.  
   
  DataIsStaticMember  
- Datenelement ist eine statische Klasse-Variable.  
+ Das Datenelement ist eine statische Klassen Variable.  
   
- DataIsConstant  
- Datenelement ist ein konstanter Wert.  
+ Dataisconstant  
+ Das Datenelement ist ein konstanter Wert.  
   
-## <a name="remarks"></a>Hinweise  
- Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Werte in dieser Enumeration werden von der [idiasymmetribol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

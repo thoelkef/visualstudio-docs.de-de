@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185957"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Vorgehensweise: Sammeln von Samplingdaten auf Zeilenebene
+# <a name="how-to-collect-line-level-sampling-data"></a>Gewusst wie: Sammeln von Samplingdaten auf Zeilenebene
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine prozessorintensive Funktion im Code ist, z.B. eine Funktion mit äußerst exklusiven Stichproben, die vom Prozessor die meiste Zeit beanspruchen.  
@@ -56,8 +56,8 @@ Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine proze
   
      \- oder -  
   
-- Wenn eine Anwendung starten, geben Sie **VSPerfCmd/lineoff \<other arguments >** ein.  
+- Geben Sie beim Starten einer Anwendung **VSPerfCmd /lineoff \<other arguments>** ein.  
   
-## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
+ [Analysieren von Leistungs Tool Daten](../profiling/analyzing-performance-tools-data.md)

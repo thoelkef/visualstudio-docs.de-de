@@ -13,13 +13,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143011"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Gibt an, warum der Prozess zum Debuggen gestartet wurde.  
@@ -49,30 +49,30 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Parameter  
  DEBUG_REASON_ERROR  
- Ein nicht-spezifischer Fehler aufgetreten ist (Dies wird verwendet, als eine standardbedingung Wenn keine der anderen Lösung Gründe).  
+ Ein nicht spezifischer Fehler ist aufgetreten (Dies wird als Standard Bedingung verwendet, wenn keiner der anderen Gründe passt).  
   
  DEBUG_REASON_USER_LAUNCHED  
- Der Prozess wurde auf Anforderung des Benutzers gestartet.  
+ Der Prozess wurde bei der Anforderung des Benutzers gestartet.  
   
  DEBUG_REASON_USER_ATTACHED  
- Der bereits ausgeführten Prozess wurde vom Benutzer zugeordnet.  
+ Der Benutzer hat den bereits laufenden Prozess angefügt.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- Der Prozess wurde mit automatisch verbunden, wenn sie gestartet wurde.  
+ Der Prozess wurde beim Starten automatisch an angefügt.  
   
  DEBUG_REASON_CAUSALITY  
- Der Prozess wurde gestartet, aufgrund einer *Just-In-Time-* Debuggen (JIT)-Ereignis.  
+ Der Prozess wurde aufgrund eines JIT-Debugereignisses ( *Just-in-Time* ) gestartet.  
   
-## <a name="remarks"></a>Hinweise  
- Zurückgegeben von der [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird von der [getdebugreason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

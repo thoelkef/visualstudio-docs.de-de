@@ -13,10 +13,10 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209d8066d232c63364a045aee6b8dd2153033666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186444"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData-Element (Visual Studio-Vorlagen)
@@ -47,41 +47,41 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Der Name der Vorlage gibt an, wie er in einem angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
-|[Beschreibung](../extensibility/description-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
-|[Symbol](../extensibility/icon-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder angezeigt wird, die **neues Projekt** oder **neues Element hinzufügen** im Dialogfeld für die Vorlage.|  
-|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezeigt wird der **neues Projekt** Dialogfeld.|  
-|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Klassifiziert die Projektvorlage, sodass es unter der angegebenen Unterkategorie in angezeigt wird der **neues Projekt** Dialogfeld.|  
-|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, die Vorlagen-ID.|  
-|[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, die Kennung der Vorlage.|  
-|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt einen Wert an, die zum Anordnen von gegenüber anderen Vorlagen in der gleichen Kategorie, der Vorlage verwendet wird, entsprechend der Anzeige in einem der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
+|[Name](../extensibility/name-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Namen der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
+|[Beschreibung](../extensibility/description-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt die Beschreibung der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
+|[Icon](../extensibility/icon-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** für die Vorlage angezeigt wird.|  
+|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Projektvorlage, sodass Sie im Dialogfeld **Neues Projekt** unter der angegebenen Gruppe angezeigt wird.|  
+|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Klassifiziert die Projektvorlage, sodass Sie im Dialogfeld **Neues Projekt** unter der angegebenen Unterkategorie angezeigt wird.|  
+|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Vorlagen-ID an.|  
+|[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Vorlagen Gruppen-ID an.|  
+|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt einen Wert an, der verwendet wird, um die Vorlage neben anderen Vorlagen in derselben Kategorie anzuordnen, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob ein enthaltender Ordner bei der Instanziierung des Projekts erstellt wird.|  
-|[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt den Namen, den das Projektsystem von Visual Studio generiert wird, wird für das Projekt oder Element an, bei der Erstellung.|  
-|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob das Visual Studio-Projektsystem den Standardnamen für ein Projekt oder Element generiert wird, wenn es erstellt wird.|  
+|[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt den Namen an, den das Visual Studio-Projekt System für das Projekt oder Element generiert, wenn es erstellt wird.|  
+|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob das Visual Studio-Projekt System den Standardnamen für ein Projekt oder Element generiert, wenn es erstellt wird.|  
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob das Projekt als temporäres Projekt erstellt werden kann.|  
-|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die **Durchsuchen** Schaltfläche ist verfügbar in der **neues Projekt** Dialogfeld, damit Benutzer können leicht ändern, das Standardverzeichnis, in dem ein neues Projekt gespeichert ist.|  
-|[Ausgeblendet](../extensibility/hidden-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld.|  
-|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Anzahl der übergeordneten Kategorien, die die Vorlage in anzeigen, wird die **neues Projekt** Dialogfeld.|  
+|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Schaltfläche " **Durchsuchen** " im Dialogfeld " **Neues Projekt** " verfügbar ist, sodass Benutzer das Standardverzeichnis, in dem ein neues Projekt gespeichert wird, leicht ändern können.|  
+|[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
+|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Anzahl der übergeordneten Kategorien an, in denen die Vorlage im Dialogfeld **Neues Projekt** angezeigt wird.|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|Optionales Element.|  
-|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt an, ob der **Speicherort** Textfeld in der **neues Projekt** im Dialogfeld entweder aktiviert, deaktiviert oder für die Projektvorlage ausgeblendet ist.|  
-|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Verwenden Sie dieses Element aus, wenn die Vorlage nur eine bestimmte mindestens erforderliche Version und höhere Versionen, sofern vorhanden, von .NET Framework unterstützt.|  
-|[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage eine Masterseite für Webprojekte unterstützt.|  
-|[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage für Webprojekte codetrennung und das Code-Behind-Seitenmodell unterstützt.|  
-|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage für mehrere Sprachen identisch ist, und ob die **Sprache** Option steht in der **neues Projekt** Dialogfeld.|  
-|[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Plattform an, auf die die Projektvorlage abzielt. Dieses Element gibt an, dass eine Projektvorlage zum Erstellen [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps.|  
+|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|Optionales Element.<br /><br /> Gibt an, ob das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** für die Projektvorlage aktiviert, deaktiviert oder ausgeblendet ist.|  
+|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Verwenden Sie dieses Element, wenn die Vorlage nur eine bestimmte Mindestversion und spätere Versionen der .NET Framework unterstützt.|  
+|[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage eine Master Seite für Webprojekte unterstützt.|  
+|[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage Code Trennung oder das Code-Behind-Seiten Modell für Webprojekte unterstützt.|  
+|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt an, ob die Vorlage für mehrere Sprachen identisch ist und ob die **sprach** Option im Dialogfeld **Neues Projekt** verfügbar ist.|  
+|[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Plattform an, auf die die Projektvorlage abzielt. Dieses Element gibt an, dass eine Projektvorlage zum Erstellen von-apps verwendet wird [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, die Element Vorlage oder Starter Kit.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  `TemplateData` ist ein erforderliches Element.  
   
- Wenn Sie nicht über ein optionales Element beinhalten, ist der Standardwert für dieses Element verwendet.  
+ Wenn Sie kein optionales Element einschließen, wird der Standardwert für dieses Element verwendet.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Anwendung veranschaulicht.  
@@ -110,6 +110,6 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

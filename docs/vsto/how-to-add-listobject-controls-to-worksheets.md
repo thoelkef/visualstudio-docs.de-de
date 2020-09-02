@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538319"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern
@@ -37,7 +37,7 @@ ms.locfileid: "85538319"
 
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen finden Sie unter [ListObject Control](../vsto/listobject-control.md).
 
-## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a>Hinzufügen von ListObject-Steuerelementen zur Entwurfszeit
+## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Hinzufügen von ListObject-Steuerelementen zur Entwurfszeit
  Es gibt mehrere Möglichkeiten zum Hinzufügen von Steuer <xref:Microsoft.Office.Tools.Excel.ListObject> Elementen zu einem Arbeitsblatt in einem Projekt auf Dokument Ebene zur Entwurfszeit: innerhalb von Excel, über die Visual Studio- **Toolbox**und aus dem **Datenquellen** Fenster.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "85538319"
 
      Ein datengebundenes <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement wird dem Arbeitsblatt hinzugefügt. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
+## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
  Sie können das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement dynamisch zur Laufzeit hinzufügen. So können Sie Hoststeuerelemente als Antwort auf Ereignisse erstellen. Dynamisch erstellte Listenobjekte werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein ListObject-Steuerelement programmgesteuert hinzu
@@ -76,7 +76,7 @@ ms.locfileid: "85538319"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können ein <xref:Microsoft.Office.Tools.Excel.ListObject>-Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Dynamisch erstellte Listenobjekte werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt gespeichert und geschlossen wird. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein ListObject-Steuerelement programmgesteuert hinzu
@@ -86,7 +86,7 @@ ms.locfileid: "85538319"
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [ListObject-Steuerelement](../vsto/listobject-control.md)
