@@ -12,21 +12,21 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f6bc85fb00c15831dcf1a9f64e4b886272df218
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193819"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>Registrieren und Aufheben der Registrierung von VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Verwenden Sie Attribute, zum Registrieren von einer VSPackages, aber  
+Sie verwenden Attribute, um ein VSPackage zu registrieren, aber  
   
-## <a name="registering-a-vspackage"></a>Registriert eine VSPackage  
- Sie können Attribute verwenden, um die Registrierung der verwaltete VSPackages zu steuern. Alle Registrierungsinformationen ist in eine PKGDEF-Datei enthalten. Weitere Informationen zu Datei-basierte Registrierungsschlüssel, finden Sie unter [CreatePkgDef-Hilfsprogramm](../extensibility/internals/createpkgdef-utility.md).  
+## <a name="registering-a-vspackage"></a>Registrieren eines VSPackages  
+ Mithilfe von Attributen können Sie die Registrierung verwalteter VSPackages steuern. Alle Registrierungsinformationen sind in einer pkgdef-Datei enthalten. Weitere Informationen zur dateibasierten Registrierung finden Sie unter dem [Hilfsprogramm](../extensibility/internals/createpkgdef-utility.md)"|".  
   
- Der folgende Code zeigt, wie Sie die Registrierungsattribute für die standard-verwenden, um Ihr VSPackage zu registrieren.  
+ Der folgende Code zeigt, wie Sie das VSPackage mit den standardmäßigen Registrierungs Attributen registrieren.  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -35,20 +35,20 @@ public sealed class BasicPackage : Package
 {. . .}  
 ```  
   
-## <a name="unregistering-an-extension"></a>Aufheben der Registrierung einer Erweiterungs  
- Wenn Sie mit einer Vielzahl von anderen VSPackages ausprobiert haben und sie aus der experimentellen Instanz entfernen möchten, können Sie nur Ausführen der **zurücksetzen** Befehl. Suchen Sie nach **Zurücksetzen der experimentellen Visual Studio-Instanz** auf der Startseite des Computers, oder führen Sie diesen Befehl über die Befehlszeile:  
+## <a name="unregistering-an-extension"></a>Aufheben der Registrierung einer Erweiterung  
+ Wenn Sie viele verschiedene VSPackages ausprobiert haben und diese aus der experimentellen Instanz entfernen möchten, können Sie einfach den **Reset** -Befehl ausführen. Suchen Sie auf der Startseite des Computers nach **Zurücksetzen der experimentellen Instanz von Visual Studio** , oder führen Sie den folgenden Befehl über die Befehlszeile aus:  
   
 ```vb  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp  
 ```  
   
- Wenn Sie möchten eine Erweiterung zu deinstallieren, die Sie für Ihre Entwicklungsinstanz von Visual Studio installiert haben, fahren Sie mit **Extras / Erweiterungen und Updates**, suchen Sie nach der Erweiterung, und klicken Sie auf **Deinstallieren**.  
+ Wenn Sie eine Erweiterung deinstallieren möchten, die Sie in Ihrer Entwicklungs Instanz von Visual Studio installiert haben, wechseln Sie zu Extras > **Erweiterungen und Updates**, suchen Sie die Erweiterung, und klicken Sie auf **deinstallieren**.  
   
- Wenn aus irgendeinem Grund keine dieser Methoden erfolgreich ist die Erweiterung deinstallieren, können Sie die Registrierung die VSPackage-Assembly, über die Befehlszeile wie folgt aufheben:  
+ Wenn die Erweiterung der Erweiterung aus irgendeinem Grund von keiner dieser Methoden erfolgreich deinstalliert wird, können Sie die Registrierung der VSPackage-Assembly wie folgt von der Befehlszeile aus aufheben:  
   
 ```  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg” /unregister <pathToVSPackage assembly>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPackages](../extensibility/internals/vspackages.md)

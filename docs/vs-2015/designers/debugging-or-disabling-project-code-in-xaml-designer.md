@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657934"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
@@ -49,7 +49,7 @@ In vielen Fällen können Ausnahmefehler im XAML-Designer durch Projektcode veru
 
 2. Wählen Sie im Windows Task-Manager die Schaltfläche **Task beenden** aus, um alle Instanzen des XAML-Designers von Visual Studio zu schließen, die zurzeit ausgeführt werden.
 
-     ![XAML-Designer-Instanzen in Task Manager](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
+     ![XAML-Designer-Instanzen im Task-Manager](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
 
 3. Öffnen Sie in Visual Studio die XAML-Seite, die den Code oder das Steuerelement enthält, den bzw. das Sie debuggen möchten.
 
@@ -73,9 +73,9 @@ In vielen Fällen können Ausnahmefehler im XAML-Designer durch Projektcode veru
 
 - Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um das Ausführen von Projektcode zu deaktivieren und den Designer erneut zu laden** aus.
 
-- Alternativ können Sie auf der Symbolleiste im XAML-Designer die Schaltfläche **Projektcode deaktivieren** auswählen.
+- Alternativ können Sie auf der Symbolleiste im XAML-Designer die Schaltfläche **Projekt Code deaktivieren** auswählen.
 
-     ![Schaltfläche "Projekt Code deaktivieren"](../designers/media/xaml-disablecode.png "XAML_DisableCode")
+     ![Schaltfläche "Projektcode deaktivieren"](../designers/media/xaml-disablecode.png "XAML_DisableCode")
 
      Sie können die Schaltfläche erneut umschalten, um Projektcode erneut zu aktivieren.
 
@@ -87,5 +87,5 @@ In vielen Fällen können Ausnahmefehler im XAML-Designer durch Projektcode veru
     > [!NOTE]
     > Das Deaktivieren von Projektcode kann zu einem Verlust von Entwurfszeitdaten führen. Eine Alternative besteht darin, den im Designer ausgeführten Code zu debuggen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md)

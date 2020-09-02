@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4969dff811b6517c0274a35884703a9dc0c693cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194105"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dies ist eine Callback-Funktion angegeben, die in einem Aufruf der [SccSetOption](../extensibility/sccsetoption-function.md) (mithilfe der Option `SCC_OPT_NAMECHANGEPFN`) und wird verwendet, um die von vorgenommenen Namensänderungen das Quellcodeverwaltungs-Plug-in zurück zur IDE zu kommunizieren.  
+Dies ist eine Rückruffunktion, die in einem aufzurufenden [sccsetoption](../extensibility/sccsetoption-function.md) -Operator (using-Option) angegeben wird `SCC_OPT_NAMECHANGEPFN` und zur Übermittlung von Namensänderungen verwendet wird, die vom Quellcodeverwaltungs-Plug-in an der IDE vorgenommen wurden.  
   
 ## <a name="signature"></a>Signatur  
   
@@ -35,23 +35,23 @@ typedef void (*OPTNAMECHANGEPFN)(
 ```  
   
 ## <a name="parameters"></a>Parameter  
- pvCallerData  
- [in] Benutzerwert in einem vorherigen Aufruf der [SccSetOption](../extensibility/sccsetoption-function.md) (mithilfe der Option `SCC_OPT_USERDATA`).  
+ pvcallerdata  
+ in Benutzer Wert, der in einem vorherigen [csetoption-aufrufswert](../extensibility/sccsetoption-function.md) (using-Option) angegeben wurde `SCC_OPT_USERDATA` .  
   
- pszOldName  
- [in] Der ursprüngliche Name der Datei.  
+ pszoldname  
+ in Der ursprüngliche Name der Datei.  
   
- pszNewName  
- [in] Der Name der Datei wurde in umbenannt.  
+ psznewname  
+ in Der Name, in den die Datei umbenannt wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Keine.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn eine Datei während der einen Quellcodeverwaltungsvorgang umbenannt wird, kann das Quellcodeverwaltungs-Plug-in der IDE über die Änderung des über diesen Rückruf benachrichtigen.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn eine Datei während eines Quell Code Verwaltungs Vorgangs umbenannt wird, kann das Quellcodeverwaltungs-Plug-in die IDE über diesen Rückruf über die Namensänderung benachrichtigen.  
   
- Wenn dieser Rückruf in die IDE nicht unterstützt wird, ruft er nicht die [SccSetOption](../extensibility/sccsetoption-function.md) angegeben. Wenn das plug-in dieses Rückrufs nicht unterstützt, wird zurückgegeben, `SCC_E_OPNOTSUPPORTED` aus der `SccSetOption` funktionieren, wenn die IDE versucht wird, um den Rückruf festzulegen.  
+ Wenn die IDE diesen Rückruf nicht unterstützt, ruft Sie " [sccsetoption](../extensibility/sccsetoption-function.md) " nicht auf, um Sie anzugeben. Wenn das Plug-in diesen Rückruf nicht unterstützt, wird von der-Funktion zurückgegeben, `SCC_E_OPNOTSUPPORTED` `SccSetOption` Wenn die IDE versucht, den Rückruf festzulegen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Von der IDE implementierte Rückruf Funktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

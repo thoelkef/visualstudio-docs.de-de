@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc23045fa70554133eba3a7f1326681bf31ea379
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205142"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
+# <a name="object_type"></a>Object_Type
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Typ eines Objekts von der ausdrucksauswertung.  
+Gibt den Typ eines Objekts aus der Ausdrucks Auswertung an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -69,16 +69,16 @@ public enum enum_OBJECT_TYPE { 
   
 ## <a name="members"></a>Member  
  OBJECT_TYPE_BOOLEAN  
- Gibt an, dass das Objekt ein boolescher Wert.  
+ Gibt an, dass das Objekt ein boolescher Wert ist.  
   
  OBJECT_TYPE_CHAR  
  Gibt an, dass das Objekt ein Zeichen ist.  
   
  OBJECT_TYPE_I1  
- Gibt an, dass das Objekt eine ein-Byte-Ganzzahl mit Vorzeichen ist.  
+ Gibt an, dass das Objekt eine 1-Byte-Ganzzahl mit Vorzeichen ist.  
   
  OBJECT_TYPE_U1  
- Gibt an, dass das Objekt eine ein-Byte-Ganzzahl ohne Vorzeichen ist.  
+ Gibt an, dass das Objekt eine 1-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_I2  
  Gibt an, dass das Objekt eine 2-Byte-Ganzzahl mit Vorzeichen ist.  
@@ -87,10 +87,10 @@ public enum enum_OBJECT_TYPE { 
  Gibt an, dass das Objekt eine 2-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_I4  
- Gibt an, dass das Objekt eine vier-Byte-Ganzzahl mit Vorzeichen ist.  
+ Gibt an, dass das Objekt eine 4-Byte-Ganzzahl mit Vorzeichen ist.  
   
  OBJECT_TYPE_U4  
- Gibt an, dass das Objekt eine vier-Byte-Ganzzahl ohne Vorzeichen ist.  
+ Gibt an, dass das Objekt eine 4-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_I8  
  Gibt an, dass das Objekt eine 8-Byte-Ganzzahl mit Vorzeichen ist.  
@@ -99,31 +99,31 @@ public enum enum_OBJECT_TYPE { 
  Gibt an, dass das Objekt eine 8-Byte-Ganzzahl ohne Vorzeichen ist.  
   
  OBJECT_TYPE_R4  
- Gibt an, dass das Objekt eine vier-Byte-Gleitkommazahl.  
+ Gibt an, dass das Objekt eine 4-Byte-Gleit Komma Zahl ist.  
   
  OBJECT_TYPE_R8  
- Gibt an, dass das Objekt eine 8-Byte-Gleitkommazahl.  
+ Gibt an, dass das Objekt eine 8-Byte-Gleit Komma Zahl ist.  
   
  OBJECT_TYPE_OBJECT  
- Gibt an, dass das Objekt ein Objekt.  
+ Gibt an, dass das Objekt ein Objekt ist.  
   
  OBJECT_TYPE_NULL  
  Gibt an, dass das Objekt NULL ist.  
   
  OBJECT_TYPE_CLASS  
- Gibt an, dass das Objekt einer Klasse ist.  
+ Gibt an, dass das Objekt eine Klasse ist.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Argument an die [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) und [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) Methoden.  
+## <a name="remarks"></a>Bemerkungen  
+ Übergeben als Argument an die Methoden "| [ateprimitiveobject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) " und " [kreatearrayobject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) ".  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: ee.h  
+ Header: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
+ ["Kreateprimitiveobject"](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
  [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

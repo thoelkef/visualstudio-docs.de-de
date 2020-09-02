@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca3f3806f9097082d71dd80e74ccf48cd78c951b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386887"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Erste Schritte beim Debuggen in Visual Studio 2015
@@ -60,7 +60,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
  ![Visual Studio, erfolgreiche Buildausgabe](../ide/media/vs-ide-gs-debug-success-build.PNG "vs_ide_gs_debug_success_build")
 
 ### <a name="reviewing-the-error-list"></a>Überprüfen der Fehlerliste
- Sofern Sie keine Änderungen am Code vorgenommen haben, den Sie zuvor erfolgreich kompiliert hatten, tritt vermutlich ein Fehler auf. Wenn Sie noch nie programmiert haben, werden wahrscheinlich viele Fehler auftreten. Fehler sind manchmal offensichtlich, z. B. einfache Syntaxfehler oder falsche Variablennamen, manchmal aber auch schwer zu verstehen, wenn Ihnen nur schwer lesbarer Code zur Verfügung steht. Um eine bessere Ansicht der Probleme zu erhalten, navigieren Sie zum unteren Rand des Fensters **Buildausgabe** , und klicken Sie auf die Registerkarte **Fehlerliste** . Dies führt Sie zu einer stärker organisierten Ansicht der Fehler und Warnungen für das Projekt und bietet auch einige zusätzliche Optionen.
+ Sofern Sie keine Änderungen am Code vorgenommen haben, den Sie zuvor erfolgreich kompiliert hatten, tritt vermutlich ein Fehler auf. Wenn Sie noch nie programmiert haben, werden wahrscheinlich viele Fehler auftreten. Fehler sind manchmal offensichtlich, z. B. einfache Syntaxfehler oder falsche Variablennamen, manchmal aber auch schwer zu verstehen, wenn Ihnen nur schwer lesbarer Code zur Verfügung steht. Für eine übersichtlichere Ansicht der Probleme navigieren Sie zum Ende des Fensters **Ausgabe** für den Build, und klicken Sie auf die Registerkarte **Fehlerliste**. Dadurch gelangen Sie zu einer besser angeordneten Ansicht der Fehler und Warnungen für das Projekt mit einigen zusätzlichen Optionen.
 
  ![Visual Studio 2015, Ausgabe und Fehlerliste](../ide/media/vs-ide-gs-debug-bad-build-error-list.PNG "Vs_ide_gs_debug_bad_build_error_list")
 
@@ -83,7 +83,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
 ### <a name="reviewing-errors-in-detail"></a>Überprüfen der Fehler im Detail
  Einige Fehler erscheinen Ihnen möglicherweise nicht sinnvoll, wenn sie wie vom Compiler formuliert angezeigt werden. In diesen Fällen benötigen Sie weitere Informationen. Sie können aus dem Fenster **Fehlerliste** heraus eine automatische Suche in Bing nach weiterführenden Informationen über den Fehler (oder die Warnung) durchführen. Klicken Sie dazu mit der rechten Maustaste auf die entsprechende Zeile, und wählen Sie im Kontextmenü **Hilfe zu Fehlern anzeigen** aus.
 
- ![Visual Studio, Fehlerliste „Bing-Suche“](../ide/media/vs-ide-gs-debug-error-list-error-help.png "Vs_ide_gs_debug_error_list_error_help")
+ ![Visual Studio, Fehlerliste "Bing-Suche"](../ide/media/vs-ide-gs-debug-error-list-error-help.png "Vs_ide_gs_debug_error_list_error_help")
 
  Dadurch wird in Visual Studio 2015 eine Registerkarte mit den Ergebnissen einer Bing-Suche nach dem Fehlercode und dem Text angezeigt. Die Ergebnisse stammen aus verschiedenen Quellen im Internet und sind möglicherweise nicht alle hilfreich.
 

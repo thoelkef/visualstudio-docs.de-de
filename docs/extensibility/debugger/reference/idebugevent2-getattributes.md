@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes | Microsoft Docs
+title: 'IDebugEvent2:: GetAttributes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ffc3fc1b7988401611190fdf09e8041bf0dc5b1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729956"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
@@ -41,13 +41,13 @@ int GetAttribute( 
 
 ## <a name="parameters"></a>Parameter
 `pdwAttrib`\
-[out] Eine Kombination von Flags aus der EVENTATTRIBUTES-Enumeration. [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)
+vorgenommen Eine Kombination von Flags aus der [eventattributenumeration](../../../extensibility/debugger/reference/eventattributes.md) .
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) ist allen Ereignissen gemeinsam. Diese Methode beschreibt den Ereignistyp. Ist das Ereignis beispielsweise synchron oder asynchron und ist ein Stoppereignis.
+ Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle wird für alle Ereignisse gemeinsam. Diese Methode beschreibt den Typ des Ereignisses. Beispielsweise ist das Ereignis synchron oder asynchron, und ist es ein anhalteereignis.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

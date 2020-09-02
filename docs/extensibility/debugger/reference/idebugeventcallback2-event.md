@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Ereignis | Microsoft Docs
+title: 'IDebugEventCallback2:: Event | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729895"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
-Sendet Benachrichtigungen über Debugereignisse.
+Sendet eine Benachrichtigung über Debugereignisse.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,33 +53,33 @@ int Event( 
 
 ## <a name="parameters"></a>Parameter
 `pEngine`\
-[in] Ein [IDebugEngine2-Objekt,](../../../extensibility/debugger/reference/idebugengine2.md) das das Debugmodul (DE) darstellt, das dieses Ereignis sendet. Zum Ausfüllen dieses Parameters ist ein DE erforderlich.
+in Ein [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) -Objekt, das die Debug-Engine (de) darstellt, die dieses Ereignis sendet. Zum Ausfüllen dieses Parameters ist ein de erforderlich.
 
 `pProcess`\
-[in] Ein [IDebugProcess2-Objekt,](../../../extensibility/debugger/reference/idebugprocess2.md) das den Prozess darstellt, in dem das Ereignis auftritt. Dieser Parameter wird vom Sitzungsdebug-Manager (SDM) ausgefüllt. Ein DE übergibt immer einen Nullwert für diesen Parameter.
+in Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess darstellt, in dem das Ereignis auftritt. Dieser Parameter wird vom Sitzungs-Debug-Manager (SDM) ausgefüllt. Ein de übergibt immer einen NULL-Wert für diesen Parameter.
 
 `pProgram`\
-[in] Ein [IDebugProgram2-Objekt,](../../../extensibility/debugger/reference/idebugprogram2.md) das das Programm darstellt, in dem dieses Ereignis auftritt. Bei den meisten Ereignissen ist dieser Parameter kein NULL-Wert.
+in Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das das Programm darstellt, in dem dieses Ereignis auftritt. Bei den meisten Ereignissen ist dieser Parameter kein NULL-Wert.
 
 `pThread`\
-[in] Ein [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den Thread darstellt, in dem dieses Ereignis auftritt. Zum Beenden von Ereignissen kann dieser Parameter kein NULL-Wert sein, da der Stapelrahmen von diesem Parameter abgerufen wird.
+in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem dieses Ereignis auftritt. Zum Beenden von Ereignissen kann dieser Parameter kein NULL-Wert sein, da der Stapel Rahmen aus diesem Parameter abgerufen wird.
 
 `pEvent`\
-[in] Ein [IDebugEvent2-Objekt,](../../../extensibility/debugger/reference/idebugevent2.md) das das Debugereignis darstellt.
+in Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das das Debug-Ereignis darstellt.
 
 `riidEvent`\
-[in] GUID, die identifiziert, welche `pEvent` Ereignisschnittstelle vom Parameter abunabhängig ist.
+in GUID, die identifiziert, welche Ereignis Schnittstelle aus dem Parameter abgerufen werden soll `pEvent` .
 
 `dwAttrib`\
-[in] Eine Kombination von Flags aus der EVENTATTRIBUTES-Enumeration. [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)
+in Eine Kombination von Flags aus der [eventattributenumeration](../../../extensibility/debugger/reference/eventattributes.md) .
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Beim Aufrufen dieser `dwAttrib` Methode muss der Parameter mit dem Wert übereinstimmen, der von `pEvent` der [GetAttributes-Methode](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) zurückgegeben wird, wie sie für das im Parameter übergebene Ereignisobjekt aufgerufen wird.
+ Beim Aufrufen dieser Methode muss der- `dwAttrib` Parameter mit dem Wert identisch sein, der von der [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) -Methode zurückgegeben wird, wie für das im-Parameter übergebenen Ereignis Objekt aufgerufen `pEvent` .
 
- Alle Debugereignisse werden asynchron gesendet, unabhängig davon, ob ein Ereignis selbst asynchron ist oder nicht. Wenn eine DE diese Methode aufruft, gibt der Rückgabewert nicht an, ob das Ereignis verarbeitet wurde, sondern nur, ob das Ereignis empfangen wurde. In den meisten Fällen wurde das Ereignis nicht verarbeitet, wenn diese Methode zurückgegeben wird.
+ Alle Debugereignisse werden asynchron gesendet, unabhängig davon, ob ein Ereignis selbst asynchron ist. Wenn eine de diese Methode aufruft, gibt der Rückgabewert nicht an, ob das Ereignis verarbeitet wurde, sondern nur, ob das Ereignis empfangen wurde. In den meisten Fällen wurde das Ereignis nicht verarbeitet, wenn diese Methode zurückgegeben wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
