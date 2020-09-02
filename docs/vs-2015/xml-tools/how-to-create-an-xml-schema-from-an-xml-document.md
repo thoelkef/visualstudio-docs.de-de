@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59e99320b122424e40da64b530bfe9a84a93eae1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670926"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Gewusst wie: Erstellen eines XML-Schemas aus einem XML-Dokument
@@ -44,5 +44,5 @@ Der XML-Editor ermöglicht Ihnen, ein XSD-Schema (XML Schema Definition Language
     > [!NOTE]
     > Der Befehl **Create Schema** steht auch im Kontextmenü des XML-Editors und im **XML** -Menü zur Verfügung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Editor](../xml-tools/xml-editor.md)

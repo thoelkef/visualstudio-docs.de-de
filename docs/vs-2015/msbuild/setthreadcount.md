@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193641"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
@@ -40,7 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  Die Anzahl der zu verwendenden Threads.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Ein [HRESULT])<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) mit der [erfolgreich] ()<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->)-Bit festgelegt ist, wenn die Anzahl der Threads aktualisiert wurde.  
+ Ein [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) mit [erfolgreich] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) Bit festgelegt, wenn die Thread Anzahl aktualisiert wurde.  
   
 ## <a name="requirements"></a>Anforderungen  
  **Header:** FileTracker.h

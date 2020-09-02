@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Aktualisieren der Statusleiste | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Aktualisieren der Status Leiste | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1d48b07dd5e4fc1fe745e3669041884c1b8eacd9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703148"
 ---
 # <a name="how-to-update-the-status-bar"></a>Vorgehensweise: Aktualisieren der Statusleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die **Statusleiste** ist eine Steuerleiste am unteren Rand der vielen Anwendungsfenster, die eine oder mehrere Textzeilen Status oder Indikatoren enthalten.  
+Die **Statusleiste** ist eine Steuerleiste, die sich am unteren Rand vieler Anwendungsfenster befindet, die mindestens eine Status Textzeile oder einen Indikator enthält.  
   
-### <a name="to-update-the-status-bar"></a>Zum Aktualisieren der Statusleiste  
+### <a name="to-update-the-status-bar"></a>So aktualisieren Sie die Status Leiste  
   
-1. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> für jedes einzelne Ansicht-Objekt (DocView-), das der Editor, z. B. eine Formularansicht und eine Codeansicht bereitstellt.  
+1. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> Sie für jedes einzelne Ansichts Objekt (DocView), das der Editor bereitstellt, z. b. eine Formularansicht und eine Code Ansicht.  
   
-2. Wenn die IDE aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, aktualisieren Sie die Informationen in den **Statusleiste** durch Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.  
+2. Wenn die IDE aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> , aktualisieren Sie die Informationen in der **Status Leiste** , indem Sie die Methoden von Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> .  
   
     > [!NOTE]
-    > Die IDE-Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> nur wenn Dokumentfensters anfänglich aktiviert ist. Für den Rest der Zeit, die Ihre Dokumentfenster aktiv ist, müssen Sie aktualisieren die **Statusleiste** Informationen wie den Status der Editor Änderungen.  
+    > Die IDE ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> nur auf, wenn das Dokument Fenster anfänglich aktiviert ist. Für den verbleibenden Zeitpunkt, an dem das Dokument Fenster aktiv ist, müssen Sie die **Status** leisten Informationen aktualisieren, wenn sich der Zustand des Editors ändert.  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
- Ein **Statusleiste** enthält vier separate Felder:  
+ Eine **Status Leiste** enthält vier separate Felder:  
   
 - Statustext  
   
-- Statusanzeige  
+- Statusleiste  
   
-- Animierte Symbol  
+- Animiertes Symbol  
   
-- Editorinformationen  
+- Editor-Informationen  
   
-  Weitere Informationen finden Sie unter [Statusleisten](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
+  Weitere Informationen finden Sie unter [Status leisten](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
   
-  Ruft die IDE automatisch den <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> Methode Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> Implementierung, wenn Ihre Dokumentfenster aktiviert wird.  
+  Die IDE ruft automatisch die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> Methode der-Implementierung auf, <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> Wenn das Dokument Fenster aktiviert ist.  
   
-  Die VSPackage-Implementierung ist verantwortlich für den Text in der Statusleiste zu aktualisieren. Die IDE wird diese Zeichenfolge "Bereit" zurückgesetzt, wenn das Statusfeld für den Text auf leere Zeichenfolge festgelegt ist ("") während der Leerlaufzeit.  
+  Das VSPackage-Implementierer ist für das Aktualisieren des Status Texts in der Statusleiste verantwortlich. Die IDE setzt diese Zeichenfolge auf "Ready" zurück, wenn das Statustextfeld zur Leerlaufzeit auf leeren Text ("") festgelegt ist.  
   
-## <a name="see-also"></a>Siehe auch  
- [Statusleisten](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)
+## <a name="see-also"></a>Weitere Informationen  
+ [Status leisten](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017121"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website
@@ -139,7 +140,7 @@ ms.locfileid: "86017121"
 
      Beachten Sie, dass die benutzerdefinierte Website Spalte, die Sie von der ersten SharePoint-Website importiert haben, in der Liste angezeigt wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
 - [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

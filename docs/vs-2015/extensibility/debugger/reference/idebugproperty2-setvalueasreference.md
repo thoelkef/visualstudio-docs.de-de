@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Microsoft-Dokumentation
+title: 'IDebugProperty2:: setvalueasreference | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a94e3767ee05e39e847af27dc5999fa8bbbe2d44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193456"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises.  
+Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,27 +46,27 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>Parameter  
  `rgpArgs`  
- [in] Ein Array von Argumenten, die an den Eigenschaftensetter für verwalteten Code übergeben werden sollen. Wenn Setter für die Eigenschaft über keine Argumente akzeptiert, oder wenn diese [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Objekt verweist nicht auf solche einen Eigenschaften-Setter `rgpArgs` sollte ein null-Wert sein. Dieser Parameter ist in der Regel einen null-Wert.  
+ in Ein Array von Argumenten, die an den Eigenschaften Setter für verwaltete Code übergeben werden. Wenn der Eigenschaften Setter keine Argumente annimmt oder dieses [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt nicht auf einen solchen Eigenschaften Setter verweist, `rgpArgs` sollte ein NULL-Wert sein. Dieser Parameter ist in der Regel ein NULL-Wert.  
   
  `dwArgCount`  
- [in] Die Anzahl der Argumente in der `rgpArgs` Array.  
+ in Die Anzahl der Argumente im `rgpArgs` Array.  
   
  `pValue`  
- [in] Ein Verweis in Form einer [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das den Wert, der zum Festlegen dieser Eigenschaft.  
+ in Ein Verweis in Form eines [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Objekts auf den Wert, der zum Festlegen dieser Eigenschaft verwendet werden soll.  
   
  `dwTimeout`  
- [in] Wie lange ausführen, um den Wert in Millisekunden festgelegt. Ein typischer Wert `INFINITE`. Dies wirkt sich auf die Länge der Zeit, die alle möglichen Auswertung aus.  
+ in Gibt an, wie lange die Festlegung des Werts dauert (in Millisekunden). Ein typischer Wert ist `INFINITE` . Dies wirkt sich auf die Zeitspanne aus, die eine mögliche Auswertung annehmen kann.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; andernfalls ein Fehler code wird zurückgegeben, in der Regel eine der folgenden:  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben, in der Regel einer der folgenden:  
   
-|Fehler|Beschreibung|  
+|Fehler|BESCHREIBUNG|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Festlegen des Werts aus einem Verweis wird nicht unterstützt.|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Der Wert kann nicht festgelegt werden, wie diese Eigenschaft auf eine Methode verweist.|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Das Festlegen des Werts aus einem Verweis wird nicht unterstützt.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Der Wert kann nicht festgelegt werden, da sich diese Eigenschaft auf eine Methode bezieht.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|Der Wert ist schreibgeschützt und kann nicht festgelegt werden.|  
 |`E_NOTIMPL`|Die Methode ist nicht implementiert.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

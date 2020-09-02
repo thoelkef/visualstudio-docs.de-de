@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537903"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Gewusst wie: Programm gesteuertes Öffnen von Arbeitsmappen
@@ -37,7 +37,7 @@ ms.locfileid: "85537903"
 
 - Eine Arbeitsmappe mit dem Namen `YourWorkbook.xls` muss in einem Verzeichnis `Test` mit dem Namen auf Laufwerk C vorhanden sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)
 - [Gewusst wie: Programm gesteuertes Öffnen von Textdateien als Arbeitsmappen](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
 - [Vorgehensweise: Programm gesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)

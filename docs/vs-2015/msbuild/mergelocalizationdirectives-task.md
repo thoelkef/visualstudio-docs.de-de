@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d6c2aa6cea687119e69b565da5468e8fa723641
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703422"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives-Aufgabe
@@ -35,11 +35,11 @@ Der <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives>-Task führt
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`GeneratedLocalizationFiles`|Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt die Liste der Dateien mit Lokalisierungsrichtlinien für einzelne Dateien im [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Binärformat an.|  
+|`GeneratedLocalizationFiles`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt die Liste der Dateien mit Lokalisierungsrichtlinien für einzelne Dateien im [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Binärformat an.|  
 |`OutputFile`|Erforderlicher **String**-Ausgabeparameter.<br /><br /> Gibt den Ausgabepfad der kompilierten Lokalisierungsrichtlinien-Assembly an.|  
   
-## <a name="remarks"></a>Anmerkungen  
- Sie können dem [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Inhalt Lokalisierungsattribute und -kommentare hinzufügen. Mit [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)]-Lokalisierungsunterstützung können Sie Lokalisierungsattribute und -kommentare entfernen und in einer von der generierten Assembly separaten LOC-Datei ablegen. Verwenden Sie hierzu das **LocalizationPropertyStorage**-Attribut. Weitere Informationen zu Lokalisierungsattributen und -kommentaren sowie **LocalizationPropertyStorage** finden Sie unter [Lokalisierungsattribute und -kommentare](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
+## <a name="remarks"></a>Hinweise  
+ Sie können dem [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Inhalt Lokalisierungsattribute und -kommentare hinzufügen. Mit [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)]-Lokalisierungsunterstützung können Sie Lokalisierungsattribute und -kommentare entfernen und in einer von der generierten Assembly separaten LOC-Datei ablegen. Verwenden Sie hierzu das **LocalizationPropertyStorage**-Attribut. Weitere Informationen über Lokalisierungs Attribute und-Kommentare und **LocalizationPropertyStorage**finden Sie unter [Lokalisierungs Attribute und-Kommentare](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Lokalisierungskommentare mehrerer [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Binärformatdateien in einer einzelnen LOC-Datei zusammengeführt.  
@@ -57,9 +57,9 @@ Der <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives>-Task führt
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Erstellen einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Aufgaben Referenz](../msbuild/wpf-msbuild-task-reference.md)   
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)   
+ [Entwickeln einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

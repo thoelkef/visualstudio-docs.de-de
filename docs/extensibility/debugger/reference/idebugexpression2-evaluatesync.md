@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Microsoft Docs
+title: 'IDebugExpression2:: evaluatesync | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729675"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
@@ -47,30 +47,30 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Parameter
 `dwFlags`\
-[in] Eine Kombination von Flags aus der EVALFLAGS-Enumeration, die die Ausdrucksauswertung steuern. [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
+in Eine Kombination von Flags aus der [evalflags](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die die Ausdrucks Auswertung steuern.
 
 `dwTimeout`\
-[in] Maximale Wartezeit in Millisekunden, bevor von dieser Methode zurückgegeben wird. Verwenden `INFINITE` Sie diese Verwendung, um auf unbestimmte Zeit zu warten.
+in Maximale Zeit in Millisekunden, die gewartet werden soll, bevor diese Methode zurückgegeben wird. Verwenden `INFINITE` Sie, um unbegrenzt zu warten.
 
 `pExprCallback`\
-[in] Dieser Parameter ist immer ein NULL-Wert.
+in Dieser Parameter ist immer ein NULL-Wert.
 
 `ppResult`\
-[out] Gibt das [IDebugProperty2-Objekt](../../../extensibility/debugger/reference/idebugproperty2.md) zurück, das das Ergebnis der Ausdrucksauswertung enthält.
+vorgenommen Gibt das [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt zurück, das das Ergebnis der Ausdrucks Auswertung enthält.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, `S_OK`kehrt zurück; andernfalls wird ein Fehlercode zurückgegeben. Einige typische Fehlercodes sind:
+Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben. Einige typische Fehlercodes sind:
 
 |Fehler|BESCHREIBUNG|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|Ein anderer Ausdruck wird derzeit ausgewertet, und die gleichzeitige Ausdrucksauswertung wird nicht unterstützt.|
-|E_EVALUATE_TIMEOUT|Zeitfürst bei der Auswertung.|
+|E_EVALUATE_BUSY_WITH_EVALUATION|Zurzeit wird ein anderer Ausdruck ausgewertet, und die gleichzeitige Auswertung von Ausdrücken wird nicht unterstützt.|
+|E_EVALUATE_TIMEOUT|Timeout bei der Auswertung.|
 
 ## <a name="remarks"></a>Bemerkungen
-Für die synchrone Auswertung ist es nicht erforderlich, ein Ereignis nach Abschluss der Auswertung an Visual Studio zurückzusenden.
+Bei der synchronen Auswertung ist es nicht notwendig, nach Abschluss der Auswertung ein Ereignis zurück an Visual Studio zu senden.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CExpression` Methode für ein einfaches Objekt implementiert wird, das die [IDebugExpression2-Schnittstelle](../../../extensibility/debugger/reference/idebugexpression2.md) implementiert.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches `CExpression` Objekt implementiert wird, das die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle implementiert.
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849811"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht)
@@ -44,7 +44,7 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
  Standardmäßig werden CLR-Ereignisse nur erfasst, wenn ein verwalteter Prozess geprofilet wird, da sie normalerweise für native Prozesse nicht erforderlich sind.  In einigen Fällen (wenn z.B. ein nativer Prozess die CLR hostet) müssen Sie möglicherweise CLR-Ereignisse für einen nativen Prozess erfassen.  Wenn dies der Fall ist, aktivieren Sie das Kontrollkästchen **Für systemeigene Prozesse auflisten**.  
   
 ### <a name="disable-rundown-events"></a>Deaktivieren von Rundown-Ereignissen  
- Die CLR generiert Ereignisse von zwei Anbietern: Runtime und Rundown.  Wenn Sie CLR-Runtime-Ereignisse erfassen möchten, aber das Erfassen von Rundown-Ereignissen vermeiden möchten, aktivieren Sie das Kontrollkästchen **Rundown-Ereignisse deaktivieren**.  Dies reduziert die Größe der Ablaufverfolgungsdatei, die von der Erfassung generiert wird, aber einige Stapel können möglicherweise nicht aufgelöst werden. Weitere Informationen finden Sie unter [CLR ETW Providers](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) (CLR-ETW-Anbieter).  
+ Die CLR generiert Ereignisse von zwei Anbietern: Runtime und Rundown.  Wenn Sie CLR-Runtime-Ereignisse erfassen möchten, aber das Erfassen von Rundown-Ereignissen vermeiden möchten, aktivieren Sie das Kontrollkästchen **Rundown-Ereignisse deaktivieren**.  Dies reduziert die Größe der Ablaufverfolgungsdatei, die von der Erfassung generiert wird, aber einige Stapel können möglicherweise nicht aufgelöst werden. Weitere Informationen finden Sie unter [CLR-ETW-Anbieter](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) .  
   
 ### <a name="sample-events"></a>Samplingereignisse  
  Sie können Samplingereignisse verwenden, um Aufruflisten zu erfassen, die der Threadausführung zugeordnet sind. Diese Ereignisse werden ungefähr einmal pro Millisekunde für Threads erfasst, die im aktuellen Prozess ausgeführt werden. Wenn Sie die Erfassung von Samplingereignissen deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber Sie können keine Aufruflisten anzeigen, die der Threadausführung zugeordnet sind.  
@@ -84,8 +84,8 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
   
 - Eine Parallelitätsschnellansicht-Ablaufverfolgungsdatei (*.CVTrace)  
   
-  Die zwei ETL-Dateien speichern die unformatierten Ablaufverfolgungsdaten, und die beiden Parallelitätsschnellansicht-Dateien speichern die verarbeiteten Daten.  Die unformatierten ETL-Dateien werden nach der Verarbeitung einer Ablaufverfolgung in der Regel nicht verwendet.  Wenn Sie das Kontrollkästchen **Ereignisablaufverfolgungs-Protokolldateien (Event Trace Log, ETL) nach der Analyse löschen** aktivieren, wird die Menge der Ablaufverfolgungsdaten verringert, die auf dem Datenträger gespeichert werden.  
+  Die zwei ETL-Dateien speichern die unformatierten Ablaufverfolgungsdaten, und die beiden Parallelitätsschnellansicht-Dateien speichern die verarbeiteten Daten.  Die unformatierten ETL-Dateien werden nach der Verarbeitung einer Ablaufverfolgung in der Regel nicht verwendet.  Durch Aktivieren des Kontrollkästchens **Ereignis Ablauf Verfolgungs Protokoll (ETL) nach der Analyse löschen** wird die Menge der Ablauf Verfolgungs Daten reduziert, die auf dem Datenträger gespeichert sind.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Nur eigenen Code](../profiling/just-my-code-threads-view.md)   
- [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md)
+ [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)
