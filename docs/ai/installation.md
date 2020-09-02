@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800202"
 ---
 # <a name="installation"></a>Installation
@@ -34,7 +34,7 @@ Sie können die Tools aus [Visual Studio Marketplace](https://marketplace.visual
 2. Wählen Sie im Dialogfeld **Erweiterungen und Updates** auf der linken Seite **Online** aus.
 3. Geben Sie im Suchfeld oben rechts "tools for ai" ein.
 4. Wählen Sie **Visual Studio Tools for AI** aus den Ergebnissen aus.
-5. Wählen Sie **Herunterladen** aus.
+5. Klicken Sie auf **Herunterladen**.
 
 ## <a name="prepare-your-local-machine"></a>Vorbereiten Ihres lokalen Computers
 Bevor Sie Deep Learning-Modelle auf Ihrem lokalen Computer einrichten, stellen Sie sicher, dass die zutreffenden Anforderungen installiert sind. Prüfen Sie dabei auch, ob Sie die neusten Treiber und Bibliotheken für Ihre NVIDIA-GPU (falls vorhanden) installiert haben. Stellen Sie außerdem sicher, dass Python und Python-Bibliotheken wie NumPy und SciPy sowie passende Deep Learning-Frameworks, die Sie für das Projekt verwenden möchten, wie Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch und Chainer installiert sind.

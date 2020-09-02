@@ -1,5 +1,5 @@
 ---
-title: Veralteter Code Warndialogfeld | Microsoft-Dokumentation
+title: 'Dialogfeld „Warnung: Veralteter Code“ | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,20 +22,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a89738446bf8c08680835ddccb7efa30c2f740f5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65694697"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Warnung: Veralteter Code (Dialogfeld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieses Dialogfeld wird angezeigt, wenn Sie Änderungen an nativem Code vorgenommen haben, die von der **Bearbeiten und Fortfahren**-Funktion nicht sofort übernommen werden konnten. Dadurch ist ein Teil des nativen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen finden Sie unter [Vorgehensweise: Arbeiten mit veraltetem Code](https://msdn.microsoft.com/c7536e95-66a6-44a0-995d-3fe5035250b4).  
+Dieses Dialogfeld wird angezeigt, wenn Sie Änderungen an nativem Code vorgenommen haben, die von der **Bearbeiten und Fortfahren**-Funktion nicht sofort übernommen werden konnten. Dadurch ist ein Teil des nativen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen finden Sie unter Gewusst [wie: Arbeiten mit veraltetem Code](https://msdn.microsoft.com/c7536e95-66a6-44a0-995d-3fe5035250b4).  
   
  **Dieses Dialogfeld nicht mehr anzeigen**  
  Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von "Bearbeiten und Fortfahren" übernommen. Sie können diese Warnung erneut aktivieren, indem Sie im Dialogfeld **Optionen** den Ordner **Debuggen** öffnen, auf die Seite **Bearbeiten und Fortfahren** klicken und die Option **Warnung bei veraltetem Code** auswählen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Unterstützte Code Änderungen (C++)](../debugger/supported-code-changes-cpp.md)   
  [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

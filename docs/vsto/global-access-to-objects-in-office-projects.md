@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
-ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88041050"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globaler Zugriff auf Objekte in Office-Projekten
@@ -75,7 +75,7 @@ ms.locfileid: "88041050"
 > [!NOTE]
 > Die `Globals` -Klasse wird zur Entwurfszeit nie initialisiert, vom Designer werden jedoch Steuerelementinstanzen erstellt. Dies bedeutet Folgendes: Wenn Sie ein Benutzer Steuerelement erstellen, das eine Eigenschaft der `Globals` Klasse innerhalb einer Benutzer Steuerelement Klasse verwendet, müssen Sie überprüfen, ob die-Eigenschaft **null** zurückgibt, bevor Sie versuchen, das zurückgegebene-Objekt zu verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Zugreifen auf einen Formular Bereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

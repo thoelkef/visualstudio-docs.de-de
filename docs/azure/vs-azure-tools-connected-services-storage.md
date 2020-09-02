@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
 ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800514"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure-Speicher mithilfe von verbundenen Visual Studio-Diensten
@@ -120,5 +120,5 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Azure Storage-Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Dokumentation zu Azure Storage](/azure/storage/)
+- [Azure Storage-Dokumentation](/azure/storage/)
 - [Verbundene Dienste (Visual Studio für Mac)](/visualstudio/mac/connected-services)

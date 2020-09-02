@@ -18,14 +18,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848300c54800e229ee1f487fc415bad45d982a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656828"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Entwickeln von Anwendungen mit dem Workflow-Designer
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] ist ein visueller Designer und Debugger zum grafischen Aufbau und Debugging von  [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen im [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], das in der [!INCLUDE[vs2010](../includes/vs2010-md.md)] Entwicklungsumgebung gehostet wird. Er ermöglicht es Ihnen, durch die Verwendung von Vorlagen und Aktivitätsdesignern eine zusammengesetzte Workflowanwendung, eine Aktivitätsbibliothek oder einen [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienst zu erstellen. [!INCLUDE[crabout](../includes/crabout-md.md)] Workflows finden Sie unter [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] ist ein visueller Designer und Debugger zum grafischen Aufbau und Debugging von  [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen im [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], das in der [!INCLUDE[vs2010](../includes/vs2010-md.md)] Entwicklungsumgebung gehostet wird. Er ermöglicht es Ihnen, durch die Verwendung von Vorlagen und Aktivitätsdesignern eine zusammengesetzte Workflowanwendung, eine Aktivitätsbibliothek oder einen [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienst zu erstellen. [!INCLUDE[crabout](../includes/crabout-md.md)] zu Workflows finden Sie in der [Windows Workflow Foundation &#91; .NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
 
  Im Folgenden werden einige neue Entwurfsfunktionen aufgeführt, durch die sich diese neue Version von [!INCLUDE[wfd2](../includes/wfd2-md.md)] von früheren Versionen von [!INCLUDE[wfd2](../includes/wfd2-md.md)] unterscheidet:
 
@@ -43,7 +43,7 @@ ms.locfileid: "72656828"
 
 - Erneutes Hosting von [!INCLUDE[wfd2](../includes/wfd2-md.md)] außerhalb [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist gegenüber früheren Versionen viel einfacher und erfordert jetzt nur einige Codezeile.
 
-- Mithilfe der neuen <xref:System.Activities.Statements.Flowchart>-Aktivität und des zugehörigen [Fluss Diagramms](../workflow-designer/flowchart-activity-designer.md) können Sie den Programmablauf mit dem vertrauten Flussdiagramm Modellierungs Stil visualisieren.
+- Mithilfe der neuen <xref:System.Activities.Statements.Flowchart> -Aktivität und des zugehörigen [Fluss Diagramms](../workflow-designer/flowchart-activity-designer.md) können Sie den Programmablauf mit dem vertrauten Flussdiagramm Modellierungs Stil visualisieren.
 
 - Die Messagingaktivitäten wurden verbessert, sodass Sie vollständig-deklarative (kein Code) [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienste schreiben können.
 
@@ -56,10 +56,10 @@ ms.locfileid: "72656828"
 
  [Debuggen von Workflows mit dem Workflow-Designer](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) Beschreibt, wie herkömmliche Debugprozeduren durchgeführt werden und wie XAML und Ausdrücke debuggt werden.
 
- [Workflow-Designer UI-Hilfe](../workflow-designer/workflow-designer-ui-help.md) Enthält kontextbezogene Hilfe Themen für Dialogfelder, die von [!INCLUDE[wfd1](../includes/wfd1-md.md)] bereitgestellt werden, sowie Anleitungen zu Designer-Shellfeatures, Tastenkombinationen und Fehlermeldungen.
+ [Workflow-Designer UI-Hilfe](../workflow-designer/workflow-designer-ui-help.md) Enthält kontextbezogene Hilfe Themen für Dialogfelder, die von bereitgestellt werden [!INCLUDE[wfd1](../includes/wfd1-md.md)] , sowie Anleitungen zu Designer-Shellfeatures, Tastenkombinationen und Fehlermeldungen.
 
- [Entwickeln von Workflow Anwendungen, die auf .NET 3,0 oder .NET 3,5 Framework abzielen](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) Enthält Anleitungen zur Verwendung des Legacy-Designers, der auf die [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder die [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.
+ [Entwickeln von Workflow Anwendungen, die auf .NET 3,0 oder .NET 3,5 Framework abzielen](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) Enthält Anleitungen zur Verwendung des Legacy-Designers, der auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder abzielt [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- [Designer-neuhosting &#91;von&#93; WF-Beispielen](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) In diesem Beispiel wird gezeigt, wie das WPF-Layout erstellt wird, um den Designer zu enthalten.
+ [Designer Rehosting &#91;WF-Beispiele&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) In diesem Beispiel wird gezeigt, wie das WPF-Layout erstellt wird, um den Designer zu enthalten.
 
  [Benutzerdefinierte Aktivitäts Designer](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075) Dieser Abschnitt enthält Aktivitäts Beispiele, in denen benutzerdefinierte Designer zur Anzeige im Workflow-Designer verwendet werden.

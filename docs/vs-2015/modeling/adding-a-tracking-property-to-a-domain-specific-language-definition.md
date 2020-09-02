@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545573"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
@@ -59,7 +59,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt
 
-1. Erstellen Sie ein Domänen spezifisches sprach-Designer-Projekt. Nenne es `TrackingPropertyDSL`.
+1. Erstellen Sie ein Domänen spezifisches sprach-Designer-Projekt. Vergeben Sie den Namen `TrackingPropertyDSL`.
 
 2. Legen Sie im **Assistenten für domänenspezifische sprach-Designer**die folgenden Optionen fest:
 

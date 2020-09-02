@@ -15,32 +15,32 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982317"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Verwenden von Windows Forms-Steuerelementen in Excel-Arbeitsblättern
-  Sie können Windows Forms-Steuerelementen zu Ihren Microsoft Office Excel-Arbeitsmappen auf die gleiche Weise hinzufügen, Windows Forms Steuerelemente hinzuzufügen. Allgemeine Informationen zum Arbeiten mit Steuerelementen in Dokumenten finden Sie unter [Windows Forms-Steuerelemente in Office-Dokumente – Übersicht](../vsto/windows-forms-controls-on-office-documents-overview.md).
+  Sie können Microsoft Office Excel-Arbeitsmappen Windows Forms-Steuerelemente auf die gleiche Weise hinzufügen wie Steuerelemente, die Sie Windows Forms hinzufügen. Allgemeine Informationen zum Arbeiten mit Steuerelementen in Dokumenten finden Sie unter Windows Forms-Steuer [Elemente in der Übersicht über Office-Dokumente](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="control-considerations-for-excel"></a>Steuerelement-Überlegungen für Excel
+## <a name="control-considerations-for-excel"></a>Überlegungen zu Steuerelementen für Excel
  Es gibt einige Überlegungen, die für Excel spezifisch sind.
 
-### <a name="match-control-size-to-cell-size"></a>Anpassen der Größe des Steuerelements Größe der Zelle
- Sie können ein Steuerelement so konfigurieren, dass dessen Größe automatisch bei Änderung der Größe der übergeordneten Zelle geändert wird. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen](../vsto/how-to-resize-controls-within-worksheet-cells.md).
+### <a name="match-control-size-to-cell-size"></a>Abgleichen der Steuerelement Größe mit der Zellgröße
+ Sie können ein Steuerelement so konfigurieren, dass dessen Größe automatisch bei Änderung der Größe der übergeordneten Zelle geändert wird. Weitere Informationen finden Sie unter Gewusst [wie: Ändern der Größe von Steuerelementen innerhalb von Arbeitsblatt Zellen](../vsto/how-to-resize-controls-within-worksheet-cells.md).
 
-### <a name="add-components-that-are-shared-by-all-worksheets"></a>Hinzufügen von Komponenten, die von allen Arbeitsblättern gemeinsam genutzt werden
+### <a name="add-components-that-are-shared-by-all-worksheets"></a>Komponenten hinzufügen, die von allen Arbeitsblättern gemeinsam genutzt werden
  Sie können Komponenten, die auf allen Arbeitsblättern nutzbar sein sollen (etwa ein <xref:System.Data.DataSet>), dem Arbeitsmappen-Designer hinzufügen, statt sie den Arbeitsblättern hinzuzufügen. Die Komponente wird auf der Komponentenleiste angezeigt.
 
-### <a name="formula-for-embedding-controls"></a>Formel für ein Einbetten der Steuerelemente
+### <a name="formula-for-embedding-controls"></a>Formel zum Einbetten von Steuerelementen
  Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen](../vsto/how-to-resize-controls-within-worksheet-cells.md)
-- [Vorgehensweise: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Exemplarische Vorgehensweise: Ändern der arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
-- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
-- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Optionsfeldern](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Gewusst wie: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Exemplarische Vorgehensweise: Ändern der Arbeitsblatt Formatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Arbeitsblatt mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
+- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Options Feldern](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)

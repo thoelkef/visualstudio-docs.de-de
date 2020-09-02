@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffc1c620136c55c42f3468129ed164075d762bff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670509"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
@@ -37,13 +37,13 @@ Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informat
 
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Ändern der Informationsmenge im Buildprotokoll
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. **Wählen Sie**in der Menüleiste Extras, **Optionen**aus.
 
 2. Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen**.
 
 3. Wählen Sie einen der folgenden Werte aus der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** aus, und klicken Sie dann auf die Schaltfläche **OK**.
 
-    |Ausführlichkeitsgrad|BESCHREIBUNG|
+    |Ausführlichkeitsgrad|Beschreibung|
     |---------------------|-----------------|
     |Quiet|Zeigt ausschließlich eine Zusammenfassung des Builds an.|
     |Minimal|Zeigt eine Zusammenfassung des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden.|
@@ -51,10 +51,10 @@ Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informat
     |Detailliert|Zeigt eine Zusammenfassung des Builds, alle Schritte des Builds sowie Fehler, Warnungen und Meldungen an, die als äußerst wichtig eingestuft werden. Außerdem werden Meldungen von normaler Wichtigkeit angezeigt.|
     |Diagnose|Zeigt alle Daten an, die für den Build verfügbar sind. Sie können diese Detailebene für das Debuggen von Fehlern bei benutzerdefinierten Buildskripts und anderen Buildfehlern verwenden.|
 
-     Weitere Informationen finden Sie unter [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) und <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+     Weitere Informationen finden Sie unter [Optionen (Dialog Feld), Projekte und Projektmappen, erstellen und ausführen](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) und <xref:Microsoft.Build.Framework.LoggerVerbosity> .
 
     > [!IMPORTANT]
-    > Sie müssen das Projekt neu erstellen, damit Ihre Änderungen im Fenster **Ausgabe** (alle Projekte) und in der Datei „*Projektname*.txt“ (nur C++-Projekte) wirksam werden.
+    > Sie müssen das Projekt neu erstellen, damit Ihre Änderungen im **Ausgabe** Fenster (alle Projekte) und in der Datei " *ProjectName*. txt" (nur C++-Projekte) wirksam werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Abrufen von [buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) erstellen [und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Kompilieren und erstellen](../ide/compiling-and-building-in-visual-studio.md)

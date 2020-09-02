@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca6207d22d82e607fa589f944230b36b46e633c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670359"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param &gt; (JavaScript)
@@ -52,7 +52,7 @@ Gibt Dokumentationsinformationen für einen Parameter in einer Funktion oder Met
 
   `domElement` ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob der dokumentierte Parameter ein DOM-Element ist. Legen Sie es auf `true` fest, um anzugeben, dass der Parameter ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn das `type`-Attribut nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt IntelliSense den dokumentierten Parameter bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.
 
-  `mayBeNull` ist optional. Gibt an, ob der dokumentierte Parameter auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Parameter auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
+  `mayBeNull` ist optional. Gibt an, ob der dokumentierte Parameter auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Parameter auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Standardwert: `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
 
   `elementType` ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.
 
@@ -60,22 +60,22 @@ Gibt Dokumentationsinformationen für einen Parameter in einer Funktion oder Met
 
   `elementDomElement` ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.
 
-  `elementMayBeNull` ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
+  `elementMayBeNull` ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Standardwert: `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
 
-  `locid` ist optional. Der Bezeichner für Lokalisierungsinformationen über den Parameter. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im Element [\<loc>](../ide/loc-javascript.md) angegeben wird.
+  `locid` ist optional. Der Bezeichner für Lokalisierungsinformationen über den Parameter. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im-Element angegeben ist [\<loc>](../ide/loc-javascript.md) .
 
   `parameterArray` ist optional. Gibt an, ob der dokumentierte Parameter im Funktionsaufruf wiederholt werden kann, ähnlich der Wiederholung von Parametern, die in der `String.format`-Funktion unterstützt werden. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Parameter wiederholt werden kann; andernfalls ist es auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.
 
   `optional` ist optional. Gibt an, ob der dokumentierte Parameter in der aufrufenden Funktion optional ist. Legen Sie das Attribut auf `true` fest, um anzugeben, dass der Parameter optional ist; andernfalls ist es auf `false` festzulegen.
 
-  `value` ist optional. Gibt den Code an, der anstelle des Funktionscodes für die Verwendung mit IntelliSense ausgewertet werden soll. Sie können dieses Attribut zur Bereitstellung von Typinformationen verwenden, wenn der Parametertyp nicht definiert ist. Beispielsweise können Sie `value=’1’` verwenden, um den Parametertyp als Zahl zu behandeln.
+  `value` ist optional. Gibt den Code an, der anstelle des Funktionscodes für die Verwendung mit IntelliSense ausgewertet werden soll. Sie können dieses Attribut zur Bereitstellung von Typinformationen verwenden, wenn der Parametertyp nicht definiert ist. Beispielsweise können Sie verwenden, `value=’1’` um den Parametertyp als Zahl zu behandeln.
 
-  `description` ist optional. Eine Beschreibung des Parameters.
+  `description` ist optional. Eine Beschreibung des Parameters
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Das einzig erforderliche Attribut ist das `name`-Attribut. Alle anderen Attribute sind optional.
 
- Elemente, die verwendet werden, um Funktionen mit Anmerkungen zu versehen, wie z. b. [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md)und [\<returns >](../ide/returns-javascript.md), müssen vor allen Anweisungen in den Funktions Rumpf eingefügt werden.
+ Elemente, die verwendet werden, um Funktionen mit Anmerkungen zu versehen, wie z [\<summary>](../ide/summary-javascript.md) [\<param>](../ide/param-javascript.md) . b., und [\<returns>](../ide/returns-javascript.md) , müssen vor allen Anweisungen im Funktions Rumpf abgelegt werden.
 
  Wenn es mehrere `<param>`-Elemente gibt, die denselben Namen aufweisen, wird eines der `<param>`-Elemente verwendet, und die redundanten Elemente werden ignoriert. Das Verhalten, das bestimmt, welches Element verwendet wird, ist nicht definiert. Wenn `name` auf einen nicht vorhandenen Parameter verweist, wird das Element ignoriert.
 
@@ -107,5 +107,5 @@ function calculate(a) {
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)

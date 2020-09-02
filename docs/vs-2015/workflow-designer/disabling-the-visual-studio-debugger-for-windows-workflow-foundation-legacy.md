@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eddd72d648e7349f51096a21131f38c2e370a277
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656786"
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Deaktivieren des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)
 In diesem Thema wird das Deaktivieren des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debuggers mithilfe der Konfigurationsdatei beim Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
- Standardmäßig ist der [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]-Debugger für [!INCLUDE[wf](../includes/wf-md.md)] für einen Hostprozess aktiviert. Um das Debuggen von Workflows zu deaktivieren, müssen Sie es explizit ausschalten, indem Sie den Eintrag "disableworkflowdebugging" **\<switches >** Element im Abschnitt **\<system. Diagnostics >** der Host Konfigurationsdatei hinzufügen.
+ Standardmäßig ist der [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]-Debugger für [!INCLUDE[wf](../includes/wf-md.md)] für einen Hostprozess aktiviert. Um das Debuggen von Workflows zu deaktivieren, müssen Sie es explizit ausschalten, indem Sie **\<switches>** im- **\<system.diagnostics>** Abschnitt der Host Konfigurationsdatei ein "disableworkflowdebugging"-Element hinzufügen.
 
  Im folgenden Beispiel wird gezeigt, wie die Hostkonfigurationsdatei geändert wird, um Workflowdebuggen zu deaktivieren.
 
@@ -38,5 +38,5 @@ In diesem Thema wird das Deaktivieren des [!INCLUDE[vsprvs](../includes/vsprvs-m
 </configuration>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Legacy)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [Debuggen von Legacy Workflows](../workflow-designer/debugging-legacy-workflows.md)

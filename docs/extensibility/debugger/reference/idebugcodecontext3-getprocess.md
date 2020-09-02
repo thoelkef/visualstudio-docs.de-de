@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext3::GetProcess | Microsoft Docs
+title: 'IDebugCodeContext3:: GetProcess | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734174"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
-Ruft einen Verweis auf die Schnittstelle des Debugprozesses ab.
+Ruft einen Verweis auf die-Schnittstelle des Debugprozesses ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,13 +39,13 @@ public int GetProcess(
 
 ## <a name="parameters"></a>Parameter
 `ppProcess`\
-[out] Verweis auf die Debugprozessschnittstelle.
+vorgenommen Verweis auf die debugprozessschnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugCodeContext-Objekt** implementiert wird, das die [IDebugBeforeSymbolSearchEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugcodecontext** -Objekt implementiert wird, das die [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)

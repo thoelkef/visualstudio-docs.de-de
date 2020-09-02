@@ -12,70 +12,70 @@ ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: jillfra
 ms.openlocfilehash: f3140b527673f87b1d7c552e99584232494aed7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979994"
 ---
 # <a name="vspackage-state"></a>VSPackage-Status
-Viele Faktoren ermitteln, welche persistenten Werte oder Zustand, der eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendung.  
+Viele Faktoren bestimmen den Satz von beibehaltenen Werten oder den Status einer- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendung.  
   
-- Projekte verfügen über Projekt-und Konfiguration.  
+- Projekte verfügen über Projekt-und Konfigurations Eigenschaften.  
   
-- Lösungen verfügen über Eigenschaften.  
+- Projektmappen verfügen über Eigenschaften.  
   
-- Einstellungen des Benutzers bestimmen die Größe und Position von Dokumentfenstern, Toolfenster, Andockstatus und Tastenkombinationen in Visual Studio.  
+- Benutzereinstellungen bestimmen die Größe und Position von Dokument Fenstern, Tool Fenstern, Andock Zustand und Tastenkombinationen.  
   
-- Anwendungen können Optionen haben die Benutzer festlegen.  
+- Anwendungen können von einem Benutzer festgelegt werden.  
   
-- Objekte, die eine Anwendung erstellt haben ihre eigenen Eigenschaften.  
+- Objekte, die von einer Anwendung erstellt werden, können eigene Eigenschaften haben.  
   
-  Hier sind einige der Möglichkeiten, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendungszustand verwaltet werden kann:  
+  Im folgenden finden Sie einige Möglichkeiten, wie ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendungs Zustand verwaltet werden kann:  
   
-- Über die Eigenschaftenseiten Projekt- und Projektmappendateien.  
+- Über die Eigenschaften Seiten Projekt und Projekt Mappe.  
   
-- Über die **-Import / Export-Assistenten-Einstellungen**, wodurch einen Benutzer Einstellungen von einem Computer auf einen anderen zu verschieben.  
+- Mithilfe des **Assistenten zum Importieren und Exportieren von Einstellungen**können Benutzereinstellungen von einem Computer auf einen anderen verschieben.  
   
-- Durch die **Optionen** Dialogfeld, das Optionen, die im Zusammenhang mit Anwendungen enthält.  
+- Über das Dialogfeld **Optionen** , das Optionen im Zusammenhang mit Anwendungen enthält.  
   
-- Durch die **Eigenschaften** Fenster, in dem Eigenschaften von Objekten verfügbar macht.  
+- Über das **Eigenschaften** Fenster, das Eigenschaften von Objekten verfügbar macht.  
   
-- Durch die Automatisierung. Eine Anwendung kann es sich um VSPackage und Objekteigenschaften zugreifen, die für die Benutzeroberflächenautomatisierung verfügbar gemacht wurden.  
+- Durch Automatisierung. Eine Anwendung kann auf VSPackage und Objekteigenschaften zugreifen, die für die Automatisierung verfügbar gemacht wurden.  
   
-  Zugrunde liegende Zustand der Anwendung sind verschiedene Persistenz-Mechanismen, mit die Zustand der Anwendung gespeichert und wiederhergestellt werden können.  
+  Zugrunde liegende Anwendungs Status sind verschiedene Dauerhaftigkeits Mechanismen, mit denen der Anwendungs Zustand gespeichert und wieder hergestellt werden kann.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Unterstützung von Statuspersistenz](../misc/support-for-state-persistence.md)  
  Enthält allgemeine Strategien zum Speichern, Wiederherstellen und Zurücksetzen des Zustands eines VSPackage.  
   
  [Optionen und Optionsseiten](../extensibility/internals/options-and-options-pages.md)  
- Führt allgemeine und benutzerdefinierte Seiten für Optionen und erläutert, wie Sie diese Modelle installieren.  
+ Führt allgemeine und benutzerdefinierte Options Seiten ein und erläutert, wie diese implementiert werden.  
   
  [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md)  
- Erstellen Sie zwei Optionen-Seiten, eine einfache Seite und einer benutzerdefinierten Seite erläutert.  
+ Erläutert das Erstellen von zwei Options Seiten, einer einfachen Seite und einer benutzerdefinierten Seite.  
   
  [Unterstützung für Einstellungskategorien](../misc/support-for-settings-categories.md)  
- Erläutert, benutzereinstellungen und wie sie erstellt und persistent gespeichert werden.  
+ Erläutert Benutzereinstellungen und wie diese erstellt und persistent gespeichert werden.  
   
  [Erstellen einer Einstellungskategorie](../extensibility/creating-a-settings-category.md)  
- Erläutert das Erstellen einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Einstellungskategorie und zum Speichern von Werten, und Werte aus einer Datei wiederherstellen.  
+ Erläutert, wie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Einstellungs Kategorie erstellt und verwendet wird, um Werte in einer Einstellungsdatei zu speichern und Werte wiederherzustellen.  
   
  [Erweitern von Eigenschaften und des Eigenschaftenfensters](../extensibility/extending-properties-and-the-property-window.md)  
- Erläutert das Anzeigen und ändern Sie den Wert eines Objekts in der **Eigenschaften** Fenster.  
+ Erläutert, wie der Wert eines Objekts im **Eigenschaften** Fenster angezeigt und geändert wird.  
   
  [Verfügbarmachen von Eigenschaften im Eigenschaftenfenster](../extensibility/exposing-properties-to-the-properties-window.md)  
- Erläutert, wie die öffentlichen Eigenschaften eines Objekts verfügbar zu machen die **Eigenschaften** Fenster.  
+ Erläutert, wie die öffentlichen Eigenschaften eines Objekts im **Eigenschaften** Fenster verfügbar gemacht werden.  
   
  [Unterstützung für Projekt- und Konfigurationseigenschaften](../extensibility/internals/support-for-project-and-configuration-properties.md)  
- Erläutert das Anzeigen und Ändern von Projekt-und Konfiguration.  
+ Erläutert das Anzeigen und Ändern von Projekt-und Konfigurations Eigenschaften.  
   
  [Abrufen von Projekteigenschaften](../extensibility/getting-project-properties.md)  
- Führt Sie durch die Schritte zum Erstellen eines verwalteten VSPackages, die Projekteigenschaften in einem Toolfenster anzeigt.  
+ Führt Sie durch die Schritte zum Erstellen eines verwalteten VSPackages, das Projekteigenschaften in einem Tool Fenster anzeigt.  
   
  [Verwenden des Einstellungsspeichers](../extensibility/using-the-settings-store.md)  
- Erläutert, die Einstellungen für Store-persistenzmechanismus und seiner Verwendung.  
+ Erläutert den Beibehaltungs Mechanismus für den Einstellungs Speicher und seine Verwendung.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [VSPackages](../extensibility/internals/vspackages.md)  
- Stellt eine allgemeine Orientierung zu Themen, die erläutern, wie zum Erstellen und Verwenden von VSPackages bereit.
+ Bietet eine allgemeine Orientierung zu Themen, in denen das Erstellen und Verwenden von VSPackages erläutert wird.

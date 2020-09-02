@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortName | Microsoft-Dokumentation
+title: 'IDebugPort2:: getportname | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25952355f77acb30587b7aab9820dfc1bed36507
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202900"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Namen des Ports.  
+Ruft den Portnamen ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int GetPortName( 
   
 #### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Gibt den Namen des Ports.  
+ vorgenommen Gibt den Namen des Ports zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
