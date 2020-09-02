@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 675373ae1728bbca2cc7a89fdaa8014e6286d8b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159326"
 ---
-# <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
+# <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt einen Verweis an.  
+Beschreibt einen-Verweis.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,43 +51,43 @@ public struct DEBUG_REFERENCE_INFO { 
 ```  
   
 ## <a name="members"></a>Member  
- dwFields  
- Eine Kombination von Flags aus der [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) Enumeration, der angibt, welche Felder ausgefüllt sind.  
+ dwfields  
+ Eine Kombination von Flags aus der [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) Enumeration, die angibt, welche Felder ausgefüllt werden.  
   
  bstrName  
- Die vom Benutzer angegebener Name des der [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt.  
+ Der vom Benutzer angegebene Name des [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Objekts.  
   
- bstrType  
+ bstrintype  
  Der Verweistyp als formatierte Zeichenfolge.  
   
- bstrValue  
- Der Verweiswert als formatierte Zeichenfolge  
+ bstrauvalue  
+ Der Verweis Wert als formatierte Zeichenfolge.  
   
- dwAttrib  
- Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Enumeration, die die Flags für die Attribute der Debug-Eigenschaft angibt.  
+ dwattenb  
+ Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Enumeration, die die Flags für die Debug-Eigenschafts Attribute angibt.  
   
- dwRefType  
+ dwreftype  
  Ein Wert aus der [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) -Enumeration, der angibt, ob der Verweistyp stark oder schwach ist.  
   
  m_pReference  
- Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das die Verweisinformationen angibt.  
+ Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Objekt, das die Verweis Informationen angibt.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird auf den Aufruf zum Übergeben der [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) Methode gefüllt werden soll. Diese Struktur wird auch zurückgegeben, als Teil einer Liste von der [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) -Schnittstelle, die wiederum von einem Aufruf zurückgegeben wird das [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird an einen auffüllenden Befehl der [getreferenceinfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) -Methode übergeben. Diese Struktur wird auch als Teil einer Liste von der [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) -Schnittstelle zurückgegeben, die wiederum von einem aufzurufenden [enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) -Methode zurückgegeben wird.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
  [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)   
- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
+ [Getreferenceingefo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)   
+ [Enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

@@ -1,5 +1,5 @@
 ---
-title: Unterstützung mehrerer Versionen von Visual Studio | Microsoft Docs
+title: Unterstützung mehrerer Versionen von Visual Studio | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,36 +12,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699475"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Unterstützen mehrerer Versionen von Visual Studio
-Der Begriff *side-by-side* bedeutet, dass Sie mehrere Versionen eines Produkts auf demselben Computer installieren und verwalten können. Für VSPackages bedeutet dies, dass ein Benutzer mehrere Visual Studio-Versionen auf demselben Computer installiert haben kann. Es können Sie jedoch keine nebeneinander stehenden Versionen Ihrer VSPackages in eine einzelne Version von Visual Studio laden.
+Der Begriff *nebeneinander* bedeutet, dass Sie mehrere Versionen eines Produkts auf demselben Computer installieren und verwalten können. Für VSPackages bedeutet dies, dass ein Benutzer mehrere Visual Studio-Versionen auf demselben Computer installiert haben kann. Es ist jedoch nicht möglich, parallele Versionen ihrer VSPackages in eine einzelne Version von Visual Studio zu laden.
 
- Bevor Sie Ihr VSPackage in side-by-side-Versionen von Visual Studio laden können, sollten Sie Folgendes beachten:
+ Bevor Sie das VSPackage in parallele Versionen von Visual Studio laden können, berücksichtigen Sie Folgendes:
 
-- Sie müssen festlegen, welche Side-by-Side-Implementierungsstrategie Sie verfolgen möchten.
+- Sie müssen bestimmen, welche parallele Implementierungsstrategie Sie befolgen möchten.
 
-   Weitere Informationen finden Sie unter [Auswählen zwischen freigegebenen und versionierten VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
+   Weitere Informationen finden Sie unter [auswählen zwischen freigegebenen und versionierten VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
-- Ihre Projektmappen- und Projektdateiformate müssen zu Ihrer Implementierungsstrategie passen.
+- Ihre Projektmappen-und Projektdatei Formate müssen ihrer Implementierungsstrategie entsprechen.
 
-   Weitere Informationen finden Sie unter [Aktualisieren benutzerdefinierter Projekte](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) und [Registrieren von Dateinamenerweiterungen für Side-By-Side-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
+   Weitere Informationen finden Sie unter [Aktualisieren von benutzerdefinierten Projekten](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) und [Registrieren von Dateinamen Erweiterungen für](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)parallele bereit Stellungen.
 
-- Ihr Installationsprogramm muss Ihre Implementierungsstrategie behandeln, damit versionierte Komponenten sowie Komponenten, die für alle Versionen freigegeben sind, ordnungsgemäß installiert und registriert werden.
+- Das Installationsprogramm muss Ihre Implementierungsstrategie verarbeiten, damit versionierte Komponenten und auch Komponenten, die von allen Versionen gemeinsam genutzt werden, ordnungsgemäß installiert und registriert werden.
 
-   Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) und auch [Komponentenverwaltung](../extensibility/internals/component-management.md).
+   Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) und auch der [Komponenten Verwaltung](../extensibility/internals/component-management.md).
 
   > [!NOTE]
-  > Durch die Installation einer Version von Visual Studio wird auch eine entsprechende Version von .NET Framework installiert. Wenn Sie beispielsweise Visual Studio 2010 und Visual Studio 2012 auf demselben Computer installieren, werden auch die Versionen 4.0 bzw. 4.5 von .NET Framework installiert.
+  > Bei der Installation einer Version von Visual Studio wird auch eine entsprechende Version der .NET Framework installiert. Wenn Sie z. b. Visual Studio 2010 und Visual Studio 2012 auf demselben Computer installieren, werden auch die Versionen 4,0 und 4,5 der .NET Framework installiert.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Auswählen zwischen freigegebenen und versionierten VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md) Erläutert, wie Sie Nebeneinander auftretende Probleme in Ihrem VSPackage beheben können.
+- [Auswählen zwischen freigegebenen und versionierten VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md) Erläutert, wie parallele Probleme in Ihrem VSPackage gelöst werden.
 
-- [Registrieren von Dateinamenerweiterungen für Side-By-Side-Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) Beschreibt, wie Ihr VSPackage Dateizuordnungen in einem nebeneinander-szenario registrieren kann.
+- [Registrieren von Dateinamen Erweiterungen für](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) parallele bereit Stellungen Beschreibt, wie das VSPackage Dateizuordnungen in einem parallelen Szenario registrieren kann.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Installieren von VSPackages mit Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)

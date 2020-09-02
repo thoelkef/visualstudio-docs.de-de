@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893345"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installieren von FxCop-Analyzern in Visual Studio
@@ -32,7 +32,7 @@ In Visual Studio 2019 Version 16,3 und höher können Sie das nuget-Paket [Micro
 
    ![Paket "FxCop-Analysen" über die Seite "Eigenschaften" in Visual Studio installieren](media/install-fxcop-properties-page.png)
 
-2. Klicken Sie auf **Installieren**.
+2. Wählen Sie **Installieren** aus.
 
    Visual Studio installiert die neueste Version des Pakets Microsoft. Code Analysis. fxcopanalyzers. Die Assemblys werden in **Projektmappen-Explorer** unter **Verweise**-  >  **Analyzers**angezeigt.
 
@@ -121,7 +121,7 @@ Die [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?it
 
 ::: moniker-end
 
-4. Wählen Sie **Herunterladen** aus.
+4. Klicken Sie auf **Herunterladen**.
 
    Die Erweiterung wird heruntergeladen.
 
@@ -153,7 +153,7 @@ Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, klicken Sie 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Code Analysen in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Verwenden von Codeanalysetools in Visual Studio](../code-quality/use-roslyn-analyzers.md)

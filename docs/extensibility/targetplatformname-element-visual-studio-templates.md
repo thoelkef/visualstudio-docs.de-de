@@ -1,5 +1,5 @@
 ---
-title: TargetPlatformName-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Targetplatformname-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699269"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName-Element (Visual Studio-Vorlagen)
@@ -31,7 +31,7 @@ Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wi
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -41,7 +41,7 @@ Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wi
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
@@ -65,5 +65,5 @@ Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wi
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
+- [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

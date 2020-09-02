@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b67ccf926267e3475a43d7f09bf3ccb361dc8484
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159299"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt an, welche Informationen Sie über ein Feld für die Disassembly abzurufen.  
+Gibt an, welche Informationen über ein disassemblyfeld abgerufen werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -65,60 +65,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS { 
   
 ## <a name="members"></a>Member  
  DSF_ADDRESS  
- Initialisieren und Verwenden der `bstrAddress` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrAddress` .  
   
  DSF_ADDRESSOFFSET  
- Initialisieren und Verwenden der `bstrAddressOffset` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrAddressOffset` .  
   
  DSF_CODEBYTES  
- Initialisieren und Verwenden der `bstrCodeBytes` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrCodeBytes` .  
   
  DSF_OPCODE  
- Initialisieren und Verwenden der `bstrOpCode` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrOpCode` .  
   
  DSF_OPERANDS  
- Initialisieren und Verwenden der `bstrOperands` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrOperands` .  
   
  DSF_SYMBOL  
- Initialisieren und Verwenden der `bstrSymbol` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrSymbol` .  
   
  DSF_CODELOCATIONID  
- Initialisieren und Verwenden der `uCodeLocationId` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `uCodeLocationId` .  
   
  DSF_POSITION  
- Initialisieren und Verwenden der `posBeg` und `posEnd` Felder.  
+ Initialisieren/verwenden Sie `posBeg` die `posEnd` Felder und.  
   
  DSF_DOCUMENTURL  
- Initialisieren und Verwenden der `bstrDocumentUrl` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `bstrDocumentUrl` .  
   
  DSF_BYTEOFFSET  
- Initialisieren und Verwenden der `dwByteOffset` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `dwByteOffset` .  
   
  DSF_FLAGS  
- Initialisieren und Verwenden der `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) Feld.  
+ Initialisieren/verwenden Sie das `dwFlags` Feld ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).  
   
  DSF_OPERANDS_SYMBOLS  
- Symbolnamen in umfassen die `bstrOperands` Feld.  
+ Schließt Symbolnamen in das `bstrOperands` Feld ein.  
   
  DSF_ALL  
- Gibt alle Felder für den Disassembly-Stream an.  
+ Gibt alle Felder für den disassemblydatenstrom an.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Parameter an die [lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) Methode, um die Felder anzugeben der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) sind, dass die Struktur initialisiert werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird als Parameter an die [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) -Methode übergeben, um anzugeben, welche Felder der [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Struktur initialisiert werden sollen.  
   
- Verwendet für die `dwFields` Mitglied der `DisassemblyData` Struktur, um anzugeben, welche Felder sind gültig und verwendet, wenn die Struktur zurückgegeben wird.  
+ Wird für den- `dwFields` Member der `DisassemblyData` -Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind, wenn die-Struktur zurückgegeben wird.  
   
- Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
+ Diese Werte können mit einem bitweisen kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
+ [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md)   
+ [Dazu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
  [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

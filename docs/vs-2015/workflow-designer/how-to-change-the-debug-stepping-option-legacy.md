@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663435"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Vorgehensweise: Ändern der Option zum schrittweisen Debuggen (Vorgängerversion)
@@ -29,17 +29,17 @@ In diesem Thema wird beschrieben, wie die Option zum schrittweisen Debuggen für
 
  Führen Sie die nachstehenden Schritte aus, um die Option zum schrittweisen Debuggen in Ihrem Legacyworkflowprojekt zu ändern.
 
-## <a name="procedures"></a>Verfahren
+## <a name="procedures"></a>Prozeduren
 
 #### <a name="to-change-the-debug-stepping-option"></a>So ändern Sie die Option zum schrittweisen Debuggen
 
-1. Starten Sie Visual Studio.
+1. Starten Sie Visual Studio.
 
 2. Öffnen Sie ein vorhandenes Legacyworkflowprojekt, oder erstellen Sie ein neues Projekt, das gleichzeitige Aktivitäten verwendet und auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.
 
-3. Zeigen Sie im Menü **Workflow** in der Legacy-[!INCLUDE[wfd2](../includes/wfd2-md.md)] auf **Debuggen**, und zeigen Sie dann auf Schritt-für- **Schritt-Optionen**.
+3. Zeigen Sie im Menü **Workflow** in der Vorgängerversion auf [!INCLUDE[wfd2](../includes/wfd2-md.md)] **Debuggen**, und zeigen Sie dann auf Schritt-für- **Schritt-Optionen**.
 
 4. Wählen Sie entweder **Instanz** oder **Branch**aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Debuggen von Legacy Workflows](../workflow-designer/debugging-legacy-workflows.md) [Debug-Schritt Optionen (Legacy)](../workflow-designer/debug-stepping-options-legacy.md)

@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5707ef277892c37cab16f78ac11113194a95e190
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663500"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
@@ -64,9 +64,9 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 
  Diese Option verwendet das Tool AI.exe, das von [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] bereitgestellt wurde, um die Assembly zu signieren. Weitere Informationen zu diesem Tool erhalten Sie im Artikel [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
 
- Mit der Liste **Schlüsseldatei mit starkem Namen auswählen** können Sie eine neue oder vorhandene Schlüsseldatei mit starkem Namen angeben, die zum Signieren der Assembly verwendet wird. Wählen Sie **\<Browse...>** aus, um eine vorhandene Schlüsseldatei auszuwählen.
+ Mit der Liste **Schlüsseldatei mit starkem Namen auswählen** können Sie eine neue oder vorhandene Schlüsseldatei mit starkem Namen angeben, die zum Signieren der Assembly verwendet wird. Klicken Sie auf **\<Browse...>** , um eine vorhandene Schlüsseldatei auszuwählen.
 
- Wählen Sie **\<New...>** aus, um eine neue Schlüsseldatei zu erstellen, mit der Sie die Assembly signieren können. Das Dialogfeld **Schlüssel für einen starken Namen erstellen** wird geöffnet, in dem Sie einen Namen für die Schlüsseldatei angeben und die Schlüsseldatei durch ein Kennwort schützen können. Das Kennwort muss mindestens eine Länge von 6 Zeichen aufweisen. Wenn Sie ein Kennwort angeben, wird eine Personal Information Exchange-Datei (.pfx) erstellt; wenn Sie kein Kennwort angeben, wird eine Schlüsseldatei mit starkem Namen (.snk) erstellt.
+ Klicken Sie auf **\<New...>** , um eine neue Schlüsseldatei zu erstellen, mit der die Assembly signiert werden soll. Das Dialogfeld **Schlüssel für einen starken Namen erstellen** wird geöffnet, in dem Sie einen Namen für die Schlüsseldatei angeben und die Schlüsseldatei durch ein Kennwort schützen können. Das Kennwort muss mindestens eine Länge von 6 Zeichen aufweisen. Wenn Sie ein Kennwort angeben, wird eine Personal Information Exchange-Datei (.pfx) erstellt; wenn Sie kein Kennwort angeben, wird eine Schlüsseldatei mit starkem Namen (.snk) erstellt.
 
  Schaltfläche " **Kennwort ändern** " ändert das Kennwort für die Schlüsseldatei für den persönlichen Informationsaustausch (. pfx), die zum Signieren der Assembly verwendet wird.
 
@@ -79,5 +79,5 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 > [!NOTE]
 > Beim Signieren einer Assembly haben Sie möglicherweise nicht immer Zugriff auf einen privaten Schlüssel. Eine Organisation kann z.B. ein streng geheim gehaltenes Schlüsselpaar verwenden, auf das Entwickler nicht täglich zugreifen können. Möglicherweise steht der öffentliche Schlüssel zur Verfügung, während der Zugriff auf den privaten Schlüssel nur einigen Wenigen erlaubt ist. In einem solchen Fall können Sie die *verzögerte* oder *Teilsignierung* verwenden, um den öffentlichen Schlüssel bereitzustellen. Dadurch wird das Hinzufügen des privaten Schlüssels solange verzögert, bis die Assembly übergeben wird.
 
-## <a name="see-also"></a>Siehe auch
- [Projekteigenschaften Referenz](../../ide/reference/project-properties-reference.md) zum Verwalten von Assemblys [und Manifesten Signieren](../../ide/managing-assembly-and-manifest-signing.md) [von starken Namen signieren für verwaltete Anwendungen](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [How: Anwendungs-und Bereitstellungs Manifeste ](../../ide/how-to-sign-application-and-deployment-manifests.md) [How signieren: Signieren Sie eine Assembly (Visual Studio) ](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [How an: Signieren einer Assembly mit einem starken Namen ](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) Assemblys mit [starkem](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) Namen
+## <a name="see-also"></a>Weitere Informationen
+ [Projekteigenschaften Referenz](../../ide/reference/project-properties-reference.md) zum Verwalten von Assemblys [und Manifesten Signieren](../../ide/managing-assembly-and-manifest-signing.md) [von starken Namen signieren für verwaltete Anwendungen Gewusst](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [wie: Signieren von Anwendungs-und Bereitstellungs Manifesten](../../ide/how-to-sign-application-and-deployment-manifests.md) Gewusst [wie: Signieren einer Assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) Gewusst [wie: Signieren einer Assembly mit](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [starkem](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) Namen Assemblys

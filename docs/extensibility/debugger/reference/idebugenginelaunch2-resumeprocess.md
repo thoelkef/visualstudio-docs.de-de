@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::ResumeProcess | Microsoft Docs
+title: 'IDebugEngineLaunch2:: resumeprocess | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 12db549cf52df7ad17eea8a3af85255c9ffbfab4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730522"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
-Setzt die Prozessausführung fort.
+Nimmt die Prozess Ausführung wieder auf.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int ResumeProcess ( 
 
 ## <a name="parameters"></a>Parameter
 `pProcess`\
-[in] Ein [IDebugProcess2-Objekt,](../../../extensibility/debugger/reference/idebugprocess2.md) das den Prozess darstellt, der fortgesetzt werden soll.
+in Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den fort zusetzenden Prozess darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird aufgerufen, nachdem ein Prozess mit einem Aufruf der [LaunchSuspended-Methode](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) gestartet wurde.
+ Diese Methode wird aufgerufen, nachdem ein Prozess mit einem Aufruf der [launchangeh](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) -Methode gestartet wurde.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

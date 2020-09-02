@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft-Dokumentation
+title: 'IDebugBreakpointChecksumRequest2:: GetCheckSum | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bff00b5cbe0d59d3c7515d0a384746cd9303097c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158829"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Dokument-Prüfsumme für eine Haltepunkt-Anforderung den eindeutigen Bezeichner des Prüfsummenalgorithmus ab.  
+Ruft die Prüfsumme des Dokuments für eine Haltepunkt Anforderung ab, wenn der eindeutige Bezeichner des zu verwendenden Prüfsummen Algorithmus angegeben wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ public int GetChecksum(
   
 #### <a name="parameters"></a>Parameter  
  `guidAlgorithm`  
- [in] Eindeutiger Bezeichner des Prüfsummenalgorithmus.  
+ in Eindeutiger Bezeichner des Prüfsummen Algorithmus.  
   
  `pChecksumData`  
- [out] Dokument-Prüfsumme für die Haltepunkt-Anforderung.  
+ vorgenommen Die Prüfsumme des Dokuments für die Haltepunkt Anforderung.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme der ein Dokument, das zu bindenden ist, über die Benutzeroberfläche übereinstimmt.  
+ Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme eines Dokuments, das gebunden werden soll, mit einem Wert aus der Benutzeroberfläche übereinstimmt.  
   
 ```cpp#  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
@@ -103,5 +103,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

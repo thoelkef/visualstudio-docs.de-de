@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ec07e71e57c0b3875d690773b7ff2618269b8f4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250000"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
@@ -94,7 +94,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll wird für die Installation von Anwendungen nicht unterstützt
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] unterstützt die Installation von Anwendungen von einem beliebigen HTTP 1,1-Webserver oder-Dateiserver. FTP, die Dateiübertragungsprotokoll, wird für die Installation von Anwendungen nicht unterstützt. Sie können FTP nur zum Veröffentlichen von Anwendungen verwenden. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:
 
-| URL-Typ | Beschreibung |
+| URL-Typ | BESCHREIBUNG |
 |----------| - |
 | ftp:// | Sie können eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mithilfe dieses Protokolls veröffentlichen. |
 | http:// | Sie können eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mithilfe dieses Protokolls installieren. |

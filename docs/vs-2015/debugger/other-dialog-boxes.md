@@ -13,30 +13,30 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0178b9f79daa8ddec51d468cb22f3104c26b7f41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198159"
 ---
 # <a name="other-dialog-boxes"></a>Weitere Dialogfelder
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Dialogfelder werden Informationen über die Spy++-Anwendung anzeigen.  
+Diese Dialogfelder dienen zum Anzeigen von Informationen zum Spy++-Programm.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Informationen zu Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
- Informationen zum Besitzer des Spy++-Programms.  
+ [Info](../debugger/about-microsoft-spy-increment.md)  
+ Informationen zum Besitz des Spy + +-Programms.  
   
  [Copyrightinformationen zur Spy++-Hilfe](../debugger/copyright-notice-for-spy-increment-help.md)  
  Rechtlicher Hinweis zum Urheberrecht.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.  
+ Enthält Abschnitte, in denen jedes Spy + +-Menü und Dialogfeld beschrieben werden.  
   
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
+ Stellt das Spy + +-Tool vor und erläutert, wie es verwendet werden kann.  
   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+ Erläutert die Spy + +-Struktur Ansichten von Fenstern, Meldungen, Prozessen und Threads.

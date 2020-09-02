@@ -18,42 +18,42 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951180"
 ---
 # <a name="custom-document-properties-overview"></a>Übersicht über benutzerdefinierte Dokumenteigenschaften
 
-Wenn Sie ein Projekt auf Dokumentebene erstellen, fügt Visual Studio zwei benutzerdefinierte Eigenschaften auf das Dokument im Projekt: \_AssemblyLocation und \_AssemblyName. Wenn ein Benutzer ein Dokument öffnet, überprüft Microsoft Office-Anwendung für diese benutzerdefinierte Dokumenteigenschaften. Wenn sie im Dokument vorhanden sind, um die Anwendung lädt die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], die die Anpassung startet. Weitere Informationen finden Sie unter [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Wenn Sie ein Projekt auf Dokument Ebene erstellen, fügt Visual Studio dem Dokument im Projekt zwei benutzerdefinierte Eigenschaften hinzu: \_ assemblylocation und \_ AssemblyName. Wenn ein Benutzer ein Dokument öffnet, überprüft die Microsoft Office-Anwendung, ob diese benutzerdefinierten Dokumenteigenschaften angezeigt werden. Wenn Sie im Dokument vorhanden sind, lädt die Anwendung die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , die die Anpassung startet. Weitere Informationen finden Sie unter [Architektur von Office](../vsto/architecture-of-office-solutions-in-visual-studio.md)-Projektmappen in Visual Studio.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_AssemblyName
+## <a name="_assemblyname"></a>\_AssemblyName
 
-Diese Eigenschaft enthält die CLSID einer Schnittstelle in der Office-Lösung Loader-Komponente von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Der CLSID-Wert ist 4-491E-A7D4-64AF99AF6E8B-4E3C66D5 - 58D. Sie sollten diesen Wert nicht ändern.
+Diese Eigenschaft enthält die CLSID einer Schnittstelle in der Office-projektmappenladeerkomponente von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Der CLSID-Wert ist 4E3C66D5-58d4-491e-A7D4-64AF99AF6E8B. Sie sollten diesen Wert niemals ändern.
 
-## <a name="assemblylocation"></a>\_AssemblyLocation
+## <a name="_assemblylocation"></a>\_AssemblyLocation
 
-Diese Eigenschaft enthält eine Zeichenfolge, die Details zum Bereitstellungsmanifest für die Anpassung enthält. Weitere Informationen zu Manifesten finden Sie unter [Anwendungs- und Bereitstellungsmanifeste in Office-Projektmappen](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Diese Eigenschaft enthält eine Zeichenfolge, die Details zum Bereitstellungs Manifest für die Anpassung bereitstellt. Weitere Informationen zu Manifesten finden Sie unter [Anwendungs-und Bereitstellungs Manifeste in Office-](../vsto/application-and-deployment-manifests-in-office-solutions.md)Projektmappen.
 
- Die \_AssemblyLocation-Eigenschaftswert verfügen kann verschiedene Formate, je nachdem, wie die Lösung bereitgestellt wird:
+ Der \_ assemblylocation-Eigenschafts Wert kann abhängig von der Bereitstellung der Lösung unterschiedliche Formate aufweisen:
 
-- Wenn die Projektmappe veröffentlicht wird, um von einer Website, UNC-Pfad oder ein CD oder USB-Laufwerk installiert werden, hat die _AssemblyLocation-Eigenschaft das Format *DeploymentManifestPath*|*SolutionID*. Die folgende Zeichenfolge ist ein Beispiel:
+- Wenn die Lösung für die Installation von einer Website, einem UNC-Pfad oder einer CD oder einem USB-Laufwerk veröffentlicht wird, hat die _AssemblyLocation-Eigenschaft das Format *DeploymentManifestPath* | *SolutionId*. Die folgende Zeichenfolge ist ein Beispiel:
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- Wenn Sie ausführen oder Debuggen der Projektmappe in Visual Studio, hat die _AssemblyLocation-Eigenschaft das Format *DeploymentManifestName*|*SolutionID*| Vstolocal. Die folgende Zeichenfolge ist ein Beispiel:
+- Wenn Sie die Projekt Mappe in Visual Studio ausführen oder Debuggen, hat die _AssemblyLocation-Eigenschaft das Format *DeploymentManifestName* | *SolutionId*| vstolocal. Die folgende Zeichenfolge ist ein Beispiel:
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     "ExcelWorkbook1. VSTO | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
-  Die *SolutionID* ist eine GUID, die die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zum Identifizieren der Lösung verwendet. Die *SolutionID* wird automatisch generiert, wenn Sie das Projekt erstellen. Die **Vstolocal** -Begriff gibt an, um die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , dass die Assembly aus dem gleichen Ordner wie das Dokument geladen werden soll.
+  Die *SolutionId* ist eine GUID, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] von zum Identifizieren der Lösung verwendet wird. Die *SolutionId* wird automatisch generiert, wenn Sie das Projekt erstellen. Der **vstolocal** -Begriff gibt an, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dass die Assembly aus demselben Ordner wie das Dokument geladen werden soll.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-- [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md)
-- [Anwendungs- und Bereitstellungsmanifeste in Office-Projektmappen](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Vorgehensweise: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)
+- [Anwendungs-und Bereitstellungs Manifeste in Office-Lösungen](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Gewusst wie: Veröffentlichen einer Office-Projekt Mappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Gewusst wie: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften](../vsto/how-to-create-and-modify-custom-document-properties.md)

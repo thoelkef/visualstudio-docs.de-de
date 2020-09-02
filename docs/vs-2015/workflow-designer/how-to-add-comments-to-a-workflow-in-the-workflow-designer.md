@@ -13,10 +13,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d775c79cc7abdf6a66b1174ae625ca468f0764fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663454"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Vorgehensweise: Hinzufügen von Kommentaren zu einem Workflow im Workflow-Designer
@@ -45,7 +45,7 @@ Um die Erstellung größerer, komplexerer Workflows zu erleichtern, bietet [!INC
 
 3. Für das Element wird ein Anmerkungssymbol angezeigt. Wenn Sie mit dem Mauszeiger auf das Anmerkungssymbol zeigen, wird der Text der Anmerkung angezeigt.
 
-     ![Sequenz Aktivität, die Anmerkung anzeigt](../workflow-designer/media/annotation.png "Anmerkung")
+     ![Sequenzaktivität mit Anmerkung](../workflow-designer/media/annotation.png "Anmerkung")
 
 ### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Anzeigen einer Anmerkung im Designer einer Aktivität
 
@@ -53,11 +53,11 @@ Um die Erstellung größerer, komplexerer Workflows zu erleichtern, bietet [!INC
 
 2. Die Anmerkung wird im Aktivitäts-Designer angezeigt. Im unten stehenden Screenshot wird eine Anmerkung für die Startaktivität im Workflow im Aktivitäts-Designer angezeigt.
 
-     ![Im Aktivitäts Designer angezeigte Anmerkung](../workflow-designer/media/annotationindesigner.png "Annotationindesigner")
+     ![Im Aktivitäts-Designer angezeigte Anmerkung](../workflow-designer/media/annotationindesigner.png "Annotationindesigner")
 
 3. Um die Anmerkung außerhalb des Aktivitäts Designers anzuzeigen, bewegen Sie den Mauszeiger über den Bereich Anmerkung im Aktivitäts Designer, und klicken Sie auf das Symbol zum **lösen** .
 
-     ![Anmerkung außerhalb eines Aktivitäts Bezeichners angezeigt.](../workflow-designer/media/annotationoutsidedesigner.png "Annotationoutsidedesigner")
+     ![Außerhalb eines Aktivitäts-Designers angezeigte Anmerkung](../workflow-designer/media/annotationoutsidedesigner.png "Annotationoutsidedesigner")
 
 ### <a name="showing-or-hiding-all-annotations"></a>Ein- oder Ausblenden aller Anmerkungen
 

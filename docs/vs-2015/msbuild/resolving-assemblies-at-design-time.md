@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159228"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Auflösen von Assemblys zur Entwurfszeit
@@ -39,5 +39,5 @@ Wenn Sie über die Registerkarte ".NET" des Dialogfelds "Verweis hinzufügen" ei
   
  Das Paket zur Festlegung von Zielversionen, das jetzt mit dem .NET Framework-SDK geliefert wird, enthält eine Liste (auch Neuverteilungsliste (redist) genannt) aller Laufzeitassemblys dieser Version des Frameworks. So können die Typen vom Buildsystem nicht mehr in die falsche Version der Assembly aufgelöst werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [MSBuild Advanced Concepts (Weiterführende MSBuild-Konzepte)](../msbuild/msbuild-advanced-concepts.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erweiterte Konzepte](../msbuild/msbuild-advanced-concepts.md)

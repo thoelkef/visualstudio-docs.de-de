@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985611"
 ---
 # <a name="ribbon-overview"></a>Übersicht über Menüband
@@ -35,7 +35,7 @@ ms.locfileid: "72985611"
 ## <a name="customize-the-microsoft-office-ribbon"></a>Anpassen des Microsoft Office Menübands
  Fügen Sie dem Office-Projekt eines der folgenden Menü Band Elemente hinzu, um das Menüband anzupassen:
 
-- **Menüband (visueller Designer)**
+- **Menüband (Visueller Designer)**
 
 - **Menüband (XML)**
 
@@ -103,7 +103,7 @@ ms.locfileid: "72985611"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Wählen Sie aus, welche Menü Bänder zur Laufzeit angezeigt werden.
  Da ein Projekt mehr als eine Multifunktionsleiste enthalten kann, können Sie auswählen, welches Menüband zur Laufzeit angezeigt werden soll.
 
- Wenn Sie ein Menüband zur Laufzeit auswählen möchten, überschreiben Sie die `CreateRibbonExtensibilityObject`-Methode in der Klasse `ThisAddin`, `ThisWorkbook`oder `ThisDocument` des Projekts, und geben Sie das Menüband zurück, das Sie anzeigen möchten. Im folgenden Beispiel wird der Wert eines Felds mit dem Namen `myCondition` überprüft und das entsprechende Menüband zurückgegeben.
+ Wenn Sie ein Menüband zur Laufzeit auswählen möchten, überschreiben Sie die `CreateRibbonExtensibilityObject` -Methode in der `ThisAddin` -,- `ThisWorkbook` oder `ThisDocument` -Klasse Ihres Projekts, und geben Sie das Menüband zurück, das Sie anzeigen möchten. Im folgenden Beispiel wird der Wert eines Felds mit dem Namen überprüft `myCondition` und das entsprechende Menüband zurückgegeben.
 
 > [!NOTE]
 > Die in diesem Beispiel verwendete Syntax gibt eine Multifunktionsleiste zurück, die mit dem Element **Menüband (visueller Designer)** erstellt wurde. Die Syntax zum Zurückgeben eines Menübands, das mit einem **Menüband (XML)** -Element erstellt wird, unterscheidet sich geringfügig. Weitere Informationen zum Zurückgeben eines Elements im **Menüband (XML)** finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md).
@@ -115,7 +115,7 @@ ms.locfileid: "72985611"
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Gewusst wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)|Zeigt, wie Sie das Menüband einer Microsoft Office-Anwendung anpassen und einem Office-Projekt ein **Menüband (visueller Designer)** oder ein **Menüband (XML)** -Element hinzufügen.|
 |[Menüband-Designer](../vsto/ribbon-designer.md)|Beschreibt, wie Sie mit dem Menüband-Designer dem Menüband einer Microsoft Office Anwendung benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzufügen können.|
@@ -130,5 +130,5 @@ ms.locfileid: "72985611"
 |[Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)|Veranschaulicht das Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf die **Datei**klicken.|
 |[Gewusst wie: Hinzufügen eines Dialogfeld-Start Programms zu einer Menü Bandgruppe](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Zeigt, wie einem Dialogfeld-Start Programm eine beliebige Gruppe auf einem Menüband hinzugefügt wird.|
 |[Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Zeigt, wie Sie das Menüband auf Erweiterte Weise anpassen, indem Sie das Menüband aus dem Designer in Menüband-XML exportieren.|
-|[Menüband-XML](../vsto/ribbon-xml.md)|Erläutert, wie Sie ein Menüband mithilfe von Menüband-XML anpassen können.|
+|[Ribbon XML](../vsto/ribbon-xml.md)|Erläutert, wie Sie ein Menüband mithilfe von Menüband-XML anpassen können.|
 |[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Veranschaulicht, wie eine benutzerdefinierte Registerkarte des Menübands mithilfe des Elements **Menüband (XML)** erstellt wird.|

@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419842"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>Beitragen zur Visual Studio-Dokumentation
@@ -14,7 +14,7 @@ In diesem Leitfaden werden einige allgemeine Themen zu Beiträgen behandelt. Aus
 
 ## <a name="code-of-conduct"></a>Verhaltensregeln
 
-Dieses Projekt hat die [Microsoft Open Source Code of Conduct (Microsoft Open Source-Verhaltensregeln)](https://opensource.microsoft.com/codeofconduct/) übernommen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zum Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/faq/) oder indem Sie sich mit weiteren Fragen und Kommentaren an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.
+Für dieses Projekt gelten die Microsoft-Verhaltensregeln für Open Source ([Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)). Weitere Informationen finden Sie unter [Häufig gestellte Fragen zum Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/faq/) oder indem Sie sich mit weiteren Fragen und Kommentaren an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.
 
 ## <a name="how-can-i-contribute"></a>Wie kann ich beitragen?
 

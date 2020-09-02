@@ -1,5 +1,5 @@
 ---
-title: Unterstützt CodeSeparation Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Supportscode Separation-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699501"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
-Gibt an, ob das Kontrollkästchen **Platzcode in separaten Dateien** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
+Gibt an, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
- \<VSTemplate \<> TemplateData> \<unterstütztCodeSeparation>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsCodeSeparation>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,31 +37,31 @@ Gibt an, ob das Kontrollkästchen **Platzcode in separaten Dateien** im Dialogfe
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie sie entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld **Neues Element** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss `true` `false`entweder oder sein, was angibt, ob das Kontrollkästchen **Platzcode in separaten Dateien** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
+ Der Text muss entweder `true` oder lauten `false` , was angibt, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
 ## <a name="remarks"></a>Bemerkungen
- `SupportsCodeSeparation` ist ein optionales Element. Der Standardwert ist `false`.
+ `SupportsCodeSeparation` ist ein optionales Element. Standardwert: `false`.
 
- Das `SupportsCodeSeparation` Element ist nur für Webelementvorlagen verfügbar.
+ Das- `SupportsCodeSeparation` Element ist nur für Webelement Vorlagen verfügbar.
 
- Die Codetrennung oder das CodeBehind-Seitenmodell ermöglicht es Ihnen, das Markup in einer Datei und den Programmiercode in einer anderen Datei zu speichern. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]und andere .NET-Sprachen verwenden dieses Modell.
+ Durch die Trennung von Code oder das Code Behind-Seiten Modell können Sie das Markup in einer Datei und den Programmiercode in einer anderen Datei speichern. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und andere .NET-Sprachen verwenden dieses Modell.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird angegeben, dass die Option **Platzcode in separater Datei** angezeigt wird.
+ Im folgenden Beispiel wird angegeben, dass die Option **Code in separaten Dateien platzieren** angezeigt werden soll.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -85,5 +86,5 @@ Gibt an, ob das Kontrollkästchen **Platzcode in separaten Dateien** im Dialogfe
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
