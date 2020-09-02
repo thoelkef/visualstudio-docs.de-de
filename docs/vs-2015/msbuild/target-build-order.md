@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144284"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
@@ -23,11 +23,11 @@ ms.locfileid: "68144284"
 
 Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Sie können diese Attribute verwenden, um die Reihenfolge anzugeben, in der Ziele ausgeführt werden:  
   
-- `InitialTargets` Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
+- `InitialTargets`. Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
   
-- `DefaultTargets` Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
+- `DefaultTargets`. Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
   
-- `DependsOnTargets` Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
+- `DependsOnTargets`. Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
   
 - `BeforeTargets` und `AfterTargets`. Diese `Target`-Attribute geben an, dass das Ziel vor oder nach den angegebenen Zielen ausgeführt werden soll (MSBuild 4.0).  
   
@@ -46,7 +46,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
   
  Importierte Projekte haben möglicherweise ihre eigenen `InitialTargets`-Attribute. Alle ursprünglichen Ziele werden zusammen aggregiert und gemäß Reihenfolge ausgeführt.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Geben Sie zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Standardziele  
  Das `DefaultTargets`-Attribut des [Projekt](../msbuild/project-element-msbuild.md)-Elements gibt das Ziel bzw. die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in einer Befehlszeile angegeben wird.  
@@ -65,7 +65,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
   
  Importierte Projekte haben möglicherweise ihre eigenen `DefaultTargets`-Attribute. Die erste `DefaultTargets`-Attribut bestimmt, welche Standardziele ausgeführt werden.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Geben Sie zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Erstes Ziel  
  Wenn keine ursprünglichen Ziele, Standardziele oder Befehlszeilenziele vorhanden sind, führt MSBuild das erste Ziel aus, das in der Projektdatei oder einer beliebigen importierten Projektdatei angetroffen wird.  
@@ -82,7 +82,7 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
 ## <a name="beforetargets-and-after-targets"></a>Vorher-Ziele und Nachher-Ziele  
  In MSBuild 4.0 können Sie die Reihenfolge der Ziele mithilfe der `BeforeTargets`- und `AfterTargets`-Attribute angeben.  
   
- Betrachten Sie folgendes Skript.  
+ Sehen Sie sich das folgende Skript an.  
   
 ```  
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -121,5 +121,5 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
   
 7. Nachdem ein Ziel ausgeführt oder übersprungen wurde, wird jedes beliebige Ziel ausgeführt, das es in einem `AfterTargets`-Attribut auflistet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Ziele](../msbuild/msbuild-targets.md)

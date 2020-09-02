@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197788"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
@@ -45,13 +45,13 @@ int GetDimensions(
  in Die Anzahl der abzurufenden Dimensionen.  
   
  `dwDimensions`  
- [in, out] Ein Array, das mit den Größen der einzelnen Dimensionen aufgefüllt wird. `dwCount`Gibt die maximale Größe des `dwDimensions` Arrays an.  
+ [in, out] Ein Array, das mit den Größen der einzelnen Dimensionen aufgefüllt wird. `dwCount` Gibt die maximale Größe des `dwDimensions` Arrays an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ein mehrdimensionales Array kann für jede Dimension über unterschiedliche Größen verfügen. Bei Angabe des dreidimensionalen Arrays `myarray[3][2][6]`würde diese Methode z. b. 3, 2 und 6 `dwDimensions` im-Parameter in dieser Reihenfolge zurückgeben.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein mehrdimensionales Array kann für jede Dimension über unterschiedliche Größen verfügen. Bei Angabe des dreidimensionalen Arrays `myarray[3][2][6]` würde diese Methode z. b. 3, 2 und 6 im- `dwDimensions` Parameter in dieser Reihenfolge zurückgeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

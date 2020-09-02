@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816123"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Die bedingte Kompilierung ist deaktiviert
@@ -39,6 +39,6 @@ Sie haben versucht, eine bedingte Kompilierungs Variable zu verwenden, ohne zuer
 ## <a name="see-also"></a>Weitere Informationen  
  [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onAn](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@ifAn](../../javascript/reference/at-if-statement-javascript.md)   
- [@setAn](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_on An](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if An](../../javascript/reference/at-if-statement-javascript.md)   
+ [@set An](../../javascript/reference/at-set-statement-javascript.md)

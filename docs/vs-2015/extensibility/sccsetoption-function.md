@@ -1,5 +1,5 @@
 ---
-title: SccSetOption-Funktion | Microsoft-Dokumentation
+title: Sccsetoption-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f2660ca99d8704f5dd8e7b9aa66c9c8fc5bdbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143750"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion legt die Optionen, die Steuerung des Verhaltens das Quellcodeverwaltungs-Plug-in.  
+Diese Funktion legt Optionen fest, mit denen das Verhalten des Quellcodeverwaltungs-Plug-ins gesteuert wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,57 +35,57 @@ SCCRTN SccSetOption(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
+ pvcontext  
+ in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.  
   
- nOption  
- [in] Die Option, die festgelegt wird.  
+ noption  
+ in Die Option, die festgelegt wird.  
   
- dwVal  
- [in] Einstellungen für die Option.  
+ dwval Datentyp  
+ in Einstellungen für die Option.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |SCC_OK|Die Option wurde erfolgreich festgelegt.|  
-|SCC_I_SHARESUBPROJOK|Zurückgegeben, wenn `nOption` wurde `SCC_OPT_SHARESUBPROJ` und das Quellcodeverwaltungs-Plug-in ermöglicht die IDE, um den Zielordner festzulegen.|  
-|SCC_E_OPNOTSUPPORTED|Die Option wurde nicht festgelegt und sollte nicht als zuverlässig betrachtet werden.|  
+|SCC_I_SHARESUBPROJOK|Wird zurückgegeben `nOption` , wenn was war `SCC_OPT_SHARESUBPROJ` , und das Quellcodeverwaltungs-Plug-in ermöglicht der IDE, den Zielordner festzulegen.|  
+|SCC_E_OPNOTSUPPORTED|Die Option wurde nicht festgelegt und sollte nicht verlassen werden.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Funktion zum Steuern des Verhaltens von das Quellcodeverwaltungs-Plug-in wird von die IDE aufgerufen. Der erste Parameter, `nOption`, gibt der Wert, der festgelegt wird, während der zweite `dwVal`, gibt an, was Sie mit diesem Wert. Das plug-in speichert diese Informationen, die zugeordnet eine `pvContext``,` daher die IDE nach dem Aufruf dieser Funktion aufrufen, muss die [SccInitialize](../extensibility/sccinitialize-function.md) (aber nicht unbedingt nach jedem Aufruf der [SccOpenProject](../extensibility/sccopenproject-function.md)).  
+## <a name="remarks"></a>Bemerkungen  
+ Die IDE ruft diese Funktion auf, um das Verhalten des Quellcodeverwaltungs-Plug-ins zu steuern. Der erste Parameter, `nOption` , gibt den Wert an, der festgelegt wird, während der zweite Parameter `dwVal` angibt, was mit diesem Wert zu tun ist. Das Plug-in speichert diese Informationen, die einem zugeordnet sind, `pvContext``,` damit die IDE diese Funktion nach dem Aufruf von [sccinitialize](../extensibility/sccinitialize-function.md) aufrufen muss (aber nicht unbedingt nach jedem Aufruf von [sccopenproject](../extensibility/sccopenproject-function.md)).  
   
- Zusammenfassung der Optionen und ihre Werte:  
+ Zusammenfassung der Optionen und ihrer Werte:  
   
 |`nOption`|`dwValue`|Beschreibung|  
 |---------------|---------------|-----------------|  
-|`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Aktiviert bzw. deaktiviert die Ereignis-queuing Hintergrundfarbe.|  
-|`SCC_OPT_USERDATA`|Beliebiger Wert|Gibt einen Wert übergeben werden soll die [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) Callback-Funktion.|  
-|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Gibt an, ob es sich bei die IDE unterstützt derzeit einen Vorgang abgebrochen wird.|  
-|`SCC_OPT_NAMECHANGEPFN`|Zeiger auf die [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) Callback-Funktion|Setzt einen Zeiger auf eine Namensänderung Rückruffunktion an.|  
-|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Gibt an, ob es sich bei die IDE ermöglicht die Überprüfung aus die Dateien manuell (über die Benutzeroberfläche quellcodeverwaltung), oder gibt an, ob sie nur über das Quellcodeverwaltungs-Plug-in müssen ausgecheckt sein, ein.|  
-|`SCC_OPT_SHARESUBPROJ`|N/V|Das Quellcodeverwaltungs-Plug-in der IDE an der lokale Projektordner zulässig, das plug-in wird zurückgegeben `SCC_I_SHARESUBPROJOK`.|  
+|`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Aktiviert/deaktiviert hintergrundereignisqueuing.|  
+|`SCC_OPT_USERDATA`|Beliebiger Wert|Gibt einen Benutzer Wert an, der an die [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) -Rückruffunktion übermittelt werden soll.|  
+|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Gibt an, ob die IDE derzeit das Abbrechen eines Vorgangs unterstützt.|  
+|`SCC_OPT_NAMECHANGEPFN`|Zeiger auf die [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) -Rückruffunktion|Legt einen Zeiger auf eine namens Änderungs Rückruffunktion fest.|  
+|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Gibt an, ob die IDE das Auschecken der Dateien (über die Benutzeroberfläche der Quell Code Verwaltung) oder das Auschecken der Dateien nur über das Quellcodeverwaltungs-Plug-in zulässt.|  
+|`SCC_OPT_SHARESUBPROJ`|Nicht zutreffend|Wenn das Quellcodeverwaltungs-Plug-in der IDE ermöglicht, den lokalen Projektordner anzugeben, gibt das Plug-in zurück `SCC_I_SHARESUBPROJOK` .|  
   
-## <a name="sccopteventqueue"></a>SCC_OPT_EVENTQUEUE  
- Wenn `nOption` ist `SCC_OPT_EVENTQUEUE`, die IDE ist deaktiviert (oder erneutes Aktivieren) Verarbeitung im Hintergrund. Während eine Kompilierung, die IDE z. B. das Quellcodeverwaltungs-Plug-In für im Leerlauf befindlichen Verarbeitung jegliche beenden angewiesen. Nach der Kompilierung würden sie Verarbeitung im Hintergrund, das Plug-in der Ereigniswarteschlange auf dem neuesten Stand zu halten erneut aktivieren. Für die `SCC_OPT_EVENTQUEUE` Wert `nOption`, es gibt zwei mögliche Werte für `dwVal`, und zwar `SCC_OPT_EQ_ENABLE` und `SCC_OPT_EQ_DISABLE`.  
+## <a name="scc_opt_eventqueue"></a>SCC_OPT_EVENTQUEUE  
+ Wenn `nOption` `SCC_OPT_EVENTQUEUE` den Wert hat, wird die Hintergrundverarbeitung durch die IDE deaktiviert (oder erneut aktiviert). Beispielsweise weist die IDE während einer Kompilierung möglicherweise das Quellcodeverwaltungs-Plug-in an, die Verarbeitung jeglicher Art zu verhindern. Nach der Kompilierung wird die Hintergrundverarbeitung erneut aktiviert, um die Ereignis Warteschlange des Plug-Ins auf dem neuesten Stand zu halten. Entsprechend dem `SCC_OPT_EVENTQUEUE` Wert von `nOption` gibt es zwei mögliche Werte für `dwVal` , nämlich `SCC_OPT_EQ_ENABLE` und `SCC_OPT_EQ_DISABLE` .  
   
-## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- Wenn der Wert für `nOption` ist `SCC_OPT_HASCANCELMODE`, die IDE ermöglicht Benutzern, lange Vorgänge abzubrechen. Festlegen von `dwVal` zu `SCC_OPT_HCM_NO` (Standard) gibt an, dass die IDE keine Modus "Abbrechen". Das Quellcodeverwaltungs-Plug-in muss eine eigene Schaltfläche "Abbrechen" anbieten, wenn den Benutzer kann abgebrochen werden sollen. `SCC_OPT_HCM_YES` Gibt an, dass die IDE die Möglichkeit bietet, einen Vorgang abbrechen, sodass SCC-Plug-in, nicht unbedingt einen eigenen Schaltfläche "Abbrechen" angezeigt. Wenn bei die IDE `dwVal` zu `SCC_OPT_HCM_YES`, wird es auf reagieren vorbereitet `SCC_MSG_STATUS` und `DOCANCEL` Nachrichten an die `lpTextOutProc` Callback-Funktion (finden Sie unter [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Wenn diese Variable in die IDE nicht festgelegt ist, sollten das plug-in nicht diese beiden Meldungen senden.  
+## <a name="scc_opt_hascancelmode"></a>SCC_OPT_HASCANCELMODE  
+ Wenn der Wert für `nOption` ist `SCC_OPT_HASCANCELMODE` , ermöglicht die IDE Benutzern das Abbrechen von langen Vorgängen. Durch Festlegen `dwVal` von auf `SCC_OPT_HCM_NO` (Standardeinstellung) wird angegeben, dass die IDE keinen Abbruch Modus aufweist. Das Quellcodeverwaltungs-Plug-in muss seine eigene Schaltfläche Abbrechen anbieten, wenn der Benutzer in der Lage sein soll, abzubrechen. `SCC_OPT_HCM_YES` Gibt an, dass die IDE die Möglichkeit bietet, einen Vorgang abzubrechen, sodass das SCC-Plug-in keine eigene Schaltfläche "Abbrechen" anzeigen muss. Wenn die IDE `dwVal` auf festlegt `SCC_OPT_HCM_YES` , ist Sie darauf vorbereitet, auf `SCC_MSG_STATUS` und nach `DOCANCEL` richten zu antworten, die an die `lpTextOutProc` Rückruffunktion gesendet werden (siehe [lptextoutproc](../extensibility/lptextoutproc.md)). Wenn die IDE diese Variable nicht festgelegt, sollte das Plug-in diese beiden Nachrichten nicht senden.  
   
-## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
- Wenn nOption, um festgelegt ist `SCC_OPT_NAMECHANGEPFN`, und sowohl die Quelle-Plug-in-Steuerelement und die IDE ermöglichen es, das plug-in kann tatsächlich umbenennen oder Verschieben einer Datei während der einen Quellcodeverwaltungsvorgang. Die `dwVal` in einen Funktionszeiger des Typs festgelegt [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Während einen Quellcodeverwaltungsvorgang können das plug-in übergebe drei Parameter dieser Funktion aufrufen. Hierbei handelt es sich um den alten Namen (mit den vollqualifizierten Pfad) einer Datei, die den neuen Namen (mit den vollqualifizierten Pfad), der die Datei, und einen Zeiger auf die Informationen, die Relevanz der IDE. Die IDE, die in dieser letzten Zeiger durch Aufrufen von sendet `SccSetOption` mit `nOption` festgelegt `SCC_OPT_USERDATA`, mit `dwVal` verweist auf die Daten. Unterstützung für diese Funktion ist optional. Schleichwerbung VSSCI-, verwendet diese Fähigkeit der Zeiger und die Benutzer Daten die Variablen zu initialisieren, muss `NULL`, und es darf keine Rename-Funktion aufrufen, es sei denn, es einer festgelegt wurde. Es sollte auch darauf vorbereitet sein, den Wert enthalten soll, es wurde angegeben, oder So ändern Sie es als Reaktion auf einen neuen Aufruf von `SccSetOption`. Dies erfolgt nicht in der Mitte einen Befehl Quellcodeverwaltungsvorgang, aber es kann vorkommen, zwischen den Befehlen.  
+## <a name="scc_opt_namechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
+ Wenn noption auf festgelegt ist `SCC_OPT_NAMECHANGEPFN` und das Quellcodeverwaltungs-Plug-in und die IDE dies zulassen, kann das Plug-in eine Datei in einem Quell Code Verwaltungsvorgang tatsächlich umbenennen oder verschieben. Der `dwVal` wird auf einen Funktionszeiger vom Typ [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)festgelegt. Während eines Quell Code Verwaltungs Vorgangs kann das Plug-in diese Funktion abrufen und dabei drei Parameter übergeben. Dabei handelt es sich um den alten Namen (mit dem voll qualifizierten Pfad) einer Datei, den neuen Namen (mit dem voll qualifizierten Pfad) dieser Datei und einen Zeiger auf Informationen, die für die IDE relevant sind. Die IDE sendet in diesem letzten Zeiger, indem `SccSetOption` aufgerufen `nOption` wird, wobei auf festgelegt `SCC_OPT_USERDATA` ist, wobei `dwVal` auf die Daten verwiesen wird. Die Unterstützung für diese Funktion ist optional. Ein vssci-Plug-in, das diese Funktion verwendet, muss seine Funktionszeiger-und Benutzerdaten Variablen in initialisieren `NULL` , und es darf keine Rename-Funktion aufgerufen werden, es sei denn, es wurde ein Element angegeben. Außerdem sollte Sie darauf vorbereitet sein, den Wert zu speichern, den Sie erhalten hat, oder Sie als Reaktion auf einen neuen-Befehl zu ändern `SccSetOption` . Dies tritt nicht in der Mitte eines Quell Code Verwaltungs Befehls Vorgangs auf, kann jedoch zwischen Befehlen auftreten.  
   
-## <a name="sccoptscccheckoutonly"></a>SCC_OPT_SCCCHECKOUTONLY  
- Wenn nOption, um festgelegt ist `SCC_OPT_SCCCHECKOUTONLY`, die IDE wird gibt an, dass die Dateien im aktuell geöffneten Projekt nie manuell über das Quellcodeverwaltungssystem Benutzeroberfläche ausgecheckt werden soll. Stattdessen sollten die Dateien nur über das Quellcodeverwaltungs-Plug-in unter Kontrolle der IDE ausgecheckt werden. Wenn `dwValue` nastaven NA hodnotu `SCC_OPT_SCO_NO`, dies bedeutet, dass die Dateien vom plug-in normalerweise behandelt werden soll, und über die Benutzeroberfläche der quellcodeverwaltung ausgecheckt werden können. Wenn `dwValue` nastaven NA hodnotu `SCC_OPT_SCO_YES`, klicken Sie dann nur das plug-in ist zulässig, checken Sie Dateien und das Quellcodeverwaltungssystem UI nicht aufgerufen werden soll. Dies ist für Situationen, in denen möglicherweise die IDE "Pseudo Files", die nur über die IDE sehen Sie sich sinnvoll.  
+## <a name="scc_opt_scccheckoutonly"></a>SCC_OPT_SCCCHECKOUTONLY  
+ Wenn noption auf festgelegt ist `SCC_OPT_SCCCHECKOUTONLY` , zeigt die IDE an, dass die Dateien im aktuell geöffneten Projekt nie manuell über die Benutzeroberfläche des Quell Code Verwaltungssystems ausgecheckt werden sollen. Stattdessen sollten die Dateien nur über das Quellcodeverwaltungs-Plug-in unter IDE-Steuerelement ausgecheckt werden. Wenn `dwValue` auf festgelegt ist `SCC_OPT_SCO_NO` , bedeutet dies, dass die Dateien vom Plug-in normal behandelt werden und über die Benutzeroberfläche der Quell Code Verwaltung ausgecheckt werden können. Wenn `dwValue` auf festgelegt ist `SCC_OPT_SCO_YES` , darf nur das Plug-in Dateien Auschecken, und die Benutzeroberfläche des Quell Code Verwaltungssystems sollte nicht aufgerufen werden. Dies gilt für Situationen, in denen die IDE möglicherweise "Pseudo Dateien" hat, die für das Auschecken nur über die IDE sinnvoll sind.  
   
-## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
- Wenn`nOption` nastaven NA hodnotu `SCC_OPT_SHARESUBPROJ`, die IDE testet, ob das Quellcodeverwaltungs-Plug-in einem angegebenen lokalen Ordner verwenden kann, wenn Sie Dateien aus der quellcodeverwaltung hinzufügen. Der Wert des der `dwVal` Parameter spielt keine Rolle in diesem Fall. Wenn das plug-in die IDE ermöglicht, um den lokalen Zielordner anzugeben, in dem die Dateien aus der Quelle hinzugefügt werden kann werden, steuern, wann die [SccAddFromScc](../extensibility/sccaddfromscc-function.md) aufgerufen wird, und klicken Sie dann das plug-in zurückgegeben werden muss `SCC_I_SHARESUBPROJOK` bei der `SccSetOption` -Funktion ist wird aufgerufen. Anschließend verwendet die IDE die `lplpFileNames` Parameter der `SccAddFromScc` Funktion, um den Zielordner zu übergeben. Das plug-in verwendet, Zielordner, die aus der quellcodeverwaltung hinzugefügten werden soll. Wenn das plug-in nicht zurückkehrt `SCC_I_SHARESUBPROJOK` bei der `SCC_OPT_SHARESUBPROJ` Option festgelegt ist, wird die IDE wird davon ausgegangen, dass die Plug-in-Dateien nur in der aktuellen lokalen Ordner hinzufügen kann.  
+## <a name="scc_opt_sharesubproj"></a>SCC_OPT_SHARESUBPROJ  
+ Wenn `nOption` auf festgelegt ist `SCC_OPT_SHARESUBPROJ` , testet die IDE, ob das Quellcodeverwaltungs-Plug-in beim Hinzufügen von Dateien aus der Quell Code Verwaltung einen angegebenen lokalen Ordner verwenden kann. Der Wert des- `dwVal` Parameters ist in diesem Fall nicht von Bedeutung. Wenn das Plug-in der IDE ermöglicht, den lokalen Zielordner anzugeben, in dem die Dateien aus der Quell Code Verwaltung hinzugefügt werden, wenn [sccaddfromscc](../extensibility/sccaddfromscc-function.md) aufgerufen wird, muss das Plug-in zurückgeben, `SCC_I_SHARESUBPROJOK` Wenn die `SccSetOption` Funktion aufgerufen wird. Die IDE verwendet dann den- `lplpFileNames` Parameter der- `SccAddFromScc` Funktion, um Sie an den Zielordner zu übergeben. Das Plug-in verwendet diesen Zielordner, um die aus der Quell Code Verwaltung hinzugefügten Dateien zu platzieren. Wenn das Plug-in nicht zurückgibt `SCC_I_SHARESUBPROJOK` , wenn die `SCC_OPT_SHARESUBPROJ` Option festgelegt ist, geht die IDE davon aus, dass das Plug-in nur Dateien im aktuellen lokalen Ordner hinzufügen kann.  
   
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
- [SccInitialize](../extensibility/sccinitialize-function.md)   
- [SccOpenProject](../extensibility/sccopenproject-function.md)   
- [SccAddFromScc](../extensibility/sccaddfromscc-function.md)   
- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)   
+ [Sccinitialize](../extensibility/sccinitialize-function.md)   
+ [Sccopumproject](../extensibility/sccopenproject-function.md)   
+ [Sccaddfromscc](../extensibility/sccaddfromscc-function.md)   
+ [Lptextoutproc](../extensibility/lptextoutproc.md)   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)
