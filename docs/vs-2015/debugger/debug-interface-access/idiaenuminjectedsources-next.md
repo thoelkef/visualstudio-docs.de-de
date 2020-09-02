@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Next | Microsoft-Dokumentation'
+title: 'Idiaenuminjetedsources:: Next | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d40ed9acf9e8c82fa315517c0abc3eb6f6d3b036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580508"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft eine angegebene Anzahl der eingefügten Quellen in der Enumerationsfolge ab.  
+Ruft eine angegebene Anzahl von injizierten Quellen in der enumerationssequenz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,17 +37,17 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parameter  
  celt  
- [in] Die Anzahl der eingefügten Quellen im Enumerator abgerufen werden sollen.  
+ in Die Anzahl der eingefügten Quellen im Enumerator, der abgerufen werden soll.  
   
  rgelt  
- [out] Gibt ein Array von [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) Objekte, die gewünschten eingefügten Quellen darstellt.  
+ vorgenommen Gibt ein Array von [idiainjetedsource](../../debugger/debug-interface-access/idiainjectedsource.md) -Objekten zurück, das die gewünschten injizierten Quellen darstellt.  
   
  pceltFetched  
- [out] Gibt die Anzahl der eingefügten Quellen in der abgerufenen Enumerator zurück.  
+ vorgenommen Gibt die Anzahl der injizierten Quellen im abgerufenen Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine weiteren eingefügte Quellen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn keine weiteren injizierten Quellen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

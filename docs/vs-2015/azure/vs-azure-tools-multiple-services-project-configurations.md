@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301458"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312742"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -41,13 +41,13 @@ Legt fest, welche `ServiceConfiguration.*.cscfg`-Datei von Änderungen betroffen
 
 Legen Sie die Eigenschaft **Instanzenanzahl** auf die Anzahl der Instanzen fest, die der Dienst für diese Rolle ausführen soll.
 
-Legen Sie die Eigenschaft **Größe des virtuellen Computers** auf **Sehr klein**, **Klein**, **Mittel**, **Groß** oder **Sehr groß** fest.  Weitere Informationen finden Sie unter [Größen für Cloud-Dienste](/azure/cloud-services/cloud-services-sizes-specs).
+Legen Sie die Eigenschaft **Größe des virtuellen Computers** auf **Sehr klein**, **Klein**, **Mittel**, **Groß** oder **Sehr groß** fest.  Weitere Informationen finden Sie unter [Größen für Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Startaktion (nur Webrolle)
 
 Legen Sie diese Eigenschaft fest, um anzugeben, dass bei Beginn des Debugvorgangs von Visual Studio ein Webbrowser für die HTTP-Endpunkte und/oder für die HTTPS-Endpunkte gestartet werden soll.
 
-Die **HTTPS-Endpunktoption** ist nur verfügbar, wenn Sie bereits einen HTTPS-Endpunkt für Ihre Rolle definiert haben. Sie können einen HTTPS-Endpunkt auf der Eigenschaftenseite **Endpunkte** definieren.
+Die Option " **https-Endpunkt** " ist nur verfügbar, wenn Sie bereits einen HTTPS-Endpunkt für ihre Rolle definiert haben. Sie können einen HTTPS-Endpunkt auf der Eigenschaftenseite **Endpunkte** definieren.
 
 Wenn Sie bereits einen HTTPS-Endpunkt hinzugefügt haben, ist die Option „HTTPS-Endpunkt“ standardmäßig aktiviert. Visual Studio startet nun beim Start des Debugvorgangs neben dem Browser für den HTTP-Endpunkt einen Browser für diesen Endpunkt, vorausgesetzt dass beide Startoptionen aktiviert sind.
 
@@ -55,7 +55,7 @@ Wenn Sie bereits einen HTTPS-Endpunkt hinzugefügt haben, ist die Option „HTTP
 
 Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche (**…**), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Seite "Einstellungen"
+## <a name="settings-page"></a>Einstellungsseite
 
 Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. In der Rolle ausgeführter Code kann die Werte der Konfigurationseinstellungen zur Laufzeit anhand von Klassen lesen, die von der [verwalteten Azure-Bibliothek](/previous-versions/azure/dn602775(v=azure.11)) bereitgestellt werden, insbesondere die Methode [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)).
 

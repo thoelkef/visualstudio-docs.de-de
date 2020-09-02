@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
+title: 'IDebugProgramProvider2:: watchforproviderevents | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721763"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Ermöglicht die Benachrichtigung des Prozesses über Portereignisse.
+Ermöglicht, dass der Prozess über Port Ereignisse benachrichtigt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,38 +51,38 @@ int WatchForProviderEvents(
 
 ## <a name="parameters"></a>Parameter
 `Flags`\
-[in] Eine Kombination von [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Flags aus der PROVIDER_FLAGS-Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
+in Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind für diesen-Befehl typisch:
 
-|Flag|BESCHREIBUNG|
+|Flag|Beschreibung|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|Der Anrufer wird auf dem Remotecomputer ausgeführt.|
-|`PFLAG_DEBUGGEE`|Der Aufrufer wird derzeit gedebuggt (zusätzliche Informationen zum Marshalling werden für jeden Knoten zurückgegeben).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Der Aufrufer wurde an den Debugger angefügt, aber nicht gestartet.|
-|`PFLAG_REASON_WATCH`|Anrufer möchte auf Ereignisse achten. Wenn dieses Flag nicht gesetzt ist. wird dann das Rückrufereignis entfernt, und der Aufrufer erhält keine Benachrichtigungen mehr.|
+|`PFLAG_REMOTE_PORT`|Der Aufrufer wird auf dem Remote Computer ausgeführt.|
+|`PFLAG_DEBUGGEE`|Der Aufrufer wird zurzeit gedebuggt (für jeden Knoten werden zusätzliche Informationen zu Marshalling zurückgegeben).|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Der Aufrufer wurde angefügt, aber nicht vom Debugger gestartet.|
+|`PFLAG_REASON_WATCH`|Der Aufrufer möchte Ereignisse überwachen. , Wenn dieses Flag nicht festgelegt ist. Anschließend wird das Rückruf Ereignis entfernt, und der Aufrufer empfängt keine Benachrichtigungen mehr.|
 
 `pPort`\
-[in] Der Port, auf dem der Aufrufenprozess ausgeführt wird.
+in Der Port, auf dem der Aufrufprozess ausgeführt wird.
 
 `processId`\
-[in] Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der ID des Prozesses, der das betreffende Programm enthält.
+in Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die die ID des Prozesses mit dem fraglichen Programm enthält.
 
 `EngineFilter`\
-[in] Ein Array von GUIDs von Debugmodulen, die dem Prozess zugeordnet sind.
+in Ein Array von GUIDs von Debug-engines, die dem Prozess zugeordnet sind.
 
 `guidLaunchingEngine`\
-[in] GUID des Debugmoduls, das diesen Prozess gestartet hat (falls vorhanden).
+in GUID der Debug-Engine, die diesen Prozess gestartet hat (sofern vorhanden).
 
 `pEventCallback`\
-[in] Ein [IDebugPortNotify2-Objekt,](../../../extensibility/debugger/reference/idebugportnotify2.md) das die Ereignisbenachrichtigungen empfängt.
+in Ein [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) -Objekt, das die Ereignis Benachrichtigungen empfängt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn ein Aufrufer einen Ereignishandler entfernen möchte, der mit einem vorherigen Aufruf dieser Methode eingerichtet wurde, übergibt `PFLAG_REASON_WATCH` der Aufrufer dieselben Parameter wie beim ersten Mal, lässt jedoch das Flag aus.
+ Wenn ein Aufrufer einen Ereignishandler entfernen möchte, der mit einem vorherigen Aufruf dieser Methode erstellt wurde, übergibt der Aufrufer dieselben Parameter wie beim ersten Mal, verlässt jedoch das `PFLAG_REASON_WATCH` Flag.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugEngine-Objekt** implementiert wird, das die [IDebugProgramProvider2-Schnittstelle](../../../extensibility/debugger/reference/idebugprogramprovider2.md) verfügbar macht.
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugengine** -Objekt implementiert wird, das die [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145373"
 ---
 # <a name="utilization-view"></a>Auslastungsansicht
@@ -51,6 +51,6 @@ In der **Auslastungsansicht** werden Informationen zur CPU, zur GPU sowie zu and
 ## <a name="zooming"></a>Zoomen  
  Wählen Sie zum Vergrößern der Ansicht des CPU-Auslastungsdiagramms oder des GPU-Aktivitätsdiagramms einen Abschnitt aus oder verwenden Sie den Zoomschieberegler über dem Diagramm. Die Zoomeinstellung bleibt erhalten, wenn Sie zu anderen Ansichten wechseln. Wenn Sie die Ansicht wieder verkleinern möchten, verwenden Sie den Zoomschieberegler. Alternativ können Sie auch Zoomen, indem Sie die STRG-TASTE drücken und Scrollen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Concurrency Visualizer (Nebenläufigkeitsschnellansicht)](../profiling/concurrency-visualizer.md)   
- [Cores View (Kernansicht)](../profiling/cores-view.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Parallelitäts Schnellansicht](../profiling/concurrency-visualizer.md)   
+ [Kernansicht](../profiling/cores-view.md)

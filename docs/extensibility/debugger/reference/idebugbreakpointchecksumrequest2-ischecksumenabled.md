@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2:: ischecksumenabled | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c30dbdbc3c75f22331c61f42dbe9aa829020725
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735107"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
@@ -39,7 +39,7 @@ public int IsChecksumEnabled(
 
 ## <a name="parameters"></a>Parameter
 `pfChecksumEnabled`\
-[out] Gibt TRUE zurück, wenn die Prüfsumme aktiviert ist; Andernfalls wird FALSE zurückgegeben.
+vorgenommen Gibt true zurück, wenn die Prüfsumme aktiviert ist. Andernfalls wird false zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

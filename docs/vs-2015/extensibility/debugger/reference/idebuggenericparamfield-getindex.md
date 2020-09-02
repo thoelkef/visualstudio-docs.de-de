@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetIndex | Microsoft Docs
+title: 'Idebuggenericparamfield:: getIndex | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 327bf1eb28e3313ee8072e6330f9bbc23d3b83ce
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580377"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
@@ -38,16 +38,16 @@ int GetIndex(
   
 #### <a name="parameters"></a>Parameter  
  `pIndex`  
- [out] Der Indexwert des dieser generische Parameter.  
+ vorgenommen Der Indexwert dieses generischen Parameters.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Klicken Sie beispielsweise für Dictionary(K,V), K ist Index 0, V Index 1 ist.  
+## <a name="remarks"></a>Bemerkungen  
+ Für Dictionary (k, V) ist K z. b. Index 0, V der Index 1.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebuggenericparamfieldtype** -Objekt implementiert wird, das die [idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  
@@ -67,5 +67,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

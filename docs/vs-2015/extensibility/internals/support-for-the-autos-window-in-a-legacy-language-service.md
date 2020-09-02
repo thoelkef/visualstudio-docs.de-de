@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für das Fenster "Auto" in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Unterstützung für das Fenster "Auto" in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,28 +12,28 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 01d2046d7693b23865555abb06962dead4a435ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157594"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Unterstützen des Auto-Fensters in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die **"Auto"** Fenster werden Ausdrücke wie z. B. Variablen und Parametern, die im Gültigkeitsbereich befinden, wenn die zu debuggende Programm wird (entweder aufgrund eines Haltepunkts oder einer Ausnahme) angehalten wird angezeigt. Die Ausdrücke können einschließen, lokalen oder globalen Variablen und Parametern, die im lokalen Bereich geändert wurden. Die **"Auto"** Fenster kann auch Instanziierungen von einer Klasse, Struktur oder einem anderen Typ enthalten. Alle Elemente, die eine ausdrucksauswertung auswerten kann potenziell angezeigt werden die **"Auto"** Fenster.  
+Im **Fenster Auto** werden Ausdrücke wie Variablen und Parameter angezeigt, die sich im Gültigkeitsbereich befinden, wenn das Programm, das gedebuggt wird, angehalten wurde (entweder aufgrund eines Breakpoints oder einer Ausnahme). Die Ausdrücke können Variablen, lokale oder globale Variablen und Parameter enthalten, die im lokalen Gültigkeitsbereich geändert wurden. Das **Fenster** Auto kann auch Instanziierungen einer Klasse, Struktur oder eines anderen Typs einschließen. Alle Elemente, die von einer Ausdrucks Auswertung ausgewertet werden können, können im **Fenster Auto** angezeigt werden.  
   
- Das managed Package Framework (MPF) bietet keine direkte Unterstützung für die **"Auto"** Fenster. Jedoch wenn Sie außer Kraft setzen der <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> -Methode, Sie können eine Liste von Ausdrücken, die angezeigt werden sollen Zurückgeben der **"Auto"** Fenster.  
+ Das Managed Package Framework (MPF) stellt keine direkte Unterstützung für das Auto **-Fenster bereit** . Wenn Sie jedoch die- <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> Methode überschreiben, können Sie eine Liste der Ausdrücke zurückgeben, die im Fenster **Auto angezeigt** werden sollen.  
   
 ## <a name="implementing-support-for-the-autos-window"></a>Implementieren der Unterstützung für das Fenster "Auto"  
- Sie müssen lediglich zur Unterstützung der **"Auto"** Fenster ist die Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Ihre Implementierung muss entscheiden, erhalten einen Speicherort in der Quelldatei, die Ausdrücke in angezeigt werden, sollten die **"Auto"** Fenster. Die-Methode gibt eine Liste von Zeichenfolgen, die in denen jede Zeichenfolge mit einen einzelnen Ausdruck darstellt. Der Rückgabewert <xref:Microsoft.VisualStudio.VSConstants.S_OK> gibt an, dass die Liste mit Ausdrücken enthält zwar <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> gibt an, dass es keine Ausdrücke sind angezeigt.  
+ Um das Auto **-Fenster zu** unterstützen, müssen Sie lediglich die- <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> Methode in der- <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse implementieren. Ihre Implementierung muss bei Angabe eines Speicher Orts in der Quelldatei entscheiden, welche Ausdrücke **im Fenster "** Auto" angezeigt werden sollen. Die-Methode gibt eine Liste von Zeichen folgen zurück, in denen jede Zeichenfolge einen einzelnen Ausdruck darstellt. Der Rückgabewert gibt an, <xref:Microsoft.VisualStudio.VSConstants.S_OK> dass die Liste Ausdrücke enthält, während <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> angibt, dass keine Ausdrücke angezeigt werden.  
   
- Die tatsächliche Ausdrücke, die zurückgegeben werden die Namen der Variablen oder Parameter, die an dieser Stelle im Code angezeigt werden. Diese Namen werden an der ausdrucksauswertung zum Abrufen der Werte und Typen, die Sie dann im angezeigten übergeben die **"Auto"** Fenster.  
+ Die tatsächlich zurückgegebenen Ausdrücke sind die Namen der Variablen oder Parameter, die an dieser Stelle im Code angezeigt werden. Diese Namen werden an die Ausdrucks Auswertung weitergegeben, um Werte und Typen abzurufen **, die dann im Fenster Auto** angezeigt werden.  
   
 ### <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt eine Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> -Methode, die eine Liste der Ausdrücke aus der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode, die mithilfe des Grunds für die Analyse <xref:Microsoft.VisualStudio.Package.ParseReason>. Jeder Ausdruck wird als umschlossen eine `TestVsEnumBSTR` , implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> Schnittstelle.  
+ Im folgenden Beispiel wird eine Implementierung der- <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> Methode veranschaulicht, die eine Liste der Ausdrücke aus der- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode mithilfe der Analyse Ursache abruft <xref:Microsoft.VisualStudio.Package.ParseReason> . Jeder Ausdruck wird als umschließt `TestVsEnumBSTR` , der die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> Schnittstelle implementiert.  
   
- Beachten Sie, dass die `GetAutoExpressionsCount` und `GetAutoExpression` sind benutzerdefinierte Methoden auf die `TestAuthoringSink` Objekt aus, und wurden hinzugefügt, um dieses Beispiel zu ermöglichen. Währungseinheiten auf verschiedene Weise in der Ausdrücke, die hinzugefügt, die `TestAuthoringSink` Objekt vom Parser (durch Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> Methode) außerhalb der Parser zugegriffen werden kann.  
+ Beachten Sie, dass die `GetAutoExpressionsCount` -Methode und die- `GetAutoExpression` Methode benutzerdefinierte Methoden für das `TestAuthoringSink` -Objekt sind und für dieses Beispiel hinzugefügt wurden. Sie stellen eine Art dar, in der Ausdrücke, die dem- `TestAuthoringSink` Objekt vom Parser hinzugefügt werden (durch Aufrufen der- <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> Methode), außerhalb des Parsers aufgerufen werden können.  
   
 ```csharp  
 using Microsoft.VisualStudio;  

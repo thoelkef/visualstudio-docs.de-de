@@ -1,5 +1,5 @@
 ---
-title: Code-Kontext | Microsoft-Dokumentation
+title: Code Kontext | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d59a4c79cb21386fa6f6e7031404aeb0b435b3b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197378"
 ---
 # <a name="code-context"></a>Codekontext
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debuggen, eine **Codekontext**:  
+Beim [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debuggen ein **Code Kontext**:  
   
-- Stellt eine Abstraktion einer Position im Code bereit, wie die Debug-Engine (DE) bekannt. Für die meisten Laufzeit-Architekturen kann heute ein Codekontext als eine Adresse im Anweisungsstream eines Programms betrachtet werden. Für nicht traditionelle Sprachen, in dem Code nicht von Anweisungen dargestellt werden kann, kann ein Codekontext andere Weise dargestellt werden.  
+- Stellt eine Abstraktion einer Position im Code bereit, wie Sie der Debug-Engine (de) bekannt ist. Für die meisten Lauf Zeit Architekturen kann ein Code Kontext als Adresse im Anweisungs Datenstrom eines Programms betrachtet werden. Bei nicht herkömmlichen Sprachen, in denen Code möglicherweise nicht durch Anweisungen dargestellt wird, kann ein Code Kontext auf andere Weise dargestellt werden.  
   
-- Beschreibt die aktuelle Position im Stream Ausführung des gedebuggten Programms.  
+- Beschreibt die aktuelle Position im Ausführungsdaten Strom des Programms, das gedebuggt wird.  
   
-- Ist vorhanden, nur, wenn ein Programm an einem Haltepunkt beendet wurde.  
+- Ist nur vorhanden, wenn ein Programm an einem Haltepunkt angehalten wurde.  
   
-- Verfügt über einen zugehörigen Dokumentkontext.  
+- Verfügt über einen zugeordneten Dokument Kontext.  
   
-- Wird implementiert, indem ein [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) Schnittstelle.  
+- Wird von einer [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) -Schnittstelle implementiert.  
   
-## <a name="see-also"></a>Siehe auch  
- [Dokumentkontext](../../extensibility/debugger/document-context.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Dokument Kontext](../../extensibility/debugger/document-context.md)   
  [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)

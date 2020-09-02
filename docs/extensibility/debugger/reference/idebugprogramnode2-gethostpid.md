@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostpid | Microsoft Docs
+title: 'IDebugProgramNode2:: GetHostPid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722036"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
-Ruft den Systemprozessbezeichner für den Prozess ab, der das Programm hostet.
+Ruft den System Prozess Bezeichner für den Prozess ab, der das Programm gehostet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetHostPid ( 
 
 ## <a name="parameters"></a>Parameter
 `pdwHostPid`\
-[out] Gibt den Systemprozessbezeichner für den Hostingprozess zurück.
+vorgenommen Gibt die System Prozess-ID für den Hostingprozess zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie diese `CProgram` Methode für ein einfaches Objekt implementiert wird, das die [IDebugProgramNode2-Schnittstelle](../../../extensibility/debugger/reference/idebugprogramnode2.md) implementiert.
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches `CProgram` Objekt implementiert wird, das die [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Schnittstelle implementiert.
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {

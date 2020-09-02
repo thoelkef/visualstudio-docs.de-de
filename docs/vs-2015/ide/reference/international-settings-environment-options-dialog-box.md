@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 26ed1ef8941db17c9cc087a80afcad2b4ce982de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650831"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Internationale Einstellungen, Umgebung, Dialogfeld "Optionen"
@@ -39,5 +39,5 @@ Auf der Seite „Internationale Einstellungen“ können Sie die Standardsprache
 > [!CAUTION]
 > In einem System mit mehreren Sprachen hat diese Einstellung keine Auswirkungen auf die Visual C++-Buildtools (cl.exe, link.exe, nmake.exe, bscmake.exe und verwandte Dateien). Diese Tools verwenden die Version für die zuletzt installierte Sprache, und die Tools für die zuvor installierte Sprache werden überschrieben, da die Visual C++-Buildtools nicht das DLL-Satellitenmodell verwenden.
 
-## <a name="see-also"></a>Siehe auch
- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)

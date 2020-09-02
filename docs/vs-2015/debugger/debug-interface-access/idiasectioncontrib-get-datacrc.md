@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_datacrc | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_dataCrc | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 309ecc0269b911afb1f8e1b753811ac0b1c36e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576547"
 ---
-# <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
+# <a name="idiasectioncontribget_datacrc"></a>IDiaSectionContrib::get_dataCrc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die zyklische redundanzprüfung (CRC) der Daten in den Abschnitt ab.  
+Ruft die zyklische Redundanz Überprüfung (CRC) der Daten im-Abschnitt ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ HRESULT get_dataCrc ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Der CRC-Wert der Daten zurückgegeben in den Abschnitt.  
+ vorgenommen Gibt den CRC der Daten im-Abschnitt zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ffff52722fe27f2761307dcb2acd874d3849fdbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72647022"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Regelsatz für gemischte empfohlene Mindestregeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die gemischten empfohlenen Regeln von Microsoft konzentrieren sich auf die häufigsten und wichtigsten Probleme in C++ Ihren Projekten, die die Common Language Runtime unterstützen, einschließlich potenzieller Sicherheitslücken, Anwendungs abstürzen und anderer wichtiger Logik-und Entwurfs Fehler. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen. Dieser Regelsatz ist für die Konfiguration mit Visual Studio Professional Edition und höher vorgesehen.
+Die gemischten empfohlenen Regeln von Microsoft konzentrieren sich auf die häufigsten und wichtigsten Probleme in Ihren C++-Projekten, die die Common Language Runtime unterstützen, einschließlich möglicher Sicherheitslücken, Anwendungs Abstürze und anderer wichtiger Logik-und Entwurfs Fehler. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen. Dieser Regelsatz ist für die Konfiguration mit Visual Studio Professional Edition und höher vorgesehen.
 
 |                                                              Regel                                                              |                                                             Beschreibung                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,7 +156,7 @@ Die gemischten empfohlenen Regeln von Microsoft konzentrieren sich auf die häuf
 |                                              [C28020](../code-quality/c28020.md)                                               |                                               Der Ausdruck ist bei diesem Befehl nicht "true".                                               |
 |                                              [C28021](../code-quality/c28021.md)                                               |                                           Der Parameter, der mit Anmerkungen versehen ist, muss ein Zeiger sein.                                           |
 |                                              [C28022](../code-quality/c28022.md)                                               |            Die Funktionsklassen in dieser Funktion stimmen nicht mit den Funktionsklassen in der typedef, die zum Definieren der Funktion verwendet wird, ab.            |
-|                                              [C28023](../code-quality/c28023.md)                                               |         Die Funktion, die zugewiesen oder übermittelt wird, muss über eine \_Function_class \_ Anmerkung für mindestens eine der Klassen (es) verfügen.         |
+|                                              [C28023](../code-quality/c28023.md)                                               |         Die Funktion, die zugewiesen oder übermittelt wird, sollte über eine \_ Function_class \_ Anmerkung für mindestens eine der Klassen (es) verfügen.         |
 |                                              [C28024](../code-quality/c28024.md)                                               | Der Funktionszeiger, der zugewiesen wird, wird mit der Funktionsklasse kommentiert, die nicht in der Liste der Funktionsklassen enthalten ist. |
 |                                              [C28039](../code-quality/c28039.md)                                               |                                     Der Typ des tatsächlichen Parameters sollte genau mit dem Typ übereinstimmen.                                      |
 |                                              [C28112](../code-quality/c28112.md)                                               |            Auf eine Variable, auf die über eine Interlocked-Funktion zugegriffen wird, muss immer über eine Interlocked-Funktion zugegriffen werden.            |
