@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertyGetter | Microsoft-Dokumentation
+title: 'Idebugpropertyfield:: getpropertygetter | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6c1a9f712555de6f4b8400f828bf18aca13c779d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164869"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
@@ -40,15 +40,15 @@ int GetPropertyGetter(
   
 #### <a name="parameters"></a>Parameter  
  `ppField`  
- [out] Gibt eine [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das die Methode, die die Eigenschaft ruft darstellt.  
+ vorgenommen Gibt ein [idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) -Objekt zurück, das die Methode darstellt, mit der die Eigenschaft abgerufen wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Zum Abrufen der Methode, die die Eigenschaft festlegt [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) rufen Sie die Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Zum Abrufen der Methode, mit der die-Eigenschaft festgelegt wird, ruft [getpropertysetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) die-Methode auf.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
- [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugpropertyfield](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
+ [Getpropertysetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

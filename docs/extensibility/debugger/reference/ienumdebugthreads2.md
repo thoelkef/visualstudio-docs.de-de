@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2 | Microsoft Docs
+title: IEnumDebugThreads2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bbbe047c08f8e91264163d028c1b40d94cde97fc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715087"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
-Diese Schnittstelle zählt die Threads auf, die in der aktuellen Debugsitzung ausgeführt werden.
+Diese Schnittstelle listet die Threads auf, die in der aktuellen Debugsitzung ausgeführt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IEnumDebugThreads2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debugmodul (DE) implementiert diese Schnittstelle, um eine Liste von Threads in einem Programm darzustellen.
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um eine Liste von Threads in einem Programm darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Rufen Sie [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) auf, um diese Schnittstelle abzurufen, die eine Liste aller Threads in allen Programmen darstellt, die in einem Prozess ausgeführt werden. Rufen Sie [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) auf, um diese Schnittstelle abzurufen, die eine Liste der Threads darstellt, die in einem Programm ausgeführt werden.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Rufen Sie [enumthreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) auf, um diese Schnittstelle abzurufen, die eine Liste aller Threads in allen Programmen darstellt, die in einem Prozess ausgeführt werden. Rufen Sie [enumreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) auf, um diese Schnittstelle abzurufen, die eine Liste der in einem Programm ausgelaufenden Threads darstellt.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IEnumDebugThreads2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugThreads2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Weiter](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Ruft eine angegebene Anzahl von Threads in der Enumerationssequenz ab.|
-|[Überspringen](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Überspringt eine angegebene Anzahl von Threads in einer Enumerationssequenz.|
+|[Nächste](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Ruft eine angegebene Anzahl von Threads in der enumerationssequenz ab.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Überspringt eine angegebene Anzahl von Threads in einer enumerationssequenz.|
 |[Zurücksetzen](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
-|[Klon](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Erstellt einen Enumerator, der denselben Enumerationsstatus wie der aktuelle enthält.|
+|[Klonen](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Ruft die Anzahl der Threads in einem Enumerator ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Visual Studio ruft diese Schnittstelle in der Regel ab, um das **Threads-Fenster** zu aktualisieren und den ersten Thread der Liste zu erhalten, um [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)und [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)aufzurufen.
+ Visual Studio ruft diese Schnittstelle normalerweise ab, um das **Thread** Fenster zu aktualisieren und den ersten Thread der Liste zu erhalten, um [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)und [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)aufzurufen.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
@@ -60,5 +60,5 @@ IEnumDebugThreads2 : IUnknown
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
 - [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)
-- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Fortsetzen](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
 - [Ausführen](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

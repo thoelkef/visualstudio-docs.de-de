@@ -15,14 +15,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8171c6dcfe285ade07531896893915d0e209e0c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670194"
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Dialogfeld "Designkonfiguration" (Vorgängerversion)
-In diesem Thema wird beschrieben, wie das Dialogfeld "Design **Konfiguration** " in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet wird. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+In diesem Thema wird die Verwendung des Dialog Felds Design **Konfiguration** in der Vorgängerversion von beschrieben [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
  Ein Design definiert die Hintergrund- und Vordergrundfarben, Formate, Symbole und andere visuelle Elemente eines Workflows. Sie können Designs für die Wiederverwendung durch andere Workflows speichern.
 
@@ -30,13 +30,13 @@ In diesem Thema wird beschrieben, wie das Dialogfeld "Design **Konfiguration** "
 
  In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds Design **Konfiguration** beschrieben.
 
-|Benutzeroberflächenelement|Beschreibung|
+|Benutzeroberflächenelement|BESCHREIBUNG|
 |----------------|-----------------|
 |**Design Name:**|Der Name, der das Design im Dialog Feld "Designs" [, "Workflow-Designer", "Optionen" (Legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)identifiziert. Für neue Designs wird ein veränderlicher Name generiert.|
-|**Design Speicherort:**|Dateiname und -pfad der Designdatei. Für neue Designs wird basierend auf dem generierten Designnamen ein veränderlicher Dateiname generiert. Wenn Sie den generierten Designnamen ändern, können Sie ggf. den Dateinamen so ändern, dass er mit dem Designnamen übereinstimmt.|
+|**Designspeicherort:**|Dateiname und -pfad der Designdatei. Für neue Designs wird basierend auf dem generierten Designnamen ein veränderlicher Dateiname generiert. Wenn Sie den generierten Designnamen ändern, können Sie ggf. den Dateinamen so ändern, dass er mit dem Designnamen übereinstimmt.|
 |**...**|Klicken Sie, um den Speicherort für die Workflowdesigndatei zu wählen, die die Dateinamenerweiterung .wtm erhält. Der ausgewählte Pfad wird im Textfeld Design **Speicherort** angezeigt.|
 |**Designer auswählen und Eigenschaften konfigurieren:**|Der linke Bereich enthält eine Strukturansicht der Aktivitäten, für die das Design angepasst werden kann. Wählen Sie in der Strukturansicht eine Aktivität aus. Die Designeigenschaften für die Aktivität werden im Eigenschaftenfenster rechts in der Strukturansicht angezeigt. Klicken Sie auf eine Eigenschaft, um ihren Wert zu ändern.|
 |**Vorschau**|Klicken Sie, um ein Fenster mit einer Vorschau der Auswirkungen der Eigenschaftenänderungen anzuzeigen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Themen, Workflow-Designer, Dialog Feld "Optionen" (Legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md) [Legacy-Designer für Windows Workflow Foundation UI-Hilfe](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

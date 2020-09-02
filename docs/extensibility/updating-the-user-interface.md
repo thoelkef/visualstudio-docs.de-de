@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren der Benutzeroberfläche | Microsoft Docs
+title: Aktualisieren der Benutzeroberfläche | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698885"
 ---
 # <a name="updating-the-user-interface"></a>Aktualisieren der Benutzeroberfläche
-Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um die Benutzeroberfläche mit dem Status der neuen Befehle zu aktualisieren.
+Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um die Benutzeroberfläche mit dem Zustand ihrer neuen Befehle zu aktualisieren.
 
- In einer typischen Win32-Anwendung kann der Befehlssatz kontinuierlich abgefragt und der Status einzelner Befehle angepasst werden, wenn der Benutzer sie anzeigt. Da die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell jedoch eine unbegrenzte Anzahl von VSPackages hosten kann, können umfangreiche Abfragen die Reaktionsfähigkeit verringern, insbesondere die Abfrage über Interopassemblys zwischen verwaltetem Code und COM.
+ In einer typischen Win32-Anwendung kann der Befehlssatz fortlaufend abgepolgt werden, und der Zustand einzelner Befehle kann angepasst werden, wenn Sie vom Benutzer angezeigt werden. Da die Shell jedoch [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine unbegrenzte Anzahl von VSPackages hosten kann, kann das umfangreiche abrufen die Reaktionsfähigkeit verringern, insbesondere das Abrufen von Interop-Assemblys zwischen verwaltetem Code und com.
 
 ### <a name="to-update-the-ui"></a>So aktualisieren Sie die Benutzeroberfläche
 
@@ -29,7 +29,7 @@ Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um d
 
     - Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> -Methode auf.
 
-         Eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Schnittstelle kann wie <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> folgt vom Dienst abgerufen werden.
+         Eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Schnittstelle kann <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> wie folgt vom Dienst abgerufen werden.
 
         ```csharp
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)
@@ -44,12 +44,12 @@ Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um d
 
         ```
 
-         Wenn der Parameter <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> des Werts`TRUE`ungleich Null ist ( ), wird die Aktualisierung synchron und sofort durchgeführt. Es wird empfohlen,`FALSE`dass Sie Null ( ) für diesen Parameter übergeben, um eine gute Leistung zu erhalten. Wenn Sie zwischenspeichern möchten, `DontCache` wenden Sie das Flag an, wenn Sie den Befehl in der .vsct-Datei erstellen. Verwenden Sie die Flagge jedoch vorsichtig, oder die Leistung kann abnehmen. Weitere Informationen zu Befehlsflags finden Sie in der Dokumentation [zum Befehlsflagelementelement.](../extensibility/command-flag-element.md)
+         Wenn der-Parameter von ungleich <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 0 (NULL `TRUE` ) ist, wird das Update synchron und sofort durchgeführt. Es wird empfohlen, NULL ( `FALSE` ) für diesen Parameter zu übergeben, um eine gute Leistung zu gewährleisten. Wenn Sie das Caching vermeiden möchten, wenden Sie das- `DontCache` Flag an, wenn Sie den Befehl in der vsct-Datei erstellen. Verwenden Sie das Flag trotzdem vorsichtig, oder die Leistung kann abnehmen. Weitere Informationen zu Befehlsflags finden Sie in der Dokumentation zum [Befehlsflag](../extensibility/command-flag-element.md) .
 
-    - In VSPackages, die ein ActiveX-Steuerelement mithilfe des ortsgesteuerten Aktivierungsmodells in <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> einem Fenster hosten, ist es möglicherweise bequemer, die Methode zu verwenden. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> in der <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> Schnittstelle <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> und die Methode in der Schnittstelle sind funktional gleichwertig. Beide bewirken, dass die Umgebung den Status aller Befehle erneut abfragt. In der Regel wird eine Aktualisierung nicht sofort durchgeführt. Stattdessen wird eine Aktualisierung auf die Leerlaufzeit verzögert. Die Shell speichert den Befehlsstatus zwischen, um eine gute Leistung zu erhalten. Wenn Sie zwischenspeichern möchten, `DontCache` wenden Sie das Flag an, wenn Sie den Befehl in der .vsct-Datei erstellen. Verwenden Sie die Flagge jedoch vorsichtig, da die Leistung abnehmen kann.
+    - In VSPackages, die ein ActiveX-Steuerelement mithilfe des direkten Aktivierungs Modells in einem Fenster hosten, ist es möglicherweise bequemer, die-Methode zu verwenden <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> . Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> -Methode in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> -Schnittstelle und die- <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> Methode in der- <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> Schnittstelle sind funktional äquivalent. Beide bewirken, dass die Umgebung den Status aller Befehle erneut abfragt. In der Regel wird ein Update nicht sofort ausgeführt. Stattdessen wird ein Update bis zur Leerlaufzeit verzögert. Die Shell speichert den Befehls Zustand zwischen, um eine gute Leistung zu gewährleisten. Wenn Sie das Caching vermeiden möchten, wenden Sie das- `DontCache` Flag an, wenn Sie den Befehl in der vsct-Datei erstellen. Verwenden Sie das Flag trotzdem vorsichtig, da sich die Leistung möglicherweise verringert.
 
-         Beachten Sie, dass <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> Sie die `QueryInterface` Schnittstelle <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> abrufen können, indem Sie <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> die Methode für ein Objekt aufrufen oder die Schnittstelle vom Dienst abrufen.
+         Beachten Sie, dass Sie die-Schnittstelle abrufen können, <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> indem Sie die- `QueryInterface` Methode für ein <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> Objekt aufrufen oder indem Sie die-Schnittstelle vom <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> Dienst abrufen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementierung](../extensibility/internals/command-implementation.md)

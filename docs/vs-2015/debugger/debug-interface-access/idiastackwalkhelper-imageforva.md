@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkhelper:: Imageforva | Microsoft-Dokumentation'
+title: 'IDiaStackWalkHelper:: imageForVA | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36ad6529f28701d0e6d83550636382be773f0ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150104"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt den Anfang einer ausführbaren Datei des Image im Arbeitsspeicher eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei zurück.  
+Gibt den Anfang des Bilds einer ausführbaren Datei im Arbeitsspeicher zurück, wenn eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei vorhanden ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,13 +36,13 @@ HRESULT imageForVA(
   
 #### <a name="parameters"></a>Parameter  
  `vaContext`  
- [in] Die virtuelle Adresse, die sich an einer beliebigen Stelle in der ausführbaren Datei Leerzeichen.  
+ in Die virtuelle Adresse, die sich irgendwo im Speicherplatz der ausführbaren Datei befindet.  
   
  `pvaImageStart`  
- [out] Gibt zurück, die virtuelle Startadresse des Images von der ausführbaren Datei.  
+ vorgenommen Gibt die virtuelle Startadresse des Images der ausführbaren Datei zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

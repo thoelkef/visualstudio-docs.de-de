@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0be3049718a97455ecce2b2df2f95c730a303110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657357"
 ---
 # <a name="or-designer-messages"></a>O/R-Designermeldungen
@@ -22,13 +22,13 @@ ms.locfileid: "72657357"
 In diesem Thema werden die Meldungen aufgelistet, die beim Arbeiten mit dem O/R-Designer angezeigt werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – Eigenschaft ist zweimal aufgelistet](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Eine Zuordnung kann nicht erstellt werden \<association name> -Eigenschaft wird zweimal aufgelistet.](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – Eigenschaftstypen stimmen nicht überein](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Eine Zuordnung kann nicht erstellt werden \<association name> : die Eigenschafts Typen stimmen nicht ab.](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
- [Eine Änderung des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
+ [Das Ändern des Rückgabe Typs einer DataContext-Methode kann nicht rückgängig gemacht werden.](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Die Schemainformationen für das Datenbankobjekt \<Objektname> konnten nicht abgerufen werden](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Die Schemainformationen für das Datenbankobjekt konnten nicht abgerufen werden \<object name>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Mindestens ein ausgewähltes Datenbankobjekt gibt ein Schema zurück, das nicht dem Schema der Zielklasse entspricht](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -40,15 +40,15 @@ In diesem Thema werden die Meldungen aufgelistet, die beim Arbeiten mit dem O/R-
 
  [Die dem Designer hinzugefügten Objekte verwenden eine andere Datenverbindung als die derzeit vom Designer verwendete](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [Die Eigenschaft \<Eigenschaftenname> kann nicht gelöscht werden](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [Die Eigenschaft \<property name> kann nicht gelöscht werden](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [Die Eigenschaft \<Eigenschaftenname> kann nicht gelöscht werden, weil sie Teil der Zuordnung \<Zuordnungsname> ist](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [Die Eigenschaft \<property name> kann nicht gelöscht werden, da sie Teil der Zuordnung \<association name> ist](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
- [Die ausgewählte Klasse kann nicht gelöscht werden, da sie als Rückgabetyp für mindestens eine DataContext-Methode verwendet wird](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
+ [Die ausgewählte Klasse kann nicht gelöscht werden, da sie als Rückgabetyp für mindestens eine DataContext-Methode verwendet wird.](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
  [Die ausgewählte Verbindung nutzt einen nicht unterstützten Datenbankanbieter](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)
 
- [Diese verknüpfte Methode ist die dahinter liegende Methode für die folgenden standardmäßigen Insert-, Update- und Delete-Methoden](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)
+ [Diese verknüpfte Methode ist die Sicherungsmethode für die folgenden standardmäßigen Methoden zum Einfügen, Aktualisieren oder Löschen.](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)
 
  [Davor. Es wurden Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht angewendet wurden.](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)
 
