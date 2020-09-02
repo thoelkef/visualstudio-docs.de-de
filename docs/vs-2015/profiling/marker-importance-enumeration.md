@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198385"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance-Enumeration
+# <a name="marker_importance-enumeration"></a>marker_importance-Enumeration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.  
@@ -35,17 +35,17 @@ enum marker_importance;
   
 ### <a name="values"></a>Werte  
   
-|name|BESCHREIBUNG|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |`critical_importance`|Gibt an, dass der Marker kritisch wichtig ist|  
 |`high_importance`|Gibt an, dass der Marker hoch wichtig ist|  
 |`low_importance`|Gibt an, dass der Marker weniger wichtig ist|  
 |`normal_importance`|Gibt an, dass der Marker normal wichtig ist|  
   
-## <a name="requirements"></a>Requirements (Anforderungen)  
+## <a name="requirements"></a>Anforderungen  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Siehe auch  
- [diagnostic-Namespace](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [diagnosenamespace](../profiling/diagnostic-namespace.md)

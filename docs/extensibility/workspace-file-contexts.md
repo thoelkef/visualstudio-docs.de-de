@@ -1,5 +1,5 @@
 ---
-title: Arbeitsbereich dateikontexte in Visual Studio | Microsoft-Dokumentation
+title: Kontexte für Arbeitsbereichs Dateien in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,70 +8,70 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952813"
 ---
-# <a name="workspace-file-contexts"></a>Arbeitsbereich dateikontexte
+# <a name="workspace-file-contexts"></a>Kontexte für Arbeitsbereichs Dateien
 
-Alle Einblicke in ["Ordner öffnen"](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Arbeitsbereiche werden erstellt, von "Kontext dateianbieter", die implementieren die <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> Schnittstelle. Diese Erweiterungen können Suchen Sie nach Mustern in Ordnern oder Dateien, und Lesen von Dateien von MSBuild und Makefiles, erkennen paketabhängigkeiten usw. zum Sammeln der Erkenntnisse zu gewinnen, müssen sie einen Kontext definieren. Ein Kontext selbst führt keine Maßnahmen, sondern bietet Daten, denen eine andere Erweiterung klicken Sie dann auf bearbeiten können.
+Alle Einblicke in Arbeitsbereiche [offener Ordner](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) werden von "Datei Kontext Anbieter" erstellt, die die- <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> Schnittstelle implementieren. Diese Erweiterungen können nach Mustern in Ordnern oder Dateien suchen, MSBuild-Dateien und Makefiles lesen, Paketabhängigkeiten erkennen usw., um die Einblicke zu sammeln, die Sie benötigen, um einen Datei Kontext zu definieren. Ein Datei Kontext allein führt keine Aktion aus, sondern stellt Daten bereit, auf die eine andere Erweiterung reagieren kann.
 
-Jede <xref:Microsoft.VisualStudio.Workspace.FileContext> verfügt über eine `Guid` zugeordnet, der den Typ der Daten bezeichnet. es enthält. Ein Arbeitsbereich verwendet diese `Guid` später, um es mit Erweiterungen übereinstimmen, die Daten durch nutzen, der <xref:Microsoft.VisualStudio.Workspace.FileContext.Context> Eigenschaft. Ein Kontext dateianbieter mit Metadaten, die die Dateikontext identifiziert exportiert wird `Guid`s können sie Daten für erzeugt.
+Jeder <xref:Microsoft.VisualStudio.Workspace.FileContext> ist ein `Guid` zugeordnet, der den Typ der Daten angibt, die er enthält. Ein Arbeitsbereich verwendet dies `Guid` später, um ihn mit Erweiterungen zu vergleichen, die die Daten über die- <xref:Microsoft.VisualStudio.Workspace.FileContext.Context> Eigenschaft verwenden. Ein Datei Kontext Anbieter wird mit Metadaten exportiert, die den Datei Kontext identifizieren, `Guid` für den er möglicherweise Daten erzeugt.
 
-Nachdem definiert, kann ein Kontext eine beliebige Anzahl von Dateien oder Ordner im Arbeitsbereich zugeordnet werden. Eine Datei oder Ordner kann eine beliebige Anzahl von dateikontexte zugeordnet werden. Es ist eine m: n Beziehung.
+Nach der Definition kann einem Datei Kontext eine beliebige Anzahl von Dateien oder Ordnern im Arbeitsbereich zugeordnet werden. Einer bestimmten Datei oder einem Ordner kann eine beliebige Anzahl von Datei Kontexten zugeordnet werden. Dabei handelt es sich um eine m:n-Beziehung.
 
-Die häufigsten Szenarien für dateikontexte beziehen sich auf Build-, Debug- und Sprachdienste. Weitere Informationen finden Sie unter den anderen Themen im Zusammenhang mit diesen Szenarien.
+Die häufigsten Szenarien für Datei Kontexte beziehen sich auf die Dienste Build, Debug und Language. Weitere Informationen finden Sie in den anderen Themen im Zusammenhang mit diesen Szenarien.
 
-## <a name="file-context-lifecycle"></a>Datei-Kontext-Lebenszyklus
+## <a name="file-context-lifecycle"></a>Datei Kontext Lebenszyklus
 
-Lebenszyklen für das ein `FileContext` sind nicht deterministisch. Zu jedem Zeitpunkt kann eine Komponente für eine Gruppe von der Kontexttypen asynchron anfordern. Anbieter, die eine Teilmenge von der Kontexttypen Anforderung unterstützen werden abgefragt. Die `IWorkspace` -Instanz fungiert als mittelsmann zwischen dem Consumer und Anbieter über die <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> Methode. Consumer möglicherweise einen Anforderungskontext und führen Sie eine kurzfristige Aktion, die auf Grundlage des Kontexts, während andere möglicherweise eine Anforderungskontext und langlebig verweisen.
+Lebenszyklen für einen `FileContext` sind nicht deterministisch. Eine Komponente kann jederzeit eine Reihe von Kontext Typen asynchron anfordern. Anbieter, die eine Teilmenge der Anforderungs Kontext Typen unterstützen, werden abgefragt. Die `IWorkspace` -Instanz fungiert als mittlerer Mann zwischen dem Consumer und den Anbietern durch die- <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> Methode. Consumer könnten einen Kontext anfordern und eine kurzfristige Maßnahme basierend auf dem Kontext ausführen, während andere einen Kontext anfordern und einen lang gelebten Verweis verwalten können.
 
-Änderungen können Dateien auftreten, die dazu führen, einen Kontext dass veraltet. Der Anbieter kann ein Ereignis auslösen, auf die `FileContext` Consumer von Updates benachrichtigt. Beispielsweise kann wird ein buildkontext für eine Datei bereitgestellt, aber eine Änderung auf dem Datenträger wird diesem Kontext ungültig, klicken Sie dann der ursprüngliche Producer das Ereignis aufrufen. Verweisen Sie immer noch auf Consumer `FileContext` kann dann für einen neuen requery `FileContext`.
+Möglicherweise treten Änderungen an Dateien auf, die bewirken, dass ein Datei Kontext veraltet ist. Der Anbieter kann ein Ereignis auf dem Auslösen `FileContext` , um Consumer über Updates zu benachrichtigen. Wenn z. b. ein Buildkontext für eine Datei bereitgestellt wird, aber eine Änderung auf dem Datenträger diesen Kontext ungültig macht, kann der ursprüngliche Producer das Ereignis aufrufen. Alle Verbraucher, die noch auf Sie verweisen, `FileContext` können dann für einen neuen anfordert `FileContext` .
 
 >[!NOTE]
->Es gibt keine Push-Modell für Kunden. Consumer nicht informiert, eines Anbieters für die neue `FileContext` nach ihrer Anforderung.
+>Es gibt kein Push-Modell für Consumer. Consumer werden nach Ihrer Anforderung nicht über den neuen eines Anbieters benachrichtigt `FileContext` .
 
 ## <a name="expensive-file-context-computations"></a>Teure Datei Kontext Berechnungen
 
-Lesen von Dateiinhalt vom Datenträger können speicherintensiv sein, insbesondere, wenn ein Anbieter die Beziehung zwischen Dateien auflösen muss. Z. B. ein Anbieter kann für einige der Quelldatei Dateikontext abgefragt werden, aber der Kontext ist abhängig von Metadaten aus einer Projektdatei. Analysieren die Projektdatei oder MSBuild evaluieren ist teuer. Stattdessen kann die Erweiterung Exportieren einer `IFileScanner` erstellen `FileDataValue` Daten während der Indizierung Arbeitsbereich. Jetzt beim dateikontexte, aufgefordert die `IFileContextProvider` können Sie schnell Abfragen für die indizierten Daten. Weitere Informationen zur Indizierung finden Sie unter den [Arbeitsbereich Indizierung](workspace-indexing.md) Thema.
+Das Lesen von Dateiinhalten von einem Datenträger kann teuer sein, insbesondere dann, wenn ein Anbieter die Beziehung zwischen Dateien auflösen muss. Ein Anbieter kann z. b. für den Datei Kontext einer Quelldatei abgefragt werden, aber der Datei Kontext hängt von den Metadaten aus einer Projektdatei ab. Die Projektdatei zu analysieren oder mit MSBuild zu evaluieren, ist aufwendig. Stattdessen kann die Erweiterung einen exportieren `IFileScanner` , um `FileDataValue` während der Arbeitsbereichs Indizierung Daten zu erstellen. Wenn Sie nun nach Datei Kontexten gefragt werden, kann die die `IFileContextProvider` indizierten Daten schnell Abfragen. Weitere Informationen zur Indizierung finden Sie im Thema [Arbeitsbereichs Indizierung](workspace-indexing.md) .
 
 >[!WARNING]
->Achten Sie darauf, dass Sie von anderen Möglichkeiten Ihrer `FileContext` möglicherweise aufwändig zu berechnen. Einige UI-Interaktionen sind synchron und verlassen sich auf eine große Anzahl von `FileContext` Anforderungen. Beispiele hierfür sind eine Registerkarte "Editor" zu öffnen, und Öffnen einer **Projektmappen-Explorer** Kontextmenü. Diese Aktionen stellen viele buildkontext Anforderungen geben.
+>Seien Sie vorsichtig bei anderen Möglichkeiten `FileContext` , um Ihre computekapazität zu berechnen. Einige Interaktionen mit der Benutzeroberfläche sind synchron und basieren auf einer hohen Anzahl von `FileContext` Anforderungen. Beispiele hierfür sind das Öffnen einer Editor-Registerkarte und das Öffnen eines **Projektmappen-Explorer** Kontextmenüs. Durch diese Aktionen werden viele buildkontexttyp Anforderungen erstellt.
 
-## <a name="file-context-related-apis"></a>Dateikontext beziehen APIs.
+## <a name="file-context-related-apis"></a>Mit dem Datei Kontext verbundene APIs
 
 - <xref:Microsoft.VisualStudio.Workspace.FileContext> enthält Daten und Metadaten.
-- <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> und <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider`1> den Kontext zu erstellen.
-- <xref:Microsoft.VisualStudio.Workspace.ExportFileContextProviderAttribute> exportiert eine Datei Kontextanbieter.
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> wird für Verbraucher verwendet, um dateikontexte zu erhalten.
-- <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes> definiert die Build-Kontexttypen, die belegt "Ordner öffnen".
+- <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> und <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider`1> Erstellen Sie den Datei Kontext.
+- <xref:Microsoft.VisualStudio.Workspace.ExportFileContextProviderAttribute> exportiert einen Datei Kontext Anbieter.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> wird verwendet, damit Consumer Datei Kontexte erhalten.
+- <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes> definiert buildkontexttypen, die vom geöffneten Ordner verwendet werden.
 
-## <a name="file-context-actions"></a>Datei kontextaktionen
+## <a name="file-context-actions"></a>Datei Kontext Aktionen
 
-Während einer `FileContext` selbst ist nur Daten über einige Dateien, eine <xref:Microsoft.VisualStudio.Workspace.IFileContextAction> ist eine Möglichkeit, express, und mit diesen Daten. `IFileContextAction` ist die Nutzung flexibel. Zwei der am häufigsten vorkommenden Fälle erstellen-Debuggen und.
+Ein `FileContext` selbst ist nur Daten über einige Dateien, eine <xref:Microsoft.VisualStudio.Workspace.IFileContextAction> Möglichkeit, diese Daten auszudrücken und darauf zu reagieren. `IFileContextAction` ist in seiner Verwendung flexibel. Zwei der häufigsten Fälle sind das entwickeln und Debuggen.
 
-## <a name="reporting-progress"></a>Statusmeldung
+## <a name="reporting-progress"></a>Melden des Status
 
-Die <xref:Microsoft.VisualStudio.Workspace.IFileContextActionBase.ExecuteAsync%2A> -Methode übergeben `IProgress<IFileContextActionProgressUpdate>`, aber das Argument darf nicht als dieses Typs verwendet werden. `IFileContextActionProgressUpdate` ist eine leere Schnittstelle und den Aufruf `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` löst möglicherweise `NotImplementedException`. Stattdessen die `IFileContextAction` muss das Argument in einen anderen Typ je nach Bedarf für das Szenario umgewandelt.
+Die <xref:Microsoft.VisualStudio.Workspace.IFileContextActionBase.ExecuteAsync%2A> Methode wird erfolgreich durchgeführt `IProgress<IFileContextActionProgressUpdate>` , aber das Argument sollte nicht als dieser Typ verwendet werden. `IFileContextActionProgressUpdate` ist eine leere Schnittstelle, und der Aufruf von löst `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` möglicherweise aus `NotImplementedException` . Stattdessen muss das- `IFileContextAction` Argument in einen anderen Typ umwandeln, wenn dies für das Szenario notwendig ist.
 
-Informationen zu den Arten von Visual Studio bereitgestellt werden finden Sie in das entsprechende Szenario-Dokumentation.
+Informationen zu den Typen, die von Visual Studio bereitgestellt werden, finden Sie in der Dokumentation des jeweiligen Szenarios.
 
-## <a name="file-context-action-related-apis"></a>Dateikontextaktion beziehen APIs.
+## <a name="file-context-action-related-apis"></a>Mit Datei Kontext Aktionen verbundene APIs
 
-- <xref:Microsoft.VisualStudio.Workspace.IFileContextAction> führt einige Verhalten basierend auf einer `FileContext`.
-- <xref:Microsoft.VisualStudio.Workspace.IFileContextActionProvider> erstellt Instanzen von `IFileContextAction`.
-- <xref:Microsoft.VisualStudio.Workspace.ExportFileContextActionProviderAttribute> den Typ exportiert `IWorkspaceProviderFactory<IFileContextActionProvider>`.
+- <xref:Microsoft.VisualStudio.Workspace.IFileContextAction> führt ein gewisses Verhalten auf Grundlage eines aus `FileContext` .
+- <xref:Microsoft.VisualStudio.Workspace.IFileContextActionProvider> erstellt Instanzen von `IFileContextAction` .
+- <xref:Microsoft.VisualStudio.Workspace.ExportFileContextActionProviderAttribute> exportiert den Typ `IWorkspaceProviderFactory<IFileContextActionProvider>` .
 
-## <a name="file-watching"></a>Überwachung von Dateien
+## <a name="file-watching"></a>Dateiüberwachung
 
-Ein Arbeitsbereich Lauscht auf dateiänderungsbenachrichtigungen und stellt die <xref:Microsoft.VisualStudio.Workspace.IFileWatcherService> über <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. Dateien, die mit der Einstellung "ExcludedItems" übereinstimmt, werden nicht Benachrichtigungsereignisse Datei erstellt. Ein Schwellenwert zwischen Ereignissen dient zur Vereinfachung der Benachrichtigung und doppelte Verringerung. Wenn Sie auf eine dateiänderung reagieren müssen, sollten Sie diesen Dienst abonnieren.
+Ein Arbeitsbereich lauscht auf Datei Änderungs Benachrichtigungen und stellt die <xref:Microsoft.VisualStudio.Workspace.IFileWatcherService> via bereit <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A> . Dateien, die mit der Einstellung "ExcludedItems" übereinstimmen, führen keine Datei Benachrichtigungs Ereignisse aus. Ein Schwellenwert zwischen Ereignissen wird für Benachrichtigungs Vereinfachung und doppelte Reduzierung verwendet. Wenn Sie auf eine Datei Änderung reagieren müssen, sollten Sie diesen Dienst abonnieren.
 
 >[!TIP]
->Des Arbeitsbereichs [Indexdienst](workspace-indexing.md) standardmäßig Ereignisse abonniert. Dateihinzufügungen und Änderungen führt dazu, dass relevante `IFileScanner`s-Ereignisse für neue Daten für diese Datei aufgerufen werden. Datei löschen entfernt die indizierte Daten. Sie müssen nicht abonnieren Ihre `IFileScanner` an den Datei-Watcher-Dienst.
+>Der [Indizierungs Dienst](workspace-indexing.md) eines Arbeitsbereichs abonniert Datei Ereignisse standardmäßig. Datei Ergänzungen und-Änderungen bewirken, `IFileScanner` dass relevante s-Ereignisse für neue Daten für diese Datei aufgerufen werden. Durch Datei Löschungen werden indizierte Daten entfernt. Sie müssen `IFileScanner` den Datei-watcherdienst nicht abonnieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Indizierung](workspace-indexing.md) -Indizierung Arbeitsbereich erfasst und Informationen zum Arbeitsbereich beibehalten.
-* [Arbeitsbereiche](workspaces.md) -überprüfen Sie die Arbeitsbereich-Konzepte und einstellungsspeicher.
+* [Indizierung](workspace-indexing.md) : die Arbeitsbereichs Indizierung sammelt und speichert Informationen über den Arbeitsbereich.
+* [Arbeitsbereiche](workspaces.md) : Überprüfen Sie die Arbeitsbereichs Konzepte und die Einstellungs Speicherung.

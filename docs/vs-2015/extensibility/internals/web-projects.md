@@ -11,24 +11,24 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2994c219dd1aadf7f5b9bc833eb7867baede9a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144343"
 ---
 # <a name="web-projects"></a>Webprojekte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ein Web-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum die Webanwendungen. Sie können eine Webseite, die mit herkömmlichen Programmiersprachen wie Programmieren [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../../includes/csprcs-md.md)], zu sammeln und Verarbeitung von einem Benutzer, in einer Datenbank zu speichern und so weiter. Webseiten mit den zugehörigen Code werden als intelligente Webseiten bezeichnet.  
+Ein Webprojekt System ist ein Projekt System, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Sie können eine Webseite mit herkömmlichen Programmiersprachen (z. b. oder) programmieren, [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] um Informationen von einem Benutzer zu erfassen und zu verarbeiten, in einer Datenbank zu speichern usw. Webseiten mit zugeordneter Code werden als Smart Web Pages bezeichnet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Grundlagen](../../extensibility/internals/web-project-essentials.md)  
- Zeigt die wichtigen Elemente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Webprojekte.  
+ [Essentials](../../extensibility/internals/web-project-essentials.md)  
+ Zeigt die wichtigen-Element- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Webprojekte an.  
   
  [Websiteunterstützung](../../extensibility/internals/web-site-support.md)  
- Bietet eine Übersicht über [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Websiteprojekte. Ein Websiteprojekt generiert eine ausführbare Datei für jedes smart-Webseite. Weitere ausführbare Dateien werden aus der Quellcodedateien im Ordner "kann" generiert.  
+ Bietet einen Überblick über [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Website Projekte. Ein Website Projekt generiert eine ausführbare Datei für jede intelligente Webseite. Aus den Quell Code Dateien im Ordner/App_Code werden zusätzliche ausführbare Dateien generiert.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projekte](../../extensibility/internals/projects.md)  
- Beschreibt das Erweitern der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektsystem.
+ Beschreibt, wie das [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projekt System erweitert wird.

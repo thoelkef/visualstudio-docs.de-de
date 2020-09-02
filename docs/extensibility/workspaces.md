@@ -8,58 +8,58 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952762"
 ---
 # <a name="workspaces"></a>Arbeitsbereiche
 
-Ein Arbeitsbereich ist Darstellungsweise von einer Sammlung von Dateien in Visual Studio ["Ordner öffnen"](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), und es wird durch die <xref:Microsoft.VisualStudio.Workspace.IWorkspace> Typ. Selbst nicht der Arbeitsbereich die Inhalte oder Features, die im Zusammenhang mit Dateien im Ordner vertraut machen. Stattdessen bietet es einen allgemeinen Satz von APIs für Funktionen und Erweiterungen erstellen und Nutzen von Daten, denen andere Benutzer darauf reagieren können. Die Hersteller bestehen über die [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) mit verschiedenen Attributen exportieren.
+In einem Arbeitsbereich stellt Visual Studio eine beliebige Sammlung von Dateien im [geöffneten Ordner](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)dar und wird durch den- <xref:Microsoft.VisualStudio.Workspace.IWorkspace> Typ dargestellt. Der Arbeitsbereich kennt nicht den Inhalt oder die Funktionen im Zusammenhang mit Dateien innerhalb des Ordners. Vielmehr stellt Sie einen allgemeinen Satz von APIs für Features und Erweiterungen bereit, um Daten zu erzeugen und zu nutzen, auf die andere Benutzer reagieren können. Die Producer werden über die [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) mithilfe verschiedener Export Attribute zusammengesetzt.
 
-## <a name="workspace-providers-and-services"></a>Arbeitsbereich-Anbieter und -Dienste
+## <a name="workspace-providers-and-services"></a>Arbeitsbereichs Anbieter und-Dienste
 
-Arbeitsbereich-Anbieter und -Dienste geben Sie die Daten und Funktionen, auf den Inhalt eines Arbeitsbereichs zu reagieren. Sie können bieten kontextbezogene Dateiinformationen, Symbole in Quelldateien oder Funktionen zu erstellen.
+Arbeitsbereichs Anbieter und-Dienste stellen die Daten und Funktionen bereit, die auf den Inhalt eines Arbeitsbereichs reagieren sollen. Sie können kontextabhängige Dateiinformationen, Symbole in Quelldateien oder Buildfunktionen bereitstellen.
 
-Verwenden Sie die beiden Konzepte eine [Factorymuster](https://en.wikipedia.org/wiki/Factory_method_pattern) und über MEF durch den Arbeitsbereich importiert werden. Implementieren Sie alle ExportAttribute `IProviderMetadataBase` oder `IWorkspaceServiceFactoryMetadata`, aber es gibt konkrete Typen, die Erweiterungen für die exportierten Typen verwendet werden soll.
+Beide Konzepte verwenden ein [Factorymuster](https://en.wikipedia.org/wiki/Factory_method_pattern) und werden durch MEF durch den Arbeitsbereich importiert. Alle Export Attribute implementieren `IProviderMetadataBase` oder `IWorkspaceServiceFactoryMetadata` . es gibt jedoch konkrete Typen, die Erweiterungen für exportierte Typen verwenden sollten.
 
-Ein Unterschied zwischen Anbietern und -Diensten ist die Beziehung mit dem Arbeitsbereich. Viele Anbieter von einem bestimmten Typ kann über einen Arbeitsbereich verfügen, aber nur ein Dienst von einem bestimmten Typ wird pro Arbeitsbereich erstellt. Z. B. ein Arbeitsbereich verfügt über viele dateianbieter Scanner, aber der Arbeitsbereich bietet nur einen Indexdienst pro Arbeitsbereich.
+Ein Unterschied zwischen Anbietern und Diensten ist die Beziehung zum Arbeitsbereich. Ein Arbeitsbereich kann viele Anbieter eines bestimmten Typs aufweisen, es wird jedoch nur ein Dienst eines bestimmten Typs pro Arbeitsbereich erstellt. Ein Arbeitsbereich verfügt beispielsweise über viele Dateiscanner-Anbieter, aber der Arbeitsbereich verfügt über nur einen Indizierungs Dienst pro Arbeitsbereich.
 
-Ein weiterer wesentlicher Unterschied ist die Nutzung von Daten von Anbietern und -Dienste. Der Arbeitsbereich ist der Einstiegspunkt zum Abrufen von Daten von Anbietern Gründen. Zuerst müssen die Anbieter in der Regel einige schmalen Satz von Daten, die sie erstellen. Die Daten möglicherweise Symbole für eine C# Quelldatei oder erstellen Sie die dateikontexte für einen _Datei "cmakelists.txt"_ Datei. Der Arbeitsbereich wird Consumer Anforderung an die Anbieter, deren Metadaten ausrichten, mit der Anforderung, überein. Zweitens: Einige Szenarien zu ermöglichen, für viele Anbieter zum mitwirken an den eine Anforderung, während andere Szenarien verwenden Sie den Anbieter mit der höchsten Priorität.
+Ein weiterer wichtiger Unterschied ist die Nutzung von Daten von Anbietern und Diensten. Der Arbeitsbereich ist der Einstiegspunkt zum erhalten von Daten von Anbietern aus mehreren Gründen. Zunächst verfügen Anbieter in der Regel über einen schmalen Satz von Daten, die Sie erstellen. Bei den Daten kann es sich um Symbole für eine c#-Quelldatei oder um builddateikontexte für eine _CMakeLists.txt_ Datei handeln. Der Arbeitsbereich entspricht der Anforderung eines Consumers an die Anbieter, deren Metadaten mit der Anforderung übereinstimmen. Zweitens ermöglichen einige Szenarien vielen Anbietern, an einer Anforderung mitzuwirken, während andere Szenarien den Anbieter mit der höchsten Priorität verwenden.
 
-Im Gegensatz dazu können Erweiterungen Instanzen abgerufen und direkt mit dem Arbeitsbereich-Diensten zu interagieren. Erweiterungsmethoden für `IWorkspace` stehen für die Dienste, die von Visual Studio bereitgestellt, wie z. B. <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. Die Erweiterung kann es sich um einen Arbeitsbereich-Dienst für die Komponenten in Ihrer Erweiterung oder für andere Erweiterungen Nutzen bieten. Consumer verwenden sollten <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> oder eine Erweiterungsmethode, die Sie angeben, auf die `IWorkspace` Typ.
+Im Gegensatz dazu können Erweiterungen Instanzen von erhalten und direkt mit den Arbeitsbereichs Diensten interagieren. Erweiterungs Methoden für `IWorkspace` sind für die Dienste verfügbar, die von Visual Studio bereitgestellt werden, z <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A> . b.. Ihre Erweiterung bietet möglicherweise einen Arbeitsbereichs Dienst für Komponenten innerhalb ihrer Erweiterung oder für andere Erweiterungen. Consumer sollten <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> oder eine Erweiterungsmethode verwenden, die Sie für den `IWorkspace` Typ angeben.
 
 >[!WARNING]
-> Geschrieben Sie Dienste, die in mit Visual Studio Konflikt nicht werden. Es kann zu unerwarteten Problemen führen.
+> Erstellen Sie keine Dienste, die mit Visual Studio in Konflikt stehen. Dies kann zu unerwarteten Problemen führen.
 
-## <a name="disposal-on-workspace-closure"></a>Löschung auf Arbeitsbereich schließen
+## <a name="disposal-on-workspace-closure"></a>Entsorgung bei der Schließung des Arbeitsbereichs
 
-Extender möglicherweise auf den Abschluss eines Arbeitsbereichs, dispose, aber aufrufen asynchroner Code. Die <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> Schnittstelle zur Verfügung, um diesen Code einfach ist.
+Wenn ein Arbeitsbereich geschlossen wird, müssen Extender ggf. den asynchronen Code verwerfen, aber abrufen. Die- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> Schnittstelle ist verfügbar, damit Sie diesen Code leicht schreiben können.
 
 ## <a name="related-types"></a>Verwandte Typen
 
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspace> ist die zentrale Entität für eine geöffnete Arbeitsbereich wie einen geöffneten Ordner.
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceProviderFactory`1> erstellt einen Anbieter pro Arbeitsbereich instanziiert.
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceServiceFactory> erstellt einen Dienst pro Arbeitsbereich instanziiert.
-- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> sollte auf Anbieter und Dienste, die zum Ausführen von asynchronen Codes bei der Freigabe müssen implementiert werden.
-- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> Stellt Hilfsmethoden für den Zugriff auf bekannten Dienste oder beliebige Dienste bereit.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspace> ist die zentrale Entität für einen geöffneten Arbeitsbereich wie einen geöffneten Ordner.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceProviderFactory`1> erstellt einen Anbieter pro Arbeitsbereich, der instanziiert wird.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceServiceFactory> erstellt einen Dienst pro Arbeitsbereich, der instanziiert wird.
+- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> sollte für Anbieter und Dienste implementiert werden, die asynchronen Code während der Beseitigung ausführen müssen.
+- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> stellt Hilfsmethoden für den Zugriff auf bekannte Dienste oder beliebige Dienste bereit.
 
 ## <a name="workspace-settings"></a>Arbeitsbereichseinstellungen
 
-Arbeitsbereiche umfassen eine <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> mit einfachen, aber leistungsfähigen Kontrolle über einen Arbeitsbereich. Eine grundlegende Übersicht über die Einstellungen finden Sie unter [Anpassen von Build- und debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Arbeitsbereiche verfügen <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> über einen Dienst mit einfacher, aber leistungsfähiger Kontrolle über einen Arbeitsbereich. Eine grundlegende Übersicht über die Einstellungen finden Sie unter [Anpassen von Build-und debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-Einstellungen für die meisten `SettingsType` Typen sind _JSON_ Dateien, z. B. _VSWorkspaceSettings.json_ und _"Tasks.VS.JSON"_.
+Einstellungen für die meisten `SettingsType` Typen sind _JSON_ -Dateien, z. b. _VSWorkspaceSettings.json_ und _tasks.vs.json_.
 
-Die Leistungsfähigkeit von arbeitsbereichseinstellungen decken einen "Bereiche", die einfach Pfade innerhalb des Arbeitsbereichs sind. Wenn ein Consumer aufruft <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>, werden alle Bereiche, die den angeforderten Pfad und den Typ der Einstellung enthalten aggregiert. Bereich Aggregation Priorität lautet wie folgt aus:
+Die Leistungsfähigkeit der Arbeitsbereichs Einstellungen liegt bei "Bereichen", bei denen es sich einfach um Pfade innerhalb des Arbeitsbereichs handelt. Wenn ein Consumer aufruft <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> , werden alle Bereiche, die den angeforderten Pfad und den Typ der Einstellung enthalten, aggregiert. Die Bereichs Aggregations Priorität lautet wie folgt:
 
-1. "Lokale Einstellungen" in der Regel dem arbeitsbereichstamm `.vs` Verzeichnis.
+1. "Lokale Einstellungen", bei denen es sich in der Regel um das Stammverzeichnis des Arbeitsbereichs handelt `.vs`
 1. Der angeforderte Pfad selbst.
-1. Das übergeordnete Verzeichnis der der angeforderte Pfad.
-1. Alle übergeordneten Weitere Verzeichnisse bis zur und einschließlich dem arbeitsbereichstamm.
-1. "Global Settings", die in einem Benutzerverzeichnis ist.
+1. Das übergeordnete Verzeichnis des angeforderten Pfads.
+1. Alle weiteren übergeordneten Verzeichnisse bis einschließlich des Arbeitsbereichs Stamms.
+1. "Globale Einstellungen", die sich in einem Benutzerverzeichnis befinden.
 
-Das Ergebnis ist eine Instanz der <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>. Dieses Objekt enthält die Einstellungen für einen bestimmten Typ und kann abgefragt werden, für Schlüsselnamen festlegen, die als gespeicherte `string`. Die <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Methoden und <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> Erweiterungsmethoden erwarten, dass den Aufrufer den Typ des angeforderten Einstellungswerts kennen. Wie die meisten Einstellungsdateien, als beibehalten werden _JSON_ -Dateien verwenden viele Aufrufe `string`, `bool`, `int`, und Arrays dieser Typen. Objekttypen werden ebenfalls unterstützt. In diesen Fällen können Sie `IWorkspaceSettings` selbst als Typargument. Zum Beispiel:
+Das Ergebnis ist eine Instanz von <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> . Dieses Objekt enthält die Einstellungen für einen bestimmten Typ und kann zum Festlegen von Schlüsselnamen, die als gespeichert werden, abgefragt werden `string` . Die <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Methoden und <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> Erweiterungs Methoden erwarten, dass der Aufrufer den Typ des angeforderten Einstellungs Werts kennt. Da die meisten Einstellungsdateien als _JSON_ -Dateien beibehalten werden, verwenden viele Aufrufe `string` , `bool` , `int` und Arrays dieser Typen. Objekttypen werden ebenfalls unterstützt. In diesen Fällen können Sie `IWorkspaceSettings` sich selbst als Typargument verwenden. Beispiel:
 
 ```json
 {
@@ -76,7 +76,7 @@ Das Ergebnis ist eine Instanz der <xref:Microsoft.VisualStudio.Workspace.Setting
 }
 ```
 
-Sofern diese Einstellungen wurden in eines vom Benutzers _VSWorkspaceSettings.json_, die Daten zugegriffen werden können:
+Angenommen, diese Einstellungen befinden sich imVSWorkspaceSettings.jseines Benutzers _ auf, auf_die Daten wie folgt zugegriffen werden kann:
 
 ```csharp
 using System.Collections.Generic;
@@ -111,13 +111,13 @@ private static void ReadSettings(IWorkspace workspace)
 ```
 
 >[!NOTE]
->Diese Einstellungen APIs sind unabhängig von den APIs zur Verfügung, in der `Microsoft.VisualStudio.Settings` Namespace. Arbeitsbereichseinstellungen sind unabhängig von dem Host und Arbeitsbereich spezifische Dateien oder dynamische Einstellungsanbieter verwenden.
+>Diese Einstellungs-APIs stehen nicht im Zusammenhang mit den im-Namespace verfügbaren APIs `Microsoft.VisualStudio.Settings` . Die Arbeitsbereichs Einstellungen sind agnostisch des Hosts und verwenden Arbeitsbereichs spezifische Einstellungsdateien oder dynamische Einstellungs Anbieter.
 
-### <a name="providing-dynamic-settings"></a>Bereitstellen von dynamischen-Einstellungen
+### <a name="providing-dynamic-settings"></a>Bereitstellen dynamischer Einstellungen
 
-Extensions bieten <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProvider>s. Diese in-Memory-Anbieter können Erweiterungen zum Hinzufügen von Einstellungen oder anderen überschreiben.
+Erweiterungen können s bereitstellen <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProvider> . Mit diesen in-Memory-Anbietern können Erweiterungen Einstellungen hinzufügen oder andere außer Kraft setzen.
 
-Exportieren einer `IWorkspaceSettingsProvider` unterscheidet sich von anderen Anbietern Arbeitsbereich. Die Factory ist nicht `IWorkspaceProviderFactory` und kein besonderes Attribut-Typ vorhanden ist. Implementieren Sie stattdessen <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> und `[Export(typeof(IWorkspaceSettingsProviderFactory))]`.
+Der Export eines `IWorkspaceSettingsProvider` unterscheidet sich von anderen Arbeitsbereichs Anbietern. Die Factory ist nicht, `IWorkspaceProviderFactory` und es gibt keinen speziellen Attributtyp. Implementieren Sie stattdessen, <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> und verwenden Sie `[Export(typeof(IWorkspaceSettingsProviderFactory))]` .
 
 ```csharp
 // Common workspace provider factory pattern
@@ -139,19 +139,19 @@ internal class MySettingsProviderFactory : IWorkspaceSettingsProviderFactory
 ```
 
 >[!TIP]
->Bei der Implementierung von Methoden, die zurückgeben `IWorkspaceSettingsSource` (z. B. `IWorkspaceSettingsProvider.GetSingleSettings`), eine Instanz des zurückgeben `IWorkspaceSettings` statt `IWorkspaceSettingsSource`. `IWorkspaceSettings` enthält weitere Informationen, die bei der einige Einstellungen Aggregationen nützlich sein kann.
+>Gibt beim Implementieren von Methoden, die zurückgeben `IWorkspaceSettingsSource` (wie `IWorkspaceSettingsProvider.GetSingleSettings` ), eine Instanz von anstelle von zurück `IWorkspaceSettings` `IWorkspaceSettingsSource` . `IWorkspaceSettings` bietet weitere Informationen, die bei einigen Einstellungs Aggregationen nützlich sein können.
 
-### <a name="settings-related-apis"></a>Einstellungen für beziehen APIs.
+### <a name="settings-related-apis"></a>Einstellungs bezogene APIs
 
-- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> liest und aggregiert die Einstellungen für den Arbeitsbereich.
-- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetSettingsManager%2A> Ruft die `IWorkspaceSettingsManager` für einen Arbeitsbereich.
-- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> Ruft die Einstellungen für einen bestimmten Bereich aggregiert für alle überlappenden Bereiche ab.
+- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> Hiermit werden Einstellungen für den Arbeitsbereich gelesen und aggregiert.
+- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetSettingsManager%2A> Ruft den `IWorkspaceSettingsManager` für einen Arbeitsbereich ab.
+- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> Ruft Einstellungen für einen angegebenen Bereich ab, der über alle überlappenden Bereiche aggregiert wird.
 - <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> enthält Einstellungen für einen bestimmten Bereich.
 
-## <a name="workspace-suggested-practices"></a>Arbeitsbereich empfohlene Vorgehensweisen
+## <a name="workspace-suggested-practices"></a>Empfohlene Vorgehensweisen
 
-- Zurückgeben von Objekten aus `IWorkspaceProviderFactory.CreateProvider` oder ähnliche APIs Denken Sie daran, die ihre `Workspace` Kontext beim Erstellen. Anbieter-Schnittstellen wurden erwartet, dass bei der Erstellung dieses Objekts gespeichert wird.
-- Speichern Sie Arbeitsbereich spezifische Caches oder Einstellungen innerhalb der "Lokale Einstellungen"-Pfad des Arbeitsbereichs. Erstellen Sie einen Pfad für die Datei mit `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` in Visual Studio 2017 Version 15.6 oder höher. Verwenden Sie für Versionen vor Version 15.6 den folgenden Codeausschnitt:
+- Rückgabe von Objekten von `IWorkspaceProviderFactory.CreateProvider` oder ähnlichen APIs, die Ihren `Workspace` Kontext bei der Erstellung merken. Anbieter Schnittstellen werden geschrieben, erwartet, dass dieses Objekt bei der Erstellung beibehalten wird.
+- Speichern Sie Arbeitsbereichs spezifische Caches oder Einstellungen im Pfad "lokale Einstellungen" des Arbeitsbereichs. Erstellen Sie einen Pfad für die Datei, indem Sie `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` in Visual Studio 2017, Version 15,6 oder höher, verwenden. Verwenden Sie für Versionen vor Version 15,6 den folgenden Code Ausschnitt:
 
 ```csharp
 using System.IO;
@@ -165,31 +165,31 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 }
 ```
 
-## <a name="solution-events-and-package-auto-load"></a>Projektmappen-Ereignissen und das Paket automatisch laden
+## <a name="solution-events-and-package-auto-load"></a>Projektmappenereignisse und Automatisches Laden von Paketen
 
-Geladenen Pakete implementieren können `IVsSolutionEvents7` , und rufen `IVsSolution.AdviseSolutionEvents`. Es enthält Ereignisse für das Öffnen und schließen einen Ordner in Visual Studio.
+Geladene Pakete können implementieren `IVsSolutionEvents7` und aufrufen `IVsSolution.AdviseSolutionEvents` . Dies schließt Ereignisse beim Öffnen und Schließen eines Ordners in Visual Studio ein.
 
-Ein UI-Kontext kann verwendet werden, um das Paket automatisch laden. Der Wert ist `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
+Ein Benutzeroberflächen Kontext kann verwendet werden, um das Paket automatisch zu laden. Der Wert ist `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Das Paket SourceExplorerPackage wurde nicht ordnungsgemäß geladen.
+### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Das sourceexplorerpackage-Paket wurde nicht ordnungsgemäß geladen.
 
-Arbeitsbereich Erweiterbarkeit ist stark MEF-basierte und Komposition Fehler bewirken, dass das Ordner öffnen, um Fehler beim Laden der hosting-Paket. Wenn eine Erweiterung ein Typs mit exportiert z. B. `ExportFileContextProviderAttribute`, aber der Typ nur implementiert `IWorkspaceProviderFactory<IFileContextActionProvider>`, wird eine Fehlermeldung beim Versuch, einen Ordner in Visual Studio zu öffnen.
+Die Erweiterbarkeit von Arbeitsbereichen ist hochgradig MEF-basiert, und Kompositions Fehler bewirken, dass das Paket, das den geöffneten Ordner gehostet, nicht geladen wird. Wenn eine Erweiterung z. b. einen Typ mit exportiert `ExportFileContextProviderAttribute` , der Typ jedoch nur implementiert `IWorkspaceProviderFactory<IFileContextActionProvider>` , tritt ein Fehler auf, wenn versucht wird, einen Ordner in Visual Studio zu öffnen.
 
 ::: moniker range="vs-2017"
 
-Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+Fehlerdetails finden Sie unter " _%LocalAppData%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_". Beheben Sie alle Fehler für Typen, die von ihrer Erweiterung implementiert werden.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+Fehlerdetails finden Sie unter " _%LocalAppData%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_". Beheben Sie alle Fehler für Typen, die von ihrer Erweiterung implementiert werden.
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Datei Kontexten](workspace-file-contexts.md) -dateianbieter-Kontext bringen Code Intelligence für Arbeitsbereiche, die "Ordner öffnen".
-* [Indizierung](workspace-indexing.md) -Indizierung Arbeitsbereich erfasst und Informationen zum Arbeitsbereich beibehalten.
+* [Datei Kontexte](workspace-file-contexts.md) : Datei Kontext Anbieter bringen Code Intelligenz für geöffnete Ordner Arbeitsbereiche.
+* [Indizierung](workspace-indexing.md) : die Arbeitsbereichs Indizierung sammelt und speichert Informationen über den Arbeitsbereich.
