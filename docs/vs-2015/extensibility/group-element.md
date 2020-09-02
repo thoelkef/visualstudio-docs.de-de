@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204280"
 ---
 # <a name="group-element"></a>Group-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiert eine Gruppe der VSPackage-Befehl.  
+Definiert eine VSPackage-Befehlsgruppe.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,25 +36,25 @@ Definiert eine Gruppe der VSPackage-Befehl.
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
-|guid|Erforderlich. GUID der Befehls-ID der GUID-ID.|  
-|id|Erforderlich. ID des Befehls-ID der GUID-ID.|  
+|guid|Erforderlich. GUID des GUID-/ID-befehlsbezeichners.|  
+|id|Erforderlich. ID des GUID-/ID-befehlsbezeichners.|  
 |priority|Optional. Ein numerischer Wert, der die Priorität angibt.|  
-|Bedingung|Optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|Übergeordnetes Element|Optional. Das übergeordnete Element der Schaltfläche.|  
+|Parent|Optional. Das übergeordnete Element der Schaltfläche.|  
 |Anmerkung|Optionaler Kommentar.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[Groups-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|  
+|[Groups-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehls Gruppen eines VSPackage definieren.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -64,5 +64,5 @@ Definiert eine Gruppe der VSPackage-Befehl.
 </Group>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

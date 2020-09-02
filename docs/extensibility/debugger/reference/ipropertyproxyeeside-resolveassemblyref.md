@@ -1,5 +1,5 @@
 ---
-title: iPropertyProxyeeside::ResolveAssemblyRef | Microsoft Docs
+title: 'Ipropertyproxyeeside:: resolveassemblyref | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714887"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Bestimmt den Speicherort der angegebenen verwalteten Assemblyreferenz.
+Bestimmt den Speicherort des angegebenen verwalteten Assemblyverweises.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,25 +49,25 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>Parameter
 `assemName`\
-[in] Name der aufgelösten Assembly.
+in Der Name der Assembly, die aufgelöst werden soll.
 
 `assemBytes`\
-[out] Gibt ein [IEEDataStorage-Objekt](../../../extensibility/debugger/reference/ieedatastorage.md) zurück, das die Assemblybytes enthält, die dem Verweis zugeordnet sind.
+vorgenommen Gibt ein [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt zurück, das die dem Verweis zugeordneten Assemblybytes enthält.
 
 `assemPdb`\
-[out] Gibt `IEEDataStorage` ein Objekt zurück, das die Symbolspeicherdaten enthält, die diesem Verweis zugeordnet sind.
+vorgenommen Gibt ein-Objekt zurück, `IEEDataStorage` das die diesem Verweis zugeordneten Symbol Speicherdaten enthält.
 
 `assemLocation`\
-[out] Gibt die Pfadposition dieses Verweises zurück.
+vorgenommen Gibt den Pfad zum Speicherort dieses Verweises zurück.
 
 `alr`\
-[out] Gibt einen Wert aus der ASSEMBLYLOCRESOLUTION-Enumeration [zurück,](../../../extensibility/debugger/reference/assemblylocresolution.md) der die Position der Assembly dieses Verweises angibt.
+vorgenommen Gibt einen Wert aus der [assemblylokresolution](../../../extensibility/debugger/reference/assemblylocresolution.md) -Enumeration zurück, der den Speicherort der Assembly dieses Verweises angibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird in der Regel nicht von einem benutzerdefinierten Ausdrucksevaluator implementiert.
+ Diese Methode wird in der Regel nicht von einer benutzerdefinierten Ausdrucks Auswertung implementiert.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

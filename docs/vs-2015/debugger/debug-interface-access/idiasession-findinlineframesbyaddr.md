@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByAddr | Microsoft-Dokumentation
+title: 'IDiaSession:: findinlineframesbyaddr | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 418968eabaa2af77b2c67eed6589d9ac437fd76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165526"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft eine Enumeration, die einem Client zum iterieren durch alle Inlineframes auf einer bestimmten Adresse ermöglicht.  
+Ruft eine Enumeration ab, mit der ein Client alle Inline Rahmen einer bestimmten Adresse durchlaufen kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,21 +35,21 @@ HRESULT findInlineFramesByAddr ( 
   
 #### <a name="parameters"></a>Parameter  
  `parent`  
- [in] Ein `IDiaSymbol` Objekt, das das übergeordnete Element darstellt.  
+ in Ein `IDiaSymbol` Objekt, das das übergeordnete Element darstellt.  
   
  `isect`  
- [in] Gibt die Komponente im Abschnitt der Adresse.  
+ in Gibt die Abschnitts Komponente der Adresse an.  
   
  `offset`  
- [in] Gibt die Offset-Komponente der Adresse.  
+ in Gibt die Offset Komponente der Adresse an.  
   
  `ppResult`  
- [out] Enthält eine `IDiaEnumSymbols` Objekt, das die Liste der Frames enthält, die abgerufen werden.  
+ vorgenommen Enthält ein- `IDiaEnumSymbols` Objekt, das die Liste der abgerufenen Frames enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   

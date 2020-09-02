@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b56cf11057957b0eb99fc065ed26af10d8adfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670584"
 ---
 # <a name="how-to-update-existing-templates"></a>Gewusst wie: Aktualisieren vorhandener Vorlagen
@@ -51,7 +51,7 @@ Nachdem Sie eine Vorlage erstellt und die Dateien in einer ZIP-Datei komprimiert
 
 3. Ändern oder löschen Sie die aktuellen Vorlagendateien, oder fügen Sie der Vorlage neue Dateien hinzu.
 
-4. Öffnen, ändern und speichern Sie die XML-Datei mit der Erweiterung .vstemplate, damit das geänderte Verhalten bzw. neue Dateien berücksichtigt werden. Weitere Informationen zum VSTEMPLATE-Schema finden Sie in der [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md). Weitere Informationen darüber, welche Elemente in den Quelldateien parametrisiert werden können, finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).
+4. Öffnen, ändern und speichern Sie die XML-Datei mit der Erweiterung .vstemplate, damit das geänderte Verhalten bzw. neue Dateien berücksichtigt werden. Weitere Informationen zum VSTEMPLATE-Schema finden Sie in der [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md). Weitere Informationen dazu, was Sie in den Quelldateien parametrisieren können, finden Sie unter [Vorlagen Parameter](../ide/template-parameters.md) .
 
 5. Wählen Sie die Dateien in der Vorlage aus, klicken Sie mit der rechten Maustaste, klicken Sie auf **Senden an**, und klicken Sie dann auf **ZIP-komprimierter Ordner**. Die ausgewählten Dateien werden in einer ZIP-Datei komprimiert.
 
@@ -61,7 +61,7 @@ Nachdem Sie eine Vorlage erstellt und die Dateien in einer ZIP-Datei komprimiert
 
 8. Starten Sie (als Administrator) eine Instanz der Developer-Eingabeaufforderung (im Startmenü unter **Visual Studio 2010/Visual Studio-Tools/Developer-Eingabeaufforderung**).
 
-9. Führen Sie den folgenden Befehl aus: `devenv /installvstemplates`
+9. Führen Sie den folgenden Befehl aus: `devenv /installvstemplates`.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md) [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) [Visual Studio-Vorlagen Schema Referenz](../extensibility/visual-studio-template-schema-reference.md) für Vorlagen [Parameter](../ide/template-parameters.md) Gewusst [wie: Erstellen von Starter Kits](../ide/how-to-create-starter-kits.md)

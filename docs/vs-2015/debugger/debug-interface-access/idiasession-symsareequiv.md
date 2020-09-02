@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Symsareequiv | Microsoft-Dokumentation'
+title: 'IDiaSession:: symsAreEquiv | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba8c77d7d97da75ce82fcbe732db64acf633b8af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150217"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Überprüft, um festzustellen, ob zwei Symbole entsprechen.  
+Prüft, ob zwei Symbole äquivalent sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,14 +36,14 @@ HRESULT symsAreEquiv ( 
   
 #### <a name="parameters"></a>Parameter  
  `symbolA`  
- [in] Die erste [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das im Vergleich verwendet.  
+ in Das erste [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das beim Vergleich verwendet wird.  
   
  `symbolB`  
- [in] Die zweite `IDiaSymbol` Objekt, das im Vergleich verwendet.  
+ in Das zweite `IDiaSymbol` im Vergleich verwendete-Objekt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt zurück, wenn die Symbole gleichwertig sind, `S_OK`ist, andernfalls gibt `S_FALSE`, die Symbole sind kein Äquivalent. Geben Sie andernfalls einen Fehlercode zurück.  
+ Wenn die Symbole äquivalent sind, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben `S_FALSE` , die Symbole sind nicht äquivalent. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

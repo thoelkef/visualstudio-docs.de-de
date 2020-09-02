@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165447"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Installieren mehrerer Sprachversionen von Visual Studio
@@ -34,7 +34,7 @@ Wenn Sie ein oder mehrere Sprachpakete installieren, können Sie Visual Studio 2
 
 - Sie können Sprachpakete mithilfe des Wartungsmodus von Visual Studio-Setup deinstallieren. Öffnen Sie die **Systemsteuerung**und dann **Programme und Funktionen**. Wählen Sie die Version von Visual Studio und dann die Option **Uninstall/Change**aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Microsoft Language Interface Packs (LIPs) und Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
 - [Installieren von Visual Studio](../install/install-visual-studio-2015.md)

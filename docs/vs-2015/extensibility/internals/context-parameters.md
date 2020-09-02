@@ -1,5 +1,5 @@
 ---
-title: Kontextparameter | Microsoft-Dokumentation
+title: Kontext Parameter | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,58 +12,58 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 679bf567d2f44564d31d70b62c8663e665e1ea65
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697287"
 ---
 # <a name="context-parameters"></a>Kontextparameter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE), können Sie die Assistenten zum Hinzufügen der **neues Projekt**, **neues Element hinzufügen**, oder **Sub-Projekt hinzufügen** Dialogfelder. Die hinzugefügten Assistenten stehen auf der **Datei** Menü oder per Rechtsklick auf ein Projekt in **Projektmappen-Explorer**. Die IDE übergibt Kontextparameter für die Implementierung des Assistenten. Der Kontextparameter definieren den Zustand des Projekts aus, wenn die IDE der Assistent ruft.  
+In der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) können Sie Assistenten zu den Dialogfeldern **Neues Projekt**, **Neues Element hinzu**fügen oder **Unterprojekt hinzufügen** hinzufügen. Die hinzugefügten Assistenten sind im Menü **Datei** verfügbar, oder Sie klicken mit der rechten Maustaste auf ein Projekt in **Projektmappen-Explorer**. Die IDE übergibt Kontext Parameter an die Implementierung des Assistenten. Die Kontext Parameter definieren den Status des Projekts, wenn der Assistent von der IDE aufgerufen wird.  
   
- Starten der IDE Assistenten durch Festlegen der <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> -Kennzeichen in der IDE-Aufruf an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> Methode für das Projekt. Wenn festgelegt, muss das Projekt wird die `IVsExtensibility::RunWizardFile` Methode ausgeführt werden, mithilfe der Name des registrierten Assistenten "oder" GUID "und" anderen Kontextparameter, die von die IDE an sie übergeben.  
+ Die IDE startet Assistenten, indem das <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> -Flag im-Befehl der IDE auf die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> Methode für das Projekt festgelegt wird. Wenn festgelegt, muss das Projekt bewirken, `IVsExtensibility::RunWizardFile` dass die Methode ausgeführt wird, indem der Name oder die GUID des registrierten Assistenten und andere Kontext Parameter verwendet werden, die von der IDE an ihn weitergeleitet werden.  
   
-## <a name="context-parameters-for-new-project"></a>Kontextparameter für neues Projekt  
+## <a name="context-parameters-for-new-project"></a>Kontext Parameter für neues Projekt  
   
-|Parameter|Beschreibung|  
+|Parameter|BESCHREIBUNG|  
 |---------------|-----------------|  
-|`WizardType`|Assistenten-Typ registriert (<xref:EnvDTE.Constants.vsWizardNewProject>) oder die GUID, der den Typ des Assistenten angibt. In der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] -Implementierung, die GUID für den Assistenten ist {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}.|  
-|`ProjectName`|Eine Zeichenfolge, die eindeutige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektnamen.|  
-|`LocalDirectory`|Speicherort der Projektdateien zu arbeiten.|  
-|`InstallationDirectory`|Pfad des Verzeichnisses der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist die Installation.|  
-|`FExclusive`|Boolesches Flag gibt an, dass das Projekt geöffneten Projektmappen schließen.|  
-|`SolutionName`|Der Name der Projektmappendatei ohne den Verzeichnisabschnitt oder die sln-Erweiterung. Die SUO-Dateiname wird auch erstellt, mit `SolutionName`. Wenn dieses Argument keine leere Zeichenfolge ist, verwendet der Assistent <xref:EnvDTE._Solution.Create%2A> vor dem Hinzufügen des Projekts mit <xref:EnvDTE._Solution.AddFromTemplate%2A>. Wenn dieser Name eine leere Zeichenfolge ist, verwenden Sie <xref:EnvDTE._Solution.AddFromTemplate%2A> ohne <xref:EnvDTE._Solution.Create%2A>.|  
-|`Silent`|Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll wie **Fertig stellen** geklickt wurden (`TRUE`).|  
+|`WizardType`|Registrierter Wizard Type ( <xref:EnvDTE.Constants.vsWizardNewProject> ) oder die GUID, die den Typ des Assistenten angibt. In der- [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Implementierung lautet der GUID für den Assistenten {0F 90e1d0-4999-11d1-B6D1-00a0c90f 2744}.|  
+|`ProjectName`|Eine Zeichenfolge, die der eindeutige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektname ist.|  
+|`LocalDirectory`|Lokaler Speicherort von Arbeitsprojekt Dateien.|  
+|`InstallationDirectory`|Der Verzeichnispfad von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist "Installation".|  
+|`FExclusive`|Boolesches Flag, das angibt, dass das Projekt geöffnete Projektmappen schließen soll.|  
+|`SolutionName`|Der Name der Projektmappendatei ohne den Verzeichnis Teil bzw. die Erweiterung ". sln". Der suo-Dateiname wird auch mithilfe von erstellt `SolutionName` . Wenn dieses Argument keine leere Zeichenfolge ist, verwendet der Assistent, <xref:EnvDTE._Solution.Create%2A> bevor das Projekt mit dem hinzugefügt wird <xref:EnvDTE._Solution.AddFromTemplate%2A> . Wenn dieser Name eine leere Zeichenfolge ist, verwenden Sie <xref:EnvDTE._Solution.AddFromTemplate%2A> ohne Aufrufen von <xref:EnvDTE._Solution.Create%2A> .|  
+|`Silent`|Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll, als ob auf **Fertig** stellen geklickt wurde ( `TRUE` ).|  
   
-## <a name="context-parameters-for-add-new-item"></a>Kontextparameter für hinzufügen neues Element  
+## <a name="context-parameters-for-add-new-item"></a>Kontext Parameter für "Neues Element hinzufügen"  
   
-|Parameter|Beschreibung|  
+|Parameter|BESCHREIBUNG|  
 |---------------|-----------------|  
-|`WizardType`|Assistenten-Typ registriert (<xref:EnvDTE.Constants.vsWizardAddItem>) oder die GUID, der den Typ des Assistenten angibt. In der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] -Implementierung, die GUID für den Assistenten ist {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}.|  
-|`ProjectName`|Eine Zeichenfolge, die eindeutige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektnamen.|  
-|`ProjectItems`|Lokale Pfad, der Arbeitsdateien-Projekt enthält.|  
-|`ItemName`|Der Name des Elements, das hinzugefügt werden soll. Dieser Name ist entweder der Standardname für die Datei oder den Dateinamen, die der Benutzer, von eingibt der **Elemente hinzufügen** Dialogfeld. Der Name basiert auf den Flags, die in der VSDIR-Datei festgelegt werden. Der Name kann ein null-Wert sein.|  
-|`InstallationDirectory`|Pfad des Verzeichnisses der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist die Installation.|  
-|`Silent`|Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll wie **Fertig stellen** geklickt wurden (`TRUE`).|  
+|`WizardType`|Registrierter Wizard Type ( <xref:EnvDTE.Constants.vsWizardAddItem> ) oder die GUID, die den Typ des Assistenten angibt. In der- [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Implementierung lautet der GUID für den Assistenten {0F 90e1d1-4999-11d1-B6D1-00a0c90f 2744}.|  
+|`ProjectName`|Eine Zeichenfolge, die der eindeutige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektname ist.|  
+|`ProjectItems`|Lokaler Speicherort, der funktionierende Projektdateien enthält.|  
+|`ItemName`|Der Name des Elements, das hinzugefügt werden soll. Dieser Name ist entweder der Standard Dateiname oder der Dateiname, den der Benutzer im Dialogfeld **Elemente hinzufügen** eingibt. Der Name basiert auf den Flags, die in der VSDIR-Datei festgelegt sind. Der Name kann ein NULL-Wert sein.|  
+|`InstallationDirectory`|Der Verzeichnispfad von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist "Installation".|  
+|`Silent`|Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll, als ob auf **Fertig** stellen geklickt wurde ( `TRUE` ).|  
   
-## <a name="context-parameters-for-add-sub-project"></a>Kontextparameter für Sub-Projekt hinzufügen  
+## <a name="context-parameters-for-add-sub-project"></a>Kontext Parameter für "Sub Project hinzufügen"  
   
-|Parameter|Beschreibung|  
+|Parameter|BESCHREIBUNG|  
 |---------------|-----------------|  
-|`WizardType`|Assistenten-Typ registriert (<xref:EnvDTE.Constants.vsWizardAddSubProject>) oder die GUID, der den Typ des Assistenten angibt. In der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] -Implementierung, die GUID für den Assistenten ist {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}.|  
-|`ProjectName`|Eine Zeichenfolge, die eindeutige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektnamen.|  
-|`ProjectItems`|Zeiger auf die `ProjectItems` Auflistung, die auf dem der Assistent ausgeführt wird. This-Zeiger wird an den Assistenten, die basierend auf der ausgewählten Projekthierarchie übergeben. Ein Benutzer in der Regel wählt einen Ordner in dem das Element abgelegt werden sollen, und ruft dann des Projekts **Element hinzufügen** Dialogfeld.|  
-|`LocalDirectory`|Speicherort der Projektdateien zu arbeiten.|  
-|`ItemName`|Der Name des Elements, das hinzugefügt werden soll. Dieser Name ist entweder der Standardname für die Datei oder den Dateinamen, die der Benutzer, von eingibt der **Elemente hinzufügen** Dialogfeld. Der Name basiert auf den Flags, die in der VSDIR-Datei festgelegt werden. Der Name kann ein null-Wert sein.|  
-|`InstallationDirectory`|Pfad des Verzeichnisses der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist die Installation.|  
-|`Silent`|Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll wie **Fertig stellen** geklickt wurden (`TRUE`).|  
+|`WizardType`|Registrierter Wizard Type ( <xref:EnvDTE.Constants.vsWizardAddSubProject> ) oder die GUID, die den Typ des Assistenten angibt. In der- [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Implementierung lautet der GUID für den Assistenten {0F 90e1d2-4999-11d1-B6D1-00a0c90f 2744}.|  
+|`ProjectName`|Eine Zeichenfolge, die der eindeutige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektname ist.|  
+|`ProjectItems`|Ein Zeiger auf die Auflistung `ProjectItems` , in der der Assistent ausgeführt wird. Dieser Zeiger wird basierend auf der Auswahl der Projekt Hierarchie an den Assistenten weitergeleitet. Ein Benutzer wählt in der Regel einen Ordner aus, in den das Element eingefügt werden soll, und ruft dann das Dialogfeld **Element hinzufügen** des Projekts auf.|  
+|`LocalDirectory`|Lokaler Speicherort von Arbeitsprojekt Dateien.|  
+|`ItemName`|Der Name des Elements, das hinzugefügt werden soll. Dieser Name ist entweder der Standard Dateiname oder der Dateiname, den der Benutzer im Dialogfeld **Elemente hinzufügen** eingibt. Der Name basiert auf den Flags, die in der VSDIR-Datei festgelegt sind. Der Name kann ein NULL-Wert sein.|  
+|`InstallationDirectory`|Der Verzeichnispfad von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ist "Installation".|  
+|`Silent`|Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll, als ob auf **Fertig** stellen geklickt wurde ( `TRUE` ).|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>   
  [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)   
- [Assistenten](../../extensibility/internals/wizards.md)   
- [Assistenten (. VSZ)-Datei](../../extensibility/internals/wizard-dot-vsz-file.md)   
+ [The](../../extensibility/internals/wizards.md)   
+ [Assistent (. VSZ-Datei](../../extensibility/internals/wizard-dot-vsz-file.md)   
  [Kontextparameter zum Starten von Assistenten](https://msdn.microsoft.com/library/051a10f4-9e45-4604-b344-123044f33a24)

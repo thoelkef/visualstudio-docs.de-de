@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192831"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Vorgehensweise: Manuelles Erstellen von Leistungssitzungen
+# <a name="how-to-manually-create-performance-sessions"></a>Gewusst wie: Manuelles Erstellen von Leistungssitzungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] öffnen. Weitere Informationen finden Sie unter [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md).  
@@ -39,6 +39,6 @@ Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Pr
   
      Es wird eine neue Binärdatei hinzugefügt.  
   
-## <a name="see-also"></a>Siehe auch  
- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Leistungs-Explorer](../profiling/performance-explorer.md)   
  [Erste Schritte](../profiling/getting-started-with-performance-tools.md)
