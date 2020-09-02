@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPort | Microsoft Docs
+title: 'IDebugProcess2:: getPort | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7ea4d888c1e83e90882e2f42d8ef54ba8f6e34ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723917"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
@@ -41,7 +41,7 @@ int GetPort( 
 
 ## <a name="parameters"></a>Parameter
 `ppPort`\
-[out] Gibt ein [IDebugPort2-Objekt](../../../extensibility/debugger/reference/idebugport2.md) zurück, das den Port darstellt, auf dem der Prozess gestartet wurde.
+vorgenommen Gibt ein [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) -Objekt zurück, das den Port darstellt, auf dem der Prozess gestartet wurde.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

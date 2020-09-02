@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d672d90254626cfef9bd87bfef9dcf2426aa346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160312"
 ---
 # <a name="resource-contention-data-views"></a>Ansichten für Ressourcenkonfliktdaten
@@ -28,7 +28,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  [Zusammenfassungsansicht – Profilerkonfliktdaten](../profiling/resource-contention-data-views.md)  
  Zeigt eine grafische Zeitachse für Profilerstellungsdaten an und listet die Funktionen und Ressourcen auf, die bei den meisten blockierenden Ereignissen beteiligt waren.  
   
- [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)  
+ [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view-contention-data.md)  
  Zeigt eine hierarchische Struktur an, die die Ausführungspfade und Ressourcenkonfliktdaten von Funktionen während der Profilerstellung darstellt.  
   
  [Modulansicht](../profiling/modules-view-contention-data.md)  
@@ -58,6 +58,6 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  [Prozessansicht](../profiling/process-view-contention-data.md)  
  Listet Ressourcenkonflikte nach Prozess und Thread auf.  
   
-## <a name="reference"></a>Referenz  
+## <a name="reference"></a>Verweis  
  [Funktionsdetailansicht](../profiling/function-details-view.md)  
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.

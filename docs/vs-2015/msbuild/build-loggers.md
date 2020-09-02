@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160429"
 ---
 # <a name="build-loggers"></a>Buildprotokollierungen
@@ -44,14 +44,14 @@ Protokollierungen bieten eine Möglichkeit, die Ausgabe des Builds anzupassen un
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>Reagieren auf Ausführlichkeitswerte der Protokollierung  
- In einigen Fällen möchten Sie möglicherweise nur Informationen von einem Ereignis protokollieren, wenn der Schalter **/verbosity** von „MSBuild.exe“ einen bestimmten Wert enthält. In diesem Beispiel protokolliert der <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>-Ereignishandler nur dann eine Meldung, wenn die <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>-Eigenschaft, die durch den Schalter **/verbosity** festgelegt wird, gleich <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` ist.  
+ In einigen Fällen möchten Sie möglicherweise nur Informationen von einem Ereignis protokollieren, wenn der MSBuild.exe **/verbosity** -Schalter einen bestimmten Wert enthält. In diesem Beispiel protokolliert der <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> Ereignishandler nur dann eine Meldung, wenn die <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> Eigenschaft, die durch den Schalter **/verbosity** festgelegt wird, gleich ist <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>Festlegen einer Protokollierung  
- Nachdem die Protokollierung in eine Assembly kompiliert worden ist, müssen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mitteilen, diese Protokollierung während der Builderstellung zu verwenden. Dies erfolgt mithilfe des Schalters **/logger** von „MSBuild.exe“. Weitere Informationen zu den verfügbaren Schaltern für „MSBuild.exe“ finden Sie in der [MSBuild Command-Line Reference](../msbuild/msbuild-command-line-reference.md).  
+ Nachdem die Protokollierung in eine Assembly kompiliert worden ist, müssen Sie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mitteilen, diese Protokollierung während der Builderstellung zu verwenden. Dies erfolgt mithilfe des **/Logger** -Schalters mit MSBuild.exe. Weitere Informationen zu den für MSBuild.exe verfügbaren Switches finden Sie unter [Befehlszeilen Referenz](../msbuild/msbuild-command-line-reference.md).  
   
- Die folgende Befehlszeile erstellt das Projekt `MyProject.csproj` und verwendet die in `SimpleLogger.dll` implementierte Protokollierungsklasse. Der Schalter **/nologo** blendet Banner und Copyrightmeldung aus, und **/noconsolelogger** deaktiviert die standardmäßige [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Konsolenprotokollierung.  
+ Die folgende Befehlszeile erstellt das Projekt `MyProject.csproj` und verwendet die in `SimpleLogger.dll` implementierte Protokollierungsklasse. Der Schalter **/nologo** blendet das Banner und die Copyright Meldung aus, und der Schalter **/noconsolelogger** deaktiviert die standardmäßige Konsolen Protokollierung [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
@@ -65,7 +65,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>BESCHREIBUNG  
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel enthält den vollständigen Code für die Protokollierung.  
   
 ### <a name="code"></a>Code  
@@ -75,7 +75,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Beispiel  
   
-### <a name="description"></a>BESCHREIBUNG  
+### <a name="description"></a>Beschreibung  
  Das folgende Beispiel zeigt das Implementieren einer Protokollierung, die das Protokoll in eine Datei schreibt, anstatt es im Konsolenfenster anzuzeigen.  
   
 ### <a name="code"></a>Code  
@@ -83,6 +83,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>Kommentare  
   
-## <a name="see-also"></a>Siehe auch  
- [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen von buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [MSBuild-Konzepte](../msbuild/msbuild-concepts.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160299"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien
@@ -34,7 +34,7 @@ Wenn Sie das Integrated Development Environment (IDE) von [!INCLUDE[vsprvs](../i
   
   Sie können Symbole vom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE oder von der Befehlszeile serialisieren;  
   
-- Zum Serialisieren von Symbolen im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE zeigen Sie auf **Extras** in der Menüleiste, und klicken Sie dann auf **Optionen**. Wählen Sie im Fenster **Optionen** **Leistungstools** aus, und aktivieren Sie das Kontrollkästchen **Symbolinformationen automatisch serialisieren**.  
+- Zum Serialisieren von Symbolen im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE zeigen Sie auf **Extras** in der Menüleiste, und klicken Sie dann auf **Optionen**. Wählen Sie im Fenster **Optionen****Leistungstools** aus, und aktivieren Sie das Kontrollkästchen **Symbolinformationen automatisch serialisieren**.  
   
 - PACKSYMBOLS ist die entsprechende Befehlszeilenoption, wenn Sie Berichtsdateien speichern. Zum Serialisieren von Symbolen geben Sie **vsperfreport /summary:all /packsymbols filename.vsp** ein.  
   
@@ -64,7 +64,7 @@ Wenn Sie das Integrated Development Environment (IDE) von [!INCLUDE[vsprvs](../i
   
  VsPerfReport -packsymbols -summary:all filename.vsp  
   
-## <a name="see-also"></a>Siehe auch  
- [Speichern und Exportieren von Daten aus Leistungstools](../profiling/saving-and-exporting-performance-tools-data.md)   
- [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Speichern und Exportieren von Leistungs Tool Daten](../profiling/saving-and-exporting-performance-tools-data.md)   
+ [Gewusst wie: verweisen auf Windows-Symbol Informationen](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

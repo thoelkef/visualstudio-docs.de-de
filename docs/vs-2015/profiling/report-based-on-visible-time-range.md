@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160319"
 ---
 # <a name="report-based-on-visible-time-range"></a>Auf sichtbarem Zeitraum basierender Bericht
@@ -27,15 +27,15 @@ Die Profilansicht stellt Berichte dar, die auf dem derzeit sichtbaren Zeitbereic
   
  Weitere Informationen zu den Daten finden Sie in den nachfolgenden Tabellen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Es werden keine Threadaktivitäten angezeigt](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Ausführungsprofilbericht](../profiling/execution-profile-report.md)   
- [Synchronisierungszeit](../profiling/synchronization-time.md)   
- [E/A-Zeit (Threadansicht)](../profiling/i-o-time-threads-view.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Keine Thread Aktivität zum Anzeigen](../profiling/no-thread-activity-to-show-threads-view.md)   
+ [Ausführungsprofil Bericht](../profiling/execution-profile-report.md)   
+ [Synchronisierungs Zeit](../profiling/synchronization-time.md)   
+ [E/a-Zeit (Thread Ansicht)](../profiling/i-o-time-threads-view.md)   
  [Standbyzeit](../profiling/sleep-time.md)   
- [Speicherverwaltungszeit](../profiling/memory-management-time.md)   
- [Zeit für die vorzeitige Entfernung](../profiling/preemption-time.md)   
- [Benutzoberflächenverarbeitungszeit](../profiling/ui-processing-time.md)   
- [Bericht über Datenträgervorgänge](../profiling/disk-operations-report-threads-view.md)   
- [Zusammenfassungsbericht pro Thread](../profiling/per-thread-summary-report.md)   
+ [Speicher Verwaltungszeit](../profiling/memory-management-time.md)   
+ [Zeitpunkt der vorzeitigen Entfernung](../profiling/preemption-time.md)   
+ [UI-Verarbeitungszeit](../profiling/ui-processing-time.md)   
+ [Bericht über Datenträger Vorgänge](../profiling/disk-operations-report-threads-view.md)   
+ [Zusammenfassungs Bericht pro Thread](../profiling/per-thread-summary-report.md)   
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: Debuggen von ASP.NET- und AJAX-Anwendungen | Microsoft-Dokumentation
+title: Debuggen von ASP.net und AJAX-Anwendungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686741"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debuggen von ASP.NET- und AJAX-Anwendungen
@@ -46,14 +46,14 @@ Das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen
  [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)  
  Erläutert, warum Nur mein Code zum Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Ausnahmen aktiviert werden muss.  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Übersicht über Debugging und Ablauf Verfolgung von AJAX-Anwendungen](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Es werden einige Techniken und Tools erläutert, die Ihnen beim Debuggen Ihres AJAX-Codes helfen können.  
   
  [IntelliTrace](../debugger/intellitrace.md)  
  Debuggen Sie den Code schneller, indem Sie mit IntelliTrace einen Verlauf vom Zustand der Anwendung aufzuzeichnen und überprüfen, ohne die Anwendung so oft neu zu starten. Sie können Informationen zu Ereignissen und Aufrufen, die während der Ausführung der Anwendung auftreten, anzeigen und das Debuggen ab diesen Zeitpunkten starten. Erfordert Visual Studio Ultimate.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)   
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
+ [Webanwendungen und Skript Debuggen](../debugger/debugging-web-applications-and-script.md)   
+ [Debugger-Einstellungen und-Vorbereitung](../debugger/debugger-settings-and-preparation.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)
