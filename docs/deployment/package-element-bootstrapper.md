@@ -1,5 +1,5 @@
 ---
-title: '&lt;Paket&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
+title: '&lt;Package- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745759"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; -Element (Bootstrapper)
-Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei.
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package- &gt; Element (Boots Trapper)
+Das `Package` -Element ist das XML-Element der obersten Ebene in einer Paketdatei.
 
 ## <a name="syntax"></a>Syntax
 
@@ -141,16 +141,16 @@ Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `Package` Element ist erforderlich. Es hat die folgenden Attribute.
+ Das `Package`-Element ist erforderlich. Es verfügt über die folgenden Attribute:
 
-| Attribut | Beschreibung |
+| attribute | BESCHREIBUNG |
 |--------------------| - |
-| `Culture` | Erforderlich. Definiert die Kultur für dieses Paket an, der bestimmt, die Sprache, die verwendet werden. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das kulturspezifischen Zeichenfolgen für Produktnamen und Fehlermeldungen während der Installation führt. |
-| `Name` | Erforderlich. Der Name des Pakets angezeigt, die Entwickler in einem Tool wie z. B. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das enthalten soll eine `String` -Element mit der `Name` und `Culture` Eigenschaften festgelegt werden, entsprechend der `Name` und `Culture` Eigenschaften `Package`. |
-| `LicenseAgreement` | Dies ist optional. Gibt den Namen der Datei in das Paket für die Verteilung der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann entweder nur-Text sein ( *.txt*) oder Rich-Text-Format. ( *.rtf*) |
+| `Culture` | Erforderlich. Definiert die Kultur für dieses Paket, das die zu verwendende Sprache bestimmt. Dieses Attribut ist ein Schlüssel für das- `Strings` Element, das kulturspezifische Zeichen folgen für Produktnamen und Fehlermeldungen während der Installation auflistet. |
+| `Name` | Erforderlich. Der Name des Pakets, das dem Entwickler in einem Tool wie angezeigt wird [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Dieses Attribut ist ein Schlüssel in das- `Strings` Element, das ein-Element enthalten sollte, dessen-Eigenschaft und-Eigenschaft `String` entsprechend `Name` `Culture` den `Name` -und-Eigenschaften von festgelegt werden `Culture` `Package` . |
+| `LicenseAgreement` | Optional. Gibt den Namen der Datei im Verteilungs Paket an, die den Endbenutzer-Lizenzvertrag (EULA) enthält.  Bei dieser Datei kann es sich entweder um*Klartext (* (*RTF*) |
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel zeigt eine vollständige Paketdatei für das Verteilen von .NET Framework 2.0.
+ Das folgende Codebeispiel zeigt eine komplette Paketdatei zum erneuten Verteilen des .NET Framework 2,0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -187,5 +187,5 @@ Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei
 </Package>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)

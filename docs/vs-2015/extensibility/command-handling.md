@@ -1,5 +1,5 @@
 ---
-title: Befehlsbehandlung | Microsoft-Dokumentation
+title: Befehls Behandlung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,43 +11,43 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184376"
 ---
 # <a name="command-handling"></a>Verarbeiten von Befehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Als Editor verwenden, kann neue Befehle definieren. Befehle werden in der Regel in einem Menü, das auf einer Symbolleiste oder in einem Kontextmenü angezeigt.  
+Der Editor kann neue Befehle definieren. Befehle werden in der Regel in einem Menü, auf einer Symbolleiste oder in einem Kontextmenü angezeigt.  
   
- Weitere Informationen zu definieren, Befehle und Menüs, finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Weitere Informationen zum Definieren von Befehlen und Menüs finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- Ein Sprachdienst kann steuern, welche Kontextmenüs im Editor angezeigt werden, durch das Abfangen der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Enumeration. Alternativ können Sie im Kontextmenü auf einer pro-Marker-Basis steuern. Weitere Informationen finden Sie unter [wichtige Befehle für Sprachdienstfilter](../extensibility/internals/important-commands-for-language-service-filters.md).  
+ Ein Sprachdienst kann steuern, welche Kontextmenüs im Editor angezeigt werden, indem die- <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Enumeration abgefangen wird. Alternativ können Sie das Kontextmenü auf der Grundlage eines Markers steuern. Weitere Informationen finden Sie unter [wichtige Befehle für Sprachdienst Filter](../extensibility/internals/important-commands-for-language-service-filters.md).  
   
-## <a name="adding-commands-to-the-editor-context-menu"></a>Hinzufügen von Befehlen zu Editor-Kontextmenüs  
- Um einen Befehl im Kontextmenü hinzugefügt haben, müssen Sie zunächst eine Gruppe von Menübefehlen, die einer bestimmten Gruppe definieren. Das folgende Beispiel stammt aus der VSCT-Datei, die als Teil der exemplarischen Vorgehensweise generiert [Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+## <a name="adding-commands-to-the-editor-context-menu"></a>Hinzufügen von Befehlen zum Editor-Kontextmenü  
+ Um dem Kontextmenü einen Befehl hinzuzufügen, müssen Sie zunächst einen Satz von Menübefehlen definieren, die zu einer bestimmten Gruppe gehören. Das folgende Beispiel stammt aus der vsct-Datei, die im Rahmen der exemplarischen Vorgehensweise Exemplarische Vorgehensweise [: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)generiert wird:  
   
  \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
  \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
- \<Zeichenfolgen >  
+ \<Strings>  
   
- \<ButtonText > CustomEditor Kontextmenü\</ButtonText >  
+ \<ButtonText>Customeditor-Kontextmenü\</ButtonText>  
   
- \<CommandName > CustomEditorContextMenu\</CommandName >  
+ \<CommandName>Customeditor ContextMenu\</CommandName>  
   
- \</ Zeichenfolgen >  
+ \</Strings>  
   
- \</ Menü ">  
+ \</Menu>  
   
- \</-Menüs >  
+ \</Menus>  
   
- Der obige Text Fügt einen Befehl im Kontextmenü, mit dem Text **CustomEditor Kontextmenü**. Die Menü-GUID ist, dass für den Befehlssatz, mit diesem Editor erstellt wird, und der Typ ist "Kontext".  
+ Der obige Text fügt einen Kontextmenü Befehl mit dem **Kontextmenü des Texts customeditor**hinzu. Der Menü-GUID ist der Befehlssatz, der mit diesem Editor erstellt wird, und der Typ ist "Context".  
   
- Sie können auch die vordefinierten Befehle verwenden, die nicht in der VSCT-Datei definiert werden müssen. Z. B. Wenn Sie die EditorPane.cs-Datei, die von der Visual Studio-Paket-Vorlage generiert untersuchen, finden Sie, die eine Reihe von vordefinierten Befehlen, wie z. B. <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> von definierten <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, in den Befehlshandler, z. B. die OnSelectAll-Methode behandelt werden.  
+ Sie können auch vordefinierte Befehle verwenden, die nicht in der vsct-Datei definiert werden müssen. Wenn Sie z. b. die EditorPane.cs-Datei untersuchen, die von der Visual Studio-Paket Vorlage generiert wurde, stellen Sie fest, dass ein Satz vordefinierter Befehle, wie z. b. <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> von definiert, <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> in Befehls Handlern wie der onselectall-Methode behandelt werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: SccAddFilesFromSCC-Funktion | Microsoft Docs
+title: Sccaddfilesfromscc-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701291"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC-Funktion
-Diese Funktion fügt dem aktuell geöffneten Projekt eine Liste von Dateien aus der Quellcodeverwaltung hinzu.
+# <a name="sccaddfilesfromscc-function"></a>Sccaddfilesfromscc-Funktion
+Diese Funktion fügt eine Liste von Dateien aus der Quell Code Verwaltung dem aktuell geöffneten Projekt hinzu.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,50 +41,50 @@ SCCRTN SccAddFilesFromSCC(
 ### <a name="parameters"></a>Parameter
  pContext
 
-[in] Der Kontextzeiger für die Quellcodeverwaltung.
+in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
 
  hWnd
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-In als übergeordnetes Element für alle dialogfelder verwenden kann, die es bereitstellt.
+in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.
 
- lpUser
+ lpuser
 
-[in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich des Null-Terminators).
+[in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich des NULL-Terminator).
 
- lpAuxProjPath
+ lpauxprojpath
 
-[in, out] Hilfszeichenfolge zur Identifizierung des `SCC_PRJPATH_`Projekts (bis zu SIZE, einschließlich des Nullabschlusses).
+[in, out] Zusätzliche Zeichenfolge, die das Projekt identifiziert (bis zur `SCC_PRJPATH_` Größe, einschließlich des NULL-Terminator).
 
  cFiles
 
-[in] Anzahl der von `lpFilePaths`angegebenen Dateien.
+in Anzahl von Dateien, die von angegeben werden `lpFilePaths` .
 
- lpFilePaths
+ lpfilepath
 
 [in, out] Array von Dateinamen, die dem aktuellen Projekt hinzugefügt werden sollen.
 
- lpDestination
+ lpdestination
 
-[in] Der Zielpfad, in dem die Dateien geschrieben werden sollen.
+in Der Zielpfad, in den die Dateien geschrieben werden sollen.
 
- lpComment
+ lpcomment
 
-[in] Der Kommentar, der auf jede der hinzugefügten Dateien angewendet werden soll.
+in Der Kommentar, der auf jede der hinzugefügten Dateien angewendet werden soll.
 
- pbErgebnisse
+ pbresults
 
-[in, out] Array von Flags, die so eingestellt sind, dass sie auf Erfolg (ungleich Null oder TRUE) `cFiles` oder Fehler (Null oder FALSE) für jede Datei hinweisen (die Größe des Arrays muss mindestens lang sein).
+[in, out] Ein Array von Flags, die festgelegt werden, um einen Erfolg (ungleich 0 oder true) oder einen Fehler (null oder false) für jede Datei anzugeben (die Größe des Arrays muss mindestens `cFiles` lang sein).
 
 ## <a name="return-value"></a>Rückgabewert
- Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|Das Projekt ist nicht geöffnet.|
-|SCC_E_OPNOTPERFORMED|Die Verbindung ist nicht mit demselben Projekt verbunden, wie es von`lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, die Datenbank zu aktualisieren.|
-|SCC_E_NONSPECIFICERROR|Unknown error. (Unbekannter Fehler.)|
-|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|
+|SCC_E_OPNOTPERFORMED|Die Verbindung ist nicht mit dem Projekt identisch, das von angegeben wird. `lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht autorisiert, die Datenbank zu aktualisieren.|
+|SCC_E_NONSPECIFICERROR|Unbekannter Fehler.|
+|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss erneut geladen werden.|
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)

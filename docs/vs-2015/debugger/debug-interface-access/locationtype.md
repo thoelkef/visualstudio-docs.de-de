@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28bcaa626797313f6ea68a17da33ef9ea192a856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154203"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt die Art der Standortinformationen in ein Symbol an.  
+Gibt die Art der Speicherort Informationen an, die in einem Symbol enthalten sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,53 +44,53 @@ enum LocationType { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  `LocIsNull`  
- Informationen zum Speicherort ist nicht verfügbar.  
+ Die Standortinformationen sind nicht verfügbar.  
   
  `LocIsStatic`  
- Speicherort ist statisch.  
+ Der Speicherort ist statisch.  
   
  `LocIsTLS`  
- Speicherort ist im lokalen Threadspeicher.  
+ Der Speicherort befindet sich im lokalen Thread Speicher.  
   
  `LocIsRegRel`  
- Speicherort ist relativ registrieren.  
+ Location ist Register-relative.  
   
  `LocIsThisRel`  
- Speicherort ist `this`-relative.  
+ Location ist `this` -relative.  
   
  `LocIsEnregistered`  
- Speicherort ist in einem Register.  
+ Standort befindet sich in einem Register.  
   
  `LocIsBitField`  
- Speicherort ist in einem Bitfeld.  
+ Der Speicherort befindet sich in einem Bitfeld.  
   
  `LocIsSlot`  
- Speicherort ist ein Microsoft Intermediate Language (MSIL)-Slot.  
+ Location ist ein MSIL-Slot (Microsoft Intermediate Language).  
   
  `LocIsIlRel`  
- Der Speicherort ist relativ MSIL.  
+ Location ist MSIL-relative.  
   
  `LocInMetaData`  
- Speicherort ist in den Metadaten.  
+ Der Speicherort ist in den Metadaten.  
   
  `LocIsConstant`  
- Speicherort ist in einem konstanten Wert.  
+ Der Speicherort ist ein konstanter Wert.  
   
  `LocTypeMax`  
- Die Anzahl der Typen in dieser Enumeration.  
+ Die Anzahl der Speicherort Typen in dieser Enumeration.  
   
-## <a name="remarks"></a>Hinweise  
- Die Eigenschaften für die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Schnittstelle hängen Speicherort des Symbols, in der Imagedatei. Weitere Informationen finden Sie unter [Orte für Symboldateien](../../debugger/debug-interface-access/symbol-locations.md).  
+## <a name="remarks"></a>Bemerkungen  
+ Die Eigenschaften, die für die [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Schnittstelle verfügbar sind, hängen von der Position des Symbols in der Bilddatei ab. Weitere Informationen finden Sie unter [Symbol Speicherorte](../../debugger/debug-interface-access/symbol-locations.md).  
   
- Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) Methode.  
+ Die Werte in dieser Enumeration werden von einem Rückruf der [idiasymmetribol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [Idiasymmetribol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Symbolspeicherorte](../../debugger/debug-interface-access/symbol-locations.md)
