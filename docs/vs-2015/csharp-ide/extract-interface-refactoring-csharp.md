@@ -1,5 +1,5 @@
 ---
-title: Umgestaltung der Schnittstelle extrahierenC#() | Microsoft-Dokumentation
+title: Refactoring der Schnittstelle extrahieren (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667551"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactoring „Schnittstelle extrahieren“ (C#)
@@ -34,7 +34,7 @@ Extract Interface ist ein Refactoring-Vorgang, der eine einfache Möglichkeit bi
 
 ### <a name="to-use-extract-interface"></a>So verwenden Sie Extract Interface
 
-1. Erstellen Sie eine Konsolenanwendung mit dem Namen `ExtractInterface`, und ersetzen Sie `Program` durch den folgenden Code.
+1. Erstellen Sie eine Konsolenanwendung `ExtractInterface` mit dem Namen, und ersetzen Sie dann `Program` durch den folgenden Code.
 
     ```csharp
     // Invoke Extract Interface on ProtoA.
@@ -45,7 +45,7 @@ Extract Interface ist ein Refactoring-Vorgang, der eine einfache Möglichkeit bi
     }
     ```
 
-2. Wenn der Cursor in `MethodB` positioniert ist, und klicken Sie im Menü **umgestalten** auf **Schnittstelle extrahieren** .
+2. Wenn der Cursor in positioniert `MethodB` ist, und klicken Sie im Menü **umgestalten** auf **Schnittstelle extrahieren** .
 
      Das Dialogfeld **Schnittstelle extrahieren** wird angezeigt.
 
@@ -70,10 +70,10 @@ Extract Interface ist ein Refactoring-Vorgang, der eine einfache Möglichkeit bi
     }
     ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Diese Funktion ist nur verfügbar, wenn sich der Cursor in der Klasse, Struktur oder Schnittstelle befindet, die die Elemente enthält, die Sie extrahieren möchten. Wenn sich der Cursor an dieser Position befindet, rufen Sie den Refactoring-Vorgang zum Extrahieren der Schnittstelle auf.
 
  Wenn Sie Extract Interface für eine Klasse oder eine Struktur aufrufen, wird die Liste der Basen und Schnittstellen so geändert, dass Sie den neuen Schnittstellennamen einschließt. Wenn Sie Extract Interface für eine Schnittstelle aufrufen, wird die Liste der Basen und Schnittstellen nicht geändert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)

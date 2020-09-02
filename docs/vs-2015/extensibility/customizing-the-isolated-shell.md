@@ -1,5 +1,5 @@
 ---
-title: Anpassen der Isolated Shell | Microsoft-Dokumentation
+title: Anpassen der isolierten Shell | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,84 +11,84 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555967"
 ---
-# <a name="customizing-the-isolated-shell"></a>Anpassen der Isolated Shell
+# <a name="customizing-the-isolated-shell"></a>Anpassen der isolierten Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Ihrem Visual Studio isolated Shell-Anwendung durch verschiedene Aspekte der Visual Studio-Benutzeroberfläche ändern und beschränken die Befehle und Funktionen in Ihrer speziellen Anwendung anpassen.  
+Sie können Ihre Visual Studio-Anwendung für isolierte Shell anpassen, indem Sie verschiedene Aspekte der Visual Studio-Benutzeroberfläche ändern und die Befehle und Funktionen in ihrer spezialisierten Anwendung einschränken.  
   
-## <a name="using-the-applicationpkgdef-file"></a>Mithilfe der Application.pkgdef-Datei  
- Die isolierte Shell-Vorlagenprojektmappe enthält eine *SolutionName*. Application.PKGDEF-Datei, die Ihnen ermöglicht, ändern Sie die folgenden Funktionen:  
+## <a name="using-the-applicationpkgdef-file"></a>Verwenden der Datei "Application. pkgdef"  
+ Die Lösung für isolierte shellvorlagen enthält einen *SolutionName*. Datei "Application. pkgdef", die es Ihnen ermöglicht, die folgenden Funktionen zu ändern:  
   
-##### <a name="the-application-title"></a>Den Anwendungstitel  
- Sie können anpassen, den Anwendungstitel, die den Namen, die in der Titelleiste der Anwendung angezeigt wird darstellt, durch Ändern des Werts der Zeile "AppName" in der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+##### <a name="the-application-title"></a>Anwendungs Titel  
+ Sie können den Anwendungs Titel anpassen, d. h. den Namen, der in der Titelleiste der Anwendung angezeigt wird, indem Sie den Wert der Zeile "appname" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
- Wenn Sie den Anwendungstitel auf das Projekt anzuzeigen, die derzeit geladen wird, nicht möchten, ändern Sie den Wert der Zeile "ShowHierarchyRootInTitle" in der *SolutionName*. Application.PKGDEF-Datei von DWORD: 00000001 auf DWORD: 00000000.  
+ Wenn der Anwendungs Titel das aktuell geladene Projekt nicht anzeigen soll, ändern Sie den Wert der Zeile "showhierarchyrootintitle" in " *SolutionName*". Application. pkgdef-Datei von DWORD: 00000001 to DWORD: 00000000.  
   
-##### <a name="the-application-icon"></a>Das Symbol der Anwendung  
- Sie können das Anwendungssymbol, anpassen, das Symbol, das von den Anwendungsnamen in der Titelleiste der Anwendung angezeigt wird. Kopieren Sie ein anderes Symbol in der Symbol-Verzeichnis. In **Projektmappen-Explorer**, das Symbol "Ordner" Ressourcen "hinzufügen". Klicken Sie dann öffnen Sie die VSShellStub.rc-Datei, und Ersetzen Sie den Wert der IDI_STUBPROGRAM durch den Namen des neuen Symbols. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+##### <a name="the-application-icon"></a>Anwendungssymbol  
+ Sie können das Anwendungssymbol anpassen, bei dem es sich um das Symbol handelt, das durch den Anwendungsnamen in der Titelleiste der Anwendung angezeigt wird. Kopieren Sie ein anderes Symbol in das Symbol Verzeichnis. Fügen Sie in **Projektmappen-Explorer**das Symbol zum Ordner Ressourcen Dateien hinzu. Öffnen Sie dann die Datei vsshellstub. RC, und ersetzen Sie den Wert IDI_STUBPROGRAM durch den Namen des neuen Symbols. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-##### <a name="the-command-line-logo"></a>Das Befehlszeilen-logo  
- Sie können anpassen, dass das Befehlszeile-Logo, d.h. dem Text, der angezeigt wird, wenn die Anwendung über die Befehlszeile gestartet wird, durch Ändern des Werts der "CommandLineLogo" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+##### <a name="the-command-line-logo"></a>Das Befehlszeilen Logo  
+ Sie können das Befehlszeilen Logo anpassen, bei dem es sich um den Text handelt, der beim Starten der Anwendung über die Befehlszeile angezeigt wird, indem Sie den Wert der Zeile "commandlinelogo" in *SolutionName*ändern. Pkgdef-Datei der Anwendung. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md) .  
   
-##### <a name="the-name-of-the-user-files-subfolder"></a>Der Name des Unterordners Benutzer Dateien  
- Sie können den Namen des Ordners, die Ihre Anwendung für Benutzerdateien verwaltet durch Ändern des Werts der "UserFilesSubFolderName" in Zeile ändern *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-name-of-the-user-files-subfolder"></a>Der Name des unter Ordners der Benutzer Dateien.  
+ Sie können den Namen des Ordners, der von der Anwendung für Benutzer Dateien verwaltet wird, ändern, indem Sie den Wert der Zeile "userfilessubfoldername" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-title-of-the-solution-tree-node-in-the-new-project-dialog"></a>Der Titel des Knotens in der Lösung in das Dialogfeld "Neues Projekt"  
- Sie können den Titel der Knoten "Projektmappe" in das Dialogfeld "Neues Projekt" anpassen, durch Ändern des Werts der "NewProjDlgSlnTreeNodeTitle" Zeile in der *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-title-of-the-solution-tree-node-in-the-new-project-dialog"></a>Der Titel des projektmappenstrukturknotens im Dialogfeld "Neues Projekt"  
+ Sie können den Titel des Projektmappenknotens im Dialogfeld "Neues Projekt" anpassen, indem Sie den Wert der Zeile "newprojdlgslntreenodetitle" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-installed-templates-header-in-the-new-project-dialog"></a>Der installierten Vorlagen-Header in das Dialogfeld "Neues Projekt"  
- Sie können den installierten Vorlagen-Header in das Dialogfeld "Neues Projekt" ändern, durch Ändern des Werts der "NewProjDlgInstalledTemplatesHdr" Zeile in der *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-installed-templates-header-in-the-new-project-dialog"></a>Der Header "installierte Vorlagen" im Dialogfeld "Neues Projekt"  
+ Sie können den Header "installierte Vorlagen" im Dialogfeld "Neues Projekt" ändern, indem Sie den Wert der Zeile "newprojdlginstalledtemplateshdr" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="whether-or-not-to-hide-miscellaneous-files-by-default"></a>Ob Sie verschiedene Dateien standardmäßig ausblenden  
- Sie können angeben, ob verschiedene Dateien standardmäßig ausblenden, durch Ändern des Werts der "HideMiscellaneousFilesByDefault" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Um verschiedene Dateien auszublenden, legen Sie den Wert `dword:00000001`, und um die Dateien anzuzeigen, legen Sie den Wert `dword:00000000`.  
+##### <a name="whether-or-not-to-hide-miscellaneous-files-by-default"></a>Gibt an, ob verschiedene Dateien standardmäßig ausgeblendet werden sollen.  
+ Sie können angeben, ob verschiedene Dateien standardmäßig ausgeblendet werden sollen, indem Sie den Wert der Zeile "hidemiscellaneousfilesbydefault" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Wenn Sie verschiedene Dateien ausblenden möchten, legen Sie den Wert fest `dword:00000001` , und legen Sie zum Anzeigen der Dateien den Wert fest `dword:00000000` .  
   
-##### <a name="whether-or-not-to-disable-the-output-window"></a>Ob das Fenster "Ausgabe" deaktivieren  
- Sie können angeben, ob das Fenster "Ausgabe" in Ihrer Anwendung zu deaktivieren, durch Ändern des Werts der "DisableOutputWindow" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Um das Fenster "Ausgabe" zu deaktivieren, legen Sie den Wert `dword:00000001`, und um das Fenster "Ausgabe" anzuzeigen, legen Sie den Wert `dword:00000000`.  
+##### <a name="whether-or-not-to-disable-the-output-window"></a>Gibt an, ob das Ausgabefenster deaktiviert werden soll.  
+ Sie können angeben, ob das Ausgabefenster in der Anwendung deaktiviert werden soll, indem Sie den Wert der Zeile "disableoutputwindow" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Legen Sie zum Deaktivieren des Ausgabe Fensters den Wert fest `dword:00000001` , und legen Sie zum Anzeigen des Ausgabe Fensters den Wert fest `dword:00000000` .  
   
-##### <a name="whether-or-not-to-allow-dropped-files-on-the-main-window"></a>Ob abgelegte Dateien in das Hauptfenster zu ermöglichen  
- Sie können angeben, ob abgelegte Dateien in das Hauptfenster in Ihrer Anwendung zu ermöglichen, durch Ändern des Werts der "AllowsDroppedFilesOnMainWindow" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Um abgelegten Dateien zu ermöglichen, legen Sie den Wert `dword:00000001`, und um abgelegten Dateien nicht zuzulassen, legen Sie den Wert `dword:00000000`.  
+##### <a name="whether-or-not-to-allow-dropped-files-on-the-main-window"></a>Gibt an, ob gelöschte Dateien im Hauptfenster zugelassen werden sollen.  
+ Sie können angeben, ob gelöschte Dateien im Hauptfenster der Anwendung zugelassen werden sollen, indem Sie den Wert der Zeile "allowsdroppedfilesonmainwindow" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Um gelöschte Dateien zuzulassen, legen Sie den Wert fest `dword:00000001` , und legen Sie den Wert fest, um gelöschte Dateien nicht zuzulassen `dword:00000000` .  
   
-##### <a name="the-default-search-page"></a>Die Standardseite für die Suche  
- Sie können anpassen, dass der Webbrowser eine Seite, die Seite, der angezeigt wird ist, wenn im Webbrowserfenster geöffnet wird, durch Ändern des Werts der "DefaultSearchPage" in Zeile, die *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-default-search-page"></a>Die Standard Suchseite  
+ Sie können die Webbrowser Seite anpassen, bei der es sich um eine Seite handelt, die beim Öffnen des Webbrowser Fensters angezeigt wird, indem Sie den Wert der Zeile "defaultsearchpage" in *SolutionName*ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-default-home-page"></a>Standard-Startseite  
- Sie können auf der Startseite anpassen, indem Sie die Änderung des Werts der "DefaultHomePage" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+##### <a name="the-default-home-page"></a>Die Standard Startseite  
+ Sie können die Startseite anpassen, indem Sie den Wert der Zeile "DefaultHomePage" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md) .  
   
-##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Ob das Lösungskonzept ausblenden  
- Sie können angeben, ob die Lösung in Ihrer Anwendung ausblenden, indem Sie die Änderung des Werts der "HideSolutionConcept" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Um die Projektmappe auszublenden, legen Sie den Wert `dword:00000001`, und um die Projektmappe anzuzeigen, legen Sie den Wert `dword:00000000`.  
+##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Gibt an, ob das Lösungskonzept ausgeblendet werden soll.  
+ Sie können angeben, ob die Projekt Mappe in der Anwendung ausgeblendet werden soll, indem Sie den Wert der Zeile "hidesolutionconcept" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Um die Projekt Mappe auszublenden, legen Sie den Wert fest `dword:00000001` , und legen Sie zum Anzeigen der Projekt Mappe den Wert fest `dword:00000000` .  
   
-##### <a name="the-default-debug-engine"></a>Die Standard-Debug-engine  
- Sie können ändern, dass die Debug-Engine, die Ihre Anwendung verwendet wird, durch Ändern des Werts der "DefaultDebugEngine" Zeile in der *SolutionName*. Application.PKGDEF-Datei, die die GUID der Debug-Engine.  
+##### <a name="the-default-debug-engine"></a>Die Standard-Debug-Engine  
+ Sie können die von der Anwendung verwendete Debug-Engine ändern, indem Sie den Wert der Zeile "defaultdebugengine" in " *SolutionName*" ändern. Die Datei "Application. pkgdef" in die GUID der Debug-Engine.  
   
-##### <a name="the-file-extension-of-the-user-options-file"></a>Die Dateierweiterung der Datei mit den Benutzer  
- Sie können den Namen des Ordners, die Ihre Anwendung für Benutzerdateien verwaltet durch Ändern des Werts der "UserOptsFileExt" in Zeile ändern *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-file-extension-of-the-user-options-file"></a>Die Dateierweiterung der Benutzer Optionsdatei.  
+ Sie können den Namen des Ordners, der von der Anwendung für Benutzer Dateien verwaltet wird, ändern, indem Sie den Wert der Zeile "useroptfileext" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-solution-file-extension"></a>Die Dateierweiterung der Projektmappe  
- Sie können ändern, dass die Erweiterung für die Projektmappendateien verwendet werden, durch Ändern des Werts der "SolutionFileExt" Zeile in der *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-solution-file-extension"></a>Die Projektmappendatei-Erweiterung  
+ Sie können die für die Projektmappendateien verwendete Erweiterung ändern, indem Sie den Wert der Zeile "solutionfileext" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-default-user-files-folder-root"></a>Der standardmäßige Benutzer Dateien-Ordner Stamm.  
- Sie können den Namen des Stammordners der Benutzerdateien für Ihre Anwendung ändern, durch Ändern des Werts der "UserFilesSubFolderName" Zeile in der *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-default-user-files-folder-root"></a>Der Standardordner für Benutzer Dateien  
+ Sie können den Namen des Stamm Ordners der Benutzer Dateien für die Anwendung ändern, indem Sie den Wert der Zeile "userfilessubfoldername" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-solution-file-creator-identifier"></a>Dateibezeichner Ersteller der Lösung  
- Sie können ändern, dass den Bezeichner für die Projektmappendateien durch Ändern des Werts der "SolutionFileCreatorIdentifier" Zeile in der *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-solution-file-creator-identifier"></a>Der Bezeichner der Projektmappendatei  
+ Sie können den Bezeichner für die Projektmappendateien ändern, indem Sie den Wert der Zeile "solutionfilekreatoridentifier" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-default-projects-location"></a>Der Standardspeicherort für Projekte  
- Sie können den Namen der Standardspeicherort für Projekte ändern, durch Ändern des Werts der "DefaultProjectsLocation" Zeile in der *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-default-projects-location"></a>Der Standard Speicherort für Projekte  
+ Sie können den Namen des Standard Projekt Speicher Orts ändern, indem Sie den Wert der Zeile "defaultprojectslocation" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="the-application-localization-package"></a>Das Anwendungspaket für die Lokalisierung  
- Sie können ändern, der Localization-Paket für Ihre Anwendung verwendet wird, durch Ändern des Werts der "AppLocalizationPackage" Zeile in der *SolutionName*. Application.PKGDEF-Datei.  
+##### <a name="the-application-localization-package"></a>Das Anwendungslokalisierungs-Paket  
+ Sie können das Lokalisierungs Paket ändern, das für Ihre Anwendung verwendet wird, indem Sie den Wert der Zeile "applocalizationpackage" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung.  
   
-##### <a name="whether-or-not-to-show-the-hierarchy-root-in-the-title"></a>Ob Sie den Hierarchiestamm im Titel anzeigen  
- Sie können angeben, ob den Hierarchiestamm in der Titelleiste in Ihrer Anwendung angezeigt wird, durch Ändern des Werts der "ShowHierarchyRootInTitle" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Um den Hierarchiestamm anzuzeigen, legen Sie den Wert `dword:00000001`, und um den Hierarchiestamm auszublenden, legen Sie den Wert `dword:00000000`.  
+##### <a name="whether-or-not-to-show-the-hierarchy-root-in-the-title"></a>Gibt an, ob der Hierarchie Stamm im Titel angezeigt werden soll.  
+ Sie können angeben, ob der Hierarchie Stamm in der Titelleiste der Anwendung angezeigt werden soll, indem Sie den Wert der Zeile "showhierarchyrootintitle" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Um den Hierarchie Stamm anzuzeigen, legen Sie den Wert fest `dword:00000001` , und legen Sie den Wert fest, um den Hierarchie Stamm auszublenden `dword:00000000` .  
   
 ##### <a name="specifying-a-start-page"></a>Angeben einer Startseite  
- Angeben eine Startseite für Ihre benutzerdefinierte Anwendung in der *SolutionName*. Application.PKGDEF-Datei, legen Sie den Wert "DisableStartPage" `dword:00000000`, und wählen Sie unter `[$RootKey$\StartPage\Default]` legen Sie den URI an den Speicherort der XAML-Datei:  
+ Zum Angeben einer Startseite für die benutzerdefinierte Anwendung in *SolutionName*. Application. pkgdef-Datei, legen Sie den Wert "disablestartpage" auf fest `dword:00000000` , und unter `[$RootKey$\StartPage\Default]` legen Sie den URI auf den Speicherort der XAML-Datei fest:  
   
 ```  
 DisableStartPage=dword:00000000  
@@ -96,35 +96,35 @@ DisableStartPage=dword:00000000
 "Uri"="$RootFolder$\<name of XAML file>"  
 ```  
   
- In der Datei Applicationcommands.vsct in die *SolutionName*UI-Projekt, kommentieren Sie den Eintrag "No_ShellPkg_startPageCommand":  
+ Kommentieren Sie in der Datei "ApplicationCommands. vsct" im Projekt " *Projektmappenname*" den Eintrag "No_ShellPkg_startPageCommand" aus:  
   
 ```  
 <!--<Define name="No_ShellPkg_StartPageCommand"/>-->  
 ```  
   
- Sie müssen hinzufügen, die XAML-Datei, und alle Graphics-Dateien, die Sie benötigen, zu der *SolutionName* Projekt. Diese Dateien müssen tatsächlich kopiert werden, um die *SolutionName* Projektverzeichnis nicht von einem anderen Verzeichnis hinzugefügt.  
+ Sie müssen die XAML-Datei und alle benötigten Grafikdateien dem Projekt Projektmappenname *SolutionName* hinzufügen. Diese Dateien müssen tatsächlich in das Projektmappenverzeichnis " *Projektmappenname* " kopiert und nicht aus einem anderen Verzeichnis hinzugefügt werden.  
   
- Für alle Dateien, Festlegen der **Elementtyp** Eigenschaft **isolierte Shell-Datei** in der Reihenfolge für die Dateien kopiert werden die *$RootFolder$* Verzeichnis. (Festlegen der **Elementtyp** -Eigenschaft, mit der rechten Maustaste in der das, und wählen Sie **Eigenschaften**. Diese Eigenschaft finden Sie unter **Konfigurationseigenschaften**, **allgemeine**.)  
+ Legen Sie für alle Dateien die Eigenschaft **Elementtyp** auf **isolierte Shelldatei** fest, damit die Dateien in das Verzeichnis *$RootFolder $* kopiert werden. (Um die Eigenschaft **Elementtyp** festzulegen, klicken Sie mit der rechten Maustaste auf die Datei, und wählen Sie **Eigenschaften**. Diese Eigenschaft finden Sie unter **Konfigurations Eigenschaften**, **Allgemein**.)  
   
- Weitere Informationen zum Anpassen der Startseiten, finden Sie unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).  
+ Weitere Informationen zum Anpassen von Startseiten finden Sie unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).  
   
-## <a name="using-other-elements-of-the-isolated-shell"></a>Verwenden andere Elemente der isolated shell  
- Sie können weitere Dateien und Projekte, die in der isolierten Shell-Projektmappenvorlage weiter anpassen, Ihre Anwendung enthalten sind.  
+## <a name="using-other-elements-of-the-isolated-shell"></a>Verwenden anderer Elemente der isolierten Shell  
+ Sie können andere Dateien und Projekte verwenden, die in der Lösungs Vorlage für isolierte Shell enthalten sind, um die Anwendung weiter anzupassen.  
   
-##### <a name="enabledisable-visual-studio-packages"></a>Aktivieren/Deaktivieren von Visual Studio-Pakete  
- Die *SolutionName*pkgundef-Datei können Sie bestimmte Arten von Visual Studio-Funktionen zu deaktivieren, indem Sie bestimmte Pakete ausschließen. Z. B. die folgende Zeile:  
+##### <a name="enabledisable-visual-studio-packages"></a>Aktivieren/Deaktivieren von Visual Studio-Paketen  
+ Die Datei " *SolutionName*. pkgundef" ermöglicht es Ihnen, bestimmte Arten von Visual Studio-Funktionen zu deaktivieren, indem bestimmte Pakete ausgeschlossen werden. Beispielsweise die folgende Zeile:  
   
 ```  
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- Entfernt das Projekt verschiedene Dateien aus dem Satz von Projektvorlagen, die angezeigt wird, der **neues Projekt** Dialogfeld. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ entfernt das Projekt "sonstige Dateien" aus dem Satz von Projektvorlagen, die im Dialogfeld " **Neues Projekt** " angezeigt werden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-##### <a name="enabledisable-menu-commands"></a>Aktivieren/Deaktivieren von Menübefehlen  
- Die *SolutionName*UI.vsct-Datei enthält eine Liste auskommentierte alle die Befehle im Menü der isolated Shell zur Verfügung. Um einen bestimmten Befehl zu deaktivieren, kommentieren Sie die entsprechende Zeile aus. Z. B. um den Kommentar Window Split/zu deaktivieren, heben Sie die auskommentierung der `<Define name="No_SplitCommand"/>` Zeile. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+##### <a name="enabledisable-menu-commands"></a>Menübefehle aktivieren/deaktivieren  
+ Die Datei " *SolutionName*UI. vsct" enthält eine auskommentiertes Liste aller Menübefehle, die für die isolierte Shell verfügbar sind. Um einen bestimmten Befehl zu deaktivieren, heben Sie die Auskommentierung der entsprechenden Zeile auf. Um z. b. den Fenster-/geteiltekommentar zu deaktivieren, heben Sie die Auskommentierung der `<Define name="No_SplitCommand"/>` Zeile Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-##### <a name="the-bitmap-used-on-the-splash-screen"></a>Die Bitmap, die auf dem Begrüßungsbildschirm verwendet  
- Sie können anpassen, dass die Bitmap, die auf dem Begrüßungsbildschirm, wird das Fenster, das angezeigt wird, wenn die Anwendung durch Ändern des Werts, der in Zeile "SplashScreenBitmap" gestartet wird, verwendet der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+##### <a name="the-bitmap-used-on-the-splash-screen"></a>Die auf dem Begrüßungsbildschirm verwendete Bitmap.  
+ Sie können die auf dem Begrüßungsbildschirm verwendete Bitmap anpassen, bei der es sich um das Fenster handelt, das beim Starten der Anwendung angezeigt wird, indem Sie den Wert der Zeile "splashscreenbitmap" in " *SolutionName*" ändern. Pkgdef-Datei der Anwendung. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-##### <a name="the-helpabout-window"></a>Die Hilfe/über Fenster  
- In der isolierten Shell-Vorlage besteht ein separates Projekt Sie anpassen, die Hilfe können/Info-Dialogfeld für Ihre Anwendung. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
+##### <a name="the-helpabout-window"></a>Das Fenster "Hilfe/Informationen"  
+ In der Vorlage für isolierte Shell gibt es ein separates Projekt, das Sie verwenden können, um das Feld "Hilfe/Info" für Ihre Anwendung anzupassen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer einfachen isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).

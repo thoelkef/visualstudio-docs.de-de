@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157613"
 ---
 # <a name="msbuild-targets"></a>MSBuild-Ziele
@@ -60,7 +60,7 @@ Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der B
   
   Ein Ziel wird während eines einzelnen Builds nie zweimal ausgeführt, auch wenn ein nachfolgendes Ziel im Build von diesem abhängt. Sobald ein Ziel ausgeführt wird, ist sein Beitrag zum Build abgeschlossen.  
   
-  Ausführlichere Informationen zur Buildreihenfolge für Ziele finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
+  Weitere Informationen und weitere Informationen zur zielbuildreihenfolge finden Sie unter [zielbuildreihenfolge](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Zielbatchverarbeitung  
  Ein Zielelement kann ein `Outputs`-Attribut enthalten, das Metadaten im Format %(Metadaten) angibt. Wenn dies der Fall ist, führt MSBuild das Ziel einmal für jeden eindeutigen Metadatenwert aus und gruppiert die Elemente, die diesen Metadatenwert aufweisen. Ein auf ein Objekt angewendeter  
@@ -98,6 +98,6 @@ Reference: 4.0
   
  Wenn alle Ausgabeelemente aktuell sind, überspringt MSBuild das Ziel, wodurch die Buildgeschwindigkeit deutlich verbessert wird. Dies wird als inkrementeller Build des Ziels bezeichnet. Wenn nur einige Dateien aktuell sind, führt MSBuild das Ziel ohne die aktuellen Elemente aus. Dies wird als partiell inkrementeller Build des Ziels bezeichnet. Weitere Informationen finden Sie unter [Incremental Builds](../msbuild/incremental-builds.md) (Inkrementelle Builds).  
   
-## <a name="see-also"></a>Siehe auch  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
- [Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [MSBuild-Konzepte](../msbuild/msbuild-concepts.md)   
+ [Gewusst wie: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

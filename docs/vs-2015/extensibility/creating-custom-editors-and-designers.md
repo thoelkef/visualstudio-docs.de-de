@@ -12,18 +12,18 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197413"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiedene Arten von Editor hosten:  
+Die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) von Visual Studio kann unterschiedliche Arten von Editor hosten:  
   
-- Die Visual Studio-Kern-editor  
+- Der Visual Studio-Kern-Editor  
   
 - Benutzerdefinierte Editoren  
   
@@ -31,74 +31,74 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiede
   
 - Designer  
   
-  Die folgende Informationen können Sie den Typ des Editors auswählen, die Sie benötigen.  
+  Die folgenden Informationen helfen Ihnen bei der Auswahl des benötigten Editors.  
   
-## <a name="types-of-editor"></a>Typen des Editors  
- Weitere Informationen zu den Visual Studio-Kern-Editor, finden Sie unter [Erweitern des Editors und Sprachdienste](../extensibility/extending-the-editor-and-language-services.md).  
+## <a name="types-of-editor"></a>Editor Typen  
+ Weitere Informationen zum Visual Studio-Kern-Editor finden Sie unter [Erweitern des Editors und der Sprachdienste](../extensibility/extending-the-editor-and-language-services.md).  
   
 ##### <a name="custom-editors"></a>Benutzerdefinierte Editoren  
- Ein benutzerdefinierter Editor ist eine, die entwickelt wurde, in speziellen Umständen funktioniert. Z. B. können Sie einen Editor erstellen, deren Funktion zum Lesen und Schreiben von Daten in ein bestimmtes Repository wie z. B. Microsoft Exchange-Server ist. Wählen Sie einen benutzerdefinierten Editor, wenn Sie einen Editor, der mit der Art Ihres Projekts funktioniert oder ggf. einen Editor, die nur einige spezifische Befehle hat. Beachten Sie jedoch, dass Benutzer nicht um einen benutzerdefinierten Editor zu verwenden, um Standard bearbeiten können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekte.  
+ Ein benutzerdefinierter Editor ist ein benutzerdefinierter Editor, der in speziellen Situationen funktionieren soll. Beispielsweise können Sie einen Editor erstellen, dessen Funktion das Lesen und Schreiben von Daten in ein bestimmtes Repository, z. b. ein Microsoft Exchange-Server, ist. Wählen Sie einen benutzerdefinierten Editor aus, wenn Sie einen Editor benötigen, der nur mit dem Projekttyp funktioniert, oder wenn Sie einen Editor benötigen, der nur über einige bestimmte Befehle verfügt. Beachten Sie jedoch, dass Benutzer einen benutzerdefinierten Editor nicht zum Bearbeiten von Standard Projekten verwenden können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- Ein benutzerdefinierter Editor kann eine Editorfactory verwenden und Informationen zum Editor zur Registrierung hinzuzufügen. Allerdings kann der Projekttyp, der den benutzerdefinierten Editor zugeordnet, den benutzerdefinierten Editor auf andere Weise instanziieren.  
+ Ein benutzerdefinierter Editor kann eine Editorfactory verwenden und der Registrierung Informationen über den Editor hinzufügen. Der mit dem benutzerdefinierten Editor verknüpfte Projekttyp kann den benutzerdefinierten Editor jedoch auf andere Weise instanziieren.  
   
- Ein benutzerdefinierter Editor können direkte Aktivierung oder vereinfachtes einbetten Sie um eine Ansicht zu implementieren.  
+ Ein benutzerdefinierter Editor kann entweder eine direkte Aktivierung oder eine vereinfachte Einbettung verwenden, um eine Ansicht zu implementieren.  
   
 ##### <a name="external-editors"></a>Externe Editoren  
- Externe Editoren sind-Editoren, die nicht in Visual Studio, z. B. Microsoft Word oder Microsoft FrontPage, integriert werden. Sie können einen-Editor aufrufen, wenn, z. B. Sie Text, aus einem VSPackage übergeben werden. Externe Editoren registrieren sich selbst und außerhalb von Visual Studio verwendet werden können. Wenn Sie einen externen Editor aufrufen und es in ein Hostfenster eingebettet werden kann, wird es in einem Fenster in der IDE. Wenn dies nicht der Fall ist, klicken Sie dann die IDE erstellt ein separates Fenster für sie.  
+ Externe Editoren sind Editoren, die nicht in Visual Studio integriert sind, z. b. Microsoft Word, Notepad oder Microsoft FrontPage. Sie könnten beispielsweise einen solchen Editor aufzurufen, wenn Sie z. b. Text aus Ihrem VSPackage an ihn übergeben. Externe Editoren registrieren sich selbst und können außerhalb von Visual Studio verwendet werden. Wenn Sie einen externen Editor aufzurufen und in ein Host Fenster eingebettet werden können, wird dieser in einem Fenster in der IDE angezeigt. Wenn dies nicht der Fall ist, erstellt die IDE ein separates Fenster dafür.  
   
- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode legt die Priorität des Dokuments mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration. Wenn die `DP_External` Wert angegeben wird, die Datei kann von einem externen Editor geöffnet werden.  
+ Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode legt die Dokument Priorität mithilfe der- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration fest. Wenn der `DP_External` Wert angegeben wird, kann die Datei von einem externen Editor geöffnet werden.  
   
-## <a name="editor-design-decisions"></a>Editor-Entwurfsentscheidungen  
- Die folgenden Entwurfsfragen helfen Ihnen, wählen Sie den Typ des Editors, die beste für Ihre Anwendung geeignet sind:  
+## <a name="editor-design-decisions"></a>Entwurfsentscheidungen im Editor  
+ Die folgenden Entwurfs Fragen helfen Ihnen, den Typ des Editors auszuwählen, der für Ihre Anwendung am besten geeignet ist:  
   
-- Wird Ihre Anwendung die Daten in Dateien oder nicht speichern? Wenn sie die Daten in Dateien gespeichert werden, werden sie in einem benutzerdefinierten oder standardmäßigen Format?  
+- Speichert Ihre Anwendung Ihre Daten in Dateien? Wenn die Daten in Dateien gespeichert werden, befinden Sie sich in einem benutzerdefinierten oder Standardformat?  
   
-     Wenn Sie ein standard-Dateiformat verwenden, werden andere Projekttypen zusätzlich zu Ihrem Projekt zu öffnen und Daten für sie Lese-/Schreibberechtigung. Wenn Sie ein benutzerdefiniertes Dateiformat verwenden, jedoch werden nur die Art Ihres Projekts zu öffnen und Daten für sie Lese-/Schreibberechtigung.  
+     Wenn Sie ein Standarddatei Format verwenden, können andere Projekttypen zusätzlich zu Ihrem Projektdaten öffnen und in diese schreiben/schreiben. Wenn Sie jedoch ein benutzerdefiniertes Dateiformat verwenden, kann nur Ihr Projekttyp Daten öffnen und in diese schreiben/schreiben.  
   
-     Wenn Ihr Projekt Dateien verwendet, sollten Sie in der standard-Editor anpassen. Wenn Ihr Projekt keine Dateien verwendet, aber stattdessen Elemente in einer Datenbank oder anderen Repository verwendet, sollten Sie einen benutzerdefinierten Editor erstellen.  
+     Wenn das Projektdateien verwendet, sollten Sie den Standard-Editor anpassen. Wenn das Projekt keine Dateien verwendet, sondern stattdessen Elemente in einer Datenbank oder einem anderen Repository verwendet, sollten Sie einen benutzerdefinierten Editor erstellen.  
   
-- Muss Ihr Editor für ActiveX-Steuerelemente hosten?  
+- Muss der Editor ActiveX-Steuerelemente hosten?  
   
-     Wenn Ihr Editor für ActiveX-Steuerelemente hostet, dann implementieren einen direkten Aktivierung-Editor, wie unter [direkte Aktivierung](../misc/in-place-activation.md). Wenn es kein ActiveX-Steuerelemente gehostet wird, klicken Sie dann entweder einen vereinfachten einbetten Editor verwenden oder Anpassen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Standard-Editor.  
+     Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](../misc/in-place-activation.md)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Standard Editor an.  
   
-- Wird als Editor verwenden, die mehrere Ansichten unterstützt? Wenn Ansichten des Editors zur gleichen Zeit wie der Standard-Editor angezeigt werden soll, müssen Sie auch mehrere Ansichten unterstützen.  
+- Unterstützt der Editor mehrere Ansichten? Sie müssen mehrere Sichten unterstützen, wenn Sie möchten, dass Ansichten des Editors zur gleichen Zeit wie der Standard-Editor sichtbar sind.  
   
-     Wenn Ihr Editor mehrere Ansichten zu unterstützen muss, müssen die Dokumentdaten und dokumentenansichtsobjekten für den Editor separate Objekte sein. Weitere Informationen finden Sie unter [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+     Wenn Ihr Editor mehrere Ansichten unterstützen muss, müssen die Dokument Daten-und Dokument Ansichts Objekte für den Editor getrennte Objekte sein. Weitere Informationen finden Sie [unter unterstützen mehrerer Dokument Ansichten](../extensibility/supporting-multiple-document-views.md).  
   
-     Wenn Ihr Editor mehrere Ansichten unterstützt, möchten Sie verwenden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] core-Anmerkung des Text-Puffer-Implementierung (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt) für Ihre dokumentendatenobjekt? D.h., möchten Sie Ihre-Editor-Ansicht Seite-an-Seite mit Unterstützung der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor? Die Möglichkeit hierzu ist die Grundlage für das Forms-Designer...  
+     Wenn Ihr Editor mehrere Ansichten unterstützt, planen Sie die Verwendung der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Text Puffer Implementierung (-Objekt) des Kern-Editors <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> für das Dokument Datenobjekt? Das heißt, möchten Sie die Editor-Ansicht parallel mit dem Kern-Editor unterstützen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ? Die Möglichkeit, dies zu erreichen, ist die Basis des Forms-Designers.  
   
-- Wenn Sie einen externen Editor hosten müssen, kann der Editor eingebettet werden in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
+- Wenn Sie einen externen Editor hosten müssen, kann der Editor in eingebettet werden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ?  
   
-     Wenn sie eingebettet werden kann, erstellen Sie ein Hostfenster für den externen Editor, und rufen Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode, und legen die <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumerationswert zu `DP_External`. Wenn der Editor kann nicht eingebettet werden, wird die IDE automatisch ein separates Fenster dafür erstellt.  
+     Wenn Sie eingebettet werden kann, sollten Sie ein Host Fenster für den externen Editor erstellen und dann die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode und den- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumerationswert auf festlegen `DP_External` . Wenn der Editor nicht eingebettet werden kann, wird von der IDE automatisch ein separates Fenster erstellt.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Erläutert das Erstellen eines benutzerdefinierten Editors.  
   
  [Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
- Erläutert, wie Sie einen benutzerdefinierten Editor Features hinzu.  
+ Erläutert das Hinzufügen von Funktionen zu einem benutzerdefinierten Editor.  
   
  [Designer-Initialisierung und Metadatenkonfiguration](../extensibility/designer-initialization-and-metadata-configuration.md)  
- Erläutert, wie einen Designer initialisiert werden.  
+ Erläutert, wie ein Designer initialisiert wird.  
   
  [Bereitstellen von Rückgängig-Unterstützung für Designer](../extensibility/supplying-undo-support-to-designers.md)  
- Erläutert, wie zum Bereitstellen von Rückgängig-Unterstützung für Designer.  
+ Erläutert die Bereitstellung von Rückgängig-Unterstützung für-Designer.  
   
  [Syntaxfarben in benutzerdefinierten Editoren](../extensibility/syntax-coloring-in-custom-editors.md)  
- Erläutert den Unterschied zwischen Syntaxfarben, die in der Kern-Editor und in benutzerdefinierten Editoren.  
+ Erläutert den Unterschied zwischen der Syntax Farbgebung im Kern-Editor und in benutzerdefinierten Editoren.  
   
  [Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md)  
- Erläutert die Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren implementieren.  
+ Erläutert, wie Dokument Daten und Dokument Sichten in benutzerdefinierten Editoren implementiert werden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Legacyschnittstelle im Editor](../extensibility/legacy-interfaces-in-the-editor.md)  
- Erläutert, wie der Kern-Editor mithilfe der legacy-API den Zugriff auf.  
+ Erläutert, wie Sie mithilfe der Legacy-API auf den Kern-Editor zugreifen können.  
   
  [Entwickeln eines Legacysprachdiensts](../extensibility/internals/developing-a-legacy-language-service.md)  
- Erläutert, wie einen Sprachdienst zu implementieren.  
+ Erläutert, wie ein Sprachdienst implementiert wird.  
   
  [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Erläutert das Erstellen von UI-Elemente, die den Rest der entsprechen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Erläutert das Erstellen von UI-Elementen, die dem Rest von entsprechen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

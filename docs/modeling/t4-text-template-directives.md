@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591826"
 ---
 # <a name="t4-text-template-directives"></a>T4-Textvorlagendirektiven
@@ -35,7 +35,7 @@ Alle Attributwerte müssen in doppelte Anführungszeichen eingeschlossen werden.
 
 Anweisungen sind in der Regel die ersten Elemente in einer Vorlagendatei oder einer eingeschlossenen Datei. Platzieren Sie sie nicht in einem Codeblock `<#...#>` und nicht nach einem Klassenfunktionsblock `<#+...#>`.
 
-[T4-Vorlagenanweisung](../modeling/t4-template-directive.md)
+[T4-Vorlagendirektive](../modeling/t4-template-directive.md)
 
 ```
 <#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>
@@ -59,7 +59,7 @@ Anweisungen sind in der Regel die ersten Elemente in einer Vorlagendatei oder ei
 <#@ assembly name="[assembly strong name|assembly file name]" #>
 ```
 
-[T4-Import-Anweisung](../modeling/t4-import-directive.md)
+[T4-Import-Direktive](../modeling/t4-import-directive.md)
 
 ```
 <#@ import namespace="namespace" #>
@@ -71,7 +71,7 @@ Anweisungen sind in der Regel die ersten Elemente in einer Vorlagendatei oder ei
 <#@ include file="filePath" #>
 ```
 
-[T4 CleanUpBehavior-Anweisung](../modeling/t4-cleanupbehavior-directive.md)
+[T4 CleanUpBehavior-Direktive](../modeling/t4-cleanupbehavior-directive.md)
 
 ```
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>

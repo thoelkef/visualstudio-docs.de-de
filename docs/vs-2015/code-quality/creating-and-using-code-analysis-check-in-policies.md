@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8e31ff799edc93d250eeeab57b349873a63ecf14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667711"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse
@@ -35,7 +35,7 @@ Bei Verwendung der Team Foundation-Versionskontrolle (TFVC) können Sie für .NE
 
  [Implementieren von benutzerdefinierten Eincheck Richtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md) Erläutert die Schritte, die Sie zum Erstellen eines benutzerdefinierten Regelsatzes für die Eincheck Richtlinie eines Teamprojekts und zum Synchronisieren der Code Projekte des Teamprojekts mit der Check-in-Richtlinie verwenden.
 
- [Versions Kompatibilität für Eincheck Richtlinien für die Code Analyse](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md) Erläutert Kompatibilitätsprobleme bei der Code Analyse bei der Überprüfung von [!INCLUDE[vstsLong](../includes/vstslong-md.md)].
+ [Versions Kompatibilität für Eincheck Richtlinien für die Code Analyse](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md) Erläutert Kompatibilitätsprobleme beim Einchecken von Code Analysen Zwischenversionen von [!INCLUDE[vstsLong](../includes/vstslong-md.md)] .
 
  Gewusst [wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md) Erläutert, wie Wörter und Token zum Wörterbuch hinzugefügt werden, auf das in den Benennungs Regeln für die Code Analyse verwiesen wird.
 

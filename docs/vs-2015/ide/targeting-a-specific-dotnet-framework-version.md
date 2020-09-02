@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5d3094e55cf791b60e4a2c163cdd7586ada467c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646775"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Festlegen einer bestimmten .NET-Framework-Zielversion
@@ -31,13 +31,13 @@ In Visual Studio können Sie die Version oder das Profil von .NET Framework ange
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Visual Studio-Übersicht über die Ausrichtung auf mehrere Ziel](../ide/visual-studio-multi-targeting-overview.md) Bietet eine Übersicht über die Features für die mehrstufige Zielplattform in Visual Studio.
 
- Gewusst [wie: Ziel einer Version des .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) Erläutert, wie Sie eine bestimmte [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] für das Projekt Visual Basic, C# das visuelle F# Projekt oder das visuelle Element angeben.
+ Gewusst [wie: Ziel einer Version des .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) Erläutert, wie ein bestimmtes [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] für Ihre Visual Basic-, Visual c#-oder Visual F#-Projekt angegeben wird.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
  [.NET Framework der Zielplattform für ASP.NET-Webprojekte](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) Erläutert, wie diese Version von Visual Studio verwendet wird, um Webanwendungen zu entwickeln, die unter früheren Versionen der .NET Framework ausgeführt werden.
 
- [Anwendungsseite, Projekt-DesignerC#()](../ide/reference/application-page-project-designer-csharp.md) beschreibt das **Ziel Framework** -Steuerelement im Projekt-Designer für [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projekte.
+ [Seite "Anwendung", Projekt-Designer (c#)](../ide/reference/application-page-project-designer-csharp.md) Beschreibt das **Ziel Framework** -Steuerelement im Projekt-Designer für- [!INCLUDE[csprcs](../includes/csprcs-md.md)] Projekte.
 
- [Seite "Anwendung", Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) Beschreibt das **Ziel Framework** -Steuerelement im Projekt-Designer für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Projekte.
+ [Seite "Anwendung", Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) Beschreibt das **Ziel Framework** -Steuerelement im Projekt-Designer für- [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Projekte.
 
- Gewusst [wie: Ändern des Ziel Frameworks und des Platt Form Toolsets](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe) Beschreibt, wie Einstellungen für visuelle C++ Projekte geändert werden, um verschiedene Versionen des .NET Framework als Ziel zu verwenden und um unterschiedliche Platt Form Toolsets zu verwenden.
+ Gewusst [wie: Ändern des Ziel Frameworks und des Platt Form Toolsets](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe) Beschreibt, wie Einstellungen für Visual C++ Projekte geändert werden, um verschiedene Versionen der .NET Framework als Ziel festgelegt und verschiedene Platt Form Toolsets zu verwenden.

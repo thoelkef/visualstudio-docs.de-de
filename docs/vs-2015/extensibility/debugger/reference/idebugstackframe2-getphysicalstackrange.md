@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft-Dokumentation
+title: 'IDebugStackFrame2:: getphysicalstackrange | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 99fc1e635691fa290d0a8e4506ef55d677e9ff78
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547649"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft eine Darstellung abhängig vom Computer des Bereichs von physischen Adressen, die einen Stapelrahmen zugeordnet.  
+Ruft eine Computer abhängige Darstellung des Bereichs physischer Adressen ab, der einem Stapel Rahmen zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,18 +42,18 @@ int GetPhysicalStackRange ( 
   
 #### <a name="parameters"></a>Parameter  
  `paddrMin`  
- [out] Gibt die niedrigste physische Adresse, die diesen Stapelrahmen zugeordnet.  
+ vorgenommen Gibt die niedrigste physische Adresse zurück, die diesem Stapel Rahmen zugeordnet ist.  
   
  `paddrMax`  
- [out] Gibt die höchste physische Adresse, die diesen Stapelrahmen zugeordnet.  
+ vorgenommen Gibt die höchste physische Adresse zurück, die diesem Stapel Rahmen zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die Informationen, die von dieser Methode zurückgegebene sitzungsbasierter Debug-Manager (SDM) Dient zum Sortieren der Stapelrahmen.  
+## <a name="remarks"></a>Bemerkungen  
+ Die von dieser Methode zurückgegebenen Informationen werden vom Sitzungs-Debug-Manager (SDM) zum Sortieren von Stapel Rahmen verwendet.  
   
- Es wird davon ausgegangen, dass die Aufrufliste nach unten, d. h. vergrößert wird, dass es sich bei neuen Stapelrahmen an zunehmend niedrigere Speicheradressen hinzugefügt werden. Eine Laufzeit-Architektur muss physischen Stapel Bereiche angeben, die diese Annahme zu entsprechen.  
+ Es wird davon ausgegangen, dass die aufrufsstapel nach unten wächst, d. h., dass neue Stapel Rahmen bei immer niedrigeren Speicheradressen hinzugefügt werden. Eine Lauf Zeit Architektur muss physische Stapel Bereiche bereitstellen, die dieser Annahme entsprechen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

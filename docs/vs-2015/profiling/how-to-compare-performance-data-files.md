@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185935"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Vorgehensweise: Vergleichen von Leistungsdatendateien
@@ -34,7 +34,7 @@ Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.vsp
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>So erstellen Sie eine Vergleichsdatei für ein Projekt im Leistungs-Explorer.  
   
-1. Wählen Sie im **Leistungs-Editor** unter **Berichte** die VSP- oder VSPS-Berichtsdatei aus, die Sie als Baselinewert für den Vergleich verwenden möchten.  
+1. Wählen Sie in **Leistungs-Explorer**unter **Berichte**die VSP-oder VSPS-Berichtsdatei aus, die Sie als Baselinewerte für den Vergleich verwenden möchten.  
   
 2. Wählen Sie die VSP- oder VSPS-Berichtsdateien, die Sie vergleichen möchten.  
   
@@ -56,6 +56,6 @@ Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.vsp
   
 1. Klicken Sie im Menü **Analysieren** auf **Leistungsberichte vergleichen**.  
   
-2. Durchsuchen und wählen Sie im Fenster **Analysedateien für Vergleich auswählen** die Analysedatei **Baselinedatei** und **Vergleichsdatei** (.vsp oder .vsps) aus.  
+2. Suchen Sie im Fenster **Analysedateien für Vergleich auswählen** die **Dateianalyse Datei** (VSP-oder VSPS-Datei) und die **Vergleichs Datei** (VSP-oder VSPS-Datei), und wählen Sie Sie aus.  
   
 3. Klicken Sie auf **OK**.

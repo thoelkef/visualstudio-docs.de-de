@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fb84854bd871277f680a753b28c17e3429283928
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646711"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
@@ -44,7 +44,7 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 |Klasse|Erstellt eine Klassendeklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
 |ctor|Erstellt einen Konstruktor für die enthaltende Klasse.|Innerhalb einer Klasse.|
 |cw|Erstellt einen Aufruf an <xref:System.Console.WriteLine%2A>.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|do|Erstellt eine [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
+|do|Erstellt eine [DO](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) - `while` Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |else|Erstellt einen [else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |enum|Erstellt eine [enum](https://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
 |ist gleich|Erstellt eine Methodendeklaration, die die in der <xref:System.Object>-Klasse definierte <xref:System.Object.Equals%2A>-Methode außer Kraft setzt.|Innerhalb einer Klasse oder Struktur.|
@@ -60,7 +60,7 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 |iterindex|Erstellt ein „benanntes“ Iterator-/Indexerpaar unter Verwendung einer geschachtelten Klasse.|Innerhalb einer Klasse oder Struktur.|
 |lock|Erstellt einen [lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |mbox|Erstellt einen Aufruf an <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Sie müssen möglicherweise einen Verweis auf „System.Windows.Forms.dll“ hinzufügen.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|namespace|Erstellt eine [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|
+|Namespace|Erstellt eine [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|
 |prop|Erstellt eine Deklaration mit [automatisch implementierter Eigenschaft](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).|Innerhalb einer Klasse oder Struktur.|
 |propfull|Erstellt eine Eigenschaftendeklaration mit get-Accessor und set-Accessor.|Innerhalb einer Klasse oder Struktur.|
 |propg|Erstellt eine schreibgeschützte [automatisch implementierte Eigenschaft](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) mit einem privaten „set“-Accessor.|Innerhalb einer Klasse oder Struktur.|
@@ -68,12 +68,12 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 |struct|Erstellt eine [struct](https://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
 |svm|Erstellt eine Deklaration der Main-Methode mit [static](https://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[void](https://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4).|Innerhalb einer Klasse oder Struktur.|
 |switch|Erstellt einen [switch](https://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|try|Erstellt einen [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
+|Versuch|Erstellt einen [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |tryf|Erstellt einen [try-finally](https://msdn.microsoft.com/library/c27623fb-7261-4464-862c-7a369d3c8f0a)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |unchecked|Erstellt einen [unchecked](https://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |unsafe|Erstellt einen [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|using|Erstellt eine [using](https://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8)-Direktive.|In einem Namespace (einschließlich des globalen Namespaces).|
+|Mithilfe von|Erstellt eine [using](https://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8)-Direktive.|In einem Namespace (einschließlich des globalen Namespaces).|
 |while|Erstellt eine [while](https://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 
-## <a name="see-also"></a>Siehe auch
- [Code Ausschnitt Funktionen](../ide/code-snippet-functions.md) [Code Ausschnitte](../ide/code-snippets.md) Gewusst [wie: Erstellen eines neuen](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) Ausschnitts mit Ersetzungs [Vorlagen Parameter](../ide/template-parameters.md) Gewusst [wie: Verwenden von umschließenden Code Ausschnitten](../ide/how-to-use-surround-with-code-snippets.md) Gewusst wie: [Wiederherstellen C# von refactoringausschnitten](../ide/how-to-restore-csharp-refactoring-snippets.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Code Ausschnitt Funktionen](../ide/code-snippet-functions.md) [Code Ausschnitte](../ide/code-snippets.md) Gewusst [wie: Erstellen eines neuen](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) Ausschnitts mit Ersetzungs [Vorlagen Parameter](../ide/template-parameters.md) Gewusst [wie: Verwenden von umschließenden Code Ausschnitten](../ide/how-to-use-surround-with-code-snippets.md) Gewusst wie: [Wiederherstellen von c#-refactoringausschnitten](../ide/how-to-restore-csharp-refactoring-snippets.md)

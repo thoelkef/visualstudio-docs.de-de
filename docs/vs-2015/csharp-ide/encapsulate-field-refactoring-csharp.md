@@ -1,5 +1,5 @@
 ---
-title: Refactoring von Feld Kapseln (C#) | Microsoft-Dokumentation
+title: Refactoring von Feld Kapseln (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b4f5ddbe7eab925b06584f00b04bed3c74e9811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667570"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refactoring „Feld kapseln“ (C#)
@@ -76,7 +76,7 @@ Der Umgestaltungs Vorgang **Feld kapseln** ermöglicht es Ihnen, schnell eine Ei
 
 5. Drücken Sie die EINGABETASTE, oder klicken Sie auf **OK** .
 
-6. Wenn Sie die Option **Vorschau der Verweis Änderungen** ausgewählt haben, wird das Fenster **Vorschau der Verweis Änderungen** geöffnet. Klicken Sie auf die Schaltfläche **anwenden** .
+6. Wenn Sie die Option **Vorschau der Verweis Änderungen** ausgewählt haben, wird das Fenster **Vorschau der Verweis Änderungen** geöffnet. Klicken Sie auf die Schaltfläche **Übernehmen**.
 
      Folgender `get`- und `set`-Accessorcode wird in der Quelldatei angezeigt:
 
@@ -98,12 +98,12 @@ Der Umgestaltungs Vorgang **Feld kapseln** ermöglicht es Ihnen, schnell eine Ei
     Console.WriteLine("width = {0}", mySquare.Width);
     ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Der Vorgang zum **Kapseln des Felds** ist nur möglich, wenn sich der Cursor in derselben Zeile wie die Feld Deklaration befindet.
 
  Für Deklarationen, die mehrere Felder deklarieren, verwendet das **Feld kapseln** das Komma als Begrenzung zwischen Feldern und initiiert das Refactoring für das Feld, das sich am nächsten im Cursor und in derselben Zeile wie der Cursor befindet. Sie können das zu kapselnde Feld auch angeben, indem Sie den Namen des Feldes in der Deklaration auswählen.
 
- Der durch diesen Umgestaltungsvorgang generierte Code wird durch das Codeausschnittsfeature des Vorgangs „Feld kapseln“ modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter [Code Snippets](../ide/code-snippets.md).
+ Der durch diesen Umgestaltungsvorgang generierte Code wird durch das Codeausschnittsfeature des Vorgangs „Feld kapseln“ modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).
 
-## <a name="see-also"></a>Siehe auch
- [Refactoring (C#)](../csharp-ide/refactoring-csharp.md) [visuelle C# Code Ausschnitte](../ide/visual-csharp-code-snippets.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Refactoring (c#)](../csharp-ide/refactoring-csharp.md) [Visual c#-Code Ausschnitte](../ide/visual-csharp-code-snippets.md)

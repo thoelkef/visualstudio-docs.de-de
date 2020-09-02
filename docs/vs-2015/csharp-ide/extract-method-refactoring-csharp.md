@@ -1,5 +1,5 @@
 ---
-title: Refactoring zum Extrahieren vonC#Methoden () | Microsoft-Dokumentation
+title: Refactoring zum Extrahieren von Methoden (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e6d5e7913a7433fd4b30da490f33dd614c3e2b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667543"
 ---
 # <a name="extract-method-refactoring-c"></a>Umgestaltung "Methode extrahieren" (C#)
@@ -82,20 +82,20 @@ ms.locfileid: "72667543"
 
      Sie können auch mit der rechten Maustaste auf den ausgewählten Code klicken, auf **umgestalten**zeigen und dann auf **Methode extrahieren** klicken, um das Dialogfeld **Methode extrahieren** anzuzeigen.
 
-4. Geben Sie im Feld **Neuer Methodenname** einen Namen für die neue Methode an, z. b. `CircleArea`.
+4. Geben Sie `CircleArea` im Feld **Neuer Methodenname** einen Namen für die neue Methode an, z. b..
 
      Eine Vorschau der neuen Methoden Signatur wird unter **Vorschau der Methoden Signatur**angezeigt.
 
 5. Klicken Sie auf **OK**.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Wenn Sie den **extract-Methoden** Befehl verwenden, wird die neue-Methode nach dem Quellmember in derselben Klasse eingefügt.
 
 ## <a name="partial-types"></a>Partielle Typen
  Wenn es sich bei der Klasse um einen partiellen Typ handelt, generiert die **Extract-Methode** die neue Methode direkt nach dem Quellmember. **Extract Method** bestimmt die Signatur der neuen Methode und erstellt eine statische Methode, wenn vom Code in der neuen Methode auf keine Instanzdaten verwiesen wird.
 
 ## <a name="generic-type-parameters"></a>Generische Typparameter
- Wenn Sie eine Methode extrahieren, die einen nicht eingeschränkten generischen Typparameter aufweist, fügt der generierte Code den `ref` Modifizierer nicht zu diesem Parameter hinzu, es sei denn, ihm ist ein Wert zugewiesen. Wenn die extrahierte Methode Verweis Typen als generisches Typargument unterstützt, sollten Sie den `ref` Modifizierer manuell dem-Parameter in der Methoden Signatur hinzufügen.
+ Wenn Sie eine Methode extrahieren, die einen nicht eingeschränkten generischen Typparameter aufweist, fügt der generierte Code diesen Parameter nur dann den `ref` Modifizierer hinzu, wenn ihm ein Wert zugewiesen wird. Wenn die extrahierte Methode Verweis Typen als generisches Typargument unterstützt, sollten Sie den- `ref` Modifizierer manuell dem-Parameter in der Methoden Signatur hinzufügen.
 
 ## <a name="anonymous-methods"></a>Anonyme Methoden
  Wenn Sie versuchen, einen Teil einer anonymen Methode zu extrahieren, der einen Verweis auf eine lokale Variable enthält, die entweder deklariert oder außerhalb der anonymen Methode referenziert wird, werden Sie von Visual Studio vor möglichen semantischen Änderungen gewarnt.
@@ -124,5 +124,5 @@ class Program
 
  Um diese Situation zu umgehen, erstellen Sie die lokalen Variablen, die in den Feldern der anonymen Methode der-Klasse verwendet werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)

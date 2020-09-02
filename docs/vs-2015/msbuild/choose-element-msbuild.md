@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187007"
 ---
 # <a name="choose-element-msbuild"></a>Choose-Element (MSBuild)
@@ -57,21 +57,21 @@ Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-E
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|BESCHREIBUNG|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Optionales Element.<br /><br /> Gibt den Codeblock mit `PropertyGroup`- und `ItemGroup`-Elementen an, die ausgewertet werden sollen, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden. Ein `Choose`-Element kann kein oder ein `Otherwise`-Element enthalten, und es muss das letzte Element sein.|  
-|[When](../msbuild/when-element-msbuild.md)|Erforderliches Element.<br /><br /> Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann. Ein `Choose`-Element kann ein oder mehrere `When`-Elemente enthalten.|  
+|[Sonst](../msbuild/otherwise-element-msbuild.md)|Optionales Element.<br /><br /> Gibt den Codeblock mit `PropertyGroup`- und `ItemGroup`-Elementen an, die ausgewertet werden sollen, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden. Ein `Choose`-Element kann kein oder ein `Otherwise`-Element enthalten, und es muss das letzte Element sein.|  
+|[Wenn](../msbuild/when-element-msbuild.md)|Erforderliches Element.<br /><br /> Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann. Ein `Choose`-Element kann ein oder mehrere `When`-Elemente enthalten.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|BESCHREIBUNG|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Gibt den Codeblock an, der ausgeführt wird, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden.|  
+|[Sonst](../msbuild/otherwise-element-msbuild.md)|Gibt den Codeblock an, der ausgeführt wird, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden.|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] -Projektdatei.|  
-|[When](../msbuild/when-element-msbuild.md)|Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.|  
+|[Wenn](../msbuild/when-element-msbuild.md)|Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.|  
   
-## <a name="remarks"></a>Anmerkungen  
- Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [MSBuild Conditional Constructs](../msbuild/msbuild-conditional-constructs.md).  
+## <a name="remarks"></a>Bemerkungen  
+ Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [bedingte Konstrukte](../msbuild/msbuild-conditional-constructs.md).  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Projekt verwendet das `Choose`-Element, um auszuwählen, welche Gruppe von Eigenschaftswerten in den `When`-Elementen festgelegt werden soll. Wenn die `Condition`-Attribute beider `When`-Elemente `false` ergeben, werden die Eigenschaftswerte im `Otherwise`-Element festgelegt.  
@@ -121,6 +121,6 @@ Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-E
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md)  (Bedingte Konstrukte in MSBuild)  
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
+## <a name="see-also"></a>Weitere Informationen  
+ [Bedingte Konstrukte](../msbuild/msbuild-conditional-constructs.md)   
+ [Referenz zum Projektdatei Schema](../msbuild/msbuild-project-file-schema-reference.md)
