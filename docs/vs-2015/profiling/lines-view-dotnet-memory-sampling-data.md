@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251dc4279530c2d10ba8b404ee515824d0671037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62579986"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zeilenansicht - .NET-Speichersamplingdaten
@@ -46,7 +46,7 @@ In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, 
 |Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
-|**Prozessname**|Der Prozessname.|  
+|**Prozessname**|Der Name des Prozesses.|  
 |**Modulname**|Der Name des Moduls, das die Anweisung enthält.|  
 |**Modulpfad**|Der Pfad des Moduls, das die Anweisung enthält.|  
 |**Quelldatei**|Die Quelldatei, die die Anweisung enthält.|  
@@ -57,11 +57,11 @@ In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, 
 |**Quellendzeile**|Die Nummer der Endzeile in der Quelldatei, an der die Zuordnung aufgetreten ist.|  
 |**Quellanfangszeichen**|Das Offset des Startzeichens in der Quelldateizeile, an dem die Zuordnung aufgetreten ist.|  
 |**Quellendzeichen**|Der Offset des Endzeichens der Quelldateizeile, an dem die Zuordnung aufgetreten ist.|  
-|**Zeilenname**|Ein vom Profiler generierter Bezeichner der Zeile mit folgender Syntax:`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|  
+|**Zeilenname**|Ein vom Profiler generierter Bezeichner der Zeile mit folgender Syntax:`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number Start,Character Start` **]**|  
 |**Exklusive Speicherbelegungen**|Die Gesamtanzahl der Objekte, die in dieser Zeile erstellt wurden.|  
 |**Exklusive Zuordnungen %**|Der Prozentsatz aller Objekte, die während der Profilerstellung erstellt und in dieser Zeile zugeordnet wurden.|  
 |**Exklusive Bytes**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|  
 |**Exklusive Bytes %**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Zeilenansicht](../profiling/lines-view-sampling-data.md)

@@ -16,43 +16,43 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900325"
 ---
 # <a name="clickonce-reference"></a>ClickOnce-Referenz
-Die folgenden Seiten beschreiben die Struktur der XML-Dateien verwendet, um ClickOnce-Anwendungen darzustellen.
+Die folgenden Seiten beschreiben die Struktur der XML-Dateien, die zum Darstellen von ClickOnce-Anwendungen verwendet werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
 
- Aufgelistet und beschrieben, die Elemente und Attribute, die ein Anwendungsmanifest bilden.
+ Listet die Elemente und Attribute auf, die ein Anwendungs Manifest bilden, und beschreibt diese.
 
  [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)
 
- Aufgelistet und beschrieben, die Elemente und Attribute, die ein Bereitstellungsmanifest bilden.
+ Listet die Elemente und Attribute auf, die ein Bereitstellungs Manifest bilden, und beschreibt diese.
 
  [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
 
- Produkt- und Paketdateien Dateielemente aufgeführt.
+ Listet Produkt-und Paketdatei Elemente auf.
 
  [Referenz zur nicht verwalteten API für ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)
 
- Enthält nicht verwaltete öffentliche APIs aus dfshim.dll.
+ Listet nicht verwaltete öffentliche APIs aus dfshim.dll auf.
 
 ## <a name="reference"></a>Referenz
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 
- Enthält ausführliche konzeptionelle Informationen zur ClickOnce-Bereitstellung.
+ Stellt ausführliche konzeptionelle Informationen zur ClickOnce-Bereitstellung bereit.
 
 <xref:System.Deployment.Application>
 
- Enthält Links zur Dokumentation der öffentlichen Klassen verweisen, die ClickOnce-in verwaltetem Code Unterstützung.
+ Stellt Links zur Referenz Dokumentation der öffentlichen Klassen bereit, die ClickOnce innerhalb von verwaltetem Code unterstützen.
 
- [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 
- Stellt Exemplarische Vorgehensweisen bereit und wie – um die, die ClickOnce-Aufgaben ausführen.
+ Enthält exemplarische Vorgehensweisen und Anleitungen, die ClickOnce-Aufgaben ausführen.

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815351"
 ---
 # <a name="work-with-tables"></a>Arbeiten mit Tabellen
@@ -27,11 +27,11 @@ ms.locfileid: "62815351"
 
 |Aufgabe|Prozedur|
 |----------|---------------|
-|Erstellen Sie eine Tabelle, wenden Sie eine Formatvorlage an, und greifen Sie im Code auf diese Tabelle zu.|[Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen](../vsto/how-to-programmatically-create-word-tables.md)|
-|Erstellen Sie eine Tabelle, formatieren Sie sie anschließend, und fügen Sie dann Daten in die Zellen ein.|[Vorgehensweise: Programmgesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|
-|Fügen Sie eine Zeile oder Spalte zu einer Tabelle hinzu.|[Vorgehensweise: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
-|Fügen Sie Text zu einer Zelle hinzu und formatieren Sie ihn anschließend.|[Vorgehensweise: Programmgesteuertes Hinzufügen von Text und Formatierungen zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
+|Erstellen Sie eine Tabelle, wenden Sie eine Formatvorlage an, und greifen Sie im Code auf diese Tabelle zu.|[Gewusst wie: Programm gesteuertes Erstellen von Word-Tabellen](../vsto/how-to-programmatically-create-word-tables.md)|
+|Erstellen Sie eine Tabelle, formatieren Sie sie anschließend, und fügen Sie dann Daten in die Zellen ein.|[Gewusst wie: Programm gesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|
+|Fügen Sie eine Zeile oder Spalte zu einer Tabelle hinzu.|[Gewusst wie: Programm gesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
+|Fügen Sie Text zu einer Zelle hinzu und formatieren Sie ihn anschließend.|[Gewusst wie: Programm gesteuertes Hinzufügen von Text und Formatierung zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
-- [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

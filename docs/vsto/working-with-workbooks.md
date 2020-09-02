@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62814687"
 ---
 # <a name="work-with-workbooks"></a>Arbeiten mit Arbeitsmappen
@@ -25,20 +25,20 @@ ms.locfileid: "62814687"
 
 |Aufgabe|Prozedur|
 |----------|---------------|
-|Erstellen einer neuen Arbeitsmappe|[Vorgehensweise: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)|
-|Öffnen einer angegebenen Arbeitsmappe|[Vorgehensweise: Programmgesteuertes Öffnen von Arbeitsmappen](../vsto/how-to-programmatically-open-workbooks.md)|
-|Schließen einer angegebenen Arbeitsmappe und Speichern der Änderungen|[Vorgehensweise: Programmgesteuertes Schließen von Arbeitsmappen](../vsto/how-to-programmatically-close-workbooks.md)|
-|Speichern von Arbeitsmappen in Excel-Formaten oder im XML-Format|[Vorgehensweise: Programmgesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)|
+|Erstellen einer neuen Arbeitsmappe|[Vorgehensweise: Programm gesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)|
+|Öffnen einer angegebenen Arbeitsmappe|[Gewusst wie: Programm gesteuertes Öffnen von Arbeitsmappen](../vsto/how-to-programmatically-open-workbooks.md)|
+|Schließen einer angegebenen Arbeitsmappe und Speichern der Änderungen|[Vorgehensweise: Programm gesteuertes schließen von Arbeitsmappen](../vsto/how-to-programmatically-close-workbooks.md)|
+|Speichern von Arbeitsmappen in Excel-Formaten oder im XML-Format|[Vorgehensweise: Programm gesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)|
 |Setzen des Fokus auf die aktuelle oder eine andere Arbeitsmappe|
-|[Vorgehensweise: Programmgesteuertes Schützen von Arbeitsmappen](../vsto/how-to-programmatically-protect-workbooks.md)|
-|Abrufen einer Auflistung zuletzt verwendeter Arbeitsmappendateien|[Vorgehensweise: Zuletzt verwendeter Arbeitsmappendateien programmgesteuert Liste](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
-|Öffnen von Textdateien als Arbeitsmappen|[Vorgehensweise: Programmgesteuertes Öffnen von Textdateien als Arbeitsmappen](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
+|[Vorgehensweise: Programm gesteuertes schützen von Arbeitsmappen](../vsto/how-to-programmatically-protect-workbooks.md)|
+|Abrufen einer Auflistung zuletzt verwendeter Arbeitsmappendateien|[Gewusst wie: Programm gesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
+|Öffnen von Textdateien als Arbeitsmappen|[Gewusst wie: Programm gesteuertes Öffnen von Textdateien als Arbeitsmappen](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
 
- Weitere Informationen zu Excel-Aufgaben und Excel-Objektmodell finden Sie unter [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).
+ Weitere Informationen zu Excel-Aufgaben und zum Excel-Objektmodell finden Sie unter Übersicht über das [Excel-Objektmodell](../vsto/excel-object-model-overview.md).
 
  In einigen Fällen unterscheiden sich die Verfahren zum Ausführen dieser Aufgaben in VSTO-Add-Ins von den Verfahren, die Sie in Anpassungen auf Dokumentebene verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)

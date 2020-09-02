@@ -1,5 +1,5 @@
 ---
-title: ClickOnce-Bereitstellungsbeispiele und exemplarische Vorgehensweisen | Microsoft-Dokumentation
+title: ClickOnce-Bereitstellungs Beispiele und Exemplarische Vorgehensweisen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900385"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce-Bereitstellungsbeispiele und exemplarische Vorgehensweisen
@@ -34,9 +34,9 @@ Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und sch
 |Thema|Beschreibung|
 |-----------|-----------------|
 |[Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Erklärt, wie .NET Framework-Dienstprogramme verwendet werden, um ClickOnce-Anwendungen bereitzustellen.|
-|[Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Hinweise zum Markieren bestimmter Assemblys in der Anwendung als "optional" sowie zum Herunterladen dieser Assemblys mithilfe von Klassen im <xref:System.Deployment.Application>-Namespace.|
-|[Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Erklärt, wie Anwendungsassemblys erst bei der ersten Verwendung durch die Anwendung heruntergeladen werden.|
+|[Assemblys bei Bedarf mit der ClickOnce-Bereitstellungs-API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Hinweise zum Markieren bestimmter Assemblys in der Anwendung als "optional" sowie zum Herunterladen dieser Assemblys mithilfe von Klassen im <xref:System.Deployment.Application>-Namespace.|
+|[Bedarfs gesteuertes herunterladen von Assemblys mit der ClickOnce-Bereitstellungs-API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Erklärt, wie Anwendungsassemblys erst bei der ersten Verwendung durch die Anwendung heruntergeladen werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweisen für Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)

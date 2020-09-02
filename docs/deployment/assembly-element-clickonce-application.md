@@ -1,5 +1,5 @@
 ---
-title: '&lt;Assembly&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+title: '&lt;Assembly- &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b629243920021adc3833f43f268f05638029dc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900759"
 ---
-# <a name="ltassemblygt-element-clickonce-application"></a>&lt;Assembly&gt; -Element (ClickOnce-Anwendung)
-Das Element der obersten Ebene für das Anwendungsmanifest.
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;Assembly- &gt; Element (ClickOnce-Anwendung)
+Das Element der obersten Ebene für das Anwendungs Manifest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +36,7 @@ Das Element der obersten Ebene für das Anwendungsmanifest.
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `assembly` -Element ist das Stammelement und ist erforderlich. Das erste darin enthaltene Element muss ein `assemblyIdentity` Element. Die Elemente von Manifesten muss sich in einem der folgenden Namespaces:
+ Das `assembly` -Element ist das root-Element und ist erforderlich. Das erste enthaltene Element muss ein `assemblyIdentity` Element sein. Die Manifest-Elemente müssen einen der folgenden Namespaces aufweisen:
 
  `urn:schemas-microsoft-com:asm.v1`
 
@@ -44,16 +44,16 @@ Das Element der obersten Ebene für das Anwendungsmanifest.
 
  `http://www.w3.org/2000/09/xmldsig#`
 
- Untergeordnete Elemente der Assembly muss auch in diesen Namespaces, die durch Vererbung oder durch markieren.
+ Untergeordnete Elemente der Assembly müssen sich auch in diesen Namespaces befinden, durch Vererbung oder durch Tagging.
 
  Das `assembly` -Element hat das folgende Attribut.
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|`manifestVersion`|Erforderlich. Die `manifestVersion` Attribut muss festgelegt werden, um `1.0`.|
+|`manifestVersion`|Erforderlich. Das- `manifestVersion` Attribut muss auf festgelegt werden `1.0` .|
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel veranschaulicht eine `assembly` Element in einem Anwendungsmanifest für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).
+ Das folgende Codebeispiel veranschaulicht ein- `assembly` Element in einem Anwendungs Manifest für eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dieses Codebeispiel ist Teil eines größeren Beispiels, das im [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)bereitgestellt wird.
 
 ```xml
 <asmv1:assembly
@@ -69,6 +69,6 @@ Das Element der obersten Ebene für das Anwendungsmanifest.
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)
-- [\<Assembly >-Element](../deployment/assembly-element-clickonce-deployment.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
+- [\<assembly> gewisses](../deployment/assembly-element-clickonce-deployment.md)

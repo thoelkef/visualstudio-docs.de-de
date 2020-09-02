@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef2375fc4132e0274e7cded6daf5bdd0a58891c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580224"
 ---
 # <a name="functions-view---instrumentation-data"></a>Funktionsansicht – Instrumentierungsdaten
@@ -40,7 +40,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 |**Exklusive Zeit der Restkapazität für Überprüfungen**|Der von der Instrumentierung verursachte zusätzliche Zeitaufwand für diese Funktion. Dieser umfasst nicht den zusätzlichen Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden. Der zusätzliche Testaufwand wurde von allen exklusiven Zeiten subtrahiert.|  
 |**Inklusive Zeit der Restkapazität für Überprüfungen**|Der von der Instrumentierung verursachte zusätzliche Zeitaufwand für diese Funktion und ihre untergeordneten Funktionen. Dieser umfasst auch den zusätzlichen Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden. Der zusätzliche Testaufwand wurde von allen inklusiven Zeiten subtrahiert.|  
   
-## <a name="elapsed-inclusive-values"></a>Verstrichene inklusive Zeit  
+## <a name="elapsed-inclusive-values"></a>Werte für verstrichene inklusive Zeit  
  Werte für die verstrichene inklusive Zeit geben an, wie lange sich eine Funktion in der Aufrufliste befunden hat. Die Zeit umfasst die Zeit in Funktionen, die von der Funktion aufgerufen wurden, und die Zeit, die für Aufrufe des Betriebssystems, z.B. Kontextwechsel und Eingabe-/Ausgabeoperationen benötigt wurde.  
   
 |Spalte|Beschreibung|  
@@ -73,7 +73,7 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 |**Maximale inklusive Anwendungszeit**|Die maximal verstrichene inklusive Zeit für einen Aufruf dieser Funktion.|  
 |**Minimale inklusive Anwendungszeit**|Die mindestens verstrichene inklusive Zeit für einen Aufruf dieser Funktion.|  
   
-## <a name="application-exclusive-values"></a>Exklusive Anwendungszeit  
+## <a name="application-exclusive-values"></a>Werte für exklusive Anwendungszeit  
  Werte für exklusive Anwendungszeit geben die Zeit an, die eine Funktion direkt an erster Stelle der Aufrufliste ausgeführt wurde. Die Zeit umfasst nicht die Zeit, die mit Aufrufen an das Betriebssystem verbracht wurde, wie z.B. Kontextwechsel oder Eingabe-/Ausgabeoperationen; sie beinhaltet auch nicht die Zeit, die in Funktionen verbracht wurde, die von der Funktion aufgerufen wurden.  
   
 |Spalte|Beschreibung|  
@@ -84,8 +84,8 @@ Die Funktionsberichtansicht listet die Profilerstellungsdaten nach Funktionsname
 |**Maximale exklusive Anwendungszeit**|Die maximale exklusive Anwendungszeit für einen Aufruf dieser Funktion.|  
 |**Minimale exklusive Anwendungszeit**|Die exklusive Mindestanwendungszeit für einen Aufruf dieser Funktion.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Funktionsansicht](../profiling/functions-view-sampling-data.md)   
- [Funktionsansicht - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Funktions Ansicht](../profiling/functions-view-sampling-data.md)   
+ [Funktions Ansicht-Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Funktionsansicht - Instrumentierung](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

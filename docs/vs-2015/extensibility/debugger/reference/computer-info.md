@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7b5c49aea62ff1f7cb6416f7e02f7e7a3c0a166
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561656"
 ---
-# <a name="computerinfo"></a>COMPUTER_INFO
+# <a name="computer_info"></a>COMPUTER_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt, den Computer, auf dem der Debugger ausgeführt wird.  
+Beschreibt den Computer, auf dem der Debugger ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,25 +43,25 @@ public struct COMPUTER_INFO
 ```  
   
 ## <a name="terms"></a>Begriffe  
- wProcessorArchitecture  
+ wprocessorarchitecture  
  Gibt die Architektur des Mikroprozessors an.  
   
  wSuiteMask  
- Identifiziert die Suite-Maske.  
+ Gibt die Sammlungs Maske an.  
   
- dwOperatingSystemVersion  
- Betriebssystem-Versionsnummer.  
+ dwoperatingsystemversion  
+ Die Versionsnummer des Betriebssystems.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zurückgegeben, durch die [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird von der [getcomputerinfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+ [Getcomputerinfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

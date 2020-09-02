@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62558488"
 ---
 # <a name="warning-task"></a>Warning-Aufgabe
@@ -36,17 +36,17 @@ Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Be
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`Code`|Optionaler `String` -Parameter.<br /><br /> Der Warncode, der der Warnung zugeordnet werden soll.|  
-|`File`|Optionaler `String` -Parameter.<br /><br /> Gibt die relevante Datei an, falls vorhanden. Wenn keine Datei angegeben wird, wird die Datei verwendet, die die Warnungsaufgabe enthält.|  
-|`HelpKeyword`|Optionaler `String` -Parameter.<br /><br /> Das der Warnung zuzuordnende Hilfeschlüsselwort.|  
-|`Text`|Optionaler `String` -Parameter.<br /><br /> Der Warnungstext, den [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] protokolliert, wenn der `Condition`-Parameter `true` ergibt.|  
+|`Code`|Optionaler `String`-Parameter.<br /><br /> Der Warncode, der der Warnung zugeordnet werden soll.|  
+|`File`|Optionaler `String`-Parameter.<br /><br /> Gibt die relevante Datei an, falls vorhanden. Wenn keine Datei angegeben wird, wird die Datei verwendet, die die Warnungsaufgabe enthält.|  
+|`HelpKeyword`|Optionaler `String`-Parameter.<br /><br /> Das der Warnung zuzuordnende Hilfeschlüsselwort.|  
+|`Text`|Optionaler `String`-Parameter.<br /><br /> Der Warnungstext, den [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] protokolliert, wenn der `Condition`-Parameter `true` ergibt.|  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Hinweise  
  Die `Warning`-Aufgabe ermöglicht es [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekten, zu prüfen, ob eine erforderliche Konfiguration oder Eigenschaft vorhanden ist, bevor Sie mit dem nächsten Schritt des Buildvorgangs fortfahren.  
   
  Wenn der `Condition`-Parameter der `Warning`-Aufgabe `true` ergibt, wird der Wert des `Text`-Parameters protokolliert und der Build weiter ausgeführt. Wenn kein `Condition`-Parameter vorhanden ist, wird der Warnungstext protokolliert. Weitere Informationen zur Protokollierung finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
  Mithilfe des folgenden Codebeispiels können Sie nach Eigenschaften suchen, die in der Befehlszeile festgelegt sind. Wenn keine Eigenschaften festgelegt sind, löst das Projekt ein Warnungsereignis aus und protokolliert den Wert des `Text`-Parameters der `Warning`-Aufgabe.  
@@ -65,6 +65,6 @@ Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Be
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen von buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Referenz zum Projektdatei Schema](../msbuild/msbuild-project-file-schema-reference.md)

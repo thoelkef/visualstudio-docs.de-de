@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62793733"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Upgrade von Projekten auf die aktuelle Version von Azure Tools für Visual Studio
@@ -28,8 +28,8 @@ Wenn ein Projekt automatisch aktualisiert oder angegeben wird, dass es aktualisi
 * Die Datei „web.config“ für Webrollen und die Datei „app.config“ für Workerrollen werden aktualisiert, damit sie auf die neuere Version von „Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll“ verweisen.
 * Die Assemblys "Microsoft.WindowsAzure.StorageClient.dll", "Microsoft.WindowsAzure.Diagnostics.dll" und "Microsoft.WindowsAzure.ServiceRuntime.dll" werden auf die neuen Versionen aktualisiert.
 * Veröffentlichungsprofile, die in der Azure-Projektdatei (CCPROJ-Format) gespeichert wurden, werden in eine separate Datei mit der AZUREPUBXML-Erweiterung im Unterverzeichnis **Publish** verschoben.
-* Einige Eigenschaften im Veröffentlichungsprofil werden aktualisiert, um neue und geänderte Funktionen unterstützen. **AllowUpgrade** wird durch **DeploymentReplacementMethod** ersetzt, da bereitgestellte Clouddienste simultan oder inkrementell aktualisiert werden können.
-* Die Eigenschaft **UseIISExpressByDefault** wurde hinzugefügt und auf "False" festgelegt, sodass der Webserver für das Debuggen nicht automatisch von Internetinformationsdienste (IIS) zu IIS Express geändert wird. IIS Express ist der Standardwebserver für mit den neueren Versionen der Tools erstellte Projekte.
+* Einige Eigenschaften im Veröffentlichungsprofil werden aktualisiert, um neue und geänderte Funktionen unterstützen. **AllowUpgrade** wird durch **DeploymentReplacementMethod** ersetzt, da bereitgestellte Cloud-Dienste simultan oder inkrementell aktualisiert werden können.
+* Die Eigenschaft **UseIISExpressByDefault** wurde hinzugefügt und auf "False" festgelegt, sodass der Webserver für das Debuggen nicht automatisch von Internetinformationsdienste (IIS) in IIS Express geändert wird. IIS Express ist der Standardwebserver für mit den neueren Versionen der Tools erstellte Projekte.
 * Wenn der Azure Cache-Dienst in einer oder mehreren Rollen des Projekts gehostet wird, werden einige Eigenschaften in der Dienstkonfiguration (CSCFG-Datei) und in der Dienstdefinition (CSDEF-Datei) geändert, wenn ein Projekt aktualisiert wird. Wenn vom Projekt das NuGet-Paket für den Azure Cache-Dienst verwendet wird, wird das Projekt auf die aktuelle Version des Pakets aktualisiert. Öffnen Sie die Datei "web.config", und prüfen Sie, ob die Clientkonfiguration während des Upgradevorgangs ordnungsgemäß beibehalten wurde. Wenn Sie die Verweise auf Azure Cache-Clientassemblys ohne das NuGet-Paket hinzugefügt haben, werden diese Assemblys nicht aktualisiert. Diese Verweise müssen manuell auf die neuen Versionen aktualisiert werden.
 
 > [!IMPORTANT]
@@ -42,5 +42,5 @@ Wenn ein Projekt automatisch aktualisiert oder angegeben wird, dass es aktualisi
 2. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für den Projektknoten, wählen Sie **Eigenschaften** aus, und wählen Sie dann im angezeigten Dialogfeld die Registerkarte **Anwendung** aus.
    
     Auf der Registerkarte **Anwendung** wird die Tools-Version angezeigt, die dem Projekt zugeordnet ist. Wenn die aktuelle Version von Azure Tools angezeigt wird, wurde das Projekt bereits aktualisiert. Wenn Sie eine neuere Version der Tools installiert haben, als auf der Registerkarte angezeigt wird, wird die Schaltfläche **Aktualisieren** angezeigt.
-3. Klicken Sie auf die Schaltfläche **Aktualisieren** , um ein Projekt auf die aktuelle Version der Tools zu aktualisieren.
+3. Klicken Sie auf die Schaltfläche **Aktualisieren**, um ein Projekt auf die aktuelle Version der Tools zu aktualisieren.
 4. Erstellen Sie das Projekt, und beheben Sie Fehler, die sich aus Änderungen an der API ergeben können. Informationen dazu, wie Sie den Code zur Anpassung an die neue Version ändern, finden Sie in der Dokumentation zur jeweiligen API.

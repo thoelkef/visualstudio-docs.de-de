@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62583157"
 ---
 # <a name="lines-view---contention-data"></a>Zeilenansicht - Konfliktdaten
@@ -53,7 +53,7 @@ In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweis
 |**Inklusive blockierte Zeit %**|Der Prozentsatz der gesamten blockierten Zeit im Prozess, die inklusive blockierte Zeit der Anweisung war.|  
 |**Inklusive Konflikte**|Die Anzahl des Vorkommens, dass diese Anweisung und Funktionen, die in der Anweisung aufgerufen wurden, bei der Ausführung blockiert wurden.|  
 |**Inklusive Konflikte %**|Der Prozentsatz aller Konfliktereignisse im Prozess, die inklusive Konflikte dieser Anweisung waren.|  
-|**Zeilenname**|Ein vom Profiler generierter Bezeichner der Zeile. Der Bezeichner verwendet folgende Syntax:`SourceFile`**;[**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|  
+|**Zeilenname**|Ein vom Profiler generierter Bezeichner der Zeile. Der Bezeichner verwendet folgende Syntax:`SourceFile` **;[** `LineNumberStart` **,** `CharacterStart` **]->;[** `LineNumberEnd` **,** `CharacterEnd` **]**|  
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
 |**Modulname**|Der Name des Moduls, das die Anweisung enthält.|  
 |**Modulpfad**|Der Pfad des Moduls, das die Anweisung enthält.|  
@@ -65,8 +65,8 @@ In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweis
 |**Quellanfangszeile**|Die Zeilennummer in der Quelldatei, bei der die Anweisung beginnt.|  
 |**Quellendzeile**|Die Zeilennummer in der Quelldatei, bei der die Anweisung endet.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Zeilenansicht](../profiling/lines-view.md)   
- [Zeilenansicht - Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Zeilen Ansicht](../profiling/lines-view.md)   
+ [Zeilen Ansicht-Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Zeilenansicht](../profiling/lines-view-sampling-data.md)

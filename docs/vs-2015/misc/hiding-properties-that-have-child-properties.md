@@ -1,5 +1,5 @@
 ---
-title: Ausblenden von Eigenschaften, die untergeordneten Eigenschaften | Microsoft-Dokumentation
+title: Ausblenden von Eigenschaften mit untergeordneten Eigenschaften | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,26 +11,26 @@ ms.assetid: 6003607e-fc19-4bf9-a299-9f6adf8e92eb
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 1d20b865c6f07d76320a7df8402810c82869ddfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62822385"
 ---
 # <a name="hiding-properties-that-have-child-properties"></a>Ausblenden von Eigenschaftenfenster mit untergeordneten Eigenschaften
-Sie sollten, um Eigenschaften auszublenden, die untergeordneten Eigenschaften:  
+Sie sollten Eigenschaften ausblenden, die untergeordnete Eigenschaften aufweisen:  
   
-- Wenn Sie geschachtelte Projekte verfügen, in denen steuert des übergeordnete Projekts programmgesteuert einige Aspekte des untergeordneten Projekts.  
+- Wenn Sie über ein Projekt verfügen, in dem das übergeordnete Projekt einige Aspekte des untergeordneten Projekts Programm gesteuert steuert.  
   
-- Wenn Sie ein Steuerelement mit eines spezialisierten Designers verwenden, und Sie sich nicht um Entwicklern die Vollzugriff auf alle Eigenschaften des Steuerelements möchten.  
+- Wenn Sie ein-Steuerelement mit einem spezialisierten Designer verwenden und Sie Entwicklern keinen Vollzugriff auf alle Eigenschaften des-Steuer Elements bieten möchten.  
   
-- Wenn Sie Bereich eines Objekts Besitzer und das Anzeigen der Eigenschaften einschränken möchten.  
+- Wenn Sie den Gültigkeitsbereich eines Objekts besitzen und die Ansicht der Eigenschaften einschränken möchten.  
   
-### <a name="to-hide-properties-that-have-child-properties"></a>Um Eigenschaften auszublenden, die untergeordneten Eigenschaften  
+### <a name="to-hide-properties-that-have-child-properties"></a>So blenden Sie Eigenschaften mit untergeordneten Eigenschaften aus  
   
-1. Legen Sie die `pfDisplay` Parameter im <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> zu `FALSE`.  
+1. Legen Sie den- `pfDisplay` Parameter in <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> auf fest `FALSE` .  
   
-2. Legen Sie die `pfHide` Parameter im <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> zu `TRUE`.  
+2. Legen Sie den- `pfHide` Parameter in <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> auf fest `TRUE` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Anzeigeraster für Eigenschaften](../extensibility/internals/properties-display-grid.md)
