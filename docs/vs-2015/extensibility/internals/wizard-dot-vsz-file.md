@@ -1,5 +1,5 @@
 ---
-title: Assistenten (. VSZ)-Datei | Microsoft-Dokumentation
+title: Assistent (. VSZ-Datei | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,20 +13,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687664"
 ---
 # <a name="wizard-vsz-file"></a>Assistentendatei (VSZ)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die integrierte Entwicklungsumgebung (IDE) verwendet die VSZ-Dateien zum Starten von Assistenten. Diese VSZ-Dateien enthalten Informationen, die die IDE verwendet werden, um zu bestimmen, welcher Assistent aufrufen und welche Informationen an den Assistenten übergeben.  
+Die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) verwendet VSZ-Dateien, um Assistenten zu starten. Diese VSZ-Dateien enthalten Informationen, die von der IDE verwendet werden, um zu bestimmen, welcher Assistent aufgerufen werden soll und welche Informationen an den Assistenten übergeben werden.  
   
- Eine VSZ-Datei ist eine Version einer INI-formatierte Textdatei, die keine Abschnitte aufweist. Informationen, die bekanntermaßen von der IDE werden am Anfang der Datei gespeichert. Dadurch wird eine Verknüpfung zwischen den Assistenten, den die IDE aufruft und die Parameter in der VSZ-Datei, die an der IDE übergeben werden. Der Rest der Datei enthält die Parameter, die sind spezifisch für den Assistenten und werden von der IDE gesammelt werden sollen und an den bestimmten Assistenten übergeben.  
+ Eine VSZ-Datei ist eine Version einer. ini-formatierten Textdatei, die keine Abschnitte enthält. Die der IDE bekannten Informationen werden am Anfang der Datei gespeichert. Dadurch wird ein Link zwischen dem Assistenten, der von der IDE aufgerufen wird, und den Parametern, die sich in der VSZ-Datei befinden, zum Übertragen der IDE bereitstellt. Der Rest der Datei enthält Parameter, die für den Assistenten spezifisch sind und von der IDE gesammelt und an den jeweiligen Assistenten übergeben werden.  
   
- Das folgende Beispiel zeigt den Inhalt des eine VSZ-Datei.  
+ Das folgende Beispiel zeigt den Inhalt einer VSZ-Datei.  
   
 ```  
 VSWizard 8.0  
@@ -35,19 +35,19 @@ Param="WIZARDNAME = Wizard One"
 Param="WIZARDUI = FALSE"  
 ```  
   
- Im folgenden werden die Teile in der VSZ-Datei.  
+ Im folgenden werden die Teile der VSZ-Datei angezeigt.  
   
-|Segment|Beschreibung|  
+|Teil|BESCHREIBUNG|  
 |----------|-----------------|  
-|VSWizard|Der erste Parameter in der Datei ist die Versionsnummer des Vorlagendateiformats. Diese Versionsnummer muss 6.0, 7.0, 7.1 oder 8.0. Andere Zahlen können nicht gestartet werden und verursacht den Fehler ein ungültiges Format.|  
-|Assistent|Dieses Feld enthält die OLE-ProgID des Assistenten, oder alternativ eine Zeichenfolgendarstellung der GUID der CLSID des Assistenten, der gleichzeitig von der IDE erstellt wird.|  
-|Parameter|Diese Komponenten sind optional. Sie können so viele wie nötig hinzufügen.|  
+|VsWizard|Der erste Parameter in der Datei ist die Versionsnummer des Vorlagen Datei Formats. Diese Versionsnummer muss 6,0, 7,0, 7,1 oder 8,0 lauten. Andere Zahlen können nicht gestartet werden und führen zu einem ungültigen Formatierungs Fehler.|  
+|Assistent|Dieses Feld enthält die OLE-ProgID des Assistenten oder alternativ eine GUID-Zeichen folgen Darstellung der CLSID des Assistenten, der von der IDE coerstellt wird.|  
+|Parameter|Diese Komponenten sind optional. Sie können beliebig viele Anforderungen hinzufügen.|  
   
- Die Parameter ermöglichen die VSZ-Datei weitere benutzerdefinierte Parameter an den Assistenten übergeben. Jeder Wert wird als Zeichenfolgenelement in einem Array von Varianten an den Assistenten übergeben. Weitere Informationen finden Sie unter [benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md). Informationen dazu, wie Sie eine VSZ-Datei in die Entwicklung von benutzerdefinierten Assistenten verwenden, finden Sie unter [. VSZ-Datei (Projektsteuerung)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ Mit den Parametern kann die VSZ-Datei zusätzliche benutzerdefinierte Parameter an den Assistenten übergeben. Jeder Wert wird als Zeichen folgen Element in einem Array von Varianten an den Assistenten übermittelt. Weitere Informationen finden Sie unter [benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md). Informationen zur Verwendung einer VSZ-Datei in der Entwicklung von benutzerdefinierten Assistenten finden Sie unter [. VSZ-Datei (Projektsteuerung)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
- Um eine Standard-Gebietsschema-ID der VSZ-Datei hinzuzufügen, geben `FALLBACK_LCID`= Xxxx, Xxxx die Gebietsschema-ID, z. B. 1033 für Englisch ist. Wenn `FALLBACK_LCID` Parameter definiert ist, wird der Assistent verwendet die angegebenen fallback-Gebietsschema-ID aus, wenn die aktuelle ID nicht gefunden wird.  
+ Wenn Sie der VSZ-Datei eine Standard-Gebiets Schema-ID hinzufügen möchten, geben Sie `FALLBACK_LCID` = xxxx an, wobei xxxx die Gebiets Schema-ID ist, z. b. 1033 für Englisch. Wenn der `FALLBACK_LCID` Parameter definiert ist, verwendet der Assistent die angegebene Fall Back-Gebiets Schema-ID, wenn die aktuelle ID nicht gefunden wurde.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)   
- [Assistenten](../../extensibility/internals/wizards.md)   
+ [The](../../extensibility/internals/wizards.md)   
  [Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

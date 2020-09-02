@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram | Microsoft Docs
+title: IDebugEngine2::D estroyprogram | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731109"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-Informiert ein Debugmodul (DE), dass das angegebene Programm atypisch beendet wurde und dass die DE alle Verweise auf das Programm bereinigen und ein Programm-Zerstörungsereignis senden soll.
+Informiert eine Debug-Engine (de) darüber, dass das angegebene Programm atypisch beendet wurde und dass die de alle Verweise auf das Programm bereinigen und ein Programm zerstörungsereignis senden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int DestroyProgram( 
 
 ## <a name="parameters"></a>Parameter
 `pProgram`\
-[in] Ein [IDebugProgram2-Objekt,](../../../extensibility/debugger/reference/idebugprogram2.md) das das Programm darstellt, das atypischerweise beendet wurde.
+in Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das das Programm darstellt, das atypisch beendet wurde.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Nachdem diese Methode aufgerufen wurde, sendet die DE anschließend ein [IDebugProgramDestroyEvent2-Ereignis](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) zurück an den Sitzungsdebug-Manager (SDM).
+ Nachdem diese Methode aufgerufen wurde, sendet der de-Vorgang ein [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) -Ereignis zurück an den Sitzungs-Debug-Manager (SDM).
 
- Diese Methode ist nicht `E_NOTIMPL`implementiert (gibt ) zurück, wenn die DE im gleichen Prozess wie das zu debuggende Programm ausgeführt wird. Diese Methode wird nur implementiert, wenn die DE im gleichen Prozess wie das SDM ausgeführt wird.
+ Diese Methode ist nicht implementiert (gibt zurück `E_NOTIMPL` ), wenn die de in demselben Prozess wie das debuggerprogramm ausgeführt wird. Diese Methode wird nur implementiert, wenn die de in demselben Prozess wie die SDM ausgeführt wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

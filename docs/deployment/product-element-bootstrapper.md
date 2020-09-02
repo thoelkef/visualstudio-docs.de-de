@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produkt&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
+title: '&lt;Product- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747451"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; -Element (Bootstrapper)
-Die `Product` Element ist das XML-Element der obersten Ebene innerhalb der einer Produktdatei.
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product- &gt; Element (Boots Trapper)
+Das `Product` -Element ist das XML-Element der obersten Ebene in einer Produktdatei.
 
 ## <a name="syntax"></a>Syntax
 
@@ -138,14 +138,14 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
- Die `Product` -Element muss in einer Produktdatei. Er hat das folgende Attribut.
+ Das- `Product` Element ist in einer Produktdatei erforderlich. Es verfügt über das folgende Attribut.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`ProductCode`|Ein eindeutiger Bezeichner für das Produkt.|
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel zeigt eine vollständige Produktdatei für die Installation von .NET Framework.
+ Das folgende Codebeispiel zeigt eine komplette Produktdatei zum Installieren des .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -249,5 +249,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>Siehe auch
-- [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)

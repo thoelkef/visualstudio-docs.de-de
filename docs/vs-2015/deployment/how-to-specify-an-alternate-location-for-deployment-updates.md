@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Geben Sie einen alternativen Speicherort für Bereitstellungsupdates an | Microsoft Docs'
+title: 'Vorgehensweise: Angeben eines alternativen Speicher Orts für Bereitstellungs Aktualisierungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,54 +17,54 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8b6388833e6574fc1d631d391fa7b67d5f0a3372
-ms.sourcegitcommit: c1339f64fbeee6f17bf80fedea81afc8dac40dc0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82037219"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Gewusst wie: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Ihre Anwendung zunächst von einer CD oder einer Dateifreigabe installieren, aber die Anwendung muss im Web nach regelmäßigen Updates suchen. Sie können einen alternativen Speicherort für Updates im Bereitstellungsmanifest angeben, damit sich die Anwendung nach der Erstinstallation selbst aus dem Web aktualisieren kann.  
+Sie können Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung anfänglich von einer CD oder einer Dateifreigabe installieren, aber die Anwendung muss sich auf regelmäßige Updates im Web überprüfen. Sie können einen alternativen Speicherort für Updates im Bereitstellungs Manifest angeben, damit Ihre Anwendung nach der Erstinstallation aus dem Web aktualisiert werden kann.  
   
 > [!NOTE]
-> Ihre Anwendung muss für die lokale Installation konfiguriert sein, um diese Funktion verwenden zu können. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Manuelle Bereitstellung einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Wenn Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung aus dem Netzwerk installieren, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] führt das Festlegen eines alternativen Speicherorts außerdem dazu, dass dieser Speicherort sowohl für die Erstinstallation als auch für alle nachfolgenden Updates verwendet wird. Wenn Sie die Anwendung lokal installieren (z. B. von einer CD), wird die Erstinstallation mit dem Originalmedium durchgeführt, und alle nachfolgenden Updates verwenden den alternativen Speicherort.  
+> Die Anwendung muss so konfiguriert werden, dass Sie lokal installiert wird, um diese Funktion zu verwenden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Wenn Sie eine- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung aus dem Netzwerk installieren, wird bei der Festlegung eines alternativen Speicher Orts außerdem veranlasst, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] diesen Speicherort sowohl für die Erstinstallation als auch für alle nachfolgenden Updates zu verwenden. Wenn Sie die Anwendung lokal (z. b. von einer CD) installieren, wird die Erstinstallation mithilfe des ursprünglichen Mediums durchgeführt, und alle nachfolgenden Updates verwenden den alternativen Speicherort.  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Angeben eines alternativen Speicherorts für Updates mithilfe von MageUI.exe (Windows Forms-basiertes Dienstprogramm)  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Angeben eines alternativen Speicher Orts für Updates mithilfe MageUI.exe (Windows Forms-basiertes Hilfsprogramm)  
   
-1. Öffnen Sie eine .NET Framework-Eingabeaufforderung, und geben Sie:  
+1. Öffnen Sie .NET Framework Eingabeaufforderung, und geben Sie Folgendes ein:  
   
      **mageui.exe**  
   
-2. Wählen Sie im Menü **Datei** die Option **Öffnen** aus, um das Bereitstellungsmanifest Ihrer Anwendung zu öffnen.  
+2. Wählen Sie im Menü **Datei** die Option **Öffnen** aus, um das Bereitstellungs Manifest der Anwendung zu öffnen.  
   
 3. Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.  
   
-4. Geben Sie im Textfeld Mit dem Namen **Startspeicherort**die URL in das Verzeichnis ein, das das Bereitstellungsmanifest für Anwendungsaktualisierungen enthält.  
+4. Geben Sie im Textfeld mit dem Namen **Launch Location**die URL zu dem Verzeichnis ein, das das Bereitstellungs Manifest für Anwendungs Updates enthalten soll.  
   
-5. Speichern Sie das Bereitstellungsmanifest.  
+5. Speichern Sie das Bereitstellungs Manifest.  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Angeben eines alternativen Speicherorts für Aktualisierungen mithilfe von Mage.exe  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Angeben eines alternativen Speicher Orts für Updates mithilfe von Mage.exe  
   
-1. Öffnen Sie eine .NET Framework-Eingabeaufforderung.  
+1. Öffnen Sie eine .NET Framework Eingabeaufforderung.  
   
-2. Legen Sie den Aktualisierungsspeicherort mit dem folgenden Befehl fest. In diesem Beispiel ist **HelloWorld.exe.application** [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] der Pfad zu Ihrem Anwendungsmanifest, `http://adatum.com/Update/Path` das immer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] die Erweiterung .application hat und die URL ist, die nach Anwendungsaktualisierungen sucht.  
+2. Legen Sie den Update Speicherort mit dem folgenden Befehl fest. In diesem Beispiel ist **HelloWorld.exe. Application** der Pfad zu Ihrem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungs Manifest, das immer die Erweiterung. Application hat, und `http://adatum.com/Update/Path` ist die URL, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] auf Anwendungs Updates überprüft.  
   
-     **Mage -Update HelloWorld.exe.application -ProviderUrl http:\//adatum.com/Update/Path**  
+     **Mage-Update HelloWorld.exe. Application-providerUrl http: \/ /adatum.com/Update/Path**  
   
-3. Speichern Sie die Datei .  
+3. Speichern Sie die Datei.  
   
     > [!NOTE]
-    > Sie müssen die Datei nun erneut mit Mage.exe signieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Manuelle Bereitstellung einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+    > Sie müssen die Datei jetzt mit Mage.exe neu signieren. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
- Wenn Sie Die Anwendung von einem Offlinemedium wie einer CD [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installieren und der `<deploymentProvider>` Computer online ist, überprüft zunächst die URL, die durch das Tag im Bereitstellungsmanifest angegeben wird, um festzustellen, ob der Aktualisierungsspeicherort eine neuere Version der Anwendung enthält. Wenn dies [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] der Vorgang der Option ist, wird die Anwendung direkt von dort anstelle aus dem ursprünglichen Installationsverzeichnis `<deploymentProvider>`installiert, und die Common Language Runtime (CLR) bestimmt die Vertrauensstufe Ihrer Anwendung mithilfe von . Wenn der Computer offline `<deploymentProvider>` ist oder [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nicht erreichbar ist, wird von der CD installiert, und die CLR gewährt Vertrauensstellung basierend auf dem Installationspunkt. für eine CD-Installation bedeutet dies, dass Ihre Anwendung volle Vertrauenswürdigkeit erhält. Alle nachfolgenden Aktualisierungen erben diese Vertrauensstufe.  
+ Wenn Sie die Anwendung von einem Offline Medium, z. b. einer CD, installieren und der Computer online ist, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] prüft zunächst die `<deploymentProvider>` im Bereitstellungs Manifest angegebene URL, um festzustellen, ob der Aktualisierungs Speicherort eine neuere Version der Anwendung enthält. Wenn dies der Fall ist, wird [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] die Anwendung direkt von dort aus installiert, anstatt aus dem ursprünglichen Installationsverzeichnis, und der Common Language Runtime (CLR) bestimmt die Vertrauens Ebene Ihrer Anwendung mithilfe von `<deploymentProvider>` . Wenn der Computer offline ist oder `<deploymentProvider>` nicht erreichbar ist, wird [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] von der CD installiert, und die CLR gewährt basierend auf dem Installations Punkt eine Vertrauensstellung. bei einer CD-Installation erhält die Anwendung volle Vertrauenswürdigkeit. Alle nachfolgenden Updates erben diese Vertrauens Ebene.  
   
- Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen, `<deploymentProvider>` die verwenden, sollten die Berechtigungen, die sie in ihrem Anwendungsmanifest benötigen, explizit deklarieren, damit die Anwendung auf verschiedenen Computern keine unterschiedlichen Vertrauensstufen erhält.  
+ Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen, die verwenden, `<deploymentProvider>` sollten explizit die Berechtigungen deklarieren, die Sie in Ihrem Anwendungs Manifest benötigen, damit die Anwendung nicht unterschiedliche Vertrauens Ebenen auf verschiedenen Computern erhält.  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Exemplarische Vorgehensweise: Manuelle Bereitstellung einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
+ [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
  [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)

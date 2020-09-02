@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195515"
 ---
 # <a name="per-thread-summary-report"></a>Zusammenfassungsbericht pro Thread
@@ -25,12 +25,12 @@ ms.locfileid: "68195515"
 
 Dieses Balkendiagramm zeigt den Anteil der Zeit, die die einzelnen eingeblendeten Threads in jeder Aktivitätskategorie während des derzeit sichtbaren Zeitraums verbringen. „Ausführung“ bedeutet, dass der Thread ausgeführt wird. Alle anderen Kategorien bedeuten, dass der Thread auf etwas wartet.  
   
-## <a name="see-also"></a>Siehe auch  
- [Ausführungszeit (Threadansicht)](../profiling/execution-time-threads-view.md)   
- [E/A-Zeit (Threadansicht)](../profiling/i-o-time-threads-view.md)   
- [Speicherverwaltungszeit](../profiling/memory-management-time.md)   
- [Zeit für die vorzeitige Entfernung](../profiling/preemption-time.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ausführungszeit (Thread Ansicht)](../profiling/execution-time-threads-view.md)   
+ [E/a-Zeit (Thread Ansicht)](../profiling/i-o-time-threads-view.md)   
+ [Speicher Verwaltungszeit](../profiling/memory-management-time.md)   
+ [Zeitpunkt der vorzeitigen Entfernung](../profiling/preemption-time.md)   
  [Standbyzeit](../profiling/sleep-time.md)   
- [Synchronisierungszeit](../profiling/synchronization-time.md)   
- [Benutzoberflächenverarbeitungszeit](../profiling/ui-processing-time.md)   
+ [Synchronisierungs Zeit](../profiling/synchronization-time.md)   
+ [UI-Verarbeitungszeit](../profiling/ui-processing-time.md)   
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904186"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Tool Fenster
@@ -268,7 +268,7 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
 
 ## <a name="test-the-tool-window-features"></a>Testen der Tool Fenster Funktionen
 
-1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
+1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
 2. Klicken Sie in der experimentellen Instanz auf Ansicht > **Weitere Fenster**, und klicken Sie dann auf **ShortcutMenu**. Dadurch sollte das Tool Fenster angezeigt werden.
 
@@ -276,6 +276,6 @@ Mit einem Kontextmenü, wie dem in dieser exemplarischen Vorgehensweise gezeigte
 
 4. Klicken Sie im Kontextmenü auf eine Farbe. Die Hintergrundfarbe des Tool Fensters sollte in die ausgewählte Farbe geändert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Verwenden von und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)

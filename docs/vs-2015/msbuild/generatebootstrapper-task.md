@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149630"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
@@ -36,25 +36,25 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
 - `ApplicationFile`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die Datei an, mit der der Bootstrapper die Installation der Anwendung startet, nachdem alle erforderlichen Komponenten installiert wurde. Wenn weder der Parameter `BootstrapperItems` noch `ApplicationFile` angegeben werden, wird ein Buildfehler erzeugt.  
   
 - `ApplicationName`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt den Namen der Anwendung an, die vom Bootstrapper installiert wird. Dieser Name wird in der Benutzeroberfläche angezeigt, die vom Bootstrapper während der Installation verwendet wird.  
   
 - `ApplicationRequiresElevation`  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Wenn `true`, wird die Komponente mit erweiterten Berechtigungen ausgeführt, wenn sie auf einem Ziel-Computer installiert wird.  
   
 - `ApplicationUrl`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die Webadresse an, die das Installationsprogramm der Anwendung hostet.  
   
@@ -91,13 +91,13 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
 - `ComponentsLocation`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt einen Speicherort für den Bootstrapper an, an dem nach zu installierenden Voraussetzungen für die Installation gesucht wird. Dieser Parameter kann die folgenden Werte aufweisen:  
   
   - `HomeSite`: Gibt an, dass die erforderliche Komponente vom Komponentenanbieter gehostet wird.  
   
-  - `Relative`: Gibt an, dass die erforderliche Komponente am gleichen Speicherort der Anwendung.  
+  - `Relative`: Gibt an, dass sich die erforderliche Komponente am gleichen Speicherort der Anwendung befindet.  
   
   - `Absolute`: Gibt an, dass sich alle Komponenten bei einer zentralisierten URL befinden. Dieser Wert sollte zusammen mit dem Eingabeparameter `ComponentsUrl` verwendet werden.  
   
@@ -105,54 +105,54 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
 - `ComponentsUrl`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die URL an, die die Voraussetzung für die Installation enthält.  
   
 - `CopyComponents`  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Wenn `true`, kopiert der Bootstrapper alle Ausgabedateien in den Pfad, der im Parameter `OutputPath` angegeben ist. Die Werte des Parameters `BootstrapperComponentFiles` sollten alle auf diesen Pfad basieren. Wenn `false`, werden die Dateien nicht kopiert. Die `BootstrapperComponentFiles`-Werte basieren dann auf den Wert des Parameters `Path`.  Der Standardwert dieses Parameters ist `true`.  
   
 - `Culture`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die Kultur an, die für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation verwendet werden soll. Wenn die angegebene Kultur nicht verfügbar ist, verwendet die Aufgabe den Wert des Parameters `FallbackCulture`.  
   
 - `FallbackCulture`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die sekundäre Kultur für die Bootstrapper-Benutzeroberfläche und die Voraussetzungen für die Installation an.  
   
 - `OutputPath`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt den Speicherort zum Kopieren von „setup.exe“ und aller Paketdateien an.  
   
 - `Path`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt den Speicherort für alle verfügbaren erforderlichen Pakete an.  
   
 - `SupportUrl`  
   
-   Optionaler `String` -Parameter.  
+   Optionaler `String`-Parameter.  
   
    Gibt die URL an, die bei einem Fehler der Bootstrapper-Installation bereitgestellt werden soll.  
   
 - `Validate`  
   
-   Optionaler `Boolean` -Parameter.  
+   Optionaler `Boolean`-Parameter.  
   
    Wenn `true`, führt der Bootstrapper die XSD-Validierung der angegebenen Bootstrapper-Eingabeelemente durch. Der Standardwert dieses Parameters ist `false`.  
   
 ## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die Aufgabe `GenerateBootstrapper` zur Installation einer Anwendung verwendet, die [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] als Voraussetzung installiert haben muss.  
@@ -178,6 +178,6 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erfüllen](../msbuild/msbuild-tasks.md)   
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

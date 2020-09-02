@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Microsoft-Dokumentation
+title: Evalflags | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e6ee00402c13b2a79e4e6757a127211eda9c3c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149383"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt Flags an, die Auswertung des Ausdrucks steuern.  
+Gibt Flags an, die die Ausdrucks Auswertung steuern.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,39 +53,39 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>Member  
  EVAL_RETURNVALUE  
- Gibt an, dass der Rückgabewert, sofern vorhanden, ausgewertet werden.  
+ Gibt an, dass der Rückgabewert (sofern vorhanden) ausgewertet werden soll.  
   
  EVAL_NOSIDEEFFECTS  
- Gibt an, dass Nebenwirkungen nicht zugelassen werden.  
+ Gibt an, dass Nebeneffekte nicht zulässig sind.  
   
  EVAL_ALLOWBPS  
- Gibt die für Haltepunkte wird beendet.  
+ Gibt an, dass Haltepunkte angehalten werden.  
   
  EVAL_ALLOWERRORREPORT  
- Gibt die Windows-Fehlerberichterstattung mit dem Host zulässig sein soll. In erster Linie verwendet für die Auswertung des Ausdrucks im Skript in Internet Explorer.  
+ Gibt an, dass die Fehlerberichterstattung an den Host zulässig ist. Wird hauptsächlich für die Ausdrucks Auswertung in Skripts in Internet Explorer verwendet.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Erzwingt, dass Funktionen wie Adressen, anstelle von Aufrufen der Funktion ausgewertet werden soll.  
+ Erzwingt, dass Funktionen als Adressen ausgewertet werden, anstatt die Funktion aufzurufen.  
   
  EVAL_NOFUNCEVAL  
- Verhindert, dass Funktion ausgewertet wird. Betrachten Sie beispielsweise die `int` token im Ausdruck `myExpression(int) + 10`. Diese Funktion kann als eine Adresse, aber nicht als Wert ordnungsgemäß ausgewertet werden.  
+ Verhindert, dass die Funktion ausgewertet wird. Sehen Sie sich beispielsweise das `int` Token im Ausdruck an `myExpression(int) + 10` . Diese Funktion kann ordnungsgemäß als Adresse ausgewertet werden, aber nicht als Wert.  
   
  EVAL_NOEVENTS  
- Flag, um anzugeben, dass Ereignisse während der Auswertung des Ausdrucks nicht sitzungsbasierter Debug-Manager (SDM) oder die IDE gesendet werden sollen.  
+ Flag, das anzeigt, dass Ereignisse, die während der Ausdrucks Auswertung auftreten, nicht an den Sitzungs-Debug-Manager (SDM) oder an die IDE gesendet werden sollen.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Flags werden übergeben, als Argument an die [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) und [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) Methoden.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Flags werden als Argument an die Methoden [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) und [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) übermittelt.  
   
  Diese Flags können mit einem bitweisen OR kombiniert werden.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
+ [Evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

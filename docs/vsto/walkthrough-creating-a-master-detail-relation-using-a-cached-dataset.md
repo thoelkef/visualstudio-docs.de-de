@@ -1,5 +1,5 @@
 ---
-title: Erstellen der master-Detail-Beziehung, die mithilfe von zwischengespeicherten Datasets
+title: Erstellen einer Master Detail Beziehung mithilfe eines zwischengespeicherten Datasets
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,182 +14,182 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67328357"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets
-  In dieser exemplarischen Vorgehensweise veranschaulicht das Erstellen einer Master/Detail-Beziehung in einem Arbeitsblatt und Zwischenspeichern von Daten, damit die Projektmappe offline verwendet werden kann.
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen einer Master Detail Beziehung mithilfe eines zwischengespeicherten Datasets
+  Diese exemplarische Vorgehensweise veranschaulicht das Erstellen einer Master/Detail-Beziehung auf einem Arbeitsblatt und das Zwischenspeichern der Daten, damit die Projekt Mappe offline verwendet werden kann.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
-- Hinzufügen von Steuerelementen zu einem Arbeitsblatt.
+- Fügen Sie einem Arbeitsblatt Steuerelemente hinzu.
 
-- Richten Sie ein Dataset aus, um in einem Arbeitsblatt zwischengespeichert werden.
+- Richten Sie ein Dataset ein, das in einem Arbeitsblatt zwischengespeichert werden soll.
 
-- Hinzufügen von Code zum Durchführen eines Bildlaufs durch die Datensätze zu aktivieren.
+- Fügen Sie Code hinzu, um das Scrollen durch die Datensätze zu ermöglichen
 
-- Testen Sie das Projekt ein.
+- Testen Sie das Projekt.
 
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Zugriff auf die Northwind-SQL Server-Beispieldatenbank. Die Datenbank möglich auf Ihrem Entwicklungscomputer oder auf einem Server.
+- Zugriff auf die Beispieldatenbank Northwind SQL Server. Die-Datenbank kann sich auf dem Entwicklungs Computer oder auf einem-Server befinden.
 
-- Berechtigungen zum Lesen und Schreiben in SQL Server-Datenbank.
+- Lese-und Schreibberechtigungen für die SQL Server Datenbank.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
- In diesem Schritt erstellen Sie ein Excel-Workbook-Projekt.
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
+ In diesem Schritt erstellen Sie ein Excel-Arbeitsmappenprojekt.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **My Master-Detail**, mit Visual Basic oder c#. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen " **My Master-Detail**", indem Sie entweder Visual Basic oder c# verwenden. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **My Master-Detail** Projekt **Projektmappen-Explorer**.
+   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das **eigene Master/Detail-** Projekt **Projektmappen-Explorer**hinzu.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
  Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.
 
 ### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
 
-1. Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.
+1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen auswählen.
 
 2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
 
-3. Wählen Sie **Datenbank** , und klicken Sie dann auf **Weiter**.
+3. Wählen Sie **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
-4. Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank SQL Server, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.
+4. Wählen Sie eine Datenverbindung mit der Beispieldatenbank Northwind SQL Server aus, oder fügen Sie mithilfe der Schaltfläche **neue Verbindung** eine neue Verbindung hinzu.
 
-5. Nach dem auswählen oder erstellen eine Verbindung, klicken Sie auf **Weiter**.
+5. Nachdem Sie eine Verbindung ausgewählt oder erstellt haben, klicken Sie auf **weiter**.
 
-6. Deaktivieren Sie die Option zum Speichern der Verbindung, wenn diese Option ausgewählt ist, und klicken Sie dann auf **Weiter**.
+6. Deaktivieren Sie die Option zum Speichern der Verbindung, wenn Sie ausgewählt ist, und klicken Sie dann auf **weiter**.
 
-7. Erweitern Sie die **Tabellen** Knoten in der **Datenbankobjekte** Fenster.
+7. Erweitern Sie den Knoten **Tabellen** im Fenster **Datenbankobjekte** .
 
-8. Wählen Sie die **Bestellungen** Tabelle und die **Bestelldetails** Tabelle.
+8. Wählen Sie die Tabelle **Orders** und die Tabelle **Order Details** aus.
 
 9. Klicken Sie auf **Fertig stellen**.
 
-   Der Assistent fügt die beiden Tabellen aus, um die **Datenquellen** Fenster. Es auch ein typisiertes Dataset dem Projekt hinzugefügt, die in angezeigt wird **Projektmappen-Explorer**.
+   Der Assistent fügt die beiden Tabellen zum Fenster **Datenquellen** hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer**sichtbar ist.
 
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt
- In diesem Schritt fügen Sie einen benannten Bereich, ein List-Objekt und zwei Schaltflächen, das erste Arbeitsblatt hinzu. Fügen Sie zunächst den benannten Bereich und das List-Objekt, aus der **Datenquellen** Fenster, damit diese automatisch an die Datenquelle gebunden werden. Fügen Sie die Schaltflächen aus der **Toolbox**.
+ In diesem Schritt fügen Sie dem ersten Arbeitsblatt einen benannten Bereich, ein Listen Objekt und zwei Schaltflächen hinzu. Fügen Sie zunächst den benannten Bereich und das Listen Objekt aus dem Fenster **Datenquellen** hinzu, damit Sie automatisch an die Datenquelle gebunden werden. Fügen Sie als nächstes die Schaltflächen aus der **Toolbox**hinzu.
 
-### <a name="to-add-a-named-range-and-a-list-object"></a>Zum Hinzufügen eines benannten Bereichs und ein List-Objekt
+### <a name="to-add-a-named-range-and-a-list-object"></a>So fügen Sie einen benannten Bereich und ein Listen Objekt hinzu
 
-1. Überprüfen Sie, ob die **Meine Master-Detail.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit **Sheet1** angezeigt.
+1. Vergewissern Sie sich, dass die Arbeitsmappe **meine Master-Detail.xlsx** im Visual Studio-Designer geöffnet ist, wobei **Sheet1** angezeigt wird.
 
-2. Öffnen der **Datenquellen** Fenster, und erweitern Sie die **Bestellungen** Knoten.
+2. Öffnen Sie das Fenster **Datenquellen** , und erweitern Sie den Knoten **Orders** .
 
-3. Wählen Sie die **"OrderID"** Spalte, und klicken Sie dann auf den Dropdown-Pfeil, der angezeigt wird.
+3. Wählen Sie die Spalte **OrderID** aus, und klicken Sie dann auf den angezeigten Dropdown Pfeil.
 
-4. Klicken Sie auf **NamedRange** in der Dropdown-Liste, und ziehen Sie dann die **"OrderID"** Spalte Zelle **A2**.
+4. Klicken Sie in der Dropdown Liste auf **NamedRange** , und ziehen Sie dann die Spalte **OrderID** in Zelle **a2**.
 
-     Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement mit dem Namen `OrderIDNamedRange` ist in der Zelle erstellt **A2**. Zur gleichen Zeit eine <xref:System.Windows.Forms.BindingSource> mit dem Namen `OrdersBindingSource`, ein Tabellenadapter und eine <xref:System.Data.DataSet> Instanz werden dem Projekt hinzugefügt. Das Steuerelement gebunden ist, um die <xref:System.Windows.Forms.BindingSource>, das wiederum gebunden ist die <xref:System.Data.DataSet> Instanz.
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> `OrderIDNamedRange` In Zelle **a2**wird ein Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `OrdersBindingSource` , ein Tabellen Adapter und eine- <xref:System.Data.DataSet> Instanz hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
 
-5. Scrollen Sie nach unten, über die Spalten, die unter der **Bestellungen** Tabelle. Wird am unteren Rand der Liste der **Order Details** Tabelle; es ist hier, da es sich um ein untergeordnetes Element des ist der **Bestellungen** Tabelle. Wählen Sie diese **Bestelldetails** -Tabelle nicht zu derjenigen, die auf der gleichen Ebene wie die **Bestellungen** Tabelle, und klicken Sie dann auf den Dropdown-Pfeil, der angezeigt wird.
+5. Scrollen Sie nach unten zu den Spalten, die sich in der Tabelle **Orders** befinden. Am unteren Rand der Liste befindet sich die Tabelle **Order Details** . Dies liegt daran, dass es sich um ein untergeordnetes Element der **Orders** -Tabelle handelt. Wählen Sie diese **Order Details** -Tabelle aus, nicht die, die sich auf derselben Ebene wie die **Orders** -Tabelle befindet, und klicken Sie dann auf den angezeigten Dropdown Pfeil.
 
-6. Klicken Sie auf **ListObject** in der Dropdown-Liste, und ziehen Sie dann die **OrderDetails** Tabelle in Zelle **A6**.
+6. Klicken Sie in der Dropdown Liste auf **ListObject** , und ziehen Sie dann die Tabelle **Order Details** in die Zelle **a6**.
 
-7. Ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement mit dem Namen **Order_DetailsListObject** ist in der Zelle erstellt **A6**, und Binden an die <xref:System.Windows.Forms.BindingSource>.
+7. Ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement mit dem Namen **Order_DetailsListObject** wird in der Zelle **a6**erstellt und an gebunden <xref:System.Windows.Forms.BindingSource> .
 
-### <a name="to-add-two-buttons"></a>Zwei Schaltflächen hinzufügen
+### <a name="to-add-two-buttons"></a>So fügen Sie zwei Schaltflächen hinzu
 
-1. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **A3** des Arbeitsblatts.
+1. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**ein- <xref:System.Windows.Forms.Button> Steuerelement zu Zelle **a3** des Arbeitsblatts hinzu.
 
-    Diese Schaltfläche den Namen `Button1`.
+    Diese Schaltfläche hat den Namen `Button1` .
 
-2. Fügen Sie ein weiteres <xref:System.Windows.Forms.Button> -Steuerelement zur Zelle **B3** des Arbeitsblatts.
+2. Fügen Sie der <xref:System.Windows.Forms.Button> Zelle **B3** des Arbeitsblatts ein weiteres Steuerelement hinzu.
 
-    Diese Schaltfläche den Namen `Button2`.
+    Diese Schaltfläche hat den Namen `Button2` .
 
-   Markieren Sie als Nächstes das Dataset im Dokument zwischengespeichert werden.
+   Markieren Sie als nächstes das DataSet, das im Dokument zwischengespeichert werden soll.
 
-## <a name="cache-the-dataset"></a>Die Zwischenspeicherung des Datasets
- Markieren Sie das Dataset im Dokument zwischengespeichert werden, indem öffentlich zu machen das Dataset und das Festlegen der **CacheInDocument** Eigenschaft.
+## <a name="cache-the-dataset"></a>Zwischenspeichern des Datasets
+ Markieren Sie das DataSet, das im Dokument zwischengespeichert werden soll, indem Sie das DataSet öffentlich gestalten und die **CacheInDocument** -Eigenschaft festlegen.
 
-### <a name="to-cache-the-dataset"></a>Das Dataset zwischengespeichert
+### <a name="to-cache-the-dataset"></a>So speichern Sie das Dataset zwischen
 
-1. Wählen Sie **NorthwindDataSet** auf der Komponentenleiste.
+1. Wählen Sie in der Komponenten Leiste **NorthwindDataSet** aus.
 
-2. In der **Eigenschaften** Ändern der **Modifizierer** Eigenschaft **öffentliche**.
+2. Ändern Sie im Fenster **Eigenschaften** die **modifizierereigenschaft** in **Public**.
 
-    Datasets müssen öffentlich sein, bevor Sie das Zwischenspeichern aktiviert ist.
+    Datasets müssen öffentlich sein, bevor das Caching aktiviert wird.
 
-3. Ändern der **CacheInDocument** Eigenschaft **"true"** .
+3. Ändern Sie die **CacheInDocument** -Eigenschaft in **true**.
 
-   Der nächste Schritt ist zum Hinzufügen von Text auf Schaltflächen, und fügen Sie im C#-Code, um die Ereignishandler einzubinden.
+   Der nächste Schritt besteht darin, den Schaltflächen Text hinzuzufügen und in c# Code hinzufügen, um die Ereignishandler zu verbinden.
 
-## <a name="initialize-the-controls"></a>Initialisieren Sie die Steuerelemente
- Legen Sie den Text der Schaltfläche, und fügen Sie Ereignishandler während der <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> Ereignis.
+## <a name="initialize-the-controls"></a>Initialisieren der Steuerelemente
+ Legen Sie den Schaltflächen Text fest, und fügen Sie während des Ereignisses Ereignishandler hinzu <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> .
 
-### <a name="to-initialize-the-data-and-the-controls"></a>So initialisieren Sie die Daten und die Steuerelemente
+### <a name="to-initialize-the-data-and-the-controls"></a>So initialisieren Sie die Daten und Steuerelemente
 
-1. In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs**, und klicken Sie dann auf **Ansichtscode** im Kontextmenü auf.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
 
-2. Fügen Sie den folgenden Code der `Sheet1_Startup` Methode, um den Text für die Schaltflächen festzulegen.
+2. Fügen Sie der-Methode den folgenden Code hinzu `Sheet1_Startup` , um den Text für die Schaltflächen festzulegen.
 
      [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
      [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
 
-3. Nur für c#, fügen Ereignishandler für die Schaltfläche mit den click-Ereignisse, die `Sheet1_Startup` Methode.
+3. Fügen Sie der-Methode nur für c# Ereignishandler für die Click-Ereignisse der Schaltfläche hinzu `Sheet1_Startup` .
 
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
 
-## <a name="add-code-to-enable-scrolling-through-the-records"></a>Hinzufügen von Code zum Aktivieren des Bildlaufs durch die Datensätze
- Fügen Sie Code in die <xref:System.Windows.Forms.Control.Click> -Ereignishandler der einzelnen Schaltflächen zum Navigieren durch die Datensätze.
+## <a name="add-code-to-enable-scrolling-through-the-records"></a>Fügen Sie Code hinzu, um das Scrollen durch die Datensätze
+ Fügen Sie dem- <xref:System.Windows.Forms.Control.Click> Ereignishandler für jede Schaltfläche Code hinzu, um durch die Datensätze zu navigieren.
 
 ### <a name="to-scroll-through-the-records"></a>So führen Sie einen Bildlauf durch die Datensätze durch
 
-1. Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis `Button1`, und fügen Sie den folgenden Code, durch die Datensätze zurückzugehen hinzu:
+1. Fügen Sie einen Ereignishandler für das <xref:System.Windows.Forms.Control.Click> -Ereignis von hinzu `Button1` , und fügen Sie den folgenden Code hinzu, um durch die Datensätze rückwärts zu wechseln:
 
      [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
      [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
 
-2. Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis `Button2`, und fügen Sie den folgenden Code hinzu, durch die Datensätze fahren Sie fort:
+2. Fügen Sie einen Ereignishandler für das <xref:System.Windows.Forms.Control.Click> -Ereignis von hinzu `Button2` , und fügen Sie den folgenden Code hinzu, um die Datensätze zu durchlaufen:
 
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
 
 ## <a name="test-the-application"></a>Testen der Anwendung
- Jetzt können Sie die Arbeitsmappe aus, um sicherzustellen, dass die Daten wie erwartet angezeigt wird und Sie die Lösung offline verwenden zu können, testen.
+ Nun können Sie die Arbeitsmappe testen, um sicherzustellen, dass die Daten erwartungsgemäß angezeigt werden, und dass Sie die Lösung offline verwenden können.
 
 ### <a name="to-test-the-data-caching"></a>So testen Sie das Zwischenspeichern von Daten
 
 1. Drücken Sie **F5**.
 
-2. Stellen Sie sicher, dass es sich bei den benannten Bereich und das List-Objekt mit Daten aus der Datenquelle gefüllt werden.
+2. Überprüfen Sie, ob der benannte Bereich und das List-Objekt mit Daten aus der Datenquelle gefüllt sind.
 
-3. Scrollen Sie durch einige der Einträge, indem Sie auf die Schaltflächen.
+3. Scrollen Sie durch einige der Datensätze, indem Sie auf die Schaltflächen klicken.
 
-4. Speichern Sie die Arbeitsmappe, und schließen Sie die Arbeitsmappe und die Visual Studio.
+4. Speichern Sie die Arbeitsmappe, und schließen Sie dann die Arbeitsmappe und Visual Studio.
 
-5. Deaktivieren Sie die Verbindung mit der Datenbank. Trennen Sie das Netzwerkkabel von Ihrem Computer aus, wenn die Datenbank auf einem Server befindet, oder beenden Sie den SQL Server-Dienst aus, wenn die Datenbank auf dem Entwicklungscomputer gespeichert ist.
+5. Deaktivieren Sie die Verbindung mit der Datenbank. Entfernen Sie das Netzwerkkabel von Ihrem Computer, wenn sich die Datenbank auf einem Server befindet, oder schließen Sie den SQL Server-Dienst, wenn sich die Datenbank auf dem Entwicklungs Computer befindet.
 
-6. Öffnen Sie Excel, und öffnen Sie **Meine Master-Detail.xlsx** aus der *\bin* Verzeichnis ( *\My Master-Detail\bin* in Visual Basic oder *\My Master-Detail\bin\ Debuggen von* in c#).
+6. Öffnen Sie Excel, und öffnen Sie dann **meine Master-Detail.xlsx** aus dem Verzeichnis " *\bin* " ("*\My Master-Detail\bin* " in Visual Basic oder " *\My Master-Detail\bin\debug* in c#").
 
-7. Scrollen Sie durch einige der Einträge zu erkennen, dass das Arbeitsblatt normal ausgeführt wird, die Verbindung getrennt.
+7. Scrollen Sie durch einige der Datensätze, um zu sehen, dass das Arbeitsblatt bei der Trennung normal funktioniert.
 
-8. Verbindung mit der Datenbank. Verbinden Sie den Computer mit dem Netzwerk wieder, wenn die Datenbank auf einem Server befindet, oder starten Sie den SQL Server-Dienst aus, wenn die Datenbank auf dem Entwicklungscomputer gespeichert ist.
+8. Stellen Sie erneut eine Verbindung mit der Datenbank her. Verbinden Sie den Computer erneut mit dem Netzwerk, wenn sich die Datenbank auf einem Server befindet, oder starten Sie den SQL Server-Dienst, wenn sich die Datenbank auf dem Entwicklungs Computer befindet.
 
 ## <a name="next-steps"></a>Nächste Schritte
- In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen von erstellen eine Master-/detailbeziehung Daten in einem Arbeitsblatt und das Zwischenspeichern eines Datasets. Die folgenden Aufgaben könnten sich daran anschließen:
+ Diese exemplarische Vorgehensweise zeigt die Grundlagen der Erstellung einer Master/Detail-Daten Beziehung auf einem Arbeitsblatt und Zwischenspeichern eines Datasets. Die folgenden Aufgaben könnten sich daran anschließen:
 
-- Die Lösung bereit. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
+- Bereitstellen der Projektmappe Weitere Informationen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md) -Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)
-- [Zwischenspeichern von Daten](../vsto/caching-data.md)
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
+- [Daten zwischenspeichern](../vsto/caching-data.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
