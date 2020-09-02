@@ -1,5 +1,5 @@
 ---
-title: CommandName-Element | Microsoft Docs
+title: CommandName-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739751"
 ---
 # <a name="commandname-element"></a>CommandName-Element
-Das `CommandName` Element gibt den Text an, der in der Tastaturkategorie im Dialogfeld **Optionen** und in der Liste **Befehle** im Dialogfeld **Anpassen** angezeigt wird.
+Das `CommandName` -Element gibt den Text an, der in der Tastatur Kategorie im Dialogfeld **Optionen** und in der Liste **Befehle** im Dialogfeld **Anpassen** angezeigt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,16 +31,16 @@ Das `CommandName` Element gibt den Text an, der in der Tastaturkategorie im Dial
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Strings-Element](../extensibility/strings-element.md)|Gruppiert Textelemente, `ButtonText` z. B. und `CommandName`.|
+|[Strings-Element](../extensibility/strings-element.md)|Gruppiert Textelemente, wie z `ButtonText` `CommandName` . b. und.|
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

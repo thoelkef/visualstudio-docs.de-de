@@ -1,5 +1,5 @@
 ---
-title: EnableEditOfLocationField-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Enableedideflocationfield-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,10 +11,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6823b462f884e06e1729c9bb4777cc166b34ea7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204616"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField-Element (Visual Studio-Vorlagen)
@@ -36,10 +36,10 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
 ### <a name="attributes"></a>Attribute  
- None  
+ Keine  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
- None  
+ Keine  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
@@ -50,12 +50,12 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob der Benutzer bearbeiten kann die **Speicherort** Textfeld auf die **neues Projekt** im Dialogfeld.  
+ Der Text muss entweder `true` oder sein `false` , um anzugeben, ob der Benutzer das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** bearbeiten kann.  
   
-## <a name="remarks"></a>Hinweise  
- `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert ist `true`, dadurch kann der Benutzer so bearbeiten Sie den Wert in der **Speicherort** Textfeld in die **neues Projekt** Dialogfeld.  
+## <a name="remarks"></a>Bemerkungen  
+ `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert ist `true` , wodurch der Benutzer den Wert im Textfeld **Speicherort** im Dialogfeld **Neues Projekt** bearbeiten kann.  
   
- In der **neues Projekt** im Dialogfeld die **Speicherort** Textfeld gibt das Verzeichnis, in dem ein neues Projekt gespeichert ist.  
+ Im Dialogfeld **Neues Projekt** gibt das Textfeld **Speicherort** das Verzeichnis an, in dem ein neues Projekt gespeichert wird.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Windows-Anwendung in [!INCLUDE[csprcs](../includes/csprcs-md.md)] veranschaulicht.  
@@ -86,6 +86,6 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

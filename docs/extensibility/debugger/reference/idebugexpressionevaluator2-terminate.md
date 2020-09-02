@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::Beenden | Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: beenden | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5460930cbcc528648c2a6c502ef7eb9acbe00d62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729156"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
-Beendet und bereinigt den Ausdrucksbewerter.
+Beendet und bereinigt die Ausdrucks Auswertung.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,10 +40,10 @@ int Terminate ();
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Gibt den Ausdrucksbewerter an, wenn er bereinigt wird.
+Weist die Ausdrucks Auswertung an, wenn Sie bereinigt wird.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **ExpressionEvaluatorPackage-Objekt** implementiert wird, das die [IDebugExpressionEvaluator2-Schnittstelle](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **expressionevaluatorpackage** -Objekt implementiert wird, das die [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)

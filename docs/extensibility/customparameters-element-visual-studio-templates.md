@@ -1,5 +1,5 @@
 ---
-title: CustomParameters-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: CustomParameters-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739410"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters-Element (Visual Studio-Vorlagen)
-Gruppiert die benutzerdefinierten Parameter, die an den Vorlagenassistenten übergeben werden sollen, wenn der Assistent Parameterersetzungen vornimmt.
+Gruppiert die benutzerdefinierten Parameter, die an den Vorlagen-Assistenten übergeben werden, wenn der Assistent Parameter Ersetzungen vornimmt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,13 +36,13 @@ Gruppiert die benutzerdefinierten Parameter, die an den Vorlagenassistenten übe
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Enthält einen benutzerdefinierten Parameternamen und -wert, der verwendet werden soll, wenn ein Projekt oder Element aus der Vorlage erstellt wird. Es kann keine oder mehrere `CustomParameter`-Elemente in einem `CustomParameters`-Element geben.|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Enthält einen benutzerdefinierten Parameternamen und-Wert, der verwendet werden soll, wenn ein Projekt oder ein Element aus der Vorlage erstellt wird. Es kann keine oder mehrere `CustomParameter`-Elemente in einem `CustomParameters`-Element geben.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -53,7 +53,7 @@ Gruppiert die benutzerdefinierten Parameter, die an den Vorlagenassistenten übe
 ## <a name="remarks"></a>Bemerkungen
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie mehrere benutzerdefinierte Parameter in einer Vorlage verwendet werden. Wenn ein Projekt oder Element aus einer Vorlage mit den `$color1$` `$color2$` folgenden benutzerdefinierten Parametern `Red` erstellt `Blue`wird, werden alle Instanzen und in den Vorlagendateien durch bzw. ersetzt.
+ Im folgenden Beispiel wird gezeigt, wie mehrere benutzerdefinierte Parameter in einer Vorlage verwendet werden. Wenn ein Projekt oder Element aus einer Vorlage mit den folgenden benutzerdefinierten Parametern erstellt wird, werden alle Instanzen von `$color1$` und `$color2$` in den Vorlagen Dateien durch `Red` `Blue` bzw. ersetzt.
 
 ```
 <CustomParameters>
@@ -65,4 +65,4 @@ Gruppiert die benutzerdefinierten Parameter, die an den Vorlagenassistenten übe
 ## <a name="see-also"></a>Weitere Informationen
 - [CustomParameter-Element (Visual Studio-Vorlagen)](../extensibility/customparameter-element-visual-studio-templates.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

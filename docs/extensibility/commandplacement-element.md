@@ -1,5 +1,5 @@
 ---
-title: CommandPlacement-Element | Microsoft Docs
+title: Commandplacement-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739745"
 ---
-# <a name="commandplacement-element"></a>CommandPlacement-Element
-Mit dem CommandPlacement-Element können Schaltflächen, Gruppen und Menüs in mehr als einer Gruppe oder einem Menü enthalten sein. Wenn Sie das CommandPlacement-Element verwenden, müssen Sie diese Elemente nicht vollständig neu definieren, um das Aussehen einer Benutzeroberfläche zu ändern.
+# <a name="commandplacement-element"></a>Commandplacement-Element
+Das commandplacement-Element ermöglicht das Einschließen von Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü. Mit dem commandplacement-Element müssen Sie diese Elemente nicht vollständig neu definieren, um das Aussehen einer Benutzeroberfläche zu ändern.
 
- Weitere Informationen finden Sie unter [Erstellen wiederverwendbarer Schaltflächengruppen](../extensibility/creating-reusable-groups-of-buttons.md).
+ Weitere Informationen finden Sie unter [Erstellen wiederverwendbarer Gruppen von Schalt](../extensibility/creating-reusable-groups-of-buttons.md)Flächen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,22 +38,22 @@ Mit dem CommandPlacement-Element können Schaltflächen, Gruppen und Menüs in m
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|guid|Erforderlich. Die GUId des Befehlssatzes, wie im [Symbols-Element](../extensibility/symbols-element.md)definiert.|
-|id|Erforderlich. Die ID des Menüs, der Gruppe oder des `Symbols Element`Befehls, die platziert werden soll, wie in der definiert.|
-|priority|Erforderlich. Bestimmt die visuelle Position des Elements im übergeordneten Element.|
-|Bedingung|Optional. Siehe [Bedingte Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Erforderlich. Die GUID des Befehlssatzes, wie im [Symbols-Element](../extensibility/symbols-element.md)definiert.|
+|id|Erforderlich. Die ID des zu platzierenden Menüs, der Gruppe oder des Befehls, wie in definiert `Symbols Element` .|
+|priority|Erforderlich. Bestimmt die visuelle Position des Elements in seinem übergeordneten Element.|
+|Bedingung|Optional. Siehe [bedingte aattribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Parent|Erforderlich. Das Menü oder die Gruppe, in der das zu postende Element gehostet wird.|
+|Parent|Erforderlich. Das Menü oder die Gruppe, das das zu platzierende Element hostet.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CommandPlacements-Element](../extensibility/commandplacements-element.md)|Gibt Gruppen von CommandPlacements- und CommandPlacement-Elementen an.|
+|[Commandplacement-Element](../extensibility/commandplacements-element.md)|Gibt Gruppen von commandplacement-und commandplacement-Elementen an.|
 
 ## <a name="example"></a>Beispiel
 
@@ -67,5 +67,5 @@ Mit dem CommandPlacement-Element können Schaltflächen, Gruppen und Menüs in m
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [CommandPlacements-Element](../extensibility/commandplacements-element.md)
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Commandplacement-Element](../extensibility/commandplacements-element.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

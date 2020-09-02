@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45e664b153c4d643d8fbe8f1cefb207e0a76e18e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204876"
 ---
-# <a name="seekstart"></a>SEEK_START
+# <a name="seek_start"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt die Position, ab dem mit dem Sie suchen, die in einem Stream Disassembly.  
+Gibt die Position an, ab der in einem disassemblystream gesucht werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -55,25 +55,25 @@ public enum enum_SEEK_START { 
  Beginnt die Suche am Ende des aktuellen Dokuments.  
   
  SEEK_START_CURRENT  
- Beginnt die Suche an der aktuellen Position des aktuellen Dokuments.  
+ Startet die Suche an der aktuellen Position des aktuellen Dokuments.  
   
  SEEK_START_CODECONTEXT  
- Startet die Suchvorgänge in den angegebenen Code-Kontext des aktuellen Dokuments.  
+ Startet die Suche im angegebenen Code Kontext des aktuellen Dokuments.  
   
  SEEK_START_CODELOCID  
- Wird gestartet, an der angegebenen Code Standortbezeichner suchen. Speicherort der Codebezeichner erhalten Sie durch Aufrufen von [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
+ Beginnt mit der Suche nach dem angegebenen Code Speicherort Bezeichner. Bezeichner für den Code Speicherort werden abgerufen, indem [getcurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)aufgerufen wird.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Argument an die [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird als Argument an die [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) -Methode übermittelt.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Suchen](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+ [Einzuholen](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

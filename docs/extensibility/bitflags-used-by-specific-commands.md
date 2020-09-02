@@ -1,5 +1,5 @@
 ---
-title: Bitflags, die von bestimmten Befehlen verwendet werden | Microsoft Docs
+title: Bitflags, die von bestimmten Befehlen verwendet werden | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,99 +11,99 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffa1fd8bf025d665977e87dc8b88da724ade5a8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740010"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags, die von bestimmten Befehlen verwendet werden
-Das Verhalten einer Reihe von Funktionen in der Quellcodeverwaltungs-Plug-In-API kann geändert werden, indem ein oder mehrere Bits in einem einzelnen Wert gesetzt werden. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quellcodeverwaltungs-Plug-In-API verwendet werden, werden hier nach der Funktion gruppiert, die sie verwendet.
+Das Verhalten einer Reihe von Funktionen in der Quellcodeverwaltungs-Plug-in-API kann geändert werden, indem ein oder mehrere Bits in einem einzelnen Wert festgelegt werden. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quellcodeverwaltungs-Plug-in-API verwendet werden, werden hier aufgeführt, gruppiert nach der Funktion, die Sie verwendet.
 
-## <a name="checked-out-flag"></a>Ausgechecktflagge
- Dieses Flag kann entweder für [SccAdd](../extensibility/sccadd-function.md) oder [SccCheckin](../extensibility/scccheckin-function.md)festgelegt werden.
+## <a name="checked-out-flag"></a>Auschecken von Flag
+ Dieses Flag kann entweder für [sccadd](../extensibility/sccadd-function.md) oder [scccheckin](../extensibility/scccheckin-function.md)festgelegt werden.
 
-|Flag|Wert|BESCHREIBUNG|
+|Flag|Wert|Beschreibung|
 |----------|-----------|-----------------|
-|`SCC_KEEP_CHECKEDOUT`|0x1000|Halten Sie die Datei ausgecheckt.|
+|`SCC_KEEP_CHECKEDOUT`|0x1000|Lassen Sie die Datei ausgecheckt.|
 
-## <a name="add-flags"></a>Hinzufügen von Flags
- Diese Flags werden von [SccAdd](../extensibility/sccadd-function.md)verwendet.
+## <a name="add-flags"></a>Flags hinzufügen
+ Diese Flags werden von [sccadd](../extensibility/sccadd-function.md)verwendet.
 
-|Flag|Wert|BESCHREIBUNG|
+|Flag|Wert|Beschreibung|
 |----------|-----------|-----------------|
-|`SCC_FILETYPE_AUTO`|0x00|Es wird erwartet, dass das Quellcodeverwaltungs-Plug-In automatisch erkennt, ob es sich bei der Datei um Text oder Binärdatei handelt.|
+|`SCC_FILETYPE_AUTO`|0x00|Das Quellcodeverwaltungs-Plug-in erkennt automatisch, ob es sich um eine Text-oder Binärdatei handelt.|
 |`SCC_FILETYPE_TEXT`|0x01|Dateityp ist Text.|
-|`SCC_FILETYPE_BINARY`|0x04|Der Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` `SCC_FILETYPE_BINARY` und Flags schließen sich gegenseitig aus.   Legen Sie genau eine oder keines fest.|
-|`SCC_ADD_STORELATEST`|0x02|Speichern Sie nur die neueste Version (keine Deltas).|
+|`SCC_FILETYPE_BINARY`|0x04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig aus.   Legen Sie genau einen oder keines von beiden fest.|
+|`SCC_ADD_STORELATEST`|0x02|Nur die aktuelle Version speichern (keine Delta).|
 
 ## <a name="diff-flags"></a>Diff-Flags
- [SccDiff](../extensibility/sccdiff-function.md) verwendet diese Flags, um den Umfang eines Diff-Vorgangs zu definieren. Die `SCC_DIFF_QD_xxx` Flaggen schließen sich gegenseitig aus. Wenn einer von ihnen angegeben ist, ist kein visuelles Feedback zu geben. In einem "Quick Diff" (QD) bestimmt das Plug-In nicht, wie sich die Datei unterscheidet, nur wenn sie anders ist. Wenn keines dieser Flags angegeben ist, wird ein "visueller Diff" ausgeführt. detaillierte Dateiunterschiede werden berechnet und angezeigt. Wenn die angeforderte QD nicht unterstützt wird, wird das Plug-In zum nächstbesten verschoben. Wenn die IDE z. B. eine Prüfsumme anfordert und das Plug-In sie nicht unterstützt, führt das Plug-In eine Überprüfung des vollständigen Inhalts durch (immer noch viel schneller als eine visuelle Anzeige).
+ Der [sccdiff](../extensibility/sccdiff-function.md) verwendet diese Flags, um den Bereich eines Vergleichs Vorgangs zu definieren. Die `SCC_DIFF_QD_xxx` Flags schließen sich gegenseitig aus. Wenn eine davon angegeben ist, wird kein visuelles Feedback angegeben. In einem "schnellen diff" (QD) bestimmt das Plug-in nicht, wie sich die Datei unterscheidet, sondern nur, wenn Sie anders ist. Wenn keines dieser Flags angegeben ist, wird ein "visueller diff" ausgeführt. Ausführliche Datei Unterschiede werden berechnet und angezeigt. Wenn die angeforderte QD nicht unterstützt wird, wechselt das Plug-in zum nächsten. Wenn die IDE z. bbweise eine Prüfsumme anfordert und das Plug-in diese nicht unterstützt, führt das Plug-in eine Überprüfung der vollständigen Inhalte durch (immer noch viel schneller als eine visuelle Darstellung).
 
-|Flag|Wert|BESCHREIBUNG|
+|Flag|Wert|Beschreibung|
 |----------|-----------|-----------------|
-|`SCC_DIFF_IGNORECASE`|0x0002|Ignorieren Sie Fallunterschiede.|
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorieren Sie Leerraumunterschiede. **Hinweis:**  Die `SCC_DIFF_IGNORECASE` `SCC_DIFF_IGNORESPACE` und Flags sind optionale Bitflags.|
-|`SCC_DIFF_QD_CONTENTS`|0x0010|QD durch Vergleichen des gesamten Dateiinhalts.|
+|`SCC_DIFF_IGNORECASE`|0x0002|Groß-/Kleinschreibung ignorieren.|
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorieren von leer Raum unterschieden. **Hinweis:**  Die `SCC_DIFF_IGNORECASE` `SCC_DIFF_IGNORESPACE` Flags und sind optionale Bitflags.|
+|`SCC_DIFF_QD_CONTENTS`|0x0010|QD durch Vergleichen des gesamten Datei Inhalts.|
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD nach Prüfsumme.|
-|`SCC_DIFF_QD_TIME`|0x0040|QD nach Dateidatums-/Uhrzeitstempel.|
-|`SCC_DIFF_QUICK_DIFF`|0x0070|Dies ist eine Maske, die verwendet wird, um alle QD-Bitflags zu überprüfen. Sie sollte nicht an eine Funktion übergeben werden; Die drei QD-Bitflags schließen sich gegenseitig aus. QD bedeutet immer keine Anzeige der Benutzeroberfläche.|
+|`SCC_DIFF_QD_TIME`|0x0040|QD nach Datei Datum/Zeitstempel.|
+|`SCC_DIFF_QUICK_DIFF`|0x0070|Dies ist eine Maske, mit der alle QD-Bitflags überprüft werden. Er sollte nicht an eine Funktion übermittelt werden. die drei QD-Bitflags schließen sich gegenseitig aus. QD bedeutet immer, dass die Benutzeroberfläche nicht angezeigt wird.|
 
-## <a name="populatelist-flag"></a>PopulateList-Flag
- Dieses Flag wird von der [SccPopulateList](../extensibility/sccpopulatelist-function.md) im `fOptions` Parameter verwendet.
+## <a name="populatelist-flag"></a>Populatelist-Flag
+ Dieses Flag wird von [sccpopulatelist](../extensibility/sccpopulatelist-function.md) im-Parameter verwendet `fOptions` .
 
-|Flag|Wert|BESCHREIBUNG|
+|Flag|Wert|Beschreibung|
 |----------|-----------|-----------------|
-|`SCC_PL_DIR`|0x00000001L|Die IDE übergibt Verzeichnisse, keine Dateien.|
+|`SCC_PL_DIR`|0x00000001L|Die IDE übergibt Verzeichnisse und keine Dateien.|
 
-## <a name="populatedirlist-flags"></a>PopulateDirList-Flags
- Diese Flags werden von der [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) im `fOptions` Parameter verwendet.
+## <a name="populatedirlist-flags"></a>Populatedirlist-Flags
+ Diese Flags werden von [sccpopulatedirlist](../extensibility/sccpopulatedirlist-function.md) im-Parameter verwendet `fOptions` .
 
-|Optionswert|Wert|BESCHREIBUNG|
+|Optionswert|Wert|Beschreibung|
 |------------------|-----------|-----------------|
-|SCC_PDL_ONELEVEL|0x0000|Untersuchen Sie nur eine Ebene von Verzeichnissen für Verzeichnisse (dies ist die Standardeinstellung).|
-|SCC_PDL_RECURSIVE|0x0001|Überprüfen Sie alle Verzeichnisse unter jedem gegebenen Verzeichnis rekursiv.|
-|SCC_PDL_INCLUDEFILES|0x0002|Schließen Sie Dateinamen in den Prüfungsprozess ein.|
+|SCC_PDL_ONELEVEL|0x0000|Untersuchen Sie nur eine Ebene der Verzeichnisse für Verzeichnisse (Dies ist die Standardeinstellung).|
+|SCC_PDL_RECURSIVE|0x0001|Untersuchen Sie rekursiv alle Verzeichnisse unter jedem angegebenen Verzeichnis.|
+|SCC_PDL_INCLUDEFILES|0x0002|Schließt Dateinamen in den Untersuchungsprozess ein.|
 
 ## <a name="openproject-flags"></a>OpenProject-Flags
- Diese Flags werden vom [SccOpenProject](../extensibility/sccopenproject-function.md) im `dwFlags` Parameter verwendet.
+ Diese Flags werden von [sccopenproject](../extensibility/sccopenproject-function.md) im-Parameter verwendet `dwFlags` .
 
-|Optionswert|Wert|BESCHREIBUNG|
+|Optionswert|Wert|Beschreibung|
 |------------------|-----------|-----------------|
-|SCC_OP_CREATEIFNEW|0x00000001L|Wenn das Projekt in der Quellcodeverwaltung nicht vorhanden ist, erstellen Sie es. Wenn dieses Flag nicht festgelegt ist, fordern `SCC_OP_SILENTOPEN` Sie den Benutzer für das Projekt zum Erstellen auf (es sei denn, es wird ein Flag angegeben).|
-|SCC_OP_SILENTOPEN|0x00000002L|Fordern Sie den Benutzer nicht auf, ein Projekt zu erstellen. einfach `SCC_E_UNKNOWNPROJECT`zurückgeben .|
+|SCC_OP_CREATEIFNEW|0x00000001L|Wenn das Projekt in der Quell Code Verwaltung nicht vorhanden ist, erstellen Sie es. Wenn dieses Flag nicht festgelegt ist, fordern Sie den Benutzer auf, zu Erstell zu erstellen (sofern nicht `SCC_OP_SILENTOPEN` Flag angegeben ist).|
+|SCC_OP_SILENTOPEN|0x00000002L|Benutzer nicht zum Erstellen eines Projekts auffordern; Geben Sie einfach zurück `SCC_E_UNKNOWNPROJECT` .|
 
-## <a name="get-flags"></a>Holen Sie sich Flaggen
- Diese Flags werden von [SccGet](../extensibility/sccget-function.md) und [SccCheckout](../extensibility/scccheckout-function.md)verwendet.
+## <a name="get-flags"></a>Get-Flags
+ Diese Flags werden von [sccget](../extensibility/sccget-function.md) und [scccheckout](../extensibility/scccheckout-function.md)verwendet.
 
-|Flag|Wert|BESCHREIBUNG|
+|Flag|Wert|Beschreibung|
 |----------|-----------|-----------------|
-|`SCC_GET_ALL`|0x00000001L|Die IDE übergibt Verzeichnisse, keine Dateien: Abrufen aller Dateien in diesen Verzeichnissen.|
-|`SCC_GET_RECURSIVE`|0x00000002L|Die IDE übergibt Verzeichnisse: Holen Sie sich diese Verzeichnisse und alle ihre Unterverzeichnisse.|
+|`SCC_GET_ALL`|0x00000001L|Die IDE übergibt Verzeichnisse und keine Dateien: alle Dateien in diesen Verzeichnissen abzurufen.|
+|`SCC_GET_RECURSIVE`|0x00000002L|Die IDE übergibt Verzeichnisse: Sie erhalten diese Verzeichnisse und alle Unterverzeichnisse.|
 
-## <a name="noption-values"></a>nOption-Werte
- Diese Flags werden von der [SccSetOption](../extensibility/sccsetoption-function.md) im `nOption` Parameter verwendet.
+## <a name="noption-values"></a>noptions-Werte
+ Diese Flags werden von [sccsetoption](../extensibility/sccsetoption-function.md) im-Parameter verwendet `nOption` .
 
-|Flag|Wert|BESCHREIBUNG|
+|Flag|Wert|Beschreibung|
 |----------|-----------|-----------------|
-|`SCC_OPT_EVENTQUEUE`|0x00000001L|Legen Sie den Status der Ereigniswarteschlange fest.|
-|`SCC_OPT_USERDATA`|0x00000002L|Geben Sie `SCC_OPT_NAMECHANGEPFN`Benutzerdaten für an.|
-|`SCC_OPT_HASCANCELMODE`|0x00000003L|Die IDE kann abbrechen.|
+|`SCC_OPT_EVENTQUEUE`|0x00000001L|Legen Sie den Status der Ereignis Warteschlange fest.|
+|`SCC_OPT_USERDATA`|0x00000002L|Geben Sie Benutzerdaten für an `SCC_OPT_NAMECHANGEPFN` .|
+|`SCC_OPT_HASCANCELMODE`|0x00000003l|Die IDE kann abbrechen verarbeiten.|
 |`SCC_OPT_NAMECHANGEPFN`|0x00000004L|Legen Sie einen Rückruf für Namensänderungen fest.|
-|`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|Deaktivieren Sie das Auschecken der Quellcodeverwaltungs-Plug-In-Benutzeroberfläche, und legen Sie kein Arbeitsverzeichnis fest.|
-|`SCC_OPT_SHARESUBPROJ`|0x00000006L|Fügen Sie aus dem Quellcodeverwaltungssystem hinzu, um ein Arbeitsverzeichnis anzugeben. Versuchen Sie, das zugeordnete Projekt freizugeben, wenn es sich um ein direktes abhängiges Projekt handelt.|
+|`SCC_OPT_SCCCHECKOUTONLY`|0x00000005l|Deaktivieren Sie das Quellcodeverwaltungs-Plug-in UI Checkout, und legen Sie kein Arbeitsverzeichnis fest.|
+|`SCC_OPT_SHARESUBPROJ`|0x00000006l|Fügen Sie aus dem Quell Code Verwaltungssystem hinzu, um ein Arbeitsverzeichnis anzugeben. Versuchen Sie, die Freigabe im zugeordneten Projekt auszuführen, wenn es sich um einen direkt Nachfolger handelt.|
 
-## <a name="dwval-bitflags"></a>dwVal-Bitflags
- Diese Flags werden von der [SccSetOption](../extensibility/sccsetoption-function.md) im `dwVal` Parameter verwendet.
+## <a name="dwval-bitflags"></a>dwval-Bitflags
+ Diese Flags werden von [sccsetoption](../extensibility/sccsetoption-function.md) im-Parameter verwendet `dwVal` .
 
-|Flag|Wert|BESCHREIBUNG|Wird `nOption` nach Wert verwendet|
+|Flag|Wert|Beschreibung|Wird als `nOption` Wert verwendet|
 |----------|-----------|-----------------|-----------------------------|
-|`SCC_OPT_EQ_DISABLE`|0x00L|Hält die Ereigniswarteschlangenaktivität an.|`SCC_OPT_EVENTQUEUE`|
-|`SCC_OPT_EQ_ENABLE`|0x01L|Aktiviert die Protokollierung der Ereigniswarteschlange.|`SCC_OPT_EVENTQUEUE`|
-|`SCC_OPT_HCM_NO`|0L|(Standard) Hat keinen Abbruchmodus; Stecker muss auf Wunsch liefern.|`SCC_OPT_HASCANCELMODE`|
-|`SCC_OPT_HCM_YES`|1 L|IDE-Handles abbrechen.|`SCC_OPT_HASCANCELMODE`|
-|`SCC_OPT_SCO_NO`|0L|(Standard) OK zum Auschecken von Plug-In-Benutzeroberfläche; Arbeitsverzeichnis festgelegt ist.|`SCC_OPT_SCCCHECKOUTONLY`|
-|`SCC_OPT_SCO_YES`|1 L|Kein Plug-In UI Checkout, kein Arbeitsverzeichnis.|`SCC_OPT_SCCCHECKOUTONLY`|
+|`SCC_OPT_EQ_DISABLE`|0x00l|Hält die Aktivität der Ereignis Warteschlange an.|`SCC_OPT_EVENTQUEUE`|
+|`SCC_OPT_EQ_ENABLE`|0x01l|Aktiviert die Ereignis Warteschlange|`SCC_OPT_EVENTQUEUE`|
+|`SCC_OPT_HCM_NO`|0L|Vorgegebene Hat keinen Abbruch Modus; das Plug-in muss bei Bedarf bereitstellen.|`SCC_OPT_HASCANCELMODE`|
+|`SCC_OPT_HCM_YES`|1 L|Die IDE verarbeitet den Abbruch.|`SCC_OPT_HASCANCELMODE`|
+|`SCC_OPT_SCO_NO`|0L|Vorgegebene Zum Auschecken von der Plug-in-Benutzeroberfläche das Arbeitsverzeichnis wird festgelegt.|`SCC_OPT_SCCCHECKOUTONLY`|
+|`SCC_OPT_SCO_YES`|1 L|Kein Plug-in-UI-Checkout, kein Arbeitsverzeichnis.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>Siehe auch
+- [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)

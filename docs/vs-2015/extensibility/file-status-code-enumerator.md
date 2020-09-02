@@ -1,5 +1,5 @@
 ---
-title: Dateistatuscode-Enumerator | Microsoft-Dokumentation
+title: Datei Status Code-Enumerator | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b6e74caa9eedd42e25339d62f5837ccfe82d001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204376"
 ---
 # <a name="file-status-code-enumerator"></a>Dateistatuscode-Enumerator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die `SccStatus` Enumerator enthält benannte Konstante Werte, die den Status einer Datei in das Quellcodeverwaltungssystem angeben. Diese Enumeration wird verwendet, durch die [SccQueryInfo](../extensibility/sccqueryinfo-function.md) und `POPLISTFUNC` Callback-Funktion (finden Sie unter [POPLISTFUNC](../extensibility/poplistfunc.md) Einzelheiten).  
+Der `SccStatus` Enumerator enthält benannte Konstante Werte, die den Zustand einer Datei im Quell Code Verwaltungssystem angeben. Diese Enumeration wird von der [sccqueryinfo](../extensibility/sccqueryinfo-function.md) -Funktion und der `POPLISTFUNC` Callback-Funktion verwendet (Weitere Informationen finden Sie unter [poplistfunc](../extensibility/poplistfunc.md) ).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,60 +52,60 @@ enum SccStatus {
   
 ## <a name="members"></a>Member  
  SCC_STATUS_INVALID  
- Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.  
+ Der Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.  
   
  SCC_STATUS_NOTCONTROLLED  
- Datei ist nicht unter quellcodeverwaltung.  
+ Die Datei befindet sich nicht unter Quell Code Verwaltung.  
   
  SCC_STATUS_CONTROLLED  
- Datei befindet sich unter quellcodeverwaltung.  
+ Die Datei befindet sich unter Quell Code Verwaltung.  
   
  SCC_STATUS_CHECKEDOUT  
- Die von den aktuellen Benutzer auf dem lokalen Datenträger ausgecheckt.  
+ Vom aktuellen Benutzer auf dem lokalen Datenträger ausgecheckt.  
   
  SCC_STATUS_OUTOTHER  
- Datei wird von einem anderen Benutzer ausgecheckt.  
+ Die Datei wird von einem anderen Benutzer ausgecheckt.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Datei wird exklusiv ausgecheckt.  
+ Die Datei ist exklusiv ausgecheckt.  
   
  SCC_STATUS_OUTMULTIPLE  
- Datei wird von mehreren Benutzern ausgecheckt.  
+ Die Datei wird von mehr als einem Benutzer ausgecheckt.  
   
  SCC_STATUS_OUTOFDATE  
- Die Datei ist nicht das neueste.  
+ Die Datei ist nicht die aktuellste.  
   
  SCC_STATUS_DELETED  
- Datei wurde aus dem Projekt gelöscht.  
+ Die Datei wurde aus dem Projekt gelöscht.  
   
  SCC_STATUS_LOCKED  
- Datei gesperrt ist; Es wurden keine weiteren Versionen zulässig.  
+ Die Datei ist gesperrt. Es sind keine weiteren Versionen zulässig.  
   
  SCC_STATUS_MERGED  
- Datei wurde zusammengeführt, aber noch nicht behoben bzw. überprüft.  
+ Die Datei wurde zusammengeführt, aber noch nicht korrigiert/überprüft.  
   
  SCC_STATUS_SHARED  
- Datei wird von Projekten gemeinsam verwendet.  
+ Die Datei wird von Projekten gemeinsam verwendet.  
   
  SCC_STATUS_PINNED  
- Datei ist eine explizite Version freigegeben.  
+ Die Datei wird für eine explizite Version freigegeben.  
   
  SCC_STATUS_MODIFIED  
- Datei wurde geändert/unterteilt/verletzt.  
+ Die Datei wurde geändert/beschädigt/verletzt.  
   
  SCC_STATUS_OUTBYUSER  
- Datei wird vom aktuellen Benutzer ausgecheckt.  
+ Die Datei wird vom aktuellen Benutzer ausgecheckt.  
   
  SCC_STATUS_NOMERGE  
- Datei kann nicht mit zusammengeführt werden und muss nicht gespeichert werden, bevor Sie einen GET.  
+ Die Datei kann nie zusammengeführt werden und muss nicht vor dem Get-Zeitpunkt gespeichert werden.  
   
  SCC_STATUS_RESERVED_1  
- Für die interne Verwendung vorgesehen.  
+ Für die interne Verwendung reserviert.  
   
  SCC_STATUS_RESERVED_2  
- Für die interne Verwendung vorgesehen.  
+ Für die interne Verwendung reserviert.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)   
- [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
+ [Sccqueryinfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

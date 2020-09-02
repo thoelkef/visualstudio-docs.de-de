@@ -232,10 +232,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: dcf8f67e240476ad75ab5b0b7b0c446be32ad816
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846519"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Zusätzliche Ressourcen für die Problembehandlung beim Datenzugriff
@@ -259,5 +259,5 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
  Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter [Beheben von Problemen beim Herstellen einer Verbindung mit dem SQL Server Datenbank-Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,5 +1,5 @@
 ---
-title: Baugruppenelement (Visual Studio-Vorlagen) | Microsoft Docs
+title: Assembly-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740034"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Baugruppenelement (Visual Studio-Vorlagen)
-Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen eines Verweises dieser Assembly zu Projekten verwendet werden.
+# <a name="assembly-element-visual-studio-templates"></a>Assembly-Element (Visual Studio-Vorlagen)
+Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen eines Verweises auf diese Assembly zu Projekten verwendet wird.
 
- \<VSTemplate \<> TemplateContent \< \<> \<Referenzen> Referenz> Assembly>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
+ \<Reference>
+ \<Assembly>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,23 +39,23 @@ Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen ein
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Referenz](../extensibility/reference-element-visual-studio-templates.md)|Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Dieser Text gibt die Assembly an, die einem Projekt hinzugefügt werden soll, wenn die Elementvorlage instanziiert wird. Dieser Assemblyname muss auf eine der folgenden Arten angegeben werden:
+ Dieser Text gibt die Assembly an, die einem Projekt hinzugefügt werden soll, wenn die Element Vorlage instanziiert wird. Dieser Assemblyname muss auf eine der folgenden Arten angegeben werden:
 
-- Als vollständiger Assemblyname. Beispiel:
+- Als vollständiger AssemblyName. Beispiel:
 
     ```
     <Assembly>
@@ -60,7 +63,7 @@ Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen ein
     </Assembly>
     ```
 
-- Als einfacher Textverweis. Beispiel:
+- Als einfache Textreferenz. Beispiel:
 
     ```
     <Assembly> System </Assembly>
@@ -69,10 +72,10 @@ Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen ein
 ## <a name="remarks"></a>Bemerkungen
  `Assembly` ist ein erforderliches untergeordnetes Element von `Reference`.
 
- Die `Reference` `References,` , `Assembly` und Elemente können nur in *.vstemplate-Dateien* verwendet werden, die den `Type` Attributwert von `Item`haben.
+ Die `Reference` `References,` Elemente, und `Assembly` können nur in *. vstemplate* -Dateien mit dem- `Type` Attribut Wert verwendet werden `Item` .
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel `TemplateContent` veranschaulicht das Element einer Elementvorlage. Dieser XML-Code fügt Verweise auf die *Assemblys System.dll* und *System.Data.dll* hinzu.
+ Das folgende Beispiel veranschaulicht das-Element einer Element `TemplateContent` Vorlage. Dieses XML fügt Verweise auf die *System.dll* und *System.Data.dll* Assemblys hinzu.
 
 ```
 <TemplateContent>
@@ -92,6 +95,6 @@ Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen ein
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

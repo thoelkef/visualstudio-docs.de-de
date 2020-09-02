@@ -1,5 +1,5 @@
 ---
-title: Verteilen von Isolated Shell-Anwendungen | Microsoft-Dokumentation
+title: Verteilen isolierter Shellanwendungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,26 +9,26 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204668"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Verteilen von Anwendungen der isolierten Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie müssen Visual Studio und Visual Studio SDK installieren, um eine isolierte Shell-Anwendung zu erstellen. Um die Anwendung auf die Computer anderer Benutzer oder Kunden zu verteilen, müssen Sie spezielles verteilbares Paket für die isolated Shell einschließen.  
+Sie müssen Visual Studio und das Visual Studio SDK installieren, um eine isolierte Shellanwendung zu erstellen. Wenn Sie die Anwendung an die Computer anderer Benutzer oder Kunden verteilen möchten, müssen Sie ein spezielles verteilbares Paket für die isolierte Shell einschließen.  
   
-## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Voraussetzungen für das Verteilen von Isolated Shell-Anwendungen  
+## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Voraussetzungen für die Verteilung isolierter Shellanwendungen  
   
-|Name|Beschreibung|  
+|Name|BESCHREIBUNG|  
 |----------|-----------------|  
-|Visual Studio SDK|Das SDK benötigen Sie zum Entwickeln und testen die Erweiterungen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sie können auch das SDK verwenden, um Ihre eigene Instanz von Visual Studio isolierte Shell zu erstellen.<br /><br /> Visual Studio ist eine Voraussetzung für das SDK.|  
-|Microsoft Visual Studio isolierte Shell Redistributable|Die Redistributable-Komponente, dass Sie in Ihrem Setup-Programm einschließen, bei der Erstellung einer Umgebung Tools für Visual Studio isolierte Shell. Das isolierte Shell redistributable Package enthält die .NET Framework 4.5.|  
+|Visual Studio SDK|Das SDK, das Sie zum entwickeln und Testen von Erweiterungen von benötigen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Sie können auch das SDK verwenden, um eine eigene Instanz der isolierten Visual Studio-Shell zu erstellen.<br /><br /> Visual Studio ist eine Voraussetzung für das SDK.|  
+|Verteilbare Microsoft Visual Studio isolierte Shell|Die weitervertreibbare Komponente, die Sie in das Setup Programm einbinden, wenn Sie in der isolierten Visual Studio-Shell eine Tools-Umgebung erstellen. Das verteilbare Paket für isolierte Shell umfasst den .NET Framework 4,5.|  
   
-## <a name="creating-an-installation-program-for-the-application"></a>Erstellen ein Installationsprogramm für die Anwendung  
- Sie müssen eine spezielle Installationsprogramm für die integrierte oder isolierte Shell-Anwendung erstellen. Weitere Informationen finden Sie unter [Installieren einer Isolated Shell-Anwendung](../extensibility/installing-an-isolated-shell-application.md).  
+## <a name="creating-an-installation-program-for-the-application"></a>Erstellen eines Installationsprogramms für die Anwendung  
+ Sie müssen ein spezielles Installationsprogramm für die integrierte oder isolierte Shell-Anwendung erstellen. Weitere Informationen finden Sie unter [Installieren einer isolierten Shellanwendung](../extensibility/installing-an-isolated-shell-application.md).  
   
-## <a name="allowing-for-updates-to-your-application"></a>Updates für Ihre Anwendung zulassen  
- Ihr Installationsprogramm muss die Möglichkeit, dass die Anwendung, entweder durch Microsoft-Updates oder Updates für Ihr Unternehmen aktualisiert werden ermöglichen. Weitere Informationen zu Updates finden Sie unter [Wartung von Richtlinien für die isolierte Shell-Anwendungen](../extensibility/servicing-guidelines-for-isolated-shell-applications.md).
+## <a name="allowing-for-updates-to-your-application"></a>Zulassen von Updates für Ihre Anwendung  
+ Das Installationsprogramm muss die Möglichkeit der Aktualisierung Ihrer Anwendung ermöglichen, entweder von Microsoft Updates oder von den Updates Ihres Unternehmens. Weitere Informationen zu Updates finden Sie unter [Wartungsrichtlinien für isolierte Shellanwendungen](../extensibility/servicing-guidelines-for-isolated-shell-applications.md).

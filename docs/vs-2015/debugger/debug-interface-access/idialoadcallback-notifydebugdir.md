@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Notifydebugdir | Microsoft-Dokumentation'
+title: 'IDiaLoadCallback:: notifydebug-Verzeichnis | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e8fe8ffe9d7d495e40c8c84b08aeaefb03e8d17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151999"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aufgerufen, wenn ein Debugverzeichnis in die .exe-Datei gefunden wurde.  
+Wird aufgerufen, wenn ein Debugverzeichnis in der exe-Datei gefunden wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,24 +37,24 @@ HRESULT NotifyDebugDir ( 
   
 #### <a name="parameters"></a>Parameter  
  `fExecutable`  
- [in] `TRUE` Wenn das Debugverzeichnis aus einer ausführbaren Datei (statt eine DBG-Datei) gelesen wird.  
+ [in] `TRUE` , wenn das Debugverzeichnis aus einer ausführbaren Datei gelesen wird (anstatt einer dbg-Datei).  
   
  `cbData`  
- [in] Die Anzahl der Bytes der Daten in der Debugverzeichnis.  
+ in Anzahl der Daten Bytes im Debugverzeichnis.  
   
  `data[]`  
- [in] Ein Array, das mit das Debugverzeichnis gefüllt ist.  
+ in Ein Array, das mit dem Debugverzeichnis ausgefüllt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Der Rückgabecode wird in der Regel ignoriert.  
   
-## <a name="remarks"></a>Hinweise  
- Die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode dieser Rückruf aufruft, wenn beim Verarbeiten der ausführbaren Datei ein Debugverzeichnis gefunden.  
+## <a name="remarks"></a>Bemerkungen  
+ Die [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) -Methode ruft diesen Rückruf auf, wenn beim Verarbeiten der ausführbaren Datei ein Debugverzeichnis gefunden wird.  
   
- Diese Methode entfernt die Notwendigkeit für den Client für das reverse Engineering der ausführbaren Datei bzw. das Debug-Datei zur Unterstützung von Debuginformationen nicht in der PDB-Datei gefunden. Mit diesen Daten kann der Client erkennen, den Typ der Debuginformationen zur Verfügung und gibt an, ob es sich in die ausführbare Datei oder die DBG-Datei befindet.  
+ Durch diese Methode entfällt die Notwendigkeit, dass der Client die ausführbare Datei und/oder Debugdatei rückgängig machen muss, um andere Debuginformationen als in der PDB-Datei zu unterstützen. Mit diesen Daten kann der Client den Typ der verfügbaren Debuginformationen erkennen und davon, ob er sich in der ausführbaren Datei oder der dbg-Datei befindet.  
   
- Die meisten Clients werden dieser Rückruf nicht erforderlich, da die `IDiaDataSource::loadDataForExe` -Methode öffnet transparent sowohl PDB .dbg-Dateien und bei Bedarf, um Symbole zu verarbeiten.  
+ Die meisten Clients benötigen diesen Rückruf nicht, da die `IDiaDataSource::loadDataForExe` -Methode bei Bedarf transparent sowohl PDB-als auch dbg-Dateien öffnet, um Symbole zu verarbeiten.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47883395ec12cac60d3a21651432f5ac21cc64a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151750"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt eine Enumeration von Symbolen für Inlineframes, die für den Namen der Funktion Inline angegeben.  
+Gibt eine Enumeration von Symbolen für Inline Frames zurück, die dem angegebenen Inline Funktionsnamen entsprechen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,21 +35,21 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>Parameter  
  `name`  
- [in] Der Funktionsname des Inlinees, gesucht werden soll.  
+ in Der Name der inlinees-Funktion, die durchsucht werden soll.  
   
  `option`  
- [in] Die Name-Suchoptionen zum Suchen verwendet werden, wenn die Suche nach Inline frames entsprechen `name`. Weitere Informationen finden Sie unter [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md).  
+ in Die namens Suchoptionen, die beim Suchen nach Inline Frames verwendet werden sollen, die entsprechen `name` . Weitere Informationen finden Sie unter [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md).  
   
  `ppResult`  
- [out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.  
+ vorgenommen Ein Zeiger auf einen `IDiaEnumSymbols` Schnittstellen Zeiger, der mit dem Ergebnis initialisiert wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Funktion sucht nach Ihren Inlinees zuzuordnen sind, nur innerhalb von Accelerator-Stub-Funktionen. Native C++-Prozedur Datensätze werden ignoriert.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Funktion sucht inlinees zuzuordnen sind nur innerhalb von Accelerator-Stub-Funktionen. Systemeigene C++-Prozedur Datensätze werden ignoriert.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_frame | Microsoft-Dokumentation'
+title: 'IDiaSegment:: get_frame | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a19a303b2fd884fa11df7e13a24b5a450ff5fc09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151802"
 ---
-# <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
+# <a name="idiasegmentget_frame"></a>IDiaSegment::get_frame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Segmentnummer ab.  
+Ruft die Segment Nummer ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ HRESULT get_frame ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Anzahl von Segment.  
+ vorgenommen Gibt die Segment Nummer zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

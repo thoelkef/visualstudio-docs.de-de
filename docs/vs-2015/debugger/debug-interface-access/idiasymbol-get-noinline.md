@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_noinline | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_noInline | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6ee1e21b46e1906b4872e9598e75ac283b013ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698457"
 ---
-# <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
+# <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob die Funktion als nicht Inline markiert wurde (mithilfe der [Noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) Attribut).  
+Ruft ein Flag ab, das angibt, ob die Funktion als nicht Inline gekennzeichnet wurde (mit dem [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) -Attribut).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,21 +35,21 @@ HRESULT get_noInline(
   
 #### <a name="parameters"></a>Parameter  
  `pFlag`  
- [out] Gibt `TRUE` , wenn die Funktion verfügt über die `noinline` Attribut zurückgegeben; andernfalls `FALSE`.  
+ vorgenommen Gibt zurück, `TRUE` Wenn die Funktion über das- `noinline` Attribut verfügt; andernfalls wird zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
   
-|Anforderung|Beschreibung|  
+|Anforderung|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA-SDK 8.0|  
+|Version:|Dia SDK v 8.0|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)

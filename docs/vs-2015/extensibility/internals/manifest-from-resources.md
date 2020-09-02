@@ -7,10 +7,10 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4827402b63eadf517f031b04b7c7cf2fe8a4f56b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537097"
 ---
 # <a name="manifest-from-resources"></a>Manifest aus Ressourcen
@@ -31,7 +31,7 @@ Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von 
 |/Assembly|Der Name der verwalteten Assembly (ohne die Erweiterung) oder der Lauf Zeit Pfad der systemeigenen Assembly, die die Ressourcen hostet (relativ zum Lauf Zeit Speicherort des Manifests).|Erforderlich|  
 |/Manifest|Der Name, der der generierten imagemanifest-Datei übergeben werden soll. Dies kann auch einen absoluten oder relativen Pfad enthalten, um die Datei an einem anderen Speicherort zu erstellen. Der Standardname entspricht dem Assemblynamen.<br /><br /> Standard: \<Current Directory> \\<Assembly \> . imagemanifest|Optional|  
 |/guidName|Der Name, der dem GUID-Symbol für alle Bilder im generierten Manifest übergeben werden soll.<br /><br /> Standard: assetguid|Optional|  
-|/rootPath|Der Stammpfad, der entfernt werden muss, bevor verwaltete Ressourcen-URIs erstellt werden. (Dieses Flag ist in Fällen hilfreich, in denen das Tool den relativen URI-Pfad falsch abruft, sodass Ressourcen nicht geladen werden können.)<br /><br /> Standard: \<Current Directory>|Optional|  
+|/rootPath|Der Stammpfad, der entfernt werden muss, bevor verwaltete Ressourcen-URIs erstellt werden. (Dieses Flag ist in Fällen hilfreich, in denen das Tool den relativen URI-Pfad falsch abruft, sodass Ressourcen nicht geladen werden können.)<br /><br /> Standardwert: \<Current Directory>|Optional|  
 |/recursive|Das Festlegen dieses Flags weist das Tool an, alle Verzeichnisse im/Resources-Argument rekursiv zu durchsuchen. Wenn Sie dieses Flag weglassen, führt dies zu einer einzigen Suche der Verzeichnisse der obersten Ebene.|Optional|  
 |/isNative|Legen Sie dieses Flag fest, wenn das assemblyargument ein Pfad für eine systemeigene Assembly ist. Lassen Sie dieses Flag aus, wenn das assemblyargument der Name einer verwalteten Assembly ist. (Weitere Informationen zu diesem Flag finden Sie im Abschnitt "Hinweise".)|Optional|  
 |/newGuids|Das Festlegen dieses Flags weist das Tool an, einen neuen Wert für das GUID-Symbol der Bilder zu erstellen, anstatt den aus dem vorhandenen Manifest zu mergen.|Optional|  
@@ -48,7 +48,7 @@ Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von 
   
 - ManifestFromResources/resources:D:\Images\Image1.png;D: \images\image1.XAML/Assembly: My. Assembly. Name/guidName: myImages/newGuids/newIds  
   
-## <a name="notes"></a>Hinweise  
+## <a name="notes"></a>Notizen  
   
 - Das Tool unterstützt nur PNG-und XAML-Dateien. Alle anderen Bild-oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen, die beim Generieren der Ressourcen auftreten, wird eine Warnung generiert. Wenn keine unterstützten Images gefunden werden, nachdem das Tool die Ressourcenverarbeitung abgeschlossen hat, wird ein Fehler generiert.  
   

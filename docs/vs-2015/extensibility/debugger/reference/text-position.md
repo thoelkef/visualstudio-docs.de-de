@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 210435231f98c19c16715817e2403f95da3d1f43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204837"
 ---
-# <a name="textposition"></a>TEXT_POSITION
+# <a name="text_position"></a>TEXT_POSITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt den Zeilen- und Spaltennummer Speicherort im angegebenen Text.  
+Beschreibt den Zeilen-und Spalten Speicherort im angegebenen Text.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,16 +41,16 @@ public struct TEXT_POSITION { 
 ```  
   
 ## <a name="members"></a>Member  
- dwLine  
- Index der Zeile in der Quelldatei.  
+ dwline  
+ Der Index der Zeile in der Quelldatei.  
   
- dwColumn  
+ dwcolumn  
  Zeichen Offset in Zeile.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird verwendet, der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) und [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Strukturen.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird in den [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) -und [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Strukturen verwendet.  
   
- Diese Struktur wird durch einen Aufruf für die folgenden Methoden ausgefüllt:  
+ Diese Struktur wird durch einen-Rückruf der folgenden Methoden aufgefüllt:  
   
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)  
   
@@ -73,15 +73,15 @@ public struct TEXT_POSITION { 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
+ [Getstatuementrange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
  [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)   
  [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)   

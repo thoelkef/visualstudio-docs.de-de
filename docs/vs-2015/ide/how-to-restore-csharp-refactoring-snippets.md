@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670783"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Gewusst wie: Wiederherstellen von C#-Umgestaltungsausschnitten
@@ -56,5 +56,5 @@ C#-Refactoringvorgänge beruhen auf Codeausschnitten im folgenden Verzeichnis:
 
 6. Klicken Sie im Dialogfeld **Codeausschnittverzeichnis** auf **Öffnen** und anschließend im Codeausschnitt-Manager auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
- [C# ](../ide/visual-csharp-code-snippets.md) [Refactoring (C#)](../csharp-ide/refactoring-csharp.md) [Code Ausschnitte](../ide/code-snippets.md) für Visual Code Ausschnitte
+## <a name="see-also"></a>Weitere Informationen
+ Refactoring von [Visual c#-Code Ausschnitten](../ide/visual-csharp-code-snippets.md) [(c#)](../csharp-ide/refactoring-csharp.md) - [Code Ausschnitte](../ide/code-snippets.md)
