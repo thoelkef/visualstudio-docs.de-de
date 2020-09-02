@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::Enum | Microsoft-Dokumentation
+title: 'Idiapropertystorage:: Aufzählung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48b289ed1e376f224ec513e7a118691d75fc9b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538843"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft einen Enumerator für Eigenschaften in dieser Gruppe ab.  
+Ruft einen Enumerator für Eigenschaften in diesem Satz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ HRESULT Enum ( 
   
 #### <a name="parameters"></a>Parameter  
  `ppenum`  
- [out] Gibt eine `IEnumSTATPROPSTG` -Objekt (im Namespace Microsoft.VisualStudio.OLE.Interop), die eine Enumeration von Eigenschaften darstellt.  
+ vorgenommen Gibt ein `IEnumSTATPROPSTG` Objekt (im Microsoft. VisualStudio. OLE. Interop-Namespace) zurück, das eine Enumeration von Eigenschaften darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

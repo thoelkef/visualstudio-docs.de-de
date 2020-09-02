@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05e1f2360b3257e44fde1af8be3554dd7fd95115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537178"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -30,18 +30,18 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Keiner  
+ Keine  
   
 ## <a name="valid-options"></a>Gültige Optionen  
  Um die Profilerstellung in einer anderen Sitzung zu aktivieren, muss die Option **CrossSession** mit der Option **Start** angegeben werden. **CrossSession** muss außerdem in allen nachfolgenden **VSPerfCmd Attach**- und **Detach**-Befehlen angegeben werden.  
   
- **Start:** `Method`  
- Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
+ **Start:**`Method`  
+ : Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
   
  **Attach:** _PID_[**,**_PID_]  
  Startet die Profilerstellung für die angegebenen Prozesse  
   
- **Detach**[**:**_PID_[,_PID_]]  
+ **Detach**[ **:** _PID_[,_PID_]]  
  Beendet die Profilerstellung für die angegebenen Prozesse  
   
 ## <a name="example"></a>Beispiel  
@@ -52,8 +52,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

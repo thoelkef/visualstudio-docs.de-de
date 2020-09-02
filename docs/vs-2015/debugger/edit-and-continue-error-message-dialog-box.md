@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren Fehlermeldungsdialogfeld | Microsoft-Dokumentation
+title: Dialog Feld "Fehlermeldung bearbeiten und Fortfahren" | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,32 +20,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428278"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Fehlermeldungs-Dialogfeld für "Bearbeiten und Fortfahren"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieses Dialogfeld wird angezeigt, wenn Sie in einer Programmiersprache Debuggen, das Bearbeiten und fortfahren, unterstützt aber **bearbeiten und Fortfahren** ist für den Typ des von Ihnen vorgenommenen codeänderungen nicht verfügbar. Die Fehlermeldung in dem Feld enthält eine ausführlichere Erklärung. Folgende Gründe zum Anzeigen dieses Dialogfelds sind möglich:  
+Dieses Dialogfeld wird angezeigt, wenn Sie in einer Sprache Debuggen, die bearbeiten und Fortfahren unterstützt, aber **Bearbeiten und Fortfahren** ist für den Typ der von Ihnen vorgenommenen Codeänderungen nicht verfügbar. Die Fehlermeldung in dem Feld enthält eine ausführlichere Erklärung. Folgende Gründe zum Anzeigen dieses Dialogfelds sind möglich:  
   
 - Sie haben versucht, verwalteten Code zu bearbeiten, während nicht verwaltetes Debuggen aktiviert war. "Bearbeiten und Fortfahren" funktioniert nicht bei Debuggen im gemischten Modus.  
   
 - Sie haben versucht, SQL Server-Code zu bearbeiten.  
   
-- Sie haben versucht, Code während des Debuggens eines Dr zu bearbeiten. Watson-Sicherungskopie.  
+- Sie haben versucht, beim Debuggen eines Dr. Watson-dumpcodes Code zu bearbeiten.  
   
-- Sie haben versucht, das Bearbeiten von Code nach dem eine nicht behandelte Ausnahme aufgetreten ist und die Option "**Aufrufliste für Ausnahmefehler entladen**" wurde nicht ausgewählt.  
+- Sie haben versucht, Code zu bearbeiten, nachdem eine nicht behandelte Ausnahme aufgetreten ist, und die Option "**die aufrufsstapel bei nicht behandelten Ausnahmen**entladen" wurde nicht ausgewählt.  
   
 - Sie haben versucht, Code zu bearbeiten, während Sie für eine eingebettete Laufzeitanwendung ein Debuggen durchgeführt haben.  
   
-- Sie haben versucht, Code in einem Programm, das Sie angefügt und nicht über die **Debuggen** Menü.  
+- Sie haben versucht, Code in einem Programm zu bearbeiten, das Sie angefügt haben, statt im Menü **Debuggen** zu beginnen.  
   
 - Sie haben versucht, optimierten Code zu bearbeiten.  
   
-- Sie haben versucht, verwalteten Code zu bearbeiten, obwohl das Ziel eine 64-Bit-Anwendung ist. Wenn Sie Bearbeiten und Fortfahren verwenden möchten, müssen Sie das Ziel auf x86 festlegen. (*Projekt* **Eigenschaften**, **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.).  
+- Sie haben versucht, verwalteten Code zu bearbeiten, obwohl das Ziel eine 64-Bit-Anwendung ist. Wenn Sie Bearbeiten und Fortfahren verwenden möchten, müssen Sie das Ziel auf x86 festlegen. (*Projekt* **Eigenschaften**, Registerkarte **Kompilieren** , **Erweiterte Compilereinstellung** .).  
   
 - Sie haben versucht, Code in einer Assembly zu bearbeiten, die während des Debuggens geändert und erneut geladen wurde.  
   
@@ -59,5 +59,5 @@ Dieses Dialogfeld wird angezeigt, wenn Sie in einer Programmiersprache Debuggen,
  **OK**  
  Schließen Sie das Dialogfeld, und brechen Sie den unmittelbar vorausgegangenen Bearbeitungsversuch ab.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)

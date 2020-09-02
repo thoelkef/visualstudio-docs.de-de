@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetSize | Microsoft-Dokumentation
+title: 'IDebugReference2:: GetSize | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9dc6014a0e01f4957f797267f444c84263dd0794
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423425"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Größe in Bytes, der den Wert des Verweises an. Für zukünftige Verwendung reserviert.  
+Ruft die Größe des Werts des Verweises in Bytes ab. Für zukünftige Verwendung reserviert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int GetSize ( 
   
 #### <a name="parameters"></a>Parameter  
  `pdwSize`  
- [out] Gibt die Größe in Bytes, der den Wert des Verweises zurück.  
+ vorgenommen Gibt die Größe des Verweises in Byte zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt immer `E_NOTIMPL` zurück.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

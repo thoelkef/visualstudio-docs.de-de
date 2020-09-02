@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierLocale2::SetLocale | Microsoft-Dokumentation
+title: 'IDebugPortSupplierLocale2:: setlocale | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a61ce04c21c123268125c10a0a1110cb1cbbb5c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537926"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Legt das Gebietsschema für den Anschlusslieferanten fest.  
+Legt das Gebiets Schema für den Port Lieferanten fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ int SetLocale(
   
 #### <a name="parameters"></a>Parameter  
  `wLangID`  
- Der Bezeichner für das Gebietsschema festlegen.  
+ Der Bezeichner für das festzulegende Gebiets Schema.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugPortSupplierLocale2](../../../extensibility/debugger/reference/idebugportsupplierlocale2.md)

@@ -1,5 +1,5 @@
 ---
-title: ContingentProperties-Klasse – interne Member | Microsoft-Dokumentation
+title: 'Contingentproperties-Klasse: interne Member | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414645"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties-Klasse – interne Member
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Enthält zusätzliche Eigenschaften für eine <xref:System.Threading.Tasks.Task> Objekt.  
+Enthält zusätzliche Eigenschaften für ein- <xref:System.Threading.Tasks.Task> Objekt.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diese internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf diese internen Member vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,10 +42,10 @@ Enthält zusätzliche Eigenschaften für eine <xref:System.Threading.Tasks.Task>
   
 |Name|Beschreibung|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|Die Liste der untergeordneten Aufgaben, die mit dieser Aufgabe registriert sind.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|Die Liste der untergeordneten Aufgaben, die bei dieser Aufgabe registriert sind.|  
   
-## <a name="remarks"></a>Hinweise  
- .NET Framework initialisiert die Felder dieser Klasse nur, wenn sie benötigt werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Der .NET Framework initialisiert die Felder dieser Klasse nur dann, wenn Sie benötigt werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Interne Elemente der parallelen Erweiterung für das .NET-Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

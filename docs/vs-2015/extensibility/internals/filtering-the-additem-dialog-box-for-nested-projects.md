@@ -1,5 +1,5 @@
 ---
-title: Filtern des AddItem-Dialogfelds für geschachtelte Projekte | Microsoft-Dokumentation
+title: Filtern des AddItem-Dialog Felds für in der Liste von Projekten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,27 +12,27 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7bb98eac2bc481aa5e3652144dfbcadf70430d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538095"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Filtern des AddItem-Dialogfelds für geschachtelte Projekte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Beim Anzeigen einer **AddItem** eines geschachtelten Projekts, das übergeordnete Projekt im Dialogfeld kann steuern, welche Elemente im Dialogfeld angezeigt werden.  
+Wenn Sie ein **AddItem** -Dialogfeld für ein untergeordnetes Projekt anzeigen, kann das übergeordnete Projekt steuern, welche Elemente im Dialogfeld angezeigt werden.  
   
- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Schnittstelle können Sie die Knoten zu filtern, die in einer **AddItem** Dialogfeld. Wenn das untergeordnete Projekt angezeigt wird, die **AddItem** kann implementieren, klicken Sie im Dialogfeld das übergeordnete Element der `IVsFilterAddProjectItemDlg` -Schnittstelle und Filtern von Elementen, die andernfalls in des untergeordneten Standortes Projekt angezeigt werden.  
+ Mithilfe der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Schnittstelle können Sie die Knoten filtern, die sich in einem **AddItem** -Dialogfeld befinden. Wenn das untergeordnete Projekt das **AddItem** -Dialogfeld anzeigt, kann das übergeordnete Projekt die `IVsFilterAddProjectItemDlg` -Schnittstelle implementieren und Elemente filtern, die andernfalls im Projekt des Kindes angezeigt werden.  
   
- Wenn Sie Projekte nach ihrer Funktion unter bestimmten übergeordneten Projekte gruppiert sind, können Sie implementieren `IVsFilterAddProjectItemDlg` Wenn der Benutzer auswählt **Projektelemente hinzufügen** im Kontextmenü in einem geschachtelten Projekt. Implementieren von `IvsFilterAddProjectItemDlg displays` nur Projekt Elemente oder speziell für diese Gruppe von Dateien. Projektelemente für andere Gruppen werden aus dem Dialogfeld gefiltert, auch wenn sie im gleichen Verzeichnis gespeichert werden.  
+ Wenn Projekte unter bestimmten übergeordneten Projekten nach Funktion gruppiert werden, können Sie implementieren, `IVsFilterAddProjectItemDlg` Wenn der Benutzer im Kontextmenü eines untergeordneten Projekts die Option **Projekt Element hinzufügen** auswählt. `IvsFilterAddProjectItemDlg displays`Nur für diese Gruppe spezifische Projekt Elemente oder Dateien werden implementiert. Projekt Elemente für andere Gruppen werden aus dem Dialogfeld herausgefiltert, auch wenn Sie im selben Verzeichnis gespeichert werden.  
   
- Wenn ein Benutzer öffnet die **AddItem** im Dialogfeld für das untergeordnete Element des übergeordneten Projekts Implementierung der `IVsFilterAddProjectItemDlg` Schnittstelle aufgerufen wird.  
+ Wenn ein Benutzer das **AddItem** -Dialogfeld für das untergeordnete Element öffnet, wird die Implementierung der-Schnittstelle des übergeordneten Projekts `IVsFilterAddProjectItemDlg` aufgerufen.  
   
- Die `IVsFilterAddProjectItemDlg` Schnittstelle können Sie auch implementieren nach Kategorie filtern. Weitere Informationen finden Sie unter [Elemente hinzufügen, um das Hinzufügen neuer Dialogfelder](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) und [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).  
+ Die `IVsFilterAddProjectItemDlg` Schnittstelle kann auch das Filtern nach Kategorie implementieren. Weitere Informationen finden Sie unter [Hinzufügen von Elementen zu den Dialog Feldern Neues Element hinzufügen](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) und [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [Hinzufügen von Elementen, das Hinzufügen neuer Elemente in Dialogfeldern](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Hinzufügen von Elementen zu den Dialog Feldern "Neues Element hinzufügen"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Schachteln von Projekten](../../extensibility/internals/nesting-projects.md)

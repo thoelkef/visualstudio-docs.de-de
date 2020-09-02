@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 708bb96beab51fa69910deef40dc468a1fd21058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421407"
 ---
 # <a name="common-data-views"></a>Allgemeine Datenansichten
@@ -25,7 +25,7 @@ ms.locfileid: "62421407"
 Dieser Abschnitt enthält Referenzinformationen über die Ansichten und Berichte von Profiler-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Zusammenfassungsansicht](../profiling/summary-view.md)  
+ [Zusammenfassungs Ansicht](../profiling/summary-view.md)  
  Beschreibt die Zusammenfassungsansicht und den Zusammenfassungsbericht. Die Datenspalten hängen von der Profilerstellungsmethode ab.  
   
  [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md)  
@@ -49,15 +49,15 @@ Dieser Abschnitt enthält Referenzinformationen über die Ansichten und Berichte
  [Prozessansicht](../profiling/process-view.md)  
  Führt Start- und Endzeiten von Prozessen und Threads auf.  
   
- [Marks View (Markierungsansicht)](../profiling/marks-view.md)  
+ [Markierungsansicht](../profiling/marks-view.md)  
  Führt in eine Profilerstellungs-Datendatei eingefügte ETW- und Samplingereignisse auf.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
+ [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Samplingmethode generiert wurden.  
   
- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)  
+ [Instrumentierungs Methoden-Datenansichten](../profiling/instrumentation-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Instrumentierungsmethode generiert wurden.  
   
- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  
+ [.NET-Arbeitsspeicher Datenansichten](../profiling/dotnet-memory-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Sammlung von .NET-Arbeitsspeicherdaten generiert wurden.

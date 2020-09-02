@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e5a930e81ff1105ba93ce3c3cff10ee8bff2f7e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538433"
 ---
-# <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
+# <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt die Informationen für ein Stack-Frame-Objekt abgerufen.  
+Gibt die Informationen an, die über ein Stapel Rahmen Objekt abgerufen werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -101,112 +101,112 @@ public enum enum_FRAMEINFO_FLAGS {
   
 ## <a name="members"></a>Member  
  FIF_FUNCNAME  
- Initialisieren und Verwenden der `m_bstrFuncName` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_bstrFuncName` .  
   
  FIF_RETURNTYPE  
- Initialisieren und Verwenden der `m_bstrReturnType` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_bstrReturnType` .  
   
  FIF_ARGS  
- Initialisieren und Verwenden der `m_bstrArgs` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_bstrArgs` .  
   
  FIF_LANGUAGE  
- Initialisieren und Verwenden der `m_bstrLanguage` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_bstrLanguage` .  
   
  FIF_MODULE  
- Initialisieren und Verwenden der `m_bstrModule` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_bstrModule` .  
   
  FIF_STACKRANGE  
- Initialisieren und Verwenden der `m_addrMin` und `m_addrMax` (Stapel-Bereich) Felder.  
+ Initialisieren/verwenden Sie `m_addrMin` die `m_addrMax` Felder und (Stapelbereich).  
   
  FIF_FRAME  
- Initialisieren und Verwenden der `m_pFrame` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_pFrame` .  
   
  FIF_DEBUGINFO  
- Initialisieren und Verwenden der `m_fHasDebugInfo` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_fHasDebugInfo` .  
   
  FIF_STALECODE  
- Initialisieren und Verwenden der `m_fStaleCode` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_fStaleCode` .  
   
  FIF_ANNOTATEDFRAME  
- Initialisieren und Verwenden der `m_fAnnotatedFrame` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_fAnnotatedFrame` .  
   
  FIF_DEBUG_MODULEP  
- Initialisieren und Verwenden der `m_pModule` Feld.  
+ Initialisieren Sie das Feld, und verwenden Sie es `m_pModule` .  
   
  FIF_FUNCNAME_FORMAT  
- Formatiert den Namen der Funktion. Das Ergebnis wird zurückgegeben, der `m_bstrFunName` Feld und keine anderen Felder ausgefüllt wurden.  
+ Formatiert den Funktionsnamen. Das Ergebnis wird im Feld zurückgegeben `m_bstrFunName` , und es werden keine anderen Felder ausgefüllt.  
   
  FIF_FUNCNAME_RETURNTYPE  
- Fügt den Rückgabetyp zu den `m_bstrFuncName` Feld.  
+ Fügt dem Feld den Rückgabetyp hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_ARGS  
- Fügt die Argumente für die `m_bstrFuncName` Feld.  
+ Fügt dem Feld die Argumente hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_LANGUAGE  
- Die Sprache, fügt die `m_bstrFuncName` Feld.  
+ Fügt dem Feld die Sprache hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_MODULE  
- Fügt den Modulnamen, um die `m_bstrFuncName` Feld.  
+ Fügt dem Feld den Modulnamen hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_LINES  
- Fügt die Anzahl von Zeilen, die die `m_bstrFuncName` Feld.  
+ Fügt dem Feld die Anzahl von Zeilen hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_OFFSET  
- Hinzugefügt, die `m_bstrFuncName` Feld den Offset in Bytes vom Anfang der Zeile, wenn `FIF_FUNCNAME_LINES` angegeben ist. Wenn `FIF_FUNCNAME_LINES` nicht angegeben ist, oder wenn Zeilennummern nicht verfügbar sind, fügt den Offset in Bytes vom Beginn der Funktion.  
+ Fügt dem- `m_bstrFuncName` Feld den Offset in Bytes vom Anfang der Zeile hinzu, wenn `FIF_FUNCNAME_LINES` angegeben wird. Wenn `FIF_FUNCNAME_LINES` nicht angegeben wird oder wenn Zeilennummern nicht verfügbar sind, wird der Offset in Bytes vom Anfang der Funktion hinzugefügt.  
   
  FIF_FUNCNAME_ARGS_TYPES  
- Fügt den Typ jedes Arguments der Funktion, die `m_bstrFuncName` Feld.  
+ Fügt dem Feld den Typ der einzelnen Funktionsargumente hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_ARGS_NAMES  
- Fügt den Namen der einzelnen Argumente der Funktion, die `m_bstrFuncName` Feld.  
+ Fügt dem Feld den Namen der einzelnen Funktionsargumente hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_ARGS_VALUES  
- Fügt den Wert der einzelnen Argumente der Funktion, die `m_bstrFuncName` Feld.  
+ Fügt dem Feld den Wert der einzelnen Funktionsargumente hinzu `m_bstrFuncName` .  
   
  FIF_FUNCNAME_ARGS_ALL  
- Fügt dem Typ, Name und Wert von allen Argumenten, die die `m_bstrFuncName` Feld.  
+ Fügt dem Feld den Typ, den Namen und den Wert aller Argumente hinzu `m_bstrFuncName` .  
   
  FIF_ARGS_TYPES  
- Die Argumenttypen abgerufen und formatiert.  
+ Die Argument Typen werden abgerufen und formatiert.  
   
  FIF_ARGS_NAMES  
- Die Argumentnamen abgerufen und formatiert.  
+ Die Argument Namen werden abgerufen und formatiert.  
   
  FIF_ARGS_VALUES  
- Die Argumentwerte abgerufen und formatiert.  
+ Die Argument Werte werden abgerufen und formatiert.  
   
  FIF_ARGS_ALL  
- Abzurufen Sie, und formatieren Sie den Typ, Name und Wert für alle Argumente.  
+ Rufen Sie den Typ, den Namen und den Wert aller Argumente ab, und formatieren Sie ihn.  
   
  FIF_ARGS_NOFORMAT  
- Gibt an, dass die Argumente sind nicht formatiert (z. B. nicht hinzufügen, öffnende und schließende Klammern um Argumentliste keine Trennzeichen zwischen Argumenten hinzufügen).  
+ Gibt an, dass die Argumente nicht formatiert werden (z. b. Fügen Sie keine öffnenden und schließenden Klammern um die Argumentliste hinzu, und fügen Sie kein Trennzeichen zwischen Argumenten hinzu).  
   
  FIF_ARGS_NO_FUNC_EVAL  
- Gibt an, dass es sich bei funktionsauswertung (Eigenschaft) beim Abrufen der Werte für das Argument nicht verwendet werden soll.  
+ Gibt an, dass die Funktions Auswertung (Eigenschaft) beim Abrufen von Argument Werten nicht verwendet werden soll.  
   
  FIF_FILTER_NON_USER_CODE  
- Die Debug-Engine wird nicht benutzerseitiger Codeframes zu filtern, damit sie nicht eingeschlossen werden.  
+ Die Debug-Engine dient zum Filtern von Nichtbenutzer Code Frames, damit Sie nicht eingeschlossen werden.  
   
  FIF_ARGS_NO_TOSTRING  
- Erlauben Sie keine `ToString()` Funktion Auswertung oder formatieren, wenn Argumente der Funktion zurückgegeben.  
+ `ToString()`Beim Zurückgeben von Funktions Argumenten dürfen keine Funktions Auswertung oder-Formatierung zulässig sein.  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- Frame-Informationen sollten aus der gehosteten Anwendungsdomäne statt des hosting-Prozesses abgerufen werden.  
+ Frame Informationen sollten von der gehosteten App-Domäne und nicht vom Hostingprozess abgerufen werden.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Flags werden an übergeben die [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) und [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) Methoden, um anzugeben, welche Felder sind, initialisiert werden, in der [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Flags werden an die [enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) -Methode und die [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) -Methode übermittelt, um anzugeben, welche Felder in der [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Struktur oder-Strukturen initialisiert werden sollen.  
   
- Diese Flags werden auch verwendet, welche Felder der an die [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) -Struktur sind gültig und verwendet, wenn die Struktur zurückgegeben wird. Diese Werte können kombiniert werden, mit einer bitweisen `OR`.  
+ Diese Flags werden auch verwendet, um anzugeben, welche Felder der [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Struktur verwendet und gültig sind, wenn die Struktur zurückgegeben wird. Diese Werte können mit einem bitweisen kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
+ [FrameInfo](../../../extensibility/debugger/reference/frameinfo.md)   
+ [Enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

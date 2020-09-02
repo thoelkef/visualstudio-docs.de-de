@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft-Dokumentation
+title: IDebugProcessEx2::D Etach | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b79f1f80f9b6849c37fc9b6c4c8669f1397f0227
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538147"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode informiert dem Prozess, dass eine Sitzung nicht mehr Debuggen des Prozesses ist.  
+Diese Methode informiert den Prozess darüber, dass eine Sitzung den Prozess nicht mehr debuggt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int Detach(
   
 #### <a name="parameters"></a>Parameter  
  `pSession`  
- [in] Ein Wert, der die Sitzung, um diesen Prozess für trennen eindeutig identifiziert.  
+ in Ein Wert, der die Sitzung eindeutig identifiziert, von der dieser Prozess getrennt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die Schnittstelle übergebenen `pSession` ist nur als Cookie behandelt werden soll, wird ein Wert, der Identifizierung der sitzungsbasierter Debug-Manager, die ursprünglich für diesen Prozess angefügt; keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
+## <a name="remarks"></a>Bemerkungen  
+ Die übergebene Schnittstelle `pSession` muss nur als Cookie behandelt werden. dabei handelt es sich um einen Wert, der den Sitzungs-Debug-Manager eindeutig identifiziert, der ursprünglich an diesen Prozess angefügt wurde. keine der Methoden der angegebenen Schnittstelle ist funktionsfähig.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

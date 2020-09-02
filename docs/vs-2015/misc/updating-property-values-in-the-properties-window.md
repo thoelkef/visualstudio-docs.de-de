@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster | Microsoft-Dokumentation
+title: Aktualisieren von Eigenschafts Werten im Eigenschaften Fenster | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,10 +11,10 @@ ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
 manager: jillfra
 ms.openlocfilehash: 18ecf0a21c5b2d73bdf8e439d25765b6b275cbd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434188"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>Aktualisieren von Eigenschaftswerten im Eigenschaftenfenster
@@ -26,7 +26,7 @@ Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderu
   
 1. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (über den <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>-Dienst) jedes Mal auf, wenn VSPackages, Projekte oder Editoren Tool- oder Dokumentfenster erstellen oder durchlaufen müssen.  
   
-2. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zu der **Eigenschaften** Fensters mit eigenschaftsänderungen für ein Projekt (oder ein anderes Objekt durchsucht werden, indem die **Eigenschaften** Fenster) ohne die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> und das Auslösen von <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> Ereignisse.  
+2. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> Sie, um das **Eigenschaften** Fenster mit Eigenschafts Änderungen für ein Projekt (oder ein beliebiges anderes ausgewähltes Objekt, das im **Eigenschaften** Fenster durchsucht wird) synchron zu halten, ohne Ereignisse zu implementieren <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> und auszulösen <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> .  
   
 3. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>-Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>, um Clientbenachrichtigung zu Hierarchieereignissen einzurichten bzw. zu deaktivieren, ohne dass für die Hierarchie <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> implementiert werden muss.  
   
@@ -43,8 +43,8 @@ Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderu
   
 4. Ein Client kann die `IConnection`-Schnittstelle aufrufen, um Zugriff auf ein Enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle zu erhalten. Die <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle kann dann aufgerufen werden, um Verbindungspunkte für jede Ausgangsschnittstellen-ID (IID) zu durchlaufen.  
   
-5. `IConnection` kann auch aufgerufen werden, um mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle Zugriff auf Verbindungspunktunterobjekte für jede ausgehende IID zu erhalten. Über die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle, startet oder beendet ein Client eine Empfehlungsschleife mit dem verbindungsfähigen Objekt und der Synchronisierung des Clients. Der Client kann auch die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle aufrufen, um ein Enumeratorobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections>-Schnittstelle abzurufen, damit er die ihm bekannten Verbindungen durchlaufen kann.  
+5. `IConnection` kann auch aufgerufen werden, um mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle Zugriff auf Verbindungspunktunterobjekte für jede ausgehende IID zu erhalten. Über die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> -Schnittstelle startet oder beendet ein Client eine Beratungs Schleife mit dem Verbindungs fähigen-Objekt und der eigenen Synchronisierung des Clients. Der Client kann auch die- <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle zum Abrufen eines Enumeratorobjekts mit der- <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> Schnittstelle zum Auflisten der bekannten Verbindungen aufzählen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Ankündigen der Auswahlnachverfolgung im Eigenschaftenfenster](../misc/announcing-property-window-selection-tracking.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ankündigen der Auswahl Nachverfolgung des Eigenschaften Fensters](../misc/announcing-property-window-selection-tracking.md)   
  [Erweitern von Eigenschaften](../extensibility/internals/extending-properties.md)

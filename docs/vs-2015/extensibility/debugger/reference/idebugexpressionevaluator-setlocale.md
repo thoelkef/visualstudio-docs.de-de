@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft-Dokumentation
+title: 'Idebugexpressionevaluator:: setlocale | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 730a105b12016ea031bdb4753da009223a5d39f5
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540523"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode legt die Sprache, die zum Erstellen von druckbaren Ergebnisse.  
+Diese Methode legt die Sprache fest, die zum Erstellen von druckbaren Ergebnissen verwendet werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int SetLocale(
   
 #### <a name="parameters"></a>Parameter  
  `wLangID`  
- [in] Die Sprachen-ID ein.  
+ in Der Sprachen Bezeichner.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode kann mehrmals aufgerufen werden, während die ausdrucksauswertung (EE) geladen wird, damit die EE Wechseln der Sprache im laufenden Betrieb kann muss. Die EE mithilfe dieses Gebietsschema Fehlermeldungen und Zeichenfolgen in der entsprechenden Sprache zurück.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode wird möglicherweise mehrmals aufgerufen, während die Ausdrucks Auswertung (EE) geladen wird, sodass der EE in der Lage sein muss, die Sprachen im Handumdrehen zu wechseln. Der EE verwendet dieses Gebiets Schema, um Fehlermeldungen und Zeichen folgen in der entsprechenden Sprache zurückzugeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

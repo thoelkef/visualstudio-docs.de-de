@@ -12,17 +12,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6e034bdf1ecefc996aa238cbcd97616d083363b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538786"
 ---
 # <a name="how-to-display-spy-views"></a>Vorgehensweise: Anzeigen von Spy++-Ansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Spy++ gestartet wird, öffnet es im [Windows-Ansicht](../debugger/windows-view.md), eine Strukturansicht aller Windows und Steuerelemente, die auf Ihrem Computer verfügbar. Diese stammfenster Indexe ist "Windows-1." Es gibt auch drei weitere Spy++-Ansichten verfügbar: [Meldungsansicht](../debugger/messages-view.md), [Prozessansicht](../debugger/processes-view.md), und [Threadansicht](../debugger/threads-view.md). Sie können anzeigen, die gewünschte Ansicht aus der **Spy** Menü. Weitere Informationen finden Sie unter [Spy++-Ansichten](../debugger/spy-increment-views.md).  
+Spy++ wird beim Starten in der [Fensteransicht](../debugger/windows-view.md) geöffnet. Dies ist eine Strukturansicht aller Fenster und Steuerelemente, die auf Ihrem Computer verfügbar sind. Der Titel dieses Stammfensters lautet „Fenster1“. Es stehen drei weitere Spy++-Ansichten zur Verfügung: [Meldungsansicht](../debugger/messages-view.md), [Prozessansicht](../debugger/processes-view.md) und [Threadansicht](../debugger/threads-view.md). Sie können die gewünschte Ansicht über das Menü **Spy** anzeigen. Weitere Informationen finden Sie unter [Spy++-Ansichten](../debugger/spy-increment-views.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden von Spy++](../debugger/using-spy-increment.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Verwenden von Spy + +](../debugger/using-spy-increment.md)   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)

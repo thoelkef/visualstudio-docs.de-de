@@ -1,5 +1,5 @@
 ---
-title: SetNotificationForWaitCompletion-Methode | Microsoft-Dokumentation
+title: Setnotificationforwaitcompletion-Methode | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 874e31c331f16e760e030f337dda715473b77af8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423399"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion-Methode
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legt fest oder löscht das TASK_STATE_WAIT_COMPLETION_NOTIFICATION Zustand Bit.  
+Legt das TASK_STATE_WAIT_COMPLETION_NOTIFICATION Zustands Bit fest oder löscht dieses.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,14 +35,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 #### <a name="parameters"></a>Parameter  
  `enabled`  
   
- `true` Das Bit festgelegt `false` um die Festlegung der Bit.  
+ `true` So legen Sie das Bit fest `false` , wenn das Bit nicht festgelegt werden soll.  
   
 ## <a name="exceptions"></a>Ausnahmen  
   
-## <a name="remarks"></a>Hinweise  
- Der Debugger wird dieses Bit zur schrittweisen aus Text eine Async-Methode. Wenn `enabled` ist `true`, diese Methode muss aufgerufen werden, nur für eine Aufgabe, die noch nicht abgeschlossen wurde. Wenn `enabled` ist `false`, diese Methode kann für abgeschlossene Aufgaben aufgerufen werden. In jedem Fall sollten sie nur für Vorgänge des Promise-Stil verwendet werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Der Debugger legt dieses Bit fest, um den asynchronen Methoden Text auszulagern. Wenn `enabled` ist `true` , muss diese Methode nur für eine Aufgabe aufgerufen werden, die noch nicht abgeschlossen wurde. Wenn `enabled` `false` den Wert hat, kann diese Methode für abgeschlossene Aufgaben aufgerufen werden. In beiden Ereignissen sollte Sie nur für Aufgaben im Promise-Stil verwendet werden.  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufgabenklasse](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

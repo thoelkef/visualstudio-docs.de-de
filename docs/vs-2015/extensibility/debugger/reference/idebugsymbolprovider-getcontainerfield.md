@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField | Microsoft-Dokumentation
+title: 'Idebugsymbolprovider:: getcontainerfield | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85c25d0d601ef3264a1fbd22f9cdbc2e40f31402
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546875"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft das Feld, das die debugadresse enthält.  
+Diese Methode ruft das Feld ab, das die debugadresse enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,15 +42,15 @@ int GetContainerField(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Die Adresse, dargestellt durch ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
+ in Die Adresse, wie von einer [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle dargestellt.  
   
  `ppContainerField`  
- [out] Gibt ein Container-Feld, das dargestellt durch ein [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle.  
+ vorgenommen Gibt ein Container Feld zurück, das durch eine [idebugcontainerfield](../../../extensibility/debugger/reference/idebugcontainerfield.md) -Schnittstelle dargestellt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+ [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

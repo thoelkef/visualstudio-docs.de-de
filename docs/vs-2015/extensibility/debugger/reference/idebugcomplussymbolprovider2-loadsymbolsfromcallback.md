@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft-Dokumentation
+title: 'IDebugComPlusSymbolProvider2:: loadsymbolsfromcallback | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 108d50788992eb8316811bb5d9c7d327c3d62eda
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540574"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Lädt Debugsymbole, die mit der angegebenen Rückrufmethode.  
+Lädt Debugsymbole mit der angegebenen Rückruf Methode.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,31 +51,31 @@ int LoadSymbolsFromCallback(
   
 #### <a name="parameters"></a>Parameter  
  `ulAppDomainID`  
- [in] Der Bezeichner der Anwendungsdomäne.  
+ in Der Bezeichner der Anwendungsdomäne.  
   
  `guidModule`  
- [in] Eindeutiger Bezeichner des Moduls.  
+ in Eindeutiger Bezeichner des Moduls.  
   
  `pUnkMetadataImport`  
- [in] Objekt, das die Symbol-Metadaten enthält.  
+ in Ein-Objekt, das die Symbol Metadaten enthält.  
   
  `pUnkCorDebugModule`  
- [in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ in Objekt, das die [ICorDebug Module-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)implementiert.  
   
  `bstrModuleName`  
- [in] Der Name des Moduls.  
+ in Der Name des Moduls.  
   
  `bstrSymSearchPath`  
- [in] Suchpfad für die Symboldatei.  
+ in Der Pfad für die Suche nach der Symbol Datei.  
   
  `pCallback`  
- [in] Ein Objekt, das die Rückrufmethode darstellt.  
+ in Objekt, das die Rückruf Methode darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
@@ -168,5 +168,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

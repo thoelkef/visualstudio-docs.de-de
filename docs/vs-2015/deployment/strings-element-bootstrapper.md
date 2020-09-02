@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zeichenfolgen&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
+title: '&lt;Strings- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421524"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Zeichenfolgen&gt; -Element (Bootstrapper)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings- &gt; Element (Boots Trapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Fehlermeldungen für die Installation.  
+Definiert lokalisierte Zeichen folgen für Produktnamen, Paketnamen und Installations Fehlermeldungen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,19 +43,19 @@ Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Fehle
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Strings` Element ist ein untergeordnetes Element des der `Package` Element. Es besitzt keine Attribute.  
+ Das- `Strings` Element ist ein untergeordnetes `Package` Element des-Elements. Sie besitzt keine Attribute.  
   
 ## <a name="string"></a>Zeichenfolge  
- Die `String` Element ist ein untergeordnetes Element des der `Strings` Element. Ein `Strings` Element möglicherweise eine oder mehrere `String` Elemente.  
+ Das- `String` Element ist ein untergeordnetes `Strings` Element des-Elements. Ein- `Strings` Element kann ein oder mehrere- `String` Elemente aufweisen.  
   
- `String` weist das folgende Attribut an.  
+ `String` weist das folgende Attribut auf.  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
 |`Name`|Erforderlich. Der Name der Zeichenfolge.|  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel gibt alle von der englischsprachigen Zeichenfolgen für die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Installer.  
+ Im folgenden Codebeispiel werden alle englischen Zeichen folgen für das Installationsprogramm angegeben [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <Strings>  
@@ -76,5 +76,5 @@ Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Fehle
 </Strings>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [\<Package>-Element](../deployment/package-element-bootstrapper.md)

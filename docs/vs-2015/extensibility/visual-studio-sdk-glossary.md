@@ -11,178 +11,178 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c189c4c9e06d224d7cef296a2c39e732cbc29f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538706"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossar für das Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Glossar enthält Definitionen für Begriffe, die in dienen der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Dokumentation.  
+Dieses Glossar enthält Definitionen für Begriffe, die in der- [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Dokumentation verwendet werden.  
   
 ## <a name="terms"></a>Begriffe  
  Add-In  
- Ein Hilfsprogramm-Anwendung, Treiber oder andere Software zu einem primären Anwendung hinzugefügt wurden. In der Visual Studio integrierte Entwicklungsumgebung (IDE) ist ein Add-in eine Automation-basierte Anwendung, die die Funktionen der IDE erweitert.  
+ Eine hilfsprogrammanwendung, ein Treiber oder eine andere Software, die zu einer primären Anwendung hinzugefügt wurde. In der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) von Visual Studio ist ein Add-in eine Automatisierungs basierte Anwendung, die die Funktionen der IDE erweitert.  
   
  Automatisierungsmodell  
- Das Automatisierungsmodell, die in früheren Versionen von Visual Studio als Erweiterbarkeitsmodell bekannt ist eine Programmierschnittstelle, die Ihnen ermöglicht, Zugriff auf die zugrunde liegenden Routinen der IDE. -Add-ins, Assistenten und Makros verwenden die Objekte im Automatisierungsmodell steuern oder erweitern die Funktionalität der IDE.  
+ Das Automatisierungs Modell, das in früheren Versionen von Visual Studio als Erweiterbarkeits Modell bekannt ist, ist eine Programmierschnittstelle, die Ihnen den Zugriff auf die zugrunde liegenden Routinen ermöglicht, die die IDE steuern. Add-Ins, Assistenten und Makros verwenden Objekte im Automatisierungs Modell, um die Funktionalität der IDE zu steuern oder zu erweitern.  
   
- Befehls-UI-Kontext  
- Die Zuordnung einer GUID mit der Sichtbarkeit eines UI-Befehl oder ein Element wie eine Symbolleiste. Befehlsbenutzeroberflächenkontext ist im Gegensatz zu Auswahlkontext, da diese nicht in einem Fenster angefügt ist.  
+ Befehls Benutzeroberflächen Kontext  
+ Zuordnung einer GUID mit der Sichtbarkeit eines UI-Befehls oder-Elements, z. b. einer Symbolleiste. Der Kontext der Befehls Benutzeroberfläche ist anders als der Auswahl Kontext, da er nicht an ein Fenster angefügt ist.  
   
- Befehls-UI-Kontext verwendet werden kann:  
+ Der Befehls Benutzeroberflächen Kontext kann für Folgendes verwendet werden:  
   
-- Weisen Sie eine GUID in eine Symbolleiste, die angezeigt wird, wenn ein bestimmtes Fenster aktiviert wird.  
+- Zuweisen einer GUID zu einer Symbolleiste, die angezeigt wird, wenn ein bestimmtes Fenster aktiviert wird.  
   
-- Weisen Sie eine GUID für die Verfügbarkeit eines Befehls, ohne zu laden, oder führen Sie eine VSPackage.  
+- Weisen Sie der Verfügbarkeit eines Befehls eine GUID zu, ohne ein VSPackage laden oder ausführen zu müssen.  
   
-- Weisen Sie eine GUID, die Auswirkungen auf die aktive tastenzuordnung.  
+- Weisen Sie eine GUID zu, um die aktive schlüsselbindung zu beeinflussen.  
   
-- Weisen Sie eine GUID zum Aufzeichnen von Makros zu aktivieren.  
+- Weisen Sie eine GUID zu, um die Makro Aufzeichnung zu aktivieren.  
   
-- Weisen Sie eine GUID, die zum Aktivieren der Debug-Modus oder zwischen dem Entwurfs- und Ausführungsmodus in einem Editor zu wechseln.  
+- Weisen Sie eine GUID zu, um den Debugmodus zu aktivieren oder zwischen dem Entwurfs-und dem Lauf Modus in einem Editor zu wechseln.  
   
-  component  
-  Softwarekomponente, die Teil der Funktionalität einer Anwendung ohne die Anwendung, die alle bereits vorhandenen Informationen zur Implementierung von der Software vorgenommen werden können. Die Kommunikation zwischen einer Komponente und eine Anwendung ist ausschließlich über Schnittstellen für OLE-Stil.  
+  Komponente  
+  Software, die Teil der Funktionalität einer Anwendung sein kann, ohne dass diese Anwendung bereits vorhandene Informationen zur Implementierung der Software hat. Die Kommunikation zwischen einer Komponente und einer Anwendung erfolgt ausschließlich über Schnittstellen im OLE-Stil.  
   
-  Standortkomponenten-manager  
-  Ein Dienst `SOleComponentManager`, die Benutzeroberfläche Koordination Services für die Komponenten der obersten Ebene bereitstellt. Die `SOleComponentManager` -Dienst implementiert die `IOleComponentManager` Schnittstelle.  
+  Komponenten-Manager  
+  Ein Dienst, `SOleComponentManager` , der Nichtbenutzer Oberflächen-Koordinationsdienste für Komponenten der obersten Ebene bereitstellt. Der `SOleComponentManager` Dienst implementiert die- `IOleComponentManager` Schnittstelle.  
   
-  UI-Standortkomponenten-manager  
-  Ein Dienst `SOleComponentUIManager`, die Koordination der Benutzeroberflächendienste bereitstellt. Die `SOleComponentUIManager` -Dienst implementiert die `IOleComponentUIManager` und `IOleInPlaceComponentUIManager` Schnittstellen.  
+  Komponenten-UI-Manager  
+  Ein Dienst, `SOleComponentUIManager` , der Benutzeroberflächen-Koordinationsdienste bereitstellt. Der `SOleComponentUIManager` Dienst implementiert die `IOleComponentUIManager` -und- `IOleInPlaceComponentUIManager` Schnittstellen.  
   
-  kontextbehälter  
-  Ein `IVsUserContext` (COM-Objekt) zu einer Umgebung Komponente angefügt. Dieses Objekt enthält die Suche nach Schlüsselwörtern, F1-Schlüsselwörter und Attribute, die im Zusammenhang mit der Komponente. Kontext kontextbehälter zeigen Sie außerdem auf alle unterkontextbehälter, die auf diese verknüpft sind.  
+  Kontext Behälter  
+  Ein `IVsUserContext` Objekt (com-Objekt), das an eine Umgebungs Komponente angefügt ist. Dieses Objekt enthält Such Schlüsselwörter, F1-Schlüsselwörter und Attribute, die mit der Komponente in Beziehung stehen. Kontext Behälter zeigen zusätzlich auf alle unter Kontext Behälter, die mit Ihnen verknüpft sind.  
   
-  Kontextanbieter  
-  Eine Komponente in der IDE, die eine Kontextsammlung verknüpft ist. Solche Komponenten umfassen ein Toolfenster, Editor oder Projekthierarchie.  
+  Kontext Anbieter  
+  Eine Komponente in der IDE, der ein Kontext Behälter zugeordnet ist. Zu diesen Komponenten gehören ein Tool Fenster, ein Editor oder eine Projekt Hierarchie.  
   
   Designer  
-  Eine Programmierschnittstelle, die Benutzern zum Bearbeiten von Elementen der Benutzeroberfläche (Formulare, Schaltflächen und andere Steuerelemente) ermöglicht.  
+  Eine Programmierschnittstelle, die es Benutzern ermöglicht, Elemente der Benutzeroberfläche (Formulare, Schaltflächen und andere Steuerelemente) zu bearbeiten.  
   
   DocData  
-  Ein COM-Objekt, das die zugrunde liegenden Daten eines Dokuments in einer Welt kapseln, wenn die Trennung von Dokument/Ansicht vorhanden ist (z. B. im Text-Editor-Fall, wäre dies der Textpuffer, der zugrunde liegenden alle Text-Editor-Ansichten). Wenn dieses Objekt nicht von EditorFactory bereitstellt werden, wird die IDE eine Webauthentifizierung produzieren. Die Verantwortung für dieses Objekt wird zum Verwalten von Datenpersistenz und die Freigabe Semantik für mehrere Ansichten auf diesem gleichen `DocData`. Wenn die `DocData` -Objekt unterstützt die `IOleCommandTarget` -Schnittstelle, wird es in das Befehlsrouting der UIShell enthalten sein.  
+  Ein COM-Objekt, das die zugrunde liegenden Daten eines Dokuments in einer Welt kapselt, in der die Dokument-/ansichttrennung vorliegt (z. b. im Text-Editor-Fall ist dies der Text Puffer, der allen Text-Editor-Sichten zugrunde liegt). Wenn die Editorfactory dieses Objekt nicht bereitstellt, wird Sie von der IDE in Ihrem Auftrag erstellt. Die Verantwortung für dieses Objekt besteht darin, die Daten Persistenz und die Freigabe Semantik für mehrere Ansichten zu verwalten `DocData` . Wenn das `DocData` Objekt die- `IOleCommandTarget` Schnittstelle unterstützt, wird es in das Befehls Routing von uiShell eingeschlossen.  
   
   DocObject  
-  Technologie, die zum Hosten der Benutzeroberflächenautomatisierungs innerhalb eines Rahmens, der vom Host verwendet werden. Genauer gesagt, dieser Begriff verweist auf eingebettet werden, die unterstützt die `IOleDocument` und entsprechende Schnittstellen. Diese Technologie hat viele Anwendungen wie z. B. ein Implementierungsdetail des COM-Dokumente, Toolfenster in Visual Basic 5.0, ActiveX-Designer in Visual Basic 6.0 und So weiter.  
+  Technologie, mit der die Benutzeroberfläche in einem Frame gehostet wird, der vom Host bereitgestellt wird. Genauer gesagt bezieht sich dieser Begriff auf alle Einbettungen, die die `IOleDocument` und die zugehörigen Schnittstellen unterstützen. Diese Technologie verfügt über zahlreiche potenzielle Anwendungen, wie z. b. ein Implementierungsdetail von com-Dokumenten, Tool Fenster in Visual Basic 5,0, ActiveX-Designern in Visual Basic 6,0 usw.  
   
   Dokument  
-  Der Oberbegriff für das Dokument als Ganzes verwendet – sowohl die `DocData` und `DocView`. Eine DocumentFrame enthält beispielsweise eine `DocView`, aber er behält auch einen Verweis auf die `DocData` Persistenz zu behandeln.  
+  Wird verwendet, um generisch auf das Dokument als Ganzes zu verweisen – sowohl als `DocData` auch die `DocView` . Ein documentframe enthält z. b. einen `DocView` , behält aber auch einen Verweis auf, `DocData` um die Persistenz zu verarbeiten.  
   
   DocView  
-  Die mit dem der Benutzer interagiert, zum Anzeigen und Bearbeiten der zugrunde liegende DocObject/Embedding/Fensterbereichs `DocData`. Beachten Sie, dass Benutzer nicht die Trennung von Dokument/Ansicht nutzen werden, die Teil der `DocObject` Benutzeroberfläche. Benutzer verwenden eine gesamte DocObject fungieren als Sicht anstelle von (und weniger formalisierte) eher abstrakte Konzept eines zugrunde liegenden Daten, die als bekannt `DocData`. `DocView` Objekte werden immer mit Dokument Keyframe-Objekte (untergeordnete MDI-Fenster) der IDE eingebettet.  
+  DocObject/Einbettungs-/Windows-Pane, mit dem der Benutzer interagiert, um den zugrunde liegenden anzuzeigen und zu bearbeiten `DocData` . Beachten Sie, dass die Benutzer die Trennung von Dokumenten/Sichten, die Teil des Schnittstellen Entwurfs ist, nicht nutzen `DocObject` . Benutzer verwenden ein gesamtes DocObject-Objekt, um als Ansicht zu fungieren, anstatt ein abstraktes (und weniger formalisiertes) Konzept der zugrunde liegenden Daten zu verwenden, die als bezeichnet werden `DocData` . `DocView` Objekte werden immer mit Dokument Rahmen Objekten (untergeordnete MDI-Fenster) der IDE eingebettet.  
   
   DTE  
-  Die `DTE` Objekt (Development Tools Erweiterbarkeit) ist der oberste Zugriffspunkt in das Visual Studio-Automatisierungsmodell, wodurch Sie programmgesteuert automatisieren und erweitern die IDE.  
+  Das `DTE` -Objekt (Erweiterbarkeit der Entwicklungs Tools) ist der oberste Zugriffspunkt im Visual Studio-Automatisierungs Modell, mit dem Sie die IDE Programm gesteuert automatisieren und erweitern können.  
   
   Dynamisches Hilfefenster  
-  Toolfenster, die von der IDE implementiert wird, und zeigt eine Liste der suchenschlüsselwort oder die F1-Hilfethemen.  
+  Tool Fenster, das von der IDE implementiert wird und eine Liste mit Such Schlüsselwörtern oder F1-Hilfe Themen anzeigt.  
   
   Editor  
-  Code (Klassen, CLSID), implementiert die `DocView`. Es implementiert auch `DocData` , wenn die Trennung von Ansicht/Daten unterstützt wird.  
+  Code (Klasse, CLSID), der implementiert `DocView` . Es implementiert auch, `DocData` Wenn die Unterscheidung zwischen Sicht und Daten unterstützt wird.  
   
   Erweiterung  
-  Eine Funktion, die geändert werden, passt, oder eine IDE hinzugefügt. Erstellen Sie mithilfe des Automatisierungsmodells oder VSPackages Erweiterungen.  
+  Eine Funktion, mit der eine IDE geändert, angepasst oder einer IDE hinzugefügt wird. Sie erstellen Erweiterungen mit dem Automatisierungs Modell oder VSPackages.  
   
-  externer editor  
-  Ein Editor, der nicht spezifisch für die IDE, z. B. Microsoft Word ist. Sie wurde durch eine eigene Mechanismen registriert und kann außerhalb der IDE verwendet werden. Wenn dieser Editor eingebettet werden kann, wird es in einem Fenster in der IDE angezeigt. Wenn er nicht eingebettet werden kann, wird ein separates Fenster für der obersten Ebene erstellt.  
+  externer Editor  
+  Ein Editor, der nicht spezifisch für die IDE ist, z. b. Microsoft Word. Es wurde über seine eigenen Mechanismen registriert und kann außerhalb der IDE verwendet werden. Wenn dieser Editor eingebettet werden kann, wird er in einem Fenster in der IDE angezeigt. Wenn Sie nicht eingebettet werden kann, wird ein separates Fenster der obersten Ebene erstellt.  
   
   Hierarchie  
-  Struktur der Knoten, jeden Knoten, die einen Satz von Eigenschaften zugeordnet.  
+  Struktur von Knoten, jeder Knoten, der einem Satz von Eigenschaften zugeordnet ist.  
   
-  unabhängig von der obersten Ebene Komponente  
-  Eine Komponente, die ein nicht modales Fenster der obersten Ebene verwendet und kann als eigenständige Anwendungsfenster effektiv eingesetzt, aber als in-Process-Objekt implementiert wird. Aus diesem Grund muss eine unabhängige auf oberster Ebene Komponente modalitäts- und nachrichtenschleifendienste mit der IDE koordinieren. In-Process-Objekte keine eigene Meldungsschleife.  
+  unabhängige Komponente der obersten Ebene  
+  Eine Komponente, die ein nicht modalem Fenster der obersten Ebene verwendet und effektiv als eigenständiges Anwendungsfenster fungieren kann, jedoch als in-Process-Objekt implementiert wird. Daher muss eine unabhängige Komponente der obersten Ebene die Modalität und Nachrichten Schleifen Dienste mit der IDE koordinieren. In-Process-Objekte haben keine eigene Nachrichten Schleife.  
   
   Informationsanbieter  
-  Der Informationsanbieter ist ein Modul, Suchschlüsselwörter und eine Liste der Themen, in Form von zurückgeben kann `IVsUserContextItem` Objekte. Um F1 und Lookup-Schlüsselwort Elemente für den Informationsanbieter bereitzustellen, registrieren Sie Ihre kompilierte Hilfedatei (. HxS) mit dem System. Die Hilfethemen in diesen Dateien werden verwendet, um die Liste der Themen im dynamischen Hilfefenster angezeigt, und, ob ein Benutzer F1 drückt bereitzustellen.  
+  Der Informationsanbieter ist ein Modul, das nach Schlüsselwörtern suchen und eine Liste von Themen in Form von-Objekten zurückgeben kann `IVsUserContextItem` . Um F1-und Suche-Schlüsselwort Elemente für den Informationsanbieter bereitzustellen, registrieren Sie die kompilierte Hilfedatei (. HxS) mit dem System. Die Hilfe Themen in diesen Dateien werden verwendet, um die Liste der Themen bereitzustellen, die im Fenster Dynamische Hilfe angezeigt werden, und es wird angezeigt, ob ein Benutzer F1 drückt.  
   
-  in-Place-Komponente  
-  Ein VSPackage-Objekt, implementiert die `IOleInPlaceComponent` Schnittstelle, um ein Fenster zu verwalten, die visuell in einem Dokumentfenster der IDE im Besitz befindet. In-Place-Komponenten nicht an der standard OLE-das Zusammenführen von Menüs beteiligt; Stattdessen können sie die Elemente der Benutzeroberfläche in der IDE integrieren.  
+  direkte Komponente  
+  Ein VSPackage-Objekt, das die- `IOleInPlaceComponent` Schnittstelle zum Verwalten eines Fensters implementiert, das sich visuell in einem Dokument Fenster befindet, das der IDE gehört. Direkte Komponenten nehmen nicht an der standardmäßigen OLE-Menü Zusammenführung Teil. Stattdessen integrieren Sie die Elemente der Benutzeroberfläche in die IDE.  
   
-  Es gibt zwei Arten von Komponenten des direktes: herkömmliche direktes Komponenten und Komponentensteuerelementen.  
+  Es gibt zwei Arten von direkten Komponenten: hart verdrahtete direkte Komponenten und Komponenten Steuerelemente.  
   
-  Flexibel konfigurierbares-in-Place-Komponenten verfügen über Menüs, Symbolleisten und Befehle, die eng integriert sind, in die Benutzeroberfläche der IDE, als angezeigt werden, wenn sie die IDE erstellt wurden.  
+  Direkt verdrahtete direkte Komponenten verfügen über Menüs, Symbolleisten und Befehle, die eng in die Benutzeroberfläche der IDE integriert sind und so angezeigt werden, als würden Sie direkt in die IDE integriert.  
   
-  Komponenten-Benutzersteuerelemente weisen keine eigenen Elemente der Benutzeroberfläche in die IDE integriert. Verwenden sie stattdessen, Menüs, Befehle und Symbolleisten der IDE. Der fett formatierten Befehl kann beispielsweise verwendet werden, ein markiertes Wort in einem rich-Text-Steuerelement in einem Formular eingebettet fett formatiert. Allerdings können Komponenten-Benutzersteuerelemente anfordern, dynamisch installierten komponentenspezifischen UI-Elemente angezeigt werden.  
+  Komponenten Steuerelemente verfügen nicht über eigene Benutzeroberflächen Elemente, die in die IDE integriert sind. Stattdessen verwenden Sie die Menüs, Befehle und Symbolleisten der IDE. Beispielsweise könnte mit dem Befehl Bold ein ausgewähltes Wort in einem Rich-Text-Steuerelement fett formatiert werden, das in ein Formular eingebettet ist. Komponenten Steuerelemente können jedoch anfordern, dass dynamisch installierte Komponenten spezifische UI-Elemente angezeigt werden.  
   
   Sprachdienst  
-  Ein Satz von Objekten, die VSPackage-Entwickler Funktionen Computer Sprache Code-Editoren, z. B. Text markieren und die farbliche Kennzeichnung von implementieren kann.  
+  Ein Satz von-Objekten, mit dem VSPackage-Entwickler Features von Computer Sprachcode-Editoren implementieren können, z. b. Textmarkierung und farbige Farbgebung.  
   
-  Projekt "Sonstige Dateien"  
-  Das Projekt verwendet, um Haus geöffneten Dateien, die nicht in jedem Projekt vorhanden sind. Die Liste der Elemente in diesem Projekt wird nicht beibehalten.  
+  Projekt "sonstige Dateien"  
+  Projekt zum beherbergen offener Dateien, die nicht in einem Projekt vorhanden sind. Die Liste der Elemente in diesem Projekt wird nicht beibehalten.  
   
   Projekt  
-  Projekte bestehen von Hierarchy-Objekten oder COM-Objekte, implementieren die `IVsHierarchy` Schnittstelle.  
+  Projekte bestehen aus Hierarchie Objekten oder COM-Objekten, die die- `IVsHierarchy` Schnittstelle implementieren.  
   
-  projektspezifische-Designer oder editor  
-  Ein Designer, der unabhängig von Projekttyp nicht verwendet werden kann. Alle Designer eines projektspezifischen müssen ihre Editorfactory-Informationen in der Registrierung eingeben. Die IDE kann dann den Designer instanziieren, immer ein bestimmten Dateityp in einem bestimmten Projekt geöffnet wird.  
+  projektspezifischer Designer oder Editor  
+  Ein Designer, der nicht unabhängig vom Projekttyp verwendet werden kann. Alle projektspezifischen Designer müssen ihre Editorfactory-Informationen in der Registrierung eingeben. Die IDE kann dann den Designer instanziieren, wenn ein bestimmter Dateityp in einem bestimmten Projekt geöffnet wird.  
   
   Projekttyp Fenster  
-  Ein Fenster, die ständig die aktuellen Projekthierarchie und das Element aus dem globalen Auswahlkontext nachverfolgt. Verwenden Sie den Projekttyp Windows die `SVsTrackSelectionEx` Dienst die IDE Änderungen benachrichtigt und Feedback für den Benutzer anzuzeigen. Projektmappen-Explorer ist ein Beispiel für ein Fenster Projekttyp.  
+  Ein Fenster, in dem die derzeit aktive Projekt Hierarchie und das Element aus dem globalen Auswahl Kontext nachverfolgt werden. Projekttyp Windows verwenden `SVsTrackSelectionEx` Sie den-Dienst, um die IDE der Änderungen zu warnen und dem Benutzer Feedback anzuzeigen. Projektmappen-Explorer ist ein Beispiel für ein Fenster vom Typ Projekt.  
   
   Eigenschaftenfenster  
-  Früher Eigenschaftenbrowser.  
+  Früher Eigenschaften Browser.  
   
-  Referenz-basierte Projekte  
-  Projekt, das die Dateien für das Projekt im selben Verzeichnis nicht benötigen. Stattdessen werden Verweise auf Dateien aus anderen Verzeichnissen unabhängigen gespeichert und vom das Projekt selbst verwaltet werden.  
+  Verweis basierte Projekte  
+  Projekt, bei dem sich die Dateien für das Projekt nicht im selben Verzeichnis befinden müssen. Stattdessen werden Verweise auf Dateien aus anderen nicht verknüpften Verzeichnissen gespeichert und durch das Projekt selbst verwaltet.  
   
-  aktive Dokumenttabelle  
-  Interne Struktur, die mit dem die IDE die Liste aller aktuell geöffneten Dokumente verwaltet werden. Diese Liste enthält alle geöffneten Dokumente im Arbeitsspeicher, unabhängig davon, ob die Dokumente derzeit bearbeitet wird. Ein Dokument ist jedes Element, das gespeichert wird, einschließlich gespeicherter Prozeduren, die in einem Editor, Dateien in einem Projekt oder der Hauptprojektdatei (z. B. *.VCPROJ-Datei) geöffnet.  
+  Ausführen der dokumententabelle  
+  Interne Struktur, mit der die IDE die Liste aller gegenwärtig geöffneten Dokumente verwaltet. Diese Liste enthält alle geöffneten Dokumente im Speicher, unabhängig davon, ob die Dokumente gerade bearbeitet werden. Ein Dokument ist ein beliebiges Element, das gespeichert wird, einschließlich gespeicherter Prozeduren, die in einem Editor geöffnet sind, Dateien in einem Projekt oder in der Hauptprojekt Datei (z. b. *. VCPROJ-Datei).  
   
-  Auswahlkontext  
-  Daten, die Teil der Details aller Fenster in der IDE und zum Nachverfolgen der aktiven Auswahl. Auswahlkontext besteht aus:  
+  Auswahl Kontext  
+  Daten, die Teil der Details jedes Fensters in der IDE sind und zum Nachverfolgen der aktiven Auswahl verwendet werden. Der Auswahl Kontext besteht aus folgendem:  
   
-- Zeiger auf die `IVsHierarchy` -Schnittstelle der Projekthierarchie  
+- Zeiger auf die- `IVsHierarchy` Schnittstelle der Projekt Hierarchie  
   
-- Der Elementbezeichner des Projektelements.  
+- Der Element Bezeichner des Projekt Elements.  
   
-- Zeiger auf die `ISelectionContainer` Schnittstelle, die Sie Zugriff auf Eigenschaften für die aktive Objekte bereitstellt.  
+- Ein Zeiger auf die- `ISelectionContainer` Schnittstelle, die Zugriff auf die Eigenschaften der aktiven-Objekte bereitstellt  
   
-- Ein Array von Elementwerten.  
+- Array von Element Werten.  
   
-  service  
-  Ein Vertrag für einen Satz von COM-Schnittstellen, die sich in einem einzelnen COM-Objekt befinden. Wenn Sie einen Dienst, die von einer GUID identifiziert wird erstellen, definieren Sie den Satz von COM-Schnittstellen, der den Dienst ausführt. COM-Objekte mithilfe Dienste miteinander kommunizieren.  
+  Dienst  
+  Ein Vertrag für einen Satz von COM-Schnittstellen, die sich in einem einzelnen COM-Objekt befinden. Wenn Sie einen Dienst erstellen, der durch eine GUID identifiziert wird, definieren Sie den Satz von COM-Schnittstellen, der den Dienst ausführt. Für COM-Objekte werden Dienste verwendet, um miteinander zu kommunizieren.  
   
   Lösung  
-  Die Gruppe von verwandten Projekten, die mit denen ein Benutzer arbeitet.  
+  Gruppe verwandter Projekte, mit denen ein Benutzer arbeitet.  
   
-  Standard-designer  
-  Ein Designer, der unabhängig von Projekttyp verwendet werden kann. Alle standard-Designer müssen die Editorfactory-Informationen in der Registrierung eingeben. Die IDE kann Klicken Sie dann den Designer instanziieren, wenn eine Datei mit einer bestimmten Erweiterung geöffnet ist. Die Daten müssen in einer Datei gespeichert.  
+  Standard-Designer  
+  Ein Designer, der unabhängig vom Projekttyp verwendet werden kann. Alle Standard Designer müssen die Editorfactory-Informationen in der Registrierung eingeben. Die IDE kann dann den Designer instanziieren, wenn eine Datei mit einer bestimmten Erweiterung geöffnet wird. Die Daten müssen in einer Datei gespeichert werden.  
   
-  Standard-editor  
-  Editor, der unabhängig von einem bestimmten Projekttyp verwendet werden kann. Diese Editoren verfügen EditorFactories, die in der Registrierung registriert. Dadurch wird die IDE zu suchen und den Editor aufzurufen.  
+  Standard-Editor  
+  Editor, der unabhängig von einem bestimmten Projekttyp verwendet werden kann. Bei solchen Editoren sind editorfactorys in der Registrierung registriert. Dies ermöglicht der IDE, den Editor zu finden und aufzurufen.  
   
-  Standard-OS-editor  
-  Ein eingebettet werden, ist kein Visual Studio-spezifische. Mithilfe der bekannten Win32-Schlüssel registriert ist (z. B. die Win32-Explorer weiß, wie aufrufen). Wenn diese ein Editor eingebettet werden kann, wird der Editor immer noch an seiner Stelle in der IDE angezeigt. Andernfalls wird ein separates Fenster für der obersten Ebene für diese Editoren erstellt.  
+  Standard-OS-Editor  
+  Eine Einbettung, die nicht Visual Studio-spezifisch ist. Sie wird mit den bekannten Win32-Schlüsseln registriert (z. b. kann der Win32-Explorer aufrufen). Wenn ein solcher Editor eingebettet werden kann, wird der Editor weiterhin in der IDE angezeigt. Andernfalls wird für solche Editoren ein separates Fenster der obersten Ebene erstellt.  
   
-  unterkontextbehälter  
-  Ein `IVsUserContext` Objekt auf eine Kontextsammlung verknüpft. Dieses Objekt enthält die Suche nach Schlüsselwörtern, F1-Schlüsselwörter und Attribute für eine Auswahl innerhalb einer IDE-Komponente. Beispiele für unterkontextbehälter sind einen Befehl in einem Toolfenster oder ein Schlüsselwort in einem Editor.  
+  unter Kontext Behälter  
+  Ein- `IVsUserContext` Objekt, das mit einem Kontext Behälter verknüpft ist. Dieses Objekt enthält Such Schlüsselwörter, F1-Schlüsselwörter und Attribute für eine Auswahl innerhalb einer IDE-Komponente. Beispiele für unter Kontext sind ein Befehl in einem Tool Fenster oder ein Schlüsselwort in einem Editor.  
   
   Aufgabenliste  
-  Toolfenster, die von der IDE implementiert wird, und zeigt eine Liste der aktiven Aufgaben.  
+  Tool Fenster, das von der IDE implementiert wird und eine Liste aktiver Aufgaben anzeigt.  
   
-  Textpuffer  
-  Allgemeiner Name für das Objekt `VSTextBuffer`.  
+  Text Puffer  
+  Der allgemeine Name für das Objekt `VSTextBuffer` .  
   
-  Textansicht  
-  Allgemeiner Name für das Objekt `VSTextView`.  
+  Text Ansicht  
+  Der allgemeine Name für das Objekt `VSTextView` .  
   
-  der obersten Ebene Toolkomponente  
-  Eine Komponente, die als ein nicht modales Popupfenster, koordinieren eng mit der Benutzeroberfläche der IDE ausgeführt wird. Wie unabhängige Komponenten der obersten Ebene müssen der obersten Ebene Toolkomponenten modalitäts- und nachrichtenschleifendienste mit der IDE auch koordinieren.  
+  Tool Komponente der obersten Ebene  
+  Eine Komponente, die als nicht modalem Popup Fenster fungiert und eng mit der Benutzeroberfläche der IDE koordiniert wird. Wie unabhängige Komponenten der obersten Ebene müssen auch Tool Komponenten der obersten Ebene die Modalität und Nachrichten Schleifen Dienste mit der IDE koordinieren.  
   
   Komponente der obersten Ebene  
-  Ein VSPackage-Objekt, das ein nicht modales Fenster oberster Ebene statt den Clientbereich eines Fensters IDE verwaltet. Implementieren Sie die Komponenten der obersten Ebene der `IOleComponent` Schnittstelle nachrichtenschleifendienste wie z. B. den Zugriff auf die Zeit im Leerlauf nutzen.  
+  Ein VSPackage-Objekt, das ein nicht modalem Fenster auf oberster Ebene anstelle des Client Bereichs eines IDE-Fensters verwaltet. Komponenten der obersten Ebene implementieren die- `IOleComponent` Schnittstelle, um Nachrichten Schleifen Dienste wie den Zugriff auf die Leerlaufzeit zu nutzen.  
   
-  Aktive Benutzeroberfläche  
-  Ein VSPackage-Objekt, das sichtbar ist, und zurzeit den Fokus besitzt.  
+  UI-aktiv  
+  Ein VSPackage-Objekt, das sichtbar ist und derzeit den Fokus besitzt.  
   
-  Hierarchie der Benutzeroberfläche  
-  Ein COM-Objekt, implementiert die `IVsUIHierarchy` Schnittstelle, um die Anzeige einer Hierarchie zu ermöglichen. Die Benutzeroberfläche-hierarchienfenster implementiert die `ISelectionContainer` Schnittstelle, um das Fenster "Eigenschaften" zu aktualisieren; andere Fenster Projekttyp können bei Bedarf dieser Implementierung verwenden.  
+  UI-Hierarchie  
+  Ein COM-Objekt, das die- `IVsUIHierarchy` Schnittstelle implementiert, um die Anzeige einer Hierarchie zuzulassen. Das UI-Hierarchie Fenster implementiert die- `ISelectionContainer` Schnittstelle, um die Eigenschaftenfenster zu aktualisieren. andere Projekttyp Fenster können diese Implementierung verwenden, wenn gewünscht.  
   
   VSCT  
-  Visual Studio-Befehlstabelle. Die VSCT-Datei enthält Informationen über die Position und Verhalten des Menüs, Symbolleisten und Befehle im XML-Format.  
+  Visual Studio-Befehls Tabelle. Die vsct-Datei enthält Informationen über die Platzierung und das Verhalten von Menüs, Symbolleisten und Befehlen im XML-Format.  
   
   VSPackage  
-  Eine installierbare Softwarekomponente, die Visual Studio-IDE erweitert, indem beitragen, eine oder mehrere der folgenden:-Benutzeroberfläche, Dienste, Projekttypen oder Designer/Editor. Eine VSPackage besteht aus einer COM-Objekt, das implementiert die `IVsPackage` Schnittstelle und eine oder mehrere andere COM-Objekten, die andere Schnittstellen zur Unterstützung von Auswahl und andere Funktionen implementieren. Darüber hinaus weist eine VSPackage spezifische registrierungsanforderungen.
+  Ein installier bares Softwareelement, das die Visual Studio-IDE erweitert, indem Sie eine oder mehrere der folgenden Aktionen beibringt: Benutzeroberfläche, Dienste, Projekttypen oder Editor/Designer. Ein VSPackage besteht aus einem COM-Objekt, das die `IVsPackage` -Schnittstelle implementiert, und einem oder mehreren anderen COM-Objekten, die andere Schnittstellen implementieren, um Auswahl und andere Funktionen zu unterstützen. Außerdem gelten für ein VSPackage bestimmte Registrierungsanforderungen.

@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback2:: Restrictsystemrootaccess | Microsoft-Dokumentation'
+title: 'IDiaLoadCallback2:: RestrictSystemRootAccess | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4a603936f58df37cd54bc32e7b4ea8e35838aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62539119"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bestimmt, ob die Suche nach PDB-Dateien im Stammverzeichnis Systems zugelassen wird.  
+Bestimmt, ob die Suche nach PDB-Dateien im Stammverzeichnis des Systems zulässig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,10 +32,10 @@ HRESULT RestrictSystemRootAccess();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Code als Rückgabewert `S_OK` wird verhindert, dass das Systemstammverzeichnis nach PDB-Dateien zu suchen.  
+## <a name="remarks"></a>Bemerkungen  
+ Jeder andere Rückgabecode als `S_OK` verhindert das Durchsuchen des System Stamms nach PDB-Dateien.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

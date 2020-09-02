@@ -1,5 +1,5 @@
 ---
-title: 'Idiareadexeatoffsetcallback:: Readexecutableat | Microsoft-Dokumentation'
+title: 'IDiaReadExeAtOffsetCallback:: ReadExecutableAt | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ac5452437ab6fdec3eb68baf46aeeab8434df4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538862"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Liest die angegebene Anzahl von Bytes beginnend beim angegebenen Offset aus einer ausführbaren Datei an.  
+Liest die angegebene Anzahl von Bytes ab dem angegebenen Offset aus einer ausführbaren Datei.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,20 +38,20 @@ HRESULT ReadExecutableAt ( 
   
 #### <a name="parameters"></a>Parameter  
  fileOffset  
- [in] Der Offset in die ausführbare Datei gelesen werden soll.  
+ in Der Offset in der ausführbaren Datei, ab dem gelesen werden soll.  
   
  cbData  
- [in] Die Anzahl der zu lesenden Bytes.  
+ in Anzahl der zu lesenden Bytes.  
   
  pcbData  
- [out] Gibt die Anzahl der gelesenen Bytes.  
+ vorgenommen Gibt die Anzahl der gelesenen Bytes zurück.  
   
  data[]  
- [in, out] Ein Array, das sich aus der Datei gelesenen Bytes gefüllt wird.  
+ [in, out] Ein Array, das mit aus der Datei gelesenen Bytes gefüllt ist.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird von der Code für die Unterstützung von DIA Datenbytes aus einer ausführbaren Datei, die über einen Offset absolute Datei laden aufgerufen. Diese Methode wird aufgerufen, Unterstützung des der [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode wird vom Dia-Unterstützungs Code aufgerufen, um Daten Bytes aus einer ausführbaren Datei mithilfe eines absoluten Dateioffsets zu laden. Diese Methode wird zur Unterstützung der [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) -Methode aufgerufen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

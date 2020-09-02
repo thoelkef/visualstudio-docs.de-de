@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422109"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
@@ -76,6 +76,6 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
 ## <a name="generate-a-report-of-the-results"></a>Erstellen eines Berichts mit den Ergebnissen  
  Sie können die Zeilen jeder Leistungsberichtansicht in E-Mails und Kalkulationstabellen einfügen, und Sie können Berichte erstellen, die Daten für eine oder mehrere Ansichten enthalten.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Übersichten](../profiling/overviews-performance-tools.md)   
  [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](../profiling/walkthrough-identifying-performance-problems.md)

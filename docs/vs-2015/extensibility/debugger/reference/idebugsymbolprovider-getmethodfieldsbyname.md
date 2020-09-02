@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft-Dokumentation
+title: 'Idebugsymbolprovider:: getmethodfieldsbyname | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: eb26d7382c9c501a1c3235153c2364b2a3e677fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421174"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft das Feld, das einen vollqualifizierten Methodennamen darstellt.  
+Diese Methode ruft das Feld ab, das einen voll qualifizierten Methodennamen darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,20 +44,20 @@ int GetMethodFieldsByName(
   
 #### <a name="parameters"></a>Parameter  
  `pszFullName`  
- [in] Name der Methode.  
+ in Der Methodenname.  
   
  `nameMatch`  
- [in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet.  
+ in Wählt den Typ der Übereinstimmung aus, z. b. Groß-/Kleinschreibung.  
   
  `ppEnum`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Enumerator für die Felder, die mit dieser Methode verknüpft.  
+ vorgenommen Gibt einen [ienumdebugfields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Enumerator für die Felder zurück, die dieser Methode zugeordnet sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Eine Methode kann mit mehreren Feldern zugewiesen werden, wenn dieser überlastet ist, z. B.  
+## <a name="remarks"></a>Bemerkungen  
+ Eine Methode kann mehreren Feldern zugeordnet werden, wenn Sie beispielsweise überladen ist.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

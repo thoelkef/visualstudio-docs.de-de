@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428552"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Bearbeiten und Fortfahren (Visual Basic)
@@ -44,7 +44,7 @@ Bearbeiten und Fortfahren ist ein Feature von [!INCLUDE[vbprvb](../includes/vbpr
  In den Themen zu diesem Abschnitt finden Sie weitere Informationen darüber, wie diese Funktion verwendet wird, und welche Arten von Änderungen nicht zulässig sind.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mithilfe von „Bearbeiten und Fortfahren“](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Gewusst wie: Anwenden von Bearbeitungen im Break-Modus mit "Bearbeiten und Fortfahren"](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Erläutert, wie Codebearbeitungen im Unterbrechungsmodus vorgenommen werden.  
   
  [Nicht unterstützte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  

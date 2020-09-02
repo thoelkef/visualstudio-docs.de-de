@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434227"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn und GlobalOff
@@ -33,7 +33,7 @@ Die VSPerfCmd.exe-Optionen **GlobalOff** und **GlobalOn** halten die Profilerste
   
 - **GlobalOn** legt die globale Start/Stop-Anzahl sofort auf 1 fest und setzt die Profilerstellung daher fort.  
   
-  Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
+  Weitere Informationen finden Sie unter [Profilerstellungstools-APIs](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,24 +46,24 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Keiner  
+ Keine  
   
 ## <a name="valid-options"></a>Gültige Optionen  
  **GlobalOn** und **GlobalOff** können in Befehlszeilen angegeben werden, die auch die folgenden Optionen enthalten:  
   
- **Start:** `Method`  
+ **Start:**`Method`  
  Initialisiert die Befehlszeilen-Profilersitzung und legt die angegebene Profilerstellungsmethode fest  
   
- **Starten:** `AppName`  
+ **Starten** Sie Folgendes: `AppName`  
  Startet die angegebene Anwendung und beginnt die Profilerstellung mit der Samplingmethode.  
   
- **Attach:** `PID`  
+ **Anfügen:**`PID`  
  Startet die Profilerstellung für den angegebenen Prozess  
   
- {**ProcessOff**|**ProcessOn**} **:** `PID`  
+ {**PROCESSOFF**&#124;**ProcessOn**} **:**`PID`  
  Beendet oder startet die Profilerstellung für den angegebenen Prozess  
   
- {**ThreadOff**|**ThreadOn**} **:** `TID`  
+ {**ThreadOff**&#124;**THREADON**} **:**`TID`  
  Beendet oder startet die Profilerstellung für den angegebenen Prozess (nur Instrumentierungsmethode)  
   
 ## <a name="example"></a>Beispiel  
@@ -84,8 +84,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
