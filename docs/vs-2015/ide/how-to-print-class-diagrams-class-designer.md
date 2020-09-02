@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 318ae5314fe8a33e2c421c9532dafc08ceee3ca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651752"
 ---
 # <a name="how-to-print-class-diagrams-class-designer"></a>Gewusst wie: Drucken von Klassendiagrammen (Klassen-Designer)
@@ -32,5 +32,5 @@ Sie können ein Klassendiagramm mithilfe der Druckfunktion von Visual Studio dru
 
      Es wird das gesamte Klassendiagramm gedruckt. Beachten Sie, dass Sie möglicherweise die Einstellungen im Dialogfeld „Seite einrichten“ anpassen müssen, um das Diagramm in einer passenden Größe zu drucken.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Kopieren von Klassendiagramm Elementen in ein Microsoft Office Dokument (Klassen-Designer)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md) Gewusst [wie: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

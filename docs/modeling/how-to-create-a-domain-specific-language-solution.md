@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541790"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
@@ -65,7 +65,7 @@ Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Kompo
    > [!NOTE]
    > Wenn eine Meldung angezeigt wird, dass keine Textvorlagen aus nicht vertrauenswürdigen Quellen ausgeführt werden sollen, klicken Sie auf **OK**. Diese Meldung kann so festgelegt werden, dass Sie nicht erneut angezeigt wird.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Die Seiten des DSL-Designer-Assistenten
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Die Seiten des DSL-Designer-Assistenten
  Sie können einige der Felder unverändert lassen, um die Standardwerte zu ändern. Stellen Sie jedoch sicher, dass Sie das Feld Dateierweiterung festgelegt haben.
 
 ### <a name="solution-settings-page"></a>Seite "Lösungs Einstellungen"

@@ -1,5 +1,5 @@
 ---
-title: URL-Auswahldialogfeld (SharePoint-Entwicklung)
+title: URL-Auswahl Dialogfeld (SharePoint-Entwicklung)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,43 +16,43 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66261942"
 ---
-# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL-Auswahldialogfeld (SharePoint-Entwicklung in Visual Studio)
-  Sie können Dateien wie z. B. Masterseitendateien oder Imagedateien, die sich in Ihrem Projekt oder auf dem lokalen Server, auf dem SharePoint ausgeführt wird, klicken Sie im Dialogfeld URL-Auswahl.
+# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL-Auswahl Dialogfeld (SharePoint-Entwicklung in Visual Studio)
+  Im Dialogfeld URL-Auswahl können Sie Dateien auswählen, z. b. Masterseiten Dateien oder Bilddateien, die sich im Projekt oder auf dem lokalen Server befinden, auf dem SharePoint ausgeführt wird.
 
- Dieses Dialogfeld wird angezeigt, wenn Sie die Option zum Auswählen einer Datei, eine Eigenschaft festzulegen. Sie können dieses Dialogfeld öffnen, indem Sie dann die Schaltfläche mit den Auslassungspunkten (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) neben verschiedener Eigenschaften in der **Eigenschaften** Fenster. Schaltfläche mit den Auslassungspunkten auch angezeigt, wie eine von IntelliSense Eingabeaufforderung Wenn Sie bestimmte Attribute in Werte zuweisen der **Quelle** Ansicht des Designers.
+ Dieses Dialogfeld wird angezeigt, wenn Sie eine Datei auswählen können, um eine Eigenschaft festzulegen. Sie können dieses Dialogfeld öffnen, indem Sie die Schaltfläche mit den Auslassungs Punkten (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) neben den verschiedenen Eigenschaften im **Eigenschaften** Fenster auswählen. Die Schaltfläche mit den Auslassungs Punkten wird auch als IntelliSense-Eingabeaufforderung angezeigt, wenn Sie bestimmten Attributen in der **Quell** Ansicht des Designers Werte zuweisen.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- **-Projektordner** zeigt eine Liste der Ordner definiert, in das Projekt oder auf dem lokalen Server, auf dem SharePoint ausgeführt wird. Wählen Sie die Schaltfläche "Erweiterung", um die Unterordner anzuzeigen.
+ **Projektordner** Zeigt eine Liste der Ordner an, die im Projekt oder auf dem lokalen Server definiert sind, auf dem SharePoint ausgeführt wird. Wählen Sie die Schaltfläche Erweiterung aus, um Unterordner anzuzeigen.
 
- Erweitern Sie die **Projekt** Knoten aus, um die Dateien in Ihrem Projekt zu wählen. Um das Dialogfeld ausgewählt werden können, müssen die Dateien in Ihrem Projekt die folgenden Kriterien erfüllen:
+ Erweitern Sie den **Projekt** Knoten, um Dateien in Ihrem Projekt auszuwählen. Um im Dialogfeld als ausgewählt angezeigt zu werden, müssen die Dateien in Ihrem Projekt die folgenden Kriterien erfüllen:
 
-- Die Datei muss in einen zugeordneten Ordner befinden.
+- Die Datei muss in einem zugeordneten Ordner enthalten sein.
 
-- Die Datei muss dem Lösungspaket hinzugefügt werden.
+- Die Datei muss dem Projektmappenpaket hinzugefügt werden.
 
-- Die Datei kann nicht in einem anderen Projekt befinden.
+- Die Datei kann nicht in einem anderen Projekt gefunden werden.
 
-  Wenn Sie möchten die Dateien zu verweisen, die diese Kriterien nicht erfüllen, müssen Sie den Pfad der Datei manuell eingeben.
+  Wenn Sie auf Dateien verweisen möchten, die diese Kriterien nicht erfüllen, müssen Sie den Pfad der Datei manuell eingeben.
 
-  Erweitern Sie die **Server** Knoten aus, um die Dateien auswählen, die auf dem lokalen Server befinden, auf dem SharePoint ausgeführt wird. Um das Dialogfeld ausgewählt werden können, müssen diese Dateien die folgenden Kriterien erfüllen:
+  Erweitern Sie den **Server** Knoten, um Dateien auszuwählen, die sich auf dem lokalen Server befinden, auf dem SharePoint ausgeführt wird. Diese Dateien müssen die folgenden Kriterien erfüllen, damit Sie im Dialogfeld als auswählbar angezeigt werden:
 
-- Die Datei muss in einem der folgenden zugeordneten Ordner befinden: **Images**, **Layouts**, oder **ControlTemplates**.
+- Die Datei muss sich in einem der folgenden zugeordneten Ordner befinden: **Bilder**, **Layouts**oder **ControlTemplates**.
 
-- Die Datei kann nicht in der SharePoint-Inhaltsdatenbank befinden.
+- Die Datei kann in der SharePoint-Inhalts Datenbank nicht gefunden werden.
 
-  Wenn Sie möchten die Dateien zu verweisen, die diese Kriterien nicht erfüllen, müssen Sie den Pfad der Datei manuell eingeben.
+  Wenn Sie auf Dateien verweisen möchten, die diese Kriterien nicht erfüllen, müssen Sie den Pfad der Datei manuell eingeben.
 
-  **Inhalt des Ordners** zeigt eine Liste der Dateien im ausgewählten Ordner. Wählen Sie eine Datei, und wählen Sie dann die **OK** Schaltfläche, um das Dialogfeld zu schließen, und senden Ihre Auswahl an den Prozess, die diese aufgerufen.
+  **Inhalt des Ordners** Zeigt eine Liste der Dateien im ausgewählten Ordner an. Wählen Sie eine Datei aus, und wählen Sie dann die Schaltfläche **OK** aus, um das Dialogfeld zu schließen und die Auswahl an den Prozess zu senden, der Sie aufgerufen hat
 
-  **Dateityp** können Sie aus einer Liste von Dateien auswählen, die Sie ausführen für die Aufgabe geeignet sind.
+  **Dateityp** Ermöglicht Ihnen die Auswahl aus einer Liste von Dateien, die für die Aufgabe geeignet sind, die Sie ausführen.
 
-## <a name="see-also"></a>Siehe auch
-- [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Erstellen von Anwendungs Seiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

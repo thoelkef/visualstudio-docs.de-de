@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a29ba026f9b3c2b8839d474c2d0833eb79f7ffd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683302"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen
@@ -39,13 +39,13 @@ Diese Warnmeldung wird bei Verwendung des Quellservers angezeigt. Diese Meldung 
  Textfeld  
  Auszuführender Befehl aus der PDB-Datei.  
   
- Run  
+ Ausführen  
  Lässt die Ausführung des Befehls zu.  
   
  Nicht ausführen  
  Beendet die Ausführung des Befehls und das Herunterladen der Datei vom Quellserver.  
   
-## <a name="see-also"></a>Siehe auch  
- [Angeben von Symboldateien (PDB) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Angeben von Symbol-(PDB-) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Quellserver](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

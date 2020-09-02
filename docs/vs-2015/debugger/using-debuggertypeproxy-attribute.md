@@ -1,5 +1,5 @@
 ---
-title: Verwenden des DebuggerTypeProxy-Attributs | Microsoft-Dokumentation
+title: Verwenden des Attributs "tbuggertypeproxy" | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684075"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Verwenden des DebuggerTypeProxy-Attributs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & AutoUpgrade = True) gibt einen Proxy bzw. Vertreter für einen Typ an und ändert die Art der Typ in Debuggerfenstern angezeigt wird. Wenn Sie eine Variable mit einem Proxy anzeigen, wird der Proxy stellvertretend für den ursprünglichen Typ in der **Anzeige** dargestellt. Im Debuggervariablenfenster werden nur die öffentlichen Member des Proxytyps angezeigt. Private Member werden nicht angezeigt.  
+DebuggerTypeProxyAttribute] (assetid:///T: System. Diagnostics. DebuggerTypeProxyAttribute? qualifyhint = false&AutoUpgrade = true) gibt für einen Typ einen Proxy oder eine Position an und ändert die Art und Weise, in der der Typ in Debuggerfenstern angezeigt wird. Wenn Sie eine Variable mit einem Proxy anzeigen, wird der Proxy stellvertretend für den ursprünglichen Typ in der **Anzeige** dargestellt. Im Debuggervariablenfenster werden nur die öffentlichen Member des Proxytyps angezeigt. Private Member werden nicht angezeigt.  
   
  Mögliche Zuweisungen dieses Attributs:  
   
@@ -46,7 +46,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
   Wenn <xref:System.Diagnostics.DebuggerTypeProxyAttribute> auf der Assemblyebene verwendet wird, gibt der `Target`-Parameter den durch den Proxy ersetzten Typ an.  
   
-  Ein Beispiel zur Verwendung dieses Attributs zusammen mit <xref:System.Diagnostics.DebuggerDisplayAttribute> und <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, finden Sie unter[Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md).  
+  Ein Beispiel für die Verwendung dieses Attributs in Verbindung mit <xref:System.Diagnostics.DebuggerDisplayAttribute> und <xref:System.Diagnostics.DebuggerTypeProxyAttribute> finden Sie unter [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md).  
   
 ## <a name="using-generics-with-debuggertypeproxy"></a>Verwenden von Generics mit DebuggerTypeProxy  
  Die Unterstützung für Generics ist eingeschränkt. In C# unterstützt `DebuggerTypeProxy` nur offene Typen. Ein offener Typ, d. h. ein nicht konstruierter Typ, ist ein generischer Typ, der nicht mit Argumenten für seine Typparameter instanziiert wurde. Geschlossene Typen, d. h. konstruierte Typen, werden nicht unterstützt.  
@@ -57,12 +57,12 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  Wenn Sie in `DebuggerTypeProxy` einen generischen Typ als Ziel angeben, müssen Sie diese Syntax verwenden. Der `DebuggerTypeProxy`-Mechanismus leitet die Typparameter für Sie her.  
   
- Weitere Informationen zu offenen und geschlossenen Typen in c# finden Sie unter den [C#-Sprachspezifikation](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), im Abschnitt 20.5.2 über offene und geschlossene Typen.  
+ Weitere Informationen zu offenen und geschlossenen Typen in C# finden Sie in der [C#-Sprachspezifikation](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22) im Abschnitt 20.5.2 zu offenen und geschlossenen Typen.  
   
  In Visual Basic gibt es keine Syntax für offene Typen. Daher ist dies in Visual Basic nicht möglich. Stattdessen müssen Sie eine Zeichenfolgendarstellung für den Namen des offenen Typs verwenden.  
   
  `"Namespace.TypeName'2"`  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Verwenden des Attributs "enbuggerdisplay"](../debugger/using-the-debuggerdisplay-attribute.md)   
   [Verbessern des Debuggens mit den Debuggeranzeigeattributen](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

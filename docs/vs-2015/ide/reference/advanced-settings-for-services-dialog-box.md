@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a021475df1ade9bb6220612aad666d503c19cb8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651718"
 ---
-# <a name="advanced-settings-for-services-dialog-box"></a>Dialogfeld "Erweiterte Einstellungen für Dienste"
+# <a name="advanced-settings-for-services-dialog-box"></a>Dialogfeld Erweiterte Einstellungen für Dienste
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Clientanwendungsdienste ermöglichen vereinfachten Zugriff auf [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)]-Anmeldung, Rollen und Profildienste von Windows Forms- und Windows Presentation Foundation-Anwendungen (WPF). Sie können die Seite **Dienste** im **Projekt-Designer** verwenden, um Clientanwendungsdienste zu konfigurieren. Weitere Informationen zur Seite **Dienste** finden Sie unter [Services-Seite, Projekt-Designer](../../ide/reference/services-page-project-designer.md).
@@ -45,5 +45,5 @@ Clientanwendungsdienste ermöglichen vereinfachten Zugriff auf [!INCLUDE[ajax_cu
 
  **Benutzerdefinierte Verbindungszeichenfolge verwenden:** Gibt an, ob der Clientdienstanbieter benutzerdefinierte Datenspeicher für den lokalen Cache verwendet. Die Dienstanbieter verwenden standardmäßig das lokale Dateisystem für den Cache. Wenn Sie diese Option auswählen, wird das Textfeld automatisch mit einer Standardverbindungszeichenfolge gefüllt. Sie können beibehalten, dass die Standardverbindungszeichenfolge automatisch eine SQL Server Compact Edition-Datenbank generiert und verwendet, Sie können aber auch eine Verbindungszeichenfolge für eine vorhandene SQL Server-Datenbank festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren von Clientanwendungsdiensten](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8). Diese Option ist standardmäßig deaktiviert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Seite " [Client Anwendungsdienste](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Dienste", Projekt-Designer](../../ide/reference/services-page-project-designer.md) Gewusst [wie: Konfigurieren von Client Anwendungsdienste](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) Gewusst [wie: Offline arbeiten mit Client Anwendungsdienste](https://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

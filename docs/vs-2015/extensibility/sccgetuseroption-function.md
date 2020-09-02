@@ -1,5 +1,5 @@
 ---
-title: SccGetUserOption-Funktion | Microsoft-Dokumentation
+title: Sccgetuseroption-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200073"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion ruft eine Vielzahl von benutzerspezifischen Optionen ab.  
+Diese Funktion Ruft eine Vielzahl Benutzer spezifischer Optionen ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,31 +35,31 @@ SCCRTN SccGetUserOption(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- "pContext"  
- [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
+ pContext  
+ in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.  
   
- nOption  
- [in] Option zum Abrufen (mögliche Optionen finden Sie unter "Hinweise").  
+ noption  
+ in Die abzurufende Option (siehe Hinweise zu möglichen Optionen).  
   
- lpVal  
- [out] Option zugeordnete Wert.  
+ lpval  
+ vorgenommen Wert, der Option zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|SCC_OK|Option wurde erfolgreich abgerufen.|  
-|SCC_E_OPNOTSUPPORTED|Option wird nicht unterstützt.|  
+|SCC_OK|Die Option wurde erfolgreich abgerufen.|  
+|SCC_E_OPNOTSUPPORTED|Die Option wird nicht unterstützt.|  
 |SCC_E_NONSPECIFICERROR|Es ist ein unbekannter Fehler aufgetreten.|  
   
-## <a name="remarks"></a>Hinweise  
- Die folgenden Optionen werden von dieser Befehl unterstützt:  
+## <a name="remarks"></a>Bemerkungen  
+ Die folgenden Optionen werden von diesem Befehl unterstützt:  
   
-|Benutzeroption|Beschreibung|  
+|Benutzer Option|BESCHREIBUNG|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer möchte auf die lokale Version von Dateien auszuchecken. `lpVal` erhält `SCC_USEROPT_COLV_YES` (möchte Benutzer lokale Dateien auschecken) oder `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer eine lokale Version der Dateien auschecken möchte. `lpVal` wird zugewiesen `SCC_USEROPT_COLV_YES` (Benutzer möchte lokale Dateien Auschecken) oder `SCC_USEROPT_COLV_NO` .|  
   
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)   
  [Fehlercodes](../extensibility/error-codes.md)

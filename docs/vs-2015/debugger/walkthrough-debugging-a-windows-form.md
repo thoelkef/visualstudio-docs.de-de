@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a553f77e352b16ba1a0709e13e8893cf0f57a43d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704899"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms-Projekts
@@ -55,11 +55,11 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
 2. Öffnen Sie im Bereich „Projekttypen“ den Knoten **Visual Basic**, **Visual C#** oder **Visual C++** . Gehen Sie anschließend wie folgt vor:  
   
-    1. Wählen Sie für Visual Basic oder Visual C#-, die **Windows** Knoten, wählen Sie dann **Windows Form-Anwendung** in die **Vorlagen** Bereich.  
+    1. Wählen Sie für Visual Basic oder Visual c# den Knoten **Windows** aus, und wählen Sie dann im Bereich **Vorlagen** die Option **Windows Form-Anwendung** aus.  
   
-    2. Wählen Sie für Visual C++, die **CLR** Knoten, wählen Sie dann **Windows Form-Anwendung** in die **Vorlagen** Bereich...  
+    2. Wählen Sie für Visual C++ den Knoten **CLR** aus, und wählen Sie dann im Bereich **Vorlagen** die Option **Windows Form-Anwendung** aus.  
   
-3. In der **Vorlagen** wählen Sie im Bereich **Windows-Anwendung**.  
+3. Wählen Sie im Bereich **Vorlagen** die Option **Windows-Anwendung** aus.  
   
 4. Geben Sie im Feld **Name** einen eindeutigen Namen für das Projekt ein (z. B. „Walkthrough_SimpleDebug“).  
   
@@ -129,7 +129,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
 4. Klicken Sie im Menü **Debuggen** auf **Fenster**, dann auf **Überwachen** und anschließend auf **Überwachen 1**.  
   
-5. Klicken Sie im Fenster **Überwachen 1** auf eine leere Zeile. In der **Namen** Spalte, Datentyp `textBox1.Text` (Wenn Sie Visual Basic, Visual c# oder j# verwenden) oder `textBox1->Text` (Wenn Sie C++ verwenden), dann die EINGABETASTE drücken.  
+5. Klicken Sie im Fenster **Überwachen 1** auf eine leere Zeile. Geben Sie **Name** in der Spalte Name `textBox1.Text` (bei Verwendung von Visual Basic, Visual c# oder j#) oder `textBox1->Text` (wenn Sie C++ verwenden) ein, und drücken Sie dann die EINGABETASTE.  
   
      Das Fenster **Überwachen 1** zeigt den Wert dieser Variablen in Anführungszeichen an:  
   
@@ -139,7 +139,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
 6. Wählen Sie im Menü **Debuggen** die Option **Einzelschritt** aus.  
   
-     Der Wert von textBox1.Text ändert sich in der **Überwachen 1** Fenster:  
+     Im Fenster **Überwachen1** ändert sich der Wert von „textBox1.Text“ in:  
   
     ```  
     Button was clicked!  
@@ -175,22 +175,22 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
     textBox1->Text = "Button was clicked!";  
     ```  
   
-2. Auf der **Debuggen** , wählen Sie im Menü **Starten ohne Debugging**.  
+2. Klicken Sie im Menü **Debuggen** auf die Option **Starten ohne Debuggen**.  
   
      Das Windows Form wird unter Windows ausgeführt, genau wie bei einem Doppelklick auf die ausführbare Datei. Der Debugger wird nicht angehängt.  
   
-3. Auf der **Debuggen** , wählen Sie im Menü **an den Prozess anhängen**. (Mit diesem Befehl steht auch auf die **Tools** Menü.)  
+3. Klicken Sie im Menü **Debuggen** auf die Option **An den Prozess anhängen**. (Dieser Befehl ist auch im Menü **Extras** verfügbar.)  
   
      Das Dialogfeld **An den Prozess anhängen** wird angezeigt.  
   
-4. In der **verfügbare Prozesse** Bereich, suchen, die den Prozessnamen (Walkthrough_SimpleDebug.exe) in der **Prozess** Spalte, und klicken Sie darauf.  
+4. Suchen Sie im Bereich **Verfügbare Prozesse** in der Spalte **Prozess** den Prozessnamen (Walkthrough_SimpleDebug.exe), und klicken Sie darauf.  
   
-5. Klicken Sie auf die **Anfügen** Schaltfläche.  
+5. Klicken Sie auf die Schaltfläche **Anfügen**.  
   
 6. Klicken Sie im Formular auf die einzige vorhandene Schaltfläche.  
   
      Der Debugger unterbricht die Ausführung des Formulars am Haltepunkt.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugging von verwaltetem Code](../debugger/debugging-managed-code.md)   
  [Debuggersicherheit](../debugger/debugger-security.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705833"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
@@ -30,11 +30,11 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
  **Visual Studio-Editionen**  
   
- Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] angezeigt werden.  
+ Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]angezeigt werden.  
   
  **Sammeln von TIP-Daten auf einem Remotecomputer**  
   
- Sie müssen Sie die Datei **vs\_profiler\_**_\<Plattform>_**\_**_\<Sprache>_**.exe** aus dem Ordner _%VInstallDir%_**\Team Tools\Performance Tools\Setups** eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren, um Ebeneninteraktionsdaten auf einem Remotecomputer zu erfassen. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
+ Um ebeneninteraktionsdaten auf einem Remote Computer zu sammeln, müssen Sie die Datei **vs \_ Profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** aus dem Ordner _% VSInstallDir%_**\Team Tools\Performance tools\setups** eines Visual Studio-Computers auf den Remote Computer kopieren und installieren. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
   
  **TIP-Berichte**  
   
@@ -142,7 +142,7 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
     [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
-    [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)  
+    [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Hinzufügen von Ebeneninteraktionsdaten mit VSPerfASPNETCmd  
  Mit dem Befehlszeilentool VSPerfASPNETCmd können Sie problemlos Profile für [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen erstellen. Verglichen mit dem Befehlszeilentool **VSPerfCmd** stehen weniger Optionen zur Verfügung, es müssen keine Umgebungsvariablen festgelegt werden, und ein Neustart des Computers ist nicht erforderlich. Die Features von VSPerfASPNETCmd ermöglichen ein besonders einfaches Erfassen von Ebeneninteraktionsdaten.  
@@ -153,4 +153,4 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- Weitere Informationen zu VSPerfASPNETCmd finden Sie unter [Schnelle Website-Profilerstellung mit VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+ Weitere Informationen zu vsperfaspnetcmd finden Sie unter [schnelle Website-Profilerstellung mit vsperfaspnetcmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
