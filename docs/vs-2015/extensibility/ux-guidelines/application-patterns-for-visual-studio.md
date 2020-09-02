@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af70b191e4b9061d08acdc7f76ade843dee41709
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114121"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284408"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Fenster Interaktionen
+## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Fenster Interaktionen
 
 ### <a name="overview"></a>Übersicht
  Die zwei Hauptfenster Typen, die in Visual Studio verwendet werden, sind Dokument-Editoren und Tool Fenster. Selten, aber möglich sind große Dialogfelder. Obwohl Sie alle in der Shell nicht über das Modell verfügen, sind Ihre Muster grundlegend anders. In diesem Thema wird der Unterschied zwischen Dokument Fenstern, Tool Fenstern und nicht modalem Dialogfeldern behandelt. Modale Dialogfeld Muster werden [in Dialog](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)Feldern behandelt.
@@ -37,10 +37,10 @@ ms.locfileid: "88114121"
 |**Position**|Ist immer innerhalb des Dokument Brunnens positioniert und wird nicht um die Ränder der IDE Andocken. Sie kann "gezogen" werden, sodass Sie getrennt von der Hauptshell schwebt.|Wird in der Regel an den Rändern der IDE angedockt, kann jedoch so angepasst werden, dass Sie unverankert, automatisch ausgeblendet (gelöst) oder innerhalb des Dokument Brunnens angedockt ist.|Großes gleitendes Fenster, getrennt von der IDE.|
 |**Commit-Modell**|*Verzögerter Commit*<br /><br /> Um die Daten in einem Dokument zu speichern, muss der Benutzer den Befehl "Datei/speichern", "Speichern unter" oder "Alle speichern" ausgeben. In einem Dokument Fenster ist das Konzept der darin enthaltenen Daten "dirgebunden" und dann ein Commit für einen der Save-Befehle. Beim Schließen eines Dokument Fensters werden alle Inhalte entweder auf dem Datenträger gespeichert oder gehen verloren.|*Sofortiger Commit*<br /><br /> Es ist kein Speichermodell vorhanden. Für Inspektor-Tool Fenster, die beim Bearbeiten einer Datei behilflich sind, muss die Datei im aktiven Editor oder Designer geöffnet sein, und der Editor oder Designer besitzt den Speicher.|*Verzögerter oder sofortiger Commit*<br /><br /> In den meisten Fällen erfordert ein großes, nicht modalem Dialogfeld eine Aktion, mit der Änderungen ausgeführt werden können, und ermöglicht einen "Abbrechen"-Vorgang, der alle in der Dialog Sitzung vorgenommenen Änderungen zurückführt.  Dies unterscheidet ein nicht modalem Dialogfeld in einem Tool Fenster, in dem das Tool Fenster immer über ein sofortiges Commit-Modell verfügt.|
 |**Sichtbarkeit**|*Öffnen/erstellen (Datei) und schließen*<br /><br /> Das Öffnen eines Dokument Fenster erfolgt durch das Öffnen eines vorhandenen Dokuments oder das Verwenden einer Vorlage zum Erstellen eines neuen Dokuments. Es ist kein "Open \<specific editor> "-Befehl vorhanden.|*Ausblenden und anzeigen*<br /><br /> Einzel Instanz-Tool Fenster können ausgeblendet oder angezeigt werden. Inhalt und Status im Tool Fenster bleiben erhalten, wenn Sie in der Ansicht oder im verborgenen angezeigt werden. Tool Fenster mit mehreren Instanzen können geschlossen und ausgeblendet werden. Wenn ein Tool Fenster mit mehreren Instanzen geschlossen wird, werden Inhalt und Zustand innerhalb des Tool Fensters verworfen.|*Gestartet von einem Befehl*<br /><br /> Dialoge werden von einem aufgabenbasierten Befehl aus gestartet.|
-|**Instanzen**|*Mehrere Instanzen*<br /><br /> Mehrere Editoren können gleichzeitig geöffnet sein und verschiedene Dateien bearbeiten, während einige Editoren auch zulassen, dass dieselbe Datei in mehr als einem Editor geöffnet ist (mit dem **Fenster > neuen Fenster** Befehl).<br /><br /> Ein einzelner Editor bearbeitet möglicherweise eine oder mehrere Dateien gleichzeitig (Projekt-Designer).|*Einzelne oder mehrere Instanzen*<br /><br /> Der Inhalt wird geändert, um den Kontext (wie im Eigenschaften Browser) widerzuspiegeln oder den Fokus/Kontext auf andere Fenster (Aufgabenliste Projektmappen-Explorer) zu verschieben.<br /><br /> Die Tool Fenster Single-Instance und MultiInstance müssen mit dem aktiven Dokument Fenster verknüpft werden, es sei denn, es gibt einen überzeugenden Grund, nicht zu.|*Einzel Instanz*|
+|**Verein**|*Mehrere Instanzen*<br /><br /> Mehrere Editoren können gleichzeitig geöffnet sein und verschiedene Dateien bearbeiten, während einige Editoren auch zulassen, dass dieselbe Datei in mehr als einem Editor geöffnet ist (mit dem **Fenster > neuen Fenster** Befehl).<br /><br /> Ein einzelner Editor bearbeitet möglicherweise eine oder mehrere Dateien gleichzeitig (Projekt-Designer).|*Einzelne oder mehrere Instanzen*<br /><br /> Der Inhalt wird geändert, um den Kontext (wie im Eigenschaften Browser) widerzuspiegeln oder den Fokus/Kontext auf andere Fenster (Aufgabenliste Projektmappen-Explorer) zu verschieben.<br /><br /> Die Tool Fenster Single-Instance und MultiInstance müssen mit dem aktiven Dokument Fenster verknüpft werden, es sei denn, es gibt einen überzeugenden Grund, nicht zu.|*Einzel Instanz*|
 |**Beispiele**|**Text Editoren**, z. b. der Code-Editor<br /><br /> **Entwurfs**Oberflächen, z. b. ein Formular-Designer oder eine Modellierungs Oberfläche<br /><br /> **Steuerelement Layouts ähnlich den Dialog**Feldern, z. b. dem Manifest-Designer|Der **Projektmappen-Explorer** stellt eine Projekt Mappe und Projekte in der Projekt Mappe bereit.<br /><br /> Der **Server-Explorer** bietet eine hierarchische Ansicht der Server und Datenverbindungen, die der Benutzer im Fenster öffnen möchte. Wenn Sie ein Objekt aus der Daten Bank Hierarchie öffnen, z. b. eine Abfrage, wird ein Dokument Fenster geöffnet, und der Benutzer kann die Abfrage bearbeiten.<br /><br /> Im Eigenschaften **Browser** werden Eigenschaften für das Objekt angezeigt, das entweder in einem Dokument Fenster oder in einem anderen Tool Fenster ausgewählt ist. Die Eigenschaften werden entweder in einer hierarchischen Rasteransicht oder in komplexen Dialogfeld ähnlichen Steuerelementen angezeigt, und der Benutzer kann die Werte für diese Eigenschaften festlegen.||
 
-## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a>Tool Fenster
+## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Tool Fenster
 
 ### <a name="overview"></a>Übersicht
  Tool Fenster unterstützen die Arbeit des Benutzers, der in Dokument Fenstern ausgeführt wird. Sie können verwendet werden, um eine Hierarchie anzuzeigen, die ein grundlegendes Stamm Objekt darstellt, das von Visual Studio bereitgestellt und bearbeitet werden kann.
@@ -103,7 +103,7 @@ ms.locfileid: "88114121"
 
 #### <a name="common-tool-windows-and-their-functions"></a>Allgemeine Tool Fenster und ihre Funktionen
 
-|Typ|Tool Fenster|Funktion|
+|type|Tool Fenster|Funktion|
 |----------|-----------------|--------------|
 |**Hierarchy**|Projektmappen-Explorer|Eine hierarchische Struktur, die eine Liste von Dokumenten anzeigt, die in Projekten, verschiedenen Dateien und Projektmappenelementen enthalten sind. Die Anzeige der Elemente in Projekten wird durch das Paket definiert, das den Projekttyp besitzt (z. b. Verweis-, Verzeichnis-oder Typen mit gemischtem Modus).|
 |**Hierarchy**|Klassenansicht|Eine hierarchische Struktur der Klassen und verschiedener Elemente im Workingset von Dokumenten, unabhängig von den Dateien selbst.|
@@ -118,8 +118,8 @@ ms.locfileid: "88114121"
 |**Andere**|Werkzeugkasten|Das Tool Fenster, das zum Speichern von Elementen verwendet wird, die auf Entwurfs Oberflächen abgelegt werden, und stellt eine konsistente Zieh Quelle für alle Designer bereit.|
 |**Andere**|Startseite|Das Portal des Benutzers zu Visual Studio mit Zugriff auf Feeds von Neuigkeiten in den Entwicklern, Visual Studio-Hilfe und zuletzt geöffnete Projekte. Benutzer können auch benutzerdefinierte Startseiten erstellen, indem Sie die Datei "StartPage. XAML" aus dem Verzeichnis "Common7\IDE\StartPages\" von Visual Studio Program Files in den Ordner "StartPages" im Verzeichnis "Visual Studio-Dokumente" Kopieren und dann entweder die XAML-Datei in Visual Studio oder in einem anderen Code-Editor öffnen.|
 |**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Autos||
-|**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Direkt||
-|**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Ausgabe|Das Ausgabefenster kann immer dann verwendet werden, wenn Sie Text Ereignisse oder den zu deklarierenden Status aufweisen.|
+|**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Unmittelbar||
+|**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Output|Das Ausgabefenster kann immer dann verwendet werden, wenn Sie Text Ereignisse oder den zu deklarierenden Status aufweisen.|
 |**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Arbeitsspeicher||
 |**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Breakpoints||
 |**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Wird ausgeführt||
@@ -131,7 +131,7 @@ ms.locfileid: "88114121"
 |**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Register||
 |**Debugger:** eine Gruppe von Fenstern, die für debugtasks und Überwachungsaktivitäten spezifisch sind.|Threads||
 
-## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a>Konventionen für Dokument-Editor
+## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a> Konventionen für Dokument-Editor
 
 ### <a name="document-interactions"></a>Dokument Interaktionen
  Der "Dokument-Grund" ist der größte Raum innerhalb der IDE und ist der Benutzer, der sich in der Regel auf seine Aufmerksamkeit konzentriert hat, um die Aufgaben durchzuführen, die durch ergänzende Tool Fenster unterstützt werden. Dokument-Editoren stellen die grundlegenden Arbeitseinheiten dar, die der Benutzer in Visual Studio öffnet und speichert. Sie behalten einen starken Eindruck von der Auswahl, der an Projektmappen-Explorer oder andere aktive Hierarchie Fenster gebunden ist. Der Benutzer sollte auf eines dieser Hierarchie Fenster verweisen können und wissen, wo das Dokument enthalten ist, und seine Beziehung zu der Projekt Mappe, dem Projekt oder einem anderen Stamm Objekt, das von einem Visual Studio-Paket bereitgestellt wird.
@@ -239,7 +239,7 @@ ms.locfileid: "88114121"
 
 - Benutzer müssen in der Lage sein, mit den Steuerelementen nur über die Tastatur zu interagieren, indem Sie entweder den Editor aktivieren und durch Steuerelemente oder mithilfe von Standard-mnetmonics wechseln.
 
-## <a name="dialogs"></a><a name="BKMK_Dialogs"></a>Gespräche
+## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Gespräche
 
 ### <a name="introduction"></a>Einführung
  Dialogfelder in Visual Studio sollten in der Regel eine einzelne Einheit der Arbeit des Benutzers unterstützen und dann verworfen werden.
@@ -254,7 +254,7 @@ ms.locfileid: "88114121"
 
    In diesem Thema wird beschrieben, wie Sie das richtige Dialogfeld Muster in Visual Studio-Workflows und die allgemeinen Konventionen für den Dialog Entwurf auswählen.
 
-### <a name="themes"></a>Designs
+### <a name="themes"></a>Teilziele
  Dialogfelder in Visual Studio folgen einem von zwei grundlegenden Stilen:
 
 #### <a name="standard-unthemed"></a>Standard (ohne Design)
@@ -295,14 +295,14 @@ ms.locfileid: "88114121"
 
 - [Assistenten](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sind hilfreich, um den Benutzer durch eine logische Abfolge von Schritten für den Abschluss einer Aufgabe zu leiten. Eine Reihe von Optionen wird in sequenziellen Bereichen angeboten, in denen manchmal verschiedene Workflows ("Branches") eingeführt werden, die von einer im vorherigen Panel getroffenen Auswahl abhängig sind.
 
-#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a>Einfache Dialoge
+#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a> Einfache Dialoge
  Ein einfaches Dialogfeld ist eine Darstellung von Steuerelementen in einem einzelnen modalen Fenster. Diese Präsentation kann Variationen komplexer Steuerelement Muster wie z. b. eine Feldauswahl enthalten. Befolgen Sie für einfache Dialoge das allgemeine Standardlayout sowie jedes bestimmte Layout, das für komplexe Steuerelement Gruppierungen erforderlich ist.
 
  ![Einfaches Dialogfeld in Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704-01_CreateStrongNameKey")
 
  **Schlüssel für einen starken Namen erstellen ist ein Beispiel für ein einfaches Dialogfeld in Visual Studio.**
 
-#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a>Geschichtete Dialogfelder
+#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Geschichtete Dialogfelder
  Zu den geschichteten Dialogfeldern zählen Registerkarten, Dashboards und eingebettete Strukturen. Sie werden verwendet, um die Immobilien zu maximieren, wenn mehrere Gruppen von Steuerelementen in einer einzigen Benutzeroberfläche angeboten werden. Die Gruppierungen sind geschichtet, sodass der Benutzer auswählen kann, welche Gruppierung zu einem beliebigen Zeitpunkt angezeigt werden soll.
 
  Im einfachsten Fall ist der Mechanismus zum Wechseln zwischen Gruppierungen ein Registerkarten-Steuerelement. Es stehen mehrere Alternativen zur Verfügung. Weitere Informationen zum Auswählen des am besten geeigneten Stils finden Sie unter priorisieren und Schichten.
@@ -313,7 +313,7 @@ ms.locfileid: "88114121"
 
  **Tools > Optionen ist ein Beispiel für ein geschichtetes Dialogfeld in Visual Studio.**
 
-#### <a name="wizards"></a><a name="BKMK_Wizards"></a>The
+#### <a name="wizards"></a><a name="BKMK_Wizards"></a> The
  Assistenten sind hilfreich, um den Benutzer durch eine logische Abfolge von Schritten beim Abschluss einer Aufgabe zu leiten. Eine Reihe von Optionen wird in sequenziellen Bereichen angeboten, und der Benutzer muss die einzelnen Schritte fortsetzen, bevor er mit der nächsten fortfahren kann. Nachdem ausreichend Standardwerte verfügbar sind, ist die Schaltfläche **Fertig** stellen aktiviert.
 
  Modale Assistenten werden für Aufgaben verwendet, die Folgendes ausführen:
@@ -382,10 +382,10 @@ ms.locfileid: "88114121"
 
   Vermeiden Sie die Auswahl einer dauerhaft destruktiven Aktion für den Standardbefehl. Wenn ein solcher Befehl vorhanden ist, wählen Sie stattdessen einen sichereren Befehl als Standard aus.
 
-#### <a name="access-keys"></a>Zugriffstasten
+#### <a name="access-keys"></a>Zugriffsschlüssel
  Verwenden Sie keine Zugriffsschlüssel für die Hilfe Schaltflächen **OK** / **Abbrechen** / **Help** . Diese Schaltflächen werden standardmäßig Tastenkombinationen zugeordnet:
 
-|Schaltflächenname|Tastenkombinationen|
+|Schaltflächenname|Tastenkombination|
 |-----------------|-----------------------|
 |OK|EINGABETASTE|
 |Abbrechen|Esc|
@@ -394,7 +394,7 @@ ms.locfileid: "88114121"
 #### <a name="imagery"></a>DN
  Verwenden Sie Bilder in Dialogfeldern sparsam. Verwenden Sie keine großen Symbole in Dialogfeldern, sondern nur, um Speicherplatz zu verwenden. Verwenden Sie Bilder nur dann, wenn Sie ein wichtiger Bestandteil der Übermittlung der Nachricht an den Benutzer sind, z. b. Warn Symbole oder Status Animationen.
 
-### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a>Priorisieren und Schichten
+### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Priorisieren und Schichten
 
 #### <a name="prioritizing-your-ui"></a>Priorisieren der Benutzeroberfläche
  Möglicherweise ist es notwendig, bestimmte Elemente der Benutzeroberfläche in den Vordergrund zu bringen und erweiterte Verhalten und Optionen (einschließlich undurchsichtiger Befehle) in Dialogfeldern zu platzieren. Bringen Sie häufig verwendete Funktionen in den Vordergrund, indem Sie Platz dafür schaffen, und wenn Sie Sie standardmäßig in der Benutzeroberfläche mit einer Text Bezeichnung sichtbar machen, wenn das Dialogfeld angezeigt wird.
@@ -425,7 +425,7 @@ ms.locfileid: "88114121"
 ##### <a name="adaptive-ui"></a>Adaptive UI
  Die Anzeige oder das Ausblenden der Benutzeroberfläche basierend auf der Verwendung oder der selbst gemeldeten Benutzeroberfläche ist eine weitere Möglichkeit, die erforderliche Benutzeroberfläche beim Ausblenden anderer Teile darzustellen. Dies ist in Visual Studio nicht empfehlenswert, da die Algorithmen für die Entscheidung, wann die Benutzeroberfläche angezeigt oder ausgeblendet werden kann, knifflig sein können, und die Regeln sind für bestimmte Fälle immer falsch.
 
-## <a name="projects"></a><a name="BKMK_Projects"></a>Kte
+## <a name="projects"></a><a name="BKMK_Projects"></a> Kte
 
 ### <a name="projects-in-the-solution-explorer"></a>Projekte in der Projektmappen-Explorer
  Die meisten Projekte werden als Verweis basiert, Verzeichnis basiert oder gemischt klassifiziert. Alle drei Projekttypen werden gleichzeitig in der Projektmappen-Explorer unterstützt. Der Stamm der Benutzererfahrung beim Arbeiten mit-Projekten findet in diesem Fenster statt. Obwohl es sich bei verschiedenen Projekt Knoten um Verweis-, Verzeichnis-oder gemischte typprojekte handelt, gibt es ein gängiges Interaktionsmuster, das als Ausgangspunkt angewendet werden sollte, bevor es in projektspezifische Benutzer Muster unterschieden wird.
@@ -481,7 +481,7 @@ ms.locfileid: "88114121"
 
   Der Benutzer sollte immer in der Lage sein, die Auswirkungen eines Drag & Drop-Vorgangs zu ermitteln, indem er ein Element auswählt, ihn an den Ziel Speicherort zieht und feststellt, welcher der folgenden Mauszeiger angezeigt wird, bevor das Element gelöscht wird:
 
-|Mauszeiger|Get-Help|Beschreibung|
+|Mauszeiger|Befehl|BESCHREIBUNG|
 |-------------------|-------------|-----------------|
 |![Symbol „Keine Ablage“ für Maus](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706-01_MouseNoDrop")|Kein Drop|Das Element kann nicht am angegebenen Speicherort abgelegt werden.|
 |![Symbol "Kopieren" für Maus](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706-02_MouseCopy")|Kopieren|Das Element wird in den Ziel Speicherort kopiert.|
@@ -491,7 +491,7 @@ ms.locfileid: "88114121"
 #### <a name="reference-based-projects"></a>Verweis basierte Projekte
  In der folgenden Tabelle werden die Drag & amp; Drop-Vorgänge (sowie Ausschneide-, Kopier-und Einfügevorgänge) zusammengefasst, die basierend auf der Art des Quell Elements und der Modifizierertasten, die für referenzierte Ziel Projekte gedrückt wurden, ausgeführt werden sollen:
 
-|Modifizierer|Vorgang|Quell Element: Verweis/Link|Quell Element: physisches Element oder Dateisystem (CF_HDROP)|
+|||Quell Element: Verweis/Link|Quell Element: physisches Element oder Dateisystem (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Kein Modifizierer|Aktion|Verschieben|Link|
 |Kein Modifizierer|Ziel|Fügt einen Verweis auf das ursprüngliche Element hinzu|Fügt einen Verweis auf das ursprüngliche Element hinzu|
@@ -522,7 +522,7 @@ ms.locfileid: "88114121"
 #### <a name="directory-based-projects"></a>Verzeichnis basierte Projekte
  In der folgenden Tabelle werden die Drag & amp; Drop-Vorgänge (sowie Ausschneide-, Kopier-und Einfügevorgänge) zusammengefasst, die basierend auf der Art des Quell Elements und der Modifizierertasten, die für Verzeichnis basierte Ziel Projekte gedrückt wurden, ausgeführt werden sollen:
 
-|Modifizierer|Vorgang|Quell Element: Verweis/Link|Quell Element: physisches Element oder Dateisystem (CF_HDROP)|
+|||Quell Element: Verweis/Link|Quell Element: physisches Element oder Dateisystem (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Kein Modifizierer|Aktion|Verschieben|Verschieben|
 |Kein Modifizierer|Ziel|Kopiert das Element an den Zielort.|Kopiert das Element an den Zielort.|
@@ -549,7 +549,7 @@ ms.locfileid: "88114121"
 #### <a name="mixed-target-projects"></a>Projekte mit gemischtem Ziel
  In der folgenden Tabelle werden die Drag & amp; Drop-Vorgänge (sowie Ausschneide-, Kopier-und Einfügevorgänge) zusammengefasst, die auf der Grundlage der Art des Quell Elements und der Modifizierertasten ausgeführt werden sollen, die für Projekte mit gemischtem Ziel
 
-|Modifizierer|Vorgang|Quell Element: Verweis/Link|Quell Element: physisches Element oder Dateisystem (CF_HDROP)|
+|||Quell Element: Verweis/Link|Quell Element: physisches Element oder Dateisystem (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Kein Modifizierer|Aktion|Verschieben|Verschieben|
 |Kein Modifizierer|Ziel|Fügt einen Verweis auf das ursprüngliche Element hinzu|Kopiert das Element an den Zielort.|
