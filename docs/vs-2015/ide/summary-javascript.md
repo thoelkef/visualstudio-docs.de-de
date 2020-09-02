@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f283c2c1825c4b8b02fb5b044ce113231a919317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646851"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
@@ -32,12 +32,12 @@ Gibt die Beschreibung für eine Funktion oder Methode an.
 ```
 
 #### <a name="parameters"></a>Parameter
- `locid` ist optional. Der Bezeichner für Lokalisierungsinformationen über die Funktion oder Methode. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im Element [\<loc>](../ide/loc-javascript.md) angegeben wird.
+ `locid` ist optional. Der Bezeichner für Lokalisierungsinformationen über die Funktion oder Methode. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im-Element angegeben ist [\<loc>](../ide/loc-javascript.md) .
 
  `description` ist optional. Eine Beschreibung der Funktion oder Methode.
 
-## <a name="remarks"></a>Anmerkungen
- Die Elemente, die verwendet werden, um Funktionen, wie unter anderem [\<summary>](../ide/summary-javascript.md), [\<param>](../ide/param-javascript.md) und [\<returns>](../ide/returns-javascript.md), mit Anmerkungen zu versehen und müssen vor allen Anweisungen in den Funktionstext eingefügt werden.
+## <a name="remarks"></a>Bemerkungen
+ Die Elemente, die zum Kommentieren von Funktionen verwendet werden, die [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) und enthalten [\<returns>](../ide/returns-javascript.md) , müssen vor allen Anweisungen in den Funktions Rumpf eingefügt werden.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Codebeispiel wird die Verwendung des `<summary>`-Elements veranschaulicht.
@@ -55,5 +55,5 @@ function areaFunction(radiusParam)
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)

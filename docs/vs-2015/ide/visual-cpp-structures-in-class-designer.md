@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc9c09c5f92c4193d3d3f58c819f4bc0fc9aaebf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646762"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Visual C++-Strukturen im Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Der Klassen-Designer unterstützt C++-Strukturen, die mithilfe des Schlüsselworts `struct` deklariert werden. Beachten Sie folgendes Beispiel:
+Der Klassen-Designer unterstützt C++-Strukturen, die mithilfe des Schlüsselworts `struct` deklariert werden. Dies ist ein Beispiel:
 
 ```
 struct MyStructure
@@ -40,5 +40,5 @@ struct MyStructure
 |------------------|-------------------------|
 |`struct StructureName {};`|**StructureName**<br /><br /> Struktur|
 
-## <a name="see-also"></a>Siehe auch
- [Arbeiten mit Visual C++ Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) [-Klassen und Strukturen-](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [Struktur](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)
+## <a name="see-also"></a>Weitere Informationen
+ [Arbeiten mit Visual C++ Code-(Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) [Klassen und Strukturen](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [Struktur](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)

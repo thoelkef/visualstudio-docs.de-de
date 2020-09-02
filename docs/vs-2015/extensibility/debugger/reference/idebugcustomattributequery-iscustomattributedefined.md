@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft-Dokumentation
+title: 'Idebugcustomattributequery:: iscustomattributedefined | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 392067356cdc50b55ddf99b7342d76e1dcd02b09
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568459"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bestimmt, ob die angegebenen benutzerdefinierten Attributs definiert ist.  
+Bestimmt, ob das angegebene benutzerdefinierte Attribut definiert ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>Parameter  
  `pszCustomAttributeName`  
- [in] Der Name des benutzerdefinierten Attributs.  
+ in Der Name des benutzerdefinierten Attributs.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt zurück, wenn das benutzerdefinierte Attribut definiert ist, `S_OK`ist, andernfalls gibt `S_FALSE`.  
+ Wenn das benutzerdefinierte Attribut definiert ist, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben `S_FALSE` .  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugClassFieldSymbol** -Objekt, das macht die [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugclassfieldsymbol** -Objekt implementiert wird, das die [idebugcustomattributequery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
@@ -84,5 +84,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

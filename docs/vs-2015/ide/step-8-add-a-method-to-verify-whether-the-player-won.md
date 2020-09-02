@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2481693961dd03815381e9f71ee67cb73464bdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646929"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat
@@ -41,6 +41,6 @@ Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätz
 
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Um zum nächsten Tutorialschritt zu wechseln, klicken Sie auf [Schritt 9: Ausprobieren weiterer Funktionen](../ide/step-9-try-other-features.md).
+- Um zum nächsten Schritt des Tutorials zu wechseln, klicken [Sie auf Schritt 9: ausprobieren weiterer Funktionen](../ide/step-9-try-other-features.md).
 
-- Wenn Sie zum vorherigen Tutorialschritt zurückkehren möchten, klicken Sie auf [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).
+- Um zum vorherigen Tutorialschritt zurückzukehren, finden Sie unter [Schritt 7: beibehalten der Sicht](../ide/step-7-keep-pairs-visible.md)barkeit von Paaren.

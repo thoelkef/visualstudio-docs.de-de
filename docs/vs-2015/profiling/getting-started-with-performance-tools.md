@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158213"
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
@@ -32,14 +32,14 @@ Dieser Abschnitt enthält eine Übersicht über die Begriffe und Aufgaben, die b
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
-|Aufgabe|Verwandte Inhalte|  
+|Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Schnelles Erstellen eines Profils einer Anwendung oder Website:** Verwenden Sie den Leistungs-Assistenten zum Konfigurieren und Ausführen einer Profilerstellungssitzung für eine Visual Studio-Projektmappe oder eine Website.|-   [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Profil für eine Anwendung ohne Assistent:** Erfahren Sie, um die Eigenschaftenseiten der leistungssitzung verwenden, um eine leistungssitzung zu erstellen.|-   [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Versuch es:** Praxiserfahrung durch profilerstellung für eine beispielanwendung.|-   [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)|  
+|**Schnelles Erstellen eines Profils für eine Anwendung oder Website:** Mit dem Leistungs-Assistenten können Sie eine Profilerstellungssitzung für eine Visual Studio-Projektmappe oder eine Website konfigurieren und ausführen.|-   [Einführung in die Leistungsprofil Erstellung](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Vorgehensweise: Erfassen von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**Erstellen eines Profils für eine Anwendung ohne Assistent:** Informationen zur Verwendung von Eigenschaftenseiten der Leistungssitzung, um eine Leistungssitzung zu erstellen.|-   [Vorgehensweise: Manuelles Erstellen von Leistungs Sitzungen](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**Übung:** Praxiserfahrung durch Profilerstellung für eine Beispielanwendung.|-   [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [People Trax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Übersichten](../profiling/overviews-performance-tools.md)   
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)   
- [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)   
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+ [Analysieren von Leistungs Tool Daten](../profiling/analyzing-performance-tools-data.md)   
+ [Verwenden von Leistungs Regeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)   
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)

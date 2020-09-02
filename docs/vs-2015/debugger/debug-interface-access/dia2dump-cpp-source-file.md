@@ -1,5 +1,5 @@
 ---
-title: Quelldatei Dia2dump.cpp | Microsoft-Dokumentation
+title: Dia2dump. cpp-Quelldatei | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5878a05f98210d6364af4a33c5a30c94c74637f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197613"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Quelldatei Dia2dump.cpp
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Der folgende Quellcode von Dia2dump.cpp zeigt den Inhalt einer PDB-Datei. Dieser Code dient der [Dia2dump-Beispiel](../../debugger/debug-interface-access/dia2dump-sample.md).  
+Der folgende Dia2dump. cpp-Quellcode zeigt den Inhalt einer PDB-Datei an. Dieser Quellcode wird von [Dia2dump Sample](../../debugger/debug-interface-access/dia2dump-sample.md)verwendet.  
   
 ```  
 // dia2dump.cpp : Dump contents of a pdb file using DIA.  

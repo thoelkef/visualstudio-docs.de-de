@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8239afd1cf4e8c0a5e702f2b0e4ed64408cada09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645740"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes
@@ -38,7 +38,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Code Analysetools 
 
 - Ausführen der Code Analyse und Anzeigen der Funktionsweise des Regelsatz-Anpassungs Verhaltens
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]
 
@@ -47,11 +47,11 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Code Analysetools 
 
 #### <a name="create-a-class-library"></a>Erstellen einer Klassenbibliothek
 
-1. Klicken Sie im Menü **Datei** auf **Neu** und anschließend auf **Projekt**.
+1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Projekttypen**auf **Visualisierung C#** .
+2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Projekttypen**auf **Visual c#**.
 
-3. Wählen Sie unter **C#Visual**die Option **Klassenbibliothek**aus.
+3. Wählen Sie unter **Visual c#** die Option **Klassenbibliothek**aus.
 
 4. Geben Sie im Textfeld **Name den Namen** **RuleSetSample** ein, und klicken Sie dann auf **OK**.
 
@@ -70,7 +70,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Code Analysetools 
     Klicken Sie im Menü Datei auf **ausgewählte Elemente speichern** , um die Projektdatei mit Informationen über den ausgewählten Regelsatz und seine Einstellungen zu aktualisieren.
 
    > [!TIP]
-   > In einer realen Situation empfiehlt es sich, für die Priorisierung von Problemen, die Sie mit der Code Analyse als Ziel verwenden möchten, mit dem Regel Satz für **Empfohlene Regeln** zu beginnen und die gewünschten Probleme zu beheben und dann inkrementell weitere Regeln oder Regelsätze hinzuzufügen. Suchen und beheben Sie die zusätzlichen Probleme.
+   > In einer realen Situation empfiehlt es sich, für die Priorisierung von Problemen, die Sie mit der Code Analyse als Ziel verwenden möchten, mit dem Regel Satz für **Empfohlene Regeln** zu beginnen und die gewünschten Probleme zu beheben und dann inkrementell weitere Regeln oder Regelsätze hinzuzufügen, um die zusätzlichen Probleme zu finden und zu beheben.
 
    Als Nächstes fügen Sie der-Klassenbibliothek Code hinzu, der verwendet wird, um Verstöße gegen die CA1704 "Bezeichner sollten korrekt geschrieben werden" zu veranschaulichen. Weitere Informationen finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
@@ -128,7 +128,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Code Analysetools 
 
     Nun wäre es ein guter Zeitpunkt, mit den verschiedenen Symbolleisten-Schaltflächen und Filteroptionen zu experimentieren, um sich mit Ihnen vertraut zu machen. Beispielsweise können Sie mithilfe der Dropdown Liste **Gruppieren nach** eine bestimmte Regel oder eine bestimmte Kategorie von Regeln suchen. Ein weiteres Beispiel ist, dass Sie die Schaltfläche **Deaktivierte Regeln ausblenden** auf der Symbolleiste Regel Satz Seiten verwenden können, um alle Regeln auszublenden oder anzuzeigen, bei denen die Spalte **Aktion** auf **keine**festgelegt ist. Dies kann hilfreich sein, wenn Sie nach Regeln suchen möchten, die Sie deaktiviert haben, um zu überprüfen, ob Sie Sie noch deaktivieren möchten.
 
-5. Klicken Sie im Menü Ansicht auf Eigenschaften Fenster. Geben Sie im Eigenschaften Tool Fenster im Feld Name den **benutzerdefinierten Regelsatz** ein. Dadurch wird der Anzeige Name des neuen Regelsatzes in der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE geändert.
+5. Klicken Sie im Menü Ansicht auf Eigenschaftenfenster. Geben Sie im Eigenschaften Tool Fenster im Feld Name den **benutzerdefinierten Regelsatz** ein. Dadurch wird der Anzeige Name des neuen Regelsatzes in der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE geändert.
 
 6. Klicken Sie im Menü **Datei** auf **Microsoft all rules. RuleSet speichern** , um den benutzerdefinierten Regelsatz zu speichern. Navigieren Sie zum Stamm Ordner des Projekts. Geben Sie im Textfeld **Dateiname den Namen** **MyCustomRuleSet**ein. Der benutzerdefinierte Regelsatz kann jetzt für die Verwendung mit dem Projekt ausgewählt werden.
 
@@ -140,7 +140,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Code Analysetools 
 
 2. Klicken Sie auf der Registerkarte **Eigenschaften** auf **Code Analyse**.
 
-    Klicken Sie in der Dropdown Liste **diesen Regelsatz ausführen** auf **\<Browse.. >** . Navigieren Sie zum Stamm Ordner des Code Projekts, und wählen Sie dann **MyCustomRuleSet. RuleSet**aus. Dies ist der neue Regelsatz, den Sie im vorherigen Verfahren erstellt haben.
+    Klicken Sie in der Dropdown Liste **diesen Regelsatz ausführen** auf **\<Browse..>** . Navigieren Sie zum Stamm Ordner des Code Projekts, und wählen Sie dann **MyCustomRuleSet. RuleSet**aus. Dies ist der neue Regelsatz, den Sie im vorherigen Verfahren erstellt haben.
 
 3. Klicken Sie im Menü **Datei** auf **Speichern** , um die Projekt Konfiguration zu speichern. Der benutzerdefinierte Regelsatz kann nun mit dem Projekt verwendet werden.
 
@@ -152,5 +152,5 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Code Analysetools 
 
 2. Beachten Sie, dass beim Klicken auf **Warnungen**im Fehlerliste Fenster die Regel "CA1704 Warning" (Bezeichner sollten korrekt geschrieben werden) nicht mehr angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Konfigurieren der Code Analyse für einen](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [Code Analyse-Regelsatz Verweis](../code-quality/code-analysis-rule-set-reference.md) für ein verwaltetes Code Projekt

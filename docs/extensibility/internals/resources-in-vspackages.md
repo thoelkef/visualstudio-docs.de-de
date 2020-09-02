@@ -1,5 +1,5 @@
 ---
-title: Ressourcen in VSPackages | Microsoft Docs
+title: Ressourcen in VSPackages | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,42 +13,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705605"
 ---
 # <a name="resources-in-vspackages"></a>Ressourcen in VSPackages
-Sie können lokalisierte Ressourcen in systemeigene Satelliten-UI-DLLs, verwaltete Satelliten-DLLs oder in ein verwaltetes VSPackage selbst einbetten.
+Sie können lokalisierte Ressourcen in Native Satelliten-UI-DLLs, verwaltete Satelliten-DLLs oder in ein verwaltetes VSPackage einbinden.
 
  Einige Ressourcen können nicht in VSPackages eingebettet werden. Die folgenden verwalteten Typen können eingebettet werden:
 
 - Zeichenfolgen
 
-- Paketladeschlüssel (die auch Zeichenfolgen sind)
+- Paket Lade Schlüssel (auch Zeichen folgen)
 
-- Toolfenstersymbole
+- Tool Fenster Symbole
 
-- Kompilierte Befehlstabellenausgabedateien (CTO)
+- Dateien für die kompilierte Befehls Tabellenausgabe (CTO)
 
 - CTO-Bitmaps
 
-- Befehlszeilenhilfe
+- Befehlszeilen Hilfe
 
-- Informationen zu Dialogfelddaten
+- Informationen zu Dialogfeld Daten
 
-  Ressourcen in einem verwalteten Paket werden nach Ressourcen-ID ausgewählt. Eine Ausnahme ist die CTO-Datei, die den Namen CTMENU haben muss. Die CTO-Datei muss in der `byte[]`Ressourcentabelle als angezeigt werden. Alle anderen Ressourcenelemente werden nach Typ identifiziert.
+  Ressourcen in einem verwalteten Paket werden anhand der Ressourcen-ID ausgewählt. Eine Ausnahme ist die CTO-Datei, die mit dem Namen "ctmenu" benannt werden muss. Die CTO-Datei muss in der Ressourcen Tabelle als angezeigt werden `byte[]` . Alle anderen Ressourcen Elemente werden nach Typ identifiziert.
 
-  Sie können <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> das Attribut [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden, um anzugeben, dass verwaltete Ressourcen verfügbar sind.
+  Sie können das- <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> Attribut verwenden, um anzugeben, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dass verwaltete Ressourcen verfügbar sind.
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  Die <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> Einstellung auf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diese Weise gibt an, dass nicht verwaltete Satelliten-DLLs ignoriert werden sollten, wenn nach Ressourcen gesucht wird, z. B. mithilfe <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>von . Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zwei oder mehr Ressourcen mit derselben Ressourcen-ID gefunden werden, wird die erste gefundene Ressource verwendet.
+  <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>Diese Einstellung gibt an, dass bei der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Suche nach Ressourcen von nicht verwaltete Satelliten-DLLs ignoriert werden soll, z. b. mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zwei oder mehr Ressourcen ermittelt, die dieselbe Ressourcen-ID aufweisen, wird die erste gefundene Ressource verwendet.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel ist eine verwaltete Darstellung eines Symbols im Werkzeugfenster.
+ Das folgende Beispiel ist eine verwaltete Darstellung eines Tool Fenster Symbols.
 
 ```
 <data name="1001"
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- Im folgenden Beispiel wird veranschaulicht, wie das CTO-Byte-Array einbettet wird, das den Namen CTMENU haben muss.
+ Im folgenden Beispiel wird veranschaulicht, wie das CTO-Bytearray einbettet wird, das als ctmenu benannt werden muss.
 
 ```
 <data name="CTMENU"
@@ -81,9 +81,9 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>Hinweise zur Implementierung
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verzögert das Laden von VSPackages, wann immer möglich. Eine Folge des Einbettens einer CTO-Datei in ein VSPackage ist, dass [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] alle diese VSPackages während des Setups in den Arbeitsspeicher geladen werden müssen, d. h., wenn eine zusammengeführte Befehlstabelle erstellt wird. Ressourcen können aus einem VSPackage extrahiert werden, indem die Metadaten untersucht werden, ohne Code im VSPackage auszuführen. Das VSPackage wird zu diesem Zeitpunkt nicht initialisiert, sodass der Leistungsverlust minimal ist.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verzögert das Laden von VSPackages, wann immer dies möglich ist. Eine Folge der Einbettung einer CTO-Datei in ein VSPackage ist, dass [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] alle VSPackages während des Setups in den Arbeitsspeicher laden müssen. Dies ist der Zeitpunkt, an dem eine zusammengeführte Befehls Tabelle erstellt wird. Ressourcen können aus einem VSPackage extrahiert werden, indem die Metadaten untersucht werden, ohne dass Code im VSPackage ausgeführt wird. Das VSPackage ist zu diesem Zeitpunkt nicht initialisiert, sodass der Leistungsverlust minimal ist.
 
- Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] eine Ressource nach Setup von einem VSPackage anfordert, wird dieses Paket wahrscheinlich bereits geladen und initialisiert, sodass der Leistungsverlust minimal ist.
+ Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nach der Installation eine Ressource von einem VSPackage anfordert, wird dieses Paket wahrscheinlich bereits geladen und initialisiert, sodass der Leistungsverlust minimal ist.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Verwalten von VSPackages](../../extensibility/managing-vspackages.md)

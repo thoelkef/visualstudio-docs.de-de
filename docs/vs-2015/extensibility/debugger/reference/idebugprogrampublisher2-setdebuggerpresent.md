@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft-Dokumentation
+title: 'IDebugProgramPublisher2:: setdebug-vorhanden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 571da5e7baa720dc2e26fc629e2887cd0e3bdfa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146295"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Teilt dem Verleger für die Anwendung mit, dass ein Debugger vorhanden ist und ausgeführt wird.  
+Weist den Programm Verleger an, dass ein Debugger vorhanden ist und ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ int SetDebuggerPresent(
   
 #### <a name="parameters"></a>Parameter  
  `fDebuggerPresent`  
- [in] Ungleich 0 (`TRUE`), wenn ein Debugger vorhanden ist, NULL (`FALSE`) ist dies nicht.  
+ in Ungleich NULL ( `TRUE` ), wenn ein Debugger vorhanden ist, andernfalls 0 (NULL `FALSE` ) (), wenn dies nicht der Fall ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Das Vorhandensein oder fehlen eines Debuggers wird wiedergegeben, in der vom zurückgegebenen Daten die [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) Methode: Es zurückgegebene Wert festgelegt oder gelöscht, die von einem vorherigen Aufruf von der `SetDebuggerPresent` Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Das vorhanden sein oder Fehlen eines Debuggers wird in den Daten widergespiegelt, die von der [getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) -Methode zurückgegeben werden: der zurückgegebene Wert wird durch einen vorherigen-Aufrufsatz der-Methode festgelegt oder gelöscht `SetDebuggerPresent` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

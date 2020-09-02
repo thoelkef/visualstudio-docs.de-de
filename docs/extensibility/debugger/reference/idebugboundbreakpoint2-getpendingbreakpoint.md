@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: getpdingbreakpoint | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735492"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Ruft den ausstehenden Haltepunkt ab, von dem aus der angegebene gebundene Haltepunkt erstellt wurde.
+Ruft den ausstehenden Breakpoint ab, von dem der angegebene gebundene Breakpoint erstellt wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,16 +42,16 @@ int GetPendingBreakpoint( 
 
 ## <a name="parameters"></a>Parameter
 `ppPendingBreakpoint`\
-[out] Gibt das [IDebugPendingBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) zurück, das den ausstehenden Haltepunkt darstellt, der zum Erstellen dieses gebundenen Haltepunkts verwendet wurde.
+vorgenommen Gibt das [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt zurück, das den ausstehenden Haltepunkt darstellt, der zum Erstellen dieses gebundenen halte Punkts verwendet wurde.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Ein ausstehender Haltepunkt kann als eine Sammlung aller erforderlichen Informationen betrachtet werden, die erforderlich sind, um einen Haltepunkt an Code zu binden, der auf ein oder mehrere Programme angewendet werden kann.
+Ein ausstehender Haltepunkt kann als eine Auflistung aller erforderlichen Informationen angesehen werden, die erforderlich sind, um einen Breakpoint an Code zu binden, der auf ein oder mehrere Programme angewendet werden kann.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CBoundBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugBoundBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CBoundBreakpoint` , das die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Schnittstelle verfügbar macht.
 
 ```
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(

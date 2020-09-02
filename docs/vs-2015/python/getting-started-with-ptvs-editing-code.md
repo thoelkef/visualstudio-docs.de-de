@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550911"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Erste Schritte mit PTVS: Bearbeiten von Code
@@ -34,7 +34,7 @@ from math import sin
   
  Wenn Sie beim Programmieren einen ungebundenen Bezeichner verwenden, der jedoch in Ihren Bibliotheken enthalten ist, bietet PTVS in einer Schnellkorrektur die entsprechende import-Anweisung für die benötigte Anweisung an.  Wenn Sie z. B. `cos` eingeben, würde **import from math** (Aus der math-Bibliothek importieren) angeboten werden.  
   
- Sie können einen Ausschnitt zum Generieren von Code verwenden.  Wählen Sie im Menü "Bearbeiten" die Option "IntelliSense" und dann "Ausschnitt einfügen" aus.  Wählen Sie dann Python und „def“ aus.  Rufen Sie die `make_dot_string`-Funktion auf, und fügen Sie den Parameter `x` hinzu.  Sie können der Datei Assertionsanweisungen für die testgesteuerte Entwicklung hinzufügen. PTVS kann dann direkt die neue Funktion in Vervollständigungslisten bereitstellen.  
+ Sie können einen Ausschnitt zum Generieren von Code verwenden.  Wählen Sie im Menü "Bearbeiten" die Option "IntelliSense" und dann "Ausschnitt einfügen" aus.  Wählen Sie jetzt python und dann DEF aus.  Aufrufen der Funktion `make_dot_string` und Hinzufügen eines Parameters `x` .  Sie können der Datei Assertionsanweisungen für die testgesteuerte Entwicklung hinzufügen. PTVS kann dann direkt die neue Funktion in Vervollständigungslisten bereitstellen.  
   
 ```python  
 assert make_dot_string(90) == '          o'  
@@ -66,6 +66,6 @@ def main ():
   
  Sie können diese Anweisungen in einem sehr kurzen [YouTube-Video](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) ansehen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Wiki-Dokumentation](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [PTVS-Videos: Einstieg und ausführliche Erläuterungen](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

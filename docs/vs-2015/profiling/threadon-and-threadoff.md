@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145554"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn und ThreadOff
@@ -31,7 +31,7 @@ Die VSPerfCmd.exe-Unterbefehle **ThreadOff** und **ThreadOn** sind nur in Befehl
   
 - **ThreadOn** legt die globale Start/Stop-Zähler sofort auf 1 fest und setzt die Profilerstellung daher fort.  
   
-  Weitere Informationen finden Sie unter [APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md).  
+  Weitere Informationen finden Sie unter [Profilerstellungstools-APIs](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,13 +47,13 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>Gültige Optionen  
  **ThreadOn** und **ThreadOff** können in Befehlszeilen angegeben werden, die auch die folgenden Unterbefehle enthalten.  
   
- **Start:** `Method`  
+ **Start:**`Method`  
  Initialisiert die Profilerstellungssitzung in der Befehlszeile und legt die angegebene Profilerstellungsmethode fest  
   
  **GlobalOff**|**GlobalOn**  
  Beendet oder startet die Profilerstellung für alle Prozesse in einer Befehlszeilen-Profilerstellungssitzung  
   
- {**ProcessOff**|**ProcessOn**} **:** `TID`  
+ {**PROCESSOFF**&#124;**ProcessOn**} **:**`TID`  
  Beendet oder startet die Profilerstellung für den angegebenen Prozess  
   
 ## <a name="example"></a>Beispiel  
@@ -71,8 +71,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

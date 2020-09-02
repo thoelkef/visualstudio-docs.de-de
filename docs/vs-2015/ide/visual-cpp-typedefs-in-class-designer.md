@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 980c49aafba55e29714d786e492f7bb37a8ca621
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646747"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Visual C++-Typedefs im Klassen-Designer
@@ -39,7 +39,7 @@ typedef class coord
 
  `COORD OriginPoint;`
 
- Zwar können Sie eine typedef ohne Namen deklarieren, der Klassen-Designer verwendet aber nicht den Namen des Tags, den Sie angeben; er verwendet den Namen, den die Klassenansicht generiert. Beispielsweise ist die folgende Deklaration gültig, sie wird aber in der Klassenansicht und im Klassen-Designer als ein Objekt mit dem Namen **__unbenannt** angezeigt:
+ Zwar können Sie eine typedef ohne Namen deklarieren, der Klassen-Designer verwendet aber nicht den Namen des Tags, den Sie angeben; er verwendet den Namen, den die Klassenansicht generiert. Beispielsweise ist folgende Deklaration gültig, wird aber in der Klassenansicht und im Klassen-Designer als ein Objekt namens **__unnamed** angezeigt:
 
 ```
 typedef class coord
@@ -117,7 +117,7 @@ class A {
 
  Typedef
 
- Siehe oben.
+ Wie oben.
 
 ```
 Class B {};
@@ -200,5 +200,5 @@ class A {
 
  > MyIntVect
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Arbeiten mit Visual C++ Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) [(notinbuild) typedef-Spezifizierer](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

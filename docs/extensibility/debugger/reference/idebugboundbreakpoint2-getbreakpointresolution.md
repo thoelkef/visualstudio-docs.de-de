@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution | Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: getbreakpointresolution | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735580"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Ruft die Haltepunktauflösung ab, die diesen Haltepunkt beschreibt.
+Ruft die breakpointauflösung ab, die diesen Haltepunkt beschreibt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,20 +42,20 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>Parameter
 `ppBPResolution`\
-[out] Gibt die [IDebugBreakpointResolution2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) zurück, die eine der folgenden Stellt:
+vorgenommen Gibt die [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) -Schnittstelle zurück, die eine der folgenden Punkte darstellt:
 
-- Das Breakpoint-Auflösungsobjekt, das die Position im Code beschreibt, an die ein Codehaltepunkt gebunden wurde.
+- Das breakpointauflösungs-Objekt, das die Position im Code beschreibt, an der ein Code Haltepunkt gebunden wurde.
 
-- Der Datenspeicherort, an dem ein Datenhaltepunkt gebunden ist.
+- Der Daten Speicherort, an den ein Daten Haltepunkt gebunden ist.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Status des `BPS_DELETED` gebundenen Haltepunktobjekts auf (Teil der BP_STATE-Enumeration) festgelegt ist. [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück `E_BP_DELETED` , wenn der Zustand des gebundenen Haltepunkt Objekts auf festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).
 
 ## <a name="remarks"></a>Bemerkungen
-Rufen Sie die [GetBreakpointType-Methode](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) auf, um zu bestimmen, ob die Breakpoint-Auflösung für Code oder Daten bestimmt ist.
+Aufrufen der [getbreakpointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) -Methode, um zu bestimmen, ob die breakpointauflösung für Code oder Daten vorgesehen ist.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CBoundBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugBoundBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CBoundBreakpoint` , das die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Schnittstelle verfügbar macht.
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(

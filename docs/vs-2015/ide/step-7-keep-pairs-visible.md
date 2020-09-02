@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d7981ca81839cc8d0959cf5ae75c6d9a001d39a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646948"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Schritt 7: Beibehalten der Sichtbarkeit von Paaren
@@ -28,7 +28,7 @@ Das Spiel funktioniert gut, solange der Spieler jeweils zwei Symbole auswählt, 
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]
 
-     Die erste Zeile der gerade hinzugefügten `if`-Anweisung überprüft, ob das Symbol im ersten Bezeichnungsfeld, das der Spieler auswählt, dem Symbol im zweiten Bezeichnungsfeld entspricht. Wenn die Symbole übereinstimmen, führt das Programm in die drei Anweisungen zwischen den geschweiften Klammern (in C#) bzw. die drei Anweisungen innerhalb der `if`-Anweisung (in Visual Basic ) aus. Die ersten beiden Anweisungen setzen die Verweisvariablen `firstClicked` und `secondClicked` zurück, damit diese nicht mehr auf Bezeichnungsfelder verweisen. (Sie können diese beiden Anweisungen aus dem Tick-Ereignishandler des Timers erkennen.) Die dritte Anweisung ist eine `return`-Anweisung, die das Programm anweist, die restlichen Anweisungen in der Methode zu überspringen, ohne sie auszuführen.
+     Die erste Zeile der gerade hinzugefügten `if`-Anweisung überprüft, ob das Symbol im ersten Bezeichnungsfeld, das der Spieler auswählt, dem Symbol im zweiten Bezeichnungsfeld entspricht. Wenn die Symbole übereinstimmen, führt das Programm in die drei Anweisungen zwischen den geschweiften Klammern (in C#) bzw. die drei Anweisungen innerhalb der `if`-Anweisung (in Visual Basic ) aus. Die ersten beiden Anweisungen setzen die Verweisvariablen `firstClicked` und `secondClicked` zurück, damit diese nicht mehr auf Bezeichnungsfelder verweisen. (Sie können diese beiden Anweisungen aus dem Tick-Ereignishandler des Timers erkennen.) Die dritte Anweisung ist eine- `return` Anweisung, die das Programm anweist, die restlichen Anweisungen in der Methode zu überspringen, ohne sie auszuführen.
 
      Beim Programmieren in Visual C# ist Ihnen möglicherweise aufgefallen, dass in einigen Teilen des Codes ein einzelnes Gleichheitszeichen (`=`) verwendet wird, während in anderen Anweisungen zwei Gleichheitszeichen (`==`) verwendet werden. Überlegen Sie, warum an einigen Stellen `=` und an anderen Stellen `==` verwendet wird.
 
@@ -60,6 +60,6 @@ Das Spiel funktioniert gut, solange der Spieler jeweils zwei Symbole auswählt, 
 
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Wie Sie zum nächsten Tutorialschritt gelangen, erfahren Sie unter [Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+- Um zum nächsten Schritt des Tutorials zu wechseln, klicken [Sie auf Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
-- Wie Sie zum vorherigen Tutorialschritt zurückzukehren, erfahren Sie unter [Schritt 6: Hinzufügen eines Timers](../ide/step-6-add-a-timer.md).
+- Um zum vorherigen Tutorialschritt zurückzukehren, finden Sie weitere Informationen unter [Schritt 6: Hinzufügen eines Timers](../ide/step-6-add-a-timer.md).

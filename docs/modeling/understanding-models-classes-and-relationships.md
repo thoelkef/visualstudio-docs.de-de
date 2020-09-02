@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565902"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
@@ -22,7 +22,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
  In diesem Thema werden die zentralen Funktionen der DSL-Definition erläutert.
 
 ## <a name="the-dsl-definition"></a>Die DSL-Definition
- Wenn Sie `Dsl\DslDefinition.dsl`öffnen, ähnelt das Visual Studio-Fenster der folgenden Abbildung.
+ Wenn Sie öffnen `Dsl\DslDefinition.dsl` , ähnelt das Visual Studio-Fenster der folgenden Abbildung.
 
  ![DSL-Designer](../modeling/media/dsl_designer.png)
 
@@ -116,7 +116,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  In der XML-Darstellung des Modells wird ein Verweis Link zwischen zwei Elementen mithilfe von *Monikern dargestellt.* Das heißt, Moniker sind Namen, die jedes Element im Modell eindeutig identifizieren. Der XML-Knoten für jedes Modellelement enthält einen Knoten, der den Namen der Beziehung und den Moniker des anderen Elements angibt.
 
-## <a name="roles"></a>-Rollen
+## <a name="roles"></a>Rollen
  Jede Domänen Beziehung verfügt über zwei Rollen: eine Quell Rolle und eine Zielrolle.
 
  In der folgenden Abbildung ist die Linie zwischen der Domänen Klasse **Verleger** und der **publishercatalog** -Domänen Beziehung die Quell Rolle. Die Linie zwischen der Domänen Beziehung und der Domänen Klasse des **Albums** ist die Zielrolle.
@@ -128,11 +128,11 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
  Wenn Sie in einer DSL-Definition eine Beziehung erstellen, werden den Eigenschafts-und Beziehungs Namen Standardwerte zugewiesen. Sie können Sie jedoch ändern.
 
 ## <a name="multiplicities"></a>Multiplizitäten
- Multiplizitäten geben an, wie viele Elemente in einer Domänen Beziehung dieselbe Rolle aufweisen können. Im Beispiel gibt die NULL-zu-n-multiplizitätseinstellung (0..\*) für die- **Katalog** Rolle an, dass jede Instanz der **Verleger** Domänen Klasse so viele **publishercatalog** -Beziehungslinks haben kann, wie Sie Sie angeben möchten.
+ Multiplizitäten geben an, wie viele Elemente in einer Domänen Beziehung dieselbe Rolle aufweisen können. Im Beispiel gibt die NULL-zu-n-multiplizitätseinstellung (0.. \* ) für die- **Katalog** Rolle an, dass jede Instanz der **Verleger** Domänen Klasse so viele **publishercatalog** -Beziehungslinks haben kann, wie Sie Sie angeben möchten.
 
- Konfigurieren Sie die Multiplizität einer Rolle entweder durch Eingabe des Diagramms oder durch Ändern der `Multiplicity`-Eigenschaft im **Eigenschaften** Fenster. In der folgenden Tabelle werden die Einstellungen für diese Eigenschaft beschrieben.
+ Konfigurieren Sie die Multiplizität einer Rolle entweder durch Eingabe des Diagramms oder durch Ändern der- `Multiplicity` Eigenschaft im **Eigenschaften** Fenster. In der folgenden Tabelle werden die Einstellungen für diese Eigenschaft beschrieben.
 
-|Multiplizitätstyp|Beschreibung|
+|Multiplizitätstyp|BESCHREIBUNG|
 |-|-|
 |0.. * (null bis viele)|Jede Instanz der Domänen Klasse kann über mehrere Instanzen der Beziehung oder keine Instanzen der Beziehung verfügen.|
 |0.. 1 (null bis eins)|Jede Instanz der Domänen Klasse kann nicht mehr als eine Instanz der Beziehung oder keine Instanzen der Beziehung aufweisen.|
@@ -148,6 +148,6 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  Eine abgeleitete Beziehung spezialisiert ihre Basis Beziehung. Die Domänen Klassen, mit denen Sie verknüpft ist, sollten von oder den gleichen Klassen abgeleitet werden, die durch die Basis Beziehung verknüpft sind. Wenn eine Verknüpfung der abgeleiteten Beziehung in einem Modell erstellt wird, handelt es sich um eine Instanz der abgeleiteten und der Basis Beziehungen. Sie können im Programmcode zum umgekehrten Ende der Verknüpfung navigieren, indem Sie die Eigenschaften verwenden, die entweder von der Basis oder von der abgeleiteten Klasse generiert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

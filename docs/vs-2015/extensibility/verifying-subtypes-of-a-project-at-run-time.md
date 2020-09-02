@@ -12,20 +12,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e3940097ac53255b7bdd2c12c9ccc64605016e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584904"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Überprüfen von Untertypen eines Projekts zur Laufzeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eine VSPackage, die von einem benutzerdefinierten Projektuntertyp abhängt aufzunehmen Logik auf die Suche nach, die Untertyp, damit er ordnungsgemäß ausfallen kann, wenn der Untertyp nicht vorhanden ist. Das folgende Verfahren veranschaulicht das Überprüfen Sie, ob das Vorhandensein einer angegebenen Untertyp.  
+Ein VSPackage, das von einem benutzerdefinierten Projekt Untertyp abhängt, sollte Logik zum Suchen nach dem Untertyp enthalten, damit er ordnungsgemäß fehlschlagen kann, wenn der Untertyp nicht vorhanden ist. Im folgenden Verfahren wird gezeigt, wie das vorhanden sein eines angegebenen unter Typs überprüft wird.  
   
-### <a name="to-verify-the-presence-of-a-subtype"></a>Um zu überprüfen, ob das Vorhandensein eines Untertyps  
+### <a name="to-verify-the-presence-of-a-subtype"></a>So überprüfen Sie das vorhanden sein eines Untertyps  
   
-1. Abrufen die Projekthierarchie aus den Projekt- und Projektmappendateien Objekten als eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt, indem Sie den folgenden Code hinzufügen, um Ihr VSPackage.  
+1. Rufen Sie die Projekt Hierarchie aus dem Projekt und projektmappenobjekten als- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt ab, indem Sie den folgenden Code zu Ihrem VSPackage hinzufügen.  
   
     ```  
     EnvDTE.DTE dte;  
@@ -42,7 +42,7 @@ Eine VSPackage, die von einem benutzerdefinierten Projektuntertyp abhängt aufzu
   
     ```  
   
-2. Wandeln Sie die Hierarchie der <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> Schnittstelle.  
+2. Wandeln Sie die Hierarchie in die- <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> Schnittstelle um.  
   
     ```  
     IVsAggregatableProjectCorrected AP;  
@@ -50,14 +50,14 @@ Eine VSPackage, die von einem benutzerdefinierten Projektuntertyp abhängt aufzu
   
     ```  
   
-3. Rufen Sie die Liste der Projekttyp-GUIDs, durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.  
+3. Rufen Sie die Liste der Projekttyp-GUIDs ab, indem Sie aufrufen <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .  
   
     ```  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
   
     ```  
   
-4. Überprüfen Sie die Liste für die GUID für den angegebenen Untertyp.  
+4. Überprüfen Sie die Liste auf die GUID des angegebenen unter Typs.  
   
     ```  
     // Replace the string "MyGUID" with the GUID of the subtype.  
@@ -68,7 +68,7 @@ Eine VSPackage, die von einem benutzerdefinierten Projektuntertyp abhängt aufzu
     }  
     ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Projektuntertypen](../extensibility/internals/project-subtypes.md)   
- [Entwurf von Projektuntertypen](../extensibility/internals/project-subtypes-design.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Projekt Untertypen](../extensibility/internals/project-subtypes.md)   
+ [Entwerfen von Projekt Untertypen](../extensibility/internals/project-subtypes-design.md)   
  [Eigenschaften und Methoden, die von Projektuntertypen erweitert werden](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 025ba2eb95514efc740d1f8f7b3bf674d6bf237a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645639"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
@@ -74,10 +74,10 @@ Die Funktion zum Suchen und Ersetzen von Text lässt sich im Visual Studio Code-
  Wenn Sie **Alle suchen** auswählen, erhalten Sie im Fenster **Suchergebnisse** eine Liste der Übereinstimmungen für Ihre Suche. Wenn Sie ein Ergebnis in der Liste auswählen, wird die dazugehörige Datei mit hervorgehobenen Übereinstimmungen angezeigt. Wenn die Datei nicht bereits zur Bearbeitung geöffnet ist, wird sie in einer Vorschauregisterkarte auf der rechten Seite der Registerkartenreihe geöffnet. Sie können das Steuerelement **Suchen** verwenden, um die Liste **Suchergebnisse** zu durchsuchen.
 
 ### <a name="creating-custom-search-folder-sets"></a>Erstellen von benutzerdefinierten Suchordnersätzen
- Sie können einen Suchbereich definieren, indem Sie auf die Schaltfläche **Suchordner auswählen** (sie sieht so aus: **…** ) neben dem Feld **Suchen in** klicken. Im Dialogfeld **Suchordner auswählen** können Sie einen Satz mit Ordnern festlegen, der durchsucht werden soll, und Sie können die Spezifikation zur späteren Wiederverwendung speichern. Sie können nur Ordner auf einem Remotecomputer festlegen, wenn Sie dem lokalen Computer das Laufwerk des Remotecomputers zugeordnet haben.
+ Sie können einen Suchbereich definieren, indem Sie auf die Schaltfläche **Suchordner auswählen** (sie sieht so aus: **…**) neben dem Feld **Suchen in** klicken. Im Dialogfeld **Suchordner auswählen** können Sie einen Satz mit Ordnern festlegen, der durchsucht werden soll, und Sie können die Spezifikation zur späteren Wiederverwendung speichern. Sie können nur Ordner auf einem Remotecomputer festlegen, wenn Sie dem lokalen Computer das Laufwerk des Remotecomputers zugeordnet haben.
 
 ### <a name="creating-custom-component-sets"></a>Erstellen von benutzerdefinierten Komponentensätzen
  Sie können Komponentensätze als Suchbereich definieren, indem Sie auf die Schaltfläche **Benutzerdefinierten Komponentensatz bearbeiten** neben dem Feld **Suchen in** klicken. Sie können installierte .NET- oder COM-Komponenten, in der Projektmappe enthaltene Visual Studio-Projekte oder eine beliebige Assembly bzw. Typbibliothek (eine DLL-, TLB-, OLB-, EXE- oder OCX-Datei) angeben. Wählen Sie zur Suche nach Verweisen das Feld **In Verweisen suchen** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
