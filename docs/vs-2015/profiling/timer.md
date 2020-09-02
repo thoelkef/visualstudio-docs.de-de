@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e5f6c6db903b3ecced2ac3ebc4aaa0a3e60910c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145497"
 ---
 # <a name="timer"></a>Zeitgeber
@@ -40,26 +40,26 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>Erforderliche Optionen  
  **Timer** lassen sich nur in einer Befehlszeile festlegen, die eine der folgenden Optionen enthält.  
   
- **Starten:** `AppName`  
+ **Starten** Sie Folgendes: `AppName`  
  Startet den Profiler und die von `AppName` festgelegten Anwendungen.  
   
- **Attach:** `PID`  
+ **Anfügen:**`PID`  
  Fügt den Profiler dem von der Prozess-ID (`PID`) festgelegten Prozess an.  
   
 ## <a name="invalid-options"></a>Ungültige Optionen  
  Die folgenden Optionen können nicht auf der selben Befehlszeile wie **Timer** festgelegt werden.  
   
- **PF**[ **:** `Events`]  
+ **PF**[**:** `Events` ]  
  Legt die Seitenstandards für das Samplingereignis fest und optional das Samplingintervall auf `Events`. Das standardmäßige PF-Intervall beträgt 10.  
   
- **Sys**[ **:** `Events`]  
+ **Sys**[**:** `Events` ]  
  Legt die Betriebssystemaufrufe für das Samplingereignis fest und optional das Samplingintervall auf `Events`. Das standardmäßige Sys-Intervall beträgt 10.  
   
- **Counter**[ **:** `Name,Reload,FriendlyName`]  
+ **Counter**[**:** `Name,Reload,FriendlyName` ]  
  Legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator fest und das Samplingintervall auf `Reload`.  
   
- **GC**[ **:** {**Allocation**|**Lifetime**}]  
- Sammelt .NET-Speicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.  
+ **GC**[**:**{**Allocation**|**Lifetime**}]  
+ Sammelt .NET-Speicherdaten. Standardmäßig (**Zuordnung**) werden Daten bei jedem Speicher Belegungs Ereignis gesammelt. Wenn der **Lifetime** -Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection Ereignis gesammelt.  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt, wie das Profiler-Samplingintervall auf 1.000.000 Prozessortaktzyklen festgelegt wird.  
@@ -69,8 +69,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

@@ -12,24 +12,24 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a88037abf64211148730d5a36cf92605b34a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197180"
 ---
-# <a name="solutions"></a>Projektmappen
+# <a name="solutions"></a>Lösungen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten. Die Projekt- und Status-Informationen, die die Lösung betreffen, werden in zwei Projektmappendateien, die eine textbasierte Projektmappendatei (.sln) und eine binäre Lösung Benutzeroptionsdatei (SUO) gespeichert.  
+Eine Lösung ist eine Gruppierung von einem oder mehreren Projekten, die zusammenarbeiten, um eine Anwendung zu erstellen. Die Projekt-und Statusinformationen, die sich auf die Lösung beziehen, werden in zwei Projektmappendateien gespeichert, einer textbasierten Projektmappendatei (. sln) und einer binären projektmappenbenutzeroption (. suo).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht](../../extensibility/internals/solutions-overview.md)  
- Beschreibt die Arten von Lösungsdateien enthalten, die in einer Projektmappe, und der Prozess, der auftritt, wenn eine Projektmappe geöffnet ist.  
+ Erläutert die Typen von Projektmappendateien, die in einer Lösung enthalten sind, sowie den Prozess, der beim Öffnen einer Projekt Mappe auftritt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projektmappendatei (SLN)](../../extensibility/internals/solution-dot-sln-file.md)  
- Erläutert die Struktur einer sln-Datei.  
+ Erläutert die Struktur einer SLN-Datei.  
   
  [Datei mit Benutzeroptionen in Projektmappen (SUO)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
- Erläutert die SUO-Datei an.
+ Erläutert die SUO-Datei.

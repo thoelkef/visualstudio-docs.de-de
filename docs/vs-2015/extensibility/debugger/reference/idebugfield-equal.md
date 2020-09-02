@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal | Microsoft-Dokumentation
+title: 'Idebugfield:: Equal | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa630a6f2084f7ff79a9c89b685658cf694fcab9
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547311"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode vergleicht dieses Feld mit dem angegebenen Feld hinsichtlich ihrer Gleichheit.  
+Diese Methode vergleicht dieses Feld mit dem angegebenen Feld auf Gleichheit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int Equal(
   
 #### <a name="parameters"></a>Parameter  
  `pField`  
- [in] Das Feld, in dieses Objekt verglichen werden soll.  
+ in Das Feld, das mit diesem verglichen werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt zurück, wenn die Felder identisch sind, `S_OK`. Gibt zurück, wenn die Felder unterscheiden, `S_FALSE.` wird, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Felder identisch sind, wird zurückgegeben `S_OK` . Wenn die Felder verschieden sind, wird zurückgegeben `S_FALSE.` , andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

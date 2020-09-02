@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 868c4e2f8b03002bbf7c6a6d0855f2a9af3fa95f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654302"
 ---
 # <a name="setting-language-specific-editor-options"></a>Festlegen von sprachspezifischen Editoroptionen
@@ -26,17 +26,17 @@ ms.locfileid: "72654302"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet eine Vielzahl von Optionen für den Text-Editor, die für bestimmte Programmiersprachen gelten.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Optionen, Text-Editor, Standard (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Beschreibt die Einstellungen für End-Konstrukte, Code Neuformatierung, Gliederung und Fehlerkorrektur Vorschläge, unter anderem für [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]-Code.
+ [Optionen, Text-Editor, Standard (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Beschreibt die Einstellungen für End-Konstrukte, Code Neuformatierung, Gliederung und Fehlerkorrektur Vorschläge, u.a. für [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] Code.
 
- [Optionen, Text-Editor, CC++/, Formatierung](../../ide/reference/options-text-editor-c-cpp-formatting.md) beschreibt Gliederung, Einzug, QuickInfo und andere Einstellungen für C und C++ Code.
+ [Optionen, Text-Editor, C/C++, Formatierung](../../ide/reference/options-text-editor-c-cpp-formatting.md) Beschreibt Gliederung, Einzug, QuickInfo und andere Einstellungen für C-und C++-Code.
 
- [Optionen, Text-Editor, CC++/, erweitert](../../ide/reference/options-text-editor-c-cpp-advanced.md) beschreibt Einstellungen für IntelliSense und Datenbankdateien bei Verwendung C++von C und.
+ [Optionen, Text-Editor, C/C++, erweitert](../../ide/reference/options-text-editor-c-cpp-advanced.md) Beschreibt Einstellungen für IntelliSense und Datenbankdateien bei Verwendung von C und C++.
 
- [Optionen, Text-Editor C#,, Formatierung](../../ide/reference/options-text-editor-csharp-formatting.md) beschreibt die Einstellungen für Einzug, neue Zeilen Formatierung und umschließen von Text, u.a. für C# und j#.
+ [Optionen, Text-Editor, c#, Formatierung](../../ide/reference/options-text-editor-csharp-formatting.md) Beschreibt die Einstellungen für Einzug, neue Zeilen Formatierung und umschließen von Text, u.a. für c# und j#.
 
- [Optionen, Text-Editor C#,, erweitert](../../ide/reference/options-text-editor-csharp-advanced.md) beschreibt Gliederung, Fehler Identifikation und XML-Dokumentations Kommentar C# Einstellungen für und j#.
+ [Optionen, Text-Editor, c#, erweitert](../../ide/reference/options-text-editor-csharp-advanced.md) Beschreibt Gliederung, Fehler Identifikation und XML-Dokumentations Kommentar Einstellungen für c# und j#.
 
- [Optionen, Text-Editor C#,, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) beschreibt die Einstellungen, die angeben, wie sich die IntelliSense-Vervollständigungsliste bei der Arbeit in C# -und j#-Code verhält.
+ [Optionen, Text-Editor, c#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) Beschreibt die Einstellungen, die angeben, wie sich die IntelliSense-Vervollständigungsliste bei der Arbeit in c#-und j#-Code verhält.
 
  [Validierung, CSS, Text-Editor, Dialog Feld "Optionen](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc) " Beschreibt die Einstellungen für die Anweisungs Vervollständigung und die Fehlerkorrektur für Cascading Stylesheets (CSS).
 

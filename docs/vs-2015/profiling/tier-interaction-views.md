@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f313865f892fb17b5c7e2c5f0ad7ecfc800be803
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145560"
 ---
 # <a name="tier-interaction-views"></a>Ebeneninteraktions-Ansicht
@@ -28,4 +28,4 @@ Die Profilerstellung für Ebeneninteraktion bietet weitere Informationen zu den 
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Ansicht "Ebeneninteraktionen"](../profiling/tier-interactions-view.md)
+ [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)

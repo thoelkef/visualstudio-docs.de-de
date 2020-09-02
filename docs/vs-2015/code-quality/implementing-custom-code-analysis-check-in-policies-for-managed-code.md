@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1cf759e01e5f152f2220124c90f145bfbbe3c01d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651587"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
@@ -39,7 +39,7 @@ Eine Eincheck Richtlinie für die Code Analyse gibt einen Satz von Regeln an, di
 
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>So erstellen Sie den Versions Kontroll Ordner für den Eincheck Richtlinien-Regelsatz
 
-1. Erweitern Sie in [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] den Knoten Teamprojekt, und klicken Sie dann auf **Quell**Code Verwaltung.
+1. [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]Erweitern Sie in den Knoten Teamprojekt, und klicken Sie dann auf **Quell**Code Verwaltung.
 
 2. Klicken Sie im **Ordner** Bereich mit der rechten Maustaste auf das Teamprojekt, und klicken Sie dann auf **neuer Ordner**.
 
@@ -47,7 +47,7 @@ Eine Eincheck Richtlinie für die Code Analyse gibt einen Satz von Regeln an, di
 
 #### <a name="to-create-the-check-in-policy-rule-set"></a>So erstellen Sie einen Eincheck Richtlinien-Regelsatz
 
-1. Zeigen Sie im Menü **Datei** auf **neu**, und klicken Sie dann auf **Datei**.
+1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Datei**.
 
 2. Klicken Sie in der Liste **Kategorien** auf **Allgemein**.
 
@@ -82,7 +82,7 @@ Eine Eincheck Richtlinie für die Code Analyse gibt einen Satz von Regeln an, di
 
 3. Doppelklicken Sie in der Liste **Eincheck Richtlinie** auf **Code Analyse**, und stellen Sie sicher, dass das Kontrollkästchen **Code Analyse für verwalteten Code erzwingen** aktiviert ist.
 
-4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Select Regelsatz aus > der Quell Code Verwaltung**.
+4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Select Rule Set from Source Control>** .
 
 5. Geben Sie den Pfad der Regel Satz Datei der Eincheck Richtlinie in der Versionskontrolle ein.
 
@@ -112,10 +112,10 @@ Eine Eincheck Richtlinie für die Code Analyse gibt einen Satz von Regeln an, di
 
 4. Klicken Sie ggf. auf die entsprechenden Optionen in den Listen **Konfiguration** und **Plattform** .
 
-5. Aktivieren Sie das Kontrollkästchen **Code Analyse für Build aktivieren (definiert CODE_ANALYSIS Konstante)** , um die Code Analyse jedes Mal auszuführen, wenn das Code Projekt mithilfe der angegebenen Konfiguration erstellt wird.
+5. Wenn Sie die Code Analyse bei jedem Erstellen des Code Projekts mithilfe der angegebenen Konfiguration ausführen möchten, aktivieren Sie das Kontrollkästchen **Code Analyse für Build aktivieren (definiert CODE_ANALYSIS Konstante)** .
 
 6. Wenn Sie Code in Komponenten anderer Unternehmen ignorieren möchten, aktivieren Sie das Kontrollkästchen **Ergebnisse aus generiertem Code unterdrücken** .
 
-7. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse... >** .
+7. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse...>** .
 
 8. Geben Sie die lokale Version der Regel Satz Datei des Eincheck Richtlinien an.

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3c6e7550940f9d2efa5ca228123310f1b861ee76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651598"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Gewusst wie: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie
@@ -35,7 +35,7 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie auf **Code Analyse**.
+2. Klicken Sie auf **Codeanalyse**.
 
 3. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf den Regelsatz Check-in-Richtlinie.
 
@@ -45,9 +45,9 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
 
-3. Klicken Sie auf **Code Analyse**.
+3. Klicken Sie auf **Codeanalyse**.
 
-4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse... >** .
+4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse...>** .
 
 5. Geben Sie im Dialogfeld **Öffnen** die Regel Satz Datei für die Eincheck Richtlinie an.
 
@@ -65,6 +65,6 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 5. Öffnen Sie das Dialogfeld "Eigenschaften" für das Code Projekt, und zeigen Sie die Seite " **Code Analyse** " an.
 
-6. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse... >** .
+6. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse...>** .
 
 7. Geben Sie im Dialogfeld **Öffnen** die Regel Satz Datei an.

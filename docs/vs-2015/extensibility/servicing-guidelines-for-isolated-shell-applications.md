@@ -1,5 +1,5 @@
 ---
-title: Wartungsrichtlinien für isolierte Shell-Anwendungen | Microsoft-Dokumentation
+title: Wartungsrichtlinien für isolierte Shellanwendungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159270"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Wartungsrichtlinien für Anwendungen der isolierten Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie eine Visual Studio isolated Shell-Anwendung verteilen, müssen Sie möglicherweise geben nach der Installation von Softwareupdates für Ihre Anwendung. Zu diesem Zweck müssen Sie Ihre Anwendung installieren, über eine Microsoft Installer (MSI)-Datei. Diese Art von Installation ermöglicht die Softwareupdates von Microsoft Web verteilt werden bereitgestellt herunterladen und von Ihren Kunden ohne benutzerdefinierte Eingriff genutzt werden.  
+Wenn Sie eine isolierte Visual Studio Shell-Anwendung verteilen, müssen Sie nach der Installation Software Updates für die Anwendung bereitstellen können. Zu diesem Zweck müssen Sie die Anwendung mithilfe einer Microsoft Installer (MSI)-Datei installieren. Bei dieser Art der Installation können von Microsoft bereitgestellte Software Updates durch den Webdownload neu verteilt und von ihren Kunden ohne benutzerdefiniertes Eingreifen genutzt werden.  
   
 ## <a name="servicing-requirements"></a>Wartungsanforderungen  
- Sie können sicherstellen, dass die isolierte Shell-Installation Updates zulassen kann, indem Sie sicherstellen, dass das Installationsprogramm die drei folgenden Kriterien erfüllt.  
+ Sie können sicherstellen, dass die isolierte Shell-Installation Updates zulässt, indem Sie sicherstellen, dass das Installationsprogramm die folgenden drei Kriterien erfüllt.  
   
-### <a name="redistribute-by-using-an-msi"></a>Erneut verteilen Sie, indem Sie eine MSI-Datei  
- Sie müssen eine MSI-Datei verwenden, um die Anwendung neu verteilen, da eine MSI-Datei behält die Produkt-Identität und sicher, dass stellt die Anwendung eines physischen Speicherorts auf dem Clientcomputer. Mergemodule (MSM-Dateien) bieten keine solchen Garantien und sollte nicht verwendet werden.  
+### <a name="redistribute-by-using-an-msi"></a>Neuverteilen mithilfe einer MSI  
+ Sie müssen eine MSI-Anwendung verwenden, um die Anwendung neu zu verteilen, da eine MSI die Produktidentität beibehält und sicherstellt, dass die Anwendung über einen physischen Speicherort auf dem Client Computer verfügt. Mergemodule (MSM-Dateien) bieten keine solchen Zusicherungen und sollten nicht verwendet werden.  
   
 ### <a name="accounting-for-custom-actions"></a>Kontoführung für benutzerdefinierte Aktionen  
- Benutzerdefinierte Aktionen sind nicht dem Standard entsprechende Installation Anweisungen in einem Installationsprogramm. Benutzerdefinierte Aktionen werden die Parameter wie z. B. Speicherorte, registrierungseinstellungen, benutzereinstellungen und andere Installationselemente ändern. Benutzerdefinierte Aktionen möglicherweise Daten bearbeiten, während der Installation.  
+ Benutzerdefinierte Aktionen sind nicht dem Standard entsprechende Installations Direktiven in einem Installationsprogramm. Benutzerdefinierte Aktionen ändern Parameter, wie z. b. Dateispeicher Orte, Registrierungs Einstellungen, Benutzereinstellungen oder andere Installations Elemente. Benutzerdefinierte Aktionen können Daten beim Installations Zeitpunkt bearbeiten.  
   
- Wenn Sie benutzerdefinierte Aktionen in einem Installationsprogramm verwenden, müssen Sie sicherstellen, dass jede benutzerdefinierte Installation-Aktion muss eine entsprechende benutzerdefinierte Aktion rückgängig gemacht werden, wenn der Benutzer die Anwendung deinstalliert haben. Wenn Ihr Programm-Installation schlägt fehl, geben Sie die entsprechende benutzerdefinierte Aktion deinstallieren, verlassen entfernen die Anwendung teilweise installiert.  
+ Wenn Sie benutzerdefinierte Aktionen in einem Installationsprogramm verwenden, müssen Sie sicherstellen, dass jede benutzerdefinierte Installationszeit Aktion eine entsprechende benutzerdefinierte Aktion aufweisen muss, um die Aktion rückgängig zu machen, wenn der Benutzer die Anwendung deinstalliert. Wenn die entsprechende benutzerdefinierte Deinstallations Aktion nicht durch das Installationsprogramm bereitgestellt werden kann, wird das Entfernen der Anwendung teilweise installiert.  
   
-- Eine benutzerdefinierte Aktion, die auf eine bestimmte Version einer Datei oder einen Hashcode Werte basieren schlägt fehl, wenn Softwareupdates so ändern Sie diese Versionen oder prüfsummenhashwerte. In diesem Fall muss diese Werte von die benutzerdefinierte Aktion manuell aktualisieren. Ein zusätzliches Problem tritt auf, wenn Sie Versionen einer Datei oder einen Hashcode Werte Produktversionen gemeinsam genutzt werden. Vermeiden Sie diese Abhängigkeit an, wann immer möglich.  
+- Eine benutzerdefinierte Aktion, die auf einer bestimmten Version einer Datei oder auf Hashwerte basiert, schlägt fehl, wenn diese Versionen oder Hashwerte von Software Updates geändert werden. In diesem Fall muss die benutzerdefinierte Aktion diese Werte manuell aktualisieren. Ein zusätzliches Problem tritt auf, wenn Versionen einer Datei oder von Hash Werten von Produktversionen gemeinsam genutzt werden. Vermeiden Sie diese Abhängigkeit, wenn dies möglich ist.  
   
-### <a name="accounting-for-shared-files"></a>Kontoführung für freigegebene Dateien  
- Freigegebene Dateien haben die gleichen Namen und am gleichen Speicherort durch mehrere Produkte installiert sind. Diese Produkte unterscheiden sich in der Version, Lager halten Unit (SKU) oder beides, und die Produkte können gleichzeitig auf einem Computer vorhanden sein. Allerdings erstellen Sie freigegebene Dateien Wartung Probleme verschiedene Ursachen haben:  
+### <a name="accounting-for-shared-files"></a>Buchhaltung für freigegebene Dateien  
+ Freigegebene Dateien haben die gleichen Namen und werden von mehreren Produkten am gleichen Speicherort installiert. Diese Produkte unterscheiden sich möglicherweise in Version, Stock Keeping Unit (SKU) oder beides, und die Produkte können auf einem bestimmten Computer nebeneinander vorhanden sein. Freigegebene Dateien erstellen jedoch aus verschiedenen Gründen Wartungsprobleme:  
   
-- Aktualisieren freigegebene Dateien kann die Probleme mit der Anwendungskompatibilität, da ein Update für eine Anwendung ändern kann die Version einer Datei ein, die eine zweite Anwendung, die nicht aktualisiert wurde. Installationsprogramme für Produkte, die Dateifreigabe gezählt, Verweise auf die freigegebenen Dateien. Deinstallieren eines Produkts wirkt sich daher nicht auf freigegebene Dateien über verringern die Anzahl der installierten Instanzen aus.  
+- Das Aktualisieren von freigegebenen Dateien kann zu Anwendungs Kompatibilitätsproblemen führen, da bei einem Update einer Anwendung möglicherweise die Version einer Datei geändert wird, die von einer zweiten Anwendung verwendet wird, die nicht aktualisiert wurde. Installationsprogramme für Produkte, die Dateifreigaben verwenden, verweisen auf die freigegebenen Dateien. Daher wirkt sich die Deinstallieren eines Produkts nicht auf freigegebene Dateien aus, die über die Herabsetzung der Anzahl installierter Instanzen hinausgehen.  
   
-- Das Installationsprogramm Quick Fix Engineering (QFE) wird die Versionen der Dateien auf die Versionen der Produkte, die das QFE-Installationsprogramm verarbeitet zurückgesetzt. Dieser Prozess wird möglicherweise eine Anwendung, die eine aktualisierte, freigegebene Datei übermittelt haben.
+- Der QFE-Installer (Quick Fix Engineering) kehrt Versionen von Dateien auf die Versionen der Produkte zurück, die der QFE-Installer gewartet hat. Dieser Prozess unterbricht möglicherweise eine Anwendung, die eine aktualisierte freigegebene Datei übermittelt hat.

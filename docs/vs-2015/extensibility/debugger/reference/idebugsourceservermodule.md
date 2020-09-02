@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerModule | Microsoft-Dokumentation
+title: Idebugsourceservermodule | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0dec9408d0cd1907a533a8cabe740832fe652398
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555693"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Stellt die Source Server-Informationen, die in einer PDB-Datei enthalten ist.  
+Stellt die Quell Server Informationen dar, die in einer PDB-Datei enthalten sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -29,18 +29,18 @@ IDebugSourceServerModule : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle wird vom Debugger-Engines implementiert und genutzt werden, indem Sie die Debugger-Benutzeroberfläche.  
+ Diese Schnittstelle wird von Debugger-Engines implementiert und von der Debugger-Benutzeroberfläche genutzt.  
   
 ## <a name="methods"></a>Methoden  
- Die folgende Tabelle zeigt die Methoden der `IDebugSourceServerModule`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugSourceServerModule` .  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Ruft ein Array von Quellserverinformationen ab.|  
+|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Ruft ein Array von Quell Server Informationen ab.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

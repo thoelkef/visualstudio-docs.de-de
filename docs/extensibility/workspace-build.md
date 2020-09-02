@@ -1,5 +1,5 @@
 ---
-title: Arbeitsbereich-Builds in Visual Studio | Microsoft-Dokumentation
+title: Arbeitsbereichs Erstellung in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,57 +8,57 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553327"
 ---
-# <a name="workspace-build"></a>Arbeitsbereich erstellen
+# <a name="workspace-build"></a>Arbeitsbereichbuild
 
-Buildunterstützung ["Ordner öffnen"](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Szenarien erfordert, geben Sie einen Extender [indiziert](workspace-indexing.md) und [Dateikontext](workspace-file-contexts.md) Daten für die [Arbeitsbereich](workspaces.md), als sowie der Buildvorgang ausgeführt werden soll.
+Die Buildunterstützung in Szenarios für [Offene Ordner](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) erfordert, dass ein Extender [indizierte](workspace-indexing.md) und [Datei Kontext](workspace-file-contexts.md) Daten für den [Arbeitsbereich](workspaces.md)sowie die auszuführende Buildaktion bereitstellt.
 
-Im folgenden finden Sie ein Überblick darüber, was die Erweiterung benötigen.
+Im folgenden finden Sie einen Überblick darüber, was Ihre Erweiterung benötigt.
 
-## <a name="build-file-context"></a>Erstellen von Kontext
+## <a name="build-file-context"></a>Builddateikontext
 
 - Anbieterfactory
-  - `ExportFileContextProviderAttribute` -Attribut mit `supportedContextTypeGuids` wie alle anwendbaren `string` Konstanten aus `BuildContextTypes`
+  - `ExportFileContextProviderAttribute` Attribut mit `supportedContextTypeGuids` als alle anwendbaren `string` Konstanten aus `BuildContextTypes`
   - Implementiert `IWorkspaceProviderFactory<IFileContextProvider>`
-  - Dateianbieter-Kontext
-    - Zurückgeben einer `FileContext` erstellen Sie für jedes Verwendungsweise und die Konfiguration unterstützt
-      - `contextType` Von <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes>
-      - `context` implementiert <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> mit der `Configuration` -Eigenschaft, wie die Build-Konfiguration (z. B. `"Debug|x86"`, `"ret"`, oder `null` Falls nicht zutreffend). Verwenden Sie alternativ eine Instanz der <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext>. Der Konfigurationswert **müssen** mit der Konfiguration aus der indizierte Wert für die Daten übereinstimmen.
+  - Datei Kontext Anbieter
+    - Zurückgeben eines `FileContext` für jeden unterstützten Buildvorgang und jede Konfiguration
+      - Extraktion von `contextType` aus <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes>
+      - `context` implementiert <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> mit der- `Configuration` Eigenschaft als Buildkonfiguration (z. b `"Debug|x86"` `"ret"` ., oder, `null` Falls nicht zutreffend). Verwenden Sie alternativ eine Instanz von <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext> . Der Konfigurations Wert **muss** mit der Konfiguration aus dem Daten Wert für indizierte Dateien identisch sein.
 
-## <a name="indexed-build-file-data-value"></a>Daten-Wert der indizierten Build-Datei
+## <a name="indexed-build-file-data-value"></a>Datenwert der indizierten Builddatei
 
 - Anbieterfactory
-  - `ExportFileScannerAttribute` -Attribut mit `IReadOnlyCollection<FileDataValue>` als unterstützten Typ
+  - `ExportFileScannerAttribute` Attribut mit `IReadOnlyCollection<FileDataValue>` als unterstützter Typ
   - Implementiert `IWorkspaceProviderFactory<IFileScanner>`
 - Dateiscanner auf `ScanContentAsync<T>`
-  - Gibt Daten zurück, wenn `FileScannerTypeConstants.FileDataValuesType` ist das Typargument
-  - Gibt einen Wert des Datei-Daten für jede Konfiguration, die mit erstellt:
+  - Gibt Daten zurück, wenn `FileScannerTypeConstants.FileDataValuesType` das Typargument ist.
+  - Gibt einen Datei Datenwert für jede Konfiguration zurück, die mit erstellt wurde:
     - `type` as `BuildConfigurationContext.ContextTypeGuid`
-    - `context` als der Buildkonfiguration (z. B. `"Debug|x86"`, `"ret"`, oder `null` Falls nicht zutreffend). Dieser Wert **müssen** mit der Konfiguration aus dem Dateikontext übereinstimmen.
+    - `context` als Buildkonfiguration (z `"Debug|x86"` . b `"ret"` ., oder, `null` Falls nicht zutreffend). Dieser Wert **muss** mit der Konfiguration aus dem Datei Kontext identisch sein.
 
-## <a name="build-file-context-action"></a>Dateikontextaktion erstellen
+## <a name="build-file-context-action"></a>Datei Kontext Aktion erstellen
 
 - Anbieterfactory
-  - `ExportFileContextActionProvider` -Attribut mit `supportedContextTypeGuids` wie alle anwendbaren `string` Konstanten aus `BuildContextTypes`
+  - `ExportFileContextActionProvider` Attribut mit `supportedContextTypeGuids` als alle anwendbaren `string` Konstanten aus `BuildContextTypes`
   - Implementiert `IWorkspaceProviderFactory<IFileContextActionProvider>`
-- Aktionsanbieter auf `IFileContextActionProvider.GetActionsAsync`
-  - Zurückgeben einer `IFileContextAction` , entspricht der angegebenen `FileContext.ContextType` Wert
-- Dateikontextaktion
+- Aktions Anbieter für `IFileContextActionProvider.GetActionsAsync`
+  - Gibt einen zurück `IFileContextAction` , der mit dem angegebenen Wert übereinstimmt. `FileContext.ContextType`
+- Datei Kontext Aktion
   - Implementiert `IFileContextAction` und <xref:Microsoft.VisualStudio.Workspace.Extensions.VS.IVsCommandItem>
-  - `CommandGroup` -Eigenschaft gibt `16537f6e-cb14-44da-b087-d1387ce3bf57`
-  - `CommandId` ist `0x1000` für Build-, `0x1010` für die Neuerstellung oder `0x1020` für bereinigen
+  - `CommandGroup` Rückgabe von Eigenschaften `16537f6e-cb14-44da-b087-d1387ce3bf57`
+  - `CommandId` ist `0x1000` für Build, `0x1010` for Rebuild oder `0x1020` for clean
 
 >[!NOTE]
->Da die `FileDataValue` indiziert werden, fallen in eine bestimmte Zeit zwischen dem Öffnen des Arbeitsbereichs und der Punkt, an dem die Datei vollständiger Build-Funktion überprüft wird. Auf der ersten Öffnen eines Ordners, da kein zuvor zwischengespeicherten Index vorhanden ist, wird die Verzögerung angezeigt werden.
+>Da der `FileDataValue` indiziert werden muss, wird zwischen dem Öffnen des Arbeitsbereichs und dem Punkt, an dem die Datei auf vollständige Buildfunktionen überprüft wird, eine gewisse Zeitspanne angezeigt. Die Verzögerung wird beim ersten Öffnen eines Ordners angezeigt, weil kein zuvor zwischen gespeicherter Index vorhanden ist.
 
-## <a name="reporting-messages-from-a-build"></a>Berichterstellung von Nachrichten aus einem build
+## <a name="reporting-messages-from-a-build"></a>Melden von Meldungen aus einem Build
 
-Der Build kann Informationen, Warnung und Fehlermeldungen für Benutzer auf zwei Arten auftreten. Die einfachste Möglichkeit ist die Verwendung der <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> und geben Sie einen <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>, etwa so:
+Der Build kann auf eine von zwei Arten Informationen, Warnungen und Fehlermeldungen an Benutzer überweisen. Die einfache Möglichkeit ist die Verwendung von <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> und die Bereitstellung eines <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage> , wie folgt:
 
 ```csharp
 using Microsoft.VisualStudio.Workspace;
@@ -88,22 +88,22 @@ private static void OutputBuildMessage(IWorkspace workspace)
 }
 ```
 
-`BuildMessage.Type` und `BuildMessage.LogMessage` Steuerung des Verhaltens, in dem Informationen für den Benutzer angezeigt wird. Alle `BuildMessage.TaskType` anderen Wert als `None` erzeugt eine **Fehlerliste** Eintrag mit den angegebenen Details. `LogMessage` wird immer ausgegeben werden, der **erstellen** im Bereich der **Ausgabe** Toolfenster.
+`BuildMessage.Type` und `BuildMessage.LogMessage` steuern das Verhalten, bei dem dem Benutzerinformationen angezeigt werden. `BuildMessage.TaskType`Bei einem anderen Wert als `None` wird ein **Fehlerliste** Eintrag mit den angegebenen Details erzeugt. `LogMessage` wird im Bereich **Build** des Fensters **Ausgabe** Tool immer ausgegeben.
 
-Erweiterungen können auch direkt interagieren, mit der **Fehlerliste** oder **erstellen** Bereich. Ein Fehler ist in Versionen vor Visual Studio 2017 Version 15.7 vorhanden, in denen die `pszProjectUniqueName` Argument <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> wird ignoriert.
+Alternativ können Erweiterungen direkt mit dem Bereich **Fehlerliste** oder **Build** interagieren. In Versionen vor Visual Studio 2017, Version 15,7, ist ein Fehler vorhanden, bei dem das- `pszProjectUniqueName` Argument von <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> ignoriert wird.
 
 >[!WARNING]
->Aufrufer `IFileContextAction.ExecuteAsync` bieten beliebige zugrunde liegende Implementierungen für die `IProgress<IFileContextActionProgressUpdate>` Argument. Rufen Sie nie `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` direkt. Es gibt derzeit keine allgemeingültigen Richtlinien für die Verwendung dieses Arguments, aber diese Richtlinien können geändert werden.
+>Aufrufer von `IFileContextAction.ExecuteAsync` können beliebige zugrunde liegende Implementierungen für das Argument bereitstellen `IProgress<IFileContextActionProgressUpdate>` . Rufen Sie niemals `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` direkt auf. Zurzeit gibt es keine allgemeinen Richtlinien für die Verwendung dieses Arguments. diese Richtlinien können jedoch geändert werden.
 
-## <a name="build-related-apis"></a>Erstellen von verknüpften APIs
+## <a name="build-related-apis"></a>Erstellen verwandter APIs
 
-- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> enthält ausführliche Informationen zur Build-Konfiguration.
-- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> Zeigt <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>s für Benutzer.
+- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> stellt buildkonfigurationsdetails bereit.
+- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> zeigt <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage> Benutzer an.
 
-## <a name="tasksvsjson-and-launchvsjson"></a>"Tasks.VS.JSON" und "Launch.VS.JSON"
+## <a name="tasksvsjson-and-launchvsjson"></a>tasks.vs.json und launch.vs.js
 
-Weitere Informationen zum Erstellen einer Datei "Tasks.VS.JSON" oder "Launch.VS.JSON", finden Sie unter [Anpassen von Build- und debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Weitere Informationen zum Erstellen einer tasks.vs.jsoder launch.vs.jsin einer Datei finden Sie unter [Anpassen von Build-und debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Sprachserverprotokoll](language-server-protocol.md) -erfahren Sie, wie Sie Language-Server in Visual Studio zu integrieren.
+* [Language Server-Protokoll](language-server-protocol.md) : erfahren Sie, wie Sie Sprachserver in Visual Studio integrieren.

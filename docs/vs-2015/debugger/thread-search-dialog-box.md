@@ -1,5 +1,5 @@
 ---
-title: Meldungssuche (Dialogfeld) Thread | Microsoft-Dokumentation
+title: Dialogfeld „Threadsuche“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,43 +12,43 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7090045097ed8d11d18faee44dcd74bb6f573b1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197464"
 ---
 # <a name="thread-search-dialog-box"></a>Dialogfeld "Threadsuche"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mithilfe dieses Dialogfelds zu finden, und wählen Sie den Knoten für einen bestimmten Thread in [Ansicht "Threads"](../debugger/threads-view.md). Um das Dialogfeld anzuzeigen, den Fokus auf ein **Threads** Fenster "Berichtsansicht". Wählen Sie dann **Thread suchen** aus der **Suche** Menü.  
+Verwenden Sie dieses Dialogfeld, um den Knoten für einen bestimmten Thread in der [Threadansicht](../debugger/threads-view.md) zu suchen und auszuwählen. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein **Threadansichtsfenster**. Wählen Sie im Menü **Suchen** die Option **Thread suchen** aus.  
   
  Die folgenden Einstellungen sind verfügbar:  
   
  **Thread**  
- Die Thread-ID für die Suche.  
+ Die Thread-ID, nach der gesucht werden soll.  
   
  **Modul**  
- Das zu suchende Modulzeichenfolge.  
+ Die Modul Zeichenfolge, nach der gesucht werden soll.  
   
  **Suchrichtung nach oben oder unten**  
- Die erste Richtung für die Suche.  
+ Die anfängliche Richtung der Suche.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Dialogfeld "Threadeigenschaften"](../debugger/thread-properties-dialog-box.md)  
- Verwendet zum Anzeigen der Eigenschaften eines Threads, die in der Ansicht "Threads" ausgewählt.  
+ Wird verwendet, um die Eigenschaften eines in der Thread Ansicht ausgewählten Threads anzuzeigen.  
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.  
+ Enthält Abschnitte, in denen jedes Spy + +-Menü und Dialogfeld beschrieben werden.  
   
- [Suchen nach einem Thread in der Ansicht "Threads"](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Erläutert, wie Sie einen bestimmten Thread in der Threadansicht.  
+ [Suchen nach einem Thread in der Thread Ansicht](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ Erläutert, wie Sie einen bestimmten Thread in der Thread Ansicht suchen.  
   
- [Threads View (Threadansicht)](../debugger/threads-view.md)  
- Zeigt eine Strukturansicht der aktiven threads  
+ [Thread Ansicht](../debugger/threads-view.md)  
+ Zeigt eine Strukturansicht aktiver Threads an.  
   
  [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
+ Erläutert die Spy + +-Struktur Ansichten von Fenstern, Meldungen, Prozessen und Threads.  
   
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.
+ Stellt das Spy + +-Tool vor und erläutert, wie es verwendet werden kann.

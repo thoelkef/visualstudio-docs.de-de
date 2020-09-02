@@ -13,30 +13,30 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5bed77a6ec6f8f819137b6859ea0934260f1f03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158399"
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchien und Auswahl
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wenn Sie anpassen, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], müssen Sie wissen, wie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] behandelt Hierarchien, z. B. Projekte, und wie es Auswahlkontext verwendet, um zu bestimmen, was dem Benutzer angezeigt wird. In diesem Abschnitt wird erläutert, die Konzepte der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Hierarchien und Auswahl.  
+Wenn Sie anpassen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , sollten Sie verstehen, wie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Hierarchien wie Projekte behandelt und wie der Auswahl Kontext verwendet wird, um zu bestimmen, was dem Benutzer angezeigt wird. In diesem Abschnitt werden die Konzepte der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Hierarchien und der Auswahl erläutert.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- Beschreibt projekthierarchien und das allgemeine Konzept von Hierarchien.  
+ Beschreibt Projekt Hierarchien und das allgemeine Konzept von Hierarchien.  
   
  [Auswahl und Aktualität in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
- Beschreibt, wie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) verwaltet Informationen zu derzeit aktiven Objekte des Benutzers und VSPackages Währung nachverfolgen können.  
+ Beschreibt, wie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) Informationen über die derzeit aktiven Objekte des Benutzers verwaltet, und ermöglicht VSPackages die Nachverfolgung von Währungen.  
   
  [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)  
- Erläutert das Modell für die Bestimmung des Benutzers Auswahl Kontext den Fokus auf ein Fenster an.  
+ Erläutert das Modell, wie Sie den Fokus des Auswahl Kontexts des Benutzers auf ein Fenster festlegen können.  
   
  [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md)  
- Erläutert, wie die verfügbaren Funktionen auf [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] basiert auf aktuellen Auswahlkontext und allgemeine IDE-Kontext des Benutzers.  
+ Erläutert, wie die verfügbare Funktionalität in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auf dem aktuellen Auswahl Kontext des Benutzers und dem gesamten IDE-Kontext basiert.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Architektur](../../extensibility/internals/project-types-architecture.md)  
- Bietet ausführliche technische Informationen zu Projekttypen zur Verfügung.
+ [Aufbau](../../extensibility/internals/project-types-architecture.md)  
+ Stellt ausführliche technische Informationen zu Projekttypen bereit.

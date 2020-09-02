@@ -1,5 +1,5 @@
 ---
-title: Anzeigen der Befehle im Menü | Microsoft-Dokumentation
+title: Befehle im Menü „Ansicht“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f8efd65c60b28c0ba50419770351d62cb615dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146472"
 ---
 # <a name="view-menu-commands"></a>Befehle im Menü "Ansicht"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die **Ansicht** Menü enthält Befehle zum Steuern von Spy++-Benutzeroberfläche.  
+Das Menü **Ansicht** enthält Befehle zum Steuern der Spy++-Benutzeroberfläche.  
   
  **Schriftart**  
- Öffnet die **Schriftart** Dialogfeld, in dem Sie eine Schriftart für die Verwendung in der aktuellen Spy++-Ansicht auswählen können.  
+ Öffnet das Dialogfeld **Schriftart** , in dem Sie eine Schriftart auswählen können, die in der aktuellen Spy + +-Ansicht verwendet werden soll.  
   
  **Symbolleiste**  
- Blendet Sie aus, oder die Symbolleiste angezeigt.  
+ Blendet die Symbolleiste ein oder aus.  
   
  **Statusleiste**  
- Zeigt die Statusleiste, oder blendet Sie aus.  
+ Blendet die Status Leiste aus bzw. zeigt diese an.  
   
  **Eigenschaften**  
- Öffnet die **Eigenschaften** im Dialogfeld für die aktive Ansicht.
+ Öffnet das Dialogfeld **Eigenschaften** für die aktive Ansicht.

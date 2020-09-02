@@ -1,5 +1,5 @@
 ---
-title: Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden | Microsoft-Dokumentation
+title: Debuggen von ClickOnce-Anwendungen, die System. Deployment. Application verwenden | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,42 +19,42 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c0b12faf451d3ed9bb70e2bb1ec6c8503cfb86d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187797"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Deployment können Sie konfigurieren, wie eine Anwendung aktualisiert wird. Wenn Sie zum verwenden und anpassen müssen jedoch erweiterte [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungsfunktionen, Sie müssen auf das Bereitstellungsobjektmodell <xref:System.Deployment.Application>. Sie können die <xref:System.Deployment.Application> -APIs für erweiterte Aufgaben wie z. B.:  
+In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] können Sie mit der Bereitstellung konfigurieren, wie eine Anwendung aktualisiert wird. Wenn Sie jedoch erweiterte Bereitstellungs Features verwenden und anpassen müssen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , müssen Sie auf das von bereitgestellte Bereitstellungs Objektmodell zugreifen <xref:System.Deployment.Application> . Sie können die <xref:System.Deployment.Application> APIs für erweiterte Aufgaben verwenden, wie z. b.:  
   
-- Erstellen eine Option "Jetzt aktualisieren" in Ihrer Anwendung  
+- Erstellen einer "Jetzt aktualisieren"-Option in der Anwendung  
   
-- Bedingt, bedarfsgesteuerte downloads, von verschiedenen Anwendungskomponenten  
+- Bedingte, Bedarfs gesteuerte Downloads verschiedener Anwendungskomponenten  
   
-- Updates, die direkt in die Anwendung integriert  
+- Direkt in die Anwendung integrierte Updates  
   
-- Garantiert, dass die Client-Anwendung immer auf dem neuesten Stand ist.  
+- Sicherstellung, dass die Client Anwendung immer auf dem neuesten Stand ist  
   
-  Da die <xref:System.Deployment.Application> APIs funktionieren nur, wenn eine Anwendung mit bereitgestellt wird [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Technologie, die einzige Möglichkeit, sie zu Debuggen ist, zum Bereitstellen der Anwendung mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], hinzugefügt werden, und Debuggen. Es kann schwierig sein, den Debugger anfügen noch genügend Zeit, da dieser Code häufig ausgeführt wird, wenn die Anwendung gestartet und ausgeführt wird, bevor Sie den Debugger anfügen können. Eine Lösung besteht darin, Seitenumbrüche (oder beendet wird, für die Visual Basic-Projekte) vor Ihrer Update überprüfen oder auf Anforderung Code eingefügt werden sollen.  
+  Da die <xref:System.Deployment.Application> APIs nur funktionieren, wenn eine Anwendung mit einer Technologie bereitgestellt wird [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , ist die einzige Möglichkeit, Sie zu debuggen, die Bereitstellung der Anwendung mithilfe von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , das Anfügen an Sie und die anschließende gen Es kann schwierig sein, den Debugger früh genug anzufügen, da dieser Code häufig ausgeführt wird, wenn die Anwendung gestartet und ausgeführt wird, bevor Sie den Debugger anfügen können. Eine Lösung besteht darin, Unterbrechungen (oder Stopps für Visual Basic Projekte) vor dem Update-Prüfcode oder on-Demand-Code zu platzieren.  
   
-  Die empfohlene Debuggen Verfahren lautet wie folgt aus:  
+  Die empfohlene debugtechnik lautet wie folgt:  
   
-1. Bevor Sie beginnen, stellen Sie sicher, dass die Symboldateien (.pdb) und Quelldateien archiviert werden.  
+1. Bevor Sie beginnen, stellen Sie sicher, dass die Symbol Dateien (PDB) und Quelldateien archiviert werden.  
   
-2. Stellen Sie Version 1 der Anwendung.  
+2. Stellen Sie Version 1 der Anwendung bereit.  
   
-3. Erstellen einer neuen leeren Projektmappe an. Von der **Datei** Menü klicken Sie auf **neu**, klicken Sie dann **Projekt**. In der **neues Projekt** öffnen Sie im Dialogfeld die **andere Projekttypen** Knoten, wählen Sie dann die **Visual Studio-Projektmappen** Ordner. In der **Vorlagen** wählen Sie im Bereich **leere Projektmappe**.  
+3. Erstellen Sie eine neue leere Projekt Mappe. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**. Öffnen Sie im Dialogfeld **Neues Projekt** den Knoten **andere Projekttypen** , und wählen Sie dann den Ordner **Visual Studio** -Projektmappen aus. Wählen Sie im Bereich **Vorlagen** die Option **leere**Projekt Mappe aus.  
   
-4. Fügen Sie den archivierten Quellspeicherort an den Eigenschaften für diese neue Lösung hinzu. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, und klicken Sie auf **Eigenschaften**. In der **Eigenschaftenseiten** wählen Sie im Dialogfeld **Quelldateien debuggen**, fügen Sie dann das Verzeichnis mit den archivierten Quellcode hinzu. Andernfalls wird der Debugger veraltete Quelldateien an, gefunden werden, da es sich bei die quelldateipfaden in die PDB-Datei aufgezeichnet werden. Wenn der Debugger veraltete Quelldateien verwendet wird, sehen Sie eine Meldung angezeigt, die die Quelle nicht übereinstimmen.  
+4. Fügen Sie den archivierten Quell Speicherort den Eigenschaften für diese neue Projekt Mappe hinzu. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten Projekt Mappe, und klicken Sie dann auf **Eigenschaften** Wählen Sie im Dialogfeld **Eigenschaften Seiten** die Option **Quelldateien debuggen**aus, und fügen Sie dann das Verzeichnis des archivierten Quellcodes hinzu. Andernfalls findet der Debugger die veralteten Quelldateien, da die Quelldatei Pfade in der PDB-Datei aufgezeichnet werden. Wenn der Debugger veraltete Quelldateien verwendet, wird eine Meldung angezeigt, die besagt, dass die Quelle nicht stimmt.  
   
-5. Stellen Sie sicher, dass der Debugger die PDB-Dateien finden kann. Wenn Sie diese mit Ihrer Anwendung bereitgestellt haben, wird der Debugger diese automatisch. Immer neben der Assembly betreffende zuerst gesucht. Andernfalls müssen Sie den Archivpfad zum Hinzufügen der **Symboldateien (.pdb) Orte für Symboldateien** (auf diese Option, die **Tools** Menü klicken Sie auf **Optionen**, öffnen Sie dann die  **Debuggen von** Knoten, und klicken Sie auf **Symbole**).  
+5. Stellen Sie sicher, dass der Debugger die PDB-Dateien finden kann. Wenn Sie diese mit der Anwendung bereitgestellt haben, findet der Debugger diese automatisch. Sie sucht immer zuerst neben der fraglichen Assembly. Andernfalls müssen Sie den Archivpfad zu den **Symbol Datei Standorten (. pdb)** hinzufügen (um auf diese Option zuzugreifen, klicken Sie im **Menü Extras** auf **Optionen**, öffnen Sie den Knoten **Debuggen** , und klicken Sie auf **Symbole**).  
   
-6. Debuggen, was geschieht, zwischen den `CheckForUpdate` und `Download` / `Update` Methodenaufrufe.  
+6. Debuggen Sie, was zwischen den `CheckForUpdate` `Download` / `Update` Methoden aufrufen und passiert.  
   
-    Der Update-Code könnte beispielsweise folgendermaßen aussehen:  
+    Der Aktualisierungs Code könnte z. b. wie folgt lauten:  
   
    ```  
        Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
@@ -71,13 +71,13 @@ In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], [!INCLUDE[n
        End Sub  
    ```  
   
-7. Stellen Sie Version 2.  
+7. Stellen Sie Version 2 bereit.  
   
-8. Es wurde versucht, den Debugger mit, um die Version 1 der Anwendung während des downloads ein Update für Version 2. Alternativ können Sie die `System.Diagnostics.Debugger.Break` Methode oder einfach `Stop` in Visual Basic. Natürlich sollten Sie nicht diese Methodenaufrufe in Produktionscode lassen.  
+8. Versuchen Sie, den Debugger an die Anwendung Version 1 anzufügen, während ein Update für Version 2 heruntergeladen wird. Alternativ können Sie die- `System.Diagnostics.Debugger.Break` Methode oder einfach `Stop` in Visual Basic verwenden. Natürlich sollten Sie diese Methodenaufrufe nicht im Produktionscode belassen.  
   
-    Nehmen wir beispielsweise an, Sie Entwickeln einer Windows Forms-Anwendung, und Sie verfügen über einen Ereignishandler für diese Methode mit der Update-Logik, darin. Um dies zu debuggen, einfach anfügen, bevor die Schaltfläche gedrückt wird, und Sie einen Haltepunkt legen (Stellen Sie sicher, dass Sie die entsprechende archivierte Datei öffnen, und legen Sie den Haltepunkt vorhanden ist).  
+    Nehmen Sie beispielsweise an, Sie entwickeln eine Windows Forms Anwendung, und Sie verfügen über einen Ereignishandler für diese Methode mit der Update Logik. Um dies zu debuggen, fügen Sie einfach an, bevor die Schaltfläche gedrückt wird. Legen Sie dann einen Haltepunkt fest (stellen Sie sicher, dass Sie die entsprechende archivierte Datei öffnen und den Haltepunkt dort festlegen)  
   
-   Verwenden der <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> Eigenschaft zum Aufrufen der <xref:System.Deployment.Application> APIs nur, wenn die Anwendung bereitgestellt wird; die APIs nicht aufgerufen werden soll während des Debuggens [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   Verwenden Sie die- <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> Eigenschaft, um die APIs nur aufzurufen, <xref:System.Deployment.Application> Wenn die Anwendung bereitgestellt wird. die APIs sollten beim Debuggen in nicht aufgerufen werden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:System.Deployment.Application>

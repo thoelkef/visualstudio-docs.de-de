@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Öffnen der Meldungsansicht aus "Fenster Suchen" | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Öffnen der Meldungsansicht aus dem Fenster „Suchen“ | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,45 +13,45 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157885"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Vorgehensweise: Öffnen der Meldungsansicht aus dem Fenster „Suchen“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Es können bequem mit der **Fenster Suchen** Dialogfeld Wählen Sie ein Zielfenster, und öffnen Sie eine Ansicht "Nachrichten" dieses Fensters.  
+Möglicherweise finden Sie es bequem, das Dialogfeld **Fenster suchen** zum Auswählen eines Zielfensters zu verwenden, um dann eine Meldungsansicht dieses Fensters zu öffnen.  
   
-### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Um Nachrichten Ansichtsfenster über das Dialogfeld "Fenster Suchen" zu öffnen.  
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>So öffnen Sie ein Meldungsansichtsfenster mithilfe des Dialogfelds „Fenster suchen“  
   
-1. Ordnen Sie die Fenster, sodass Spy++ und das Zielfenster angezeigt werden.  
+1. Ordnen Sie Ihre Fenster so an, dass sowohl Spy++ als auch das Zielfenster sichtbar sind.  
   
-2. Von der **Spy** Menü wählen **Fenster Suchen**.  
+2. Wählen Sie im Menü **Spy** die Option **Fenster suchen** aus.  
   
-     Die [Dialogfeld Fenster Suchen](../debugger/find-window-dialog-box.md) wird geöffnet.  
+     Das [Dialogfeld „Fenster suchen“](../debugger/find-window-dialog-box.md) wird geöffnet.  
   
-3. Von der **Windows** Registerkarte, ziehen Sie die **Suchtool** über das Zielfenster. Wie Sie das Tool, ziehen Sie die **Fenster Suchen** Dialogfeld zeigt die Details für das ausgewählte Fenster.  
+3. Ziehen Sie das **Suchtool** von der Registerkarte **Fenster** über das Zielfenster. Während Sie das Tool ziehen, werden im Dialogfeld **Fenster suchen** Details zum ausgewählten Fenster angezeigt.  
   
      – oder –  
   
-     Wenn Sie das Handle des Fensters haben (z. B. aus dem Debugger kopiert) überprüfen möchten, können Sie eingeben, ihn in das **behandeln** Textfeld.  
+     Wenn Sie über das Handle des zu untersuchenden Fensters verfügen, (z. B. aus dem Debugger kopiert), können Sie es in das Textfeld **Handle** eingeben.  
   
-4. Klicken Sie unter **anzeigen**Option **Nachrichten**.  
+4. Wählen Sie unter **Anzeigen** die Option **Meldungen** aus.  
   
 5. Klicken Sie auf **OK**.  
   
-     Ein leerer [Meldungsansicht](../debugger/messages-view.md) Fenster geöffnet wird, und ein **Nachrichten** Menü zur Spy++-Symbolleiste hinzugefügt wird.  
+     Ein leeres [Meldungsansicht](../debugger/messages-view.md)sfenster wird geöffnet, und der Spy++-Symbolleiste wird ein Menü **Meldungen** hinzugefügt.  
   
-6. Von der **Nachrichten** Menü wählen **Protokollierungsoptionen**.  
+6. Wählen Sie im Menü **Meldungen** die Option **Protokollierungsoptionen** aus.  
   
-     Die [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md) wird geöffnet.  
+     Das Dialogfeld [Meldungsoptionen](../debugger/message-options-dialog-box.md) wird geöffnet.  
   
-7. Wählen Sie die Optionen für die Nachrichten, die Sie anzeigen möchten.  
+7. Wählen Sie die Optionen für die Meldung aus, die Sie anzeigen möchten.  
   
-8. Drücken Sie **OK** zum Protokollieren von Nachrichten beginnen.  
+8. Drücken Sie **OK**, um mit der Protokollierung von Meldungen zu beginnen.  
   
-     Abhängig von den ausgewählten Optionen, Nachrichten mit dem streamen beginnen in das aktive Fenster des Nachrichten-Ansicht.  
+     Abhängig von den ausgewählten Optionen wird der Meldungsdatenstrom in das aktive Meldungsansichtsfenster gestartet.  
   
-9. Wenn Sie über genügend Nachrichten verfügen, wählen Sie **Protokollierung beenden** aus der **Nachrichten** Menü.
+9. Wenn genügend Meldungen eingegangen sind, wählen Sie **Protokollierung beenden** im Menü **Meldungen** aus.
