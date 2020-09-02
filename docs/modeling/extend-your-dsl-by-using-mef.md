@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547640"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
@@ -26,7 +26,7 @@ Weitere Informationen zu MEF finden Sie unter [Managed Extensibility Framework (
 
 1. Erstellen Sie im **dslpackage** -Projekt einen neuen Ordner mit dem Namen **MEF Extension** . Fügen Sie die folgenden Dateien hinzu:
 
-     Dateiname:`CommandExtensionVSCT.tt`
+     Dateiname: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Legen Sie fest, dass die GUID in dieser Datei mit der GUID commandsetid übereinstimmt, die in "dslpackage\generatedcode\constants.tt" definiert ist.
@@ -42,21 +42,21 @@ Weitere Informationen zu MEF finden Sie unter [Managed Extensibility Framework (
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Dateiname:`CommandExtensionRegistrar.tt`
+    Dateiname: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Dateiname:`ValidationExtensionEnablement.tt`
+    Dateiname: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Dateiname:`ValidationExtensionRegistrar.tt`
+    Dateiname: `ValidationExtensionRegistrar.tt`
 
     Wenn Sie diese Datei hinzufügen, müssen Sie die Validierung in ihrer DSL aktivieren, indem Sie mindestens einen der Schalter in **Editor Validation** im DSL-Explorer verwenden.
 
@@ -65,7 +65,7 @@ Weitere Informationen zu MEF finden Sie unter [Managed Extensibility Framework (
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Dateiname:`PackageExtensionEnablement.tt`
+    Dateiname: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ Weitere Informationen zu MEF finden Sie unter [Managed Extensibility Framework (
 
 2. Erstellen Sie im **DSL** -Projekt einen neuen Ordner mit dem Namen **MEF Extension** . Fügen Sie die folgenden Dateien hinzu:
 
-     Dateiname:`DesignerExtensionMetaDataAttribute.tt`
+     Dateiname: `DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Dateiname:`GestureExtensionEnablement.tt`
+    Dateiname: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Dateiname:`GestureExtensionController.tt`
+    Dateiname: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -177,7 +177,7 @@ Sie können Erweiterungen in das assemblycodeprojekt einer separaten DSL-Erweite
 
 Um einen Menübefehl zu schreiben, definieren Sie eine Klasse, die implementiert <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> und der Klasse das in ihrer DSL definierte Attribut mit dem Namen *yourdsl*vorangestellt `CommandExtension` . Sie können mehr als eine Menübefehls Klasse schreiben.
 
-`QueryStatus()`wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt. Er sollte die aktuelle Auswahl überprüfen und festlegen `command.Enabled` , um anzugeben, wann der Befehl anwendbar ist.
+`QueryStatus()` wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt. Er sollte die aktuelle Auswahl überprüfen und festlegen `command.Enabled` , um anzugeben, wann der Befehl anwendbar ist.
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -372,7 +372,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

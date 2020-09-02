@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
+title: IDebugExpressionEvaluator2::P reloadmodules | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729332"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Lädt die vom angegebenen Symbolanbieter benannten Module vorab.
+Lädt die vom angegebenen Symbol Anbieter bezeichneten Module vorab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>Parameter
 `pSym`\
-[in] Symbolanbieter, für den die Module vorinstalliert werden.
+in Symbol Anbieter, für den die Module vorab geladen werden.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese optionale Methode wird verwendet, wenn Sie einen Hosting-Prozess-Anhang verwenden. Es gibt dem EE die Möglichkeit, sich als Teil des Attaches "aufzuwärmen".
+Diese optionale Methode wird verwendet, wenn Sie eine Anfüge Vorgang anfügen. Der EE hat die Möglichkeit, als Teil des Anfügens "aufzuwärmen".
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **ExpressionEvaluatorPackage-Objekt** implementiert wird, das die [IDebugExpressionEvaluator2-Schnittstelle](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **expressionevaluatorpackage** -Objekt implementiert wird, das die [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

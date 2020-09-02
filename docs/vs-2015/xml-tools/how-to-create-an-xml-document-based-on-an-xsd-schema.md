@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9e48c48d6711a1eb21157122d13790e22688855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670950"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Funktion **Beispiel-XML generieren** generiert eine XML-Beispieldatei, die auf der XML-Schema Datei (XSD) basiert.
+Die Funktion **Beispiel-XML generieren** generiert auf Grundlage der XML-Schemadatei (XSD) eine Beispiel-XML-Datei.
 
  Diese Option kann für die folgenden Szenarien verwendet werden :
 
@@ -27,17 +27,17 @@ Die Funktion **Beispiel-XML generieren** generiert eine XML-Beispieldatei, die a
 
 - Um zu bestätigen, dass das Schema wie beabsichtigt ausgeführt wird.
 
-  Die Funktion **Beispiel-XML generieren** ist nur für globale Elemente verfügbar und erfordert ein gültiges XML-Schemaset.
+  Die Funktion **Beispiel-XML generieren** ist nur für globale Elemente verfügbar und benötigt ein gültiges XML-Schemaset.
 
   Diese Funktion generiert i. d. R. gültige XML-Dokumente. Wenn das Schema jedoch eines der folgenden Elemente enthält, ist das Beispiel möglicherweise nicht gültig:
 
 - Die folgenden Identitätseinschränkungen: `xs:key`, `xs:keyref` und `xs:unique`
 
-- `xs:pattern`-Facets
+- `xs:pattern`-Facets.
 
 - Enumerationen des `xs:QName`-Typs
 
-- `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen
+- `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen.
 
   Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, wenn Enumerationen im Schema für diesen Typ vorkommen.
 
@@ -45,7 +45,7 @@ Die Funktion **Beispiel-XML generieren** generiert eine XML-Beispieldatei, die a
 
 1. Befolgen Sie die Schritte unter Gewusst [wie: Erstellen und Bearbeiten einer XSD-Schema Datei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Klicken Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)mit der rechten Maustaste auf das `PurchaseOrder` globale Element. Wählen Sie **Beispiel-XML generieren**aus.
+2. Klicken Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) mit der rechten Maustaste auf das globale `PurchaseOrder`-Element. Wählen Sie **Beispiel-XML generieren** aus.
 
      Die Datei "PurchaseOrder.xml" wird mit dem folgenden Beispiel-XML-Inhalt generiert und im XML-Editor geöffnet:
 
@@ -76,5 +76,5 @@ Die Funktion **Beispiel-XML generieren** generiert eine XML-Beispieldatei, die a
     </PurchaseOrder>
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Arbeiten mit XML-Daten](../xml-tools/working-with-xml-data.md)

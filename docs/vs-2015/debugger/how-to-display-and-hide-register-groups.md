@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ae0a5a690e1413bfccd66ee0e9db7f6d812c15
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702248"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Vorgehensweise: Anzeigen und Ausblenden von Registergruppen
+# <a name="how-to-display-and-hide-register-groups"></a>Gewusst wie: Anzeigen und Ausblenden von Registergruppen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Fenster **Register** ist nur verfügbar, wenn Debuggen auf Adressebene im Dialogfeld **Optionen** im Knoten **Debuggen** in der Kategorie **Allgemein** aktiviert ist.  
@@ -48,5 +48,5 @@ Das Fenster **Register** ist nur verfügbar, wenn Debuggen auf Adressebene im Di
   
      Registergruppen, die von der zum Debuggen verwendeten Hardware nicht unterstützt werden, sind im Kontextmenü deaktiviert und können folglich nicht ausgewählt werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [How to: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)
