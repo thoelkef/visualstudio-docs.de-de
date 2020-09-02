@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160862"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modulansicht – .NET-Speichersamplingdaten im Profiler
@@ -25,7 +25,7 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
   
  Die Quelldatei-Zeilennummern von Anweisungen, die Speicher belegen, sind unter dem Funktionsknoten aufgeführt. Die Adressen der Anweisungen, die die Zuordnung vornehmen, sind unter dem Zeilenknoten aufgeführt. Die inklusiven und exklusiven Werte für Zeilen- und Anweisungsdaten sind immer identisch.  
   
-|Spalte|BESCHREIBUNG|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Der Name des Moduls, der Funktion, der Zeilennummer oder der Anweisungsadresse.|  
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|  
@@ -43,8 +43,8 @@ In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrument
 |**Exklusive Bytes**|- Bei einer Funktion die Gesamtzahl von Bytes, die von der Funktion zugeordnet wurden. Diese Zahl umfasst nicht die Bytes, die in den von der Funktion aufgerufenen Funktionen zugeordnet wurden.<br />- Bei einem Modul die Summe der exklusiven Bytes, die von den Funktionen im Modul zugeordnet wurden.<br />- Bei einer Zeile oder Anweisung die Gesamtzahl von Objekten, die von der Zeile oder der Anweisung zugeordnet wurden.|  
 |**Exklusive Bytes in %**|Der Prozentsatz aller während der Profilerstellung zugeordneten Bytes, die exklusive Bytes des Moduls, der Funktion, der Zeile oder der Anweisung waren.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Modulansicht – Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Modulansicht](../profiling/modules-view-sampling-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Modul Ansicht-Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Modul Ansicht](../profiling/modules-view-sampling-data.md)   
  [Modulansicht](../profiling/modules-view-instrumentation-data.md)

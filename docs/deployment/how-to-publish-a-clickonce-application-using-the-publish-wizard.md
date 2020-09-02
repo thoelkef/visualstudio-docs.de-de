@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382301"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten
@@ -59,7 +59,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
    - Wenn die Anwendung direkt vom Ort der Veröffentlichung gestartet werden soll, klicken Sie auf **Nein, diese Anwendung ist nur online verfügbar.** Es wird keine Verknüpfung im **Startmenü** erstellt.
 
-     Klicken Sie zum Fortfahren auf **Weiter** .
+     Klicken Sie auf zum Fortfahren auf **Weiter**.
 
 6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
 
@@ -88,7 +88,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
    - Wenn die Anwendung nicht nach Updates sucht, klicken Sie auf **Anwendung sucht nicht nach Updates**.
 
-     Klicken Sie zum Fortfahren auf **Weiter** .
+     Klicken Sie auf zum Fortfahren auf **Weiter**.
 
 6. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
 
@@ -99,6 +99,6 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
 ## <a name="see-also"></a>Siehe auch
 
-- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Deploying an Office solution by using ClickOnce (Bereitstellen einer Office-Projektmappe mithilfe von ClickOnce)](../vsto/deploying-an-office-solution-by-using-clickonce.md)

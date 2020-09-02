@@ -1,5 +1,5 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2 | Microsoft Docs
+title: IDebugBeforeSymbolSearchEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9d6f3f78e165ba2f4453131b7b459e3061243ff6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736114"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
-Das Debugmodul (DE) sendet diese Schnittstelle an den Sitzungsdebug-Manager (SDM), um die Statusleistenmeldung während des Symbolladens festzulegen.
+Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), um die Status leisten Nachricht während der Symbol Auslastung festzulegen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,21 +27,21 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle, wenn sie die Statusleistenmeldung während des Symbolladens festlegen muss. Diese Schnittstelle wird nur von Debugmodulen implementiert, die mit Skriptinterpretern arbeiten oder Teil von Skriptinterpretern sind. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden (das SDM verwendet **QueryInterface,** um auf die **IDebugEvent2-Schnittstelle** zuzugreifen).
+ Die de implementiert diese Schnittstelle, wenn Sie die Status leisten Nachricht bei Symbol Ladevorgängen festlegen muss. Diese Schnittstelle wird nur von Debug-engines implementiert, die mit oder einem Teil von Skript Interpretern funktionieren. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf demselben Objekt wie diese Schnittstelle implementiert werden (SDM verwendet **QueryInterface** für den Zugriff auf die **IDebugEvent2** -Schnittstelle).
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Die DE erstellt und sendet dieses Ereignisobjekt, wenn es die Statusleistenmeldung während des Symbolladens festlegen muss. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Das de-Objekt erstellt und sendet dieses Ereignis Objekt, wenn es die Status leisten Nachricht während der Symbol Auslastung festlegen muss. Das Ereignis wird mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Rückruffunktion gesendet, die von SDM beim Anfügen an das gedestete Programm bereitgestellt wird.
 
 ## <a name="methods"></a>Methoden
- Die folgende Tabelle zeigt `IDebugBeforeSymbolSearchEvent2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBeforeSymbolSearchEvent2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Ruft den Namen des Moduls ab, das gerade gedebuggt wird.|
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Ruft den Namen des Moduls ab, das gerade deentschlgt wird.|
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: Msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

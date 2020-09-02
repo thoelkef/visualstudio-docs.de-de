@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72e5f82fa3ca4b7ca909ee07e5b77a31b3e20879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650962"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Aufgabenliste, Umgebung, Dialogfeld "Optionen"
@@ -44,7 +44,7 @@ Auf der Seite „Optionen“ können Sie die Kommentartoken hinzufügen, lösche
 
  Dateinamen nur anzeigen, wenn diese Option ausgewählt ist, werden in der Spalte **Datei** der **Aufgabenliste** nur die Namen der zu bearbeitenden Dateien angezeigt, nicht die vollständigen Pfade.
 
-## <a name="tokens"></a>tokens
+## <a name="tokens"></a>Token
  Wenn Sie einen Kommentar in den Code einfügen, dessen Text mit einem Token aus der **Tokenliste** beginnt, wird in der **Aufgabenliste** der Kommentar als neuer Eintrag angezeigt, wenn die Datei zur Bearbeitung geöffnet ist. Klicken Sie auf diesen Eintrag der **Aufgabenliste**, um direkt zur Kommentarzeile im Code zu springen. Weitere Informationen finden Sie unter [Verwenden der Aufgabenliste](../../ide/using-the-task-list.md).
 
  Tokenliste zeigt eine Liste von Token an und ermöglicht das Hinzufügen oder Entfernen von benutzerdefinierten Token. In Visual C# und Visual C++ wird die Groß-/Kleinschreibung von Kommentartoken berücksichtigt, in Visual Basic jedoch nicht.
@@ -65,5 +65,5 @@ Auf der Seite „Optionen“ können Sie die Kommentartoken hinzufügen, lösche
 > [!NOTE]
 > Sie können das Standardkommentartoken weder umbenennen noch löschen, jedoch die Priorität dieses Tokens ändern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden des Aufgabenliste](../../ide/using-the-task-list.md) [Festlegen von Lesezeichen im](../../ide/setting-bookmarks-in-code.md) [Dialog Feld "Code Umgebungsoptionen](../../ide/reference/environment-options-dialog-box.md) "

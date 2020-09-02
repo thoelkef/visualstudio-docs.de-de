@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: analysierenC++ von C-Code auf Fehler | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Analysieren von c-c + +-Code auf Fehler | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c822dbcc6a1ece2040da22a3442dd584c3926d97
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272439"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit dem Code Analysetool für C/C++ Code auf potenzielle Code Fehler analysiert wird.  
+In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie c/C++-Code mit dem Code Analysetool für C/C++-Code für potenzielle Code Fehler analysieren.  
   
- In dieser exemplarischen Vorgehensweise durchlaufen Sie den Prozess der Verwendung der Code Analyse, um IhrenC++ C/Code auf potenzielle Code Fehler zu analysieren.  
+ In dieser exemplarischen Vorgehensweise durchlaufen Sie den Prozess der Verwendung der Code Analyse, um Ihren C/C++-Code auf potenzielle Code Fehler zu analysieren.  
   
  Sie führen die folgenden Schritte aus:  
   
@@ -38,17 +38,17 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
 - Kommentieren Sie den Quellcode, um die Code Fehleranalyse zu verbessern.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Voraussetzungen  
   
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
 - Eine Kopie des [Demo](../code-quality/demo-sample.md)Beispiels.  
   
-- Grundlegendes Verständnis von CC++/.  
+- Grundlegendes Verständnis von C/C++.  
   
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>So führen Sie die Code Fehleranalyse für nativen Code aus  
   
-1. Öffnen Sie die Demo Lösung in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Öffnen Sie die Projekt Mappe in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      Die Demo Lösung füllt nun **Projektmappen-Explorer**auf.  
   
@@ -64,7 +64,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
 5. Klicken Sie auf **Codeanalyse**.  
   
-6. Aktivieren Sie das Kontrollkästchen **Code Analyse fürC++ C/on-Build aktivieren** .  
+6. Aktivieren Sie das Kontrollkästchen **Code Analyse für C/C++ bei Build aktivieren** .  
   
 7. Erstellen Sie das Projekt "codemängel" neu.  
   
@@ -74,13 +74,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
 1. Klicken Sie im Menü **Ansicht** auf **Fehlerliste**.  
   
-     Abhängig vom Entwickler Profil, das Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ausgewählt haben, müssen Sie möglicherweise im Menü **Ansicht** auf **andere Fenster** zeigen und dann auf **Fehlerliste**klicken.  
+     Abhängig vom Entwickler Profil, das Sie in ausgewählt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben, müssen Sie möglicherweise im Menü **Ansicht** auf **andere Fenster** zeigen und dann auf **Fehlerliste**klicken.  
   
 2. Doppelklicken Sie im **Fehlerliste**auf die folgende Warnung:  
   
      Warning C6230: Implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT wird in einem Boolean-Kontext verwendet.  
   
-     Im Code-Editor wird die Zeile, die die Warnung verursacht hat, im `bool``ProcessDomain()`der Funktion angezeigt. Diese Warnung gibt an, dass ein HRESULT in einer if-Anweisung verwendet wird, in der ein boolesches Ergebnis erwartet wird.  
+     Der Code-Editor zeigt die Zeile an, die die Warnung in der Funktion verursacht hat `bool``ProcessDomain()` . Diese Warnung gibt an, dass ein HRESULT in einer if-Anweisung verwendet wird, in der ein boolesches Ergebnis erwartet wird.  
   
 3. Korrigieren Sie diese Warnung, indem Sie das Makro "erfolgreich" verwenden. Der Code sollte dem folgenden Code ähneln:  
   
@@ -100,7 +100,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
 ### <a name="to-treat-warning-as-an-error"></a>So behandeln Sie die Warnung als Fehler  
   
-1. Fügen Sie in der Datei Bug. cpp am Anfang der Datei die folgende `#pragma`-Anweisung hinzu, um die Warnung C6001 als Fehler zu behandeln:  
+1. Fügen Sie in der Datei Bug. cpp am Anfang der Datei die folgende Anweisung hinzu, `#pragma` um die Warnung C6001 als Fehler zu behandeln:  
   
     ```  
     #pragma warning (error: 6001)  
@@ -110,7 +110,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
      Im **Fehlerliste**wird C6001 jetzt als Fehler angezeigt.  
   
-3. Korrigieren Sie die verbleibenden zwei C6001-Fehler im **Fehlerliste** , indem Sie `i` initialisieren und auf 0 `j`.  
+3. Korrigieren Sie die verbleibenden zwei C6001-Fehler im **Fehlerliste** `i` , indem `j` Sie und auf 0 initialisieren.  
   
 4. Erstellen Sie das Projekt "codemängel" neu.  
   
@@ -126,7 +126,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
 3. Klicken Sie auf **Codeanalyse**.  
   
-4. Aktivieren Sie das Kontrollkästchen **Code Analyse fürC++ C/on-Build aktivieren** .  
+4. Aktivieren Sie das Kontrollkästchen **Code Analyse für C/C++ bei Build aktivieren** .  
   
 5. Erstellen Sie das Projekt Annotations neu.  
   
@@ -158,7 +158,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht,C++ wie c/Code mit 
   
 ### <a name="to-use-source-code-annotation"></a>So verwenden Sie die Quell Code Anmerkung  
   
-1. Kommentieren Sie formale Parameter und den Rückgabewert der Funktion `AddTail`, indem Sie die Pre-und Post-Bedingungen wie im folgenden Beispiel gezeigt verwenden:  
+1. Kommentieren Sie formale Parameter und den Rückgabewert der Funktion, `AddTail` indem Sie die Pre-und Post-Bedingungen wie im folgenden Beispiel gezeigt verwenden:  
   
      `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
   

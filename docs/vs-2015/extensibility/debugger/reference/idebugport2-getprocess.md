@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetProcess | Microsoft-Dokumentation
+title: 'IDebugPort2:: GetProcess | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82ea962c27c7f29dc09224ecf8205a3883340c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188629"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft ab den angegebenen Prozess auf einem Port ausgeführt wird.  
+Ruft den angegebenen Prozess ab, der auf einem Port ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,15 +42,15 @@ int GetProcess( 
   
 #### <a name="parameters"></a>Parameter  
  `ProcessId`  
- [in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) -Struktur, die Prozess-ID angibt.  
+ in Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) -Struktur, die den Prozess Bezeichner angibt.  
   
  `ppProcess`  
- [out] Gibt eine [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Objekt, das den Prozess darstellt.  
+ vorgenommen Gibt ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt zurück, das den Prozess darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

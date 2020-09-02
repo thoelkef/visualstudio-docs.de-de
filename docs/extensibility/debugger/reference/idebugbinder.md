@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder | Microsoft Docs
+title: Idebugbinder | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735969"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Expressionsevaluatoren finden Sie unter [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Diese Schnittstelle bindet ein Symbolfeld, das normalerweise vom Symbolanbieter zurückgegeben wird, an einen Speicherkontext oder ein Objekt, das den aktuellen Wert des Symbols enthält.
+ Diese Schnittstelle bindet ein Symbolfeld, das normalerweise vom Symbol Anbieter zurückgegeben wird, an einen Speicher Kontext oder ein Objekt, das den aktuellen Wert des Symbols enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,29 +32,29 @@ IDebugBinder : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Diese Schnittstelle unterstützt die Ausdrucksauswertung und muss vom Debugmodul (DE) implementiert werden.
+ Diese Schnittstelle unterstützt die Auswertung von Ausdrücken und muss von der Debug-Engine (de) implementiert werden.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Diese Schnittstelle wird bei der Ausexpressionauswertung verwendet und wird in der Regel bei der Implementierung von [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) und [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)verwendet.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Diese Schnittstelle wird im Prozess der Ausdrucks Auswertung verwendet und wird in der Regel in der Implementierung von [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) und [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)verwendet.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IDebugBinder`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBinder` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[Binden](../../../extensibility/debugger/reference/idebugbinder-bind.md)|Ruft den Speicherkontext oder das Objekt ab, das den aktuellen Wert des Symbols enthält.|
-|[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|Bestimmt den Laufzeittyp eines Objekts.|
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|Konvertiert einen Objektspeicherort oder eine Speicheradresse in einen Speicherkontext.|
-|[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|Ruft ein [IDebugFunctionObject-Objekt](../../../extensibility/debugger/reference/idebugfunctionobject.md) ab, das zum Erstellen von Funktionsparametern verwendet wird.|
+|[Zwick](../../../extensibility/debugger/reference/idebugbinder-bind.md)|Ruft den Arbeitsspeicher Kontext oder das Objekt ab, das den aktuellen Wert des Symbols enthält.|
+|[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|Bestimmt den Lauf Zeittyp eines Objekts.|
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|Konvertiert einen Objekt Speicherort oder eine Speicheradresse in einen Speicher Kontext.|
+|[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|Ruft ein [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Objekt ab, das zum Erstellen von Funktionsparametern verwendet wird.|
 |[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|Ruft den genauen Typ für eine Variable ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Schnittstelle gibt Objekte zurück, die vom Ausdrucksevaluator in Analysestrukturen verwendet werden. Der Ausdrucksauswertungswert analysiert einen Ausdruck, indem er den Symbolanbieter verwendet, um die Symbole im Ausdruck in Instanzen von [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)zu konvertieren, die jedes Symbol in Bezug auf seinen Typ und seine Position im Quellcode beschreiben. Die [Bind-Methode](../../../extensibility/debugger/reference/idebugbinder-bind.md) konvertiert `IDebugField` Objekte in [IDebugObject-Objekte,](../../../extensibility/debugger/reference/idebugobject.md) die einen Symboltyp mit einem tatsächlichen Wert im Arbeitsspeicher verbinden oder binden. Diese `IDebugObject` Objekte werden dann zur späteren Auswertung in einer Analysestruktur gespeichert.
+ Diese Schnittstelle gibt Objekte zurück, die von der Ausdrucks Auswertung in Analyse Strukturen verwendet werden. Die Ausdrucks Auswertung analysiert einen Ausdruck mithilfe des Symbol Anbieters, um die Symbole im Ausdruck in Instanzen von [idebugfield](../../../extensibility/debugger/reference/idebugfield.md)zu konvertieren, in denen jedes Symbol in Bezug auf den Typ und die Position im Quellcode beschrieben wird. Die [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md) -Methode konvertiert `IDebugField` Objekte in [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekte, die einen Symboltyp mit einem tatsächlichen Wert im Arbeitsspeicher verbinden oder binden. Diese `IDebugObject` Objekte werden dann zur späteren Auswertung in einer Analyse Struktur gespeichert.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: ee.h
+## <a name="requirements"></a>Anforderungen
+ Header: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

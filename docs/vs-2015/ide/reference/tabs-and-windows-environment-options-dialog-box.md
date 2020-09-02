@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382f0ad34e8f3bf5188429733851003402e8ba1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650983"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Registerkarten und Fenster, Umgebung, Dialogfeld „Optionen“
@@ -23,5 +23,5 @@ ms.locfileid: "72650983"
 
 Auf dieser Seite können Sie Optionen für das Verhalten von Fenstern im Registerkartenformat im Editor-Bereich und das Verhalten von Toolfenstern festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Anordnen und Andocken von Fenstern](../../misc/how-to-arrange-and-dock-windows.md).
 
-## <a name="see-also"></a>Siehe auch
- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)
