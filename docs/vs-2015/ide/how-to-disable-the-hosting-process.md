@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667971"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Gewusst wie: Deaktivieren des Hostprozesses
@@ -44,5 +44,5 @@ Aufrufe an bestimmte APIs können beeinflusst werden, wenn der Hostprozesses akt
 
 - Das Debuggen teilweise vertrauenswürdiger Anwendungen ist nicht möglich.
 
-## <a name="see-also"></a>Siehe auch
- [Debuggen und](../debugger/debugging-and-the-hosting-process.md) Hostingprozess- [Hostingprozess (vshost. exe)](../ide/hosting-process-vshost-exe.md) [während der Anwendungsentwicklung](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>Weitere Informationen
+ [Debuggen und](../debugger/debugging-and-the-hosting-process.md) Hostingprozess [(vshost.exe)](../ide/hosting-process-vshost-exe.md) - [Builds während der Anwendungsentwicklung](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

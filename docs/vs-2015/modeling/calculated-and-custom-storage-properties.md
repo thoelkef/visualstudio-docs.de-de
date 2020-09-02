@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 372159a7405eb7a350aa55c55cf0c7e582dc98e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668360"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
@@ -26,11 +26,11 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
 ## <a name="kinds-of-domain-properties"></a>Arten von Domänen Eigenschaften
  In der DSL-Definition können Sie die **Art** einer Domänen Eigenschaft festlegen, wie in der folgenden Tabelle aufgeführt:
 
-|Art der Domänen Eigenschaft|Beschreibung|
+|Art der Domänen Eigenschaft|BESCHREIBUNG|
 |--------------------------|-----------------|
 |**Standard** (Standard)|Eine Domänen Eigenschaft, die im *Speicher* gespeichert und in eine Datei serialisiert wird.|
-|**Angelegt**|Eine schreibgeschützte Domänen Eigenschaft, die nicht im Speicher gespeichert wird, sondern aus anderen Werten berechnet wird.<br /><br /> Beispielsweise können `Person.Age` aus `Person.BirthDate` berechnet werden.<br /><br /> Sie müssen den Code bereitstellen, der die Berechnung ausführt. In der Regel berechnen Sie den Wert aus anderen Domänen Eigenschaften. Sie können jedoch auch externe Ressourcen verwenden.|
-|**Benutzerdefinierter Speicher**|Eine Domänen Eigenschaft, die nicht direkt im Speicher gespeichert wird, sondern sowohl Get als auch festgelegt werden kann.<br /><br /> Sie müssen die Methoden bereitstellen, mit denen der Wert erhalten und festgelegt wird.<br /><br /> Beispielsweise können `Person.FullAddress` in `Person.StreetAddress`, `Person.City` und `Person.PostalCode` gespeichert werden.<br /><br /> Sie können auch auf externe Ressourcen zugreifen, z. b. um Werte aus einer Datenbank zu erhalten und festzulegen.<br /><br /> Der Code sollte keine Werte im Speicher festlegen, wenn `Store.InUndoRedoOrRollback` true ist. Weitere Informationen finden Sie unter [Transaktionen und benutzerdefinierte Setter](#setters).|
+|**Berechnet**|Eine schreibgeschützte Domänen Eigenschaft, die nicht im Speicher gespeichert wird, sondern aus anderen Werten berechnet wird.<br /><br /> Beispielsweise `Person.Age` könnte aus berechnet werden `Person.BirthDate` .<br /><br /> Sie müssen den Code bereitstellen, der die Berechnung ausführt. In der Regel berechnen Sie den Wert aus anderen Domänen Eigenschaften. Sie können jedoch auch externe Ressourcen verwenden.|
+|**Benutzerdefinierter Speicher**|Eine Domänen Eigenschaft, die nicht direkt im Speicher gespeichert wird, sondern sowohl Get als auch festgelegt werden kann.<br /><br /> Sie müssen die Methoden bereitstellen, mit denen der Wert erhalten und festgelegt wird.<br /><br /> Beispielsweise `Person.FullAddress` kann in `Person.StreetAddress` , und gespeichert werden `Person.City` `Person.PostalCode` .<br /><br /> Sie können auch auf externe Ressourcen zugreifen, z. b. um Werte aus einer Datenbank zu erhalten und festzulegen.<br /><br /> Der Code sollte keine Werte im Speicher festlegen, wenn den Wert "true" hat `Store.InUndoRedoOrRollback` . Weitere Informationen finden Sie unter [Transaktionen und benutzerdefinierte Setter](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Bereitstellen des Codes für eine berechnete oder benutzerdefinierte Speicher Eigenschaft
  Wenn Sie den Typ einer Domänen Eigenschaft auf einen berechneten oder einen benutzerdefinierten Speicher festgelegt haben, müssen Sie Zugriffsmethoden bereitstellen. Wenn Sie die Projekt Mappe erstellen, werden Sie in einem Fehlerbericht darüber informiert, was erforderlich ist.
@@ -45,7 +45,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
 
 3. Klicken Sie in der Symbolleiste von **Projektmappen-Explorer**auf **alle Vorlagen transformieren** .
 
-4. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+4. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
      Sie erhalten die folgende Fehlermeldung: "*YourClass* enthält keine Definition für get*yourproperty*".
 
@@ -56,7 +56,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
     > [!NOTE]
     > Diese Datei wird aus "DslDefinition. DSL" generiert. Wenn Sie diese Datei bearbeiten, gehen Ihre Änderungen beim nächsten Klicken auf **alle Vorlagen transformieren**verloren. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.
 
-6. Erstellen oder öffnen Sie eine Klassendatei in einem separaten Ordner, z. b. customcode \\*yourdomainclass*. cs.
+6. Erstellen oder öffnen Sie eine Klassendatei in einem separaten Ordner, z. b. customcode \\ *yourdomainclass*. cs.
 
      Stellen Sie sicher, dass der Namespace mit dem des generierten Codes identisch ist.
 
@@ -70,7 +70,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
     }  }
     ```
 
-8. Wenn Sie **Art** auf **benutzerdefinierten Speicher**festlegen, müssen Sie auch eine `Set`-Methode bereitstellen. Beispiel:
+8. Wenn Sie **Art** auf **benutzerdefinierten Speicher**festlegen, müssen Sie auch eine-Methode bereitstellen `Set` . Beispiel:
 
     ```
     void SetAgeValue(int value)
@@ -79,16 +79,16 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
             System.DateTime.Today.Year - value; }
     ```
 
-     Der Code sollte keine Werte im Speicher festlegen, wenn `Store.InUndoRedoOrRollback` true ist. Weitere Informationen finden Sie unter [Transaktionen und benutzerdefinierte Setter](#setters).
+     Der Code sollte keine Werte im Speicher festlegen, wenn den Wert "true" hat `Store.InUndoRedoOrRollback` . Weitere Informationen finden Sie unter [Transaktionen und benutzerdefinierte Setter](#setters).
 
-9. Erstellen Sie die Projektmappe, und führen Sie sie aus.
+9. Erstellen Sie das Projekt, und führen Sie es aus.
 
 10. Testen Sie die-Eigenschaft. Stellen Sie sicher, dass Sie **Rückgängig** und wieder **holen**versuchen.
 
-## <a name="setters"></a>Transaktionen und benutzerdefinierte Setter
+## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transaktionen und benutzerdefinierte Setter
  In der Set-Methode der Custom Storage-Eigenschaft muss keine Transaktion geöffnet werden, da die-Methode in der Regel innerhalb einer aktiven Transaktion aufgerufen wird.
 
- Die Set-Methode kann jedoch auch aufgerufen werden, wenn der Benutzer Rückgängigmachen oder wiederholen aufruft oder wenn für eine Transaktion ein Rollback ausgeführt wird. Wenn <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> auf true festgelegt ist, sollte sich die Set-Methode wie folgt Verhalten:
+ Die Set-Methode kann jedoch auch aufgerufen werden, wenn der Benutzer Rückgängigmachen oder wiederholen aufruft oder wenn für eine Transaktion ein Rollback ausgeführt wird. Wenn <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> den Wert true hat, sollte sich die Set-Methode wie folgt Verhalten:
 
 - Es sollten keine Änderungen im Speicher vorgenommen werden, wie z. b. das Zuweisen von Werten zu anderen Domänen Eigenschaften. Der rückgängig-Manager legt seine Werte fest.
 
@@ -111,5 +111,5 @@ void SetAgeValue(int value)
 
  Weitere Informationen zu Transaktionen finden Sie unter [navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Navigieren und Aktualisieren eines Modells in den Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md) [Eigenschaften von Domänen Eigenschaften](../modeling/properties-of-domain-properties.md) [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md)

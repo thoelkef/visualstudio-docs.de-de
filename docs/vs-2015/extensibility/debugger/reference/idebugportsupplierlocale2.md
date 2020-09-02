@@ -11,16 +11,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 789d9f97958b9662db5f792f28a75c0f6b46a8c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188152"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Stellt die Gebietsschema-Unterstützung für eines portanbieters bereit.  
+Stellt Gebiets Schema Unterstützung für einen Port Lieferanten bereit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -29,23 +29,23 @@ IDebugPortSupplierLocale2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle, um das Gebietsschema festlegen.  
+ Ein benutzerdefinierter Port Lieferant implementiert diese Schnittstelle, um das Gebiets Schema festzulegen.  
   
 ## <a name="methods"></a>Methoden  
- Die folgende Tabelle zeigt die Methoden der **IDebugPortSupplierLocale2**.  
+ In der folgenden Tabelle sind die Methoden von **IDebugPortSupplierLocale2**aufgeführt.  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebietsschema für den Anschlusslieferanten fest.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebiets Schema für den Port Lieferanten fest.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Portpriv.h  
+ Header: portpriv. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

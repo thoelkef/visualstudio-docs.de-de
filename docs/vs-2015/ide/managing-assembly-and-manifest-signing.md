@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 98d764bae48fb7deaa3f3cf917b0d4c8baab185b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651369"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
@@ -30,10 +30,10 @@ Durch eine Signierung mit starkem Namen erhalten Softwarekomponenten eine global
 
  Informationen zum Signieren von Assemblys in Visual Basic- und C#-Projekten finden Sie unter [Erstellen und Verwenden von Assemblys mit starkem Namen](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).
 
- Informationen zum Signieren von Assemblys in Visual C++-Projekten finden Sie unter [Assemblys mit starken Namen (Assemblysignierung) (C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).
+ Informationen zum Signieren von Assemblys in Visual C++ Projekten finden Sie unter Assemblys mit [starkem Namen (Assemblysignierung) (C++/CLI](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
 
 ## <a name="asset-types-and-signing"></a>Objekttypen und Signierung
- Sie können .NET-Assemblys und Anwendungsmanifeste signieren. Hierzu gehört Folgendes:
+ Sie können .NET-Assemblys und Anwendungsmanifeste signieren. Dabei handelt es sich z. B. um:
 
 - Ausführbare Dateien (.exe)
 
@@ -61,11 +61,11 @@ Durch eine Signierung mit starkem Namen erhalten Softwarekomponenten eine global
 > [!WARNING]
 > Sie sollten die Schlüsseldatei immer mit einem Kennwort schützen, damit sie von keiner anderen Person verwendet werden kann. Sie können die Schlüsseldateien auch schützen, indem Sie Schlüsselanbieter oder Zertifikatspeicher verwenden.
 
- Außerdem können Sie auf eine Schlüsseldatei, die Sie bereits erstellt haben, zeigen. Weitere Informationen zum Erstellen eines Schlüssels finden Sie unter [How to: Create a Public-Private Key (Vorgehensweise: Erstellen eines öffentlich-privaten Schlüsselpaars)](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
+ Außerdem können Sie auf eine Schlüsseldatei, die Sie bereits erstellt haben, zeigen. Weitere Informationen zum Erstellen von Schlüsseln finden Sie unter Gewusst [wie: Erstellen eines öffentlichen/privaten Schlüssel Paars](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
 
- Wenn Sie nur Zugriff auf einen öffentlichen Schlüssel haben, können Sie verzögertes Signieren verwenden, um das Zuweisen des Schlüssels zu verzögern. Sie können auch das verzögerte Signieren aktivieren, indem Sie das Kontrollkästchen **Nur verzögerte Signierung** aktivieren. Ein verzögert signiertes Projekt wird nicht ausgeführt, und Sie können es nicht debuggen. Allerdings können Sie die Überprüfung während der Entwicklung überspringen, indem Sie [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) mit der Option `-Vr` verwenden.
+ Wenn Sie nur Zugriff auf einen öffentlichen Schlüssel haben, können Sie verzögertes Signieren verwenden, um das Zuweisen des Schlüssels zu verzögern. Sie können auch das verzögerte Signieren aktivieren, indem Sie das Kontrollkästchen **Nur verzögerte Signierung** aktivieren. Ein verzögert signiertes Projekt wird nicht ausgeführt, und Sie können es nicht debuggen. Allerdings können Sie die Überprüfung während der Entwicklung überspringen, indem Sie die- [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) mit der- `-Vr` Option verwenden.
 
- Weitere Informationen zum Signieren von Manifesten finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../ide/how-to-sign-application-and-deployment-manifests.md).
+ Weitere Informationen zum Signieren von Manifesten finden [Sie unter How to: Sign Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Siehe auch
- Assemblys [mit starkem](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) Namen Assemblys mit starkem Namen (Assemblysignierung [)C++](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
+## <a name="see-also"></a>Weitere Informationen
+ Assemblys [mit starkem](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) Namen Assemblys mit starkem Namen (Assemblysignatur [) (C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)

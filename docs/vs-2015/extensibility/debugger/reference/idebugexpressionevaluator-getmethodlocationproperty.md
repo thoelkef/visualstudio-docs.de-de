@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty | Microsoft-Dokumentation
+title: 'Idebugexpressionevaluator:: getmethodlocationproperty | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d82b002d9253b2d48f78e74fdf964cf42d241d9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144390"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode konvertiert einen Methode Speicherort und einen Offset, in eine Speicheradresse.  
+Diese Methode konvertiert einen Methoden Speicherort und Offset in eine Speicheradresse.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,30 +48,30 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>Parameter  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] Der Speicherort der Methode und einem festen Offset, die als Zeichenfolge ausgedrückt werden.  
+ in Der Speicherort und der Offset der Methode als Zeichenfolge.  
   
  `pSymbolProvider`  
- [in] Der symbolanbieter, ausgedrückt als eine [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) Objekt.  
+ in Der Symbol Anbieter, ausgedrückt als [idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) -Objekt.  
   
  `pAddress`  
- [in] Eine Adresse innerhalb der Methode als eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Objekt.  
+ in Eine Adresse innerhalb der Methode, ausgedrückt als [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekt.  
   
  `pBinder`  
- [in] Der Binder, ausgedrückt als eine [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Objekt.  
+ in Der als [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Objekt ausgedrückte Binder.  
   
  `ppProperty`  
- [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle, die Speicheradresse darstellt.  
+ vorgenommen Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle zurück, die die Speicheradresse darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die zurückgegebene Adresse kann verwendet werden, um einen Haltepunkt, z. B. festzulegen.  
+## <a name="remarks"></a>Bemerkungen  
+ Die zurückgegebene Adresse kann z. b. zum Festlegen eines Breakpoints verwendet werden.  
   
- Trotz des Namens `upstrFullyQualifiedMethodPlusOffset`, dieser Parameter kann einen Methodennamen teilweise gekennzeichnete übergeben werden. In diesem Fall wird die ausgewählte Methode, die eingeschlossen `pAddress`. Der Interpretation dieser Parameter ist der Implementierung von der ausdrucksauswertung und die unterstützte Sprache an.  
+ Trotz des namens `upstrFullyQualifiedMethodPlusOffset` kann diesem Parameter ein teilweise qualifizierter Methodenname übergeben werden. In diesem Fall ist die ausgewählte Methode die Methode, die geschlossen wird `pAddress` . Die Art und Weise, wie dieser Parameter interpretiert wird, ist die Implementierung der Ausdrucks Auswertung und der unterstützten Sprache.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+ [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

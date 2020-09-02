@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Microsoft-Dokumentation
+title: 'IDebugPortSupplier3:: enumpersistedports | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 944159ead89166c8452775bd6522a7c441094ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188198"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft ein Objekt, das ermöglicht die Enumeration, der die Liste der persistenten Ports ab.  
+Diese Methode ruft ein Objekt ab, das die Enumeration der Liste der persistenten Ports zulässt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,18 +42,18 @@ int EnumPersistedPorts(
   
 #### <a name="parameters"></a>Parameter  
  `PortNames`  
- [in] Ein [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) Struktur, die eine Liste der Anschlussnamen gesucht und zurückgegeben, die zwischen der beibehaltenen Ports enthält. Nur die beibehaltenen Ports mit diesen Namen werden zurückgegeben.  
+ in Eine [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) Struktur, die eine Liste von Portnamen enthält, die gefunden und zwischen den beibehaltenen Ports zurückgegeben werden sollen. Nur die persistenten Ports mit diesen Namen werden zurückgegeben.  
   
  `ppEnum`  
- [out] Ein Objekt, implementiert die [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) Schnittstelle.  
+ vorgenommen Ein Objekt, das die [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) -Schnittstelle implementiert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Persistente Ports werden geladen, wenn ein portanbieters instanziiert und gespeichert, wenn die anschlusslieferant zerstört wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Persistente Ports werden geladen, wenn ein Port Lieferant instanziiert wird, und werden gespeichert, wenn der Port Lieferant zerstört wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)   
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)   
  [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

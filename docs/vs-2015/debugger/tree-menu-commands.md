@@ -1,5 +1,5 @@
 ---
-title: Struktur von Menübefehlen | Microsoft-Dokumentation
+title: Befehle im Menü „Struktur“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66ac968f21ef28916f038f8abf54331bea2b972f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144568"
 ---
 # <a name="tree-menu-commands"></a>Befehle im Menü "Struktur"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die **Struktur** Menü enthält Befehle zum Erweitern oder Reduzieren von Ansichten.  
+Das Menü **Struktur** enthält Befehle zum Erweitern oder Reduzieren von Sichten.  
   
  **Eine Ebene aufklappen**  
- Erweitert das aktuell ausgewählte Element in einer Systemansicht durch eine Ebene darunter anzeigen.  
+ Erweitert das aktuell ausgewählte Element in einer Systemansicht durch Anzeigen einer darunter liegenden Ebene.  
   
- **Branch aufklappen**  
- Erweitert alle Ebenen unterhalb der aktuell ausgewählte Element.  
+ **Verzweigung erweitern**  
+ Erweitert alle Ebenen unterhalb des aktuell ausgewählten Elements.  
   
- **Alle aufklappen**  
- Erweitert und zeigt alle Ebenen in einer Systemansicht.  
+ **Alle erweitern**  
+ Erweitert und zeigt alle Ebenen in einer Systemansicht an.  
   
- **Zuklappen**  
- Reduziert alle Ebenen unterhalb der aktuell ausgewählte Element.
+ **Reduzieren**  
+ Reduziert alle Ebenen unterhalb des aktuell ausgewählten Elements.

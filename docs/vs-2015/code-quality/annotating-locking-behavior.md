@@ -34,10 +34,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271590"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
@@ -69,24 +69,24 @@ Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Si
   
 |Anmerkung|BESCHREIBUNG|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine exklusive Sperrenanzahl des Sperr Objekts erhöht wird, das durch `expr`benannt wird.|  
-|`_Acquires_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um einen Schritt um die Sperrenanzahl des Sperr Objekts erhöht wird, das durch `expr`benannt wird.|  
-|`_Acquires_nonreentrant_lock_(expr)`|Die von `expr` benannte Sperre wird abgerufen.  Wenn die Sperre bereits besteht, wird ein Fehler gemeldet.|  
-|`_Acquires_shared_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine Anzahl der freigegebenen Sperren des Sperr Objekts, das von `expr`benannt wird, inkreliert wird.|  
-|`_Create_lock_level_(name)`|Eine Anweisung, die das Symbol deklariert, `name` eine Sperr Ebene sein kann, damit Sie in den Anmerkungen `_Has_Lock_level_` und `_Lock_level_order_`verwendet werden kann.|  
+|`_Acquires_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine exklusive Sperr Anzahl des Sperr Objekts, das durch benannt wird, inkreliert `expr` .|  
+|`_Acquires_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine die Sperrenanzahl des Sperr Objekts, das durch benannt wird, inkreliert `expr` .|  
+|`_Acquires_nonreentrant_lock_(expr)`|Die Sperre, die von benannt `expr` wird, wird abgerufen.  Wenn die Sperre bereits besteht, wird ein Fehler gemeldet.|  
+|`_Acquires_shared_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine Anzahl der freigegebenen Sperren des Sperr Objekts, das durch benannt wird, inkreliert `expr` .|  
+|`_Create_lock_level_(name)`|Eine Anweisung, die das Symbol `name` als Sperr Ebene deklariert, damit Sie in den Anmerkungen und verwendet werden kann `_Has_Lock_level_` `_Lock_level_order_` .|  
 |`_Has_lock_kind_(kind)`|Kommentiert alle-Objekte, um die Typinformationen eines Ressourcen Objekts zu verfeinern. Manchmal wird ein gemeinsamer Typ für verschiedene Arten von Ressourcen verwendet, und der überladene Typ reicht nicht aus, um die semantischen Anforderungen zwischen verschiedenen Ressourcen zu unterscheiden. Im folgenden finden Sie eine Liste vordefinierter `kind` Parameter:<br /><br /> `_Lock_kind_mutex_`<br /> Sperrenkind-ID für Mutexes.<br /><br /> `_Lock_kind_event_`<br /> Sperrenkind-ID für Ereignisse.<br /><br /> `_Lock_kind_semaphore_`<br /> Sperrenkind-ID für Semaphore.<br /><br /> `_Lock_kind_spin_lock_`<br /> Sperrenkind-ID für Spin-sperren.<br /><br /> `_Lock_kind_critical_section_`<br /> Sperrenkind-ID für kritische Abschnitte.|  
-|`_Has_lock_level_(name)`|Kommentiert ein Lock-Objekt und übergibt ihm die Sperr Ebene `name`.|  
-|`_Lock_level_order_(name1, name2)`|Eine-Anweisung, die die Sperr Anordnung zwischen `name1` und `name2`ermöglicht.|  
-|`_Post_same_lock_(expr1, expr2)`|Kommentiert eine Funktion und gibt an, dass die beiden sperren, `expr1` und `expr2`im Post-Zustand so behandelt werden, als wären Sie das gleiche Sperr Objekt.|  
-|`_Releases_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine exklusive Sperrenanzahl des Sperr Objekts, das von `expr`benannt wird, dekreliert.|  
-|`_Releases_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine Sperrenanzahl des Sperr Objekts, das von `expr`benannt wird, dekreliert.|  
-|`_Releases_nonreentrant_lock_(expr)`|Die Sperre, die von `expr` benannt wird, wird freigegeben. Wenn die Sperre derzeit nicht aufrechterhalten wird, wird ein Fehler gemeldet.|  
-|`_Releases_shared_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um einen Wert für die Anzahl der freigegebenen Sperren des Sperr Objekts, das von `expr`benannt wird, verringert.|  
-|`_Requires_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Sperrenanzahl des Objekts, das von `expr` benannt ist, mindestens eins ist.|  
-|`_Requires_lock_not_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Sperrenanzahl des Objekts, das von `expr` benannt ist, in der vorab Zustand 0 (null) ist.|  
+|`_Has_lock_level_(name)`|Kommentiert ein Sperr Objekt und gibt ihm die Sperr Ebene von `name` .|  
+|`_Lock_level_order_(name1, name2)`|Eine-Anweisung, die die Sperr Anordnung zwischen `name1` und ermöglicht `name2` .|  
+|`_Post_same_lock_(expr1, expr2)`|Kommentiert eine Funktion und gibt an, dass die beiden Sperren im Post-Zustand `expr1` `expr2` so behandelt werden, als wären Sie das gleiche Sperr Objekt.|  
+|`_Releases_exclusive_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die-Funktion im Post-Zustand um eine exklusive Sperrenanzahl des Sperr Objekts dekregiert, das von benannt wird `expr` .|  
+|`_Releases_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die-Funktion im Post-Zustand um eine Sperrenanzahl des Sperr Objekts dekregiert, das durch benannt wird `expr` .|  
+|`_Releases_nonreentrant_lock_(expr)`|Die Sperre, die von benannt `expr` wird, wird freigegeben. Wenn die Sperre derzeit nicht aufrechterhalten wird, wird ein Fehler gemeldet.|  
+|`_Releases_shared_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um einen Wert für die freigegebene Sperre des Sperr Objekts, das durch benannt wird, dekregiert `expr` .|  
+|`_Requires_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Sperrenanzahl des Objekts, das durch benannt ist, mindestens `expr` eins ist.|  
+|`_Requires_lock_not_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die Sperrenanzahl des Objekts, das durch benannt ist, in der Vorbedingung `expr` 0 (null) ist.|  
 |`_Requires_no_locks_held_`|Kommentiert eine Funktion und gibt an, dass die Sperr Anzahl aller Sperren, die der Prüfung bekannt sind, 0 (null) ist.|  
-|`_Requires_shared_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die freigegebene Sperrenanzahl des Objekts, das von `expr` benannt ist, mindestens eins ist.|  
-|`_Requires_exclusive_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass im Voraus die exklusive Sperr Anzahl des Objekts, das von `expr` benannt ist, mindestens eins ist.|  
+|`_Requires_shared_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass die freigegebene Sperrenanzahl des Objekts, das durch benannt ist, mindestens `expr` eins ist.|  
+|`_Requires_exclusive_lock_held_(expr)`|Kommentiert eine Funktion und gibt an, dass im Voraus die exklusive Sperr Anzahl des Objekts, das durch benannt ist, mindestens `expr` eins ist.|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Systeminterne SAL-Funktionen für nicht verfügbare Sperrobjekte  
  Bestimmte Sperrobjekte werden von der Implementierung der zugehörigen Sperr Funktionen nicht verfügbar gemacht.  In der folgenden Tabelle werden die systeminternen SAL-Variablen aufgelistet, die Anmerkungen für Funktionen ermöglichen, die für diese nicht verfügbar gemachten Sperrobjekte verwendet werden.  
@@ -103,18 +103,18 @@ Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Si
   
 |Anmerkung|BESCHREIBUNG|  
 |----------------|-----------------|  
-|`_Guarded_by_(expr)`|Kommentiert eine Variable und gibt an, dass bei jedem Zugriff auf die Variable die Sperrenanzahl des Sperr Objekts, das von `expr` benannt wird, mindestens eins ist.|  
-|`_Interlocked_`|Kommentiert eine Variable und entspricht `_Guarded_by_(_Global_interlock_)`.|  
+|`_Guarded_by_(expr)`|Kommentiert eine Variable und gibt an, dass bei jedem Zugriff auf die Variable die Sperrenanzahl des Sperr Objekts, das durch benannt ist, mindestens `expr` eins ist.|  
+|`_Interlocked_`|Kommentiert eine Variable und entspricht `_Guarded_by_(_Global_interlock_)` .|  
 |`_Interlocked_operand_`|Der mit Anmerkungen versehene Funktionsparameter ist der Ziel Operand einer der verschiedenen Interlocked-Funktionen.  Diese Operanden müssen über bestimmte zusätzliche Eigenschaften verfügen.|  
-|`_Write_guarded_by_(expr)`|Kommentiert eine Variable und gibt an, dass bei jeder Änderung der Variablen die Sperrenanzahl des Sperr Objekts, das von `expr` benannt ist, mindestens eins ist.|  
+|`_Write_guarded_by_(expr)`|Kommentiert eine Variable und gibt an, dass bei jeder Änderung der Variablen die Sperrenanzahl des Sperr Objekts, das durch benannt ist, mindestens `expr` eins ist.|  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- Grundlegendes zu [SAL](../code-quality/understanding-sal.md)   
- Hinzufügen von [Anmerkungen zu Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)   
- Hinzufügen einer [Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   
- Hinzufügen einer [Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)   
- [Angeben, wann und wo eine Anmerkung angewendet](../code-quality/specifying-when-and-where-an-annotation-applies.md) wird   
+ [Verwenden von Sal-Anmerkungen zum Reduzieren von C/C++-Code Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Grundlegendes zur SAL](../code-quality/understanding-sal.md)   
+ [Kommentieren von Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   
+ [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)   
+ [Angeben, wann und wo eine Anmerkung angewendet wird](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Intrinsische Funktionen](../code-quality/intrinsic-functions.md)   
  [Bewährte Methoden und Beispiele](../code-quality/best-practices-and-examples-sal.md)   
  [Blog des Code Analyseteams](https://blogs.msdn.com/b/codeanalysis/)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: afff9e06c4333f4910e22e963d24090c1d1e4c6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651335"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen
@@ -29,7 +29,7 @@ ms.locfileid: "72651335"
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editoren, Dialogfelder und Toolfenster
- Standardmäßig wird in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] für Dialogfelder und Toolfenster die gleiche Schriftgröße und Schriftfarbe wie für das Betriebssystem verwendet. Die Farbeinstellungen für den Rahmen der IDE, die Dialogfelder, Symbolleisten und Toolfenster basieren auf einem Farbschema: hell oder dunkel. Sie können das aktuelle Farbschema unter [Allgemein, Umgebung, Dialogfeld "Optionen"](../../ide/reference/general-environment-options-dialog-box.md) ändern.
+ Standardmäßig wird in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] für Dialogfelder und Toolfenster die gleiche Schriftgröße und Schriftfarbe wie für das Betriebssystem verwendet. Die Farbeinstellungen für den Rahmen der IDE, die Dialogfelder, Symbolleisten und Toolfenster basieren auf einem Farbschema: hell oder dunkel. Sie können das aktuelle Farbschema im [Dialog Feld Allgemein, Umgebung, Optionen](../../ide/reference/general-environment-options-dialog-box.md)ändern.
 
  Sie können auch festlegen, dass in der Codeansicht des Editors Popupfenster angezeigt werden. Diese Fenster zeigen Ihnen möglicherweise verfügbare Member für das aktuelle Objekt und die Parameter, die für eine Funktion oder Anweisung benötigt werden. Sie können besonders hilfreich sein, wenn Sie Schwierigkeiten bei der Eingabe über die Tastatur haben. Allerdings kollidiert diese Funktion mit dem Fokus im Code-Editor, was für manche Benutzer problematisch sein kann. Sie können diese Fenster deaktivieren, indem Sie das Dialogfeld **Optionen** öffnen und **Member automatisch auflisten** sowie **Parameterinformationen** im **Text-Editor** auf der Seite **Alle Sprachen** unter **Allgemein** löschen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).
 
@@ -110,5 +110,5 @@ ms.locfileid: "72651335"
 
 2. Geben Sie direkt neben **Name** eine neue Beschriftung für die ausgewählte Schaltfläche ein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Barrierefreiheits Funktionen von Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md) - [Ressourcen für das Entwerfen von zugänglichen Anwendungen](../../ide/reference/resources-for-designing-accessible-applications.md)

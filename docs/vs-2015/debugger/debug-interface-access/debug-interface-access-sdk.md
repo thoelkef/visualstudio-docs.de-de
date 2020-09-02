@@ -16,32 +16,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ddaea95bc879364de99c0ec01213cda30fa4e7d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197620"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Das Microsoft Debug-Schnittstelle Zugriff Software Development Kit (DIA-SDK) bietet Zugriff auf in die Programmdateien der Programmdatenbankdatei (.pdb) von Microsoft-Postcompilertools generierten gespeicherten Informationen zu debuggen. Da das Format der von der Postcompilertools generierten PDB-Datei mit konstanter Revision durchgeführt wird, ist das Verfügbarmachen von Format unpraktisch. Verwenden die DIA-API, können Sie Anwendungen entwickeln, die suchen und Durchsuchen die Debuginformationen in PDB-Datei gespeichert. Solche Anwendungen können z. B. Stapel-Trace-Back-Berichtsinformationen und Analysieren von Leistungsdaten.  
+Das Microsoft Debug Interface Access Software Development Kit (DIA SDK) bietet Zugriff auf Debuginformationen, die in Programm Datenbankdateien (PDB-Dateien) gespeichert sind, die von den Microsoft Postcompilertools generierten-Tools generiert wurden. Da das Format der PDB-Datei, die von den Postcompilertools generierten-Tools generiert wurde, konstant ist, ist das verfügbar machen des Formats nicht praktikabel. Mithilfe der Dia-API können Sie Anwendungen entwickeln, die nach in einer PDB-Datei gespeicherten Debuginformationen suchen und diese durchsuchen. Solche Anwendungen können z. b. Berichts Stapel-Ablauf Verfolgungs Informationen zurückgeben und Leistungsdaten analysieren.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Erste Schritte](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
- Bietet eine Übersicht über die DIA-SDK-Funktionen, und gibt an, wo die DIA-SDK sowie die erforderlichen Header und Bibliotheksdateien installiert ist.  
+ Bietet einen Überblick über die Dia SDK Features und gibt an, wo die Dia SDK installiert ist, sowie die erforderlichen Header-und Bibliotheksdateien.  
   
  [Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- Enthält Anweisungen zur Verwendung der DIA-API zum Abfragen der PDB-Datei an.  
+ Enthält Anweisungen zur Verwendung der Dia-API zum Abfragen der PDB-Datei.  
   
  [Symbole und Symboltags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- Erläutert, wie Symbole und symboltags in die DIA-API verwendet werden.  
+ Erläutert, wie Symbole und Symbol Tags in der Dia-API verwendet werden.  
   
- [Verweis](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
- Enthält die Schnittstellen, Methoden, Enumerationen und Strukturen der DIA-API.  
+ [Referenz](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+ Enthält die Schnittstellen, Methoden, Enumerationen und Strukturen der Dia-API.  
   
  [Dia2dump-Beispiel](../../debugger/debug-interface-access/dia2dump-sample.md)  
- Veranschaulicht, wie die DIA-API zu suchen und Durchsuchen von Informationen zum Debuggen.  
+ Veranschaulicht die Verwendung der Dia-API zum Suchen und Durchsuchen von Debuginformationen.  
   
  [Quelldatei Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)  
- Quellcode von verwendeten [Dia2dump-Beispiel](../../debugger/debug-interface-access/dia2dump-sample.md) die DIA-API veranschaulicht.
+ Quellcode, der von [Dia2dump Sample](../../debugger/debug-interface-access/dia2dump-sample.md) zum Veranschaulichen der Dia-API verwendet wird.

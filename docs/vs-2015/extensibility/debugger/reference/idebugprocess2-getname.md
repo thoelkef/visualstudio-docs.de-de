@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetName | Microsoft-Dokumentation
+title: 'IDebugProcess2:: GetName | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6070e530726c4b21a9f4f123df431941a4b1801e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188006"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft ab, der Titel, der Anzeigename oder der Dateiname des Prozesses.  
+Ruft den Titel, den anzeigen Amen oder den Dateinamen des Prozesses ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,14 +42,14 @@ int GetName( 
   
 #### <a name="parameters"></a>Parameter  
  `gnType`  
- [in] Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) Enumeration, der angibt, welche Art von Namen zurückgegeben.  
+ in Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) Enumeration, der angibt, welcher Typ von Name zurückgegeben werden soll.  
   
  `pbstrName`  
- [out] Gibt den Namen des Prozesses.  
+ vorgenommen Gibt den Namen des Prozesses zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

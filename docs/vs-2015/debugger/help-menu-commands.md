@@ -1,5 +1,5 @@
 ---
-title: Befehle im Menü Hilfe | Microsoft-Dokumentation
+title: Befehle des Hilfemenüs | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63a1a0cd9068f8c9dc40dc6fc6ac7984ef250a16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197500"
 ---
 # <a name="help-menu-commands"></a>Befehle im Menü "Hilfe"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die **Hilfe** Menü enthält Befehle zum Öffnen der Hilfedateien.  
+Das Menü **Hilfe** enthält Befehle zum Öffnen von Hilfedateien.  
   
  **Index**  
- Öffnet das Inhaltsverzeichnis für die Spy++-Hilfe.  
+ Öffnet den Bildschirm Inhalt für Spy + +-Hilfe.  
   
  **Hilfe verwenden**  
- Öffnet eine Hilfedatei, die beschreibt, wie Sie mit der Hilfe.  
+ Öffnet eine Hilfedatei, in der die Verwendung der Hilfe beschrieben wird.  
   
  **Info**  
- Zeigt die Version und urheberrechtliche Informationen für die Spy++.
+ Zeigt die Softwareversion und Copyright Informationen für Spy + + an.

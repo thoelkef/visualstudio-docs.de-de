@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 16a09a5b0f5e534d310092036b8e7eb1d4c344d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668473"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
@@ -29,7 +29,7 @@ Bei ihrer DSL-Definition handelt es sich um eine Plattform, auf der Sie einen le
 ### <a name="overriding-methods-in-a-partial-class"></a>Überschreiben von Methoden in einer partiellen Klasse
  Partielle Klassendefinitionen ermöglichen es, dass eine Klasse an mehr als einem Ort definiert wird. Dies ermöglicht es Ihnen, den generierten Code von dem Code zu trennen, den Sie selbst schreiben. In Ihrem manuell geschriebenen Code können Sie Klassen überschreiben, die vom generierten Code geerbt wurden.
 
- Wenn Sie in ihrer DSL-Definition z. b. eine Domänen Klasse mit dem Namen `Book` definieren, können Sie benutzerdefinierten Code schreiben, der Überschreibungs Methoden hinzufügt:
+ Wenn Sie in ihrer DSL-Definition z. b. eine Domänen Klasse mit dem Namen definieren `Book` , können Sie benutzerdefinierten Code schreiben, der Überschreibungs Methoden hinzufügt:
 
  `public partial class Book`
 
@@ -55,20 +55,20 @@ Bei ihrer DSL-Definition handelt es sich um eine Plattform, auf der Sie einen le
 
  Dennoch können Sie diese Methoden überschreiben, indem Sie das Flag für die **doppelte abgeleitete** Generierung für die Domänen Klasse festlegen. Dies bewirkt, dass zwei Klassen generiert werden, von denen eine eine abstrakte Basisklasse der anderen ist. Alle Methoden-und Eigenschafts Definitionen befinden sich in der Basisklasse, und nur der Konstruktor ist in der abgeleiteten Klasse.
 
- Beispielsweise ist in der Beispiel Bibliothek. DSL für die `CirculationBook` Domänen Klasse die Eigenschaft `Generates``Double Derived` auf `true` festgelegt. Der generierte Code für diese Domänen Klasse enthält zwei Klassen:
+ Beispielsweise ist in der Beispiel Bibliothek. DSL für die `CirculationBook` Domänen Klasse die- `Generates``Double Derived` Eigenschaft auf festgelegt `true` . Der generierte Code für diese Domänen Klasse enthält zwei Klassen:
 
 - `CirculationBookBase`, bei dem es sich um eine abstrakte handelt, die alle Methoden und Eigenschaften enthält.
 
-- `CirculationBook`, die von `CirculationBookBase` abgeleitet ist. Es ist leer, außer für seine Konstruktoren.
+- `CirculationBook`, die von abgeleitet ist `CirculationBookBase` . Es ist leer, außer für seine Konstruktoren.
 
-  Um eine beliebige Methode zu überschreiben, erstellen Sie eine partielle Definition der abgeleiteten Klasse, z. b. `CirculationBook`. Sie können sowohl die generierten Methoden als auch die Methoden überschreiben, die vom Modellierungs Framework geerbt wurden.
+  Um eine beliebige Methode zu überschreiben, erstellen Sie eine partielle Definition der abgeleiteten Klasse, z `CirculationBook` . b.. Sie können sowohl die generierten Methoden als auch die Methoden überschreiben, die vom Modellierungs Framework geerbt wurden.
 
   Sie können diese Methode mit allen Elementtypen verwenden, einschließlich Modellelemente, Beziehungen, Formen, Diagrammen und Connectors. Sie können auch Methoden anderer generierter Klassen überschreiben. Einige generierte Klassen, z. b. toolboxhelper, sind immer doppelt abgeleitet.
 
 ### <a name="custom-constructors"></a>Benutzerdefinierte Konstruktoren
  Ein Konstruktor kann nicht überschrieben werden. Auch in doppelten abgeleiteten Klassen muss der Konstruktor in der abgeleiteten Klasse sein.
 
- Wenn Sie einen eigenen Konstruktor bereitstellen möchten, können Sie hierzu `Has Custom Constructor` für die Domänen Klasse in der DSL-Definition festlegen. Wenn Sie auf **alle Vorlagen transformieren**klicken, enthält der generierte Code keinen Konstruktor für die Klasse. Dies schließt einen aufzurufenden Konstruktor ein. Dies verursacht einen Fehlerbericht, wenn Sie die Projekt Mappe erstellen. Doppelklicken Sie auf den Fehlerbericht, um einen Kommentar im generierten Code anzuzeigen, in dem erläutert wird, was Sie bereitstellen sollten.
+ Wenn Sie einen eigenen Konstruktor bereitstellen möchten, können Sie dies erreichen, indem Sie `Has Custom Constructor` für die Domänen Klasse in der DSL-Definition festlegen. Wenn Sie auf **alle Vorlagen transformieren**klicken, enthält der generierte Code keinen Konstruktor für die Klasse. Dies schließt einen aufzurufenden Konstruktor ein. Dies verursacht einen Fehlerbericht, wenn Sie die Projekt Mappe erstellen. Doppelklicken Sie auf den Fehlerbericht, um einen Kommentar im generierten Code anzuzeigen, in dem erläutert wird, was Sie bereitstellen sollten.
 
  Schreiben Sie eine partielle Klassendefinition in einer Datei, die von den generierten Dateien getrennt ist, und stellen Sie den Konstruktor bereit.
 

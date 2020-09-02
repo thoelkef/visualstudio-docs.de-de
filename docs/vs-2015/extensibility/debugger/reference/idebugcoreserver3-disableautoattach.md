@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DisableAutoAttach | Microsoft-Dokumentation
+title: IDebugCoreServer3::D isableautoattach | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0968d3756021af117d329456868397306f0ae356
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62571754"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Deaktiviert die automatische anfügen für alle Debug-Engines, die diesem Server zugeordnet.  
+Deaktiviert das automatische anfügen für alle debugengines, die diesem Server zugeordnet sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ int DisableAutoAttach();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

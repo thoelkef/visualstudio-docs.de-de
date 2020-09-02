@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 438f84a172c7e0a2d0dc957c578adc568a46495f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668160"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)
@@ -24,13 +24,13 @@ ms.locfileid: "72668160"
 
 Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder benötigen keinen. Dies ist in Datenbanken üblich, in denen möglicherweise einigen Feldern kein Wert zugewiesen wird. Sie können z.B. einem Datenbankfeld einen NULL-Wert zuweisen, um zu zeigen, dass noch kein Wert zugewiesen wurde.
 
- Ein *Nullable-Typ* ist ein Werttyp, den Sie erweitern, sodass der normale Wertebereich für diesen Typ als auch ein NULL-Wert benötigt werden. Ein Nullable von `Int32`, auch bezeichnet als Nullable\<Int32>, kann beispielsweise einem Wert im Bereich von -2147483648 bis 2147483647 oder einem NULL-Wert zugewiesen werden. Einem Nullable\<bool> können die Werte `True`, `False`, oder NULL (überhaupt kein Wert) zugewiesen werden.
+ Ein *Nullable-Typ* ist ein Werttyp, den Sie erweitern, sodass der normale Wertebereich für diesen Typ als auch ein NULL-Wert benötigt werden. Ein Nullable von `Int32`, auch bezeichnet als Nullable\<Int32>, kann beispielsweise einem Wert im Bereich von –2147483648 bis 2147483647 oder einem NULL-Wert zugewiesen werden. Einem Nullable\<bool> können die Werte `True`, `False`, oder NULL (überhaupt kein Wert) zugewiesen werden.
 
  Auf NULL festlegbare Typen sind Instanzen der <xref:System.Nullable%601>-Struktur. Jede Instanz eines Nullable-Typs hat zwei öffentliche schreibgeschützte Eigenschaften `HasValue` und `Value`:
 
 - `HasValue` ist vom Typ `bool` und gibt an, ob die Variable einen definierten Wert enthält. `True` bedeutet, dass die Variable einen nicht-NULL-Wert enthält. Sie können mithilfe einer Anweisung wie `if (x.HasValue)` oder `if (y != null)` auf einen definierten Wert testen.
 
-- `Value` hat denselben Typ wie der zugrunde liegende Typ. Wenn `HasValue` `True` ist, enthält `Value` einen sinnvollen Wert. Wenn `HasValue` `False` ist, wird der Zugriff auf `Value` eine ungültige Operationsausnahme auslösen.
+- `Value` hat denselben Typ wie der zugrunde liegende Typ. Wenn `HasValue``True` ist, enthält `Value` einen sinnvollen Wert. Wenn `HasValue``False` ist, wird der Zugriff auf `Value` eine ungültige Operationsausnahme auslösen.
 
   Beim Deklarieren einer Variablen als Nullable-Typ verfügt sie standardmäßig über keinen definierten Wert (`HasValue` ist `False`) als der Standardwert des ihr zugrunde liegenden Werttyps.
 
@@ -81,5 +81,5 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
 
 5. Klicken Sie mit der rechten Maustaste auf Klassenform und auf **Klassendetails**. Sie können die Eigenschaften des neuen Typs im Fenster **Klassendetails** anzeigen oder ändern.
 
-## <a name="see-also"></a>Siehe auch
- [Typen](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) , die NULL-Werte zulassen, <xref:System.Nullable%601> Typen, die [Nullwerte](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) zulassen [How Identifizieren eines Typs, der NULL-Werte zulässt ](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)- [Werttypen](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:System.Nullable%601>[Typen](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) , die [Nullwerte](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) zulassen [, Gewusst wie: Identifizieren eines Typs,](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) der NULL [-Werte zulässt](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6) .

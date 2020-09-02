@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568046"
 ---
 # <a name="collecting-tier-interaction-data"></a>Erfassen von Ebeneninteraktionsdaten
@@ -34,7 +34,7 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
  **Windows 8 und Windows Server 2012**  
   
- Um Ebeneninteraktionsdaten für Windows 8-Desktop-Apps und Windows Server 2012-Apps zu erfassen, müssen Sie die Instrumentierungsmethode verwenden. Sie können Ebeneninteraktionsdaten nicht für Windows Store-Apps sammeln. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einer anderen unterstützten Version von Windows einschließen.  
+ Um Ebeneninteraktionsdaten für Windows 8-Desktop-Apps und Windows Server 2012-Apps zu erfassen, müssen Sie die Instrumentierungsmethode verwenden. Sie können Ebeneninteraktionsdaten nicht für Windows Store-Apps sammeln. Informationen hierzu finden Sie unter [Performance Tools on Windows 8 and Windows Server 2012 applications (Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen)](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einer anderen unterstützten Version von Windows einschließen.  
   
  **Leistungs-Assistent**  
   
@@ -48,5 +48,5 @@ Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den 
   
 3. Wählen Sie im Leistungs-Explorer den Knoten **Ziele** aus, und geben Sie das Projekt, die ausführbare Datei oder die Website an, für das/die Sie ein Profil erstellen möchten.  
   
-## <a name="see-also"></a>Siehe auch  
- [Ansicht "Ebeneninteraktionen"](../profiling/tier-interactions-view.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Ebeneninteraktionen (Ansicht)](../profiling/tier-interactions-view.md)
