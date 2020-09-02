@@ -15,10 +15,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852217"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menüelemente
@@ -52,16 +52,16 @@ Fügen Sie der vsct-Datei für das Paket einfach einen Eintrag hinzu, um eine Ta
   
 1. Öffnen Sie die vsct-Datei für das Paket.  
   
-2. Erstellen Sie einen leeren `<KeyBindings>` Abschnitt nach dem `<Commands>`, wenn er nicht bereits vorhanden ist.  
+2. Erstellen Sie einen leeren `<KeyBindings>` Abschnitt nach dem, `<Commands>` Wenn er nicht bereits vorhanden ist.  
   
    > [!WARNING]
    > Weitere Informationen zu Tastenbindungen finden Sie unter [KeyBinding](../extensibility/keybinding-element.md).  
   
-    Erstellen Sie im Abschnitt `<KeyBindings>` einen `<KeyBinding>` Eintrag.  
+    Erstellen Sie im `<KeyBindings>` Abschnitt einen `<KeyBinding>` Eintrag.  
   
-    Legen Sie die Attribute "`guid`" und "`id`" auf die Attribute des Befehls fest, den Sie aufrufen möchten.  
+    Legen `guid`  Sie das-Attribut und das-  `id` Attribut auf die des Befehls fest, den Sie aufrufen möchten.  
   
-    Legen Sie das `mod1`-Attribut auf **Control**, **alt**oder **Shift**fest.  
+    Legen Sie das- `mod1` Attribut auf **Control**, **alt**oder **Shift**fest.  
   
     Der Abschnitt "KeyBinding" sollte in etwa wie folgt aussehen:  
   
@@ -73,18 +73,18 @@ Fügen Sie der vsct-Datei für das Paket einfach einen Eintrag hinzu, um eine Ta
   
    ```  
   
-   Wenn die Tastenkombination mehr als zwei Schlüssel erfordert, legen Sie die Attribute "`mod2`" und "`key2`" fest.  
+   Wenn die Tastenkombination mehr als zwei Schlüssel erfordert, legen Sie das `mod2` -Attribut und das- `key2` Attribut fest.  
   
    In den meisten Fällen sollte **Shift** nicht ohne einen zweiten Modifizierer verwendet werden, da durch das Drücken der Zeichen bereits ein Großbuchstabe oder ein Symbol für die meisten alphanumerischen Schlüssel verwendet wird.  
   
    Mit virtuellen Schlüsselcodes können Sie auf spezielle Schlüssel zugreifen, denen kein Zeichen zugeordnet ist, z. b. Funktionstasten und die **RÜCKTASTE** . Weitere Informationen finden Sie unter [virtuelle Schlüssel Codes](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
-   Um den Befehl im Visual Studio-Editor verfügbar zu machen, legen Sie das `editor`-Attribut auf `guidVSStd97`fest.  
+   Um den Befehl im Visual Studio-Editor verfügbar zu machen, legen `editor` Sie das-Attribut auf fest `guidVSStd97` .  
   
-   Damit der Befehl nur in einem benutzerdefinierten Editor verfügbar ist, legen Sie das `editor`-Attribut auf den Namen des benutzerdefinierten Editors fest, der durch die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket Vorlage generiert wurde, als Sie das VSPackage erstellt haben, das den benutzerdefinierten Editor enthält. Um den namens Wert zu finden, suchen Sie im `<Symbols>` Abschnitt nach einem `<GuidSymbol>` Knoten, dessen `name` Attribut auf "`editorfactory`" endet. Dies ist der Name des benutzerdefinierten Editors.  
+   Damit der Befehl nur in einem benutzerdefinierten Editor verfügbar ist, legen `editor` Sie das-Attribut auf den Namen des benutzerdefinierten Editors fest, der von der Paket Vorlage generiert wurde, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] als Sie das VSPackage erstellt haben, das den benutzerdefinierten Editor enthält. Um den namens Wert zu finden, suchen Sie im `<Symbols>` Abschnitt nach einem `<GuidSymbol>` Knoten, dessen `name` Attribut auf " `editorfactory` ." endet. Dies ist der Name des benutzerdefinierten Editors.  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird die Tastenkombination STRG + ALT + C an einen Befehl mit dem Namen `cmdidMyCommand` in einem Paket mit dem Namen `MyPackage`gebunden.  
+ In diesem Beispiel wird die Tastenkombination STRG + ALT + C an einen Befehl `cmdidMyCommand` mit dem Namen in einem Paket mit dem Namen gebunden `MyPackage` .  
   
 ```  
 <CommandTable>  
@@ -101,11 +101,11 @@ Fügen Sie der vsct-Datei für das Paket einfach einen Eintrag hinzu, um eine Ta
 ```  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird die Tastaturkombination CTL + B an einen Befehl mit dem Namen `cmdidBold` in einem Projekt mit dem Namen `TestEditor`gebunden. Der Befehl ist nur im benutzerdefinierten Editor und nicht in anderen Editoren verfügbar.  
+ In diesem Beispiel wird die Tastaturkombination CTL + B an einen Befehl `cmdidBold` mit dem Namen in einem Projekt mit dem Namen gebunden `TestEditor` . Der Befehl ist nur im benutzerdefinierten Editor und nicht in anderen Editoren verfügbar.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)

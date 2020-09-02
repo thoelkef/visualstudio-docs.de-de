@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b141d755c717ad6650d2a49c98c2b26547066b7a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545521"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Sammlungen müssen eine generische Schnittstelle implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -58,7 +58,7 @@ ms.locfileid: "85545521"
 
 ## <a name="example-violation"></a>Beispiel Verstoß
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird eine Klasse (Verweistyp) gezeigt, die von der nicht generischen- `CollectionBase` Klasse abgeleitet wird, die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -69,7 +69,7 @@ ms.locfileid: "85545521"
 
 ## <a name="fix-by-base-class-change"></a>Korrektur durch Basisklassen Änderung
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird die Verletzung durch Ändern der-Basisklasse der-Auflistung von der nicht generischen- `CollectionBase` Klasse in die generische- `Collection<T>` `Collection(Of T)` Klasse (in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) korrigiert.
 
 ### <a name="code"></a>Code
@@ -80,7 +80,7 @@ ms.locfileid: "85545521"
 
 ## <a name="fix-by-interface-implementation"></a>Korrektur nach Schnittstellen Implementierung
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird die Verletzung durch Implementieren dieser generischen Schnittstellen korrigiert: `IEnumerable<T>` , `ICollection<T>` und `IList<T>` ( `IEnumerable(Of T)` , `ICollection(Of T)` und `IList(Of T)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ### <a name="code"></a>Code

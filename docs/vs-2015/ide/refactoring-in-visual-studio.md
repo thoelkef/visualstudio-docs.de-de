@@ -1,5 +1,5 @@
 ---
-title: Umgestaltung
+title: Refactoring
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c1030068ad083ff9bc8f4bdf5b203eb75eed7617
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670323"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refactoring in Visual Studio
@@ -43,5 +43,5 @@ Refactoring stellt den Prozess der Codeänderung mit dem Ziel dar, diesen leicht
 ### <a name="refactoring-in-f"></a>Refactoring in F\#
  Refactoring-Support für F# wird in [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff) bereitgestellt, eine Visual Studio-Erweiterung von Drittanbietern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio IDE](../ide/visual-studio-ide.md) [Writing Code in the Code and Text Editor (Schreiben von Code im Code- und Text-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)

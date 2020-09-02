@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1e76d45847d0887b47746c60b836c7acf19d03b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670528"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Gewusst wie: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)
@@ -47,5 +47,5 @@ Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp u
 
    Sie können auch mit der rechten Maustaste auf den Typ klicken, für den Sie die abgeleiteten Typen anzeigen möchten, und wählen Sie **Abgeleitete Klassen anzeigen** oder **Abgeleitete Schnittstellen anzeigen**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer) anzeigen von](../ide/how-to-create-associations-between-types-class-designer.md) [Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)

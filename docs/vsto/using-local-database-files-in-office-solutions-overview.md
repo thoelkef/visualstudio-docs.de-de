@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie lokaler Datenbankdateien in Office Solutions (Übersicht)
+title: Verwenden lokaler Datenbankdateien in der Übersicht über Office-Lösungen
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,31 +15,31 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982235"
 ---
-# <a name="use-local-database-files-in-office-solutions-overview"></a>Verwenden Sie lokaler Datenbankdateien in Office Solutions (Übersicht)
-  Sie können eine Datenbankdatei, z. B. eine SQL Server Express einschließen (*mdf*) Datei oder ein Microsoft Office Access (*MDB*) Datei, in der Office-Projektmappe. Dadurch kann Endbenutzer eine lokale Datenbank in Situationen, in denen Verwendung einer zentralen Datenbank nicht erforderlich, z. B. in einer lokalen inventarlösung ist, die auf nur einem einzelnen Computer verwendet wird.
+# <a name="use-local-database-files-in-office-solutions-overview"></a>Verwenden lokaler Datenbankdateien in der Übersicht über Office-Lösungen
+  Sie können eine Datenbankdatei, z. b. eine SQL Server Express Datei (*. mdf*) oder eine Microsoft Office Zugriffsdatei (*. mdb*), in Ihre Office-Projekt Mappe einschließen. Dies ermöglicht es Endbenutzern, eine lokale Datenbank in Situationen zu verwalten, in denen die Verwaltung einer zentralisierten Datenbank nicht erforderlich ist, z. b. in einer lokalen Inventur Lösung, die nur auf einem einzelnen Computer verwendet wird.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="import-the-database-file-into-a-project"></a>Importieren Sie die Datenbankdatei in ein Projekt.
- Um die Datenbankdatei in Ihr Projekt zu importieren, verwenden die **Assistenten zur Datenquellenkonfiguration** auf eine Datenquelle basierend auf der Datenbankdatei erstellen. Der Assistent fügt die Datenbankdatei und ein typisiertes Dataset zu Ihrem Projekt hinzu.
+## <a name="import-the-database-file-into-a-project"></a>Importieren der Datenbankdatei in ein Projekt
+ Um die Datenbankdatei in Ihr Projekt zu importieren, verwenden Sie den **Assistenten zum Konfigurieren von Datenquellen** , um auf der Grundlage der Datenbankdatei eine Datenquelle zu erstellen. Der Assistent fügt dem Projekt die Datenbankdatei und ein typisiertes Dataset hinzu.
 
 ## <a name="deploy-the-database-file"></a>Bereitstellen der Datenbankdatei
- Die **Assistenten zur Datenquellenkonfiguration** einen relativen Pfad verwendet, um Verbindungen mit der lokalen Datenbankdatei zu erstellen. Dadurch können Sie die Lösung von einem Computer in ein anderes kopiert wird, wenn Sie die relativen Positionen von die Dateien verwalten.
+ Der **Assistent zum Konfigurieren von Datenquellen** verwendet einen relativen Pfad zum Erstellen von Verbindungen mit der lokalen Datenbankdatei. Dies ermöglicht es Ihnen, die Projekt Mappe von einem Computer auf einen anderen zu kopieren, wenn Sie die relativen Positionen der Dateien beibehalten.
 
- Wenn Sie Ihre Lösung auf einem Server bereitstellen, und klicken Sie dann das Dokument an alle Endbenutzer verteilen, müssen Sie auch manuell die Datenbankdatei zu verteilen und installieren Sie es in der gleichen Position relativ zu dem Dokument. Dies bedeutet, dass der Endbenutzer auf dem Computer, das Dokument an einem neuen Speicherort verschieben kann, es sei denn, er auch die Datei verschiebt.
+ Wenn Sie die Lösung auf einem Server bereitstellen und dann das Dokument an jeden Endbenutzer verteilen, müssen Sie die Datenbankdatei auch manuell verteilen und in Relation zum Dokument an derselben Position installieren. Dies bedeutet, dass der Endbenutzer das Dokument nicht an einen neuen Speicherort auf seinem Computer verschieben kann, es sei denn, er verschiebt auch die Datenbankdatei.
 
-## <a name="local-database-files-and-caching-the-dataset"></a>Lokaler Datenbankdateien und die Zwischenspeicherung von Datasets
- In Projektmappen auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word können Sie Datasets im Dokument zwischenspeichern, indem Sie die Dataset-Instanz mit dem Attribut <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>. Beim Hinzufügen der Datei zu Ihrem Projekt durch Verwendung der **Assistenten zur Datenquellenkonfiguration**, ein typisiertes Dataset wird automatisch zu Ihrem Projekt hinzugefügt. Es ist selten notwendig, anzuwendende <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> auf dieses Dataset, da die Daten bereits lokal auf dem Computer des Benutzers vorhanden ist. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).
+## <a name="local-database-files-and-caching-the-dataset"></a>Lokale Datenbankdateien und Zwischenspeichern des Datasets
+ In Projektmappen auf Dokument Ebene für Microsoft Office Excel und Microsoft Office Word können Sie Datasets im Dokument zwischenspeichern, indem Sie die Datasetinstanz mit dem-Attribut markieren <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . Wenn Sie die Datenbankdatei mithilfe des Assistenten zum Konfigurieren von **Datenquellen**zu Ihrem Projekt hinzufügen, wird dem Projekt automatisch ein typisiertes DataSet hinzugefügt. Es ist nur selten erforderlich, <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> auf dieses DataSet anzuwenden, da die Daten auf dem Computer des Benutzers bereits lokal vorhanden sind. Weitere Informationen finden Sie unter zwischen [Speichern von Daten](../vsto/caching-data.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
-- [Zwischenspeichern von Daten](../vsto/caching-data.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
+- [Daten zwischenspeichern](../vsto/caching-data.md)

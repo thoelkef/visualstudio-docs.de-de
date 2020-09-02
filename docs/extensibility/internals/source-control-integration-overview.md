@@ -73,7 +73,7 @@ In diesem Abschnitt werden die beiden Möglichkeiten zur Integration in die Visu
 
 - Das VSPackage ist nicht auf ein bestimmtes Quell Code Verwaltungsmodell beschränkt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Quellcodeverwaltung](../../extensibility/internals/source-control.md)
 - [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumLocals | Microsoft-Dokumentation
+title: 'Idebugmethodfield:: enumlocals | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2306bbf0c44a883c584346c3dbb3dd70e9b39175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162600"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt einen Enumerator für die ausgewählten lokalen Variablen der Methode.  
+Erstellt einen Enumerator für ausgewählte lokale Variablen der Methode.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,18 +42,18 @@ int EnumLocals(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Objekt, das die debugadresse, die den Kontext oder Gültigkeitsbereich aus der die lokalen Variablen abgerufen wählt darstellt.  
+ in Ein [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekt, das die debugadresse darstellt, mit der der Kontext oder der Gültigkeitsbereich für die lokalen Variablen ausgewählt wird.  
   
  `ppLocals`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das eine Liste mit den lokalen darstellt; andernfalls gibt Sie einen null-Wert zurück, wenn kein lokal vorhanden sind.  
+ vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das eine Liste der lokalen Variablen darstellt. Andernfalls wird ein NULL-Wert zurückgegeben, wenn keine lokalen vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn kein lokal vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben, oder es wird S_FALSE zurückgegeben, wenn keine lokalen vorhanden sind Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Nur die Variablen, die innerhalb des Blocks mit der angegebenen Adresse definiert werden aufgelistet. Wenn alle "lokal", einschließlich alle vom Compiler generierter "lokal" erforderlich sind, rufen Sie die [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Nur die Variablen, die in dem Block definiert sind, der die angegebene debugadresse enthält, werden aufgezählt. Wenn alle lokalen Variablen, einschließlich der vom Compiler generierten lokalen Variablen, benötigt werden, müssen Sie die [enumalllocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) -Methode aufrufen.  
   
- Eine Methode kann mehrere Bereichsdefinition Kontexte oder Blöcke enthalten. Beispielsweise enthält die folgende, aus der Luft gegriffen Methode drei Bereiche, die zwei inneren Blöcke und des Methodentexts selbst.  
+ Eine Methode kann mehrere Bereichs bezogene Kontexte oder Blöcke enthalten. Beispielsweise enthält die folgende erfunderte Methode drei Bereiche, die beiden inneren Blöcke und den Methoden Text selbst.  
   
 ```csharp  
 public void func(int index)  
@@ -73,10 +73,10 @@ public void func(int index)
 }  
 ```  
   
- Die [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) -Objekt stellt die `func` Methode selbst. Aufrufen der `EnumLocals` -Methode mit einer [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) legen Sie auf der `Inner Scope 1` Adresse zurückgibt, eine Enumeration mit den `temp1` Variablen, z. B.  
+ Das [idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) -Objekt stellt die `func` Methode selbst dar. Das Aufrufen der- `EnumLocals` Methode mit einer [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) , die auf die Adresse festgelegt `Inner Scope 1` ist, gibt eine Enumeration zurück, die die `temp1` Variable enthält, z.b..  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+ [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md)   
+ [Ienumdebug-Felder](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)

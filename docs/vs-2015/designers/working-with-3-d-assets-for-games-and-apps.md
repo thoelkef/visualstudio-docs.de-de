@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852197"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Arbeiten mit 3D-Objekten für Spiele und Apps
@@ -24,7 +24,7 @@ ms.locfileid: "75852197"
 In diesem Dokument werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools beschrieben, die Sie verwenden können, um 3D-Modelle, Texturen und Shader für DirectX-basierte Spiele und Apps zu erstellen oder zu ändern.
 
 ## <a name="directx-app-development-in-visual-studio"></a>DirectX-App-Entwicklung in Visual Studio
- In einer DirectX-App werden normalerweise Programmierlogik, die DirectX-API und HLSL-Programme (High Level Shading Language) mit Audio- und visuellen 3D-Objekten kombiniert, um ein umfassendes, interaktives Multimedia-Erlebnis zu bieten.[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] enthält Tools, die Sie verwenden können, um mit Bildern und Texturen, 3D-Modellen und Shadern zu arbeiten, ohne die IDE verlassen zu müssen. Visual Studio-Tools sind insbesondere für Folgendes geeignet: zum Erstellen von *Platzhalter*-Objekten, mit denen Sie Code testen oder Prototypen erstellen können, bevor Sie produktionsbereite Objekte in Auftrag geben, und zum Prüfen und Ändern produktionsbereiter Objekte, wenn Sie Ihre Anwendung debuggen.
+ In einer DirectX-App werden normalerweise Programmierlogik, die DirectX-API und HLSL-Programme (High Level Shading Language) mit Audio- und visuellen 3D-Objekten kombiniert, um ein umfassendes, interaktives Multimedia-Erlebnis zu bieten.[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Enthält Tools, die Sie verwenden können, um mit Bildern und Texturen, 3D-Modellen und Shadern zu arbeiten, ohne die IDE verlassen zu müssen. Visual Studio-Tools sind insbesondere für Folgendes geeignet: zum Erstellen von *Platzhalter*-Objekten, mit denen Sie Code testen oder Prototypen erstellen können, bevor Sie produktionsbereite Objekte in Auftrag geben, und zum Prüfen und Ändern produktionsbereiter Objekte, wenn Sie Ihre Anwendung debuggen.
 
  Im Folgenden finden Sie weitere Informationen über die Objektarten, die Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bearbeiten können.
 
@@ -34,7 +34,7 @@ In diesem Dokument werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools
  Sie können den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Bild-Editor verwenden, um mit Bildern und Texturen in vielen gängigen Typen und Formaten zu arbeiten.
 
 ### <a name="3-d-models"></a>3D-Modelle
- 3D-Modelle erzeugen Raum und Formen in Spielen und Apps. In den Modellen werden die Positionen von Punkten im dreidimensionalen Raum, die als *Scheitelpunkte* bezeichnet werden, zusammen mit Indizierungsdaten codiert, um Linien oder Dreiecke zu definieren, die die Form des Modells darstellen. Diesen Vertices können weitere Daten zugeordnet werden, zum Beispiel Farbinformationen, Normalenvektoren oder anwendungsspezifische Attribute. Jedes Modell kann auch objektweite Attribute definieren, z. B. welcher Shader verwendet wird, um die Darstellung der Oberfläche des Objekts zu berechnen, oder welche Textur darauf angewendet wird.
+ 3D-Modelle erzeugen Raum und Formen in Spielen und Apps. Modelle Codieren die Position von Punkten im 3D-Raum – *die als*Scheitel Punkte bezeichnet werden – mit Indizierungs Daten, um Linien oder Dreiecke zu definieren, die die Form des Modells darstellen. Diesen Vertices können weitere Daten zugeordnet werden, zum Beispiel Farbinformationen, Normalenvektoren oder anwendungsspezifische Attribute. Jedes Modell kann auch objektweite Attribute definieren, z. B. welcher Shader verwendet wird, um die Darstellung der Oberfläche des Objekts zu berechnen, oder welche Textur darauf angewendet wird.
 
  Sie können den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Modell-Editor verwenden, um mit 3D-Modellen in verschiedenen gängigen Formaten zu arbeiten.
 
@@ -44,14 +44,14 @@ In diesem Dokument werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools
  Sie können den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Shader-Designer verwenden, ein diagrammbasiertes Shader-Design-Tool, um benutzerdefinierte visuelle Effekte zu erstellen, ohne die HLSL-Programmierung zu kennen.
 
 > [!NOTE]
-> Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](https://msdn.microsoft.com/library/ee663274(VS.85).aspx). Weitere Informationen zum Debuggen einer auf DirectX basierenden Anwendung finden Sie unter [Grafikdiagnose (Debuggen von DirectX-Grafiken)](../debugger/visual-studio-graphics-diagnostics.md).
+> Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](https://msdn.microsoft.com/library/ee663274(VS.85).aspx). Weitere Informationen zum Debuggen einer DirectX-basierten App finden Sie unter [Grafikdiagnose (Debuggen von DirectX-Grafiken)](../debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>DirectX-Versionskompatibilität
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet DirectX, um 2D-und 3D-Objekte zu Rendering. Sie können entweder den DirectX 11-Renderer oder den Windows Advanced Rasterization Platform (WARP)-Softwarerenderer auswählen. Der DirectX 11-Renderer stellt leistungsfähiges, hardwarebeschleunigtes Rendering für DirectX 11- und DirectX 10-GPUs bereit. Mit dem WARP-Renderer wird sichergestellt, dass die Objekte von einer großen Bandbreite an Computern unterstützt werden; dies umfasst auch Computer, die keine moderne Grafikhardware aufweisen, und Computer mit integrierter Grafikhardware. Weitere Informationen zu WARP finden Sie unter [Windows Advanced Rasterization Platform (WARP) Guide (Windows Advanced Rasterization Platform-Handbuch)](https://msdn.microsoft.com/library/gg615082(VS.85).aspx).
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet DirectX, um 2D-und 3D-Objekte zu Rendering. Sie können entweder den DirectX 11-Renderer oder den Windows Advanced Rasterization Platform (WARP)-Softwarerenderer auswählen. Der DirectX 11-Renderer stellt leistungsfähiges, hardwarebeschleunigtes Rendering für DirectX 11- und DirectX 10-GPUs bereit. Mit dem WARP-Renderer wird sichergestellt, dass die Objekte von einer großen Bandbreite an Computern unterstützt werden; dies umfasst auch Computer, die keine moderne Grafikhardware aufweisen, und Computer mit integrierter Grafikhardware. Weitere Informationen zu Warp finden Sie im [Handbuch zu Windows Advanced rasterization Platform (Warp)](https://msdn.microsoft.com/library/gg615082(VS.85).aspx).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Title|Beschreibung|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Arbeiten mit Texturen und Bildern](../designers/working-with-textures-and-images.md)|Beschreibt, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet wird, um mit Bildern und Texturen zu arbeiten.|
 |[Arbeiten mit 3D-Modellen](../designers/working-with-3-d-models.md)|Beschreibt, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet wird, um mit 3D-Modellen zu arbeiten.|

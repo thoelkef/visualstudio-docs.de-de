@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282435"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen von Datasets mit TableAdapters
@@ -52,7 +52,7 @@ TableAdapters sind vom Designer generierte Komponenten, die eine Verbindung mit 
 
 ![Datenfluss in einer Clientanwendung](../data-tools/media/clientdatadiagram.gif)
 
-Obwohl TableAdapters mit dem **DataSet-Designer**entworfen wurden, werden die TableAdapter-Klassen nicht als geschsted Klassen von generiert <xref:System.Data.DataSet> . Sie befinden sich in separaten Namespaces, die für jedes Dataset spezifisch sind. Wenn Sie z. b. ein DataSet mit dem Namen haben `NorthwindDataSet` , befinden sich die TableAdapters, die s in zugeordnet sind, <xref:System.Data.DataTable> im- `NorthwindDataSet` `NorthwindDataSetTableAdapters` Namespace. Um programmgesteuert auf einen speziellen TableAdapter zuzugreifen, müssen Sie eine neue Instanz des TableAdapter deklarieren. Zum Beispiel:
+Obwohl TableAdapters mit dem **DataSet-Designer**entworfen wurden, werden die TableAdapter-Klassen nicht als geschsted Klassen von generiert  <xref:System.Data.DataSet> . Sie befinden sich in separaten Namespaces, die für jedes Dataset spezifisch sind. Wenn Sie z. b. ein DataSet mit dem Namen haben `NorthwindDataSet` , befinden sich die TableAdapters, die s in zugeordnet sind,  <xref:System.Data.DataTable> im- `NorthwindDataSet` `NorthwindDataSetTableAdapters` Namespace. Um programmgesteuert auf einen speziellen TableAdapter zuzugreifen, müssen Sie eine neue Instanz des TableAdapter deklarieren. Beispiel:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -89,7 +89,7 @@ Die TableAdapter-Klasse ist kein .NET-Typ. Dies bedeutet, dass Sie Sie nicht in 
 
 Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften von TableAdapters:
 
-|Member|Beschreibung|
+|Member|BESCHREIBUNG|
 |------------|-----------------|
 |`TableAdapter.Fill`|Füllt die zugeordnete Datentabelle des TableAdapter mit den Ergebnissen des TableAdapter- `SELECT` Befehls auf.|
 |`TableAdapter.Update`|Sendet Änderungen an die Datenbank zurück und gibt eine ganze Zahl zurück, die die Anzahl der von der Aktualisierung betroffenen Zeilen darstellt. Weitere Informationen finden Sie unter [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,7 +126,7 @@ Bei der TableAdapterManager-Klasse handelt es sich nicht um einen .NET-Typ. Dahe
 
 Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der- `TableAdapterManager` Klasse:
 
-|Member|Beschreibung|
+|Member|BESCHREIBUNG|
 |------------|-----------------|
 |`UpdateAll`-Methode|Speichert alle Daten aus allen Datentabellen.|
 |`BackUpDataSetBeforeUpdate`-Eigenschaft|Bestimmt, ob vor dem Ausführen der-Methode eine Sicherungskopie des Datasets erstellt wird `TableAdapterManager.UpdateAll` . Booleschen.|
@@ -137,6 +137,6 @@ Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der- 
 
 Wenn Sie Daten Befehle verwenden, bei denen eine CommandType-Eigenschaft auf festgelegt <xref:System.Data.CommandType.Text> ist, sollten Sie die von einem Client gesendeten Informationen sorgfältig überprüfen, bevor Sie Sie an die Datenbank übergeben. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in eine Datenbank übertragen, sollten Sie stets überprüfen, ob die Informationen gültig sind. Es wird empfohlen, nach Möglichkeit immer parametrisierte Abfragen oder gespeicherte Prozeduren zu verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Datasettools](../data-tools/dataset-tools-in-visual-studio.md)

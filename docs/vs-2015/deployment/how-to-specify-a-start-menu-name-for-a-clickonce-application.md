@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Angeben eines Namens für eine ClickOnce-Anwendung im Menü | Microsoft-Dokumentation'
+title: 'Gewusst wie: Angeben eines Startmenü namens für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,37 +18,37 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149758"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Vorgehensweise: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Gewusst wie: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installiert ist, für die online und offline-Verwendung, ein Eintrag hinzugefügt wird die **starten** Menü und die **Programme hinzufügen oder entfernen** Liste. Der Anzeigename wird standardmäßig der Name des der Assembly identisch, aber Sie können den Anzeigenamen ändern, indem Sie die Einstellung **Produktname** in die **Veröffentlichungsoptionen** Dialogfeld.  
+Wenn eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung für die Online-und Offline Verwendung installiert wird, wird dem **Startmenü** und der Liste Software **Add or Remove Programs** ein Eintrag hinzugefügt. Standardmäßig ist der Anzeige Name mit dem Namen der Anwendungsassembly identisch, aber Sie können den anzeigen Amen ändern, indem Sie im Dialogfeld **Veröffentlichungs Optionen** den **Product Name** festlegen.  
   
- **Produktname** erscheint auf der Seite "publish.htm"; für eine offline-Anwendung installiert, werden sie den Namen des Eintrags im der **starten** Menü, und es werden auch der Name, der zeigt, in **hinzufügen oder entfernen Programme**.  
+ Der **Produktname** wird auf der Seite "publish.htm" angezeigt. bei einer installierten offline Anwendung handelt es sich um den Namen des Eintrags im **Startmenü** . Außerdem handelt es **sich dabei um**den Namen, der in "Software" angezeigt wird.  
   
- **Name des Herausgebers** erscheint auf der Seite "publish.htm" oben **Produktname**, und für eine installierte Anwendung offline, wird auch der Name des Ordners, der in der Anwendung enthält die **starten**  Menü.  
+ Der **Herausgeber Name** wird auf der publish.htm Seite oberhalb des **Produkt namens**angezeigt, und für eine installierte offline Anwendung ist dies auch der Name des Ordners, der das Anwendungssymbol im **Startmenü** enthält.  
   
- Sie können festlegen, die **Produktname** und **Herausgebername** Eigenschaften in der **Veröffentlichungsoptionen** im Dialogfeld auf die **veröffentlichen** Seite von der **Projekt-Designer**.  
+ Sie können die Eigenschaften **Produktname** und **Herausgeber Name** im Dialogfeld **Veröffentlichungs Optionen** festlegen, das auf der Seite **veröffentlichen** des **Projekt-Designers**verfügbar ist.  
   
-### <a name="to-specify-a-start-menu-name"></a>Angeben ein Namens im Startmenü  
+### <a name="to-specify-a-start-menu-name"></a>So geben Sie einen Startmenü Namen an  
   
 1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3. Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.  
+3. Klicken Sie auf die Schaltfläche **Optionen** , um das Dialogfeld **Veröffentlichungs Optionen** zu öffnen.  
   
 4. Klicken Sie auf **Beschreibung**.  
   
-5. In der **Veröffentlichungsoptionen** Dialogfeld Geben Sie den anzuzeigenden Namen **Produktname**.  
+5. Geben Sie im Dialogfeld **Veröffentlichungs Optionen** den Namen ein, der unter **Produktname**angezeigt werden soll.  
   
-6. Optional können Sie einen Herausgebernamen in eingeben **Herausgebername**.  
+6. Optional können Sie einen Herausgeber Namen in den **Herausgeber Namen**eingeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [How to: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

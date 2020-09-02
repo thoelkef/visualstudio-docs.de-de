@@ -1,5 +1,5 @@
 ---
-title: API-Referenz (von SharePoint-Erweiterbarkeit Tools) | Microsoft-Dokumentation
+title: API-Referenz (Erweiterbarkeit von SharePoint-Tools) | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62987986"
 ---
-# <a name="api-reference-sharepoint-tools-extensibility"></a>API-Referenz (Erweiterbarkeit für SharePoint-Tools)
+# <a name="api-reference-sharepoint-tools-extensibility"></a>API-Referenz (Erweiterbarkeit von SharePoint-Tools)
   Dieser Abschnitt enthält die API-Referenzdokumentation zum Erweitern der SharePoint-Tools in Visual Studio.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
@@ -29,7 +29,7 @@ ms.locfileid: "62987986"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- Enthält Typen, die Sie, zur Erstellung benutzerdefinierter verwenden können *SharePoint-Befehle*. Ein SharePoint-Befehl ist eine Methode, die einen Aufruf in das SharePoint-Serverobjektmodell von einer SharePoint-Tools-Erweiterung aus durchführt.
+ Enthält Typen, die Sie zum Erstellen von benutzerdefinierten *SharePoint-Befehlen*verwenden können. Ein SharePoint-Befehl ist eine Methode, die einen Aufruf in das SharePoint-Serverobjektmodell von einer SharePoint-Tools-Erweiterung aus durchführt.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
@@ -37,11 +37,11 @@ ms.locfileid: "62987986"
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer>
 
- Enthält Typen, die Sie verwenden, um das Erweitern der SharePoint-Knoten im **Server-Explorer** oder eigene Typen von Knoten zu definieren.
+ Enthält Typen, die Sie zum Erweitern von SharePoint-Knoten in **Server-Explorer** oder zum Definieren eigener Knoten Typen verwenden.
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>
 
- Enthält Typen, die Sie, zum Abrufen von Informationen zu integrierten verwenden können **Server-Explorer** Knoten, die einzelne Komponenten in einer SharePoint-Website, z. B. ein Knoten darstellen, die eine Liste, ein Feld oder Inhaltstyp darstellt.
+ Enthält Typen, die Sie verwenden können, um Informationen über integrierte **Server-Explorer** Knoten zu erhalten, die einzelne Komponenten auf einer SharePoint-Website darstellen, z. b. einen Knoten, der eine Liste, ein Feld oder einen Inhaltstyp darstellt.
 
  <xref:Microsoft.VisualStudio.SharePoint.Features>
 
@@ -67,10 +67,10 @@ ms.locfileid: "62987986"
 
  Enthält Typen, mit denen Sie für ein SharePoint-Projekt das Funktions- und Paketvalidierungsverhalten anpassen können.
 
-## <a name="see-also"></a>Siehe auch
-- [Verweis &#40;Erweiterbarkeit von SharePoint-tools&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [Übersicht über das Programmiermodell von SharePoint-tools extensions](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Erweitern von SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Erweitern von SharePoint-Packen und-bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Referenz &#40;Erweiterbarkeit von SharePoint-Tools&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
+- [Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)

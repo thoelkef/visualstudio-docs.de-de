@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40772919031200466999df2dfbf651fae3ee01e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670566"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Gewusst wie: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe von **Definition einsehen** können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu verlassen.
+Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe der **Peek-Definition**können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu platzieren.
 
- Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic enthält **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten (z.B. integrierte .NET Framework-Typen).
+ Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic zeigt die **Peek-Definition** einen Link zum **Objektkatalog** für Symbole an, die keine Definitions Metadaten aufweisen (z. b. .NET Framework integrierten Typen).
 
 > [!IMPORTANT]
 > Sie können diesen Befehl in einer Express-Version von Visual Studio 2013 nicht verwenden.
@@ -42,7 +42,7 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
 
 3. Sie können eine Zeichenfolge aus dem Definitionsfenster kopieren und in den ursprünglichen Code einfügen. Sie können die Zeichenfolge auch per Drag & Drop aus dem Definitionsfenster in den ursprünglichen Code verschieben. Sie wird allerdings nicht im Definitionsfenster gelöscht.
 
-4. Sie können das Definitionsfenster schließen, indem Sie die ESC-TASTE oder auf die Schaltfläche **Schließen** auf der Definitionsfensterregisterkarte klicken.
+4. Sie können das Definitionsfenster schließen, indem Sie die ESC-TASTE drücken oder auf die Schaltfläche **Schließen** auf der Registerkarte „Definitionsfenster“ klicken.
 
 #### <a name="to-open-a-peek-definition-window-from-within-a-peek-definition-window"></a>So öffnen Sie ein Fenster "Definition einsehen" in einem Fenster "Definition einsehen"
 
@@ -54,7 +54,7 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
 
 - Wenn Sie **Definition einsehen** für Code verwenden, für den mehrere Definitionen vorliegen, (z.B. bei partiellen Klassen), wird rechts neben dem Codedefinitionsfenster eine Ergebnisliste angezeigt. Sie können jedes Ergebnis in der Liste auswählen, um dessen Definition anzuzeigen.
 
-     ![Peek-Fenster aus mehreren Ergebnissen](../ide/media/peekmultiple.png "Peer Multiple")
+     ![Peek-Fenster aus verschiedenen Ergebnissen](../ide/media/peekmultiple.png "Peer Multiple")
 
 #### <a name="to-edit-inside-the-peek-definition-window"></a>So bearbeiten Sie innerhalb des Fensters "Definition einsehen"
 
@@ -78,5 +78,5 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
     > [!NOTE]
     > Sie können die gleichen Tastenkombinationen zum Bearbeiten in einem **Definition einsehen**-Fenster verwenden, die Sie an anderer Stelle in Visual Studio nutzen.
 
-## <a name="see-also"></a>Siehe auch
- [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Produktivitäts Tipps](../ide/productivity-tips-for-visual-studio.md)
