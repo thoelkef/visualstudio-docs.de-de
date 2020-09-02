@@ -12,10 +12,10 @@ ms.author: zorio
 author: zoeyr
 manager: jillfra
 ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169338"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX-Sprachpaket Schema 2,0 Referenz
@@ -24,11 +24,11 @@ Das VSIX-Sprachpaket Schema enthält lokalisierte Installationsinformationen fü
 
 ## <a name="language-pack-schema"></a>Sprachpaket Schema
 
-Das Stamm Element der Language Pack-Datei ist `<PackageLanguagePackManifest>`mit dem Attribut `Version`, das die Version des Sprachpaket Formats ist. In diesem Artikel wird die Version 2,0 des Sprachpaket Formats beschrieben, das im Manifest angegeben ist, indem das `Version`-Attribut auf den Wert `Version="2.0.0"`festgelegt wird. Das root-Element enthält genau ein untergeordnetes `<Metadata>` Element.
+Das Stamm Element der Language Pack-Datei ist `<PackageLanguagePackManifest>` mit dem-Attribut `Version` , das die Version des Sprachpaket Formats ist. In diesem Artikel wird die Version 2,0 des Sprachpaket Formats beschrieben, das im Manifest angegeben ist, indem das- `Version` Attribut auf den Wert festgelegt wird `Version="2.0.0"` . Das root-Element enthält genau ein untergeordnetes `<Metadata>` Element.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Packagelanguagepackmanifest-Element
 
-Innerhalb des `<PackageLanguagePackManifest>` Elements muss das folgende Element vorhanden sein:
+Innerhalb des- `<PackageLanguagePackManifest>` Elements muss das folgende-Element vorhanden sein:
 
 |Titel|BESCHREIBUNG|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ Innerhalb des `<PackageLanguagePackManifest>` Elements muss das folgende Element
 
 ### <a name="metadata-element"></a>Metadata-Element
 
-Innerhalb des `<Metadata>`-Elements können Sie über die folgenden Elemente verfügen:
+Innerhalb des- `<Metadata>` Elements können Sie über die folgenden Elemente verfügen:
 
 |Titel|BESCHREIBUNG|
 |-----------|-----------------|
@@ -47,7 +47,7 @@ Innerhalb des `<Metadata>`-Elements können Sie über die folgenden Elemente ver
 |`<ReleaseNotes>`| Einen Pfad oder einen Link zu einer lokalisierten Version der Versions Anmerkungen|
 |`<Icon>`| Ein Pfad zu einer lokalisierten Version des Erweiterungs Symbols.|
 
-### <a name="sample-manifest"></a>Beispiel Manifest
+### <a name="sample-manifest"></a>Beispielmanifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -63,7 +63,7 @@ Innerhalb des `<Metadata>`-Elements können Sie über die folgenden Elemente ver
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 |Titel|BESCHREIBUNG|
 |-----------|-----------------|

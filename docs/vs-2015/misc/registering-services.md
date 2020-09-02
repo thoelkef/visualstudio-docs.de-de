@@ -10,16 +10,16 @@ ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62971289"
 ---
 # <a name="registering-services"></a>Registrieren von Diensten
 Ein Dienstanbieter muss seine globalen Dienste mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]registrieren, um das bedarfsgesteuerte Laden zu unterstützen.  
   
- Während der Entwicklung registrieren Anbieter von verwalteten Diensten entsprechende Dienste und Dienstüberschreibungen durch Hinzufügen von Attributen zum Quellcode für Pakete. Anschließend werden die Pakete in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -IDE erstellt. Dadurch wird das Dienstprogramm „RegPkg.exe“ für die sich ergebende Assembly ausgeführt, dann das Paket registriert und für die Bereitstellung vorbereitet. Weitere Informationen finden Sie unter [Vorgehensweise: Registrieren von Diensten](../misc/how-to-register-a-service.md).  
+ Während der Entwicklung registrieren Anbieter von verwalteten Diensten entsprechende Dienste und Dienstüberschreibungen durch Hinzufügen von Attributen zum Quellcode für Pakete. Anschließend werden die Pakete in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -IDE erstellt. Dadurch wird das Dienstprogramm „RegPkg.exe“ für die sich ergebende Assembly ausgeführt, dann das Paket registriert und für die Bereitstellung vorbereitet. Weitere Informationen finden Sie unter Vorgehens [Weise: Registrieren eines Dienstanbieter](../misc/how-to-register-a-service.md).  
   
  Anbieter nicht verwalteter Dienste müssen die von ihnen bereitgestellten Dienste mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im Abschnitt für Dienste oder Dienstüberschreibungen in der Systemregistrierung registrieren. Das folgende Fragment einer REG-Datei zeigt, wie der Dienst, SVsTextManager, registriert werden kann:  
   
@@ -47,6 +47,6 @@ Ein Dienstanbieter muss seine globalen Dienste mit [!INCLUDE[vsprvs](../includes
 regasm /tlb MyAssembly.dll  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Verwenden von und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)   
  [Dienstgrundlagen](../extensibility/internals/service-essentials.md)

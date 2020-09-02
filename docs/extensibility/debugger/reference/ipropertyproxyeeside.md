@@ -1,5 +1,5 @@
 ---
-title: iPropertyproxyeeside | Microsoft Docs
+title: Ipropertyproxyeeside | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714859"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
-Diese Schnittstelle stellt Methoden zum Anzeigen von Daten für das zugeordnete Objekt bereit. Diese Schnittstelle ist Teil der Unterstützung für Typvisualisierer.
+Diese Schnittstelle stellt Methoden zum Anzeigen von Daten für das zugeordnete-Objekt bereit. Diese Schnittstelle ist Teil der Unterstützung für typvisualisierungen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,30 +29,30 @@ IPropertyProxyEESide : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein Ausdrucksauswertungsgeber implementiert diese Schnittstelle, um Typvisualisierungen zu unterstützen.
+ Diese Schnittstelle wird von einer Ausdrucks Auswertung implementiert, um typvisualisierungen zu unterstützen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Rufen Sie [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) auf, um diese Schnittstelle abzurufen. Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf einer [IDebugProperty3-Schnittstelle](../../../extensibility/debugger/reference/idebugproperty3.md) auf, um die [IPropertyProxyProvider-Schnittstelle](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) abzurufen.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Rufen Sie [getpropertyproxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) auf, um diese Schnittstelle zu erhalten. Rufen Sie [QueryInterface](/cpp/atl/queryinterface) für eine [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle auf, um die [ipropertyproxyprovider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) -Schnittstelle zu erhalten.
 
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
  Die folgenden Methoden werden von dieser Schnittstelle implementiert:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|Initialisiert einen Datenquellenanbieter, sodass auf die Daten des Objekts zugegriffen werden kann.|
+|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|Initialisiert einen Datenquellen Anbieter, damit auf die Daten des Objekts zugegriffen werden kann.|
 |[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|Ruft Informationen zur Assembly des Objekts ab.|
-|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|Ruft die Anfangsdaten für das Objekt ab.|
+|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|Ruft die Anfangsdaten für das-Objekt ab.|
 |[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|Erstellt eine Kopie eines vorhandenen Datenspeichers.|
-|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Erstellt einen Verweis auf einen vorhandenen Datenspeicher.|
-|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Ruft Informationen zu einer bestimmten Assembly im Kontext der Assembly ab, die dieses Objekt enthält.|
+|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Erstellt einen Verweis auf eine vorhandene Datenspeicherung.|
+|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Ruft Informationen zu einer bestimmten Assembly im Kontext der Assembly ab, die dieses-Objekt enthält.|
 
 ## <a name="remarks"></a>Bemerkungen
- Eine Typvisualisierung verwendet diese Schnittstelle, um auf die Werte zuzugreifen, die dem Objekt zugeordnet sind, zu dem diese Schnittstelle gehört. Der Zugriff auf die Daten erfolgt über die [IEEDataStorage-Schnittstelle,](../../../extensibility/debugger/reference/ieedatastorage.md) die eine schreibgeschützte Ansicht der Daten bietet.
+ Eine typschnell Ansicht verwendet diese Schnittstelle für den Zugriff auf die Werte, die dem Objekt zugeordnet sind, zu dem diese Schnittstelle gehört. Der Zugriff auf die Daten erfolgt über die [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Schnittstelle, die eine schreibgeschützte Ansicht der Daten bereitstellt.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

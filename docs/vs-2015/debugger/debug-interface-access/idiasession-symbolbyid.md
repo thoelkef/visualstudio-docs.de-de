@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Symbolbyid | Microsoft-Dokumentation'
+title: 'IDiaSession:: symbolById | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac409edcee7657e724822d1a72737c3142d8d93e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150203"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Symbol durch seinen eindeutigen Bezeichner ab.  
+Ruft ein Symbol anhand seines eindeutigen Bezeichners ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,21 +36,21 @@ HRESULT symbolById ( 
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- [in] Eindeutiger Bezeichner.  
+ in Eindeutiger Bezeichner.  
   
  `ppSymbol`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.  
+ vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das abgerufene Symbol darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Der angegebene Bezeichner ist ein eindeutiger Wert wird intern vom DIA-SDK verwendet, um alle Symbole eindeutig zu machen.  
+## <a name="remarks"></a>Bemerkungen  
+ Der angegebene Bezeichner ist ein eindeutiger Wert, der vom Dia SDK intern verwendet wird, um alle Symbole eindeutig zu machen.  
   
- Diese Methode kann verwendet werden, z. B. das Symbol, der den Typ der ein anderes Symbol abrufen (siehe Beispiel).  
+ Diese Methode kann z. b. verwendet werden, um das Symbol abzurufen, das den Typ eines anderen Symbols darstellt (siehe Beispiel).  
   
 ## <a name="example"></a>Beispiel  
- Ruft ab, in diesem Beispiel wird ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , die den Typ der ein anderes Symbol darstellt. Dieses Beispiel zeigt, wie Sie mit der `symbolById` -Methode in der Sitzung. Ein einfacher Ansatz ist, rufen Sie die [idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) Methode, um das Typsymbol direkt abrufen.  
+ In diesem Beispiel wird ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt abgerufen, das den Typ eines anderen Symbols darstellt. Dieses Beispiel zeigt, wie die- `symbolById` Methode in der Sitzung verwendet wird. Ein einfacherer Ansatz besteht darin, die [idiasymmetribol:: get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) -Methode aufzurufen, um das Typsymbol direkt abzurufen.  
   
 ```cpp#  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  
@@ -66,7 +66,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

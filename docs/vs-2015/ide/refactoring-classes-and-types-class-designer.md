@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5803b720ae1271d8319310820d1f0dc159db8bf9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670272"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactoring von Klassen und Typen (Klassen-Designer)
@@ -37,13 +37,13 @@ Wenn Sie einen Code umgestalten, ist er leichter zu verstehen, zu verwalten und 
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|Aufgabe|Unterstützender Inhalt|
+|Aufgabe|Hilfreiche Themen|
 |----------|------------------------|
 |**Umgestaltung von Klassen:** Sie können Umgestaltungsvorgänge zum Aufteilen eine Klasse in Teilklassen oder zur Implementierung einer abstrakten Klasse verwenden.|-   [Gewusst wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|
-|**Arbeiten mit Schnittstellen:** Im Klassen-Designer Sie können eine Schnittstelle im Klassendiagramm implementieren, indem Sie es an eine Klasse anhängen, die einen Code für die Schnittstellenmethoden vorsieht.|-   [Gewusst wie: Implementieren einer Schnittstelle (Klassen-Designer)](../ide/how-to-implement-an-interface-class-designer.md)|
-|**Umgestaltung von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Gewusst wie: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)](../ide/how-to-create-a-nullable-type-class-designer.md)|
+|**Arbeiten mit Schnittstellen:** Im Klassen-Designer Sie können eine Schnittstelle im Klassendiagramm implementieren, indem Sie es an eine Klasse anhängen, die einen Code für die Schnittstellenmethoden vorsieht.|-   [Vorgehensweise: Implementieren einer Schnittstelle (Klassen-Designer)](../ide/how-to-implement-an-interface-class-designer.md)|
+|**Umgestaltung von Typen, Typmembern und Parametern:** Über den Klassen-Designer können Sie Typen umbenennen, Typmember überschreiben oder Typmember aus einem Typ in einen anderen verschieben. Außerdem können Sie Nullable-Typen erstellen.|-   [Umbenennen von Typen und Typmembern](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Verschieben von Typmembern von einem Typ in einen anderen](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)](../ide/how-to-create-a-nullable-type-class-designer.md)|
 
-### <a name="RenamingTypesAndMembers"></a>Umbenennen von Typen und Typmembern
+### <a name="renaming-types-and-type-members"></a><a name="RenamingTypesAndMembers"></a> Umbenennen von Typen und Typmembern
  Im Klassen-Designer können Sie einen Typ oder einen Member eines Typs im Klassendiagramm oder im Eigenschaftenfenster umbenennen. Im Fenster Klassendetails können Sie den Namen eines Members, aber keinen Typ ändern. Die Umbenennung eines Typs oder Typmember wird an alle Fenster und Codepositionen übergeben, in denen der alte Name auftrat.
 
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Um einen Namen im Klassen-Designer umzubenennen,
@@ -62,7 +62,7 @@ Wenn Sie einen Code umgestalten, ist er leichter zu verstehen, zu verwalten und 
 
 2. Ändern Sie in der Spalte **Name** den Namen des Typmembers.
 
-3. Um den Fokus von der Zelle zu verschieben, drücken Sie die **EINGABETASTE** , oder klicken Sie außerhalb der Zelle.
+3. Drücken **Sie die Eingabe** Taste, oder klicken Sie auf die Zelle, um den Fokus von der Zelle zu entfernen.
 
     > [!NOTE]
     > Im Fenster Klassendetails können Sie den Namen eines Members, aber keinen Typ ändern.
@@ -77,7 +77,7 @@ Wenn Sie einen Code umgestalten, ist er leichter zu verstehen, zu verwalten und 
 
      Der neue Name wird an alle Fenster und Codepositionen im aktuellen Projekt übertragen, in dem der alte Name auftrat.
 
-### <a name="MovingTypeMembers"></a> Typmember von einem Typ in einen anderen verschieben
+### <a name="moving-type-members-from-one-type-to-another"></a><a name="MovingTypeMembers"></a> Verschieben von Typmembern von einem Typ in einen anderen
  Mit dem **Klassen-Designer**können Sie einen Typmember von einem Typ in einen anderen Typ verschieben, wenn beide Typen im aktuellen Klassendiagramm sichtbar sind.
 
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Um einen Typmember von einem Typ in einen anderen zu verschieben.
@@ -90,7 +90,7 @@ Wenn Sie einen Code umgestalten, ist er leichter zu verstehen, zu verwalten und 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)||
 |[Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md)||

@@ -1,5 +1,5 @@
 ---
-title: Verlaufsbezogenes Debugging | Microsoft-Dokumentation
+title: Verlaufsbezogenes Debuggen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192186"
 ---
 # <a name="historical-debugging"></a>Verlaufsbezogenes Debugging
@@ -26,12 +26,12 @@ Das verlaufsbezogene Debuggen ist ein Debug-Modus, der von den durch IntelliTrac
 ## <a name="why-use-historical-debugging"></a>Warum verlaufsbezogenes Debugging?  
  Das Festlegen von Haltepunkten zum Auffinden von Fehlern ist eher eine unsichere Angelegenheit. Sie legen einen Haltepunkt in der Nähe der Stelle im Code fest, an der Sie einen Fehler vermuten, führen dann die Anwendung im Debugger aus, hoffen, dass der Haltepunkt erreicht wird, und dass die Stelle, an der die Ausführung unterbrochen wurde, die Ursache des Fehlers aufdeckt. Wenn dies nicht der Fall ist, müssen Sie versuchen, einen Haltepunkt an anderer Stelle im Code festzulegen und den Debugger erneut auszuführen. Diese Testschritte müssen Sie so oft wiederholen, bis Sie das Problem gefunden haben.  
   
- ![Festlegen eines Haltepunkts](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![Festlegen eines Breakpoints](../debugger/media/breakpointprocesa.png "Breakpointprocesa")  
   
  Mit IntelliTrace und dem verlaufsbezogenen Debugging können Sie Ihre Anwendung durchgehen und den Status überprüfen (Aufrufliste und lokale Variablen), ohne Haltepunkte festzulegen, den Debugvorgang neu zu starten und  die Testschritte zu wiederholen. Dadurch sparen Sie viel Zeit, besonders wenn der Fehler sich tief in einem Testszenario verbirgt, das azum Ausführen viel Zeit erfordert.  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>Wie beginne ich mit dem verlaufsbezogenen Debuggen?  
- IntelliTrace ist standardmäßig aktiviert. Sie müssen lediglich entscheiden, welche Ereignisse und Funktionsaufrufe für Sie von Interesse sind. Weitere Informationen zum Definieren von Elementen, die Sie suchen möchten, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md). Eine schrittweise Anleitung für das Debuggen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ IntelliTrace ist standardmäßig aktiviert. Sie müssen lediglich entscheiden, welche Ereignisse und Funktionsaufrufe für Sie von Interesse sind. Weitere Informationen zum Definieren von Elementen, die Sie suchen möchten, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md). Ein schrittweises Konto zum Debuggen mit IntelliTrace finden Sie unter Exemplarische Vorgehensweise [: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Navigieren durch Ihren Code mit verlaufsbezogenem Debugging  
  Beginnen wir mit einem einfachen Programm, das einen Fehler aufweist. Fügen Sie in einer C#-Konsolenanwendung folgenden Code hinzu:  
@@ -62,7 +62,7 @@ private static int AddInt(int add)
 }  
 ```  
   
- Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von `AddAll()` 20 beträgt (das Ergebnis des Inkrementierens von `testInt` x 20). (Gehen wir außerdem davon aus, dass Ihnen der Fehler in `AddInt()`) nicht angezeigt wird, das Ergebnis jedoch tatsächlich 44 beträgt. Wie finden wir den Fehler, ohne `AddAll()` schrittweise 10 Mal durchzugehen? Wir können das verlaufsbezogene Debugging verwenden, um Fehler schneller und leichter zu finden. Gehen Sie folgendermaßen vor:  
+ Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von `AddAll()` 20 beträgt (das Ergebnis des Inkrementierens von `testInt` x 20). (Gehen wir außerdem davon aus, dass Ihnen der Fehler in `AddInt()`) nicht angezeigt wird, das Ergebnis jedoch tatsächlich 44 beträgt. Wie finden wir den Fehler, ohne `AddAll()` schrittweise 10 Mal durchzugehen? Wir können das verlaufsbezogene Debugging verwenden, um Fehler schneller und leichter zu finden. So geht‘s:  
   
 1. Stellen Sie unter Extras / Optionen / IntelliTrace / Allgemein sicher, dass IntelliTrace aktiviert ist, wählen Sie die IntelliTrace-Ereignisse aus und rufen Sie die Informationsoption auf. Wenn Sie diese Option nicht auswählen, wird Ihnen der Navigationsbundsteg nicht angezeigt (sie Erläuterung weitere unten).  
   
@@ -70,9 +70,9 @@ private static int AddInt(int add)
   
 3. Beginnen Sie mit dem Debuggen. Der Code wird bis zum Haltepunkt ausgeführt. Im Fenster **Lokal** wird Ihnen für `resultInt` der Wert 44 angezeigt.  
   
-4. Öffnen der **Diagnosetools** Fenster (**Debuggen / anzeigen Diagnosetools**). Das Code-Fenster sieht wie folgt aus:  
+4. Öffnen Sie das Fenster **Diagnosetools** (**Debuggen**> Diagnosetools anzeigen). Das Code-Fenster sieht wie folgt aus:  
   
-    ![Codefenster am Haltepunkt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Codefenster am Breakpoint](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
 5. Neben dem linken Rand sollte ein doppelter Pfeil angezeigt werden, genau über dem Haltepunkt. Dieser Bereich wird als Navigationsbundsteg bezeichnet und dient zum verlaufsbezogenen Debuggen. Klicken Sie auf den Pfeil.  
   
@@ -80,7 +80,7 @@ private static int AddInt(int add)
   
     Das Codefenster sieht nun folgendermaßen aus:  
   
-    ![Codefenster im verlaufsbezogenen Debugmodus](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![Codefenster im verlaufsbezogenen Debuggingmodus](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
 6. Jetzt können Sie per Einzelschritt auf die `AddAll()`-Methode zugreifen (**F11** oder die **Einzelschritt**-Schaltfläche auf dem Navigationsbundsteg). Gehen Sie mit **F10** oder mit **Zum nächsten Aufruf wechseln** im Navigationsbundsteg schrittweise vorwärts. Die rosa Linie befindet sich jetzt in der `j = AddInt(j);`-Zeile. Durch Drücken von **F10** gelangen Sie in diesem Fall nicht in die nächste Codezeile. Stattdessen fährt es mit dem nächsten Funktionsaufruf fort. Das verlaufsbezogene Debugging navigiert von Aufruf zu Aufruf, und überspringt Codezeilen, die nicht in einem Funktionsaufruf enthalten sind.  
   

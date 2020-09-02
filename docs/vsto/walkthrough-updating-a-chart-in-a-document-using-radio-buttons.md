@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern'
+title: 'Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Options Feldern'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62981048"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Options Feldern
   Diese Vorgehensweise zeigt Ihnen, wie Sie Optionsfelder in einer Anpassung auf Dokumentebene für Microsoft Office Word verwenden, um Benutzern die Möglichkeit zu geben, Diagrammformatvorlagen im Dokument auszuwählen.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "62981048"
 
 - Ändern der Diagrammformatvorlage, wenn eine Option ausgewählt ist.
 
-  Das Ergebnis als vollständiges Beispiel finden Sie unter dem Beispiel des Word-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).
+  Das Ergebnis als vollständiges Beispiel finden Sie im Beispiel für Word-Steuerelemente unter [Office-Entwicklungs Beispiele und](../vsto/office-development-samples-and-walkthroughs.md)Exemplarische Vorgehensweisen.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -49,67 +49,67 @@ ms.locfileid: "62981048"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Word-Dokumentprojekt mit dem Namen **Meine Diagrammoptionen**. Wählen Sie im Assistenten **ein neues Dokument erstellen**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **meine Diagramm Optionen**. Wählen Sie im Assistenten **Neues Dokument erstellen**aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet das neue Word-Dokument im Designer und fügt die **Meine Diagrammoptionen** Projekt **Projektmappen-Explorer**.
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Projekt " **meine Diagramm Optionen** " hinzu.
 
 ## <a name="add-a-chart-to-the-document"></a>Hinzufügen eines Diagramms zum Dokument
 
 ### <a name="to-add-a-chart"></a>So fügen Sie ein Diagramm hinzu
 
-1. Klicken Sie in das Word-Dokument, die in Visual Studio-Designer, auf dem Menüband gehostet werden auf die **einfügen** Registerkarte.
+1. Klicken Sie im Word-Dokument, das im Visual Studio-Designer gehostet wird, auf dem Menüband auf die Registerkarte **Einfügen** .
 
-2. In der **Text** gruppieren, klicken Sie auf die **Objekt einfügen** Dropdown-Schaltfläche, und klicken Sie auf **Objekt**.
+2. Klicken Sie in der Gruppe **Text** auf die Dropdown-Schaltfläche **Objekt einfügen** und dann auf **Objekt**.
 
-     Die **Objekt** Dialogfeld wird geöffnet.
+     Das Dialogfeld **Objekt** wird geöffnet.
 
-3. In der **Objekttyp** auf in der Liste der **neu erstellen** Registerkarte **Microsoft Graph-Diagramm** , und klicken Sie dann auf **OK**.
+3. Wählen Sie in der Liste **Objekttyp** auf der Registerkarte **neu erstellen** **Microsoft Graph Diagramm** aus, und klicken Sie dann auf **OK**.
 
-     Das Dokument an der Einfügemarke ein Diagramm hinzugefügt wird und die **Datenblatt** Fenster wird mit einigen Standarddaten angezeigt.
+     Ein Diagramm wird dem Dokument an der Einfügemarke hinzugefügt, und das **Daten** Blatt Fenster wird mit einigen Standarddaten angezeigt.
 
-4. Schließen der **Datenblatt** Fenster übernehmen die Standardwerte im Diagramm, und klicken in das Dokument, das Fokus von das Diagramm verschieben.
+4. Schließen Sie das **Daten** Blatt Fenster, um die Standardwerte im Diagramm zu akzeptieren, und klicken Sie in das Dokument, um den Fokus vom Diagramm zu entfernen.
 
-5. Mit der rechten Maustaste in des Diagramms, und klicken Sie dann auf **Formatobjekt**.
+5. Klicken Sie mit der rechten Maustaste auf das Diagramm, und klicken Sie auf **Objekt formatieren**.
 
-6. Auf der **Layout** Registerkarte die **Formatobjekt** wählen Sie im Dialogfeld **Quadrat** , und klicken Sie auf **OK**.
+6. Wählen Sie im Dialogfeld **Objekt formatieren** auf der Registerkarte **Layout** die Option **Square** aus, und klicken Sie auf **OK**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Hinzufügen eines Benutzersteuerelements zum Projekt
  Optionsfelder in einem Dokument schließen sich standardmäßig nicht gegenseitig aus. Sie können dafür sorgen, dass sie ordnungsgemäß funktionieren, indem Sie sie einem Benutzersteuerelement hinzufügen und dann Code schreiben, um die Auswahl zu steuern.
 
 ### <a name="to-add-a-user-control"></a>So fügen Sie ein Benutzersteuerelement hinzu
 
-1. Wählen Sie die **Meine Diagrammoptionen** Projekt **Projektmappen-Explorer**.
+1. Wählen Sie in **Projektmappen-Explorer**das Projekt **meine Diagramm Optionen** aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. In der **neues Element hinzufügen** Dialogfeld klicken Sie auf **Benutzersteuerelement**, benennen Sie das Steuerelement **ChartOptions** , und klicken Sie auf **hinzufügen**.
+3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Benutzer Steuer**Element, benennen Sie das Steuerelement **ChartOptions,** und klicken Sie auf **Hinzufügen**.
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>So fügen Sie dem Benutzersteuerelement Windows Forms-Steuerelemente hinzu
 
-1. Wenn das Benutzersteuerelement nicht im Designer sichtbar ist, doppelklicken Sie auf **ChartOptions** in **Projektmappen-Explorer**.
+1. Wenn das Benutzer Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer**auf **ChartOptions** .
 
-2. Von der **Standardsteuerelementen** Registerkarte die **Toolbox**, ziehen Sie das erste **Optionsfeld** steuern, auf das Benutzersteuerelement, und ändern Sie die folgenden Eigenschaften.
+2. Ziehen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**das **Radio Button** erste Optionsfeld-Steuerelement auf das Benutzer Steuerelement, und ändern Sie die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**columnChart**|
     |**Text**|**Säulendiagramm**|
 
-3. Fügen Sie eine zweite **Optionsfeld** für den Benutzer zu steuern, und ändern Sie die folgenden Eigenschaften.
+3. Fügen Sie dem Benutzer Steuerelement **ein zweites Options** Feld hinzu, und ändern Sie die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
-    |**Name**|**barChart**|
+    |**Name**|**Barchart**|
     |**Text**|**Balkendiagramm**|
 
-4. Fügen Sie ein drittes **Optionsfeld** für den Benutzer zu steuern, und ändern Sie die folgenden Eigenschaften.
+4. Fügen Sie dem Benutzer Steuerelement **ein drittes Options** Feld hinzu, und ändern Sie die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**lineChart**|
     |**Text**|**Liniendiagramm**|
 
-5. Fügen Sie ein viertes **Optionsfeld** für den Benutzer zu steuern, und ändern Sie die folgenden Eigenschaften.
+5. Fügen Sie dem Benutzer Steuerelement **ein viertes Options** Feld hinzu, und ändern Sie die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
@@ -117,22 +117,22 @@ ms.locfileid: "62981048"
     |**Text**|**Flächendiagramm**|
 
 ## <a name="add-references"></a>Hinzufügen von Verweisen
- Um das Diagramm über das Benutzersteuerelement in einem Dokument zuzugreifen, benötigen Sie einen Verweis auf die `Microsoft.Office.Interop.Graph` Assembly in Ihrem Projekt.
+ Um über das Benutzer Steuerelement in einem Dokument auf das Diagramm zuzugreifen, benötigen Sie einen Verweis auf die- `Microsoft.Office.Interop.Graph` Assembly in Ihrem Projekt.
 
 ### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>So fügen Sie einen Verweis auf die Microsoft.Office.Interop.Graph-Assembly hinzu
 
-1. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
+1. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen**.
 
      Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-2. Auf der **.NET** Registerkarte **Microsoft.Office.Interop.Graph** , und klicken Sie auf **OK**. Verwenden Sie die 14.0.0.0-Version der Assembly.
+2. Wählen Sie auf der Registerkarte **.net** die Option **Microsoft. Office. Interop. Graph** aus, und klicken Sie auf **OK**. Verwenden Sie die 14.0.0.0-Version der Assembly.
 
-## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>Ändern der Diagrammformatvorlage, wenn ein Optionsfeld ausgewählt ist
+## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>Diagramm Stil bei ausgewählter Options Schaltfläche ändern
  Damit die Schaltflächen ordnungsgemäß funktionieren, erstellen Sie ein öffentliches Ereignis auf dem Benutzersteuerelement, fügen Sie eine Eigenschaft hinzu, um den Auswahltyp festzulegen, und erstellen Sie eine Prozedur für das `CheckedChanged`-Ereignis der einzelnen Optionsfelder.
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>So erstellen Sie ein Ereignis und eine Eigenschaft auf einem Benutzersteuerelement
 
-1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Benutzersteuerelement, und klicken Sie dann auf **Ansichtscode**.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Benutzer Steuerelement, und klicken Sie dann auf **Code anzeigen**.
 
 2. Fügen Sie Code hinzu, um ein `SelectionChanged`-Ereignis und die `Selection`-Eigenschaft der `ChartOptions`-Klasse zu erstellen.
 
@@ -161,26 +161,26 @@ ms.locfileid: "62981048"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]
 
-5. In C# müssen Sie Ereignishandler für die Optionsfelder hinzufügen. Sie können den Code dem `ChartOptions`-Konstruktor hinzufügen, unterhalb des Aufrufs von `InitializeComponent`. Informationen zum Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. In C# müssen Sie Ereignishandler für die Optionsfelder hinzufügen. Sie können den Code dem `ChartOptions`-Konstruktor hinzufügen, unterhalb des Aufrufs von `InitializeComponent`. Weitere Informationen zum Erstellen von Ereignis Handlern finden [Sie unter Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]
 
-## <a name="add-the-user-control-to-the-document"></a>Fügen Sie dem Dokument das Benutzersteuerelement
- Wenn Sie die Projektmappe erstellen, wird das neue Benutzersteuerelement automatisch um hinzugefügt der **Toolbox**. Sie können dann das Steuerelement ziehen die **Toolbox** in Ihr Dokument.
+## <a name="add-the-user-control-to-the-document"></a>Hinzufügen des Benutzer Steuer Elements zum Dokument
+ Wenn Sie die Projekt Mappe erstellen, wird das neue Benutzer Steuerelement automatisch der **Toolbox**hinzugefügt. Anschließend können Sie das Steuerelement aus der **Toolbox** in das Dokument ziehen.
 
 ### <a name="to-add-the-user-control-your-document"></a>So fügen Sie dem Dokument das Benutzersteuerelement hinzu
 
-1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+1. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
-     Die **ChartOptions** Benutzersteuerelement wird hinzugefügt, die **Toolbox**.
+     Das Benutzer Steuerelement **ChartOptions** wird der **Toolbox**hinzugefügt.
 
-2. In **Projektmappen-Explorer**, mit der rechten Maustaste **ThisDocument.vb** oder **ThisDocument.cs**, und klicken Sie dann auf **Ansicht-Designer**.
+2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisDocument. vb** oder **ThisDocument.cs**, und klicken Sie dann auf **Designer anzeigen**.
 
-3. Ziehen Sie die `ChartOptions` -Steuerelement aus der **Toolbox** auf das Dokument.
+3. Ziehen `ChartOptions` Sie das Steuerelement aus der **Toolbox** in das Dokument.
 
-     In der **Eigenschaften** Fenster, Namen, die das Steuerelement, das Sie gerade hinzugefügt wird, auf das Dokument `ChartOptions1`.
+     Benennen Sie das Steuerelement, das Sie soeben dem Dokument hinzugefügt haben, im Fenster **Eigenschaften**  `ChartOptions1` .
 
-## <a name="change-the-chart-type"></a>Ändern des Diagrammtyps
+## <a name="change-the-chart-type"></a>Ändern des Diagramm Typs
  Erstellen Sie einen Ereignishandler, um den Diagrammtyp gemäß der im Benutzersteuerelement ausgewählten Option zu ändern.
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>So ändern Sie den Diagrammtyp, der im Dokument angezeigt wird
@@ -199,7 +199,7 @@ ms.locfileid: "62981048"
 
 ### <a name="to-test-your-document"></a>So testen Sie das Dokument
 
-1. Drücken Sie **F5** um Ihr Projekt auszuführen.
+1. Drücken Sie **F5** , um das Projekt auszuführen.
 
 2. Wählen Sie verschiedene Optionsfelder aus.
 
@@ -208,11 +208,11 @@ ms.locfileid: "62981048"
 ## <a name="next-steps"></a>Nächste Schritte
  Die folgenden Aufgaben könnten sich daran anschließen:
 
-- Verwenden einer Schaltfläche zum Ausfüllen eines Textfeldes. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
+- Verwenden einer Schaltfläche zum Ausfüllen eines Textfeldes. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
-- Ändern der Formatierung durch Auswahl eines Formats aus einem Kombinationsfeld. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Änderung dokumentformatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Ändern der Formatierung durch Auswahl eines Formats aus einem Kombinationsfeld. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Ändern der Dokument Formatierung mithilfe von CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)-Steuerelementen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)
-- [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
-- [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
+- [Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

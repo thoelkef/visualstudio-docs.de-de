@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904125"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Hinzufügen einer Symbolleiste zu einem Tool Fenster
@@ -113,5 +113,5 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie einem Tool Fenster ein
 
 3. Klicken Sie auf der Symbolleiste auf das Symbol, um die Nachricht **twtestcommandpackage in twtoolbar. twtestcommand. MenuItemCallBack ()** anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)

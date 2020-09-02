@@ -1,5 +1,5 @@
 ---
-title: Implementieren eines Portanbieters | Microsoft-Dokumentation
+title: Implementieren eines Port Anbieters | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,29 +12,29 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ffa6daa20c08bd236657c88e762b2f453554cb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152676"
 ---
 # <a name="implementing-a-port-supplier"></a>Implementieren eines Portanbieters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ein portanbieters liefert Ports bei Anforderung an die sitzungsbasierter Debug-Manager (SDM). Ein portanbieters muss implementiert werden, wenn auf einen nicht-DCOM-Computer zu debuggen oder ein neues Gerät unterstützt werden muss. Um debugging für ein Mobiltelefon zu gewährleisten, können Sie z. B. ein portanbieters implementieren, das Ports, die das Handy (z. B. mithilfe von IR- oder einer Zelle Verbindung) verbinden, und listet die Prozesse und Programme bereitstellt, die auf dem Telefon ausgeführt.  
+Ein Port Lieferant liefert Ports für die Anforderung an den Sitzungs-Debug-Manager (SDM). Beim Debuggen auf einen nicht-DCOM-Computer muss ein Port Lieferant implementiert werden, oder es muss ein neues Gerät unterstützt werden. Wenn Sie z. b. das Debuggen auf einem Mobiltelefon bereitstellen möchten, können Sie einen Port Anbieter implementieren, der Ports bereitstellt, die eine Verbindung mit dem Mobiltelefon herstellen (z. b. über IR oder eine Zell Verbindung) und die Prozesse und Programme auflisten, die auf dem Telefon ausgeführt werden.  
   
- Für das Debuggen von Programmen auf Windows-basierten Computern (einschließlich Remotedebuggen) bietet Visual Studio Portanbieter für systemeigenen und Common Language Runtime (CLR)-Prozesse, daher keine Notwendigkeit besteht, Ihre eigenen anschlusslieferant in diesen Fällen zu implementieren.  
+ Für das Debuggen von Programmen auf Windows-basierten Computern (einschließlich Remote Debuggen) stellt Visual Studio Port Lieferanten für systemeigene und CLR-Prozesse (Common Language Runtime) bereit, sodass in diesen Fällen kein eigener Port Lieferant implementiert werden muss.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Implementieren und Registrieren eines Portanbieters](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
- Erläutert, wie das SDM mit Anschlusslieferanten und ihrer Ports interagiert.  
+ Erläutert, wie die SDM mit dem Port Lieferanten und seinen Ports interagiert.  
   
  [Schnittstellen für erforderliche Portanbieter](../../extensibility/debugger/required-port-supplier-interfaces.md)  
- Beschreibt die Schnittstellen, die zum Abrufen eines portanbieters implementiert werden müssen.  
+ Dokumentiert die Schnittstellen, die implementiert werden müssen, um einen Port Lieferanten zu erhalten.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)  
- Beschreibt die wichtigsten Konzepte für das Debuggen Architektur an.  
+ Beschreibt die wichtigsten Konzepte der debuggingarchitektur.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Visual Studio Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

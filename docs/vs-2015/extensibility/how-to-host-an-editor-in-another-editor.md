@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hosten Sie einen Editor in einem anderen Editor | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Hosten eines Editors in einem anderen Editor | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,32 +11,32 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d4b4ff425feb22b5057a8d1a76b7f73b8932d9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204167"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Vorgehensweise: Hosten eines Editors in einem anderen Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie ein Editor in einem anderen durch Angeben des hosting-Fensters als ein übergeordnetes Fenster hosten. Zu diesem Zweck legen Sie die Parameter <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> und <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> auf den untergeordneten Fensterrahmen.  
+In Visual Studio können Sie einen Editor innerhalb eines anderen Hosts hosten, indem Sie das Hostingfenster als übergeordnetes Fenster angeben. Legen Sie hierzu die Parameter <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> und <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> für den untergeordneten Fensterrahmen fest.  
   
-### <a name="to-set-up-the-window-frame-to-host-an-editor"></a>Zum Einrichten des Fensterrahmens zum Hosten eines Editors  
+### <a name="to-set-up-the-window-frame-to-host-an-editor"></a>So richten Sie den Fensterrahmen ein, um einen Editor zu hosten  
   
-1. Legen Sie einen Editor als einen gehosteten-Editor, durch das Erstellen eines untergeordneten Bereich.  
+1. Markieren Sie einen Editor als gehosteten Editor, indem Sie einen untergeordneten Fensterbereich erstellen.  
   
-     Dieser Bereich befindet, in dem die Anmerkung der Redaktion Text übertragen werden.  
+     In diesem Bereich wird der Text des Editors angezeigt.  
   
-2. Erstellen der hosting-Editor über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> Methode.  
+2. Erstellen Sie den Host-Editor mithilfe der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> oder- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> Methode.  
   
-3. Legen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> und <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> Eigenschaften in der Fenster-Frame-Implementierung des gehosteten Editors durch Übergeben dieser Eigenschaften als Parameter für die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> -Methode, bzw.  
+3. Legen <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> Sie die-Eigenschaft und die-Eigenschaft <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> in der Fensterrahmen Implementierung des gehosteten Editors fest, indem Sie diese Eigenschaften als Parameter an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> Methode übergeben.  
   
-     Wenn Sie diesen Parameter abgerufen werden müssen, übergeben Sie diese Eigenschaften auf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Methode.  
+     Wenn Sie diese Parameter abrufen müssen, übergeben Sie diese Eigenschaften an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> Methode.  
   
-4. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> Methode für den eigenständigen Editor.  
+4. Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> Methode für den enthaltenen Editor auf.  
   
-     Der Editor wird im Bereich "gehosteten" des enthaltenden-Editors angezeigt.  
+     Der Editor wird im gehosteten Bereich des enthaltenden Editors angezeigt.  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
- Die **Anwendungs-Designer** in der Visual Studio Team Edition for Architects ist ein Beispiel eines Editor-Fenster-Frames Hosten von einem anderen Editor. Die **Anwendungs-Designer** hostet andere Designer im rechten Bereich. Ein Designer-Bereich (oder **Eigenschaften** Seite) für jede der enthaltene Designer auf den enthaltenden Fensterrahmen hinzugefügt wird.
+ Das **Anwendungs-Designer** in der Visual Studio Team Edition for Architects ist ein Beispiel für einen Editor-Fensterrahmen, der einen anderen Editor gehostet. Der **Anwendungs-Designer** hostet andere Designer im rechten Bereich. Ein Designer Panel (oder eine **Eigenschaften** Seite) für jeden der enthaltenen Designer wird dem enthaltenden Fensterrahmen hinzugefügt.

@@ -25,10 +25,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271583"
 ---
 # <a name="annotating-structs-and-classes"></a>Hinzufügen einer Anmerkung zu Strukturen und Klassen
@@ -40,25 +40,25 @@ Sie können Struktur-und Klassenmember mit Anmerkungen versehen, die wie invaria
   
 - `_Field_range_(low, high)`  
   
-     Das Feld befindet sich im Bereich (einschließlich) von `low` bis `high`.  Äquivalent zu `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`, die auf das mit Anmerkungen versehene Objekt angewendet werden, indem die entsprechenden Pre-oder Post-Bedingungen verwendet werden.  
+     Das Feld befindet sich im Bereich (einschließlich) von `low` bis `high` .  Entspricht dem `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` , das auf das mit Anmerkungen versehene Objekt angewendet wird, indem die entsprechenden Prä-oder Post Bedingungen verwendet werden.  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
-     Ein Feld mit einer beschreibbaren Größe in Elementen (oder Bytes), wie in `size`angegeben.  
+     Ein Feld, das über eine beschreibbare Größe in Elementen (oder Bytes) verfügt, wie von angegeben `size` .  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)``_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
-     Ein Feld mit einer beschreibbaren Größe in Elementen (oder Bytes), wie durch `size`angegeben, und die `count` dieser Elemente (Bytes), die lesbar sind.  
+     Ein Feld, das über eine beschreibbare Größe in Elementen (oder Bytes) verfügt, wie von angegeben `size` , und die `count` der lesbaren Elemente (Bytes).  
   
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
-     Ein Feld, das sowohl lesbare als auch beschreibbare Größe in Elementen (oder Bytes) aufweist, wie durch `size`angegeben.  
+     Ein Feld, das sowohl lesbare als auch beschreibbare Größe in Elementen (oder Bytes) aufweist, wie von angegeben `size` .  
   
 - `_Struct_size_bytes_(size)`  
   
-     Ein Feld, das sowohl lesbare als auch beschreibbare Größe in Elementen (oder Bytes) aufweist, wie durch `size`angegeben.  
+     Ein Feld, das sowohl lesbare als auch beschreibbare Größe in Elementen (oder Bytes) aufweist, wie von angegeben `size` .  
   
-     Gilt für die Struktur-oder Klassen Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ und die Anzahl der Bytes ist, die durch `size`angegeben werden.  Beispiel:  
+     Gilt für die Struktur-oder Klassen Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs größer als der deklarierte Typ und die Anzahl von Bytes sein kann, die von angegeben werden `size` .  Beispiel:  
   
     ```cpp  
   
@@ -70,18 +70,18 @@ Sie können Struktur-und Klassenmember mit Anmerkungen versehen, die wie invaria
   
     ```  
   
-     Die Puffergröße eines Parameter `pM` vom Typ `MyStruct *` wird dann wie folgt angenommen:  
+     Die Puffergröße eines Parameters `pM` vom Typ in Byte `MyStruct *` wird dann wie folgt angenommen:  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- Grundlegendes zu [SAL](../code-quality/understanding-sal.md)   
- Hinzufügen von [Anmerkungen zu Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)   
- Hinzufügen einer [Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   
- Hinzufügen einer [Anmerkung zum Sperr Verhalten](../code-quality/annotating-locking-behavior.md)   
- [Angeben, wann und wo eine Anmerkung angewendet](../code-quality/specifying-when-and-where-an-annotation-applies.md) wird   
+ [Verwenden von Sal-Anmerkungen zum Reduzieren von C/C++-Code Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Grundlegendes zur SAL](../code-quality/understanding-sal.md)   
+ [Kommentieren von Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)   
+ [Hinzufügen einer Anmerkung zum Sperr Verhalten](../code-quality/annotating-locking-behavior.md)   
+ [Angeben, wann und wo eine Anmerkung angewendet wird](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Intrinsische Funktionen](../code-quality/intrinsic-functions.md)   
  [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)

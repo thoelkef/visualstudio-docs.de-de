@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: SetCallback | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729333"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Ermöglicht dem Ausdrucksevaluator (EE), die Rückrufschnittstelle anzugeben, die das Debuggermodul (DE) zum Lesen von Metrikeinstellungen verwendet.
+Ermöglicht es der Ausdrucks Auswertung (EE), die Rückruf Schnittstelle anzugeben, die die Debugger-Engine (de) zum Lesen von Metrikeinstellungen verwendet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>Parameter
 `pCallback`\
-[in] Schnittstelle, die für den Einstellungsrückruf verwendet werden soll.
+in Schnittstelle, die für den Einstellungs Rückruf verwendet werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Methode stellt eine Schnittstelle zum Sitzungsdebug-Manager bereit, die ein Ausdrucksauswertungsdienst zum Lesen von Metrikeinstellungen verwenden kann. Es ist beim Remotedebugging nützlich, [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] um Metriken auf dem Computer zu lesen.
+Diese Methode stellt eine Schnittstelle zum sitzungsdebug-Manager bereit, der von einer Ausdrucks Auswertung zum Lesen von Metrikeinstellungen verwendet werden kann. Es ist beim Remote Debuggen hilfreich, um Metriken auf dem Computer zu lesen [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="example"></a>Beispiel
-Die folgenden Beispiele zeigen, wie Diese Methode für ein **CEE-Objekt** implementiert wird, das die [IDebugSettingsCallback2-Schnittstelle](../../../extensibility/debugger/reference/idebugsettingscallback2.md) verfügbar macht.
+In den folgenden Beispielen wird gezeigt, wie Sie diese Methode für ein **CEE** -Objekt implementieren, das die [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

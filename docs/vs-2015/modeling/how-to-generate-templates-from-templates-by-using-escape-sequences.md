@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 501b7f040cb841d19c06ccc8fe7615a5b4a5e70d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657348"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Gewusst wie: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen
@@ -25,7 +25,7 @@ Sie können eine Textvorlage erstellen, die eine andere Textvorlage als generier
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>So generieren Sie eine Textvorlage aus einer Textvorlage
 
-- Verwenden Sie den umgekehrten Schrägstrich (\\) als Escapezeichen, um die erforderlichen Markup Tags in der Textvorlage für Direktiven, Anweisungen, Ausdrücke und Klassen Funktionen in einer separaten Textvorlagen Datei zu erstellen.
+- Verwenden Sie den umgekehrten Schrägstrich ( \\ ) als Escapezeichen, um die erforderlichen Markup Tags in der Textvorlage für Direktiven, Anweisungen, Ausdrücke und Klassen Funktionen in einer separaten Textvorlagen Datei zu erstellen.
 
     ```
     \<#@ directive \#>
@@ -35,7 +35,7 @@ Sie können eine Textvorlage erstellen, die eine andere Textvorlage als generier
     ```
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden Escapezeichen verwendet, um eine Textvorlage aus einer Textvorlage zu erstellen. Die `output`-Direktive legt den Ziel Dateityp auf den Textvorlagen-Dateityp (. tt) fest.
+ Im folgenden Beispiel werden Escapezeichen verwendet, um eine Textvorlage aus einer Textvorlage zu erstellen. Die- `output` Direktive legt den Ziel Dateityp auf den Textvorlagen-Dateityp (. tt) fest.
 
 ```csharp
 \<#@ output extension=".tt" \#>

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30b13610cc59b8a0225e52abf47f9a4f2cc97d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657577"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Verwalten von Modellen und Diagrammen unter Versionskontrolle
@@ -23,12 +23,12 @@ ms.locfileid: "72657577"
 
 Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagrammen, einschließlich Code Maps (DGML-Dateien), mithilfe von [Team Foundation-Versionskontrolle oder Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)– entweder mit lokalem Team Foundation Server oder in der Cloud mit Visual Studio Team Services.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!IMPORTANT]
 > Besondere Sorgfalt ist erforderlich, wenn mehrere Benutzer am gleichen Modellierungsprojekt arbeiten. Erfahren Sie, wie Sie [Modelle in mittelgroßen oder großen Projekten organisieren](../modeling/structure-your-modeling-solution.md)können.
 
-## <a name="ModelingProjects"></a>Dateien in einem Modellierungsprojekt
+## <a name="files-in-a-modeling-project"></a><a name="ModelingProjects"></a> Dateien in einem Modellierungsprojekt
  Mehrere Benutzer können gleichzeitig an einem Modellierungsprojekt arbeiten, solange sie an unterschiedlichen Dateien arbeiten.
 
  Um Konflikte zwischen von verschiedenen Benutzern vorgenommenen Änderungen zu vermeiden oder zu beheben, ist es wichtig zu verstehen, wie das Modell in Dateien gespeichert wird.
@@ -42,9 +42,9 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
   - **DiagramName.classdiagram.layout** – Wenn diese Datei gelöscht wird, werden die Formen weiterhin im Diagramm angezeigt, aber ihre Größen und Positionen gehen verloren. Jede Layoutdatei ist einer Diagrammdatei untergeordnet. Um diese anzuzeigen, klicken Sie im Projektmappen-Explorer neben der Diagrammdatei auf [+].
 
 > [!NOTE]
-> Es ist wichtig, die Konsistenz zwischen den Dateien beizubehalten. Wenn Sie z. B. die Quellcodeverwaltung verwenden, um Änderungen in einer UML-Datei zurückzusetzen, sollten Sie die entsprechenden Änderungen in den *DIAGRAM- und LAYOUT-Dateien gleichzeitig zurücksetzen. Elemente, die in einem dargestellt werden. \*diagram Datei geht verloren, wenn Sie nicht auch in einer UML-Datei dargestellt werden.
+> Es ist wichtig, die Konsistenz zwischen den Dateien beizubehalten. Wenn Sie z. B. die Quellcodeverwaltung verwenden, um Änderungen in einer UML-Datei zurückzusetzen, sollten Sie die entsprechenden Änderungen in den *DIAGRAM- und LAYOUT-Dateien gleichzeitig zurücksetzen. Elemente, die in einem dargestellt werden. \* die Diagramm Datei geht verloren, wenn Sie nicht auch in einer UML-Datei dargestellt werden.
 
-## <a name="Shared"></a>Arbeiten an freigegebenen Modellierungs Projekten
+## <a name="working-on-shared-modeling-projects"></a><a name="Shared"></a> Arbeiten an freigegebenen Modellierungs Projekten
  So minimieren Sie Konflikte bei der gleichzeitigen Arbeit an verschiedenen Teilen eines Projekts:
 
 - Unterteilen Sie das Modellierungsprojekt in Pakete, die jeweils andere Arbeitsbereiche darstellen. Verschieben Sie das gesamte Modell in Pakete, anstatt es im Stammmodell zu belassen. Weitere Informationen finden Sie unter [Definieren von Paketen und Namespaces](../modeling/define-packages-and-namespaces.md).
@@ -70,7 +70,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
     > [!NOTE]
     > Wenn beim Ausführen eines **Get**-Vorgangs eine Datei geöffnet ist und der Vorgang zu lokalen Änderungen führt, werden Sie aufgefordert, die Datei neu zu laden. Klicken Sie in diesem Fall auf **Nein**, und laden Sie dann das vollständige Projekt neu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Modellierungsprojektknoten, klicken Sie auf **Projekt entladen**und dann auf **Projekt erneut laden**.
 
-### <a name="Exclusive"></a>Änderungen, die exklusiven Zugriff auf das Modell erfordern
+### <a name="changes-requiring-exclusive-access-to-the-model"></a><a name="Exclusive"></a> Änderungen, die exklusiven Zugriff auf das Modell erfordern
  Bevor Sie die folgenden Arten von Änderungen vornehmen, müssen Sie sicherstellen, dass für das gesamte Projekt eine Auschecksperre gilt.
 
 - Umbenennen oder Löschen von Elementen, auf die von anderen Paketen verwiesen wird
@@ -96,7 +96,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
     > [!NOTE]
     > Sie können die Datei nicht in ein anderes Projekt verschieben.
 
-## <a name="Merging"></a>Zusammenführen von Änderungen in Modelldateien und Diagrammen
+## <a name="merging-changes-in-model-files-and-diagrams"></a><a name="Merging"></a> Zusammenführen von Änderungen in Modelldateien und Diagrammen
  Nachdem mehrere Benutzer gleichzeitig an einem Modell gearbeitet haben, werden Sie von [!INCLUDE[esprscc](../includes/esprscc-md.md)] aufgefordert, die Änderungen in den Modelldateien zusammenzuführen. Durch das Arbeiten an separaten Projekten, wie in den vorherigen Abschnitten beschrieben, können die meisten Zusammenführungen vermieden werden. Normalerweise können die restlichen Konflikte auf sichere Weise automatisch zusammengeführt werden. Die folgenden Arten von Änderungen sollten keine Schwierigkeiten verursachen:
 
 - Typen von Lebenslinien. Wenn Sie einer Interaktion (Sequenzdiagramm) eine Lebenslinie hinzufügen, wird deren Typ im Stammmodell gespeichert, es sei denn, Sie haben die Lebenslinie aus einem vorhandenen Typ erstellt.
@@ -107,5 +107,5 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
 
 - Umbenennen oder Löschen von Elementen, auf die nur innerhalb ihres eigenen Pakets verwiesen wird
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Analysieren und modellieren von Architektur](../modeling/analyze-and-model-your-architecture.md) [Freigabe Modellen und Exportieren von Diagrammen](../modeling/share-models-and-exporting-diagrams.md)

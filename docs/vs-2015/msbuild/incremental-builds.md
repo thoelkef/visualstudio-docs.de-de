@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192881"
 ---
 # <a name="incremental-builds"></a>Inkrementelle Builds
@@ -50,7 +50,7 @@ Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mi
   
 - Das Ziel weist keine veralteten Ausgaben auf und wird übersprungen. MSBuild wertet das Ziel aus und nimmt Änderungen an Elementen und Eigenschaften vor, als ob das Ziel ausgeführt worden wäre.  
   
-  Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Hier einige Beispiele:  
+  Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Im Folgenden finden Sie einige Beispiele:  
   
 ```  
 <CreateProperty Value="123">  
@@ -81,5 +81,5 @@ Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mi
   
  Damit wird, sofern das Ziel ausgeführt wird, die CompileRan-Eigenschaft mit dem Wert `true` erstellt. Wenn das Ziel übersprungen wird, wird CompileRan nicht erstellt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Ziele](../msbuild/msbuild-targets.md)

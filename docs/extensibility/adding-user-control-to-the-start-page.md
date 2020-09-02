@@ -14,10 +14,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903388"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Hinzufügen eines Benutzer Steuer Elements zur Start Seite
@@ -143,7 +143,7 @@ Um dieses Steuerelement für das Startseiten Projekt verfügbar zu machen, füge
 
 2. Wählen Sie auf der Registerkarte **Projekte** die Option **WebUserControl** aus, und klicken Sie dann auf **OK**.
 
-3. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+3. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
     Durch die Projekt Mappe wird das Benutzer Steuerelement für andere Dateien in der Projekt Mappe IntelliSense zur Verfügung gestellt.
 
@@ -189,7 +189,7 @@ Um dieses Steuerelement für das Startseiten Projekt verfügbar zu machen, füge
 
     Die benutzerdefinierte Startseite sollte angezeigt werden. Wenn Sie Dateien ändern möchten, müssen Sie die experimentelle Instanz schließen, die Änderungen durchführen, die geänderten Dateien kopieren und einfügen und dann die experimentelle Instanz erneut öffnen, um die Änderungen anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [WPF-Container Steuerelemente](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
 - [Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Start Seite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

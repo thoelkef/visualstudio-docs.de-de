@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60f8da2430e1c84af3c26be31c6de561291c8c6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695295"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Diagnosemeldungen im Ausgabefenster
@@ -46,11 +46,11 @@ Laufzeitmeldungen können im Ausgabefenster mithilfe der Debug-Klasse oder der T
   
 - Verschiedene `Write`-Methoden, die die Ausgabe von Informationen ermöglichen, ohne dass die Ausführung unterbrochen wird. Diese Methoden ersetzen die `Debug.Print`-Methode, die in früheren Versionen von Visual Basic verwendet wurde.  
   
-- Die <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode und die <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>-Methode, durch die die Ausführung unterbrochen wird und Informationen ausgegeben werden, wenn eine festgelegte Bedingung nicht erfüllt ist. Standardmäßig werden die Informationen der `Assert`-Methode in einem Dialogfeld angezeigt. Weitere Informationen finden Sie unter [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> und- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> Methoden, die die Ausführung unterbrechen und Informationen ausgeben, wenn eine angegebene Bedingung fehlschlägt. Standardmäßig werden die Informationen der `Assert`-Methode in einem Dialogfeld angezeigt. Weitere Informationen finden Sie unter [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md).  
   
 - Die <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>-Methode und die <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>-Methode, durch die die Ausführung stets unterbrochen wird und Informationen ausgegeben werden. Standardmäßig werden die Informationen der `Fail`-Methoden in einem Dialogfeld angezeigt.  
   
-  Neben Programmausgabe der Anwendung die **Ausgabe** die Informationen zum Anzeigen:  
+  Zusätzlich zum Programm aus der Anwendung können im **Ausgabe** Fenster folgende Informationen angezeigt werden:  
   
 - Module, die der Debugger geladen oder entladen hat.  
   
@@ -60,10 +60,10 @@ Laufzeitmeldungen können im Ausgabefenster mithilfe der Debug-Klasse oder der T
   
 - Threads, die beendet werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Ausgabefenster](../ide/reference/output-window.md)   
  [Ablaufverfolgung und Instrumentieren von Anwendungen](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [Einführung in Instrumentation und Ablaufverfolgung](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
- [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Einführung in Instrumentation und Ablauf Verfolgung](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
+ [C#-, F #-und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

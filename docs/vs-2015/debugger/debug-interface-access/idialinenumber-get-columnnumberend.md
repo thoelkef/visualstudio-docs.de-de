@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_columnnumberend | Microsoft-Dokumentation'
+title: 'IDiaLineNumber:: get_columnNumberEnd | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d6fb8cb5b3cfa7aa741db4e49dc7c2b3e1daee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192347"
 ---
-# <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
+# <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Nummer der Spalte 1-basierte Quelle, in den Ausdruck oder Anweisung endet.  
+Ruft die 1-basierte Quell Spaltennummer ab, in der der Ausdruck oder die Anweisung endet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_columnNumberEnd ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt die Nummer der Spalte zurück, beendet den Ausdruck oder Anweisung ist. Wenn der Wert 0 (null) ist, ist die End-Spalteninformationen nicht vorhanden.  
+ vorgenommen Gibt die Nummer der Spalte zurück, in der der Ausdruck oder die Anweisung endet. Wenn der Wert 0 (null) ist, sind die Spalten Endinformationen nicht vorhanden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Der Spaltenwert, der von dieser Methode zurückgegebene ist ein Byteoffset in der Zeile, der die Position hinter dem letzten Zeichen der Anweisung in der Zeile.  
+## <a name="remarks"></a>Bemerkungen  
+ Der von dieser Methode zurückgegebene Spaltenwert ist ein Byte Offset in der Zeile, der nach dem letzten Zeichen der Anweisung in der Zeile steht.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

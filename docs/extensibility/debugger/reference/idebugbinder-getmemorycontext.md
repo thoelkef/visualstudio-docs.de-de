@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext | Microsoft Docs
+title: 'Idebugbinder:: getmemorycontext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735992"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-Diese Methode konvertiert entweder einen Objektspeicherort oder eine Speicheradresse in einen Speicherkontext.
+Diese Methode konvertiert entweder einen Objekt Speicherort oder eine Speicheradresse in einen Speicher Kontext.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,13 +45,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Parameter
 `pField`\
-[in] Ein [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) das das zu suchende Objekt beschreibt. Wenn `NULL`, `dwConstant` dann verwenden Sie stattdessen.
+in Ein [idebugfeld](../../../extensibility/debugger/reference/idebugfield.md) , das das zu suchende Objekt beschreibt. Wenn `NULL` , dann verwenden Sie `dwConstant` stattdessen.
 
 `dwConstant`\
-[in] Eine konstante Speicheradresse, z. B. 0x5000.
+in Eine Konstante Speicheradresse, z. b. 0x5.000.
 
 `ppMemCxt`\
-[out] Gibt die [IDebugMemoryContext2-Schnittstelle](../../../extensibility/debugger/reference/idebugmemorycontext2.md) zurück, die die Adresse des Objekts oder die Adresse im Arbeitsspeicher darstellt.
+vorgenommen Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Schnittstelle zurück, die die Adresse des-Objekts darstellt, oder die Adresse im Arbeitsspeicher.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

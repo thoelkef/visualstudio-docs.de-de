@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986139"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Stellen Sie eine Office-Projekt Mappe mithilfe Windows Installer
@@ -53,23 +53,23 @@ Wenn Sie Visual Studio zum Erstellen eines Windows Installers verwenden, können
 
 - [Konfigurieren eines VSTO-Add-ins](#ConfigureRegistry)
 
-- [Configure a document-level customization](#ConfigureDocument)
+- [Configure a Document-Level Customization](#ConfigureDocument)
 
-- [Build the setup project](#Build)
+- [Build the Setup Project](#Build)
 
 Weitere Informationen zum Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce finden Sie unter Bereitstellen einer Office-Projekt Mappe [mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-Informationen zum Erstellen einer Windows Installer Datei mithilfe [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]finden Sie unter Bereitstellen [einer Visual Studio 2010-Tools für Office](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))-Projekt Mappe mit Windows Installer.
+Informationen zum Erstellen einer Windows Installer Datei mithilfe von finden Sie unter Bereitstellen [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] [einer Visual Studio 2010-Tools für Office](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))-Projekt Mappe mithilfe von Windows Installer.
 
-## <a name="Download"></a>Herunterladen von Beispielen
+## <a name="download-samples"></a><a name="Download"></a>Herunterladen von Beispielen
 In diesem Thema werden die folgenden herunterladbaren Beispiele erläutert.
 
-|Beispiel<br /><br />|Beschreibung<br /><br />|
+|Beispiel<br /><br />|BESCHREIBUNG<br /><br />|
 |----------|---------------|
 |[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|Ein Excel VSTO-Add-In, das Sie auf einem Computer installieren können, der eine 32-Bit- oder 64-Bit-Version von Office ausführt.<br /><br />|
 |[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|Eine Anpassung auf Dokumentebene in Excel, die Sie auf einem Computer installieren können, der eine 32-Bit- oder 64-Bit-Version von Office ausführt.<br /><br />|
 
-## <a name="ApplySecurity"></a>Festlegen, wie der Projektmappe Vertrauenswürdigkeit gewährt werden soll
+## <a name="decide-how-to-grant-trust-to-the-solution"></a><a name="ApplySecurity"></a>Festlegen, wie der Projektmappe Vertrauenswürdigkeit gewährt werden soll
 Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen Sie Vertraulichkeit auf eine der nachfolgenden Weisen gewähren, oder Benutzer müssen auf eine vertrauenswürdige Eingabeaufforderung antworten, wenn Sie die Projektmappe installieren.
 
 - Signieren Sie die Manifeste, indem Sie ein Zertifikat verwenden, das einen bekannten und vertrauenswürdigen Herausgeber identifiziert. Weitere Informationen finden Sie [unter Vertrauen der Lösung durch Signieren der Anwendungs-und Bereitstellungs Manifeste](../vsto/granting-trust-to-office-solutions.md#Signing).
@@ -79,7 +79,7 @@ Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen S
 > [!NOTE]
 > Bei Anpassungen auf Dokumentebene muss der Speicherort des Dokuments ebenfalls vertrauenswürdig sein. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).
 
-## <a name="Obtain"></a>Abrufen der InstallShield Limited-Edition
+## <a name="get-installshield-limited-edition"></a><a name="Obtain"></a>Abrufen der InstallShield Limited-Edition
 
 Sie können eine Windows Installer-Datei erstellen, indem Sie InstallShield Limited Edition (ISLE) verwenden, das kostenlos ist, wenn Sie Visual Studio installiert haben. ISLE ersetzt die Funktionen der Projektvorlagen für Setup und Bereitstellung, die frühere Versionen von Visual Studio bereitstellten.
 
@@ -101,13 +101,13 @@ Sie können eine Windows Installer-Datei erstellen, indem Sie InstallShield Limi
 
    Nachdem Sie das Produkt heruntergeladen, installiert und aktiviert haben, wird die Vorlage **InstallShield Limited Edition Project** in Visual Studio angezeigt.
 
-## <a name="Create"></a>Erstellen eines Setup-Projekts
+## <a name="create-a-setup-project"></a><a name="Create"></a>Erstellen eines Setup-Projekts
 
 1. Öffnen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]das Office Project, das Sie bereitstellen möchten.
 
    Die Beispiele für VSTO-Add-Ins, die mit diesem Thema verknüpft sind, enthalten ein Projekt namens **ExcelAddIn**. Die Beispiele für die Anpassung auf Dokumentebene enthalten ein Projekt namens **ExcelWorkbook**. In diesem Thema wird auf das Office Project in der Projektmappe verwiesen, indem einer dieser beiden Namen verwendet wird.
 
-2. Wählen Sie in der Menüleiste **Datei**  >   > **Neues Projekt** **Hinzufügen** aus.
+2. Wählen Sie in der Menüleiste **Datei**  >  **Hinzufügen**  >  **Neues Projekt**aus.
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
@@ -119,7 +119,7 @@ Sie können eine Windows Installer-Datei erstellen, indem Sie InstallShield Limi
 
    Die Beispiele für dieses Thema enthalten ein Setupprojekt mit dem Namen **OfficeAddInSetup**. In diesem Thema wird auf das Setupprojekt in der Projektmappe verwiesen, indem der gleiche Name verwendet wird.
 
-## <a name="Add"></a>Hinzufügen der Projektausgabe
+## <a name="add-the-project-output"></a><a name="Add"></a>Hinzufügen der Projektausgabe
 
 Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office Project einzuschließen. Für VSTO-Add-In-Projekte besteht die Projektausgabe nur aus der Projektmappenassembly. Für Anpassungsprojekte auf Dokumentebene umfasst die Projektausgabe nicht nur die Projektmappenassembly, sondern auch das Dokument selbst.
 
@@ -127,19 +127,19 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , und wählen Sie dann die Datei **Projekt-Assistent** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Projekt-Assistenten-Datei in Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistentdatei im Projektmappen-Explorer")
+   ![Projekt-Assistentdatei im Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistentdatei im Projektmappen-Explorer")
 
-2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Die Schaltfläche Anwendungs Dateien.](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")
+   ![Die Schaltfläche "Anwendungsdateien".](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")
 
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.
 
 5. Aktivieren Sie im Dialogfeld **Visual Studio Output Selector** das Kontrollkästchen **Primäre Ausgabe** , und wählen Sie anschließend die Schaltfläche **OK** aus.
 
-## <a name="AddD"></a>Hinzufügen der Bereitstellungs- und Anwendungsmanifeste
+## <a name="add-the-deployment-and-application-manifests"></a><a name="AddD"></a>Hinzufügen der Bereitstellungs- und Anwendungsmanifeste
 
 1. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Dateien hinzufügen** aus.
 
@@ -151,9 +151,9 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
 
    Die Seite **Anwendungsdateien** enthält jetzt die Projektausgabedatei, das Bereitstellungsmanifest und das Anwendungsmanifest, wie in der folgenden Abbildung veranschaulicht.
 
-   ![Die Ausgabedateien des Setup-Projekts.](../vsto/media/installshield-outputfiles.png "Die Ausgabedateien des Setupprojekts.")
+   ![Die Ausgabedateien des Setupprojekts.](../vsto/media/installshield-outputfiles.png "Die Ausgabedateien des Setupprojekts.")
 
-## <a name="Configure"></a>Konfigurieren der abhängigen Komponenten als erforderliche Komponenten
+## <a name="configure-the-dependent-components-as-prerequisites"></a><a name="Configure"></a>Konfigurieren der abhängigen Komponenten als erforderliche Komponenten
 
 Sie müssen nicht nur die folgenden Komponenten in die Setupanwendung einschließen, sondern auch andere Komponenten, die für die Ausführung der Lösung erforderlich sind.
 
@@ -165,9 +165,9 @@ Sie müssen nicht nur die folgenden Komponenten in die Setupanwendung einschlie�
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , erweitern Sie den Knoten **Anwendungsdaten festlegen** , und wählen Sie dann die Datei **Verteilbare Komponenten** aus, wie in der folgenden Abbildung dargestellt.
 
-   ![Die Redistributables-Datei in Projektmappen-Explorer](../vsto/media/installshield-redistributablesfile.png "Verteilbare Datei im Projektmappen-Explorer")
+   ![Verteilbare Datei im Projektmappen-Explorer](../vsto/media/installshield-redistributablesfile.png "Verteilbare Datei im Projektmappen-Explorer")
 
-2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
    Die Seite **Verteilbare Komponenten** wird geöffnet.
 
@@ -177,7 +177,7 @@ Sie müssen nicht nur die folgenden Komponenten in die Setupanwendung einschlie�
 
 4. Wenn das Dialogfeld angezeigt wird, wählen Sie die Schaltfläche **Nein** aus.
 
-### <a name="AddToolsForOffice"></a>Hinzufügen von Visual Studio 2010-Tools für Office-Laufzeit
+### <a name="add-the-visual-studio-2010-tools-for-office-runtime"></a><a name="AddToolsForOffice"></a>Hinzufügen von Visual Studio 2010-Tools für Office-Laufzeit
 
 Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Microsoft VSTO 2010-Laufzeit**, verweist jedoch auf eine frühere Version der Laufzeit. Daher müssen Sie manuell eine Konfigurationsdatei erstellen, die auf die neueste Version verweist. Sie müssen diese Datei anschließend im selben Verzeichnis wie die Konfigurationsdateien für alle anderen Elemente ablegen, die auf der Seite **Verteilbare Komponenten** angezeigt werden.
 
@@ -209,31 +209,31 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
 
 4. Ersetzen Sie in Editor den Text **Your GUID goes here** , indem Sie die GUID an seiner Stelle einfügen.
 
-   Das Dialogfeld **&lt;properties&gt;** -Element der Datei ähnelt der folgenden Darstellung.
+   Das ** &lt; Properties &gt; ** -Element der Datei ähnelt dem folgenden.
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
    </properties>
    ```
 
-5. Wählen Sie auf der Menüleiste in Editor **Datei**  > **Speichern**aus.
+5. Wählen Sie auf der Menüleiste in Editor die Option **Datei**  >  **Speichern**aus.
 
 6. Navigieren Sie im Dialogfeld **Speichern unter** zu dem Ordner **Desktop** .
 
-7. Wählen Sie in der Liste **Dateityp** die Option **alle&#42;Dateien&#42;(.)** aus.
+7. Wählen Sie in der Liste **Dateityp** die Option **alle Dateien (&#42;. &#42;)** aus.
 
-8. Geben Sie im Feld **Dateiname** **Visual Studio 2010 Tools for Office Runtime.prq**ein, und klicken Sie dann auf die Schaltfläche **Speichern** .
+8. Geben Sie im Feld **Dateiname****Visual Studio 2010 Tools for Office Runtime.prq**ein, und klicken Sie dann auf die Schaltfläche **Speichern** .
 
    > [!NOTE]
    > Stellen Sie sicher, dass Sie **.prq** am Ende des Dateinamens hinzufügen, um diese Datei als erforderliche Datei zu identifizieren.
 
-9. Schließen Sie Editor.
+9. Schließen Sie den Editor.
 
 10. Kopieren Sie in Ihrem **Desktop** Ordner die Datei *Visual Studio 2010 Tools for Office Runtime. prq* in eines der folgenden Verzeichnisse auf dem Computer.
 
-   Für 32-Bit-Betriebssysteme: *%ProgramFiles%\installshield\2013le\setupvoraussetzungen\\*
+   Für 32-Bit-Betriebssysteme: *%ProgramFiles%\installshield\2013le\setupvoraussetzungen \\ *
 
-   Bei 64-Bit-Betriebssystemen: *% Program Files (x86)% \ 2013le \ Setupvoraussetzungen\\*
+   Bei 64-Bit-Betriebssystemen: *% Program Files (x86)% \ 2013le \ Setupvoraussetzungen \\ *
 
 11. Wählen Sie auf der Seite **Verteilbare Komponente** des InstallShield-Projekts die Schaltfläche **Aktualisieren** aus, um die Liste der verteilbaren Komponenten zu aktualisieren, wie in der folgenden Abbildung veranschaulicht.
 
@@ -245,11 +245,11 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
 
 13. Wenn das Dialogfeld angezeigt wird, wählen Sie die Schaltfläche **Nein** aus.
 
-## <a name="Location"></a>Festlegen, wo die Projektmappe auf dem Computer des Benutzers installiert werden soll
+## <a name="specify-where-to-install-the-solution-on-the-users-computer"></a><a name="Location"></a>Festlegen, wo die Projektmappe auf dem Computer des Benutzers installiert werden soll
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Knoten **OfficeAddInSetup** , erweitern Sie den Knoten **Setup organisieren** , und wählen Sie dann die Datei **Allgemeine Informationen** aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
 3. Wählen Sie in der Liste der Eigenschaften die Schaltfläche **Durchsuchen** neben der Eigenschaft **INSTALLDIR** aus.
 
@@ -258,7 +258,7 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
    > [!NOTE]
    > Sie können auch Unterverzeichnisse im Dialogfeld **INSTALLDIR festlegen** erstellen, indem Sie das Kontextmenü für einen beliebigen Ordner in der Liste öffnen.
 
-## <a name="ConfigureRegistry"></a>Konfigurieren eines VSTO-Add-ins
+## <a name="configure-a-vsto-add-in"></a><a name="ConfigureRegistry"></a>Konfigurieren eines VSTO-Add-ins
 
 Sie können festlegen, ob Ihr VSTO-Add-In für alle Benutzer auf dem Computer (pro Computer) installiert wird, oder nur für den Benutzer, der die Installation durchführt (pro Benutzer).
 
@@ -273,7 +273,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , erweitern Sie den Knoten **Setup organisieren** , und wählen Sie dann die Datei **Allgemeine Informationen** aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
    Die Eigenschaften für das Setupprojekt werden angezeigt.
 
@@ -287,7 +287,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 1. Wählen Sie im **Projektmappen-Explorer**den Knoten **Projekt-Assistenten** aus.
 
-   Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+   Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
 2. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsregistrierung** aus, wie in der folgenden Abbildung veranschaulicht.
 
@@ -303,21 +303,21 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
    **Installationsprogramm pro Benutzer**
 
-   **HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
+   **HKEY_CURRENT_USER \software\microsoft\office\excel\addins\samplecompany.ExcelAddIn**
 
    **Installationsprogramme pro Computer basierend auf der Office-Version**
 
 | Office-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |----------------------------| - |
-| 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
-| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 32-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
 
    **Installationsprogramme pro Computer basierend auf der Windows-Version**
 
 | Windows-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |-----------------------------| - |
-| 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
-| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\Software (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 32-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Für ein Installationsprogramm für 64-Bit-Windows sind zwei Registrierungs Pfade erforderlich, da es Benutzern möglich ist, 32-Bit-und 64-Bit-Versionen von Office auf einem Computer auszuführen, auf dem 64-Bit-Windows ausgeführt wird.
@@ -333,7 +333,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 7. Wiederholen Sie diesen Vorgang, um die folgenden Werte zu erstellen.
 
-|Werttyp<br /><br />|-Name<br /><br />|
+|Werttyp<br /><br />|Name<br /><br />|
 |--------------|--------|
 |Zeichenfolgenwert<br /><br />|**FriendlyName**<br /><br />|
 |DWORD-Wert<br /><br />|**LoadBehavior**<br /><br />|
@@ -359,7 +359,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
    Das Dialogfeld **Daten bearbeiten** wird angezeigt.
 
-13. Geben Sie im Textfeld **Wertdaten** **3**ein, und wählen Sie dann die Schaltfläche **OK** aus.
+13. Geben Sie im Textfeld **Wertdaten****3**ein, und wählen Sie dann die Schaltfläche **OK** aus.
 
    Der Wert "3" lädt das VSTO-Add-In beim Starten der Anwendung. Weitere Informationen zu LoadBehavior-Werten finden [Sie unter Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).
 
@@ -367,14 +367,14 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
    Das Dialogfeld **Daten bearbeiten** wird angezeigt.
 
-15. Geben Sie im Textfeld **Wertdaten** **file:///[INSTALLDIR]ExcelAddIn.vsto|vstolocal**ein, und wählen Sie anschließend die Schaltfläche **OK** aus.
+15. Geben Sie im Textfeld **Wertdaten****file:///[INSTALLDIR]ExcelAddIn.vsto|vstolocal**ein, und wählen Sie anschließend die Schaltfläche **OK** aus.
 
    Visual Studio 2010 Tools for Office-Laufzeit verwendet diesen Pfad, um das Bereitstellungsmanifest zu suchen. Der Teil **[INSTALLDIR]** dieses Pfads ist ein Makro, das auf die Eigenschaft **INSTALLDIR** auf der Eigenschaftenseite **Allgemeine Informationen** des InstallShield-Setupprojekts verweist. Diese Eigenschaft gibt den Speicherort auf dem Zielcomputer für die Installation des VSTO-Add-Ins an. Das Suffix **|vstolocal** stellt sicher, dass die Projektmappe aus dem Installationsordner und nicht aus dem ClickOnce-Cache geladen wird.
 
 > [!IMPORTANT]
 > Wenn Sie einen benutzerdefinierten Formular Bereich in einem VSTO-Add-in für Outlook erstellen, müssen Sie weitere Registrierungseinträge erstellen, um die Region bei Outlook zu registrieren. Weitere Informationen finden Sie unter [Registrierungseinträge für Outlook-Formular Bereiche](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries).
 
-## <a name="ConfigureDocument"></a>Configure a document-level customization
+## <a name="configure-a-document-level-customization"></a><a name="ConfigureDocument"></a>Configure a Document-Level Customization
 
 Dieser Abschnitt gilt nur, wenn Sie eine Anpassung auf Dokument Ebene bereitstellen. Wenn Sie ein VSTO-Add-in bereitstellen, können Sie sofort zum Abschnitt [Erstellen des Setup Projekts](#Build) wechseln.
 
@@ -384,7 +384,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 ### <a name="to-create-a-program-that-modifies-document-properties"></a>Erstellen eines Programms, das Dokumenteigenschaften ändert
 
-1. Wählen Sie in der Menüleiste **Datei**  >   > **Neues Projekt** **Hinzufügen** aus.
+1. Wählen Sie in der Menüleiste **Datei**  >  **Hinzufügen**  >  **Neues Projekt**aus.
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
@@ -404,7 +404,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 7. Wählen Sie im **Projektmappen-Explorer**die Datei **Program.cs** (für C#-Anwendungen) oder die Datei **Module1.vb** (für Visual Basic-Anwendungen) aus.
 
-8. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+8. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
 9. Ersetzen Sie den Inhalt der gesamten Inhalt durch den folgenden Code.
 
@@ -417,13 +417,13 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , und wählen Sie dann die Datei **Projekt-Assistent** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Projekt-Assistenten-Datei in Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistentdatei im Projektmappen-Explorer")
+   ![Projekt-Assistentdatei im Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistentdatei im Projektmappen-Explorer")
 
-2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Die Schaltfläche Anwendungs Dateien.](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")
+   ![Die Schaltfläche "Anwendungsdateien".](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")
 
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.
 
@@ -433,7 +433,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 6. Erweitern Sie im **Projektmappen-Explorer**unter dem Knoten **OfficeAddInSetup** den Knoten **Installationsanforderungen und Aktionen definieren** , und wählen Sie dann den Ordner **Benutzerdefinierte Aktionen** aus.
 
-7. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+7. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
    In einem Bereich an der Seite des Bildschirms wird eine Liste der Ereignisse angezeigt.
 
@@ -461,9 +461,9 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
     Der Ordner, der die Projektmappe enthält, wird geöffnet.
 
-13. Öffnen Sie die Projektdatei der Projektmappe in Editor. Für Visual Basic Projekte ist der Name der Datei " *ExcelWorkbook. vbproj*". Für C# -Projekte ist der Name der Datei " *ExcelWorkbook. csproj*".
+13. Öffnen Sie die Projektdatei der Projektmappe in Editor. Für Visual Basic Projekte ist der Name der Datei " *ExcelWorkbook. vbproj*". Für c#-Projekte ist der Name der Datei " *ExcelWorkbook. csproj*".
 
-14. Suchen Sie in der Projektdatei nach dem **&lt;SolutionID &gt;** Element, kopieren Sie den Wert in die Zwischenablage, und schließen Sie dann Editor.
+14. Suchen Sie in der Projektdatei nach dem ** &lt; SolutionId &gt; ** -Element, kopieren Sie den Wert in die Zwischenablage, und schließen Sie dann Editor.
 
     Übergeben Sie diesen Wert in der Konsolen-App als Parameter.
 
@@ -476,13 +476,13 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 16. Ersetzen Sie **Your Solution ID** durch die Projektmappen-ID, die Sie in die Zwischenablage kopiert haben.
 
    > [!IMPORTANT]
-   > Testen Sie das Installationsprogramm, um sicherzustellen, dass die Konsolenanwendung, die diese benutzerdefinierte Aktion ausführt, auf Dokumente im [INSTALLDIR-] Verzeichnis zugreifen kann. Einige Verzeichnisse auf dem Computer des Benutzers erfordern möglicherweise Administrator Zugriff (z. b. das Verzeichnis "Programme"). Wenn Sie Ihre Lösung in einem Verzeichnis bereitstellen, das Administrator Zugriff erfordert, öffnen Sie das Dialogfeld **Eigenschaften** der Datei *Setup. exe* , wählen Sie die Registerkarte **Kompatibilität** aus, und wählen Sie dann die Option **dieses Programm ausführen als aus.** aktivieren Sie das Kontrollkästchen Administrator, bevor Sie das Installationsprogramm verteilen. Wenn Sie nicht möchten, dass Benutzer das Setup Programm mit Administrator Berechtigungen ausführen, legen Sie die [INSTALLDIR]-Eigenschaft auf ein Verzeichnis fest, auf das der Benutzer wahrscheinlich bereits Zugriff hat, wie z. b. das Verzeichnis " **Dokumente** ". Weitere Informationen finden Sie im Abschnitt [angeben, wo die Lösung auf dem Computer des Benutzers installiert werden soll](#Location) in diesem Thema.
+   > Testen Sie das Installationsprogramm, um sicherzustellen, dass die Konsolenanwendung, die diese benutzerdefinierte Aktion ausführt, auf Dokumente im [INSTALLDIR-] Verzeichnis zugreifen kann. Einige Verzeichnisse auf dem Computer des Benutzers erfordern möglicherweise Administrator Zugriff (z. b. das Verzeichnis "Programme"). Wenn Sie die Projekt Mappe in einem Verzeichnis bereitstellen, das Administrator Zugriff erfordert, öffnen Sie das Dialogfeld **Eigenschaften** der Datei *setup.exe* , wählen Sie die Registerkarte **Kompatibilität** , und aktivieren Sie dann das Kontrollkästchen **dieses Programm als Administrator ausführen** , bevor Sie das Installationsprogramm verteilen. Wenn Sie nicht möchten, dass Benutzer das Setup Programm mit Administrator Berechtigungen ausführen, legen Sie die [INSTALLDIR]-Eigenschaft auf ein Verzeichnis fest, auf das der Benutzer wahrscheinlich bereits Zugriff hat, wie z. b. das Verzeichnis " **Dokumente** ". Weitere Informationen finden Sie im Abschnitt [angeben, wo die Lösung auf dem Computer des Benutzers installiert werden soll](#Location) in diesem Thema.
 
-## <a name="Build"></a>Build the setup project
+## <a name="build-the-setup-project"></a><a name="Build"></a>Build the Setup Project
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Knoten **Vorbereiten der Version** , und wählen Sie dann die Datei **Versionen** aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  >  **geöffnet**aus.
 
    Der Explorer für **Builds** wird in einem Seitenbereich geöffnet, damit Sie den Typ der zu erstellenden Version auswählen können.
 
@@ -496,11 +496,11 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 7. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **SingleImage**aus.
 
-8. Wählen Sie in der Tabelle **Projektkontext** in der Spalte **Konfiguration** des Projekts **OfficeAddInSetup** **SingleImage**aus, und aktivieren Sie anschließend die Schaltfläche **Schließen** .
+8. Wählen Sie in der Tabelle **Projektkontext** in der Spalte **Konfiguration** des Projekts **OfficeAddInSetup****SingleImage**aus, und aktivieren Sie anschließend die Schaltfläche **Schließen** .
 
-9. Wählen Sie in der Menüleiste die Option **Erstellen** ,  > **officeaddinsetup erstellen**aus.
+9. Klicken Sie in der Menüleiste auf **Build**  >  **Erstellen officeaddinsetup**.
 
-   Nachdem der Build abgeschlossen wurde, können Sie die Datei " *Setup. exe* " des Projekts **officeaddinsetup** am folgenden Speicherort suchen: <em>officeaddinsetupprojectroot</em> **\officeaddinsetup\express \singleimage\diskimages\disk1 \\**
+   Nachdem der Build abgeschlossen wurde, können Sie die *setup.exe* -Datei des Projekts **officeaddinsetup** am folgenden Speicherort suchen: <em>officeaddinsetupprojectroot</em>**\officeaddinsetup\express \\ \singleimage\diskimages\disk1**
 
 ## <a name="see-also"></a>Siehe auch
 

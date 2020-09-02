@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160402"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
@@ -34,7 +34,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="reference"></a>Referenz  
  Stellt einen Assemblyverweis (verwaltet) im Projekt dar.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |HintPath|Optionale Zeichenfolge. Relativer oder absoluter Pfad der Assembly.|  
 |name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
@@ -46,7 +46,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="comreference"></a>COMReference  
  Stellt einen COM-Komponentenverweis (nicht verwaltet) im Projekt dar.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
 |GUID|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="comfilereference"></a>COMFileReference  
  Stellt eine Liste von Typbibliotheken dar, die an das ResolvedComreference-Ziel übertragen werden.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |WrapperTool|Optionale Zeichenfolge. Der Name des Wrappertools, das auf die Komponente angewendet wird, z. B. "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Stellt eine systemeigene Manifestdatei oder einen Verweis auf eine solche Datei dar.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
 |HintPath|Erforderliche Zeichenfolge. Der relative Pfad der Manifestdatei.|  
@@ -74,7 +74,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="projectreference"></a>ProjectReference  
  Stellt einen Verweis auf ein anderes Projekt dar.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
 |Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="compile"></a>Compile  
  Stellt die Quelldateien für den Compiler dar.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |AutoGen|Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwicklungsumgebung (IDE) generiert wurde.|  
@@ -94,7 +94,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  
@@ -108,7 +108,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="content"></a>Inhalt  
  Stellt Dateien dar, die zwar nicht in das Projekt kompiliert werden, jedoch möglicherweise mit dem Projekt eingebettet oder veröffentlicht werden.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  
@@ -123,7 +123,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="none"></a>Keine  
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.  
   
-|Elementname|BESCHREIBUNG|  
+|Item Name|Beschreibung|  
 |---------------|-----------------|  
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |Generator|Erforderliche Zeichenfolge. Der Name eines die oft ausgegebene Befehlszeilen  Datei-Generators, der über diesem Element ausgeführt wird.|  
@@ -142,5 +142,5 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 ### <a name="import"></a>Importieren  
  Stellt Assemblys dar, deren Namespaces vom [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Compiler importiert werden sollen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Allgemeine MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)

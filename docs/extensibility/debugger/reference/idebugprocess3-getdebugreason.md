@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetDebugReason | Microsoft Docs
+title: 'IDebugProcess3:: getdebugreason | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2fa12b74b44761761a08e232a9f3efa845fa73a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723669"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
@@ -41,11 +41,11 @@ int GetDebugReason(
 
 ## <a name="parameters"></a>Parameter
 `pReason`\
-[out] Gibt einen Wert [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) aus der DEBUG_REASON-Enumeration zurück.
+vorgenommen Gibt einen Wert aus der [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) Enumeration zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md)

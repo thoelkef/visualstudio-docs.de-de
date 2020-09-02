@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329582"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Zusatztasten der Zeichenflächen in Blend
@@ -39,7 +39,7 @@ Einigen Tastenkombinationen sind keine Menüoptionen zugeordnet. Sie können dah
 |Schaltet zwischen geöffneten Dokumenten um|**STRG** + **Tab** drücken|
 |Öffnen Sie den Bereich **Objekte**|**STRG**- + **Zeit** drücken|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Tastenkombinationen](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [Stifttool-Zusatztasten](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

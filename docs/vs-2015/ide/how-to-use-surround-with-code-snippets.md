@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdb635854d298b8a1eabc81019f7b18c2f50eecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670553"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Gewusst wie: Verwenden von umschließenden Codeausschnitten
@@ -30,7 +30,7 @@ In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeau
 
 2. Wählen Sie im Code-Editor den zu umschließenden Text aus.
 
-3. Geben Sie STRG+K, STRG+S ein.
+3. Drücken Sie STRG+K, STRG+S.
 
 4. Wählen Sie mit der Maus einen Codeausschnitt aus der Liste der Codeausschnitte aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB- oder die EINGABETASTE.
 
@@ -58,5 +58,5 @@ In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeau
 
      Alternativ können Sie den Namen des Codeausschnitts eingeben und dann die TAB- oder die EINGABETASTE drücken.
 
-## <a name="see-also"></a>Siehe auch
- [Code Ausschnitt](../ide/reference/code-snippet-picker.md) Auswahl für [ C# Visual Code Ausschnitte](../ide/visual-csharp-code-snippets.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Code Ausschnitt](../ide/reference/code-snippet-picker.md) Auswahl für [Visual c#-Code Ausschnitte](../ide/visual-csharp-code-snippets.md)

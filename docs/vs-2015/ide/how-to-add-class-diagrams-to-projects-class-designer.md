@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1a0d10dabdace7ef7ab3805a59b892548cf6556
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645517"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)
@@ -38,7 +38,7 @@ Fügen Sie Ihrem Projekt in Visual C# .NET, Visual Basic .NET oder C++ ein Klass
 
 ### <a name="to-add-a-class-diagram-based-on-existing-types"></a>So fügen Sie ein auf vorhandenen Typen basierendes Klassendiagramm hinzu
 
-1. Öffnen Sie im Projektmappen-Explorer das Klassendatei-Kontextmenü, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.
+1. Öffnen Sie in Projektmappen-Explorer das Klassendatei-Kontextmenü, und wählen Sie dann **Klassendiagramm anzeigen**aus.
 
      - oder -
 
@@ -46,9 +46,9 @@ Fügen Sie Ihrem Projekt in Visual C# .NET, Visual Basic .NET oder C++ ein Klass
 
 ### <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>So zeigen Sie alle Inhalte eines Projekts in einem Klassendiagramm an
 
-1. Klicken Sie im Projektmappen-Explorer oder in der Klassenansicht mit der rechten Maustaste auf das Projekt, und wählen Sie **Anzeigen** und anschließend **Klassendiagramm anzeigen** aus.
+1. Klicken Sie in Projektmappen-Explorer oder Klassenansicht mit der rechten Maustaste auf das Projekt, und wählen Sie **Ansicht**und dann **Klassendiagramm anzeigen**aus.
 
      Daraufhin wird ein automatisch ausgefülltes Klassendiagramm erstellt.
 
-## <a name="see-also"></a>Siehe auch
- Gewusst [wie: Erstellen von Typen mithilfe Klassen-Designer](../ide/how-to-create-types-by-using-class-designer.md) Gewusst [wie: Anzeigen vorhandener Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md) [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md) [Arbeiten mit Klassendiagrammen ( Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>Weitere Informationen
+ Gewusst [wie: Erstellen von Typen mithilfe Klassen-Designer Gewusst](../ide/how-to-create-types-by-using-class-designer.md) [wie: Anzeigen vorhandener Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md) [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md) [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)

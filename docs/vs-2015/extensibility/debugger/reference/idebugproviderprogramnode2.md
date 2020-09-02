@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a81668d5c45dd4b3363821972914e3f9dc10266a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692214"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle marshallt Programm sammlungsbezogene Schnittstellen über Prozessgrenzen hinweg.  
+Diese Schnittstelle Marshalls programmbezogene Schnittstellen über Prozess Grenzen hinweg.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,28 +31,28 @@ IDebugProviderProgramNode2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle für das gleiche Objekt, das implementiert [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Marshalling Schnittstellen über Prozessgrenzen hinweg zu unterstützen.  
+ Die Debug-Engine (de) implementiert diese Schnittstelle für das gleiche Objekt, das [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) implementiert, um das Marshalling von Schnittstellen über Prozess Grenzen hinweg zu unterstützen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf eine `IDebugProgramNode2` Schnittstelle, um diese Schnittstelle zu erhalten. Wenn diese Schnittstelle kann nicht abgerufen werden, unterstützt die DE kein Marshalling von Schnittstellen.  
+ Rufen Sie [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für eine `IDebugProgramNode2` Schnittstelle auf, um diese Schnittstelle zu erhalten. Wenn diese Schnittstelle nicht abgerufen werden kann, unterstützt das ' de ' kein Marshalling von-Schnittstellen.  
   
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge  
  Diese Schnittstelle implementiert die folgende Methode:  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg.|  
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ruft eine angegebene Schnittstelle über Prozess Grenzen ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle wird implementiert, wenn die DE aus der zu debuggende Programm wird in einem separaten Prozessbereich ausgeführt wird: z. B. wenn die DE in den Prozessbereich der Visual Studio anstelle von den Prozessbereich der gedebuggten Programm ausgeführt wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Schnittstelle wird implementiert, wenn die de in einem separaten Prozessbereich des Programms ausgeführt wird, das gedebuggt wird, z. b., wenn die "de" im Visual Studio-Prozessbereich statt des Prozess Raums des Programms ausgeführt wird, das gedebuggt wird.  
   
-## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+## <a name="requirements"></a>Requirements (Anforderungen)  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

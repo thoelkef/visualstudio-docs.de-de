@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs | Microsoft-Dokumentation
+title: Idiaenumsectioncontrisb | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cfcd02514e57a5ee3d8af1fac87ba9aa06487b07
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687179"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Listet die verschiedenen Abschnitt Beiträge, die in der Datenquelle enthalten sind.  
+Listet die verschiedenen Abschnitts Beiträge auf, die in der Datenquelle enthalten sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,25 +32,25 @@ IDiaEnumSectionContribs : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDiaEnumSectionContribs`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDiaEnumSectionContribs` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) Version von diesem Enumerator.|  
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Ruft die Anzahl der im Abschnitt Beiträge ab.|  
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Ruft den Abschnitt Beiträge über einen Index ab.|  
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Ruft eine angegebene Anzahl von Abschnitt Beiträge in der Enumerationsfolge ab.|  
-|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Überspringt eine angegebene Anzahl von Abschnitt Beiträge in einer Enumerationsfolge.|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Ruft die Version der [IEnumVARIANT-Schnittstelle](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) dieses Enumerators ab.|  
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Ruft die Anzahl der Abschnitts Beiträge ab.|  
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Ruft Abschnitts Beiträge mithilfe eines Indexes ab.|  
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Ruft eine angegebene Anzahl von Abschnitts Beiträgen in der enumerationssequenz ab.|  
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Überspringt eine angegebene Anzahl von Abschnitts Beiträgen in einer enumerationssequenz.|  
 |[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
 |[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
 ## <a name="note-for-callers"></a>Hinweis für Aufrufer  
- Rufen Sie diese Schnittstelle aus der [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) Methode. Siehe das Beispiel für Details.  
+ Rufen Sie diese Schnittstelle von der [IDiaSession:: getenumschlag Tables](../../debugger/debug-interface-access/idiasession-getenumtables.md) -Methode ab. Detail finden Sie in dem Beispiel.  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt, wie Sie erhalten (das `GetEnumSectionContribs` Funktion), und verwenden (die `ShowSectionContribs` Funktion) der `IDiaEnumSectionContribs` Schnittstelle. Ein vollständigeres Beispiel der Verwendung von Abschnitt Beiträge, finden Sie unter den [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) Schnittstelle.  
+ Dieses Beispiel zeigt, wie Sie `GetEnumSectionContribs` die-Schnittstelle (die-Funktion) abrufen und (die- `ShowSectionContribs` Funktion) verwenden `IDiaEnumSectionContribs` . Ein ausführeres Beispiel für die Verwendung von Abschnitts Beiträgen finden Sie unter [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) -Schnittstelle.  
   
 ```cpp#  
   
@@ -105,11 +105,11 @@ void ShowSectionContribs(IDiaSession *pSession)
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [IDiaSession:: getenumschlag Tables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

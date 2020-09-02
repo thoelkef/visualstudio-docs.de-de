@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Einstellungskategorie | Microsoft-Dokumentation
+title: Erstellen einer Einstellungs Kategorie | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695021"
 ---
 # <a name="creating-a-settings-category"></a>Erstellen einer Einstellungskategorie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual Studio-Einstellungen und zum Speichern von Werten, und Werte aus einer Datei wiederherstellen. Eine Einstellungskategorie ist eine Gruppe von verwandten Eigenschaften, die als ein "benutzerdefinierter einstellungspunkt"; d. h. als Kontrollkästchen in der **Einstellungen importieren und Exporte** Assistenten. (Sie finden es auf die **Tools** Menü.) Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und der einzelne Einstellungen werden im Assistenten nicht angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+In dieser exemplarischen Vorgehensweise erstellen Sie eine Visual Studio-Einstellungs Kategorie und verwenden Sie, um Werte zu speichern und Werte aus einer Einstellungsdatei wiederherzustellen. Eine Einstellungs Kategorie ist eine Gruppe verwandter Eigenschaften, die als "benutzerdefinierter Einstellungs Punkt" angezeigt werden. Das heißt, als Kontrollkästchen im Assistenten zum **importieren und Exportieren von Einstellungen** . (Sie finden es **im Menü Extras** .) Einstellungen werden als Kategorie gespeichert oder wieder hergestellt, und die einzelnen Einstellungen werden im Assistenten nicht angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Erstellen eine Einstellungskategorie durch Ableiten von der <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse.  
+ Sie erstellen eine Einstellungs Kategorie, indem Sie Sie von der- <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse ableiten.  
   
- Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im ersten Abschnitt des [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md). Die resultierende Eigenschaftenraster für Serveroptionen können Sie die untersuchen und ändern Sie die Eigenschaften in der Kategorie. Nachdem Sie die Eigenschaftenkategorie in einer Datei speichern, untersuchen Sie die Datei aus, um anzuzeigen, wie Eigenschaftswerte gespeichert werden.  
+ Um diese exemplarische Vorgehensweise zu starten, müssen Sie zuerst den ersten Abschnitt der [Seite Erstellen einer Options Seite](../extensibility/creating-an-options-page.md)ausführen. Mit dem Eigenschaften Raster resultierende Optionen können Sie die Eigenschaften in der Kategorie überprüfen und ändern. Nachdem Sie die Eigenschaften Kategorie in einer Einstellungsdatei gespeichert haben, untersuchen Sie die Datei, um zu sehen, wie die Eigenschaftswerte gespeichert werden.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
- Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-settings-category"></a>Erstellen einer Einstellungskategorie  
- In diesem Abschnitt verwenden Sie einen benutzerdefinierten einstellungspunkts zu speichern, die Werte der Einstellungskategorie wiederherstellen.  
+ In diesem Abschnitt verwenden Sie einen benutzerdefinierten Einstellungs Punkt, um die Werte der Kategorie Einstellungen zu speichern und wiederherzustellen.  
   
-#### <a name="to-create-a-settings-category"></a>Zum Erstellen einer Einstellungskategorie  
+#### <a name="to-create-a-settings-category"></a>So erstellen Sie eine Einstellungs Kategorie  
   
-1. Abschließen der [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md).  
+1. Vervollständigen Sie die [Seite Erstellen einer](../extensibility/creating-an-options-page.md)Option.  
   
-2. Öffnen Sie die VSPackage.resx-Datei, und fügen Sie diese drei Zeichenfolgenressourcen hinzu:  
+2. Öffnen Sie die Datei "VSPackage. resx", und fügen Sie diese drei Zeichen folgen Ressourcen hinzu:  
   
     |Name|Wert|  
     |----------|-----------|  
     |106|Meine Kategorie|  
     |107|Meine Einstellungen|  
-    |108|OptionInteger und OptionFloat|  
+    |108|OptionInteger und optionfloat|  
   
-     Dadurch wird die Ressourcen erstellt, diesem Namen der Kategorie "My Category", Objekt "My Settings" und die Beschreibung der Kategorien "OptionInteger und OptionFloat".  
+     Dadurch werden Ressourcen erstellt, die die Kategorie "My Category", das Objekt "My Settings" und die Kategoriebeschreibung "OptionInteger" und "optionfloat" benennen.  
   
     > [!NOTE]
-    > Dieser drei wird nur die Namen der Kategorie nicht im Assistenten Einstellungen importieren und Exportieren angezeigt.  
+    > Von diesen drei wird nur der Kategoriename im Assistenten zum Importieren und Exportieren von Einstellungen angezeigt.  
   
-3. MyToolsOptionsPackage.cs, Hinzufügen einer `float` Eigenschaft mit dem Namen `OptionFloat` auf die `OptionPageGrid` Klasse, wie im folgenden Beispiel gezeigt.  
+3. Fügen Sie in MyToolsOptionsPackage.cs `float` der-Klasse eine Eigenschaft `OptionFloat` mit dem Namen hinzu `OptionPageGrid` , wie im folgenden Beispiel gezeigt.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -77,51 +77,51 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual 
     ```  
   
     > [!NOTE]
-    > Die `OptionPageGrid` Kategorie mit dem Namen "My Category" ist jetzt besteht aus den zwei Eigenschaften, `OptionInteger` und `OptionFloat`.  
+    > Die `OptionPageGrid` Kategorie mit dem Namen "My Category" besteht nun aus den beiden Eigenschaften `OptionInteger` und `OptionFloat` .  
   
-4. Hinzufügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die `MyToolsOptionsPackage` -Klasse und weisen Sie ihm die CategoryName "My Category", geben sie den Objektnamen "My Settings" und IsToolsOptionPage auf "true" festgelegt. Legen Sie die CategoryResourceID, ObjectNameResourceID und DescriptionResourceID, auf die entsprechenden Zeichenfolgenressource, die IDs zuvor erstellt haben.  
+4. Fügen Sie der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `MyToolsOptionsPackage` -Klasse einen hinzu, und geben Sie ihm den CategoryName "My Category", den ObjectName "My Settings" und istoolsoptionpage auf true fest. Legen Sie "categoryresourceid", "objectnameresourceid" und "descriptionresourceid" auf die entsprechenden zuvor erstellten Zeichen folgen Ressourcen-IDs fest.  
   
     ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5. Erstellen Sie das Projekt, und starten Sie das Debugging. In der experimentellen Instanz sollte angezeigt werden, **Meine Rasterseite** verfügt jetzt über Ganzzahl- und Float-Werte.  
+5. Erstellen Sie das Projekt, und starten Sie das Debugging. In der experimentellen Instanz sollten Sie sehen, dass **meine Raster Seite** nun sowohl ganzzahlige als auch float-Werte enthält.  
   
-## <a name="examining-the-settings-file"></a>Untersuchen die Einstellungsdatei  
- In diesem Abschnitt exportieren Sie Eigenschaftswerte für die Kategorie, in eine Datei. Sie untersuchen Sie die Datei und importieren Sie dann die Werte wieder in die Eigenschaftskategorie.  
+## <a name="examining-the-settings-file"></a>Überprüfen der Einstellungsdatei  
+ In diesem Abschnitt Exportieren Sie Eigenschafts Kategoriewerte in eine Einstellungsdatei. Sie untersuchen die Datei und importieren dann die Werte wieder in die Eigenschaften Kategorie.  
   
-1. Starten Sie das Projekt durch Drücken von F5 im Debugmodus befindet. Dadurch wird die experimentelle Instanz gestartet.  
+1. Starten Sie das Projekt im Debugmodus, indem Sie F5 drücken. Dadurch wird die experimentelle Instanz gestartet.  
   
-2. Öffnen der **Extras / Optionen** Dialogfeld.  
+2. Öffnen Sie das Dialogfeld Extras **/Optionen** .  
   
-3. Erweitern Sie in der Strukturansicht im linken Bereich **My Category** , und klicken Sie dann auf **Meine Rasterseite**.  
+3. Erweitern Sie in der Strukturansicht im linken Bereich **Meine Kategorie** , und klicken Sie dann auf **meine Raster Seite**.  
   
-4. Ändern Sie den Wert der **OptionFloat** zu 3,1416 und **OptionInteger** bis 12. Klicken Sie auf **OK**.  
+4. Ändern Sie den Wert von **optionfloat** in 3,1416 und **OptionInteger** in 12. Klicken Sie auf **OK**.  
   
 5. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.  
   
-     Die **Einstellungen importieren und exportieren** -Assistent wird angezeigt.  
+     Der Assistent zum **importieren und Exportieren von Einstellungen** wird angezeigt.  
   
-6. Stellen Sie sicher, dass **ausgewählte umgebungseinstellungen exportieren** ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+6. Stellen Sie sicher, dass **Ausgewählte Umgebungseinstellungen exportieren** ausgewählt ist, und klicken Sie dann auf **weiter**.  
   
-     Die **Einstellungen für den Export** Seite wird angezeigt.  
+     Die Seite **Einstellungen für den Export auswählen** wird angezeigt.  
   
-7. Klicken Sie auf **Meine Einstellungen**.  
+7. Klicken Sie auf **meine Einstellungen**.  
   
-     Die **Beschreibung** Änderungen an **OptionInteger und OptionFloat**.  
+     Die **Beschreibung** ändert sich zu " **OptionInteger" und "optionfloat**".  
   
-8. Stellen Sie sicher, dass **Meine Einstellungen** ist die einzige Kategorie, die ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+8. Stellen Sie sicher, dass **meine Einstellungen** die einzige Kategorie ist, die ausgewählt ist, und klicken Sie dann auf **weiter**.  
   
-     Die **Name der Datei** Seite wird angezeigt.  
+     Die Seite **Name der Einstellungsdatei** wird angezeigt.  
   
-9. Benennen Sie die neue Einstellungsdatei `MySettings.vssettings` und speichern Sie ihn in ein geeignetes Verzeichnis. Klicken Sie auf **Fertig stellen**.  
+9. Benennen Sie die neue Einstellungsdatei, `MySettings.vssettings` und speichern Sie Sie in einem entsprechenden Verzeichnis. Klicken Sie auf **Fertig stellen**.  
   
-     Die **vollständige exportieren** Seite gibt an, dass die Einstellungen erfolgreich exportiert wurden.  
+     Die Seite **Export Complete (exportieren abgeschlossen** ) meldet, dass die Einstellungen erfolgreich exportiert wurden.  
   
-10. Auf der **Datei** Startmenü **öffnen**, und klicken Sie dann auf **Datei**. Suchen Sie `MySettings.vssettings` und öffnen Sie sie.  
+10. Zeigen Sie im Menü **Datei** auf **Öffnen**, und klicken Sie dann auf **Datei**. Suchen `MySettings.vssettings` und öffnen Sie die Datei.  
   
-     Sie finden die Eigenschaftenkategorie, die Sie im folgenden Abschnitt der Datei exportiert haben (Ihr GUIDs werden abweichen).  
+     Die Eigenschaften Kategorie, die Sie exportiert haben, finden Sie im folgenden Abschnitt der Datei (Ihre GUIDs unterscheiden sich).  
   
     ```  
     <Category name="My Category_My Settings"   
@@ -134,24 +134,24 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual 
     </Category>  
     ```  
   
-     Beachten Sie, dass das Hinzufügen von einem Unterstrich, um den Namen der Kategorie, gefolgt vom Objektnamen den Namen der vollständigen Kategorie gebildet wird. OptionFloat und OptionInteger werden in der Kategorie, zusammen mit ihren exportierten Werten.  
+     Beachten Sie, dass der vollständige Kategoriename durch Hinzufügen eines Unterstrichs zum Kategorienamen, gefolgt vom Objektnamen, gebildet wird. Optionfloat und OptionInteger werden in der Kategorie sowie die exportierten Werte angezeigt.  
   
-11. Schließen Sie die Einstellungsdatei, ohne ihn zu ändern.  
+11. Schließen Sie die Einstellungsdatei, ohne Sie zu ändern.  
   
-12. Auf der **Tools** Menü klicken Sie auf **Optionen**, erweitern Sie **My Category**, klicken Sie auf **Meine Rasterseite** und ändern Sie den Wert der  **OptionFloat** 1,0 und **OptionInteger** auf 1. Klicken Sie auf **OK**.  
+12. Klicken Sie **im Menü Extras** auf **Optionen**, erweitern Sie **Meine Kategorie**, klicken Sie auf **meine Raster Seite** , und ändern Sie dann den Wert von **optionfloat** in 1,0 und **OptionInteger** in 1. Klicken Sie auf **OK**.  
   
-13. Auf der **Tools** Menü klicken Sie auf **Einstellungen importieren und exportieren**Option **ausgewählte umgebungseinstellungen importieren**, und klicken Sie dann auf **Weiter**.  
+13. Klicken Sie **im Menü Extras** auf **Einstellungen importieren und exportieren**, wählen Sie **Ausgewählte Umgebungseinstellungen importieren**aus, und klicken Sie dann auf **weiter**.  
   
-     Die **aktuelle Einstellungen speichern** Seite wird angezeigt.  
+     Die Seite **Aktuelle Einstellungen speichern** wird angezeigt.  
   
-14. Wählen Sie **Nein, neue Einstellungen importieren** , und klicken Sie dann auf **Weiter**.  
+14. Wählen Sie **Nein, nur neue Einstellungen importieren aus,** und klicken Sie dann auf **weiter**.  
   
-     Die **wählen eine Sammlung von Einstellungen für den Import** Seite wird angezeigt.  
+     Die Seite **Sammlung der zu importierenden Einstellungen auswählen** wird angezeigt.  
   
-15. Wählen Sie die `MySettings.vssettings` Datei die **Meine Einstellungen** Knoten der Strukturansicht. Wenn die Datei nicht in der Strukturansicht angezeigt wird, klicken Sie auf **Durchsuchen** finden sie. Klicken Sie auf **Weiter**.  
+15. Wählen Sie die `MySettings.vssettings` Datei im Knoten **eigene Einstellungen** der Strukturansicht aus. Wenn die Datei nicht in der Strukturansicht angezeigt wird, klicken Sie auf **Durchsuchen** , und suchen Sie Sie. Klicken Sie auf **Weiter**.  
   
-     Die **wählen Sie Einstellungen für den Import** Dialogfeld wird angezeigt.  
+     Das Dialogfeld **zu importierende Einstellungen auswählen** wird angezeigt.  
   
-16. Stellen Sie sicher, dass **Meine Einstellungen** ausgewählt ist, und klicken Sie dann auf **Fertig stellen**. Wenn die **Importvorgang abgeschlossen** klicken Sie mit der Seite angezeigt wird, auf **schließen**.  
+16. Stellen Sie sicher, dass **meine Einstellungen** ausgewählt ist, und klicken Sie dann auf **Fertig**stellen. Wenn die Seite **Import Vorgang abgeschlossen** angezeigt wird, klicken Sie auf **Schließen**.  
   
-17. Auf der **Tools** Menü klicken Sie auf **Optionen**, erweitern Sie **My Category**, klicken Sie auf **Meine Rasterseite** und stellen Sie sicher, dass die Eigenschaftswerte für die Kategorie haben wurde wiederhergestellt.
+17. Klicken Sie **im Menü Extras** auf **Optionen**, erweitern Sie **Meine Kategorie**, klicken Sie auf **meine Raster Seite** , und überprüfen Sie, ob die Werte der Eigenschaften Kategorie wieder hergestellt wurden.

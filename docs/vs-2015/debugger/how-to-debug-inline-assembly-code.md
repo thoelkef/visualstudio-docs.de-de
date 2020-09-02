@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von Inline-Assemblycode | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Debuggen von Inlineassemblycode | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0dde41d1ccee5b63c5cd84862ba4f4ffe51745d2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696246"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Vorgehensweise: Debuggen von Inline-Assemblycode
@@ -44,6 +44,6 @@ HINWEIS]
   
 2. Zum Anzeigen von Registerinhalten verwenden Sie das Fenster **Register**.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

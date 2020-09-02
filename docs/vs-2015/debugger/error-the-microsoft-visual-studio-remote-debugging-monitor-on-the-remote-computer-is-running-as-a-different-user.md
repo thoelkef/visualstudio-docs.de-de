@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Die Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer ausgeführt wird, als ein anderer Benutzer | Microsoft-Dokumentation'
+title: 'Fehler: die Microsoft Visual Studio Remotedebugmonitor auf dem Remote Computer wird als anderer Benutzer ausgeführt | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dffaafbca80828a7501f5f7d24e525225284f5a8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697310"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer wird als anderer Benutzer ausgeführt
@@ -47,8 +47,8 @@ Wenn Sie versuchen, Remotedebuggen auszuführen, wird möglicherweise folgende F
 > [!CAUTION]
 > Indem anderen Benutzern die Berechtigung zum Herstellen einer Verbindung gewährt wird, besteht die Möglichkeit, dass unbeabsichtigt eine Verbindung mit der falschen Remotedebugsitzung hergestellt wird. Das Debuggen im Modus **Keine Authentifizierung** ist immer unsicher und sollte daher nur mit Vorsicht verwendet werden.  
   
- Weitere Informationen finden Sie unter [Starten des Remotedebugmonitors](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
+ Weitere Informationen finden Sie unter [Starten der Remotedebugmonitor](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
   
-## <a name="see-also"></a>Siehe auch  
- [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Remote Debugging-Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

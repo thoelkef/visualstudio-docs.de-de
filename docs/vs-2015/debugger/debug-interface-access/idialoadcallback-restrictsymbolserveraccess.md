@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fddf9812810e7d184859f60d98f51000b824092a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150591"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bestimmt, ob der Zugriff auf einen anderen Symbolserver zugelassen wird, um Symbole aufzulösen.  
+Bestimmt, ob der Zugriff auf einen Symbol Server zum Auflösen von Symbolen zulässig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,10 +32,10 @@ HRESULT RestrictSymbolServerAccess();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Code als Rückgabewert `S_OK` verhindert die Verwendung von einem Symbolserver Symbole auflösen.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein anderer Rückgabecode als `S_OK` verhindert die Verwendung eines Symbol Servers zum Auflösen von Symbolen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

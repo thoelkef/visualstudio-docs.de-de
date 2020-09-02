@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden einer Schnellansicht | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden einer Schnellansicht | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -24,23 +24,23 @@ caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446435"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64778374"
 ---
-# <a name="how-to-use-a-visualizer"></a>Vorgehensweise: Verwenden einer Schnellansicht
-Sie können den Inhalt einer Variable oder eines Objekts mithilfe einer Schnellansicht in einer für den Datentyp sinnvollen Art anzeigen. Können Schnellansichten über **DataTips**, **Überwachen** Fenster die **"Auto"** Fenster oder die **"lokal"** Fenster.  
+# <a name="how-to-use-a-visualizer"></a>Gewusst wie: Verwenden einer Schnellansicht
+Sie können den Inhalt einer Variable oder eines Objekts mithilfe einer Schnellansicht in einer für den Datentyp sinnvollen Art anzeigen. Sie können Visualisierungen über **DataTips**, ein **Überwachungs** Fenster, das Fenster Auto oder **das Fenster Lokal** verwenden **Locals** .  
   
  Schnellansichten werden in Compact Framework nicht unterstützt.  
   
 > [!NOTE]
-> In **Store** apps, die nur den Standardtext, HTML, XML und JSON-Schnellansichten werden unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
+> In **Store** -apps werden nur die standardmäßigen Text-, HTML-, XML-und JSON-Visualisierungen unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
   
 ### <a name="to-open-a-visualizer"></a>So öffnen Sie eine Schnellansicht  
   
-1. Klicken Sie auf das Lupensymbol neben einem Variablennamen in **DataTips**, **Watch** Fenster oder in der **"Auto"**, **"lokal"**, oder **Schnellansicht** Fenster.  
+1. Klicken Sie auf das Lupensymbol, das neben einem Variablennamen in **DataTips**, einem **Überwachungs** Fenster oder im Fenster **Auto, lokal**oder **schnell Überwachung** angezeigt wird. **Locals**  
   
      Eine Liste von Schnellansichten wird angezeigt.  
   
@@ -54,12 +54,12 @@ Sie können den Inhalt einer Variable oder eines Objekts mithilfe einer Schnella
   
      *Visual Studio-Installationspfad* `\Common7\Packages\Debugger\Visualizers`  
   
-     - oder -   
+     - oder -  
   
-     `My Documents\Visual Studio 2010\Visualizers` *Visual Studio Version* `\Visualizers`  
+     `My Documents\Visual Studio 2010\Visualizers`*Visual Studio-Version*`\Visualizers`  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
- [Vorgehensweise: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)   
- [Vorgehensweise: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen von benutzerdefinierten Visualisierungen](../debugger/create-custom-visualizers-of-data.md)   
+ [Gewusst wie: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)   
+ [Gewusst wie: Schreiben einer Schnellansicht](../debugger/how-to-write-a-visualizer.md)   
  [Anzeigen von Datenwerten als Datentipps](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

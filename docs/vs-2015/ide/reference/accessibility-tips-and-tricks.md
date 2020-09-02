@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b4c7777600f66f4044588ccae91910143e567f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670246"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
@@ -35,21 +35,21 @@ ms.locfileid: "72670246"
 |BESCHREIBUNG|Tastenkombination|
 |-----------------|---------------------|
 |Hohen Kontrast ein- und ausschalten|LINKE **ALT-TASTE+LINKE UMSCHALTTASTE+DRUCK**|
-|Kontrollkästchens in einem Dialogfeld aktivieren oder deaktivieren|**LEERTASTE**|
-|Eigenschaften des ausgewählten Elements anzeigen. Setzt beispielsweise den Fokus auf das Eigenschaftenfenster, wenn ein Formular ausgewählt ist, oder öffnet das Dialogfeld „Eigenschaftenseite“, wenn ein Projekt ausgewählt ist.|**ALT+EINGABE**|
+|Kontrollkästchens in einem Dialogfeld aktivieren oder deaktivieren|**Leertaste**|
+|Eigenschaften des ausgewählten Elements anzeigen. Setzt beispielsweise den Fokus auf das Eigenschaftenfenster, wenn ein Formular ausgewählt ist, oder öffnet das Dialogfeld „Eigenschaftenseite“, wenn ein Projekt ausgewählt ist.|**ALT + EINGABETASTE**|
 |Elemente der aktiven Liste, z.B. einer Dropdownliste, in einem Dialogfeld anzeigen|**ALT** + NACH-UNTEN-TASTE|
-|Elemente in einer aktiven Dropdownliste in einem Raster anzeigen|**UMSCHALT** + **ALT** + **NACH-UNTEN-TASTE**|
+|Elemente in einer aktiven Dropdownliste in einem Raster anzeigen|**UMSCHALT**  +  **Alt**  +  **Pfeil nach unten**|
 
 ## <a name="hidden-visual-studio-shortcut-key-combinations"></a>Ausgeblendete Visual Studio-Tastenkombinationen
  Für einige Features stehen Tastenkombinationen zur Verfügung, die nicht im Bereich „Umgebung/Tastatur“ des Dialogfelds „Optionen“ aufgeführt sind. Zu diesen Tastenkombinationen gehören:
 
-|Feature|BESCHREIBUNG|Tastenkombination|
+|Funktion|BESCHREIBUNG|Tastenkombination|
 |-------------|-----------------|---------------------|
-|Fenster "Toolbox"|Zwischen Toolboxregisterkarten wechseln|**STRG** + **NACH-OBEN-TASTE**<br /><br /> und<br /><br /> **STRG** + **NACH-UNTEN-TASTE**|
-|Fenster „Toolbox“|Ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzufügen|**EINGABETASTE**|
-|Tastatur, Umgebung, Dialogfeld „Optionen“|Tastenkombination löschen, die unter **Tastenkombination drücken** eingegeben wurde|**RÜCKTASTE**|
-|Alle Toolfenster|Erste Schaltfläche in der Symbolleiste des Fensters auswählen|**UMSCHALT** + **ALT**|
+|Fenster „Toolbox“|Zwischen Toolboxregisterkarten wechseln|**STRG**  +  **Uüber Row**<br /><br /> und<br /><br /> **STRG**  +  **Pfeil nach unten**|
+|Fenster „Toolbox“|Ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzufügen|**Eingehen**|
+|Tastatur, Umgebung, Dialogfeld „Optionen“|Tastenkombination löschen, die unter **Tastenkombination drücken** eingegeben wurde|**Rücktaste**|
+|Alle Toolfenster|Erste Schaltfläche in der Symbolleiste des Fensters auswählen|**UMSCHALT**  +  **Alt**|
 |IDE-Symbolleisten|Erste Schaltfläche in der Standardsymbolleiste auswählen|**ALT**, **STRG** + **TAB** **Hinweis:** Drücken Sie **STRG** + **TAB** erneut, um die erste Schaltfläche in der nächsten IDE-Symbolleiste auszuwählen.|
 
-## <a name="see-also"></a>Siehe auch
- [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Barrierefreiheitsfunktionen in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

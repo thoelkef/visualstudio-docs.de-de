@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151008"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Beispiele für plattformübergreifende mobile Entwicklung
@@ -53,4 +53,4 @@ Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entw
   
   Um eines der Beispiele in Visual Studio öffnen, laden Sie die ZIP-Datei herunter, und öffnen Sie im Explorer die **Eigenschaften** -Seite der heruntergeladenen Datei. Wählen Sie die Schaltfläche **Zulassen** aus, und wählen Sie dann **OK**aus. Extrahieren Sie den Inhalt der ZIP-Datei in einem geeigneten Speicherort, öffnen Sie den C++-Ordner im extrahierten Beispiel, und öffnen Sie die Projektmappendatei.  
   
-  Um das Beispiel zu erstellen, drücken Sie F7, oder wählen Sie auf der Menüleiste den Befehl **Erstellen**, **Projektmappe erstellen**aus.
+  Um das Beispiel zu erstellen, drücken Sie F7, oder wählen Sie in der Menüleiste **Erstellen**, Projekt Mappe **Erstellen**aus.

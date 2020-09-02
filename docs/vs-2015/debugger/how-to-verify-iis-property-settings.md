@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac2ce4f823d82d8a0d8569e15c4ba8920d91d36c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686832"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Vorgehensweise: Überprüfen von IIS-Eigenschafteneinstellungen
@@ -37,7 +37,7 @@ Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>So überprüfen Sie die IIS-Einstellungen der Webanwendung  
   
-1. Öffnen der **Verwaltung** Fenster: Auf der **starten** Startmenü **Programme**, und klicken Sie dann auf **Verwaltung**. Falls der Eintrag **Verwaltung** nicht im Menü **Programme** vorhanden ist, befindet er sich in der **Systemsteuerung**.  
+1. Öffnen Sie das Fenster **Verwaltungstools**: Zeigen Sie im Menü **Start** auf **Programme**, und klicken Sie dann auf **Verwaltungstools**. Falls der Eintrag **Verwaltung** nicht im Menü **Programme** vorhanden ist, befindet er sich in der **Systemsteuerung**.  
   
     - Unter Windows 2000 klicken Sie auf **Internetdienste-Manager**.  
   
@@ -61,7 +61,7 @@ Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool
   
     3. Klicken Sie auf **OK**, um das Dialogfeld **Authentifizierungsmethoden** zu schließen.  
   
-5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Ordnen Sie DEBUG-Verb, mit der Erweiterung](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5. Bei ATL-Serveranwendungen müssen Sie sicherstellen, dass das Verb DEBUG mit der ISAPI-Erweiterung verknüpft ist. Weitere Informationen finden Sie unter [Vorgehensweise: Zuordnen des DEBUG-Verbs zur Erweiterung](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
 6. Stellen Sie bei einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung sicher, dass für das virtuelle Verzeichnis der Anwendung in **Internetinformationsdienste-Manager**, **Internetdienste-Manager** bzw. **Internetinformationsdienste** ein Anwendungsname festgelegt ist.  
   
@@ -79,5 +79,5 @@ Sie können die Eigenschaften für eine Webanwendung mit dem IIS-Verwaltungstool
   
 9. Klicken Sie auf **OK**, um das Dialogfeld **Internetinformationsdienste-Manager**, **Internetdienste-Manager** bzw. **Internetinformationsdienste** zu schließen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Problembehandlung](../debugger/debugging-web-applications-troubleshooting.md)

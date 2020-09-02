@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Microsoft-Dokumentation
+title: 'IDiaStackWalkHelper:: Read Memory | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bef01cd29bb2312bd682f2f1f1150ee78da293e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150059"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Liest einen Block von Daten aus der ausführbaren Datei Image im Arbeitsspeicher.  
+Liest einen Datenblock aus dem Image der ausführbaren Datei im Arbeitsspeicher.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,23 +39,23 @@ HRESULT readMemory( 
   
 #### <a name="parameters"></a>Parameter  
  `type`  
- [in] Ein Wert aus der [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) Enumeration, die den Typ des Arbeitsspeichers zu lesen.  
+ in Ein Wert aus der [MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) -enumerationsenumeration, der den Typ des zu lesenden Speichers angibt.  
   
  va  
- [in] Virtuelle Adresse in das Image aus dem gelesen werden soll.  
+ in Die virtuelle Adresse im Abbild, ab der der Lesevorgang begonnen werden soll.  
   
  `cbData`  
- [in] Die Größe des Datenpuffers in Byte.  
+ in Die Größe des Daten Puffers in Bytes.  
   
  `pcbData`  
- [out] Gibt die Anzahl der tatsächlich gelesenen Bytes. Wenn `pbData` ist `NULL`, ist dies die Gesamtanzahl der Bytes der Daten zur Verfügung.  
+ vorgenommen Gibt die Anzahl der tatsächlich gelesenen Bytes zurück. Wenn `pbData` ist `NULL` , dann ist dies die Gesamtanzahl der verfügbaren Daten bytes.  
   
  `pbData`  
- [in, out] Ein Puffer, der mit dem Arbeitsspeicher lesen gefüllt wird.  
+ [in, out] Ein Puffer, der mit dem gelesenen Speicher gefüllt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md)

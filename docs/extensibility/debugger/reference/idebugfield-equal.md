@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Gleich | Microsoft Docs
+title: 'Idebugfield:: Equal | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8a45a31c02376f95c3cd6b0c4a4adf0434fabe92
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729012"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-Diese Methode vergleicht dieses Feld mit dem angegebenen Feld für Gleichheit.
+Diese Methode vergleicht dieses Feld mit dem angegebenen Feld auf Gleichheit.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int Equal(
 
 ## <a name="parameters"></a>Parameter
 `pField`\
-[in] Das Feld, das mit diesem zu vergleichen ist.
+in Das Feld, das mit diesem verglichen werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Felder identisch `S_OK`sind, gibt er zurück. Wenn die Felder unterschiedlich `S_FALSE.` sind, gibt andernfalls einen Fehlercode zurück.
+ Wenn die Felder identisch sind, wird zurückgegeben `S_OK` . Wenn die Felder verschieden sind, wird zurückgegeben `S_FALSE.` , andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

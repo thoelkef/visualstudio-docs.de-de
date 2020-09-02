@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::get_registerValue | Microsoft-Dokumentation
+title: 'IDiaStackWalkHelper:: get_registerValue | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4dde30ebcda46d75271b15ec5b7f7c1ac49f384b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150114"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft den Wert eines Registers.  
+Ruft den Wert eines Register ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,17 +36,17 @@ HRESULT get_registerValue ( 
   
 #### <a name="parameters"></a>Parameter  
  `index`  
- [in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) Enumeration, die angibt, die zu registrieren, dessen Wert abgerufen.  
+ in Ein Wert aus der [CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) enumerationsenumeration, die angibt, von welchem Register der Wert abgeleitet werden soll.  
   
  `pRetVal`  
- [out] Gibt den aktuellen Wert des Registers zurück.  
+ vorgenommen Gibt den aktuellen Wert des Register zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ungeachtet der Anzahl der `pRetVal` Parameter, eine Implementierung sollten speichern, was dem Registrieren normalerweise enthält nur. Eine 8-Bit-Register enthält z. B. nur die niedrigsten 8 Bits des angegebenen Werts. Dieser 8-Bit-Wert wird auf 64-Bit, nach der Rückkehr dieser Methode erweitert.  
+## <a name="remarks"></a>Bemerkungen  
+ Trotz der Größe des- `pRetVal` Parameters sollte eine-Implementierung nur das, was das Register normalerweise enthält, speichern. Ein 8-Bit-Register enthält z. b. nur die niedrigsten 8 Bits des angegebenen-Werts. Dieser 8-Bit-Wert wird auf 64 Bit erweitert, wenn er von dieser Methode zurückgegeben wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)

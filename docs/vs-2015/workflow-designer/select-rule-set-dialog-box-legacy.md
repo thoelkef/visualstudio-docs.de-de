@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c6cc7a101a854611228b1a3bc38f63fffff45c1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846172"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor auswählen" (Vorgängerversion)
-In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelsatz auswählen** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)]verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+In diesem Thema wird beschrieben, wie das Dialogfeld **Regelsatz auswählen** in der Vorgängerversion von verwendet wird [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
  Mit dem Dialogfeld **Regelsatz auswählen** wird ein Regelsatz ausgewählt, den Sie mit einer [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) -Aktivität verwenden können. Informationen zum Zugreifen auf das Dialogfeld **Regelsatz auswählen finden Sie** unter Vorgehens [Weise: Erstellen eines PolicyActivity-Regelsatzes (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
@@ -33,7 +33,7 @@ In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelsatz auswählen*
 |**Bearbeiten...**|Klicken Sie hierauf, um das [Dialog Feld Regelsatz-Editor zu öffnen (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) , um die ausgewählte Regel Bedingung zu bearbeiten.|
 |**Umbenennen...**|Klicken Sie hierauf, um ein Dialogfeld zu öffnen, das zum Umbenennen des ausgewählten Regelsatzes verwendet wird.|
 |**Löschen**|Klicken Sie hierauf, um den ausgewählten Regelsatz zu löschen.|
-|**Regelsatz-Vorschau**|Zeigt die im ausgewählten Regelsatz enthaltenen Regeln an.|
+|**Regelsatzvorschau**|Zeigt die im ausgewählten Regelsatz enthaltenen Regeln an.|
 |**OK**|Klicken Sie hierauf, um den ausgewählten Regelsatz der **PolicyActivity** -Aktivität zuzuweisen.|
 
  Weitere Informationen zum Erstellen und Bearbeiten von Regelsätzen finden Sie unter [Dialog Feld "Regelsatz-Editor" (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
@@ -43,5 +43,5 @@ In diesem Thema wird beschrieben, wie Sie das Dialogfeld **Regelsatz auswählen*
 
  Weitere Informationen zu Bedingungen finden Sie unter [Verwenden von Bedingungen in Workflows](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) - [Regelsatz-Editor (Dialog Feld) (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Verwenden der PolicyActivity-Aktivität](https://msdn2.microsoft.com/library/bb675229.aspx) unter Verwendung von [Bedingungen in Workflows](https://msdn2.microsoft.com/library/bb628447.aspx)

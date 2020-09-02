@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateObject | Microsoft Docs
+title: 'IDebugFunctionObject2:: kreateobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728479"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Erstellt ein Objekt, das einen Konstruktor mit angegebenen Auswertungsflageinstellungen und einem Timeoutwert verwendet.
+Erstellt ein-Objekt, das einen Konstruktor mit den angegebenen Auswertungs Kennzeichen-Einstellungen und einem Timeout Wert verwendet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -50,28 +50,28 @@ int CreateObject (
 
 ## <a name="parameters"></a>Parameter
 `pConstructor`\
-[in] Ein [IDebugFunctionObject-Objekt,](../../../extensibility/debugger/reference/idebugfunctionobject.md) das den Konstruktor des zu erstellenden Objekts darstellt.
+in Ein [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Objekt, das den Konstruktor des zu erstellenden Objekts darstellt.
 
 `dwArgs`\
-[in] Die Anzahl der `pArg` Parameter im Array. Stellt die Anzahl der Parameter dar, die an den Konstruktor übergeben werden.
+in Die Anzahl der Parameter im `pArg` Array. Stellt die Anzahl von Parametern dar, die an den Konstruktor übergeben werden.
 
 `pArgs`\
-[in] Ein Array von [IDebugObject-Objekten,](../../../extensibility/debugger/reference/idebugobject.md) das die an den Konstruktor übergebenen Parameter darstellt.
+in Ein Array von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekten, das die Parameter darstellt, die an den Konstruktor übergeben werden.
 
 `dwEvalFlags`\
-[in] Eine Kombination von Flags aus der EVALFLAGS-Enumeration, die angeben, wie die Auswertung ausgeführt werden soll. [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
+in Eine Kombination von Flags aus der [evalflags](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die angeben, wie die Auswertung durchgeführt werden soll.
 
 `dwTimeout`\
-[in] Maximale Wartezeit in Millisekunden, bevor von dieser Methode zurückgegeben wird. Verwenden Sie **INFINITE,** um auf unbestimmte Zeit zu warten.
+in Maximale Zeit in Millisekunden, die gewartet werden soll, bevor diese Methode zurückgegeben wird. Verwenden **Sie unbegrenzt,** um unbegrenzt zu warten.
 
 `ppObject`\
-[out] Gibt ein **IDebugObject** zurück, das das neu erstellte Objekt darstellt.
+vorgenommen Gibt ein **idebugobject** -Objekt zurück, das das neu erstellte-Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das eine Instanz einer Klasse darstellt, oder einen anderen komplexen Typ, der einen Konstruktor, d. h. einen Parameter, erfordert.
+ Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das eine Instanz einer Klasse darstellt, oder einen anderen komplexen Typ, der einen Konstruktor benötigt, bei dem es sich um einen Parameter handelt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

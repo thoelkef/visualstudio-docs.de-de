@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547263"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
@@ -316,7 +316,7 @@ Sie können eine Forward-Merge-Direktive in der Komponentenmodell-Projekt Mappe 
 
      Der nicht verfügbare Zeiger sollte nicht angezeigt werden, und Sie sollten in der Lage sein, den neuen **eingabeport** für den vorhandenen zu löschen. Wählen Sie den neuen **eingabeport** aus, und ziehen Sie ihn an einen anderen Punkt in der **Komponente**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Anpassen der Tools und der Toolbox](../modeling/customizing-tools-and-the-toolbox.md)

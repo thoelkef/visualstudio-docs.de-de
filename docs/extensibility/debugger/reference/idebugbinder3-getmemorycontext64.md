@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
+title: 'IDebugBinder3:: GetMemoryContext64 | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735740"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Konvertiert entweder einen Objektspeicherort oder eine 64-Bit-Speicheradresse in einen Speicherkontext.
+Konvertiert entweder einen Objekt Speicherort oder eine 64-Bit-Speicheradresse in einen Speicher Kontext.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>Parameter
 `pField`\
-[in] Ein [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) das das zu suchende Objekt beschreibt. Wenn `NULL`, `dwConstant` dann verwenden Sie stattdessen.
+in Ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) , das das zu suchende Objekt beschreibt. Wenn `NULL` , dann verwenden Sie `dwConstant` stattdessen.
 
 `uConstant`\
-[in] Eine 64-Bit-Speicheradresse, z. B. 0x50000000.
+in Eine 64-Bit-Speicheradresse, z. b. 0x50.000.000.
 
 `ppMemCxt`\
-[out] Gibt die [IDebugMemoryContext2-Schnittstelle](../../../extensibility/debugger/reference/idebugmemorycontext2.md) zurück, die die Adresse des Objekts oder die Adresse im Arbeitsspeicher darstellt.
+vorgenommen Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Schnittstelle zurück, die die Adresse des-Objekts darstellt, oder die Adresse im Arbeitsspeicher.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-In den folgenden Beispielen wird ein Objekt erstellt, das die [IDebugBinder3-Schnittstelle](../../../extensibility/debugger/reference/idebugbinder3.md) implementiert und diese Methode zum Abrufen des Speicherkontexts verwendet.
+In den folgenden Beispielen wird ein Objekt erstellt, das die [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) -Schnittstelle implementiert und diese Methode verwendet, um den Arbeitsspeicher Kontext abzurufen.
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )

@@ -1,5 +1,5 @@
 ---
-title: Beenden Sie das Debuggen im Dialogfeld Status | Microsoft-Dokumentation
+title: Dialogfeld „Debuggen wird abgebrochen“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fc4b72987be726ab06aeb92a0e3eec2a338949e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684950"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Debuggen wird beendet (Dialogfeld)
@@ -38,8 +38,8 @@ Dieses Dialogfeld wird angezeigt, wenn vom Debugger versucht wird, eine Debugsit
  Sie können entweder warten, bis alle Prozesse getrennt sind und dieses Dialogfeld ausgeblendet wird, oder Sie erzwingen über die Schaltfläche **Jetzt beenden** die sofortige Beendigung.  
   
  **Jetzt beenden**  
- Klicken Sie auf diese Schaltfläche, um die Debugsitzung sofort zu beenden. Mithilfe von **jetzt beenden**wird beendet, anstatt die debuggten Prozesse getrennt. Wenn Sie Systemprozesse debuggen und die Prozesse mit **Jetzt beenden** stoppen, kann es zu unerwarteten und unerwünschten Folgen kommen.  
+ Klicken Sie auf diese Schaltfläche, um die Debugsitzung sofort zu beenden. Die Verwendung von " **jetzt**beenden" wird beendet, anstatt die Prozesse zu trennen, die gedeppt werden. Wenn Sie Systemprozesse debuggen und die Prozesse mit **Jetzt beenden** stoppen, kann es zu unerwarteten und unerwünschten Folgen kommen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Trennen von Programmen](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)

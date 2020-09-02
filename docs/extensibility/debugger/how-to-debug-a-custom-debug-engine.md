@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903309"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine
@@ -73,5 +73,5 @@ Mit einem Projekttyp wird die Debug-Engine (de) aus der- <xref:Microsoft.VisualS
 
 9. Wenn Sie das Starten eines de-Vorgangs debuggen möchten, können Sie die Schritte im Verfahren "Debuggen einer benutzerdefinierten Debug-Engine" durchführen, um Sie nach dem Start an Ihre de anzufügen. Dadurch erhalten Sie drei Instanzen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , die ausgeführt werden: eine für die Projekttyp Quelle, eine Sekunde für den instanziierten Projekttyp und ein drittes, das an Ihren de angeschlossen ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)

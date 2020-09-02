@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::put_registerValue | Microsoft-Dokumentation
+title: IDiaStackWalkHelper::p ut_registerValue | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97494f2180d0aede2dfd8e1a539a0d957f9a0bcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150077"
 ---
-# <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
+# <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legt den Wert eines Registers.  
+Legt den Wert eines Register fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,17 +36,17 @@ HRESULT put_registerValue ( 
   
 #### <a name="parameters"></a>Parameter  
  `index`  
- [in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die das Register zum Schreiben in angibt.  
+ in Ein Wert aus der [CV_HREG_e Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die das Register angibt, in das geschrieben werden soll.  
   
  `NewVal`  
- [in] Der neue Wert von Register.  
+ in Der neue Registrierungs Wert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Trotz der Größe des Werts sollte eine Implementierung speichern, was dem Registrieren normalerweise enthält nur. Eine 8-Bit-Register würde z. B. nur die niedrigsten 8 Bits des angegebenen Werts enthalten.  
+## <a name="remarks"></a>Bemerkungen  
+ Trotz der Größe des Werts sollte in einer-Implementierung nur das, was das Register normalerweise enthält, gespeichert werden. Beispielsweise würde ein 8-Bit-Register nur die niedrigsten 8 Bits des angegebenen Werts enthalten.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)

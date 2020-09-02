@@ -1,5 +1,5 @@
 ---
-title: Löschen eines Haltepunkts | Microsoft Docs
+title: Löschen eines Breakpoints | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738948"
 ---
-# <a name="deleting-a-breakpoint"></a>Löschen eines Haltepunkts
-Im Folgenden wird der Prozess beim Löschen eines ausstehenden Haltepunkts beschrieben:
+# <a name="deleting-a-breakpoint"></a>Löschen eines Breakpoints
+Im folgenden wird der Prozess zum Löschen eines ausstehenden Breakpoints beschrieben:
 
 ## <a name="deletion-process"></a>Löschvorgang
- Der Sitzungsdebug-Manager (SDM) ruft die [IDebugPendingBreakpoint2::Delete-Methode](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) auf, um den ausstehenden Haltepunkt und alle gebundenen Haltepunkte, die davon gebunden sind, zu entfernen.
+ Der Session Debug Manager (SDM) Ruft die [IDebugPendingBreakpoint2::D Elete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) -Methode auf, um den ausstehenden Haltepunkt und alle von ihm gebundenen gebundenen Haltepunkte zu entfernen.
 
 > [!NOTE]
-> Ein einzelner gebundener Haltepunkt kann auch durch einen Aufruf von [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)gelöscht werden.
+> Ein einzelner gebundener Haltepunkt kann auch durch einen [IDebugBoundBreakpoint2::D Elete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)-aufrufungspunkt gelöscht werden.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Siehe auch
+- [Debugger-Ereignisse aufzurufen](../../extensibility/debugger/calling-debugger-events.md)

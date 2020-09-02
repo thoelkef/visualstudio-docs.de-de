@@ -1,5 +1,5 @@
 ---
-title: Optimieren von Menü- und Symbolleistenbefehle | Microsoft-Dokumentation
+title: Optimieren von Menüs und Symbolleisten Befehlen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,23 +15,23 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25a721c77269837ad8d158db186274586ad638df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150813"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimieren von Menü- und Symbolleistenbefehlen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Das Hinzufügen von VSPackages und deren entsprechende Befehle aus, um [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kann dazu führen, dass eine Rechenzentrum weiter aufzurüsten Benutzeroberfläche. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet Möglichkeiten zur Unterstützung von UI-Befehl verwirrungen zu vermeiden.  
+Durch das Hinzufügen von VSPackages und die zugehörigen Befehle zu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kann eine überfüllte Benutzeroberfläche verursacht werden. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet Möglichkeiten, um die Verwirrung von UI-Befehlen zu minimieren.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Verfügbarmachen von Befehlen](../../extensibility/internals/making-commands-available.md)  
- Enthält allgemeine Richtlinien zum Minimieren der Versammeln der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzeroberfläche, wenn Sie VSPackages hinzufügen.  
+ Bietet allgemeine Richtlinien zum Minimieren der Überfüllung der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzeroberfläche beim Hinzufügen von VSPackages.  
   
  [Richtlinien zur Platzierung](../../extensibility/internals/command-placement-guidelines.md)  
- Stellt besondere Richtlinien zum Implementieren von VSPackages entsprechend der Größe für den Befehlssatz.  
+ Bietet spezifische Richtlinien für die Implementierung eines VSPackage entsprechend der Größe des Befehlssatzes.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)  

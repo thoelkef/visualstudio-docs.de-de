@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169364"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
-|ext_*|Fügen Sie das Präfix `ext_` zu einem beliebigen Parameter hinzu, um auf die Variablen der übergeordneten Vorlage zu verweisen. Beispielsweise `ext_safeprojectname`.|
+|ext_*|Fügen Sie das Präfix `ext_` zu einem beliebigen Parameter hinzu, um auf die Variablen der übergeordneten Vorlage zu verweisen. Beispiel: `ext_safeprojectname`.|
 |guid[1-10]|Eine GUID zum Ersetzen der Projekt-GUID in einer Projektdatei. Sie können bis zu zehn eindeutige GUIDs (z.B. `guid1`) angeben.|
 |itemname|Der Name der Datei, in der der Parameter verwendet wird.|
 |machinename|Der aktuelle Computername (z. B. Computer01).|
@@ -60,12 +60,12 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |safeitemname|Wie `itemname`, jedoch mit unsicheren Zeichen und Leerzeichen, die durch Unterstriche ersetzt wurden.|
 |safeitemrootname|Wie in `safeitemname`.|
 |safeprojectname|Der vom Benutzer beim Erstellen des Projekts angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden.|
-|Uhrzeit|Die aktuelle Uhrzeit im Format TT/MM/JJJJ 00:00:00.|
+|time|Die aktuelle Uhrzeit im Format TT/MM/JJJJ 00:00:00.|
 |specifiedsolutionname|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `specifiedsolutionname` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `specifiedsolutionname` leer.|
 |userdomain|Die aktuelle Benutzerdomäne.|
 |username|Der aktuelle Benutzername.|
 |webnamespace|Der Name der aktuellen Website. Dieser Parameter wird in der Webformularvorlage verwendet und gewährleistet eindeutige Klassennamen. Wenn sich die Website im Stammverzeichnis des Webservers befindet, wird dieser Vorlagenparameter in das Stammverzeichnis des Webservers aufgelöst.|
-|Jahr|Das aktuelle Jahr im Format JJJJ.|
+|year|Das aktuelle Jahr im Format JJJJ.|
 
 > [!NOTE]
 > Bei Vorlagenparametern wird die Groß-/Kleinschreibung beachtet.
@@ -74,7 +74,7 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 
 Neben den reservierten Standardvorlagenparametern, die während dem Ersetzen von Parametern verwendet werden, können Sie eigene Vorlagenparameter und -werte angeben. Weitere Informationen finden Sie unter [CustomParameters-Element (Visual Studio-Vorlagen)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Beispiel: Verwenden des Projektnamens für den Dateinamen
+## <a name="example-use-the-project-name-for-a-file-name"></a>Beispiel: Verwenden des Projektnamens für einen Dateinamen
 
 Sie können variable Dateinamen für Projektelemente festlegen, indem Sie einen Parameter im `TargetFileName`-Attribut verwenden.
 
@@ -117,7 +117,7 @@ Fügen Sie der *VSTEMPLATE*-Datei für die Projektvorlage das `ReplaceParameters
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [How to: Ersetzen von Parametern in einer Vorlage](how-to-substitute-parameters-in-a-template.md)
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)

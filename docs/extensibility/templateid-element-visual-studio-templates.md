@@ -1,5 +1,5 @@
 ---
-title: TemplateID-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: TemplateID-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699060"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID-Element (Visual Studio-Vorlagen)
-Gibt einen Bezeichner für eine Elementvorlage an, die vom [TemplateGroupID-Element](../extensibility/templategroupid-element-visual-studio-templates.md) in eine Gruppe von Elementvorlagen kategorisiert wird.
+Gibt einen Bezeichner für eine Element Vorlage an, die vom [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) -Element in eine Gruppe von Element Vorlagen kategorisiert wird.
 
- \<VSTemplate \<> TemplateData> \<TemplateID>
+ \<VSTemplate> \<TemplateData>
+ \<TemplateID>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,27 +37,27 @@ Gibt einen Bezeichner für eine Elementvorlage an, die vom [TemplateGroupID-Elem
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
- A, `string` der einen Bezeichner für eine Elementvorlage darstellt, der `TemplateGroupID` vom Element in eine Gruppe von Elementvorlagen kategorisiert ist.
+ Ein `string` , der einen Bezeichner für eine Element Vorlage darstellt, der vom-Element in eine Gruppe von Element Vorlagen kategorisiert wird `TemplateGroupID` .
 
 ## <a name="remarks"></a>Bemerkungen
  `TemplateID` ist ein optionales Element.
 
- Wenn eine .vstemplate-Datei `TemplateID` das Element auslässt, wird das [Name-Element](../extensibility/name-element-visual-studio-templates.md) als Bezeichner für die Vorlage verwendet.
+ Wenn eine VSTEMPLATE-Datei das `TemplateID` Element auslässt, wird das [Name](../extensibility/name-element-visual-studio-templates.md) -Element als Bezeichner für die Vorlage verwendet.
 
- Der Wert `TemplateID` des Elements wird zusammen mit der Projektsystemregistrierung (HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-11.0-Projekte\\) verwendet, um Vorlagen zu filtern, die im Dialogfeld Neues **Element** hinzufügen angezeigt werden.
+ Der Wert des- `TemplateID` Elements wird zusammen mit der Projekt Systemregistrierung (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\Projects \\ ) zum Filtern von Vorlagen verwendet, die im Dialogfeld **Neues Element hinzufügen** angezeigt werden.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch
+- [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

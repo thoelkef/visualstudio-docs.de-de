@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176634"
 ---
 # <a name="callercallee-view"></a>Aufrufer-/Aufgerufener-Ansicht
@@ -28,7 +28,7 @@ ms.locfileid: "68176634"
 
 In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für eine ausgewählte Funktion und ihre übergeordneten und untergeordneten Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster:  
   
- **Aktuelle Funktion** wird im mittleren Raster angezeigt und zeigt Profilerstellungsinformationen für die ausgewählte Funktion an. Die Werte beinhalten alle Aufrufe der Funktion, die während der Profilerstellungsausführung gesammelt wurden.  
+ **Aktuelle Funktion** wird im mittleren Raster angezeigt und gibt Profilerstellungsinformationen für die ausgewählte Funktion an. Die Werte beinhalten alle Aufrufe der Funktion, die während der Profilerstellungsausführung gesammelt wurden.  
   
  **Funktionen, die die aktuelle Funktion aufgerufen haben** wird im obersten Raster angezeigt und gibt die Anzahl der Werte der ausgewählten (aktuellen) Funktion an, die durch Aufrufe der (übergeordneten) Aufruferfunktion generiert wurden.  
   
@@ -38,11 +38,11 @@ In der Aufrufer-/Aufgerufener-Ansicht werden Profilerstellungsinformationen für
   
  Für den mittleren Bereich der Berichtsansicht können Sie eine andere Funktion als aktuelle Funktion auswählen, indem Sie in einem der anderen beiden Bereiche der Ansicht auf die gewünschte Funktion doppelklicken. Die Berichtsansicht wird automatisch aktualisiert, um die Änderungen widerzuspiegeln.  
   
- Sie können die Daten durch Klicken auf die Spaltennamen sortieren. Der Aufrufer-/Aufgerufener-Ansicht können zusätzliche Spalten hinzugefügt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md).  
+ Sie können die Daten durch Klicken auf die Spaltennamen sortieren. Der Aufrufer-/Aufgerufener-Ansicht können zusätzliche Spalten hinzugefügt werden. Weitere Informationen finden Sie unter Gewusst [wie: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten](../profiling/caller-callee-view-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Instrumentationsdaten](../profiling/caller-callee-view-instrumentation-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – .NET-Speichersamplingdaten im Profiler](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Aufrufer-/Aufgerufener-Ansicht – Profiler-Konfliktdaten](../profiling/caller-callee-view-contention-data.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Aufrufer-/aufgerufeneransicht-Samplings](../profiling/caller-callee-view-sampling-data.md)   
+ [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view-instrumentation-data.md)   
+ [Aufrufer-/Aufgerufener-Ansicht-Speicher Instrumentations Daten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Aufrufer-/Aufgerufener-Ansicht-.NET-Arbeitsspeicher](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Aufrufer-/aufgerufeneransicht-Konflikt Daten](../profiling/caller-callee-view-contention-data.md)

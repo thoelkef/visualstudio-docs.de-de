@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537383"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Update- &gt; Element (Office-Entwicklung in Visual Studio)
@@ -41,7 +41,7 @@ ms.locfileid: "85537383"
 
  Das `update` -Element weist folgende Attribute auf.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`enabled`|Erforderlich. Legen Sie den Wert auf einen der folgenden Werte fest:<br /><br /> -   " **true** ", um nach Updates zu suchen.<br />-   **false** , um die Suche nach Updates zu verhindern.|
 
@@ -52,14 +52,14 @@ ms.locfileid: "85537383"
 
  Das `expiration` -Element weist folgende Attribute auf.
 
-|Attribut|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`maximumAge`| Erforderlich. Legen Sie diesen Wert auf eine ganze Zahl fest.|
 |`unit`|Erforderlich. Legen `unit` Sie einen der folgenden Werte fest:<br /><br /> -   **Hours**<br />-   **tagelang**<br />-   **Wochen**|
 
 ## <a name="example-of-always-checking-for-updates"></a>Beispiel für die immer Überprüfung auf Updates
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Codebeispiel veranschaulicht ein- `update` Element, das so festgelegt ist, dass es immer nach Updates in Office-Projektmappen sucht
 
 ### <a name="code"></a>Code
@@ -70,7 +70,7 @@ ms.locfileid: "85537383"
 
 ## <a name="example-of-setting-a-default-update-interval"></a>Beispiel für das Festlegen eines standardmäßigen Update Intervalls
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Codebeispiel veranschaulicht ein- `update` Element in einem Anwendungs Manifest für Office-Projektmappen. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code

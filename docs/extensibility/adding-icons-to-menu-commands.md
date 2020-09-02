@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903442"
 ---
 # <a name="add-icons-to-menu-commands"></a>Hinzufügen von Symbolen zu Menübefehlen
@@ -81,6 +81,6 @@ Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten 
 
 8. Testen Sie das Symbol. Erstellen Sie das Projekt, und starten Sie das Debugging. Suchen Sie in der experimentellen Instanz den Befehl. Das Symbol sollte angezeigt werden, das Sie hinzugefügt haben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Vsct-XML-Schema Referenz](../extensibility/vsct-xml-schema-reference.md)

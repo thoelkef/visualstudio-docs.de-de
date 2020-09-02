@@ -1,5 +1,5 @@
 ---
-title: Asyncvoidmethodbuilder. M_objectidfordebugger-Feld | Microsoft-Dokumentation
+title: Asyncvoidmethodbuilder. m_objectIdForDebugger-Feld | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2981ff74e5fe7b7501227b847996d422a2966f55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148006"
 ---
-# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger-Feld
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger-Feld
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Stellt die verzögert initialisierte Objekt, das vom Debugger verwendet werden, um die Identifizierung von diesem Generator dar.  
+Stellt das verzögert initialisierte Objekt dar, das vom Debugger verwendet wird, um diesen Generator eindeutig zu identifizieren.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,6 +34,6 @@ Stellt die verzögert initialisierte Objekt, das vom Debugger verwendet werden, 
 .field private object m_objectIdForDebugger  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
  [Interne Elemente der parallelen Erweiterung für das .NET-Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

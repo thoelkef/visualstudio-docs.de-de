@@ -1,5 +1,5 @@
 ---
-title: Abrufen von Dienstinformationen aus dem Store-Einstellungen | Microsoft-Dokumentation
+title: Erhalten von Dienst Informationen aus dem Einstellungs Speicher | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,22 +9,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cfe754203ae9b4e951de5beef8cd829f9d7716bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204310"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Abrufen von Dienstinformationen aus dem Einstellungsspeicher
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu finden oder um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.  
+Mit dem Einstellungs Speicher können Sie alle verfügbaren Dienste suchen oder ermitteln, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.  
   
-### <a name="to-list-the-available-services"></a>Die verfügbaren Dienste auflisten  
+### <a name="to-list-the-available-services"></a>So Listen Sie die verfügbaren Dienste auf  
   
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen FindServicesExtension, und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen FindServicesCommand. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Erstellen Sie ein VSIX-Projekt namens findservicesextension, und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen findservicescommand hinzu. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .  
   
-2. FindServicesCommand.cs, fügen Sie die folgende using-Anweisungen:  
+2. Fügen Sie in FindServicesCommand.cs die folgenden using-Anweisungen hinzu:  
   
     ```vb  
     using System.Collections.Generic;  
@@ -33,7 +33,7 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
     using System.Windows.Forms;  
     ```  
   
-3. Der Konfigurationsspeicher für die Einstellungen zu erhalten, suchen Sie dann die untergeordnete Sammlung benannte Dienste. Diese Sammlung enthält alle verfügbaren Dienste an. Klicken Sie in der Methode MenuItemCommand entfernen Sie den vorhandenen Code, und Ersetzen Sie ihn durch Folgendes:  
+3. Abrufen des Konfigurations Einstellungs Speicher und suchen der untergeordneten Sammlung mit dem Namen "Dienste". Diese Sammlung enthält alle verfügbaren Dienste. Entfernen Sie in der menuitemcommand-Methode den vorhandenen Code, und ersetzen Sie ihn durch Folgendes:  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -52,18 +52,18 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
     }  
     ```  
   
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.  
   
-5. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.  
+5. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **findservicescommand aufrufen**.  
   
-     Ein Nachrichtenfeld mit allen Diensten sollte angezeigt werden.  
+     Es sollte ein Meldungs Feld angezeigt werden, in dem alle Dienste aufgelistet sind.  
   
      Um diese Einstellungen zu überprüfen, können Sie den Registrierungs-Editor verwenden.  
   
 ## <a name="finding-a-specific-service"></a>Suchen nach einem bestimmten Dienst  
- Sie können auch die <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> Methode, um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.  
+ Sie können auch die- <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> Methode verwenden, um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.  
   
-1. Suchen Sie in der MenuItemCallback des Projekts, das Sie im vorherigen Verfahren erstellt haben, den Konfigurationsspeicher für die Einstellungen für die `Services` Sammlung, die die untergeordnete Sammlung mit dem Namen, durch die GUID des Diensts enthält. In diesem Fall sucht es nach den Hilfe-Dienst.  
+1. Suchen Sie im MenuItemCallBack des Projekts, das Sie in der vorherigen Prozedur erstellt haben, im Konfigurations Einstellungs Speicher nach der Auflistung `Services` , die die untergeordnete Sammlung mit dem Namen der GUID des Dienstanbieter aufweist. In diesem Fall suchen wir nach dem Hilfe Dienst.  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -80,6 +80,6 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
   
 2. Erstellen Sie das Projekt, und starten Sie das Debugging.  
   
-3. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.  
+3. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **findservicescommand aufrufen**.  
   
-     Daraufhin sollte eine Meldung mit dem Text **Hilfe-Dienst verfügbar:** gefolgt von **"true"** oder **"false"** . Um diese Einstellung zu überprüfen, können Sie einen Registrierungs-Editor verwenden, wie in den vorherigen Schritten gezeigt.
+     Es sollte eine Meldung mit dem Text **Help Service**  angezeigt werden: gefolgt von **true** oder **false**. Um diese Einstellung zu überprüfen, können Sie wie in den vorherigen Schritten gezeigt einen Registrierungs-Editor verwenden.

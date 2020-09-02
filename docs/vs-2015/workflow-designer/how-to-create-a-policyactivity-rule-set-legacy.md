@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f8599348d204d149f3e28d17d681941ddf476b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849319"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Vorgehensweise: Erstellen eines PolicyActivity-Regelsatzes (Vorgängerversion)
@@ -36,15 +36,15 @@ In diesem Thema wird das Erstellen eines Richtlinienaktivitätsregelsatzes mithi
 
 2. Klicken Sie auf die Eigenschaft **rulesetreferenzierung** .
 
-3. Führen Sie eine der folgenden Aktionen aus:
+3. Führen Sie eines der folgenden Verfahren aus:
 
-    - Klicken Sie auf die Schaltfläche **rulesetreferenzierung** **[...]** , und wählen Sie dann im [Dialog Feld Regelsatz auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md)einen vorhandenen Regelsatz aus. Wechseln Sie dann zu Schritt 10.
+    - Klicken Sie auf die Schaltfläche **rulesetreferenzierung** **[...]**, und wählen Sie dann im [Dialog Feld Regelsatz auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md)einen vorhandenen Regelsatz aus. Wechseln Sie dann zu Schritt 10.
 
-         \- oder -
+         Oder
 
-    - Geben Sie einen Namen für einen Regelsatz ein. Klicken Sie auf die Schaltfläche **rulesetreferenzierung** **[...]** , und wählen Sie dann im [Dialog Feld Regelsatz auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md)die Option **Bearbeiten** aus.
+    - Geben Sie einen Namen für einen Regelsatz ein. Klicken Sie auf die Schaltfläche **rulesetreferenzierung** **[...]**, und wählen Sie dann im [Dialog Feld Regelsatz auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md)die Option **Bearbeiten** aus.
 
-         \- oder -
+         Oder
 
     - Geben Sie einen Namen für einen Regelsatz ein. Erweitern Sie die Eigenschaft **rulesetreferenzierung** , und wählen Sie die Auslassungs Punkte **[...]** in der Eigenschaft **RuleSet Definition** aus.
 
@@ -60,7 +60,7 @@ In diesem Thema wird das Erstellen eines Richtlinienaktivitätsregelsatzes mithi
 
 8. Klicken Sie erneut auf **Regel hinzufügen** , um weitere Regeln hinzuzufügen.
 
-9. Klicken Sie zum Abschluss auf **OK**.
+9. Wenn Sie fertig sind, klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) -Dialogfeld " [Regelsatz-Editor auswählen" (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [Dialogfeld "Regelsatz-Editor" (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [mithilfe der Richtlinien Aktivität](https://msdn2.microsoft.com/library/bb675229.aspx) [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md)

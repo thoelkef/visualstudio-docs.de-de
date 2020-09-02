@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46adab828eea0ffb821147ba9c711634e1899a85
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664313"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
@@ -24,7 +24,7 @@ Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, 
 ## <a name="element-shortcuts"></a>Tastenkombinationen für Elemente
  Diese Tabelle enthält die Tastenkombinationen, die für die Arbeit mit Elementen auf der Zeichenfläche verfügbar sind.
 
-|**Ausführen dieser Aktion**|**Vorgehensweise**|
+|**Ausführen dieser Aktion**|**Dies**|
 |--------------------------------|-----------------|
 |Erstellen eines Elements|Drücken Sie STRG+N.|
 |Duplizieren eines Elements|Halten Sie die ALT-TASTE gedrückt, und drücken Sie eine Pfeiltaste.|
@@ -42,12 +42,12 @@ Mit Tastenkombinationen im XAML-Designer können Sie beim Arbeiten Zeit sparen, 
 ## <a name="document-outline-window-shortcuts"></a>Tastenkombinationen im Fenster "Dokumentgliederung"
  Die folgende Tabelle enthält die Tastenkombinationen, die bei der Arbeit mit Elementen im Fenster "Dokumentgliederung" verfügbar sind.
 
-|**Ausführen dieser Aktion**|**Vorgehensweise**|
+|**Ausführen dieser Aktion**|**Dies**|
 |--------------------------------|-----------------|
 |Ausblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|STRG+H|
 |Einblenden von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|UMSCHALT+STRG+H|
 |Sperren von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|STRG+L|
 |Entsperren von Zeichenflächenobjekten, während der Fokus auf das Fenster "Dokumentgliederung" gelegt ist|UMSCHALT+STRG+L|
 
-## <a name="see-also"></a>Siehe auch
- [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

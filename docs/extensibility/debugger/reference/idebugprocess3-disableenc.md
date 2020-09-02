@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC | Microsoft Docs
+title: IDebugProcess3::D isableumc | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723734"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Diese Methode deaktiviert explizit Bearbeiten und Fortfahren für diesen Prozess (und alle darin enthaltenen Programme). Ein benutzerdefinierter Portlieferant sollte immer zurückgeben. `E_NOTIMPL`
+Diese Methode deaktiviert die Bearbeitung und Fortsetzung für diesen Prozess (und alle darin enthaltenen Programme) explizit. Ein benutzerdefinierter Port Lieferant sollte immer zurückgeben `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,16 +40,16 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>Parameter
 `reason`\
-[in] Ein Wert aus der [EncUnavailableReason-Enumeration.](../../../extensibility/debugger/reference/encunavailablereason.md)
+in Ein Wert [aus der](../../../extensibility/debugger/reference/encunavailablereason.md) Enumeration "Enumeration" in "Enumeration".
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Ein benutzerdefinierter Portlieferant sollte immer zurückgeben. `E_NOTIMPL`
+> Ein benutzerdefinierter Port Lieferant sollte immer zurückgeben `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Bemerkungen
- Sobald Bearbeiten und Fortfahren für einen Prozess deaktiviert ist, kann er nur durch einen Neustart des Prozesses wieder aktiviert werden.
+ Wenn "Bearbeiten und Fortfahren" für einen Prozess deaktiviert ist, kann es nur wieder aktiviert werden, indem der Prozess neu gestartet wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

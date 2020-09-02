@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPortSupplierName | Microsoft-Dokumentation
+title: 'IDebugPortSupplier2:: getportsuppliername | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c64b10de197dbd1f16598049bd42ac8c95141d7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188254"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Namen der Port-Lieferanten.  
+Ruft den Namen des Port Anbieters ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int GetPortSupplierName( 
   
 #### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Gibt den Namen des portbereitstellers.  
+ vorgenommen Gibt den Namen des Port Anbieters zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

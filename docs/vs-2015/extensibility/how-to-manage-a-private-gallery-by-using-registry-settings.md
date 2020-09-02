@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von Registrierungseinstellungen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von Registrierungs Einstellungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204160"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von Registrierungseinstellungen
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Gewusst wie: Verwalten eines privaten Katalogs mithilfe von Registrierungseinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie ein Administrator oder Entwickler einer Isolated Shell-Erweiterung sind, können Sie den Zugriff auf den Steuerelementen, Vorlagen und Tools in Visual Studio Gallery, die Samples Gallery oder private Kataloge steuern. Um einen Katalog verfügbar oder nicht verfügbar machen, erstellen Sie eine PKGDEF-Datei, die die geänderte Registrierungsschlüssel und deren Werte beschreibt.  
+Wenn Sie Administrator oder Entwickler einer isolierten Shellerweiterung sind, können Sie den Zugriff auf die Steuerelemente, Vorlagen und Tools in der Visual Studio Gallery, in der Beispiel Galerie oder in privaten Galerien steuern. Um einen Katalog verfügbar zu machen oder nicht verfügbar zu machen, erstellen Sie eine pkgdef-Datei, in der die geänderten Registrierungsschlüssel und deren Werte beschrieben werden.  
   
-## <a name="managing-private-galleries"></a>Verwalten von Private Kataloge  
- Sie können eine PKGDEF-Datei zum Steuern des Zugriffs für Kataloge auf mehreren Computern erstellen. Diese Datei muss das folgende Format haben.  
+## <a name="managing-private-galleries"></a>Verwalten von privaten Galerien  
+ Sie können eine pkgdef-Datei erstellen, um den Zugriff auf Galerien auf mehreren Computern zu steuern. Diese Datei muss das folgende Format aufweisen:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{UniqueGUID}]  
@@ -38,22 +38,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Die `Repositories` Schlüssel verweist auf den Katalog aktiviert bzw. deaktiviert werden soll. Verwenden das folgende Repository GUIDs, die Visual Studio Gallery und die Samples Gallery:  
+ Der `Repositories` Schlüssel bezieht sich auf den Katalog, der aktiviert oder deaktiviert werden soll. Die Visual Studio Gallery und die Samples Gallery verwenden die folgenden Repository-GUIDs:  
   
-- Visual Studio-Katalog: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio Gallery: 0F 45e408-7995-4375-9485-86b8db553dc9  
   
-- Beispielkatalog: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Beispiel Katalog: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
-  Die `Disabled` Wert ist optional. Standardmäßig wird ein Katalog aktiviert.  
+  Der `Disabled` Wert ist optional. Standardmäßig ist ein-Katalog aktiviert.  
   
-  Die `Priority` Wert bestimmt die Reihenfolge, in der die Kataloge, klicken Sie im Dialogfeld Optionen aufgeführt sind. Visual Studio Gallery hat Priorität 10, und die Samples Gallery hat Priorität 20. Private Kataloge mit Priorität 100 beginnen. Wenn mehrere Kataloge denselben Prioritätswert aufweisen, ist die Reihenfolge, in der sie angezeigt werden, nach den Werten ihrer lokalisierten bestimmt `DisplayName` Attribute.  
+  Der- `Priority` Wert bestimmt die Reihenfolge, in der die Galerien im Dialogfeld Optionen aufgelistet werden. Visual Studio Gallery hat Priorität 10, und die Samples Gallery hat Priorität 20. Private Galerien beginnen mit Priorität 100. Wenn mehrere Kataloge denselben Prioritätswert aufweisen, wird die Reihenfolge, in der Sie angezeigt werden, durch die Werte ihrer lokalisierten `DisplayName` Attribute bestimmt.  
   
-  Die `Protocol` für Atom- oder SharePoint-basierten Katalogen ist erforderlich.  
+  Der `Protocol` Wert ist für Atom-basierte oder SharePoint-basierte Galerien erforderlich.  
   
-  Entweder `DisplayName`, oder beides `DisplayNameResourceID` und `DisplayNamePackageGuid`, muss angegeben werden. Wenn all angegeben werden, und klicken Sie dann die `DisplayNameResourceID` und `DisplayNamePackageGuid` -Paar wird verwendet.  
+  Entweder `DisplayName` oder `DisplayNameResourceID` und `DisplayNamePackageGuid` müssen angegeben werden. Wenn all angegeben wird, wird das `DisplayNameResourceID` -Paar und das- `DisplayNamePackageGuid` Paar verwendet.  
   
-## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deaktivieren eine PKGDEF-Datei mit Visual Studio Gallery  
- Sie können einen Katalog im eine PKGDEF-Datei deaktivieren. Der folgende Eintrag wird der Visual Studio Gallery deaktiviert:  
+## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deaktivieren der Visual Studio Gallery mithilfe einer pkgdef-Datei  
+ Sie können einen Katalog in einer pkgdef-Datei deaktivieren. Der folgende Eintrag deaktiviert die Visual Studio Gallery:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
@@ -69,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Private Kataloge](../extensibility/private-galleries.md)

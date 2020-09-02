@@ -1,5 +1,5 @@
 ---
-title: Freigegebene Farben für Visual Studio | Microsoft Docs
+title: Freigegebene Farben für Visual Studio | Microsoft-Dokumentation
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -9,88 +9,88 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699928"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Freigegebene Farben für Visual Studio
-Wenn Sie eine Benutzeroberfläche entwerfen, die allgemeine Visual Studio-Shellelemente verwendet, oder wenn Sie möchten, dass das Schnittstellenelement mit ähnlichen Features konsistent ist, verwenden Sie vorhandene Tokennamen in Paketdefinitionsdateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.
+Wenn Sie die Benutzeroberfläche entwerfen, die allgemeine Visual Studio-shellelemente verwendet, oder wenn Sie möchten, dass das Schnittstellen Element mit ähnlichen Features konsistent ist, verwenden Sie vorhandene Tokennamen in Paket Definitions Dateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.
 
 In diesem Artikel werden allgemeine Elemente der Benutzeroberfläche und die jeweils verwendeten Tokennamen beschrieben, auf die Sie bei der Erstellung einer ähnlichen Benutzeroberfläche verweisen können. Spezielle Informationen zum Zugriff auf diese Farbtoken finden Sie unter [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
 Stellen Sie sicher, dass Sie die Tokennamen ordnungsgemäß verwenden:
 
-- **Verwenden Sie Tokennamen nach Funktion und nicht nach Farbe.** Die gemeinsam verwendeten Farben sind bestimmten Benutzeroberflächenelementen zugeordnet und sollten ausschließlich für gleiche oder ähnliche Features verwendet werden. Beispielsweise sollten Sie die Farbe eines gedrückten Kombinationsfelds nicht für eine animierte drehende Statusanzeige verwenden, nur weil Ihnen die Farbe gefällt. Die Funktionen des Kombinationsfelds und der Animation sind unterschiedlich, und wenn sich die farbe, die dem Kombinationsfeld zugeordnet ist, ändert sich möglicherweise keine geeignete Farbe mehr für das Animationselement. Die konsistente Verwendung von Farben bietet den Benutzern eine Orientierungshilfe und schließt Verwechslungen aus.
+- **Verwenden Sie Tokennamen nach Funktion und nicht nach Farbe.** Die gemeinsam verwendeten Farben sind bestimmten Benutzeroberflächenelementen zugeordnet und sollten ausschließlich für gleiche oder ähnliche Features verwendet werden. Beispielsweise sollten Sie die Farbe eines gedrückten Kombinationsfelds nicht für eine animierte drehende Statusanzeige verwenden, nur weil Ihnen die Farbe gefällt. Die Funktionen des Kombinations Felds und der Animation sind unterschiedlich, und wenn sich die dem Kombinations Feld zugeordnete Farbe ändert, ist Sie möglicherweise nicht mehr für Ihr Animations Element geeignet. Die konsistente Verwendung von Farben bietet den Benutzern eine Orientierungshilfe und schließt Verwechslungen aus.
 
-- **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn keine zugeordnete Textfarbe vorhanden ist, verwenden Sie diese Hintergrundfarbe nicht für eine Fläche, auf der Sie Text anzeigen möchten. Andere Kombinationen von Text und Hintergrundfarben können zu einer nicht lesbaren Benutzeroberfläche führen.
+- **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn keine zugeordnete Textfarbe vorhanden ist, sollten Sie diese Hintergrundfarbe nicht für eine Oberfläche verwenden, auf der Sie den Text anzeigen möchten. Andere Kombinationen aus Text-und Hintergrundfarben können zu einer nicht lesbaren Schnittstelle führen.
 
-- **Verwenden Sie Steuerelementfarben, die für die jeweilige Position geeignet sind.** In bestimmten Zuständen verfügen einige Visual Studio-Steuerelemente nicht über separate Rahmen- und Hintergrundfarben. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
+- **Verwenden Sie Steuerelementfarben, die für die jeweilige Position geeignet sind.** In bestimmten Zuständen haben einige Visual Studio-Steuerelemente keine separaten Rahmen-und Hintergrundfarben. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
 
 > [!IMPORTANT]
-> Verwenden Sie keine Token in den Kategorien "Startseite" oder "Cider".
+> Verwenden Sie keine Token, die in den Kategorien "Start Seite" oder "Cider" gefunden wurden.
 
 ## <a name="common-shared-controls"></a>Gemeinsam verwendete Steuerelemente
 
-Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verwenden, haben Sie Zugriff auf formatierte Shellsteuerelemente. Sie sollten diese allgemeinen Steuerelemente nicht erneut erstellen. Wenn Sie jedoch eine benutzerdefinierte Befehlsleiste erstellen müssen, kann es erforderlich sein, benutzerdefinierte Steuerelemente zu erstellen. Stellen Sie in diesem Fall sicher, dass Sie die richtigen Tokennamen für jedes der folgenden Steuerelemente verwenden, damit die Benutzeroberfläche mit den anderen Bereichen von Visual Studio konsistent ist.
+Wenn Sie in ihrer Funktion eine standardmäßige Visual Studio-Befehlsleiste verwenden, haben Sie Zugriff auf formatierte Shell-Steuerelemente. Sie sollten diese allgemeinen Steuerelemente nicht neu erstellen. Wenn Sie jedoch eine benutzerdefinierte Befehlsleiste erstellen müssen, kann es erforderlich sein, benutzerdefinierte Steuerelemente zu erstellen. Stellen Sie in diesem Fall sicher, dass Sie die richtigen Tokennamen für jedes der folgenden Steuerelemente verwenden, damit die Benutzeroberfläche mit den anderen Bereichen von Visual Studio konsistent ist.
 
 ### <a name="button-controls"></a>Schaltflächen-Steuerelemente
 
 ![Button-Steuerelement (rote Linie)](../../extensibility/ux-guidelines/media/0303-155_buttoncontrolredline.png "0303-155_ButtonControlRedline")
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Schaltflächen im Dokument, die Sie in Visual Studio-Designs integrieren möchten (Light, Dark, Blue oder ein System-Design mit hohem Kontrast). | ... für Schaltflächen, die vor einem benutzerdefinierten Hintergrund angezeigt werden, der nicht Teil eines Visual Studio-Designs ist. |
+| ... für Schaltflächen im Dokument, die Sie in Visual Studio-Themen integrieren möchten (hell, dunkel, blau oder System hoher Kontrast Design). | ... für Schaltflächen, die für einen benutzerdefinierten Hintergrund angezeigt werden, der nicht Teil eines Visual Studio-Designs ist. |
 
-**Button: Standardzustand**
+**Schaltfläche: Standardstatus**
 
-![Standard-Taste](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Standard-Taste
+![Standard Schaltfläche](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03. Button. Standard")<br />Standard Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Schaltfläche | `CommonControls.Button` |
 | Schaltflächenrahmen | `CommonControls.ButtonBorder` |
 
-**Schaltfläche: Standardzustand**
+**Schaltfläche: Standardstatus**
 
-![Standardschaltfläche](../../extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Standardschaltfläche
+![Standard Schaltfläche](../../extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03. Button. Default")<br />Standard Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Schaltfläche | `CommonControls.ButtonDefault` |
 | Schaltflächenrahmen | `CommonControls.ButtonBorderDefault` |
 
-**Schaltfläche: Deaktivierter Zustand**
+**Schaltfläche: deaktivierter Zustand**
 
-![Deaktivierte Schaltfläche](../../extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Deaktivierte Schaltfläche
+![Schaltfläche deaktiviert](../../extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03. Button. deaktiviert")<br />Schaltfläche deaktiviert
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Schaltfläche | `CommonControls.ButtonDisabled` |
 | Schaltflächenrahmen | `CommonControls.ButtonBorderDisabled` |
 
-**Button: Hover-Status**
+**Schaltfläche: Hover-Zustand**
 
-![Schaltfläche, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Schaltfläche, wenn darauf gezeigt wird
+![Schaltfläche, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03. Button. Hover")<br />Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Schaltfläche | `CommonControls.ButtonHover` |
 | Schaltflächenrahmen | `CommonControls.ButtonBorderHover` |
 
-**Taste: gedrückter Zustand**
+**Schaltfläche: gedrückter Zustand**
 
-![Gedrückter Knopf](../../extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Gedrückter Knopf
+![Gedrückte Schaltfläche](../../extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03. Button. gedrückt")<br />Gedrückte Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Schaltfläche | `CommonControls.ButtonPressed` |
 | Schaltflächenrahmen | `CommonControls.ButtonBorderPressed` |
 
-**Button: fokussierter Zustand**
+**Schaltfläche: Fokus Zustand**
 
-![Fokussierte Taste](../../extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Fokussierte Taste
+![Schaltfläche mit Fokus](../../extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03. Button. Fokus")<br />Schaltfläche mit Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -98,15 +98,15 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Schaltflächenrahmen | `CommonControls.ButtonBorderFocused` |
 
 ### <a name="check-box-controls"></a>Kontrollkästchen-Steuerelemente
-![Kontrollkästchen (rot)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "0303-161_CheckboxRedline")<br />Kontrollkästchen (rot)
+![Kontrollkästchen (Redline)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "0303-161_CheckboxRedline")<br />Kontrollkästchen (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Kontrollkästchen-Steuerelemente, die im Dokumentbrunnen enthalten sind. | ... für jede Benutzeroberfläche, die kein Kontrollkästchen-Steuerelement ist. |
+| ... für Kontrollkästchen-Steuerelemente, die im Dokument gut enthalten sind. | ... für alle Benutzeroberflächen, die kein Kontrollkästchen-Steuerelement sind. |
 
 **Kontrollkästchen: Standardstatus**
 
-![Kontrollkästchen](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303-162_Checkbox")<br />Standard-Kontrollkästchen
+![Kontrollkästchen](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303-162_Checkbox")<br />Standard Kontrollkästchen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -115,9 +115,9 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Text | `CommonControls.CheckBoxText` |
 | Glyphe | `CommonControls.CheckBoxGlyph` |
 
-**Kontrollkästchen: Deaktivierter Status**
+**Kontrollkästchen: deaktivierter Zustand**
 
-![Kontrollkästchen Deaktiviert](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303-163_CheckboxDisabled")<br />Kontrollkästchen Deaktiviert
+![Deaktiviertes Kontrollkästchen](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303-163_CheckboxDisabled")<br />Deaktiviertes Kontrollkästchen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -126,7 +126,7 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Text | `CommonControls.CheckBoxTextDisabled` |
 | Glyphe | `CommonControls.CheckBoxGlyphDisabled` |
 
-**Kontrollkästchen: Hover-Status**
+**Kontrollkästchen: Hover-Zustand**
 
  ![Kontrollkästchen, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-164_checkboxhover.png "0303-164_CheckboxHover")<br />Kontrollkästchen, wenn darauf gezeigt wird
 
@@ -148,9 +148,9 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Text | `CommonControls.CheckBoxTextPressed` |
 | Glyphe | `CommonControls.CheckBoxGlyphPressed` |
 
-**Kontrollkästchen: fokussierter Zustand**
+**Kontrollkästchen: Fokus Zustand**
 
-![Fokussiertes Kontrollkästchen](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303-166_CheckboxFocused")<br />Fokussiertes Kontrollkästchen
+![Kontrollkästchen für Fokus](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303-166_CheckboxFocused")<br />Kontrollkästchen für Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -159,17 +159,17 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Text | `CommonControls.CheckBoxTextFocused` |
 | Glyphe | `CommonControls.CheckBoxGlyphFocused` |
 
-### <a name="drop-downs-and-combo-boxes"></a>Dropdowns und Combo-Boxen
-![Dropdown-/Kombinationsbox (Redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Dropdown-/Kombinationsbox (Redline)
+### <a name="drop-downs-and-combo-boxes"></a>Dropdown-und Kombinations Felder
+![Dropdown-/Kombinations Feld (Redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Dropdown-/Kombinations Feld (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Dropdowns und Combo-Boxen im Dokument gut. | ... für jede Benutzeroberfläche, die keine Dropdown- oder Combobox ist. |
-| | ... für [Befehlsleisten-Dropdowns](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown) oder [Kombinationsfelder](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox). |
+| ... für Dropdown Listen und Kombinations Felder im Dokument. | ... für alle Benutzeroberflächen, die keine Dropdown-oder Kombinations Felder sind. |
+| | ... für [Dropdown-](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown) oder Kombinations [Felder](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)in der Befehlsleiste. |
 
-**Dropdowns und Kombinationsfelder: Standardzustand**
+**Dropdown-und Kombinations Felder: Standardstatus**
 
-![Standard-Dropdown-/Kombinationsfeld](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />Standard-Dropdown-/Kombinationsfeld
+![Standard-Dropdown Feld/Kombinations Feld](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />Standard-Dropdown Feld/Kombinations Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -180,9 +180,9 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Glyphe | `CommonControls.ComboBoxGlyph` |
 | Glyphenhintergrund | `CommonControls.ComboBoxGlyphBackground` |
 
-**Dropdowns und Combo-Boxen: deaktivierter Zustand**
+**Dropdown-und Kombinations Felder: deaktivierter Zustand**
 
-![Deaktiviertes Dropdown-/Kombinationsfeld](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />Deaktiviertes Dropdown-/Kombinationsfeld
+![Deaktiviertes Dropdown/Kombinations Feld](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />Deaktiviertes Dropdown/Kombinations Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -193,7 +193,7 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Glyphe | `CommonControls.ComboBoxGlyphDisabled` |
 | Glyphenhintergrund | `CommonControls.ComboBoxGlyphBackgroundDisabled` |
 
-**Dropdowns und Combo-Boxen: Hover-Status**
+**Dropdown-und Kombinations Felder: Hover-Zustand**
 
 ![Dropdown-/Kombinationsfeld, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")<br />Dropdown-/Kombinationsfeld, wenn darauf gezeigt wird
 
@@ -206,9 +206,9 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Glyphe | `CommonControls.ComboBoxGlyphHover` |
 | Glyphenhintergrund | `CommonControls.ComboBoxGlyphBackgroundHover` |
 
-**Dropdowns und Combo-Boxen: gedrückter Zustand**
+**Dropdown-und Kombinations Felder: gedrückter Zustand**
 
-![Gedrückte Dropdown-/Combo-Box](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />Gedrückte Dropdown-/Combo-Box
+![Gedrücktes Dropdown/Kombinations Feld](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />Gedrücktes Dropdown/Kombinations Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -219,9 +219,9 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Glyphe | `CommonControls.ComboBoxGlyphPressed` |
 | Glyphenhintergrund | `CommonControls.ComboBoxGlyphBackgroundPressed` |
 
-**Dropdowns und Kombinationsfelder Listenelementansicht: gedrückter Zustand**
+**Dropdown Listen und Kombinations Felder Listenelement Ansicht: gedrückter Zustand**
 
- ![Dropdown/Combo-Feld gedrückt Listenelementansicht](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")<br />Dropdown/Combo-Feld gedrückt Listenelementansicht
+ ![Dropdown-/Kombinations Feld: Listenelement Ansicht](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")<br />Dropdown-/Kombinations Feld: Listenelement Ansicht
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -230,9 +230,9 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Elementtext | `CommonControls.ComboBoxListItemText`<br /> `CommonControls.ComboBoxListItemTextHover`<br />`CommonControls.ComboBoxListItemTextPressed`<br />`CommonControls.ComboBoxListItemTextFocused` |
 | Hintergrundschatten | `CommonControls.ComboBoxListBackgroundShadow` |
 
-**Dropdowns und Combo-Boxen: fokussierter Zustand**
+**Dropdown-und Kombinations Felder: Fokus Zustand**
 
-![Dropdown-/Combo-Box mit Fokus](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")<br />Dropdown-/Combo-Box mit Fokus
+![Dropdown-/Kombinations Feld mit Fokus](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")<br />Dropdown-/Kombinations Feld mit Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -243,27 +243,27 @@ Wenn Sie eine standardmäßige Visual Studio-Befehlsleiste in Ihrem Feature verw
 | Glyphe | `CommonControls.ComboBoxGlyphFocused` |
 | Glyphenhintergrund | `CommonControls.ComboBoxGlyphBackgroundFocused` |
 
-**Dropdowns und Kombinationsfelder: Texteingabeauswahl**
+**Dropdown-und Kombinations Felder: Texteingabe Auswahl**
 
-![Dropdown-/Combo-Feld-Texteingabeauswahl](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Dropdown-/Combo-Feld-Texteingabeauswahl
+![Dropdown-/Kombinations Feld-Texteingabe Auswahl](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Dropdown-/Kombinations Feld-Texteingabe Auswahl
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hervorheben | `CommonControls.ComboBoxTextInputSelection` |
+| Markierung | `CommonControls.ComboBoxTextInputSelection` |
 
 ### <a name="tabular-data-grid-controls"></a>Tabellendaten-Steuerelemente (Raster)
 Tabellendaten-Steuerelemente, die auch als Rastersteuerelemente bezeichnet werden. Dies sind gebräuchliche Steuerelemente in Visual Studio, die werden verwendet, um große Datenmengen in mehreren Spalten darzustellen. Standardmäßige Tabellendaten-Steuerelemente sind in Visual Studio an mehreren Orten zu finden: z. a. in Fehlerlisten-Toolfenstern, IntelliTrace-Berichte und Speicherheapansichten. Verwenden Sie immer die standardmäßig bereitgestellten Tabellendaten-Steuerelemente. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die standardmäßigen Tabellendaten-Steuerelemente. Verwenden Sie in dieser Situation die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Tabellendaten-Steuerelementen in Visual Studio konsistent ist.
 
-![Tabellarische Daten-/Rastersteuerung (Rotlinie)](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")<br />Tabellarische Daten-/Rastersteuerung (Rotlinie)
+![Tabellarisches Daten/Raster-Steuerelement (Redline)](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")<br />Tabellarisches Daten/Raster-Steuerelement (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Tabellarische oder Raster-Steuerelemente. | ... für jede Benutzeroberfläche, die kein Tabellen- oder Rastersteuerelement ist. |
+| ... für tabellarische oder Raster Steuerelemente. | ... für alle Benutzeroberflächen, die kein tabellarisches oder Raster Steuerelement sind. |
 
 #### <a name="column-headers"></a>Spaltenüberschriften
 Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionalen Glyphe zusammen, die normalerweise verwendet wird, wenn ein Raster nach dieser Spalte sortiert wird.
 
-**Spaltenkopf: Standardstatus**
+**Spalten Kopfzeile: Standardstatus**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -272,7 +272,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | Vordergrund (Glyphe) | `Header.Glyph` |
 | Rahmen | `Header.SeparatorLine` |
 
-**Spaltenkopf: Hover-Status**
+**Spalten Kopfzeile: Hover-Zustand**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -281,7 +281,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | Vordergrund (Glyphe) | `Header.MouseOverGlyph` |
 | Rahmen | `Header.SeparatorLine` |
 
-**Spaltenkopf: gedrückter Zustand**
+**Spalten Kopfzeile: gedrückter Zustand**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -293,7 +293,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 #### <a name="list-view-items"></a>Listenansichtselemente
  Listenansichtselemente bestehen aus einem Hintergrund und dem Inhalt. Der Inhalt kann Text, ein Symbol oder beides sein.
 
-**Listenansichtselemente: Standardstatus**
+**Listen Ansichts Elemente: Standardstatus**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -301,7 +301,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
 | Rahmen | Keine |
 
-**Listenansichtselemente: aktiver Status**
+**Listen Ansichts Elemente: aktiver Status**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -309,7 +309,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | Vordergrund (Text) | `TreeView.SelectedItemActiveText` |
 | Rahmen | Keine |
 
-**Listenansichtselemente: inaktiver Zustand**
+**Listen Ansichts Elemente: inaktiver Zustand**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -319,72 +319,72 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 
 ### <a name="ui-text"></a>UI-Text
 
-#### <a name="instructional-text"></a>Instruktionstext
-Der Instruktionstext gibt eine prominente Haupterklärung darüber, was in einem Dialog oder einer Dokumentseite zu tun ist.
+#### <a name="instructional-text"></a>Anweisungs Text
+Der Anweisungs Text bietet eine wichtige Erläuterung, was auf einer Dialogfeld-oder Dokument Seite zu tun ist.
 
-![Standardanweisungstext](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Standardanweisungstext
+![Standardmäßiger Anweisungs Text](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Standardmäßiger Anweisungs Text
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `Environment.ControlText` |
 
-#### <a name="secondary-instructional-text"></a>Sekundärer Lehrtext
-In Dokumentseiten mit viel Text und Steuerelementen verwendet ein Anweisungstext einen anderen Farbwert. Dies hilft, zu vermitteln, welche Informationen am wichtigsten sind und die Gesamtdichte der UI-Elemente zu vermindern. (Siehe auch den folgenden Abschnitt zum Hinweistext.)
+#### <a name="secondary-instructional-text"></a>Sekundär Anweisungs Text
+In Dokument Seiten mit vielen Text-und Steuerelementen verwendet ein Anweisungs Text einen anderen Farbwert. Auf diese Weise können Sie übermitteln, welche Informationen am wichtigsten sind, und die Gesamtdichte der Benutzeroberflächen Elemente verringern. (Siehe auch den nachfolgenden Abschnitt zu Hinweis Text.)
 
-![Sekundärer Lehrtext](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Sekundärer Lehrtext
-
-| Element | Tokenname: Category.color |
-| --- | --- |
-| Vordergrund (Text) | `Environment.ControlEditHintText` |
-
-#### <a name="hint-text"></a>Hinweistext
-Hinweistext wird in einem leeren Steuerelement, unterhalb eines Steuerelements oder auf einer leeren Dokumentoberfläche angezeigt, um dem Benutzer zu zeigen, was als Nächstes zu tun ist. Sie können Hinweistext mit Fenster- oder Steuerelementhintergründen verwenden.
-
-**Standard-Hinweistext**
-
-![Standard-Hinweistext](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Standard-Hinweistext
+![Sekundär Anweisungs Text](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Sekundär Anweisungs Text
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `Environment.ControlEditHintText` |
 
-**Erforderlicher Hinweistext**
+#### <a name="hint-text"></a>Hinweis Text
+Der Hinweis Text wird in einem leeren Steuerelement, unterhalb eines Steuer Elements oder auf einer leeren Dokument Oberfläche angezeigt, um dem Benutzer anzuzeigen, was als Nächstes geschehen soll. Sie können den Hinweis Text entweder mit dem Fenster oder dem Steuerelement Hintergrund verwenden.
 
-![Erforderlicher Hinweistext](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Erforderlicher Hinweistext
+**Standard Hinweis Text**
+
+![Standard Hinweis Text](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Standard Hinweis Text
+
+| Element | Tokenname: Category.color |
+| --- | --- |
+| Vordergrund (Text) | `Environment.ControlEditHintText` |
+
+**Erforderlicher Hinweis Text**
+
+![Erforderlicher Hinweis Text](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Erforderlicher Hinweis Text
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `Environment.ControlRequiredHintText` |
 | Hintergrund | `Environment.ControlRequiredBackground` |
 
-**Suchfeld-Steuertext**
+**Textfeld-Steuerelement Text**
 
-> Siehe [Suchfelder](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) für andere Farbtoken im Zusammenhang mit dem Suchsteuerelement.
+> Weitere Farb Token im Zusammenhang mit dem Such Steuerelement finden Sie unter [Suchfelder](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) .
 
-![Suchfeld-Steuertext](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Suchfeld-Steuertext
+![Textfeld-Steuerelement Text](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Textfeld-Steuerelement Text
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `SearchControl.UnfocusedWatermarkText` |
 
-### <a name="hyperlink"></a>Link
-Der Hyperlink ist ein Steuerelement, das kein Vordergrund-/Hintergrundpaar hat. Verwenden Sie in allen Fällen die Vordergrund-Hyperlinkfarbe, die auf dunklem, grauem und weißem Hintergrund korrekt angezeigt wird. Wenn Sie das Farbtoken nicht für das Hyperlinksteuerelement verwenden, wird die Standardsystemfarbe für "gedrückt" angezeigt, die rot blinkt. Das ist das Signal, dass das Steuerelement nicht das richtige Umgebungsfarbtoken verwendet.
+### <a name="hyperlink"></a>Hyperlink
+Der Hyperlink ist ein Steuerelement, das kein Vordergrund-/hintergrundpaar hat. Verwenden Sie in allen Fällen die Vordergrund-Linkfarbe, die in dunklen, grauen und weißen Hintergründen ordnungsgemäß angezeigt wird. Wenn Sie das farbtoken für das Link Steuerelement nicht verwenden, wird die Standardsystem Farbe für "gedrückt" angezeigt, die rot blinkt. Das ist das Signal, dass das Steuerelement nicht das richtige Umgebungs Farb Token verwendet.
 
-![Hyperlink (Rote Linie)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hyperlink (Rote Linie)
+![Hyperlink (Redline)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hyperlink (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie einen benutzerdefinierten Hyperlink erstellen müssen. | ... für alles, was kein Hyperlink ist. |
+| ... Wenn Sie einen benutzerdefinierten Link erstellen müssen. | ... für alles, was kein Hyperlink ist. |
 
 **Hyperlink: Standardstatus**
 
-![Standard-Hyperlink](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303-134_Hyperlink")<br />Standard-Hyperlink
+![Standard Hyperlink](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303-134_Hyperlink")<br />Standard Hyperlink
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `Environment.PanelHyperlink` |
 
-**Hyperlink: Hover-Status**
+**Hyperlink: Hover-Zustand**
 
 ![Hyperlink, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-135_hyperlinkhover.png "0303-135_HyperlinkHover")<br />Hyperlink, wenn darauf gezeigt wird
 
@@ -400,7 +400,7 @@ Der Hyperlink ist ein Steuerelement, das kein Vordergrund-/Hintergrundpaar hat. 
 | --- | --- |
 | Vordergrund (Text) | `Environment.PanelHyperlinkPressed` |
 
-**Hyperlink: Deaktivierter Status**
+**Hyperlink: Zustand "deaktiviert"**
 
 ![Deaktivierter Hyperlink](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "0303-137_HyperlinkDisabled")<br />Deaktivierter Hyperlink
 
@@ -408,18 +408,18 @@ Der Hyperlink ist ein Steuerelement, das kein Vordergrund-/Hintergrundpaar hat. 
 | --- | --- |
 | Vordergrund (Text) | `Environment.PanelHyperlinkDisabled` |
 
-### <a name="infobars"></a>Infobars
+### <a name="infobars"></a>Info leisten
 Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Kontext bereitzustellen. Sie erscheinen immer im oberen Bereich eines Dokument- oder Toolfensters.
 
-![Infoleiste (rot)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Infoleiste (rot)
+![Info Leiste (Redline)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Info Leiste (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... beim Erstellen benutzerdefinierter Infobars. | ... für UI-Elemente, die einer Infoleiste nicht ähneln. |
+| ... beim Erstellen benutzerdefinierter infobars. | ... für Benutzeroberflächen Elemente, die nicht mit einer Info Leiste vergleichbar sind. |
 
-**Infoleiste: Standardstatus**
+**Info Leiste: Standardstatus**
 
-![Standard-Infoleiste](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303-139_Infobar")<br />Standard-Infoleiste
+![Standard Infoleiste](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303-139_Infobar")<br />Standard Infoleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -427,9 +427,9 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Vordergrund (Text) | `InfoBar.InfoBar` |
 | Rahmen | `InfoBar.InfoBarBorder` |
 
-**Infobar Schließen&times;( ) Taste: Standardzustand**
+**Infobar Close ( &times; )-Schaltfläche: Standardstatus**
 
-![Standard-Infobar&times;-Schaltfläche Schließen ( )](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Standard-Infobar&times;-Schaltfläche Schließen ( )
+![Schaltfläche zum Schließen der Standard Infoleiste ( &times; )](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Schaltfläche zum Schließen der Standard Infoleiste ( &times; )
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -437,9 +437,9 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Rahmen | `InfoBar.CloseButtonBorder` |
 | Glyphe | `InfoBar.CloseButtonGlyph` |
 
-**Infobar Schließen&times;( ) Taste: Hover-Zustand**
+**Infobar Close ( &times; )-Schaltfläche: Hover-Zustand**
 
-![Infobar Schließen&times;( ) Taste auf hover](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Infobar Schließen&times;( ) Taste auf hover
+![&times;Schaltfläche zum Schließen der Infoleiste () bei Hover](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />&times;Schaltfläche zum Schließen der Infoleiste () bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -447,9 +447,9 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Rahmen | `InfoBar.CloseButtonHoverBorder` |
 | Glyphe | `InfoBar.CloseButtonHoverGlyph` |
 
-**Infobar Schließen&times;( ) Taste: gedrückter Zustand**
+**Infobar Close ( &times; )-Schaltfläche: gedrückter Zustand**
 
-![Gedrückte Infobar&times;Schaltfläche Schließen ( )](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Gedrückte Infobar&times;Schaltfläche Schließen ( )
+![Schaltfläche zum Schließen der Infoleiste ( &times; )](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Schaltfläche zum Schließen der Infoleiste ( &times; )
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -457,49 +457,49 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Rahmen | `InfoBar.CloseButtonDownBorder` |
 | Glyphe | `InfoBar.CloseButtonDownGlyph` |
 
-**Infobar-Hyperlinkschaltfläche: Standardstatus**
+**Link Schaltfläche für Infobar: Standardstatus**
 
-![Standard-Infobar-Hyperlink-Schaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Standard-Infobar-Hyperlink-Schaltfläche
+![Standardlink Schaltfläche für Info Leiste](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Standardlink Schaltfläche für Info Leiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `InfoBar.Hyperlink` |
 
-**Infobar-Hyperlink-Schaltfläche: Hover-Status**
+**Link Schaltfläche für Infobar: Hover-Zustand**
 
-![Infobar-Hyperlink-Schaltfläche auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Infobar-Hyperlink-Schaltfläche auf dem Mauszeiger
+![Link Schaltfläche für Infobar bei Hover](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Link Schaltfläche für Infobar bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `Infobar.HyperlinkMouseOver`<br />(Mit Unterstreichung) |
 
-**Infobar-Hyperlink-Taste: Gedrückter Zustand**
+**Link Schaltfläche für Infobar: gedrückter Zustand**
 
-![Gedrückte Infobar-Hyperlink-Schaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Gedrückte Infobar-Hyperlink-Schaltfläche
+![Link Schaltfläche für gedrücktes](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Link Schaltfläche für gedrücktes
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `Infobar.HyperlinkMouseDown`<br />(Mit Unterstreichung) |
 
-**Infobar-Inline-Hyperlink (innerhalb eines Satzes): Standardzustand**
+**Inline Hyperlink der Infobar (innerhalb eines Satzes): Standardstatus**
 
-![Standard-Inline-Infobar-Hyperlinkschaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Standard-Inline-Infobar-Hyperlinkschaltfläche
+![Standardlink Schaltfläche für Inline-Info Leiste](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Standardlink Schaltfläche für Inline-Info Leiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `InfoBar.Hyperlink` |
 
-**Infobar-Inline-Hyperlink (innerhalb eines Satzes): Hover-Status**
+**Info Leiste Inline Hyperlink (innerhalb eines Satzes): Hover-Zustand**
 
-![Infobar-Inline-Hyperlink-Schaltfläche auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Infobar-Inline-Hyperlink-Schaltfläche auf dem Mauszeiger
+![Schaltfläche zum Inline Hyperlink der Infobar bei Hover](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Schaltfläche zum Inline Hyperlink der Infobar bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Vordergrund (Text) | `Infobar.HyperlinkMouseOver`<br />(Mit Unterstreichung) |
 
-**Infobar-Inline-Hyperlink (innerhalb eines Satzes): Gedrückter Zustand**
+**Inline Hyperlink der Infobar (innerhalb eines Satzes): gedrückter Zustand**
 
-![Gedrückte Infobar-Inline-Hyperlinkschaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Gedrückte Infobar-Inline-Hyperlinkschaltfläche
+![Schaltfläche zum Inline-Link auf der Infoleiste](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Schaltfläche zum Inline-Link auf der Infoleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -507,7 +507,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infobar-Schaltfläche: Standardstatus**
 
-![Standard-Infoleistenschaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Standard-Infoleistenschaltfläche
+![Standardmäßige Info Leiste-Schaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Standardmäßige Info Leiste-Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -515,9 +515,9 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Vordergrund (Text) | `InfoBar.Button` |
 | Rahmen | `InfoBar.ButtonBorder` |
 
-**Infobar-Taste: Hover-Status**
+**Infobar-Schaltfläche: Hover-Zustand**
 
-![Infobar-Taste auf Hover](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Infobar-Taste auf Hover
+![Infobar-Schaltfläche bei Hover](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Infobar-Schaltfläche bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -525,9 +525,9 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Vordergrund (Text) | `InfoBar.ButtonMouseOver` |
 | Rahmen | `InfoBar.ButtonMouseOverBorder` |
 
-**Infobar-Taste: gedrückter Zustand**
+**Infobar-Schaltfläche: gedrückter Zustand**
 
-![Gedrückte Infobar-Taste](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Gedrückte Infobar-Taste
+![Schaltfläche für gedrückte Info Leiste](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Schaltfläche für gedrückte Info Leiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -535,9 +535,9 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Vordergrund (Text) | `InfoBar.ButtonMouseDown` |
 | Rahmen | `InfoBar.ButtonMouseDownBorder` |
 
-**Infobar-Schaltfläche: Deaktivierter Zustand**
+**Infobar-Schaltfläche: deaktivierter Zustand**
 
-![Deaktivierte Infobar-Schaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Deaktivierte Infobar-Schaltfläche
+![Deaktivierte Info Leiste](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Deaktivierte Info Leiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -545,9 +545,9 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Vordergrund (Text) | `InfoBar.ButtonDisabled` |
 | Rahmen | `InfoBar.ButtonDisabledBorder` |
 
-**Infobar-Schaltfläche: fokussierter Zustand**
+**Infobar-Schaltfläche: Fokus Zustand**
 
-![Fokussierte Infobar-Schaltfläche](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Fokussierte Infobar-Schaltfläche
+![Schaltfläche mit Fokus-Infoleiste](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Schaltfläche mit Fokus-Infoleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -556,24 +556,24 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 | Rahmen | `InfoBar.ButtonFocusBorder` |
 
 ### <a name="scroll-bars"></a>Bildlaufleisten
-Bildlaufleisten werden von der Visual Studio-Umgebung formatiert und müssen nicht thematisiert werden. Sie können jedoch entscheiden, dass Sie die farben nutzen möchten, die in Bildlaufleisten verwendet werden, damit die Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent angezeigt wird.
+Bild Lauf leisten werden von der Visual Studio-Umgebung formatiert und müssen nicht mit einem Design versehen werden. Sie können jedoch entscheiden, dass Sie die in Scrollleisten verwendeten Farben nutzen möchten, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent erscheint.
 
-![Scrollleiste (Rotlinie)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "0303-140_ScrollbarRedline")<br />Scrollleiste (Rotlinie)
+![Bild Lauf Leiste (rote Linie)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "0303-140_ScrollbarRedline")<br />Bild Lauf Leiste (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie eine Benutzeroberfläche erstellen, die mit visual Studio-Bildlaufleisten übereinstimmen soll. | ... für alles, was Sie nicht immer mit der Bildlaufleisten-Benutzeroberfläche übereinstimmen möchten. |
+| ... Wenn Sie eine Benutzeroberfläche erstellen, die mit Visual Studio-Bild Lauf leisten verglichen werden soll. | ... für alles, was Sie nicht immer mit der Bild Lauf leisten-Benutzeroberfläche vergleichen möchten. |
 
-**Bildlaufleiste: Standardzustand**
+**Scrollleiste: Standardstatus**
 
-![Standard-Bildlaufleiste](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "0303-141_Scrollbar")<br />Standard-Bildlaufleiste
+![Standard Scrollleiste](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "0303-141_Scrollbar")<br />Standard Scrollleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Bildlaufleiste | `Environment.ScrollBarBackground` |
 | Vordergrund (Ziehpunkt) | `Environment.ScrollBarThumbBackground` |
 
-**Scrollleiste: Hover-Status**
+**Bild Lauf Leiste: Hover-Zustand**
 
 ![Bildlaufleiste, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-143_scrollbarhover.png "0303-143_ScrollbarHover")<br />Bildlaufleiste, wenn darauf gezeigt wird
 
@@ -591,31 +591,31 @@ Bildlaufleisten werden von der Visual Studio-Umgebung formatiert und müssen nic
 | Bildlaufleiste | `Environment.ScrollBarBackground` |
 | Vordergrund (Ziehpunkt) | `Environment.ScrollBarThumbPressedBackground` |
 
-**Bildlaufleistenpfeil: Standardzustand**
+**ScrollBar-Pfeil: Standardstatus**
 
-![Standard-Bildlaufleistenpfeil](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303-142_ScrollbarArrow")<br />Standard-Bildlaufleistenpfeil
+![Standard Schiebe leisten Pfeil](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303-142_ScrollbarArrow")<br />Standard Schiebe leisten Pfeil
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ScrollBarArrowBackground`<br />(Auf die gleiche Farbe wie die Bildlaufleiste eingestellt.) |
+| Hintergrund | `Environment.ScrollBarArrowBackground`<br />(Auf die gleiche Farbe wie die Bild Lauf Leiste festgelegt.) |
 | Vordergrund (Glyphe) | `Environment.ScrollBarArrowGlyph` |
 
-**Bildlaufbalkenpfeil: Hover-Status**
+**ScrollBar-Pfeil: Hover-Zustand**
 
 ![Bildlaufleiste (Pfeil), wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-144_scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br />Bildlaufleiste (Pfeil), wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ScrollBarArrowMouseOverBackground`<br />(Auf die gleiche Farbe wie die Bildlaufleiste eingestellt.) |
+| Hintergrund | `Environment.ScrollBarArrowMouseOverBackground`<br />(Auf die gleiche Farbe wie die Bild Lauf Leiste festgelegt.) |
 | Vordergrund (Glyphe) | `Environment.ScrollBarArrowGlyphMouseOver` |
 
-**Bildlaufbalkenpfeil: gedrückter Zustand**
+**ScrollBar-Pfeil: gedrückter Zustand**
 
-![Gedrückter Bildlaufleistenpfeil](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br />Gedrückter Bildlaufleistenpfeil
+![Pfeil der Bild Lauf Leiste](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br />Pfeil der Bild Lauf Leiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ScrollBarArrowPressedBackground`<br />(Auf die gleiche Farbe wie die Bildlaufleiste eingestellt.) |
+| Hintergrund | `Environment.ScrollBarArrowPressedBackground`<br />(Auf die gleiche Farbe wie die Bild Lauf Leiste festgelegt.) |
 | Vordergrund (Glyphe) | `Environment.ScrollBarArrowGlyphPressed` |
 
 ### <a name="search-boxes"></a><a name="BKMK_SearchBoxes"></a>Suchfelder
@@ -631,16 +631,16 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 - "Deaktiviert" bedeutet, dass die Suchfunktion für den aktuellen Kontext deaktiviert ist.
 
-![Suchfeld (redline)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Suchfeld (redline)
+![Suchfeld (rote Linie)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Suchfeld (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie ein benutzerdefiniertes Suchfeld entwerfen. | ... für alles, was kein Suchfeld ist. |
-| | ... für alles, was Sie nicht immer mit der Suchfeld-Benutzeroberfläche übereinstimmen möchten. |
+| ... beim Entwerfen eines benutzerdefinierten Suchfelds. | ... für alles, was kein Suchfeld ist. |
+| | ... für alle Elemente, die nicht immer mit der Such Feld Benutzeroberfläche verglichen werden sollen. |
 
-**Fokussiertes Sucheingabefeld**
+**Eingabefeld für die Suche nach Fokus**
 
-![Fokussiertes Sucheingabefeld](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br />Fokussiertes Sucheingabefeld
+![Eingabefeld für die Suche nach Fokus](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br />Eingabefeld für die Suche nach Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -649,9 +649,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Rahmen | `SearchControl.FocusedBorder` |
 | Trennzeichen | `SearchControl.FocusedDropDownSeparator` |
 
-**Unkonzentriertes, aktives Sucheingabefeld**
+**Ohne Fokus, aktives Sucheingabe Feld**
 
-![Suche (Eingabefeld) ohne Fokus](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />Unkonzentriertes, aktives Sucheingabefeld
+![Suche (Eingabefeld) ohne Fokus](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />Ohne Fokus, aktives Sucheingabe Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -660,9 +660,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Rahmen | `SearchControl.UnfocusedBorder` |
 | Trennzeichen | `SearchControl.DropDownSeparator` |
 
-**Unkonzentriertes, inaktives Sucheingabefeld**
+**Nicht fokussiertes, inaktives Sucheingabe Feld**
 
-![Unkonzentriertes, inaktives Sucheingabefeld](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Unkonzentriertes, inaktives Sucheingabefeld
+![Nicht fokussiertes, inaktives Sucheingabe Feld](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Nicht fokussiertes, inaktives Sucheingabe Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -671,9 +671,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Rahmen | `SearchControl.UnfocusedBorder` |
 | Trennzeichen | `SearchControl.DropDownSeparator` |
 
-**Hervorgehobenes Sucheingabefeld (nur Text)**
+**Hervorgehobene Sucheingabe Feld (nur Text)**
 
-![Hervorgehobenes Sucheingabefeld](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />Hervorgehobenes Sucheingabefeld
+![Hervorgehobene Sucheingabe Feld](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />Hervorgehobene Sucheingabe Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -682,9 +682,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Rahmen | Keine |
 | Trennzeichen | `SearchControl.FocusedDropDownSeparator` |
 
-**Deaktiviertes Sucheingabefeld**
+**Deaktiviertes Sucheingabe Feld**
 
-![Deaktiviertes Sucheingabefeld](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br />Deaktiviertes Sucheingabefeld
+![Deaktiviertes Sucheingabe Feld](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br />Deaktiviertes Sucheingabe Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -693,9 +693,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Rahmen | `SearchControl.DisabledBorder` |
 | Trennzeichen | `SearchControl.DropDownSeparator` |
 
-**Fokussierte Suchaktionsschaltfläche**
+**Schaltfläche mit Fokus auf Suchaktion**
 
-![Suche (Aktionsschaltfläche) mit Fokus](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br />Fokussierte Suchaktionsschaltfläche
+![Suche (Aktionsschaltfläche) mit Fokus](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br />Schaltfläche mit Fokus auf Suchaktion
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -703,23 +703,23 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Vordergrund (Glyphe "Suchen") | `SearchControl.SearchGlyph` |
 | Vordergrund (Glyphe "Beenden") | `SearchControl.StopGlyph` |
 | Vordergrund (Glyphe "Löschen") | `SearchControl.ClearGlyph` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 
-**Unfokussierte Suchaktionsschaltfläche**
+**Schaltfläche für die Suchaktion ohne Fokus**
 
-![Unfokussierte Suchaktionsschaltfläche](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />Unfokussierte Suchaktionsschaltfläche
+![Schaltfläche für die Suchaktion ohne Fokus](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />Schaltfläche für die Suchaktion ohne Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Nicht zutreffend |
+| Hintergrund | – |
 | Vordergrund (Glyphe "Suchen") | `SearchControl.SearchGlyph` |
 | Vordergrund (Glyphe "Beenden") | `SearchControl.StopGlyph` |
 | Vordergrund (Glyphe "Löschen") | `SearchControl.ClearGlyph` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 
-**Gedrückte Suchaktionsschaltfläche**
+**Schaltfläche zum Durchsuchen der Aktion**
 
-![Gedrückte Suchaktionsschaltfläche](../../extensibility/ux-guidelines/media/0303-116-1_searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br />Gedrückte Suchaktionsschaltfläche
+![Schaltfläche zum Durchsuchen der Aktion](../../extensibility/ux-guidelines/media/0303-116-1_searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br />Schaltfläche zum Durchsuchen der Aktion
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -727,9 +727,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Vordergrund (Glyphe) | `SearchControl.ActionButtonMouseDownGlyph` |
 | Rahmen | `SearchControl.ActionButtonMouseDownBorder` |
 
-**Deaktivierte Suchaktionsschaltfläche**
+**Schaltfläche zum Deaktivieren der Suchaktion**
 
-![Suche (Aktionsschaltfläche), deaktiviert](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br />Deaktivierte Suchaktionsschaltfläche
+![Suche (Aktionsschaltfläche), deaktiviert](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br />Schaltfläche zum Deaktivieren der Suchaktion
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -737,9 +737,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Vordergrund (Glyphe) | `SearchControl.ActionButtonDisabledGlyph` |
 | Rahmen | Keine |
 
-**Fokussierte Suche Dropdown-Taste**
+**Dropdown Schaltfläche für fokussierte Suche**
 
-![Fokussierte Suche Dropdown-Taste](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br />Fokussierte Suche Dropdown-Taste
+![Dropdown Schaltfläche für fokussierte Suche](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br />Dropdown Schaltfläche für fokussierte Suche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -747,9 +747,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Vordergrund (Glyphe) | `SearchControl.FocusedDropDownButtonGlyph` |
 | Rahmen | `SearchControl.FocusedDropDownButtonBorder` |
 
-**Unfokussierte Such-Dropdown-Schaltfläche**
+**Dropdown Schaltfläche für die Suche ohne Fokus**
 
-![Unfokussierte Such-Dropdown-Schaltfläche](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br />Unfokussierte Such-Dropdown-Schaltfläche
+![Dropdown Schaltfläche für die Suche ohne Fokus](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br />Dropdown Schaltfläche für die Suche ohne Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -757,9 +757,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Vordergrund (Glyphe) | `SearchControl.UnfocusedDropDownButtonGlyph` |
 | Rahmen | `SearchControl.UnfocusedDropDownButtonBorder` |
 
-**Gedrückte Such-Dropdown-Taste**
+**Dropdown Schaltfläche für gedrückte Suche**
 
-![Gedrückte Such-Dropdown-Taste](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />Gedrückte Such-Dropdown-Taste
+![Dropdown Schaltfläche für gedrückte Suche](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />Dropdown Schaltfläche für gedrückte Suche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -767,9 +767,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Vordergrund (Glyphe) | `SearchControl.MouseDownDropDownButtonGlyph` |
 | Rahmen | `SearchControl.MouseDownDropDownButtonBorder` |
 
-**Dropdown-Schaltfläche für deaktivierte Suche**
+**Dropdown Schaltfläche für deaktivierte Suche**
 
-![Dropdown-Schaltfläche für deaktivierte Suche](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br />Dropdown-Schaltfläche für deaktivierte Suche
+![Dropdown Schaltfläche für deaktivierte Suche](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br />Dropdown Schaltfläche für deaktivierte Suche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -778,16 +778,16 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | Rahmen | Keine |
 
 #### <a name="search-drop-down-lists"></a>Dropdownlisten im Suchfeld
-Das Dropdown-Menü des Suchfelds kann etwas komplexer sein als andere Dropdownmenüs in Visual Studio. Die Abschnitte "vorgeschlagene Suchen" und "Suchoptionen" können allein oder zusammen im Menü angezeigt werden, und jeder wird separat eingefärbt. Die beiden Bereiche werden außerdem durch eine Linie getrennt, wenn sie zusammen auftreten, und das gesamte Dropdownmenü ist von einem Rahmen umgeben.
+Das Dropdown Menü Suchfeld ist möglicherweise etwas komplexer als andere Dropdown Menüs in Visual Studio. Die Abschnitte "Empfohlene Suchvorgänge" und "Suchoptionen" können einzeln oder im Menü angezeigt werden, und jede einzelne ist separat gefärbt. Die beiden Bereiche werden außerdem durch eine Linie getrennt, wenn sie zusammen auftreten, und das gesamte Dropdownmenü ist von einem Rahmen umgeben.
 
-![Dropdown-Liste suchen (rote Linie)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />Dropdown-Liste suchen (rote Linie)
+![Dropdown Liste suchen (Redline)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />Dropdown Liste suchen (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie eine benutzerdefinierte Such-Dropdown-Liste erstellen. | ... für Dropdown-Listen, die in anderen Kontexten angezeigt werden. |
-| ... die richtigen Tokennamen für die richtigen Listenkomponenten. | ... in einer anderen als angegebenen Hintergrund-/Vordergrundkombination. |
+| ... beim Erstellen einer benutzerdefinierten Suchdropdown Liste. | ... für Dropdown Listen, die in anderen Kontexten angezeigt werden. |
+| ... die richtigen Tokennamen für die richtigen Listen Komponenten. | ... in einer anderen Kombination aus Hintergrund und Vordergrund als angegeben. |
 
-**Suche Dropdown-Listenelemente**
+**Dropdown Listenelemente suchen**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -795,48 +795,48 @@ Das Dropdown-Menü des Suchfelds kann etwas komplexer sein als andere Dropdownme
 | Trennzeichen | `SearchControl.PopupSectionHeaderSeparator` |
 | Shadow | `Environment.DropShadowBackground` |
 
-**Vorgeschlagene Suchen: Standardstatus**
+**Empfohlene Suchvorgänge: Standardstatus**
 
-![Standard-Vorgeschlagene Suchen](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303-125_SearchSuggested")<br />Standard-Vorgeschlagene Suchen
+![Standardmäßige Empfohlene suchen](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303-125_SearchSuggested")<br />Standardmäßige Empfohlene suchen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `SearchControl.PopupItemText` |
 
-**Vorgeschlagene Suchen: Hover-Status**
+**Empfohlene Suchvorgänge: Hover-Zustand**
 
-![Vorgeschlagene Suchanfragen auf Hover](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br />Vorgeschlagene Suchanfragen auf Hover
+![Empfohlene Suchvorgänge bei Hover](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br />Empfohlene Suchvorgänge bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `SearchControl.PopupMouseOverItemText` |
 | Rahmen | `SearchControl.PopupControlMouseOverBorder` |
 
 **Suchoptionen: Standardstatus**
 
-![Kontrollkästchen "Suche"](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303-126_SearchCheckbox")<br />Standardsuchoptionen (Kontrollkästchen)
+![Kontrollkästchen "Suche"](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303-126_SearchCheckbox")<br />Standard Suchoptionen (Kontrollkästchen)
 
-![Suchoptionen](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303-127_SearchOptions")<br />Standardsuchoptionen (Link)
+![Suchoptionen](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303-127_SearchOptions")<br />Standard Suchoptionen (Link)
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Kontrollkästchentext) | `SearchControl.PopupCheckboxText` |
 | Vordergrund (Linktext) | `SearchControl.PopupButtonText` |
-| Headerhintergrund | `SearchControl.PopupSectionHeaderGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Headerhintergrund | `SearchControl.PopupSectionHeaderGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Headertext) | `SearchControl.PopupSectionHeaderText` |
 
-**Suchoptionen: Hover-Status**
+**Suchoptionen: Hover-Zustand**
 
 ![Suchoptionen (Kontrollkästchen) bei Hover](../../extensibility/ux-guidelines/media/0303-129_searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br />Suchoptionen (Kontrollkästchen) bei Hover
 
-![Suchoptionen (Link) auf Hover](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303-130_SearchOptionsHover")<br />Suchoptionen (Link) auf Hover
+![Suchoptionen (Link) beim Hover](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303-130_SearchOptionsHover")<br />Suchoptionen (Link) beim Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Kontrollkästchentext) | `SearchControl.PopupCheckboxMouseDownText` |
 | Vordergrund (Linktext) | `SearchControl.PopupButtonMouseDownText` |
 | Rahmen | `SearchControl.PopupControlMouseOverBorder` |
@@ -849,24 +849,24 @@ Das Dropdown-Menü des Suchfelds kann etwas komplexer sein als andere Dropdownme
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Kontrollkästchen-Hintergrund | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Kontrollkästchen-Hintergrund | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Kontrollkästchentext) | `SearchControl.PopupCheckboxMouseDownText` |
-| Linkhintergrund | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Linkhintergrund | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Linktext) | `SearchControl.PopupButtonMouseDownText` |
 
-### <a name="tree-views"></a><a name="BKMK_TreeView"></a>Baumansichten
-Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Explorers und der Klassenansicht, `TreeView` implementieren ein hierarchisches Organisationsschema, dessen Farben durch Farbnamen in der Kategorie gesteuert werden. Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.
+### <a name="tree-views"></a><a name="BKMK_TreeView"></a> Struktur Ansichten
+Mehrere Tool Fenster, einschließlich der Projektmappen-Explorer, Server-Explorer und Klassenansicht, implementieren ein hierarchisches Organisationsschema, dessen Farben über Farbnamen in der Kategorie gesteuert werden `TreeView` . Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.
 
-![Baumansicht (Rotlinie)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Baumansicht (Rotlinie)
+![Strukturansicht (Redline)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Strukturansicht (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... überall, wo Sie eine hierarchische Organisationsansicht implementieren müssen. | ... für alles, was einer Baumansicht nicht ähnelt. |
-| | ... in einer anderen als angegebenen Hintergrund-/Vordergrundkombination. |
+| ... überall, wo Sie eine hierarchische Organisations Ansicht implementieren müssen. | ... für alle Elemente, die mit einer Strukturansicht nicht vergleichbar sind. |
+| | ... in einer anderen Kombination aus Hintergrund und Vordergrund als angegeben. |
 
-**Strukturansichtselement: Standardstatus**
+**Struktur Ansichts Element: Standardstatus**
 
-![Standardstrukturansichtselement](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303-148_TreeView")<br />Standardstrukturansichtselement
+![Standardstruktur Ansichts Element](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303-148_TreeView")<br />Standardstruktur Ansichts Element
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -875,9 +875,9 @@ Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Exp
 | Vordergrund (Glyphe) | `TreeView.Glyph` |
 | Rahmen | Keine |
 
-**Baumansichtselement: Hover-Status**
+**Struktur Ansichts Element: Hover-Zustand**
 
-![Baumansichtselement auf hover](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303-149_TreeViewHover")<br />Baumansichtselement auf hover
+![Struktur Ansichts Element bei Hover](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303-149_TreeViewHover")<br />Struktur Ansichts Element bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -886,9 +886,9 @@ Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Exp
 | Vordergrund (Glyphe) | `TreeView.GlyphMouseOver` |
 | Rahmen | Keine |
 
-**Baumansichtselement: Über den Zustand ziehen**
+**Struktur Ansichts Element: ziehen Sie den Zustand.**
 
-![Baumansichtselement beim Ziehen über](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303-150_TreeViewDragOver")<br />Baumansichtselement beim Ziehen über
+![Struktur Ansichts Element bei Drag over](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303-150_TreeViewDragOver")<br />Struktur Ansichts Element bei Drag over
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -897,9 +897,9 @@ Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Exp
 | Vordergrund (Glyphe) | `TreeView.DragOverItemGlyph` |
 | Rahmen | Keine |
 
-**Baumansichtselement: ausgewählter, fokussierter Zustand**
+**Struktur Ansichts Element: ausgewählt, Fokus Zustand**
 
-![Ausgewähltes und fokussiertes Baumansichtselement](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303-151_TreeViewFocused")<br />Ausgewähltes und fokussiertes Baumansichtselement
+![Ausgewähltes und fokussiertes Struktur Ansichts Element](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303-151_TreeViewFocused")<br />Ausgewähltes und fokussiertes Struktur Ansichts Element
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -908,9 +908,9 @@ Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Exp
 | Vordergrund (Glyphe) | `TreeView.SelectedItemActiveGlyph` |
 | Rahmen | `TreeView.FocusVisualBorder` |
 
-**Baumansichtselement: ausgewählter, unfokussierter Zustand**
+**Struktur Ansichts Element: ausgewählt, Status ohne Fokus**
 
-![Ausgewähltes und unfokussiertes Strukturansichtselement](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303-152_TreeViewUnfocused")<br />Ausgewähltes und unfokussiertes Strukturansichtselement
+![Ausgewähltes und nicht fokussiertes Struktur Ansichts Element](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303-152_TreeViewUnfocused")<br />Ausgewähltes und nicht fokussiertes Struktur Ansichts Element
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -919,9 +919,9 @@ Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Exp
 | Vordergrund (Glyphe) | `TreeView.SelectedItemInactiveGlyph` |
 | Rahmen | Keine |
 
-**Strukturansichtselement: schwebender, ausgewählter und fokussierter Zustand**
+**Struktur Ansichts Element: mit dem Mauszeiger, ausgewählt und fokussiertem Zustand**
 
-![Ausgewähltes und fokussiertes Baumansichtselement auf der Mauszeiger](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br />Ausgewähltes und fokussiertes Baumansichtselement auf der Mauszeiger
+![Ausgewähltes und fokussiertes Struktur Ansichts Element bei Hover](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br />Ausgewähltes und fokussiertes Struktur Ansichts Element bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -930,9 +930,9 @@ Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Exp
 | Vordergrund (Glyphe) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | Rahmen | `TreeView.FocusVisualBorder` |
 
-**Strukturansichtselement: schwebender, ausgewählter und unfokussierter Zustand**
+**Struktur Ansichts Element: gepoolt, ausgewählt und ohne Fokus**
 
-![Ausgewähltes und unfokussiertes Baumansichtselement auf der Mauszeiger](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br />Ausgewähltes und unfokussiertes Baumansichtselement auf der Mauszeiger
+![Ausgewähltes und nicht fokussiertes Struktur Ansichts Element bei Hover](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br />Ausgewähltes und nicht fokussiertes Struktur Ansichts Element bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -944,22 +944,22 @@ Mehrere Toolfenster, einschließlich des Projektmappen-Explorers, des Server-Exp
 ## <a name="shell-appearance"></a>Shell-Darstellung
 
 ### <a name="background"></a>Hintergrund
-Der Umgebungshintergrund setzt sich aus zwei Ebenen zusammen. Die untere Ebene ist eine Volltonfarbe, die die gesamte IDE abdeckt. Die obere Ebene befindet sich unterhalb der Befehlsablage und zwischen den automatisch ausgeblendeten Kanälen des Toolfensters am linken und rechten Rand der IDE. Die oberen und unteren Hintergrundebenen werden in den Themen Licht und Dunkel auf die gleiche Farbe festgelegt.
+Der Umgebungshintergrund setzt sich aus zwei Ebenen zusammen. Die untere Ebene ist eine Volltonfarbe, die die gesamte IDE abdeckt. Die obere Ebene befindet sich unterhalb der Befehlsablage und zwischen den automatisch ausgeblendeten Kanälen des Toolfensters am linken und rechten Rand der IDE. Die obere und untere Hintergrund Ebene werden im hellen und dunklen Design auf dieselbe Farbe festgelegt.
 
-![Hintergrund der Visual Studio-Shell (Rote Linie)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Hintergrund der Visual Studio-Shell (Rote Linie)
+![Visual Studio Shell-Hintergrund (Redline)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Visual Studio Shell-Hintergrund (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Orte, an denen Sie dem Hintergrund der Visual Studio-Umgebung entsprechen möchten. | ... als Füllung für Orte, die keine Hintergrundflächen sind. |
-| | ... als Hintergrund, auf dem Vordergrundelemente platziert werden können. |
+| ... für Orte, an denen der Hintergrund der Visual Studio-Umgebung angepasst werden soll. | ... als Füllung für Orte, die keine Hintergrund Oberflächen sind. |
+| | ... als Hintergrund für das Platzieren von Vordergrund Elementen. |
 
-**Aussehen der unteren Schichtschale**
+**Shelldarstellung der untersten Ebene**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.EnvironmentBackground` |
 
-**Darstellung der obersten Schicht-Shell**
+**Shelldarstellung der obersten Schicht**
 
 > Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps
 
@@ -970,14 +970,14 @@ Der Umgebungshintergrund setzt sich aus zwei Ebenen zusammen. Die untere Ebene i
 ### <a name="command-shelf"></a>Befehlsablage
 Für die Hintergründe der Befehlsablage werden zwei Sätze von Tokennamen verwendet: einer für die Position der Menüleiste und der andere für die Position der Befehlsleisten. Eine einzelne Befehlszeilengruppe verfügt über eigene Hintergrund-Farbwerte, die im Abschnitt "Befehlsleiste" ausführlicher erörtert werden. Menü- und Befehlsleistentext wird in den entsprechenden Abschnitten zur Menü- und Befehlsleiste erörtert.
 
-![Visual Studio-Befehlsregal (Rote Linie)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Visual Studio-Befehlsregal (Rote Linie)
+![Visual Studio-Befehls Regal (Redline)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Visual Studio-Befehls Regal (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Bereiche, in denen Sie Menüs oder Symbolleisten platzieren. | ... für Bereiche, die einem Befehlsregal nicht ähneln. |
-|... mit der richtigen Hintergrund-/Vordergrundtokennamenkombination. | |
+| ... für Bereiche, in denen Menüs oder Symbolleisten platziert werden. | ... für Bereiche, die mit einem Befehls Regal nicht vergleichbar sind. |
+|... mit der richtigen Kombination aus Hintergrund-/vordergrundtokenname. | |
 
-**Befehlsregal-Menüleiste**
+**Befehls Regal-Menüleiste**
 
 > Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps
 
@@ -985,7 +985,7 @@ Für die Hintergründe der Befehlsablage werden zwei Sätze von Tokennamen verwe
 | --- | --- |
 | Hintergrund | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-**Befehlsregal-Befehlsleiste**
+**Befehlsleiste für Befehls Regal**
 
 > Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps
 
@@ -998,38 +998,38 @@ Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8
 
 ![Manifest-Designer (Redline)](../../extensibility/ux-guidelines/media/0303-175_manifestdesignerredline.png "0303-175_ManifestDesignerRedline")<br />Manifest-Designer (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Designer, die dem Manifest-Designer ähneln. | ... wenn Sie mehr als sechs Registerkarten haben. |
-| ... anstelle der Verwendung gemeinsamer Registerkartensteuerelemente am oberen Rand eines Editors innerhalb des Dokumentbrunnens. | ... für jede Benutzeroberfläche, die nicht wie der Manifest-Designer strukturiert ist. |
+| ... für Designer, die dem Manifest-Designer ähneln. | ... Wenn Sie über mehr als sechs Registerkarten verfügen. |
+| ... anstelle von allgemeinen Registerkarten-Steuerelementen, die im oberen Bereich eines Editors im Dokumentbereich verwendet werden. | ... für jede Benutzeroberfläche, die nicht wie der Manifest-Designer strukturiert ist. |
 
-**Manifest-Designer-Registerkarte: Standardstatus**
+**Manifest-Designer hat Registerkarte ausgewählt: Standardstatus**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `ManifestDesigner.TabActive` |
 | Rahmen | Keine |
 
-**Manifest Designer ausgewählter Beschreibungsbereich: Standardzustand**
+**Im Manifest-Designer ausgewählter Beschreibungs Bereich: Standardstatus**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `ManifestDesigner.DescriptionPane` |
 
-**Manifest Designer ausgewählte Inhaltsseite: Standardstatus**
+**Ausgewählte Inhaltsseite des Manifest-Designers: Standardstatus**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `ManifestDesigner.Background` |
-| Dialogfeld-Hilfetext | `ManifestDesigner.WatermarkText`<br />(Dieser Tokenname stimmt nicht mit seiner Funktion überein.) |
+| Dialogfeld-Hilfetext | `ManifestDesigner.WatermarkText`<br />(Dieser Tokenname stimmt nicht mit seiner Funktion.) |
 
-**Registerkarte Manifest-Designer: nicht ausgewählter Zustand**
+**Registerkarte "Manifest-Designer": nicht ausgewähltes Zustand**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `ManifestDesigner.Tab.Inactive` |
 
-**Registerkarte Manifest-Designer: Hover-Status**
+**Registerkarte Manifest-Designer: Hover-Zustand**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1037,31 +1037,31 @@ Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8
 
 ## <a name="command-structures"></a>Befehlsstrukturen
 
-### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Menüs
-Menüs können an mehreren Stellen in Visual Studio auftreten: in der Hauptmenüleiste, eingebettet in Dokument- oder Toolfenster, oder mit der rechten Maustaste an verschiedenen Stellen in der IDE. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.
+### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Kreiert
+Menüs können an mehreren Stellen in Visual Studio vorkommen: in der Hauptmenüleiste, eingebettet in Dokument-oder Tool Fenster, oder wenn Sie mit der rechten Maustaste an verschiedenen Positionen in der gesamten IDE klicken. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.
 
-![Visual Studio-Menü (Rotlinie)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Visual Studio-Menü (Rotlinie)
+![Visual Studio-Menü (Redline)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Visual Studio-Menü (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie ein benutzerdefiniertes Menü erstellen müssen.| ... die Hintergrundfarbe allein. Verwenden Sie immer die angegebene Kombination aus Hintergrund-/Vordergrundfarbe. |
-| ... wenn Sie über eine neue UI-Komponente verfügen, die den Visual Studio-Menüs entsprechen soll.| |
+| ... Wenn Sie ein benutzerdefiniertes Menü erstellen müssen.| ... allein die Hintergrundfarbe. Verwenden Sie immer die angegebene Kombination aus Hintergrund-/Vordergrundfarbe. |
+| ... Wenn Sie über eine neue Benutzeroberflächen Komponente verfügen, die mit den Visual Studio-Menüs verglichen werden soll.| |
 
-#### <a name="menu-titles"></a>Menütitel
+#### <a name="menu-titles"></a>Menü Titel
 Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie einer optionalen Glyphe, die normalerweise für Menüs in einer Befehlsleiste verwendet wird.
 
-![Menütitel (Rotlinie)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "0303-001_MenuTitleRedline")<br />Menütitel (Rotlinie)
+![Menütitel (Redline)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "0303-001_MenuTitleRedline")<br />Menütitel (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie einen benutzerdefinierten Menütitel erstellen. | ... für alles, was Sie nicht immer mit dem Menütitel übereinstimmen möchten. |
-| | ... in einer anderen als angegebenen Hintergrund-/Vordergrundkombination. |
+| ... jedes Mal, wenn Sie einen benutzerdefinierten Menütitel erstellen. | ... für alle Elemente, die Sie nicht immer mit dem Menütitel vergleichen möchten. |
+| | ... in einer anderen Kombination aus Hintergrund und Vordergrund als angegeben. |
 
 **Menütitel: Standardstatus**
 
-![Standardmenütitel](../../extensibility/ux-guidelines/media/0303-002_menutitledefault.png "0303-002_MenuTitleDefault")<br />Standardmenütitel
+![Standardmenü Titel](../../extensibility/ux-guidelines/media/0303-002_menutitledefault.png "0303-002_MenuTitleDefault")<br />Standardmenü Titel
 
-![Standardmenütitel mit Glyphe](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br />Standardmenütitel mit Glyphe
+![Standardmenü Titel mit Glyphe](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br />Standardmenü Titel mit Glyphe
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1070,7 +1070,7 @@ Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie 
 | Vordergrund (Glyphe) | `Environment.CommandBarMenuGlyph` |
 | Rahmen | Keine |
 
-**Menütitel: Hover-Status**
+**Menütitel: Hover-Zustand**
 
 ![Menütitel, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-004_menutitlehover.png "0303-004_MenuTitleHover")<br />Menütitel, wenn darauf gezeigt wird
 
@@ -1078,7 +1078,7 @@ Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie 
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.CommandBarTextHover` |
 | Vordergrund (Glyphe) | `Environment.CommandBarMenuMouseOverGlyph` |
 | Rahmen | `Environment.CommandBarBorder` |
@@ -1091,12 +1091,12 @@ Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie 
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarMenuMouseDownGlyph` |
-| Rahmen | `Environment.CommandBarMenuBorder`<br />(Nur links, oben und rechts.) |
+| Rahmen | `Environment.CommandBarMenuBorder`<br />(Nur Links, obere und Rechte Seite.) |
 
-**Menütitel: deaktivierter Status**
+**Menütitel: deaktivierter Zustand**
 
 ![Deaktivierter Menütitel mit Glyphe](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br />Deaktivierter Menütitel mit Glyphe
 
@@ -1112,18 +1112,18 @@ Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, 
 
 ![Menüelemente (rote Linie)](../../extensibility/ux-guidelines/media/0303-009_menuitemredline.png "0303-009_MenuItemRedline")
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 |---|---|
-| ... für jede Dropdown-Liste, die über eine Menüleiste oder Befehlsleiste gestartet wird. | ... für jede Dropdown-Liste in einem anderen Kontext. |
-| | ... in einer anderen als angegebenen Hintergrund-/Vordergrundkombination. |
+| ... für alle Dropdown Listen, die von einer Menüleiste oder Befehlsleiste aus gestartet werden. | ... für alle Dropdown Listen in einem anderen Kontext. |
+| | ... in einer anderen Kombination aus Hintergrund und Vordergrund als angegeben. |
 
-**Menüelemente: Standardstatus**
+**Menü Elemente: Standardstatus**
 
-![Standardmenüelemente](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "0303-010_MenuDefault")<br />Standardmenüelemente
+![Standardmenü Elemente](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "0303-010_MenuDefault")<br />Standardmenü Elemente
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
 | Vordergrund (Untermenü-Glyphe) | `Environment.CommandBarMenuSubmenuGlyph` |
 | Rahmen | `Environment.CommandBarMenuBorder` |
@@ -1131,11 +1131,11 @@ Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, 
 | Trennzeichen | `Environment.CommandBarMenuSeparator` |
 | Shadow | `Environment.DropShadowBackground` |
 
-**Menüelemente: geprüfte und ausgewählte Zustände**
+**Menü Elemente: aktiviert und ausgewählte Zustände**
 
-![Menü, aktiviert](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Geprüfter Menüpunkt
+![Menü, aktiviert](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Aktiviertes Menü Element
 
-![Menü, ausgewählt](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303-012_MenuSelected")<br />Ausgewählter Menüpunkt
+![Menü, ausgewählt](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303-012_MenuSelected")<br />Ausgewähltes Menü Element
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1144,13 +1144,13 @@ Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, 
 | Symbolhintergrund | `Environment.CommandBarSelected` |
 | Symbolrahmen | `Environment.CommandBarSelectedBorder` |
 
-**Menüelemente: Hover-Status**
+**Menü Elemente: Hover-Zustand**
 
-![Menü, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303-013_MenuHover")<br />Menüpunkt auf Hover
+![Menü, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303-013_MenuHover")<br />Menü Element bei Hover
 
-![Menü, wenn darauf gezeigt wird (aktiviert)](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "0303-014_MenuHoverChecked")<br />Geprüfter Menüpunkt auf hover
+![Menü, wenn darauf gezeigt wird (aktiviert)](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "0303-014_MenuHoverChecked")<br />Aktiviertes Menü Element bei Hover
 
-![Menü, wenn darauf gezeigt wird (ausgewählt)](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303-015_MenuHoverSelected")<br />Ausgewählter Menüpunkt auf der Maustaste
+![Menü, wenn darauf gezeigt wird (ausgewählt)](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303-015_MenuHoverSelected")<br />Ausgewähltes Menü Element bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1162,11 +1162,11 @@ Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, 
 | Symbolhintergrund | `Environment.CommandBarHoverOverSelected` |
 | Symbolrahmen | `Environment.CommandBarHoverOverSelectedIconBorder` |
 
-**Menüelemente: deaktivierter Status**
+**Menü Elemente: deaktivierter Zustand**
 
-![Menü, deaktiviert](../../extensibility/ux-guidelines/media/0303-016_menudisabled.png "0303-016_MenuDisabled")<br />Deaktivierter Menüpunkt
+![Menü, deaktiviert](../../extensibility/ux-guidelines/media/0303-016_menudisabled.png "0303-016_MenuDisabled")<br />Deaktiviertes Menü Element
 
-![Menü, deaktiviert (geprüft)](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303-017_MenuDisabledChecked")<br />Deaktivierter Menüpunkt mit Häkchen
+![Menü, deaktiviert (geprüft)](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303-017_MenuDisabledChecked")<br />Deaktiviertes Menü Element mit Häkchen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1176,61 +1176,61 @@ Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, 
 | Häkchenhintergrund | `Environment.CommandBarSelectedIconDisabled` |
 
 ### <a name="command-bars"></a>Befehlsleisten
-Eine Befehlsleiste kann an mehreren Stellen in der Visual Studio-IDE angezeigt werden, insbesondere im Befehlsregal und eingebettet in Werkzeug- oder Dokumentfenster.
+Eine Befehlsleiste kann an mehreren Stellen in der Visual Studio-IDE angezeigt werden, insbesondere in der Befehls Ablage und eingebettet in Tool-oder Dokument Fenster.
 
 Generell sollte die von der Visual Studio-Umgebung bereitgestellte Befehlsleisten-Standardimplementierung verwendet werden. Der Standardmechanismus stellt sicher, dass alle visuellen Details ordnungsgemäß angezeigt werden und sich interaktive Elemente konsistent mit anderen Steuerelementen der Visual Studio-Befehlsleiste verhalten. Wenn Sie jedoch eine eigene Befehlsleiste erstellen müssen, ist darauf zu achten, sie anhand der folgenden Tokennamen passend zu gestalten.
 
-![Befehlszeile (rote Linie)](../../extensibility/ux-guidelines/media/0303-018_commandbarredline.png "0303-018_CommandBarRedline")<br />Befehlsleiste (rot)
+![Befehlszeile (rote Linie)](../../extensibility/ux-guidelines/media/0303-018_commandbarredline.png "0303-018_CommandBarRedline")<br />Befehlsleiste (Redline)
 
-![Schaltfläche "Überlauf" (rote Linie)](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "0303-019_OverflowButtonRedline")<br />Überlauftaste (Redline)
+![Schaltfläche "Überlauf" (rote Linie)](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "0303-019_OverflowButtonRedline")<br />Überlauf Schaltfläche (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... an Orten, an denen Sie eine eingebettete Befehlsleiste benötigen, aber nicht in der Lage sind, die standardmäßige Visual Studio-Befehlsleistenimplementierung zu verwenden. | ... für UI-Elemente, die einer Befehlsleiste nicht ähneln. |
-| | ... für andere Befehlsleistenkomponenten als die, für die Tokennamen angegeben sind. |
+| ... an Stellen, an denen eine eingebettete Befehlsleiste benötigt wird, die Standard Implementierung der Visual Studio-Befehlsleiste jedoch nicht verwendet werden kann. | ... für Benutzeroberflächen Elemente, die nicht mit einer Befehlsleiste vergleichbar sind. |
+| | ... für andere Befehls leisten Komponenten als diejenigen, für die Tokennamen angegeben werden. |
 
-#### <a name="command-bar-groups"></a>Befehlsleistengruppen
+#### <a name="command-bar-groups"></a>Befehls leisten Gruppen
 Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Steuerelemente und kann eine beliebige Anzahl von Schaltflächen, unterteilten Schaltflächen, Dropdownmenüs, Kombinationsfeldern oder Menüs enthalten. Die Farben dieser Steuerelemente lassen sich anhand separater Tokennamen unterscheiden und werden an anderer Stelle in dieser Anleitung einzeln erörtert. Eine Trennlinie wird verwendet, um eine Befehlsleistengruppe in verwandte Untergruppen aufzuteilen.
 
-![Befehlszeilengruppe (rote Linie)](../../extensibility/ux-guidelines/media/0303-020_commandbargroupredline.png "0303-020_CommandBarGroupRedline")<br />Befehlsleistengruppe (rot)
+![Befehlszeilengruppe (rote Linie)](../../extensibility/ux-guidelines/media/0303-020_commandbargroupredline.png "0303-020_CommandBarGroupRedline")<br />Befehls leisten Gruppe (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... an Orten, an denen Sie eine eingebettete Befehlsleiste benötigen, aber nicht in der Lage sind, die standardmäßige Visual Studio-Befehlsleistenimplementierung zu verwenden. | ... für UI-Elemente, die einer Befehlsleiste nicht ähneln. |
-| | ... für andere Befehlsleistenkomponenten als die, für die Tokennamen angegeben sind. |
+| ... an Stellen, an denen eine eingebettete Befehlsleiste benötigt wird, die Standard Implementierung der Visual Studio-Befehlsleiste jedoch nicht verwendet werden kann. | ... für Benutzeroberflächen Elemente, die nicht mit einer Befehlsleiste vergleichbar sind. |
+| | ... für andere Befehls leisten Komponenten als diejenigen, für die Tokennamen angegeben werden. |
 
-**Befehlsleistengruppe: Standardstatus**
+**Befehls leisten Gruppe: Standardstatus**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Rahmen | `Environment.CommandBarToolBarBorder` |
 | Ziehpunkt | `Environment.CommandBarDragHandle` |
 | Trennzeichen | `Environment.CommandBarToolBarSeparator`<br />`Environment.CommandBarToolBarSeparatorHighlight` |
 
 #### <a name="command-icons"></a>Befehlssymbole
-![Rote Linie – Befehlssymbol](../../extensibility/ux-guidelines/media/0303-021_commandiconredline1.png "0303-021_CommandIconRedline1")<br />Befehlssymbol (rot)
+![Rote Linie – Befehlssymbol](../../extensibility/ux-guidelines/media/0303-021_commandiconredline1.png "0303-021_CommandIconRedline1")<br />Befehls Symbol (Redline)
 
-![Befehlssymbol mit Text-Redline](../../extensibility/ux-guidelines/media/0303-022_commandiconredline2.png "0303-022_CommandIconRedline2")<br />Befehlssymbol mit Text (Rotlinie)
+![Befehls Symbol mit Text Redline](../../extensibility/ux-guidelines/media/0303-022_commandiconredline2.png "0303-022_CommandIconRedline2")<br />Befehls Symbol mit Text (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für alle Schaltflächen, die auf einer Befehlsleiste platziert werden. | ... für Steuerelemente, die eigene Tokennamen haben. |
-| | ... in einer anderen als angegebenen Hintergrund-/Vordergrundkombination. |
+| ... für alle Schaltflächen, die auf einer Befehlsleiste platziert werden. | ... für Steuerelemente mit eigenen Tokennamen. |
+| | ... in einer anderen Kombination aus Hintergrund und Vordergrund als angegeben. |
 
-**Befehlssymbol: Standardstatus**
+**Befehls Symbol: Standardstatus**
 
-![Standardmäßiges Befehlssymbol](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303-023_CommandIconDefault")<br />Standardbefehlssymbol
+![Standardmäßiges Befehlssymbol](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303-023_CommandIconDefault")<br />Standard Befehls Symbol
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | N/V (erbt vom Befehlsleisten-Hintergrund) |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 
-**Befehlssymbol: Standardzustand, ausgewählt**
+**Befehls Symbol: Standardstatus, ausgewählt**
 
-![Standardsymbol für ausgewählte Befehle](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br />Standardsymbol für ausgewählte Befehle
+![Standard, ausgewähltes Befehls Symbol](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br />Standard, ausgewähltes Befehls Symbol
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1238,19 +1238,19 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Vordergrund (Text) | `Environment.CommandBarTextSelected` |
 | Rahmen | `Environment.CommandBarSelectedBorder` |
 
-**Befehlssymbol: Zeiger auf oder Fokuszustände**
+**Befehls Symbol: hover-oder Fokus Zustände**
 
-![Befehlssymbol auf Hover oder Fokus](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303-025_CommandIconHover")<br />Befehlssymbol auf Hover oder Fokus
+![Befehls Symbol bei Hover oder Fokus](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303-025_CommandIconHover")<br />Befehls Symbol bei Hover oder Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.CommandBarTextHover` |
 | Rahmen | `Environment.CommandBarBorder` |
 
-**Befehlssymbol: Zeiger auf oder Fokuszustände, ausgewählt**
+**Befehls Symbol: hover-oder Fokus Zustände, ausgewählt**
 
-![Ausgewähltes Befehlssymbol auf dem Mauszeiger oder Fokus](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br />Ausgewähltes Befehlssymbol auf dem Mauszeiger oder Fokus
+![Ausgewähltes Befehls Symbol bei Hover oder Fokus](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br />Ausgewähltes Befehls Symbol bei Hover oder Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1258,17 +1258,17 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Vordergrund (Text) | `Environment.CommandBarTextHoverOverSelected` |
 | Rahmen | `Environment.CommandBarHoverOverSelectedIconBorder` |
 
- **Befehlssymbol: gedrückter Zustand**
+ **Befehls Symbol: gedrückter Zustand**
 
 ![Gedrücktes Befehlssymbol](../../extensibility/ux-guidelines/media/0303-027_commandiconpressed.png "0303-027_CommandIconPressed")<br />Gedrücktes Befehlssymbol
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.CommandBarTextMouseDown` |
 | Rahmen | `Environment.CommandBarBorder` |
 
-**Befehlssymbol: Deaktivierter Status**
+**Befehls Symbol: deaktivierter Zustand**
 
 ![Deaktiviertes Befehlssymbol](../../extensibility/ux-guidelines/media/0303-028_commandicondisabled.png "0303-028_CommandIconDisabled")<br />Deaktiviertes Befehlssymbol
 
@@ -1276,23 +1276,23 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | --- | --- |
 | Hintergrund | N/V (erbt vom Befehlsleisten-Hintergrund) |
 | Vordergrund (Text) | `Environment.CommandBarTextInactive` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 
-#### <a name="command-bar-combo-boxes"></a><a name="BKMK_CommandComboBox"></a>Befehlsleisten-Kombinationsfelder
+#### <a name="command-bar-combo-boxes"></a><a name="BKMK_CommandComboBox"></a> Kombinations Felder der Befehlsleiste
 
 > [!IMPORTANT]
-> Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihre Dropdownliste keinen bearbeitbaren Textbereich enthält, verwenden Sie die Farbtoken für [Dropdown-Dateien der Befehlsleiste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn die Dropdown Liste keinen bearbeitbaren Textbereich enthält, verwenden Sie die Farb Token für die [Dropdown Liste der Befehlsleiste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
-![Befehlsleisten-Kombinationsfeld redline](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />Befehlsleisten-Kombinationsfeld (Rotlinie)
+![Kombinations Feld "Befehlsleiste" (rote Linie)](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />Kombinations Feld "Befehlsleiste" (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... beim Erstellen benutzerdefinierter Kombinationsboxen. | ... für alles, was Sie nicht immer mit der Benutzeroberfläche der Befehlsleiste übereinstimmen möchten. |
-| ... wenn Sie ein Befehlsleistensteuerelement erstellen, das einem Kombinationsfeld ähnelt. | ... wenn Sie Zugriff auf ein formatiertes Kombinationsfeld haben. |
+| ... beim Aufbau benutzerdefinierter Kombinations Felder. | ... Wenn Sie nicht möchten, dass Sie immer mit der Befehls leisten-Benutzeroberfläche in Einklang stehen. |
+| ... beim Erstellen eines Befehls leisten-Steuer Elements, das einem Kombinations Feld ähnelt. | ... Wenn Sie Zugriff auf ein formatiertes Kombinations Feld haben. |
 
-**Eingabefeld der Befehlsleiste Combo feld: Standardzustand**
+**Eingabefeld für Kombinations Feld der Befehlsleiste: Standardstatus**
 
-![Eingabefeld der Befehlsleisten-Kombinationsbox](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303-030_ComboBoxInputField")<br />Eingabefeld der Befehlsleisten-Kombinationsbox
+![Eingabefeld für Kombinations Feld der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303-030_ComboBoxInputField")<br />Eingabefeld für Kombinations Feld der Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1301,48 +1301,48 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Rahmen | `Environment.ComboBoxBorder` |
 | Trennzeichen | Kein Trennzeichen |
 
-**Dropdown-Schaltfläche für die Befehlsleiste: Standardzustand**
+**Dropdown-Schaltfläche der Befehlsleiste: Standardstatus**
 
-![Combo-Box Drop-&#45;-Down-Taste](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br />Dropdown-Schaltfläche für die Befehlsleiste
+![Kombinations Feld, Dropdown&#45;Schaltfläche](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br />Dropdown-Schaltfläche der Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | N/V (erbt vom Befehlsleisten-Hintergrund) |
 | Vordergrund (Glyphe) | `Environment.ComboBoxGlyph` |
 
-**Dropdown-Liste der Befehlsleiste: Standardstatus**
+**Befehls leisten-Dropdown Liste: Standardstatus**
 
-![Dropdown-Liste der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br />Dropdown-Liste der Befehlsleiste
+![Befehls leisten-Dropdown Liste](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br />Befehls leisten-Dropdown Liste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ComboBoxPopupBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.ComboBoxPopupBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.ComboBoxItemText` |
 | Rahmen | `Environment.ComboBoxPopupBorder` |
 
-**Befehlsleisten-Kombinationsfeld-Eingabefeld: Hover-Status**
+**Eingabefeld für Kombinations Feld der Befehlsleiste: Hover-Zustand**
 
-![Befehlsleisten-Kombinationsfeld-Eingabefeld auf Hover](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br />Befehlsleisten-Kombinationsfeld-Eingabefeld auf Hover
+![Eingabefeld für Kombinations Feld der Befehlsleiste bei Hover](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br />Eingabefeld für Kombinations Feld der Befehlsleiste bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.ComboBoxMouseOverText` |
 | Rahmen | `Environment.ComboBoxMouseOverBorder` |
 | Trennzeichen | `Environment.ComboBoxMouseOverSeparator` |
 
- **Dropdown-Schaltfläche der Befehlsleiste: Hover-Status**
+ **Dropdown-Schaltfläche der Befehlsleiste: Hover-Zustand**
 
-![Dropdown-Schaltfläche der Befehlsleiste auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Dropdown-Schaltfläche der Befehlsleiste auf dem Mauszeiger
+![Befehls leisten-Dropdown-Schaltfläche bei Hover](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Befehls leisten-Dropdown-Schaltfläche bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.ComboBoxButtonMouseOverBackground` |
 | Vordergrund (Glyphe) | `Environment.ComboBoxMouseOverGlyph` |
 
-**Dropdown-Liste der Befehlsleiste: Hover-Status**
+**Befehls leisten-Dropdown Liste: Hover-Zustand**
 
- ![Dropdown-Liste der Befehlsleiste auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Dropdown-Liste der Befehlsleiste auf dem Mauszeiger
+ ![Befehls leisten-Dropdown Liste bei Hover](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Befehls leisten-Dropdown Liste bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1350,9 +1350,9 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Vordergrund (Text) | `Environment.ComboBoxItemMouseOverText` |
 | Rahmen (Menüelement) | `Environment.ComboBoxItemMouseOverBorder` |
 
- **Eingabefeld der Befehlsleiste Combo box: fokussierter Zustand**
+ **Eingabefeld für Kombinations Feld der Befehlsleiste: Fokus Zustand**
 
-![Fokussiertes Befehlsleisten-Kombinationsfeld-Eingabefeld](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br />Fokussiertes Befehlsleisten-Kombinationsfeld-Eingabefeld
+![Eingabefeld für das Kombinations Feld für die Befehlsleiste mit Fokus](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br />Eingabefeld für das Kombinations Feld für die Befehlsleiste mit Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1361,18 +1361,18 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Rahmen | `Environment.ComboBoxFocusedBorder` |
 | Trennzeichen | `Environment.ComboBoxFocusedButtonSeparator` |
 
-**Dropdown-Schaltfläche der Befehlsleiste: fokussierter Zustand**
+**Dropdown-Schaltfläche der Befehlsleiste: Fokus Zustand**
 
-![Fokussierte Dropdown-Schaltfläche der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br />Fokussierte Dropdown-Schaltfläche der Befehlsleiste
+![Dropdown Schaltfläche für eine fokussierte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br />Dropdown Schaltfläche für eine fokussierte Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.ComboBoxFocusedButtonBackground` |
 | Vordergrund (Glyphe) | `Environment.ComboBoxFocusedGlyph` |
 
- **Eingabefeld der Befehlsleiste Combo Box: gedrückter Zustand**
+ **Eingabefeld für Kombinations Feld der Befehlsleiste: gedrückter Zustand**
 
-![Eingabefeld für gedrückte Befehlsleisten-Kombinationsbox](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br />Eingabefeld für gedrückte Befehlsleisten-Kombinationsbox
+![Eingabefeld für das Kombinations Feld "gedrückt" der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br />Eingabefeld für das Kombinations Feld "gedrückt" der Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1381,18 +1381,18 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Rahmen | `Environment.ComboBoxMouseDownBorder` |
 | Trennzeichen | `Environment.ComboBoxMouseDownSeparator` |
 
-**Dropdown-Taste der Befehlsleiste: gedrückter Zustand**
+**Dropdown-Schaltfläche der Befehlsleiste: gedrückter Zustand**
 
-![Gedrückte Dropdown-Taste der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Gedrückte Dropdown-Taste der Befehlsleiste
+![Dropdown Schaltfläche für gedrückte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Dropdown Schaltfläche für gedrückte Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.ComboBoxButtonMouseDownBackground` |
 | Vordergrund (Glyphe) | `Environment.ComboBoxMouseDownGlyph` |
 
-**Eingabefeld der Befehlsleiste Combo box: deaktivierter Zustand**
+**Eingabefeld für Kombinations Feld der Befehlsleiste: deaktivierter Zustand**
 
-![Deaktiviertes Befehlsleisten-Kombinationsfeld-Eingabefeld](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br />Deaktiviertes Befehlsleisten-Kombinationsfeld-Eingabefeld
+![Eingabefeld für das deaktivierte Befehls leisten-Kombinations Feld](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br />Eingabefeld für das deaktivierte Befehls leisten-Kombinations Feld
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1401,26 +1401,26 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Rahmen | `Environment.ComboBoxDisabledBorder` |
 | Trennzeichen | Kein Trennzeichen |
 
-**Dropdown-Schaltfläche der Befehlsleiste: Deaktivierter Zustand**
+**Dropdown-Schaltfläche der Befehlsleiste: deaktivierter Zustand**
 
-![Dropdown-Schaltfläche für deaktivierte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Dropdown-Schaltfläche für deaktivierte Befehlsleiste
+![Dropdown Schaltfläche für deaktivierte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Dropdown Schaltfläche für deaktivierte Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | Keine |
 | Vordergrund (Glyphe) | `Environment.ComboBoxDisabledGlyph` |
 
-#### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a>Dropdowns der Befehlsleiste
+#### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a> Dropdown in der Befehlsleiste
 
 > [!IMPORTANT]
-> Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihre Dropdownliste einen bearbeitbaren Textbereich enthält, verwenden Sie die Farbtoken für [Befehlsleistenkombinationsfelder](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn die Dropdown Liste einen bearbeitbaren Textbereich enthält, verwenden Sie die Farb Token für Befehls leisten-Kombinations [Felder](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
-![Dropdown der Befehlsleiste (Redline)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303-042_DropdownRedline")<br />Dropdown der Befehlsleiste (Redline)
+![Befehls leisten-Dropdown (Redline)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303-042_DropdownRedline")<br />Befehls leisten-Dropdown (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie benutzerdefinierte Dropdown-Listensteuerelemente erstellen. | ... für alles, was einer Dropdownliste nicht ähnelt. |
-| | ... für Kombinationsfelder oder Geteilte Tasten. |
+| ... beim Erstellen benutzerdefinierter Dropdown Listen-Steuerelemente. | ... für alle Elemente, die mit einer Dropdown Liste nicht vergleichbar sind. |
+| | ... für Kombinations Felder oder Trenn Schaltflächen. |
 
 **Dropdown-Auswahlfeld der Befehlsleiste: Standardstatus**
 
@@ -1433,49 +1433,49 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Rahmen | `DropDownBorder` |
 | Trennzeichen | Kein Trennzeichen |
 
-**Dropdown-Schaltfläche für die Befehlsleiste: Standardzustand**
+**Dropdown-Schaltfläche der Befehlsleiste: Standardstatus**
 
-![Standard-Befehlsleisten-Dropdown-Schaltfläche](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303-044_DropdownButton")<br />Standard-Befehlsleisten-Dropdown-Schaltfläche
+![Dropdown Schaltfläche "Standard Befehlsleiste"](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303-044_DropdownButton")<br />Dropdown Schaltfläche "Standard Befehlsleiste"
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | Keine |
 | Vordergrund (Glyphe) | `Environment.DropDownGlyph` |
 
-**Dropdown-Liste der Befehlsleiste: Standardstatus**
+**Befehls leisten-Dropdown Liste: Standardstatus**
 
-![Dropdown-Liste der Standardbefehlsleiste](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303-045_DropdownList")<br />Dropdown-Liste der Standardbefehlsleiste
+![Standard Befehlsleiste-Dropdown Liste](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303-045_DropdownList")<br />Standard Befehlsleiste-Dropdown Liste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.DropDownPopupBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.DropDownPopupBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.ComboBoxItemText` |
 | Rahmen | `Environment.DropDownPopupBorder` |
 | Shadow | `Environment.DropShadowBackground` |
 
-**Dropdown-Auswahlfeld der Befehlsleiste: Hover-Status**
+**Dropdown-Auswahlfeld der Befehlsleiste: Hover-Zustand**
 
-![Dropdown-Auswahlfeld für die Befehlsleiste auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br />Dropdown-Auswahlfeld für die Befehlsleiste auf dem Mauszeiger
+![Dropdown-Auswahlfeld der Befehlsleiste bei Hover](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br />Dropdown-Auswahlfeld der Befehlsleiste bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.DropDownMouseOverBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.DropDownMouseOverBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.DropDownMouseOverText` |
 | Rahmen | `Environment.DropDownMouseOverBorder` |
 | Trennzeichen | `Environment.DropDownButtonMouseOverSeparator` |
 
-**Dropdown-Schaltfläche der Befehlsleiste: Hover-Status**
+**Dropdown-Schaltfläche der Befehlsleiste: Hover-Zustand**
 
-![Dropdown-Schaltfläche der Befehlsleiste auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br />Dropdown-Schaltfläche der Befehlsleiste auf dem Mauszeiger
+![Befehls leisten-Dropdown-Schaltfläche bei Hover](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br />Befehls leisten-Dropdown-Schaltfläche bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.DropDownButtonMouseOverBackground` |
 | Vordergrund (Glyphe) | `Environment.DropDownMouseOverGlyph` |
 
-**Dropdown-Liste der Befehlsleiste: Hover-Status**
+**Befehls leisten-Dropdown Liste: Hover-Zustand**
 
-![Dropdown-Liste der Befehlsleiste auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303-048_DropdownListHover")<br />Dropdown-Liste der Befehlsleiste auf dem Mauszeiger
+![Befehls leisten-Dropdown Liste bei Hover](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303-048_DropdownListHover")<br />Befehls leisten-Dropdown Liste bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1485,7 +1485,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
  **Dropdown-Auswahlfeld der Befehlsleiste: gedrückter Zustand**
 
-![Drop&#45;-Down-Auswahlfeld gedrückt](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br />Gedrücktes Dropdown-Auswahlfeld für die Befehlsleiste
+![Dropdown&#45;Dropdown Auswahlfeld gedrückt](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br />Gedrücktes Dropdown-Auswahlfeld der Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1494,16 +1494,16 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Rahmen | `Environment.DropDownMouseDownBorder` |
 | Trennzeichen | `Environment.DropDownButtonMouseDownSeparator` |
 
-**Dropdown-Taste der Befehlsleiste: gedrückter Zustand**
+**Dropdown-Schaltfläche der Befehlsleiste: gedrückter Zustand**
 
-![Gedrückte Dropdown-Taste der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br />Gedrückte Dropdown-Taste der Befehlsleiste
+![Dropdown Schaltfläche für gedrückte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br />Dropdown Schaltfläche für gedrückte Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.DropDownButtonMouseDownBackground` |
 | Vordergrund (Glyphe) | `Environment.DropDownMouseDownGlyph` |
 
-**Dropdown-Auswahlfeld der Befehlsleiste: Deaktivierter Status**
+**Dropdown-Auswahlfeld der Befehlsleiste: deaktivierter Zustand**
 
 ![Deaktiviertes Dropdown-Auswahlfeld für die Befehlsleiste](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")<br />Deaktiviertes Dropdown-Auswahlfeld für die Befehlsleiste
 
@@ -1514,132 +1514,132 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 | Rahmen | `Environment.DropDownDisabledBorder` |
 | Trennzeichen | Kein Trennzeichen |
 
-**Dropdown-Schaltfläche der Befehlsleiste: Deaktivierter Zustand**
+**Dropdown-Schaltfläche der Befehlsleiste: deaktivierter Zustand**
 
-![Dropdown-Schaltfläche für deaktivierte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")<br />Dropdown-Schaltfläche für deaktivierte Befehlsleiste
+![Dropdown Schaltfläche für deaktivierte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")<br />Dropdown Schaltfläche für deaktivierte Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Nicht zutreffend |
+| Hintergrund | – |
 | Vordergrund (Glyphe) | `Environment.DropDownDisabledGlyph` |
 
-#### <a name="command-bar-split-buttons"></a>Befehlsleisten-Split-Schaltflächen
-Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Dropdown-Listen für geteilte Schaltflächen sind Implementierungen von [Befehlsleistenmenüs](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
+#### <a name="command-bar-split-buttons"></a>Schaltflächen zum Teilen der Befehlsleiste
+Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsleisten-Steuerelementen wie Schaltflächen, Menüs und Befehlsleistentext. Alle erforderlichen Tokennamen für Aktions- und Dropdownschaltflächen werden hier wiederholt. Dropdown Listen für unterteilte Schaltflächen sind Implementierungen von [Befehls leisten Menüs](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
-![Trennschaltfläche (rote Linie)](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "0303-053_SplitButtonRedline")<br />Befehlsleisten-Split-Taste (redline)
+![Trennschaltfläche (rote Linie)](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "0303-053_SplitButtonRedline")<br />Geteilte Schaltfläche der Befehlsleiste (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie eine benutzerdefinierte Split-Schaltfläche erstellen. | ... für andere Arten von Schaltflächen. |
-| | ... in einer anderen als angegebenen Hintergrund-/Vordergrundkombination. |
+| ... beim Erstellen einer benutzerdefinierten Trenn Schaltfläche. | ... für andere Arten von Schaltflächen. |
+| | ... in einer anderen Kombination aus Hintergrund und Vordergrund als angegeben. |
 
-**Befehlsleisten-Split-Schaltfläche: Standardzustand**
+**Trenn Schaltfläche für Befehlsleiste: Standardzustand**
 
-![Standard-Befehlsleisten-Split-Schaltfläche](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303-054_SplitButton")<br />Standard-Befehlsleisten-Split-Schaltfläche
+![Standard Befehls leisten-Trenn Schaltfläche](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303-054_SplitButton")<br />Standard Befehls leisten-Trenn Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | Keine |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarSplitButtonGlyph` |
-| Rahmen | Nicht zutreffend |
-| Trennzeichen | Nicht zutreffend |
+| Rahmen | – |
+| Trennzeichen | – |
 
-**Befehlsleiste-Split-Taste: Hover-Status**
+**Befehls leisten-Trenn Schaltfläche: Hover-Zustand**
 
-![Befehlsleiste Split-Taste auf Hover](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303-055_SplitButtonHover")<br />Befehlsleiste Split-Taste auf Hover
+![Unterteilte Schaltfläche der Befehlsleiste bei Hover](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303-055_SplitButtonHover")<br />Unterteilte Schaltfläche der Befehlsleiste bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.CommandBarTextHover` |
 | Vordergrund (Glyphe) | `Environment.CommandBarSplitButtonMouseOverGlyph` |
 | Rahmen | `Environment.CommandBarBorder` |
 | Trennzeichen | `Environment.CommandBarSplitButtonSeparator` |
 
-**Befehlsleiste Split-Taste: gedrückter Zustand**
+**Geteilte Schaltfläche der Befehlsleiste: gedrückter Zustand**
 
-![Gedrückter Befehlsleisten-Split-Button](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303-056_SplitButtonPressed")<br />Gedrückter Befehlsleisten-Split-Button
+![Geteilte Schaltfläche der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303-056_SplitButtonPressed")<br />Geteilte Schaltfläche der Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.CommandBarTextMouseDown` |
 | Vordergrund (Glyphe) | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | Rahmen | `Environment.CommandBarBorder` |
-| Trennzeichen | Nicht zutreffend |
+| Trennzeichen | – |
 
-**Befehlsleisten-Split-Schaltfläche: deaktivierter Status**
+**Trenn Schaltfläche für Befehlsleiste: deaktivierter Zustand**
 
-![Deaktivierte Befehlsleiste Split-Taste](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br />Deaktivierte Befehlsleiste Split-Taste
+![Deaktivierte Schaltfläche der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br />Deaktivierte Schaltfläche der Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Nicht zutreffend |
+| Hintergrund | – |
 | Vordergrund (Text) | `Environment.ComboBoxItemTextInactive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarTextInactive` |
-| Rahmen | Nicht zutreffend |
-| Trennzeichen | Nicht zutreffend |
+| Rahmen | – |
+| Trennzeichen | – |
 
-#### <a name="command-bar-more-options-and-overflow-buttons"></a>Befehlsleiste 'Mehr Optionen' und 'Überlauf' Tasten
+#### <a name="command-bar-more-options-and-overflow-buttons"></a>Befehlsleiste "Weitere Optionen" und "Überlauf"-Schaltflächen
 Die Schaltfläche "Weitere Optionen" wird verwendet, wenn eine Befehlsleistengruppe angepasst werden kann, indem verwandte Befehlsleistenschaltflächen hinzugefügt oder entfernt werden. Die Schaltfläche "Überlauf" wird angezeigt, wenn eine Befehlsleiste aus Platzgründen in horizontaler Richtung abgeschnitten ist. Beim Klicken auf die Schaltfläche wird ein Menü mit den nicht angezeigten Befehlsleisten-Schaltflächen eingeblendet. Die Farben dieser beiden Schaltflächen werden über dieselbe Gruppe von Tokennamen gesteuert.
 
-![Befehlsleiste 'Mehr Optionen' Taste (redline)](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "0303-058_MoreOptionsRedline")<br />Befehlsleiste 'Mehr Optionen' Taste (redline)
+![Schaltfläche "Weitere Optionen" (Redline) der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "0303-058_MoreOptionsRedline")<br />Schaltfläche "Weitere Optionen" (Redline) der Befehlsleiste
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für benutzerdefinierte Schaltflächen "Mehr Optionen" oder "Überlauf". | ... für Schaltflächen, die nicht über eine ähnliche Funktionalität wie eine Schaltfläche "Mehr Optionen" oder "Überlauf" verfügen. |
+| ... für benutzerdefinierte Schaltflächen "Weitere Optionen" oder "Überlauf". | ... für Schaltflächen, die nicht über eine ähnliche Funktionalität wie eine Schaltfläche "Weitere Optionen" oder "Überlauf" verfügen. |
 
-**Befehlsleiste 'Mehr Optionen' und 'Überlauf' Schaltflächen: Standardzustand**
+**Befehlsleiste "Weitere Optionen" und "Überlauf"-Schaltflächen: Standardstatus**
 
-![Standard-Befehlsleiste 'Mehr Optionen' Taste](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "0303-059_MoreOptions")<br />Standard-Befehlsleiste 'Mehr Optionen' Taste
+![Schaltfläche "Weitere Optionen" der Standard Befehlsleiste](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "0303-059_MoreOptions")<br />Schaltfläche "Weitere Optionen" der Standard Befehlsleiste
 
-![Standard-Befehlsleiste 'Überlauf' Taste](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303-060_Overflow")<br />Standard-Befehlsleiste 'Überlauf' Taste
+![Schaltfläche "Überlauf" der Standard Befehlsleiste](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303-060_Overflow")<br />Schaltfläche "Überlauf" der Standard Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.CommandBarOptionsBackground` |
 | Vordergrund (Glyphe) | `Environment.CommandBarOptionsGlyph` |
 
-**Befehlsleiste 'Mehr Optionen' und 'Überlauf' Tasten: Hover-Status**
+**Befehlsleiste "Weitere Optionen" und "Überlauf"-Schaltflächen: Hover-Zustand**
 
-![Befehlsleiste 'Mehr Optionen' Taste auf Hover](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "0303-061_MoreOptionsHover")<br />Befehlsleiste 'Mehr Optionen' Taste auf Hover
+![Schaltfläche "Weitere Optionen" auf der Befehlsleiste bei Hover](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "0303-061_MoreOptionsHover")<br />Schaltfläche "Weitere Optionen" auf der Befehlsleiste bei Hover
 
-![Befehlsleiste 'Overflow' Taste auf Hover](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303-062_OverflowOptions")<br />Befehlsleiste 'Overflow' Taste auf Hover
+![Schaltfläche "Überlauf" der Befehlsleiste bei Hover](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303-062_OverflowOptions")<br />Schaltfläche "Überlauf" der Befehlsleiste bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Glyphe) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
-**Befehlsleiste 'Mehr Optionen' und 'Überlauf' Tasten: gedrückter Zustand**
+**Befehlsleiste "Weitere Optionen" und "Überlauf"-Schaltflächen: gedrückter Zustand**
 
-![Gedrückte Befehlsleiste 'Mehr Optionen' Taste](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />Gedrückte Befehlsleiste 'Mehr Optionen' Taste
+![Schaltfläche "Weitere Optionen" der Befehlsleiste gedrückt](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />Schaltfläche "Weitere Optionen" der Befehlsleiste gedrückt
 
-!["Überlauf", aufgerufen](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />Gedrückte Befehlsleiste 'Overflow' Taste
+!["Überlauf", aufgerufen](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />Schaltfläche "Überlauf" der Befehlsleiste gedrückt
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Glyphe) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 ## <a name="document-windows"></a>Dokumentfenster
-Es ist nicht erforderlich, Dokumentfenster zu replizieren, da sie von der Visual Studio-Umgebung bereitgestellt werden. Sie können jedoch festlegen, dass die in den Dokumentfenstern genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.
+Dokument Fenster müssen nicht repliziert werden, da Sie von der Visual Studio-Umgebung bereitgestellt werden. Sie können jedoch festlegen, dass die in den Dokumentfenstern genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.
 
-Achten Sie bei der Verwendung von Dokumentfensterfarbtoken darauf, sie nur für ähnliche Elemente und immer paarweise zu verwenden. Wenn Sie dies nicht tun, erhalten Sie möglicherweise unerwartete Ergebnisse in der Benutzeroberfläche.
+Wenn Sie Dokument Fenster-farbtoken verwenden, achten Sie darauf, diese nur für ähnliche Elemente und Always in-Paare zu verwenden. Wenn Sie dies nicht tun, erhalten Sie möglicherweise unerwartete Ergebnisse in der Benutzeroberfläche.
 
-### <a name="document-window-frames"></a>Dokumentfensterrahmen
-Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als separates Fenster vorkommen. Wenn ein Dokumentfenster außerhalb der IDE schwebt, befindet es sich immer noch in einem Dokument und verfügt über Hintergrund-, Rahmen-, Text- und Registerkartenfarben, die mit dem identisch sind, wenn es Teil der IDE ist. Das Dokument ist jedoch von einem Rahmen umgeben, der über eigene Hintergrund-, Rahmen- und Textfarben verfügt. Wenn Toolfenster im Dokumentursprung angedockt sind, erben die enthaltenen Registerkarten ihr Verhalten und ihre Farbe von den Tokennamen des Dokumentfensters.
+### <a name="document-window-frames"></a>Dokument Fensterrahmen
+Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als separates Fenster vorkommen. Wenn ein Dokument Fenster außerhalb der IDE schwebt, befindet es sich immer noch in einem Dokument, und es hat Hintergrund-, Rahmen-, Text-und Registerkarten Farben, die identisch sind, wenn es Teil der IDE ist. Das Dokument ist jedoch von einem Rahmen umgeben, der über eigene Hintergrund-, Rahmen- und Textfarben verfügt. Wenn Toolfenster im Dokumentursprung angedockt sind, erben die enthaltenen Registerkarten ihr Verhalten und ihre Farbe von den Tokennamen des Dokumentfensters.
 
-![Angedocktes Dokumentfenster (rot)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />Angedocktes Dokumentfenster (rot)
+![Angedocktes Dokument Fenster (rote Linie)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />Angedocktes Dokument Fenster (rote Linie)
 
-![Unverankertes Dokumentfenster (Rotlinie)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />Unverankertes Dokumentfenster (Rotlinie)
+![Unverankertes Dokument Fenster (rote Linie)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />Unverankertes Dokument Fenster (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... an einer beliebigen Stelle, an der Sie eine Benutzeroberfläche erstellen, die dem Dokumentfenster entsprechen soll. | ...  für jede Benutzeroberfläche, die nicht automatisch geändert werden soll, wenn die Shell über ein Designupdate verfügt. |
+| ... an jeder Stelle, an der Sie die Benutzeroberfläche erstellen, die Sie dem Dokument Fenster zuordnen möchten. | ...  für alle Benutzeroberflächen, die nicht automatisch geändert werden sollen, wenn die Shell über ein Design Update verfügt. |
 
-**Angedocktes oder unverankertes Dokumentfenster: Standardstatus**
+**Angedocktes oder unverankertes Dokument Fenster: Standardstatus**
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1647,9 +1647,9 @@ Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als 
 | Vordergrund (Text) | Hängt vom Dokumenttyp ab. |
 | Rahmen | `Environment.ToolWindowBorder` |
 
-**Fokussierter, unverankerter Dokumentfensterrahmen: Standardzustand**
+**Fokus, unverankertes Dokument Fensterrahmen: Standardstatus**
 
-![Standardfokussierter, unverankerter Dokumentfensterrahmen](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303-067_FrameFocused")<br />Standardfokussierter, unverankerter Dokumentfensterrahmen
+![Standard Fokus, gleitendes Dokument Fensterrahmen](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303-067_FrameFocused")<br />Standard Fokus, gleitendes Dokument Fensterrahmen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1657,11 +1657,11 @@ Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als 
 | Vordergrund (Text) | `Environment.ToolWindowFloatingFrame` |
 | Vordergrund (Glyphe) | `Environment.RaftedWindowButtonActiveGlyph` |
 | Rahmen | `Environment.MainWindowActiveDefaultBorder` |
-| Rahmen (Glyphe) | `Environment.RaftedWindowButtonActiveBorder`<br />(Auf transparent eingestellt) |
+| Rahmen (Glyphe) | `Environment.RaftedWindowButtonActiveBorder`<br />(Festgelegt auf transparent) |
 
-**Unfokussierter, unverankerter Dokumentfensterrahmen: Standardzustand**
+**Ohne Fokus, unverankertes Dokument Fensterrahmen: Standardstatus**
 
-![Standard unfokussierter, unverankerter Dokumentfensterrahmen](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />Standard unfokussierter, unverankerter Dokumentfensterrahmen
+![Standard ohne Fokus, unverankertes Dokument Fensterrahmen](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />Standard ohne Fokus, unverankertes Dokument Fensterrahmen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1669,11 +1669,11 @@ Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als 
 | Vordergrund (Text) | `Environment.ToolWindowFloatingFrameInactive` |
 | Vordergrund (Glyphe) | `Environment.RaftedWindowButtonInactiveGlyph` |
 | Rahmen | `Environment.MainWindowInactiveBorder` |
-| Rahmen (Glyphe) | `Environment.RaftedWindowButtonInactiveBorder`<br />(Auf transparent eingestellt) |
+| Rahmen (Glyphe) | `Environment.RaftedWindowButtonInactiveBorder`<br />(Festgelegt auf transparent) |
 
-**Fokussierter, schwebender Dokumentfensterrahmen: Hover-Status**
+**Fokus, unverankerter Dokument Fensterrahmen: Hover-Zustand**
 
-![Fokussierter, schwebender Dokumentfensterrahmen auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303-069_FrameFocusedHover")<br />Fokussierter, schwebender Dokumentfensterrahmen auf dem Mauszeiger
+![Fokus, unverankerter Dokument Fensterrahmen bei Hover](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303-069_FrameFocusedHover")<br />Fokus, unverankerter Dokument Fensterrahmen bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1681,9 +1681,9 @@ Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als 
 | Vordergrund (Glyphe) | `Environment.RaftedWindowButtonHoverActiveGlyph` |
 | Rahmen (Glyphe) | `Environment.RaftedWindowButtonHoverActiveBorder` |
 
-**Unfokussierter, schwebender Dokumentfensterrahmen: Hover-Status**
+**Ohne Fokus, unverankerter Dokument Fensterrahmen: Hover-Zustand**
 
-![Unfokussierter, schwebender Dokumentfensterrahmen auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />Unfokussierter, schwebender Dokumentfensterrahmen auf dem Mauszeiger
+![Ohne Fokus, unverankerter Dokument Fensterrahmen beim Hover](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />Ohne Fokus, unverankerter Dokument Fensterrahmen beim Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1691,9 +1691,9 @@ Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als 
 | Vordergrund (Glyphe) | `Environment.RaftedWindowButtonHoverInactiveGlyph` |
 | Rahmen (Glyphe) | `Environment.RaftedWindowButtonHoverInactiveBorder` |
 
-**Fokussierter, schwebender Dokumentfensterrahmen: gedrückter Zustand**
+**Fokus, unverankertes Dokument Fensterrahmen: gedrückter Zustand**
 
-![Fokussierter, schwebender Dokumentfensterrahmen auf Drücken](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303-071_FrameFocusedPressed")<br />Fokussierter, schwebender Dokumentfensterrahmen auf Drücken
+![Fokus, unverankertes Dokument Fensterrahmen beim Drücken](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303-071_FrameFocusedPressed")<br />Fokus, unverankertes Dokument Fensterrahmen beim Drücken
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1704,92 +1704,92 @@ Dokumentfenster können entweder in der IDE angedockt sein oder unverankert als 
 ### <a name="document-tabs"></a>Dokumentregisterkarten
 Dokumentregisterkarten befinden sich im Registerkartenkanal und zeigen an, welche Dokumente gerade geöffnet sind und welches das aktuell ausgewählte oder aktive Dokument ist. Toolfenster können ebenfalls im Dokument-Registerkartenkanal angedockt sein, wenn sie vom Benutzer dort platziert werden. In diesem Fall verwenden sie die gleichen Registerkartenfarben wie die Dokumentfenster. Wenn Sie Benutzeroberflächen erstellen, die grundsätzlich auf die Farben des Dokumentfensters abgestimmt sein sollen (einschließlich Designaktualisierungen oder bei Installation neuer Designs), verweisen Sie auf diese Farbtoken.
 
-![Dokumentregisterkarten (rotlinie)](../../extensibility/ux-guidelines/media/0303-072_documenttabredline.png "0303-072_DocumentTabRedline")<br />Dokumentregisterkarten (rotlinie)
+![Dokument Registerkarten (Redline)](../../extensibility/ux-guidelines/media/0303-072_documenttabredline.png "0303-072_DocumentTabRedline")<br />Dokument Registerkarten (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... Überall an einer Beliebigen, die Sie erstellen, können Sie Dokumentregisterkarten abgleichen und automatisch Designaktualisierungen oder neue Designfarben aufnehmen. | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ... an jeder Stelle, an der Sie die Benutzeroberfläche erstellen möchten, die Sie mit Dokument Registerkarten vergleichen und automatisch Design Aktualisierungen oder neue Design Farben auswählen können. | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell ein Design Update aufweist. |
 
 #### <a name="open-document-tabs"></a>Geöffnete Dokumentregisterkarten
 Jedes geöffnete Dokument verfügt über eine Registerkarte im Dokument-Registerkartenkanal, auf der der Name angezeigt wird. Dokumente können entweder ausgewählt oder im Hintergrund geöffnet sein. Ihre Registerkarten können folgende Zustände haben:
 
 - Die ausgewählte Registerkarte stellt das Dokument dar, das aktuell im Dokumentursprung angezeigt wird. Eine ausgewählte Registerkarte verfügt über einen Dokumentrahmen, der sich über den oberen Rand des Dokumentursprungs erstreckt.
 
-- Hintergrundregisterkarten sind alle Dokumentregisterkarten, die nicht die aktuell ausgewählte Registerkarte sind. Sobald sie darauf geklickt haben, werden sie zur ausgewählten Registerkarte und erfassen alle Hintergrund-, Rahmen- und Textfarben aus diesen Tokennamen.
+- Hintergrund Registerkarten sind Dokument Registerkarten, die nicht die derzeit ausgewählte Registerkarte sind. Nachdem Sie darauf geklickt haben, werden Sie zur ausgewählten Registerkarte und erhalten alle Hintergrund-, Rahmen-und Textfarben von den Tokennamen.
 
-![Registerkarte Dokument öffnen (rotlinie)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")<br />Registerkarte Dokument öffnen (rotlinie)
+![Registerkarte "Dokument öffnen" (rote Linie)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")<br />Registerkarte "Dokument öffnen" (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie benutzerdefinierte Dokumentregisterkarten erstellen. | ... für vorläufige (Vorschau-)Registerkarten. |
-| | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ... beim Erstellen von benutzerdefinierten Dokument Registerkarten. | ... für vorläufige Registerkarten (Vorschau). |
+| | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell über ein Design Update verfügt. |
 
-**Ausgewählte, fokussierte Dokumentregisterkarte**
+**Ausgewählt, Registerkarte mit Fokus**
 
-![Ausgewählte, fokussierte Dokumentregisterkarte](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303-074_SelectedTabFocused")<br />Ausgewählte, fokussierte Dokumentregisterkarte
+![Ausgewählt, Registerkarte mit Fokus](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303-074_SelectedTabFocused")<br />Ausgewählt, Registerkarte mit Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.FileTabSelectedGradientTop`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.FileTabSelectedGradientTop`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.FileTabSelectedText` |
-| Rahmen | `Environment.FileTabSelectedBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.FileTabSelectedBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 | Dokumentrahmen | `Environment.FileTabDocumentBorderBackground` |
 
-**Ausgewählte Registerkarte für ausgewählte, unfokussierte Dokumente**
+**Ausgewählte, nicht fokussierte Dokument Registerkarte**
 
-![Ausgewählte Registerkarte für ausgewählte, unfokussierte Dokumente](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br />Ausgewählte Registerkarte für ausgewählte, unfokussierte Dokumente
+![Ausgewählte, nicht fokussierte Dokument Registerkarte](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br />Ausgewählte, nicht fokussierte Dokument Registerkarte
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.FileTabInactiveGradientTop`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.FileTabInactiveGradientTop`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.FileTabInactiveText` |
-| Rahmen | `Environment.FileTabInactiveBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.FileTabInactiveBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 | Dokumentrahmen | `Environment.FileTabInactiveDocumentBorderBackground` |
 
-**Registerkarte Hintergrunddokument: Standardzustand**
+**Registerkarte "Hintergrunddokument": Standardstatus**
 
-![Standard-Hintergrunddokument-Registerkarte](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303-076_BackgroundTab")<br />Standard-Hintergrunddokument-Registerkarte
+![Standard Registerkarte für das Hintergrunddokument](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303-076_BackgroundTab")<br />Standard Registerkarte für das Hintergrunddokument
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.FileTabBackground` |
 | Vordergrund (Text) | `Environment.FileTabText` |
-| Rahmen | `Environment.FileTabBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.FileTabBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 
-**Registerkarte Hintergrunddokument: Hover-Status**
+**Registerkarte "Hintergrunddokument": Hover-Zustand**
 
-![Registerkarte Hintergrunddokument auf der Mauszeiger](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303-077_BackgroundTabHover")<br />Registerkarte Hintergrunddokument auf der Mauszeiger
+![Registerkarte "Hintergrunddokument" bei Hover](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303-077_BackgroundTabHover")<br />Registerkarte "Hintergrunddokument" bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.FileTabHotGradientTop`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.FileTabHotGradientTop`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.FileTabHotText` |
-| Rahmen | `Environment.FileTabHotBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.FileTabHotBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 
 #### <a name="preview-tab"></a>Vorschauregisterkarte
-Wird auch als "vorläufige" Registerkarte bezeichnet. Die Vorschau-Registerkarte wird auf der rechten Seite des Dokumentregisterkartenkanals angezeigt, wenn der Benutzer im Werkzeugfenster Projektmappen-Explorer auf ein Element klickt. Sie fungiert als Dokumentvorschau und gibt dem Benutzer die Möglichkeit, das Dokument auf der linken Seite des Dokument-Registerkartenkanals geöffnet zu lassen. Es kann jeweils nur eine Vorschauregisterkarte geöffnet sein. Vorschauregisterkarten können (wie geöffnete Registerkarten) sowohl im Hintergrund geöffnet als auch ausgewählt sein und im aktiven Zustand mit oder ohne Fokus verfügbar sein.
+Wird auch als "vorläufige" Registerkarte bezeichnet. Die Registerkarte Vorschau wird auf der rechten Seite des Dokument-Registerkarten Kanals angezeigt, wenn der Benutzer auf ein Element im Projektmappen-Explorer Tool Fenster klickt. Sie fungiert als Dokumentvorschau und gibt dem Benutzer die Möglichkeit, das Dokument auf der linken Seite des Dokument-Registerkartenkanals geöffnet zu lassen. Es kann jeweils nur eine Vorschauregisterkarte geöffnet sein. Vorschauregisterkarten können (wie geöffnete Registerkarten) sowohl im Hintergrund geöffnet als auch ausgewählt sein und im aktiven Zustand mit oder ohne Fokus verfügbar sein.
 
-![Vorschau-Registerkarte (rot)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "0303-078_PreviewTabRedline")<br />Vorschau-Registerkarte (rot)
+![Registerkarte "Vorschau" (rote Linie)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "0303-078_PreviewTabRedline")<br />Registerkarte "Vorschau" (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... Überall, an denen Sie eine vorläufige Vorschau erstellen und ein Element mit der aktuellen Vorschau-Registerkartenfarbe übereinstimmen soll. | ... für jede Art von Dokument oder Registerkarte, die nicht vorläufig ist (Vorschau). |
-| | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ... Wenn Sie eine vorläufige Vorschau erstellen und möchten, dass ein Element der aktuellen Vorschau der Registerkarten Farbe entspricht. | ... für alle Arten von Dokumenten oder Registerkarten, die nicht vorläufig sind (Vorschau). |
+| | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell über ein Design Update verfügt. |
 
-**Fokussierte, ausgewählte Vorschau-Registerkarte**
+**Fokussiert, ausgewählte Vorschau Registerkarte**
 
-![Fokussierte, ausgewählte Vorschau-Registerkarte](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303-079_PreviewTabFocused")<br />Fokussierte, ausgewählte Vorschau-Registerkarte
+![Fokussiert, ausgewählte Vorschau Registerkarte](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303-079_PreviewTabFocused")<br />Fokussiert, ausgewählte Vorschau Registerkarte
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.FileTabProvisionalSelectedActive` |
 | Vordergrund (Text) | `Environment.FileTabProvisionalSelectedActiveForeground` |
-| Rahmen | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 | Dokumentrahmen | `Environment.FileTabProvisionalSelectedActiveBorder` |
 
-**Unfokussierte, ausgewählte Vorschau-Registerkarte**
+**Ohne Fokus, ausgewählte Vorschau Registerkarte**
 
-![Unfokussierte, ausgewählte Vorschau-Registerkarte](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br />Unfokussierte, ausgewählte Vorschau-Registerkarte
+![Ohne Fokus, ausgewählte Vorschau Registerkarte](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br />Ohne Fokus, ausgewählte Vorschau Registerkarte
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1798,47 +1798,47 @@ Wird auch als "vorläufige" Registerkarte bezeichnet. Die Vorschau-Registerkarte
 | Rahmen | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 | Dokumentrahmen | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 
-**Registerkarte Hintergrundvorschau: Standardzustand**
+**Registerkarte "Hintergrund Vorschau": Standardstatus**
 
-![Standard-Hintergrundvorschau-Registerkarte](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br />Standard-Hintergrundvorschau-Registerkarte
+![Standard Registerkarte für Hintergrund Vorschau](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br />Standard Registerkarte für Hintergrund Vorschau
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.FileTabProvisionalInactive` |
 | Vordergrund (Text) | `Environment.FileTabProvisionalInactiveForeground` |
-| Rahmen | `Environment.FileTabProvisionalInactiveBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.FileTabProvisionalInactiveBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 
-**Registerkarte Hintergrundvorschau: Hover-Status**
+**Registerkarte "Hintergrund Vorschau": Hover-Zustand**
 
-![Hintergrundvorschau-Registerkarte auf der Mauszeiger](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br />Hintergrundvorschau-Registerkarte auf der Mauszeiger
+![Registerkarte "Hintergrund Vorschau" bei Hover](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br />Registerkarte "Hintergrund Vorschau" bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.FileTabProvisionalHover` |
 | Vordergrund (Text) | `Environment.FileTabProvisionalHoverForeground` |
-| Rahmen | `Environment.FileTabProvisionalHoverBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.FileTabProvisionalHoverBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 
 #### <a name="document-overflow-button"></a>Dokumentüberlauf-Schaltfläche
-Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Das Dropdown-Menü "Dokumentüberlauf", das über die Menüfarben der [Befehlsleiste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus) gesteuert wird, zeigt eine Liste aller sichtbaren und ausgeblendeten geöffneten Dokumente an, und die Überlauf-Glyphe ändert sich, je nachdem, ob alle geöffneten Dokumente im Registerkartenkanal angezeigt werden.
+Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Das Dokument Überlauf-Dropdown Menü, das von den Menü Farben der [Befehlsleiste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus) gesteuert wird, zeigt eine Liste aller geöffneten Dokumente an, sowohl sichtbar als auch ausgeblendet, und das Überlauf Symbol ändert sich abhängig davon, ob alle geöffneten Dokumente im Registerkarten Kanal angezeigt werden.
 
-![Dokumentüberlaufschaltfläche (Rote Linie)](../../extensibility/ux-guidelines/media/0303-083_overflowredline.png "0303-083_OverflowRedline")<br />Dokumentüberlaufschaltfläche (Rote Linie)
+![Dokument Überlauf-Schaltfläche (Redline)](../../extensibility/ux-guidelines/media/0303-083_overflowredline.png "0303-083_OverflowRedline")<br />Dokument Überlauf-Schaltfläche (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie eine benutzerdefinierte Dokumentüberlaufschaltfläche erstellen. | ... für benutzeroberfläche, die einer Überlaufschaltfläche nicht ähnelt. |
-| | ... für Befehlsleistenüberlaufschaltflächen. |
+| ... beim Erstellen einer benutzerdefinierten Dokument Überlauf Schaltfläche. | ... für Benutzeroberflächen, die einer Überlauf Schaltfläche nicht ähneln. |
+| | ... für Überlauf Schaltflächen der Befehlsleiste. |
 
-**Dokumentüberlaufschaltfläche: Standardstatus**
+**Dokument Überlauf-Schaltfläche: Standardstatus**
 
-![Standard-Dokumentüberlaufschaltfläche](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303-084_Overflow")<br />Standard-Dokumentüberlaufschaltfläche
+![Standardmäßige Dokument Überlauf Schaltfläche](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303-084_Overflow")<br />Standardmäßige Dokument Überlauf Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.DocWellOverflowButtonBackground` |
 | Vordergrund (Glyphe) | `Environment.DocWellOverflowButtonGlyph` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 
-**Dokumentüberlaufschaltfläche: Hoverstatus**
+**Dokument Überlauf-Schaltfläche: Hover-Zustand**
 
 ![Dokumentüberlauf-Schaltfläche, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-085_overflowhover.png "0303-085_OverflowHover")<br />Dokumentüberlauf-Schaltfläche, wenn darauf gezeigt wird
 
@@ -1848,9 +1848,9 @@ Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument
 | Vordergrund (Glyphe) | `Environment.DocWellOverflowButtonMouseOverGlyph` |
 | Rahmen | `Environment.DocWellOverflowButtonMouseOverBorder` |
 
-**Dokumentüberlauftaste: gedrückter Zustand**
+**Dokument Überlauf-Schaltfläche: gedrückter Zustand**
 
-![Dokumentüberlauftaste beim Drücken](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303-086_OverflowPressed")<br />Dokumentüberlauftaste beim Drücken
+![Schaltfläche "Dokument Überlauf" beim Drücken](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303-086_OverflowPressed")<br />Schaltfläche "Dokument Überlauf" beim Drücken
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1863,7 +1863,7 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 
 ![Tagging in Visual Studio (Redline)](../../extensibility/ux-guidelines/media/0303-176_taggingredline.png "0303-176_TaggingRedline")<br />Tagging in Visual Studio (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
 | ... für die Benutzeroberfläche, die Tagging unterstützt. | ... für jede andere Art von Benutzeroberfläche. |
 
@@ -1871,14 +1871,14 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 
 **Tag: Standardstatus**
 
-![Standard-Tag](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303-177_Tag")<br />Standard-Tag
+![Standardtag](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303-177_Tag")<br />Standardtag
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Tag.Background` |
 | Vordergrund (Text) | `Tag.Background` |
 
-**Tag: Hover-Status**
+**Tag: Hover-Zustand**
 
 ![Tag, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-178_taghover.png "0303-178_TagHover")<br />Tag, wenn darauf gezeigt wird
 
@@ -1896,7 +1896,7 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 | Hintergrund | `Tag.PressedBackground` |
 | Vordergrund (Text) | `Tag.PressedBackgroundText` |
 
-**Tag: ausgewählter Zustand**
+**Tag: ausgewählter Status**
 
 ![Ausgewähltes Tag](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "0303-180_TagSelected")<br />Ausgewähltes Tag
 
@@ -1905,20 +1905,20 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 | Hintergrund | `Tag.SelectedBackground` |
 | Vordergrund (Text) | `Tag.SelectedBackgroundText` |
 
-#### <a name="close-times-tag-glyph"></a>Schließen&times;( ) Tag-Glyphe
+#### <a name="close-times-tag-glyph"></a>Close ( &times; )-Tagsymbol
 
-**Schließen&times;( ) Tag-Glyphe: Standardzustand**
+**Close ( &times; )-tagglyphe: Standardstatus**
 
-![Standard-Schließen&times;( )-Tag-Glyphe](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303-181_TagGlyph")<br />Standard-Schließen&times;( )-Tag-Glyphe
+![Standardmäßige Close ( &times; )-tagglyphe](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303-181_TagGlyph")<br />Standardmäßige Close ( &times; )-tagglyphe
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Nicht zutreffend |
+| Hintergrund | – |
 | Vordergrund (Glyphe) | `Tag.TagHoverGlyph` |
 
-**Schließen&times;( ) Tag-Glyphe: Hover-Status**
+**Close ( &times; )-tagglyphe: Hover-Zustand**
 
-![Schließen&times;( ) Tag-Glyphe auf hover](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303-182_TagGlyphHover")<br />Schließen&times;( ) Tag-Glyphe auf hover
+![Close ( &times; )-Tagsymbol bei Hover](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303-182_TagGlyphHover")<br />Close ( &times; )-Tagsymbol bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1926,9 +1926,9 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 | Vordergrund (Glyphe) | `Tag.TagHoverGlyphHover` |
 | Rahmen | `Tag.TagHoverGlyphHoverBorder` |
 
-**Schließen&times;( ) Tag-Glyphe: gedrückter Zustand**
+**Close ( &times; )-tagglyphe: gedrückter Zustand**
 
-![Gedrückt Schließen&times;( ) Tag-Glyphe](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303-183_TagGlyphPressed")<br />Gedrückt Schließen&times;( ) Tag-Glyphe
+![Gedrücktes Close ( &times; )-Tagsymbol](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303-183_TagGlyphPressed")<br />Gedrücktes Close ( &times; )-Tagsymbol
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1936,18 +1936,18 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 | Vordergrund (Glyphe) | `Tag.TagHoverGlyphPressed` |
 | Rahmen | `Tag.TagHoverGlyphPressedBorder` |
 
-**Ausgewähltes Tag&times;mit Close ( ) Glyphe: Standardzustand**
+**Ausgewähltes Tag mit schließende ( &times; ) Glyphe: Standardstatus**
 
-![Standardmäßig ausgewähltes Tag&times;mit Close ( ) Glyphe](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303-184_TagSelected")<br />Standardmäßig ausgewähltes Tag&times;mit Close ( ) Glyphe
+![Ausgewähltes Standard-Tag mit Close ()-Symbol &times;](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303-184_TagSelected")<br />Ausgewähltes Standard-Tag mit Close ()-Symbol &times;
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Nicht zutreffend |
+| Hintergrund | – |
 | Vordergrund (Glyphe) | `Tag.TagSelectedGlyph` |
 
-**Ausgewähltes Tag&times;mit Close ( ) Glyphe: Hover-Status**
+**Ausgewähltes Tag mit schließende ( &times; ) Glyphe: Hover-Zustand**
 
-![Ausgewähltes Tag&times;mit Close ( ) -Glyphe auf Hover](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Ausgewähltes Tag&times;mit Close ( ) -Glyphe auf Hover
+![Ausgewähltes Tag mit "Close ()"-Symbol &times; beim Hover](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Ausgewähltes Tag mit "Close ()"-Symbol &times; beim Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1955,9 +1955,9 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 | Vordergrund (Glyphe) | `Tag.TagSelectedGlyphHover` |
 | Rahmen | `Tag.TagSelectedGlyphHoverBorder` |
 
-**Ausgewähltes Tag&times;mit Close ( ) Glyphe: gedrückter Zustand**
+**Ausgewähltes Tag mit schließende ( &times; ) Glyphe: gedrückter Zustand**
 
-![Ausgewähltes, gedrücktes&times;Tag mit Close ( ) Glyphe](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />Ausgewähltes, gedrücktes&times;Tag mit Close ( ) Glyphe
+![Ausgewähltes, gedrücktes Tag mit Close ()-Symbol &times;](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />Ausgewähltes, gedrücktes Tag mit Close ()-Symbol &times;
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1966,44 +1966,44 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 | Rahmen | `Tag.TagSelectedGlyphPressedBorder` |
 
 ## <a name="tool-windows"></a>Toolfenster
-Es ist nicht erforderlich, Toolfenster zu replizieren, da sie von der Visual Studio-Umgebung bereitgestellt werden. Sie können jedoch festlegen, dass die in den Toolfenstern genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.
+Tool Fenster müssen nicht repliziert werden, da Sie von der Visual Studio-Umgebung bereitgestellt werden. Sie können jedoch festlegen, dass die in den Toolfenstern genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.
 
-![Werkzeugfenster (rot)](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />Werkzeugfenster (rot)
+![Tool Fenster (Redline)](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />Tool Fenster (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... an einer beliebigen Stelle, an der Sie eine Benutzeroberfläche erstellen, die Mitmachen von Toolfenstern angezeigt werden soll. | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ... Wenn Sie die Benutzeroberfläche erstellen, die Sie mit Tool Fenstern vergleichen möchten. | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell über ein Design Update verfügt. |
 
 ### <a name="tool-window-frame"></a>Toolfensterrahmen
 Toolfenster in Visual Studio werden für viele verschiedene Aufgaben verwendet und können einen von mehreren unterschiedlichen Zuständen annehmen. Wenn ein Toolfenster geöffnet ist, kann es einer der vier Seiten des Dokumentbereichs zugeordnet werden. Toolfenster können auch unverankert sein und sich außerhalb der IDE befinden. In diesem Fall können sie an einer beliebigen Stelle auf dem Benutzerbildschirm positioniert werden. Unverankerte Fenster nehmen immer die höchste Position in der IDE ein. Schließlich können Toolfenster wie Dokumentfenster angedockt und als Registerkarte im Dokumentursprung angezeigt werden. Toolfenster, die als Dokumentfenster angedockt wurden, erhalten ihre Farbe teilweise über die Tokennamen des Dokumentfensters.
 
-![Werkzeugfensterrahmen (rot)](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")<br />Werkzeugfensterrahmen (rot)
+![Tool Fensterrahmen (Redline)](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")<br />Tool Fensterrahmen (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ...  an einer beliebigen Stelle, an der Sie eine Benutzeroberfläche erstellen, die Mitmachen von Toolfenstern angezeigt werden soll. | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ...  Wenn Sie die Benutzeroberfläche erstellen, die Sie mit Tool Fenstern vergleichen möchten. | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell über ein Design Update verfügt. |
 
-**Angedocktes Werkzeugfenster**
+**Angedocktes Tool Fenster**
 
-![Angedocktes Werkzeugfenster](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303-089_ToolWindowDocked")<br />Angedocktes Werkzeugfenster
+![Angedocktes Tool Fenster](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303-089_ToolWindowDocked")<br />Angedocktes Tool Fenster
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.ToolWindowBackground` |
 | Rahmen | `Environment.ToolWindowBorder` |
 
-**Schwebendes, fokussiertes Werkzeugfenster**
+**Unverankertes Tool Fenster**
 
-![Schwebendes, fokussiertes Werkzeugfenster](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303-090_ToolWindowFocused")<br />Schwebendes, fokussiertes Werkzeugfenster
+![Unverankertes Tool Fenster](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303-090_ToolWindowFocused")<br />Unverankertes Tool Fenster
 
 | Element | Tokenname: Category.color |
 | --- | --- |
 | Hintergrund | `Environment.ToolWindowBackground` |
 | Rahmen | `Environment.MainWindowActiveDefaultBorder` |
 
-**Schwebendes, unfokussiertes Werkzeugfenster**
+**Unverankertes, nicht fokussiertes Tool Fenster**
 
-![Schwebendes, unfokussiertes Werkzeugfenster](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303-091_ToolWindowUnfocused")<br />Schwebendes, unfokussiertes Werkzeugfenster
+![Unverankertes, nicht fokussiertes Tool Fenster](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303-091_ToolWindowUnfocused")<br />Unverankertes, nicht fokussiertes Tool Fenster
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -2011,43 +2011,43 @@ Toolfenster in Visual Studio werden für viele verschiedene Aufgaben verwendet u
 | Rahmen | `Environment.MainWindowInactiveBorder` |
 
 ### <a name="toolbox-like-windows"></a>Toolbox-ähnliche Fenster
-Die Toolbox ist eines der am häufigsten verwendeten häufig verwendeten Toolfenster in Visual Studio. Es ist im Wesentlichen ein Baum-Steuerelement mit einem speziellen Thema und Styling angewendet.
+Die Toolbox ist eines der am häufigsten verwendeten Tool Fenster in Visual Studio. Dabei handelt es sich im Wesentlichen um ein Struktur Steuerelement, auf das ein spezielles Design und ein spezielles
 
-![Toolbox-ähnliches Fenster (redline)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />Toolbox-ähnliches Fenster (redline)
+![Toolbox ähnliches Fenster (Redline)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />Toolbox ähnliches Fenster (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... wenn Sie ein Toolfenster entwerfen, das immer mit der Shell-Toolbox konsistent sein soll. | ... für alles, was der Toolbox-Benutzeroberfläche nicht ähnelt, oder wenn Sie sich nicht sicher sind, ob ihre Benutzeroberfläche Probleme hat, wenn sich die Farben der Shell-Toolbox ändern. |
+| ... beim Entwerfen eines Tool Fensters, das immer mit der shelltoolbox konsistent sein soll. | ... für alle Elemente, die der Toolbox-Benutzeroberfläche nicht ähneln, oder wenn Sie nicht sicher sind, ob Ihre Benutzeroberfläche bei Änderung der shelltoolbox-Farben Probleme haben wird. |
 
-**Toolbox-Knoten: Standardstatus**
+**Toolbox Knoten: Standardstatus**
 
-![Standardmäßiger übergeordneter Standardknoten der Toolbox](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "0303-190_ToolboxParentNode")<br />Standardmäßiger übergeordneter Standardknoten der Toolbox
+![Standardmäßiger Toolbox-übergeordneter Knoten](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "0303-190_ToolboxParentNode")<br />Standardmäßiger Toolbox-übergeordneter Knoten
 
-![Untergeordneter Standard-Toolboxknoten](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303-191_ToolboxChildNode")<br />Untergeordneter Standard-Toolboxknoten
+![Standardmäßiger Toolbox-untergeordneter Knoten](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303-191_ToolboxChildNode")<br />Standardmäßiger Toolbox-untergeordneter Knoten
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ToolboxContent`<br />(Überschriften) |
-| Hintergrund | `Environment.ToolWindowBackground`<br />(Einzelne Elemente oder ganzes Fenster, wenn keine verfügbaren Steuerelemente verfügbar sind) |
+| Hintergrund | `Environment.ToolboxContent`<br />He |
+| Hintergrund | `Environment.ToolWindowBackground`<br />(Einzelne Elemente oder ganzes Fenster, wenn keine Steuerelemente verfügbar sind) |
 | Rahmen | Keine |
 | Vordergrund (Glyphe) | `Environment.ToolboxContent` |
 | Vordergrund (Text) | `Environment.ToolboxContent` |
 
-**Toolbox-Untergeordnete Knoten: Hover-Status**
+**Untergeordnete Toolbox-Knoten: Hover-Zustand**
 
 ![Toolbox (untergeordneter Knoten), wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br />Toolbox (untergeordneter Knoten), wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ToolboxContentMouseOver`<br />(Nur Einzelelemente) |
+| Hintergrund | `Environment.ToolboxContentMouseOver`<br />(Nur einzelne Elemente) |
 | Rahmen | Keine |
-| Vordergrund (Text) | `Environment.ToolboxContentMouseOver`<br />(Nur Einzelelemente) |
+| Vordergrund (Text) | `Environment.ToolboxContentMouseOver`<br />(Nur einzelne Elemente) |
 
-**Ausgewählte Toolbox-Knoten: fokussierter Zustand**
+**Ausgewählte Toolbox Knoten: Fokus Zustand**
 
-![Fokussierter, ausgewählter parenter Toolbox-Knoten](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />Fokussierter, ausgewählter parenter Toolbox-Knoten
+![Fokus, ausgewählter Toolbox (übergeordneter Knoten)](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />Fokus, ausgewählter Toolbox (übergeordneter Knoten)
 
-![Fokussierter, ausgewählter untergeordneter Toolbox-Knoten](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />Fokussierter, ausgewählter untergeordneter Toolbox-Knoten
+![Fokus, ausgewählter Toolbox-untergeordneter Knoten](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />Fokus, ausgewählter Toolbox-untergeordneter Knoten
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -2056,11 +2056,11 @@ Die Toolbox ist eines der am häufigsten verwendeten häufig verwendeten Toolfen
 | Vordergrund (Glyphe) | `TreeView.SelectedItemActive`<br />Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Vordergrund (Text) | `TreeView.SelectedItemActive`<br />Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
-**Ausgewählte Toolbox-Knoten: unfokussierter Zustand**
+**Ausgewählte Toolbox Knoten: Status ohne Fokus**
 
-![Ausgewählter, unfokussierter übergeordneter Toolbox-Knoten](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />Ausgewählter, unfokussierter übergeordneter Toolbox-Knoten
+![Ausgewählter, nicht fokussierter Toolbox (übergeordneter Knoten)](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />Ausgewählter, nicht fokussierter Toolbox (übergeordneter Knoten)
 
-![Ausgewählter, unfokussierter untergeordneter Toolbox-Knoten](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />Ausgewählter, unfokussierter untergeordneter Toolbox-Knoten
+![Ausgewählter, nicht fokussierter Toolbox-untergeordneter Knoten](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />Ausgewählter, nicht fokussierter Toolbox-untergeordneter Knoten
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -2070,13 +2070,13 @@ Die Toolbox ist eines der am häufigsten verwendeten häufig verwendeten Toolfen
 | Vordergrund (Text) | `TreeView.SelectedItemInactive`<br />Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
 ### <a name="tool-window-title-bar"></a>Titelleiste des Toolfensters
-Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der Oberseite der Titelleiste. Es hat keinen Tokennamen für seinen unfokussierten Status.
+Der Rahmen der Titelleiste ist kein echter Rahmen, sondern eine Dicke Linie über dem oberen Rand der Titelleiste. Er verfügt über keinen Tokennamen für seinen nicht fokussierten Zustand.
 
-![Titelleiste des Werkzeugfensters (rot)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />Titelleiste des Werkzeugfensters (rot)
+![Tool Fenstertitelleiste (Redline)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />Tool Fenstertitelleiste (Redline)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... an einer beliebigen Stelle, an der Sie eine Benutzeroberfläche erstellen, die Mitmachen von Toolfenstern angezeigt werden soll. | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ... Wenn Sie die Benutzeroberfläche erstellen, die Sie mit Tool Fenstern vergleichen möchten. | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell über ein Design Update verfügt. |
 
 **Titelleiste mit Fokus**
 
@@ -2084,9 +2084,9 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.TitleBarActiveGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.TitleBarActiveGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.TitleBarActiveText` |
-| Rahmen | `Environment.TitleBarActiveBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.TitleBarActiveBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 | Ziehpunkt | `Environment.TitleBarDragHandleActive` |
 
 **Titelleiste ohne Fokus**
@@ -2095,42 +2095,42 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.TitleBarInactiveGradientBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.TitleBarInactiveGradientBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.TitleBarInactiveText` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 | Ziehpunkt | `Environment.TitleBarDragHandle` |
 
-#### <a name="tool-window-title-bar-buttons"></a>Schaltflächen für die Titelleiste des Werkzeugfensters
-![Titelleistenschaltfläche (Rotlinie)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />Titelleistenschaltfläche (Rotlinie)
+#### <a name="tool-window-title-bar-buttons"></a>Schaltflächen der Tool Fenster-Titelleiste
+![Titelleisten Schaltfläche (rote Linie)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />Titelleisten Schaltfläche (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... für Schaltflächen, die in der Benutzeroberfläche angezeigt werden, die Farbtoken aus den Titelleisten des Werkzeugfensters verwendet. | ... für Schaltflächen, die an anderen Stellen angezeigt werden. |
-| | ... in einer anderen als angegebenen Hintergrund-/Vordergrundkombination. |
+| ... für Schaltflächen, die in der Benutzeroberfläche angezeigt werden, die farbtoken aus den Titelleisten des Tool Fensters verwendet. | ... für Schaltflächen, die an anderen Speicherorten angezeigt werden. |
+| | ... in einer anderen Kombination aus Hintergrund und Vordergrund als angegeben. |
 
-**Fokussierte Titelleistenschaltflächen: Standardzustand**
+**Titelleisten Schaltflächen mit Fokus: Standardstatus**
 
-![Standardschaltflächen für die Titelleiste](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br />Standardschaltflächen für die Titelleiste
+![Standard, Titelleisten Schaltflächen mit Fokus](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br />Standard, Titelleisten Schaltflächen mit Fokus
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Nicht zutreffend |
+| Hintergrund | – |
 | Vordergrund (Glyphe) | `Environment.ToolWindowButtonActiveGlyph` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 
-**Unfokussierte Titelleistenschaltflächen: Standardzustand**
+**Schaltflächen ohne Fokus in der Titelleiste: Standardzustand**
 
-![Standardschaltflächen für unfokussierte Titelleisten](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />Standardschaltflächen für unfokussierte Titelleisten
+![Standard, nicht fokussierte Titelleisten Schaltflächen](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />Standard, nicht fokussierte Titelleisten Schaltflächen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | Nicht zutreffend |
+| Hintergrund | – |
 | Vordergrund (Glyphe) | `Environment.ToolWindowButtonInactiveGlyph` |
-| Rahmen | Nicht zutreffend |
+| Rahmen | – |
 
-**Fokussierte Titelleistenschaltflächen: Hover-Status**
+**Titelleisten Schaltflächen mit Fokus: Hover-Zustand**
 
-![Fokussierte Titelleistenschaltflächen auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br />Fokussierte Titelleistenschaltflächen auf dem Mauszeiger
+![Fokus leisten-Schaltflächen auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br />Fokus leisten-Schaltflächen auf dem Mauszeiger
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -2138,9 +2138,9 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 | Vordergrund (Glyphe) | `Environment.ToolWindowButtonHoverActiveGlyph` |
 | Rahmen | `Environment.ToolWindowButtonHoverActiveBorder` |
 
-**Unfokussierte Titelleistenschaltflächen: Hover-Status**
+**Titelleisten Schaltflächen ohne Fokus: Hover-Zustand**
 
-![Unfokussierte Titelleistenschaltflächen auf dem Mauszeiger](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br />Unfokussierte Titelleistenschaltflächen auf dem Mauszeiger
+![Nicht fokussierte Titelleisten Schaltflächen bei Hover](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br />Nicht fokussierte Titelleisten Schaltflächen bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -2148,9 +2148,9 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 | Vordergrund (Glyphe) | `Environment.ToolWindowButtonHoverInactiveGlyph` |
 | Rahmen | `Environment.ToolWindowButtonHoverInactiveBorder` |
 
-**Fokussierte Titelleistentasten: Gedrückter Zustand**
+**Titelleisten Schaltflächen mit Fokus: gedrückter Zustand**
 
-![Fokussierte Titelleistentasten beim Drücken](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br />Fokussierte Titelleistentasten beim Drücken
+![Fokus leisten Schaltflächen beim Drücken](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br />Fokus leisten Schaltflächen beim Drücken
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -2158,9 +2158,9 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 | Vordergrund (Glyphe) | `Environment.ToolWindowButtonDownActiveGlyph` |
 | Rahmen | `Environment.ToolWindowButtonDownBorder` |
 
-**Unfokussierte Titelleistentasten: Gedrückter Zustand**
+**Titelleisten Schaltflächen ohne Fokus: gedrückter Zustand**
 
-![Unkonzentrierte Titelleistentasten beim Drücken](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br />Unkonzentrierte Titelleistentasten beim Drücken
+![Nicht fokussierte Titelleisten Schaltflächen beim Drücken](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br />Nicht fokussierte Titelleisten Schaltflächen beim Drücken
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -2169,11 +2169,11 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 | Rahmen | `Environment.ToolWindowButtonDownBorder` |
 
 ### <a name="tool-window-tabs"></a>Toolfenster-Registerkarten
-![Registerkarte "Werkzeugfenster" (rot)](../../extensibility/ux-guidelines/media/0303-102_toolwindowtabredline.png "0303-102_ToolWindowTabRedline")<br />Registerkarte "Werkzeugfenster" (rot)
+![Registerkarte "Tool Fenster" (rote Linie)](../../extensibility/ux-guidelines/media/0303-102_toolwindowtabredline.png "0303-102_ToolWindowTabRedline")<br />Registerkarte "Tool Fenster" (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... an einer beliebigen Stelle, an der Sie eine Benutzeroberfläche erstellen, die Mitmachen von Toolfenstern angezeigt werden soll. | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ... Wenn Sie die Benutzeroberfläche erstellen, die Sie mit Tool Fenstern vergleichen möchten. | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell über ein Design Update verfügt. |
 
 **Ausgewählt, Toolfenster-Registerkarte mit Fokus**
 
@@ -2183,7 +2183,7 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 | --- | --- |
 | Hintergrund | `Environment.ToolWindowTabSelectedTab` |
 | Vordergrund (Text) | `Environment.ToolWindowTabSelectedActiveText` |
-| Rahmen | `Environment.ToolWindowTabSelectedBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.ToolWindowTabSelectedBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 
 **Ausgewählt, Toolfenster-Registerkarte ohne Fokus**
 
@@ -2193,52 +2193,52 @@ Der Titelleistenrahmen ist kein echter Rahmen, er ist eine dicke Linie über der
 | --- | --- |
 | Hintergrund | `Environment.ToolWindowTabSelectedTab` |
 | Vordergrund (Text) | `Environment.ToolWindowTabSelectedText` |
-| Rahmen | `Environment.ToolWindowTabSelectedBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.ToolWindowTabSelectedBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 
-**Registerkarte "Hintergrundwerkzeugfenster": Standardzustand**
+**Registerkarte des Hintergrund Tool Fensters: Standardstatus**
 
-![Registerkarte des Standard-Hintergrundwerkzeugfensters](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br />Registerkarte des Standard-Hintergrundwerkzeugfensters
+![Standard Registerkarte für das Hintergrund Tool Fenster](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br />Standard Registerkarte für das Hintergrund Tool Fenster
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Gradient stoppt auf denselben Farbwert in Visual Studio 2013.) |
+| Hintergrund | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(In Visual Studio 2013 wird der Farbverlaufs Stopp auf denselben Farbwert festgelegt.) |
 | Vordergrund (Text) | `Environment.ToolWindowTabText` |
 | Rahmen | `Environment.ToolWindowTabBorder` |
 
-**Registerkarte "Hintergrundwerkzeugfenster": Hover-Status**
+**Registerkarte des Hintergrund Tool Fensters: Hover-Zustand**
 
 ![Hintergrundregisterkarte im Toolfenster, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br />Hintergrundregisterkarte im Toolfenster, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Gradient stoppt auf denselben Farbwert in Visual Studio 2013.) |
+| Hintergrund | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(In Visual Studio 2013 wird der Farbverlaufs Stopp auf denselben Farbwert festgelegt.) |
 | Vordergrund (Text) | `Environment.ToolWindowTabMouseOverText` |
-| Rahmen | `Environment.ToolWindowTabMouseOverBorder`<br />(Auf die gleiche Farbe wie Hintergrund eingestellt.) |
+| Rahmen | `Environment.ToolWindowTabMouseOverBorder`<br />(Auf die gleiche Farbe wie der Hintergrund festgelegt.) |
 
 ### <a name="auto-hide-tabs"></a>Automatisch ausgeblendete Registerkarten
 
-![Automatisches Ausblenden von Registerkarten (Rotlinie)](../../extensibility/ux-guidelines/media/0303-107_autohideredline.png "0303-107_AutoHideRedline") Automatisches Ausblenden von Registerkarten (Rotlinie)
+![Registerkarten automatisch ausblenden (rote Linie)](../../extensibility/ux-guidelines/media/0303-107_autohideredline.png "0303-107_AutoHideRedline") Registerkarten automatisch ausblenden (rote Linie)
 
-| Verwenden... | Verwenden Sie nicht ... |
+| Verwenden Sie... | Nicht verwenden... |
 | --- | --- |
-| ... an einer beliebigen Stelle, an der Sie eine Benutzeroberfläche erstellen, die Sie automatisch ausgeblendeten Werkzeugfenster-Registerkarten anpassen möchten. | ... für jede Benutzeroberfläche, die Sie nicht automatisch ändern möchten, wenn die Shell über eine Designaktualisierung verfügt. |
+| ... Wenn Sie eine Benutzeroberfläche erstellen, die Sie automatisch ausgeblendeten Tool Fenster Registerkarten zuordnen möchten. | ... für alle Benutzeroberflächen, die Sie nicht automatisch ändern möchten, wenn die Shell über ein Design Update verfügt. |
 
-**Automatisches Ausblenden von Registerkarten: Standardzustand**
+**Registerkarten automatisch ausblenden: Standardstatus**
 
 ![Automatisch ausgeblendete Registerkarte, Standard](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "0303-108_AutoHideTab")<br />Automatisch ausgeblendete Registerkarte, Standard
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.AutoHideTabBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.AutoHideTabBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.AutoHideTabText` |
 | Rahmen | `Environment.AutoHideTabBorder` |
 
-**Auto-Hide-Registerkarten: Hover-Status**
+**Registerkarten automatisch ausblenden: Hover-Zustand**
 
 ![Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "0303-109_AutoHideTabHover")<br />Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
-| Hintergrund | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Gradient stopps für dieses Token, das in der thematischen Benutzeroberfläche nicht verwendet wird.) |
+| Hintergrund | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Verlaufs Stopps für dieses Token werden nicht in der Benutzeroberfläche verwendet.) |
 | Vordergrund (Text) | `Environment.AutoHideTabMouseOverText` |
 | Rahmen | `Environment.AutoHideTabMouseOverBorder` |

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ab202ed97ce2056313eb661d51d7150bb9689829
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664414"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Gewusst wie: Modellieren eines 3D-Geländes
@@ -38,20 +38,20 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ge
 
  Das Modell sollte dann etwa so aussehen:
 
- ![3D&#45;-Szene, die ein Geländemodell anzeigt](../designers/media/digit-terrain-model.png "Ziffern-Gelände-Modell")
+ ![3&#45;D-Szene, die ein Geländemodell anzeigt](../designers/media/digit-terrain-model.png "Ziffern-Gelände-Modell")
 
  Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
 #### <a name="to-create-a-3-d-terrain-model"></a>So erstellen Sie ein 3D-Geländemodell
 
-1. Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten. Weitere Informationen zum Hinzufügen eines Modells zu Ihren Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).
+1. Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten. Weitere Informationen zum Hinzufügen eines Modells zu Ihrem Projekt finden Sie im Abschnitt "Getting Started" im [Modell-Editor](../designers/model-editor.md).
 
 2. Fügen Sie eine Fläche in die Szene ein. Klicken Sie in der **Toolbox** unter **Formen** auf **Ebene**, und verschieben Sie es auf die Entwurfsoberfläche.
 
    > [!TIP]
    > Sie können das Ebenenobjekt auf der Entwurfsoberfläche umrahmen, um damit einfacher arbeiten zu können. Klicken Sie im Modus **Auswählen** auf das Ebenenobjekt und anschließend auf der Symbolleiste des Modell-Editors auf die Schaltfläche **Rahmenobjekt**
 
-3. Gehen Sie in den Flächenauswahlmodus. Wählen Sie auf der Symbolleiste des Modell-Editors **Fläche auswählen** aus.
+3. Gehen Sie in den Flächenauswahlmodus. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche auswählen**.
 
 4. Unterteilen Sie die Ebene. Klicken Sie im Flächenauswahlmodus die Ebene einmal an, um sie auswählen zu können. Klicken Sie anschließend auf die Oberfläche der Ebene, um ihre einzige Fläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche der Ebene hinzugefügt, die sie in vier gleichgroße Teile aufteilen.
 
@@ -66,9 +66,9 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ge
 
    Das Geländemodell ist fertig. Hier ist noch einmal das fertige Modell, bei dem eine Phong-Schattierung angewandt wurde.
 
-   ![3D&#45;-Szene, die ein Geländemodell anzeigt](../designers/media/digit-terrain-model.png "Ziffern-Gelände-Modell")
+   ![3&#45;D-Szene, die ein Geländemodell anzeigt](../designers/media/digit-terrain-model.png "Ziffern-Gelände-Modell")
 
-   Sie können dieses Geländemodell zur Veranschaulichung des Effekts des Farbverlauf-Shaders verwenden, das unter [Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders](../designers/how-to-create-a-geometry-based-gradient-shader.md) beschrieben wird.
+   Sie können dieses Geländemodell verwenden, um die Auswirkung des Gradient-Shaders zu veranschaulichen, der in Gewusst [wie: Erstellen eines Geometrie basierten Farbverlauf-Shader](../designers/how-to-create-a-geometry-based-gradient-shader.md)beschrieben wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Modell-Editor](../designers/model-editor.md)

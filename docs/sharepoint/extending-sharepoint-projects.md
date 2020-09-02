@@ -15,37 +15,37 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62967480"
 ---
-# <a name="extend-sharepoint-projects"></a>Erweitern von SharePoint-Projekte
-  Erstellen Sie eine projekterweiterung aus, wenn die Project-Level-Funktionen von SharePoint-Projekte angepasst werden soll. Beispielsweise können Sie benutzerdefinierte Eigenschaften hinzufügen oder reagieren auf Ereignisse auf Projektebene, die ausgelöst werden, wenn der Benutzer eine SharePoint-Lösung in Visual Studio entwickelt.
+# <a name="extend-sharepoint-projects"></a>Erweitern von SharePoint-Projekten
+  Erstellen Sie eine Projekt Erweiterung, wenn Sie Features auf Projektebene von SharePoint-Projekten anpassen möchten. Beispielsweise können Sie benutzerdefinierte Projekteigenschaften hinzufügen oder auf Ereignisse auf Projektebene reagieren, die ausgelöst werden, wenn der Benutzer eine SharePoint-Projekt Mappe in Visual Studio entwickelt.
 
-## <a name="create-project-extensions"></a>Erstellen von Project-Erweiterungen
- Um ein Projektelement erweitern möchten, erstellen Sie eine Visual Studio-Erweiterungsassembly, implementiert die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Schnittstelle. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+## <a name="create-project-extensions"></a>Erstellen von Projekt Erweiterungen
+ Um ein Projekt Element zu erweitern, erstellen Sie eine Visual Studio-Erweiterungsassembly, die die- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Schnittstelle implementiert. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
- Wenn Sie eine projekterweiterung erstellen, können Sie auch die folgende Funktionen für die SharePoint-Projekte hinzufügen:
+ Wenn Sie eine Projekt Erweiterung erstellen, können Sie den SharePoint-Projekten auch die folgenden Funktionen hinzufügen:
 
-- Hinzufügen eines Kontextmenüelements an. Das Menüelement angezeigt wird, wenn Sie das Kontextmenü für eine SharePoint-Projektknoten im Öffnen **Projektmappen-Explorer** mit der rechten Maustaste des Knotens, oder Sie ihn auswählen, und wählen Sie dann die **UMSCHALT** +  **F10** Schlüssel. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen ein Kontextmenüelements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).
+- Fügen Sie ein Kontextmenü Element hinzu. Das Menü Element wird angezeigt, wenn Sie das Kontextmenü für einen SharePoint-Projekt Knoten in **Projektmappen-Explorer** öffnen, indem Sie mit der rechten Maustaste auf den Knoten klicken oder ihn auswählen und **dann die** + Taste**F10** drücken. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Kontextmenü Elements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).
 
-- Fügen Sie eine benutzerdefinierte Eigenschaft hinzu. Die Eigenschaft wird in der **Eigenschaften** Fenster bei der Auswahl einer SharePoint-Projekt in **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).
+- Fügen Sie eine benutzerdefinierte Eigenschaft hinzu. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie ein SharePoint-Projekt in **Projektmappen-Explorer**auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).
 
-  Eine exemplarische Vorgehensweise, die veranschaulicht, wie erstellen, bereitstellen und Testen Sie eine projekterweiterung finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).
+  Eine exemplarische Vorgehensweise, die veranschaulicht, wie eine Projekt Erweiterung erstellt, bereitgestellt und getestet wird, finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).
 
-## <a name="understand-the-relationship-between-project-extensions-and-project-instances"></a>Verstehen Sie die Beziehung zwischen projekterweiterungen und Instanzen von project
- Bei der Erstellung einer projekterweiterung lädt die Erweiterung wird in der jede Art von SharePoint-Projekt geöffnet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält mehrere SharePoint-Projektvorlagen, z. B. Ereignisempfänger, Inhaltstypen und Listendefinitionen. Es ist jedoch nur eine Art von SharePoint-Projekt. Die Projekttypen, die in angezeigt werden. die **neues Projekt** im Dialogfeld werden nur die Vorlagen, die eine oder mehrere SharePoint-Projektelemente bündeln. Da nur eine SharePoint-Projekt-Typ vorhanden ist, gelten Erweiterungen, die für ein Projekt erstellt wurde, für alle SharePoint-Projekte. Erstellen nicht möglich ist, z. B. eine Erweiterung, die nur für gilt eine **Inhaltstyp** Projekt.
+## <a name="understand-the-relationship-between-project-extensions-and-project-instances"></a>Verstehen der Beziehung zwischen Projekt Erweiterungen und Projekt Instanzen
+ Wenn Sie eine Projekt Erweiterung erstellen, wird die Erweiterung geladen, wenn eine beliebige Art von SharePoint-Projekt in geöffnet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst mehrere SharePoint-Projektvorlagen, z. b. Listen Definitionen, Inhaltstypen und Ereignis Empfänger. Es gibt jedoch nur einen SharePoint-Projekttyp. Die Projekttypen, die im Dialogfeld **Neues Projekt** angezeigt werden, sind nur Vorlagen, mit denen ein oder mehrere SharePoint-Projekt Elemente gebündelt werden. Da nur ein SharePoint-Projekttyp vorhanden ist, gelten für ein Projekt erstellte Erweiterungen für alle SharePoint-Projekte. Es ist beispielsweise nicht möglich, eine Erweiterung zu erstellen, die nur für ein **Inhaltstyp** Projekt gilt.
 
- Um ein bestimmtes Projekt-Instanz zuzugreifen, behandeln Sie eines der der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Ereignisse der *Anwendbarkeitsprüfungen* Parameter in der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> Methode. Um zu bestimmen, wenn eine Lösung ein SharePoint-Projekt hinzugefügt wird, z. B. Behandeln der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignis. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+ Um auf eine bestimmte Projekt Instanz zuzugreifen, behandeln Sie eines der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Ereignisse des *ProjectService* -Parameters in der Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> Methode. Um z. b. zu ermitteln, wann ein SharePoint-Projekt zu einer Projekt Mappe hinzugefügt wird, behandeln Sie das- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignis. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
-- [Vorgehensweise: Hinzufügen eines Kontextmenüelements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
-- [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
-- [Exemplarische Vorgehensweise: Erstellen einer SharePoint-projekterweiterung](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)
-- [Definieren von benutzerdefinierten SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
-- [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md)
-- [Erweitern von SharePoint-Packen und-bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Erweitern von SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+- [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)
+- [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
+- [Erweitern von SharePoint-Projekt Elementen](../sharepoint/extending-sharepoint-project-items.md)
+- [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md)

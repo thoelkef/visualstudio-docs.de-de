@@ -13,16 +13,16 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2d3abc956d736f5c9273134b41c0fc9c2dc7db62
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688944"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle kann die Sitzung, die Debug-Manager (SDM) Anfügen an ein Programm und den Programm Knoten mit einem Programm verknüpft.  
+Diese Schnittstelle ermöglicht es dem sitzungsdebug-Manager (SDM), an ein Programm anzufügen und den Programmknoten zu erhalten, der einem Programm zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,29 +31,29 @@ IDebugProgramEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle auf dasselbe Objekt wie die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle, um das SDM an ein Programm angefügt werden soll, während gleichzeitig an ermöglicht Anschlusslieferanten zum Nachverfolgen von allen Sitzungen angefügt ermöglichen die das Programm. Benutzerdefinierte Anschlusslieferanten kann diese Schnittstelle implementieren, wenn er entscheidet.  
+ Ein benutzerdefinierter Port Lieferant implementiert diese Schnittstelle auf demselben Objekt wie die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle, damit die SDM an ein Programm angefügt werden kann, während gleichzeitig der Port Lieferant alle an das Programm angefügten Sitzungen verfolgen kann. Der benutzerdefinierte portlieferant kann diese Schnittstelle implementieren, wenn er Sie auswählt.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Die SDM-Aufrufe [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf eine `IDebugProgram2` Schnittstelle zum Abrufen diese Schnittstelle, um Sitzungen zu verfolgen, die Programme angefügt haben.  
+ Der SDM ruft [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für eine `IDebugProgram2` Schnittstelle auf, um diese Schnittstelle zu erhalten, um Sitzungen zu verfolgen, die an Programme angefügt sind.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugProgramEx2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProgramEx2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Fügt ein Programm mit einer Sitzung.|  
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Ruft ab, der Programm-Knoten, die mit einem Programm verknüpft.|  
+|[Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Fügt ein Programm an eine Sitzung an.|  
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Ruft den einem Programm zugeordneten Programmknoten ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Schnittstelle ist privat zwischen den SDM und dem Programm.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Schnittstelle ist zwischen dem SDM und dem Programm privat.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Portpriv.h  
+ Header: portpriv. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

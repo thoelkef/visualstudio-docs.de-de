@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Microsoft Docs
+title: MODULE_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714310"
 ---
 # <a name="module_info"></a>MODULE_INFO
-Beschreibt ein bestimmtes Modul (DLL, EXE oder Assembly).
+Beschreibt ein bestimmtes Modul (dll, exe oder Assembly).
 
 ## <a name="syntax"></a>Syntax
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>Member
  `dwValidFields`\
- Eine Kombination von [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Flags aus der MODULE_INFO_FIELDS-Enumeration, die angibt, welche Felder ausgefüllt werden.
+ Eine Kombination von Flags aus der [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
  `m_bstrName`\
  Der Modulname.
@@ -75,42 +75,42 @@ public struct MODULE_INFO { 
  Die Modulversion.
 
  `m_bstrDebugMessage`\
- Eine optionale Meldung zum Modul, z. B. "Symbole können nicht geladen werden."
+ Eine optionale Meldung zum Modul, z. b. "Symbole können nicht geladen werden."
 
  `m_addrLoadAddress`\
- Die Ladeadresse des Moduls.
+ Die Lade Adresse des Moduls.
 
  `m_addrPreferredLoadAddress`\
- Die bevorzugte Ladeadresse des Moduls.
+ Die bevorzugte Lade Adresse des Moduls.
 
  `m_dwSize`\
  Die Modulgröße.
 
  `m_dwLoadOrder`\
- Die Modulladereihenfolge.
+ Die Lade Reihenfolge des Moduls.
 
  `m_TimeStamp`\
- Der Zeitpunkt, zu dem die Symboldatei zuletzt geändert wurde.
+ Der Zeitpunkt, zu dem die Symbol Datei zuletzt geändert wurde.
 
  `m_bstrUrlSymbolLocation`\
- Der Speicherort der Symboldatei (z.\\B. ". ") im Modul angegeben. Wird als Startposition verwendet, um Symbole für ein Modul zu finden.
+ Der Speicherort der Symbol Datei (z. b. ". \\ "), die im Modul angegeben ist. Wird als Ausgangs Speicherort zum Suchen von Symbolen für ein Modul verwendet.
 
  `m_dwModuleFlags`\
- Eine Kombination von [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) Flags aus der MODULE_FLAGS-Enumeration, die das Modul beschreibt.
+ Eine Kombination von Flags aus der [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) Enumeration, die das Modul beschreibt.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Struktur wird an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) übergeben, bei der sie ausgefüllt wird.
+ Diese Struktur wird an die [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) -Methode, in der Sie ausgefüllt ist, übermittelt.
 
- Diese Struktur entspricht jedem Modul, das im **Fenster Module aufgeführt** ist.
+ Diese Struktur entspricht den im Fenster **Module aufgeführten Modulen** .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

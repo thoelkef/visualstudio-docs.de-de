@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656869"
 ---
 # <a name="debugging-legacy-workflows"></a>Debuggen von Legacyworkflows
@@ -27,7 +27,7 @@ Wenn Sie mit der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] 
 > Wenn mehrere Visual Studio-Versionen auf dem Computer installiert und deinstalliert wurden, kann das WF3-Debuggen aus einem der beiden folgenden Gründe fehlschlagen:
 >
 > - Die Haltepunkte werden nicht erreicht.
->   - Folgende Meldung wird angezeigt:
+>   - Die folgende Meldung wird angezeigt:
 >
 >   **Das Debuggen kann auf dem Webserver nicht gestartet werden. Der Debugger ist nicht ordnungsgemäß installiert.  Der angeforderte Codetyp kann nicht debuggt werden.  Führen Sie Setup aus, um den Debugger zu installieren oder zu reparieren.**
 >
@@ -45,7 +45,7 @@ Wenn Sie mit der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] 
 
 - Bedingte Haltepunkte auf der Entwurfsoberfläche
 
-- Schnellüberwachung
+- Schnellüberwachung.
 
 - Nächste Anweisung festlegen
 

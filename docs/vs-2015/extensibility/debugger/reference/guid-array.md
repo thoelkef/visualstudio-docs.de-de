@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0465188cd44ad14ef3f7df9f5eda619a5ecb6d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160112"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
+# <a name="guid_array"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ein Array von eindeutigen Bezeichnern für verfügbare Debug-Engines beschreibt.  
+Beschreibt ein Array eindeutiger Bezeichner für verfügbare Debug-engines.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,21 +42,21 @@ public struct GUID_ARRAY
   
 ## <a name="terms"></a>Begriffe  
  dwCount  
- Die Anzahl von eindeutigen Bezeichnern im Array.  
+ Anzahl der eindeutigen Bezeichner im Array.  
   
  Member  
- Array, das eindeutige Bezeichner enthält.  
+ Ein Array, das eindeutige Bezeichner enthält.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zurückgegeben, durch die [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird von der [getenginefilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

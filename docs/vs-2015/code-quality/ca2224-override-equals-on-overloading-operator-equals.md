@@ -17,20 +17,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538635"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -49,8 +49,8 @@ ms.locfileid: "85538635"
 
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Beispiele für inkonsistente Gleichheits Definitionen
 
-### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt einen Typ mit inkonsistenten Definitionen der Gleichheit. `BadPoint`ändert die Bedeutung von Gleichheit durch Bereitstellen einer benutzerdefinierten Implementierung des Gleichheits Operators, jedoch nicht, <xref:System.Object.Equals%2A> sodass Sie identisch verhält.
+### <a name="description"></a>BESCHREIBUNG
+ Das folgende Beispiel zeigt einen Typ mit inkonsistenten Definitionen der Gleichheit. `BadPoint` ändert die Bedeutung von Gleichheit durch Bereitstellen einer benutzerdefinierten Implementierung des Gleichheits Operators, jedoch nicht, <xref:System.Object.Equals%2A> sodass Sie identisch verhält.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]
@@ -88,7 +88,7 @@ ms.locfileid: "85538635"
  **b = = bcopy? Ja**
 ## <a name="class-example"></a>Klassenbeispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel zeigt eine Klasse (Verweistyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -101,7 +101,7 @@ ms.locfileid: "85538635"
 
 ## <a name="structure-example"></a>Struktur Beispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel zeigt eine Struktur (Werttyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code

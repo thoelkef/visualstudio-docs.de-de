@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9285a72137e4c2f3bdf54ef9f6535dedaa2cd5f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670782"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Gewusst wie: Speichern und Öffnen von Dateien mit Codierung
@@ -58,5 +58,5 @@ Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirek
 
 3. Führen Sie die Schritte 2 und 3 der vorherigen Prozedur aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Codierung und Windows Forms Globalisierung](https://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9) [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)

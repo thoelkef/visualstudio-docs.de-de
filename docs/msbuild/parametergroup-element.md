@@ -28,6 +28,7 @@ ms.locfileid: "78263074"
 Enthält eine optionale Liste von Parametern, die für die Aufgabe vorhanden sein werden, die von `UsingTask` `TaskFactory` generiert wird. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup>
+ \<ParameterGroup>
 
 ## <a name="syntax"></a>Syntax
 

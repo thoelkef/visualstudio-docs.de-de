@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97a868973d2a514150b8d728e685523e918f88f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150160"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Liest Arbeitsspeicher aus Image an.  
+Liest Speicher aus dem Image.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,22 +39,22 @@ HRESULT readMemory ( 
   
 #### <a name="parameters"></a>Parameter  
  `type`  
- [in] Eines der [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) Enumerationswerte, der angibt, die Art des Arbeitsspeichers auf.  
+ in Einer der [MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) -Enumerationswerte, der die Art des Arbeitsspeichers angibt, auf den zugegriffen werden soll.  
   
  `va`  
- [in] Speicherort der virtuellen Adresse in Abbildung gelesen werden soll.  
+ in Der Speicherort der virtuellen Adresse in Image zum beginnen des Lesens.  
   
  `cbData`  
- [in] Größe des Datenpuffers in Byte.  
+ in Größe des Daten Puffers in Bytes.  
   
  `pcbData`  
- [out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten zur Verfügung.  
+ vorgenommen Gibt die Anzahl der zurückgegebenen Bytes zurück. Wenn `data` ist `NULL` , `pcbData` enthält die Gesamtanzahl der verfügbaren Daten bytes.  
   
  `data`  
- [out] Ein Puffer, der mit Daten aus der angegebenen Position gefüllt werden soll.  
+ vorgenommen Ein Puffer, der mit Daten aus der angegebenen Position ausgefüllt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45a22d7ea9c6d672d7198d7ea253a83993efdc2a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645693"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Gefilterte Vervollständigungslisten in Visual Basic
@@ -25,5 +25,5 @@ ms.locfileid: "72645693"
 
 In Visual Basic verfügen IntelliSense-Vervollständigungslisten über zwei Registersteuerelemente, die sich am unteren Rand der Liste befinden. Die Registerkarte **Allgemein**, die standardmäßig ausgewählt ist, zeigt Elemente, die am häufigsten zur Vervollständigung der Anweisung verwendet werden, die Sie schreiben. Die Registerkarte **Alle** zeigt alle Elemente an, die für die automatische Vervollständigung verfügbar sind, darunter auch diejenigen, die sich auch auf der Registerkarte **Allgemein** befinden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden von IntelliSense](../ide/using-intellisense.md) [Visual Basic-spezifischer IntelliSense](../ide/visual-basic-specific-intellisense.md)

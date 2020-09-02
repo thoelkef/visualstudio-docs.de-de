@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903528"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Hinzufügen eines Menü Controllers zu einer Symbolleiste
@@ -222,6 +222,6 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
     Es wird ein Dialogfeld mit der Meldung angezeigt, dass **Sie Menü Controller Element 3 ausgewählt**haben. Beachten Sie, dass die Meldung dem Text auf der Schaltfläche des Menü Controllers entspricht. Die Schaltfläche "Menü Controller" zeigt nun **MC-Element 3**an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Hinzufügen einer Symbolleiste zu einem Tool Fenster](../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)

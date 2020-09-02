@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547601"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
 
 In Visual Studio können Sie Modellierungsdiagramme in schreibgeschützten Formaten speichern, damit Sie sie für Projektbeteiligte, Benutzer oder Projektteammitglieder freigeben können, die nicht die gleiche Version von Visual Studio verwenden.
 
-Welche Editionen von Visual Studio diese Funktion unterstützen, erfahren Sie unter [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Welche Visual Studio-Editionen dieses Feature unterstützen, erfahren Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Kopieren eines Diagramms oder eines Teils eines Diagramms in eine andere Anwendung
 
@@ -40,7 +40,7 @@ Welche Editionen von Visual Studio diese Funktion unterstützen, erfahren Sie un
 
 3. Speichern Sie die Datei im Dialogfeld **Datei speichern** unter als **XPS-Dokument Datei ( \* . Xps)** .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
 - [Freigeben von Modellen und Exportieren von Diagrammen](../modeling/share-models-and-exporting-diagrams.md)

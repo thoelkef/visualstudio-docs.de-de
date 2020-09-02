@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c30e6f1be9daf07f3685c06b21ed9d507b86a07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664388"
 ---
 # <a name="image-editor"></a>Bildbearbeitung
@@ -34,7 +34,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |Portable Network Graphics|.png|
 |JPEG|.jpg, .jpeg, .jpe, .jfif|
 |Direct Draw Surface|.dds|
-|Graphics Interchange Format|GIF|
+|Graphics Interchange Format|.gif|
 |Bitmap|.bmp, .dib|
 |Tagged Image File Format|.tif, .tiff|
 |TGA (Targa)|.tga|
@@ -48,7 +48,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend ein entsprechendes Dateiformat für das Bild aus. Informationen zur Auswahl eines Dateiformats, das Ihren Anforderungen entspricht, finden Sie im nachfolgenden Abschnitt.
 
-3. Legen Sie den **Namen** der Bilddatei und den **Speicherort** fest, an dem diese erstellt werden soll.
+3. Geben Sie den **Namen** der Bilddatei und den **Speicherort** an, an dem Sie erstellt werden soll.
 
 4. Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
@@ -83,68 +83,68 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 ### <a name="image-editor-toolbars"></a>Symbolleisten der Bildbearbeitung
  Die Symbolleisten der Bildbearbeitung enthalten Befehle, die Sie bei der Bearbeitung von Bildern unterstützen.
 
- Auf der Symbolleiste für den **Bild-Editor-Modus** finden Sie Befehle, die Auswirkungen auf den Zustand des Bild-Editors haben, sowie erweiterte Befehle. Die Symbolleiste befindet sich am oberen Rand der Entwurfsoberfläche des Bild-Editors. Die Zeichentools befinden sich auf der Symbolleiste des **Bild-Editors** am linken Rand der Entwurfsoberfläche.
+ Auf der Symbolleiste für den **Bildbearbeitungsmodus** finden Sie Befehle, die Auswirkungen auf den Zustand der Bildbearbeitung haben, sowie erweiterte Befehle. Die Symbolleiste befindet sich am oberen Rand der Entwurfsoberfläche des Bild-Editors. Die Zeichentools befinden sich auf der Symbolleiste der **Bildbearbeitung** am linken Rand der Entwurfsoberfläche der Bildbearbeitung.
 
  Dies ist die Symbolleiste des **Bildbearbeitungsmodus**:
 
- ![Die modale Symbolleiste des Bild-Editors.](../designers/media/digit-tre-modal-toolbar.png "Digit-Tre-Modal-Toolbar")
+ ![Gebundene Symbolleiste der Bildbearbeitung](../designers/media/digit-tre-modal-toolbar.png "Digit-Tre-Modal-Toolbar")
 
  In dieser Tabelle werden die Elemente der Symbolleiste des **Bildbearbeitungsmodus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden.
 
-|Element der Symbolleiste|Beschreibung|
+|Element der Symbolleiste|BESCHREIBUNG|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Auswahl eines rechteckigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
 |**Unregelmäßige Auswahl**|Ermöglicht die Auswahl eines unregelmäßigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
 |**Stabsauswahl**|Ermöglicht die Auswahl eines ähnlich farbigen Bereichs eines Bilds. Die *Toleranz*, d.h. der maximale Unterschied zwischen benachbarten Farben, innerhalb dessen sie als ähnlich betrachtet werden, lässt sich so konfigurieren, dass ein kleinerer oder größerer Bereich von ähnlichen Farben berücksichtigt werden kann. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
-|**Schwenken**|Ermöglicht das Verschieben des Bilds relativ zum Fensterrahmen. Wählen Sie im **Schwenken**-Modus einen Punkt auf dem Bild aus, und bewegen Sie ihn.<br /><br /> Sie können den **Schwenken**-Modus vorübergehend aktivieren, indem Sie die STRG-Taste gedrückt halten.|
+|**Schwenken**|Ermöglicht das Verschieben des Bilds relativ zum Fensterrahmen. Wählen Sie im **Schwenken**-Modus einen Punkt auf dem Bild aus, und bewegen Sie ihn.<br /><br /> Sie können den **Schwenken**-Modus vorübergehend aktivieren, indem Sie STRG gedrückt halten.|
 |**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Bilddetails relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Sie können ihn vergrößern oder verkleinern, indem Sie die STRG-TASTE gedrückt halten, während Sie entweder das Mausrad verwenden oder das Pluszeichen (+) oder Minuszeichen (-) drücken.|
-|**Originalgröße anzeigen**|Zeigt das Bild in einem 1:1-Verhältnis zwischen Pixel des Bilds und Pixel des Bildschirms.|
-|**Mit Zoom anpassen**|Zeigt das ganze Bild im Fensterrahmen an.|
+|**Vergrößern der tatsächlichen Größe**|Zeigt das Bild in einem 1:1-Verhältnis zwischen Pixel des Bilds und Pixel des Bildschirms.|
+|**Zoom anpassen**|Zeigt das ganze Bild im Fensterrahmen an.|
 |**Auf Breite vergrößern**|Zeigt die gesamte Breite des Bilds im Fensterrahmen an.|
 |**Raster**|Aktiviert oder deaktiviert das Raster, das die Pixelgrenzen anzeigt. Das Raster wird möglicherweise erst angezeigt, wenn Sie das Bild vergrößern.|
 |**Nächste MIP-Ebene anzeigen**|Aktiviert die nächsthöhere MIP-Ebene in einer MIP-Zuordnungskette. Die aktive MIP-Ebene wird auf der Entwurfsoberfläche angezeigt. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|
 |**Vorherige MIP-Ebene anzeigen**|Aktiviert die nächstkleinere MIP-Ebene in einer MIP-Zuordnungskette. Die aktive MIP-Ebene wird auf der Entwurfsoberfläche angezeigt. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|
-|**Roter Kanal**<br /><br /> **Grüner Kanal**<br /><br /> **Blauer Kanal**<br /><br /> **Alphakanal**|Aktiviert oder deaktiviert den spezifischen Farbkanal. **Hinweis:** Durch systematisches Aktivieren oder Deaktivieren von Farbkanälen können Sie Probleme isolieren, die mit einem oder mehreren Farbkanälen zusammenhängen. Sie können beispielsweise eine falsche Alphatransparenz identifizieren.|
+|**Roter Kanal**<br /><br /> **Grüner Kanal**<br /><br /> **Blauer Kanal**<br /><br /> **Alpha Kanal**|Aktiviert oder deaktiviert den spezifischen Farbkanal. **Hinweis:** Durch systematisches Aktivieren oder Deaktivieren von Farbkanälen können Sie Probleme isolieren, die mit einem oder mehreren Farbkanälen zusammenhängen. Sie können beispielsweise eine falsche Alphatransparenz identifizieren.|
 |**Hintergrund**|Aktiviert oder deaktiviert die Anzeige des Hintergrunds durch transparente Teile des Bilds. Sie können durch Auswahl einer der folgenden Optionen konfigurieren, wie der Hintergrund angezeigt wird:<br /><br /> **Schachbrett**<br /> Verwendet eine grüne Farbe zusammen mit der angegebenen Hintergrundfarbe, um den Hintergrund als Schachbrettmuster darzustellen. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.<br /><br /> Weißer Hintergrund<br /> Verwendet die Farbe Weiß, um den Hintergrund anzuzeigen.<br /><br /> Schwarzer Hintergrund<br /> Verwendet die Farbe Schwarz, um den Hintergrund anzuzeigen.<br /><br /> Hintergrund animieren<br /> Schwenkt das Schachbrettmuster langsam. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.|
 |**Eigenschaften**|Öffnet bzw. schließt das Fenster **Eigenschaften**.|
-|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarz und weiß**, **Weichzeichner**, **Aufhellen**, **Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Extras**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Um die MIP-Ebenen zu speichern, die Sie generiert haben, müssen Sie zum Speichern des Bilds das DDS-Format verwenden.<br /><br /> **Ansicht**<br /><br /> **Bildfrequenz**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:** Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.|
+|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarz und weiß**, **Weichzeichner**, **Aufhellen**,** Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 Rendering**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Mit d3d11warp Rendern Rendering**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der Bildbearbeitung.<br /><br /> **Tools**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Um die MIP-Ebenen zu speichern, die Sie generiert haben, müssen Sie zum Speichern des Bilds das DDS-Format verwenden.<br /><br /> **Anzeigen**<br /><br /> **Framerate**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:**  Sie können auf die Schaltfläche **erweitert** klicken, um den letzten Befehl erneut auszuführen.|
 
  Dies ist die Symbolleiste des **Bild-Editors**.
 
  ![Symbolleiste der Bildbearbeitung](../designers/media/digit-tre-toolbar.png "Ziffer-Tre-Toolbar")
 
- In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bild-Editors** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.
+ In der folgenden Tabelle werden die Elemente auf der Symbolleiste der **Bild** Bearbeitung beschrieben, die in der Reihenfolge aufgelistet werden, in der Sie von oben nach unten angezeigt werden.
 
-|Element der Symbolleiste|Beschreibung|
+|Element der Symbolleiste|BESCHREIBUNG|
 |------------------|-----------------|
 |**Zeichenstift**|Verwendet die aktive Farbauswahl, um einen Aliasstrich zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
-|**Pinsel**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
+|**Brush**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
 |**Airbrush**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen, der in das Bild übergeht und im Laufe der Zeit mehr an Sättigung gewinnt. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
 |**Formatpipette**|Legt die aktive Farbauswahl für die Farbe des ausgewählten Pixels fest.|
-|**Füllen**|Verwendet die aktive Farbauswahl, um einen Bereich des Bilds auszufüllen. Der betreffende Bereich wird als der Pixel definiert, auf den die Füllung angewendet wird, zusammen mit jedem Pixel, das mit ihm durch Pixel derselben Farbe verbunden ist und dieselbe Farbe aufweist. Wenn die Füllung innerhalb einer aktiven Auswahl angewendet wird, wird der betroffene Bereich von der Auswahl beschränkt.<br /><br /> Standardmäßig geht die aktive Farbauswahl in den betroffenen Bereich des Bilds entsprechend des Alphaanteils über. Um den betroffenen Bereich mit der aktiven Farbauswahl zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, während Sie das Füllwerkzeug verwenden.|
-|**Radierer**|Legt Pixel auf eine vollständig transparente Farbe fest, wenn das Bild einen Alphakanal unterstützt. Andernfalls werden die Pixel auf die aktuelle Hintergrundfarbe festgelegt.|
+|**Ausfüllen**|Verwendet die aktive Farbauswahl, um einen Bereich des Bilds auszufüllen. Der betreffende Bereich wird als der Pixel definiert, auf den die Füllung angewendet wird, zusammen mit jedem Pixel, das mit ihm durch Pixel derselben Farbe verbunden ist und dieselbe Farbe aufweist. Wenn die Füllung innerhalb einer aktiven Auswahl angewendet wird, wird der betroffene Bereich von der Auswahl beschränkt.<br /><br /> Standardmäßig geht die aktive Farbauswahl in den betroffenen Bereich des Bilds entsprechend des Alphaanteils über. Um den betroffenen Bereich mit der aktiven Farbauswahl zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, während Sie das Füllwerkzeug verwenden.|
+|**Eraser**|Legt Pixel auf eine vollständig transparente Farbe fest, wenn das Bild einen Alphakanal unterstützt. Andernfalls werden die Pixel auf die aktuelle Hintergrundfarbe festgelegt.|
 |**Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**|Zeichnet eine Form auf dem Bild. Sie können Farbe und Stärke der Kontur im Fenster **Eigenschaften** festlegen.<br /><br /> Um ein Primitiv mit gleicher Breite und Höhe zu zeichnen, halten Sie die UMSCHALTTASTE beim Zeichnen gedrückt.|
 |**Text**|Verwendet die Vordergrundfarben-Auswahl, um Text zu zeichnen. Die Hintergrundfarbe wird durch die Hintergrundfarben-Auswahl bestimmt. Für einen transparenten Hintergrund muss der Alphawert der Hintergrundfarben-Auswahl 0 sein. Wenn der Textbereich aktiv ist, können Sie festlegen, ob der Text mit einem Strich mit Antialiasing gezeichnet wird. Im Fenster **Eigenschaften** können Sie **Wert**, **Schriftart**, **Größe** und Stil (**Fett**, **Kursiv** oder **Unterstrichen**) für den Text festlegen. Der Inhalt und die Darstellung des Texts wird fertig gestellt, wenn der Textbereich nicht mehr aktiv ist.|
 |**Drehen**|Dreht das Bild um 90 Grad im Uhrzeigersinn.|
-|**Trim** (Kürzen)|Schneidet das Bild gemäß der aktuellen Auswahl ab.|
+|**Trim**|Schneidet das Bild gemäß der aktuellen Auswahl ab.|
 
 ### <a name="working-with-mip-levels"></a>Arbeiten mit MIP-Ebenen
- Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen MIP-Ebenen für die Detailebene Texturraum. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
+ Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen MIP-Ebenen für die Detailebene Texturraum. Weitere Informationen zum Generieren von und arbeiten mit MIP-Ebenen finden Sie unter Gewusst [wie: Erstellen und Ändern von Mip-Ebenen](../designers/how-to-create-and-modify-mip-levels.md) .
 
 ### <a name="working-with-transparency"></a>Arbeiten mit Transparenz
  Einige Bildformate, z. B. DirectDraw Surface (.dds), unterstützen Transparenz. Es gibt mehrere Möglichkeiten, mit Transparenz zu arbeiten. Dies hängt vom Werkzeug ab, das Sie verwenden. Legen Sie im Fenster **Eigenschaften** die Komponente **A** (Alpha) für die Farbauswahl fest, um die Ebene der Transparenz für eine Farbauswahl anzugeben. Im Folgenden wird gezeigt, wie die verschiedenen Werkzeuge die Anwendung von Transparenz steuern:
 
-|Tool|Beschreibung|
+|Tool|BESCHREIBUNG|
 |----------|-----------------|
 |**Zeichenstift**, **Pinsel**, **Airbrush**, **Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**, **Text**|Erweitern Sie zum Verschmelzen der aktiven Farbauswahl mit dem Bild die Eigenschaftengruppe **Kanäle** im Fenster **Eigenschaften**, und aktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**. Zeichnen Sie dann ganz normal.<br /><br /> Deaktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**, und zeichnen Sie normal weiter, um mit der aktiven Farbauswahl zu zeichnen und den Alphawert des Bilds unverändert zu lassen.|
-|**Füllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Um das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|
+|**Ausfüllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Um das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|
 
-### <a name="ImageProperties"></a> Bildeigenschaften
+### <a name="image-properties"></a><a name="ImageProperties"></a> Bildeigenschaften
  Über das Fenster **Eigenschaften** können Sie verschiedene Eigenschaften des Bilds festlegen. Beispielsweise können Sie die Breite und Höhe festlegen, um die Größe des Bilds zu ändern.
 
  In der folgenden Tabelle werden die Bildeigenschaften beschrieben.
 
-|property|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |Breite|Die Breite des Bilds.|
 |Höhe|Die Höhe des Bilds.|
@@ -159,7 +159,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |Tiefensegment|Das aktuelle Tiefensegment. Nur das erste Tiefensegment kann angezeigt werden, alle anderen Segmente gehen beim Speichern des Bilds verloren.|
 
 > [!NOTE]
-> Die Eigenschaft **Drehen um** kann auf alle Tools und ausgewählte Bereiche angewendet werden und wird daher immer zusammen mit anderen Tooleigenschaften am unteren Rand des Fensters **Eigenschaften** angezeigt. **Drehen um** wird immer angezeigt, da das gesamte Bild implizit ausgewählt ist, wenn keine andere Auswahl oder kein aktives Tool vorhanden ist. Weitere Informationen zur Eigenschaft **Drehen um** finden Sie unter [Tooleigenschaften](#ToolProperties).
+> Die Eigenschaft **Drehen um** kann auf alle Tools und ausgewählte Bereiche angewendet werden und wird daher immer zusammen mit anderen Tooleigenschaften am unteren Rand des Fensters **Eigenschaften** angezeigt. **Drehen um** wird immer angezeigt, da das gesamte Bild implizit ausgewählt ist, wenn keine andere Auswahl oder kein aktives Tool vorhanden ist. Weitere Informationen zur Eigenschaft **drehen nach** finden Sie unter [Tool Eigenschaften](#ToolProperties).
 
 #### <a name="resizing-images"></a>Ändern der Bildgröße
  Es gibt folgende zwei Möglichkeiten, die Größe eines Bilds zu ändern. In beiden Fällen verwendet die Bildbearbeitung eine bilineare Interpolation, um das Bild neu zu berechnen.
@@ -173,7 +173,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 #### <a name="selected-regions"></a>Ausgewählte Bereiche
  Die Auswahl in der Bildbearbeitung legt die Bereiche des Bilds fest, die aktiv sind, das heißt, diese Bereiche sind durch Anwendung der Werkzeuge und Transformationen betroffen. Wenn eine aktive Auswahl vorhanden ist, werden Bereiche außerhalb des ausgewählten Bereichs von den meisten Tools und Transformationen nicht beeinflusst. Gibt es keine aktive Auswahl, ist das gesamte Bild aktiv.
 
- Die meisten Tools, wie z.B. **Zeichenstift**, **Pinsel**, **Airbrush**, **Füllen**, **Radierer** und 2D-Primitive sowie Transformationen, z.B. **Drehen**, **Trim** (Kürzen), **Farben umkehren**, **Horizontal spiegeln** und **Vertikal spiegeln**, werden durch die aktive Auswahl eingeschränkt oder definiert. Es gibt jedoch Tools, z.B. **Formatpipette** und **Text**, und Transformationen, z.B. **MIPS generieren**, die durch eine aktive Auswahl nicht betroffen sind. Diese Tools verhalten sich stets so, als ob das gesamte Bild die aktive Auswahl ist.
+ Die meisten Tools **– Stift**, **Pinsel**, **Airbrush**, **Fill**, **Radierer**und 2D-primitive – und Transformationen –**drehen**, **kürzen**, **umkehren von Farben**, **horizontale kippen**und Kippen von **vertikalen**– werden durch die aktive Auswahl eingeschränkt oder definiert. Es gibt jedoch Tools, z.B. **Formatpipette** und **Text**, und Transformationen, z.B. **MIPS generieren**, die durch eine aktive Auswahl nicht betroffen sind. Diese Tools verhalten sich stets so, als ob das gesamte Bild die aktive Auswahl ist.
 
  Während Sie einen Bereich auswählen, können Sie die UMSCHALTTASTE gedrückt halten, um eine proportionale (quadratische) Auswahl zu treffen. Andernfalls wird die Auswahl nicht beschränkt.
 
@@ -188,16 +188,16 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 
  Im Folgenden sind die gültigen Kombinationen der Zusatztasten aufgeführt:
 
-|Ctrl|Shift|Alt|Beschreibung|
+|Ctrl|Shift|ALT|BESCHREIBUNG|
 |----------|-----------|---------|-----------------|
 ||||Ändert die Größe des Inhalts des ausgewählten Bereichs.|
 ||Shift||Ändert proportional die Größe des Inhalts des ausgewählten Bereichs.|
-|||Alt|Ändert die Größe des ausgewählten Bereichs. Dadurch wird ein neuer Auswahlbereich definiert.|
-||Shift|Alt|Ändert die Größe des ausgewählten Bereichs proportional. Dadurch wird ein neuer Auswahlbereich definiert.|
+|||ALT|Ändert die Größe des ausgewählten Bereichs. Dadurch wird ein neuer Auswahlbereich definiert.|
+||Shift|ALT|Ändert die Größe des ausgewählten Bereichs proportional. Dadurch wird ein neuer Auswahlbereich definiert.|
 |Ctrl|||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs.|
 |Ctrl|Shift||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs proportional.|
 
-#### <a name="ToolProperties"></a> Tooleigenschaften
+#### <a name="tool-properties"></a><a name="ToolProperties"></a> Tool Eigenschaften
  Wenn ein Tool ausgewählt ist, können Sie über das Fenster **Eigenschaften** angeben, wie es sich auf das Bild auswirken soll. Sie können z.B. die Breite des **Zeichenstift**-Tools oder die Farbe des **Pinsel**-Tools festlegen.
 
  Sie können eine Vordergrundfarbe und eine Hintergrundfarbe festlegen. Beide unterstützen einen Alphakanal, um benutzerdefinierte Deckkraft bereitzustellen. Die Einstellungen gelten für alle Werkzeuge. Wenn Sie eine Maus verwenden, entspricht die linke Maustaste der Vordergrundfarbe und die rechte Maustaste der Hintergrundfarbe.
@@ -208,19 +208,19 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |----------|----------------|
 |Alle Tools und Auswahlmöglichkeiten|**Drehen um**<br /> Definiert, um wie viel Grad die Auswahl oder der Tooleffekt im Uhrzeigersinn gedreht wird.|
 |**Zeichenstift**, **Pinsel**, **Airbrush**, **Radierer**|**Stärke**<br /> Legt die Größe des Bereichs fest, der vom Werkzeug beeinflusst wird.|
-|**Text**|**Antialiasing**<br /> Zeichnet Text, der über Ränder mit Antialiasing verfügt. Dadurch wird Text weicher dargestellt.<br /><br /> **Wert**<br /> Der zu zeichnende Text.<br /><br /> **Schriftart**<br /> Die Schriftart zum Zeichnen des Texts.<br /><br /> **Size**<br /> Die Größe des Texts.<br /><br /> **Fett**<br /> Formatiert die Schrift fett.<br /><br /> **Kursiv**<br /> Formatiert die Schrift kursiv.<br /><br /> **Unterstrichen**<br /> Formatiert die Schrift unterstrichen.|
-|**2D-Primitiv**|**Antialiasing**<br /> Zeichnet Primitive, die über Ränder mit Antialiasing verfügen. Dadurch werden sie weicher dargestellt.<br /><br /> **Stärke**<br /> Legt die Stärke der Linie fest, die die Begrenzung des Primitivs bildet.<br /><br /> **Radius X**<br /> (Nur abgerundetes Rechteck) Legt den Rundungsradius für die oberen und unteren Kanten des Primitivs fest.<br /><br /> **Radius Y**<br /> (Nur abgerundetes Rechteck) Legt den Rundungsradius für die linken und rechten Kanten des Primitivs fest.|
-|**Zeichenstift**, **Pinsel**, **Airbrush**, **2D-Primitiv**|**Kanäle**<br /> Aktiviert oder deaktiviert bestimmte Farbkanäle für die Anzeige und das Zeichnen. Wenn **Ansicht** für einen bestimmten Farbkanal festgelegt wird, ist dieser Kanal im Bild sichtbar, andernfalls ist er nicht sichtbar. Wenn **Zeichnen** für einen bestimmten Farbkanal festgelegt wird, ist dieser Kanal von Zeichenvorgängen betroffen, andernfalls nicht.|
-|**Stabsauswahl**, **Füllen**|**Toleranz**<br /> Definiert den maximalen Unterschied zwischen benachbarten Farben, innerhalb dessen sie als ähnlich betrachtet werden, sodass weniger oder mehr ähnliche Farben einen Teil des betroffenen oder ausgewählten Bereichs ausmachen. Standardmäßig lautet der Wert 32. Das bedeutet, dass benachbarte Pixel in 32 Schatten (heller oder dunkler) der ursprünglichen Farbe als Teil des Bereichs betrachtet werden.|
+|**Text**|**Antialiasing**<br /> Zeichnet Text, der über Ränder mit Antialiasing verfügt. Dadurch wird Text weicher dargestellt.<br /><br /> **Wert**<br /> Der zu zeichnende Text.<br /><br /> **Schriftart**<br /> Die Schriftart zum Zeichnen des Texts.<br /><br /> **Größe**<br /> Die Größe des Texts.<br /><br /> **Fett**<br /> Formatiert die Schrift fett.<br /><br /> **Kursiv**<br /> Formatiert die Schrift kursiv.<br /><br /> **Unterstrichen**<br /> Formatiert die Schrift unterstrichen.|
+|**2D-primitiv**|**Antialiasing**<br /> Zeichnet Primitive, die über Ränder mit Antialiasing verfügen. Dadurch werden sie weicher dargestellt.<br /><br /> **Stärke**<br /> Legt die Stärke der Linie fest, die die Begrenzung des Primitivs bildet.<br /><br /> **Radius X**<br /> (Nur abgerundetes Rechteck) Legt den Rundungsradius für die oberen und unteren Kanten des Primitivs fest.<br /><br /> **Radius Y**<br /> (Nur abgerundetes Rechteck) Legt den Rundungsradius für die linken und rechten Kanten des Primitivs fest.|
+|Zeichen **Stift**, **Pinsel**, **Airbrush**, **2D-primitiv**|**Channels**<br /> Aktiviert oder deaktiviert bestimmte Farbkanäle für die Anzeige und das Zeichnen. Wenn **Ansicht** für einen bestimmten Farbkanal festgelegt wird, ist dieser Kanal im Bild sichtbar, andernfalls ist er nicht sichtbar. Wenn **Zeichnen** für einen bestimmten Farbkanal festgelegt wird, ist dieser Kanal von Zeichenvorgängen betroffen, andernfalls nicht.|
+|**Stabsauswahl**, **Füllen**|**Toleriert**<br /> Definiert den maximalen Unterschied zwischen benachbarten Farben, innerhalb dessen sie als ähnlich betrachtet werden, sodass weniger oder mehr ähnliche Farben einen Teil des betroffenen oder ausgewählten Bereichs ausmachen. Standardmäßig lautet der Wert 32. Das bedeutet, dass benachbarte Pixel in 32 Schatten (heller oder dunkler) der ursprünglichen Farbe als Teil des Bereichs betrachtet werden.|
 
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
-|Befehl|Tastenkombinationen|
+|Get-Help|Tastenkombinationen|
 |-------------|------------------------|
-|In den Modus **Auswählen** wechseln|S|
+|In den Modus **Auswählen** wechseln|E|
 |In den Modus **Zoom** wechseln|Z|
 |In den Modus **Schwenken** wechseln|K|
-|Alles auswählen|STRG + A|
+|Alle auswählen|STRG+A|
 |Die aktuelle Auswahl löschen|Löschen|
 |Brechen Sie die aktuelle Auswahl ab.|Escape|
 |Vergrößern|STRG+Mausrad vorwärts<br /><br /> STRG+BILD-AUF<br /><br /> Pluszeichen (+)|
@@ -253,14 +253,14 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |Größe der aktiven Auswahl mit Inhalt ändern.|STRG+Pfeiltasten|
 |Aktive Auswahl ohne Inhalt verschieben.|UMSCHALT+Pfeiltasten|
 |Größe der aktiven Auswahl ohne Inhalt ändern.|UMSCHALT+STRG+Pfeiltasten|
-|Aktuelle Ebene bestätigen|Return|
+|Aktuelle Ebene bestätigen|Rückgabewert|
 |Stärke des Werkzeugs verringern|[|
 |Stärke des Werkzeugs erhöhen|]|
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
-|[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Werkzeuge, die Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden können, um mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten zu arbeiten.|
+|[Arbeiten mit 3D-Assets für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Werkzeuge, die Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden können, um mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten zu arbeiten.|
 |[Modell-Editor](../designers/model-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modell-Editor für die Arbeit mit 3D-Modellen verwendet wird.|
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shader-Designers zur Arbeit mit Shadern.|

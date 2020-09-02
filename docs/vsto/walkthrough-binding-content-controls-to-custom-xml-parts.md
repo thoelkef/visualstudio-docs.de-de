@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544442"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Exemplarische Vorgehensweise: Binden von Steuerelementen an benutzerdefinierte XML-Elemente
@@ -148,7 +148,7 @@ ms.locfileid: "85544442"
 
      Der Schema-Designer wird geöffnet.
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für **Employees. xsd**, und wählen Sie dann **Code anzeigen**aus.
+4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für  **Employees. xsd**, und wählen Sie dann  **Code anzeigen**aus.
 
 5. Ersetzen Sie den Inhalt der Datei **Employees. xsd** durch das folgende Schema.
 
@@ -225,7 +225,7 @@ ms.locfileid: "85544442"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>So fügen Sie dem Dokument einen benutzerdefinierten XML-Abschnitt hinzu
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für **ThisDocument.cs** oder **ThisDocument. vb**, und wählen Sie dann **Code anzeigen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für  **ThisDocument.cs** oder **ThisDocument. vb**, und wählen Sie dann **Code anzeigen**aus.
 
 2. Fügen Sie der `ThisDocument`-Klasse die folgenden Deklarationen hinzu. In diesem Code werden mehrere Objekte deklariert, mit denen Sie dem Dokument einen benutzerdefinierten XML-Abschnitt hinzufügen.
 
@@ -273,7 +273,7 @@ ms.locfileid: "85544442"
 
 2. Überprüfen Sie, ob die Tabelle im Dokument ähnlich aussieht wie die folgende Tabelle. Jede der Zeichenfolgen in der zweiten Spalte wird von einem Element im benutzerdefinierten XML-Abschnitt im Dokument abgerufen.
 
-    |Column|Wert|
+    |Spalte|value|
     |-|-|
     |**Employee Name**|**Karina Leal**|
     |**Hire Date**|**April 1, 1999**|

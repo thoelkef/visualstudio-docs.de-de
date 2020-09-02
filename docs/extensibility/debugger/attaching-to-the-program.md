@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903218"
 ---
 # <a name="attach-to-the-program"></a>An das Programm anfügen
@@ -57,7 +57,7 @@ Nachdem Sie Ihre Programme mit dem entsprechenden Port registriert haben, müsse
     > [!NOTE]
     > Dabei handelt es sich nicht um dasselbe `IDebugProgram2` Objekt, das an die-Methode übermittelt wurde `IDebugEngine2::Attach` . Das zuvor bestandene `IDebugProgram2` Objekt wird nur vom Port erkannt und ist ein separates Objekt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Start basierte Anlage](../../extensibility/debugger/launch-based-attachment.md)
 - [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

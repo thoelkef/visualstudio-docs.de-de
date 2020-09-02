@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD | Microsoft Docs
+title: METADATA_ADDRESS_METHOD | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714452"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
@@ -47,21 +47,21 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  Die ID der Methode.
 
- [C++] `_mdToken` ist `typedef` ein für eine `int`32-Bit .
+ [C++] `_mdToken` ist eine `typedef` für ein 32-Bit- `int` .
 
  `dwOffset`\
- Der Offset vom Klassenstart zu dieser Methode (kann den Offset in die vtable darstellen).
+ Der Offset von der-Klasse beginnt mit dieser Methode (kann den Offset in der vtable darstellen).
 
  `dwVersion`\
- Die Version der Methode (dieser Wert ist für den Symbolanbieter eindeutig).
+ Die Version der Methode (dieser Wert ist für den Symbol Anbieter eindeutig).
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Struktur ist Teil der Union in `dwKind` der `DEBUG_ADDRESS_UNION` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, `ADDRESS_KIND_METHOD` wenn das Feld der Struktur auf (ein Wert aus der ADDRESS_KIND-Enumeration) festgelegt ist. [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+ Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) -Struktur, wenn das- `dwKind` Feld der- `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_METHOD` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Enumeration).
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+ Header: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670666"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Gewusst wie: Festlegen von Buildereignissen (Visual Basic)
@@ -144,7 +144,7 @@ Buildereignisse in Visual Basic können für das Ausführen von Skripts, Makros 
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. Wechseln Sie im Projekt-Designer zur Registerkarte **Kompilieren**, und klicken Sie auf die Schaltfläche **Buildereignisse**, um das Dialogfeld **Buildereignisse** zu öffnen.
+6. Wechseln Sie im Projekt-Designer zur Registerkarte **Kompilieren** , und klicken Sie auf die Schaltfläche **Ereignisse erstellen** , um das Dialogfeld Buildereignisse zu öffnen. **Build Events**
 
 7. Geben Sie im Feld **Befehlszeile für Postbuildereignis** den folgenden Befehl ein:
 
@@ -164,5 +164,5 @@ Buildereignisse in Visual Basic können für das Ausführen von Skripts, Makros 
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Siehe auch
- [Verwalten der Kompilierungs Eigenschaften](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [Seite "kompilieren", Projekt-Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Seite "veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md) [Präbuildereignis/Postbuildereignis-Dialog Feld](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) "Gewusst [wie: Angeben vonC#Buildereignissen ](../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Verwalten der Kompilierungs Eigenschaften](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [Seite "kompilieren", Projekt-Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Seite "veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md) [Präbuildereignis/Postbuildereignis-Dialog Feld](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) "Gewusst [wie: Angeben von Buildereignissen](../ide/how-to-specify-build-events-csharp.md) "

@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Festlegen von Code Analyse Eigenschaften für CC++ -Projekte | Microsoft-Dokumentation'
+title: 'Gewusst wie: Festlegen von Code Analyse Eigenschaften für c-c + +-Projekte | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,10 +20,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277987"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
@@ -38,7 +38,7 @@ Sie können konfigurieren, welche Regeln das Code Analysetool verwendet, um den 
  Mithilfe der **Konfigurations** Liste und der **Platt Form** Liste können Sie verschiedene Code Analyse Einstellungen auf verschiedene Projekt Konfigurationen und Platt Form Kombinationen anwenden. Beispielsweise können Sie die Code Analyse weiterleiten, um einen Satz von Regeln auf das Projekt für Debugbuilds und einen anderen Satz für Releasebuilds anzuwenden.  
   
 ## <a name="enabling-code-analysis"></a>Aktivieren der Code Analyse  
- Sie können entscheiden, ob die Code Analyse für Ihr Projekt aktiviert werden soll, indem Sie **Code AnalyseC++ für C/on-Build aktivieren**auswählen. In Kombination mit der **Konfigurations** Liste können Sie z. b. entscheiden, die Code Analyse für Debugbuilds zu deaktivieren und für Releasebuilds zu aktivieren.  
+ Sie können entscheiden, ob die Code Analyse für Ihr Projekt aktiviert werden soll, indem Sie die **Code Analyse für C/C++ beim Build aktivieren**auswählen. In Kombination mit der **Konfigurations** Liste können Sie z. b. entscheiden, die Code Analyse für Debugbuilds zu deaktivieren und für Releasebuilds zu aktivieren.  
   
  Wenn das Projekt verwalteten Code enthält, können Sie entscheiden, ob Sie die Code Analyse aktivieren oder deaktivieren möchten, indem Sie **Code Analyse beim Build aktivieren**auswählen.  
   
@@ -54,4 +54,4 @@ Sie können konfigurieren, welche Regeln das Code Analysetool verwendet, um den 
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [Codeanalyse für C/C++-Warnungen](../code-quality/code-analysis-for-c-cpp-warnings.md)
+ [Code Analyse für C/C++-Warnungen](../code-quality/code-analysis-for-c-cpp-warnings.md)

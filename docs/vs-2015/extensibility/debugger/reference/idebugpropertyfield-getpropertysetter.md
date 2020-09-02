@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertySetter | Microsoft-Dokumentation
+title: 'Idebugpropertyfield:: getpropertysetter | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8484aa4041e00b9decce73dc9e19e22aa106e9df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164857"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Methode ab, die die Eigenschaft festlegt.  
+Ruft die Methode ab, die die-Eigenschaft festlegt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,15 +40,15 @@ int GetPropertySetter(
   
 #### <a name="parameters"></a>Parameter  
  `ppField`  
- [out] Gibt eine [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das die Methode, die die Eigenschaft festlegt darstellt.  
+ vorgenommen Gibt ein [idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) -Objekt zurück, das die Methode darstellt, die die-Eigenschaft festlegt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Rufen Sie zum Abrufen der Methode, die die Eigenschaft ruft die [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Um die Methode abzurufen, die die Eigenschaft abruft, können Sie die [getpropertygetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) -Methode aufrufen.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugpropertyfield](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
+ [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)

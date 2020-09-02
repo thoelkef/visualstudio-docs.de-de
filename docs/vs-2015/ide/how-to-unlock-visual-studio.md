@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670592"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Entsperren von Visual Studio
@@ -50,7 +50,7 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
 ### <a name="updating-stale-licenses"></a>Aktualisieren veralteter Lizenzen
  Möglicherweise wurde die folgende Meldung angezeigt, dass Ihre Lizenz in Visual Studio abgelaufen ist.
 
- ![Visual Studio-Dialogfeld „Benutzerinformationen“](../ide/media/vs2013-userinfo.png "|::ref1::|")
+ ![Visual Studio-Dialogfeld „Benutzerinformationen“](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
 
  Diese Meldung gibt an, dass Ihr Abonnement zwar ggf. gültig ist, jedoch das von Visual Studio für Ihr Abonnement verwendete Lizenztoken nicht aktualisiert wurde und aus einem der folgenden Gründe abgelaufen ist:
 
@@ -72,5 +72,5 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
 
 2. Wenn Sie über ein anderes mit einem anderen Konto verknüpftes Abonnement verfügen, fügen Sie dieses Konto der Liste „Alle Konten“ auf der linken Seite unter „Datei“ im Dialogfenster „Kontoeinstellungen“ hinzu, indem Sie auf den Link „Kontos hinzufügen“ klicken.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md)

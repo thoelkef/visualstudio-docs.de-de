@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845522"
 ---
 # <a name="creating-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
@@ -100,9 +100,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  In der folgenden Tabelle werden die Eigenschaften angezeigt, die automatisch vom Bootstrapper eingetragen werden.  
   
-|Die Eigenschaften-|Beschreibung|  
+|Eigenschaft|BESCHREIBUNG|  
 |--------------|-----------------|  
-|ApplicationName|Der Name der Anwendung.|  
+|ApplicationName|Der Namen der Anwendung.|  
 |ProcessorArchitecture|Der Prozessor und die Bits pro Wort für die Plattform, auf die eine ausführbare Datei zielt. Folgende Werte sind gültig:<br /><br /> –   Intel<br />–   IA64<br />–   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Die Versionsnummer für Microsoft Windows 95, Windows 98 oder Windows ME. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Die Versionsnummer für Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 oder Windows 7. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Die verteilbare Liste ist eine XML-Datei, die entsprechend dem folgenden Format benannt wird: *Company Name*.*Component Name*.RedistList.xml. Beispiel: Wenn die Komponente "Datawidgets" heißt und von der Firma Acme stammt, nennen Sie die Datei "Acme.DataWidgets.RedistList.xml". Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
+ Die verteilbare Liste ist eine XML-Datei, die Sie im folgenden Format benennen sollten: *Firmenname*. Der *Komponenten Name*.RedistList.xml. Beispiel: Wenn die Komponente "Datawidgets" heißt und von der Firma Acme stammt, nennen Sie die Datei "Acme.DataWidgets.RedistList.xml". Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Dialogfeld "Erforderliche Komponenten"](../ide/reference/prerequisites-dialog-box.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Dialog Feld für erforderliche Komponenten](../ide/reference/prerequisites-dialog-box.md)   
  [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)   
- [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](https://msdn.microsoft.com/magazine/cc163899.aspx)
+ [Verwenden Sie den Visual Studio 2005-Bootstrapper, um die Installation zu starten.](https://msdn.microsoft.com/magazine/cc163899.aspx)

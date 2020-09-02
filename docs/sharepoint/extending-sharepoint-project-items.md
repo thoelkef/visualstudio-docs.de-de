@@ -1,5 +1,5 @@
 ---
-title: Erweitern von SharePoint-Projektelementen | Microsoft-Dokumentation
+title: Erweitern von SharePoint-Projekt Elementen | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,58 +15,58 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62967395"
 ---
-# <a name="extend-sharepoint-project-items"></a>Erweitern von SharePoint-Projektelemente
-  Erstellen Sie eine projektelementerweiterung, wenn Sie möchten eine Art von SharePoint-Projektelement Funktionen hinzu, die in Visual Studio bereits installiert ist. Sie können z. B. erstellen eine Erweiterung für die integrierte **Ereignisempfänger** oder **Listendefinition** Projektelemente in Visual Studio, oder Sie können eine Erweiterung für einen benutzerdefinierten Projektelementtyp erstellen. Sie können auch eine Erweiterung für alle Arten von SharePoint-Projektelemente erstellen.
+# <a name="extend-sharepoint-project-items"></a>Erweitern von SharePoint-Projekt Elementen
+  Erstellen Sie eine Projekt Element Erweiterung, wenn Sie einer Art von SharePoint-Projekt Element, das bereits in Visual Studio installiert ist, Funktionen hinzufügen möchten. Sie können z. b. eine Erweiterung für die integrierten **Ereignis Empfänger** -oder **Listen Definitions** Projekt Elemente in Visual Studio erstellen, oder Sie können eine Erweiterung für einen benutzerdefinierten Projekt Elementtyp erstellen. Sie können auch eine Erweiterung für alle Typen von SharePoint-Projekt Elementen erstellen.
 
-## <a name="tasks-for-extending-sharepoint-project-items"></a>Aufgaben zum Erweitern der SharePoint-Projektelemente
- Um ein Projektelement erweitern möchten, erstellen Sie eine Visual Studio-Erweiterungsassembly, implementiert die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> Schnittstelle. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
+## <a name="tasks-for-extending-sharepoint-project-items"></a>Aufgaben zum Erweitern von SharePoint-Projekt Elementen
+ Um ein Projekt Element zu erweitern, erstellen Sie eine Visual Studio-Erweiterungsassembly, die die- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> Schnittstelle implementiert. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
 
- Wenn Sie ein Projektelement erweitern, können Sie auch die folgende Funktionen auf das Projektelement hinzufügen:
+ Wenn Sie ein Projekt Element erweitern, können Sie dem Projekt Element auch die folgenden Funktionen hinzufügen:
 
-- Hinzufügen eines Kontextmenüelements auf das Projektelement. Das Menüelement angezeigt wird, wenn Sie das Kontextmenü für das Projektelement in öffnen **Projektmappen-Explorer**. Öffnen Sie das Kontextmenü per Rechtsklick auf das Projektelement, oder indem Sie ihn auswählen und dann auf die **UMSCHALT**+**F10** Schlüssel. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen ein Kontextmenüelements zu einer SharePoint-projektelementerweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).
+- Fügen Sie dem Projekt Element ein Kontextmenü Element hinzu. Das Menü Element wird angezeigt, wenn Sie das Kontextmenü für das Projekt Element in **Projektmappen-Explorer**öffnen. Um das Kontextmenü zu öffnen, klicken Sie mit der rechten Maustaste auf das Projekt Element, oder wählen Sie es aus, und wählen Sie dann die **UMSCHALT** + **Taste F10** . Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Kontextmenü Elements zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).
 
-- Fügen Sie eine benutzerdefinierte Eigenschaft, auf das Projektelement. Die Eigenschaft wird in der **Eigenschaften** Fenster bei der Auswahl des Projektelement im **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen einer Eigenschaft zu einer SharePoint-projektelementerweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).
+- Fügen Sie dem Projekt Element eine benutzerdefinierte Eigenschaft hinzu. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie das Projekt Element in **Projektmappen-Explorer**auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).
 
-  Eine exemplarische Vorgehensweise, die veranschaulicht, wie erstellen, bereitstellen und testen eine projektelementerweiterung, finden Sie unter [Exemplarische Vorgehensweise: Erweitern ein SharePoint-Projektelementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).
+  Eine exemplarische Vorgehensweise, die das Erstellen, bereitstellen und Testen einer Projekt Element Erweiterung veranschaulicht, finden Sie unter Exemplarische Vorgehensweise [: Erweitern eines SharePoint-Projekt Elementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).
 
-## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Verstehen Sie die Beziehung zwischen projektelementerweiterungen und Instanzen von Project-Element
- Wenn Sie eine projektelementerweiterung erstellen, lädt Visual Studio die Erweiterung aus, wenn ein SharePoint-Projekt ein Projektelement des zugeordneten Typs hinzugefügt wird. Angenommen, Sie erstellen Sie eine Erweiterung für **Ereignisempfänger** -Projektelemente, wenn ein Benutzer hinzufügt, lädt Visual Studio die Erweiterung einer **Ereignisempfänger** Projektelements, das ein Projekt. Visual Studio verwendet die gleiche Instanz der Erweiterung für alle Instanzen der zugeordneten Projektelementtyps. Im vorherigen Beispiel, wenn der Benutzer eine zweite Befehl fügt der **Ereignisempfänger** Projektelement für das Projekt, die gleiche Instanz der Erweiterung wird verwendet, um das zweite Projektelement anpassen.
+## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Verstehen der Beziehung zwischen Projekt Element Erweiterungen und Projekt Element Instanzen
+ Wenn Sie eine Projekt Element Erweiterung erstellen, lädt Visual Studio die Erweiterung, wenn ein Projekt Element des zugeordneten Typs einem SharePoint-Projekt hinzugefügt wird. Wenn Sie z. b. eine Erweiterung für **Ereignis Empfänger** -Projekt Elemente erstellen, lädt Visual Studio die Erweiterung, wenn ein Benutzer einem Projekt ein **Ereignis Empfänger** -Projekt Element hinzufügt. Visual Studio verwendet die gleiche Instanz Ihrer Erweiterung für alle Instanzen des zugeordneten Projekt Elementtyps. Wenn der Benutzer im vorherigen Beispiel dem Projekt ein zweites **Ereignis Empfänger** -Projekt Element hinzufügt, wird die gleiche Instanz Ihrer Erweiterung zum Anpassen des zweiten Projekt Elements verwendet.
 
- Um eine bestimmte Instanz des Projektelementtyps zuzugreifen, Sie erweitern, behandeln Sie eines der der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> Ereignisse der *ProjectItemType* Parameter in der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> Methode. Um zu bestimmen, wenn ein Projektelement, der den Typ Sie erweitern ein Projekt hinzugefügt wird, z. B. Behandeln der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> Ereignis. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eine SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
+ Um auf eine bestimmte Instanz des Projekt Elementtyps zuzugreifen, den Sie erweitern, behandeln Sie eines der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> Ereignisse des *projectItemType* -Parameters in der Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> Methode. Um z. b. zu ermitteln, ob ein Projekt Element des Typs, den Sie erweitern, einem Projekt hinzugefügt wird, behandeln Sie das- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> Ereignis. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
 
-## <a name="identifiers-for-sharepoint-project-items"></a>Bezeichner für die SharePoint-Projektelemente
- Jede SharePoint-Projektelement weist einen entsprechenden Zeichenfolgenbezeichner. Sie müssen den Bezeichner für ein Projektelement kennen, sollten Sie die folgenden Aufgaben ausführen:
+## <a name="identifiers-for-sharepoint-project-items"></a>Bezeichner für SharePoint-Projekt Elemente
+ Jedes SharePoint-Projekt Element verfügt über einen entsprechenden Zeichen folgen Bezeichner. Wenn Sie die folgenden Aufgaben ausführen möchten, müssen Sie den Bezeichner für ein Projekt Element kennen:
 
-- Erstellen Sie eine Erweiterung für das Projektelement. In diesem Fall müssen Sie den Bezeichner für das Projektelement, die Sie erweitern, an den Konstruktor der möchten übergeben der <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Um eine Erweiterung für alle Element Projekttypen zu erstellen, übergeben die **\\** * string-Wert.
+- Erstellen Sie eine Erweiterung für das Projekt Element. In diesem Fall müssen Sie den Bezeichner für das Projekt Element, das Sie erweitern möchten, an den Konstruktor von übergeben <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> . Übergeben Sie den Zeichen folgen Wert "*", um eine Erweiterung für alle Projekt Elementtypen zu erstellen **\\** .
 
-- Fügen Sie das Projektelement in ein Projekt programmgesteuert. In diesem Fall müssen Sie den Bezeichner für das Projektelement, übergeben die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> Methode.
+- Fügen Sie das Projekt Element Programm gesteuert zu einem Projekt hinzu. In diesem Fall müssen Sie den-Bezeichner für das Projekt Element an die- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> Methode übergeben.
 
-  Die folgende Tabelle enthält die Bezeichner für die SharePoint-Projektelemente, die mit Visual Studio enthalten sind.
+  In der folgenden Tabelle werden die Bezeichner für die SharePoint-Projekt Elemente aufgelistet, die in Visual Studio enthalten sind.
 
-|Name des Projektelements|Die Zeichenfolgen-ID|
+|Projekt Elementname|Zeichen folgen Bezeichner|
 |-----------------------|-----------------------|
-|Business Data Catalog-Modell|Microsoft.VisualStudio.SharePoint.BusinessDataConnectivity|
-|Inhaltstyp|Microsoft.VisualStudio.SharePoint.ContentType|
-|Ereignisempfänger|Microsoft.VisualStudio.SharePoint.EventHandler|
-|Leeres Element|Microsoft.VisualStudio.SharePoint.GenericElement|
-|Listendefinition<br /><br /> Listendefinition von Inhaltstyp|Microsoft.VisualStudio.SharePoint.ListDefinition|
-|Listeninstanz|Microsoft.VisualStudio.SharePoint.ListInstance|
-|Modul|Microsoft.VisualStudio.SharePoint.Module|
-|Sequenzieller Workflow<br /><br /> Zustandsautomat-Workflow|Microsoft.VisualStudio.SharePoint.Workflow|
-|Sitedefinition|Microsoft.VisualStudio.SharePoint.SiteDefinition|
-|Visuelles Webpart|Microsoft.VisualStudio.SharePoint.VisualWebPart|
-|Webpart|Microsoft.VisualStudio.SharePoint.WebPart|
-|Workflowzuordnungsformular|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|
+|Geschäfts Data Catalog Modell|Microsoft. VisualStudio. SharePoint. BusinessDataConnectivity|
+|Inhaltstyp|Microsoft. VisualStudio. SharePoint. ContentType|
+|Ereignisempfänger|Microsoft. VisualStudio. SharePoint. EventHandler|
+|Leeres Element|Microsoft. VisualStudio. SharePoint. genericelements|
+|Listen Definition<br /><br /> Listen Definition aus Inhaltstyp|Microsoft. VisualStudio. SharePoint. ListDefinition|
+|Listen Instanz|Microsoft. VisualStudio. SharePoint. ListInstance|
+|Modul|Microsoft. VisualStudio. SharePoint. Module|
+|Sequenzieller Workflow<br /><br /> Zustandsautomat-Workflow|Microsoft. VisualStudio. SharePoint. Workflow|
+|Site Definition|Microsoft. VisualStudio. SharePoint. Sitedefinition|
+|Visuelles Webpart|Microsoft. VisualStudio. SharePoint. visualwebpart|
+|Webpart|Microsoft. VisualStudio. SharePoint. WebPart|
+|Workflow Zuordnungs Formular|Microsoft. VisualStudio. SharePoint. Workflow Association|
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erstellen einer SharePoint-projektelementerweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
-- [Vorgehensweise: Hinzufügen eines Kontextmenüelements zu einer SharePoint-projektelementerweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
-- [Vorgehensweise: Hinzufügen einer Eigenschaft zu einer SharePoint-projektelementerweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
-- [Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
-- [Erweitern von SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Vorgehensweise: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+- [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
+- [Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
+- [Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projekt Elementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md)

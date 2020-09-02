@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_statement | Microsoft-Dokumentation'
+title: 'IDiaLineNumber:: get_statement | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5ad480a3b5d3ed892fc56fec2c882638f986810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165678"
 ---
-# <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
+# <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, dass diese Zeileninformationen wird, den Anfang einer Anweisung, anstatt ein Ausdruck, in der Programmquelle beschrieben ab.  
+Ruft ein Flag ab, das angibt, dass diese Zeilen Informationen den Anfang einer Anweisung anstelle eines Ausdrucks in der Programmquelle beschreiben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_statement ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `TRUE` Wenn diese Zeileninformationen den Beginn einer Anweisung in der Programmquelle beschreibt.  
+ vorgenommen Gibt zurück, `TRUE` Wenn diese Zeilen Informationen den Anfang einer Anweisung in der Programmquelle beschreiben.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- -Anweisungen können mehrere Zeilen umfassen. Diese Methode gibt an, ob die zugeordnete Zeilennummer den Anfang der solche eine mehrzeilige Anweisung markiert.  
+## <a name="remarks"></a>Bemerkungen  
+ -Anweisungen können sich über mehrere Zeilen erstrecken. Diese Methode gibt an, ob die zugeordnete Zeilennummer den Anfang einer solchen mehrzeiligen Anweisung kennzeichnet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

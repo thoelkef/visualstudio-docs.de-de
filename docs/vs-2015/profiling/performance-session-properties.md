@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848161"
 ---
 # <a name="performance-session-properties"></a>Eigenschaften von Leistungssitzungen
@@ -25,9 +25,9 @@ ms.locfileid: "75848161"
 
 Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die bestimmen, wie ein Profil für eine Anwendung erstellt wird. Sie speichert auch Berichte, die für die Profilerstellungssitzung generiert werden.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]ist [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]ist [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   Erstellen Sie eine **Leistungssitzung** durch Ausführen des **Leistungs-Assistenten** oder durch das manuelle Erstellen einer Sitzung. Die **Leistungssitzung** wird im **Leistungs-Explorer** angezeigt, nachdem die **Leistungssitzung** erstellt wurde.  
   
@@ -38,20 +38,20 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
 ## <a name="general"></a>Allgemein  
  Mit diesen Einstellungen können Sie die Profilerstellungsmethode auswählen, die .NET-Objektsammlung und Lebenszyklusdaten hinzufügen und den Standardspeicherort und die Benennungskonventionen des Berichts angeben.  
   
- Weitere Informationen finden Sie unter: .  
+ Weitere Informationen finden Sie unter  
   
- [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)  
+ [Vorgehensweise: Auswählen von Sammlungs Methoden](../profiling/how-to-choose-collection-methods.md)  
   
  [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [How to: Set Performance Data File Name Option (Vorgehensweise: Festlegen von Dateinamenoptionen für Leistungsdaten)](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Vorgehensweise: Festlegen von Optionen für die Dateinamen von Leistungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Starten Sie  
+## <a name="launch"></a>Starten  
  Sie können diese Einstellungen aus einer Liste der Binärdateien auswählen und die Startreihenfolge der Binärdateien angeben.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).  
+ Weitere Informationen finden Sie unter Gewusst [wie: Angeben der zu Start binären Binärdatei](../profiling/how-to-specify-the-binary-to-start.md) .  
   
-## <a name="sampling"></a>Sampling  
+## <a name="sampling"></a>Stichproben  
  Diese Einstellungen ermöglichen Ihnen die Auswahl des Samplingereignisses und des Samplingintervalls, wenn Sampling als Profilerstellungsmethode verwendet wird. Ein Samplingereignis dient zum Erfassen von Profilerstellungsdaten im angegebenen Intervall. Wenn das Samplingereignis z.B. ein Taktzyklus ist und das Samplingintervall auf 10.000.000 eingestellt ist, werden jeweils nach 10 Millionen Taktzyklen Profilerstellungsdaten erfasst. Die folgenden vier Typen von Samplingereignissen sind verfügbar:  
   
 - Taktzyklen: für CPU-Probleme  
@@ -64,24 +64,24 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
   
 - Zusätzliche Samplingereignisse können auf Grundlage der verfügbaren Leistungsindikatoren angegeben werden  
   
-  Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)  
+  Weitere Informationen finden Sie unter Gewusst [wie: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md) .  
   
-## <a name="binary"></a>Binär  
+## <a name="binary"></a>Binary  
  Mit diesen Einstellungen können Sie angeben, ob instrumentierte Binärdateien an einen anderen Speicherort verschoben werden sollen. Wenn Sie beispielsweise eine My.DLL-Profilerstellung durchführen und die instrumentierte Binärdatei nicht verschieben, wird eine Sicherungskopie von My.DLL mit dem Namen My.Orig.DLL erstellt. Anschließend wird My.DLL geändert, indem Prüfpunkte in die Datensammelung eingefügt werden. Wenn Sie sich entschließen, die instrumentierte Binärdatei zu verschieben, wird die ursprüngliche Binärdatei nicht umbenannt, und die instrumentierte Binärdatei wird am angegebenen Speicherort zur Verwendung während der Instrumentation kopiert.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).  
+ Weitere Informationen finden Sie unter Gewusst [wie: Angeben der zu Start binären Binärdatei](../profiling/how-to-specify-the-binary-to-start.md) .  
   
 ## <a name="tier-interactions"></a>Ebeneninteraktionen  
  Weitere Informationen finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md)  
   
-## <a name="instrumentation"></a>Instrumentation  
+## <a name="instrumentation"></a>Instrumentierung  
  Mit diesen Einstellungen können Sie Leistungsdaten für den JScript-Code in [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webseiten sammeln und alle **Präinstrumentations-** und **Postinstrumentationsereignisse** angeben, die vor oder nach dem Instrumentationsprozess ausgeführt werden sollen.  
   
- Weitere Informationen finden Sie unter: .  
+ Weitere Informationen finden Sie unter  
   
  [Gewusst wie: Profilerstellung für JavaScript-Code in Webseiten](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [Gewusst wie: Angeben von Präinstrumentations-und Post Instrumentations Befehlen](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>CPU-Indikatoren  
  Mit diesen Einstellungen können Sie Daten zu CPU-Leistungsindikatoren sammeln, wenn Sie die Instrumentationsprofilerstellungsmethode verwenden. Portable Leistungszähler sind unabhängig vom CPU-Design und Hersteller verfügbar. Plattformereignisse sind spezifisch für das CPU-Design und den Hersteller. Weitere Informationen über integrierte Leistungsindikatoren finden Sie in der Dokumentation des jeweiligen Prozessors.  
@@ -91,9 +91,9 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
 ## <a name="windows-events"></a>Windows-Ereignisse  
  Während der Profilierung können Sie Daten von Ereignisablaufverfolgungsanbietern erfassen. Sie können die Daten mithilfe der `/calltrace`-Option des Befehlszeilentools VSPerfReport.exe anzeigen. Weitere Informationen über die Ereignisablaufverfolgung für Windows (ETW) finden Sie unter [About Event Tracing (Über Ereignisablaufverfolgung)](https://msdn2.microsoft.com/library/aa363668.aspx).  
   
- Weitere Informationen finden Sie unter: .  
+ Weitere Informationen finden Sie unter  
   
- [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [Gewusst wie: Erfassen von Daten der Ereignis Ablauf Verfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md).  
   
@@ -105,13 +105,13 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
 ## <a name="advanced"></a>Erweitert  
  Mit diesen Einstellungen können Sie die Optionen des Instrumentationsvorgangs hinzufügen, indem Sie eine oder mehrere Optionen des [VSInstr](../profiling/vsinstr.md)-Profilerstellungstools über die Befehlszeile angeben. Wenn die Anwendung mehr als eine Version ausführt, können Sie auch die Version der typischen Laufzeit angeben, für die ein Profil erstellt werden soll.  
   
- Weitere Informationen finden Sie unter: .  
+ Weitere Informationen finden Sie unter  
   
- [Gewusst wie: Angeben der .NET Framework-Laufzeit](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Vorgehensweise: Angeben der .NET Framework Laufzeit](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
- [Gewusst wie: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)  
+ [Gewusst wie: Angeben zusätzlicher Instrumentierungs Optionen](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Übersichten](../profiling/overviews-performance-tools.md)   
- [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
+ [Konfigurieren von Leistungs Sitzungen](../profiling/configuring-performance-sessions.md)   
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)

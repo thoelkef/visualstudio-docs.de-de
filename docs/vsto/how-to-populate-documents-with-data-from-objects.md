@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547172"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten
@@ -60,7 +60,7 @@ So verbinden Sie das Datenobjekt mit der BindingSource:
 
 1. Erstellen Sie im Code eine Instanz des Typs des Objekts, das der Datenquelle zugewiesen wird.
 
-2. Erstellen Sie eine Instanz einer <xref:System.Windows.Forms.BindingSource>-Komponente:
+2. Erstellen Sie eine Instanz von <xref:System.Windows.Forms.BindingSource>.
 
 3. Weisen Sie die Datenquelleninstanz der <xref:System.Windows.Forms.BindingSource.DataSource%2A> -Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Komponente zu.
 

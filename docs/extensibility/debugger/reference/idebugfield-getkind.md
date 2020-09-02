@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind | Microsoft Docs
+title: 'Idebugfield:: getkind | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728818"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-Diese Methode erhält die Art des Feldes.
+Diese Methode ruft die Art des Felds ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetKind(
 
 ## <a name="parameters"></a>Parameter
 `pdwKind`\
-[out] Gibt die Art des Felds als Kombination aus [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) konstanten konstanten.
+vorgenommen Gibt die Art des Felds als eine Kombination aus [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

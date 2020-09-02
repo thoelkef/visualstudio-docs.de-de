@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 571079b7de52c4dbebbe842b232e4f889a9f0eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62989788"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Vorbereiten der Veröffentlichung und Bereitstellung eines Clouddiensts über Visual Studio
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Vorbereiten der Veröffentlichung und Bereitstellung eines Clouddiensts in Visual Studio
 
 Zum Veröffentlichen eines Clouddienstprojekts müssen Sie die folgenden Dienste wie in diesem Artikel beschrieben einrichten:
 

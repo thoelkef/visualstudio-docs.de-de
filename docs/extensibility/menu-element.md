@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 020098a3026f600629b8ab186431a1d2d5d7795a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453651"
 ---
 # <a name="menu-element"></a>Menu-Element
@@ -36,7 +36,7 @@ Definiert ein Menü Element. Dies sind die sechs Arten von Menüs: Kontext, Men�
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|BESCHREIBUNG|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |guid|Erforderlich. GUID des GUID-/ID-befehlsbezeichners.|
 |id|Erforderlich. ID des GUID-/ID-befehlsbezeichners.|
@@ -73,5 +73,5 @@ Definiert ein Menü Element. Dies sind die sechs Arten von Menüs: Kontext, Men�
 </Menu>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

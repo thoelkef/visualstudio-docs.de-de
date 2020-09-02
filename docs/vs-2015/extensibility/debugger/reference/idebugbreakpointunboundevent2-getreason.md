@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft-Dokumentation
+title: 'IDebugBreakpointUnboundEvent2:: geverrat | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6633fa2b3950d49a3db3b286157d50c026261300
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160033"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Grund ab, die, den der Haltepunkt aufgehoben wurde.  
+Ruft den Grund für die Bindung des Breakpoints ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ int GetReason( 
   
 #### <a name="parameters"></a>Parameter  
  `pdwUnboundReason`  
- [out] Gibt einen Wert aus der [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) Enumeration, der den Grund, der der Haltepunkt aufgehoben wurde.  
+ vorgenommen Gibt einen Wert aus der [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) -Enumeration zurück, die den Grund für die Bindung des Breakpoints angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ursachen ein Haltepunkts wird erneut gebunden an einen anderen Speicherort nach einem bearbeiten und Fortfahren-Vorgang, oder eine Entscheidung treffen, dass ein Haltepunkt gebunden wurde.  
+## <a name="remarks"></a>Bemerkungen  
+ Gründe hierfür sind, dass ein Haltepunkt nach einem Vorgang zum Bearbeiten und fortfahren an einen anderen Speicherort zurückgesetzt wird oder ob ein Haltepunkt fehlerhaft ist.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CBreakpointUnboundDebugEventBase** -Objekt, das macht die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cbreakpointunbounddebugeventbase** -Objekt implementiert wird, das die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  
@@ -70,5 +70,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

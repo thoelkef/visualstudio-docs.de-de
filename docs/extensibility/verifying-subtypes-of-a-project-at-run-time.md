@@ -1,5 +1,5 @@
 ---
-title: Überprüfen von Subtypes eines Projekts zur Laufzeit | Microsoft Docs
+title: Überprüfen von Untertypen eines Projekts zur Laufzeit | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698180"
 ---
-# <a name="verify-subtypes-of-a-project-at-run-time"></a>Überprüfen von Untertypen eines Projekts zur Laufzeit
-Ein VSPackage, das von einem benutzerdefinierten Projektsubtyp abhängt, sollte Logik enthalten, um nach diesem Subtype zu suchen, damit es ordnungsgemäß fehlschlagen kann, wenn der Subtype nicht vorhanden ist. Das folgende Verfahren zeigt, wie Sie das Vorhandensein eines angegebenen Subtyps überprüfen.
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>Überprüfen der Untertypen eines Projekts zur Laufzeit
+Ein VSPackage, das von einem benutzerdefinierten Projekt Untertyp abhängt, sollte Logik zum Suchen nach dem Untertyp enthalten, damit er ordnungsgemäß fehlschlagen kann, wenn der Untertyp nicht vorhanden ist. Im folgenden Verfahren wird gezeigt, wie das vorhanden sein eines angegebenen unter Typs überprüft wird.
 
-### <a name="to-verify-the-presence-of-a-subtype"></a>So überprüfen Sie das Vorhandensein eines Subtyps
+### <a name="to-verify-the-presence-of-a-subtype"></a>So überprüfen Sie das vorhanden sein eines Untertyps
 
-1. Abrufen der Projekthierarchie aus den Projekt- und Projektmappenobjekten als <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt, indem Sie dem VSPackage den folgenden Code hinzufügen.
+1. Fügen Sie die Projekt Hierarchie aus dem Projekt und projektmappenobjekten als- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt ein, indem Sie den folgenden Code zu Ihrem VSPackage hinzufügen.
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ Ein VSPackage, das von einem benutzerdefinierten Projektsubtyp abhängt, sollte 
 
     ```
 
-2. Geben Sie die <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> Hierarchie in die Schnittstelle um.
+2. Wandeln Sie die Hierarchie in die- <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> Schnittstelle um.
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,14 +48,14 @@ Ein VSPackage, das von einem benutzerdefinierten Projektsubtyp abhängt, sollte 
 
     ```
 
-3. Ruft die Liste der Projekttyp-GUIDs <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>ab, indem Sie die aufrufen.
+3. Rufen Sie die Liste der Projekttyp-GUIDs ab, indem Sie aufrufen <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
 
     ```
 
-4. Überprüfen Sie die Liste für die GUID des angegebenen Subtyps.
+4. Überprüfen Sie die Liste auf die GUID des angegebenen unter Typs.
 
     ```csharp
     // Replace the string "MyGUID" with the GUID of the subtype.
@@ -67,6 +67,6 @@ Ein VSPackage, das von einem benutzerdefinierten Projektsubtyp abhängt, sollte 
     ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Projektuntertypen](../extensibility/internals/project-subtypes.md)
-- [Projektsubtypes-Design](../extensibility/internals/project-subtypes-design.md)
-- [Eigenschaften und Methoden, die durch Projektuntertypen erweitert werden](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+- [Projekt Untertypen](../extensibility/internals/project-subtypes.md)
+- [Entwerfen von Projekt Untertypen](../extensibility/internals/project-subtypes-design.md)
+- [Eigenschaften und Methoden, die von Projekt Untertypen erweitert werden](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

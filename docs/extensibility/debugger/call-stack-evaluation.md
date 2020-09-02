@@ -1,5 +1,5 @@
 ---
-title: Call-Stack-Evaluierung | Microsoft Docs
+title: Auswertung von aufrufsstapeln | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5557d7eae0ffe54b0f01f1f9e95935d71455229
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739179"
 ---
-# <a name="call-stack-evaluation"></a>Anrufstapelauswertung
-Um die Stapelrahmen der Aufrufliste während des Unterbrechungsmodus anzuzeigen, müssen Sie die [EnumFrameInfo-Methode](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) implementieren.
+# <a name="call-stack-evaluation"></a>Auswertung von aufrufstapeln
+Um die Stapel Rahmen der aufzurufenden Auflistung im Break-Modus anzuzeigen, müssen Sie die [enumframeinfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) -Methode implementieren.
 
-## <a name="methods-for-evaluation"></a>Methoden zur Bewertung
- Für ein einfaches Debugmodul (DE) gibt es möglicherweise nur einen Stapelrahmen. Um den Stapelrahmen während des Unterbrechungsmodus zu untersuchen, müssen Sie die folgenden Methoden von [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)implementieren.
-
-|Methode|BESCHREIBUNG|
-|------------|-----------------|
-|[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Ruft den Codekontext für einen Stapelrahmen ab. Der Codekontext stellt den aktuellen Anweisungszeiger in einem Stapelrahmen dar.|
-|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Ruft den Dokumentkontext für einen Stapelrahmen ab. Der Dokumentkontext stellt die aktuelle Position im Quellcode für einen Stapelrahmen dar. Erforderlich für die Anzeige des Quellcodes, wenn Sie in einem Programm angehalten werden.|
-
- Diese Methoden erfordern die Implementierung mehrerer kontextbezogener Schnittstellen und Methoden. Daher müssen Sie die [GetDocumentContext-Methode](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) und die folgenden Methoden von [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)implementieren.
+## <a name="methods-for-evaluation"></a>Methoden für die Auswertung
+ Für eine einfache Debug-Engine (de) gibt es möglicherweise nur einen Stapel Rahmen. Um den Stapel Rahmen im Break-Modus zu untersuchen, müssen Sie die folgenden Methoden von [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)implementieren.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Ruft den Dateianweisungsbereich eines Dokumentkontexts ab.|
+|[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Ruft den Code Kontext für einen Stapel Rahmen ab. Der Code Kontext stellt den aktuellen Anweisungs Zeiger in einem Stapel Rahmen dar.|
+|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Ruft den Dokument Kontext für einen Stapel Rahmen ab. Der Dokument Kontext stellt die aktuelle Position im Quellcode für einen Stapel Rahmen dar. Erforderlich zum Anzeigen des Quellcodes, wenn Sie in einem Programm angehalten werden.|
 
- Um Codekontexte aufzuzählen, müssen Sie alle Methoden von [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)implementieren.
+ Diese Methoden erfordern die Implementierung mehrerer kontextbezogener Schnittstellen und Methoden. Daher müssen Sie die [getdocumentcontext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) -Methode und die folgenden Methoden von [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)implementieren.
+
+|Methode|BESCHREIBUNG|
+|------------|-----------------|
+|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Ruft den Datei Anweisungs Bereich eines Dokument Kontexts ab.|
+
+ Um Code Kontexte aufzulisten, müssen Sie alle Methoden von [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)implementieren.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Ausführungskontrolle und Zustandsbewertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+- [Ausführungs Steuerung und Zustands Auswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)

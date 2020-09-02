@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670490"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
@@ -52,13 +52,13 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 > [!NOTE]
 > Je nach Ihren Einstellungen und der Edition von Visual Studio ändern sich möglicherweise auch die Namen und Positionen von Menübefehlen oder die Optionen in Dialogfeldern. Dieses Thema bezieht sich auf **Allgemeine Entwicklungseinstellungen**.
 
-## <a name="bkmk_identify"></a> Nachschlagen einer Tastenkombination
+## <a name="identifying-a-keyboard-shortcut"></a><a name="bkmk_identify"></a> Identifizieren einer Tastenkombination
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. **Wählen Sie**in der Menüleiste Extras, **Optionen**aus.
 
 2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
-     ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "|::ref1::|")
+     ![Tastenkombinationen im Dialogfeld "Optionen" anzeigen](../ide/media/optionskeyboard.png "Optionskeyboard")
 
 3. Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
 
@@ -70,15 +70,15 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 5. Wenn dem Befehl eine Tastenkombination zugeordnet ist, wird sie in der Liste **Shortcut(s) for selected command** (Tastenkombination für ausgewählten Befehl) aufgeführt.
 
-     ![Tastenkombination für einen bestimmten Befehl anzeigen](../ide/media/viewshortcut.png "|::ref2::|")
+     ![Tastenkombination für einen bestimmten Befehl anzeigen](../ide/media/viewshortcut.png "Viewshortcut")
 
-## <a name="bkmk_assign"></a> Anpassen einer Tastenkombination
+## <a name="customizing-a-keyboard-shortcut"></a><a name="bkmk_assign"></a> Anpassen einer Tastenkombination
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. **Wählen Sie**in der Menüleiste Extras, **Optionen**aus.
 
 2. Erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
-     ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "|::ref3::|")
+     ![Tastenkombinationen im Dialogfeld "Optionen" anzeigen](../ide/media/optionskeyboard.png "Optionskeyboard")
 
 3. Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
 
@@ -100,14 +100,14 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
      Wenn eine Tastenkombination bereits einem anderen Befehl zugeordnet ist, wird sie im Feld **Tastenkombination wird momentan verwendet von** angezeigt. In diesem Fall löschen Sie die Tastenkombination mit der RÜCKTASTE und versuchen es mit einer anderen Tastenkombination.
 
-     ![Eine andere Tastenkombination für einen Befehl angeben](../ide/media/reassignshortcut.png "|::ref4::|")
+     ![Eine andere Tastenkombination für einen Befehl angeben](../ide/media/reassignshortcut.png "Neu zuweisen")
 
 7. Klicken Sie auf **Zuweisen**.
 
     > [!NOTE]
     > Wenn Sie eine andere Tastenkombination für einen Befehl angeben, klicken Sie auf die Schaltfläche **Zuweisen** und dann auf **Abbrechen**. Damit wird das Dialogfeld geschlossen, aber die Änderung bleibt bestehen.
 
-## <a name="bkmk_transfer"></a> Freigeben benutzerdefinierter Tastenkombinationen
+## <a name="sharing-custom-keyboard-shortcuts"></a><a name="bkmk_transfer"></a> Freigeben von benutzerdefinierten Tastenkombinationen
  Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie in eine Datei exportieren und die Datei dann anderen Benutzern zur Verfügung stellen, sodass diese die Daten importieren können.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>So exportieren Sie nur Tastenkombinationen
@@ -120,7 +120,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 4. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Weiter**.
 
-     ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png "|::ref5::|")
+     ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png "Export Verknüpfungen")
 
 5. Übernehmen Sie in den Feldern **Geben Sie den Namen der Einstellungsdatei ein.** und **Einstellungsdatei in folgendem Verzeichnis speichern** entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf **Fertigstellen**.
 
@@ -142,7 +142,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 7. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertigstellen**.
 
-     ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png "|::ref6::|")
+     ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png "Importverknüpfungen")
 
-## <a name="see-also"></a>Siehe auch
- [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Barrierefreiheitsfunktionen in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

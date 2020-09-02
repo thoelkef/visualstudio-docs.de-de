@@ -1,5 +1,5 @@
 ---
-title: Debuggerkontexte | Microsoft Docs
+title: Debugger-Kontexte | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56825fe299147e60c5ed9dfcefa491a427ab59e4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738976"
 ---
-# <a name="debugger-contexts"></a>Debuggerkontexte
-Beim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen arbeitet das Debugmodul (DE) gleichzeitig in mehreren unterschiedlichen Kontexten wie folgt:
+# <a name="debugger-contexts"></a>Debugger-Kontexte
+Beim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen arbeitet die Debug-Engine (de) in mehreren unterschiedlichen Kontexten gleichzeitig wie folgt:
 
-- Der Codekontext, der die aktuelle Position im Ausführungsstream eines Programms beschreibt.
+- Der Code Kontext, der die aktuelle Position im ausführungsstream eines Programms beschreibt.
 
-- Der Dokumentationskontext oder die Dokumentationsposition, die die aktuelle Position in einem Quelldokument beschreibt.
+- Der Dokumentations Kontext oder die Position, in der die aktuelle Position in einem Quelldokument beschrieben wird.
 
-- Der Ausdrucksauswertungskontext, der den Kontext beschreibt, in dem die Ausdrucksauswertung stattfindet.
+- Der Ausdrucks Auswertungs Kontext, der den Kontext beschreibt, in dem die Ausdrucks Auswertung stattfindet.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Codekontext](../../extensibility/debugger/code-context.md) Erläutert den Codekontext als Adresse im Anweisungsstream eines Programms in den heutigen Laufzeitarchitekturen im Vergleich zu nicht traditionellen Sprachen, in denen Code möglicherweise nicht durch Anweisungen, sondern durch andere Mittel dargestellt wird.
+ [Code Kontext](../../extensibility/debugger/code-context.md) Erläutert den Code Kontext als Adresse im Anweisungs Datenstrom eines Programms in den heutigen Lauf Zeit Architekturen im Vergleich zu nicht herkömmlichen Sprachen, in denen Code möglicherweise nicht durch Anweisungen dargestellt wird, aber auf andere Weise.
 
- [Dokumentposition](../../extensibility/debugger/document-position.md) Definiert die Dokumentposition im Visual Studio-Debugging mittels einer Abstraktion einer Position in einer Quelldatei, wie sie der IDE bekannt ist.
+ [Dokument Position](../../extensibility/debugger/document-position.md) Definiert die Dokument Position im Visual Studio-Debuggen durch eine Abstraktion einer Position in einer Quelldatei, die der IDE bekannt ist.
 
- [Dokumentkontext](../../extensibility/debugger/document-context.md) Erläutert, was der Dokumentkontext im Visual Studio-Debugging in Bezug auf eine Quelldatei darstellt. Erläutert außerdem, wie der Symbolhandler einen Codekontext dem Dokumentationskontext zuordnet.
+ [Dokument Kontext](../../extensibility/debugger/document-context.md) Erläutert, was Dokument Kontext in Visual Studio-Debuggen in Bezug auf eine Quelldatei darstellt. Erläutert auch, wie der Symbol Handler einem Dokumentations Kontext einen Code Kontext zuordnet.
 
- [Ausdrucksbewertungskontext](../../extensibility/debugger/expression-evaluation-context.md) Stellt Informationen zu einem Ausdrucksauswertungskontext in Visual Studio bereit. Beispielsweise stellt ein Ausdrucksauswertungskontext, der einem Stapelrahmen zugeordnet ist, den Kontext zum Auswerten lokaler Variablen, Methodenparameter und Klassenmember bereit.
+ [Ausdrucks Auswertungs Kontext](../../extensibility/debugger/expression-evaluation-context.md) Stellt Informationen zu einem Ausdrucks Auswertungs Kontext in Visual Studio bereit. Ein Ausdrucks Auswertungs Kontext, der einem Stapel Rahmen zugeordnet ist, stellt z. b. den Kontext zum Auswerten von lokalen Variablen, Methoden Parametern und Klassenmembern bereit.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debug-Konzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
+ [Debug-Konzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Konzepte der debuggingarchitektur.
 
- [Debug-Komponenten](../../extensibility/debugger/debugger-components.md) Bietet eine Übersicht über die Visual Studio-Debugkomponenten, zu denen das Debugmodul (DE), der Ausdrucksevaluator (EE) und der Symbolhandler (SH) gehören.
+ [Debugkomponenten](../../extensibility/debugger/debugger-components.md) Bietet eine Übersicht über die Visual Studio-debuggingkomponenten, die Debug-Engine (de), Ausdrucks Auswertung (EE) und Symbol Handler (SH) enthalten.
 
- [Debug-Aufgaben](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debugaufgaben, z. B. zum Starten eines Programms und Auswerten von Ausdrücken.
+ [Aufgaben Debuggen](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debuggingaufgaben, z. b. das Starten eines Programms und Auswerten von Ausdrücken.

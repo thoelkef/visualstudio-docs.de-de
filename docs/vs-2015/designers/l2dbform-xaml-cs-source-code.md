@@ -10,23 +10,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f783161865092f714955b65e6f2fa4791741cbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664285"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei &lt;legacyBold&gt;L2DBForm.xaml.cs&lt;/legacyBold&gt;. Die in dieser Datei enthaltene L2XDBForm`OnRemove`-Teilklasse kann in die folgenden drei logischen Abschnitte unterteilt werden: Datenmember und die Ereignishandler `OnAddBook` und  für das Klicken auf Schaltflächen.
+Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei &lt;legacyBold&gt;L2DBForm.xaml.cs&lt;/legacyBold&gt;. Die in dieser Datei enthaltene L2XDBForm-Teilklasse kann in die folgenden drei logischen Abschnitte unterteilt werden: Datenmember und die Ereignishandler `OnRemove` und `OnAddBook` für das Klicken auf Schaltflächen.
 
-## <a name="data-members"></a>Datenmember
+## <a name="data-members"></a>Datenelemente
  Für die Zuordnung dieser Klasse zu den in L2DBForm.xaml verwendeten Fensterressourcen werden zwei private Datenmember verwendet.
 
 - Die `myBooks`-Namespacevariable wird mit `"http://www.mybooks.com"` initialisiert.
 
-- Der `bookList`-Member wird im Konstruktor mit der folgenden Zeile in die CDATA-Zeichenfolge in L2DBForm.xaml initialisiert:
+- Der -Member wird im Konstruktor mit der folgenden Zeile in die CDATA-Zeichenfolge in L2DBForm.xaml initialisiert:
 
     ```
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
@@ -62,7 +62,7 @@ Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der D
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
 
 ### <a name="code"></a>Code
 
@@ -135,7 +135,7 @@ namespace LinqToXmlDataBinding {
 ```
 
 ### <a name="comments"></a>Kommentare
- Informationen zur zugeordneten XAML-Quelle für diese Handler finden Sie unter [L2DBForm.xaml.cs – Quellcode](../designers/l2dbform-xaml-source-code.md).
+ Die zugehörige XAML-Quelle für diese Handler finden Sie unter [L2DBForm. XAML-Quellcode](../designers/l2dbform-xaml-source-code.md).
 
-## <a name="see-also"></a>Siehe auch
- [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel ](../designers/walkthrough-linqtoxmldatabinding-example.md) [L2DBForm. XAML-Quellcode](../designers/l2dbform-xaml-source-code.md)
+## <a name="see-also"></a>Weitere Informationen
+ Exemplarische Vorgehens [Weise: LinqToXmlDataBinding-Beispiel](../designers/walkthrough-linqtoxmldatabinding-example.md) [L2DBForm. XAML-Quellcode](../designers/l2dbform-xaml-source-code.md)

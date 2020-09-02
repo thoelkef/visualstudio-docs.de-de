@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2225ce416fed4e97e998a50f70a0dc4c25908476
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664473"
 ---
 # <a name="how-to-export-a-shader"></a>Gewusst wie: Exportieren eines Shaders
@@ -32,7 +32,7 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer zum Exportieren eines S
 
 1. Öffnen Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Datei **Visual Shader-Diagramm (.dgsl)**
 
-     Wenn Sie keine Datei **Visual Shader Graph (.dgsl)** zum Öffnen haben, erstellen Sie eine, wie es unter [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) beschrieben wird.
+     Wenn Sie nicht über eine zu öffnende **Visual Shader Graph-Datei (. DGSL)** verfügen, erstellen Sie eine, wie unter Gewusst [wie: Erstellen eines einfachen farbshaders](../designers/how-to-create-a-basic-color-shader.md)beschrieben.
 
 2. Klicken Sie auf der Symbolleiste **Shader-Designer** auf **Erweitert** > **Exportieren** > **Exportieren als**. Das Dialogfeld **Shader exportieren** wird angezeigt.
 
@@ -48,5 +48,5 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer zum Exportieren eines S
 
 4. Geben Sie im Kombinationsfeld **Dateiname** einen Namen für den exportierten Shader an, und klicken Sie auf die Schaltfläche **Speichern**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Erstellen eines grundlegenden Farb-Shader](../designers/how-to-create-a-basic-color-shader.md) - [Shader-Designers](../designers/shader-designer.md)

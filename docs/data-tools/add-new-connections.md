@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283059"
 ---
 # <a name="add-new-connections"></a>Neue Verbindungen hinzufügen
@@ -26,7 +26,7 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Date
 
    Installieren Sie dieses Fenster manuell als Visual Studio-Erweiterung von [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Bietet spezialisierte Funktionen zum untersuchen und verbinden mit Azure-Diensten.
 
-- SQL Server-Objekt-Explorer
+- SQL Server-Objekt-Explorer
 
    Installiert mit SQL Server Data Tools und im Menü **Ansicht** sichtbar. Wenn Sie dort nicht angezeigt wird, navigieren Sie in der Systemsteuerung zu **Programme und Funktionen** , suchen Sie nach Visual Studio, und wählen Sie dann **ändern** aus, um den Installer erneut auszuführen, nachdem Sie das Kontrollkästchen für SQL Server Data Tools ausgewählt haben. Verwenden Sie **SQL Server-Objekt-Explorer** zum Anzeigen von SQL-Datenbanken (wenn Sie über einen ADO.NET-Anbieter verfügen), erstellen Sie neue Datenbanken, ändern Sie Schemas, erstellen Sie gespeicherte Prozeduren, rufen Sie Verbindungs Zeichenfolgen, Daten anzeigen usw. SQL-Datenbanken, die keinen ADO.NET-Anbieter installiert haben, werden hier nicht angezeigt, aber Sie können weiterhin Programm gesteuert eine Verbindung mit Ihnen herstellen.
 
@@ -54,6 +54,6 @@ Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Verbindung test
 
 Wenn der Test erfolgreich ist, können Sie eine *Datenquelle*erstellen, die ein Visual Studio-Begriff ist, der tatsächlich ein *Datenmodell* ist, das auf der zugrunde liegenden Datenbank oder dem zugrunde liegenden Dienst basiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

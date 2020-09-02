@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fba5032860e21bbd323b8e49d5f32ab9b6f90540
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688130"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Wie kann festgestellt werden, bei welchem Aufruf ein Fehler aufgetreten ist, wenn eine Funktion sehr häufig aufgerufen wird?
@@ -51,7 +51,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
   
  Jetzt wissen Sie, dass die Funktion bei Aufruf Nr. 101 fehlgeschlagen ist. Wenn Sie nun den Haltepunkt auf eine Trefferanzahl von 101 zurücksetzen und das Programm erneut ausführen, hält es an dem `CnvtV`-Aufruf an, der zuvor den Fehler verursacht hat.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
- [Setting Breakpoints (Setzen von Haltepunkten)](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Häufig gestellte Fragen zum Debuggen](../debugger/debugging-native-code-faqs.md)   
+ [Festlegen von Breakpoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Bitmap-Element | Microsoft Docs
+title: Bitmap-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d663351aad7d381dd5bfe4cbaa0a263cc70b821
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739996"
 ---
 # <a name="bitmap-element"></a>Bitmap-Element
@@ -34,14 +34,14 @@ Definiert eine Bitmap. Die Bitmap wird entweder aus einer Ressource oder aus ein
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|guid|Erforderlich. GUID des Befehlsbezeichners GUID/ID.<br /><br /> Das guid-Attribut für eine Bitmap ist keinem VSPackage oder einer anderen Befehlsgruppe zugeordnet.  Sie sollte für die Bitmap-Definition eindeutig sein und nicht für andere Zwecke verwendet werden.|
-|Resid|ID des BEFEHLsbezeichners GUID/ID. Entweder ist die resID oder das href-Attribut erforderlich.<br /><br /> Das resID-Attribut ist eine ganzzahlige Ressourcen-ID, die den Bitmap-Strip bestimmt, der während der Zusammenführung der Befehlstabelle geladen werden soll.  Wenn die Befehlstabelle geladen wird, werden die von der Ressourcen-ID angegebenen Bitmaps aus der Ressource desselben Moduls geladen.|
-|usedListe|Erforderlich, wenn das resID-Attribut vorhanden ist. Wählt die verfügbaren Bilder im Bitmap-Streifen aus.|
-|href|Pfad zur Bitmap. Entweder ist die resID oder das href-Attribut erforderlich.<br /><br /> Der Include-Pfad wird nach der angegebenen Bilddatei durchsucht, die in die resultierende Binärdatei eingebettet ist.  Während der Zusammenführung der Befehlstabelle wird das Bild kopiert, und es ist keine zusätzliche Ressourcensuche oder -auslastung erforderlich.  Wenn das usedList-Attribut nicht vorhanden ist, sind alle Bilder im Strip verfügbar. **Hinweis:**  Bilder können in einem von mehreren Formaten bereitgestellt werden, die *.bmp*, *.png*und *.gif*enthalten.  Frühere Versionen des Compilers unterstützten keine 32-Bit-Bitmap-Images, die Alphainformationen für partielle Transparenz enthielten. Die Problemumgehung für diese Versionen besteht darin, das *PNG-Format* zu verwenden.|
-|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Erforderlich. GUID des GUID-/ID-befehlsbezeichners.<br /><br /> Das GUID-Attribut für eine Bitmap ist keinem VSPackage oder einer anderen Befehlsgruppe zugeordnet.  Er sollte für die Bitmapdefinition eindeutig sein und sollte nicht für andere Zwecke verwendet werden.|
+|resID|ID des GUID-/ID-befehlsbezeichners. Entweder die Resid oder das href-Attribut ist erforderlich.<br /><br /> Das Attribut Resid ist eine ganzzahlige Ressourcen-ID, die den bitmapstrip bestimmt, der während der Zusammenführung der Befehls Tabelle geladen werden soll.  Beim Laden der Befehls Tabelle werden die durch die Ressourcen-ID angegebenen Bitmaps aus der Ressource des gleichen Moduls geladen.|
+|usedlist|Erforderlich, wenn das Resid-Attribut vorhanden ist. Wählt die verfügbaren Bilder in der bitmapleiste aus.|
+|href|Der Pfad zur Bitmap. Entweder die Resid oder das href-Attribut ist erforderlich.<br /><br /> Der Include-Pfad wird nach der angezeigten Bilddatei durchsucht, die in die resultierende Binärdatei eingebettet ist.  Während der Zusammenführung der Befehls Tabelle wird das Image kopiert, und es ist keine zusätzliche Ressourcen Suche oder-Auslastung erforderlich.  Wenn das usedlist-Attribut nicht vorhanden ist, sind alle Images im Strip verfügbar. **Hinweis:**  Bilder können in einem von mehreren Formaten angegeben werden, die *BMP*, *PNG*und *GIF*enthalten.  Frühere Versionen des Compilers unterstützten keine 32-Bit-Bitmapbilder, die Alpha Informationen für partielle Transparenz enthielten. Die Problem Umgehung für diese Versionen besteht darin, das *PNG* -Format zu verwenden.|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -58,4 +58,4 @@ Definiert eine Bitmap. Die Bitmap wird entweder aus einer Ressource oder aus ein
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

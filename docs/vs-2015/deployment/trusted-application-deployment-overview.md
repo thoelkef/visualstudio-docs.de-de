@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847703"
 ---
 # <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
@@ -43,7 +43,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 |trust manager|Das Subsystem innerhalb der Common Language Runtime (CLR), das verantwortlich für das Erzwingen der Anwendungssicherheit auf Clientcomputern ist.|  
 |publisher|Die Entität, die die Anwendung schreibt und verwaltet.|  
 |deployer|Die Entität, die Anwendung für Benutzer packt und an diese verteilt.|  
-|certificate|Eine kryptografische Signatur, die aus einem öffentlichen und einem privaten Schlüssel besteht; wird im Allgemeinen von einer Zertifizierungsstelle (CA) ausgegeben, die für seine Echtheit bürgen kann.|  
+|Zertifikat|Eine kryptografische Signatur, die aus einem öffentlichen und einem privaten Schlüssel besteht; wird im Allgemeinen von einer Zertifizierungsstelle (CA) ausgegeben, die für seine Echtheit bürgen kann.|  
 |Authenticode certificate|Ein Zertifikat mit eingebetteten Metadaten, das unter anderem die Verwendungsmöglichkeiten für das Zertifikat beschreibt.|  
 |certification authority|Eine Organisation, die die Identität eines Herausgebers überprüft und Zertifikate ausstellt, die in den Herausgebermetadaten eingebettet sind.|  
 |Stammzertifizierungsstelle|Eine Zertifizierungsstelle, die andere Zertifizierungsstellen zum Ausstellen von Zertifikaten autorisiert.|  
@@ -69,7 +69,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 5. Veröffentlichen Sie die Anwendungsbereitstellung auf Clientcomputern.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Abrufen eines Zertifikats für den Herausgeber  
- Digitale Zertifikate sind eine Kernkomponente des Microsoft Authenticode-Authentifizierungs- und Sicherheitssystems. Authenticode ist ein Standardbestandteil des Windows-Betriebssystems. Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen müssen mit einem digitalen Zertifikat signiert werden, unabhängig davon, ob sie Teil einer Bereitstellung einer vertrauenswürdigen Anwendung sind. Eine vollständige Erläuterung der Funktionsweise von Authenticode mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md).  
+ Digitale Zertifikate sind eine Kernkomponente des Microsoft Authenticode-Authentifizierungs- und Sicherheitssystems. Authenticode ist ein Standardbestandteil des Windows-Betriebssystems. Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen müssen mit einem digitalen Zertifikat signiert werden, unabhängig davon, ob sie Teil einer Bereitstellung einer vertrauenswürdigen Anwendung sind. Eine vollständige Erläuterung der Funktionsweise von Authenticode mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md).  
   
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Hinzufügen des Herausgebers zum Speicher für vertrauenswürdige Herausgeber  
  Damit die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung ein höheres Maß an Vertrauen erhält, müssen Sie das Zertifikat als vertrauenswürdiger Herausgeber auf jedem Clientcomputer hinzufügen, auf dem die Anwendung ausgeführt wird. Bei dieser Aufgabe handelt es sich um eine einmalige Konfiguration. Nachdem sie abgeschlossen wurde, können Sie beliebig viele [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen bereitstellen, die mit dem Zertifikat Ihres Herausgebers signiert sind, und alle werden auf einer hohen Vertrauensebene ausgeführt.  
@@ -80,10 +80,10 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
   
 - Der <xref:System.Security.Cryptography?displayProperty=fullName> -Namespace.  
   
-- CertMgr.exe, eine Komponente von Internet Explorer und daher unter Windows 98 und allen späteren Versionen vorhanden. Weitere Informationen finden Sie unter [Certmgr. exe (Certificate Manager-Tool)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, eine Komponente von Internet Explorer und daher unter Windows 98 und allen späteren Versionen vorhanden. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Erstellen einer ClickOnce-Anwendung  
- Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung ist eine [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] -Clientanwendung kombiniert mit Manifestdateien, die die Anwendung beschreiben und Installationsparameter angegeben. Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]enthalten sind, generieren. Ausführliche Schritte zur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung ist eine [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] -Clientanwendung kombiniert mit Manifestdateien, die die Anwendung beschreiben und Installationsparameter angegeben. Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]enthalten sind, generieren. Ausführliche Schritte zur Bereitstellung finden Sie unter Exemplarische Vorgehensweise [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
  Die Bereitstellung einer vertrauenswürdigen Anwendung gilt für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]und kann nur mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen verwendet werden.  
   
@@ -93,7 +93,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 > [!CAUTION]
 > Es wird davon abgeraten, die Anwendung mit einem Testzertifikat bereitzustellen.  
   
- Sie können die Anwendung auch mit den SDK-Tools "Mage.exe" oder "MageUI.exe" signieren. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Eine vollständige Liste der Befehlszeilenoptionen im Zusammenhang mit der Bereitstellungs Signierung finden Sie unter " [Mage. exe" (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+ Sie können die Anwendung auch mit den SDK-Tools "Mage.exe" oder "MageUI.exe" signieren. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Eine vollständige Liste der Befehlszeilenoptionen im Zusammenhang mit der Bereitstellungs Signierung finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ### <a name="publish-the-application"></a>Veröffentlichen der Anwendung  
  Sobald Sie Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Manifeste signiert haben, kann die Anwendung am Installationsspeicherort veröffentlichen. Der Installationsspeicherort kann ein Webserver, eine Dateifreigabe oder die lokale Festplatte sein. Wenn ein Client zum ersten Mal auf das Bereitstellungsmanifest zugreift, muss der Trust-Manager auswählen, ob der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung durch einen installierten vertrauenswürdigen Herausgeber die Berechtigung erteilt wurde, auf einer höheren Vertrauensebene ausgeführt zu werden. Der Trust-Manager trifft diese Auswahl durch Vergleichen des Zertifikats zum Signieren der Bereitstellung mit den Zertifikaten im Speicher des vertrauenswürdigen Herausgebers des Clients. Wenn der Trust-Manager eine Übereinstimmung findet, wird die Anwendung mit hoher Vertrauenswürdigkeit ausgeführt.  
@@ -104,6 +104,6 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 ## <a name="limitations-of-trusted-application-deployment"></a>Einschränkungen der Bereitstellung einer vertrauenswürdigen Anwendung  
  Sie können die Bereitstellung einer vertrauenswürdigen Anwendung verwenden, um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen, die über das Internet oder über eine unternehmensweite Dateifreigabe bereitgestellt werden, eine erhöhte Vertrauensstellung zu gewähren. Sie müssen keine Bereitstellung einer vertrauenswürdigen Anwendung für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen verwenden, die auf einer CD verteilt werden, da diese Anwendungen standardmäßig die volle Vertrauenswürdigkeit erhalten haben.  
   
-## <a name="see-also"></a>Siehe auch  
- [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5983396924f38c31b6dafcd42b762042e1880e8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145432"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Grundlagen zu Ressourcenkonflikt-Datenwerten
@@ -36,8 +36,8 @@ Bei der Profilerstellung für Ressourcenkonflikte werden immer dann ausführlich
   
   Die Ansichten des Ressourcenkonfliktberichts enthalten auch Zeitachsendiagramme mit den einzelnen Konfliktereignissen im Zeitverlauf und die Aufruflisten, von denen das Ereignis erstellt wurde. Weitere Informationen finden Sie in einem der folgenden Themen:  
   
-- [Threaddetailansicht](../profiling/thread-details-view-contention-data.md)  
+- [Thread Detailansicht](../profiling/thread-details-view-contention-data.md)  
   
-- [Ressourcendetailansicht](../profiling/resource-details-view-contention-data.md)  
+- [Ansicht "Ressourcen Details"](../profiling/resource-details-view-contention-data.md)  
   
   Weitere Informationen zum zweiten Modus der Parallelitätsprofilerstellung finden Sie unter [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md).

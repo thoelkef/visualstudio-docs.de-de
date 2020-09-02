@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234951"
 ---
 # <a name="how-to-troubleshoot-services"></a>Vorgehensweise: Problembehandlung bei Diensten
@@ -56,7 +56,7 @@ if (log == null) return;
 
    2. Der-Schnittstelle ist keine GUID explizit zugewiesen. Daher erstellt das System bei Bedarf eine Standard-GUID für ein Objekt.
 
-3. Stellen Sie sicher, dass das VSPackage, das den Dienst anfordert, positioniert wurde. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Websites ein VSPackage nach dem Erstellen und vor dem Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
+3. Stellen Sie sicher, dass das VSPackage, das den Dienst anfordert, positioniert wurde. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Websites ein VSPackage nach dem Erstellen und vor dem Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
     Wenn Sie über Code in einem VSPackage-Konstruktor verfügen, der einen Dienst benötigt, verschieben Sie ihn in die- `Initialize` Methode.
 
@@ -66,8 +66,8 @@ if (log == null) return;
 
     Wenn ein Tool Fenster ein Benutzer Steuerelement oder einen anderen Steuerelement Container hostet, wird der Container vom Windows-Komponentenmodell positioniert und hat keinen Zugriff auf [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Dienste. Sie können abrufen <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> , um einen VSPackage-Dienstanbieter innerhalb eines Steuerelement Containers abzurufen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Liste der verfügbaren Dienste](../extensibility/internals/list-of-available-services.md)
 - [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)
 - [Service Essentials](../extensibility/internals/service-essentials.md)
-- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

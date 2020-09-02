@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft Docs
+title: LAUNCH_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714718"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
-Gibt die Debugstartflags an.
+Gibt die debugstartflags an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,29 +48,29 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>Felder
 `LAUNCH_DEBUG`\
-Startet den Prozess zum Debuggen.
+Hiermit wird der Prozess zum Debuggen gestartet.
 
 `LAUNCH_NODEBUG`\
-Startet den Prozess, ohne ihn zu debuggen.
+Starten des Prozesses, ohne ihn zu debuggen.
 
 `LAUNCH_ENABLE_ENC`\
-VERALTET, NICHT VERWENDEN.
+veraltet, nicht verwenden.
 
 `LAUNCH_MERGE_ENV`\
-Startet den Prozess und führt die Umgebung mit dem startenden Host zusammen.
+Der Prozess wird gestartet, und die Umgebung wird mit dem Start Host zusammengeführt.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Werte werden als Argument an die [LaunchSuspended-Methode](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) übergeben.
+Diese Werte werden als Argument an die [launchangeh](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) alten-Methode übermittelt.
 
-Diese Flags können mit einem `OR`bitwise kombiniert werden.
+Diese Flags können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

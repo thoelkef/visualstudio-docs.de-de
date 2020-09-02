@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538554"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
@@ -27,7 +27,7 @@ Dieser Abschnitt ist ein Verweis auf die Fehlermeldungen, die vom Tool für die 
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |[CA0001](ca0001.md)|Im Analysetool für verwalteten Code wurde eine Ausnahme ausgelöst, die keine erwartete Fehlerbedingung angibt.|
 |[CA0051](ca0051.md)|Es wurden keine Regeln ausgewählt.|

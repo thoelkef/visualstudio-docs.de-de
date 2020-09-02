@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184080"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89219763"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Produktivitätsleitfaden für Visual Studio
 
@@ -24,7 +24,7 @@ Informationen zu nützlichen Tastenkombinationen finden Sie unter [Tastenkombina
 
 Sparen Sie Zeit beim Durchforsten von Menüs, indem Sie schnell nach allem suchen, was Sie benötigen, einschließlich Befehlen, Einstellungen, Dokumentation und Installationsoptionen. Zeigen Sie Tastenkombinationen für Befehle innerhalb Ihrer Suchergebnisse in Visual Studio an, damit Sie sich diese leichter merken können. 
 
-- **Mock-Code mit Aufgabenliste**. Wenn Sie nicht genügend Anforderungen haben, um ein Codesegment zu vervollständigen, verwenden Sie die Aufgabenliste, um Codekommentare, die Token wie `TODO` und `HACK` verwenden, nachzuverfolgen und um Verknüpfungen zu verwalten, mit denen Sie direkt zu einem vordefinierten Speicherort im Code gelangen. Weitere Informationen finden Sie unter [Verwenden der Aufgabenliste](../ide/using-the-task-list.md.).
+- **Mock-Code mit Aufgabenliste**. Wenn Sie nicht genügend Anforderungen haben, um ein Codesegment zu vervollständigen, verwenden Sie die Aufgabenliste, um Codekommentare, die Token wie `TODO` und `HACK` verwenden, nachzuverfolgen und um Verknüpfungen zu verwalten, mit denen Sie direkt zu einem vordefinierten Speicherort im Code gelangen. Weitere Informationen finden Sie unter [Verwenden der Aufgabenliste](../ide/using-the-task-list.md).
 
 - **Verwenden von Tastenkombinationen im Projektmappen-Explorer**. Wenn Sie mit Visual Studio noch nicht vertraut sind, sind diese Tastenkombinationen praktisch und sparen Ihnen Zeit, während Sie schnell mit einer neuen Codebase arbeiten. Eine vollständige Liste der Tastenkombinationen finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
 

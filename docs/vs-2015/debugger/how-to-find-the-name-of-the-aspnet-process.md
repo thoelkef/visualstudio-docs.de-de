@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Suchen des Namens des ASP.NET-Prozesses | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 53072013c1665687262d30f4a0c2720641c920be
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685964"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens
+# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Gewusst wie: Herausfinden des ASP.NET-Prozessnamens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Für das Anhängen an eine ausgeführte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung müssen Sie den Namen des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Prozesses kennen.  
@@ -33,7 +33,7 @@ Für das Anhängen an eine ausgeführte [!INCLUDE[vstecasp](../includes/vstecasp
   
 - Wenn Sie eine frühere Version von IIS ausführen, lautet der Name aspnet_wp.exe.  
   
-  Für Anwendungen, die mithilfe von [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] oder höheren Versionen der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Code befinden sich auf das Dateisystem und unter dem Testserver WebDev.WebServer.exe ausgeführt werden kann. In diesem Fall müssen Sie den Debugger an WebDev.WebServer.exe und nicht an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Prozess anhängen. Dieses Szenario gilt nur für lokales Debuggen.  
+  Bei Anwendungen [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] , die mit oder höheren Versionen erstellt wurden, kann sich der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Code im Dateisystem befinden und unter dem Testserver WebDev.WebServer.exe ausgeführt werden. In diesem Fall müssen Sie den Debugger an WebDev.WebServer.exe und nicht an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Prozess anhängen. Dieses Szenario gilt nur für lokales Debuggen.  
   
   Ältere ASP-Anwendungen werden innerhalb des IIS-Prozesses inetinfo.exe ausgeführt, sobald sie prozessintern laufen.  
   
@@ -46,24 +46,24 @@ Für das Anhängen an eine ausgeführte [!INCLUDE[vstecasp](../includes/vstecasp
   
 2. Wählen Sie den obersten Knoten aus, der den Namen der Anwendung enthält.  
   
-3. Wenn die **Eigenschaften** Fenstertitel einen Dateipfad enthält, die der Anwendungscode befindet sich im Dateisystem.  
+3. Wenn der Titel des **Eigenschaften** Fensters einen Dateipfad enthält, befindet sich der Anwendungscode im Dateisystem.  
   
-     Andernfalls die **Eigenschaften** Fenstertitel enthält den Namen der Website.  
+     Andernfalls enthält der Titel des **Eigenschaften** Fensters den Namen der Website.  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>So stellen Sie die IIS-Version fest, unter der die Anwendung ausgeführt wird  
   
-1. Suchen **Verwaltung** und führen Sie sie. Je nach Betriebssystem, dies ist möglicherweise ein Symbol in **Systemsteuerung**, oder ein Menüeintrag, der angezeigt wird, wenn Sie auf **starten**.  
+1. Suchen Sie die **Verwaltungs Tools** , und führen Sie Sie aus. Je nach Betriebssystem ist dies möglicherweise ein Symbol in der **Systemsteuerung**oder ein Menüeintrag, der angezeigt wird, wenn Sie auf **Start**klicken.  
   
-     In Windows XP **Systemsteuerung** in Kategorieansicht oder in der Standardansicht werden können. In der Kategorieansicht auf klicken, werden Ihnen **zur klassischen Ansicht wechseln** oder **Leistung und Wartung** , finden Sie unter den **Verwaltung** Symbol.  
+     In Windows XP kann die **Systemsteuerung** in der Kategorieansicht oder in der klassischen Ansicht angezeigt werden. Klicken Sie in der Kategorieansicht auf **zur klassischen Ansicht wechseln** oder auf **Leistung und Wartung** , um das Symbol **Verwaltungs Tools** anzuzeigen.  
   
-2. Von **Verwaltung**, führen Sie Internet Information Services. Ein MMC-Dialogfeld wird geöffnet.  
+2. Führen Sie Internetinformationsdienste aus der **Verwaltungs Tools**aus. Ein MMC-Dialogfeld wird geöffnet.  
   
 3. Wenn im linken Bereich mehr als ein Computer aufgeführt wird, wählen Sie den Computer aus, auf dem sich der Anwendungscode befindet.  
   
-4. Die IIS-Version befindet sich in der **Version** Spalte im rechten Bereich.  
+4. Die IIS-Version befindet sich in der Spalte **Version** des rechten Bereichs.  
   
-## <a name="see-also"></a>Siehe auch  
- [Voraussetzungen für das Remotedebuggen von Webanwendungen](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Voraussetzungen für das Remote Debuggen von Webanwendungen](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md)   
- [Vorbereitung zum Debuggen von ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
+ [Debuggen von ASP.net wird vorbereitet](../debugger/preparing-to-debug-aspnet.md)   
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)

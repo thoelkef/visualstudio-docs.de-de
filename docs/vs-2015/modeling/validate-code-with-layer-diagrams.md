@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845428"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Überprüfen von Code mit Ebenendiagrammen
@@ -43,9 +43,9 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
    Ermitteln von Code oder Abhängigkeiten, die bei der Umstellung des Codes auf eine andere Architektur noch bearbeitet werden müssen
 
-  **Voraussetzungen**
+  **Anforderungen**
 
-- öffnen
+- Visual Studio
 
 - Visual Studio auf dem Team Foundation Build-Server, um Code mit Team Foundation Build automatisch zu überprüfen
 
@@ -58,33 +58,33 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 > [!IMPORTANT]
 > Wenn Sie die Ebenenvalidierung mit Team Foundation Build ausführen möchten, muss auch Visual Studio auf dem Buildserver installiert werden.
 
-- [Überprüfen, ob ein Element die Validierung unterstützt](#SupportsValidation)
+- [Sehen, ob ein Element die Validierung unterstützt](#SupportsValidation)
 
-- [Andere .NET-Assemblys und Projekte zur Validierung einbeziehen](#IncludeReferences)
+- [Andere .NET-Assemblys und Projekte zur Validierung einschließen](#IncludeReferences)
 
 - [Code manuell überprüfen](#ValidateManually)
 
 - [Code automatisch überprüfen](#ValidateAuto)
 
-- [Beheben von ebenenvalidierungsproblemen](#TroubleshootingValidation)
+- [Ebenenvalidierungsprobleme beheben](#TroubleshootingValidation)
 
-- [Verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors)
+- [Verstehen und Lösen von Ebenenvalidierungsfehlern](#UnderstandingValidationErrors)
 
-## <a name="SupportsValidation"></a>Überprüfen, ob ein Element die Validierung unterstützt
+## <a name="see-if-an-item-supports-validation"></a><a name="SupportsValidation"></a> Überprüfen, ob ein Element die Validierung unterstützt
  Sie können Ebenen mit Websites, Office-Dokumenten, Nur-Text-Dateien und Dateien in Projekten verknüpfen, die von mehreren Apps gemeinsam verwendet werden, jedoch nicht im Validierungsprozess enthalten sind. Für Verweise auf Projekte oder Assemblys, die mit separaten Ebenen verknüpft sind, treten keine Validierungsfehler auf, wenn keine Abhängigkeiten zwischen diesen Ebenen angezeigt werden. Solche Verweise werden nur dann als Abhängigkeiten betrachtet, wenn sie im Code verwendet werden.
 
 1. Wählen Sie im ebenendiagramm eine oder mehrere Ebenen aus, klicken Sie mit der rechten Maustaste auf Ihre Auswahl, und klicken Sie dann auf **Links anzeigen**.
 
 2. Sehen Sie sich im **ebenenexplorer**die Spalte **unterstützt Validierung** an. Wenn der Wert "false" ist, wird die Überprüfung vom Element nicht unterstützt.
 
-## <a name="IncludeReferences"></a>Andere .NET-Assemblys und Projekte zur Validierung einbeziehen
+## <a name="include-other-net-assemblies-and-projects-for-validation"></a><a name="IncludeReferences"></a> Andere .NET-Assemblys und Projekte zur Validierung einbeziehen
  Wenn Sie Elemente in das ebenendiagramm ziehen, werden die Verweise auf die entsprechenden .NET-Assemblys oder-Projekte automatisch dem Ordner für **ebenenverweise** im Modellierungsprojekt hinzugefügt. Dieser Ordner enthält Verweise auf die Assemblys und Projekte, die bei der Validierung analysiert werden. Sie können weitere .NET-Assemblys und -Projekte zur Überprüfung hinzufügen, ohne diese manuell in das Ebenendiagramm zu ziehen.
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt oder den Ordner **ebenenverweise** , und klicken Sie dann auf **Verweis hinzufügen**.
 
 2. Wählen Sie im Dialogfeld **Verweis hinzufügen** die Assemblys oder Projekte aus, und klicken Sie dann auf **OK**.
 
-## <a name="ValidateManually"></a>Code manuell überprüfen
+## <a name="validate-code-manually"></a><a name="ValidateManually"></a> Code manuell überprüfen
  Wenn Sie über ein geöffnetes ebenendiagramm verfügen, das mit Projektmappenelementen verknüpft ist, können Sie den Befehl **"Verknüpfung überprüfen" im Diagramm** ausführen. Sie können auch die Eingabeaufforderung verwenden, um den **MSBuild** -Befehl auszuführen, bei dem die benutzerdefinierte Eigenschaft **/p: ValidateArchitecture** auf **true**festgelegt ist. Bei Codeänderungen sollten Sie beispielsweise regelmäßig eine Ebenenvalidierung durchführen, um Abhängigkeitskonflikte frühzeitig lösen zu können.
 
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>So überprüfen Sie Code in einem geöffneten Ebenendiagramm
@@ -99,13 +99,13 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 2. Wenn Sie die Quelle der einzelnen Fehler anzeigen möchten, doppelklicken Sie im Fenster **Fehlerliste** auf den Fehler.
 
     > [!NOTE]
-    > in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird möglicherweise eine Code Map anstelle der Fehlerquelle angezeigt. Dies ist der Fall, wenn der Code eine Abhängigkeit von einer Assembly enthält, die nicht im Ebenendiagramm angegeben ist, oder wenn im Code eine im Ebenendiagramm angegebene Abhängigkeit fehlt. Überprüfen Sie die Code Map oder den Code, um festzustellen, ob die Abhängigkeit vorhanden sein sollte. Weitere Informationen zu Code Maps finden Sie unterzuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md).
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] möglicherweise wird anstelle der Fehlerquelle eine Code Map angezeigt. Dies ist der Fall, wenn der Code eine Abhängigkeit von einer Assembly enthält, die nicht im Ebenendiagramm angegeben ist, oder wenn im Code eine im Ebenendiagramm angegebene Abhängigkeit fehlt. Überprüfen Sie die Code Map oder den Code, um festzustellen, ob die Abhängigkeit vorhanden sein sollte. Weitere Informationen zu Code Maps finden Sie unterzuordnen von [Abhängigkeiten in ihren Lösungen](../modeling/map-dependencies-across-your-solutions.md).
 
 3. Informationen zum Verwalten von Fehlern finden Sie unter [Verwalten von Validierungs Fehlern](#ManageErrors).
 
 #### <a name="to-validate-code-at-the-command-prompt"></a>So überprüfen Sie Code an der Eingabeaufforderung
 
-1. Öffnen Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Eingabeaufforderung.
+1. Öffnen Sie die Eingabeaufforderung von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 2. Wählen Sie eine der folgenden Optionen aus:
 
@@ -137,11 +137,11 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
      msbuild /p:ValidateArchitecture=true
      ```
 
-     Alle aufgetretenen Fehler werden aufgelistet. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]finden Sie unter [MSBuild](../msbuild/msbuild.md) und [MSBuild-Aufgabe](../msbuild/msbuild-task.md).
+     Alle aufgetretenen Fehler werden aufgelistet. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] finden Sie unter [MSBuild](../msbuild/msbuild.md) und [MSBuild-Aufgabe](../msbuild/msbuild-task.md).
 
    Weitere Informationen zu Validierungs Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
 
-### <a name="ManageErrors"></a>Verwalten von Validierungs Fehlern
+### <a name="manage-validation-errors"></a><a name="ManageErrors"></a> Verwalten von Validierungs Fehlern
  Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdrücken, die während der Validierung gemeldet werden. Beispielsweise können Sie Fehler unterdrücken, die Sie bereits behandeln oder die für das spezifische Szenario nicht relevant sind. Wenn Sie einen Fehler unterdrücken, empfiehlt es sich, in [!INCLUDE[esprfound](../includes/esprfound-md.md)] eine Arbeitsaufgabe zu protokollieren.
 
 > [!WARNING]
@@ -153,14 +153,14 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
   Verwenden Sie diese Tasks, um Validierungs Fehler im Fenster **Fehlerliste** zu verwalten:
 
-|**Aktion**|**Befolgen Sie diese Schritte.**|
+|**An**|**Befolgen Sie diese Schritte.**|
 |------------|----------------------------|
 |Unterdrücken von ausgewählten Fehlern während der Validierung|Klicken Sie mit der rechten Maustaste auf einen oder mehrere ausgewählte Fehler, zeigen Sie auf **Validierungs Fehler verwalten**, und klicken Sie dann auf **Fehler unterdrücken**.<br /><br /> Die unterdrückten Fehler werden durchgestrichen dargestellt. Beim nächsten Ausführen der Validierung werden diese Fehler nicht mehr angezeigt.<br /><br /> Unterdrückte Fehler werden in einer SUPPRESSIONS-Datei für die entsprechende Ebenendiagrammdatei nachverfolgt.|
 |Beenden der Unterdrückung von ausgewählten Fehlern|Klicken Sie mit der rechten Maustaste auf den ausgewählten Fehler oder Fehler, zeigen Sie auf **Validierungs Fehler verwalten**, und klicken Sie dann auf **Fehler nicht mehr unterdrücken**.<br /><br /> Beim nächsten Ausführen der Validierung werden die ausgewählten unterdrückten Fehler wieder angezeigt.|
 |Alle unterdrückten Fehler im Fenster " **Fehlerliste** " Wiederherstellen|Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im **Fehlerliste** Fenster, zeigen Sie auf **Validierungs Fehler verwalten**, und klicken Sie dann auf **alle unterdrückten Fehler anzeigen**.|
 |Alle unterdrückten Fehler im Fenster " **Fehlerliste** " ausblenden|Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im **Fehlerliste** Fenster, zeigen Sie auf **Validierungs Fehler verwalten**, und klicken Sie dann auf **alle unterdrückten Fehler ausblenden**.|
 
-## <a name="ValidateAuto"></a>Code automatisch überprüfen
+## <a name="validate-code-automatically"></a><a name="ValidateAuto"></a> Code automatisch überprüfen
  Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds durchführen. Wenn Team Foundation Build von Ihrem Team verwendet wird, können Sie eine Ebenenvalidierung mit abgegrenzten Eincheckvorgängen durchführen, die Sie angeben können, indem Sie eine benutzerdefinierte MSBuild-Aufgabe erstellen und Überprüfungsfehler mithilfe von Buildberichten sammeln. Informationen zum Erstellen von abgegrenzten Eincheckbuilds finden Sie unter [Verwenden eines Gated-Check-in-Buildprozesses zum Überprüfen von Änderungen](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>So überprüfen Sie Code automatisch während eines lokalen Builds
@@ -195,11 +195,11 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
     `/p:ValidateArchitecture=true`
 
-   Weitere Informationen zu Validierungs Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen zu [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] finden Sie unter:
+   Weitere Informationen zu Validierungs Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors). Weitere Informationen zu [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] finden Sie hier:
 
 - [Erstellen der Anwendung](/azure/devops/pipelines/index)
 
-- [Verwenden der Standardvorlage für den Buildprozess](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
+- [Verwenden der Standardvorlage für Ihren Buildprozess](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
 - [Ändern eines Legacy Builds, der auf "Upgrade Template. XAML" basiert](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
 
@@ -207,14 +207,14 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
 - [Überwachen des Status eines Builds während der Ausführung](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
-## <a name="TroubleshootingValidation"></a>Beheben von ebenenvalidierungsproblemen
+## <a name="troubleshoot-layer-validation-issues"></a><a name="TroubleshootingValidation"></a> Beheben von ebenenvalidierungsproblemen
  In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Auflösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [verstehen und Beheben von ebenenvalidierungsfehlern](#UnderstandingValidationErrors).
 
 |**Problem**|**Mögliche Ursache**|**Auflösung**|
 |---------------|------------------------|--------------------|
 |Validierungsfehler treten nicht wie erwartet auf.|Die Validierung funktioniert nicht mit Ebenendiagrammen, die aus anderen Ebenendiagrammen im Projektmappen-Explorer kopiert wurden und sich im gleichen Modellierungsprojekt befinden. Ebenendiagramme, die auf diese Weise kopiert werden, enthalten die gleichen Verweise wie das ursprüngliche Ebenendiagramm.|Fügen Sie dem Modellierungsprojekt ein neues Ebenendiagramm hinzu.<br /><br /> Kopieren Sie die Elemente aus dem Quellebenendiagramm in das neue Diagramm.|
 
-## <a name="UnderstandingValidationErrors"></a>Verstehen und Beheben von ebenenvalidierungsfehlern
+## <a name="understanding-and-resolving-layer-validation-errors"></a><a name="UnderstandingValidationErrors"></a> Verstehen und Beheben von ebenenvalidierungsfehlern
  Beim Überprüfen von Code anhand eines Ebenendiagramms treten Überprüfungsfehler auf, wenn der Code mit dem Entwurf in Konflikt steht. Validierungsfehler können beispielsweise unter folgenden Bedingungen auftreten:
 
 - Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.
@@ -227,21 +227,21 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
 
 |**Syntax**|**Beschreibung**|
 |----------------|---------------------|
-|*ArtifactN*(*ArtifactTypeN*)|*Artifacetten TN* ist ein Artefakt, das einer Ebene im ebenendiagramm zugeordnet ist.<br /><br /> *Artifacttypen* ist der Typ von *artifactn*, z. b. eine **Klasse** oder **Methode**, z. b.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*Artifaktn*(*artifakttypen*)|*Artifacetten TN* ist ein Artefakt, das einer Ebene im ebenendiagramm zugeordnet ist.<br /><br /> *Artifacttypen* ist der Typ von *artifactn*, z. b. eine **Klasse** oder **Methode**, z. b.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Der Name eines Namespace.|
 |*LayerNameN*|Der Name einer Ebene im Ebenendiagramm.|
 |*DependencyType*|Der Typ der Abhängigkeitsbeziehung zwischen *Element1* und *Artifact2*. Beispielsweise hat *Element1* eine Beziehung zum **aufrufen** von *Artifact2*.|
 
-|**Fehler Syntax**|**Fehlerbeschreibung**|
+|**Fehlersyntax**|**Fehlerbeschreibung**|
 |----------------------|---------------------------|
 |AV0001: Ungültige Abhängigkeit: *Element1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> Ebenen: *LayerName1*, *LayerName2* &#124; Abhängigkeiten: *DependencyType*|*Element1* in *LayerName1* sollte nicht von *Artifact2* in *LayerName2* abhängig sein, da *LayerName1* keine direkte Abhängigkeit von *LayerName2*hat.|
 |AV1001: Ungültiger Namespace: *artefaktelement*<br /><br /> Ebene: *Layername* &#124; erforderlicher Namespace: *NamespaceName1* &#124; aktueller Namespace: *NamespaceName2*|*Layername* erfordert, dass die zugehörigen Artefakte zu *NamespaceName1*gehören. Das *Element befindet sich* in *NamespaceName2*, nicht in *NamespaceName1*.|
-|AV1002: abhängig von unzulässigem Namespace: *Element1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Layer: *Layername* &#124; unzulässiger Namespace: *Namespace* &#124; Name Abhängigkeiten: *DependencyType*|*Layername* erfordert, dass die zugehörigen Artefakte nicht von *Namespacename*abhängen. *Element1* kann nicht von *Artifact2* abhängen, weil *Artifact2* in *Namespacename*ist.|
-|AV1003: in unzulässigem Namespace: *Artefakt*(*artifakttype*)<br /><br /> Ebene: *Layername* &#124; unzulässiger Namespace: *Namespacename*|*Layername* erfordert, dass die zugehörigen Artefakte nicht zu *Namespace*Name gehören. Das *Element gehört zu* *Namespacename*.|
+|AV1002: abhängig von unzulässigem Namespace: *Element1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Layer: *Layername* &#124; unzulässiger Namespace: *Namespace* Name &#124; Abhängigkeiten: *DependencyType*|*Layername* erfordert, dass die zugehörigen Artefakte nicht von *Namespacename*abhängen. *Element1* kann nicht von *Artifact2* abhängen, weil *Artifact2* in *Namespacename*ist.|
+|AV1003: in unzulässigem Namespace: *Artefakt*(*artifakttype*)<br /><br /> Ebene: *Layername* &#124; unzulässiger Namespace: *Namespace* Name|*Layername* erfordert, dass die zugehörigen Artefakte nicht zu *Namespace*Name gehören. Das *Element gehört zu* *Namespacename*.|
 |AV3001: fehlender Link: Layer '*Layername*' ist mit '*artefakt'* verknüpft, das nicht gefunden werden kann. Möglicherweise fehlt ein Assemblyverweis.|*Layername* ist mit einem artefaktelement verknüpft, das nicht gefunden werden kann. Ein Link zu einer Klasse kann beispielsweise fehlen, wenn im Modellierungsprojekt ein Verweis auf die Assembly mit der Klasse fehlt.|
 |AV9001: Bei der Architekturvalidierung sind interne Fehler aufgetreten. Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster.|Weitere Einzelheiten finden Sie im Buildereignisprotokoll oder im Ausgabefenster.|
 
 ## <a name="security"></a>Sicherheit
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)

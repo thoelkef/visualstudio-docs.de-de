@@ -1,5 +1,5 @@
 ---
-title: UsedCommand-Element | Microsoft Docs
+title: Usedcommand-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698825"
 ---
 # <a name="usedcommand-element"></a>UsedCommand-Element
-Ermöglicht einem VSPackage den Zugriff auf einen Befehl, der in einer anderen .vsct-Datei definiert ist. Wenn Ihr VSPackage beispielsweise den Standardbefehl **Kopieren** verwendet, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] der durch die Shell definiert wird, können Sie den Befehl zu einem Menü oder einer Symbolleiste hinzufügen, ohne ihn erneut zu implementieren.
+Ermöglicht einem VSPackage den Zugriff auf einen Befehl, der in einer anderen vsct-Datei definiert ist. Wenn das VSPackage z. b. den standardmäßigen **Kopier** Befehl verwendet, der durch die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell definiert ist, können Sie den Befehl einem Menü oder einer Symbolleiste hinzufügen, ohne ihn erneut zu implementieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,26 +32,26 @@ Ermöglicht einem VSPackage den Zugriff auf einen Befehl, der in einer anderen .
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|guid|Erforderlich. Die GUID des GUID-ID-Paares, das den Befehl identifiziert.|
-|id|Erforderlich. Die ID des GUID-ID-Paares, das den Befehl identifiziert.|
-|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Erforderlich. Der GUID des GUID-ID-Paars, das den Befehl identifiziert.|
+|id|Erforderlich. Die ID des GUID-ID-Paars, das den Befehl identifiziert.|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |Keine||
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[UsedCommands-Element](../extensibility/usedcommands-element.md)|Gruppen UsedCommand-Elemente und andere UsedCommands-Gruppierungen.|
+|[UsedCommands-Element](../extensibility/usedcommands-element.md)|Gruppiert usedcommand-Elemente und andere usedcommands-Gruppierungen.|
 
 ## <a name="remarks"></a>Bemerkungen
- Durch Hinzufügen eines `<UsedCommands>` Befehls zum Element informiert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein VSPackage die Umgebung, dass das VSPackage den Befehl benötigt. Sie sollten `<UsedCommand>` ein Element für jeden Befehl hinzufügen, den Ihr Paket erfordert und der möglicherweise nicht in allen Versionen und Konfigurationen von Visual Studio enthalten ist. Wenn Ihr Paket beispielsweise einen Befehl aufruft, der für Visual C++ spezifisch ist, ist der `<UsedCommand>` Befehl für Benutzer von Visual Web Developer nur verfügbar, wenn Sie ein Element für den Befehl einschließen.
+ Durch das Hinzufügen eines Befehls zum- `<UsedCommands>` Element wird der Umgebung von einem VSPackage mitgeteilt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , dass das VSPackage den Befehl erfordert. Sie sollten ein- `<UsedCommand>` Element für jeden Befehl hinzufügen, der für das Paket erforderlich ist, das möglicherweise nicht in allen Versionen und Konfigurationen von Visual Studio enthalten ist. Wenn das Paket z. b. einen für Visual C++ spezifischen Befehl aufruft, steht der Befehl Benutzern von Visual Web Developer nur dann zur Verfügung, wenn Sie ein- `<UsedCommand>` Element für den Befehl einschließen.
 
 ## <a name="example"></a>Beispiel
 

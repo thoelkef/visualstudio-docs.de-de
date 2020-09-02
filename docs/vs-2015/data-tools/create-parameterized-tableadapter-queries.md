@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 560587e70365a485c3391a0623b959f88d417698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671056"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
@@ -75,7 +75,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der DataSet-Designer. Sie
 
     Es wird ein Steuerelement für die Eingabe des Parameters sowie eine Schaltfläche **Laden** zum Formular in einem <xref:System.Windows.Forms.ToolStrip>-Steuerelement hinzugefügt.
 
-   TableAdapter-Parametern können NULL-Werte zugewiesen werden, wenn Sie Datensätze Abfragen möchten, die über keinen aktuellen Wert verfügen. Sehen Sie sich beispielsweise die folgende Abfrage mit einem `ShippedDate`-Parameter in der `WHERE`-Klausel an:
+   TableAdapter-Parametern können NULL-Werte zugewiesen werden, wenn Sie Datensätze Abfragen möchten, die über keinen aktuellen Wert verfügen. Sehen Sie sich beispielsweise die folgende Abfrage mit einem `ShippedDate` Parameter in der- `WHERE` Klausel an:
 
    ```sql
    SELECT CustomerID, OrderDate, ShippedDate
@@ -93,10 +93,10 @@ Wenn es sich um eine Abfrage für einen TableAdapter handelt, könnten Sie alle 
 
 1. Wählen Sie im **DataSet-Designer**die TableAdapter-Abfrage aus, die NULL-Parameterwerte akzeptieren muss.
 
-2. Wählen Sie im Fenster **Eigenschaften** die Option **Parameter**aus. Klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ( **..** .), um den **Parameter-Sammlungs-Editor**
+2. Wählen Sie im Fenster **Eigenschaften** die Option **Parameter**aus. Klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten (**..**.), um den **Parameter-Sammlungs-Editor**
 
-3. Wählen Sie den Parameter aus, der NULL-Werte zulässt, und legen Sie die Eigenschaft **AllowDBNull** auf `true` fest.
+3. Wählen Sie den Parameter, der NULL-Werte zulässt, und legen Sie die **AllowDBNull** -Eigenschaft auf fest `true` .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

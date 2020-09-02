@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject | Microsoft Docs
+title: Idebugfunctionobject | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6433c1f2c540b040a3b3beccc264377e69592387
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728488"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Expressionsevaluatoren finden Sie unter [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Diese Schnittstelle stellt eine Funktion dar.
 
@@ -32,30 +32,30 @@ IDebugFunctionObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein Ausdrucksauswertungsgeber implementiert diese Schnittstelle, um eine Funktion darzustellen.
+ Eine Ausdrucks Auswertung implementiert diese Schnittstelle, um eine Funktion darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Diese Schnittstelle ist eine Spezialisierung der [IDebugObject-Schnittstelle](../../../extensibility/debugger/reference/idebugobject.md) und `IDebugObject` wird mithilfe von [QueryInterface](/cpp/atl/queryinterface) auf der Schnittstelle abgerufen.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Diese Schnittstelle ist eine Spezialisierung der [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Schnittstelle und wird mithilfe von [QueryInterface](/cpp/atl/queryinterface) in der `IDebugObject` Schnittstelle abgerufen.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den von [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)geerbten Methoden macht die `IDebugFunctionObject` Schnittstelle die folgenden Methoden verfügbar.
+ Zusätzlich zu den Methoden, die von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md)geerbt werden, stellt die- `IDebugFunctionObject` Schnittstelle die folgenden Methoden zur Verfügung.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)|Erstellt ein primitives Datenobjekt.|
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)|Erstellt ein Objekt mit einem Konstruktor.|
-|[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)|Erstellt ein Objekt ohne Konstruktor.|
-|[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)|Erstellt ein Arrayobjekt.|
-|[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|Erstellt ein Zeichenfolgenobjekt.|
-|[Auswerten](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|Ruft die Funktion auf und gibt den resultierenden Wert als Objekt zurück.|
+|[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)|Erstellt ein Primitives Datenobjekt.|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)|Erstellt ein-Objekt mithilfe eines Konstruktors.|
+|[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)|Erstellt ein-Objekt ohne Konstruktor.|
+|[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)|Erstellt ein Array Objekt.|
+|[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|Erstellt ein Zeichen folgen Objekt.|
+|[Evaluieren](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|Ruft die-Funktion auf und gibt den resultierenden Wert als-Objekt zurück.|
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Schnittstelle ermöglicht es dem Ausdrucksevaluator, Funktionen in einer Analysestruktur darzustellen. Die `Create` Methoden in dieser Schnittstelle werden verwendet, um Objekte zu erstellen, die die Eingabeparameter für die Methode darstellen. Die Funktion kann dann ausgeführt werden, indem die [Evaluate-Methode](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) aufgerufen wird, die ein Objekt zurückgibt, das den Rückgabewert der Funktion darstellt.
+ Diese Schnittstelle ermöglicht der Ausdrucks Auswertung das darstellen von Funktionen in einer Analyse Struktur. Die `Create` Methoden in dieser Schnittstelle werden verwendet, um-Objekte zu erstellen, die die Eingabeparameter für die Methode darstellen. Die Funktion kann dann durch Aufrufen der Methode [Auswerten](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) ausgeführt werden, die ein Objekt zurückgibt, das den Rückgabewert der Funktion darstellt.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: ee.h
+## <a name="requirements"></a>Anforderungen
+ Header: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

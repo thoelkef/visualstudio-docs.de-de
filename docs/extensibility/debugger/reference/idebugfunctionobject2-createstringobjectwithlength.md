@@ -1,5 +1,5 @@
 ---
-title: IDebugfunctionObject2::CreateStringObjectWithLength | Microsoft Docs
+title: 'IDebugFunctionObject2:: kreatestringobjectwithlength | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 937d325f8637a3260121def189d472dcfb3e1309
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728467"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Erstellt ein Zeichenfolgenobjekt mit der angegebenen Länge.
+Erstellt ein Zeichen folgen Objekt mit der angegebenen Länge.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,13 +44,13 @@ int CreateStringObjectWithLength (
 
 ## <a name="parameters"></a>Parameter
 `pcstrString`\
-[in] Der Zeichenfolgenwert für das Zeichenfolgenobjekt.
+in Der Zeichen folgen Wert für das Zeichen folgen Objekt.
 
 `uiLength`\
-[in] Die Länge der Zeichenfolge in Bytes.
+in Die Länge der Zeichenfolge in Bytes.
 
 `ppObject`\
-[out] Gibt ein [IDebugObject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) zurück, das das neu erstellte Zeichenfolgenobjekt darstellt.
+vorgenommen Gibt ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zurück, das das neu erstellte Zeichen folgen Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

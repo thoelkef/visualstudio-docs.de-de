@@ -10,10 +10,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903165"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Start Seite
@@ -196,7 +196,7 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweit
 
 Sie können dieses Benutzer Steuerelement ändern, um eine beliebige Anzahl benutzerdefinierter Einstellungen zu speichern und abzurufen, indem Sie unterschiedliche Werte aus unterschiedlichen Ereignis Handlern verwenden, um die Eigenschaft abzurufen und festzulegen `SettingsStore` . Solange Sie `propertyName` für jeden-Rückruf einen anderen Parameter verwenden, über <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> schreiben die Werte in der Registrierung nicht einander.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [Hinzufügen von Visual Studio-Befehlen zu einer Start Seite](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

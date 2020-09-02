@@ -16,10 +16,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283072"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
@@ -76,7 +76,7 @@ So fügen Sie der Liste der zugeordneten Steuerelemente Steuerelemente hinzu:
 
      Das Steuerelement muss eines der folgenden Attribute aufweisen:
 
-    |attribute|Beschreibung|
+    |attribute|BESCHREIBUNG|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) von Daten anzeigen, z <xref:System.Windows.Forms.TextBox> . b..|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, z <xref:System.Windows.Forms.DataGridView> . b..|
@@ -89,7 +89,7 @@ So fügen Sie der Liste der zugeordneten Steuerelemente Steuerelemente hinzu:
     > [!NOTE]
     > Nur Steuerelemente, die sich innerhalb der aktuellen Projekt Mappe oder in einer referenzierten Assembly befinden, können der Liste der zugeordneten Steuerelemente hinzugefügt werden. (Die Steuerelemente müssen auch eines der Daten Bindungs Attribute in der vorherigen Tabelle implementieren.) Zum Binden von Daten an ein benutzerdefiniertes Steuerelement, das im Datenquellen Fenster nicht verfügbar ist, ziehen Sie das Steuerelement aus der **Toolbox** auf die Entwurfs Oberfläche, und ziehen Sie dann das Element, an das die Bindung erfolgen soll, aus dem **Datenquellen** Fenster auf das Steuerelement.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Anpassungsoptionen für Daten Benutzeroberfläche (Dialogfeld)](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688148"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Profilerstellungstools können mithilfe der Instrumentationsmethode für die Profilerstellung Leistungsdaten für JavaScript-Code sammeln, der in einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Webanwendung, auf einer beliebigen Webseite oder in einer JavaScript-Anwendung ausgeführt wird.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools können mithilfe der Instrumentierungsmethode für die Profilerstellung Leistungsdaten für JavaScript-Code sammeln, der in einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung, auf einer beliebigen Webseite oder in einer JavaScript-Anwendung ausgeführt wird.  
   
  **Anforderungen**  
   
@@ -34,21 +34,21 @@ Die[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Profilerstellungstools können 
 > [!WARNING]
 > Die Profilerstellung für JavaScript in Windows Store-Apps ist in den folgenden Themen beschrieben:  
 > 
-> - [JavaScript-Funktionstiming](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [JavaScript-Funktionstiming auf einem Remotegerät](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - JavaScript-Funktions [zeitliche](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) Steuerung [der JavaScript-Funktions Zeit auf einem Remote Gerät](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [Analysieren von JavaScript-Funktionstimingdaten](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
  Zum Erstellen einer Leistungssitzung können Sie den Profilerstellungs-Assistenten verwenden. Geben Sie die Instrumentationsmethode an, und wählen Sie dann im Dialogfeld "Eigenschaften" für die Leistungssitzung auf der Seite "Instrumentation" die Option für die Profilerstellung für JavaScript aus.  
   
- Wenn Sie die Profilerstellung für JavaScript angeben, erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird, und den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Code, der auf dem Server ausgeführt wird.  
+ Wenn Sie die Profilerstellung für JavaScript angeben, erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird, und den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code, der auf dem Server ausgeführt wird.  
   
-- Bei einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird, und den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Code, der auf dem Server ausgeführt wird.  
+- Bei einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Webanwendung erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird, und den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code, der auf dem Server ausgeführt wird.  
   
 - Bei einer beliebigen Webseite erfolgt die Profilerstellung für den JavaScript-Code, der im Browser ausgeführt wird.  
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>So aktivieren Sie die Profilerstellung für JavaScript in einem ASP.NET-Webanwendungsprojekt  
   
-1. Öffnen Sie in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] das Webprojekt [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+1. Öffnen Sie in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]das [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Webprojekt.  
   
 2. Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
   
@@ -58,7 +58,7 @@ Die[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Profilerstellungstools können 
   
 5. Aktivieren Sie auf der dritten Seite des Assistenten das Kontrollkästchen **Profilerstellung für JavaScript** , und klicken Sie dann auf **Weiter**.  
   
-6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen** , um die Webanwendung im Browser zu starten.  
+6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig** stellen, um die Webanwendung im Browser zu starten.  
   
 7. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll.  
   
@@ -80,7 +80,7 @@ Die[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Profilerstellungstools können 
   
     2. Aktivieren Sie das Kontrollkästchen **Profilerstellung für JavaScript** , und klicken Sie dann auf **Weiter**.  
   
-6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen** , um die Webseite im Browser zu starten.  
+6. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig** stellen, um die Webseite im Browser zu starten.  
   
 7. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll.  
   

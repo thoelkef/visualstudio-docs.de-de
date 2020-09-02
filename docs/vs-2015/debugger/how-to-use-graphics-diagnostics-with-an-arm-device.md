@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden der Grafikdiagnose mit einem ARM-Gerät | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Verwenden von Grafikdiagnose mit einem Arm-Gerät | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685872"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Vorgehensweise: Verwenden der Grafikdiagnose mit einem ARM-Gerät
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Gewusst wie: Verwenden der Grafikdiagnose mit einem ARM-Gerät
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Grafikdiagnose unterstützt Remotedebugging von Direct3D-Apps auf ARM-basierten Geräten, auf denen Windows RT 8.1 oder Windows Phone 8.1. läuft. Sie können Grafikinformationen von Ihrer Direct3D-App erfassen, während diese auf dem Gerät läuft, oder das Gerät als Wiedergabecomputer für zuvor erfasste Grafikinformationen verwenden.  
@@ -28,23 +28,23 @@ Die Grafikdiagnose unterstützt Remotedebugging von Direct3D-Apps auf ARM-basier
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>So aktivieren Sie Remotedebugging auf Ihrem ARM-basierten Gerät  
   
-1. Installieren Sie die [ARM Kits Policy](https://msdn.microsoft.com/windows/desktop/dn469188) auf Ihrem ARM-basierten Gerät.  
+1. Installieren Sie die [Arm-Kits-Richtlinie](https://msdn.microsoft.com/windows/desktop/dn469188) auf Ihrem Arm-basierten Gerät.  
   
-2. Installieren Sie die [Remotedebugging-Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) auf Ihrem ARM-basierten Gerät.  
+2. Installieren Sie die [Remotedebugtools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) auf Ihrem Arm-basierten Gerät.  
   
 > [!IMPORTANT]
-> Im Falle von Windows Phone 8.1-Geräten müssen Sie Ihr Gerät eventuell für die Entwicklung registrieren. Dafür müssen Sie ein registrierter Entwickler sein. Weitere Informationen finden Sie unter [wie bereitstellen und Ausführen einer app für Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> Im Falle von Windows Phone 8.1-Geräten müssen Sie Ihr Gerät eventuell für die Entwicklung registrieren. Dafür müssen Sie ein registrierter Entwickler sein. Weitere Informationen finden Sie unter Bereitstellen [und Ausführen einer APP für Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Wenn Sie Remotedebugging auf Ihrem Gerät aktiviert haben, machen Sie dieses zu Ihrem Debugging-Ziel, und starten Sie die Grafikdiagnose.  
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>So konfigurieren und starten Sie die Grafikdiagnose auf Ihrem Gerät  
   
-1. Auf der **Projektmappenplattformen** Dropdown-Liste **ARM** , damit Ihr ARM-basiertes Gerät als Remotedebugging-Ziel zur Verfügung stehen.  
+1. Wählen Sie in der Dropdown Liste Projektmappenplattformen die Option **Arm** , sodass Ihr Arm-basiertes Gerät als remotedebuggingziel verfügbar ist. **Solution Platforms**  
   
-2. Auf der **Debugziel** Dropdown-Liste, wählen Sie Ihr ARM-Gerät.  
+2. Wählen Sie in der Dropdown Liste **Debugziel** Ihr Arm-Gerät aus.  
   
-3. Wählen Sie im Menü **Debuggen**, **Grafiken**, **Diagnose starten**. (Tastatur: ALT + F5)  
+3. Klicken Sie im Menü auf **Debuggen**, **Grafik**und **Diagnose starten**. (Tastatur: Alt+F5)  
   
-## <a name="see-also"></a>Siehe auch  
- [Ausführen von Windows Store-apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ausführen von Windows Store-Apps auf einem Remote Computer](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
  [Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)

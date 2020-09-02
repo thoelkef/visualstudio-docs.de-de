@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985659"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint-Lösungen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office PowerPoint verwenden können. Mit VSTO-Add-Ins können Sie PowerPoint automatisieren, PowerPoint-Features erweitern oder die PowerPoint-Benutzeroberfläche anpassen.
 
- Weitere Informationen zu VSTO-Add-Ins finden Sie unter "Einstieg in die [Programmierung von VSTO-Add-ins](getting-started-programming-vsto-add-ins.md) und [Architektur von VSTO](architecture-of-vsto-add-ins.md)-Add-Ins". Wenn Sie noch nicht mit der Programmierung mit Microsoft Office vertraut sind, finden Sie weitere Informationen unter [ &#40;Office-Entwicklung in Visual&#41;Studio](getting-started-office-development-in-visual-studio.md).
+ Weitere Informationen zu VSTO-Add-Ins finden Sie unter "Einstieg in die [Programmierung von VSTO-Add-ins](getting-started-programming-vsto-add-ins.md) und [Architektur von VSTO](architecture-of-vsto-add-ins.md)-Add-Ins". Wenn Sie noch nicht mit der Programmierung mit Microsoft Office vertraut sind, finden Sie weitere Informationen unter [Einstieg in &#40;Office-Entwicklung in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md).
 
  [!INCLUDE[appliesto_pptallapp](includes/appliesto-pptallapp-md.md)]
 
@@ -42,11 +42,11 @@ ms.locfileid: "72985659"
 
 - Hinzufügen oder Ändern von Formen in einer Folie
 
-  Wenn Sie über ein VSTO-Add-in auf das PowerPoint-Objektmodell zugreifen möchten, verwenden Sie das `Application`-Feld der `ThisAddIn`-Klasse in Ihrem Projekt. Das `Application` Feld gibt ein [Anwendungs](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Objekt zurück, das die aktuelle Instanz von PowerPoint darstellt. Weitere Informationen finden Sie unter [Program VSTO Add-ins](programming-vsto-add-ins.md).
+  Wenn Sie über ein VSTO-Add-in auf das PowerPoint-Objektmodell zugreifen möchten, verwenden Sie das- `Application` Feld der- `ThisAddIn` Klasse im Projekt. Das- `Application` Feld gibt ein- [Anwendungs](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Objekt zurück, das die aktuelle Instanz von PowerPoint darstellt. Weitere Informationen finden Sie unter [Program VSTO Add-ins](programming-vsto-add-ins.md).
 
-  Bei einem Aufruf des PowerPoint-Objektmodells verwenden Sie Typen, die in der primären Interopassembly für PowerPoint bereitgestellt werden. Die primäre Interopassembly dient als Brücke zwischen verwaltetem Code im VSTO-Add-In und dem COM-Objektmodell in PowerPoint. Alle Typen in der primären Interopassembly für PowerPoint werden im Namespace [Microsoft. Office. Interop. PowerPoint](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) definiert. Weitere Informationen zu primären Interopassemblys finden Sie unter [Übersicht &#40;über die Entwicklung&#41; von Office](office-solutions-development-overview-vsto.md) -Projektmappen VSTO und [Office Primary Interopassemblys](office-primary-interop-assemblies.md)
+  Bei einem Aufruf des PowerPoint-Objektmodells verwenden Sie Typen, die in der primären Interopassembly für PowerPoint bereitgestellt werden. Die primäre Interopassembly dient als Brücke zwischen verwaltetem Code im VSTO-Add-In und dem COM-Objektmodell in PowerPoint. Alle Typen in der primären Interopassembly für PowerPoint werden im Namespace [Microsoft. Office. Interop. PowerPoint](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) definiert. Weitere Informationen zu primären Interop-Assemblys finden Sie unter Übersicht über die Entwicklung von Office-Projektmappen [&#40;VSTO&#41;](office-solutions-development-overview-vsto.md) und [primäre](office-primary-interop-assemblies.md)Interopassemblys
 
-## <a name="WordOMDocumentation"></a>Verwenden der Dokumentation zum PowerPoint-Objektmodell
+## <a name="use-the-powerpoint-object-model-documentation"></a><a name="WordOMDocumentation"></a> Verwenden der Dokumentation zum PowerPoint-Objektmodell
  Ausführliche Informationen zum PowerPoint-Objektmodell finden Sie in der Referenz für die primäre Interopassembly (PIA) für PowerPoint und der VBA-Objektmodellreferenz.
 
 ### <a name="primary-interop-assembly-reference"></a>Referenz zur primären Interopassembly
@@ -62,7 +62,7 @@ ms.locfileid: "72985659"
 ## <a name="customize-the-user-interface-of-powerpoint"></a>Anpassen der Benutzeroberfläche von PowerPoint
  Sie können die Benutzeroberfläche von PowerPoint folgendermaßen ändern:
 
-|Aufgabe|Weitere Informationen|
+|Aufgabe|Weitere Informationen finden Sie unter|
 |----------|--------------------------|
 |Erstellen eines benutzerdefinierten Aufgabenbereichs|[Benutzerdefinierte Aufgabenbereiche](custom-task-panes.md)|
 |Hinzufügen von benutzerdefinierten Registerkarten zum Menüband|[Übersicht über Menüband](ribbon-overview.md)|
@@ -70,11 +70,11 @@ ms.locfileid: "72985659"
 
  Weitere Informationen zum Anpassen der Benutzeroberfläche von PowerPoint und anderen Microsoft Office Anwendungen finden Sie unter [Anpassung der Office-Benutzeroberfläche](office-ui-customization.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint](walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 - [Einstieg in das Programmieren von VSTO-Add-ins](getting-started-programming-vsto-add-ins.md)
-- [Übersicht über &#40;die Entwicklung von Office-Lösungen VSTO&#41;](office-solutions-development-overview-vsto.md)
-- [Architektur von VSTO-Add-Ins](architecture-of-vsto-add-ins.md)
+- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](office-solutions-development-overview-vsto.md)
+- [Architecture of VSTO Add-ins](architecture-of-vsto-add-ins.md)
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](how-to-create-office-projects-in-visual-studio.md)
 - [Program mieren von VSTO-Add-ins](programming-vsto-add-ins.md)
 - [Schreiben von Code in Office-Lösungen](writing-code-in-office-solutions.md)

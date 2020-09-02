@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904119"
 ---
 # <a name="create-a-software-development-kit"></a>Erstellen einer Software Development Kit
@@ -50,7 +50,7 @@ Platform sdgs verfügen über das folgende Layout:
                         \[arch]
 ```
 
-| Knoten | Beschreibung |
+| Node | BESCHREIBUNG |
 |------------------------| - |
 | Ordner " *Verweise* " | Enthält Binärdateien, die APIs enthalten, die für codiert werden können. Diese können Windows-Metadatendateien (winmd) oder Assemblys enthalten. |
 | *DesignTime* -Ordner | Enthält Dateien, die nur zum Zeitpunkt des Vorlaufs/Debuggens benötigt werden. Hierzu können XML-Dokumente, Bibliotheken, Header, Toolbox-Entwurfszeit Binärdateien, MSBuild-Artefakte usw. gehören.<br /><br /> XML-Dokumente würden im Idealfall in den Ordner *\designtime* eingefügt werden, aber XML-Dokumente für Verweise werden weiterhin neben der Verweis Datei in Visual Studio platziert. Beispielsweise ist das XML-Dokument für einen Verweis "<em>\references \\ [config] \\ [Arch] \sample.dll</em> " *\references \\ [config] \\ [Arch] \sample.xml*, und die lokalisierte Version des Dokuments lautet " *\references \\ [config] \\ [Arch] \\ [locale] \sample.xml*". |
@@ -135,7 +135,7 @@ Erweiterungs-sdert verfügen über das folgende Installations Layout:
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-In der *SDKManifest.xml* Datei wird beschrieben, wie Visual Studio das SDK nutzen soll. Hier ein Beispiel:
+In der *SDKManifest.xml* Datei wird beschrieben, wie Visual Studio das SDK nutzen soll. Es folgt ein Beispiel:
 
 ```
 <FileList>
@@ -195,7 +195,7 @@ Die folgende Liste enthält die Elemente der Datei:
 
 16. Datei Verweis: wird nur für die Verweise angegeben, die Steuerelemente enthalten oder systemeigene winmds sind. Informationen dazu, wie Sie angeben, ob ein Verweis Steuerelemente enthält, finden Sie unten unter [angeben des Speicher Orts der Toolbox Elemente](#ToolboxItems) .
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Geben Sie den Speicherort von Toolbox Elementen an.
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Geben Sie den Speicherort von Toolbox Elementen an.
 
 Das **ToolBoxItems** -Element des *SDKManifest.xml* Schemas gibt die Kategorie und den Speicherort der Toolbox Elemente in Plattform-und Erweiterungs-sdchen an. In den folgenden Beispielen wird gezeigt, wie verschiedene Speicherorte angegeben werden. Dies gilt sowohl für winmd-als auch für dll-Verweise.
 
@@ -267,7 +267,7 @@ Das **ToolBoxItems** -Element des *SDKManifest.xml* Schemas gibt die Kategorie u
     </File>
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweise: Erstellen eines SDK mithilfe von C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Exemplarische Vorgehensweise: Erstellen eines SDK mit c# oder Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

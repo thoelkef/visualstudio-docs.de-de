@@ -1,5 +1,5 @@
 ---
-title: TargetPlatformName-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Targetplatformname-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6f1654c2497742231d12f19286f21a6395129d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160442"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName-Element (Visual Studio-Vorlagen)
@@ -36,7 +36,7 @@ Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wi
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Gibt die Version des Betriebssystems an, auf die die Projektvorlage ausgerichtet ist.|  
   
@@ -49,7 +49,7 @@ Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wi
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Der Text muss **Windows**lauten.  
   
 ## <a name="example"></a>Beispiel  
@@ -65,6 +65,6 @@ Gibt die Plattform an, auf die die Projektvorlage abzielt. Mit diesem Element wi
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)   
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

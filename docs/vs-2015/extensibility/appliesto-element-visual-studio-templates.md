@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698938"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo-Element (Visual Studio-Vorlagen)
@@ -22,7 +22,7 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
  Dieses Element ist optional. Es kann maximal eine Instanz in einer Vorlagendatei geben. Dieses Element ermöglicht einer Elementvorlage nur, auf Grundlage der Funktionen des ausgewählten aktiven Projekts als anwendbar zu optieren. Es kann nicht verwendet werden, um eine Elementvorlage nicht anwendbar zu machen. Wenn `AppliesTo` fehlt oder der Ausdruck nicht erfolgreich optiert, wird `TemplateID` oder `TemplateGroupID` verwendet, um die Vorlage anwendbar zu machen, wie mit früheren Versionen des Produkts.  
   
- Eingeführt in Visual Studio 2013 Update 2. Um die richtige Version verweisen zu können, finden Sie unter [verweisen auf Assemblys, die in Visual Studio 2013 SDK Update 2 übermittelten](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Eingeführt in Visual Studio 2013 Update 2. Weitere Informationen zum Verweisen auf die richtige Version finden Sie unter referenzieren von Assemblys, [die im Visual Studio 2013 SDK-Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,11 +54,11 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
  Gültige Ausdruckssyntax ist folgendermaßen definiert:  
   
-- Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- Der Funktions Ausdruck, z. b. "(VisualC &#124; CSharp) + (MSTest &#124; nunit)".  
   
-- Die "&#124;" ist der OR-Operator.  
+- Das "&#124;" ist der or-Operator.  
   
-- Die "&" und "+" Zeichen sind beide AND-Operatoren.  
+- Die Zeichen "&" und "+" sind sowohl-als auch-Operatoren.  
   
 - Das Zeichen "!" ist der Operator NOT.  
   
@@ -66,10 +66,10 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
 - Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.  
   
-- Projektfunktionen können jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r  
+- Projektfunktionen können ein beliebiges Zeichen mit Ausnahme der folgenden reservierten Zeichen sein: "'":;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>? \t\b\n\r  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1` gilt für alle C#-Projekttypen oder jeden anderen Projekttyp, der die `WindowsAppContainer`-Funktion unterstützt. `Template2` gilt für C#-Projekte beliebiger Art. `Template3` gilt für C#-Projekte, die keine `WindowsAppContainer` sind Projekte.  
+ Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1` gilt entweder für alle c#-Projekttypen oder für einen beliebigen anderen Projekttyp, der die Funktion unterstützt `WindowsAppContainer` . `Template2` gilt für alle c#-Projekte beliebiger Art. `Template3` gilt für C#-Projekte, die keine `WindowsAppContainer` sind Projekte.  
   
 ```xml  
 <!--  Template 1 -->  
@@ -98,6 +98,6 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

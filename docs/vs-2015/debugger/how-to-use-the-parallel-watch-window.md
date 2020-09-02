@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden Sie das parallele Überwachungsfenster | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden des Fensters "parallele Überwachung" | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697497"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Vorgehensweise: Verwenden des parallelen Überwachungsfensters
+# <a name="how-to-use-the-parallel-watch-window"></a>Gewusst wie: Verwenden des parallelen Überwachungsfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, die ein Ausdruck auf mehreren Threads enthält. Jede Zeile stellt einen Thread in einer Anwendung ausgeführten dar. Allerdings wird ein Thread möglicherweise in mehreren Zeilen angezeigt werden. Genauer gesagt stellt jede Zeile einen Funktionsaufruf dar, dessen Funktionssignatur der Funktion auf dem aktuellen Stapelrahmen entspricht. Sie können die Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads kennzeichnen bzw. die Kennzeichnung aufheben, ihn einfrieren (anhalten) und reaktivieren (fortsetzen). Die folgenden Spalten werden im Fenster **Parallele Überwachung** angezeigt:  
@@ -37,9 +37,9 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
 - Eine konfigurierbare Spalte, in der der Computer, der Prozess, die Kachel, die Aufgabe und der Thread angezeigt werden können.  
   
   > [!TIP]
-  > Müssen Sie öffnen die **parallele Aufgabe** Fenster aus, um die Aufgabeninformationen im Anzeigen der **parallele Überwachung** Fenster.  
+  > Sie müssen das Fenster **parallele Aufgabe** öffnen, um die Aufgabeninformationen im Fenster **parallele Überwachung** anzuzeigen.  
   
-- Die  **\<Überwachung hinzufügen >** Spalte, in dem Sie Ausdrücke zur Überwachung eingeben können.  
+- Die **\<Add Watch>** Spalte, in der Sie die zu überwachenden Ausdrücke eingeben können.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -53,19 +53,19 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
   
 ### <a name="to-add-a-watch-expression"></a>So fügen Sie einen Überwachungsausdruck hinzu  
   
-- Wählen Sie  **\<Überwachung hinzufügen >** und geben Sie einen Überwachungsausdruck.  
+- Wählen Sie **\<Add Watch>** einen Überwachungs Ausdruck aus, und geben Sie ihn an  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf  
   
-- Wählen Sie die Spalte zur Kennzeichnung für die Zeile, oder öffnen Sie das Kontextmenü für den Thread aus, und wählen Sie **Flag** oder **Flag**.  
+- Wählen Sie die Spalte Flag für die Zeile aus, oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Flag** oder **Flag**aufheben aus.  
   
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an  
   
-- Wählen Sie die Schaltfläche "nur gekennzeichnete Threads anzeigen" in der oberen linken Ecke des der **parallele Überwachung** Fenster.  
+- Wählen Sie in der oberen linken Ecke des Fensters **parallele Überwachung** die Schaltfläche nur gekennzeichnete anzeigen aus.  
   
 ### <a name="to-switch-frames"></a>So wechseln Sie Frames  
   
-- Doppelklicken Sie auf die Framespalte. (Tastatur: Wählen Sie die Zeile, und drücken Sie die EINGABETASTE.)  
+- Doppelklicken Sie auf die Framespalte. (Tastatur: Wählen Sie die Zeile aus, und drücken Sie die EINGABETASTE.)  
   
 ### <a name="to-sort-a-column"></a>So sortieren Sie eine Spalte  
   
@@ -87,7 +87,7 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
   
 - Geben Sie im Feld **Nach booleschem Ausdruck filtern** einen booleschen Ausdruck ein. Vom Debugger wird der Ausdruck für jeden Threadkontext ausgewertet. Nur Zeilen mit einem Wert von `true` werden angezeigt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Vorgehensweise: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Gewusst wie: Verwenden des Fensters "GPU-Threads"](../debugger/how-to-use-the-gpu-threads-window.md)   
  [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

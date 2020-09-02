@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645579"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer-Administratorhandbuch
@@ -25,18 +25,18 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
 
  Wenn Clients in Ihrer Netzwerkumgebung nicht auf das Internet zugreifen können, ermöglicht der Help Viewer das Bereitstellen lokaler Hilfeinhalte über das Intranet oder eine Netzwerkfreigabe. Sie können auch die Hilfeoptionen der Visual Studio-IDE deaktivieren, beispielsweise Online- oder Offlinehilfe, die Installation der Inhalte beim ersten Starten der IDE, das Angeben eines intranetbasierten Inhaltsdiensts sowie das Verwalten von Inhalt mit Überschreibungen des Registrierungsschlüssels.
 
- Die grundlegende Syntax lautet:
+ Die Basissyntax lautet wie folgt:
 
- \<*Pfad zu*> \hlpctntmgr.exe/Operation \<*Argument*>/CatalogName. \<*Name*>/locale \<*locale*> unter/SourceUri \< *. MSHA-Pfad oder URL* 0
+ \<*path to*>\HlpCtntmgr.exe/Operation \<*argument*> /CatalogName. \<*name*> /locale \<*locale*> unter/SourceUri \<*.msha path or URL*>
 
  Weitere Informationen zur Befehlszeilensyntax von „HlpCtntMgr.exe“ finden Sie unter [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
  Weitere Informationen zum Generieren von Inhalten, zum Erstellen eines Endpunkts für den Intranetdienst und zu ähnlichen Aktionen finden Sie im SDK des Help Viewer.
 
 ## <a name="deploying-local-help-content-from-the-internet"></a>Bereitstellen des lokalen Hilfeinhalts über das Internet
- Sie können den MSDN Content Package-Dienst verwenden, um lokale Hilfeinhalte über das Internet auf Clientcomputern bereitzustellen. Verwenden Sie folgende Syntax:
+ Sie können den MSDN Content Package-Dienst verwenden, um lokale Hilfeinhalte über das Internet auf Clientcomputern bereitzustellen. Verwenden Sie die folgende Syntax:
 
- \\<*path to*>\v2.2\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
+ \\<*Pfad zu* # C0\v2.2\HlpCtntmgr.exe/Operation \<*name*> /CatalogName. \<*catalog name*> /locale \<*locale*>
 
  Weitere Informationen zur Befehlszeilensyntax von „HlpCtntMgr.exe“ finden Sie unter [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
@@ -127,7 +127,7 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
 
 4. Geben Sie folgenden Pfad ein:
 
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*Ordnername*>\ /y /e /k /o
+     Xcopy%SystemDrive%\programdata\microsoft\helplibrary2 \<*foldername*> \/y/e/k/o
 
      Beispiel: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 
@@ -201,5 +201,5 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
 
 3. Führen Sie die BAT-Datei auf den lokalen Computern aus, auf denen die Hilfeinhalte installiert werden sollen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Befehlszeilenargumente für den](../ide/command-line-arguments-for-the-help-content-manager.md) Hilfe Inhalts-Manager des Hilfe Inhalts-Managers [über](../ide/help-content-manager-overrides.md) schreibungen

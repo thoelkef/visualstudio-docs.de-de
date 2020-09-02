@@ -16,10 +16,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: fdc12f0938d3296cf1bfca37d0b9b01e0f2a704a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903563"
 ---
 # <a name="add-and-remove-property-pages"></a>Hinzufügen und Entfernen von Eigenschaften Seiten
@@ -206,6 +206,6 @@ In einem Projekt Untertyp müssen häufig zusätzliche Eigenschaften Seiten im P
     }
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Projekt Untertypen](../extensibility/internals/project-subtypes.md)

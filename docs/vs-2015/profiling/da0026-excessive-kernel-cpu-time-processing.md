@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152661"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Übermäßige CPU-Zeit für die Kernelverarbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Regel-ID|TODO|  
-| Kategorie | Verwendung der Profilerstellungstools |  
-| Profilerstellungsmethode | Erstellen von Stichproben |  
-| Nachricht | Es wurde relativ hohes Maß an CPU Kernelmoduszeit gemessen. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling.|  
+| Kategorie | Profilerstellungstools Verwendung |  
+| Profil Erstellungs Methode | Stichprobenentnahme |  
+| Meldung | Eine relativ hohe Menge an CPU-Zeit im Kernel Modus wurde gemessen. Untersuchen Sie die Quelle bei aktiviertem SysCall-Sampling.|  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -34,7 +34,7 @@ Regel-ID|TODO|
 ## <a name="cause"></a>Ursache  
  Die CPU-Zeit im Kernelmodus war größer als die Zeit im Benutzermodus. Wiederholen Sie die Profilerstellung, und führen Sie ein Sampling der Anzahl von Systemaufrufen (syscalls) aus, um die Ursache für die langen Ausführungszeiten im Kernelmodus zu ermitteln.  
   
-## <a name="rule-description"></a>Regelbeschreibung  
+## <a name="rule-description"></a>Beschreibung der Regel  
  Die relativ lange Zeit, die sich die Anwendung im Kernelmodus befand, rechtfertigt möglicherweise eine nähere Untersuchung. Von einer Anwendung im Benutzermodus wird in den Kernelmodus gewechselt, sodass E/A-Vorgänge ausgeführt werden, auf Thread- oder Prozesssynchronisierungsprimitive gewartet wird oder Systemaufrufe ausgeführt werden. Sie können die Arten der von der Anwendung ausgeführten Systemaufrufe sowie die verantwortlichen Funktionen untersuchen, indem Sie die Option zum Sammeln von Beispielaufruflisten auf der Grundlage von Systemaufrufen aktivieren.  
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  

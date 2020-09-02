@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192872"
 ---
 # <a name="item-metadata-in-target-batching"></a>Elementmetadaten bei der Batchverarbeitung von Zielen
@@ -68,8 +68,8 @@ ms.locfileid: "68192872"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)   
- [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Gewusst wie: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)   
+ [Batch Verarbeitung](../msbuild/msbuild-batching.md)   
  [Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)   
- [Elementmetadaten bei der Batchverarbeitung von Aufgaben](../msbuild/item-metadata-in-task-batching.md)
+ [Element Metadaten in der Batch Verarbeitung von Aufgaben](../msbuild/item-metadata-in-task-batching.md)

@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53703d6178c81758650fdd00aada0a5952734caa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160488"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt an, ob die Web-Elementvorlage für mehrere Programmiersprachen identisch ist, und ob die **Sprache** Option aktiviert ist, auf die **neues Element hinzufügen** Dialogfeld.  
+Gibt an, ob die Webelement Vorlage für mehrere Sprachen identisch ist und ob die **sprach** Option im Dialogfeld **Neues Element hinzufügen** aktiviert ist.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -53,17 +53,17 @@ Gibt an, ob die Web-Elementvorlage für mehrere Programmiersprachen identisch is
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob die **Sprache** Option ist verfügbar der **neues Element hinzufügen** Dialogfeld.  
+ Der Text muss entweder `true` oder lauten `false` und gibt an, ob die **sprach** Option im Dialogfeld **Neues Element hinzufügen** verfügbar ist.  
   
-## <a name="remarks"></a>Hinweise  
- `SupportsLanguageDropDown` ist ein optionales Element. Der Standardwert ist `false`.  
+## <a name="remarks"></a>Bemerkungen  
+ `SupportsLanguageDropDown` ist ein optionales Element. Standardwert: `false`.  
   
- Die `SupportsLanguageDropDown` -Element ist nur verfügbar für Web-Elementvorlagen.  
+ Das- `SupportsLanguageDropDown` Element ist nur für Webelement Vorlagen verfügbar.  
   
- Wenn der Wert für dieses Element, um festgelegt ist `true`, und klicken Sie dann die Item-Vorlage für alle Programmiersprachen identisch ist und die **Sprache** aktiviert ist die **neues Element hinzufügen** im Dialogfeld. Diese Option können Sie die Programmiersprache des neuen Elements an, die Sie aus der Vorlage erstellen möchten.  
+ Wenn der Wert für dieses Element auf festgelegt ist `true` , ist die Element Vorlage für alle Programmiersprachen identisch, und die **sprach** Option ist im Dialogfeld **Neues Element hinzufügen** aktiviert. Mit dieser Option können Sie die Programmiersprache des neuen Elements auswählen, das Sie aus der Vorlage erstellen möchten.  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird zum Anzeigen der **Sprache** Dropdown-Option.  
+ Im folgenden Beispiel wird angegeben, dass die Dropdown Option **Sprache** angezeigt werden soll.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -87,6 +87,6 @@ Gibt an, ob die Web-Elementvorlage für mehrere Programmiersprachen identisch is
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

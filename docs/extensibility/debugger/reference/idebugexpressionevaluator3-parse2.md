@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
+title: IDebugExpressionEvaluator3::P arse2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729125"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Konvertiert eine Ausdruckszeichenfolge in einen analysierten Ausdruck, der den Symbolanbieter und die Adresse des auswertenden Frames angibt.
+Konvertiert eine Ausdrucks Zeichenfolge in einen analysierten Ausdruck, wenn der Symbol Anbieter und die Adresse des Auswertungs Rahmens angegeben sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,37 +53,37 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>Parameter
 `upstrExpression`\
-[in] Die zu analysierende Ausdruckszeichenfolge.
+in Die Ausdrucks Zeichenfolge, die analysiert werden soll.
 
 `dwFlags`\
-[in] Eine Auflistung von [PARSEFLAGS-Konstanten,](../../../extensibility/debugger/reference/parseflags.md) die bestimmen, wie der Ausdruck analysiert werden soll.
+in Eine Auflistung der [Parameterflags](../../../extensibility/debugger/reference/parseflags.md) -Konstanten, die bestimmen, wie der Ausdruck analysiert werden soll.
 
 `nRadix`\
-[in] Radix zur Interpretation numerischer Informationen.
+in Radix, das zum Interpretieren numerischer Informationen verwendet werden soll.
 
 `pSymbolProvider`\
-[in] Schnittstelle des Symbolanbieters.
+in Schnittstelle des Symbol Anbieters.
 
 `pAddress`\
-[in] Adresse des Auswerterahmens.
+in Adresse des Auswertungs Rahmens.
 
 `pbstrError`\
-[out] Gibt den Fehler als lesbaren Text zurück.
+vorgenommen Gibt den Fehler als menschenlesbaren Text zurück.
 
 `pichError`\
-[out] Gibt die Zeichenposition des Anfangs des Fehlers in der Ausdruckszeichenfolge zurück.
+vorgenommen Gibt die Zeichenposition des Starts des Fehlers in der Ausdrucks Zeichenfolge zurück.
 
 `ppParsedExpression`\
-[out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression-Objekt](../../../extensibility/debugger/reference/idebugparsedexpression.md) zurück.
+vorgenommen Gibt den analysierten Ausdruck in einem [idebugobjesedexpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) -Objekt zurück.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Methode erzeugt einen analysierten Ausdruck und keinen tatsächlichen Wert. Ein analysierter Ausdruck kann ausgewertet werden, d. h. in einen Wert konvertiert werden.
+Diese Methode erzeugt einen analysierten Ausdruck, kein tatsächlicher Wert. Ein analysierte Ausdruck ist für die Auswertung bereit, d. h. in einen-Wert konvertiert.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CEE-Objekt** implementiert wird, das die [IDebugExpressionEvaluator3-Schnittstelle](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **CEE** -Objekt implementiert wird, das die [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,

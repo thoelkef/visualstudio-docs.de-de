@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 35be5ddeedf0b081fa94e399f294151e73a157ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657729"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
@@ -45,9 +45,9 @@ HINWEIS]
 
   Klicken Sie zum Anzeigen der **Fehlerliste** auf **Anzeigen/Fehlerliste** oder drücken Sie **STRG+\\+E**.
 
-  Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler** **Warnungen** und **Nachrichten** wählen.
+  Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler****Warnungen** und **Nachrichten** wählen.
 
-  Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Um erneut nach einer zusätzlichen Spalte zu sortieren, halten Sie die UMSCHALTTASTE gedrückt, und klicken Sie auf eine andere Spaltenüberschrift. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Um die Reihenfolge zu ändern, in der Spalten angezeigt werden, ziehen Sie eine beliebige Spaltenüberschrift nach links oder rechts.
+  Zum Sortieren der Liste klicken Sie auf einen beliebigen Spaltenheader. Um erneut nach einer zusätzlichen Spalte zu sortieren, halten Sie die UMSCHALTTASTE gedrückt, und klicken Sie auf eine andere Spaltenüberschrift. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Zum Ändern der Reihenfolge, in der Spalten angezeigt werden, ziehen Sie einen beliebigen Spaltenheader nach links oder rechts.
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Klicken Sie zum Ändern der Einstellungen auf **Extras / Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -70,14 +70,14 @@ HINWEIS]
 
    Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Build (beim Buildvorgang aufgetretene Fehler) oder aus IntelliSense (vor dem Build erkannte Fehler), oder beide angezeigt werden sollen.
 
-## <a name="search"></a>Suche
+## <a name="search"></a>Suchen
  Verwenden Sie für die Suche nach bestimmten Fehlern in der Fehlerliste das Textfeld **Fehlerliste durchsuchen** auf der rechten Seite der Symbolleiste **Fehlerliste**. Sie können in jeder sichtbaren Spalte in der Fehlerliste suchen, und die Suchergebnisse werden immer basierend auf der Spalte sortiert, die Sortierpriorität hat, und nicht basierend auf der angewendeten Abfrage oder dem angewendeten Filter. Wenn Sie die **ESC**-TASTE drücken, während sich der Fokus in der **Fehlerliste** befindet, können Sie den Suchbegriff und die gefilterten Suchergebnisse löschen. Sie können auch auf das Symbol **X** auf der rechten Seite des Textfelds klicken, um dieses zu löschen.
 
-## <a name="save"></a>Save
+## <a name="save"></a>Speichern
  Sie können die Fehlerliste kopieren und in einer Datei speichern. Wählen Sie die Fehler aus, die Sie kopieren möchten, klicken Sie mit der rechten Maustaste auf die Auswahl, und wählen Sie anschließend im Kontextmenü **Kopieren** aus. Sie können die Fehler dann in eine Datei einfügen. Wenn Sie die Fehler in ein Excel-Arbeitsblatt einfügen, werden die Felder als unterschiedliche Spalten angezeigt.
 
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche
- Schweregrad zeigt die verschiedenen Typen von **Fehlerliste** Eintrag an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)** , **Warnung (inaktiv)** .
+ Schweregrad zeigt die verschiedenen Typen von **Fehlerliste** Eintrag an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)**, **Warnung (inaktiv)**.
 
  Code zeigt den Fehlercode an.
 

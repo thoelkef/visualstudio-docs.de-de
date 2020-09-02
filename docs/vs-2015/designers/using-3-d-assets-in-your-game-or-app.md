@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f290c68933a71f40899ce454eb6ba788ef31a56f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846503"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
@@ -31,7 +31,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
  Nachdem Sie 3D-Ressourcen mit den Tools von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt haben, besteht der nächste Schritt darin, sie in Ihrer App zu verwenden. Bevor Sie sie jedoch verwenden können, müssen sie in ein Format umgewandelt werden, dass von DirectX unterstützt wird. Um Sie bei der Umwandlung Ihrer Ressourcen zu unterstützen, stellt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Buildanpassungen für jede Art von Ressource bereit, die es erzeugen kann. Um die Ressourcen in Ihrem Build zu integrieren, müssen Sie einfach nur Ihr Projekt für die Verwendung der Buildanpassungen konfigurieren, die Ressourcen dem Projekt hinzufügen und die Ressourcen so konfigurieren, dass die richtige Buildanpassung verwendet wird. Danach können Sie die Ressourcen in die App laden und sie verwenden. Dazu erstellen und füllen Sie DirectX-Ressourcen so, wie Sie es in jeder anderen DirectX-App tun würden.
 
 ## <a name="configuring-your-project"></a>Konfigurieren des Projekts
- Bevor Sie die 3D-Ressourcen als Teil des Builds bereitstellen können, muss [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitgeteilt werden, welche Arten von Ressourcen Sie bereitstellen möchten. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kennt bereits viele gängige Dateitypen. Da aber nur bestimmte Arten von apps 3D-Assets verwenden, geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht davon aus, dass ein Projekt diese Arten von Dateien erstellt. Sie können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitteilen, dass die App diese Arten von Ressourcen verwendet, indem Sie die *Buildanpassungen* nutzen, die für jeden Ressourcentyp bereitgestellt werden. Buildanpassungen sind Dateien, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] darüber informieren, wie die verschiedenen Dateitypen sinnvoll verarbeitet werden. Da diese Anpassungen projektweise angewendet werden, müssen Sie einfach nur die entsprechenden Anpassungen dem Projekt hinzufügen.
+ Bevor Sie die 3D-Ressourcen als Teil des Builds bereitstellen können, muss [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitgeteilt werden, welche Arten von Ressourcen Sie bereitstellen möchten. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kennt bereits viele gängige Dateitypen, aber weil nur bestimmte Arten von apps 3D-Objekte verwenden, geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht davon aus, dass ein Projekt diese Arten von Dateien erstellt. Sie können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mitteilen, dass die App diese Arten von Ressourcen verwendet, indem Sie die *Buildanpassungen* nutzen, die für jeden Ressourcentyp bereitgestellt werden. Buildanpassungen sind Dateien, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] darüber informieren, wie die verschiedenen Dateitypen sinnvoll verarbeitet werden. Da diese Anpassungen projektweise angewendet werden, müssen Sie einfach nur die entsprechenden Anpassungen dem Projekt hinzufügen.
 
 #### <a name="to-add-the-build-customizations-to-your-project"></a>So fügen Sie die Buildanpassungen dem Projekt hinzu
 
@@ -59,7 +59,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 3. Wählen Sie unter **Konfigurationseigenschaften** die Option **Allgemein** aus. Legen Sie dann im Eigenschaftenraster unter **Allgemein** die Eigenschaft **Elementtyp** auf den entsprechenden Inhaltspipeline-Elementtyp fest. Wählen Sie z.B. für eine Bild- oder Texturdatei **Pipeline für Bildinhalte** aus.
 
    > [!IMPORTANT]
-   > Standardmäßig geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] davon aus, dass viele unterschiedliche Bilddateitypen anhand des Elementtyps **Bild** kategorisiert werden sollen, der in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integriert ist. Deshalb müssen Sie die Eigenschaft **Elementtyp** jedes Bilds ändern, das durch die Bildinhaltspipeline verarbeitet werden soll. Für andere Typen von Inhaltspipeline-Quelldateien für 3D-Modelle und visuelle Shadergrafiken wird standardmäßig der richtige **Elementtyp** vorgeschlagen.
+   > Standardmäßig geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] davon aus, dass viele unterschiedliche Bilddateitypen anhand des Elementtyps **Bild** kategorisiert werden sollen, der in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integriert ist. Deshalb müssen Sie die Eigenschaft **Elementtyp** jedes Bilds ändern, das durch die Bildinhaltspipeline verarbeitet werden soll. Für andere Typen von Inhalts Pipeline-Quelldateien für 3D-Modelle und visuelle shadergrafiken wird standardmäßig der richtige **Elementtyp**angezeigt.
 
 4. Klicken Sie auf die Schaltfläche **OK** .
 
@@ -67,7 +67,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 
 |Elementtyp|Typen der Quelldatei|Format der Ausgabedatei|
 |---------------|-----------------------|------------------------|
-|**Bildinhaltspipeline**|Portable Network Graphics (PNG)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Graphics Interchange Format (GIF)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
+|**Bildinhaltspipeline**|Portable Network Graphics (.png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Graphics Interchange Format (.gif)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
 |**Meshinhaltspipeline**|AutoDesk-FBX-Austauschdatei (.fbx)<br /><br /> Collada DAE-Datei (.dae)<br /><br /> Wavefront-OBJ-Datei (.obj)|3D-Mesh-Datei (.cmo)|
 |**Shaderinhaltspipeline**|Visual Shader-Diagramm (.dgsl)|Compiled Shader Output (.cso)|
 
@@ -87,37 +87,37 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 ### <a name="image-content-pipeline-configuration"></a>Konfiguration der Bildinhaltspipeline
  Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines verwenden, können Sie die Textur auf verschiedene Arten komprimieren. Und Sie können angeben, ob MIP-Ebenen zum Zeitpunkt der Erstellung generiert werden sollen, und den Namen der Ausgabedatei angeben.
 
-|Die Eigenschaften-|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Die folgenden Optionen sind verfügbar:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](https://msdn.microsoft.com/library/windows/desktop/bb219822(v=vs.85).aspx).|
 |Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja**, um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
 |**MIPS generieren**|**Ja**, um eine vollständige MIP-Kette zum Zeitpunkt der Erstellung zu generieren und in die Ausgabedatei einzuschließen; andernfalls **Nein**. Falls Sie **Nein** auswählen und die Quelldatei bereits eine Mipmap-Kette enthält, verfügt die Ausgabedatei über eine MIP-Kette; andernfalls hat die Ausgabedatei keine MIP-Kette.|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguration der Mesh-Inhaltspipeline
  Wenn Sie das Tool für Mesh-Inhaltspipelines verwenden, um eine Meshressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Die Eigenschaften-|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Konfiguration der Shader-Inhaltspipeline
  Wenn Sie das Tool für Shader-Inhaltspipelines verwenden, um eine Shader-Ressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Die Eigenschaften-|Beschreibung|
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Laden und Verwenden von 3D-Ressourcen zur Laufzeit
 
 ### <a name="using-textures-and-images"></a>Verwenden von Texturen und Bildern
- Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](https://msdn.microsoft.com/library/windows/desktop/ff476902(v=vs.85).aspx). Weitere Informationen darüber, wie Sie die Bibliothek D3DX11 verwenden, um eine Texturressource oder Ressourcenansicht aus einer Bilddatei zu erstellen, finden Sie unter [Vorgehensweise: Initialisieren einer Textur aus einer Datei](https://msdn.microsoft.com/library/windows/desktop/ff476904(v=vs.85).aspx).
+ Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](https://msdn.microsoft.com/library/windows/desktop/ff476902(v=vs.85).aspx). Weitere Informationen zur Verwendung der Bibliothek d3dx11-Bibliothek zum Erstellen einer Textur Ressource oder Ressourcen Ansicht aus einer Bilddatei finden Sie unter Gewusst [wie: Initialisieren einer Textur aus einer Datei](https://msdn.microsoft.com/library/windows/desktop/ff476904(v=vs.85).aspx).
 
 ### <a name="using-3-d-models"></a>Verwenden von 3D-Modellen
  Direct3D 11 bietet keine Funktionen für das Erstellen von Ressourcen von 3D-Modellen. Stattdessen müssen Sie Code schreiben, der die 3D-Modelldatei liest sowie Vertex- und Indexpuffer erstellt, die das 3D-Modell und alle Ressourcen darstellen, die das Modell benötigt, z. B. Texturen oder Shader.
 
 ### <a name="using-shaders"></a>Verwenden von Shadern
- Direct3D stellt Funktionen zum Erstellen von Shaderressourcen und deren Anbindung an die programmierbare Grafikpipeline bereit. Weitere Informationen über die Erstellung einer Shaderressource in Direct3D und ihre Anbindung an die Pipeline finden Sie unter [Programmierhandbuch für HLSL](https://msdn.microsoft.com/library/windows/desktop/bb509635(v=vs.85).aspx).
+ Direct3D stellt Funktionen zum Erstellen von Shaderressourcen und deren Anbindung an die programmierbare Grafikpipeline bereit. Weitere Informationen zum Erstellen einer Shaderressource in Direct3D und zum Binden an die Pipeline finden Sie unter [Programmier Handbuch für HLSL](https://msdn.microsoft.com/library/windows/desktop/bb509635(v=vs.85).aspx).
 
  In der programmierbaren Grafikpipeline muss jede Phase der Pipeline der nächsten Phase der Pipeline ein Ergebnis übergeben, das so formatiert ist, das es verstanden wird. Da der Shader-Designer nur Pixel-Shader erstellen kann, bedeutet dies, dass Ihre App sicherstellen muss, dass die Daten, die sie erhält, im erwarteten Format vorliegen. Einige programmierbare Shader-Phasen treten vor dem Pixel-Shader auf und führen geometrische Umwandlungen durch – darunter Vertex-Shader, Hull-Shader, Domain-Shader und Geometrie-Shader. Die nicht programmierbare Mosaikphase tritt ebenfalls vor dem Pixel-Shader auf. Unabhängig davon, welche dieser Phasen direkt vor dem Pixel-Shader stattfindet, muss sie ihr Ergebnis in diesem Format übergeben:
 
@@ -200,10 +200,10 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Title|Beschreibung|
+|Titel|Beschreibung|
 |-----------|-----------------|
-|[Gewusst wie: Erstellen einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
+|[Gewusst wie: Exportieren einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
 |[Gewusst wie: Erstellen einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|
 |[Gewusst wie: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die in einer Direct2D- oder einer JavaScript-App verwendet werden kann.|
-|[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Die Bearbeitungstools, die Visual Studio zum Erstellen und Bearbeiten von 3D-Ressourcen bereitstellt, inklusive Texturen und Bilder, 3D Modelle sowie Shader werden beschrieben.|
+|[Arbeiten mit 3D-Assets für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Die Bearbeitungstools, die Visual Studio zum Erstellen und Bearbeiten von 3D-Ressourcen bereitstellt, inklusive Texturen und Bilder, 3D Modelle sowie Shader werden beschrieben.|
 |[Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)|Das Exportieren eines Shaders vom Shader-Designer wird beschrieben.|

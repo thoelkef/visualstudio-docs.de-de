@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren (Visual c#) | Microsoft-Dokumentation
+title: Bearbeiten und Fortfahren (Visual C#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151429"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C#)
@@ -31,7 +31,7 @@ ms.locfileid: "68151429"
 
 Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen. Im Ausführmodus ist der Quellcode-Editor schreibgeschützt.  
   
- Die Funktion "Bearbeiten und Fortfahren" unterstützt bis auf einige Ausnahmen die meisten Änderungen, die Sie möglicherweise während einer Debugsitzung vornehmen möchten. Weitere Informationen finden Sie unter [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md).  
+ Die Funktion "Bearbeiten und Fortfahren" unterstützt bis auf einige Ausnahmen die meisten Änderungen, die Sie möglicherweise während einer Debugsitzung vornehmen möchten. Weitere Informationen finden Sie [unter Unterstützte Code Änderungen (c#)](../debugger/supported-code-changes-csharp.md).  
   
  Die Funktion "Bearbeiten und Fortfahren" wird für 64-Bit-Projekte unterstützt, die auf .NET Framework 4.5.1 abzielen.  
   
@@ -39,6 +39,6 @@ Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen 
   
  Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
- [Unterstützte Codeänderungen (C#)](../debugger/supported-code-changes-csharp.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Verwenden von "Bearbeiten und Fortfahren" (c#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Unterstützte Code Änderungen (c#)](../debugger/supported-code-changes-csharp.md)

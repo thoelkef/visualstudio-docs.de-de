@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6e4aef02a2bb320112d7d268da28cf66b1ec6751
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657449"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Gewusst wie: Erstellen eines benutzerdefinierten Regelsatzes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsPro](../includes/vspro-md.md)] können Sie einen benutzerdefinierten *Regelsatz* erstellen und ändern, um bestimmte Projektanforderungen zu erfüllen, die mit der Code Analyse verknüpft sind. Zum Erstellen eines benutzerdefinierten Regelsatzes öffnen Sie einen oder mehrere Standardregelsätze im Regelsatz-Editor. Anschließend können Sie bestimmte Regeln hinzufügen oder entfernen sowie Sie die Aktion ändern, die ausgeführt wird, wenn von der Codeanalyse ein Verstoß gegen eine Regel festgestellt wurde.
+In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] , [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsPro](../includes/vspro-md.md)] können Sie einen benutzerdefinierten *Regelsatz* erstellen und ändern, um bestimmte Projektanforderungen zu erfüllen, die mit der Code Analyse verknüpft sind. Zum Erstellen eines benutzerdefinierten Regelsatzes öffnen Sie einen oder mehrere Standardregelsätze im Regelsatz-Editor. Anschließend können Sie bestimmte Regeln hinzufügen oder entfernen sowie Sie die Aktion ändern, die ausgeführt wird, wenn von der Codeanalyse ein Verstoß gegen eine Regel festgestellt wurde.
 
  Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen unter einem neuen Dateinamen. Der benutzerdefinierte Regelsatz wird dem Projekt automatisch zugewiesen.
 
@@ -49,7 +49,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] [!INCLUDE[vsPreShort](..
 
      \- oder -
 
-   - **@No__t_1Browse auswählen... >** , um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
+   - Wählen Sie **\<Browse...>** diese Option, um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
 
 4. Klicken Sie auf **Öffnen** , um die Regeln im Regelsatz-Editor anzuzeigen.
 
@@ -59,7 +59,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] [!INCLUDE[vsPreShort](..
 
 2. Klicken Sie auf der Registerkarte **Eigenschaften** auf **Code Analyse**.
 
-3. Wählen Sie **\<Choose mehrere Regelsätze aus... >** aus **diesen Regelsatz ausführen**.
+3. Wählen Sie **\<Choose multiple rule sets...>** aus **diesen Regelsatz ausführen**aus.
 
 4. Wählen Sie im Dialogfeld **Regelsätze hinzufügen oder entfernen** die Regelsätze aus, auf denen Sie den neuen Regelsatz aufbauen möchten, und klicken Sie dann auf **OK**.
 
@@ -97,7 +97,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] [!INCLUDE[vsPreShort](..
 
 - Klicken Sie auf **alle**reduzieren, um die Regeln in allen Gruppen zu reduzieren.
 
-- Wenn Sie das Feld ändern möchten, nach dem Regeln gruppiert werden, wählen Sie das Feld aus der Liste **Gruppieren nach** aus. Wählen Sie **\<None >** aus, um die Regeln nicht gruppiert anzuzeigen.
+- Wenn Sie das Feld ändern möchten, nach dem Regeln gruppiert werden, wählen Sie das Feld aus der Liste **Gruppieren nach** aus. Wählen Sie aus, um die Regeln nicht gruppiert anzuzeigen **\<None>** .
 
 - Zum Hinzufügen oder Entfernen von Feldern in Regel Spalten klicken Sie auf **Spaltenoptionen**.
 
@@ -111,5 +111,5 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] [!INCLUDE[vsPreShort](..
 
 - Um dem aktuellen Regelsatz Microsoft-Standardregel Sätze hinzuzufügen oder daraus zu entfernen, klicken Sie auf untergeordnete **Regelsätze hinzufügen oder entfernen**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Konfigurieren der Code Analyse für einen](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [Code Analyse-Regelsatz Verweis](../code-quality/code-analysis-rule-set-reference.md) für ein verwaltetes Code Projekt

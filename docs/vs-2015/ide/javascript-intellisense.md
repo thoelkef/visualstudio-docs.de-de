@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848383"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -54,7 +54,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
 - [Verarbeiten von IntelliSense-Informationen](#ProcessingIntelliSenseInformation)
 
-- [JavaScript-IntelliSense-Funktionen](#Features)
+- [IntelliSense-Features von JavaScript](#Features)
 
 - [JavaScript-IntelliSense-Erweiterbarkeit](#Extensibility)
 
@@ -62,7 +62,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
   Weitere Informationen zur IntelliSense-Funktionalität von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).
 
-## <a name="DeterminingIntelliSenseContext"></a> Bestimmen des IntelliSense-Kontexts
+## <a name="determining-intellisense-context"></a><a name="DeterminingIntelliSenseContext"></a> Bestimmen des IntelliSense-Kontexts
  JavaScript-IntelliSense bietet die Möglichkeit, Codeelemente auszuwählen, die für den gesamten Skriptcode in Ihrem aktuellen Skriptkontext geeignet sind. Dies beinhaltet nicht nur Skriptelemente in der aktuellen Datei, sondern auch den gesamten Code auf den direkt oder indirekt vom Skript verwiesen wird, also Verweise auf Skriptdateien, Assemblyskripts, Dienste sowie seitenbezogene Verweise.
 
  Der aktuelle Skriptkontext wird auf Grundlage der folgenden Elemente erstellt:
@@ -84,7 +84,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
     > [!NOTE]
     > Skripts in Ereignishandlerattributen für HTML-Elemente oder in `href`-Attributen definierte Skripts werden von IntelliSense nicht unterstützt.
 
-## <a name="ProcessingIntelliSenseInformation"></a> Verarbeiten von IntelliSense-Informationen
+## <a name="processing-intellisense-information"></a><a name="ProcessingIntelliSenseInformation"></a> Verarbeiten von IntelliSense-Informationen
  Um JavaScript-IntelliSense bereitzustellen, führt der Sprachdienst die folgenden Vorgänge aus:
 
 - Erstellen einer Liste abhängiger JavaScript-Dateien, die auf Verweisen im aktiven Dokument sowie auf rekursiven Überprüfungen der Skriptverweise in den Dateien basieren, auf die verwiesen wird.
@@ -95,7 +95,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
 - Überwachen der Dateien auf Änderungen, die sich auf die IntelliSense-Liste auswirken könnten, und Aktualisieren der Liste nach Bedarf. Skripts auf Remotespeichern (z. B. Speicher, auf die mit HTTP verwiesen wird) werden nicht überwacht.
 
-## <a name="Features"></a> JavaScript-IntelliSense-Funktionen
+## <a name="javascript-intellisense-features"></a><a name="Features"></a> JavaScript-IntelliSense-Funktionen
  JavaScript-IntelliSense unterstützt die folgenden Objekte:
 
 - [Elemente des Dokumentobjektmodells (DOM)](#HTMLDom)
@@ -118,21 +118,21 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
   Wenn IntelliSense den Typ eines Objekts nicht bestimmen kann, stellt es Optionen für die Anweisungsvervollständigung mithilfe der Bezeichner im aktiven Dokument bereit. Weitere Informationen finden Sie unter [Anweisungsvervollständigung für Bezeichner](../ide/statement-completion-for-identifiers.md).
 
-### <a name="HTMLDom"></a> HTML-DOM-Elemente
+### <a name="html-dom-elements"></a><a name="HTMLDom"></a> HTML-DOM-Elemente
  JavaScript-IntelliSense umfasst Programmierreferenzen für Dynamic HTML (DHTML)-DOM-Elemente, z. B. `body`, `form` und `div`. Nur die Elemente, die im aktuellen Dokument enthalten sind, und die Masterseite werden von IntelliSense angezeigt. JavaScript-IntelliSense unterstützt außerdem das `window`-Objekt und das `document`-Objekt sowie zugehörige Member.
 
-### <a name="IntrinsicObjects"></a> Systeminterne Objekte
+### <a name="intrinsic-objects"></a><a name="IntrinsicObjects"></a> Systeminterne Objekte
  JavaScript-IntelliSense umfasst Programmierreferenzen für systeminterne Objekte wie `Array`, `String`, `Math`, `Date` und `Number`. Weitere Informationen zu systeminternen Objekten finden Sie unter [Integrierte Standardobjekte](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
-### <a name="UserDefined"></a>Benutzerdefinierte Variablen, Funktionen und Objekte
+### <a name="user-defined-variables-functions-and-objects"></a><a name="UserDefined"></a> Benutzerdefinierte Variablen, Funktionen und Objekte
  Wenn Sie eine JavaScript-Datei ändern, werden Dokumente, die geöffnet sind und auf die verwiesen wird, von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] überprüft, um alle verfügbaren Coderessourcen zu ermitteln. Dies schließt auch die von Ihnen erstellten Variablen, Funktionen und Objekte ein. Diese Ressourcen stehen dann für JavaScript-IntelliSense zur Verfügung.
 
  Weitere Informationen zu benutzerdefinierten Variablen, Funktionen und Objekten finden Sie unter [Erstellen von Objekten](https://msdn.microsoft.com/library/202863ha.aspx) auf der MSDN-Website.
 
-### <a name="External"></a> Externe Dateiverweise
+### <a name="external-file-references"></a><a name="External"></a> Externe Dateiverweise
  Sie können verschiedene externe Dateiverweise einschließen, um IntelliSense-Unterstützung im Code zu erreichen. Externe Dateiverweise können Skriptverweise oder Reference-Anweisungen sein oder sie können mit Verweisgruppen angegeben werden.
 
-#### <a name="Script"></a> Skriptverweise
+#### <a name="script-references"></a><a name="Script"></a> Skriptverweise
  Anstatt das gesamte Clientskript auf einer Seite zu schreiben, können Sie auf externe Dateien verweisen, die Skriptcode enthalten. Auf diese Weise können Sie Code einfach seitenübergreifend wiederverwenden, und das Clientskript kann vom Browser zwischengespeichert werden.
 
  Wenn Sie keine ASP.NET-AJAX-fähige Webseite verwenden, können Sie mit dem `src`-Attribut im Starttag eines `script`-Elements auf externe Skriptdateien verweisen. Das `src`-Attribut gibt die URL zu einer externen Datei an, die den Quellcode oder die Daten enthält.
@@ -159,7 +159,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
  IntelliSense bietet zusätzlich Unterstützung für Skriptdateien, die als Ressourcen in einer Assembly in ASP.NET-AJAX-Webanwendungen eingebettet sind. Weitere Informationen zu eingebetteten Skriptressourcen finden Sie unter [Exemplarische Vorgehensweise: Einbetten einer JavaScript-Datei als Ressource in einer Assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
-#### <a name="ReferenceDirectives"></a> Reference-Direktiven
+#### <a name="reference-directives"></a><a name="ReferenceDirectives"></a> Reference-Direktiven
  Mithilfe einer `reference`-Direktive kann [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] eine Beziehung zwischen dem gerade von Ihnen bearbeiteten und anderen Skripts herstellen. Die `reference`-Direktive bietet Ihnen die Möglichkeit, eine Skriptdatei in den Skriptkontext der aktuellen Skriptdatei einzubeziehen. Dadurch kann IntelliSense auf extern definierte Funktionen, Typen und Felder verweisen, während Sie den Code erstellen.
 
  Sie erstellen eine `reference`-Anweisung in Form eines XML-Kommentars. Die Anweisung muss in der Datei vor allen möglichen Skripts deklariert werden. Eine `reference`-Anweisung kann Skriptverweise enthalten, die auf Datenträgern, Assemblys, Diensten oder Seiten basieren.
@@ -219,7 +219,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
 - Reference-Anweisungen in Seiten, auf die verwiesen wird, werden nicht verarbeitet. Dies bedeutet, dass Reference-Anweisungen für Seiten nicht rekursiv aufgelöst werden. Es wird nur Skriptcode berücksichtigt, auf den direkt von der Seite verwiesen wird.
 
-#### <a name="ReferenceGroups"></a> Verweisgruppen
+#### <a name="reference-groups"></a><a name="ReferenceGroups"></a> Verweisgruppen
  Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte IntelliSense-JS-Dateien für verschiedene JavaScript-Projekte verfügbar sind. Die folgenden Verweisgruppentypen sind verfügbar:
 
 - Implizit (Windows) für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps, die JavaScript verwenden. Die Dateien, die in dieser Gruppe enthalten sind, sind für jede JS-Datei verfügbar, die im Code-Editor für das Projekt des angegebenen Typs geöffnet ist.
@@ -246,7 +246,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 > [!WARNING]
 > Wenn Sie diese Funktion aktivieren und einen Rückgang der Leistung im Code-Editor feststellen, wird empfohlen, sie zu deaktivieren.
 
-### <a name="XMLDocComments"></a> XML-Dokumentationskommentare
+### <a name="xml-documentation-comments"></a><a name="XMLDocComments"></a> XML-Dokumentations Kommentare
  XML-Dokumentationskommentare sind Textbeschreibungen von Codeelementen, die Sie dem Skript hinzufügen. Diese Textbeschreibungen werden in IntelliSense angezeigt, wenn Sie auf das kommentierte Skript verweisen. Sie können beispielsweise Informationen zu den Parametern und dem Rückgabewert einer Funktion bereitzustellen. XML-Dokumentationskommentare sind nur in den Dateien, Assemblys und Diensten verfügbar, auf die verwiesen wurde. Weitere Informationen finden Sie unter [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md) und [Erstellen von JavaScript-XML-Dokumentationskommentaren](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
  IntelliSense kann XML-Dokumentationskommentare in den folgenden Szenarien anzeigen:
@@ -259,30 +259,30 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 
   IntelliSense ist nicht verfügbar, wenn eine ASPX-Datei auf eine andere ASPX-Datei verweist.
 
-### <a name="ASPNet"></a> ASP.NET-AJAX-Objekte
+### <a name="aspnet-ajax-objects"></a><a name="ASPNet"></a> ASP.NET AJAX-Objekte
  JavaScript-IntelliSense wird außerdem von ASP.NET AJAX unterstützt. ASP.NET AJAX umfasst ein Clientframework, durch das die in ECMAScript (JavaScript) verfügbaren Standardtypen erweitert werden. Damit JavaScript-IntelliSense Einzelheiten zu ASP.NET AJAX-Objekten bereitstellen kann, müssen XML-Dokumentationskommentare über [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] hinzugefügt werden. Diese XML-Dokumentationskommentare werden angezeigt, wenn Sie Typen und Member aus der ASP.NET AJAX-Bibliothek verwenden.
 
 > [!NOTE]
 > Private Member werden nicht von JavaScript-IntelliSense angezeigt. Private Member werden in ASP.NET-AJAX als Member gekennzeichnet, die mit einem Unterstrich (_) beginnen.
 
-## <a name="Extensibility"></a> JavaScript-IntelliSense-Erweiterbarkeit
+## <a name="javascript-intellisense-extensibility"></a><a name="Extensibility"></a> JavaScript-IntelliSense-Erweiterbarkeit
  Der JavaScript Language Service stellt Objekte und Funktionen bereit, die es Ihnen ermöglichen, die IntelliSense-Erfahrung für diejenigen Entwickler zu verändern, die Bibliotheken von Drittanbietern verwenden. Diese Funktionen sind besonders nützlich, wenn der Standardsprachdienst nicht alle Informationen liefern kann, die Sie für Kunden bereitstellen möchten. Weitere Informationen finden Sie unter [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).
 
-## <a name="Validation"></a> JavaScript-Validierung
+## <a name="javascript-validation"></a><a name="Validation"></a> JavaScript-Überprüfung
  Die JavaScript-Skriptvalidierung wird ständig im Hintergrund ausgeführt. Wenn [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Syntaxfehler im JavaScript-Code erkennt, wird wie folgt Feedback bereitgestellt:
 
 - Unterstrichene Elemente im Editor. Wellenförmige rote Unterstreichungen weisen auf Fehler hin. Wenn Sie den Mauszeiger über den Fehler bewegen, wird die Fehlerbeschreibung in einer QuickInfo angezeigt.
 
-- **Fehlerliste** (Fenster). Im Fenster **Fehlerliste** werden die Fehlerbeschreibung, die Datei, in der der Fehler aufgetreten ist, Zeilen- und Spaltennummer und das Projekt angezeigt. Klicken Sie im Menü **Ansicht** auf die Option **Fehlerliste**, um das Fenster **Fehlerliste** anzuzeigen.
+- **Fehlerliste** Fenster. Im Fenster **Fehlerliste** werden die Fehlerbeschreibung, die Datei, in der der Fehler aufgetreten ist, Zeilen- und Spaltennummer und das Projekt angezeigt. Klicken Sie im Menü **Ansicht** auf die Option **Fehlerliste**, um das Fenster **Fehlerliste** anzuzeigen.
 
 - Das Ausgabefenster zeigt Verweise an, die nicht geladen wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Verwenden von IntelliSense](../ide/using-intellisense.md)
 - [Erstellen von XML-Dokumentationskommentaren](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [Anweisungsvervollständigung für Bezeichner](../ide/statement-completion-for-identifiers.md)
 - [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)
 - [Über dieses DHTML-Objektmodell](https://msdn2.microsoft.com/library/ms533022.aspx)
-- [Member auflisten](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [List Members](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [SRC-Attribut | src-Eigenschaft](https://msdn2.microsoft.com/library/ms534642.aspx)

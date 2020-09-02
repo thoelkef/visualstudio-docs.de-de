@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS | Microsoft Docs
+title: MACHINE_INFO_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 89a2552bb6a8bea88f54a897b829ab89b30ff413
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714528"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
@@ -46,29 +46,29 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Felder
  `MCIF_NAME`\
- Initialisieren/verwenden `bstrName` Sie das Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `bstrName` Feld in der-Struktur.
 
  `MCIF_FLAGS`\
- Initialisieren/verwenden `Flags` Sie das Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `Flags` Feld in der-Struktur.
 
  `MIF_ALL`\
- Initialisieren/Verwenden aller Felder in der Struktur.
+ Initialisieren/verwenden Sie alle Felder in der Struktur.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Werte werden an die [GetMachineInfo-Methode](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) übergeben, um anzugeben, welche Member der [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) Struktur initialisiert werden sollen.
+ Diese Werte werden an die [getmachineingefo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) -Methode übermittelt, um anzugeben, welche Member der [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) Struktur initialisiert werden sollen.
 
- Wird auch `Fields` im Element `MACHINE_INFO` der Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
+ Wird auch im- `Fields` Member der `MACHINE_INFO` -Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
 
- Diese Flags können mit einem `OR`bitwise kombiniert werden.
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

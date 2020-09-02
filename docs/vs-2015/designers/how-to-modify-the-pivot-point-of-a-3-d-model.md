@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: baeae2af825edc6a0032445288de7311b1ab1ae1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664403"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Gewusst wie: Ändern des Pivotpunkts eines 3D-Modells
@@ -32,7 +32,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Ändern des *Pivotpun
 
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>So ändern Sie den Pivotpunkt eines 3D-Modells
 
-1. Beginnen Sie mit einer vorhandenen 3D-Modell, z.B. das Modell, das unter [Vorgehensweise: Erstellen eines 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md) beschrieben wird.
+1. Beginnen Sie mit einem vorhandenen 3D-Modell, z. b. dem, das in Gewusst [wie: Erstellen eines 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md)beschrieben wird.
 
 2. Gehen Sie in den Pivot-Modus. Klicken Sie zum Aktivieren des Pivot-Modus auf der Symbolleiste **Model-Editor-Modus** auf **Pivot-Modus**. Es erscheint ein Feld um die Schaltfläche **Pivot-Modus**, der angibt, dass der Modell-Editor sich nun im Pivot-Modus befindet. Vorgänge wie die Verschiebung beeinflussen im Pivot-Modus den Pivotpunkt des Objektes anstatt der Struktur des Objektes im Raum.
 
@@ -47,7 +47,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Ändern des *Pivotpun
 
    Hier finden Sie ein Modell, dass einen geänderten Pivotpunkt hat:
 
-   ![Ein Modell eines Hauses mit einem geänderten Pivotpunkt](../designers/media/digit-modified-model.png "Digit-modified-Model")
+   ![Modell eines Hauses mit einem geänderten Pivotpunkt](../designers/media/digit-modified-model.png "Digit-modified-Model")
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Erstellen eines einfachen 3D-Modell Modell-](../designers/how-to-create-a-basic-3-d-model.md) [Editors](../designers/model-editor.md)

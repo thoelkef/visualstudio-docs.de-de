@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903425"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projekt Systems, Teil 1
@@ -103,7 +103,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quell Code Da
    > [!IMPORTANT]
    > Dies ist nicht die endgültige Form des *Program.cs* -Codes. die Ersetzungs Parameter werden in einem späteren Schritt behandelt. Möglicherweise werden Kompilierungsfehler angezeigt, aber solange die **BuildAction** -Datei der Datei **Inhalt**ist, sollten Sie in der Lage sein, das Projekt wie gewohnt zu erstellen und auszuführen.
 
-7. Speichern Sie die Datei .
+7. Speichern Sie die Datei.
 
 8. Kopieren Sie die Datei *AssemblyInfo.cs* aus dem Ordner *Properties* in den Ordner *project\simpleproject* .
 
@@ -152,7 +152,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quell Code Da
     </Project>
     ```
 
-11. Speichern Sie die Datei .
+11. Speichern Sie die Datei.
 
 12. Legen Sie im Fenster **Eigenschaften** die **Buildaktion** von *AssemblyInfo.cs*, *Program.cs*, *simpleproject. ico*und *simpleproject. MyProj* auf **Content**fest, und legen Sie Ihre include-Eigenschaft **in VSIX** -Eigenschaften auf **true**fest.
 
@@ -520,7 +520,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  Während der instanzerbau `ProjectNode` lädt die-Basisklasse *Resources.imagelis.bmp*, in dem häufig eingebettete 16 x 16-Bitmaps von *Resources\imagelis.bmp*verwendet werden. Diese Bitmap-Liste wird als zur Verfügung gestellt `SimpleProjectNode` `ImageHandler.ImageList` . `SimpleProjectNode`Fügt die Bitmap des Projekt Knotens an die Liste an. Der Offset der Bitmap für das Projekt Knoten in der Bildliste wird für die spätere Verwendung als Wert der Public- `ImageIndex` Eigenschaft zwischengespeichert. Visual Studio verwendet diese Eigenschaft, um zu bestimmen, welche Bitmap als Projekt Knoten Symbol angezeigt werden soll.
+  Während der instanzerbau `ProjectNode` lädt die-Basisklasse *Resources.imagelis.bmp*, in dem häufig eingebettete 16 x 16-Bitmaps von *Resources\imagelis.bmp*verwendet werden. Diese Bitmap-Liste wird als zur Verfügung gestellt `SimpleProjectNode` `ImageHandler.ImageList` . `SimpleProjectNode` Fügt die Bitmap des Projekt Knotens an die Liste an. Der Offset der Bitmap für das Projekt Knoten in der Bildliste wird für die spätere Verwendung als Wert der Public- `ImageIndex` Eigenschaft zwischengespeichert. Visual Studio verwendet diese Eigenschaft, um zu bestimmen, welche Bitmap als Projekt Knoten Symbol angezeigt werden soll.
 
 ## <a name="test-the-custom-project-node-icon"></a>Testen des Symbol für den benutzerdefinierten Projekt Knoten
  Testen Sie Ihre projektfactory, um zu sehen, ob Sie eine Projekt Hierarchie mit dem Symbol des benutzerdefinierten Projekt Knotens erstellt.
@@ -601,9 +601,9 @@ Templates
 
 3. Überprüfen Sie die Werte für die `nameSpace` `className` Parameter und.
 
-   - `nameSpace`erhält den Wert des- \<RootNamespace> Elements in der Projektvorlagen Datei " *\templates\project\simpleproject\simpleproject.MyProj* ". In diesem Fall handelt es sich um den Wert `MyRootNamespace`.
+   - `nameSpace` erhält den Wert des- \<RootNamespace> Elements in der Projektvorlagen Datei " *\templates\project\simpleproject\simpleproject.MyProj* ". In diesem Fall handelt es sich um den Wert `MyRootNamespace`.
 
-   - `className`erhält den Wert des Klassen Quell Dateinamens ohne die Dateinamenerweiterung. In diesem Fall ist die erste Datei, die in den Zielordner kopiert werden soll, *AssemblyInfo.cs*; Daher ist der Wert von ClassName `AssemblyInfo` .
+   - `className` erhält den Wert des Klassen Quell Dateinamens ohne die Dateinamenerweiterung. In diesem Fall ist die erste Datei, die in den Zielordner kopiert werden soll, *AssemblyInfo.cs*; Daher ist der Wert von ClassName `AssemblyInfo` .
 
 4. Entfernen Sie den Breakpoint und drücken Sie **F5** , um die Ausführung fortzusetzen.
 
@@ -636,4 +636,4 @@ Templates
 
     ![Befehl Einfaches Projekt](../extensibility/media/simpleprojcommand.png "Simpleprojcommand")
 
-   Herzlichen Glückwunsch! Sie haben ein grundlegendes verwaltetes Projekt System implementiert.
+   Glückwunsch! Sie haben ein grundlegendes verwaltetes Projekt System implementiert.

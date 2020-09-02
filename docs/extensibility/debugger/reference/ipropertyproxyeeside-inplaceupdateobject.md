@@ -1,5 +1,5 @@
 ---
-title: iPropertyProxyeeside::InplaceUpdateObject | Microsoft Docs
+title: 'Ipropertyproxyeeside:: inplaceupdateobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 79167b0f7e8094fabf80bb9b2d83c94ac874aa31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714895"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
@@ -43,20 +43,20 @@ int InPlaceUpdateObject(
 
 ## <a name="parameters"></a>Parameter
 `dataIn`\
-[in] Ein [IEEDataStorage-Objekt,](../../../extensibility/debugger/reference/ieedatastorage.md) das die neuen Daten enthält.
+in Ein [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das die neuen Daten enthält.
 
 `dataOut`\
-[out] Gibt ein `IEEDataStorage` neues Objekt zurück, das die ersetzten Daten enthält.
+vorgenommen Gibt ein neues-Objekt zurück, `IEEDataStorage` das die ersetzten Daten enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode aktualisiert tatsächlich die Daten des Objekts. Die Daten im zurückgegebenen [IEEDataStorage-Objekt](../../../extensibility/debugger/reference/ieedatastorage.md) müssen nicht mit den `IEEDataStorage` Daten im eingehenden Objekt identisch sein, aber das zurückgegebene Objekt muss den aktuellen Wert der Eigenschaft widerspiegeln.
+ Diese Methode aktualisiert tatsächlich die Daten des Objekts. Die Daten im zurückgegebenen [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt müssen nicht mit den Daten im eingehenden Objekt identisch sein `IEEDataStorage` , aber das zurückgegebene Objekt muss den aktuellen Wert der Eigenschaft widerspiegeln.
 
- Das eingehende Datenobjekt wird in der Regel nicht von der EE implementiert. Das von dieser Methode zurückgegebene Objekt wird jedoch immer vom EE `IEEDataStorage` implementiert, wodurch der EE die Schnittstelle auf jeder gewünschten Klasse implementieren kann.
+ Das eingehende Datenobjekt wird in der Regel nicht vom EE implementiert. Allerdings wird das von dieser Methode zurückgegebene-Objekt immer von der EE implementiert, sodass das EE die- `IEEDataStorage` Schnittstelle für jede gewünschte Klasse implementieren kann.
 
- Die [CreateReplacementObject-Methode](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) erstellt ein Datenobjekt basierend auf dem eingehenden Datenobjekt, wirkt sich jedoch nicht auf die ursprünglichen Daten der Eigenschaft aus.
+ Die Methode " [kreatereplacementobject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) " erstellt ein Datenobjekt auf Grundlage des eingehenden Datenobjekts, wirkt sich jedoch nicht auf die ursprünglichen Daten der Eigenschaft aus.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

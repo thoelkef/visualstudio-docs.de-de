@@ -1,5 +1,5 @@
 ---
-title: Bewährte Methoden für Sicherheit in VSPackages | Microsoft-Dokumentation
+title: Bewährte Methoden für die Sicherheit in VSPackages | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,25 +13,25 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 940644cd3950c38c6383371c1844b54b328acd0c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697265"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Bewährte Methoden für die Sicherheit in VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-So installieren Sie die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] auf dem Computer, müssen Sie in einem Kontext mit Administratorrechten ausgeführt werden. Die grundlegende Einheit von Sicherheit und Bereitstellung von einem [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Anwendung ist die [VSPackages](../../extensibility/internals/vspackages.md). Eine VSPackage muss registriert werden, mithilfe von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], wodurch es auch administrative Anmeldeinformationen erforderlich.  
+Um das auf dem Computer zu installieren [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] , müssen Sie in einem Kontext mit Administrator Anmelde Informationen ausgeführt werden. Die grundlegende Einheit der Sicherheit und Bereitstellung einer- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Anwendung sind die [VSPackages](../../extensibility/internals/vspackages.md). Ein VSPackage muss mithilfe von registriert werden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , wofür auch administrative Anmelde Informationen erforderlich sind.  
   
- Administratoren haben vollständige Berechtigungen zum Schreiben in die Registrierung und das Dateisystem und Code ausführen. Sie müssen diese Berechtigungen zu entwickeln, bereitstellen, oder installieren eine VSPackage verfügen.  
+ Administratoren verfügen über vollständige Berechtigungen zum Schreiben in die Registrierung und das Dateisystem sowie zum Ausführen von Code. Sie müssen über diese Berechtigungen verfügen, um ein VSPackage zu entwickeln, bereitzustellen oder zu installieren.  
   
- Sobald sie installiert ist, ist eine VSPackage voll vertrauenswürdig. Aufgrund dieses hohe Maß an Berechtigungen, die ein VSPackage zugeordnet werden soll ist es möglich, versehentlich eine VSPackage zu installieren, die böswillige Absichten hat.  
+ Sobald Sie installiert ist, wird ein VSPackage als voll vertrauenswürdig eingestuft. Aufgrund dieses hohen Berechtigungs Niveaus, das einem VSPackage zugeordnet ist, ist es möglich, versehentlich ein VSPackage mit böswilliger Absicht zu installieren.  
   
- Benutzer sollten stellen Sie sicher, dass sie VSPackages nur von vertrauenswürdigen Quellen installieren. Unternehmen entwickeln von VSPackages sollte stark benennen und Sie zu signieren, um dem Benutzer zu gewährleisten, Manipulationen verhindert werden. Entwickeln von VSPackages Unternehmen sollten ihre externen Abhängigkeiten auf, wie z. B. Webdienste und remote-Installation, auswerten und beheben Sie alle eventuell vorhandenen Sicherheitsrisiken untersuchen.  
+ Benutzer sollten sicherstellen, dass Sie VSPackages nur aus vertrauenswürdigen Quellen installieren. Unternehmen, die VSPackages entwickeln, sollten diese stark benennen und signieren, um dem Benutzer zu gewährleisten, dass Manipulationen verhindert werden. Unternehmen, die VSPackages entwickeln, sollten Ihre externen Abhängigkeiten (z. b. Webdienste und Remote Installation) untersuchen, um Sicherheitsprobleme auszuwerten und zu beheben.  
   
- Weitere Informationen finden Sie in Secure Coding Guidelines für .NET Framework ([https://msdn.microsoft.com/library/d55zzx87.aspx](https://msdn.microsoft.com/library/d55zzx87.aspx)).  
+ Weitere Informationen finden Sie unter Richtlinien für sicheres Programmieren für die .NET Framework ( [https://msdn.microsoft.com/library/d55zzx87.aspx](https://msdn.microsoft.com/library/d55zzx87.aspx) ).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Add-in-Sicherheit](https://msdn.microsoft.com/library/44a5c651-6246-4310-b371-65378917c799)   
  [DDEX-Sicherheit](https://msdn.microsoft.com/44a52a70-5c98-450e-993d-4a3b32f69ba8)

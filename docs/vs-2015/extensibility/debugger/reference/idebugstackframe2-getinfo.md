@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo | Microsoft-Dokumentation
+title: 'IDebugStackFrame2:: GetInfo | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6ebfda26b58bb1e7048b969133fa1672edad8a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164776"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft eine Beschreibung des Stapelrahmens ab.  
+Ruft eine Beschreibung des Stapel Rahmens ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,18 +44,18 @@ int GetInfo ( 
   
 #### <a name="parameters"></a>Parameter  
  `dwFieldSpec`  
- [in] Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder von der `pFrameInfo` Parameter sind gefüllt werden soll.  
+ in Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, die angibt, welche Felder des `pFrameInfo` Parameters ausgefüllt werden sollen.  
   
  `nRadix`  
- [in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.  
+ in Der zum Formatieren numerischer Informationen zu verwendende Basis.  
   
  `pFrameInfo`  
- [out] Ein [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) -Struktur, die mit der Beschreibung des Stapelrahmens gefüllt wird.  
+ vorgenommen Eine [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Struktur, die mit der Beschreibung des Stapel Rahmens ausgefüllt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329088"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Anzeigen von Daten in Blend für Visual Studio
@@ -45,6 +45,6 @@ Wenn Sie bereits Klassen erstellt haben, die die Struktur Ihrer Daten beschreibe
 
 **Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

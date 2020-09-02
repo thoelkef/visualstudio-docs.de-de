@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985674"
 ---
 # <a name="outlook-solutions"></a>Outlook-Projektmappen
@@ -40,7 +40,7 @@ ms.locfileid: "72985674"
 ## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO-Add-in-Programmiermodell
  Wenn Sie ein VSTO-Add-In-Projekt für Outlook erstellen, generiert Visual Studio eine Klasse mit dem Namen `ThisAddIn`, die die Grundlage für die Projektmappe darstellt. Diese Klasse bietet einen Ausgangspunkt für das Schreiben des Codes, und sie macht auch das Outlook-Objektmodell für das VSTO-Add-In verfügbar.
 
- Weitere Informationen zu den `ThisAddIn`-Klasse und anderen Funktionen, die Sie in einem VSTO-Add-in verwenden können, finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
+ Weitere Informationen zur `ThisAddIn` -Klasse und anderen Funktionen, die Sie in einem VSTO-Add-in verwenden können, finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatisieren von Outlook mithilfe des Outlook-Objektmodells
  Das Outlook-Objektmodell macht viele Typen verfügbar, die Sie zum Automatisieren von Outlook verwenden können. Diese Typen ermöglichen Ihnen das Schreiben von Code zum Ausführen häufiger Aufgaben:
@@ -55,7 +55,7 @@ ms.locfileid: "72985674"
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Anpassen der Benutzeroberfläche einer Outlook-Anwendung
 
-|Aufgabe|Weitere Informationen|
+|Aufgabe|Weitere Informationen finden Sie unter|
 |----------|--------------------------|
 |Fügen Sie dem Menüband eines Outlook-Inspektors benutzerdefinierte Registerkarten hinzu.|[Übersicht über Menüband](../vsto/ribbon-overview.md)|
 |Hinzufügen benutzerdefinierter Gruppen zu einer integrierten Registerkarte in einem Outlook-Inspektor|[Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|
@@ -66,7 +66,7 @@ ms.locfileid: "72985674"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Übersicht über das Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)|Bietet einen Überblick über die Objekte, die vom Outlook-Objektmodell bereitgestellt werden.|
 |[Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)|Erläutert die von Visual Studio bereitgestellten Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.|

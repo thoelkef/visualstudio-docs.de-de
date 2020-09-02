@@ -1,5 +1,5 @@
 ---
-title: IDebugField | Microsoft Docs
+title: Idebugfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728754"
 ---
 # <a name="idebugfield"></a>IDebugField
@@ -29,19 +29,19 @@ IDebugField : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein Symbolanbieter implementiert diese Schnittstelle als Basisklasse für alle Felder.
+ Ein Symbol Anbieter implementiert diese Schnittstelle als Basisklasse für alle Felder.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Diese Schnittstelle ist die Basisklasse für alle Felder. Basierend auf dem Rückgabewert von [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)kann diese Schnittstelle mithilfe von [QueryInterface](/cpp/atl/queryinterface)speziellere Schnittstellen zurückgeben. Darüber hinaus geben viele `IDebugField` Schnittstellen Objekte aus verschiedenen Methoden zurück.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Diese Schnittstelle ist die Basisklasse für alle Felder. Basierend auf dem Rückgabewert von [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md)kann diese Schnittstelle mithilfe von [QueryInterface](/cpp/atl/queryinterface)weitere spezialisierte Schnittstellen zurückgeben. Außerdem geben viele Schnittstellen `IDebugField` Objekte aus verschiedenen Methoden zurück.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IDebugField`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugField` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Ruft anzeigebare Informationen über das Symbol oder den Typ ab.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Ruft Informationen über das Symbol oder den Typ ab.|
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Ruft die Art des Felds ab.|
-|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Ruft den Feldtyp ab.|
+|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Ruft den Typ des Felds ab.|
 |[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Ruft den Container des Felds ab.|
 |[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Ruft die Adresse des Felds ab.|
 |[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Ruft die Größe eines Felds in Bytes ab.|
@@ -50,9 +50,9 @@ IDebugField : IUnknown
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Ruft typunabhängige Informationen über das Symbol oder den Typ ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Ein Typ entspricht einer `typedef`C-Sprache .
+ Ein Typ entspricht der Programmiersprache C `typedef` .
 
- Im folgenden C++-Sprachbeispiel `weather` ist ein `sunny` Klassentyp und `stormy` Symbole:
+ Im folgenden Beispiel für die C++-Sprache `weather` ist ein Klassentyp, und `sunny` und `stormy` sind Symbole:
 
 ```cpp
 class weather;
@@ -60,12 +60,12 @@ weather sunny;
 weather stormy;
 ```
 
- Ob ein Feld ein Symbol oder einen Typ darstellt, kann durch Aufrufen von [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) und Untersuchen des [FIELD_KIND-Ergebnisses](../../../extensibility/debugger/reference/field-kind.md) bestimmt werden. Wenn `FIELD_KIND_TYPE` das Bit festgelegt ist, ist das `FIELD_KIND_SYMBOL` Feld ein Typ, und wenn das Bit gesetzt ist, ist es ein Symbol.
+ Gibt an, ob ein Feld ein Symbol oder einen Typ darstellt, indem [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) aufgerufen und das [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Ergebnis überprüft wird. Wenn das- `FIELD_KIND_TYPE` Bit festgelegt ist, ist das Feld ein-Typ, und wenn das- `FIELD_KIND_SYMBOL` Bit festgelegt ist, ist es ein Symbol.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+ Header: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

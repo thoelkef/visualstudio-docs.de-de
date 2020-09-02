@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656755"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Fehlermeldungen im Workflow-Designer
@@ -36,7 +36,7 @@ In diesem Thema die Arten von Fehlermeldungen beschrieben, die beim Arbeiten mit
 
    Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Der Workflow wird erfolgreich erstellt, zur Laufzeit wird jedoch eine Ausnahme vom Typ <xref:System.Activities.InvalidWorkflowException> ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
 
-   Wenn in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein Workflow geladen wird, werden die Fehler in der **Fehlerliste**angezeigt. Um zu der Aktivität zu navigieren, die die Fehlerquelle ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
+   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Wenn in ein Workflow geladen wird, werden die Fehler in der **Fehlerliste**angezeigt. Um zu der Aktivität zu navigieren, die die Fehlerquelle ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
 
 ### <a name="expression-errors"></a>Ausdrucksfehler
  Ein ungültiger Ausdruck wird durch einen roten Kreis mit einem weißen Ausrufezeichen neben dem Ausdruck gekennzeichnet. Wenn Sie den Mauszeiger über dieses Symbol bewegen, wird ein QuickInfo angezeigt, in der die Fehlerquelle beschrieben wird. Klicken Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf den Ausdruck, um die Fehlerquelle mit einer Unterstreichung anzuzeigen. Wenn Sie den Mauszeiger über den unterstrichenen Text halten, wird ein QuickInfo mit einer Beschreibung der Fehlerquelle angezeigt.

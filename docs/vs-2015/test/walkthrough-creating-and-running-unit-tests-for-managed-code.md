@@ -15,10 +15,10 @@ caps.latest.revision: 85
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 631a180789f5fff373799b78222c25a50ab32912
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657103"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
@@ -28,7 +28,7 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
 
  Dieses Thema enthält folgende Abschnitte:
 
- [Die exemplarische Vorgehensweise vorbereiten](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)
+ [Vorbereiten der exemplarischen Vorgehensweise](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)
 
  [Ein Komponententestprojekt erstellen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)
 
@@ -47,16 +47,16 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
   [Den Code mit Komponententests verbessern](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
-> In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Test-Explorer kann außerdem Tests von Drittanbieter-Komponententest-Frameworks ausführen, die über Adapter für Test-Explorer verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
+> In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Test-Explorer kann außerdem Tests von Drittanbieter-Komponententest-Frameworks ausführen, die über Adapter für Test-Explorer verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md) .
 
 > [!NOTE]
 > Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Das Projekt "Bank". Weitere Informationen finden Sie unter [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).
 
-## <a name="BKMK_Prepare_the_walkthrough"></a> Vorbereiten der exemplarischen Vorgehensweise
+## <a name="prepare-the-walkthrough"></a><a name="BKMK_Prepare_the_walkthrough"></a> Die exemplarische Vorgehensweise vorbereiten
 
 1. Öffnen Sie Visual Studio.
 
@@ -64,7 +64,7 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#** .
+3. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**.
 
 4. Klicken Sie in der Liste der Anwendungstypen auf **Klassenbibliothek**.
 
@@ -84,7 +84,7 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
 
 8. Speichern Sie die Datei als BankAccount.cs.
 
-9. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+9. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
    Sie haben nun ein Projekt mit dem Namen Bank erstellt. Dieses Projekt enthält zu testenden Quellcode und Tools, mit denen der Quellcode getestet werden kann. Der Namespace für Bank ( **BankAccountNS**) enthält die öffentliche **BankAccount**-Klasse, deren Methoden Sie im Folgenden testen werden.
 
@@ -107,14 +107,14 @@ public void Debit(double amount)
 
 ```
 
-## <a name="BKMK_Create_a_unit_test_project"></a> Ein Komponententestprojekt erstellen
+## <a name="create-a-unit-test-project"></a><a name="BKMK_Create_a_unit_test_project"></a> Erstellen eines Komponenten Testprojekts
  **Voraussetzung**: Führen Sie die im Verfahren " [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)" angegebenen Schritte aus.
 
 #### <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt
 
-1. Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...** .
+1. Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...**.
 
-2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#** , und wählen Sie dann **Test**aus.
+2. Erweitern Sie im Dialogfeld Neues Projekt erst die Option **Installiert** und dann die Option **Visual C#** , und klicken Sie anschließend auf **Test**.
 
 3. Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.
 
@@ -128,7 +128,7 @@ public void Debit(double amount)
 
 6. Erweitern Sie im Dialogfeld "Verweis-Manager" den Eintrag **Projektmappe** , und überprüfen Sie das Element **Bank** .
 
-## <a name="BKMK_Create_the_test_class"></a> Die Testklasse erstellen
+## <a name="create-the-test-class"></a><a name="BKMK_Create_the_test_class"></a> Erstellen der Testklasse
  Zum Überprüfen der `BankAccount` -Klasse wird eine Testklasse benötigt. Sie können UnitTest1.cs verwenden, die von der Projektvorlage generiert wurde, doch Datei und Klasse sollten einen aussagekräftigeren Namen erhalten. Sie können das in einem Schritt erledigen, indem Sie die Datei im Projektmappen-Explorer umbenennen.
 
  **Umbenennen einer Klassendatei**
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;
 ```
 
-### <a name="BKMK_Test_class_requirements"></a> Testklassenanforderungen
+### <a name="test-class-requirements"></a><a name="BKMK_Test_class_requirements"></a> Test Klassen Anforderungen
  Die Mindestanforderungen für eine Testklasse sind die folgenden:
 
 - Im Microsoft-Komponententest-Framework für verwalteten Code ist das `[TestClass]` -Attribut für jede Klasse erforderlich, die in Test-Explorer auszuführende Komponententestmethoden enthält.
@@ -172,7 +172,7 @@ using BankAccountNS;
 
   Ein Komponententestprojekt kann auch über andere Klassen ohne das `[TestClass]` -Attribut verfügen, und Testklassen können andere Methoden ohne das `[TestMethod]` -Attribut aufweisen. Sie können diese anderen Klassen und Methoden in den Testmethoden verwenden.
 
-## <a name="BKMK_Create_the_first_test_method"></a> Die erste Testmethode erstellen
+## <a name="create-the-first-test-method"></a><a name="BKMK_Create_the_first_test_method"></a> Erstellen der ersten Testmethode
  In dieser Vorgehensweise schreiben Sie Komponententestmethoden, um das Verhalten der `Debit` -Methode der `BankAccount` -Klasse zu überprüfen. Die Methode ist weiter oben aufgeführt.
 
  Anhand der Analyse der zu testenden Methode bestimmen Sie, dass mindestens drei Verhaltensweisen überprüft werden müssen:
@@ -213,7 +213,7 @@ using BankAccountNS;
 
    Die Methode ist recht einfach. Sie richten ein neues `BankAccount` -Objekt mit einem Startguthaben ein und buchen dann einen gültigen Betrag ab. Sie verwenden die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> -Methode des Microsoft-Komponententest-Frameworks für verwalteten Code, um sicherzustellen, dass das Guthaben zum Schluss wie erwartet ausfällt.
 
-### <a name="BKMK_Test_method_requirements"></a> Testmethodenanforderungen
+### <a name="test-method-requirements"></a><a name="BKMK_Test_method_requirements"></a> Test Methoden Anforderungen
  Eine Testmethode muss die folgenden Anforderungen erfüllen:
 
 - Die Methode muss mit dem `[TestMethod]` -Attribut ausgestattet sein.
@@ -222,7 +222,7 @@ using BankAccountNS;
 
 - Die Methode darf keine Parameter aufweisen.
 
-## <a name="BKMK_Build_and_run_the_test"></a> Den Test erstellen und ausführen
+## <a name="build-and-run-the-test"></a><a name="BKMK_Build_and_run_the_test"></a> Erstellen und Ausführen des Tests
 
 #### <a name="to-build-and-run-the-test"></a>So erstellen Sie den Test und führen ihn aus
 
@@ -232,12 +232,12 @@ using BankAccountNS;
 
 2. Wählen Sie **Alle ausführen** aus, um den Test auszuführen. Während der Test ausgeführt wird, gibt die Statusleiste am oberen Fensterrand den aktuellen Status an. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich sind, oder rot, sofern bei einem der Tests ein Fehler auftritt.
 
-3. In diesem Fall schlägt der Test fehl. Die Testmethode wird in die Gruppe **Tests mit Fehlern** aufgelistet. Wählen Sie die Methode im Test-Explorer aus, um die Details unten im Fenster anzuzeigen.
+3. In diesem Fall schlägt der Test fehl. Die Testmethode wird in die Gruppe **Tests mit Fehlern** Ressourcengruppe. Wählen Sie die Methode im Test-Explorer aus, um die Details unten im Fenster anzuzeigen.
 
-## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Den Code korrigieren und die Tests erneut ausführen
+## <a name="fix-your-code-and-rerun-your-tests"></a><a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Korrigieren Sie Ihren Code, und führen Sie die Tests erneut aus
  **Analysieren der Testergebnisse**
 
- Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter <strong>Expected\<*XXX*></strong>) und was tatsächlich gefunden wurde (Parameter **Actual\<*YYY*>** ). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.
+ Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der- `AreEquals` Methode wird in der Meldung angezeigt, was erwartet wurde ((<strong>Erwarteter \<*XXX*> </strong>Parameter) und was tatsächlich empfangen wurde (der **tatsächliche \<*YYY*> ** Parameter). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.
 
  Eine erneute Prüfung des Debit-Codes zeigt, dass der Komponententest einen Fehler gefunden hat. Der Abbuchungsbetrag wird dem Kontoguthaben hinzugerechnet, anstatt davon abgezogen zu werden.
 
@@ -249,7 +249,7 @@ using BankAccountNS;
 m_balance += amount;
 ```
 
- with
+ durch
 
 ```csharp
 m_balance -= amount;
@@ -257,9 +257,9 @@ m_balance -= amount;
 
  **Erneutes Ausführen des Tests**
 
- Wählen Sie im Test-Explorer **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, und der Test wird in die Gruppe **Bestandene Tests** verschoben.
+ Wählen Sie im Test-Explorer die Option **alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, und der Test wird in die Gruppe **Bestandene Tests** verschoben.
 
-## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Den Code mit Komponententests verbessern
+## <a name="use-unit-tests-to-improve-your-code"></a><a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Verwenden von Komponententests zur Verbesserung Ihres Codes
  In diesem Abschnitt wird beschrieben, wie ein iterativer Prozess bestehend aus Analyse, Komponententestentwicklung und Umgestaltung helfen kann, die Robustheit und Effektivität des Produktionscodes zu verbessern.
 
  **Analysieren der Probleme**
@@ -301,7 +301,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. Legen Sie `debitAmount` auf eine Zahl größer als das Guthaben fest.
 
-   **Tests ausführen**
+   **Ausführen der Tests**
 
    Indem Sie die beiden Methoden mit verschiedenen Werten für `debitAmount` ausführen, wird veranschaulicht, dass die Tests die verbleibenden Fälle angemessen behandeln. Durch Ausführung aller drei Tests bestätigen Sie, dass alle Fälle aus der ursprünglichen Analyse ordnungsgemäß abgedeckt werden.
 

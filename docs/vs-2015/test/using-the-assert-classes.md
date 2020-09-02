@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657137"
 ---
 # <a name="using-the-assert-classes"></a>Verwenden der Assert-Klassen
@@ -59,5 +59,5 @@ Verwenden Sie die Assert-Klassen des UnitTestingFramework-Namespace, um bestimmt
 
  Ergänzen Sie eine Testmethode durch das ExpectedExceptionAttribute-Attribut, wenn die Testmethode überprüfen soll, ob eine Ausnahme wie erwartet durch eine Methode in im Entwicklungscode ausgelöst wird.
 
-## <a name="see-also"></a>Siehe auch
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [Erstellen und Ausführen von Komponenten Tests für vorhandenen Code](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [Erstellen und Ausführen von Komponententests für vorhandenen Code](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

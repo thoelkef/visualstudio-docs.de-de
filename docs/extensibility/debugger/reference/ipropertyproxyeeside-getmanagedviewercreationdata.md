@@ -1,5 +1,5 @@
 ---
-title: iPropertyProxyeeside::GetManagedViewerCreationData | Microsoft Docs
+title: 'Ipropertyproxyeeside:: getmanagedviewerkreationdata | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714965"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Ruft Informationen über den Viewer für diesen Eigenschaftstyp ab, um diesen Viewer zu instanziieren.
+Ruft Informationen über den Viewer für diesen Eigenschaftentyp ab, um diesen Viewer zu instanziieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,28 +51,28 @@ int GetManagedViewerCreationData(
 
 ## <a name="parameters"></a>Parameter
 `assemName`\
-[out] Gibt den Namen der Assembly zurück, die dieses Objekt enthält.
+vorgenommen Gibt den Namen der Assembly zurück, die dieses-Objekt enthält.
 
 `assemBytes`\
-[out] Gibt ein [IEEDataStorage-Objekt](../../../extensibility/debugger/reference/ieedatastorage.md) zurück, das die Assemblybytes dieses Objekts enthält (dies ist ein NULL-Wert, wenn keine Bytes verfügbar sind).
+vorgenommen Gibt ein [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt zurück, das die Assemblybytes dieses Objekts enthält (Dies ist ein NULL-Wert, wenn keine Bytes verfügbar sind).
 
 `assemPdb`\
-[out] Gibt `IEEDataStorage` ein Objekt zurück, das die Symbolspeicherinformationen für dieses Objekt enthält (dies ist ein NULL-Wert, wenn kein Symbolspeicher verfügbar ist).
+vorgenommen Gibt ein `IEEDataStorage` Objekt zurück, das die Symbol Speicherinformationen für dieses Objekt enthält (Dies ist ein NULL-Wert, wenn kein Symbol Speicher verfügbar ist).
 
 `className`\
-[out] Gibt den Klassennamen zurück, der dieses Objekt enthält.
+vorgenommen Gibt den Klassennamen zurück, der dieses-Objekt enthält.
 
 `alr`\
-[out] Gibt einen Wert aus der ASSEMBLYLOCRESOLUTION-Enumeration [zurück,](../../../extensibility/debugger/reference/assemblylocresolution.md) der die Position der Baugruppe angibt.
+vorgenommen Gibt einen Wert aus der [assemblylokresolution](../../../extensibility/debugger/reference/assemblylocresolution.md) -Enumeration zurück, der den Speicherort der Assembly angibt.
 
 `replacementOk`\
-[out] Gibt einen`TRUE`Wert ungleich Null ( ) zurück, wenn der Wert dieses Objekts geändert werden kann; Null`FALSE`( ), wenn das Objekt schreibgeschützt ist.
+vorgenommen Gibt einen Wert ungleich 0 (NULL `TRUE` ) zurück, wenn der Wert dieses Objekts geändert werden kann; NULL ( `FALSE` ), wenn das Objekt schreibgeschützt ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird von Typvisualisierern verwendet, um einen verwalteten Viewer zu instanziieren.
+ Diese Methode wird von typvisualisierungen verwendet, um einen verwalteten Viewer zu instanziieren.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

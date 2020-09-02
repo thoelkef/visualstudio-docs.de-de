@@ -12,24 +12,24 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89a07bc5a5c4c8b7a6054b53610325c654355bc8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695956"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Roadmap für die Erweiterung des Debuggers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Diese Dokumentation enthält Referenz und Handbuch Informationen zum Erweitern der [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] debugger mit dem [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern des [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] Debuggers mit dem [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] .  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debuggen die Dokumentation enthält Beispiele, eine umfassende Referenz und mehrere repräsentative Szenarien, in denen veranschaulicht typische Verwendungsweisen des Debuggers anzupassen.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die debuggingdokumentation enthält Beispiele, eine umfassende Referenz und einige repräsentative Szenarios, in denen typische Möglichkeiten zum Anpassen des Debuggers aufgezeigt werden.  
   
- Dem Compiler und die Ausgabe bestimmen, was Sie tun, um das Debuggen in Ihrem Produkt zu implementieren. Wenn Ihr Compiler:  
+ Der Compiler und seine Ausgabe bestimmen, was Sie tun müssen, um das Debuggen in Ihrem Produkt zu implementieren. Wenn der Compiler Folgendes:  
   
-- Betrifft das native Windows-Betriebssystem und schreibt ein. PDB-Datei können Sie Programme debuggen, mit der nativen Code Debug-Engine (DE), integriert in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Sie müssen sich nicht zum Implementieren einer ausdrucksauswertung DE oder einen Ausdruck. Die ausdrucksauswertung wird für die Syntax der Programmiersprache C++ geschrieben.  
+- Gibt das systemeigene Windows-Betriebssystem an und schreibt. PDB-Datei: Sie können Programme mit dem systemeigenen Code Debug Engine (de) Debuggen, das in integriert ist [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Sie müssen keine de-oder-Ausdrucks Auswertung implementieren. Die Ausdrucks Auswertung wird für die Syntax der Programmiersprache C++ geschrieben.  
   
-- Erzeugt die Microsoft intermediate Language (MSIL) auszugeben, können Sie Programme debuggen, mit verwaltetem Code Debug-Engine DE, die auch in integriert ist [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daher müssen Sie nur eine ausdrucksauswertung implementieren. Eine Beispiel-ausdrucksauswertung wird für Sie bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:  
+- Erzeugt die MSIL-Ausgabe (Microsoft Intermediate Language). Sie können Programme mit dem verwalteten Code Debugmodul de Debuggen, das auch in integriert ist [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Daher muss nur eine Ausdrucks Auswertung implementiert werden. Eine Beispiel Ausdrucks Auswertung wird für Sie bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:  
   
      [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
@@ -41,15 +41,15 @@ Diese Dokumentation enthält Referenz und Handbuch Informationen zum Erweitern d
   
      [Schreiben einer Ausdrucksauswertung für die Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
-- Ziele eine proprietäre Betriebssystemkomponente oder eine andere Runtime-Umgebung müssen Sie Ihre eigenen DE zu schreiben. Ein Tutorial, erstellen eine einfache DE Verwendung von ATL-COM, wird bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:  
+- Als Ziel für ein proprietäres Betriebssystem oder eine andere Laufzeitumgebung müssen Sie Ihre eigene de schreiben. Ein Tutorial, das eine einfache de mithilfe von ATL-COM erstellt, wird bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:  
   
      [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Tutorial: Erstellen einer DebugEngine, die Verwendung von ATL-COM](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [Tutorial: aufbauen einer Debug-Engine mithilfe von ATL-COM](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [Implementieren eines Portanbieters](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
      [Beispiele](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Erste Schritte](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

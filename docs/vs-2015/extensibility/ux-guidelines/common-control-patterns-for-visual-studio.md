@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd2b2723a5ecfe66e9471cfea1e8eb55ed7ced59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547445"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>Allgemeine Steuerelemente
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente
 
 ### <a name="overview"></a>Übersicht
  Allgemeine Steuerelemente bilden die Mehrzahl der Benutzeroberfläche in Visual Studio. Die meisten allgemeinen Steuerelemente, die in der Visual Studio-Benutzeroberfläche verwendet werden, sollten den [Windows-Desktop Interaktions Richtlinien](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) Dieses Dokument ist für Visual Studio spezifisch und behandelt spezielle Situationen oder Details, die diese Windows-Richtlinien ergänzen.
@@ -50,10 +50,10 @@ ms.locfileid: "85547445"
 
 - **Tool Fenster, Dokument-Editoren, Entwurfs Oberflächen und Themen Dialogfelder:** Verwenden Sie eine spezielle Darstellung des Designs mit dem Farb Dienst.
 
-### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a>Bild Lauf leisten
+### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a> Bild Lauf leisten
  Scrollleisten sollten [gängige Interaktionsmuster für Windows-Scrollleisten](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) befolgen, es sei denn, Sie werden mit Inhaltsinformationen ergänzt, z. b. im Code-Editor.
 
-### <a name="input-fields"></a><a name="BKMK_InputFields"></a>Eingabefelder
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Eingabefelder
  Befolgen Sie für ein typisches Interaktions Verhalten die [Windows-Desktop Richtlinien für Textfelder](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visueller Stil
@@ -76,7 +76,7 @@ ms.locfileid: "85547445"
 
      Korrekte Länge des Eingabe Felds für die Eingabe ![Feld Steuerung](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl") **: das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt.**
 
-### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>Kombinations Felder und Dropdown Listen
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Kombinations Felder und Dropdown Listen
  Befolgen Sie für ein typisches Interaktions Verhalten die [Windows-Desktop Richtlinien für Dropdown Listen und Kombinations Felder](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visueller Stil
@@ -96,7 +96,7 @@ ms.locfileid: "85547445"
 
  **Richtige Feldlänge für ein Dropdown-Steuerelement**
 
-### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>Kontrollkästchen
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Kontrollkästchen
  Für ein typisches Interaktions Verhalten befolgen Sie die [Windows-Desktop Richtlinien für Kontrollkästchen](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visueller Stil
@@ -115,7 +115,7 @@ ms.locfileid: "85547445"
 
      ![Richtige](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign") Kontrollkästchen Ausrichtung richtige Kontroll **Kästchen Ausrichtung: das Kontrollkästchen ist an der Baseline der ersten Textzeile ausgerichtet.**
 
-### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>Options Felder
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Options Felder
  Befolgen Sie für ein typisches Interaktions Verhalten die [Windows-Desktop Richtlinien für](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx)Options Felder.
 
 #### <a name="visual-style"></a>Visueller Stil
@@ -124,7 +124,7 @@ ms.locfileid: "85547445"
 #### <a name="specialized-interactions"></a>Spezialisierte Interaktionen
  Es ist nicht erforderlich, einen Gruppen Rahmen zu verwenden, um Options Felder zu schließen.
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>Gruppieren von Frames
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Gruppieren von Frames
  Befolgen Sie für ein typisches Interaktions Verhalten die [Windows-Desktop Richtlinien für Gruppen Frames](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visueller Stil
@@ -138,7 +138,7 @@ ms.locfileid: "85547445"
 
 - Es ist manchmal akzeptabel, anstelle eines Gruppen Frame Containers eine horizontale Regel zu verwenden.
 
-## <a name="text-controls"></a><a name="BKMK_TextControls"></a>Text Steuerelemente
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a> Text Steuerelemente
 
 ### <a name="labels"></a>Bezeichnungen
 
@@ -227,7 +227,7 @@ ms.locfileid: "85547445"
 
   **Beispiele für Wasserzeichen Text in Visual Studio**
 
-## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>Schaltflächen und Hyperlinks
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> Schaltflächen und Hyperlinks
 
 ### <a name="overview"></a>Übersicht
  Schaltflächen und Link Steuerelemente (Hyperlinks) müssen [grundlegende Windows-Desktop-Anleitungen](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) für die Verwendung, die Formulierung, die Größenanpassung und den Abstand befolgen.
@@ -329,8 +329,8 @@ ms.locfileid: "85547445"
 
 |Name|Image|
 |-|-|
-|Add|![Grafische Schaltfläche "Hinzufügen"](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703-08_ButtonAdd")|
-|Entfernen|![Grafische Schaltfläche "Entfernen"](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703-09_ButtonRemove")|
+|Hinzufügen|![Grafische Schaltfläche "Hinzufügen"](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703-08_ButtonAdd")|
+|Remove (Entfernen)|![Grafische Schaltfläche "Entfernen"](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703-09_ButtonRemove")|
 |Alle hinzufügen|![Grafische Schaltfläche "Alles hinzufügen"](../../extensibility/ux-guidelines/media/070703-10-buttonaddall.png "070703-10_ButtonAddAll")|
 |Alle entfernen|![Grafische Schaltfläche "Alle entfernen"](../../extensibility/ux-guidelines/media/070703-11-buttonremoveall.png "070703-11_ButtonRemoveAll")|
 |Nach oben|![Grafische Schaltfläche "Nach oben"](../../extensibility/ux-guidelines/media/070703-12-buttonmoveup.png "070703-12_ButtonMoveUp")|
@@ -358,7 +358,7 @@ ms.locfileid: "85547445"
 
 - Unterstriche sollten nicht auf dem Mauszeiger angezeigt werden. Stattdessen ist das Feedback an den Benutzer, dass der Link aktiv ist, eine geringfügige Farbänderung und der entsprechende Link Cursor.
 
-## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>Struktur Ansichten
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a> Struktur Ansichten
 
 ### <a name="overview"></a>Übersicht
  Struktur Ansichten bieten eine Möglichkeit, komplexe Listen in über-und untergeordneten Gruppen zu organisieren. Ein Benutzer kann übergeordnete Gruppen erweitern oder reduzieren, um zugrunde liegende untergeordnete Elemente anzuzeigen oder auszublenden. Alle Elemente in einer Strukturansicht können ausgewählt werden, um weitere Aktionen bereitzustellen.
@@ -371,7 +371,7 @@ ms.locfileid: "85547445"
 
 - [Interaktionen](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>Visueller Stil
+### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> Visueller Stil
 
 #### <a name="expanders"></a>Expander
  Strukturansicht-Steuerelemente sollten dem Expander-Entwurf entsprechen, der von Windows und Visual Studio verwendet wird. Jeder Knoten verwendet ein Expander-Steuerelement, um zugrunde liegende Elemente anzuzeigen oder auszublenden. Die Verwendung eines Expander-Steuer Elements bietet Konsistenz für Benutzer, die möglicherweise unterschiedliche Struktur Ansichten in Windows und Visual Studio sehen.
@@ -405,7 +405,7 @@ ms.locfileid: "85547445"
 
  **Vertikale und horizontale Schiebe leisten werden angezeigt, da der Inhalt die Begrenzungen des Strukturansicht-Steuer Elements überschritten hat.**
 
-### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a>Wechsel
+### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a> Wechsel
 
 #### <a name="context-menus"></a>Kontextmenüs
  In einem Struktur Ansichts Knoten können Untermenüoptionen in einem Kontextmenü angezeigt werden. Dies tritt normalerweise auf, wenn ein Benutzer mit der rechten Maustaste auf ein Element geklickt oder die Menü Taste auf einer Windows-Tastatur gedrückt hat, auf der das Element ausgewählt ist. Es ist wichtig, dass der Knoten den Fokus erhält und ausgewählt wird. Dadurch kann der Benutzer identifizieren, zu welchem Element das Untermenü gehört.

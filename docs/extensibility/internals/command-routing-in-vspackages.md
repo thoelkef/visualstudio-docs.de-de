@@ -1,5 +1,5 @@
 ---
-title: Befehlsrouting in VSPackages | Microsoft Docs
+title: Befehls Routing in VSPackages | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,32 +12,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709556"
 ---
-# <a name="command-routing-in-vspackages"></a>Befehlsrouting in VSPackages
-Ein Befehl wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basierend auf dem Kontext weitergeleitet, in dem er ausgeführt wird. Sie wird vom ursprünglichen Kontext nach außen in den globalen Kontext weitergeleitet.
+# <a name="command-routing-in-vspackages"></a>Befehls Routing in VSPackages
+Ein Befehl wird in auf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der Grundlage des Kontexts weitergeleitet, in dem er ausgeführt wird. Sie wird vom ursprünglichen Kontext nach außen an den globalen Kontext weitergeleitet.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Befehlsroutingalgorithmus](../../extensibility/internals/command-routing-algorithm.md)
+- [Befehls Weiterleitungs Algorithmus](../../extensibility/internals/command-routing-algorithm.md)
 
- Beschreibt die Reihenfolge der Befehlsroutingauflösung.
+ Beschreibt die Reihenfolge der Befehls Routing Auflösung.
 
-- [Befehlsverfügbarkeit](../../extensibility/internals/command-availability.md)
+- [Befehls Verfügbarkeit](../../extensibility/internals/command-availability.md)
 
- Erläutert das Befehlsrouting.
+ Erläutert das Befehls Routing.
 
-- [Befehle und Menüs, die Interopassemblys verwenden](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+- [Befehle und Menüs, die Interop-Assemblys verwenden](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
 
- Erläutert Überlegungen zum Routing von Befehlen zwischen verwaltetem Code und COM.
+ Erläutert Überlegungen zum Routing von Befehlen zwischen verwaltetem Code und com.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)
+- [Auswahl Kontext Objekte](../../extensibility/internals/selection-context-objects.md)
 
- Erläutert das Modell, wie Sie den Auswahlkontextfokus des Benutzers für ein Fenster bestimmen können.
+ Erläutert das Modell, wie Sie den Fokus des Auswahl Kontexts des Benutzers auf ein Fenster festlegen können.
 
 - [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md)
 

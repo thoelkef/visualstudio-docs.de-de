@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670662"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Gewusst wie: Ersetzen von Parametern in einer Vorlage
@@ -46,5 +46,5 @@ Sie können Vorlagenparameter, etwa Klassennamen und Namespaces, ersetzen, wenn 
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) Vorlagen [Parametern](../ide/template-parameters.md) [Visual Studio-Vorlagen Schema Referenz](../extensibility/visual-studio-template-schema-reference.md) [ProjectItem-Element (Visual Studio-Element Vorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md)

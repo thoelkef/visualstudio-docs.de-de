@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670311"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
@@ -23,19 +23,19 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
  Dieses Thema enthält die folgenden Abschnitte:
 
- [Zugriff auf die Visual Studio-Tools](../ide/productivity-tips-for-visual-studio.md#BKMK_Access)
+ [Zugreifen auf Visual Studio-Tools](../ide/productivity-tips-for-visual-studio.md#BKMK_Access)
 
  [Schreiben von Code](../ide/productivity-tips-for-visual-studio.md#BKMK_Writing)
 
- [Navigieren innerhalb des Codes](../ide/productivity-tips-for-visual-studio.md#BKMK_Navigating)
+ [Navigieren in Ihrem Code](../ide/productivity-tips-for-visual-studio.md#BKMK_Navigating)
 
- [Schnelleres Suchen von Elementen](../ide/productivity-tips-for-visual-studio.md#BKMK_Finding)
+ [Schnelleres Auffinden von Elementen](../ide/productivity-tips-for-visual-studio.md#BKMK_Finding)
 
  [Debuggen von Code](../ide/productivity-tips-for-visual-studio.md#BKMK_Debugging)
 
  [Verwalten von Dateien, Symbolleisten und Fenstern](../ide/productivity-tips-for-visual-studio.md#BKMK_Managing)
 
-## <a name="BKMK_Access"></a>Zugriff auf die Visual Studio-Tools
+## <a name="accessing-visual-studio-tools"></a><a name="BKMK_Access"></a> Zugreifen auf Visual Studio-Tools
  Sie können einfacher auf die Developer-Eingabeaufforderung oder auf ein anderes Tool zugreifen, wenn Sie diese auf der Startseite oder in der Taskleiste fixieren.
 
 1. Geben Sie auf der Startseite `Visual Studio Tools` ein, und drücken sie dann die EINGABETASTE.
@@ -60,7 +60,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
 3. Wählen Sie **An Taskleiste anheften** oder **An „Start“ anheften** aus.
 
-## <a name="BKMK_Writing"></a>Schreiben von Code
+## <a name="writing-code"></a><a name="BKMK_Writing"></a> Schreiben von Code
  Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.
 
 - **Verwenden von Beispielanwendungen**. Sie können Anwendungsentwicklung beschleunigen, indem Sie Beispielanwendungen von der MSDN Code Gallery herunterladen und installieren. Sie können eine bestimmte Technologie oder ein Programmierkonzept auch kennenlernen, indem Sie ein Beispielpaket für diesen Bereich herunterladen und untersuchen.
@@ -81,19 +81,19 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
      Abbildung 1: Fehler-Smarttags
 
-     ![Fehler: Smarttag-Vorschläge](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
+     ![Fehler: Smarttag-Vorschläge](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      In roten Feldern werden Möglichkeiten vorgeschlagen, den Code umzugestalten.
 
      Abbildung 2: Umgestaltungs-Smarttags
 
-     ![Umgestalten: Smarttag-Vorschläge](../ide/media/productivity-redsmarttags.png "|::ref2::|")
+     ![Umgestalten: Smarttag-Vorschläge](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
 
 - **Anzeigen und Bearbeiten der Definition eines Codeelements**. Sie können das Modul schnell anzeigen und bearbeiten, in dem ein Codeelement, wie ein Member, eine Variable oder eine lokale Variable, definiert ist.
 
-     Um eine Definition in einem Popupfenster zu öffnen, markieren Sie das Element und wählen Sie dann die Tasten ALT+F12 aus, oder öffnen Sie das Kontextmenü für das Element, und wählen Sie dann **Definition einsehen** aus. Um eine Definition in einem separaten Codefenster zu öffnen, öffnen Sie das Kontextmenü für das Codeelement, und wählen Sie dann **Gehe zu Definition** aus.
+     Um eine Definition in einem Popup Fenster zu öffnen, markieren Sie das Element, und wählen Sie dann die Tasten ALT + F12 aus, oder öffnen Sie das Kontextmenü für das Element, und wählen Sie dann **Definition**einsehen aus. Um eine Definition in einem separaten Codefenster zu öffnen, öffnen Sie das Kontextmenü für das Codeelement, und wählen Sie dann **Gehe zu Definition** aus.
 
-## <a name="BKMK_Navigating"></a>Navigieren innerhalb des Codes
+## <a name="navigating-within-your-code"></a><a name="BKMK_Navigating"></a> Navigieren in Ihrem Code
  Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code schneller zu finden und dorthin zu wechseln.
 
 - **Speichern von Codezeilen als Lesezeichen**. Sie können Lesezeichen verwenden, um schnell zu bestimmten Codezeilen in einer Datei zu navigieren.
@@ -106,7 +106,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
 - **Durchsuchen der Gesamtstruktur des Codes**. Im **Projektmappen-Explorer** können Sie Klassen und ihre Typen und Member in den Projekten suchen. Sie können auch nach Symbolen suchen, die Aufrufhierarchie einer Methode anzeigen, Symbolverweise suchen und andere Aufgaben ausführen. Wenn Sie ein Codeelement im **Projektmappen-Explorer** auswählen, wird die dazugehörige Datei auf einer Registerkarte **Vorschau** angezeigt, und der Cursor wird auf das Element in der Datei verschoben. Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md).
 
-## <a name="BKMK_Finding"></a> Schnelleres Suchen von Elementen
+## <a name="finding-items-faster"></a><a name="BKMK_Finding"></a> Schnelleres Auffinden von Elementen
  Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeitig die Inhalte der Toolfenster filtern, um relevante Informationen nur für die aktuelle Aufgabe anzuzeigen.
 
 - **Filtern der Inhalte von Toolfenstern**. Sie können in den Inhalten vieler Toolfenster, z. B. der Fenster **Toolbox**, **Eigenschaften** und im **Projektmappen-Explorer** suchen. Es werden aber nur Elemente angezeigt, deren Namen die Zeichen enthalten, die Sie angeben.
@@ -117,16 +117,16 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
      Abbildung 3: Ergebnisliste für Schnellstart für `new project`
 
-     ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity-quicklaunch.png "|::ref3::|")
+     ![Schnellstartergebnisse für "Neues Projekt"](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
-     **Schnellstart** zeigt unter anderem Links zum Dialogfeld **Neues Projekt**, zum Dialogfeld **Neues Element hinzufügen** und zur Projekt- und Projektmappenseite im Dialogfeld **Optionen** an. Ergebnisse des Schnellstarts können auch Projektdateien und Toolfenster enthalten.
+     **Schnellstart** zeigt unter anderem Links zum Dialogfeld **Neues Projekt**, zum Dialogfeld **Neues Element hinzufügen** und zur Seite Projekt- und Projektmappen im Dialogfeld **Optionen** an. Ergebnisse des Schnellstarts können auch Projektdateien und Toolfenster enthalten.
 
-## <a name="BKMK_Debugging"></a>Debuggen von Code
+## <a name="debugging-code"></a><a name="BKMK_Debugging"></a> Code Debuggen
  Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihnen helfen, den Prozess zu beschleunigen.
 
-- **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** zu finden ist, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.
+- **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** angezeigt wird, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.
 
-     ![Auswählen von Debuggingoptionen für den Webbrowser](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
+     ![Webbrowser-Debugoptionen auswählen](../ide/media/webbrowserdropdowntoolbar.png "Debuggingoptionen")
 
 - **Legen Sie temporäre Haltepunkte fest**. Sie können einen temporären Haltepunkt in der aktuellen Zeile des Codes erstellen und gleichzeitig den Debugger starten. Wenn Sie diese Codezeile erreicht haben, gibt der Debugger Unterbrechungsmodus ein. Weitere Informationen finden Sie unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -140,22 +140,22 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
      Zum Hinzufügen eines DataTips muss sich der Debugger im Unterbrechungsmodus befinden. Platzieren Sie den Cursor in der Variablen, und wählen Sie dann die Anheftschaltfläche auf dem angezeigten DataTip aus. Wenn das Debuggen beendet wird, wird in der Quelldatei ein blaues Anheftsymbol neben der Codezeile angezeigt, die die Variable enthält. Wenn Sie auf den blauen Pin zeigen, wird der Wert der Variablen aus der letzten Debugsitzung angezeigt.
 
-- **Löschen Sie das Direktfenster**. Sie können den Inhalt des [Direktfensters](../ide/reference/immediate-window.md) zur Entwurfszeit löschen, indem Sie `>cls` oder `>Edit.ClearAll` eingeben.
+- **Löschen Sie das Direktfenster**. Sie können den Inhalt des [direkt Fensters](../ide/reference/immediate-window.md) zur Entwurfszeit löschen, indem Sie `>cls` oder eingeben. `>Edit.ClearAll`
 
-     Weitere Informationen zu weiteren Befehlen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).
+     Weitere Informationen zu weiteren Befehlen finden Sie unter [Visual Studio-Befehls Aliase](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="BKMK_Managing"></a>Verwalten von Dateien, Symbolleisten und Fenstern
+## <a name="managing-files-toolbars-and-windows"></a><a name="BKMK_Managing"></a> Verwalten von Dateien, Symbolleisten und Fenstern
  Bei der Entwicklung einer Anwendung möchten Sie jederzeit in mehreren Codedateien arbeiten und sich in mehreren Toolfenstern bewegen können. Mit folgenden Tipps behalten Sie die Übersicht.
 
 - **Halten Sie Dateien, die Sie häufig verwenden, im Editor sichtbar**. Sie können die Dateien, die Sie häufig verwenden, an der linken Seite der Registerkartenreihe anheften, damit Sie unabhängig davon, wie viele Dateien im Editor geöffnet sind, sichtbar bleiben.
 
-     Um eine Datei anzuheften, wählen Sie die Registerkarte der Datei, und wählen Sie dann die Schaltfläche **Anheftstatus umschalten** aus.
+     Um eine Datei anzuheften, wählen Sie die Registerkarte der Datei aus, und wählen Sie dann die Schaltfläche **Pin-Status umschalten** aus.
 
-- **Verschieben Sie Dokumente und Fenster auf andere Bildschirme**. Wenn Sie bei der Entwicklung einer Anwendung mehr als einen Bildschirm verwenden, können Sie leichter an Teilen der Anwendung arbeiten, wenn Sie Dateien, die im Editor geöffnet sind, auf einen anderen Bildschirm verschieben. Sie können Toolfenster, wie z. B. Debuggerfenster, auf einen anderen Bildschirm verschieben und Dokument- und -Toolfenster miteinander verbinden, um „Flösse“ zu erstellen. Weitere Informationen finden Sie unter [Gewusst wie: Anordnen und Andocken von Fenstern](../misc/how-to-arrange-and-dock-windows.md).
+- **Verschieben Sie Dokumente und Fenster auf andere Bildschirme**. Wenn Sie bei der Entwicklung einer Anwendung mehr als einen Bildschirm verwenden, können Sie leichter an Teilen der Anwendung arbeiten, wenn Sie Dateien, die im Editor geöffnet sind, auf einen anderen Bildschirm verschieben. Sie können Toolfenster, wie z. B. Debuggerfenster, auf einen anderen Bildschirm verschieben und Dokument- und -Toolfenster miteinander verbinden, um „Flösse“ zu erstellen. Weitere Informationen finden Sie unter Gewusst [wie: anordnen und Andocken von Fenstern](../misc/how-to-arrange-and-dock-windows.md).
 
      Sie können Dateien auch einfacher verwalten, indem Sie eine weitere Instanz des **Projektmappen-Explorers** erstellen und sie auf einen anderen Bildschirm verschieben. Um eine andere Instanz des **Projektmappen-Explorers** zu erstellen, öffnen Sie ein Kontextmenü im **Projektmappen-Explorer**, und wählen Sie dann **Neue Projektmappen-Explorer-Ansicht** aus.
 
-- **Passen Sie die Schriftarten an, die in Visual Studio angezeigt werden**. Sie können die Schriftart, Größe und Farbe ändern, die für Text in der IDE verwendet wird. Beispielsweise können Sie die Farbe von bestimmten Codeelementen im Editor und die Schriftart in Toolfenstern oder in der IDE anpassen. Weitere Informationen finden Sie unter [Gewusst wie: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) und [Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Passen Sie die Schriftarten an, die in Visual Studio angezeigt werden**. Sie können die Schriftart, Größe und Farbe ändern, die für Text in der IDE verwendet wird. Beispielsweise können Sie die Farbe von bestimmten Codeelementen im Editor und die Schriftart in Toolfenstern oder in der IDE anpassen. Weitere Informationen finden Sie unter Gewusst [wie: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) und Gewusst [wie: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Tipps und Tricks zur Barrierefreiheit für Visual Studio](../ide/reference/accessibility-tips-and-tricks.md)

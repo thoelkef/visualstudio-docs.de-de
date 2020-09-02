@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160640"
 ---
 # <a name="execution-profile-report"></a>Ausführungsprofilbericht
@@ -31,16 +31,16 @@ Der Ausführungsprofilbericht ist ein herkömmliches Samplingprofil. Samplings w
   
   Die folgende Tabelle zeigt die Spalten im Bericht.  
   
-|Spalte|BESCHREIBUNG|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
-|name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|  
+|Name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|  
 |Inklusive Samplings|Die Gesamtzahl von Samplings, die für alle Stapel erfasst werden, die diese Ebene der Aufruflistenstruktur bilden. Die inklusive Anzahl ist die Summe der exklusiven Samplings für diese Funktion und der inklusiven Anzahl für alle untergeordneten Knoten.|  
 |Exklusive Stichproben|Die Gesamtzahl erfasster Samplings, für die diese Funktion die niedrigste Ebene der Aufrufliste bildet.|  
 |% inklusive|Der Prozentsatz der gesamten Samplings, die in der Spalte für inklusive Samplings angezeigt werden. Prozentsätze werden auf zwei Dezimalstellen gerundet.|  
 |% exklusive|Der Prozentsatz der gesamten Samplings, die in der Spalte für exklusive Samplings angezeigt werden. Prozentsätze werden auf zwei Dezimalstellen gerundet.|  
 |Details|Der vollqualifizierte Name der Funktion. Darin eingeschlossen ist die Zeilenanzahl, sofern verfügbar.|  
   
- Diese Berichtstabelle kann in der Ansicht [Ausführungszeit (Threadansicht)](../profiling/execution-time-threads-view.md) angezeigt werden.  
+ Diese Berichts Tabelle ist in der Ansicht [Ausführungszeit (Thread Ansicht)](../profiling/execution-time-threads-view.md) zu sehen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
