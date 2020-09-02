@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74876063"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Erstellen von SharePoint-Lösungs Paketen
@@ -26,35 +26,35 @@ ms.locfileid: "74876063"
 ## <a name="packaging-tools"></a>Paket Erstellungs Tools
  Sie können den **Paket-Designer** verwenden, um das Paket anzupassen und das Manifest zu generieren. Sie können SharePoint-Projektelemente einschließen, konfigurieren, ob der Webserver zurückgesetzt werden soll, und den Bereitstellungsservertyp festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und Entfernen von Features und Elementen in einem Paket mit dem Paket-Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
 
- Alternativ können Sie den Paket- **Explorer** verwenden, um die Features und Elemente in der Paketdatei ( *. wsp*) zu ändern. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und Entfernen von Features und Elementen in einem Paket mit dem Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+ Alternativ können Sie den Paket- **Explorer** verwenden, um die Features und Elemente in der Paketdatei (*. wsp*) zu ändern. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und Entfernen von Features und Elementen in einem Paket mit dem Paket-Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
 
- Sie können Visual Studio und MSBuild verwenden, um Paketdateien ( *. wsp*) zum Bereitstellen der SharePoint-Lösung zu erstellen. Bei diesem Vorgang werden die für die SharePoint-Bereitstellung benötigten Manifestdateien generiert. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Tasks](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
+ Sie können Visual Studio und MSBuild verwenden, um Paketdateien (*. wsp*) zum Bereitstellen der SharePoint-Lösung zu erstellen. Bei diesem Vorgang werden die für die SharePoint-Bereitstellung benötigten Manifestdateien generiert. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Tasks](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
 
 ## <a name="package-designer-options"></a>Paket-Designer-Optionen
  In der folgenden Tabelle sind die Eigenschaften aufgeführt, die Sie in SharePoint-Paketen mit dem **Paket-Designer**anpassen können.
 
 |Eigenschaft des Paket-Designers|Beschreibung der Standardeinstellung|
 |-------------------------------|------------------------------------|
-|-Name|Erforderlich Der Standardname des Pakets ist auf *ProjectName*festgelegt.|
-|Webserver zurücksetzen|Dies ist optional. Wählen Sie diese Option aus, wenn Sie den Webserver neu starten möchten, nachdem die *wsp* -Datei auf dem SharePoint-Server installiert wurde.|
-|Bereitstellungsservertyp|Dies ist optional. Stellt den Typ des Servers dar, auf dem das Paket gehostet wird. Wenn diese Einstellung nicht festgelegt ist, wird standardmäßig Webfrontend verwendet.<br /><br /> ApplicationServer: Beschreibt einen Server, der Dienste hostet.<br /><br /> Webfrontend: Beschreibt einen Server, der Websites hostet.|
+|Name|Erforderlich. Der Standardname des Pakets ist auf *ProjectName*festgelegt.|
+|Webserver zurücksetzen|Optional. Wählen Sie diese Option aus, wenn Sie den Webserver neu starten möchten, nachdem die *wsp* -Datei auf dem SharePoint-Server installiert wurde.|
+|Bereitstellungsservertyp|Optional. Stellt den Typ des Servers dar, auf dem das Paket gehostet wird. Wenn diese Einstellung nicht festgelegt ist, wird standardmäßig Webfrontend verwendet.<br /><br /> ApplicationServer: Beschreibt einen Server, der Dienste hostet.<br /><br /> Webfrontend: Beschreibt einen Server, der Websites hostet.|
 |Elemente in der Lösung|Alle SharePoint-Projektelemente und -Funktionen, die dem Paket hinzugefügt werden können.|
-|Elemente in diesem Paket|Dies ist optional. Alle SharePoint-Elemente und -Funktionen, die Sie im Paket bereitstellen möchten.|
+|Elemente in diesem Paket|Optional. Alle SharePoint-Elemente und -Funktionen, die Sie im Paket bereitstellen möchten.|
 
 ## <a name="configure-the-packaging-process"></a>Konfigurieren des Paket Erstellungs Prozesses
- Nachdem Sie SharePoint-Lösungen in Visual Studio entwickelt haben, können Sie anpassen, wie die Projekte verpackt werden.
+ Nachdem Sie SharePoint-Lösungen in Visual Studio entwickelt haben, können Sie anpassen, wie die Projekte gepackt werden.
 
  In der folgenden Tabelle sind die beiden MSBuild-Ziele aufgeführt, mit denen Sie anpassen können, wie die *wsp* -Datei erstellt wird.
 
 |Target|Beschreibung|
 |------------|-----------------|
-|BeforeLayout|Das Ziel, das sofort Aufgaben ausführt, bevor die Dateien in ein Zwischenverzeichnis kopiert werden. Sie können die Dateien vor dem Erstellen einer Paketdatei ( *. wsp*) ändern.|
+|BeforeLayout|Das Ziel, das sofort Aufgaben ausführt, bevor die Dateien in ein Zwischenverzeichnis kopiert werden. Sie können die Dateien vor dem Erstellen einer Paketdatei (*. wsp*) ändern.|
 |AfterLayout|Das Ziel, das sofort Aufgaben ausführt, nachdem die Dateien in ein Zwischenverzeichnis kopiert wurden.|
 
  Weitere Informationen finden Sie unter Gewusst [wie: Anpassen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).
 
 ## <a name="packaging-architecture"></a>Verpackungs Architektur
- Die folgenden Schritte werden ausgeführt, wenn Sie ein SharePoint-Paket ( *. wsp*) in Visual Studio erstellen.
+ Die folgenden Schritte werden ausgeführt, wenn Sie ein SharePoint-Paket (*. wsp*) in Visual Studio erstellen.
 
 1. Der Funktionen und Pakete werden überprüft, um sicherzustellen, dass die physikalische und semantische Struktur des Pakets richtig ist.
 
@@ -69,9 +69,9 @@ ms.locfileid: "74876063"
 6. Die Dateien im zwischen Verzeichnis werden der *wsp* -Datei hinzugefügt.
 
 ## <a name="package-folder-structure"></a>Paketordnerstruktur
- Wenn Sie das SharePoint-Projekt Verpacken, wird eine *wsp* -Datei im Ordner *solutionfolder\bin\\\<buildconfiguration >* erstellt. Wenn sich Ihre Projekt Mappe beispielsweise in " *c:\Visual Studio 2013 \ Projects\ListDefinition1* " befindet und die Buildkonfiguration auf "Release" festgelegt ist, befindet sich die *wsp* -Datei unter " *c:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*".
+ Wenn Sie das SharePoint-Projekt Verpacken, wird für Sie eine *wsp* -Datei im Ordner *solutionfolder\bin \\ \<BuildConfiguration> * erstellt. Wenn sich Ihre Projekt Mappe beispielsweise in " *c:\Visual Studio 2013 \ Projects\ListDefinition1* " befindet und die Buildkonfiguration auf "Release" festgelegt ist, befindet sich die *wsp* -Datei unter " *c:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu einem Paket mit dem Paket-Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Vorgehensweise: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

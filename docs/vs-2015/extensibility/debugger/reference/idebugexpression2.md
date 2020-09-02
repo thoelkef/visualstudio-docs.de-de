@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ec8b26f422ca39b771a47f8eb60ee862d7d388f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568368"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle stellt eine einsatzbereite analysierten Ausdruck für die Bindung und auswerten.  
+Diese Schnittstelle stellt einen analysierten Ausdruck dar, der für das Binden und auswerten bereit ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,34 +31,34 @@ IDebugExpression2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle, um einen analysierten Ausdruck zur Auswertung bereiter darstellen.  
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um einen analysierten Ausdruck darzustellen, der für die Auswertung bereit ist.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ein Aufruf von [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) dieser Schnittstelle zurück. [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) gibt die [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstelle. Diese Schnittstellen sind zugegriffen werden kann, nur, wenn das derzeit debuggte Programm angehalten wurde und ein Stapelrahmen verfügbar ist.  
+ Ein [aufruftertext](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) gibt diese Schnittstelle zurück. [Getexpressioncontext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) gibt die [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle zurück. Diese Schnittstellen sind nur verfügbar, wenn das Programm, das gedebuggt wird, angehalten wurde und ein Stapel Rahmen verfügbar ist.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugExpression2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugExpression2` .  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Wertet diesen Ausdruck asynchron aus.|  
-|[Abort](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone ausdrucksauswertung.|  
+|[Abbruch](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone Ausdrucks Auswertung.|  
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Wertet diesen Ausdruck synchron aus.|  
   
-## <a name="remarks"></a>Hinweise  
- Wenn ein Programm angehalten wurde, erhält der sitzungsbasierter Debug-Manager (SDM) einen Stapelrahmen aus dem DE mit einem Aufruf von [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Klicken Sie dann aufruft, das SDM [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) zum Abrufen der [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstelle. Darauf folgt ein Aufruf von [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) zum Erstellen der `IDebugExpression2` -Schnittstelle, die den analysierten Ausdruck zur Auswertung bereiter darstellt.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn ein Programm angehalten wurde, erhält der Sitzungs-Debug-Manager (SDM) einen Stapel Rahmen von der de mit einem aufzurufenden [enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)-Aufrufs. Der SDM ruft dann [getexpressioncontext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) auf, um die [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle zu erhalten. Darauf folgt ein aufruftertext [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) zum Erstellen der- `IDebugExpression2` Schnittstelle, die den analysierten Ausdruck darstellt, der für die Auswertung bereit ist.  
   
- Das SDM Ruft entweder [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) wertet den Ausdruck und Wert erzeugen kann.  
+ Der SDM ruft entweder [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) auf, um den Ausdruck tatsächlich auszuwerten und einen Wert zu erhalten.  
   
- In einer Implementierung der `IDebugExpressionContext2::ParseText`, die DE verwendet COM `CoCreateInstance` -Funktion zum Instanziieren einer ausdrucksauswertung und erhalten eine [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) Schnittstelle (Siehe das Beispiel in der `IDebugExpressionEvaluator` Schnittstelle). Ruft die DE dann [analysieren](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) zum Abrufen einer [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Schnittstelle. Diese Schnittstelle wird verwendet, bei der Implementierung der `IDebugExpression2::EvaluateSync` und `IDebugExpression2::EvaluateAsync` um die Auswertung auszuführen.  
+ In einer Implementierung von `IDebugExpressionContext2::ParseText` verwendet de die com- `CoCreateInstance` Funktion, um eine Ausdrucks Auswertung zu instanziieren und eine [idebugexpressionevaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) -Schnittstelle zu erhalten (siehe das Beispiel in der- `IDebugExpressionEvaluator` Schnittstelle). Das de-Element [ruft dann](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) die Analyse auf, um eine [idebugparamesetdexpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) -Schnittstelle zu erhalten. Diese Schnittstelle wird in der Implementierung von `IDebugExpression2::EvaluateSync` und verwendet `IDebugExpression2::EvaluateAsync` , um die Auswertung durchzuführen.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)

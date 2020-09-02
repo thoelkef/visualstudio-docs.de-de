@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42ac8c5d7c00be51b3accc662fb0ffb52b5bfab3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198056"
 ---
-# <a name="profilecurrentid"></a>PROFILE_CURRENTID
+# <a name="profile_currentid"></a>PROFILE_CURRENTID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 PROFILE_CURRENTID gibt das Pseudotoken für die Thread-ID oder die Prozess-ID in einem Aufruf der Funktionen NameProfile, StartProfile, StopProfile, SuspendProfile und ResumeProfile zurück. Verwenden Sie das Token, damit die Funktion den aktuellen Thread oder Prozess verarbeitet anstatt eines ausdrücklich angegebenen.  
@@ -60,10 +60,10 @@ void ExerciseProfileCurrentID()
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)   
- [NameProfile](../profiling/nameprofile.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Visual Studio Profiler-API-Referenz (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)   
+ [Name profile](../profiling/nameprofile.md)   
  [ResumeProfile](../profiling/resumeprofile.md)   
- [StartProfile](../profiling/startprofile.md)   
- [StopProfile](../profiling/stopprofile.md)   
+ [Start profile](../profiling/startprofile.md)   
+ [Stop profile](../profiling/stopprofile.md)   
  [SuspendProfile](../profiling/suspendprofile.md)

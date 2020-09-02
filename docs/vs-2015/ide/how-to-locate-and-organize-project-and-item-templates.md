@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651869"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen
@@ -40,7 +40,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
 
   Das folgende Verzeichnis enthält beispielsweise die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagen für Englisch:
 
-  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C: \\ *visualstudioinstallationdirectory*\common7\ide\itemtemplates\visualbasic\1033\
 
 ### <a name="custom-templates"></a>Benutzerdefinierte Vorlagen
  Benutzerdefinierte Vorlagen befinden sich standardmäßig in folgenden Verzeichnissen:
@@ -80,7 +80,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
 
 5. Suchen Sie an der Eingabeaufforderung das Verzeichnis, das „devenv.exe“ enthält, und geben Sie **devenv /installvstemplates** ein.
 
-6. Führen Sie aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Führen Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus.
 
 7. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
 
@@ -92,7 +92,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
 
 1. Erstellen Sie einen Ordner im Programmiersprachenordner des Verzeichnisses für die installierte Vorlage. Um z. B. die Kategorie Web für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Elementvorlagen einzurichten, würden Sie das folgende Verzeichnis erstellen:
 
-     \\ *\VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\
+     \\*\VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\
 
 2. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.
 
@@ -102,7 +102,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
 
 5. Suchen Sie an der Eingabeaufforderung das Verzeichnis, das „devenv.exe“ enthält, und geben Sie **devenv /setup** ein.
 
-6. Führen Sie aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Führen Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus.
 
 7. Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt.
 
@@ -172,5 +172,5 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
 
 8. Fügen Sie die neue ZIP-Datei in das Verzeichnis ein, in dem sich die gelöschte ZIP-Datei befunden hat.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md) in der [Visual Studio-Vorlagen Schema Referenz](../extensibility/visual-studio-template-schema-reference.md) " [numofparametecategoriestorollup" (Visual Studio-Vorlagen)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) Gewusst [wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md) Gewusst [wie: Erstellen von Element Vorlagen](../ide/how-to-create-item-templates.md)

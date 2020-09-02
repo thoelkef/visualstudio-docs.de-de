@@ -15,28 +15,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197590"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump-Beispiel
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dia2dump-Beispiel mit Visual Studio installiert ist und die Quelldatei dia2dump.cpp enthält. Die kompilierte ausführbare Datei ausgeführt wird, von der Befehlszeile aus und zeigt den Inhalt von einem gesamten Programmdatenbankdatei (.pdb).  
+Das Dia2dump-Beispiel wird mit Visual Studio installiert und enthält die Dia2dump. cpp-Quelldatei. Die kompilierte ausführbare Datei wird von der Befehlszeile aus ausgeführt und zeigt den Inhalt einer gesamten Programm Datenbankdatei (. pdb) an.  
   
 ### <a name="to-install-the-sample"></a>So installieren Sie das Beispiel  
   
-1. Stellen Sie sicher, dass das System alle in der Visual Studio-Setup-Startseite beschriebene setupanforderungen erfüllt.  
+1. Stellen Sie sicher, dass Ihr System alle Setup Anforderungen erfüllt, die auf der Visual Studio-Setup-Startseite beschrieben werden  
   
-2. Installieren von Visual Studio aus, und befolgen Sie alle Setup und Installation-Anweisungen für diese enthaltenen Beispiele.  
+2. Installieren Sie Visual Studio, und befolgen Sie alle Setup-und Installationsanweisungen für die enthaltenen Beispiele.  
   
 #### <a name="to-build-the-sample"></a>So erstellen Sie das Beispiel  
   
-1. Öffnen Sie die Datei Dia2dump.sln in Visual Studio. (Falls erforderlich, Visual Studio zunächst das Dia2dump-Projekt aktualisieren, helfen Ihnen.)  
+1. Öffnen Sie die Datei Dia2dump. sln in Visual Studio. (Bei Bedarf unterstützt Visual Studio zunächst das Upgrade des Dia2dump-Projekts.)  
   
-2. In den Eigenschaftenseiten des Projekts in der **C/C++-** &#124; **allgemeine** &#124; **Additional Include Directories** -Eigenschaft, geben Sie die `..\DIA SDK\include` Verzeichnis. Dadurch wird sichergestellt, dass der Compiler die Datei dia2.h finden kann.  
+2. Geben Sie auf den Eigenschaften Seiten des Projekts in der Eigenschaft **C/C++** &#124; **Allgemeine** &#124; **zusätzliche include-Verzeichnisse** das `..\DIA SDK\include` Verzeichnis an. Dadurch wird sichergestellt, dass der Compiler die Datei "dia2. h" finden kann.  
   
 3. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**.  
   
@@ -44,12 +44,12 @@ Dia2dump-Beispiel mit Visual Studio installiert ist und die Quelldatei dia2dump.
   
 #### <a name="to-run-the-sample"></a>So führen Sie das Beispiel aus  
   
-1. Öffnen Sie eine Eingabeaufforderung, und geben Sie Folgendes:  
+1. Öffnen Sie eine Eingabeaufforderung, und geben Sie Folgendes ein:  
   
     ```  
     dia2dump filename  
     ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Quelldatei Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Dia2dump. cpp-Quelldatei](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
  [Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)

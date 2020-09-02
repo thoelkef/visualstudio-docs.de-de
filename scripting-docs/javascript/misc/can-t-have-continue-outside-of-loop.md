@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e1223b3cee7f0246d8d685260fb6ea9ad0045347
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817644"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>"continue" ist außerhalb der Schleife unzulässig
 Sie haben versucht, die **Continue** -Anweisung außerhalb einer-Schleife zu verwenden. Die **Continue** -Anweisung kann nur im Text eines verwendet werden:  
   
-- `do-while`ESE  
+- `do-while` ESE  
   
-- `while`ESE  
+- `while` ESE  
   
 - **for** -Schleife,  
   
@@ -36,9 +36,9 @@ Sie haben versucht, die **Continue** -Anweisung außerhalb einer-Schleife zu ver
   
 - Stellen Sie sicher, dass die **Continue** -Anweisung innerhalb des Texts eines angezeigt wird:  
   
-  - `do-while`ESE  
+  - `do-while` ESE  
 
-  - `while`ESE  
+  - `while` ESE  
 
   - **for** -Schleife,  
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::EnumPrograms | Microsoft Docs
+title: 'IDebugEngine2:: enumprograms | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5ab53366b228077ab3c3cc6b1ab38ee5d0383dcd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731100"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
-Ruft eine Liste aller Programme ab, die von einem Debugmodul (DE) gedebuggt werden.
+Ruft eine Liste aller Programme ab, die von einer Debug-Engine (de) debuggt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int EnumPrograms( 
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt ein [IEnumDebugPrograms2-Objekt](../../../extensibility/debugger/reference/ienumdebugprograms2.md) zurück, das eine Liste aller Programme enthält, die von einem DE gedebuggt werden.
+vorgenommen Gibt ein [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) -Objekt zurück, das eine Liste aller Programme enthält, die von einer de debuggt werden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

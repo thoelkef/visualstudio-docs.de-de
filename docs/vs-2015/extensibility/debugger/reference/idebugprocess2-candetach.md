@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CanDetach | Microsoft-Dokumentation
+title: 'IDebugProcess2:: candetach | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd96442ad3639aa03fa894facbbc9e6dbe3bbd21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188084"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bestimmt, ob die sitzungsbasierter Debug-Manager (SDM) den Prozess trennen kann.  
+Bestimmt, ob der Sitzungs-Debug-Manager (SDM) den Prozess trennen kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,8 +37,8 @@ int CanDetach();
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK.` gibt `S_FALSE` , wenn der Debugger eine Trennen vom Prozess nicht möglich. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird zurückgegeben, `S_OK.` `S_FALSE` Wenn der Debugger nicht vom Prozess trennen kann. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
- [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Candetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

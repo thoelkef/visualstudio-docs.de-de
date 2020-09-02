@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f9df8d85c600cd383a9a9059e689e6cb9f232d8f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668039"
 ---
 # <a name="how-to-create-starter-kits"></a>Gewusst wie: Erstellen von Starter Kits
@@ -51,5 +51,5 @@ Ein Starter Kit enthält Code für eine vollständige Anwendung und Dokumentatio
 
  Vorgehens [Weise: Aktualisieren vorhandener Vorlagen](../ide/how-to-update-existing-templates.md) Beschreibt, wie eine exportierte Vorlage bearbeitet wird. Verwenden Sie dieses Verfahren zum Ändern der VSTEMPLATE-Datei, um Ihr Starter Kit anzupassen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md) [Schema Referenz zu Visual Studio](../extensibility/visual-studio-template-schema-reference.md) -Vorlagen

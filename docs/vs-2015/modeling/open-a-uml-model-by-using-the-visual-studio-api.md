@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668507"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Öffnen eines UML-Modells über die Visual Studio-API
@@ -29,10 +29,10 @@ Sie können Modelle und Diagramme auch über die API in der Visual Studio-Benut
 
 - Ein Modell kann im schreibgeschützten Modus geöffnet werden. Weitere Informationen finden Sie unter [Lesen eines UML-Modells im Programmcode](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Showing"></a>Öffnen von Modellen und Diagrammen in Visual Studio
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> Öffnen von Modellen und Diagrammen in Visual Studio
  Verwenden Sie die Visual Studio-Standard-API `EnvDTE.DTE`, um ein Modell auf der Benutzeroberfläche zu öffnen. Für Modellierungsprojektelemente können zwei hilfreiche Umwandlungen ausgeführt werden:
 
-- `EnvDTE.Project` kann in `IModelingProject` umgewandelt werden (und umgekehrt), sofern es sich bei dem Projekt um ein Modellierungsprojekt handelt und das Projekt in der aktuellen Anwendungsdomäne geladen ist.
+- `EnvDTE.Project` kann in und aus umgewandelt werden `IModelingProject` , wenn das Projekt ein Modellierungsprojekt ist, und wenn das Projekt in die aktuelle AppDomain geladen wird.
 
 - `EnvDTE.ProjectItem` kann zu `IDiagramContext` umgewandelt werden (und umgekehrt), wenn es sich bei dem Element um ein UML-Diagramm handelt.
 
@@ -115,5 +115,5 @@ foreach (ProjectItem item in project.ProjectItems)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Programmieren mit der UML-API Erweitern von](../modeling/programming-with-the-uml-api.md) [UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)
