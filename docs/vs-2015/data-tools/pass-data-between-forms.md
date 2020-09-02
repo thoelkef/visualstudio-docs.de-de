@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e14165ba2111f40898c00b3d01950425c042070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652910"
 ---
 # <a name="pass-data-between-forms"></a>Übergeben von Daten zwischen Formularen
@@ -51,7 +51,7 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
 
 - Übergeben von Daten zwischen Formularen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Zugriff auf die Beispieldatenbank Northwind.
@@ -74,13 +74,13 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
 
 1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus, um den Assistenten zum **Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.
 
 4. Stellen Sie sicher, dass **Dataset** auf der Seite **Datenbankmodell auswählen** festgelegt ist, und klicken Sie dann auf **Weiter**.
 
-5. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** einen der folgenden Schritte aus:
+5. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** aus einen der folgenden Schritte aus:
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
@@ -146,7 +146,7 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
 
 6. Klicken Sie auf **Weiter**.
 
-7. Geben Sie für den **datatablemethod-Namen ausfüllen `FillByCustomerID` ein**.
+7. Geben Sie für den **datatablemethod-Namen ausfüllen den Namen ein** `FillByCustomerID` .
 
 8. Löschen Sie die Option **DataTable zurückgeben**, und klicken Sie anschließend **Weiter**.
 
@@ -195,5 +195,5 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
 
 - Hinzufügen einer Funktion für das Zurückspeichern von Daten in der Datenbank. Weitere Informationen finden Sie unter [Speichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

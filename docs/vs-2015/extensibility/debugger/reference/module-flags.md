@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae51d604f455b12fd6933a54954b75a97aea4eb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547467"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Dient zum Beschreiben eines Moduls.  
+Wird verwendet, um ein Modul zu beschreiben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,35 +51,35 @@ public enum enum_MODULE_FLAGS { 
   
 ## <a name="members"></a>Member  
  MODULE_FLAG_NONE  
- Gibt an, kein Modul.  
+ Gibt kein Modul an.  
   
  MODULE_FLAG_SYSTEM  
- Gibt an, ein Systemmodul.  
+ Gibt ein Systemmodul an.  
   
  MODULE_FLAG_SYMBOLS  
- Gibt ein Symbol-Modul an.  
+ Gibt ein Symbol Modul an.  
   
  MODULE_FLAG_64BIT  
- Gibt an, ein 64-Bit-Modul.  
+ Gibt ein 64-Bit-Modul an.  
   
  MODULE_FLAG_OPTIMIZED  
- Gibt an, dass das Modul optimiert wurde. Dieser Status wird wiedergegeben, der **Module** Fenster.  
+ Gibt an, dass das Modul optimiert wurde. Dieser Status wird im Fenster **Module** widergespiegelt.  
   
  MODULE_FLAG_UNOPTIMIZED  
- Gibt an, dass das Modul nicht optimiert wurde. Dieser Status wird wiedergegeben, der **Module** Fenster. Dies ist der Standardzustand.  
+ Gibt an, dass das Modul nicht optimiert wurde. Dieser Status wird im Fenster **Module** widergespiegelt. Dies ist die Standardeinstellung.  
   
-## <a name="remarks"></a>Hinweise  
- Verwendet für die `m_dwModuleFlags` Mitglied der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird für den `m_dwModuleFlags` Member der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) -Struktur verwendet.  
   
- Diese Flags können kombiniert werden, mit einer bitweisen `OR`.  
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

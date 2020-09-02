@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157788"
 ---
 # <a name="status"></a>Status
@@ -32,19 +32,19 @@ VSPerfCmd.exe /Status
 #### <a name="parameters"></a>Parameter  
  Keine  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Bemerkungen  
  Die Option **Status** zeigt die folgenden Statusinformationen für den Profiler an.  
   
  **Name der Ausgabedatei**  
  Der Pfad und der Name der aktuellen Profiler-Datendatei  
   
- **Sammlungsmodus**  
+ **Sammlungs Modus**  
  SAMPLE oder TRACE  
   
  **Maximale Anzahl von Prozessen**  
  Die maximale Anzahl von Prozessen, für die gleichzeitig ein Profil erstellt werden kann und die maximale Anzahl der derzeit aktiven Prozesse  
   
- **Maximale Anzahl von Threads**  
+ **Maximale Threads**  
  Die maximale Anzahl von Threads, für die gleichzeitig ein Profil erstellt werden kann  
   
  **Anzahl der Puffer**  
@@ -55,7 +55,7 @@ VSPerfCmd.exe /Status
   
  Die Option **Status** zeigt die folgenden Statusinformationen für jeden Prozess an, für den gerade ein Profil erstellt wird.  
   
- **Process**  
+ **Prozess**  
  Der Name des Prozesses, für den ein Profil erstellt wurde  
   
  **Prozess-ID**  
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Status
  **Benutzer mit Zugriffsrechten für die Überwachung**  
  Listet die Namen der Benutzer mit Zugriff auf den Profiler auf. Zusätzlichen Benutzern kann mithilfe der VSPerfCmd.exe-Option **Admin** Zugriff gewährt werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

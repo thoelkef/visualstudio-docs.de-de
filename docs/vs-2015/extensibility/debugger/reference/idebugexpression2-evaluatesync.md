@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Microsoft-Dokumentation
+title: 'IDebugExpression2:: evaluatesync | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 602a823e4066aff40d1f6271a20b480bb4a92f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158428"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode wertet den Ausdruck synchron.  
+Diese Methode wertet den Ausdruck synchron aus.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,30 +46,30 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parameter  
  `dwFlags`  
- [in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die Auswertung des Ausdrucks steuern.  
+ in Eine Kombination von Flags aus der [evalflags](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die die Ausdrucks Auswertung steuern.  
   
  `dwTimeout`  
- [in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.  
+ in Maximale Zeit in Millisekunden, die gewartet werden soll, bevor diese Methode zurückgegeben wird. Verwenden `INFINITE` Sie, um unbegrenzt zu warten.  
   
  `pExprCallback`  
- [in] Dieser Parameter ist immer ein null-Wert.  
+ in Dieser Parameter ist immer ein NULL-Wert.  
   
  `ppResult`  
- [out] Gibt die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das das Ergebnis der Auswertung des Ausdrucks enthält.  
+ vorgenommen Gibt das [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt zurück, das das Ergebnis der Ausdrucks Auswertung enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Einige typische Fehlercodes sind:  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben. Einige typische Fehlercodes sind:  
   
 |Fehler|Beschreibung|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Derzeit einem anderen Ausdruck ausgewertet wird, und gleichzeitige ausdrucksauswertung wird nicht unterstützt.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Zurzeit wird ein anderer Ausdruck ausgewertet, und die gleichzeitige Auswertung von Ausdrücken wird nicht unterstützt.|  
 |E_EVALUATE_TIMEOUT|Timeout bei der Auswertung.|  
   
-## <a name="remarks"></a>Hinweise  
- Für die synchrone Evaluierung ist es nicht erforderlich, zum Senden eines Ereignisses zu Visual Studio nach Abschluss der Auswertung zurück.  
+## <a name="remarks"></a>Bemerkungen  
+ Bei der synchronen Auswertung ist es nicht notwendig, nach Abschluss der Auswertung ein Ereignis zurück an Visual Studio zu senden.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CExpression` Objekt, das implementiert die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches `CExpression` Objekt implementiert wird, das die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle implementiert.  
   
 ```cpp#  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
@@ -116,8 +116,8 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
- [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
+ [Evalflags](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

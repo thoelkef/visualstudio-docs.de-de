@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d48fcf9dd941194b56e2c794ad7f5673f8e58421
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159313"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt die Flags für die Disassemblierung.  
+Gibt die Flags für die Disassembly an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,35 +51,35 @@ public enum enum_DISASSEMBLY_FLAGS { 
   
 ## <a name="members"></a>Member  
  DF_DOCUMENTCHANGE  
- Gibt an, dass diese Anweisung in einem anderen Dokument als die vorherige Version.  
+ Gibt an, dass sich diese Anweisung in einem anderen Dokument als die vorherige Anweisung befindet.  
   
  DF_DISABLED  
  Gibt an, dass diese Anweisung nicht ausgeführt wird.  
   
  DF_INSTRUCTION_ACTIVE  
- Gibt an, dass diese Anweisung den nächsten Anweisungen ausgeführt werden (möglicherweise mehr als eine).  
+ Gibt an, dass es sich bei dieser Anweisung um eine der nächsten auszuführenden Anweisungen handelt (möglicherweise gibt es mehr als eine).  
   
  DF_DATA  
- Gibt an, dass diese Anweisung wirklich Daten (nicht Code).  
+ Gibt an, dass diese Anweisung wirklich Daten (nicht Code) ist.  
   
  DF_HASSOURCE  
- Gibt an, dass diese Anweisung Quelle verfügt. Einige Anweisungen, z. B. profilerstellung oder Garbage Collection-Code, verfügen über keine entsprechende Quelle.  
+ Gibt an, dass diese Anweisung über eine Quelle verfügt. Einige Anweisungen, wie z. b. Profilerstellung oder Garbage Collection Code, verfügen nicht über die entsprechende Quelle.  
   
  DF_DOCUMENT_CHECKSUM  
- Gibt an, dass `bstrDocumentUrl` Feld Prüfsummendaten enthält, nach der Dokument-URL. Finden Sie im Abschnitt "Hinweise" der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur wie die Prüfsummendaten gespeichert werden.  
+ Gibt an, dass das `bstrDocumentUrl` Feld Prüfsummen Daten nach der Dokument-URL enthält. Weitere Informationen zur Speicherung der Prüfsummen Daten finden Sie im Abschnitt "Hinweise" für die [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Struktur.  
   
-## <a name="remarks"></a>Hinweise  
- Verwendet als die `dwFlags` Mitglied der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird als `dwFlags` Member der [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Struktur verwendet.  
   
- Diese Flags können kombiniert werden, mit einer bitweisen `OR`.  
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

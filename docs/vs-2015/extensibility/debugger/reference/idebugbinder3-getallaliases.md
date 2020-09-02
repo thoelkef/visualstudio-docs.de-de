@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases | Microsoft-Dokumentation
+title: 'IDebugBinder3:: getallaliases | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc2075ccc37d280640f7559b1454990ee6684f25
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555747"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft eine Liste der Aliase ab, aus dem Programm.  
+Diese Methode ruft eine Liste von Aliasen aus dem Programm ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,16 +44,16 @@ int GetAllAliases(
   
 #### <a name="parameters"></a>Parameter  
  `uRequest`  
- [in] Die maximale Anzahl von Aliasen zu zurückgeben (gibt die Länge des übergebenen Arrays `ppAliases`).  
+ in Die maximale Anzahl von Aliasen, die zurückgegeben werden sollen (gibt die Länge des an übergebenen Arrays an `ppAliases` ).  
   
  `ppAliases`  
- [in, out] Mit Aliasen auszufüllende Array (ist dies ein null-Wert und `uRequest` gleich 0 ist, wird die Anzahl der Aliase, die zurückgegeben werden können, zurückgegeben werden, indem `puFetched`).  
+ [in, out] Array, das mit Aliasen ausgefüllt werden soll (wenn es sich um einen NULL-Wert handelt und `uRequest` 0 ist, wird die Anzahl der Aliase, die zurückgegeben werden können, von zurückgegeben `puFetched` ).  
   
  `puFetched`  
- [out] Gibt die Anzahl von Aliasen abgerufen.  
+ vorgenommen Gibt die Anzahl der abgewonnenen Aliase zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Get_lasterror | Microsoft-Dokumentation'
+title: 'IDiaDataSource:: get_lastError | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ad0570436dda6ac9ae52325c891b32a563cf6f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547363"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft den Dateinamen für die letzten Ladefehler ab.  
+Ruft den Dateinamen für den letzten Ladefehler ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ HRESULT get_lastError (
   
 #### <a name="parameters"></a>Parameter  
  pRetVal  
- [out] Gibt eine Zeichenfolge, die den letzten zugeordneten PDB-Dateinamen enthält.  
+ vorgenommen Gibt eine Zeichenfolge zurück, die den Namen der PDB-Datei enthält, die dem letzten Ladefehler zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt den letzten Fehlercode, der einen Ladevorgang zurückzuführen. Gibt `E_INVALIDARG` Wenn die `pRetVal` Parameter `NULL`.  
+ Gibt den letzten Fehlercode zurück, der durch einen Ladevorgang verursacht wurde. Gibt zurück, `E_INVALIDARG` Wenn der- `pRetVal` Parameter ist `NULL` .  
   
 ## <a name="example"></a>Beispiel  
   
@@ -47,5 +47,5 @@ BSTR    fileName;
 HRESULT errorCode = pSource->get_lastError( &fileName );  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Deaktivieren den Rückgängig-Stapel | Microsoft-Dokumentation'
+title: 'Gewusst wie: Löschen des Rückgängig-Stapels | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549168"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Vorgehensweise: Deaktivieren des Rückgängig-Stapels
+# <a name="how-to-clear-the-undo-stack"></a>Vorgehensweise: Leeren des Stapels zum Rückgängigmachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das folgende Verfahren unten wird erläutert, wie den Rückgängigstapel.  
+Im folgenden Verfahren wird erläutert, wie der Rückgängig-Stapel gelöscht wird.  
   
-### <a name="to-clear-the-undo-stack"></a>Auf den Rückgängigstapel.  
+### <a name="to-clear-the-undo-stack"></a>So löschen Sie den Rückgängig-Stapel  
   
-1. Löschen Sie die Verwendung der Rückgängig-Stapel der [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) Methode. Im folgenden finden ein Beispiel hierfür:  
+1. Verwenden Sie die Methode [IOleUndoManager::D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) , um den Rückgängig-Stapel zu löschen. Im folgenden finden Sie ein Beispiel hierfür:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -44,5 +44,5 @@ Das folgende Verfahren unten wird erläutert, wie den Rückgängigstapel.
     }  
     ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Implementieren von Rückgängig-Verwaltung](../extensibility/how-to-implement-undo-management.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Implementieren der Rückgängig-Funktion](../extensibility/how-to-implement-undo-management.md)

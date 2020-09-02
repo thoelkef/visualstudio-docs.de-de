@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145425"
 ---
 # <a name="understanding-sampling-data-values"></a>Grundlagen zu Samplingdatenwerten
@@ -52,6 +52,6 @@ Die *Samplingmethode* zur Profilerstellung der [!INCLUDE[vsprvs](../includes/vsp
 ## <a name="exclusive-percent"></a>Exklusive Samplings in Prozent  
  Der prozentuale Anteil der Gesamtanzahl exklusiver Samplings in der Profilerstellungsausführung, die exklusive Samplings der Funktion oder des Datenbereichs sind.  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)   
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Auswählen von Sammlungs Methoden](../profiling/how-to-choose-collection-methods.md)   
+ [Analysieren von Leistungs Tool Daten](../profiling/analyzing-performance-tools-data.md)

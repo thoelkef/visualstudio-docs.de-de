@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Mithilfe der Grafikdiagnose zum Debuggen eines Compute-Shaders | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Verwenden von Grafikdiagnose zum Debuggen eines Compute-Shaders | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186915"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose
@@ -32,7 +32,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
 ## <a name="scenario"></a>Szenario  
  In diesem Szenario haben Sie eine Fluiddynamiksimulation geschrieben, die DirectCompute zur Ausführung der berechnungsintensivsten Teile des Simulationsupdates verwendet. Beim Ausführen der App werden Dataset und Benutzeroberfläche korrekt wiedergegeben, die Simulation verhält sich jedoch nicht wie erwartet. Mithilfe der Grafikdiagnose können Sie den Fehler in einer Grafikprotokolldatei erfassen, um die App zu debuggen. Das Problem sieht in der App wie folgt aus:  
   
- ![Das simulierte Fluid verhält sich falsch. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "Gfx_diag_demo_compute_shader_fluid_problem")  
+ ![Das simulierte Fluid verhält sich falsch.](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
  Informationen zum Erfassen von Grafikproblemen in einem Grafikprotokoll finden Sie unter [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
@@ -45,7 +45,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 2. Wählen Sie einen Frame in der **Frameliste** aus, in dem das falsche Simulationsverhalten auftritt. Obwohl sich der Fehler scheinbar im Simulationscode und nicht im Renderingode befindet, müssen Sie trotzdem einen Frame auswählen, da DirectCompute-Ereignisse von einem Frame zum nächsten, gemeinsam mit Direct3D-Ereignissen aufgezeichnet werden. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:  
   
-    ![Das grafikprotokolldokument in Visual Studio. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
+    ![Das Grafik Protokoll Dokument in Visual Studio.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
    Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste** verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** zeigt ein Ereignis für jeden DirectCompute- und Direct3D-API-Aufruf an, der erfolgte, als der Frame aktiv war. Dazu gehören beispielsweise API-Aufrufe zur Ausführung einer Berechnung auf dem GPU, das Rendern eines Datasets oder der Benutzeroberfläche. In diesem Fall interessieren uns die `Dispatch`-Ereignisse, die Teile der im GPU ausgeführten Simulation darstellen.  
   
@@ -53,19 +53,19 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 1. Klicken Sie auf der Symbolleiste **Grafikdiagnose** auf **Ereignisliste**, um das Fenster **Grafikereignisliste** zu öffnen.  
   
-2. Suchen Sie das Zeichnen-Ereignis, mit dem das Dataset gerendert wird, in der **Grafikereignisliste**. Um dies zu vereinfachen, geben Sie `Draw` in die **Suche** der oberen rechten Ecke des Dialogfelds die **Graphics Event List** Fenster. Damit wird die Liste gefiltert und enthält nur Ereignisse, die "Zeichnen" im Titel haben. In diesem Szenario ermitteln Sie, dass die folgenden Zeichnen-Ereignisse aufgetreten sind:  
+2. Suchen Sie das Zeichnen-Ereignis, mit dem das Dataset gerendert wird, in der **Grafikereignisliste**. Zur Vereinfachung können Sie im Feld **Suche** in der oberen rechten Ecke des Fensters **Grafikereignisliste** `Draw` eingeben. Damit wird die Liste gefiltert und enthält nur Ereignisse, die "Zeichnen" im Titel haben. In diesem Szenario ermitteln Sie, dass die folgenden Zeichnen-Ereignisse aufgetreten sind:  
   
-    ![Die Ereignisliste &#40;EL&#41; zeigt zeichnen-Ereignisse. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+    ![In der Ereignisliste &#40;El&#41; zeichnen-Ereignisse angezeigt.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3. Navigieren Sie durch die einzelnen Zeichnen-Ereignisse, und beobachten Sie das Renderziel in der Dokumentregisterkarte "Grafikprotokolle".  
   
 4. Halten Sie an, wenn das gerenderte Dataset erstmals im Renderziel angezeigt wird. In diesem Szenario wird das Dataset im ersten Zeichnen-Ereignis gerendert. Der Fehler in der Simulation wird angezeigt:  
   
-    ![Dieses draw-Ereignis rendert das simulationsdataset. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
+    ![Dieses Draw-Ereignis rendert das Simulationsdataset.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5. Überprüfen Sie jetzt die **Grafikereignisliste** auf das `Dispatch`-Ereignis, das die Simulation aktualisiert. Da es wahrscheinlich ist, dass die Simulation vor dem Rendering aktualisiert wird, können Sie sich zunächst auf die `Dispatch`-Ereignisse konzentrieren, die vor dem Zeichnen-Ereignis auftreten, das die Ergebnisse rendert. Um dies zu vereinfachen, Ändern der **Suche** Feld lesen `Draw;Dispatch;CSSetShader(`. Dadurch wird die Liste gefiltert, sodass sie zusätzlich zu den Zeichnen-Ereignissen auch `Dispatch`- und `CSSetShader`-Ereignisse enthält. In diesem Szenario ermitteln Sie, dass mehrere `Dispatch`-Ereignisse vor dem Zeichnen-Ereignis aufgetreten sind:  
+5. Überprüfen Sie jetzt die **Grafikereignisliste** auf das `Dispatch`-Ereignis, das die Simulation aktualisiert. Da es wahrscheinlich ist, dass die Simulation vor dem Rendering aktualisiert wird, können Sie sich zunächst auf die `Dispatch`-Ereignisse konzentrieren, die vor dem Zeichnen-Ereignis auftreten, das die Ergebnisse rendert. Zur Vereinfachung können Sie das Feld **Suchen** so ändern, dass `Draw;Dispatch;CSSetShader(` gelesen wird. Dadurch wird die Liste gefiltert, sodass sie zusätzlich zu den Zeichnen-Ereignissen auch `Dispatch`- und `CSSetShader`-Ereignisse enthält. In diesem Szenario ermitteln Sie, dass mehrere `Dispatch`-Ereignisse vor dem Zeichnen-Ereignis aufgetreten sind:  
   
-    ![Der EREIGNISLISTE werden Draw-, Dispatch- und CSSetShader-Ereignisse](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
+    ![In der Ereignisliste werden Draw-, Dispatch- und CSSetShader-Ereignisse angezeigt](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
    Nachdem Sie nun wissen, welche der vielen `Dispatch`-Ereignisse möglicherweise mit dem Problem in Verbindung stehen, können diese ausführlicher überprüfen.  
   
@@ -83,30 +83,30 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 2. Wählen Sie das dritte `Dispatch`-Ereignis aus (das Ereignis direkt vor dem Zeichnen-Ereignis), und klicken Sie dann im Fenster **Grafikpipelinestufen** unter der Stufe **Compute-Shader** auf **Debuggen starten**.  
   
-    ![Wählen das dritte Dispatch-Ereignis in der EL.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
+    ![Das dritte Dispatch-Ereignis in der Ereignisliste wird ausgewählt.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
     Der HLSL-Debugger wird am Shader gestartet, der den Integrationsschritt ausführt.  
   
 3. Überprüfen Sie den Quellcode des Compute-Shaders auf den Integrationsschritt, um die Fehlerursache zu finden. Wenn Sie die Grafikdiagnose verwenden, um den HLSL-Compute-Shader-Code zu debuggen, können Sie den Code schrittweise ausführen und andere Ihnen vertraute Debugtools wie Überwachungsfenster verwenden. In diesem Szenario ermitteln Sie, dass scheinbar kein Fehler im Compute-Shader vorhanden ist, der den Integrationsschritt ausführt.  
   
-    ![Debuggen des IntegrateCS-Compute-Shaders. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
+    ![Debuggen des IntegrateCS-Compute-Shaders](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Zum Beenden des Debuggens im Compute-Shaders in der **Debuggen** Symbolleiste wählen **Debuggen beenden** (Tastatur: UMSCHALT + F5).  
+4. Zum Beenden des Debuggens im Computeshader klicken Sie auf der Symbolleiste **Debuggen** auf die Option **Debuggen beenden** (Tastatur: UMSCHALT+F5).  
   
 5. Wählen Sie danach Sie das zweite `Dispatch`-Ereignis aus, und starten Sie das Debugging des Compute-Shaders, wie Sie dies bereits im vorherigen Schritt getan haben.  
   
-    ![Wählen das zweite Dispatch-Ereignis in der EL.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
+    ![Das zweite Dispatch-Ereignis in der Ereignisliste wird ausgewählt.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
   
     Der HLSL-Debugger wird am Shader gestartet, der die Kräfte berechnet, die auf alle flüssigen Partikel einwirken.  
   
 6. Überprüfen Sie den Schritt der Kräfteberechnung im Quellcode des Compute-Shaders. In diesem Szenario ermitteln Sie, dass die Fehlerquelle sich hier befindet.  
   
-    ![Debuggen der ForceCS&#95;einfache compute-Shader. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+    ![Debuggen von forcecs&#95;Simple Compute-Shader.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
    Nachdem Sie den Ursprung des Fehlers bestimmt haben, können Sie das Debuggen beenden und den Quellcode des Compute-Shaders dahingehend ändern, dass der Abstand zwischen den interagierenden Partikeln ordnungsgemäß berechnet wird. In diesem Szenario ändern Sie nur die Zeile `float2 diff = N_position + P_position;` in `float2 diff = N_position - P_position;`:  
   
-   ![Der korrigierte Compute&#45;Shader-Code. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+   ![Der korrigierte Compute-&#45;Shader-Code.](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
    Da die Compute-Shader zur Laufzeit kompiliert werden, können Sie in diesem Szenario die App nach Durchführung der Änderungen einfach neu starten und beobachten, welche Auswirkung die Änderungen auf die Simulation haben. Sie müssen die App nicht neu erstellen. Wenn Sie die App ausführen, können Sie feststellen, dass sich die Simulation nun ordnungsgemäß verhält.  
   
-   ![Das simulierte Fluid verhält sich korrekt. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "Gfx_diag_demo_compute_shader_fluid_resolution")
+   ![Das simulierte Fluid verhält sich korrekt.](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")

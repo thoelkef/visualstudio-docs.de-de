@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Microsoft-Dokumentation
+title: 'Idebugobject:: IsEqual | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85252cdaf9fb076ebd4f8000115bcea576531bb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159111"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vergleicht ein Objekt mit diesem Objekt.  
+Vergleicht ein-Objekt mit diesem-Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,16 +42,16 @@ int IsEqual(
   
 #### <a name="parameters"></a>Parameter  
  `pObject`  
- [in] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt, das das zu vergleichende Objekt darstellt.  
+ in Ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, das das Objekt darstellt, mit dem verglichen werden soll.  
   
  `pfIsEqual`  
- [out] Ungleich NULL zurück (`TRUE`), wenn die Werte der Objekte gleich ist; andernfalls sind, gibt NULL zurück (`FALSE`).  
+ vorgenommen Gibt einen Wert ungleich 0 (NULL `TRUE` ) zurück, wenn die Werte der-Objekte gleich sind; andernfalls wird NULL () zurückgegeben `FALSE` .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- In der Regel kann diese Methode vergleichen die Adressen der-Werte dargestellt werden, indem die `pObject` -Parameter, und dies [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, wenn die Adressen gleich sind, und klicken Sie dann die Objekte als gleich betrachtet werden können.  
+## <a name="remarks"></a>Bemerkungen  
+ In der Regel kann diese Methode die Adressen der durch den `pObject` -Parameter dargestellten Werte und dieses [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt vergleichen. wenn die Adressen gleich sind, können die-Objekte als gleich betrachtet werden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Seite nach oben oder unten im Arbeitsspeicher | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Bildlauf nach oben oder unten im Arbeitsspeicher | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157858"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Vorgehensweise: Bildlauf nach oben oder unten im Arbeitsspeicher
@@ -51,7 +51,7 @@ Beim Anzeigen des Speicherinhalts im Fenster **Arbeitsspeicher** oder im Fenster
   
 - Klicken Sie auf den Pfeil am oberen oder unteren Ende der vertikalen Scrollleiste.  
   
-## <a name="see-also"></a>Siehe auch  
- [Fenster „Arbeitsspeicher“](../debugger/memory-windows.md)   
- [Vorgehensweise: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Arbeitsspeicher Fenster](../debugger/memory-windows.md)   
+ [Gewusst wie: Verwenden des disassemblierfensters](../debugger/how-to-use-the-disassembly-window.md)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)
