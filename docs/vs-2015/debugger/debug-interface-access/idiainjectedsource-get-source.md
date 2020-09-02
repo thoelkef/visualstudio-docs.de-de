@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_source | Microsoft-Dokumentation'
+title: 'Idiainjetedsource:: get_Source | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 856d0111e65b51b798dfe44a324c58c4db5457fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192425"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Quellbytes-Code ab.  
+Ruft die Quell Code Bytes ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,16 +37,16 @@ HRESULT get_source ( 
   
 #### <a name="parameters"></a>Parameter  
  `cbData`  
- [in] Die Anzahl der Bytes, die die Größe des Datenpuffers darstellt.  
+ in Die Anzahl von Bytes, die die Größe des Daten Puffers darstellt.  
   
  `pcbData`  
- [out] Gibt zurückgegeben, die Anzahl der Bytes, die die Bytes darstellt. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` ist die Gesamtzahl der Bytes der Daten verfügbar.  
+ vorgenommen Gibt die Anzahl der Bytes zurück, die die zurückgegebenen Bytes darstellen. Wenn `data` ist `NULL` , dann `pcbData` ist die Gesamtzahl der verfügbaren Daten bytes.  
   
  `data[]`  
- [out] Ein Puffer, der sich die Quellbytes gefüllt werden soll.  
+ vorgenommen Ein Puffer, der mit den Quell Bytes aufgefüllt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

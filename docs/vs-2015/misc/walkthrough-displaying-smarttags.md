@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anzeigen von SmartTags | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Anzeigen von Smarttags | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,14 +10,14 @@ ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
 ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436511"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64805586"
 ---
-# <a name="walkthrough-displaying-smarttags"></a>Exemplarische Vorgehensweise: Anzeigen von SmartTags
-Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+# <a name="walkthrough-displaying-smarttags"></a>Exemplarische Vorgehensweise: Anzeigen von Smarttags
+Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Smarttags sind Tags für Text, die erweitert werden können, um eine Reihe von Aktionen anzuzeigen. Beispielsweise wird in einem Visual Basic- oder Visual C#-Projekt eine rote Linie unter einem Wort angezeigt, wenn Sie einen Bezeichner (z. B. Variablenname) umbenennen. Wenn Sie den Mauszeiger über die Unterstreichung bewegen, wird eine Schaltfläche in der Nähe des Zeigers angezeigt. Wenn Sie auf die Schaltfläche klicken, wird eine empfohlene Aktion angezeigt, z. B. **IsRead in IsReady umbenennen**. Wenn Sie auf die Aktion klicken, werden alle Verweise auf **IsRead** im Projekt in **IsReady**umbenannt.  
   
@@ -26,10 +26,10 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Infor
 > [!NOTE]
 > Andere Arten von Tags können auf ähnliche Weise implementiert werden.  
   
- Die folgende exemplarische Vorgehensweise zeigt, wie Sie ein Smarttag erstellen, die für das aktuelle Wort angezeigt wird, und verfügt über zwei empfohlene Aktionen: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
+ Die folgende exemplarische Vorgehensweise veranschaulicht, wie Sie ein Smarttag erstellen, das für das aktuelle Wort angezeigt wird und zwei empfohlene Aktionen beinhaltet: **In Großbuchstaben umwandeln** und **In Kleinbuchstaben umwandeln**.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
- Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Erstellen eines MEF-Projekts (Managed Extensibility Framework)  
   
@@ -114,7 +114,7 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Infor
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>So implementieren Sie den Anbieter des Smarttag-Taggers  
   
-1. Fügen Sie eine Klasse namens `TestSmartTagTaggerProvider` hinzu, die von <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> erbt. Exportieren Sie sie mit dem <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text", dem <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> Before = "Default" und dem <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1. Fügen Sie eine Klasse namens `TestSmartTagTaggerProvider` hinzu, die von <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> erbt. Exportieren Sie sie mit dem <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text", dem <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> Before = "Default" und dem <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute><xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
@@ -180,7 +180,7 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Infor
   
      Neben dem Zeiger sollte eine Schaltfläche angezeigt werden.  
   
-5. Wenn Sie die Schaltfläche klicken, sollten zwei empfohlene Aktionen angezeigt: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.  
+5. Wenn Sie auf die Schaltfläche klicken, sollten zwei empfohlene Aktionen angezeigt werden: **In Großbuchstaben umwandeln** und **In Kleinbuchstaben umwandeln**. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

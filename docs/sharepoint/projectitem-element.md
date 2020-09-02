@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536876"
 ---
 # <a name="projectitem-element"></a>ProjectItem-Element
@@ -44,7 +44,7 @@ ms.locfileid: "85536876"
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|BESCHREIBUNG|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |**DefaultFile**|Optionales **xs: String** -Attribut.<br /><br /> Der relative Pfad (einschließlich des Datei namens) der Datei, die im Visual Studio-Editor geöffnet wird, wenn Sie das SharePoint-Projekt Element in **Projektmappen-Explorer**öffnen. Der Pfad ist relativ zum Ordner, der die *spdata* -Datei enthält.|
 |**Featurereceiverclass**|Optionales **xs: String** -Attribut.<br /><br /> Der voll qualifizierte Name einer Funktions Empfängerklasse für dieses SharePoint-Projekt Element. Weitere Informationen zu Funktions Empfängern finden Sie unter [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
@@ -55,7 +55,7 @@ ms.locfileid: "85536876"
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Optionales Element.<br /><br /> Stellt eine Auflistung benutzerdefinierter Datenelemente dar, die dem SharePoint-Projekt Element zugeordnet sind.<br /><br /> Sie können nur ein **ExtensionData** -Element einschließen.|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Optionales Element.<br /><br /> Stellt eine Auflistung von Eigenschafts Werten dar, die in einer Funktion enthalten sind, wenn Sie in SharePoint bereitgestellt wird.<br /><br /> Sie können nur ein **FeatureProperties** -Element einschließen.|
@@ -64,16 +64,16 @@ ms.locfileid: "85536876"
 |["SafeControls](../sharepoint/safecontrols-element.md)|Optionales Element.<br /><br /> Stellt eine Auflistung von ASPX-Steuerelementen und Webparts dar, die für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher gekennzeichnet sind.<br /><br /> Sie können nur ein **SafeControls** -Element einschließen.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
- Keine.
+ Keine
 
 ## <a name="element-information"></a>Elementinformationen
 
 |Eigenschaft|Wert|
 |-|-|
 |**Namespace**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/sharepointtools/sharepointprojectitemmodel|
-|**Schema Name**|SharePoint-Projekt Element Schema|
+|**Schemaname**|SharePoint-Projekt Element Schema|
 |**Validierungs Datei**|Projectitemmodelschema. xsd|
-|**Kann leer sein**|No|
+|**Kann leer sein**|Nein|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 [Schema-rseference für SharePoint-Projekt Element](../sharepoint/sharepoint-project-item-schema-reference.md)

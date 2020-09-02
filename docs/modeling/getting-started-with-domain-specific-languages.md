@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238542"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
@@ -119,7 +119,7 @@ Sie können die DSL-Lösung ausführen, sobald Sie Sie erstellt haben. Später k
 
 3. Öffnen Sie in der experimentellen Instanz von Visual Studio die Modelldatei mit dem Namen **Test** aus **Projektmappen-Explorer**.
 
-     \- oder –
+     \- oder -
 
      Klicken Sie mit der rechten Maustaste auf das Projekt Debugging, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Element** Wählen Sie im Dialogfeld **Element hinzufügen** den Dateityp Ihrer DSL aus.
 
@@ -171,7 +171,7 @@ Wenn Sie eine Modelldatei ändern, werden nach dem erneuten Generieren der Datei
 
 3. Klicken Sie in der Symbolleiste von **Projektmappen-Explorer**auf **alle Vorlagen transformieren** .
 
-     \- oder –
+     \- oder -
 
      Klicken Sie mit der rechten Maustaste auf die zu generierenden Vorlagen, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**
 

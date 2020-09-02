@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238815"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Optionsfeldern
@@ -42,7 +42,7 @@ ms.locfileid: "88238815"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="add-a-chart-to-a-worksheet"></a>Hinzufügen eines Diagramms zu einem Arbeitsblatt
  Sie können ein Excel-Arbeitsmappenprojekt erstellen, mit dem eine vorhandene Arbeitsmappe angepasst wird. In dieser exemplarischen Vorgehensweise fügen Sie einer-Arbeitsmappe ein Diagramm hinzu und verwenden dann diese Arbeitsmappe in einer neuen Excel-Projekt Mappe. Die Datenquelle in dieser exemplarischen Vorgehensweise ist ein Arbeitsblatt mit dem Namen **Daten für das Diagramm**.
@@ -141,7 +141,7 @@ ms.locfileid: "88238815"
 
    | Eigenschaft | Wert |
    |----------|---------------|
-   | **Name** | **barChart** |
+   | **Name** | **Barchart** |
    | **Text** | **Balkendiagramm** |
 
 4. Fügen Sie dem Benutzer Steuerelement ein drittes Optionsfeld hinzu, und ändern Sie die folgenden Eigenschaften.
@@ -249,5 +249,5 @@ ms.locfileid: "88238815"
 
 - Ändern Sie die Formatierung in einem Arbeitsblatt mithilfe von Kontrollkästchen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Ändern der Arbeitsblatt Formatierung mithilfe von CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)-Steuerelementen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Exemplarische Vorgehensweisen mit Excel](../vsto/walkthroughs-using-excel.md)

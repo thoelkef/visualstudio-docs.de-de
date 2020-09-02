@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238841"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrieren eines Legacy sprach Dienstanbieter 2
@@ -27,7 +27,7 @@ In den folgenden Abschnitten finden Sie Listen der Registrierungseinträge für 
 ## <a name="registry-entries-for-language-service-options"></a>Registrierungseinträge für Sprachdienst Optionen
  Der Schlüssel " *vs reg root*\Languages\Language Services \\ *sprach Name* " kann die folgenden Werte enthalten.
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|*\<GUID>*|GUID des sprach Dienstanbieter.|
 |Langresid|REG_DWORD|0x0-0xFFFF|Zeichen folgen Ressourcen Bezeichner (Resid) für den lokalisierten Textnamen der Sprache.|
@@ -64,7 +64,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>Registrierungseinträge für Optionen für debuggersprachen
  Der Schlüssel " *vs reg root*\Languages\Language Services \\ *Language Name*\Debugger Languages \\ *GUID*\" kann die folgenden Werte enthalten.
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|text|Der Standardwert kann verwendet werden, um den Namen der Sprache zu dokumentieren. Der Name dieses Schlüssels ist eine GUID einer Ausdrucks Auswertung, die über einen entsprechenden Eintrag in *\<VS Reg Root>* \ad7metrics\expression Auswertung verfügt.|
 
@@ -83,7 +83,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>Registrierungseinträge für Editor-Tool Optionen
  Sie können Registrierungsschlüssel unter dem Schlüssel Editor ToolsOptions für Eigenschaften Seiten und Eigenschafts Knoten hinzufügen. Mit diesen Schlüsseln und ihren Werten werden Eigenschaften Seiten im Dialogfeld **Optionen** ( **im Menü Extras** ) identifiziert, die zum Konfigurieren des sprach Dienstanbieter verwendet werden. Im folgenden Beispiel ist *Page Name* der Name einer Eigenschaften Seite und *Knoten Name* der Name eines Knotens in der Struktur im Dialogfeld **Optionen** . Der Seiten Eintrag und der Knoten Eintrag müssen separat angegeben werden.
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|Resid|Der lokalisierte Anzeige Name der Optionsseite. Der Name kann ein Literaltext oder # sein, `nnn` wobei `nnn` eine Zeichen folgen Ressourcen-ID in der Satelliten-DLL des angegebenen VSPackages ist.|
 |Paket|REG_SZ|*GUID*|Der GUID des VSPackage, das diese Optionsseite implementiert.|
@@ -117,7 +117,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Registrierungseinträge für Dateinamen-Erweiterungsoptionen
  Der Eintrag für die Dateierweiterung sollte den führenden Zeitraum enthalten, z. b. ". myext".
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|*GUID*|Dienst-GUID für den Standard Sprachdienst für diesen Dateinamen-Erweiterungstyp.|
 
@@ -134,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>Registrierungseinträge für Editor Optionen
  Der Schlüssel " *vs reg root*\editoren" kann die folgenden Werte enthalten:
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|""|Genutzt Sie können hier Ihren Namen für die Dokumentation eingeben.|
 |DefaultToolboxTab|REG_SZ|""|Der Name der Toolbox Registerkarte, die standardmäßig aktiviert wird, wenn der Editor aktiv ist.|
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Registrierungseinträge für logische Ansichtsoptionen
  Der Schlüssel " *vs reg root*\editoren \\ *Editor GUI>* \logicalviews" kann die folgenden Werte enthalten.
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ||Nicht verwendet.|
 |*\<GUID>*|REG_SZ|""|Der Schlüssel für die unterstützten logischen Ansichten. Sie können beliebig viele von Ihnen benötigen. Der Name des Registrierungs Eintrags ist wichtig, nicht der Wert, der immer eine leere Zeichenfolge ist.|
@@ -181,7 +181,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>Registrierungseinträge für Editor-Erweiterungsoptionen
  Der Schlüssel " *vs reg root*\editoren \\ *Editor GUID*\extensions" kann die folgenden Werte enthalten. Die Dateinamenerweiterung enthält nicht den führenden Zeitraum.
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ||Nicht verwendet.|
 |*\<ext>*|REG_DWORD|0-0xFFFFFFFF|Relative Priorität von Erweiterungen. Wenn mindestens zwei Sprachen dieselbe Erweiterung verwenden, wird die Sprache mit höherer Priorität ausgewählt.|
@@ -207,7 +207,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  Auf diese Registrierungseinträge wird über die- <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse zugegriffen.
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Unterstützung für IntelliSense-Vorgänge.|
 |Matchgeschweifte Klammern|REG_DWORD|0-1|Unterstützung für übereinstimmende Sprachpaare, z. b. geschweifte Klammern, Klammern und eckige Klammern.|

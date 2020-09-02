@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Code Qualitätsregeln
+title: Übersicht über Codequalitätsregeln
 ms.date: 08/27/2020
 ms.topic: reference
 f1_keywords:
@@ -299,10 +299,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 05937cef7187726134a7116edae4d74ee004de1d
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219750"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
@@ -385,10 +385,10 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA1304 | [CA1304: CultureInfo angeben.](../code-quality/ca1304.md) | Eine Methode oder ein Konstruktor ruft einen Member mit einer Überladung auf, die einen System.Globalization.CultureInfo-Parameter akzeptiert. Die Methode oder der Konstruktor ruft nicht die Überladung auf, die den CultureInfo-Parameter akzeptiert. Wenn ein CultureInfo-Objekt oder ein System.IFormatProvider-Objekt nicht angegeben wird, besitzt der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht in allen Gebietsschemas den gewünschten Effekt. |
 | CA1305 | [CA1305: IFormatProvider angeben.](../code-quality/ca1305.md) | Eine Methode oder ein Konstruktor ruft einen oder mehrere Member auf, die Überladungen besitzen und einen System.IFormatProvider-Parameter akzeptieren; die Methode oder der Konstruktor ruft die Überladung nicht auf, die den IFormatProvider-Parameter akzeptiert. Wenn ein System.Globalization.CultureInfo-Objekt oder ein IFormatProvider-Objekt nicht angegeben wird, besitzt der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht in allen Gebietsschemas den gewünschten Effekt. |
 | CA1306 | [CA1306: Gebietsschema für Datentypen festlegen.](../code-quality/ca1306.md) | Das Gebietsschema bestimmt kulturspezifische Darstellungselemente für Daten wie die für Zahlenwerte, Währungssymbole und Sortierreihenfolge verwendete Formatierung. Wenn Sie eine DataTable oder ein DataSet erstellen, sollten Sie das Gebietsschema explizit festlegen. |
-| CA1307 | [CA1307: StringComparison aus Gründen der Übersichtlichkeit angeben](../code-quality/ca1307.md) | Ein Zeichenfolgenvergleich verwendet eine Methodenüberladung, durch die kein StringComparison-Parameter festgelegt wird. |
+| CA1307 | [CA1307: "StringComparison" zur Verdeutlichung angeben](../code-quality/ca1307.md) | Ein Zeichenfolgenvergleich verwendet eine Methodenüberladung, durch die kein StringComparison-Parameter festgelegt wird. |
 | CA1308 |[CA1308: Zeichenfolgen in Großbuchstaben normalisieren.](../code-quality/ca1308.md) | Zeichenfolgen sollten in Großschreibung normalisiert werden. Für eine kleine Gruppe von Zeichen wird bei der Konvertierung in Kleinbuchstaben kein Roundtrip ausgeführt. |
 | CA1309 | [CA1309: Ordinal-StringComparison verwenden.](../code-quality/ca1309.md) | Durch einen nicht linguistischen Zeichenfolgenvergleich wird der StringComparison-Parameter nicht auf Ordinal und nicht auf OrdinalIgnoreCase festgelegt. Wenn der Parameter explizit auf StringComparison.Ordinal oder StringComparison.OrdinalIgnoreCase festgelegt wird, werden die Codeausführung beschleunigt sowie Richtigkeit und Zuverlässigkeit gesteigert. |
-| CA1310 | [CA1310: StringComparison für Richtigkeit angeben](../code-quality/ca1310.md) | Eine Zeichen folgen Vergleichsoperation verwendet eine Methoden Überladung, die keinen StringComparison-Parameter festgelegt und standardmäßig einen kulturspezifischen Zeichen folgen Vergleich verwendet. |
+| CA1310 | [CA1310: "StringComparison" für Richtigkeit angeben](../code-quality/ca1310.md) | Eine Zeichen folgen Vergleichsoperation verwendet eine Methoden Überladung, die keinen StringComparison-Parameter festgelegt und standardmäßig einen kulturspezifischen Zeichen folgen Vergleich verwendet. |
 | CA1400 | [CA1400: P/aufrufende Einstiegspunkte müssen vorhanden sein](../code-quality/ca1400.md) |Eine öffentliche oder geschützte Methode wird mit dem System.Runtime.InteropServices.DllImportAttribute-Attribut markiert. Entweder konnte die nicht verwaltete Bibliothek nicht gefunden werden, oder die Methode konnte keiner Funktion in der Bibliothek zugeordnet werden. |
 | CA1401 | [CA1401: P/Aufrufe dürfen nicht sichtbar sein.](../code-quality/ca1401.md) | Eine öffentliche oder geschützte Methode in einem öffentlichen Typ enthält das System.Runtime.InteropServices.DllImportAttribute-Attribut (in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] auch durch das Declare-Schlüsselwort implementiert). Solche Methoden sollten nicht verfügbar gemacht werden. |
 | CA1402 |[CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden.](../code-quality/ca1402.md) | Wenn für COM-Clients überladene Methoden verfügbar gemacht werden, behält nur die erste Methodenüberladung ihren Namen. Nachfolgende Überladungen werden eindeutig umbenannt, indem dem Namen ein Unterstrich (_) und eine ganze Zahl angefügt werden, die der Reihenfolge der Deklaration der Überladung entspricht. |
@@ -483,7 +483,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA2004 | [CA2004: Aufrufe an GC.KeepAlive entfernen.](../code-quality/ca2004.md) | Wenn Sie zur Verwendung von SafeHandle wechseln, entfernen Sie alle Aufrufe an GC.KeepAlive (Objekt). In diesem Fall sollten Klassen GC.KeepAlive nicht aufrufen müssen. Dabei wird davon ausgegangen, dass sie keinen Finalizer verwenden, sondern sich auf SafeHandle verlassen, um das Betriebssystemhandle zu beenden. |
 | CA2006 | [CA2006: SafeHandle verwenden, um native Ressourcen zu kapseln.](../code-quality/ca2006.md) | Die Verwendung von IntPtr in verwaltetem Code kann auf ein potenzielles Sicherheitsrisiko und Zuverlässigkeitsproblem hinweisen. Alle Vorkommen von IntPtr müssen daher überprüft werden, um festzustellen, ob stattdessen die Verwendung von SafeHandle (oder einer ähnlichen Technologie) erforderlich ist. |
 | CA2007 | [CA2007: Eine Aufgabe nicht direkt abwarten](ca2007.md) | Eine asynchrone Methode [erwartet](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> direkt ein. Wenn eine asynchrone Methode <xref:System.Threading.Tasks.Task> direkt auf einen wartet, erfolgt die Fortsetzung in dem Thread, der die Aufgabe erstellt hat. Dieses Verhalten kann sich in Bezug auf die Leistung als kostspielig erweisen und kann zu einem Deadlock im UI-Thread führen. Rufen <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> Sie auf, um ihre Absicht für die Fortsetzung zu signalisieren. |
-| CA2008 | [CA2008: Erstellen Sie keine Aufgaben, ohne einen TaskScheduler zu übergeben.](ca2008.md) | Ein Task Erstellungs-oder Fortsetzungs Vorgang verwendet eine Methoden Überladung, die keinen <xref:System.Threading.Tasks.TaskScheduler> Parameter angibt. |
+| CA2008 | [CA2008: Keine Tasks ohne Übergabe eines TaskSchedulers erstellen](ca2008.md) | Ein Task Erstellungs-oder Fortsetzungs Vorgang verwendet eine Methoden Überladung, die keinen <xref:System.Threading.Tasks.TaskScheduler> Parameter angibt. |
 | CA2009 | [CA2009: „ToImmutableCollection“ nicht für einen ImmutableCollection-Wert aufrufen.](ca2009.md) | `ToImmutable` die Methode wurde für eine unveränderliche Auflistung aus dem <xref:System.Collections.Immutable> Namespace unnötig aufgerufen. |
 | CA2011 | [CA2011: Eigenschaft nicht innerhalb ihres Setters zuweisen](ca2011.md) | Einer Eigenschaft wurde versehentlich ein Wert innerhalb ihrer eigenen [Set-Zugriffs](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)Methode zugewiesen. |
 | CA2012 | [CA2012: Verwenden Sie ValueTasks ordnungsgemäß.](ca2012.md) | Valuetasks, die von Element aufrufen zurückgegeben wurden, sollen direkt gewartet werden.  Versucht, eine valuetask mehrmals zu verwenden oder direkt auf das Ergebnis zuzugreifen, bevor es als abgeschlossen bezeichnet wird, kann zu einer Ausnahme oder Beschädigung führen.  Das ignorieren einer solchen valuetask ist wahrscheinlich ein Hinweis auf einen Funktionsfehler und kann die Leistung beeinträchtigen. |

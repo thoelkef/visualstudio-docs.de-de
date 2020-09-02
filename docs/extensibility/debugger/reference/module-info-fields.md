@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Microsoft Docs
+title: MODULE_INFO_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714330"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
-Gibt die Flags für die Debugmodulinformationen an.
+Gibt die Flags für die Debug-Modul Informationen an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -66,59 +66,59 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Felder
  `MIF_NONE`\
- Initialisieren/Verwenden von keinem der Felder in der Struktur.
+ Initialisieren/verwenden Sie keines der Felder in der Struktur.
 
  `MIF_NAME`\
- Initialisieren/verwenden `m_bstrName` Sie das Feld in der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur.
+ Initialisieren Sie das `m_bstrName` Feld in der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur, und verwenden Sie es.
 
  `MIF_URL`\
- Initialisieren/verwenden `m_bstrUrl` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_bstrUrl` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_VERSION`\
- Initialisieren/verwenden `m_bstrVersion` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_bstrVersion` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_DEBUGMESSAGE`\
- Initialisieren/verwenden `m_bstrDebugMessage` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_bstrDebugMessage` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_LOADADDRESS`\
- Initialisieren/verwenden `m_addrLoadAddress` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_addrLoadAddress` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_PREFFEREDADDRESS`\
- Initialisieren/verwenden `m_addrPreferredLoadAddress` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_addrPreferredLoadAddress` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_SIZE`\
- Initialisieren/verwenden `m_dwSize` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_dwSize` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_LOADORDER`\
- Initialisieren/verwenden `m_dwLoadOrder` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_dwLoadOrder` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_TIMESTAMP`\
- Initialisieren/verwenden `m_TimeStamp` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_TimeStamp` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_URLSYMBOLLOCATION`\
- Initialisieren/verwenden `m_bstrUrlSymbolLocation` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_bstrUrlSymbolLocation` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_FLAGS`\
- Initialisieren/verwenden `m_dwModuleFlags` Sie das `MODULE_INFO` Feld in der Struktur.
+ Initialisieren/verwenden Sie das- `m_dwModuleFlags` Feld in der- `MODULE_INFO` Struktur.
 
  `MIF_ALLFIELDS`\
- Initialisieren/Verwenden aller Felder in `MODULE_INFO` der Struktur.
+ Initialisieren/verwenden Sie alle Felder in der `MODULE_INFO` Struktur.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Werte werden als Argument an die [GetInfo-Methode](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) übergeben, um anzugeben, welche Felder der [MODULE_INFO-Struktur](../../../extensibility/debugger/reference/module-info.md) initialisiert werden sollen.
+ Diese Werte werden als Argument an die [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) -Methode übermittelt, um anzugeben, welche Felder der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur initialisiert werden sollen.
 
- Diese Werte werden auch `MODULE_INFO` in der Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
+ Diese Werte werden auch in der- `MODULE_INFO` Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
 
- Diese Flags können mit einem `OR`bitwise kombiniert werden.
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

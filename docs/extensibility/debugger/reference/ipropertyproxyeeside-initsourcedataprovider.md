@@ -1,5 +1,5 @@
 ---
-title: iPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs
+title: 'Ipropertyproxyeeside:: initsourcedataprovider | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714911"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-Initialisiert die Quelldaten für dieses Objekt und gibt ein Objekt zurück, das die ursprünglichen Daten enthält.
+Initialisiert die Quelldaten für dieses-Objekt und gibt ein-Objekt zurück, das die Anfangsdaten enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int InitSourceDataProvider(
 
 ## <a name="parameters"></a>Parameter
 `dataOut`\
-[out] Gibt ein [IEEDataStorage-Objekt](../../../extensibility/debugger/reference/ieedatastorage.md) zurück
+vorgenommen Gibt ein [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode führt alles Aus, was erforderlich ist, um ein Objekt zu initialisieren, damit es eine [IEEDataStorage-Schnittstelle](../../../extensibility/debugger/reference/ieedatastorage.md) für die Daten des Objekts zurückgeben kann. Dadurch können die Daten des Objekts angezeigt und, falls zulässig, durch eine Typvisualisierung geändert werden.
+ Diese Methode übernimmt alle Elemente, die zum Initialisieren eines Objekts erforderlich sind, damit eine [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Schnittstelle für die Daten des Objekts zurückgegeben werden kann. Dadurch können die Daten des Objekts angezeigt und, falls zulässig, von einer typschnell Ansicht geändert werden.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
