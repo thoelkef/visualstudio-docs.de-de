@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331082"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Überprüfen von XAML-Eigenschaften beim Debuggen
@@ -30,7 +30,7 @@ Sie können diese Tools in den folgenden Konfigurationen verwenden:
 
 Wir beginnen mit einer sehr einfachen WPF-Anwendung, die über eine Listenansicht und eine Schaltfläche verfügt. Bei jedem Klick auf die Schaltfläche wird der Liste ein anderes Element hinzugefügt. Gerade nummerierte Elemente sind grau, und ungerade nummerierte Elemente sind gelb.
 
-### <a name="create-the-project"></a>Erstellen des Projekts
+### <a name="create-the-project"></a>Erstellen eines Projekts
 
 1. Erstellen Sie eine neue c#-WPF-Anwendung (**Datei**  >  **"New**  >  **Project**", geben Sie "c# WPF" ein, und wählen Sie entweder **WPF-App (.net Core)** oder **WPF-App (.NET Framework)**) aus. Nennen Sie sie **TestXAML**.
 
@@ -150,6 +150,6 @@ Sie können diese XAML-Tools sogar dann verwenden, wenn Sie nicht über den Quel
 
 4. Öffnen Sie in der zweiten Visual Studio-Instanz **Visuelle Echtzeitstruktur** (**Debuggen > Fenster > Visuelle Echtzeitstruktur**). Es sollten die **TestXaml**-Benutzeroberflächenelemente angezeigt werden, und Sie sollten sie bearbeiten können, während Sie die Anwendung direkt debuggen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Schreiben und Debuggen von XAML-Code mit XAML Hot Neuladen](xaml-hot-reload.md)

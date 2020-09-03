@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655012"
 ---
 # <a name="customizing-element-tools"></a>Anpassen von Elementtools
@@ -24,7 +24,7 @@ In einigen DSL-Definitionen stellen Sie ein einzelnes Konzept als eine Gruppe vo
  Sie können auch überschreiben, was geschieht, wenn das Tool auf das Diagramm oder ein Element gezogen wird.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>Anpassen des Inhalts eines Element Tools
- Jedes Element Tool speichert eine Instanz eines <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), das eine serialisierte Version von mindestens einem Modellelement und Verknüpfungen enthält. Standardmäßig enthält der EGP eines Element Tools eine Instanz der-Klasse, die Sie für das Tool angeben. Sie können dies ändern, indem Sie *YourLanguage* `ToolboxHelper.CreateElementToolPrototype` außer Kraft setzen. Diese Methode wird aufgerufen, wenn das DSL-Paket geladen wird.
+ Jedes Element Tool speichert eine Instanz eines <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), das eine serialisierte Version von einem oder mehreren Modellelementen und Verknüpfungen enthält. Standardmäßig enthält der EGP eines Element Tools eine Instanz der-Klasse, die Sie für das Tool angeben. Sie können dies ändern, indem Sie *YourLanguage*außer Kraft setzen `ToolboxHelper.CreateElementToolPrototype` . Diese Methode wird aufgerufen, wenn das DSL-Paket geladen wird.
 
  Ein Parameter der-Methode ist die ID der Klasse, die Sie in der DSL-Definition angegeben haben. Wenn die-Methode mit der-Klasse aufgerufen wird, an der Sie interessiert sind, können Sie dem EGP zusätzliche Elemente hinzufügen.
 
@@ -62,5 +62,5 @@ public partial class CircuitDiagramToolboxHelper
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen der Elementerstellung und -verschiebung](../modeling/customizing-element-creation-and-movement.md)

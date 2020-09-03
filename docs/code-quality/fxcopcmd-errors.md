@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78167610"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Fehler des FxCopCmd-Tools
@@ -27,7 +27,7 @@ In der folgenden Tabelle werden die von FxCopCmd zurückgegebenen Fehlercodes be
 |-----------|-------------------|
 |Keine Fehler|0x0|
 |Analysefehler|0x1|
-|Regel Ausnahmen|0x2|
+|Regelausnahmen|0x2|
 |Fehler beim Laden des Projekts|0x4|
 |Fehler beim Laden der Assembly|0x8|
 |Fehler beim Laden der Regel Bibliothek.|0x10|
@@ -36,7 +36,7 @@ In der folgenden Tabelle werden die von FxCopCmd zurückgegebenen Fehlercodes be
 |Fehler beim Wechseln der Befehlszeile.|0x80|
 |Initialisierungsfehler|0x100|
 |Assemblyverweifehler|0x200|
-|BuildBreakingMessage|0x400|
+|Buildbreakingmessage|0x400|
 |Unbekannter Fehler.|0x1000000|
 
 Bei schwerwiegenden Fehlern wird ein **Analysefehler** zurückgegeben. Gibt an, dass die Analyse nicht abgeschlossen werden konnte. Der Fehlercode enthält ggf. auch die zugrunde liegende Ursache des schwerwiegenden Fehlers. Die folgenden Bedingungen generieren schwerwiegende Fehler:

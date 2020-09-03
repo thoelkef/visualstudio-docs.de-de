@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryContext | Microsoft Docs
+title: 'IDebugReference2:: getmemorycontext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7f7f49262c0efe9f856ba01a73382541067335f0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720589"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
-Ruft einen Speicherkontext eines Verweises ab. Für die zukünftige Verwendung reserviert.
+Ruft einen Speicher Kontext eines Verweises ab. Für zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetMemoryContext ( 
 
 ## <a name="parameters"></a>Parameter
 `ppMemory`\
-[out] Gibt das [IDebugMemoryContext2-Objekt](../../../extensibility/debugger/reference/idebugmemorycontext2.md) zurück, das den Speicher darstellt, der dem Wert des Verweises zugeordnet ist.
+vorgenommen Gibt das [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Objekt zurück, das den dem Wert des Verweises zugeordneten Arbeitsspeicher darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.

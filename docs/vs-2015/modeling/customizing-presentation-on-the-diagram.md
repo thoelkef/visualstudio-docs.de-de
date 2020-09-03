@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7454a110d5321a8f3a9dbf2472f15252cfaf13d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655003"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Anpassen der Darstellung im Diagramm
@@ -37,5 +37,5 @@ Das Diagramm ist der Hauptpräsentationsbereich eines domänenspezifischen Sprac
 
 - [Einbetten eines Diagramms in Windows Form](../modeling/embedding-a-diagram-in-a-windows-form.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)

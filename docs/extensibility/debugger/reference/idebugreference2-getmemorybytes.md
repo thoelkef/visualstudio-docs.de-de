@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes | Microsoft Docs
+title: 'IDebugReference2:: getmemorybytes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720597"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-Ruft die Speicherbytes ab, die physisch den Wert eines Verweises enthalten. Für die zukünftige Verwendung reserviert.
+Ruft die Speicher Bytes ab, die physisch den Wert eines Verweises enthalten. Für zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>Parameter
 `ppMemoryBytes`\
-[out] Gibt ein [IDebugMemoryBytes2-Objekt](../../../extensibility/debugger/reference/idebugmemorybytes2.md) zurück, das zum Abrufen des Speichers verwendet werden kann, der den Wert des Verweises enthält.
+vorgenommen Gibt ein [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt zurück, das verwendet werden kann, um den Arbeitsspeicher abzurufen, der den Wert des Verweises enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.

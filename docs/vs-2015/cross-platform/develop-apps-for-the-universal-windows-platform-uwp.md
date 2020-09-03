@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844370"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
@@ -21,7 +21,7 @@ ms.locfileid: "75844370"
 
 Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern können Sie die gleiche App auf jedem Windows 10-Gerät ausführen, von Smartphones bis zu Desktop-PCs. Erstellen Sie diese universellen Windows-Apps mit Visual Studio 2015 und den universellen Windows-App-Entwicklungstools.
 
- ![Universal Windows Platform](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
+ ![Universelle Windows-Plattform](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
  Führen Sie Ihre App auf einem Windows 10-Phone, Windows 10-Desktop oder einer Xbox aus. Es ist das gleiche App-Paket. Mit der Einführung eines einzelnen, einheitlichen Windows 10-Kerns kann ein App-Paket auf allen Plattformen ausgeführt werden. Mehrere Plattformen verfügen über Erweiterungs-SDKs, die Sie zu Ihrer App hinzufügen können, um die Vorteile bestimmter plattformspezifischer Verhaltensweisen zu nutzen. Mit dem Erweiterungs-SDK für Mobilgeräte wird z. B. die auf einem Windows Phone gedrückte ZURÜCK-Taste behandelt. Wenn Sie in Ihrem Projekt auf ein Erweiterungs-SDK verweisen, fügen Sie einfach Laufzeitüberprüfungen hinzu, um zu prüfen, ob dieses SDK für diese Plattform verfügbar ist. Auf dieses Weise können Sie das gleiche App-Paket für alle Plattformen verwenden.
 
@@ -29,11 +29,11 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
 
  Zum ersten Mal wurde Windows so umgestaltet, dass ein gemeinsamer Kern für alle Windows 10-Plattformen verwendet wird. Es ist eine gemeinsame Quelle, ein gemeinsamer Windows-Kernel, ein Datei-E/A-Stapel und ein App-Modell vorhanden. Für die Benutzeroberfläche ist nur ein XAML-Benutzeroberlächen-Framework und ein HTML-Benutzeroberflächen-Framework vorhanden. So können Sie sich auf das Entwickeln einer tollen App konzentrieren, weil wir die Bereitstellung Ihrer App auf unterschiedlichen Windows 10-Geräten vereinfacht haben.
 
- **Was ist die universelle Windows-Plattform?**
+ **Was ist die Universelle Windows-Plattform?**
 
  Es ist eine Auflistung von Verträgen und Versionen. Mit diesen können Sie die Ziele auswählen, für die Ihre App ausgeführt werden kann. Es wird nicht länger ein Betriebssystem als Ziel für Ihre App angegeben. Jetzt richten Sie Ihre App auf eine oder mehrere Gerätefamilien aus. Weitere Informationen finden Sie in dieser [Plattform-Anleitung](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
 
-## <a name="requirements"></a>-Anforderungen
+## <a name="requirements"></a>Anforderungen
  Die Entwicklungstools für universelle Windows-Apps verfügen über Emulatoren, die Sie verwenden können, um zu prüfen, wie Ihre App auf unterschiedlichen Geräten aussieht. Wenn Sie diesen Emulatoren verwenden möchten, müssen Sie diese Software auf einem physischen Computer installieren. Auf dem physischen Computer muss Windows 8.1 (X 64) Professional Edition oder höher installiert sein, und er muss über einen Prozessor verfügen, der Hyper-V für Clients und SLAT (Second Level Address Translation) unterstützt. Die Emulatoren können nicht verwendet werden, wenn Visual Studio auf einem virtuellen Computer installiert ist.
 
  Hier finden Sie die Liste erforderlicher Softwarekomponenten:
@@ -42,7 +42,7 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
 
 - [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Stellen Sie sicher, dass die Tools für die universelle Windows-App-Entwickung in der Liste der optionalen Features ausgewählt sind. Ohne diese Tools können Sie keine universellen Apps erstellen.
 
-  Nach der Installation der Software müssen Sie Ihr [Windows 10-Gerät](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) für die Entwicklung aktivieren. (Eine Entwicklerlizenz für jedes Windows 10-Gerät wird nicht mehr benötigt.)
+  Nachdem Sie diese Software installiert haben, müssen Sie [Ihr Windows 10-Gerät für die Entwicklung aktivieren](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) . (Eine Entwicklerlizenz für jedes Windows 10-Gerät wird nicht mehr benötigt.)
 
   **Windows 8.1- und Windows 7-Unterstützung**
 
@@ -59,4 +59,4 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
 
  Wenn Sie über Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps verfügen, [portieren Sie diese vorhandenen Apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , um die neueste Version der universellen Windows-Plattform zu verwenden.
 
- Nachdem Sie die universelle Windows-App erstellt haben, müssen Sie [Ihre App packen](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) , um sie auf einem Windows 10-Gerät zu installieren oder an den Windows Store zu übermitteln.
+ Nachdem Sie Ihre universelle Windows-App erstellt haben, müssen Sie [Ihre APP packen](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) , um Sie auf einem Windows 10-Gerät zu installieren oder an den Windows Store zu übermitteln.
