@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca9cc6b853ea95cedcb0ce109b9618fc0eb455ba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542752"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
@@ -28,7 +28,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visu
 
 Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualisierung und Modellierungs-SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) .
 
-## <a name="selecting-a-template-solution"></a><a name="templates"></a>Auswählen einer Vorlagen Lösung
+## <a name="selecting-a-template-solution"></a><a name="templates"></a> Auswählen einer Vorlagen Lösung
 
 Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
@@ -121,7 +121,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
   Löschen Sie andere Klassen nach Bedarf, oder benennen Sie sie um.
 
-## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a>Muster zum Definieren einer DSL
+## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a> Muster zum Definieren einer DSL
  Es ist empfehlenswert, beim Entwickeln einer DSL nur jeweils ein oder zwei Features gleichzeitig hinzuzufügen bzw. anzupassen. Fügen Sie ein Feature hinzu, führen Sie die DSL aus und testen Sie sie. Fügen Sie dann ein oder zwei weitere Features hinzu. Ein typisches Feature Ihrer DSL könnte folgendermaßen aussehen:
 
 - Eine Domänenklasse, die einbettende Beziehung, die das Element mit dem Modell verbindet, die erforderliche Form zum Anzeigen von Elementen der Klasse im Diagramm sowie das Elementwerkzeug, mit dem Benutzer Elemente erstellen können.
@@ -148,7 +148,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 > [!NOTE]
 > "Modell" bezieht sich auf eine Instanz Ihrer DSL, die Benutzer erstellen. Sie wird üblicherweise als Diagramm dargestellt. In diesem Thema werden das DSL-Definitionsdiagramm und die Modelldiagramme erläutert, die bei Verwendung der DSL angezeigt werden.
 
-## <a name="defining-domain-classes"></a><a name="classes"></a>Definieren von Domänen Klassen
+## <a name="defining-domain-classes"></a><a name="classes"></a> Definieren von Domänen Klassen
  Domänenklassen stellen die Konzepte der DSL dar. Die Instanzen sind *Modellelemente*. Beispielsweise können Sie in einer **Musik von musiclibrary** Domänen Klassen mit dem Namen " **Album** " und " **Song**" haben.
 
  Wenn Sie eine Domänen Klasse erstellen möchten, können Sie Sie aus dem **benannten Domänen Klassen** Tool in das Diagramm ziehen und dann die Klasse umbenennen.
@@ -230,7 +230,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 7. **Speichern Sie die Datei, schließen Sie Sie, und öffnen Sie Sie erneut**. Nachdem Sie die Knoten erweitert haben, sollten alle erstellten Instanzen im Explorer sichtbar sein.
 
-## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a>Definieren von Formen im Diagramm
+## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a> Definieren von Formen im Diagramm
  Sie können Klassen von Elementen definieren, die in einem Diagramm als Rechtecke, Ellipsen oder Symbole erscheinen.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>So definieren Sie eine Klasse von Elementen, die in einem Diagramm als Formen dargestellt werden
@@ -326,7 +326,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    Nach dem ersten Test einer Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="defining-reference-relationships"></a><a name="references"></a>Definieren von Verweis Beziehungen
+## <a name="defining-reference-relationships"></a><a name="references"></a> Definieren von Verweis Beziehungen
  Sie können eine Verweisbeziehung zwischen einer Quelldomänenklasse und einer Zieldomänenklasse definieren. Verweisbeziehungen werden in einem Diagramm üblicherweise als Konnektoren, also als Linien zwischen Formen, angezeigt.
 
  Wenn beispielsweise Alben und Interpreten als Formen in einem Diagramm dargestellt werden, könnten Sie eine Beziehung namens "ArtistsAppearedOnAlbums" definieren, die Interpreten mit den Alben verknüpft, an denen sie mitgewirkt haben. Siehe das Beispiel in der Abbildung.
@@ -408,7 +408,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    Nach dem ersten Test eines Konnektors möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a>Definieren von Formen, die Listen enthalten: Depot-Formen
+## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a> Definieren von Formen, die Listen enthalten: Depot-Formen
  Eine Depot-Form enthält mindestens eine Liste von Elementen. In einer DSL für eine Musikbibliothek würden Sie z. B. Depot-Formen verwenden, um Musikalben darzustellen. Jedes Album enthält eine Liste von Songs.
 
  ![Depot-Form](../modeling/media/compartmentshape.png)
@@ -536,7 +536,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 7. Wählen Sie entweder den Link oder das Element in der Depot-Form aus. Sowohl der Link als auch das Element sollte angezeigt werden.
 
-## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a>Definieren von Ports an der Grenze einer anderen Form
+## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a> Definieren von Ports an der Grenze einer anderen Form
  Ein Anschluss ist eine Form, die sich am Rand einer anderen Form befindet.
 
  Anschlüsse können auch verwendet werden, um einen festen Verbindungspunkt an einer anderen Form bereitzustellen, zu dem der Benutzer Konnektoren zeichnen kann. In diesem Fall können Sie die Anschluss-Form transparent machen.
@@ -559,7 +559,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
   Weitere Informationen finden Sie unter [Eigenschaften von Port Formen](../modeling/properties-of-port-shapes.md).
 
-## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a>Definieren einer DSL mit Verantwortlichkeits Bereichen
+## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a> Definieren einer DSL mit Verantwortlichkeits Bereichen
  Verantwortlichkeitsbereiche sind vertikale oder horizontale Bereiche eines Diagramms. Jeder Verantwortlichkeitsbereich entspricht einem Modellelement. Ihre DSL-Definition muss eine Domänenklasse für die Verantwortlichkeitsbereich-Elemente enthalten.
 
  Am besten lässt sich eine DSL mit Verantwortlichkeitsbereichen erstellen, indem Sie eine neue DSL-Projektmappe erstellen und die Projektmappenvorlage "Aufgabenfluss" auswählen. In der DSL-Definition ist die Actor-Klasse die Domänenklasse, die dem Verantwortlichkeitsbereich zugeordnet wird. Benennen Sie diese und die anderen Klassen nach den Anforderungen Ihres Projekts um.
@@ -570,7 +570,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Weitere Informationen finden Sie unter [Eigenschaften von Swimlanes](../modeling/properties-of-swimlanes.md).
 
-## <a name="adding-property-types"></a><a name="addTypes"></a>Hinzufügen von Eigenschaften Typen
+## <a name="adding-property-types"></a><a name="addTypes"></a> Hinzufügen von Eigenschaften Typen
 
 ### <a name="domain-enumerations-and-literals"></a>Domänenenumerationen und Literale
  Eine Domänenenumeration ist ein Typ mit mehreren Literalwerten.
@@ -586,7 +586,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Um einen Typ hinzuzufügen, klicken Sie im DSL-Explorer mit der rechten Maustaste auf den Stamm des Modells, und klicken Sie dann auf **neuen externen Typ hinzufügen**. Legen Sie in der Eigenschaftenfenster den Namen auf " **Color** " und den Namespace auf " **System. Drawing**" fest. Dieser Typ wird jetzt im DSL-Explorer unter **Domänen Typen**angezeigt. Sie können ihn immer auswählen, wenn Sie den Typ einer Domäneneigenschaft festlegen.
 
-## <a name="customizing-the-dsl"></a><a name="custom"></a>Anpassen der DSL
+## <a name="customizing-the-dsl"></a><a name="custom"></a> Anpassen der DSL
  Mit den hier beschriebenen Verfahren können Sie schnell eine DSL mit einer Diagrammdarstellung, einem lesbaren XML-Format und den grundlegenden Tools erstellen, mit denen Code und andere Artefakte generiert werden.
 
  Die DSL-Definition kann auf zwei Arten erweitert werden:

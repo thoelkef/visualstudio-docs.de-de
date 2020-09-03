@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542856"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ausführen von Komponententests für Store-Apps in Visual Studio
@@ -53,7 +53,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 ## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Komponententestframeworks und Testprojekte
  Visual Studio Express für Windows Store-Apps schließt die Microsoft-Unittest-Frameworks für verwalteten und nativen C++-Code ein. Im Test-Explorer können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Testprojekte können sich aus jeder beliebigen Kombination von Visual C++- oder Visual C#- und Visual Basic-Komponententest-Frameworks zusammensetzen. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder .NET Framework-Sprache geschrieben sein, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.
 
-## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Ausführen von Tests im Test-Explorer
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
  ![Komponententest-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 
  ![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>Ausführen von Tests
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a> Ausführen von Tests
  Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
 
 - Wählen Sie zum Ausführen aller Tests in einer Projektmappe **Alle ausführen**aus.
@@ -75,7 +75,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 
   Während der Testausführung wird die oben im Fenster "Test-Explorer" angezeigte Erfolgreich/Fehler-Leiste animiert. Am Ende des Testlaufs wird die Erfolgreich/Fehler-Leiste grün, wenn alle Tests erfolgreich verlaufen, oder rot, falls ein beliebiger Test fehlschlägt.
 
-## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a>Anzeigen von Testergebnissen
+## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a> Anzeigen von Testergebnissen
  Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests**angezeigt. Im Detailbereich unten im Test-Explorer wird eine Zusammenfassung des Testlaufs angezeigt.
 
 ### <a name="viewing-test-details"></a><a name="BKMK_Viewing_test_details"></a> Anzeigen von Testdetails
@@ -103,7 +103,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 ### <a name="grouping-tests"></a><a name="BKMK_Grouping_tests"></a> Gruppieren von Tests
  Standardmäßig werden im Test-Explorer die Tests als untergeordnete Knoten von **Fehlerhafte Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Übersprungene Tests** angezeigt.
 
-|Image|BESCHREIBUNG|
+|Bild|BESCHREIBUNG|
 |-|-|
 |![Gruppenschaltfläche "Test-Explorer"](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|
 

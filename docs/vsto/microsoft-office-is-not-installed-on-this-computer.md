@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16f312f9b9d15cbdacbb1fa3e0628903254aeaea
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543142"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office ist nicht auf dem Computer installiert.
@@ -26,6 +26,6 @@ ms.locfileid: "85543142"
 
 1. Installieren Sie die Microsoft Office Anwendung, die dem Projekttyp zugeordnet ist, einschließlich der primären Interopassemblys. Weitere Informationen zu unterstützten Versionen von Microsoft Office finden [Sie unter Konfigurieren eines Computers zum Entwickeln von Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)-Projektmappen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f5e52bf174e5a41d79fa23bfca39121db668e40e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643859"
 ---
 # <a name="statement-completion-for-identifiers"></a>Anweisungsvervollständigung für Bezeichner
@@ -50,15 +50,15 @@ JavaScript lässt keine explizite Typisierung für Variablen Deklarationen zu. F
 
 - Ein-Objekt befindet sich in einer Funktion, die als Reaktion auf ein Ereignis aufgerufen wird. Zur Entwurfszeit kann die IntelliSense-Engine den Typ der in dieser Situation verwendeten Objekte nicht ermitteln.
 
-   Wenn die IntelliSense-Engine feststellen kann, dass das Ereignis aufgerufen werden soll (in der Regel durch die Verwendung von `addEventListener` für das Ereignis im aktiven Dokument), werden genauere IntelliSense-Informationen bereitgestellt.
+   Wenn die IntelliSense-Engine bestimmen kann, dass das Ereignis aufgerufen werden soll, in der Regel durch die Verwendung von `addEventListener` für das-Ereignis im aktiven Dokument, werden genauere IntelliSense-Informationen bereitgestellt.
 
-  Wenn IntelliSense kein Objekt identifizieren kann, füllt die IntelliSense-Engine die Vervollständigungsliste mit benannten Entitäten oder bezeichaten auf, die im aktiven Dokument vorhanden sind. Wenn die Vervollständigungsliste diese Bezeichner enthält, werden neben Ihnen Informations Symbole angezeigt. Außerdem gibt eine QuickInfo für jeden Bezeichner an, dass der Ausdruck unbekannt ist. Die folgende Abbildung zeigt Anweisungs Vervollständigungs Optionen für ein Objekt vom Typ `light`, die nicht identifiziert werden können, da das Objekt und seine Eigenschaften nicht definiert sind. Die `intensity`-Eigenschaft ist jedoch in der bezeichnerliste verfügbar, da Sie in der `illuminate`-Funktion verwendet wurde.
+  Wenn IntelliSense kein Objekt identifizieren kann, füllt die IntelliSense-Engine die Vervollständigungsliste mit benannten Entitäten oder bezeichaten auf, die im aktiven Dokument vorhanden sind. Wenn die Vervollständigungsliste diese Bezeichner enthält, werden neben Ihnen Informations Symbole angezeigt. Außerdem gibt eine QuickInfo für jeden Bezeichner an, dass der Ausdruck unbekannt ist. Die folgende Abbildung zeigt Anweisungs Vervollständigungs Optionen für ein Objekt vom Typ `light` , das nicht identifiziert werden kann, da das Objekt und seine Eigenschaften nicht definiert sind. Die- `intensity` Eigenschaft ist jedoch in der bezeichnerliste verfügbar, da Sie in der- `illuminate` Funktion verwendet wurde.
 
   **Vervollständigungs Optionen für ein Objekt, das nicht identifiziert werden kann**
 
-  ![JavaScript IntelliSense für Bezeichner](../ide/media/js-intellisense-identifiers.png "|::ref1::|")
+  ![JavaScript IntelliSense für Bezeichner](../ide/media/js-intellisense-identifiers.png "js_intellisense_identifiers")
 
   Sie können die Vervollständigungsliste für ein Objekt überschreiben, indem Sie XML-Dokumentations Kommentare oder JavaScript IntelliSense-Erweiterbarkeits Funktionen verwenden. Mit diesen Funktionen können Sie Typinformationen und aussagekräftigeren IntelliSense-Informationen bereitstellen, wenn diese andernfalls nicht verfügbar sind. Weitere Informationen finden Sie unter [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) und [Erstellen von XML-Dokumentations Kommentaren](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

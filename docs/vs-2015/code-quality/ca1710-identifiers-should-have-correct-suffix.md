@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ee7ce7c4e9edad9d941b4a70b2a199a37130e43
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543987"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Bezeichner sollten ein richtiges Suffix aufweisen.
@@ -29,7 +29,7 @@ ms.locfileid: "85543987"
 |-|-|
 |TypName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -44,7 +44,7 @@ ms.locfileid: "85543987"
 
 |Basistyp/Schnittstelle|Suffix|
 |--------------------------|------------|
-|<xref:System.Attribute?displayProperty=fullName>|Attribut|
+|<xref:System.Attribute?displayProperty=fullName>|attribute|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Ausnahme|
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Sammlung|
@@ -56,7 +56,7 @@ ms.locfileid: "85543987"
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Wörterbuch|
 |<xref:System.Data.DataSet?displayProperty=fullName>|Dataset|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Sammlung oder Datentabelle|
-|<xref:System.IO.Stream?displayProperty=fullName>|STREAM|
+|<xref:System.IO.Stream?displayProperty=fullName>|Stream|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Berechtigung|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Bedingung|
 |Ein Ereignishandlerdelegat.|EventHandler|

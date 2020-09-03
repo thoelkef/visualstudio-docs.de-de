@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542739"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
@@ -272,7 +272,7 @@ Diese Elemente finden Sie im DSL-Explorer unter **XML Serialization verhalt\clas
 |Ist Benutzer definiert|Legen Sie diese Einstellung auf " **true** " fest, wenn Sie Ihren eigenen Serialisierungs-und Deserialisierungscode für diese Domänen Klasse schreiben möchten.<br /><br /> Erstellen Sie die Lösung, und untersuchen Sie die Fehler, um ausführliche Anweisungen zu finden.|
 |Domänenklasse|Die Domänen Klasse, auf die dieser Klassen Datenknoten angewendet wird. Schreibgeschützt.|
 |Elementname|Der Name des XML-Knotens für Elemente dieser Klasse. Der Standardwert ist eine Kleinbuchstaben Version des Domänen Klassen namens.|
-|Name des monikerattributs|Der Name des Attributs, das in monikerelementen verwendet wird, um den Verweis zu enthalten. Wenn dieser Wert leer ist, wird der Name der Schlüsseleigenschaft oder-ID verwendet.<br /><br /> In diesem Beispiel lautet der Name "Name":`<personMoniker name="/Mike Nash"/>`|
+|Name des monikerattributs|Der Name des Attributs, das in monikerelementen verwendet wird, um den Verweis zu enthalten. Wenn dieser Wert leer ist, wird der Name der Schlüsseleigenschaft oder-ID verwendet.<br /><br /> In diesem Beispiel lautet der Name "Name":  `<personMoniker name="/Mike Nash"/>`|
 |Name des monikerelements|Der Name des XML-Elements, das für Moniker verwendet wird, die auf Elemente dieser Klasse verweisen.<br /><br /> Der Standardwert ist eine Kleinbuchstaben Version des Klassen namens, die mit "Moniker" versehen ist. Beispiel: `personMoniker`.|
 |Monikertypname|Der Name des XSD-Typs, der für Moniker für Elemente dieser Klasse generiert wird. Die XSD befindet sich in " **dsl\generated Code \\ \* Schema. xsd".**|
 |Serialisieren der ID|True gibt an, dass die Element-GUID in der Datei enthalten ist. Dies muss "true" sein, wenn keine Eigenschaft vorliegt, die als **monikerschlüssel** markiert ist, und die DSL Verweis Beziehungen zu dieser Klasse definiert.|

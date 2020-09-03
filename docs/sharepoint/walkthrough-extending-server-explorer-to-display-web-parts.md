@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015638"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts
@@ -71,7 +72,7 @@ ms.locfileid: "86015638"
 
 2. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** , und wählen Sie dann den Knoten **Erweiterbarkeit** aus.
+3. Erweitern Sie im Dialogfeld  **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** , und wählen Sie dann den Knoten **Erweiterbarkeit** aus.
 
     > [!NOTE]
     > Der **Erweiterbarkeits** Knoten ist nur verfügbar, wenn Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
@@ -92,7 +93,7 @@ ms.locfileid: "86015638"
 
 4. Wählen Sie in der Liste der Projektvorlagen die Option **Klassenbibliothek**aus, benennen Sie das Projekt **WebPartNodeExtension**, und wählen Sie dann die Schaltfläche **OK** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt Mappe das **WebPartNodeExtension** -Projekt hinzu und öffnet die standardmäßige Class1-Codedatei.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das **WebPartNodeExtension** -Projekt hinzu und öffnet die standardmäßige Class1-Codedatei.
 
 5. Löschen Sie die Class1-Codedatei aus dem Projekt.
 
@@ -100,13 +101,13 @@ ms.locfileid: "86015638"
 
 1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** Knoten, und wählen Sie dann den Knoten **Windows** aus.
+2. Erweitern Sie im Dialogfeld  **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** Knoten, und wählen Sie dann den Knoten **Windows** aus.
 
 3. Wählen Sie oben im Dialogfeld **.NET Framework 3,5** in der Liste der .NET Framework Versionen aus.
 
 4. Wählen Sie in der Liste der Projektvorlagen die Option **Klassenbibliothek**aus, benennen Sie das Projekt mit **webpartcommands**, und wählen Sie dann die Schaltfläche **OK** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt Mappe das **webpartcommands** -Projekt hinzu und öffnet die standardmäßige Class1-Codedatei.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das **webpartcommands** -Projekt hinzu und öffnet die standardmäßige Class1-Codedatei.
 
 5. Löschen Sie die Class1-Codedatei aus dem Projekt.
 
@@ -153,7 +154,7 @@ ms.locfileid: "86015638"
 
 4. Wählen Sie den Pfeil neben der Schaltfläche **Hinzufügen** aus, und wählen Sie dann im angezeigten Menü die Option **als Link hinzufügen** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt die Code Dateien dem Projekt webpartcommands als Links hinzu. Daher befinden sich die Code Dateien im WebPartNodeExtension-Projekt, der Code in den Dateien wird jedoch auch im webpartcommands-Projekt kompiliert.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt die Code Dateien dem Projekt webpartcommands als Links hinzu. Daher befinden sich die Code Dateien im WebPartNodeExtension-Projekt, der Code in den Dateien wird jedoch auch im webpartcommands-Projekt kompiliert.
 
 5. Öffnen Sie erneut das Kontextmenü für das **webpartcommands** -Projekt, und wählen Sie **Verweis hinzufügen**aus.
 
@@ -182,7 +183,7 @@ ms.locfileid: "86015638"
 
 3. Wählen Sie die Registerkarte **Ressourcen** aus, und wählen Sie dann das **Projekt enthält keine Standard Ressourcen Datei aus. Klicken Sie hier, um einen Link zu erstellen** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt eine Ressourcen Datei und öffnet Sie im Designer.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt eine Ressourcen Datei und öffnet Sie im Designer.
 
 4. Wählen Sie oben im Designer den Pfeil neben dem Menübefehl **Ressource hinzufügen** aus, und wählen Sie dann im angezeigten Menü die Option **Neues Symbol hinzufügen** aus.
 

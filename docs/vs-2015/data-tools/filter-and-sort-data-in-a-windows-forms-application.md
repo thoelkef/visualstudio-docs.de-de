@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24c623efc141ff84c2585f967596271d1efbc502
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671647"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtern und Sortieren von Daten in einer Windows Forms-Anwendung
@@ -37,7 +37,7 @@ Daten können gefiltert werden, indem die <xref:System.Windows.Forms.BindingSour
  Daten können sortiert werden, indem die <xref:System.Windows.Forms.BindingSource.Sort%2A>-Eigenschaft auf den Spaltennamen festgelegt wird, nach dem sortiert werden soll. Fügen Sie `DESC` an, um in absteigender Reihenfolge zu sortieren, oder fügen Sie `ASC` an, um in aufsteigender Reihenfolge zu sortieren.
 
 > [!NOTE]
-> Wenn die Anwendung <xref:System.Windows.Forms.BindingSource> Komponenten nicht verwendet, können Sie Daten mithilfe <xref:System.Data.DataView>-Objekten Filtern und sortieren. Weitere Informationen finden Sie unter ["DataViews"](https://msdn.microsoft.com/library/0fe5dfa2-c1cd-435f-90b6-b4dd2e3ef34b).
+> Wenn die Anwendung keine Komponenten verwendet <xref:System.Windows.Forms.BindingSource> , können Sie Daten mithilfe von Objekten Filtern und Sortieren <xref:System.Data.DataView> . Weitere Informationen finden Sie unter ["DataViews"](https://msdn.microsoft.com/library/0fe5dfa2-c1cd-435f-90b6-b4dd2e3ef34b).
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>So filtern Sie Daten mithilfe einer BindingSource-Komponente
 
@@ -53,5 +53,5 @@ Daten können gefiltert werden, indem die <xref:System.Windows.Forms.BindingSour
      [!code-csharp[VbRaddataDisplaying#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDisplaying#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb#7)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

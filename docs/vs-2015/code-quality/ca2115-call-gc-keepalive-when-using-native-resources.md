@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c668172ca318000068fb4e90f4848e456c32208d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543623"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: GC.KeepAlive beim Verwenden nativer Ressourcen aufrufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|CallGCKeepAliveWhenUsingNativeResources|
 |CheckId|CA2115|
@@ -53,7 +53,7 @@ ms.locfileid: "85543623"
   Überprüfen Sie andere Meldungen sorgfältig, bevor Sie Sie ausschließen. Diese Regel erkennt Fehler, die schwer zu reproduzieren und zu Debuggen sind.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel enthält keinen `BadMethod` `GC.KeepAlive` -Rückruf und verstößt daher gegen die Regel. `GoodMethod`enthält den korrigierten Code.
+ Im folgenden Beispiel enthält keinen `BadMethod` `GC.KeepAlive` -Rückruf und verstößt daher gegen die Regel. `GoodMethod` enthält den korrigierten Code.
 
 > [!NOTE]
 > Bei diesem Beispiel handelt es sich um Pseudo Code, obwohl der Code kompiliert und ausgeführt wird, wird die Warnung nicht ausgelöst, da eine nicht verwaltete Ressource nicht erstellt oder freigegeben wird.

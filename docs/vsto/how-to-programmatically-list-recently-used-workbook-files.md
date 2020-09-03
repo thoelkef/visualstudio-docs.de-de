@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f4f34a8ed848d548b2e23d3f9a3cf3c603c7cad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541361"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Gewusst wie: Programm gesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien
@@ -34,7 +34,7 @@ ms.locfileid: "85541361"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)
 - [Name Drange-Steuerelement](../vsto/namedrange-control.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
