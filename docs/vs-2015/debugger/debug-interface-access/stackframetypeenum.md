@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 655911bac1efbafe1838e24e2056282f9036479b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179187"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gibt den Stack-Frame-Typ.  
+Gibt den Stapel Rahmentyp an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,31 +38,31 @@ enum StackFrameTypeEnum {
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  `FrameTypeFPO`  
- Frame-Pointer ausgelassen; FPO-Informationen verfügbar.  
+ Der Frame Zeiger wurde ausgelassen. Die verfügbaren Informationen zur Verfügbarkeit  
   
  `FrameTypeTrap`  
- Kernel-Trap-Frame.  
+ Kerneltrap-Frame.  
   
  `FrameTypeTSS`  
- Kernel-Trap-Frame.  
+ Kerneltrap-Frame.  
   
  `FrameTypeStandard`  
- Standard EBP-Stapelrahmen.  
+ Standard mäßiger EBP-Stapel Rahmen.  
   
  `FrameTypeFrameData`  
- Frame-Pointer ausgelassen; Frame-Daten-Informationen verfügbar.  
+ Der Frame Zeiger wurde ausgelassen. Informationen zur Frame-Daten sind verfügbar.  
   
  `FrameTypeUnknown`  
- Frame aus, der kein Debuginformationen vorhanden wären.  
+ Frame, der keine Debuginformationen enthält.  
   
-## <a name="remarks"></a>Hinweise  
- Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Werte in dieser Enumeration werden von einem Rückruf der [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

@@ -17,21 +17,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594109"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Verwenden von Code Maps zum Debuggen von Anwendungen
 
 Code Maps helfen Ihnen, die Übersicht in umfangreichen Codebasen, nicht vertrautem Code oder Legacycode zu behalten. Wenn Sie z. b. Debuggen, müssen Sie möglicherweise den Code über mehrere Dateien und Projekte hinweg betrachten. Mithilfe von Code Maps können Sie in Codeabschnitten navigieren und Beziehungen zwischen ihnen verstehen. Auf diese Weise müssen Sie die den Code nicht gedanklich nachvollziehen oder ein separates Diagramm zeichnen. Wenn Sie die Arbeit unterbrechen müssen, können Code Maps Ihnen helfen, sich den Code wieder ins Gedächtnis zu rufen, an dem Sie arbeiten.
 
-![Code Map &#45; -Zuordnungs Beziehungen im Code](../modeling/media/codemapstoryboardpaint.png)
+![Code Map &#45; Zuordnungs Beziehungen im Code](../modeling/media/codemapstoryboardpaint.png)
 
 **Ein grüner Pfeil zeigt an, wo der Cursor im Editor angezeigt wird.**
 
-Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
+Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten mit Code Maps verwenden können, finden Sie unter [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
 > [!NOTE]
 > Zum Erstellen und Bearbeiten von Code Maps benötigen Sie Visual Studio Enterprise Edition. In den Editionen von Visual Studio Community und Professional können Sie Diagramme öffnen, die in der Enterprise Edition generiert wurden, Sie können Sie jedoch nicht bearbeiten.
@@ -41,28 +41,28 @@ Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps könn
 
  Wenn Sie eine Linie zeichnen und den **letzten Strich rückgängig**machen auswählen, geschieht nichts, bis Sie die nächste Zeile zeichnen.
 
- ![Code Map &#45; -Repro-Fehler](../modeling/media/codemapstoryboardpaint0.png)
+ ![Code Map &#45; Repro-Fehler](../modeling/media/codemapstoryboardpaint0.png)
 
  Daher beginnen Sie mit der Untersuchung, indem Sie nach der `Undo`-Methode suchen. Sie finden diese in der `PaintCanvas`-Klasse.
 
- ![Code Map &#45; -Code suchen](../modeling/media/codemapstoryboardpaint1.png)
+ ![Code Map &#45; Code suchen](../modeling/media/codemapstoryboardpaint1.png)
 
 ## <a name="start-mapping-the-code"></a>Die Codezuordnung starten
  Nun beginnen Sie mit dem Mapping der `undo`-Methode und ihrer Beziehungen. Fügen Sie im Code-Editor die `undo`-Methode und die Felder, auf die sie verweist, zu einer neuen Code Map hinzu. Wenn Sie eine neue Zuordnung erstellen, kann es einige Zeit dauern, den Code zu indizieren. Aufgrund der Indizierung können spätere Vorgänge schneller ausgeführt werden.
 
- ![Code Map &#45; Show-Methode und verwandte Felder](../modeling/media/codemapstoryboardpaint3.png)
+ ![Code Map &#45; Methode und verwandte Felder anzeigen](../modeling/media/codemapstoryboardpaint3.png)
 
 > [!TIP]
 > Die letzten zur Zuordnung hinzugefügten Elemente werden grün hervorgehoben. Der grüne Pfeil zeigt die Position des Cursors im Code an. Pfeile zwischen Elementen stellen verschiedene Beziehungen dar. Weitere Informationen zu Elementen in der Map enthalten die entsprechenden QuickInfos. Fahren Sie zur Anzeige einfach mit dem Mauszeiger über das Element.
 
- ![Code Map &#45; -Tooltipps anzeigen](../modeling/media/codemapstoryboardpaint4.png)
+ ![Code Map &#45; anzeigen von Quick Infos](../modeling/media/codemapstoryboardpaint4.png)
 
 ## <a name="navigate-and-examine-code-from-the-map"></a>Code aus der Zuordnung navigieren und untersuchen
  Um die Code Definition für jedes Feld anzuzeigen, doppelklicken Sie auf das Feld auf der Karte, oder wählen Sie das Feld aus, und drücken Sie **F12**. Der grüne Pfeil wird zwischen den Elementen in der Zuordnung verschoben. Der Cursor im Code-Editor wird automatisch ebenfalls bewegt.
 
- ![Felddefinition &#45; für Code Map-Untersuchung](../modeling/media/codemapstoryboardpaint5.png)
+ ![Code Map &#45; untersuchen der Felddefinition](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Felddefinition &#45; für Code Map-Untersuchung](../modeling/media/codemapstoryboardpaint5a.png)
+ ![Code Map &#45; untersuchen der Felddefinition](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > Sie können den grünen Pfeil in der Zuordnung auch verschieben, indem Sie den Cursor im Code-Editor bewegen.
@@ -79,36 +79,36 @@ Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps könn
 
  Ändern Sie das Layout, um den Ablauf der Beziehungen neu anzuordnen und die Zuordnung besser lesbar zu machen. Sie können Elemente in der Zuordnung auch verschieben, indem Sie sie an andere Positionen ziehen.
 
- ![Layout der &#45; Code Map-Änderung](../modeling/media/codemapstoryboardpaint7a.png)
+ ![Code Map &#45; Layout ändern](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > Das **inkrementelle Layout** ist standardmäßig aktiviert. Dadurch wird die Zuordnung so wenig wie möglich neu angeordnet, wenn Sie neue Elemente hinzufügen. Deaktivieren Sie das **inkrementelle Layout**, um die gesamte Zuordnung bei jedem Hinzufügen neuer Elemente neu anzuordnen.
 
- ![Layout der &#45; Code Map-Änderung](../modeling/media/codemapstoryboardpaint7.png)
+ ![Code Map &#45; Layout ändern](../modeling/media/codemapstoryboardpaint7.png)
 
  Überprüfen Sie diese Methoden. Doppelklicken Sie auf der Karte auf die **paintcanvas** -Methode, oder wählen Sie diese Methode aus, und drücken Sie **F12**. Sie erfahren, dass `history` und `paintObjects` von dieser Methode als leere Listen erstellt werden.
 
- ![Methoden Definition &#45; für Code Map-Untersuchung](../modeling/media/codemapstoryboardpaint8.png)
+ ![Code Map &#45; untersuchen der Methoden Definition](../modeling/media/codemapstoryboardpaint8.png)
 
  Wiederholen Sie nun die gleichen Schritte, um die Definition der `clear`-Methode zu überprüfen. Sie erfahren, dass in `clear` einige Aufgaben mit `paintObjects` und `history` ausgeführt werden. Anschließend wird die `Repaint`-Methode aufgerufen.
 
- ![Methoden Definition &#45; für Code Map-Untersuchung](../modeling/media/codemapstoryboardpaint9.png)
+ ![Code Map &#45; untersuchen der Methoden Definition](../modeling/media/codemapstoryboardpaint9.png)
 
  Überprüfen Sie nun die Definition der `addPaintObject`-Methode. Darin werden ebenfalls einige Aufgaben mit `history` und `paintObjects` ausgeführt. Auch darin wird `Repaint` aufgerufen.
 
- ![Methoden Definition &#45; für Code Map-Untersuchung](../modeling/media/codemapstoryboardpaint10.png)
+ ![Code Map &#45; untersuchen der Methoden Definition](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Das Problem durch Prüfen der Zuordnung suchen
  Anscheinend wird von allen Methoden, die `history` und `paintObjects` ändern, `Repaint` aufgerufen. Von der `undo`-Methode wird `Repaint` jedoch nicht aufgerufen, obwohl von `undo` die gleichen Felder geändert werden. Daher denken Sie, dass Sie dieses Problem beheben können, indem Sie `Repaint` von `undo` aus aufrufen.
 
- ![Code Map &#45; fehlende Methodenaufrufe suchen](../modeling/media/codemapstoryboardpaint11.png)
+ ![Code Map &#45; fehlenden Methodenaufrufe suchen](../modeling/media/codemapstoryboardpaint11.png)
 
  Wenn Sie keine Zuordnung zur Verfügung gehabt hätten, in der dieser fehlende Aufruf angezeigt wird, wäre es möglicherweise schwieriger gewesen, dieses Problem zu finden, insbesondere bei komplexerem Code.
 
 ## <a name="share-your-discovery-and-next-steps"></a>Ergebnisse freigeben und nächste Schritte
  Bevor Sie oder jemand anderes diesen Fehler behebt, können Sie in der Zuordnung Notizen zu dem Problem und dessen Behebung erstellen.
 
- ![Code Map &#45; -Kommentar und Flag-Elemente für Nachverfolgung](../modeling/media/codemapstoryboardpaint12.png)
+ ![Code Map &#45; Kommentar und Markieren von Elementen für die Nachverfolgung](../modeling/media/codemapstoryboardpaint12.png)
 
  Sie können der Zuordnung beispielsweise Kommentare hinzufügen und Elemente mit Farben kennzeichnen.
 
@@ -116,20 +116,20 @@ Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps könn
 
  Wenn Microsoft Outlook installiert ist, können Sie die Zuordnung per E-Mail an andere senden. Sie können die Zuordnung auch als Bild oder in einem anderen Format exportieren.
 
- ![Code Zuordnungs &#45; Freigabe, exportieren, e-Mail](../modeling/media/codemapstoryboardpaint13.png)
+ ![Code Map &#45; Freigabe, Export, e-Mail-Nachricht](../modeling/media/codemapstoryboardpaint13.png)
 
 ## <a name="fix-the-problem-and-show-what-you-did"></a>Das Problem beheben und zeigen, was Sie getan haben
  Fügen Sie den Aufruf von `Repaint` zu `undo` hinzu, um diesen Fehler zu beheben.
 
- ![Code Map &#45; fehlende Methodenaufrufe hinzufügen](../modeling/media/codemapstoryboardpaint14.png)
+ ![Code Map &#45; fehlenden Methodenaufrufe hinzufügen](../modeling/media/codemapstoryboardpaint14.png)
 
  Starten Sie die Debugsitzung neu, und versuchen Sie, den Fehler zu reproduzieren, um sicherzustellen, dass der Fehler behoben ist. Die Auswahl des **letzten Strichs rückgängig** ist erwartungsgemäß und bestätigt, dass Sie die richtige Lösung vorgenommen haben.
 
- ![Code Map &#45; -Code Korrektur bestätigen](../modeling/media/codemapstoryboardpaint15.png)
+ ![Code Map &#45; Code Korrektur bestätigen](../modeling/media/codemapstoryboardpaint15.png)
 
  Sie können die Zuordnung aktualisieren, damit die Ihre Korrektur angezeigt wird.
 
- ![Code Map &#45; -Update Zuordnung mit fehlendem Methodenaufrufe](../modeling/media/codemapstoryboardpaint16.png)
+ ![Code Map &#45; Update Zuordnung mit fehlendem Methodenaufrufe](../modeling/media/codemapstoryboardpaint16.png)
 
  Ihre Karte zeigt nun einen Link zwischen " **Rückgängig** " und " **neu zeichnen**" an.
 
@@ -140,7 +140,7 @@ Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps könn
 
  Nun sind Sie mit der Untersuchung fertig. Sie haben das Problem gefunden und erfolgreich korrigiert, indem Sie den Code zugeordnet haben. Außerdem verfügen Sie über eine Zuordnung, anhand der Sie im Code navigieren, sich an das Gelernte erinnern und die Schritte zur Behebung des Problems anzeigen können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualisieren von Code](../modeling/visualize-code.md)

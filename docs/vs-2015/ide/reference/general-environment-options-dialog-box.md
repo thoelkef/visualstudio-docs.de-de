@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83fc6adeba0529be03a9a982713d0584a2a7bc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661276"
 ---
 # <a name="general-environment-options-dialog-box"></a>Allgemein, Umgebung, Dialogfeld "Optionen"
@@ -55,7 +55,7 @@ Verwenden Sie diese Seite, um Farbschemas, Statusleisteneinstellungen, Dateierwe
 
  **Hardware Grafik Beschleunigung verwenden, falls verfügbar** Verwendet Hardware Grafik Beschleunigung, sofern verfügbar, anstelle von Software Beschleunigung.
 
-## <a name="other"></a>Andere
+## <a name="other"></a>Sonstiges
  **Im Menü „Fenster“ angezeigte Elemente** Passt die Anzahl der Fenster an, die in der Fensterliste des Menüs **Fenster** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10.
 
  **In den Listen der zuletzt geöffneten Elemente angezeigte Elemente** Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü **Datei** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10. Dies ist eine einfache Möglichkeit, zuletzt verwendete Projekte und Dateien abzurufen.
@@ -70,5 +70,5 @@ Verwenden Sie diese Seite, um Farbschemas, Statusleisteneinstellungen, Dateierwe
 
  Diese Option kann hilfreich sein, wenn zwei Versionen von Visual Studio auf demselben Computer installiert sind und im Nachhinein eine dieser Versionen deinstalliert wird. Nach der Deinstallation werden die Symbole für Visual Studio-Dateien im Datei-Explorer nicht mehr angezeigt. Außerdem wird Visual Studio von Windows nicht mehr als Standardanwendung zur Bearbeitung dieser Dateien erkannt. Mit dieser Option werden die entsprechenden Verknüpfungen wiederhergestellt.
 
-## <a name="see-also"></a>Siehe auch
- [Dialog Feld "Umgebungsoptionen](../../ide/reference/environment-options-dialog-box.md) " [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md) [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)
