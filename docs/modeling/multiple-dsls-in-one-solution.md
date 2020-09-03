@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542596"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Mehrere DSLs in einer Projektmappe
@@ -44,11 +44,11 @@ Sie können verschiedene Techniken für die Integration mehrerer DSLs nutzen. We
 
    2. Wählen Sie für jede DSL **Inhalt hinzufügen** und hinzufügen aus:
 
-       - `Dsl*`Projekt als **MEF-Komponente**
+       - `Dsl*` Projekt als **MEF-Komponente**
 
-       - `DslPackage*`Projekt als **MEF-Komponente**
+       - `DslPackage*` Projekt als **MEF-Komponente**
 
-       - `DslPackage*`Projekt als **vs-Paket**
+       - `DslPackage*` Projekt als **vs-Paket**
 
 3. Erstellen Sie die Projektmappe.
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916496"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-Tier-Daten Anwendung
@@ -50,7 +50,7 @@ In dieser exemplarischen Vorgehensweise führen Sie die folgenden Schritte aus:
 
 ![Link zum Video](../data-tools/media/playvideo.gif) eine Videoversion dieses Themas finden Sie unter [Video How to: Erstellen einer n-Tier-datenanwendung](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
 1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der **.net-desktopentwicklungs-** Arbeitsauslastung oder als einzelne Komponente installieren.
@@ -68,7 +68,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
        Nach kurzer Zeit wird die Ausführung der Abfrage abgeschlossen und die Datenbank Northwind erstellt.
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Erstellen der n-Tier-Projekt Mappe und der Klassenbibliothek zum Speichern des Datasets (DataEntityTier)
-Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe und zwei Klassenbibliotheksprojekte erstellt. Die erste Klassenbibliothek enthält das Dataset (die generierten typisierten `DataSet` Klasse und DataTables, die die Daten der Anwendung enthalten). Dieses Projekt wird als Datenentitätsschicht der Anwendung verwendet und befindet sich normalerweise in der mittleren Ebene. Das DataSet erstellt das anfängliche DataSet und trennt den Code automatisch in die beiden Klassenbibliotheken.
+Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe und zwei Klassenbibliotheksprojekte erstellt. Die erste Klassenbibliothek enthält das Dataset (die generierte typisierte `DataSet` Klasse und DataTables, die die Daten der Anwendung enthalten). Dieses Projekt wird als Datenentitätsschicht der Anwendung verwendet und befindet sich normalerweise in der mittleren Ebene. Das DataSet erstellt das anfängliche DataSet und trennt den Code automatisch in die beiden Klassenbibliotheken.
 
 > [!NOTE]
 > Stellen Sie sicher, dass Projekt und Projektmappe ordnungsgemäß benannt wurden, bevor Sie auf **OK** klicken. Das erleichtert die Durchführung der exemplarischen Vorgehensweise.
@@ -77,7 +77,7 @@ Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe 
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
 
 3. Wählen Sie im mittleren Bereich den Projekttyp **Klassenbibliothek** aus.
 
@@ -101,12 +101,12 @@ Nach dem Erstellen des Projekts DataEntityTier besteht der nächste Schritt dari
      Das Projekt DataAccessTier wird erstellt und zur Projektmappe NTierWalkthrough hinzugefügt.
 
 ## <a name="create-the-dataset"></a>Erstellen des Datasets
-Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte Datasets werden sowohl mit der DataSet-Klasse (einschließlich `DataTables` Klassen) als auch mit den `TableAdapter` Klassen in einem einzelnen Projekt erstellt. (Alle Klassen werden in einer einzelnen Datei generiert.) Wenn Sie das DataSet und TableAdapters in verschiedene Projekte aufteilen, ist es die DataSet-Klasse, die in das andere Projekt verschoben wird, wobei die `TableAdapter` Klassen im ursprünglichen Projekt belassen werden. Erstellen Sie daher das Dataset im Projekt, das letztendlich die TableAdapters (das DataAccessTier-Projekt) enthalten soll. Das DataSet wird mithilfe des Assistenten zum **Konfigurieren von Datenquellen**erstellt.
+Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte Datasets werden sowohl mit der DataSet-Klasse (einschließlich der `DataTables` Klassen) als auch mit den `TableAdapter` Klassen in einem einzelnen Projekt erstellt. (Alle Klassen werden in einer einzelnen Datei generiert.) Wenn Sie das DataSet und TableAdapters in verschiedene Projekte aufteilen, handelt es sich um die DataSet-Klasse, die in das andere Projekt verschoben wird und die `TableAdapter` Klassen im ursprünglichen Projekt verlässt. Erstellen Sie daher das Dataset im Projekt, das letztendlich die TableAdapters (das DataAccessTier-Projekt) enthalten soll. Das DataSet wird mithilfe des Assistenten zum **Konfigurieren von Datenquellen**erstellt.
 
 > [!NOTE]
 > Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Weitere Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter Gewusst [wie: Installieren von Beispiel Datenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
-### <a name="to-create-the-dataset"></a>So erstellen Sie das DataSet
+### <a name="to-create-the-dataset"></a>So erstellen Sie das Dataset
 
 1. Wählen Sie in **Projektmappen-Explorer**den **DataAccessTier** aus.
 
@@ -114,7 +114,7 @@ Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisi
 
    Das Fenster **Datenquellen** wird geöffnet.
 
-3. Wählen Sie im Fenster **Datenquellen** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+3. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 4. Wählen Sie auf der Seite **Daten Quellentyp auswählen** die Option **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
@@ -122,7 +122,7 @@ Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisi
 
      Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-     \- oder -
+     - oder -
 
      Wählen Sie **neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen** zu öffnen.
 
@@ -154,7 +154,7 @@ Nach dem Erstellen des DataSets wird die generierte DataSet-Klasse von den Table
 
 5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, in dem das gesamte Dataset (`DataAccessTier`) ursprünglich enthalten war, enthält jetzt nur die TableAdapters. Das in der **DataSet-Projekt** Eigenschaft (`DataEntityTier`) angegebene Projekt enthält das typisierte DataSet: *NorthwindDataSet. DataSet. Designer. vb* (oder *NorthwindDataSet.DataSet.Designer.cs*).
+   DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, in dem das gesamte Dataset () ursprünglich enthalten war, `DataAccessTier` enthält jetzt nur die TableAdapters. Das in der **DataSet-Projekt** Eigenschaft () angegebene Projekt `DataEntityTier` enthält das typisierte DataSet: *NorthwindDataSet. DataSet. Designer. vb* (oder *NorthwindDataSet.DataSet.Designer.cs*).
 
 > [!NOTE]
 > Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt**-Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
@@ -173,7 +173,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit einem 
      Das Projekt DataService wird erstellt und zur Projektmappe NTierWalkthrough hinzugefügt.
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Erstellen Sie Methoden in der Datenzugriffs Ebene, um die Kunden-und Bestelldaten zurückzugeben.
-Der Datendienst muss zwei Methoden in der Datenzugriffs Ebene aufrufen: `GetCustomers` und `GetOrders`. Diese Methoden geben die Northwind-`Customers` und `Orders` Tabellen zurück. Erstellen Sie die Methoden `GetCustomers` und `GetOrders` im `DataAccessTier` Projekt.
+Der Datendienst muss zwei Methoden in der Datenzugriffs Ebene aufrufen: `GetCustomers` und `GetOrders` . Diese Methoden geben die Northwind `Customers` -Tabelle und die- `Orders` Tabelle zurück. Erstellen Sie die `GetCustomers` -Methode und die- `GetOrders` Methode im `DataAccessTier` Projekt.
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>So erstellen Sie eine Methode in der Datenzugriffsebene, die die Tabelle Customers zurückgibt
 
@@ -201,11 +201,11 @@ Der Datendienst muss zwei Methoden in der Datenzugriffs Ebene aufrufen: `GetCust
 
 4. Übernehmen Sie auf der Seite **SQL-SELECT-Anweisung angeben** die Standardabfrage, und klicken Sie auf **Weiter**.
 
-5. Geben Sie auf der Seite **Zu generierende Methoden auswählen** für den **Methodennamen** im Abschnitt **DataTable zurückgeben** die Zeichenfolge **GetOrders** ein.
+5. Geben Sie auf der Seite **Zu generierende Methoden auswählen** für den** Methodennamen** im Abschnitt **DataTable zurückgeben** die Zeichenfolge **GetOrders** ein.
 
 6. Klicken Sie auf **Fertig stellen**.
 
-7. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+7. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 ## <a name="add-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Hinzufügen eines Verweises auf die Daten Entität und die Datenzugriffsebenen zum Datendienst
 Da der Datendienst Informationen von DataSet und TableAdapters erfordert, müssen Verweise auf das Projekt **DataEntityTier** und das Projekt **DataAccessTier** hinzugefügt werden.
@@ -281,7 +281,7 @@ Nachdem die Datenzugriffsebene die Methoden zur Rückgabe der Daten enthält, m�
     }
     ```
 
-5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+5. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Erstellen einer Präsentationsebene zum Anzeigen von Daten aus dem Datendienst
 Nun, da die Lösung den Datendienst enthält, der über Methoden verfügt, die die Datenzugriffs Ebene aufrufen, erstellen Sie ein weiteres Projekt, das den Datendienst aufruft und den Benutzern die Daten präsentiert. Erstellen Sie für diese exemplarische Vorgehensweise eine Windows Forms-Anwendung als Präsentationsebene der N-Tier-Anwendung.
@@ -323,7 +323,7 @@ Die PresentationTier der Clientanwendung erfordert einen Dienstverweis auf den D
 3. Wählen Sie **Service1** , und klicken Sie auf **OK**.
 
     > [!NOTE]
-    > Wenn Sie über mehrere Dienste auf dem aktuellen Computer verfügen, wählen Sie den Dienst aus, den Sie zuvor in dieser exemplarischen Vorgehensweise erstellt haben (der Dienst, der die Methoden `GetCustomers` und `GetOrders` enthält).
+    > Wenn Sie über mehrere Dienste auf dem aktuellen Computer verfügen, wählen Sie den Dienst aus, den Sie zuvor in dieser exemplarischen Vorgehensweise erstellt haben (der Dienst, der die `GetCustomers` -und- `GetOrders` Methoden enthält).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Fügen Sie DataGridViews zum Formular hinzu, um die vom Datendienst zurückgegebenen Daten anzuzeigen.
 Nachdem der Dienstverweis zum Datendienst hinzugefügt wurde, werden die vom Dienst zurückgegebenen Daten automatisch zum Fenster **Datenquellen** hinzugefügt.
@@ -358,7 +358,7 @@ Nachdem der Dienstverweis zum Datendienst hinzugefügt wurde, werden die vom Die
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>Erhöhen Sie die maximale Nachrichtengröße, die vom Dienst zugelassen wird.
-Der Standardwert für `maxReceivedMessageSize` ist nicht groß genug zum Speichern der Daten, die aus den Tabellen `Customers` und `Orders` abgerufen werden. In den folgenden Schritten erhöhen Sie den Wert auf 6553600. Sie ändern den Wert auf dem Client, wodurch der Dienst Verweis automatisch aktualisiert wird.
+Der Standardwert für `maxReceivedMessageSize` ist nicht groß genug zum Speichern der Daten, die aus den `Customers` Tabellen und abgerufen werden `Orders` . In den folgenden Schritten erhöhen Sie den Wert auf 6553600. Sie ändern den Wert auf dem Client, wodurch der Dienst Verweis automatisch aktualisiert wird.
 
 > [!NOTE]
 > Die niedrigere Standardgröße dient dazu, die Anfälligkeit für Denial-of-Service (DoS)-Angriffe zu verringern. Weitere Informationen finden Sie unter <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
@@ -370,7 +370,7 @@ Der Standardwert für `maxReceivedMessageSize` ist nicht groß genug zum Speiche
 2. Suchen Sie das **maxReceivedMessage**-Größenattribut, und ändern Sie den Wert in `6553600`.
 
 ## <a name="test-the-application"></a>Testen der Anwendung
-Drücken Sie **F5**, um die Anwendung auszuführen. Die Daten aus den `Customers`-und `Orders` Tabellen werden vom Datendienst abgerufen und im Formular angezeigt.
+Drücken Sie **F5**, um die Anwendung auszuführen. Die Daten aus der `Customers` -Tabelle und der- `Orders` Tabelle werden vom Datendienst abgerufen und im Formular angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Abhängig von den Anforderungen Ihrer Anwendung können nach dem Speichern der verknüpften Daten in der Windows-Anwendung weitere Schritte sinnvoll sein. Beispielsweise können Sie der Anwendung folgende Erweiterungen hinzufügen:
@@ -379,7 +379,7 @@ Abhängig von den Anforderungen Ihrer Anwendung können nach dem Speichern der v
 
 - Hinzufügen von zusätzlichen Methoden zum Dienst für das Aktualisieren der Daten in der Datenbank.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Arbeiten mit Datasets in N-Tier-Anwendungen](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)

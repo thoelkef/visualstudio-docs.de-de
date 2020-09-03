@@ -1,5 +1,5 @@
 ---
-title: Element einschließen | Microsoft Docs
+title: Include-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710363"
 ---
 # <a name="include-element"></a>Include-Element
-Das Include-Element gibt eine Datei an, die sich auf dem angegebenen Include-Pfad zum Einfügen in die aktuelle Datei befinden kann.  Alle definierten Symbole und Typen werden Teil des kompilierten Ergebnisses.
+Das Include-Element gibt eine Datei an, die sich im angegebenen Includepfad befinden kann, damit Sie in die aktuelle Datei eingefügt werden kann.  Alle definierten Symbole und Typen werden Teil des kompilierten Ergebnisses.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,20 +36,20 @@ Das Include-Element gibt eine Datei an, die sich auf dem angegebenen Include-Pfa
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|href|Erforderlich. Der Pfad zur Headerdatei:<br /><br /> href="stdidcmd.h"|
-|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|href|Erforderlich. Der Pfad zur Header Datei:<br /><br /> href = "stdidcmd. h"|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Keine.|Keine.|
+|Keine|Keine|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, d. h. Menüelemente, Menüs, Symbolleisten und Kombinationsfelder, die ein VSPackage für die IDE bereitstellt.|
+|[Commandtable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen – d. h. Menü Elemente, Menüs, Symbolleisten und Kombinations Felder –, die ein VSPackage für die IDE bereitstellt.|
 
 ## <a name="example"></a>Beispiel
 
@@ -58,4 +58,4 @@ Das Include-Element gibt eine Datei an, die sich auf dem angegebenen Include-Pfa
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

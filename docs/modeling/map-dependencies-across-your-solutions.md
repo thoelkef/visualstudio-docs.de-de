@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532716"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Zuordnen von Abhängigkeiten zu Code Maps
@@ -51,7 +51,7 @@ Um in Visual Studio eine Code Map zu erstellen, installieren Sie zunächst die K
 
 1. Öffnen Sie **Visual Studio-Installer**. Sie können Sie über das Windows-Startmenü oder in Visual Studio öffnen, indem Sie **Tools Tools**  >  **und Features**auswählen auswählen.
 
-1. Wählen Sie die Registerkarte **Einzelne Komponenten**.
+1. Wählen Sie die Registerkarte **Einzelne Komponenten** aus.
 
 1. Scrollen Sie nach unten zum Abschnitt **Code Tools** , und wählen Sie **Code Map** und **Live-Abhängigkeits**Überprüfung aus.
 
@@ -198,7 +198,7 @@ Angenommen, Sie verfügen über einen Code Review, der in einigen Dateien mit au
 
     Für eine **Klasse** oder **Schnittstelle**wählen Sie Folgendes aus:
 
-    |Option|BESCHREIBUNG|
+    |Option|Beschreibung|
     |-|-|
     |**Basistypen anzeigen**|Fügt einer Klasse die Basisklasse und die implementierten Schnittstellen hinzu.<br /><br /> Fügt einer Schnittstelle die Basisschnittstellen hinzu.|
     |**Abgeleitete Typen anzeigen**|Fügt bei einer Klasse die abgeleiteten Klassen hinzu.<br /><br /> Fügt bei einer Schnittstelle die abgeleiteten Schnittstellen und die implementierenden Klassen oder Strukturen hinzu.|

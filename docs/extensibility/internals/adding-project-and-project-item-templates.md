@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Projekt- und Projektelementvorlagen | Microsoft Docs
+title: Hinzufügen von Projekt-und Projekt Element Vorlagen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,65 +12,65 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710207"
 ---
-# <a name="add-project-and-project-item-templates"></a>Hinzufügen von Projekt- und Projektelementvorlagen
-Wenn Sie eigene Projekttypen erstellen, müssen Sie das Hinzufügen neuer Projekte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und Projektelemente mithilfe der Dialogfelder der integrierten Standardentwicklungsumgebung (IDE) unterstützen. In den folgenden Themen werden verschiedene Techniken zum Hinzufügen von Projekten und Projektelementen erläutert.
+# <a name="add-project-and-project-item-templates"></a>Projekt-und Projekt Element Vorlagen hinzufügen
+Wenn Sie eigene Projekttypen erstellen, müssen Sie Unterstützung für das Hinzufügen neuer Projekte und Projekt Elemente mithilfe der Standard [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dialogfelder für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) bereitstellen. In den folgenden Themen werden die verschiedenen Techniken zum Hinzufügen von Projekten und Projekt Elementen erläutert.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Projektkontext](../../extensibility/internals/project-context.md)
 
- Erläutert, dass das Projekt die meisten Kontextinformationen für das, was in der Umgebung geschieht, bereitstellt.
+ Erläutert, dass das Projekt die meisten Kontextinformationen für die Vorgänge in der Umgebung bereitstellt.
 
-- [Projektpriorität](../../extensibility/internals/project-priority.md)
+- [Projekt Priorität](../../extensibility/internals/project-priority.md)
 
- Erläutert, dass ein Projektelement in der Regel Mitglied eines Projekts ist, um Unklarheiten darüber zu vermeiden, welches Projekt zum Öffnen des Elements verwendet wird.
+ Erläutert, dass ein Projekt Element normalerweise ein Member eines Projekts ist, um die Mehrdeutigkeit zu vermeiden, welches Projekt zum Öffnen des Elements verwendet wird.
 
-- [Projekt "Verschiedene Dateien"](../../extensibility/internals/miscellaneous-files-project.md)
+- [Projekt "sonstige Dateien"](../../extensibility/internals/miscellaneous-files-project.md)
 
- Enthält Informationen zu den beiden Editortypen, die zum Öffnen von Dateien in einem Projekt verwendet werden können, und der Rolle, die das Projekt bei der Bestimmung des Editors spielt, der beim Öffnen eines Projektelements verwendet werden soll.
+ Stellt Informationen über die beiden Typen von Editoren bereit, die zum Öffnen von Dateien in einem Projekt verwendet werden können, und die Rolle, die das Projekt beim Festlegen des zu verwendenden Editors verwendet, wenn ein Projekt Element geöffnet wird.
 
-- [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
 
- Erläutert, was [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] beim Erstellen eines Projekts geschieht.
+ Erläutert, was geschieht, wenn ein [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt erstellt wird.
 
-- [Hinzufügen von Elementen zum Dialogfeld Neues Element hinzufügen](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzufügen"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 
- Erläutert den Vorgang zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzufügen.**
+ Erläutert den Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzufügen** .
 
-- [Hinzufügen von Verzeichnissen zum Dialogfeld Neues Projekt](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+- [Hinzufügen von Verzeichnissen zum Dialogfeld "Neues Projekt"](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
 
  Enthält ein Beispiel für die Registrierung eines neuen Verzeichnisses, das benutzerdefinierte Vorlagen enthält, die von einem VSPackage bereitgestellt werden.
 
-- [Hinzufügen von Verzeichnissen zum Dialogfeld Neues Element hinzufügen](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [Hinzufügen von Verzeichnissen zum Dialogfeld "Neues Element hinzufügen"](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
 
- Enthält ein Beispiel für das Registrieren eines neuen Satzes von Verzeichnissen für das Dialogfeld **Neues Element hinzufügen.**
+ Enthält ein Beispiel für das Registrieren eines neuen Satzes von Verzeichnissen für das Dialogfeld **Neues Element hinzufügen** .
 
-- [IDE-definierte Befehle zum Erweitern von Projektsystemen](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [IDE-definierte Befehle zum Erweitern von Projekt Systemen](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 
- Listet verschiedene Arten von Befehlselementen auf, die zum Erweitern von Projektsystemen verwendet werden.
+ Listet verschiedene Typen von Befehls Elementen auf, die zum Erweitern von Projekt Systemen verwendet werden.
 
 - [CATIDs für Objekte, die in der Regel zum Erweitern von Projekten verwendet werden](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
 
- Listet CATIDs für Objekte auf, [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] zum Erweitern [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]von , und Projektsystemen verwendet werden.
+ Listet CATIDs für Objekte auf, die verwendet werden, um [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] -,-und- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projektsysteme zu erweitern.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Gewusst wie: Öffnen sie projektspezifische Editoren](../../extensibility/how-to-open-project-specific-editors.md)
+- [Gewusst wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)
 
- Enthält schrittweise Anweisungen zum Öffnen eines Elements, das an einen bestimmten Editor für ein Projekt gebunden ist.
+ Enthält Schritt-für-Schritt-Anweisungen zum Öffnen eines Elements, das intrinsisch an einen bestimmten Editor für ein Projekt gebunden ist.
 
-- [Gewusst wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+- [Vorgehensweise: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
 
- Enthält Schritt-für-Schritt-Anleitungen zum Öffnen eines Standard-Editors.
+ Enthält Schritt-für-Schritt-Anweisungen zum Öffnen eines Standard-Editors.
 
-- [Projektuntertypen](../../extensibility/internals/project-subtypes.md)
+- [Projekt Untertypen](../../extensibility/internals/project-subtypes.md)
 
- Stellt Verknüpfungen zu konzeptionellen Themen des Projektuntertyps bereit. Projektuntertypen erweitern [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] vorhandene und Projekte.
+ Enthält Links zu konzeptionellen Themen des Projekt unter Typs. Projekt Untertypen erweitern vorhandene [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] -und- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekte.
 
 - [Projekttypen](../../extensibility/internals/project-types.md)
 
- Enthält Links zu weiteren Themen, die Informationen zum Entwerfen neuer Projekttypen enthalten.
+ Enthält Links zu weiteren Themen, in denen Informationen zum Entwerfen neuer Projekttypen angeboten werden.

@@ -30,6 +30,7 @@ ms.locfileid: "77633082"
 Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-Attribut für eine Aufgabe, bei der ein Fehler aufgetreten ist, `false` ist.
 
  \<Project> \<Target> \<OnError>
+ \<OnError>
 
 ## <a name="syntax"></a>Syntax
 

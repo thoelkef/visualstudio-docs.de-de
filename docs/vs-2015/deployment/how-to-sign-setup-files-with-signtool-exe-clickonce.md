@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce) | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Signieren von Setup Dateien mit SignTool.exe (ClickOnce) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202182"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Gewusst wie: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mit "SignTool.exe" ein Setupprogramm ("setup.exe") signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.  
@@ -39,9 +39,9 @@ Sie können mit "SignTool.exe" ein Setupprogramm ("setup.exe") signieren. Durch 
   
 1. Installieren Sie das Zertifikat, mit dem Sie das Manifest signieren möchten, auf dem Entwicklungscomputer.  
   
-2. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.  
+2. Wählen Sie das Projekt in **Projektmappen-Explorer**aus.  
   
-3. Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
+3. Klicken Sie im Menü **Projekt** auf **Eigenschaften**von *ProjectName* .  
   
 4. Deaktivieren Sie auf der Seite **Signieren** das Kontrollkästchen **ClickOnce-Manifeste signieren**.  
   
@@ -79,5 +79,5 @@ Sie können mit "SignTool.exe" ein Setupprogramm ("setup.exe") signieren. Durch 
     signtool sign /f CertFileName Setup.exe  
     ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Erneutes Signieren von Anwendungs-und Bereitstellungs Manifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

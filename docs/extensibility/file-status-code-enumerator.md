@@ -1,5 +1,5 @@
 ---
-title: Dateistatuscode-Enumerator | Microsoft Docs
+title: Datei Status Code-Enumerator | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711452"
 ---
-# <a name="file-status-code-enumerator"></a>Dateistatuscode-Enumerator
-Der `SccStatus` Enumerator enthält benannte Konstantewerte, die den Status einer Datei im Quellcodeverwaltungssystem angeben. Diese Enumeration wird von Der [SccQueryInfo](../extensibility/sccqueryinfo-function.md) und der `POPLISTFUNC` Rückruffunktion verwendet (Details finden Sie unter [POPLISTFUNC).](../extensibility/poplistfunc.md)
+# <a name="file-status-code-enumerator"></a>Dateistatus Code-Enumerator
+Der `SccStatus` Enumerator enthält benannte Konstante Werte, die den Zustand einer Datei im Quell Code Verwaltungssystem angeben. Diese Enumeration wird von der [sccqueryinfo](../extensibility/sccqueryinfo-function.md) -Funktion und der `POPLISTFUNC` Callback-Funktion verwendet (Weitere Informationen finden Sie unter [poplistfunc](../extensibility/poplistfunc.md) ).
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,43 +49,43 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Member
- SCC_STATUS_INVALID Status konnte nicht abgerufen werden; sich nicht darauf verlassen.
+ SCC_STATUS_INVALID Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.
 
- SCC_STATUS_NOTCONTROLLED Datei wird nicht unter Quellcodeverwaltung.
+ SCC_STATUS_NOTCONTROLLED Datei befindet sich nicht unter Quell Code Verwaltung.
 
- SCC_STATUS_CONTROLLED Datei wird unter Quellcodeverwaltung.
+ SCC_STATUS_CONTROLLED Datei befindet sich unter Quell Code Verwaltung.
 
- SCC_STATUS_CHECKEDOUT ausgecheckt vom aktuellen Benutzer auf dem lokalen Datenträger.
+ SCC_STATUS_CHECKEDOUT vom aktuellen Benutzer auf dem lokalen Datenträger ausgecheckt.
 
  SCC_STATUS_OUTOTHER Datei wird von einem anderen Benutzer ausgecheckt.
 
- SCC_STATUS_OUTEXCLUSIVE Datei wird exklusiv ausgecheckt.
+ SCC_STATUS_OUTEXCLUSIVE Datei ist exklusiv ausgecheckt.
 
  SCC_STATUS_OUTMULTIPLE Datei wird von mehr als einem Benutzer ausgecheckt.
 
- SCC_STATUS_OUTOFDATE Die Datei ist nicht die neueste.
+ SCC_STATUS_OUTOFDATE ist die Datei nicht die aktuellste.
 
  SCC_STATUS_DELETED Datei wurde aus dem Projekt gelöscht.
 
- SCC_STATUS_LOCKED Datei ist gesperrt; keine weiteren Versionen zulässig.
+ SCC_STATUS_LOCKED Datei ist gesperrt. Es sind keine weiteren Versionen zulässig.
 
- SCC_STATUS_MERGED Datei wurde zusammengeführt, aber noch nicht fixiert/verifiziert.
+ SCC_STATUS_MERGED Datei wurde zusammengeführt, aber noch nicht korrigiert/überprüft.
 
- SCC_STATUS_SHARED Datei wird von Projekten gemeinsam genutzt.
+ SCC_STATUS_SHARED Datei wird von Projekten gemeinsam verwendet.
 
- SCC_STATUS_PINNED Datei wird für eine explizite Version freigegeben.
+ SCC_STATUS_PINNED Datei ist für eine explizite Version freigegeben.
 
  SCC_STATUS_MODIFIED Datei wurde geändert/beschädigt/verletzt.
 
  SCC_STATUS_OUTBYUSER Datei wird vom aktuellen Benutzer ausgecheckt.
 
- SCC_STATUS_NOMERGE Datei kann nie mit einem GET zusammengeführt werden und muss nicht gespeichert werden.
+ SCC_STATUS_NOMERGE Datei kann nie zusammengeführt werden und muss nicht vor einem Get-Zeitpunkt gespeichert werden.
 
- SCC_STATUS_RESERVED_1 für den internen Gebrauch reserviert.
+ SCC_STATUS_RESERVED_1 für die interne Verwendung reserviert.
 
- SCC_STATUS_RESERVED_2 reserviert für den internen Gebrauch.
+ SCC_STATUS_RESERVED_2 für die interne Verwendung reserviert.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
+- [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

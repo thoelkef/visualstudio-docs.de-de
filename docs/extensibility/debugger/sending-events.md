@@ -1,5 +1,5 @@
 ---
-title: Senden von Ereignissen | Microsoft Docs
+title: Senden von Ereignissen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ec0d3aa29da562147b71b8efde49baf07d8ae0b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713040"
 ---
 # <a name="send-events"></a>Senden von Ereignisse
-Der Mechanismus für die Kommunikation zwischen dem Debugger und dem Debugmodul (DE) ist ein auf DCOM basierendes Ereignismodell. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die Folgendes angeben:
+Der Mechanismus für die Kommunikation zwischen dem Debugger und der Debug-Engine (de) ist ein Ereignis Modell, das auf DCOM basiert. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die Folgendes angeben:
 
-- Die DE, die das Ereignis aufgerufen hat.
+- Der de-Wert, der das Ereignis aufgerufen hat.
 
-- Eine Beschreibung dessen, was passiert ist.
+- Eine Beschreibung, was passiert ist.
 
-- Die Prozess-, Programm- und Threadinformationen, die den Kontext des Ereignisses identifizieren. Der Prozess wird nicht für Ereignisse gesendet, die von einer DE gesendet werden.
+- Der Prozess, das Programm und die Thread Informationen, die den Kontext identifizieren, in dem das Ereignis aufgetreten ist. Der Prozess wird nicht für Ereignisse gesendet, die von einem de gesendet werden.
 
 - Der Ereignistyp, der angibt, ob das Ereignis synchron oder asynchron ist.
 
-  Alle Debugereignisse werden mit der Methode [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)gesendet.
+  Alle Debugereignisse werden mithilfe der [IDebugEventCallback2:: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)-Methode gesendet.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Ereignisquellen](../../extensibility/debugger/event-sources-visual-studio-sdk.md) Erläutert die beiden Ereignisquellen: das Debugmodul (DE) und den Sitzungsdebug-Manager (SDM).
+ [Ereignis Quellen](../../extensibility/debugger/event-sources-visual-studio-sdk.md) Erläutert die beiden Quellen für Ereignisse: Debug Engine (de) und Session Debug Manager (SDM).
 
- [Unterstützte Ereignistypen](../../extensibility/debugger/supported-event-types.md) Erläutert die aktuell unterstützten Ereignistypen: asynchron und synchron.
+ [Unterstützte Ereignis Typen](../../extensibility/debugger/supported-event-types.md) Erläutert die derzeit unterstützten Ereignis Typen: asynchron und synchron.
 
- [Ereignisbeschreibungen](../../extensibility/debugger/event-descriptions.md) Definiert Ereignisse und die Gründe für ihre Verwendung.
+ [Ereignis Beschreibungen](../../extensibility/debugger/event-descriptions.md) Definiert Ereignisse und die Gründe für deren Verwendung.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Erstellen eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/creating-a-custom-debug-engine.md) Beschreibt, wie eine DE mit dem Interpreter oder Betriebssystem zusammenarbeitet, um Debugdienste bereitzustellen.
+ [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md) Beschreibt, wie ein de mit dem Interpreter oder dem Betriebssystem verwendet wird, um Debugdienste bereitzustellen.

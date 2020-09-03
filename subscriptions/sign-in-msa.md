@@ -8,10 +8,10 @@ ms.date: 03/11/2020
 ms.topic: how-to
 description: Hier erfahren Sie, wie Sie sich mit einem Microsoft-Konto (verwaltetes Dienstkonto) bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
 ms.openlocfilehash: 566829318404b4231b37e53ae7ec34500a3a7838
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906138"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Anmeldung bei Ihrem/Ihren Visual Studio-Abonnements mit Ihrem Microsoft-Konto (verwaltetes Dienstkonto)

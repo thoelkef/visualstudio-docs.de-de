@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3 | Microsoft Docs
+title: IDebugModule3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726745"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
@@ -29,28 +29,28 @@ IDebugModule3 : IDebugModule2
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debugmodul (DE) implementiert diese Schnittstelle, um alternative Speicherorte von Symbolen zu unterstützen und mit JustMyCode-Zuständen zu arbeiten (eine Definition von "JustMyCode" finden Sie im [Visual Studio Debugger Glossary).](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um alternative Positionen von Symbolen zu unterstützen und mit JustMyCode-Zuständen zu arbeiten (Weitere Informationen finden Sie im [Visual Studio-Debugger-Glossar](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) für eine Definition von "justMyCode").
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Ein Aufruf von [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) gibt diese Schnittstelle zurück. Die DE sendet die [IDebugSymbolSearchEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) mithilfe der [Ereignismethode](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) an den Session Debug Manager (SDM). Außerdem gibt ein Aufruf von [QueryInterface](/cpp/atl/queryinterface) auf einer [IDebugModule2-Schnittstelle](../../../extensibility/debugger/reference/idebugmodule2.md) diese Schnittstelle zurück.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Ein Aufrufen von [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) gibt diese Schnittstelle zurück. Der de sendet mithilfe der- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Methode die [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) -Schnittstelle an den Sitzungs-Debug-Manager (SDM). Außerdem gibt ein [QueryInterface](/cpp/atl/queryinterface) -Aufrufe für eine [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Schnittstelle diese Schnittstelle zurück.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Zusätzlich zu den Methoden auf der [IDebugModule2-Schnittstelle](../../../extensibility/debugger/reference/idebugmodule2.md) implementiert diese Schnittstelle die folgenden Methoden:
+ Zusätzlich zu den Methoden in der [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Gibt eine Liste der Pfade zurück, die nach Symbolen gesucht wurden, und die Ergebnisse der Suche nach jedem Pfad.|
+|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Gibt eine Liste der Pfade, die nach Symbolen durchsucht werden, und die Ergebnisse der Suche der einzelnen Pfade zurück.|
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Lädt und initialisiert Symbole für das aktuelle Modul.|
-|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Gibt das Flag zurück, das angibt, ob das Modul Benutzercode darstellt.|
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Gibt an, ob das Modul als Benutzercode betrachtet werden soll oder nicht.|
+|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Gibt ein Flag zurück, das angibt, ob das Modul Benutzercode darstellt.|
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Gibt an, ob das Modul als Benutzercode angesehen werden soll oder nicht.|
 
 ## <a name="remarks"></a>Bemerkungen
  Visual Studio ist der typische Consumer dieser Schnittstelle.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs
+title: 'IDebugBreakpointResolution2:: getbreakpointtype | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734810"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-Ruft den Typ des Haltepunkts ab, der durch diese Auflösung dargestellt wird.
+Ruft den Typ des Breakpoints ab, der durch diese Auflösung dargestellt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>Parameter
 `pBPType`\
-[out] Gibt einen Wert [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) aus der BP_TYPE-Enumeration zurück, die den Typ dieses Haltepunkts angibt.
+vorgenommen Gibt einen Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) -Enumeration zurück, der den Typ dieses halte Punkts angibt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, `S_OK`kehrt zurück; andernfalls wird ein Fehlercode zurückgegeben. Gibt E_FAIL `bpResLocation` zurück, wenn das Feld in der zugeordneten [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur ungültig ist.
+Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben. Gibt E_FAIL zurück, wenn das `bpResLocation` Feld in der zugeordneten [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur ungültig ist.
 
 ## <a name="remarks"></a>Bemerkungen
-Der Haltepunkt kann z. B. ein Code oder ein Datenhaltepunkt sein.
+Der Haltepunkt kann z. b. ein Code oder ein Daten Haltepunkt sein.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CDebugBreakpointResolution` Methode für ein einfaches Objekt implementiert wird, das die [IDebugBreakpointResolution2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CDebugBreakpointResolution` , das die [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) -Schnittstelle verfügbar macht.
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

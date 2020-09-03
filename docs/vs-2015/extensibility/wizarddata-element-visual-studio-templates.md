@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d7cd59266a69140ba2ea5a7fd1d1b0b0c72f14c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201928"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt an, benutzerdefinierte XML-Datei  
+Gibt benutzerdefiniertes XML  
   
  \<VSTemplate>  
  \<WizardData>  
@@ -48,22 +48,22 @@ Gibt an, benutzerdefinierte XML-Datei
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, die Element Vorlage oder Starter Kit.|  
   
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist optional.  
   
- Dieser Text gibt den benutzerdefinierten XML-Code für die Übergabe an die im angegebenen benutzerdefinierten Assistenten-Erweiterung der [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) Element.  
+ Dieser Text gibt den benutzerdefinierten XML-Code an, der an die im [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) -Element angegebene benutzerdefinierte Assistenten Erweiterung übergeben werden soll.  
   
-## <a name="remarks"></a>Hinweise  
- Beliebige XML-Daten kann in diesem Element angegeben werden. Der XML-Code wird als Parameter an die Erweiterung für benutzerdefinierte Assistentenseiten, übergeben werden können die Dateierweiterung an den Inhalt dieses Elements verwendet. Auf diese Daten nicht überprüft.  
+## <a name="remarks"></a>Bemerkungen  
+ Alle XML-Daten können in diesem Element angegeben werden. Der XML-Code wird als Parameter an die benutzerdefinierte Assistenten Erweiterung übergeben, sodass die Erweiterung den Inhalt dieses Elements verwenden kann. Für diese Daten wird keine Validierung durchgeführt.  
   
- Den Inhalt der `WizardData` Element übergeben werden, nicht geändert, als Parameter in das Zeichenfolgenwörterbuch von Parametern in der `IWizard.RunStarted` Methode. Der Parameter den Namen $WizardData$.  
+ Der Inhalt des `WizardData` Elements wird unverändert als Parameter innerhalb des Zeichen folgen Wörterbuchs der Parameter in der- `IWizard.RunStarted` Methode übergeben. Der Parameter hat den Namen $WizardData $.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt die Metadaten für die standard-Projektvorlage für eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows-Anwendung.  
+ Im folgenden Beispiel werden die Metadaten für die Standard Projektvorlage für eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows-Anwendung veranschaulicht.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -96,8 +96,8 @@ Gibt an, benutzerdefinierte XML-Datei
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)   
  [WizardExtension-Element (Visual Studio-Vorlagen)](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672258"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
@@ -29,7 +29,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 - Sie können alle benötigten Informationen in einem Fenster anzeigen.
 
 ## <a name="using-test-explorer"></a>Verwenden des Test-Explorers
- ![Komponenten Test-Explorer mit Schaltfläche "alle ausführen"](../test/media/unittestexplorer-beta.png "Unittestexplorer (Beta Version)")
+ ![Komponententest-Explorer zeigt die Schaltfläche "Alles ausführen" an](../test/media/unittestexplorer-beta.png "Unittestexplorer (Beta Version)")
 
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus
 
@@ -39,7 +39,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
    1. Erstellen Sie ein Testprojekt.
 
-        Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic**, **Visual C#** oder **Visual C++** , und wählen Sie dann **Test**aus.
+        Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic**, **Visual C#** oder **Visual C++**, und wählen Sie dann **Test**aus.
 
         Wählen Sie **Komponententestprojekt**aus.
 
@@ -67,7 +67,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 > [!NOTE]
 > Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie [unter Verwenden eines anderen Test-Frameworks](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
-## <a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponenten Tests zur Entwicklung einer Methode
  Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie [unter Verwenden eines anderen Test-Frameworks](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
 #### <a name="creating-the-test-and-method"></a>Erstellen von Test und Methode
@@ -76,9 +76,9 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 2. Erstellen Sie ein Testprojekt.
 
-   - Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#** , **Test** und anschließend **Komponententestprojekt**aus.
+   - Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, **Test** und anschließend **Komponententestprojekt**aus.
 
-        ![Neue Code-und Testprojekte](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+        ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
 3. Schreiben Sie eine einfache Testmethode. Überprüfen Sie das Ergebnis, das für eine bestimmte Eingabe erreicht wurde:
 
@@ -104,7 +104,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
    1. Platzieren Sie den Cursor auf `Rooter`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Neuer Typ**aus.
 
-   2. Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.
+   2. Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel lautet er `MyMath`.
 
    3. Platzieren Sie den Cursor auf `SquareRoot`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Methodenstub**aus.
 
@@ -124,7 +124,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
 7. Wählen Sie die Elemente unter **Stapelüberwachung** aus, um festzustellen, wo der Test fehlgeschlagen ist.
 
-   ![Der Komponenten Test-Explorer zeigt einen fehlerhaften Test an.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+   ![Komponententest-Explorer zeigt fehlerhaften Test an](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
 
    Sie haben jetzt einen Test und einen Stub erstellt, die Sie ändern werden, damit der Test erfolgreich verläuft.
 
@@ -139,13 +139,13 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
      }
     ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
      Der Code wird erstellt, und der Test wird ausgeführt.
 
-     Der Test wurde erfolgreich ausgeführt.
+     Der Test verläuft erfolgreich.
 
-     ![Der Komponenten Test-Explorer zeigt einen bestandenen Test an.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Komponententest-Explorer zeigt einen bestandenen Test an](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Fügen Sie Tests hinzu, um den Eingabebereich zu erweitern
 
@@ -180,7 +180,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }
     ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
      Der neue Test schlägt fehl, obwohl der erste Test weiterhin erfolgreich verläuft.
 
@@ -202,7 +202,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }
     ```
 
-4. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+4. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
      Beide Tests sind nun erfolgreich.
 
@@ -227,7 +227,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
      }
     ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
      Die zu testende Methode bildet eine Schleife und muss manuell abgebrochen werden.
 
@@ -248,7 +248,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     ...
     ```
 
-5. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5. Wählen Sie im Test-Explorer die Option **alle ausführen**aus.
 
      Alle Tests sind erfolgreich.
 
@@ -287,4 +287,4 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 
      Alle Tests sind weiterhin erfolgreich.
 
-     ![Der Komponenten Test-Explorer zeigt drei bestandene Tests an.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Komponententest-Explorer zeigt 3 bestandene Tests an](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

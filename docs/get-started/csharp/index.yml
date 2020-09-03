@@ -15,10 +15,10 @@ metadata:
   dev_langs:
   - CSharp
   ms.openlocfilehash: 0e5519756bebafd91b72186e001ca6af7f53c254
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/21/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "76923125"
 landingContent:
 - title: Erste Schritte
@@ -41,7 +41,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Erstellen einer Konsolen-App
+    - text: Erstellen einer Konsolenanwendung
       url: tutorial-console.md
     - text: Erstellen einer Web-App
       url: tutorial-aspnet-core.md
@@ -71,9 +71,9 @@ landingContent:
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Debuggen Ihres Codes
       url: ../csharp/tutorial-debugger.md
-    - text: Testen Ihres Codes
+    - text: Testen des Codes
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:
-    - text: Zugreifen auf Daten
+    - text: Zugriff auf Daten
       url: ../../data-tools/create-a-sql-database-by-using-a-designer.md

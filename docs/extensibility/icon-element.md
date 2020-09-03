@@ -1,5 +1,5 @@
 ---
-title: Icon-Element | Microsoft Docs
+title: Icon-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710520"
 ---
 # <a name="icon-element"></a>Icon-Element
-Das guid-Attribut des Icon-Tags ist die GUID einer definierten Bitmap. Das `id` Attribut wählt den Steckplatz im Bitmap-Streifen aus. Dieses Element ist optional. Wenn dieses Element nicht enthalten ist, wird der Wert von **guidOfficeIcon:msotcidNoIcon** impliziert.
+Das GUID-Attribut des Symbols-Tags ist die GUID einer definierten Bitmap. Das- `id` Attribut wählt den Slot im bitmapstrip aus. Dieses Element ist optional. Wenn dieses Element nicht enthalten ist, wird der Wert von **guidofficeicon: msotcidnoicon** impliziert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,13 +35,13 @@ Das guid-Attribut des Icon-Tags ist die GUID einer definierten Bitmap. Das `id` 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |guid|Erforderlich. Die GUID einer definierten Bitmap.|
-|id|Erforderlich. Wählt den Steckplatz im Bitmap-Streifen aus.|
+|id|Erforderlich. Wählt den Slot im bitmapstrip aus.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Keine.|Keine.|
+|Keine|Keine|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -50,4 +50,4 @@ Das guid-Attribut des Icon-Tags ist die GUID einer definierten Bitmap. Das `id` 
 |[Buttons-Element](../extensibility/buttons-element.md)||
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

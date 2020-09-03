@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING | Microsoft Docs
+title: BP_LOCATION_CODE_STRING | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737981"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
-Wird zum Festlegen von Codehaltepunkten basierend auf einer Zeichenfolge verwendet, die der Benutzer aus der integrierten Entwicklungsumgebung (IDE) eingeben kann.
+Dient zum Festlegen von Code Breakpoints basierend auf einer Zeichenfolge, die der Benutzer aus der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) eingeben kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ typedef struct _BP_LOCATION_CODE_STRING {
 
 ## <a name="members"></a>Member
 `bstrContext`\
-Der Kontext des Haltepunkts innerhalb des Codes, in der Regel ein Methoden- oder Funktionsname, wie er in einer Aufrufliste angezeigt wird.
+Der Kontext des Breakpoints innerhalb des Codes, in der Regel ein Methoden-oder Funktionsname, wie er in einer-aufrufsstapel angezeigt wird.
 
 `bstrCodeExpr`\
-Die Zeichenfolge, die der Benutzer eingibt, um den Code-Breakpoint zu beschreiben.
+Die Zeichenfolge, die der Benutzer eingibt, um den Code Breakpoint zu beschreiben.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Gewerkschaft.
+Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

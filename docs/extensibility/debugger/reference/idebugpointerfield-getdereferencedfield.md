@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Microsoft Docs
+title: 'Idebugpointerfield:: getdereferencedfield | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725623"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Diese Methode gibt den Objekttyp zurück, auf den dieses Zeigerobjekt verweist.
+Diese Methode gibt den Typ des Objekts zurück, auf das dieses Zeiger Objekt zeigt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Parameter
 `ppField`\
-[out] Gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Typ des Zielobjekts beschreibt.
+vorgenommen Gibt ein [idebugfeld](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Typ des Zielobjekts beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn z. B. das [IDebugPointerField-Objekt](../../../extensibility/debugger/reference/idebugpointerfield.md) auf eine ganze Zahl verweist, beschreibt der von dieser Methode [zurückgegebene IDebugField-Typ](../../../extensibility/debugger/reference/idebugfield.md) diesen Ganzzahltyp.
+ Wenn das [idebugpointerfield](../../../extensibility/debugger/reference/idebugpointerfield.md) -Objekt z. b. auf eine ganze Zahl zeigt, beschreibt der von dieser Methode zurückgegebene [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Typ diesen ganzzahligen Typ.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3e7cc942550c979ca4b3f3138da252321b4c983
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619691"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Befehlszeilenargumente für den Hilfeinhalts-Manager
@@ -59,7 +59,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/locationpath|Nein|Gibt den Standardordner für den lokalen Hilfeinhalt an. Sie dürfen diesen Schalter nur zum Installieren oder Verschieben von Inhalt verwenden. Wenn Sie diesen Schalter angeben, müssen Sie auch den Schalter /silent angeben.|
 |/silent|Nein|Installiert oder entfernt Hilfeinhalte ohne eine Bestätigung durch den Benutzer und ohne Anzeige einer Benutzeroberfläche. Auch im Bereich mit Statusbenachrichtigungen wird kein Symbol angezeigt. Die Ausgabe wird in einer Datei im Verzeichnis %Temp% protokolliert. **Wichtig:** Für eine automatische Installation von Inhalt müssen Sie digital signierte CAB-Dateien verwenden, keine MSHC-Dateien.|
 |/launchingApp|Nein|Definiert den Anwendungs- und Katalogkontext, wenn der Help Viewer ohne die übergeordnete Anwendung gestartet wird. Die Argumente für diesen Schalter sind *CompanyName*, *ProductName* und *VersionNumber* (z.B. `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Dies ist erforderlich, wenn Sie Inhalt mit dem Parameter /silent installieren.|
-|/wait *Sekunden*|Nein|Hält die Vorgänge zum Installieren, Deinstallieren und Aktualisieren an. Wird bereits ein Vorgang für den Katalog ausgeführt, wird eine festgelegte Anzahl von Sekunden gewartet, bis der Prozess fortgesetzt wird. Verwenden Sie 0 für eine unbegrenzte Wartezeit.|
+|/wait *Sekunden*|Nein|Hält die Vorgänge zum Installieren, Deinstallieren und Aktualisieren an. Wird bereits ein Vorgang für den Katalog ausgeführt, wird eine festgelegte Anzahl von Sekunden gewartet, bis der Prozess fortgesetzt wird. Verwenden Sie „0“, um unbegrenzt zu warten.|
 |/?|Nein|Führt die Schalter und ihre Beschreibungen für das Befehlszeilentool für den Hilfeinhalts-Manager auf.|
 
 ### <a name="exit-codes"></a>Exitcodes
@@ -88,5 +88,5 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Help Viewer-Administrator Handbuch](../ide/help-viewer-administrator-guide.md) [Hilfe Inhalts-Manager](../ide/help-content-manager-overrides.md) außer Kraft setzungen

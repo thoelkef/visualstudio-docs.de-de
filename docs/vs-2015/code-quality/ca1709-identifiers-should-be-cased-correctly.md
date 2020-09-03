@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544000"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.
@@ -31,7 +31,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1709: Bezeichner 
 |-|-|
 |TypName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Unterbrechen: Wenn Assemblys, Namespaces, Typen, Member und Parameter ausgelöst werden.<br /><br /> Nicht unterbrechend: Wenn Sie für generische Typparameter ausgelöst werden.|
 
 ## <a name="cause"></a>Ursache

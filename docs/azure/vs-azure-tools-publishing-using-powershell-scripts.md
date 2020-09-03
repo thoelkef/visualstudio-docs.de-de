@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84179959"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
@@ -306,11 +306,11 @@ return $WebDeployPackage
     Wenn Sie das Testen Ihrer Anwendung automatisieren möchten, fügen Sie der `Test-WebApplication`Code hinzu. Stellen Sie in **Publish-WebApplication.ps1** sicher, dass die Auskommentierung der Zeilen aufgehoben wird, in denen diese Funktionen aufgerufen werden. Wenn Sie keine Implementierung bereitstellen, können Sie Ihr Projekt manuell mit Visual Studio erstellen und dann das Veröffentlichungsskript zum Veröffentlichen in Azure aufrufen.
 
 ## <a name="publishing-function-summary"></a>Zusammenfassung der Veröffentlichungsfunktion
-Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerShell-Eingabeaufforderung den Befehl `Get-Help function-name`verwenden. Die Hilfe umfasst Parameterhilfe und Beispiele. Der gleiche Hilfe Text befindet sich auch in den Skript Quelldateien **azurewebapppublishmodule. psm1** und **Publish-WebApplication. ps1**. Das Skript und die Hilfe sind in Ihrer Visual Studio-Sprache lokalisiert.
+Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerShell-Eingabeaufforderung den Befehl `Get-Help function-name`verwenden. Die Hilfe umfasst Parameterhilfe und Beispiele. Der gleiche Hilfe Text befindet sich auch in den Skript Quelldateien **azurewebapppublishmodule. psm1** und **Publish-WebApplication.ps1**. Das Skript und die Hilfe sind in Ihrer Visual Studio-Sprache lokalisiert.
 
 **AzureWebAppPublishModule**
 
-| Funktionsname | Beschreibung |
+| Funktionsname | BESCHREIBUNG |
 | --- | --- |
 | Add-AzureSQLDatabase |Erstellt eine neue Azure SQL-Datenbank. |
 | Add-AzureSQLDatabases |Erstellt Azure SQL-Datenbanken aus Werten in der JSON-Konfigurationsdatei, die von Visual Studio generiert wird |
@@ -339,7 +339,7 @@ Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerS
 
 **Publish-WebApplication**
 
-| Funktionsname | Beschreibung |
+| Funktionsname | BESCHREIBUNG |
 | --- | --- |
 | New-AzureWebApplicationEnvironment |Erstellt Azure-Ressourcen, z. B. eine Website oder einen virtuellen Computer. |
 | New-WebDeployPackage |Diese Funktion ist nicht implementiert. Sie können Befehle in dieser Funktion hinzufügen, um Ihr Projekt zu erstellen. |

@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a71de3e425896c5f4394f28ecbf7f90866f383e7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302772"
 ---
-# <a name="javascript-memory"></a>JavaScript-Memory
+# <a name="javascript-memory"></a>JavaScript-Speicher
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in Windows Store-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Unterstützt werden Apps für den Windows Phone Store und Windows Store.  
@@ -47,27 +47,27 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
    Automatische Filterung von Objekten, die nicht direkt im App-Code erstellt werden. Sie können Daten auch nach Objektnamen filtern.  
   
-  Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Ein Tutorial, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-  In diesem Thema:  
+  Inhalte dieses Themas:  
   
-  [Ausführen der JavaScript-Speicheranalyse](#Run)   
+  [Ausführen der JavaScript-Speicher Analyse](#Run)   
   [Überprüfen der Speicherauslastung](#Check)   
-  [Isolate a memory leak](#Isolate)   
-  [Anzeigen der Zusammenfassung der Live-Speicherauslastung](#LiveMemory)   
-  [View a snapshot summary](#SnapshotSummary)   
-  [Anzeigen von Momentaufnahmedetails](#SnapshotDetails)   
-  [Anzeigen eines Momentaufnahmevergleichs](#SnapshotDiff)   
+  [Isolieren eines Speicherlecks](#Isolate)   
+  [Zusammenfassung der Live-Speicherauslastung anzeigen](#LiveMemory)   
+  [Anzeigen einer Momentaufnahme Zusammenfassung](#SnapshotSummary)   
+  [Momentaufnahme Details anzeigen](#SnapshotDetails)   
+  [Anzeigen eines Momentaufnahme Vergleichs](#SnapshotDiff)   
   [Anzeigen von Objekten nach Dominator](#FoldObjects)   
-  [Daten nach Bezeichner filtern](#Filter)   
+  [Daten nach Bezeichner Filtern](#Filter)   
   [Suchen eines Objekts in der Objektstruktur](#ShowInRootsView)   
-  [Anzeigen von freigegebenen Objektverweisen](#References)   
-  [Anzeigen integrierter Objekte](#BuiltInValues)   
-  [Speichern von Diagnosesitzungsdateien](#Save)   
-  [Associate source code with memory usage data](#JSConsoleCommands)   
+  [Anzeigen von freigegebenen Objekt verweisen](#References)   
+  [Integrierte Objekte anzeigen](#BuiltInValues)   
+  [Speichern von Diagnose Sitzungs Dateien](#Save)   
+  [Zuordnen von Quellcode zu Speicher Auslastungs Daten](#JSConsoleCommands)   
   [Tipps zum Identifizieren von Arbeitsspeicherproblemen](#Tips)  
   
-## <a name="Run"></a> Ausführen der JavaScript-Speicheranalyse  
+## <a name="run-the-javascript-memory-analyzer"></a><a name="Run"></a> Ausführen der JavaScript-Speicher Analyse  
  Sie können die Speicheranalyse verwenden, wenn Sie über eine funktionierende Windows Store-App verfügen, die in Visual Studio geöffnet oder auf einem Computer installiert ist, auf dem [!INCLUDE[win8](../includes/win8-md.md)] oder höher ausgeführt wird.  
   
 #### <a name="to-run-the-memory-analyzer"></a>So führen Sie die Speicheranalyse aus  
@@ -106,7 +106,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 7. Um von der Arbeitsspeicheranalyse erfasste Daten anzuzeigen, wählen Sie **Heap-Momentaufnahme erstellen**aus. Siehe [View a snapshot summary](#SnapshotSummary) weiter unten in diesem Thema.  
   
-## <a name="Check"></a> Überprüfen der Speicherauslastung  
+## <a name="check-memory-usage"></a><a name="Check"></a> Überprüfen der Speicherauslastung  
  Sie können versuchen, Speicherverluste zu identifizieren, indem Sie unterschiedliche Ansichten in der JavaScript-Arbeitsspeicheranalyse verwenden. Wenn Sie bereits Speicherverlust bei der App vermuten, finden Sie unter [Isolate a memory leak](#Isolate) einen vorgeschlagenen Workflow.  
   
  Verwenden Sie die folgenden Ansichten, um Speicherverluste in einer App zu identifizieren:  
@@ -125,8 +125,8 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 - [Anzeigen eines Momentaufnahmevergleichs](#SnapshotDiff). Es werden differenzielle Werte zwischen Momentaufnahmen angezeigt. Diese Ansichten zeigen Unterschiede in der Objektgröße und -anzahl an.  
   
-## <a name="Isolate"></a> Isolate a memory leak  
- In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+## <a name="isolate-a-memory-leak"></a><a name="Isolate"></a> Isolieren eines Speicherlecks  
+ In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Tutorial, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Öffnen Sie die App in Visual Studio.  
   
@@ -168,7 +168,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
     - Differenzielle Heapgröße (Link links unter der Heapgröße). Der Linktext gibt die Differenz zwischen der Heapgröße der aktuellen Momentaufnahme und der Heapgröße der vorherigen Momentaufnahme an.  
   
-    - Differenzielle Objektanzahl (Link rechts unter der Objektanzahl). Der Linktext gibt zwei Werte an (z. B. +1858/-1765): Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden.  
+    - Differenzielle Objektanzahl (Link rechts unter der Objektanzahl). Der Linktext zeigt zwei Werte an (z. B. + 1858 / -1765): Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden.  
   
       Über diese Links wird eine Detailansicht der Differenzen zwischen den Momentaufnahmen für die Heaptypen geöffnet, die entweder nach beibehaltener Größe oder nach Objektanzahl sortiert ist, abhängig davon, auf welchen Link Sie geklickt haben.  
   
@@ -191,7 +191,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 14. Wenn in der Ansicht der übrig gebliebenen Objekte zu viele Objekte angezeigt werden, versuchen Sie, den Zeitraum noch genauer einzugrenzen, in dem der Speicherverlust auftritt. Erstellen Sie anschließend die drei Momentaufnahmen noch einmal. Um den Speicherverlust weiter zu isolieren, verwenden Sie [Associate source code with memory usage data](#JSConsoleCommands), [Associate source code with memory usage data](#JSConsoleCommands)und andere Daten zur Speicherauslastung, die in der Arbeitsspeicheranalyse verfügbar sind.  
   
-## <a name="LiveMemory"></a> Anzeigen der Zusammenfassung der Live-Speicherauslastung  
+## <a name="view-live-memory-usage-summary"></a><a name="LiveMemory"></a> Zusammenfassung der Live-Speicherauslastung anzeigen  
  Die Zusammenfassungsansicht der Live-Speicherauslastung stellt ein Speicherauslastungsdiagramm für die ausgeführte App und eine Auflistung aller Kacheln der Momentaufnahmen-Zusammenfassung bereit. In dieser Ansicht können Sie grundlegende Aufgaben ausführen, wie das Erstellen von Momentaufnahmen, die Analyse von Informationen der Zusammenfassung und das Navigieren zu anderen Ansichten. Wenn Sie die Datenerfassung beendet haben, verschwindet das Arbeitsspeicherdiagramm, und Sie sehen nur die Ansicht der [View a snapshot summary](#SnapshotSummary) .  
   
  Das Arbeitsspeicherdiagramm zeigt eine aktive Ansicht des Prozessarbeitsspeichers der App, die private Bytes, systemeigenen Speicher und den JavaScript-Heap umfasst. Das Arbeitsspeicherdiagramm ist eine bildlauffähige Ansicht des Prozessspeichers. Hier sehen Sie, wie es aussieht:  
@@ -202,7 +202,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  Ein Teil des im Arbeitsspeicherdiagramm dargestellten Arbeitsspeichers wird von der JavaScript-Laufzeit zugeordnet. Sie können diese Speicherauslastung in der App nicht steuern. Die im Diagramm dargestellte Speicherauslastung erhöht sich bei Erstellen der ersten Momentaufnahme und erhöht sich geringfügig bei jeder weiteren Momentaufnahme.  
   
-## <a name="SnapshotSummary"></a> View a snapshot summary  
+## <a name="view-a-snapshot-summary"></a><a name="SnapshotSummary"></a> Anzeigen einer Momentaufnahme Zusammenfassung  
  Um eine Momentaufnahme des aktuellen Zustands der Speicherauslastung der App zu erstellen, wählen Sie im Arbeitsspeicherdiagramm **Heap-Momentaufnahme erstellen** aus. Eine Kachel zur Momentaufnahmen-Zusammenfassung wird in der Zusammenfassung der Live-Speicherauslastung (bei laufender App) und in der Momentaufnahmenzusammenfassung (bei beendeter App) angezeigt und enthält Informationen zum JavaScript-Heap sowie Links zu ausführlicheren Informationen. Bei mindestens zwei erstellten Momentaufnahmen stellt eine Momentaufnahme zusätzliche Informationen zum Vergleich der aktuellen Daten mit denen der vorherigen Momentaufnahme bereit.  
   
 > [!NOTE]
@@ -224,11 +224,11 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 - Objektanzahl. Diese Zahl gibt nur die in der App erstellten Objekte an. Integrierte, von der JavaScript-Laufzeit erstellte Objekte werden herausgefiltert. Die Objektanzahl ist ein Link zur Typansicht der Momentaufnahmedetails.  
   
-- Differenzielle Objektanzahl. Dadurch werden zwei Werte angezeigt: Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden. Die Abbildung zeigt zum Beispiel, dass 1.859 Objekte hinzugefügt wurden und 1.733 Objekte seit Momentaufnahme Nr. 1 entfernt wurden. Hinter dieser Information sehen Sie einen roten Pfeil nach oben, falls die Objektgesamtanzahl angestiegen ist, bzw. einen grünen Pfeil nach unten, wenn sie gesunken ist. Wenn sich die Objektanzahl nicht geändert hat, wird der Text **Keine Änderung** anstelle einer Zahl angezeigt. Für die erste Momentaufnahme sehen Sie den Text **Basislinie**. Die differenzielle Objektanzahl ist mit der Ansicht "Typen" des Momentaufnahmenvergleichs verknüpft.  
+- Differenzielle Objektanzahl. Hier werden zwei Werte angezeigt: Der erste Wert ist die Anzahl neuer Objekte, die seit der vorherigen Momentaufnahme hinzugefügt wurden. Der zweite Wert ist die Anzahl der Objekte, die seit der vorherigen Momentaufnahme entfernt wurden. Die Abbildung zeigt zum Beispiel, dass 1.859 Objekte hinzugefügt wurden und 1.733 Objekte seit Momentaufnahme Nr. 1 entfernt wurden. Hinter dieser Information sehen Sie einen roten Pfeil nach oben, falls die Objektgesamtanzahl angestiegen ist, bzw. einen grünen Pfeil nach unten, wenn sie gesunken ist. Wenn sich die Objektanzahl nicht geändert hat, wird der Text **Keine Änderung** anstelle einer Zahl angezeigt. Für die erste Momentaufnahme sehen Sie den Text **Basislinie**. Die differenzielle Objektanzahl ist mit der Ansicht "Typen" des Momentaufnahmenvergleichs verknüpft.  
   
 - Screenshot des Bildschirms zum Zeitpunkt der Momentaufnahme.  
   
-## <a name="SnapshotDetails"></a> Anzeigen von Momentaufnahmedetails  
+## <a name="view-snapshot-details"></a><a name="SnapshotDetails"></a> Momentaufnahme Details anzeigen  
  Sie können ausführliche Informationen zur Speicherauslastung für jede Momentaufnahme in den Ansichten "Momentaufnahmedetails" anzeigen.  
   
  Wählen Sie in der Ansicht der Momentaufnahme-Zusammenfassung einen Link aus, um die Momentaufnahmedetails anzuzeigen. Beispielsweise werden durch Klicken auf den Link der Heapgröße standardmäßig die Momentaufnahmedetails mit der Typenansicht angezeigt.  
@@ -263,7 +263,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 - **Anzahl** Zahl Objektinstanzen. Dieser Wert wird nur in der Typansicht angezeigt.  
   
-## <a name="SnapshotDiff"></a> Anzeigen eines Momentaufnahmevergleichs  
+## <a name="view-a-snapshot-diff"></a><a name="SnapshotDiff"></a> Anzeigen eines Momentaufnahme Vergleichs  
  In der JavaScript-Speicheranalyse können Sie in den Ansichten "Momentaufnahmevergleich" eine Momentaufnahme mit einer vorherigen vergleichen.  
   
  In der Ansicht der Momentaufnahmezusammenfassung können Sie die differenziellen Momentaufnahmedetails anzeigen, indem Sie die differenzielle Heapgröße oder die Links der differenziellen Objektanzahl auswählen, nachdem mindestens zwei Momentaufnahmen ausgeführt wurden.  
@@ -282,36 +282,36 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
   Um die Differenzinformationen zwischen den Momentaufnahmen zu filtern, wählen Sie einen der **Bereichsfilter** oben in den Differenzansichten aus.  
   
-- **Übrige Objekte der Momentaufnahme #\<Zahl>** . Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.  
+- **Übrige Objekte der Momentaufnahme \<number>** . Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.  
   
   > [!TIP]
   > Um mit diesem Filter die nützlichsten Informationen anzuzeigen, befolgen Sie die unter [Isolate a memory leak](#Isolate)beschriebenen Schritte.  
   
-- **Objekte zwischen Momentaufnahme #\<Zahl> und #\<Zahl>** eingefügt. Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.  
+- **Zwischen Momentaufnahme \<number> und \<number> hinzugefügte Objekte** Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.  
   
-- **Alle Objekte in Momentaufnahme #\<Zahl>** . Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
+- **Alle Objekte in Momentaufnahme \<number>** Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
   
   Zum Anzeigen von Objektverweisen, die nicht dem aktuellen Filter **Bereich** entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") (Dropdownliste „Einstellungen“ in Speicheranalyse) aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
   
 > [!TIP]
 > Es wird empfohlen, dass Sie die Schritte unter [Isolate a memory leak](#Isolate) befolgen und dann anhand der übrigen Objekte, die mit dem **Bereichsfilter** herausgefiltert wurden, die Objekte ermitteln, die für den Speicherverlust verantwortlich sind.  
   
-## <a name="FoldObjects"></a> Anzeigen von Objekten nach Dominator  
+## <a name="view-objects-by-dominator"></a><a name="FoldObjects"></a> Anzeigen von Objekten nach Dominator  
  In den Ansichten "Typen" und "Dominatoren" können Sie auswählen, ob Objekte in ihre Dominatoren gefaltet angezeigt werden (dies ist die Standardansicht auf der Registerkarte "Dominatoren"). Wenn diese Ansicht ausgewählt ist, werden Dominatoren nur in der Ansicht der obersten Ebene von Objekten angezeigt. (Objekte, die untergeordnete Elemente von nicht globalen Objekten sind, werden in der Ansicht der obersten Ebene ausgeblendet.) Bei einigen Apps kann dies klären, welche Objekte einen Speicherverlust verursachen, indem Störungen in den Daten reduziert werden.  
   
  Um die Anzeige von Objekten nach Dominator umzuschalten, wählen Sie die Schaltfläche **Objekte nach Dominator reduzieren** . ![Falten von Objekten in ihren Dominatoren](../profiling/media/js-mem-fold-objects.png "JS_Mem_Fold_Objects")  
   
  Weitere Informationen zu Dominatoren finden Sie unter [Anzeigen von Momentaufnahmedetails](#SnapshotDetails).  
   
-## <a name="Filter"></a> Daten nach Bezeichner filtern  
+## <a name="filter-data-by-identifier"></a><a name="Filter"></a> Daten nach Bezeichner Filtern  
  In den Ansichten "Dominatoren" und "Typen" können Sie Daten filtern, indem Sie nach bestimmten Bezeichnern suchen. Um nach einem Bezeichner zu suchen, geben Sie seinen Namen einfach oben rechts in das Textfeld **Bezeichnerfilter** ein. Wenn Sie mit der Eingabe beginnen, werden Bezeichner ohne die eingegebenen Zeichen herausgefiltert.  
   
  Jede Ansicht hat ihren eigenen Filter, sodass der Filter nicht beibehalten wird, wenn Sie zu einer anderen Ansicht wechseln.  
   
-## <a name="ShowInRootsView"></a> Suchen eines Objekts in der Objektstruktur  
+## <a name="find-an-object-in-the-object-tree"></a><a name="ShowInRootsView"></a> Suchen eines Objekts in der Objektstruktur  
  In den Typen- und Dominatorenansichten wird die Beziehung eines bestimmten Objekts zum `Global` -Objekt sichtbar. Für Objekte, die mit dem `Global` -Objekt als Stamm verknüpft sind, wird keine Garbage Collection durchgeführt. Sie können ein bekanntes Objekt leicht in der Stammansicht finden, ohne die Objektstruktur `Global` zu durchsuchen. Öffnen Sie hierzu das Kontextmenü für ein Objekt in der Ansicht "Dominatoren" oder "Typen", und wählen Sie dann **In Stammansicht anzeigen**aus.  
   
-## <a name="References"></a> Anzeigen von freigegebenen Objektverweisen  
+## <a name="view-shared-object-references"></a><a name="References"></a> Anzeigen von freigegebenen Objekt verweisen  
  In den Typen- und Dominatorenansichten enthält der untere Bereich eine Objektverweisliste, in der die freigegebenen Verweise angezeigt werden. Wenn Sie ein Objekt im oberen Bereich auswählen, werden in der Objektverweisliste alle Objekte angezeigt, die auf dieses Objekt verweisen.  
   
 > [!NOTE]
@@ -323,15 +323,15 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  ![Objektverweise mit angezeigten IDs](../profiling/media/js-mem-shared-refs.png "JS_Mem_Shared_Refs")  
   
-## <a name="BuiltInValues"></a> Anzeigen integrierter Objekte  
+## <a name="show-built-in-objects"></a><a name="BuiltInValues"></a> Integrierte Objekte anzeigen  
  Standardmäßig werden in den Ansichten "Dominatoren" und "Typen" nur die Objekte angezeigt, die in der App erstellt werden. Damit werden nicht benötigte Informationen herausgefiltert und auf die App bezogene Probleme isoliert. Manchmal ist es aber hilfreich, alle Objekte anzuzeigen, die von der JavaScript-Laufzeit für die App generiert werden.  
   
  Wenn Sie diese Objekte anzeigen möchten, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") (Dropdownliste „Einstellungen“ in Speicheranalyse) in der rechten oberen Ecke des Bereichs die Option **Integrierte anzeigen** aus.  
   
-## <a name="Save"></a> Speichern von Diagnosesitzungsdateien  
+## <a name="save-diagnostic-session-files"></a><a name="Save"></a> Speichern von Diagnose Sitzungs Dateien  
  Momentaufnahmen-Zusammenfassungen zu Diagnosezwecken sowie die zugeordneten Detailansichten werden als .diagsessions-Dateien gespeichert. Der**Projektmappen-Explorer** zeigt vorherige Diagnosesitzungen im Ordner "Diagnosesitzungen" an. Im **Projektmappen-Explorer**können Sie vorherige Sitzungen öffnen oder Dateien entfernen bzw. umbenennen.  
   
-## <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
+## <a name="associate-source-code-with-memory-usage-data"></a><a name="JSConsoleCommands"></a> Zuordnen von Quellcode zu Speicher Auslastungs Daten  
  Zur Isolierung des Codeabschnitts, bei dem ein Arbeitsspeicherproblem vorliegt, verwenden Sie die folgenden Methoden:  
   
 - Suchen Sie nach Klassennamen und IDs für DOM-Elemente in den Details und den differenziellen Ansichten.  
@@ -372,15 +372,15 @@ if (performance && performance.mark) {
   
  ![Verwenden einer Profilmarkierung](../profiling/media/js-mem-performance-marks.png "JS_Mem_Performance_Marks")  
   
-## <a name="Tips"></a> Tipps zum Identifizieren von Arbeitsspeicherproblemen  
+## <a name="tips-for-identifying-memory-issues"></a><a name="Tips"></a> Tipps zum Identifizieren von Arbeitsspeicher Problemen  
   
-- Führen Sie den unter [Isolieren eines Speicherverlusts](#Isolate) beschriebenen Workflow aus, und verwenden Sie den Filter **Übrige Objekte der Momentaufnahme #\<Zahl>** in einer Differenzansicht, um Kandidaten zu identifizieren, die wahrscheinlich für die Speicherverluste verantwortlich sind.  
+- Führen Sie den unter [Isolieren eines Speicherverlusts](#Isolate) beschriebenen Workflow aus, und verwenden Sie den Filter **Übrige Objekte der Momentaufnahme \<number>** in einer Differenzansicht, um Kandidaten zu identifizieren, die wahrscheinlich für die Speicherverluste verantwortlich sind.  
   
 - Verwenden Sie [Suchen eines Objekts in der Objektstruktur](#ShowInRootsView) können Sie anzeigen, an welcher Stelle in der Speicherhierarchie auf ein Objekt verwiesen wird. Die Stammansicht zeigt, wie ein Objekt mit dem globalen Objekt als Stamm verknüpft ist, was die Garbage Collection für dieses Objekt verhindern würde.  
   
 - Wenn die Ursache eines Arbeitsspeicherproblems schwer zu erkennen ist, verwenden Sie die verschiedenen Ansichten (z. B. Dominatoren und Typen), um nach Gemeinsamkeiten zu suchen. Dies kann insbesondere dazu nützlich sein, ein Objekt (oder einige wenige Objekte) zu identifizieren, die Verweise auf viele andere Objekte in der Ansicht enthalten.  
   
-- Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Beispiel:  
+- Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Zum Beispiel:  
   
   - Die falsche Verwendung der Funktion [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) kann dieses Problem verursachen.  
 
@@ -400,5 +400,5 @@ if (performance && performance.mark) {
 
   - Erstellen Sie ein Testobjekt, und verfolgen Sie es in den Ansichten der JavaScript-Speicheranalyse, z. B. in der Typenansicht. Beispielsweise können Sie einem anderen Objekt ein sehr großes Objekt anfügen, um festzustellen, ob für ein bestimmtes Objekt oder Element eine Garbage Collection durchgeführt wurde.  
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

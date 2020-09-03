@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536018"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Direktivenprozessors
@@ -62,7 +62,7 @@ Zum Erstellen einer VSIX-Datei stehen mehrere Methoden zur Verfügung. Im folgen
 
     1. Erstellen Sie eine Textdatei, und nennen Sie Sie \<*assemblyName*> . pkgdef.
 
-         \<*assemblyName*>ist in der Regel mit dem Namen des Projekts identisch.
+         \<*assemblyName*> ist in der Regel mit dem Namen des Projekts identisch.
 
     2. Wählen Sie die Datei im Projektmappen-Explorer aus, und legen Sie die Eigenschaften wie folgt fest:
 

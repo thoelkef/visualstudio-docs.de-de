@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetName | Microsoft Docs
+title: 'IDebugStackFrame2:: GetName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9432e1fc7bd592b38afe3ba62b4f57063d7f2807
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719680"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
-Ruft den Namen des Stapelrahmens ab.
+Ruft den Namen des Stapel Rahmens ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetName ( 
 
 ## <a name="parameters"></a>Parameter
 `pbstrName`\
-[out] Gibt den Namen des Stapelrahmens zurück.
+vorgenommen Gibt den Namen des Stapel Rahmens zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der Name eines Stapelrahmens ist in der Regel der Name der ausgeführten Methode.
+ Der Name eines Stapel Rahmens ist in der Regel der Name der Methode, die ausgeführt wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015293"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Vorgehensweise: Importieren einer Master Seite oder eines Designs
-  Sie können Seiten auf Ihrer SharePoint-Website ein konsistentes Erscheinungsbild bereit halten, indem Sie Masterseiten und Designs erstellen und verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]bietet keine Vorlagen für diese Elemente, Sie können Sie jedoch in SharePoint Designer erstellen und dann in importieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) auf der Microsoft-Website.
+  Sie können Seiten auf Ihrer SharePoint-Website ein konsistentes Erscheinungsbild bereit halten, indem Sie Masterseiten und Designs erstellen und verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet keine Vorlagen für diese Elemente, Sie können Sie jedoch in SharePoint Designer erstellen und dann in importieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) auf der Microsoft-Website.
 
 ### <a name="to-import-a-master-page-or-theme"></a>So importieren Sie eine Master Seite oder ein Design
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 063767f8f50793253c236db5d5b90e1d6db1bff4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905873"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Vorgehensweise: Hinzufügen einer Abhängigkeit zu einem VSIX-Paket
@@ -46,7 +46,7 @@ Wenn Ihre Erweiterung 15,3 oder höher erfordert, deklarieren Sie die **installa
 
 Das vsixinstaller erkennt frühere Versionen von Visual Studio und informiert den Benutzer darüber, dass ein späteres Update erforderlich ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [VSIX-Erweiterungs Schema 1,0-Referenz](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
 - [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)

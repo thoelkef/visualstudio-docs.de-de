@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015900"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungs Schritts für SharePoint-Projekte
@@ -79,7 +80,7 @@ ms.locfileid: "86015900"
 
 5. Wählen Sie die Vorlage **VSIX-Projekt** aus, benennen Sie das Projekt **UpgradeDeploymentStep**, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt das Projekt **UpgradeDeploymentStep** zu **Projektmappen-Explorer**hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt das Projekt **UpgradeDeploymentStep** zu **Projektmappen-Explorer**hinzu.
 
 #### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt
 
@@ -91,7 +92,7 @@ ms.locfileid: "86015900"
 
 4. Wählen Sie die Projektvorlage **Klassenbibliothek** aus, benennen Sie das Projekt **DeploymentStepExtension**, und wählen Sie dann die Schaltfläche **OK** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt Mappe das Projekt **DeploymentStepExtension** hinzu und öffnet die standardmäßige Class1-Codedatei.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **DeploymentStepExtension** hinzu und öffnet die standardmäßige Class1-Codedatei.
 
 5. Löschen Sie die Class1-Codedatei aus dem Projekt.
 
@@ -265,7 +266,7 @@ ms.locfileid: "86015900"
 
 7. Klicken Sie auf die Schaltfläche **Fertig stellen**.
 
-    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt das Projektmitarbeiter List Definition.
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Projektmitarbeiter List Definition.
 
 8. Öffnen Sie das Kontextmenü für das Projektmitarbeiter List Definition, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element**aus.
 
@@ -283,7 +284,7 @@ ms.locfileid: "86015900"
 
     3. Der **Standardwert (leer)** wird in der Liste **Erstellen einer anpassbaren Liste basierend auf:** ausgewählt.
 
-       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt das Mitarbeiter Listenelement mit einer Titel Spalte und einer einzelnen leeren Instanz und öffnet den Listen-Designer.
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Mitarbeiter Listenelement mit einer Titel Spalte und einer einzelnen leeren Instanz und öffnet den Listen-Designer.
 
 12. Wählen Sie im Listen-Designer auf der Registerkarte **Spalten** die Zeile **neuen oder vorhandenen Spaltennamen eingeben** aus, und fügen Sie dann die folgenden Spalten in der Liste **Spalten Anzeige Name** hinzu:
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173602"
 ---
 # <a name="author-vsct-files"></a>Vsct-Dateien erstellen
@@ -229,7 +229,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
 
    Einige Menü-und Schaltflächen Typen enthalten spezielles Verhalten. In der folgenden Liste werden einige spezielle Menü-und Schaltflächen Typen beschrieben. Informationen zu anderen Typen finden Sie `types` in den Attribut Beschreibungen in den [Menü](../../extensibility/menu-element.md)-, [Combo](../../extensibility/combo-element.md) [Schalt](../../extensibility/button-element.md)Flächen-und Kombinations Elementen.
 
-   - Kombinations Feld: ein Kombinations Feld ist eine Dropdown Liste, die auf einer Symbolleiste verwendet werden kann. Wenn Sie der Benutzeroberfläche Kombinations Felder hinzufügen möchten, erstellen Sie ein [Combos](../../extensibility/combos-element.md) -Element im- `Commands` Element. Fügen Sie dann dem- `Combos` Element ein- `Combo` Element für jedes hinzu zufügende Kombinations Feld hinzu. `Combo`-Elemente verfügen über dieselben Attribute und untergeordneten Elemente wie `Button` -Elemente sowie über `DefaultWidth` -und- `idCommandList` Attribute. Das `DefaultWidth` -Attribut legt die Breite in Pixel fest, und das- `idCommandList` Attribut verweist auf eine Befehls-ID, die zum Auffüllen des Kombinations Felds verwendet wird.
+   - Kombinations Feld: ein Kombinations Feld ist eine Dropdown Liste, die auf einer Symbolleiste verwendet werden kann. Wenn Sie der Benutzeroberfläche Kombinations Felder hinzufügen möchten, erstellen Sie ein [Combos](../../extensibility/combos-element.md) -Element im- `Commands` Element. Fügen Sie dann dem- `Combos` Element ein- `Combo` Element für jedes hinzu zufügende Kombinations Feld hinzu. `Combo` -Elemente verfügen über dieselben Attribute und untergeordneten Elemente wie `Button` -Elemente sowie über `DefaultWidth` -und- `idCommandList` Attribute. Das `DefaultWidth` -Attribut legt die Breite in Pixel fest, und das- `idCommandList` Attribut verweist auf eine Befehls-ID, die zum Auffüllen des Kombinations Felds verwendet wird.
 
    - Menü Controller: ein Menü Controller ist eine Schaltfläche, die einen Pfeil daneben enthält. Wenn Sie auf den Pfeil klicken, wird eine Liste geöffnet. Um der Benutzeroberfläche einen Menü Controller hinzuzufügen, erstellen Sie ein-Element, und legen Sie das zugehörige- `Menu` `type` Attribut `MenuController` `MenuControllerLatched` abhängig vom gewünschten Verhalten auf oder fest. Um einen Menü Controller aufzufüllen, legen Sie ihn als übergeordnetes Element eines- `Group` Elements fest. Im Menü Controller werden alle untergeordneten Elemente dieser Gruppe in der Dropdown Liste angezeigt.
 

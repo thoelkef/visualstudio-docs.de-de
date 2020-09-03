@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bf0301f9b97bf6a7ca76f72f832c635a0dbb128
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656377"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Gewusst wie: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich
@@ -29,8 +29,8 @@ In diesem Thema wird beschrieben, wie dem [Arbeitsbereich des XML-Schema-Designe
 
      Die Ausgangsansicht wird angezeigt.
 
-     Beachten Sie, dass im Abschnitt " **Details zum Schema Satz** " zwei (**2**) **globale komplexe Typen**vorhanden sind.
+     Im Abschnitt **Details zum Schemaset** werden zwei (**2**) **globale komplexe Typen** angezeigt.
 
-3. Klicken Sie rechts neben der Überschrift **globale komplexe Typen** auf den Link **Hinzufügen** .
+3. Klicken Sie rechts neben der Überschrift **Globale komplexe Typen** auf den Link **Hinzufügen**.
 
      Die `USAddress`- und `PurchaseOrderType`-Knoten des komplexen Typs werden auf der Entwurfsoberfläche der Diagrammansicht angezeigt.

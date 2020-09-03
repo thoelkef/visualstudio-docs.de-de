@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION | Microsoft Docs
+title: BP_LOCATION_RESOLUTION | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737960"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
-Beschreibt die Auflösung eines Haltepunkts an einer bestimmten Position.
+Beschreibt die Auflösung eines Breakpoints an einer bestimmten Position.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,15 +34,15 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 ## <a name="members"></a>Member
 `pResolution`\
-Das [IDebugBreakpointResolution2-Objekt,](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) das den Typ des Haltepunkts und seine Auflösungsinformationen bestimmt.
+Das [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) -Objekt, das den Typ des Breakpoints und dessen Auflösungsinformationen bestimmt.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Gewerkschaft.
+Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

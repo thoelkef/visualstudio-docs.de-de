@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ded65e85a2ae11e96c21fdd852ea12daa4bbcdf4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299994"
 ---
 # <a name="step-8-customize-the-quiz"></a>Schritt 8: Anpassen des Quiz
@@ -29,6 +29,6 @@ Im letzten Teil des Lernprogramms untersuchen Sie mehrere Möglichkeiten, das Qu
 
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Um zum nächsten Tutorial zu wechseln, klicken Sie auf [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md).
+- Um zum nächsten Tutorial zu wechseln, klicken Sie auf [Tutorial 3: Erstellen eines Vergleichs Spiels](../ide/tutorial-3-create-a-matching-game.md).
 
-- Um zum vorhergehenden Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).
+- Um zum vorherigen Tutorialschritt zurückzukehren, finden [Sie unterschritt 7: Hinzufügen von Multiplikations-und Divisions](../ide/step-7-add-multiplication-and-division-problems.md)

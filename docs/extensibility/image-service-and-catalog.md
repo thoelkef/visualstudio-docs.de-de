@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536330"
 ---
 # <a name="image-service-and-catalog"></a>Image-Dienst und-Katalog
@@ -88,7 +88,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 </ImageManifest>
 ```
 
- **Symbole**
+ **Symbols**
 
  Zur Unterstützung der Lesbarkeit und Wartung kann das Bild Manifest Symbole für Attributwerte verwenden. Symbole werden wie folgt definiert:
 
@@ -104,7 +104,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |**Unterelement**|**Definition**|
 |-|-|
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei zur Verwendung im aktuellen Manifest.|
-|GUID|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
+|Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
 |id|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|
 |String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|
 
@@ -143,7 +143,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 
 |**Attribut**|**Definition**|
 |-|-|
-|GUID|Benötigten Der GUID-Teil des bilmonikers.|
+|Guid|Benötigten Der GUID-Teil des bilmonikers.|
 |id|Benötigten Der ID-Teil des bilmonikers.|
 |Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|
 
@@ -166,7 +166,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 |**Element**|**Attribute (alle erforderlich)**|**Definition**|
 |-|-|-|
-|\<Size>|Wert|Die Quelle wird für Images der angegebenen Größe (in Geräte Einheiten) verwendet. Das Bild wird quadratisch.|
+|\<Size>|value|Die Quelle wird für Images der angegebenen Größe (in Geräte Einheiten) verwendet. Das Bild wird quadratisch.|
 |\<SizeRange>|MinSize, MaxSize|Die Quelle wird für Images von MinSize bis MaxSize (in Geräte Einheiten) inklusive verwendet. Das Bild wird quadratisch.|
 |\<Dimensions>|Width, Height|Die Quelle wird für Bilder mit der angegebenen Breite und Höhe (in Geräte Einheiten) verwendet.|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird für Bilder von der minimalen Breite/Höhe bis zur maximalen Breite bzw. Höhe (in Geräte Einheiten) einschließlich der maximalen Breite/Höhe verwendet.|
@@ -179,7 +179,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 |**Attribut**|**Definition**|
 |-|-|
-|Typ|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
+|type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
 |id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
 
  **ImageList**
@@ -195,7 +195,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 |**Attribut**|**Definition**|
 |-|-|
-|GUID|Benötigten Der GUID-Teil des bilmonikers.|
+|Guid|Benötigten Der GUID-Teil des bilmonikers.|
 |id|Benötigten Der ID-Teil des bilmonikers.|
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|
 
@@ -506,11 +506,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;
        ```
 
-   2. Weitere Informationen finden Sie unterschritt #1 des "Gewusst wie verwenden Sie bildmoniker in einem neuen Tool Fenster". der obige Abschnitt.
+   2. Weitere Informationen finden Sie unterschritt #1 des "Gewusst wie verwenden Sie bildmoniker in einem neuen Tool Fenster". im oben stehenden Absatz.
 
 4. Der Befehl zum Öffnen des Tool Fensters.
 
-   - Weitere Informationen finden Sie unterschritt #2 des "Gewusst wie verwenden Sie bildmoniker in einem neuen Tool Fenster". der obige Abschnitt.
+   - Weitere Informationen finden Sie unterschritt #2 des "Gewusst wie verwenden Sie bildmoniker in einem neuen Tool Fenster". im oben stehenden Absatz.
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Gewusst wie verwenden Sie bildmoniker in einer vsct-Datei?
  Aktualisieren Sie die *vsct* -Datei, wie in den nachfolgenden nachfolgenden Zeilen angegeben:
@@ -640,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Ersetzen Sie jede **containedimage**-GUID durch $ (imagecatalogguid), ersetzen Sie jede **containedimage**-ID durch $ ( \<moniker> ), und fügen Sie jedem **containedimage** das Attribut extern = "true" hinzu.
 
-       - \<moniker>muss durch den **knownmoniker** ersetzt werden, der mit dem Bild übereinstimmt, aber mit "knownmoniker". aus dem Namen entfernt.
+       - \<moniker> muss durch den **knownmoniker** ersetzt werden, der mit dem Bild übereinstimmt, aber mit "knownmoniker". aus dem Namen entfernt.
 
    - Fügen Sie <Import Manifest = "$ (ManifestFolder) \\<relativen Installationsverzeichnis Pfad zu * \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \*> am Anfang des Abschnitts hinzu \<Symbols> .
 
@@ -1009,7 +1009,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |Glyphgroupjsharpinterface|Glyphitemshortcut|Interfakeshortcut|
     |Glyphgrouperror||StatusError|
     |Glyphbscfile||Classfile|
-    |Glyphassembly||Referenz|
+    |Glyphassembly||Verweis|
     |Glyphlibrary||Bibliothek|
     |Glyphvbproject||Vbprojectnode|
     |Glyphcoolproject||Csprojectnode|

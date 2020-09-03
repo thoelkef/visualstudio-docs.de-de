@@ -35,10 +35,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd0a89ac1d96e2d1af829ba04e6e164f8fae7f8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542180"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Starten einer Debugsitzung für eine Store-App in Visual Studio (VB, C#, C++ und XAML)
@@ -86,7 +86,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
   - [Fügen Sie den Debugger an.](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>Die einfache Methode zum Starten des Debuggens
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> Die einfache Methode zum Starten des Debuggens
 
 1. Öffnen Sie in Visual Studio die Anwendungsprojektmappe.
 
@@ -96,7 +96,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 ## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> Konfigurieren der Debugsitzung
 
-### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Öffnen Sie die Eigenschaften Seite Debuggen für das Projekt.
+### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Öffnen Sie die Eigenschaften Seite Debuggen für das Projekt.
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus. Wählen Sie im Kontextmenü **Eigenschaften**aus.
 
@@ -110,7 +110,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
          ![C&#43;&#43; Windows Store-App-Debugging (Eigenschaften Seite)](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
 
-### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a>Buildkonfigurationsoptionen auswählen
+### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a> Buildkonfigurationsoptionen auswählen
 
 1. Wählen Sie in der Liste **Konfiguration** den Eintrag **Debuggen** oder **Aktive Konfiguration**aus.
 
@@ -169,7 +169,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  Wählen Sie einen dieser Debugger in der Liste **Anwendungsprozesse** aus:
 
-|Debuggertyp|Beschreibung|
+|Debuggertyp|BESCHREIBUNG|
 |-|-|
 |**Nur Skript**|Für das Debuggen des JavaScript-Codes der Anwendung. Verwalteter und systemeigener Code werden ignoriert.|
 |**Nur systemeigen**|Für das Debuggen des systemeigenen C/C++-Codes der Anwendung. Verwalteter und JavaScript-Code werden ignoriert.|
@@ -181,7 +181,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
  Für Windows Phone Store-Apps können Sie den Debugger für Hintergrundprozesse auch aus dem **Hintergrundaufgabenprozess**wählen.
 
-### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a>Optionale Verzögertes Starten der Debugsitzung
+### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a> Optionale Verzögertes Starten der Debugsitzung
  In der Standardeinstellung wird die Anwendung in Visual Studio sofort gestartet, wenn Sie das Debuggen starten. Sie können zudem eine Debugsitzung starten, den Start der App jedoch verzögern. Wenn Sie diese Option auswählen, wird die Anwendung im Debugger gestartet, wenn diese über den Bildschirm, einen Aktivierungsvertrag oder von einem anderen Prozess oder eine Methode gestartet wird. Der Start einer App wird auch verzögert, wenn beim Debuggen einer Hintergrundaufgabe die App selbst nicht ausgeführt wird.
 
  Um den Start der App zu verzögern, können Sie folgende Schritte durchführen:
@@ -220,12 +220,12 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    [Inhalt](#BKMK_In_this_topic)
 
-## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a>Starten der Debugsitzung
+## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> Starten der Debugsitzung
 
 ### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> Debuggen starten (F5)
  Wenn Sie im Menü **Debuggen** die Option **Debuggen starten** (Tastatur: F5) auswählen, startet Visual Studio die APP mit dem angefügten Debugger. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine Ausnahme auftritt, oder bis die Anwendung beendet ist.
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>Starten des Debuggens (F5), verzögertes Starten der APP
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Starten des Debuggens (F5), verzögertes Starten der APP
  Sie können die App so einrichten, dass sie im Debugmodus ausgeführt wird, sie aber mit einer anderen Methode als dem Debugger starten. Beispielsweise, um den über das Startmenü ausgeführten Start der App zu debuggen, oder um einen Hintergrundprozess aus der App zu debuggen, ohne sie zu starten. Um den App-Start zu verzögern, gehen Sie folgendermaßen vor:
 
 - Auf der Eigenschaftenseite **Debugging** der App (**Debuggen** in Visual C++)
@@ -266,7 +266,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 4. Wählen Sie die Debug-Engine aus der Liste **Diesen Codetyp debuggen** .
 
-5. (Optional). Wählen Sie **Eigenen Code zunächst nicht starten sondern debuggen** , um die App zu debuggen, wenn Sie von einer anderen Methode gestartet wird, oder um einen Hintergrundprozess zu debuggen.
+5. (Optional) Wählen Sie **Eigenen Code zunächst nicht starten sondern debuggen** , um die App zu debuggen, wenn Sie von einer anderen Methode gestartet wird, oder um einen Hintergrundprozess zu debuggen.
 
    Wenn Sie auf **Starten**&gt; klicken, wird die App gestartet oder festgelegt, dass sie im Debugmodus ausgeführt werden soll.
 
@@ -295,14 +295,14 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 4. Geben Sie an der PowerShell-Eingabeaufforderung `Enable-AppxDebug` *PackageFullName* ein, wobei *PackageFullName* der PackageFullName-Bezeichner der App ist.
 
-#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>Debugger anfügen
+#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> Debugger anfügen
  So fügen Sie den Debugger an
 
 1. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**.
 
     Das Dialogfeld **An den Prozess anhängen** wird angezeigt.
 
-2. Um an eine Anwendung auf einem Remotegerät anzufügen, geben Sie das Remotegerät im Feld **Qualifizierer** an. Ihre Möglichkeiten:
+2. Um an eine Anwendung auf einem Remotegerät anzufügen, geben Sie das Remotegerät im Feld **Qualifizierer** an. Sie können:
 
    - Geben Sie im Feld **Qualifizierer** den gewünschten Anzeigenamen ein.
 

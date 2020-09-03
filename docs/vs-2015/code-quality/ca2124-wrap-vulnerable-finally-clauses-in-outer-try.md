@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4e191ca10456f133e1213961ca2d1ed9cb8e040b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544299"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
-|Kategorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -49,7 +49,7 @@ ms.locfileid: "85544299"
 
 ## <a name="pseudo-code-example"></a>Pseudocodebeispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Der folgende Pseudocode veranschaulicht das von dieser Regel erkannte Muster.
 
 ### <a name="code"></a>Code

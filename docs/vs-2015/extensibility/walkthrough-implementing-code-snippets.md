@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Implementieren von Codeausschnitten | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Implementieren von Code Ausschnitten | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,46 +9,46 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb720589bc9bc31b7cf2a04b05559cb9c9d46961
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201981"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschließen, damit Benutzer von der Erweiterung sie ihren eigenen Code hinzufügen können.  
+Sie können Code Ausschnitte erstellen und in einer Editor-Erweiterung einschließen, damit Benutzer der Erweiterung Sie Ihrem eigenen Code hinzufügen können.  
   
- Ein Codeausschnitt ist ein Fragment von Code oder Text, der in einer Datei eingebunden werden kann. Um alle Codeausschnitte anzuzeigen, die für bestimmte Programmiersprachen erfasst wurden, auf die **Tools** Menü klicken Sie auf **Codeausschnitt-Manager**. Klicken Sie zum Einfügen eines Ausschnitts in einer Datei mit der rechten Maustaste, Sie den Ausschnitt möchten, auf **Ausschnitt einfügen** oder **Umschließen mit**suchen den gewünschten Codeausschnitt, und doppelklicken Sie darauf. Drücken Sie die Registerkarte oder UMSCHALT + TAB, ändern die relevanten Teile des Ausschnitts ein, und drücken dann die EINGABETASTE oder ESC, um es zu akzeptieren. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
+ Ein Code Ausschnitt ist ein Fragment von Code oder anderem Text, der in eine Datei eingebunden werden kann. Wenn Sie alle Ausschnitte anzeigen möchten **, die für** bestimmte Programmiersprachen registriert wurden, klicken Sie im Menü Extras auf **Code Ausschnitt-Manager**. Um einen Ausschnitt in eine Datei einzufügen, klicken Sie mit der rechten Maustaste auf den gewünschten Ausschnitt, klicken Sie auf **Ausschnitt einfügen** oder **Umschließen mit**, suchen Sie den gewünschten Ausschnitt, und doppelklicken Sie darauf. Drücken Sie TAB oder UMSCHALT + TAB, um die relevanten Teile des Code Ausschnitts zu ändern, und drücken Sie dann die EINGABETASTE oder ESC, um Sie zu akzeptieren. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
   
- Ein Codeausschnitt ist eine XML-Datei enthalten, die die Snippet-Dateinamenerweiterung aufweist. Ein Ausschnitt kann Felder enthalten, die hervorgehoben werden, nachdem der Ausschnitt eingefügt wird, sodass der Benutzer suchen und ändern kann. Eine Snippet-Datei enthält auch Informationen für die **Codeausschnitt-Manager** , damit sie den Namen des Ausschnitts in der richtigen Kategorie angezeigt werden kann. Weitere Informationen zu den Schemas des Codeausschnitts, finden Sie unter [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md).  
+ Ein Code Ausschnitt ist in einer XML-Datei mit der Dateinamenerweiterung ". Ausschnitt" enthalten. Ein Code Ausschnitt kann Felder enthalten, die nach dem Einfügen des Ausschnitts hervorgehoben werden, damit der Benutzer Sie finden und ändern kann. Eine codeausschnittsdatei enthält auch Informationen zum **Code Ausschnitt-Manager** , sodass der Ausschnitt Name in der richtigen Kategorie angezeigt werden kann. Weitere Informationen zum Code Ausschnitt Schema finden Sie unter [Schema Referenz für Code Ausschnitte](../ide/code-snippets-schema-reference.md).  
   
- In dieser exemplarischen Vorgehensweise erfahren, wie diese Aufgaben auszuführen:  
+ In dieser exemplarischen Vorgehensweise wird erläutert, wie Sie diese Aufgaben ausführen:  
   
-1. Erstellen Sie und registrieren Sie Codeausschnitte für eine bestimmte Sprache.  
+1. Erstellen und registrieren Sie Code Ausschnitte für eine bestimmte Sprache.  
   
-2. Hinzufügen der **Ausschnitt einfügen** Befehl in einem Kontextmenü.  
+2. Fügen Sie einem Kontextmenü den Befehl **Ausschnitt einfügen** hinzu.  
   
-3. Implementieren Sie die ausschnitterweiterung.  
+3. Code Ausschnitt Erweiterung implementieren.  
   
-   Diese exemplarische Vorgehensweise basiert auf [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Diese exemplarische Vorgehensweise basiert auf Exemplarische Vorgehensweise [: Anzeigen der Anweisungs Vervollständigung](../extensibility/walkthrough-displaying-statement-completion.md).  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
- Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-and-registering-code-snippets"></a>Erstellen und Registrieren von Codeausschnitten  
- Codeausschnitte sind in der Regel eine registrierte Sprachdienst zugeordnet. Sie ist jedoch nicht erforderlich, implementieren ein <xref:Microsoft.VisualStudio.Package.LanguageService> Codeausschnitte registrieren. Stattdessen geben Sie einfach eine GUID in der Indexdatei, und verwenden Sie dann auf die gleiche GUID in der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> , die Sie Ihrem Projekt hinzufügen.  
+## <a name="creating-and-registering-code-snippets"></a>Erstellen und Registrieren von Code Ausschnitten  
+ In der Regel sind Code Ausschnitte einem registrierten Sprachdienst zugeordnet. Sie müssen jedoch keine implementieren, <xref:Microsoft.VisualStudio.Package.LanguageService> um Code Ausschnitte zu registrieren. Geben Sie stattdessen einfach eine GUID in der codeausschnittsindexdatei an, und verwenden Sie dann die gleiche GUID in der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> , die Sie dem Projekt hinzufügen.  
   
- Die folgenden Schritte veranschaulichen das Erstellen von Codeausschnitten aus, und ordnen sie einen bestimmten GUID.  
+ Die folgenden Schritte veranschaulichen, wie Sie Code Ausschnitte erstellen und einer bestimmten GUID zuordnen.  
   
 1. Erstellen Sie die folgende Verzeichnisstruktur:  
   
-    **%InstallDir%\TestSnippets\Snippets\1033\\**  
+    **%INSTALLDIR%\testsnippeer \snipp\1033\\**  
   
-    wo *% INSTALLDIR%* ist der Visual Studio-Installationsordner. (Obwohl dieser Pfad in der Regel verwendet wird, um Codeausschnitte zu installieren, können Sie einen Pfad angeben.)  
+    Dabei ist " *% INSTALLDIR%* " der Visual Studio-Installationsordner. (Obwohl dieser Pfad in der Regel verwendet wird, um Code Ausschnitte zu installieren, können Sie einen beliebigen Pfad angeben.)  
   
-2. Klicken Sie im Ordner "\1033\", erstellen Sie eine XML-Datei, und nennen Sie sie **TestSnippets.xml**. (Auch diesen Namen in der Regel für die Datei einen Index verwendet wird, können Sie einen beliebigen Namen angeben, solange sie eine Dateinamenerweiterung hat.) Fügen Sie den folgenden Text ein, und klicken Sie dann löschen Sie die Platzhalter-GUID und fügen Sie eine eigene hinzu.  
+2. Erstellen Sie im Ordner "\ 1033 \" eine XML-Datei, und benennen Sie Sie **TestSnippets.xml**. (Obwohl dieser Name in der Regel für eine codeausschnittsindexdatei verwendet wird, können Sie einen beliebigen Namen angeben, sofern er die Dateinamenerweiterung. XML aufweist.) Fügen Sie den folgenden Text hinzu, und löschen Sie dann die Platzhalter-GUID, und fügen Sie Ihr eigenes hinzu.  
   
    ```xml  
    <?xml version="1.0" encoding="utf-8" ?>  
@@ -65,7 +65,7 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
    </SnippetCollection>  
    ```  
   
-3. Erstellen Sie eine Datei im Ordner "Ausschnitt", nennen Sie es **testen**`.snippet`, und fügen Sie dann den folgenden Text hinzu:  
+3. Erstellen Sie eine Datei im Ausschnitt Ordner, nennen Sie Sie " **Test**" `.snippet` , und fügen Sie dann den folgenden Text hinzu:  
   
    ```xml  
    <?xml version="1.0" encoding="utf-8" ?>  
@@ -107,145 +107,145 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
    </CodeSnippets>  
    ```  
   
-   Die folgenden Schritte zeigen, wie Sie die Codeausschnitte registrieren.  
+   Die folgenden Schritte zeigen, wie die Code Ausschnitte registriert werden.  
   
-#### <a name="to-register-code-snippets-for-a-specific-guid"></a>So registrieren Sie Codeausschnitte für einen bestimmten GUID  
+#### <a name="to-register-code-snippets-for-a-specific-guid"></a>So registrieren Sie Code Ausschnitte für eine bestimmte GUID  
   
-1. Öffnen der **CompletionTest** Projekt. Weitere Informationen zum Erstellen des Projekts, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md).  
+1. Öffnen Sie das Projekt **completiontest** . Weitere Informationen zum Erstellen dieses Projekts finden Sie unter Exemplarische Vorgehensweise [: Anzeigen der Anweisungs Vervollständigung](../extensibility/walkthrough-displaying-statement-completion.md).  
   
-2. Fügen Sie im Projekt Verweise auf die folgenden Assemblys hinzu:  
+2. Fügen Sie im-Projekt Verweise auf die folgenden Assemblys hinzu:  
   
-    - Microsoft.VisualStudio.TextManager.Interop  
+    - Microsoft. VisualStudio. Text Manager. Interop  
   
-    - Microsoft.VisualStudio.TextManager.Interop.8.0  
+    - Microsoft. VisualStudio. Text Manager. Interop. 8.0  
   
-    - microsoft.msxml  
+    - Microsoft. MSXML  
   
-3. Öffnen Sie im Projekt die Datei "Source.Extension.vsixmanifest" ein.  
+3. Öffnen Sie im Projekt die Datei "Source. Extension. vsixmanifest".  
   
-4. Stellen Sie sicher, dass die **Assets** Registerkarte enthält eine **VsPackage** content-Type und, **Projekt** auf den Namen des Projekts festgelegt ist.  
+4. Stellen Sie sicher, dass die Registerkarte **Assets** einen **VSPackage** -Inhaltstyp enthält und dass das **Projekt** auf den Namen des Projekts festgelegt ist.  
   
-5. Wählen Sie das CompletionTest-Projekt, und legen Sie im Eigenschaftenfenster **Pkgdef-Datei generieren** zu **"true"** . Speichern Sie das Projekt.  
+5. Wählen Sie das Projekt completiontest aus, und legen Sie im Eigenschaftenfenster die Option **pkgdef-Datei generieren** auf **true**fest. Speichern Sie das Projekt.  
   
-6. Fügen Sie einen statischen `SnippetUtilities` Klasse, um das Projekt.  
+6. Fügen Sie `SnippetUtilities` dem Projekt eine statische Klasse hinzu.  
   
      [!code-csharp[VSSDKCompletionTest#22](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#22)]
      [!code-vb[VSSDKCompletionTest#22](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#22)]  
   
-7. Klicken Sie in der Klasse SnippetUtilities definieren Sie eine GUID, und geben sie den Wert, den Sie in der Datei SnippetsIndex.xml verwendet.  
+7. Definieren Sie in der snipptilities-Klasse eine GUID, und versehen Sie Sie mit dem Wert, den Sie in der SnippetsIndex.xml-Datei verwendet haben.  
   
      [!code-csharp[VSSDKCompletionTest#23](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#23)]
      [!code-vb[VSSDKCompletionTest#23](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#23)]  
   
-8. Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> auf die `TestCompletionHandler` Klasse. Dieses Attribut kann einer beliebigen öffentlichen oder internen-Klasse im Projekt (nicht statisch) hinzugefügt werden. (Sie müssen möglicherweise Hinzufügen einer `using` -Anweisung für den Namespace Microsoft.VisualStudio.Shell.)  
+8. Fügen Sie der- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> `TestCompletionHandler` Klasse hinzu. Dieses Attribut kann jeder öffentlichen oder internen (nicht statischen) Klasse im Projekt hinzugefügt werden. (Möglicherweise müssen Sie eine- `using` Anweisung für den Microsoft. VisualStudio. Shell-Namespace hinzufügen.)  
   
      [!code-csharp[VSSDKCompletionTest#24](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#24)]
      [!code-vb[VSSDKCompletionTest#24](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#24)]  
   
-9. Erstellen Sie das Projekt, und führen Sie es aus. In der experimentellen Instanz von Visual Studio, die gestartet wird, wenn das Projekt ausgeführt wird, der Ausschnitt, die Sie gerade registriert angezeigt werden soll, der **Codeausschnitt-Manager** unter der **TestSnippets** Sprache.  
+9. Erstellen Sie das Projekt, und führen Sie es aus. In der experimentellen Instanz von Visual Studio, die gestartet wird, wenn das Projekt ausgeführt wird, sollte der soeben registrierte Ausschnitt im Code Ausschnitt- **Manager** unter der Sprache " **testsnippets** " angezeigt werden.  
   
-## <a name="adding-the-insert-snippet-command-to-the-shortcut-menu"></a>Das Kontextmenü hinzugefügt den Insert-Befehl Codeausschnitt  
- Die **Ausschnitt einfügen** Befehl befindet sich nicht auf das Kontextmenü für eine Textdatei. Aus diesem Grund müssen Sie den Befehl aktivieren.  
+## <a name="adding-the-insert-snippet-command-to-the-shortcut-menu"></a>Hinzufügen des Befehls "Ausschnitt einfügen" zum Kontextmenü  
+ Der Befehl **Ausschnitt einfügen** ist nicht im Kontextmenü für eine Textdatei enthalten. Daher müssen Sie den Befehl aktivieren.  
   
-#### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Um den Ausschnitt einfügen-Befehl im Kontextmenü den Befehl hinzufügen  
+#### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>So fügen Sie dem Kontextmenü den Befehl "Ausschnitt einfügen" hinzu  
   
-1. Öffnen der `TestCompletionCommandHandler` Klassendatei.  
+1. Öffnen Sie die `TestCompletionCommandHandler` Klassendatei.  
   
-     Da diese Klasse implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, können Sie aktivieren die **Ausschnitt einfügen** -Befehl in der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode. Überprüfen Sie, dass diese Methode nicht in eine Automatisierungsfunktion da aufgerufen wird, bevor Sie den Befehl aktivieren, wenn die **Ausschnitt einfügen** Befehl geklickt wird, wird der Ausschnitt Picker-Benutzeroberfläche (UI) angezeigt.  
+     Da diese Klasse implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> , können Sie den Befehl **Ausschnitt einfügen** in der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode aktivieren. Überprüfen Sie vor dem Aktivieren des Befehls, dass diese Methode nicht innerhalb einer Automatisierungsfunktion aufgerufen wird, da beim Klicken auf den Befehl **Ausschnitt einfügen** die Benutzeroberfläche für die Ausschnitt Auswahl angezeigt wird.  
   
      [!code-csharp[VSSDKCompletionTest#25](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#25)]
      [!code-vb[VSSDKCompletionTest#25](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#25)]  
   
-2. Erstellen Sie das Projekt, und führen Sie es aus. Öffnen Sie eine Datei mit der Erweiterung .zzz, und klicken Sie dann mit der rechten Maustaste an einer beliebigen Stelle in ihr, in der experimentellen Instanz. Die **Ausschnitt einfügen** Befehl sollte auf das Kontextmenü angezeigt werden.  
+2. Erstellen Sie das Projekt, und führen Sie es aus. Öffnen Sie in der experimentellen Instanz eine Datei mit der Dateinamenerweiterung. zzz, und klicken Sie dann mit der rechten Maustaste auf eine beliebige Stelle. Der Befehl **Ausschnitt einfügen** sollte im Kontextmenü angezeigt werden.  
   
-## <a name="implementing-snippet-expansion-in-the-snippet-picker-ui"></a>Implementieren in der Codeausschnittauswahl UI Ausschnitterweiterung  
- In diesem Abschnitt wird gezeigt, wie codeausschnitterweiterung implementieren, damit die Codeausschnittauswahl UI wird angezeigt, wenn **Ausschnitt einfügen** im Kontextmenü den Befehl geklickt wird. Ein Codeausschnitt ist ebenfalls erweitert, wenn ein Benutzer die Verknüpfung eines Codeausschnitts Typen und drückt dann die Registerkarte.  
+## <a name="implementing-snippet-expansion-in-the-snippet-picker-ui"></a>Implementieren von Ausschnitt Erweiterungen in der Benutzeroberfläche der Ausschnitt Auswahl  
+ In diesem Abschnitt wird gezeigt, wie Sie die Code Ausschnitt Erweiterung implementieren, damit die Benutzeroberfläche für die Ausschnitt Auswahl angezeigt wird, wenn Sie im Kontextmenü auf **Ausschnitt einfügen** klicken. Ein Code Ausschnitt wird auch erweitert, wenn ein Benutzer die Verknüpfung mit dem Code Ausschnitt eingibt, und dann die Tab-Taste drückt.  
   
- Verwenden Sie zum Anzeigen der Ausschnittauswahl Benutzeroberfläche und Navigation und nach der einfügungsausschnitt Akzeptanz zu ermöglichen, die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode. Das Einfügen an sich selbst erfolgt durch die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> Methode.  
+ Verwenden Sie die-Methode, um die Benutzeroberfläche für die Ausschnitt Auswahl anzuzeigen und die Code Ausschnitt Akzeptanz zu aktivieren <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> . Die Einfügung selbst wird von der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> Methode behandelt.  
   
- Die Implementierung der codeausschnitterweiterung verwendet Legacy <xref:Microsoft.VisualStudio.TextManager.Interop> Schnittstellen. Wenn Sie von den aktuellen Editor-Klassen für die legacy-Code übersetzen, denken Sie daran, dass die legacy-Schnittstellen eine Kombination von Zeilennummern und Spaltennummern zur Angabe der Speicherorte in einem Textpuffer verwenden, aber die aktuellen Klassen, einen Index verwenden. Aus diesem Grund hat ein Puffer, drei Zeilen, die jeweils 10 Zeichen umfasst (plus eine neue Zeile, die zählt als 1 Zeichen), das vierte Zeichen in der dritten Zeile wird an der Position 27, in der aktuellen Implementierung, aber es ist in Zeile 2, positionieren Sie 3 in der alten-Implementierung.  
+ Die Implementierung der Code Ausschnitt Erweiterung verwendet Legacy <xref:Microsoft.VisualStudio.TextManager.Interop> Schnittstellen. Beachten Sie beim Übersetzen der aktuellen Editor-Klassen in den Legacy Code, dass die Legacy Schnittstellen eine Kombination aus Zeilennummern und Spalten Nummern verwenden, um Orte in einem Text Puffer anzugeben, die aktuellen Klassen jedoch einen Index verwenden. Wenn ein Puffer aus drei Zeilen besteht, von denen jeder zehn Zeichen aufweist (plus ein Zeilen Vorstrich, der als 1 Zeichen zählt), befindet sich das vierte Zeichen in der dritten Zeile in der aktuellen Implementierung an der Position 27, aber es befindet sich in Zeile 2, Position 3 in der alten Implementierung.  
   
-#### <a name="to-implement-snippet-expansion"></a>Um ausschnitterweiterung zu implementieren.  
+#### <a name="to-implement-snippet-expansion"></a>So implementieren Sie die Ausschnitt Erweiterung  
   
-1. Um die Datei mit den `TestCompletionCommandHandler` Klasse, fügen Sie die folgenden `using` Anweisungen.  
+1. Fügen Sie die folgende-Anweisung in die Datei ein, die die- `TestCompletionCommandHandler` Klasse enthält `using` .  
   
      [!code-csharp[VSSDKCompletionTest#26](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#26)]
      [!code-vb[VSSDKCompletionTest#26](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#26)]  
   
-2. Stellen Sie die `TestCompletionCommandHandler` implementieren die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> Schnittstelle.  
+2. Legen Sie die- `TestCompletionCommandHandler` Klasse für die Implementierung der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> Schnittstelle  
   
      [!code-csharp[VSSDKCompletionTest#27](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#27)]
      [!code-vb[VSSDKCompletionTest#27](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#27)]  
   
-3. In der `TestCompletionCommandHandlerProvider` Klasse, importieren Sie die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.  
+3. Importieren Sie in der- `TestCompletionCommandHandlerProvider` Klasse <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> .  
   
      [!code-csharp[VSSDKCompletionTest#28](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#28)]
      [!code-vb[VSSDKCompletionTest#28](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#28)]  
   
-4. Fügen Sie private Felder für die Schnittstellen der Code-Erweiterung hinzu, und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.  
+4. Fügen Sie einige private Felder für die Code Erweiterungs Schnittstellen und hinzu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .  
   
      [!code-csharp[VSSDKCompletionTest#29](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#29)]
      [!code-vb[VSSDKCompletionTest#29](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#29)]  
   
-5. Im Konstruktor der `TestCompletionCommandHandler` Klasse, legen Sie die folgenden Felder.  
+5. Legen Sie im Konstruktor der- `TestCompletionCommandHandler` Klasse die folgenden Felder fest.  
   
      [!code-csharp[VSSDKCompletionTest#30](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#30)]
      [!code-vb[VSSDKCompletionTest#30](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#30)]  
   
-6. Die Codeausschnittauswahl angezeigt, wenn der Benutzer klickt der **Ausschnitt einfügen** Befehl, fügen Sie den folgenden Code der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode. (Um diese Erklärung besser lesbar zu machen, der der Exec()-Code, der verwendet wird, für die Anweisungsvervollständigung wird nicht angezeigt, stattdessen die vorhandene Methode Codeblöcke hinzugefügt werden.) Fügen Sie den folgenden Codeblock nach dem Code, der prüft, ob ein Zeichen ein.  
+6. Fügen Sie der-Methode den folgenden Code hinzu, um die Ausschnitt Auswahl anzuzeigen, wenn der Benutzer auf den Befehl **Ausschnitt einfügen** klickt <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> . (Um diese Erläuterung besser lesbar zu machen, wird der exec ()-Code, der für die Anweisungs Vervollständigung verwendet wird, nicht angezeigt. stattdessen werden Code Blöcke der vorhandenen Methode hinzugefügt.) Fügen Sie den folgenden Codeblock nach dem Code hinzu, der auf ein Zeichen prüft.  
   
      [!code-csharp[VSSDKCompletionTest#31](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#31)]
      [!code-vb[VSSDKCompletionTest#31](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#31)]  
   
-7. Wenn ein Codeausschnitt Felder, zu dem navigiert werden kann verfügt, wird die erweiterungssitzung öffnen beibehalten, bis explizit die Erweiterung zulässig ist; Wenn der Codeausschnitt keine Felder enthält, wird die Sitzung wird geschlossen, und wird zurückgegeben, als `null` durch die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> Methode. In der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> -Methode, nach der Ausschnittauswahl UI-Code, die Sie im vorherigen Schritt hinzugefügt haben fügen Sie folgenden Code Ausschnitt Navigation verarbeiten (wenn der Benutzer nach dem Einfügen von Codeausschnitten TAB oder UMSCHALT + TAB drückt).  
+7. Wenn ein Ausschnitt über Felder verfügt, die navigiert werden können, bleibt die Erweiterungs Sitzung geöffnet, bis die Erweiterung explizit akzeptiert wird. Wenn der Code Ausschnitt keine Felder enthält, wird die Sitzung geschlossen und `null` von der-Methode zurückgegeben <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> . Fügen Sie in der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode nach dem UI-Code der Ausschnitt Auswahl, den Sie im vorherigen Schritt hinzugefügt haben, den folgenden Code hinzu, um die Ausschnitt Navigation zu verarbeiten (wenn der Benutzer Tab oder UMSCHALT + TAB nach dem Einfügen des Code Ausschnitts drückt).  
   
      [!code-csharp[VSSDKCompletionTest#32](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#32)]
      [!code-vb[VSSDKCompletionTest#32](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#32)]  
   
-8. Fügen Sie Code zum Einfügen des Codeausschnitts, wenn der Benutzer die entsprechende Verknüpfung Typen und drückt dann die Registerkarte, die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode. Die private Methode, mit der den Codeausschnitt eingefügt werden in einem späteren Schritt angezeigt. Fügen Sie den folgenden Code nach der Navigationscode, den Sie im vorherigen Schritt hinzugefügt haben.  
+8. Fügen Sie der-Methode Code hinzu, um den Code Ausschnitt einzufügen, wenn der Benutzer die entsprechende Verknüpfung eingibt, und dann die Tab-Taste drückt <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> . Die private Methode, mit der der Ausschnitt eingefügt wird, wird in einem späteren Schritt angezeigt. Fügen Sie den folgenden Code nach dem Navigations Code hinzu, den Sie im vorherigen Schritt hinzugefügt haben.  
   
      [!code-csharp[VSSDKCompletionTest#33](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#33)]
      [!code-vb[VSSDKCompletionTest#33](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#33)]  
   
-9. Implementieren Sie die Methoden der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> Schnittstelle. In dieser Implementierung wird nur die Methoden von Interesse sind <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.EndExpansion%2A> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>. Die anderen Methoden sollten nur zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
+9. Implementieren Sie die Methoden der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> Schnittstelle. In dieser Implementierung sind nur die zu berücksichtigenden Methoden <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.EndExpansion%2A> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> . Die anderen Methoden sollten nur zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK> .  
   
      [!code-csharp[VSSDKCompletionTest#34](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#34)]
      [!code-vb[VSSDKCompletionTest#34](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#34)]  
   
-10. Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>-Methode. Die Hilfsmethode, die tatsächlich die Erweiterungen eingefügt wird in einem späteren Schritt erläutert. Die <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> enthält Zeilen- und Informationen, die Sie erhalten können die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.  
+10. Implementieren Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>-Methode. Die Hilfsmethode, die die Erweiterungen tatsächlich einfügt, wird in einem späteren Schritt behandelt. Der <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> enthält Zeilen-und Spalten Informationen, die Sie aus dem erhalten können <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .  
   
      [!code-csharp[VSSDKCompletionTest#35](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#35)]
      [!code-vb[VSSDKCompletionTest#35](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#35)]  
   
-11. Die folgende private Methode fügt einen Codeausschnitt, basierend entweder auf die Verknüpfung oder auf den Titel und den Pfad ein. Es ruft dann die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansion.InsertNamedExpansion%2A> Methode durch den Codeausschnitt.  
+11. Die folgende private Methode fügt einen Code Ausschnitt ein, der entweder auf der Verknüpfung oder dem Titel und Pfad basiert. Anschließend wird die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansion.InsertNamedExpansion%2A> Methode mit dem Code Ausschnitt aufgerufen.  
   
      [!code-csharp[VSSDKCompletionTest#36](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/snippetutilities.cs#36)]
      [!code-vb[VSSDKCompletionTest#36](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/snippetutilities.vb#36)]  
   
-## <a name="building-and-testing-code-snippet-expansion"></a>Erstellen und Testen von Codeausschnitterweiterung  
- Sie können testen, ob der Ausschnitt in Ihrem Projekt funktioniert.  
+## <a name="building-and-testing-code-snippet-expansion"></a>Entwickeln und Testen der Code Ausschnitt Erweiterung  
+ Sie können testen, ob die Ausschnitt Erweiterung in Ihrem Projekt funktioniert.  
   
 1. Erstellen Sie die Projektmappe. Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
   
-2. Öffnen Sie eine Textdatei, und geben Sie Text.  
+2. Öffnen Sie eine Textdatei, und geben Sie Text ein.  
   
-3. Mit der rechten Maustaste an einer beliebigen Stelle im Text, und klicken Sie dann auf **Ausschnitt einfügen**.  
+3. Klicken Sie mit der rechten Maustaste auf den Text, und klicken Sie dann auf **Ausschnitt einfügen**.  
   
-4. Die Benutzeroberfläche sollte angezeigt werden, mit einem Popup, die besagt, Codeausschnittauswahl **testen Ersetzungsfelder**. Doppelklicken Sie auf das Popup-Fenster.  
+4. Die Benutzeroberfläche der Ausschnitt Auswahl sollte mit einem Popup Fenster angezeigt werden, in dem die **Test Ersetzungs Felder**aufgeführt sind. Doppelklicken Sie auf das Popup.  
   
-     Der folgende Codeausschnitt eingefügt werden soll.  
+     Der folgende Code Ausschnitt sollte eingefügt werden.  
   
     ```  
     MessageBox.Show("first");  
     MessageBox.Show("second");  
     ```  
   
-     Drücken Sie nicht die EINGABETASTE oder ESC-Taste.  
+     Drücken Sie die EINGABETASTE oder ESC nicht.  
   
-5. Drücken Sie TAB und UMSCHALT + TAB zum Umschalten zwischen "first" und "Sekunde".  
+5. Drücken Sie Tab und UMSCHALT + TAB, um zwischen "First" und "Second" zu wechseln.  
   
-6. Akzeptieren Sie durch Drücken von EINGABETASTE oder ESC entweder das Einfügen.  
+6. Nehmen Sie die Einfügung durch Drücken der EINGABETASTE oder ESC an.  
   
-7. Klicken Sie in einem anderen Teil des Texts Geben Sie "test", und drücken Sie dann die Registerkarte. Da "Test" die Verknüpfung eines Codeausschnitts ist, sollte erneut der Ausschnitt eingefügt werden.  
+7. Geben Sie in einem anderen Textabschnitt "Test" ein, und drücken Sie dann die Tab-Taste. Da "Test" die Code Ausschnitt Verknüpfung ist, sollte der Ausschnitt erneut eingefügt werden.  
   
 ## <a name="next-steps"></a>Nächste Schritte

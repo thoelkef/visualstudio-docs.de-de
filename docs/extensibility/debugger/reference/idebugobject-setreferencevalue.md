@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Microsoft Docs
+title: 'Idebugobject:: "abtreferencevalue" | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726379"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
-Legt den Referenzwert dieses Objekts fest.
+Legt den Verweis Wert dieses-Objekts fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>Parameter
 `pObject`\
-[in] Ein [IDebugObject-Objekt,](../../../extensibility/debugger/reference/idebugobject.md) das den neuen Referenzwert darstellt.
+in Ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, das den neuen Verweis Wert darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode macht dieses [IDebugObject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) zu einem Verweis `pObject` auf den Wert des im Parameter angegebenen Objekts und wirft alle vorherigen Verweise weg. Beachten Sie, dass dieses `IDebugObject` Objekt bereits ein Verweistyp sein muss.
+ Diese Methode macht dieses [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zu einem Verweis auf den Wert des Objekts, das im- `pObject` Parameter angegeben ist, und gibt einen vorherigen Verweis zurück. Beachten Sie, dass dieses `IDebugObject` Objekt bereits ein Referenztyp sein muss.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

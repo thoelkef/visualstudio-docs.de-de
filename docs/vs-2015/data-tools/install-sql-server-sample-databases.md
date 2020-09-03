@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299635"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installieren von SQL Server-Beispieldatenbanken
@@ -27,7 +27,7 @@ Beispiel Datenbanken sind nützlich, um mit SQL-und LINQ-Abfragen, DataBinding, 
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>So stellen Sie eine Datenbank aus einer BAK-Datei in Visual Studio wieder her
 
-1. Wenn Sie eine Microsoft SQL Server Datenbank sichern, ist das Ergebnis eine BAK-Datei. Damit die BAK-Datei wieder als Datenbankdatei verwendbar ist, muss Sie wieder *hergestellt*werden. Wählen Sie im Hauptmenü > SQL Server-Objekt-Explorer **anzeigen** aus. Wenn Sie es nicht sehen, müssen Sie es möglicherweise installieren. Wechseln Sie zur **Systemsteuerung** > **Programme und Funktionen**, suchen Sie Microsoft Visual Studio 2015, und klicken Sie auf die Schaltfläche **ändern** . Wenn die Liste der installierten Komponenten im Installationsfenster angezeigt wird, aktivieren Sie das Kontrollkästchen **SQL Server-Objekt-Explorer** , und fahren Sie dann mit der Installation fort.
+1. Wenn Sie eine Microsoft SQL Server Datenbank sichern, ist das Ergebnis eine BAK-Datei. Damit die BAK-Datei wieder als Datenbankdatei verwendbar ist, muss Sie wieder *hergestellt*werden. Wählen Sie im Hauptmenü **View**  >  **SQL Server-Objekt-Explorer**anzeigen aus. Wenn Sie es nicht sehen, müssen Sie es möglicherweise installieren. Wechseln Sie zu **Systemsteuerung**  >  **Programme und Funktionen**, suchen Sie nach Microsoft Visual Studio 2015, und klicken Sie dann auf die Schaltfläche **ändern** . Wenn die Liste der installierten Komponenten im Installationsfenster angezeigt wird, aktivieren Sie das Kontrollkästchen **SQL Server-Objekt-Explorer** , und fahren Sie dann mit der Installation fort.
 
 2. Klicken Sie in SQL Server-Objekt-Explorer mit der rechten Maustaste auf eine beliebige SQL Server Datenbank-Engine (z. b. localdb), und wählen Sie**neue Abfrage**aus.
 

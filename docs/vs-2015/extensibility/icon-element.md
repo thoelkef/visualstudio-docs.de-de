@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203993"
 ---
 # <a name="icon-element"></a>Icon-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Guid-Attribut des Tags das Symbol ist die Guid einer definierten Bitmap.  Das Id-Attribut markiert den Slot im bitmapstrip. Dieses Element ist optional.  Wenn dieses Element nicht angegeben, wird der Wert des **GuidOfficeIcon:msotcidNoIcon** wird abgeleitet werden.  
+Das GUID-Attribut des Symbols-Tags ist die GUID einer definierten Bitmap.  Das Attribut ID wählt den Slot im bitmapstrip aus. Dieses Element ist optional.  Wenn dieses Element weggelassen wird, wird der Wert von " **guidofficeicon: msotcidnoicon** " impliziert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,22 +34,22 @@ Das Guid-Attribut des Tags das Symbol ist die Guid einer definierten Bitmap.  Da
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
-|guid|Erforderlich. Die Guid einer definierten Bitmap.|  
-|id|Erforderlich. Wählt den Slot im bitmapstrip.|  
+|guid|Erforderlich. Die GUID einer definierten Bitmap.|  
+|id|Erforderlich. Wählt den Slot im bitmapstrip aus.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |Keine|Keine|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |[Buttons-Element](../extensibility/buttons-element.md)||  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

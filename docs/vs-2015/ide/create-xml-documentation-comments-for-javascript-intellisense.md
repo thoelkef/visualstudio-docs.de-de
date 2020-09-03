@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21fdc15b161b7d1cef30effe82e518a174bc9666
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619546"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Erstellen von XML-Dokumentationskommentaren für JavaScript IntelliSense
@@ -26,14 +26,14 @@ ms.locfileid: "72619546"
 
 *XML-Dokumentations Kommentare* sind JavaScript-Kommentare, die Sie einem Skript hinzufügen, um Informationen zu Code Elementen, wie z. b. Funktionen, Feldern und Variablen, bereitzustellen. In Visual Studio werden diese Textbeschreibungen mit IntelliSense angezeigt, wenn Sie auf die Skriptfunktion verweisen.
 
- Dieses Thema enthält ein einfaches Tutorial zur Verwendung von XML-Dokumentations Kommentaren. Weitere Informationen zur Verwendung anderer Elemente, z. b. [\<var >](../ide/var-javascript.md) und [\<value >](../ide/value-javascript.md), sowie weitere Codebeispiele finden Sie unter [XML-Dokumentations Kommentare](../ide/xml-documentation-comments-javascript.md). Informationen zum Bereitstellen von IntelliSense-Informationen für einen asynchronen Rückruf, wie z. b. eine `Promise`, finden Sie unter [\<returns >](../ide/returns-javascript.md).
+ Dieses Thema enthält ein einfaches Tutorial zur Verwendung von XML-Dokumentations Kommentaren. Weitere Informationen zur Verwendung anderer Elemente, wie z. b. [\<var>](../ide/var-javascript.md) und [\<value>](../ide/value-javascript.md) , sowie weitere Codebeispiele finden Sie unter [XML-Dokumentations Kommentare](../ide/xml-documentation-comments-javascript.md). Informationen zum Bereitstellen von IntelliSense-Informationen für einen asynchronen Rückruf, wie z `Promise` . b., finden Sie unter [\<returns>](../ide/returns-javascript.md) .
 
 > [!NOTE]
 > XML-Dokumentationskommentare sind nur in den Dateien, Assemblys und Diensten verfügbar, auf die verwiesen wurde.
 
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>So erstellen Sie XML-Dokumentations Kommentare für eine JavaScript-Funktion
 
-- Fügen Sie in der-Funktion [\<summary >](../ide/summary-javascript.md)-, [\<param >](../ide/param-javascript.md)-und [\<returns >](../ide/returns-javascript.md) -Elementen hinzu, und stellen Sie jedem Element mit drei Schrägstrichen (///) vorangestellt.
+- Fügen Sie in der-Funktion die [\<summary>](../ide/summary-javascript.md) [\<param>](../ide/param-javascript.md) Elemente, und vor [\<returns>](../ide/returns-javascript.md) jedem Element mit drei Schrägstrichen (///) hinzu.
 
     > [!NOTE]
     > Jedes Element muss sich in einer einzelnen Zeile befinden.
@@ -62,9 +62,9 @@ ms.locfileid: "72619546"
 
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>So erstellen Sie XML-Dokumentations Kommentare für ein JavaScript-Feld
 
-- Fügen Sie in einer Konstruktorfunktion oder Objektdefinition ein [\<field >](../ide/field-javascript.md) Element hinzu, dem drei Schrägstriche (///) vorangestellt sind.
+- Fügen Sie in einer Konstruktorfunktion oder Objektdefinition ein [\<field>](../ide/field-javascript.md) -Element mit vorangestelltem drei Schrägstrich (///) hinzu.
 
-     Das folgende Beispiel zeigt die Verwendung des `<field>`-Elements in einer Konstruktorfunktion. Weitere Beispiele finden Sie unter [\<field >](../ide/field-javascript.md).
+     Das folgende Beispiel zeigt die Verwendung des- `<field>` Elements in einer Konstruktorfunktion. Weitere Beispiele finden Sie unter [\<field>](../ide/field-javascript.md) .
 
     ```javascript
     function Engine() {
@@ -87,7 +87,7 @@ ms.locfileid: "72619546"
 
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>So erstellen Sie XML-Dokumentations Kommentare für eine überladene Funktion
 
-1. Fügen Sie in der-Funktion ein [\<signature >](../ide/signature-javascript.md) -Element für jede Überladung hinzu. Fügen Sie in diesen Elementen weitere Elemente hinzu, z. b. `<summary>`, `<param>` und `<returns>`, die jedem Element mit drei Schrägstrichen (///) vorangestellt sind.
+1. Fügen Sie in der-Funktion ein- [\<signature>](../ide/signature-javascript.md) Element für jede Überladung hinzu. Fügen Sie in diesen Elementen weitere Elemente (z. b. `<summary>` , `<param>` und `<returns>` ) vor jedem Element mit drei Schrägstrichen (///) hinzu.
 
      Das folgende Beispiel zeigt eine überladene JavaScript-Funktion. In diesem Beispiel unterscheiden sich die über Ladungen je nach Parametertyp.
 
@@ -118,9 +118,9 @@ ms.locfileid: "72619546"
 1. Erstellen Sie eine XML-Datei mit Dokumentations Kommentaren im OpenAjax messagebundle-Format.
 
     > [!IMPORTANT]
-    > Messagebundle ist das empfohlene Format. Dieses Format wird in Microsoft AJAX oder in winmd-Dateien nicht unterstützt. Weitere Informationen zur Verwendung des alternativen `VSDoc` Formats finden Sie unter [\<loc >](../ide/loc-javascript.md).
+    > Messagebundle ist das empfohlene Format. Dieses Format wird in Microsoft AJAX oder in winmd-Dateien nicht unterstützt. Weitere Informationen zur Verwendung des alternativen `VSDoc` Formats finden Sie unter [\<loc>](../ide/loc-javascript.md) .
 
-     Im folgenden Beispiel wird der Inhalt einer Sidecar-Datei gezeigt, die die lokalisierten IntelliSense-Informationen enthält. Dies ist eine XML-Datei, die sich in einem Kultur abhängigen Ordner befindet, z. b. "Ja". Der Ordner muss sich am selben Speicherort befinden wie die JS-Datei, die das `<loc>`-Element enthält. Der Dateiname der XML-Datei muss mit dem im `<loc>`-Element angegebenen `filename` Parameter identisch sein.
+     Im folgenden Beispiel wird der Inhalt einer Sidecar-Datei gezeigt, die die lokalisierten IntelliSense-Informationen enthält. Dies ist eine XML-Datei, die sich in einem Kultur abhängigen Ordner befindet, z. b. "Ja". Der Ordner muss sich am selben Speicherort befinden wie die JS-Datei, die das- `<loc>` Element enthält. Der Dateiname der XML-Datei muss mit dem `filename` im-Element angegebenen Parameter identisch sein `<loc>` .
 
     ```
     <messagebundle>
@@ -131,14 +131,14 @@ ms.locfileid: "72619546"
 
     ```
 
-2. Fügen Sie in ihrer JS-Datei den folgenden Code hinzu. Das `<loc>`-Element muss vor jedem Skript deklariert werden, und befolgt die gleichen Verwendungs Regeln wie das `<reference>`-Element. Weitere Informationen finden Sie unter [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [\<loc >](../ide/loc-javascript.md).
+2. Fügen Sie in ihrer JS-Datei den folgenden Code hinzu. Das `<loc>` -Element muss vor jedem Skript deklariert werden, und befolgt die gleichen Verwendungs Regeln wie das- `<reference>` Element. Weitere Informationen finden Sie unter [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [\<loc>](../ide/loc-javascript.md) .
 
     ```javascript
     /// <loc filename="messageFilename.xml" format="messagebundle"/>
 
     ```
 
-3. Fügen Sie in ihrer JS-Datei die XML-Dokumentations Elemente und die Standard Beschreibungen hinzu. Legen Sie die `locid` Attributwerte so fest, dass Sie den entsprechenden `name`-Attributwerten aus der Sidecar-Datei entsprechen. Die Standard Beschreibungen werden durch lokalisierte IntelliSense-Informationen ersetzt, sofern diese verfügbar sind.
+3. Fügen Sie in ihrer JS-Datei die XML-Dokumentations Elemente und die Standard Beschreibungen hinzu. Legen `locid` Sie die Attributwerte so fest, dass Sie den entsprechenden `name` Attributwerten aus der Sidecar-Datei entsprechen. Die Standard Beschreibungen werden durch lokalisierte IntelliSense-Informationen ersetzt, sofern diese verfügbar sind.
 
     ```javascript
     function add(a,b)
@@ -156,5 +156,5 @@ ms.locfileid: "72619546"
     add(
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [JavaScript IntelliSense](../ide/javascript-intellisense.md) [XML-Dokumentations Kommentare](../ide/xml-documentation-comments-javascript.md) [NIB: Exemplarische Vorgehensweise: JavaScript IntelliSense in ASP.net](https://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

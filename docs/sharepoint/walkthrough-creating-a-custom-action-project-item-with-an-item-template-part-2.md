@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016102"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 2
@@ -65,7 +66,7 @@ ms.locfileid: "86016102"
 
 5. Wählen Sie die Projektvorlage **WPF-Benutzer Steuerelement Bibliothek** aus, benennen Sie das Projekt **itemtemplatewizard**, und wählen Sie dann die Schaltfläche **OK** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt **Mappe das itemtemplatewizard** -Projekt hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt **Mappe das itemtemplatewizard** -Projekt hinzu.
 
 6. Löschen Sie das UserControl1-Element aus dem Projekt.
 
@@ -300,7 +301,7 @@ ms.locfileid: "86016102"
 
 12. Geben Sie im Feld **Titel** den Namen **SharePoint Developer Center**ein.
 
-13. Geben Sie im Feld **Beschreibung** **die SharePoint Developer Center-Website**ein.
+13. Geben Sie im Feld  **Beschreibung** **die SharePoint Developer Center-Website**ein.
 
 14. Geben Sie im Feld **URL** ein **https://docs.microsoft.com/sharepoint/dev/** , und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
 

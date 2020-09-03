@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543519"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern
@@ -38,7 +38,7 @@ ms.locfileid: "85543519"
 
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelementen finden Sie [unter Name Drange Control](../vsto/namedrange-control.md).
 
-## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a>Hinzufügen von Name Drange-Steuerelementen zur Entwurfszeit
+## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a> Hinzufügen von Name Drange-Steuerelementen zur Entwurfszeit
  Es gibt verschiedene Möglichkeiten zum Hinzufügen von <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelementen zur Entwurfszeit zu Arbeitsblättern in einem Projekt auf Dokumentebene: in Excel, über die **Toolbox**von Visual Studio oder im Fenster **Datenquellen** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "85543519"
 
      Ein datengebundenes <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement wird dem Arbeitsblatt hinzugefügt. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="add-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Hinzufügen von Name Drange-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
+## <a name="add-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Hinzufügen von Name Drange-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
  Sie können ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement programmgesteuert zur Laufzeit zum Arbeitsblatt hinzufügen. So können Sie Hoststeuerelemente als Antwort auf Ereignisse erstellen. Dynamisch erstellte benannte Bereiche werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein NamedRange-Steuerelement programmgesteuert hinzu
@@ -83,7 +83,7 @@ ms.locfileid: "85543519"
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
 
-## <a name="add-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Hinzufügen von Name Drange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="add-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Hinzufügen von Name Drange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Dynamisch erstellte benannte Bereiche werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein NamedRange-Steuerelement programmgesteuert hinzu

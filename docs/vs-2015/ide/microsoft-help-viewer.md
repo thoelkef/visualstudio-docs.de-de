@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544975"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
@@ -50,7 +50,7 @@ Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Mic
 ## <a name="navigating-the-help-viewer"></a>Navigieren in Help Viewer
  Informationen finden Sie unter installierte Inhalte mithilfe der Navigations Registerkarten, Anzeigen installierter Inhalte auf der Registerkarte "Thema" oder Registerkarten und Verwalten von Inhalt mithilfe der Registerkarte " **Inhalt verwalten** ". Sie können auch zusätzliche Aufgaben ausführen, indem Sie die Schaltflächen auf der Symbolleiste verwenden und zusätzliche Informationen in der unteren rechten Ecke des Fensters Suchen.
 
-|Szenario|BESCHREIBUNG|
+|Szenario|Beschreibung|
 |-|-|
 |Navigation|Über die Registerkarte **Inhalt** können Sie installierten Inhalt als Hierarchie anzeigen und Kriterien angeben, über die Sie die angezeigten Titel filtern können.<br /><br /> Über die Registerkarte **Suchen** können Sie überall im Inhalt, einschließlich im Code und in den Themenüberschriften, nach Begriffen suchen.<br /><br /> Über die Registerkarte **Index** können Sie den Index durchsuchen, Kriterien zum Filtern der Einträge angeben und festlegen, dass Indexeinträge entweder eine bestimmte Textzeichenfolge enthalten oder mit dieser beginnen.<br /><br /> Über die Registerkarte **Favoriten** können Sie Links zu Themen speichern, die Sie häufig verwenden. Außerdem können Sie eine Liste von Themen anzeigen, die Sie zuletzt angesehen haben.|
 |Anzeige nach Thema|Jedes Thema wird auf einer Registerkarte angezeigt, und Sie können mehrere Themen gleichzeitig öffnen.|

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543116"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster "Klassendetails" (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer und im **Klassendetailsfenster** Navigationsvorgänge auszuführen.
+Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer und im Fenster **Klassendetails** Navigationsvorgänge auszuführen.
 
  **Inhalt**
 
@@ -36,10 +36,10 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
 
 - [Verwenden der Tastatur im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Verwenden der Maus in Klassen-Designer
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a> Verwenden der Maus in Klassen-Designer
  Die folgenden Mausaktionen werden in Klassendiagrammen unterstützt:
 
-|Mauskombination|Kontext|BESCHREIBUNG|
+|Mauskombination|Kontext|Beschreibung|
 |-----------------------|-------------|-----------------|
 |Doppelklicken|Shape-Elemente|Öffnet den Code-Editor.|
 ||Lollipop-Connector|Lollipop erweitern/reduzieren.|
@@ -62,10 +62,10 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
 
 - Das Klassendetailsfenster enthält mehrere Schaltflächen zum Erstellen neuer Member in der aktuellen Klasse sowie zum Navigieren zwischen den Depots der Member im Raster des Klassendetailsfensters. Weitere Informationen finden Sie in den Beschreibungen der Schaltflächen des Klassendetailsfensters.
 
-## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Verwenden der Tastatur in Klassen-Designer
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a> Verwenden der Tastatur in Klassen-Designer
  Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 
-|Schlüssel|Kontext|BESCHREIBUNG|
+|Key|Kontext|Beschreibung|
 |---------|-------------|-----------------|
 |Pfeiltasten|In Typformen|Navigation im Strukturstil in Forminhalten (Umschließen einer Form wird unterstützt). Nach-links- und Nach-rechts-Taste erweitern/reduzieren das aktuelle Element, sofern es erweiterbar ist, und navigieren andernfalls zum übergeordneten Element (ausführliches Verhalten entsprechend Navigation in Strukturansicht).|
 ||Formen der obersten Ebene|Verschieben von Formen im Diagramm.|
@@ -96,12 +96,12 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
 
  Verwenden Sie die folgenden Tasten, um im Klassendetailsfenster zu navigieren:
 
-|Schlüssel|Ergebnis|
+|Key|Ergebnis|
 |-|-|
-|, (Komma)|Wenn sich der Cursor in einer Parameterzeile befindet, wird der Cursor nach Eingabe eines Kommas in das "Name"-Feld des nächsten Parameters verschoben. Wenn sich der Cursor in der letzten Parameter Zeile einer Methode befindet, wird der Cursor in das \<add parameter> Feld verschoben, das Sie verwenden können, um einen neuen Parameter zu erstellen.<br /><br /> Befindet sich der Cursor an einer anderen Stelle im Klassendetailsfenster, wird durch ein Eingeben eines Kommas ein tatsächliches Komma im aktuellen Feld hinzugefügt.|
+|, (Komma)|Wenn sich der Cursor in einer Parameterzeile befindet, wird der Cursor nach Eingabe eines Kommas in das "Name"-Feld des nächsten Parameters verschoben. Wenn der Cursor sich in der letzten Parameterzeile einer Methode befindet, wird er in das Feld \<add parameter> verschoben, das Sie verwenden können, um einen neuen Parameter zu erstellen.<br /><br /> Befindet sich der Cursor an einer anderen Stelle im Klassendetailsfenster, wird durch ein Eingeben eines Kommas ein tatsächliches Komma im aktuellen Feld hinzugefügt.|
 |; Semikolon<br /><br /> oder<br /><br /> ) (schließende Klammer)|Verschiebt den Cursor in das "Name"-Feld der nächsten Memberzeile im Raster des Klassendetailsfensters.|
-|Registerkarte|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Wird der Cursor aus einem Feld verschoben, in das Text eingegeben wurde, wird dieser Text vom Klassendetailsfenster verarbeitet und gespeichert, sofern er keine Fehler erzeugt.<br /><br /> Wenn sich der Cursor in einem leeren Feld wie befindet \<add parameter> , verschiebt die Tab-Taste ihn in das erste Feld der nächsten Zeile.|
-|\<space>|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Wenn sich der Cursor in einem leeren Feld wie befindet \<add parameter> , wechselt er in das erste Feld der nächsten Zeile. Beachten Sie, dass das \<space> typisierte direkt nach einem Komma ignoriert wird.<br /><br /> Befindet sich der Cursor im Feld "Zusammenfassung", wird durch Eingeben eines Leerzeichens ein Leerzeichen hinzugefügt.<br /><br /> Befindet sich der Cursor in der "Ausblenden"-Spalte einer Zeile, bewirkt ein Eingeben eines Leerzeichens, dass der Wert des Kontrollkästchen "Ausblenden" umgeschaltet wird.|
+|Registerkarte|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Wird der Cursor aus einem Feld verschoben, in das Text eingegeben wurde, wird dieser Text vom Klassendetailsfenster verarbeitet und gespeichert, sofern er keine Fehler erzeugt.<br /><br /> Befindet sich der Cursor in einem leeren Feld wie \<add parameter>, bewirkt TAB, dass der Cursor in das erste Feld der nächsten Zeile verschoben wird.|
+|\<space>|Verschiebt den Cursor in das nächste Feld, wobei zunächst ein Verschieben von links nach rechts und dann von oben nach unten erfolgt. Befindet sich der Cursor in einem leeren Feld wie \<add parameter>, wird er in das erste Feld der nächsten Zeile verschoben. Beachten Sie, dass \<space> unmittelbar nach einem Komma ignoriert wird.<br /><br /> Befindet sich der Cursor im Feld "Zusammenfassung", wird durch Eingeben eines Leerzeichens ein Leerzeichen hinzugefügt.<br /><br /> Befindet sich der Cursor in der "Ausblenden"-Spalte einer Zeile, bewirkt ein Eingeben eines Leerzeichens, dass der Wert des Kontrollkästchen "Ausblenden" umgeschaltet wird.|
 |STRG + TAB|Wechselt zu einem anderen Dokumentfenster. Beispielsweise können Sie aus dem Klassendetailsfenster in eine geöffnete Codedatei wechseln.|
 |ESC (Escape)|Wenn Sie begonnen haben, Text in ein Feld einzugeben, fungiert Drücken von ESC wie eine Rückgängig-Taste, sodass der Inhalt des Feldes auf seinen vorherigen Wert zurückgesetzt wird. Hat das Klassendetailsfensters den allgemeinen Fokus, hat aber keine bestimmte Zelle den Fokus, bewirkt ein Drücken von ESC, dass der Fokus aus dem Klassendetailsfenster verschoben wird.|
 |NACH-OBEN- und NACH-UNTEN-TASTE|Mit diesen Tasten wird der Cursor vertikal von Zeile zu Zeile im Raster des Klassendetailsfenster verschoben.|

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284957"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Suchen Sie Themen mithilfe des Help Viewer-Indexes
@@ -77,7 +77,7 @@ Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, ver
 
     Wenn Sie beispielsweise den Begriff „erstellen“ eingegeben haben, versuchen Sie es stattdessen mit „anlegen“.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis](../help-viewer/find-topics-toc.md)
 - [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)

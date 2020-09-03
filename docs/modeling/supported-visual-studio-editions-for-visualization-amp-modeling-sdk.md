@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3be233ce8730879c2f0406ec9cc180685992c6bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544936"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Unterstützte Visual Studio-Versionen für das Visualisierungs- und Modellierungs-SDK
@@ -35,7 +35,7 @@ Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 ## <a name="deployment-editions"></a>Bereitstellungseditionen
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]von werden die folgenden Konfigurationen für die Bereitstellung der domänenspezifischen Sprachen unterstützt, die Sie erstellen:
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] von werden die folgenden Konfigurationen für die Bereitstellung der domänenspezifischen Sprachen unterstützt, die Sie erstellen:
 
 - Visual Studio Enterprise
 

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c84105387c708fa16e0b1d5c3294ef909466524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72631203"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
@@ -76,7 +76,7 @@ Ein *DataSet* ist ein Satz von Objekten, die Daten aus einer Datenbank im Arbeit
 
 1. Klicken Sie in **Projektmappen-Explorer** auf den Datasetknoten, um den DataSet-Designer in den Fokus zu bringen.
 
-2. Klicken Sie im linken Bereich von Visual Studio auf die Registerkarte **Datenquellen** , oder geben Sie in **Schnellstart**`Data Sources` ein.
+2. Klicken Sie im linken Rand von Visual Studio auf die Registerkarte **Datenquellen** , oder geben Sie `Data Sources` in **Quick Launch**ein.
 
 3. Klicken Sie mit der rechten Maustaste auf den Knoten DataSet, und wählen Sie **Datenquelle mit Assistent konfigurieren** aus.
 
@@ -88,7 +88,7 @@ Ein *DataSet* ist ein Satz von Objekten, die Daten aus einer Datenbank im Arbeit
 
 1. Öffnen Sie das Dataset im **DataSet-Designer**.
 
-2. Ziehen Sie eine <xref:System.Data.DataTable> Klasse von der Registerkarte **DataSet** der **Toolbox** auf die **DataSet-Designer**.
+2. Ziehen Sie eine <xref:System.Data.DataTable> Klasse von der Registerkarte **DataSet** der **Toolbox** auf den **DataSet-Designer**.
 
 3. Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Spalten zu einer Daten](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)Tabelle.
 

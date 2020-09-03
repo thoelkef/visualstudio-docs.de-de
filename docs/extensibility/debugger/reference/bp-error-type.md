@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Microsoft Docs
+title: BP_ERROR_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738081"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
-Gibt den Fehlertyp eines Haltepunkts an.
+Gibt den Fehlertyp eines Breakpoints an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,51 +62,51 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Felder
 `BPET_NONE`\
-Gibt keinen Haltepunktfehler an.
+Gibt keinen Breakpoint-Fehler an.
 
 `BPET_TYPE_WARNING`\
-Gibt einen Breakpoint-Fehler im Warnstil an.
+Gibt einen Haltepunkt Fehler im Warnungs Stil an.
 
 `BPET_TYPE_ERROR`\
-Gibt einen Fehler-Breakpoint-Fehler an.
+Gibt einen Haltepunkt Fehler im Fehler Stil an.
 
 `BPET_SEV_HIGH`\
 Gibt einen Breakpoint-Fehler mit hohem Schweregrad an.
 
 `BPET_SEV_GENERAL`\
-Gibt einen Breakpoint-Fehler mit mittlerem Schweregrad an.
+Gibt einen Breakpoint-Fehler mit mittlerer Schweregrad an.
 
 `BPET_SEV_LOW`\
-Gibt einen Breakpoint-Fehler mit niedrigem Schweregrad an.
+Gibt einen Haltepunkt Fehler mit niedrigem Schweregrad an.
 
 `BPET_TYPE_MASK`\
-Gibt einen Breakpoint-Fehler im Maskenstil an.
+Gibt einen Haltepunkt Fehler im Masken Stil an.
 
 `BPET_SEV_MASK`\
-Gibt einen Haltepunktfehler im Stil eines Schweregrads an.
+Gibt einen Haltepunkt Fehler mit Schweregrad Maske an.
 
 `BPET_GENERAL_WARNING`\
-Gibt einen Breakpoint-Fehler im allgemeinen Warnhinweis an.
+Gibt einen Haltepunkt Fehler im allgemeinen Warn Stil an.
 
 `BPET_GENERAL_ERROR`\
-Gibt einen Breakpoint-Fehler im allgemeinen Fehlerstil an.
+Gibt einen Haltepunkt Fehler im allgemeinen Fehler Stil an.
 
 `BPET_ALL`\
 Gibt alle Breakpoint-Fehlertypen an.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Werte können mit einem `OR` Bitwise `dwType` kombiniert und für das Element der [BP_ERROR_RESOLUTION_INFO-Struktur](../../../extensibility/debugger/reference/bp-error-resolution-info.md) verwendet werden. Wird als Parameter an die [EnumErrorBreakpoints-Methode](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) übergeben.
+Diese Werte können mit einem bitweisen kombiniert `OR` und für den `dwType` Member der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur verwendet werden. Wird als Parameter an die [enumerrorbreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) -Methode übergeben.
 
-Ein Breakpoint-Fehlertyp besteht aus einem Typ und einem Schweregrad. Dies bedeutet, dass ein Breakpoint-Fehlertyp nie `BPET_TYPE_ERROR`nur ein Typ (z. `BPET_SEV_GENERAL`B. ,) oder ein Schweregrad (z. B. ) für sich selbst ist. `BPET_GENERAL_WARNING`und `BPET_GENERAL_ERROR` stellen vordefinierte Werte für allgemeine Warn- und Fehlerhaltepunkte bereit.
+Ein breakpointfehlertyp besteht aus einem Typ und einem Schweregrad. Dies bedeutet, dass ein breakpointfehlertyp nie nur ein Typ (z `BPET_TYPE_ERROR` . b.,) oder ein Schweregrad (z `BPET_SEV_GENERAL` . b.) allein ist. `BPET_GENERAL_WARNING` und `BPET_GENERAL_ERROR` stellen vordefinierte Werte für Allgemeine Warn-und Fehler Breakpoints bereit.
 
 ## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

@@ -600,10 +600,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445050"
 ---
 # <a name="additional-msbuild-resources"></a>Zusätzliche MSBuild-Ressourcen
@@ -612,7 +612,7 @@ ms.locfileid: "81445050"
 Wenn Sie versuchen, ein Problem zu lösen und die benötigten Informationen in der Dokumentation nicht finden können, können Sie andere Ressourcen wie Knowledge Base-Artikel, die Entwicklercommunity oder den Produktsupport konsultieren.  
   
 ## <a name="knowledge-base-articles"></a>Knowledge Base-Artikel  
- Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Sie können auf KB-Artikel auf der [Knowledge Base-Website](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) zugreifen.  
+ Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Sie können auf der [Knowledge Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) -Website auf KB-Artikel zugreifen.  
   
 ## <a name="community-forums"></a>Communityforen  
  In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Newsgroups nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden. Sie können über die [MSDN-Foren](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/) auf das Forum zu Visual Studio und MSBuild zugreifen.  

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566984"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokument Ebene für Excel
@@ -41,9 +41,9 @@ ms.locfileid: "74566984"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -84,13 +84,13 @@ ms.locfileid: "74566984"
 
    - *Firstworkbookcustomi.* xlsx: stellt die Excel-Arbeitsmappe im Projekt dar. Enthält alle Arbeitsblätter und Diagramme.
 
-   - Sheet1 (*VB* -Datei für Visual Basic-oder *CS* -Datei für C#Visual): ein Arbeitsblatt, das die Entwurfs Oberfläche und den Code für das erste Arbeitsblatt in der Arbeitsmappe bereitstellt. Weitere Informationen finden Sie unter [Arbeitsblatt-Host Element](../vsto/worksheet-host-item.md).
+   - Sheet1 (*VB* -Datei für Visual Basic-oder *CS* -Datei für Visual c#): ein Arbeitsblatt, das die Entwurfs Oberfläche und den Code für das erste Arbeitsblatt in der Arbeitsmappe bereitstellt. Weitere Informationen finden Sie unter [Arbeitsblatt-Host Element](../vsto/worksheet-host-item.md).
 
-   - Tabelle2 (*VB* -Datei für Visual Basic-oder *CS* -Datei für C#Visual): ein Arbeitsblatt, das die Entwurfs Oberfläche und den Code für das zweite Arbeitsblatt in der Arbeitsmappe bereitstellt.
+   - Tabelle2 (*VB* -Datei für Visual Basic-oder *CS* -Datei für Visual c#): ein Arbeitsblatt, das die Entwurfs Oberfläche und den Code für das zweite Arbeitsblatt in der Arbeitsmappe bereitstellt.
 
-   - Tabelle3 (*VB* -Datei für Visual Basic-oder *CS* -Datei für C#Visual): ein Arbeitsblatt, das die Entwurfs Oberfläche und den Code für das dritte Arbeitsblatt in der Arbeitsmappe bereitstellt.
+   - Tabelle3 (*VB* -Datei für Visual Basic-oder *CS* -Datei für Visual c#): ein Arbeitsblatt, das die Entwurfs Oberfläche und den Code für das dritte Arbeitsblatt in der Arbeitsmappe bereitstellt.
 
-   - ThisWorkbook (*VB* -Datei für Visual Basic-oder *CS* -Datei für C#Visual): enthält die Entwurfs Oberfläche und den Code für Anpassungen auf Arbeitsmappenebene. Weitere Informationen finden Sie unter [Arbeitsmappenhostelement](../vsto/workbook-host-item.md).
+   - ThisWorkbook (*VB* -Datei für Visual Basic-oder *CS* -Datei für Visual c#): enthält die Entwurfs Oberfläche und den Code für Anpassungen auf Arbeitsmappenebene. Weitere Informationen finden Sie unter [Arbeitsmappenhostelement](../vsto/workbook-host-item.md).
 
      Die Codedatei "Sheet1" wird automatisch im Designer geöffnet.
 
@@ -182,9 +182,9 @@ ms.locfileid: "74566984"
 
 - Bereitstellen von Anpassungen auf Dokument Ebene für Excel: bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Übersicht über &#40;die Entwicklung von Office-Lösungen VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel-Lösungen](../vsto/excel-solutions.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 - [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md)

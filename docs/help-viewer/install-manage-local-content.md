@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284905"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
@@ -129,6 +129,6 @@ Sie können Speicherplatz sparen, indem Sie installierten Inhalt vom lokalen Com
 
 3. Klicken Sie auf die Schaltfläche **Schließen**, wenn die Inhalte verschoben wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

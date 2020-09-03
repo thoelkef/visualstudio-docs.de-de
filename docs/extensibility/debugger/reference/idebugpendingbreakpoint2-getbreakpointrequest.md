@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointRequest | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: getbreakpointrequest | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725818"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
-Ruft die Haltepunktanforderung ab, die zum Erstellen dieses ausstehenden Haltepunkts verwendet wurde.
+Ruft die Haltepunkt Anforderung ab, die zum Erstellen dieses ausstehenden Breakpoints verwendet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,10 +42,10 @@ int GetBreakpointRequest( 
 
 ## <a name="parameters"></a>Parameter
 `ppBPRequest`\
-[out] Gibt ein [IDebugBreakpointRequest2-Objekt](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) zurück, das die Haltepunktanforderung darstellt, die zum Erstellen dieses ausstehenden Haltepunkts verwendet wurde.
+vorgenommen Gibt ein [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) -Objekt zurück, das die Haltepunkt Anforderung darstellt, die zum Erstellen dieses ausstehenden Breakpoints verwendet wurde.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, `E_BP_DELETED` Wenn der Breakpoint gelöscht wurde.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

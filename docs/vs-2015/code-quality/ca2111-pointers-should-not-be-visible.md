@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544364"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Zeiger sollten nicht sichtbar sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
@@ -36,7 +36,7 @@ ms.locfileid: "85544364"
  Ein öffentliches oder geschütztes <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName> Feld oder ist nicht schreibgeschützt.
 
 ## <a name="rule-description"></a>Beschreibung der Regel
- <xref:System.IntPtr>und <xref:System.UIntPtr> sind Zeiger Typen, die für den Zugriff auf nicht verwalteten Speicher verwendet werden. Wenn ein Zeiger nicht privat, intern oder schreibgeschützt ist, kann bösartiger Code den Wert des Zeigers ändern und möglicherweise den Zugriff auf beliebige Speicherorte im Arbeitsspeicher erlauben oder Anwendungs-oder Systemfehler verursachen.
+ <xref:System.IntPtr> und <xref:System.UIntPtr> sind Zeiger Typen, die für den Zugriff auf nicht verwalteten Speicher verwendet werden. Wenn ein Zeiger nicht privat, intern oder schreibgeschützt ist, kann bösartiger Code den Wert des Zeigers ändern und möglicherweise den Zugriff auf beliebige Speicherorte im Arbeitsspeicher erlauben oder Anwendungs-oder Systemfehler verursachen.
 
  Wenn Sie den Zugriff auf den Typ, der das Zeiger Feld enthält, sichern möchten, finden Sie unter [CA2112: gesicherte Typen sollten keine Felder](../code-quality/ca2112-secured-types-should-not-expose-fields.md)verfügbar machen.
 

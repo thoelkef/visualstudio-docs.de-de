@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905738"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Vorgehensweise: Bereitstellen eines asynchronen Visual Studio-Dienstanbieter
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    Um diesen Dienst außerhalb dieses Pakets sichtbar zu machen, legen Sie den Wert für das Promote-Flag als letzten Parameter auf " *true* " fest:`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    Um diesen Dienst außerhalb dieses Pakets sichtbar zu machen, legen Sie den Wert für das Promote-Flag als letzten Parameter auf " *true* " fest:  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Fügen Sie einen Verweis auf *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*hinzu.
 
@@ -173,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 1. Fügen Sie dem Projekt einen Menübefehl hinzu. (Wählen Sie im **Projektmappen-Explorer**den Projekt Knoten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Hinzufügen**  >  aus. **Neues Element**  >  **Erweiterbarkeit**  >  **Benutzerdefinierter Befehl**.) Benennen Sie die Befehlsdatei *TestAsyncCommand.cs*.
 
-2. Die benutzerdefinierte Befehls Vorlage fügt die- `Initialize()` Methode der *TestAsyncPackage.cs* -Datei erneut hinzu, um den Befehl zu initialisieren. Kopieren Sie in der- `Initialize()` Methode die Zeile, in der der Befehl initialisiert wird. Es sollte wie folgt aussehen:
+2. Die benutzerdefinierte Befehls Vorlage fügt die- `Initialize()` Methode der *TestAsyncPackage.cs* -Datei erneut hinzu, um den Befehl zu initialisieren. Kopieren Sie in der- `Initialize()` Methode die Zeile, in der der Befehl initialisiert wird. Diese sollte wie folgt aussehen:
 
     ```csharp
     TestAsyncCommand.Initialize(this);
@@ -238,5 +238,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Wenn die experimentelle Instanz von Visual Studio angezeigt wird, navigieren Sie zum Menü "Extras", und suchen Sie nach **dem Menü Element** " **testasynccommand aufrufen** ". Wenn Sie darauf klicken, schreibt der textschreibdienst in die angegebene Datei. (Sie müssen keine Projekt Mappe öffnen, da das Aufrufen des Befehls auch bewirkt, dass das Paket geladen wird.)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)

@@ -1,5 +1,5 @@
 ---
-title: Threads | Microsoft Docs
+title: Threads | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712478"
 ---
 # <a name="threads"></a>Threads
-In der Debuggerarchitektur wird ein *Thread*:
+In der Debugger-Architektur ein *Thread*:
 
-- Ist die grundlegende Recheneinheit. Ein Thread führt seine Anweisungen sequenziell im Kontext einer einzelnen Aufrufliste aus und wechselt von einem Codekontext zum nächsten.
+- Ist die grundlegende Einheit der Berechnung. Ein Thread führt seine Anweisungen sequenziell innerhalb des Kontexts einer einzelnen Rückruf Stapel aus und wechselt von einem Code Kontext zum nächsten.
 
-- Kann sich selbst und das Programm identifizieren, in dem es ausgeführt wird. Threads können benannt, angehalten und fortgesetzt werden. Ein Thread kann auch die zugehörigen Stapelrahmen auflisten und unter bestimmten Bedingungen in einen anderen Stapelrahmen verschoben werden. Angesichts des Kontexts eines Stapelrahmens kann ein Thread den zugeordneten logischen Thread zurückgeben, falls vorhanden. Ein Thread verfügt über Eigenschaften, z. B. eine Suspend-Anzahl, die im **Threads-Fenster** der IDE angezeigt werden können.
+- Kann sich selbst und das Programm identifizieren, in dem es ausgeführt wird. Threads können benannt, angehalten und fortgesetzt werden. Ein Thread kann auch seine zugeordneten Stapel Rahmen auflisten und unter bestimmten Bedingungen in einen anderen Stapel Rahmen verschieben. Bei einem Kontext eines Stapel Rahmens kann ein Thread ggf. den zugeordneten logischen Thread zurückgeben. Ein Thread verfügt über Eigenschaften, z. b. eine Unterbrechungs Anzahl **, die im Thread Fenster der** IDE angezeigt werden kann.
 
-- Wird durch eine [IDebugThread2-Schnittstelle](../../extensibility/debugger/reference/idebugthread2.md) dargestellt, die in der Regel von einem Debugmodul (DE) oder einer virtuellen Maschine als Folge der Ausführung eines Programms erstellt wird.
+- Wird durch eine [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) -Schnittstelle dargestellt, die in der Regel durch eine Debug-Engine (de) oder eine virtuelle Maschine erstellt wird, wenn ein Programm ausgeführt wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Programs](../../extensibility/debugger/programs.md)
-- [Stapelrahmen](../../extensibility/debugger/stack-frames.md)
+- [Stapel Rahmen](../../extensibility/debugger/stack-frames.md)
 - [Debug-Engine](../../extensibility/debugger/debug-engine.md)
-- [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)
-- [Sitzungsdebug-Manager](../../extensibility/debugger/session-debug-manager.md)
+- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)
+- [Sitzungs-Debug-Manager](../../extensibility/debugger/session-debug-manager.md)

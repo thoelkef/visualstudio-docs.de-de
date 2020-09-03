@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Microsoft-Dokumentation
+title: 'Idebugprocessqueryproperties:: queryproperties | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ccbeddeb02044898fbfe1426a187e386ad31a058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202799"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methodenabfragen für eine angegebene Eigenschaftenwerte des des Debugvorgangs zur Verfügung.  
+Diese Methode fragt einen angegebenen Eigenschafts Wert des Debugprozesses ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int QueryProperties(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Größe der Arrays, die die Definitionen von Eigenschaften und Eigenschaftswerte enthält.  
+ in Größe der Arrays, die die Eigenschafts Definitionen und Eigenschaftswerte enthalten.  
   
  `dwPropType`  
- [in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte sind:  
+ in Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte sind:  
   
 - PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -52,13 +52,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
   `pvarPropValue`  
-  [out] Ein Array mit den Eigenschaftswerten.  
+  vorgenommen Ein Array, das die Eigenschaftswerte enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Diese Methode wird nur selten verwendet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

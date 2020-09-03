@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Elementen zu den Dialogfeldern "Neue Elemente hinzufügen" | Microsoft Docs
+title: Hinzufügen von Elementen zu den Dialog Feldern "Neues Element hinzufügen" | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,76 +11,76 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710219"
 ---
-# <a name="add-items-to-the-add-new-item-dialog-box"></a>Hinzufügen von Elementen zum Dialogfeld Neues Element hinzufügen
-Der Vorgang zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzufügen** beginnt mit den Registrierungsschlüsseln. Wie in den folgenden Registrierungseinträgen gezeigt, enthält der Abschnitt **AddItemTemplates** den Pfad und den Namen des Verzeichnisses, in dem Elemente, die im Dialogfeld Neues **Element** hinzufügen zur Verfügung gestellt werden, abgelegt werden.
+# <a name="add-items-to-the-add-new-item-dialog-box"></a>Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzufügen"
+Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzufügen** wird mit den Registrierungs Schlüsseln gestartet. Wie in den folgenden Registrierungs Einträgen gezeigt, enthält der Abschnitt **additemtemplates** den Pfad und den Namen des Verzeichnisses, in dem die im Dialogfeld **Neues Element hinzufügen** verfügbaren Elemente abgelegt werden.
 
 > [!NOTE]
-> Die Unmittelbar nach dem Codesegment folgende Tabelle enthält zusätzliche Informationen zum Registrierungseintrag.
+> Die Tabelle, die direkt auf das Codesegment folgt, enthält weitere Informationen zum Registrierungs Eintrag.
 
- Dieser Abschnitt befindet sich unter **HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-14.0Exp-Projekte**.
+ Dieser Abschnitt befindet sich unter **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**.
 
- Die erste GUID ist die CLSID für Projekte dieses Typs; Die zweite GUID gibt den registrierten Projekttyp für die Vorlagen "Elemente hinzufügen" an:
+ Die erste GUID ist die CLSID für Projekte dieses Typs. die zweite GUID gibt den registrierten Projekttyp für die Vorlagen zum Hinzufügen von Elementen an:
 
- **\\C061DB26-5833-11D2-96F5-000000000000 \\AddItemTemplates\\TemplatesDir\\-ACEF4EB2-57CF-11D2-96F4-000000000000\\**
+ **\\{C061DB26-5833-11d2-96F5-000000000000} \\ Additemtemplates \\ templatesdir \\ {ACEF4EB2-57CF-11d2-96F4-000000000000} \\ 1**
 
- **@**= #6
+ **@** = #6
 
- **VorlagenDir** = \\&gt;\\&lt;&gt;\\&lt;&gt;\\&lt;\\&lt;&gt;\\Visual Studio SDK Installationspfad VSIntegration SomeFolder SomePackage SomeProject SomeProjectItems&lt;&gt;
+ **Templatesdir**  =  \\ &lt; Visual Studio SDK-Installationspfad &gt; \\ vsintegration \\ &lt; somefolder &gt; \\ &lt; somepackage &gt; \\ &lt; SomeProject &gt; \\ &lt; someprojectitems&gt;
 
- **SortPriority** = dword:00000064
+ **SortPriority** = DWORD: 00000064
 
-| Name | type | Daten (aus *.rgs-Datei)* | BESCHREIBUNG |
+| Name | type | Daten (aus *RGS* -Datei) | Beschreibung |
 |------------------|-----------| - | - |
-| (Standard) | REG_SZ | %IDS_ADDITEM_TEMPLATES_ENTRY% | Ressourcen-ID für **Elementvorlagen hinzufügen.** |
-| Val TemplatesDir | REG_SZ | %TEMPLATE_PATH%\\&lt;EinigeProjectItems&gt; | Pfad der Projektelemente, die im Dialogfeld für den Assistenten zum **Hinzufügen neuer Elemente** angezeigt werden. |
-| Val SortPriority | REG_DWORD | 100[!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]( ) | Bestimmt die Sortierreihenfolge im Strukturknoten von Dateien, die im Dialogfeld **Neues Element** hinzufügen angezeigt werden. |
+| @ (Standard) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | Ressourcen-ID für **Element Vorlagen hinzufügen** . |
+| Val templatesdir | REG_SZ | % TEMPLATE_PATH% \\ &lt; someprojectitems&gt; | Der Pfad der Projekt Elemente, die im Dialogfeld für den Assistenten zum **Hinzufügen eines neuen Elements** angezeigt werden. |
+| Val SortPriority | REG_DWORD | 100 ( [!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)] ) | Bestimmt die Sortierreihenfolge im Struktur Knoten von Dateien, die im Dialogfeld **Neues Element hinzufügen** angezeigt werden. |
 
 > [!NOTE]
-> Die GUIDS für die Projekttypen Visual C- und Visual Basic lauten wie folgt:
-> - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: FAE04EC0-301F-11D3-BF4B-00C04F79EFBC
-> - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: F184B08F-C81C-45F6-A57F-5ABD9991F28F
+> Die GUIDs für die Visual c#-und Visual Basic-Projekttypen lauten wie folgt:
+> - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
+> - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Das für **TemplatesDir**aufgelistete Verzeichnis , *das %TEMPLATE_PATH%\\&lt;SomeProjectItems&gt;* ist, ist der Knoten auf der linken Seite der Dialogfeldstruktur **"Neues Element hinzufügen".** Zusätzliche Elemente in der Struktur basieren auf dem Unterverzeichnis in diesem Stammverzeichnis. Die Dateien, die dem Projekt hinzugefügt werden können, sind die Elemente im rechten Bereich des Dialogfelds **Neues Element hinzufügen.**
+ Das für **templatesdir**, das *% TEMPLATE_PATH% \\ &lt; &gt; someprojectitems*ist, aufgeführte Verzeichnis ist der Knoten auf der linken Seite der Struktur des Dialog Felds **Neues Element hinzufügen** . Zusätzliche Elemente in der Struktur basieren auf dem Unterverzeichnis innerhalb dieses Stamm Verzeichnisses. Die Dateien, die dem Projekt hinzugefügt werden können, sind die Elemente im rechten Bereich des Dialog Felds **Neues Element hinzufügen** .
 
- In der Regel enthält dieser Ordner die Vorlagendateien für *.cpp* Ihr Projekt, z. B. eine HTML- oder CPP-Vorlagendatei, sowie alle *.vsz-Dateien* zum Starten von Assistenten. Um zu steuern, wie die Elemente angezeigt werden, können Sie auch *.vsdir-Dateien* zum Lokalisieren von Verzeichnisnamen und -symbolelementen einschließen. Die lokalisierte Zeichenfolge ist die Beschriftung, die im Dialogfeld angezeigt wird, das diesen Knoten im Dialogfeld-Fenster **"Neues Element hinzufügen"** darstellt.
+ In der Regel enthält dieser Ordner die Vorlagen Dateien für das Projekt, z. b. eine Vorlagen-HTML oder eine *cpp* -Datei und alle *VSZ* -Dateien zum Starten von Assistenten. Um zu steuern, wie die Elemente angezeigt werden, können Sie auch *VSDIR* -Dateien zum Lokalisieren von Verzeichnisnamen und Symbolen einschließen. Die lokalisierte Zeichenfolge ist die Beschriftung, die im Dialogfeld angezeigt wird, das diesen Knoten in der Struktur des Dialog Felds **Neues Element hinzufügen** darstellt.
 
- Sie müssen jedoch nicht alles in einer *.vsdir-Datei* haben. Sie können eine *.vsdir-Datei* für jedes Element im Verzeichnis haben. Weitere Informationen finden Sie unter [Wizard (.vsz)-Datei-](../../extensibility/internals/wizard-dot-vsz-file.md) und [Vorlagenverzeichnisbeschreibung (.vsdir)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
+ Allerdings müssen Sie nicht alles in einer *VSDIR* -Datei haben. Eine *VSDIR* -Datei kann für jedes Element im Verzeichnis vorhanden sein. Weitere Informationen finden Sie unter [Assistenten Dateien (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md) und [Vorlagen Verzeichnis Beschreibungsdateien (VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
-> Die *.vsdir-Dateien* in den Vorlagenverzeichnissen sind optional. Wenn Sie nur ein Projektelement in das Verzeichnis einfügen und im Dialogfeld **Neues Element hinzufügen** anzeigen möchten, können Sie diese Datei in das Vorlagenverzeichnis einfügen, das in der **TemplatesDir-Anweisung** angegeben ist. Die Datei wird dann im rechten Bereich des Dialogfelds **Neues Element hinzufügen** für dieses Projekt angezeigt. Wenn Sie jedoch eine lokalisierte Beschriftung für die Datei oder ein Symbol anzeigen möchten, müssen Sie mindestens eine *.vsdir-Datei* in das Vorlagenverzeichnis aufnehmen.
+> Die *VSDIR* -Dateien in den Vorlagen Verzeichnissen sind optional. Wenn Sie nur ein Projekt Element in das Verzeichnis einfügen und im Dialogfeld **Neues Element hinzufügen** anzeigen möchten, können Sie diese Datei in das Vorlagen Verzeichnis einfügen, das in der **templatesdir** -Anweisung angegeben ist. Die Datei wird dann im rechten Bereich des Dialog Felds **Neues Element hinzufügen** für das Projekt angezeigt. Wenn Sie jedoch eine lokalisierte Beschriftung für die Datei oder ein Symbol anzeigen möchten, müssen Sie mindestens eine *VSDIR* -Datei in das Verzeichnis "Templates" einschließen.
 
-## <a name="group-project-items"></a>Gruppieren von Projektelementen
- Wenn Sie Vorlagengruppen in Ordnern im Dialogfeld **"Neues Element hinzufügen"** enthalten möchten, müssen Sie Unterverzeichnisse unter dem Stammvorlagenverzeichnis mit den darin enthaltenen Elementen haben. Wenn den Benutzern das Dialogfeld **Neues Element hinzufügen** angezeigt wird, werden auch die Unterordner angezeigt und können daraus Projektelemente auswählen.
+## <a name="group-project-items"></a>Gruppieren von Projekt Elementen
+ Wenn Sie Vorlagen Gruppen in Ordnern in der Struktur des Dialog Felds **Neues Element hinzufügen** möchten, müssen Sie Unterverzeichnisse unter dem Stamm Vorlagen Verzeichnis mit den darin enthaltenen Elementen enthalten. Wenn Benutzern das Dialogfeld **Neues Element hinzufügen** angezeigt wird, sehen Sie auch die Unterordner und können Projekt Elemente aus ihnen auswählen.
 
- Die Sortierpriorität im Codesegment bestimmt, wo dieses Vorlagenverzeichnis in der Struktur relativ zu anderen Elementen des Strukturknotens erstellt wird. Für das Dialogfeld **Neues Element hinzufügen** ist die Sortierpriorität alles, was Sie einschließen müssen, damit Ihre Elemente an der richtigen Position im Dialogfeld angezeigt werden.
+ Die Sortier Priorität im Codesegment bestimmt, wo das Vorlagen Verzeichnis in der Struktur relativ zu anderen Elementen des Struktur Knotens erstellt wird. Im Dialogfeld **Neues Element hinzufügen** müssen Sie nur die Sortier Priorität einschließen, damit die Elemente an der richtigen Position im Dialogfeld angezeigt werden.
 
- Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Schnittstelle auch implementieren, um zu filtern, was im Dialogfeld **Neues Element hinzufügen** angezeigt wird. Durch Implementieren dieser Schnittstelle können Sie ein Vorlagenverzeichnis auf dem Datenträger einrichten, das z. B. 50 Vorlagen- und Assistentendateien enthält. Auf diese Weise können Sie verschiedene Projekttypen mit 20 Dateien haben, die zu einem Projekttyp gehören, die anderen 30 Dateien, die zu einem anderen Projekttyp gehören, und alle Dateien, die in einem allgemeinen Projekttyp verfügbar sind. Auf diese Weise können Sie je nach erstellter Projektvorlage einen anderen Satz von Vorlagendateien anzeigen.
+ Sie können auch die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Schnittstelle implementieren, um zu filtern, was im Dialogfeld **Neues Element hinzufügen** angezeigt wird. Durch Implementieren dieser Schnittstelle können Sie ein Vorlagen Verzeichnis auf dem Datenträger einrichten, das z. b. 50-Vorlagen-und Assistenten Dateien enthält. Auf diese Weise können Sie unterschiedliche Projekttypen mit 20 Dateien haben, die zu einem Projekttyp gehören, die anderen 30 Dateien, die zu einem anderen Projekttyp gehören, sowie alle Dateien, die in einem allgemeinen Projekttyp verfügbar sind. Auf diese Weise können Sie, je nachdem, welche Projektvorlage erstellt wird, einen anderen Satz von Vorlagen Dateien anzeigen.
 
- In einem Visual Basic-Projekt können Sie beispielsweise Webprojekte und Clientprojekte haben. Webformulare sind keine nützlichen Elemente, die einem Clientprojekt hinzugefügt werden können, und Windows-Formulare sind keine nützlichen Elemente, die einem Webserverprojekt hinzugefügt werden können. Daher können Sie ein Vorlagenverzeichnis erstellen, das alle Dateien für beide Projekttypen enthält. Durch Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>können Sie dann Elemente ausblenden, die nicht basierend auf dem Projekttyp oder den Projekteinstellungen im Projekt angezeigt werden sollen.
+ Beispielsweise können Sie in einem Visual Basic Projekt über Webprojekte und Client Projekte verfügen. Webformulare sind keine nützlichen Elemente, die einem Client Projekt hinzugefügt werden können, und Windows Forms sind keine nützlichen Elemente, die einem Webserver Projekt hinzugefügt werden können. Daher können Sie ein Vorlagen Verzeichnis erstellen, in dem alle Dateien für beide Projekttypen enthalten sind. Anschließend können Sie durch Implementieren von <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Elemente ausblenden, die nicht basierend auf dem Typ der Projekt-oder Projekteinstellungen im Projekt angezeigt werden sollen.
 
-## <a name="filter-project-items"></a>Filtern von Projektelementen
- `IVsFilterAddProjectItemDlg2`sieht das Filtern von Elementen in der Struktur (linker Bereich) und Projektdateien (rechter Bereich) auf folgende Weise vor:
+## <a name="filter-project-items"></a>Projekt Elemente filtern
+ `IVsFilterAddProjectItemDlg2` ermöglicht das Filtern von Elementen in der Struktur (linker Bereich) und den Projektdateien (rechter Bereich) auf folgende Weise:
 
-- Durch die lokalisierten Namen (Beschriftungen, die im Dialogfeld angezeigt werden, `IVsFilterAddProjectItemDlg`das in der *.vsdir-Datei* enthalten ist) von bereitgestellt.
+- Nach den lokalisierten Namen (Beschriftungen, die im Dialogfeld angezeigt werden, das in der *VSDIR* -Datei enthalten ist), das von bereitgestellt wird `IVsFilterAddProjectItemDlg` .
 
-- Durch die tatsächlichen Namen der Dateien und Ordner auf dem Datenträger (nicht `IVsFilterAddProjectItemDlg`lokalisiert — keine *.vsdir-Datei)* von zur Verfügung gestellt .
+- Durch die tatsächlichen Namen der Dateien und Ordner auf dem Datenträger (nicht lokalisierte – No *. vsdir* -Datei), die von bereitgestellt werden `IVsFilterAddProjectItemDlg` .
 
-- Nach Kategorie, `IVsFilterAddProjectItemDlg2`bereitgestellt von .
+- Nach Kategorie, bereitgestellt von `IVsFilterAddProjectItemDlg2` .
 
-  Um nach Kategorie zu filtern, geben Sie eine Kategoriezeichenfolge für ein Element in der *.vsdir-Datei* an, z. B. *Webformular* oder *Clientelement* in Visual Basic. Der Dialogfeldcode ruft dann die Kategorieklassifizierung aus der *.vsdir-Datei* ab und übergibt sie an Sie. Sie können diese Informationen dann `IVsFilterAddProjectItemDlg2` an Ihre Implementierung übergeben, um das Dialogfeld **Neues Element hinzufügen** nach Kategorien zu filtern. Sie können Elemente auch nach Webseiten oder als Win32-Anwendungsfälle des Clients filtern. Darüber hinaus können [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Sie markierte Elemente als Microsoft Foundation Classes (MFC) oder Active Template Library (ATL)-Elemente identifizieren. Wenn Sie diese Elemente identifizieren, kann das Projektsystem eigene Klassifizierungen definieren, sodass das System basierend auf Kategorien und Klassifizierungen gefiltert werden kann.
+  Um nach Kategorie zu filtern, geben Sie eine Kategoriezeichenfolge für ein Element in der *VSDIR* -Datei an, z. b. *Webformular* oder *Client Element* in Visual Basic. Der Dialogfeld Code ruft dann die Kategorieinformationen aus der *VSDIR* -Datei ab und übergibt sie an Sie. Sie können diese Informationen dann an die Implementierung von übergeben `IVsFilterAddProjectItemDlg2` , um das Dialogfeld **Neues Element hinzufügen** nach Kategorien zu filtern. Sie können auch Elemente für Webseiten oder Win32-Client Anwendungsfälle filtern. Außerdem können Sie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] markierte Elemente als Microsoft Foundation Classes (MFC) oder als ATL-Elemente (Active Template Library) identifizieren. Wenn Sie diese Elemente identifizieren, kann das Projekt systemeigene Klassifizierungen definieren, damit das System anhand von Kategorien und Klassifizierungen gefiltert werden kann.
 
-  Wenn Sie diese Filterfunktionalität implementieren, müssen Sie nicht jedes Element zuordnen, das ausgeblendet werden soll. Sie können Elemente einfach in Typen klassifizieren und die Klassifizierungen in die *.vsdir-Datei* oder Dateien setzen. Anschließend können Sie alle Elemente mit einer bestimmten Klassifizierung ausblenden, indem Sie die Schnittstelle implementieren. Auf diese Weise können Sie die Elemente im Dialogfeld **Neues Element hinzufügen** basierend auf dem Status innerhalb des Projekts dynamisch gestalten.
+  Wenn Sie diese Filter Funktionalität implementieren, müssen Sie nicht jedes Element, das ausgeblendet werden soll, eine Tabelle zuordnen. Sie können Elemente einfach in Typen klassifizieren und die Klassifizierungen in der *VSDIR* -Datei oder in Dateien platzieren. Anschließend können Sie alle Elemente mit einer bestimmten Klassifizierung ausblenden, indem Sie die-Schnittstelle implementieren. Auf diese Weise können Sie die Elemente im Dialogfeld **Neues Element hinzufügen** dynamisch festlegen, basierend auf dem Status innerhalb des Projekts.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
 - [CATIDs für Objekte, die in der Regel zum Erweitern von Projekten verwendet werden](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-- [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md)
-- [Vorlagenverzeichnisbeschreibung (.vsdir)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-- [Wizarddatei (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Projekt-und Projekt Element Vorlagen hinzufügen](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [Vorlagen Verzeichnis Beschreibungsdateien (VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+- [Assistenten Datei (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

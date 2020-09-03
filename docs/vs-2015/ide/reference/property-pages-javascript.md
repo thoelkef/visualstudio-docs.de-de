@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851815"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
@@ -38,11 +38,11 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
 ## <a name="configuration-and-platform-page"></a>Konfiguration und Plattformseite
  Verwenden Sie die folgenden Optionen zum Auswählen der anzuzeigenden bzw. zu ändernden Konfiguration und Plattform.
 
- **Konfiguration** Gibt die Konfigurationseinstellungen an, die angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen (Standard)** , **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+ **Konfiguration** Gibt die Konfigurationseinstellungen an, die angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen (Standard)**, **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
  **Plattform** Gibt die Platt Form Einstellungen an, die angezeigt oder geändert werden sollen. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
-## <a name="general-page"></a>Die Seite „Allgemein“
+## <a name="general-page"></a>Seite Allgemein
  Verwenden Sie die folgenden Optionen, um die allgemeinen Eigenschaften des Projekts festzulegen.
 
 > [!NOTE]

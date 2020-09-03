@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb22471cea7cd717b8969682a0e1f643f912150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202385"
 ---
 # <a name="udtkind"></a>UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Beschreibt die verschiedenen benutzerdefinierten Typ (UDT) an.  
+Beschreibt die Vielzahl von benutzerdefinierten Typen (User-Defined Type, UDT).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,12 +36,12 @@ enum UdtKind { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>Elemente  
  UdtStruct  
  UDT ist eine Struktur.  
   
- UdtClass  
- UDT ist eine Klasse.  
+ Udtclass  
+ UDT ist eine-Klasse.  
   
  UdtUnion  
  UDT ist eine Union.  
@@ -49,12 +49,12 @@ enum UdtKind { 
  UdtInterface  
  UDT ist eine Schnittstelle.  
   
-## <a name="remarks"></a>Hinweise  
- Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Werte in dieser Enumeration werden von der [idiasymmetribol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) -Methode zurückgegeben.  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

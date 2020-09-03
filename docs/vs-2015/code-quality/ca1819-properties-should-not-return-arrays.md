@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a96d2164cbd6c03cb0d191b2d0c3c4607468209c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545326"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
-|Kategorie|Microsoft. Performance|
+|Category|Microsoft. Performance|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -46,7 +46,7 @@ ms.locfileid: "85545326"
 
 ## <a name="example-violation"></a>Beispiel Verstoß
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel zeigt eine Eigenschaft, die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -58,7 +58,7 @@ ms.locfileid: "85545326"
 
 ## <a name="change-the-property-to-a-method-example"></a>Ändern der-Eigenschaft in ein Methoden Beispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird die Verletzung behoben, indem die-Eigenschaft in eine-Methode geändert wird.
 
 ### <a name="code"></a>Code
@@ -67,7 +67,7 @@ ms.locfileid: "85545326"
 
 ## <a name="return-a-collection-example"></a>Beispiel für eine Auflistung zurückgeben
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird die Verletzung behoben, indem die-Eigenschaft geändert wird, um eine
 
  <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.
@@ -78,7 +78,7 @@ ms.locfileid: "85545326"
 
 ## <a name="allowing-users-to-modify-a-property"></a>Benutzern das Ändern einer Eigenschaft gestatten
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Möglicherweise möchten Sie dem Consumer der-Klasse gestatten, eine Eigenschaft zu ändern. Das folgende Beispiel zeigt eine Lese-/Schreibeigenschaft, die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302833"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-Anwendungsfalldiagramme: Richtlinien
@@ -47,7 +47,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
   Die in diesem Thema verwendeten Beispiele beziehen sich auf eine Website, auf der Kunden Gerichte bei den örtlichen Restaurants bestellen können.
 
-  ![Elemente in einem Anwendungsfall Diagramm](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
+  ![Elemente in einem Anwendungsfalldiagramm](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
 
 - Ein *Akteur* (1) ist eine Klasse von Person, Organisation, Gerät oder externer Softwarekomponente, die mit Ihrem System interagiert. Beispiel Akteure sind **Customer**, **Restaurant**, **Temperatur Sensor**, **Kreditkarten Autorisierung.**
 
@@ -59,7 +59,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
    Ein Anwendungsfalldiagramm kann anzeigen, welche Anwendungsfälle vom System oder seinen Subsystemen unterstützt werden.
 
-## <a name="BasicSteps"></a>Grundlegende Schritte zum Zeichnen von Anwendungsfall Diagrammen
+## <a name="basic-steps-for-drawing-use-case-diagrams"></a><a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Anwendungsfall Diagrammen
 
 > [!NOTE]
 > Ausführliche Schritte zum Erstellen von Modellierungs Diagrammen werden unter [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)beschrieben.
@@ -110,7 +110,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 7. Zeichnen Sie separate Diagramme für verschiedene Subsysteme oder andere Gruppen verwandter Anwendungsfälle. Alle Diagramme in einem Modellierungsprojekt sind Ansichten des gleichen Modells.
 
-## <a name="Actors"></a>Zeichnen von Akteuren und Anwendungsfällen
+## <a name="drawing-actors-and-use-cases"></a><a name="Actors"></a> Zeichnen von Akteuren und Anwendungsfällen
  Der Hauptzweck eines Anwendungsfalldiagramms besteht darin anzuzeigen, wer mit dem System interagiert und welche Hauptziele erreicht werden sollen.
 
 - Erstellen Sie **Akteure** , die Personen, Organisationen, andere Systeme, Software oder Geräte darstellen, die mit Ihrem System oder Subsystem interagieren.
@@ -126,7 +126,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 - Verwenden Sie **Zuordnungen** , um Actors mit Anwendungsfällen zu verknüpfen.
 
 ### <a name="inheritance-between-actors"></a>Vererbung zwischen Akteuren
- ![Anwendungsfall Diagramm mit Vererbung](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
+ ![Anwendungsfalldiagramm mit Vererbung](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
 
  Sie können einen **Generalisierungs** Link zwischen Akteuren zeichnen. Der spezialisierte Akteur wie Clubkunde im Beispiel, erbt die Anwendungsfälle des generalisierten Akteurs, z. B. Kunde. Die Pfeilspitze sollte auf den allgemeineren Akteur zeigen, z. B. Kunde. Zeigen Sie beim Erstellen des Links zuerst auf den spezialisierteren Akteur.
 
@@ -157,7 +157,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 ### <a name="multiplicities-between-actors-and-use-cases"></a>Multiplizitäten zwischen Akteuren und Anwendungsfällen
  Die Zuordnung zwischen einem Akteur und einem Anwendungsfall kann an jedem *Ende eine* Multiplizität anzeigen.
 
- ![Verwenden Sie den Fall eins mit dem Actor.](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
+ ![Anwendungsfall 1:1 mit Akteur](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
 
 > [!NOTE]
 > Die Multiplizitäten einer Zuordnung in einem Anwendungsfall Diagramm werden ausgeblendet, wenn beide **1**sind.
@@ -166,15 +166,15 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
  Sie können diese Multiplizitäten ändern.
 
- Beispiel:
+ Zum Beispiel:
 
- ![Anwendungsfall, der viele bis viele Multiplizität anzeigt](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
+ ![Anwendungsfall mit m:n-Multiplizität](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Wenn Sie angeben möchten, dass mehrere Akteure derselben Klasse an einem einzelnen Vorkommen eines Anwendungsfalls beteiligt sein können, legen Sie die Multiplizität am Actor-Ende der Zuordnung auf **1..\*** fest.
+- Wenn Sie angeben möchten, dass mehrere Akteure derselben Klasse an einem einzelnen Vorkommen eines Anwendungsfalls beteiligt sein können, legen Sie die Multiplizität am Actor-Ende der Zuordnung auf **1 fest \* ..**.
 
    In der Abbildung können ein oder mehrere Restaurants an der Erledigung der gleichen Essensbestellung beteiligt sein.
 
-- Um anzuzeigen, dass jeder Akteur in mehreren Vorkommen eines Anwendungsfalls gleichzeitig teilnehmen kann, legen Sie die Multiplizität am Anwendungsfall Ende der Zuordnung auf **\*** fest.
+- Um anzuzeigen, dass jeder Akteur gleichzeitig in mehreren Vorkommen eines Anwendungsfalls teilnehmen kann, legen Sie die Multiplizität am Anwendungsfall Ende der Zuordnung auf fest **\*** .
 
    In der Abbildung kann jedes Restaurant gleichzeitig an der Erledigung von mehr als einer Bestellung arbeiten.
 
@@ -190,17 +190,17 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
    - **1** geben Sie an, dass genau eine Instanz dieser Rolle an den einzelnen Links teilnimmt.
 
-   - **1..\*** , dass eine oder mehrere Instanzen dieser Rolle an den einzelnen Links beteiligt sind.
+   - **1.. \* ** , um zu bestimmen, ob eine oder mehrere Instanzen dieser Rolle an den einzelnen Links beteiligt sind.
 
    - **0.. 1** zum angeben, dass die Teilnahme optional ist.
 
-   - **\*** , dass NULL oder mehr Instanzen dieser Rolle am Link teilnehmen.
+   - **\*** , um festzustellen, dass NULL oder mehr Instanzen dieser Rolle am Link teilnehmen.
 
 > [!NOTE]
 > Viele Teams geben in Anwendungsfalldiagrammen keine Informationen zur Multiplizität an und behalten für die Multiplizitäten den Standardwert 1 bei. Stattdessen geben sie die Informationen in separaten Beschreibungen der Anwendungsfälle an. In diesem Fall werden alle Multiplizitäten in den Anwendungsfalldiagrammen ausgeblendet.
 
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Verwenden eine Akteurs oder eines Anwendungsfalls in mehreren Diagrammen
- Sie können die gleichen Akteure und Anwendungsfälle in mehreren Diagrammen anzeigen. Beispiel:
+ Sie können die gleichen Akteure und Anwendungsfälle in mehreren Diagrammen anzeigen. Zum Beispiel:
 
 - Sie können in unterschiedlichen Diagrammen die verschiedenen Anwendungsfälle beschreiben, an denen ein Akteur beteiligt ist.
 
@@ -217,7 +217,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
     > [!NOTE]
     > Wenn Sie einen bereits zugeordneten Akteur und Anwendungsfall im neuen Diagramm anordnen, wird die Zuordnung dazwischen in dem neuen Diagramm automatisch angezeigt.
 
-## <a name="Details"></a>Beschreiben von Anwendungsfällen im Detail
+## <a name="describing-use-cases-in-detail"></a><a name="Details"></a> Beschreiben von Anwendungsfällen im Detail
  Ein Anwendungsfall stellt Folgendes dar:
 
 - Ziel eines Actors bei der Verwendung des Systems, z. b. **kaufen einer Mahlzeit** immer
@@ -270,7 +270,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>So erstellen Sie einen Link zu einem freigegebenen Dokument, einem OneNote-Element oder einer Webseite
 
-1. Sie benötigen die URL des freigegebenen Elements. Dies kann z. b. ein Netzwerkdatei Pfad sein, der mit "\\\\" beginnt, oder eine Webseite oder SharePoint-URL, beginnend mit "http://", oder ein Link zu einem OneNote-Abschnitt, einer Seite oder einem Absatz, beginnend mit "OneNote:".
+1. Sie benötigen die URL des freigegebenen Elements. Dies kann z. b. ein Netzwerkdatei Pfad beginnen, der " \\ \\ " beginnt, oder eine Webseite oder SharePoint-URL, beginnend mit "http://", oder ein Link zu einem OneNote-Abschnitt, einer Seite oder einem Absatz, beginnend mit "OneNote:".
 
 2. Klicken Sie in der Toolbox auf **artefaktelement** , und klicken Sie dann in das Anwendungsfall Diagramm.
 
@@ -279,18 +279,18 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 > [!NOTE]
 > Sie können auf ein Artefakt doppelklicken, um das Diagramm oder das Dokument zu öffnen, mit dem es verknüpft ist.
 
-### <a name="linking-use-cases-to-work-items"></a>Verknüpfen von Anwendungsfällen mit Arbeitsaufgaben
- Wenn das Projekt [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] verwendet und Sie [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]haben, können Sie jeden Anwendungsfall mit einer Arbeitsaufgabe in [!INCLUDE[esprfound](../includes/esprfound-md.md)]verknüpfen. Informationen dazu, wie Sie diese Links erstellen, finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).
+### <a name="linking-use-cases-to-work-items"></a>Verknüpfen von Anwendungsfällen mit Arbeitselemente
+ Wenn das Projekt verwendet [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] und Sie über verfügen [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , können Sie jeden Anwendungsfall mit einem Arbeits Element in verknüpfen [!INCLUDE[esprfound](../includes/esprfound-md.md)] . Informationen dazu, wie Sie diese Links erstellen, finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).
 
- Sie haben dann folgende Möglichkeiten:
+ Hierdurch wird Folgendes ermöglicht:
 
-- Beschreiben Sie den Anwendungsfall in der verknüpften Arbeitsaufgabe. Wenn das Projekt die Visual Studio-Prozessvorlage „Formal“ verwendet, können Sie einen Link zu einer Anwendungsfall-Arbeitsaufgabe einrichten. Dieser Arbeitsaufgabentyp stellt Felder zum Beschreiben der Ziele und Szenarios des Anwendungsfalls bereit.
+- Beschreiben Sie den Anwendungsfall in der verknüpften Arbeitsaufgabe. Wenn das Projekt die Visual Studio-Prozessvorlage „Formal“ verwendet, können Sie einen Link zu einer Anwendungsfall-Arbeitsaufgabe einrichten. Dieser Arbeitselementetyp stellt Felder zum Beschreiben der Ziele und Szenarios des Anwendungsfalls bereit.
 
 - Verknüpfen Sie Testfälle mit dem Anwendungsfall, damit Sie Berichte dazu abrufen können, in welchem Umfang der entwickelte Code den Anwendungsfall implementiert.
 
 - Verknüpfen Sie Aufgaben mit dem Anwendungsfall, damit Sie den Status der Entwicklungsarbeit nachverfolgen können.
 
-## <a name="Structuring"></a>Strukturieren von Anwendungsfällen
+## <a name="structuring-use-cases"></a><a name="Structuring"></a> Strukturieren von Anwendungsfällen
  Sie sollten versuchen, das Verhalten des Systems nur mit einigen wenigen Hauptanwendungsfällen zu beschreiben. Für jeden großen Anwendungsfall ist ein Hauptziel definiert, für dessen Erreichung ein Akteur zuständig ist, z. B. das Kaufen eines Produkts oder aus Anbietersicht das Anbieten von Produkten zum Verkauf.
 
  Wenn Sie diese Ziele verdeutlicht haben, können Sie weitere Details dazu angeben, wie die einzelnen Ziele erreicht werden und welche Variationen es bei den grundlegenden Zielen gibt.
@@ -299,13 +299,13 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
  Sie können in einem Anwendungsfalldiagramm die Beziehungen zwischen den Hauptanwendungsfällen und ausführlicheren Anwendungsfällen zusammenfassen. Dies wird in den folgenden Abschnitten beschrieben:
 
-- [Anzeigen der Details eines Anwendungsfalls mit include](#Include)
+- [Anzeigen der Details eines Anwendungsfalls mit „Einschließen“](#Include)
 
-- [Gemeinsame Nutzung von Zielen mit Generalisierung](#Inheritance)
+- [Gemeinsames Nutzen von Zielen per Generalisierung](#Inheritance)
 
-- [Aufteilen von Variant-Fällen durch Erweitern](#Extend)
+- [Abtrennen von Varianten mit „Erweitern“](#Extend)
 
-### <a name="Include"></a>Anzeigen der Details eines Anwendungsfalls mit include
+### <a name="showing-the-details-of-a-use-case-with-include"></a><a name="Include"></a> Anzeigen der Details eines Anwendungsfalls mit include
  Verwenden Sie eine **include** -Beziehung, um anzuzeigen, dass ein Anwendungsfall einige Details eines anderen beschreibt. Sortieren Sie in der Abbildung die **Bestellung** , **und**wählen **Sie das Menü**aus, und wählen Sie Menü **Element**aus. Jeder der enthaltenen ausführlicheren Anwendungsfälle ist ein Schritt, den der Akteur oder die Akteure ggf. ausführen müssen, um das Gesamtziel des einschließenden Anwendungsfalls zu erreichen. Der Pfeil sollte auf den ausführlicheren eingeschlossenen Anwendungsfall zeigen.
 
 > [!CAUTION]
@@ -313,7 +313,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
  Sie können eingeschlossene Anwendungsfälle freigeben. In diesem Beispiel umfassen die Anwendungsfälle **Bestellung** und **Abonnement** Überprüfung die **Zahlen Pay**.
 
- ![Mit include aufgesetzte Anwendungsfälle](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
+ ![Mit Include aufgelöste Anwendungsfälle](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
 
  Das Ziel und die Szenarios eines eingeschlossenen Anwendungsfalls sollten auch unabhängig voneinander Sinn ergeben, damit diese in Anwendungsfälle einbezogen werden können, die später entworfen werden.
 
@@ -323,7 +323,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 - Vermeiden der Wiederholung von freigegebenen Szenarios in verschiedenen Anwendungsfällen
 
-#### <a name="Steps"></a>Definieren der Reihenfolge der ausführlichen Schritte
+#### <a name="defining-the-order-of-the-detailed-steps"></a><a name="Steps"></a> Definieren der Reihenfolge der ausführlichen Schritte
  Das Anwendungsfalldiagramm sagt weder etwas über die Reihenfolge aus, in der die ausführlicheren Schritte ausgeführt werden müssen, noch darüber, ob jeder Schritt immer erforderlich ist.
 
  Um die Reihenfolge der Schritte zu vereinfachen, können **Sie ein Element verwenden, um ein** separates Dokument an den einfügenden Anwendungsfall anzufügen. Im folgenden Beispiel ist ein Aktivitätsdiagramm an den Anwendungsfall Gericht bestellen angefügt. Alternativ dazu können Sie ein Textdokument verwenden, das eine Liste von Schritten oder eine Sequenz von Screenshots enthält. Weitere Informationen finden Sie [im Detail unter beschreiben von Anwendungsfällen](#Details).
@@ -336,12 +336,12 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
   Weitere Informationen finden Sie unter [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md).
 
-  ![Im verknüpften Aktivitätsdiagramm gezeigte Anwendungsfall Schritte](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
+  ![Anwendungsfallschritte in verknüpftem Aktivitätsdiagramm](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
 
-### <a name="Inheritance"></a>Gemeinsame Nutzung von Zielen mit Generalisierung
+### <a name="sharing-goals-with-generalization"></a><a name="Inheritance"></a> Gemeinsame Nutzung von Zielen mit Generalisierung
  Verwenden Sie eine Generalisierungs Beziehung, um anzuzeigen, dass ein *spezieller* Anwendungsfall eine bestimmte Möglichkeit zum Erreichen der Ziele ist, die von einem anderen *allgemeinen* Anwendungsfall ausgedrückt werden. Die geöffnete Pfeilspitze sollte auf den allgemeineren Anwendungsfall zeigen.
 
- ![Anwendungsfälle mit der Generalisierungs Beziehung](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
+ ![Anwendungsfälle mit Generalisierungsbeziehung](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
 
  Beispiels **Weise wird die Zahlung** **per Kreditkarte** und Zahlung **per Bargeld**generalisiert.
 
@@ -368,10 +368,10 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 4. Akteure, die von den spezialisierten Anwendungsfällen gemeinsam genutzt werden, können in den allgemeinen Anwendungsfall verschoben werden.
 
-### <a name="Extend"></a>Trennen von Variant-Fällen durch Erweitern
+### <a name="separating-variant-cases-with-extend"></a><a name="Extend"></a> Trennen von Variant-Fällen durch Erweitern
  Verwenden Sie einen Link vom Typ „Erweitern“, um anzugeben, dass ein Anwendungsfall einem anderen Anwendungsfall unter bestimmten Umständen Funktionen hinzufügen kann. Der Pfeil sollte auf den erweiterten Hauptanwendungsfall zeigen.
 
- ![Ein Anwendungsfall, der einen anderen erweitert](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
+ ![Anwendungsfall, der einen anderen erweitert](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
 
 > [!CAUTION]
 > Sie sollten keine Schleifen aus Erweiterungsbeziehungen erstellen, die dazu führen, dass ein Akteur sich selbst generalisiert. Schleifen können zu Fehlern führen.
@@ -407,7 +407,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 - Diese Erweiterung ist nur in bestimmten Versionen des Systems verfügbar. Sie können jede Version im Anwendungsfalldiagramm als separates Subsystem anzeigen.
 
-## <a name="Subsystems"></a>Verwenden von subsystemgrenzen
+## <a name="using-subsystem-boundaries"></a><a name="Subsystems"></a> Verwenden von subsystemgrenzen
  Verwenden Sie eine Subsystembegrenzung, um anzugeben, welche Anwendungsfälle innerhalb des Bereichs des Systems liegen.
 
 #### <a name="to-draw-a-subsystem-boundary"></a>So zeichnen Sie eine Subsystembegrenzung
@@ -420,7 +420,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
 3. Ziehen Sie vorhandene Anwendungsfälle in das oder aus dem Subsystem, um seinen Inhalt anzupassen.
 
-   \- oder –
+   \- oder -
 
    Um einen neuen Anwendungsfall direkt in einem Subsystem zu erstellen, klicken Sie in der Toolbox auf **Anwendungsfall** , und klicken Sie dann innerhalb des Subsystems.
 
@@ -438,7 +438,7 @@ In Visual Studio können Sie ein *Anwendungsfall Diagramm* zeichnen, um zusammen
 
  Verwenden Sie **Abhängigkeits** Beziehungen zum Verknüpfen von Subsystemen, die unterschiedliche Versionen oder Varianten darstellen.
 
- ![Subsysteme zeigen verschiedene Versionen eines Systems an.](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
+ ![Subsysteme weisen unterschiedliche Versionen eines Systems auf](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Modell Benutzer Anforderungen](../modeling/model-user-requirements.md) [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md) [Bearbeiten von UML-Modellen und Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme:](../modeling/uml-component-diagrams-reference.md) Referenz [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md) - [Video: Organisieren von Features in Anwendungsfällen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Verzeichnissen zum neuen Projektdialogfeld | Microsoft Docs
+title: Hinzufügen von Verzeichnissen zum Dialog Feld "Neues Projekt" | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710248"
 ---
-# <a name="add-directories-to-the-new-project-dialog-box"></a>Hinzufügen von Verzeichnissen zum Dialogfeld Neues Projekt
-Wenn Sie neue Projekttypen erstellen, können Sie auch ein neues Verzeichnis im Dialogfeld **Neues Projekt** registrieren, um es für die Verwendung als Vorlagen anzuzeigen. Im folgenden Codebeispiel wird erläutert, wie Ein neues Verzeichnis registriert wird, das auch als Knoten bezeichnet wird. Im Beispiel werden Vorlagen registriert, die vom VSPackage *CLSID_Package*verfügbar gemacht werden. Daher bietet die linke Seite des Dialogfelds **Neues Projekt** den hinzugefügten Knoten mit einem Namen, der durch die *Folder_Label_ResID* Ressource bestimmt wird. Diese Ressource wird aus der VSPackage-Satelliten-DLL geladen.
+# <a name="add-directories-to-the-new-project-dialog-box"></a>Hinzufügen von Verzeichnissen zum Dialogfeld "Neues Projekt"
+Wenn Sie neue Projekttypen erstellen, können Sie auch ein neues Verzeichnis im Dialogfeld **Neues Projekt** registrieren, um Sie für die Verwendung als Vorlagen anzuzeigen. Im folgenden Codebeispiel wird erläutert, wie ein neues Verzeichnis registriert wird, das auch als-Knoten bezeichnet wird. Im Beispiel werden Vorlagen, die vom VSPackage bereitgestellt werden, *CLSID_Package*, registriert. Folglich bietet die linke Seite des Dialog Felds **Neues Projekt** den hinzugefügten Knoten mit einem Namen, der von der *Folder_Label_ResID* Ressource bestimmt wird. Diese Ressource wird aus der VSPackage-Satelliten-DLL geladen.
 
- Der **Ordnerwert** stellt eine GUID eines Ordners dar, unter dem der *Folder_Label_ResID* Knoten angezeigt wird. Im Beispiel stellt die GUID den Ordner **Andere Projekte** im Bereich **Projekttypen** des Dialogfelds **Neues Projekt** dar. Wenn der Wert **"Andere Projekte"** nicht vorhanden ist, wird die Beschriftung auf der obersten Ebene positioniert.
+ Der **Ordner** Wert stellt eine GUID eines Ordners dar, in dem der *Folder_Label_ResID* Knoten angezeigt wird. Im Beispiel stellt die GUID den Ordner **andere Projekte** im Bereich **Projekttypen** des Dialog Felds **Neues Projekt** dar. Wenn der Wert **anderer Projekte** nicht vorhanden ist, wird die Bezeichnung auf der obersten Ebene positioniert.
 
- Der `TemplatesDir` Wert gibt den vollständigen Pfad des Verzeichnisses an, das die Projektvorlagen enthält. Diese Dateien können entweder *.vsz* Dateien oder typische Vorlagendateien geklont werden.
+ Der- `TemplatesDir` Wert gibt den vollständigen Pfad des Verzeichnisses an, das die Projektvorlagen enthält. Diese Dateien können entweder *VSZ* -Dateien oder typische Vorlagen Dateien sein, die geklont werden sollen.
 
- Wenn Sie `TemplatesLocalizedSubDir`angeben, muss es sich um die Ressourcen-ID einer Zeichenfolge handelt, die das Unterverzeichnis benennt, in `TemplatesDir` dem lokalisierte Vorlagen enthalten sind. Da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Zeichenfolgenressource aus einer Satelliten-DLL geladen wird, wenn Sie über eine enthält, kann jede Satelliten-DLL einen anderen Unterverzeichnisnamen enthalten. Der `SortPriority` Wert gibt eine Sortierpriorität an.
+ Wenn Sie angeben `TemplatesLocalizedSubDir` , muss es sich um die Ressourcen-ID einer Zeichenfolge handeln, die das Unterverzeichnis von benennt, `TemplatesDir` das lokalisierte Vorlagen enthält. Da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Zeichen folgen Ressource aus einer Satelliten-DLL lädt (sofern vorhanden), kann jede Satelliten-DLL einen anderen Namen für das Unterverzeichnis enthalten. Der `SortPriority` Wert gibt eine Sortier Priorität an.
 
 ```
 NoRemove NewProjectTemplates
@@ -45,7 +45,7 @@ NoRemove NewProjectTemplates
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Hinzufügen von Elementen zum Dialogfeld Neues Element hinzufügen](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [Hinzufügen von Verzeichnissen zum Dialogfeld Neues Element hinzufügen](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+## <a name="see-also"></a>Siehe auch
+- [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzufügen"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Hinzufügen von Verzeichnissen zum Dialogfeld "Neues Element hinzufügen"](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

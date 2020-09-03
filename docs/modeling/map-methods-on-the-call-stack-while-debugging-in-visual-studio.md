@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532703"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Zuordnen von Methoden in der Aufrufliste beim Debuggen in Visual Studio
@@ -57,7 +57,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 - Code, den Sie Debuggen können, z. b. Visual c#, Visual Basic, C++, JavaScript oder X + +
 
-  Thema
+  Siehe:
 
 - [Video: visuelles Debuggen mit der Code Map Debugger-Integration (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
@@ -188,7 +188,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
    ![Was bedeuten die Symbole in der Aufruflisten-Codezuordnung?](../debugger/media/debuggermap_showlegend.png)
 
-  Thema
+  Siehe:
 
 - [Zuordnen der aufrufsstapel](#MapStack)
 

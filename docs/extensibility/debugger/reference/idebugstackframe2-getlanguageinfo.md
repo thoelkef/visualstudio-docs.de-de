@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: 'IDebugStackFrame2:: getlanguageingefo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719700"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Ruft die Sprache ab, die diesem Stapelrahmen zugeordnet ist.
+Ruft die Sprache ab, die diesem Stapel Rahmen zugeordnet ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Parameter
 
 `pbstrLanguage`\
-[out] Gibt den Namen der Sprache zurück, die die diesem Stapelrahmen zugeordnete Methode implementiert.
+vorgenommen Gibt den Namen der Sprache zurück, die die diesem Stapel Rahmen zugeordnete Methode implementiert.
 
 `pguidLanguage`\
-[out] Gibt `GUID` die Sprache zurück. Für [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] die Sprachen kann z. B. Folgendes zurückgegeben werden:
+vorgenommen Gibt den `GUID` der Sprache zurück. Für die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Sprachen kann beispielsweise Folgendes zurückgegeben werden:
 
 - `guidVBScriptLang`\
 

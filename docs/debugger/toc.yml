@@ -12,7 +12,7 @@
   items:
     - name: Erster Einblick in den Debugger
       href: debugger-feature-tour.md
-    - name: 'C#- oder Visual Basic-App debuggen'
+    - name: C#- oder Visual Basic-App debuggen
       href: quickstart-debug-with-managed.md
     - name: C++-App debuggen
       href: quickstart-debug-with-cplusplus.md
@@ -20,7 +20,7 @@
       href: quickstart-debug-aspnet.md
 - name: Tutorials
   items:
-    - name: 'Informationen zum Debuggen von C#'
+    - name: Informationen zum Debuggen von C#
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
     - name: Informationen zum Debuggen von C++
       href: getting-started-with-the-debugger-cpp.md
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Debuggen einer aktiven Azure-App
       href: debug-live-azure-applications.md
-    - name: 'Debuggen von C#- und C++-Code'
+    - name: Debuggen von C#- und C++-Code
       href: how-to-debug-managed-and-native-code.md
     - name: Untersuchen vorheriger App-Zustände
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: Problembehandlung von Haltepunkten
           href: troubleshooting-breakpoints.md
-        - name: 'Problembehandlung von Datenhaltepunkten in C#'
+        - name: Problembehandlung von Datenhaltepunkten in C#
           href: troubleshoot-data-breakpoint-errors.md
     - name: Datenüberprüfung
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Kontextoperator (C++)
                   href: context-operator-cpp.md
-                - name: 'Formatbezeichner in C#'
+                - name: Formatbezeichner in C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudovariablen
                   href: pseudovariables.md
@@ -120,7 +120,7 @@
               href: supported-code-changes-cpp.md
         - name: "Bearbeiten und Fortfahren (Visual\_C#)"
           items:
-            - name: 'Bearbeiten und Fortfahren in C#'
+            - name: Bearbeiten und Fortfahren in C#
               href: edit-and-continue-visual-csharp.md
             - name: 'Verwenden von „Bearbeiten und Fortfahren“ [C#]'
               href: how-to-use-edit-and-continue-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Problembehandlung beim Neuladen von XAML im laufenden Betrieb
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'Bearbeiten und Fortfahren wird für F# nicht unterstützt'
+        - name: Bearbeiten und Fortfahren wird für F# nicht unterstützt
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: In Ausgabefenster protokollieren
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Einstellungen von Eigenschaftenseiten für Webprojekte
                   href: property-pages-settings-for-web-projects.md
-                - name: 'Projekteinstellungen für C#-Debugkonfigurationen'
+                - name: Projekteinstellungen für C#-Debugkonfigurationen
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Projekteinstellungen für eine Visual Basic-Debugkonfiguration
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Remotedebuggen von ASP.NET Core in Azure
           href: remote-debugging-azure.md
-        - name: 'Remotedebuggen eines C#- oder Visual Basic-Projekts'
+        - name: Remotedebuggen eines C#- oder Visual Basic-Projekts
           href: remote-debugging-csharp.md
         - name: Remotedebuggen eines C++-Projekts
           href: remote-debugging-cpp.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Anzeigen von WPF-Ablaufverfolgungsinformationen
                   href: how-to-display-wpf-trace-information.md
-            - name: 'Debuggen von F#'
+            - name: Debuggen von F#
               href: debugging-f-hash.md
         - name: C/C++-Code
           items:

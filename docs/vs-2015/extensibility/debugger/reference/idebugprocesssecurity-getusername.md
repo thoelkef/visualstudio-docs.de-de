@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Microsoft-Dokumentation
+title: 'Idebugprocesssecurity:: GetUserName | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a6ef52d7df1c60b0cb6581a7e15eeaf67e7875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202783"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Benutzernamen aus den Anschlusslieferanten ab.  
+Ruft den Benutzernamen vom Port Lieferanten ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,13 +38,13 @@ int GetUserName (
   
 #### <a name="parameters"></a>Parameter  
  `pbstrUserName`  
- [out] Eine Zeichenfolge mit den Benutzernamen ein.  
+ vorgenommen Eine Zeichenfolge, die den Benutzernamen enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Methode erfolgreich ist, gibt es `S_OK`. Andernfalls wird einen Fehlercode zurückgegeben.  
+ Wenn die Methode erfolgreich ist, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- `GetUserName` Gibt den Benutzernamen zurück, die in angezeigt wird der **Benutzernamen** Spalte die **an den Prozess anhängen** Dialogfeld. Anzeigen der **an den Prozess anhängen** Dialogfeld klicken Sie auf **an den Prozess anhängen** auf die **Tools** im Menü der [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE).  
+## <a name="remarks"></a>Bemerkungen  
+ `GetUserName` Gibt den Benutzernamen zurück, der in der Spalte **Benutzername** im Dialogfeld **an den Prozess anhängen** angezeigt wird. Um das Dialogfeld **an den Prozess anhängen** anzuzeigen, klicken Sie **im Menü Extras in der** integrierten Entwicklungsumgebung (IDE) auf **an den Prozess anhängen** [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

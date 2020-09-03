@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544988"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
@@ -109,7 +109,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
 
 3. Wenn Sie **Starten ohne Debugging** ausgewählt haben, den Debugger aber verwenden möchten, wechseln Sie zurück zur Hauptinstanz von Visual Studio. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie im Dialogfeld die experimentelle Instanz von Visual Studio aus, die den Programmnamen **devenv**hat.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung
  Führen Sie die folgenden Schritte aus, um Ihre Erweiterung in der Hauptinstanz von Visual Studio auszuführen, entweder auf dem eigenen Computer oder auf anderen Computern.
 
 1. Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom Erweiterungsprojekt erstellt wurde.

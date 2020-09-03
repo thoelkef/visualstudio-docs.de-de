@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Ausschließliches Verwenden der Tastatur | Microsoft-Dokumentation'
+title: 'Vorgehensweisen: Ausschließliches Verwenden der Tastatur | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,16 +17,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9a9ec5f83a6df3dab262e24aac5c36b2d65ef00
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852378"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Vorgehensweise: Ausschließliches Verwenden der Tastatur
+# <a name="how-to-use-the-keyboard-exclusively"></a>Gewusst wie: Ausschließliches Verwenden der Tastatur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastenkombinationen, die in Visual Studio verwendet werden, finden Sie unter [Standard Tastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen, die für andere Microsoft-Produkte verfügbar sind, finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx) .
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -59,11 +59,11 @@ ms.locfileid: "75852378"
 
     - Verwenden Sie für Kontrollkästchen die **LEERTASTE**, um diese zu aktivieren oder zu deaktivieren.
 
-    - Verwenden Sie für Dropdownlisten **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
+    - Verwenden Sie für Dropdown Listen den **alt**-  +  **Pfeil** nach unten, um Elemente anzuzeigen, und verwenden Sie dann **uanrow** und **downpfeil** , um das ausgewählte Element zu ändern.
 
     - Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.
 
-    - Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownliste in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
+    - Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdown Listen in Raster die **UMSCHALT**  +  **alt**-nach-unten-  +  **Taste** , um Elemente anzuzeigen, und verwenden Sie dann **uanrow** und **downpfeil** , um das ausgewählte Element zu ändern.
 
 ## <a name="window-and-file-navigation"></a>Navigation von Fenstern und Dateien
  Die IDE bietet mehrere Möglichkeiten, mit denen Sie mit der Tastatur zwischen Fenstern von Tools und Dokumenten wechseln können. Darüber hinaus können Sie Fenster mit der Tastatur zu verschiedenen Stellen verschieben und dort andocken.
@@ -80,13 +80,13 @@ ms.locfileid: "75852378"
 
 2. Klicken Sie im Menü **Fenster** auf **Andockbar**.
 
-3. Drücken Sie **ALT** + **LEERTASTE**, und klicken Sie dann auf **Verschieben**.
+3. Drücken Sie **alt**  +  -**Taste** , und wählen Sie **verschieben**aus.
 
      Die Führungsraute fürs Andocken wird angezeigt.
 
-4. Verwenden Sie die **PFEILTASTEN**, um das Fenster an eine neue Stelle zu verschieben.
+4. Verwenden Sie die **Pfeil** Tasten, um das Fenster an einen neuen Speicherort zu verschieben.
 
-     Der Mauszeiger bewegt sich mit dem Fenster, während Sie die **PFEILTASTEN** verwenden.
+     Der Mauszeiger wird mit dem Fenster bewegt, während Sie die **Pfeil** Tasten verwenden.
 
 5. Wenn Sie die neue Stelle erreicht haben, verwenden Sie die **PFEILTASTEN**, um den Mauszeiger zur korrekten Stelle der Führungsraute zu bewegen.
 
@@ -96,5 +96,5 @@ ms.locfileid: "75852378"
 
      Das Toolfenster springt zur neuen angedockten Stelle.
 
-## <a name="see-also"></a>Siehe auch
- [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Tipps und Tricks](../../ide/reference/accessibility-tips-and-tricks.md) [für Tastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Tipps und Tricks](../../ide/reference/accessibility-tips-and-tricks.md) [Default Keyboard Shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md) für Tastenkombinationen

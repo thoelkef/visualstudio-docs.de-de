@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115292"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
 Das Diagramm einer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition ist ein wichtiges Tool zum Definieren der domänenspezifischen Sprache. Sie können Ihrem Domänenmodell Elemente hinzufügen und Beziehungen im Diagramm festlegen. Darüber hinaus können Sie das Layout des Diagramms ändern, um dieses besser lesbar zu machen.
 
 ## <a name="the-layout-of-the-diagram"></a>Das Layout des Diagramms
- Das Diagramm für die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition verfügt über zwei Partitionen: die Partition **Klassen und Beziehungen** und die Partition **Diagramm Elemente** . Die Partition **Klassen und Beziehungen** zeigt Domänen Klassen, Domänen Beziehungen und Vererbung an. Die Partition **Diagramm Elemente** zeigt Form Klassen, Connector-Klassen, Swimlane-Klassen und das generierte Designer Diagramm an.
+ Das [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definitions Diagramm verfügt über zwei Partitionen: die Partition **Klassen und Beziehungen** und die Partition **Diagramm Elemente** . Die Partition **Klassen und Beziehungen** zeigt Domänen Klassen, Domänen Beziehungen und Vererbung an. Die Partition **Diagramm Elemente** zeigt Form Klassen, Connector-Klassen, Swimlane-Klassen und das generierte Designer Diagramm an.
 
  Domänen Klassen können an mehreren Speicherorten in den **Klassen-und Beziehungs** Partitionen angezeigt werden. Eine Domänenklassendefinition zeigt eine Vererbungsstruktur an, wenn es sich um die Basisklasse für andere Domänenklassen handelt. Eine Beziehungsstruktur wird angezeigt, wenn es sich um die Quelle von einbettenden Beziehungen oder Verweisbeziehungen handelt. Domänenklassenplatzhalter werden als die Ziele der einbettenden Beziehung oder der Verweisbeziehung angezeigt. Standardmäßig werden Platzhalter Elemente angezeigt, wenn das Depot mit den **Domänen Eigenschaften** reduziert ist. Die Vererbung sowie einbettende Beziehungen oder Verweisbeziehungen werden nicht angezeigt.
 
@@ -70,6 +70,6 @@ Das Diagramm einer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition is
 ### <a name="show-as-class"></a>Als Klasse anzeigen
  Wenn eine Domänen Beziehung abgeleitete Beziehungen aufweist oder wenn Sie Einbettungs-oder Verweis Beziehungen zu anderen Domänen Beziehungen aufweist, können Sie die Beziehung als Klasse anzeigen, indem Sie mit der rechten Maustaste auf die Beziehung klicken und dann auf **als Klasse anzeigen**klicken. Die Beziehung wird mit einem **Domänen Eigenschaften** Depot angezeigt und zeigt die Vererbungs-und Beziehungsstrukturen an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

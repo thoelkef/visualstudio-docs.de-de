@@ -1,5 +1,5 @@
 ---
-title: GuidSymbol Element | Microsoft Docs
+title: Guidsymbol-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711125"
 ---
-# <a name="guidsymbol-element"></a>GuidSymbol-Element
-Das `GuidSymbol` Element enthält die GUID des GUID:ID-Paares, das ein Menü, eine Gruppe oder einen Befehl darstellt. Die ID stammt `IDSymbol` von `GuidSymbol` einem Element im Element. Das `GuidSymbol` Element `name` verfügt über ein Attribut, das einen Anzeigenamen `value` für die GUID bereitstellt, der im Attribut enthalten ist.
+# <a name="guidsymbol-element"></a>Guidsymbol-Element
+Das- `GuidSymbol` Element enthält die GUID des GUID: ID-Paars, das ein Menü, eine Gruppe oder einen Befehl darstellt. Die ID stammt von einem `IDSymbol` Element im- `GuidSymbol` Element. Das- `GuidSymbol` Element verfügt über ein- `name` Attribut, das einen anzeigen Amen für die GUID bereitstellt, die im-Attribut enthalten ist `value` .
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,23 +37,23 @@ Das `GuidSymbol` Element enthält die GUID des GUID:ID-Paares, das ein Menü, ei
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|name|Erforderlich. Name des GUID-Symbols.|
+|name|Erforderlich. Der Name des GUID-Symbols.|
 |value|Erforderlich. GUID des GUID-Symbols.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[IDSymbol-Element](../extensibility/idsymbol-element.md)|Enthält die ID des GUID:ID-Paares, das ein Menü, eine Gruppe oder einen Befehl darstellt.|
+|[Idsymbol-Element](../extensibility/idsymbol-element.md)|Enthält die ID des GUID: ID-Paars, das ein Menü, eine Gruppe oder einen Befehl darstellt.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Symbols-Element](../extensibility/symbols-element.md)|Gruppiert `GuidSymbol` Elemente in einer *.vsct-Datei.*|
+|[Symbols-Element](../extensibility/symbols-element.md)|Gruppiert `GuidSymbol` Elemente in einer *vsct* -Datei.|
 
 ## <a name="remarks"></a>Bemerkungen
- In der Regel enthält eine `GuidSymbol` `Symbols` *.vsct-Datei* drei Elemente in ihrem Abschnitt, eines für das Paket selbst, eines für den Befehlssatz (die Sammlung von Menüs, Gruppen und Befehlen, die das Paket zur Verfügung stellt) und eines für die Bitmaps, die Symbole für Schaltflächen und andere visuelle Komponenten bereitstellen. Jedes `IDSymbol` Element in `GuidSymbol` einem bestimmten `value`Element muss über eine eindeutige verfügen. Elemente `IDSymbol` mit identischen Werten können jedoch in einem Paket vorhanden sein, solange sie unterschiedliche Eltern haben.
+ In der Regel enthält eine *vsct* -Datei drei `GuidSymbol` Elemente in Ihrem `Symbols` Abschnitt, eine für das Paket selbst, eine für den Befehlssatz (die Auflistung der Menüs, Gruppen und Befehle, die das Paket verfügbar macht) und eine für die Bitmaps, die Symbole für Schaltflächen und andere visuelle Komponenten bereitstellen. Jedes `IDSymbol` Element in einem bestimmten `GuidSymbol` Element muss über einen eindeutigen verfügen `value` . Allerdings `IDSymbol` können Elemente mit identischen Werten in einem Paket vorhanden sein, solange Sie über unterschiedliche übergeordnete Elemente verfügen.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -18,10 +18,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918406"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funktionen von Dotfuscator
@@ -39,7 +39,7 @@ Dotfuscator Community unterstützt eine Vielfalt von .NET-Assemblys und Anwendun
 Die Bauweise, das Verhalten und die Implementierung Ihrer Anwendung gehören zum geistigen Eigentum (intellectual property, IP).
 Dennoch sind Anwendungen, die für .NET erstellt wurden, im Grunde offene Bücher – denn es ist sehr einfach, .NET-Assemblys rückzuentwickeln, [da sie hochrangige Metadaten und Zwischencode enthalten][assemblies].
 
-Dotfuscator Community enthält eine grundlegende [.NET-Obfuskation][obfuscation] in Form von [Umbenennung][renaming].
+Dotfuscator Community enthält eine grundlegende [.NET-Obfuskation ][obfuscation] in Form von [Umbenennung][renaming].
 Das Verbergen Ihres Codes mit Dotfuscator senkt das Risiko des unautorisierten Zugriffs auf Quellcode durch Reverse Engineering, da wichtige Namensinformationen nicht mehr öffentlich sind.
 Die Obfuskation zeigt außerdem Ihre Bemühungen, Ihren Code vor Durchsuchung zu schützen – ein wichtiger Schritt, um zu bekräftigen, dass Ihre IP rechtlich als Geschäftsgeheimnis geschützt ist.
 
@@ -58,7 +58,7 @@ Falls Sie lieber keinen Code für den ungültigen Gebrauch von Anwendungen schre
 
 Viele der gleichen Methoden können auch verwendet werden, um [End-of-Life-Deadlines][shelflife] für Auswertungs- oder Testsoftware zu erzwingen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Dieses Thema im vollständigen Dotfuscator Community-Benutzerhandbuch][full]
 

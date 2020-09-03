@@ -8,10 +8,10 @@ ms.date: 03/02/2020
 ms.topic: how-to
 description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist
 ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906058"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements

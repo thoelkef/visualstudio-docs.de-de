@@ -8,17 +8,17 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938863"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
 Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – Funktionen – in einer Cloud erstellen und ausführen, ohne Infrastruktur bereitstellen und verwalten zu müssen. Weitere Informationen zu Azure Functions finden Sie in der [Dokumentation zu Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** enthalten.
 
@@ -51,7 +51,7 @@ Das neue Projekt enthält die folgenden Dateien:
 
 * **Ihr-Funktionsname.cs**: Diese Klasse enthält Codebeispiele für die Funktion, die Sie ausgewählt haben. Außerdem enthält sie ein **FunctionName**-Attribute mit dem Funktionsnamen und dem Triggerattribut, das den Auslöser der Funktion (z.B. eine HTTP-Anforderung) angibt. Weitere Informationen zur Funktionsmethode finden Sie in dem Artikel [C#-Entwicklerreferenz zu Azure Functions](/azure/azure-functions/functions-dotnet-class-library).
 * **host.json**: Diese Datei beschreibt die globalen Konfigurationsoptionen für den Functions-Host. Eine Beispieldatei und Informationen zu den für diese Datei verfügbaren Einstellungen finden Sie unter [host.json-Referenz für Azure Functions](/azure/azure-functions/functions-host-json).
-* **local.settings.json**: Diese Datei enthält alle Einstellungen zur lokalen Ausführung von Funktionen. Diese Einstellungen werden von den Azure Functions Core-Tools verwendet. Weitere Informationen finden Sie unter [Datei für lokale Einstellungen](/azure/azure-functions/functions-run-local#local-settings-file) im Artikel zu Azure Functions Core Tools.
+* **local.settings.json**: Diese Datei enthält alle Einstellungen zur lokalen Ausführung von Funktionen. Diese Einstellungen werden von den Azure Functions Core-Tools verwendet. Weitere Informationen finden Sie in der [Datei für lokale Einstellungen](/azure/azure-functions/functions-run-local#local-settings-file) im Artikel „Azure Functions Core-Tools“.
 
 Wenn Sie jetzt ein neues Azure Functions-Projekt in Visual Studio für Mac erstellt haben, können Sie nun über Ihren lokalen Computer die von HTTP ausgelöste Standardfunktion testen.
 
@@ -69,7 +69,7 @@ Mit der Azure Functions-Unterstützung in Visual Studio für Mac können Sie Ihr
 
     Kopieren Sie die URL aus der Ausgabe.
 
-3. Fügen Sie die URL der HTTP-Anforderung in die Adresszeile des Browsers ein. Fügen Sie die Abfragezeichenfolge `?name=<yourname>` an das Ende der URL ein, und führen Sie die Anforderung aus. Im folgenden Bild wird die Antwort auf die lokale GET-Anforderung im Browser angezeigt, die von der Funktion zurückgegeben wird:
+3. Fügen Sie die URL zu der HTTP-Anforderung in die Adressleiste Ihres Browsers ein. Fügen Sie die Abfragezeichenfolge `?name=<yourname>` an das Ende der URL ein, und führen Sie die Anforderung aus. Im folgenden Bild wird die Antwort auf die lokale GET-Anforderung im Browser angezeigt, die von der Funktion zurückgegeben wird:
 
     ![HTTP-Anforderung im Browser](media/azure-functions-httpreq.png)
 
@@ -87,30 +87,30 @@ Mithilfe von Funktionsvorlagen können Sie schnell mithilfe der am häufigsten v
 
     Im Abschnitt [Verfügbare Funktionsvorlagen](#available-function-templates) finden Sie eine Liste der Azure Function-Vorlagen.
 
-Sie können das obige Verfahren nutzen, um Ihrem Funktions-App-Projekt weitere Funktionen hinzuzufügen. Jede Funktion im Projekt kann über einen anderen Trigger verfügen, aber einer Funktion muss genau ein Trigger zugeordnet sein. Weitere Informationen finden Sie unter [Konzepte für Azure Functions-Trigger und -Bindungen](/azure/azure-functions/functions-triggers-bindings).
+Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-App-Projekt hinzufügen. Jede Funktion im Projekt kann über einen anderen Trigger verfügen, aber einer Funktion muss genau ein Trigger zugeordnet sein. Weitere Informationen finden Sie unter [Konzepte für Azure Functions-Trigger und -Bindungen](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie **Veröffentlichen > In Azure veröffentlichen** aus: ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image5.png)
+1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie dann **Veröffentlichen > In Azure veröffentlichen** aus:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image5.png)
 2. Wenn Sie Ihr Azure-Konto bereits mit Visual Studio für Mac verbunden haben, wird eine Liste der verfügbaren App-Dienste angezeigt. Wenn Sie sich nicht angemeldet haben, werden Sie dazu aufgefordert.
 3. Im Dialogfeld **In Azure App Service veröffentlichen** können Sie entweder einen vorhandenen App-Dienst auswählen oder einen neuen erstellen, indem Sie auf **Neu** klicken.
-4. Geben Sie im Dialogfeld **Neuen App-Dienst erstellen** Ihre Einstellungen ein: ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
+4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
 
-    |Einstellung  |BESCHREIBUNG  |
+    |Einstellung  |Beschreibung  |
     |---------|---------|
     |**App Service-Name**|Ein global eindeutiger Name, der Ihre neue Funktions-App identifiziert.|
-    |**Abonnement**|Das zu verwendende Azure-Abonnement.|
-    |**[Ressourcengruppe](/azure/azure-resource-manager/resource-group-overview)**|Name der Ressourcengruppe, in der die Funktions-App erstellt wird. Wählen Sie **+** aus, um eine neue Ressourcengruppe zu erstellen.|
+    |**Abonnement**|Das zu verwendende Azure-Abonnement|
+    |**[Ressourcengruppe](/azure/azure-resource-manager/resource-group-overview)**|Der Name der Ressourcengruppe, in der Ihre Funktions-App erstellt werden soll. Wählen Sie **+** aus, um eine neue Ressourcengruppe zu erstellen.|
     |**[Serviceplan](/azure/azure-functions/functions-scale)**|Wählen Sie einen vorhandenen Plan aus, oder erstellen Sie einen benutzerdefinierten Plan. Wählen Sie einen Speicherort in einer Region in Ihrer Nähe oder in der Nähe anderer Dienste, auf die Ihre Funktionen zugreifen.|
 
     > [!CAUTION]
     > In der Version 7.6 von Visual Studio für Mac gibt es einen Fehler, der dazu führt, dass bei der Veröffentlichung ein Bereitstellungsfehler auftritt. Dies ist der Fall, wenn Sie einen benutzerdefinierten Serviceplan erstellen möchten, bei dem **Preise** auf **Verbrauch** gesetzt ist. Dies wird in der nächsten Dienstversion behoben.
 
-5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Runtime wird ein Azure Storage-Konto benötigt. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
+5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Laufzeit ist ein Azure-Speicherkonto erforderlich. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
 
     ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image8.png)
 
-6. Klicken Sie auf **Erstellen**, um eine Funktions-App und zugehörige Ressourcen in Azure mit diesen Einstellungen zu erstellen und Ihren Funktionsprojektcode bereitzustellen.
+6. Klicken Sie auf **Erstellen**, um mit diesen Einstellungen eine Funktions-App und zugehörige Ressourcen in Azure zu erstellen und Ihren Funktionsprojektcode bereitzustellen.
 
 7. Während der Veröffentlichung werden Sie möglicherweise in einem Dialogfeld aufgefordert, damit Sie Ihre „Functions-Version in Azure aktualisieren“. Klicken Sie auf **Ja**:
 
@@ -121,7 +121,7 @@ Sie können das obige Verfahren nutzen, um Ihrem Funktions-App-Projekt weitere F
 
 ## <a name="function-app-settings"></a>Einstellungen für Funktions-Apps
 
-Alle Einstellungen, die Sie in „local.settings.json“ hinzugefügt haben, müssen auch der Funktions-App in Azure hinzugefügt werden. Diese Einstellungen werden nicht automatisch hochgeladen, wenn Sie das Projekt veröffentlichen.
+Alle Einstellungen, die Sie in der Datei local.settings.json hinzugefügt haben, müssen auch der Funktions-App in Azure hinzugefügt werden. Diese Einstellungen werden nicht automatisch hochgeladen, wenn Sie das Projekt veröffentlichen.
 
 Um auf Ihre App-Einstellungen zuzugreifen, wechseln Sie zum Azure-Portal unter [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Wählen Sie unter **Funktions-Apps** die Option **Funktions-Apps** aus, und markieren Sie Ihren Funktionsnamen:
 
@@ -157,7 +157,7 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
 
 - **Generic WebHook**: eine einfache Funktion, die immer dann ausgeführt wird, wenn eine Anforderung von einem Dienst empfangen wird, der Webhooks unterstützt. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch einen generischen Webhook ausgelöst wird](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Durable functions orchestration**: Mithilfe von Durable Functions können Sie zustandsbehaftete Funktionen in einer Umgebung ohne Server schreiben. Die Erweiterung verwaltet Status, Prüfpunkte und Neustarts für Sie. Weitere Informationen finden Sie in den Leitfäden zu Azure Functions unter [Übersicht zu Durable Functions](/azure/azure-functions/durable-functions-overview).
+- **Durable functions orchestration**: Mithilfe von Durable Functions können Sie zustandsbehaftete Funktionen in einer Umgebung ohne Server schreiben. Die Erweiterung verwaltet den Status, Prüfpunkte und führt einen Neustart durch. Weitere Informationen finden Sie in den Leitfäden zu Azure Functions unter [Übersicht zu Durable Functions](/azure/azure-functions/durable-functions-overview).
 
 - **Image Resizer**: eine Funktion, die Images mit geänderter Größe erstellt, wenn einem Container ein Blob hinzugefügt wird. Diese Vorlage beinhaltet einen Pfad und eine Verbindungszeichenfolge für den Trigger, eine kleine Imageausgabe und eine mittelgroße Imageausgabe.
 

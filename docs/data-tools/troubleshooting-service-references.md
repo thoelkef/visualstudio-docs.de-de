@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586119"
 ---
 # <a name="troubleshoot-service-references"></a>Problembehandlung bei Dienstverweisen
@@ -29,13 +29,13 @@ In diesem Thema werden häufige Probleme aufgelistet, die auftreten können, wen
 
 ## <a name="error-returning-data-from-a-service"></a>Fehler beim Zurückgeben von Daten aus einem Dienst.
 
-Wenn Sie eine `DataSet` oder `DataTable` von einem Dienst zurückgeben, erhalten Sie möglicherweise die Ausnahme "das Kontingent für die maximale Größe für eingehende Nachrichten wurde überschritten". Standardmäßig wird die `MaxReceivedMessageSize`-Eigenschaft für einige Bindungen auf einen relativ kleinen Wert festgelegt, um das Risiko von Denial-of-Service-Angriffen einzuschränken. Sie können diesen Wert erhöhen, um die Ausnahme zu verhindern. Weitere Informationen finden Sie unter <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Wenn Sie einen `DataSet` oder `DataTable` von einem Dienst zurückgeben, erhalten Sie möglicherweise die Ausnahme "das Kontingent für die maximale Größe für eingehende Nachrichten wurde überschritten". Standardmäßig ist die- `MaxReceivedMessageSize` Eigenschaft für einige Bindungen auf einen relativ kleinen Wert festgelegt, um das Risiko von Denial-of-Service-Angriffen einzuschränken. Sie können diesen Wert erhöhen, um die Ausnahme zu verhindern. Weitere Informationen finden Sie unter <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 So beheben Sie diesen Fehler
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei *app. config* , um Sie zu öffnen.
+1. Doppelklicken Sie in **Projektmappen-Explorer**auf die *app.config* Datei, um Sie zu öffnen.
 
-2. Suchen Sie die `MaxReceivedMessageSize`-Eigenschaft, und ändern Sie Sie in einen größeren Wert.
+2. Suchen `MaxReceivedMessageSize` Sie die-Eigenschaft, und ändern Sie Sie in einen größeren Wert.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>In meiner Projekt Mappe wurde kein Dienst gefunden.
 
@@ -56,13 +56,13 @@ So beheben Sie diesen Fehler
 2. Deaktivieren Sie auf der Registerkarte **Start Optionen** das Kontrollkästchen **NTLM-Authentifizierung** .
 
     > [!NOTE]
-    > Sie sollten die NTLM-Authentifizierung nur für Websites deaktivieren, die ausschließlich WCF-Dienste enthalten. Die Sicherheit für WCF-Dienste wird durch die Konfiguration in der Datei " *Web. config* " verwaltet. Dadurch ist die NTLM-Authentifizierung unnötig.
+    > Sie sollten die NTLM-Authentifizierung nur für Websites deaktivieren, die ausschließlich WCF-Dienste enthalten. Die Sicherheit für WCF-Dienste wird durch die Konfiguration in der *web.config* -Datei verwaltet. Dadurch ist die NTLM-Authentifizierung unnötig.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Die Einstellung für die Zugriffsebene für generierte Klassen hat keine Auswirkungen.
 
-Das Festlegen der Option **Zugriffsebene für generierte Klassen** im Dialogfeld **Dienst Verweise konfigurieren** auf **intern** oder **Friend** funktioniert möglicherweise nicht immer. Obwohl die-Option im Dialogfeld festgelegt werden muss, werden die resultierenden Unterstützungs Klassen mit der Zugriffsebene `Public`generiert.
+Das Festlegen der Option **Zugriffsebene für generierte Klassen** im Dialogfeld **Dienst Verweise konfigurieren** auf **intern** oder **Friend** funktioniert möglicherweise nicht immer. Obwohl die-Option im Dialogfeld festgelegt werden muss, werden die resultierenden Unterstützungs Klassen mit der Zugriffsebene generiert `Public` .
 
-Dies ist eine bekannte Einschränkung für bestimmte Typen, z. b. solche, die mit dem <xref:System.Xml.Serialization.XmlSerializer>serialisiert werden.
+Dies ist eine bekannte Einschränkung für bestimmte Typen, z. b. solche, die mithilfe von serialisiert werden <xref:System.Xml.Serialization.XmlSerializer> .
 
 ## <a name="error-debugging-service-code"></a>Fehler beim Debugging von Dienst Code
 
@@ -82,7 +82,7 @@ Um diesen Fehler zu beheben, müssen Sie das Dienstprojekt manuell neu erstellen
 
 4. Laden Sie das WCF-Dienstprojekt.
 
-5. Legen Sie im Dialogfeld **Configuration Manager** die aktive Projektmappenkonfiguration auf **Debuggen**fest. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
+5. Legen Sie im Dialogfeld **Configuration Manager** die aktive Projektmappenkonfiguration auf **Debuggen**fest. **Active solution configuration** Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 
 6. Wählen Sie in **Projektmappen-Explorer**das WCF-Dienstprojekt aus.
 
@@ -90,18 +90,18 @@ Um diesen Fehler zu beheben, müssen Sie das Dienstprojekt manuell neu erstellen
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services nicht im Browser angezeigt.
 
-Wenn versucht wird, eine XML-Darstellung der Daten in einem [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]anzuzeigen, interpretiert Internet Explorer die Daten möglicherweise nicht als RSS-Feed. Stellen Sie sicher, dass die Option zum Anzeigen von RSS-Feeds deaktiviert ist.
+Wenn versucht wird, eine XML-Darstellung von Daten in einem anzuzeigen [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , interpretiert Internet Explorer die Daten möglicherweise nicht als RSS-Feed. Stellen Sie sicher, dass die Option zum Anzeigen von RSS-Feeds deaktiviert ist.
 
 Deaktivieren Sie RSS-Feeds, um diesen Fehler zu beheben:
 
-1. Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.
+1. Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.
 
 2. Klicken Sie auf der Registerkarte **Inhalt** im Abschnitt **Feeds** auf **Einstellungen**.
 
 3. Deaktivieren Sie im Dialogfeld **Feed-Einstellungen** das Kontrollkästchen **Feed-Leseansicht** aktivieren, und klicken Sie dann auf **OK**.
 
-4. Klicken Sie auf **OK**, um das Dialogfeld **Internetoptionen** zu schließen.
+4. Klicken Sie auf **OK** , um das Dialogfeld **Internet Optionen** zu schließen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

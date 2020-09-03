@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36803dfbba7ea6d6d2a869fb94c05105ed4af15d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643332"
 ---
 # <a name="visual-c-intellisense"></a>Visual C#-IntelliSense
@@ -32,21 +32,21 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
 
 - Variablen-, Befehls- und Funktionsnamen
 
-- [Codeausschnitte](#CodeSnippets)
+- [Code Ausschnitte](#CodeSnippets),
 
-- [Sprachschlüsselwörter](#Keywords)
+- [Sprach Schlüsselwörter](#Keywords)
 
 - [Erweiterungsmethoden](#ExtensionMethods)
 
   Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrelevante Token herauszufiltern und auf der Grundlage des Kontexts eine Vorauswahl unter den Token zu treffen. Weitere Informationen finden Sie unter [Filtered Completion Lists in C# (Gefilterte Vervollständigungslisten in C#)](../misc/filtered-completion-lists-in-csharp.md) und unter [Pre-selected Completion List Items in C# (Vorauswahl von Elementen in Vervollständigungslisten in C#)](../misc/pre-selected-completion-list-items-in-csharp.md).
 
-### <a name="CodeSnippets"></a> Codeausschnitte in Vervollständigungslisten
+### <a name="code-snippets-in-completion-lists"></a><a name="CodeSnippets"></a> Code Ausschnitte in Vervollständigungs Listen
  In Visual C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Shortcut-Element (IntelliSense-Codeausschnitte)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) des Ausschnitts angezeigt.  Weitere Informationen über standardmäßig in Visual C# verfügbare Codeausschnitte finden Sie unter [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).
 
-### <a name="Keywords"></a> Sprachschlüsselwörter in Vervollständigungslisten
+### <a name="language-keywords-in-completion-lists"></a><a name="Keywords"></a> Sprachschlüsselwörter in Vervollständigungslisten
  In Visual C# umfasst die Vervollständigungsliste zusätzlich Sprachschlüsselwörter. Weitere Informationen über Sprachschlüsselwörter in C# finden Sie unter [C#-Schlüsselwörter](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).
 
-### <a name="ExtensionMethods"></a> Erweiterungsmethoden in Vervollständigungslisten
+### <a name="extension-methods-in-completion-lists"></a><a name="ExtensionMethods"></a> Erweiterungsmethoden in Vervollständigungslisten
  In Visual C# enthält die Vervollständigungsliste Erweiterungsmethoden innerhalb des jeweiligen Gültigkeitsbereichs.
 
 > [!NOTE]
@@ -59,19 +59,19 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
 
  In Visual C# werden die Vervollständigungslisten für folgende Elemente gefiltert:
 
-- **Schnittstellen und Basisklassen** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces. Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da Visual C# mehrfache Vererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
+- **Schnittstellen und Basisklassen** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da Visual C# mehrfache Vererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
 
 - **Attribute:** Beim Anwenden eines Attributs auf einen Typ wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z.B. <xref:System.Attribute>.
 
 - `as`- und `is`-Operatoren
 
-- **Catch-Klauseln**
+- **Catch-Klauseln.**
 
 - **Objektinitialisierer:** Nur Member, die initialisiert werden können, werden in der Vervollständigungsliste angezeigt.
 
 - **Neues Schlüsselwort:** Wenn Sie `new` eingeben und dann die LEERTASTE drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden in den Vervollständigungslisten automatisch Elemente für Deklarationen und return-Anweisungen in Methoden ausgewählt.
 
-- **as- und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die LEERTASTE drücken.
+- **As-und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch angezeigt, wenn Sie die Leertaste drücken, nachdem Sie das `as` Schlüsselwort oder eingegeben haben `is` .
 
 - Ereignisse: Wenn Sie das Schlüsselwort `event` eingeben, sind in der Vervollständigungsliste nur Delegattypen enthalten.
 
@@ -90,11 +90,11 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
 
  Um den Vorgang "Hinzufügen mit" zu initiieren, positionieren Sie den Cursor auf einem Typverweis, der nicht aufgelöst werden kann. Wenn Sie beispielsweise eine Konsolenanwendung erstellen und dann `XmlTextReader` zum Text der `Main`-Methode hinzufügen, erscheint ein Smarttag unter dem äußersten rechten Zeichen von `XmlTextReader`, da es als ein Typverweis angezeigt wird, der nicht aufgelöst werden kann.
 
- ![Hinzufügen mithilfe eines smarttagimages](../ide/media/addusesmart.gif "Addusesmart")
+ ![Bild zum Hinzufügen mit Smarttag](../ide/media/addusesmart.gif "Addusesmart")
 
  Sie können dann die Option „Hinzufügen mit“ aufrufen, indem Sie sie im Untermenü **Auflösen** des **IntelliSense**-Menüs oder des Kontextmenüs auswählen. Mithilfe des Smarttags kann die Option „Hinzufügen mit“ auch aufgerufen werden. Das Smarttag ist nur sichtbar, wenn der Cursor sich auf oder neben dem ungebundenen Typ befindet.
 
- ![Add using, erweitertes Smarttag-Bild](../ide/media/addusesmartexp.gif "Addusesmartexp")
+ ![Bild zum Hinzufügen mit erweitertem Smarttag](../ide/media/addusesmartexp.gif "Addusesmartexp")
 
 ### <a name="organize-usings"></a>Using-Direktiven organisieren
  Mit den Optionen unter **Using**-Direktiven organisieren können Sie `using`- und `extern`-Deklarationen sortieren und entfernen, ohne das Verhalten des Quellcodes zu ändern. Im Laufe der Zeit können Quelldateien aufgrund von nicht benötigten und unorganisierten `using`-Direktiven sehr groß werden und schwer zu lesen sein. Die Optionen **Using-Anweisungen organisieren** komprimieren Quellcode, in dem sie nicht verwendete `using`-Anweisungen entfernen, und verbessern die Lesbarkeit durch Sortieren.
@@ -109,7 +109,7 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
 ### <a name="implement-abstract-base-class"></a>Implementieren abstrakter Basisklassen
  IntelliSense bietet eine Option zum automatischen Implementieren von Membern einer abstrakten Basisklasse während der Arbeit im Code-Editor. Normalerweise erfordert das Implementieren von Membern einer abstrakten Basisklasse das Erstellen einer neuen Methodendefinition für jede Methode der abstrakten Basisklasse in der abgeleiteten Klasse. Mithilfe von IntelliSense wird nach der Eingabe des Namens einer abstrakten Basisklasse in einer Klassendeklaration ein Smarttag angezeigt. Das Smarttag bietet Ihnen die Möglichkeit, die Basisklassenmethoden automatisch zu implementieren.
 
- Die durch das Feature zum Implementieren einer abstrakten Basisklasse generierten MethodStubs werden durch den in der Datei „MethodStub.snippet“ definierten Codeausschnitt modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md).
+ Die durch das Feature zum Implementieren einer abstrakten Basisklasse generierten MethodStubs werden durch den in der Datei „MethodStub.snippet“ definierten Codeausschnitt modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Code](../ide/walkthrough-creating-a-code-snippet.md)Ausschnitts.
 
 ### <a name="generate-from-usage"></a>Aus Verwendung generieren
  Mit der Funktion **Aus Verwendung generieren** können Sie Klassen und Member verwenden, bevor Sie sie definieren. Sie können ein Stub für alle Klassen, Konstruktoren, Methoden, Eigenschaften, Felder oder Enumerationen generieren, die Sie verwenden möchten, aber noch nicht definiert haben. Sie können neue Typen und Member generieren, ohne Ihre aktuelle Position im Code zu verlassen. Dies verringert die Unterbrechung des Workflows.
@@ -141,11 +141,11 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
 
  Wenn Sie den `+=`-Operator nach einem Ereignisfeld in einer CS-Datei eingeben, zeigt IntelliSense die Option zum Drücken der TAB-TASTE an. Hierbei wird eine neue Instanz eines Delegaten eingefügt, der auf die Methode zum Behandeln des Ereignisses zeigt.
 
- ![Schaltfläche "automatischer Hook"](../ide/media/vxautohookup.gif "vxautoanokup")
+ ![Button automatisch verknüpfen](../ide/media/vxautohookup.gif "vxautoanokup")
 
  Wenn Sie die TAB-TASTE drücken, schließt IntelliSense die Anweisung automatisch für Sie ab und zeigt den Ereignishandlerverweis als ausgewählten Text im Code-Editor an. Um die automatische Ereigniseinbindung abzuschließen, fordert IntelliSense Sie erneut zum Drücken der TAB-TASTE auf, um einen leeren Stub für den Ereignishandler zu erstellen.
 
- ![Ereignis Handler generieren](../ide/media/vxgenerateeventhandler.gif "vxgenerateeventhandler")
+ ![Ereignishandler generieren](../ide/media/vxgenerateeventhandler.gif "vxgenerateeventhandler")
 
 > [!NOTE]
 > Wenn ein neuer Delegat, der von IntelliSense erstellt wird, auf einen vorhandenen Ereignishandler verweist, vermittelt IntelliSense diese Informationen über die QuickInfo. Sie können diesen Verweis dann ändern. Der Text ist im Code-Editor bereits ausgewählt. Andernfalls ist die automatische Ereigniseinbindung an diesem Punkt abgeschlossen.
@@ -153,9 +153,9 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
  Wenn Sie die TAB-TASTE drücken, versieht IntelliSense eine Methode per Stub mit der richtigen Signatur und fügt den Cursor in den Text Ihres Ereignishandlers ein.
 
 > [!NOTE]
-> Verwenden Sie im Menü **Ansicht** (STRG+-) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.
+> Verwenden Sie den Befehl **Rückwärts navigieren** im Menü **Ansicht** (STRG +-), um zur Anweisung für die Ereignis Einbindung zurückzukehren.
 
  Die folgende Aufgabe veranschaulicht, wie IntelliSense einen Ereignishandler mit dem Namen `button1_Click` automatisch mit einem Ereignisfeld mit dem Namen `button1.Click` verknüpft.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-IDE](../ide/visual-studio-ide.md)

@@ -10,17 +10,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9583230a081cd1e9b543350b9ad998ab5d68e79
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851381"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Architecture Tooling Guidance ist ein herunterladbares Paket mit einer praktischen Anleitung zur Verwendung von Modellierungstools in Visual Studio 2010. Er bietet eine allgemeine Übersicht zur Verwendung der einzelnen Modellierungstools integrierte und erläutert die häufigsten Szenarien, in denen die Tools verwendet werden.
+Diese Architektur Tool Anleitung ist ein herunterladbares Paket mit praktischer Anleitung zur Verwendung der Modellierungstools in Visual Studio 2010. Er bietet eine allgemeine Übersicht über die Verwendung aller Modellierungstools in integrierter Weise und erläutert die gängigsten Szenarien, in denen die Tools verwendet werden.
 
- Der Inhalt wurde von den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Alm Rangers erstellt, einer speziellen Gruppe, die Mitglieder des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Produktteams, Microsoft-Dienste, MVPs (Microsoft Most-Wert Professionals) und [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Community Leads hat.
+ Der Inhalt wurde von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Alm Rangers erstellt, einer speziellen Gruppe, die Mitglieder des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Produktteams, Microsoft-Dienste, MVPs (Microsoft Most-Wert Professionals) und communityleads hat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
  [Klicken Sie hier, um den Leitfaden zu Architektur Tools herunterzuladen.](https://archive.codeplex.com/?p=vsarchitectureguide)

@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97d98522e011023cb3a021a69c9a82e8bb34cef3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533275"
 ---
 # <a name="debug-multiple-processes"></a>Debuggen mehrerer Prozesse
@@ -43,7 +43,7 @@ Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechsel
   
  [Anhalten des Debuggings, Beenden und Abtrennen von Prozessen](#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
-## <a name="configure-the-execution-behavior-of-multiple-processes"></a><a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>Konfigurieren des Ausführungs Verhaltens mehrerer Prozesse  
+## <a name="configure-the-execution-behavior-of-multiple-processes"></a><a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Konfigurieren des Ausführungs Verhaltens mehrerer Prozesse  
  Wenn standardmäßig mehrere Prozesse im Debugger ausgeführt werden, wirken sich die Befehle für Unterbrechen, Durchlaufen und Beenden des Debuggers normalerweise auf alle Prozesse aus. Wenn beispielsweise ein Prozess an einem Haltepunkt angehalten wird, wird die Ausführung aller anderen Prozesse auch angehalten. Sie können dieses Standardverhalten ändern, um mehr Kontrolle über die Ziele von Ausführungsbefehlen zu erhalten.  
   
 1. Klicken Sie im Menü **Debuggen** auf **Optionen und Einstellungen**.  
@@ -59,7 +59,7 @@ Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechsel
   
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-## <a name="start-multiple-processes-in-a-vs-solution-attach-to-a-process-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a>Starten mehrerer Prozesse in einer vs-Projekt Mappe, Anfügen an einen Prozess, automatisches Starten eines Prozesses im Debugger  
+## <a name="start-multiple-processes-in-a-vs-solution-attach-to-a-process-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Starten mehrerer Prozesse in einer vs-Projekt Mappe, Anfügen an einen Prozess, automatisches Starten eines Prozesses im Debugger  
   
 - [Starten des Debuggens mehrerer Prozesse in einer Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) -Projekt Mappe • [Ändern des Start Projekts](#BKMK_Change_the_startup_project) • [Starten eines bestimmten Projekts in einer Projekt](#BKMK_Start_a_specific_project_in_a_solution) Mappe • [Starten mehrerer Projekte in einer](#BKMK_Start_multiple_projects_in_a_solution) Projekt Mappe • [Anfügen an einen Prozess](#BKMK_Attach_to_a_process) • [Automatisches Starten eines Prozesses im Debugger](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
@@ -68,25 +68,25 @@ Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechsel
 > 
 > - Fügen Sie den Debugger an den untergeordneten Prozess an, nachdem dieser gestartet wurde.  
 > 
->   - oder -  
+>   Oder  
 >   - Konfigurieren Sie Windows so, dass der untergeordnete Prozess in einer neuen Instanz des Debuggers automatisch gestartet wird.  
   
-### <a name="start-debugging-multiple-processes-in-a-visual-studio-solution"></a><a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>Starten des Debuggens mehrerer Prozesse in einer Visual Studio-Projekt Mappe  
+### <a name="start-debugging-multiple-processes-in-a-visual-studio-solution"></a><a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Starten des Debuggens mehrerer Prozesse in einer Visual Studio-Projekt Mappe  
  Wenn Sie mehr als ein Projekt in einer Visual Studio-Projektmappe haben, die unabhängig ausgeführt werden kann (Projekte, die in separaten Prozessen ausgeführt werden), können Sie auswählen, welche Projekte vom Debugger gestartet werden.  
   
  ![Ändern des Starttyps für ein Projekt](../debugger/media/dbg-execution-startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
   
-#### <a name="change-the-startup-project"></a><a name="BKMK_Change_the_startup_project"></a>Ändern des Start Projekts  
+#### <a name="change-the-startup-project"></a><a name="BKMK_Change_the_startup_project"></a> Ändern des Start Projekts  
  Um das Startprojekt für eine Projekt Mappe zu ändern, wählen Sie das Projekt in Projektmappen-Explorer aus, und wählen Sie dann im Kontextmenü die Option **als Startprojekt festlegen** aus.  
   
-#### <a name="start-a-specific-project-in-a-solution"></a><a name="BKMK_Start_a_specific_project_in_a_solution"></a>Starten eines bestimmten Projekts in einer Projekt Mappe  
+#### <a name="start-a-specific-project-in-a-solution"></a><a name="BKMK_Start_a_specific_project_in_a_solution"></a> Starten eines bestimmten Projekts in einer Projekt Mappe  
  Um ein Projekt für eine Projekt Mappe zu starten, ohne das Standard Startprojekt zu ändern, wählen Sie das Projekt in Projektmappen-Explorer aus, und wählen Sie anschließend im Kontextmenü **Debuggen** aus. Anschließend können Sie **neue Instanz starten** oder **in neue Instanz**springen auswählen.  
   
  ![Zurück zum](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Anfang: Starten mehrerer Prozesse in einer vs-Projekt Mappe, Anfügen an einen Prozess, automatisches Starten eines Prozesses im Debugger](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-#### <a name="start-multiple-projects-in-a-solution"></a><a name="BKMK_Start_multiple_projects_in_a_solution"></a>Starten mehrerer Projekte in einer Projekt Mappe  
+#### <a name="start-multiple-projects-in-a-solution"></a><a name="BKMK_Start_multiple_projects_in_a_solution"></a> Starten mehrerer Projekte in einer Projekt Mappe  
   
 1. Wählen Sie die Projekt Mappe in Projektmappen-Explorer aus, und klicken Sie dann im Kontextmenü auf **Eigenschaften** .  
   
@@ -111,7 +111,7 @@ Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechsel
   
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-### <a name="automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Automatisches Starten eines Prozesses im Debugger  
+### <a name="automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Automatisches Starten eines Prozesses im Debugger  
  In bestimmten Fällen müssen Sie möglicherweise den Startcode für ein Programm debuggen, das von einem anderen Prozess gestartet wird. Zu den Beispielen hierfür gehören Dienste und benutzerdefinierte Setupaktionen. Für diese Szenarios können Sie festlegen, dass der Debugger beim Starten der Anwendung gestartet und automatisch an die Anwendung angefügt wird.  
   
 1. Starten Sie den Registrierungs-Editor (**regedit.exe**).  
@@ -136,7 +136,7 @@ Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechsel
   
    ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-## <a name="switch-processes-break-and-continue-execution-step-through-source"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Wechseln von Prozessen, unterbrechen und Fortsetzen der Ausführung, schrittweises Ausführen  
+## <a name="switch-processes-break-and-continue-execution-step-through-source"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Wechseln von Prozessen, unterbrechen und Fortsetzen der Ausführung, schrittweises Ausführen  
   
 - [Wechseln zwischen Prozessen](#BKMK_Switch_between_processes) • [Befehle zum Abbrechen, Schritt und fortsetzen](#BKMK_Break__step__and_continue_commands)  
   
@@ -173,17 +173,17 @@ Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechsel
 |Menü **Debuggen** :<br /><br /> -   **Alle abbrechen**|Alle Prozesse werden unterbrochen.|Alle Prozesse werden unterbrochen.|  
 |Menü **Debuggen** :<br /><br /> -   **Auch**|Alle Prozesse werden fortgesetzt.|Alle angehaltenen Prozesse werden fortgesetzt.|  
 |Menü **Debuggen** :<br /><br /> -   **Einzelschritt**<br />-   **Prozedur Schritt**<br />-   **Rücksprung**|Alle Prozesse werden während der aktuellen Prozessschritte ausgeführt.<br /><br /> Anschließend werden alle Prozesse unterbrochen.|Aktuelle Prozessschritte.<br /><br /> Angehaltene Prozesse werden fortgesetzt.<br /><br /> Ausgeführte Prozesse werden fortgesetzt.|  
-|Menü **Debuggen** :<br /><br /> -   **Aktuellen Prozessschritt Weise ausführen**<br />-   **Aktuellen Prozess überspringen**<br />-   **Aktuellen Prozess ausführen**|–|Aktuelle Prozessschritte.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
+|Menü **Debuggen** :<br /><br /> -   **Aktuellen Prozessschritt Weise ausführen**<br />-   **Aktuellen Prozess überspringen**<br />-   **Aktuellen Prozess ausführen**|Nicht zutreffend|Aktuelle Prozessschritte.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
 |Quellcodefenster<br /><br /> -   **Haltepunkt**|Alle Prozesse werden unterbrochen.|Nur der Prozess im Quellcodefenster wird unterbrochen.|  
 |Kontextmenü des Quellcodefensters:<br /><br /> -   **Ausführen bis Cursor**<br /><br /> Das Quellcodefenster muss sich im aktuellen Prozess befinden.|Alle Prozesse werden ausgeführt, während der Prozess im Quellcodefenster bis zum Cursor ausgeführt und dann unterbrochen wird.<br /><br /> Anschließend werden alle anderen Prozesse unterbrochen.|Der Prozess im Quellcodefenster wird bis zum Cursor ausgeführt.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
-|Kontextmenü des **Prozess** Fensters:<br /><br /> -   **Prozess Abbrechen**|–|Der ausgewählte Prozess wird angehalten.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
+|Kontextmenü des **Prozess** Fensters:<br /><br /> -   **Prozess Abbrechen**|Nicht zutreffend|Der ausgewählte Prozess wird angehalten.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
 |Kontextmenü des **Prozess** Fensters:<br /><br /> -   **Prozess fortsetzen**|Nicht zutreffend|Der ausgewählte Prozess wird fortgesetzt.<br /><br /> Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|  
   
  ![Zurück zu den ersten](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [switchprozessen, unterbrechen und Fortsetzen der Ausführung, schrittweises Ausführen der Quelle](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-## <a name="stop-debugging-terminate-or-detach-from-processes"></a><a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a>Beenden des Debuggens, beenden oder Trennen von Prozessen  
+## <a name="stop-debugging-terminate-or-detach-from-processes"></a><a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Beenden des Debuggens, beenden oder Trennen von Prozessen  
   
 - [Befehle für Anhalten, Beenden und Abtrennen](#BKMK_Stop__terminate__and_detach_commands)  
   
@@ -202,7 +202,7 @@ Hier werden folgende Themen beschrieben: Starten von Debuggingprozessen, Wechsel
   
 - Öffnen Sie das Fenster **Prozesse** (Tastenkombination **STRG + ALT + Z**). Wählen Sie einen Prozess aus, und aktivieren oder deaktivieren Sie das Kontrollkästchen **beim Beenden des Debuggens trennen** .  
   
-### <a name="stop-terminate-and-detach-commands"></a><a name="BKMK_Stop__terminate__and_detach_commands"></a>Beenden, beenden und trennen von Befehlen  
+### <a name="stop-terminate-and-detach-commands"></a><a name="BKMK_Stop__terminate__and_detach_commands"></a> Beenden, beenden und trennen von Befehlen  
   
 |**Befehl**|**Beschreibung**|  
 |-|-|  

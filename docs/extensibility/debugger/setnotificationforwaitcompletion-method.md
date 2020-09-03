@@ -1,5 +1,5 @@
 ---
-title: SetNotificationForWaitCompletion-Methode | Microsoft Docs
+title: Setnotificationforwaitcompletion-Methode | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712864"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion-Methode
-Legt das TASK_STATE_WAIT_COMPLETION_NOTIFICATION-Statusbit fest oder löscht es.
+Legt das TASK_STATE_WAIT_COMPLETION_NOTIFICATION Zustands Bit fest oder löscht dieses.
 
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Baugruppe:** mscorlib (in *mscorlib.dll*)
+ **Assembly:** mscorlib (in *mscorlib.dll*)
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,14 +33,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>Parameter
  `enabled`
 
- `true`, um das Bit festzulegen; `false` , um das Bit zu unterlassen.
+ `true` So legen Sie das Bit fest `false` , wenn das Bit nicht festgelegt werden soll.
 
 ## <a name="exceptions"></a>Ausnahmen
 
 ## <a name="remarks"></a>Bemerkungen
- Der Debugger legt dieses Bit so fest, dass er aus einem asynchronen Methodentext herausspringt. Wenn `enabled` `true`dies der Fall ist, muss diese Methode nur für eine Aufgabe aufgerufen werden, die noch nicht abgeschlossen wurde. Wenn `enabled` `false`dies der Zeitpunkt ist, kann diese Methode für abgeschlossene Aufgaben aufgerufen werden. In beiden Fall sollte es nur für Aufgaben im Versprechenstil verwendet werden.
+ Der Debugger legt dieses Bit fest, um den asynchronen Methoden Text auszulagern. Wenn `enabled` ist `true` , muss diese Methode nur für eine Aufgabe aufgerufen werden, die noch nicht abgeschlossen wurde. Wenn `enabled` `false` den Wert hat, kann diese Methode für abgeschlossene Aufgaben aufgerufen werden. In beiden Ereignissen sollte Sie nur für Aufgaben im Promise-Stil verwendet werden.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

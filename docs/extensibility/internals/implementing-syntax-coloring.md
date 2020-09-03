@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905212"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
-Wenn der Sprachdienst die farbliche Syntax Markierung bereitstellt, konvertiert der Parser eine Textzeile in ein Array von kolorierbaren Elementen und gibt Tokentypen zurück, die diesen färb baren Elementen entsprechen. Der Parser sollte Tokentypen zurückgeben, die zu einer Liste von kolatable-Elementen gehören. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]zeigt jedes kolorierbare Element im Code Fenster entsprechend der Attribute an, die vom Farb Zeichenfolgenobjekt dem entsprechenden Tokentyp zugewiesen werden.
+Wenn der Sprachdienst die farbliche Syntax Markierung bereitstellt, konvertiert der Parser eine Textzeile in ein Array von kolorierbaren Elementen und gibt Tokentypen zurück, die diesen färb baren Elementen entsprechen. Der Parser sollte Tokentypen zurückgeben, die zu einer Liste von kolatable-Elementen gehören. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zeigt jedes kolorierbare Element im Code Fenster entsprechend der Attribute an, die vom Farb Zeichenfolgenobjekt dem entsprechenden Tokentyp zugewiesen werden.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]gibt keine parserschnittstelle an, und die Parser-Implementierung ist vollständig für Sie festgelegt. Im Visual Studio-Sprachpaket Projekt wird jedoch eine standardmäßige Parser-Implementierung bereitgestellt. Bei verwaltetem Code bietet das Managed Package Framework (MPF) vollständige Unterstützung für die Farbgebung von Text.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gibt keine parserschnittstelle an, und die Parser-Implementierung ist vollständig für Sie festgelegt. Im Visual Studio-Sprachpaket Projekt wird jedoch eine standardmäßige Parser-Implementierung bereitgestellt. Bei verwaltetem Code bietet das Managed Package Framework (MPF) vollständige Unterstützung für die Farbgebung von Text.
 
  Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren von Syntax Farben finden Sie unter Exemplarische Vorgehensweise [: Markieren von Text](../../extensibility/walkthrough-highlighting-text.md).
 
@@ -62,7 +62,7 @@ Wenn der Sprachdienst die farbliche Syntax Markierung bereitstellt, konvertiert 
 ## <a name="managed-package-framework-colorizer"></a>Farbauswahl für Managed Package Framework
  Das Managed Package Framework (MPF) stellt alle Klassen bereit, die erforderlich sind, um eine Farbgebung zu implementieren. Ihre Sprachdienst Klasse sollte die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse erben und die erforderlichen Methoden implementieren. Sie müssen einen Scanner und einen Parser angeben, indem Sie die <xref:Microsoft.VisualStudio.Package.IScanner> -Schnittstelle implementieren und eine Instanz dieser Schnittstelle von der-Methode zurückgeben <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (eine der Methoden, die in der-Klasse implementiert werden müssen <xref:Microsoft.VisualStudio.Package.LanguageService> ). Weitere Informationen finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Verwenden von integrierten einfärbbaren Elementen](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Benutzerdefinierte einfärbbare Elemente](../../extensibility/internals/custom-colorable-items.md)
 - [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)

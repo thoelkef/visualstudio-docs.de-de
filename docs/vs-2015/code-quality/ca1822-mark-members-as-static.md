@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2416eb24c21ef0e61bdb6db3de66c892e1eb699f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545339"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren.
@@ -27,11 +27,11 @@ ms.locfileid: "85545339"
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1822: Markieren](/visualstudio/code-quality/ca1822-mark-members-as-static)von Membern als statisch.
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|MarkMethodsAsStatic|
 |CheckId|CA1822|
-|Kategorie|Microsoft. Performance|
+|Category|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen.<br /><br /> Nicht unterbrechend: Wenn Sie das Element nur mit dem-Schlüsselwort in einen Instanzmember ändern `this` .<br /><br /> Unterbrechen: Wenn Sie den Member von einem Instanzmember in einen statischen Member ändern und dieser außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache

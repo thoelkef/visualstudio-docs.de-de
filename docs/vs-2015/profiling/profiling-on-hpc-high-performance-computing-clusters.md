@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535537"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
@@ -52,7 +52,7 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
-|Syntax Element|Beschreibung|  
+|Syntax Element|BESCHREIBUNG|  
 |-|-|  
 |*Haupt Knoten*|Der Name des Hauptknotens für den Cluster.|  
 |*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Der Pfad auf den [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedien ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
@@ -126,7 +126,7 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften  
   
-|Eigenschaft|Beschreibung|  
+|Eigenschaft|BESCHREIBUNG|  
 |--------------|-----------------|  
 |**Hauptknoten**|Gibt den Computer an, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält.|  
 |**Anzahl der Prozesse**|Gibt die Anzahl der Instanzen der Anwendung an, die in der Anwendung mit der Profilerstellung ausgeführt werden.|  
@@ -137,7 +137,7 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften  
   
-|Eigenschaft|Beschreibung|  
+|Eigenschaft|BESCHREIBUNG|  
 |--------------|-----------------|  
 |**Projektname**|Der Name des aktuellen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Projekts oder -Lösung.|  
 |**Bereinigen beim Beenden des Profilers**|Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden.|  

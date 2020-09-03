@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284944"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installieren von Microsoft Help Viewer
@@ -43,7 +43,7 @@ Zudem können Sie Microsoft Help Viewer ganz leicht über das Suchfeld installie
 
    ![Schaltfläche „Installieren”](media/installation/install.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Help Viewer und Offline Inhalt für SQL Server](/sql/sql-server/sql-server-help-installation)

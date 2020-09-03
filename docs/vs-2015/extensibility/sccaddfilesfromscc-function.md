@@ -1,5 +1,5 @@
 ---
-title: SccAddFilesFromSCC-Funktion | Microsoft-Dokumentation
+title: Sccaddfilesfromscc-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200907"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion hinzugefügt den aktuell geöffneten Projekt eine Liste von Dateien aus der quellcodeverwaltung.  
+Diese Funktion fügt eine Liste von Dateien aus der Quell Code Verwaltung dem aktuell geöffneten Projekt hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,43 +41,43 @@ SCCRTN SccAddFilesFromSCC(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- "pContext"  
- [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
+ pContext  
+ in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.  
   
  hWnd  
- [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
+ in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.  
   
- lpUser  
- [in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich des null-Abschlusszeichens).  
+ lpuser  
+ [in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich des NULL-Terminator).  
   
- lpAuxProjPath  
- [in, out] Zusätzliche Zeichenfolge, die zur Identifizierung des Projekts (bis zu `SCC_PRJPATH_`Größe, einschließlich des null-Abschlusszeichens).  
+ lpauxprojpath  
+ [in, out] Zusätzliche Zeichenfolge, die das Projekt identifiziert (bis zur `SCC_PRJPATH_` Größe, einschließlich des NULL-Terminator).  
   
  cFiles  
- [in] Anzahl der Dateien, die vom `lpFilePaths`.  
+ in Anzahl von Dateien, die von angegeben werden `lpFilePaths` .  
   
- lpFilePaths  
- [in, out] Array von Dateinamen, die dem aktuellen Projekt hinzufügen.  
+ lpfilepath  
+ [in, out] Array von Dateinamen, die dem aktuellen Projekt hinzugefügt werden sollen.  
   
- lpDestination  
- [in] Der Zielpfad, wo sind die Dateien geschrieben werden.  
+ lpdestination  
+ in Der Zielpfad, in den die Dateien geschrieben werden sollen.  
   
- lpComment  
- [in] Der Kommentar, der auf jede der hinzugefügten Dateien angewendet werden.  
+ lpcomment  
+ in Der Kommentar, der auf jede der hinzugefügten Dateien angewendet werden soll.  
   
- pbResults  
- [in, out] Array von Flags, die auf Erfolg (ungleich NULL oder "true") festgelegt ist oder Fehler (0 (null) oder "false") für jede Datei (Größe des Arrays muss mindestens `cFiles` lang).  
+ pbresults  
+ [in, out] Ein Array von Flags, die festgelegt werden, um einen Erfolg (ungleich 0 oder true) oder einen Fehler (null oder false) für jede Datei anzugeben (die Größe des Arrays muss mindestens `cFiles` lang sein).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|SCC_E_PROJNOTOPEN|Projekt kann nicht geöffnet werden.|  
-|SCC_E_OPNOTPERFORMED|Es ist keine Verbindung zum gleichen Projekt gemäß `lpAuxProjPath.`|  
-|SCC_E_NOTAUTHORIZED|Benutzer ist nicht autorisiert, auf die Datenbank zu aktualisieren.|  
+|SCC_E_PROJNOTOPEN|Das Projekt ist nicht geöffnet.|  
+|SCC_E_OPNOTPERFORMED|Die Verbindung ist nicht mit dem Projekt identisch, das von angegeben wird. `lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht autorisiert, die Datenbank zu aktualisieren.|  
 |SCC_E_NONSPECIFICERROR|Unbekannter Fehler.|  
-|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|  
+|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss erneut geladen werden.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

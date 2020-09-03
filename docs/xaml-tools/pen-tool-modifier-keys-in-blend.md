@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328366"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Stifttool-Zusatztasten in Blend für Visual Studio
@@ -36,7 +36,7 @@ In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie ein
 |Bei der Verbindung zweier Pfade eine abgerundete Ecke erstellen|Wählen Sie zwei Pfade aus, klicken Sie auf das Tool **Stift**, klicken Sie auf einen Endpunkt einer der Pfade, und ziehen Sie anschließend einen Endpunkt des anderen Pfads|![Bei der Verbindung zweier Pfade eine abgerundete Ecke erstellen](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Stiftzeiger zum Verbinden|
 |Erstellt einen neuen Pfad.|Halten Sie **STRG** gedrückt, und klicken Sie außerhalb des vorigen Pfads, damit diesem keine Punkte mehr hinzugefügt werden, und klicken oder ziehen Sie dort, wo der neue Pfad beginnen soll|![Erstellt einen neuen Pfad.](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Stiftzeiger zum Starten|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zusatztasten der Zeichenflächen](artboard-modifier-keys-in-blend.md)
 - [Direktauswahltool-Zusatztasten](direct-selection-tool-modifier-keys-in-blend.md)

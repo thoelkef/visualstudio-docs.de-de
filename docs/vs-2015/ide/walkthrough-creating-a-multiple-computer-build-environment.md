@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672312"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
@@ -54,25 +54,25 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 
 - [Installieren von Software auf den Computern](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)
 
-- [Kopieren von Dateien vom Buildcomputer zum Hostcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
+- [Kopieren von Dateien vom Host Computer auf den Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
 
 - [Erstellen von Registrierungseinstellungen](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
 
 - [Einstellungsumgebungsvariablen auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
 
-- [Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
+- [Installieren von MSBuild-Assemblys im globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
 
-- [Erstellen von Projekten](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
+- [Projekte werden aufgebaut](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
 
 - [Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Eine lizenzierte Kopie von Visual StudioUltimate, Visual Studio Premium oder Visual Studio Professional
 
 - Eine Kopie des .NET Framework 4.5.1, die Sie von der [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779)-Website herunterladen können.
 
-## <a name="InstallingSoftware"></a> Installieren von Software auf den Computern
+## <a name="installing-software-on-the-computers"></a><a name="InstallingSoftware"></a> Installieren von Software auf den Computern
  Richten Sie zunächst den Hostcomputer ein, und installieren Sie anschließend den Buildcomputer.
 
  Mit der Installation von Visual Studio auf dem Hostcomputer werden die Dateien und Einstellungen, die Sie später auf den Buildcomputer kopieren, erstellt. Sie können Visual Studio auf x86- oder x64-Computern installieren, die Architektur des Buildcomputers muss allerdings mit der Architektur des Hostcomputers übereinstimmen.
@@ -83,7 +83,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 
 2. Installieren Sie .NET Framework 4.5 auf dem Buildcomputer. Um zu überprüfen, dass es installiert wurde, stellen Sie sicher, dass der Wert des Registrierungsschlüssels HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version mit „4,5“ beginnt.
 
-## <a name="CopyingFiles"></a> Kopieren von Dateien vom Buildcomputer zum Hostcomputer
+## <a name="copying-files-from-the-host-computer-to-the-build-computer"></a><a name="CopyingFiles"></a> Kopieren von Dateien vom Buildcomputer zum Hostcomputer
  In diesem Abschnitt wird das Kopieren bestimmter Dateien, Compilern, Buildtools, MSBuild-Ressourcen und von Registrierungseinstellungen vom Hostcomputer zum Buildcomputer behandelt. Bei diesen Anweisungen wird vorausgesetzt, dass Visual Studio auf dem Hostcomputer im Standardspeicherort installiert wurde. Wurde es in einem anderen Speicherort installiert, passen Sie die Schritte entsprechend an.
 
 - Auf einem x86-Computer lautet der Standardspeicherort "C:\Programme\Microsoft Visual Studio 11.0 \"
@@ -215,7 +215,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 
    - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-## <a name="CreatingRegistry"></a> Erstellen von Registrierungseinstellungen
+## <a name="creating-registry-settings"></a><a name="CreatingRegistry"></a> Registrierungs Einstellungen werden erstellt
  Sie müssen zum Konfigurieren von Einstellungen für MSBuild Registrierungseinträge erstellen.
 
 #### <a name="to-create-registry-settings"></a>So erstellen Sie Registrierungseinstellungen
@@ -277,7 +277,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables"></a> Einstellungsumgebungsvariablen auf dem Buildcomputer
+## <a name="setting-environment-variables-on-the-build-computer"></a><a name="SettingEnvVariables"></a> Festlegen von Umgebungsvariablen auf dem Buildcomputer
  Um MSBuild auf dem Buildcomputer zu verwenden, müssen die PATH-Umgebungsvariablen festgelegt werden. Sie können "vcvarsall.bat" zum Festlegen der Variablen verwenden, oder sie können sie manuell konfigurieren.
 
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>So verwenden Sie "vcvarsall.bat" zum Festlegen der Umgebungsvariablen
@@ -292,7 +292,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
     |x86_amd64|x64 Cross|x86, x64|x64|
     |amd64|x64 (Systemeigen)|x64|x64|
 
-     Wenn „vcvarsall.bat“ erfolgreich ausgeführt wird, d.h., es werden keine Fehlermeldung angezeigt, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installieren von MSBuild-Assemblys auf den globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren.
+     Wenn „vcvarsall.bat“ erfolgreich ausgeführt wird, d.h., es werden keine Fehlermeldung angezeigt, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installieren von MSBuild-Assemblys auf den globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren. 
 
 #### <a name="to-manually-set-environment-variables"></a>So legen Sie Umgebungsvariablen manuell fest
 
@@ -314,7 +314,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer
+## <a name="installing-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="InstallingMSBuildToGAC"></a> Installieren von MSBuild-Assemblys zum globalen Assemblycache (GAC) auf dem Buildcomputer
  Für MSBuild ist die Installation einiger zusätzlicher Assemblys zum GAC auf dem Buildcomputer erforderlich.
 
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>So kopieren Sie Assemblys vom Hostcomputer und installieren sie auf dem Buildcomputer
@@ -331,26 +331,26 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 
      Öffnen Sie ein Eingabeaufforderungsfenster mit Administratorrechten und führen Sie für jede Datei diesen Befehl aus:
 
-     **gacutil -i \<file>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > Möglicherweise ist zum vollständigen Installieren einer Assembly in den GAC ein Neustart erforderlich.
 
-## <a name="BuildingProjects"></a> Erstellen von Projekten
+## <a name="building-projects"></a><a name="BuildingProjects"></a> Erstellen von Projekten
  Sie können Team Foundation Build zum Erstellen von [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projekten und Projektmappen verwenden, oder Sie können sie in der Befehlszeile erstellen. Bei der Verwendung von Team Foundation Build zum Erstellen von Projekten wird die der Systemarchitektur entsprechende ausführbare MSBuild-Datei aufgerufen.  In der Befehlszeile können Sie entweder die MSBuild-Version mit 32-Bit oder mit 64-Bit verwenden, und Sie können die MSBuild-Architektur auswählen, indem Sie die PATH-Umgebungsvariable festlegen oder direkt die architekturspezifische ausführbare MSBuild-Datei aufrufen.
 
- Führen Sie zum Verwenden von „msbuild.exe“ an der Eingabeaufforderung den folgenden Befehl aus, wobei *solution.sln* ein Platzhalter für den Namen der Projektmappe ist.
+ Führen Sie zum Verwenden von msbuild.exe an der Eingabeaufforderung den folgenden Befehl aus, wobei *solution.sln* ein Platzhalter für den Namen Ihrer Projektmappe ist.
 
  **msbuild** *solution.sln*
 
- Weitere Informationen zum Verwenden von MSBuild an der Befehlszeile finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
+ Weitere Informationen zur Verwendung von MSBuild in der Befehlszeile finden Sie unter [Befehlszeilen Referenz](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Zum Erstellen von [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projekten müssen Sie die "v110"-Plattform Toolsets verwenden. Wenn Sie die [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projektdateien nicht bearbeiten möchten, können Sie die Plattform Toolset mithilfe dieses Befehlszeilenarguments festlegen:
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a> Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung
+## <a name="creating-the-build-environment-so-that-it-can-be-checked-into-source-control"></a><a name="CreatingForSourceControl"></a> Erstellen der Buildumgebung, damit Sie in die Quell Code Verwaltung eingecheckt werden kann
  Sie können eine Buildumgebung erstellen, die auf verschiedenen Computern bereitgestellt werden kann, ohne dass Dateien in den GAC installiert oder Registrierungseinstellungen geändert werden müssen. Die folgenden Schritte stellen nur eine Möglichkeit dar, das zu erreichen. Passen Sie diese Schritte den eindeutigen Eigenschaften der aktuellen Buildumgebung an.
 
 > [!NOTE]
@@ -423,5 +423,5 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 
          Für systemeigenes Erstellen mit 64-Bit, zeigen Sie auf MSBuild mit 64-Bit.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Vorbereiten eines Test Computers zum Ausführen einer ausführbaren Debug](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [-Befehlszeilen Referenz](../msbuild/msbuild-command-line-reference.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852260"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
@@ -41,7 +41,7 @@ JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben
 ## <a name="whats-new-in-javascript"></a>Neues bei JavaScript
  Die neuen Funktionen für JavaScript werden in der folgenden Tabelle aufgeführt
 
-|Feature|Beschreibung|
+|Funktion|BESCHREIBUNG|
 |-------------|-----------------|
 |Klassen|Neue Syntax unterstützt die Deklaration von [Klassen](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promises|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) ermöglichen eine leichtere und sauberere asynchrone Codierung. Promise-Konstruktoren werden unterstützt, zusammen mit den Hilfsmethoden `all` und `race`.|
@@ -51,7 +51,7 @@ JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben
 |Verbesserungen des Objektliterals|Objekte unterstützen nun berechnete Eigenschaften, präzise Methodendefinitionen und eine Kurzsyntax für Eigenschaften, deren Wert für eine gleichnamige Variable initialisiert wird. Weitere Informationen finden Sie unter [Erstellen von Objekten](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
 |Proxys|[Proxys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) ermöglichen ein benutzerdefiniertes Verhalten für Objekte.|
 |Rest-Parameter|Mit Rest-Parametern können Sie aufeinanderfolgende Argumente in einem Funktionsaufruf in einen Array umwandeln. Weitere Informationen finden Sie unter [Funktionen](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
-|Spread-Operator|Der [Spread-Operator](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) erweitert iterierbare Ausdrücke in einzelne Argumente. Beispielsweise entspricht `a.b(…array)` ungefähr `a.b.apply(a, array)`.|
+|Spread-Operator|Der [Spread-Operator](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) ( `…` ) erweitert iterier Bare Ausdrücke in einzelne Argumente. Beispielsweise entspricht `a.b(…array)` ungefähr `a.b.apply(a, array)`.|
 |Symbole|Mit [Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol)-Objekten können Eigenschaften vorhandenen Objekten hinzugefügt werden, ohne dass mögliche Probleme mit den vorhandenen Objekteigenschaften, unerwünschte Sichtbarkeit oder weitere unkoordinierte Hinzufügungen durch anderen Code bestehen.|
 |Vorlagenzeichenfolgen|[Vorlagenzeichenfolgen](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) sind Zeichenfolgenliterale, mit denen Ausdrücke ausgewertet und mit dem Zeichenfolgenliteral verkettet werden können.|
 |Unicode-Verbesserungen|Es wurden Verbesserungen der Unicode-Unterstützung vorgenommen. Beispielsweise unterstützt ein neues Escapesequenzformat astrale Codepunkte (Codepunkte mit mehr als vier Hexadezimalziffern). Weitere Informationen finden Sie unter [Sonderzeichen](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|

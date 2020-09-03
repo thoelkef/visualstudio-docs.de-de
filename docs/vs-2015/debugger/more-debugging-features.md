@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300542"
 ---
 # <a name="more-debugging-features"></a>Weitere Debuggingfunktionen
@@ -38,7 +38,7 @@ Dieser Abschnitt enthält weitere Funktionen, die Sie mit dem Visual Studio-Debu
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)  
  Beschreibt verschiedene Debugfenster und  
   
- [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md)  
+ [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Diskutiert das Just-In-Time-Debuggen, d. h. das automatische Starten des Debuggers, sobald ein Programm bei der Ausführung außerhalb von Visual Studio abstürzt.  
   
  [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../debugger/walkthrough-debugging-at-design-time.md)  

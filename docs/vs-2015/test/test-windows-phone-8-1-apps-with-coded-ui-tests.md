@@ -9,10 +9,10 @@ caps.latest.revision: 31
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f2ac13b62dcc522626fde92b1b29cac9873edec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301838"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI
@@ -24,15 +24,15 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
 
 1. Erstellen Sie mit einer Visual C#- oder Visual Basic-Vorlage ein neues Projekt für eine leere Windows Phone-App.
 
-     ![Erstellen einer neuen Windows Phone-App](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")
+     ![Neue Windows Phone App erstellen](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")
 
 2. Öffnen Sie im Projektmappen-Explorer die Datei "MainPage.xaml". Ziehen Sie aus der Toolbox ein Schaltflächen- und ein Textfeldsteuerelement auf die Entwurfsoberfläche.
 
-     ![Hinzufügen von Steuerung zu "MainPage. XAML"](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")
+     ![Steuerung zu MainPage.xaml hinzufügen](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")
 
 3. Benennen Sie im Fenster "Eigenschaften" das Schaltflächen-Steuerelement.
 
-     ![Benennen des Schaltflächen-Steuer Elements](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")
+     ![Name des Schaltflächen-Steuerelements](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")
 
 4. Benennen Sie das Textfeld-Steuerelement.
 
@@ -60,7 +60,7 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
 
 6. Drücken Sie F5, sodass die Windows Phone-App im Emulator ausgeführt wird und überprüfen Sie, ob sie funktioniert.
 
-     ![Ausführen der Windows Phone-App](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")
+     ![Windows Phone App ausführen](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")
 
 7. Verlassen Sie den Emulator.
 
@@ -68,11 +68,11 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
 
 1. Ehe ein Test der programmierten UI die Steuerelemente einer App zuordnen kann, müssen Sie die App bereitstellen.
 
-     ![Bereitstellen der Windows Phone-App](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")
+     ![Windows Phone App bereitstellen](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")
 
      Der Emulator wird gestartet. Die App ist jetzt für den Test bereit.
 
-     ![App im Emulator bereitgestellt](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
+     ![App auf Emulator bereitgestellt](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
 
      Lassen Sie den Emulator laufen, während Sie den Test der programmierten UI erstellen.
 
@@ -86,23 +86,23 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
 
 2. Wählen Sie mithilfe des Fadenkreuztools aus, dass Sie die UI-Zuordnung bearbeiten möchten.
 
-    ![Generieren Sie den Test der programmierten UI mithilfe eines Kreuz&#45;Haar Tools.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
+    ![Generieren Sie den Test der programmierten UI mithilfe von Cross&#45;Hair Tool.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
 
-3. Verwenden Sie das Fadenkreuztool zur Auswahl der App. Kopieren Sie dann den Wert der **AutomationId** -Eigenschaft der App, der später für das Starten der App im Test verwendet wird.
+3. Wählen Sie die APP mit dem Fadenkreuz Tool aus, und kopieren Sie dann den Wert für die **AutomationId** -Eigenschaft der APP, die später zum Starten der APP im Test verwendet wird.
 
-    ![Der AutomationId-Wert der APP kopieren](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
+    ![AutomationId-Wert der App kopieren](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
 
 4. Starten Sie die App im Emulator mit dem Fadenkreuztool und wählen Sie das Schaltflächensteuerelement aus. Fügen Sie dann das Schaltflächen-Steuerelement der UI-Steuerelementzuordnung hinzu.
 
-    ![Verwenden des Kreuz&#45;Haar Tools zum Zuordnen von Steuerelementen](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
+    ![Verwenden des Cross&#45;-Haar Tools zum Zuordnen von Steuerelementen](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
 
 5. Wiederholen Sie den vorangehenden Schritt zum Hinzufügen des Textfeld-Steuerelements zur UI-Steuerelementzuordnung.
 
-    ![Verwenden des Kreuz&#45;-und Karten-Textfeld-Steuer Elements](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")
+    ![Verwenden des Kreuz&#45;-Haar Tools und des Karten-Textfeld-Steuer Elements](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")
 
 6. Erstellen Sie den Code, sodass Code für Änderungen an der UI-Steuerelementzuordnung erstellt wird.
 
-    ![Generieren von Code aus dem Generator](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")
+    ![Code vom Builder generieren](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")
 
 7. Wählen Sie das Textfeldsteuerelement mit dem Fadenkreuztool aus, und wählen Sie dann die **Text** -Eigenschaft aus.
 
@@ -110,13 +110,13 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
 
 8. Fügen Sie eine Assertion hinzu. Diese wird beim Test verwendet, um die Richtigkeit des Werts sicherzustellen.
 
-    ![Assertionen zum Test hinzufügen](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")
+    ![Assertion zum Test hinzufügen](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")
 
 9. Generieren Sie Code für die Assert-Methode, und fügen Sie diesen hinzu.
 
-     ![Generieren von Code für die-Assertion](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")
+     ![Code für die Assertion generieren](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")
 
-10. **Visual C#**
+10. **Visual C #**
 
      Öffnen Sie im Projektmappen-Explorer die Datei "UIMap.Designer.cs", um den eben hinzugefügten Code für die Assert-Methode und die Steuerelemente anzuzeigen.
 
@@ -289,17 +289,17 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
 
 1. Erstellen Sie den Test, und führen Sie diesen anschließend mit dem Test-Explorer aus.
 
-     ![Erstellen und Ausführen des Tests mit dem Test-Explorer](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")
+     ![Build erstellen und Test mit Test Explorer ausführen](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")
 
      Die Windows Phone-App wird gestartet, die Aktion für das Tippen auf die Schaltfläche wird abgeschlossen, und die Text-Eigenschaft des Textfelds wird mithilfe der Assert-Methode mit einem Wert versehen und überprüft.
 
-     ![Winodws-Telefon Test wird ausgeführt](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")
+     ![Windows Phone-Test ausführen](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")
 
      Nach Abschluss des Tests wird im Test-Explorer das Bestehen des Tests angezeigt.
 
-     ![Test-Explorer-Ergebnisse](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
+     ![Test Explorer-Ergebnisse](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
 
-## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Einsatz datengesteuerter Tests der programmierten UI auf Windows Phone-Apps
+## <a name="use-data-driven-coded-ui-tests-on-windows-phone-apps"></a><a name="TestingPhoneAppsCodedUI_DataDriven"></a> Verwenden Daten gesteuerter Coded UI-Tests für Windows Phone-apps
  Ein Test der programmierten UI kann mehrere Male ausgeführt werden, um unterschiedliche Bedingungen mit verschiedenen Datensets zu testen.
 
  Datengesteuerte Tests der programmierten UI für Windows Phone werden mithilfe des Attributs DataRow für eine Testmethode definiert. Im folgenden Beispiel verwenden x und y die Werte 1 und 2 für die erste und -1 und -2 für die zweite Iteration des Tests.
@@ -317,10 +317,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>F: Muss ich die Windows Phone-App im Emulator bereitstellen, sodass ich die Benutzeroberflächen-Steuerelemente zuordnen kann?
  **A**: Ja, der Test-Generator der programmierten UI erfordert, dass ein Emulator läuft und die App für diesen bereitgestellt wird. Ansonsten wird ein Fehler ausgegeben der besagt, dass kein laufender Emulator gefunden werden konnte.
 
-### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> F: Können Tests nur auf dem Emulator ausgeführt werden oder kann ich auch ein physisches Gerät verwenden?
+### <a name="q-can-tests-be-executed-on-the-emulator-only-or-can-i-also-use-a-physical-device"></a><a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> F: können Tests nur auf dem Emulator ausgeführt werden, oder kann ich auch ein physisches Gerät verwenden?
  **A**: Beide Optionen werden unterstützt. Das Ziel für die Umsetzung des Tests wird durch Ändern des Emulatortyps in der Gerätesymbolleiste ausgewählt. Ist "Gerät" ausgewählt, dann muss ein Phone Blue-Gerät mit einem der USB-Anschlüsse des Rechners verbunden sein.
 
- ![Wählen Sie die Emulatorversion oder das physische Gerät aus.](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
+ ![Emulatorversion oder physisches Gerät auswählen](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
 
 ### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>F: Warum wird im Dialogfeld "Test der programmierten UI" unter "Code generieren" nicht die Option zum Aufzeichnen des Tests der programmierten UI angezeigt?
  **A**: Die Option zum Aufzeichnen wird für Windows Phone-Apps nicht unterstützt.
@@ -348,10 +348,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **A**: Nein, der Generator kann Benutzeroberflächenelemente nur zuordnen, wenn die App auf dem Emulator bereitgestellt wurde.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>F: Warum kann ich den Code in der Datei "UIMap.Designer" nicht ändern?
- **A**: Alle Codeänderungen, die Sie an der Datei "UIMapDesigner.cs" vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem UIMap – Test-Generator für programmierte UI generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die UIMap.cs-Datei kopieren und umbenennen. Die Datei "UIMap.cs" kann verwendet werden, um Methoden und Eigenschaften in der Datei "UIMapDesigner.cs" zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei "Coded UITest.cs" entfernen und ihn durch den umbenannten Methodennamen ersetzen.
+ **A**: alle Codeänderungen, die Sie in der UIMapDesigner.cs-Datei vornehmen, werden jedes Mal überschrieben, wenn Sie Code mithilfe des UIMap-Coded UI-Test-Generators generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die UIMap.cs-Datei kopieren und umbenennen. Die Datei "UIMap.cs" kann verwendet werden, um Methoden und Eigenschaften in der Datei "UIMapDesigner.cs" zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei "Coded UITest.cs" entfernen und ihn durch den umbenannten Methodennamen ersetzen.
 
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>F: Kann ich einen Test der programmierten UI für Windows Phone-Apps aus der Befehlszeile ausführen?
- **A**: Ja, verwenden Sie eine RUNSETTINGS-Datei für das Festlegen des Zielgeräts bei der Ausführung des Tests. Beispiel:
+ **A**: Ja, verwenden Sie eine RUNSETTINGS-Datei für das Festlegen des Zielgeräts bei der Ausführung des Tests. Zum Beispiel:
 
  **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**
 
@@ -372,17 +372,17 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>F: Welche Unterschiede gibt es zwischen Tests der programmierten UI für XAML-basierte Windows Store-Apps und Windows Phone-Apps?
  **A**: Es gibt einige wichtige Unterschiede:
 
-|Funktion|Windows Store-Anwendungen|Windows Phone-Anwendungen|
+|Funktion|Windows Store-Anwendungen|Windows Phone-Apps|
 |-------------|------------------------|------------------------|
 |Ziel für das Ausführen von Tests|Lokaler oder Remotecomputer. Remotecomputer können nur festgelegt werden, wenn ein automatisierter Testfall für das Ausführen von Tests verwendet wurde. Weitere Informationen finden Sie unter [Automatisieren eines Testfalls mit Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulator oder Gerät. Weitere Informationen finden Sie unter [F: Können Tests nur auf dem Emulator ausgeführt werden, oder kann ich auch ein physisches Gerät verwenden?](#TestingPhoneAppsCodedUI_EmulatorDevice) in diesem Thema.|
 |Ausführen aus der Befehlszeile|Einstellungsdatei für das Festlegen des Ziels nicht erforderlich.|RUNSETTINGS-Datei für das Festlegen des Ziels erforderlich.|
 |Spezialisierte Klassen für Shell-Steuerelemente|[Directuicontrol](/previous-versions/dn248208(v=vs.140))|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|
-|WebView-Steuerelement in einer XAML-App|Unterstützt, wenn spezielle HTML*-Klassen für die Interaktion mit HTML-Elementen verwendet werden. Siehe <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Nicht unterstützt.|
-|Ausführen automatisierter Tests aus MTM|Unterstützt.|Nicht unterstützt.|
+|WebView-Steuerelement in einer XAML-App|Unterstützt, wenn spezielle HTML*-Klassen für die Interaktion mit HTML-Elementen verwendet werden. Siehe <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Wird nicht unterstützt.|
+|Ausführen automatisierter Tests aus MTM|Unterstützt.|Wird nicht unterstützt.|
 |Datengesteuerte Tests|Sie [Datengesteuerte Tests](../test/creating-a-data-driven-coded-ui-test.md) zu Informationen über den Einsatz externer Datenquellen und die Verwendung des Attributs DataSource für eine Testmethode.|Daten werden inline mit dem Attribut DataRow für eine Testmethode festgelegt. Siehe [Einsatz datengesteuerter Tests der programmierten UI für Windows Phone-Apps](#TestingPhoneAppsCodedUI_DataDriven) in diesem Thema.|
 
 ## <a name="external-resources"></a>Externe Ressourcen
  Blog "Anwendungslebenszyklus-Verwaltung von Microsoft Visual Studio": [Verwenden der programmierten UI zum Testen XAML-basierter Windows Phone-Apps](https://devblogs.microsoft.com/devops/using-coded-ui-to-test-xaml-based-windows-phone-apps/#comments)
 
-## <a name="see-also"></a>Siehe auch
- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Verwenden der Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)

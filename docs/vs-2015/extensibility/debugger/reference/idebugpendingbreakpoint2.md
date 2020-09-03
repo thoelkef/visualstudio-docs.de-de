@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1238fcbce22db3f3bc3e32019aac886c79d0c114
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201027"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle stellt einen Haltepunkt an, der an einen Speicherort gebunden werden kann.  
+Diese Schnittstelle stellt einen Haltepunkt dar, der für die Bindung an einen Code Speicherort bereit ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,42 +31,42 @@ IDebugPendingBreakpoint2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine (DE) implementiert diese Schnittstelle als Teil der Unterstützung für Haltepunkte an.  
+ Die Debug-Engine (de) implementiert diese Schnittstelle als Teil der Unterstützung von Breakpoints.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ein Aufruf von [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) erstellt einen ausstehenden Haltepunkt von einem [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Schnittstelle. Ein Aufruf von [binden](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) erstellt eine `IDebugBreakpoint2` -Schnittstelle, die einen gebundenen Haltepunkt in der Anwendung darstellt.  
+ Ein Aufrufen von " [anateperdingbreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) " erstellt einen ausstehenden Haltepunkt aus einer [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) -Schnittstelle. Ein [Bindungs BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) erstellt eine `IDebugBreakpoint2` Schnittstelle, die einen gebundenen Haltepunkt im Programm darstellt.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugPendingBreakpoint2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugPendingBreakpoint2` .  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Bestimmt, ob diese ausstehende Haltepunkt an einen Speicherort gebunden werden kann.|  
-|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Wird dieser ausstehenden Haltepunkt an einem oder mehreren Code-Speicherorten gebunden.|  
-|[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Ruft den Status der ausstehenden Haltepunkts ab.|  
-|[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Ruft die Haltepunkt-Anforderung, die mit diesem ausstehenden Haltepunkt erstellt wurde.|  
-|[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Schaltet den virtualisierten Zustand dieser ausstehenden Haltepunkt.|  
-|[Enable](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Schaltet den aktivierten Zustand der ausstehenden Haltepunkt an.|  
-|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Legt fest oder ändert die Bedingung, die zugeordneten ausstehenden Haltepunkt.|  
-|[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Legt fest oder ändert die Anzahl der Durchläufe ausstehender Haltepunkt zugeordnet.|  
-|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Listet alle Breakpoints, die von diesem ausstehender Haltepunkt gebunden.|  
-|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Listet alle Fehler Haltepunkte, die bei diesem ausstehender Haltepunkt an.|  
-|[Löschen](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Löscht diese ausstehenden Haltepunkt, und alle Breakpoints, die von ihm gebunden.|  
+|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Bestimmt, ob dieser ausstehende Breakpoint an einen Code Speicherort gebunden werden kann.|  
+|[Zwick](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Bindet diesen ausstehenden Breakpoint an einen oder mehrere Code Speicherorte.|  
+|[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Ruft den Zustand dieses ausstehenden halte Punkts ab.|  
+|[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Ruft die Haltepunkt Anforderung ab, die zum Erstellen dieses ausstehenden Breakpoints verwendet wurde.|  
+|[Virtualisieren](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Schaltet den virtualisierten Zustand dieses ausstehenden Breakpoints um.|  
+|[Aktivieren](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Schaltet den aktivierten Zustand dieses ausstehenden Breakpoints um.|  
+|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Legt die diesem ausstehenden Breakpoint zugeordnete Bedingung fest oder ändert diese.|  
+|[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Legt die mit diesem ausstehenden Haltepunkt verknüpfte Durchlauf Anzahl fest oder ändert diese.|  
+|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Listet alle Haltepunkte auf, die von diesem ausstehenden Haltepunkt gebunden sind.|  
+|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Listet alle Fehler Haltepunkte auf, die sich aus diesem ausstehenden Haltepunkt ergeben haben.|  
+|[Löschen](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Löscht den ausstehenden Haltepunkt und alle von ihm gebundenen Haltepunkte.|  
   
-## <a name="remarks"></a>Hinweise  
- `IDebugPendingBreakpoint2` kann der betrachtet werden, als Anbieter alle notwendigen Informationen erforderlich, um einen Haltepunkt in Code zu binden, die auf eine oder mehrere Programme angewendet werden können.  
+## <a name="remarks"></a>Bemerkungen  
+ `IDebugPendingBreakpoint2` kann als Anbieter aller notwendigen Informationen angesehen werden, die erforderlich sind, um einen Haltepunkt an Code zu binden, der auf ein oder mehrere Programme angewendet werden kann.  
   
- Ein ausstehender Haltepunkt kann möglicherweise mehr als einen gebundenen Haltepunkt erzeugen. Beispielsweise konnte ein Haltepunkt in einer C++-Stil-Vorlage einen gebundenen Haltepunkt für jede eindeutige Instanz dieser Vorlage erstellen.  
+ Ein ausstehender Haltepunkt kann potenziell mehr als einen gebundenen Haltepunkt ergeben. Ein Haltepunkt in einer C++-Vorlage könnte z. b. einen gebundenen Haltepunkt für jede eindeutige Instanz dieser Vorlage erstellen.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
- [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ ["Kreateperdingbreakpoint"](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
+ [Getpdingbreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
+ [Getpdingbreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)   
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)

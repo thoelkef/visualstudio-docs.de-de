@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619311"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
@@ -119,5 +119,5 @@ Der [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Compiler enthält eine Reihe vo
 
  ID: 42029, 42031
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Fehlertypen](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f) des [Ausnahmen-Assistenten (Dialog Feld](../debugger/exception-assistant-dialog-box.md) ) [try... Catch... Letzte Anweisung](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b) [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1) [Kompilierungs Seite, Projekt-Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Compilerwarnungen, die standardmäßig deaktiviert sind](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

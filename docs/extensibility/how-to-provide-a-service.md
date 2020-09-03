@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905761"
 ---
 # <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen eines Dienstanbieter
 Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden können. Um einen Dienst bereitzustellen, muss ein VSPackage den Dienst bei Visual Studio registrieren und den Dienst hinzufügen.
 
- Die <xref:Microsoft.VisualStudio.Shell.Package> -Klasse implementiert sowohl <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> als auch <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer>enthält Rückruf Methoden, die Dienste Bedarfs gesteuert bereitstellen.
+ Die <xref:Microsoft.VisualStudio.Shell.Package> -Klasse implementiert sowohl <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> als auch <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer> enthält Rückruf Methoden, die Dienste Bedarfs gesteuert bereitstellen.
 
  Weitere Informationen zu Diensten finden Sie unter [Service Essentials](../extensibility/internals/service-essentials.md) .
 
@@ -138,7 +138,7 @@ Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden könne
 
      Der Wert von `helloString` sollte "Hello" lauten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: erhalten eines Dienstanbieter](../extensibility/how-to-get-a-service.md)
 - [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)
 - [Service Essentials](../extensibility/internals/service-essentials.md)

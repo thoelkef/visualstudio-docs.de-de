@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919060"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
@@ -37,5 +37,5 @@ Die DSL-Definitions Erweiterung ermöglicht es Ihnen, ein Paket mit Erweiterunge
 
   Beispielcode und weitere Informationen zu diesem Feature finden Sie auf der [Visual Studio-Website zum Visualisieren und modellieren von SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148) .
 
-## <a name="see-also"></a>Siehe auch
- [Visual Studio-Visualisierungs-und Modellierungs-SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)
+## <a name="see-also"></a>Weitere Informationen
+ [Visual Studio Visualization and Modeling SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

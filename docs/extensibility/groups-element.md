@@ -1,5 +1,5 @@
 ---
-title: Gruppen Element | Microsoft Docs
+title: Groups-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711174"
 ---
 # <a name="groups-element"></a>Groups-Element
-Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
+Enthält Einträge, die die Befehls Gruppen eines VSPackage definieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,20 +37,20 @@ Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Gruppenelement](../extensibility/group-element.md)|Stellt eine einzelne Befehlsgruppe dar.|
-|[Gruppenelement](../extensibility/groups-element.md)|Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.|
+|[Group-Element](../extensibility/group-element.md)|Stellt eine einzelne Befehlsgruppe dar.|
+|[Groups-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehls Gruppen eines VSPackage definieren.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Befehlselement](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar.|
+|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar.|
 
 ## <a name="example"></a>Beispiel
 
@@ -63,5 +63,5 @@ Enthält Einträge, die die Befehlsgruppen eines VSPackage definieren.
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

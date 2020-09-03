@@ -1,5 +1,5 @@
 ---
-title: In der Kern-Editor | Microsoft-Dokumentation
+title: Im Kern-Editor | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,71 +11,71 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203953"
 ---
 # <a name="inside-the-core-editor"></a>Im Core-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor ist ein Satz von mehreren Komponenten, mit denen Sie ändern und Abfragen von Textinformationen. Wenn Sie die Kern-Editor mit der legacy-API angepasst haben, können Sie weiterhin diesen Anpassungen verwenden, die über den Editor für Adapter weitergeleitet werden. Es wird jedoch empfohlen, dass Sie Ihre Anpassungen an den neuen Editor API anpassen.  
+Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kern-Editor ist eine Reihe von verschiedenen Komponenten, mit denen Sie Textinformationen ändern und Abfragen können. Wenn Sie den Kern-Editor mithilfe der Legacy-API angepasst haben, können Sie diese Anpassungen weiterhin verwenden, die über Editor Adapter weitergeleitet werden. Es wird jedoch empfohlen, dass Sie Ihre Anpassungen an die neue Editor-API anpassen.  
   
- Die folgenden Bereiche sind einige wichtige Aspekte bei der die Kern-Editor:  
+ Die folgenden Bereiche sind einige wichtige Aspekte des Kern-Editors:  
   
-- Textpuffer  
+- Text Puffer  
   
-- Textansicht  
+- Text Ansicht  
   
 - Codefenster  
   
-- Textmarkierungen  
+- Text Marker  
   
-- Text-manager  
+- Text-Manager  
   
-- Integration mit Sprachdienste  
+- Integration in Sprachdienste  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Instanziieren des Core-Editors mit der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
- Enthält schrittweise Anleitungen zur Verwendung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> So erstellen eine Instanz von der Kern-Editor.  
+ Enthält Schritt-für-Schritt-Anleitungen zum <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> Erstellen einer Instanz des Core-Editors.  
   
  [Zugriff auf den Textpuffer mit der Legacy-API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
- Erläutert den Textpuffer-Rolle in der Kern-Editor, wird erläutert, die zugehörigen Systeme, die werden verwendet, um Zugriff auf den Puffer und enthält eine Liste der von den TextBuffer-Objekt, implementierten Schnittstellen <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
+ Erläutert die Rolle des Text Puffers im Kern-Editor, erläutert die zugeordneten Systeme, die für den Zugriff auf den Puffer verwendet werden, und stellt eine Liste der Schnittstellen bereit, die vom Text Puffer Objekt implementiert werden <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> .  
   
  [Textpufferereignisse in der Legacy-API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
- Enthält eine Liste der Schnittstellen, die für die Benachrichtigung über Ereignisse für Text-Puffer verwendet werden.  
+ Stellt eine Liste der Schnittstellen bereit, die für die Benachrichtigung von Text Puffer Ereignissen verwendet werden.  
   
  [Vorgehensweise: Registrieren für Textpufferereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
- Beschreibt, wie Text Puffern von Ereignissen zu empfehlen.  
+ Beschreibt, wie Text Puffer Ereignisse zu empfehlen sind.  
   
  [Überwachen der globalen Einstellungen mit dem Text-Manager](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- Erläutert, wie TextManager verwendet wird, für die Editor-Kernkomponenten globale Einstellung Informationen freigeben und Empfangen von Benachrichtigungen über Text-Manager-Ereignisse.  
+ Erläutert, wie der Text-Manager verwendet wird, um globale Einstellungs Informationen mit den Kern-Editor-Komponenten gemeinsam zu nutzen und um Benachrichtigungen von Text-Manager-Ereignissen zu empfangen.  
   
  [Zugriff auf die Textansicht mit der Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
- Beschreibt die Textansicht-Rolle in der Kern-Editor, und listet die von implementierten Schnittstellen der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> Objekt.  
+ Beschreibt die Rolle der Textansicht im Kern-Editor und listet die Schnittstellen auf, die vom-Objekt implementiert werden <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> .  
   
  [Anpassen von Codefenstern mit der Legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
- Enthält Informationen wie ein Code-Fenster wird verwendet, um die Textansicht zu schließen, wird erläutert, wie der Codefenster-Manager verwendet ist, Ergänzungen zum Code-Fenster zu und ermöglicht die Benachrichtigung über neue Ansichten.  
+ Stellt Informationen dazu bereit, wie ein Code Fenster zum Einschließen der Textansicht verwendet wird, erläutert, wie der Code Fenster-Manager verwendet wird, um Dekorationen für das Code Fenster bereitzustellen, und stellt Benachrichtigungen zu neuen Ansichten bereit.  
   
  [Ändern der Ansichtseinstellungen mit der Legacy-API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- Enthält schrittweise Anleitungen zum Erzwingen der Einstellungen und erzwungene Einstellungen zu entfernen.  
+ Enthält Schritt-für-Schritt-Anleitungen zum Erzwingen von Ansichts Einstellungen und zum Entfernen erzwungener Einstellungen.  
   
  [Sprachdienste und der Core-Editor](../extensibility/language-services-and-the-core-editor.md)  
- Beschreibt die Instanziierung von einem Sprachdienst, Ergänzungen der Steuerelement-Code.  
+ Beschreibt die Instanziierung eines sprach Dienstanbieter zum Steuern von Code Dekorationen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Exemplarische Vorgehensweise: Erstellen eines Core-Editors und Registrieren eines Editor-Dateityps](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
- Enthält schrittweise Anweisungen zum Starten der Kern-Editor von verwaltetem Code.  
+ [Exemplarische Vorgehensweise: Erstellen eines Core-Editors und Registrieren eines Editordateityps](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ Enthält Schritt-für-Schritt-Anweisungen zum Starten des Kern-Editors aus verwaltetem Code.  
   
  [Dropdownleiste](../extensibility/drop-down-bar.md)  
- Beschreibt, wie die Dropdownleiste wird verwendet, im Code-Fenster, und beschreibt die Schnittstellen, die verwendet werden, wenn Sie eine Dropdownleiste implementieren.  
+ Erläutert, wie die Dropdown Leiste im Code Fenster verwendet wird, und beschreibt die Schnittstellen, die beim Implementieren einer Dropdown Leiste verwendet werden.  
   
  [Verwenden von Textmarkierungen mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)  
- Erklärt das Konzept von Textmarkierungen und wie sie in der Kern-Editor verwendet werden, und listet die Schnittstellen, die zum Zugreifen auf und Verwalten von Textmarkierungen verwendet werden.  
+ Erläutert das Konzept von Text Markern und deren Verwendung im Kern-Editor und listet die Schnittstellen auf, die für den Zugriff auf und die Verwaltung von Text Markern verwendet werden.  
   
  [Vorgehensweise: Hinzufügen von Standardtextmarkierungen](../extensibility/how-to-add-standard-text-markers.md)  
- Enthält schrittweise Anleitungen zum Erstellen ein textmarkers und So fügen Sie einen benutzerdefinierten Befehl in einem Kontextmenü Menüelemente hinzu.  
+ Enthält Schritt-für-Schritt-Anleitungen zum Erstellen eines Text Markers und zum Hinzufügen eines benutzerdefinierten Befehls zu einem Kontextmenü.  
   
  [Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../extensibility/how-to-create-custom-text-markers.md)  
- Enthält schrittweise Anleitungen zum Erstellen ein benutzerdefinierten textmarkers und den Typ des Markers als Dienst bereitstellen.
+ Enthält Schritt-für-Schritt-Anleitungen zum Erstellen eines benutzerdefinierten Text Markers und zum Bereitstellen des Markertyps als Dienst.

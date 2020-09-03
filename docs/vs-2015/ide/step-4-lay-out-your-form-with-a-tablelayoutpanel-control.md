@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851545"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement
@@ -21,17 +21,17 @@ ms.locfileid: "75851545"
 
 In diesem Schritt fügen Sie Ihrem Formular ein `TableLayoutPanel`-Steuerelement hinzu. Das TableLayoutPanel hilft, Steuerelemente im Formular ordnungsgemäß auszurichten, die Sie später hinzufügen.
 
- ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie im Video 2 zum [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) oder im [Tutorial 1: Erstellen eines Bild Anzeige Programms in c#](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>So erstellen Sie ein Layout für das Formular mit einem TableLayoutPanel-Steuerelement
 
-1. Suchen Sie auf der linken Seite der Visual Studio-IDE die Registerkarte **Toolbox** . Wählen Sie die Registerkarte **Toolbox** aus, und die Toolbox wird angezeigt. (Oder wählen Sie in der Menüleiste **Ansicht**, **Toolbox** aus.)
+1. Suchen Sie auf der linken Seite der Visual Studio-IDE nach der Registerkarte **Toolbox** . Wählen Sie die Registerkarte **Toolbox** aus, und die Toolbox wird angezeigt. (Oder wählen Sie in der Menüleiste **Ansicht**, **Toolbox** aus.)
 
 2. Wählen Sie das kleine Dreieck neben der Gruppe **Container** zum Öffnen aus, wie im folgenden Bild dargestellt.
 
      ![Containergruppe](../ide/media/express-toolbox.png "Express_Toolbox") Containergruppe
 
-3. Sie können dem Formular Steuerelemente hinzufügen, z. B. Schaltflächen, Kontrollkästchen und Beschriftungen. Doppelklicken Sie auf das `TableLayoutPanel`-Steuerelement in der Toolbox. (Alternativ können Sie das Steuerelement aus der Toolbox auf das Formular ziehen.) Wenn Sie dies tun, fügt die IDE dem Formular ein `TableLayoutPanel`-Steuerelement hinzu, wie in der folgenden Abbildung dargestellt.
+3. Sie können dem Formular Steuerelemente hinzufügen, z. B. Schaltflächen, Kontrollkästchen und Beschriftungen. Doppelklicken Sie auf das `TableLayoutPanel`-Steuerelement in der Toolbox. (Alternativ können Sie das Steuerelement aus der Toolbox auf das Formular ziehen.) Wenn Sie dies tun, fügt die IDE dem `TableLayoutPanel` Formular ein Steuerelement hinzu, wie in der folgenden Abbildung dargestellt.
 
      ![TableLayoutPanel-Steuer](../ide/media/express-formtablelayout.png "Express_FormTableLayout") Element TableLayoutPanel-Steuerelement
 
@@ -69,7 +69,7 @@ In diesem Schritt fügen Sie Ihrem Formular ein `TableLayoutPanel`-Steuerelement
 
      ![TableLayoutPanel-Aufgaben](../ide/media/express-tablepanel.png "Express_TablePanel") TableLayoutPanel-Aufgaben
 
-10. Wählen Sie die Aufgabe **Zeilen und Spalten bearbeiten** aus, um das Fenster **Spalten- und Zeilenstile** anzuzeigen. Wählen Sie **Column1** aus, und legen Sie die Größe auf 15 Prozent fest, indem Sie die Schaltfläche **Prozent** auswählen und im Feld **Prozent** den Wert `15` eingeben. (Dies ist ein `NumericUpDown` Steuerelement, das Sie in einem späteren Tutorial verwenden werden.) Wählen Sie **Column2** aus, und legen Sie es auf 85 Prozent fest. Wählen Sie noch nicht die Schaltfläche **OK** aus, da sonst das Fenster geschlossen wird. (Wenn das Fenster geschlossen ist, können Sie es über die Aufgabenliste erneut öffnen.)
+10. Wählen Sie die Aufgabe **Zeilen und Spalten bearbeiten** aus, um das Fenster **Spalten- und Zeilenstile** anzuzeigen. Wählen Sie **Column1** aus, und legen Sie die Größe auf 15 Prozent fest, indem Sie die Schaltfläche **Prozent** auswählen und im Feld **Prozent** den Wert `15` eingeben. (Das ist ein `NumericUpDown` Steuerelement, das Sie in einem späteren Tutorial verwenden werden.) Wählen Sie **Column2** aus, und legen Sie es auf 85 Prozent fest. Wählen Sie noch nicht die Schaltfläche **OK** aus, da sonst das Fenster geschlossen wird. (Wenn das Fenster geschlossen ist, können Sie es über die Aufgabenliste erneut öffnen.)
 
      ![Spalten-und Zeilen Stile des TableLayoutPanel-](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") Steuerelement Spalten-und Zeilen Stile des TableLayoutPanel-Steuerelement
 
@@ -81,6 +81,6 @@ In diesem Schritt fügen Sie Ihrem Formular ein `TableLayoutPanel`-Steuerelement
 
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
+- Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
 
 - Um zum vorherigen Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).

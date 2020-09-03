@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536096"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
@@ -61,7 +61,7 @@ Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, d
 |-|-|
 |Hell|{de3dbbcd-f642-433c-8353-8f1df4370aba}|
 |Dunkel|{1endd0138-47ce-435e-84ef-9ec1f 439b749}|
-|Blue|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
+|Blau|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 |Hoher Kontrast|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 
  **Kategorie**
@@ -105,7 +105,7 @@ Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, d
 
 |**Attribut**|**Definition**|
 |-|-|
-|Typ|Benötigten Der Typ der Farbe. Folgende Werte sind möglich:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatierten ARGB-Wert.<br /><br /> *CT_COLORINDEX:* Verwenden Sie nicht.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System Farbe aus syscolor.<br /><br /> *CT_VSCOLOR:* Eine Visual Studio-Farbe aus __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Die automatische Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* Verwenden Sie nicht.<br /><br /> *CT_TRACK_BACKGROUND:* Verwenden Sie nicht.|
+|type|Benötigten Der Typ der Farbe. Folgende Werte sind möglich:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatierten ARGB-Wert.<br /><br /> *CT_COLORINDEX:* Verwenden Sie nicht.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System Farbe aus syscolor.<br /><br /> *CT_VSCOLOR:* Eine Visual Studio-Farbe aus __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Die automatische Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* Verwenden Sie nicht.<br /><br /> *CT_TRACK_BACKGROUND:* Verwenden Sie nicht.|
 |`Source`|Benötigten Der Wert der in Hexadezimal Darstellung dargestellten Farbe.|
 
  Alle Werte, die von der __VSCOLORTYPE-Enumeration unterstützt werden, werden vom Schema im Type-Attribut unterstützt. Es wird jedoch empfohlen, nur CT_RAW und CT_SYSCOLOR zu verwenden.
@@ -147,7 +147,7 @@ Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, d
 
 - Vsixcolorcompiler D:\xml\colors.xml/noLogo
 
-## <a name="notes"></a>Hinweise
+## <a name="notes"></a>Notizen
 
 - Dieses Tool erfordert, dass die aktuelle Version der VC + +-Laufzeit installiert ist.
 

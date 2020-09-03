@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 693738e1751e580e32d7223d150438717fc63d27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651042"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Erweiterungen und Updates, Umgebung, Dialogfeld „Optionen“
@@ -33,7 +33,7 @@ Verwenden Sie diese Seite, um festzulegen, wie Visual Studio-Updates ausgeführt
  Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ### <a name="additional-extension-galleries"></a>Zusätzliche Erweiterungskataloge
- Ein Enterprise-Feature, mit dem die Unterstützung für Kataloge von proprietären Erweiterungen ermöglicht wird. Weitere Informationen finden Sie unter [Private Galleries](../../extensibility/private-galleries.md).
+ Ein Enterprise-Feature, mit dem die Unterstützung für Kataloge von proprietären Erweiterungen ermöglicht wird. Weitere Informationen finden Sie unter [private Galerien](../../extensibility/private-galleries.md).
 
-## <a name="see-also"></a>Siehe auch
- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)

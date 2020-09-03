@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905809"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Gewusst wie: Öffnen von projektspezifischen Editoren
@@ -51,7 +51,7 @@ Wenn eine Element Datei, die von einem Projekt geöffnet wird, intrinsisch an de
 
 6. Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> -Methode auf, um die Ansicht anzuzeigen und zu öffnen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Öffnen und Speichern von Projekt Elementen](../extensibility/internals/opening-and-saving-project-items.md)
 - [Vorgehensweise: Öffnen von Standard-Editoren](../extensibility/how-to-open-standard-editors.md)
 - [Gewusst wie: Öffnen von Editoren für geöffnete Dokumente](../extensibility/how-to-open-editors-for-open-documents.md)

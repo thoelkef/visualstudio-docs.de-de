@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::Weiter | Microsoft Docs
+title: 'IEnumDebugPortSuppliers2:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 78fa25ee4155d646d1be2cd73fa86773e767c649
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716011"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale `rgelt` Größe des Arrays an.
+[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe des `rgelt` Arrays an.
 
 `rgelt`\
-[in, out] Array von [IDebugPortSupplier2-Elementen,](../../../extensibility/debugger/reference/idebugportsupplier2.md) die ausgefüllt werden sollen.
+[in, out] Array von [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) -Elementen, die ausgefüllt werden sollen.
 
 `pceltFetched`\
-[out] Gibt die Anzahl der `rgelt`tatsächlich in zurückgegebenen Elemente zurück.
+vorgenommen Gibt die Anzahl der Elemente zurück, die tatsächlich in zurückgegeben werden `rgelt` .
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden kann. andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

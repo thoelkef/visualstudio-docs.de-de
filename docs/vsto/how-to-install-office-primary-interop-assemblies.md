@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544780"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Gewusst wie: Installieren von primären Interop-Assemblys in Office
@@ -34,7 +34,7 @@ ms.locfileid: "85544780"
     > [!WARNING]
     > In der Standardeinstellung werden die PIA in Ihre Lösung eingebettet, wenn Sie Sie erstellen, damit Sie PIAs nicht als Voraussetzung für die Verwendung des VSTO-Add-Ins oder der Anpassung an Benutzer verteilen müssen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)
 - [Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

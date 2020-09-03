@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ada9e1f9eaa63e2158bd3d6a117946e90924461d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671996"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Seite "My-Erweiterungen", Projekt-Designer (Visual Basic)
@@ -31,11 +31,11 @@ Verwenden Sie die Seite **My-Erweiterungen** des **Projekt-Designers**, um `My`-
 ## <a name="uielement-list"></a>UIElement-Liste
  Mithilfe der folgenden Optionen können Sie die `My`-Namespaceerweiterungen Ihrem Projekt hinzufügen oder aus diesem entfernen. Eine `My`-Namespaceerweiterung muss zunächst als Visual Studio-Elementvorlage installiert werden, damit sie verfügbar ist und hinzugefügt werden kann. Informationen zur Veröffentlichung und Installation von `My`-Namespaceerweiterungen finden Sie unter [Packen und Bereitstellen von benutzerdefinierten My-Erweiterungen](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21).
 
- **My-Namespace Erweiterungen** In dieser Liste werden alle im Projekt installierten `My`-Namespace Erweiterungen angezeigt.
+ **My-Namespace Erweiterungen** Diese Liste zeigt alle `My` Namespace Erweiterungen, die im Projekt installiert sind.
 
  **Erweiterung hinzufügen** Klicken Sie auf diese Schaltfläche, um dem Projekt eine installierte `My` Namespace Erweiterung hinzuzufügen. Es wird eine Liste aller möglichen `My`-Namespaceerweiterungen angezeigt. Wählen Sie die `My`-Namespaceerweiterung aus, die Sie Ihrem Projekt hinzufügen möchten, und klicken Sie auf **OK**, um sie hinzuzufügen.
 
  **Erweiterung entfernen** Wählen Sie mindestens einen Verweis in der Liste **My Namespace Extensions** aus, und klicken Sie dann auf diese Schaltfläche, um die `My` Namespace Erweiterung aus dem Projekt zu entfernen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erweitern des My-Namespace in Visual Basic](https://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e) [Verpacken und Bereitstellen von benutzerdefinierten My-Erweiterungen](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21) [Erweitern des Visual Basic Anwendungs Modells](https://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c) [Anpassen der verfügbaren Objekte in "My](https://msdn.microsoft.com/library/4e8279c2-ed5b-4681-8903-8a6671874000) "

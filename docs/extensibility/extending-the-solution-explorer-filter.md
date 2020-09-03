@@ -1,5 +1,5 @@
 ---
-title: Erweitern des Lösungs-Explorer-Filters | Microsoft Docs
+title: Erweitern des Projektmappen-Explorer Filters | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711568"
 ---
-# <a name="extend-the-solution-explorer-filter"></a>Erweitern des Projektmappen-Explorer-Filters
-Sie können die **Filterfunktionalität des Projektmappen-Explorers** erweitern, um verschiedene Dateien ein- oder auszublenden. Sie können z. B. einen Filter erstellen, der nur Factorydateien der C-Klasse im **Projektmappen-Explorer**anzeigt, wie diese exemplarische Vorgehensweise veranschaulicht.
+# <a name="extend-the-solution-explorer-filter"></a>Erweitern des Projektmappen-Explorer Filters
+Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unterschiedliche Dateien anzuzeigen oder auszublenden. Beispielsweise können Sie einen Filter erstellen, der nur c#-klassenfactorydateien im **Projektmappen-Explorer**anzeigt, wie in dieser exemplarischen Vorgehensweise veranschaulicht.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-### <a name="create-a-visual-studio-package-project"></a>Erstellen eines Visual Studio-Paketprojekts
+### <a name="create-a-visual-studio-package-project"></a>Erstellen eines Visual Studio-Paket Projekts
 
-1. Erstellen Sie ein `FileFilter`VSIX-Projekt mit dem Namen . Fügen Sie eine benutzerdefinierte Befehlselementvorlage mit dem Namen **FileFilter**hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FileFilter` . Fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **FileFilter**hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Fügen Sie `System.ComponentModel.Composition` einen `Microsoft.VisualStudio.Utilities`Verweis auf und hinzu.
+2. Fügen Sie einen Verweis auf `System.ComponentModel.Composition` und hinzu `Microsoft.VisualStudio.Utilities` .
 
-3. Lassen Sie den Menübefehl auf der Symbolleiste des **Projektmappen-Explorers** anzeigen. Öffnen Sie die Datei *FileFilterPackage.vsct.*
+3. Legen Sie den Menübefehl auf der Symbolleiste **Projektmappen-Explorer** angezeigt. Öffnen Sie die Datei " *filefilterpackage. vsct* ".
 
-4. Ändern `<Button>` Sie den Block in Folgendes:
+4. Ändern `<Button>` Sie den Block wie folgt:
 
     ```xml
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">
@@ -46,32 +46,32 @@ Sie können die **Filterfunktionalität des Projektmappen-Explorers** erweitern,
 
 ### <a name="update-the-manifest-file"></a>Aktualisieren der Manifestdatei
 
-1. Fügen Sie in der Datei *source.extension.vsixmanifest* ein Asset hinzu, das eine MEF-Komponente ist.
+1. Fügen Sie in der Datei " *Source. Extension. vsixmanifest* " ein Medienobjekt hinzu, das eine MEF-Komponente ist.
 
-2. Wählen Sie auf der Registerkarte **Assets** die Schaltfläche **Neu** aus.
+2. Wählen Sie auf der Registerkarte **Objekte** die Schaltfläche **neu** aus.
 
-3. Wählen Sie im Feld **Typ** **Microsoft.VisualStudio.MefComponent**aus.
+3. Wählen Sie im Feld **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent**aus.
 
-4. Wählen Sie im Feld **Quelle** **ein Projekt in der aktuellen Projektmappe**aus.
+4. Wählen Sie im Feld **Quelle** **ein Projekt in der aktuellen Projekt Mappe aus**.
 
-5. Wählen Sie im Feld **Projekt** **FileFilter**aus, und wählen Sie dann die Schaltfläche **OK** aus.
+5. Wählen Sie im Feld **Projekt** die Option **FileFilter**aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-### <a name="add-the-filter-code"></a>Hinzufügen des Filtercodes
+### <a name="add-the-filter-code"></a>Hinzufügen des Filter Codes
 
-1. Fügen Sie der *FileFilterPackageGuids.cs* Datei einige GUIDs hinzu:
+1. Fügen Sie der Datei *FileFilterPackageGuids.cs* einige GUIDs hinzu:
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. Fügen Sie dem FileFilter-Projekt mit dem Namen *FileNameFilter.cs*eine Klassendatei hinzu.
+2. Fügen Sie dem FileFilter-Projekt eine Klassendatei mit dem Namen *FileNameFilter.cs*hinzu.
 
 3. Ersetzen Sie den leeren Namespace und die leere Klasse durch den folgenden Code.
 
-     Die `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` Methode nimmt die Auflistung, die`rootItems`den Stamm der Lösung ( ) enthält, und gibt die Auflistung der Elemente zurück, die in den Filter eingeschlossen werden sollen.
+     Die `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` -Methode nimmt die Auflistung, die den Stamm der Projekt Mappe enthält ( `rootItems` ), und gibt die Auflistung von Elementen zurück, die in den Filter eingeschlossen werden sollen.
 
-     Die `ShouldIncludeInFilter` Methode filtert die Elemente in der **Projektmappen-Explorer-Hierarchie** basierend auf der angegebenen Bedingung.
+     Die- `ShouldIncludeInFilter` Methode filtert die Elemente in der **Projektmappen-Explorer** Hierarchie basierend auf der von Ihnen angegebenen Bedingung.
 
     ```csharp
     using System;
@@ -158,7 +158,7 @@ Sie können die **Filterfunktionalität des Projektmappen-Explorers** erweitern,
 
     ```
 
-4. Entfernen *Sie in FileFilter.cs*die Befehlsplatzierung und den Handhabungscode aus dem FileFilter-Konstruktor. Das Ergebnis sollte wie folgt aussehen:
+4. Entfernen Sie in *FileFilter.cs*den Befehls Platzierungs-und-Verarbeitungs Code aus dem FileFilter-Konstruktor. Das Ergebnis sollte wie folgt aussehen:
 
     ```csharp
     private FileFilter(Package package)
@@ -172,9 +172,9 @@ Sie können die **Filterfunktionalität des Projektmappen-Explorers** erweitern,
     }
     ```
 
-     Entfernen `ShowMessageBox()` Sie auch die Methode.
+     Entfernen Sie `ShowMessageBox()` auch die-Methode.
 
-5. Ersetzen Sie in *FileFilterPackage.cs* `Initialize()` den Code in der Methode durch Folgendes:
+5. Ersetzen Sie in *FileFilterPackage.cs*den Code in der- `Initialize()` Methode durch Folgendes:
 
     ```csharp
     protected override void Initialize()
@@ -188,8 +188,8 @@ Sie können die **Filterfunktionalität des Projektmappen-Explorers** erweitern,
 
 1. Erstellen Sie das Projekt, und führen Sie es aus. Eine zweite Instanz von Visual Studio wird geöffnet. Dies wird als experimentelle Instanz bezeichnet.
 
-2. Öffnen Sie in der experimentellen Instanz von Visual Studio ein C-Projekt.
+2. Öffnen Sie in der experimentellen Instanz von Visual Studio ein c#-Projekt.
 
-3. Suchen Sie nach der Schaltfläche, die Sie auf der Symbolleiste des **Projektmappen-Explorers** hinzugefügt haben. Es sollte der vierte Knopf von links sein.
+3. Suchen Sie nach der Schaltfläche, die Sie auf der Symbolleiste **Projektmappen-Explorer** Dies sollte die vierte Schaltfläche von Links sein.
 
-4. Wenn Sie auf die Schaltfläche klicken, sollten alle Dateien herausgefiltert werden, und Sie sollten sehen, dass **alle Elemente aus der Ansicht gefiltert wurden.** im **Projektmappen-Explorer**.
+4. Wenn Sie auf die Schaltfläche klicken, sollten alle Dateien herausgefiltert werden, und Sie sollten sehen, dass **alle Elemente aus der Ansicht gefiltert wurden.** in der **Projektmappen-Explorer**.

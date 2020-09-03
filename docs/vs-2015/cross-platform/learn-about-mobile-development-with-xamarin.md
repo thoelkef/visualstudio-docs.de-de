@@ -7,10 +7,10 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: a362bd4eef2a48667c67c03e940e213fc960418b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919004"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Erfahren Sie mehr über die Entwicklung für mobile Plattformen mit Xamarin
@@ -59,9 +59,9 @@ Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Ent
   
  Sie müssen nicht im Voraus entscheiden, welchen Ansatz Sie wählen. Apps können mit einer Kombination aus Xamarin Native und Xamarin.Forms implementiert werden:  
   
-- Verwenden Sie Xamarin.Forms, um für allgemeine Zwecke vorgesehene Bildschirme zu erstellen, die eine ähnliche Benutzeroberfläche und Funktionalität plattformübergreifend bereitstellen, wie z.B. Anmeldungen, Kontaktformulare und Suchergebnisse.  
+- Verwenden Sie Xamarin.Forms, um für allgemeine Zwecke vorgesehene Bildschirme zu erstellen, die eine ähnliche Benutzeroberfläche und Funktionalität über Plattformen hinweg bereitstellen, etwa Anmeldungen, Kontaktformulare und Suchergebnisse.  
   
-- Verwenden Sie eine Vielzahl von Anpassungsfunktionen in Xamarin.Forms, um die Benutzeroberfläche plattformspezifisch anzupassen. Hierzu gehören die OnPlatform-API, die sowohl in Code als auch in XAML verwendet werden kann, Erstellen einer benutzerdefinierten Ansicht, Erweitern eines vorhandenen Renderers und Erstellen eines benutzerdefinierten Renderers.  
+- Verwenden Sie eine Vielzahl von Anpassungsfunktionen in Xamarin.Forms, um die Benutzeroberfläche plattformspezifisch anzupassen. Hierzu gehören die OnPlatform-API, die sowohl in Code als auch in XAML verwendet werden kann, und mit der eine benutzerdefinierte Ansicht erstellt, ein vorhandener Renderer erweitert und ein benutzerdefinierter Renderer erstellt werden kann.  
   
 - Verwenden Sie bei Bedarf Xamarin Native, um Bildschirme zu erstellen, die spezielle Benutzeroberflächenfunktionen jeder Plattform verwenden, beispielsweise ein Bildschirm, für den native Kameraaufnahme oder Bildbearbeitung verwendet wird.  
   
@@ -71,7 +71,7 @@ Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Ent
   
 1. [Xamarin.Forms](/xamarin/xamarin-forms/) (xamarin.com) stellt die Vor- und Nachteile von Xamarin.Forms im Vergleich zu systemeigenen Benutzeroberflächenschichten (d. h., Xamarin.iOS und Xamarin.Android) in einer kurzen Übersicht vor.  
   
-2. Die ersten drei Minuten von James Montemagnos Video [Xamarin.Forms: Native iOS, Android & Windows apps with C# & XAML (Xamarin.Forms: Native iOS, Android-& Windows-Apps mit C# & XAML) (Channel9, 13 Min. 3 Sek.)](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) enthalten ebenfalls eine Übersicht, und wenn Sie das restliche Video ansehen, erhalten Sie Beispiele in den Demos.  
+2. Die ersten drei Minuten von James Montemagno Video [xamarin. Forms: Native IOS, Android & Windows-apps mit c# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13m3s) bieten eine weitere Übersicht, und Sie können weiterhin Demos ansehen.  
   
 3. (Optional) [An Introduction to Xamarin.Forms](/xamarin/get-started/quickstarts/deepdive?pivots=windows) (xamarin.com).  
   
@@ -86,15 +86,15 @@ Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Ent
   
 1. **Ein Android-Emulator.** Je nachdem, mit welcher Version von Windows Sie arbeiten, sollten Sie entweder Microsofts Visual Studio Emulator für Android oder den Xamarin Player verwenden, die beide hohe Leistung bieten und eine Vielzahl von Gerätefunktionen unterstützen:  
   
-    - **Computer mit Windows 8+:** Es wird dringend empfohlen, Microsofts [Visual Studio Emulator für Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)zu verwenden, der mit Visual Studio installiert wurde.  Das Video zum [Visual Studio-Emulator für Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 m 55 s) enthält eine Übersicht und eine Demonstration.  
+    - **Computer mit Windows 8+:** Es wird dringend empfohlen, Microsofts [Visual Studio Emulator für Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)zu verwenden, der mit Visual Studio installiert wurde.  Das Video zum [Visual Studio-Emulator für Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5m55s) bietet eine Übersicht und eine Demonstration.  
   
     - **Windows 7 oder früher/Windows unter Mac OS X**: Verwenden Sie den [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
-2. **Apples iOS-Simulator.** Weitere Informationen hierzu finden Sie unter [Getting Started in Simulator (Erste Schritte im Simulator)](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2. **IOS-Simulator von Apple.** Weitere Informationen hierzu finden Sie unter [Getting Started in Simulator (Erste Schritte im Simulator)](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
 3. **Microsoft Windows Phone Emulator.** Weitere Informationen hierzu finden Sie unter [Ausführen von Windows Phone-Apps im Emulator](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-## <a name="components"></a> Deeper Dive: Xamarin Components  
+## <a name="deeper-dive-xamarin-components"></a><a name="components"></a> Tieferer Einblick: xamarin-Komponenten  
  *10 Minuten*  
   
- Viele erweiterte Leistungsmerkmale stehen Xamarin-Apps über Xamarin-Komponenten zur Verfügung. Den Gesamtkatalog, der Komponenten für zusätzliche Steuerelemente der Benutzeroberfläche, Authentifizierung, eine Vielzahl von Clouddiensten wie Microsoft Azure uvm. enthält, können Sie unter [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) herunterladen.
+ Viele erweiterte Leistungsmerkmale stehen Xamarin-Apps über Xamarin-Komponenten zur Verfügung. Den vollständigen Katalog, der für den Download verfügbar [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) ist, finden Sie unter. Dies umfasst Komponenten für zusätzliche Steuerelemente der Benutzeroberfläche, Authentifizierung, eine Vielzahl von Clouddiensten wie Microsoft Azure und vieles mehr.

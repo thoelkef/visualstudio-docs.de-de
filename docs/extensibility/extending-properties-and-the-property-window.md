@@ -1,5 +1,5 @@
 ---
-title: Erweitern von Eigenschaften und dem Eigenschaftenfenster | Microsoft Docs
+title: Erweitern von Eigenschaften und des Eigenschaften Fensters | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711739"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Erweitern von Eigenschaften und dem Eigenschaftenfenster
-Das **Fenster Eigenschaften** wird verwendet, um die Entwurfszeiteigenschaften und Ereignisse ausgewählter Objekte anzuzeigen und zu bearbeiten.
+# <a name="extend-properties-and-the-property-window"></a>Erweitern von Eigenschaften und des Eigenschaften Fensters
+Das **Eigenschaften** Fenster wird verwendet, um die Entwurfszeit Eigenschaften und-Ereignisse ausgewählter Objekte anzuzeigen und zu bearbeiten.
 
- Wenn Sie ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Objekt in auswählen, werden die öffentlichen Eigenschaften dieses Objekts im **Eigenschaftenfenster** angezeigt. Weitere Informationen finden Sie unter Übersicht über das [Fenster Eigenschaften](../extensibility/internals/properties-window-overview.md).
+ Wenn Sie in ein Objekt auswählen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , werden die öffentlichen Eigenschaften des Objekts im **Eigenschaften** Fenster angezeigt. Weitere Informationen finden Sie unter [Eigenschaftenfenster Übersicht](../extensibility/internals/properties-window-overview.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Verfügbar machen von Eigenschaften im Eigenschaftenfenster](../extensibility/exposing-properties-to-the-properties-window.md) Erläutert, wie Ihre benutzerdefinierten Eigenschaften im Eigenschaftenfenster angezeigt werden können.
+- [Eigenschaften für den Eigenschaftenfenster](../extensibility/exposing-properties-to-the-properties-window.md) verfügbar machen Erläutert, wie Sie Ihre benutzerdefinierten Eigenschaften im Eigenschaftenfenster anzeigen können.
 
-- [Abrufen von Projekteigenschaften](../extensibility/getting-project-properties.md) Erläutert, wie Projekteigenschaften abgerufen werden.
+- [Projekteigenschaften erhalten](../extensibility/getting-project-properties.md) Erläutert, wie Projekteigenschaften angezeigt werden.

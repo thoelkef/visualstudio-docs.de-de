@@ -1,5 +1,5 @@
 ---
-title: Dialog Feld "an&#39;eine Aktivität binden" (Legacy) | Microsoft-Dokumentation
+title: Dialog Feld "binden an eine Aktivität&#39;s" (Legacy) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f88d7ebe714fcdc9bf404e1cf58c4c86cf37047d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851467"
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Dialog Feld "an&#39;eine Aktivität binden" (Legacy)
-In diesem Thema wird beschrieben, wie Sie das Dialogfeld **an die Eigenschaft einer Aktivität binden** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)]verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Dialog Feld "binden an eine Aktivität&#39;s" (Legacy)
+In diesem Thema wird beschrieben, wie Sie das Dialogfeld **an die Eigenschaft einer Aktivität binden** in der Legacy-verwenden [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
  Ein Instanztyp der Abhängigkeitseigenschaft kann an die öffentliche Eigenschaft oder das Ereignis einer anderen Aktivität gebunden werden. Weitere Informationen zur Aktivitäts Bindung finden Sie unter [Verwenden von Abhängigkeits Eigenschaften](https://msdn2.microsoft.com/library/bb675255.aspx).
 
@@ -29,10 +29,10 @@ In diesem Thema wird beschrieben, wie Sie das Dialogfeld **an die Eigenschaft ei
 
  In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog **Felds binden an die Eigenschaft einer Aktivität** beschrieben.
 
-|Benutzeroberflächenelement|Beschreibung|
+|Benutzeroberflächenelement|BESCHREIBUNG|
 |----------------|-----------------|
 |**Binden an einen vorhandenen Member**|Wählen Sie einen Member aus, an den Sie im Strukturansichtsbereich binden möchten. Im Bereich unterhalb der Struktur wird eine Meldung angezeigt, ob es sich bei dem Member um einen gültigen Typ handelt, an den gebunden werden kann, oder nicht. Klicken Sie auf **OK** , um eine Bindung mit dem ausgewählten gültigen Member herzustellen.|
 |**Binden an einen neuen Member**|Erstellen Sie ein neues Memberfeld oder eine Eigenschaft, an das bzw. die gebunden werden kann. Geben Sie einen **neuen Elementnamen**ein. Wählen Sie aus, ob Sie eine Abhängigkeits Eigenschaft oder ein öffentliches Feld erstellen möchten, indem Sie **Create Field** oder **Create Property**auswählen. Klicken Sie auf **OK** , um das neue Mitglied zu erstellen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden von Aktivitäts Eigenschaften](https://msdn2.microsoft.com/library/bb628510.aspx) [mithilfe von Abhängigkeits Eigenschaften](https://msdn2.microsoft.com/library/bb675255.aspx) [Legacy-Designer für Windows Workflow Foundation UI-Hilfe](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

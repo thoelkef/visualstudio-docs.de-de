@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544013"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen.
@@ -29,7 +29,7 @@ ms.locfileid: "85544013"
 |-|-|
 |TypName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Kategorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -42,7 +42,7 @@ ms.locfileid: "85544013"
 
 |Suffix|Basistyp/Schnittstelle|
 |------------|--------------------------|
-|Attribut|<xref:System.Attribute?displayProperty=fullName>|
+|attribute|<xref:System.Attribute?displayProperty=fullName>|
 |Sammlung|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |Wörterbuch|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
@@ -51,13 +51,13 @@ ms.locfileid: "85544013"
 |Berechtigung|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Warteschlange|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stapel|<xref:System.Collections.Stack?displayProperty=fullName>|
-|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
+|Stream|<xref:System.IO.Stream?displayProperty=fullName>|
 
  Außerdem sollten die folgenden Suffixe **nicht** verwendet werden:
 
-- delegate
+- Delegat
 
-- Enum
+- Enumeration
 
 - Impl – Verwenden Sie stattdessen 'Core'.
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905830"
 ---
 # <a name="how-to-get-a-service"></a>Vorgehensweise: erhalten eines Dienstanbieter
@@ -42,7 +42,7 @@ Wenn Visual Studio eine lädt <xref:Microsoft.VisualStudio.Shell.Package> , übe
 
     Mit diesem Code wird ein SVsActivityLog-Dienst abgerufen und in eine- <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> Schnittstelle umgewandelt, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter Gewusst [wie: Verwenden des Aktivitäts Protokolls](../extensibility/how-to-use-the-activity-log.md).
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
 5. Suchen Sie **im Menü Extras** der experimentellen Instanz nach der Schaltfläche **getservicecommand aufrufen** . Wenn Sie auf diese Schaltfläche klicken, wird ein Meldungs Feld mit dem Hinweis angezeigt, dass **der Aktivitätsprotokoll Dienst gefunden wurde.**
 
@@ -85,7 +85,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Bereitstellen eines Dienstanbieter](../extensibility/how-to-provide-a-service.md)
 - [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)

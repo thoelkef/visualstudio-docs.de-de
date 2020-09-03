@@ -1,63 +1,63 @@
 ---
-title: 'Vorgehensweise: Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden von asyncpackage zum Laden von VSPackages im Hintergrund | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
 ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204025"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Vorgehensweise: Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Gewusst wie: Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Laden und initialisieren ein Visual Studio-Paket können auf dem Datenträger-e/a führen. Wenn diese e/a im UI-Thread auftritt, kann es zu Probleme mit der Reaktionsfähigkeit führen. Um dieses Problem zu beheben, Visual Studio 2015 eingeführt, die <xref:Microsoft.VisualStudio.Shell.AsyncPackage> Klasse, die das Laden des Pakets in einem Hintergrundthread ermöglicht.  
+Das Laden und Initialisieren eines vs-Pakets kann zu Datenträger-e/a-Vorgängen führen. Wenn solche e/a-Vorgänge im UI-Thread durchgeführt werden, kann dies zu Reaktions Problemen führen. Um dies zu beheben, wurde in Visual Studio 2015 die-Klasse eingeführt, die das  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> Laden von Paketen in einem Hintergrund Thread ermöglicht.  
   
-## <a name="creating-an-asyncpackage"></a>Erstellen einer von AsyncPackage  
- Sie können zunächst erstellen ein VSIX-Projekt (**Datei / neu / Project / Visual C#-/ Erweiterbarkeit / VSIX-Projekt**) und dem Projekt eine VSPackage hinzugefügt (klicken Sie mit der rechten Maustaste auf das Projekt und **hinzufügen/neues Element / C#-Element/Erweiterungen/Visual Studio-Paket**). Sie können dann Ihre Dienste zu erstellen und diese Dienste zu Ihrem Paket hinzufügen.  
+## <a name="creating-an-asyncpackage"></a>Erstellen eines asyncpackage  
+ Sie können beginnen, indem Sie ein VSIX-Projekt (**Datei/neu/Projekt/Visual c#/Erweiterbarkeit/VSIX-Projekt**) erstellen und dem Projekt ein VSPackage hinzufügen (Klicken Sie mit der rechten Maustaste auf das Projekt, und fügen Sie das Element/ **c# Item/Extensibility/Visual Studio-Paket hinzu**). Anschließend können Sie Ihre Dienste erstellen und diese Dienste zu Ihrem Paket hinzufügen.  
   
-1. Leiten Sie das Paket von <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
+1. Leiten Sie das Paket von ab <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .  
   
-2. Wenn Sie Dienste bereitstellen, deren Abfragen zum Laden des Pakets verursachen:  
+2. Wenn Sie Dienste bereitstellen, deren Abfragen möglicherweise dazu führen, dass das Paket geladen wird:  
   
-    Visual Studio an, dass Ihr Paket für das Laden im Hintergrund sicher ist und zum Aktivieren dieses Verhaltens, Ihre <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> sollte festgelegt **AllowsBackgroundLoading** Eigenschaft auf "true" in den Attributkonstruktor.  
+    Um Visual Studio mitzuteilen, dass das Paket für das Laden im Hintergrund sicher ist, und um dieses Verhalten zu abonnieren, <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> sollte die **allowsbackgroundload** -Eigenschaft im Attributkonstruktor auf true festgelegt werden.  
   
    ```csharp  
    [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]  
   
    ```  
   
-    Um zu Visual Studio anzugeben, dass es sicher ist, Ihren Dienst in einem Hintergrundthread zu instanziieren, sollten Sie festlegen der <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> Eigenschaft auf "true", in der <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> Konstruktor.  
+    Um Visual Studio mitzuteilen, dass es sicher ist, dass der Dienst in einem Hintergrund Thread instanziiert werden kann, sollten Sie die- <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> Eigenschaft im <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> Konstruktor auf true festlegen.  
   
    ```csharp  
    [ProvideService(typeof(SMyTestService), IsAsyncQueryable = true)]  
   
    ```  
   
-3. Wenn Sie über die Benutzeroberfläche-Kontexte geladen werden, geben Sie **PackageAutoLoadFlags.BackgroundLoad** für die <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> oder der Wert (0 x 2) in die Flags, die als den Wert des Eintrags für Ihres Pakets automatisch laden geschrieben.  
+3. Wenn Sie über UI-Kontexte laden, sollten Sie **packageautoloadflags. backgroundload** für den <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> oder den Wert (0x2) in den Flags angeben, die als Wert für den automatischen Lade Eintrag Ihres Pakets geschrieben wurden.  
   
    ```csharp  
    [ProvideAutoLoad(UIContextGuid, PackageAutoLoadFlags.BackgroundLoad)]  
   
    ```  
   
-4. Wenn Sie asynchrone Initialisierung arbeiten durchführen müssen, sollten Sie überschreiben <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Entfernen Sie die **Initialize()** Methode, die durch die VSIX-Vorlage bereitgestellt. (Die **Initialize()** -Methode in der **von AsyncPackage** ist versiegelt). Können Sie eines der <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> Methoden, um asynchrone Dienste zu Ihrem Paket hinzuzufügen.  
+4. Wenn Sie die asynchrone Initialisierung durchführen möchten, sollten Sie überschreiben <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A> . Entfernen Sie die von der VSIX-Vorlage bereitgestellte **Initialize ()** -Methode. (Die **Initialize ()** -Methode in **asyncpackage** ist versiegelt.) Sie können eine beliebige Methode verwenden <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> , um dem Paket asynchrone Dienste hinzuzufügen.  
   
-    HINWEIS: Aufzurufende **Basis. Initializeasync()"** , Sie können Ihren Quellcode zu ändern:  
+    Hinweis: um **base.Initializeasync ()** aufzurufen, können Sie Ihren Quellcode in Folgendes ändern:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
    ```  
   
-5. Sie müssen peinlich RPCs (Entfernen von Procedure Call) nicht Stellen aus Ihrem Code für die asynchrone Initialisierung (in **"initializeasync"** ). Dies können auftreten, wenn Sie aufrufen <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> direkt oder indirekt.  Bei der Synchronisierung lädt erforderlich sind, der UI-Thread blockiert mit <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>. Das Standardmodell für blockierende deaktiviert RPCs. Dies bedeutet, dass wenn Sie versuchen, einen RPC aus Ihrem asynchrone Aufgaben zu verwenden, Sie ein deadlock hervorruft, wenn der UI-Thread selbst die darauf warten, bis Ihr Paket geladen wird. Die allgemeine Alternative besteht darin, Code, um den UI-Thread zu marshallen, falls erforderlich, z. B. **beigetreten Aufgabenfactory**des <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> oder eines anderen Mechanismus, der keine RPC verwendet.  Verwenden Sie keine **ThreadHelper.Generic.Invoke** oder in der Regel blockiert den aufrufenden Thread, die darauf warten, um den UI-Thread zu erhalten.  
+5. Sie müssen sicherstellen, dass kein RPCs (Remove PROCEDURE-Befehl) aus dem asynchronen Initialisierungs Code (in **initializeasync**) ausgeführt wird. Diese können auftreten, wenn Sie <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> direkt oder indirekt aufgerufen werden.  Wenn Synchronisierungs Lasten erforderlich sind, wird der UI-Thread mithilfe von blockiert <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> . Das standardmäßige Blockierungs Modell deaktiviert RPCs. Dies bedeutet Folgendes: Wenn Sie versuchen, eine RPC-Methode aus den Async-Tasks zu verwenden, wird ein Deadlock auftreten, wenn der UI-Thread selbst auf das Laden des Pakets wartet. Die allgemeine Alternative besteht darin, den Code ggf. in den UI-Thread zu **Joinable Task Factory**Mars Hallen, indem er etwas ähnliches wie verbundene aufgabenfactory <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> oder einen anderen Mechanismus verwendet, der keinen RPC verwendet.  Verwenden Sie **threadhelper. Generic.** Call nicht, oder blockieren Sie in der Regel den aufrufenden Thread, der darauf wartet, zum UI-Thread zu gelangen.  
   
-    HINWEIS: Vermeiden Sie die Verwendung **"GetService"** oder **QueryService** in Ihre **"initializeasync"** Methode. Wenn Sie diese Komponenten verwenden müssen, müssen Sie zunächst zum UI-Thread zu wechseln. Die Alternative ist die Verwendung <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> aus Ihrem **von AsyncPackage** (durch umwandeln, damit <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
+    Hinweis: Sie sollten die Verwendung von **GetService** oder **QueryService** in der **initializeasync** -Methode vermeiden. Wenn Sie diese verwenden müssen, müssen Sie zuerst zum UI-Thread wechseln. Die Alternative ist die Verwendung <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> von aus dem **asyncpackage** (durch Umwandeln in <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider> ).  
   
-   C#: Erstellen einer von AsyncPackage:  
+   C#: Erstellen eines asyncpackage:  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]       
@@ -72,29 +72,29 @@ public sealed class TestPackage : AsyncPackage
 }  
 ```  
   
-## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konvertieren Sie einen vorhandenen VSPackage in von AsyncPackage  
- Der Großteil der Arbeit entspricht dem Erstellen eines neuen **von AsyncPackage**. Sie müssen die Schritte 1 bis 5. Außerdem müssen Sie besondere Vorsicht für Folgendes ausführen:  
+## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konvertieren eines vorhandenen VSPackages in asyncpackage  
+ Der Großteil der Arbeit entspricht dem Erstellen eines neuen **asyncpackage**. Sie müssen die obigen Schritte 1 bis 5 ausführen. Außerdem müssen Sie Folgendes berücksichtigen:  
   
-1. Denken Sie daran, entfernen Sie die **initialisieren** außer Kraft setzen, die Sie in Ihrem Paket haben.  
+1. Denken Sie daran, die **Initialisierungs** Außerkraftsetzung zu entfernen, die Sie im Paket hatten.  
   
-2. Vermeiden von Deadlocks: Möglicherweise gibt es ausgeblendet RPCs in Ihrem Code die jetzt in einem Hintergrundthread ausgeführt. Sie müssen sicherstellen, dass wenn Sie RPC vornehmen (z. B. **"GetService"** ), müssen Sie entweder (1) wechseln, an den primären Thread oder (2) verwenden die asynchrone Version der API eine vorhanden ist (z. B. **GetServiceAsync**).  
+2. Vermeiden von Deadlocks: in Ihrem Code können ausgeblendete RPCs vorhanden sein, die jetzt in einem Hintergrund Thread auftreten. Sie müssen sicherstellen, dass Sie bei einem RPC (z. b. **GetService**) entweder (1) zum Haupt Thread wechseln oder (2) die asynchrone Version der API verwenden, sofern vorhanden (z. b. **getserviceasync**).  
   
-3. Wechseln Sie nicht zwischen den Threads zu häufig. Versuchen Sie es, um die Arbeit zu lokalisieren, die in einem Hintergrundthread auftreten können. Dies reduziert die Ladezeit.  
+3. Wechseln Sie nicht zu häufig zwischen Threads. Versuchen Sie, die Arbeit zu lokalisieren, die in einem Hintergrund Thread auftreten kann. Dadurch wird die Ladezeit reduziert.  
   
-## <a name="querying-services-from-asyncpackage"></a>Abfragen von Diensten von AsyncPackage  
- Ein **von AsyncPackage** kann oder möglicherweise je nach den Aufrufer nicht asynchron geladen. Zum Beispiel  
+## <a name="querying-services-from-asyncpackage"></a>Abfragen von Diensten von asyncpackage  
+ Ein **asyncpackage** kann abhängig vom Aufrufer asynchron geladen werden. Beispiel:  
   
-- Wenn der Aufrufer aufgerufen **"GetService"** oder **QueryService** (sowohl synchrone APIs) oder  
+- Wenn der Aufrufer **GetService** oder **QueryService** (synchrone APIs) oder  
   
-- Wenn der Aufrufer aufgerufen **IVsShell::LoadPackage** (oder **IVsShell5::LoadPackageWithContext**) oder  
+- Wenn der Aufrufer **IVsShell:: LoadPackage** (oder **IVsShell5:: loadpackagewithcontext**) oder  
   
-- Die Last durch einen UI-Kontext ausgelöst wird, aber Sie haben nicht angegeben, dass der UI-Kontext-Mechanismus Sie asynchron laden können  
+- Die Auslastung wird durch einen UI-Kontext ausgelöst, aber Sie haben nicht angegeben, dass der UI-Kontext Mechanismus Sie asynchron laden kann.  
   
-  das Paket wird dann synchron geladen.  
+  Anschließend wird das Paket synchron geladen.  
   
-  Beachten Sie, dass Ihr Paket noch Gelegenheit (in die asynchrone Initialisierung-Phase) Aufgaben des UI-Threads, obwohl für die Arbeit der Fertigstellung der UI-Thread blockiert wird. Wenn der Aufrufer verwendet **IAsyncServiceProvider** asynchron Abfrage für den Dienst klicken Sie dann die auslastungs- und die Initialisierung erfolgt asynchron vorausgesetzt, sie nicht sofort im resultierenden Aufgabenobjekt blockieren.  
+  Beachten Sie, dass das Paket weiterhin die Möglichkeit hat (in der asynchronen Initialisierungsphase), den UI-Thread zu bearbeiten, obwohl der UI-Thread für den Abschluss der Arbeit blockiert wird. Wenn der Aufrufer **iasyncserviceprovider** verwendet, um den Dienst asynchron abzufragen, werden die Auslastung und Initialisierung asynchron ausgeführt, wenn Sie das resultierende Aufgaben Objekt nicht sofort blockieren.  
   
-  C#: Vorgehensweise Dienst asynchron abgefragt werden:  
+  C#: Asynchrones Abfragen des Diensts:  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;   

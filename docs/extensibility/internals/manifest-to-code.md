@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e21f266cc0dea39cfbaba660ef3557af6023c104
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536122"
 ---
 # <a name="manifest-to-code"></a>Manifest für Code
@@ -45,7 +45,7 @@ Das Manifest to Code Tool ist eine Konsolenanwendung, die eine imagemanifest-Dat
 
 - ManifestToCode/Manifest: D:\MyManifest.imagemanifest/Language: vsct/imageIdClass: myimageids
 
-## <a name="notes"></a>Hinweise
+## <a name="notes"></a>Notizen
 
 - Es wird empfohlen, dass Sie dieses Tool mit Bild Manifesten verwenden, die vom Manifest from Resources Tool generiert wurden.
 

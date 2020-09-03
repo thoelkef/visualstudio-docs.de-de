@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544767"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument
@@ -54,7 +54,7 @@ ms.locfileid: "85544767"
     > [!NOTE]
     > Ruft nicht `StopCaching` vom-Ereignishandler für das- `Shutdown` Ereignis eines Dokuments oder Arbeitsblatts auf. Wenn das- `Shutdown` Ereignis ausgelöst wird, ist es zu spät, den Daten Cache zu ändern. Weitere Informationen zum `Shutdown` Ereignis finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

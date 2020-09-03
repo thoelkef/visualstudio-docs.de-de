@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284931"
 ---
 # Vorgehensweise: Suchen nach Themen im Inhaltsverzeichnis
@@ -31,7 +31,7 @@ Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, u
 
 ## Filtern des Inhaltsverzeichnisses
 
-Sie können das Inhaltsverzeichnis filtern, um den Umfang der Themen einzuschränken, die auf der Registerkarte **Inhalt** angezeigt werden. Titel werden nur dann in der Liste angezeigt, wenn Sie den Stamm des von Ihnen angegebenen Begriffs enthalten. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Titel nicht den Begriff enthalten, werden auf einen einzelnen Knoten mit Auslassungs Zeichen (**...**) reduziert.
+Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird. Titel werden nur in der Liste angezeigt, wenn Sie den Stamm des Begriffs enthalten, den Sie angeben. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Titel nicht den Begriff enthalten, werden auf einen einzelnen Knoten mit Auslassungs Zeichen (**...**) reduziert.
 
 1. Klicken Sie auf die Registerkarte **Inhalt**.
 
@@ -50,7 +50,7 @@ Wenn Sie ein Thema mithilfe der Index- oder Volltextsuchfunktionen geöffnet hab
 
      Die Registerkarte **Inhalt** wird geöffnet und zeigt den Speicherort des Themas im Inhaltsverzeichnis an.
 
-## Siehe auch
+## Weitere Informationen
 
 - [Gewusst wie: Suchen von Themen im Index](../help-viewer/find-topics-index.md)
 - [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)

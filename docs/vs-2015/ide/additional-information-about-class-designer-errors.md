@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852208"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Zusätzliche Informationen zu Klassen-Designer-Fehlern
@@ -43,9 +43,9 @@ Klassen-Designer verfolgt nicht den Speicherort der Quelldateien, so dass die Ä
 
  Hilfe zu anderen Fehlern und Warnungen finden Sie in den folgenden Ressourcen:
 
- [Das Arbeiten mit C++ Visual Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) umfasst Informationen zur Problem C++ Behandlung bei der Anzeige in einem Klassendiagramm.
+ [Arbeiten mit Visual C++ Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) Enthält Informationen zur Problembehandlung beim Anzeigen von C++ in einem Klassendiagramm.
 
- [Forum des Visual Studio-Klassen-Designers:](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) Ein Forum für Fragen zum Klassen-Designer.
+ [Visual Studio-Klassen-Designer Forum](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) Bietet ein Forum für Fragen zum Klassen-Designer.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md)

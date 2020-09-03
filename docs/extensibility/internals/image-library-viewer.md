@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536343"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
@@ -55,7 +55,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 </ImageManifest>
 ```
 
- **Sonderzeichen**
+ **Symbols**
 
  Zur Unterstützung der Lesbarkeit und Wartung kann das Bild Manifest Symbole für Attributwerte verwenden. Symbole werden wie folgt definiert:
 
@@ -71,7 +71,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Unterelement**|**Definition**|
 |-|-|
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei für die Verwendung im aktuellen Manifest.|
-|GUID|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
+|Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
 |id|Das Symbol stellt eine ID dar und muss eine nicht negative Ganzzahl sein.|
 |String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|
 
@@ -110,7 +110,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 
 |**Attribut**|**Definition**|
 |-|-|
-|GUID|Benötigten Der GUID-Teil des bilmonikers.|
+|Guid|Benötigten Der GUID-Teil des bilmonikers.|
 |id|Benötigten Der ID-Teil des bilmonikers.|
 |Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|
 
@@ -162,7 +162,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 
 |**Attribut**|**Definition**|
 |-|-|
-|GUID|Benötigten Der GUID-Teil des bilmonikers.|
+|Guid|Benötigten Der GUID-Teil des bilmonikers.|
 |id|Benötigten Der ID-Teil des bilmonikers.|
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|
 

@@ -12,10 +12,10 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 033e682344cbd255c8cbf41d7527ec7d08a5db20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915609"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debuggen eines veröffentlichten Azure-Clouddiensts mit Visual Studio und IntelliTrace
@@ -23,7 +23,7 @@ Mit IntelliTrace können Sie umfangreiche Debuginformationen für eine Rollenins
 
 Sie können IntelliTrace verwenden, wenn Visual Studio Enterprise installiert ist und die Azure-Anwendung .NET Framework 4 oder höher als Zielversion verwendet. IntelliTrace sammelt Informationen für Ihre Azure-Rollen. Die virtuellen Computer für diese Rollen führen immer 64-Bit-Betriebssysteme aus.
 
-Alternativ dazu können Sie das [Remotedebuggen](vs-azure-tools-debugging-cloud-services-overview.md) verwenden, das direkt an einen in Azure ausgeführten Clouddienst angefügt wird.
+Als Alternative können Sie das [Remote Debuggen](vs-azure-tools-debugging-cloud-services-overview.md) verwenden, um direkt an einen Cloud-Dienst anzufügen, der in Azure ausgeführt wird.
 
 > [!IMPORTANT]
 > IntelliTrace ist nur für Debugszenarien bestimmt und sollte nicht für eine Produktionsbereitstellung verwendet werden.
@@ -32,7 +32,7 @@ Alternativ dazu können Sie das [Remotedebuggen](vs-azure-tools-debugging-cloud-
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Konfigurieren einer Azure-Anwendung für IntelliTrace
 Wenn Sie IntelliTrace für eine Azure-Anwendung aktivieren möchten, müssen Sie die Anwendung in einem Visual Studio Azure-Projekt erstellen und von dort veröffentlichen. Sie müssen IntelliTrace für die Azure-Anwendung konfigurieren, bevor Sie die Anwendung in Azure veröffentlichen. Wenn Sie Ihre Anwendung veröffentlichen, ohne IntelliTrace zu konfigurieren, müssen Sie das Projekt erneut veröffentlichen. Weitere Informationen finden Sie unter [Veröffentlichen eines Azure-Clouddienstprojekts mit Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-1. Wenn Sie bereit sind, die Azure-Anwendung bereitzustellen, überprüfen Sie, ob die Projektbuildziele auf **Debuggen**festgelegt sind.
+1. Wenn Sie bereit sind, die Azure-Anwendung bereitzustellen, überprüfen Sie, ob die Projektbuildziele auf **Debuggen** festgelegt wurden.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie im Kontextmenü die Option **Veröffentlichen** aus.
    

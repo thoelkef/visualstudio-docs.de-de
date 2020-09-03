@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b3f7d09e29489dac0598b9558df595aedd0c5d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203056"
 ---
-# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
+# <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Typ des Hostnamens.  
+Gibt den Typ des Host namens an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,21 +43,21 @@ public enum enum_GETHOSTNAME_TYPE { 
   
 ## <a name="members"></a>Member  
  GHN_FRIENDLY_NAME  
- Gibt einen Anzeigenamen des Hosts an.  
+ Gibt einen anzeigen Amen für den Host an.  
   
  GHN_FILE_NAME  
- Gibt einen Dateinamen des Hosts an.  
+ Gibt den Dateinamen des Hosts an.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Werte werden übergeben, als Argument an die [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) Methode, um einen Hostnamen in verschiedenen Formaten abzurufen.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Werte werden als Argument an die [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) -Methode übermittelt, um einen Hostnamen in anderen Formaten abzurufen.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
