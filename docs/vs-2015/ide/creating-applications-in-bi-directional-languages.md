@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3d8649484178a537ed4af7bdde044a29893275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619262"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
@@ -30,9 +30,9 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Anwendungstypen, die bidirektionale Sprachen unterstützen
 
-1. Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
+1. Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie [unter Bidirektionale Unterstützung für Windows Forms Anwendungen](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
 
-2. Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+2. Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie [unter Bidirektionale Unterstützung für ASP.NET-Webanwendungen](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 3. Konsolenanwendungen Konsolenanwendungen unterstützen keinen bidirektionalen Text. Das liegt an der Art und Weise, wie Windows Konsolenanwendungen einsetzt.
 
@@ -43,7 +43,7 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 
 - **Objektnamen** Mithilfe von bidirektionalen Sprachen können Sie Projektmappen, Projekten, Dateien, Ordern usw. Namen zuweisen. Im Code können Sie bidirektionale Sprachen zum Benennen von Variablen, Klassen, Objekten, Attributen, Metadaten und anderen Elementen einsetzen.
 
-- **Dateicodierung** Sie können Dateien mit sprachspezifischer oder Unicode-Codierung speichern und öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung](../ide/how-to-save-and-open-files-with-encoding.md).
+- **Dateicodierung** Sie können Dateien mit sprachspezifischer oder Unicode-Codierung speichern und öffnen. Weitere Informationen finden Sie unter Gewusst [wie: Speichern und Öffnen von Dateien mit Codierung](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="features-with-limited-or-no-support"></a>Nicht oder nur eingeschränkt unterstützte Funktionen
  Einige Features, die für Anwendungen in bidirektionalen Sprachen üblich sind, werden von Visual Studio nur eingeschränkt oder gar nicht unterstützt. Dazu gehören:
@@ -74,7 +74,7 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 
 - Attribute und Metadaten.
 
-- Eigenschaftswerte. Sie können im Fenster Eigenschaften arabischen oder hebräischen Text eingeben. In diesem Fenster können Sie mit den üblichen Windows-Tastenkombinationen zwischen der Rechts-nach-Links-Lesefolge und der Links-nach-Rechts-Lesefolge wechseln (STRG+RECHTE UMSCHALTTASTE für Rechts-nach-Links bzw. STRG+LINKE UMSCHALTTASTE für Links-nach-Rechts).
+- Eigenschaftswerte Sie können im Fenster Eigenschaften arabischen oder hebräischen Text eingeben. In diesem Fenster können Sie mit den üblichen Windows-Tastenkombinationen zwischen der Rechts-nach-Links-Lesefolge und der Links-nach-Rechts-Lesefolge wechseln (STRG+RECHTE UMSCHALTTASTE für Rechts-nach-Links bzw. STRG+LINKE UMSCHALTTASTE für Links-nach-Rechts).
 
 - Code und normaler Text. Im Code-Editor, der gleichzeitig der Text-Editor ist, können Sie mithilfe von Arabisch oder Hebräisch Klassen, Funktionen, Variablen, Eigenschaften, Zeichenfolgenliterale, Attribute usw. benennen. Allerdings unterstützt der Editor keine Lesefolge von rechts nach links; der Text beginnt immer am linken Rand.
 
@@ -86,5 +86,5 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 
 - Codekommentare. Sie können Kommentare in Arabisch oder Hebräisch erstellen. Sie können diese Sprachen auch im Kommentarerstellungstool verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bidirektionale Unterstützung für Windows Forms Anwendungen](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2) [Bidirektionale Unterstützung für ASP.NET-Webanwendungen](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03) [Globalisieren von Anwendungen](../ide/globalizing-applications.md) [lokalisieren](../ide/localizing-applications.md) von Anwendungen

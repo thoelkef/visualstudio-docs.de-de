@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984514"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint
@@ -31,7 +31,7 @@ ms.locfileid: "72984514"
 ## <a name="site-columns"></a>Websitespalten
  Website Spalten sind eines der grundlegendsten Elemente, die Sie einem SharePoint-Projekt hinzufügen können. Eine Website Spalte stellt einen Datentyp dar, z. b. eine Telefonnummer, einen Kommentar oder den Ortsnamen eines Kontakts in einer Kontaktliste.
 
- Die neue Site Column-Projekt Element Vorlage macht das Erstellen von Site Spalten einfacher als in der früheren Version von Visual Studio. Nachdem Sie eine neue Website Spalte erstellt haben, können Sie die XML-Datei in der Datei " *Elements. XML* " der Website Spalte so ändern, dass Sie die gewünschten Informationen enthält, z. b. den anzeigen Amen, den Datentyp und die Gruppe, in der die Spalte "Site" in SharePoint angezeigt werden soll. Weitere Informationen zu Site Spalten finden Sie unter [Introduction to Columns (Einführung in Spalten](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14))).
+ Die neue Site Column-Projekt Element Vorlage macht das Erstellen von Site Spalten einfacher als in der früheren Version von Visual Studio. Nachdem Sie eine neue Website Spalte erstellt haben, können Sie den XML-Code in der *Elements.xml* -Datei der Website Spalte ändern, um die gewünschten Informationen einzuschließen, z. b. den anzeigen Amen, den Datentyp und die Gruppe, in der die Spalte Site in SharePoint angezeigt werden soll. Weitere Informationen zu Site Spalten finden Sie unter [Introduction to Columns (Einführung in Spalten](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14))).
 
 ## <a name="content-types-and-lists"></a>Inhaltstypen und Listen
  Inhaltstypen und Listen gehören zu den am häufigsten verwendeten Elementen in SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "72984514"
 
  Eine Liste ist eine Sammlung von Informationen in SharePoint, die Sie für andere Personen freigeben können. Listen bestehen aus Zeilen von Spalten, die Daten enthalten. Einige Beispiele für Listen sind: eine Aufgabenliste, eine Liste mit Kontakten und eine Ankündigungsliste.
 
- Die neuen Inhaltstyp-und Listen-Designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] das Erstellen von Website Inhaltstypen und Listen wesentlich einfacher und intuitiver als in der früheren Version von Visual Studio. Die Benutzeroberfläche ermöglicht Ihnen, Inhaltstypen und Listen auf vertraute Weise visuell zu erstellen und ermöglicht das Sortieren und Gruppieren von Daten in Listen und das Verwenden von Gruppen Überschriften. Weitere Informationen zu Inhaltstypen finden Sie unter [Inhaltstypen](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14)). Weitere Informationen zu Listen finden Sie unter [Auflisten von Formularen](/previous-versions/office/developer/sharepoint-2010/aa543232(v=office.14)) und Listen [Ansichten](/previous-versions/office/developer/sharepoint-2010/ff604021(v=office.14)).
+ Die neuen Inhaltstyp-und Listen-Designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] machen das Erstellen von Website Inhaltstypen und Listen wesentlich einfacher und intuitiver als in der früheren Version von Visual Studio. Die Benutzeroberfläche ermöglicht Ihnen, Inhaltstypen und Listen auf vertraute Weise visuell zu erstellen und ermöglicht das Sortieren und Gruppieren von Daten in Listen und das Verwenden von Gruppen Überschriften. Weitere Informationen zu Inhaltstypen finden Sie unter [Inhaltstypen](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14)). Weitere Informationen zu Listen finden Sie unter [Auflisten von Formularen](/previous-versions/office/developer/sharepoint-2010/aa543232(v=office.14)) und Listen [Ansichten](/previous-versions/office/developer/sharepoint-2010/ff604021(v=office.14)).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
