@@ -1,5 +1,5 @@
 ---
-title: Bewirken, dass benutzerdefinierte Projekte Versionsfähig | Microsoft-Dokumentation
+title: Versions bewusste Erstellung benutzerdefinierter Projekte | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,10 +8,10 @@ ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825686"
 ---
 # <a name="making-custom-projects-version-aware"></a>Bewirken, dass benutzerdefinierte Projekte versionsfähig werden
@@ -24,13 +24,13 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
   
  Sie als der Autor eines Projektsystems implementieren `UpgradeProject_CheckOnly` (aus der `IVsProjectUpgradeViaFactory4` -Schnittstelle), um Benutzern Ihres Projektsystems eine Upgradeprüfung bereitzustellen. Wenn ein Benutzer ein Projekt öffnet, wird diese Methode aufgerufen, um festzustellen, ob ein Projekt repariert werden muss, bevor es geladen wird. Die möglichen Upgradeanforderungen werden in `VSPUVF_REPAIRFLAGS`aufgelistet, und sie enthalten folgende Möglichkeiten:  
   
-1. `SPUVF_PROJECT_NOREPAIR`: Ist keine Reparatur erforderlich.  
+1. `SPUVF_PROJECT_NOREPAIR`: Es ist keine Reparatur erforderlich.  
   
-2. `VSPUVF_PROJECT_SAFEREPAIR`: Macht das Projekt mit einer früheren Version kompatibel ohne die Probleme, die möglicherweise in den vorherigen Versionen des Produkts aufgetreten.  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: Macht das Projekt mit einer früheren Version kompatibel ohne die Probleme, die möglicherweise in den vorherigen Versionen des Produkts aufgetreten sind.  
   
-3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Macht das Projekt rückwärtskompatibel aber einige Risiken, das Sie festgestellt haben, können Probleme mit früheren Versionen des Produkts. Beispielsweise wird das Projekt nicht kompatibel sein, wenn es von verschiedenen SDK-Versionen abhängt.  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Macht das Projekt rückwärtskompatibel, es gibt aber ein gewisses Risiko, dass die Probleme, die möglicherweise in vorherigen Versionen des Produkts aufgetreten sind, weiterhin auftreten. Beispielsweise wird das Projekt nicht kompatibel sein, wenn es von verschiedenen SDK-Versionen abhängt.  
   
-4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Macht das Projekt mit einer früheren Version nicht kompatibel.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Bewirkt, dass das Projekt nicht mehr mit einer früheren Version kompatibel ist.  
   
 5. `VSPUVF_PROJECT_INCOMPATIBLE`: Gibt an, dass die aktuelle Version dieses Projekt nicht unterstützt.  
   
@@ -49,7 +49,7 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
   
  Es folgt ein Beispiel, in dem die kompatibilitätsbezogene Vorgehensweise zusammengefasst ist. Wurde ein Projekt in einer früheren Version erstellt, und stellt die aktuelle Version fest, dass ein Upgrade erforderlich ist, zeigt Visual Studio ein Dialogfeld an, in dem der Benutzer gebeten wird, die Berechtigung zum Vornehmen der Änderungen zu erteilen. Stimmt der Benutzer zu, wird das Projekt geändert und dann geladen. Wird die Projektmappe nun geschlossen und in der früheren Version wieder geöffnet, ist das auf die höhere Version aktualisierte Projekt nicht kompatibel und wird nicht geladen. Gab es für das Projekt nur eine erforderliche Reparatur (anstelle eines Upgrades), wird das reparierte Projekt weiterhin in beiden Versionen geöffnet.  
   
-## <a name="BKMK_Incompat"></a> Kennzeichnen eines Projekt als nicht kompatibel  
+## <a name="marking-a-project-as-incompatible"></a><a name="BKMK_Incompat"></a> Markieren eines Projekts als nicht kompatibel  
  Sie können ein Projekt als nicht kompatibel mit früheren Versionen von Visual Studio kennzeichnen.  Nehmen Sie beispielsweise an, Sie erstellen ein Projekt, in dem eine .NET Framework 4.5-Funktion verwendet wird. Da dieses Projekt nicht in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]erstellt werden kann, können Sie es als nicht kompatibel kennzeichnen, um zu verhindern, dass diese Version versucht, das Projekt zu laden.  
   
  Die Komponente, aus der die nicht kompatible Funktion hinzufügt wurde, ist dafür zuständig, das Projekt als nicht kompatibel zu kennzeichnen. Die Komponente muss Zugriff auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>-Schnittstelle haben, die den betroffenen Projekten entspricht.  
@@ -120,7 +120,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Wird `pUpgradeRequired` von dieser Methode auf TRUE festgelegt, und gibt die Methode den Wert `S_OK`zurück, wird das Ergebnis als „Upgrade“ behandelt, weshalb die Methode ein Upgradeflag auf den Wert `VSPUVF_PROJECT_ONEWAYUPGRADE`festgelegt, der weiter unten in diesem Thema beschrieben wird. Der folgende Rückgabewerte werden unterstützt, wenn diese ältere Methode verwendet wird, allerdings nur, wenn `pUpgradeRequired` auf TRUE festgelegt ist:  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED` Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
 2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_UNSAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
@@ -133,7 +133,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Wenn beispielsweise die Methoden `UpgradeProject_CheckOnly` und `CreateProject` , die für ein [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] mit SP1-Projektsystem geschrieben sind, eine Projektdatei auswerten und feststellen, dass die `<MinimumVisualStudioVersion>` -Buildeigenschaft den Wert „11.0“ hat, wird das Projekt von Visual Studio 2010 mit SP1 nicht geladen. Darüber hinaus würde der **Projektmappen-Navigator** angeben, dass das Projekt „nicht kompatibel“ ist, und würde es nicht laden.  
   
-## <a name="BKMK_UpgradeLogger"></a> Die Upgrade-Protokollierung  
+## <a name="the-upgrade-logger"></a><a name="BKMK_UpgradeLogger"></a> Die upgradeprotokollierung  
  Ein Aufruf von `IVsProjectUpgradeViaFactory::UpgradeProject` enthält eine `IVsUpgradeLogger` -Protokollierung. Diese sollte von Projektsystemen und -konfigurationen verwendet werden, um ausführliche Upgradeablaufverfolgung zur Problembehandlung bereitzustellen. Wird eine Warnung oder ein Fehler protokolliert, zeigt Visual Studio den Upgradebericht an.  
   
  Für das Schreiben in die Upgrade-Protokollierung sollten Sie die folgenden Richtlinien beachten:  

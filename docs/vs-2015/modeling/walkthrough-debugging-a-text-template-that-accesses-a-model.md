@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659267"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
@@ -44,9 +44,9 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 
 1. Erstellen Sie die Projekt Mappe, und starten Sie Sie im Debugger. (Klicken Sie im Menü **Erstellen** auf Projekt Mappe **neu erstellen**, und klicken Sie dann im Menü **Debuggen** auf **Debugging starten**.) Das debugprojekt wird durch eine neue Instanz von Visual Studio geöffnet.
 
-2. Fügen Sie dem debugprojekt eine Textdatei mit dem Namen `DebugTest.tt` hinzu.
+2. Fügen Sie `DebugTest.tt` dem debugprojekt eine Textdatei mit dem Namen hinzu.
 
-3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von DebugTest.tt auf `TextTemplatingFileGenerator` festgelegt ist.
+3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von DebugTest.tt auf festgelegt ist `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Debugdirektiven, die auf ein Modell aus einer Textvorlage zugreifen
  Bevor Sie aus den Anweisungen und Ausdrücken in einer Textvorlage auf ein Modell zugreifen können, müssen Sie zuerst einen generierten Direktivenprozessor aufrufen. Wenn Sie den generierten Direktivenprozessor aufrufen, werden die Klassen in Ihrem Modell dem Textvorlagen Code als Eigenschaften zur Verfügung gestellt. Weitere Informationen finden Sie unter [zugreifen auf Modelle aus Text Vorlagen](../modeling/accessing-models-from-text-templates.md).
@@ -97,11 +97,11 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 
      **Der Prozessor mit dem Namen "debuggingtestlanguagedirectiveprocessor" unterstützt die Direktive mit dem Namen "modelroot" nicht. Die Transformation wird nicht ausgeführt.**
 
-     In diesem Fall enthält der direktivenaufruame einen falschen Direktivennamen. Sie haben `modelRoot` als Direktivenname angegeben, aber der korrekte Direktivenname ist `DebuggingTestLanguage`.
+     In diesem Fall enthält der direktivenaufruame einen falschen Direktivennamen. Sie haben `modelRoot` als Direktivenname angegeben, aber der korrekte Direktivenname lautet `DebuggingTestLanguage` .
 
 3. Doppelklicken Sie auf den Fehler im Fenster **Fehlerliste** , um zum Code zu springen.
 
-4. Um den Code zu korrigieren, ändern Sie den Direktivennamen in `DebuggingTestLanguage`.
+4. Um den Code zu korrigieren, ändern Sie den Direktivennamen in `DebuggingTestLanguage` .
 
      Die Änderung wird hervorgehoben.
 
@@ -161,13 +161,13 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 
      (C#)
 
-     **Die Transformation wird kompiliert: Microsoft. VisualStudio. TextTemplating \<GUID >. "Generatedtexttransform" enthält keine Definition für "examplemodel".**
+     **Die Transformation wird kompiliert: Microsoft. VisualStudio. TextTemplating \<GUID> . "Generatedtexttransform" enthält keine Definition für "examplemodel".**
 
      (Visual Basic)
 
-     **Die Transformation "examplemodel" ist kein Member von "Microsoft. VisualStudio. TextTemplating \<GUID >. Generatedtexttransformation '.**
+     **Kompilieren der Transformation: "examplemodel" ist kein Member von "Microsoft. VisualStudio. TextTemplating" \<GUID> . Generatedtexttransformation '.**
 
-     In diesem Fall enthält der Textvorlagen Code einen falschen Eigenschaftsnamen. Sie haben `ExampleModel` als Eigenschaftsnamen angegeben, aber der richtige Eigenschaftsname ist `LibraryModel`. Den richtigen Eigenschaftsnamen finden Sie im bereitgestellten Parameter, wie im folgenden Code gezeigt:
+     In diesem Fall enthält der Textvorlagen Code einen falschen Eigenschaftsnamen. Sie haben `ExampleModel` als Eigenschaftsname angegeben, aber der richtige Eigenschaftsname lautet `LibraryModel` . Den richtigen Eigenschaftsnamen finden Sie im bereitgestellten Parameter, wie im folgenden Code gezeigt:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -175,7 +175,7 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 
 3. Doppelklicken Sie auf den Fehler im Fenster Fehlerliste, um zum Code zu springen.
 
-4. Um den Code zu korrigieren, ändern Sie den Eigenschaftsnamen in `LibraryModel` im Textvorlagen Code.
+4. Um den Code zu korrigieren, ändern Sie den Eigenschaftsnamen `LibraryModel` in in den Textvorlagen Code.
 
      Die Änderungen werden hervorgehoben.
 

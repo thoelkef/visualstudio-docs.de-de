@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Weiter | Microsoft Docs
+title: 'IEnumCodePaths2:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e126fc916360d0cc992da5f17edecda7cb2ef41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717808"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale `rgelt` Größe des Arrays an.
+[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe des `rgelt` Arrays an.
 
 `rgelt`\
-[in, out] Array von [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) Elementen, die ausgefüllt werden sollen.
+[in, out] Ein Array von [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) Elementen, das ausgefüllt werden soll.
 
 `pceltFetched`\
-[out] Gibt die Anzahl der `rgelt`tatsächlich in zurückgegebenen Elemente zurück.
+vorgenommen Gibt die Anzahl der Elemente zurück, die tatsächlich in zurückgegeben werden `rgelt` .
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden kann. andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

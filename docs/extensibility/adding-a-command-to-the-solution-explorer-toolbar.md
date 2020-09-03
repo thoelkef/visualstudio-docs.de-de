@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183729"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste
@@ -38,7 +38,7 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Hinzufügen einer Schaltfläche zur Projektmappen-Explorer Symbolleiste
  In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie Sie der **Projektmappen-Explorer** Symbolleiste eine Schaltfläche hinzufügen. Wenn auf die Schaltfläche geklickt wird, wird der Code in der Rückruf Methode ausgeführt.
 
-1. Wechseln Sie in der Datei *toolbarbuttonpackage. vsct* zum `<Symbols>` Abschnitt. Der `<GuidSymbol>` Knoten enthält die Menü Gruppe und den Befehl, die von der Paket Vorlage generiert wurden. Fügen Sie `<IDSymbol>` diesem Knoten ein Element hinzu, um die Gruppe zu deklarieren, die Ihren Befehl enthalten soll.
+1. Wechseln Sie in der Datei *toolbarbuttonpackage. vsct* zum  `<Symbols>` Abschnitt. Der `<GuidSymbol>`  Knoten enthält die Menü Gruppe und den Befehl, die von der Paket Vorlage generiert wurden. Fügen Sie `<IDSymbol>` diesem Knoten ein Element hinzu, um die Gruppe zu deklarieren, die Ihren Befehl enthalten soll.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
@@ -67,7 +67,7 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
     </Button>
     ```
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
      Auf der **Projektmappen-Explorer** Symbolleiste sollte die neue Befehls Schaltfläche rechts neben den vorhandenen Schaltflächen angezeigt werden. Das Schaltflächen Symbol ist das durchgestrichen.
 
@@ -104,7 +104,7 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
 
     Jedes Sichtbarkeits Element stellt eine Bedingung dar, unter der die angegebene Schaltfläche angezeigt wird. Wenn Sie mehrere Bedingungen anwenden möchten, müssen Sie mehrere Einträge für die gleiche Schaltfläche erstellen.
 
-3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
+3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
     Die **Projektmappen-Explorer** Symbolleiste enthält nicht die Schaltfläche durchgestrichen.
 

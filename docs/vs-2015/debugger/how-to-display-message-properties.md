@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Meldungseigenschaften | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Anzeigen von Nachrichteneigenschaften | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,21 +12,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205372"
 ---
 # <a name="how-to-display-message-properties"></a>Vorgehensweise: Anzeigen von Meldungseigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um weitere Informationen zu einer Nachricht aufgeführt [Ansicht "Nachrichten"](../debugger/messages-view.md), verwenden Sie die [im Dialogfeld "Eigenschaften" Nachricht](../debugger/message-properties-dialog-box.md).  
+Weitere Informationen zu Nachrichten, die in der [Nachrichtenansicht](../debugger/messages-view.md) aufgeführt sind, erhalten Sie im [Dialogfeld „Nachrichteneigenschaften“](../debugger/message-properties-dialog-box.md).  
   
-### <a name="to-open-a-message-properties-dialog-box"></a>So öffnen Sie das Dialogfeld Eigenschaften der Nachricht  
+### <a name="to-open-a-message-properties-dialog-box"></a>Öffnen des Dialogfelds „Nachrichteneigenschaften“  
   
-1. Wählen Sie eine Nachricht aus der Struktur, die in der Ansicht "Nachrichten" angezeigt.  
+1. Wählen Sie eine Nachricht aus der Struktur aus, die in der Nachrichtenansicht angezeigt wird.  
   
-2. Von der **Ansicht** Menü wählen **Eigenschaften**.  
+2. Wählen Sie im Menü **Ansicht** die Option **Eigenschaften**aus.  
   
-   Eigenschaftendialogfelder sind nicht modal, klicken Sie auf ein anderes Element in einem Fenster anzeigen und das Dialogfeld Informationen für das ausgewählte Element angezeigt werden.
+   Eigenschaftsdialogfelder sind nicht modal. Daher können Sie im Ansichtsfenster auf ein anderes Element klicken, zu dem dann im Dialogfeld Informationen angezeigt werden.

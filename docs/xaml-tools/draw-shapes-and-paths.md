@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350822"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
@@ -104,7 +104,7 @@ Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.
 |![Zwei Formen vor dem Vereinen](../designers/media/b1_1.png)|Zwei Formen vor dem Vereinen|
 |![Vereinigen](../designers/media/b1_2.png)|Vereinigen|
 |![Dividieren](../designers/media/b1_3.png)|Dividieren|
-|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![Überschneiden](../designers/media/b1_4.png)|Überschneiden|
 |![Überlappung ausschließen](../designers/media/b1_5.png)|Überlappung ausschließen|
 |![Subtrahieren](../designers/media/b1_6.png)|Subtrahieren|
 

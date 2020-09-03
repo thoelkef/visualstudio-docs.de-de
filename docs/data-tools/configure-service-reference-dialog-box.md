@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586925"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
@@ -43,7 +43,7 @@ Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-**Address**
+**Adresse**
 
 Aktualisiert die Webadresse, in der ein Dienst Verweis nach einem Dienst sucht. Während der Entwicklung kann der Dienst z. b. auf einem Entwicklungs Server gehostet und später auf einen Produktionsserver verschoben werden. Dies erfordert eine Adressänderung.
 
@@ -103,7 +103,7 @@ Zeigt das Dialogfeld **Webverweis hinzufügen** an.
 > [!NOTE]
 > Die Schaltfläche **Webverweis hinzufügen** ist nur verfügbar, wenn das Dialogfeld **Dienst Verweis konfigurieren** im Dialog **Feld Dienstverweis hinzufügen**angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [How to: Add a reference to a web service (Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst)](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
