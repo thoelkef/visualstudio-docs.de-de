@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c011a530bbd4323546257a40334a4b8a0f57bdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195913"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle stellt eine Debug-Engine (DE). Es wird verwendet, um verschiedene Aspekte von einer Debugsitzung zu verwalten, erstellen Sie Haltepunkte festlegen und Löschen von Ausnahmen.  
+Diese Schnittstelle stellt eine Debug-Engine (de) dar. Es wird zum Verwalten verschiedener Aspekte einer Debugsitzung verwendet, von der Erstellung von Breakpoints bis zum Festlegen und Löschen von Ausnahmen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,37 +31,37 @@ IDebugEngine2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle wird von einer benutzerdefinierten DE zum Verwalten von Programmen Debuggen implementiert. Diese Schnittstelle muss von der DE implementiert werden.  
+ Diese Schnittstelle wird von einem benutzerdefinierten Programm zur Verwaltung des Debuggens von Programmen implementiert. Diese Schnittstelle muss von der de implementiert werden.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Schnittstelle wird von der Sitzungs-Manager (SDM) verwalten die Debugsitzung, einschließlich der Verwaltung von Ausnahmen, erstellen Haltepunkte und reagieren auf synchrone Ereignisse, die von der DE gesendet aufgerufen.  
+ Diese Schnittstelle wird vom Sitzungs-Debug-Manager (SDM) zum Verwalten der Debugsitzung aufgerufen, einschließlich der Verwaltung von Ausnahmen, der Erstellung von Breakpoints und der Reaktion auf synchrone Ereignisse, die von der de gesendet werden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugEngine2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugEngine2` .  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Erstellt einen Enumerator für alle Programme, die von einer bereitgestellten Kompatibilitätsrichtlinie gedebuggt wird.|  
-|[Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Fügt eine bereitgestellten Kompatibilitätsrichtlinie an ein Programm an.|  
-|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Erstellt einen ausstehenden Haltepunkt in der DE.|  
-|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Gibt an, wie die DE für eine bestimmte Ausnahme behandeln soll.|  
-|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Entfernt die angegebene Ausnahme an, damit sie nicht mehr von der Debug-Engine verarbeitet wird.|  
-|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Entfernt die Liste der Ausnahmen, die die IDE für eine bestimmte Laufzeit-Architektur oder Sprache festgelegt hat.|  
-|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Ruft die GUID des DE ab.|  
-|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informiert eine bereitgestellten Kompatibilitätsrichtlinie, die das angegebene Programm ungewöhnlich beendet wurde und die DE sollten bereinigen Sie alle Verweise auf das Programm und senden Sie ein Programm, zerstören Ereignis.|  
-|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Wird aufgerufen, durch die SDM, um anzugeben, dass ein synchroner Debug-Ereignis, durch die DE zuvor gesendet werden, um die SDM empfangen und verarbeitet wurde.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Legt das Gebietsschema des DE fest.|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Legt den Registrierungsstamm, die derzeit in Verwendung durch die DE fest.|  
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Erstellt einen Enumerator für alle Programme, die von einer de debuggt werden.|  
+|[Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Fügt eine de an ein Programm an.|  
+|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Erstellt einen ausstehenden Haltepunkt in der de.|  
+|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Gibt an, wie eine bestimmte Ausnahme von der de behandelt werden soll.|  
+|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Entfernt die angegebene Ausnahme, sodass Sie nicht mehr von der Debug-Engine verarbeitet wird.|  
+|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Entfernt die Liste der Ausnahmen, die die IDE für eine bestimmte Lauf Zeit Architektur oder-Sprache festgelegt hat.|  
+|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Ruft die GUID der de ab.|  
+|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informiert eine de, dass das angegebene Programm atypisch beendet wurde und dass die de alle Verweise auf das Programm bereinigen und ein Programm zerstörungsereignis senden soll.|  
+|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Wird von SDM aufgerufen, um anzugeben, dass ein synchrones Debugereignis empfangen und verarbeitet wurde, das zuvor von der de an die SDM gesendet wurde.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Legt das Gebiets Schema der de fest.|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Legt den Registrierungs Stamm fest, der zurzeit von der de verwendet wird.|  
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Legt eine Metrik fest.|  
-|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Fordert an, dass alle von diesem DE gedebuggten Programme Ausführung das nächste Mal zu, die einer ihrer Threads versucht beenden zu starten.|  
+|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Fordert an, dass alle Programme, die von diesem debuggt werden, die Ausführung abbrechen, wenn einer ihrer Threads das nächste Mal ausgeführt wird.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Veranstalter](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)
