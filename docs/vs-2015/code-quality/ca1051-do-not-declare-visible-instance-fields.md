@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 076ce3858774d44e2d6c4c25205ced74b7a41bf0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539762"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Sichtbare Instanzfelder nicht deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
@@ -47,7 +47,7 @@ ms.locfileid: "85539762"
  Unterdrücken Sie keine Warnung dieser Regel. Extern sichtbare Felder bieten keine Vorteile, die für Eigenschaften nicht verfügbar sind. Darüber hinaus können öffentliche Felder nicht durch [Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)Aufrufe geschützt werden. Weitere Informationen finden Sie unter [CA2112: gesicherte Typen sollten keine Felder](../code-quality/ca2112-secured-types-should-not-expose-fields.md)verfügbar machen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen-Typ ( `BadPublicInstanceFields` ), der gegen diese Regel verstößt. `GoodPublicInstanceFields`zeigt den korrigierten Code an.
+ Das folgende Beispiel zeigt einen-Typ ( `BadPublicInstanceFields` ), der gegen diese Regel verstößt. `GoodPublicInstanceFields` zeigt den korrigierten Code an.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 

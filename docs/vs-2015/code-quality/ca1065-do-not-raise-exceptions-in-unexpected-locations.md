@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539255"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Kategorie|Microsoft. Design|
+|Category|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -65,24 +65,24 @@ ms.locfileid: "85539255"
 
  Die folgenden Ausnahmen können von einer Get-Methode der Eigenschaft ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>und alle Ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
 
-- <xref:System.ArgumentException?displayProperty=fullName>(nur aus indizierten Get-)
+- <xref:System.ArgumentException?displayProperty=fullName> (nur aus indizierten Get-)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(nur aus indizierten Get-)
+- <xref:System.Collections.Generic.KeyNotFoundException> (nur aus indizierten Get-)
 
 ### <a name="event-accessor-methods"></a>Ereigniszugriffsmethoden
  Ereignisaccessoren sollten einfache Vorgänge sein, die keine Ausnahmen auslösen. Ein Ereignis sollte keine Ausnahme auslösen, wenn Sie versuchen, einen Ereignishandler hinzuzufügen oder zu entfernen.
 
  Die folgenden Ausnahmen können von einem Ereignis accesor ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>und alle Ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
 
-- <xref:System.ArgumentException>und Ableitungen
+- <xref:System.ArgumentException> und Ableitungen
 
 ### <a name="equals-methods"></a>Gleichheits Methoden
  Die folgenden **Gleichheits** Methoden sollten keine Ausnahmen auslösen:

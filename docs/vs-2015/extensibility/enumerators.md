@@ -11,42 +11,42 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65a03a8dc741ec86aca3137f49cd753722ede215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204570"
 ---
 # <a name="enumerators"></a>Enumeratoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieser Abschnitt enthält die Datentypen der Enumerator in der Quelle Steuerelement-Plug-in-API, die das Quellcodeverwaltungs-Plug-in zu kennen müssen.  
+In diesem Abschnitt werden die enumeratordatentypen in der Quellcodeverwaltungs-Plug-in-API aufgelistet, über die das Quellcodeverwaltungs-Plug-in informiert sein muss.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Befehlscode](../extensibility/command-code-enumerator.md)  
- Listet die Optionen für die [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) und [SccPopulateList](../extensibility/sccpopulatelist-function.md) Funktionen.  
+ Listet die Optionen für die Funktionen [sccgetcommandoptions](../extensibility/sccgetcommandoptions-function.md) und [sccpopulatelist](../extensibility/sccpopulatelist-function.md) auf.  
   
  [Meldung](../extensibility/message-enumerator.md)  
- Listet Flags, die zum Drucken Rückrufs [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ Listet die Flags auf, die für den Druck Rückruf verwendet werden, [lptextoutproc](../extensibility/lptextoutproc.md).  
   
  [Dateistatuscode](../extensibility/file-status-code-enumerator.md)  
- Enthält die benannten Konstante Werte, die den Status einer Datei unter quellcodeverwaltung angeben.  
+ Enthält benannte Konstante Werte, die den Zustand einer Datei in der Quell Code Verwaltung angeben.  
   
  [Verzeichnisstatuscode](../extensibility/directory-status-code-enumerator.md)  
- Enthält die benannten Konstante Werte, die den Status eines Verzeichnisses in der quellcodeverwaltung angeben.  
+ Enthält benannte Konstante Werte, die den Zustand eines Verzeichnisses unter Quell Code Verwaltung angeben.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Die Source-Steuerelement-Plug-in SDK definiert und beschreibt die Ressourcen enthalten.  
+ Definiert das Quellcodeverwaltungs-Plug-in-SDK und beschreibt die enthaltenen Ressourcen.  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- Fordert den Benutzer für die erweiterten Optionen für den angegebenen Befehl.  
+ Fordert den Benutzer auf, erweiterte Optionen für den angegebenen Befehl zu erhalten.  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Untersucht die Liste der Dateien für ihren aktuellen Status an. Darüber hinaus verwendet der `pfnPopulate` Funktion, um den Aufrufer darüber zu benachrichtigen, wenn eine Datei nicht die Kriterien für entspricht der `nCommand`.  
+ Überprüft die Liste der Dateien auf Ihren aktuellen Status. Außerdem verwendet die- `pfnPopulate` Funktion, um den Aufrufer zu benachrichtigen, wenn eine Datei nicht mit den Kriterien für übereinstimmt `nCommand` .  
   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Beschreibt die Callback-Funktion, mit dem [SccOpenProject](../extensibility/sccopenproject-function.md) werden die Nachrichten über das Quellcodeverwaltungs-Plug-in über die IDE angezeigt.  
+ Beschreibt die Rückruffunktion, die von [sccopenproject](../extensibility/sccopenproject-function.md) zum Anzeigen von Nachrichten aus dem Quellcodeverwaltungs-Plug-in über die IDE verwendet wird.  
   
  [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)  
- Enthält eine vollständige Liste aller Elemente in der Quelle-Plug-in-API.
+ Stellt eine vollständige Auflistung aller Elemente in der Quellcodeverwaltungs-Plug-in-API bereit.

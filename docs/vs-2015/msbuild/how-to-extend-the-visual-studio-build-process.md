@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156609"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Gewusst wie: Erweitern des Visual Studio-Buildvorgangs
@@ -55,7 +55,7 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Re
 
    Die folgende Tabelle zeigt alle Ziele in „Microsoft.Common.targets“, die Sie bedenkenlos überschreiben können.
 
-|Target Name|BESCHREIBUNG|
+|Zielname|BESCHREIBUNG|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden vor oder nach Abschluss der Kompilierung ausgeführt. Die meisten Anpassungen werden in einem dieser beiden Ziele ausgeführt.|
 |`BeforeBuild`, `AfterBuild`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem alles Weitere erstellt wurde. **Hinweis:** Die Ziele `BeforeBuild` und `AfterBuild` sind bereits in Kommentaren am Ende der meisten Projektdateien definiert. Dadurch können Sie Ihrer Projektdatei problemlos Prä- und Postbuildereignissen hinzufügen.|
@@ -68,7 +68,7 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Re
 ## <a name="overriding-dependson-properties"></a>Überschreiben der DependsOn-Eigenschaften
  Mit dem Überschreiben von vordefinierten Zielen lässt sich der Buildprozess leicht erweitern. Da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] die Definition von Zielen aber nacheinander auswertet, können Sie ein anderes Projekt, das Ihr Projekt importiert, nicht daran hindern, die bereits überschriebenen Ziele noch einmal zu überschreiben. Das letzte in der Projektdatei definierte `AfterBuild`-Ziel wird z.B. während des Buildprozesses verwendet, nachdem alle anderen Projekte importiert wurden.
 
- Sie können sich gegen das unbeabsichtigte Überschreiben von Zielen schützen, indem Sie die DependsOn-Eigenschaften überschreiben, die in `DependsOnTargets`-Attributen in der gesamten Datei „Microsoft.Common.targets“ verwendet werden. So enthält das `Build`-Ziel z.B. einen `DependsOnTargets`-Attributwert von `"$(BuildDependsOn)"`. Betrachten Sie das folgende Beispiel:
+ Sie können sich gegen das unbeabsichtigte Überschreiben von Zielen schützen, indem Sie die DependsOn-Eigenschaften überschreiben, die in `DependsOnTargets`-Attributen in der gesamten Datei „Microsoft.Common.targets“ verwendet werden. So enthält das `Build`-Ziel z.B. einen `DependsOnTargets`-Attributwert von `"$(BuildDependsOn)"`. Zu berücksichtigen:
 
 ```
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -125,5 +125,5 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Re
 |`CleanDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie die Ausgabe Ihres benutzerdefinierten Buildprozesses bereinigen möchten|
 |`CompileDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie benutzerdefinierte Prozesse vor oder nach dem Kompilieren einfügen möchten|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Integration in Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md) [TARGETS-Dateien](../msbuild/msbuild-dot-targets-files.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Kennzeichnen und Kennzeichnung von Threads | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189439"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung
+# <a name="how-to-flag-and-unflag-threads"></a>Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können einen Thread, der besondere Aufmerksamkeit erhalten, indem Sie es mit einem Symbol im markieren möchten kennzeichnen die **Threads**, **parallele Stapel**, **parallele Überwachung**, und **GPU Threads** Windows. Anhand dieses Symbols können Sie gekennzeichnete Threads von anderen Threads unterscheiden.  
+Sie können einen Thread, dem Sie besondere Aufmerksamkeit schenken möchten, markieren, indem Sie ihn in den Fenstern **Threads**, **parallele Stapel**, **parallele Überwachung**und **GPU-Threads** mit einem Symbol versehen. Anhand dieses Symbols können Sie gekennzeichnete Threads von anderen Threads unterscheiden.  
   
- Gekennzeichnete Threads werden auch in eine besondere Behandlung der **Thread** auf in der Liste der **Debugspeicherort** Symbolleiste. In dieser Liste können alle Threads oder nur gekennzeichnete Threads aufgeführt werden. Wenn Sie einen Thread kennzeichnen die **Thread** Liste wechselt automatisch zum nur gekennzeichnete Threads anzeigen, aber Sie können es wechseln zurück, um alle Threads nach Bedarf anzuzeigen.  
+ Gekennzeichnete Threads werden in der **Thread** Liste auch auf der Symbolleiste **Debugspeicherort** auf besondere Weise behandelt. In dieser Liste können alle Threads oder nur gekennzeichnete Threads aufgeführt werden. Wenn Sie einen Thread kennzeichnen, schaltet die **Thread** Liste automatisch so um, dass nur gekennzeichnete Threads angezeigt werden. Sie können Sie jedoch zurück wechseln, um alle Threads nach Bedarf anzuzeigen.  
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>So können Sie einen Thread mithilfe des Fensters Threads kennzeichnen oder seine Kennzeichnung aufheben  
   
-- In der **Threads** Fenster Suchen Sie den Thread, der Sie interessiert sind, und klicken Sie auf das Flaggensymbol klicken, aktivieren oder deaktivieren das Flag.  
+- Suchen Sie im Fenster **Threads** den Thread, an dem Sie interessiert sind, und klicken Sie auf das Flag-Symbol, um das Flag auszuwählen oder zu löschen.  
   
 ### <a name="to-unflag-all-threads"></a>So heben Sie die Kennzeichnung aller Threads auf  
   
@@ -60,6 +60,6 @@ Sie können einen Thread, der besondere Aufmerksamkeit erhalten, indem Sie es mi
   
 5. Klicken Sie auf **OK**.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung](../debugger/walkthrough-debugging-a-multithreaded-application.md)

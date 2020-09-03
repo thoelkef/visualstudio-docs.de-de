@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2630402e03d1256f63e542818a9066745206d2c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672746"
 ---
 # <a name="list-memory-command"></a>Befehl "Arbeitsspeicher auflisten"
@@ -44,9 +44,9 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
  /Format: `formattype` optional. Formattypen für das Anzeigen von Speicherinformationen im Fenster **Arbeitsspeicher**; entweder OneByte, TwoBytes, FourBytes, EightBytes, Float (32-Bit), oder Double (64-Bit). Wenn OneByte verwendet wird, ist `/Unicode` nicht verfügbar.
 
- /Hex&#124;unsigniertes&#124;Vorzeichen ist optional. Gibt das Format zum Anzeigen von Zahlen an: mit Vorzeichen, ohne Vorzeichen oder hexadezimal.
+ /Hex&#124;signierte&#124;ohne Vorzeichen. Gibt das Format zum Anzeigen von Zahlen an: mit Vorzeichen, ohne Vorzeichen oder hexadezimal.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Anstatt einen kompletten **Debug.ListMemory**-Befehl mit allen Schaltern zu schreiben, können Sie den Befehl mithilfe vordefinierter Aliase aufrufen, bei denen bestimmte Schalter auf angegebene Werte voreingestellt werden. Anstatt z.B. Folgendes einzugeben:
 
 ```
@@ -65,11 +65,11 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |-----------|--------------------------|
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**db**|Debug.ListMemory /Format:OneByte|
-|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**dd**|Debug.ListMemory /Format:FourBytes|
-|**df**|Debug.ListMemory /Format:Float|
-|**dq**|Debug.ListMemory /Format:EightBytes|
+|**Utility**|Debug.ListMemory /Format:OneByte|
+|**DC**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**benutzen**|Debug.ListMemory /Format:FourBytes|
+|**DF**|Debug.ListMemory /Format:Float|
+|**DQ**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
 ## <a name="example"></a>Beispiel
@@ -78,5 +78,5 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Liste der Befehle zum [Auflisten der Befehls](../../ide/reference/list-call-stack-command.md) [Liste Thread Befehl](../../ide/reference/list-threads-command.md) Befehlsfenster für [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

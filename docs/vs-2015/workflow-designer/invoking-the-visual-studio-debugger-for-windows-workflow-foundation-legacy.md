@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bcceca362f3c2a891d36f8f4e8071d0e35c8f164
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658977"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)
@@ -49,11 +49,11 @@ In diesem Thema wird die Verwendung des [!INCLUDE[vsprvs](../includes/vsprvs-md.
  Um einen Workflow durch Anhängen an einen Prozess zu debuggen, wählen Sie den verfügbaren Prozess im Listenfeld **Verfügbare Prozesse** im Dialogfeld **an den Prozess anhängen** aus. Wenn **automatisch: Workflow Code** wird im Textfeld **Anfügen an** nicht angezeigt. Klicken Sie dann auf **auswählen**. Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie **Workflow**aus. Klicken Sie dann auf **OK** und dann auf **Anfügen**.
 
 ## <a name="debugging-with-f5"></a>Debuggen mit F5
- Wenn sich eine Workflow Host Anwendung und eine Workflow-dll in verschiedenen Visual Studio-Projekten befinden, z. b. Wenn Sie eine Workflow Aktivitäts Bibliothek verwenden, müssen Sie das Workflow-DLL-Projekt als Visual Studio-projektmappenstartprojekt festlegen, um den Workflow zu debuggen. mit **F5**. Sie müssen auch den Pfad zur Host Anwendung in der Eigenschaft **externes Programm starten** des Workflow-DLL-Projekts festlegen.
+ Wenn sich eine Workflow Host Anwendung und eine Workflow-dll in verschiedenen Visual Studio-Projekten befinden, z. b. Wenn Sie eine Workflow Aktivitäts Bibliothek verwenden, müssen Sie das Workflow-DLL-Projekt als Visual Studio-projektmappenstartprojekt festlegen, um den Workflow mit **F5**zu debuggen. Sie müssen auch den Pfad zur Host Anwendung in der Eigenschaft **externes Programm starten** des Workflow-DLL-Projekts festlegen.
 
  Zum Festlegen eines Start Projekts in Projektmappen-Explorer klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie **als Startprojekt festlegen**aus. Zum Festlegen des Pfads zum Host in der Eigenschaft **externes Programm starten** Doppelklicken Sie in Projektmappen-Explorer auf den Knoten **Eigenschaften** des Workflow Projekts, und wählen Sie die Registerkarte **Debuggen** aus. Wählen Sie unter **Start Aktion**die Option **externes Programm starten** aus, und geben Sie den Pfad zu der exe-Datei ein, die den zu debuggenden Workflow hostet.
 
  Wird die Hostanwendung als Startprojekt festgelegt, wird nur der Visual Studio-Debugger zum Debuggen aufgerufen. Der [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]-Debugger für Windows Workflow Foundation wird nicht aufgerufen. Wird der Visual Studio-Debugger verwendet, werden nur C#- oder Visual Basic-Codehaltepunkte erreicht, im Workflow-Designer festgelegte Haltepunkte werden nicht erreicht. So wird beispielsweise ein für eine <xref:System.Workflow.Activities.ParallelActivity>-Aktivität im Designer festgelegter Haltepunkt mit dem [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]-Debugger für Windows Workflow Foundation erreicht, nicht jedoch mit dem Visual Studio-Debugger.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Festlegen von Haltepunkten in Workflows (Legacy)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [Debuggen von Legacy Workflows](../workflow-designer/debugging-legacy-workflows.md)

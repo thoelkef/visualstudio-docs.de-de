@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8b095515be5e3c032667c96d8b13d92aa5995c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189731"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Listet die verschiedenen Quelldateien in der Datenquelle enthalten sind.  
+Listet die verschiedenen Quelldateien auf, die in der Datenquelle enthalten sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,25 +32,25 @@ IDiaEnumSourceFiles : IUknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDiaEnumSourceFiles`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDiaEnumSourceFiles` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Ruft die `IEnumVARIANT Interface` Version von diesem Enumerator.|  
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Ruft die `IEnumVARIANT Interface` Version dieses Enumerators ab.|  
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Ruft die Anzahl der Quelldateien ab.|  
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Ruft eine Quelldatei mithilfe eines Indexes ab.|  
-|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Ruft eine angegebene Anzahl von Quelldateien in der Enumerationsfolge ab.|  
-|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Überspringt eine angegebene Anzahl von Quelldateien in einer Enumerationsfolge.|  
+|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Ruft eine angegebene Anzahl von Quelldateien in der enumerationssequenz ab.|  
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Überspringt eine angegebene Anzahl von Quelldateien in einer enumerationssequenz.|  
 |[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
 |[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Rufen Sie diese Schnittstelle durch Aufrufen der `QueryInterface` Methode für ein [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekt. Siehe das Beispiel für Details.  
+ Rufen Sie diese Schnittstelle durch Aufrufen der- `QueryInterface` Methode für ein [idisierbares](../../debugger/debug-interface-access/idiatable.md) Objekt ab. Detail finden Sie in dem Beispiel.  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumSourceFiles` Schnittstelle aus der Liste der Tabellen in einem DIA-Sitzungsobjekt. Ein Beispiel für den Zugriff auf Informationen zur Quelldatei, finden Sie unter den [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Schnittstelle.  
+ In diesem Beispiel wird gezeigt, wie die- `IDiaEnumSourceFiles` Schnittstelle aus der Liste der Tabellen in einem Dia-Sitzungs Objekt abgerufen wird. Ein Beispiel für den Zugriff auf Quelldatei Informationen finden Sie in der [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) -Schnittstelle.  
   
 ```cpp#  
   
@@ -85,12 +85,12 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
 ## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
- Bibliothek: diaguids.lib  
+ Bibliothek: diaguids. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession:: FindFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession:: findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189362"
 ---
 # <a name="call-tree-view---contention-data"></a>Aufrufstrukturansicht: Konfliktdaten
@@ -35,7 +35,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
   
  Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Um den Stammknoten auf den ursprünglichen Knoten zurückzusetzen, klicken Sie mit der rechten Maustaste in der Aufrufstrukturansicht, und klicken Sie dann auf **Stamm zurücksetzen**.  
   
-|Spalte|BESCHREIBUNG|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Exklusive blockierte Zeit %**|Wie lange die Instanzen dieser Funktion in diesem Ausführungspfad während der Profilerstellung nicht ausgeführt werden konnten. Diese Zeit enthält nicht die Zeit, für die untergeordnete Funktionen blockiert wurden, die von der Funktion aufgerufen wurden.|  
 |**Exklusive blockierte Zeit %**|Der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit für diese Funktion in diesem Ausführungspfad entspricht.|  
@@ -55,10 +55,10 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 |**Prozessname**|Der Prozessname.|  
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)   
- [Aufrufstrukturansicht](../profiling/call-tree-view.md)   
- [Aufrufstrukturansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Aufrufstrukturansicht – .NET-Speichersamplingdaten im Profiler](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht](../profiling/how-to-customize-report-view-columns.md)   
+ [Strukturansicht für Aufrufe](../profiling/call-tree-view.md)   
+ [Ansichts Strukturansicht-Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Auftast Strukturansicht-Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Strukturansicht für Aufrufe](../profiling/call-tree-view-instrumentation-data.md)   
  [Aufrufstrukturansicht](../profiling/call-tree-view-sampling-data.md)

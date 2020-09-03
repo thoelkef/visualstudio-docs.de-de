@@ -1,5 +1,5 @@
 ---
-title: 'Schnellstart: Code Analyse für C-C++ | Microsoft-Dokumentation'
+title: 'Schnellstart: Code Analyse für c-c + + | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,10 +13,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e9db06ec0748ce4499afb423fac03886cd763301
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278484"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
@@ -28,17 +28,17 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
 - [Konfigurieren von Regelsätzen für ein Projekt](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
   
-- [Code Analyse ausführen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
+- [Codeanalyse ausführen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
   
-- [Analysieren und Auflösen von Code Analyse Warnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
+- [Analysieren und Auflösen von Codeanalysewarnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
   
 - [Unterdrücken der Codeanalysewarnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
   
-- [Erstellen von Arbeitsaufgaben für Code Analyse Warnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
+- [Erstellen von Arbeitsaufgaben für Codeanalysewarnungen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
   
 - [Durchsuchen und Filtern von Codeanalyseergebnissen](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
   
-## <a name="BKMK_ConfigureRuleSets"></a>Konfigurieren von Regelsätzen für ein Projekt  
+## <a name="configure-rule-sets-for-a-project"></a><a name="BKMK_ConfigureRuleSets"></a> Konfigurieren von Regelsätzen für ein Projekt  
   
 1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektnamen, und wählen Sie dann **Eigenschaften**aus.  
   
@@ -51,13 +51,13 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
         > [!NOTE]
         > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Der Quellcode für ein Formular oder eine Vorlage kann sowohl angezeigt als auch verwaltet werden.  
   
-3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, aktivieren Sie das Kontrollkästchen **CodeC++ Analyse für C/on-Build aktivieren** . Sie können die Code Analyse auch manuell ausführen, indem Sie das Menü **analysieren** öffnen und dann **Code Analyse für** *ProjectName*ausführen auswählen.  
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, aktivieren Sie das Kontrollkästchen **Code Analyse für C/C++ bei Build aktivieren** . Sie können die Code Analyse auch manuell ausführen, indem Sie das Menü **analysieren** öffnen und dann **Code Analyse für** *ProjectName*ausführen auswählen.  
   
 4. Führen Sie in der Liste **diesen Regelsatz ausführen** einen der folgenden Schritte aus:  
   
     - Wählen Sie den Regelsatz, den Sie verwenden möchten.  
   
-    - Wählen Sie **\<durchsuchen... >** , um einen vorhandenen benutzerdefinierten Regelsatz anzugeben, der nicht in der Liste enthalten ist.  
+    - **\<Browse...>** Geben Sie einen vorhandenen benutzerdefinierten Regelsatz an, der nicht in der Liste enthalten ist.  
   
     - Definieren Sie einen benutzerdefinierten Regelsatz.  
   
@@ -71,7 +71,7 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
 |Von Microsoft empfohlene Mindestregeln für eigene Projekte|Dieser Regelsatz zielt auf die kritischsten Probleme in Ihrem nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.|  
 |Von Microsoft empfohlene Regeln für eigene Projekte|Dieser Regelsatz umfasst eine Vielzahl von Problemen. Sie enthält alle Regeln in den von Microsoft empfohlenen Mindestregeln für eigene Projekte|  
   
-## <a name="BKMK_Run"></a>Code Analyse ausführen  
+## <a name="run-code-analysis"></a><a name="BKMK_Run"></a> Code Analyse ausführen  
  Auf der Codeanalyseseite von den Eigenschaftenseiten des Projekts können Sie die Codeanalyse so konfigurieren, dass Sie bei jedem Erstellen des Projekts ausgeführt wird. Sie können die Codeanalyse auch manuell ausführen.  
   
  Zum Ausführen der Codeanalyse in einer Projektmappe:  
@@ -86,17 +86,17 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
   Das Projekt oder die Projektmappe wird kompiliert und Codeanalyse wird ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.  
   
-## <a name="BKMK_Analyze"></a>Analysieren und Auflösen von Code Analyse Warnungen  
+## <a name="analyze-and-resolve-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analysieren und Auflösen von Code Analyse Warnungen  
  Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung im Fenster "Codeanalyse" aus. Die Warnung wird erweitert, um weitere Informationen zu diesem Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummern und Analyselogik, die zu der Warnung geführt hat. Ausführliche Informationen zur Warnung, einschließlich der möglichen Lösungen für das Problem, wählen Sie die Warnungs-Id, um das Hilfethema für diese Meldung in der MSND Bibliothek anzuzeigen.  
   
- Wenn Sie eine Warnung erweitern, wird die Codezeile, die die Warnung verursacht hat, im Visual Studio-Code-Editor hervorgehoben.  
+ Wenn Sie eine Warnung erweitern, wird die Codezeile, die die Warnung verursacht hat im Code-Editor von Visual Studio hervorgehoben.  
   
- Nachdem Sie das Problem verstanden haben, können Sie es in Ihrem Code beheben. Wiederholen Sie dann die Codeanalyse, um sicherzustellen, dass die Warnung nicht mehr im Codeanalysefenster angezeigt wird, und dass durch die Korrektur keine neuen Warnungen ausgelöst wurden.  
+ Nachdem Sie das Problem verstanden haben, können Sie es in Ihrem Code beheben. Wiederholen Sie die Codeanalyse, um sicherzustellen, dass die Warnung nicht mehr im Codeanalysefenster angezeigt wird und dass die Lösung des Problems keine neuen Warnungen ausgelöst hat.  
   
 > [!TIP]
 > Sie können die Codeanalyse im Codeanalysefenster erneut ausführen. Wählen Sie die Schaltfläche **analysieren** aus, und wählen Sie den Bereich der Analyse aus. Sie können die Analyse für die gesamte Projektmappe oder für ein ausgewähltes Projekt erneut ausführen.  
   
-## <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen  
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Unterdrücken von Code Analyse Warnungen  
  Mitunter möchten Sie möglicherweise darauf verzichten, eine Codeanalysewarnung zu korrigieren. So kann es beispielsweise vorkommen, dass das Auflösen der Warnung im Verhältnis zur Wahrscheinlichkeit, dass das Problem in einer realen Implementierung des Codes auftritt, eine zu große Bearbeitung des Codes erfordert. Oder Sie gehen davon aus, dass die für die Warnung verwendete Analyse für den jeweiligen Kontext ungeeignet ist. Sie können Warnungen unterdrücken, sodass diese nicht mehr im Codeanalysefenster angezeigt werden.  
   
  So unterdrücken Sie eine Warnung  
@@ -107,12 +107,12 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
 3. Wählen Sie **Meldung unterdrücken** und dann **in Quelle aus**.  
   
-   Unterdrücken einer Meldung fügt `#pragma warning (disable:`*WarningId*`)` ein, das die Warnung für die Codezeile unterdrückt.  
+   Durch das unterdrücken einer Meldung wird `#pragma warning (disable:` die *warningid* eingefügt `)` , mit der die Warnung für die Codezeile unterdrückt wird.  
   
-## <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a>Erstellen von Arbeitsaufgaben für Code Analyse Warnungen  
+## <a name="creating-work-items-for-code-analysis-warnings"></a><a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Erstellen von Arbeitsaufgaben für Code Analyse Warnungen  
  Funktionen für die Arbeitselementeverfolgung können Sie in Visual Studio protokollieren. Um diese Funktion verwenden zu können, müssen Sie sich mit einer Instanz von Team Foundation Server verbinden.  
   
- **So erstellen Sie ein Arbeits Element für mindestens eine C/C++ Code-Warnung**  
+ **Erstellen eine Arbeitsaufgabe für eine oder mehrere Warnungen für C/C++-Code**  
   
 1. Klicken Sie im Codeanalysefenster die Warnungen, um sie zu erweitern und auszuwählen.  
   
@@ -122,7 +122,7 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
   
 4. Fügen Sie zusätzliche Informationen hinzu, und wählen Sie dann **Arbeitsaufgabe speichern**aus.  
   
-## <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse  
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Suchen und Filtern der Code Analyseergebnisse  
  Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.  
   
 1. So **Filtern Sie Warnungen nach Titel oder Warnungs-ID**: Geben Sie das-Schlüsselwort in das **Filter** Textfeld ein.  

@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6a4a4e2e6990772b50568043c4d18ff29248571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547887"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Ereignishandler korrekt deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
@@ -47,7 +47,7 @@ ms.locfileid: "85547887"
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Delegaten, der für die Behandlung von Ereignissen geeignet ist. Die Methoden, die von diesem Ereignishandler aufgerufen werden können, entsprechen der Signatur, die in den Entwurfs Richtlinien angegeben ist. `AlarmEventHandler`der Typname des Delegaten. `AlarmEventArgs`wird von der-Basisklasse für Ereignisdaten abgeleitet <xref:System.EventArgs> und enthält Alarmereignis Daten.
+ Das folgende Beispiel zeigt einen Delegaten, der für die Behandlung von Ereignissen geeignet ist. Die Methoden, die von diesem Ereignishandler aufgerufen werden können, entsprechen der Signatur, die in den Entwurfs Richtlinien angegeben ist. `AlarmEventHandler` der Typname des Delegaten. `AlarmEventArgs` wird von der-Basisklasse für Ereignisdaten abgeleitet <xref:System.EventArgs> und enthält Alarmereignis Daten.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]

@@ -1,5 +1,5 @@
 ---
-title: 'Testbereich 2: Abrufen aus der Quellcodeverwaltung | Microsoft-Dokumentation'
+title: 'Test Bereich 2: aus Quell Code Verwaltung beziehen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,48 +12,48 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156010"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Testbereich 2: Abrufen aus der Quellcodeverwaltung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Test Hierunter Testfälle für das Abrufen von Elementen aus dem Versionsspeicher über den Get-Befehl. Diese Testfälle können sowohl lokale Pipes und Webprojekte angewendet werden.  
+In diesem Testbereich werden Testfälle zum Abrufen von Elementen aus dem Versionsspeicher über den get-Befehl behandelt. Diese Testfälle können sowohl auf lokale als auch auf Webprojekte angewendet werden.  
   
-## <a name="command-menu-access"></a>Menüzugriff Befehl  
- Die folgenden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen.  
+## <a name="command-menu-access"></a>Befehlsmenü Zugriff  
+ Die folgenden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierten Menü Pfade der Entwicklungsumgebung werden in den Testfällen verwendet.  
   
-##### <a name="get-latest-version"></a>Neuste Version abrufen:  
+##### <a name="get-latest-version"></a>Aktuelle Version erhalten:  
   
-- **Datei**, **Quellcodeverwaltung**, **neuste Version abrufen**.  
+- **Datei**, **Quell**Code Verwaltung, **aktuelle Version erhalten**.  
   
-- **Datei**, **neuste Version abrufen**.  
+- **Datei**, **aktuelle Version erhalten**.  
   
-- Klicken Sie im Kontextmenü **neuste Version abrufen**.  
+- Kontextmenü, **aktuelle Version erhalten**.  
   
-- Erhalten: **Datei**, **Quellcodeverwaltung**, **erhalten**.  
+- Get: **File**, **Source Control**, **Get**.  
   
-## <a name="expected-behavior"></a>Es wird erwartet  
+## <a name="expected-behavior"></a>Erwartetes Verhalten  
   
-##### <a name="get-latest-version"></a>Neuste Version abrufen:  
- Führt im Hintergrund (ohne Benutzeroberfläche) Abruf der neuesten Version des Elements aus dem Versionsspeicher.  
+##### <a name="get-latest-version"></a>Aktuelle Version erhalten:  
+ Führt einen unbeaufsichtigten Abruf (keine Benutzeroberfläche) der aktuellen Version des Elements aus dem Versionsspeicher aus.  
   
-##### <a name="get"></a>Erhalten:  
- Zeigt die **erhalten** Dialogfeld und ermöglicht dem Benutzer, die den Dateisatz ändern, die abgerufen werden soll und ändern die Optionen, die beeinflussen, wie die Dateien abgerufen werden.  
+##### <a name="get"></a>Get:  
+ Zeigt das **Dialogfeld** abrufen an und ermöglicht es dem Benutzer, Änderungen am abzurufenden Dateisatz vorzunehmen und die Optionen zu ändern, die sich auf die Art und Weise auswirken, wie die Dateien abgerufen werden.  
   
 ## <a name="test-cases"></a>Testfälle  
   
-|Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
+|Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|  
 |------------|----------------|--------------------------------|  
-|Abrufen der neuesten Version einer Datei, die lokal nicht vorhanden ist|1.  Erstellen eines Projekts.<br />2.  Fügen Sie dem Projekt ein Element hinzu.<br />3.  Fügen Sie das Projekt unter quellcodeverwaltung.<br />4.  Löschen Sie die lokale Kopie des Elements.<br />5.  Abrufen der neuesten Version des Elements (klicken Sie im Kontextmenü **neuste Version abrufen**).|Elementdatei wird lokal abgerufen.|  
-|Erhalten Sie eine Datei, die lokal nicht vorhanden ist|1.  Erstellen eines Projekts.<br />2.  Fügen Sie dem Projekt ein Element hinzu.<br />3.  Fügen Sie das Projekt unter quellcodeverwaltung.<br />4.  Löschen Sie die lokale Kopie des Elements.<br />5.  Das Element zu erhalten (**Datei**, **Quellcodeverwaltung**, **erhalten** \<Element >).|Elementdatei wird lokal abgerufen.|  
-|Abrufen einer Datei, die exklusiv ausgecheckt und wurde lokal geändert wurden|1.  Erstellen eines Projekts.<br />2.  Fügen Sie dem Projekt ein Element hinzu.<br />3.  Fügen Sie das Projekt unter quellcodeverwaltung.<br />4.  Sehen Sie sich das Projektelement ausschließlich an.<br />5.  Ändern Sie die lokale Kopie.<br />6.  Abrufen der neuesten Version des Elements (**Datei**, **neuste Version abrufen, der** \<Element >). Wenn dieser Schritt erfolgreich ist, können Sie mit nächsten Schritt fort.<br />7.  Klicken Sie auf **ersetzen** Schaltfläche im Dialogfeld "Warnung".|**ReResult aus Schritt 6** `:`<br /><br /> Warnungsdialogfeld gibt an, dass die Datei ausgecheckt ist.<br /><br /> **ReResult aus Schritt 7:**<br /><br /> Geänderte lokale Datei wird durch die ursprüngliche Version aus dem Versionsspeicher ersetzt.<br /><br /> Datei ist Lese-/Schreibzugriff.|  
-|Abrufen Sie und Ersetzen Sie die Datei, die ausgecheckt wird, freigegeben und wurde lokal geändert.|1.  Erstellen Sie ein neues Projekt.<br />2.  Fügen Sie dem Projekt ein Element hinzu.<br />3.  Fügen Sie das Projekt unter quellcodeverwaltung.<br />4.  Sehen Sie sich das Projektelement als freigegeben.<br />5.  Ändern Sie die lokale Kopie.<br />6.  Abrufen der neuesten Version des Elements (**Datei**, **neuste Version abrufen, der** \<Element >). Wenn dieser Schritt erfolgreich ist, können Sie mit nächsten Schritt fort.<br />7.  Klicken Sie auf **ersetzen** im Dialogfeld "Warnung".|**Führen Sie in Schritt 6:**<br /><br /> Warnungsdialogfeld gibt an, dass die Datei ausgecheckt ist.<br /><br /> **Führen Sie aus Schritt 7:**<br /><br /> Geänderte lokale Datei wird durch die ursprüngliche Version aus dem Versionsspeicher ersetzt.<br /><br /> Datei ist Lese-/Schreibzugriff.|  
-|Erhalten Sie eine Datei, die lokal vorhanden ist identisch mit der neuesten Version in den Versionsspeicher|1.  Erstellen Sie ein neues Projekt.<br />2.  Fügen Sie dem Projekt ein Element hinzu.<br />3.  Fügen Sie das Projekt unter quellcodeverwaltung.<br />4.  Das Element zu erhalten (**Datei**, **Quellcodeverwaltung**, **erhalten** \<Element >).|Lokale Datei bleibt unverändert.|  
-|Holen Sie eine Lösung mit einem Projekt|1.  Erstellen Sie eine Projektmappe mit einem Projekt ein.<br />2.  Platzieren Sie die Projektmappe unter quellcodeverwaltung.<br />3.  Löschen Sie alle Projektdateien lokal.<br />4.  Abrufen der Projektmappe (**Datei**, **Quellcodeverwaltung**, **erhalten**).|Alle gelöschte Dateien werden lokal wiederhergestellt werden.|  
+|Neueste Version einer Datei, die nicht lokal vorhanden ist, erhalten|1. Erstellen Sie ein Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. Löschen der lokalen Kopie des Elements.<br />5. aktuellste Version des Elements erhalten (Kontextmenü, **neueste Version erhalten**).|Die Element Datei wird lokal abgerufen.|  
+|Ruft eine Datei ab, die nicht lokal vorhanden ist.|1. Erstellen Sie ein Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. Löschen der lokalen Kopie des Elements.<br />5. beziehen Sie das Element (**Datei**, **Quell**Code Verwaltung, **Get** \<item> ).|Die Element Datei wird lokal abgerufen.|  
+|Datei erhalten, die exklusiv ausgecheckt und lokal geändert wurde|1. Erstellen Sie ein Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. Überprüfen Sie das Projekt Element exklusiv.<br />5. ändern Sie die lokale Kopie.<br />6. aktuelle Version des Elements (**Datei**, **neueste Version von** \<item> ) erhalten. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />7. Klicken Sie im Warnungs Dialogfeld auf die Schaltfläche **ersetzen** .|**Aus Schritt 6 erneut ausführen**`:`<br /><br /> Dialogfeld "Warnung" zeigt an, dass die Datei ausgecheckt ist.<br /><br /> **Führen Sie erneut aus Schritt 7:**<br /><br /> Die geänderte lokale Datei wird durch die ursprüngliche Version aus dem Versionsspeicher ersetzt.<br /><br /> Die Datei ist Lese-/Schreibzugriff.|  
+|Dient zum Anfordern und Ersetzen von Dateien, die ausgecheckt, freigegeben und lokal geändert werden.|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. sehen Sie sich das Projekt Element als freigegeben an.<br />5. ändern Sie die lokale Kopie.<br />6. aktuelle Version des Elements (**Datei**, **neueste Version von** \<item> ) erhalten. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />7. Klicken Sie im Dialogfeld "Warnung" auf **ersetzen** .|**Ergebnis aus Schritt 6:**<br /><br /> Dialogfeld "Warnung" zeigt an, dass die Datei ausgecheckt ist.<br /><br /> **Ergebnis aus Schritt 7:**<br /><br /> Die geänderte lokale Datei wird durch die ursprüngliche Version aus dem Versionsspeicher ersetzt.<br /><br /> Die Datei ist Lese-/Schreibzugriff.|  
+|Ruft eine Datei ab, die lokal vorhanden ist, identisch mit der aktuellen Version im Versionsspeicher.|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. beziehen Sie das Element (**Datei**, **Quell**Code Verwaltung, **Get** \<item> ).|Die lokale Datei ist unverändert.|  
+|Eine Projekt Mappe mit einem Projekt erhalten|1. Erstellen Sie eine Projekt Mappe mit einem Projekt.<br />2. Platzieren Sie die Projekt Mappe unter Quell Code Verwaltung.<br />3. löschen Sie alle Projektdateien lokal.<br />4. Holen Sie sich die Projekt**Mappe (Datei**, **Quell**Code Verwaltung, **Get**).|Alle gelöschten Dateien werden lokal wieder hergestellt.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
