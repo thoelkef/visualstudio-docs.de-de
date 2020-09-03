@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 669be50e11d3bf17d617c361b63f807149dbc823
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658585"
 ---
 # <a name="t4-include-directive"></a>T4-Include-Direktive
@@ -27,9 +27,9 @@ In einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` kann absolut oder relativ zur aktuellen Vorlagendatei sein.
+- `filePath` kann absolut oder relativ zur aktuellen Vorlagen Datei sein.
 
-   Außerdem können bestimmte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen eigene Verzeichnisse angeben, in denen nach Includedateien gesucht werden soll. Wenn Sie z. b. das Visualisierungs-und Modellierungs-SDK (DSL-Tools) installiert haben, wird der folgende Ordner der Include-Liste hinzugefügt: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+   Außerdem können bestimmte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen eigene Verzeichnisse angeben, in denen nach Includedateien gesucht werden soll. Wenn Sie z. b. das Visualisierungs-und Modellierungs-SDK (DSL-Tools) installiert haben, wird der folgende Ordner der Include-Liste hinzugefügt: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` .
 
    Diese zusätzlichen Includeordner können von der Dateierweiterung der einschließenden Datei abhängen. Zum Beispiel können nur einschließende Dateien mit der Dateierweiterung `.tt` auf den Includeordner der DSL-Tools zugreifen.
 
@@ -41,7 +41,7 @@ In einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie
 
 - Für einen Namen einer eingeschlossenen Datei muss nicht die Erweiterung `".tt"` verwendet werden.
 
-   Sie können für eingeschlossene Dateien ggf. eine andere Erweiterung verwenden, z. B. `".t4"`. Dies liegt daran, dass beim Hinzufügen einer `.tt`-Datei zu einem Projekt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die **benutzerdefinierte Tool** -Eigenschaft automatisch auf `TextTemplatingFileGenerator` festgelegt wird. Normalerweise sollen eingeschlossene Dateien nicht einzeln transformiert werden.
+   Sie können für eingeschlossene Dateien ggf. eine andere Erweiterung verwenden, z. B. `".t4"`. Dies liegt daran, dass beim Hinzufügen einer `.tt` Datei zu einem Projekt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die **benutzerdefinierte Tool** -Eigenschaft von automatisch auf festgelegt wird `TextTemplatingFileGenerator` . Normalerweise sollen eingeschlossene Dateien nicht einzeln transformiert werden.
 
    Andererseits sollten Sie beachten, dass die Dateierweiterung in einigen Fällen Einfluss darauf hat, welche zusätzlichen Ordner nach Includedateien durchsucht werden. Dies könnte wichtig sein, wenn eine eingeschlossene Datei andere Dateien enthält.
 
@@ -49,7 +49,7 @@ In einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie
 
 - Verwenden Sie `once="true"`, um sicherzustellen, dass eine Vorlage nur einmal eingeschlossen wird, auch wenn sie von mehr als einer Includedatei aufgerufen wird.
 
-   Diese Funktion vereinfacht das Erstellen einer Bibliothek von wiederverwendbaren T4-Code Ausschnitten, die Sie Unternehmen können, ohne sich Gedanken machen zu müssen, dass Sie bereits von einem anderen Code Ausschnitt eingefügt wurden.  Nehmen Sie beispielsweise an, Sie verfügen über eine Bibliothek mit sehr differenzierten Code Ausschnitten, die die C# Vorlagen Verarbeitung und-Generierung verarbeiten.  Diese werden wiederum von einigen aufgabenspezifischen Dienstprogrammen wie dem Erzeugen von Ausnahmen verwendet, die Sie dann in einer beliebigen anwendungsspezifischen Vorlage verwenden können. Wenn Sie das Abhängigkeitsdiagramm zeichnen, sehen Sie, dass einige Ausschnitte mehrmals eingeschlossen würden. Die Parameter `once` verhindert aber die darauffolgenden Einschlüsse.
+   Diese Funktion vereinfacht das Erstellen einer Bibliothek von wiederverwendbaren T4-Code Ausschnitten, die Sie Unternehmen können, ohne sich Gedanken machen zu müssen, dass Sie bereits von einem anderen Code Ausschnitt eingefügt wurden.  Nehmen Sie beispielsweise an, Sie verfügen über eine Bibliothek mit sehr differenzierten Code Ausschnitten, die die Vorlagen Verarbeitung und die c#-Generierung behandeln.  Diese werden wiederum von einigen aufgabenspezifischen Dienstprogrammen wie dem Erzeugen von Ausnahmen verwendet, die Sie dann in einer beliebigen anwendungsspezifischen Vorlage verwenden können. Wenn Sie das Abhängigkeitsdiagramm zeichnen, sehen Sie, dass einige Ausschnitte mehrmals eingeschlossen würden. Die Parameter `once` verhindert aber die darauffolgenden Einschlüsse.
 
   **MyTextTemplate.tt:**
 
@@ -65,7 +65,7 @@ Output message 5 (from top template).
 
 ```
 
- **TextFile1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -82,7 +82,7 @@ void GenerateMessage(int n)
 
 ```
 
- **TextFile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).
@@ -97,7 +97,7 @@ void AnotherGenerateMessage(int n)
 
 ```
 
- **Die resultierende generierte Datei, mytexttemplate. txt:**
+ **Die infolge des Vorgangs generierte Datei "MyTextTemplate.txt":**
 
 ```
 Output message 1 (from top template).
@@ -112,7 +112,7 @@ Output message 5 (from top template).
 
 ```
 
-## <a name="msbuild"></a>Verwenden von Projekteigenschaften in MSBuild und Visual Studio
+## <a name="using-project-properties-in-msbuild-and-visual-studio"></a><a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio
  Sie können Visual Studio-Makros wie $ (SolutionDir) in einer Includeanweisung verwenden, nicht aber in MSBuild. Wenn Sie Vorlagen im Buildcomputer transformieren möchten, müssen Sie dies mithilfe von Projekteigenschaften tun.
 
  Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myIncludeFolder` definiert:

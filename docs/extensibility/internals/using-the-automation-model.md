@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Automatisierungsmodells | Microsoft Docs
+title: Verwenden des Automatisierungs Modells | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2b9d7bd789a41f7a5e801552ca07f9f228921867
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704224"
 ---
 # <a name="using-the-automation-model"></a>Verwenden des Automatisierungsmodells
-Nachdem Sie Ihr VSPackage mit der Automatisierung verbunden haben, <xref:EnvDTE.DTEClass.GetObject%2A> können Sie <xref:EnvDTE._DTE> die Eigenschaften und Methoden abrufen, indem Sie die Methode für das Objekt aufrufen und eine Zeichenfolge übergeben, die das Objekt darstellt, das Sie abrufen möchten.
+Nachdem Sie das VSPackage mit Automation verbunden haben, können Sie die Eigenschaften und Methoden abrufen, indem Sie die- <xref:EnvDTE.DTEClass.GetObject%2A> Methode für das-Objekt aufrufen und <xref:EnvDTE._DTE> eine Zeichenfolge übergeben, die das Objekt darstellt, das Sie abrufen möchten.
 
-## <a name="obtaining-project-objects"></a>Abrufen von Projektobjekten
- Im Folgenden finden Sie zwei Codebeispiele, die zeigen, wie ein Automatisierungsbenutzer die Projektautomatisierungsobjekte erhält. Informationen zum Abrufen des DTE-Objekts finden Sie unter [Gewusst wie: Abrufen von Verweisen auf die DTE- und DTE2-Objekte](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
+## <a name="obtaining-project-objects"></a>Abrufen von Projekt Objekten
+ Im folgenden finden Sie zwei Codebeispiele, die zeigen, wie ein automatisierungsconsumer die Project Automation-Objekte abruft. Weitere Informationen zum erhalten des DTE-Objekts finden Sie unter Gewusst [wie: verweisen auf die DTE-und DTE2-Objekte](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
 
 ```vb
 Sub DoAutomation()
@@ -43,9 +43,9 @@ void DoAutomation(void)
 
 ```
 
- An dieser Stelle können Sie die Standardprojektobjekte, die Teil eines bestimmten VSPackage sind, verwenden, um das Hierarchiemodell nach unten zu verschieben.
+ An diesem Punkt können Sie die Standard Projekt Objekte verwenden, die Teil eines bestimmten VSPackages sind, um das Hierarchie Modell zu verschieben.
 
- Das folgende Codebeispiel zeigt, wie Sie ein benutzerdefiniertes Objekt abrufen, das eine Eigenschaft eines benutzerdefinierten Projekttyps ist:
+ Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Objekt, das eine Eigenschaft eines benutzerdefinierten Projekt Typs ist, angezeigt wird:
 
 ```vb
 Dim MyPrj As Project
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- Der folgende Code listet die Namen aller [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Eigenschaften in der Option Umgebung **Allgemein** im Menü **Extras** auf:
+ Im folgenden Code werden die Namen aller Eigenschaften in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Option Umgebung **Allgemein** im Menü Extras aufgeführt: **Tools**
 
 ```vb
 dim objDTE

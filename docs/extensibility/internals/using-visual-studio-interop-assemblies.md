@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Visual Studio Interop-Assemblys | Microsoft Docs
+title: Verwenden von Visual Studio-Interop-Assemblys | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704137"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Verwenden von Visual Studio-Interop-Assemblys
-Visual Studio-Interopassemblys ermöglichen verwalteten Anwendungen den Zugriff auf die COM-Schnittstellen, die Visual Studio-Erweiterbarkeit bieten. Es gibt einige Unterschiede zwischen geraden COM-Schnittstellen und deren Interop-Versionen. HRESULTs werden z. B. im Allgemeinen als int-Werte dargestellt und müssen auf die gleiche Weise wie Ausnahmen behandelt werden, und Parameter (insbesondere Out-Parameter) werden unterschiedlich behandelt.
+Visual Studio Interop-Assemblys ermöglichen verwalteten Anwendungen den Zugriff auf die COM-Schnittstellen, die Visual Studio-Erweiterbarkeit bereitstellen. Es gibt einige Unterschiede zwischen geraden com-Schnittstellen und ihren Interop-Versionen. HRESULTs werden z. b. in der Regel als int-Werte dargestellt und müssen auf die gleiche Weise wie Ausnahmen behandelt werden, und Parameter (insbesondere out-Parameter) werden anders behandelt.
 
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Behandeln von HRESULTs, die von COM an verwalteten Code zurückgegeben werden
  Wenn Sie eine COM-Schnittstelle in verwaltetem Code aufrufen, überprüfen Sie den HRESULT-Wert, und lösen Sie ggf. eine Ausnahme aus. Die <xref:Microsoft.VisualStudio.ErrorHandler>-Klasse enthält die <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>-Methode, die abhängig vom Wert des an sie übergebenen HRESULTs eine COM-Ausnahme auslöst.
@@ -28,7 +28,7 @@ Visual Studio-Interopassemblys ermöglichen verwalteten Anwendungen den Zugriff 
  Die <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>-Methode löst standardmäßig eine Ausnahme aus, wenn ihr ein HRESULT mit einem Wert kleiner als 0 (null) übergeben wird. In Fällen, in denen solche HRESULTs zulässige Werte aufweisen und keine Ausnahme ausgelöst werden soll, müssen die Werte der zusätzlichen HRESULTS nach dem Überprüfen der Werte an <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> übergeben werden. Wenn das überprüfte HRESULT explizit an <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> übergebenen HRESULT-Werten entspricht, wird keine Ausnahme ausgelöst.
 
 > [!NOTE]
-> Die <xref:Microsoft.VisualStudio.VSConstants> Klasse enthält konstanten für allgemeine <xref:Microsoft.VisualStudio.VSConstants.S_OK> HRESULTS, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] z. B. <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>und <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, und HRESULTS, z. B. und . <xref:Microsoft.VisualStudio.VSConstants> enthält auch die Methoden <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> und <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>, die den Makros SUCCEEDED und FAILED in COM entsprechen.
+> Die- <xref:Microsoft.VisualStudio.VSConstants> Klasse enthält Konstanten für allgemeine HRESULTs, z. b. <xref:Microsoft.VisualStudio.VSConstants.S_OK> und <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> , sowie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTs, z <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> . b <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT> . und. <xref:Microsoft.VisualStudio.VSConstants> enthält auch die Methoden <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> und <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>, die den Makros SUCCEEDED und FAILED in COM entsprechen.
 
  Betrachten Sie beispielsweise den folgenden Funktionsaufruf, bei dem <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> ein zulässiger Rückgabewert ist, aber alle anderen HRESULTs kleiner als 0 (null) einen Fehler darstellen.
 
@@ -48,17 +48,17 @@ Visual Studio-Interopassemblys ermöglichen verwalteten Anwendungen den Zugriff 
 > [!NOTE]
 > Ausnahmen beeinträchtigen die Leistung und dienen als Hinweis auf anormale Programmbedingungen. Häufig auftretende Bedingungen sollten inline behandelt werden, statt eine Ausnahme auszulösen.
 
-## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown-Parameter als Typ void** übergeben
- Suchen Sie nach [out]-Parametern, die in der COM-Schnittstelle als Typ `void **` definiert sind, aber wie `[``iid_is``]` im Prototyp der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-Assemblymethode definiert sind.
+## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown-Parameter, die als Typ void * * übertragen wurden
+ Suchen Sie nach [out]-Parametern, die `void **` in der COM-Schnittstelle als Typ definiert sind, aber `[``iid_is``]` im-Prototyp der Interop-Assemblymethode als definiert sind [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- Manchmal generiert eine COM-Schnittstelle ein `IUnknown` Objekt, und die `void **`COM-Schnittstelle übergibt es dann als Typ . Diese Schnittstellen sind besonders wichtig, da, wenn die Variable in der `IUnknown` IDL als [out] definiert ist, das Objekt mit der `AddRef` Methode gezählt wird. Ein Speicherverlust tritt auf, wenn das Objekt nicht ordnungsgemäß behandelt wird.
+ Manchmal generiert eine COM-Schnittstelle ein `IUnknown` Objekt, und die COM-Schnittstelle übergibt sie als Typ `void **` . Diese Schnittstellen sind besonders wichtig, denn wenn die Variable als [out] in der IDL definiert ist, `IUnknown` wird das Objekt mit der-Methode auf Verweis gezählt `AddRef` . Ein Speicherfehler tritt auf, wenn das Objekt nicht ordnungsgemäß behandelt wird.
 
 > [!NOTE]
-> Ein `IUnknown` Objekt, das von der COM-Schnittstelle erstellt und in einer [out]-Variablen zurückgegeben wird, verursacht einen Speicherverlust, wenn es nicht explizit freigegeben wird.
+> Ein `IUnknown` Objekt, das von der COM-Schnittstelle erstellt und in einer [out]-Variablen zurückgegeben wird, verursacht einen Speicherlecks, wenn es nicht explizit freigegeben wird
 
- Verwaltete Methoden, die <xref:System.IntPtr> solche Objekte behandeln, `IUnknown` sollten als <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Zeiger auf ein Objekt behandelt werden und die Methode zum Abrufen des Objekts aufrufen. Der Aufrufer sollte dann den Rückgabewert in den typ "geeignet" umwerfen. Wenn das Objekt nicht mehr <xref:System.Runtime.InteropServices.Marshal.Release%2A> benötigt wird, rufen Sie es auf, um es freizugeben.
+ Verwaltete Methoden, die solche Objekte verarbeiten <xref:System.IntPtr> , sollten als Zeiger auf ein `IUnknown` -Objekt behandeln und die- <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode zum Abrufen des-Objekts aufzurufen. Der Aufrufer sollte dann den Rückgabewert in den entsprechenden Typ umwandeln. Wenn das Objekt nicht mehr benötigt wird, wird aufgerufen, <xref:System.Runtime.InteropServices.Marshal.Release%2A> um es freizugeben.
 
- Im Folgenden finden Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> ein Beispiel `IUnknown` für das Aufrufen der Methode und die korrekte Behandlung des Objekts:
+ Im folgenden finden Sie ein Beispiel für das Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> -Methode und das korrekte behandeln des- `IUnknown` Objekts:
 
 ```
 MyClass myclass;
@@ -85,7 +85,7 @@ else
 ```
 
 > [!NOTE]
-> Die folgenden Methoden sind `IUnknown` bekannt, objektzeiger <xref:System.IntPtr>als typ zu übergeben. Behandeln Sie sie wie in diesem Abschnitt beschrieben.
+> Die folgenden Methoden sind bekannt, dass `IUnknown` Objekt Zeiger als Typ übergeben werden <xref:System.IntPtr> . Behandeln Sie Sie wie in diesem Abschnitt beschrieben.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
@@ -99,36 +99,36 @@ else
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
-## <a name="optional-out-parameters"></a>Optionale [out] Parameter
- Suchen Sie in der COM-Schnittstelle nach`int`Parametern, die als [out]-Datentyp ( , `object`, usw.) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] definiert sind, die jedoch als Arrays desselben Datentyps im Interop-Assembly-Methodenprototyp definiert sind.
+## <a name="optional-out-parameters"></a>Optionale [out]-Parameter
+ Suchen Sie nach Parametern, die als [out]-Datentyp ( `int` , `object` usw.) in der COM-Schnittstelle definiert sind, jedoch als Arrays desselben Datentyps im [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interopassemblymethode-Prototyp definiert sind.
 
- Einige COM-Schnittstellen, <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>z. B. , behandeln [out]-Parameter als optional. Wenn ein Objekt nicht erforderlich ist, `null` geben diese COM-Schnittstellen einen Zeiger als Wert dieses Parameters zurück, anstatt das [out]-Objekt zu erstellen. Dies ist beabsichtigt. Bei diesen Schnittstellen `null` werden Zeiger als Teil des korrekten Verhaltens des VSPackage angenommen, und es wird kein Fehler zurückgegeben.
+ Einige COM-Schnittstellen, wie z <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> . b., behandeln [out]-Parameter als optional. Wenn ein Objekt nicht erforderlich ist, geben diese COM-Schnittstellen einen `null` Zeiger als Wert dieses Parameters zurück, anstatt das [out]-Objekt zu erstellen. Dies ist beabsichtigt. Für diese Schnittstellen `null` werden Zeiger als Teil des korrekten Verhaltens des VSPackages angenommen, und es wird kein Fehler zurückgegeben.
 
- Da die CLR nicht zulässt, dass der `null`Wert eines [out]-Parameters ist, ist ein Teil des entworfenen Verhaltens dieser Schnittstellen nicht direkt innerhalb des verwalteten Codes verfügbar. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-Assemblymethoden für betroffene Schnittstellen umgehen das Problem, indem sie die relevanten `null` Parameter als Arrays definieren, da die CLR die Übergabe von Arrays zulässt.
+ Da die CLR den Wert eines [out]-Parameters nicht zulässt `null` , ist ein Teil des entworfenen Verhaltens dieser Schnittstellen nicht direkt in verwaltetem Code verfügbar. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-AssemblyMethoden für betroffene Schnittstellen umgehen das Problem, indem die relevanten Parameter als Arrays definiert werden, da die CLR das Übergeben von `null` Arrays zulässt.
 
- Verwaltete Implementierungen dieser Methoden `null` sollten ein Array in den Parameter setzen, wenn nichts zurückgegeben werden soll. Erstellen Sie andernfalls ein Ein-Element-Array des richtigen Typs, und geben Sie den Rückgabewert in das Array ein.
+ Verwaltete Implementierungen dieser Methoden sollten ein- `null` Array in den-Parameter einfügen, wenn nichts zurückgegeben werden muss. Andernfalls erstellen Sie ein Array mit einem Element des richtigen Typs und fügen den Rückgabewert in das Array ein.
 
- Verwaltete Methoden, die Informationen von Schnittstellen mit optionalen [out]-Parametern empfangen, erhalten den Parameter als Array. Untersuchen Sie einfach den Wert des ersten Elements des Arrays. Wenn dies `null`nicht der Fall ist, behandeln Sie das erste Element wie den ursprünglichen Parameter.
+ Verwaltete Methoden, die Informationen von Schnittstellen mit optionalen [out]-Parametern empfangen, empfangen den Parameter als Array. Überprüfen Sie einfach den Wert des ersten Elements des Arrays. Wenn dies nicht der Fall ist `null` , behandeln Sie das erste Element, als wäre es der ursprüngliche Parameter.
 
-## <a name="passing-constants-in-pointer-parameters"></a>Übergeben von Konstanten in Zeigerparametern
- Suchen Sie nach Parametern, die als [in]-Zeiger in der <xref:System.IntPtr> COM-Schnittstelle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] definiert sind, die jedoch als Typ im Prototyp der Interop-Assemblymethode definiert sind.
+## <a name="passing-constants-in-pointer-parameters"></a>Übergeben von Konstanten in Zeiger Parametern
+ Suchen Sie nach Parametern, die in der COM-Schnittstelle als [in]-Zeiger definiert sind, die <xref:System.IntPtr> im-Prototyp der interopassemblymethode als Typ definiert sind [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- Ein ähnliches Problem tritt auf, wenn eine COM-Schnittstelle einen speziellen Wert, z. B. 0, -1 oder -2, anstelle eines Objektzeigers übergibt. Im [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]Gegensatz zu lässt die CLR nicht zu, dass Konstanten als Objekte umgegossen werden. Stattdessen definiert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Interop-Assembly den <xref:System.IntPtr> Parameter als Typ.
+ Ein ähnliches Problem tritt auf, wenn eine COM-Schnittstelle einen speziellen Wert, z. b. 0,-1 oder-2, anstelle eines Objekt Zeigers übergibt. Im Gegensatz [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] zu lässt die CLR nicht zu, dass Konstanten als-Objekte umgewandelt werden. Stattdessen definiert die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-Assembly den Parameter als <xref:System.IntPtr> Typ.
 
- Verwaltete Implementierungen dieser Methoden sollten die <xref:System.IntPtr> Tatsache nutzen, `void *` dass die Klasse <xref:System.IntPtr> über beide `int` und Konstruktoren verfügt, um eine aus einem Objekt oder einer Ganzzahlkonstante zu erstellen.
+ Verwaltete Implementierungen dieser Methoden sollten die Tatsache nutzen, dass die <xref:System.IntPtr> -Klasse sowohl `int` -als auch- `void *` Konstruktoren besitzt <xref:System.IntPtr> , um entweder aus einem Objekt oder einer ganzzahligen Konstante zu erstellen.
 
- Verwaltete Methoden, die Parameter dieses Typs empfangen, <xref:System.IntPtr> sollten die <xref:System.IntPtr> Typkonvertierungsoperatoren verwenden, um die Ergebnisse zu verarbeiten. Konvertieren Sie <xref:System.IntPtr> `int` zuerst die in und testen Sie sie mit relevanten ganzzahligen Konstanten. Wenn keine Werte übereinstimmen, konvertieren Sie es in ein Objekt des erforderlichen Typs, und fahren Sie fort.
+ Verwaltete Methoden, die <xref:System.IntPtr> Parameter dieses Typs empfangen, sollten die <xref:System.IntPtr> Typkonvertierungs Operatoren verwenden, um die Ergebnisse zu verarbeiten. Konvertieren Sie zuerst den <xref:System.IntPtr> in, `int` und testen Sie ihn anhand relevanter ganzzahliger Konstanten. Wenn keine Werte gefunden werden, konvertieren Sie Sie in ein Objekt des erforderlichen Typs, und fahren Sie fort.
 
- Beispiele hierzu finden <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>Sie unter und .
+ Beispiele hierfür finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> .
 
-## <a name="ole-return-values-passed-as-out-parameters"></a>OLE-Rückgabewerte als [out]-Parameter übergeben
- Suchen Sie nach `retval` Methoden, die einen Rückgabewert in `int` der COM-Schnittstelle haben, aber [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] einen Rückgabewert und einen zusätzlichen [out]-Arrayparameter im Interop-Assemblymethodenprototyp haben. Es sollte klar sein, dass diese [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Methoden eine spezielle Handhabung erfordern, da die Prototypen der Interop-Baugruppenmethode einen Parameter mehr als die COM-Schnittstellenmethoden aufweisen.
+## <a name="ole-return-values-passed-as-out-parameters"></a>Als [out] Parameter über gegebene OLE-Rückgabewerte
+ Suchen Sie nach Methoden, die über einen `retval` Rückgabewert in der COM-Schnittstelle verfügen, aber einen `int` Rückgabewert und einen zusätzlichen [out]-Array Parameter im [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interopassemblymethode-Prototyp aufweisen. Es sollte klar sein, dass diese Methoden eine besondere Behandlung erfordern, da die Methoden der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interopassemblymethode einen größeren Parameter aufweisen als die COM-Schnittstellen Methoden.
 
- Viele COM-Schnittstellen, die sich mit DER OLE-Aktivität befassen, `retval` senden Informationen über den OLE-Status zurück an das aufrufende Programm, das im Rückgabewert der Schnittstelle gespeichert ist. Anstatt einen Rückgabewert zu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden, senden die entsprechenden Interop-Assemblymethoden die Informationen an das aufrufende Programm zurück, das in einem [out]-Array-Parameter gespeichert ist.
+ Viele COM-Schnittstellen, die die OLE-Aktivität behandeln, senden Informationen zum OLE-Status zurück an das aufrufende Programm, das im `retval` Rückgabewert der Schnittstelle gespeichert ist. Anstatt einen Rückgabewert zu verwenden, senden die entsprechenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-AssemblyMethoden die Informationen an das aufrufende Programm zurück, das in einem [out]-Array Parameter gespeichert ist.
 
- Verwaltete Implementierungen dieser Methoden sollten ein Einzelne-Element-Array desselben Typs wie der Parameter [out] erstellen und in den Parameter einteilen. Der Wert des Arrayelements sollte mit dem `retval`entsprechenden COM identisch sein.
+ Verwaltete Implementierungen dieser Methoden sollten ein Array mit einem einzelnen Element desselben Typs wie der [out]-Parameter erstellen und im-Parameter ablegen. Der Wert des Array Elements muss mit dem entsprechenden com identisch sein `retval` .
 
- Verwaltete Methoden, die Schnittstellen dieses Typs aufrufen, sollten das erste Element aus dem Array [out] abrufen. Dieses Element kann so behandelt `retval` werden, als wäre es ein Rückgabewert von der entsprechenden COM-Schnittstelle.
+ Verwaltete Methoden, die Schnittstellen dieses Typs aufzurufen, sollten das erste Element aus dem [out]-Array abrufen. Dieses Element kann so behandelt werden, als ob es ein `retval` Rückgabewert von der entsprechenden COM-Schnittstelle wäre.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Interoperation mit nicht verwaltetem Code](/dotnet/framework/interop/index)
+## <a name="see-also"></a>Siehe auch
+- [Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)

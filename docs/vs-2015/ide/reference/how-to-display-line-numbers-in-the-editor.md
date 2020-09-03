@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f093cf93c2f67c91fa9eee0085a566a15289684
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602353"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Gewusst wie: Anzeigen von Zeilennummern im Editor
@@ -32,14 +32,14 @@ Sie können die Zeilennummerierung im Code ein- oder ausblenden.
 ## <a name="display-line-numbers-in-code"></a>Anzeigen von Zeilennummern im Code
  Die Zeilennummern werden nicht in den Code eingefügt; sie dienen lediglich als Anhaltspunkte. Wenn Zeilennummern ausgedruckt werden sollen, müssen Sie im Dialogfeld **Drucken** das Kontrollkästchen **Zeilennummern einschließen** aktivieren.
 
-#### <a name="to-display-line-numbers-in-code"></a>So lassen Sie Zeilennummern für den Code anzeigen
+#### <a name="to-display-line-numbers-in-code"></a>So zeigen Sie Code mit Zeilennummern an
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**. Erweitern Sie den Knoten **Text-Editor**, und wählen Sie entweder den Knoten für die Sprache, die Sie verwenden, oder **Alle Sprachen** aus, um die Zeilennummern in allen Sprachen zu aktivieren. Sie können die **Zeilennummer** auch im Feld **Schnellstart** eingeben.
+1. **Wählen Sie**in der Menüleiste Extras, **Optionen**aus. Erweitern Sie den Knoten **Text-Editor**, und wählen Sie entweder den Knoten für die Sprache, die Sie verwenden, oder **Alle Sprachen** aus, um die Zeilennummern in allen Sprachen zu aktivieren. Oder Sie können die **Zeilennummer** in das Feld **Schnellstart** eingeben.
 
-2. ![Optionen zum Anzeigen von Zeilennummern im Editor](../../ide/reference/media/vs-displaylinenumbers.png "|::ref1::|")
+2. ![Optionen zum Anzeigen von Zeilennummern im Editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")
 
 > [!NOTE]
 > Abhängig von der Sprache oder den Einstellungen müssen Sie möglicherweise im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren, um den Unterknoten **Alle Sprachen** anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen des Editor](../../ide/customizing-the-editor.md) -Dialog Felds " [Text-Editor-Optionen](../../ide/reference/text-editor-options-dialog-box.md) " Schreiben von [Code](../../ide/writing-code-in-the-code-and-text-editor.md)

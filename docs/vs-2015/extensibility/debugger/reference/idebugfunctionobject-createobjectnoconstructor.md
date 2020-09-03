@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft-Dokumentation
+title: 'Idebugfunctionobject:: kreateobjectnoconstructor | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ea00035eb220ccd08590ceaea6db98944f4657a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179460"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt ein Objekt mit keinen Konstruktor.  
+Erstellt ein-Objekt ohne Konstruktor.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,20 +42,20 @@ int CreateObjectNoConstructor(
   
 #### <a name="parameters"></a>Parameter  
  `pClassObject`  
- [in] Ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das den Typ des zu erstellenden-Objekts darstellt.  
+ in Ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das den Typ des zu erstellenden Objekts darstellt.  
   
  `ppObject`  
- [out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , das das neu erstellte Objekt darstellt.  
+ vorgenommen Gibt ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zurück, das das neu erstellte-Objekt darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Rufen Sie diese Methode, um ein Objekt, das stellt eine Instanz einer Struktur oder ein komplexer Typ (die einen Konstruktor nicht erforderlich), der ein Parameter an die Funktion der durch dargestellt wird, erstellen die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.  
+## <a name="remarks"></a>Bemerkungen  
+ Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das eine Instanz einer Struktur oder eines komplexen Typs darstellt (der keinen Konstruktor erfordert), bei dem es sich um einen Parameter für die Funktion handelt, die durch die [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Schnittstelle dargestellt wird.  
   
- Wenn der Objektparameter ein Konstruktors erfordert, rufen die [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) Methode.  
+ Wenn für den Object-Parameter ein Konstruktor erforderlich ist, müssen Sie die Methode "up [Object](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) " aufrufen.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md)   
+ [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
  [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

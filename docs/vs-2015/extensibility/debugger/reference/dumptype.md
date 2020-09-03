@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Microsoft-Dokumentation
+title: Dumptype | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e74785f3843f0755cebb5a1f0cd93cf158806d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180952"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt an, welcher Teil eines Programms Zustand (z. B. ausgeführten Threads, Stapelrahmen und aktuelle Anweisungsadresse) sichern.  
+Gibt an, wie viel von einem Programmzustand (z. b. das Ausführen von Threads, Stapel Rahmen und aktuelle Anweisungs Adresse) zum Absichern angezeigt werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,21 +43,21 @@ public enum enum_DUMPTYPE { 
   
 ## <a name="members"></a>Member  
  DUMP_MINIDUMP  
- Gibt einen kleinen, compact-Dump an.  
+ Gibt ein kleines, kompaktes Abbild an.  
   
  DUMP_FULLDUMP  
- Gibt einen großen, vollständigen Dump an.  
+ Gibt ein großes, Abbild Abbild an.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Argument an die [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Wird als Argument an die " [Write-Dump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) "-Methode übermittelt.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

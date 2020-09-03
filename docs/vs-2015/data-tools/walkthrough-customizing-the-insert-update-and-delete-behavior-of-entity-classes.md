@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9901d917de2babf4992519ffe6b360454542aad1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602570"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Anpassen des Einfüge-, Update- und Löschverhaltens in Entitätsklassen
@@ -44,7 +44,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 - Konfigurieren der Customer-Klasse, sodass sie gespeicherte Prozeduren für Einfüge-, Update- und Löschvorgänge verwendet.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Zugriff auf die SQL Server-Version der Beispieldatenbank Northwind.
@@ -78,13 +78,13 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
      Dem Projekt wird eine leere LINQ to SQL-Klassendatei (Northwind.dbml) hinzugefügt, und der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wird geöffnet.
 
 ## <a name="creating-the-customer-entity-class-and-object-data-source"></a>Erstellen der Entitätsklasse Customer und einer Objektdatenquelle
- Erstellen Sie [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] Klassen, die Datenbanktabellen zugeordnet sind, indem Sie Tabellen aus **Server-Explorer** /**Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ziehen. Sie erhalten LINQ to SQL-Entitätsklassen, die den Tabellen in der Datenbank zugeordnet sind. Nachdem die Entitätsklassen erstellt wurden, können sie wie andere Klassen mit öffentlichen Eigenschaften als Objektdatenquellen dienen.
+ Erstellen [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] Sie Klassen, die Datenbanktabellen zugeordnet sind, indem Sie Tabellen aus **Server-Explorer** / **Datenbank-Explorer** auf das ziehen [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . Sie erhalten LINQ to SQL-Entitätsklassen, die den Tabellen in der Datenbank zugeordnet sind. Nachdem die Entitätsklassen erstellt wurden, können sie wie andere Klassen mit öffentlichen Eigenschaften als Objektdatenquellen dienen.
 
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>So erstellen Sie eine Customer-Entitätsklasse und konfigurieren damit eine Datenquelle
 
-1. Suchen Sie in **Server-Explorer** /**Datenbank-Explorer**die Tabelle Customer in der SQL Server Version der Beispieldatenbank Northwind.
+1. Suchen Sie in **Server-Explorer** / **Datenbank-Explorer**die Customer-Tabelle in der SQL Server-Version der Beispieldatenbank Northwind.
 
-2. Ziehen Sie den Knoten **Customers** aus **Server-Explorer** /**Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Oberfläche.
+2. Ziehen Sie den Knoten **Customers** von **Server-Explorer** / **Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Oberfläche.
 
      Eine Entitätsklasse mit dem Namen **Customer** wird erstellt. Sie verfügt über Eigenschaften, die den Spalten in der Tabelle Customers entsprechen. Die Entitätsklasse wird **Customer** (nicht **Customers**) genannt, da sie einem einzelnen Kunden aus der Tabelle „Customers“ entspricht.
 
@@ -173,19 +173,19 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 1. Öffnen Sie im [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] die LINQ to SQL-Datei. (Doppelklicken Sie im **Projektmappen-Explorer** auf die Datei **Northwind.dbml**.)
 
-2. Erweitern Sie in **Server-Explorer** /**Datenbank-Explorer**den Knoten **gespeicherte Prozeduren** Northwind-Datenbanken, und suchen Sie die gespeicherten Prozeduren **InsertCustomers**, **updatecustomzer**und **DeleteCustomers** .
+2. Erweitern Sie in **Server-Explorer** / **Datenbank-Explorer**den Knoten **gespeicherte Prozeduren** Northwind-Datenbanken, und suchen Sie die gespeicherten Prozeduren **InsertCustomers**, **updatecustomzer**und **DeleteCustomers** .
 
 3. Ziehen Sie alle drei gespeicherten Prozeduren auf den [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Die gespeicherten Prozeduren werden dem Methodenbereich als <xref:System.Data.Linq.DataContext>-Methoden hinzugefügt. Weitere Informationen finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4. Wählen Sie im [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] die Entitäts Klasse **Customer** aus.
+4. Wählen Sie im die Entitäts Klasse **Customer** aus [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] .
 
 5. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft **Einfügen** aus.
 
-6. Klicken Sie auf die Schaltfläche mit den Auslassungs Punkten (...) neben **Laufzeit verwenden** , um das Dialogfeld **Verhalten konfigurieren** zu öffnen.
+6. Klicken Sie auf die Auslassungszeichen (...) neben **Laufzeit verwenden**, um das Dialogfeld **Verhalten konfigurieren** zu öffnen.
 
-7. Wählen Sie **Anpassen** aus.
+7. Klicken Sie auf **Anpassen**.
 
 8. Wählen Sie aus der Liste **Anpassen** die **InsertCustomers**-Methode aus.
 
@@ -196,7 +196,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 10. Wählen Sie aus der Liste **Verhalten** die Option **Aktualisieren** aus.
 
-11. Wählen Sie **Anpassen** aus.
+11. Klicken Sie auf **Anpassen**.
 
 12. Wählen Sie in der Liste **Anpassen** die **UpdateCustomers**-Methode aus.
 
@@ -211,7 +211,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 15. Wählen Sie aus der Liste **Verhalten** die Option **Löschen** aus.
 
-16. Wählen Sie **Anpassen** aus.
+16. Klicken Sie auf **Anpassen**.
 
 17. Wählen Sie in der Liste **Anpassen** die **DeleteCustomers**-Methode aus.
 
@@ -248,14 +248,14 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 10. Drücken Sie F5 und überprüfen Sie, ob der gelöschte Datensatz aus der Datenbank entfernt wurde.
 
     > [!NOTE]
-    > Wenn Ihre Anwendung SQL Server Express Edition verwendet, werden die Änderungen, abhängig vom Wert der Eigenschaft **in Ausgabeverzeichnis kopieren** der Datenbankdatei, möglicherweise nicht angezeigt, wenn Sie in Schritt 10 F5 drücken.
+    > Wenn Ihre Anwendung SQL Server Express Edition verwendet, werden beim Drücken von F5 in Schritt 10 die Änderungen möglicherweise nicht angezeigt. Dies ist abhängig vom Wert der Eigenschaft **Ins Ausgabeverzeichnis kopieren** der Datenbankdatei.
 
 ## <a name="next-steps"></a>Nächste Schritte
  Je nach den Anforderungen Ihrer Anwendung sollten Sie nach dem Erstellen von [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]-Entitätsklassen mehrere Schritte ausführen. Hier sind einige Verbesserungen, die Sie an dieser Anwendung vornehmen können:
 
 - Implementieren der Parallelitätsprüfung während der Durchführung von Updates. Weitere Informationen finden Sie unter vollständige Parallelität [: Übersicht](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).
 
-- Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Weitere Informationen finden [Sie unter Einführung in LINQ-C#Abfragen ()](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).
+- Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Weitere Informationen finden [Sie unter Einführung in LINQ-Abfragen (c#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).
 
-## <a name="see-also"></a>Siehe auch
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [LINQ to SQL Abfragen](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae) von [DataContext-Methoden (o/r-Designer)](../data-tools/datacontext-methods-o-r-designer.md) Gewusst [wie: Zuweisen von gespeicherten Prozeduren zum Ausführen von Aktualisierungen, Einfügungen und Löschungen (o/r-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [Pave What es New in Entwicklung von Daten Anwendungen in Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+## <a name="see-also"></a>Weitere Informationen
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [LINQ to SQL Abfragen](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae) [DataContext-Methoden (o/r-Designer)](../data-tools/datacontext-methods-o-r-designer.md) Gewusst [wie: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktualisierungen, Einfügungen und Löschungen (o/r-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [Pave What es New for Data Application Development in Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

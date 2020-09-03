@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcc993ab7c127b16fda206047a1a985d1e003123
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663175"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Anzeigen von Typen und Beziehungen (Klassen-Designer)
@@ -33,7 +33,7 @@ Klassen-Designer informiert Sie mithilfe von Klassendiagrammen über Typdetails 
 > Wenn das Projekt ein Klassendiagramm enthält und das Projekt auf einen Typ verweist, der sich in einem anderen Projekt befindet, wird der referenzierte Typ erst dann im Klassendiagramm angezeigt, wenn Sie das Projekt für diesen Typ erstellen. Außerdem werden im Diagramm Änderungen am Code der externen Entität erst dann angezeigt, wenn Sie das Projekt für diese Entität neu erstellen. Weitere Informationen zu Typen in referenzierten Assemblys und schreibgeschützten Dateien finden Sie unter [Anzeigen von schreibgeschützten Informationen (Klassen-Designer)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Gewusst wie: Anzeigen von vorhandenen Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md)
+ [Vorgehensweise: Anzeigen vorhandener Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md)
 
  Beschreibt, wie Klassen-Designer verwendet werden kann, um bereits vorhandenen Code zu visualisieren.
 
@@ -41,7 +41,7 @@ Klassen-Designer informiert Sie mithilfe von Klassendiagrammen über Typdetails 
 
  Beschreibt, wie Vererbungsbeziehungen zwischen Typen angezeigt werden können.
 
- [Gewusst wie: Wechseln zwischen Member- und Zuordnungsnotation (Klassen-Designer)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Gewusst wie: Wechseln zwischen Member-und Zuordnungs Notation (Klassen-Designer)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
 
  Beschreibt das Wechseln zwischen Member- und Zuordnungsnotation.
 
@@ -50,6 +50,6 @@ Klassen-Designer informiert Sie mithilfe von Klassendiagrammen über Typdetails 
 
  [Refactoring von Klassen und Typen (Klassen-Designer)](../ide/refactoring-classes-and-types-class-designer.md)
 
- [Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)
 
  [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)

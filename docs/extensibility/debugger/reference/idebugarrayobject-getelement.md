@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement | Microsoft Docs
+title: 'Idebugarrayobject:: getElements | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736183"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
-Ruft ein Element des Arrays ab.
+Ruft ein Element des-Arrays ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetElement(
 
 ## <a name="parameters"></a>Parameter
 `dwIndex`\
-[in] Der Elementindex.
+in Der Element Index.
 
 `ppElement`\
-[out] Gibt eine [IDebugObject-Schnittstelle](../../../extensibility/debugger/reference/idebugobject.md) zurück, die das Element darstellt.
+vorgenommen Gibt eine [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Schnittstelle zurück, die das-Element darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode sieht alle Elemente eines Arrayobjekts als eindimensionales Array, auch wenn das Arrayobjekt mehrdimensional ist. Wenn sie z. `myarray[3][2][6]` B. das Array und `dwIndex` den Parameter `myarray[1][1][2]`20 `dwIndex` angeben, würde diese Methode `myarray[1][1][3]`das Element von zurückgeben, und ein Parameter von 21 würde das Element von zurückgeben. Verwenden Sie die [GetCount-Methode,](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) um die Gesamtzahl der Elemente im Array zu bestimmen.
+ Diese Methode sieht alle Elemente eines Array Objekts als eindimensionales Array, auch wenn das Array Objekt mehrdimensional ist. Bei Angabe des `myarray[3][2][6]` -Arrays und eines `dwIndex` Parameters von 20 würde diese Methode z. b. das-Element von zurückgeben `myarray[1][1][2]` , und ein- `dwIndex` Parameter von 21 würde das-Element von zurückgeben `myarray[1][1][3]` . Verwenden Sie die [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) -Methode, um die Gesamtzahl der Elemente im Array zu bestimmen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

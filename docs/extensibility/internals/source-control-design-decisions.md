@@ -34,7 +34,7 @@ Die folgenden Entwurfsentscheidungen sollten bei der Implementierung der Quell C
 
 3. Wenn das Projekt oder der Editor <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> eine Datei aufruft, werden die dieser Datei zugeordneten speziellen Dateien nicht automatisch ausgecheckt. Übergeben Sie die speziellen Dateien zusammen mit der übergeordneten Datei. Die Umgebung erkennt die Beziehung zwischen allen Dateien, die übermittelt werden, und blendet die speziellen Dateien in der Benutzeroberfläche für das Auschecken entsprechend aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

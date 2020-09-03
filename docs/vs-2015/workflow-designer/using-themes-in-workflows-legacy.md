@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3ad3c6b1c66ffa5ec512cfda857738d1219628e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606694"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Verwenden von Designs in Workflows (Vorgängerversion)
@@ -29,5 +29,5 @@ In diesem Thema wird beschrieben, wie bei Verwendung der Vorgängerversion von [
 
  Sie können mithilfe des Dialog Felds "Designs", "Workflow-Designer" und " [Optionen" (Legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)Standardwerte auswählen und benutzerdefinierte Designs speichern. Klicken Sie zum Öffnen dieses Dialog Felds im Menü **Workflow** auf **benutzerdefiniertes Design auswählen** (oder klicken Sie mit der rechten Maustaste auf die Workflow Entwurfs Oberfläche, klicken Sie auf **benutzerdefiniertes Design auswählen**), und wählen Sie dann die Option **Workflow-Designer** Wählen Sie das gewünschte Design aus, und klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Design [Konfiguration (Dialogfeld) (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) Designs [, Workflow-Designer, Dialogfeld "Optionen" (Legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md) [mithilfe des Legacy-Workflow-Designer](../workflow-designer/using-the-legacy-workflow-designer.md)

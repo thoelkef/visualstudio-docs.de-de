@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663984"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
@@ -22,7 +22,7 @@ ms.locfileid: "72663984"
 Sie können Ihrer App in XAML im Code oder unter Verwendung des XAML-Designers Elemente hinzufügen (Steuerelemente, Layouts und Formen). Dieses Thema beschreibt, wie Elemente im XAML-Designer in Visual Studio oder in Blend für Visual Studio verwendet werden.
 
 ## <a name="adding-an-element-to-a-layout"></a>Einem Layout ein Element hinzufügen
- *Layout* ist der Prozess der Größenanpassung und Positionierung von Elementen in einer Benutzeroberfläche. Um visuelle Elemente zu positionieren, müssen Sie sie in einen [Bereich](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) eines Layouts einfügen. Ein `Panel` verfügt über eine untergeordnete Eigenschaft, die eine Auflistung von [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx)-Typen ist. Sie können verschiedene untergeordnete `Panel`-Elemente wie z.B. [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) und [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) verwenden, um sie als Layoutcontainer zu nutzen und auf einer Seite zu positionieren und anzuordnen.
+ *Layout* ist der Prozess der Größenanpassung und Positionierung von Elementen in einer Benutzeroberfläche. Um visuelle Elemente zu positionieren, müssen Sie sie in einen [Bereich](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) eines Layouts einfügen. Ein `Panel` verfügt über eine untergeordnete Eigenschaft, die eine Auflistung von [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx)-Typen ist. Sie können verschiedene untergeordnete  `Panel` Elemente verwenden, z. b. [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)und [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), um als Layoutcontainer zu fungieren und die Elemente auf einer Seite zu positionieren und anzuordnen.
 
  Standardmäßig wird ein `Grid`-Bereich als Layoutcontainer der obersten Ebene innerhalb einer Seite oder eines Formulars verwendet. Sie können Layoutbereiche, Steuerelemente oder andere Elemente innerhalb der obersten Ebene des Seitenlayouts hinzufügen.
 
@@ -41,7 +41,7 @@ Sie können Ihrer App in XAML im Code oder unter Verwendung des XAML-Designers E
 
 #### <a name="to-change-the-layering-order"></a>So ändern Sie die Ebenenreihenfolge
 
-- Führen Sie einen der folgenden Schritte aus:
+- Führen Sie eines der folgenden Verfahren aus:
 
   - Ziehen Sie im Fenster **Dokumentgliederung** die Elemente nach oben oder unten, um die gewünschte Ebenenreihenfolge zu erstellen.
 
@@ -121,5 +121,5 @@ Sie können Ihrer App in XAML im Code oder unter Verwendung des XAML-Designers E
 
 - Klicken Sie im Dokumentgliederungsfenster oder auf der Zeichenfläche mit der rechten Maustaste auf das Element, und wählen Sie **Layout**, **Zurücksetzen** *Eigenschaftsname* aus, wobei *Eigenschaftsname* die Eigenschaft ist, die Sie zurücksetzen möchten (oder wählen Sie **Layout**, **Alle zurücksetzen** aus, um alle Layouteigenschaften für das Element zurückzusetzen).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
+title: 'IDebugProgramProvider2:: getproviderprocessdata | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721855"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
-Ruft eine Liste der ausgeführten Programme aus einem angegebenen Prozess ab.
+Ruft eine Liste der laufenden Programme aus einem angegebenen Prozess ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,32 +49,32 @@ int GetProviderProcessData(
 
 ## <a name="parameters"></a>Parameter
 `Flags`\
-[in] Eine Kombination von [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Flags aus der PROVIDER_FLAGS-Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
+in Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind für diesen-Befehl typisch:
 
-|Flag|BESCHREIBUNG|
+|Flag|Beschreibung|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|Der Anrufer wird auf dem Remotecomputer ausgeführt.|
-|`PFLAG_DEBUGGEE`|Der Aufrufer wird derzeit gedebuggt (zusätzliche Informationen zum Marshalling werden für jeden Knoten zurückgegeben).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Der Aufrufer wurde an den Debugger angefügt, aber nicht gestartet.|
-|`PFLAG_GET_PROGRAM_NODES`|Der Anrufer fordert die Rückgabe einer Liste der Programmknoten.|
+|`PFLAG_REMOTE_PORT`|Der Aufrufer wird auf dem Remote Computer ausgeführt.|
+|`PFLAG_DEBUGGEE`|Der Aufrufer wird gerade gedebuggt (für jeden Knoten werden weitere Informationen über das Marshalling zurückgegeben).|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Der Aufrufer wurde angefügt, aber nicht vom Debugger gestartet.|
+|`PFLAG_GET_PROGRAM_NODES`|Der Aufrufer fordert eine Liste der Programmknoten an, die zurückgegeben werden sollen.|
 
 `pPort`\
-[in] Der Port, auf dem der Aufrufenprozess ausgeführt wird.
+in Der Port, auf dem der Aufrufprozess ausgeführt wird.
 
 `processId`\
-[in] Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der ID des Prozesses, der das betreffende Programm enthält.
+in Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die die ID des Prozesses mit dem fraglichen Programm enthält.
 
 `EngineFilter`\
-[in] Ein Array von GUIDs für Debug-Engines, die diesem Prozess zugewiesen sind (diese werden verwendet, um die Programme zu filtern, die tatsächlich zurückgegeben werden, basierend auf dem, was die bereitgestellten Module unterstützen; wenn keine Module angegeben sind, werden alle Programme zurückgegeben).
+in Ein Array von GUIDs für Debug-engines, das zum Debuggen dieses Prozesses zugewiesen ist (diese werden verwendet, um die Programme zu filtern, die basierend auf den von den bereitgestellten Modulen unterstützten Modulen tatsächlich zurückgegeben werden. wenn keine Engines angegeben werden, werden alle Programme zurückgegeben).
 
 `pProcess`\
-[out] Eine [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur, die mit den angeforderten Informationen ausgefüllt wird.
+vorgenommen Eine [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) -Struktur, die mit den angeforderten Informationen ausgefüllt ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird normalerweise von einem Prozess aufgerufen, um eine Liste der in diesem Prozess ausgeführten Programme abzuerhalten. Die zurückgegebenen Informationen sind eine Liste von [IDebugProgramNode2-Objekten.](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+ Diese Methode wird normalerweise von einem Prozess aufgerufen, um eine Liste von Programmen zu erhalten, die in diesem Prozess ausgeführt werden. Die zurückgegebenen Informationen sind eine Liste von [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekten.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

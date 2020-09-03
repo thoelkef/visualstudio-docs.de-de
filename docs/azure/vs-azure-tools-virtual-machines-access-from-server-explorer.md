@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
 ms.openlocfilehash: 8fd5d81e721bc2df7041d4cb724687e5ee540a7f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911657"
 ---
-# <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Zugreifen auf virtuelle Azure-Computer im Server-Explorer
+# <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Zugreifen auf virtuelle Computer in Azure über den Server-Explorer
 
 Wenn Sie in Azure gehostete virtuelle Computer verwenden, können Sie über den Server-Explorer auf diese Computer zugreifen. Sie müssen sich zunächst bei Ihrem Azure-Abonnement anmelden, um die mobilen Dienste anzeigen zu können. Öffnen Sie das Kontextmenü für den Azure-Knoten, und wählen Sie **Verbindung mit Microsoft Azure-Abonnement herstellen**aus, um sich anzumelden.
 
@@ -24,20 +24,20 @@ Wenn Sie in Azure gehostete virtuelle Computer verwenden, können Sie über den 
 
     Die folgende Tabelle zeigt, welche Eigenschaften verfügbar sind – diese jedoch alle schreibgeschützt. Sie können sie über das [Azure-Portal](https://portal.azure.com) ändern.
 
-   | property | Beschreibung |
+   | Eigenschaft | BESCHREIBUNG |
    | --- | --- |
    | DNS-Name |Die URL mit der Internetadresse des virtuellen Computers. |
    | Umgebung |Für einen virtuellen Computer lautet der Wert dieser Eigenschaft immer "Produktion". |
-   | -Name |Der Name des virtuellen Computers. |
-   | Größe |Die Größe des virtuellen Computers. Diese Eigenschaft gibt die Menge an verfügbarem Arbeitsspeicher und Festplattenspeicher an. Weitere Informationen finden Sie unter [Größen virtueller Computer](/azure/cloud-services/cloud-services-sizes-specs). |
+   | Name |Der Name des virtuellen Computers. |
+   | Size |Die Größe des virtuellen Computers. Diese Eigenschaft gibt die Menge an verfügbarem Arbeitsspeicher und Festplattenspeicher an. Weitere Informationen finden Sie unter [Größen virtueller Computer](/azure/cloud-services/cloud-services-sizes-specs). |
    | Status |Mögliche Werte lauten "Wird gestartet", "Gestartet", "Wird angehalten", "Angehalten" und "Status wird abgerufen". Wird "Status wird abgerufen" angezeigt, ist der aktuelle Status unbekannt. Die Werte für diese Eigenschaft unterscheiden sich von den Werten, die im [Azure-Portal](https://portal.azure.com) verwendet werden. |
    | SubscriptionID |Die Abonnement-ID für Ihr Azure-Konto. Sie können diese Informationen im [Azure-Portal](https://portal.azure.com) anzeigen, indem Sie die Eigenschaften für ein Abonnement öffnen. |
 2. Wählen Sie einen Endpunktknoten aus, und zeigen Sie dann das Fenster **Eigenschaften** an.
 3. Die folgende Tabelle beschreibt die verfügbaren Endpunkteigenschaften. Alle Eigenschaften sind schreibgeschützt. Verwenden Sie zum Hinzufügen oder Bearbeiten der Endpunkte für einen virtuellen Computer das [Azure-Portal](https://portal.azure.com).
 
-   | property | Beschreibung |
+   | Eigenschaft | BESCHREIBUNG |
    | --- | --- |
-   | -Name |Ein Bezeichner für den Endpunkt. |
+   | Name |Ein Bezeichner für den Endpunkt. |
    | Privater Port |Der Port für den internen Netzwerkzugriff auf Ihre Anwendung. |
-   | Protokoll |Das Protokoll, das von der Transportschicht für diesen Endpunkt verwendet wird – entweder TCP oder UDP. |
+   | Protocol |Das Protokoll, das von der Transportschicht für diesen Endpunkt verwendet wird – entweder TCP oder UDP. |
    | Öffentlicher Port |Der Port, der für den öffentlichen Zugang auf Ihrer Anwendung verwendet wird. |

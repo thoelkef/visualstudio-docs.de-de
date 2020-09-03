@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumstackframes:: Next | Microsoft-Dokumentation'
+title: 'IDiaEnumStackFrames:: Next | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c66e8b281f27e13a1176dd32f21856367e5f1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189745"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationssequenz ab.  
+Ruft eine angegebene Anzahl von Stapel Rahmenelementen aus der enumerationssequenz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,17 +37,17 @@ HRESULT Next( 
   
 #### <a name="parameters"></a>Parameter  
  celt  
- [in] Die Anzahl der StackFrame-Elemente im Enumerator abgerufen werden sollen.  
+ in Die Anzahl der StackFrame-Elemente im Enumerator, die abgerufen werden sollen.  
   
  rgelt  
- [out] Ein Array, das mit dem angeforderten gefüllt werden soll, im [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.  
+ vorgenommen Ein Array, das mit den angeforderten [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) -Objekten aufgefüllt werden soll.  
   
  pceltFetched  
- [out] Gibt die Anzahl der Stack-Rahmenelemente enthält in der abgerufenen Enumerator zurück.  
+ vorgenommen Gibt die Anzahl der Stapel Rahmenelemente im abgerufenen Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine weiteren Stapelrahmen. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn keine Stapel Rahmen mehr vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -1,5 +1,5 @@
 ---
-title: Aktivieren eines Programms zu debuggende | Microsoft-Dokumentation
+title: Aktivieren eines deaktivierte Programms | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b0f0331430a1cc625dee2a7029742fd62d67fb56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155374"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Aktivieren eines Programms für das Debuggen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bevor der Debug-Engine (DE) ein Programm debuggen kann, müssen Sie die DE starten oder fügen Sie ihn an ein vorhandenes Programm.  
+Bevor Ihre Debug-Engine (de) ein Programm debuggen kann, müssen Sie zuerst die de starten oder Sie an ein vorhandenes Programm anfügen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Abrufen eines Ports](../../extensibility/debugger/getting-a-port.md)  
- Erläutert, wie Sie einen Port als der erste Schritt zum Aktivieren eines Programms, die debuggt werden abgerufen.  
+ Erläutert, wie Sie einen Port als ersten Schritt zum Aktivieren eines Programms abrufen können.  
   
  [Registrieren des Programms](../../extensibility/debugger/registering-the-program.md)  
- Der nächste Schritt bei der Aktivierung der zu debuggenden Programm erläutert: Registrieren sie mit dem Port. Nach der Registrierung kann die Anwendung debuggt werden entweder durch den Prozess anfügen oder das Debuggen von just-in-Time (JIT).  
+ Erläutert den nächsten Schritt zum Aktivieren eines Programms, das gedeentschlgt werden soll: die Registrierung beim Port. Nach der Registrierung kann das Programm entweder durch das Anfügen oder Just-in-Time-Debuggen (JIT) gedebuggt werden.  
   
  [Anfügen an das Programm](../../extensibility/debugger/attaching-to-the-program.md)  
- Im nächsten Schritt erläutert: Anfügen des Debuggers an die Anwendung.  
+ Erläutert den nächsten Schritt: Anfügen des Debuggers an das Programm.  
   
- [Start-basierte Anfügen](../../extensibility/debugger/launch-based-attachment.md)  
- Beschreibt die startbasiertes um ein Programm, das automatisch beim Start durch die SDM ist.  
+ [Start basiertes Anhängen](../../extensibility/debugger/launch-based-attachment.md)  
+ Beschreibt die Start basierte Anlage zu einem Programm, das beim Starten durch die SDM automatisch erfolgt.  
   
  [Senden der erforderlichen Ereignisse](../../extensibility/debugger/sending-the-required-events.md)  
- Führt Sie schrittweise durch die erforderlichen Ereignisse, die beim Erstellen einer Debug-Engine (DE), und es an ein Programm angefügt.  
+ Führt Sie schrittweise durch die erforderlichen Ereignisse beim Erstellen einer Debug-Engine (de) und beim Anfügen an ein Programm.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Definiert eine Debug-Engine (DE) und beschreibt die Dienste, die über die DE-Schnittstellen und wie sie den Debugger für den Übergang zwischen verschiedenen Betriebsmodi verursachen können.
+ Definiert eine Debug-Engine (de) und beschreibt Dienste, die über die de-Schnittstellen implementiert werden, und wie Sie bewirken können, dass der Debugger zwischen verschiedenen Betriebsmodi übergeht.

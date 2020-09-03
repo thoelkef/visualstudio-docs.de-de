@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9424eb099516761866ec459888ff830fcf56a28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154746"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -40,13 +40,13 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Erforderliche Optionen  
  Die Option **WinCounter** kann nur mit der Option **Start** verwendet werden.  
   
- **Start:** `Method`  
- Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
+ **Start:**`Method`  
+ : Die Option **Start** initialisiert den Profiler mit der angegebenen Profilerstellungsmethode.  
   
 ## <a name="exclusive-options"></a>Ausschließliche Optionen  
  Die Option **AutoMark** kann nur mit der Option **WinCounter** verwendet werden.  
   
- **AutoMark:** `Milliseconds`  
+ **AutoMark:**`Milliseconds`  
  Gibt die Zeit in Millisekunden zwischen Datenerfassungen mit einem Windows-Leistungsindikator an.  
   
 ## <a name="example"></a>Beispiel  
@@ -56,8 +56,8 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetENCUpdate | Microsoft Docs
+title: 'IDebugProgram2:: getencupdate | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e90ff9f8a7a80913aec72b9fe2bb6fe470013d51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722838"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-Diese Methode ruft das Update Bearbeiten und Fortfahren (ENC) für dieses Programm ab. Eine benutzerdefinierte Debug-Engine gibt immer `E_NOTIMPL` zurück.
+Diese Methode ruft das Update für die Bearbeitung und Fortsetzung (ENC) für dieses Programm ab. Eine benutzerdefinierte Debug-Engine gibt immer `E_NOTIMPL` zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetENCUpdate(
 
 ## <a name="parameters"></a>Parameter
 `ppUpdate`\
-[out] Gibt eine interne Schnittstelle zurück, die zum Aktualisieren dieses Programms verwendet werden kann.
+vorgenommen Gibt eine interne Schnittstelle zurück, die zum Aktualisieren dieses Programms verwendet werden kann.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Ein benutzerdefiniertes Debugmodul sollte immer zurückgeben. `E_NOTIMPL`
+> Eine benutzerdefinierte Debug-Engine sollte immer zurückgeben `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540074"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Ausführen von Unittests für vorhandene C++-Anwendungen mit dem Test-Explorer
@@ -134,7 +134,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
 1. Fügen Sie in jeder Komponententestcodedatei eine `#include`-Anweisung für die Header des zu testenden Projekts hinzu.
 
-2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Zum Beispiel:
+2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Beispiel:
 
    ```cpp
    #include "stdafx.h"
@@ -156,7 +156,7 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 
    Weitere Informationen finden Sie unter [Komponententests für nativen Code mit Test-Explorer](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c).
 
-## <a name="run-the-tests"></a>Tests ausführen
+## <a name="run-the-tests"></a>Ausführen der Tests
 
 1. Wählen Sie im Menü **Ansicht** die Optionen **Weitere Fenster**, **Test-Explorer**aus.
 

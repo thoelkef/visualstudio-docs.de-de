@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a27bf67770eef770fddef0301a804e6c45579539
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387121"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Fehler: Timeout beim Auswerten der Funktion &#39;Funktion&#39;. Der Abbruch musste auf unsichere Weise erfolgen
@@ -21,7 +21,7 @@ ms.locfileid: "86387121"
 
 Vollständiger Meldungstext: Timeout beim Auswerten der Funktion „Funktion“. Der Abbruch musste auf unsichere Weise erfolgen. Dies hat den Zielprozess ggf. beschädigt. 
 
-Um das Überprüfen des Status von .NET-Objekten zu vereinfachen, zwingt der Debugger den debuggten Prozess automatisch zur Ausführung von zusätzlichem Code (in der Regel Eigenschaftengettermethoden und ToString-Funktionen). In den meisten Szenarien werden diese Funktionen schnell ausgeführt, und sie vereinfachen das Debuggen erheblich. Der Debugger führt die Anwendung jedoch nicht in einem Sandkasten aus. Demzufolge kann eine Eigenschaft Getter oder eine Methode, die eine native Funktion aufruft, die nicht mehr reagiert, zu langen Timeouts führen, die möglicherweise nicht wiederherstellbar sind. Wenn diese Fehlermeldung angezeigt wird, ist dieser Fall eingetreten.
+Um das Überprüfen des Status von .NET-Objekten zu vereinfachen, zwingt der Debugger den debuggten Prozess automatisch zur Ausführung von zusätzlichem Code (in der Regel Eigenschaftengettermethoden und ToString-Funktionen). In den meisten Szenarien werden diese Funktionen schnell ausgeführt, und sie vereinfachen das Debuggen erheblich. Der Debugger führt die Anwendung jedoch nicht in einem Sandkasten aus. Folglich kann eine Getter-Methode für Eigenschaften oder eine ToString-Methode, die eine native Funktion aufruft, die nicht mehr reagiert, zu langen Timeouts führen, die möglicherweise nicht behebbar sind. Wenn diese Fehlermeldung angezeigt wird, ist dieser Fall eingetreten.
  
 Ein häufiger Grund für dieses Problem liegt darin, dass der Debugger beim Auswerten einer Eigenschaft nur die Ausführung des zu überprüfenden Threads zulässt. Wenn die Eigenschaft also darauf wartet, dass andere Threads innerhalb der debuggten Anwendung ausgeführt werden, und wenn Sie darauf wartet, dass die .NET-Runtime nicht unterbrechen kann, tritt dieses Problem auf.
  

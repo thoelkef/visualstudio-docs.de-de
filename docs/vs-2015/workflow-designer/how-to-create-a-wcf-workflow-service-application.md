@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9bf941babd943c6856809a13de847b62745b2056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72605014"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Vorgehensweise: Erstellen einer Dienstanwendung für WCF-Workflows
@@ -27,7 +27,7 @@ ms.locfileid: "72605014"
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Wählen Sie im Bereich **installierte Vorlagen** in Abhängigkeit von der gewünschten Sprache entweder **WCF** oder **Workflow** aus der **Visualisierung C#**  oder den **Visual Basic** Gruppierungen aus.
+3. Wählen Sie im Bereich **installierte Vorlagen** in Abhängigkeit von der gewünschten Sprache entweder **WCF** oder **Workflow** aus der **Visual c#** -oder **Visual Basic** Gruppierungen aus.
 
 4. Wählen Sie im mittleren Bereich die Option **WCF-Workflow Dienst Anwendung**aus.
 
@@ -38,9 +38,9 @@ ms.locfileid: "72605014"
 7. Wählen Sie **im Feldprojekt** Mappe aus, um eine neue Projekt Mappe zu erstellen, und klicken Sie dann auf **OK**.
 
     > [!NOTE]
-    > Wenn Sie einer vorhandenen Projekt Mappe eine Workflow Konsolenanwendung hinzufügen möchten, öffnen Sie diese Projekt Mappe in [!INCLUDE[vs2010](../includes/vs2010-md.md)], klicken Sie mit der rechten Maustaste auf die Projekt Mappe in **Projektmappen-Explorer**, und wählen Sie **Hinzufügen**und dann **Neues Projekt... aus.** , um das Dialogfeld **Neues Projekt** zu öffnen. Fahren Sie wie oben in dieser Prozedur beschrieben fort.
+    > Wenn Sie einer vorhandenen Projekt Mappe eine Workflow Konsolenanwendung hinzufügen möchten, öffnen Sie diese Projekt Mappe in [!INCLUDE[vs2010](../includes/vs2010-md.md)] , klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Projekt Mappe, und wählen Sie **Hinzufügen**und dann **Neues Projekt...** , um das Dialogfeld **Neues Projekt** zu öffnen. Fahren Sie wie oben in dieser Prozedur beschrieben fort.
 
 8. Die Projektvorlage erstellt eine Dienstdefinition im XAML-Format. Der [!INCLUDE[wfd1](../includes/wfd1-md.md)] wird in der Entwurfsansicht mit einer <xref:System.Activities.Statements.Sequence>-Aktivität geöffnet, die einen Satz von <xref:System.ServiceModel.Activities.Receive>-Aktivitäten und <xref:System.ServiceModel.Activities.SendReply>-Aktivitäten enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Erstellen einer Aktivität erstellen](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436) [eines Workflow Projekts](../workflow-designer/creating-a-workflow-project.md)

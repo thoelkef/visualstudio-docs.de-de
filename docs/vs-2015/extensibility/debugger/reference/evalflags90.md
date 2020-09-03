@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a95f25f9e970beb31544722b1beeb05b2d480b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156048"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Listet die gültigen Werte für die Flags, die Auswertung des Ausdrucks steuern. Diese Enumeration erweitert die [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) Enumeration.  
+Listet die gültigen Werte für Flags auf, die die Ausdrucks Auswertung steuern. Diese Enumeration erweitert die [evalflags](../../../extensibility/debugger/reference/evalflags.md) -Enumeration.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -65,41 +65,41 @@ public enum enum_EVALFLAGS90
   
 #### <a name="parameters"></a>Parameter  
  EVAL90_RETURNVALUE  
- Gibt an, dass der Rückgabewert, sofern vorhanden, ausgewertet werden.  
+ Gibt an, dass der Rückgabewert (sofern vorhanden) ausgewertet werden soll.  
   
  EVAL90_NOSIDEEFFECTS  
- Gibt an, dass Nebenwirkungen nicht zugelassen werden.  
+ Gibt an, dass Nebeneffekte nicht zulässig sind.  
   
  EVAL90_ALLOWBPS  
- Gibt die für Haltepunkte wird beendet.  
+ Gibt an, dass Haltepunkte angehalten werden.  
   
  EVAL90_ALLOWERRORREPORT  
- Gibt an, Fehlerberichte an den Host, zulässig sein soll. In erster Linie verwendet für die Auswertung des Ausdrucks im Skript in Internet Explorer.  
+ Gibt an, dass eine Fehlermeldung an den Host zulässig ist. Wird hauptsächlich für die Ausdrucks Auswertung in Skripts in Internet Explorer verwendet.  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- Erzwingt, dass Funktionen wie Adressen, anstelle von Aufrufen der Funktion ausgewertet werden soll.  
+ Erzwingt, dass Funktionen als Adressen ausgewertet werden, anstatt die Funktion aufzurufen.  
   
  EVAL90_NOFUNCEVAL  
- Verhindert, dass Funktion ausgewertet wird. Betrachten Sie beispielsweise die `int` token im Ausdruck `myExpression(int) + 10`. Diese Funktion kann als eine Adresse, aber nicht als Wert ordnungsgemäß ausgewertet werden.  
+ Verhindert, dass die Funktion ausgewertet wird. Sehen Sie sich beispielsweise das `int` Token im Ausdruck an `myExpression(int) + 10` . Diese Funktion kann ordnungsgemäß als Adresse ausgewertet werden, aber nicht als Wert.  
   
  EVAL90_NOEVENTS  
- Flag, um anzugeben, dass Ereignisse während der Auswertung des Ausdrucks nicht sitzungsbasierter Debug-Manager (SDM) oder die IDE gesendet werden sollen.  
+ Flag, das anzeigt, dass Ereignisse, die während der Ausdrucks Auswertung auftreten, nicht an den Sitzungs-Debug-Manager (SDM) oder an die IDE gesendet werden sollen.  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
- Ermöglicht die ausdrucksauswertung zur Entwurfszeit.  
+ Aktiviert die Ausdrucks Auswertung zur Entwurfszeit.  
   
  EVAL90_ALLOW_IMPLICIT_VARS  
- Ermöglicht implizite Variable erstellen.  
+ Ermöglicht das Erstellen impliziter Variablen.  
   
  EVAL90_FORCE_EVALUATION_NOW  
- Erzwingt die Auswertung sofort durchgeführt. Dies ist nützlich, wenn eine Anforderung, z. B. eine benutzeranforderung zu verarbeiten.  
+ Erzwingt, dass die Auswertung sofort erfolgt. Dies ist nützlich, wenn Sie eine Anforderung verarbeiten, z. b. eine Benutzer Anforderung.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg90.h  
+ Header: Msdbg90. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

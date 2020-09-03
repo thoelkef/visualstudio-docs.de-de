@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d617d428c9551bc821e1c72fa517497769e6f047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204924"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
+# <a name="reference_compare"></a>REFERENCE_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt den Typ von Vergleich für Verweise.  
+Gibt den Typ des Vergleichs für Verweise an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,24 +45,24 @@ public enum enum_REFERENCE_COMPARE { 
   
 ## <a name="members"></a>Member  
  REF_COMPARE_EQUAL  
- Gibt einen-gleich-Vergleich an.  
+ Gibt einen Gleichheits Vergleich an.  
   
  REF_COMPARE_LESS_THAN  
- Gibt an, eine kleiner-als-Vergleich.  
+ Gibt einen kleiner-als-Vergleich an.  
   
  REF_COMPARE_GREATER_THAN  
- Gibt an, ein größer-als-Vergleich.  
+ Gibt einen größer-als-Vergleich an.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugreference2-compare.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Als Argument an die [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) -Methode übergebenen.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ [Vergleichen](../../../extensibility/debugger/reference/idebugreference2-compare.md)

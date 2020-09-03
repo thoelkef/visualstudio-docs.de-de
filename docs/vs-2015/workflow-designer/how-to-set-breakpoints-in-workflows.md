@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d1bbb18a9015b52b3d65cb8f8fd02674693abc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659136"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Gewusst wie: Festlegen von Haltepunkten in Workflows
@@ -38,5 +38,5 @@ Wenn Sie [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwenden, können Sie Haltepu
 
      Alternativ können Sie auch die Tastenkombination **F9** drücken, nachdem Sie die Aktivität ausgewählt haben, oder Sie können mit der rechten Maustaste auf die Aktivität klicken und halte **Punkt** auswählen und dann im Kontextmenü halte **Punkt einfügen** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Aufrufen der Workflow Debugger](../workflow-designer/how-to-invoke-the-workflow-debugger.md) - [debuggingworkflows mit dem Workflow-Designer](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) Gewusst [wie: Debuggen von XAML mit dem Workflow-Designer](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

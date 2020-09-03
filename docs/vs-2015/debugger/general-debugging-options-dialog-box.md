@@ -1,5 +1,5 @@
 ---
-title: Allgemein, Debuggen, Dialog Feld "Optionen" | Microsoft-Dokumentation
+title: Allgemein, Debuggen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c53af4a8e0f42708ab94d7206a9c0cc54819798
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72573553"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
@@ -43,11 +43,11 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
  **Unterbrechen, wenn Ausnahmen Anwendungs Domänen-oder verwaltete/native Grenzen überschreiten**  
  Beim Debuggen im verwalteten oder gemischten Modus kann die Common Language Runtime die Ausnahmen auffangen, die die Grenzen zwischen Anwendungsdomänen oder Grenzen zwischen verwaltetem und systemeigenem Code überschreiten, wenn die folgenden Bedingungen erfüllt sind:  
   
- 1 \), wenn nativer Code verwalteten Code mithilfe von COM-Interop aufruft und der verwaltete Code eine Ausnahme auslöst. Weitere Informationen finden [Sie unter Einführung in COM-Interop](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1, \) Wenn von System eigenem Code verwalteter Code mit COM-Interop aufgerufen wird und der verwaltete Code eine Ausnahme auslöst. Weitere Informationen finden Sie unter [Einführung in COM-Interop](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2 \), wenn verwalteter Code, der in der Anwendungsdomäne 1 ausgeführt wird, verwalteten Code in der Anwendungsdomäne 2 aufruft und der Code in Anwendungsdomäne 2 eine Ausnahme auslöst. Siehe [Programmieren mit Anwendungs Domänen](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2 \) Wenn verwalteter Code, der in der Anwendungsdomäne 1 ausgeführt wird, verwalteten Code in der Anwendungsdomäne 2 aufruft und der Code in Anwendungsdomäne 2 eine Ausnahme auslöst. Siehe [Programmieren mit Anwendungs Domänen](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3 \), wenn Code eine Funktion mithilfe von Reflektion aufruft und die Funktion eine Ausnahme auslöst. Siehe [Reflektion](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3 \) , wenn Code eine Funktion mithilfe von Reflektion aufruft und die Funktion eine Ausnahme auslöst. Weitere Informationen finden Sie unter [Reflexion](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  In den Fällen 2) und 3) wird die Ausnahme gelegentlich von verwaltetem Code in `mscorlib` und nicht von der Common Language Runtime aufgefangen. Diese Option beeinträchtigt nicht das Unterbrechen bei von `mscorlib` aufgefangenen Ausnahmen.  
   
@@ -69,7 +69,7 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
  **Nur meinen Code aktivieren**  
  Der Debugger zeigt nur Benutzercode („Mein Code“) an und durchläuft ihn schrittweise, während systemeigener und sonstiger Code, der optimiert ist oder keine Debugsymbole aufweist, ignoriert wird.  
   
- **Alle Member für Nichtbenutzer Objekte in Variablen Fenstern anzeigen (nur Visual Basic)**  
+ **Alle Member für Nichtbenutzerobjekte in Variablenfenstern anzeigen (nur Visual Basic)**  
  Aktiviert die Anzeige nicht öffentlicher Member in Objekten in Nichtbenutzercode (nicht "Nur eigener Code").  
   
  **Beim Start warnen, wenn kein Benutzercode**  
@@ -84,7 +84,7 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
  **Eigenschaften Auswertung und andere implizite Funktionsaufrufe aktivieren**  
  Aktiviert die automatische Auswertung von Eigenschaften und impliziten Funktionsaufrufen in Variablenfenstern und im Dialogfeld **Schnellüberwachung**.  
   
- **Zeichen folgen Konvertierungs Funktion für Objekte in Variablen FensternC# (nur JavaScript)**  
+ **Zeichen folgen Konvertierungs Funktion für Objekte in Variablen Fenstern (nur c# und JavaScript)**  
  Führt einen impliziten Zeichenkonvertierungsaufruf beim Auswerten von Objekten in Variablenfenstern aus. Deshalb wird dieses Ergebnis nicht als Typname, sondern als Zeichenfolge angezeigt. Gilt nur für Debuggen in C#-Code. Diese Einstellung kann durch das Attribut "tbuggerdisplay" überschrieben werden (siehe [Verwenden des Attributs](../debugger/using-the-debuggerdisplay-attribute.md)"Debug-Display").  
   
  **Quellserverunterstützung aktivieren**  
@@ -99,7 +99,7 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
  **Quell Server für teilweise vertrauenswürdige Assemblys zulassen (nur verwaltet)**  
  Wenn die Quellserverunterstützung aktiviert ist, überschreibt diese Einstellung das Standardverhalten beim Nichtabrufen von Quellen für teilweise vertrauenswürdige Assemblys.  
   
- **Gesamte Zeile für Breakpoints und Current-Anweisung markieren**  
+ **Bei Haltepunkten und aktueller Anweisung gesamte Zeile markieren**  
  Wenn der Debugger einen Haltepunkt oder die aktuelle Anweisung hervorhebt, wird die ganze Zeile hervorgehoben.  
   
  **Quelldateien müssen exakt mit der Originalversion übereinstimmen**  
@@ -109,12 +109,12 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
  Sendet alle Debuggermeldungen, die normalerweise im **Ausgabefenster** angezeigt werden, an das **Direktfenster**.  
   
  **Rohstruktur von Objekten in Variablen Fenstern anzeigen**  
- Deaktiviert alle Anpassungen von Objektstrukturansichten. Weitere Informationen zu Ansichts Anpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-managed-objects.md).  
+ Deaktiviert alle Anpassungen von Objektstrukturansichten. Weitere Informationen zum Anzeigen von Anpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-managed-objects.md).  
   
  **JIT-Optimierung beim Laden von Modulen unterdrücken (nur verwaltet)**  
  Deaktiviert die JIT-Optimierung von verwaltetem Code, wenn ein Modul geladen und JIT kompiliert wird, während der Debugger angefügt ist. Durch das Deaktivieren der Optimierung kann das Debuggen einiger Probleme vereinfacht werden, allerdings auf Kosten der Leistung. Die Verwendung von "Nur mein Code" bei unterdrückter JIT-Optimierung kann dazu führen, dass Nichtbenutzercode als Benutzercode (Nur eigenen Code) angezeigt wird.  
   
- **Warnen, wenn keine Symbole beim Starten (nur nativ)**  
+ **Warnung, wenn keine Symbole beim Starten gefunden werden (nur systemeigen)**  
  Zeigt eine Warnungsdialogfeld an, wenn Sie ein Programm debuggen, für das der Debugger keine Symbolinformationen hat.  
   
  **Warnung, wenn Skript Debugging beim Start deaktiviert ist**  
@@ -143,9 +143,9 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
   **Systemeigenen Kompatibilitätsmodus verwenden**  
   Wenn diese Option ausgewählt ist, wird der native Debugger von Visual Studio 2010 anstelle des neuen nativen Debuggers verwendet.  
   
-  Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des systemeigenen Kompatibilitätsmodus werden aber viele Features deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Beispielsweise fehlen in der Legacy-Engine viele Visualisierungen für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.  Verwenden Sie Visual Studio 2013-Projekte für die optimale debuggingdarstellung in diesen Fällen.  
+  Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des systemeigenen Kompatibilitätsmodus werden aber viele Features deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. In der Legacy-Engine sind z. B. viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten nicht verfügbar.  Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.  
   
-  **Verwenden der Legacy C# -und VB-Ausdrucks Auswertung**  
+  **Verwenden der älteren c#-und VB-Ausdrucks Auswertung**  
   Der Debugger verwendet anstelle der Visual Studio 2015 Roslyn-basierten Ausdrucksauswertungen die Visual Studio 2013 C#/VB-Ausdrucksauswertungen.  
   
   **Warnen, wenn benutzerdefinierte Debugger-Visualisierungen für potenziell unsichere Prozesse verwendet werden (nur verwaltet)**  
@@ -155,13 +155,13 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
   Aktiviert den Debugheap von Windows, um die Heapdiagnose zu verbessern. Das Aktivieren dieser Option wirkt sich auf die Debugleistung aus.  
   
   **UI-Debuggingtools für XAML aktivieren**  
-  Die Fenster „Visuelle Live-Struktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter über [Prüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md).  
+  Die Fenster „Visuelle Live-Struktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md).  
   
   **Vorschau der ausgewählten Elemente in der visuellen Live Struktur anzeigen**  
   Das XAML-Element, dessen Kontext ausgewählt ist, ist auch im Fenster **Visuelle Echtzeitstruktur** ausgewählt.  
   
   **Lauf Zeit Tools in Anwendung anzeigen**  
-  Zeigt die Befehle der **visuellen Live** Struktur in einer Symbolleiste im Hauptfenster der XAML-Anwendung an, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.  
+  Zeigt die Befehle der **visuellen Live** Struktur in einer Symbolleiste im Hauptfenster der XAML-Anwendung an, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.  
   
   **Diagnosetools während des Debuggens aktivieren**  
   Das Fenster **Diagnosetools** wird während des Debuggens angezeigt. Weitere Informationen finden Sie unter [debuggerintegrierte Profilerstellung](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
@@ -172,8 +172,8 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
   **"Bearbeiten und Fortfahren" aktivieren**  
   Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens verwenden.  
   
-  **System eigenes bearbeiten und Fortfahren aktivieren**  
-  Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens von systemeigenem C++-Code verwenden. Weitere Informationen finden Sie unter " [Bearbeiten und Fortfahren C++" (Visual)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Natives Bearbeiten und Fortfahren aktivieren**  
+  Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens von systemeigenem C++-Code verwenden. Weitere Informationen finden Sie unter " [Bearbeiten und Fortfahren" (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
   **Änderungen beim Fortfahren anwenden (nur nativ)**  
   Beim Fortsetzen eines unterbrochenen Prozesses kompiliert Visual Studio automatisch alle ausstehenden Codeänderungen und wendet sie an. Ist diese Option nicht aktiviert, können Sie Änderungen mit der Option „Codeänderungen übernehmen“ im Menü „Debuggen“ übernehmen.  
@@ -181,8 +181,8 @@ Auf der Seite Extras > Optionen > Debugging >**Allgemein** können Sie die folge
   **Warnung bei veraltetem Code (nur nativ)**  
   Ruft Warnungen über veralteten Code ab.  
   
-  **Vorkompilierung zulassen (nur nativ)**  
+  **Vorkompilierung zulassen (nur systemeigen)**  
   Vorkompilieren ist zulässig.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

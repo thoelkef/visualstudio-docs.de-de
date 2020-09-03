@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6c6ebe39cf0d32480aee1019aa5ea47496bd793
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548134"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
@@ -44,7 +44,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a>Ausführen von Tests im Test-Explorer
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer
  [Ausführen von Tests](#BKMK_Run_tests) **&#124;** [Ausführen von Tests nach jedem Build](#BKMK_Run_tests_after_every_build)
 
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
@@ -59,7 +59,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-### <a name="run-tests"></a><a name="BKMK_Run_tests"></a>Tests ausführen
+### <a name="run-tests"></a><a name="BKMK_Run_tests"></a> Tests ausführen
  Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
 
 - Wählen Sie zum Ausführen aller Tests in einer Projektmappe **Alle ausführen**aus.
@@ -74,23 +74,23 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
   ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a>Ausführen von Tests nach jedem Build
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a> Ausführen von Tests nach jedem Build
 
 > [!WARNING]
 > Das Ausführen von Komponententests nach jedem Buildvorgang wird in Visual Studio Enterprise unterstützt.
 
-|Image|BESCHREIBUNG|
+|Bild|BESCHREIBUNG|
 |-|-|
 |![Nach Build ausführen](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü auf **Test** und anschließend in der Symbolleiste Test-Explorer auf **Nach dem Buildvorgang Tests ausführen**.|
 
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a>Anzeigen von Testergebnissen
+## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a> Anzeigen von Testergebnissen
  [Anzeigen von Testdetails](#BKMK_View_test_details) **&#124;** [Anzeigen des Quellcodes einer Testmethode](#BKMK_View_the_source_code_of_a_test_method)
 
  Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests**angezeigt. Im Detailbereich unten im Test-Explorer wird eine Zusammenfassung des Testlaufs angezeigt.
 
-### <a name="view-test-details"></a><a name="BKMK_View_test_details"></a>Anzeigen von Testdetails
+### <a name="view-test-details"></a><a name="BKMK_View_test_details"></a> Anzeigen von Testdetails
  Zum Anzeigen der Details eines einzelnen Tests wählen Sie den jeweiligen Test aus.
 
  ![Details zur Testausführung](../test/media/ute-testdetails.png "UTE_TestDetails")
@@ -111,12 +111,12 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
   ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a>Anzeigen des Quellcodes einer Testmethode
+### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a> Anzeigen des Quellcodes einer Testmethode
  Um den Quellcode für eine Testmethode im Visual Studio-Editor anzuzeigen, wählen Sie den Test aus, und wählen Sie dann im Kontextmenü die Option **Test öffnen** (Tastatur: F12) aus.
 
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a>Gruppieren und Filtern der Testliste
+## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a> Gruppieren und Filtern der Testliste
  [Gruppieren der Testliste](#BKMK_Grouping_the_test_list) **&#124;** [Gruppieren nach Merkmalen](#BKMK_Group_by_traits) **&#124;** [Durchsuchen und Filtern der Testliste](#BKMK_Search_and_filter_the_test_list)
 
  Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In den meisten der im Test-Explorer ausführbaren Komponententest-Frameworks können Sie eigene Kategorien und Kategorie/Wert-Paare zum Gruppieren der Tests definieren. Sie können die Testliste auch durch das Vergleichen von Zeichenfolgen mit Testeigenschaften filtern.
@@ -128,7 +128,7 @@ Mithilfe des Test-Explorers können Sie Komponententests aus Visual Studio oder 
 
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
 
-|Gruppieren|BESCHREIBUNG|
+|Gruppieren|Beschreibung|
 |-----------|-----------------|
 |**Dauer**|Tests werden anhand der Ausführungszeit gruppiert: **Schnell**, **Mittel** und **Langsam**.|
 |**Ergebnis**|Tests werden anhand der Ausführungsergebnisse gruppiert: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
@@ -177,7 +177,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>C++-Merkmalsattributmakros
 
-|Makro|BESCHREIBUNG|
+|Makro|Beschreibung|
 |-----------|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Verwenden Sie zum Definieren eines Merkmals das TEST_METHOD_ATTRIBUTE-Makro.|
 |`TEST_OWNER(ownerAlias)`|Verwenden Sie das vordefinierte Merkmal "Besitzer", um einen Besitzer der Testmethode anzugeben.|
@@ -185,7 +185,7 @@ TEST_METHOD(Method1)
 
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a>Suchen und Filtern der Testliste
+### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a> Suchen und Filtern der Testliste
  Verwenden Sie Test-Explorer-Filter, um die Testmethoden einzuschränken, die in Ihren Projekten angezeigt und ausgeführt werden können.
 
  Wenn Sie im Suchfeld des Test-Explorers eine Zeichenfolge eingeben und die EINGABETASTE drücken, wird die Liste so gefiltert, dass nur Tests angezeigt werden, deren vollqualifizierter Name die Zeichenfolge aufweist.
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a>Erstellen benutzerdefinierter Wiedergabelisten
+## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a> Erstellen benutzerdefinierter Wiedergabelisten
  Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgeführt oder angezeigt werden sollen. Wenn Sie eine Wiedergabeliste auswählen, werden die Tests in der Liste im Test-Explorer angezeigt. Sie können einen Test zu mehr als einer Wiedergabeliste hinzufügen, und bei Auswahl der Standardwiedergabeliste **Alle Tests** sind alle Tests im Projekt verfügbar.
 
  ![Wiedergabeliste auswählen](../test/media/ute-playlist.png "UTE_Playlist")
@@ -244,7 +244,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a>Debuggen und Analysieren von Komponententests
+## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a> Debuggen und Analysieren von Komponententests
  [Debugging von Komponententests](#BKMK_Debug_unit_tests) **&#124;** [Diagnose von Leistungsproblemen bei Testmethoden](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analysieren der Codeabdeckung für Komponententests](#BKMK_Analyzeunit_test_code_coverage)
 
 ### <a name="debug-unit-tests"></a><a name="BKMK_Debug_unit_tests"></a> Debugging von Komponententests
@@ -261,10 +261,10 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a>Diagnose von Leistungsproblemen bei Testmethoden
+### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnose von Leistungsproblemen bei Testmethoden
  Um die Ursache zu ermitteln, weshalb die Ausführung einer Testmethode zu lange dauert, wählen Sie im Komponententest-Explorer die Methode und anschließend im Kontextmenü "Profil" aus. Weitere Informationen finden Sie unter [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md).
 
-### <a name="analyze-unit-test-code-coverage"></a><a name="BKMK_Analyzeunit_test_code_coverage"></a>Komponenten Test Code Coverage analysieren
+### <a name="analyze-unit-test-code-coverage"></a><a name="BKMK_Analyzeunit_test_code_coverage"></a> Komponenten Test Code Coverage analysieren
 
 > [!NOTE]
 > Die Codeabdeckung für Komponententest ist nur in Visual Studio Enterprise verfügbar.
@@ -287,9 +287,9 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![Zurück zum Anfang](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)
 
-## <a name="external-resources"></a><a name="BKMK_External_resources"></a>Externe Ressourcen
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> Externe Ressourcen
 
-### <a name="guidance"></a><a name="BKMK_Guidance"></a>Guidance
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> Guidance
  [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Weitere Informationen

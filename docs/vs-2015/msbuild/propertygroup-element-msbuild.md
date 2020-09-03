@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6590464b78d6b5452ce266d701aefc0f739185b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155950"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup-Element (MSBuild)
@@ -48,19 +48,19 @@ Enthält eine Reihe von benutzerdefinierten [Eigenschaft](../msbuild/property-el
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|BESCHREIBUNG|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
 |Bedingung|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|BESCHREIBUNG|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[Eigenschaft](../msbuild/property-element-msbuild.md)|Optionales Element.<br /><br /> Ein benutzerdefinierter Eigenschaftenname, der den Wert der Eigenschaft enthält. Es kann kein oder mehrere *Eigenschafts*-Elemente in einem `PropertyGroup`-Element geben.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|BESCHREIBUNG|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] -Projektdatei.|  
   
@@ -75,6 +75,6 @@ Enthält eine Reihe von benutzerdefinierten [Eigenschaft](../msbuild/property-el
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)  
+## <a name="see-also"></a>Weitere Informationen  
+ [Referenz zum Projektdatei Schema](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild-Eigenschaften](msbuild-properties1.md)

@@ -160,7 +160,7 @@ Jedes geladene VSPackage wird aufgezählt, um festzustellen, ob es Elemente enth
 
 Nur die SLN-Datei enthält Einträge in den `preSolution` `postSolution` Abschnitten und. Die SUO-Datei enthält keine ähnlichen Abschnitte, da diese Informationen für die Lösung erforderlich sind, um ordnungsgemäß geladen zu werden. Die SUO-Datei enthält benutzerspezifische Optionen, z. b. private Notizen, die nicht für die Freigabe oder Platzierung in der Quell Code Verwaltung vorgesehen sind.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [Datei mit Benutzeroptionen in Projektmappen (SUO)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

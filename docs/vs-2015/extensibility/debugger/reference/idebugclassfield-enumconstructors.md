@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumConstructors | Microsoft-Dokumentation
+title: 'Idebugclassfield:: enumkonstruktors | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd93f4867221f0b42f91fe1f96b8a8b464bf5aa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191038"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
@@ -42,21 +42,21 @@ int EnumConstructors(
   
 #### <a name="parameters"></a>Parameter  
  `cMatch`  
- [in] Ein Wert aus der [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) -Enumeration, der den Typ der Konstruktoren verwenden, um die Enumeration angibt.  
+ in Ein Wert aus der [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) Enumeration, der den Typ der aufzuzählungs Konstruktoren angibt.  
   
  `ppEnum`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der Konstruktoren darstellt. Gibt einen null-Wert zurück, wenn es keine Konstruktoren gibt.  
+ vorgenommen Gibt ein [ienumdebugfields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste der Konstruktoren darstellt. Gibt einen NULL-Wert zurück, wenn keine Konstruktoren vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn es keine Konstruktoren gibt. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben, oder es wird S_FALSE zurückgegeben, wenn keine Konstruktoren vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Jedes Element der Enumeration ist ein [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das eine Konstruktormethode beschreibt.  
+## <a name="remarks"></a>Bemerkungen  
+ Jedes Element der-Enumeration ist ein [idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) -Objekt, das eine Konstruktormethode beschreibt.  
   
- Die Liste der Konstruktoren umfasst in der Regel nicht die Standardkonstruktoren, die vom Compiler bereitgestellt.  
+ Die Liste der Konstruktoren schließt in der Regel nicht die Standardkonstruktoren ein, die von einem Compiler bereitgestellt werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md)   
+ [Ienumdebug-Felder](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+ [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)

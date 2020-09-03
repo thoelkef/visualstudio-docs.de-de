@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dd4560673259373b68b370e73a43de424fb7bdb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658474"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Problembehandlung bei Erweiterungen für Ebenendiagramme
@@ -24,11 +24,11 @@ ms.locfileid: "72658474"
 
 In diesem Thema werden einige Probleme behandelt, die möglicherweise beim Erstellen von Ebenenmodellerweiterungen auftreten.
 
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Wenn ich F5 zum Debuggen meiner Erweiterung drücke, werden meine Befehle, Gestenhandler, Validierungserweiterungen oder benutzerdefinierten Eigenschaften nicht in Ebenendiagrammen der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-vsprvs"></a>Wenn ich F5 zum Debuggen meiner Erweiterung drücke, werden meine Befehle, Gestenhandler, Validierungserweiterungen oder benutzerdefinierten Eigenschaften nicht in Ebenendiagrammen der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt
 
-1. Öffnen Sie die Erweiterungsprojekt Mappe in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], und klicken Sie im Menü **Erstellen** auf Projekt Mappe **neu erstellen**.
+1. Öffnen Sie die Erweiterungsprojekt Mappe in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , und klicken Sie im Menü **Erstellen** auf Projekt Mappe **neu erstellen**.
 
-2. Drücken Sie **F5** oder **STRG + F5** , um die experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu starten. Öffnen Sie ein Ebenendiagramm, und testen Sie die Erweiterung.
+2. Drücken Sie **F5** oder **STRG + F5** , um die experimentelle Instanz von zu starten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Öffnen Sie ein Ebenendiagramm, und testen Sie die Erweiterung.
 
    Fahren Sie ggf. mit der nächsten Prozedur fort.
 
@@ -39,13 +39,13 @@ In diesem Thema werden einige Probleme behandelt, die möglicherweise beim Erste
 2. Löschen Sie den folgenden Ordner:%localappdata%\microsoft\visualstudio \\ [Version] \componentmodelcache
 
    > [!NOTE]
-   > % LocalAppData% ist in der Regel *driveName*: \Users \\*username*\AppData\Local.
+   > % LocalAppData% ist in der Regel *driveName*: \Users \\ *username*\AppData\Local.
 
    Fahren Sie ggf. mit der nächsten Prozedur fort.
 
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Eine alte Version der Validierungsergebnisse wird angezeigt, oder die Validierungsmethode wird nicht aufgerufen.
 
-1. Klicken Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im Menü **Build** auf Projekt Mappe **Bereinigen**. Damit werden die zwischengespeicherten Ergebnisse der vorherigen Validierungsanalyse gelöscht.
+1. Klicken Sie in der experimentellen Instanz von im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Menü **Build** auf Projekt Mappe **Bereinigen**. Damit werden die zwischengespeicherten Ergebnisse der vorherigen Validierungsanalyse gelöscht.
 
 2. Stellen Sie sicher, dass die Ebenen im Modell Codeelementen zugeordnet sind, und dass es mindestens einen Abhängigkeitslink im Modell gibt. Die Validierung wird nicht aufgerufen, wenn es nichts zu überprüfen gibt.
 
@@ -53,5 +53,5 @@ In diesem Thema werden einige Probleme behandelt, die möglicherweise beim Erste
 
 4. Stellen Sie in der Datei **Source. Extension. vsixmanifest** im ebenenvalidierungsprojekt sicher, dass Sie unter **Inhalt**sowohl ein **MEF-Komponenten** Element als auch ein **benutzerdefiniertes Erweiterungs** Element hinzugefügt haben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md)

@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189603"
 ---
-# <a name="how-to-view-script-documents"></a>Vorgehensweise: Anzeigen von Skriptdokumenten
+# <a name="how-to-view-script-documents"></a>Gewusst wie: Anzeigen von Skriptdokumenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In früheren Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden clientseitige Skriptdateien, die durch Skripts auf Serverseite generiert wurden, im Fenster Skript-Explorer angezeigt. Da das Fenster Skript-Explorer häufig ausgeblendet war, war die Verfügbarkeit clientseitiger Skripts nicht immer direkt erkennbar.  
@@ -32,11 +32,11 @@ In früheren Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden c
   
  Clientseitige Skriptdateien sind nur sichtbar, wenn Sie sich im Debugmodus oder Unterbrechungsmodus befinden. Sie werden im Knoten **Skriptdokumente** angezeigt.  
   
- Serverseitige Skriptdateien sind immer sichtbar. Sie werden im Knoten **\<Website-Pfadname>** angezeigt. Der Name des Knotens sieht etwa wie in diesem Beispiel aus: `c:\...\Website2\`  
+ Serverseitige Skriptdateien sind immer sichtbar. Sie werden im- **\<Website Pathname>** Knoten angezeigt. Der Name des Knotens ähnelt dem folgenden Beispiel: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>So zeigen Sie ein serverseitiges Skriptdokument an  
   
-1. Öffnen Sie im **Projektmappen-Explorer** den Knoten **\<Website-Pfadname>** .  
+1. Öffnen Sie im **Projektmappen-Explorer** den Knoten **\<Website Pathname>** .  
   
 2. Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.  
   
@@ -50,5 +50,5 @@ In früheren Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden c
   
      Die clientseitige Skriptdatei wird in einem Quellcodefenster geöffnet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Microsoft Docs
+title: CANSTOP_REASON | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737684"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
-Wird verwendet, um zu bestimmen, ob ein Programm die Ausführung beenden kann, nachdem es einen bestimmten Punkt in der Ausführung erreicht hat.
+Wird verwendet, um zu bestimmen, ob ein Programm die Ausführung nach Erreichen eines bestimmten Punkts in der Ausführung abbrechen kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,18 +47,18 @@ public enum enum_CANSTOP_REASON {
 Gibt den Einstiegspunkt des angegebenen Programms an.
 
 `CANSTOP_STEPIN`\
-Gibt den Einstieg in eine Funktion an.
+Gibt den Schritt in einer Funktion an.
 
 ## <a name="remarks"></a>Bemerkungen
-Übergeben als Argument an die [GetReason-Methode,](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) um mit dem Session Debug Manager (SDM) zu bestätigen, ob es in Ordnung ist, nach Erreichen des Einstiegspunkts des Programms oder nach dem Eintreten in eine Funktion oder Methode zu stoppen.
+Wird als Argument an die [geverrat](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) -Methode übermittelt, um den Sitzungs-Debug-Manager (SDM) zu bestätigen, wenn es in Ordnung ist, nach Erreichen des Einstiegs Punkts des Programms oder nach dem Durchlaufen einer Funktion oder Methode zu beenden.
 
 ## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

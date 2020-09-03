@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5dd8818b57a1aa33b70254303150d8f00e36cc02
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255800"
 ---
 # <a name="access-a-form-region-at-run-time"></a>Zugreifen auf einen Formular Bereich zur Laufzeit
 
-|Betrifft|
+|Gilt für:|
 |----------------|
-|Die Informationen in diesem Thema gelten nur für die angegebenen Projekttypen und Versionen von Microsoft Office. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Projekttyp:**<br /><br /> -VSTO-Add-in-Projekte<br /><br /> **Microsoft Office-Version**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
+|Die Informationen in diesem Thema gelten nur für die angegebenen Projekttypen und Versionen von Microsoft Office. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Projekttyp**<br /><br /> -VSTO-Add-in-Projekte<br /><br /> **Microsoft Office-Version**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
 
- Verwenden Sie die `Globals` -Klasse, um überall im Outlook-Projekt auf Formularbereiche zuzugreifen. Weitere Informationen `Globals` zur-Klasse finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
+ Verwenden Sie die `Globals` -Klasse, um überall im Outlook-Projekt auf Formularbereiche zuzugreifen. Weitere Informationen zur- `Globals` Klasse finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -68,17 +68,17 @@ ms.locfileid: "71255800"
 
  Um den Zugriff auf ein Steuerelement von außerhalb der Formularbereich-Codedatei zu ermöglichen, erstellen Sie in der Formularbereich-Codedatei eine Eigenschaft, um dieses Steuerelement zurückzugeben.
 
- Weitere Informationen zum Erstellen von Eigenschaften in C#finden [Sie unter Gewusst wie: Deklarieren und Verwenden von Lese &#40;-&#35; /Schreibeigenschaften C-Programmier Handbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)
+ Weitere Informationen zum Erstellen von Eigenschaften in c# finden Sie unter Gewusst [wie: Deklarieren und Verwenden von Lese-/Schreibeigenschaften &#40;C&#35;-Programmier Handbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).
 
- Weitere Informationen zum Erstellen von Eigenschaften in Visual Basic finden [Sie unter Gewusst wie: Erstellen Sie eine Eigenschaft (Visual Basic](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)).
+ Weitere Informationen zum Erstellen von Eigenschaften in Visual Basic finden Sie unter Vorgehens [Weise: Erstellen einer Eigenschaft (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).
 
 ## <a name="see-also"></a>Siehe auch
 - [Richtlinien zum Erstellen von Outlook-Formular Bereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Vorgehensweise: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Gewusst wie: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Benutzerdefinierte Aktionen in Outlook-Formular Bereichen](../vsto/custom-actions-in-outlook-form-regions.md)
 - [Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formular Bereichs](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Vorgehensweise: Verhindern, dass Outlook einen Formular Bereich anzeigt](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Gewusst wie: verhindern der Anzeige eines Formular Bereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)

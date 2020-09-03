@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE | Microsoft Docs
+title: CONTEXT_COMPARE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737604"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
-Gibt die Kriterien für den Vergleich von zwei Speicherkontexten an.
+Gibt die Kriterien für den Vergleich von zwei Speicher Kontexten an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,44 +58,44 @@ public enum enum_CONTEXT_COMPARE {
 
 ## <a name="fields"></a>Felder
 `CONTEXT_EQUAL`\
-Suchen Sie den ersten Speicherkontext in der Liste, der dem Zielspeicherkontext entspricht.
+Suchen Sie den ersten Speicher Kontext in der Liste, der gleich dem Zielspeicher Kontext ist.
 
 `CONTEXT_LESS_THAN`\
-Suchen Sie den ersten Speicherkontext in der Liste, der kleiner als der Zielspeicherkontext ist.
+Suchen Sie den ersten Speicher Kontext in der Liste, der kleiner ist als der Zielspeicher Kontext.
 
 `CONTEXT_GREATER_THAN`\
-Suchen Sie den ersten Speicherkontext in der Liste, der größer als der Zielspeicherkontext ist.
+Suchen Sie den ersten Speicher Kontext in der Liste, der größer ist als der Zielspeicher Kontext.
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-Suchen Sie den ersten Speicherkontext in der Liste, der kleiner oder gleich dem Zielspeicherkontext ist.
+Suchen Sie den ersten Speicher Kontext in der Liste, der kleiner oder gleich dem Zielspeicher Kontext ist.
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
-Suchen Sie den ersten Speicherkontext in der Liste, der größer oder gleich dem Zielspeicherkontext ist.
+Suchen Sie den ersten Speicher Kontext in der Liste, der größer oder gleich dem Zielspeicher Kontext ist.
 
 `CONTEXT_SAME_SCOPE`\
-Suchen Sie den ersten Speicherkontext in der Liste, der sich im gleichen Bereich wie der Zielspeicherkontext befindet.
+Suchen Sie den ersten Speicher Kontext in der Liste, der sich im gleichen Bereich wie der Zielspeicher Kontext befindet.
 
 `CONTEXT_SAME_FUNCTION`\
-Suchen Sie den ersten Speicherkontext in der Liste, der sich in derselben Funktion wie der Zielspeicherbereich befindet.
+Suchen Sie den ersten Speicher Kontext in der Liste, der sich in derselben Funktion wie der Zielspeicher Bereich befindet.
 
 `CONTEXT_SAME_MODULE`\
-Suchen Sie den ersten Speicherkontext in der Liste, der sich im selben Modul wie der Zielspeicherkontext befindet.
+Suchen Sie den ersten Speicher Kontext in der Liste, der sich im selben Modul wie der Zielspeicher Kontext befindet.
 
 `CONTEXT_SAME_PROCESS`\
-Suchen Sie den ersten Speicherkontext in der Liste, der sich im gleichen Prozess wie der Zielspeicherkontext befindet.
+Suchen Sie den ersten Speicher Kontext in der Liste, der sich im gleichen Prozess wie der Zielspeicher Kontext befindet.
 
 ## <a name="remarks"></a>Bemerkungen
-Übergeben als Argument [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) an die Compare-Methode.
+Als Argument an die [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) -Methode übergebenen.
 
-Diese Werte werden verwendet, um den ersten Speicherkontext in einer Liste zu finden, die die angegebenen Vergleichskriterien erfüllt. Einem Speicherkontext wird eine Liste von Speicherkontexten `IDebugMemoryContext2::Compare` gegeben, mit denen er sich durch die Methode vergleichen kann. Der erste Speicherkontext in der Liste, `true` für den der Vergleichsoperator angezeigt wird, wird zurückgegeben.
+Diese Werte werden verwendet, um den ersten Speicher Kontext in einer Liste zu suchen, die die angegebenen Vergleichskriterien erfüllt. Einem Speicher Kontext wird eine Liste der Speicher Kontexte zugewiesen, mit denen sich die Methode über die-Methode vergleichen kann `IDebugMemoryContext2::Compare` . Der erste Speicher Kontext in der Liste, für den der Vergleichs Operator ist, `true` wird zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

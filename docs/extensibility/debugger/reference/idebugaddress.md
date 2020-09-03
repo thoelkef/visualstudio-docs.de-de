@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress | Microsoft Docs
+title: Idebugaddress | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1f281ceb1f305c5774fedbf725f2e6a9481d073d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736595"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
-Diese Schnittstelle stellt die Adresse eines Elements dar. Sie wird vom Symbolhandler zurückgegeben.
+Diese Schnittstelle stellt die Adresse eines Elements dar. Sie wird vom Symbol Handler zurückgegeben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,25 +29,25 @@ IDebugAddress : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein Symbolanbieter implementiert diese Schnittstelle, um eine Adresse eines Objekts darzustellen.
+ Ein Symbol Anbieter implementiert diese Schnittstelle, um eine Adresse eines Objekts darzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Viele Methoden auf vielen Schnittstellen geben diese Schnittstelle zurück.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Viele Methoden für viele Schnittstellen geben diese Schnittstelle zurück.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Diese Schnittstelle implementiert die folgende Methode:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Ruft eine [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur ab, die ein Objekt und dessen Speicherort beschreibt.|
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Ruft eine [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) -Struktur ab, die ein-Objekt und seinen Speicherort beschreibt.|
 
 ## <a name="remarks"></a>Bemerkungen
- Der Symbolanbieter gibt diese Schnittstelle zurück, um ein Objekt und seine Position innerhalb eines bestimmten Bereichs (z. B. Funktion, Methode oder Klasse) darzustellen. Diese Schnittstelle wird von verschiedenen Methoden des Symbolanbieters und Ausdrucksevaluators zurückgegeben und an diese übergeben. Normalerweise ist der Symbolanbieter die einzige Entität, die den Inhalt dieser Schnittstelle interpretieren muss.
+ Der Symbol Anbieter gibt diese Schnittstelle zurück, um ein Objekt und seinen Speicherort innerhalb eines bestimmten Bereichs (z. b. Funktion, Methode oder Klasse) darzustellen. Diese Schnittstelle wird von zurückgegeben und an verschiedene Methoden des Symbol Anbieters und der Ausdrucks Auswertung übermittelt. Normalerweise ist der Symbol Anbieter die einzige Entität, die den Inhalt dieser Schnittstelle interpretieren muss.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+ Header: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

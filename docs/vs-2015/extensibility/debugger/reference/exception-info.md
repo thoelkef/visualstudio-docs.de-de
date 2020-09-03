@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 66af4d95707be99865df3df32751215cf5eb10b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181173"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
+# <a name="exception_info"></a>EXCEPTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Beschreibt eine Ausnahme oder ein Laufzeitfehler ausgegeben, die von der zu debuggende Programm wird ausgelöst.  
+Beschreibt eine Ausnahme oder einen Laufzeitfehler, der von dem Programm ausgelöst wird, das deentschlgt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -49,38 +49,38 @@ public struct EXCEPTION_INFO { 
 ```  
   
 ## <a name="members"></a>Member  
- pProgram  
- Die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm darstellt, in dem die Ausnahme aufgetreten ist.  
+ Pprogram  
+ Das [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das das Programm darstellt, in dem die Ausnahme aufgetreten ist.  
   
- bstrProgramName  
- Der Name des Programms in der die Ausnahme aufgetreten ist.  
+ bstrauprogramname  
+ Der Name des Programms, in dem die Ausnahme aufgetreten ist.  
   
- bstrExceptionName  
+ bstrexceptionname  
  Der Name der Ausnahme.  
   
- dwCode  
- Die ID-Code für die Ausnahme oder ein Laufzeit-Fehler.  
+ dwcode  
+ Der Identifikationscode für die Ausnahme oder den Laufzeitfehler.  
   
- dwState-Datenmember  
+ dwstate  
  Ein Wert aus der [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) Enumeration, die den Zustand der Ausnahme definiert.  
   
- guidType  
- Die GUID für die Sprache, entweder `guidLang` oder `guidEng`.  
+ guidtype  
+ Der GUID-Sprachen Bezeichner, entweder `guidLang` oder `guidEng` .  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird als Parameter an übergeben die [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) und [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) Methoden. Diese Struktur wird ebenfalls übergeben, um die [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) Methode gefüllt werden soll.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird als Parameter an die Methoden " [abtexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) " und " [removesetexception](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) " übergeben. Diese Struktur wird auch an die [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) -Methode übergeben, die ausgefüllt werden soll.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
- [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)   
+ ["Abtexception"](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
+ [Removesetexception](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)   
  [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)

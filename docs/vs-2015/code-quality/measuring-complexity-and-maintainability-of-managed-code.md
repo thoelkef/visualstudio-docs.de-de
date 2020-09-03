@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658074"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Messen von Komplexität und Verwaltbarkeit verwalteten Codes
@@ -31,9 +31,9 @@ ms.locfileid: "72658074"
 
 Die höhere Komplexität moderner Softwareanwendungen erhöht außerdem die Schwierigkeit, den Code zuverlässig und verwaltierbar zu gestalten. In den letzten Jahren wurden viele Software Measures entwickelt, die als Codemetriken bezeichnet werden und Entwicklern dabei helfen können, zu verstehen, wo Ihr Code eine neuarbeit oder eine größere Anzahl von Tests benötigt.
 
- Entwickler können [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] zum Generieren von Codemetrikdaten verwenden, die die Komplexität und Verwaltbarkeit Ihres verwalteten Codes messen. Codemetrikdaten können für eine gesamte Projekt Mappe oder für ein einzelnes Projekt generiert werden.
+ Entwickler können verwenden [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] , um Codemetrikdaten zu generieren, die die Komplexität und Verwaltbarkeit Ihres verwalteten Codes messen. Codemetrikdaten können für eine gesamte Projekt Mappe oder für ein einzelnes Projekt generiert werden.
 
- In diesem Abschnitt wird beschrieben, wie Codemetriken in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert und verwendet werden.
+ In diesem Abschnitt wird beschrieben, wie Codemetriken in generiert und verwendet werden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Codemetrikwerte](../code-quality/code-metrics-values.md)
@@ -48,5 +48,5 @@ Die höhere Komplexität moderner Softwareanwendungen erhöht außerdem die Schw
 
  [Gewusst wie: Erstellen einer Arbeitsaufgabe basierend auf einem Ergebnis](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Problembehandlung bei Code Metriken](../code-quality/troubleshooting-code-metrics-issues.md) beim [Ausführen allgemeiner Entwicklungsaufgaben](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

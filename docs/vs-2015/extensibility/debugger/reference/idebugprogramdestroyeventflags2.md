@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 86f7e211c742e4d95f3459d058139854874e7d85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182215"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ermöglicht es eine Debug-Engine, um das Standardverhalten überschreiben die [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche, wenn Sie eine Debugsitzung zu beenden.  
+Ermöglicht es einer Debug-Engine, das Standardverhalten der Benutzeroberfläche zu überschreiben, [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Wenn Sie eine Debugsitzung beenden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -29,21 +29,21 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle wird von Debug-Engines implementiert. Es ist nützlich für Hosts, die möglicherweise zu erstellen und Zerstören von mehreren Programmen während der Lebensdauer eines Prozesses.  
+ Diese Schnittstelle wird von Debug-engines implementiert. Dies ist nützlich für Hosts, die möglicherweise mehrere Programme während der Lebensdauer eines Prozesses erstellen und zerstören.  
   
 ## <a name="methods"></a>Methoden  
- Die folgende Tabelle zeigt die Methoden der `IDebugProgramDestroyEventFlags2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProgramDestroyEventFlags2` .  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Ruft ab, die Anwendung Zerstören von Flags.|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Ruft die Flags für die Programm Zerstörung ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Das Standardverhalten der [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche ist in den Entwurfsmodus zurückkehren, nachdem alle Programme, ein Programm gesendet haben Ereignis zerstört. Diese Schnittstelle ermöglicht eine Debug-Engine, um dieses Verhalten zu ändern.  
+## <a name="remarks"></a>Bemerkungen  
+ Das Standardverhalten der [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche besteht darin, zurück in den Entwurfs Modus zu wechseln, nachdem alle Programme ein Programm zerstörungsereignis gesendet haben. Diese Schnittstelle ermöglicht es einer Debug-Engine, dieses Verhalten zu ändern.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

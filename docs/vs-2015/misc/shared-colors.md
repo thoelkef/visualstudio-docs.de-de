@@ -8,10 +8,10 @@ ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
 ms.openlocfilehash: 76c04680b63eb362e02fdf26d817660d671b3b52
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548355"
 ---
 # <a name="shared-colors"></a>Konsistente Farben
@@ -35,7 +35,7 @@ Fügen Sie hier den Text der Einführung ein.
   
 ### <a name="command-structures"></a>Befehlsstrukturen  
   
-#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Kreiert  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Kreiert  
  Menüs können an mehreren Stellen in Visual Studio 2013 vorkommen: in der Hauptmenüleiste, eingebettet in Dokument- oder Toolfenster oder beim Rechtsklicken an verschiedenen Stellen der IDE. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.  
   
  ![Menü (rote Linie)](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
@@ -121,8 +121,8 @@ Nicht empfohlen...
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Symbolkanal-Hintergrund|`Environment.CommandBarMenuIconBackground`|  
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Trennzeichen|`Environment.CommandBarMenuSeparator`|  
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Shadow|`Environment.DropShadowBackground`|  
-|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Über**|Häkchen|`Environment.CommandBarCheckBox`|  
-|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Über**|Häkchenhintergrund|`Environment.CommandBarSelectedIcon`|  
+|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Überprüft**|Häkchen|`Environment.CommandBarCheckBox`|  
+|![Menü, aktiviert](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Überprüft**|Häkchenhintergrund|`Environment.CommandBarSelectedIcon`|  
 |![Menü, ausgewählt](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Ausgewählt**|Symbolhintergrund|`Environment.CommandBarSelected`|  
 |![Menü, ausgewählt](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Ausgewählt**|Symbolrahmen|`Environment.CommandBarSelectedBorder`|  
   
@@ -133,8 +133,8 @@ Nicht empfohlen...
 |![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menü Element**|Hintergrund|`Environment.CommandBarMenuItemMouseOver`|  
 |![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menü Element**|Vordergrund (Text)|`Environment.CommandBarMenuItemMouseOver`|  
 |![Menü, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menü Element**|Vordergrund (Untermenü-Glyphe)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
-|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Über**|Häkchen|`Environment.CommandBarCheckBoxMouseOver`|  
-|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Über**|Häkchenhintergrund|`Environment.CommandBarHoverOverSelectedIcon`|  
+|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Überprüft**|Häkchen|`Environment.CommandBarCheckBoxMouseOver`|  
+|![Menü, wenn darauf gezeigt wird (aktiviert)](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Überprüft**|Häkchenhintergrund|`Environment.CommandBarHoverOverSelectedIcon`|  
 |![Menü, wenn darauf gezeigt wird (ausgewählt)](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Ausgewählt**|Symbolhintergrund|`Environment.CommandBarHoverOverSelected`|  
 |![Menü, wenn darauf gezeigt wird (ausgewählt)](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Ausgewählt**|Symbolrahmen|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
@@ -144,8 +144,8 @@ Nicht empfohlen...
 |---------------|-------------|--------------------------------|  
 |![Menü, deaktiviert](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menüelement|Vordergrund (Text)|`Environment.CommandBarTextInactive`|  
 |![Menü, deaktiviert](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menüelement|Vordergrund (Untermenü-Glyphe)|`Environment.CommandBarMenuSubmenuGlyph`|  
-|![Menü, deaktiviert (geprüft)](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Aktiviert|Häkchen|`Environment.CommandBarCheckBoxDisabled`|  
-|![Menü, deaktiviert (geprüft)](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Aktiviert|Häkchenhintergrund|`Environment.CommandBarSelectedIconDisabled`|  
+|![Menü, deaktiviert (geprüft)](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Überprüft|Häkchen|`Environment.CommandBarCheckBoxDisabled`|  
+|![Menü, deaktiviert (geprüft)](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Überprüft|Häkchenhintergrund|`Environment.CommandBarSelectedIconDisabled`|  
   
 #### <a name="command-bar"></a>Befehlsleiste  
  Die Befehlsleiste kann an mehreren Stellen in der Visual Studio-IDE vorkommen, vor allem in der Befehlsablage und eingebettet in Tool- oder Dokumentfenster.  
@@ -237,7 +237,7 @@ Nicht empfohlen...
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Vordergrund (Text)|`Environment.CommandBarTextInactive`|  
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Rahmen|–|  
   
-##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>Kombinations Feld  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> Kombinations Feld  
   
 > [!IMPORTANT]
 > Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown keinen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)beschriebenen Farbtoken.  
@@ -315,7 +315,7 @@ Nicht empfohlen...
 |![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "deaktiviert"](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Hintergrund|Keine|  
 |![Kombinations Feld&#47;Dropdown&#45;Schaltfläche "deaktiviert"](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdownschaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>Dropdown  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> Dropdown  
   
 > [!IMPORTANT]
 > Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)beschriebenen Farbtoken.  
@@ -1117,7 +1117,7 @@ Nicht empfohlen...
 |![Bildlaufleiste (Pfeil), aufgerufen](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleiste (Pfeil), aufgerufen](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>Strukturansicht  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a> Strukturansicht  
  Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und Klassenansicht, implementieren ein hierarchisches Organisationsschema, dessen Farben über Farbnamen in der TreeView-Kategorie gesteuert werden. Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.  
   
  ![Strukturansicht (rote Linie)](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
@@ -1385,7 +1385,7 @@ Nicht empfohlen...
 ##### <a name="column-headers"></a>Spaltenüberschriften  
  Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionalen Glyphe zusammen, die normalerweise verwendet wird, wenn ein Raster nach dieser Spalte sortiert wird.  
   
-|Status|Element|Tokenname: Category.color|  
+|State|Element|Tokenname: Category.color|  
 |-----------|-------------|--------------------------------|  
 |Standard|Hintergrund|`Header.Default`|  
 |Standard|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -1403,7 +1403,7 @@ Nicht empfohlen...
 ##### <a name="list-view-items"></a>Listenansichtselemente  
  Listenansichtselemente bestehen aus einem Hintergrund und dem Inhalt. Der Inhalt kann Text, ein Symbol oder beides sein.  
   
-|Status|Element|Tokenname: Category.color|  
+|State|Element|Tokenname: Category.color|  
 |-----------|-------------|--------------------------------|  
 |Standard|Hintergrund|Transparent|  
 |Standard|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -1430,7 +1430,7 @@ Nicht empfohlen...
 
 - für Benutzeroberflächenelemente, die nicht wie der Manifest-Designer aufgebaut sind  
   
-|Status|Komponente|Element|Tokenname: Category.color|  
+|State|Komponente|Element|Tokenname: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Standard (ausgewählt)|Registerkarte|Hintergrund|`ManifestDesigner.TabActive`|  
 |Standard (ausgewählt)|Registerkarte|Rahmen|Keine|  
@@ -1574,8 +1574,8 @@ Empfohlen...
   
 |Komponente|Element|Tokenname: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Toolbox, übergeordneter Knoten](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Übergeordneter Knoten**|Hintergrund|`Environment.ToolboxContent`<br /><br /> Kopfzeilen<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind.|  
-|![Toolbox, untergeordneter Knoten](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Untergeordneter Knoten**|Hintergrund|`Environment.ToolboxContent`<br /><br /> Kopfzeilen<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind.|  
+|![Toolbox, übergeordneter Knoten](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Übergeordneter Knoten**|Hintergrund|`Environment.ToolboxContent`<br /><br /> Überschriften<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind.|  
+|![Toolbox, untergeordneter Knoten](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Untergeordneter Knoten**|Hintergrund|`Environment.ToolboxContent`<br /><br /> Überschriften<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind.|  
 |![Toolbox, übergeordneter Knoten](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Übergeordneter Knoten**|Rahmen|Keine|  
 |![Toolbox, untergeordneter Knoten](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Untergeordneter Knoten**|Rahmen|Keine|  
 |![Toolbox, übergeordneter Knoten](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Übergeordneter Knoten**|Vordergrund (Glyphe)|`Environment.ToolboxContent`|  
@@ -1614,7 +1614,7 @@ Empfohlen...
   
 ## <a name="color-value-reference"></a>Farbwertverweis  
   
-|Komponente|Teil|Element|Status|Hell|Dunkel|Blue|Hoher Kontrast|
+|Komponente|Teil|Element|State|Hell|Dunkel|Blau|Hoher Kontrast|
 |---------|----|-------|-----|-----|----|----|----|  
 |Trennlinien|||Standard|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
 |Expander-Glyphe||Vordergrund|Standard|||||  

@@ -56,6 +56,6 @@ Die Umgebung verarbeitet die Befehle "Speichern", "Speichern unter" und "Alle sp
 
 2. Wenden <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> Sie die ( `pszMkDocumentNew` ,)- `punkWindowFrame` Methode an, um das Dokument in die neue Hierarchie zu übertragen. Diese Methode wird von der Hierarchie aufgerufen, die den Befehl Speichern unter ausführt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)

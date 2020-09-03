@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1e3f4df9a7a885245e40f7e9fec1b0da207ada39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662295"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Optionen, Text-Editor, C#, IntelliSense
@@ -37,11 +37,11 @@ Verwenden Sie die Eigenschaftenseite von **IntelliSense**, um Einstellungen zu �
  Die Eigenschaftenseite von **IntelliSense** enthält folgende Eigenschaften:
 
 ## <a name="completion-lists"></a>Vervollständigungslisten
- **Vervollständigungsliste anzeigen, nachdem ein Zeichen eingegeben** wurde Wenn diese Option ausgewählt ist, zeigt IntelliSense automatisch die Vervollständigungsliste an, wenn Sie mit der Eingabe beginnen. Wenn diese Option nicht aktiviert ist, ist die IntelliSense-Vervollständigung trotzdem über das Menü **IntelliSense** oder durch Drücken von STR+LEERTASTE verfügbar.
+ **Vervollständigungsliste anzeigen, nachdem ein Zeichen eingegeben** wurde Wenn diese Option ausgewählt ist, zeigt IntelliSense automatisch die Vervollständigungsliste an, wenn Sie mit der Eingabe beginnen. Wenn diese Option nicht ausgewählt ist, ist die IntelliSense-Vervollständigung weiterhin über das Menü **IntelliSense** oder durch Drücken von STRG + LEERTASTE verfügbar.
 
- **Schlüsselwörter in Vervollständigungs Listen platzieren** Wenn diese Option ausgewählt ist, fügt IntelliSense C# Schlüsselwörter (z. b. [Klasse](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690)) der Vervollständigungsliste hinzu.
+ **Schlüsselwörter in Vervollständigungs Listen platzieren** Wenn diese Option ausgewählt ist, fügt IntelliSense c#-Schlüsselwörter (z. b. [Klasse](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690)) der Vervollständigungsliste hinzu.
 
- **Code Ausschnitte in Vervollständigungs Listen platzieren** Wenn diese Option ausgewählt ist, fügt IntelliSense Aliase für C# Code Ausschnitte zur Vervollständigungsliste hinzu. Im Fall, dass das Codausschnitt-Alias mit dem Schlüsselwort, z.B. [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) übereinstimmt, wird das Schlüsselwort durch die Verknüpfung ersetzt. Weitere Informationen finden Sie unter [Visual C#-Codeausschnitte](../../ide/visual-csharp-code-snippets.md).
+ **Code Ausschnitte in Vervollständigungs Listen platzieren** Wenn diese Option ausgewählt ist, fügt IntelliSense Aliase für c#-Code Ausschnitte zur Vervollständigungsliste hinzu. Im Fall, dass das Codausschnitt-Alias mit dem Schlüsselwort, z.B. [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) übereinstimmt, wird das Schlüsselwort durch die Verknüpfung ersetzt. Weitere Informationen finden Sie unter [Visual C#-Codeausschnitte](../../ide/visual-csharp-code-snippets.md).
 
 ## <a name="selection-in-completion-lists"></a>Auswahl in Vervollständigungslisten
  Commit **durch Eingabe der folgenden Zeichen:** Gibt alle Zeichen an, die die automatische Vervollständigung von IntelliSense für das ausgewählte Element in der Vervollständigungsliste ausführen, nachdem Sie eingegeben wurden.
@@ -63,5 +63,5 @@ Verwenden Sie die Eigenschaftenseite von **IntelliSense**, um Einstellungen zu �
 ## <a name="intellisense-member-selection"></a>IntelliSense-Memberauswahl
  **Zuletzt verwendetes Element vorab auswählen** Wenn diese Option ausgewählt ist, wählt IntelliSense die Elemente, die Sie vor kurzem im Feld Member der Popup Liste ausgewählt haben, für die automatische Vervollständigung des Objekt namens während der aktuellen Sitzung in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) aus. Der Verlauf der zuletzt verwendeten Member wird nach jeder Sitzung in der Entwicklungsumgebung (IDE) gelöscht. Weitere Informationen finden Sie unter [IntelliSense für die zuletzt verwendeten Member](../../misc/intellisense-for-most-recently-used-members.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Allgemein, Umgebung, Dialog Feld "Optionen](../../ide/reference/general-environment-options-dialog-box.md) " [XML-Dokumentations Kommentare](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199) [mit IntelliSense](../../ide/using-intellisense.md)

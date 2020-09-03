@@ -32,7 +32,7 @@ In den folgenden Beispielen werden Komponententests für Generics veranschaulich
 
 - [Verwenden einer Typeinschränkung](#TypeConstraintNotSatisfied) In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet. Die Typeinschränkung wird in diesem Beispiel nicht erfüllt.
 
-### <a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
 Im Testcode in diesem Abschnitt wird eine Code-unter-Test-Methode mit dem Namen `SizeOfLinkedList()` getestet. Diese Methode gibt eine ganze Zahl zurück, die die Anzahl der Knoten in der verknüpften Liste angibt.
 
 Das erste Codebeispiel im Abschnitt „Generierter Testcode“ enthält den unbearbeiteten Testcode, wie er von Visual Studio Enterprise generiert wurde. Das zweite Beispiel im Abschnitt „Bearbeiteter Testcode“ veranschaulicht, wie Sie die Funktionsweise der SizeOfLinkedList-Methode für zwei verschiedene Datentypen, `int` und `char`, testen können.
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 > Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-### <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
 In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet, die nicht erfüllt wird. Der erste Abschnitt enthält Code aus dem Code-unter-Test-Projekt. Die Typeinschränkung ist hervorgehoben.
 
 Der zweite Abschnitt enthält Code aus dem Testprojekt.

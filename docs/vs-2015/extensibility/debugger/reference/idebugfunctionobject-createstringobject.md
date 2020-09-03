@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject | Microsoft-Dokumentation
+title: 'Idebugfunctionobject:: kreatestringobject | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05f8e77bd019b1bed04ec3a08cda5bbcfefa30ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179437"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt ein String-Objekt.  
+Erstellt ein Zeichen folgen Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,16 +42,16 @@ int CreateStringObject(
   
 #### <a name="parameters"></a>Parameter  
  `pcstrString`  
- [in] Der Zeichenfolgenwert für den String-Objekt.  
+ in Der Zeichen folgen Wert für das Zeichen folgen Objekt.  
   
  `ppObject`  
- [out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, das neu erstellte String-Objekt darstellt.  
+ vorgenommen Gibt ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zurück, das das neu erstellte Zeichen folgen Objekt darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Rufen Sie diese Methode zum Erstellen eines Objekts, das eine Zeichenfolge, die einen Parameter an die Funktion der darstellt durch dargestellt wird, wird die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) Schnittstelle.  
+## <a name="remarks"></a>Bemerkungen  
+ Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das eine Zeichenfolge darstellt, die ein Parameter für die Funktion ist, die durch die [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Schnittstelle dargestellt wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

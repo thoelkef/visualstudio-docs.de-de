@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY | Microsoft Docs
+title: GUID_ARRAY | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736645"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
-Beschreibt ein Array eindeutiger Bezeichner für verfügbare Debugmodule.
+Beschreibt ein Array eindeutiger Bezeichner für verfügbare Debug-engines.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,15 +46,15 @@ public struct GUID_ARRAY
 Anzahl der eindeutigen Bezeichner im Array.
 
 `Members`\
-Array, das eindeutige Bezeichner enthält.
+Ein Array, das eindeutige Bezeichner enthält.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur wird von der [GetEngineFilter-Methode](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) zurückgegeben.
+Diese Struktur wird von der [getenginefilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: Msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::GetProgramNode | Microsoft Docs
+title: 'IDebugProgramEx2:: getprogramnode | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 13fea906a0234186050fc51a8f23c903778fb055
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722347"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
-Ruft den Programmknoten ab, der einem Programm zugeordnet ist.
+Ruft den einem Programm zugeordneten Programmknoten ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetProgramNode( 
 
 ## <a name="parameters"></a>Parameter
 `ppProgramNode`\
-[out] Gibt ein [IDebugProgramNode2-Objekt](../../../extensibility/debugger/reference/idebugprogramnode2.md) zurück, das den programmverknüpften Knoten darstellt, der diesem Programm zugeordnet ist.
+vorgenommen Gibt ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt zurück, das den diesem Programm zugeordneten Programmknoten darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

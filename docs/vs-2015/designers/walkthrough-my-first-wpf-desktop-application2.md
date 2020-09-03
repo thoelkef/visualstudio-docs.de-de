@@ -10,35 +10,35 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e800fe651d32435351b2338b4da2f9c55158b3a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663996"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine Einführung in die Windows Presentation Foundation Entwicklung (WPF). Sie erstellen eine Basisanwendung mit Elementen, die für die meisten WPF-Desktopanwendung verwendet werden: XAML-Markup, CodeBehind, Anwendungsdefinitionen, Steuerelemente, Layout, Datenbindung und Stile.
+ein Name = "Introduction" >diese exemplarische Vorgehensweise </a> bietet eine Einführung in die Windows Presentation Foundation Entwicklung (WPF). Sie erstellen eine Basisanwendung mit Elementen, die für die meisten WPF-Desktopanwendung verwendet werden: XAML-Markup, CodeBehind, Anwendungsdefinitionen, Steuerelemente, Layout, Datenbindung und Stile.
 
-## <a name="Create_The_Application_Code_Files"></a> Erstellen des Anwendungsprojekts
+## <a name="creating-the-application-project"></a><a name="Create_The_Application_Code_Files"></a> Erstellen des Anwendungs Projekts
  In diesem Abschnitt erstellen Sie die Anwendungsstruktur, die das Projekt und ein Hauptfenster oder -formular enthält.
 
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt
 
-1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** , und wählen Sie den Knoten **Windows** aus. Erweitern Sie dann den Knoten **Windows** , und wählen Sie den Knoten **Klassischer Desktop** aus.
 
 3. Wählen Sie in der Vorlagenliste die Vorlage **WPF-Anwendung** aus.
 
-4. Erweitern Sie im Dialogfeld **Name**  `ExpenseIt`ein, und wählen Sie dann die Schaltfläche **OK** aus.
+4. Erweitern Sie im Dialogfeld **Name**`ExpenseIt`ein, und wählen Sie dann die Schaltfläche **OK** aus.
 
      Das Projekt wird erstellt, und die Projektdateien werden dem **Projektmappen-Explorer**hinzugefügt. Zudem wird der Designer für das Standardanwendungsfenster namens **MainWindow.xaml** angezeigt.
 
 #### <a name="to-modify-the-main-window"></a>So ändern Sie das Hauptfenster
 
-1. Wählen Sie im Designer die Registerkarte **MainWindow.xaml** aus, falls sie noch nicht die aktive Designerregisterkarte ist.
+1. Wählen Sie im Designer die Registerkarte **MainWindow. XAML** aus, wenn Sie noch nicht die aktive Designer Registerkarte ist.
 
 2. Wenn Sie C# verwenden, suchen Sie die Zeile `<Window x:Class="ExpenseIt.MainWindow"` , und ersetzen Sie sie durch `<NavigationWindow x:Class="ExpenseIt.MainWindow"`.
 
@@ -99,7 +99,7 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
      Dadurch wird die `MainWindow` -Klasse so geändert, dass sie von `NavigationWindow`abgeleitet wird. In Visual Basic geschieht dies automatisch, wenn Sie das Fenster in XAML ändern. Daher sind keine Codeänderungen erforderlich.
 
-## <a name="add_files_to_the_application"></a> Hinzufügen von Dateien zur Anwendung
+## <a name="adding-files-to-the-application"></a><a name="add_files_to_the_application"></a> Hinzufügen von Dateien zur Anwendung
  In diesem Abschnitt fügen Sie der Anwendung zwei Seiten und ein Bild hinzu.
 
 #### <a name="to-add-a-home-screen"></a>So fügen Sie einen Startbildschirm hinzu
@@ -110,9 +110,9 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
      Diese Seite ist das erste Fenster, das beim Anwendungsstart angezeigt wird:
 
-3. Wählen Sie im Designer die Registerkarte **ExpenseItHome.xaml** aus, falls sie noch nicht die aktive Designerregisterkarte ist.
+3. Wählen Sie im Designer die Registerkarte **expenseithome. XAML** aus, wenn Sie noch nicht die aktive Designer Registerkarte ist.
 
-4. Wählen Sie das `<Title>` -Element aus, und ändern Sie den Titel in **ExpenseIt – Home**.
+4. Wählen Sie das `<Title>` Element aus, und ändern Sie den Titel in **ExpenseIt – Home**.
 
      Ihre Datei **ExpenseItHome.xaml** sollte jetzt in C# wie folgt aussehen:
 
@@ -155,7 +155,7 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
 6. Suchen Sie das `Title="ExpenseIt" Height="375" Width="500">` -Zeilenelement, und fügen Sie eine `Source="ExpenseItHome.xaml"` -Eigenschaft hinzu.
 
-     Dadurch wird **ExpenseItHome.xaml** als erste Seite festgelegt, die beim Start der Anwendung geöffnet wird. Ihre Datei **MainWindow.xaml** sollte jetzt in C# wie folgt aussehen:
+     Dadurch wird **expenseithome. XAML** als erste Seite festgelegt, die beim Start der Anwendung geöffnet wird. Ihre Datei **MainWindow.xaml** sollte jetzt in C# wie folgt aussehen:
 
     ```xaml
     <NavigationWindow x:Class="ExpenseIt.MainWindow"
@@ -240,16 +240,16 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
      Die folgende Abbildung zeigt die Anwendung mit den Navigationsschaltflächen des Fensters.
 
-     ![Bildschirm Abbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")
+     ![Bildschirmabbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")
 
 6. Schließen Sie die Anwendung, um zum Entwurfsmodus zurückzukehren.
 
-## <a name="Add_Layout"></a> Erstellen der Benutzeroberfläche
+## <a name="creating-the-user-interface"></a><a name="Add_Layout"></a> Erstellen der Benutzeroberfläche
  Das Layout bietet die Möglichkeit, Elemente anzuordnen und die Größe und Position dieser Elemente zu verwalten, wenn ein Formular vergrößert oder verkleinert wird. In diesem Abschnitt erstellen Sie ein einspaltiges Raster mit drei Zeilen. Sie fügen den beiden Seiten Steuerelemente hinzu, fügen dann Code hinzu und definieren zum Schluss wiederverwendbare Stile für die Steuerelemente.
 
 #### <a name="to-create-the-layout"></a>So erstellen Sie das Layout
 
-1. Öffnen Sie **ExpenseItHome.xaml** , und wählen Sie das `<Grid>` -Element aus.
+1. Öffnen Sie " **expenseithome. XAML** ", und wählen Sie das `<Grid>` Element aus.
 
 2. Erweitern Sie im Dialogfeld **Eigenschaften** den Kategorieknoten **Layout** , und legen Sie die Werte für **Margin** auf `10`, `10`, `0`und `10`fest. Diese entsprechen dem linken, rechten, oberen und unteren Seitenrand.
 
@@ -296,15 +296,15 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
 3. Erstellen Sie die Anwendung, und führen Sie sie aus. Die folgende Abbildung zeigt, wie die durch die XAML in diesem Verfahren erstellten Steuerelemente zur Laufzeit dargestellt werden.
 
-     ![Bildschirm Abbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")
+     ![Bildschirmabbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")
 
 4. Schließen Sie die Anwendung, um zum Entwurfsmodus zurückzukehren.
 
 #### <a name="to-add-a-background-image"></a>So fügen Sie ein Hintergrundbild hinzu
 
-1. Wählen Sie das folgende Bild aus, und speichern Sie es als `watermark.png`aus.
+1. Wählen Sie das folgende Bild aus, und speichern Sie es als `watermark.png`.
 
-     ![Wasserzeichen Bild für die exemplarische Vorgehensweise](../designers/media/wpf-watermark.png "WPF_watermark")
+     ![Wasserzeichenbild für die exemplarische Vorgehensweise](../designers/media/wpf-watermark.png "WPF_watermark")
 
     > [!NOTE]
     > Alternativ können Sie ein eigenes Bild erstellen und als `watermark.png`aus.
@@ -463,7 +463,7 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
 6. Wenn Sie die Anwendung an diesem Punkt erstellen und ausführen, sollte sie wie in der folgenden Abbildung aussehen:
 
-     ![Bildschirm Abbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")
+     ![Bildschirmabbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")
 
 #### <a name="to-add-code-to-the-button"></a>So fügen Sie der Schaltfläche Code hinzu
 
@@ -505,7 +505,7 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
 #### <a name="to-create-the-ui-for-the-report-page"></a>So erstellen Sie die Benutzeroberfläche für die Berichtsseite
 
-1. Öffnen Sie **ExpenseReportPage.xaml**.
+1. Öffnen Sie **ExpenseReportPage. XAML**.
 
      Auf dieser Seite wird die Spesenabrechnung für die auf der Startseite ausgewählte Person angezeigt.
 
@@ -583,7 +583,7 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
      Die folgende Abbildung zeigt die Spesenabrechnungsseite. Beachten Sie, dass die Navigationsschaltfläche "Zurück" aktiviert ist.
 
-     ![Bildschirm Abbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure4.png "GettingStartedFigure4")
+     ![Bildschirmabbildung für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure4.png "GettingStartedFigure4")
 
 #### <a name="to-style-controls"></a>So formatieren Sie Steuerelemente
 
@@ -873,7 +873,7 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
 #### <a name="to-update-the-ui-with-data-templates"></a>So aktualisieren Sie die Benutzeroberfläche mit Datenvorlagen
 
-1. Öffnen Sie **ExpenseReportPage.xaml**.
+1. Öffnen Sie **ExpenseReportPage. XAML**.
 
 2. Ersetzen Sie den XAML-Code für das **Name** -Tag und das **Department**`<StackPanel` -Element durch folgenden Code:
 
@@ -935,12 +935,12 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
      Die folgende Abbildung zeigt die beiden Seiten der ExpenseIt-Anwendung mit Steuerelementen, Layout, Stilen, Datenbindung und Datenvorlagen, die angewendet wurden.
 
-     ![ExpenseIt-Beispiel Bildschirmfotos](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")
+     ![Bildschirmabbildungen für ExpenseIt-Beispiel](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")
 
-## <a name="Best_Practices"></a> Bewährte Methoden
+## <a name="best-practices"></a><a name="Best_Practices"></a> Bewährte Methoden
  Dieses Beispiel veranschaulicht die Grundlagen von WPF und folgt daher nicht bewährten Methoden für die Anwendungsentwicklung. Ausführlichere Informationen zu bewährten Methoden für die Anwendungsentwicklung mit WPF und .NET Framework finden Sie ggf. unter den folgenden Themen:
 
-- Barrierefreiheit – [Bewährte Methoden für Eingabehilfen](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)
+- Barrierefreiheit: [bewährte Methoden für Barrierefreiheit](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)
 
 - Sicherheit – [Sicherheit (WPF)](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)
 
@@ -948,7 +948,7 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
 - Leistung – [Optimieren der WPF-Anwendungsleistung](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)
 
-## <a name="Whats_Next"></a> Weitere Informationen
+## <a name="whats-next"></a><a name="Whats_Next"></a> Was kommt als nächstes
  Sie haben jetzt eine Reihe von Techniken zum Erstellen von Desktopanwendungen mithilfe von WPF kennengelernt. Sie verfügen nun über grundlegende Kenntnisse der Bausteine, die eine datengebundene WPF-Anwendung ausmachen. Dieses Thema erhebt keinen Anspruch auf Vollständigkeit, soll aber eine Vorstellung einiger Möglichkeiten vermitteln, die Sie neben den in diesem Thema vorgestellten Techniken selbst entdecken können.
 
  Weitere Informationen über die WPF-Architektur und -Programmiermodelle finden Sie in den folgenden Themen:
@@ -965,15 +965,15 @@ ein Name = "Introduction" > </a> diese exemplarische Vorgehensweise bietet eine 
 
   Weitere Informationen zum Erstellen von Anwendungen finden Sie in den folgenden Themen:
 
-- [Übersicht über die Anwendungsentwicklung](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)
+- [Anwendungsentwicklung – Übersicht](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)
 
 - [Übersicht zu Steuerelementen](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)
 
-- [Übersicht zur Datenbindung](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)
+- [Übersicht über die Datenbindung](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)
 
 - [Übersicht zu WPF-Grafiken, -Animationen und -Medien](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)
 
 - [Dokumente in WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Exemplarische Vorgehensweise [: Erstellen einer WPF-Desktop Anwendung, die mit einem Azure Mobile Service verbunden](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md) ist [Erstellen von modernen Desktop Anwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

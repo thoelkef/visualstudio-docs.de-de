@@ -1,5 +1,5 @@
 ---
-title: Core-Schnittstellen | Microsoft-Dokumentation
+title: Kern Schnittstellen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179217"
 ---
 # <a name="core-interfaces"></a>Wichtige Schnittstellen
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung des Debuggers mit den [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)].  
+Die folgenden Schnittstellen sind die Kern Schnittstellen zum Erweitern des Debuggers mithilfe von [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)] .  
   
-## <a name="discussion"></a>Diskussion  
- Diese Schnittstellen werden in erster Linie verwendet, um die Debug-Engine (DE) zu erstellen. Sie sind hier nach Kategorien organisiert:  
+## <a name="discussion"></a>Diskussion (Discussion)  
+ Diese Schnittstellen werden hauptsächlich verwendet, um die Debug-Engine (de) zu erstellen. Sie sind hier nach Kategorien organisiert:  
   
 - [Breakpoints](#Breakpoints)  
   
-- [Kontext](#Contexts)  
+- [Kontexte](#Contexts)  
   
 - [Core-Server](#CoreServer)  
   
-- [Debug-Engines](#DebugEngines)  
+- [Debug-engines](#DebugEngines)  
   
 - [Dokumente](#Documents)  
   
@@ -39,7 +39,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
   
 - [Ausdrücke](#Expressions)  
   
-- [Arbeitsspeicher](#Memory)  
+- [Memory](#Memory)  
   
 - [Module](#Modules)  
   
@@ -47,7 +47,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
   
 - [Prozesse](#Processes)  
   
-- [Programme](#Programs)  
+- [Programs](#Programs)  
   
 - [Eigenschaften](#Properties)  
   
@@ -55,256 +55,256 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
   
 - [Threads](#Threads)  
   
-- [Typ-Schnellansichten](#TypeVisualizers)  
+- [Typvisualisierungen](#TypeVisualizers)  
   
   Die Entitäten, die die Schnittstellen implementieren können, sind:  
   
-- Debug-Engine (DE)  
+- Debug-Engine (de)  
   
-- Anschlusslieferant (PS)  
+- Port Lieferant (PS)  
   
-- Ausdrucksauswertung (EE)  
+- Ausdrucks Auswertung (EE)  
   
 - Visual Studio (VS)  
   
-## <a name="Breakpoints"></a> Haltepunkte  
- Diese Schnittstellen beziehen sich auf die Implementierung und die nachverfolgung von Haltepunkten.  
+## <a name="breakpoints"></a><a name="Breakpoints"></a> Haltepunkte  
+ Diese Schnittstellen stehen im Zusammenhang mit der Implementierung und Nachverfolgung von Breakpoints.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|Stellt einen Haltepunkt an einer Speicheradresse gebunden.|  
-|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Von der DE gesendet, wenn Sie ein Haltepunkt an einer Speicheradresse gebunden ist.|  
-|[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)|VS|Stellt eine Dokument-Prüfsumme für eine Haltepunkt-Anforderung dar.|  
-|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|Von die DE gesendet, wenn Sie ein Haltepunkt an einem Speicherort gebunden werden kann.|  
-|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|Von der DE gesendet, wenn ein Haltepunkt erreicht wird.|  
-|[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)|VS|Stellt eine Anforderung für einen Haltepunkt dar. Beim Erstellen eines ausstehenden Haltepunkts verwendet.|  
-|[IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)|VS|Stellt eine Anforderung für einen Haltepunkt dar. Beim Erstellen eines ausstehenden Haltepunkts verwendet.|  
-|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|DE|Stellt die Informationen verwendet, um einen Haltepunkt zu binden.|  
-|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|Von der DE gesendet, wenn Sie ein Haltepunkt aus einer Speicheradresse aufgehoben wird.|  
-|[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)|DE|Stellt einen ungültigen Breakpoint (zurückgegeben von `IDebugBreakpointErrorEvent2`).|  
-|[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)|DE|Stellt die Auflösung von Informationen über einen ungültigen Breakpoint.|  
-|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|DE|Stellt eine Position in einer Funktion, in denen ein Haltepunkt gesetzt ist.|  
-|[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)|DE|Stellt einen Haltepunkt an, der gebunden werden soll; Erstellen einen gebundenen Haltepunkt verwendet.|  
-|[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Stellt eine Enumeration dar, über einen Satz von gebundener Haltepunkte.|  
-|[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Stellt eine Enumeration dar, über einen Satz von Breakpoints, die auf einen Speicherbereich konnte nicht gebunden werden.|  
+|[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|Stellt einen Haltepunkt dar, der an eine Speicheradresse gebunden ist.|  
+|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Wird von der de gesendet, wenn ein Breakpoint an eine Speicheradresse gebunden ist.|  
+|[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)|VS|Stellt eine Dokument Prüfsumme für eine Haltepunkt Anforderung dar.|  
+|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|Wird von der de gesendet, wenn ein Breakpoint nicht an eine Speicheradresse gebunden werden kann.|  
+|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|Wird von der de gesendet, wenn ein Breakpoint erreicht wird.|  
+|[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)|VS|Stellt eine Anforderung für einen Haltepunkt dar. wird zum Erstellen eines ausstehenden Breakpoints verwendet.|  
+|[IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)|VS|Stellt eine Anforderung für einen Haltepunkt dar. wird zum Erstellen eines ausstehenden Breakpoints verwendet.|  
+|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|DE|Stellt die Informationen dar, die zum Binden eines Breakpoints verwendet werden.|  
+|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|Wird von der de gesendet, wenn die Bindung eines Breakpoints an eine Speicheradresse aufgehoben wird.|  
+|[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)|DE|Stellt einen ungültigen Breakpoint dar (von zurückgegeben `IDebugBreakpointErrorEvent2` ).|  
+|[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)|DE|Stellt die Auflösungsinformationen zu einem ungültigen Breakpoint dar.|  
+|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|DE|Stellt eine Position in einer Funktion dar, bei der ein Breakpoint festgelegt ist.|  
+|[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)|DE|Stellt einen Haltepunkt dar, der gebunden werden soll. wird zum Erstellen eines gebundenen halte Punkts verwendet.|  
+|[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Stellt eine Enumeration für einen Satz von gebundenen Haltepunkten dar.|  
+|[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Stellt eine Enumeration für einen Satz von Breakpoints dar, die nicht an eine Speicheradresse gebunden werden konnten.|  
   
-## <a name="Contexts"></a> Kontexte  
- Diese Schnittstellen stellen verschiedene Arten von Kontexten, in das derzeit debuggte Programm dar.  
+## <a name="contexts"></a><a name="Contexts"></a> Kontexte  
+ Diese Schnittstellen stellen verschiedene Arten von Kontexten in dem Programm dar, das gedebuggt wird.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Die Anfangsposition einer Code-Anweisung darstellt.|  
-|[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Erweitert die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Schnittstelle für den Abruf von Modul und die Prozess-Schnittstellen zu aktivieren.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VISUAL STUDIO, DE|Stellt eine Position in einem Dokument dar.|  
-|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt den Kontext in der zum Auswerten eines Ausdrucks dar.|  
-|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Stellt die Anfangsposition im Arbeitsspeicher, der eine Sammlung von Bytes an.|  
-|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Stellt einen Stack-Frame-Kontext an einem Haltepunkt oder die Ausnahme dar.|  
-|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Stellt einen Stack-Frame-Kontext an einem Haltepunkt oder die Ausnahme dar.|  
-|[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Stellt eine Enumeration über einen Satz von Codekontexte dar.|  
+|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Stellt die Anfangsposition einer Code Anweisung dar.|  
+|[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Erweitert die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Schnittstelle, um das Abrufen von Modul-und Prozessschnittstellen zu ermöglichen.|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, de|Stellt eine Position in einem Dokument dar.|  
+|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt den Kontext dar, in dem ein Ausdruck ausgewertet werden soll.|  
+|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Stellt die Startposition einer Auflistung von Bytes im Arbeitsspeicher dar.|  
+|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Stellt einen Stapel Rahmen Kontext an einem Haltepunkt oder einer Ausnahme dar.|  
+|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Stellt einen Stapel Rahmen Kontext an einem Haltepunkt oder einer Ausnahme dar.|  
+|[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Stellt eine Enumeration für einen Satz von Code Kontexten dar.|  
   
-## <a name="CoreServer"></a> Core-Server  
- Diese Schnittstellen stellen dar, den Computer, auf dem ein Programm im Debugmodus befindet. Diese implementiert werden, indem [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] jedoch von Debug-Engines in aufgerufen werden kann.  
+## <a name="core-server"></a><a name="CoreServer"></a> Core-Server  
+ Diese Schnittstellen stellen den Computer dar, auf dem ein Programm gedebuggt wird. Diese werden von implementiert, Sie [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] können jedoch von Debug-engines aufgerufen werden.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bietet Zugriff auf die Ports und Portanbieter sowie Informationen über den Computer.|  
-|[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Stellt eine [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , unterstützt das Remotedebuggen.|  
+|[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bietet Zugriff auf Ports und Port Lieferanten sowie Informationen über den Computer.|  
+|[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Stellt eine [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) dar, die das Remote Debugging unterstützt.|  
   
-## <a name="DebugEngines"></a> Debug-Engines  
- Diese Schnittstellen stellen die Debug-Engines und deren zugeordneten Ereignissen dar.  
+## <a name="debug-engines"></a><a name="DebugEngines"></a> Debug-engines  
+ Diese Schnittstellen stellen Debug-engines und die zugehörigen Ereignisse dar.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|Stellt eine benutzerdefinierten Debug-Engine dar.|  
-|[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|Stellt eine benutzerdefinierten Debug-Engine, die Laden von Symbolen, JustMyCode und Ausnahmen unterstützt.|  
-|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Durch jede neue Instanz des DE gesendet, um anzugeben, dass sie Debugaufgaben behandelt werden kann.|  
-|[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)|DE|Stellt eine benutzerdefinierten Debug-Engine, die beim Starten Programme unterstützt.|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Stellt einen Programm-Knoten, der mehrere Debug-Engines behandelt.|  
-|[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Bietet eine Möglichkeit, das SDM beim Abrufen einer Schnittstelle für die Debug-Engine von einem Thread, Programme oder Stapelrahmen entspricht.|  
+|[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|Stellt eine benutzerdefinierte Debug-Engine dar.|  
+|[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|Stellt eine benutzerdefinierte Debug-Engine dar, die das Laden von Symbolen, JustMyCode und Ausnahmen unterstützt.|  
+|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Wird von jeder neuen Instanz von de gesendet, um anzugeben, dass Sie zum Verarbeiten von Debuggingaufgaben bereit ist.|  
+|[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)|DE|Stellt ein benutzerdefiniertes Debug-Modul dar, das das Starten von Programmen|  
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Stellt einen Programmknoten dar, der mehrere debugengines behandelt.|  
+|[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Bietet eine Möglichkeit für SDM, eine Schnittstelle von einem Thread, einem Programm oder einem Stapel Rahmen zur Debug-Engine abzurufen.|  
   
-## <a name="Documents"></a> Dokumente  
- Diese Schnittstellen stellen Dokumente (Quelldateien) und den zugeordneten Elementen dar.  
+## <a name="documents"></a><a name="Documents"></a> Dokumenten  
+ Diese Schnittstellen stellen Dokumente (Quelldateien) und die zugehörigen Elemente dar.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Gesendet durch die DE um fordern ein Dokument geöffnet werden.|  
-|[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Stellt einen Stream von disassemblierten Anweisungen aus einem Dokument dar.|  
-|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VISUAL STUDIO, DE|Stellt ein Dokument vom DE, einen Namen und eine Klasse-ID (CLSID) angeben.|  
-|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Stellt eine Prüfsumme für eine Debug-Dokument und ermöglicht die Prüfsumme zwischen Komponenten übergeben.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VISUAL STUDIO, DE|Stellt einen Dokumentkontext, eine Position in einem Dokument, einem bestimmten Kontext der Anweisung und der Code entspricht.|  
-|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VISUAL STUDIO, DE|Stellt eine allgemeine Position in einem Dokument dar.|  
-|[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Stellt eine Position in einer Quelldatei als ein Zeichenoffset dar.|  
-|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VISUAL STUDIO, DE|Stellt ein Textdokument, die von der DE bereitgestellt (abgeleitet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), den tatsächlichen Text bereitstellt.|  
-|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Durch die DE gesendet, Änderungen an einer Quelldatei an, die im Arbeitsspeicher befindet.|  
+|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Wird von der de gesendet, um anzufordern, dass ein Dokument geöffnet wird.|  
+|[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Stellt einen Datenstrom disassemblierten Anweisungen aus einem Dokument dar.|  
+|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, de|Stellt ein von der de bereitgestelltes Dokument dar und gibt einen Namen und eine Klassen-ID (CLSID) an.|  
+|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Stellt eine Prüfsumme für ein debugdokument dar und ermöglicht die Übergabe der Prüfsumme zwischen Komponenten.|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, de|Stellt einen Dokument Kontext dar, eine Position in einem Dokument, das einer bestimmten Anweisung und einem Code Kontext entspricht.|  
+|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, de|Stellt eine allgemeine Position in einem Dokument dar.|  
+|[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Stellt eine Position in einer Quelldatei als Zeichen Offset dar.|  
+|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, de|Stellt ein Textdokument dar, das von der de (abgeleitet von [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)) bereitgestellt wird und den eigentlichen Text bereitstellt.|  
+|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Wird von der de gesendet, um Änderungen an einer Quelldatei anzugeben, die sich im Arbeitsspeicher befindet.|  
   
-## <a name="Events"></a> Ereignisse  
- Diese Schnittstellen darstellen, alle Ereignisse, die zwischen dem DE und sitzungsbasierter Debug-Manager (SDM) gesendet werden.  
+## <a name="events"></a><a name="Events"></a> Fall  
+ Diese Schnittstellen stellen alle Ereignisse dar, die zwischen de und dem sitzungsdebug-Manager (SDM) gesendet werden.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Gesendet durch die DE um fordern ein Dokument geöffnet werden.|  
-|[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)|DE|Die Debug-Engine (DE) sendet diese Schnittstelle für die Sitzung Debug-Manager (SDM), um den Status festzulegen Leiste Nachricht während des Symbols lädt.|  
-|[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)|DE|Von der DE gesendet, wenn eine Unterbrechung in der Anwendung abgeschlossen wurde.|  
-|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Von der DE gesendet, wenn ein Haltepunkt gebunden ist.|  
-|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|Von der DE gesendet, wenn ein Haltepunkt nicht gebunden werden.|  
-|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|Von der DE gesendet, wenn ein Haltepunkt erreicht wird.|  
-|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|Von der DE gesendet, wenn ein Haltepunkt aufgehoben wird.|  
-|[IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)|DE|Durch die DE gesendet, um festzustellen, ob er an einem bestimmten Standort beendet werden sollte.|  
-|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Durch die DE gesendet, Änderungen an einer Quelldatei an, die im Arbeitsspeicher befindet.|  
-|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Durch jede neue Instanz des DE gesendet, um anzugeben, dass sie Debugaufgaben behandelt werden kann.|  
-|[IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)|DE|Durch die DE gesendet, um anzugeben, dass die zu debuggende Programm wird die erste Anweisung ausgeführt wird.|  
-|[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)|DE|Eine Schnittstelle, die durch andere Ereignisschnittstellen, die einen Fehler zurückgeben können, verwendet wird, um lesbare Fehlermeldungen bereitzustellen.|  
-|[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)|DE, PS|Die Basisschnittstelle, von der alle anderen Ereignis Schnittstellen abgeleitet werden.|  
-|[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)|VS|Stellt eine Schnittstelle implementiert, die durch die SDM an die Ereignisse, die (in Form von Objekten, die eine bestimmtes Ereignis-Schnittstelle implementiert) gesendet werden.|  
-|[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)|DE|Von der DE gesendet, wenn in der zu debuggende Programm wird eine Ausnahme aufgetreten ist.|  
-|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Von der DE gesendet, wenn eine asynchrone ausdrucksauswertung abgeschlossen ist.|  
-|IDebugFindSymbolEvent2||VERALTET. VERWENDEN SIE NICHT.|  
-|[IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|DE|Von der DE gesendet, wenn es sich bei der Verarbeitung für eine abgefangene Ausnahme abgeschlossen wurde.|  
-|[IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|DE|Von der DE gesendet, wenn ein Programm Ladevorgang abgeschlossen wurde.|  
-|[IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)|DE|Durch die DE, damit die IDE-Anzeige eine informative Meldung an den Benutzer gesendet.|  
-|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|Von der DE gesendet, wenn ein Modul geladen oder entladen wird.|  
-|[IDebugNoSymbolsEvent2](../../../extensibility/debugger/reference/idebugnosymbolsevent2.md)|DE|Signalisiert dem [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugger-Benutzeroberfläche auf den Benutzer zu warnen, dass die Symbole für die gestartete ausführbare Datei nicht gefunden.|  
-|[IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)|DE|Von der DE, damit die IDE-Anzeige eine beliebige Zeichenfolge gesendet.|  
-|[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)|VISUAL STUDIO, DE|Gesendet von einem Port portereignisse an alle Listener zu kommunizieren.|  
-|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Prozess erstellt wurde.|  
-|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Prozess zerstört wurde.|  
-|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Programm erstellt wurde.|  
-|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Programm zerstört wurde.|  
-|[IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)|DE|Ermöglicht es eine Debug-Engine, um das Standardverhalten überschreiben die [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche, wenn Sie eine Debugsitzung zu beenden.|  
-|[IDebugProgramNameChangedEvent2](../../../extensibility/debugger/reference/idebugprogramnamechangedevent2.md)|DE|Gesendet von der Debug-Engine (DE) für die Sitzung Debug-Manager (SDM), wenn der Name eines Programms ändert.|  
-|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|Durch die DE, wenn eine neue Eigenschaft gesendet (dargestellt durch die `IDebugProperty2` Schnittstelle) erstellt wurde.|  
-|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|Von der DE gesendet, wenn eine Eigenschaft zerstört wurde.|  
-|[IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|DE|Von der DE gesendet, wenn es sich bei schrittweise aus oder über eine Funktion, sodass der Rückgabewert ordnungsgemäß angezeigt werden kann.|  
-|[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)|VS|Ermöglicht das debug-Engines zum Lesen von metrikeinstellungen Remote.|  
-|[IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|DE|Von der DE gesendet, wenn ein Schritt in, überspringen oder aus einer Anweisung abgeschlossen wurde.|  
-|[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|DE|Durch die DE gesendet, um den Erfolg oder Fehler beim Laden von Symbolen für ein Modul anzugeben.|  
-|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Von der DE gesendet, wenn ein Thread erstellt wurde.|  
-|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Von der DE gesendet, wenn ein Thread zerstört wurde.|  
-|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Von der DE gesendet, wenn ein Thread seinen Namen geändert wurde.|  
+|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Wird von der de gesendet, um anzufordern, dass ein Dokument geöffnet wird.|  
+|[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)|DE|Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), um die Status leisten Nachricht während der Symbol Auslastung festzulegen.|  
+|[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)|DE|Wird von der de gesendet, wenn eine Unterbrechung des Programms abgeschlossen wurde.|  
+|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Wird von der de gesendet, wenn ein Breakpoint gebunden ist.|  
+|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|Wird von der de gesendet, wenn ein Breakpoint nicht gebunden werden kann.|  
+|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|Wird von der de gesendet, wenn ein Breakpoint erreicht wird.|  
+|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|Wird von der de gesendet, wenn ein Breakpoint nicht gebunden ist.|  
+|[IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)|DE|Wird von der de gesendet, um zu bestimmen, ob Sie an einer bestimmten Position angehalten werden soll.|  
+|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Wird von der de gesendet, um Änderungen an einer Quelldatei anzugeben, die sich im Arbeitsspeicher befindet.|  
+|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Wird von jeder neuen Instanz von de gesendet, um anzugeben, dass Sie zum Verarbeiten von Debuggingaufgaben bereit ist.|  
+|[IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)|DE|Wird von der de gesendet, um anzugeben, dass das zu deaktivier Ende Programm bereit ist, die erste Anweisung auszuführen.|  
+|[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)|DE|Eine Schnittstelle, die von anderen Ereignis Schnittstellen verwendet wird, die möglicherweise einen Fehler zurückgibt, um lesbare Fehlermeldungen bereitzustellen.|  
+|[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)|DE, PS|Basisschnittstelle, von der alle anderen Ereignis Schnittstellen abgeleitet werden.|  
+|[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)|VS|Stellt eine von SDM implementierte Schnittstelle dar, mit der Ereignisse (ausgedrückt als Objekte, die eine bestimmte Ereignis Schnittstelle implementieren) gesendet werden.|  
+|[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)|DE|Wird von der de gesendet, wenn eine Ausnahme in dem Programm aufgetreten ist, das deentschlgt wird.|  
+|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Wird von der de gesendet, wenn eine asynchrone Ausdrucks Auswertung beendet ist.|  
+|IDebugFindSymbolEvent2||VERALTET. Verwenden Sie nicht.|  
+|[IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|DE|Wird von der de gesendet, wenn die Verarbeitung für eine abgefangene Ausnahme abgeschlossen wurde.|  
+|[IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|DE|Wird von der de gesendet, wenn ein Programm den Ladevorgang abgeschlossen hat.|  
+|[IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)|DE|Wird von der de gesendet, damit die IDE eine Informations Meldung für den Benutzer anzeigt.|  
+|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|Wird von der de gesendet, wenn ein Modul geladen oder entladen wird.|  
+|[IDebugNoSymbolsEvent2](../../../extensibility/debugger/reference/idebugnosymbolsevent2.md)|DE|Signalisiert der [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Debugger-Benutzeroberfläche, den Benutzer zu warnen, dass Symbole für die gestartete ausführbare Datei nicht gefunden werden konnten.|  
+|[IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)|DE|Wird von der de gesendet, damit die IDE eine beliebige Zeichenfolge anzeigt.|  
+|[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)|VS, de|Wird von einem Port gesendet, um Port Ereignisse an einen beliebigen Listener zu übermitteln.|  
+|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Prozess erstellt wurde.|  
+|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Prozess zerstört wurde.|  
+|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Programm erstellt wurde.|  
+|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Programm zerstört wurde.|  
+|[IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)|DE|Ermöglicht es einer Debug-Engine, das Standardverhalten der Benutzeroberfläche zu überschreiben, [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Wenn Sie eine Debugsitzung beenden.|  
+|[IDebugProgramNameChangedEvent2](../../../extensibility/debugger/reference/idebugprogramnamechangedevent2.md)|DE|Wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn der Name eines Programms geändert wird.|  
+|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|Wird von der de gesendet, wenn eine neue Eigenschaft (dargestellt durch die- `IDebugProperty2` Schnittstelle) erstellt wurde.|  
+|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|Wird von der de gesendet, wenn eine Eigenschaft zerstört wurde.|  
+|[IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|DE|Wird von der de beim Durchlaufen einer Funktion oder über eine Funktion gesendet, sodass der Rückgabewert ordnungsgemäß angezeigt werden kann.|  
+|[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)|VS|Ermöglicht Debug-engines das Remote Lesen von Metrikeinstellungen.|  
+|[IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|DE|Wird von der de gesendet, wenn ein Einzelschritt, eine over-Anweisung oder eine FROM-Anweisung abgeschlossen wurde.|  
+|[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|DE|Wird von der de gesendet, um den Erfolg oder das Fehlschlagen des Ladens von Symbolen für ein Modul anzugeben.|  
+|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Wird von der de gesendet, wenn ein Thread erstellt wurde.|  
+|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Wird von der de gesendet, wenn ein Thread zerstört wurde.|  
+|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Wird von der de gesendet, wenn ein Thread seinen Namen geändert hat.|  
   
-## <a name="Expressions"></a> Ausdrücke  
- Diese Schnittstellen stellen dar, die Ausdrücke in einem bestimmten Kontext ausgewertet werden soll.  
+## <a name="expressions"></a><a name="Expressions"></a>-Ausdrücke  
+ Diese Schnittstellen stellen Ausdrücke dar, die in einem bestimmten Kontext ausgewertet werden.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|Stellt einen Ausdruck ausgewertet werden soll. Abgerufen aus der [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) Schnittstelle.|  
-|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt einen Kontext, in dem ein Ausdruck ausgewertet wird. Abgerufen aus der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Schnittstelle.|  
-|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Von der DE gesendet, wenn eine asynchrone ausdrucksauswertung abgeschlossen ist.|  
+|[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|Stellt einen Ausdruck dar, der ausgewertet werden soll. Abgerufen von der [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle.|  
+|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt einen Kontext dar, in dem ein Ausdruck ausgewertet wird. Abgerufen von der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) -Schnittstelle.|  
+|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Wird von der de gesendet, wenn eine asynchrone Ausdrucks Auswertung beendet ist.|  
   
-## <a name="Memory"></a> Arbeitsspeicher  
+## <a name="memory"></a><a name="Memory"></a> Gedenkens  
  Diese Schnittstellen stellen Sequenzen von Bytes im Arbeitsspeicher dar.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Stellt eine Sequenz von Bytes im Arbeitsspeicher, die aus gelesen oder geschrieben werden können.|  
-|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Stellt einen Speicherort im Arbeitsspeicher einer Sequenz von Bytes an.|  
+|[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Stellt eine Sequenz von Bytes im Arbeitsspeicher dar, in die gelesen oder geschrieben werden kann.|  
+|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Stellt eine Position im Speicher einer Byte Sequenz dar.|  
   
-## <a name="Modules"></a> Module  
- Diese Schnittstellen stellen dar, ein Modul, das in eine ausführbare Datei entspricht oder. DLL-Datei.  
+## <a name="modules"></a><a name="Modules"></a> Module  
+ Diese Schnittstellen stellen ein Modul dar, das einer ausführbaren Datei oder entspricht. DLL-Datei.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|Stellt eine einzelne ausführbare Datei oder DLL an.|  
-|[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|Stellt eine [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , Symbole unterstützt.|  
-|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|Von der DE gesendet, wenn ein Modul geladen oder entladen wird.|  
-|[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Stellt die Source Server-Informationen, die in einer PDB-Datei enthalten ist.|  
-|[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Stellt eine Enumeration dar, über einen Satz von Modulen, die bekannt sind ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
+|[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|Stellt eine einzelne ausführbare Datei oder dll dar.|  
+|[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|Stellt ein [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Zeichen dar, das Symbole unterstützt.|  
+|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|Wird von der de gesendet, wenn ein Modul geladen oder entladen wird.|  
+|[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Stellt die Quell Server Informationen dar, die in einer PDB-Datei enthalten sind.|  
+|[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Stellt eine Enumeration für einen Satz von Modulen dar, die von einem [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)bekannt sind.|  
   
-## <a name="Ports"></a> Ports  
- Diese Schnittstellen werden die Ports und Portanbieter darstellen.  
+## <a name="ports"></a><a name="Ports"></a> Landungen  
+ Diese Schnittstellen stellen Ports und Port Lieferanten dar.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)|VS, PS|Stellt den Standardport auf dem lokalen Computer.|  
-|[IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)|VS|Ermöglicht es eine Debug-Engine, die DCOM verwendet wird, stellen die [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche, um sicherzustellen, dass die Firewall das Remotedebugging nicht blockiert wird.|  
-|[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)|VS, PS|Stellt einen Port an.|  
-|[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)|PS|Gesendet von einem Port portereignisse an alle Listener zu kommunizieren.|  
-|[IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)|PS|Stellt einen Port, der starten und Beenden von Prozessen.|  
-|[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)|PS|Verwendet, um die an- und Abmelden von Programmen mit einem Port. können den Port zum Nachverfolgen der aktuell gedebuggten Programme ab.|  
-|[IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)|PS|Stellt eine benutzerdefinierte Benutzeroberfläche für die Auswahl des Ports dar.|  
-|[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)|VS|Stellt eine Anforderung für einen Port aus dem ein neuer Port erstellt oder gespeichert werden.|  
-|[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)|PS|Stellt eine Anbieter von Ports dar.|  
-|[IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)|PS|Stellt eine Anbieter von Ports, die beibehalten werden kann (auf Datenträger speichern) Informationen zu den Ports er erstellt.|  
-|[IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)|PS|Ermöglicht die [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche zum Anzeigen von Text in die **Transportinformationen** Teil der **an den Prozess anhängen** Dialogfeld.|  
-|[IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)|VS|Ermöglicht das Abfragen von Informationen über den Zielcomputer.|  
-|[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Stellt eine Enumeration dar, über einen Satz von Ports.|  
-|[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Stellt eine Enumeration über einen Satz von Portanbieter dar.|  
+|[IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)|VS, PS|Stellt den Standardport auf dem lokalen Computer dar.|  
+|[IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)|VS|Aktiviert eine Debug-Engine, die DCOM verwendet, um die [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche zu Fragen, um sicherzustellen, dass die Firewall das Remote Debugging nicht blockiert.|  
+|[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)|VS, PS|Stellt einen Port dar.|  
+|[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)|PS|Wird von einem Port gesendet, um Port Ereignisse an einen beliebigen Listener zu übermitteln.|  
+|[IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)|PS|Stellt einen Port dar, der Prozesse starten und beenden kann.|  
+|[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)|PS|Wird verwendet, um Programme mit einem Port zu registrieren und die Registrierung aufzuheben. ermöglicht dem Port, Programme zu überprüfen, die aktuell debuggt werden.|  
+|[IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)|PS|Stellt eine angepasste Benutzeroberfläche zum Auswählen des Ports dar.|  
+|[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)|VS|Stellt eine Anforderung für einen Port dar, von dem ein neuer Port erstellt oder gespeichert wird.|  
+|[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)|PS|Stellt einen Lieferanten von Ports dar.|  
+|[IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)|PS|Stellt einen Lieferanten von Ports dar, die Informationen zu den erstellten Ports beibehalten (auf dem Datenträger speichern) können.|  
+|[IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)|PS|Ermöglicht der [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Benutzeroberfläche, Text innerhalb des Abschnitts **Transport Informationen** im Dialogfeld **an den Prozess anhängen** anzuzeigen.|  
+|[IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)|VS|Ermöglicht das Abfragen von Informationen über den Bereitstellungs Zielcomputer.|  
+|[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Stellt eine Enumeration für einen Satz von Ports dar.|  
+|[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Stellt eine Enumeration für einen Satz von Port Lieferanten dar.|  
   
-## <a name="Processes"></a> Prozesse  
- Diese Schnittstellen darstellen, Prozesse, die eine einzelne ausführbare Datei, die ein oder mehrere Programme enthält.  
+## <a name="processes"></a><a name="Processes"></a> Prozesse  
+ Diese Schnittstellen stellen Prozesse dar, eine einzelne ausführbare Datei, die ein oder mehrere Programme enthält.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Stellt einen Prozess, der auf einem Computer ausgeführt wird.|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Stellt einen Prozess, der unterstützt Aktiv Debuggen (verwendet, um Schritt zu ersetzen, fortsetzen und Methoden für die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle).|  
-|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Prozess erstellt wurde.|  
-|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Prozess zerstört wurde.|  
-|[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Stellt einen Prozess, der nachverfolgt werden muss, welche Sitzung verbunden ist.|  
-|[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Stellt eine Enumeration von einer Reihe von Prozessen auf einem Port dar.|  
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, de|Stellt einen Prozess dar, der auf einem Computer ausgeführt wird.|  
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, de|Stellt einen Prozess dar, der das Debuggen aktiv unterstützt (zum Ersetzen der Methoden Step, Continue und Execute in der [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle).|  
+|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Prozess erstellt wurde.|  
+|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Prozess zerstört wurde.|  
+|[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Stellt einen Prozess dar, der nachverfolgen muss, welche Sitzung an ihn angefügt ist.|  
+|[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Stellt eine Enumeration eines Satzes von Prozessen auf einem Port dar.|  
   
-## <a name="Programs"></a> Programme  
- Diese Schnittstellen darstellen, Programme, die logischen Einheiten der Ausführung, die nicht unbedingt eine physische ausführbare Datei oder dieses Moduls entsprechen.  
+## <a name="programs"></a><a name="Programs"></a> Programme  
+ Diese Schnittstellen stellen Programme, logische Ausführungs Einheiten dar, die nicht notwendigerweise mit einer physischen ausführbaren Datei oder einem physischen Modul übereinstimmen.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|Stellt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , die zusammen mit anderen Programmen, die zur gleichen Zeit im Debugmodus befindlichen arbeiten muss.|  
-|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE, PS|Stellt eine logische Einheit der Ausführung dar.|  
-|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Programm erstellt wurde.|  
-|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Vom DE oder Port gesendet, wenn ein Programm zerstört wurde.|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Stellt eine [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , die verarbeitet werden können, indem mehrere Debug-Engines.|  
-|[IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)|PS|Stellt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , der Lage sein, nachzuverfolgen, welche Sitzung angefügt ist.|  
-|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|DE, PS|Stellt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , die Informationen über den Prozess, in dem er ausgeführt wird, zurückgeben können.|  
-|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|DE, PS|Stellt ein Programm, das debuggt werden kann.|  
-|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|DE, PS|Ermöglicht es einen Knoten Programm beim Anfügen an das zugeordnete Programm benachrichtigt werden sollen.|  
-|[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)|DE|Bietet eine Möglichkeit, das SDM zum Abfragen einer bereitgestellten Kompatibilitätsrichtlinie zu den Programmen, die von diesem DE gesteuert.|  
-|[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)|VS|Wird von DEs zum Registrieren von Programmen mit dem SDM angezeigt, dass sie gedebuggt werden.|  
-|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Stellt eine [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) kann, die Schnittstellen Prozess oder Thread hinweg gemarshallt.|  
-|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Stellt eine Enumeration, der ein Satz von Programmen an.|  
+|[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|Stellt ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dar, das gemeinsam mit anderen Programmen verwendet werden muss, die gleichzeitig gedebuggt werden.|  
+|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE, PS|Stellt eine logische Ausführungs Einheit dar.|  
+|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Programm erstellt wurde.|  
+|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Wird von der de oder dem Port gesendet, wenn ein Programm zerstört wurde.|  
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Stellt eine [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) dar, die von mehreren Debug-engines behandelt werden kann.|  
+|[IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)|PS|Stellt einen [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dar, der in der Lage sein muss, die angefügte Sitzung zu verfolgen.|  
+|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|DE, PS|Stellt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dar, die Informationen über den Prozess zurückgeben kann, in dem Sie ausgeführt wird.|  
+|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|DE, PS|Stellt ein Programm dar, das deentschlbelt werden kann.|  
+|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|DE, PS|Ermöglicht, dass ein Programmknoten über einen Versuch benachrichtigt wird, dem zugeordneten Programm anzufügen.|  
+|[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)|DE|Bietet eine Möglichkeit für SDM, eine de über die Programme abzufragen, die von dieser de gesteuert werden.|  
+|[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)|VS|Wird von des zum Registrieren von Programmen bei SDM verwendet, um anzuzeigen, dass Sie gedebuggt werden.|  
+|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Stellt ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) dar, das Schnittstellen über Thread-oder Prozess Grenzen hinweg Mars Hallen kann.|  
+|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Stellt eine Enumeration eines Satzes von Programmen dar.|  
   
-## <a name="Properties"></a> Eigenschaften  
- Diese Schnittstellen stellen Eigenschaften ein Wert in einem bestimmten Kontext, in der Regel das Ergebnis der Auswertung eines Ausdrucks dar.  
+## <a name="properties"></a><a name="Properties"></a> Eigenschaften  
+ Diese Schnittstellen stellen Eigenschaften dar, einen Wert, der einem bestimmten Kontext zugeordnet ist, normalerweise das Ergebnis einer Ausdrucks Auswertung.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|Stellt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) seinen Wert auf benutzerdefinierte Weise anzeigen kann.|  
-|[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|Stellt einen Wert, der einen Stapelrahmen, Dokument oder das Ergebnis der Auswertung eines Ausdrucks.|  
-|[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)|DE|Stellt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , beliebig lange Zeichenfolgen unterstützt.|  
-|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|Durch die DE, wenn eine neue Eigenschaft gesendet (dargestellt durch die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle) erstellt wurde.|  
-|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|Von der DE gesendet, wenn eine Eigenschaft zerstört wurde.|  
-|[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)|DE|Stellt einen Verweis auf eine Eigenschaft, die außerhalb der bestimmten Stapelrahmen vorhanden sein kann.|  
-|[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Stellt eine Enumeration dar, über einen Satz von [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen die Variablen, Register, Parameter und Ausdrücke zu beschreiben.|  
-|[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Stellt eine Enumeration dar, über einen Satz von [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Strukturen.|  
+|[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|Stellt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) dar, das seinen Wert auf benutzerdefinierte Weise anzeigen kann.|  
+|[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|Stellt einen Wert für einen Stapel Rahmen, ein Dokument oder das Ergebnis einer Ausdrucks Auswertung dar.|  
+|[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)|DE|Stellt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) dar, das willkürlich lange Zeichen folgen unterstützt.|  
+|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|Wird von der de gesendet, wenn eine neue Eigenschaft (dargestellt durch die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle) erstellt wurde.|  
+|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|Wird von der de gesendet, wenn eine Eigenschaft zerstört wurde.|  
+|[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)|DE|Stellt einen Verweis auf eine Eigenschaft dar, die außerhalb eines bestimmten Stapel Rahmens vorhanden sein kann.|  
+|[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Stellt eine Enumeration für einen Satz von [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen dar, die Variablen, Register, Parameter und Ausdrücke beschreiben.|  
+|[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Stellt eine Enumeration für einen Satz von [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Strukturen dar.|  
   
-## <a name="StackFrames"></a> Stapelrahmen  
- Diese Schnittstellen stellen einen Stapelrahmen, einen Kontext dar. in der ein Haltepunkt oder eine Ausnahme aufgetreten ist.  
+## <a name="stack-frames"></a><a name="StackFrames"></a> Stapel Rahmen  
+ Diese Schnittstellen stellen einen Stapel Rahmen dar, einen Kontext, in dem ein Breakpoint oder eine Ausnahme aufgetreten ist.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Stellt einen Kontext dar, in denen ein Haltepunkt oder eine Ausnahme aufgetreten ist.|  
-|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Stellt eine [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) die verarbeiten kann Ausnahmen abgefangen.|  
-|[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Stellt eine Enumeration dar, über der Menge der [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) Strukturen geben an, die Funktion Aufrufsequenz, die zum Erreichen eines bestimmten Stapelrahmens.|  
-|[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Stellt eine Enumeration dar, über einen Satz von [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen, die Stapelrahmen zu beschreiben.|  
+|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Stellt einen Kontext dar, in dem ein Breakpoint oder eine Ausnahme aufgetreten ist.|  
+|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Stellt ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) dar, das abgefangene Ausnahmen behandeln kann.|  
+|[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Stellt eine Enumeration für den Satz von [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) Strukturen dar, die die Funktions Aufrufsequenz angeben, die verwendet wird, um an einem bestimmten Stapel Rahmen zu gelangen.|  
+|[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Stellt eine Enumeration für einen Satz von [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen dar, die Stapel Rahmen beschreiben.|  
   
-## <a name="Threads"></a> Threads  
- Diese Schnittstellen darstellen, Threads und deren zugeordneten Ereignissen.  
+## <a name="threads"></a><a name="Threads"></a> Threads  
+ Diese Schnittstellen stellen Threads und ihre zugeordneten Ereignisse dar.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|Stellt einen Ausführungsthread dar.|  
-|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Von der DE gesendet, wenn ein Thread erstellt wurde.|  
-|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Von der DE gesendet, wenn ein Thread zerstört wurde.|  
-|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Von der DE gesendet, wenn ein Thread seinen Namen geändert wurde.|  
-|[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Stellt eine Enumeration über eine Reihe von Threads dar.|  
+|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|Stellt einen Ausführungs Thread dar.|  
+|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Wird von der de gesendet, wenn ein Thread erstellt wurde.|  
+|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Wird von der de gesendet, wenn ein Thread zerstört wurde.|  
+|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Wird von der de gesendet, wenn ein Thread seinen Namen geändert hat.|  
+|[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Stellt eine Enumeration für eine Gruppe von Threads dar.|  
   
-## <a name="TypeVisualizers"></a> Typ-Schnellansichten  
- Diese Schnittstellen bieten Unterstützung für Typ-Schnellansichten. Diese Schnittstellen werden in der Regel von einer ausdrucksauswertung implementiert.  
+## <a name="type-visualizers"></a><a name="TypeVisualizers"></a> Typvisualisierungen  
+ Diese Schnittstellen bieten Unterstützung für typvisualisierungen. Diese Schnittstellen werden in der Regel durch eine Ausdrucks Auswertung implementiert.  
   
-|Interface|Implementiert von|Beschreibung|  
+|Schnittstelle|Implementiert von|BESCHREIBUNG|  
 |---------------|--------------------|-----------------|  
-|[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|Stellt ein Array von Bytes in eine visualisierungslösung Typ dargestellt werden.|  
-|[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Stellt Methoden für den Zugriff auf Daten in eine visualisierungslösung Typ übergeben werden.|  
-|[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Stellt eine Eigenschaft für den Zugriff auf [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Implementierungen.|  
+|[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|Stellt ein Array von Bytes dar, das einer typschnell Ansicht angezeigt werden soll.|  
+|[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Stellt Methoden bereit, mit denen Sie Zugriff auf Daten erhalten, die an eine typschnell Ansicht übermittelt werden.|  
+|[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Stellt eine Eigenschaft dar, die Zugriff auf [ipropertyproxyeeside](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) -Implementierungen bereitstellt.|  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [Erstellen einer benutzerdefinierten Debug-Engine](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

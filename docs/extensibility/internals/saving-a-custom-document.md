@@ -41,6 +41,6 @@ Die Umgebung verarbeitet die Befehle " **Speichern**", " **Speichern**unter" und
     > [!NOTE]
     > Wenn Sie Ihre eigene Persistenz implementieren, achten Sie darauf, die-Methode aufzurufen, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> um Zeit zu sparen. Mit dieser Methode wird überprüft, ob die Datei sicher gespeichert werden kann (z. b. wenn die Datei nicht schreibgeschützt ist).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)

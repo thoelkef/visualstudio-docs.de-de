@@ -1,5 +1,5 @@
 ---
-title: Überprüfen von Haltepunkten in einem Legacy-Sprachdienst | Microsoft Docs
+title: Validieren von Breakpoints in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,31 +12,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704099"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Überprüfen von Haltepunkten in einem Legacysprachdienst
-Ein Haltepunkt gibt an, dass die Programmausführung an einem bestimmten Punkt beendet werden soll, während sie in einem Debugger ausgeführt wird. Ein Benutzer kann einen Haltepunkt in einer beliebigen Zeile in der Quelldatei platzieren, da der Editor keine Kenntnis davon hat, was einen gültigen Speicherort für einen Haltepunkt darstellt. Wenn der Debugger gestartet wird, sind alle markierten Haltepunkte (als ausstehende Haltepunkte bezeichnet) an die entsprechende Position im laufenden Programm gebunden. Gleichzeitig werden die Haltepunkte überprüft, um sicherzustellen, dass sie gültige Codepositionen markieren. Beispielsweise ist ein Haltepunkt für einen Kommentar ungültig, da kein Code an dieser Stelle im Quellcode vorhanden ist. Der Debugger deaktiviert ungültige Haltepunkte.
+Ein Haltepunkt gibt an, dass die Programmausführung an einem bestimmten Punkt angehalten werden soll, während Sie in einem Debugger ausgeführt wird. Ein Benutzer kann einen Haltepunkt in jeder Zeile in der Quelldatei platzieren, da der Editor nicht weiß, was einen gültigen Speicherort für einen Haltepunkt ausmacht. Wenn der Debugger gestartet wird, werden alle markierten Haltepunkte (die als ausstehende Breakpoints bezeichnet werden) an die entsprechende Position im laufenden Programm gebunden. Gleichzeitig werden die Breakpoints überprüft, um sicherzustellen, dass Sie gültige Code Speicherorte markieren. Beispielsweise ist ein Haltepunkt in einem Kommentar ungültig, da an dieser Stelle im Quellcode kein Code vorhanden ist. Der Debugger deaktiviert ungültige Breakpoints.
 
- Da der Sprachdienst den angezeigten Quellcode kennt, kann er Haltepunkte überprüfen, bevor der Debugger gestartet wird. Sie können die <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode überschreiben, um eine Spanne zurückzugeben, die einen gültigen Speicherort für einen Haltepunkt angibt. Der Haltepunktspeicherort wird beim Starten des Debuggers noch überprüft, aber der Benutzer wird über ungültige Haltepunkte benachrichtigt, ohne auf das Laden des Debuggers zu warten.
+ Da der Sprachdienst den angezeigten Quellcode kennt, kann er Breakpoints vor dem Start des Debuggers überprüfen. Sie können die- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode überschreiben, um eine Spanne zurückzugeben, die einen gültigen Speicherort für einen Haltepunkt angibt. Die Haltepunkt Position wird immer noch überprüft, wenn der Debugger gestartet wird. der Benutzer wird jedoch über ungültige Breakpoints benachrichtigt, ohne darauf zu warten, dass der Debugger geladen wird.
 
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementieren der Unterstützung für die Validierung von Haltepunkten
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementieren von Unterstützung für die Überprüfung von Breakpoints
 
-- Die <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode erhält die Position des Haltepunkts. Die Implementierung muss entscheiden, ob der Speicherort gültig ist, und dies angeben, indem Sie eine Textspanne zurückgeben, die den Code identifiziert, der der Zeilenposition des Haltepunkts zugeordnet ist.
+- Die- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode erhält die Position des Breakpoints. Die-Implementierung muss entscheiden, ob der Speicherort gültig ist, und gibt dies an, indem eine Text Spanne zurückgegeben wird, die den Code identifiziert, der der Zeilen Position des Breakpoints zugeordnet ist.
 
-- Gibt <xref:Microsoft.VisualStudio.VSConstants.S_OK> zurück, wenn der <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Speicherort gültig oder ungültig ist.
+- Gibt zurück <xref:Microsoft.VisualStudio.VSConstants.S_OK> , wenn der Speicherort gültig ist, oder, <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Wenn er ungültig ist.
 
-- Wenn der Haltepunkt gültig ist, wird die Textspanne zusammen mit dem Haltepunkt hervorgehoben.
+- Wenn der Breakpoint gültig ist, wird der Textbereich zusammen mit dem Breakpoint hervorgehoben.
 
-- Wenn der Haltepunkt ungültig ist, wird in der Statusleiste eine Fehlermeldung angezeigt.
+- Wenn der Breakpoint ungültig ist, wird eine Fehlermeldung in der Statusleiste angezeigt.
 
 ### <a name="example"></a>Beispiel
- Dieses Beispiel zeigt eine <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Implementierung der Methode, die den Parser aufruft, um die Codespanne (falls vorhanden) an der angegebenen Position abzufragen.
+ Dieses Beispiel zeigt eine Implementierung der- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode, die den Parser aufruft, um den Code Abschnitt (sofern vorhanden) an der angegebenen Position abzurufen.
 
- In diesem Beispiel wird `GetCodeSpan` davon ausgegangen, dass Sie der Klasse eine Methode hinzugefügt haben, die <xref:Microsoft.VisualStudio.Package.AuthoringSink> die Textspanne überprüft und zurückgibt, `true` wenn es sich um eine gültige Haltepunktposition handelt.
+ In diesem Beispiel wird davon ausgegangen, dass Sie der-Klasse eine Methode hinzugefügt haben `GetCodeSpan` <xref:Microsoft.VisualStudio.Package.AuthoringSink> , die den Textabschnitt überprüft und zurückgibt, `true` Wenn es sich um eine gültige breakpointposition handelt.
 
 ```csharp
 using Microsoft VisualStudio;
@@ -98,5 +98,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Funktionen von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)

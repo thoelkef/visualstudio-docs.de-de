@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX | Microsoft Docs
+title: FIELD_KIND_EX | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736879"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
-Zählt weitere Arten von Feldern auf, die ein [IDebugField-Objekt](../../../extensibility/debugger/reference/idebugfield.md) enthalten kann. Diese Enumeration erweitert [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) die FIELD_KIND-Enumeration.
+Listet zusätzliche Arten von Feldern auf, die ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt enthalten kann. Diese Enumeration erweitert die [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Enumeration.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,18 +49,18 @@ public enum enum_FIELD_KIND_EX
 Das Feld enthält keinen erweiterten Typ.
 
 `FIELD_TYPE_EX_METHODVAR`\
-Das Feld enthält eine Methodenvariable.
+Das Feld enthält eine Methoden Variable.
 
 `FIELD_TYPE_EX_CLASSVAR`\
-Das Feld enthält eine Klassenvariable.
+Das Feld enthält eine Klassen Variable.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: Sh.h
+## <a name="requirements"></a>Anforderungen
+Header: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

@@ -1,5 +1,5 @@
 ---
-title: C++statische Code Analyse Store-Apps
+title: C++ statische Code Analyse Store-Apps
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,10 +12,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672709"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität des C++-Codes von Store-Apps mit der statischen Codeanalyse von Visual Studio
@@ -28,25 +28,25 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!NOTE]
 > In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalysetools verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](https://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
 
-## <a name="BKMK_Run"></a> Ausführen der Codeanalyse
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Ausführen der Code Analyse
  So führen Sie die Codeanalyse in der Visual Studio-Projektmappe aus
 
 - Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.
 
   So führen Sie die Codeanalyse beim Erstellen eines Projekts jedes Mal automatisch aus
 
-1. Wählen Sie im Projektmappen-Explorer den Projektnamen und dann **Eigenschaften** aus.
+1. Wählen Sie im Projektmappen-Explorer den Projektnamen und dann** Eigenschaften** aus.
 
 2. Wählen Sie auf der Seite der Projekteigenschaften **Codeanalyse** aus, und wählen Sie dann **Codeanalyse für C/C++ auf Build aktivieren** aus.
 
    Die Projektmappe wird kompiliert und die Codeanalyse ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.
 
-   ![Fenster "Code Analyse"](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Codeanalysefenster](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
  Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung im Fenster "Codeanalyse" aus. Die Warnung wird erweitert, um ausführliche Informationen zum Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummer und die Analyselogik an, die zu der Warnung geführt haben.
 
- ![Erweiterte Code Analyse Warnung](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
+ ![Erweiterte Codeanalysewarnung](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  Wenn Sie eine Warnung erweitern, werden die Codezeilen, die die Warnung verursacht haben, im Visual Studio-Code-Editor hervorgehoben.
 
@@ -57,7 +57,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!TIP]
 > Sie können die Codeanalyse im Codeanalysefenster erneut ausführen. Klicken Sie auf die Schaltfläche **Analysieren**, und wählen Sie dann den Bereich der Analyse aus. Sie können die Analyse für die gesamte Projektmappe oder für ein ausgewähltes Projekt erneut ausführen.
 
-## <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Unterdrücken von Code Analyse Warnungen
  Mitunter möchten Sie möglicherweise darauf verzichten, eine Codeanalysewarnung zu korrigieren. So kann es beispielsweise vorkommen, dass das Auflösen der Warnung im Verhältnis zur Wahrscheinlichkeit, dass das Problem in einer realen Implementierung des Codes auftritt, eine zu große Bearbeitung des Codes erfordert. Oder Sie gehen davon aus, dass die für die Warnung verwendete Analyse für den jeweiligen Kontext ungeeignet ist. Sie können Warnungen unterdrücken, sodass diese nicht mehr im Codeanalysefenster angezeigt werden.
 
  So unterdrücken Sie eine Warnung
@@ -68,14 +68,14 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 3. Wählen Sie **Meldung unterdrücken** und dann **In Quelle** aus.
 
-   Unterdrücken einer Meldung fügt `#pragma(warning:`*WarningId*`)` ein, das die Warnung für die Codezeile unterdrückt.
+   Durch das unterdrücken einer Meldung wird `#pragma(warning:` die *warningid* eingefügt `)` , mit der die Warnung für die Codezeile unterdrückt wird.
 
-## <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Suchen und Filtern der Code Analyseergebnisse
  Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.
 
- ![Suchen und Filtern des Code Analyse Fensters](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Fenster zum Suchen und Filtern der Codeanalyse](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a> C++-Codeanalysewarnungen
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> C++-Code Analyse Warnungen
  Die Codeanalyse gibt die folgenden Warnungen für C++-Code aus:
 
 |                                      Regel                                      |                                                  Beschreibung                                                  |

@@ -25,16 +25,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984203"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen
   Alle SharePoint-Projekt Elemente in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügen über Eigenschaften, mit denen Sie zusätzliche Daten bereitstellen können, wenn das Projekt in SharePoint bereitgestellt wird. Dort stehen die folgenden Eigenschaften zur Auswahl:
 
-- Featureeigenschaften
+- Funktionseigenschaften
 
 - Funktions Empfänger
 
@@ -57,7 +57,7 @@ ms.locfileid: "72984203"
 
  Identische Funktions Eigenschaftswerte aus allen Projekt Elementen werden im FeatureManifest zusammengeführt. Wenn jedoch zwei verschiedene Projekt Elemente denselben Funktions Eigenschafts Schlüssel mit nicht übereinstimmenden Werten angeben, tritt ein Validierungs Fehler auf.
 
- Um Featureeigenschaften direkt der Funktions Datei ( *. Feature*) hinzuzufügen, müssen Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Objektmodell Methode <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Wenn Sie diese Methode verwenden, beachten Sie, dass dieselbe Regel zum Hinzufügen identischer Funktions Eigenschaftswerte in Funktionseigenschaften auch für Eigenschaften gilt, die der Featuredatei direkt hinzugefügt werden.
+ Um Featureeigenschaften direkt der Funktions Datei (*. Feature*) hinzuzufügen, müssen Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Objektmodell Methode abrufen <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A> . Wenn Sie diese Methode verwenden, beachten Sie, dass dieselbe Regel zum Hinzufügen identischer Funktions Eigenschaftswerte in Funktionseigenschaften auch für Eigenschaften gilt, die der Featuredatei direkt hinzugefügt werden.
 
 ## <a name="feature-receiver"></a>Funktions Empfänger
  Funktions Empfänger sind Code, der ausgeführt wird, wenn bestimmte Ereignisse in der enthaltenden Funktion eines Projekt Elements auftreten. Beispielsweise können Sie Funktions Empfänger definieren, die ausgeführt werden, wenn das Feature installiert, aktiviert oder aktualisiert wird. Eine Möglichkeit, einen Funktions Empfänger hinzuzufügen, besteht darin, ihn direkt zu einer Funktion hinzuzufügen, wie in Exemplarische Vorgehensweise [: Hinzufügen von Funktions Ereignis Empfängern](../sharepoint/walkthrough-add-feature-event-receivers.md)beschrieben. Eine andere Möglichkeit besteht darin, in der Eigenschaft **Funktions Empfänger** auf einen Funktions Empfänger Klassennamen und eine Assembly zu verweisen.
@@ -70,7 +70,7 @@ ms.locfileid: "72984203"
 
  Zum Erstellungs Zeitpunkt der Lösung werden die Funktions Empfänger-Eigenschaftswerte in der Funktion und ihren Projekten zusammengeführt, um die ReceiverAssembly-und ReceiverClass-Attribute des Feature-Elements im FeatureManifest der SharePoint-Lösungs Datei (*wsp*-Datei) festzulegen. Wenn die Eigenschaftswerte für Assembly und Klassen Name eines Projekt Elements und eines Features festgelegt sind, müssen die Werte für das Projekt Element und die Funktions Eigenschaft daher identisch sein. Wenn die Werte nicht identisch sind, tritt ein Validierungs Fehler auf. Wenn ein Projekt Element auf eine Featureempfängerassembly verweisen soll, die nicht von der Funktion verwendet wird, die das Feature verwendet, verschieben Sie es in eine andere Funktion.
 
- Wenn Sie auf eine Merkmals Empfängerassembly verweisen, die sich nicht bereits auf dem Server befindet, müssen Sie auch die Assemblydatei selbst in das Paket einschließen. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wird Sie nicht für Sie hinzugefügt. Wenn Sie das Feature bereitstellen, wird die Assemblydatei entweder in den [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] des Systems oder den Ordner bin im physischen SharePoint-Verzeichnis kopiert. Weitere Informationen finden Sie unter Gewusst wie [: Hinzufügen und Entfernen zusätzlicher](../sharepoint/how-to-add-and-remove-additional-assemblies.md)Assemblys.
+ Wenn Sie auf eine Merkmals Empfängerassembly verweisen, die sich nicht bereits auf dem Server befindet, müssen Sie auch die Assemblydatei selbst in das Paket einschließen. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wird nicht für Sie hinzugefügt. Wenn Sie die Funktion bereitstellen, wird die Assemblydatei entweder in den [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] Ordner des Systems oder den Ordner bin im physischen SharePoint-Verzeichnis kopiert. Weitere Informationen finden Sie unter Gewusst wie [: Hinzufügen und Entfernen zusätzlicher](../sharepoint/how-to-add-and-remove-additional-assemblies.md)Assemblys.
 
  Weitere Informationen zu Funktions Empfängern finden Sie unter [Funktions Ereignis Empfänger](/previous-versions/office/developer/sharepoint-2007/bb862634(v=office.12)) -und [featureereignisse](/previous-versions/office/developer/sharepoint-2010/ms469501(v=office.14)).
 
@@ -84,7 +84,7 @@ ms.locfileid: "72984203"
 ## <a name="safe-control-entries"></a>Einträge für sicheres Steuerelement
  SharePoint bietet einen Sicherheitsmechanismus, der als Safe Control-Einträge bezeichnet wird, um den Zugriff von nicht vertrauenswürdigen Benutzern auf bestimmte Steuerelemente einzuschränken. Mithilfe von SharePoint können nicht vertrauenswürdige Benutzer ASPX-Seiten auf dem SharePoint-Server hochladen und erstellen. Um zu verhindern, dass diese Benutzer unsicheren Code zu ASPX-Seiten hinzufügen, schränkt SharePoint den Zugriff auf *sichere Steuerelemente*ein. Sichere Steuerelemente sind aspx-Steuerelemente und Webparts, die als sicher gekennzeichnet sind und von jedem Benutzer auf Ihrer Website verwendet werden können. Weitere Informationen finden Sie unter [Schritt 4: Hinzufügen des Webparts zur Liste der sicheren Steuerelemente](/previous-versions/office/developer/sharepoint-2007/ms581321(v=office.12)).
 
- Jedes SharePoint-Projekt Element in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügt über eine Eigenschaft mit dem Namen **Safe Control-Einträge** , die zwei boolesche unter Eigenschaften hat: **sicher** und sicher für das **Skript**. Die Safe-Eigenschaft gibt an, ob nicht vertrauenswürdige Benutzer auf ein Steuerelement zugreifen können. Die Eigenschaft "Safe Against Script" gibt an, ob nicht vertrauenswürdige Benutzer die Eigenschaften eines Steuer Elements anzeigen und ändern können.
+ Jedes SharePoint-Projekt Element in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügt über eine Eigenschaft mit dem Namen " **Safe Control** "-Einträge, die zwei boolesche unter Eigenschaften aufweisen: **sicher** und **sicher für Skripts**. Die Safe-Eigenschaft gibt an, ob nicht vertrauenswürdige Benutzer auf ein Steuerelement zugreifen können. Die Eigenschaft "Safe Against Script" gibt an, ob nicht vertrauenswürdige Benutzer die Eigenschaften eines Steuer Elements anzeigen und ändern können.
 
  Verweise auf sichere Steuerelemente werden auf assemblybasis referenziert. Sie fügen der Assembly eines Projekts sichere Steuerelement Einträge hinzu, indem Sie Sie in der Eigenschaft " **Safe Control Entries** " des Projekt Elements eingeben. Sie können jedoch auch über die Registerkarte **erweitert** im **Paket-Designer** sichere Steuerelement Einträge zu einer projekterassembly hinzufügen, wenn Sie dem Paket eine zusätzliche Assembly hinzufügen. Weitere Informationen finden Sie unter Gewusst wie [: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md) oder [Registrieren einer Webpartassembly als sicheres Steuer](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))Element.
 
@@ -105,7 +105,7 @@ ms.locfileid: "72984203"
 </Assemblies>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Verwenden von Modulen zum Einschließen von Dateien in die Projekt Mappe](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

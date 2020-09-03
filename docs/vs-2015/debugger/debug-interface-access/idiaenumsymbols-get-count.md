@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Get_count | Microsoft-Dokumentation'
+title: 'IDiaEnumSymbols:: get_Count | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 586bfc831210358bf1c27b8998c1755c4654ff98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189687"
 ---
-# <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
+# <a name="idiaenumsymbolsget_count"></a>IDiaEnumSymbols::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ruft die Anzahl der Symbole ab.  
@@ -35,11 +35,11 @@ HRESULT get_Count ( 
   
 #### <a name="parameters"></a>Parameter  
  pRetVal  
- [out] Gibt die Anzahl der Symbole zurück.  
+ vorgenommen Gibt die Anzahl der Symbole zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)

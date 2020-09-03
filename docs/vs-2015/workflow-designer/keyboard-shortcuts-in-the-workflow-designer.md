@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658969"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
@@ -41,7 +41,7 @@ Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)]
 |STRG+E, S|Das Element der aktuellen Auswahl mit dem Tastaturfokus hinzufügen.|
 |STRG+E, V|Variablen-Designer anzeigen oder ausblenden.|
 |STRG+E, X|Alle Aktivitäten im Workflow erweitern.|
-|STRG+ALT+F6|Den Tastaturfokus im aktuellen Benutzeroberflächenbereich auf den nächsten Bereich der Folge verschieben. Die Reihenfolge ist wie folgt definiert:<br /><br /> 1. Breadcrumb-Navigationsleiste<br />2. Designer Oberfläche<br />3. Argumente/Variablen/Import-Designer, wenn Sie geöffnet sind<br />4. Shell|
+|STRG+ALT+F6|Den Tastaturfokus im aktuellen Benutzeroberflächenbereich auf den nächsten Bereich der Folge verschieben. Die Reihenfolge ist die Folgende:<br /><br /> 1. Breadcrumb-Navigationsleiste<br />2. Designer Oberfläche<br />3. Argumente/Variablen/Import-Designer, wenn Sie geöffnet sind<br />4. Shell|
 
 ### <a name="flowchart"></a>Flussdiagramm
  In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm mithilfe der Tastatur erstellt wurde. Wie in den restlichen Teilen von [!INCLUDE[wfd2](../includes/wfd2-md.md)] werden der Designeroberfläche Aktivitäten mit den globalen Toolbox-Tastenkombinationen, die in [!INCLUDE[vs2010](../includes/vs2010-md.md)] verfügbar sind, hinzugefügt.
@@ -83,7 +83,7 @@ Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)]
 
     4. Alles auswählen
 
-    5. undo
+    5. Rückgängig
 
     6. Wiederholen
 

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387108"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
@@ -252,7 +252,7 @@ Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschied
 
  Klicken Sie einfach auf das gelbe Smileysymbol in der Titelleiste, sagen Sie uns, was Ihnen gefallen hat, und klicken Sie auf die Schaltfläche **Lächeln senden** .
 
- Fertig! Wir leiten Ihr Feedback an das richtige Team weiter. Dort wird man sich auf die Schulter klopfen, aber auch gleich nach weiteren Möglichkeiten suchen, Sie noch mehr zu erfreuen.
+ Das ist alles! Wir leiten Ihr Feedback an das richtige Team weiter. Dort wird man sich auf die Schulter klopfen, aber auch gleich nach weiteren Möglichkeiten suchen, Sie noch mehr zu erfreuen.
 
 ### <a name="send-a-frown"></a>Ein Stirnrunzeln senden
  Zu hören, an welchen Punkten wir das Produkt verbessern müssen, hilft uns, unseren Nachholbedarf zu verwalten, indem wir zuerst die Dinge in den Fokus rücken, die unseren Kunden am wichtigsten sind. Wenn Sie sich über etwas ärgern, teilen Sie uns dies mithilfe des Features **Stirnrunzeln senden** direkt über die IDE mit. Auch dieser Prozess ist ganz einfach:

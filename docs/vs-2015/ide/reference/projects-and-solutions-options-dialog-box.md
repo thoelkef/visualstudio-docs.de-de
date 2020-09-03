@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 245b453a3020e79b924cb8058ff392bd59673402
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662125"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld "Optionen"
@@ -30,9 +30,9 @@ Legt den Standardpfad der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projek
 ## <a name="settings"></a>Einstellungen
  **Projekt Speicherort** Legt den Standard Speicherort fest, an dem neue Projekte und Projektmappenordner und Verzeichnisse erstellt werden. Verschiedene Dialogfelder verwenden auch den in dieser Option festgelegten Speicherort als Ausgangspunkt für Ordner. So verwendet z. B. das Dialogfeld "Projekt öffnen" diesen Speicherort für die Verknüpfung "Meine Projekte".
 
- **Speicherort von Benutzer Projektvorlagen** Legt den Standard Speicherort fest, der vom Dialogfeld **Neues Projekt** verwendet wird, um die Liste der **Vorlagen**zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+ **Speicherort von Benutzer Projektvorlagen** Legt den Standard Speicherort fest, der vom Dialogfeld **Neues Projekt** verwendet wird, um die Liste der **Vorlagen**zu erstellen. Weitere Informationen finden Sie unter Gewusst [wie: Suchen und organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
- **Speicherort für Benutzer Element Vorlagen** Legt den Standard Speicherort fest, der im Dialogfeld **Neues Element hinzufügen** verwendet wird, um die Liste der **eigenen Vorlagen**zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+ **Speicherort für Benutzer Element Vorlagen** Legt den Standard Speicherort fest, der im Dialogfeld **Neues Element hinzufügen** verwendet wird, um die Liste der **eigenen Vorlagen**zu erstellen. Weitere Informationen finden Sie unter Gewusst [wie: Suchen und organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
  **Fehlerliste immer anzeigen, wenn der Build mit Fehlern abgeschlossen** wurde Öffnet das **Fehlerliste** Fenster beim Buildabschluss nur, wenn ein Projekt nicht erstellt werden konnte. Hier werden während des Buildvorgangs aufgetretene Fehler angezeigt. Wenn diese Option deaktiviert ist, treten die Fehler weiterhin auf, aber das Fenster wird nicht geöffnet, wenn der Build abgeschlossen ist. Diese Option ist standardmäßig aktiviert.
 
@@ -50,7 +50,7 @@ Legt den Standardpfad der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projek
 
  **Ausgabefenster bei Buildbeginn anzeigen** Zeigt automatisch die Ausgabefenster in der IDE zu Beginn der Projektmappenbuilds an. Weitere Informationen finden Sie unter [How to: Control the Output Window (Vorgehensweise: Steuern des Ausgabefensters)](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Diese Option ist standardmäßig aktiviert.
 
- **Beim Umbenennen von Dateien zum symbolischen umbenennen auffordern** Wenn diese Option ausgewählt ist, wird ein Meldungs Feld mit der Frage angezeigt, ob [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auch alle Verweise im Projekt auf das Code Element umbenennen soll.
+ **Beim Umbenennen von Dateien zum symbolischen umbenennen auffordern** Wenn diese Option ausgewählt ist, wird ein Meldungs Feld mit der Frage angezeigt, ob [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auch alle Verweise im Projekt in das Code Element umbenannt werden sollen.
 
-## <a name="see-also"></a>Siehe auch
- [Dialogfeld „Optionen“, Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

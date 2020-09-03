@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryBytes | Microsoft Docs
+title: 'IDebugProperty2:: getmemorybytes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7d13fa3821a6d7bf861cd160a5588d0788b92243
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721479"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
-Ruft die Speicherbytes ab, aus denen der Wert einer Eigenschaft besteht.
+Ruft die Arbeitsspeicher Bytes ab, die den Wert einer Eigenschaft bilden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>Parameter
 `ppMemoryBytes`\
-[out] Gibt ein [IDebugMemoryBytes2-Objekt](../../../extensibility/debugger/reference/idebugmemorybytes2.md) zurück, das zum Abrufen des Speichers verwendet werden kann, der den Wert der Eigenschaft enthält.
+vorgenommen Gibt ein [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt zurück, das verwendet werden kann, um den Arbeitsspeicher abzurufen, der den Wert der-Eigenschaft enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETMEMORYBYTES_NO_MEMORY_BYTES` zurück, wenn keine Speicherbytes abgerufen werden müssen.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben. Gibt zurück `S_GETMEMORYBYTES_NO_MEMORY_BYTES` , wenn keine Speicher Bytes abgerufen werden müssen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

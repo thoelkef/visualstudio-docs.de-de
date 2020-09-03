@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286192"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Beginnen mit der Entwicklung von Visual Studio-Erweiterungen
@@ -63,7 +63,7 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die die meisten Benut
 
 - [Visual Studio Isolated Shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>Welche Projektvorlagen werden vom VSSDK bereitgestellt?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Welche Projektvorlagen werden vom VSSDK bereitgestellt?
  Die zwei Haupttypen von Erweiterungen sind VSPackages und MEF-Erweiterungen. Im Allgemeinen werden VSPackage-Erweiterungen für Erweiterungen verwendet, die Befehle, Tool Fenster und Projekte verwenden oder erweitern. MEF-Erweiterungen werden zum Erweitern oder Anpassen des Visual Studio-Editors verwendet.
 
  Für Visual c#-und Visual Basic Erweiterungen bietet das VSSDK eine leere VSIX-Projektvorlage, die Sie in Verbindung mit den neuen Element Vorlagen, die Menübefehle, Tool Fenster und Editor Erweiterungen erstellen, verwenden können. Sie können diese Vorlage auch verwenden, um Projektvorlagen, Code Ausschnitte und andere Artefakte für die Verteilung an andere Benutzer zu verpacken.

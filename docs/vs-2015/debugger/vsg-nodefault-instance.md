@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c7d2263642c2ff8a2c36f274d2c7b80745ed845
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179485"
 ---
-# <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
+# <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiert durch das Vorhandensein, ob eine Standardinstanz von die [VsgDbg-Klasse](../debugger/vsgdbg-class.md) Klasse, die die programmgesteuerte erfassungsschnittstelle bereitstellt – angegeben wird.  
+Definiert durch das Vorhandensein, ob eine Standardinstanz der [VsgDbg Class](../debugger/vsgdbg-class.md)-Klasse bereitgestellt wird, die die programmgesteuerte Erfassungsschnittstelle bereitstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,7 +41,7 @@ VsgDbg *g_pVsgDbg;
   
  Wenn die Standardinstanz nicht deaktiviert ist, wird sie automatisch initialisiert, bevor Ihr Programm ausgeführt wird, und automatisch zerstört, wenn das Programm endet. Sie müssen diese Instanz nicht explizit initialisieren oder deinitialisieren.  
   
- Um die Standardinstanz zu deaktivieren, müssen Sie definieren `VSG_NODEFAULT_INSTANCE` bevor Sie einfügen `vsgcapture.h` in Ihrem Programm.  
+ Um die Standardinstanz zu deaktivieren, müssen Sie `VSG_NODEFAULT_INSTANCE` definieren, bevor Sie `vsgcapture.h` in das Programm einschließen.  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt das Deaktivieren der Standardinstanz:  

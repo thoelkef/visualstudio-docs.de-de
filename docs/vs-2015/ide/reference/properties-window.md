@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 959bd36995ca4086bf64020816b00aee6f777fbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662075"
 ---
 # <a name="properties-window"></a>Eigenschaftenfenster
@@ -36,9 +36,9 @@ In diesem Fenster können Sie die Eigenschaften und Ereignisse zur Entwurfszeit 
  Je nach den Erfordernissen der einzelnen Eigenschaften werden im **Eigenschaftenfenster** verschiedene Arten von Bearbeitungsfeldern angezeigt. Diese Bearbeitungsfelder bestehen beispielsweise aus Eingabefeldern, Dropdownlisten und Links zu benutzerdefinierten Editor-Dialogfeldern. In Grau angezeigte Eigenschaften sind schreibgeschützt.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- Objektname listet die aktuell ausgewählten Objekte auf. Es werden nur die Objekte im aktiven Editor bzw. Designer angezeigt. Wenn Sie mehrere Objekte auswählen, werden nur die Eigenschaften aufgeführt, über die alle ausgewählten Objekte verfügen.
+ Objektname listet die aktuell ausgewählten Objekte auf. Es werden nur die Objekte aus dem aktiven Editor oder Designer angezeigt. Wenn Sie mehrere Objekte auswählen, werden nur die Eigenschaften aufgeführt, über die alle ausgewählten Objekte verfügen.
 
- Kategorisiert listet alle Eigenschaften und Eigenschaftswerte für das ausgewählte Objekt nach Kategorie auf. Kategorien können reduziert werden, um die Anzahl von sichtbaren Eigenschaften zu verringern. Wenn Sie eine Kategorie erweitern oder reduzieren, wird links neben dem Kategorienamen ein Pluszeichen (+) oder ein Minuszeichen (-) angezeigt. Die Kategorien werden in alphabetischer Reihenfolge aufgeführt.
+ Kategorisiert listet alle Eigenschaften und Eigenschaftswerte für das ausgewählte Objekt nach Kategorie auf. Sie können eine Kategorie reduzieren, um die Anzahl der angezeigten Eigenschaften zu verringern. Wenn Sie eine Kategorie reduzieren oder erweitern, wird ein Pluszeichen (+) bzw. ein Minuszeichen (-) auf der linken Seite des Kategorienamens angezeigt. Kategorien sind in alphabetischer Reihenfolge aufgelistet.
 
  Alphabetisch sortiert alle Entwurfszeit Eigenschaften und Ereignisse für ausgewählte Objekte. Zum Bearbeiten einer nicht abgeblendeten Eigenschaft klicken Sie auf die Zelle rechts neben der Eigenschaft und nehmen die Änderungen vor.
 
@@ -72,5 +72,5 @@ In diesem Fenster können Sie die Eigenschaften und Ereignisse zur Entwurfszeit 
 
  Search stellt eine Suchfunktion für Eigenschaften und Ereignisse bereit, wenn XAML-Dateien im Designer bearbeitet werden. Das Suchfeld reagiert auf die Suche nach Wortteilen. Die Suchergebnisse werden bei der Eingabe aktualisiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Projekteigenschaften Referenz](../../ide/reference/project-properties-reference.md) [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

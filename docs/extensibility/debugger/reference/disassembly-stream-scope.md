@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
+title: DISASSEMBLY_STREAM_SCOPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737271"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
-Gibt den Bereich des Demontagestreams an.
+Gibt den Gültigkeitsbereich des disassemblystreams an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,30 +48,30 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 ## <a name="fields"></a>Felder
 `DSS_HUGE`\
-Gibt an, dass die Demontage des Codekontexts mehr Ausgabe generiert, als ein Client normalerweise in einem einzelnen Aufruf abrufen möchte.
+Gibt an, dass die Disassemblierung des Code Kontexts eine größere Ausgabe generieren würde, als ein Client in der Regel in einem einzigen-Befehl abrufen soll.
 
 `DSS_FUNCTION`\
-Gibt an, dass die im Codekontext enthaltene Funktion demontiert werden soll. Gibt an, dass der Demontagestream eine Funktion darstellt, wenn er von der [GetScope-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) zurückgegeben wird.
+Gibt an, dass die im Code Kontext enthaltene Funktion disassembliert werden soll. Gibt an, dass der disassemblystream eine Funktion darstellt, wenn Sie von der [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) -Methode zurückgegeben wird
 
 `DSS_MODULE`\
-Wenn die `IDebugDisassemblyStream2::GetScope` Methode zurückgegeben wird, gibt sie an, dass der Demontagestream ein Modul darstellt.
+Gibt bei Rückgabe durch die-Methode an, `IDebugDisassemblyStream2::GetScope` dass der disassemblystream ein Modul darstellt.
 
 `DSS_ALL`\
-Gibt die Demontage für den gesamten Adressraum an.
+Gibt die Disassembly für den gesamten Adressraum an.
 
 ## <a name="remarks"></a>Bemerkungen
-Übergeben als Argument an die [GetDisassemblyStream-Methode](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) und wird von der [GetScope-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) zurückgegeben.
+Wird als Argument an die [getdisassemblystream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) -Methode übergeben und von der [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) -Methode zurückgegeben.
 
-Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
+Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
 - [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

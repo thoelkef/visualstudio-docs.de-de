@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_uniqueid | Microsoft-Dokumentation'
+title: 'IDiaSourceFile:: get_uniqueId | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5237d8a524bd77f67c86a650bb4c8f075e407fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190626"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.  
+Ruft einen einfachen ganzzahligen Schlüsselwert ab, der für dieses Bild eindeutig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_uniqueId ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.  
+ vorgenommen Gibt einen einfachen ganzzahligen Schlüsselwert zurück, der für dieses Bild eindeutig ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Vergleichen von Schlüsseln, anstatt Zeichenfolgen Line Number Verarbeitung beschleunigt werden können.  
+## <a name="remarks"></a>Bemerkungen  
+ Das Vergleichen von Schlüsseln anstelle von Zeichen folgen kann die Verarbeitung von Zeilennummern beschleunigen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

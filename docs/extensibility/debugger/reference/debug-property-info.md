@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO | Microsoft Docs
+title: DEBUG_PROPERTY_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737450"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
-Enthält Informationen zu einer Debugeigenschaft.
+Enthält Informationen über eine Debug-Eigenschaft.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,35 +53,35 @@ public struct DEBUG_PROPERTY_INFO {
 
 ## <a name="members"></a>Member
 `dwValidFields`\
-Eine Kombination von [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Flags aus der DEBUGPROP_INFO_FLAGS-Enumeration, die angibt, welche Felder ausgefüllt werden.
+Eine Kombination von Flags aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
 `bstrFullName`\
 Der vollständige Name der Eigenschaft.
 
 `bstrName`\
-Der Eigenschaftsname in einem Kontext.
+Der Eigenschaftsname innerhalb eines Kontexts.
 
 `bstrType`\
-Der Eigenschaftstyp als formatierte Zeichenfolge.
+Der Eigenschaftentyp als formatierte Zeichenfolge.
 
 `bstrValue`\
-Der Eigenschaftswert als formatierte Zeichenfolge.
+Der Eigenschafts Wert als formatierte Zeichenfolge.
 
 `pProperty`\
-Das [IDebugProperty2-Objekt,](../../../extensibility/debugger/reference/idebugproperty2.md) das von dieser Struktur beschrieben wird.
+Das von dieser-Struktur beschriebene [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt.
 
 `dwAttrib`\
-Eine Kombination von [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Flags aus der DBG_ATTRIB_FLAGS-Enumeration, die die Attribute dieser Eigenschaft beschreibt.
+Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) -Enumeration, die die Attribute dieser Eigenschaft beschreibt.
 
 ## <a name="remarks"></a>Bemerkungen
-Eine Eigenschaft ist ein Objekt hierarchischer Natur mit einem Namen, Typ und Wert. Beispielsweise kann eine Eigenschaft lokale Variablen, Parameter, Überwachungsvariablen und Ausdrücke sowie Register beschreiben.
+Eine Eigenschaft ist ein Objekt einer hierarchischen Natur, das einen Namen, einen Typ und einen Wert hat. Eine Eigenschaft kann z. b. lokale Variablen, Parameter, Überwachungs Variablen und Ausdrücke beschreiben und registriert werden.
 
-Diese Struktur wird an die [GetPropertyInfo-Methode](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) übergeben, bei der sie ausgefüllt wird. Diese Struktur wird auch als Teil einer Liste dieser Struktur von der [IEnumDebugPropertyInfo2-Schnittstelle](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) zurückgegeben, die wiederum von einem Aufruf der [EnumChildren-](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) und [EnumProperties-Methoden](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) zurückgegeben wird.
+Diese Struktur wird an die [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) -Methode übermittelt, wo Sie ausgefüllt ist. Diese Struktur wird auch als Teil einer Liste dieser Struktur von der [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) -Schnittstelle zurückgegeben, die wiederum von einem Rückruf der [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) -Methode und der [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) -Methode zurückgegeben wird.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

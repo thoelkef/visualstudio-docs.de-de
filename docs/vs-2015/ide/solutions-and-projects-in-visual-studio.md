@@ -1,5 +1,5 @@
 ---
-title: Projektmappen und Projekte
+title: Lösungen und Projekte
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661195"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
@@ -70,23 +70,23 @@ Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-in
 
  Das folgende Diagramm zeigt die Beziehung zwischen Projekten und Projektmappen und die Elemente, die sie logisch enthalten.
 
- ![Visual Studio-Projekte und -Projektmappen](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Visual Studio-Projekte und -Projektmappen](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  Sie können auch benutzerdefinierte Projekte und Elementvorlagen erstellen. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Erstellen neuer Projekte
- Die einfachste Möglichkeit zum Erstellen eines neuen Projekts ist eine vordefinierte Projektvorlage, die eine Reihe grundlegender vorab generierten Codedateien, Konfigurationsdateien, Assets und Einstellungen für die ersten Schritte mit einer bestimmten Anwendungsart oder Website in einer bestimmten Programmiersprache enthält. Diese Vorlagen finden Sie im Hauptmenü im **Dialogfeld „Neues Projekt“** , wenn Sie **Datei &#124; Neu &#124; Projekt** oder **Datei &#124; Neu &#124; Website** auswählen und dann navigieren. Weitere Informationen finden Sie unter [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md) und [NIB Erstellen von Projekten aus Vorlagen](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Die einfachste Möglichkeit zum Erstellen eines neuen Projekts ist eine vordefinierte Projektvorlage, die eine Reihe grundlegender vorab generierten Codedateien, Konfigurationsdateien, Assets und Einstellungen für die ersten Schritte mit einer bestimmten Anwendungsart oder Website in einer bestimmten Programmiersprache enthält. Diese Vorlagen finden Sie im Hauptmenü im **Dialogfeld „Neues Projekt“**, wenn Sie **Datei &#124; Neu &#124; Projekt** oder **Datei &#124; Neu &#124; Website** auswählen und dann navigieren. Weitere Informationen finden Sie unter [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md) und [NIB Erstellen von Projekten aus Vorlagen](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Verwalten von Projekten im Projektmappen-Explorer
  Nachdem Sie ein neues Projekt erstellt haben, verwenden Sie den **Projektmappen-Explorer** , um Projekte und Projektmappen sowie zugehörige Elemente anzuzeigen und zu verwalten. Die folgende Abbildung zeigt den Server-Explorer mit einer C#-Projektmappe, die zwei Projekte enthält.
 
- ![Projektmappen-Explorer](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![Projektmappen-Explorer](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 - [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)
 
-- [Hinzufügen und Entfernen von Projektelementen](../ide/adding-and-removing-project-items.md)
+- [Hinzufügen und Entfernen von Projekt Elementen](../ide/adding-and-removing-project-items.md)
 
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)
 
@@ -96,11 +96,11 @@ Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-in
 
 - [Verwalten der Signierung von Assemblys und Manifesten](../ide/managing-assembly-and-manifest-signing.md)
 
-- [Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Gewusst wie: Angeben eines Anwendungs Symbols (Visual Basic, c#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [Festlegen einer bestimmten .NET-Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md)
 
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-IDE](../ide/visual-studio-ide.md)

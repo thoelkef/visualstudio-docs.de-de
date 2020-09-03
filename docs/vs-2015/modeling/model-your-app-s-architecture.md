@@ -1,5 +1,5 @@
 ---
-title: Modellieren der APP&#39;-Architektur | Microsoft-Dokumentation
+title: Modellieren der APP&#39;s-Architektur | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,18 +12,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41dbb7b996c32af10010694935cbd3660b462f73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609635"
 ---
-# <a name="model-your-app39s-architecture"></a>Modellieren der APP&#39;-Architektur
+# <a name="model-your-app39s-architecture"></a>Modellieren der APP&#39;s-Architektur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen der Benutzer erfüllt, können Sie Modelle in Visual Studio als Teil ihrer Beschreibung der Gesamtstruktur und des Verhaltens des Software Systems oder der Anwendung erstellen. Mit Modellen können Sie auch Muster beschreiben, die im gesamten Entwurf verwendet werden. Mithilfe dieser Modelle können Sie die vorhandene Architektur verstehen, Änderungen erörtern und Ihre Absichten eindeutig vermitteln.
+Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen der Benutzer erfüllt, können Sie in Visual Studio im Rahmen der Beschreibung von Gesamtstruktur und Verhalten des Softwaresystems oder der Anwendung Modelle erstellen. Mit Modellen können Sie auch Muster beschreiben, die im gesamten Entwurf verwendet werden. Mithilfe dieser Modelle können Sie die vorhandene Architektur verstehen, Änderungen erörtern und Ihre Absichten eindeutig vermitteln.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Ein Modell soll die Mehrdeutigkeiten in Beschreibungen in natürlicher Sprache reduzieren und Ihnen und Ihren Kollegen helfen, den Entwurf visuell darzustellen sowie alternative Entwürfe zu erörtern. Ein Modell sollte zusammen mit anderen Dokumenten oder Diskussionen verwendet werden. Ein Modell an sich stellt keine vollständige Spezifikation der Architektur dar.
 
@@ -36,7 +36,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 
 - [Entwurfsmuster](#Patterns) und Konventionen, die in den Entwürfen der Komponenten verwendet werden. Ein Muster beschreibt eine bestimmte Methode zum Erreichen eines Programmierziels. Wenn das Team während des gesamten Entwurfs die gleichen Entwurfsmuster verwendet, lässt sich der Aufwand zum Durchführen von Änderungen und Entwickeln neuer Software verringern.
 
-## <a name="Structure"></a>Allgemeiner Entwurf
+## <a name="high-level-design"></a><a name="Structure"></a> Allgemeiner Entwurf
  Ein allgemeiner Entwurf beschreibt die Hauptkomponenten des Systems und ihre Interaktion zum Erreichen der Ziele des Entwurfs. Das Entwickeln des allgemeinen Entwurfs umfasst die Aktivitäten in der folgenden Liste, wenn auch nicht unbedingt in einer bestimmten Reihenfolge.
 
  Wenn Sie vorhandenen Code aktualisieren, sollten Sie zunächst die Hauptkomponenten beschreiben. Stellen Sie sicher, dass Sie ggf. vorhandene Änderungen der Benutzeranforderungen verstehen, und fügen Sie dann Interaktionen zwischen den Komponenten hinzu, oder ändern Sie diese. Wenn Sie ein neues System entwickeln, ermitteln Sie zunächst die Hauptmerkmale der Benutzeranforderungen. Sie können dann Sequenzen von Interaktionen für die Hauptanwendungsfälle untersuchen und anschließend die Sequenzen in einem Komponentenentwurf konsolidieren.
@@ -53,7 +53,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 
 - [Datenmodell der Komponenten und Schnittstellen](#Data). Sie können Klassendiagramme zeichnen, um die Informationen zu beschreiben, die zwischen Komponenten übergeben und in den Komponenten gespeichert werden.
 
-## <a name="Requirements"></a>Grundlegendes zu den Anforderungen
+## <a name="understanding-the-requirements"></a><a name="Requirements"></a> Grundlegendes zu den Anforderungen
  Der allgemeine Entwurf für eine vollständige Anwendung wird am effektivsten zusammen mit einem Anforderungsmodell oder einer anderen Beschreibung der Benutzeranforderungen entwickelt. Weitere Informationen zu Anforderungs Modellen finden Sie unter [Modell Benutzeranforderungen](../modeling/model-user-requirements.md).
 
  Wenn das System, das Sie entwickeln, eine Komponente in einem größeren System ist, können Ihre Anforderungen vollständig oder teilweise in programmgesteuerte Schnittstellen aufgenommen werden.
@@ -78,7 +78,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 
   Der Umfang an Informationen, die Sie in ein Anforderungsmodell oder ein Architekturmodell aufnehmen sollten, hängt vom Umfang des Projekts sowie der Größe des Teams und der räumlichen Verteilung seiner Mitglieder ab. Ein kleines Team in einem kurzen Projekt braucht eventuell lediglich ein Klassendiagramm der Geschäftskonzepte und einige Entwurfsmuster zu skizzieren; ein großes Projekt, das über mehr als einen Bereich ausgeliefert wurde, wird deutlich mehr Details erfordern.
 
-## <a name="BigDecisions"></a>Architekturmuster
+## <a name="architectural-patterns"></a><a name="BigDecisions"></a> Architekturmuster
  Sie müssen zu einem frühen Zeitpunkt der Entwicklung Optionen für die wichtigsten Technologien und Elemente auswählen, von denen der Entwurf abhängt. Diese Optionen müssen in den folgenden Bereichen ausgewählt werden:
 
 - Optionen für die Basistechnologie, z. B. Auswahl einer Datenbank oder eines Dateisystems, Auswahl einer Netzwerkanwendung oder eines Webclients usw.
@@ -91,7 +91,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 
   Die von Ihnen ausgewählten Optionen wirken sich darauf aus, wie Sie das Architekturmodell verwenden und interpretieren. Beispielsweise können in einem System mit einer Datenbank Zuordnungen in einem Klassendiagramm Beziehungen oder Fremdschlüssel in der Datenbank darstellen, während in einem auf XML-Dateien basierenden System Zuordnungen Querverweise angeben können, die XPath verwenden. In einem verteilten System können Meldungen in einem Sequenzdiagramm Meldungen in einer Verbindung darstellen, und in einer unabhängigen Anwendung können sie Funktionsaufrufe darstellen.
 
-## <a name="Components"></a>Komponenten und ihre Schnittstellen
+## <a name="components-and-their-interfaces"></a><a name="Components"></a> Komponenten und ihre Schnittstellen
  Die wichtigsten Empfehlungen dieses Abschnitts lauten wie folgt:
 
 - Erstellen Sie Komponentendiagramme, um die Hauptbestandteile des Systems darzustellen.
@@ -107,7 +107,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 ### <a name="components"></a>Komponenten
  Die zentralen Ansichten eines Architekturmodells sind die Komponentendiagramme, die die Hauptbestandteile des Systems und ihre gegenseitigen Abhängigkeiten darstellen. Weitere Informationen zu Komponenten Diagrammen finden Sie unter [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md).
 
- ![UML-Komponenten Diagramm, das Teile anzeigt](../modeling/media/uml-barecomponent.png "UML_BareComponent")
+ ![UML-Komponentendiagramm mit Teilen](../modeling/media/uml-barecomponent.png "UML_BareComponent")
 
  Ein typisches Komponentendiagramm für ein umfangreiches System kann beispielsweise folgende Komponenten enthalten:
 
@@ -178,7 +178,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 
   Die Verwendung erforderlicher Schnittstellen ist normalerweise der Verwendung von Teilen vorzuziehen. Der Entwurf kann zwar mehr Zeit beanspruchen, jedoch ist das resultierende System flexibler. Es ist auch einfacher, die Komponenten getrennt zu testen. Hierdurch lässt sich die Kopplung in den Entwicklungsplänen reduzieren.
 
-## <a name="Interactions"></a>Interaktionen zwischen Komponenten
+## <a name="interactions-between-components"></a><a name="Interactions"></a> Interaktionen zwischen Komponenten
  Die wichtigsten Empfehlungen dieses Abschnitts lauten wie folgt:
 
 - Identifizieren Sie die Anwendungsfälle des Systems.
@@ -218,14 +218,14 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 
  Es ist sinnvoll, den Aktivitäts- oder Sequenzdiagrammen Kommentare hinzuzufügen, um anzugeben, was nach jedem Vorgang erreicht wurde. Sie können auch die Auswirkung jedes Vorgangs in seine **lokale** nach Bedingungs Eigenschaft schreiben.
 
-### <a name="Data"></a>Datenmodell der Komponenten und Schnittstellen
+### <a name="data-model-of-the-components-and-interfaces"></a><a name="Data"></a> Datenmodell der Komponenten und Schnittstellen
  Definieren Sie die Parameter und Rückgabewerte jedes Vorgangs in den Komponentenschnittstellen. Wenn die Vorgänge Aufrufe darstellen, z. B. Webdienstanforderungen, sind die Parameter die Informationen, die als Teil der Anforderung gesendet werden. Wenn mehrere Werte von einem Vorgang zurückgegeben werden, können Sie Parameter verwenden, bei denen die **Direction** -Eigenschaft auf **out**festgelegt ist.
 
  Jeder Parameter und Rückgabewert verfügt über einen Typ. Sie können diese Typen mit UML-Klassendiagrammen definieren. Sie müssen in diesen Diagrammen keine Implementierungsdetails darstellen. Wenn Sie z. B. Daten beschreiben, die als XML-Daten gesendet werden, können Sie mit einer Zuordnung jede Art von Querweisen zwischen XML-Knoten und mit Klassen Knoten darstellen.
 
  Verwenden Sie Kommentare, um Geschäftseinschränkungen der Zuordnungen und Attribute zu beschreiben. Wenn beispielsweise alle Elemente in der Bestellung eines Kunden von demselben Lieferanten geliefert werden müssen, können Sie dies mithilfe der Zuordnungen zwischen den Bestellungselementen und den Elementen im Produktkatalog sowie zwischen dem Katalogelement und dem zugehörigen Lieferanten beschreiben.
 
-## <a name="Patterns"></a>Entwurfsmuster
+## <a name="design-patterns"></a><a name="Patterns"></a> Entwurfsmuster
  Ein Entwurfsmuster skizziert den Entwurf eines bestimmten Aspekts der Software, insbesondere eines Aspekts, der in verschiedenen Teilen des Systems vorhanden ist. Wenn Sie im gesamten Projekt eine einheitliche Vorgehensweise anwenden, können Sie den Aufwand für den Entwurf verringern, die Konsistenz der Benutzeroberfläche sicherstellen und den Aufwand für das Verstehen und Ändern des Codes reduzieren.
 
  Einige allgemeine Entwurfsmuster, z. B. das Beobachtermuster, sind bekannt und in vielfältigen Szenarien anwendbar. Darüber hinaus gibt es Muster, die nur auf das spezifische Projekt anwendbar sind. Beispielsweise enthält ein Webvertriebssystem mehrere Vorgänge im Code, mit denen Änderungen an einer Kundenbestellung vorgenommen werden. Um sicherzustellen dass der Zustand der Bestellung in jeder Phase korrekt angezeigt wird, müssen all diese Vorgänge einem bestimmten Protokoll zum Aktualisieren der Datenbank entsprechen.
@@ -256,5 +256,5 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung die Anforderungen
 
 - Eine Beschreibung von Varianten, die Entwickler möglicherweise anwenden können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [visualisieren von Code](../modeling/visualize-code.md) [Modell-Benutzer Anforderungen](../modeling/model-user-requirements.md) [entwickeln von Tests aus einem Modell verwenden von](../modeling/develop-tests-from-a-model.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)

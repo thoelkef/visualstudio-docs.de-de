@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 182f28a2b21ae3129ce0d34fae97280ba0a07218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603596"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Vorgehensweise: Festlegen von Haltepunkten in Workflows (Vorgängerversion)
@@ -49,7 +49,7 @@ In diesem Thema wird das Festlegen von Haltepunkten in [!INCLUDE[wf](../includes
 
      Das Dialogfeld **Neuer Haltepunkt** wird geöffnet.
 
-3. Geben Sie den Namen einer Aktivität im Textfeld **Funktion** mit der folgenden Syntax an: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.
+3. Geben Sie den Namen einer Aktivität im Textfeld **Funktion** an, indem Sie die folgende Syntax verwenden: `QualifiedActivityId[:[FullClassName][:InstanceId]]` .
 
     > [!NOTE]
     > Anstatt den Aktivitäts Namen im Textfeld **Funktion** zu verwenden, können Sie optional einen Haltepunkt festlegen, indem Sie den absoluten Pfad der Workflow Aktivität angeben. Angenommen, Sie verfügen über eine Workflow Lösung namens **WorkflowConsoleApplication1** und einen Workflow in der Projekt Mappe mit dem Namen **Workflow1** , die eine Aktivität mit dem Namen **Delay1**verwendet. Sie können den Aktivitäts Namen **Delay1** verwenden oder den Pfad als **Delay1: WorkflowConsoleApplication1. Workflow1** oder **Delay1: WorkflowConsoleApplication1. Workflow1: {6614886a-608e-412b-bf98-99ff1559dddf}** angeben.
@@ -62,5 +62,5 @@ In diesem Thema wird das Festlegen von Haltepunkten in [!INCLUDE[wf](../includes
 
 6. Klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Debuggen von Legacy Workflows](../workflow-designer/debugging-legacy-workflows.md) [Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Legacy)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
