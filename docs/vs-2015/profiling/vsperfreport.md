@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148229"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -45,7 +45,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  Es muss sich bei `vspfilename1 and vspfilename2` um gültige VSP- oder VSPS-Dateien handeln.  
   
 ## <a name="symbol-files"></a>Symboldateien  
- Das VSPerfReport-Befehlszeilentool benötigt Zugriff auf die Symboldateien (.pdb) der profilierten Komponenten und die Windows-Systemdateien, um Symbolinformationen wie Funktionsnamen und Zeilennummern anzuzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Das VSPerfReport-Befehlszeilentool benötigt Zugriff auf die Symboldateien (.pdb) der profilierten Komponenten und die Windows-Systemdateien, um Symbolinformationen wie Funktionsnamen und Zeilennummern anzuzeigen. Weitere Informationen finden Sie unter Gewusst [wie: Angeben von Symbol Dateispeicher Orten über die Befehlszeile](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Allgemeine Berichtsoptionen  
  In der folgenden Tabelle werden die allgemeinen Optionen zur Berichtsformatierung beschrieben sowie die Optionen, die die Daten auswählen, die gemeldet werden sollen.  
@@ -60,7 +60,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**SymbolPath:** `path`|Gibt mindestens einen Suchpfad oder Symbolserver an, die Symbole für die Profilerdatendatei enthalten.|  
 |**DebugSymPath**|Listet die Speicherorte auf, die nach den Symbolen durchsucht werden, und gibt an, ob diese gefunden werden. Diese Option ist nützlich für das Beheben von Problemen mit der Symbolauflösung.|  
 |**PackSymbols**|Speichert Symbole in der Profilerdatendatei (.vsp.), damit keine Symboldateien (.pdb) für die Analyse benötigt werden|  
-|**Ausgabe:** *Pfad*|*Dateiname*|Gibt einen alternativen Speicherort für die generierten Berichtsdateien an. Standardmäßig werden Berichte im aktuellen Verzeichnis erstellt.|  
+|**Ausgabe:** *Pfad*&#124;*Dateiname*|Gibt einen alternativen Speicherort für die generierten Berichtsdateien an. Standardmäßig werden Berichte im aktuellen Verzeichnis erstellt.|  
 |**SummaryFile**|Analysieren und speichern Sie die analysierten Informationen in einer VSPS-Zusammenfassungsdatei|  
 |**PrintMarks**|Zeigt die Namen und Zeitstempel sämtlicher Markierungen in einer Berichtsdatei an.|  
 |**?**|Zeigt Nutzungsinformationen an.|  
@@ -92,5 +92,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:** [*Spaltenname*]|Verwendet diese angegebene Spalte zum Vergleichen von Werten. Standardmäßig handelt es sich dabei um die Spalte mit dem prozentualen Anteil exklusiver Stichproben.|  
 |**QueryDiffTables**|Listet die gültigen Tabellen und Spalten für die beiden bereitgestellten Berichtsdateien auf.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Leistungs Berichts Ansichten](../profiling/performance-report-views.md)

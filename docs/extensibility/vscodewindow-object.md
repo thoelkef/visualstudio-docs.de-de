@@ -1,5 +1,5 @@
 ---
-title: VSCodeWindow-Objekt | Microsoft Docs
+title: Vscodewindow-Objekt | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,25 +14,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 55739b1ef577123ac0395b4c5cfb1e3c5dbc779f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697954"
 ---
-# <a name="vscodewindow-object"></a>VSCodeWindow-Objekt
-Ein Codefenster ist ein spezielles Dokumentfenster, das eine <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> oder mehrere Textansichten, in der Regel das Objekt, enthalten kann.
+# <a name="vscodewindow-object"></a>Vscodewindow-Objekt
+Ein Code Fenster ist ein spezielles Dokument Fenster, das mindestens eine Textansicht enthalten kann, in der Regel das <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> Objekt.
 
- Architektonisch ist das Codefenster ein Dokumentfenster, das sich innerhalb eines Fensterrahmens befindet. Funktionell ist das Codefenster einfach ein Dokumentfenster mit zusätzlichen Funktionen. Im MDI-Modus (Multiple Document Interface) ist das Codefenster der untergeordnete MDI-Frame. Weitere Informationen finden Sie unter [Anpassen von Codefenstern mithilfe der Legacy-API](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+ In der Architektur ist das Code Fenster ein Dokument Fenster, das sich innerhalb eines Fensterrahmens befindet. Funktionell ist das Code Fenster einfach ein Dokument Fenster mit zusätzlichen Features. Im MDI-Modus (Multiple Document Interface) ist das Code Fenster der untergeordnete MDI-Frame. Weitere Informationen finden Sie unter [Anpassen von Code Fenstern mit der Legacy-API](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
- Die folgende Tabelle enthält die <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> Schnittstellen im Objekt.
+ In der folgenden Tabelle sind die Schnittstellen des- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> Objekts enthalten.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Stellt einen generischen Zugriffsmechanismus bereit, um einen Dienst zu finden, den ein GLOBAL eindeutiger Bezeichner (GUID) identifiziert.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Stellt ein untergeordnetes Element für die Multi document Interface (MDI) dar, das eine oder mehrere Codeansichten enthält.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Stellt einen generischen Zugriffs Mechanismus bereit, um einen Dienst zu suchen, den eine Globally Unique Identifier (GUID) identifiziert.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Stellt ein untergeordnetes Multiple Document Interface (MDI)-Element dar, das mindestens eine Code Ansicht enthält.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Füllt einen Fensterrahmen.|
 
 ## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
-- [Zahlen bearbeiten](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Abbildungen bearbeiten](https://www.microsoft.com/download/details.aspx?id=55984)
