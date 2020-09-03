@@ -1,0 +1,196 @@
+- name: Visual Studio-Abonnements
+  href: index.yml
+- name: Neues
+  href: whats-new-in-subscriptions.md
+- name: Abonnements
+  items:
+    - name: Abonnements kaufen
+      items:
+        - name: Retail
+          href: buy-activate-retail.md
+        - name: Cloud
+          items:
+            - name: Übersicht
+              href: vscloud-overview.md
+            - name: Abrechnung – Häufig gestellte Fragen
+              href: vscloud-billing-faq.md
+            - name: Erwerben für CSPs
+              href: vscloud-csp.md
+        - name: Visual Studio mit GitHub Enterprise
+          href: access-github.md
+        - name: Microsoft Partner Network
+          items:
+            - name: Abonnements für Partner
+              href: program-mpn.md
+            - name: Verwalten von Abonnements für MPN
+              href: manage-mpn-subscriptions.md
+        - name: Microsoft für Startups
+          href: program-startups.md
+    - name: Anmelden
+      items:
+        - name: Anmelden mit Microsoft-Konten
+          href: sign-in-msa.md
+        - name: 'Anmelden mit einem Geschäfts-, Schul- oder Unikonto'
+          href: sign-in-work.md
+        - name: Anmelden mit GitHub
+          href: sign-in-github.md
+        - name: Verbundene Identitäten
+          href: use-connected-identities.md
+        - name: Alternative Identitäten
+          href: vs-alternate-identity.md
+        - name: Probleme beim Anmelden
+          href: sign-in-issues.md
+        - name: Anonymisierungen von Abonnentendaten
+          href: anonymization.md
+    - name: Übersicht über das Abonnementportal
+      href: using-the-subscriber-portal.md
+    - name: Verwalten Ihrer Abonnements
+      href: manage-vs-subscriptions.md
+    - name: Kontaktieren des Abonnementadministrators
+      href: contact-my-admin.md
+    - name: Vorteile
+      items:
+        - name: Tools
+          items:
+            - name: Einzelguthaben für Azure DevTest
+              href: vs-azure.md
+            - name: Azure DevOps
+              href: vs-azure-devops.md
+            - name: 'Azure DevTest: nutzungsbasierte Zahlung'
+              href: vs-azure-payg.md
+            - name: Azure EA DevTest
+              href: azure-ea-devtest.md
+            - name: CAST Highlight
+              href: vs-cast.md
+            - name: CloudPilot
+              href: vs-cloudpilot.md
+            - name: "Microsoft\_365-Apps für Unternehmen"
+              href: microsoft-365-apps-for-enterprise.md
+            - name: Microsoft 365-Entwickler
+              href: vs-m365.md
+            - name: Parasoft
+              href: vs-parasoft.md
+            - name: Power BI Pro
+              href: vs-pbi.md
+            - name: Visual Studio App Center
+              href: vs-visual-studio-app-center.md
+            - name: Visual Studio-IDE
+              href: vs-ide-benefit.md
+            - name: WhiteSource Bolt
+              href: vs-whitesource.md
+            - name: Windows-Entwicklerkonto
+              href: vs-windows-dev.md
+            - name: Windows Virtual Desktop
+              href: vs-windows-virtual-desktop.md
+        - name: Professionelle Entwicklung
+          items:
+            - name: CODE Magazine
+              href: vs-code-magazine.md
+            - name: DataCamp
+              href: vs-datacamp.md
+            - name: LinkedIn Learning
+              href: vs-linkedin-learning.md
+            - name: Pluralsight
+              href: vs-pluralsight.md
+        - name: Support
+          items:
+            - name: Azure-Community
+              href: vs-azure-community.md
+            - name: Concierge-Support
+              href: vs-concierge-chat.md
+            - name: Technischer Support
+              href: vs-tech-support.md
+- name: Software und Schlüssel
+  items:
+    - name: Softwaredownloads
+      items:
+        - name: Produktverfügbarkeit
+          href: product-availability.md
+        - name: Herunterladen von Software
+          href: download-software.md
+    - name: Liste der verfügbaren Softwaredownloads
+      href: software-download-list.md
+    - name: Product Keys
+      items:
+        - name: Übersicht über Product Keys
+          href: product-keys.md
+        - name: Suchen und Anfordern von Schlüsseln
+          href: find-keys.md
+        - name: Internetdemonstrationen
+          href: internet-demos.md
+- name: Administratoren
+  items:
+    - name: Administratoraufgaben
+      items:
+        - name: Administratoraufgaben
+          href: admin-responsibilities.md
+        - name: Inventur vor der Produktion
+          href: admin-inventory.md
+        - name: Verwalten von großen Teams und externen Vertragspartnern
+          href: manage-teams.md
+        - name: Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen
+          href: assignments-orders.md
+    - name: Zugriff auf das Administratorportal
+      items:
+        - name: Volumenlizenz
+          href: volume-license.md
+        - name: MPSA
+          href: mpsa.md
+        - name: Cloud-Abonnements
+          href: cloud-admin.md
+        - name: Partnerverwaltung für Kunden
+          href: open-migration.md
+        - name: 'Videotutorial: Zugriff auf das Administratorportal'
+          href: 'https://youtu.be/plSu6fpi7UI'
+    - name: Verwenden des Verwaltungsportals
+      items:
+        - name: Superadministratoren und Administratoren
+          href: admin-roles.md
+        - name: Festlegen von Vereinbarungseinstellungen
+          href: admin-prefs.md
+        - name: Übersicht
+          href: using-admin-portal.md
+        - name: Hinzufügen von Monatsabonnements
+          href: add-monthly-subs.md
+        - name: Zuweisen von Abonnements
+          items:
+            - name: Hinzufügen einzelner Benutzer
+              href: assign-license.md
+            - name: Hinzufügen mehrerer Benutzer
+              href: assign-license-bulk.md
+            - name: Zuweisen bestimmter Abonnements
+              href: assign-guid.md
+        - name: Bearbeiten von Abonnements
+          href: edit-license.md
+        - name: Löschen von Abonnements
+          href: delete-license.md
+        - name: Suchen nach einem Abonnement
+          href: search-license.md
+        - name: Exportieren von Abonnements
+          href: exporting-subscriptions.md
+        - name: Überlastungen
+          href: handle-overclaimed-license.md
+        - name: Maximale Nutzung
+          href: maximum-usage.md
+        - name: Abgelaufene Abonnements
+          href: handle-expired-license.md
+        - name: 'Anmeldeszenarios für Abonnenten '
+          href: aliasing.md
+        - name: Abonnenten mit Anmeldungen über private E-Mail-Adressen
+          href: personal-email-sign-ins.md
+        - name: Verwalten von Visual Studio mit GitHub Enterprise
+          href: assign-github.md
+- name: Ressourcen
+  items:
+    - name: Whitepaper zur Visual Studio-Lizenzierung
+      href: 'https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf'
+    - name: Vergleich von Abonnementoptionen und -preisen
+      href: 'https://visualstudio.microsoft.com/vs/pricing'
+    - name: Vergleich von Visual Studio-IDE-Features
+      href: 'https://visualstudio.microsoft.com/vs/compare'
+    - name: Support für die Verwaltung von Visual Studio und Abonnements
+      href: 'https://visualstudio.microsoft.com/support/support-overview-vs'
+    - name: Nutzungsbedingungen für die Volumenlizenzierung
+      href: 'https://www.microsoft.com/licensing/product-licensing/products.aspx'
+    - name: Microsoft Produkt- und Servicevertrag (MSPA)
+      href: 'https://www.microsoft.com/licensing/mpsa/default.aspx'

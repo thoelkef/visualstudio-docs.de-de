@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985456"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook
@@ -50,8 +50,8 @@ ms.locfileid: "72985456"
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -122,7 +122,7 @@ ms.locfileid: "72985456"
 
 - , Wenn der Benutzer im Menüband auf die UMSCHALT Fläche klickt. In diesem Fall muss das VSTO-Add-In den entsprechenden Aufgabenbereich anzeigen oder ausblenden.
 
-  Damit das VSTO-Add-in nachverfolgen kann, welcher benutzerdefinierte Aufgabenbereich den einzelnen geöffneten e-Mails zugeordnet ist, erstellen Sie eine benutzerdefinierte Klasse, die Paare von <xref:Microsoft.Office.Interop.Outlook.Inspector> und <xref:Microsoft.Office.Tools.CustomTaskPane> Objekten umschließt. Diese Klasse erstellt ein neues benutzerdefiniertes Aufgabenbereichs Objekt für jede e-Mail-Nachricht und löscht den benutzerdefinierten Aufgabenbereich, wenn die entsprechende e-Mail-Nachricht geschlossen wird.
+  Damit das VSTO-Add-in nachverfolgen kann, welcher benutzerdefinierte Aufgabenbereich den einzelnen geöffneten e-Mails zugeordnet ist, erstellen Sie eine benutzerdefinierte Klasse, die Paare von-und-Objekten umschließt <xref:Microsoft.Office.Interop.Outlook.Inspector> <xref:Microsoft.Office.Tools.CustomTaskPane> . Diese Klasse erstellt ein neues benutzerdefiniertes Aufgabenbereichs Objekt für jede e-Mail-Nachricht und löscht den benutzerdefinierten Aufgabenbereich, wenn die entsprechende e-Mail-Nachricht geschlossen wird.
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>So erstellen Sie eine Klasse zum Verwalten von Inspektor-Fenstern und benutzerdefinierten Aufgabenbereichen
 
@@ -148,7 +148,7 @@ ms.locfileid: "72985456"
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. Fügen Sie nach dem Code, den Sie im vorherigen Schritt hinzugefügt haben, die folgende Methode hinzu. Diese Methode ist ein Ereignishandler für das <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close>-Ereignis des <xref:Microsoft.Office.Interop.Outlook.Inspector> Objekts, das die aktuelle e-Mail-Nachricht enthält. Der Ereignishandler gibt Ressourcen frei, wenn die e-Mail-Nachricht geschlossen wird. Der Ereignishandler entfernt auch den aktuellen benutzerdefinierten Aufgabenbereich aus der `CustomTaskPanes` -Auflistung. Dadurch wird verhindert, dass mehrere Instanzen des benutzerdefinierten Aufgabenbereichs angezeigt werden, wenn die nächste e-Mail geöffnet wird.
+6. Fügen Sie nach dem Code, den Sie im vorherigen Schritt hinzugefügt haben, die folgende Methode hinzu. Diese Methode ist ein Ereignishandler für das- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> Ereignis des <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekts, das die aktuelle e-Mail-Nachricht enthält. Der Ereignishandler gibt Ressourcen frei, wenn die e-Mail-Nachricht geschlossen wird. Der Ereignishandler entfernt auch den aktuellen benutzerdefinierten Aufgabenbereich aus der `CustomTaskPanes` -Auflistung. Dadurch wird verhindert, dass mehrere Instanzen des benutzerdefinierten Aufgabenbereichs angezeigt werden, wenn die nächste e-Mail geöffnet wird.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -159,7 +159,7 @@ ms.locfileid: "72985456"
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Initialisieren und Bereinigen von Ressourcen, die vom Add-in verwendet werden
- Fügen Sie der `ThisAddIn` -Klasse Code hinzu, durch den das VSTO-Add-In beim Laden initialisiert und die vom VSTO-Add-In verwendeten Ressourcen beim Entladen des Add-Ins bereinigt werden. Sie initialisieren das VSTO-Add-in, indem Sie einen Ereignishandler für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>-Ereignis einrichten und alle vorhandenen e-Mail-Nachrichten an diesen Ereignishandler übergeben. Sobald das VSTO-Add-In entladen wird, trennen Sie den Ereignishandler und bereinigen die vom VSTO-Add-In verwendeten Objekte.
+ Fügen Sie der `ThisAddIn` -Klasse Code hinzu, durch den das VSTO-Add-In beim Laden initialisiert und die vom VSTO-Add-In verwendeten Ressourcen beim Entladen des Add-Ins bereinigt werden. Sie initialisieren das VSTO-Add-in, indem Sie einen Ereignishandler für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis einrichten und alle vorhandenen e-Mail-Nachrichten an diesen Ereignishandler übergeben. Sobald das VSTO-Add-In entladen wird, trennen Sie den Ereignishandler und bereinigen die vom VSTO-Add-In verwendeten Objekte.
 
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>So initialisieren und bereinigen Sie die vom VSTO-Add-In verwendeten Ressourcen
 
@@ -174,17 +174,17 @@ ms.locfileid: "72985456"
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]
 
-3. Ersetzen Sie die `ThisAddIn_Startup` -Methode durch folgenden Code: Dieser Code fügt einen Ereignishandler an das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis an und übergibt alle vorhandenen <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekte an den Ereignishandler. Wenn der Benutzer das VSTO-Add-in nach der bereits Ausführung von Outlook lädt, verwendet das VSTO-Add-in diese Informationen, um benutzerdefinierte Aufgabenbereiche für alle bereits geöffneten e-Mail-Nachrichten zu erstellen.
+3. Ersetzen Sie die `ThisAddIn_Startup`-Methode durch den folgenden Code. Dieser Code fügt einen Ereignishandler an das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis an und übergibt alle vorhandenen <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekte an den Ereignishandler. Wenn der Benutzer das VSTO-Add-in nach der bereits Ausführung von Outlook lädt, verwendet das VSTO-Add-in diese Informationen, um benutzerdefinierte Aufgabenbereiche für alle bereits geöffneten e-Mail-Nachrichten zu erstellen.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]
 
-4. Ersetzen Sie die `ThisAddIn_ShutDown` -Methode durch folgenden Code: Dieser Code trennt den <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignishandler und bereinigt die vom VSTO-Add-In verwendeten Objekte.
+4. Ersetzen Sie die `ThisAddIn_ShutDown`-Methode durch den folgenden Code. Dieser Code trennt den <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignishandler und bereinigt die vom VSTO-Add-In verwendeten Objekte.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. Fügen Sie der <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Klasse den folgenden `ThisAddIn` -Ereignishandler hinzu. Wenn eine neue <xref:Microsoft.Office.Interop.Outlook.Inspector> eine e-Mail-Nachricht enthält, erstellt die Methode eine Instanz eines neuen `InspectorWrapper`-Objekts, um die Beziehung zwischen der e-Mail und dem entsprechenden Aufgabenbereich zu verwalten.
+5. Fügen Sie der <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Klasse den folgenden `ThisAddIn` -Ereignishandler hinzu. Wenn eine neue eine <xref:Microsoft.Office.Interop.Outlook.Inspector> e-Mail-Nachricht enthält, erstellt die Methode eine Instanz eines neuen- `InspectorWrapper` Objekts, um die Beziehung zwischen der e-Mail und dem entsprechenden Aufgabenbereich zu verwalten.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
@@ -194,7 +194,7 @@ ms.locfileid: "72985456"
     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]
 
-## <a name="checkpoint"></a>Checkpoint
+## <a name="checkpoint"></a>Prüfpunkt
  Erstellen Sie Ihr Projekt, um sicherzustellen, dass es ohne Fehler kompiliert wird.
 
 ### <a name="to-build-your-project"></a>So erstellen Sie das Projekt
@@ -258,7 +258,7 @@ ms.locfileid: "72985456"
     Das VSTO-Add-In behandelt auch komplexere Szenarien, die Sie ausprobieren können. Beispielsweise können Sie das Verhalten beim Anzeigen von e-Mails testen, indem Sie die Schaltflächen **nächstes Element** und **Vorheriges Element** verwenden. Sie können das Verhalten auch testen, wenn Sie das VSTO-Add-in entladen, mehrere e-Mail-Nachrichten öffnen und das VSTO-Add-in erneut laden.
 
 ## <a name="next-steps"></a>Nächste Schritte
- Weitere Informationen über das Erstellen benutzerdefinierter Aufgabenbereiche finden Sie in den folgenden Themen:
+ Weitere Informationen über das Erstellen von benutzerdefinierten Aufgabenbereichen finden Sie in diesen Themen:
 
 - Erstellen Sie einen benutzerdefinierten Aufgabenbereich in einem VSTO-Add-in für eine andere Anwendung. Weitere Informationen zu den Anwendungen, die benutzerdefinierte Aufgabenbereiche unterstützen, finden Sie unter [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.
 
@@ -266,7 +266,7 @@ ms.locfileid: "72985456"
 
 - Erstellen einer Menübandschaltfläche in Excel, über die ein benutzerdefinierter Aufgabenbereich ausgeblendet oder angezeigt werden kann. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menü Band Schaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)
 - [Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

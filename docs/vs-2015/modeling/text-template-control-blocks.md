@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d78f20116552c34d36def4eaf28e5e5bc56f7875
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652344"
 ---
 # <a name="text-template-control-blocks"></a>Kontrollblöcke für Textvorlagen
@@ -122,7 +122,7 @@ Some text.
 > [!NOTE]
 > Einem Klassenfunktionskontrollblock darf nicht von Standardkontrollblöcken in derselben Vorlagendatei gefolgt werden. Allerdings gilt diese Einschränkung nicht für das Ergebnis der Verwendung von `<#@include#>`-Direktiven. Jede enthaltene Datei kann Standardblöcke besitzen, denen von Klassenfunktionsblöcken gefolgt wird.
 
- Sie können eine Funktion erstellen, die Ausgaben durch das Einbetten von Text und Ausdrucksblöcken in einem Klassenfunktionskontrollblock generiert. Beispiel:
+ Sie können eine Funktion erstellen, die Ausgaben durch das Einbetten von Text und Ausdrucksblöcken in einem Klassenfunktionskontrollblock generiert. Zum Beispiel:
 
 ```
 <#+
@@ -146,11 +146,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>So verwenden Sie Kontrollblöcke
- Der gesamte Code in all den Standard- und Ausdruckskontrollblöcken in einer einzelnen Vorlage (einschließlich des gesamten Codes in eingeschlossenen Vorlagen) wird zur `TransformText()`-Methode des generierten Codes kombiniert. (Weitere Informationen zum einschließen anderer Textvorlagen mit der `include`-Direktive finden Sie unter [T4-Textvorlagen Direktiven](../modeling/t4-text-template-directives.md).)
+ Der gesamte Code in all den Standard- und Ausdruckskontrollblöcken in einer einzelnen Vorlage (einschließlich des gesamten Codes in eingeschlossenen Vorlagen) wird zur `TransformText()`-Methode des generierten Codes kombiniert. (Weitere Informationen zum einschließen anderer Textvorlagen mit der- `include` Direktive finden Sie unter [T4-Textvorlagen Direktiven](../modeling/t4-text-template-directives.md).)
 
  Sie sollten beim Verwenden von Kontrollblöcken Folgendes bedenken:
 
-- **Kurse.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Direktive angeben. (Weitere Informationen zur `template`-Direktive finden Sie unter [T4-Text Vorlagen Direktiven](../modeling/t4-text-template-directives.md).)
+- **Sprache.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Direktive angeben. (Weitere Informationen zur- `template` Direktive finden Sie unter [T4-Text Vorlagen Direktiven](../modeling/t4-text-template-directives.md).)
 
      Die in Kontrollblöcken verwendete Sprache hat nichts mit der Sprache oder dem Format des Texts zu tun, den Sie in einer Textvorlage generieren. Sie können C# mithilfe von Visual Basic-Code generieren oder umgekehrt.
 
@@ -160,7 +160,7 @@ Some text.
 
      Es ist auch eine gute Idee, die lokalen Variablen mit sinnvollen Werten zu initialisieren, wenn Sie sie deklarieren, insbesondere dann, wenn Sie mehrere Textvorlagen einschließen.
 
-- **Schachtelung von Kontroll Blöcken.** Kontrollblöcke können nicht ineinander geschachtelt werden. Sie müssen einen Kontrollblock immer beenden, bevor Sie einen anderen öffnen. Beispielsweise zeigt folgende Vorgehensweise das Drucken von Text in einem Ausdrucksblock als Teil eines Standardkontrollblocks.
+- **Schachteln von Kontrollblöcken.** Kontrollblöcke können nicht ineinander geschachtelt werden. Sie müssen einen Kontrollblock immer beenden, bevor Sie einen anderen öffnen. Beispielsweise zeigt folgende Vorgehensweise das Drucken von Text in einem Ausdrucksblock als Teil eines Standardkontrollblocks.
 
     ```
     <#

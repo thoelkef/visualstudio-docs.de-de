@@ -9,16 +9,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 27d837c09e5f2f90796c149bf58d1114d7e6352d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546314"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Verhindern, dass Ausnahmen bei Beschädigungen verarbeitet werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
@@ -68,7 +68,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1"></a>Lösung 1
+### <a name="solution-1"></a>Lösung 1
  Durch das Entfernen des HandleProcessCorruptedExceptions-Attributs wird sichergestellt, dass Ausnahmen nicht behandelt werden.
 
 ```
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2"></a>Lösung 2
+### <a name="solution-2"></a>Lösung 2
  Entfernen Sie den allgemeinen Catch-Handler, und fangen Sie nur bestimmte Ausnahmetypen ab.
 
 ```
@@ -110,7 +110,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3"></a>Lösung 3
+### <a name="solution-3"></a>Lösung 3
  Lösen Sie die Ausnahme erneut aus.
 
 ```

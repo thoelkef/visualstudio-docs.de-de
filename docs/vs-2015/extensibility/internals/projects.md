@@ -15,32 +15,32 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183946"
 ---
 # <a name="projects"></a>Projekte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In Visual Studio-Projekte sind Container, mit denen Entwickler zum Organisieren von Quellcodedateien und anderen Ressourcen, die in angezeigt werden **Projektmappen-Explorer**. In der Regel sind Projekte, Dateien (z. B. einer CSPROJ-Datei für ein C#-Projekt), die Verweise auf Quellcodedateien und Ressourcen wie die Bitmap-Dateien zu speichern. Lassen Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode-Projekte, Verweise auf Webdienste und Datenbanken und andere Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, auf drei Arten: *Projekttypen*, *Projektuntertypen*, und *benutzerdefinierte Tools*.  
+In Visual Studio sind Projekte die Container, die Entwickler zum Organisieren von Quell Code Dateien und anderen Ressourcen verwenden, die in **Projektmappen-Explorer**angezeigt werden. In der Regel handelt es sich bei Projekten um Dateien (z. b. eine CSPROJ-Datei für ein c#-Projekt), in der Verweise auf Quell Code Dateien und Ressourcen wie Bitmapdateien gespeichert werden. Mit Projekten können Sie Quellcode, Verweise auf Webdienste und Datenbanken sowie andere Ressourcen organisieren, erstellen, Debuggen und bereitstellen. VSPackages können das Visual Studio-Projekt System auf drei Arten erweitern: *Projekttypen*, *Projekt Untertypen*und *benutzerdefinierte Tools*.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Projekttypen](../../extensibility/internals/project-types.md)  
- *Projekttypen* Hinzufügen von Unterstützung für neue Arten von Projekten, wie z. B. Programmiersprachen zu vergleichen. Beispielsweise jede Sprache, Visual Studio unterstützt, hat seinen eigenen Projekt, und das IronPython-Integration-Beispiel enthält einen Projekttyp für die Sprache IronPython. Erstellen Sie ein Projekt für andere Sprachen als C#- oder Visual Basic anpassen, wie Elemente werden erstellt, debuggt, bereitgestellt und im angezeigten **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Projekttypen](../../extensibility/internals/project-types.md).  
+ *Projekttypen* fügen Unterstützung für neue Arten von Projekten hinzu, z. b. Programmiersprachen. Beispielsweise verfügt jede Sprache, die Visual Studio unterstützt, über einen eigenen Projekttyp, und das IronPython-Integrations Beispiel enthält einen Projekttyp für die IronPython-Sprache. Sie müssen einen Projekttyp für andere Sprachen als c# erstellen oder Visual Basic, um anzupassen, wie Elemente erstellt, gedeppt, bereitgestellt und in **Projektmappen-Explorer**angezeigt werden. Weitere Informationen finden Sie unter [Projekttypen](../../extensibility/internals/project-types.md).  
   
  [Projektuntertypen](../../extensibility/internals/project-subtypes.md)  
- *Projektuntertypen* basieren auf Projekttypen zur Verfügung und können verwendet werden, um die Methode anpassen, Projekte erstellt, debuggt und bereitgestellt werden. Visual Studio verwendet Projektuntertypen mit Projekte für intelligente Geräte; Sie können Bereitstellung durch Kopieren eines Programms neu erstellt wurden von einem Entwicklungscomputer aus, auf dem Zielgerät anpassen. Die C#- und Visual Basic-Projekttypen können als Grundlage für Projektuntertypen verwendet werden; C++-Projekttypen ist nicht möglich. Eigene Projekttypen können auch als Grundlage für Projektuntertypen verwendet werden. Weitere Informationen finden Sie unter [Projektuntertypen](../../extensibility/internals/project-subtypes.md).  
+ *Projekt Untertypen* basieren auf Projekttypen und können verwendet werden, um die Art und Weise anzupassen, wie Projekte erstellt, gedeppt und bereitgestellt werden. Visual Studio verwendet Projekt Untertypen mit Projekten für intelligente Geräte. Sie passen die Bereitstellung an, indem Sie ein neu erstelltes Programm von einem Entwicklungs Computer auf das Zielgerät kopieren. Die c#-und Visual Basic-Projekttypen können als Grundlage für Projekt Untertypen verwendet werden. C++-Projekttypen können nicht. Ihre eigenen Projekttypen können auch als Grundlage für Projekt Untertypen verwendet werden. Weitere Informationen finden Sie unter [Projekt Untertypen](../../extensibility/internals/project-subtypes.md).  
   
  [Webprojekte](../../extensibility/internals/web-projects.md)  
- Erläutert, Web-Projekt, die wiederum von ASP.NET-Webanwendungen erstellen.  
+ Erläutert das Webprojekt, das wiederum Webanwendungen erstellt.  
   
- [Neue Projektgenerierung: In die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Neue Projektgenerierung: im Hintergrund Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [neue Projektgenerierung: Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Erläutert, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen.  
   
  [VSSDK-Beispiele](../../misc/vssdk-samples.md)  
- Beschreibt die Beispiele in Visual Studio SDK PASST, die Projekte und Projektmappen behandeln.  
+ Beschreibt die Beispiele in der VSSDK-Datei, die Projekte und Projektmappen behandelt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Im Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)  

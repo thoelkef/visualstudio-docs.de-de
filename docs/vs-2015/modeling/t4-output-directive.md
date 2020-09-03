@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652315"
 ---
 # <a name="t4-output-directive"></a>T4 Output-Direktive
@@ -21,11 +21,11 @@ ms.locfileid: "72652315"
 
 In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Textvorlagen wird die `output`-Anweisung zum Definieren der Dateierweiterung und Codierung der umgewandelten Datei verwendet.
 
- Wenn Ihr [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt beispielsweise eine Vorlagen Datei mit dem Namen **MyTemplate.tt** enthält, die die folgende Anweisung enthält:
+ Wenn das Projekt beispielsweise [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Vorlagen Datei mit dem Namen **MyTemplate.tt** enthält, die die folgende Anweisung enthält:
 
  `<#@output extension=".cs"#>`
 
- dann generiert [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Datei mit dem Namen **MyTemplate.cs** .
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generiert dann eine Datei mit dem **Namen MyTemplate.cs** .
 
  Die `output`-Anweisung ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Stattdessen erhält die Anwendung die generierte Zeichenfolge durch Aufruf von `TextTransform()`. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEELocalObject | Microsoft Docs
+title: 'IDebugSettingsCallback2:: geteelocalobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fc205392f325a014bfe07b02b64cd8b0050ce079
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720071"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
-Ruft ein lokales Objekt für ausdrucksauswertungsauswertungswerter ab, das den Metriknamen erhält.
+Ruft ein lokales Objekt der Ausdrucks Auswertung unter Berücksichtigung des metriknamens ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,16 +45,16 @@ private int GetEELocalObject(
 
 ## <a name="parameters"></a>Parameter
 `guidLang`\
-[in] Eindeutiger Bezeichner der Programmiersprache.
+in Eindeutiger Bezeichner der Programmiersprache.
 
 `guidVendor`\
-[in] Eindeutiger Bezeichner des Kreditors.
+in Eindeutiger Bezeichner des Anbieters.
 
 `pszMetric`\
-[in] Name der Metrik.
+in Der Name der Metrik.
 
 `ppUnk`\
-[out] Gibt das lokale Objekt des Ausdrucksauswertungsobjekts zurück.
+vorgenommen Gibt das lokale Objekt der Ausdrucks Auswertung zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

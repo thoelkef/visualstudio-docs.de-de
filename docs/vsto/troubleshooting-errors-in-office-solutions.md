@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234691"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Beheben von Fehlern in Office-Projektmappen
@@ -40,7 +40,7 @@ ms.locfileid: "87234691"
 
 - [Projekte Debuggen](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Erstellen, aktualisieren und Öffnen von Projekten
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Erstellen, aktualisieren und Öffnen von Projekten
  Die folgenden Fehler können auftreten, wenn Sie Office-Projekte erstellen oder öffnen.
 
 ### <a name="the-project-cannot-be-created"></a>Das Projekt kann nicht erstellt werden.
@@ -84,7 +84,7 @@ ms.locfileid: "87234691"
 
  Nachdem Sie das Projekt aktualisiert haben, können Sie die Visual Studio 2005-Tools für Office Second Edition-Laufzeit vom Entwicklungscomputer deinstallieren, wenn sie nicht von anderen Office-Projektmappen verwendet wird.
 
-## <a name="use-the-designers"></a><a name="designers"></a>Verwenden der Designer
+## <a name="use-the-designers"></a><a name="designers"></a> Verwenden der Designer
  Die folgenden Fehler können auftreten, wenn Sie in Projekten auf Dokumentebene mit dem Dokument-, Arbeitsmappen- oder Arbeitsblatt-Designer arbeiten.
 
 ### <a name="designer-failed-to-load-correctly"></a>Der Designer konnte nicht ordnungsgemäß geladen werden
@@ -105,7 +105,7 @@ ms.locfileid: "87234691"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Befehl "Clip-Art einfügen" führt keine Aktion im Visual Studio-Designer aus
  Wenn Excel oder Word im Visual Studio-Designer geöffnet ist, wird durch Klicken auf die Schaltfläche **Clip-Art** auf der Registerkarte **Abbildungen** im Menüband nicht der Aufgabenbereich **Clip-Art** geöffnet. Um Clip Art hinzuzufügen, müssen Sie die Kopie der Arbeitsmappe oder des Dokuments, das sich im Hauptprojekt Ordner befindet (nicht die Kopie im Ordner " *\bin* ") außerhalb von Visual Studio öffnen, das ClipArt hinzufügen und dann die Arbeitsmappe oder das Dokument speichern.
 
-## <a name="write-code"></a><a name="code"></a>Schreiben von Code
+## <a name="write-code"></a><a name="code"></a> Schreiben von Code
  Die folgenden Fehler können auftreten, wenn Sie Code in Office-Projekten schreiben.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Einige Ereignisse von Office-Objekten sind bei Verwendung von C nicht verfügbar.\#
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Obwohl Sie den Word-oder Excel-Namespace importiert haben und Zugriff auf alle darin enthaltenen Klassen haben, müssen Sie alle Typen mit Word oder Excel vollständig qualifizieren, um die Mehrdeutigkeit von Namespaces zu entfernen.
 
-## <a name="build-projects"></a><a name="building"></a>Erstellen von Projekten
+## <a name="build-projects"></a><a name="building"></a> Erstellen von Projekten
  Beim Erstellen von Office-Projekten können die folgenden Fehler auftreten.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Ein Projekt auf Dokument Ebene kann nicht erstellt werden, das auf einem Dokument mit eingeschränkten Berechtigungen basiert.
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Compilerfehler treten auf, nachdem ein Name Drange-Steuerelement gelöscht wurde.
  Wenn Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement aus einem Arbeitsblatt löschen, das nicht das aktive Arbeitsblatt im Designer ist, wird der automatisch generierte Code möglicherweise nicht aus dem Projekt entfernt, und es können Compilerfehler auftreten. Um sicherzustellen, dass der Code entfernt wird, müssen Sie vor dem Löschen des Steuerelements immer das Arbeitsblatt auswählen, das das <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement enthält, um dieses als aktives Arbeitsblatt festzulegen. Wenn automatisch generierter Code beim Löschen des Steuerelements nicht gelöscht wird, können Sie den Designer anweisen, den Code zu löschen. Aktivieren Sie dazu das Arbeitsblatt, und nehmen Sie eine Änderung vor, sodass das Arbeitsblatt als geändert markiert wird. Beim Neuerstellen des Projekts wird der Code entfernt.
 
-## <a name="debug-projects"></a><a name="debugging"></a>Projekte Debuggen
+## <a name="debug-projects"></a><a name="debugging"></a> Projekte Debuggen
  Beim Debuggen von Office-Projekten können die folgenden Fehler auftreten.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Die Aufforderung zur Deinstallation wird angezeigt, wenn Sie eine Lösung auf dem Entwicklungs Computer veröffentlichen und installieren.
@@ -217,4 +217,4 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 - [Problembehandlung für Office-Lösungen](../vsto/troubleshooting-office-solutions.md)
 - [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
 - [Problembehandlung bei der Bereitstellung von Office](../vsto/troubleshooting-office-solution-deployment.md)
-- [Problembehandlung in Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

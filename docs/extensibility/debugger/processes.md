@@ -1,5 +1,5 @@
 ---
-title: Prozesse | Microsoft Docs
+title: Prozesse | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c59b90bb117dded0f528bc33a617370b091a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738249"
 ---
 # <a name="processes"></a>Prozesse
-In der Debuggerarchitektur wird ein *Prozess*:
+In der Debugger-Architektur ist ein *Prozess*:
 
-- Ist ein Container für eine Reihe von Programmen. Es ist eng mit einem Windows-Prozess vergleichbar, der ein Container für eine Reihe von Threads ist.
+- Ist ein Container für einen Satz von Programmen. Sie ähnelt einem Windows-Prozess, bei dem es sich um einen Container für eine Gruppe von Threads handelt.
 
-- Kann sich durch Namen, Bezeichner oder physischen Bezeichner identifizieren.
+- Kann sich selbst anhand des Namens, Bezeichners oder physischen Bezeichners identifizieren.
 
-- Kann alle ausgeführten Programme (und deren Threads) aufzählen.
+- Kann alle ausgelaufenden Programme (und deren Threads) auflisten.
 
-- Kann sich selbst beschreiben, den Port, in dem er läuft, und den Computer, der ihn enthält.
+- Kann sich selbst, den Port, in dem er ausgeführt wird, und den Computer, der ihn enthält, beschreiben.
 
-- Kann ein oder mehrere Programme erstellen, eines der von ihm erstellten Programme beenden oder dazu führen, dass ein Programm beendet wird.
+- Kann ein oder mehrere Programme erstellen, alle erstellten Programme beenden oder ein Programm beenden.
 
-- Wird durch eine [IDebugProcess2-Schnittstelle](../../extensibility/debugger/reference/idebugprocess2.md) dargestellt, die beim Starten des Prozesses erstellt wird. Ein Prozess wird entweder vom Session Debug Manager (SDM) oder [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)gestartet.
+- Wird durch eine [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle dargestellt, die beim Starten des Prozesses erstellt wird. Ein Prozess wird entweder vom Sitzungs-Debug-Manager (SDM) oder vom [launchangeh](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)alten gestartet.
 
-  Das Debugpaket kann ein Debugmodul (DE) an einen Prozess anfügen, indem [es Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)aufruft, was bedeutet, dass die DE an alle möglichen Programme anfügt, die in dem Prozess ausgeführt werden, den es verarbeiten kann. Wenn z. B. die Common Language Runtime DE an einen Prozess angefügt wird, wird sie nur an Programme angefügt, die verwalteten Code ausführen.
+  Das Debugpaket kann eine Debug-Engine (de) an einen Prozess anfügen, indem Sie [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md)aufrufen. Dies bedeutet, dass die de an alle möglichen Programme angefügt wird, die im Prozess ausgeführt werden, den Sie verarbeiten kann. Wenn z. b. der Common Language Runtime de an einen Prozess angefügt wird, wird er nur an Programme angefügt, die verwalteten Code ausführen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Programs](../../extensibility/debugger/programs.md)
 - [Threads](../../extensibility/debugger/threads.md)
-- [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)
-- [Debug-Paket](../../extensibility/debugger/debug-package.md)
+- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)
+- [Paket Debuggen](../../extensibility/debugger/debug-package.md)
 - [Debug-Engine](../../extensibility/debugger/debug-engine.md)
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

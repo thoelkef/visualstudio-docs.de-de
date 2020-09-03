@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorEvent2::GetErrorMessage | Microsoft-Dokumentation
+title: 'IDebugErrorEvent2:: getErrorMessage | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c4b25e040fe391b0bfbd05159779096e6bad9951
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183521"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt zurück, anhand derer der Erstellung der eine lesbare Fehlermeldung aus.  
+Gibt Informationen zurück, die die Erstellung einer lesbaren Fehlermeldung ermöglichen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -50,29 +50,29 @@ int GetErrorMessage(
   
 #### <a name="parameters"></a>Parameter  
  `pMessageType`  
- [out] Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) Enumeration, die den Typ der Nachricht beschreibt.  
+ vorgenommen Gibt einen Wert aus der [MessageType](../../../extensibility/debugger/reference/messagetype.md) -Enumeration zurück, der den Typ der Nachricht beschreibt.  
   
  `pbstrErrorFormat`  
- [out] Das Format der die endgültige Nachricht an den Benutzer (Details finden Sie unter "Hinweise").  
+ vorgenommen Das Format der abschließenden Meldung für den Benutzer (Weitere Informationen finden Sie unter "Hinweise").  
   
  `hrErrorReason`  
- [out] Der Fehlercode der Nachricht geht.  
+ vorgenommen Der Fehlercode, der in der Meldung angezeigt wird.  
   
  `pdwType`  
- [out] Schweregrad des Fehlers (verwenden Sie für Konstanten MB_XXX `MessageBox`, z. B. `MB_EXCLAMATION` oder `MB_WARNING`).  
+ vorgenommen Schweregrad des Fehlers (verwenden Sie die MB_XXX Konstanten für, `MessageBox` z `MB_EXCLAMATION` . b `MB_WARNING` . oder).  
   
  `pbstrHelpFileName`  
- [out] Der Pfad zu einer Hilfedatei (festgelegt auf einen null-Wert, wenn keine Hilfedatei vorhanden ist).  
+ vorgenommen Pfad zu einer Hilfedatei (festgelegt auf einen NULL-Wert, wenn keine Hilfedatei vorhanden ist).  
   
  `pdwHelpId`  
- [out] Die ID des Hilfethemas zum Anzeigen der (auf 0, wenn kein Hilfethema festgelegt).  
+ vorgenommen ID des anzuzeigenden Hilfe Themas (auf 0 festgelegt, wenn kein Hilfethema vorhanden ist).  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die Fehlermeldung, die ungefähr folgendermaßen formatiert werden sollen `"What I was doing.  %1"`. Die `"%1"` würde dann vom Aufrufer mit der Fehlermeldung, abgeleitet aus dem Fehlercode ersetzt (der im zurückgegeben `hrErrorReason`). Die `pMessageType` -Parameter weist den Aufrufer wie die letzte Fehlermeldung angezeigt werden soll.  
+## <a name="remarks"></a>Bemerkungen  
+ Die Fehlermeldung sollte in den Zeilen von formatiert werden `"What I was doing.  %1"` . Wird dann durch den Aufrufer durch die `"%1"` Fehlermeldung ersetzt, die vom Fehlercode abgeleitet wird (der in zurückgegeben wird `hrErrorReason` ). Der-Parameter teilt dem Aufrufer mit, `pMessageType` wie die abschließende Fehlermeldung angezeigt werden soll.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

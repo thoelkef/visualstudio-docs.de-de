@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183785"
 ---
 # <a name="cores-view-zoom-tool"></a>Zoomtool in der Kernansicht
@@ -29,7 +29,7 @@ Das Zoomtool ist ein Schieberegler, mit dem Sie die Zeitachse vergrößern oder 
   
 - Vergrößern: Wählen Sie einen Bereich in der Zeitachsenansicht durch Ziehen aus. Wenn Sie die Maustaste loslassen, wird die Zeitachsenansicht des ausgewählten Bereichs vergrößert.  
   
-- Vergrößern und verkleinern: Zeigen Sie auf der Zeitachse, und drücken Sie STRG, während Sie das Mausrad drehen.  
+- Vergrößern und verkleinern: Zeigen Sie auf die Zeitachse, und drücken Sie STRG, während Sie mit dem Mausrad scrollen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Kernansicht](../profiling/cores-view.md)

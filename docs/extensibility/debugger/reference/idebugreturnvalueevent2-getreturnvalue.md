@@ -1,5 +1,5 @@
 ---
-title: IDebugreturnValueEvent2::GetReturnValue | Microsoft Docs
+title: 'IDebugReturnValueEvent2:: GetReturnValue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: da81b293055325c949387cb8584e18c6034f14f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720277"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-Ruft den Wert ab, der beim Schrittweisen des Zutretens aus oder über eine Funktion zurückgegeben wird.
+Ruft den Wert ab, der beim Durchlaufen von oder über einer Funktion zurückgegeben wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetReturnValue ( 
 
 ## <a name="parameters"></a>Parameter
 `ppReturnValue`\
-[out] Gibt ein [IDebugProperty2-Objekt](../../../extensibility/debugger/reference/idebugproperty2.md) zurück, das den abzuholenden Wert darstellt.
+vorgenommen Gibt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt zurück, das den abzurufenden Wert darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

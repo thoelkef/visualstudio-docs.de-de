@@ -15,29 +15,29 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985362"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange-Steuerelement
-  Das <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>-Steuerelement ist ein Bereich, der nur erstellt wird, wenn ein nicht wiederholtes Schema Element einer Zelle in Microsoft Office Excel zugeordnet wird. Dies ist beispielsweise der Fall, wenn das `maxOccurs`-Attribut eines Schema Elements 1 lautet. Nachdem der von Visual Studio zugeordnete XML-Bereich erstellt wurde, können Sie ihn direkt programmieren, ohne das Excel-Objektmodell durchlaufen zu müssen. Sie können nur ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>-Steuerelement in Excel löschen, wenn die Element Zuordnung entfernt wird.
+  Das- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement ist ein Bereich, der nur erstellt wird, wenn ein nicht wiederholtes Schema Element einer Zelle in Microsoft Office Excel zugeordnet wird. Dies ist beispielsweise der Fall, wenn das- `maxOccurs` Attribut eines Schema Elements 1 ist. Nachdem der von Visual Studio zugeordnete XML-Bereich erstellt wurde, können Sie ihn direkt programmieren, ohne das Excel-Objektmodell durchlaufen zu müssen. Sie können ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement nur in Excel löschen, wenn die Element Zuordnung entfernt wird.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 ## <a name="bind-data-to-the-control"></a>Binden von Daten an das Steuerelement
- Ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>-Steuerelement unterstützt das Binden an ein einzelnes Datenfeld (einfache Datenbindung). Das <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement kann eine komplexe Datenbindung unterstützen und wird automatisch erstellt, wenn ein sich wiederholendes Schema Element einer Zelle zugeordnet wird. Weitere Informationen finden Sie unter [ListObject Control](../vsto/listobject-control.md).
+ Ein- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement unterstützt das Binden an ein einzelnes Datenfeld (einfache Datenbindung). Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement kann eine komplexe Datenbindung unterstützen und wird automatisch erstellt, wenn ein sich wiederholendes Schema Element einer Zelle zugeordnet wird. Weitere Informationen finden Sie unter [ListObject Control](../vsto/listobject-control.md).
 
- Das <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement wird mithilfe der <xref:System.Windows.Forms.Control.DataBindings%2A>-Eigenschaft an eine Datenquelle gebunden. Wenn eine <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> zu einer Arbeitsblatt Zelle hinzugefügt wird, generiert Visual Studio automatisch ein DataSet aus den Daten in den zugeordneten Zellen und bindet das Steuerelement an dieses DataSet. Die Standard-Daten Bindungs Eigenschaft des <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ist <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>.
+ Das- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement wird mithilfe der-Eigenschaft an eine Datenquelle gebunden <xref:System.Windows.Forms.Control.DataBindings%2A> . Wenn eine einer <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Arbeitsblatt Zelle hinzugefügt wird, generiert Visual Studio automatisch ein DataSet aus den Daten in den zugeordneten Zellen und bindet das Steuerelement an dieses DataSet. Die Standard-Daten Bindungs Eigenschaft des <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ist <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A> .
 
- Wenn die Daten im gebundenen Dataset durch einen beliebigen Mechanismus aktualisiert werden, spiegelt das <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>-Steuerelement die Änderungen wider.
+ Wenn die Daten im gebundenen Dataset durch einen beliebigen Mechanismus aktualisiert werden, spiegelt das- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement die Änderungen wider.
 
 ## <a name="formatting"></a>Formatierung
- Sie können die gleiche Formatierung auf ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement anwenden, das Sie auf einen <xref:Microsoft.Office.Interop.Excel.Range>anwenden können. Dies umfasst, Rahmen, Schriftarten, Zahlenformate und Stile.
+ Sie können die gleiche Formatierung auf ein Steuerelement anwenden <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> , das Sie auf ein anwenden können <xref:Microsoft.Office.Interop.Excel.Range> . Dies umfasst, Rahmen, Schriftarten, Zahlenformate und Stile.
 
-## <a name="events"></a>Ereignisse
- Folgende Ereignisse sind für das <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>-Steuerelement verfügbar:
+## <a name="events"></a>Events
+ Folgende Ereignisse sind für das-Steuerelement verfügbar <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> :
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 

@@ -1,0 +1,142 @@
+- name: '"{" erwartet'
+  href: expected-left-curly-brace.md
+- name: 'Es wurde ein Bezeichner, eine Zeichenfolge oder eine Zahl erwartet'
+  href: expected-identifier-string-or-number.md
+- name: Funktion erwartet
+  href: function-expected.md
+- name: VBArray erwartet
+  href: vbarray-expected.md
+- name: '"catch" erwartet'
+  href: expected-catch.md
+- name: Zuweisen zu einem Funktionsergebnis nicht möglich
+  href: cannot-assign-to-a-function-result.md
+- name: Syntaxfehler (JavaScript)
+  href: syntax-error-javascript.md
+- name: Reguläres Ausdrucksobjekt erwartet
+  href: regular-expression-object-expected.md
+- name: False (Windows-Skripttechnologien)
+  href: false-windows-script-technologies.md
+- name: '"}" erwartet'
+  href: expected-right-curly-brace.md
+- name: Enumerator-Objekt erwartet
+  href: enumerator-object-expected.md
+- name: Die Anzahl der Dezimalstellen liegt außerhalb des gültigen Bereichs.
+  href: the-number-of-fractional-digits-is-out-of-range.md
+- name: Date-Objekt erwartet
+  href: date-object-expected.md
+- name: Nicht abgeschlossener Kommentar
+  href: unterminated-comment.md
+- name: '"continue" ist außerhalb der Schleife unzulässig'
+  href: can-t-have-continue-outside-of-loop.md
+- name: JavaScript-Objekt erwartet
+  href: javascript-object-expected.md
+- name: '":" erwartet'
+  href: expected-colon.md
+- name: Der Arraylänge muss eine endliche positive Ganzzahl zugewiesen sein.
+  href: array-length-must-be-assigned-a-finite-positive-number.md
+- name: „@end“ erwartet
+  href: expected-at-end.md
+- name: Ungültige Zahl
+  href: invalid-number.md
+- name: Die Genauigkeit liegt außerhalb des gültigen Bereichs.
+  href: the-precision-is-out-of-range.md
+- name: Unerwarteter Quantifizierer (JavaScript)
+  href: unexpected-quantifier-javascript.md
+- name: Zuweisen zu „this“ nicht möglich
+  href: cannot-assign-to-this.md
+- name: Funktion enthält kein gültiges prototype-Objekt.
+  href: function-does-not-have-a-valid-prototype-object.md
+- name: Setter-Funktionen müssen über genau ein Argument verfügen
+  href: setter-functions-must-have-one-argument.md
+- name: Ungültiges Zeichen (JavaScript)
+  href: invalid-character-javascript.md
+- name: Ausnahme ausgelöst und nicht abgefangen
+  href: exception-thrown-and-not-caught.md
+- name: Zahl erwartet
+  href: number-expected.md
+- name: Das Verwenden eines für die zukünftige Verwendung reservierten Worts in einem Bezeichner ist ungültig
+  href: the-use-of-a-future-reserved-word-for-an-identifier-is-invalid.md
+- name: Auf 'throw' muss ein Ausdruck in derselben Quellzeile folgen
+  href: throw-must-be-followed-by-an-expression-on-the-same-source-line.md
+- name: Ungültige Zuweisung (JavaScript)
+  href: illegal-assignment-javascript.md
+- name: '"default" darf in einer switch-Anweisung nur einmal angegeben werden'
+  href: default-can-only-appear-once-in-a-switch-statement.md
+- name: '"=" erwartet (JavaScript)'
+  href: expected-equal-javascript.md
+- name: Der zu codierende URI enthält ein ungültiges Zeichen.
+  href: the-uri-to-be-encoded-contains-an-invalid-character.md
+- name: „-“ erwartet
+  href: expected-minus.md
+- name: Ungültiger Bereich im Zeichensatz (JavaScript)
+  href: invalid-range-in-character-set-javascript.md
+- name: Bezeichner erwartet (JavaScript)
+  href: expected-identifier-javascript.md
+- name: Konstante erwartet
+  href: expected-constant.md
+- name: Nicht definierter Bezeichner
+  href: undefined-identifier.md
+- name: Zugriff verweigert
+  href: access-is-denied.md
+- name: '„\]“ erwartet'
+  href: expected-right-square-bracket.md
+- name: '"while" erwartet'
+  href: expected-while.md
+- name: '"@" erwartet'
+  href: expected-at.md
+- name: Die Bezeichnung wurde neu definiert
+  href: label-redefined.md
+- name: Die Bezeichnung wurde nicht gefunden
+  href: label-not-found.md
+- name: Syntaxfehler im regulären Ausdruck (JavaScript)
+  href: syntax-error-in-regular-expression-javascript.md
+- name: '"(" erwartet (JavaScript)'
+  href: expected-left-parenthesis-javascript.md
+- name: Hexadezimalzahl erwartet
+  href: expected-hexadecimal-digit.md
+- name: Objekt erwartet
+  href: object-expected.md
+- name: Zirkelverweis in Wertargument nicht unterstützt
+  href: circular-reference-in-value-argument-not-supported.md
+- name: Die bedingte Kompilierung ist deaktiviert
+  href: conditional-compilation-is-turned-off.md
+- name: '''var'' erwartet'
+  href: expected-var.md
+- name: Nicht abgeschlossene Zeichenfolgenkonstante (JavaScript)
+  href: unterminated-string-constant-javascript.md
+- name: Zeichenfolge erwartet
+  href: string-expected.md
+- name: Ungültiges replacer-Argument
+  href: invalid-replacer-argument.md
+- name: '''with'' ist im ECMA 327 Compact Profile nicht verfügbar'
+  href: with-not-available-in-the-ecma-327-compact-profile.md
+- name: Zusammenfassung der Operatoren (JavaScript)
+  href: operator-subtractsummary-javascript.md
+- name: Objektmember erwartet
+  href: object-member-expected.md
+- name: True-Schlüsselwort
+  href: true-keyword.md
+- name: Diese Eigenschaft oder Methode wird vom Objekt nicht unterstützt
+  href: object-doesn-t-support-this-property-or-method.md
+- name: Boolescher Wert erwartet
+  href: boolean-expected.md
+- name: ''';'' erwartet'
+  href: expected-semicolon.md
+- name: '")" erwartet (JavaScript)'
+  href: expected-right-parenthesis-javascript.md
+- name: Array- oder arguments-Objekt erwartet
+  href: array-or-arguments-object-expected.md
+- name: Im regulären Ausdruck wurde ')' erwartet (JavaScript)
+  href: expected-right-parenthesis-in-regular-expression-javascript.md
+- name: 'Im regulären Ausdruck wurde \] erwartet (JavaScript)'
+  href: expected-right-square-bracket-in-regular-expression-javascript.md
+- name: Die Arraylänge muss eine endliche positive Ganzzahl sein.
+  href: array-length-must-be-a-finite-positive-integer.md
+- name: '"break" ist außerhalb der Schleife unzulässig'
+  href: can-t-have-break-outside-of-loop.md
+- name: Das Verwenden eines Schlüsselworts für einen Bezeichner ist ungültig
+  href: the-use-of-a-keyword-for-an-identifier-is-invalid.md
+- name: return-Anweisung ist außerhalb der Funktion
+  href: return-statement-outside-of-function.md
+- name: Der zu decodierende URI weist keine gültige Codierung auf.
+  href: the-uri-to-be-decoded-is-not-a-valid-encoding.md
