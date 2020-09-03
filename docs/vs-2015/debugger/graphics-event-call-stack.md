@@ -1,5 +1,5 @@
 ---
-title: Aufrufliste des grafikereignisses | Microsoft-Dokumentation
+title: Aufrufliste des Grafikereignisses | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192753"
 ---
 # <a name="graphics-event-call-stack"></a>Aufrufliste des Grafikereignisses
@@ -25,7 +25,7 @@ Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ih
   
  Dies ist das Aufruflistenfenster:  
   
- ![Die Aufrufliste vor einem DrawIndexed-Ereignis. ](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "Gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Die Aufrufliste vor einem DrawIndexed-Ereignis](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Verstehen der Aufrufliste des Grafikereignisses  
  Sie können mithilfe der Aufrufliste den Ablauf der Ausführung nachvollziehen, die zu einem bestimmten Direct3D-Ereignis geführt hat. Sie ähnelt dem Aufruflistenfenster in Visual Studio, mit der Ausnahme, dass anstelle der aktuellen Aufrufliste des aktiven Threads in einer laufenden Anwendung die Aufrufliste angezeigt wird, bei der das ausgewählte Direct3D-Ereignis eingetreten ist. Aus der Aufrufliste können Sie zur Aufrufsite des ausgewählten Direct3D-Ereignisses springen, um den umgebenden Code zu überprüfen.  
@@ -38,11 +38,11 @@ Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ih
 |Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Ein Symbol, die eindeutig die Funktion identifiziert, die die Aufrufseite enthält. Das Debugsymbol für die Funktion wird angezeigt, wenn dieses verfügbar ist. Andernfalls wird der Offset der Funktion angezeigt.|  
-|**File**|Der Dateiname der Quelldatei oder Bibliotheksdatei, die die Aufrufsite enthält.|  
-|**Speicherort**|Die Zeilennummer der Aufrufsite.|  
+|**Datei**|Der Dateiname der Quelldatei oder Bibliotheksdatei, die die Aufrufsite enthält.|  
+|**Position**|Die Zeilennummer der Aufrufsite.|  
   
 ### <a name="links-to-graphics-objects"></a>Links zu Grafikobjekten  
  Um die ausgewählten Grafiken zu verstehen, benötigen Sie möglicherweise Informationen über das Direct3D-Objekt, dem diese zugeordnet sind. Das Fenster **Aufrufliste des Grafikereignisses** enthält Links zu diesen Informationen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)

@@ -39,7 +39,7 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 - **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequenzielle Reihenfolge](#SequentialOrder).
 
-### <a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
+### <a name="percentage-based-on-tests-started"></a><a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
 
 Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den bestimmt wird, wie häufig der Test als nächster Test zur Ausführung ausgewählt wird. Beispielsweise können die folgenden Prozentsatzwerte drei Tests zugewiesen werden:
 
@@ -51,10 +51,10 @@ Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den
 
 Wenn Sie diese Einstellung verwenden, basiert der nächste zu startende Test auf den zugewiesenen Prozentsätzen. Dabei wird die Anzahl der virtuellen Benutzer, die die einzelnen Tests gerade ausführen, nicht berücksichtigt.
 
-### <a name="PercentageBasedonVirtualUsers"></a> Prozentsatz nach virtuellen Benutzern
+### <a name="percentage-based-on-virtual-users"></a><a name="PercentageBasedonVirtualUsers"></a> Prozentsatz nach virtuellen Benutzern
 Dieses Testmischungsmodell bestimmt den Prozentsatz virtueller Benutzer, die einen bestimmten Test ausführen. Wenn Sie dieses Testmischungsmodell verwenden, basiert der nächste zu startende Test nicht nur auf den zugewiesenen Prozentsätzen, sondern auch auf dem Prozentsatz der virtuellen Benutzer, die derzeit einen bestimmten Test ausführen. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, so genau wie möglich mit der zugewiesenen Verteilung überein.
 
-### <a name="PacingTestMix"></a> Bestimmen der Geschwindigkeit bei der Testmischung
+### <a name="pacing-test-mix"></a><a name="PacingTestMix"></a> Bestimmen der Geschwindigkeit bei der Testmischung
 
 Wenn Sie eine Geschwindigkeit für die Testmischung angeben, legen Sie für jeden Test in der Testmischung und für jeden virtuellen Benutzer eine Testausführungsgeschwindigkeit fest. Diese Geschwindigkeit wird für jeden Test durch die Anzahl von Tests ausgedrückt, die pro Stunde von jedem virtuellen Benutzer ausgeführt werden. Beispielsweise können Sie diesen Tests folgende Geschwindigkeiten bei der Testmischung zuweisen:
 
@@ -81,7 +81,7 @@ Der Wert für die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwe
 
   Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-### <a name="SequentialOrder"></a> Sequenzielle Reihenfolge
+### <a name="sequential-order"></a><a name="SequentialOrder"></a> Sequenzielle Reihenfolge
 Wenn die Option "Basierend auf sequenzieller Testreihenfolge" aktiviert ist, führt jeder virtuelle Benutzer alle Tests in dem Szenario in der Reihenfolge aus, in der die Tests definiert wurden.
 
 ## <a name="test-iterations-property"></a>Eigenschaft „Testiterationen“

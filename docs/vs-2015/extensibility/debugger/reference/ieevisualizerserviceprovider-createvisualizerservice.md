@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider::CreateVisualizerService | Microsoft-Dokumentation
+title: 'Ieevisualizerserviceprovider:: kreatevisualizerservice | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ed8327690c42f54a33209b2f0acfa45a138ec51c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155080"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode erstellt einen schnellansichtsdienst.  
+Diese Methode erstellt einen schnell Ansichts Dienst.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,29 +48,29 @@ int CreateVisualizerService(
   
 #### <a name="parameters"></a>Parameter  
  `binder`  
- [in] Die [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) -Objekt übergeben, um [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).  
+ in Das an [evaluatesync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)über gegebene [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Objekt.  
   
  `pSymProv`  
- [in] Die [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) -Objekt übergeben, um `IDebugParsedExpression::EvaluateSync`.  
+ in Das [idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) -Objekt, das an übergeben wird `IDebugParsedExpression::EvaluateSync` .  
   
  `pAddress`  
- [in] Die [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekt übergeben, um `IDebugParsedExression::EvaluateSync`.  
+ in Das [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekt, das an übergeben wird `IDebugParsedExression::EvaluateSync` .  
   
  `dataProvider`  
- [in] Ein Objekt, das die [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) Schnittstelle (bereitgestellt von der ausdrucksauswertung).  
+ in Ein Objekt, das die [ieevisualizerdataprovider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) -Schnittstelle implementiert (von der Ausdrucks Auswertung bereitgestellt).  
   
  `ppService`  
- [out] Der erstellte Dienst.  
+ vorgenommen Der erstellte Dienst.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die `binder`, `pSymProv`, und `pAddress` Parameter wurden zum Übergeben der `IDebugParsedExpression::EvaluateSync` Methode. `CreateVisualizerService` nur aus aufgerufen werden soll `IDebugParsedExpression::EvaluateSync` als Teil einer ausdrucksauswertung-Unterstützung für Typ-Schnellansichten.  
+## <a name="remarks"></a>Bemerkungen  
+ Die `binder` `pSymProv` Parameter, und `pAddress` wurden alle an die-Methode übermittelt `IDebugParsedExpression::EvaluateSync` . `CreateVisualizerService` muss nur aus `IDebugParsedExpression::EvaluateSync` als Teil der Unterstützung für typvisualisierungen eines Ausdrucks Auswerters aufgerufen werden.  
   
-## <a name="see-also"></a>Siehe auch  
- [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
- [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ieevisualizerserviceprovider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
+ [Evaluatesync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
+ [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+ [Idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

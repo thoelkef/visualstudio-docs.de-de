@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85126a7816fa583db94bb93659a7d4cbb29078ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154773"
 ---
 # <a name="just-my-code-threads-view"></a>Nur mein Code (Threadansicht)
@@ -29,6 +29,6 @@ Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene de
   
  In einigen Fällen kann durch diese Option auch der blockierende Aufruf herausgefiltert werden. Wenn Sie für diese Entscheidung die vollständigen Details zur Aufrufliste benötigen, löschen Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Threadansicht](../profiling/threads-view-parallel-performance.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Thread Ansicht](../profiling/threads-view-parallel-performance.md)   
  [Prozentsatz der Rauschunterdrückung](../profiling/noise-reduction-percentage.md)

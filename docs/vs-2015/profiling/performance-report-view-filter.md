@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161970"
 ---
 # <a name="performance-report-view-filter"></a>Filter für die Leistungsberichtansicht
@@ -26,7 +26,7 @@ Das Fenster für den Filter für die Profilerstellungsberichtansicht befindet si
   
  Sie können jede Filterklausel ändern, um Ihre Suchergebnisse zu verfeinern. Die folgenden Spalten sind im Filtergenerator verfügbar.  
   
-|Element filtern|BESCHREIBUNG|  
+|Element filtern|Beschreibung|  
 |-----------------|-----------------|  
 |Und/Oder|Wählen Sie **Und** aus, wenn diese Klausel und die nächste Klausel beide wahr sein müssen, um zu einer Übereinstimmung zu führen. Wählen Sie **Oder** aus, wenn diese Klausel oder die nächste Klausel wahr sein kann, um zu einer Übereinstimmung zu führen.|  
 |Feld|Wählen Sie das zu verwendende Feld in der Filterklausel aus der Liste der Datenfelder aus, die in der aktuellen Berichtsdatei verfügbar sind.|  
@@ -39,6 +39,6 @@ Das Fenster für den Filter für die Profilerstellungsberichtansicht befindet si
   
  Um den Filter zu speichern, klicken Sie auf **Filter exportieren** in der Leistungsberichtssymbolleiste, und geben Sie dann einen Speicherort und Namen für die VSPF-Datei an. Um einen zuvor gespeicherten Filter zu laden, klicken Sie auf **Filter importieren**, und suchen Sie die gespeicherte Filterdatei. Filterdateien können auch verwendet werden, um Datendateien auf Computern zu filtern, auf denen eigenständigen Profilerstellungstools installiert sind. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Analysieren von Leistungs Tool Daten](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs
+title: 'IDebugDisassemblyStream2:: getcodecontext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a6b3864528ee90c22a1e7122eeaf1969f613cc8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732286"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
-Gibt ein Codekontextobjekt zurück, das einem angegebenen Codepositionsbezeichner entspricht.
+Gibt ein Code Kontext Objekt zurück, das einem angegebenen Bezeichner für den Code Speicherort entspricht.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,18 +43,18 @@ int GetCodeContext( 
 
 ## <a name="parameters"></a>Parameter
 `uCodeLocationId`\
-[in] Gibt den Codepositionsbezeichner an. Eine Beschreibung eines Codepositionsbezeichners finden Sie im Abschnitt "Hinweise" für die [GetCodeLocationId-Methode.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
+in Gibt den Bezeichner des Code Speicher Orts an. Eine Beschreibung eines Code Speicherort Bezeichners finden Sie im Abschnitt "Hinweise" der Methode " [getcodelta ocationid](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) ".
 
 `ppCodeContext`\
-[out] Gibt ein [IDebugCodeContext2-Objekt](../../../extensibility/debugger/reference/idebugcodecontext2.md) zurück, das den zugeordneten Codekontext darstellt.
+vorgenommen Gibt ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt zurück, das den zugeordneten Code Kontext darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der Codepositionsbezeichner kann von einem Aufruf an die [GetCurrentLocation-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) zurückgegeben und in der [DisassemblyData-Struktur](../../../extensibility/debugger/reference/disassemblydata.md) angezeigt werden.
+ Der Bezeichner für den Code Speicherort kann von einem Rückruf der [getcurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) -Methode zurückgegeben werden und kann in der [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Struktur vorkommen.
 
- Um einen Codekontext in einen Codepositionsbezeichner zu konvertieren, rufen Sie die [GetCodeLocationId-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) auf.
+ Um einen Code Kontext in einen Bezeichner für den Code Speicherort zu konvertieren, müssen Sie die [getcodelta ocationid](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) -Methode aufrufen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545833"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Gewusst wie: Ändern der Größe von ListObject-Steuerelementen
@@ -37,12 +37,12 @@ ms.locfileid: "85545833"
 
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen finden Sie unter [ListObject Control](../vsto/listobject-control.md).
 
-## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a>Ändern der Größe eines ListObject-Steuer Elements zur Entwurfszeit
+## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a> Ändern der Größe eines ListObject-Steuer Elements zur Entwurfszeit
  Sie können die Größe einer Liste ändern, indem Sie auf einen der Ziehpunkte klicken und diesen ziehen oder indem Sie die Größe im Dialogfeld **Größe der Liste ändern** neu definieren.
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>So ändern Sie die Größe einer Liste im Dialogfeld „Größe der Liste ändern“
 
-1. Klicken Sie in der Tabelle auf eine beliebige Stelle <xref:Microsoft.Office.Tools.Excel.ListObject> . Die Registerkarte Entwurf der **Tabellen Tools**  >  **Design** im Menüband wird angezeigt.
+1. Klicken Sie in der Tabelle auf eine beliebige Stelle  <xref:Microsoft.Office.Tools.Excel.ListObject> . Die Registerkarte Entwurf der **Tabellen Tools**  >  **Design** im Menüband wird angezeigt.
 
 2. Klicken Sie im Abschnitt Eigenschaften auf die **Tabelle ändern**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "85545833"
 
 4. Klicken Sie auf **OK**.
 
-## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Ändern der Größe eines ListObject-Steuer Elements zur Laufzeit in einem Projekt auf Dokument Ebene
+## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Ändern der Größe eines ListObject-Steuer Elements zur Laufzeit in einem Projekt auf Dokument Ebene
  Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements zur Laufzeit ändern, indem Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> -Methode verwenden. Mit dieser Methode ist es jedoch nicht möglich, das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement auf eine neue Position auf dem Arbeitsblatt zu verschieben. Die Überschriften müssen in derselben Zeile bleiben, und das in der Größe geänderte <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement muss das ursprüngliche Listenobjekt überlappen. Das in der Größe geänderte <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement muss eine Überschriftenzeile und mindestens eine Zeile mit Daten enthalten.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>So ändern Sie die Größe eines Listenobjekts programmgesteuert
@@ -67,7 +67,7 @@ ms.locfileid: "85545833"
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Ändern der Größe eines ListObject zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Ändern der Größe eines ListObject zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements in jedem beliebigen geöffneten Arbeitsblatt zur Laufzeit ändern. Weitere Informationen zum Hinzufügen eines Steuer Elements <xref:Microsoft.Office.Tools.Excel.ListObject> zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins finden Sie unter Gewusst [wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>So ändern Sie die Größe eines Listenobjekts programmgesteuert

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545846"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Gewusst wie: Anzeigen der Registerkarte "Entwickler" im Menüband
@@ -66,5 +66,5 @@ ms.locfileid: "85545846"
 
 5. Wählen Sie die Schaltfläche **OK** aus, um das Dialogfeld **Optionen** zu schließen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Office-Benutzeroberflächen Anpassung](../vsto/office-ui-customization.md)

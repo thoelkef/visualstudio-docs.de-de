@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd11e57c8e2ec03da1dcfa9ff76b3b3ec2ded5e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149306"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ermöglicht das Abfragen von Informationen über den Zielcomputer.  
+Ermöglicht das Abfragen von Informationen über den Bereitstellungs Zielcomputer.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -29,18 +29,18 @@ IDebugWindowsComputerPort2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Diese Schnittstelle wird von Port-Objekten, von der Sitzungs-Manager implementiert.  
+ Diese Schnittstelle wird von Port Objekten des sitzungsdebug-Managers implementiert.  
   
 ## <a name="methods"></a>Methoden  
- Die folgende Tabelle zeigt die Methoden der `IDebugWindowsComputerPort2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugWindowsComputerPort2` .  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Ruft Informationen über den Computer, auf denen der Debugger in ausgeführt wird.|  
+|[Getcomputerinfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Ruft Informationen über den Computer ab, auf dem der Debugger ausgeführt wird.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: Msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

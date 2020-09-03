@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69548015"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel
@@ -41,8 +41,8 @@ ms.locfileid: "69548015"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -66,12 +66,12 @@ ms.locfileid: "69548015"
 
 7. Klicken Sie auf **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstExcelAddIn** -Projekt und öffnet die Codedatei „ThisAddIn“ im Editor.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstExcelAddIn** -Projekt und öffnet die Codedatei "ThisAddIn" im Editor.
 
 ## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Schreiben von Code zum Hinzufügen von Text zur gespeicherten Arbeitsmappe
- Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Objektmodell von Excel, um einen Textbaustein in die erste Zeile des aktiven Arbeitsblatts einzufügen. Das aktive Arbeitsblatt ist das Arbeitsblatt, das geöffnet ist, wenn Benutzer die Arbeitsmappe speichern. Standardmäßig enthält die Codedatei „ThisAddIn“ den folgenden generierten Code:
+ Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Objektmodell von Excel, um einen Textbaustein in die erste Zeile des aktiven Arbeitsblatts einzufügen. Das aktive Arbeitsblatt ist das Arbeitsblatt, das geöffnet ist, wenn Benutzer die Arbeitsmappe speichern. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:
 
-- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Excel. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
+- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von Excel. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der- `ThisAddIn` Klasse wird in einer ausgeblendeten Codedatei definiert, die nicht geändert werden sollte.
 
 - Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Excel geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen von Ressourcen, die vom Add-In verwendet werden, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
@@ -92,7 +92,7 @@ ms.locfileid: "69548015"
 
 - Das `Application` -Feld der `ThisAddIn` -Klasse. Das Feld `Application` gibt ein <xref:Microsoft.Office.Interop.Excel.Application> -Objekt zurück, das für die aktuelle Instanz von Excel steht.
 
-- Der Parameter `Wb` des Ereignishandlers für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> -Ereignis. Der Parameter `Wb` ist ein <xref:Microsoft.Office.Interop.Excel.Workbook> -Objekt, das für die gespeicherte Arbeitsmappe steht. Weitere Informationen finden Sie unter [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md).
+- Der `Wb` -Parameter des Ereignishandlers für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> -Ereignis. Der Parameter `Wb` ist ein <xref:Microsoft.Office.Interop.Excel.Workbook> -Objekt, das für die gespeicherte Arbeitsmappe steht. Weitere Informationen finden Sie unter [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md).
 
 ## <a name="test-the-project"></a>Testen des Projekts
 
@@ -126,14 +126,14 @@ ms.locfileid: "69548015"
 
 - Verwenden des Objektmodells von Excel: [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md).
 
-- Anpassen der Benutzeroberfläche (UI) von Excel, z. b. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder Erstellen eines eigenen benutzerdefinierten Aufgabenbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
+- Anpassen der Benutzeroberfläche (UI) von Excel, z. b. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder Erstellen eines eigenen benutzerdefinierten Aufgabenbereichs: [Anpassung der Office](../vsto/office-ui-customization.md)-Benutzeroberfläche.
 
-- Entwickeln und Debuggen von VSTO-Add-Ins für Excel: [Erstellen Sie Office-Lösungen](../vsto/building-office-solutions.md).
+- Erstellen und Debuggen von VSTO-Add-Ins für Excel: [Erstellen von Office](../vsto/building-office-solutions.md)-Projektmappen
 
-- Bereitstellen von VSTO-Add-Ins für Excel: Stellen Sie [eine Office-Lösung](../vsto/deploying-an-office-solution.md)bereit.
+- Bereitstellen von VSTO-Add-Ins für Excel: bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
-- [Übersicht über &#40;die Entwicklung von Office-Lösungen VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel-Lösungen](../vsto/excel-solutions.md)
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md)

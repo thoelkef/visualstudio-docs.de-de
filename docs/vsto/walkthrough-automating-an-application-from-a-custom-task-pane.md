@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871935"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich
@@ -42,8 +42,8 @@ ms.locfileid: "68871935"
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "68871935"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie mithilfe der PowerPoint-Add-In-Projektvorlage ein PowerPoint-VSTO-Add-In-Projekt mit dem Namen **MyAddIn**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+1. Erstellen Sie mithilfe der PowerPoint-Add-In-Projektvorlage ein PowerPoint-VSTO-Add-In-Projekt mit dem Namen **MyAddIn**. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt dem **Projektmappen-Explorer** das **MyAddIn**-Projekt hinzu.
 
@@ -82,12 +82,12 @@ ms.locfileid: "68871935"
 
      Die Datei **MyUserControl.cs** oder **MyUserControl.vb** wird geöffnet, und ein Ereignishandler für das <xref:System.Windows.Forms.MonthCalendar.DateChanged> -Ereignis wird erstellt.
 
-2. Fügen Sie am Anfang der Datei folgenden Code hinzu. Dieser Code erstellt Aliase für die <xref:Microsoft.Office.Core> -und [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) -Namespaces.
+2. Fügen Sie den folgenden Code ganz oben in der Datei ein. Dieser Code erstellt Aliase für die <xref:Microsoft.Office.Core> -und [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) -Namespaces.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3. Fügen Sie der `MyUserControl` -Klasse folgenden Code hinzu. Mit diesem Code wird ein [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) -Objekt als Member `MyUserControl`von deklariert. Im nächsten Schritt verwenden Sie diese [Form](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) , um einer Folie in der aktiven Präsentation ein Textfeld hinzuzufügen.
+3. Fügen Sie der `MyUserControl` -Klasse den folgenden Code hinzu. Mit diesem Code wird ein [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) -Objekt als Member von deklariert `MyUserControl` . Im nächsten Schritt verwenden Sie diese [Form](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) , um einer Folie in der aktiven Präsentation ein Textfeld hinzuzufügen.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
@@ -108,7 +108,7 @@ ms.locfileid: "68871935"
 
 2. Klicken Sie mit der rechten Maustaste auf **ThisAddIn.cs** oder **ThisAddIn.vb** , und klicken Sie auf **Code anzeigen**.
 
-3. Fügen Sie der `ThisAddIn` -Klasse folgenden Code hinzu. Dieser Code deklariert Instanzen von `MyUserControl` und <xref:Microsoft.Office.Tools.CustomTaskPane> als Member der `ThisAddIn` -Klasse.
+3. Fügen Sie der `ThisAddIn` -Klasse den folgenden Code hinzu. Dieser Code deklariert Instanzen von `MyUserControl` und <xref:Microsoft.Office.Tools.CustomTaskPane> als Member der `ThisAddIn` -Klasse.
 
      [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]
@@ -136,12 +136,12 @@ ms.locfileid: "68871935"
 
 - Erstellen Sie einen benutzerdefinierten Aufgabenbereich in einem VSTO-Add-in für eine andere Anwendung. Weitere Informationen zu den Anwendungen, die benutzerdefinierte Aufgabenbereiche unterstützen, finden Sie unter [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.
 
-- Erstellen einer Menübandschaltfläche, mit der ein benutzerdefinierter Aufgabenbereich ausgeblendet oder angezeigt werden kann. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menü](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)Band Schaltfläche.
+- Erstellen einer Menübandschaltfläche, mit der ein benutzerdefinierter Aufgabenbereich ausgeblendet oder angezeigt werden kann. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menü Band Schaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-- Erstellen eines benutzerdefinierten Aufgabenbereichs für jede E-Mail-Nachricht, die in Outlook geöffnet wird. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)Mail-Nachrichten in Outlook
+- Erstellen eines benutzerdefinierten Aufgabenbereichs für jede E-Mail-Nachricht, die in Outlook geöffnet wird. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)
-- [Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menü Band Schaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
-- [Exemplarische Vorgehensweise: Anzeigen benutzerdefinierter Aufgabenbereiche mit e-Mail-Nachrichten in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)

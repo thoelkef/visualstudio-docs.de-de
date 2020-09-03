@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId | Microsoft-Dokumentation
+title: 'IDebugThread2:: getthreadid | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3e9df6746cb2b1828b3020e473f2de19799b582
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153017"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Systembezeichner für den Thread ab.  
+Ruft den System Thread Bezeichner ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ int GetThreadId ( 
   
 #### <a name="parameters"></a>Parameter  
  `pdwThreadId`  
- [out] Gibt den Systembezeichner für den Thread zurück.  
+ vorgenommen Gibt den System Thread Bezeichner zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Eine Thread-ID wird verwendet, um einen Thread auf allen anderen Threads in einem Prozess zu identifizieren.  
+## <a name="remarks"></a>Bemerkungen  
+ Eine Thread-ID wird verwendet, um einen Thread unter allen anderen Threads in einem Prozess zu identifizieren.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CProgram` Objekt, das implementiert die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches `CProgram` Objekt implementiert wird, das die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Schnittstelle implementiert.  
   
 ```cpp#  
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     
@@ -58,5 +58,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }    
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

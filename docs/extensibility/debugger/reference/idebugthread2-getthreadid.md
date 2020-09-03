@@ -1,5 +1,5 @@
 ---
-title: IDebugthread2::GetThreadid | Microsoft Docs
+title: 'IDebugThread2:: getthreadid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718707"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-Ruft den Systemthreadbezeichner ab.
+Ruft den System Thread Bezeichner ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ int GetThreadId (
 
 ## <a name="parameters"></a>Parameter
 `pdwThreadId`\
-[out] Gibt den Systemthreadbezeichner zurück.
+vorgenommen Gibt den System Thread Bezeichner zurück.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Eine Thread-ID wird verwendet, um einen Thread zwischen allen anderen Threads in einem Prozess zu identifizieren.
+Eine Thread-ID wird verwendet, um einen Thread unter allen anderen Threads in einem Prozess zu identifizieren.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CProgram` Methode für ein einfaches Objekt implementiert wird, das die [IDebugThread2-Schnittstelle](../../../extensibility/debugger/reference/idebugthread2.md) implementiert.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches `CProgram` Objekt implementiert wird, das die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Schnittstelle implementiert.
 
 ```cpp
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {

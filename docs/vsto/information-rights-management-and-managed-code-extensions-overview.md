@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68872063"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code
@@ -30,16 +30,16 @@ ms.locfileid: "68872063"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="run-code-behind-documents-with-restricted-permissions"></a>Ausführen von Code hinter Dokumenten mit eingeschränkten Berechtigungen
- Wenn Ihre Projekt Mappe ein Dokument oder eine Arbeitsmappe enthält, die die Verwendung von "unm" enthält, können Word und Excel standardmäßig keinen Code ausführen. Wenn Sie der Autor des Dokuments sind oder über Vollzugriff verfügen, können Sie die Standardeinstellung so ändern, dass die Lösung funktioniert. Weitere Informationen finden Sie unter [Vorgehensweise: Zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)ausgeführt wird.
+ Wenn Ihre Projekt Mappe ein Dokument oder eine Arbeitsmappe enthält, die die Verwendung von "unm" enthält, können Word und Excel standardmäßig keinen Code ausführen. Wenn Sie der Autor des Dokuments sind oder über Vollzugriff verfügen, können Sie die Standardeinstellung so ändern, dass die Lösung funktioniert. Weitere Informationen finden Sie unter Gewusst [wie: zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)wird.
 
  Mit "unm" <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> wird verhindert, dass die im Dokument zwischengespeicherten Daten mithilfe von abgerufen oder bearbeitet werden.
 
 ## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Endbenutzer zum Einschränken von Berechtigungen für Dokumente, die Erweiterungen durch verwalteten Code verwenden
  Jeder Benutzer, der über Vollzugriff auf das Dokument oder die Arbeitsmappe in der Lösung verfügt, kann die Berechtigungen mithilfe von "unm" einschränken. Wenn z. b. ein Endbenutzer in der Buchhaltungsabteilung eine Lösung verwendet, die automatisch ein Arbeitsblatt mit Daten aus einer Datenbank auffüllt, möchte dieser Benutzer möglicherweise nur den Zugriff für Personen in seiner Abteilung zulassen und Lesezugriff für andere Benutzer gewähren. Wenn der Benutzer die eingeschränkten Berechtigungen hinzufügt, kann der Code hinter dem Arbeitsblatt standardmäßig nicht ausgeführt werden, und das Arbeitsblatt wird nicht mit Daten aufgefüllt.
 
- Um das Problem zu beheben, muss ein Benutzer mit Vollzugriff auf das Dokument oder die Arbeitsmappe die Standard Berechtigungseinstellungen ändern, um den programmgesteuerten Zugriff auf das Objektmodell zuzulassen. Weitere Informationen finden Sie unter [Vorgehensweise: Zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)ausgeführt wird.
+ Um das Problem zu beheben, muss ein Benutzer mit Vollzugriff auf das Dokument oder die Arbeitsmappe die Standard Berechtigungseinstellungen ändern, um den programmgesteuerten Zugriff auf das Objektmodell zuzulassen. Weitere Informationen finden Sie unter Gewusst [wie: zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Dokument Schutz in Projektmappen auf Dokument Ebene](../vsto/document-protection-in-document-level-solutions.md)
 - [Kenn Wort Schutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

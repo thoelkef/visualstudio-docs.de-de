@@ -1,5 +1,5 @@
 ---
-title: GetTaskSchedulersForDebugger-Methode | Microsoft-Dokumentation
+title: Gettaskschedulersfordebugger-Methode | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 995bf40669a4480f6f1ddfe8071a7885a4659c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152713"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger-Methode
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Array aller <xref:System.Threading.Tasks.TaskScheduler> Objekte, die zurzeit aktiv sind.  
+Ruft ein Array aller- <xref:System.Threading.Tasks.TaskScheduler> Objekte ab, die derzeit aktiv sind.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ Ruft ein Array aller <xref:System.Threading.Tasks.TaskScheduler> Objekte, die zu
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- Ein Array aller <xref:System.Threading.Tasks.TaskScheduler> Objekte, die in diesem zurzeit aktiv sind <xref:System.AppDomain>.  
+ Ein Array aller- <xref:System.Threading.Tasks.TaskScheduler> Objekte, die zurzeit in diesem aktiv sind <xref:System.AppDomain> .  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode ist nicht threadsicher und sollte nicht verwendet werden, gleichzeitig mit anderen Instanzen der <xref:System.Threading.Tasks.TaskScheduler>. Es sollte von einem Debugger aufgerufen werden, nur, wenn der Debugger alle anderen Threads angehalten hat.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode ist nicht Thread sicher und sollte nicht gleichzeitig mit anderen Instanzen von verwendet werden <xref:System.Threading.Tasks.TaskScheduler> . Er sollte nur von einem Debugger aufgerufen werden, wenn der Debugger alle anderen Threads angehalten hat.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [TaskScheduler-Klasse](../../extensibility/debugger/taskscheduler-class-internal-members.md)

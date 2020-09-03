@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5da78c33af599accf5ff3a2e09a9afb52982573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149276"
 ---
 # <a name="counter"></a>Zähler
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
   
 #### <a name="parameters"></a>Parameter  
  `Name`  
- Der Name des Zählers. Mit dem VSPerfCmd.exe-Befehl **QueryCounters** können Sie den Namen der verfügbaren Leistungsindikatoren auf dem Computer auflisten.  
+ Der Name des Leistungsindikators. Mit dem VSPerfCmd.exe-Befehl **QueryCounters** können Sie den Namen der verfügbaren Leistungsindikatoren auf dem Computer auflisten.  
   
  `Reload`  
  Die Anzahl der Zählerereignisse im Samplingintervall. Verwenden Sie sie nicht mit der Instrumentierungsmethode.  
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Erforderliche Optionen  
  Die „Counter“-Option kann nur mit einer der folgenden Optionen verwendet werden:  
   
- **Start:** `Trace`  
+ **Start:**`Trace`  
  Initialisiert den Profiler für die Verwendung der Instrumentierungsmethode  
   
- **Starten:** `AppName`  
+ **Starten** Sie Folgendes: `AppName`  
  Startet die angegebene Anwendung und den Profiler. Der Profiler muss für die Verwendung der Samplingmethode initialisiert werden.  
   
- **Attach:** `PID`  
+ **Anfügen:**`PID`  
  Startet den Profiler und fügt ihn dem von der Prozess-ID angegebenen Prozess an. Der Profiler muss für die Verwendung der Samplingmethode initialisiert werden.  
   
 ## <a name="example"></a>Beispiel  
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycl
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches,,"L2 Cache Instruction Fetches"  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
+ [Profilerstellung ASP.NET Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)
