@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597047"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Fehlermeldungen im Workflow-Designer
@@ -35,7 +35,7 @@ Fehler in Workflow-Designer in den folgenden Situationen auftreten:
 
 4. Die XAML-Datei enthält Fehler, die bewirken, dass der Workflow nicht geladen werden kann.
 
-Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Der Workflow wird erfolgreich aufgebaut, aber ein <xref:System.Activities.InvalidWorkflowException> wird zur Laufzeit ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
+Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Das Entwickeln des Workflows ist erfolgreich, aber eine <xref:System.Activities.InvalidWorkflowException> wird zur Laufzeit ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
 
 Wenn in Visual Studio ein Workflow geladen wird, werden die Fehler in der **Fehlerliste**angezeigt. Um zu der Aktivität zu navigieren, die die Fehlerquelle ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
 

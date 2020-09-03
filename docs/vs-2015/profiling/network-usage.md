@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548420"
 ---
 # <a name="network-usage"></a>Netzwerkauslastung
@@ -24,7 +24,7 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
  Das Netzwerktool unterstützt nur universelle Windows-Apps. Andere Plattformen werden derzeit nicht unterstützt.  
   
 > [!NOTE]
-> Detailliertere Informationen zum Netzwerk-Tool finden Sie unter [Introducing Visual Studio’s network tool (Einführung in das Netzwerk-Tool von Visual Studio)](https://devblogs.microsoft.com/visualstudio/?m=20155).  
+> Eine ausführlichere Beschreibung des Netzwerk Tools finden Sie unter Einführung in das [Netzwerk Tool von Visual Studio](https://devblogs.microsoft.com/visualstudio/?m=20155).  
   
 ## <a name="collecting-network-tool-data"></a>Sammeln von Netzwerktooldaten  
  Sie sollten das Tool **Netzwerk** mit einem geöffneten Visual Studio-Projekt auf dem Computer mit Visual Studio ausführen.  
@@ -54,13 +54,13 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
   
  ![Detailbereich des Netzwerktools](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|Name|BESCHREIBUNG|  
+|name|Beschreibung|  
 |-|-|  
-|**Headers**|Informationen zu den Anforderungsheadern des Ereignisses.|  
+|**Header**|Informationen zu den Anforderungsheadern des Ereignisses.|  
 |**Text**|Die Nutzlastdaten von Anforderung und Antwort.|  
 |**Parameter**|Die Parameternamen und Werte der Abfragezeichenfolge.|  
 |**Cookies**|Cookiedaten von Antwort und Anforderung.|  
-|**Zeitangaben**|Ein Diagramm der Phasen beim Abrufen der ausgewählten Ressourcen.|  
+|**Zeiten**|Ein Diagramm der Phasen beim Abrufen der ausgewählten Ressourcen.|  
   
  Die **Zusammenfassungsleiste** in der Ansicht „Netzwerk“ zeigt die jeweils angezeigte Anzahl von Netzwerkoperationen, die Menge der übertragenen Daten, die für das Herunterladen der Daten aufgewendete Zeit und die Anzahl von sichtbaren Fehlern (Anforderungen mit Antworten „4xx“ oder „5xx“).  
   
@@ -76,4 +76,4 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
 ## <a name="see-also"></a>Weitere Informationen  
  [Ausführen von Profil Erstellungs Tools ohne Debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Visual Studio-Blog: Einführung in den Netzwerk Inspektor von Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
- [Channel 9 Video: VS Diagnostics tools – New Network Profiler (Channel-9-Video: Diagnosetools von Visual Studio – Neuer Profiler „Netzwerk“)](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Channel 9-Video: vs Diagnostics Tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

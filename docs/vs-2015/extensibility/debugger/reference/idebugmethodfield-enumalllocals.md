@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumAllLocals | Microsoft-Dokumentation
+title: 'Idebugmethodfield:: enumalllocals | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2f0f89c3fee45d6d56b845753958d697e41ab11f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190891"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt einen Enumerator für alle lokalen Variablen der Methode enthält, beispielsweise solche, die intern vom Compiler generiert werden.  
+Erstellt einen Enumerator für alle lokalen Variablen der Methode, einschließlich derjenigen, die intern von einem Compiler generiert werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,21 +42,21 @@ int EnumAllLocals(
   
 #### <a name="parameters"></a>Parameter  
  `pAddress`  
- [in] Ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Objekt, das eine debugadresse innerhalb der Methode, die auf einem bestimmten Bereich oder Kontext darstellt.  
+ in Ein [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekt, das eine debugadresse innerhalb der Methode darstellt, die auf einen bestimmten Bereich oder Kontext verweist.  
   
  `ppLocals`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der alle lokalen Variablen im angegebenen Bereich darstellt, andernfalls einen null-Wert, der angibt, kein lokal.  
+ vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste aller lokalen Variablen im angegebenen Bereich darstellt. Andernfalls wird ein NULL-Wert zurückgegeben, der keine lokalen Variablen angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn kein lokal vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben, oder es wird S_FALSE zurückgegeben, wenn keine lokalen vorhanden sind Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Nur die Variablen, die innerhalb des Blocks mit der angegebenen Adresse definiert werden aufgelistet. Diese Methode enthält alle vom Compiler generierter "lokal". Wenn lediglich die lokalen Variablen, die explizit im Aufruf der Quelle definiert sind die [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Nur die Variablen, die in dem Block definiert sind, der die angegebene debugadresse enthält, werden aufgezählt. Diese Methode schließt alle vom Compiler generierten lokalen Variablen ein. Wenn nur die lokalen Variablen in der Quelle explizit definiert sind, müssen Sie die [enumlocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) -Methode aufzurufen.  
   
- Eine Methode kann mehrere Bereichsdefinition Kontexte oder Blöcke enthalten.  
+ Eine Methode kann mehrere Bereichs bezogene Kontexte oder Blöcke enthalten.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+ [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md)   
+ [Ienumdebug-Felder](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)

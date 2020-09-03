@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e06fd709b2d076b6fa8de7f104e907eb1b35a42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190953"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle stellt die Anfangsposition der Anweisung für einen Code an. Für die meisten Laufzeit-Architekturen kann heute ein Codekontext als Adresse für die Ausführung Stream eines Programms betrachtet werden.  
+Diese Schnittstelle stellt die Anfangsposition einer Code Anweisung dar. Für die meisten Lauf Zeit Architekturen kann ein Code Kontext als Adresse im ausführungsstream eines Programms betrachtet werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,34 +31,34 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die Debug-Engine implementiert diese Schnittstelle, um die Position des eine Code-Anweisung an eine Dokumentposition beziehen.  
+ Die Debug-Engine implementiert diese Schnittstelle, um die Position einer Code Anweisung mit einer Dokument Position in Beziehung zu setzen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Methoden für viele Schnittstellen zurückgeben dieser Schnittstelle, i. d. r. [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md). Darüber hinaus wird häufig mit der [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) Schnittstelle auch wie in der Lösung breakpointinformationen.  
+ Methoden für viele Schnittstellen geben diese Schnittstelle zurück (in der Regel [getcodecontext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)). Sie wird auch intensiv mit der [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) -Schnittstelle sowie in Informationen zur breakpointauflösung verwendet.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Zusätzlich zu den Methoden für die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Schnittstelle, die diese Schnittstelle implementiert die folgenden Methoden:  
+ Zusätzlich zu den Methoden in der [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:  
   
-|Methode|Beschreibung|  
+|Methode|BESCHREIBUNG|  
 |------------|-----------------|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Ruft ab, der Dokumentenkontext, der auf den aktiven Code-Kontext entspricht.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Ruft die Sprachinformationen für diesen Codekontext ab.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Ruft den Dokument Kontext ab, der dem aktiven Code Kontext entspricht.|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Ruft die Sprachinformationen für diesen Code Kontext ab.|  
   
-## <a name="remarks"></a>Hinweise  
- Der Hauptunterschied zwischen einer `IDebugCodeContext2` Schnittstelle und eine [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Schnittstelle ist, die eine `IDebugCodeContext2` ist immer Anweisung ausgerichtet. Dies bedeutet, dass ein `IDebugCodeContext2` ist immer an den Anfang einer Anweisung verweist, während ein `IDebugMemoryContext2` können eventuell Hinweise auf jedes beliebige Byte des Arbeitsspeichers in der Laufzeit-Architektur. `IDebugCodeContext2` wird von Anweisungen und nicht von der grundlegenden Speichergröße (in der Regel Byte) erhöht.  
+## <a name="remarks"></a>Bemerkungen  
+ Der Hauptunterschied zwischen einer `IDebugCodeContext2` Schnittstelle und einer [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Schnittstelle besteht darin, dass ein `IDebugCodeContext2` immer Anweisungs orientiert ist. Dies bedeutet, dass eine `IDebugCodeContext2` immer auf den Anfang einer Anweisung zeigt, während ein `IDebugMemoryContext2` auf ein beliebiges Byte des Speichers in der Lauf Zeit Architektur verweisen kann. `IDebugCodeContext2` wird nicht durch die grundlegende Speichergröße (in der Regel Byte), sondern durch Anweisungen inkrementiert.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
- [CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)   
- [Nächste Anweisung festlegen](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)   
- [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)   
- [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Getdisassemblystream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
+ [Cansetnextstatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)   
+ [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)   
+ [Getcodecontext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)   
+ [Getcodecontext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)   
  [Weiter](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

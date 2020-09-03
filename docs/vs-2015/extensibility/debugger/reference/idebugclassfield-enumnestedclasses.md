@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses | Microsoft-Dokumentation
+title: 'Idebugclassfield:: enumnetstedclasses | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7745eea3f5b3264016a25defd696a9b85f2e9fb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191073"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt einen Enumerator für die Klassen, die in dieser Klasse geschachtelt.  
+Erstellt einen Enumerator für die Klassen, die in dieser Klasse eingefügt werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,15 +40,15 @@ int EnumNestedClasses(
   
 #### <a name="parameters"></a>Parameter  
  `ppEnum`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der geschachtelten Klassen darstellt. Gibt einen null-Wert zurück, wenn es keine geschachtelte Klassen.  
+ vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste der geschiesteten Klassen darstellt. Gibt einen NULL-Wert zurück, wenn keine Unterklassen vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn es keine geschachtelte Klassen. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben, oder es wird S_FALSE zurückgegeben, wenn keine Unterklassen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Jedes Element der Enumeration ist ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt, das eine geschachtelte Klasse beschreibt.  
+## <a name="remarks"></a>Bemerkungen  
+ Jedes Element der-Enumeration ist ein [idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) -Objekt, das eine geschsted-Klasse beschreibt.  
   
- Eine geschachtelte Klasse ist eine Klasse, die innerhalb einer anderen Klasse definiert. Beispiel:  
+ Eine geschachtelte Klasse ist eine Klasse, die in einer anderen Klasse definiert ist. Beispiel:  
   
 ```  
 class RootClass {  
@@ -56,8 +56,8 @@ class RootClass {
 };  
 ```  
   
- Die [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Enumeration enthält Objekt stellt die `NestedClass` Klasse.  
+ Die [ienumdebugfields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Enumeration enthält ein Objekt, das die- `NestedClass` Klasse darstellt.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
