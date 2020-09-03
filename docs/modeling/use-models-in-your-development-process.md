@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115054"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
@@ -66,7 +66,7 @@ Zusammen mit Modellen werden gewöhnlich folgende weitere Spezifikationsaspekte 
 
 - Entwurfsmuster: Beschreiben die gemeinsamen Entwurfsregeln für die verschiedenen Teile des Systems.
 
-- Testspezifikationen: In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.
+- Testspezifikationen:  In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.
 
 - Projektplan: Der Projektplan oder -rückstand legt fest, wann die einzelnen Funktionen bereitgestellt werden. Sie können jede Funktion definieren, indem Sie angeben, welche Anwendungsfälle und Geschäftsregeln von ihr implementiert oder erweitert werden. Sie können entweder direkt im Plan auf die Anwendungsfälle und Geschäftsregeln verweisen, oder Sie können in einem eigenen Dokument einen Satz von Funktionen definieren und im Plan die Funktionstitel verwenden.
 
@@ -86,7 +86,7 @@ Definieren Sie vor Beginn jeder Iteration mithilfe von Modellen, was am Ende der
 
 - Veranstalten Sie gegen Ende jeder Iteration einen Anforderungsworkshop, um die Details der Anforderungen oder User Stories zu definieren, die in der nächsten Iteration entwickelt werden. Laden Sie Benutzer und Projektbeteiligte, die Entscheidungen zu Prioritäten treffen können, sowie Entwickler und Systemtester zur Teilnahme ein. Planen Sie zum Definieren der Anforderungen für eine Iteration von 2 Wochen eine Workshopdauer von 3 Stunden ein.
 
-- Der Workshop soll dazu führen, dass alle Projektbeteiligten Übereinstimmung über die bis zum Ende der nächsten Iteration zu erreichenden Ergebnisse erzielen. Verwenden Sie Modelle als eines der Instrumente zum Klarstellen der Anforderungen. Die Ausgabe des Workshops ist ein Iterations Rückstand, d. h. eine Liste von Entwicklungsaufgaben in Team Foundation und Test Auflistungen in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Der Workshop soll dazu führen, dass alle Projektbeteiligten Übereinstimmung über die bis zum Ende der nächsten Iteration zu erreichenden Ergebnisse erzielen. Verwenden Sie Modelle als eines der Instrumente zum Klarstellen der Anforderungen. Die Ausgabe des Workshops ist ein Iterations Rückstand, d. h. eine Liste von Entwicklungsaufgaben in Team Foundation und Test Auflistungen in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
 
 - Besprechen Sie im Anforderungsworkshop den Entwurf nur insoweit, als Sie die Entwicklungsaufgaben schätzungsweise bestimmen müssen. Begrenzen Sie ansonsten die Besprechung auf Systemverhalten, das Benutzer direkt wahrnehmen können. Halten Sie das Anforderungsmodell vom Architekturmodell getrennt.
 
@@ -131,12 +131,12 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 
 |**Kategorie**|**Links**|
 |-|-|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif) [MSDN-Videos zu Gewusst wie: Erstellen und Verwenden von UML-Modellen und-Diagrammen (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif) der [MSDN-Reihe "Gewusst wie": UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Videos**|![Link zu Video ](../data-tools/media/playvideo.gif) [MSDN How do I Videos: Erstellen und Verwenden von UML-Modellen und-Diagrammen (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![Link zu Video ](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![Link zu Video ](../data-tools/media/playvideo.gif) [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von Modellen in der Agile-Entwicklung](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)

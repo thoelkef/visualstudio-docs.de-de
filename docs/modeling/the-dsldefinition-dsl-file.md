@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114921"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 
-In diesem Thema wird die Struktur der Datei "DslDefinition. DSL" im DSL-Projekt einer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]-Lösung beschrieben, die eine *domänenspezifische Sprache*definiert. Die Datei "DslDefinition. DSL" beschreibt die Klassen und Beziehungen einer domänenspezifischen Sprache, zusammen mit dem Diagramm, den Formen, den Connectors, dem Serialisierungsformat und der **Toolbox** der domänenspezifischen Sprache und der zugehörigen Bearbeitungs Tools. In einer Projektmappe für eine domänenspezifischen Sprache wird der Code, der diese Tools definiert, entsprechend den Informationen in der Datei "DslDefinition.dsl" generiert.
+In diesem Thema wird die Struktur der Datei "DslDefinition. DSL" im DSL-Projekt einer-Projekt Mappe beschrieben [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , die eine *domänenspezifische Sprache*definiert. Die Datei "DslDefinition. DSL" beschreibt die Klassen und Beziehungen einer domänenspezifischen Sprache, zusammen mit dem Diagramm, den Formen, den Connectors, dem Serialisierungsformat und der **Toolbox** der domänenspezifischen Sprache und der zugehörigen Bearbeitungs Tools. In einer Projektmappe für eine domänenspezifischen Sprache wird der Code, der diese Tools definiert, entsprechend den Informationen in der Datei "DslDefinition.dsl" generiert.
 
 Im Allgemeinen verwenden Sie den *domänenspezifischen sprach Designer* , um die Datei "DslDefinition. DSL" zu bearbeiten. Das Rohformat der Datei ist jedoch XML, und Sie können sie in einem XML-Editor öffnen. Für das Debuggen und für Erweitungen ist es sicherlich sinnvoll zu wissen, welche Informationen die Datei enthält und wie diese organisiert sind.
 
@@ -26,9 +26,9 @@ Die Beispiele in diesem Thema stammen aus der Projektmappenvorlage für Komponen
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Abschnitte in der Datei "DslDefinition.dsl"
 
-Das Stamm Element ist \<DSL >, und seine Attribute geben den Namen der domänenspezifischen Sprache, den Namespace sowie die Haupt-und neben Versionsnummern für die Versionsverwaltung an. Das Schema `DslDefinitionModel` definiert Inhalt und Struktur einer gültigen DslDefinition.dsl-Datei.
+Das Stamm Element ist \<Dsl> , und seine Attribute geben den Namen der domänenspezifischen Sprache, den Namespace sowie die Haupt-und neben Versionsnummern für die Versionsverwaltung an. Das Schema `DslDefinitionModel` definiert Inhalt und Struktur einer gültigen DslDefinition.dsl-Datei.
 
-Die untergeordneten Elemente des \<DSL-> Stamm Elements lauten wie folgt:
+Die untergeordneten Elemente des Stamm \<Dsl> Elements lauten wie folgt:
 
 ### <a name="classes"></a>Klassen
 
@@ -40,7 +40,7 @@ In diesem Abschnitt wird jede Beziehung im Modell definiert. Quelle und Ziel ste
 
 ### <a name="types"></a>Typen
 
-In diesem Abschnitt wird jeder Typ und dessen Namespace definiert. Domäneneigenschaften haben zwei Typen. `DomainEnumerations` werden im Modell definiert und generieren Typen in DomainModel.cs. `ExternalTypes` auf Typen verweisen, die an anderer Stelle definiert werden (z. b. `String` oder `Int32`) und keine Elemente generieren.
+In diesem Abschnitt wird jeder Typ und dessen Namespace definiert. Domäneneigenschaften haben zwei Typen. `DomainEnumerations` werden im Modell definiert und generieren Typen in DomainModel.cs. `ExternalTypes` verweisen Sie auf Typen, die an anderer Stelle definiert werden (z. b. `String` oder `Int32` ), und generieren Sie nichts.
 
 ### <a name="shapes"></a>Formen
 
@@ -66,7 +66,7 @@ Dieser Abschnitt definiert einen Verbindungsgenerator für jedes Verbindungstool
 
 In diesem Abschnitt wird ein Diagramm definiert, und hier legen Sie Eigenschaften wie Hintergrundfarbe und Stammklasse fest. (Bei der Stamm Klasse handelt es sich um die Domänen Klasse, die durch das Diagramm als Ganzes dargestellt wird.) Der Diagramm Abschnitt enthält auch shapemap-und connectormap-Elemente, die die Form oder den Connector angeben, die die einzelnen Domänen Klassen oder-Beziehungen darstellen.
 
-### <a name="designer"></a>-Designer
+### <a name="designer"></a>Designer
 
 In diesem Abschnitt wird ein Designer (-Editor) definiert, der eine **Toolbox**, Validierungs Einstellungen, ein Diagramm und ein Serialisierungsschema vereint. Im Abschnitt "Designer" wird auch die Stammklasse des Modells definiert, die in der Regel auch die Stammklasse des Diagramms ist.
 
@@ -148,7 +148,7 @@ Jede Klasse hat eine Reihe von Eigenschaften und kann eine Basisklasse besitzen.
 </DomainClass>
 ```
 
-`NamedElement` ist die Grundlage mehrerer der anderen Klassen, z. b. `Component`, die neben der Eigenschaft `Name`, die Sie von `NamedElement`geerbt hat, über eigene Eigenschaften verfügt. Der untergeordnete Knoten "BaseClass" enthält einen Monikerverweis. Da sich die referenzierte Klasse im gleichen Namespace befindet, muss im Moniker nur ihr Name angegeben werden:
+`NamedElement` ist die Basis mehrerer der anderen Klassen, z. b `Component` ., die neben der-Eigenschaft, von der `Name` Sie geerbt hat, über eigene Eigenschaften verfügt `NamedElement` . Der untergeordnete Knoten "BaseClass" enthält einen Monikerverweis. Da sich die referenzierte Klasse im gleichen Namespace befindet, muss im Moniker nur ihr Name angegeben werden:
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -168,17 +168,17 @@ Jede Domänenklasse (einschließlich Beziehungen, Formen, Konnektoren und Diagra
 
 - **ID.** Dieses Attribut ist eine GUID. Wenn Sie in der Datei keinen Wert angeben, erzeugt der domänenspezifische Sprachdesigner einen Wert. (In den Abbildungen in diesem Dokument wird dieses Attribut aus Platzgründen in der Regel weggelassen.)
 
-- **Name und Namespace.** Diese Attribute geben den Namen und den Namespace der Klasse im generierten Code an. Gemeinsam müssen sie innerhalb der domänenspezifischen Sprache eindeutig sein.
+- **Name und Namespace.**  Diese Attribute geben den Namen und den Namespace der Klasse im generierten Code an. Gemeinsam müssen sie innerhalb der domänenspezifischen Sprache eindeutig sein.
 
 - **InheritanceModifier.** Dieses Attribut ist "abstrakt", "versiegelt" oder leer.
 
 - **Display Name.** Dieses Attribut ist der Name, der im **Eigenschaften** Fenster angezeigt wird. Das DisplayName-Attribut kann Leerzeichen und Interpunktionszeichen enthalten.
 
-- **GeneratesDoubleDerived.** Wenn dieses Attribut auf "true" festgelegt ist, werden zwei Klassen generiert, von denen die eine eine Unterklasse der anderen ist. Alle generierten Methoden sind in der Basisklassen enthalten, während die Konstruktoren in der Unterklasse enthalten sind. Durch Festlegen dieses Attributs können Sie jede generierte Methode im benutzerdefinierten Code außer Kraft setzen.
+- **GeneratesDoubleDerived.**  Wenn dieses Attribut auf "true" festgelegt ist, werden zwei Klassen generiert, von denen die eine eine Unterklasse der anderen ist. Alle generierten Methoden sind in der Basisklassen enthalten, während die Konstruktoren in der Unterklasse enthalten sind. Durch Festlegen dieses Attributs können Sie jede generierte Methode im benutzerdefinierten Code außer Kraft setzen.
 
 - **Hascustomconstructor**. Wenn dieses Attribut auf "true" festgelegt ist, wird der Konstruktor aus dem generierten Code weggelassen, sodass Sie Ihre eigene Version schreiben können.
 
-- **Attribute**. Dieses Attribut enthält die CLR-Attribute der generierten Klasse.
+- **Attribute:** Dieses Attribut enthält die CLR-Attribute der generierten Klasse.
 
 - **BaseClass**. Wenn Sie eine Basisklasse angeben, muss sie denselben Typ haben. Eine Domänenklasse muss z. B. eine andere Domänenklasse als Basis haben, während eine Depot-Form eine Depot-Form haben muss. Wenn Sie keine Basisklasse angeben, wird die Klasse im generierten Code aus einer Standard-Frameworkklasse abgeleitet. Eine Domänenklasse wird z. B. aus `ModelElement` abgeleitet.
 
@@ -206,9 +206,9 @@ Jede Domäneneigenschaft kann auch die folgenden Attribute haben:
 
 - **IsBrowsable**. Dieses Attribut bestimmt, ob die Eigenschaft im **Eigenschaften** Fenster angezeigt wird, wenn der Benutzer auf ein Objekt der übergeordneten Klasse klickt.
 
-- **IsUIReadOnly**. Dieses Attribut bestimmt, ob der Benutzer die Eigenschaft im **Eigenschaften** Fenster oder in einem Decorator, in dem die Eigenschaft dargestellt wird, ändern kann.
+- **Isuiread only**. Dieses Attribut bestimmt, ob der Benutzer die Eigenschaft im **Eigenschaften** Fenster oder in einem Decorator, in dem die Eigenschaft dargestellt wird, ändern kann.
 
-- **Kind**. Sie können dieses Attribut auf "Normal", "Calculated" oder "CustomStorage" festlegen. Wenn Sie dieses Attribut auf "Calculated" festlegen, müssen Sie benutzerdefinierten Code bereitstellen, der den Wert bestimmt, und die Eigenschaft ist schreibgeschützt. Wenn Sie dieses Attribut auf "CustomStorage" festlegen, müssen Sie Code bereitstellen, mit dem Werte sowohl abgerufen als auch festgelegt werden.
+- **Art**. Sie können dieses Attribut auf "Normal", "Calculated" oder "CustomStorage" festlegen. Wenn Sie dieses Attribut auf "Calculated" festlegen, müssen Sie benutzerdefinierten Code bereitstellen, der den Wert bestimmt, und die Eigenschaft ist schreibgeschützt. Wenn Sie dieses Attribut auf "CustomStorage" festlegen, müssen Sie Code bereitstellen, mit dem Werte sowohl abgerufen als auch festgelegt werden.
 
 - **IsElementName**. Wird dieses Attribut auf "true" festgelegt, wird sein Wert automatisch auf einen eindeutigen Wert eingestellt, wenn eine Instanz der übergeordneten Klasse erstellt wird. Dieses Attribut kann nur für eine Eigenschaft in jeder Klasse, die vom Typ Zeichenfolge sein muss, auf "true" festgelegt werden. Im Komponentendiagramm-Beispiel ist `Name` der `NamedElement`-Eigenschaft in `IsElementName` auf "true" festgelegt. Wenn ein Benutzer ein `Component`-Element (das von `NamedElement` erbt) erstellt, wird der Name automatisch auf einen Wert wie "Component6" initialisiert.
 
@@ -293,7 +293,7 @@ Das Komponentendiagramm-Beispiel enthält einen Pfad im ParentElementPath der Sh
 
 In diesem Beispiel ist InPort eine Unterklasse von ComponentPort und hat eine Beziehung namens ComponentHasPorts. Die Eigenschaft wird "Component" genannt.
 
-Beim Schreiben C# für dieses Modell können Sie in einem Schritt über einen Link springen, indem Sie die-Eigenschaft verwenden, die die Beziehung für die einzelnen Klassen generiert, die Sie miteinander verknüpft:
+Wenn Sie C#-Code für dieses Modell schreiben, können Sie einen Link in einem Schritt überspringen. Verwenden Sie dazu die Eigenschaft, die die Beziehung in jeder der Klassen generiert, die sie verknüpft:
 
 ```
      InPort port; ...  Component c = port.Component;
@@ -465,7 +465,7 @@ Die serialisierte Datei enthält:
 
 (Die Verbindungsbeziehung hat ihre eigenen XML-Klassendaten, die ihre Element- und Attributnamen bereitstellen.)
 
-Wenn das **omitelement** -Attribut auf "true" festgelegt ist, wird der Beziehungs Rollenname weggelassen, der die serialisierte Datei abkürzt und eindeutig ist, wenn die beiden Klassen nicht mehr als eine Beziehung aufweisen. Beispiel:
+Wenn das **omitelement** -Attribut auf "true" festgelegt ist, wird der Beziehungs Rollenname weggelassen, der die serialisierte Datei abkürzt und eindeutig ist, wenn die beiden Klassen nicht mehr als eine Beziehung aufweisen. Zum Beispiel:
 
 ```xml
 <component name="Component3">
@@ -488,7 +488,7 @@ Die Datei "DslDefinition.dsl" selbst ist eine serialisierte Datei und entspricht
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- Das **xmlserializationbehavior** -Attribut ist unter dem `Dsl`-Attribut eingebettet, aber das **omitelement** -Attribut wurde für die Embedding Relationship festgelegt. Daher tritt kein `RoleElementName`-Attribut dazwischen. Im Gegensatz dazu ist ein **classdata** -Attribut das `RoleElementName` Attribut des Embedding Relationship zwischen einem **xmlserializationbehavior** -Attribut und einem **xmlclassdata** -Attribut.
+- Das **xmlserializationbehavior** -Attribut ist unter dem- `Dsl` Attribut eingebettet, aber das **omitelement** -Attribut wurde für den Embedding Relationship festgelegt. Daher tritt kein `RoleElementName`-Attribut dazwischen. Im Gegensatz dazu ist ein **classdata** -Attribut das `RoleElementName` Attribut des Embedding Relationship zwischen einem **xmlserializationbehavior** -Attribut und einem **xmlclassdata** -Attribut.
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -498,7 +498,7 @@ Die Datei "DslDefinition.dsl" selbst ist eine serialisierte Datei und entspricht
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators ist die einbettende Beziehung zwischen `Connector` und `Decorator`. `UseFullForm` wurde so festgelegt, dass der Name der Beziehung mit der Liste der Eigenschaften für die einzelnen Links aus dem Connector-Objekt angezeigt wird. `OmitElement` wurde jedoch ebenfalls festgelegt, sodass kein `RoleElementName` die Links einschließt, die in `Connector` eingebettet sind:
+- ConnectorHasDecorators ist die einbettende Beziehung zwischen `Connector` und `Decorator`. `UseFullForm` wurde so festgelegt, dass der Name der Beziehung mit der Liste der Eigenschaften für die einzelnen Links des Connector-Objekts angezeigt wird. `OmitElement` wurde jedoch ebenfalls festgelegt, sodass kein `RoleElementName` die Links einschließt, die in `Connector` eingebettet sind:
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -519,7 +519,7 @@ Definitionen von Formen und Konnektoren erben neben Folgendem auch Attribute und
 
 - **Exposesfillcolorasproperty** und mehrere ähnliche Attribute. Dank dieser Booleschen Attribute kann die entsprechende Eigenschaft vom Benutzer variiert werden. Wenn ein Benutzer einer Sprache auf eine Form im Diagramm klickt, werden im Allgemeinen die Eigenschaften, die im **Eigenschaften** Fenster angezeigt werden, die Eigenschaften der Domänen Klasseninstanz, der die Form zugeordnet ist, angezeigt. Wenn `ExposesFillColorAsProperty` auf "true" festgelegt ist, wird auch eine Eigenschaft der Form selbst angezeigt.
 
-- **ShapeHasDecorators**. Eine Instanz dieses Attribut tritt für jeden Text-, Symbol- oder Erweitern/Reduzieren-Decorator auf. (In der Datei "DslDefinition.dsl" ist `ShapeHasDecorators` eine Beziehung, wobei `UseFullForm` auf "true" festgelegt ist.)
+- **Shapehasdecorators**. Eine Instanz dieses Attribut tritt für jeden Text-, Symbol- oder Erweitern/Reduzieren-Decorator auf. (In der Datei "DslDefinition.dsl" ist `ShapeHasDecorators` eine Beziehung, wobei `UseFullForm` auf "true" festgelegt ist.)
 
 ## <a name="shape-maps"></a>Formzuordnungen
 
@@ -577,7 +577,7 @@ Eine minimale Konnektorzuordnung verweist auf einen Konnektor und eine Beziehung
 
 Konnektorzuordnungen können auch Decorator-Zuordnungen enthalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)

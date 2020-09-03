@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905941"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor
@@ -142,7 +142,7 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
 - Um die Überfüllung des Menübefehls in der Benutzeroberfläche zu verhindern, sollten Sie die vorhandenen Befehle in der IDE verwenden, bevor Sie neue Befehle erfinden. Freigegebene Befehle sind in " *sharedcmddef. vsct* " und " *shellcmddef. vsct*" definiert. Diese Dateien werden standardmäßig im Unterverzeichnis visualstudiointegration\common\inc der-Installation installiert [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] .
 
-- `ISelectionContainer`kann sowohl eine einfache als auch eine Mehrfachauswahl Ausdrücken. Jedes ausgewählte Objekt wird als Objekt implementiert `IDispatch` .
+- `ISelectionContainer` kann sowohl eine einfache als auch eine Mehrfachauswahl Ausdrücken. Jedes ausgewählte Objekt wird als Objekt implementiert `IDispatch` .
 
 - Die IDE implementiert `IOleUndoManager` als einen Dienst, der von einem <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> oder als Objekt zugänglich ist, das durch instanziiert werden kann <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . Der Editor implementiert die- `IOleUndoUnit` Schnittstelle für jede `Undo` Aktion.
 
@@ -152,6 +152,6 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
   - `Window.Object`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zum Automatisierungs Modell beitragen](../extensibility/internals/contributing-to-the-automation-model.md)

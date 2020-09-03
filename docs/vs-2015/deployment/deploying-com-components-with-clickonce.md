@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c83367881b7ed6a69fe10af8b7c68eb1692e3e6
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74706895"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
@@ -31,7 +31,7 @@ ms.locfileid: "74706895"
 
 Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe. Komponenten müssen global registriert werden und können daher unerwünschte Nebeneffekte zwischen überlappenden Anwendungen verursachen. Diese Situation ist in .NET Framework Anwendungen in der Regel kein Problem, da Komponenten vollständig für eine Anwendung isoliert sind oder nebeneinander kompatibel sind. Mit Visual Studio können Sie isolierte COM-Komponenten auf dem Betriebssystem Windows XP oder höher bereitstellen.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bietet einen einfachen und sicheren Mechanismus zum Bereitstellen von .NET-Anwendungen. Wenn in Ihren Anwendungen ältere COM-Komponenten verwendet werden, müssen Sie jedoch zusätzliche Schritte für die Bereitstellung ausführen. In diesem Thema wird beschrieben, wie Sie isolierte COM-Komponenten bereitstellen und auf native Komponenten verweisen (z. C++b. von Visual Basic 6,0 oder Visual).  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bietet einen einfachen und sicheren Mechanismus zum Bereitstellen von .NET-Anwendungen. Wenn in Ihren Anwendungen ältere COM-Komponenten verwendet werden, müssen Sie jedoch zusätzliche Schritte für die Bereitstellung ausführen. In diesem Thema wird beschrieben, wie Sie isolierte COM-Komponenten bereitstellen und auf native Komponenten verweisen (z. b. von Visual Basic 6,0 oder Visual C++).  
   
  Weitere Informationen zum Bereitstellen isolierter COM-Komponenten finden Sie unter [vereinfachen der APP-Bereitstellung mit ClickOnce und com-Registrierung (com](/archive/msdn-magazine/2005/april/simplify-app-deployment-with-clickonce-and-registration-free-com)).  
   
@@ -43,18 +43,18 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
  Wenn der Manifest-Generator auf einen isolierten COM-Verweis stößt, listet er alle `CoClass` Einträge in der Typbibliothek der Komponente auf, wobei jeder Eintrag mit den entsprechenden Registrierungsdaten abgeglichen und Manifest-Definitionen für alle COM-Klassen in der Typbibliotheks Datei erzeugt werden.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Bereitstellen von COM-Komponenten ohne Registrierung mit ClickOnce  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellungs Technologie eignet sich gut für die Bereitstellung isolierter COM-Komponenten, da sowohl [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] als auch Registrierungs freies com erfordern, dass eine Komponente ein Manifest hat, um bereitgestellt werden zu können.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] die Bereitstellungs Technologie eignet sich gut für die Bereitstellung isolierter COM-Komponenten, da sowohl [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] als auch Registrierungs freies com erfordert, dass eine Komponente ein Manifest hat, um bereitgestellt werden zu können.  
   
- In der Regel sollte der Autor der Komponente ein Manifest bereitstellen. Andernfalls kann Visual Studio ein Manifest für eine COM-Komponente automatisch erstellen. Die Generierung des Manifests wird während des [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Veröffentlichungsprozesses ausgeführt. Weitere Informationen finden Sie unter [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md). Mit dieser Funktion können Sie auch ältere Komponenten nutzen, die Sie in früheren Entwicklungsumgebungen erstellt haben, z. b. Visual Basic 6,0.  
+ In der Regel sollte der Autor der Komponente ein Manifest bereitstellen. Andernfalls kann Visual Studio ein Manifest für eine COM-Komponente automatisch erstellen. Die Generierung von Manifesten wird während des [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Veröffentlichungs Vorgangs durchgeführt. Weitere Informationen finden Sie unter [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md). Mit dieser Funktion können Sie auch ältere Komponenten nutzen, die Sie in früheren Entwicklungsumgebungen erstellt haben, z. b. Visual Basic 6,0.  
   
- Zum Bereitstellen von COM-Komponenten gibt es zwei [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Möglichkeiten:  
+ Es gibt zwei Möglichkeiten, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] com-Komponenten bereitzustellen:  
   
 - Verwenden Sie den Boots Trapper zum Bereitstellen der COM-Komponenten. Dies funktioniert auf allen unterstützten Plattformen.  
   
 - Verwenden Sie die native Komponenten Isolation (auch bekannt als com-Bereitstellung). Dies funktioniert jedoch nur bei einem Betriebssystem unter Windows XP oder höher.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Beispiel für das isolieren und Bereitstellen einer einfachen COM-Komponente  
- Um die Bereitstellung von COM-Komponenten ohne Registrierung zu veranschaulichen, wird in diesem Beispiel eine Windows-basierte Anwendung in Visual Basic erstellt, die auf eine isolierte Native COM-Komponente verweist, die mithilfe von Visual Basic 6,0 erstellt wurde, und mithilfe [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]bereitgestellt.  
+ Um die Bereitstellung von COM-Komponenten ohne Registrierung zu veranschaulichen, wird in diesem Beispiel eine Windows-basierte Anwendung in Visual Basic erstellt, die auf eine isolierte Native COM-Komponente verweist, die mit Visual Basic 6,0 erstellt wurde, und mithilfe von bereitgestellt werden [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
  Zuerst müssen Sie die Native COM-Komponente erstellen:  
   
@@ -62,14 +62,14 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
   
 1. Wenn Sie Visual Basic 6,0 verwenden, klicken Sie im Menü **Datei** auf **neu**und dann auf **Projekt**.  
   
-2. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** aus, und wählen Sie ein **ActiveX-DLL** -Projekt aus. Geben Sie im Feld **Name** `VB6Hello`ein.  
+2. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** aus, und wählen Sie ein **ActiveX-DLL** -Projekt aus. Geben Sie im Feld **Name**`VB6Hello`ein.  
   
     > [!NOTE]
     > Nur ActiveX-DLL-und ActiveX-Steuerelement-Projekttypen werden mit Registrierungs freiem com unterstützt. ActiveX-EXE-und ActiveX-Dokument Projekttypen werden nicht unterstützt.  
   
 3. Doppelklicken Sie in **Projektmappen-Explorer**auf **Class1. vb** , um den Text-Editor zu öffnen.  
   
-4. Fügen Sie in Class1. vb nach dem generierten Code für die `New`-Methode den folgenden Code hinzu:  
+4. Fügen Sie in Class1. vb nach dem generierten Code für die-Methode den folgenden Code hinzu `New` :  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
     End Sub  
     ```  
   
-5. Erstellen Sie die Komponente. Klicken Sie im Menü **Erstellen** auf Projekt Mappe **Erstellen**.  
+5. Erstellen Sie die Komponente. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.  
   
 > [!NOTE]
 > Registrierungs freies com unterstützt nur die Projekttypen DLLs und com-Steuerelemente. Sie können keine exe-Datei mit Registrierungs freiem com verwenden.  
@@ -88,13 +88,13 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
   
 1. Wenn Sie Visual Basic verwenden, klicken Sie im Menü **Datei** auf **neu**und dann auf **Projekt**.  
   
-2. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** aus, und wählen Sie **Windows-Anwendung**aus. Geben Sie im Feld **Name** `RegFreeComDemo`ein.  
+2. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** aus, und wählen Sie **Windows-Anwendung**aus. Geben Sie im Feld **Name**`RegFreeComDemo`ein.  
   
 3. Klicken Sie in **Projektmappen-Explorer**auf die Schaltfläche **alle Dateien anzeigen** , um die Projekt Verweise anzuzeigen.  
   
 4. Klicken Sie mit der rechten Maustaste auf den Knoten **Verweise** , und wählen Sie im Kontextmenü **Verweis hinzufügen** aus.  
   
-5. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Durchsuchen** , navigieren Sie zu VB6Hello. dll, und wählen Sie Sie aus.  
+5. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Durchsuchen** , navigieren Sie zu VB6Hello.dll, und wählen Sie Sie aus.  
   
     Ein **VB6Hello** -Verweis wird in der Verweis Liste angezeigt.  
   
@@ -123,20 +123,20 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
   
 2. Ändern Sie im Fenster **Eigenschaften** den Wert der **isolierten** Eigenschaft von **false** in **true**.  
   
-3. Klicken Sie im Menü **Erstellen** auf Projekt Mappe **Erstellen**.  
+3. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.  
   
-   Wenn Sie jetzt F5 drücken, funktioniert die Anwendung erwartungsgemäß, aber Sie wird jetzt unter com registriert. Um dies zu beweisen, versuchen Sie, die Registrierung der VB6Hello. dll-Komponente zu aufheben und RegFreeComDemo1. exe außerhalb der Visual Studio-IDE auszuführen. Wenn Sie auf die Schaltfläche klicken, funktioniert Sie immer noch. Wenn Sie das Anwendungs Manifest temporär umbenennen, tritt ein Fehler auf.  
+   Wenn Sie jetzt F5 drücken, funktioniert die Anwendung erwartungsgemäß, aber Sie wird jetzt unter com registriert. Um dies zu beweisen, versuchen Sie, die Registrierung der VB6Hello.dll-Komponente zu aufheben und RegFreeComDemo1.exe außerhalb der Visual Studio-IDE auszuführen. Wenn Sie auf die Schaltfläche klicken, funktioniert Sie immer noch. Wenn Sie das Anwendungs Manifest temporär umbenennen, tritt ein Fehler auf.  
   
 > [!NOTE]
-> Sie können das Fehlen einer COM-Komponente simulieren, indem Sie die Registrierung vorübergehend aufheben. Öffnen Sie eine Eingabeaufforderung, navigieren Sie zu Ihrem Systemordner, indem Sie `cd /d %windir%\system32`eingeben, und heben Sie die Registrierung der Komponente auf, indem Sie `regsvr32 /u VB6Hello.dll`eingeben. Sie können Sie erneut registrieren, indem Sie `regsvr32 VB6Hello.dll`eingeben.  
+> Sie können das Fehlen einer COM-Komponente simulieren, indem Sie die Registrierung vorübergehend aufheben. Öffnen Sie eine Eingabeaufforderung, navigieren Sie zum Systemordner, indem Sie eingeben `cd /d %windir%\system32` , und heben Sie die Registrierung der Komponente auf, indem Sie eingeben `regsvr32 /u VB6Hello.dll` . Sie können Sie erneut registrieren, indem Sie eingeben `regsvr32 VB6Hello.dll` .  
   
- Der letzte Schritt besteht darin, die Anwendung mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]zu veröffentlichen:  
+ Der letzte Schritt besteht darin, die Anwendung mit folgenden Aktionen zu veröffentlichen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] :  
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>So veröffentlichen Sie ein Anwendungs Update mit einer isolierten COM-Komponente  
   
 1. Klicken Sie im Menü **Erstellen** auf **regfrecomdemo veröffentlichen**.  
   
-    Der Veröffentlichungs-Assistent wird angezeigt.  
+    Der Webpublishing-Assistent wird angezeigt.  
   
 2. Geben Sie im Veröffentlichungs-Assistenten einen Speicherort auf dem Datenträger des lokalen Computers an, auf den Sie zugreifen und die veröffentlichten Dateien untersuchen können.  
   
@@ -145,7 +145,7 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
    Wenn Sie die veröffentlichten Dateien untersuchen, werden Sie feststellen, dass die Datei "sysmon. ocx" enthalten ist. Das-Steuerelement ist vollständig für diese Anwendung isoliert, was bedeutet, dass die Anwendung nicht beeinträchtigt werden kann, wenn der Computer des Endbenutzers eine andere Anwendung verwendet, die eine andere Version des-Steuer Elements verwendet.  
   
 ## <a name="referencing-native-assemblies"></a>Verweisen auf native Assemblys  
- Visual Studio unterstützt Verweise auf systemeigene Visual Basic C++ 6,0 oder Assemblys. solche Verweise werden als Native Verweise bezeichnet. Sie können erkennen, ob ein Verweis System eigen ist, indem Sie überprüfen, ob seine **Dateityp** - **Eigenschaft auf System** eigen oder **ActiveX**festgelegt  
+ Visual Studio unterstützt Verweise auf systemeigene Visual Basic 6,0-oder C++-Assemblys. solche Verweise werden als Native Verweise bezeichnet. Sie können erkennen, ob ein Verweis System eigen ist, indem Sie überprüfen, ob seine **Dateityp** - **Eigenschaft auf System** eigen oder **ActiveX**festgelegt  
   
  Um einen nativen Verweis hinzuzufügen, verwenden Sie den Befehl **Verweis hinzufügen** , und navigieren Sie dann zum Manifest. Einige Komponenten platzieren das Manifest in der dll. In diesem Fall können Sie einfach die DLL selbst auswählen, und Visual Studio fügt sie als nativen Verweis hinzu, wenn Sie erkennt, dass die Komponente ein eingebettetes Manifest enthält. Visual Studio schließt auch automatisch alle abhängigen Dateien oder Assemblys ein, die im Manifest aufgelistet sind, wenn Sie sich im selben Ordner wie die Komponente befinden, auf die verwiesen wird.  
   
@@ -172,7 +172,7 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
   
   Eine COM-Komponente kann nur einmal pro Anwendung isoliert werden. Beispielsweise können Sie nicht die gleiche COM-Komponente von zwei verschiedenen **Klassen Bibliotheks** Projekten isolieren, die Teil derselben Anwendung sind. Dadurch wird eine Buildwarnung erzeugt, und die Anwendung kann zur Laufzeit nicht geladen werden. Um dieses Problem zu vermeiden, empfiehlt Microsoft, com-Komponenten in einer einzigen Klassenbibliothek zu kapseln.  
   
-  Es gibt verschiedene Szenarien, in denen die com-Registrierung auf dem Computer des Entwicklers erforderlich ist, auch wenn die Bereitstellung der Anwendung keine Registrierung erfordert. Die `Isolated`-Eigenschaft erfordert, dass die COM-Komponente auf dem Computer des Entwicklers registriert wird, um das Manifest während des Builds automatisch zu generieren. Es gibt keine Registrierungs Erfassungs Funktionen, die die Selbstregistrierung während des Builds aufrufen. Außerdem werden alle Klassen, die nicht explizit in der Typbibliothek definiert sind, im Manifest nicht berücksichtigt. Wenn eine COM-Komponente mit einem bereits vorhandenen Manifest verwendet wird, z. b. ein nativer Verweis, muss die Komponente möglicherweise nicht zur Entwicklungszeit registriert werden. Die Registrierung ist jedoch erforderlich, wenn es sich bei der Komponente um ein ActiveX-Steuerelement handelt und Sie Sie in die **Toolbox** und den Windows Forms-Designer einschließen möchten.  
+  Es gibt verschiedene Szenarien, in denen die com-Registrierung auf dem Computer des Entwicklers erforderlich ist, auch wenn die Bereitstellung der Anwendung keine Registrierung erfordert. Die- `Isolated` Eigenschaft erfordert, dass die COM-Komponente auf dem Computer des Entwicklers registriert wird, um das Manifest während des Builds automatisch zu generieren. Es gibt keine Registrierungs Erfassungs Funktionen, die die Selbstregistrierung während des Builds aufrufen. Außerdem werden alle Klassen, die nicht explizit in der Typbibliothek definiert sind, im Manifest nicht berücksichtigt. Wenn eine COM-Komponente mit einem bereits vorhandenen Manifest verwendet wird, z. b. ein nativer Verweis, muss die Komponente möglicherweise nicht zur Entwicklungszeit registriert werden. Die Registrierung ist jedoch erforderlich, wenn es sich bei der Komponente um ein ActiveX-Steuerelement handelt und Sie Sie in die **Toolbox** und den Windows Forms-Designer einschließen möchten.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)

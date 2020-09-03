@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905797"
 ---
 # <a name="how-to-open-standard-editors"></a>Vorgehensweise: Öffnen von Standard-Editoren
@@ -49,7 +49,7 @@ Wenn Sie einen Standard-Editor öffnen, können Sie der IDE einen Standard Edito
 
      Wenn die Dokument Ansicht oder das Dokument Ansichts Objekt erfolgreich in einem Fensterrahmen positioniert wurde, wird das Objekt mit seinen Daten initialisiert, indem aufgerufen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [Öffnen und Speichern von Projekt Elementen](../extensibility/internals/opening-and-saving-project-items.md)
 - [Gewusst wie: Öffnen von projektspezifischen Editoren](../extensibility/how-to-open-project-specific-editors.md)

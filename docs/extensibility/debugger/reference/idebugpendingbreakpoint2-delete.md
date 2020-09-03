@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Delet | Microsoft Docs
+title: IDebugPendingBreakpoint2::D Elete | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd6e2d61eb7a7ce927a966281bba2f0cbf470dc6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725906"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-Löscht diesen ausstehenden Haltepunkt und alle haltepunkte, die davon gebunden sind.
+Löscht den ausstehenden Haltepunkt und alle von ihm gebundenen Haltepunkte.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,10 +39,10 @@ int Delete();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, `E_BP_DELETED` Wenn der Breakpoint gelöscht wurde.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CPendingBreakpoint` Methode für ein einfaches Objekt implementiert wird, das die [IDebugPendingBreakpoint2-Schnittstelle](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) implementiert.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches `CPendingBreakpoint` Objekt implementiert wird, das die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Schnittstelle implementiert.
 
 ```cpp
 HRESULT CPendingBreakpoint::Delete(void)

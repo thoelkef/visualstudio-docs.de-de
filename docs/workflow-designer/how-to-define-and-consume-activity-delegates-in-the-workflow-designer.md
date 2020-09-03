@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817501"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
@@ -62,7 +62,7 @@ ms.locfileid: "85817501"
 
 19. Geben Sie in der Spalte **Wert** des Arguments mit dem Namen **Argument**den Wert **Items [index]** ein. Klicken Sie auf **OK** , um das Dialogfeld **delegatearguments** zu schließen.
 
-20. Ziehen Sie eine <xref:System.Activities.Statements.Assign>-Aktivität auf die horizontale Linie unterhalb der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Die <xref:System.Activities.Statements.Assign> -Aktivität wird erstellt, und <xref:System.Activities.Statements.Sequence> es wird automatisch eine-Aktivität erstellt, die die beiden Aktivitäten im **Body** -Abschnitt der **myforeach** -Aktivität enthält. Die Sequenz wird benötigt, da der **Text** Abschnitt nur eine einzelne Aktivität enthalten kann. Das automatische Erstellen einer neuen <xref:System.Activities.Statements.Sequence> Aktivität ist ein neues Feature von .NET Framework 4,5.
+20. Ziehen Sie eine <xref:System.Activities.Statements.Assign>-Aktivität auf die horizontale Linie unterhalb der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Die  <xref:System.Activities.Statements.Assign> -Aktivität wird erstellt, und <xref:System.Activities.Statements.Sequence> es wird automatisch eine-Aktivität erstellt, die die beiden Aktivitäten im **Body** -Abschnitt der **myforeach** -Aktivität enthält. Die Sequenz wird benötigt, da der **Text** Abschnitt nur eine einzelne Aktivität enthalten kann. Das automatische Erstellen einer neuen <xref:System.Activities.Statements.Sequence> Aktivität ist ein neues Feature von .NET Framework 4,5.
 
 21. Legen Sie die Eigenschaft **to** der <xref:System.Activities.Statements.Assign> Aktivität auf **Index**fest. Legen Sie die **value** -Eigenschaft der **assign** -Aktivität auf **Index + 1**fest.
 

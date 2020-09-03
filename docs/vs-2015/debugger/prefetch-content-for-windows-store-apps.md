@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ac6479b4dbb0815374174140deb0d660636ac9e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300524"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Vorabrufen von Inhalt für Windows Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt nur für Windows] (.. /Image/windows_only_content. png "windows_only_content")  
+Gilt nur für Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Damit Ihre Windows Store-App reaktionsfähiger wird, können Sie anfordern, dass Windows einige Webinhalte wie Webseiten oder Bilder vorab in den [WinInet](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)-[WinInet](https://msdn.microsoft.com/library/aa383630.aspx)-Cache der APP lädt. Diese Funktion wird als Vorabrufen bezeichnet. Vorabrufen ist besonders effektiv für Inhalte, die beim Starten verwendet werden, aber Sie können auch andere häufig genutzte Inhalte abrufen. Mit den Methoden der [Windows.Networking.BackgroundTransfer.ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx)-Klasse können Sie die URIs der gewünschten Inhalte angeben.  
   
@@ -35,7 +35,7 @@ Gilt nur für Windows] (.. /Image/windows_only_content. png "windows_only_conten
   
 1. Starten Sie die App, um die Inhalts-URIs zum Vorabladen in der App zu registrieren. Wählen Sie anschließend im Menü **Debuggen** die Option **Debuggen starten** (Tastenkombination: F5) aus.  
   
-2. Wählen Sie im Menü **Debuggen** die Option **Debuggen beenden** (Tastenkombination: UMSCHALT+F5) aus.  
+2. Wählen Sie im Menü **Debuggen**  die Option **Debuggen beenden** aus (Tastenkombination: UMSCHALT + F5).  
   
 3. Wählen Sie im Menü **Debuggen** die Option **Andere Debugziele** und anschließend **Vorabrufen von Windows Store-App auslösen** aus.  
   
@@ -44,5 +44,5 @@ Gilt nur für Windows] (.. /Image/windows_only_content. png "windows_only_conten
 > [!NOTE]
 > Wiederholen Sie diese Schritte jedes Mal, wenn Sie die angegebenen Webinhalte ändern oder neue hinzufügen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Blog Beitrag: Auslösen von Vorabruf für Windows Store-Apps in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+## <a name="see-also"></a>Weitere Informationen  
+ [Blogbeitrag: Triggering Prefetch for Windows Store Apps in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/) (Auslösen des Vorabrufs in Windows Store-Apps in Visual Studio 2013 Update 2, in englischer Sprache)

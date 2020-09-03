@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203408"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Vorgehensweise: Angeben der .NET Framework-Runtime
+# <a name="how-to-specify-the-net-framework-runtime"></a>Vorgehensweise: Angeben der .NET Framework-Laufzeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit der Veröffentlichung von [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] können Anwendungen mit Modulen zusammengesetzt sein, die mit verschiedenen Versionen der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Laufzeit erstellt wurden. Standardmäßig erstellen die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools für die erste Laufzeit, die von der Anwendung geladen wird, ein Profil. Sie können die Laufzeit zur Profilerstellung angeben, wenn Sie eine Anwendung mit dem Profiler starten, und wenn Sie den Profiler an eine bereits ausgeführte Anwendung anfügen.  

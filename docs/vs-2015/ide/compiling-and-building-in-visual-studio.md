@@ -13,13 +13,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300267"
 ---
-# <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Generieren in Visual Studio
+# <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Generieren in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kurzen Abständen Anwendungen, Assemblys und ausführbare Programme zu erstellen. Indem Sie den Code häufig erstellen, können Sie Kompilierungsfehler, z. B: falsche Syntax, falsch geschriebene Schlüsselwörter und Typenkonflikte, früher identifizieren. Sie können auch Laufzeitfehler, z. B. Logik- und Semantikfehler, erkennen und beheben, indem Sie häufig Debugversionen des Codes erstellen und ausführen.
@@ -29,7 +29,7 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 ## <a name="choosing-a-build-method"></a>Auswählen einer Erstellungsmethode
  Sie können eine Anwendung mithilfe der Standardbuildoptionen in der IDE, an einer Eingabeaufforderung oder unter Verwendung von Team Foundation Build erstellen. Bei jedem dieser Optionen wird MSBuild als zugrunde liegende Technologie verwendet, und jeder Ansatz bietet bestimmte in der folgenden Tabelle aufgeführte Vorteile.
 
-|Erstellungsmethode|Vorteile|Weitere Informationen|
+|Erstellungsmethode|Vorteile|Weitere Informationen finden Sie unter|
 |------------------|--------------|--------------------------|
 |Verwenden von IDE|– Sie können Builds leichter erstellen und sofort ausführen.<br />– Sie können Multiprozessorbuilds für C++- und C#-Projekte ausführen.<br />– Sie können einige Aspekte des Buildsystems anpassen.|[Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |Ausführen einer MSBuild-Befehlszeile|– Sie können Projekte erstellen, ohne Visual Studio zu installieren.<br />– Sie können Multiprozessorbuilds für alle Projekttypen ausführen.<br />– Sie können die meisten Bereiche des Buildsystems anpassen.|[MSBuild](../msbuild/msbuild.md)|
@@ -40,7 +40,7 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 
  Aus der IDE können Sie die folgenden zusätzlichen Aufgaben ausführen:
 
-- [Ändern des Buildausgabeverzeichnisses](../ide/how-to-change-the-build-output-directory.md).
+- [Ändern Sie das Buildausgabeverzeichnis](../ide/how-to-change-the-build-output-directory.md).
 
 - [Identifizieren von Projekten, die zum ordnungsgemäßen Erstellen von der Ausgabe eines anderen Projekt abhängig sind](../ide/how-to-create-and-remove-project-dependencies.md).
 
@@ -52,5 +52,5 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 
 - Verbessern der Buildleistung mithilfe von parallelen Builds. Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) oder im Blogbeitrag [Tuning C++ build parallelism](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/) (Optimieren des parallelen Erstellens für C++).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) [erstellen (Kompilieren) Websiteprojekte](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [So wird es gemacht: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)

@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299676"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
@@ -40,12 +40,12 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 - Visuelle Updates, die seltener sind als erwartet. Dies tritt auf, wenn der UI-Thread ausgelastet ist, damit eine angemessene Framerate beibehalten wird. Frames könnten z. B. abgelegt werden, wenn der UI-Thread ausgelastet ist. Einige von UI-Threads unabhängige Aufgaben können auch die Häufigkeit von visuellen Updates einschränken, z. B. Netzwerkanforderungen, Decodierung von Images und Paint-Ereignisse. (Nicht alle Paint-Ereignisse werden im UI-Thread ausgeführt).  
   
-## <a name="RunningProfiler"></a> Ausführen des Tools für die Reaktionsfähigkeit der HTML-Benutzeroberfläche  
+## <a name="run-the-html-ui-responsiveness-tool"></a><a name="RunningProfiler"></a> Ausführen des Tools für die Reaktionsfähigkeit der HTML-Benutzeroberfläche  
  Sie können das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden, wenn Sie eine funktionierende universelle Windows-App oder Windows Store-App in Visual Studio geöffnet oder auf einem Computer installiert haben, auf dem Windows 8 oder höher ausgeführt wird.  
   
 1. Wenn Sie die App aus Visual Studio heraus ausführen, wählen Sie auf der Symbolleiste **Standard** in der Dropdownliste **Debugging starten** ein Bereitstellungsziel aus, z. B. einen der Windows Phone-Emulatoren, **Lokaler Computer**, **Simulator**oder **Remotecomputer**.  
   
-2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…** .  
+2. Wählen Sie im Menü **Debuggen** die Option **leistungsprofiler...** aus.  
   
      Wenn Sie das Ziel der Analyse ändern möchten, wählen Sie**Ziel ändern**aus.  
   
@@ -73,10 +73,10 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 6. Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden**aus.  
   
-## <a name="IsolateAnIssue"></a> Isolieren eines Problems  
+## <a name="isolate-an-issue"></a><a name="IsolateAnIssue"></a> Isolieren eines Problems  
  Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
-### <a name="Workflow"></a> Isolieren eines Problems mit der Reaktionsfähigkeit der Benutzeroberfläche  
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a> Isolieren eines Problems mit der Reaktionsfähigkeit der Benutzeroberfläche  
  In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie den Benutzeroberflächen-Reaktionsfähigkeits-Profiler effektiver verwenden können:  
   
 1. Öffnen Sie die App in Visual Studio.  
@@ -133,12 +133,12 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 13. Wenn das Diagramm vergrößert ist, wählen Sie einen Teil des Diagramms für die CPU-Auslastung oder des Diagramms für den visuellen Durchsatz aus. Wenn Sie eine Auswahl treffen, ändert sich das Zeitachsendetaildiagramm im unteren Bereich des Profilers und zeigt nur den ausgewählten Zeitraum an.  
   
-### <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem  
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem  
  Zeiten übermäßiger CPU-Auslastung können zu niedrigen oder ungleichmäßigen Frameraten führen. Wenn Sie Rich-Media-Apps und Spiele entwickeln, stellt das visuelle Durchsatzdiagramm eventuell wichtigere Daten als das CPU-Auslastungsdiagramm bereit.  
   
  Um ein visuelles Durchsatzproblem zu isolieren, führen Sie die im vorherigen Abschnitt beschriebenen Schritte aus, doch verwenden Sie das visuelle Durchsatzdiagramm als einen der Hauptdatenpunkte.  
   
-### <a name="ProfileMark"></a> Markieren von Code zur Analyse  
+### <a name="mark-code-for-analysis"></a><a name="ProfileMark"></a> Markieren von Code zur Analyse  
  Um einen Abschnitt eines App-Codes zu isolieren, dem Daten zugeordnet sind, die im Diagramm angezeigt werden, können Sie in der App einen Funktionsaufruf hinzufügen, mit dem der Profiler angewiesen wird, eine Benutzermarkierung (ein invertiertes Dreieck) an dem Zeitpunkt in der Zeitachse einzufügen, an dem die Funktion ausgeführt wird. Jede Benutzermarkierung, die Sie hinzufügen, wird in der Zeitachse im CPU-Auslastungsdiagramm, im Diagramm des visuellen Durchsatzes und im Zeitachsendetaildiagramm angezeigt.  
   
  Um eine Benutzermarkierung hinzuzufügen, fügen Sie der App den folgenden Code hinzu: In diesem Beispiel wird "Abrufen von Daten" als die Beschreibung des Ereignisses verwendet.  
@@ -174,10 +174,10 @@ if (performance.mark && performance.measure) {
   
  ![Benutzermaßereignis in der Zeitleistendetailansicht](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-## <a name="AnalyzeData"></a> Analysieren von Daten  
+## <a name="analyze-data"></a><a name="AnalyzeData"></a> Analysieren von Daten  
  In den folgenden Abschnitten sind Informationen enthalten, die Ihnen das Interpretieren der im Profiler angezeigten Daten erleichtern sollen.  
   
-### <a name="Ruler"></a> Anzeigen einer Zeitachse für die Diagnosesitzung  
+### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> Anzeigen einer Zeitachse für die Diagnosesitzung  
  Das Lineal am Anfang des Profilers zeigt die Zeitachse für profilierte Informationen an. Diese Zeitachse gilt sowohl für das Diagramm zur CPU-Auslastung als auch für das Diagramm zum visuellen Durchsatz.  
   
  Die Zeitachse für die Diagnosesitzung sieht wie folgt aus. Außerdem wird eine QuickInfo für mehrere Ereignisse des App-Lebenszyklus anzeigt:  
@@ -192,7 +192,7 @@ if (performance.mark && performance.measure) {
   
 - Ein Navigationsereignis, das auftritt, wenn Sie zu einer anderen Seite navigieren. In einer QuickInfo für das Ereignis wird die URL der Zielseite angezeigt.  
   
-### <a name="CPUUtilization"></a> Anzeigen der CPU-Auslastung  
+### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Anzeigen der CPU-Auslastung  
  Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert, um die folgenden spezifischen Kategorien darzustellen: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Format**, **Rendern**und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#ProfilerEvents) in diesem Thema.  
   
  Im CPU-Auslastungsdiagramm wird die Zeit angezeigt, die auf allen App-Threads aufgewendet wird. Dabei werden die CPU-Auslastungs-Werte für eine oder mehrere CPUs in einem einzelnen Prozentwert zusammengefasst. Der CPU-Auslastungswert überschreitet möglicherweise 100 Prozent, wenn mehr als eine CPU verwendet wird.  
@@ -214,7 +214,7 @@ if (performance.mark && performance.measure) {
   
   Weitere Informationen zur Verwendung des Diagramms finden Sie unter [Isolate a UI responsiveness problem](#Workflow) in diesem Thema.  
   
-### <a name="VisualThroughput"></a> Anzeigen des visuellen Durchsatzes (FPS)  
+### <a name="view-visual-throughput-fps"></a><a name="VisualThroughput"></a> Anzeigen des visuellen Durchsatzes (FPS)  
  Das Diagramm des visuellen Durchsatzes ermöglicht das Identifizieren von Zeiträumen, in denen die Framerate abgefallen ist. Es zeigt die Frames pro Sekunde (FPS) für die App an. Dieses Diagramm ist für die Entwicklung von Spielen und von Rich-Media-Apps besonders hilfreich.  
   
  Der angezeigte F/s-Wert kann sich von den tatsächlichen Frameraten unterscheiden. Behalten Sie die folgenden Informationen im Kopf, wenn Sie Daten in diesem Diagramm untersuchen:  
@@ -237,7 +237,7 @@ if (performance.mark && performance.measure) {
   
 - Sie erhalten eine ausführlichere Ansicht eines ausgewählten Zeitraums, indem Sie die Schaltfläche **Vergrößern** auswählen.  
   
-### <a name="TimelineDetails"></a> Anzeigen des Zeitachsendetaildiagramms  
+### <a name="view-timeline-details"></a><a name="TimelineDetails"></a> Anzeigen des Zeitachsendetaildiagramms  
  Das Zeitachsendetaildiagramm wird im unteren Bereich des Benutzeroberflächen-Reaktionsfähigkeits-Profilers angezeigt. Es stellt sequenzielle und hierarchische Informationen über Ereignisse bereit, die während ausgewählter Zeiträume die meiste CPU-Zeit in Anspruch genommen haben. Mit diesem Diagramm können Sie bestimmen, wodurch ein bestimmtes Ereignis ausgelöst wurde, und für einige Ereignisse erkennen, wie das Ereignis wieder dem Quellcode zugeordnet wird. Mit diesem Diagramm können Sie auch die Zeit zu bestimmen, die für das Paint-Ereignis visueller Updates auf den Bildschirm erforderlich ist.  
   
  Im Diagramm werden die Aufgaben des UI-Threads und die Aufgaben an Hintergrundthreads angezeigt, die langsame visuelle Aktualisierungen verursachen können. Im Diagramm werden folgende Aspekte nicht angezeigt: Just-In-Time-Aufgaben in JavaScript, asynchrone GPU-Aufgaben, Aufgaben, die außerhalb des Hostprozesses ausgeführt werden (wie RuntimeBroker.exe- und dwm.exe-Aufgaben) oder Aufgaben für Bereiche der Windows Runtime, die noch nicht für die Profilerstellung instrumentiert wurden (wie Datenträger-E/A).  
@@ -276,12 +276,12 @@ if (performance.mark && performance.measure) {
   > [!TIP]
   > Das Diagramm mit den Zeitachsendetails und **Zusammenfassung der inklusiven Zeit** können Ihnen dabei helfen, Optimierungsbereiche zu identifizieren. Wenn beide Ansichten viele kleine Aufgaben anzeigen, ist das Ereignis eventuell ein Kandidat für die Optimierung. Beispielsweise kann es sein, dass eine App häufig DOM-Elemente aktualisiert, was zu Layout- und HTML-Analyseereignissen führt. Sie können die Leistung möglicherweise optimieren, indem Sie eine Batchverarbeitung einrichten.  
 
-### <a name="FilterTimelineDetails"></a> Filtern der Zeitachsendetails  
+### <a name="filter-timeline-details"></a><a name="FilterTimelineDetails"></a> Filtern der Zeitachsendetails  
  Sie können die Ansicht in den Zeitachsendetails für ein bestimmtes Ereignis filtern. Wählen Sie dazu in dessen Kontextmenü **Für Ereignis filtern** aus. Wenn Sie diese Option auswählen, wird die Zeitachsen- und Rasteransicht auf das ausgewählte Ereignis beschränkt. Auch die Auswahl im CPU-Auslastungsdiagramm wird auf das bestimmte Ereignis beschränkt.  
   
  ![Filtern der Zeitachse nach einem Ereignis](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
-### <a name="FilterEvents"></a> Filtern von Ereignissen  
+### <a name="filter-events"></a><a name="FilterEvents"></a> Filtern von Ereignissen  
  Sie können einige Ereignisse aus dem Zeitachsendetaildiagramm herausfiltern, um Störungen in den Daten zu reduzieren oder um Daten zu entfernen, die für Ihr Leistungsszenario irrelevant sind. Sie können nach Ereignisname oder Ereignisdauer filtern oder mit spezifischen, hier beschriebenen Filtern.  
   
  Deaktivieren Sie die Option **Hintergrundaktivität** im Filtersymbol im unteren Bereich, um Bilddecodierungs-, spekulative Download- und GC-Ereignisse auszufiltern. Da für diese Ereignisse zumeist keine Aktionen ausgeführt werden, sind sie standardmäßig ausgeblendet.  
@@ -297,7 +297,7 @@ if (performance.mark && performance.measure) {
   
  Um Benutzermaße auszufiltern, deaktivieren Sie die Option **Benutzermaße** . Benutzermaße sind Ereignisse der obersten Ebene ohne untergeordnete Elemente.  
   
-### <a name="GroupFrames"></a> Ereignisse nach Frame gruppieren  
+### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> Ereignisse nach Frame gruppieren  
  Sie können Ereignisse, die in der Zeitachsendetailansicht angezeigt werden, in einzelnen Frames gruppieren. Diese Frameereignisse sind toolgenerierte Ereignisse und stellen Ereigniscontainer der obersten Ebene für alle Aufgaben des UI-Threads dar, die zwischen Paint-Ereignissen auftreten. Um diese Ansicht zu aktivieren, wählen Sie **Ereignisse der obersten Ebene nach Frames gruppieren**aus.  
   
  ![Ereignisse auf der obersten Ebene gruppieren](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
@@ -306,10 +306,10 @@ if (performance.mark && performance.measure) {
   
  ![Zeitachsenereignisse gruppiert nach Rahmen](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-## <a name="SaveSession"></a> Speichern einer Diagnosesitzung  
+## <a name="save-a-diagnostic-session"></a><a name="SaveSession"></a> Speichern einer Diagnosesitzung  
  In Visual Studio können Sie eine Diagnosesitzung speichern, wenn Sie die Registerkarte schließen, die der Sitzung zugeordnet ist. Gespeicherte Sitzungen können zu einem späteren Zeitpunkt erneut geöffnet werden.  
   
-## <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a><a name="ProfilerEvents"></a> Profiler event reference  
  Profilerereignisse sind kategorisiert und im Benutzeroberflächen-Reaktionsfähigkeits-Profiler farbcodiert. Beispiele für Ereigniskategorien:  
   
 - **Ladevorgang.** Gibt die Zeit an, die beim ersten Laden der App für den Abruf von App-Ressourcen und die Analyse von HTML und CSS aufgebracht wurde. Dazu können auch Netzwerkanforderungen gehören.  
@@ -351,10 +351,10 @@ if (performance.mark && performance.measure) {
 |Farbe|Rendern|Es wurden visuelle Änderungen am DOM vorgenommen, und es wurde versucht, Teile der Seite erneut zu rendern.|  
 |Ebene rendern|Rendern|Es wurden visuelle Änderungen an einem unabhängig gerenderten Fragment des DOM (Ebene genannt) vorgenommen, und für die Änderungen muss ein Teil der Seite gerendert werden.|  
 |Bilddekodierung|Bilddekodierung|Ein Bild wurde im DOM eingefügt, und es wurde versucht, das Bild vom ursprünglichen Format in eine Bitmap zu dekomprimieren und zu decodieren.|  
-|Frame|Nicht zutreffend|Es wurden optische Änderungen am DOM vorgenommen, durch die ein Neuzeichnen der betroffenen Teile der Seite erforderlich wurde. Dies ist ein toolgeneriertes Ereignis für die Gruppierung.|  
-|Benutzermaß|Nicht zutreffend|Ein App-spezifisches Szenario wurde während der Verwendung der `performance.measure` -Methode gemessen. Dies ist ein toolgeneriertes Ereignis, das für die Analyse von Code verwendet wird.|  
+|Frame|N/V|Es wurden optische Änderungen am DOM vorgenommen, durch die ein Neuzeichnen der betroffenen Teile der Seite erforderlich wurde. Dies ist ein toolgeneriertes Ereignis für die Gruppierung.|  
+|Benutzermaß|N/V|Ein App-spezifisches Szenario wurde während der Verwendung der `performance.measure` -Methode gemessen. Dies ist ein toolgeneriertes Ereignis, das für die Analyse von Code verwendet wird.|  
   
-## <a name="Tips"></a> Zusätzliche Informationen  
+## <a name="additional-information"></a><a name="Tips"></a> Zusätzliche Informationen  
   
 - Sehen Sie sich [dieses Video](https://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
   
@@ -362,5 +362,5 @@ if (performance.mark && performance.measure) {
   
 - Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Analysieren der App-Leistung](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

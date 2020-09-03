@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115387"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
@@ -29,7 +29,7 @@ In Visual Studio gelten die globalen Verknüpfungen und debugkombinationen für 
 
 In der folgenden Tabelle werden die Standard Tastenkombinationen zusammengefasst, die Workflow-Designer Befehlen zugewiesen sind.
 
-|Shortcut|Zweck|
+|Verknüpfung|Zweck|
 |-|-------------|
 |STRG+E, A|Argument-Designer anzeigen oder ausblenden.|
 |STRG+E, C|Die ausgewählte Aktivität direkt reduzieren.|
@@ -43,7 +43,7 @@ In der folgenden Tabelle werden die Standard Tastenkombinationen zusammengefasst
 |STRG+E, S|Das Element der aktuellen Auswahl mit dem Tastaturfokus hinzufügen.|
 |STRG+E, V|Variablen-Designer anzeigen oder ausblenden.|
 |STRG+E, X|Alle Aktivitäten im Workflow erweitern.|
-|STRG+ALT+F6|Den Tastaturfokus im aktuellen Benutzeroberflächenbereich auf den nächsten Bereich der Folge verschieben. Die Reihenfolge ist wie folgt definiert:<br /><br /> 1. Breadcrumb-Navigationsleiste<br />2. Designer Oberfläche<br />3. Argumente/Variablen/Import-Designer, wenn Sie geöffnet sind<br />4. Shell|
+|STRG+ALT+F6|Den Tastaturfokus im aktuellen Benutzeroberflächenbereich auf den nächsten Bereich der Folge verschieben. Die Reihenfolge ist die Folgende:<br /><br /> 1. Breadcrumb-Navigationsleiste<br />2. Designer Oberfläche<br />3. Argumente/Variablen/Import-Designer, wenn Sie geöffnet sind<br />4. Shell|
 
 ### <a name="flowchart"></a>Flussdiagramm
 
@@ -82,8 +82,8 @@ Standardmäßig gelten die Standard Tastenkombinationen für die Visual Basic Te
   - Ausschneiden
   - Kopieren
   - Einfügen
-  - Alle auswählen
-  - Rückgängig machen
+  - Alles auswählen
+  - Rückgängig
   - Wiederholen
 
 - Um die Tastenkombinationen für Befehle zur Ausdrucks Bearbeitung innerhalb Workflow-Designer in Visual Studio neu zuzuordnen, bearbeiten Sie die Verknüpfungen im Workflow-Designer Bereich. Im Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.
