@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668840"
 ---
 # <a name="options-page-debugging-node-properties"></a>Optionsseite, Eigenschaften des Knotens 'Debuggen'
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) beschrieben, die der Kategorie **Debugging** `DTE.Properties("Debugging", <Property Page>)` im Dialogfeld **Optionen** zugeordnet sind.
+In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) beschrieben, die der Kategorie **Debugging**`DTE.Properties("Debugging", <Property Page>)` im Dialogfeld **Optionen** zugeordnet sind.
 
 ## <a name="general"></a>Allgemein
  `DTE.Properties("Debugging", "General")`
@@ -58,10 +58,10 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (boolesch)|Bestimmt, ob Bearbeiten und Fortfahren aktiviert ist. Diese Option gilt für alle Sprachen, die Bearbeiten und Fortfahren unterstützen.|
 |InvokedByCommands|Get/Set (boolesch)|Bestimmt, ob beim Bearbeiten und Fortfahren Codeänderungen automatisch angewendet werden, wenn der Benutzer einen Debugbefehl wie **Schritt** oder **Fortfahren** auswählt. Diese Option gilt nur für nativen Code.|
-|InvokedByCommandsAskFirst|Get/Set (boolesch)|Bestimmt, ob der Benutzer beim Bearbeiten und Fortfahren zur Bestätigung von Codeänderungen aufgefordert wird, wenn der Benutzer einen Debugbefehl wie **Schritt** oder **Fortfahren** auswählt. Diese Option gilt nur für systemeigenen Code.|
-|WarnAboutStaleCode|Get/Set (boolesch)|Bestimmt, ob der Debugger eine Warnung ausgibt, wenn das Bearbeiten und Fortfahren zur Ausführung von veraltetem Code führen würde. Diese Option gilt nur für systemeigenen Code.|
-|RelinkChangesOnStop|Get/Set (kurzer Name)|Bestimmt, ob Visual Studio Codeänderungen, die mit Bearbeiten und Fortfahren angewendet wurden, erneut bindet, wenn die Ausführung der Anwendung unterbrochen wird. Diese Option gilt nur für systemeigenen Code.|
-|AllowPrecompiling|Get/Set (kurzer Name)|Bestimmt, ob beim Bearbeiten und Fortfahren vorkompilierte Header im Hintergrund geladen werden können. Diese Option gilt nur für systemeigenen Code.|
+|InvokedByCommandsAskFirst|Get/Set (boolesch)|Bestimmt, ob der Benutzer beim Bearbeiten und Fortfahren zur Bestätigung von Codeänderungen aufgefordert wird, wenn der Benutzer einen Debugbefehl wie **Schritt** oder **Fortfahren** auswählt. Diese Option gilt nur für nativen Code.|
+|WarnAboutStaleCode|Get/Set (boolesch)|Bestimmt, ob der Debugger eine Warnung ausgibt, wenn das Bearbeiten und Fortfahren zur Ausführung von veraltetem Code führen würde. Diese Option gilt nur für nativen Code.|
+|RelinkChangesOnStop|Get/Set (kurzer Name)|Bestimmt, ob Visual Studio Codeänderungen, die mit Bearbeiten und Fortfahren angewendet wurden, erneut bindet, wenn die Ausführung der Anwendung unterbrochen wird. Diese Option gilt nur für nativen Code.|
+|AllowPrecompiling|Get/Set (kurzer Name)|Bestimmt, ob beim Bearbeiten und Fortfahren vorkompilierte Header im Hintergrund geladen werden können. Diese Option gilt nur für nativen Code.|
 
 ## <a name="just-in-time"></a>Just-In-Time
  `DTE.Properties("Debugging", "JustInTime")`
@@ -72,7 +72,7 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 |JitNative|Get/Set (boolesch)|Bestimmt, ob Just-In-Time-Debuggen für systemeigenen Code aktiviert ist.|
 |JitScript|Get/Set (boolesch)|Bestimmt, ob Just-In-Time-Debuggen für Skriptcode aktiviert ist.|
 
-## <a name="native"></a>Systemeigen
+## <a name="native"></a>Systemeigenes Format
  `DTE.Properties("Debugging", "Native")`
 
 |Eigenschaftenelementname|Wert|BESCHREIBUNG|
@@ -80,5 +80,5 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 |LoadDllExports|Get/Set (boolesch)|Bestimmt, ob der Debugger DLL-Exporttabellen lädt.|
 |EnableRPC|Get/Set (boolesch)|Bestimmt, ob der Debugger COM-Remoteprozeduraufrufe schrittweise ausführen kann.|
 
-## <a name="see-also"></a>Siehe auch
- [Steuern von Options Einstellungen](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [Festlegen der Namen von Eigenschaften Elementen auf Options Seiten](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [Optionen Seite, Schriftarten und Farben Knoten Eigenschaften](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Optionen Seite, Text-Editor Knoten Eigenschaften](../../ide/reference/options-page-text-editor-node-properties.md) [Allgemein, Debuggen, Dialog Feld "Optionen" ](../../debugger/general-debugging-options-dialog-box.md) [Bearbeiten und fortfahren, Debuggen, Dialogfeld "Optionen](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) " [Just-in-Time, Debugging, Dialogfeld "Optionen](../../debugger/just-in-time-debugging-options-dialog-box.md) "
+## <a name="see-also"></a>Weitere Informationen
+ [Steuern von Options Einstellungen](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [Festlegen der Namen von Eigenschaften Elementen auf Options Seiten](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) Optionen (Dialogfeld) [, Schriftarten und Farben Knoten Eigenschaften](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Optionen-Seite, Text-Editor Knoten Eigenschaften](../../ide/reference/options-page-text-editor-node-properties.md) [Allgemein, Debuggen, Dialogfeld "Optionen](../../debugger/general-debugging-options-dialog-box.md) " [Bearbeiten und fortfahren, Debuggen, Dialog](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) Feld "Optionen" [Just-in-Time, Debugging, Dialogfeld](../../debugger/just-in-time-debugging-options-dialog-box.md)

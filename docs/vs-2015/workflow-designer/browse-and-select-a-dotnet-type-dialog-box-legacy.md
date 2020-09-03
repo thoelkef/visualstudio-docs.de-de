@@ -14,23 +14,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1e5045a62d0a654af968d50e0c309bcf8104b5cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668987"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Dialogfeld '.NET-Typ suchen und auswählen' (Vorgängerversion)
-In diesem Thema wird beschrieben, wie Sie das Dialogfeld **.NET-Typ suchen und auswählen** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)] verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+In diesem Thema wird beschrieben, wie Sie das Dialogfeld **.NET-Typ suchen und auswählen** in der Legacy-Version verwenden [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
  Wenn Sie im **Eigenschaften** Fenster Eigenschaften auswählen, die einen .NET Framework Typ in einer referenzierten Assembly annehmen, wird am Ende des Textfelds der Eigenschaft ein Ellipsen **[...]** angezeigt. Wenn Sie auf **[...]** klicken, wird das Dialogfeld **.NET-Typ suchen und auswählen** geöffnet. In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys auswählen. Wenn Sie z. b. den Aktivitäts Designer verwenden, klicken Sie im **Eigenschaften** Fenster auf die Auslassungs Punkte **[...]** der **Basisklasse** , um eine andere Basisklasse für eine Aktivität aus der Struktur der referenzierten Assemblys auszuwählen.
 
  In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **.NET-Typ suchen und auswählen** beschrieben.
 
-|Benutzeroberflächenelement|Beschreibung|
+|Benutzeroberflächenelement|BESCHREIBUNG|
 |----------------|-----------------|
 |**Typname:**|Der Name des aktuell ausgewählten Typs.|
 |**Type**|Der linke Bereich enthält eine Strukturansicht der Assemblys, auf die verwiesen wird. Im rechten Bereich werden die Typen angezeigt, die für die Auswahl aus der im linken Bereich ausgewählten Assembly, auf die verwiesen wird, zur Verfügung stehen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden des Aktivitätsdesigners der Vorgängerversion](../workflow-designer/using-the-legacy-activity-designer.md)

@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667994"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Gewusst wie: Anpassen von Menüs und Symbolleisten in Visual Studio
@@ -45,15 +45,15 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
  **In diesem Thema:**
 
-- [Hinzufügen, Entfernen oder Verschieben eines Menüs in der Menüleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
+- [Hinzufügen, entfernen oder Verschieben eines Menüs in der Menüleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
 
-- [Hinzufügen, Entfernen oder Verschieben einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)
+- [Hinzufügen, entfernen oder Verschieben einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)
 
 - [Anpassen eines Menüs oder einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_customize)
 
 - [Zurücksetzen eines Menüs oder einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
 
-## <a name="bkmk_addmenu"></a> Hinzufügen, Entfernen oder Verschieben eines Menüs in der Menüleiste
+## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a><a name="bkmk_addmenu"></a> Hinzufügen, Entfernen oder Verschieben eines Menüs in der Menüleiste
 
 1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 
@@ -63,13 +63,13 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     - Um ein Menü hinzuzufügen, klicken Sie auf die Schaltfläche **Neues Menü hinzufügen** und anschließend auf die Schaltfläche **Auswahl ändern**, und benennen Sie das Menü, das Sie hinzufügen möchten.
 
-         ![Dialogfeld "anpassen" zum Hinzufügen eines Menüs](../ide/media/addmenu.png "AddMenu")
+         ![Dialogfeld "Anpassen" zum Hinzufügen eines Menüs](../ide/media/addmenu.png "AddMenu")
 
     - Um ein Menü zu entfernen, wählen Sie es in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
     - Um ein Menü in der Menüleiste zu verschieben, wählen Sie das Menü in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Nach oben** oder **Nach unten**.
 
-## <a name="bkmk_addtoolbar"></a> Hinzufügen, Entfernen oder Verschieben einer Symbolleiste
+## <a name="adding-removing-or-moving-a-toolbar"></a><a name="bkmk_addtoolbar"></a> Hinzufügen, Entfernen oder Verschieben einer Symbolleiste
 
 1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 
@@ -79,7 +79,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     - Um eine Symbolleiste hinzufügen, klicken Sie auf die Schaltfläche **Neu**, geben Sie einen Namen für die Symbolleiste ein, die Sie hinzufügen möchten, und klicken Sie dann auf **OK**.
 
-         ![Dialogfeld "anpassen" zum Hinzufügen einer Symbolleiste](../ide/media/addtoolbar.png "AddToolBar")
+         ![Dialogfeld "Anpassen" zum Hinzufügen einer Symbolleiste](../ide/media/addtoolbar.png "AddToolBar")
 
     - Um eine benutzerdefinierte Symbolleiste zu entfernen, wählen Sie sie in der Liste **Symbolleisten** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
@@ -93,7 +93,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
         > [!NOTE]
         > Weitere Informationen über Möglichkeiten zur Verbesserung der Gebrauchstauglichkeit sowie der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="bkmk_customize"></a> Anpassen eines Menüs oder einer Symbolleiste
+## <a name="customizing-a-menu-or-a-toolbar"></a><a name="bkmk_customize"></a> Anpassen eines Menüs oder einer Symbolleiste
 
 1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 
@@ -115,7 +115,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     - Wenn Sie einen Befehl in Gruppen aufteilen möchten, wählen Sie zuerst aus der Liste **Controls** (Steuerelemente) einen Befehl aus. Klicken Sie dann auf die Schaltfläche **Auswahl ändern**, und wählen Sie im angezeigten Menü **Gruppe beginnen** aus.
 
-## <a name="bkmk_reset"></a>Zurücksetzen eines Menüs oder einer Symbolleiste
+## <a name="resetting-a-menu-or-a-toolbar"></a><a name="bkmk_reset"></a>Zurücksetzen eines Menüs oder einer Symbolleiste
 
 1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 

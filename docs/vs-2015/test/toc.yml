@@ -72,15 +72,15 @@
               href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
             - name: Anpassen der Code Coverage-Analyse
               href: customizing-code-coverage-analysis.md
-            - name: Analysieren von Code Coverage in Buildüberprüfungstests
+            - name: Analysieren von Codeabdeckung in Buildüberprüfungstests
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Problembehandlung bei der Code Coverage
               href: troubleshooting-code-coverage.md
         - name: Verwenden Emulatoren zum Insolieren von SharePoint 2010-Komponententests
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
-    - name: Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes
+    - name: 'Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes '
       items:
-        - name: Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes
+        - name: 'Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes '
           href: use-ui-automation-to-test-your-code.md
         - name: 'Erstellen, Bearbeiten und Verwalten eines Tests der programmierten Benutzeroberfläche'
           href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
@@ -100,7 +100,7 @@
           href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
         - name: Verwenden verschiedener Webbrowser mit Tests der programmierten UI
           href: using-different-web-browsers-with-coded-ui-tests.md
-        - name: Bearbeiten von Tests der codierten UI mithilfe des Test-Editors für codierte UI
+        - name: Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
           href: editing-coded-ui-tests-using-the-coded-ui-test-editor.md
         - name: Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
           href: analyzing-coded-ui-tests-using-coded-ui-test-logs.md
@@ -112,7 +112,7 @@
           href: testing-a-large-application-with-multiple-ui-maps.md
         - name: Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
           href: enable-coded-ui-testing-of-your-controls.md
-        - name: Unterstützte Konfigurationen und Plattformen für Tests der codierten UI und Aktionsaufzeichnungen
+        - name: Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen
           href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
         - name: Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel
           items:
@@ -132,7 +132,7 @@
                   href: sample-excel-extension-technologymanager-class.md
                 - name: PropertyProvider-Klasse
                   href: sample-excel-extension-propertyprovider-class.md
-                - name: Elementklassen
+                - name: Element Classes
                   href: sample-excel-extension-element-classes.md
                 - name: ActionFilter Class
                   href: sample-excel-extension-actionfilter-class.md
@@ -158,15 +158,15 @@
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: Komponententest bei einer C++-DLL
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'Komponententest von C#-Code'
+            - name: Komponententest von C#-Code
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: Ausführen von Komponententests im Test-Explorer
               href: run-unit-tests-for-store-apps-in-visual-studio.md
-        - name: Analysieren der Codequalität mithilfe der Analyse von statischem Code
+        - name: Analysieren der Codequalität mit der statischen Codeanalyse
           items:
-            - name: Analysieren der Codequalität mithilfe der Analyse von statischem Code
+            - name: Analysieren der Codequalität mit der statischen Codeanalyse
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: 'Analysieren der Qualität von Visual Basic- und C#-Code'
+            - name: Analysieren der Qualität von Visual Basic- und C#-Code
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
             - name: Analysieren der Qualität von C++-Code
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

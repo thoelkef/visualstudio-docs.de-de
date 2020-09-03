@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669503"
 ---
 # <a name="working-with-xml-data"></a>Arbeiten mit XML-Daten
@@ -59,5 +59,5 @@ XML und XML-Technologien spielen beim Verarbeiten von Daten in [!INCLUDE[msCoNam
 
  [XML-Webdienste in verwaltetem Code](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) Erläutert, wie XML-Webdienste erstellt und bereitgestellt werden und wie auf XML-Webdienste zugegriffen wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

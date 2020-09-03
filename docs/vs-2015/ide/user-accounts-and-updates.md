@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547614"
 ---
 # <a name="user-accounts-and-updates"></a>Benutzerkonten und Updates
@@ -35,6 +35,6 @@ Visual Studio selbst ist eine verbundene Umgebung. Durch die Anmeldung erhalten 
 |[Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md)|Beschreibt das Entsperren von Visual Studio in verschiedenen Szenarien.|
 |[Benachrichtigungen](../ide/visual-studio-notifications.md)|Beschreibt die Benachrichtigung durch Visual Studio bei verfügbaren Updates für Komponenten wie beispielsweise SDKs oder für Visual Studio selbst.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-IDE](../ide/visual-studio-ide.md)

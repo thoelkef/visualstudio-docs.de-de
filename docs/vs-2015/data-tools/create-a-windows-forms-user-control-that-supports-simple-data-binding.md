@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf30a38384863c9ba5a8af35af3326a51058d831
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668769"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das die einfache Datenbindung unterstützt
@@ -39,7 +39,7 @@ Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in d
 |Implementieren Sie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, wie das <xref:System.Windows.Forms.DataGridView>-Steuerelement. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das eine komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementieren Sie die <xref:System.ComponentModel.LookupBindingPropertiesAttribute> auf Steuerelementen wie einem <xref:System.Windows.Forms.ComboBox>,das Listen (oder Tabellen) von Daten anzeigt, aber auch in einer einzelnen Spalte oder Eigenschaft vorhanden sein muss. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das die Datenbindung für die Suche unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- In dieser exemplarischen Vorgehensweise wird ein einfaches Steuerelement erstellt, das Daten aus einer einzelnen Spalte in einer Tabelle anzeigt. In diesem Beispiel wird die Spalte `Phone` der Tabelle `Customers` aus der Beispieldatenbank Northwind verwendet. Das einfache Benutzer Steuerelement zeigt die Telefonnummern der Kunden in einem Standardformat für Telefonnummern an, indem eine <xref:System.Windows.Forms.MaskedTextBox> und die Maske auf eine Telefonnummer festgelegt wird.
+ In dieser exemplarischen Vorgehensweise wird ein einfaches Steuerelement erstellt, das Daten aus einer einzelnen Spalte in einer Tabelle anzeigt. In diesem Beispiel wird die Spalte `Phone` der Tabelle `Customers` aus der Beispieldatenbank Northwind verwendet. Das einfache Benutzer Steuerelement zeigt die Telefonnummern der Kunden in einem Standardformat für die Telefonnummer an, unter Verwendung eines <xref:System.Windows.Forms.MaskedTextBox> und Festlegen der Maske auf eine Telefonnummer.
 
  Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
@@ -57,7 +57,7 @@ Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in d
 
 - Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Zugriff auf die Beispieldatenbank Northwind.
@@ -82,7 +82,7 @@ Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in d
 
 1. Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
 
-2. Geben Sie im Bereich Name `PhoneNumberBox` ein, und klicken Sie auf **Hinzufügen**.
+2. Geben `PhoneNumberBox` Sie in den Bereich Name ein, und klicken Sie auf **Hinzufügen**.
 
      Das **PhoneNumberBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
@@ -112,17 +112,17 @@ Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in d
 3. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
 
 ## <a name="create-a-data-source-from-your-database"></a>Erstellen einer Datenquelle aus der Datenbank
- In diesem Schritt wird der **Assistent zum Konfigurieren von Datenquellen** verwendet, um eine Datenquelle anhand der `Customers`-Tabelle in der Beispieldatenbank Northwind zu erstellen. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können.
+ In diesem Schritt wird der Assistent zum **Konfigurieren von Datenquellen** verwendet, um eine Datenquelle basierend auf der `Customers` Tabelle in der Northwind-Beispieldatenbank zu erstellen. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können.
 
 #### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
 
 1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus, um den Assistenten zum **Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie dann auf **Weiter**.
 
-4. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** einen der folgenden Schritte aus:
+4. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** aus einen der folgenden Schritte aus:
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
@@ -136,7 +136,7 @@ Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in d
 
 8. Wählen Sie die `Customers`-Tabelle aus, und klicken Sie anschließend auf **Fertig stellen**.
 
-     Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die Tabelle `Customers` wird im **Datenquellenfenster** angezeigt.
+     Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die `Customers` Tabelle wird im **Datenquellen** Fenster angezeigt.
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Festlegen der telefonspalte für die Verwendung des PhoneNumberBox-Steuer Elements
  Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Formular festlegen, welches Steuerelement erstellt werden soll.
@@ -160,7 +160,7 @@ Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in d
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Formular
 
-- Ziehen Sie den Haupt Knoten **Customers** aus dem **Datenquellen** Fenster auf das Formular, und überprüfen Sie, ob das `PhoneNumberBox`-Steuerelement verwendet wird, um die Daten in der Spalte `Phone` anzuzeigen.
+- Ziehen Sie den Haupt Knoten **Customers** aus dem **Datenquellen** Fenster auf das Formular, und überprüfen Sie, ob das- `PhoneNumberBox` Steuerelement zum Anzeigen der Daten in der Spalte verwendet wird `Phone` .
 
      Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeichnungen sowie ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden auf der Komponentenleiste angezeigt.
 
@@ -177,5 +177,5 @@ Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in d
 
 - Erstellen von Steuerelementen, die komplexere Datenbindungsszenarien unterstützen. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) , und [Erstellen eines Windows Forms Benutzer Steuer Elements, das die Datenbindung für die Suche unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von Windows Forms Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) [legen Sie das Steuerelement fest, das beim Ziehen aus dem Datenquellen Fenster erstellt wird](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md) .

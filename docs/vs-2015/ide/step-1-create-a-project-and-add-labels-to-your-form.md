@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a13d96d8932a3a9e4628f2d0e67a28869252c95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667359"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
@@ -22,11 +22,11 @@ ms.locfileid: "72667359"
 Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projekt und fügen einem Formular Bezeichnungen, eine Schaltfläche und weitere Steuerelemente hinzu. Außerdem legen Sie Eigenschaften für jedes Steuerelement fest, das Sie hinzufügen. Das Projekt enthält das Formular, die Steuerelemente und (später im Lernprogramm) den Code. Das Quiz wird mit der Schaltfläche gestartet, die Bezeichnungen stellen die Quizaufgaben dar und die anderen Steuerelemente zeigen die Quizantworten und die Zeit an, die bis zum Abschluss des Quiz verbleibt.
 
 > [!NOTE]
-> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht des Tutorials finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines mathematischen Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)mit Zeitüberschreitung.
 
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>So erstellen Sie ein Projekt und legen Eigenschaften für ein Formular fest
 
-1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.
 
 2. Wählen Sie in der Liste **Installierte Vorlagen** entweder **C#** oder **Visual Basic** aus.
 
@@ -70,7 +70,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
      ![Eigenschaftenfenster mit Schriftart Größe](../ide/media/express-setfontsize.png "Express_setFontSize") Eigenschaftenfenster mit Schriftart Größe
 
-8. Fügen Sie ein weiteres **Label**-Steuerelement aus der Toolbox hinzu, und legen Sie dessen Schriftgröße auf **15,75** fest.
+8. Fügen Sie ein weiteres **Label** -Steuerelement aus der Toolbox hinzu, und legen Sie dessen Schriftgröße auf **15,75**fest.
 
 9. Legen Sie die **Text**-Eigenschaft auf **Time Left** fest.
 
@@ -78,7 +78,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>So fügen Sie Steuerelemente für die Additionsaufgabe hinzu
 
-1. Fügen Sie ein **Label**-Steuerelement aus der Toolbox hinzu, und legen Sie dessen **Text**-Eigenschaften auf **?** fest. (Fragezeichen).
+1. Fügen Sie ein **Label** -Steuerelement aus der Toolbox hinzu, und legen Sie dessen **Text** -Eigenschaft auf **?** fest. (Fragezeichen).
 
 2. Legen Sie die **AutoSize**-Eigenschaft auf **False** fest.
 
@@ -92,9 +92,9 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 7. Legen Sie die Eigenschaft **(Name)** auf **plusLeftLabel** fest.
 
-8. Wählen Sie die Bezeichnung **plusLeftLabel** aus, und verwenden Sie entweder die Tasten STRG+C oder den Befehl **Kopieren** im Menü **Bearbeiten**.
+8. Wählen Sie die Bezeichnung **PlusLeftLabel** aus, und wählen Sie dann entweder die Tasten STRG + C oder **Kopieren** im Menü **Bearbeiten** aus.
 
-9. Fügen Sie die Bezeichnung dreimal ein, indem Sie entweder die STRG+V-TASTEN oder **Einfügen** im Menü **Bearbeiten** verwenden.
+9. Fügen Sie die Bezeichnung dreimal ein, indem Sie entweder die Tastenkombination STRG + V oder **Einfügen** im Menü **Bearbeiten** auswählen.
 
 10. Ordnen Sie die drei neuen Bezeichnungen so an, dass sie in einer Zeile auf der rechten Seite der Bezeichnung **plusLeftLabel** stehen.
 
@@ -102,7 +102,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 11. Legen Sie den Wert der **Text**-Eigenschaft der zweiten Bezeichnung auf **+** (Pluszeichen) fest.
 
-12. Legen Sie den Wert der **(Name)** -Eigenschaft der dritten Bezeichnung auf **plusRightLabel** fest.
+12. Legen Sie den Wert der **(Name)**-Eigenschaft der dritten Bezeichnung auf **plusRightLabel** fest.
 
 13. Legen Sie den Wert der **Text**-Eigenschaft der vierten Bezeichnung auf **=** (Gleichheitszeichen) fest.
 
@@ -110,9 +110,9 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
      Später erfahren Sie mehr über diese Art Steuerelement.
 
-15. Richten Sie das Steuerelement **NumericUpDown** an den Label-Steuerelementen für die Additionsaufgabe aus.
+15. Richten Sie das **NumericUpDown** -Steuerelement mit den Label-Steuerelementen für die Additions Aufgabe aus.
 
-16. Ändern Sie den Wert der Eigenschaft **(Name)** für das Steuerelement **NumericUpDown** in **Summe**.
+16. Ändern Sie den Wert der **(Name)** -Eigenschaft für das **NumericUpDown** -Steuerelement in **Sum**.
 
      Sie haben die erste Zeile erstellt, wie im folgenden Bild dargestellt.
 
@@ -134,7 +134,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 5. Benennen Sie die zweite Bezeichnung mit dem Fragezeichen **minusRightLabel**.
 
-6. Benennen Sie das **NumericUpDown**-Steuerelement **Differenz**.
+6. Benennen **Sie den NumericUpDown** -Steuerelement **Unterschied**.
 
 7. Fügen Sie die fünf Steuerelemente zwei weitere Male ein.
 
@@ -160,7 +160,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 6. Legen Sie den Wert der **TabIndex**-Eigenschaft für das **startButton**-Steuerelement auf **1** fest.
 
     > [!NOTE]
-    > Mit der Eigenschaft **TabIndex** wird die Reihenfolge der Steuerelemente festgelegt, die aktiviert werden, wenn der Quizteilnehmer die TAB-TASTE auswählt. Um zu sehen, wie dies funktioniert, öffnen Sie ein beliebiges Dialogfeld (wählen Sie z. B. in der Menüleiste **Datei**, **Öffnen** aus), und drücken Sie dann mehrmals die TAB-TASTE. Beobachten Sie, wie der Cursor jedes Mal, wenn Sie die TAB-TASTE auswählen, von Steuerelement zu Steuerelement springt. Ein Programmierer hat diese Reihenfolge beim Erstellen des Formulars festgelegt.
+    > Mit der Eigenschaft **TabIndex** wird die Reihenfolge der Steuerelemente festgelegt, wenn der Quizteilnehmer die TAB-TASTE drückt. Um zu sehen, wie dies funktioniert, öffnen Sie ein beliebiges Dialogfeld (wählen Sie z. B. in der Menüleiste **Datei**, **Öffnen** aus), und drücken Sie dann mehrmals die TAB-TASTE. Beobachten Sie, wie der Cursor jedes Mal, wenn Sie die TAB-TASTE auswählen, von Steuerelement zu Steuerelement springt. Ein Programmierer hat diese Reihenfolge beim Erstellen des Formulars festgelegt.
 
 7. Legen Sie den Wert der Eigenschaft **TabIndex** für das NumericUpDown-Steuerelement „Summe“ auf **2**, für das Differenzsteuerelement auf **3**, für das Produktsteuerelement auf **4** und für das Quotientsteuerelement auf **5** fest.
 
@@ -172,6 +172,6 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Informationen zum Fortfahren mit dem nächsten Schritt des Tutorials finden Sie unter [Schritt2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md).
+- Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 2: Erstellen einer zufälligen Additions Aufgabe](../ide/step-2-create-a-random-addition-problem.md).
 
-- Wie Sie zum Übersichtsthema zurückkehren, erfahren Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Weitere Informationen zum Übersichts Thema finden Sie unter [Tutorial 2: Erstellen eines mathematischen Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)mit Zeitüberschreitung.

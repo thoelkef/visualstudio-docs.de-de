@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547354"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dialogfelder Parameter hinzufügen und Argumente hinzufügen
@@ -24,7 +24,7 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 |Name|Wert|
 |-|-|
 |**Richtung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|
-|**Typ**|Der Typname des neuen Parameters.|
+|**Type**|Der Typname des neuen Parameters.|
 |**Wert**|Ein Visual Basic Ausdruck, der verwendet wird, um dem neuen Parameter einen Standardwert zuzuweisen.|
 
 In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Argumente hinzufügen** beschrieben, das vom Designer verwendet wird <xref:System.Activities.Statements.InvokeDelegate> :
@@ -33,5 +33,5 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 |-|-|
 |**Name**|Der Name des Arguments.|
 |**Richtung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|
-|**Typ**|Der Typname des neuen Arguments.|
+|**Type**|Der Typname des neuen Arguments.|
 |**Wert**|Der für diese Instanz des Delegatarguments zu verwendende Wert.|

@@ -26,7 +26,7 @@
               href: securing-clickonce-applications.md
             - name: ClickOnce und Authenticode
               href: clickonce-and-authenticode.md
-            - name: Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
+            - name: Trusted Application Deployment Overview
               href: trusted-application-deployment-overview.md
             - name: Codezugriffssicherheit für ClickOnce-Anwendungen
               href: code-access-security-for-clickonce-applications.md
@@ -120,7 +120,7 @@
               items:
                 - name: Bedarfsgesteuertes Herunterladen von Assemblys mit der ClickOnce-Bereitstellungs-API über den Designer
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-                - name: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung
+                - name: Bedarfsgesteuertes Herunterladen von Assemblys mit der ClickOnce-Bereitstellungs-API
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: Bedarfsgesteuertes Herunterladen von Satellitenassemblys mit der ClickOnce-Bereitstellungs-API über den Designer
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md

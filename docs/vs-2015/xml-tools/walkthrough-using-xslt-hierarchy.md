@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669549"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
@@ -25,7 +25,7 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
 
  Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Stylesheet veranschaulicht.
 
-### <a name="procedure-title"></a>Titel des Verfahrens
+### <a name="procedure-title"></a>Titel der Prozedur
 
 1. Öffnen Sie in Visual Studio ein XML-Dokument. In diesem Beispiel wird das folgende Dokument `collection.xml` verwendet.
 
@@ -114,5 +114,5 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
 
 6. Klicken Sie auf die Schaltfläche "Einzelschritt", wenn der Debugger bei der `<xsl:include href="xslincludefile.xsl" />`-Anweisung anhält. Das Debugging kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Exemplarische Vorgehensweise: XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md)

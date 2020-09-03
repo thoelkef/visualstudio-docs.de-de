@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc5d185640c9623a2213aaf7ad50fa68a088b15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669616"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern
@@ -37,7 +37,7 @@ Führen Sie Analyzer auf Code Maps aus, die Ihnen beim Auffinden sehr komplexer 
 
 1. Wählen Sie auf der Symbolleiste der Map **Layout**&gt; **Analyzer**aus, und klicken Sie dann auf den Analyzer, die Sie ausführen möchten:
 
-   |**Analyse**|**Zur Identifizierung der Knoten, die...**|
+   |**Analyzer**|**Zur Identifizierung der Knoten, die...**|
    |------------------|--------------------------------|
    |**Zirkelverweis-Analyzer**|...Ringabhängigkeiten untereinander aufweisen. **Hinweis:**  Zirkuläre Abhängigkeiten in der **Generika** Gruppe werden nicht in der Zuordnung angezeigt, wenn Sie die Gruppe erweitern.|
    |**Hubs Analyzer suchen**|...zu den obersten 25 % der Knoten mit den meisten Verbindungen gehören<br /><br /> **So blenden Sie alle anderen Knoten auf der Map aus**<br /><br /> -Öffnen Sie das Kontextmenü für die Karte, wählen Sie **erweitert**, **auswählen**, **nicht ausgewählt ausblenden**aus.<br />     Nicht markierte Knoten werden auf der Map ausgeblendet und neue Knoten werden vom Analyzer als Hubs identifiziert.|
@@ -48,5 +48,5 @@ Führen Sie Analyzer auf Code Maps aus, die Ihnen beim Auffinden sehr komplexer 
 > [!TIP]
 > Bei einer sehr großen Map tritt bei der Ausführung eines Analyzers,möglicherweise eine Ausnahme aufgrund unzureichenden Arbeitsspeichers auf. Bearbeiten Sie in diesem Fall die Map, um den Umfang zu verringern oder eine kleinere Map zu generieren, und führen Sie dann den Analyzer aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Zuordnen von [Abhängigkeiten in](../modeling/map-dependencies-across-your-solutions.md) den Projektmappen [Verwenden von Code Maps zum Debuggen von Anwendungs](../modeling/use-code-maps-to-debug-your-applications.md) Zuordnungs [Methoden in der aufzurufenden](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Funktion
