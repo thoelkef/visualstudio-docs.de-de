@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit Debugger-Erweiterbarkeit | Microsoft Docs
+title: Einstieg in die debuggererweiterbarkeit | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,34 +13,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738589"
 ---
-# <a name="get-started-with-debugger-extensibility"></a>Erste Schritte mit der Debugger-Erweiterbarkeit
-Der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] enthält die Informationen, die Sie zum Erstellen und Anpassen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] von Debuggerkomponenten benötigen, die zum Debuggen von Programmen aus der Umgebung verwendet werden.
+# <a name="get-started-with-debugger-extensibility"></a>Einstieg in die Erweiterbarkeit des Debuggers
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Stellt die Informationen bereit, die Sie zum Erstellen und Anpassen von Debugger-Komponenten benötigen, die zum Debuggen von Programmen in der Umgebung verwendet werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Das Debuggen hat Verbesserungen hinzugefügt, die sich [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aus den umfangreichen Usability-Tests ergeben, die bei früheren Debuggern durchgeführt wurden. Sie können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] das Debuggen verwenden, um eine mehrsprachige Anwendung schrittweise zu durchlaufen, oder Sie können die spontane Bearbeitung von Variablen implementieren, während Sie Anwendungen und mehrsprachige Lösungen debuggen.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] beim Debuggen wurden Verbesserungen hinzugefügt, die von den umfassenden Nutz barkeits Tests für vorherige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger abgeleitet wurden Sie können das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen verwenden, um eine mehrsprachige Anwendung zu durchlaufen, oder Sie können die dynamische Bearbeitung von Variablen beim Debuggen von Anwendungen und mehrsprachigen Lösungen implementieren.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Das Debuggen wird a-process ausgeführt, wobei das zu debuggende Programm ausgeführt wird und daher weniger aufdringlich im Prozessraum der Anwendung ist. Daher ist es einfacher, Komponenten zu schreiben, die mit dem Debugger interagieren, ohne dass sich dies auf das Debugprogramm auswirkt.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] das Debuggen wird außerhalb des Prozesses ausgeführt, während das Programm gedebuggt wird und daher im Prozessbereich der Anwendung weniger eindringlich ist. Folglich ist es einfacher, Komponenten zu schreiben, die mit dem Debugger interagieren, ohne dass sich dies auf das debugprogramm auswirkt.
 
- Um die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]am besten zu verwenden, sollten Sie mit den folgenden Elementen vertraut sein:
+ Um das bestmögliche zu verwenden [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , sollten Sie mit den folgenden Elementen vertraut sein:
 
-- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE)
+- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE)
 
-- Die Programmiersprache C++
+- Programmiersprache C++
 
-- ATL KOM
+- ATL-COM
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Roadmap zum Erweitern des Debuggers](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Beschreibt den Prozess der Implementierung des Debuggens in Ihrem Produkt, abhängig vom Compiler und seiner Ausgabe.
+ [Roadmap für die Erweiterung des Debuggers](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Beschreibt den Prozess der Implementierung des Debuggens in Ihrem Produkt, abhängig von Ihrem Compiler und seiner Ausgabe.
 
- [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md) Bietet einen Überblick [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] über die Debugkomponenten, zu denen das Debugmodul (DE), der Ausdrucksevaluator (EE) und der Symbolhandler (SH) gehören.
+ [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md) Bietet eine Übersicht über die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debuggingkomponenten, einschließlich Debug-Engine (de), Ausdrucks Auswertung (EE) und Symbol Handler (SH).
 
- [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
+ [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Konzepte der debuggingarchitektur.
 
- [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert, wie das Debugmodul (DE) gleichzeitig in Code-, Dokumentations- und Ausdrucksauswertungskontexten arbeitet. Beschreibt für jeden der drei Kontexte den Standort, die Position oder die Bewertung, die für ihn relevant sind.
+ [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert, wie die Debug-Engine (de) parallel innerhalb von Code-, Dokumentations-und Ausdrucks Auswertungs Kontexten funktioniert. Beschreibt für jeden der drei Kontexte den Speicherort, die Position oder die Auswertung, die für ihn relevant sind.
 
- [Debuggen von Aufgaben](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debugaufgaben, z. B. zum Starten eines Programms und Auswerten von Ausdrücken.
+ [Debugtasks](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debuggingaufgaben, z. b. das Starten eines Programms und Auswerten von Ausdrücken.

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fdf3ff02c86a878e9c955d2b3b92879870700efa
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521146"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: SafeHandle verwenden, um native Ressourcen zu kapseln.
@@ -29,7 +29,7 @@ ms.locfileid: "85521146"
 |-|-|
 |TypName|UseSafeHandleToEncapsulateNativeResources|
 |CheckId|CA2006|
-|Kategorie|Microsoft.Reliability|
+|Category|Microsoft.Reliability|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -40,7 +40,7 @@ ms.locfileid: "85521146"
 
  In solchen Szenarien bestehen auch Sicherheits-oder Zuverlässigkeitsprobleme, wenn der Multithread-Zugriff auf zulässig ist `IntPtr` und eine Möglichkeit besteht, die durch die dargestellte Ressource freizugeben `IntPtr` . Diese Probleme umfassen die wieder `IntPtr` Verwendung des Werts in der Ressourcen Freigabe, während die gleichzeitige Verwendung der Ressource auf einem anderen Thread erfolgt. Dies kann Racebedingungen verursachen, bei denen ein Thread Daten lesen oder schreiben kann, die mit der falschen Ressource verknüpft sind. Wenn Ihr Typ z. b. ein Betriebssystem Handle als speichert `IntPtr` und es Benutzern ermöglicht, sowohl **Close** als auch eine beliebige andere Methode aufzurufen, die dieses Handle gleichzeitig und ohne Synchronisierung verwendet, hat der Code ein Problem beim wieder verwenden.
 
- Diese Problembehandlung kann zu Daten Beschädigungen und häufig zu einem Sicherheitsrisiko führen. `SafeHandle`und die gleich geordnete Klasse <xref:System.Runtime.InteropServices.CriticalHandle> bieten einen Mechanismus zum Kapseln eines nativen Handles für eine Ressource, damit solche Threading Probleme vermieden werden können. Darüber hinaus können Sie `SafeHandle` und seine gleich geordnete Klasse `CriticalHandle` für andere Threading Probleme verwenden, um z. b. die Lebensdauer von verwalteten Objekten sorgfältig zu steuern, die eine Kopie des nativen Handles über Aufrufe von systemeigenen Methoden enthalten. In dieser Situation können Sie häufig Aufrufe von entfernen `GC.KeepAlive` . Der Leistungs Aufwand, den Sie bei der Verwendung `SafeHandle` von und in geringerem Maße verursachen, `CriticalHandle` kann häufig durch einen sorgfältigen Entwurf reduziert werden.
+ Diese Problembehandlung kann zu Daten Beschädigungen und häufig zu einem Sicherheitsrisiko führen. `SafeHandle` und die gleich geordnete Klasse <xref:System.Runtime.InteropServices.CriticalHandle> bieten einen Mechanismus zum Kapseln eines nativen Handles für eine Ressource, damit solche Threading Probleme vermieden werden können. Darüber hinaus können Sie `SafeHandle` und seine gleich geordnete Klasse `CriticalHandle` für andere Threading Probleme verwenden, um z. b. die Lebensdauer von verwalteten Objekten sorgfältig zu steuern, die eine Kopie des nativen Handles über Aufrufe von systemeigenen Methoden enthalten. In dieser Situation können Sie häufig Aufrufe von entfernen `GC.KeepAlive` . Der Leistungs Aufwand, den Sie bei der Verwendung `SafeHandle` von und in geringerem Maße verursachen, `CriticalHandle` kann häufig durch einen sorgfältigen Entwurf reduziert werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Konvertieren `IntPtr` Sie die Verwendung in `SafeHandle` , um den Zugriff auf native Ressourcen sicher zu verwalten. Beispiele finden Sie im <xref:System.Runtime.InteropServices.SafeHandle> Referenz Thema.

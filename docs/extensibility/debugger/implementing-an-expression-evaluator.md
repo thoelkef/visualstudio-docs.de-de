@@ -1,5 +1,5 @@
 ---
-title: Implementieren eines Ausdrucksevaluators | Microsoft Docs
+title: Implementieren einer Ausdrucks Auswertung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738540"
 ---
-# <a name="implement-an-expression-evaluator"></a>Implementieren eines Ausdrucksevaluators
+# <a name="implement-an-expression-evaluator"></a>Implementieren einer Ausdrucks Auswertung
 > [!IMPORTANT]
-> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucksevaluatoren veraltet. Informationen zum Implementieren von CLR-Ausdrucksevaluatoren finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Beispiel für den Auswertungsbeispiel für managed expression evaluator](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von Ausdrucks auswergratoren veraltet. Weitere Informationen zum Implementieren von CLR-Ausdrucks Auswerters finden Sie unter [CLR-Ausdrucks](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) Auswertungen und [Beispiel für verwaltete Ausdrucks Auswertung](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Das Auswerten eines Ausdrucks ist ein komplexes Zusammenspiel zwischen dem Debugmodul (DE), dem Symbolanbieter (SP), dem Binderobjekt und dem Ausdrucksevaluator (EE). Diese vier Komponenten sind über Schnittstellen verbunden, die von einer Komponente implementiert und von einer anderen verwendet werden.
+ Das Auswerten eines Ausdrucks ist ein komplexes Zusammenspiel zwischen der Debug-Engine (de), dem Symbol Anbieter (SP), dem Binder Objekt und der Ausdrucks Auswertung (EE). Diese vier Komponenten sind Durchschnitt stellen verbunden, die von einer Komponente implementiert und von einer anderen Komponente genutzt werden.
 
- Der EE nimmt einen Ausdruck aus der DE in Form einer Zeichenfolge an und analysiert oder wertet ihn aus. Der EE verfügt über die folgenden Schnittstellen, die von der DE genutzt werden:
+ Der EE nimmt einen Ausdruck aus der de in Form einer Zeichenfolge an und analysiert oder wertet ihn aus. Der EE führt die folgenden Schnittstellen aus, die von de verwendet werden:
 
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
-  Der EE ruft das von der DE bereitgestellte Binderobjekt auf, um den Wert von Symbolen und Objekten abzubekommen. Die EE verbraucht die folgenden Schnittstellen, die von der DE implementiert werden:
+  Der EE Ruft das Binder Objekt auf, das von der de zur Verfügung gestellt wird, um den Wert von Symbolen und Objekten zu erhalten. Der EE verwendet die folgenden Schnittstellen, die von der de implementiert werden:
 
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
 
@@ -46,9 +46,9 @@ ms.locfileid: "80738540"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  Die EE führt [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)aus. `IDebugProperty2`stellt den Mechanismus zum Beschreiben des Ergebnisses einer Ausdrucksauswertung bereit, z. B. einer lokalen Variablen, einem Primitiv oder einem Objekt für Visual Studio, das dann die entsprechenden Informationen im Fenster **"Lokale",** **"Uhr"** oder **"Unmittelbar"** anzeigt.
+  Der EE führt [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)aus. `IDebugProperty2` stellt den Mechanismus bereit, mit dem das Ergebnis einer Ausdrucks Auswertung beschrieben wird, z. b. eine lokale Variable, ein primitiver oder ein Objekt in Visual Studio, das **dann die entsprechenden**Informationen im Fenster Lokal, über **Wachen**oder **direkt** anzeigt.
 
-  Der SP wird der EE von der DE gegeben, wenn sie um Informationen bittet. Der SP führt Schnittstellen aus, die Adressen und Felder beschreiben, z. B. die folgenden Schnittstellen und deren Ableitungen:
+  Die SP wird dem ee von der "de" übergeben, wenn Sie Informationen anfordert. Der SP führt Schnittstellen aus, die Adressen und Felder beschreiben, wie z. b. die folgenden Schnittstellen und deren Ableitungen:
 
 - [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
@@ -56,10 +56,10 @@ ms.locfileid: "80738540"
 
 - [IDebugField](../../extensibility/debugger/reference/idebugfield.md)
 
-  Der EE verbraucht alle diese Schnittstellen.
+  Der EE nutzt alle diese Schnittstellen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Implementierungsstrategie für Ausdrucksevaluator](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Definiert einen dreistufigen Prozess für die Implementierungsstrategie für Ausdrucksevaluator (EE).
+ [Implementierungsstrategie für die Ausdrucks Auswertung](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Definiert einen dreistufigen Prozess für die Strategie zur Implementierung der Ausdrucks Auswertung (EE Auswertung, EE).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Schreiben eines CLR-Ausdrucksevaluators](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

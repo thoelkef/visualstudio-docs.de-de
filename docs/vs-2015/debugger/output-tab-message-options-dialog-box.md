@@ -1,5 +1,5 @@
 ---
-title: Registerkarte Ausgabe, die Message-Optionen (Dialogfeld) | Microsoft-Dokumentation
+title: Registerkarte „Ausgabe“, Dialogfeld „Meldungsoptionen“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,48 +12,48 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1fa4494ccff03fa71e25b32a4814a98a9e06dc28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185138"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Registerkarte "Ausgabe", Dialogfeld "Meldungsoptionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Verwenden der **Ausgabe** Registerkarte angeben, welche Daten aus den einzelnen Nachrichten zur Liste in [Meldungsansicht](../debugger/messages-view.md). Zum Anzeigen der [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md), wählen Sie **Protokollmeldungen** aus der **Spy** Menü.  
+Auf der Registerkarte **Ausgabe** können Sie angeben, welche Daten aus den einzelnen Meldungen in der [Meldungsansicht](../debugger/messages-view.md) aufgelistet werden sollen. Um das [Dialogfeld „Meldungsoptionen“](../debugger/message-options-dialog-box.md) anzuzeigen, wählen Sie im Menü **Spy** die Option **Meldungen protokollieren** aus.  
   
- Die folgenden Einstellungen stehen auf der **Ausgabe** Registerkarte:  
+ Auf der Registerkarte **Ausgabe** sind folgende Einstellungen verfügbar:  
   
  **Zeilennummern**  
  Hiermit zeigen Sie Zeilennummern an.  
   
- **Die Schachtelung auf Nachrichtenebene**  
- Geschachtelte Nachrichten mit einem Punkt pro Ebene als Präfix voranstellen.  
+ **Nachrichten Schachtelungs Ebene**  
+ Stellen Sie einem einzelnen Zeitraum pro Ebene ein Präfix für die Nachrichten vor  
   
  **Nicht formatierte Meldungsparameter**  
- Anzeigen der Hexadezimalwert **wParam** und **lParam** Werte.  
+ Zeigen Sie die hexadezimalen **wParam** -und **LPARAM** -Werte an.  
   
  **Decodierte Meldungsparameter**  
- Zeigt die Ergebnisse der Message-spezifische Decodierung der **wParam** und **lParam** Werte.  
+ Zeigen Sie die Ergebnisse der Nachrichten spezifischen Decodierung der **wParam** -und **LPARAM** -Werte an.  
   
- **RAW-Rückgabewerte**  
- Anzeigen der Hexadezimalwert **lResult** Wert zurückgeben.  
+ **Unformatierte Rückgabewerte**  
+ Zeigt den hexadezimalen **LRESULT** -Rückgabewert an.  
   
  **Decodierte Rückgabewerte**  
- Zeigt die Ergebnisse der Message-spezifische Decodierung der **lResult** Wert zurückgeben.  
+ Zeigt die Ergebnisse der Nachrichten spezifischen Decodierung des **LRESULT** -Rückgabewerts an.  
   
- **Zeitpunkt der Ursprung**  
- Die verstrichene Zeit seit dem Start der Windows-System (für nur bereitgestellte Meldungen).  
+ **Nachrichten Ursprungs Zeit**  
+ Die verstrichene Zeit seit dem Start des Windows-Systems (nur für gesendeten Nachrichten).  
   
- **Mausposition Nachricht**  
- Die Bildschirmkoordinaten des Mauszeigers beim Senden der Nachricht (für nur bereitgestellte Meldungen).  
+ **Nachrichten Maus Position**  
+ Die Bildschirm Koordinaten des Mauszeigers, an dem die Nachricht gesendet wurde (nur für übermittelte Nachrichten).  
   
  **Zeilen maximal**  
- Beschränken Sie die Anzahl der Zeilen, die in der ausgewählten Ansicht "Nachrichten" beibehalten werden.  
+ Begrenzen Sie die Anzahl der Zeilen, die in der aktuell ausgewählten Meldungs Ansicht beibehalten werden.  
   
- **Protokollieren von Meldungen auch in Datei**  
- Geben Sie eine Ausgabedatei für den Message-Protokoll. Diese Datei wird gleichzeitig mit dem Message-Protokoll-Fenster geschrieben.  
+ **Meldungen auch in Datei protokollieren**  
+ Geben Sie eine Ausgabedatei für das Nachrichtenprotokoll an. Diese Ausgabedatei wird gleichzeitig mit dem Meldungsprotokollfenster geschrieben.  
   
  **Als Voreinstellung speichern**  
- Speichern Sie die vorherigen Einstellungen für neue Nachrichten Stream-Fenster. Diese Einstellungen werden gespeichert, wenn Sie Spy++ beenden.
+ Speichern Sie die vorherigen Einstellungen für neue Nachrichtenstrom Fenster. Diese Einstellungen werden gespeichert, wenn Sie Spy++ beenden.
