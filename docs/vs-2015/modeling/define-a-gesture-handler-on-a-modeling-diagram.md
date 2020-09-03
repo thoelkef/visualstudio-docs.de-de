@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533067"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
@@ -26,7 +26,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
  Wenn bereits ein integriertes Verhalten für den Diagrammtyp und den Elementtyp vorhanden ist, das gezogen werden soll, können Sie dieses Verhalten möglicherweise nicht hinzufügen oder überschreiben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -230,7 +230,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
          **Projekt**  =  *Ihr Klassen Bibliotheksprojekt*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Ausführen des Gesten Handlers
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> Ausführen des Gesten Handlers
  Führen Sie den Gestenhandler zu Testzwecken im Debugmodus aus.
 
 #### <a name="to-test-the-gesture-handler"></a>So testen Sie den Gestenhandler
@@ -243,7 +243,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
    - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.
 
-   - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie "Eigenschaften" aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname von ist, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Regel:
+   - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie "Eigenschaften" aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname von ist [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , in der Regel:
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 
 - Für diesen Typ des Zielelements und des abgelegten Elements ist noch keine integrierte Funktionalität definiert.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implementieren des Gesten Handlers
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> Implementieren des Gesten Handlers
 
 ### <a name="the-gesture-handler-methods"></a>Die Gestenhandlermethoden
  Die Gestenhandlerklasse implementiert und exportiert <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Sie müssen die folgenden Methoden definieren:
 
-|Signatur|Beschreibung|
+|Signatur|BESCHREIBUNG|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Geben Sie `true` zurück, um für das Quellelement, auf das in `dragEvent` verwiesen wird, das Ablegen auf diesem Ziel zu ermöglichen.<br /><br /> Diese Methode darf keine Änderungen am Modell vornehmen. Sie muss schnell ausgeführt werden, da damit der Pfeilzustand bestimmt wird, während der Benutzer die Maus bewegt.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Aktualisieren Sie das Modell basierend auf dem Zielobjekt und auf dem Quellobjekt, auf das in `dragEvent`verwiesen wird.<br /><br /> Wird aufgerufen, wenn der Benutzer die Maus nach dem Ziehvorgang loslässt.|
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Weitere Informationen finden Sie unter [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md).
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung
  Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.
 
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung

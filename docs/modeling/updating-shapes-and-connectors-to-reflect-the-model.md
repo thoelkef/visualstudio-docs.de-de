@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115028"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Connectors zur Darstellung des Modells
 
 In einer domänenspezifischen Sprache in Visual Studio können Sie festlegen, dass eine Form den Zustand des zugrunde liegenden Modells widerspiegelt.
 
-Die Codebeispiele in diesem Thema sollten einer `.cs`-Datei in Ihrem `Dsl`-Projekt hinzugefügt werden. Sie benötigen diese Anweisungen in jeder Datei:
+Die Codebeispiele in diesem Thema sollten einer `.cs` Datei in Ihrem Projekt hinzugefügt werden `Dsl` . Sie benötigen diese Anweisungen in jeder Datei:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -37,7 +37,7 @@ Die Form verfügt jetzt über eine Domänen Eigenschaft, die Sie im Programmcode
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Wenn Sie die Eigenschaften Variable nur unter der Programmsteuerung und nicht vom Benutzer erstellen möchten, wählen Sie im DSL-Definitions Diagramm die neue Domänen Eigenschaft aus, z. b. **Füllfarbe** . Legen **Sie dann** im Eigenschaftenfenster die Einstellung für "durchsuchbar" auf "`true`**`false`" fest**
+Wenn Sie die Eigenschaften Variable nur unter der Programmsteuerung und nicht vom Benutzer erstellen möchten, wählen Sie im DSL-Definitions Diagramm die neue Domänen Eigenschaft aus, z. b. **Füllfarbe** . Legen Sie dann im Eigenschaftenfenster **die Einstellung für** durchsuchbar auf fest, `false` oder legen Sie die Einstellung **Benutzeroberfläche ist** schreibgeschützt auf fest `true` .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definieren von Änderungs Regeln, um die Farbe, den Stil oder den Speicherort von Modellelement Eigenschaften abhängig zu machen
  Sie können Regeln definieren, mit denen die Darstellung der Form von anderen Teilen des Modells abhängig ist. Beispielsweise können Sie eine Änderungs Regel für ein Modellelement definieren, die die Farbe der Form aktualisiert, die von den Eigenschaften des Modell Elements abhängig ist. Weitere Informationen zu Änderungs Regeln finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
@@ -84,7 +84,7 @@ Wenn Sie die Eigenschaften Variable nur unter der Programmsteuerung und nicht vo
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Verwenden von onchildkonfiguriertem, um die Eigenschaften einer Form zu initialisieren
 
-Um die Eigenschaften einer Form bei der ersten Erstellung festzulegen, `OnChildConfigured()` die Überschreibung in einer partiellen Definition ihrer Diagramm Klasse. Die Diagramm Klasse wird in ihrer DSL-Definition angegeben, und der generierte Code befindet sich in " **dsl\generated code\diagram.cs**". Beispiel:
+Um die Eigenschaften einer Form bei der ersten Erstellung festzulegen, wird die Überschreibung `OnChildConfigured()` in einer partiellen Definition ihrer Diagramm Klasse festgelegt. Die Diagramm Klasse wird in ihrer DSL-Definition angegeben, und der generierte Code befindet sich in " **dsl\generated code\diagram.cs**". Zum Beispiel:
 
 ```csharp
 partial class MyLanguageDiagram
@@ -108,11 +108,11 @@ partial class MyLanguageDiagram
 
 Diese Methode kann sowohl für Domänen Eigenschaften als auch für nicht-Speicherfunktionen verwendet werden, z. b. die Größe der Form.
 
-## <a name="OnAssociatedProperty"></a>Verwenden von associatevaluewith () zum Aktualisieren anderer Funktionen einer Form
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> Verwenden von associatevaluewith () zum Aktualisieren anderer Funktionen einer Form
 
 Für einige Funktionen einer Form, z. b. ob Sie einen Schatten oder den Pfeil Stil eines Verbindungs Diensts aufweist, gibt es keine integrierte Methode, die Funktion als Domänen Eigenschaft verfügbar zu machen.  Änderungen an solchen Features unterliegen nicht der Kontrolle des Transaktions Systems. Daher ist es nicht angebracht, Sie mithilfe von Regeln zu aktualisieren, da Regeln nicht aufgerufen werden, wenn der Benutzer den Befehl "Rückgängig" ausführt.
 
-Stattdessen können Sie diese Features mithilfe <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>aktualisieren. Im folgenden Beispiel wird der Pfeil Stil eines Connector durch einen Wert einer Domänen Eigenschaft in der Beziehung gesteuert, die der Connector anzeigt:
+Stattdessen können Sie diese Features mithilfe von aktualisieren <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> . Im folgenden Beispiel wird der Pfeil Stil eines Connector durch einen Wert einer Domänen Eigenschaft in der Beziehung gesteuert, die der Connector anzeigt:
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -153,6 +153,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` sollten für jede Domänen Eigenschaft, die Sie registrieren möchten, einmal aufgerufen werden. Nachdem er aufgerufen wurde, werden alle Änderungen an der angegebenen Eigenschaft `OnAssociatedPropertyChanged()` in beliebigen Formen aufrufen, die das Modellelement der Eigenschaft darstellen.
+`AssociateValueWith()` sollte einmal für jede Domänen Eigenschaft aufgerufen werden, die Sie registrieren möchten. Nachdem er aufgerufen wurde, werden alle Änderungen an der angegebenen Eigenschaft `OnAssociatedPropertyChanged()` in allen Formen aufgerufen, die das Modellelement der Eigenschaft darstellen.
 
 Es ist nicht erforderlich, `AssociateValueWith()` für jede Instanz aufzurufen. Obwohl initializeresources eine Instanzmethode ist, wird Sie nur einmal für jede Shape-Klasse aufgerufen.

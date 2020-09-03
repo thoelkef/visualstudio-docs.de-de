@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetattributedclassesForLanguage | Microsoft Docs
+title: 'Idebugcomplussymbolprovider:: getattributedclassesforlanguage | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bbc8f377683523ecdc99213d67f95f2c9fd7035d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733963"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
-Ruft die Klassen mit dem angegebenen Attribut ab, die in der angegebenen Programmiersprache implementiert sind.
+Ruft die Klassen mit dem angegebenen Attribut ab, das in der angegebenen Programmiersprache implementiert ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,19 +44,19 @@ int GetAttributedClassesForLanguage (
 
 ## <a name="parameters"></a>Parameter
 `guidLanguage`\
-[in] Eindeutiger Bezeichner für die Sprache.
+in Eindeutiger Bezeichner für die Sprache.
 
 `pstrAttribute`\
-[in] Die Attributzeichenfolge.
+in Die Attribut Zeichenfolge.
 
 `ppEnum`\
-[out] Gibt eine Enumeration der Attributklassen zurück.
+vorgenommen Gibt eine Enumeration der Attribut Klassen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(

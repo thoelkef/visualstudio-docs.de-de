@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4e485375c12564b5416c79bd3a41dedb1da76dc0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533444"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listen weisen eine starke Typisierung auf.
@@ -50,7 +50,7 @@ ms.locfileid: "85533444"
 ## <a name="rule-description"></a>Beschreibung der Regel
  Diese Regel erfordert, <xref:System.Collections.IList> dass-Implementierungen stark typisierte Member bereitstellen, sodass Benutzer keine Argumente in den-Typ umwandeln müssen, <xref:System.Object?displayProperty=fullName> Wenn Sie die Funktionalität verwenden, die von der-Schnittstelle bereitgestellt wird. Die- <xref:System.Collections.IList> Schnittstelle wird durch Auflistungen von Objekten implementiert, auf die über einen Index zugegriffen werden kann. Diese Regel geht davon aus, dass der Typ, der implementiert, dies bewirkt, <xref:System.Collections.IList> um eine Auflistung von Instanzen eines Typs zu verwalten, der größer als ist <xref:System.Object> .
 
- <xref:System.Collections.IList>implementiert die <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> Schnittstellen und. Wenn Sie implementieren <xref:System.Collections.IList> , müssen Sie die erforderlichen stark typisierten Member für bereitstellen <xref:System.Collections.ICollection> . Wenn die Objekte in der Auflistung erweitert <xref:System.ValueType?displayProperty=fullName> werden, müssen Sie einen stark typisierten Member für bereitstellen, <xref:System.Collections.IEnumerable.GetEnumerator%2A> um die Verringerung der Leistung zu vermeiden, die durch Boxing verursacht wird. Dies ist nicht erforderlich, wenn die Objekte der Auflistung ein Verweistyp sind.
+ <xref:System.Collections.IList> implementiert die <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> Schnittstellen und. Wenn Sie implementieren <xref:System.Collections.IList> , müssen Sie die erforderlichen stark typisierten Member für bereitstellen <xref:System.Collections.ICollection> . Wenn die Objekte in der Auflistung erweitert <xref:System.ValueType?displayProperty=fullName> werden, müssen Sie einen stark typisierten Member für bereitstellen, <xref:System.Collections.IEnumerable.GetEnumerator%2A> um die Verringerung der Leistung zu vermeiden, die durch Boxing verursacht wird. Dies ist nicht erforderlich, wenn die Objekte der Auflistung ein Verweistyp sind.
 
  Um diese Regel einzuhalten, implementieren Sie die Schnittstellenmember explizit, indem Sie Namen in der Form InterfaceName. interfacemembership Name verwenden, z <xref:System.Collections.IList.Add%2A> . b.. Die expliziten Schnittstellenmember verwenden die Datentypen, die von der-Schnittstelle deklariert werden. Implementieren Sie die stark typisierten Member mithilfe des Schnittstellenmember-namens, z `Add` . b.. Deklarieren Sie die stark typisierten Member als öffentlich, und deklarieren Sie Parameter und Rückgabewerte in den starken Typ, der von der Auflistung verwaltet wird. Die starken Typen ersetzen schwächere Typen, wie <xref:System.Object> z <xref:System.Array> . b. und, die von der-Schnittstelle deklariert werden.
 

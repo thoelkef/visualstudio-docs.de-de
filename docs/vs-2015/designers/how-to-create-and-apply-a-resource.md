@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851966"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
@@ -34,7 +34,7 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
 
      Das Dialogfeld für das Erstellen einer Ressource wird angezeigt. Dieses Dialogfeld wird angezeigt, wenn Sie eine Ressource mit einem Pinsel erstellen:
 
-     ![Dialog Feld "Ressource erstellen"](../designers/media/xaml-create-resource.png "xaml_create_resource")
+     ![Dialogfeld "Ressource erstellen"](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
 3. Geben Sie im Feld **Name (Schlüssel)** einen Schlüsselnamen ein. Dies ist der Name, den Sie verwenden können, wenn Sie möchten, dass andere Elemente auf die Ressource verweisen.
 
@@ -54,7 +54,7 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
 
 1. Wählen Sie im Fenster "Dokumentgliederung" das Element aus, auf das eine Ressource angewendet werden soll.
 
-2. Führen Sie eine der folgenden Aktionen aus:
+2. Führen Sie eines der folgenden Verfahren aus:
 
    - Anwenden einer Ressource auf eine Eigenschaft Wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker neben dem Eigenschaftswert und dann **Lokale Ressource** oder **Systemressource** aus. Anschließend wählen Sie eine verfügbare Ressource aus der angezeigten Liste aus.
 
@@ -75,5 +75,5 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
 
 3. Ändern Sie die Optionen für die Ressource.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

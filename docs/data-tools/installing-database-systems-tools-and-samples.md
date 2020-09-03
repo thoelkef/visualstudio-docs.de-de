@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586405"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Kompatible Datenbanksysteme für Visual Studio
@@ -25,7 +25,7 @@ Zum Entwickeln einer mit einem Daten verbundenen Anwendung in Visual Studio inst
 
 Damit ein Datenbanksystem von .NET-Anwendungen zugänglich ist und in Visual Studio Data Tools-Fenstern sichtbar ist, muss es über einen ADO.NET-Datenanbieter verfügen. Ein Anbieter muss Entity Framework speziell unterstützen, wenn Sie die Verwendung von Entity Data Models in der .NET-Anwendung planen. Viele Anbieter werden über den nuget-Paket-Manager oder über die Visual Studio Marketplace angeboten.
 
-Wenn Sie Azure Storage-APIs verwenden, installieren Sie die Azure-Speicher Emulatoren auf dem lokalen Computer während der Entwicklung, um Kosten zu vermeiden, bis Sie bereit für die Bereitstellung in der Produktionsumgebung sind. Weitere Informationen finden Sie unter [Verwenden des Azure Storage Emulators für Entwicklung und Tests](/azure/storage/common/storage-use-emulator).
+Wenn Sie Azure Storage-APIs verwenden, installieren Sie die Azure-Speicher Emulatoren auf dem lokalen Computer während der Entwicklung, um Kosten zu vermeiden, bis Sie bereit für die Bereitstellung in der Produktionsumgebung sind. Weitere Informationen finden Sie unter [Verwenden des Azure-Speicheremulators für Entwicklung und Tests](/azure/storage/common/storage-use-emulator).
 
 Die folgende Liste enthält einige der beliebtesten Datenbanksysteme, die in Visual Studio-Projekten verwendet werden können. Die Liste ist nicht vollständig. Eine Liste von Drittanbietern, die ADO.NET-Datenanbieter anbieten, die eine umfassende Integration in Visual Studio-Tools ermöglichen, finden Sie unter [ADO.NET Data Providers](/dotnet/framework/data/adonet/data-providers).
 
@@ -39,21 +39,21 @@ Sie können eine kostenpflichtige oder kostenlose Edition der Oracle-Datenbank v
 
 ## <a name="mysql"></a>MySQL
 
-MySQL ist ein gängiges Open-Source-Datenbanksystem, das in Unternehmen und Websites häufig verwendet wird. Downloads für MySQL, MySQL für Visual Studio und Verwandte Produkte finden Sie unter [MySQL unter Windows](https://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständige Verwaltungs Anwendungen für MySQL. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools** > **nuget-Paket-Manager** > **nuget-Pakete für**Projekt Mappe verwalten).
+MySQL ist ein gängiges Open-Source-Datenbanksystem, das in Unternehmen und Websites häufig verwendet wird. Downloads für MySQL, MySQL für Visual Studio und Verwandte Produkte finden Sie unter [MySQL unter Windows](https://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständige Verwaltungs Anwendungen für MySQL. Sie können die Angebote im nuget-Paket-Manager durch**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL ist ein kostenloses Open-Source-Objekt für relationale Datenbanken. Um es unter Windows zu installieren, können Sie es von der [PostgreSQL-Downloadseite](https://www.postgresql.org/download/windows/)herunterladen. Sie können PostgreSQL auch aus dem Quellcode erstellen. Das PostgreSQL-Kernsystem umfasst eine Schnittstelle der Programmiersprache C. Viele Drittanbieter stellen nuget-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools** > **nuget-Paket-Manager** > **nuget-Pakete für**Projekt Mappe verwalten). Möglicherweise wird das beliebteste Paket von [npgsql.org](http://www.npgsql.org)bereitgestellt.
+PostgreSQL ist ein kostenloses Open-Source-Objekt für relationale Datenbanken. Um es unter Windows zu installieren, können Sie es von der [PostgreSQL-Downloadseite](https://www.postgresql.org/download/windows/)herunterladen. Sie können PostgreSQL auch aus dem Quellcode erstellen. Das PostgreSQL-Kernsystem umfasst eine Schnittstelle der Programmiersprache C. Viele Drittanbieter stellen nuget-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote im nuget-Paket-Manager durch**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten). Möglicherweise wird das beliebteste Paket von [npgsql.org](http://www.npgsql.org)bereitgestellt.
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite ist eine eingebettete SQL-Datenbank-Engine, die im eigenen Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](https://www.sqlite.org/download.html)herunterladen. Viele nuget-Pakete von Drittanbietern für SQLite sind ebenfalls verfügbar. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools** > **nuget-Paket-Manager** > **nuget-Pakete für**Projekt Mappe verwalten).
+SQLite ist eine eingebettete SQL-Datenbank-Engine, die im eigenen Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](https://www.sqlite.org/download.html)herunterladen. Viele nuget-Pakete von Drittanbietern für SQLite sind ebenfalls verfügbar. Sie können die Angebote im nuget-Paket-Manager durch**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten).
 
 ## <a name="firebird"></a>Firebird
 
 Firebird ist ein Open-Source-SQL-Datenbanksystem. Sie können es von der [Downloadseite von Firebird](http://firebirdsql.org/en/downloads/)herunterladen. Ein ADO.NET-Datenanbieter ist über den nuget-Paket-Manager verfügbar.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [So ermitteln Sie die Version, Edition und Updateebene von SQL Server und seinen Komponenten](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)
+- [Informationen zum Ermitteln der Version und Edition von SQL Server und zugehöriger Komponenten](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

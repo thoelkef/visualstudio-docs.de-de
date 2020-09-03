@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906183"
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
@@ -131,5 +131,5 @@ Richten Sie sprachbasierte Funktionen wie Gliederung ein, indem Sie die Arten vo
 
 4. Es sollte ein Gliederungs Bereich vorhanden sein, der beide eckige Klammern enthält. Sie sollten in der Lage sein, auf das Minus Zeichen links neben der öffnenden eckige Klammer zu klicken, um den Gliederungs Bereich zu reduzieren. Wenn der Bereich reduziert ist, sollte das Symbol mit den Auslassungs Zeichen (*...*) links neben dem reduzierten Bereich angezeigt werden, und es sollte ein Popup Fenster angezeigt werden, das den Text für den **Maus** Zeiger enthält, wenn Sie den Mauszeiger auf die Auslassungs Zeichen bewegen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

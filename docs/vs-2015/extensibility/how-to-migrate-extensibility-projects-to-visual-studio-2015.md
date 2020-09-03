@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915980"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Gewusst wie: Migrieren von Erweiterungsprojekten zu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 So aktualisieren Sie die Erweiterung.  
@@ -29,15 +29,15 @@ So aktualisieren Sie die Erweiterung.
   
 1. Öffnen Sie die Kopie, die Sie aktualisieren möchten, in der neuen Version. Sie werden darüber informiert, dass das Upgrade nicht rückgängig gemacht werden kann.  
   
-2. Nachdem das Upgrade abgeschlossen ist, ändern Sie den Pfad des externen Programms in die neue Version von "devenv. exe". Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie dann **Eigenschaften**aus. Suchen Sie auf der Registerkarte **Debuggen** nach dem Textfeld, indem Sie **externes Programm starten** , und ändern Sie den Pfad von "devenv. exe" in den Pfad von Visual Studio 2015, der in etwa wie folgt aussehen sollte:  
+2. Nachdem das Upgrade abgeschlossen ist, ändern Sie den Pfad des externen Programms in die neue Version von devenv.exe. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie dann **Eigenschaften**aus. Suchen Sie auf der Registerkarte **Debuggen** nach dem Textfeld, indem Sie **externes Programm starten** , und ändern Sie den Pfad devenv.exe in den Pfad von Visual Studio 2015, der in etwa wie folgt aussehen sollte:  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14,0 \ Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
-3. Fügen Sie einen Verweis auf Microsoft. VisualStudio. Shell. 14,0. dll hinzu. (Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie dann **Hinzufügen/Verweis**aus. Wählen Sie die Registerkarte **Erweiterungen** aus, und überprüfen Sie **Microsoft. VisualStudio. Shell. 14,0**.)  
+3. Fügen Sie einen Verweis auf Microsoft.VisualStudio.Shell.14.0.dll hinzu. (Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie dann **Hinzufügen/Verweis**aus. Wählen Sie die Registerkarte **Erweiterungen** aus, und überprüfen Sie **Microsoft. VisualStudio. Shell. 14,0**.)  
   
 4. Erstellen Sie die Projektmappe. Die erstellten Dateien werden für Folgendes bereitgestellt:  
   
-     **%LocalAppData%\Microsoft\VisualStudio.14.0Exp\Extensions\\< Autor Name\>\\< Projektname** \>\\< Projekt Version\>\\.  
+     **%LocalAppData%\Microsoft\VisualStudio.14.0Exp\Extensions \\<Autorenname \> \\<Projektnamen \> \\<Projekt Version \> \\ **.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>So aktualisieren Sie ein Erweiterbarkeits Projekt auf nuget vs SDK-Verweisassemblys  
   

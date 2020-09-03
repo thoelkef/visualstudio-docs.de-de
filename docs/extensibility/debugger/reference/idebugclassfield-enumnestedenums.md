@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedEnums | Microsoft Docs
+title: 'Idebugclassfield:: enumberstedenums | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 38ee3ccd1ffd3130bc918da18c631cf08683f064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734406"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
-Erstellt einen Enumerator für die geschachtelten Enumeratoren dieser Klasse.
+Erstellt einen Enumerator für die unter aufgefügten Enumeratoren dieser Klasse.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int EnumNestedEnums(
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt ein [IEnumDebugFields-Objekt](../../../extensibility/debugger/reference/ienumdebugfields.md) zurück, das die Liste der geschachtelten Enumerationen darstellt. Gibt einen NULL-Wert zurück, wenn keine geschachtelten Enumerationen vorhanden sind.
+vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste der geschiesteten Enumerationen darstellt. Gibt einen NULL-Wert zurück, wenn keine unter aufgefügten Enumerationen vorhanden sind.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, gibt S_OK oder S_FALSE zurück, wenn keine verschachtelten Enumeratoren vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+Wenn erfolgreich, wird S_OK zurückgegeben, oder es wird S_FALSE zurückgegeben, wenn keine unter-Enumeratoren vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Jedes Element der Enumeration ist ein [IDebugEnumField-Objekt,](../../../extensibility/debugger/reference/idebugenumfield.md) das eine geschachtelte Enumeration beschreibt.
+Jedes Element der-Enumeration ist ein [idebugenumfield](../../../extensibility/debugger/reference/idebugenumfield.md) -Objekt, das eine geschsted-Enumeration beschreibt.
 
-Eine innerhalb einer Klasse deklarierte Enumeration wird als verschachtelte Enumeration betrachtet. Zum Beispiel kann Folgendes gegeben sein:
+Eine Enumeration, die innerhalb einer Klasse deklariert wird, wird als geschachtelte Enumeration betrachtet. Angenommen, dies liegt vor:
 
 ```
 class RootClass {
@@ -57,7 +57,7 @@ class RootClass {
 };
 ```
 
-Die `EnumNestedEnums` Methode gibt ein [IEnumDebugFields-Objekt](../../../extensibility/debugger/reference/ienumdebugfields.md) zurück, das ein `NestedEnum` [IDebugEnumField-Objekt](../../../extensibility/debugger/reference/idebugenumfield.md) enthält, das die Enumeration darstellt.
+Die- `EnumNestedEnums` Methode gibt ein [ienumdebugfields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das ein [idebugenumfield](../../../extensibility/debugger/reference/idebugenumfield.md) -Objekt enthält, das die- `NestedEnum` Enumeration darstellt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

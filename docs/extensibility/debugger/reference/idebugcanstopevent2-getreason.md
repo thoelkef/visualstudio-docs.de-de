@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetReason | Microsoft Docs
+title: 'IDebugCanStopEvent2:: geverrat | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734523"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
-Ruft den Grund ab, warum das Debugmodul (DE) beendet werden soll.
+Ruft den Grund ab, warum die Debug-Engine (de) beendet werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int GetReason( 
 
 ## <a name="parameters"></a>Parameter
 `pcr`\
-[out] Gibt einen Wert [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) aus der CANSTOP_REASON-Enumeration zurück, die den Grund für dieses Ereignis beschreibt.
+vorgenommen Gibt einen Wert aus der [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) -Enumeration zurück, die den Grund für dieses Ereignis beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird in der Regel vor der [CanStop-Methode](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) aufgerufen,`TRUE`damit `IDebugCanStopEvent2::CanStop` der Aufrufer bestimmen kann, ob die Methode ungleich Null ( ) übergeben werden soll.
+ Diese Methode wird in der Regel vor der [canstoppt](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) -Methode aufgerufen, sodass der Aufrufer bestimmen kann, ob nicht NULL ( `TRUE` ) an die-Methode übergeben werden soll `IDebugCanStopEvent2::CanStop` .
 
- Der Grund für das `CANSTOP_ENTRYPOINT`Anhalten kann entweder sein, was `CANSTOP_STEPIN`bedeutet, dass die DE einen Einstiegspunkt erreicht hat, oder , was bedeutet, dass die DE in eine Funktion eingetreten ist.
+ Der Grund für das anhalten kann sein. das bedeutet, dass `CANSTOP_ENTRYPOINT` die de einen Einstiegspunkt erreicht hat, oder `CANSTOP_STEPIN` , was bedeutet, dass die de in eine Funktion eingetreten ist.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
