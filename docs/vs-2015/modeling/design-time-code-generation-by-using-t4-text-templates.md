@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534146"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
@@ -125,7 +125,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 
    Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md).
 
-   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. `"C#"` ist der Standardwert.
+   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. `"C#"` ist die Standardoption.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit
  So debuggen Sie eine Textvorlage
@@ -141,7 +141,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   Die Vorlage wird ausgeführt und an den Haltepunkten angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.
 
 > [!TIP]
-> `debug="true"`bewirkt, dass der generierte Code Map präziser in die Textvorlage eingefügt wird, indem weitere Zeilen nummerierungsdirektiven in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
+> `debug="true"` bewirkt, dass der generierte Code Map präziser in die Textvorlage eingefügt wird, indem weitere Zeilen nummerierungsdirektiven in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.
 >
 > Sie können jedoch die Klausel in der template-Anweisung lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.
 
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Eine Textvorlage wird in ihrer eigene App-Domäne ausgeführt, und der Zugriff auf Dienste erfolgt durch Marshalling. Unter diesen Umständen ist GetCOMService() zuverlässiger als GetService().
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Automatisches Erneutes Generieren des Codes
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Automatisches Erneutes Generieren des Codes
  In der Regel werden mehrere Dateien in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe mit einem Eingabemodell generiert. Jede Datei wird aus einer eigenen Vorlage generiert, die Vorlagen verweisen jedoch alle auf das gleiche Modell.
 
  Wenn sich das Quellmodell ändert, müssen Sie alle Vorlagen in der Projektmappe erneut ausführen. Um dies manuell durchzuführen, wählen Sie im Menü **Erstellen** die Option **alle Vorlagen transformieren** aus.
@@ -320,7 +320,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Eine vorhandene Datei in eine Vorlage wird umgerechnet
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Eine vorhandene Datei in eine Vorlage wird umgerechnet
  Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr ähneln und zudem einigen eingefügten Programmcode enthalten. Dadurch ergibt sich eine einfache Methode zum Erstellen einer Vorlage. Erstellen Sie zunächst eine gewöhnliche Datei als Prototyp, z. b. eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Datei, und führen Sie dann schrittweise den Generierungs Code ein, der die resultierende Datei variiert.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>So konvertieren Sie eine vorhandene Datei in eine Entwurfszeitvorlage
@@ -349,7 +349,7 @@ Warning("A warning message");
 
      Legen Sie das `extension`-Attribut auf die Dateinamenerweiterung für den zu generierenden Dateityp fest, z. B. `.cs`, `.resx` oder `.xml`.
 
-6. Speichern Sie die Datei .
+6. Speichern Sie die Datei.
 
      Eine untergeordnete Datei mit der angegebenen Erweiterung wird erstellt. Die Eigenschaften entsprechen dem Dateityp. Beispielsweise **wäre die Eigenschaft** Buildvorgang einer CS-Datei " **Compile**".
 

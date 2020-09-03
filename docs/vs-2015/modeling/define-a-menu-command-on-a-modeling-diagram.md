@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534211"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definieren eines Menübefehls in einem Modellierungsdiagramm
@@ -23,7 +23,7 @@ ms.locfileid: "85534211"
 
 In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs eines UML-Diagramms definieren. Sie können steuern, ob der Menübefehl angezeigt wird und im Kontextmenü für alle Elemente des Diagramms verfügbar ist, und Sie können Code schreiben, der bei Auswahl des Menüelements ausgeführt wird. Sie können diese Erweiterungen in eine Visual Studio-Integrationserweiterung ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) packen, die Sie an andere Visual Studio-Benutzer verteilen können.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -166,13 +166,13 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
          **Projekt**  =  *Ihr Klassen Bibliotheksprojekt*
 
-## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>Implementieren des Menübefehls
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a> Implementieren des Menübefehls
  Durch die Menübefehlsklasse werden die erforderlichen Methoden für <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> implementiert.
 
 |Signatur|BESCHREIBUNG|
 |-|-|
 |`string Text { get; }`|Geben Sie die Bezeichnung des Menüelements zurück.|
-|`void QueryStatus(IMenuCommand command);`|Wird aufgerufen, wenn der Benutzer im Diagramm mit der rechten Maustaste klickt.<br /><br /> Diese Methode sollte das Modell nicht ändern.<br /><br /> Verwenden Sie `DiagramContext.CurrentDiagram.SelectedShapes` , um festzulegen, ob der Befehl angezeigt werden soll und aktiviert sein soll.<br /><br /> Legen Sie Folgendes fest:<br /><br /> -   `command.Visible`auf, `true` Wenn der Befehl im Menü angezeigt werden muss, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt.<br />-   `command.Enabled`auf, `true` Wenn der Benutzer im Menü auf den Befehl klicken kann.<br />-   `command.Text`So legen Sie die Menü Bezeichnung dynamisch fest|
+|`void QueryStatus(IMenuCommand command);`|Wird aufgerufen, wenn der Benutzer im Diagramm mit der rechten Maustaste klickt.<br /><br /> Diese Methode sollte das Modell nicht ändern.<br /><br /> Verwenden Sie `DiagramContext.CurrentDiagram.SelectedShapes` , um festzulegen, ob der Befehl angezeigt werden soll und aktiviert sein soll.<br /><br /> Legen Sie Folgendes fest:<br /><br /> -   `command.Visible` auf, `true` Wenn der Befehl im Menü angezeigt werden muss, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt.<br />-   `command.Enabled` auf, `true` Wenn der Benutzer im Menü auf den Befehl klicken kann.<br />-   `command.Text` So legen Sie die Menü Bezeichnung dynamisch fest|
 |`void Execute (IMenuCommand command);`|Wird aufgerufen, wenn Benutzer auf das Menüelement klicken, während es sichtbar und aktiviert ist.|
 
 ### <a name="accessing-the-model-in-code"></a>Zugriff auf das Modell im Code
@@ -209,7 +209,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Dabei ist jedoch zu beachten, dass der Modellspeicher nicht threadsicher ist. Sie sollten Updates immer mit dem UI-Thread (Benutzeroberflächenthread) ausführen und nach Möglichkeit verhindern, dass der Benutzer während der Ausführung des Hintergrundprozesses Änderungen vornimmt. Ein Beispiel finden Sie unter [Aktualisieren eines UML-Modells aus einem Hintergrund Thread](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="executing-the-menu-command"></a><a name="Executing"></a>Ausführen des Menübefehls
+## <a name="executing-the-menu-command"></a><a name="Executing"></a> Ausführen des Menübefehls
  Führen Sie den Befehl zu Testzwecken im Debugmodus aus.
 
 #### <a name="to-test-the-menu-command"></a>So testen Sie den Menübefehl
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.
 
-    - Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts Start oder nur die Option **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname von ist, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Regel:
+    - Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts Start oder nur die Option **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname von ist [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , in der Regel:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -240,7 +240,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Der verwendete Modelldiagrammtyp (UML-Klasse, Sequenz usw.) ist als eines der Menübefehlsklassen-Attribute `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` usw. aufgeführt.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung
  Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.
 
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung

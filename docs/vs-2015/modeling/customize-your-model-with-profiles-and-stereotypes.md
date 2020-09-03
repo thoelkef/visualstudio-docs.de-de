@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301201"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Anpassen des Modells mit Profilen und Stereotypen
@@ -31,7 +31,7 @@ In Visual Studio können Sie die standardmäßigen UML-Modellelemente wie z. B.
 
  Stereotype können in der Eigenschaftenliste eines Elements festgelegt werden. Für die wichtigsten Arten von Formen in einem Diagramm werden die angewendeten Stereotype auch in der Form angezeigt, wie im Beispiel dargestellt.
 
- ![Eine UML-Klasse mit einem Stereotyp.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![UML-Klasse mit Stereotyp.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Wenn Sie ein Modell mithilfe eines Profils erstellen und dann das Modell für einen anderen Benutzer freigeben, werden für diesen die Stereotype nur angezeigt, wenn auf dem Computer des Benutzers das gleiche Profil installiert ist.

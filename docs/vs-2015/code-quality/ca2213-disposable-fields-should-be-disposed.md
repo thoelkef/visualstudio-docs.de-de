@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534575"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Verwerfbare Felder verwerfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
@@ -50,7 +50,7 @@ ms.locfileid: "85534575"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `TypeB` , der gegen diese Regel verstößt, indem ein Feld `aFieldOfADisposableType` ( `F` in der vorherigen Erörterung) als verwerfbarer Typ ( `TypeA` ) deklariert und <xref:System.IDisposable.Dispose%2A> für das Feld nicht aufgerufen wird. `TypeB`entspricht `T` in der vorherigen Erörterung.
+ Das folgende Beispiel zeigt einen Typ `TypeB` , der gegen diese Regel verstößt, indem ein Feld `aFieldOfADisposableType` ( `F` in der vorherigen Erörterung) als verwerfbarer Typ ( `TypeA` ) deklariert und <xref:System.IDisposable.Dispose%2A> für das Feld nicht aufgerufen wird. `TypeB` entspricht `T` in der vorherigen Erörterung.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 

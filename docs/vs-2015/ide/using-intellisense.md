@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 735f93b2f900b8681a1e9fee490de8e4b697f9e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656445"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
@@ -46,20 +46,20 @@ IntelliSense ist der allgemeine Begriff für eine Reihe von Funktionen: Member a
 
  In der Memberliste stellt das Symbol auf der linken Seite den Membertyp dar, z. B. Namespace, Klasse, Funktion oder Variable. Eine Liste der Symbole finden Sie unter [Symbole in der Klassenansicht und im Objektkatalog](../ide/class-view-and-object-browser-icons.md). Die Liste kann ziemlich lang sein, und Sie können BILD-AUF und BILD-AB drücken, um nach oben oder unten zu navigieren.
 
- ![Visual Studio, Member-Liste](../ide/media/vs2015-intellisense.png "|::ref1::|")
+ ![Visual Studio, Member-Liste](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
  Sie können die Funktion **Member auflisten** manuell aufrufen, indem Sie STRG+J eingeben, auf **Bearbeiten > IntelliSense > Member auflisten** klicken, oder indem Sie auf **Member auflisten** auf der Symbolleiste des Editors klicken. Wenn die Memberliste in einer Leerzeile oder außerhalb eines erkennbaren Gültigkeitsbereichs aktiviert wird, werden Symbole im globalen Namespace angezeigt.
 
- Um die Auflistung der Member standardmäßig zu deaktivieren (sodass sie nur noch nach einem speziellem Aufruf angezeigt wird), rufen Sie **Extras > Optionen > Alle Sprachen** auf, und deaktivieren Sie **Member automatisch auflisten**. Wenn Sie die Auflistung der Member nur für eine bestimmte Sprache deaktivieren möchten, wechseln Sie zu den Einstellungen **Allgemein** für diese Sprache.
+ Wechseln Sie zu Extras > Optionen > **alle Sprachen** , und deaktivieren Sie Member **automatisch auflisten**, um die Listenelemente standardmäßig zu deaktivieren (sodass Sie nur angezeigt werden, wenn Sie ausdrücklich aufgerufen werden). Wenn Sie die Auflistung der Member nur für eine bestimmte Sprache deaktivieren möchten, wechseln Sie zu den Einstellungen **Allgemein** für diese Sprache.
 
  Sie können auch in den Vorschlagsmodus wechseln, in dem nur der von Ihnen eingegebene Text in den Code eingefügt wird. Wenn Sie beispielsweise einen Bezeichner eingeben, der sich nicht in der Liste befindet, und dann die TAB-TASTE drücken, ersetzt der Eintrag im Beendigungsmodus den typisierten Bezeichner. Um zwischen Beendigungsmodus und Vorschlagsmodus zu wechseln, drücken Sie STRG+ALT+LEERTASTE, oder klicken Sie auf **Bearbeiten > IntelliSense > Beendigungsmodus umschalten**.
 
-## <a name="parameter-info"></a>Parameterinfo
+## <a name="parameter-info"></a>Parameterinformationen
  Die Parameterinfo liefert Informationen über die Anzahl, Namen und Typen der Parameter, die von einer Methode, einem attributgenerischen Typparameter (in C#) oder einer Vorlage (in C++) benötigt werden.
 
  Der Parameter, den Sie beim Eingeben der Funktion als Nächstes angeben müssen, ist fett dargestellt. Bei überladenen Funktionen können Sie die Pfeiltasten verwenden, um alternative Parameterinformationen für die Funktionsüberladungen anzuzeigen.
 
- ![Parameterinfo](../ide/media/vs2015-param-info.png "|::ref2::|")
+ ![Parameter Informationen](../ide/media/vs2015-param-info.png "VS2015_param_Info")
 
  Wenn Sie Funktionen und Parameter mit XML-Dokumentationskommentaren versehen, werden die Kommentare als Parameterinfo angezeigt. Weitere Informationen finden Sie unter [Anzeigen von XML-Codekommentaren](../ide/supplying-xml-code-comments.md).
 
@@ -68,11 +68,11 @@ IntelliSense ist der allgemeine Begriff für eine Reihe von Funktionen: Member a
 ## <a name="quick-info"></a>QuickInfo
  QuickInfo zeigt die vollständige Deklaration eines beliebigen Bezeichners im Code an.
 
- ![Visual Studio-QuickInfo](../ide/media/vs2015-quick-info.png "|::ref3::|")
+ ![Visual Studio-QuickInfo](../ide/media/vs2015-quick-info.png "VS2015_Quick_info")
 
  Wenn Sie einen Member im Feld **Member auflisten** auswählen, wird ebenfalls eine QuickInfo angezeigt.
 
- ![Parameterinfo in einer C&#35;-Codedatei](../ide/media/vs2015-paraminfo.png "|::ref4::|")
+ ![Parameterinfo in einer C&#35;-Codedatei](../ide/media/vs2015-paraminfo.png "VS2015_ParamInfo")
 
  Sie können die QuickInfo manuell aufrufen, indem Sie auf **Bearbeiten > IntelliSense > QuickInfo klicken**, STRG+I eingeben oder auf die Schaltfläche **QuickInfo** auf der Symbolleiste des Editors klicken.
 
@@ -101,5 +101,5 @@ MessageBox( hWnd, "String literal|") )
 
  **Die automatischen Optionen sind deaktiviert.** Standardmäßig funktioniert IntelliSense automatisch, Sie können es jedoch deaktivieren. Auch wenn die automatische Anweisungsvervollständigung deaktiviert ist, können Sie eine IntelliSense-Funktion aufrufen.
 
-## <a name="see-also"></a>Siehe auch
- [Visual Basic spezifische IntelliSense](../ide/visual-basic-specific-intellisense.md) [ C# -IntelliSense](../ide/visual-csharp-intellisense.md) -IntelliSense- [IntelliSense](../ide/javascript-intellisense.md) - [Bereitstellung von XML-Code Kommentaren](../ide/supplying-xml-code-comments.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Visual Basic-spezifisches IntelliSense](../ide/visual-basic-specific-intellisense.md) [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md) [JavaScript IntelliSense](../ide/javascript-intellisense.md) [Bereitstellen von XML-Code Kommentaren](../ide/supplying-xml-code-comments.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2bf9c64a55f6f3b49cb1e0a50fa532f276394dac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852003"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
@@ -49,7 +49,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Anwendungstyp**: gibt den Typ der zu erstellenden Anwendung an. Für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-App können Sie **Windows Store-App**, **Klassenbibliothek** oder **WinMD-Datei** angeben. Für die meisten anderen Anwendungstypen können Sie **Windows-Anwendung**, **Konsolenanwendung**, **Klassenbibliothek**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.
 
@@ -64,9 +64,9 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 
  **Assemblyinformationen**: durch Klicken auf diese Schaltfläche wird das Dialogfeld [Assemblyinformationen](../../ide/reference/assembly-information-dialog-box.md) angezeigt.
 
- **Startobjekt**: definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Nicht festgelegt)** .
+ **Start Objekt** Definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist Ihre einzige Option für diese Eigenschaft **(nicht festgelegt)**.
 
- In einem WPF-Browseranwendungsprojekt ist diese Option standardmäßig **(Nicht festgelegt)** . Die andere Option ist *Projectname*.App. Bei dieser Art von Projekten müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei „Application.xaml“, und legen Sie die `StartupUri`-Eigenschaft auf eine XAML-Datei in Ihrem Projekt fest, beispielsweise „Window1.xaml“. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.
+ In einem WPF-Browseranwendungsprojekt ist diese Option standardmäßig **(Nicht festgelegt)**. Die andere Option ist " *ProjectName*. app". Bei dieser Art von Projekten müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei „Application.xaml“, und legen Sie die `StartupUri`-Eigenschaft auf eine XAML-Datei in Ihrem Projekt fest, beispielsweise „Window1.xaml“. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.
 
  Weitere Informationen hierzu finden Sie unter [/main (C#-Compileroptionen)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -77,7 +77,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 
  **Symbol**: legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Klicken Sie auf die Schaltfläche mit den Auslassungszeichen, um eine vorhandene Grafik zu suchen, oder geben Sie den Namen der gewünschten Datei ein. Weitere Informationen finden Sie unter [/win32icon (C#-Compileroptionen)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
- **Manifest**: aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista unter „Benutzerkontensteuerung“ (User Account Control, UAC) ausgeführt wird. Diese Option kann die folgenden Werte aufweisen:
+ **Manifest**: aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista unter „Benutzerkontensteuerung“ (User Account Control, UAC) ausgeführt wird. Für diese Option können die folgenden Werte verwendet werden:
 
 - **Manifest mit Standardeinstellungen einbetten**. Unterstützt die normale Vorgehensweise von Visual Studio unter Windows Vista, bei der durch Einbetten der Sicherheitsinformationen in die ausführbare Datei der Anwendung angegeben wird, dass `requestedExecutionLevel``AsInvoker` sein soll. Dies ist die Standardoption.
 
@@ -87,7 +87,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 
   **Ressourcendatei**: Markieren Sie dieses Optionsfeld, wenn Sie eine Ressourcendatei für das Projekt bereitstellen. Durch Auswahl dieser Option, werden die Optionen **Symbol** und **Manifest** deaktiviert.
 
-  Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen ( **...** ), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.
+  Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen (**...**), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.
 
-## <a name="see-also"></a>Siehe auch
-[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Lösungen](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+## <a name="see-also"></a>Weitere Informationen
+[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Projektmappen](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
