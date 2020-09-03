@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c487df5623a233146655593265e15c34a884de3c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672998"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Binden von Objekten in Visual Studio
@@ -37,7 +37,7 @@ Visual Studio bietet Entwurfszeit Tools zum Arbeiten mit benutzerdefinierten Obj
 ## <a name="object-requirements"></a>Objekt Anforderungen
  Die einzige Anforderung für benutzerdefinierte Objekte, mit den Daten Entwurfs Tools in Visual Studio zu arbeiten, besteht darin, dass das Objekt mindestens eine öffentliche Eigenschaft benötigt.
 
- Im Allgemeinen erfordern benutzerdefinierte Objekte keine bestimmten Schnittstellen, Konstruktoren oder Attribute, die als Datenquelle für eine Anwendung fungieren. Wenn Sie das Objekt jedoch aus dem **Datenquellen** Fenster auf eine Entwurfs Oberfläche ziehen möchten, um ein Daten gebundenes Steuerelement zu erstellen, und wenn das Objekt die <xref:System.ComponentModel.ITypedList> oder <xref:System.ComponentModel.IListSource> Schnittstelle implementiert, muss das Objekt über einen Standardkonstruktor verfügen. Andernfalls kann Visual Studio das Datenquellen Objekt nicht instanziieren und zeigt einen Fehler an, wenn Sie das Element auf die Entwurfs Oberfläche ziehen.
+ Im Allgemeinen erfordern benutzerdefinierte Objekte keine bestimmten Schnittstellen, Konstruktoren oder Attribute, die als Datenquelle für eine Anwendung fungieren. Wenn Sie das Objekt jedoch aus dem **Datenquellen** Fenster auf eine Entwurfs Oberfläche ziehen möchten, um ein Daten gebundenes Steuerelement zu erstellen, und wenn das Objekt die- <xref:System.ComponentModel.ITypedList> oder- <xref:System.ComponentModel.IListSource> Schnittstelle implementiert, muss das-Objekt über einen Standardkonstruktor verfügen. Andernfalls kann Visual Studio das Datenquellen Objekt nicht instanziieren und zeigt einen Fehler an, wenn Sie das Element auf die Entwurfs Oberfläche ziehen.
 
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Beispiele für die Verwendung von benutzerdefinierten Objekten als Datenquellen
  Es gibt unzählige Möglichkeiten, Ihre Anwendungslogik beim Arbeiten mit Objekten als Datenquelle zu implementieren. für SQL-Datenbanken gibt es jedoch einige Standard Vorgänge, die mithilfe der von Visual Studio – generierten TableAdapter-Objekte vereinfacht werden können. Auf dieser Seite wird erläutert, wie diese Standardprozesse mithilfe von TableAdapters.it implementiert werden, die nicht als Leitfaden zum Erstellen von benutzerdefinierten Objekten dienen. Beispielsweise führen Sie in der Regel die folgenden Standard Vorgänge unabhängig von der spezifischen Implementierung Ihrer Objekte oder der Logik der Anwendung aus:
@@ -60,14 +60,14 @@ Visual Studio bietet Entwurfszeit Tools zum Arbeiten mit benutzerdefinierten Obj
 ### <a name="loaddata-into-objects"></a>LoadData in Objekte
  In diesem Beispiel laden Sie Daten mithilfe von TableAdapters in Ihre Objekte. Standardmäßig werden TableAdapters mit zwei Arten von Methoden erstellt, die Daten aus einer Datenbank abrufen und Datentabellen auffüllen.
 
-- Die `TableAdapter.Fill`-Methode füllt eine vorhandene Datentabelle mit den zurückgegebenen Daten.
+- Die- `TableAdapter.Fill` Methode füllt eine vorhandene Datentabelle mit den zurückgegebenen Daten.
 
-- Die `TableAdapter.GetData`-Methode gibt eine neue Datentabelle zurück, die mit Daten aufgefüllt wird.
+- Die `TableAdapter.GetData` Methode gibt eine neue Datentabelle zurück, die mit Daten aufgefüllt wird.
 
-  Die einfachste Möglichkeit zum Laden benutzerdefinierter Objekte mit Daten besteht darin, die `TableAdapter.GetData`-Methode aufzurufen, die Auflistung der Zeilen in der zurückgegebenen Datentabelle zu durchlaufen und jedes-Objekt mit den Werten in den einzelnen Zeilen aufzufüllen. Sie können eine `GetData` Methode erstellen, die eine aufgefüllte Datentabelle für jede Abfrage zurückgibt, die einem TableAdapter hinzugefügt wurde.
+  Die einfachste Möglichkeit zum Laden benutzerdefinierter Objekte mit Daten besteht darin, die-Methode aufzurufen `TableAdapter.GetData` , die Auflistung der Zeilen in der zurückgegebenen Datentabelle zu durchlaufen und jedes-Objekt mit den Werten in jeder Zeile aufzufüllen. Sie können eine `GetData` Methode erstellen, die eine aufgefüllte Datentabelle für jede Abfrage zurückgibt, die einem TableAdapter hinzugefügt wurde.
 
 > [!NOTE]
-> Visual Studio benennt die TableAdapter-Abfragen `Fill` und `GetData` standardmäßig. diese Namen können jedoch in einen beliebigen gültigen Methodennamen geändert werden.
+> Visual Studio benennt die TableAdapter `Fill` -Abfragen und `GetData` standardmäßig. diese Namen können jedoch in einen beliebigen gültigen Methodennamen geändert werden.
 
  Im folgenden Beispiel wird gezeigt, wie Sie die Zeilen in einer Datentabelle durchlaufen und ein Objekt mit Daten auffüllen:
 
@@ -77,48 +77,48 @@ Visual Studio bietet Entwurfszeit Tools zum Arbeiten mit benutzerdefinierten Obj
 ### <a name="create-a-typed-collection-of-objects"></a>Erstellen einer typisierten Auflistung von Objekten
  Sie können Auflistungs Klassen für Ihre Objekte erstellen oder die typisierten Auflistungen verwenden, die automatisch von der [BindingSource-Komponente](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)bereitgestellt werden.
 
- Wenn Sie eine benutzerdefinierte Auflistungs Klasse für-Objekte erstellen, empfiehlt es sich, von <xref:System.ComponentModel.BindingList%601> zu erben. Diese generische Klasse bietet Funktionen zum Verwalten Ihrer Auflistung sowie zum Senden von Ereignissen, die Benachrichtigungen an die Daten Bindungs Infrastruktur in Windows Forms senden.
+ Wenn Sie eine benutzerdefinierte Auflistungs Klasse für-Objekte erstellen, empfiehlt es sich, von zu erben <xref:System.ComponentModel.BindingList%601> . Diese generische Klasse bietet Funktionen zum Verwalten Ihrer Auflistung sowie zum Senden von Ereignissen, die Benachrichtigungen an die Daten Bindungs Infrastruktur in Windows Forms senden.
 
- Die automatisch generierte Auflistung im <xref:System.Windows.Forms.BindingSource> verwendet eine <xref:System.ComponentModel.BindingList%601> für Ihre typisierte Auflistung. Wenn die Anwendung keine zusätzlichen Funktionen erfordert, können Sie Ihre Sammlung innerhalb der <xref:System.Windows.Forms.BindingSource> beibehalten. Weitere Informationen finden Sie in der <xref:System.Windows.Forms.BindingSource.List%2A>-Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Klasse.
+ Die automatisch generierte-Auflistung in <xref:System.Windows.Forms.BindingSource> verwendet einen <xref:System.ComponentModel.BindingList%601> für seine typisierte Auflistung. Wenn die Anwendung keine zusätzlichen Funktionen erfordert, können Sie die-Auflistung im verwalten <xref:System.Windows.Forms.BindingSource> . Weitere Informationen finden Sie unter der- <xref:System.Windows.Forms.BindingSource.List%2A> Eigenschaft der- <xref:System.Windows.Forms.BindingSource> Klasse.
 
 > [!NOTE]
-> Wenn Ihre Auflistung Funktionen erfordert, die nicht von der Basis Implementierung der <xref:System.ComponentModel.BindingList%601> bereitgestellt werden, sollten Sie eine benutzerdefinierte Sammlung erstellen, damit Sie Sie der Klasse nach Bedarf hinzufügen können.
+> Wenn die-Auflistung Funktionen erfordert, die von der Basis Implementierung von nicht bereitgestellt <xref:System.ComponentModel.BindingList%601> werden, sollten Sie eine benutzerdefinierte Auflistung erstellen, damit Sie der-Klasse nach Bedarf hinzufügen können.
 
- Der folgende Code zeigt, wie die-Klasse für eine stark typisierte Auflistung von `Order`-Objekten erstellt wird:
+ Der folgende Code zeigt, wie Sie die-Klasse für eine stark typisierte Auflistung von-Objekten erstellen können `Order` :
 
  [!code-csharp[VbRaddataConnecting#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#8)]
  [!code-vb[VbRaddataConnecting#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#8)]
 
 ### <a name="addobjects-to-a-collection"></a>Addobjects zu einer Sammlung
- Sie fügen einer Auflistung Objekte hinzu, indem Sie die `Add`-Methode der benutzerdefinierten Auflistungs Klasse oder des <xref:System.Windows.Forms.BindingSource> aufrufen.
+ Sie können einer Auflistung Objekte hinzufügen, indem Sie die- `Add` Methode der benutzerdefinierten Auflistungs Klasse oder des aufrufen <xref:System.Windows.Forms.BindingSource> .
 
- Ein Beispiel für das Hinzufügen zu einer Auflistung mithilfe eines <xref:System.Windows.Forms.BindingSource> finden Sie in der `LoadCustomers`-Methode unter Exemplarische Vorgehensweise [: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Ein Beispiel für das Hinzufügen zu einer Auflistung mithilfe von finden Sie unter Exemplarische <xref:System.Windows.Forms.BindingSource> `LoadCustomers` Vorgehensweise [: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Ein Beispiel für das Hinzufügen von Objekten zu einer benutzerdefinierten Auflistung finden Sie in der `LoadOrders`-Methode unter Exemplarische Vorgehensweise [: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Ein Beispiel für das Hinzufügen von Objekten zu einer benutzerdefinierten Auflistung finden Sie unter Exemplarische `LoadOrders` Vorgehensweise [: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
-> Die `Add`-Methode wird automatisch für Ihre benutzerdefinierte Sammlung bereitgestellt, wenn Sie von <xref:System.ComponentModel.BindingList%601> erben.
+> Die- `Add` Methode wird automatisch für Ihre benutzerdefinierte Auflistung bereitgestellt, wenn Sie von Erben <xref:System.ComponentModel.BindingList%601> .
 
- Der folgende Code zeigt, wie der typisierten-Auflistung in einer <xref:System.Windows.Forms.BindingSource>-Objekte hinzugefügt werden:
+ Der folgende Code zeigt, wie der typisierten-Auflistung in ein-Objekt hinzugefügt wird <xref:System.Windows.Forms.BindingSource> :
 
  [!code-csharp[VbRaddataConnecting#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#5)]
  [!code-vb[VbRaddataConnecting#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#5)]
 
- Der folgende Code zeigt, wie Sie einer typisierten Auflistung Objekte hinzufügen, die von <xref:System.ComponentModel.BindingList%601> erbt:
+ Der folgende Code zeigt, wie Sie-Objekte zu einer typisierten Auflistung hinzufügen, die von erbt <xref:System.ComponentModel.BindingList%601> :
 
 > [!NOTE]
-> In diesem Beispiel ist die `Orders` Auflistung eine Eigenschaft des `Customer` Objekts.
+> In diesem Beispiel ist die-Auflistung `Orders` eine Eigenschaft des- `Customer` Objekts.
 
  [!code-csharp[VbRaddataConnecting#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#6)]
  [!code-vb[VbRaddataConnecting#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#6)]
 
 ### <a name="removeobjects-from-a-collection"></a>Removeobjects aus einer Sammlung
- Sie entfernen Objekte aus einer Auflistung, indem Sie die `Remove`-oder `RemoveAt`-Methode der benutzerdefinierten Auflistungs Klasse oder <xref:System.Windows.Forms.BindingSource> aufrufen.
+ Sie entfernen Objekte aus einer Auflistung, indem Sie die- `Remove` Methode oder die- `RemoveAt` Methode der benutzerdefinierten Auflistungs Klasse oder von Aufrufen <xref:System.Windows.Forms.BindingSource> .
 
 > [!NOTE]
-> Wenn Sie von <xref:System.ComponentModel.BindingList%601> erben, werden die Methoden `Remove` und `RemoveAt` automatisch für Ihre benutzerdefinierte Sammlung bereitgestellt.
+> Die `Remove` -Methode und die- `RemoveAt` Methode werden automatisch für Ihre benutzerdefinierte Auflistung bereitgestellt, wenn Sie von Erben <xref:System.ComponentModel.BindingList%601> .
 
- Der folgende Code zeigt, wie Sie Objekte in einer <xref:System.Windows.Forms.BindingSource> mit der <xref:System.Windows.Forms.BindingSource.RemoveAt%2A>-Methode suchen und aus der typisierten Auflistung entfernen:
+ Der folgende Code zeigt, wie Sie mithilfe der-Methode Objekte aus der typisierten-Auflistung in einem suchen und daraus entfernen <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> :
 
  [!code-csharp[VbRaddataConnecting#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#7)]
  [!code-vb[VbRaddataConnecting#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#7)]
@@ -129,17 +129,17 @@ Visual Studio bietet Entwurfszeit Tools zum Arbeiten mit benutzerdefinierten Obj
 ### <a name="modify-the-data-in-objects"></a>Ändern der Daten in Objekten
  Wenn Sie Daten in benutzerdefinierten Objekten bearbeiten möchten, die an Windows Forms Steuerelemente an Daten gebunden sind, bearbeiten Sie einfach die Daten im gebundenen Steuerelement (oder direkt in den Eigenschaften des Objekts). Die Daten Bindungs Architektur aktualisiert die Daten im-Objekt.
 
- Wenn die Anwendung die Nachverfolgung von Änderungen und das Rollback der vorgeschlagenen Änderungen an ihren ursprünglichen Werten erfordert, müssen Sie diese Funktionalität in Ihrem Objektmodell implementieren. Beispiele für die Art und Weise, wie Datentabellen vorgeschlagene Änderungen verfolgen, finden Sie unter <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A> und <xref:System.Data.DataTable.GetChanges%2A>.
+ Wenn die Anwendung die Nachverfolgung von Änderungen und das Rollback der vorgeschlagenen Änderungen an ihren ursprünglichen Werten erfordert, müssen Sie diese Funktionalität in Ihrem Objektmodell implementieren. Beispiele für die Art und Weise, wie Datentabellen vorgeschlagene Änderungen verfolgen, finden Sie unter <xref:System.Data.DataRowState> , <xref:System.Data.DataSet.HasChanges%2A> und <xref:System.Data.DataTable.GetChanges%2A> .
 
 ### <a name="savedata-in-objects-back-to-the-database"></a>SaveData in Objekten zurück in die Datenbank
  Speichern Sie die Daten wieder in der Datenbank, indem Sie die Werte aus dem-Objekt an die DBDirect-Methoden des TableAdapter übergeben.
 
  Visual Studio erstellt DBDirect-Methoden, die direkt für die Datenbank ausgeführt werden können. Für diese Methoden sind keine Datasets oder Daten baren Objekte erforderlich.
 
-|TableAdapter-DBDirect-Methode|Beschreibung|
+|TableAdapter-DBDirect-Methode|BESCHREIBUNG|
 |----------------------------------|-----------------|
 |`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu, sodass einzelne Spaltenwerte als Methoden Parameter übergeben werden können.|
-|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die Update-Methode nimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter an. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die `TableAdapter.Update`-Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem eine <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> oder ein Array von <xref:System.Data.DataRow>s als Methoden Parameter verwendet wird.|
+|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die Update-Methode nimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter an. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die- `TableAdapter.Update` Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein-,-,- <xref:System.Data.DataSet> oder- <xref:System.Data.DataTable> <xref:System.Data.DataRow> Array von <xref:System.Data.DataRow> s als Methoden Parameter verwendet wird.|
 |`TableAdapter.Delete`|Löscht vorhandene Datensätze aus der Datenbank auf Grundlage der ursprünglichen Spaltenwerte, die als Methoden Parameter weitergegeben werden.|
 
  Um Daten aus einer Auflistung von-Objekten zu speichern, durchlaufen Sie die Auflistung von-Objekten (z. b. mithilfe einer for-Next-Schleife). Senden Sie die Werte für jedes Objekt mithilfe der DBDirect-Methoden des TableAdapter an die Datenbank.
@@ -149,5 +149,5 @@ Visual Studio bietet Entwurfszeit Tools zum Arbeiten mit benutzerdefinierten Obj
  [!code-csharp[VbRaddataSaving#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#23)]
  [!code-vb[VbRaddataSaving#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#23)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

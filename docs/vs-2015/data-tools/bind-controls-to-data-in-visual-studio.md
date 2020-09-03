@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673033"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
@@ -38,11 +38,11 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 
 |Datenquelle|Drag & Drop-Unterstützung im **Windows Forms-Designer**|Drag & Drop-Unterstützung im **WPF-Designer**|Drag & Drop-Unterstützung im **Silverlight-Designer**|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|DataSet|Ja|Ja|Nein|
+|Dataset|Ja|Ja|Nein|
 |Entity Data Model|Ja<sup>1</sup>|Ja|Ja|
 |LINQ to SQL-Klassen|Nein<sup>2</sup>|Nein<sup>2</sup>|Nein<sup>2</sup>|
 |Dienste (einschließlich [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], WCF-Dienste und Webdienste)|Ja|Ja|Ja|
-|Objekt|Ja|Ja|Ja|
+|Object|Ja|Ja|Ja|
 |SharePoint|Ja|Ja|Ja|
 
  1. Generieren Sie das Modell mithilfe des **Entity Data Model** -Assistenten, und ziehen Sie dann diese Objekte in den Designer.
@@ -61,14 +61,14 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 
 |Aufgabe|Weitere Informationen|
 |----------|----------------------|
-|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und wählen Sie  > **Datenquellen** **anzeigen** aus.|
+|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und **View**wählen Sie  >  **Datenquellen**anzeigen aus.|
 |Fügen Sie dem Projekt eine Datenquelle hinzu.|[Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)|
 |Legen Sie das Steuerelement fest, das erstellt wird, wenn Sie ein Element vom Fenster **Datenquellen** in den Designer ziehen.|[Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Ändern Sie die Liste der Steuerelemente, die Elementen im Fenster **Datenquellen** zugeordnet sind.|[Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
 |Erstellen Sie datengebundene Steuerelemente.|[Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)|
 |Binden an ein Objekt oder eine Auflistung.|[Binden von Objekten in Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|
-|Filtern von Daten, die in der Benutzeroberfläche angezeigt werden.|[Gewusst wie: Filtern und Sortieren von Daten in einer Windows Forms-Anwendung](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
+|Filtern von Daten, die in der Benutzeroberfläche angezeigt werden.|[Filtern und Sortieren von Daten in einer Windows Forms-Anwendung](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Anpassen von Untertiteln für Steuerelemente.|[Gewusst wie: Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Datenbindung](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa) [für Visual Studio Data Tools für .net](../data-tools/visual-studio-data-tools-for-dotnet.md) Windows Forms

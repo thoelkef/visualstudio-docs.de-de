@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 44146613fb43b6fc4269741ba09b94629f888d5f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673075"
 ---
 # <a name="add-new-connections"></a>Neue Verbindungen hinzufügen
@@ -23,7 +23,7 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Date
 
  Server-Explorer standardmäßig in Visual Studio installiert. Kann verwendet werden, um Verbindungen zu testen und SQL Server Datenbanken, alle anderen Datenbanken mit installiertem ADO.NET-Anbieter und einige Azure-Dienste anzuzeigen. Zeigt auch Objekte auf niedriger Ebene, z. b. Systemleistungs Indikatoren, Ereignisprotokolle und Nachrichten Warteschlangen. Wenn eine Datenquelle keinen ADO.NET-Anbieter aufweist, wird Sie hier nicht angezeigt, Sie können Sie jedoch auch in Visual Studio verwenden, indem Sie Programm gesteuert eine Verbindung herstellen.
 
- Cloud-Explorer dieses Fenster manuell als Visual Studio-Erweiterung zu installieren, indem Sie **Tools**  > **Erweiterungen und Updates**  > **Online**  > **Visual Studio Gallery**auswählen. Bietet spezialisierte Funktionen zum untersuchen und verbinden mit Azure-Diensten.
+ Cloud-Explorer dieses Fenster manuell als Visual Studio-Erweiterung installieren, indem **Tools**Sie Extras  >  **Erweiterungen und Updates**  >  **Online**  >  **Visual Studio Gallery**auswählen. Bietet spezialisierte Funktionen zum untersuchen und verbinden mit Azure-Diensten.
 
  SQL Server-Objekt-Explorer mit SQL Server Data Tools installiert und im Menü **Ansicht** sichtbar. Wenn Sie dort nicht angezeigt wird, navigieren Sie in der Systemsteuerung zu **Programme und Funktionen** , suchen Sie nach Visual Studio, und wählen Sie dann **ändern** aus, um den Installer erneut auszuführen, nachdem Sie das Kontrollkästchen für SQL Server Data Tools ausgewählt haben. Verwenden Sie **SQL Server-Objekt-Explorer** zum Anzeigen von SQL-Datenbanken (wenn Sie über einen ADO.NET-Anbieter verfügen), erstellen Sie neue Datenbanken, ändern Sie Schemas, erstellen Sie gespeicherte Prozeduren, rufen Sie Verbindungs Zeichenfolgen, Daten anzeigen usw. SQL-Datenbanken, die keinen ADO.NET-Anbieter installiert haben, werden hier nicht angezeigt, aber Sie können weiterhin Programm gesteuert eine Verbindung mit Ihnen herstellen.
 
@@ -41,12 +41,12 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Date
 
  ![Ändern der AD0.NET-Datenanbieter](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata-Änderung AD0.NET Datenanbieter")
 
-## <a name="test-the-connection"></a>Verbindung testen
+## <a name="test-the-connection"></a>Testen der Verbindung
  Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Verbindung testen**. Wenn dies nicht gelingt, müssen Sie basierend auf der Dokumentation des Herstellers eine Problembehandlung durchführen.
 
  ![Verbindung testen](../data-tools/media/raddata-test-connection.png "raddata-Test Verbindung")
 
  Wenn der Test erfolgreich ist, können Sie eine *Datenquelle*erstellen, die ein Visual Studio-Begriff ist, der tatsächlich ein *Datenmodell* ist, das auf der zugrunde liegenden Datenbank oder dem zugrunde liegenden Dienst basiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

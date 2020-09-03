@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d87cc57b31e63ae7aafa53c335df2b56f86a0409
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658101"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Gewusst wie: Aktivieren und Deaktivieren der automatischen Codeanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können die Code Analyse so konfigurieren, dass Sie vor jedem Build eines Projekts mit verwaltetem Code ausgeführt wird. Sie können für jede [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Konfiguration verschiedene Code Analyse Eigenschaften festlegen.
+Sie können die Code Analyse so konfigurieren, dass Sie vor jedem Build eines Projekts mit verwaltetem Code ausgeführt wird. Sie können verschiedene Code Analyse Eigenschaften für jede [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Konfiguration festlegen.
 
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>So aktivieren oder deaktivieren Sie die automatische Code Analyse
 
