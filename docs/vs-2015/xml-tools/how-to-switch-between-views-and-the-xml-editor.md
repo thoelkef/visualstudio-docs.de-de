@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28267f705dd9a747d0e3f3ac5dc2869ab7de8f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656323"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Gewusst wie: Wechseln zwischen Ansichten und dem XML-Editor
@@ -27,9 +27,9 @@ In diesem Thema wird beschrieben, wie Sie zwischen den Ansichten des XML-Schema-
 
 2. Wenn Sie im XML-Editor zum XML-Schema-Designer wechseln möchten, klicken Sie im XML-Editor mit der rechten Maustaste auf eine beliebige Stelle, **und wählen Sie**
 
-3. Wenn Sie mit dem Wasserzeichen zur Diagramm Ansicht wechseln möchten, klicken Sie auf die **Diagramm Ansicht verwenden, um die Beziehung zwischen dem** Link "Knoten" in der Start Ansicht anzuzeigen.
+3. Klicken Sie in der Ausgangsansicht auf den Link **Verwenden Sie die Diagrammansicht, um die Beziehungen zwischen Knoten anzuzeigen**, um über das Wasserzeichen zur Diagrammansicht zu wechseln.
 
-4. Ziehen Sie den `USAddress`-Knoten vom XML-Schema-Explorer in die Diagrammansicht. Klicken Sie in der Diagramm Ansicht mit der rechten Maustaste auf den Knoten `USAddress`, und wählen Sie im Kontextmenü die Option **in Inhalts Modell Ansicht anzeigen** aus.
+4. Ziehen Sie den `USAddress`-Knoten vom XML-Schema-Explorer in die Diagrammansicht. Klicken Sie in der Diagrammansicht mit der rechten Maustaste auf den `USAddress`-Knoten, und wählen Sie im Kontextmenü **In Inhaltsmodellansicht anzeigen** aus.
 
      Die Inhaltsmodellansicht mit den Details des `USAddress`-Knotens wird angezeigt.
 
