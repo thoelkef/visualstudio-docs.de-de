@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_compilandid | Microsoft-Dokumentation'
+title: 'IDiaLineNumber:: get_compilandId | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1210276728e40e43f8ae40eef78de4d53cf6262d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152078"
 ---
-# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
+# <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft einen eindeutigen Bezeichner für die Kompiliereinheit, die diese Zeile beigetragen haben.  
+Ruft einen eindeutigen Bezeichner für die Kompilierungen ab, die diese Zeile bereitgestellt hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ HRESULT get_compilandId ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt `DWORD` , enthält den eindeutigen Bezeichner für die Kompiliereinheit, die diese Zeile beigetragen haben.  
+ vorgenommen Gibt einen-Wert zurück `DWORD` , der den eindeutigen Bezeichner für die Kompilierungen enthält, die diese Zeile beitrugen  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

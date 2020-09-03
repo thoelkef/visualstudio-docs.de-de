@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a923d1f3532548ebc6ed651a0739e0e5792f7967
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663537"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
@@ -31,7 +31,7 @@ Zwingt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dazu, die Ressourcenmetad
 devenv /setup
 ```
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Der Schalter verwendet keine Argumente. Der Befehl `devenv /setup` wird in der Regel als letzter Schritt der Installation angegeben. Bei Verwendung des Schalters `/setup` wird [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]nicht gestartet.
 
  Sie müssen `devenv` als Administrator ausführen, um die Schalter [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) und [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) verwenden zu können.
@@ -43,5 +43,5 @@ devenv /setup
 devenv /setup
 ```
 
-## <a name="see-also"></a>Siehe auch
- [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Debug-Befehls Zeilenschalter](../../ide/reference/devenv-command-line-switches.md)

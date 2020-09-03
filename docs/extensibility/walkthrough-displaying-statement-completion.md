@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904796"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
@@ -204,5 +204,5 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
 
 4. Wenn Sie zuerst "a" und dann "d" eingeben, wird eine Liste angezeigt, die "Addition" und "Anpassung" enthält. Beachten Sie, dass Addition ausgewählt ist. Wenn Sie ein anderes "d" eingeben, sollte die Liste nur "Addition" enthalten, das jetzt ausgewählt ist. Sie können einen Commit für "Addition" durchführen, indem Sie die **LEERTASTE**, die **Tab**-Taste oder die **Eingabe** Taste drücken oder die Liste durch Eingabe von ESC oder eines beliebigen anderen Schlüssels verwerfen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

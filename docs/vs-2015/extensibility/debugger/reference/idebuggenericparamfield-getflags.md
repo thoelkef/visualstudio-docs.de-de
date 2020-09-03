@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetFlags | Microsoft-Dokumentation
+title: 'Idebuggenericparamfield:: GetFlags | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fb4ecc3f09e4ffa8a8811867c9957ac685c76ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180706"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
@@ -39,16 +39,16 @@ int GetFlags(
   
 #### <a name="parameters"></a>Parameter  
  `pdwFlags`  
- [out] Gibt die Flags für diesen generischen Parameter zurück.  
+ vorgenommen Gibt die Flags für diesen generischen Parameter zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Flags enthalten Informationen zu verschiedenen besonderen Einschränkungen.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Flags enthalten Informationen zu verschiedenen speziellen Einschränkungen.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebuggenericparamfieldtype** -Objekt implementiert wird, das die [idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)  
@@ -68,5 +68,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

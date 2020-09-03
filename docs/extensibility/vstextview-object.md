@@ -1,5 +1,5 @@
 ---
-title: VSTextView-Objekt | Microsoft Docs
+title: Vstextview-Objekt | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81d5e02d6ec18f8561a83b414532a4b78def5c09
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697711"
 ---
-# <a name="vstextview-object"></a>VSTextView-Objekt
+# <a name="vstextview-object"></a>Vstextview-Objekt
 
-Die Textansicht ist ein Fenster, in dem Benutzer den Unicode-Text des Textpuffers anzeigen und bearbeiten können. Im Wesentlichen ist die Ansicht das, was die meisten Benutzer als Editor bezeichnen. Da die Ansicht durch verschiedene Textebenen (Wortumbruch, Umriss von Text usw.) vom Puffer getrennt ist, ist die Ansicht nicht garantiert eine exakte Darstellung des Textes im Puffer. Weitere Informationen zur Textansicht finden Sie [unter Zugreifen auf die Textansicht mithilfe der Legacy-API](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015).
+Die Textansicht ist ein Fenster, in dem Benutzer den Unicode-Text des Text Puffers anzeigen und bearbeiten können. Im Wesentlichen ist die Sicht, auf die die meisten Benutzer als Editor verweisen. Da die Ansicht durch verschiedene Textebenen (Zeilenumbruch, Gliederung von Text usw.) vom Puffer getrennt ist, ist die Sicht nicht garantiert eine exakte Darstellung des Texts im Puffer. Weitere Informationen zur Textansicht finden Sie unter Zugreifen auf die [Textansicht mithilfe der Legacy-API](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015).
 
-Die folgende Tabelle zeigt die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> Schnittstellen im Objekt.
+In der folgenden Tabelle werden die Schnittstellen im- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> Objekt angezeigt.
 
 |Schnittstelle|BESCHREIBUNG|
 |---------------|-----------------|
@@ -32,13 +32,13 @@ Die folgende Tabelle zeigt die <xref:Microsoft.VisualStudio.TextManager.Interop.
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|Standard-OLE-Schnittstelle.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Standard-OLE-Schnittstelle.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Standard-OLE-Schnittstelle.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Aktiviert die Erstellung zusammengesetzter Aktionen (d. h. Aktionen, die in einer einzigen Rückgängig-/Wiederholungseinheit gruppiert sind).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Stellt die grundlegenden Methoden zum Verwalten und Zugreifen auf die Ansicht bereit. `IVsTextView`ist nicht sicher eingefädelt.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Ermöglicht die Erstellung von Verbund Aktionen (d. h. Aktionen, die in einer einzelnen Rückgängig/Wiederholen-Einheit gruppiert sind).|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Stellt die grundlegenden Methoden zum Verwalten von und Zugreifen auf die Ansicht bereit. `IVsTextView` ist nicht Thread sicher.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Erstellt und verwaltet einen Fensterbereich.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Interagiert mit Textebenen.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Führt Vorgänge für die Ansicht aus einem anderen Thread aus.|
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Zahlen bearbeiten](https://www.microsoft.com/download/details.aspx?id=55984)
-- [VSTextBuffer-Objekt](../extensibility/vstextbuffer-object.md)
+- [Abbildungen bearbeiten](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Vstextbuffer-Objekt](../extensibility/vstextbuffer-object.md)

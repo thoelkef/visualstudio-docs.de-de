@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593108"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Registerkarte "System. Activities", Dialogfeld "Toolbox Elemente auswählen"
 
-Auf dieser Registerkarte des Dialog Felds **Toolbox Elemente auswählen** wird eine Liste der Windows Workflow Foundation (WF)-Aktivitäten,-Vorlagen und-Elemente angezeigt, die Ihnen zur Verfügung stehen. Um diese Liste anzuzeigen, wählen Sie **im Menü Extras die Option** **Toolbox Elemente** auswählen aus, oder klicken Sie mit der rechten Maustaste auf die **Toolbox** , und **Wählen Sie Elemente auswählen** aus, um das Dialogfeld **Toolbox Elemente auswählen** anzuzeigen, und wählen Sie dann die Registerkarte **System. Activities** aus. die Liste enthält die Workflow Aktivitäten aus System. Activities, System. Service Model. Activities und System. Activities. Core Allerdings werden nur die vom System bereitgestellten Aktivitäten und Aktivitäten, die über andere in der **Toolbox** angezeigte Assemblys hinzugefügt wurden, standardmäßig aktiviert. Zuletzt hinzugefügte Aktivitäten werden automatisch aktiviert und in der **Toolbox** angezeigt, wenn Sie im Dialogfeld auf **OK** klicken. Außerdem werden diese Elemente in der **Toolbox** unter einer neuen Kategorie angezeigt, die dem Namespace entspricht, in dem sich die Aktivität/das Element/die Vorlage befindet.
+Auf dieser Registerkarte des Dialog Felds **Toolbox Elemente auswählen** wird eine Liste der Windows Workflow Foundation (WF)-Aktivitäten,-Vorlagen und-Elemente angezeigt, die Ihnen zur Verfügung stehen. Um diese Liste anzuzeigen, wählen Sie **im Menü Extras die Option** **Toolbox Elemente** auswählen aus, oder klicken Sie mit der rechten Maustaste auf die **Toolbox** , und **Wählen Sie Elemente auswählen** aus, um das Dialogfeld **Toolbox Elemente auswählen** anzuzeigen, und wählen Sie dann die Registerkarte **System. Activities** Standardmäßig enthält die Liste Workflow Aktivitäten aus den Assemblys System. Activities, System. Service Model. Activities und System. Activities. Core. Presentation. Allerdings werden nur die vom System bereitgestellten Aktivitäten und Aktivitäten, die über andere in der **Toolbox** angezeigte Assemblys hinzugefügt wurden, standardmäßig aktiviert. Zuletzt hinzugefügte Aktivitäten werden automatisch aktiviert und in der **Toolbox** angezeigt, wenn Sie im Dialogfeld auf **OK** klicken. Außerdem werden diese Elemente in der **Toolbox** unter einer neuen Kategorie angezeigt, die dem Namespace entspricht, in dem sich die Aktivität/das Element/die Vorlage befindet.
 
 > [!WARNING]
 > Wenn Sie versuchen, eine Assembly hinzuzufügen, die keine Workflowaktivitäten enthält, wird ein Dialogfeld mit einer Fehlermeldung angezeigt, die besagt, dass die Assembly keine Aktivitäten enthält.
 
 Dieses Dialogfeld ist Projekt agnostisch, sodass die Registerkarte **System. Activities** weiterhin in einem eigenständigen XAML-oder einem nicht-Workflow-Projekttyp angezeigt wird.
 
-Die Filterung erfolgt auf jeder Registerkarte, und es ist nicht möglich, Workflow Aktivitäten über die Registerkarte **.NET-Komponente** hinzuzufügen. Fügen Sie Sie über die Registerkarte **System. Activities** selbst hinzu.
+Die Filterung erfolgt auf jeder Registerkarte, und es ist nicht möglich, Workflow Aktivitäten über die Registerkarte **.NET-Komponente** hinzuzufügen. Fügen Sie diese über die Registerkarte **System. Activities** selbst hinzu.
 
 Sie können alle Elemente, die nicht in der **Toolbox** angezeigt werden sollen, auf dieser Dialogfeld Registerkarte deaktivieren. Alternativ dazu können Sie auch die Menüoption zum **Löschen** mit der rechten Maustaste in der **Toolbox** verwenden. Wenn Sie auf eine Assembly verweisen, wird das Element nicht aus der **Toolbox**entfernt.
 

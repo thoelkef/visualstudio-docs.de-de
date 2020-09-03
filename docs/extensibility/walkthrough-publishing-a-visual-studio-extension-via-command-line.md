@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904667"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
@@ -30,7 +30,7 @@ VsixPublisher.exe ist das Befehlszeilen Tool zum Veröffentlichen von Visual Stu
 
 Veröffentlicht eine Erweiterung im Marketplace. Bei der Erweiterung kann es sich um eine VSIX, eine exe/MSI-Datei oder einen Link handeln. Wenn die Erweiterung bereits mit derselben Version vorhanden ist, wird die Erweiterung überschrieben. Wenn die Erweiterung nicht bereits vorhanden ist, wird eine neue Erweiterung erstellt.
 
-|Befehlsoptionen |Beschreibung |
+|Befehlsoptionen |BESCHREIBUNG |
 |---------|---------|
 |Nutzlast (erforderlich) | Entweder ein Pfad zur zu veröffentlichenden Nutzlast oder ein Link, der als "Weitere Info-URL" verwendet werden soll. |
 |publishmanifest (erforderlich) | Pfad zur zu verwendenden Veröffentlichungs Manifest-Datei. |
@@ -45,7 +45,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Erstellt einen Verleger im Marketplace. Protokolliert auch den Verleger bei zukünftigen Aktionen (z. b. beim Löschen/Veröffentlichen einer Erweiterung) auf dem Computer.
 
-|Befehlsoptionen |Beschreibung |
+|Befehlsoptionen |BESCHREIBUNG |
 |---------|---------|
 |Display Name (erforderlich) | Anzeige Name des Verlegers. |
 |PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
@@ -61,7 +61,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Löscht einen Verleger im Marketplace.
 
-|Befehlsoptionen |Beschreibung |
+|Befehlsoptionen |BESCHREIBUNG |
 |---------|---------|
 |PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
 |Personal Access Token (erforderlich) | Persönliches Zugriffs Token, das verwendet wird, um den Verleger zu authentifizieren. |
@@ -74,7 +74,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Löscht eine Erweiterung aus dem Marketplace.
 
-|Befehlsoptionen |Beschreibung |
+|Befehlsoptionen |BESCHREIBUNG |
 |---------|---------|
 |ExtensionName (erforderlich) | Der Name der zu löschenden Erweiterung. |
 |PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
@@ -88,7 +88,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Protokolliert einen Verleger auf dem Computer.
 
-|Befehlsoptionen |Beschreibung |
+|Befehlsoptionen |BESCHREIBUNG |
 |---------|---------|
 |personalaccesstoken (erforderlich | Persönliches Zugriffs Token, das verwendet wird, um den Verleger zu authentifizieren. |
 |PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
@@ -102,7 +102,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Protokolliert einen Verleger von dem Computer.
 
-|Befehlsoptionen |Beschreibung |
+|Befehlsoptionen |BESCHREIBUNG |
 |---------|---------|
 |PublisherName (erforderlich) | Der Name des Verlegers (z. b. der Bezeichner). |
 |ignoremissingpublisher | Gibt an, dass das Tool nicht fehlerhaft sein sollte, wenn der angegebene Verleger nicht bereits angemeldet ist. |

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft-Dokumentation
+title: 'IDebugDocumentTextEvents2:: onupdatetextattributes | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6eaa39ae3116a452488e80bf54c06ab4bde5cb64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148740"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Benachrichtigt dem debugpaket, Text-Attribute im Dokument aktualisiert wurden.  
+Benachrichtigt das Debugpaket, dass die Text Attribute im Dokument aktualisiert wurden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,14 +42,14 @@ int onUpdateTextAttributes( 
   
 #### <a name="parameters"></a>Parameter  
  `pos`  
- [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die angibt, in denen die Textattribute aktualisiert wurden.  
+ in Eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die angibt, wo die Text Attribute aktualisiert wurden.  
   
  `dwNumToUpdate`  
- [in] Gibt die Anzahl der Zeichen des Texts, die aktualisiert wurden.  
+ in Gibt die Anzahl der zu aktualisierenden Textzeichen an.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

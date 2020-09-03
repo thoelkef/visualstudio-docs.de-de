@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4448e9a1c65ccba4a9ae48d0271f9fd91fc011b6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662973"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Schreiben von Code zum Anpassen einer domänenspezifischen Sprache
@@ -73,7 +73,7 @@ In diesem Abschnitt wird gezeigt, wie Sie benutzerdefinierten Code verwenden, um
 
 - **Regeln und Ereignisse**. Sie können Regeln definieren, die immer dann ausgelöst werden, wenn bestimmte Änderungen vorgenommen werden. Regeln werden z. b. verwendet, um die Formen im Diagramm mit den Modellelementen auf dem neuesten Stand zu halten. Weitere Informationen finden Sie unter [reagieren auf und](../modeling/responding-to-and-propagating-changes.md)weitergeben von Änderungen.
 
-- **Serialisierung**. Der Speicher bietet eine Standardmethode zum Serialisieren der darin enthaltenen Objekte in eine Datei. Sie können die Regeln für die Serialisierung und Deserialisierung anpassen. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
+- **Serialisierung:** Der Speicher bietet eine Standardmethode zum Serialisieren der darin enthaltenen Objekte in eine Datei. Sie können die Regeln für die Serialisierung und Deserialisierung anpassen. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)

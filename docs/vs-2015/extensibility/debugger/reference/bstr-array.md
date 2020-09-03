@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 912537eb632768b3bcb6543dab098126ce02424f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153181"
 ---
-# <a name="bstrarray"></a>BSTR_ARRAY
+# <a name="bstr_array"></a>BSTR_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Eine Struktur, die ein Array von Zeichenfolgen beschreibt.  
+Eine-Struktur, die ein Array von Zeichen folgen beschreibt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,23 +42,23 @@ struct BSTR_ARRAY {
   
 ## <a name="terms"></a>Begriffe  
  dwCount  
- Anzahl der Zeichenfolgen in `Members` Array.  
+ Anzahl der Zeichen folgen im `Members` Array.  
   
  Member  
- Array von Zeichenfolgen.  
+ Array von Zeichen folgen.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zurückgegeben, die [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird von der [enumpersistedports](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) -Methode zurückgegeben.  
   
- [C++ nur] Jeder einzelnen Zeichenfolge muss freigegeben werden, mithilfe von `SysFreeString`, und die `Members` Array muss mit dem freigegeben `CoTaskMemFree`.  
+ [Nur C++] Jede einzelne Zeichenfolge muss mit freigegeben werden `SysFreeString` , und das `Members` Array muss mit freigegeben werden `CoTaskMemFree` .  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

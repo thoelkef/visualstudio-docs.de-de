@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826244"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
@@ -38,25 +38,25 @@ Umschließt das XML-Schemadefinitionstool (xsd.exe), das Schema- oder Klassendat
   
 - **AdditionalOptions**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
-     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Beispiel: „ */option1 /option2 /option#* “. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.  
+     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Beispiel: "*/option1/option2/Option #*". Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.  
   
 - **GenerateFromSchema**  
   
-  Optionaler **String**-Parameter.  
+  Optionaler **String** -Parameter.  
 
   Gibt die Typen an, die aus dem angegebenen Schema generiert werden.  
 
   Geben Sie einen der folgenden Werte an, von denen jeder einer XSD-Option entspricht.  
 
-  - **classes** -  **/classes**  
+  - **Klassen**  -  **/Classes**  
 
-  - **dataset** -  **/dataset**  
+  - **DataSet**  -  **/DataSet-Flags –**  
   
 - **Sprache**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt die Programmiersprache an, die für den generierten Code verwendet werden soll.  
   
@@ -64,7 +64,7 @@ Umschließt das XML-Schemadefinitionstool (xsd.exe), das Schema- oder Klassendat
   
 - **Namespace**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt den Laufzeitnamespace für die generierten Typen an.  
   
@@ -76,15 +76,15 @@ Umschließt das XML-Schemadefinitionstool (xsd.exe), das Schema- oder Klassendat
   
 - **SuppressStartupBanner**  
   
-     Optionaler **Boolean**-Parameter.  
+     Optionaler **boolescher** Parameter.  
   
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
 - **TrackerLogDirectory**  
   
-     Optionaler **String**-Parameter.  
+     Optionaler **String** -Parameter.  
   
      Gibt das Verzeichnis für das Nachverfolgungsprotokoll an.  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

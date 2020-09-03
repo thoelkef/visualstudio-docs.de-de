@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek | Microsoft Docs
+title: 'IDebugDocumentContext2:: Seek | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 435bb2d5402be06a5fcb3ff9fc99a5c5cb8cb3ab
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731751"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-Verschiebt den Dokumentkontext um eine bestimmte Anzahl von Anweisungen oder Zeilen.
+Verschiebt den Dokument Kontext um eine angegebene Anzahl von Anweisungen oder Zeilen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int Seek( 
 
 ## <a name="parameters"></a>Parameter
 `nCount`\
-[in] Die Anzahl der Anweisungen oder Zeilen, die je nach Dokumentkontext vorwärts verschoben werden sollen.
+in Die Anzahl der Anweisungen oder Zeilen, die je nach Dokument Kontext vorwärts verschoben werden.
 
 `ppDocContext`\
-[out] Gibt ein neues [IDebugDocumentContext2-Objekt](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) mit der neuen Position zurück.
+vorgenommen Gibt ein neues [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) -Objekt mit der neuen Position zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

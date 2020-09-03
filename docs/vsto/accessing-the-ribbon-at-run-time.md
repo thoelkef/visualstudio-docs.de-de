@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7c7fdda6234f1e98117cdb1bf047762ed9d4621a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255746"
 ---
 # <a name="access-the-ribbon-at-run-time"></a>Zugreifen auf das Menüband zur Laufzeit
@@ -31,7 +31,7 @@ ms.locfileid: "71255746"
 ## <a name="access-the-ribbon-by-using-the-globals-class"></a>Zugreifen auf das Menüband mithilfe der Globals-Klasse
  Sie können die `Globals`-Klasse verwenden, um von einer beliebigen Stelle im Projekt auf das Menüband in einem Projekt auf Dokumentebene oder in einem VSTO-Add-In-Projekt zuzugreifen.
 
- Weitere Informationen `Globals` zur-Klasse finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
+ Weitere Informationen zur- `Globals` Klasse finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
 
  Im folgenden Beispiel wird die`Globals`-Klasse für den Zugriff auf ein benutzerdefiniertes Menüband mit der Bezeichnung `Ribbon1` und zum Festlegen des Texts verwendet, der in einem Kombinationsfeld im Menüband für `Hello World` angezeigt wird.
 
@@ -60,6 +60,6 @@ ms.locfileid: "71255746"
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Übersicht über das Ribbon-Objektmodell](../vsto/ribbon-object-model-overview.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einem Menüband zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
 - [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
 - [Zugreifen auf einen Formular Bereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetServer | Microsoft-Dokumentation
+title: 'IDebugDefaultPort2:: GetServer | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a74a9e846532b119c5b72495c39226effdc94f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196272"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft eine Schnittstelle mit dem Server, dem auf diesen Port ist.  
+Diese Methode erhält eine Schnittstelle für den Server, auf dem sich dieser Port befindet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ int GetServer(
   
 #### <a name="parameters"></a>Parameter  
  `ppServer`  
- [out] Gibt ein Objekt, das die [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) Schnittstelle.  
+ vorgenommen Gibt ein Objekt zurück, das die Schnittstelle [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) implementiert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) wird von Visual Studio implementiert und steht für den Server, der der Port auf befindet.  
+## <a name="remarks"></a>Bemerkungen  
+ Der [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) wird von Visual Studio implementiert und stellt den Server dar, auf dem sich der Port befindet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -1,5 +1,5 @@
 ---
-title: Auflösen Mehrdeutigkeit (Dialogfeld) | Microsoft-Dokumentation
+title: Dialogfeld „Mehrdeutigkeit auflösen“ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b35d305bbd011adc02692cd7c9c687ac0bfc7d45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148793"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Mehrdeutigkeit auflösen (Dialogfeld)
@@ -44,5 +44,5 @@ Das Dialogfeld `Resolve Ambiguity` wird angezeigt, wenn die anzuzeigende Positio
  `Module`  
  Das Modul (EXE oder DLL), das den Objektcode für die Funktion enthält, wird angezeigt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Ausdrücke im Debugger](../debugger/expressions-in-the-debugger.md)

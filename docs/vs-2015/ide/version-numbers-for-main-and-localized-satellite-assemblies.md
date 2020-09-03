@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa064d875d5354ac4ae1fc5fdd8493c5efbbee01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663046"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Versionsnummern für Hauptassemblys und lokalisierte Satellitenassemblys
@@ -43,5 +43,5 @@ Die <xref:System.Resources.SatelliteContractVersionAttribute>-Klasse bietet Unte
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]
 ```
 
-## <a name="see-also"></a>Siehe auch
- [Wie die Common Language Runtime Assemblys ](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34) [Setting Assemblyattribute ](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e) [Security und lokalisierten Satellitenassemblys ](../ide/security-and-localized-satellite-assemblies.md) [Localizing Anwendungen ](../ide/localizing-applications.md) und [lokalisierte Anwendungen](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Wie die](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34) Common Language Runtime Assemblys nach Assemblys festlegt, die die Sicherheit von Assemblyattributen [Setting Assembly Attributes](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e) [und lokalisierte Satellitenassemblys](../ide/security-and-localized-satellite-assemblies.md) [lokalisieren](../ide/localizing-applications.md) [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)

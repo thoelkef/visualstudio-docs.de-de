@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
+title: 'Ieevisualizerservice:: getvaluedisplaystringcount | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c1a664594e55b8db21562a650c2c750668c2584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717990"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-Ruft die Anzahl der Wertzeichenfolgen ab, die für die angegebene Eigenschaft oder das angegebene Feld angezeigt werden sollen.
+Ruft die Anzahl der Wert Zeichenfolgen ab, die für die angegebene Eigenschaft oder das angegebene Feld angezeigt werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,13 +44,13 @@ int GetValueDisplayStringCount (
 
 ## <a name="parameters"></a>Parameter
 `displayKind`\
-[in] Wert aus der DisplayKind-Enumeration. [DisplayKind](../../../extensibility/debugger/reference/displaykind.md)
+in Der Wert aus der [displaykind](../../../extensibility/debugger/reference/displaykind.md) -Enumeration.
 
 `propertyOrField`\
-[in] Eine [IDebugField-Schnittstelle,](../../../extensibility/debugger/reference/idebugfield.md) die eine Eigenschaft oder ein Feld darstellt.
+in Eine [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle, die eine Eigenschaft oder ein Feld darstellt.
 
 `pcelt`\
-[out] Gibt die Anzahl der anzuzeigenden Wertzeichenfolgen zurück.
+vorgenommen Gibt die Anzahl der anzuzeigenden Wert Zeichenfolgen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905279"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Vorgehensweise: Bereitstellen erweiterter Gliederungs Unterstützung in einem Legacy Sprachdienst
@@ -27,7 +27,7 @@ Es gibt zwei Optionen für die Erweiterung der Gliederungs Unterstützung für I
 
 ### <a name="to-implement-an-editor-controlled-outline-region"></a>So implementieren Sie einen vom Editor kontrollierten Gliederungs Bereich
 
-1. Aufrufe `QueryService` für<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Aufrufe `QueryService` für <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
      Dies gibt einen Zeiger auf zurück <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 

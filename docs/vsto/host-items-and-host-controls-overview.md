@@ -37,10 +37,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255929"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Übersicht über Host Elemente und Host Steuerelemente
@@ -81,7 +81,7 @@ ms.locfileid: "71255929"
 
  Nachdem Sie ein Hostelement generiert haben, können Sie Aufgaben wie das Hinzufügen von Steuerelementen zu Dokumenten ausführen. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="host-controls"></a>Host Steuerelemente
+## <a name="host-controls"></a>Hoststeuerelemente
  Hoststeuerelemente erweitern verschiedene Benutzeroberflächenobjekte im Word- und Excel-Objektmodell, z. B. die Objekte `Microsoft.Office.Interop.Word.ContentControl` und <xref:Microsoft.Office.Interop.Excel.Range>.
 
  Die folgenden Hoststeuerelemente sind für Excel-Projekte verfügbar:
@@ -98,7 +98,7 @@ ms.locfileid: "71255929"
 
 - [Bookmark-Steuerelement](../vsto/bookmark-control.md)
 
-- [Inhalts Steuerelemente](../vsto/content-controls.md)
+- [ContentControl-Elemente](../vsto/content-controls.md)
 
 - [XMLNode-Steuerelement](../vsto/xmlnode-control.md)
 
@@ -108,7 +108,7 @@ ms.locfileid: "71255929"
 
   Die Beziehung zwischen einem Host Element und einem Host Steuerelement ähnelt der Beziehung zwischen einem Windows Form-und Windows Forms-Steuerelementen. Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement wird auf die gleiche Weise auf einem <xref:Microsoft.Office.Tools.Excel.Worksheet> -Hostelement platziert wie ein Textfeld-Steuerelement auf einem Windows Form. Die folgende Abbildung veranschaulicht die Beziehung zwischen Hostelementen und Hoststeuerelementen.
 
-  ![Beziehung zwischen Host Elementen und Host Steuerelementen](../vsto/media/hostitemscontrols.png "Beziehung zwischen Host Elementen und Host Steuerelementen")
+  ![Beziehung zwischen Hostelementen und Hoststeuerelementen](../vsto/media/hostitemscontrols.png "Beziehung zwischen Hostelementen und Hoststeuerelementen")
 
   Sie können auch Windows Forms-Steuerelemente in Office-Projektmappen verwenden, indem Sie sie direkt zur Word- und Excel-Dokumentoberfläche hinzufügen. Weitere Informationen finden Sie unter [Windows Forms-Steuerelemente in der Übersicht über Office-Dokumente](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
@@ -128,21 +128,21 @@ ms.locfileid: "71255929"
 
   Weitere Informationen darüber, wie Sie Dokumenten Hoststeuerelemente hinzufügen, finden Sie unter folgenden Themen:
 
-- [Vorgehensweise: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Gewusst wie: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md)
 
-- [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 
-- [Vorgehensweise: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Gewusst wie: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 
-- [Vorgehensweise: Hinzufügen von XmlMappedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Gewusst wie: Hinzufügen von XmlMappedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 
-- [Vorgehensweise: Word-Dokumenten Lesezeichen-Steuerelemente hinzufügen](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 
-- [Vorgehensweise: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
 
-- [Vorgehensweise: XMLNode-Steuerelemente zu Word-Dokumenten hinzufügen](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
+- [Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
 
-- [Vorgehensweise: XMLNodes-Steuerelemente zu Word-Dokumenten hinzufügen](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
+- [Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>Benennen von Host Steuerelementen
  Wenn Sie ein Hoststeuerelement aus der **Toolbox** in das Dokument ziehen, wird das Steuerelement automatisch nach dem Steuerelementtyp gefolgt von einer fortlaufenden Nummer benannt. Lesezeichen erhalten beispielsweise den Namen **Bookmark1**, **Bookmark2**usw. Wenn Sie zum Hinzufügen des Steuerelements die systemeigene Funktionalität von Word oder Excel verwenden, können Sie dem Steuerelement bei der Erstellung einen spezifischen Namen geben. Sie können die Steuerelemente auch umbenennen, indem Sie den Wert der **Name** -Eigenschaft im Fenster **Eigenschaften** ändern.
@@ -163,12 +163,12 @@ ms.locfileid: "71255929"
 > Vermeiden Sie es, Steuerelemente während des `Shutdown` -Ereignishandlerzeitraums des Dokuments oder Arbeitsblatts programmgesteuert zu entfernen. Die Benutzeroberflächenelemente sind nicht mehr verfügbar, wenn das `Shutdown` -Ereignis eintritt. Wenn Sie Steuerelemente vor dem Schließen der Anwendung entfernen möchten, können Sie Ihren Code einem anderen Ereignishandler hinzufügen, z. B. `BeforeClose` oder `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Programm für Host Steuerelement-Ereignisse
- Eine Möglichkeit, wie Office-Objekte von Hoststeuerelementen erweitert werden, ist das Hinzufügen von Ereignissen. Das <xref:Microsoft.Office.Interop.Excel.Range> -Objekt in Excel und das <xref:Microsoft.Office.Interop.Word.Bookmark> -Objekt in Word weisen z. B. keine Ereignisse auf, aber [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erweitert diese Objekte durch das Hinzufügen programmierbarer Ereignisse. Der Zugriff und die Programmierung in Abhängigkeit von diesen Ereignissen erfolgt auf die gleiche Weise wie der Zugriff auf Ereignisse von Windows Forms-Steuerelementen: über die Ereignis-Dropdownliste in Visual Basic und die Eigenschaftenseite in C#. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Programm für Ereignisse eines Name Drange-Steuer](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)Elements.
+ Eine Möglichkeit, wie Office-Objekte von Hoststeuerelementen erweitert werden, ist das Hinzufügen von Ereignissen. Das <xref:Microsoft.Office.Interop.Excel.Range> -Objekt in Excel und das <xref:Microsoft.Office.Interop.Word.Bookmark> -Objekt in Word weisen z. B. keine Ereignisse auf, aber [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erweitert diese Objekte durch das Hinzufügen programmierbarer Ereignisse. Der Zugriff und die Programmierung in Abhängigkeit von diesen Ereignissen erfolgt auf die gleiche Weise wie der Zugriff auf Ereignisse von Windows Forms-Steuerelementen: über die Ereignis-Dropdownliste in Visual Basic und die Eigenschaftenseite in C#. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Program mieren gegen Ereignisse eines NamedRange-Steuer](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)Elements.
 
 > [!NOTE]
-> Sie sollten die <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Excel.Application> -Objekts in Excel nicht auf **false**bezeichnet wird. Wenn Sie diese Eigenschaft auf **false** festlegen, kann Excel keine Ereignisse auslösen, auch nicht die Ereignisse von Hoststeuerelementen.
+> Sie sollten die <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Excel.Application> -Objekts in Excel nicht auf **false**bezeichnet wird. Wenn diese Eigenschaft auf **false** festgelegt wird, werden in Excel keine Ereignisse, einschließlich der Ereignisse von Host Steuerelementen, angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
