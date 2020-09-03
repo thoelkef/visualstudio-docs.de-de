@@ -1,5 +1,5 @@
 ---
-title: GUIDs und IDs von Visual Studio-Symbolleisten | Microsoft Docs
+title: GUIDs und IDs von Visual Studio-Symbolleisten | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,37 +17,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708226"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs von Visual Studio-Symbolleisten
-In diesem Thema werden die GUID- und ID-Werte der Symbolleisten, die in der integrierten Visual Studio-Entwicklungsumgebung (IDE) enthalten sind, und der darin enthaltenen Gruppen aufgezählt. Diese Werte werden in *.vsct-Dateien* definiert, die als Teil des Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
+In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, sowie die darin enthaltenen Gruppen. Diese Werte werden in *vsct* -Dateien definiert, die als Teil des Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
-> Viele der für Visual Studio verfügbaren Symbolleisten sind von Visual Studio nicht definiert, und ihre GUID- und ID-Werte sind nicht öffentlich. In diesem Thema werden nur Symbolleisten aufgeführt, die in Visual Studio SDK *.vsct-Dateien* definiert sind.
+> Viele der für Visual Studio verfügbaren Symbolleisten werden nicht von Visual Studio definiert, und ihre GUID-und ID-Werte sind nicht öffentlich. In diesem Thema werden nur Symbolleisten aufgelistet, die in den *vsct* -Dateien von Visual Studio SDK definiert sind.
 
- Weitere Informationen zum Arbeiten mit IDE-Objekten, die in *.vsct-Dateien* definiert sind, finden Sie unter Erweitern von [Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
+ Weitere Informationen zum Arbeiten mit IDE-Objekten, die in *vsct* -Dateien definiert sind, finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
 
- Die von der Visual Studio-IDE bereitgestellten `guidSHLMainMenu`Standardsymbolleisten verwenden `GUID:ID` die GUID , es sei denn, dies wird durch die Syntax anders angegeben.
+ Die Standard Symbolleisten, die von der Visual Studio-IDE bereitgestellt werden, verwenden die GUID `guidSHLMainMenu` , außer wenn anderweitig mithilfe der-Syntax angegeben wird `GUID:ID` .
 
 ## <a name="ide-toolbars"></a>IDE-Symbolleisten
- Die folgenden Symbolleisten werden von der Visual Studio-IDE bereitgestellt. Symbolleisten können angezeigt werden, indem Sie sie im Untermenü **Symbolleisten** im Menü **Extras** auswählen. Symbolleisten in Werkzeugfenstern sind in diesem Abschnitt nicht enthalten.
+ Die folgenden Symbolleisten werden von der Visual Studio-IDE bereitgestellt. Symbolleisten können angezeigt werden, indem Sie **im Menü Extras im** Untermenü **Toolbars** ausgewählt werden. Symbolleisten in Tool Fenstern sind nicht in diesem Abschnitt enthalten.
 
- Nur Gruppen können direkt von Symbolleisten absteigen. Um eine Gruppe hinzuzufügen, legen Sie das übergeordnete Element auf die GUID und DIE ID der Symbolleiste fest. Um einer Symbolleiste eine Schaltfläche hinzuzufügen, legen Sie das übergeordnete Element auf eine Gruppe auf der Symbolleiste fest.
+ Nur Gruppen können direkt von Symbolleisten abgeleitet werden. Um eine Gruppe hinzuzufügen, legen Sie das übergeordnete Element auf die GUID und die ID der Symbolleiste fest. Um einer Symbolleiste eine Schaltfläche hinzuzufügen, legen Sie das übergeordnete Element auf der Symbolleiste auf eine Gruppe fest.
 
 |Symbolleiste|id|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|Build|IDM_VS_TOOL_BUILD|
+|Entwickeln|IDM_VS_TOOL_BUILD|
 |Text-Editor|IDM_VS_TOOL_TEXTEDITOR|
-|Debug|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|
-|Debugspeicherort|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|
+|Debug|guidvsdebuggroup: IDM_DEBUG_TOOLBAR|
+|Debugspeicherort|guidvsdebuggroup: IDM_DEBUG_CONTEXT_TOOLBAR|
 
-### <a name="special-toolbars"></a>Spezielle Symbolleisten
- Diese Symbolleisten werden von der Visual Studio-IDE definiert, dienen jedoch speziellen Funktionen und hosten keine Befehlsgruppen.
+### <a name="special-toolbars"></a>Besondere Symbolleisten
+ Diese Symbolleisten werden von der Visual Studio-IDE definiert, Sie dienen jedoch spezialisierten Funktionen und dienen nicht zum Hosten von Befehls Gruppen.
 
 |Symbolleiste|id|
 |-------------|--------|
@@ -57,63 +57,63 @@ In diesem Thema werden die GUID- und ID-Werte der Symbolleisten, die in der inte
 |XML-Daten|IDM_VS_TOOL_DATA|
 
 ## <a name="groups-on-the-ide-toolbars"></a>Gruppen auf den IDE-Symbolleisten
- Um einer Standardsymbolleiste eine Schaltfläche hinzuzufügen, legen Sie eine der folgenden Gruppen als übergeordnete Gruppe fest. Die Gruppen werden nach übergeordneten Symbolleisten sortiert.
+ Wenn Sie einer Standard Symbolleiste eine Schaltfläche hinzufügen möchten, legen Sie eine der folgenden Gruppen als übergeordnetes Element fest. Die Gruppen werden nach übergeordneter Symbolleiste sortiert.
 
-### <a name="standard-toolbar-groups"></a>Standard-Symbolleistengruppen
+### <a name="standard-toolbar-groups"></a>Standard Symbolleisten Gruppen
 
-|name|id|
+|Name|id|
 |----------|--------|
 |Speichern/Öffnen|IDG_VS_TOOLSB_SAVEOPEN|
 |Ausschneiden/Kopieren|IDG_VS_TOOLSB_CUTCOPY|
 |Rückgängig/Wiederholen|IDG_VS_TOOLSB_UNDOREDO|
-|Ausführen/Bauen|IDG_VS_TOOLSB_RUNBUILD|
-|Suchen,|IDG_VS_TOOLSB_SEARCH|
+|Ausführen/erstellen|IDG_VS_TOOLSB_RUNBUILD|
+|Suchen|IDG_VS_TOOLSB_SEARCH|
 |Windows|IDG_VS_TOOLSB_WINDOWS|
 |Neue Fenster|IDG_VS_TOOLSB_NEWWINDOWS|
 |Laden/Speichern|IDG_VS_WINDOWUI_LOADSAVE|
 |Maßstab|IDG_VS_TOOLSB_GAUGE|
 
-### <a name="build-toolbar-groups"></a>Erstellen von Symbolleistengruppen
+### <a name="build-toolbar-groups"></a>Erstellen von Symbolleisten Gruppen
 
-|name|id|
+|Name|id|
 |----------|--------|
-|Build-Bar|IDG_VS_BUILDBAR|
+|Buildleiste|IDG_VS_BUILDBAR|
 |Abbrechen|IDG_VS_BUILD_CANCEL|
 
-### <a name="text-editor-toolbar-groups"></a>Texteditor-Symbolleistengruppen
+### <a name="text-editor-toolbar-groups"></a>Text-Editor-Symbolleisten Gruppen
 
-|name|id|
+|Name|id|
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
-|Indent|IDG_VS_EDITTOOLBAR_INDENT|
+|Einziehen|IDG_VS_EDITTOOLBAR_INDENT|
 |Comment|IDG_VS_EDITTOOLBAR_COMMENT|
 |Lesezeichen|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
-### <a name="debug-toolbar-groups"></a>Debugwerkzeugleistengruppen
+### <a name="debug-toolbar-groups"></a>Debug-Symbolleisten Gruppen
 
-|name|id|
+|Name|id|
 |----------|--------|
 |Ausführung|IDM_DEBUG_TOOLBAR|
 |Schrittweises Ausführen|IDG_DEBUG_TOOLBAR_STEPPING|
 |Überwachen|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
-### <a name="debug-location-toolbar-groups"></a>Debugposition Symbolleistengruppen
+### <a name="debug-location-toolbar-groups"></a>Symbolleisten Gruppen Debugspeicherort
 
-|name|id|
+|Name|id|
 |----------|--------|
 |Debugspeicherort|IDG_DEBUG_CONTEXT_TOOLBAR|
 
 ## <a name="tool-window-toolbars"></a>Symbolleisten des Toolfensters
- Symbolleisten können direkt in der IDE oder in Toolfenstern wie **dem Projektmappen-Explorer**angezeigt werden. Da Toolfenster nicht in *.vsct-Dateien* definiert sind, verfügen Toolfenster-Symbolleisten nicht über definierte Eltern. Stattdessen werden sie im Code platziert. Die folgende Tabelle zeigt die Symbolleisten, die in Symbolfenstern in der IDE angezeigt werden, sowie die darin enthaltenen Befehlsgruppen.
+ Symbolleisten können direkt in der IDE oder in Tool Fenstern (z. b. **Projektmappen-Explorer**) angezeigt werden. Da Tool Fenster nicht in *vsct* -Dateien definiert sind, haben Tool Fenster-Symbolleisten keine übergeordneten Elemente. Stattdessen werden Sie in den Code eingefügt. In der folgenden Tabelle werden die Symbolleisten angezeigt, die in den Tool Fenstern in der IDE angezeigt werden, sowie die Befehls Gruppen, die Sie enthalten.
 
 > [!NOTE]
-> Symbolleisten und Gruppen verwenden `guidSHLMainMenu`die GUID , sofern nicht anders angegeben, indem die GUID:ID-Syntax verwendet wird. Wenn eine GUID für eine Symbolleiste angegeben ist, gilt sie auch für die Gruppen, die von dieser Symbolleiste abstammen.
+> Symbolleisten und Gruppen verwenden die GUID `guidSHLMainMenu` , außer wenn Sie anderweitig mithilfe der GUID: ID-Syntax angegeben wird. Wenn eine GUID für eine Symbolleiste angegeben ist, gilt sie auch für die Gruppen, die von dieser Symbolleiste abgeleitet werden.
 
-|Werkzeugfenster|Symbolleiste|Gruppen|
+|Tool Fenster|Symbolleiste|Gruppen|
 |-----------------|-------------|------------|
-|Projektmappen-Explorer|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.. 5|
-|Server-Explorer|guid_SE_MenuGroup:IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
+|Projektmappen-Explorer|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.. 5@@|
+|Server-Explorer|guid_SE_MenuGroup: IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
 |Eigenschaften|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
 |Klassenansicht|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|
 |Klassenansicht|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
@@ -128,13 +128,13 @@ In diesem Thema werden die GUID- und ID-Werte der Symbolleisten, die in der inte
 |Aufgabenliste|IDM_VS_TOOL_TASKLIST|IDG_VS_TASKLIST_PROVIDERLIST|
 |Benutzeraufgaben|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|
 |Fehlerliste|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|
-|Aufrufbrowser|IDM_VS_TOOL_CALLBROWSER1.. 16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
-|Breakpoints|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
-|Disassemblierung|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
-|Speicher 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1.. 4<br /><br /> IDG_MEMORY_COLUMNS1.. 4|
-|Prozesse|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
+|Aufrufbrowser|IDM_VS_TOOL_CALLBROWSER1.. Uhr|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
+|Breakpoints|guidvsdebuggroup: IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
+|Disassemblierung|guidvsdebuggroup: IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
+|Arbeitsspeicher 1-4|guidvsdebuggroup: IDM_MEMORY_WINDOW_TOOLBAR1... 0:|IDG_MEMORY_EXPRESSION1.. 0:<br /><br /> IDG_MEMORY_COLUMNS1.. 0:|
+|Prozesse|guidvsdebuggroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Hinzufügen eines Menücontrollers zu einer Symbolleiste](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
-- [Hinzufügen einer Symbolleiste zu einem Toolfenster](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Hinzufügen eines Menü Controllers zu einer Symbolleiste](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
+- [Hinzufügen einer Symbolleiste zu einem Tool Fenster](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [GUIDs und IDs von Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
