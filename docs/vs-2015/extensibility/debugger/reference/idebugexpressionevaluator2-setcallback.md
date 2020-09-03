@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft-Dokumentation
+title: 'IDebugExpressionEvaluator2:: SetCallback | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d6f715bb33afe051cdccffbf3219e062b606f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179925"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ermöglicht die ausdrucksauswertung (EE) an die Rückrufschnittstelle, die die Debugger-Engine (DE) verwenden, lesen Sie die Metric-Einstellung.  
+Ermöglicht es der Ausdrucks Auswertung (EE), die Rückruf Schnittstelle anzugeben, die die Debugger-Engine (de) zum Lesen von Metrikeinstellungen verwendet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,16 +39,16 @@ int SetCallback (
   
 #### <a name="parameters"></a>Parameter  
  `pCallback`  
- [in] Die Schnittstelle, die für den Rückruf Einstellungen verwendet.  
+ in Schnittstelle, die für den Einstellungs Rückruf verwendet werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode stellt eine Schnittstelle für die Sitzung-Debug-Manager, mit denen eine ausdrucksauswertung Metric-Einstellung zu lesen. Es eignet sich für das Remotedebuggen zum Lesen von Metriken auf die [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Computer.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode stellt eine Schnittstelle zum sitzungsdebug-Manager bereit, der von einer Ausdrucks Auswertung zum Lesen von Metrikeinstellungen verwendet werden kann. Es ist beim Remote Debuggen hilfreich, um Metriken auf dem Computer zu lesen [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] .  
   
 ## <a name="example"></a>Beispiel  
- In den folgenden Beispielen wird gezeigt, wie diese Methode zum Implementieren einer **CEE** -Objekt, das macht die [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) Schnittstelle.  
+ In den folgenden Beispielen wird gezeigt, wie Sie diese Methode für ein **CEE** -Objekt implementieren, das die [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
@@ -75,5 +75,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

@@ -127,10 +127,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 71854388f3fb1c5eaea7d40ed2757af9cecacf1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543805"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
@@ -187,7 +187,7 @@ In diesem Artikel werden typische Verwendungsmöglichkeiten von Anmerkungen für
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     In diesem Beispiel stellt der Aufrufer einen Puffer von `size` Elementen für bereit `p1` .  `MyStringCopy`macht einige dieser Elemente gültig. Noch wichtiger ist, `_Null_terminated_` dass die Anmerkung in `PWSTR` bedeutet, dass `p1` im Post-State NULL-terminiert ist.  Auf diese Weise ist die Anzahl der gültigen Elemente immer noch klar definiert, aber eine bestimmte Element Anzahl ist nicht erforderlich.  
+     In diesem Beispiel stellt der Aufrufer einen Puffer von `size` Elementen für bereit `p1` .  `MyStringCopy` macht einige dieser Elemente gültig. Noch wichtiger ist, `_Null_terminated_` dass die Anmerkung in `PWSTR` bedeutet, dass `p1` im Post-State NULL-terminiert ist.  Auf diese Weise ist die Anzahl der gültigen Elemente immer noch klar definiert, aber eine bestimmte Element Anzahl ist nicht erforderlich.  
   
      Die `_bytes_` Variante gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise würden Zeichen folgen `char` die `_bytes_` Variante nur dann verwenden, wenn eine ähnliche Funktion, die verwendet, `wchar_t` wäre.  
   

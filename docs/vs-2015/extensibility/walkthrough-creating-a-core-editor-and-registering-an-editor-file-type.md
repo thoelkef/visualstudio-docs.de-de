@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Erstellen eines Core-Editors und Registrieren eines Editor-Datentyps | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,21 +11,21 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14296aa335ba6710d4d9eac8e5338af7463c0aac
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687632"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor
+# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Exemplarische Vorgehensweise: Erstellen eines Core-Editors und Registrieren eines Editordateityps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage zu erstellen, die beginnt die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kern-Editor, wenn eine Datei mit der Erweiterung .myext geladen wird.  
+In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein VSPackage erstellt wird, das den Kern-Editor startet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wenn eine Datei mit der Dateinamenerweiterung ". myext" geladen wird.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
- Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die Visual Studio-Paketprojekt-Vorlage  
+## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die Visual Studio-Paket-Projektvorlage  
  Die VSPackage-Projektvorlage finden Sie an drei verschiedenen Stellen im Dialogfeld **Neues Projekt** :  
   
 1. Unter Visual Basic-Erweiterungen. Die Standardsprache des Projekts ist Visual Basic.  
@@ -34,19 +34,19 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
   
 3. Unter den Erweiterungen für andere Projekttypen. Die Standardsprache des Projekts ist C++.  
   
-### <a name="to-create-the-vspackage"></a>Um das VSPackage zu erstellen.  
+### <a name="to-create-the-vspackage"></a>So erstellen Sie das VSPackage  
   
-- Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , und erstellen Sie eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage mit dem Namen `MyPackage`, wie unter [Exemplarische Vorgehensweise: Erstellen eines VSPackages Befehl im Menü](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , und erstellen Sie ein [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage mit dem Namen, wie unter Exemplarische Vorgehensweise `MyPackage` [: Erstellen eines Menübefehls "VSPackage](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)" beschrieben.  
   
-### <a name="to-add-the-editor-factory"></a>Die Editor-Factory hinzufügen  
+### <a name="to-add-the-editor-factory"></a>So fügen Sie die Editorfactory hinzu  
   
-1. Mit der rechten Maustaste die **"myPackage"** Projekt, zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **Klasse**.  
+1. Klicken Sie mit der rechten Maustaste auf das Projekt **myPackage** , zeigen Sie auf **Hinzufügen** und dann auf **Klasse**.  
   
-2. In der **neues Element hinzufügen** Dialogfeld stellen Sie sicher, dass die **Klasse** Vorlage ausgewählt ist, geben `EditorFactory.cs` für den Namen ein, und klicken Sie dann auf **hinzufügen** die Klasse zu Ihrem Projekt hinzufügen.  
+2. Stellen Sie im Dialogfeld **Neues Element hinzufügen** sicher, dass die **Klassen** Vorlage ausgewählt ist, geben `EditorFactory.cs` Sie für den Namen ein, und klicken Sie dann auf **Hinzufügen** , um die Klasse zu Ihrem Projekt hinzuzufügen.  
   
-     Die Datei EditorFactory.cs sollte automatisch geöffnet werden.  
+     Die EditorFactory.cs-Datei sollte automatisch geöffnet werden.  
   
-3. Verweisen Sie die folgenden Assemblys aus dem Code.  
+3. Verweisen Sie im Code auf die folgenden Assemblys.  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -69,9 +69,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
   
     ```  
   
-4. Fügen Sie eine GUID, die die `EditorFactory` -Klasse durch das Hinzufügen der `Guid` Attribut direkt vor der Klassendeklaration.  
+4. Fügen Sie der Klasse eine GUID hinzu, `EditorFactory` indem Sie das- `Guid` Attribut direkt vor der Klassen Deklaration hinzufügen.  
   
-     Sie können eine neue GUID generieren, mit dem Programm "guidgen.exe" zu den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Befehl ein, oder indem Sie auf **GUID erstellen** auf die **Tools** Menü. Die hier verwendete GUID ist nur ein Beispiel. Verwenden Sie es nicht in Ihrem Projekt.  
+     Sie können eine neue GUID generieren, indem Sie das Programm guidgen.exe an der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Eingabeaufforderung verwenden, oder indem Sie im Menü Extras **Tools** auf **GUID erstellen** klicken. Die hier verwendete GUID ist nur ein Beispiel. Verwenden Sie Sie nicht in Ihrem Projekt.  
   
     ```vb  
     <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
@@ -81,7 +81,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5. Fügen Sie in der Klassendefinition zwei private Variablen, um das übergeordnete Paket und ein Dienstanbieter enthalten.  
+5. Fügen Sie in der Klassendefinition zwei private Variablen hinzu, die das übergeordnete Paket und einen Dienstanbieter enthalten.  
   
     ```vb  
     Class EditorFactory  
@@ -98,7 +98,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
   
     ```  
   
-6. Fügen Sie einen öffentlichen Klasse-Konstruktor, der einen Parameter des Typs akzeptiert <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Fügen Sie einen öffentlichen Klassenkonstruktor hinzu, der einen Parameter vom Typ annimmt <xref:Microsoft.VisualStudio.Shell.Package> :  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -113,7 +113,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
     }  
     ```  
   
-7. Ändern der `EditorFactory` Klassendeklaration für die Ableitung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Schnittstelle.  
+7. Ändern `EditorFactory` Sie die Klassen Deklaration, um von der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Schnittstelle abzuleiten.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -124,11 +124,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
   
     ```  
   
-8. Mit der rechten Maustaste <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, klicken Sie auf **Schnittstelle implementieren**, und klicken Sie dann auf **Schnittstelle explizit implementieren**.  
+8. Klicken Sie mit der rechten Maustaste auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> **Schnittstelle implementieren**, und klicken Sie dann auf **Schnittstelle explizit implementieren**.  
   
-     Dadurch werden die vier Methoden, die in implementiert werden, müssen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Schnittstelle.  
+     Dadurch werden die vier Methoden hinzugefügt, die in der-Schnittstelle implementiert werden müssen <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> .  
   
-9. Ersetzen Sie den Inhalt der `IVsEditorFactory.Close`-Methode durch folgenden Code.  
+9. Ersetzen Sie den Inhalt der `IVsEditorFactory.Close`-Methode durch den nachstehenden Code.  
   
     ```vb  
     Return VSConstants.S_OK  
@@ -138,7 +138,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
     return VSConstants.S_OK;  
     ```  
   
-10. Ersetzen Sie den Inhalt von der `IVsEditorFactory.SetSite` durch den folgenden Code.  
+10. Ersetzen Sie den Inhalt von `IVsEditorFactory.SetSite` durch den folgenden Code.  
   
     ```vb  
     Me.serviceProvider = psp  
@@ -150,7 +150,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
     return VSConstants.S_OK;  
     ```  
   
-11. Ersetzen Sie den Inhalt der `IVsEditorFactory.MapLogicalView`-Methode durch folgenden Code.  
+11. Ersetzen Sie den Inhalt der `IVsEditorFactory.MapLogicalView`-Methode durch den nachstehenden Code.  
   
     ```vb  
     Dim retval As Integer = VSConstants.E_NOTIMPL  
@@ -173,7 +173,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
     return retval;  
     ```  
   
-12. Ersetzen Sie den Inhalt der `IVsEditorFactory.CreateEditorInstance`-Methode durch folgenden Code.  
+12. Ersetzen Sie den Inhalt der `IVsEditorFactory.CreateEditorInstance`-Methode durch den nachstehenden Code.  
   
     ```vb  
     Dim retval As Integer = VSConstants.E_FAIL          
@@ -318,22 +318,22 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
   
 13. Kompilieren Sie das Projekt, und stellen Sie sicher, dass keine Fehler vorliegen.  
   
-### <a name="to-register-the-editor-factory"></a>Um die Editor-Factory zu registrieren.  
+### <a name="to-register-the-editor-factory"></a>So registrieren Sie die Editorfactory  
   
-1. In **Projektmappen-Explorer**, doppelklicken Sie auf der Datei "Resources.resx", um ihn zu öffnen, die Tabelle, in dem der Eintrag **String1 ist** ausgewählten.  
+1. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei Resources. resx, um Sie in der Zeichen folgen Tabelle zu öffnen, in der der Eintrag **Zeichenfolge1 ausgewählt ist** .  
   
-2. Ändern Sie den Namen des Bezeichners zu `IDS_EDITORNAME` und der Text, der **"myPackage"-Editor.** Diese Zeichenfolge wird als Name des Editors angezeigt.  
+2. Ändern Sie den Namen des Bezeichners in `IDS_EDITORNAME` und den Text in **myPackage Editor.** Diese Zeichenfolge wird als Name des Editors angezeigt.  
   
-3. Öffnen Sie die VSPackage.resx-Datei, und fügen Sie eine neue Zeichenfolge, legen Sie den Namen **101** und der Wert, der `IDS_EDITORNAME`. Dadurch werden das Paket mit einer Ressourcen-ID auf die Zeichenfolge, die Sie gerade erstellt haben.  
+3. Öffnen Sie die Datei VSPackage. resx, und fügen Sie eine neue Zeichenfolge hinzu, und legen Sie den Namen auf **101** und den Wert auf fest `IDS_EDITORNAME` . Dadurch erhält das Paket eine Ressourcen-ID für den Zugriff auf die soeben erstellte Zeichenfolge.  
   
     > [!NOTE]
-    > Enthält die VSPackage.resx-Datei eine andere Zeichenfolge, die `name` -Attributsatz auf **101**, einen anderen eindeutigen, numerischen Wert ersetzen, hier und in die folgenden Schritte aus.  
+    > Wenn die Datei "VSPackage. resx" eine andere Zeichenfolge enthält, die für das- `name` Attribut auf **101**festgelegt ist, ersetzen Sie hier und in den folgenden Schritten durch einen anderen eindeutigen, numerischen Wert.  
   
-4. In **Projektmappen-Explorer**, öffnen Sie die Datei MyPackagePackage.cs.  
+4. Öffnen Sie in **Projektmappen-Explorer**die Datei MyPackagePackage.cs.  
   
-     Dies ist die Haupt-Paketdatei.  
+     Dies ist die Hauptpaket Datei.  
   
-5. Fügen Sie die folgenden Benutzerattribute unmittelbar vor der `Guid` Attribut.  
+5. Fügen Sie die folgenden Benutzerattribute direkt vor dem- `Guid` Attribut hinzu.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -347,9 +347,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
           ".myext", 32, NameResourceID = 101)]   
     ```  
   
-     Die <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Attribut ordnet die Dateierweiterung .myext Ihrer Editorfactory, damit jedes Mal, wenn eine Datei, die Erweiterung geladen wird, wird der Editorfactory aufgerufen wird.  
+     Das- <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Attribut ordnet die Dateierweiterung myext ihrer Editorfactory zu, sodass jedes Mal, wenn eine Datei mit dieser Erweiterung geladen wird, die Editorfactory aufgerufen wird.  
   
-6. Fügen Sie eine private Variable, die die `MyPackage` Klasse unmittelbar vor dem Konstruktor, und geben sie den Typ `EditorFactory`.  
+6. Fügen Sie der Klasse eine private Variable `MyPackage` direkt vor dem Konstruktor hinzu, und geben Sie Ihr den Typ `EditorFactory` .  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -359,7 +359,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
     private EditorFactory editorFactory;  
     ```  
   
-7. Suchen der `Initialize` Methode (möglicherweise müssen Sie Sie öffnen die `Package Members` ausgeblendeten Bereich), und fügen Sie den folgenden Code nach dem Aufruf von `base.Initialize()`.  
+7. Suchen `Initialize` Sie die-Methode (möglicherweise müssen Sie den ausgeblendeten `Package Members` Bereich öffnen), und fügen Sie den folgenden Code nach dem-Vorgang hinzu `base.Initialize()` .  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -376,25 +376,25 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
   
 8. Kompilieren Sie das Programm, und vergewissern Sie sich, dass keine Fehler vorliegen.  
   
-     Dieser Schritt wird die Editor-Factory registriert, in der experimentellen Registrierungsstruktur für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Wenn Sie aufgefordert werden, um die resource.h-Datei zu überschreiben, klicken Sie auf **OK**.  
+     In diesem Schritt wird die Editorfactory in der experimentellen Registrierungs Struktur für registriert [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Wenn Sie aufgefordert werden, die Datei "Resource. h" außer Kraft zu setzen, klicken Sie auf **OK**.  
   
-9. Erstellen Sie eine Beispieldatei, die mit dem Namen TextFile1.myext.  
+9. Erstellen Sie eine Beispieldatei mit dem Namen TextFile1. myext.  
   
-10. Drücken Sie **F5** zu eine Instanz von der experimentellen Instanz öffnen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+10. Drücken Sie **F5** , um eine Instanz des experimentellen zu öffnen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-11. In der experimentellen Instanz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]auf die **Datei** Startmenü **öffnen** , und klicken Sie dann auf **Datei**.  
+11. Zeigen Sie im experimentellen im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Menü **Datei** auf **Öffnen** , und klicken Sie dann auf **Datei**.  
   
-12. Suchen Sie TextFile1.myext, und klicken Sie dann auf **öffnen**.  
+12. Suchen Sie TextFile1. myext, und klicken Sie dann auf **Öffnen**.  
   
-     Die Datei sollte jetzt geladen werden.  
+     Die Datei sollte nun geladen werden.  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
- Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor behandelt eine Vielzahl von textbasierten Dateitypen und arbeitet eng mit Sprachdienste, geben Sie einen umfangreichen Satz von Features wie syntaxhervorhebung, Zuordnung von geschweiften Klammern und IntelliSense-Vervollständigung von Word und membervervollständigung Listen. Wenn Sie mit einem textbasierten Dateien arbeiten, können Sie die Kern-Editor, zusammen mit einem benutzerdefinierten Sprachdienst verwenden, die von Ihr bestimmte Dateitypen unterstützt.  
+ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kern-Editor verarbeitet eine breite Palette textbasierter Dateitypen und arbeitet eng mit Sprachdiensten zusammen, um einen umfangreichen Satz von Features wie Syntax Hervorhebung, übereinstimmende Klammern, IntelliSense-Wortvervollständigung und Element Vervollständigungs Listen bereitzustellen. Wenn Sie mit textbasierten Dateien arbeiten, können Sie den Kern-Editor zusammen mit einem benutzerdefinierten Sprachdienst verwenden, der Ihre spezifischen Dateitypen unterstützt.  
   
- Rufen Sie eine VSPackage kann die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durch Angabe einer Editor-Factory-Kern-Editor. Dieser Editorfactory wird jedes Mal verwendet, wenn eine Datei, die ihm zugeordneten geladen wird. Wenn die Datei Teil eines Projekts ist, wird die Kern-Editor automatisch aufgerufen, es sei denn, durch das VSPackage außer Kraft gesetzt. Allerdings, wenn die Datei außerhalb eines Projekts geladen wird, muss dann die Kern-Editor explizit durch das VSPackage aufgerufen werden.  
+ Ein VSPackage kann den Kern-Editor aufrufen, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] indem er eine Editorfactory bereitstellt. Diese Editorfactory wird immer dann verwendet, wenn eine Datei, die ihr zugeordnet ist, geladen wird. Wenn die Datei Teil eines Projekts ist, wird der Core-Editor automatisch aufgerufen, es sei denn, Sie wird durch das VSPackage überschrieben. Wenn die Datei jedoch außerhalb eines Projekts geladen wird, muss der Core-Editor von Ihrem VSPackage explizit aufgerufen werden.  
   
- Weitere Informationen zu den Kern-Editor, finden Sie unter [innerhalb der Kern-Editor](../extensibility/inside-the-core-editor.md).  
+ Weitere Informationen zum Kern-Editor finden Sie unter [im Kern-Editor](../extensibility/inside-the-core-editor.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [In der Kern-Editor](../extensibility/inside-the-core-editor.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Im Kern-Editor](../extensibility/inside-the-core-editor.md)   
  [Instanziieren des Core-Editors mit der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)

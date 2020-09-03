@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903817"
 ---
 # <a name="create-an-options-page"></a>Erstellen einer Optionsseite
@@ -245,7 +245,7 @@ In dieser exemplarischen Vorgehensweise wird eine einfache Seite Extras/Optionen
 
     ```
 
-     Dieser Code ruft <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> auf, um eine-Instanz zu erstellen oder abzurufen `OptionPageGrid` . `OptionPageGrid`Ruft <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> auf, um die Optionen zu laden, die öffentliche Eigenschaften sind.
+     Dieser Code ruft <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> auf, um eine-Instanz zu erstellen oder abzurufen `OptionPageGrid` . `OptionPageGrid` Ruft <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> auf, um die Optionen zu laden, die öffentliche Eigenschaften sind.
 
 2. Fügen Sie nun eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **mytoolsoptionscommand** hinzu, um den Wert anzuzeigen. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *MyToolsOptionsCommand.cs*.
 
@@ -266,6 +266,6 @@ In dieser exemplarischen Vorgehensweise wird eine einfache Seite Extras/Optionen
 
      Ein Meldungs Feld zeigt den aktuellen Wert von an `OptionInteger` .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Optionen und Options Seiten](../extensibility/internals/options-and-options-pages.md)

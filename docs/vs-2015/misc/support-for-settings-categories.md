@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für Einstellungskategorien | Microsoft-Dokumentation
+title: Unterstützung für Einstellungs Kategorien | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,10 +11,10 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689100"
 ---
 # <a name="support-for-settings-categories"></a>Unterstützung für Einstellungskategorien
@@ -51,7 +51,7 @@ Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integr
 > Der kanonische Name wird nicht in einer Benutzeroberfläche angezeigt. Er wird verwendet, um einen lesbaren Namen der Einstellungskategorie zuzuordnen, so wie ein programmatischer Bezeichner (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Das Attribut der Einstellungskategorie  
- Die <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> bestimmt die Zuordnung von Kategorien zu benutzerdefinierten einstellungspunkten im der **-Import- und Exportassistenten Einstellungen** durch Zuordnen einer Kategorie mit dem VSPackage, das es bereitstellt. Betrachten Sie das folgende Codefragment:  
+ Der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> bestimmt die Zuordnung von Kategorien zu benutzerdefinierten Einstellungs Punkten im **Assistenten zum Importieren und Exportieren von Einstellungen** , indem er eine Kategorie dem VSPackage zuordnet, das es bereitstellt. Betrachten Sie das folgende Codefragment:  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
@@ -60,8 +60,8 @@ Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integr
   
  Der Einstellungspunkt im **Assistent zum Importieren und Exportieren von Einstellungen**verfügt über den Namen „My Settings“. Wenn der Einstellungspunkt ausgewählt ist, wird die Beschreibung **Various Options**(Verschiedene Optionen) angezeigt. Der Name und die Beschreibung des Einstellungspunkts stammen aus den lokalisierten Zeichenfolgenressourcen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Erstellen einer Options Seite](../extensibility/creating-an-options-page.md)   
  [VSSDK-Beispiele](../misc/vssdk-samples.md)   
  [VSPackage-Status](../misc/vspackage-state.md)   
  [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

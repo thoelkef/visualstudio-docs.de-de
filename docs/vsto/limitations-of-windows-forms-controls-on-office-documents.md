@@ -182,7 +182,7 @@ Die folgenden Steuerelemente und Komponenten sind nicht in der **Toolbox**verfü
 
 Wenn Sie ein Office-Projekt auf Dokument Ebene erstellen, das ein vorhandenes Word-Dokument oder eine Excel-Arbeitsmappe verwendet, die ActiveX-Steuerelemente enthält, gehen die Funktionen der ActiveX-Steuerelemente nicht verloren. Es gibt jedoch keine Unterstützung für das Hinzufügen von neuen ActiveX-Steuerelementen zu Ihren Dokumenten aus Visual Studio. Wenn das Word-Dokument z. b. eine Schaltfläche aus der **Steuer** Element-Toolbox enthält, die ein Visual Basic for Applications-Makro (VBA) ausführt, wird das Makro weiter ausgeführt, nachdem das Dokument in einem Office-Projekt verwendet wurde. Es wird jedoch empfohlen, ActiveX-Steuerelemente und VBA-Makros zu entfernen und Sie durch Windows Forms Steuerelemente und verwalteten Code zu ersetzen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Übersicht über Windows Forms Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Sprachdienste und die Kern-Editor | Microsoft-Dokumentation
+title: Sprachdienste und der Kern-Editor | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180306"
 ---
 # <a name="language-services-and-the-core-editor"></a>Sprachdienste und der Core-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Editoren von Visual Studio werden häufig von einem Sprachdienst zugeordnet. Unter anderem bietet ein Sprachdienst, farbige syntaxmarkierung, Anweisungsvervollständigung, IntelliSense und textformatierung.  
+Editoren in Visual Studio sind häufig einem Sprachdienst zugeordnet. Unter anderem bietet ein Sprachdienst Syntax Farben, Anweisungs Vervollständigung, IntelliSense und Textformatierung.  
   
-## <a name="core-editors-and-document-data-objects"></a>Core-Editoren und Dokumentdatenobjekten  
- Wenn Sie die Kern-Editor zuzugreifen, Sie Dokumentdaten und dokumentenansichtsobjekten nicht erstellen. Die IDE erstellt und diesen beiden Objekten steuert, und Sie verarbeitet werden, indem Sie die entsprechenden Aufrufe in Ihrem Editor Factoryimplementierung machen abrufen.  
+## <a name="core-editors-and-document-data-objects"></a>Kern-Editoren und Dokument Datenobjekte  
+ Wenn Sie auf den Kern-Editor zugreifen, erstellen Sie keine Dokument Daten und Dokument Ansichts Objekte. Die IDE erstellt und steuert diese beiden Objekte, und Sie erhalten Handles, indem Sie die entsprechenden Aufrufe in der Editorfactory-Implementierung vornehmen.  
   
- Weitere Informationen finden Sie unter [ermitteln welcher Editor öffnet eine Datei in einem Projekt](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
+ Weitere Informationen finden Sie unter [bestimmen, welcher Editor eine Datei in einem Projekt öffnet](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
 ## <a name="language-services-and-the-core-editor"></a>Sprachdienste und der Core-Editor  
- Implementieren Sie einen Sprachdienst, können Sie steuern, wie Daten in der Dokumentenansicht angezeigt werden. Ein Sprachdienst, bietet Informationen und Verhaltensweisen, die für eine bestimmte Sprache, z. B. Visual C++ spezifisch sind. Beim Erstellen von eines Textpuffers und bestimmen die Dateierweiterung für das zu öffnende Dokument, bestimmt der Textpuffer den Sprachdienst, der mit dieser Dateierweiterung aus einem Registrierungsschlüssel, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors verknüpft ist \\{YourLanguageService GUID} \Extensions. Laden die Prozedur dann standard VSPackage lädt das VSPackage, und eine Instanz des Sprachdiensts wird erstellt.  
+ Durch Implementieren eines sprach Dienstanbieter können Sie steuern, wie Daten in der Dokument Ansicht angezeigt werden. Ein Sprachdienst stellt Informationen und Verhaltensweisen bereit, die für eine bestimmte Sprache spezifisch sind, z. b. Visual C++. Wenn Sie einen Text Puffer erstellen und die Dateinamenerweiterung für das Dokument ermitteln, das Sie öffnen, bestimmt der Text Puffer den Sprachdienst, der dieser Dateinamenerweiterung von einem Registrierungsschlüssel zugeordnet ist, HKEY_LOCAL_MACHINE \software\microsoft\editoren \\ {yourlanguageservice GUID} \extensions. Die standardmäßige VSPackage-Lade Prozedur lädt dann das VSPackage, und eine Instanz Ihres sprach Dienstanbieter wird erstellt.  
   
- Ein einfachen Sprachdiensts wird in der folgenden Abbildung angezeigt.  
+ Ein grundlegender Sprachdienst wird in der folgenden Abbildung dargestellt.  
   
- ![Sprachdienstmodell](../extensibility/media/vslanguageservicemodel.gif "VsLanguageServiceModel")  
-Core-Editoren und Sprachen Dienstobjekte  
+ ![Grafik zum Sprachdienstmodell](../extensibility/media/vslanguageservicemodel.gif "vslanguageservicemodel")  
+Kern-Editor und Sprachdienst Objekte  
   
- Das dokumentendatenobjekt für die Kern-Editor wird aufgerufen, einen Textpuffer und wird durch die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt. Das dokumentenansichtsobjekt eine Textansicht aufgerufen wird, und wird durch die <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> Objekt. Diese beiden Objekte arbeiten zusammen, über den Sprachdienst einen einheitlichen Überblick über die Kern-Editor angeben. Informationen aus dem Textpuffer und zeigt den Text in einem Dokumentfenster wird ein Code-Fenster aufgerufen. Das Dokument der Code-Fenster wird durch einen Codefenster-Manager verwaltet.  
+ Das Dokument Datenobjekt für den Kern-Editor wird als Text Puffer bezeichnet und durch das- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt dargestellt. Das Dokument Ansichts Objekt wird als Textansicht bezeichnet und wird durch das- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> Objekt dargestellt. Diese beiden Objekte arbeiten über den Sprachdienst zusammen, um eine einheitliche Ansicht des Kern Editors bereitzustellen. Informationen aus dem Text Puffer und der Textansicht werden in einem Dokument Fenster angezeigt, das als Code Fenster bezeichnet wird. Das Code Fenster Dokument wird von einem Code Fenster-Manager verwaltet.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
- [Einen Dienstkontext für die Sprache bereitstellt, mit der Legacy-API](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
- [Hosten von IntelliSense](../extensibility/intellisense-hosting.md)   
+ [Bereitstellen eines Sprachdienst Kontexts mithilfe der Legacy-API](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
+ [IntelliSense-Hosting](../extensibility/intellisense-hosting.md)   
  [Enthaltene Sprachen](../extensibility/contained-languages.md)   
  [Entwickeln eines Legacysprachdiensts](../extensibility/internals/developing-a-legacy-language-service.md)
