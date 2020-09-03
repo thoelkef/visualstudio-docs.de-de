@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f607d500bfcb8a745bfb129490d2c2b09c6b105c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666509"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Gewusst wie: Auswählen der zu verwendenden XML-Schemas
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Vorgehensweise: Auswählen der zu verwendenden XML-Schemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas" bereit. Der Schemacache enthält bekannte XML-Schemata, die für IntelliSense und zur Validierung von XML-Dokumenten verwendet werden.
@@ -32,13 +32,13 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas
 
 1. Öffnen Sie eine Datei im XML-Editor.
 
-2. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Schemas** auf die Schaltfläche.
+2. Klicken Sie im Eigenschaftenfenster des Dokuments im Feld **Schemas** auf die Schaltfläche.
 
-    Das Dialogfeld **XML-Schemas** wird angezeigt. Im Dialogfeld werden alle Schemas mit einer XSD-Erweiterung im Schema Cache (einschließlich Schemas, auf die in der Catalog. XML-Datei verwiesen wird) sowie jedes Schema, das in der aktuellen Projekt Mappe vorhanden ist, in Visual Studio geöffnet, auf das in einem `xsd:schemaLocation`-Attribut verwiesen wird oder auf das in der **Schemas** -Eigenschaft.
+    Das Dialogfeld **XML-Schemas** wird angezeigt. Im Dialogfeld werden alle Schemas mit einer XSD-Erweiterung im Schema Cache (einschließlich Schemas, auf die in der catalog.xml-Datei verwiesen wird) sowie jedes Schema, das in der aktuellen Projekt Mappe vorhanden ist, in Visual Studio geöffnet, auf das in einem Attribut verwiesen wird `xsd:schemaLocation` oder in der **Schemas** -Eigenschaft verwiesen wird, aufgelistet.
 
 3. Wählen Sie Schemata zu Validierungszwecken aus, indem Sie eine der folgenden Methoden verwenden:
 
-   - Wählen Sie ein im Dialogfeld **XML-Schemas** aufgelistetes Schema aus, klicken Sie auf die Spalte **verwenden** , und wählen Sie dann **dieses Schema verwenden**.
+   - Wählen Sie ein im Dialogfeld **XML-Schemas** aufgelistetes Schema aus, klicken Sie auf die Spalte **Verwendung**, und wählen Sie dann **Dieses Schema verwenden** aus.
 
      - oder -
 
@@ -46,11 +46,11 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas
 
 4. Klicken Sie auf **OK**.
 
-    Die Liste der ausgewählten Schemas wird zurück in die Eigenschaft **Schemas** Document kopiert.
+    Die Liste der ausgewählten **Schemata** wird zurück in die Schemas-Eigenschaft des Dokuments kopiert.
 
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>So fügen Sie dem Schemacache ein XML-Schema hinzu
 
-1. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Schemas** auf die Schaltfläche.
+1. Klicken Sie im Eigenschaftenfenster des Dokuments im Feld **Schemas** auf die Schaltfläche.
 
 2. Klicken Sie auf **Hinzufügen**.
 
@@ -64,14 +64,14 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas
 
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>So löschen Sie ein XML-Schema aus dem Schemacache
 
-1. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Schemas** auf die Schaltfläche.
+1. Klicken Sie im Eigenschaftenfenster des Dokuments im Feld **Schemas** auf die Schaltfläche.
 
-2. Wählen Sie das Schema aus, und klicken Sie dann auf **Entfernen**.
+2. Wählen Sie das zu entfernende Schema aus, und klicken Sie dann auf **Entfernen**.
 
      Das Schema wird aus dem In-Memory-Schemacache , jedoch nicht aus dem Dateisystem entfernt.
 
     > [!NOTE]
-    > Wenn Sie noch über ein `schemaLocation` Attribut oder einen übereinstimmenden `targetNamespace` einen Verweis auf das Schema haben, funktioniert die **Entfernung** in dieser Situation aufgrund der automatischen Zuordnung nicht. In diesem Fall wird empfohlen, dass Sie das Schema in der Spalte **Verwendung** als **nicht ausgewählte Schemas verwenden** .
+    > Wenn immer noch mit einem `schemaLocation`-Attribut oder einem entsprechenden `targetNamespace` auf das Schema verwiesen wird, funktioniert **Entfernen** aufgrund der automatischen Zuordnung in dieser Situation nicht. In diesem Fall sollten Sie das Schema in der Spalte **Verwendung** als **Ausgewählte Schemas nicht verwenden** markieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Schema Cache](../xml-tools/schema-cache.md) - [XML-Schemas (Dialog Feld](../xml-tools/xml-schemas-dialog-box.md) ) [XML-Editor](../xml-tools/xml-editor.md)

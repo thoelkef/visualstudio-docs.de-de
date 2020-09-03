@@ -1,5 +1,5 @@
 ---
-title: SccGetEvents-Funktion | Microsoft-Dokumentation
+title: Sccgetevents-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d975570334aeab7c6709db92f3240a8e8d06b131
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200114"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion ruft ein Statusereignis in der Warteschlange ab.  
+Diese Funktion Ruft ein Status Ereignis in der Warteschlange ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,32 +36,32 @@ SCCRTN SccGetEvents (
 ```  
   
 #### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
+ pvcontext  
+ in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.  
   
  lpFileName  
- [in, out] Der Puffer, in dem das Quellcodeverwaltungs-Plug-In für die zurückgegebenen Dateinamen (bis zu _MAX_PATH-Zeichen) versetzt.  
+ [in, out] Puffer, in dem das Quellcodeverwaltungs-Plug-in den zurückgegebenen Dateinamen einfügt (bis _MAX_PATH Zeichen).  
   
- lpStatus  
- [in, out] Gibt den Statuscode zurück (finden Sie unter [Datei Statuscode](../extensibility/file-status-code-enumerator.md) mögliche Werte).  
+ lpstatus  
+ [in, out] Gibt den Statuscode zurück (siehe [Dateistatus Code](../extensibility/file-status-code-enumerator.md) für mögliche Werte).  
   
- pnEventsRemaining  
- [in, out] Anzahl der Einträge in der Warteschlange verbleibt, nach dem Aufruf zurückgegeben. Wenn diese Zahl groß ist, könnten sich der Aufrufer zum Aufrufen der [SccQueryInfo](../extensibility/sccqueryinfo-function.md) um alle Informationen auf einmal abzurufen.  
+ pnetventsrestdauer  
+ [in, out] Gibt nach diesem-Befehl die Anzahl der in der Warteschlange verbleibenden Einträge zurück. Wenn diese Zahl groß ist, kann der Aufrufer den Aufruf von [sccqueryinfo](../extensibility/sccqueryinfo-function.md) durchsetzen, um alle Informationen gleichzeitig abzurufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|SCC_OK|Ruft Ereignisse erfolgreich war.|  
+|SCC_OK|Get-Ereignisse erfolgreich.|  
 |SCC_E_OPNOTSUPPORTED|Diese Funktion wird nicht unterstützt.|  
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|  
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Funktion wird aufgerufen, während der Verarbeitung im Leerlauf befindet, um festzustellen, ob alle statusaktualisierungen für Dateien unter quellcodeverwaltung stattgefunden haben. Das Quellcodeverwaltungs-Plug-in verwaltet er den Status aller Dateien, die er kennt, und wenn eine Änderung des Status finden Sie durch das plug-in, den Status und die dazugehörige Datei in einer Warteschlange gespeichert werden. Wenn `SccGetEvents` aufgerufen wird, wird im oberen Bereich Element der Warteschlange abgerufen und zurückgegeben wird. Diese Funktion ist beschränkt, nur zuvor zwischengespeicherten Informationen zurückgegeben werden sollen, und benötigen einen sehr schnellen Turnaround (d. h. keine Lesen des Datenträgers oder Fragen das Quellcode-Verwaltungssystem für den Status) Andernfalls kann die Leistung der IDE gestartet, kann es zu Leistungseinbußen.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Funktion wird während der Leerlauf Verarbeitung aufgerufen, um zu überprüfen, ob für Dateien unter Quell Code Verwaltung Statusaktualisierungen vorhanden sind. Das Quellcodeverwaltungs-Plug-in verwaltet den Status aller bekannten Dateien. Wenn eine Änderung des Status durch das Plug-in angegeben wird, werden der Status und die zugehörige Datei in einer Warteschlange gespeichert. Wenn `SccGetEvents` aufgerufen wird, wird das oberste Element der Warteschlange abgerufen und zurückgegeben. Diese Funktion ist so eingeschränkt, dass nur zuvor zwischengespeicherte Informationen zurückgegeben werden, und es muss sich um eine sehr schnelle Ablauf Steuerung (d. h. das Lesen des Datenträgers oder das Abrufen des Status des Quell Code Verwaltungssystems) Andernfalls kann die Leistung der IDE zu einer Herabstufung werden.  
   
- Ist kein Update Status Bericht, speichert das Quellcodeverwaltungs-Plug-in eine leere Zeichenfolge in den Puffer, der auf `lpFileName`. Andernfalls das plug-in speichert den vollständigen Pfadnamen der Datei für die die Statusinformationen geändert hat, und gibt den entsprechenden Statuscode zurück (einen der Werte finden Sie im [Datei Statuscode](../extensibility/file-status-code-enumerator.md)).  
+ Wenn keine Statusaktualisierung vorhanden ist, speichert das Quellcodeverwaltungs-Plug-in eine leere Zeichenfolge im Puffer, auf die von verwiesen wird `lpFileName` . Andernfalls speichert das Plug-in den vollständigen Pfadnamen der Datei, für die die Statusinformationen geändert wurden, und gibt den entsprechenden Statuscode zurück (einen der Werte, der im [Dateistatus Code](../extensibility/file-status-code-enumerator.md)ausführlich erläutert wird).  
   
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)   
  [Dateistatuscode](../extensibility/file-status-code-enumerator.md)

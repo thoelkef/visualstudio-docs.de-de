@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667828"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
@@ -62,13 +62,13 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 1. Fügen Sie der Domänen Klasse eine berechnete Domänen Eigenschaft hinzu. Legen Sie im Fenster **Eigenschaften** die folgenden Werte fest:
 
-     **IsBrowsable =** `False` **: Dadurch wird die Eigenschaft für den Benutzer** ausgeblendet.
+     **IsBrowsable =** `False` **: Hiermit wird die-Eigenschaft für den Benutzer** ausgeblendet.    
 
-     **Kind =** `Calculated` **: Dies bedeutet, dass Sie Code bereitstellen, mit dem der Wert berechnet wird** .
+     **Art =** `Calculated` **Dies bedeutet, dass Sie Code bereitstellen, der seinen Wert berechnet** .    
 
      **Name** für Beispiel **decoratorcontrol**
 
-     @No__t_1 `Boolean` **eingeben**
+     **Sorte** = `Boolean`
 
      Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -80,7 +80,7 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
     3. Wählen Sie in der **Filter-Eigenschaft**die Steuerelement Eigenschaft **decoratorcontrol**aus.
 
-    4. Geben Sie unter **Sichtbarkeits Einträge**`True` ein.
+    4. Geben Sie unter **Sichtbarkeits Einträge**ein `True` .
 
 3. Klicken Sie in der Symbolleiste Projektmappen-Explorer auf **alle Vorlagen transformieren** .
 
@@ -107,5 +107,5 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 8. Erstellen Sie die Projekt Mappe neu.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren von Formen und Connectors](../modeling/defining-shapes-and-connectors.md) [Festlegen eines Hintergrund Bilds in einem Diagramm](../modeling/setting-a-background-image-on-a-diagram.md) [navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md) [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

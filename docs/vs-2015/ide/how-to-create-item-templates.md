@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668074"
 ---
 # <a name="how-to-create-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) dieses Themas wird gezeigt, wie Sie eine Elementvorlage mithilfe des Assistenten zum **Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.
+Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) dieses Themas wird gezeigt, wie Sie eine Elementvorlage mithilfe des Assistenten zum **Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage aus mehreren Dateien besteht, finden Sie weitere Informationen unter Gewusst [wie: Erstellen von Element Vorlagen mit mehreren](../ide/how-to-create-multi-file-item-templates.md)Dateien.
 
  Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab, in vielen Fällen müssen Sie die VSTEMPLATE-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen. Im [zweiten Verfahren](#to-enable-the-item-template-to-be-used-in-a-store-project) in diesem Thema wird beschrieben, wie Sie diese Aufgabe ausführen.
 
@@ -38,7 +38,7 @@ Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template
 
 2. Fügen Sie dem Projekt ein Element hinzu, und ändern Sie dieses bei Bedarf.
 
-3. Ändern Sie die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Ändern Sie die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen finden Sie unter Gewusst [wie: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4. Klicken Sie im Menü **Datei** auf **Vorlage exportieren**.
 
@@ -50,10 +50,10 @@ Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template
 
 8. Geben Sie den Symboldateinamen, das Vorschaubild, den Vorlagennamen und die Vorlagenbeschreibung ein, und klicken Sie auf **Fertig stellen**.
 
-     Die Dateien für die Vorlage werden einer ZIP-Datei hinzugefügt und in das von Ihnen im Dialogfeld angegebene Verzeichnis kopiert. Der Standardspeicherort ist der Ordner **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Meine exportierten Vorlagen\\** .
+     Die Dateien für die Vorlage werden einer ZIP-Datei hinzugefügt und in das von Ihnen im Dialogfeld angegebene Verzeichnis kopiert. Der Standard Speicherort ist **. \Users \\<username \> \Documents\Visual Studio \<Version> \Meine exportierten \\ Vorlagen** Ordner.
 
     > [!WARNING]
-    > In älteren Version von Visual Studio ist der Standardspeicherort **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Templates\ItemTemplates**.
+    > In früheren Versionen von Visual Studio lautet der Standard Speicherort **. \Users \\<username \> \Documents\Visual Studio \<Version> \templates\itemtemplates**.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>So aktivieren Sie die Elementvorlage, die in einem Store-Projekt verwendet werden soll
 
@@ -67,7 +67,7 @@ Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template
 
     Ein Windows 8.1 Store-Projekt in C++ verwendet den Wert von `WinRT-Native-6.3`. Informationen zu Windows 10- und anderen Projekttypen finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md).
 
-    Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können die \<ProjectType > und \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)-> Elemente ändern, um andere Sprachen-und Projekttypen anzugeben.
+    Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können das \<ProjectType> -Element und das- \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> Element ändern, um andere Sprachen-und Projekttypen anzugeben.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -157,5 +157,5 @@ Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template
 
 8. Kopieren Sie die ZIP-Datei, und fügen Sie sie in dem Speicherort für die Benutzerelementvorlage ein. In Visual Studio 2015 ist ..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio 2015\Templates\ItemTemplates\\ das Standardverzeichnis. Weitere Informationen finden Sie unter „Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen“.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) Gewusst [wie: Erstellen von Element Vorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) [Visual Studio-Vorlagen Schema Referenz](../extensibility/visual-studio-template-schema-reference.md)

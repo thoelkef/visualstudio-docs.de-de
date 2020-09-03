@@ -18,24 +18,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 60f06aa64cf6a6b96f0c4d610fba1d20b794c55f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667200"
 ---
 # <a name="troubleshooting-service-references"></a>Problembehandlung bei Dienstverweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-In diesem Thema werden häufige Probleme aufgelistet, die beim Arbeiten mit [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] oder [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] verweisen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auftreten können.
+In diesem Thema werden häufige Probleme aufgelistet, die auftreten können, wenn Sie mit- [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] oder- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] verweisen in arbeiten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="error-returning-data-from-a-service"></a>Fehler beim Zurückgeben von Daten aus einem Dienst.
- Wenn Sie eine `DataSet` oder `DataTable` von einem Dienst zurückgeben, erhalten Sie möglicherweise die Ausnahme "das Kontingent für die maximale Größe für eingehende Nachrichten wurde überschritten". Standardmäßig wird die `MaxReceivedMessageSize`-Eigenschaft für einige Bindungen auf einen relativ kleinen Wert festgelegt, um das Risiko von Denial-of-Service-Angriffen einzuschränken. Sie können diesen Wert erhöhen, um die Ausnahme zu verhindern.
+ Wenn Sie einen `DataSet` oder `DataTable` von einem Dienst zurückgeben, erhalten Sie möglicherweise die Ausnahme "das Kontingent für die maximale Größe für eingehende Nachrichten wurde überschritten". Standardmäßig ist die- `MaxReceivedMessageSize` Eigenschaft für einige Bindungen auf einen relativ kleinen Wert festgelegt, um das Risiko von Denial-of-Service-Angriffen einzuschränken. Sie können diesen Wert erhöhen, um die Ausnahme zu verhindern.
 
  So beheben Sie diesen Fehler
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei app. config, um Sie zu öffnen.
+1. Doppelklicken Sie in **Projektmappen-Explorer**auf die app.config Datei, um Sie zu öffnen.
 
-2. Suchen Sie die `MaxReceivedMessageSize`-Eigenschaft, und ändern Sie Sie in einen größeren Wert.
+2. Suchen `MaxReceivedMessageSize` Sie die-Eigenschaft, und ändern Sie Sie in einen größeren Wert.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>In meiner Projekt Mappe wurde kein Dienst gefunden.
  Wenn Sie im Dialogfeld **Dienst Verweise hinzufügen** auf die Schaltfläche **ermitteln** klicken, wird mindestens ein WCF-Dienst Bibliotheksprojekt in der Projekt Mappe nicht in der Liste der Dienste angezeigt. Dies kann vorkommen, wenn der Projekt Mappe eine Dienst Bibliothek hinzugefügt wurde, die jedoch noch nicht kompiliert wurde.
@@ -54,12 +54,12 @@ In diesem Thema werden häufige Probleme aufgelistet, die beim Arbeiten mit [!IN
 2. Deaktivieren Sie auf der Registerkarte **Start Optionen** das Kontrollkästchen **NTLM-Authentifizierung** .
 
     > [!NOTE]
-    > Sie sollten die NTLM-Authentifizierung nur für Websites deaktivieren, die ausschließlich WCF-Dienste enthalten. Die Sicherheit für WCF-Dienste wird durch die Konfiguration in der Datei "Web. config" verwaltet. Dadurch ist die NTLM-Authentifizierung unnötig.
+    > Sie sollten die NTLM-Authentifizierung nur für Websites deaktivieren, die ausschließlich WCF-Dienste enthalten. Die Sicherheit für WCF-Dienste wird durch die Konfiguration in der web.config-Datei verwaltet. Dadurch ist die NTLM-Authentifizierung unnötig.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Die Einstellung für die Zugriffsebene für generierte Klassen hat keine Auswirkungen.
- Das Festlegen der Option **Zugriffsebene für generierte Klassen** im Dialogfeld **Dienst Verweise konfigurieren** auf **intern** oder **Friend** funktioniert möglicherweise nicht immer. Obwohl die-Option im Dialogfeld festgelegt werden muss, werden die resultierenden Unterstützungs Klassen mit der Zugriffsebene `Public` generiert.
+ Das Festlegen der Option **Zugriffsebene für generierte Klassen** im Dialogfeld **Dienst Verweise konfigurieren** auf **intern** oder **Friend** funktioniert möglicherweise nicht immer. Obwohl die-Option im Dialogfeld festgelegt werden muss, werden die resultierenden Unterstützungs Klassen mit der Zugriffsebene generiert `Public` .
 
- Dies ist eine bekannte Einschränkung für bestimmte Typen, z. b. solche, die mit dem <xref:System.Xml.Serialization.XmlSerializer> serialisiert werden.
+ Dies ist eine bekannte Einschränkung für bestimmte Typen, z. b. solche, die mithilfe von serialisiert werden <xref:System.Xml.Serialization.XmlSerializer> .
 
 ## <a name="error-debugging-service-code"></a>Fehler beim Debugging von Dienst Code
  Wenn Sie den Code für einen WCF-Dienst aus dem Client Code in Einzelschritten ausführen, erhalten Sie möglicherweise einen Fehler im Zusammenhang mit fehlenden Symbolen. Dies kann vorkommen, wenn ein Dienst, der Teil der Projekt Mappe war, verschoben oder aus der Projekt Mappe entfernt wurde.
@@ -78,25 +78,25 @@ In diesem Thema werden häufige Probleme aufgelistet, die beim Arbeiten mit [!IN
 
 4. Laden Sie das WCF-Dienstprojekt. Weitere Informationen finden Sie unter [NIB: Gewusst wie: Erstellen von Projektmappen mit mehreren Projekten](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5. Legen Sie im Dialogfeld **Configuration Manager** die aktive Projektmappenkonfiguration auf **Debuggen**fest. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
+5. Legen Sie im Dialogfeld **Configuration Manager** die aktive Projektmappenkonfiguration auf **Debuggen**fest. **Active solution configuration** Weitere Informationen finden Sie unter Gewusst [wie: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 
 6. Wählen Sie in **Projektmappen-Explorer**das WCF-Dienstprojekt aus.
 
 7. Klicken Sie im Menü **Erstellen** auf **neu erstellen** , um das WCF-Dienstprojekt neu zu erstellen.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services nicht im Browser angezeigt.
- Wenn versucht wird, eine XML-Darstellung der Daten in einem [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] anzuzeigen, interpretiert Internet Explorer die Daten möglicherweise nicht als RSS-Feed. Sie müssen sicherstellen, dass die Option zum Anzeigen von RSS-Feeds deaktiviert ist.
+ Wenn versucht wird, eine XML-Darstellung von Daten in einem anzuzeigen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , interpretiert Internet Explorer die Daten möglicherweise nicht als RSS-Feed. Sie müssen sicherstellen, dass die Option zum Anzeigen von RSS-Feeds deaktiviert ist.
 
  Deaktivieren Sie RSS-Feeds, um diesen Fehler zu beheben:
 
-1. Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.
+1. Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.
 
 2. Klicken Sie auf der Registerkarte **Inhalt** im Abschnitt **Feeds** auf **Einstellungen**.
 
 3. Deaktivieren Sie im Dialogfeld **Feed-Einstellungen** das Kontrollkästchen **Feed-Leseansicht** aktivieren, und klicken Sie dann auf **OK**.
 
-4. Klicken Sie auf **OK**, um das Dialogfeld **Internetoptionen** zu schließen.
+4. Klicken Sie auf **OK** , um das Dialogfeld **Internet Optionen** zu schließen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

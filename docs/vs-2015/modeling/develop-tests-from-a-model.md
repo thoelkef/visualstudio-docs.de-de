@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b9fec6954706fcecb1281650a8db3d85f08fbd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669791"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
@@ -59,7 +59,7 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
 - Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion folgendermaßen aussehen: Eingabe ist 4. Prüfen Sie, ob die Ausgabe 2 ist. Entwerfen Sie das Skript stattdessen folgendermaßen: Wählen Sie eine Eingabe. Multiplizieren Sie die Ausgabe mit sich selbst, und prüfen Sie, ob das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.
 
 #### <a name="linking-tests-to-use-cases"></a>Verknüpfen von Tests mit Anwendungsfällen
- Wenn Sie [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] zum Entwerfen und Ausführen der Tests verwenden, können Sie die Tests unter Anforderung, Anwendungsfall oder User Story Arbeitsaufgaben organisieren. Sie können diese Arbeitsaufgaben mit Anwendungsfällen im Modell verknüpfen. Auf diese Weise können Sie Änderungen der Anforderungen für die Tests schnell nachverfolgen und den Fortschritt der einzelnen Anwendungsfälle prüfen.
+ Wenn Sie [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] zum Entwerfen und Ausführen der Tests verwenden, können Sie die Tests unter Anforderung, Anwendungsfall oder User Story Arbeitsaufgaben organisieren. Sie können diese Arbeitselemente mit Anwendungsfällen im Modell verknüpfen. Auf diese Weise können Sie Änderungen der Anforderungen für die Tests schnell nachverfolgen und den Fortschritt der einzelnen Anwendungsfälle prüfen.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>So verknüpfen Sie Tests mit einem Anwendungsfall
 
@@ -67,15 +67,15 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
 
     Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter nach [Verfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
 
-2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Anwendungsfällen im Modell.
+2. Verknüpfen Sie das Anforderungsarbeitselemente mit einem oder mehreren Anwendungsfällen im Modell.
 
     Klicken Sie in einem Anwendungsfall Diagramm mit der rechten Maustaste auf einen Anwendungsfall, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**. Weitere Informationen finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).
 
 3. Fügen Sie der Testsammlung Testfälle hinzu, die die Anwendungsfälle überprüfen.
 
-   In der Regel ist jede User Story- oder Anforderungsarbeitsaufgabe mit mehreren Anwendungsfällen im Modell verknüpft, und jeder Anwendungsfall ist mit mehreren User Storys oder Anforderungen verknüpft. Das liegt daran, dass jede User Story oder Anforderung eine Reihe von Aufgaben abdeckt, die mehrere Anwendungsfälle entwickeln. In einer frühen Iteration des Projekts beispielsweise könnten Sie die grundlegende User Story entwickeln, in der ein Kunde Positionen aus einem Katalog auswählen und bestellen kann. In einer späteren Iteration könnte die Story so aussehen, dass der Benutzer beim Abschließen der Bestellung zahlt und der Lieferant das Geld erhält, nachdem er die Waren versendet hat.  Jede Story fügt der Nachbedingung des Anwendungsfalls zur Bestellung von Waren eine Klausel hinzu.
+   In der Regel ist jedes User Story- oder Anforderungsarbeitselement mit mehreren Anwendungsfällen im Modell verknüpft, und jeder Anwendungsfall ist mit mehreren User Storys oder Anforderungen verknüpft. Das liegt daran, dass jede User Story oder Anforderung eine Reihe von Aufgaben abdeckt, die mehrere Anwendungsfälle entwickeln. In einer frühen Iteration des Projekts beispielsweise könnten Sie die grundlegende User Story entwickeln, in der ein Kunde Positionen aus einem Katalog auswählen und bestellen kann. In einer späteren Iteration könnte die Story so aussehen, dass der Benutzer beim Abschließen der Bestellung zahlt und der Lieferant das Geld erhält, nachdem er die Waren versendet hat.  Jede Story fügt der Nachbedingung des Anwendungsfalls zur Bestellung von Waren eine Klausel hinzu.
 
-   Sie können separate Verknüpfungen von Anforderungen Kommentare zu den Klauseln der Nachbedingung erstellen, indem Sie diese Klauseln im Anwendungsfalldiagramm in separate Kommentare schreiben. Sie können jeden Kommentar mit einer Anforderungsarbeitsaufgabe und den Kommentar mit dem Anwendungsfall im Diagramm verknüpfen.
+   Sie können separate Verknüpfungen von Anforderungen Kommentare zu den Klauseln der Nachbedingung erstellen, indem Sie diese Klauseln im Anwendungsfalldiagramm in separate Kommentare schreiben. Sie können jeden Kommentar mit ein Anforderungsarbeitselement und den Kommentar mit dem Anwendungsfall im Diagramm verknüpfen.
 
 ### <a name="base-tests-on-the-requirements-types"></a>Basieren von Tests auf den Anforderungstypen
  Die Typen, das heißt die Klassen, Schnittstellen und Enumerationen, eines Anforderungsmodells beschreiben die Konzepte und Beziehungen im Hinblick darauf, wie Benutzer über ihr Geschäft denken und kommunizieren. Es schließt Typen aus, die sich nur mit dem internen Entwurf des Systems befassen.
@@ -117,7 +117,7 @@ Assert (countAfter == countBefore = 1);
 
  Sie können Tests mit einer Geschäftsregel verknüpfen, indem Sie den Kommentar mit einer Anforderungs- oder User Story-Arbeitsaufgabe verknüpfen, die Sie mit einer Testsammlung im [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] verknüpfen können. Weitere Informationen finden Sie unter Anfügen von [Test Fällen an Modellelemente](#Attaching).
 
- Leistung und andere Servicequalitätsanforderungen können in Kommentaren in Anwendungsfall-, Aktivitäts- oder Sequenzdiagrammen erwähnt werden. Sie können diese auch mit Anforderungsarbeitsaufgaben und ihren Testsammlungen verknüpfen.
+ Leistung und andere Servicequalitätsanforderungen können in Kommentaren in Anwendungsfall-, Aktivitäts- oder Sequenzdiagrammen erwähnt werden. Sie können diese auch mit AnforderungsArbeitselemente und ihren Testsammlungen verknüpfen.
 
 ### <a name="sequence-and-activity-diagrams-for-tests"></a>Sequenz- und Aktivitätsdiagramme für Tests
  Wenn die Anforderungs- oder Architekturmodelle Sequenz- oder Aktivitätsdiagramme umfassen, können Sie Tests schreiben, die den Diagrammen direkt folgen.
@@ -147,10 +147,10 @@ Assert (countAfter == countBefore = 1);
 
  Aus Testsicht kann ein Anforderungsmodell als eine Kurzschreibweise für die Tests betrachtet werden. Folglich ist es wichtig, die Beziehung zwischen Tests und Modell über das gesamte Projekt hinweg aufrechtzuerhalten.
 
-## <a name="Attaching"></a>Anfügen von Test Fällen an Modellelemente
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Anfügen von Test Fällen an Modellelemente
  Wenn das Projekt [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] verwendet, können Sie Tests mit den Elementen im Modell verknüpfen. Dadurch können Sie schnell die Tests finden, die von einer Änderung der Anforderungen betroffen sind, und nachverfolgen, in welchem Umfang eine Anforderung erfüllt wurde.
 
- Sie können Tests mit allen Arten von Elementen verknüpfen. Hier einige Beispiele:
+ Sie können Tests mit allen Arten von Elementen verknüpfen. Im Folgenden finden Sie einige Beispiele:
 
 - Verknüpfen Sie einen Anwendungsfall mit den Tests, die ihn ausführen.
 
@@ -168,11 +168,11 @@ Assert (countAfter == countBefore = 1);
 
      Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter nach [Verfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
 
-2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.
+2. Verknüpfen Sie das Anforderungsarbeitselement mit einem oder mehreren Elementen im Modell.
 
      Klicken Sie in einem Modellierungs Diagramm mit der rechten Maustaste auf ein Element, einen Kommentar oder eine Beziehung, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**. Weitere Informationen finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).
 
 3. Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md) - [Modell-Benutzer Anforderungen](../modeling/model-user-requirements.md) [Modellieren der Architektur der APP-Architektur](../modeling/model-your-app-s-architecture.md) [Analyse und-Modellierung](../modeling/analyze-and-model-your-architecture.md)

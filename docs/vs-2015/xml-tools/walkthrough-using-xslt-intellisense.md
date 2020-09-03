@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b65f2279270be0d5baef16d6d06e35a7fb0b854
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669540"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense
+# <a name="walkthrough-using-xslt-intellisense"></a>Exemplarische Vorgehensweise: Verwenden von XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSense verwendet wird, um die Werte einiger Attribute automatisch zu vervollständigen.
@@ -162,5 +162,5 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
 
      Die Liste der Präfixe wird in den `stylesheet-prefix`- und `result-prefix`-Attributen des `xsl:namespace-alias`-Elements angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [IntelliSense-Funktionen des XML-Editors](../xml-tools/xml-editor-intellisense-features.md)

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft-Dokumentation
+title: 'Ipropertyproxyeeside:: resolveassemblyref | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47c397746a82247a8cb1ee329d56004d013486de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199488"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Bestimmt die Position des angegebenen verwalteten Assemblyverweises.  
+Bestimmt den Speicherort des angegebenen verwalteten Assemblyverweises.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,27 +48,27 @@ int ResolveAssemblyRef(
   
 #### <a name="parameters"></a>Parameter  
  `assemName`  
- [in] Der Name der Assembly auflösen.  
+ in Der Name der Assembly, die aufgelöst werden soll.  
   
  `assemBytes`  
- [out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, enthält die Assemblybytes, die dem Verweis zugeordnet.  
+ vorgenommen Gibt ein [ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt zurück, das die dem Verweis zugeordneten Assemblybytes enthält.  
   
  `assemPdb`  
- [out] Gibt eine `IEEDataStorage` -Objekt, das das Symbol enthält Daten, die mit dieser Anforderung verknüpfte speichern.  
+ vorgenommen Gibt ein-Objekt zurück, `IEEDataStorage` das die diesem Verweis zugeordneten Symbol Speicherdaten enthält.  
   
  `assemLocation`  
- [out] Gibt den Speicherort des dieses Verweises zurück.  
+ vorgenommen Gibt den Pfad zum Speicherort dieses Verweises zurück.  
   
  `alr`  
- [out] Gibt einen Wert aus der [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Enumeration, der angibt, der des Speicherortes der Assembly des Verweises.  
+ vorgenommen Gibt einen Wert aus der [assemblylokresolution](../../../extensibility/debugger/reference/assemblylocresolution.md) -Enumeration zurück, der den Speicherort der Assembly dieses Verweises angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode ist nicht in der Regel von einem benutzerdefinierten ausdrucksauswertung implementiert.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode wird in der Regel nicht von einer benutzerdefinierten Ausdrucks Auswertung implementiert.  
   
-## <a name="see-also"></a>Siehe auch  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ipropertyproxyeeside](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
+ [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

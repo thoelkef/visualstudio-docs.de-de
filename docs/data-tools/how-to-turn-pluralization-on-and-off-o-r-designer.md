@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6675a136b2bbdc1ef19d90ee19ecf7497053bfe1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282046"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Vorgehensweise: Aktivieren/Deaktivieren der Pluralisierung (O/R-Designer)
@@ -38,7 +38,7 @@ Wenn Sie Datenbankobjekte mit Namen, die in s oder IES enden, von **Server-Explo
 
 5. Legen Sie die **Pluralisierung von Namen** auf **aktiviert**  =  **true** fest, um pluralisierungs Regeln auf die Klassennamen von Objekten anzuwenden, die dem **O/R-Designer**hinzugefügt wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

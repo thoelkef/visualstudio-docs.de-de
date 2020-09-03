@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3eebefeab6b78955b03d4546a60dd811f5e9ae4e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547653"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Unterstützte Visual Studio-Editionen für Visualisierungs &amp; Modellierungs-SDK
@@ -32,7 +32,7 @@ Im folgenden finden Sie Listen der Visual Studio-Editionen, die von [!INCLUDE[ds
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
 |Visual Studio Visualization and Modeling SDK|[Modellierungs-SDK-Download](https://www.microsoft.com/download/details.aspx?id=48148)|
 ## <a name="deployment-editions"></a>Bereitstellungseditionen
- [!INCLUDE[dsl](../includes/dsl-md.md)]von werden die folgenden Konfigurationen für die Bereitstellung der domänenspezifischen Sprachen unterstützt, die Sie erstellen:
+ [!INCLUDE[dsl](../includes/dsl-md.md)] von werden die folgenden Konfigurationen für die Bereitstellung der domänenspezifischen Sprachen unterstützt, die Sie erstellen:
 
 - Visual Studio Enterprise
 

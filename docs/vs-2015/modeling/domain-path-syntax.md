@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b25b47b5b711f09334501ed21abf06cb66402b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669738"
 ---
 # <a name="domain-path-syntax"></a>Domänenpfadsyntax
@@ -27,9 +27,9 @@ In DSL-Definitionen wird eine XPath-artige Syntax für die Suche nach bestimmten
 
  Ein Domänenpfad weist die folgende Form auf:
 
- *RelationshipName. PropertyName/! Spielen*
+ *Beziehungsname.Eigenschaftenname/!Rolle*
 
- ![Commentreferencessubjects-Verweis Beziehung](../modeling/media/dsl-reference.png "dsl_reference")
+ ![CommentReferencesSubjects-Verweisbeziehung](../modeling/media/dsl-reference.png "dsl_reference")
 
  Die Syntax durchläuft die Baumstruktur des Modells. Die Domänen Beziehung **commentreferencessubjects** in der obigen Abbildung hat z. b **. eine** betreffrolle. Das Pfad Segment **/! Subjett** gibt an, dass der Pfad für Elemente abgeschlossen ist, auf die über die **Themen** Rolle zugegriffen wird.
 
@@ -39,5 +39,5 @@ In DSL-Definitionen wird eine XPath-artige Syntax für die Suche nach bestimmten
 
  Der Name, den Sie für den Hop vom Element zum Link verwenden, ist der Wert von `Property Name` der Rolle. Der Name, den Sie für den Hop vom Link zum Element verwenden, ist der Zielrollenname.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Grundlagen von Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)

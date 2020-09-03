@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281629"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion
@@ -122,7 +122,7 @@ Für die erste Tabelle, die auf dem Formular abgelegt wird, wird standardmäßig
 
 1. Wählen Sie im **CustomersBindingNavigator** die Schaltfläche **Speichern** aus (die Schaltfläche mit dem Diskettensymbol).
 
-2. Ersetzen Sie die `CustomersBindingNavigatorSaveItem_Click`-Methode durch folgenden Code:
+2. Ersetzen Sie die `CustomersBindingNavigatorSaveItem_Click`-Methode durch den folgenden Code:
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
@@ -169,7 +169,7 @@ Der Befehl für das Abgleichen zugehöriger Daten lautet wie folgt:
 
 Drücken Sie **F5**, um die Anwendung auszuführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [How to: save data by using a transaction (Vorgehensweise: Speichern von Daten mithilfe einer Transaktion)](../data-tools/save-data-by-using-a-transaction.md)
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a44b551e5b2a0b145040dc13cb0e624134f56cf6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668166"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Gewusst wie: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)
@@ -42,5 +42,5 @@ Sie können Formen aus einem .NET-Klassendiagramm (CD-Datei) in andere Dokumente
 
    Sie können auch **Kopieren** anstelle von **Bild kopieren** auswählen. Mit **Kopieren** wird das Bild als Standardbitmap kopiert. Mit **Bild kopieren** wird das Bild als vektorbasiertes Bild kopiert. Dies ist für die meisten Office-Anwendungen besser geeignet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Drucken von Klassendiagrammen (Klassen-Designer)](../ide/how-to-print-class-diagrams-class-designer.md) Gewusst [wie: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

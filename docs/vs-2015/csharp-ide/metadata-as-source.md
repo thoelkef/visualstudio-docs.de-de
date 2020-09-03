@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b1d96224be13a12dcaadb394584f8441c7bd1934
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667514"
 ---
 # <a name="metadata-as-source"></a>Metadaten als Quelle
@@ -33,7 +33,7 @@ Mithilfe von Metadaten als Quelle können Sie Metadaten anzeigen, die als C#-Que
  Sie können Metadaten als Quelle entweder im Code-Editor oder im **Codedefinitionsfenster** anzeigen.
 
 ## <a name="viewing-metadata-as-source-in-the-code-editor"></a>Anzeigen von Metadaten als Quelle im Code-Editor
- Wenn Sie den Befehl **Gehe zu Definition** für ein Element ausführen, dessen Quellcode nicht verfügbar ist, wird ein Dokument mit Registerkarten im Code-Editor angezeigt, das eine Ansicht der Metadaten des betreffenden Elements in der Darstellung als Quelle enthält. Der Name des Typs wird auf der Registerkarte des Dokuments angezeigt, gefolgt von **[aus Metadaten]** .
+ Wenn Sie den Befehl **Gehe zu Definition** für ein Element ausführen, dessen Quellcode nicht verfügbar ist, wird ein Dokument mit Registerkarten im Code-Editor angezeigt, das eine Ansicht der Metadaten des betreffenden Elements in der Darstellung als Quelle enthält. Der Name des Typs wird auf der Registerkarte des Dokuments angezeigt, gefolgt von **[aus Metadaten]**.
 
  Wenn Sie beispielsweise den Befehl **Gehe zu Definition** für <xref:System.Console>ausführen, werden Metadaten für <xref:System.Console> im Code-Editor als C#-Quellcode angezeigt, die seiner Deklaration ähnlich sehen, jedoch ohne Implementierung.
 

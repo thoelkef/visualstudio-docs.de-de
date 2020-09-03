@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c590c88894c930f04caf0f7e8afd4eee298f077a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669946"
 ---
 # <a name="securing-applications"></a>Sichern von Anwendungen
@@ -29,7 +29,7 @@ Während bei den meisten Anwendungen die Sicherheitsprobleme gleich sind, bringt
 
  [Sicherheitsempfehlungen:](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Enthält Informationen zu verfügbaren Sicherheitsfeatures und -verfahren für die Arbeit mit Visual C++.
 
- [Nicht im Build: Sicherheit und Programmierung (C# und Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) enthält Informationen zu den drei wichtigsten Sicherheitsrisiken für Visual Basic und C# Entwickler: Berechtigungen, Webanwendungen und Visual Studio-Setup.
+ [Nicht im Build: Sicherheit und Programmierung (c# und Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) Enthält Informationen zu den drei wichtigsten Sicherheitsrisiken für Visual Basic-und c#-Entwickler: Berechtigungen, Webanwendungen und Visual Studio-Setup.
 
 ## <a name="securing-mobile-applications"></a>Sichern mobiler Anwendungen
  Durch die steigende Beliebtheit mobiler Geräte gewinnt auch die Sicherheit von Informationen und Daten auf diesen Geräten an Bedeutung.
@@ -56,5 +56,5 @@ Während bei den meisten Anwendungen die Sicherheitsprobleme gleich sind, bringt
 
  [Sicherheit in Windows Forms:](https://msdn.microsoft.com/library/932d438a-5285-46d8-a958-8c93d0ad6cae) Bietet eine Übersicht über die Implementierung von Sicherheit in Windows Forms.
 
-## <a name="see-also"></a>Siehe auch
- [Sicherheit](../ide/security-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Security](../ide/security-in-visual-studio.md)

@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1403beccdb6bf9b938787f62cb3da2e5bb5c259
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668122"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Gewusst wie: Erstellen und Entfernen von Projektabhängigkeiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erforderlich sein, bestimmte Projekte zuerst zu erstellen, um Code zu generieren, der von anderen Projekten verwendet wird. Wenn ein Projekt ausführbaren Code verarbeitet, der von einem anderen Projekt generiert wurde, wird auf das generierende Projekt als Projektabhängigkeit des verarbeitenden Projekts verwiesen. Solche Abhängigkeitsbeziehungen können im Dialogfeld **Projektabhängigkeiten** definiert werden.
+Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erforderlich sein, bestimmte Projekte zuerst zu erstellen, um Code zu generieren, der von anderen Projekten verwendet wird. Wenn ein Projekt ausführbaren Code verarbeitet, der von einem anderen Projekt generiert wurde, wird auf das generierende Projekt als Projektabhängigkeit des verarbeitenden Projekts verwiesen. Solche Abhängigkeitsbeziehungen können im Dialog Feld **Projekt Abhängigkeiten** definiert werden.
 
 ### <a name="to-assign-dependencies-to-projects"></a>So weisen Sie Projekten Abhängigkeiten zu
 
@@ -62,5 +62,5 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
 
 4. Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
 
-## <a name="see-also"></a>Siehe auch
- [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio ](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Compiling und erstellen ](../ide/compiling-and-building-in-visual-studio.md) [Understanding Buildkonfigurationen ](../ide/understanding-build-configurations.md) [NIB Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+## <a name="see-also"></a>Weitere Informationen
+ Erstellen [und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Kompilieren und](../ide/compiling-and-building-in-visual-studio.md) Erstellen von Buildkonfigurationen [Understanding Build Configurations](../ide/understanding-build-configurations.md) [NIB Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

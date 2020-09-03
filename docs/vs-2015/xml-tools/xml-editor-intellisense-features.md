@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cd10f9eb0e2899394788c3b19348892837426db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669469"
 ---
 # <a name="xml-editor-intellisense-features"></a>IntelliSense-Funktionen des XML-Editors
@@ -22,7 +22,7 @@ ms.locfileid: "72669469"
 Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio vollständige IntelliSense-Funktionen bereit. In diesem Abschnitt wird erläutert, wie IntelliSense mit XSD- (XML-Schemadefinitionssprache) und XSLT-Dokumenten verwendet werden kann.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in einem XSD-Dokument
- Nachdem ein Schema mit dem Dokument verknüpft ist, erhalten Sie eine Dropdown Liste mit den erwarteten Elementen, wenn Sie `"<"` eingeben, oder klicken Sie auf der Symbolleiste des XML-Editors auf die Schaltfläche **Objektmember-Liste anzeigen** . Weitere Informationen zum Zuordnen von Schemas zu Ihren XML-Dokumenten finden Sie unter über [Prüfung von XML](../xml-tools/xml-document-validation.md)-Dokumenten.
+ Nachdem dem Dokument ein Schema zugeordnet wurde, wird eine Dropdownliste erwarteter Elemente angezeigt, wenn Sie `"<"` eingeben oder auf der Symbolleiste des XML-Editors auf die Schaltfläche **Memberliste für Objekt anzeigen** klicken. Weitere Informationen zum Zuordnen von Schemas zu Ihren XML-Dokumenten finden Sie unter über [Prüfung von XML](../xml-tools/xml-document-validation.md)-Dokumenten.
 
  Wenn Sie SPACE in einem Starttag eingeben, erhalten Sie ebenfalls eine Dropdownliste mit allen Attributen, die dem aktuellen Element hinzugefügt werden können.
 
@@ -45,14 +45,14 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
 
 - Parameternamen für eine angegebene benannte Vorlage
 
-  Weitere Informationen finden Sie im Thema Exemplarische Vorgehensweise [: Verwenden von XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) .
+  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md).
 
 ## <a name="auto-completion"></a>Automatische Vervollständigung
  Durch den XML-Editor wird das Bearbeiten von XML erleichtert, weil die erforderliche XML-Syntax automatisch eingefügt wird. Angenommen, Sie geben folgendes Starttag ein:
 
  `<book>`
 
- Der XML-Editor fügt das Endtag ein und platziert den Cursor hinter dem Starttag. Im folgenden finden Sie ein Beispiel dafür ("&#124;" notiert die Cursorposition):
+ Der XML-Editor fügt das Endtag ein und platziert den Cursor hinter dem Starttag. Dies wird im folgenden Beispiel veranschaulicht („&#124;“ kennzeichnet die Cursorposition):
 
  `<book>`&#124;`</book>`
 
@@ -85,9 +85,9 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
 
  Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
-- Zusammengehörige Start- und Endtags.
+- Übereinstimmende Start- und Endtags
 
-- Ein beliebiges paar von spitzen Klammern ("\<" oder ">").
+- Jedes beliebige Paar aus eckigen Klammern: \<" or ">
 
 - Anfang und Ende von Kommentaren.
 
@@ -102,9 +102,9 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
 ## <a name="modifying-the-intellisense-options"></a>Ändern der IntelliSense-Optionen
  Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für Extras/Optionen geändert werden.
 
- Der Abschnitt **automatische Einfügung** der Seite **Verschiedenes** steuert das folgende Verhalten:
+ Der Abschnitt **Automatisch einfügen** auf der Seite **Verschiedenes** steuert das folgende Verhalten:
 
-|-Name|Beschreibung|
+|name|Beschreibung|
 |----------|-----------------|
 |Tags schließen|Fügt schließende Tags für neue Elemente ein.|
 |Attributanführungszeichen|Fügt beim Eingeben eines neuen Attributnamens Anführungszeichen für den Attributwert ein.|
@@ -114,9 +114,9 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
 
 1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.
 
-2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **sonstige**aus.
+2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **Verschiedenes** aus.
 
-3. Nehmen Sie Änderungen am Abschnitt " **automatische Einfügung** " vor, und klicken Sie auf **OK**.
+3. Nehmen Sie die gewünschten Änderungen im Abschnitt **Automatisch einfügen** vor, und klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Editor](../xml-tools/xml-editor.md) [mit IntelliSense](../ide/using-intellisense.md) Exemplarische Vorgehensweise [: Verwenden von XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
