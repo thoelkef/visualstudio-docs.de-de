@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e9f61c56dd7ff2a9c6c19afc20ed279a7fdf855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669375"
 ---
 # <a name="xml-schema-explorer"></a>XML-Schema-Explorer
@@ -39,7 +39,7 @@ Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor inte
 
   Der XML-Schema-Explorer stellt mit einer Strukturansicht eine hierarchische Ansicht des Schemasets bereit. Der XML-Schema-Explorer stellt auch Funktionen zu Suche, Filterung, Navigation und Sortierung bereit. Führen Sie einen der folgenden Schritte aus, um auf den XML-Schema-Explorer zuzugreifen:
 
-- Wenn Sie sich in der [Start Ansicht](../xml-tools/start-view.md)befinden, klicken Sie auf den Link **XML-Schema-Explorer** .
+- Wenn Sie sich in der [Ausgangsansicht](../xml-tools/start-view.md) befinden, klicken Sie auf den Link **XML-Schema-Explorer**.
 
 - Wenn Sie sich in der [Diagramm Ansicht](../xml-tools/graph-view.md) oder in der [Inhalts Modell Ansicht](../xml-tools/content-model-view.md) befinden und über Knoten im Arbeitsbereich verfügen, wählen Sie im Kontextmenü den XML-Schema-Explorer aus.
 
@@ -65,7 +65,7 @@ Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor inte
 ## <a name="selection-and-activation"></a>Auswahl und Aktivierung
  Klicken Sie im Schema-Explorer einmal auf einen Knoten, um ihn hervorzuheben und auszuwählen.
 
- Um einen Knoten zu aktivieren, doppelklicken Sie darauf, oder drücken Sie die **Eingabe** Taste, wenn der Knoten ausgewählt ist.
+ Doppelklicken Sie auf einen Knoten, oder markieren Sie einen Knoten und drücken Sie die **EINGABETASTE**, um einen Knoten zu aktivieren.
 
 - Durch das Aktivieren eines Knotens wird die Datei, in der dieser Knoten definiert ist, geöffnet (wenn sie nicht bereits geöffnet ist), und der Knoten wird in der Datei ausgewählt.
 
@@ -74,7 +74,7 @@ Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor inte
 - Beim Aktivieren eines Schemaset- oder Namespaceknotens geschieht nichts.
 
 ## <a name="draging-and-dropping-nodes"></a>Drag &amp; Drop von Knoten
- Sie können globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop in einer XSD-Designer-Ansicht ablegen. Wenn es sich bei der aktuellen Ansicht um die [Start Ansicht](../xml-tools/start-view.md)handelt, wird die [Diagramm Ansicht](../xml-tools/graph-view.md)geöffnet, wenn Sie einen Knoten auf die Ansicht ziehen. Wenn es sich bei der aktuellen Ansicht um die [Inhalts Modell Ansicht](../xml-tools/content-model-view.md) oder die Diagramm Ansicht handelt, wird die Ansicht beim Ablegen eines Knotens nicht geändert.
+ Sie können globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop in einer XSD-Designer-Ansicht ablegen. Wenn die aktuelle Ansicht die [Ausgangsansicht](../xml-tools/start-view.md) ist, wird die [Diagrammansicht](../xml-tools/graph-view.md) geöffnet, wenn Sie einen Knoten in die Ansicht ziehen. Wenn die aktuelle Ansicht die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) oder die „Diagrammansicht“ ist, ändert sich die Ansicht nicht, wenn Sie einen Knoten in der Ansicht ablegen.
 
  Wenn Sie Dateien in der Ansicht ablegen, werden alle globalen Knoten in der Datei dem [Arbeitsbereich des XSD-Designers](../xml-tools/xml-schema-designer-workspace.md)hinzugefügt. Wenn Sie Namespaces in der Ansicht ablegen, werden dem Arbeitsbereich alle globalen Knoten im Namespace hinzugefügt. Der Arbeitsbereich wird für alle Ansichten verwendet.
 
@@ -82,7 +82,7 @@ Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor inte
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-- [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md)
+- [Durchsuchen des Schema Satzes](../xml-tools/searching-the-schema-set.md)
 
 - [Sortieren, Filtern und Gruppieren](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)
 
@@ -90,5 +90,5 @@ Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor inte
 
 - [Integration von XML-Literalen in den XML-Schema-Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)
 
-## <a name="see-also"></a>Siehe auch
- [Gewusst wie: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Vorgehensweise: Hinzufügen von Knoten zum Arbeitsbereich aus dem XML-Schema-Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

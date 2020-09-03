@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: c4bba0b227321e30f86aa552add245195b34e3b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281902"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Mindestens eines der ausgewählten Datenbankobjekte gibt ein Schema zurück, das nicht mit dem Schema der Zielklasse übereinstimmt.
@@ -27,6 +27,6 @@ Wenn Sie Datenbankobjekte auf vorhandene Entitätsklassen ziehen, müssen die vo
 
 2. Wählen Sie ein Datenbankobjekt aus, das Daten zurückgibt, die mit dem Schema der Zielklasse übereinstimmen (die Klasse, auf der das Datenbankobjekt im **O/R-Designer**abgelegt wird).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

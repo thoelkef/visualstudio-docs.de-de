@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cce0a918b1b3e029846176832ab2feb74e3e9e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669836"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Direktivenprozessors
@@ -50,31 +50,31 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
 
 1. Erstellen Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein VSIX-Projekt.
 
-    - Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic** oder **C#Visual**, und erweitern Sie dann **Erweiterbarkeit**. Klicken Sie auf **VSIX-Projekt**.
+    - Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic** oder **Visual c#**, und erweitern Sie dann **Erweiterbarkeit**. Klicken Sie auf **VSIX-Projekt**.
 
 2. Legen Sie in **Source. Extension. vsixmanifest**den Inhaltstyp und die unterstützten Editionen fest.
 
     1. Wählen Sie im VSIX-Manifest-Editor auf der Registerkarte **Objekte** die Option **neu** aus, und legen Sie die Eigenschaften des neuen Elements fest:
 
-         **Inhaltstyp**  = **VSPackage**
+         **Inhaltstyp**  =  **VSPackage**
 
-         **Quell Projekt**  =  \<*das aktuelle Projekt* >
+         **Quell Projekt** = \<*the current project*>
 
     2. Klicken Sie auf **ausgewählte Editionen** , und überprüfen Sie die Installationstypen, für die der Direktivenprozessor verwendet werden soll.
 
 3. Fügen Sie eine PKGDEF-Datei hinzu, und legen Sie die Eigenschaften fest, die in die VSIX eingeschlossen werden sollen.
 
-    1. Erstellen Sie eine Textdatei, und nennen Sie Sie \<*AssemblyName*>. pkgdef.
+    1. Erstellen Sie eine Textdatei, und nennen Sie Sie \<*assemblyName*> . pkgdef.
 
-         \<*AssemblyName*> ist in der Regel mit dem Namen des Projekts identisch.
+         \<*assemblyName*> ist in der Regel mit dem Namen des Projekts identisch.
 
     2. Wählen Sie die Datei im Projektmappen-Explorer aus, und legen Sie die Eigenschaften wie folgt fest:
 
-         **Build-Aktion**  = **Inhalt**
+         **Buildvorgang** = **Inhalt**
 
-         **In Ausgabeverzeichnis kopieren**  = **immer kopieren**
+         **In Ausgabeverzeichnis kopieren**  =  **Immer kopieren**
 
-         **In VSIX einschließen**  = **true**
+         **In VSIX einschließen**  =  **True**
 
     3. Legen Sie den Namen der VSIX fest, und stellen Sie sicher, dass die ID eindeutig ist.
 
@@ -93,11 +93,11 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
 
 5. Fügen Sie dem Projekt die folgenden Verweise hinzu:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 1,0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \* . 1,0**
 
-    - **Microsoft. VisualStudio. TextTemplating. vshost. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating \* . vshost.. 1,0**
 
 6. Fügen Sie dem Projekt die benutzerdefinierte Direktivenprozessorklasse hinzu.
 
@@ -111,13 +111,13 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
 
 3. Doppelklicken Sie auf die VSIX-Datei. Der Installer für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen wird angezeigt.
 
-4. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Direktive besitzt das folgende Format:
+4. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Direktive besitzt das folgende Format:
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>So deinstallieren Sie den benutzerdefinierten Anweisungsprozessor oder deaktivieren Sie ihn vorübergehend
 
-1. Klicken Sie im **Menü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]** Extras auf **Erweiterungs-Manager**.
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** Klicken Sie im Menü Extras auf **Erweiterungs-Manager**.
 
 2. Wählen Sie die VSIX mit dem Direktivenprozessor aus, und klicken Sie dann auf **deinstallieren** oder **Deaktivieren**.
 
@@ -128,7 +128,7 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
 
 - Die `IsDirectiveSupported`-Methode muss `true` zurückgeben, wenn der Name der `CustomDirective` an sie übergeben wird.
 
-- Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt wird, aber das System die Installation nicht zulässt, löschen Sie die Erweiterung aus **%LocalAppData%\microsoft\visualstudio \\ \* 0 \ Extensions \\** .
+- Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt wird, aber das System die Installation nicht zulässt, löschen Sie die Erweiterung aus **%LocalAppData%\microsoft\visualstudio \\ \* 0 \ Extensions \\ **.
 
 - Öffnen Sie die VSIX-Datei, und überprüfen Sie den Inhalt. Ändern Sie die Dateierweiterung in .zip, um die Datei zu öffnen. Vergewissern Sie sich, dass sie die DLL-, PKGDEF- und extension.vsixmanifest-Dateien enthält. Die extension.vsixmanifest-Datei sollte die entsprechende Liste im Knoten "SupportedProducts" und einen Knoten "VsPackage" unter dem Knoten "Inhalt" enthalten:
 
@@ -160,15 +160,15 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
  Diese Methode zum Installieren eines benutzerdefinierten Anweisungsprozessors wird am seltensten verwendet. Bei dieser Methode ist das Aktivieren und Deaktivieren des Direktivenprozessors komplizierter, und der Direktivenprozessor kann nicht an andere Benutzer verteilt werden.
 
 > [!CAUTION]
-> Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie daher unbedingt alle wichtigen Daten auf dem Computer sichern.
+> Ein fehlerhaftes Bearbeiten der Registrierung kann eine schwerwiegende Beschädigung des Systems zur Folge haben. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie daher unbedingt alle wichtigen Daten auf dem Computer sichern.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>So registrieren Sie einen Anweisungsprozessor durch Festlegen eines Registrierungsschlüssels
 
-1. Führen Sie aus `regedit`.
+1. Führen Sie `regedit` aus.
 
 2. Navigieren Sie in regedit zum folgenden Eintrag:
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ texttemplating\directiveprozessoren**
+    **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* . 0 \ texttemplating\directiveprozessoren**
 
     Wenn Sie den Direktivenprozessor in der Testversion von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installieren möchten, fügen Sie "Exp" nach "11.0" ein.
 
@@ -186,19 +186,19 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
 
    Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
-|-Name|Geben Sie Folgendes ein:|Daten|
+|Name|Typ|Daten|
 |----------|----------|----------|
-|(Standard)|REG_SZ|(Wert nicht festgelegt)|
-|Klasse|REG_SZ|**\<Namespace Name >. \<Class Name >**|
-|CodeBase|REG_SZ|**\<Your Pfad > \\ < Ihres Assemblynamens \>**|
+|(Standardwert)|REG_SZ|(Wert nicht festgelegt)|
+|Klasse|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|CodeBase|REG_SZ|**\<Your Path>\\<Sie den Assemblynamen\>**|
 
  Wenn die Assembly im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:
 
-|-Name|Geben Sie Folgendes ein:|Daten|
+|Name|Typ|Daten|
 |----------|----------|----------|
-|(Standard)|REG_SZ|(Wert nicht festgelegt)|
-|Klasse|REG_SZ|\<**Sie den voll qualifizierten Klassennamen** >|
-|Assembly|REG_SZ|\<**Sie den Assemblynamen im GAC** >|
+|(Standardwert)|REG_SZ|(Wert nicht festgelegt)|
+|Klasse|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Assembly|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen](../modeling/creating-custom-t4-text-template-directive-processors.md)

@@ -14,18 +14,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669676"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie Modellierungs Diagramme in schreibgeschützten Formaten speichern, damit Sie Sie für Projekt beteiligte, Benutzer oder Projektteam Mitglieder freigeben können, die nicht die gleiche Version von Visual Studio verwenden.
+In Visual Studio können Sie Modellierungsdiagramme in schreibgeschützten Formaten speichern, damit Sie sie für Projektbeteiligte, Benutzer oder Projektteammitglieder freigeben können, die nicht die gleiche Version von Visual Studio verwenden.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>So kopieren Sie ein Diagramm oder einen Teil eines Diagramms in eine andere Anwendung
 
@@ -45,9 +45,9 @@ In Visual Studio können Sie Modellierungs Diagramme in schreibgeschützten Form
 
 2. Wählen Sie in der Liste **Name** die Option **Microsoft XPS Document Writer**aus, und klicken Sie dann auf **OK**.
 
-3. Speichern Sie die Datei im Dialogfeld **Datei speichern** unter als **XPS-Dokument Datei (\*. Xps)** .
+3. Speichern Sie die Datei im Dialogfeld **Datei speichern** unter als **XPS-Dokument Datei ( \* . Xps)** .
 
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md) [-Freigabe Modelle und Exportieren von Diagrammen](../modeling/share-models-and-exporting-diagrams.md)

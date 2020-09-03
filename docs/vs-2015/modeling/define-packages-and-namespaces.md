@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 657bb91295134352fb00649ad06f59e34593c578
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669903"
 ---
 # <a name="define-packages-and-namespaces"></a>Definieren von Paketen und Namespaces
@@ -28,26 +28,26 @@ In Visual Studio ist ein *Paket* ein Container für die Definitionen von UML-Ele
 
  Im UML-Modell-Explorer werden alle Definitionen in einem Paket unter dem Paket geschachtelt. Das UML-Modell ist eine Art von Paket und bildet den Stamm der Struktur.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-topic"></a>In diesem Thema
  [Namespaces](#Namespaces)
 
  [Erstellen und Anzeigen von Paketen](#Packages)
 
- [Erstellen von Modellelementen innerhalb von Paketen](#Elements)
+ [Erstellen von Modellelementen in Paketen](#Elements)
 
- [Verschieben von Elementen in oder aus einem Paket](#Moving)
+ [Verschieben von Elementen in Pakete und aus Paketen](#Moving)
 
  [Einfügen von Elementen in ein Paket](#Pasting)
 
- [Importieren von Beziehungen zwischen Paketen](#Import)
+ [Importbeziehungen zwischen Paketen](#Import)
 
- [Verweise von einem Namespace auf einen anderen](#References)
+ [Verweise von einem Namespace auf einen anderen Namespace](#References)
 
  [Eigenschaften von Paketen](#Properties)
 
-## <a name="Namespaces"></a>Namespaces
+## <a name="namespaces"></a><a name="Namespaces"></a> Namespaces
  Mit Paketen lässt sich Arbeit in unterschiedliche Bereiche aufteilen. Jedes Paket definiert einen Namespace, damit keine Konflikte zwischen Namen auftreten, die in anderen Paketen definiert sind.
 
  Die Eigenschaft für den qualifizierten Namen jedes Elements ist der qualifizierte Name des Pakets, zu dem es gehört, gefolgt vom eigenen Namen des Elements. Wenn der Name des Pakets `MyPackage` lautet, lautet der qualifizierte Name einer Klasse in dem Paket beispielsweise `MyPackage::MyClass`. Da jedes Element in einem Modell enthalten ist, beginnt jeder qualifizierte Name mit dem Namen des Modells.
@@ -58,7 +58,7 @@ In Visual Studio ist ein *Paket* ein Container für die Definitionen von UML-Ele
 
  Pakete sind Container. Wenn Sie ein Paket verschieben oder löschen, werden die Klassen, Pakete und andere im Paket definierten Elemente ebenfalls verschoben bzw. gelöscht. Das Gleiche gilt für andere Elemente, die Namespaces definieren.
 
-## <a name="Packages"></a>Erstellen und Anzeigen von Paketen
+## <a name="creating-and-viewing-packages"></a><a name="Packages"></a> Erstellen und Anzeigen von Paketen
  Sie können ein Paket in einem UML-Klassendiagramm oder im UML-Modell-Explorer erstellen.
 
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>So erstellen Sie ein Paket in einem UML-Klassendiagramm
@@ -97,7 +97,7 @@ In Visual Studio ist ein *Paket* ein Container für die Definitionen von UML-Ele
     > [!NOTE]
     > Hierdurch wird in diesem Diagramm eine Ansicht des Pakets erstellt. In der Ansicht werden nicht unbedingt alle im Paket enthaltenen Elemente angezeigt. Um sicherzustellen, dass der gesamte Inhalt eines Pakets angezeigt wird, zeigen Sie das Paket im UML-Modell-Explorer an.
 
-## <a name="Elements"></a>Erstellen von Modellelementen innerhalb von Paketen
+## <a name="creating-model-elements-inside-packages"></a><a name="Elements"></a> Erstellen von Modellelementen innerhalb von Paketen
  Es gibt vier Verfahren, mit denen Sie Modellelemente in ein Paket einfügen können:
 
 - Fügen Sie im UML-Modell-Explorer einem Paket ein neues Element hinzu.
@@ -155,7 +155,7 @@ In Visual Studio ist ein *Paket* ein Container für die Definitionen von UML-Ele
 
     - Im **UML-Modell-Explorer**wird jedes Element unter dem Paket angezeigt.
 
-## <a name="Moving"></a>Verschieben von Elementen in und aus Paketen
+## <a name="moving-elements-into-and-out-of-packages"></a><a name="Moving"></a> Verschieben von Elementen in und aus Paketen
  Sie können ein oder mehrere Elemente in ein Paket oder aus einem Paket verschieben.
 
  Wenn Sie ein Paket verschieben, werden alle Elemente im Paket mit dem Paket verschoben.
@@ -175,7 +175,7 @@ In Visual Studio ist ein *Paket* ein Container für die Definitionen von UML-Ele
     > [!NOTE]
     > Wenn Sie ein Element aus einem Paket in einen leeren Teil des Diagramms ziehen, bleibt das gleiche Paket Besitzer des Elements. So können Sie ein Diagramm erstellen, in dem Elemente aus mehreren Paketen angezeigt werden, ohne die Pakete selbst anzeigen zu müssen.
 
-## <a name="Pasting"></a>Einfügen von Elementen in ein Paket
+## <a name="pasting-elements-into-a-package"></a><a name="Pasting"></a> Einfügen von Elementen in ein Paket
  Sie können ein Element in ein Paket einfügen. Wenn Sie eine Gruppe von zugehörigen Elementen in ein Paket einfügen, werden die Beziehungen zwischen ihnen ebenfalls eingefügt.
 
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>So fügen Sie in einem UML-Klassendiagramm Elemente in ein Paket ein
@@ -187,32 +187,32 @@ In Visual Studio ist ein *Paket* ein Container für die Definitionen von UML-Ele
     > [!NOTE]
     > Das Paket kann in einem anderen Diagramm enthalten sein.
 
-## <a name="Import"></a>Importieren von Beziehungen zwischen Paketen
+## <a name="import-relationships-between-packages"></a><a name="Import"></a> Importieren von Beziehungen zwischen Paketen
  Mithilfe des **Import** Tools können Sie eine Import Beziehung zwischen Paketen definieren.
 
  Bei einer Importbeziehung sind die im importierten Paket definierten Elemente, d. h. die Elemente am Pfeilende der Beziehung, auch im Paket definiert, aus dem der Import erfolgt. Alle Elemente, deren Sichtbarkeit als **Package** definiert ist, werden auch im importierten Paket angezeigt.
 
  Erstellen Sie in Importbeziehungen keine Schleifen.
 
-## <a name="References"></a>Verweise von einem Namespace auf einen anderen
+## <a name="references-from-one-namespace-to-another"></a><a name="References"></a> Verweise von einem Namespace auf einen anderen
  Wenn Sie von einem Element in einem Paket auf ein Element eines anderen Pakets verweisen möchten, müssen Sie den qualifizierten Namen des Elements verwenden.
 
- Angenommen, das Paket `SalesCommon` definiert den Typ `CustomerAddress`. In einem anderen Paket mit dem Namen `RestaurantSales` möchten Sie den Typ `MealOrder` definieren, der über ein Attribut vom Typ „Customer Address“ verfügt. Sie verfügen über zwei Möglichkeiten:
+ Angenommen, das Paket `SalesCommon` definiert den Typ `CustomerAddress`. In einem anderen Paket mit dem Namen `RestaurantSales` möchten Sie den Typ `MealOrder` definieren, der über ein Attribut vom Typ „Customer Address“ verfügt. Sie haben zwei Möglichkeiten:
 
-- Geben Sie den Typ des Attributs mit dem vollqualifizierten Namen `SalesCommon::CustomerAddress` an. Dies ist nur möglich, wenn für `CustomerAddress` die **Visibility** -Eigenschaft auf **Public**festgelegt ist.
+- Geben Sie den Typ des Attributs mit dem vollqualifizierten Namen `SalesCommon::CustomerAddress` an. Dies ist nur möglich `CustomerAddress` , wenn die **Visibility** -Eigenschaft auf **Public**festgelegt ist.
 
 - Erstellen Sie eine Importbeziehung vom Paket `RestaurantSales` zum Paket `SalesCommon`. Dann können Sie `CustomerAddress` ohne qualifizierten Namen verwenden.
 
-## <a name="Properties"></a>Eigenschaften von Paketen
+## <a name="properties-of-packages"></a><a name="Properties"></a> Eigenschaften von Paketen
  Jedes Paket verfügt über die folgenden Eigenschaften. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf das Paket, entweder in einem Diagramm oder im UML-Modell-Explorer, und klicken Sie dann auf **Eigenschaften**.
 
-|property|Standardwert|Beschreibung|
+|Eigenschaft|Standardwert|Beschreibung|
 |--------------|-------------------|-----------------|
 |**Name**|(ein neuer Name)|Der Paketname. Sie können den Namen im Diagramm oder im Eigenschaftenfenster ändern.|
 |**Qualifizierter Name**|*Container* :: *Paketname*|Der vollständige Name, dem der Name des Pakets oder Modells vorangestellt ist, das das Paket enthält. Weitere Informationen finden Sie unter [Namespaces](#Namespaces).|
-|**Liert**|(leer)|Eine Liste der mit dem Paket verknüpften Profile. Diese Profile stellen Stereotype bereit, die auf Elemente im Paket angewendet werden können. Weitere Informationen finden Sie unter [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
-|**Sichtbarkeit**|**Public**|Die Sichtbarkeit des Pakets außerhalb des übergeordneten Pakets.|
-|**Arbeitselemente**|(leer)|Eine Liste verknüpfter Arbeitsaufgaben. Weitere Informationen finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).|
+|**Profiles**|(leer)|Eine Liste der mit dem Paket verknüpften Profile. Diese Profile stellen Stereotype bereit, die auf Elemente im Paket angewendet werden können. Weitere Informationen finden Sie unter [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
+|**Sichtbarkeit**|**Öffentlich**|Die Sichtbarkeit des Pakets außerhalb des übergeordneten Pakets.|
+|**Arbeitselemente**|(leer)|Eine Liste verknüpfter Arbeitselemente. Weitere Informationen finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).|
 |**Definitions Speicherort**|(ein Name)|Der Name der Datei, in der die Informationen zum Paket gespeichert werden. Die Dateien befinden sich im Projektordner **Model Definition** . Diese Informationen können für die Quellcodeverwaltung hilfreich sein.|
 |**Beschreibung**|(leer)|Eine Beschreibung des Pakets.|
 |**Typi**|(leer)|Auf das Paket angewendete Stereotype. Die Liste der verfügbaren Stereotype wird von den Profilen bestimmt, die Sie für dieses Paket und die Pakete ausgewählt haben, die es enthalten. Weitere Informationen finden Sie unter [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
@@ -222,5 +222,5 @@ In Visual Studio ist ein *Paket* ein Container für die Definitionen von UML-Ele
 
  Außerdem wird jedes Diagramm in zwei Dateien gespeichert, eine, die die Formen des Diagramms darstellt, und eine **Layoutdatei** , die die Positionen der Formen aufzeichnet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md) [Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md)

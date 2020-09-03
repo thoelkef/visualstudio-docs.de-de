@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281759"
 ---
 # <a name="create-relationships-between-datasets"></a>Erstellen von Beziehungen zwischen Datasets
@@ -55,7 +55,7 @@ Als Teil der FOREIGN KEY-Einschränkung können Sie referenzielle Integritäts R
 
 Die Regeln, die Sie vornehmen können, werden in der <xref:System.Data.Rule> -Enumeration angegeben und sind in der folgenden Tabelle aufgeführt.
 
-|Foreign Key-Einschränkungs Regel|Action|
+|Foreign Key-Einschränkungs Regel|Aktion|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|Die Änderung (aktualisieren oder löschen), die am übergeordneten Datensatz vorgenommen wurde, erfolgt auch in verknüpften Datensätzen in der untergeordneten Tabelle.|
 |<xref:System.Data.Rule.SetNull>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird auf festgelegt <xref:System.DBNull> . Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" verbleiben, d. –., Sie haben keine Beziehung zu übergeordneten Datensätzen. **Hinweis:** Die Verwendung dieser Regel kann zu ungültigen Daten in der untergeordneten Tabelle führen.|

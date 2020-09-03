@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b4c0ac8cff82250169171e1d842e64a34a4523ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282110"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Vorgehensweise: Erweitern von durch den O/R-Designer erstellten Code
@@ -44,7 +44,7 @@ Vom **O/R-Designer** generierter Code wird erneut generiert, wenn Änderungen an
 
 3. Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für den DataContext hinzu.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

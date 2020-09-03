@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669701"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Einbetten eines Diagramms in Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können ein DSL-Diagramm in ein Windows-Steuerelement einbetten, das im Fenster [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.
+Sie können ein DSL-Diagramm in ein Windows-Steuerelement einbetten, das im Fenster angezeigt wird [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="embedding-a-diagram"></a>Einbetten eines Diagramms
 
@@ -75,7 +75,7 @@ Sie können ein DSL-Diagramm in ein Windows-Steuerelement einbetten, das im Fens
 
 #### <a name="updating-the-form-using-store-events"></a>Aktualisieren des Formulars mithilfe von Store-Ereignissen
 
-1. Fügen Sie im Formular-Designer ein **Listenfeld** mit dem Namen `listBox1` hinzu. Dadurch wird eine Liste der Elemente im Modell angezeigt. Sie wird mit dem Modell mithilfe von *Store-Ereignissen*synchron gehalten. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Fügen Sie im Formular-Designer ein **Listenfeld** mit dem Namen hinzu `listBox1` . Dadurch wird eine Liste der Elemente im Modell angezeigt. Sie wird mit dem Modell mithilfe von *Store-Ereignissen*synchron gehalten. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. Überschreiben Sie in der benutzerdefinierten Codedatei weitere Methoden für die DocView-Klasse:
 
@@ -153,5 +153,5 @@ Sie können ein DSL-Diagramm in ein Windows-Steuerelement einbetten, das im Fens
 
      Beachten Sie, dass im Listenfeld eine Liste der Elemente im Modell angezeigt wird und dass Sie nach dem Hinzufügen oder löschen und nach dem Rückgängigmachen und wiederholen korrekt ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md) [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

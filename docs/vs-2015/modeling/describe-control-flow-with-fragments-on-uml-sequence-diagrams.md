@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669818"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Beschreiben des Kontrollflusses mit Fragmenten in UML-Sequenzdiagrammen
@@ -34,7 +34,7 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
 > [!NOTE]
 > In diesem Thema geht es um Fragmente in Sequenzdiagrammen. Weitere Informationen zum Lesen von UML-Sequenzdiagrammen finden Sie unter [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md). Weitere Informationen zum Zeichnen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
- ![Kombiniertes Fragment mit zwei Interaktions Operanden](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
+ ![Kombiniertes Fragment mit zwei Interaktionsoperanden](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
 
  In der Abbildung sind die folgenden Elemente dargestellt.
 
@@ -102,21 +102,21 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
     > [!NOTE]
     > Verschiedene Arten von kombinierten Fragmenten verfügen über unterschiedliche Eigenschaften.
 
-## <a name="KindsOfFragment"></a>Arten von kombiniertem Fragment
+## <a name="kinds-of-combined-fragment"></a><a name="KindsOfFragment"></a> Arten von kombiniertem Fragment
 
 ### <a name="fragments-describing-control-flow"></a>Fragmente, die die Ablaufsteuerung beschreiben
  Ein einfaches Sequenzdiagramm zeigt nur eine typische Sequenz. Sie können die folgenden Typen von kombinierten Fragmenten verwenden, um Variationen zu beschreiben, die in unterschiedlichen Situationen auftreten können.
 
 |Fragmenttyp|Beschreibung|
 |-------------------|-----------------|
-|**Opt**|Dies ist optional. Schließt eine Sequenz ein, die auftreten oder nicht auftreten kann. Im Wächter können Sie die Bedingung angeben, unter der die Sequenz auftritt.|
-|**ALT**|Enthält eine Liste von Fragmenten, die wiederum alternative Sequenzen von Meldungen enthalten. Es tritt nur jeweils eine Sequenz auf.<br /><br /> Sie können jedes Fragment mit einem Wächter versehen, um anzugeben, unter welcher Bedingung das Fragment ausgeführt werden kann. Der Wächter **else** gibt an, dass ein Fragment ausgeführt werden soll, wenn kein anderer Wächter den Wert „true“ hat. Wenn alle Wächter den Wert „false“ aufweisen und **else**nicht vorhanden ist, wird kein Fragment ausgeführt.|
-|**Loop**|Das Fragment wird einige Male wiederholt. Im Wächter können Sie die Bedingung angeben, unter der es wiederholt werden soll.<br /><br /> Kombinierte Loop-Fragmente haben die Eigenschaften **Min** und **Max**, die für den Mindest- und Höchstwert der Wiederholung des Fragments stehen. In der Standardeinstellung gilt keine Einschränkung.|
-|**Break**|Wenn dieses Fragment ausgeführt wird, wird der Rest der Sequenz verworfen. Im Wächter können Sie die Bedingung angeben, unter der die Unterbrechung eintritt.|
+|**Opt**|Optional. Schließt eine Sequenz ein, die auftreten oder nicht auftreten kann. Im Wächter können Sie die Bedingung angeben, unter der die Sequenz auftritt.|
+|**Alt**|Enthält eine Liste von Fragmenten, die wiederum alternative Sequenzen von Meldungen enthalten. Es tritt nur jeweils eine Sequenz auf.<br /><br /> Sie können jedes Fragment mit einem Wächter versehen, um anzugeben, unter welcher Bedingung das Fragment ausgeführt werden kann. Der Wächter **else** gibt an, dass ein Fragment ausgeführt werden soll, wenn kein anderer Wächter den Wert „true“ hat. Wenn alle Wächter den Wert „false“ aufweisen und **else**nicht vorhanden ist, wird kein Fragment ausgeführt.|
+|**ESE**|Das Fragment wird einige Male wiederholt. Im Wächter können Sie die Bedingung angeben, unter der es wiederholt werden soll.<br /><br /> Kombinierte Loop-Fragmente haben die Eigenschaften **Min** und **Max**, die für den Mindest- und Höchstwert der Wiederholung des Fragments stehen. In der Standardeinstellung gilt keine Einschränkung.|
+|**Umbruch**|Wenn dieses Fragment ausgeführt wird, wird der Rest der Sequenz verworfen. Im Wächter können Sie die Bedingung angeben, unter der die Unterbrechung eintritt.|
 |**Durchschnittlicher**|Parallel Die Ereignisse in den Fragmenten können sich überlappen.|
-|**Kritisch**|Wird in einem Par- oder Seq-Fragment verwendet. Gibt an, dass die Meldungen in diesem Fragment sich nicht mit anderen Meldungen überlappen dürfen.|
+|**Critical** (Kritisch)|Wird in einem Par- oder Seq-Fragment verwendet. Gibt an, dass die Meldungen in diesem Fragment sich nicht mit anderen Meldungen überlappen dürfen.|
 |**Seq**|Es sind zwei oder mehr Operandenfragmente vorhanden. Meldungen, die die gleiche Lebenslinie verwenden, müssen in der Reihenfolge der Fragmente auftreten. Falls Meldungen nicht die gleichen Lebenslinien verwenden, können sich Meldungen aus verschiedenen Fragmenten parallel überlappen.|
-|**Strict**|Es sind zwei oder mehr Operandenfragmente vorhanden. Die Fragmente müssen in der angegebenen Reihenfolge auftreten.|
+|**Strengeren**|Es sind zwei oder mehr Operandenfragmente vorhanden. Die Fragmente müssen in der angegebenen Reihenfolge auftreten.|
 
 ### <a name="fragments-about-how-to-interpret-the-sequence"></a>Fragmente zum Interpretieren der Sequenz
  Standardmäßig gibt das Sequenzdiagramm eine Reihe von Meldungen an, die auftreten können. Im laufenden System können auch andere Meldungen auftreten, die Sie nicht für die Anzeige im Diagramm ausgewählt haben.
@@ -130,5 +130,5 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
 |**Assert**|Das Operandenfragment gibt die einzigen gültigen Sequenzen an. Wird in der Regel in einem Consider- oder Ignore-Fragment verwendet.|
 |**Neg**|Die in diesem Fragment angezeigte Sequenz darf nicht auftreten. Wird in der Regel in einem Consider- oder Ignore-Fragment verwendet.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) [Bearbeitung von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)
