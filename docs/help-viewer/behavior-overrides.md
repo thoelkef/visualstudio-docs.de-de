@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825094"
 ---
 # <a name="help-content-manager-overrides"></a>Überschreibungen durch den Hilfeinhalts-Manager
@@ -21,11 +21,11 @@ Sie können das Standardverhalten von Help Viewer und der Hilfefeatures der Visu
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Steuern des Help Viewer-Verhaltens mithilfe der PKGDEF-Datei
 
-1. Erstellen Sie eine *PKGDEF-Datei* mit `[$RootKey$\Help]` als erste Zeile.
+1. Erstellen Sie eine *pkgdef* -Datei mit der ersten Zeile als `[$RootKey$\Help]` .
 
 2. Fügen Sie beliebige oder alle Registrierungsschlüsselwerte in verschiedenen Zeilen hinzu, die in der Tabelle unten dargestellt sind, z.B. `"UseOnlineHelp"=dword:00000001`.
 
-3. Kopieren Sie die Datei nach *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<Edition\>\Common7\IDE\CommonExtensions*.
+3. Kopieren Sie die Datei nach *% Program Files (x86)% \ Microsoft Visual studio\2017 \\<Edition \> \common7\ide\commonextensions*.
 
 4. Führen Sie `devenv /updateconfiguration` in einer Developer-Eingabeaufforderung aus.
 
@@ -33,9 +33,9 @@ Sie können das Standardverhalten von Help Viewer und der Hilfefeatures der Visu
 
 |Registrierungsschlüsselwert|Typ|Daten|BESCHREIBUNG|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|string|\<HTTP-URL für den Dienstendpunkt\>|Definiert einen eindeutigen Dienstendpunkt|
+|NewContentAndUpdateService|Zeichenfolge|\<http URL for service endpoint\>|Definiert einen eindeutigen Dienstendpunkt|
 |UseOnlineHelp|dword|`0`, um lokale Hilfe anzugeben, `1`, um Onlinehilfe anzugeben|Definiert die Online-oder Offlinehilfe (Standard)|
-|OnlineBaseUrl|string|\<HTTP-URL für den Dienstendpunkt\>|Definiert einen eindeutigen F1-Endpunkt|
+|OnlineBaseUrl|Zeichenfolge|\<http URL for service endpoint\>|Definiert einen eindeutigen F1-Endpunkt|
 |OnlineHelpPreferenceDisabled|dword|`0` zum Aktivieren oder `1` zum Deaktivieren der Präferenzoptionen für die Onlinehilfe|Deaktiviert die Präferenzoption für die Onlinehilfe|
 |DisableManageContent|dword|`0` zum Aktivieren oder `1` zum Deaktivieren der Registerkarte **Inhalt verwalten** in Help Viewer|Deaktiviert die Registerkarte **Inhalt verwalten**|
 |DisableFirstRunHelpSelection|dword|`0` zum Aktivieren oder `1` zum Deaktivieren von Hilfefunktionen, die beim ersten Start von Visual Studio konfiguriert werden|Deaktiviert die Installation von Inhalt beim ersten Start von Visual Studio|
@@ -56,13 +56,13 @@ Sie können das Standardverhalten von Help Viewer und der Hilfefeatures der Visu
 
 Die folgenden zwei Verhalten können durch Festlegen von Registrierungsschlüsselwerten im Registrierungs-Editor gesteuert werden.
 
-|Aufgabe|-Registrierungsschlüssel|Wert|Daten|
+|Aufgabe|Registrierungsschlüssel|Wert|Daten|
 |----------|-----|------|----|
 |BITS-Auftragspriorität überschreiben|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3 (auf einem 64-Bit-Computer)|BITSPriority|**Vordergrund**, **hoch**, **regulär** oder **niedrig**|
 |Auf den lokalen Inhaltsspeicher auf der Netzwerkfreigabe zeigen|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Help Viewer-Administratorleitfaden](../help-viewer/administrator-guide.md)
-- [Befehlszeilenargumente für den Hilfeinhalts-Manager](../help-viewer/command-line-arguments.md)
+- [Help Viewer-Administrator Handbuch](../help-viewer/administrator-guide.md)
+- [Befehlszeilenargumente für den Hilfe Inhalts-Manager](../help-viewer/command-line-arguments.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

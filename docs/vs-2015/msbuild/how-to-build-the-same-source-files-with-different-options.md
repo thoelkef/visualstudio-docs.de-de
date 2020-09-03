@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821681"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Gewusst wie: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mit unterschiedlichen Buildoptionen. So können Sie, z.B. ein Debugbuild mit Symbolinformationen oder ein Releasebuild ohne Symbolversionen, aber mit aktivierten Optimierungen erstellen. Oder Sie können ein Projekt erstellen, das auf einer bestimmten Plattform wie x86 oder [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] ausgeführt wird. In allen diesen Fällen bleiben die meisten Buildoptionen gleich. Nur ein paar Optionen werden zur Steuerung der Buildkonfiguration geändert. Sie verwenden Eigenschaften und Bedingungen mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um die unterschiedlichen Buildkonfigurationen zu erstellen.  
@@ -29,11 +29,11 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
 ## <a name="using-properties-to-modify-projects"></a>Verwenden von Eigenschaften zum Ändern von Projekten  
  Das Element `Property` definiert eine Variable, die in einer Projektdatei, z.B. den Speicherort eines temporären Ordners, mehrmals verwiesen wird oder um die Werte für Eigenschaften festzulegen, die in mehrere Konfigurationen (z.B. einem Debug- oder Releasebuild) verwendet werden. Weitere Informationen zu Eigenschaften finden Sie unter [MSBuild-Eigenschaften](msbuild-properties1.md).  
   
- Sie können Eigenschaften verwenden, um die Konfiguration Ihres Builds zu ändern, ohne die Projektdatei zu ändern. Das Attribut `Condition` des Elements `Property` und `PropertyGroup` hilft Ihnen beim Ändern der Eigenschaftenwerte. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).  
+ Sie können Eigenschaften verwenden, um die Konfiguration Ihres Builds zu ändern, ohne die Projektdatei zu ändern. Das Attribut `Condition` des Elements `Property` und `PropertyGroup` hilft Ihnen beim Ändern der Eigenschaftenwerte. Weitere Informationen zu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).  
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>So legen Sie eine Eigenschaftengruppe anhand einer anderen Eigenschaft fest.  
   
-- Verwenden Sie ein Attribut `Condition` in einem Element `PropertyGroup`, das ähnlich dem Folgenden ist:  
+- Verwenden Sie ein Attribut `Condition` im Element `PropertyGroup`, das ähnlich dem Folgenden ist:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -55,13 +55,13 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest  
   
-- Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Beispiel:  
+- Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     \- oder –  
+     \- oder -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -69,13 +69,13 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an  
   
-- Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Beispiel:  
+- Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Zum Beispiel:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   \- oder:  
+   \- oder –  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
@@ -185,8 +185,8 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
 [MSBuild](msbuild.md)  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
+ [MSBuild-Konzepte](../msbuild/msbuild-concepts.md)   
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
  [Project-Element (MSBuild)](../msbuild/project-element-msbuild.md)

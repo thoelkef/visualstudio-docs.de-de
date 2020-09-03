@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824902"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Logische und erweiterte Operatoren in Suchausdrücken
 
-Sie können Ihre Suche im Hilfe-Inhalt in **Help Viewer** mit logischen Operatoren und erweiterten Suchoperatoren optimieren.
+Sie können logische Operatoren und erweiterte Such Operatoren verwenden, um die Suche nach Hilfe Inhalten in **Help Viewer**zu verfeinern.
 
 ## <a name="logical-operators"></a>Logische Operatoren
 
@@ -28,10 +28,10 @@ Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer 
 
 |Suchen nach|Verwendung|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
-|Beide Begriffe im gleichen Artikel|UND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
-|Einer der Begriffe in einem Artikel|ODER|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
+|Beide Begriffe im gleichen Artikel|AND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
+|Einer der Begriffe in einem Artikel|oder|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
 |Erster Begriff ohne den zweiten Begriff im gleichen Artikel|NICHT|„Betriebssystem“ NICHT DOS|Themen, die „Betriebssystem“ aber nicht „DOS“ enthalten.|
-|Beide Begriffe nah beieinander in einem Artikel|NAH|Benutzer NAH Kernel|Themen mit „Benutzer“ in der Nähe von „Kernel“.|
+|Beide Begriffe nah beieinander in einem Artikel|NEAR|Benutzer NAH Kernel|Themen mit „Benutzer“ in der Nähe von „Kernel“.|
 
 > [!IMPORTANT]
 > Sie müssen logische Operatoren in Großbuchstaben eingeben, damit sie von der Suchmaschine erkannt werden.
@@ -66,7 +66,7 @@ Mit dem Operator `code:` können Sie nach Inhalt von einer der Programmiersprach
 > [!NOTE]
 > Der Operator `code:` findet nur Inhalt, der mit einem Programmiersprachenbezeichner markiert ist, und keinen Inhalt, der generisch als Code markiert ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Search for topics (Vorgehensweise: Suchen von Themen)](../help-viewer/find-topics.md)
+- [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
