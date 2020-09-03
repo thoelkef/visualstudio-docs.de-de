@@ -15,15 +15,15 @@ dev_langs:
 - CSharp
 - CPP
 ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69585368"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Unterstützung für die Erkennung von Visual Studio-Extendern pro Monitor
 
-Bei Versionen vor Visual Studio 2019 war der dpi-Kontext des dpi-Kontexts auf "System fähig" festgelegt, anstatt eine dpi-Unterstützung pro Monitor zu erhalten. Das Ausführen von Systeminformationen führte zu einer beeinträchtigten visuellen Darstellung (z. b. unscharfe Schriftarten oder Symbolen), wenn Visual Studio über Monitore mit unterschiedlichen Skalierungsfaktoren hinweg gerengt werden musste oder Remote Computer mit unterschiedlichen Anzeige Konfigurationen (z. b. andere Windows-Skalierung).
+Bei Versionen vor Visual Studio 2019 war der dpi-Kontext des dpi-Kontexts auf "System fähig" festgelegt, anstatt eine dpi-Unterstützung pro Monitor zu erhalten. Das Ausführen von Systeminformationen führte zu einer beeinträchtigten visuellen Darstellung (z. b. bei unscharf Schriftarten oder Symbolen), wenn Visual Studio über Monitore mit unterschiedlichen Skalierungsfaktoren hinweg gerengt werden musste oder Remote auf Computern mit unterschiedlichen Anzeige Konfigurationen (z. b. unterschiedlichen Windows
 
 Der dpi-Kontext von Visual Studio 2019 wird als "PMA" festgelegt, wenn die Umgebung dies unterstützt, sodass Visual Studio entsprechend der Konfiguration der Anzeige, in der es gehostet wird, und nicht in einer einzelnen vom System definierten Konfiguration dargestellt werden kann. Letztendlich Übersetzung in eine immer knackige Benutzeroberfläche für Oberflächenbereiche, die den PMA-Modus unterstützen.
 
@@ -126,7 +126,7 @@ Die folgenden Abbildungen zeigen die aktuellen **Standard** Einschränkungen des
 ![Screenshot des korrekten Verhaltens Verhaltens](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> Sie können dieses Verhalten ändern, indem Sie das Verhalten des Thread Hostings festlegen (siehe [Dpi_Hosting_Behavior-Enumeration](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> Sie können dieses Verhalten ändern, indem Sie das Verhalten des Thread Hostings festlegen (siehe [Dpi_Hosting_Behavior Enumeration](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Wenn Sie daher die Beziehung zwischen über-und untergeordneten Elementen zwischen nicht unterstützten Modi festlegen, tritt ein Fehler auf, und das Steuerelement oder Fenster wird möglicherweise nicht wie erwartet gerendert.
 
@@ -168,7 +168,7 @@ Wie bei snoop können die XAML-Tools in Visual Studio bei der Diagnose von PMA-P
 
 ### <a name="replace-dpihelper-calls"></a>Ersetzen von dpihelper-aufrufen
 
-In den meisten Fällen kann das Beheben von Problemen mit der Benutzeroberfläche im PMA-Modus dazu geführt werden, Aufrufe in verwaltetem Code durch Aufrufe der neuen *Klasse "Microsoft. VisualStudio. Utilities. dpi. dpihelper* " und " *Microsoft. VisualStudio. PlatformUI. dpihelper* *" zu ersetzen. Microsoft. VisualStudio. Utilities. dpiawareness* -Hilfsklasse. 
+In den meisten Fällen wird durch das Beheben von Problemen mit der Benutzeroberfläche im PMA-Modus das Ersetzen von Aufrufen in verwaltetem Code an die alten *Microsoft. VisualStudio. Utilities. dpi. dpihelper* -und *Microsoft. VisualStudio. PlatformUI. dpihelper* -Klassen durch Aufrufe an die neue *Hilfsklasse Microsoft. VisualStudio. Utilities. dpiawareness* ersetzt. 
 
 ```cs
 // Remove this kind of use:
@@ -211,7 +211,7 @@ Standardmäßig empfangen untergeordnete Fenster den Kontext des aktuellen Threa
 Die meisten Benutzeroberflächen Berechnungen, die als Teil der Haupt-Messaging Schleife oder-Ereigniskette ausgeführt werden, sollten bereits im richtigen dpi-Kontext ausgeführt werden. Wenn jedoch Koordinaten-oder größenberechnungen außerhalb der Haupt Workflows vorgenommen werden (z. b. während einer Leerlaufzeit Aufgabe oder außerhalb des UI-Threads), ist der aktuelle dpi-Kontext möglicherweise falsch, was zu Problemen mit der Benutzeroberflächen-oder fehlerhafter Größenänderung führt. Wenn Sie den Thread in den richtigen Zustand für die UI-Arbeit versetzen, wird das Problem in der Regel behoben.
  
 #### <a name="opt-out-of-clmm"></a>Ablehnen von clmm
-Wenn ein nicht-WPF-Tool Fenster zur vollständigen Unterstützung von PMA migriert wird, muss es sich gegen clmm entscheiden. Zu diesem Zweck muss eine neue Schnittstelle implementiert werden: IVsDpiAware.
+Wenn ein nicht-WPF-Tool Fenster zur vollständigen Unterstützung von PMA migriert wird, muss es sich gegen clmm entscheiden. Zu diesem Zweck muss eine neue Schnittstelle implementiert werden: ivsdpiaware.
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -230,9 +230,9 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-Bei verwalteten Sprachen ist der beste Ort für die Implementierung dieser Schnittstelle die gleiche Klasse, die von *Microsoft. VisualStudio. Shell. ToolWindowPane*abgeleitet wird. Für C++ist der beste Ort für die Implementierung dieser Schnittstelle die gleiche Klasse, die *IVsWindowPane* aus vsshell. h implementiert.
+Bei verwalteten Sprachen ist der beste Ort für die Implementierung dieser Schnittstelle die gleiche Klasse, die von *Microsoft. VisualStudio. Shell. ToolWindowPane*abgeleitet wird. Für C++ ist der beste Ort für die Implementierung dieser Schnittstelle die gleiche Klasse, die *IVsWindowPane* von vsshell. h implementiert.
 
-Der Wert, der von der Eigenschaft "Mode" für die Schnittstelle zurückgegeben wird, ist eine __VSDPIMODE (und wird in eine uint in Managed umgewandelt):
+Der Wert, der von der Eigenschaft "Mode" für die Schnittstelle zurückgegeben wird, ist eine __VSDPIMODE (und wird in eine uint in verwaltet umgewandelt):
 
 ```cs
 enum __VSDPIMODE
@@ -248,7 +248,7 @@ enum __VSDPIMODE
 - Permonitor bedeutet, dass das Tool Fenster alle DPIs in allen anzeigen und bei jeder Änderung des dpi-Punkts verarbeiten muss.
 
 > [!NOTE]
-> Visual Studio unterstützt nur PerMonitorV2 Awareness, sodass der permonitor-Enumerationswert in den Windows-Wert von DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 übersetzt wird.
+> Visual Studio unterstützt nur PerMonitorV2 Awareness, sodass der permonitor-Enumerationswert in den Windows-Wert DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 übersetzt wird.
 
 #### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>Erzwingen eines Steuer Elements in einem bestimmten dpiawareress Context
 

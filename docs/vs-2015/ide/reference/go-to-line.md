@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c08967d333fc23dfed9089936cbef86889b2145
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661261"
 ---
 # <a name="go-to-line"></a>Gehe zu Zeile
@@ -26,7 +26,7 @@ ms.locfileid: "72661261"
 
 Mit diesem Dialogfeld können Sie im aktiven Dokument zu einer bestimmten Zeile wechseln. Um auf dieses Dialogfeld zuzugreifen, öffnen Sie ein Dokument zum Bearbeiten, und klicken Sie dann im Menü **Bearbeiten** auf **Gehe zu**.
 
- Mit der Zeilennummer (1-`n`) können Sie die Nummer der Zeile in das aktive Dokument eingeben, in das Sie verschieben möchten. Die eingegebene Zahl muss zwischen 1 und `n` liegen, wobei „n“ der Anzahl der Zeilen im aktuellen Dokument entspricht.
+ Mit der Zeilennummer (1- `n` ) können Sie die Nummer der Zeile in das aktive Dokument eingeben, in das Sie verschieben möchten. Die eingegebene Zahl muss zwischen 1 und `n` liegen, wobei „n“ der Anzahl der Zeilen im aktuellen Dokument entspricht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Festlegen von Lesezeichen im Code](../../ide/setting-bookmarks-in-code.md) suchen [und Ersetzen von Text](../../ide/finding-and-replacing-text.md) [Schreiben von Code](../../ide/writing-code-in-the-code-and-text-editor.md)

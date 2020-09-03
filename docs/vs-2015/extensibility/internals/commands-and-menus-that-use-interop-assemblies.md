@@ -14,44 +14,44 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ad6b324953914df7103d0dec7371199e3cbbd937
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195052"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Befehle und Menüs, die Interop-Assemblys verwenden
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Eine VSPackage, die Menü-und Symbolleistenbefehle implementiert werden, mithilfe von Interop-Assemblys muss Schritte ausführen:  
+Ein VSPackage, das Menü-und Symbolleisten Befehle mithilfe von Interop-Assemblys implementiert, muss:  
   
-- Informieren Sie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) über die unterstützten Befehle und gibt an, ob sie derzeit aktiviert sind.  
+- Informieren [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Sie die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) über die unterstützten Befehle und ob Sie zurzeit aktiviert sind.  
   
-- Beachten Sie die Regeln, (Vertrag) für die Behandlung von Befehlen.  
+- Befolgen Sie die Regeln (Vertrag) für die Verarbeitung von Befehlen.  
   
-- Befehlsbehandlung explizit implementieren, indem Sie entweder die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle.  
+- Implementieren Sie die Befehls Verarbeitung explizit mithilfe der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oder- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle.  
   
-  Im folgenden wird beschrieben, wie Sie diese Aufgaben durchführen.  
+  Im folgenden wird beschrieben, wie diese Aufgaben ausgeführt werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Bestimmen des Befehlsstatus mithilfe von Interop-Assemblys](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
- Beschreibt, wie eine VSPackage für die IDE benachrichtigt dazu, welche Befehle sie unterstützt und gibt an, ob sie derzeit aktiviert sind.  
+ Beschreibt, wie ein VSPackage der IDE mitteilt, welche Befehle unterstützt werden und ob Sie derzeit aktiviert sind.  
   
  [Befehlsverträge in Interop-Assemblys](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
- Stellt eine Definition des Vertrags einfachen Befehl ein, die allen VSPackages Implementieren von Befehlen, die mithilfe von Interopassemblys  
+ Stellt eine Definition des grundlegenden Befehls Vertrags bereit, der von allen VSPackages zum Implementieren von Befehlen mithilfe von Interop-Assemblys  
   
- [Implementation (Implementierung)](../../extensibility/internals/command-implementation.md)  
- Bietet einen Überblick darüber, wie eine VSPackage einen Befehl implementiert.  
+ [Implementierung](../../extensibility/internals/command-implementation.md)  
+ Bietet einen Überblick darüber, wie ein VSPackage einen Befehl implementiert.  
   
  [Registrieren der Befehlshandler von Interop-Assemblys](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
- Beschreibt die Registrierungseinträge erforderlich, um der IDE benachrichtigt, dass eine VSPackage einen Befehlshandler bereitstellt.  
+ Beschreibt die Registrierungseinträge, die zum Benachrichtigen der IDE erforderlich sind, dass ein VSPackage einen Befehls Handler bereitstellt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Verfügbarkeit](../../extensibility/internals/command-availability.md)  
- Beschreibt die Kriterien, die von der IDE verwendet werden, um zu bestimmen, welche VSPackage-Befehle verfügbar sind und welches Objekt sie verarbeitet.  
+ Beschreibt die Kriterien, die von der IDE verwendet werden, um zu bestimmen, welche VSPackage-Befehle verfügbar sind und welches Objekt Sie behandelt.  
   
  [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Enthält Details dazu, wie Sie eine Benutzeroberfläche erstellen, verwendet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Befehl unterstützen.  
+ Bietet ausführliche Informationen zum Erstellen einer Benutzeroberfläche, die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Befehls Unterstützung verwendet.  
   
  [Befehlsrouting in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
- Eine Übersicht über den Prozess verwendet, um ein Objekt mit den richtigen befehlsanforderung verknüpfen.
+ Eine Übersicht über den Prozess, der verwendet wird, um ein Objekt mit der richtigen Befehls Anforderung zu verknüpfen.

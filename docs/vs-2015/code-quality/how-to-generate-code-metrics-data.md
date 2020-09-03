@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661279"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
@@ -25,7 +25,7 @@ ms.locfileid: "72661279"
 
 Sie können festlegen, dass Code Metrikergebnisse entweder für eine gesamte Projekt Mappe oder für ein ausgewähltes Projekt generiert werden.
 
- **Voraussetzungen**
+ **Anforderungen**
 
  Visual Studio Enterprise
 
@@ -59,5 +59,5 @@ Sie können festlegen, dass Code Metrikergebnisse entweder für eine gesamte Pro
 
 - Erweitern Sie die Struktur in der Spalte **Hierarchie** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

@@ -17,72 +17,72 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 466b04d87c9493c2c73677a0b96245211157e896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164286"
 ---
 # <a name="enumerations-and-structures"></a>Enumerationen und Strukturen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dies sind die Enumerationen und Strukturen, die von der DIA-SDK verwendet.  
+Dabei handelt es sich um die Enumerationen und Strukturen, die von der DIA SDK verwendet werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
 ## <a name="enumerations"></a>Enumerationen  
  [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md)  
- Gibt an, die grundlegende Symboltyp.  
+ Gibt den Basistyp des Symbols an.  
   
  [CV_access_e-Enumeration](../../debugger/debug-interface-access/cv-access-e.md)  
- Gibt den Bereich, Sichtbarkeit (Zugriffsebene) von Memberfunktionen und Variablen.  
+ Gibt den Bereich der Sichtbarkeit (Zugriffsebene) von Element Funktionen und Variablen an.  
   
  [CV_call_e-Enumeration](../../debugger/debug-interface-access/cv-call-e.md)  
- Gibt die Aufrufkonvention für eine Funktion an.  
+ Gibt die Aufruf Konvention für eine Funktion an.  
   
  [CV_CFL_LANG-Enumeration](../../debugger/debug-interface-access/cv-cfl-lang.md)  
- Gibt die Quellcodesprache der Anwendung oder des verknüpften Modul an.  
+ Gibt die Quell Codesprache der Anwendung oder des verknüpften Moduls an.  
   
  [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
- Gibt den Zielprozessor.  
+ Gibt den Zielprozessor an.  
   
  [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)  
- Gibt an, ein Ziel-Register.  
+ Gibt ein Ziel Register an.  
   
  [DataKind-Enumeration](../../debugger/debug-interface-access/datakind.md)  
- Gibt an, die bestimmten Bereich eines Datenwerts.  
+ Gibt den bestimmten Bereich eines Daten Werts an.  
   
  [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)  
- Gibt die Art der Standortinformationen in ein Symbol an.  
+ Gibt die Art der Speicherort Informationen an, die in einem Symbol enthalten sind.  
   
  [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md)  
- Gibt den Typ des Speichers auf.  
+ Gibt den Typ des zu zuzurufenden Speichers an.  
   
  [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md)  
- Gibt die Suchoptionen für Symbol und den Dateinamen an.  
+ Gibt die Suchoptionen für Symbol-und Dateinamen an.  
   
  [StackFrameTypeEnum-Enumeration](../../debugger/debug-interface-access/stackframetypeenum.md)  
- Gibt den Stack-Frame-Typ.  
+ Gibt den Stapel Rahmentyp an.  
   
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)  
- Gibt den Typ des Symbols.  
+ Gibt den Typ des Symbols an.  
   
  [Thunk_Ordinal-Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md)  
- Legt fest, Thunk-Typen.  
+ Legt Thunk-Typen fest.  
   
  [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md)  
- Beschreibt die verschiedenen benutzerdefinierten Typ (UDT) an.  
+ Beschreibt die Vielzahl von benutzerdefinierten Typen (User-Defined Type, UDT).  
   
 ## <a name="structures"></a>Strukturen  
  [DiaAddressMapEntry Structure](../../debugger/debug-interface-access/diaaddressmapentry.md)  
- Beschreibt einen Eintrag in einer-Adresszuordnung an.  
+ Beschreibt einen Eintrag in einer Adress Zuordnung.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
- Gibt an, die Schnittstellen, die vom DIA-SDK bereitgestellt werden.  
+ Gibt die vom Dia SDK bereitgestellten Schnittstellen an.  
   
  [Konstanten (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- Gibt Konstanten an, die in die DIA-SDK verfügbar sind.  
+ Gibt die Konstanten an, die im Dia SDK verfügbar sind.  
   
-## <a name="see-also"></a>Siehe auch  
- [Verweis](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Referenz](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
