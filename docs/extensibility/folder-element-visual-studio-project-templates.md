@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769589"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder-Element (Visual Studio-Projektvorlagen)
@@ -39,18 +39,18 @@ Gibt einen Ordner an, der dem Projekt hinzugefügt wird.
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute
+### <a name="attributes"></a>Attributes
 
-|Attribut|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Projekt Ordners.|
 |`TargetFolderName`|Optionales Attribut.<br /><br /> Gibt den Namen an, der dem Ordner zugewiesen werden soll, wenn ein Projekt aus der Vorlage erstellt wird. Dieses Attribut eignet sich für die Verwendung der Parameter Ersetzung, um einen Ordnernamen zu erstellen oder einen Ordner mit einer internationalen Zeichenfolge zu benennen, die nicht direkt in der *ZIP* -Datei verwendet werden kann.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|`Folder`|Gibt einen Ordner an, der dem Projekt hinzugefügt werden soll. `Folder`-Elemente können untergeordnete `Folder` Elemente enthalten.|
+|`Folder`|Gibt einen Ordner an, der dem Projekt hinzugefügt werden soll. `Folder` -Elemente können untergeordnete `Folder` Elemente enthalten.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Gibt eine Datei an, die dem Projekt hinzugefügt werden soll.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -59,12 +59,12 @@ Gibt einen Ordner an, der dem Projekt hinzugefügt wird.
 |-------------|-----------------|
 |[Projekt](../extensibility/project-element-visual-studio-templates.md)|Optionales untergeordnetes Element von [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
-## <a name="remarks"></a>Hinweise
- `Folder`ist ein optionales untergeordnetes Element von `Project` .
+## <a name="remarks"></a>Bemerkungen
+ `Folder` ist ein optionales untergeordnetes Element von `Project` .
 
  Sie können eine der folgenden Methoden verwenden, um Projekt Elemente in Ordner in einer Vorlage zu organisieren:
 
-- Schließen Sie die Ordner in die *ZIP* -Datei der Vorlage ein, und fügen Sie Sie dem Projekt in der *VSTEMPLATE* -Datei hinzu, indem Sie den Pfad zur Datei in den `ProjectItem` Elementen ohne `Folder` Elemente angeben. Dies ist die empfohlene Methode. Zum Beispiel:
+- Schließen Sie die Ordner in die *ZIP* -Datei der Vorlage ein, und fügen Sie Sie dem Projekt in der *VSTEMPLATE* -Datei hinzu, indem Sie den Pfad zur Datei in den `ProjectItem` Elementen ohne `Folder` Elemente angeben. Dies ist die empfohlene Methode. Beispiel:
 
      `...`
 
@@ -74,7 +74,7 @@ Gibt einen Ordner an, der dem Projekt hinzugefügt wird.
 
      `...`
 
-- Schließen Sie die Ordner in die *ZIP* -Datei der Vorlage ein, und fügen Sie Sie dem Projekt in der *VSTEMPLATE* -Datei mit `Folder` Elementen hinzu. Zum Beispiel:
+- Schließen Sie die Ordner in die *ZIP* -Datei der Vorlage ein, und fügen Sie Sie dem Projekt in der *VSTEMPLATE* -Datei mit `Folder` Elementen hinzu. Beispiel:
 
      `...`
 
@@ -129,5 +129,5 @@ Gibt einen Ordner an, der dem Projekt hinzugefügt wird.
 
 ## <a name="see-also"></a>Siehe auch
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
-- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [ProjectItem-Element (Visual Studio-Element Vorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md)

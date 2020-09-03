@@ -32,10 +32,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850998"
 ---
 # <a name="link-task"></a>Link-Aufgabe
@@ -44,7 +44,7 @@ ms.locfileid: "75850998"
 Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das Objektdateien und Bibliotheken im COFF-Format (Common Object File Format) miteinander verbindet, um eine ausführbare Datei (.exe) oder eine DLL (Dynamic Link Library) zu erstellen. Weitere Informationen finden Sie unter [Linkeroptionen](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der **Link**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.  
+ In der folgenden Tabelle werden die Parameter der **Link**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
   
 - **AdditionalDependencies**  
   
@@ -74,7 +74,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Optionaler **String**-Parameter.  
   
-   Eine Liste von Linkeroptionen, wie in der Befehlszeile angegeben. Beispiel: **"** _/option1 /option2 /option#_ ". Verwenden Sie diesen Parameter, um Linkeroptionen anzugeben, die nicht durch einen anderen **Link**-Aufgabenparameter repräsentiert werden.  
+   Eine Liste von Linkeroptionen, wie in der Befehlszeile angegeben. Beispiel: **"**_/option1/option2/Option #_". Verwenden Sie diesen Parameter, um Linkeroptionen anzugeben, die nicht durch einen anderen **Link**-Aufgabenparameter repräsentiert werden.  
   
    Weitere Informationen finden Sie unter [Linkeroptionen](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
@@ -140,7 +140,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Standard** -  *\<none>*  
+  - **Vorgegebene** - *\<none>*  
   
   - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
@@ -240,7 +240,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **Treiber** -  **/Driver**  
   
@@ -490,7 +490,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **Default** -  *\<none>*  
+  - **Vorgegebene** - *\<none>*  
   
   - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
@@ -538,7 +538,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Optionaler **String**-Parameter.  
   
-   Kombiniert Abschnitte in einem Image. Geben Sie `from-section=to-section` an.  
+   Kombiniert Abschnitte in einem Image. Geben Sie `from-section=to-section`an.  
   
    Weitere Informationen finden Sie unter [/MERGE (Abschnitte kombinieren)](https://msdn.microsoft.com/library/10fb20c2-0b3f-4c8d-98a8-f69aedf03d52).  
   
@@ -684,7 +684,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **LinkVerbose** -  **/VERBOSE**  
   
@@ -746,7 +746,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **Konsole** -  **/SUBSYSTEM:CONSOLE**  
   
@@ -816,7 +816,7 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **MachineARM** -  **/MACHINE:ARM**  
   
@@ -926,5 +926,5 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das
   
    Weitere Informationen finden Sie unter [/VERSION (Versionsinformationen)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)

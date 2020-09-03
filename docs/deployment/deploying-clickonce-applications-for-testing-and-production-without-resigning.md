@@ -1,5 +1,5 @@
 ---
-title: ClickOnce-Apps bereitstellen, ohne erneut zu signieren
+title: ClickOnce-apps ohne erneute Signatur bereitstellen
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,47 +20,47 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89e1d7970b26d5ba9bd49090362a6a4e8c09f78d
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80395325"
 ---
-# <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>ClickOnce-Anwendungen zum Testen und Testen von Produktionsservern ohne Zurückweisen bereitstellen
-In diesem Artikel wird eine Funktion von ClickOnce beschrieben, die in der .NET Framework-Version 3.5 eingeführt wurde und die Bereitstellung von ClickOnce-Anwendungen von mehreren Netzwerkstandorten aus ermöglicht, ohne die ClickOnce-Manifeste neu signieren oder ändern zu müssen.
+# <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren
+In diesem Artikel wird eine Funktion von ClickOnce beschrieben, die in der .NET Framework Version 3,5 eingeführt wurde, die die Bereitstellung von ClickOnce-Anwendungen von mehreren Netzwerk Standorten aus ermöglicht, ohne dass die ClickOnce-Manifeste neu signiert oder geändert werden
 
 > [!NOTE]
-> Das Zurücksetzen ist nach wie vor die bevorzugte Methode zum Bereitstellen neuer Versionen von Anwendungen. Verwenden Sie nach Möglichkeit die Methode zum Zurücksetzen. Weitere Informationen finden Sie unter [ *Mage.exe* (Manifest Generierung and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> Das erneute Signieren ist nach wie vor die bevorzugte Methode für die Bereitstellung neuer Versionen von Anwendungen. Verwenden Sie nach Möglichkeit die Methode zum erneuten Signieren. Weitere Informationen finden Sie unter [ *Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
- Entwickler von Drittanbietern und ISVs können sich für diese Funktion entscheiden, was es ihren Kunden erleichtert, ihre Anwendungen zu aktualisieren. Diese Funktion kann in den folgenden Situationen verwendet werden:
+ Entwickler und ISVs von Drittanbietern können diese Funktion abonnieren, was ihren Kunden die Aktualisierung Ihrer Anwendungen erleichtert. Diese Funktion kann in den folgenden Situationen verwendet werden:
 
-- Beim Aktualisieren einer Anwendung nicht für die erste Installation einer Anwendung.
+- Beim Aktualisieren einer Anwendung, nicht bei der ersten Installation einer Anwendung.
 
-- Wenn es nur eine Konfiguration der Anwendung auf einem Computer gibt. Wenn eine Anwendung beispielsweise so konfiguriert ist, dass sie auf zwei verschiedene Datenbanken zeigt, können Sie diese Funktion nicht verwenden.
+- Wenn es nur eine Konfiguration der Anwendung auf einem Computer gibt. Wenn beispielsweise eine Anwendung so konfiguriert ist, dass Sie auf zwei unterschiedliche Datenbanken verweist, können Sie diese Funktion nicht verwenden.
 
-## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>DeploymentProvider von Bereitstellungsmanifesten ausschließen
- In .NET Framework 2.0 und .NET Framework 3.0 muss jede ClickOnce-Anwendung, die `deploymentProvider` auf dem System für die Offlineverfügbarkeit installiert wird, eine im Bereitstellungsmanifest auflisten. Der `deploymentProvider` wird häufig als Aktualisierungsspeicherort bezeichnet. Es ist der Speicherort, an dem ClickOnce nach Anwendungsaktualisierungen sucht. Diese Anforderung und die Notwendigkeit, dass Anwendungsherausgeber ihre Bereitstellungen signieren müssen, erschwerten es einem Unternehmen, eine ClickOnce-Anwendung von einem Anbieter oder einem anderen Drittanbieter zu aktualisieren. Außerdem wird es schwieriger, dieselbe Anwendung von mehreren Standorten im gleichen Netzwerk bereitzustellen.
+## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>DeploymentProvider von Bereitstellungs Manifesten ausschließen
+ In den .NET Framework 2,0 und .NET Framework 3,0 muss jede ClickOnce-Anwendung, die auf dem System zur Offline Verfügbarkeit installiert wird, eine `deploymentProvider` in Ihrem Bereitstellungs Manifest auflisten. `deploymentProvider`Wird häufig als Update Speicherort bezeichnet. Hierbei handelt es sich um den Speicherort, an dem ClickOnce auf Anwendungs Updates überprüft. Diese Anforderung, zusammen mit der Anforderung, dass Anwendungs Herausgeber ihre bereit Stellungen signieren müssen, erschwert es einem Unternehmen, eine ClickOnce-Anwendung von einem Hersteller oder einem anderen Drittanbieter zu aktualisieren. Außerdem ist es schwieriger, dieselbe Anwendung von mehreren Speicherorten im gleichen Netzwerk aus bereitzustellen.
 
- Mit Änderungen, die an ClickOnce in .NET Framework 3.5 vorgenommen wurden, ist es für einen Drittanbieter möglich, eine ClickOnce-Anwendung für eine andere Organisation bereitzustellen, die die Anwendung dann in einem eigenen Netzwerk bereitstellen kann.
+ Mit Änderungen, die in der .NET Framework 3,5 an ClickOnce vorgenommen wurden, ist es möglich, dass ein Drittanbieter eine ClickOnce-Anwendung für eine andere Organisation bereitstellt, die dann die Anwendung in einem eigenen Netzwerk bereitstellen kann.
 
- Um diese Funktion nutzen zu können, müssen Entwickler `deploymentProvider` von ClickOnce-Anwendungen aus ihren Bereitstellungsmanifesten ausschließen. Diese Anforderung bedeutet, dass `-providerUrl` Sie das Argument ausschließen müssen, wenn Sie Bereitstellungsmanifeste mit Mage.exe erstellen. Wenn Sie Bereitstellungsmanifeste mit MageUI.exe generieren, müssen Sie auch sicherstellen, dass das Textfeld **Startspeicherort** auf der Registerkarte **Anwendungsmanifest** leer bleibt.
+ Um dieses Feature nutzen zu können, müssen Entwickler von ClickOnce-Anwendungen `deploymentProvider` von ihren Bereitstellungs Manifesten ausschließen. Diese Anforderung bedeutet, dass Sie das-Argument ausschließen müssen, `-providerUrl` Wenn Sie Bereitstellungs Manifeste mit Mage.exe erstellen. Wenn Sie Bereitstellungs Manifeste mit MageUI.exe erstellen, müssen Sie sicherstellen, dass das Textfeld **Startort** auf der Registerkarte **Anwendungs Manifest** leer bleibt.
 
-## <a name="deploymentprovider-and-application-updates"></a>DeploymentAnbieter- und Anwendungsupdates
- Ab .NET Framework 3.5 müssen `deploymentProvider` Sie in Ihrem Bereitstellungsmanifest keine Bereitstellungsmanifest angeben, um eine ClickOnce-Anwendung für die Online- und Offlinenutzung bereitzustellen. Diese Änderung unterstützt das Szenario, in dem Sie die Bereitstellung selbst verpacken und signieren müssen, aber anderen Unternehmen die Bereitstellung der Anwendung über ihre Netzwerke ermöglichen.
+## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider und Anwendungs Updates
+ Ab dem .NET Framework 3,5 müssen Sie `deploymentProvider` in Ihrem Bereitstellungs Manifest keinen mehr angeben, um eine ClickOnce-Anwendung für die Online-und Offline Verwendung bereitzustellen. Diese Änderung unterstützt das Szenario, in dem Sie die Bereitstellung selbst verpacken und signieren müssen, aber anderen Unternehmen die Bereitstellung der Anwendung über ihre Netzwerke erlauben.
 
- Der wichtige Punkt, an den `deploymentProvider` Sie sich erinnern sollten, ist, dass Anwendungen, `deploymentProvider` die einen nicht ausschließen, ihren Installationsspeicherort während der Aktualisierungen nicht ändern können, bis sie ein Update versenden, das das Tag erneut enthält.
+ Wichtig zu beachten ist, dass Anwendungen, die eine ausschließen `deploymentProvider` , den Installationsort während der Updates nicht ändern können, bis Sie ein Update mit dem `deploymentProvider` Tag erneut senden.
 
- Hier sind zwei Beispiele, um diesen Punkt zu klären. Im ersten Beispiel veröffentlichen Sie eine ClickOnce-Anwendung ohne `deploymentProvider` Tag und bitten `http://www.adatum.com/MyApplication/`Benutzer, sie von zu installieren. Wenn Sie die nächste Aktualisierung der Anwendung `http://subdomain.adatum.com/MyApplication/`von veröffentlichen möchten, können Sie dies im Bereitstellungsmanifest in nicht als "" `http://www.adatum.com/MyApplication/`bezeichnen. Sie können eines von zwei Dingen tun:
+ Es folgen zwei Beispiele, um diesen Punkt zu verdeutlichen. Im ersten Beispiel veröffentlichen Sie eine ClickOnce-Anwendung, die kein `deploymentProvider` Tag hat, und Sie bitten Benutzer, Sie aus zu installieren `http://www.adatum.com/MyApplication/` . Wenn Sie das nächste Update der Anwendung aus veröffentlichen möchten `http://subdomain.adatum.com/MyApplication/` , haben Sie keine Möglichkeit, dies im Bereitstellungs Manifest zu signalisieren, das sich in befindet `http://www.adatum.com/MyApplication/` . Sie haben zwei Möglichkeiten:
 
-- Weisen Sie die Benutzer an, die vorherige Version zu deinstallieren und die neue Version vom neuen Speicherort aus zu installieren.
+- Teilen Sie den Benutzern mit, dass Sie die vorherige Version deinstallieren, und installieren Sie die neue Version am neuen Speicherort.
 
-- Fügen Sie `http://www.adatum.com/MyApplication/` eine Aktualisierung `deploymentProvider` ein, die einen Hinweis auf `http://www.adatum.com/MyApplication/`enthält. Veröffentlichen Sie dann später `deploymentProvider` ein `http://subdomain.adatum.com/MyApplication/`weiteres Update mit verweisendem Auf.
+- Fügen Sie ein Update für `http://www.adatum.com/MyApplication/` ein, das eine enthält `deploymentProvider` , auf die verweist `http://www.adatum.com/MyApplication/` . Anschließend können Sie später ein weiteres Update freigeben, das `deploymentProvider` auf verweist `http://subdomain.adatum.com/MyApplication/` .
 
-  Im zweiten Beispiel veröffentlichen Sie eine ClickOnce-Anwendung, die `deploymentProvider`angibt, und entscheiden sich dann, sie zu entfernen. Sobald die neue `deploymentProvider` Version ohne auf Clients heruntergeladen wurde, können Sie den für Updates `deploymentProvider` verwendeten Pfad erst dann umleiten, wenn Sie eine Version Ihrer Anwendung freigeben, die wiederhergestellt wurde. Wie im ersten `deploymentProvider` Beispiel muss zunächst auf den aktuellen Aktualisierungsort und nicht auf den neuen Speicherort verweisen. Wenn Sie in diesem Fall `deploymentProvider` versuchen, `http://subdomain.adatum.com/MyApplication/`eine einzufügen, die auf verweist, schlägt die nächste Aktualisierung fehl.
+  Im zweiten Beispiel veröffentlichen Sie eine ClickOnce-Anwendung, die angibt `deploymentProvider` und Sie dann entfernen. Sobald die neue Version ohne `deploymentProvider` auf Clients heruntergeladen wird, können Sie den für Updates verwendeten Pfad erst umleiten, wenn Sie eine Version der `deploymentProvider` wiederhergestellten Anwendung freigeben. Wie im ersten Beispiel, `deploymentProvider` muss zunächst auf den aktuellen Update Speicherort und nicht auf den neuen Speicherort zeigen. Wenn Sie in diesem Fall versuchen, eine einzufügen, `deploymentProvider` die auf verweist `http://subdomain.adatum.com/MyApplication/` , schlägt das nächste Update fehl.
 
 ## <a name="create-a-deployment"></a>Erstellen einer Bereitstellung
- Eine Anleitung zum Erstellen von Bereitstellungen, die von verschiedenen Netzwerkstandorten bereitgestellt werden können, finden Sie unter [Exemplarische Vorgehensweise: Manuelle Bereitstellung einer ClickOnce-Anwendung, die keine neu signieren muss und die Brandinginformationen beibehält.](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
+ Eine Schritt-für-Schritt-Anleitung zum Erstellen von bereit Stellungen, die von verschiedenen Netzwerk Standorten aus bereitgestellt werden können, finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung, für die keine erneute Signierung erforderlich](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)ist
 
 ## <a name="see-also"></a>Siehe auch
-- [*Mage.exe* (Manifest-Generierungs- und Bearbeitungstool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [*MageUI.exe* (Manifest Generierungs- und Bearbeitungstool, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+- [*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+- [*MageUI.exe* (Manifest Generation and Editing Tool, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

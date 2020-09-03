@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8930bba76830a6116c3182f3fb2936cd4f1a3e47
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657607"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Verknüpfen von UML-Modellaktualisierungen mithilfe von Transaktion
@@ -108,5 +108,5 @@ Wenn Sie für die UML-Designer in Visual Studio eine Erweiterung definieren, kö
  }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md) [Definieren eines Menübefehls in einem Modellierungs Diagramm Erweitern von](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)

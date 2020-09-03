@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769476"
 ---
 # <a name="automatic-feature-suspension"></a>Automatisches Anhalten von Features
@@ -44,7 +44,7 @@ Tipps und Tricks zum Verbessern der Leistung von Visual Studio beim Umgang mit g
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>Die Live Code Analyse wird auf einen minimalen Bereich reduziert.
 
-Standardmäßig wird die Live Code Analyse für geöffnete Dokumente und Projekte ausgeführt. Sie können diesen Analysebereich so anpassen, dass er auf das aktuelle Dokument reduziert oder auf die gesamte Projekt Mappe erweitert wird. Weitere Informationen finden Sie unter Gewusst [wie: Konfigurieren des Gültigkeits Bereichs der Live-Code Analyse für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md). Bei einem Mangel an Arbeitsspeicher erzwingt Visual Studio, dass der Live Analysebereich auf das aktuelle Dokument reduziert wird. Sie können jedoch Ihren bevorzugten Analysebereich erneut aktivieren, indem Sie die Schaltfläche **erneut aktivieren** in der Info Leiste auswählen, wenn Sie angezeigt wird, oder indem Sie Visual Studio neu starten. Im Dialogfeld Optionen werden immer die aktuellen Einstellungen für die Live-Code Analysebereiche angezeigt.
+Standardmäßig wird die Live Code Analyse für geöffnete Dokumente und Projekte ausgeführt. Sie können diesen Analysebereich so anpassen, dass er auf das aktuelle Dokument reduziert oder auf die gesamte Projekt Mappe erweitert wird. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren des Bereichs für die Liveanalyse für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md). Bei einem Mangel an Arbeitsspeicher erzwingt Visual Studio, dass der Live Analysebereich auf das aktuelle Dokument reduziert wird. Sie können jedoch Ihren bevorzugten Analysebereich erneut aktivieren, indem Sie die Schaltfläche **erneut aktivieren** in der Info Leiste auswählen, wenn Sie angezeigt wird, oder indem Sie Visual Studio neu starten. Im Dialogfeld Optionen werden immer die aktuellen Einstellungen für die Live-Code Analysebereiche angezeigt.
 
 ## <a name="gc-low-latency-disabled"></a>GC mit geringer Latenzzeit deaktiviert
 
@@ -65,7 +65,7 @@ Außerdem werden Caches, die für interne Visual Studio-Vorgänge verwendet werd
 > [!NOTE]
 > Die automatische Merkmals Unterbrechungs Warnung tritt nur einmal pro Lösung auf, nicht pro Sitzung. Dies bedeutet Folgendes: Wenn Sie von Visual Basic zu Visual c# wechseln (oder umgekehrt) und auf einen anderen Arbeitsspeicher Mangel stoßen, können Sie möglicherweise eine weitere Warnung zur automatischen Funktions Unterbrechung erhalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Konfigurieren des Gültigkeits Bereichs der Live-Code Analyse für verwalteten Code](./configure-live-code-analysis-scope-managed-code.md)
 - [Grundlagen der Garbage Collection](/dotnet/standard/garbage-collection/fundamentals)

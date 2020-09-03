@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: setcondition | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4683d944f2489b8b21ff545c86e3d867283d644a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725721"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
-Legt die Bedingung fest, die dem ausstehenden Haltepunkt zugeordnet ist, oder ändert sie.
+Legt die dem ausstehenden Breakpoint zugeordnete Bedingung fest oder ändert diese.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Parameter
 `bpCondition`\
-[in] Eine [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Struktur, die die festzulegende Bedingung angibt.
+in Eine [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) -Struktur, die die festzulegende Bedingung angibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Jede Bedingung, die zuvor dem ausstehenden Haltepunkt zugeordnet war, geht verloren. Alle Haltepunkte, die von diesem ausstehenden Haltepunkt gebunden sind, werden aufgerufen, um ihre Bedingung auf den im `bpCondition` Parameter angegebenen Wert festzulegen.
+ Jede Bedingung, die zuvor mit dem ausstehenden Breakpoint verknüpft war, geht verloren. Alle Haltepunkte, die von diesem ausstehenden Haltepunkt gebunden werden, werden aufgerufen, um die Bedingung auf den im-Parameter angegebenen Wert festzulegen `bpCondition` .
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

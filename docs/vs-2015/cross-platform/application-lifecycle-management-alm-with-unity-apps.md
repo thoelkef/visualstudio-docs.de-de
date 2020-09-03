@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 90efd4e72ea172822e0bcc424bdbbc4bc7589098
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233276"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) mit Unity-Apps
@@ -41,7 +41,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 ## <a name="modeling"></a>Modellierung  
  Verweislink: **[Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)**  
   
- Allgemeiner Kommentar: Obwohl diese Funktionen entweder unabhängig von der Programmiersprache sind oder mit .NET-Sprachen wie C# funktionieren, beziehen sie sich auf ein traditionelles Anwendungsparadigma mit Objekthierarchien und Klassenbeziehungen. Für das Entwerfen eines Spiels in Unity ist ein anderes Paradigma erforderlich, nämlich die Beziehungen von grafischen Objekten, Sounds, Shadern, Skripts usw. Aus diesem Grund sind die Modellierungsdiagrammtools von Visual Studio für die Gesamtheit eines Unity-Projekts nicht von besonderer Bedeutung. Sie können möglicherweise zum Verwalten von Beziehungen innerhalb von C#-Skripts verwendet werden, aber das ist nur ein Teil des Ganzen.  
+ Allgemeiner Hinweis: Obwohl diese Entwurfsfunktionen entweder unabhängig von der Programmiersprache sind oder mit .NET-Sprachen wie C# funktionieren, beziehen sie sich auf ein traditionelles Anwendungsparadigma mit Objekthierarchien und Klassenbeziehungen. Für das Entwerfen eines Spiels in Unity ist ein anderes Paradigma erforderlich, nämlich die Beziehungen von grafischen Objekten, Sounds, Shadern, Skripts usw. Aus diesem Grund sind die Modellierungsdiagrammtools von Visual Studio für die Gesamtheit eines Unity-Projekts nicht von besonderer Bedeutung. Sie können möglicherweise zum Verwalten von Beziehungen innerhalb von C#-Skripts verwendet werden, aber das ist nur ein Teil des Ganzen.  
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
@@ -52,7 +52,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |Architektur-Explorer|Nein||  
 |UML-Diagramme (Anwendungsfall, Aktivität, Klasse, Komponente, Sequenz und DSL)|Nein||  
 |Ebenendiagramme|Nein||  
-|Gültigkeitsprüfung|Nein||  
+|Ebenenüberprüfung|Nein||  
   
 ## <a name="code"></a>Code  
   
@@ -83,41 +83,41 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |Builddefinitionen mit Vor- und Nachskripts|Ja|Eine benutzerdefinierte Builddefinition, die einen Build über die Unity-Befehlszeile ausführt, kann ebenfalls für Prä- und Postbuildskripts konfiguriert werden.|  
 |Fortlaufende Integration einschließlich abgegrenzter Eincheckvorgänge|Ja|Abgegrenzte Eincheckvorgänge für TFVC, nur wenn Git auf einem Pull-Request-Modell statt mit Eincheckvorgängen arbeitet.|  
   
-## <a name="testing"></a>Test  
+## <a name="testing"></a>Testen  
  Verweislink: **[Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Funktion|Unterstützt von Unity|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
 |Planen von Tests, Erstellen von Testfällen und Organisieren von Testauflistungen|Ja||  
 |Manuelle Tests|Ja||  
 |Test-Manager (Aufzeichnung und Wiedergabe von Tests)|Nur Windows-Geräte und Android-Emulatoren||  
-|Codeabdeckung|–|Nicht zutreffend, da Komponententests in Unity und nicht in Visual Studio erfolgen (siehe unten).|  
-|[Komponententest für Code](../test/unit-test-your-code.md)|In Unity, nicht in Visual Studio|Unity bietet ein eigenes Komponententest-Framework als Teil der [Unity-Testtools](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store). Unit-Testergebnisse werden in Unity gemeldet und nicht in Visual Studio angezeigt.|  
-|[Verwenden der BENUTZERoberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nein |Tests der programmieren UI basieren auf lesbaren Steuerelementen in der App-Benutzeroberfläche. Unity-Apps sind grafischer Art, sodass Inhalte nicht von den Tools für Tests der programmierten UI gelesen werden können.|  
+|Codeabdeckung|n/v|Nicht zutreffend, da Komponententests in Unity und nicht in Visual Studio erfolgen (siehe unten).|  
+|[Komponententests für Ihren Code](../test/unit-test-your-code.md)|In Unity, nicht in Visual Studio|Unity bietet ein eigenes Komponenten Test-Framework als Teil der [Unity-TestTools](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity-Ressourcen Speicher). Unit-Testergebnisse werden in Unity gemeldet und nicht in Visual Studio angezeigt.|  
+|[Verwenden der Benutzeroberflächen Automatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nein|Tests der programmieren UI basieren auf lesbaren Steuerelementen in der App-Benutzeroberfläche. Unity-Apps sind grafischer Art, sodass Inhalte nicht von den Tools für Tests der programmierten UI gelesen werden können.|  
   
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
- Verweislink: **[Verbessern der Codequalität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Verweis Link: ** [verbessern der Code Qualität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Funktion|Unterstützt von Unity|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
 |[Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|  
 |[Suchen von doppeltem Code mit der Codeklonerkennung](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|  
 |[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|  
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein |Verwenden des [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (Unity-Website).|  
-|[Analysieren von .NET Framework-Arbeitsspeicherproblemen](../misc/analyze-dotnet-framework-memory-issues.md)|Nein |Visual Studio-Tools haben keinen Zugriff auf das Mono-Framework (wie von Unity verwendet) für die Profilerstellung. Verwenden des [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (Unity-Dokumentation).|  
+|[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Verwenden des [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (Unity-Website).|  
+|[Analysieren von .NET Framework-Arbeitsspeicherproblemen](../misc/analyze-dotnet-framework-memory-issues.md)|Nein|Visual Studio-Tools haben keinen Zugriff auf das Mono-Framework (wie von Unity verwendet) für die Profilerstellung. Verwenden des [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (Unity-Dokumentation).|  
   
 ## <a name="release-management"></a>Release Management:  
  Verweislink: **[Automatisieren von Bereitstellungen mit Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Funktion|Unterstützt von Unity|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
 |Verwalten von Releaseprozessen|Ja||  
 |Bereitstellen auf Servern für das Sideloading über Skripts|Ja||  
 |Hochladen in den App Store|Partial|Es stehen Erweiterungen zur Verfügung, die diesen Prozess für manche App-Stores automatisieren können.  Siehe [Erweiterungen für Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS); beispielsweise die [Extension for Google Play (Erweiterung für Google Play)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Überwachen mit HockeyApp  
- Verweislink: **[Überwachen mit HockeyApp](https://www.hockeyapp.net/features/)**  
+ Referenzlink: **[Monitor with HockeyApp (Überwachen mit HockeyApp)](https://www.hockeyapp.net/features/)**  
   
-|Funktion|Unterstützt von Unity|Zusätzliche Kommentare|  
+|Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
 |Absturzanalysen, Telemetrie und Betaverteilung|Ja|HockeyApp wird hauptsächlich für das Verarbeiten und Abrufen Absturzberichte verwendet.<br /><br /> Für die Telemetrie von C#-Skripts kann ein Analytics-Framework verwendet werden, vorausgesetzt, dass es auf der von Unity verwendeten Version von .NET ausgeführt wird. Dies ermöglicht allerdings lediglich Analysen in Spieleskripts und nicht tiefer in der Unity-Engine. Im Moment gibt es kein Plug-In für Application Insights; es stehen jedoch Plug-Ins für andere Analyselösungen wie etwa [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) und [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) zur Verfügung. Dienste wie Unity Analytics, die die Art eines Unity-Projekts verstehen, liefern natürlich deutlich aussagekräftigere Analysen als generische Frameworks.|

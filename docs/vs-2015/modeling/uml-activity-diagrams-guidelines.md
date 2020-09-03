@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298984"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
@@ -43,7 +43,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
   Referenzinformationen zu den Elementen in Aktivitäts Diagrammen finden Sie unter [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md).
 
-## <a name="Relationships"></a>Beziehung zu anderen Diagrammen
+## <a name="relationship-to-other-diagrams"></a><a name="Relationships"></a> Beziehung zu anderen Diagrammen
  Wenn Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäftsprozess oder die Art und Weise der Verwendung des Systems durch Benutzer zu beschreiben, können Sie ein Anwendungsfalldiagramm zeichnen, das eine andere Ansicht der gleichen Informationen liefert. Im Anwendungsfalldiagramm zeichnen Sie Aktionen als Anwendungsfälle. Weisen Sie den Anwendungsfällen den gleichen Namen zu wie den entsprechenden Aktionen. Die Anwendungsfallansicht bietet Ihnen folgende Vorteile:
 
 - Sie können in einem Diagramm mithilfe einer Includes-Beziehung darstellen, wie größere Aktionen/Anwendungsfälle aus kleineren Aktionen/Anwendungsfällen zusammengesetzt sind.
@@ -56,7 +56,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
   In einem Aktivitätsdiagramm können Sie den Fluss der zwischen Aktionen übergebenen Daten darstellen. Weitere Informationen finden Sie im Abschnitt [beschreiben des Datenflusses](#DataFlows). Ein Aktivitätsdiagramm beschreibt jedoch nicht die Struktur der Daten. Zu diesem Zweck können Sie ein UML-Klassendiagramm zeichnen. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Grundlegende Schritte zum Zeichnen von Aktivitäts Diagrammen
+## <a name="basic-steps-for-drawing-activity-diagrams"></a><a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Aktivitäts Diagrammen
  Ausführliche Schritte zum Erstellen von Modellierungs Diagrammen werden unter [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)beschrieben.
 
 #### <a name="to-draw-an-activity-diagram"></a>So zeichnen Sie ein Aktivitätsdiagramm
@@ -93,19 +93,19 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
 - Ziehen Sie im **UML-Modell-Explorer**die Aktivität in ein Paket.
 
-     \- oder –
+     \- oder -
 
-- Klicken Sie im **UML-Modell-Explorer**mit der rechten Maustaste auf die Aktivität, und klicken Sie auf Klicken Sie dann mit der rechten Maustaste auf das Paket und dann auf **Einfügen**.
+- Klicken Sie im **UML-Modell-Explorer**mit der rechten Maustaste auf die Aktivität, und klicken Sie auf **Cut** Klicken Sie dann mit der rechten Maustaste auf das Paket und dann auf **Einfügen**.
 
     > [!NOTE]
     > Die Aktivität wird erst dann im UML-Modell-Explorer angezeigt, wenn Sie dem Diagramm das erste Element hinzufügen.
 
-## <a name="SimpleControlFlow"></a>Beschreiben der Ablauf Steuerung
+## <a name="describing-control-flow"></a><a name="SimpleControlFlow"></a> Beschreiben der Ablauf Steuerung
  Ein Aktivitätsdiagramm beschreibt einen Geschäftsprozess oder einen Softwarealgorithmus als eine Reihe von Aktionen. Konnektorpfeile stellen dar, wie die Kontrolle nacheinander von einer Aktion an die nächste übergeben wird. Normalerweise kann eine Aktion erst gestartet werden, nachdem die vorherige Aktion abgeschlossen wurde.
 
  In der folgenden Beispielabbildung wird gezeigt, wie Sie eine Sequenz von Aktionen mit Aktionen, Konnektoren, Verzweigungen und Schleifen darstellen können. In den folgenden Abschnitten wird jedes Element ausführlicher erläutert.
 
- ![Ein einfaches Aktivitätsdiagramm](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
+ ![Einfaches Aktivitätsdiagramm](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
 
  Aktivitätsdiagramme verwenden **Aktionen** und **Connectors** , um das System oder die Anwendung als eine Reihe von Aktionen zu beschreiben, bei denen das Steuerelement sequenziell von einer Aktion zum nächsten fließt.
 
@@ -143,13 +143,13 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="starting-the-activity"></a>Starten der Aktivität
  Es gibt zwei Möglichkeiten, Einstiegspunkte einer Aktivität anzugeben:
 
-- **Ursprünglicher Knoten**
+- **Startknoten**
 
      Erstellen Sie einen **ersten Knoten** (6), um die erste Aktion der Aktivität anzugeben.
 
      Diese Methode ist besonders hilfreich, wenn Sie eine Unteraktivität beschreiben, oder wenn Sie nicht explizit angeben müssen, wodurch die Aktivität ausgelöst wird. Beispielsweise beginnt die Aktivität „Gericht bestellen“ zweifelsfrei, wenn ein Kunde hungrig wird.
 
-- **Knoten ' Ereignis annehmen '**
+- **Knoten zum Akzeptieren eines Ereignisses**
 
      Erstellen Sie die **Knoten "Accept Event**", wie im Abschnitt " [parallele Flows](#Concurrent)" beschrieben, um den Anfang eines Threads anzugeben, der auf ein bestimmtes Ereignis antwortet, z. b. eine Benutzereingabe. Geben Sie keinen eingehenden Fluss für den Knoten an. Wenn kein eingehender Fluss angegeben wird, bedeutet dies, dass bei jedem Eintreten des Ereignisses ein Thread gestartet wird.
 
@@ -174,7 +174,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
   Einfache Formen sind kein Bestandteil des UML-Modells und werden nicht im UML-Modell-Explorer angezeigt.
 
-## <a name="DataFlows"></a>Beschreiben des Datenflusses
+## <a name="describing-data-flow"></a><a name="DataFlows"></a> Beschreiben des Datenflusses
  Sie können die eingehenden und ausgehenden Daten einer Aktivität auf zweierlei Weise beschreiben:
 
 - Verwenden Sie einen **Objekt Knoten**. Dies ist die einfachste Methode, um die zwischen Aktivitäten fließenden Informationen zu beschreiben. Ein Objektknoten ist mit einer Variablen in einem Programm vergleichbar. Er stellt ein Element dar, das einen oder mehrere Werte speichert, die zwischen Aktionen übergeben werden.
@@ -189,7 +189,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
  Wenn Sie diese Daten im Diagramm beschreiben möchten, können Sie einen Konnektor durch einen Objektknoten und zwei Konnektoren ersetzen, wie in der folgenden Abbildung gezeigt.
 
- ![Objekt Knoten können Daten anzeigen, die zwischen Aktionen übergeben werden.](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
+ ![Objektknoten können zwischen Aktionen übergebene Daten anzeigen](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
 
  Beachten Sie, dass die Rechtecke mit abgerundeten Ecken, z. B. „Waren senden“, Aktionen darstellen, bei denen eine Verarbeitung erfolgt. Die Rechtecke mit rechtwinkligen Ecken, z. B. „Lieferadresse“, stellen einen Fluss von Objekten zwischen zwei Aktionen dar.
 
@@ -203,7 +203,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 #### <a name="buffering-data-in-object-nodes"></a>Puffern von Daten in Objektknoten
  Ein Objektknoten kann als Puffer für mehrere Objekte fungieren. In der folgenden Abbildung zeigt die Ablaufsteuerung, dass der Benutzer die Schleife „[weitere auswählen]“ (1) mehrfach durchlaufen kann, während die vom Benutzer ausgewählten Gerichte im Objektknoten „Gewählte Gerichte“ (2) gesammelt werden. Wenn schließlich die Auswahl durch den Benutzer abgeschlossen ist, geht die Kontrolle an die Aktion „Bestellung bestätigen“ (3) über, mit der die vollständige Liste der ausgewählten Elemente aus dem Puffer „Gewählte Gerichte“ akzeptiert wird.
 
- ![Puffern von Daten in Objekt Knoten](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
+ ![Puffern von Daten in Objektknoten](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
 
  Sie können angeben, wie die Elemente in einem Puffer gespeichert werden, indem Sie Eigenschaften des Objektknotens festlegen:
 
@@ -222,7 +222,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Beschreiben des Datenflusses mit Eingabe- und Ausgabepins
  Verwenden Sie eine **Ausgabepin** und eine **Eingabe-PIN** , um die Ausgaben einer Aktion und die Eingaben in eine andere separat zu beschreiben.
 
- ![Eingabe-und Ausgabe Pins sind Aktionsparameter.](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
+ ![Eingabe- und Ausgabepins sind Aktionsparameter](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
 
  Klicken Sie zum Erstellen einer PIN auf **Eingabe-PIN** oder **Ausgabepin** in der Toolbox, und klicken Sie dann auf eine Aktion. Anschließend können Sie den Pin im Umkreis der Aktion verschieben und seinen Namen ändern. Sie können Eingabe-und Ausgabe Pins für jede Art von Aktion erstellen, einschließlich **Aktionen zum Anfügen von Verhalten**, Aktionen für den **Vorgang**zum **Senden von Signalen**und zum **akzeptieren von Ereignis Aktionen**.
 
@@ -236,7 +236,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
  Alternativ können Sie angeben, dass der Objektfluss eine Transformation einschließt, mit der Daten vom Typ des Ausgabepins in den Typ des Eingabepins (oder umgekehrt) konvertiert werden. Die häufigste Transformation dieser Art extrahiert einfach den entsprechenden Teil aus einem größeren Typ. Im Beispiel in der Abbildung wird eine Transformation vorausgesetzt, die die Lieferadresse aus den Bestellungsdetails extrahiert.
 
-## <a name="Details"></a>Definieren einer Aktion im Detail
+## <a name="defining-an-action-in-more-detail"></a><a name="Details"></a> Definieren einer Aktion im Detail
  Sie können nicht nur das normalerweise zu erzielende Ergebnis einer Aktion anhand ihres Namens angeben, sondern einer Aktion mit den folgenden Methoden auch weitere Informationen hinzufügen:
 
 - Schreiben Sie in der **Body** -Eigenschaft eine ausführlichere Beschreibung. Sie können z. B. ein Fragment von Programmcode oder Pseudocode oder eine vollständige Beschreibung der erzielten Ergebnisse schreiben.
@@ -245,12 +245,12 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
 - Legen Sie die Eigenschaften lokale nach Bedingungen und **lokale** **Vorbedingungen** der Aktion fest, um das Ergebnis in spezifischeren Details zu beschreiben. Weitere Informationen finden Sie unter [Definieren von nach Bedingungen und Vorbedingungen](#Postcondition).
 
-### <a name="Subactivities"></a>Beschreiben von unter Aktivitäten mit Aktionen zum Verhalten von Anrufen
+### <a name="describing-sub-activities-with-call-behavior-actions"></a><a name="Subactivities"></a> Beschreiben von unter Aktivitäten mit Aktionen zum Verhalten von Anrufen
  Sie können das Verhalten einer Aktion mithilfe eines eigenen Aktivitätsdiagramms ausführlich beschreiben. Ein aufgerufenes Verhalten ist ein Aktivitätsdiagramm, das im Hauptaktivitätsdiagramm durch eine Aktion zum Aufrufen eines Verhaltens dargestellt wird. Sie können mit der Aktion zum Aufrufen eines Verhaltens auch Verhalten beschreiben, das unterschiedlichen Aktivitäten gemeinsam ist, sodass Sie die Unteraktivität nicht mehrmals zeichnen müssen.
 
  In der folgenden Abbildung zeigt Diagramm 1 eine Aktivität, die über eine Aktion zum Aufrufen eines Verhaltens verfügt, und Diagramm 2 zeigt das Unteraktivitätsdiagramm, in dem das aufgerufene Verhalten dargestellt wird.
 
- ![Ein separates Aktivitätsdiagramm zeigt ausführliche Aktionen an.](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
+ ![Separates Aktivitätsdiagramm mit ausführlichen Aktionen](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
 
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>So beschreiben Sie eine Unteraktivität mit einer Aktion zum Aufrufen eines Verhaltens
 
@@ -283,9 +283,9 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
 - Zeichnen Sie im Unteraktivitätsdiagramm Konnektoren, die den Fluss von Objekten in die oder aus den einzelnen Aktivitätsparameterknoten darstellen.
 
-  ![Pins auf dem Anordnungs Verhalten werden Aktivitäts Parametern zugeordnet](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
+  ![Pins werden beim Aufrufen eines Verhaltens Aktivitätsparametern zugeordnet](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a>Definieren von nach Bedingungen und Vorbedingungen
+### <a name="defining-postconditions-and-preconditions"></a><a name="Postcondition"></a> Definieren von nach Bedingungen und Vorbedingungen
  Mithilfe der Eigenschaften lokale nach Bedingungen und **lokale** **Vorbedingungen** können Sie das Ergebnis einer Aktion ausführlich angeben. Diese Eigenschaften beschreiben die Auswirkung der Aktion, jedoch nicht, wie die Auswirkung erreicht wird.
 
  Klicken Sie zum Festlegen dieser Eigenschaften mit der rechten Maustaste auf die Aktion, und klicken Sie dann auf **Eigenschaften**. Geben Sie Werte in die Eigenschaftenfelder im Eigenschaftenfenster ein.
@@ -319,10 +319,10 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
   - Wenn Sie den Wert **synchron** auf false festlegen, werden Sie angeben, dass der Flow mit der nächsten Aktion fortgesetzt werden kann, bevor der aufgerufene Vorgang beendet wird. Definieren Sie keine Ausgabepins oder ausgehenden Datenflüsse von der Aktion.
 
-## <a name="Concurrent"></a>Parallele Flows
+## <a name="concurrent-flows"></a><a name="Concurrent"></a> Parallele Flows
  Sie können den **Verzweigungs Knoten** und den **joinknoten** verwenden, um zwei oder mehr Threads von Aktivitäten zu beschreiben, die gleichzeitig ausgeführt werden können.
 
- ![Die Verzweigungs-und joinknoten zeigen gleichzeitige Flows an](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
+ ![Die Zweig- und Joinknoten zeigen gleichzeitige Flüsse an](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
 
  Der **Verzweigungs Knoten** (1) bewirkt, dass der Steuerungs Thread in zwei oder mehr Threads aufgeteilt wird. Wenn die vorherige Aktion endet, können alle Aktionen auf der Ausgabeseite der Gabelung beginnen.
 
@@ -358,20 +358,20 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
  Im folgenden Beispiel werden mehrere eingehende und ausgehende Flüsse von Aktionen gezeigt.
 
- ![Parallele objektflows](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
+ ![Parallele Objektflüsse](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
 
  Wenn die Aktion „Kunde stellt genau Daten bereit“ abgeschlossen wird, erzeugt sie zwei Objekte: „Lieferadresse“ und „Kreditkartendetails“. Die beiden Objekte werden anschließend durch unterschiedliche Aktionen verarbeitet.
 
  Da eine Aktion erst beginnen kann, wenn alle zugehörigen Eingaben verfügbar sind, beginnt die letzte Aktion erst, wenn alle zu ihr führenden Aktionen abgeschlossen sind.
 
-### <a name="streams"></a>Streams
+### <a name="streams"></a>Datenströme
  Sie können mit einem Aktivitätsdiagramm eine Pipeline oder eine Reihe von Aktionen beschreiben, die gleichzeitig ausgeführt werden und kontinuierlich Daten von einer Aktion an eine andere übergeben.
 
  Im folgenden Beispiel soll jede Aktion Objekte erzeugen können, während sie weiterhin ausgeführt wird. Da keine Ablaufsteuerungen vorhanden sind, kann jede Aktion beginnen, sobald sie die ersten Objekte empfängt.
 
  Beachten Sie, dass die Konnektoren in diesem Beispiel Objektflüsse sind, da sie alle über mindestens ein Ende in einem Aktivitätsparameterknoten, Objektknoten bzw. auf einem Eingabe- oder Ausgabepin verfügen.
 
- ![Ein Datenfluss](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
+ ![Datenfluss](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
 
  1. Das Beispiel enthält drei Aktivitätsparameterknoten, die die Eingaben und Ausgaben darstellen.
 
@@ -392,13 +392,13 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
   Im Beispiel wird eine Transformation veranschaulicht. Die erste Aktion in Diagramm 1 erzeugt an einem Ausgabepin eine Postleitzahl. Dieser Pin ist mit einem Eingabepin der zweiten Aktion verbunden. Die zweite Aktion erwartet jedoch eine vollständige Adresse. Die Konvertierung von einem Typ in einen anderen wird in einer zweiten Aktivität (AddressLookup) angegeben. Auf diese wird in der Transformation-Eigenschaft des Objektflusses verwiesen. Die AddressLookup-Aktivität enthält einen Aktivitätsparameterknoten für die eingehende Postleitzahl und einen weiteren Aktivitätsparameterknoten für die ausgehende vollständige Adresse.
 
-  ![Objekt Transformation in einem anderen Diagramm definiert](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
+  ![In einem anderen Diagramm definierte Objekttransformation](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
 
   Sie können eine Transformation oder Auswahl auf zweierlei Weise angeben:
 
 - Fügen Sie einen Kommentar an den Eingabe- oder Ausgabepin an.
 
-  - Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie mit dem Kommentar <\<**Transformation**beginnen > > oder <\<> **Auswahl**>.
+  - Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie den Kommentar mit <\<**transformation**>> oder <\<**selection**>> beginnen.
 
 - Geben Sie die Details der Transformation oder Auswahl in einem eigenen Aktivitätsdiagramm an.
 
@@ -426,5 +426,5 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 
    Sie können auch eine Auswahl für einen Objektknoten sowie für einzelne Eingabe- und Ausgabepins definieren. Definieren Sie eine auswahlaktivität wie in der vorherigen Prozedur, und legen Sie dann die **Auswahl** Eigenschaft des Objekt Knotens oder die Eingabe-oder Ausgabe-PIN fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) zu [UML-Komponenten Diagrammen: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) zu [UML-Klassendiagrammen: Referenz](../modeling/uml-class-diagrams-reference.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [Video: Erfassen von Geschäfts Workflows mithilfe von Aktivitäts Diagrammen](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

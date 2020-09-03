@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
+title: 'IDebugPortSupplier2:: canaddport | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724749"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
-Überprüft, ob ein Portlieferant neue Ports hinzufügen kann.
+Hiermit wird überprüft, ob ein Port Lieferant neue Ports hinzufügen kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,10 +38,10 @@ int CanAddPort();
 ```
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn der Port hinzugefügt `S_OK`werden kann, kehrt zurück; Andernfalls können `S_FALSE` diesem Portlieferanten keine Ports hinzugefügt werden, um anzuzeigen.
+ Wenn der Port hinzugefügt werden kann, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben, `S_FALSE` um anzugeben, dass diesem Port Lieferanten keine Ports hinzugefügt werden können.
 
 ## <a name="remarks"></a>Bemerkungen
- Rufen Sie diese Methode auf, bevor Sie die [AddPort-Methode](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) aufrufen, da die letztgenannte Methode den Port erstellt und hinzufügt, was ein zeitaufwändiger Vorgang sein könnte.
+ Rufen Sie diese Methode auf, bevor Sie die [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) -Methode aufrufen, da die zweite Methode den Port erstellt und hinzugefügt wird, was möglicherweise ein zeitaufwendiger Vorgang ist.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

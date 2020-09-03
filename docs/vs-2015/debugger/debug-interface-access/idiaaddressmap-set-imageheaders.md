@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Set_imageheaders | Microsoft-Dokumentation'
+title: 'IDiaAddressMap:: set_imageHeaders | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18fa69929f78d5ae661169a09db97697d98f4d94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198638"
 ---
-# <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
+# <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legt image-Header, um die relative virtuelle adressenübersetzung aktivieren.  
+Legt Bild Header fest, um die relative virtuelle Adressübersetzung zu aktivieren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,24 +37,24 @@ HRESULT set_imageHeaders ( 
   
 #### <a name="parameters"></a>Parameter  
  cbData  
- [in] Anzahl der Bytes der Daten im Anforderungsheader. Muss `n*sizeof(IMAGE_SECTION_HEADER)` , in denen `n` ist die Anzahl der im Abschnittsheader in der ausführbaren Datei.  
+ in Anzahl von Bytes von Header Daten. Muss sein, `n*sizeof(IMAGE_SECTION_HEADER)` wobei `n` die Anzahl der Abschnitts Header in der ausführbaren Datei ist.  
   
  data[]  
- [in] Ein Array von `IMAGE_SECTION_HEADER` Strukturen als die Image-Header verwendet werden soll.  
+ in Ein Array von-  `IMAGE_SECTION_HEADER` Strukturen, die als Bild Header verwendet werden sollen.  
   
  originalHeaders  
- [in] Legen Sie auf `FALSE` Wenn die Image-Header aus dem neuen Abbild, sind `TRUE` , wenn sie das ursprüngliche Bild vor einem Upgrade widerspiegeln. Dies würde in der Regel festgelegt werden, um `TRUE` nur in Kombination mit Aufrufe an die [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode.  
+ in Festgelegt auf `FALSE` , wenn die Bild Header aus dem neuen Bild stammen, `TRUE` Wenn Sie das ursprüngliche Bild vor einem Upgrade widerspiegeln. In der Regel wird dies `TRUE` nur in Kombination mit Aufrufen der [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) -Methode festgelegt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die `IMAGE_SECTION_HEADER` Struktur wird in "Winnt.h" deklariert, und das Bildformat für die Header von Abschnitt der ausführbaren Datei darstellt.  
+## <a name="remarks"></a>Bemerkungen  
+ Die `IMAGE_SECTION_HEADER` -Struktur wird in "Winnt. h" deklariert und stellt das Bild Abschnitts Header Format der ausführbaren Datei dar.  
   
- Relative virtuelle Adresse Berechnungen hängen von der `IMAGE_SECTION_HEADER` Werte. In der Regel ruft der DIA diese über die Programmdatenbankdatei (.pdb). Wenn diese Werte fehlen, kann die DIA nicht relative virtuelle Adressen zu berechnen und die [idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) Methodenrückgabe `FALSE`. Der Client muss dann Aufrufen der [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) Methode, um die relative virtuelle Adresse Berechnungen zu ermöglichen, nach dem fehlenden Header von Images aus dem Image selbst bereitstellen.  
+ Relative virtuelle Adress Berechnungen sind abhängig von den `IMAGE_SECTION_HEADER` Werten. In der Regel ruft der Dia diese aus der Programm Datenbankdatei (. pdb) ab. Wenn diese Werte fehlen, kann die Dia keine relativen virtuellen Adressen berechnen, und die [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) -Methode gibt zurück `FALSE` . Der Client muss dann die [IDiaAddressMap::p ut_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) -Methode aufzurufen, um die relativen virtuellen Adress Berechnungen zu aktivieren, nachdem die fehlenden Bild Header aus dem Image selbst bereitgestellt wurden.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

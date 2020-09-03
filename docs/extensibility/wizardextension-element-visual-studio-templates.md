@@ -1,5 +1,5 @@
 ---
-title: WizardExtension-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: WizardExtension-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740375"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension-Element (Visual Studio-Vorlagen)
-Enthält die Registrierungselemente zum Anpassen des Vorlagen-Assistenten.
+Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.
 
  \<VSTemplate> ... \<WizardExtension>
 
@@ -39,26 +39,26 @@ Enthält die Registrierungselemente zum Anpassen des Vorlagen-Assistenten.
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Versammlung](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Erforderliches Element<br /><br /> Gibt den Namen oder den starken Namen einer Assembly an, die im globalen Assemblycache angezeigt wird. Es muss mindestens `Assembly` ein Element `WizardExtension` in einem Element vorhanden sein.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Erforderliches Element<br /><br /> Der vollqualifizierte Name der Klasse, `IWizard` die die Schnittstelle implementiert. Es muss mindestens `FullClassName` ein Element `WizardExtension` in einem Element vorhanden sein.|
+|[Stadtverordneten](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Gibt den Namen oder den starken Namen einer Assembly an, die im globalen Assemblycache angezeigt wird. Es muss mindestens ein- `Assembly` Element in einem- `WizardExtension` Element vorhanden sein.|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle implementiert. Es muss mindestens ein- `FullClassName` Element in einem- `WizardExtension` Element vorhanden sein.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Enthält alle Metadaten für die Projektvorlage, Elementvorlage oder das Startkit.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Enthält alle Metadaten für die Projektvorlage, die Element Vorlage oder Starter Kit.|
 
 ## <a name="remarks"></a>Bemerkungen
  `WizardExtension` ist ein optionales untergeordnetes Element von `VSTemplate`.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden die Metadaten für [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] die Standardprojektvorlage für eine Windows-Anwendung veranschaulicht.
+ Im folgenden Beispiel werden die Metadaten für die Standard Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung veranschaulicht.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -89,6 +89,6 @@ Enthält die Registrierungselemente zum Anpassen des Vorlagen-Assistenten.
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
-- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)
 - [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)
