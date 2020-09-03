@@ -1,5 +1,5 @@
 ---
-title: Erweitern anderer Teile von Visual Studio 2015 | Microsoft-Dokumentation
+title: Erweitern von anderen Teilen von Visual Studio 2015 | Microsoft-Dokumentation
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,32 +12,32 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204511"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Erweitern anderer Teile von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Es gibt viele weitere Teile der Benutzeroberfläche von Visual Studio, die Sie erweitern können. Hier zeigen wir Ihnen ein Paar.
+Es gibt noch viele weitere Teile der Visual Studio-Benutzeroberfläche, die Sie erweitern können. Hier zeigen wir Ihnen nur einige wenige.
 
-## <a name="creating-a-vspackage"></a>Erstellen eines VSPackage
- Die grundlegenden Bausteine von Visual Studio-Erweiterbarkeit sind VSPackages.  Erfahren Sie, wie eine VSPackage hinzufügen: [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+## <a name="creating-a-vspackage"></a>Erstellen eines VSPackages
+ Die grundlegenden Bausteine der Visual Studio-Erweiterbarkeit sind VSPackages.  Erfahren Sie, wie Sie ein VSPackage hinzufügen: [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
 ## <a name="extending-the-toolbox"></a>Erweitern der Toolbox
- Erfahren Sie, wie Sie die neuen Steuerelemente und andere Elemente zur Toolbox hinzufügen und wie Sie mit der Funktionalität der Toolbox:
+ Erfahren Sie, wie Sie der Toolbox neue Steuerelemente und andere Elemente hinzufügen und wie Sie die Toolbox-Funktionalität verwenden können:
 
 - [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)
 
 - [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extending-the-status-bar"></a>Erweitern der Statusleiste
- Erfahren Sie, wie Lese- und Schreibberechtigungen für die Statusleiste und die Statusanzeige und Animationen und andere Benutzeroberfläche bereitstellen: [Erweitern der Statusleiste](../extensibility/extending-the-status-bar.md).
+ Erfahren Sie, wie Sie in der Statusleiste und in der Statusleiste lesen und schreiben und wie Sie Animationen und andere Benutzeroberflächen bereitstellen: [Erweitern der Statusleiste](../extensibility/extending-the-status-bar.md).
 
-## <a name="creating-custom-start-pages"></a>Erstellen benutzerdefinierte Startseiten
- Erfahren Sie, wie Sie eine eigene Startseite, entweder von Grund auf neu oder aus einem herunterladbaren Start-Seite-Beispiel: [Erstellen einer benutzerdefinierten Startseite](../extensibility/creating-a-custom-start-page.md).
+## <a name="creating-custom-start-pages"></a>Erstellen von benutzerdefinierten Start Seiten
+ Erfahren Sie, wie Sie Ihre eigene Startseite entweder von Grund auf neu oder von einem herunterladbaren Startseiten Beispiel [erstellen: Erstellen einer benutzerdefinierten Start](../extensibility/creating-a-custom-start-page.md)Seite.
 
-## <a name="write-to-the-activity-log"></a>Schreiben Sie in das Aktivitätsprotokoll
- Erfahren Sie, wie in das Aktivitätsprotokoll geschrieben: [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).
+## <a name="write-to-the-activity-log"></a>In das Aktivitätsprotokoll schreiben
+ Erfahren Sie, wie Sie in das Aktivitätsprotokoll schreiben: Gewusst [wie: Verwenden des Aktivitäts Protokolls](../extensibility/how-to-use-the-activity-log.md).

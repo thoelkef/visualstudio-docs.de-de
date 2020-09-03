@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbolsbyaddr:: Next | Microsoft-Dokumentation'
+title: 'IDiaEnumSymbolsByAddr:: Next | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc58c8da54380b8a835d64fcc5dc079bb8d8023e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189651"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die nächste Symbole in der Reihenfolge nach Adresse ab.  
+Ruft die nächsten Symbole in der Order by-Adresse ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,20 +37,20 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parameter  
  celt  
- [in] Die Anzahl der Symbole in der Enumerator abgerufen werden sollen.  
+ in Die Anzahl der Symbole im Enumerator, die abgerufen werden sollen.  
   
  rgelt  
- [out] Ein Array, das mit gefüllt werden soll die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das die gewünschten Symbole darstellen.  
+ vorgenommen Ein Array, das mit dem [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt ausgefüllt werden soll, das die gewünschten Symbole darstellt.  
   
  pceltFetched  
- [out] Gibt die Anzahl der Symbole in der abgerufenen Enumerator zurück.  
+ vorgenommen Gibt die Anzahl der Symbole im abgerufenen Enumerator zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine Symbole mehr vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn keine weiteren Symbole vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode aktualisiert die Position des Enumerators durch die Anzahl der Elemente abgerufen.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode aktualisiert die enumeratorposition um die Anzahl der abgerufenen Elemente.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

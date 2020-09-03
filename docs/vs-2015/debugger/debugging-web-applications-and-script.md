@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Webanwendungen und Skripts | Microsoft-Dokumentation
+title: Debuggen von Webanwendungen und Skript | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155899"
 ---
 # <a name="debugging-web-applications-and-script"></a>Debuggen von Webanwendungen und Skripts
@@ -34,7 +34,7 @@ ms.locfileid: "68155899"
 
 Tabellenlegende:  
   
- In diesem Abschnitt werden allgemeine Debugverfahren für Webanwendungen beschrieben. Weitere Informationen finden Sie unter [Debugger – Grundlagen](../debugger/debugger-basics.md).  
+ In diesem Abschnitt werden allgemeine Debugverfahren für Webanwendungen beschrieben. Weitere Informationen finden Sie unter [Grundlagen des Debuggers](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)  
@@ -59,6 +59,6 @@ Tabellenlegende:
  [IntelliTrace](../debugger/intellitrace.md)  
  Fehler werden einfacher und schneller gefunden, da der Ausführungsverlauf mit IntelliTrace aufgezeichnet wird. Sehen Sie sich die aufgezeichneten Ereignisse und Aufrufe sorgfältig an, um den Zustand der Anwendung zu wichtigen Zeitpunkt zu überprüfen. Debuggen Sie den Code, ohne viele Haltepunkte festzulegen oder Ihre Anwendung häufig neu zu starten. Erfordert Visual Studio Ultimate.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

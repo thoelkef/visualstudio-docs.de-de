@@ -1,5 +1,5 @@
 ---
-title: Projektmappen (. Sln)-Datei | Microsoft-Dokumentation
+title: Lösung (. Sln)-Datei | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,25 +13,25 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d9e045ab707620fe985e34174238081f6168e5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154963"
 ---
 # <a name="solution-sln-file"></a>Projektmappendatei (SLN)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Eine Lösung ist eine Struktur zum Organisieren von Projekten in Visual Studio. Die Lösung verwaltet die Statusinformationen für Projekte in sln (textbasierten, shared) und SUO (binär, benutzerspezifischen Projektmappenoptionen)-Dateien. Weitere Informationen zu SUO-Dateien finden Sie unter [Benutzeroptionen bei Projektmappen (. Suo)-Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+Eine Lösung ist eine Struktur zum Organisieren von Projekten in Visual Studio. Die Lösung verwaltet die Zustandsinformationen für Projekte in SLN-Dateien (Text basiert, Shared) und suo (binäre, benutzerspezifische Projektmappenoptionen). Weitere Informationen zu suo-Dateien finden Sie unter [Solution User Options (. Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
- Wenn das VSPackage geladen wird, als Ergebnis in der SLN-Datei verwiesen wird, wird die Umgebung ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> , die in der SLN-Datei gelesen.  
+ Wenn das VSPackage als Ergebnis eines referenzierten in der SLN-Datei geladen wird, ruft die Umgebung <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> auf, um in der SLN-Datei zu lesen.  
   
- Die SLN-Datei enthält Informationen, die die Umgebung verwendet wird, suchen und laden die Name-Wert-Parameter für die beibehaltenen Daten und das Projekt VSPackages, die sie verweist. Wenn ein Benutzer eine Projektmappe geöffnet wird, die Umgebung durchläuft die `preSolution`, `Project`, und `postSolution` Informationen in der SLN-Datei zum Laden der Projektmappe, Projekte, in der Projektmappe, und dauerhaft gespeicherten Informationen angefügt wird, mit der Lösung.  
+ Die SLN-Datei enthält textbasierte Informationen, die die Umgebung verwendet, um die Name-Wert-Parameter für die persistenten Daten und die Projekt-VSPackages zu suchen und zu laden, auf die verwiesen wird. Wenn ein Benutzer eine Projekt Mappe öffnet, durchläuft die Umgebung `preSolution` die `Project` Informationen, und `postSolution` in der SLN-Datei, um die Projekt Mappe, die Projekte in der Projekt Mappe und alle beibehaltenen Informationen, die an die Lösung angefügt sind, zu laden.  
   
- Jedes Projekt die Datei enthält zusätzliche Informationen, die von der Umgebung zum Auffüllen der Hierarchie des Projekts Elemente lesen. Durch das Projekt wird der Datenpersistenz Hierarchie gesteuert wird. die Daten ist normalerweise nicht in der SLN-Datei gespeichert, obwohl absichtlich Projektinformationen zur sln-Datei schreiben können, wenn Sie dazu auf. Weitere Informationen in Bezug auf Dauerhaftigkeit finden Sie unter [Projektpersistenz](../../extensibility/internals/project-persistence.md) und [öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md).  
+ Die Datei jedes Projekts enthält zusätzliche Informationen, die von der Umgebung gelesen werden, um die Hierarchie mit den Elementen dieses Projekts aufzufüllen. Die Daten Persistenz der Hierarchie wird vom Projekt gesteuert. die Daten werden normalerweise nicht in der SLN-Datei gespeichert, obwohl Sie die Projektinformationen absichtlich in die SLN-Datei schreiben können, wenn Sie sich dafür entscheiden. Weitere Informationen zur Persistenz finden Sie unter [Projekt Persistenz](../../extensibility/internals/project-persistence.md) und [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md).  
   
-## <a name="solution-file-contents"></a>Inhalt der Projektmappe-Datei  
- Die SLN-Datei besteht aus Abschnitten wie im folgenden Code dargestellt.  
+## <a name="solution-file-contents"></a>Inhalt der Lösungs Datei  
+ Die SLN-Datei besteht aus mehreren Abschnitten, wie im folgenden Code veranschaulicht.  
   
 ```  
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1", "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"  
@@ -58,9 +58,9 @@ Global
 EndGlobal  
 ```  
   
- Um eine Lösung zu laden, führt die Umgebung die folgende Sequenz von Aufgaben.  
+ Zum Laden einer Projekt Mappe führt die Umgebung die folgende Tasksequenz aus.  
   
-1. Die Umgebung den globalen Abschnitt der SLN-Datei liest und verarbeitet Sie alle Abschnitte, die markiert `preSolution`. In diesem Fall besteht eine solche Anweisung zur Verfügung:  
+1. Die Umgebung liest den globalen Abschnitt der SLN-Datei und verarbeitet alle markierten Abschnitte `preSolution` . In diesem Fall gibt es eine solche Anweisung:  
   
    ```  
    GlobalSection(SolutionConfiguration) = preSolution  
@@ -68,11 +68,11 @@ EndGlobal
         ConfigName.1 = Release  
    ```  
   
-    Wenn die Umgebung liest die `GlobalSection('name')` -Tag, ordnet es den Namen für ein VSPackage mithilfe der Registrierung. Der Name des Schlüssels sollte vorhanden sein, in der Registrierung unter [HKLM\\< Application ID Registrierungsstamm\>\SolutionPersistence\AggregateGUIDs]. Der Standardwert ist die Paket-GUID (REG_SZ) des VSPackage, die die Einträge geschrieben hat.  
+    Wenn die Umgebung das `GlobalSection('name')` Tag liest, ordnet Sie den Namen mithilfe der Registrierung einem VSPackage zu. Der Schlüssel Name muss in der Registrierung unter [HKLM \\<Application ID Registry root \> \solutionpersistence\aggregateguids] vorhanden sein. Der Standardwert der Schlüssel ist die Paket-GUID (REG_SZ) des VSPackage, das die Einträge geschrieben hat.  
   
-2. Die Umgebung, lädt das VSPackage, Aufrufe `QueryInterface` für das VSPackage für die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> -Schnittstelle ab und ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> Methode mit den Daten in den Abschnitt aus, damit das VSPackage die Daten speichern kann. Dieser Prozess wird von die Umgebung für die einzelnen wiederholt `preSolution` Abschnitt.  
+2. Die Umgebung lädt das VSPackage, ruft das `QueryInterface` VSPackage für die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Schnittstelle auf und ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> Methode mit den Daten im-Abschnitt auf, damit das VSPackage die Daten speichern kann. Die Umgebung wiederholt diesen Vorgang für jeden `preSolution` Abschnitt.  
   
-3. Die Umgebung durchläuft die persistenten Blöcken Projekt ab. In diesem Fall ist ein Projekt.  
+3. Die Umgebung durchläuft die Projekt Beibehaltungs Blöcke. In diesem Fall ist ein Projekt vorhanden.  
   
    ```  
    Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",  
@@ -80,27 +80,27 @@ EndGlobal
    EndProject  
    ```  
   
-    Diese Anweisung enthält die eindeutige Projekt-GUID und die GUID des Projekttyps. Diese Informationen werden von der Umgebung verwendet, um die Projektdatei oder Dateien aus der die Lösung suchen, und das VSPackage, die für jedes Projekt erforderlich sind. Das Projekt, die GUID wird an <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> um bestimmte VSPackage im Zusammenhang mit der das Projekt zu laden, klicken Sie dann das Projekt vom VSPackage geladen wird. In diesem Fall ist das VSPackage, die für dieses Projekt geladen wird, Visual Basic.  
+    Diese Anweisung enthält die eindeutige Projekt-GUID und die Projekttyp-GUID. Diese Informationen werden von der Umgebung verwendet, um die Projektdateien zu suchen, die zur Projekt Mappe gehören, und das VSPackage, das für jedes Projekt erforderlich ist. Die Projekt-GUID wird an weitergegeben, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> um das spezifische VSPackage zu laden, das mit dem Projekt verknüpft ist, und das Projekt wird dann vom VSPackage geladen. In diesem Fall ist das VSPackage, das für dieses Projekt geladen wird, Visual Basic.  
   
-    Jedes Projekt kann eine eindeutige Projekt-Instanz-ID beibehalten wird, damit es von anderen Projekten in der Projektmappe nach Bedarf aufgerufen werden kann. Wenn die Projektmappe und Projekte unter quellcodeverwaltung sind, sollte der Pfad zum Projekt im Idealfall relativ zum Pfad der Projektmappe sein. Wenn die Lösung zuerst geladen wird, darf nicht die Projektdateien auf dem Computer des Benutzers sein. Wenn Sie die Projektdatei, die auf dem Server relativ zu der Projektmappendatei gespeichert, ist es relativ einfach, für die Projektdatei wurde gefunden und auf dem Computer des Benutzers kopiert werden. Anschließend kopiert und lädt den Rest der Dateien für das Projekt erforderlich sind.  
+    Jedes Projekt kann eine eindeutige Projekt Instanz-ID persistent speichern, damit auf Sie nach Bedarf von anderen Projekten in der Projekt Mappe zugegriffen werden kann. Wenn sich die Projekt Mappe und die Projekte unter Quell Code Verwaltung befinden, sollte der Pfad zum Projekt im Idealfall relativ zum Pfad der Projekt Mappe sein. Wenn die Projekt Mappe zum ersten Mal geladen wird, dürfen sich die Projektdateien nicht auf dem Computer des Benutzers befinden. Wenn die Projektdatei auf dem Server relativ zur Projektmappendatei gespeichert ist, ist es relativ einfach, die Projektdatei zu finden und auf den Computer des Benutzers zu kopieren. Anschließend werden die restlichen Dateien kopiert und geladen, die für das Projekt benötigt werden.  
   
-4. Basierend auf den Informationen im Abschnitt "Projekt" der SLN-Datei enthalten sind, lädt die Umgebung jeder Projektdatei. Klicken Sie dann dient das Projekt selbst zum Auffüllen der Projekthierarchie, und laden alle geschachtelten Projekte zur Verfügung.  
+4. Basierend auf den Informationen, die im Projektabschnitt der SLN-Datei enthalten sind, lädt die Umgebung jede Projektdatei. Das Projekt selbst ist dann dafür verantwortlich, die Projekt Hierarchie aufzufüllen und alle in der Tabelle befindlichen Projekte zu laden.  
   
-5. Nachdem alle Abschnitte der SLN-Datei verarbeitet werden, wird die Lösung wird im Projektmappen-Explorer angezeigt und ist für die Änderungen durch den Benutzer bereit.  
+5. Nachdem alle Abschnitte der SLN-Datei verarbeitet wurden, wird die Projekt Mappe in Projektmappen-Explorer angezeigt und kann vom Benutzer geändert werden.  
   
-   Wenn alle VSPackage, das ein Projekt in der Lösung implementiert ein Fehler auftritt, zu laden, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> Methode wird aufgerufen, und jedes andere Projekt in der Projektmappe ist die Möglichkeit erhält, Änderungen zu ignorieren, haben sie möglicherweise während des Ladens vorgenommen. Wenn Analyse Fehler auftreten, so viele Informationen wie möglich mit den Projektmappendateien beibehalten, und die Umgebung zeigt ein Dialogfeld, das dem Benutzer darauf hinzuweisen, dass die Lösung ist beschädigt.  
+   Wenn ein VSPackage, das ein Projekt in der Projekt Mappe implementiert, nicht geladen werden kann, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> wird die-Methode aufgerufen, und jedes andere Projekt in der Projekt Mappe erhält die Möglichkeit, Änderungen zu ignorieren, die Sie möglicherweise beim Laden vorgenommen haben. Wenn Analyse-Fehler auftreten, werden so viele Informationen wie möglich in den Projektmappendateien beibehalten, und in der Umgebung wird ein Dialogfeld angezeigt, in dem der Benutzer darauf gewarnt wird, dass die Lösung beschädigt ist  
   
-   Wenn die Lösung gespeichert oder geschlossen ist, wird die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> Methode wird aufgerufen, und übergeben Sie in der Hierarchie, um festzustellen, ob Änderungen vorgenommen haben, um die Projektmappe, die in der SLN-Datei eingegeben werden müssen. Ein null-Wert, der an übergebene `QuerySaveSolutionProps` in <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>, gibt an, dass die Informationen für die Projektmappe gespeichert werden sollte. Wenn der Wert nicht null ist, wird die dauerhaft gespeicherten Informationen für ein bestimmtes Projekt, das bestimmt, indem der Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle.  
+   Wenn die Projekt Mappe gespeichert oder geschlossen wird, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> wird die-Methode aufgerufen und an die-Hierarchie übergeben, um festzustellen, ob an der Projekt Mappe Änderungen vorgenommen wurden, die in die SLN-Datei eingegeben werden müssen. Ein NULL-Wert, der an in übermittelt wird, gibt an, `QuerySaveSolutionProps` <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS> dass Informationen für die Lösung persistent gespeichert werden. Wenn der Wert nicht NULL ist, gelten die beibehaltenen Informationen für ein bestimmtes Projekt, das durch den Zeiger auf die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle bestimmt wird.  
   
-   Wenn Informationen gespeichert werden, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> Schnittstelle aufgerufen wird, mit einem Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> Methode. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> Methode wird dann aufgerufen, von der Umgebung zum Abrufen von Name-Wert-Paare aus `IPropertyBag` Schnittstelle, und Schreiben der Informationen in die SLN-Datei.  
+   Wenn Informationen gespeichert werden sollen, wird die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> Schnittstelle mit einem Zeiger auf die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> Methode aufgerufen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> -Methode wird dann von der Umgebung aufgerufen, um die Name-Wert-Paare aus der `IPropertyBag` Schnittstelle abzurufen und die Informationen in die SLN-Datei zu schreiben.  
   
-   `SaveSolutionProps` und `WriteSolutionProps` Objekte rekursiv aufgerufen werden, von der Umgebung zum Abrufen von Informationen gespeichert werden, aus der `IPropertyBag` Schnittstelle, bis alle Änderungen in der SLN-Datei vorgenommen wurden. Auf diese Weise können Sie sicherstellen, dass die Informationen mit der Lösung und zur Verfügung beim nächsten der Projektmappe öffnen beibehalten werden.  
+   `SaveSolutionProps` -und- `WriteSolutionProps` Objekte werden rekursiv von der Umgebung aufgerufen, um Informationen abzurufen, die von der Schnittstelle gespeichert werden, `IPropertyBag` bis alle Änderungen in die SLN-Datei eingegeben wurden. Auf diese Weise können Sie sicherstellen, dass die Informationen mit der Lösung persistent gespeichert werden und beim nächsten Öffnen der Lösung verfügbar sind.  
   
-   Alle geladenen VSPackages wird aufgelistet, um festzustellen, ob hat nichts in die SLN-Datei zu speichern. Es ist nur zur Ladezeit, die die Registrierungsschlüssel abgefragt werden. Die Umgebung weiß über alle geladenen Pakete, da sie in den Arbeitsspeicher zum Zeitpunkt sind die Projektmappe gespeichert wird.  
+   Jedes geladene VSPackage wird aufgezählt, um festzustellen, ob es Elemente enthält, die in der SLN-Datei gespeichert werden sollen. Es ist nur während der Ladezeit, dass die Registrierungsschlüssel abgefragt werden. Die Umgebung kennt alle geladenen Pakete, da Sie sich im Speicher befinden, wenn die Projekt Mappe gespeichert wird.  
   
-   Nur die SLN-Datei Einträge in enthält die `preSolution` und `postSolution` Abschnitte. In der SUO-Datei sind keine ähnliche Abschnitte, da die Lösung diese Informationen zum Laden von datenanforderungen. Die SUO-Datei enthält die benutzerspezifischen Optionen, z. B. private Anmerkungen, die, die nicht freigegeben oder unter quellcodeverwaltung gestellt werden sollen.  
+   Nur die SLN-Datei enthält Einträge in den `preSolution` `postSolution` Abschnitten und. Die SUO-Datei enthält keine ähnlichen Abschnitte, da diese Informationen für die Lösung erforderlich sind, um ordnungsgemäß geladen zu werden. Die SUO-Datei enthält benutzerspezifische Optionen, z. b. private Notizen, die nicht für die Freigabe oder Platzierung in der Quell Code Verwaltung vorgesehen sind.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
- [Benutzeroptionen bei Projektmappen (. Suo)-Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
- [Projektmappen](../../extensibility/internals/solutions-overview.md)
+ [Projektmappenbenutzeroptionen (. Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
+ [Lösungen](../../extensibility/internals/solutions-overview.md)

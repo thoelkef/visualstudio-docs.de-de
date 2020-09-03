@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7548e1b983384029f8019ef0b140aa5abc6ee7fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189626"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Positioniert den Enumerator durch eine Suche durch relative virtuelle Adresse (RVA).  
+Positioniert den Enumerator, indem eine Suche durch eine relative virtuelle Adresse (RVA) durchgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,15 +36,15 @@ HRESULT symbolByRVA ( 
   
 #### <a name="parameters"></a>Parameter  
  relativeVirtualAddress  
- [in] Adresse relativ zum Anfang des Image.  
+ in Die Adresse relativ zum Start des Bilds.  
   
  ppsymbol  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das Symbol gefunden darstellt.  
+ vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das gefundene Symbol darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn das Symbol nicht gefunden werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt zurück, `S_FALSE` Wenn das Symbol nicht gefunden wurde. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
+ [IDiaEnumSymbolsByAddr:: symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

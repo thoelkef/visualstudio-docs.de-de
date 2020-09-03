@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef9f42bfb24caaf2775ba2c70110eaaa5d616116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204593"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gibt an, ob die **Durchsuchen** Schaltfläche ist verfügbar in der **neues Projekt** Dialogfeld, damit Benutzer können leicht ändern, das Standardverzeichnis, in dem ein neues Projekt gespeichert ist.  
+Gibt an, ob die Schaltfläche " **Durchsuchen** " im Dialogfeld " **Neues Projekt** " verfügbar ist, sodass Benutzer das Standardverzeichnis, in dem ein neues Projekt gespeichert wird, leicht ändern können.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -52,12 +52,12 @@ Gibt an, ob die **Durchsuchen** Schaltfläche ist verfügbar in der **neues Proj
 ## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false`, der angibt, ob zum Anzeigen der **Durchsuchen** Schaltfläche der **neues Projekt** Dialogfeld.  
+ Der Text muss entweder `true` oder lauten `false` und zeigt an, ob die Schaltfläche **Durchsuchen** im Dialogfeld **Neues Projekt** angezeigt werden soll.  
   
-## <a name="remarks"></a>Hinweise  
- `EnableLocationBrowseButton` ist ein optionales Element. Der Standardwert ist `true`, welche zeigt die **Durchsuchen** Schaltfläche der **neues Projekt** Dialogfeld.  
+## <a name="remarks"></a>Bemerkungen  
+ `EnableLocationBrowseButton` ist ein optionales Element. Der Standardwert ist `true` , wodurch die Schaltfläche **Durchsuchen** im Dialogfeld **Neues Projekt** angezeigt wird.  
   
- In der **neues Projekt** im Dialogfeld die **Speicherort** Textfeld gibt das Verzeichnis, in dem ein neues Projekt gespeichert ist. Die **Durchsuchen** Schaltfläche können Sie dieses Verzeichnis zu ändern, indem Sie die Anzeige der **Projektspeicherort** Dialogfeld können Sie leicht zu einem anderen Verzeichnis zu navigieren, die von Ihrem Computer verfügbar ist, und Wählen Sie sie, wie das Verzeichnis, in dem das neue Projekt gespeichert ist.  
+ Im Dialogfeld **Neues Projekt** gibt das Textfeld **Speicherort** das Verzeichnis an, in dem ein neues Projekt gespeichert wird. Mithilfe der Schaltfläche **Durchsuchen** können Sie dieses Verzeichnis ändern, indem Sie das Dialogfeld **Projekt Speicherort** anzeigen, mit dessen Hilfe Sie problemlos zu einem anderen Verzeichnis navigieren können, das auf Ihrem Computer verfügbar ist, und es dann als das Verzeichnis auswählen, in dem das neue Projekt gespeichert wird.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden die Metadaten für eine Windows-Anwendung in [!INCLUDE[csprcs](../includes/csprcs-md.md)] veranschaulicht.  
@@ -87,6 +87,6 @@ Gibt an, ob die **Durchsuchen** Schaltfläche ist verfügbar in der **neues Proj
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md)

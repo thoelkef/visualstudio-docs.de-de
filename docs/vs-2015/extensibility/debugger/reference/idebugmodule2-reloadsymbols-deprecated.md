@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft-Dokumentation
+title: 'IDebugModule2:: ReloadSymbols_Deprecated | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ce816e20e59d407f9b3cd84e3dffa703d84a324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189540"
 ---
-# <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
+# <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-VERALTET. VERWENDEN SIE NICHT. Lädt die Symbole für dieses Modul erneut.  
+VERALTET. Verwenden Sie nicht. Lädt die Symbole für dieses Modul erneut.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,17 +42,17 @@ int ReloadSymbols( 
   
 #### <a name="parameters"></a>Parameter  
  `pszUrlToSymbols`  
- [in] Der Pfad zu den Symbolspeicher.  
+ in Der Pfad zum Symbol Speicher.  
   
  `pbstrDebugMessage`  
- [out] Gibt eine informationsmeldung, z. B. eine Status- oder Fehlerinformationen Nachricht, die rechts neben den Namen des Moduls in das Fenster "Module" angezeigt wird.  
+ vorgenommen Gibt eine Informations Meldung zurück, z. b. einen Status oder eine Fehlermeldung, die rechts neben dem Modulnamen im Fenster "Module" angezeigt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Eine Debug-Engine sollte immer zurückgeben `E_FAIL`.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Eine Debug-Engine sollte immer zurückgeben `E_FAIL` .  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird nicht mehr unterstützt. Implementieren der [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) Methode stattdessen.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode wird nicht mehr unterstützt. Implementieren Sie stattdessen die [loadsymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) -Methode.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

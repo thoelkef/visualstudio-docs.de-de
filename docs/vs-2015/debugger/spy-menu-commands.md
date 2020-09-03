@@ -1,5 +1,5 @@
 ---
-title: Befehle im Menü Spy | Microsoft-Dokumentation
+title: Spy-Menübefehle | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,31 +12,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb8ecf72e83f12900db77b912d66ff28493ca98e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153850"
 ---
 # <a name="spy-menu-commands"></a>Befehle im Menü "Spy"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die **Spy** Menü enthält Befehle zum Arbeiten mit Spy++ Windows und Ansichten.  
+Das Menü **Spy** enthält Befehle für das Arbeiten mit Spy++-Fenstern und -Ansichten.  
   
  **Windows**  
- Öffnet eine neue Windows-Ansicht an.  
+ Öffnet eine neue Windows-Ansicht.  
   
  **Prozesse**  
- Öffnet eine neue Prozessansicht an.  
+ Öffnet eine neue Prozessansicht.  
   
  **Threads**  
- Öffnet eine neue Threadansicht an.  
+ Öffnet eine neue Thread Ansicht.  
   
  **Meldungen protokollieren**  
- Öffnet eine neue Nachrichten Ansicht und öffnet die [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md) für die Ansicht.  
+ Öffnet eine neue Meldungs Ansicht und öffnet das [Dialog Feld Nachrichten Optionen](../debugger/message-options-dialog-box.md) für die Ansicht.  
   
  **Fenster suchen**  
- Zeigt die **"FindWindow"** Dialogfeld ein Fenster mit der Maus auswählen.  
+ Zeigt das Dialogfeld " **FindWindow** " an, in dem ein Fenster mit der Maus ausgewählt wird.  
   
  **Beenden**  
- Schließt das Spy++-Hilfsprogramm.
+ Schließt das Spy + +-Hilfsprogramm.

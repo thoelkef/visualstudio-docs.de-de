@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetUnderlyingSymbol | Microsoft-Dokumentation
+title: 'Idebugenenfield:: getunderlyingsymbol | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1841ca2bf9bd5a43ec5a16a515a03769db64ea15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188972"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , der den Namen der Enumeration darstellt.  
+Diese Methode gibt ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Namen der Enumeration darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,15 +40,15 @@ int GetUnderlyingSymbol(
   
 #### <a name="parameters"></a>Parameter  
  `ppField`  
- [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , beschreibt der Name dieser Enumeration.  
+ vorgenommen Gibt das [idebugfeld](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Namen dieser Enumeration beschreibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Der Name der Enumeration enthält auch den Typ der Enumeration, die auf einen Speicherbereich gebunden ist, mithilfe von [binden](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
+## <a name="remarks"></a>Bemerkungen  
+ Der Name der-Enumeration enthält auch den Typ der-Enumeration, der mithilfe von [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)an eine Speicheradresse gebunden wird.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugenenfield](../../../extensibility/debugger/reference/idebugenumfield.md)   
+ [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md)   
+ [Zwick](../../../extensibility/debugger/reference/idebugbinder-bind.md)

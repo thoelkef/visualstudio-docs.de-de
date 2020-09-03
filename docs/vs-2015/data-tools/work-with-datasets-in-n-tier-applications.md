@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657817"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Arbeiten mit Datasets in N-Tier-Anwendungen
@@ -61,7 +61,7 @@ N-Tier-Daten Anwendungen * sind datenzentrierte Anwendungen, die in mehrere logi
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-- [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

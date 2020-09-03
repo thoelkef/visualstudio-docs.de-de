@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d15d14c59049a2a514a6c779c23875c2dfccb539
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657967"
 ---
 # <a name="constant-nodes"></a>Konstante Knoten
@@ -28,7 +28,7 @@ Im Shader-Designer stellen konstante Knoten Literalwerte und interpolierte Verte
 
 ## <a name="constant-node-reference"></a>Verzeichnis konstanter Knoten
 
-|Knoten|Details|Eigenschaften|
+|Node|Details|Eigenschaften|
 |----------|-------------|----------------|
 |**Kameravektor**|Der Vektor, der sich vom aktuellen Pixel bis zur Kamera im Raum erstreckt.<br /><br /> Damit können Sie Reflektionen im Raum berechnen.<br /><br /> **Ausgabe**<br /><br /> `Output`: `float3`<br /> Der Vektor vom aktuellen Pixel bis zur Kamera|Keiner|
 |**Farbkonstante**|Ein konstanter Farbwert<br /><br /> **Ausgabe**<br /><br /> `Output`: `float4`<br /> Der Farbwert.|**Ausgabe**<br /> Der Farbwert.|

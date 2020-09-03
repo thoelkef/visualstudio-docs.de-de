@@ -1,5 +1,5 @@
 ---
-title: Glossar der Begriffe zu MSBuild
+title: Glossar mit MSBuild-Begriffen
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154841"
 ---
 # <a name="msbuild-glossary"></a>MSBuild-Glossar
@@ -28,7 +28,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Batchverarbeitung
 
- Batchverarbeitung bedeutet, dass Elemente anhand der Elementmetadaten in als *Batches* bezeichnete Kategorien unterteilt werden, über die anschließend jeweils ein Ziel oder eine Aufgabe ausgeführt wird. Die Batchverarbeitung ist die MSBuild-Entsprechung des Schleifenkonstrukts. Weitere Informationen finden Sie unter [Batching](../msbuild/msbuild-batching.md) (MSBuild-Batchverarbeitung).
+ Batchverarbeitung bedeutet, dass Elemente anhand der Elementmetadaten in als *Batches* bezeichnete Kategorien unterteilt werden, über die anschließend jeweils ein Ziel oder eine Aufgabe ausgeführt wird. Die Batchverarbeitung ist die MSBuild-Entsprechung des Schleifenkonstrukts. Weitere Informationen finden Sie unter [MSBuild Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).
 
  Buildumfang
 
@@ -38,7 +38,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Siehe *Projekt, untergeordnet*.
 
- Bedingung
+ condition
 
  Viele MSBuild-Elemente können bedingt definiert werden, das heißt, im Element wird das `Condition`-Attribut angegeben. Sofern wenn die Bedingung nicht `true` ergibt, wird der Inhalt bedingter Elemente ignoriert. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).
 
@@ -70,7 +70,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Siehe Elementfunktion.
 
- Element
+ item
 
  Elemente bilden Eingaben für das Buildsystem und werden auf Grundlage ihrer Elementnamen in Elementtypen gruppiert. Elemente stellen in der Regel Dateien dar. Da Elemente anhand des Elementtyps benannt werden, zu dem sie gehören, können die Begriffe *Element* und *Elementwert* synonym verwendet werden. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
@@ -80,7 +80,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Elementfunktion
 
- Elementfunktionen rufen Informationen über die Elemente im Projekt ab. Diese Funktionen vereinfachen das Abrufen von Distinct()-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente. Es gibt Funktionen zum Bearbeiten von Elementpfaden und -zeichenfolgen. Weitere Informationen finden Sie unter [Item Functions](../msbuild/item-functions.md) (Elementfunktionen).
+ Elementfunktionen rufen Informationen über die Elemente im Projekt ab. Diese Funktionen vereinfachen das Abrufen von Distinct()-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente. Es gibt Funktionen zum Bearbeiten von Elementpfaden und -zeichenfolgen. Weitere Informationen finden Sie unter [Element Funktionen](../msbuild/item-functions.md) .
 
  Elementmetadaten
 
@@ -92,7 +92,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Metadaten, Element
 
- Elementmetadaten sind Auflistungen von Name-Wert-Paaren, die einem Element zugeordnet sind. Metadaten enthalten beschreibende Informationen zum Element und sind, außer bei bekannten Metadaten, optional. Weitere Informationen finden Sie unter [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente).
+ Elementmetadaten sind Auflistungen von Name-Wert-Paaren, die einem Element zugeordnet sind. Metadaten enthalten beschreibende Informationen zum Element und sind, außer bei bekannten Metadaten, optional. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
  Metadaten, bekannte
 
@@ -102,7 +102,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Die Fähigkeit eines Anwendungs- oder Assemblyprojekts, auf viele verschiedene CLRs und Frameworks von MSBuild und Visual Studio abzuzielen.
 
- Profil
+ profile
 
  Eine Teilmenge des vollständigen Frameworks. Dies wird verwendet, um die Menge zu verringern, die auf einen Computer heruntergeladen werden muss.
 
@@ -124,15 +124,15 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Eigenschaft, Funktion
 
- Als Eigenschaftenfunktion wird eine Systemeigenschaft oder -methode bezeichnet, die zum Auswerten von MSBuild-Skripts verwendet werden kann. Mit Eigenschaftenmethoden ist es möglich, die Systemzeit zu lesen, Zeichenfolgen zu vergleichen, nach regulären Ausdrücke zu suchen und weitere Aktionen auszuführen. Weitere Informationen finden Sie unter [Property Functions](../msbuild/property-functions.md) (Eigenschaftenfunktionen).
+ Als Eigenschaftenfunktion wird eine Systemeigenschaft oder -methode bezeichnet, die zum Auswerten von MSBuild-Skripts verwendet werden kann. Mit Eigenschaftenmethoden ist es möglich, die Systemzeit zu lesen, Zeichenfolgen zu vergleichen, nach regulären Ausdrücke zu suchen und weitere Aktionen auszuführen. Weitere Informationen finden Sie unter [Property Functions (Eigenschaften Funktionen](../msbuild/property-functions.md)).
 
  Eigenschaftenfunktion, geschachtelt
 
- Eigenschaftenfunktionen können zu komplexeren Funktionen kombiniert werden. Ein auf ein Objekt angewendeter
+ Eigenschaftenfunktionen können zu komplexeren Funktionen kombiniert werden. Beispiel:
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- Weitere Informationen finden Sie unter [Property Functions](../msbuild/property-functions.md) (Eigenschaftenfunktionen).
+ Weitere Informationen finden Sie unter [Property Functions (Eigenschaften Funktionen](../msbuild/property-functions.md)).
 
  Eigenschaft, global
 
@@ -172,7 +172,7 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  target
 
- In einem Ziel werden Aufgaben in einer bestimmten Reihenfolge gruppiert und Abschnitte der Projektdatei als Einstiegspunkte in den Buildprozess verfügbar gemacht. Weitere Informationen finden Sie unter [Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele).
+ In einem Ziel werden Aufgaben in einer bestimmten Reihenfolge gruppiert und Abschnitte der Projektdatei als Einstiegspunkte in den Buildprozess verfügbar gemacht. Weitere Informationen finden Sie unter [Ziele](../msbuild/msbuild-targets.md).
 
  Ziel, Build
 
@@ -206,18 +206,18 @@ Mit den folgenden Begriffen werden Microsoft Build Engine (MSBuild) und deren Ko
 
  Eine TARGETS-Datei ist eine Projektdatei, die vor allem Ziele und Aufgaben zur Steuerung des Builds enthält. Üblicherweise besitzen solche Dateien die Dateierweiterung .targets. TARGETS-Dateien werden meist am Ende zugeordneter Projektdateien importiert.
 
- Aufgabe
+ task
 
  Aufgaben sind Einheiten ausführbaren Codes, die in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekten zum Ausführen von Buildvorgängen verwendet werden. Eine Aufgabe kann beispielsweise Eingabedateien kompilieren oder ein externes Tool ausführen. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
  Transformieren
 
- Eine Transformation ist eine 1:1-Konvertierung von einer Elementauflistung in eine andere. Über Transformationen können nicht nur Elementauflistungen in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. Weitere Informationen finden Sie unter [Transforms](../msbuild/msbuild-transforms.md) (MSBuild-Transformationen).
+ Eine Transformation ist eine 1:1-Konvertierung von einer Elementauflistung in eine andere. Über Transformationen können nicht nur Elementauflistungen in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md).
 
  Bekannte Metadaten
 
  Siehe *Metadaten, bekannt*.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild1](../msbuild/msbuild.md)

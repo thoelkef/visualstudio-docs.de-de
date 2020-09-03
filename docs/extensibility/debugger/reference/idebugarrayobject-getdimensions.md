@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetDimensions | Microsoft Docs
+title: 'Idebugarrayobject:: GetDimensions | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 527f79724aeac0de58d0ae63c9c2408ed2eca9ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736163"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
@@ -40,16 +40,16 @@ int GetDimensions(
 
 ## <a name="parameters"></a>Parameter
 `dwCount`\
-[in] Die Anzahl der abzurufenden Dimensionen.
+in Die Anzahl der abzurufenden Dimensionen.
 
 `dwDimensions`\
-[in, out] Ein Array, das mit den Größen jeder Dimension gefüllt wird. `dwCount`gibt die maximale Größe `dwDimensions` des Arrays an.
+[in, out] Ein Array, das mit den Größen der einzelnen Dimensionen aufgefüllt wird. `dwCount` Gibt die maximale Größe des `dwDimensions` Arrays an.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Ein mehrdimensionales Array kann für jede Dimension unterschiedliche Größen aufweisen. Wenn sie z. B. `myarray[3][2][6]`das dreidimensionale Array erhält, würde diese `dwDimensions` Methode 3, 2 und 6 im Parameter in dieser Reihenfolge zurückgeben.
+ Ein mehrdimensionales Array kann für jede Dimension über unterschiedliche Größen verfügen. Bei Angabe des dreidimensionalen Arrays `myarray[3][2][6]` würde diese Methode z. b. 3, 2 und 6 im- `dwDimensions` Parameter in dieser Reihenfolge zurückgeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

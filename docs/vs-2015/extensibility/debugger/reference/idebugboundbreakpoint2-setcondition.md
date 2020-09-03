@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Microsoft-Dokumentation
+title: 'IDebugBoundBreakpoint2:: setcondition | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8ac19bfe2109d7885265342ccc5ef4d358727d49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156205"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Legt fest oder ändert die Bedingung, die dieser gebundene Haltepunkt zugeordnet.  
+Legt die diesem gebundenen Haltepunkt zugeordnete Bedingung fest oder ändert diese.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,15 +41,15 @@ int SetCondition( 
   
 #### <a name="parameters"></a>Parameter  
  `bpCondition`  
- [in] Ein Wert aus der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Enumeration, die die Bedingung beschreibt.  
+ in Ein Wert aus der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Enumeration, der die Bedingung beschreibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück `E_BP_DELETED` , wenn der Zustand des gebundenen Haltepunkt Objekts auf festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
   
-## <a name="remarks"></a>Hinweise  
- Jede Bedingung, die zuvor dieser Haltepunkt zugeordnet war, geht verloren.  
+## <a name="remarks"></a>Bemerkungen  
+ Alle Bedingungen, die diesem Breakpoint zuvor zugeordnet waren, gehen verloren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
