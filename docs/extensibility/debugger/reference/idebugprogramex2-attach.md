@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach | Microsoft Docs
+title: 'IDebugProgramEx2:: Attach | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722389"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
@@ -45,22 +45,22 @@ int Attach( 
 
 ## <a name="parameters"></a>Parameter
 `pCallback`\
-[in] Ein [IDebugEventCallback2-Objekt,](../../../extensibility/debugger/reference/idebugeventcallback2.md) das die Rückruffunktion darstellt, an die das angefügte Debugmodul Ereignisse sendet.
+in Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das die Rückruffunktion darstellt, an die die angefügte Debug-Engine Ereignisse sendet.
 
 `dwReason`\
-[in] Ein Wert [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) aus der ATTACH_REASON-Enumeration, der den Grund für den Anfügevorgang beschreibt.
+in Ein Wert aus der [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) Enumeration, die den Grund für den Anfüge Vorgang beschreibt.
 
 `pSession`\
-[in] Ein Wert, der die Sitzung, die an das Programm angefügt wird, eindeutig identifiziert.
+in Ein Wert, der die Sitzung eindeutig identifiziert, die an das Programm angefügt wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; andernfalls wird ein Fehlercode zurückgegeben. Diese Methode `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` sollte zurückgegeben werden, wenn das Programm bereits angefügt ist.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird ein Fehlercode zurückgegeben. Diese Methode sollte zurückgeben, `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` Wenn das Programm bereits angefügt ist.
 
 ## <a name="remarks"></a>Bemerkungen
- Der Port, der das Programm `pSession` enthält, kann den Wert in verwenden, um zu bestimmen, welche Sitzung versucht, an das Programm anzuhängen. Wenn ein Port z. B. zulässt, dass jeweils nur eine Debugsitzung an einen Prozess angefügt wird, kann der Port bestimmen, ob dieselbe Sitzung bereits an andere Programme im Prozess angefügt ist.
+ Der Port, der das Programm enthält, kann den Wert in verwenden `pSession` , um zu bestimmen, welche Sitzung versucht, dem Programm anzufügen. Wenn ein Port beispielsweise zulässt, dass jeweils nur eine Debugsitzung an einen Prozess angefügt wird, kann der Port ermitteln, ob dieselbe Sitzung bereits an andere Programme im Prozess angefügt ist.
 
 > [!NOTE]
-> Die übergebene `pSession` Schnittstelle ist nur als Cookie zu behandeln, ein Wert, der den Sitzungsdebug-Manager eindeutig identifiziert, der an dieses Programm anhängt. keine der Methoden auf der mitgelieferten Schnittstelle funktionsfähig sind.
+> Die übergebene Schnittstelle `pSession` muss nur als Cookie behandelt werden. dabei handelt es sich um einen Wert, der den sitzungsdebug-Manager eindeutig identifiziert, der an dieses Programm angefügt wird. keine der Methoden der angegebenen Schnittstelle ist funktionsfähig.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25b144409ae58f006602706a5b5cb498c0535ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540165"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
@@ -68,7 +68,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INC
 
 - Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das XAML das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
-  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Außerdem nimmt die folgenden Änderungen an der Code-Behind-Datei vor:
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Außerdem nimmt die folgenden Änderungen an der Code-Behind-Datei vor:
 
 - Es wird ein <xref:System.Windows.FrameworkElement.Loaded>-Ereignishandler für das [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)]-Element erstellt, das das Steuerelement enthält. Der Ereignishandler füllt die Tabelle mit Daten, ruft die <xref:System.Windows.Data.CollectionViewSource> aus den Ressourcen des Containers ab, und legt dann das erste Datenelement als aktuelles Element fest. Wenn bereits ein- <xref:System.Windows.FrameworkElement.Loaded> Ereignishandler vorhanden ist, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Fügt dem vorhandenen Ereignishandler diesen Code hinzu.
 
@@ -94,13 +94,13 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INC
 
 - Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das Steuerelement, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
-### <a name="objects"></a>Objekte
+### <a name="objects"></a>erzwingen
  Wenn Sie ein Objekt oder eine Eigenschaft aus dem **Datenquellen** Fenster in den Designer ziehen, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] das ein Daten gebundenes Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert jedoch keinen Code, um das Objekt mit Daten zu füllen. Sie müssen diesen Code selbst schreiben.
 
 > [!NOTE]
 > Benutzerdefinierte Klassen müssen öffentlich sein und verfügen standardmäßig über einen Konstruktor ohne Parameter. Sie können keine Klassen mit einem "Punkt" in ihrer Syntax enthalten. Weitere Informationen finden Sie unter [XAML und benutzerdefinierte Klassen für WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generiert [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , das folgende Aktionen durchführt:
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , das folgende Aktionen durchführt:
 
 - Den Ressourcen des Containers, in den Sie das Element gezogen haben, wird eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Objekt zu navigieren und diese anzuzeigen.
 

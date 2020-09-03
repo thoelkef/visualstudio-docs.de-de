@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b4f5cb3098289463cea7e650332583ec7b12258
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541309"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Gewusst wie: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten
@@ -51,6 +51,6 @@ ms.locfileid: "85541309"
 
 4. Erstellen Sie das Projekt, und führen Sie die Anwendung auf dem Computer aus, auf dem Sie die Anpassung entfernen möchten. Auf dem Computer muss die Visual Studio 2010-Tools für Office-Laufzeit installiert sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Gewusst wie: Anfügen von Erweiterungen durch verwalteten Code an Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

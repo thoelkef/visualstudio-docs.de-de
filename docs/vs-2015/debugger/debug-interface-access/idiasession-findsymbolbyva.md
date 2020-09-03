@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyva | Microsoft-Dokumentation'
+title: 'IDiaSession:: findSymbolByVA | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc2e34b2e75bf81a47a02c4f6048f8be8a64fcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190800"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft einen bestimmtes Symbol-Typ, der enthält, oder auf einer bestimmten virtuellen Adresse am nächsten ist.  
+Ruft einen angegebenen Symboltyp ab, der eine angegebene virtuelle Adresse enthält bzw. am nächsten liegt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,16 +37,16 @@ HRESULT findSymbolByVA ( 
   
 #### <a name="parameters"></a>Parameter  
  `va`  
- [in] Gibt die virtuelle Adresse an.  
+ in Gibt die virtuelle Adresse an.  
   
  `symtag`  
- [in] Der Symboltyp gefunden werden. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.  
+ in Symboltyp, der gefunden werden soll. Werte werden aus der Enumeration der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) entnommen.  
   
  `ppSymbol`  
- [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.  
+ vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das abgerufene Symbol darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -55,7 +55,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByVA( va, SymTagFunction, &pFunc );  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)

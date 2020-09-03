@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672990"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Binden von Windows Forms-Steuerelementen an Daten in Visual Studio
@@ -74,7 +74,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Windo
  Diese Komponente stellt eine Benutzeroberfläche zum Navigieren durch Daten bereit, die von einer Windows-Anwendung angezeigt werden. Weitere Informationen finden Sie unter [BindingNavigator-Steuerelement](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView-Steuerelement
- Verwenden Sie das <xref:System.Windows.Forms.DataGridView>-Steuerelement, um tabellarische Daten aus vielen unterschiedlichen Arten von Datenquellen anzuzeigen und zu bearbeiten. Sie können Daten mit der <xref:System.Windows.Forms.DataGridView>-Eigenschaft an ein <xref:System.Windows.Forms.DataGridView.DataSource%2A>-Element binden. Weitere Informationen finden Sie unter [Übersicht über das DataGridView-Steuer](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)Element.
+ Verwenden Sie das-Steuerelement, um tabellarische Daten aus vielen unterschiedlichen Arten von Datenquellen anzuzeigen und zu bearbeiten <xref:System.Windows.Forms.DataGridView> . Sie können Daten mit der <xref:System.Windows.Forms.DataGridView>-Eigenschaft an ein <xref:System.Windows.Forms.DataGridView.DataSource%2A>-Element binden. Weitere Informationen finden Sie unter [Übersicht über das DataGridView-Steuer](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)Element.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramDestroyEvent2::GetExitCode | Microsoft Docs
+title: 'IDebugProgramDestroyEvent2:: getexitcode | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc887cdcd2975bdfb4042acb1831a7482baa52c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722600"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
-Ruft den Exit-Code des Programms ab.
+Ruft den Exitcode des Programms ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetExitCode( 
 
 ## <a name="parameters"></a>Parameter
 `pdwExit`\
-[out] Gibt den Exit-Code des Programms zurück.
+vorgenommen Gibt den Exitcode des Programms zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

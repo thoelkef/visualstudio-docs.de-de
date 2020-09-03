@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Microsoft-Dokumentation
+title: 'Idebugclassfield:: enumbaseclasses | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: acfdc872ba5f7cf1989ea1d9ec67f82f1c0419b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191043"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
@@ -40,13 +40,13 @@ int EnumBaseClasses(
   
 #### <a name="parameters"></a>Parameter  
  `ppEnum`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der Basisklassen darstellt. Gibt einen null-Wert zurück, wenn keine Basisklassen vorhanden sind.  
+ vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste der Basisklassen darstellt. Gibt einen NULL-Wert zurück, wenn keine Basisklassen vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück, gibt S_SH_NO_BASE_CLASSES zurück, wenn keine Basisklassen vorhanden sind (und die `ppEnum` -Parameter auf einen null-Wert festgelegt ist), andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben, S_SH_NO_BASE_CLASSES zurückgegeben, wenn keine Basisklassen vorhanden sind (und der- `ppEnum` Parameter auf einen NULL-Wert festgelegt ist); andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die Basisklassen im Enumerator-Objekt werden in der Reihenfolge der Basisklasse am unmittelbarsten (oder am stärksten abgeleiteten) auf die meisten RAS Basisklasse angegeben. Angenommen, die C++-Klassen:  
+## <a name="remarks"></a>Bemerkungen  
+ Die Basisklassen im Enumeratorobjekt werden in der Reihenfolge der unmittelbarsten (oder am meisten abgeleiteten) Basisklasse für die meisten Remote-Basisklassen angegeben. Beispielsweise mit den C++-Klassen:  
   
 ```  
 class Root { }  
@@ -55,8 +55,8 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }  
 ```  
   
- Die Basisklassen in der Reihenfolge die Enumeration zurück `Level2`, `Level1`, `Root`.  
+ Die-Enumeration würde die Basisklassen in der Reihenfolge zurückgeben `Level2` , `Level1` , `Root` .  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

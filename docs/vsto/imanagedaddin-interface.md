@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541127"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin-Schnittstelle
@@ -43,12 +43,12 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Methoden
  In der folgenden Tabelle werden die Methoden aufgelistet, die von der IManagedAddin-Schnittstelle definiert werden.
 
-|name|Beschreibung|
+|Name|BESCHREIBUNG|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Wird aufgerufen, wenn eine Microsoft Office-Anwendung ein verwaltetes VSTO-Add-In lädt.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Wird aufgerufen, direkt bevor eine Microsoft Office-Anwendung ein verwaltetes VSTO-Add-In entlädt.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Verwenden Sie Microsoft Office Anwendungen, beginnend mit dem 2007 Microsoft Office System, die IManagedAddin-Schnittstelle zum Laden von Office-VSTO-Add-Ins. Sie können die IManagedAddin-Schnittstelle implementieren, um ein eigenes VSTO-Add-in-Lade Modul und eine Laufzeit für verwaltete VSTO-Add-Ins zu erstellen, anstatt das VSTO-Add-in-Lade Modul (*VSTOLoader.dll*) und zu verwenden [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Weitere Informationen finden Sie unter [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ## <a name="how-managed-add-ins-are-loaded"></a>Wie verwaltete Add-Ins geladen werden
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Diese CLSID wird auch von *VSTOLoader.dll* in der verwendet [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Wenn Sie IManagedAddin zum Erstellen eines eigenen VSTO-Add-in-Lade-und einer Laufzeitkomponente verwenden, können Sie die Komponente daher nicht auf Computern bereitstellen, auf denen VSTO-Add-Ins ausgeführt werden, die auf basieren [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Referenz zur nicht verwalteten API &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

@@ -16,30 +16,30 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 42bb554f8e57c036d41a89fdc2657a25ecc74e20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540282"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Windows Forms-Einstiegspunkte mit STAThread markieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
  Eine Assembly verweist auf den <xref:System.Windows.Forms> Namespace, und der Einstiegspunkt ist nicht mit dem- <xref:System.STAThreadAttribute?displayProperty=fullName> Attribut gekennzeichnet.
 
 ## <a name="rule-description"></a>Beschreibung der Regel
- <xref:System.STAThreadAttribute>Gibt an, dass das COM-Threading Modell für die Anwendung ein Single Thread-Apartment ist. Dieses Attribut muss am Einstiegspunkt jeder Anwendung vorhanden sein, die Windows Forms verwendet. Wird es weggelassen, funktionieren die Windows-Komponenten eventuell nicht richtig. Wenn das-Attribut nicht vorhanden ist, verwendet die Anwendung das Multithread Apartment-Modell, das für Windows Forms nicht unterstützt wird.
+ <xref:System.STAThreadAttribute> Gibt an, dass das COM-Threading Modell für die Anwendung ein Single Thread-Apartment ist. Dieses Attribut muss am Einstiegspunkt jeder Anwendung vorhanden sein, die Windows Forms verwendet. Wird es weggelassen, funktionieren die Windows-Komponenten eventuell nicht richtig. Wenn das-Attribut nicht vorhanden ist, verwendet die Anwendung das Multithread Apartment-Modell, das für Windows Forms nicht unterstützt wird.
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Projekte, in denen das Anwendungs Framework verwendet wird, müssen die **Main** -Methode nicht mit STAThread markieren. Der [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Compiler führt dies automatisch aus.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Projekte, in denen das Anwendungs Framework verwendet wird, müssen die **Main** -Methode nicht mit STAThread markieren. Der [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Compiler führt dies automatisch aus.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, fügen Sie dem <xref:System.STAThreadAttribute> Einstiegspunkt das-Attribut hinzu. Wenn das <xref:System.MTAThreadAttribute?displayProperty=fullName> Attribut vorhanden ist, entfernen Sie es.

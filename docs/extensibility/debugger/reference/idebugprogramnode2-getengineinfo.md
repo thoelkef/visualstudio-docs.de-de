@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
+title: 'IDebugProgramNode2:: getengineingefo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722100"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Ruft den Namen und den Bezeichner des Debugmoduls (DE) ab, das ein Programm ausführt.
+Ruft den Namen und den Bezeichner der Debug-Engine (de) ab, die ein Programm ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int GetEngineInfo(
 
 ## <a name="parameters"></a>Parameter
 `pbstrEngine`\
-[out] Gibt den Namen der DE zurück, die das Programm ausführt (C++-spezifisch: Dies kann ein Nullzeiger sein, der angibt, dass der Aufrufer nicht an dem Namen des Moduls interessiert ist).
+vorgenommen Gibt den Namen des Programms zurück, auf dem das Programm ausgeführt wird (C++-specific: Dies kann ein NULL-Zeiger sein, der angibt, dass der Aufrufer nicht an dem Namen der Engine interessiert ist).
 
 `pguidEngine`\
-[out] Gibt den global eindeutigen Bezeichner der DE zurück, die das Programm ausführt (C++-spezifisch: Dies kann ein Nullzeiger sein, der angibt, dass der Aufrufer nicht an der GUID des Moduls interessiert ist).
+vorgenommen Gibt die Globally Unique Identifier der de zurück, die das Programm ausgeführt hat (C++-specific: Dies kann ein NULL-Zeiger sein, der angibt, dass der Aufrufer nicht an der GUID der Engine interessiert ist).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

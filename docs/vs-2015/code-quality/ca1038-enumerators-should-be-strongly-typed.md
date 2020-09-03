@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e660b1af58dca8d0d69ce2844076382c4a5a1f12
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548264"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumeratoren sollten eine starke Typisierung aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|

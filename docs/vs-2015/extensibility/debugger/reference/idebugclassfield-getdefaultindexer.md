@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Microsoft-Dokumentation
+title: 'Idebugclassfield:: getdefaultindexer | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6be0a1925a1e5d48941c1c0e13ac1b4789687229
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191022"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den Namen der Standardindexer ab.  
+Ruft den Namen des Standardindexers ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrIndexer`  
- [out] Gibt eine Zeichenfolge, die mit dem Namen des der Standardindexer zurück.  
+ vorgenommen Gibt eine Zeichenfolge zurück, die den Namen des Standardindexers enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn kein Standardindexer vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben oder S_FALSE zurückgegeben, wenn kein Standardindexer vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Der Standardindexer einer Klasse ist die Eigenschaft mit der Kennzeichnung der `Default` -Eigenschaft für Arrays zugreift. Dies bezieht sich auf [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]. Hier ist ein Beispiel für einen Standardindexer deklariert [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] und wie diese verwendet werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Der Standardindexer einer Klasse ist die Eigenschaft, die als `Default` Eigenschaft für Array Zugriffe gekennzeichnet ist. Dies ist spezifisch für [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] . Im folgenden finden Sie ein Beispiel für einen in deklarierten Standardindexer [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] und seine Verwendung.  
   
 ```vb  
 Imports System.Collections;  
@@ -78,5 +78,5 @@ Function GetItem(Index as Integer) as Integer
 End Function  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

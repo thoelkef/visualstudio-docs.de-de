@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981089"
 ---
 # <a name="create-an-association-between-entities"></a>Erstellen einer Zuordnung zwischen Entitäten
@@ -47,7 +47,7 @@ ms.locfileid: "72981089"
 ### <a name="foreign-key-based-association"></a>Fremdschlüssel basierte Zuordnung
  Sie können eine Fremdschlüssel basierte Zuordnung erstellen, indem Sie einen Bezeichner in der Quell Entität mit Typdeskriptoren verknüpfen, die in der Ziel Entität definiert sind. Diese Beziehung ermöglicht Consumer des Modells, eine erweiterte Benutzeroberfläche für Ihre Benutzer bereitzustellen. Beispielsweise ein Formular in Outlook, das es einem Benutzer ermöglicht, einen Verkaufsauftrag zu erstellen, der Kunden in einer Dropdown Liste anzeigen kann. oder eine Liste mit Verkaufsaufträgen in SharePoint, mit der Benutzer eine Profilseite für einen Kunden öffnen können.
 
- Um eine Fremdschlüssel basierte Zuordnung zu erstellen, verknüpfen Sie Bezeichner und Typdeskriptoren mit dem gleichen Namen und Typ. Beispielsweise können Sie eine Fremdschlüssel basierte Zuordnung zwischen einer `Contact`-Entität und einer `SalesOrder`-Entität erstellen. Die `SalesOrder`-Entität gibt einen `ContactID` Typdeskriptor als Teil des Rückgabe Parameters der Finder-Methode oder einer bestimmten Finder-Methode zurück. Beide Typdeskriptoren werden im **Association-Editor**angezeigt. Um eine Fremdschlüssel basierte Beziehung zwischen der `Contact` Entität und `SalesOrder` Entität zu erstellen, wählen Sie den `ContactID` Bezeichner neben jedem dieser Felder aus.
+ Um eine Fremdschlüssel basierte Zuordnung zu erstellen, verknüpfen Sie Bezeichner und Typdeskriptoren mit dem gleichen Namen und Typ. Beispielsweise können Sie eine Fremdschlüssel basierte Zuordnung zwischen einer `Contact` -Entität und einer- `SalesOrder` Entität erstellen. Die- `SalesOrder` Entität gibt einen `ContactID` Typdeskriptor als Teil des Rückgabe Parameters von Finder oder bestimmten Finder-Methoden zurück. Beide Typdeskriptoren werden im **Association-Editor**angezeigt. Um eine Fremdschlüssel basierte Beziehung zwischen der `Contact` Entität und der `SalesOrder` Entität zu erstellen, wählen Sie den `ContactID` Bezeichner neben jedem dieser Felder aus.
 
  Fügen Sie der Association Navigator-Methode der Quell Entität, die eine Auflistung von Ziel Entitäten zurückgibt, Code hinzu. Im folgenden Beispiel werden die Verkaufsaufträge für einen Kontakt zurückgegeben.
 
@@ -60,22 +60,22 @@ ms.locfileid: "72981089"
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
 ### <a name="foreign-keyless-association"></a>Fremdschlüssel Zuordnung
- Sie können eine Zuordnung erstellen, ohne den Feldtyp Deskriptoren Bezeichner zuordnen zu müssen. Erstellen Sie diese Art von Zuordnung, wenn die Quell Entität über keine direkte Beziehung mit der Ziel Entität verfügt. Beispielsweise verfügt eine `SalesOrderDetail` Tabelle nicht über einen Fremdschlüssel, der einem Primärschlüssel in einer `Contact` Tabelle zugeordnet ist.
+ Sie können eine Zuordnung erstellen, ohne den Feldtyp Deskriptoren Bezeichner zuordnen zu müssen. Erstellen Sie diese Art von Zuordnung, wenn die Quell Entität über keine direkte Beziehung mit der Ziel Entität verfügt. Beispielsweise verfügt eine `SalesOrderDetail` Tabelle nicht über einen Fremdschlüssel, der einem Primärschlüssel in einer Tabelle zugeordnet ist `Contact` .
 
- Wenn Sie Informationen in der `SalesOrderDetail` Tabelle anzeigen möchten, die sich auf einen `Contact`bezieht, können Sie eine Fremdschlüssel lose Zuordnung zwischen der `Contact` Entität und `SalesOrderDetail` Entität erstellen.
+ Wenn Sie Informationen in der Tabelle anzeigen möchten, die `SalesOrderDetail` sich auf eine bezieht `Contact` , können Sie eine Fremdschlüssel Zuordnung zwischen der `Contact` Entität und der `SalesOrderDetail` Entität erstellen.
 
- Geben Sie in der Association-Navigations Methode der `Contact`-Entität die `SalesOrderDetail` Entitäten zurück, indem Sie Tabellen miteinander verbinden oder eine gespeicherte Prozedur aufrufen.
+ Geben Sie in der Association-Navigations Methode der- `Contact` Entität die `SalesOrderDetail` Entitäten zurück, indem Sie Tabellen miteinander verbinden oder eine gespeicherte Prozedur aufrufen.
 
  Im folgenden Beispiel werden die Details aller Verkaufsaufträge durch das Verbinden von Tabellen zurückgegeben.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- Geben Sie in der Association-Navigations Methode der `SalesOrderDetail`-Entität den zugehörigen `Contact`zurück. Dies wird im folgenden Beispiel veranschaulicht:
+ Geben Sie in der Association-Navigations Methode der- `SalesOrderDetail` Entität den entsprechenden zurück `Contact` . Dies wird im folgenden Beispiel veranschaulicht:
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)

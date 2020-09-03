@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602399"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Arbeiten mit Klassendiagrammen (Klassen-Designer)
@@ -42,7 +42,7 @@ Klassendiagramme vereinfachen das Verständnis der Klassenstruktur von Projekten
 
  Beschreibt das Hinzufügen von Klassendiagrammen zu Projekten.
 
- [Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)
 
  Stellt Informationen zum Anpassen von Klassendiagrammen bereit.
 
@@ -54,7 +54,7 @@ Klassendiagramme vereinfachen das Verständnis der Klassenstruktur von Projekten
 
  Beschreibt, wie Klassendiagramme als Bilder exportiert werden.
 
- [Gewusst wie: Drucken von Klassendiagrammen (Klassen-Designer)](../ide/how-to-print-class-diagrams-class-designer.md)
+ [Vorgehensweise: Drucken von Klassendiagrammen (Klassen-Designer)](../ide/how-to-print-class-diagrams-class-designer.md)
 
  Erklärt, wie Klassendiagramme gedruckt werden.
 
@@ -66,5 +66,5 @@ Klassendiagramme vereinfachen das Verständnis der Klassenstruktur von Projekten
 
  Beschreibt, wie Formen aus Klassendiagrammen entfernt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md) Gewusst [wie: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md) Gewusst [wie: Entfernen von Typformen aus Klassendiagrammen (Klassen-Designer)](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

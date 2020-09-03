@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876189"
 ---
 # <a name="messaging-activity-designers"></a>Aktivitäts-Designer für Messaging
@@ -39,7 +39,7 @@ Die Themen in diesem Abschnitt und die in der folgenden Tabelle aufgeführten Th
 
 Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folgenden Themen:
 
-- [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)
+- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 
 - [Verwenden der Aktivitätsdesigner](control-flow-activity-designers.md)
 
@@ -47,7 +47,7 @@ Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folge
 
 - [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
-- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
 
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 

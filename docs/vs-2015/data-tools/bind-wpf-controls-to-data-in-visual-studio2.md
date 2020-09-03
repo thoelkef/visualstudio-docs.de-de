@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06428a633aec41489a8a77655d6ea9442ffffaa0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540087"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
@@ -34,7 +34,7 @@ ms.locfileid: "85540087"
 
 Sie können Daten gebundene Steuerelemente erstellen, [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] indem Sie das Fenster **Datenquellen** verwenden. Fügen Sie zunächst dem **Datenquellen** Fenster eine Datenquelle hinzu. Ziehen Sie dann Elemente aus dem **Datenquellen** Fenster in den**WPF-Designer**.
 
-## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a>Hinzufügen einer Datenquelle zum Datenquellen Fenster
+## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a> Hinzufügen einer Datenquelle zum Datenquellen Fenster
  Bevor Sie Daten gebundene Steuerelemente erstellen können, müssen Sie zunächst dem **Datenquellen** Fenster eine Datenquelle hinzufügen.
 
 #### <a name="to-add-a-data-source-to-the-data-sources-window"></a>So fügen Sie dem Datenquellenfenster eine Datenquelle hinzu
@@ -53,7 +53,7 @@ Sie können Daten gebundene Steuerelemente erstellen, [!INCLUDE[TLA#tla_titlewin
 
     - [Binden von Daten an vorhandene Steuerelemente im Designer](#existing).
 
-## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a>Erstellen eines Steuer Elements, das an ein einzelnes Datenfeld gebunden ist
+## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a> Erstellen eines Steuer Elements, das an ein einzelnes Datenfeld gebunden ist
  Nachdem Sie dem **Datenquellen** Fenster eine Datenquelle hinzugefügt haben, können Sie ein neues Daten gebundenes Steuerelement erstellen, das ein einzelnes Datenfeld anzeigt, z <xref:System.Windows.Controls.ComboBox> <xref:System.Windows.Controls.TextBox> . b. oder.
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>So erstellen Sie ein Steuerelement, das an ein einzelnes Datenfeld gebunden ist
@@ -66,9 +66,9 @@ Sie können Daten gebundene Steuerelemente erstellen, [!INCLUDE[TLA#tla_titlewin
 
 3. Ziehen Sie das Element in einen gültigen Container im Designer. Weitere Informationen zu gültigen Containern finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]erstellt das neue Daten gebundene Steuerelement und einen entsprechend <xref:System.Windows.Controls.Label> der Bezeichnung im Container. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generiert außerdem [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code zum Binden des Steuer Elements an die Daten. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt das neue Daten gebundene Steuerelement und einen entsprechend <xref:System.Windows.Controls.Label> der Bezeichnung im Container. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert außerdem [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code zum Binden des Steuer Elements an die Daten. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a>Erstellen eines Steuer Elements, das an mehrere Datenfelder gebunden ist
+## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a> Erstellen eines Steuer Elements, das an mehrere Datenfelder gebunden ist
  Nachdem Sie dem **Datenquellen** Fenster eine Datenquelle hinzugefügt haben, können Sie ein neues Daten gebundenes Steuerelement erstellen, das mehrere Datenfelder anzeigt, z <xref:System.Windows.Controls.DataGrid> <xref:System.Windows.Controls.ListView> . b. oder.
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>So erstellen Sie ein Steuerelement, das an mehrere Datenfelder gebunden ist
@@ -84,9 +84,9 @@ Sie können Daten gebundene Steuerelemente erstellen, [!INCLUDE[TLA#tla_titlewin
 
 3. Ziehen Sie das Element auf einen gültigen Container im Designer, z. B. ein <xref:System.Windows.Controls.Grid>. Weitere Informationen zu gültigen Containern finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]erstellt das neue Daten gebundene Steuerelement im Container. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generiert außerdem [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code zum Binden des Steuer Elements an die Daten. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt das neue Daten gebundene Steuerelement im Container. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert außerdem [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code zum Binden des Steuer Elements an die Daten. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a>Erstellen eines Satzes von Steuerelementen, die an mehrere Datenfelder gebunden sind
+## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a> Erstellen eines Satzes von Steuerelementen, die an mehrere Datenfelder gebunden sind
  Nachdem Sie dem **Datenquellen** Fenster eine Datenquelle hinzugefügt haben, können Sie eine Datentabelle oder ein Objekt an einen Satz von Steuerelementen binden. Für jede Spalte oder jede Eigenschaft in der Tabelle oder dem Objekt wird ein anderes Steuerelement erstellt.
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>So erstellen Sie einen Satz von Steuerelementen, die an mehrere Datenfelder gebunden sind
@@ -100,9 +100,9 @@ Sie können Daten gebundene Steuerelemente erstellen, [!INCLUDE[TLA#tla_titlewin
 
 3. Ziehen Sie das Element auf einen gültigen Container im Designer, z. B. ein <xref:System.Windows.Controls.Grid>. Weitere Informationen zu gültigen Containern finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt die neuen datengebundenen Steuerelemente im Container. Jedes Steuerelement wird an eine andere Spalte oder Eigenschaft gebunden, und jedes Steuerelement wird von einem entsprechend benannten <xref:System.Windows.Controls.Label>-Steuerelement begleitet. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generiert außerdem [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code, um die Steuerelemente an die Daten zu binden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt die neuen datengebundenen Steuerelemente im Container. Jedes Steuerelement wird an eine andere Spalte oder Eigenschaft gebunden, und jedes Steuerelement wird von einem entsprechend benannten <xref:System.Windows.Controls.Label>-Steuerelement begleitet. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert außerdem [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code, um die Steuerelemente an die Daten zu binden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a>BindData an vorhandene Steuerelemente im Designer
+## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a> BindData an vorhandene Steuerelemente im Designer
  Nachdem Sie dem **Datenquellen** Fenster eine Datenquelle hinzugefügt haben, können Sie eine Datenbindung zu einem vorhandenen Steuerelement im Designer hinzufügen.
 
 #### <a name="to-bind-data-to-an-existing-control-in-the-designer"></a>So binden Sie Daten an ein vorhandenes Steuerelement im Designer
@@ -115,7 +115,7 @@ Sie können Daten gebundene Steuerelemente erstellen, [!INCLUDE[TLA#tla_titlewin
 
 2. Ziehen Sie das ausgewählte Element aus dem **Datenquellen** Fenster auf ein vorhandenes Steuerelement im Designer. Das Steuerelement muss ein gültiges Ablageziel sein. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]generiert [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code zum Binden des Steuer Elements an die Daten. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code zum Binden des Steuer Elements an die Daten. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
     > Wenn das Steuerelement bereits an Daten gebunden ist, wird die Datenbindung für das Steuerelement auf das Element zurückgesetzt, das zuletzt auf das Steuerelement gezogen wurde.
