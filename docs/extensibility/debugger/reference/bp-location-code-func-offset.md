@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
+title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 32331a5b628c27dc79d6a2e5919c8d268c96a3aa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737997"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-Beschreibt die Versatzposition eines Haltepunkts in einer Funktion im Code.
+Beschreibt die Offset Position eines Breakpoints in einer Funktion im Code.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,20 +35,20 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 
 ## <a name="members"></a>Member
 `bstrContext`\
-Der Kontext des Haltepunkts, in der Regel ein Methoden- oder Funktionsname, wie er in einer Aufrufliste angezeigt wird.
+Der Kontext des Breakpoints, in der Regel ein Methoden-oder Funktionsname, wie er in einer-aufrufsstapel angezeigt wird.
 
 `pFuncPos`\
-Das [IDebugFunctionPosition2-Objekt,](../../../extensibility/debugger/reference/idebugfunctionposition2.md) das den Namen der Funktion und die relative Position vom Anfang der Funktion aus beschreibt.
+Das [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) -Objekt, das den Namen der Funktion und die relative Position vom Anfang der Funktion beschreibt.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Gewerkschaft.
+Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-Das `pFuncPos` Element gibt an, wo der Funktionshaltepunkt festgelegt werden soll.
+Der `pFuncPos` Member gibt an, wo der Funktions Haltepunkt festgelegt werden soll.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

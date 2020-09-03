@@ -12,10 +12,10 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557972"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
@@ -25,11 +25,11 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
 ### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>So beheben Sie Probleme mit einem VSPackage, das den Start von Visual Studio beibehält  
   
-- Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im abgesicherten Modus.  
+- Starten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im abgesicherten Modus.  
   
-     Wenn Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im abgesicherten Modus starten möchten, geben Sie an einer Eingabeaufforderung **devenv. exe/safemode**ein.  
+     Wenn Sie im abgesicherten Modus starten möchten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , geben Sie an einer Eingabeaufforderung **devenv.exe/safemode**ein.  
   
-     Während dieses Vorgangs werden keine VSPackages geladen, außer den VSPackages, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]enthalten sind.  
+     Während dieses Vorgangs werden keine VSPackages geladen, außer den VSPackages, die im Lieferumfang von enthalten sind [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>So beheben Sie Probleme mit einem VSPackage, das nicht geladen wird  
   
@@ -37,7 +37,7 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
      Weitere Informationen finden Sie in [der experimentellen Instanz](../extensibility/the-experimental-instance.md).  
   
-2. Wenn das VSPackage für die Ausführung im experimentellen Registrierungs Stamm bestimmt ist, stellen Sie sicher, dass Sie die experimentelle Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ausführen.  
+2. Wenn das VSPackage für die Ausführung im experimentellen Registrierungs Stamm bestimmt ist, stellen Sie sicher, dass Sie die experimentelle Version von ausführen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      Um die experimentelle Version auszuführen, geben Sie Folgendes in einem Befehlsfenster ein: **devenv/rootsuffix Exp**.  
   
@@ -45,10 +45,10 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
      Weitere Informationen finden Sie unter [Registrieren von VSPackages](internals/registering-vspackages.md) und [Verwalten von VSPackages](../extensibility/managing-vspackages.md).  
   
-4. Öffnen Sie das **Ausgabe** Fenster der Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], die das VSPackage nicht laden kann. Informationen dazu, warum das VSPackage nicht geladen werden kann, werden möglicherweise in diesem Fenster angezeigt.  
+4. Öffnen Sie das **Ausgabe** Fenster der Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , die das VSPackage nicht laden kann. Informationen dazu, warum das VSPackage nicht geladen werden kann, werden möglicherweise in diesem Fenster angezeigt.  
   
     > [!NOTE]
-    > Wenn Sie die experimentelle Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) starten, überprüfen Sie das **Ausgabe** Fenster beider Versionen.  
+    > Wenn Sie die experimentelle Version von über [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) starten, überprüfen Sie das **Ausgabe** Fenster beider Versionen.  
   
 5. Überprüfen Sie das Aktivitätsprotokoll.  
   
@@ -62,13 +62,13 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>So beheben Sie einen Befehl, der nicht sichtbar ist oder einen Fehler generiert, wenn Sie auf einen Befehl klicken  
   
-1. Führen Sie die neuen oder geänderten Menübefehle und die bereits in der IDE vorhandenen Befehle aus, indem Sie an der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Eingabeaufforderung Folgendes eingeben: **devenv/rootsuffix Exp/Setup**.  
+1. Führen Sie die neuen oder geänderten Menübefehle und die bereits in der IDE vorhandenen Befehle aus, indem Sie Folgendes an der Eingabe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Aufforderung eingeben: **devenv/rootsuffix Exp/Setup**.  
   
-2. Stellen Sie sicher, dass [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] "UI. dll" für das VSPackage finden kann.  
+2. Stellen Sie sicher, dass [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI.dll für Ihr VSPackage finden kann.  
   
     1. Suchen Sie im Abschnitt "Pakete" der Registrierung nach der CLSID des VSPackage:  
   
-         Hklm\software\microsoft\visual Studio\\ *\<Version >* \packages  
+         Hklm\software\microsoft\visual Studio \\ *\<version>* \packages  
   
     2. Überprüfen Sie, ob der durch den Unterschlüssel satellitedll angegebene Pfad richtig ist.  
   
@@ -115,11 +115,11 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
   
    2. Wählen Sie im Dialogfeld **Eigenschaften Seiten** die Registerkarte **Verweise** aus, und stellen Sie sicher, dass alle Pfade korrekt sind. Alternativ können Sie den **Objektkatalog** verwenden, um nach den referenzierten Objekten zu suchen.  
   
-        Bei verwaltetem Code können Sie die [Datei "Fuslogvw. exe" (Assemblybindungs-Protokoll Anzeige)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) verwenden, um die Details der fehlerhaften assemblyladungen anzuzeigen.  
+        Bei verwaltetem Code können Sie die [Fuslogvw.exe (Assemblybindungs-Protokoll Anzeige)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) verwenden, um die Details der fehlgeschlagenen assemblyladungen anzuzeigen.  
   
 2. Für nicht verwalteten Code suchen Sie die CLSID des VSPackage im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID-Registrierungs Knoten:  
   
-    Hklm\software\microsoft\visual Studio\\ *\<Version >* \CLSID  
+    Hklm\software\microsoft\visual Studio \\ *\<version>* \CLSID  
   
    Stellen Sie sicher, dass der InprocServer32-Eintrag über den richtigen Pfad der VSPackage-dll verfügt.  
   

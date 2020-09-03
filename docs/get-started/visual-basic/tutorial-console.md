@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579934"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Erste Schritte mit Visual Basic in Visual Studio
@@ -99,7 +99,7 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
    >
    > ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise „[Projekt erstellen](#create-a-project)“ zurück.
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
 1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***WhatIsYourName* ein. Wählen Sie anschließend **Erstellen** aus.
 
@@ -111,7 +111,7 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
 
 ## <a name="create-a-what-is-your-name-application"></a>Erstellen einer „What is your name“-Anwendung
 
-Erstellen wir eine App, die Sie nach Ihrem Namen fragt und ihn anschließend zusammen mit dem Datum und der Uhrzeit anzeigt. Gehen Sie dabei folgendermaßen vor:
+Erstellen wir eine App, die Sie nach Ihrem Namen fragt und ihn anschließend zusammen mit dem Datum und der Uhrzeit anzeigt. Gehen Sie dazu wie folgt vor:
 
  ::: moniker range="vs-2017"
 
@@ -243,7 +243,7 @@ Erstellen wir eine App, die Sie nach Ihrem Namen fragt und ihn anschließend zus
 
 ## <a name="quick-answers-faq"></a>Schnelle Antworten zu häufig gestellten Fragen
 
-Im folgenden kurzen Abschnitt zu häufig gestellten Fragen werden einige wichtige Konzepte besprochen.
+In den folgenden häufig gestellten Fragen werden einige wichtige Konzepte besprochen.
 
 ### <a name="what-is-visual-basic"></a>Was ist Visual Basic?
 
@@ -266,10 +266,10 @@ Eine Konsolen-App nimmt eine Eingabe und zeigt die Ausgabe in einem Befehlszeile
 Damit haben Sie das Tutorial erfolgreich abgeschlossen. Weitere Informationen finden Sie im folgenden Tutorial.
 
 > [!div class="nextstepaction"]
-> [Erstellen einer Klassenbibliothek mit Visual Basic und dem .NET Core SDK in Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Erstellen einer .NET Standard-Bibliothek mit Visual Basic und .NET Core SDK in Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-* [Exemplarische Vorgehensweisen für Visual Basic](/dotnet/visual-basic/walkthroughs)
+* [Exemplarische Vorgehensweisen für Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Sprachreferenz zu Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [IntelliSense für Visual Basic-Codedateien](../../ide/visual-basic-specific-intellisense.md)

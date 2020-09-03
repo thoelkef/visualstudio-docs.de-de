@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586730"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Erweitern von UML-Modellen und -Diagrammen
@@ -38,7 +38,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 
 - [Modellierungs-SDK für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
-## <a name="profiles"></a>Profile
+## <a name="profiles"></a>Profiles
  Mithilfe von Profilen können Sie Stereotype und zusätzliche Eigenschaften für UML-Elemente definieren.
 
  Die Toolentwickler von Fabrikam definieren Stereotype in den Objektknoten von Aktivitätsdiagrammen, z. B. „Fließband“ und „Check-in-Schalter“. Wenn Teammitglieder mithilfe eines Aktivitätsdiagramms ein Gepäckbeförderungsschema erstellen, können sie jetzt Stereotype festlegen, um anzugeben, welchen Typ der Ausrüstung jeder Knoten darstellt. Die Toolentwickler definieren für einige Stereotype zusätzliche Eigenschaften, sodass Benutzer Werte wie die Kapazität des Fließbands und die Eignung eines Check-in-Schalters aufzeichnen können.

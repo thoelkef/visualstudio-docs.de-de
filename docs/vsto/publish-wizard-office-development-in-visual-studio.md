@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558173"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungs-Assistent (Office-Entwicklung in Visual Studio)
@@ -39,14 +39,14 @@ ms.locfileid: "77558173"
 
 - Ein relativer oder absoluter Pfad im standardmäßigen Windows-Format, z. b. " *c:\Deploy\MyApplication* " oder " *\MyApplication*".
 
-- Ein Universal Naming Convention Pfad (UNC-Pfad), z. b. *\\\servername\myapplication\\* .
+- Ein UNC-Pfad (Universal Naming Convention), z. b. * \\ \servername\meineanwendung \\ *.
 
-- Eine URL einer Website, z. b. `http://www.contoso.com/MyApplication`.
+- Eine URL einer Website, z `http://www.contoso.com/MyApplication` . b..
 
-  Standardmäßig wird der Veröffentlichungs Speicherort *http://localhost/projectname/* , wenn IIS installiert ist, oder das Verzeichnis "Publish \", wenn IIS nicht installiert ist.
+  Standardmäßig ist der Veröffentlichungs Speicherort *http://localhost/projectname/* , wenn IIS installiert ist, oder das Verzeichnis Publish \, wenn IIS nicht installiert ist.
 
 > [!NOTE]
-> Es gibt weitere Überlegungen, wenn auf dem Bereitstellungs Zielcomputer Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer sein, um die lokale Veröffentlichungs Option zu verwenden. Außerdem ist der Standard Speicherort immer das *Veröffentlichungs\\* Verzeichnis, unabhängig davon, ob IIS installiert ist.
+> Es gibt weitere Überlegungen, wenn auf dem Bereitstellungs Zielcomputer Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer sein, um die lokale Veröffentlichungs Option zu verwenden. Außerdem ist der Standard Speicherort immer das *Veröffentlichungs \\ * Verzeichnis, unabhängig davon, ob IIS installiert ist.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Was ist der Standard Installationspfad auf Endbenutzer Computern?
  Der Installationspfad ist optional. Sie können den Installationspfad später festlegen, wenn Sie dies bevorzugen. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Installations Pfads einer Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)-Projekt Mappe.
@@ -61,7 +61,7 @@ ms.locfileid: "77558173"
 
  Visual Studio verbrennt die CD oder DVD nicht. Sie müssen die Ausgabe manuell auf eine CD oder DVD kopieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Seite "veröffentlichen", &#40;Projekt-Designer-Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Seite "veröffentlichen", Projekt-Designer &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)

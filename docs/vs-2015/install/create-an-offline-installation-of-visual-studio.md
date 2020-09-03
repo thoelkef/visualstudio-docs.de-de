@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a6a9707d517a8a43d9a9ca156a5f7291ecee9bee
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445063"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
@@ -36,17 +36,17 @@ Diese Seite beschreibt, wie Sie Visual Studio 2015 installieren, wenn Sie nicht 
 
 1. Wählen Sie die Edition von Visual Studio aus, die Sie von der Downloadseite [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) installieren möchten.
 
-2. Nachdem Sie das Installationsprogramm an einen Speicherort in Ihrem Dateisystem heruntergeladen haben, führen Sie „\<Name der ausführbaren Datei>/layout“ aus.
+2. Nachdem Sie das Installationsprogramm an einen Speicherort im Dateisystem heruntergeladen haben, führen Sie " \<executable name> /Layout" aus.
 
      Führen Sie zum Beispiel `vs_enterprise.exe /layout D:\VisualStudio2015` aus.
 
      Mit dem `/layout`-Switch können Sie fast alle Installationspakete herunterladen und nicht nur diejenigen, die für den Downloadcomputer vorgesehen sind. Mit diesem Ansatz erhalten Sie die Dateien, die Sie benötigen, um dieses Installationsprogramm überall ausführen. Darüber hinaus sind sie möglicherweise hilfreich, wenn Sie Komponenten installieren möchten, die ursprünglich nicht installiert wurden.
 
-3. Nachdem Sie diesen Befehl ausgeführt haben, wird ein Dialogfeld angezeigt, in dem Sie den Ordner ändern können, in dem das Layout für die Offlineinstallation gespeichert werden soll.   Klicken Sie als Nächstes auf die Schaltfläche **Herunterladen.**
+3. Nachdem Sie diesen Befehl ausgeführt haben, wird ein Dialogfeld angezeigt, in dem Sie den Ordner ändern können, in dem das Layout für die Offlineinstallation gespeichert werden soll.   Klicken Sie anschließend auf die Schaltfläche **herunterladen** .
 
-     Wenn der Paketdownload erfolgreich ist, sollte eine Meldung angezeigt werden, die **Setup Erfolgreich angibt! Alle angegebenen Komponenten wurden erfolgreich erworben.**
+     Wenn der Paket Download erfolgreich ist, wird eine Meldung mit dem Hinweis angezeigt, dass **Setup erfolgreich abgeschlossen wurde. Alle angegebenen Komponenten wurden erfolgreich abgerufen.**
 
-4. Suchen Sie den Ordner, den Sie zuvor angegeben haben (Suchen Sie z. B. d:-VisualStudio2015.) Dieser Ordner enthält alles, was Sie an einen freigegebenen Speicherort oder ein Installationsmedium kopieren müssen.
+4. Suchen Sie den Ordner, den Sie zuvor angegeben haben (Suchen Sie z. b. nach d:\visualstudio2015.). Dieser Ordner enthält alles, was Sie zum Kopieren an einen freigegebenen Speicherort oder zum Installieren von Medien benötigen.
 
     > [!CAUTION]
     > Aktuell unterstützt das Android SDK keine Oberfläche zur Offlineinstallation. Wenn Sie die Setupelemente des Android SDKs auf einem Computer installieren, der keine Internetverbindung aufweist, tritt bei der Installation möglicherweise ein Fehler auf. Weitere Informationen finden Sie im Abschnitt „Problembehandlung bei einer Offlineinstallation“ in diesem Thema.

@@ -1,5 +1,5 @@
 ---
-title: API-Referenz (Visual Studio-Debugging) | Microsoft Docs
+title: API-Referenz (Visual Studio-Debuggen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,36 +11,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a2df6d82099a927664620e19096107f283afada
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738180"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API-Referenz (Visual Studio-Debugging)
-Der Verweisabschnitt enthält eine konzeptionelle Übersicht über die API, ein Handbuch, das die Syntax und Verwendung für alle API-Elemente anzeigt, sowie eine Reihe von Codebeispielen. Alle Referenzen werden alphabetisch nach Kategorie aufgelistet.
+Der Referenz Abschnitt enthält eine konzeptionelle Übersicht über die API, eine Anleitung, die die Syntax und Verwendung für alle API-Elemente sowie eine Reihe von Codebeispielen zeigt. Alle Verweise sind alphabetisch nach Kategorie aufgelistet.
 
- Die folgende Tabelle `HRESULT` zeigt die allgemeinen Werte, die von Methoden zurückgegeben werden.
+ In der folgenden Tabelle werden die `HRESULT` von-Methoden zurückgegebenen allgemeinen Werte angezeigt.
 
-|Name|BESCHREIBUNG|Wert|
+|Name|BESCHREIBUNG|value|
 |----------|-----------------|-----------|
 |S_OK|Erfolg.|0x00000000|
 |E_UNEXPECTED|Unerwarteter Fehler.|0x8000FFFF|
 |E_NOTIMPL|Nicht implementiert.|0x80004001|
-|E_OUTOFMEMORY|Nicht genügend Arbeitsspeicher, um den Vorgang abzuschließen.|0x8007000E|
+|E_OUTOFMEMORY|Der Arbeitsspeicher reicht nicht aus, um den Vorgang abzuschließen.|0x8007000E|
 |E_INVALIDARG|Mindestens ein Argument ist ungültig.|0x80070057|
-|E_NOINTERFACE|Eine solche Schnittstelle wird nicht unterstützt.|0x80004002|
+|E_NOINTERFACE|Diese Schnittstelle wird nicht unterstützt.|0x80004002|
 |E_POINTER|Ungültiger Zeiger.|0x80004003|
 |E_HANDLE|Ungültiges Handle.|0x80070006|
 |E_ABORT|Der Vorgang wurde abgebrochen.|0x80004004|
 |E_FAIL|Unerwarteter Fehler.|0x80004005|
-|E_ACCESSDENIED|Allgemeiner Zugriff verweigert Fehler.|0x80070005|
+|E_ACCESSDENIED|Allgemeiner Zugriffs Verweigerungs Fehler.|0x80070005|
 
 > [!NOTE]
-> Wenn [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] eine Debuggingmethode zurückgegeben `S_OK`wird, wird davon ausgegangen, dass alle out-Parameterzeiger gültig sind, `S_OK` d. h., bei der Rückgabe wird keine Validierung für Out-Parameterzeiger durchgeführt.
+> Wenn eine [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugmethode zurückgibt `S_OK` , wird davon ausgegangen, dass alle out-Parameter Zeiger gültig sind, d. h., es wird keine Validierung für Out-Parameter Zeiger durchgeführt, wenn `S_OK` zurückgegeben wird.
 >
 > [!NOTE]
-> Ungültige `NULL` oder [out]-Parameter können dazu führen, dass die IDE abstürzt.
+> Ungültige `NULL` Parameter oder [out]-Parameter verursachen möglicherweise einen Absturz der IDE.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Schnittstellen](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

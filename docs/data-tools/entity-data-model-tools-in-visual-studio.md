@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916738"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools in Visual Studio
 
-Entity Framework ist eine Objekt relationale Mapping-Technologie, die es .NET-Entwicklern ermöglicht, mithilfe von domänenspezifischen Objekten mit relationalen Daten zu arbeiten. In EF Core ist der Großteil des Datenzugriffscodes, den Entwickler in der Regel schreiben müssen, nicht mehr erforderlich. Entity Framework ist die empfohlene ORM-Modellierungstechnologie (Object-Relational Mapping) für neue .NET-Anwendungen.
+Entity Framework ist eine Objekt relationale Mapping-Technologie, die es .NET-Entwicklern ermöglicht, mithilfe von domänenspezifischen Objekten mit relationalen Daten zu arbeiten. Es entfällt die Notwendigkeit für den Großteil des Datenzugriffs-Codes, den Entwickler normalerweise schreiben müssen. Entity Framework ist die empfohlene ORM-Modellierungstechnologie (Object-Relational Mapping) für neue .NET-Anwendungen.
 
 Entity Framework Tools wurden entwickelt, um Sie beim Erstellen von Entity Framework (EF)-Anwendungen zu unterstützen. Die komplette Dokumentation für Entity Framework finden Sie hier: [Übersicht-EF 6](/ef/ef6/).
 
@@ -30,16 +30,16 @@ Die Entity Framework Tools werden im Rahmen der Arbeitsauslastung für die **Dat
 
 Dabei handelt es sich um die spezifischen Tools, die Entity Framework Tools in Visual Studio bilden:
 
-- Mit dem [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)][!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]- **Designer** (**Entity Designer**) können Sie Entitäten, Zuordnungen, Zuordnungen und Vererbungs Beziehungen visuell erstellen und ändern. Der **Entity Designer** generiert auch [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] objektebenencode.
+- Mit dem [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity Designer**) können Sie Entitäten, Zuordnungen, Zuordnungen und Vererbungs Beziehungen visuell erstellen und ändern. Der- **Entity Designer** generiert auch [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] objektebenencode.
 
-- Mit dem[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]- **Assistenten** können Sie ein konzeptionelles Modell aus einer vorhandenen Datenbank generieren und der Anwendung Daten bankverbindungs Informationen hinzufügen.
+- Sie können den ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Assistenten** verwenden, um ein konzeptionelles Modell aus einer vorhandenen Datenbank zu generieren und der Anwendung Daten bankverbindungs Informationen hinzuzufügen.
 
 - Mit dem Assistenten zum **Erstellen einer Datenbank** können Sie zuerst ein konzeptionelles Modell erstellen und dann eine Datenbank erstellen, die das Modell unterstützt.
 
 - Mit dem **Modellaktualisierungs-Assistenten** können Sie das konzeptionelle Modell, das Speichermodell und die Zuordnungen aktualisieren, wenn Änderungen an der zugrunde liegenden Datenbank vorgenommen wurden.
 
   > [!NOTE]
-  > Ab Visual Studio 2010 unterstützen Entity Framework Tools [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]nicht.
+  > Ab Visual Studio 2010 werden von Entity Framework Tools nicht unterstützt [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)] .
 
 Die-Tools generieren oder ändern eine *edmx* -Datei. Diese *edmx* -Datei enthält Informationen, in denen das konzeptionelle Modell, das Speichermodell und die Zuordnungen zwischen Ihnen beschrieben werden. Weitere Informationen finden Sie unter [edmx](/ef/ef6/).
 
@@ -47,13 +47,13 @@ Die-Tools generieren oder ändern eine *edmx* -Datei. Diese *edmx* -Datei enthä
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-| Title | Beschreibung |
+| Titel | BESCHREIBUNG |
 | - | - |
-| [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Beschreibt die Verwendung von [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools, die [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] bereitstellt, um-Anwendungen zu erstellen. |
-| [Entity Data Model](/dotnet/framework/data/adonet/entity-data-model) | Enthält Links und Informationen zum Arbeiten mit Daten, die von Anwendungen verwendet werden, die auf [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]basieren. |
+| [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Beschreibt [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] die Verwendung von Tools, die [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] bereitstellt, um-Anwendungen zu erstellen. |
+| [Entity Data Model](/dotnet/framework/data/adonet/entity-data-model) | Enthält Links und Informationen zum Arbeiten mit Daten, die von Anwendungen verwendet werden, die auf basieren [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] . |
 | [Entity Framework (EF)-Dokumentation)](/ef/ef6/get-started) | Bietet einen Index mit Videos, Tutorials und erweiterter Dokumentation, mit deren Hilfe Sie Entity Framework optimal nutzen können. |
 | [ASP.net 5 Anwendung in neue Datenbank](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Hier wird beschrieben, wie Sie eine neue ASP.net 5-Anwendung mit Entity Framework 7 erstellen. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

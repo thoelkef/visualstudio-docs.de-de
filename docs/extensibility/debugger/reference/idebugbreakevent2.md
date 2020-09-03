@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakEvent2 | Microsoft Docs
+title: IDebugBreakEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735391"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-Diese Schnittstelle teilt dem Sitzungsdebug-Manager (SDM) mit, dass ein asynchroner Unterbrechungsfehler erfolgreich abgeschlossen wurde.
+Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass eine asynchrone Unterbrechung erfolgreich abgeschlossen wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,18 +29,18 @@ IDebugBreakEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle, um Benutzerunterbrechungen in einem Programm zu unterstützen. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss auf demselben Objekt wie diese Schnittstelle implementiert werden `IDebugEvent2` (das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die Schnittstelle zuzugreifen).
+ Die de implementiert diese Schnittstelle, um Benutzer Umbrüche in einem Programm zu unterstützen. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf demselben Objekt wie diese Schnittstelle implementiert werden (SDM verwendet [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die- `IDebugEvent2` Schnittstelle).
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Das SDM ruft [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) auf, wenn der Benutzer angefordert hat, dass das zu debuggende Programm angehalten wird. Wenn das Programm erfolgreich angehalten wurde, `IDebugBreakEvent2` sendet die DE das Ereignis. Dieses Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Der SDM ruft [cauanbreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) auf, wenn der Benutzer angefordert hat, dass das Programm, das gedeppt wird, angehalten werden soll. Wenn das Programm erfolgreich angehalten wurde, sendet der de das `IDebugBreakEvent2` Ereignis. Dieses Ereignis wird mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Rückruffunktion gesendet, die von SDM beim Anfügen an das gedestete Programm bereitgestellt wird.
 
 ## <a name="remarks"></a>Bemerkungen
- Beispielsweise kann ein Benutzer im **Debug-Menü** den Befehl **Alle unterbrechen** auswählen, um aus einem Programm auszubrechen, das eine Endlosschleife ausführt. Das SDM weist das Programm an, durch Aufrufen von [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)aufzuhören. Die DE `IDebugBreakEvent2` sendet, wenn das Programm endlich beendet wird.
+ Beispielsweise kann ein Benutzer im Menü **Debuggen** den Befehl **Alle unterbrechen** auswählen, um das Programm zu verlassen, das eine Endlosschleife ausführen soll. Der SDM weist das Programm an, durch den Aufruf von [caust Break](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)anzuhalten. Der de sendet, `IDebugBreakEvent2` Wenn das Programm beendet wird.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
