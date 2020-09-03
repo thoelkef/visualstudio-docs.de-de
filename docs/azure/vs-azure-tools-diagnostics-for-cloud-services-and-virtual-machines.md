@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911852"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426732"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -28,7 +28,7 @@ Sie können eine der folgenden Optionen verwenden, um Azure-Diagnose einzurichte
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Diagnoseänderungen bei Azure SDK 2.6
 Folgende Änderungen gelten für Projekte in Visual Studio von Azure SDK 2.6 und höher:
 
-* Der lokale Emulator unterstützt jetzt die Diagnose. Dies bedeutet, dass Sie Diagnosedaten sammeln und sicherstellen können, dass Ihre Anwendung die richtigen Ablaufverfolgungen erstellt, während Sie Ihre Entwicklung und Tests in Visual Studio durchführen. Die Verbindungszeichenfolge `UseDevelopmentStorage=true` aktiviert das Sammeln von Diagnosedaten, während Sie Ihr Clouddienstprojekt in Visual Studio mithilfe des Azure-Speicheremulators ausführen. Alle Diagnosedaten werden im Speicherkonto des Entwicklungsspeichers gesammelt.
+* Der lokale Emulator unterstützt jetzt die Diagnose. Dies bedeutet, dass Sie Diagnosedaten sammeln und sicherstellen können, dass Ihre Anwendung die richtigen Ablaufverfolgungen erstellt, während Sie Ihre Entwicklung und Tests in Visual Studio durchführen. Die Verbindungs Zeichenfolge `UseDevelopmentStorage=true` schaltet die Diagnosedaten Sammlung ein, während Sie das clouddienstprojekt in Visual Studio mit dem Azure Storage-Emulator ausführen. Alle Diagnosedaten werden im Speicherkonto des Entwicklungsspeichers gesammelt.
 * Die Verbindungszeichenfolge `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` des Diagnosespeicherkontos wird in der Dienstkonfigurationsdatei (CSCFG) gespeichert. In Azure SDK 2.5 wird das Diagnosespeicherkonto in der Datei „diagnostics.wadcfgx“ angegeben.
 
 Die Verbindungszeichenfolge weist in Azure SDK 2.6 und höher einige grundlegende Änderungen in der Funktionsweise im Gegensatz zu Azure SDK 2.4 und früher auf:
@@ -73,11 +73,11 @@ In Visual Studio können Sie Diagnosedaten für Rollen sammeln, die in Azure aus
 3. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten (…), um das Speicherkonto für die Diagnosedaten anzugeben.
 
     ![Angeben des zu verwendenden Speicherkontos](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. Geben Sie im Dialogfeld **Verbindungszeichenfolge für den Speicher erstellen** an, ob Sie die Verbindung mit dem Azure-Speicheremulator, einem Azure-Abonnement oder mit manuell eingegebenen Anmeldeinformationen herstellen möchten.
+4. Geben Sie im Dialogfeld **Verbindungs Zeichenfolge für den Speicher erstellen** an, ob Sie eine Verbindung mit dem Azure Storage-Emulator, einem Azure-Abonnement oder manuell eingegebenen Anmelde Informationen herstellen möchten.
 
     ![Dialogfeld "Speicherkonto"](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * Wenn Sie den **Microsoft Azure-Speicheremulator** auswählen, wird die Verbindungszeichenfolge auf `UseDevelopmentStorage=true` festgelegt.
+   * Wenn Sie **Microsoft Azure-Speicheremulator**auswählen, wird die Verbindungs Zeichenfolge auf festgelegt `UseDevelopmentStorage=true` .
    * Wenn Sie **Ihr Abonnement** auswählen, können Sie das Azure-Abonnement auswählen, das Sie verwenden möchten, und einen Kontonamen angeben. Klicken Sie auf **Konten verwalten**, um Ihre Azure-Abonnements zu verwalten.
    * Wenn Sie **Manuell eingegebene Anmeldeinformationen** auswählen, geben Sie den Namen und den Schlüssel des Azure-Kontos ein, das Sie verwenden möchten.
 5. Klicken Sie auf **Konfigurieren**, um das Dialogfeld **Diagnosekonfiguration** anzuzeigen. Jede Registerkarte (mit Ausnahme von **Allgemein** und **Protokollverzeichnisse**) stellt eine Diagnosedatenquelle dar, die Sie sammeln können. Die Standardregisterkarte **Allgemein** enthält die folgenden Optionen für die Diagnosedatensammlung: **Nur Fehler**, **Alle Informationen** und **Benutzerdefinierter Plan**. Die Standardoption **Nur Fehler** verwendet am wenigsten Speicherplatz, da keine Warnungen oder Ablaufverfolgungsmeldungen übertragen werden. Die Option **Alle Informationen** überträgt die meisten Informationen, verwendet den meisten Speicher und ist daher die teuerste Option.

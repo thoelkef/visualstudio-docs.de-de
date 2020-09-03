@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 1776aebbe827295cbc7902f72417bc57e03a4196
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f207afc600402924969e4d2eee6df229c3d6f09
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280634"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426719"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurieren eines Azure-Clouddienstprojekts mit Visual Studio
 Sie können ein Azure-Clouddienstprojekt abhängig von den Anforderungen für dieses Projekt konfigurieren. Sie können für die folgenden Kategorien Eigenschaften für das Projekt festlegen:
 
 - **Veröffentlichen eines Clouddiensts in Azure**: Sie können eine Eigenschaft festlegen, um sicherzustellen, dass ein bereits in Azure bereitgestellter Clouddienst nicht versehentlich gelöscht wird.
-- **Ausführen oder Debuggen eines Clouddiensts auf dem lokalen Computer**: Sie können die zu verwendende Dienstkonfiguration auswählen und angeben, ob der Azure-Speicheremulator gestartet werden soll.
+- **Ausführen oder Debuggen eines clouddiensts auf dem lokalen Computer** : Sie können eine zu verwendende Dienst Konfiguration auswählen und angeben, ob der Azure Storage Emulator gestartet werden soll.
 - **Überprüfen eines Clouddienstpakets bei der Erstellung**: Sie können festlegen, dass alle Warnungen als Fehler behandelt werden, um zu gewährleisten, dass sich das Clouddienstpaket ohne Probleme bereitstellen lässt.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Schritte zum Konfigurieren eines Azure-Clouddienstprojekts
@@ -36,7 +36,7 @@ Sie können ein Azure-Clouddienstprojekt abhängig von den Anforderungen für di
 
 1. Wählen Sie die gewünschte **Dienstkonfiguration** aus, die beim lokalen Ausführen oder Debuggen des Clouddiensts verwendet werden soll. Weitere Informationen zum Ändern einer Dienstkonfiguration für eine Rolle finden Sie unter [Konfigurieren der Rollen für einen Azure-Clouddienst mit Visual Studio](./vs-azure-tools-configure-roles-for-cloud-service.md).
 
-1. Legen Sie die Einstellung **Azure-Speicheremulator starten** auf **True** fest, um beim lokalen Ausführen oder Debuggen Ihres Clouddiensts den Azure-Speicheremulator zu starten.
+1. Legen Sie **Start Azure Storage Emulator** auf **true** fest, um den Azure Storage Emulator zu starten, wenn Sie Ihren clouddienst lokal ausführen oder Debuggen.
 
 1. Um sicherzustellen, dass bei Paketvalidierungsfehlern keine Veröffentlichung möglich ist, legen Sie **Warnungen als Fehler behandeln** als **True** fest.
 
