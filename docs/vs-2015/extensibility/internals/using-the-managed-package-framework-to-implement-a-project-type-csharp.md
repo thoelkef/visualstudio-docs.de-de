@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Managed Package Frameworks zum Implementieren eines Projekt TypsC#() | Microsoft-Dokumentation
+title: Verwenden des Managed Package Frameworks zum Implementieren eines Projekt Typs (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066695c6d94603d0a0474243ed05dece4cc0bd1f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300370"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Verwenden des Managed Package Framework zum Implementieren eines Projekttyps (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Das Managed Package Framework (MPF) stellt C# Klassen bereit, die Sie verwenden oder von erben können, um Ihre eigenen Projekttypen zu implementieren. Das MPF implementiert viele der Schnittstellen, die Visual Studio für einen Projekttyp erwartet, sodass Sie sich auf die Implementierung der Einzelheiten Ihres Projekt Typs konzentrieren können.  
+Das Managed Package Framework (MPF) stellt c#-Klassen bereit, die Sie verwenden oder von erben können, um Ihre eigenen Projekttypen zu implementieren. Das MPF implementiert viele der Schnittstellen, die Visual Studio für einen Projekttyp erwartet, sodass Sie sich auf die Implementierung der Einzelheiten Ihres Projekt Typs konzentrieren können.  
   
 ## <a name="using-the-mpf-project-source-code"></a>Verwenden des MPF-Projekt Quellcodes  
  Das Managed Package Framework for Projects (mpfproj) stellt Hilfsklassen zum Erstellen und Verwalten eines neuen Projekt Systems bereit. Im Gegensatz zu anderen Klassen im MPF sind die Projektklassen nicht in den Assemblys enthalten, die im Lieferumfang von Visual Studio enthalten sind. Stattdessen werden die Projektklassen als Quellcode bei [MPF für Projekte 2013](https://archive.codeplex.com/?p=mpfproj12)bereitgestellt.  
@@ -44,7 +44,7 @@ Das Managed Package Framework (MPF) stellt C# Klassen bereit, die Sie verwenden 
   
 2. Entladen Sie das VSPackage-Projekt.  
   
-3. Bearbeiten Sie die Datei "VSPackage. csproj", indem Sie den folgenden Block vor den anderen `<Import>` Blöcken hinzufügen:  
+3. Bearbeiten Sie die Datei "VSPackage. csproj", indem Sie den folgenden Block vor den anderen Blöcken hinzufügen `<Import>` :  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -64,7 +64,7 @@ Das Managed Package Framework (MPF) stellt C# Klassen bereit, die Sie verwenden 
   
 4. Fügen Sie dem VSPackage-Projekt den folgenden Verweis hinzu:  
   
-     Microsoft.Build.Tasks.4.0  
+     Microsoft. Build. Tasks. 4.0  
   
 5. Erstellen Sie das Projekt.  
   

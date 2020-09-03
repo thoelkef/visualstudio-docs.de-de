@@ -12,10 +12,10 @@ caps.latest.revision: 49
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2619e975dbfd22d96db2cc382a7cebbf04a05223
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657279"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Komponententests für generische Methoden
@@ -33,7 +33,7 @@ Sie können Komponententests für generische Methoden genau wie für andere Meth
 
 - [Verwenden einer Typeinschränkung](#TypeConstraintNotSatisfied). In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet. Die Typeinschränkung wird in diesem Beispiel nicht erfüllt.
 
-### <a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
  Im Testcode in diesem Abschnitt wird eine Code-unter-Test-Methode mit dem Namen `SizeOfLinkedList()` getestet. Diese Methode gibt eine ganze Zahl zurück, die die Anzahl der Knoten in der verknüpften Liste angibt.
 
  Das erste Codebeispiel im Abschnitt „Generierter Testcode“ enthält den unbearbeiteten Testcode, wie er von Visual Studio Enterprise generiert wurde. Das zweite Beispiel im Abschnitt „Bearbeiteter Testcode“ veranschaulicht, wie Sie die Funktionsweise der SizeOfLinkedList-Methode für zwei verschiedene Datentypen, `int` und `char`, testen können.
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter Gewusst [wie: Debuggen beim Ausführen eines Tests in einer ASP.net-Lösung](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-### <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
  In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet, die nicht erfüllt wird. Der erste Abschnitt enthält Code aus dem Code-unter-Test-Projekt. Die Typeinschränkung ist hervorgehoben.
 
  Der zweite Abschnitt enthält Code aus dem Testprojekt.
@@ -197,5 +197,5 @@ namespace ClassLibrary2
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anatomie eines Komponenten Test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) -Komponenten [Tests für Ihren Code](../test/unit-test-your-code.md)

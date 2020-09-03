@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81489635"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimieren des Azure-Codes
@@ -26,7 +26,7 @@ Im Azure-Tool für die Codeanalyse werden die folgenden Regeln verwendet, um den
 ### <a name="id"></a>id
 AP0000
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Wenn Sie den standardmäßigen Sitzungszustandsmodus (In Bearbeitung) für Cloudanwendungen verwenden, können Sie den Sitzungszustand verlieren.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -43,7 +43,7 @@ Eine empfohlene Lösung ist das Speichern des Sitzungszustands unter einem Manag
 ### <a name="id"></a>id
 AP1000
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Erstellen Sie asynchrone Methoden (z.B. [await](https://msdn.microsoft.com/library/hh156528.aspx)) außerhalb der [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)-Methode, und rufen Sie dann die asynchronen Methoden aus [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) auf. Wenn Sie die [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)-Methode als asynchron deklarieren, wird die Workerrolle in eine Neustartschleife versetzt.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -88,7 +88,7 @@ public async Task RunAsync()
 ### <a name="id"></a>id
 AP2000
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Verwenden Sie Shared Access Signature (SAS) für die Authentifizierung. Access Control Service (ACS) gilt für die Service Bus-Authentifizierung als veraltet.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -115,7 +115,7 @@ Weitere Informationen finden Sie in den folgenden Themen.
 ### <a name="id"></a>id
 AP2002
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Um das Auftreten einer „Empfangsschleife“ zu vermeiden, ist das Aufrufen der **OnMessage**-Methode eine bessere Lösung für das Empfangen von Nachrichten als das Aufrufen der **Receive**-Methode. Wenn Sie die **Receive** -Methode verwenden müssen und nicht die Standardeinstellung für die Serverwartezeit festlegen, sollten Sie sicherstellen, dass die Serverwartezeit mehr als eine Minute beträgt.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -219,7 +219,7 @@ while (true)
 ### <a name="id"></a>id
 AP2003
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Verwenden Sie asynchrone Service Bus-Methoden zur Verbesserung der Leistung beim Brokermessaging.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -236,7 +236,7 @@ Sehen Sie sich die Informationen zum Entwurfsmuster unter [Einführung in asynch
 ### <a name="id"></a>id
 AP2004
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Partitionieren Sie Service Bus-Warteschlangen und -Themen, um eine bessere Leistung in Verbindung mit dem Service Bus-Messaging zu erzielen.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -261,7 +261,7 @@ Weitere Informationen finden Sie unter [Partitionierte Service Bus-Warteschlange
 ### <a name="id"></a>id
 AP3001
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Sie sollten das Verwenden von SharedAccessStartTimeset zum Angeben der aktuellen Zeit vermeiden, um die Shared Access-Richtlinie sofort zu starten. Sie müssen diese Eigenschaft nur festlegen, wenn Sie die Shared Access-Richtlinie zu einem späteren Zeitpunkt starten möchten.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -293,7 +293,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ### <a name="id"></a>id
 AP3002
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Für Uhren zwischen Rechenzentren an verschiedenen Standorten können aufgrund einer Bedingung, die als Uhrabweichung (Clock Skew) bezeichnet wird, bis zu fünf Minuten Unterschied herrschen. Um zu verhindern, dass das SAS-Richtlinientoken früher als geplant abläuft, sollten Sie die Ablaufzeit auf mehr als fünf Minuten festlegen.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -343,7 +343,7 @@ Weitere Informationen finden Sie unter [Erstellen und Verwenden einer SAS (Share
 ### <a name="id"></a>id
 AP4000
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Durch die Verwendung der [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx)-Klasse für Projekte, z.B. Azure Website und Azure Mobile Services, ergeben sich keine Laufzeitprobleme. Es ist jedoch eine bewährte Methode, Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) als einheitliches Verfahren zum Verwalten von Konfigurationen für alle Azure-Cloudanwendungen zu verwenden.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -380,7 +380,7 @@ Hier ist ein Beispiel dafür angegeben, wie Sie die Konfigurationseinstellung in
 ### <a name="id"></a>id
 AP4001
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Wenn Sie hartcodierte Verbindungszeichenfolgen verwenden und diese später aktualisieren möchten, müssen Sie Änderungen an Ihrem Quellcode vornehmen und die Anwendung neu kompilieren. Falls Sie Ihre Verbindungszeichenfolgen in einer Konfigurationsdatei speichern, können Sie diese später aber ändern, indem Sie einfach die Konfigurationsdatei aktualisieren.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -401,7 +401,7 @@ Informationen zur Verwendung von Konfigurationsdateien wie „web.config“ oder
 ### <a name="id"></a>id
 AP5000
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Anstatt Diagnoseeinstellungen in Ihrem Code zu konfigurieren, z. B. mithilfe der Microsoft.WindowsAzure.Diagnostics-Programmier-API, sollten Sie die Diagnoseeinstellungen in der Datei „diagnostics.wadcfg“ konfigurieren. (Oder in „diagnostics.wadcfgx“, wenn Sie Azure SDK 2.5 verwenden.) Auf diese Weise können Sie Diagnoseeinstellungen ändern, ohne den Code neu kompilieren zu müssen.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.
@@ -426,7 +426,7 @@ Verwenden Sie den Designer für die Diagnosekonfiguration, um die Diagnoseeinste
 ### <a name="id"></a>id
 AP6000
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 Vermeiden Sie die Deklaration von DBContext-Objekten als „statisch“, um Arbeitsspeicher zu sparen.
 
 Ihre Ideen und Feedback hierzu können Sie uns unter [Feedback zur Azure-Codeanalyse](https://social.msdn.microsoft.com/Forums/en-US/home)gern mitteilen.

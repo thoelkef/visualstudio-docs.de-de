@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::GetProgram | Microsoft Docs
+title: 'IDebugPortEx2:: getprogram | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1f9dea8706b8075b460b813d2dc58a916198d37
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725094"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
@@ -42,9 +42,9 @@ int GetProgram( 
 ```
 
 ## <a name="parameters"></a>Parameter
-`pProgramNode`[in] Ein [IDebugProgramNode2-Objekt,](../../../extensibility/debugger/reference/idebugprogramnode2.md) das den Programmknoten darstellt.
+`pProgramNode` in Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das den Programmknoten darstellt.
 
-`ppProgram`[out] Gibt ein [IDebugProgram2-Objekt](../../../extensibility/debugger/reference/idebugprogram2.md) zurück, das das dem Programmknoten zugeordnete Programm darstellt.
+`ppProgram` vorgenommen Gibt ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt zurück, das das Programm darstellt, das dem Programmknoten zugeordnet ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

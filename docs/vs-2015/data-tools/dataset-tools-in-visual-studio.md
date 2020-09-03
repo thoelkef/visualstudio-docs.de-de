@@ -54,10 +54,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23e4deba53288383a569f6da6e14d27f723825ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657382"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
@@ -89,7 +89,7 @@ HINWEIS]
 
   - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
 
-- Abfragen und Durchsuchen der Daten im DataSet. Weitere Informationen finden Sie unter [Abfragen von Datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] aktiviert [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) über Daten in einem <xref:System.Data.DataSet>-Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Abfragen und Durchsuchen der Daten im DataSet. Weitere Informationen finden Sie unter [Abfragen von Datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] aktiviert [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) über Daten in einem- <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Verwenden Sie das Fenster **Datenquellen** , um Steuerelemente der Benutzeroberfläche an das DataSet oder die einzelnen Spalten zu binden und um anzugeben, welche Spalten vom Benutzer bearbeitet werden können. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
@@ -99,5 +99,5 @@ HINWEIS]
 ## <a name="datasets-and-xml"></a>Datasets und XML
  Informationen zum Umstellen von Datasets in und aus XML finden [Sie unter Lesen von XML-Daten in ein DataSet](../data-tools/read-xml-data-into-a-dataset.md) und [Speichern eines Datasets als XML](../data-tools/save-a-dataset-as-xml.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

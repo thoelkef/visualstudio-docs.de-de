@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770311"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem-Element (Visual Studio-Projektvorlagen)
@@ -48,12 +48,12 @@ Gibt eine Datei an, die in der Projektvorlage enthalten ist.
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute
+### <a name="attributes"></a>Attributes
 
-| Attribut | Beschreibung |
+| attribute | Beschreibung |
 |---------------------| - |
 | `TargetFileName` | Optionales Attribut.<br /><br /> Gibt den Namen und den Pfad des Projekt Elements an, wenn ein Projekt aus der Vorlage erstellt wird. Dieses Attribut ist nützlich zum Erstellen einer Verzeichnisstruktur, die sich von der Verzeichnisstruktur in der *ZIP* -Datei der Vorlage unterscheidet, oder für die Verwendung von Parameter Ersetzung zum Erstellen eines Element namens. |
-| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element über Parameterwerte verfügt, die beim Erstellen eines Projekts aus der Vorlage ersetzt werden müssen. Der Standardwert ist `false`. |
+| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element über Parameterwerte verfügt, die beim Erstellen eines Projekts aus der Vorlage ersetzt werden müssen. Der Standardwert ist `false`sein. |
 | `OpenInEditor` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element in seinem entsprechenden Editor in geöffnet werden soll, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Das `OpenInWebBrowser` -Attribut und das- `OpenInHelpBrowser` Attribut werden bei einem Element mit dem- `OpenInEditor` Wert ignoriert `true` .<br /><br /> Standardwert: `false`. |
 | `OpenInWebBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element im Webbrowser geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können im Webbrowser geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Standardwert: `false`. |
 | `OpenInHelpBrowser` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element im Help Viewer geöffnet werden soll, wenn ein Projekt aus der Vorlage erstellt wird.<br /><br /> Nur HTML-Dateien und Textdateien, die für das Projekt lokal sind, können im Hilfe Browser geöffnet werden. Externe URLs können nicht mit diesem Attribut geöffnet werden.<br /><br /> Standardwert: `false`. |
@@ -73,8 +73,8 @@ Gibt eine Datei an, die in der Projektvorlage enthalten ist.
 
  Ein `string` , der den Namen oder Pfad zu einer Datei in der *ZIP* -Datei der Vorlage darstellt.
 
-## <a name="remarks"></a>Hinweise
- `ProjectItem`ist ein optionales untergeordnetes Element von `Project` .
+## <a name="remarks"></a>Bemerkungen
+ `ProjectItem` ist ein optionales untergeordnetes Element von `Project` .
 
  Das- `TargetFileName` Attribut kann verwendet werden, um eine andere Verzeichnisstruktur als die Verzeichnisstruktur in der *ZIP* -Datei der Vorlage zu erstellen. Wenn z. b. die Datei " *MyFile. vb* " im Stammverzeichnis der *ZIP* -Datei der Vorlage vorhanden ist, Sie jedoch möchten, dass die Datei in einem Verzeichnis mit dem Namen " *CustomFiles* " in allen aus der Vorlage erstellten Projekten platziert wird, verwenden Sie den folgenden XML-Code:
 

@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace-Element (Visual Studio-Vorlagen)
+title: Kreatanplace-Element (Visual Studio-Vorlagen)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739663"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace-Element (Visual Studio-Vorlagen)
-Gibt an, ob das Projekt erstellt und Parameterersetzung enden soll, oder ob Parameterersetzung an einem temporären Speicherort durchgeführt werden soll, und dann das Projekt an dem angegebenen Speicherort speichern soll.
+# <a name="createinplace-element-visual-studio-templates"></a>Kreatanplace-Element (Visual Studio-Vorlagen)
+Gibt an, ob das Projekt erstellt und die Parameter Ersetzung am angegebenen Speicherort durchgeführt werden soll, oder ob die Parameter Ersetzung an einem temporären Speicherort durchgeführt und das Projekt am angegebenen Speicherort gespeichert werden soll.
 
- \<VSTemplate \<> TemplateData> \<CreateInPlace>
+ \<VSTemplate> \<TemplateData>
+ \<CreateInPlace>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,24 +37,24 @@ Gibt an, ob das Projekt erstellt und Parameterersetzung enden soll, oder ob Para
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss entweder `true` oder `false` sein. Wenn `true`, wird das Projekt erstellt, und die Parameterersetzung wird an der im Dialogfeld **Neues Projekt** angegebenen Position durchgeführt. Wenn `false`, wird die Parameterersetzung an einem temporären Speicherort durchgeführt, und das Projekt wird dann an den angegebenen Speicherort kopiert.
+ Der Text muss entweder `true` oder `false` sein. Gibt `true` an, dass das Projekt erstellt und die Parameter Ersetzung an der im Dialogfeld **Neues Projekt** angegebenen Position ausgeführt wird. Wenn `false` der Wert ist, wird die Parameter Ersetzung an einem temporären Speicherort durchgeführt, und das Projekt wird dann an den angegebenen Speicherort kopiert.
 
 ## <a name="remarks"></a>Bemerkungen
- `CreateInPlace` ist ein optionales Element. Der Standardwert ist `true`.
+ `CreateInPlace` ist ein optionales Element. Standardwert: `true`.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.
@@ -83,6 +84,6 @@ Gibt an, ob das Projekt erstellt und Parameterersetzung enden soll, oder ob Para
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
