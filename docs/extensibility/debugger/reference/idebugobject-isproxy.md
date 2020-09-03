@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsProxy | Microsoft Docs
+title: 'Idebugobject:: isproxy | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6cab0d0d0f5f1c2e491c9aa0fe9efd26b39e51df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726473"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
@@ -40,13 +40,13 @@ int IsProxy (
 
 ## <a name="parameters"></a>Parameter
 `pfIsProxy`\
-[out] `TRUE` wenn es sich bei dem Objekt um einen transparenten Proxy handelt; andernfalls `FALSE`.
+[out] `TRUE` , wenn das Objekt ein transparenter Proxy ist. andernfalls `FALSE` .
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird vom standardmäßigen C++-Debugmodul implementiert.
+ Diese Methode wird von der standardmäßigen C++-Debug-Engine implementiert.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

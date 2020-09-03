@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905037"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen eines Ansichts Zusatz Elements, von Befehlen und Einstellungen (Spalten Handbücher)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`muss ein wenig kennenlernen, um eine <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> Ansicht des Codes zu erhalten.  Wenn Sie die Ablauf Verfolgung durch `GetActiveTextView` , `GetActiveView` und durch `GetTextViewFromVsTextView` führen, sehen Sie, wie Sie dies tun können. Der folgende Code ist der relevante Code, der mit der aktuellen Auswahl abstrahiert wird, anschließend den Rahmen der Auswahl erhält und dann die DocView des Frames als erhält. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> anschließend erhält er eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> aus der IVsTextView und erhält dann einen Ansichts Host und schließlich die iwpftextview:
+`GetCurrentEditorColumn` muss ein wenig kennenlernen, um eine <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> Ansicht des Codes zu erhalten.  Wenn Sie die Ablauf Verfolgung durch `GetActiveTextView` , `GetActiveView` und durch `GetTextViewFromVsTextView` führen, sehen Sie, wie Sie dies tun können. Der folgende Code ist der relevante Code, der mit der aktuellen Auswahl abstrahiert wird, anschließend den Rahmen der Auswahl erhält und dann die DocView des Frames als erhält. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> anschließend erhält er eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> aus der IVsTextView und erhält dann einen Ansichts Host und schließlich die iwpftextview:
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1339,7 +1339,7 @@ In Kürze wird ein GitHub-Projekt mit Visual Studio-Erweiterbarkeits Beispielen 
 
 Sie können eine Version der Column Guides-Funktion mit dieser Visual Studio Gallery-[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)ausprobieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Innerhalb des Editors](../extensibility/inside-the-editor.md)
 - [Erweitern des Editors und der Sprachdienste](../extensibility/extending-the-editor-and-language-services.md)
 - [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)

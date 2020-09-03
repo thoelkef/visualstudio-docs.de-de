@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
+title: 'Idebugparser-dexpression:: evaluatesync | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726010"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Diese Methode wertet den analysierten Ausdruck aus und übergibt das Ergebnis optional in einen anderen Datentyp.
+Diese Methode wertet den analysierten Ausdruck aus und wandelt das Ergebnis optional in einen anderen Datentyp um.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,31 +53,31 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Parameter
 `dwEvalFlags`\
-[in] Eine Kombination von [EVALFLAGS-Konstanten,](../../../extensibility/debugger/reference/evalflags.md) die steuern, wie der Ausdruck ausgewertet werden soll.
+in Eine Kombination aus [evalflags](../../../extensibility/debugger/reference/evalflags.md) -Konstanten, die Steuern, wie der Ausdruck ausgewertet werden soll.
 
 `dwTimeout`\
-[in] Gibt die maximale Wartezeit in Millisekunden an, bevor von dieser Methode zurückgegeben wird. Verwenden `INFINITE` Sie diese Verwendung, um auf unbestimmte Zeit zu warten.
+in Gibt die maximale Zeit in Millisekunden an, die gewartet werden soll, bevor diese Methode zurückgegeben wird. Verwenden `INFINITE` Sie, um unbegrenzt zu warten.
 
 `pSymbolProvider`\
-[in] Der Symbolanbieter, ausgedrückt als [IDebugSymbolProvider-Schnittstelle.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+in Der Symbol Anbieter, ausgedrückt als [idebugsymbolprovider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) -Schnittstelle.
 
 `pAddress`\
-[in] Der aktuelle Ausführungsspeicherort innerhalb einer Methode, ausgedrückt als [IDebugAddress-Schnittstelle.](../../../extensibility/debugger/reference/idebugaddress.md)
+in Der aktuelle Ausführungs Speicherort innerhalb einer Methode, ausgedrückt als [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle.
 
 `pBinder`\
-[in] Der Binder, ausgedrückt als [IDebugBinder-Schnittstelle.](../../../extensibility/debugger/reference/idebugbinder.md)
+in Der Binder, ausgedrückt als [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle.
 
 `bstrResultType`\
-[in] Der Typ, auf den das Ergebnis umgegossen werden soll. Dieses Argument kann ein NULL-Wert sein.
+in Der Typ, in den das Ergebnis umgewandelt werden soll. Dieses Argument kann ein NULL-Wert sein.
 
 `ppResult`\
-[out] Gibt die [IDebugProperty2-Schnittstelle](../../../extensibility/debugger/reference/idebugproperty2.md) zurück, die die Auswertungsergebnisse darstellt.
+vorgenommen Gibt die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle zurück, die die Ergebnisse der Auswertung darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der Ausdrucksauswertungskontext `pAddress`wird durch angegeben, wodurch es möglich ist, die enthaltende Methode zu bestimmen und dann Sprachbereichsregeln zu verwenden, um den Wert der Symbole im Ausdruck zu bestimmen.
+ Der Ausdrucks Auswertungs Kontext wird durch angegeben `pAddress` , wodurch es möglich ist, die enthaltende Methode zu bestimmen und dann die sprach Bereichs Regeln zu verwenden, um den Wert der Symbole im Ausdruck zu ermitteln.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

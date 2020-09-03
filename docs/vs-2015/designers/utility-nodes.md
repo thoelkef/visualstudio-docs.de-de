@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5de2331be498cf9c9a4b121318433bcb5a47c501
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664069"
 ---
 # <a name="utility-nodes"></a>Hilfsprogrammknoten
@@ -23,7 +23,7 @@ Im Shader-Designer stellen Hilfsprogrammknoten allgemeine, nützliche Shader-Ber
 
 ## <a name="utility-node-reference"></a>Übersicht über Hilfeprogrammknoten
 
-|Knoten|Details|Eigenschaften|
+|Node|Details|Eigenschaften|
 |----------|-------------|----------------|
 |**Vektor anfügen**|Erstellt einen Vektor, indem die angegebenen Eingaben zusammen angefügt werden.<br /><br /> **Eingabe:**<br /><br /> `Vector`: `float`, `float2` oder `float3`<br /> Die Werte, an die er angefügt wird.<br /><br /> `Value to Append`: `float`<br /> Der anzufügende Wert.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`, `float3` oder `float4`, je nach Art der Eingabe `Vector`.<br /> Der neue Vektor.|Keiner|
 |**Fresnel**|Berechnet den Fresnel-Verlauf auf der Grundlage der angegebenen Oberflächennormalen.<br /><br /> Der Wert des Fresnel-Verlaufs drückt aus, wie exakt die Oberflächennormale des aktuellen Pixels mit dem Ansichtsvektor zusammenfällt. Wenn die Vektoren ausgerichtet sind, ist das Ergebnis der Funktion 0. Das Ergebnis erhöht sich, wenn die Vektoren weniger ähnlich werden, und erreicht sein Maximum, wenn die Vektoren orthogonal sind. Sie können dies nutzen, um einen Effekt zu erzielen, der mehr oder weniger sichtbar ist, je nach Beziehung zwischen der Ausrichtung des aktuellen Pixels und der Kamera.<br /><br /> **Eingabe:**<br /><br /> `Surface Normal`: `float3`<br /> Die Oberflächennormale des aktuellen Pixels, definiert im Tangentialraum des aktuellen Pixels. Damit können Sie die sichtbare Oberflächennormale wie beim Normal Mapping stören.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float`<br /> Das Reflexionsvermögen des aktuellen Pixels.|**Exponent**<br /> Der Exponent zum Berechnen des Fresnel-Verlaufs.|

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 832dc3f7fea959ff4d2834aba921cd16f1117b5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666150"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generieren von Dateien von einem UML-Modell
@@ -33,7 +33,7 @@ Aus einem UML-Modell können Sie Programmcode, Schemas, Dokumente, Ressourcen un
 
   In diesem Thema wird erläutert [, wie die Textgenerierung verwendet](#What)wird. Weitere Informationen finden Sie unter [Code Generierung und T4-Text Vorlagen](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="Command"></a>Erstellen von Dateien aus einem Menübefehl
+## <a name="generating-files-from-a-menu-command"></a><a name="Command"></a> Erstellen von Dateien aus einem Menübefehl
  Sie können vorverarbeitete Textvorlagen innerhalb eines UML-Menübefehls verwenden. Im Code der Textvorlage oder in einer separaten partiellen Klasse können Sie das Modell lesen, das vom Diagramm angezeigt wird.
 
  Weitere Informationen zu diesen Funktionen finden Sie in den folgenden Themen:
@@ -47,7 +47,7 @@ Aus einem UML-Modell können Sie Programmcode, Schemas, Dokumente, Ressourcen un
   Die im folgenden Beispiel beschriebene Methode eignet sich zum Generieren von Text aus einem einzelnen Modell, wenn Sie den Vorgang aus einem der Modelldiagramme initiieren. Wenn Sie ein Modell in einem separaten Kontext verarbeiten möchten, können Sie den Zugriff auf das Modell und seine Elemente mithilfe von [Visual Studio ModelBus](../modeling/integrate-uml-models-with-other-models-and-tools.md) in Erwägung gezogen.
 
 ### <a name="example"></a>Beispiel
- Um dieses Beispiel auszuführen, erstellen Sie ein Projekt mit einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX). Der Projektname, der in diesem Beispiel verwendet wird, ist `VdmGenerator`. Klicken Sie in der Datei " **Source. Extension. vsixmanifest** " auf **Inhalt hinzufügen** , und legen Sie das Feld Typ auf **MEF-Komponente** und Quellpfad fest, der auf das aktuelle Projekt verweist. Weitere Informationen zum Einrichten dieser Art von Projekt finden Sie unter [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ Um dieses Beispiel auszuführen, erstellen Sie ein Projekt mit einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX). Der in diesem Beispiel verwendete Projektname ist `VdmGenerator` . Klicken Sie in der Datei " **Source. Extension. vsixmanifest** " auf **Inhalt hinzufügen** , und legen Sie das Feld Typ auf **MEF-Komponente** und Quellpfad fest, der auf das aktuelle Projekt verweist. Weitere Informationen zum Einrichten dieser Art von Projekt finden Sie unter [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
  Fügen Sie dem Projekt eine C#-Datei hinzu, die den folgenden Code enthält. Diese Klasse definiert einen Menübefehl, der in einem UML-Klassendiagramm angezeigt wird.
 
@@ -124,7 +124,7 @@ namespace VdmGenerator
 }
 ```
 
- Drücken Sie **F5**, um das Projekt zu testen. Eine neue Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet. Öffnen oder erstellen Sie in dieser Instanz ein UML-Modell, das ein Klassendiagramm enthält. Fügen Sie dem Diagramm einige Klassen und jeder Klasse einige Attribute hinzu. Klicken Sie mit der rechten Maustaste auf das Diagramm, und klicken Sie dann auf den Beispiel Befehl `Generate VDM`. Der Befehl erstellt die Datei `C:\Generated.txt`. Untersuchen Sie diese Datei. Ihr Inhalt sollte dem folgenden Text ähneln, jedoch werden Ihre eigenen Klassen und Attribute aufgeführt:
+ Drücken Sie **F5**, um das Projekt zu testen. Eine neue Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet. Öffnen oder erstellen Sie in dieser Instanz ein UML-Modell, das ein Klassendiagramm enthält. Fügen Sie dem Diagramm einige Klassen und jeder Klasse einige Attribute hinzu. Klicken Sie mit der rechten Maustaste auf das Diagramm, und klicken Sie dann auf den Beispiel Befehl `Generate VDM` . Der Befehl erstellt die Datei `C:\Generated.txt` . Untersuchen Sie diese Datei. Ihr Inhalt sollte dem folgenden Text ähneln, jedoch werden Ihre eigenen Klassen und Attribute aufgeführt:
 
 ```
 Type Class1 ::
@@ -134,12 +134,12 @@ Type Class2 ::
           Attribute3 : string
 ```
 
-## <a name="Application"></a>Erstellen von Dateien aus einer Anwendung
+## <a name="generating-files-from-an-application"></a><a name="Application"></a> Erstellen von Dateien aus einer Anwendung
  Sie können Dateien aus einer Anwendung generieren, die ein UML-Modell liest. Zu diesem Zweck ist [Visual Studio ModelBus](../modeling/integrate-uml-models-with-other-models-and-tools.md)die flexibelste und stabilere Methode für den Zugriff auf das Modell und seine Elemente.
 
  Sie können auch die grundlegende API zum Laden des Modells verwenden und das Modell mit den gleichen Verfahren wie im vorherigen Abschnitt an Textvorlagen übergeben. Weitere Informationen zum Laden eines Modells finden Sie unter [Lesen eines UML-Modells im Programmcode](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Design"></a>Erstellen von Dateien zur Entwurfszeit
+## <a name="generating-files-at-design-time"></a><a name="Design"></a> Erstellen von Dateien zur Entwurfszeit
  Wenn das Projekt über eine Standardmethode für die Interpretation von UML als Code verfügt, können Sie Textvorlagen erstellen, mit denen Sie innerhalb des Projekts Code aus einem UML-Modell generieren können. Normalerweise haben Sie eine Lösung, die das UML-Modellprojekt und ein oder mehrere Projekte für den Anwendungscode enthält. Jedes Codeprojekt kann mehrere Vorlagen enthalten, die basierend auf dem Inhalt des Modells Programmcode, Ressourcen und Konfigurationsdateien generieren. Der Entwickler kann alle Vorlagen ausführen, indem er auf der Projektmappen-Explorer Symbolleiste auf die Schaltfläche **alle Vorlagen transformieren** klickt. Programmcode wird normalerweise in Form von partiellen Klassen generiert, damit manuell geschriebene Teile einfach integriert werden können.
 
  Ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt dieser Art kann in Form einer Vorlage verteilt werden, sodass jedes Mitglied eines Teams Projekte erstellen kann, die Code aus einem Modell auf die gleiche Weise generieren. In der Regel ist die Vorlage Teil eines Erweiterungspakets, das Validierungseinschränkungen für das Modell aufweist, um sicherzustellen, dass die Vorbedingungen des Generierungscodes erfüllt werden.
@@ -185,17 +185,17 @@ Type Class2 ::
 
 2. Erstellen Sie ein C#- oder Visual Basic-Projekt in derselben Projektmappe.
 
-   - Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf die Projekt Mappe, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt**. Klicken Sie unter **installierte Vorlagen**auf **Visual Basic** oder **Visualisierung C#,** und wählen Sie dann einen Projekttyp aus, z. b. **Konsolenanwendung**.
+   - Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf die Projekt Mappe, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt**. Klicken Sie unter **installierte Vorlagen**auf **Visual Basic** oder **Visual c#,** und wählen Sie dann einen Projekttyp aus, z. b. **Konsolenanwendung**.
 
 3. Fügen Sie eine Nur-Text-Datei zum C#- oder Visual Basic-Projekt hinzu. Diese Datei enthält Code, der freigegeben wird, wenn Sie mehrere Textvorlagen schreiben möchten.
 
-   - Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**. Wählen Sie **Textdatei**aus.
+   - Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**. Wählen Sie **Textdatei**aus.
 
      Fügen Sie den Text ein, der im folgenden Abschnitt angezeigt wird.
 
 4. Fügen Sie eine Textvorlagendatei zum C#- oder Visual Basic-Projekt hinzu.
 
-   - Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**. Wählen Sie **Text Vorlage**aus.
+   - Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**. Wählen Sie **Text Vorlage**aus.
 
      Fügen Sie den folgenden Code in die Textvorlagendatei ein.
 
@@ -296,7 +296,7 @@ namespace Test{
 }
 ```
 
-## <a name="What"></a>Verwenden der Text Generierung
+## <a name="how-to-use-text-generation"></a><a name="What"></a> Verwenden der Text Generierung
  Die wirkliche Stärke der Modellierung nutzen Sie, wenn Sie Modelle verwenden, um auf Ebene der Anforderungen oder der Architektur zu entwerfen. Sie können Textvorlagen verwenden, um dazu beizutragen, allgemeine Ideen in Code umzuwandeln. In vielen Fällen führt dies nicht zu einer 1: 1-Entsprechung zwischen den Elementen in den UML-Modellen und -Klassen oder anderen Teilen des Programmcodes.
 
  Darüber hinaus hängt die Transformation vom Problembereich ab. Es gibt keine universelle Zuordnung zwischen Modellen und Code.
@@ -307,7 +307,7 @@ namespace Test{
 
 - **Muster**: Die Entwickler bei Contoso, Ltd erstellen häufig Websites und entwerfen das Navigationsschema mit UML-Klassendiagrammen. Jede Webseite wird durch eine Klasse dargestellt, und Zuordnungen stellen Navigationsverknüpfungen dar. Die Entwickler generieren einen Großteil des Codes einer Website aus dem Modell. Jede Webseite entspricht mehreren Klassen und Ressourcendateieinträgen.  Diese Methode hat den Vorteil, dass die Konstruktion jeder Seite einem einzelnen Muster entspricht, wodurch sich eine größere Zuverlässigkeit und Flexibilität als bei handgeschriebenem Code ergibt. Das Muster wird beim Generieren der Vorlagen eingesetzt, während das Modell zum Erfassen der variablen Aspekte verwendet wird.
 
-- **Schemas**. Humongous Insurance arbeitet mit Tausenden von Systemen weltweit. Diese Systeme verwenden unterschiedliche Datenbanken, Sprachen und Schnittstellen. Das zentrale Architekturteam veröffentlicht intern Modelle von Geschäftskonzepten und Prozessen. Aus diesen Modellen generieren lokale Teams Teile ihrer Datenbank und tauschen Schemas, Deklarationen in Programmcode usw. aus. Die grafische Darstellung der Modelle hilft Teams bei der Besprechung von Vorschlägen. Die Teams erstellen mehrere Diagramme, die Teilmengen des Modells zeigen, die für unterschiedliche Geschäftsbereiche gelten. Bereiche, die Änderungen unterliegen, werden farblich hervorgehoben.
+- **Schemas**: Humongous Insurance arbeitet mit Tausenden von Systemen weltweit. Diese Systeme verwenden unterschiedliche Datenbanken, Sprachen und Schnittstellen. Das zentrale Architekturteam veröffentlicht intern Modelle von Geschäftskonzepten und Prozessen. Aus diesen Modellen generieren lokale Teams Teile ihrer Datenbank und tauschen Schemas, Deklarationen in Programmcode usw. aus. Die grafische Darstellung der Modelle hilft Teams bei der Besprechung von Vorschlägen. Die Teams erstellen mehrere Diagramme, die Teilmengen des Modells zeigen, die für unterschiedliche Geschäftsbereiche gelten. Bereiche, die Änderungen unterliegen, werden farblich hervorgehoben.
 
 ## <a name="important-techniques-for-generating-artifacts"></a>Wichtige Techniken für das Generieren von Artefakten
  In den vorherigen Beispielen werden Modelle für verschiedene geschäftsabhängige Zwecke verwendet, und die Interpretation der Modellierungselemente wie Klassen und Aktivitäten variiert von einer Anwendung zur anderen. Die folgenden Techniken sind beim Generieren von Artefakten aus Modellen nützlich.

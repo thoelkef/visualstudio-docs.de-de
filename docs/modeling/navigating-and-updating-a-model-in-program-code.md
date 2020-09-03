@@ -482,7 +482,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Partitionen speichern
  Wenn ein Modell geladen wird, wird das zugehörige Diagramm gleichzeitig geladen. In der Regel wird das Modell in "Store. DefaultPartition" geladen, und der Diagramm Inhalt wird in eine andere Partition geladen. In der Regel wird der Inhalt der einzelnen Partitionen geladen und in einer separaten Datei gespeichert.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md)

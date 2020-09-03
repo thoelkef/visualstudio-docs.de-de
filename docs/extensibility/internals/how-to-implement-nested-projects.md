@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905354"
 ---
 # <a name="how-to-implement-nested-projects"></a>Gewusst wie: Implementieren von in einem Projekt unter fallenen Projekten
@@ -37,7 +37,7 @@ Wenn Sie einen Typ für einen in einem Projekt erstellten Typ erstellen, müssen
 
 4. Das übergeordnete Projekt Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> Methode oder die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> Methode für jedes seiner untergeordneten Projekte auf.
 
-     Sie übergeben <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> an die- `AddVirtualProject` Methode, um anzugeben, dass das virtuelle (gestreamte) Projekt dem Projektfenster hinzugefügt werden soll, von der Erstellung ausgeschlossen, der Quell Code Verwaltung hinzugefügt usw. `VSADDVPFLAGS`ermöglicht es Ihnen, die Sichtbarkeit des eingefügten Projekts zu steuern und anzugeben, welche Funktionalität damit verknüpft ist.
+     Sie übergeben <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> an die- `AddVirtualProject` Methode, um anzugeben, dass das virtuelle (gestreamte) Projekt dem Projektfenster hinzugefügt werden soll, von der Erstellung ausgeschlossen, der Quell Code Verwaltung hinzugefügt usw. `VSADDVPFLAGS` ermöglicht es Ihnen, die Sichtbarkeit des eingefügten Projekts zu steuern und anzugeben, welche Funktionalität damit verknüpft ist.
 
      Wenn Sie ein bereits vorhandenes untergeordnetes Projekt erneut laden, das eine Projekt-GUID enthält, die in der Projektdatei des übergeordneten Projekts gespeichert ist, ruft das übergeordnete Projekt auf `AddVirtualProjectEx` Der einzige Unterschied zwischen `AddVirtualProject` und `AddVirtualProjectEX` besteht darin, dass `AddVirtualProjectEX` über einen-Parameter verfügt, damit das übergeordnete Projekt eine pro-Instanz angeben kann, damit `guidProjectID` das untergeordnete Projekt aktiviert <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> und ordnungsgemäß <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> funktioniert.
 
@@ -45,7 +45,7 @@ Wenn Sie einen Typ für einen in einem Projekt erstellten Typ erstellen, müssen
 
 5. Die IDE Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> Methode für jedes untergeordnete Projekt des übergeordneten Projekts auf.
 
-     Das übergeordnete Projekt muss implementieren `IVsParentProject` , wenn Sie Projekte Schachteln möchten. Das übergeordnete Projekt ruft jedoch nie `QueryInterface` auf, `IVsParentProject` auch wenn es über übergeordnete Projekte darunter verfügt. Die Lösung verarbeitet den Aufruf von `IVsParentProject` und, wenn Sie implementiert ist, ruft `OpenChildren` auf, um die zu erstellenden Projekte zu erstellen. `AddVirtualProjectEX`wird immer von aufgerufen `OpenChildren` . Sie sollte nie vom übergeordneten Projekt aufgerufen werden, um die Hierarchie Erstellungs Ereignisse in der richtigen Reihenfolge beizubehalten.
+     Das übergeordnete Projekt muss implementieren `IVsParentProject` , wenn Sie Projekte Schachteln möchten. Das übergeordnete Projekt ruft jedoch nie `QueryInterface` auf, `IVsParentProject` auch wenn es über übergeordnete Projekte darunter verfügt. Die Lösung verarbeitet den Aufruf von `IVsParentProject` und, wenn Sie implementiert ist, ruft `OpenChildren` auf, um die zu erstellenden Projekte zu erstellen. `AddVirtualProjectEX` wird immer von aufgerufen `OpenChildren` . Sie sollte nie vom übergeordneten Projekt aufgerufen werden, um die Hierarchie Erstellungs Ereignisse in der richtigen Reihenfolge beizubehalten.
 
 6. Die IDE Ruft die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> Methode für das untergeordnete Projekt auf.
 
@@ -56,7 +56,7 @@ Wenn Sie einen Typ für einen in einem Projekt erstellten Typ erstellen, müssen
      Wenn Sie nicht bereits vorhanden ist, erstellt das übergeordnete Projekt eine GUID für jedes geschachtelte Project durch Aufrufen von `CoCreateGuid` .
 
     > [!NOTE]
-    > `CoCreateGuid`ist eine com-API, die aufgerufen wird, wenn eine GUID erstellt werden soll. Weitere Informationen finden Sie unter `CoCreateGuid` und GUIDs in der MSDN Library.
+    > `CoCreateGuid` ist eine com-API, die aufgerufen wird, wenn eine GUID erstellt werden soll. Weitere Informationen finden Sie unter `CoCreateGuid` und GUIDs in der MSDN Library.
 
      Das übergeordnete Projekt speichert diese GUID in der Projektdatei, um beim nächsten Öffnen in der IDE abgerufen zu werden. Weitere Informationen zum Aufrufen von `AddVirtualProjectEX` , um den für das untergeordnete Projekt abzurufen, finden Sie in Schritt 4 `guidProjectID` .
 
@@ -84,7 +84,7 @@ In den folgenden Themen werden verschiedene weitere Konzepte behandelt, die bei 
 - [Implementieren der Befehls Behandlung für in der Liste eingefügte Projekte](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Dialogfeld "AddItem" für die Liste der Projekte filtern](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzufügen"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)

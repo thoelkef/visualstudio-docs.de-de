@@ -88,7 +88,7 @@ sections:
             html: '<p>Debuggen von Clouddiensten, lokal und in Azure</p>'
             image:
               src: 'https://docs.microsoft.com//media/common/i_debug.svg'
-            title: Debuggen
+            title: Debug
           - href: vs-azure-tools-performance-profiling-cloud-services.md
             html: <p>Verwenden der Visual Studio-Profilerstellung</p>
             image:

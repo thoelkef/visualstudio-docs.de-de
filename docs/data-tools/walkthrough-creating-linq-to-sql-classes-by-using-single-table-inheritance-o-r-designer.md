@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535264"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL Klassen mithilfe einer Vererbung für eine einzelne Tabelle (O/R-Designer)
@@ -51,10 +51,10 @@ Um zu sehen, wie die Vererbung funktioniert, erstellen Sie eine kleine `Person` 
 
     |Spaltenname|Datentyp|NULL-Werte zulassen|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**Alarm**|
-    |**Typ**|**int**|**True**|
-    |**Vorname**|**nvarchar(200)**|**Alarm**|
-    |**Nachname**|**nvarchar(200)**|**Alarm**|
+    |**ID**|**int**|**False**|
+    |**Type**|**int**|**True**|
+    |**Vorname**|**nvarchar(200)**|**False**|
+    |**Nachname**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
 
 3. Legen Sie die ID-Spalte als Primärschlüssel fest.
@@ -70,9 +70,9 @@ Um sicherstellen zu können, dass die Vererbung ordnungsgemäß konfiguriert ist
 
 2. Kopieren Sie die folgenden Daten in die Tabelle. (Sie können Sie kopieren und in die Tabelle einfügen, indem Sie im **Ergebnis** Bereich die gesamte Zeile auswählen.)
 
-    |**ID**|**Typ**|**Vorname**|**Nachname**|**Manager**|
+    |**ID**|**Type**|**Vorname**|**Nachname**|**Manager**|
     |-|-|-|-|-|
-    |**1**|**1**|**Anne**|**Wallace**|**NULL**|
+    |**1**|**1**|**Anna**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|

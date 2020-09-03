@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382561"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Vorgehensweise: Erstellen eines lokalisierten Bootstrappakets
@@ -90,7 +90,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 6. Speichern Sie die *package.xml* Datei.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md)
 - [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)
 - [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)
