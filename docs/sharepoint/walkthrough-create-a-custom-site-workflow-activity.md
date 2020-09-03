@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016535"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Site Workflow-Aktivität
@@ -121,6 +122,6 @@ ms.locfileid: "86016535"
 
 5. Wählen Sie auf der Schnellstartleiste den Link **Ankündigungen-Sicherung** aus. Beachten Sie, dass alle in der **Ankündigungs** Liste enthaltenen Ankündigungen in diese neue Liste kopiert wurden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545014"
 ---
 # <a name="viewing-the-structure-of-code"></a>Anzeigen der Codestruktur
@@ -57,7 +57,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 > [!NOTE]
 > Die Visual Studio-Edition und die verwendeten Einstellungen können sich auf die Funktionen der IDE auswirken. Sie können sich daher von den in diesem Thema beschriebenen Funktionen unterscheiden.
 
-## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a>Klassenansicht (Visual Basic, c#, C++)
+## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a> Klassenansicht (Visual Basic, c#, C++)
  Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** sowie in einem separaten Fenster angezeigt. Das Fenster **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog**, wenn das Element außerhalb der Projektmappe definiert ist).
 
  Sie müssen ein Projekt nicht kompilieren, um seine Elemente in der **Klassenansicht** anzuzeigen. Das Fenster wird aktualisiert, wenn Sie im Projekt Änderungen am Code vornehmen.
@@ -79,7 +79,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 ### <a name="class-view-settings"></a>Klassenansicht: Einstellungen
  Die Schaltfläche **Klassenansicht Einstellungen** auf der Symbolleiste weist die folgenden Einstellungen auf.
 
-|name|Beschreibung|
+|Name|Beschreibung|
 |-|-|
 |**Basistypen anzeigen**|Es werden die Basistypen angezeigt.|
 |**Abgeleitete Typen anzeigen**|Es werden die abgeleiteten Typen angezeigt.|
@@ -160,7 +160,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 ### <a name="object-browser-settings"></a>Objektkatalog: Einstellungen
  Mithilfe der Schaltfläche **Objektkatalog Einstellungen** auf der Symbolleiste können Sie eine der folgenden Ansichten angeben.
 
-|name|BESCHREIBUNG|
+|Name|Beschreibung|
 |-|-|
 |**Namespaces anzeigen**|Zeigt im linken Bereich anstelle von physischen Containern die Namespaces an. Die in mehreren physischen Containern gespeicherten Namespaces werden zusammengeführt.|
 |**Container anzeigen**|Zeigt im linken Bereich anstelle von Namespaces die physischen Container an. **Namespaces anzeigen** und **Container anzeigen** sind sich gegenseitig ausschließende Einstellungen.|

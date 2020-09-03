@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0342146f604d86dd93ce25ed20e6ab393c581ea9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544169"
 ---
 # <a name="properties-of-domain-properties"></a>Eigenschaften von Domäneneigenschaften
@@ -46,7 +46,7 @@ Eine *Domänen Eigenschaft* ist eine Funktion eines Modell Elements, das einen W
 |**Name**|Der Name dieser Domäneneigenschaft. Dies muss ein gültiger Bezeichner sein, z. b. " **songtitle**".|\<none>|
 |**Notizen**|Informelle Hinweise, die mit dieser Domäneneigenschaft verknüpft sind.|\<none>|
 |**Setter-Zugriffsmodifizierer**|Der Zugriffsmodifizierer für den Setter. Dieser steuert den Umfang, in welchem der Programmcode die Eigenschaft festlegen kann.|`public`|
-|**Typ**|Der Typ der Eigenschaft. Um die Liste der verfügbaren Typen hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Stamm der DSL im DSL-Explorer, und klicken Sie dann auf **externen Typ hinzufügen**.|`String`|
+|**Type**|Der Typ der Eigenschaft. Um die Liste der verfügbaren Typen hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Stamm der DSL im DSL-Explorer, und klicken Sie dann auf **externen Typ hinzufügen**.|`String`|
 
 ## <a name="see-also"></a>Weitere Informationen
 

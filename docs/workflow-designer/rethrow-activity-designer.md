@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114752"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow-Aktivitätsdesigner
 
-Der **Rethrow** -Aktivitäts Designer wird verwendet, um eine <xref:System.Activities.Statements.Rethrow>-Aktivität zu erstellen und zu konfigurieren.
+Der **Rethrow** -Aktivitäts Designer wird verwendet, um eine-Aktivität zu erstellen und zu konfigurieren <xref:System.Activities.Statements.Rethrow> .
 
 ## <a name="the-rethrow-activity"></a>Die Rethrow-Aktivität
 
@@ -27,18 +27,18 @@ Die <xref:System.Activities.Statements.Rethrow>-Aktivität löst eine zuvor ausg
 
 ### <a name="use-the-rethrow-activity-designer"></a>Verwenden des Rethrow-Aktivitäts Designers
 
-Greifen Sie in der Kategorie **Fehlerbehandlung** der **Toolbox**auf den **Rethrow** -Aktivitäts Designer zu. Der **Rethrow** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence>. Beim Löschen des Aktivitäts Designers wird eine <xref:System.Activities.Statements.Rethrow>-Aktivität mit dem standardmäßigen **Display Name** Throw erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **Rethrow** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
+Greifen Sie in der Kategorie **Fehlerbehandlung** der **Toolbox**auf den **Rethrow** -Aktivitäts Designer zu. Der **Rethrow** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. in einer <xref:System.Activities.Statements.Sequence> . Beim Löschen des Aktivitäts Designers wird eine- <xref:System.Activities.Statements.Rethrow> Aktivität mit dem **Display Name** -Standardwert Throw erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **Rethrow** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
 ### <a name="the-rethrow-properties"></a>Die Rethrow-Eigenschaften
 
-In der folgenden Tabelle sind die <xref:System.Activities.Statements.Rethrow> Eigenschaften aufgeführt, und es wird beschrieben, wie Sie im Designer verwendet werden:
+In der folgenden Tabelle werden die <xref:System.Activities.Statements.Rethrow> Eigenschaften angezeigt, und es wird beschrieben, wie Sie im Designer verwendet werden:
 
-|Eigenschaftsname|Erforderlich|Verwendungs-|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Rethrow>-Aktivität an. Der Standardwert lautet Rethrow.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Rethrow>-Aktivität an. Der Standardwert lautet Rethrow.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Auflistung](../workflow-designer/collection-activity-designers.md)
-- [Throw](../workflow-designer/throw-activity-designer.md)
+- [Sammlung](../workflow-designer/collection-activity-designers.md)
+- [Schale](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328481"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Problembehandlung beim Neuladen von XAML im laufenden Betrieb
@@ -51,13 +51,13 @@ XAML Hot Neuladen erfordert, dass die Umgebungsvariable zum `ENABLE_XAML_DIAGNOS
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Überprüfen Sie, ob die MSBuild-Eigenschaften richtig sind
 
-Standardmäßig sind Quell Informationen in einer Debugkonfiguration enthalten. Sie wird von MSBuild-Eigenschaften in ihren Projektdateien (z. b. *. csproj) gesteuert. Für WPF ist die-Eigenschaft `XamlDebuggingInformation` , die auf festgelegt werden muss `True` . Bei UWP ist die-Eigenschaft `DisableXbfLineInfo` , die auf festgelegt werden muss `False` . Zum Beispiel:
+Standardmäßig sind Quell Informationen in einer Debugkonfiguration enthalten. Sie wird von MSBuild-Eigenschaften in ihren Projektdateien (z. b. *. csproj) gesteuert. Für WPF ist die-Eigenschaft `XamlDebuggingInformation` , die auf festgelegt werden muss `True` . Bei UWP ist die-Eigenschaft `DisableXbfLineInfo` , die auf festgelegt werden muss `False` . Beispiel:
 
 WPF:
 
 `<XamlDebuggingInformation>True</XamlDebuggingInformation>`
 
-UWP: 
+UWP
 
 `<DisableXbfLineInfo>False</DisableXbfLineInfo>`
 
@@ -69,6 +69,6 @@ Sie müssen entweder die korrekte MSBuild-Eigenschaft manuell festlegen, um das 
 
 Wenn die XAML-Datei Fehler im **Fehlerliste**anzeigt, funktioniert das Laden von XAML-Hot möglicherweise nicht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Schreiben und Debuggen von XAML-Code mit XAML Hot Neuladen](xaml-hot-reload.md)
