@@ -1,5 +1,5 @@
 ---
-title: Fehler und Warnungen bearbeiten und FortfahrenC#() | Microsoft-Dokumentation
+title: Bearbeiten und Fortfahren mit Fehlern und Warnungen (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -62,10 +62,10 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850974"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#)
@@ -81,9 +81,9 @@ Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Fu
   
 1. Wählen Sie im Menü **Debuggen** den Befehl **Rückgängig** aus, um die Änderung rückgängig zu machen.  
   
-     \- oder -  
+     - oder -  
   
 2. Halten Sie die Debugsitzung an, nehmen Sie die Änderungen vor, und starten Sie eine neue Debugsitzung.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

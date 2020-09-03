@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a585aa64fec565a58a3af245ff3d3beaa9dc8af3
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173927"
 ---
 # <a name="design-warnings"></a>Entwurfswarnungen
@@ -93,6 +93,6 @@ Entwurfs Warnungen unterstützen die Einhaltung der [.NET Framework Entwurfs Ric
 | [CA1066: „IEquatable“ beim Außerkraftsetzen von „Equals“ implementieren](../code-quality/ca1066.md) | Ein Werttyp überschreibt die- <xref:System.Object.Equals%2A> Methode, implementiert jedoch nicht <xref:System.IEquatable%601> . |
 | [CA1067: „Object.Equals(object)“ bei Implementierung von „IEquatable“ außer Kraft setzen](../code-quality/ca1067.md) | Ein Typ implementiert <xref:System.IEquatable%601> , aber überschreibt die- <xref:System.Object.Equals%2A> Methode nicht. |
 | [CA1068: CancellationToken-Parameter müssen zuletzt aufgeführt werden.](../code-quality/ca1068.md) | Eine Methode verfügt über einen CancellationToken-Parameter, der nicht der letzte Parameter ist. |
-| [CA1069: Enumerationswerte dürfen keine doppelten Werte aufweisen.](../code-quality/ca1069.md) | Eine Enumeration verfügt über mehrere Member, denen explizit derselbe Konstante Wert zugewiesen wird. |
-| [CA1070: Ereignis Felder nicht als virtuell deklarieren](../code-quality/ca1070.md) | Ein [Feld ähnliches Ereignis](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) wurde als virtuell deklariert. |
+| [CA1069: Enumerationen dürfen keine doppelten Werte aufweisen.](../code-quality/ca1069.md) | Eine Enumeration verfügt über mehrere Member, denen explizit derselbe Konstante Wert zugewiesen wird. |
+| [CA1070: Ereignisfelder dürfen nicht als virtuell deklariert werden.](../code-quality/ca1070.md) | Ein [Feld ähnliches Ereignis](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) wurde als virtuell deklariert. |
 | [CA2210: Assemblys müssen gültige starke Namen aufweisen.](../code-quality/ca2210.md) | Der starke Name schützt Clients vor dem versehentlichen Laden einer manipulierten Assembly. Assemblys ohne starke Namen sollten nur in ganz bestimmten Szenarien bereitgestellt werden. Wenn Sie nicht einwandfrei signierte Assemblys freigeben oder verteilen, kann die Assembly manipuliert werden, die Common Language Runtime lädt die Assembly unter Umständen nicht, oder der Benutzer muss die Überprüfung auf dem Computer deaktivieren. |

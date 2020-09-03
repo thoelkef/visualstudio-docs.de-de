@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917315"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturieren der Modellierungslösung
@@ -117,7 +117,7 @@ Wenn Sie beispielsweise häufig Projektmappen mit Präsentations-, Geschäfts- u
 
 [Leitfaden für Visual Studio-Architektur](../modeling/visual-studio-architecture-tooling-guidance.md) Tools – weitere Anleitungen zum Verwalten von Modellen in einem Team
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-[Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md)
-[Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)
+[Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md) 
+ [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532963"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
@@ -65,7 +65,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
      Weitere Informationen zum Erstellen einer domänenspezifischen Sprachlösung finden Sie unter Gewusst [wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+2. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
    > [!IMPORTANT]
    > In diesem Schritt wird der Direktivenprozessor generiert und der Schlüssel für ihn in der Registrierung hinzugefügt.
@@ -89,7 +89,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 1. Öffnen Sie die Projekt Mappe "customhost".
 
-2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
+2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen**.
 
      Das Dialogfeld **Verweis hinzufügen** wird geöffnet, und die Registerkarte **.net** wird angezeigt.
 
@@ -229,7 +229,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 
 7. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
-8. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+8. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testen des benutzerdefinierten Hosts mit dem Direktivenprozessor
  Zum Testen des benutzerdefinierten Textvorlagen Hosts müssen Sie zunächst eine Textvorlage schreiben, die den generierten Direktivenprozessor aufruft. Führen Sie dann den benutzerdefinierten Host aus, übergeben Sie den Namen der Textvorlage, und überprüfen Sie, ob die Direktive ordnungsgemäß verarbeitet wird.

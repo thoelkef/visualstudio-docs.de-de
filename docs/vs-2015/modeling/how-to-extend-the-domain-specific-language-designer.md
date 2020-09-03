@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916799"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
@@ -26,11 +26,11 @@ Sie können Erweiterungen für den Designer vornehmen, mit dem Sie DSL-Definitio
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>So erstellen Sie eine DSL-Designer-Erweiterungs Lösung
 
-1. Erstellen Sie ein neues Projekt mithilfe der-Klassenbibliothek-Projektvorlage. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visualisierung C#**  , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.
+1. Erstellen Sie ein neues Projekt mithilfe der-Klassenbibliothek-Projektvorlage. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visual c#** , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.
 
      Dieses Projekt enthält den Code der Erweiterungen.
 
-2. Erstellen Sie ein neues Projekt mithilfe der VSIX-Projektvorlage. Erweitern Sie im Dialogfeld **Neues Projekt** die **Option C#Visualisierung** , klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann im mittleren Fenster **VSIX-Projekt**aus.
+2. Erstellen Sie ein neues Projekt mithilfe der VSIX-Projektvorlage. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual c#**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann im mittleren Fenster **VSIX-Projekt**aus.
 
      Wählen Sie zu Projekt Mappe **Hinzufügen**.
 
@@ -46,13 +46,13 @@ Sie können Erweiterungen für den Designer vornehmen, mit dem Sie DSL-Definitio
 
 7. Fügen Sie im Klassen Bibliotheksprojekt Verweise auf die folgenden Assemblys hinzu:
 
-     Microsoft.VisualStudio.CoreUtility
+     Microsoft. VisualStudio. coreutility
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     Microsoft. VisualStudio. Modeling. SDK. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     Microsoft. VisualStudio. Modeling. SDK. Diagramms. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     Microsoft. VisualStudio. Modeling. SDK. DslDefinition. 11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -67,24 +67,24 @@ Sie können Erweiterungen für den Designer vornehmen, mit dem Sie DSL-Definitio
 ## <a name="testing-and-deployment"></a>Tests und Bereitstellung
  Erstellen Sie die Projekt Mappe, und führen Sie Sie aus, um eine der Erweiterungen in diesem Thema zu testen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet. Öffnen Sie in dieser Instanz eine DSL-Projekt Mappe. Bearbeiten Sie das DslDefinition-Diagramm. Das Erweiterungs Verhalten ist sichtbar.
 
- Führen Sie die folgenden Schritte aus, um die Erweiterungen für die Haupt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]und für andere Computer bereitzustellen:
+ Führen Sie die folgenden Schritte aus, um die Erweiterungen für die Haupt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -und andere Computer bereitzustellen:
 
-1. Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX
+1. Suchen Sie die VSIX-Installationsdatei in Ihrem VSIX-Projekt in bin \\ * \\ \* . VSIX.
 
 2. Kopieren Sie diese Datei auf den Zielcomputer, und doppelklicken Sie dann im Windows-Explorer (oder Datei-Explorer) auf die Datei.
 
-    Der Erweiterungs-Manager für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet, um zu bestätigen, dass die Erweiterung installiert wurde.
+    Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungs-Manager wird geöffnet, um zu bestätigen, dass die Erweiterung installiert wurde.
 
    Um die Erweiterung zu deinstallieren, führen Sie die folgenden Schritte aus:
 
-3. Klicken Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]im **Menü Extras** auf **Erweiterungs-Manager**.
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Klicken Sie **in im** Menü Extras auf **Erweiterungs-Manager**.
 
 4. Wählen Sie die Erweiterung aus, und löschen Sie Sie.
 
 ## <a name="adding-a-shortcut-menu-command"></a>Hinzufügen eines Kontextmenü Befehls
  Damit ein Kontextmenü Befehl auf der DSL-Designer-Oberfläche oder im Fenster DSL-Explorer angezeigt wird, schreiben Sie eine Klasse, die der folgenden ähnelt.
 
- Die Klasse muss `ICommandExtension` implementieren, und das-Attribut muss `DslDefinitionModelCommandExtension`sein.
+ Die-Klasse muss implementieren `ICommandExtension` und muss über das-Attribut verfügen `DslDefinitionModelCommandExtension` .
 
 ```
 using System.Collections.Generic;

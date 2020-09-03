@@ -1,5 +1,5 @@
 ---
-title: Legacy Language Service Grundlagen | Microsoft Docs
+title: Legacy Sprachdienst-Grundlagen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,35 +14,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707421"
 ---
 # <a name="legacy-language-service-essentials"></a>Grundlagen zu Legacysprachdiensten
-Sie müssen einen Sprachdienst bereitstellen, um eine Programmiersprache in Visual Studio zu integrieren. In diesem Thema werden die Funktionen erläutert, die in älteren Sprachdiensten verfügbar sind.
+Sie müssen einen Sprachdienst bereitstellen, um eine Programmiersprache in Visual Studio zu integrieren. In diesem Thema werden die in den Legacy Sprachdiensten verfügbaren Features erläutert.
 
- Ältere Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Möglichkeit zum Implementieren von Sprachdienstfunktionen besteht darin, MEF-Erweiterungen zu verwenden. Weitere Informationen zur neuen Möglichkeit zum Implementieren eines Sprachdienstes finden Sie unter [Editor- und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).
+ Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zur neuen Methode zum Implementieren eines sprach Dienstanbieter finden Sie unter [Editor-und Sprachdienst Erweiterungen](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Es wird empfohlen, die neue Editor-API so schnell wie möglich zu verwenden. Dadurch wird die Leistung Ihres Sprachdienstes verbessert und Sie können die neuen Editorfunktionen nutzen.
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.
 
- Ältere Sprachdienste bieten die folgenden Funktionen:
+ Legacy Sprachdienste bieten die folgenden Features:
 
 |Funktion|BESCHREIBUNG|
 |-------------|-----------------|
-|Farben für Syntax|Bewirkt, dass die Editoransicht unterschiedliche Farben und Schriftarten für die verschiedenen Elemente einer Sprache anzeigt. Diese Differenzierung kann das Lesen und Bearbeiten von Dateien erleichtern.<br /><br /> Allgemeine Informationen finden Sie unter [Syntaxfarben in einem Legacy-Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Informationen zu dieser Funktion im Managed Package Framework (MPF) finden Sie unter [Syntax colorizing in a Legacy Language Service](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
-|Anweisungsvervollständigung|Schließt eine Anweisung oder ein Schlüsselwort ab, die der Benutzer mit der Eingabe begonnen hat. Die Anweisungsvervollständigung hilft Benutzern, schwierige Anweisungen leichter einzugeben, mit weniger Eingabe und weniger Fehlerchancen.<br /><br /> Allgemeine Informationen finden Sie [unter Statement-Abschluss in einem Legacy Language Service](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Informationen zu dieser Funktion in der MPF finden Sie unter [Word-Abschluss in einem Legacy-Sprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
-|Klammernabgleich (zugehörige Klammer)|Hebt gepaarte Zeichen wie geschweifte Klammern hervor. Wenn der Benutzer ein schließendes Zeichen wie z. B. "A" eingibt, hebt der Abgleich der Geschweifdatei das entsprechende Eröffnungszeichen, wie z. B. "A", hervor. Wenn es mehrere Ebenen von einschließenden Zeichen gibt, hilft diese Funktion Benutzern zu bestätigen, dass die einschließenden Zeichen korrekt gekoppelt sind.<br /><br /> Weitere Informationen zu dieser Funktion in der MPF finden Sie unter [Brace Matching in a Legacy Language Service](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
-|Parameterinformationen QuickInfos|Zeigt eine Liste möglicher Signaturen für die überladene Methode an, die der Benutzer gerade eingibt.<br /><br /> Allgemeine Informationen finden Sie unter [Parameterinformationen in einem Legacy Language Service](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Informationen zu dieser Funktion in der MPF finden Sie unter [Parameterinformationen in einem Legacy Language Service](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
-|Fehlermarkierungen|Zeigt eine wellige rote Unterstreichung, auch als Squiggly bezeichnet, unter Text an, der syntaktisch falsch ist. Fehlermarkierungen werden in der Regel verwendet, um Benutzer auf falsch geschriebene Schlüsselwörter, nicht gesperrte Klammern, ungültige Zeichen und ähnliche Fehler aufmerksam zu machen.<br /><br /> In den MPF-Klassen werden Fehlermarkierungen <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> automatisch in <xref:Microsoft.VisualStudio.Package.AuthoringSink> der Methode der Klasse behandelt.|
+|Farben für Syntax|Bewirkt, dass in der Editor-Ansicht verschiedene Farben und Schriftarten für die verschiedenen Elemente einer Sprache angezeigt werden. Diese Differenzierung erleichtert das Lesen und Bearbeiten von Dateien.<br /><br /> Allgemeine Informationen finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Informationen zu diesem Feature im Managed Package Framework (MPF) finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
+|Anweisungsvervollständigung|Schließt eine-Anweisung oder ein-Schlüsselwort ab, mit der der Benutzer begonnen hat. Mit der Anweisungs Vervollständigung können Benutzer schwierige Anweisungen leichter eingeben, mit weniger Typisierung und weniger Fehler Chancen.<br /><br /> Allgemeine Informationen finden Sie unter [Anweisungs Vervollständigung in einem Legacy Sprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Informationen zu diesem Feature im MPF finden Sie unter [Wortvervollständigung in einem Legacy Sprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
+|Klammernabgleich (zugehörige Klammer)|Hebt die Hervorhebung von paarweise paarweise Verknüpfungs Zeichen Wenn der Benutzer ein Schließ Endes Zeichen, z. b. "}", eingibt, wird das entsprechende öffnende Zeichen, wie z. b. "{", durch die Klammer Wenn mehrere Ebenen von einschließenden Zeichen vorhanden sind, können Benutzer mit dieser Funktion bestätigen, dass die einschließenden Zeichen ordnungsgemäß gekoppelt werden.<br /><br /> Weitere Informationen zu diesem Feature im MPF finden Sie unter [Abgleichen von Klammern in einem Legacy Sprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
+|Tooltipps für Parameter Informationen|Zeigt eine Liste möglicher Signaturen für die überladene Methode an, die der Benutzer gerade eingibt.<br /><br /> Allgemeine Informationen finden Sie unter [Parameter Informationen in einem Legacy Sprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Informationen zu diesem Feature im MPF finden Sie unter [Parameter Info in einem Legacy Sprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
+|Fehler Marker|Zeigt eine wellenförmige rote Unterstreichung, auch als Wellenlinien bezeichnet, unter Text an, der syntaktisch nicht korrekt ist. Fehler Marker werden normalerweise verwendet, um Benutzern die Kenntnis von falsch geschriebenen Schlüsselwörtern, nicht schließenden Klammern, ungültigen Zeichen und ähnlichen Fehlern zu ermöglichen.<br /><br /> In den MPF-Klassen werden Fehler Marker automatisch in der- <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> Methode der- <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasse behandelt.|
 
- Viele dieser Funktionen erfordern den Sprachdienst, um Quellcode zu analysieren. Häufig können Sie den Tokenisierungs- und Analysecode für ihren Compiler oder Interpreter wiederverwenden.
+ Viele dieser Features erfordern, dass der Sprachdienst Quellcode analysiert. Sie können den tokenisierungs-und-Code für den Compiler oder den Interpreter häufig wieder verwenden.
 
- Die folgenden Funktionen beziehen sich auf die Unterstützung von Programmiersprachen, sind jedoch nicht Teil von Sprachdiensten:
+ Die folgenden Funktionen beziehen sich auf die Unterstützung von Programmiersprachen, sind jedoch nicht Teil der Sprachdienste:
 
 | Funktion | BESCHREIBUNG |
 |-----------------------| - |
-| Ausdrucksauswertungen | Unterstützt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Debugger, indem er Haltepunkte validiert und eine Liste von Ausdrücken eingibt, die im **Auto-Debugfenster** angezeigt werden sollen.<br /><br /> Weitere Informationen finden Sie unter [Sprachdienstunterstützung zum Debuggen](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Symbol-Browsing-Tools | Unterstützt **Object Browser**, Class **View**, Call **Browser**und Find **Symbol Results**. |
+| Ausdrucks Auswertung | Unterstützt den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger durch Überprüfen von Breakpoints und Bereitstellen einer Liste von Ausdrücken, die **Autos** im Fenster Auto Debug angezeigt werden sollen.<br /><br /> Weitere Informationen finden Sie [unter Sprachdienst Unterstützung für das Debuggen](../../extensibility/internals/language-service-support-for-debugging.md). |
+| Tools zum Durchsuchen von Symbolen | Unterstützt **Objektkatalog**-, **Klassenansicht**-, **Aufrufbrowser**-und Such **Symbol Ergebnisse**. |

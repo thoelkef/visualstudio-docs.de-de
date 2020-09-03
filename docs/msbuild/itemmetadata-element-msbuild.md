@@ -28,6 +28,7 @@ ms.locfileid: "77633615"
 Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementmetadatenwert enthält. Ein Element kann über eine beliebige Anzahl von Metadaten-Schlüssel-Wert-Paaren verfügen.
 
  \<Project> \<ItemGroup> \<Item>
+ \<Item>
 
 ## <a name="syntax"></a>Syntax
 

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b41b6e4d4a7635b32edb5697c89ecb1249fb9da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619727"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
@@ -85,5 +85,5 @@ End Property
 
  Sie können Ausschnittverzeichnisse mit den Schaltflächen **Hinzufügen** und **Entfernen** im Dialogfeld **Codeausschnitt-Manager** hinzufügen und entfernen. Verwenden Sie zum Hinzufügen einzelner Codeausschnitte die Schaltfläche **Importieren**.
 
-## <a name="see-also"></a>Siehe auch
- Exemplarische Vorgehensweise [: Erstellen eines Code](../ide/walkthrough-creating-a-code-snippet.md) Ausschnitts Gewusst [wie: Verteilen von Code Ausschnitten](../ide/how-to-distribute-code-snippets.md) [bewährte Methoden für die Verwendung von Code Ausschnitten](../ide/best-practices-for-using-code-snippets.md) [Problem](../ide/troubleshooting-snippets.md) Behandlung [Visual C# Code](../ide/visual-csharp-code-snippets.md) Ausschnitte Visual Code Snippets [ C++ ](../ide/visual-cpp-code-snippets.md) [Schema Referenz für Code Ausschnitte](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>Weitere Informationen
+ Exemplarische Vorgehensweise [: Erstellen eines Code](../ide/walkthrough-creating-a-code-snippet.md) Ausschnitts Gewusst [wie: Verteilen von Code Ausschnitten](../ide/how-to-distribute-code-snippets.md) [bewährte Methoden für die Verwendung von Code Ausschnitten](../ide/best-practices-for-using-code-snippets.md) [Problem](../ide/troubleshooting-snippets.md) Behandlung Code Ausschnitte [Visual c#-Code Ausschnitte](../ide/visual-csharp-code-snippets.md) [Visual C++ Code](../ide/visual-cpp-code-snippets.md) Ausschnitte [Code Ausschnitte Schema Referenz](../ide/code-snippets-schema-reference.md)

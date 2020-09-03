@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536304"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks- &gt; Element (Boots Trapper)
@@ -82,9 +82,9 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 |`ProcessorArchitecture`|Optional. Der Computer Prozessor, der Ziel dieser Installation ist. Der Standardwert ist `msil`.|
 
 ## <a name="externalcheck"></a>ExternalCheck
- Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `ExternalCheck` führt der Boots Trapper das benannte externe Programm in einem separaten Prozess aus und speichert den Exitcode in der durch angegebenen Eigenschaft `Property` . `ExternalCheck`ist nützlich, um komplexe Abhängigkeits Überprüfungen zu implementieren, oder wenn die einzige Möglichkeit zum Überprüfen, ob eine Komponente vorhanden ist, instanziiert wird.
+ Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `ExternalCheck` führt der Boots Trapper das benannte externe Programm in einem separaten Prozess aus und speichert den Exitcode in der durch angegebenen Eigenschaft `Property` . `ExternalCheck` ist nützlich, um komplexe Abhängigkeits Überprüfungen zu implementieren, oder wenn die einzige Möglichkeit zum Überprüfen, ob eine Komponente vorhanden ist, instanziiert wird.
 
- `ExternalCheck`enthält keine Elemente und verfügt über die folgenden Attribute.
+ `ExternalCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
@@ -95,7 +95,7 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 ## <a name="filecheck"></a>FileCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `FileCheck` bestimmt der Boots Trapper, ob die benannte Datei vorhanden ist, und gibt die Versionsnummer der Datei zurück. Wenn die Datei keine Versionsnummer hat, legt der Boots Trapper die Eigenschaft mit dem Namen `Property` auf 0 fest. Wenn die Datei nicht vorhanden ist, `Property` wird auf keinen Wert festgelegt.
 
- `FileCheck`enthält keine Elemente und verfügt über die folgenden Attribute.
+ `FileCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
 | attribute | BESCHREIBUNG |
 |-----------------| - |
@@ -108,7 +108,7 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 ## <a name="msiproductcheck"></a>MsiProductCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `MsiProductCheck` prüft der Boots Trapper, ob die angegebene Microsoft Windows Installer Installation bis zum Abschluss ausgeführt wurde. Der Eigenschafts Wert wird abhängig vom Status des installierten Produkts festgelegt. Ein positiver Wert gibt an, dass das Produkt installiert ist, 0 oder-1 gibt an, dass es nicht installiert ist. (Weitere Informationen finden Sie in der Windows Installer SDK-Funktion MsiQueryFeatureState.) . Wenn Windows Installer nicht auf dem Computer installiert ist, `Property` wird nicht festgelegt.
 
- `MsiProductCheck`enthält keine Elemente und verfügt über die folgenden Attribute.
+ `MsiProductCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
@@ -119,28 +119,28 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 ## <a name="registrycheck"></a>RegistryCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `RegistryCheck` prüft der Boots Trapper, ob der angegebene Registrierungsschlüssel vorhanden ist oder ob er den angegebenen Wert aufweist.
 
- `RegistryCheck`enthält keine Elemente und verfügt über die folgenden Attribute.
+ `RegistryCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`Property`|Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Erforderlich. Der Name des Registrierungsschlüssels.|
-|`Value`|Optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value`muss entweder eine Zeichenfolge oder ein DWORD sein.|
+|`Value`|Optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value` muss entweder eine Zeichenfolge oder ein DWORD sein.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `RegistryFileCheck` ruft der Boots Trapper die Version der angegebenen Datei ab und versucht zunächst, den Pfad zu der Datei aus dem angegebenen Registrierungsschlüssel abzurufen. Dies ist besonders nützlich, wenn Sie eine Datei in einem Verzeichnis suchen möchten, das als Wert in der Registrierung angegeben ist.
 
- `RegistryFileCheck`enthält keine Elemente und verfügt über die folgenden Attribute.
+ `RegistryFileCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`Property`|Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Erforderlich. Der Name des Registrierungsschlüssels. Der Wert wird als Pfad zu einer Datei interpretiert, es sei denn, das- `File` Attribut ist festgelegt. Wenn dieser Schlüssel nicht vorhanden ist, `Property` wird nicht festgelegt.|
-|`Value`|Optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value`muss eine Zeichenfolge sein.|
+|`Value`|Optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value` muss eine Zeichenfolge sein.|
 |`FileName`|Optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass es sich bei dem vom Registrierungsschlüssel erhaltenen Wert um einen Verzeichnispfad handelt und dieser Name angefügt wird. Wenn kein Wert angegeben wird, wird davon ausgegangen, dass der von der Registrierung zurückgegebene Wert der vollständige Pfad zu einer Datei ist.|
 |`SearchDepth`|Optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der durch den Wert des Registrierungsschlüssels angegeben wird.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Während die untergeordneten Elemente die auszuführenden `InstallChecks` Tests definieren, werden Sie nicht ausgeführt. Zum Ausführen der Tests müssen Sie `Command` Elemente unterhalb des- `Commands` Elements erstellen.
 
 ## <a name="example"></a>Beispiel
@@ -180,5 +180,5 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [\<Commands>gewisses](../deployment/commands-element-bootstrapper.md)
+- [\<Commands> gewisses](../deployment/commands-element-bootstrapper.md)
 - [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)

@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4907838720e3a68614e4b9774eb2d7e9fb42ff20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916536"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mit dem Modellierungs-SDK für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (msdk) können Sie leistungsstarke modellbasierte Entwicklungs Tools erstellen, die Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]integrieren können. Als Beispiel werden die UML-Tools mit MSDK erstellt. Auf diese Weise können Sie eine oder mehrere Modelldefinitionen erstellen und diese in einen Toolsatz integrieren.
+Mit dem Modellierungs-SDK für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (msdk) können Sie leistungsstarke modellbasierte Entwicklungs Tools erstellen, die Sie in integrieren können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Als Beispiel werden die UML-Tools mit MSDK erstellt. Auf diese Weise können Sie eine oder mehrere Modelldefinitionen erstellen und diese in einen Toolsatz integrieren.
 
  Im Mittelpunkt von MSDK befindet sich die Definition eines Modells, das Sie erstellen, um Konzepte in Ihrem Geschäftsbereich darzustellen. Sie können das Modell mit einer Vielzahl von Tools umgeben, z. B. mit einer Diagrammansicht, der Möglichkeit zur Generierung von Code und anderen Artefakten, Befehlen zum Transformieren des Modells und der Möglichkeit zur Interaktion mit Code und anderen Objekten in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Während Sie das Modell entwickelt, können Sie es mit anderen Modellen und Tools kombinieren, um ein leistungsstarkes Toolset zu erstellen, das auf ihre Entwicklung ausgerichtet ist.
 
@@ -43,7 +43,7 @@ Mit dem Modellierungs-SDK für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (msd
 ## <a name="samples-and-the-latest-information"></a>Beispiele und aktuelle Informationen
  [Herunterladen des Modellierungs-SDK für Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- Die Anleitung in fortgeschrittenen Techniken und Problembehandlung, finden Sie unter [Forum von Visual Studio DSL & Modellierungstool-Erweiterbarkeit](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
+ Anleitungen zu erweiterten Techniken und zur Problembehandlung finden Sie im [Forum zu Visual Studio DSL & Modellierungs Tools Erweiterbarkeit](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Erste Schritte mit domänenspezifischen Sprachen](../modeling/getting-started-with-domain-specific-languages.md)

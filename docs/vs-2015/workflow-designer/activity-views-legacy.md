@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851479"
 ---
 # <a name="activity-views-legacy"></a>Aktivitätsansichten (Vorgängerversion)
@@ -27,15 +27,15 @@ In vielen der Aktivitäten, die von [!INCLUDE[wf](../includes/wf-md.md)] bereitg
 
  In der folgenden Tabelle werden die Namen und Beschreibungen der einzelnen Ansichten aufgeführt.
 
-|Menü-/Registerkartenoption|Beschreibung|
+|Menü-/Registerkartenoption|BESCHREIBUNG|
 |----------------------|-----------------|
-|**Sicht [Aktivitätstyp]**|Wählen Sie diese Menü- oder Registerkartenoption aus, um die grafische Standarddarstellung der ausgewählten Aktivität anzuzeigen.|
-|**Abbruch Handler anzeigen**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die der ausgewählten Aktivität zugeordnete [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) anzuzeigen.|
-|**Fehler Handler anzeigen**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die der ausgewählten Aktivität zugeordnete [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) anzuzeigen.|
-|**Kompensierungs Handler anzeigen**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) anzuzeigen, die mit der ausgewählten [transaktionscopeactivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)verknüpft ist.|
-|**Ereignis Handler anzeigen**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) anzuzeigen, die der ausgewählten [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)-Aktivität zugeordnet ist.|
+|**Ansicht [Aktivitätstyp]**|Wählen Sie diese Menü- oder Registerkartenoption aus, um die grafische Standarddarstellung der ausgewählten Aktivität anzuzeigen.|
+|**Abbruchhandler anzeigen**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die der ausgewählten Aktivität zugeordnete [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) anzuzeigen.|
+|**Fehlerhandler anzeigen**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die der ausgewählten Aktivität zugeordnete [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) anzuzeigen.|
+|**Anzeigen von Kompensierungshandlern**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) anzuzeigen, die mit der ausgewählten [transaktionscopeactivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)verknüpft ist.|
+|**Anzeigen von Ereignisse-Handler**|Wählen Sie diese Menü-oder Registerkarten Options Ansicht aus, um die [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) anzuzeigen, die der ausgewählten [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)-Aktivität zugeordnet ist.|
 
  Weitere Informationen zu ähnlichen Sichten finden Sie unter [sequenzielle Workflow Sichten (Legacy)](../workflow-designer/sequential-workflow-views-legacy.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Sequenzielle Workflow Sichten](../workflow-designer/sequential-workflow-views-legacy.md) der [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) (Legacy)

@@ -18,10 +18,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 31eda172d21fdce5ca3d6e03b91955318adb623d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533574"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Analysieren der Qualität von C/C++-Code mit der Codeanalyse
@@ -31,7 +31,7 @@ Sie können den C/C++-Code verbessern, indem Sie die Codeanalyse in Visual Studi
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
-|Titel|Beschreibung|  
+|Titel|BESCHREIBUNG|  
 |-|-|  
 |[Übersicht über die Code Analyse für C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)|Informationen zu den Funktionen des Codeanalysetools.|  
 |[Schnellstart: Code Analyse für C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Grundlagen der Codeanalyse für C/C++.|  

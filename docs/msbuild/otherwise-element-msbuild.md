@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633043"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise-Element (MSBuild)
 
 Legt den Codeblock fest, der ausgeführt – und nur dann ausgeführt – wird, wenn die Bedingungen aller `When`-Elemente als `false` ausgewertet werden.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Syntax
 
@@ -63,7 +68,7 @@ Legt den Codeblock fest, der ausgeführt – und nur dann ausgeführt – wird, 
 |-------------|-----------------|
 |[Auswählen](../msbuild/choose-element-msbuild.md)|Wertet untergeordnete Elemente aus, um einen auszuführenden Codeabschnitt auszuwählen.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  Möglicherweise gibt es nur ein `Otherwise`-Element in einem `Choose` -Element, und es muss das letzte Element sein.
 
@@ -118,7 +123,7 @@ Legt den Codeblock fest, der ausgeführt – und nur dann ausgeführt – wird, 
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bedingte Konstrukte](../msbuild/msbuild-conditional-constructs.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

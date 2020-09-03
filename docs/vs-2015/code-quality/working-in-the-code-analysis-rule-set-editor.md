@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f25cc5a5f56c20f6a1696baa5aa3e9ee5ebdf2fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621506"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Arbeiten mit dem Regelsatz-Editor für die Codeanalyse
@@ -25,9 +25,9 @@ Mit dem Regelsatz-Editor für die Code Analyse können Sie die Regeln angeben, d
 
 |Aktion|Beschreibung|
 |------------|-----------------|
-|**Warnung**|Generiert im **Fehlerliste** Fenster eine Warnung.|
+|**Warning**|Generiert im **Fehlerliste** Fenster eine Warnung.|
 |**Fehler**|Generiert einen Fehler im Fenster **Fehlerliste** .|
-|**Keine**|Deaktiviert die Regel.|
+|**None**|Deaktiviert die Regel.|
 
  Der Editor zeigt die Regeln in einer Baumstruktur an, in der die Regeln nach einem von Ihnen angegebenen Regelsatz Feld gruppiert werden. Um Regeln zu einem Regelsatz hinzuzufügen oder daraus zu entfernen, führen Sie einen oder mehrere der folgenden Schritte aus:
 
@@ -44,9 +44,9 @@ Mit dem Regelsatz-Editor für die Code Analyse können Sie die Regeln angeben, d
 
 |ToolBar-Steuerelement|Beschreibung|
 |---------------------|-----------------|
-|**Alle aufklappen**|Zeigt die Regeln in allen Gruppen an.|
+|**Alle erweitern**|Zeigt die Regeln in allen Gruppen an.|
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen aus.|
-|**Group By**|Gibt das Feld an, nach dem Regeln gruppiert werden. Klicken Sie auf **\<None >** , um die Regeln ohne Gruppen anzuzeigen.|
+|**Gruppieren nach**|Gibt das Feld an, nach dem Regeln gruppiert werden. Klicken Sie **\<None>** hierauf, um die Regeln ohne Gruppen anzuzeigen.|
 |**Spaltenoptionen**|Gibt die anzuzeigenden Regel Felder an.|
 |**Regeln ausblenden, die nicht für die aktuelle Projekt Mappe gelten**|Zeigt Regeln an, die nicht denselben Zieltyp wie die Projekt Mappe haben, oder blendet sie aus.|
 |**Regeln anzeigen, die Code Analysefehler generieren können**|Blendet Regeln ein oder aus, denen die Fehler Aktion zugewiesen wird.|
@@ -60,7 +60,7 @@ Mit dem Regelsatz-Editor für die Code Analyse können Sie die Regeln angeben, d
 
  In der folgenden Tabelle werden die Felder eines Regelsatzes beschrieben.
 
-|Feld|Beschreibung|
+|Feld|BESCHREIBUNG|
 |-----------|-----------------|
 |**ID**|Der Bezeichner der Regel.|
 |**Kategorie**|Zusätzlich zur Mitgliedschaft in Regelsätzen werden Code Analyse Regeln auch nach Kategorie gruppiert. Weitere Informationen finden Sie unter [Code Analyse für Warnungen für verwalteten Code](../code-quality/code-analysis-for-managed-code-warnings.md).|

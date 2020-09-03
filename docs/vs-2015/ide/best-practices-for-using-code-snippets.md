@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 74da305b69a9561573466d385c5d7b686da3693f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620324"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten
@@ -45,7 +45,7 @@ Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tu
 
 - Schützen von Ressourcen (z.B. Ereignisprotokolle, Registrierung)
 
-- Speichern von geheimen Daten
+- Speichern von Geheimnissen
 
 - Überprüfen von Eingaben
 
@@ -66,5 +66,5 @@ Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tu
 
   - Der Codeausschnitt kann Verweise enthalten, die automatisch dem Projekt hinzugefügt werden und von überall auf Ihr System geladen werden können. Diese Verweise wurden möglicherweise von der Stelle auf den Computer heruntergeladen, von der Sie den Ausschnitt heruntergeladen haben. Der Ausschnitt kann dann eine Methode im Verweis aufrufen, die bösartigen Code ausführt. Um sich gegen einen solchen Angriff zu schützen, sollten Sie die Import- und Verweisblöcke der Ausschnittdatei überprüfen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Basic IntelliSense-Code Ausschnitte](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643) [Sichern von Anwendungs](../ide/securing-applications.md) [Code Ausschnitten](../ide/code-snippets.md)

@@ -24,16 +24,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620554"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige Projekte oder Projektelemente in einer Projektmappe erstellen, neu erstellen oder bereinigen. Ein ausführliches Tutorial finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).
+Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige Projekte oder Projektelemente in einer Projektmappe erstellen, neu erstellen oder bereinigen. Ein schrittweises Tutorial finden Sie unter Exemplarische Vorgehensweise [: Entwickeln einer Anwendung](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > In Abhängigkeit der von Ihnen gewählten Einstellungen kann sich die Benutzeroberfläche Ihrer Visual Studio Edition von dem unterscheiden, was in diesem Thema beschrieben wird. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -65,7 +65,7 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>So erstellen Sie nur das Startprojekt und seine Abhängigkeiten
 
-1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. **Wählen Sie**in der Menüleiste Extras, **Optionen**aus.
 
 2. Klappen Sie im Dialogfeld **Optionen** den Knoten **Projekte und Projektmappen** auf, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
 
@@ -75,23 +75,23 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
     Wenn dieses Kontrollkästchen aktiviert ist, werden nur das aktuelle Startprojekt und seine Abhängigkeiten erstellt, wenn Sie einen der folgenden Schritte ausführen:
 
-   - Wählen Sie in der Menüleiste **Debuggen**  > **Debugging starten** (F5) aus.
+   - Wählen Sie in der Menüleiste **Debug**  >  **Debuggen Debuggen starten** (F5) aus.
 
-   - Wählen Sie in der Menüleiste **Erstellen**  >  Projekt Mappe**Erstellen** (STRG + UMSCHALT + B) aus.
+   - Wählen Sie in der Menüleiste **Build**-Projekt Mappe erstellen  >  **Build Solution** (STRG + UMSCHALT + B) aus.
 
-     Wenn dieses Kontrollkästchen deaktiviert ist, werden alle Projekte, ihre Abhängigkeiten und die Projektmappendateien erstellt, wenn Sie einen der vorstehenden Befehle ausführen. Dieses Kontrollkästchen ist standardmäßig deaktiviert.
+     Wenn dieses Kontrollkästchen deaktiviert ist, werden alle Projekte, ihre Abhängigkeiten und die Projektmappendateien erstellt, wenn Sie einen der vorstehenden Befehle ausführen. Standardmäßig ist dieses Kontrollkästchen deaktiviert.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>So erstellen Sie nur das ausgewählte Visual C++-Projekt
 
 1. Wählen Sie ein [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekt aus, und wählen Sie dann in der Menüleiste **Erstellen**, **Nur Projekt** und einen der folgenden Befehle aus:
 
-   - **Nur** *Projektname erstellen*
+   - **Projektname** *nur erstellen*
 
-   - **Nur** *Projektname neu erstellen*
+   - **Projektname** *nur neu erstellen*
 
-   - **Nur** *Projektname bereinigen*
+   - **Projektname** *nur bereinigen*
 
-   - **Nur** *Projektname bereinigen*
+   - **Projektname** *nur verknüpfen*
 
      Diese Befehle betreffen nur das ausgewählte [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekt, d.h. Projektabhängigkeiten oder Projektmappendateien werden nicht erstellt, neu erstellt, bereinigt oder gelinkt. Abhängig von Ihrer Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] enthält das Untermenü **Nur Projekt** möglicherweise noch weitere Befehle.
 
@@ -109,5 +109,5 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
     - Verwenden Sie die Tasten STRG+UNTBR.
 
-## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) [Abrufen von buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md) [Buildkonfigurationen](../ide/understanding-build-configurations.md) [Debuggen und releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ buildverweis](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [in den Befehlszeilen wechseln](../ide/reference/devenv-command-line-switches.md) [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Vorgehensweise: anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) Abrufen von buildprotokollen [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md) [Kompilieren und](../ide/compiling-and-building-in-visual-studio.md) Erstellen von [Buildkonfigurationen](../ide/understanding-build-configurations.md) [Debug-und releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ erstellen von verweisen](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [devenv-Befehls Zeilenschalter](../ide/reference/devenv-command-line-switches.md) [Lösungen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
