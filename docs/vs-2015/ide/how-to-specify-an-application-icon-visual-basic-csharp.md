@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136fd00bea736af0f0c589c28eae597ff8fd558e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670704"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#))
@@ -34,13 +34,13 @@ Die `Icon`-Eigenschaft für ein Projekt gibt die Symboldatei (.ico) an, die für
 
 1. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe**) aus.
 
-2. Wählen Sie in der Menüleiste **Projekt** und **Eigenschaften** aus.
+2. Wählen Sie in der Menüleiste **Projekt**, **Eigenschaften**aus.
 
 3. Wählen Sie, wenn der **Projekt-Designer** angezeigt wird, die Registerkarte **Anwendung** aus.
 
 4. **(Visual Basic)** Wählen Sie in der Liste **Symbol** eine Symboldatei (.ico) aus.
 
-     **C#** Wählen Sie in der Nähe der Liste **Symbol** die Schaltfläche **\<Durchsuchen...>** aus, und navigieren Sie zum Speicherort der gewünschten Symboldatei.
+     **C#** Wählen Sie in der Nähe der Liste **Symbol** die **\<Browse...>** Schaltfläche aus, und navigieren Sie dann zum Speicherort der gewünschten Symbol Datei.
 
-## <a name="see-also"></a>Siehe auch
- [Anwendungsseite, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [Anwendungsseite, Projekt-C#Designer ()](../ide/reference/application-page-project-designer-csharp.md) [Verwalten von Anwendungseigenschaften](../ide/application-properties.md) Gewusst [wie: Hinzufügen oder Entfernen von Ressourcen](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+## <a name="see-also"></a>Weitere Informationen
+ [Anwendungsseite, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [Anwendungsseite, Projekt-Designer (c#)](../ide/reference/application-page-project-designer-csharp.md) [Verwalten von Anwendungseigenschaften](../ide/application-properties.md) Gewusst [wie: Hinzufügen oder Entfernen von Ressourcen](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

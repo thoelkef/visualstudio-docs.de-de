@@ -34,10 +34,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918955"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Verwalten von Ausnahmen mit dem Debugger
@@ -69,11 +69,11 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
   
  Erweitern Sie im Fenster **Ausnahmeeinstellungen** den Knoten für eine Kategorie von Ausnahmen (z. B. **Common Language Runtime-Ausnahmen**, d. h. .NET-Ausnahmen), und aktivieren Sie das Kontrollkästchen für eine bestimmte Ausnahme innerhalb dieser Kategorie (z. B. **System.AccessViolationException**). Sie können auch eine ganze Kategorie von Ausnahmen auswählen.  
   
- ![Überprüfte AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "Exceptionsettingscheckaccess")  
+ ![AccessViolationException ist aktiviert](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  Wenn Sie eine bestimmte Ausnahme überprüfen, wird die Ausführung sofort bei ausgelöster Ausnahme unterbrochen, unabhängig davon, ob diese behandelt wird oder nicht. An dieser Stelle wird die Ausnahme als „erste Chance“ bezeichnet. Im Folgenden einige Szenarios:  
   
-1. In der folgenden C#-Konsolenanwendung löst die Main-Methode eine **AccessViolationException** in einem `try/catch` -Blocks aus:  
+1. In der folgenden c#-Konsolenanwendung löst die Main-Methode eine **AccessViolationException** innerhalb eines- `try/catch` Blocks aus:  
   
    ```csharp  
    static void Main(string[] args)  
@@ -139,9 +139,9 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
   
    Wenn Sie die Ausnahmeeinstellungen auf die Standardwerte zurücksetzen möchten, klicken Sie in der Symbolleiste auf die Schaltfläche **Wiederherstellen** :  
   
-   ![Standardeinstellungen in Ausnahme Einstellungen wiederherstellen](../debugger/media/restoredefaultexceptions.png "Restoredefaultexceptions")  
+   ![Wiederherstellen der Standardeinstellungen in den Ausnahmeeinstellungen](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a>Der Debugger wird so festgelegt, dass er bei Benutzer Ausnahme Fehlern fortgesetzt wird.  
+### <a name="setting-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a> Der Debugger wird so festgelegt, dass er bei Benutzer Ausnahme Fehlern fortgesetzt wird.  
  Wenn Sie .NET- oder JavaScript-Code mit [Just My Code](../debugger/just-my-code.md)debuggen, können Sie den Debugger so einstellen, dass er bei Ausnahmen, die an anderer Stelle als im Benutzercode behandelt werden, die Ausführung nicht unterbricht.  
   
 1. Öffnen Sie im Fenster **Ausnahmeeinstellungen** das Kontextmenü, indem Sie mit der rechten Maustaste auf „Fenster“ klicken und dann **Spalten anzeigen**auswählen. (Wenn Sie **Nur eigenen Code**deaktiviert haben, wird dieser Befehl nicht angezeigt.)  
@@ -152,7 +152,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
   
    Beispielsweise behandeln ASP.NET-Webanwendungen Ausnahmen dadurch, dass sie diese in einen HTTP 500-Statuscode konvertieren ([Exception Handling in ASP.NET API](/aspnet/web-api/overview/error-handling/exception-handling)), wodurch es möglicherweise unmöglich wird, die Quelle der Ausnahme zu bestimmen. Im folgenden Beispiel wird durch den Benutzercode `String.Format()` aufgerufen, wodurch eine <xref:System.FormatException>ausgelöst wird. Die Ausführung wird folgendermaßen unterbrochen:  
   
-   ![Unterbrechung bei&#45;verarbeiteter-Ausnahme des Benutzers](../debugger/media/exceptionunhandledbyuser.png "Exceptionunhandledbyuser")  
+   ![Unterbrechung bei Benutzer&#45;verarbeiteter-Ausnahme](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Hinzufügen und Löschen von Ausnahmen  
  Sie können Ausnahmen hinzufügen und löschen. Sie können jeden Typ von Ausnahme aus einer beliebigen Kategorie löschen, indem Sie die Ausnahme auswählen und in der Symbolleiste **Ausnahmeeinstellungen** auf die Schaltfläche **Löschen** (das Minuszeichen) klicken, oder indem Sie die mit der rechten Maustaste auf die Ausnahme klicken und im Kontextmenü **Löschen** auswählen. Das Löschen einer Ausnahme hat dieselbe Wirkung wie das Deaktivieren, d. h., der Debugger wird nicht unterbrochen, wenn die Ausnahme ausgelöst wird.  
@@ -162,7 +162,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
  Wenn Sie eine Ausnahme zu den Ausnahmen für den GPU-Speicherzugriff, den JavaScript-Laufzeitausnahmen oder den Win32-Ausnahmekategorien hinzufügen möchten, müssen Sie den Fehlercode und die Beschreibung einfügen.  
   
 > [!TIP]
-> Überprüfen Sie die Rechtschreibung! Das Fenster **Ausnahmeeinstellungen** prüft nicht, ob eine hinzugefügte Ausnahme vorhanden ist. Bei Eingabe von **Sytem.UriTemplateMatchException**erhalten Sie daher einen Eintrag für diese Ausnahme und nicht für **System.UriTemplateMatchException**.  
+> Überprüfen Sie die Rechtschreibung! Das Fenster **Ausnahme Einstellungen** prüft nicht, ob eine hinzugefügte Ausnahme vorhanden ist. Wenn Sie also **Sytem. UriTemplateMatchException**eingeben, erhalten Sie einen Eintrag für diese Ausnahme (und nicht für **System. UriTemplateMatchException**).  
   
  Ausnahmeeinstellungen werden in der SUO-Datei der Projektmappe beibehalten, sie gelten also für eine bestimmte Projektmappe. Sie können spezifische Ausnahmeeinstellungen nicht für andere Projektmappen wiederverwenden. Zu diesem Zeitpunkt werden nur hinzugefügte Ausnahmen beibehalten, gelöschte Ausnahmen nicht. Anders ausgedrückt ist die hinzugefügte Ausnahme weiterhin vorhanden, wenn Sie die Projektmappe schließen und wieder öffnen. Wenn Sie eine Ausnahme dagegen löschen und die Projektmappe anschließend schließen und wieder öffnen, wird die Ausnahme nicht mehr angezeigt.  
   
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  können Sie die Ausnahme folgendermaßen zu den **Ausnahmeeinstellungen** hinzufügen:  
   
- ![generische Ausnahme wird hinzugefügt](../debugger/media/addgenericexception.png "Addgenericexception")  
+ ![Hinzufügen einer generischen Ausnahme](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Fortsetzen der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)   
- Vorgehens [Weise: Untersuchen von System Code nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)   
- Gewusst [wie: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)   
+ [Gewusst wie: Untersuchen von System Code nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Gewusst wie: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)   
  [Verwenden von Laufzeitüberprüfungen ohne die C-Lauf Zeit Bibliothek](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Ausnahme-Assistent](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [Ausnahmen-Assistent](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)

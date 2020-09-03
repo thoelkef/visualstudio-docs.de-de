@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 093cc277fa1cbe1915099fd9663fc1ccb797ca3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671185"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
@@ -35,7 +35,7 @@ Im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs-und Modellierung
 
      Um eine Beziehung zu definieren, die Importierer verwenden kann, erstellen Sie zwei Domänen Klassen, und erstellen Sie die Beziehung zwischen Ihnen.
 
-     Legen Sie den **Vererbungsmodifizierer** der Domänen Klassen auf `Abstract` fest.
+     Legen Sie den **Vererbungsmodifizierer** der Domänen Klassen auf fest `Abstract` .
 
 3. Sie können Elemente hinzufügen, die Sie im DSL-Explorer definieren, z. b. Verbindungs-Generatoren.
 
@@ -45,7 +45,7 @@ Im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs-und Modellierung
 
 6. Erstellen Sie das Projekt.
 
-7. Wenn Sie die DSL für andere zu verwendende Personen verteilen, müssen Sie sowohl die kompilierte Assembly (dll) als auch die Datei `DslDefinition.dsl` bereitstellen. Sie finden die kompilierte Assembly in einem Ordner unter `Dsl\bin\*`
+7. Wenn Sie die DSL für andere zu verwendende Personen verteilen, müssen Sie sowohl die kompilierte Assembly (dll) als auch die Datei bereitstellen `DslDefinition.dsl` . Sie finden die kompilierte Assembly in einem Ordner unter `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek
 
@@ -57,7 +57,7 @@ Im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs-und Modellierung
 
 3. Sie können die importierten Klassen als Basisklassen verwenden. Erstellen Sie eine Domänen Klasse in der importierten DSL, und legen Sie in der Eigenschaftenfenster **Basisklasse** auf eine importierte Klasse fest.
 
-4. Klicken Sie auf alle Vorlagen transformieren.
+4. Klicken Sie auf Alle Vorlagen transformieren.
 
 5. Fügen Sie dem DSL-Projekt einen Verweis auf die Assembly (dll) hinzu, die vom DSL-Bibliotheksprojekt erstellt wurde.
 
@@ -65,5 +65,5 @@ Im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs-und Modellierung
 
    In einer DSL-Bibliothek können andere Bibliotheken importiert werden. Wenn Sie eine Bibliothek importieren, werden die zugehörigen Importe auch automatisch im DSL-Explorer angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)

@@ -1,5 +1,5 @@
 ---
-title: Roadmap zum Erweitern des Debuggers | Microsoft Docs
+title: Roadmap für die Erweiterung des Debuggers | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,40 +12,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713137"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>Roadmap zum Erweitern des Debuggers
-Diese Dokumentation enthält Anleitungs- [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] und Referenzinformationen [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]zum Erweitern des Debuggers um die .
+# <a name="roadmap-for-extending-the-debugger"></a>Roadmap für die Erweiterung des Debuggers
+Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern des [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] Debuggers mit dem [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Die Debugdokumentation enthält Beispiele, eine umfassende Referenz und mehrere repräsentative Szenarien, die typische Methoden zum Anpassen des Debuggers veranschaulichen.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die debuggingdokumentation enthält Beispiele, eine umfassende Referenz und einige repräsentative Szenarios, in denen typische Möglichkeiten zum Anpassen des Debuggers aufgezeigt werden.
 
- Der Compiler und seine Ausgabe bestimmen, was zum Einrichten des Debuggens in Ihrem Produkt erforderlich ist. Wenn Ihr Compiler:
+ Der Compiler und seine Ausgabe bestimmen, was zum Einrichten des Debuggens in Ihrem Produkt erforderlich ist. Wenn der Compiler Folgendes:
 
-- Zielt auf das systemeigene Windows-Betriebssystem ab und schreibt eine *. PDB-Datei* können Sie Programme mit dem nativen Code-Debugmodul (DE) debuggen, das in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]integriert ist. Sie müssen keinen DE- oder Ausdrucksevaluator implementieren. Der Ausdrucksauswertungwird wird für die Syntax der Programmiersprache C++ geschrieben.
+- Gibt das systemeigene Windows-Betriebssystem an und schreibt *. PDB* -Datei: Sie können Programme mit dem systemeigenen Code Debug Engine (de) Debuggen, das in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Sie müssen keine de-oder-Ausdrucks Auswertung implementieren. Die Ausdrucks Auswertung wird für die Syntax der Programmiersprache C++ geschrieben.
 
-- Erzeugt die MSIL-Ausgabe (Microsoft Intermediate Language), können Sie Programme mit dem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debugmodul DE für verwalteten Code debuggen, das ebenfalls in integriert ist. Daher müssen Sie nur einen Ausdrucksbewerter implementieren. Ein Beispielausdrucksevaluator wird für Sie bereitgestellt. Weitere Informationen finden Sie in den folgenden Themen:
+- Erzeugt die MSIL-Ausgabe (Microsoft Intermediate Language). Sie können Programme mit dem verwalteten Code Debugmodul de Debuggen, das auch in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Daher muss nur eine Ausdrucks Auswertung implementiert werden. Eine Beispiel Ausdrucks Auswertung wird für Sie bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:
 
    [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
    [Auswerten von Ausdrücken](../../extensibility/debugger/evaluating-expressions.md)
 
-   [Ausdrucksbewertungskontext](../../extensibility/debugger/expression-evaluation-context.md)
+   [Ausdrucks Auswertungs Kontext](../../extensibility/debugger/expression-evaluation-context.md)
 
-   [Ausdrucksauswertung im Unterbrechungsmodus](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+   [Ausdrucks Auswertung im Break-Modus](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
 
-   [Schreiben eines Common Language Runtime-Ausdrucksevaluators](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+   [Schreiben einer Common Language Runtime Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Zielt auf ein proprietäres Betriebssystem oder eine andere Laufzeitumgebung, müssen Sie Ihre eigene DE schreiben. Ein Tutorial, das eine einfache DE mit ATL COM erstellt, wird bereitgestellt. Weitere Informationen finden Sie in den folgenden Themen:
+- Als Ziel für ein proprietäres Betriebssystem oder eine andere Laufzeitumgebung müssen Sie Ihre eigene de schreiben. Ein Tutorial, das eine einfache de mithilfe von ATL-COM erstellt, wird bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:
 
-   [Erstellen eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+   [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Tutorial: Erstellen eines Debugmoduls mit ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Tutorial: Erstellen einer Debug-Engine mithilfe von ATL-COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
 
-   [Implementieren eines Portlieferanten](../../extensibility/debugger/implementing-a-port-supplier.md)
+   [Implementieren eines Port Anbieters](../../extensibility/debugger/implementing-a-port-supplier.md)
 
    [Beispiele](../../extensibility/debugger/visual-studio-debugging-samples.md)
 

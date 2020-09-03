@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Microsoft Docs
+title: THREADPROPERTY_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713395"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
-Gibt an, welche Informationen zu einem Thread abgerufen werden sollen.
+Gibt an, welche Informationen über einen Thread abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,41 +54,41 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
 ## <a name="fields"></a>Felder
  `TPF_ID`\
- Initialisieren/verwenden `dwThreadId` Sie das Feld der [THREADPROPERTIES-Struktur.](../../../extensibility/debugger/reference/threadproperties.md)
+ Initialisieren/verwenden Sie das- `dwThreadId` Feld der [Thread Properties](../../../extensibility/debugger/reference/threadproperties.md) -Struktur.
 
  `TPF_SUSPENDCOUNT`\
- Initialisieren/verwenden `dwSuspendCount` Sie das `THREADPROPERTIE`Feld der S-Struktur.
+ Initialisieren/verwenden Sie das- `dwSuspendCount` Feld der `THREADPROPERTIE` S-Struktur.
 
  `TPF_STATE`\
- Initialisieren/verwenden `dwThreadState` Sie das `THREADPROPERTIE`Feld der S-Struktur.
+ Initialisieren/verwenden Sie das- `dwThreadState` Feld der `THREADPROPERTIE` S-Struktur.
 
  `TPF_PRIORITY`\
- Initialisieren/verwenden `bstrPriority` Sie das `THREADPROPERTIE`Feld der S-Struktur.
+ Initialisieren/verwenden Sie das- `bstrPriority` Feld der `THREADPROPERTIE` S-Struktur.
 
  `TPF_NAME`\
- Initialisieren/verwenden `bstrName` Sie das `THREADPROPERTIE`Feld der S-Struktur.
+ Initialisieren/verwenden Sie das- `bstrName` Feld der `THREADPROPERTIE` S-Struktur.
 
  `TPF_LOCATION`\
- Initialisieren/verwenden `bstrLocation` Sie das `THREADPROPERTIE`Feld der S-Struktur.
+ Initialisieren/verwenden Sie das- `bstrLocation` Feld der `THREADPROPERTIE` S-Struktur.
 
  `TPF_ALLFIELDS`\
  Gibt alle Felder an.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Werte werden als Argument an die [GetThreadProperties-Methode](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) übergeben, um anzugeben, welche Felder der [THREADPROPERTIES-Struktur](../../../extensibility/debugger/reference/threadproperties.md) initialisiert werden sollen.
+ Diese Werte werden als Argument an die [getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) -Methode übermittelt, um anzugeben, welche Felder der [Thread Properties](../../../extensibility/debugger/reference/threadproperties.md) -Struktur initialisiert werden sollen.
 
- Diese Werte werden `dwFields` auch in `THREADPROPERTIES` Member der Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
+ Diese Werte werden auch im- `dwFields` Member der `THREADPROPERTIES` -Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.
 
- Diese Flags können mit einem `OR`bitwise kombiniert werden.
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

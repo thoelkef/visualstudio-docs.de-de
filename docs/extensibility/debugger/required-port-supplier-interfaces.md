@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Port Supplier Schnittstellen | Microsoft Docs
+title: Erforderliche Port Lieferanten Schnittstellen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,39 +12,39 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bf2aeb1f26f81d773e171aa3fed6b0f2ef976c91
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713151"
 ---
-# <a name="required-port-supplier-interfaces"></a>Erforderliche Port-Lieferanten-Schnittstellen
-Ein Portlieferant muss die [IDebugPortSupplier2-Schnittstelle](../../extensibility/debugger/reference/idebugportsupplier2.md) implementieren. [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
+# <a name="required-port-supplier-interfaces"></a>Erforderliche Port Lieferanten Schnittstellen
+Ein Port Lieferant muss die [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) -Schnittstelle implementieren. [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
 
- Ein Hafenlieferant liefert Häfen und implementiert sie. Daher müssen die folgenden Schnittstellen ausgeführt werden:
+ Ein Port Lieferant liefert Ports und implementiert diese. Daher müssen die folgenden Schnittstellen ausgeführt werden:
 
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
 
-  Beschreibt den Port und zählt alle Prozesse auf, die auf dem Port ausgeführt werden.
+  Beschreibt den Port und listet alle Prozesse auf, die auf dem Port ausgeführt werden.
 
 - [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)
 
-  Bietet das Starten und Beenden von Prozessen auf dem Port.
+  Ermöglicht das Starten und Beenden von Prozessen auf dem Port.
 
 - [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
 
-  Stellt einen Mechanismus für Programme bereit, die im Kontext dieses Ports ausgeführt werden, um ihn über die Erstellung und Zerstörung von Programmknoten zu informieren. Weitere Informationen finden Sie unter [Programmknoten](../../extensibility/debugger/program-nodes.md).
+  Bietet einen Mechanismus für Programme, die innerhalb des Kontexts dieses Ports ausgeführt werden, um Sie über die Erstellung und Zerstörung von Programmknoten zu benachrichtigen. Weitere Informationen finden Sie unter [Programmknoten](../../extensibility/debugger/program-nodes.md).
 
 - `IConnectionPointContainer`
 
   Stellt einen Verbindungspunkt für [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md)bereit.
 
-## <a name="port-supplier-operation"></a>Hafenlieferantenbetrieb
- Die [IDebugPortEvents2-Senke](../../extensibility/debugger/reference/idebugportevents2.md) empfängt Benachrichtigungen, wenn Prozesse und Programme an einem Port erstellt und zerstört werden. Ein Port ist erforderlich, um [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) zu senden, wenn ein Prozess erstellt wird, und [IDebugProcessDestroyEvent2,](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) wenn ein Prozess am Port zerstört wird. Ein Port ist auch erforderlich, um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zu senden, wenn ein Programm erstellt wird, und [IDebugProgramDestroyEvent2,](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) wenn ein Programm in einem Prozess zerstört wird, der auf dem Port ausgeführt wird.
+## <a name="port-supplier-operation"></a>Port Lieferanten Vorgang
+ Die [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) -Senke empfängt Benachrichtigungen, wenn Prozess und Programme auf einem Port erstellt und zerstört werden. Ein Port ist erforderlich, um [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) zu senden, wenn ein Prozess erstellt wird, und [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) , wenn ein Prozess auf dem Port zerstört wird. Ein Port ist auch erforderlich, um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zu senden, wenn ein Programm erstellt wird, und [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) , wenn ein Programm in einem Prozess zerstört wird, der auf dem Port ausgeführt wird.
 
- Ein Port sendet in der Regel Programmerstellungs- und -zerstörungsereignisse als Reaktion auf die [AddProgramNode-](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) bzw. [RemoveProgramNode-Methoden.](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)
+ Ein Port sendet in der Regel Programm Erstellungs-und Lösch Ereignisse als Reaktion auf die Methoden " [addprogramnode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) " und " [removeprogramnode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) ".
 
- Da ein Port sowohl physische Prozesse als auch logische Programme starten und beenden kann, müssen die folgenden Schnittstellen auch vom Debugmodul implementiert werden:
+ Da ein Port sowohl physische als auch logische Programme starten und beenden kann, müssen die folgenden Schnittstellen auch von der Debug-Engine implementiert werden:
 
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 
@@ -64,7 +64,7 @@ Ein Portlieferant muss die [IDebugPortSupplier2-Schnittstelle](../../extensibili
 
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
 
-  Bietet dem SDM die Möglichkeit, sich an einen Prozess anzuhängen und von ihm zu lösen.
+  Bietet eine Möglichkeit für das Anfügen und trennen von SDM von einem Prozess.
 
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 
@@ -72,13 +72,13 @@ Ein Portlieferant muss die [IDebugPortSupplier2-Schnittstelle](../../extensibili
 
   - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
 
-  - [Getprocess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
 
   - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
 
-  Bietet eine Möglichkeit für das SDM, an dieses Programm anzuhängen.
+  Bietet eine Möglichkeit, das SDM an dieses Programm anzufügen.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Implementieren eines Hafenlieferanten](../../extensibility/debugger/implementing-a-port-supplier.md)
+- [Implementieren eines Port Anbieters](../../extensibility/debugger/implementing-a-port-supplier.md)

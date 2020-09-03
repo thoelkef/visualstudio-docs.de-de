@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f4777bf6c94997b9291bb84fed07befa197a8c5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620313"
 ---
 # <a name="application-properties"></a>Application Properties
@@ -54,7 +54,7 @@ Sie können allgemeine Anwendungseigenschaften für Visual Basic-, C#- und F#-An
   Welche Aufgaben für Ihre Anwendung verfügbar sind, hängt von der verwendeten Entwicklungssprache ab.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+ [Gewusst wie: Angeben eines Anwendungs Symbols (Visual Basic, c#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
-## <a name="see-also"></a>Siehe auch
- Seite " [Anwendung", Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [Anwendungsseite,C#Projekt-Designer ()](../ide/reference/application-page-project-designer-csharp.md) [Einführung in den Projekt-Designer veröffentlichen von](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [ClickOnce](../deployment/publishing-clickonce-applications.md) -Anwendungen [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md) [Verwalten von Debugeigenschaften](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [Verwalten von Kompilierungs Eigenschaften](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) Verwalten von [Anwendungs Ressourcen (.net)](../ide/managing-application-resources-dotnet.md) [Verwalten von Anwendungseinstellungen (.net)](../ide/managing-application-settings-dotnet.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Anwendungsseite, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [Anwendungsseite, Projekt-Designer (c#)](../ide/reference/application-page-project-designer-csharp.md) [Einführung in den Projekt-Designer veröffentlichen von](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md) [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md) [Verwalten von Debugeigenschaften](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) Verwalten von [Kompilierungs Eigenschaften](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) Verwalten von [Anwendungs Ressourcen (.net)](../ide/managing-application-resources-dotnet.md) Verwalten von [Anwendungseinstellungen (.net)](../ide/managing-application-settings-dotnet.md)

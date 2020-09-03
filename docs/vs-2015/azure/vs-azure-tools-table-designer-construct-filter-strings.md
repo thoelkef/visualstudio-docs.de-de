@@ -12,17 +12,17 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 571f7bf825583b3094e07ea4404437f2fb2d62de
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917602"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Erstellen von Filterzeichenfolgen für den Tabellen-Designer
-## <a name="overview"></a>Übersicht über
+## <a name="overview"></a>Übersicht
 Wenn Sie Daten in einer Azure-Tabelle filtern möchten, die im **Tabellen-Designer** von Visual Studio angezeigt wird, müssen Sie eine Filterzeichenfolge erstellen und in das Filterfeld eingeben. Die Syntax der Filterzeichenfolge wird von den WCF Data Services definiert und ist mit einer SQL WHERE-Klausel vergleichbar. Sie wird jedoch über eine HTTP-Anforderung an den Tabellenspeicherdienst gesendet. Der **Tabellen-Designer** nimmt die erforderliche Codierung vor, sodass Sie zum Filtern nach einem gewünschten Eigenschaftswert nur den Eigenschaftennamen, den Vergleichsoperator, den Kriterienwert und optional einen booleschen Operator im Filterfeld eingeben müssen. Die $filter-Abfrageoption muss nicht eingeschlossen werden, wie es beim Erstellen einer URL zur Tabellenabfrage über die [Referenz zur REST-API der Speicherdienste](/rest/api/storageservices) notwendig wäre.
 
-Die WCF Data Services basieren auf dem [Open Data Protocol](https://www.odata.org/) (OData). Einzelheiten zur Filtersystemabfrage-Option ( **$filter**) finden Sie in der [Spezifikation zu OData URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+Die WCF Data Services basieren auf dem [Open Data Protocol](https://www.odata.org/) (OData). Einzelheiten zur Filtersystemabfrage-Option (**$filter**) finden Sie in der [Spezifikation zu OData URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Vergleichsoperatoren
 Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstützt:
@@ -31,13 +31,13 @@ Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstü
 | --- | --- | --- |
 | eq |Gleich |Ort eq 'Redmond' |
 | gt |Größer als |Preis gt 20 |
-| ge |Größer oder gleich |Preis ge 10 |
+| ge |Größer als oder gleich |Preis ge 10 |
 | lt |Kleiner als |Preis lt 20 |
 | le |Kleiner oder gleich |Preis le 100 |
 | ne |Ungleich |Ort ne 'London' |
-| und |und |Preis le 200 and Preis gt 3,5 |
-| oder |Or |Preis le 3,5 or Preis gt 200 |
-| not |not |not isAvailable |
+| and |And |Preis le 200 and Preis gt 3,5 |
+| oder |oder |Preis le 3,5 or Preis gt 200 |
+| not |Not |not isAvailable |
 
 Wenn Sie eine Filterzeichenfolge erstellen, sind die folgenden Regeln wichtig:
 

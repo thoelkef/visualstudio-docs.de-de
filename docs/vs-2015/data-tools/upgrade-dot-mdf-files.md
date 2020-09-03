@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 5b26b8cd9d955309e3be0e17e975bfdeb242e475
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621407"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
@@ -74,9 +74,9 @@ In diesem Thema werden die Optionen zum Aktualisieren der Datenbankdatei (. mdf)
 
    - **Servername**:
 
-       - So verwenden Sie die Standardversion: `(localdb)\MSSQLLocalDB`  Dadurch wird entweder ProjectV12 oder ProjectV13 angegeben, je nachdem, welche Version von Visual Studio installiert ist und wann die erste localdb-Instanz erstellt wurde. Der Knoten **mssqllocaldb** in **SQL Server-Objekt-Explorer** zeigt an, auf welche Version er verweist.
+       - So verwenden Sie die Standardversion: `(localdb)\MSSQLLocalDB` .  Dadurch wird entweder ProjectV12 oder ProjectV13 angegeben, je nachdem, welche Version von Visual Studio installiert ist und wann die erste localdb-Instanz erstellt wurde. Der Knoten **mssqllocaldb** in **SQL Server-Objekt-Explorer** zeigt an, auf welche Version er verweist.
 
-       - So verwenden Sie eine bestimmte Version: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13`, wobei V12 localdb 2014 und V13 localdb 2016 ist.
+       - Verwenden Sie, um eine bestimmte Version zu verwenden: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13` , wobei V12 localdb 2014 und V13 localdb 2016 ist.
 
    - **Anfügen einer Datenbankdatei**: der physische Pfad der primären MDF-Datei.
 
@@ -88,7 +88,7 @@ In diesem Thema werden die Optionen zum Aktualisieren der Datenbankdatei (. mdf)
 
    Die Datenbank wird aktualisiert, an die localdb-Datenbank-Engine angefügt und ist nicht mehr mit der älteren Version von localdb kompatibel.
 
-   Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen und dann **Verbindung ändern**auswählen. Ändern Sie im Dialogfeld **Verbindung ändern** den Servernamen in `(LocalDB)\MSSQLLocalDB`. Stellen Sie im Dialogfeld **Erweiterte Eigenschaften** sicher, dass die **Benutzer Instanz** auf **false**festgelegt ist.
+   Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen und dann **Verbindung ändern**auswählen. Ändern Sie im Dialogfeld **Verbindung ändern** den Servernamen in `(LocalDB)\MSSQLLocalDB` . Stellen Sie im Dialogfeld **Erweiterte Eigenschaften** sicher, dass die **Benutzer Instanz** auf **false**festgelegt ist.
 
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>So führen Sie ein Upgrade auf eine neuere Version von SQL Server Express
 
@@ -110,11 +110,11 @@ In diesem Thema werden die Optionen zum Aktualisieren der Datenbankdatei (. mdf)
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>So erstellen Sie SQL Server Express der Standarddatenbank-Engine
 
-1. **Wählen Sie** in der Menüleiste Extras  > **Optionen**aus.
+1. Wählen Sie auf der Menüleiste **Extras** > **Optionen** aus.
 
 2. Erweitern Sie im Dialogfeld **Optionen** die Optionen **Data Tools** , und wählen Sie dann den Knoten **Datenverbindungen** aus.
 
-3. Geben Sie im Textfeld **SQL Server Instanzname** den Namen der Instanz von SQL Server Express oder localdb an, die Sie verwenden möchten. Wenn die Instanz nicht benannt ist, geben Sie `.\SQLEXPRESS or (localdb)\MSSQLLocalDB` an.
+3. Geben Sie im Textfeld **SQL Server Instanzname** den Namen der Instanz von SQL Server Express oder localdb an, die Sie verwenden möchten. Wenn die-Instanz nicht benannt ist, geben Sie an `.\SQLEXPRESS or (localdb)\MSSQLLocalDB` .
 
 4. Klicken Sie auf die Schaltfläche **OK**.
 

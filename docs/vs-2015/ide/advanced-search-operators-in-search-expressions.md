@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620337"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Erweiterte Suchoperatoren in Suchausdrücken
@@ -31,16 +31,16 @@ Mit erweiterten Such Operatoren können Sie Ihre Suche nach Inhalten verfeinern,
 > [!WARNING]
 > Sie müssen erweiterte Suchoperatoren mit einem abschließenden Doppelpunkt eingeben. Es dürfen sich keine Leerzeichen zwischen dem Suchoperator und dem Doppelpunkt befinden, damit die Suchmaschine diesen erkennen kann.
 
-|Suchen nach|Mit|Beispiel|Ergebnis|
+|Suchen nach|Verwendung|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
-|Eine Benennung im Titel des Themas|title:|title:binaryreader|Themen, die „binaryreader“ im Titel enthalten.|
+|Eine Benennung im Titel des Themas|Titel:|title:binaryreader|Themen, die „binaryreader“ im Titel enthalten.|
 |Eine Benennung in einem Codebeispiel|code:|code:readdouble|Themen, die „readdouble“ in einem Codebeispiel enthalten.|
 |Eine Benennung in einem Beispiel einer spezifischen Programmiersprache|code:vb:|code:vb:string|Themen, die „string“ in einem Visual Basic-Beispiel enthalten.|
 |Ein Thema, das einem bestimmten Index-Schlüsselwort zugeordnet ist|Schlüsselwort:|Schlüsselwort: readbyte|Themen, die dem Indexschlüsselwort „readbyte“ zugeordnet sind.|
 
  Sie können den Operator code: verwenden, um Inhalt zu einer beliebigen Programmiersprache zu suchen. Es werden allerdings nur Ergebnisse für Inhalt zurückgegeben, der mit einer spezifischen Programmiersprache markiert ist. Die folgende Tabelle enthält die Programmiersprachen, die dieser Operator unterstützt:
 
-|Programmiersprache|Mit|
+|Programmiersprache|Verwendung|
 |--------------------------|---------|
 |Visual Basic|code:vb<br /><br /> oder<br /><br /> code:visualbasic|
 |C#|code:c#<br /><br /> oder<br /><br /> code:csharp|
@@ -49,5 +49,5 @@ Mit erweiterten Such Operatoren können Sie Ihre Suche nach Inhalten verfeinern,
 |JavaScript|code:javascript<br /><br /> oder<br /><br /> code:js|
 |XAML|code:xaml|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Logische Operatoren in Such Ausdrücken](../ide/logical-operators-in-search-expressions.md) [Volltext-Such Tipps](../ide/full-text-search-tips.md)
