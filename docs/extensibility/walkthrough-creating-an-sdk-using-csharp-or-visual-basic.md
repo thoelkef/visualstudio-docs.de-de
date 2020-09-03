@@ -12,10 +12,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904978"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mit c# oder Visual Basic
@@ -29,7 +29,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein einfaches Math
 ## <a name="prerequisites"></a>Voraussetzungen
  Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>So erstellen Sie die simplemath-Windows-Runtime Komponente
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> So erstellen Sie die simplemath-Windows-Runtime Komponente
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
@@ -57,7 +57,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein einfaches Math
 
 9. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projekt Knoten **simplemath** , und wählen Sie dann **Erstellen**aus.
 
-## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>So erstellen Sie das simplemathvsix-Erweiterungsprojekt
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> So erstellen Sie das simplemathvsix-Erweiterungsprojekt
 
 1. Wählen Sie im Kontextmenü für den Projektmappen-Knoten **"simplemath"** die Option **Add**  >  **Neues Projekt**hinzufügen aus.
 
@@ -154,7 +154,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein einfaches Math
 
 30. Wählen Sie die Schaltfläche **Installieren** aus, warten Sie, bis die Installation abgeschlossen ist, und starten Sie Visual Studio neu.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>So erstellen Sie eine Beispiel-APP, die die Klassenbibliothek verwendet
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> So erstellen Sie eine Beispiel-APP, die die Klassenbibliothek verwendet
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
@@ -245,7 +245,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein einfaches Math
 
     Sie haben erfolgreich ein Erweiterungs-SDK erstellt und verwendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Erstellen eines SDK mithilfe von C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Exemplarische Vorgehensweise: Erstellen eines SDK mithilfe von JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md)

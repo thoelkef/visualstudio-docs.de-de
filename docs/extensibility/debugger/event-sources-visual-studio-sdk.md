@@ -1,5 +1,5 @@
 ---
-title: Ereignisquellen (Visual Studio SDK) | Microsoft Docs
+title: Ereignis Quellen (Visual Studio SDK) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738774"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Ereignisquellen (Visual Studio SDK)
-Es gibt zwei Ereignisquellen: das Debugmodul (DE) und den Session Debug Manager (SDM). Ereignisse, die von einem DE gesendet werden, haben ein Nicht-NULL-Modul, während Ereignisse, die vom SDM gesendet werden, über ein NULL-Modul verfügen.
+# <a name="event-sources-visual-studio-sdk"></a>Ereignis Quellen (Visual Studio SDK)
+Es gibt zwei Quellen für Ereignisse: Debug Engine (de) und Session Debug Manager (SDM). Ereignisse, die von einem de gesendet werden, verfügen über ein Modul, das nicht NULL ist, während von der SDM gesendete Ereignisse ein NULL-Modul aufweisen.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Das **IDebugProgramCreateEvent2** von der DE an das SDM gesendet wird.
+Im folgenden Beispiel wird gezeigt, wie der **IDebugProgramCreateEvent2** von der de an die SDM gesendet wird.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

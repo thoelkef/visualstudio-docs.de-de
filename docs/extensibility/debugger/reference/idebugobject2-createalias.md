@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft Docs
+title: 'IDebugObject2:: kreatealias | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726295"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
@@ -41,10 +41,10 @@ int CreateAlias(
 
 ## <a name="parameters"></a>Parameter
 `ppAlias`\
-[out] Der neue (oder vorhandene) Alias.
+vorgenommen Der neue (oder vorhandene) Alias.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
  Ein Alias ist eine Bezeichnung, die ein bestimmtes Objekt darstellt, während sich das Objekt im Arbeitsspeicher befindet.

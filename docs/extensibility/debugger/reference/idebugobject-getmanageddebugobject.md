@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetManagedDebugObject | Microsoft Docs
+title: 'Idebugobject:: getmanageddebugobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726688"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
-Erstellt eine Kopie des verwalteten Objekts im Adressraum des Debugmoduls.
+Erstellt eine Kopie des verwalteten Objekts im Adressraum der Debug-Engine.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetManagedDebugObject(
 
 ## <a name="parameters"></a>Parameter
 `ppObject`\
-[out] Gibt ein [IDebugManagedObject-Objekt](../../../extensibility/debugger/reference/idebugmanagedobject.md) zurück, das das neu erstellte verwaltete Objekt darstellt.
+vorgenommen Gibt ein [idebugmanagedobject](../../../extensibility/debugger/reference/idebugmanagedobject.md) -Objekt zurück, das das neu erstellte verwaltete-Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben. Gibt E_FAIL zurück, wenn dieses [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) keine Instanz für verwaltete Wertklassen darstellt.
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben. Gibt E_FAIL zurück, wenn dieses [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) keine Instanz einer verwalteten Wert Klasse darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
- Dieses [IDebugObject-Objekt](../../../extensibility/debugger/reference/idebugobject.md) muss eine verwaltete Wertklasseninstanz darstellen, z. B. eine `System.Decimal` Instanz. Durch eine lokale Kopie entfällt der Aufwand für den Aufruf von [Evaluate.](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
+ Dieses [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt muss eine Instanz der verwalteten Wert Klasse, z. b. eine-Instanz, darstellen `System.Decimal` . Wenn eine lokale Kopie vorhanden ist, wird der Aufwand für das Aufrufen von [Evaluierungen](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) vermieden.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

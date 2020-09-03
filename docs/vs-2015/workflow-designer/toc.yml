@@ -62,7 +62,7 @@
               href: pickbranch-activity-designer.md
             - name: Sequenz
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: Schalter\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -86,7 +86,7 @@
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
-            - name: Transition
+            - name: Übergang
               href: transition-activity-designer.md
         - name: Nachrichten
           items:
@@ -110,13 +110,13 @@
           items:
             - name: Typ
               href: runtime-activity-designers.md
-            - name: Beibehalten
+            - name: Speichern
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
-        - name: Primitive
+        - name: Grundtypen
           items:
-            - name: Primitive
+            - name: Grundtypen
               href: primitives-activity-designers.md
             - name: Zuweisen
               href: assign-activity-designer.md
@@ -136,15 +136,15 @@
               href: cancellationscope-activity-designer.md
             - name: CompensableActivity
               href: compensableactivity-activity-designer.md
-            - name: Compensate
+            - name: Kompensieren
               href: compensate-activity-designer.md
-            - name: Confirm
+            - name: Bestätigen
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md
-        - name: Collection
+        - name: Sammlung
           items:
-            - name: Collection
+            - name: Sammlung
               href: collection-activity-designers.md
             - name: AddToCollection\<T>
               href: addtocollection-t-activity-designer.md
@@ -158,7 +158,7 @@
           items:
             - name: Fehlerbehandlung
               href: error-handling-activity-designers.md
-            - name: Rethrow
+            - name: Erneut auslösen
               href: rethrow-activity-designer.md
             - name: Throw
               href: throw-activity-designer.md
@@ -286,7 +286,7 @@
               items:
                 - name: Benutzeroberflächenhilfe von Visual Studio Designer für Windows Workflow Foundation (Vorgängerversion)
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Dialogfeld "Binden an die Eigenschaft einer Aktivität" (Vorgängerversion)
+                - name: Dialogfeld „Binden an die Eigenschaft einer Aktivität“ (Vorgängerversion)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: Dialogfeld '.NET-Typ suchen und auswählen' (Vorgängerversion)
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

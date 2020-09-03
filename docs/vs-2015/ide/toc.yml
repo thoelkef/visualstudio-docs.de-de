@@ -12,9 +12,9 @@
       items:
         - name: Erste Schritte mit der Entwicklung mit Visual Studio
           href: get-started-developing-with-visual-studio.md
-        - name: 'Erste Schritte mit Visual C# und Visual Basic'
+        - name: Erste Schritte mit Visual C# und Visual Basic
           items:
-            - name: 'Erste Schritte mit Visual C# und Visual Basic'
+            - name: Erste Schritte mit Visual C# und Visual Basic
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: Erstellen einer einfachen Anwendung
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -178,7 +178,7 @@
               href: using-regular-expressions-in-visual-studio.md
             - name: Suchen (Feld)
               href: find-command-box.md
-            - name: In Dateien suchen
+            - name: Suchen in Dateien
               href: find-in-files.md
             - name: In Dateien ersetzen
               href: replace-in-files.md
@@ -188,9 +188,9 @@
           href: outlining.md
         - name: Refactoring
           href: refactoring-in-visual-studio.md
-        - name: Produktivitätstipps
+        - name: Produktivitätstipp
           items:
-            - name: Produktivitätstipps
+            - name: Produktivitätstipp
               href: productivity-tips-for-visual-studio.md
             - name: Tipps und Tricks
               href: tips-and-tricks-for-visual-studio.md
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Gefilterte Vervollständigungslisten in Visual Basic
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'Visual C#-IntelliSense'
+            - name: Visual C#-IntelliSense
               href: visual-csharp-intellisense.md
             - name: Unterstützung für Vorabtests mit dem Feature „Aus Nutzung generieren“
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<Wert >
+                    - name: \<value>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -280,13 +280,13 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: Verteilen von Codeausschnitten
               href: how-to-distribute-code-snippets.md
-            - name: 'Visual C#-Codeausschnitte'
+            - name: Visual C#-Codeausschnitte
               href: visual-csharp-code-snippets.md
             - name: Visual C++-Codeausschnitte
               href: visual-cpp-code-snippets.md
             - name: Codeausschnittfunktionen
               href: code-snippet-functions.md
-            - name: 'Wiederherstellen von C#-Refactoring-Codeausschnitten'
+            - name: Wiederherstellen von C#-Refactoring-Codeausschnitten
               href: how-to-restore-csharp-refactoring-snippets.md
             - name: Verwenden von „Umschließen mit“-Codeausschnitten
               href: how-to-use-surround-with-code-snippets.md
@@ -390,29 +390,29 @@
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex-Befehl
               href: codeindex-command.md
-        - name: 'Verwenden der Visual Studio-Entwicklungsumgebung für C#'
+        - name: Verwenden der Visual Studio-Entwicklungsumgebung für C#
           items:
-            - name: 'Verwenden der Visual Studio-Entwicklungsumgebung für C#'
+            - name: Verwenden der Visual Studio-Entwicklungsumgebung für C#
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: 'Hinzufügen eine Anwendungskonfigurationsdatei zu einem C#-Projekt'
+            - name: Hinzufügen eine Anwendungskonfigurationsdatei zu einem C#-Projekt
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: Metadaten als Quelle
               href: ../csharp-ide/metadata-as-source.md
-            - name: 'Refactoring (C#)'
+            - name: Refactoring (C#)
               items:
-                - name: 'Refactoring (C#)'
+                - name: Refactoring (C#)
                   href: ../csharp-ide/refactoring-csharp.md
-                - name: 'Umgestaltung "Methode extrahieren" (C#)'
+                - name: Umgestaltung "Methode extrahieren" (C#)
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: 'Umgestaltung durch Umbenennen (C#)'
+                - name: Umgestaltung durch Umbenennen (C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
-                - name: 'Refactoring „Feld kapseln“ (C#)'
+                - name: Refactoring „Feld kapseln“ (C#)
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
-                - name: 'Refactoring „Schnittstelle extrahieren“ (C#)'
+                - name: Refactoring „Schnittstelle extrahieren“ (C#)
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
-                - name: 'Umgestaltung "Parameter entfernen" (C#)'
+                - name: Umgestaltung "Parameter entfernen" (C#)
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: 'Umgestaltung "Parameter neu anordnen" (C#)'
+                - name: Umgestaltung "Parameter neu anordnen" (C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Debuggen in Visual Studio
       href: ../debugger/debugging-in-visual-studio.md
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: Festlegen von Buildereignissen (Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: 'Angeben von Buildereignissen (C#)'
+        - name: Angeben von Buildereignissen (C#)
           href: how-to-specify-build-events-csharp.md
         - name: Konfigurieren von Warnungen in Visual Basic
           href: configuring-warnings-in-visual-basic.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Visual Studio-IDE-64-Bit-Unterstützung
       href: visual-studio-ide-64-bit-support.md
-    - name: Visual Studio Samples
+    - name: Visual Studio-Beispiele
       href: visual-studio-samples.md
     - name: Benutzerkonten und Updates
       items:
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: Sicherheitsbibliographie
           href: security-bibliography.md
-    - name: Visual Studio Samples
+    - name: Visual Studio-Beispiele
       href: visual-studio-samples.md
     - name: Microsoft Help Viewer
       items:
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: Verweis
+    - name: Referenz
       items:
         - name: Allgemeine Elemente der Benutzeroberfläche (Visual Studio)
           items:
@@ -624,13 +624,13 @@
               href: reference/general-user-interface-elements-visual-studio.md
             - name: Aufrufhierarchie
               href: reference/call-hierarchy.md
-            - name: 'Werkzeugkastenelemente auswählen, WPF-Komponenten'
+            - name: 'Toolboxelemente auswählen, WPF-Komponenten'
               href: reference/choose-toolbox-items-wpf-components.md
             - name: Codeausschnittauswahl
               href: reference/code-snippet-picker.md
             - name: Befehlsfenster
               href: reference/command-window.md
-            - name: Dialogfeld "Konvertieren"
+            - name: Konvertieren (Dialogfeld)
               href: reference/convert-dialog-box.md
             - name: Fehlerliste (Fenster)
               href: reference/error-list-window.md
@@ -702,7 +702,7 @@
                   href: reference/options-text-editor-file-extension.md
                 - name: 'Optionen, Text-Editor, Alle Sprachen'
                   href: reference/options-text-editor-all-languages.md
-                - name: 'Optionen, Text-Editor, Alle Sprachen, Tabstopps'
+                - name: 'Optionen, Text-Editor, Alle Sprachen, Registerkarten'
                   href: reference/options-text-editor-all-languages-tabs.md
                 - name: 'Optionen, Text-Editor, Standard (Visual Basic)'
                   href: reference/options-text-editor-basic-visual-basic.md
@@ -740,7 +740,7 @@
                   items:
                     - name: 'Application Page, Project Designer (Visual Basic)'
                       href: reference/application-page-project-designer-visual-basic.md
-                    - name: Dialogfeld "Assemblyinformationen"
+                    - name: Assemblyinformationen (Dialogfeld)
                       href: reference/assembly-information-dialog-box.md
                 - name: 'Seite "Anwendung", Projekt-Designer (C#)'
                   href: reference/application-page-project-designer-csharp.md
@@ -754,7 +754,7 @@
                   items:
                     - name: 'Seite "Erstellen", Projekt-Designer (C#)'
                       href: reference/build-page-project-designer-csharp.md
-                    - name: 'Dialogfeld "Erweiterte Buildeinstellungen" (C#)'
+                    - name: Dialogfeld "Erweiterte Buildeinstellungen" (C#)
                       href: reference/advanced-build-settings-dialog-box-csharp.md
                 - name: 'Codeanalyse, Projekt-Designer'
                   href: reference/code-analysis-project-designer.md
@@ -788,7 +788,7 @@
                   items:
                     - name: 'Services-Seite, Projekt-Designer'
                       href: reference/services-page-project-designer.md
-                    - name: Dialogfeld Erweiterte Einstellungen für Dienste
+                    - name: Dialogfeld "Erweiterte Einstellungen für Dienste"
                       href: reference/advanced-settings-for-services-dialog-box.md
                 - name: 'Seite "Signierung", Projekt-Designer'
                   href: reference/signing-page-project-designer.md
@@ -810,9 +810,9 @@
               href: reference/property-pages-javascript.md
             - name: Eigenschaftenfenster
               href: reference/properties-window.md
-            - name: Toolbox
+            - name: Werkzeugkasten
               items:
-                - name: Toolbox
+                - name: Werkzeugkasten
                   href: reference/toolbox.md
                 - name: 'Toolbox, Registerkarte „Komponenten“'
                   href: reference/toolbox-components-tab.md

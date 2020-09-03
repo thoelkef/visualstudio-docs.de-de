@@ -1,5 +1,5 @@
 ---
-title: IDebugInterceptExceptionCompleteEvent2 | Microsoft Docs
+title: IDebugInterceptExceptionCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a07f2808c1aaeca3c1631fce658fdf6e8da32d60
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727767"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
-Diese Schnittstelle wird vom Debugmodul (DE) an den Session Debug Manager (SDM) gesendet, wenn die DE die Behandlung eines abgefangenen Ereignisses abgeschlossen hat.
+Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn die Verarbeitung eines abgefangenen Ereignisses von de abgeschlossen wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,25 +29,25 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Die DE implementiert diese Schnittstelle, um zu melden, dass die Verarbeitung einer abgefangenen Ausnahme abgeschlossen wurde. Die [IDebugEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugevent2.md) muss für dasselbe Objekt wie diese Schnittstelle implementiert werden. Das SDM verwendet [QueryInterface,](/cpp/atl/queryinterface) um auf die `IDebugEvent2` Schnittstelle zuzugreifen.
+ Die de implementiert diese Schnittstelle, um zu melden, dass die Verarbeitung einer abgefangenen Ausnahme abgeschlossen wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf demselben Objekt wie diese Schnittstelle implementiert werden. Der SDM verwendet [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die- `IDebugEvent2` Schnittstelle.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Die DE erstellt und sendet dieses Ereignisobjekt, um den Abschluss einer abgefangenen Ausnahme zu melden. Das Ereignis wird mithilfe der [IDebugEventCallback2-Rückruffunktion](../../../extensibility/debugger/reference/idebugeventcallback2.md) gesendet, die vom SDM bereitgestellt wird, wenn es an das zu debuggende Programm angefügt wird.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Das de-Objekt erstellt und sendet dieses Ereignis Objekt, um den Abschluss einer abgefangenen Ausnahme zu melden. Das Ereignis wird mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Rückruffunktion gesendet, die von der SDM bereitgestellt wird, wenn Sie an das Programm angefügt wird, das gedeppt wird.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die `IDebugInterceptExceptionCompleteEvent2` Schnittstelle implementiert die folgenden Methoden.
+ Die- `IDebugInterceptExceptionCompleteEvent2` Schnittstelle implementiert die folgenden Methoden.
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Gibt den eindeutigen Wert zurück, der der behandelten Ausnahme zugeordnet ist.|
 
 ## <a name="remarks"></a>Bemerkungen
- Dieses Ereignis wird von [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) gesendet, wenn diese Methode die Behandlung einer abgefangenen Ausnahme erfolgreich abgeschlossen hat.
+ Dieses Ereignis wird von [intercepteption TException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) gesendet, wenn die Verarbeitung einer abgefangenen Ausnahme von dieser Methode erfolgreich abgeschlossen wurde.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE | Microsoft Docs
+title: PDB_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f736d7d9b190fc46945e2f4f7c309b88c3e851f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714103"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
-Diese Struktur gibt Informationen zu einem Feldtyp an, der einem PDB-Symbol entnommen wurde.
+Diese Struktur gibt Informationen zu einem Feldtyp an, der aus einem PDB-Symbol entnommen wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,23 +47,23 @@ public struct PDB_TYPE {
 ## <a name="members"></a>Member
 
 `ulAppDomainID`\
-ID der Anwendung, aus der das Symbol stammt. Dies wird verwendet, um eine Instanz der Anwendung eindeutig zu identifizieren.
+Die ID der Anwendung, von der das Symbol stammt. Hiermit wird eine Instanz der Anwendung eindeutig identifiziert.
 
 `guidModule`\
-Die GUID des Moduls, das dieses Feld enthält.
+Der GUID des Moduls, das dieses Feld enthält.
 
 `symid`\
 Die ID des Symbols, das diesem Feld entspricht.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Struktur angezeigt, wenn das `dwKind` Feld `TYPE_INFO` der Struktur auf `TYPE_KIND_PDB` (ein Wert aus der [dwTYPE_KIND-Enumeration)](../../../extensibility/debugger/reference/dwtype-kind.md) festgelegt ist.
+Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) -Struktur angezeigt, wenn das- `dwKind` Feld der- `TYPE_INFO` Struktur auf festgelegt ist `TYPE_KIND_PDB` (ein Wert aus der [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Enumeration).
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
-Kopfzeile: sh.h
+Header: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

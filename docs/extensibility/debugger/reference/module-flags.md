@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS | Microsoft Docs
+title: MODULE_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714245"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
@@ -58,29 +58,29 @@ public enum enum_MODULE_FLAGS { 
  Gibt ein Systemmodul an.
 
  `MODULE_FLAG_SYMBOLS`\
- Gibt ein Symbolmodul an.
+ Gibt ein Symbol Modul an.
 
  `MODULE_FLAG_64BIT`\
  Gibt ein 64-Bit-Modul an.
 
  `MODULE_FLAG_OPTIMIZED`\
- Gibt an, dass das Modul optimiert wurde. Dieser Zustand wird im **Fenster Modules** widergespiegelt.
+ Gibt an, dass das Modul optimiert wurde. Dieser Status wird im Fenster **Module** widergespiegelt.
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Gibt an, dass das Modul nicht optimiert wurde. Dieser Zustand wird im **Fenster Modules** widergespiegelt. Dies ist die Standardeinstellung.
+ Gibt an, dass das Modul nicht optimiert wurde. Dieser Status wird im Fenster **Module** widergespiegelt. Dies ist die Standardeinstellung.
 
 ## <a name="remarks"></a>Bemerkungen
- Wird für `m_dwModuleFlags` das Element der [MODULE_INFO-Struktur](../../../extensibility/debugger/reference/module-info.md) verwendet.
+ Wird für den `m_dwModuleFlags` Member der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) -Struktur verwendet.
 
- Diese Flags können mit einem `OR`bitwise kombiniert werden.
+ Diese Flags können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

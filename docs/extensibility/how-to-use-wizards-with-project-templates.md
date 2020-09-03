@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905516"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
@@ -242,7 +242,7 @@ Damit Ihre benutzerdefinierte Projektvorlage den benutzerdefinierten Assistenten
 
      Vergessen Sie auch hier nicht die Anführungszeichen. Eine Zeile in der Ausgabe sollte wie folgt angezeigt werden.
 
-     **Öffentliches Schlüssel Token ist\<token>**
+     **Öffentliches Schlüssel Token ist \<token>**
 
      Notieren Sie sich diesen Wert.
 

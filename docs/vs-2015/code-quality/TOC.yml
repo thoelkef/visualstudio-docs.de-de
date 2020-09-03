@@ -8,15 +8,15 @@
           href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Übersicht über die Analyse von verwaltetem Code
           href: code-analysis-for-managed-code-overview.md
-        - name: 'Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse'
+        - name: 'Gewusst wie: Aktivieren und Deaktivieren der automatischen Codeanalyse'
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
         - name: 'Vorgehensweise: Aktivieren und Deaktivieren der vollständigen Projektmappenanalyse'
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Automatisches Anhalten von Features
           href: automatic-feature-suspension.md
-        - name: 'Vorgehensweise: Manuelles Ausführen der Codeanalyse'
+        - name: 'Gewusst wie: Manuelles Ausführen der Codeanalyse'
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 'Exemplarische Vorgehensweise: Analysieren von verwaltetem Code im Hinblick auf Codefehler'
+        - name: 'Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Unterdrücken von Warnungen mithilfe des SuppressMessage-Attributs
           items:
@@ -24,17 +24,17 @@
               href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: Übersicht über die Unterdrückung im Quellcode
               href: in-source-suppression-overview.md
-            - name: 'Vorgehensweise: Unterdrücken von Warnungen über das Menüelement'
+            - name: 'Gewusst wie: Unterdrücken von Warnungen über das Menüelement'
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-            - name: 'Vorgehensweise: Unterdrücken von Warnungen für generierten Code'
+            - name: 'Gewusst wie: Unterdrücken von Warnungen für generierten Code'
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-            - name: 'Vorgehensweise: Anpassen des Codeanalysewörterbuchs'
+            - name: 'Gewusst wie: Anpassen des Codeanalysewörterbuchs'
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: Anonyme Methoden und Codeanalyse
               href: anonymous-methods-and-code-analysis.md
-            - name: 'Vorgehensweise: Anzeigen von Fehlern in verwaltetem Code'
+            - name: 'Gewusst wie: Anzeigen von Fehlern in verwaltetem Code'
               href: how-to-view-managed-code-defects.md
-            - name: 'Vorgehensweise: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code'
+            - name: 'Gewusst wie: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code'
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
             - name: Warnungen bei der Analyse von verwaltetem Code
               items:
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: 'CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen.'
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: 'CA1060: P/Invokes in NativeMethods-Klasse verschieben.'
+                - name: 'CA1060: P/Invokes in NativeMethods-Klasse verschieben'
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: 'CA1061: Basisklassenmethoden nicht ausblenden.'
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -202,21 +202,21 @@
                   href: ca1308-normalize-strings-to-uppercase.md
                 - name: 'CA1309: Ordinal-StringComparison verwenden.'
                   href: ca1309-use-ordinal-stringcomparison.md
-                - name: 'CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.'
+                - name: 'CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: Interoperabilitätswarnungen
               items:
                 - name: Interoperabilitätswarnungen
                   href: interoperability-warnings.md
-                - name: 'CA1400: Für P/Invoke müssen Einstiegspunkte vorhanden sein.'
+                - name: 'CA1400: Für P/Invoke müssen Einstiegspunkte vorhanden sein'
                   href: ca1400-p-invoke-entry-points-should-exist.md
-                - name: 'CA1401: P/Invokes dürfen nicht sichtbar sein.'
+                - name: 'CA1401: P/Invokes dürfen nicht sichtbar sein'
                   href: ca1401-p-invokes-should-not-be-visible.md
                 - name: 'CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden.'
                   href: ca1402-avoid-overloads-in-com-visible-interfaces.md
                 - name: 'CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein.'
                   href: ca1403-auto-layout-types-should-not-be-com-visible.md
-                - name: 'CA1404: GetLastError unmittelbar nach P/Invoke aufrufen.'
+                - name: 'CA1404: GetLastError unmittelbar nach P/Invoke aufrufen'
                   href: ca1404-call-getlasterror-immediately-after-p-invoke.md
                 - name: 'CA1405: Für COM sichtbare Basistypen sollten für COM sichtbar sein.'
                   href: ca1405-com-visible-type-base-types-should-be-com-visible.md
@@ -236,9 +236,9 @@
                   href: ca1412-mark-comsource-interfaces-as-idispatch.md
                 - name: 'CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden.'
                   href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-                - name: 'CA1414: Boolesche P/Invoke-Argumente mit MarshalAs markieren.'
+                - name: 'CA1414: Boolesche P/Invoke-Argumente mit MarshalAs markieren'
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-                - name: 'CA1415: P/Invokes korrekt deklarieren.'
+                - name: 'CA1415: P/Invokes korrekt deklarieren'
                   href: ca1415-declare-p-invokes-correctly.md
                 - name: Verwaltbarkeitswarnungen
                   items:
@@ -356,7 +356,7 @@
                           href: portability-warnings.md
                         - name: 'CA1900: Werttypfelder sollten portabel sein.'
                           href: ca1900-value-type-fields-should-be-portable.md
-                        - name: 'CA1901: Deklarationen von P/Invoke müssen portabel sein.'
+                        - name: 'CA1901: Deklarationen von P/Invoke müssen portabel sein'
                           href: ca1901-p-invoke-declarations-should-be-portable.md
                         - name: 'CA1903: Nur API aus Zielframework verwenden.'
                           href: ca1903-use-only-api-from-targeted-framework.md
@@ -566,7 +566,7 @@
                           href: ca2242-test-for-nan-correctly.md
                         - name: 'CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden.'
                           href: ca2243-attribute-string-literals-should-parse-correctly.md
-                - name: Richtlinienfehler bei der Codeanalyse
+                - name: Code Analysis Policy Errors
                   href: code-analysis-policy-errors.md
 - name: Analysieren der Qualität von C/C++-Code
   items:
@@ -580,11 +580,11 @@
       href: using-the-cpp-core-guidelines-checkers.md
     - name: Übersicht über die Codeanalyse für C/C++
       href: code-analysis-for-c-cpp-overview.md
-    - name: 'Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte'
+    - name: 'Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte'
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler'
+    - name: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler'
       items:
-        - name: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler'
+        - name: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Demobeispiel
           href: demo-sample.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: Empfohlene Vorgehensweisen und Beispiele
           href: best-practices-and-examples-sal.md
-        - name: 'Vorgehensweise: Angeben zusätzlicher Codeinformationen mit „__analysis_assume“'
+        - name: 'Gewusst wie: Angeben zusätzlicher Codeinformationen mit __analysis_assume'
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: Codeanalyse für C/C++-Warnungen
           items:
@@ -1192,19 +1192,19 @@
               href: using-rule-sets-to-group-code-analysis-rules.md
             - name: 'Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes'
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
-            - name: 'Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code'
+            - name: 'Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code'
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 'Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung'
+            - name: 'Gewusst wie: Konfigurieren der Codeanalyse für eine ASP.NET-Anwendung'
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: 'Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit der Eincheckrichtlinie für Teamprojekte'
+            - name: 'Gewusst wie: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie'
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: 'Vorgehensweise: Angeben von Regelsätzen für mehrere Projekte in einer Projektmappe'
+            - name: 'Gewusst wie: Angeben von Regelsätzen für mehrere Projekte in einer Projektmappe'
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: Erstellen von benutzerdefinierten Regelsätzen
               items:
                 - name: Erstellen von benutzerdefinierten Regelsätzen
                   href: creating-custom-code-analysis-rule-sets.md
-                - name: 'Vorgehensweise: Erstellen eines benutzerdefinierten Regelsatzes'
+                - name: 'Gewusst wie: Erstellen eines benutzerdefinierten Regelsatzes'
                   href: how-to-create-a-custom-rule-set.md
                 - name: Arbeiten mit dem Regelsatz-Editor
                   href: working-in-the-code-analysis-rule-set-editor.md
@@ -1304,11 +1304,11 @@
               items:
                 - name: Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse
                   href: creating-and-using-code-analysis-check-in-policies.md
-                - name: 'Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse'
+                - name: 'Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse'
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: Implementieren von benutzerdefinierten Eincheckrichtlinien für verwalteten Code
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: 'Vorgehensweise: Erzwingen von verwaltbarem Code mit einer Eincheckrichtlinie für die Codeanalyse'
+                - name: 'Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Codeanalyse'
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: Versionskompatibilität für die Eincheckrichtlinien der Codeanalyse
                   href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -1318,7 +1318,7 @@
       href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: Codemetrikwerte
       href: code-metrics-values.md
-    - name: 'Vorgehensweise: Generieren von Codemetrikdaten'
+    - name: 'Gewusst wie: Generieren von Codemetrikdaten'
       href: how-to-generate-code-metrics-data.md
     - name: Arbeiten mit Codemetrikdaten
       href: working-with-code-metrics-data.md

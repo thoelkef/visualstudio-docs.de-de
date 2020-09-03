@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714133"
 ---
 # <a name="object_type"></a>Object_Type
-Gibt den Typ eines Objekts aus dem Ausdrucksauswertungswert an.
+Gibt den Typ eines Objekts aus der Ausdrucks Auswertung an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -70,61 +70,61 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Felder
  `OBJECT_TYPE_BOOLEAN`\
- Gibt an, dass es sich bei dem Objekt um ein boolesche Objekt handelt.
+ Gibt an, dass das Objekt ein boolescher Wert ist.
 
  `OBJECT_TYPE_CHAR`\
- Gibt an, dass es sich bei dem Objekt um ein Zeichen handelt.
+ Gibt an, dass das Objekt ein Zeichen ist.
 
  `OBJECT_TYPE_I1`\
- Gibt an, dass es sich bei dem Objekt um eine einbyte signierte Ganzzahl handelt.
+ Gibt an, dass das Objekt eine 1-Byte-Ganzzahl mit Vorzeichen ist.
 
  `OBJECT_TYPE_U1`\
- Gibt an, dass es sich bei dem Objekt um eine ganzzahlige Ganzzahl ohne Durchtbyte handelt.
+ Gibt an, dass das Objekt eine 1-Byte-Ganzzahl ohne Vorzeichen ist.
 
  `OBJECT_TYPE_I2`\
- Gibt an, dass es sich bei dem Objekt um eine zweibytsignierte Ganzzahl handelt.
+ Gibt an, dass das Objekt eine 2-Byte-Ganzzahl mit Vorzeichen ist.
 
  `OBJECT_TYPE_U2`\
- Gibt an, dass es sich bei dem Objekt um eine ganzzahlige Ganzzahl mit zwei Byte handelt.
+ Gibt an, dass das Objekt eine 2-Byte-Ganzzahl ohne Vorzeichen ist.
 
  `OBJECT_TYPE_I4`\
- Gibt an, dass es sich bei dem Objekt um eine vierbyte signierte Ganzzahl handelt.
+ Gibt an, dass das Objekt eine 4-Byte-Ganzzahl mit Vorzeichen ist.
 
  `OBJECT_TYPE_U4`\
- Gibt an, dass es sich bei dem Objekt um eine ganzzahlige Vier-Byte-Datei ohne Vorzeichen handelt.
+ Gibt an, dass das Objekt eine 4-Byte-Ganzzahl ohne Vorzeichen ist.
 
  `OBJECT_TYPE_I8`\
- Gibt an, dass es sich bei dem Objekt um eine acht byte signierte Ganzzahl handelt.
+ Gibt an, dass das Objekt eine 8-Byte-Ganzzahl mit Vorzeichen ist.
 
  `OBJECT_TYPE_U8`\
- Gibt an, dass es sich bei dem Objekt um eine ganzzahlige Achtbyte ohne Vorzeichen handelt.
+ Gibt an, dass das Objekt eine 8-Byte-Ganzzahl ohne Vorzeichen ist.
 
  `OBJECT_TYPE_R4`\
- Gibt an, dass es sich bei dem Objekt um eine Gleitkommazahl mit vier Byte handelt.
+ Gibt an, dass das Objekt eine 4-Byte-Gleit Komma Zahl ist.
 
  `OBJECT_TYPE_R8`\
- Gibt an, dass es sich bei dem Objekt um eine Gleitkommazahl mit acht Byte handelt.
+ Gibt an, dass das Objekt eine 8-Byte-Gleit Komma Zahl ist.
 
  `OBJECT_TYPE_OBJECT`\
- Gibt an, dass es sich bei dem Objekt um ein Objekt handelt.
+ Gibt an, dass das Objekt ein Objekt ist.
 
  `OBJECT_TYPE_NULL`\
  Gibt an, dass das Objekt NULL ist.
 
  `OBJECT_TYPE_CLASS`\
- Gibt an, dass es sich bei dem Objekt um eine Klasse handelt.
+ Gibt an, dass das Objekt eine Klasse ist.
 
 ## <a name="remarks"></a>Bemerkungen
- Übergeben als Argument an die [Methoden CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) und [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
+ Übergeben als Argument an die Methoden "| [ateprimitiveobject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) " und " [kreatearrayobject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) ".
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: ee.h
+## <a name="requirements"></a>Anforderungen
+ Header: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)
 - [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

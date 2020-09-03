@@ -898,7 +898,7 @@
   items:
     - name: Erstellen eines Software Development Kits
       href: creating-a-software-development-kit.md
-    - name: 'Erstellen eines SDK mit C# oder Visual Basic'
+    - name: Erstellen eines SDK mit C# oder Visual Basic
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Erstellen eines SDK mit C++
       href: walkthrough-creating-an-sdk-using-cpp.md

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536083"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
@@ -75,16 +75,16 @@ partition.SetLocks(Locks.Delete);
 
   Eine Sperre für eine Partition oder einen Speicher kann nicht festgelegt werden, und gleichzeitig wird die Sperre für ein einzelnes Element deaktiviert.
 
-|Wert|Dies bedeutet, wenn `IsLocked(Value)` true ist.|
+|value|Dies bedeutet, wenn `IsLocked(Value)` true ist.|
 |-|-|
 |Keine|Keine Einschränkung.|
 |Eigenschaft|Domänen Eigenschaften von Elementen können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänen Klasse in einer Beziehung generiert werden.|
-|Add|Neue Elemente und Verknüpfungen können nicht in einer Partition oder einem Speicher erstellt werden.<br /><br /> Gilt nicht für `ModelElement` .|
-|Verschieben|Das Element kann nicht zwischen Partitionen verschoben werden `element.IsLocked(Move)` , wenn true ist, oder wenn `targetPartition.IsLocked(Move)` true ist.|
+|Hinzufügen|Neue Elemente und Verknüpfungen können nicht in einer Partition oder einem Speicher erstellt werden.<br /><br /> Gilt nicht für `ModelElement` .|
+|Move|Das Element kann nicht zwischen Partitionen verschoben werden `element.IsLocked(Move)` , wenn true ist, oder wenn `targetPartition.IsLocked(Move)` true ist.|
 |Löschen|Ein Element kann nicht gelöscht werden, wenn diese Sperre für das Element selbst oder für eines der Elemente festgelegt wird, an die der Löschvorgang weitergegeben werden soll, z. b. eingebettete Elemente und Formen.<br /><br /> Sie können verwenden `element.CanDelete()` , um zu ermitteln, ob ein Element gelöscht werden kann.|
 |Neu anordnen|Die Reihenfolge der Links auf einem das RolePlayer kann nicht geändert werden.|
 |Das RolePlayer|Der Satz von Links, die von diesem Element stammen, kann nicht geändert werden. Beispielsweise können neue Elemente unter diesem Element nicht eingebettet werden. Dies wirkt sich nicht auf Verknüpfungen aus, für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element ein Link ist, sind die Quelle und das Ziel nicht betroffen.|
-|Alle|Bitweises OR der anderen-Werte.|
+|All|Bitweises OR der anderen-Werte.|
 
 ## <a name="locking-policies"></a>Sperren von Richtlinien
  Als Autor einer DSL können Sie eine *Sperr Richtlinie*definieren. Eine Sperr Richtlinie moderiert den Betrieb von setlocks (), sodass Sie verhindern können, dass bestimmte Sperren festgelegt werden, oder Sie können festlegen, dass bestimmte Sperren festgelegt werden müssen. In der Regel verwenden Sie eine Sperr Richtlinie, um zu verhindern, dass Benutzer oder Entwickler versehentlich die beabsichtigte Verwendung einer DSL verletzen, und zwar auf dieselbe Weise, wie Sie eine Variable deklarieren können `private` .
@@ -100,7 +100,7 @@ partition.SetLocks(Locks.Delete);
 - Fügen Sie diese Klasse den Diensten hinzu, die über die docdata ihrer DSL verfügbar sind.
 
 ### <a name="to-define-a-locking-policy"></a>So definieren Sie eine Sperr Richtlinie
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>weist die folgende Definition auf:
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> weist die folgende Definition auf:
 
 ```csharp
 public interface ILockingPolicy
@@ -113,7 +113,7 @@ public interface ILockingPolicy
 
  Diese Methoden werden aufgerufen, wenn ein Aufruf `SetLocks()` von für einen Speicher, eine Partition oder ein ModelElement erfolgt. In jeder Methode erhalten Sie einen vorgeschlagenen Satz von Sperren. Sie können die vorgeschlagene Menge zurückgeben, oder Sie können Sperren hinzufügen oder subtrahieren.
 
- Zum Beispiel:
+ Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- Um sicherzustellen, dass Benutzer immer Elemente löschen können, auch wenn andere Code Aufrufe`SetLocks(Lock.Delete):`
+ Um sicherzustellen, dass Benutzer immer Elemente löschen können, auch wenn andere Code Aufrufe `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 

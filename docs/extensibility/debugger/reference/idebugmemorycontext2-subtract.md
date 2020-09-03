@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtrahieren | Microsoft Docs
+title: 'IDebugMemoryContext2:: Subtract | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727439"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-Subtrahiert den angegebenen Wert vom aktuellen Kontext und gibt einen neuen Kontext zurück.
+Subtrahiert den angegebenen Wert aus dem aktuellen Kontext und gibt einen neuen Kontext zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,18 +44,18 @@ int Subtract(
 
 ## <a name="parameters"></a>Parameter
 `dwCount`\
-[in] Die Anzahl der Speicherbytes, die dekrementieren sollen.
+in Die Anzahl der zu dekreterenden Speicher Bytes.
 
 `ppMemCxt`\
-[out] Gibt ein neues [IDebugMemoryContext2-Objekt](../../../extensibility/debugger/reference/idebugmemorycontext2.md) zurück.
+vorgenommen Gibt ein neues [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Objekt zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Ein Speicherkontext ist eine Adresse, sodass das Subtrahieren eines Werts von einer Adresse eine neue Adresse erzeugt, die eine neue Kontextschnittstelle erfordert.
+ Ein Speicher Kontext ist eine Adresse, sodass das Subtrahieren eines Werts von einer Adresse eine neue Adresse erzeugt, die eine neue Kontext Schnittstelle erfordert.
 
- Diese Methode muss immer einen neuen Kontext erzeugen, auch wenn sich die resultierende Adresse außerhalb des speicherbereichs befindet, der diesem Kontext zugeordnet ist. Die einzige Ausnahme besteht darin, dass für den neuen `ppMemCxt` Kontext kein Speicher reserviert werden kann oder wenn es sich um einen NULL-Wert handelt (ein Fehler).
+ Diese Methode muss immer einen neuen Kontext ergeben, auch wenn sich die resultierende Adresse außerhalb des Speicherplatzes befindet, der diesem Kontext zugeordnet ist. Die einzige Ausnahme ist, wenn kein Arbeitsspeicher für den neuen Kontext zugeordnet werden kann oder wenn `ppMemCxt` ein NULL-Wert ist (bei dem es sich um einen Fehler handelt).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

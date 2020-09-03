@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::GetInfo | Microsoft Docs
+title: 'IDebugModule2:: GetInfo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726963"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
@@ -44,16 +44,16 @@ int GetInfo( 
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der MODULE_INFO_FIELDS-Enumeration, die angeben, welche [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) `pInfo` Felder ausgefüllt werden sollen.
+in Eine Kombination von Flags aus der [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Enumeration, die angeben, welche Felder von `pInfo` ausgefüllt werden sollen.
 
 `pInfo`\
-[in, out] Eine [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur, die mit einer Beschreibung des Moduls ausgefüllt wird.
+[in, out] Eine [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) -Struktur, die mit einer Beschreibung des Moduls ausgefüllt ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Die [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur enthält den Namen des **Moduls,** das im Fenster Module angezeigt wird.
+ Die [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) -Struktur enthält den Namen des Moduls, das im Fenster " **Module** " angezeigt wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

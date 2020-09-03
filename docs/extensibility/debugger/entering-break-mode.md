@@ -1,5 +1,5 @@
 ---
-title: Eingabe des Pausenmodus | Microsoft Docs
+title: Wechseln in den Umbruch Modus | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738878"
 ---
-# <a name="enter-break-mode"></a>Eingabe in den Pausenmodus
-Die folgenden Informationen beschreiben den Prozess, der auftritt, wenn ein Haltepunkt auftritt, nachdem er in eine Funktion eingetreten ist, zu der Quellcodezeile ausgeführt wird, in der sich der Cursor befindet, oder wenn er zu einem Haltepunkt ausgeführt wird.
+# <a name="enter-break-mode"></a>In den Umbruch Modus wechseln
+Die folgenden Informationen beschreiben den Prozess, der auftritt, wenn nach dem Durchlaufen einer Funktion ein Haltepunkt erreicht wird, der in der Zeile des Quellcodes ausgeführt wird, in der sich der Cursor befindet, oder bis zu einem Breakpoint ausgeführt wird.
 
-## <a name="break-mode-process"></a>Break-Modus-Prozess
+## <a name="break-mode-process"></a>Prozess für den Abbruch Modus
 
-1. Das Debugmodul (DE) sendet [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)oder ein anderes Stoppereignis, das dazu führt, dass die IDE in den Unterbrechungsmodus wechselt.
+1. Die Debug-Engine (de) sendet [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)oder ein beliebiges anderes anhalteereignis, um zu bewirken, dass die IDE in den Umbruch Modus wechselt.
 
-2. Das SDM ruft die Anruflisteninformationen wie folgt aus dem Thread ab:
+2. Der SDM Ruft die aufrufstackinformationen aus dem Thread wie folgt ab:
 
     - [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
@@ -33,13 +33,13 @@ Die folgenden Informationen beschreiben den Prozess, der auftritt, wenn ein Halt
 
     - [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)
 
-    - [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) zum Abrufen der Quellcodeinformationen
+    - [IDebugStackFrame2:: getdocumentcontext zum Abrufen](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) der Quell Code Informationen
 
-    - [IDebugDocumentContext2::GetName,](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) um den Dateinamen abzubekommen
+    - [IDebugDocumentContext2:: GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) , um den Dateinamen zu erhalten
 
-    - [IDebugDocumentContext2::GetStatementRange,](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) um den Anweisungsbereich abzubekommen
+    - [IDebugDocumentContext2:: getstatuementrange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) zum erhalten des Anweisungs Bereichs
 
-    - [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) zum Abrufen von Speicherinformationen
+    - [IDebugStackFrame2:: getcodecontext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) zum erhalten von Speicherinformationen
 
-## <a name="see-also"></a>Weitere Informationen
-- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Siehe auch
+- [Aufrufen von Debugger-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)
