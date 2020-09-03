@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851523"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox
@@ -34,7 +34,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 > [!NOTE]
 > Sie können diese Methode verwenden, um Elementtools zu erstellen. Das heißt, Sie können Tools erstellen, die Sie aus der Toolbox in ein Diagramm ziehen. Sie können keine Connector-Tools erstellen.
 
-## <a name="DefineTool"></a>Definieren eines benutzerdefinierten Modellierungstools
+## <a name="defining-a-custom-modeling-tool"></a><a name="DefineTool"></a> Definieren eines benutzerdefinierten Modellierungstools
 
 #### <a name="to-define-a-custom-modeling-tool"></a>So definieren Sie ein benutzerdefiniertes Modellierungstool
 
@@ -83,8 +83,8 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 - Connector-Routing Wenn Sie Connectors manuell weiterleiten, wird das Routing nicht beibehalten, wenn das Tool verwendet wird. Die Positionen einiger geschachtelter Formen, wie z. B. Ports, werden in Bezug auf ihre Besitzer nicht beibehalten.
 
-## <a name="tbxinfo"></a>Definieren der Eigenschaften von benutzerdefinierten Tools
- Mithilfe einer Toolbox-Informationsdatei ( **. tbxinfo**) können Sie einen Toolbox Namen, ein Symbol, eine QuickInfo, eine Registerkarte und ein Hilfe Schlüsselwort für ein oder mehrere benutzerdefinierte Tools angeben. Nennen Sie einen beliebigen Namen, z. b. **mytools. tbxinfo**.
+## <a name="how-to-define-the-properties-of-custom-tools"></a><a name="tbxinfo"></a> Definieren der Eigenschaften von benutzerdefinierten Tools
+ Mithilfe einer Toolbox-Informationsdatei (**. tbxinfo**) können Sie einen Toolbox Namen, ein Symbol, eine QuickInfo, eine Registerkarte und ein Hilfe Schlüsselwort für ein oder mehrere benutzerdefinierte Tools angeben. Nennen Sie einen beliebigen Namen, z. b. **mytools. tbxinfo**.
 
  Die allgemeine Form der Datei ist wie folgt:
 
@@ -129,7 +129,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 |---------------|-------------|
 |displayName|Der Name des Toolboxelements.|
 |tabName|Die Toolboxregisterkarte, in der das Element angezeigt werden soll. Sie können entweder den Namen der normalen Registerkarte für diesen Typ von Diagramm oder einen anderen Namen angeben.|
-|Bild|Der Speicherort der Bitmapdatei ( **. bmp**), die die Höhe und Breite von 16 und eine Farbtiefe von 24 Bits aufweisen muss.|
+|image|Der Speicherort der Bitmapdatei (**. bmp**), die die Höhe und Breite von 16 und eine Farbtiefe von 24 Bits aufweisen muss.|
 |f1Keyword|Das Schlüsselwort, mit dem ein Hilfethema gesucht wird.|
 |QuickInfo|Eine QuickInfo für dieses Tool.|
 
@@ -138,8 +138,8 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 > [!NOTE]
 > Wenn Sie beginnen, eine TBXINFO-Datei zu verwenden, nachdem Sie mit der alleinigen Verwendung von Diagrammdateien experimentiert haben, stellen sie möglicherweise fest, dass die Toolbox sowohl die alten als auch die neuen Versionen eines Toolboxelements enthält. Dies kann auch auftreten, wenn der Name der Diagrammdatei in der TBXINFO-Datei falsch eingegeben wurde. Wenn dies der Fall ist, wählen Sie im Kontextmenü der Toolbox **Toolbox zurücksetzen**aus. Die benutzerdefinierten Toolboxelemente werden ausgeblendet. Starten Sie Visual Studio neu; daraufhin werden die richtigen benutzerdefinierten Elemente angezeigt.
 
-## <a name="Extension"></a>Verteilen von Toolbox Elementen in einer Visual Studio-Erweiterung
- Sie können Toolbox Elemente an andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Benutzer verteilen, indem Sie Sie in eine Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
+## <a name="how-to-distribute-toolbox-items-in-a-visual-studio-extension"></a><a name="Extension"></a> Verteilen von Toolbox Elementen in einer Visual Studio-Erweiterung
+ Sie können Toolbox Elemente an andere Benutzer verteilen, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] indem Sie Sie in eine Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter Bereitstellen von [Visual Studio-Erweiterungen](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  Die übliche Vorgehensweise zum Erstellen einer Visual Studio-Erweiterung besteht darin, die VSIX-Projektvorlage zu verwenden. Zu diesem Zweck muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.
 
@@ -155,9 +155,9 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
      Definieren Sie ein neues Visual Studio-Erweiterungsprojekt.
 
-    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.
+    1. Wählen Sie im Menü **Datei** die Befehle **Neu** und **Projekt** aus.
 
-    2. Wählen Sie im Dialogfeld **Neues Projekt** unter **installierte Vorlagen**die Option **Visualisierung C#** , **Erweiterbarkeit**und **VSIX-Projekt**aus.
+    2. Wählen Sie im Dialogfeld **Neues Projekt** unter **installierte Vorlagen**die Option **Visual c#**, **Erweiterbarkeit**, **VSIX-Projekt**aus.
 
 4. Fügen Sie die Toolboxdefinitionen dem Projekt hinzu. Fügen Sie die **tbxinfo** -Datei, die Diagramm Dateien, die Bitmapdateien und alle Ressourcen Dateien ein, und stellen Sie sicher, dass Sie in der VSIX enthalten sind.
 
@@ -168,11 +168,11 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 5. Legen Sie die folgenden Eigenschaften aller Dateien fest, die Sie gerade hinzugefügt haben. Sie können ihre Eigenschaften gleichzeitig festlegen, indem Sie alle im Projektmappen-Explorer auswählen. Achten Sie darauf, dass Sie keine Änderungen an den Eigenschaften der anderen Dateien im Projekt vornehmen.
 
-     **In Ausgabeverzeichnis kopieren** = **immer kopieren**
+     **In Ausgabeverzeichnis kopieren**  =  **Immer kopieren**
 
      **Buildvorgang** = **Inhalt**
 
-     **In VSIX einschließen** = **true**
+     **In VSIX einschließen**  =  **true**
 
 6. Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Erweiterungsmanifest-Editor geöffnet.
 
@@ -180,14 +180,14 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
      Wählen Sie unter **Assets**die Option **neu** aus, und legen Sie dann die Felder im Dialogfeld wie folgt fest:
 
-    - **Typ** = **benutzerdefinierter Erweiterungstyp**
+    - **Typ**  =  **Benutzerdefinierter Erweiterungstyp**
 
     - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Dies ist keine der Optionen in der Dropdownliste. Sie müssen sie über die Tastatur eingeben.
 
-    - **Quell** = **Datei im Dateisystem**.
+    - **Quelle**  =  **Datei im Dateisystem**.
 
     - **Path** = your **tbxinfo** -Datei, z. b. **mytools. tbxinfo**
 
@@ -214,7 +214,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
 1. Erstellen Sie ein Visual Studio-Erweiterungsprojekt, das ein oder mehrere benutzerdefinierte Tools enthält.
 
-    Verwenden Sie in der **tbxinfo** -Datei die Ressourcen Datei Methode, um die `displayName`, Toolbox `tabName`und die QuickInfo des Tools zu definieren. Erstellen Sie eine Ressourcendatei, in der diese Zeichenfolgen definiert sind, kompilieren Sie diese in eine Assembly, und verweisen Sie dann aus der TBXINFO-Datei darauf.
+    Verwenden Sie in der **tbxinfo** -Datei die Ressourcen Datei Methode, um die Tools `displayName` , die Toolbox und die QuickInfo zu definieren `tabName` . Erstellen Sie eine Ressourcendatei, in der diese Zeichenfolgen definiert sind, kompilieren Sie diese in eine Assembly, und verweisen Sie dann aus der TBXINFO-Datei darauf.
 
 2. Erstellen Sie zusätzliche Assemblys, die Ressourcendateien mit Zeichenfolgen in anderen Sprachen enthalten.
 
@@ -233,5 +233,5 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 
  Außerdem werden die benutzerdefinierten Tools ausgeblendet, wenn Sie den Befehl **Toolbox zurücksetzen** ausführen. Sie werden jedoch wieder angezeigt, wenn Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] neu starten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md) [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md) [Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definieren von Validierungs Einschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)

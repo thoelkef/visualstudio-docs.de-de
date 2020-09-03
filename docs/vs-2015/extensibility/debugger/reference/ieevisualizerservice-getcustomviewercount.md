@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerCount | Microsoft-Dokumentation
+title: 'Ieevisualizerservice:: getcustomviewercount | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a167fc504bb1a6486cf69ed7eb155aac73f9d3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197036"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Methode ruft die Anzahl der verfügbaren Typ-Schnellansichten von diesem Dienst.  
+Diese Methode ruft die Anzahl der typvisualisierungen ab, die von diesem Dienst zur Verfügung stehen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>Parameter  
  `pcelt`  
- [out] Gibt die Anzahl der Typ-Schnellansichten verfügbar.  
+ vorgenommen Gibt die Anzahl der verfügbaren typvisualisierungen zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) übergibt die Anforderung an diese Methode in der Unterstützung für Typ-Schnellansichten.  
+## <a name="remarks"></a>Bemerkungen  
+ [Getcustomviewercount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) übergibt die Anforderung an diese Methode in der Unterstützung für typvisualisierungen.  
   
-## <a name="see-also"></a>Siehe auch  
- [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Ieevisualizerservice](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)

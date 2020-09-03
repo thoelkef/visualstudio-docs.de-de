@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7537c3007f54480874047f52f186996cf663508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656407"
 ---
 # <a name="using-the-task-list"></a>Verwenden der Aufgabenliste
@@ -28,11 +28,11 @@ ms.locfileid: "72656407"
 
 Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` und `HACK`verwenden, nachzuverfolgen und um Verknüpfungen zu verwalten, mit denen Sie direkt zu einem vordefinierten Speicherort im Code gelangen. Klicken Sie auf das Element in der Liste, um an die entsprechende Position im Quellcode zu gelangen.
 
- In diesem Thema:
+ Inhalte dieses Themas:
 
-- [Das Fenster "Aufgabenliste"](../ide/using-the-task-list.md#taskListWindow)
+- [Das Aufgabenliste Fenster](../ide/using-the-task-list.md#taskListWindow)
 
-- [Benutzeraufgaben](../ide/using-the-task-list.md#userTasks)
+- [Benutzer Aufgaben](../ide/using-the-task-list.md#userTasks)
 
 - [Token und Kommentare](../ide/using-the-task-list.md#tokensComments)
 
@@ -40,16 +40,16 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
 
 - [C++-TODO-Kommentare](../ide/using-the-task-list.md#cppComments)
 
-- [Verknüpfungen](../ide/using-the-task-list.md#shortcuts)
+- [ELN](../ide/using-the-task-list.md#shortcuts)
 
-## <a name="taskListWindow"></a> Das Fenster "Aufgabenliste"
+## <a name="the-task-list-window"></a><a name="taskListWindow"></a> Das Fenster "Aufgabenliste"
  Wird die **Aufgabenliste** geöffnet, wird sie unten im Anwendungsfenster angezeigt.
 
 #### <a name="to-open-the-task-list"></a>So öffnen Sie die Aufgabenliste
 
-- Klicken Sie im Menü **Ansicht** auf die Option **Aufgabenliste** (Tastatur: STRG+\\,T).
+- Klicken Sie im Menü **Ansicht** auf **Aufgabenliste** (Tastatur: STRG + \\ , T).
 
-     ![Aufgabenliste (Fenster)](../ide/media/vs2015-task-list.png "|::ref1::|")
+     ![Aufgabenliste Fenster](../ide/media/vs2015-task-list.png "vs2015_task_list")
 
 #### <a name="to-change-the-sort-order-of-the-list"></a>So ändern Sie die Sortierreihenfolge der Liste
 
@@ -65,12 +65,12 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
 
 - Ziehen Sie einen Spaltenheader an die gewünschte Position.
 
-## <a name="userTasks"></a> Benutzeraufgaben
+## <a name="user-tasks"></a><a name="userTasks"></a> Benutzer Aufgaben
  Das Feature „Benutzeraufgabe“ wurde aus Visual Studio 2015 entfernt. Wenn Sie eine Projektmappe aus Visual Studio 2013 oder früher, die Benutzeraufgabendaten enthält, in Visual Studio 2015 öffnen, bleiben die Benutzeraufgabendaten in Ihrer SUO-Datei davon unberührt, aber die Benutzeraufgaben werden nicht in der Aufgabenliste angezeigt.
 
  Um weiterhin auf Ihre Benutzeraufgabendaten zugreifen und diese aktualisieren zu können, sollten Sie das Projekt in Visual Studio 2013 öffnen und den Inhalt aller Benutzeraufgaben in Ihr bevorzugtes Projektmanagementtool (z. B. Team Foundation Server) kopieren.
 
-## <a name="tokensComments"></a> Token und Kommentare
+## <a name="tokens-and-comments"></a><a name="tokensComments"></a> Token und Kommentare
  Ein Kommentar im Code, dem ein Kommentarzeichen und ein vordefiniertes Token vorangestellt ist, wird auch im Fenster **Aufgabenliste** angezeigt. Der folgende C#-Kommentar setzt sich beispielsweise aus drei verschiedenen Teilen zusammen:
 
 - Kommentarzeichen (`//`)
@@ -85,7 +85,7 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
 
  Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO` -Aufgabe in der Liste angezeigt.
 
-### <a name="customTokens"></a> Benutzerdefinierte Token
+### <a name="custom-tokens"></a><a name="customTokens"></a> Benutzerdefinierte Token
  Standardmäßig enthält Visual Studio die folgenden Token: HACK, TODO, UNDONE, NOTE. Hierbei wird die Groß-/Kleinschreibung nicht berücksichtigt.
 
  Sie können außerdem eigene benutzerdefinierte Token erstellen.
@@ -98,14 +98,14 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
 
      [Task List, Environment, Options Dialog Box](../ide/reference/task-list-environment-options-dialog-box.md) wird angezeigt.
 
-     ![Visual Studio – Aufgabenliste](../ide/media/vs2015-task-list-options.png "|::ref2::|")
+     ![Visual Studio – Aufgabenliste](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")
 
-3. Geben Sie in der Kategorie **Token** im Textfeld **Name** den Tokennamen ein, z. B. „BUG“.
+3. Geben Sie in der Kategorie **Token** im Textfeld **Name** den Tokennamen ein, z. b. "Bug".
 
 4. Wählen Sie in der Dropdownliste **Priorität** eine Standardpriorität für das neue Token aus. Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
-### <a name="cppComments"></a> C++-TODO-Kommentare
- Standardmäßig werden C++-TODO-Kommentare im Fenster **Aufgabenliste** angezeigt. Sie können dieses Verhalten ändern.
+### <a name="c-todo-comments"></a><a name="cppComments"></a> C++-TODO-Kommentare
+ Standardmäßig werden C++-TODO-Kommentare im Fenster **Aufgabenliste** angezeigt. Diese Verhalten kann geändert werden.
 
 ##### <a name="to-turn-off-c-todo-comments"></a>So deaktivieren Sie die C++-TODO-Kommentare
 
@@ -115,10 +115,10 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
 
 3. Wählen Sie unter **C/C++** die Option **Ansicht**aus, und legen Sie dann **Kommentaraufgaben aufzählen** auf **False**fest.
 
-## <a name="shortcuts"></a> Verknüpfungen
+## <a name="shortcuts"></a><a name="shortcuts"></a> ELN
  Eine *Verknüpfung* ist ein Lesezeichen im Code, das in der **Aufgabenliste**nachverfolgt wird. Es weist ein anderes Symbol als ein reguläres Lesezeichen auf. Doppelklicken Sie auf die Verknüpfung in der **Aufgabenliste** , um an die entsprechende Position im Code zu gelangen.
 
- ![Visual Studio – Aufgabenliste: Symbol „Verknüpfung“](../ide/media/vs2015-task-list-bookmark.png "|::ref3::|")
+ ![Visual Studio – Aufgabenliste – Symbol „Verknüpfung“](../ide/media/vs2015-task-list-bookmark.png "vs2015_task_list_bookmark")
 
 #### <a name="to-create-a-shortcut"></a>So erstellen Sie eine Verknüpfung
 
@@ -126,5 +126,5 @@ Verwenden Sie die **Aufgabenliste** , um Codekommentare, die Token wie `TODO` un
 
      Um durch die Verknüpfungen im Code zu navigieren, wählen Sie eine Verknüpfung in der Liste und dann im Kontextmenü **Nächste Aufgabe** oder **Vorherige Aufgabe** aus.
 
-## <a name="see-also"></a>Siehe auch
- [Aufgabenliste, Umgebung, Dialogfeld „Optionen“](../ide/reference/task-list-environment-options-dialog-box.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Aufgabenliste, Umgebung, Dialogfeld "Optionen"](../ide/reference/task-list-environment-options-dialog-box.md)

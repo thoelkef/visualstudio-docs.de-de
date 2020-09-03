@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533731"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tastenkombinationen (Help Viewer)
 
 Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Microsoft Help Viewer** navigieren:
 
-|Bereich|Tastaturanschläge|Aktion|
+|Bereich|Tastatureingabe|Aktion|
 |----------|---------------|------------|
-|Allgemeine Anwendung|**LeerZchn**|Überall außer in den Bearbeitungsfeldern anstelle von **EINGABE** verwenden|
+|Allgemeine Anwendung|**BRaum**|Überall außer in den Bearbeitungsfeldern anstelle von **EINGABE** verwenden|
 |Allgemeine Anwendung|**F1**|Öffnet die **Hilfe** zum aktuellen UI-Element|
 |Allgemeine Anwendung|**F11**|Wechselt zwischen der Vollbild- und der normalen Ansicht|
-|Symbolleiste|**Rückschritt**<br /><br /> ODER<br /><br /> **Alt** + **Pfeil nach links**|Vorherige Seite anzeigen|
+|Symbolleiste|**RÜCKTASTE**<br /><br /> ODER<br /><br /> **Alt** + **Pfeil nach links**|Vorherige Seite anzeigen|
 |Symbolleiste|**Alt** + **Pfeil nach rechts**|Nächste Seite anzeigen|
 |Symbolleiste|**Alt** + **Startseite**|Startseite von **Help Reviewer** anzeigen|
 |Symbolleiste|**STRG** + **S**|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte **„Inhalt“**)|
@@ -43,12 +43,12 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Navigation|**Alt** + **S**<br /><br /> ODER<br /><br /> **STRG**+E<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **S**|Öffnet die Registerkarte **Suche**.|
 |Navigation|**Alt** + **M**<br /><br /> ODER<br /><br /> **STRG**+**UMSCHALT**+**M**|Öffnet die Registerkarte **Inhalt verwalten**|
 |Thema|**MENÜTASTE**<br /><br /> oder<br /><br /> **UMSCHALT** + **F10**|Öffnet das Kontextmenü für das aktuelle UI-Element|
-|Thema|**NACH-OBEN**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
-|Thema|**NACH-UNTEN**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
+|Thema|**NACH-OBEN-TASTE**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
+|Thema|**NACH-UNTEN-TASTE**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
 |Thema|**Bild-auf**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
 |Thema|**Bild-ab**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
-|Thema|**Start**|Springt zum Anfang des Dokuments|
-|Thema|**Ende**|Springt zum Ende des Dokuments|
+|Thema|**Home**|Springt zum Anfang des Dokuments|
+|Thema|**ENDE**|Springt zum Ende des Dokuments|
 |Thema|**STRG** + **F**|Finden von Suchtext auf dieser Seite|
 |Thema|**F5**|Aktualisiert die aktuelle Seite|
 |Thema|**STRG** + **P**|Druckt die aktuelle Seite|
@@ -56,7 +56,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Thema|**F4**|Zeigt das Dialogfeld **Eigenschaften** für die aktuelle Seite an|
 |Thema|**STRG** + **T**|Öffnet eine andere Registerkarte „Inhalt“ im Vordergrund|
 |Thema|**STRG** + **Klicken Sie auf**|Öffnet einen Link in einer neuen Registerkarte im Vordergrund|
-|Thema|**STRG** + **Registerkarte**|Wechselt von links nach rechts zwischen Registerkarten|
+|Thema|**STRG**+**TAB**|Wechselt von links nach rechts zwischen Registerkarten|
 |Thema|**STRG** + **UMSCHALT** + **Registerkarte**|Wechselt von rechts nach links zwischen Registerkarten|
 |Thema|**STRG** + **W**|Schließt die aktuelle Registerkarte|
 |Thema|**STRG** + ** _Zahl_**|Wechselt zu einer bestimmten Registerkarte, wobei **_Zahl_** zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|
@@ -74,13 +74,13 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Inhalt & Index & Suche & Favoriten|**STRG** + **P**|Druckt das angegebene Thema|
 |Inhalt & Index & Suche & Favoriten|**STRG** + **F2**|Zeigt eine Druckvorschau des angegebenen Themas an|
 |Inhalt & Index & Suche & Favoriten|**STRG** + **Klicken Sie auf**|Öffnet das Thema in einer neuen Registerkarte|
-|Suchen,|**ESC**|Löscht den Inhalt des Suchtextfelds|
+|Suchen|**ESC**|Löscht den Inhalt des Suchtextfelds|
 |Viewer-Optionen|**Alt** + **T**|Ändert den Fokus auf die Liste **Textgröße**|
 |Viewer-Optionen|**Alt** + **S**|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|
 |Viewer-Optionen|**Alt** + **H**|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|
 |Viewer-Optionen|**Alt** + **E**|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen**, wenn es aktiviert ist.|
 |Viewer-Optionen|**Alt** + **O**|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltsupdates suchen**.|
-|Suchen|**Eingehen**|Ändert den Fokus auf das nächste Element|
+|Suchen|**EINGABETASTE**|Ändert den Fokus auf das nächste Element|
 |Suchen|**UMSCHALT** + **Geben Sie**|Ändert den Fokus auf das vorherige Element|
 |Suchen|**ESC**|Verbirgt das Textfeld **Suchen**.|
 |Statusleiste|**Alt** + **E**|Öffnet das Dialogfeld **Fehler**, wenn die Statusleiste anzeigt, dass ein Fehler aufgetreten ist.|
@@ -88,16 +88,16 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 
  **Fensterverwaltung**
 
-|**Tastaturanschläge**|**Aktion**|
+|**Tastatureingabe**|**Aktion**|
 |-|-|
 |**STRG** + **L**|Setzt das Layout des **Help Viewers** auf das Standardlayout zurück und schließt alle Themenregisterkarten.|
-|**STRG** + **Registerkarte**|Die erste Tastatureingabe legt den Fokus auf das Menü **Registerkartenauswahl**. Die nächste Tastatureingabe legt den Fokus auf das obere Menüelement. Alle weiteren Tastatureingaben legen den Fokus auf das darauffolgende Menüelement (von oben nach unten). Wenn der Fokus auf einem Menüelement liegt, wird es durch die **EINGABETASTE** zur aktiven Registerkarte.|
+|**STRG**+**TAB**|Die erste Tastatureingabe legt den Fokus auf das Menü **Registerkartenauswahl**. Die nächste Tastatureingabe legt den Fokus auf das obere Menüelement. Alle weiteren Tastatureingaben legen den Fokus auf das darauffolgende Menüelement (von oben nach unten). Wenn der Fokus auf einem Menüelement liegt, wird es durch die **EINGABETASTE** zur aktiven Registerkarte.|
 |**STRG** + **UMSCHALT** + **Registerkarte**|Die erste Tastatureingabe legt den Fokus auf das Menü **Registerkartenauswahl**. Die nächste Tastatureingabe legt den Fokus auf das unterste Menüelement. Alle weiteren Tastatureingaben legen den Fokus auf das darauffolgende Menüelement (von unten nach oben). Wenn der Fokus auf einem Menüelement liegt, wird es durch die **EINGABETASTE** zur aktiven Registerkarte.|
 |**Alt** + **I**, **alt** + **S**, **alt** + **C**, **alt** + **F**, **alt** + **M**|Diese Tastaturkombinationen funktionieren nicht, wenn die Registerkarten zur Navigation und zur Inhaltsverwaltung nicht gedockt sind|
 
  **Inhalt verwalten**
 
-|**Tastaturanschläge**|**Aktion**|
+|**Tastatureingabe**|**Aktion**|
 |-|-|
 |**Alt** + **D**|Ändert die Inhaltsinstallationsquelle in einen Datenträger|
 |**Alt** + **O**|Ändert die Inhaltsinstallationsquelle in Online|
@@ -106,13 +106,13 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |**Alt** + **V**|Öffnet das Dialogfeld **Inhalt verschieben**|
 |**STRG** + **Alt** + **F**|Ändert den Fokus auf das Textfeld **Filterdokumentation**|
 |**Registerkarte**|Ändert den Fokus auf die Dokumentationsliste|
-|**NACH-OBEN**- und **NACH-UNTEN-TASTE**|Scrollt durch die Dokumentationsliste|
-|**LeerZchn**|Fügt das Element der Liste **Ausstehende Änderungen** hinzu|
+|Pfeil nach **oben** und **nach unten**|Scrollt durch die Dokumentationsliste|
+|**BRaum**|Fügt das Element der Liste **Ausstehende Änderungen** hinzu|
 |**Registerkarte**|Ändert den Fokus auf die Liste **Ausstehende Änderungen**|
-|**NACH-OBEN**- und **NACH-UNTEN-TASTE**|Scrollt durch die Liste **Ausstehende Änderungen**|
-|**LeerZchn**|Entfernt ein Element aus der Liste **Ausstehende Änderungen**|
+|Pfeil nach **oben** und **nach unten**|Scrollt durch die Liste **Ausstehende Änderungen**|
+|**BRaum**|Entfernt ein Element aus der Liste **Ausstehende Änderungen**|
 |**Alt** + **T**|Wendet alle ausstehenden Änderungen an|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Barrierefreiheitsfunktionen von Help Viewer](accessibility-features.md)

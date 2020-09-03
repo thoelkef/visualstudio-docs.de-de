@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297820"
 ---
-# <a name="proxy-authorization-required"></a>Proxyautorisierung erforderlich.
+# <a name="proxy-authorization-required"></a>Proxyautorisierung erforderlich
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Der Fehler " **Proxy Autorisierung erforderlich** " tritt im Allgemeinen auf, wenn Benutzer über einen Proxy Server mit Visual Studio Online-Ressourcen verbunden sind und der Proxy Server die Aufrufe blockiert.
@@ -31,13 +31,13 @@ Um diesen Fehler zu beheben, führen Sie einen oder mehrere der folgenden Schrit
 
   - *.microsoftonline.com
 
-  - *. visualStudio.com
+  - *.visualstudio.com
 
   - *.microsoft.com
 
   - *.live.com
 
-- Sie können die https://go.microsoft.com Adresse aus der Zulassungsliste entfernen, damit das Dialogfeld für die Proxy Authentifizierung sowohl für die https://go.microsoft.com Adresse als auch die Server Endpunkte angezeigt wird, wenn Visual Studio neu gestartet wird.
+- Sie können die https://go.microsoft.com Adresse aus der Zulassungsliste entfernen, damit das Dialogfeld Proxy Authentifizierung sowohl für die https://go.microsoft.com Adresse als auch die Server Endpunkte angezeigt wird, wenn Visual Studio neu gestartet wird.
 
 - Wenn Sie Ihre Standard Anmelde Informationen mit Ihrem Proxy verwenden möchten, gehen Sie folgendermaßen vor:
 
@@ -51,6 +51,6 @@ Um diesen Fehler zu beheben, führen Sie einen oder mehrere der folgenden Schrit
       </defaultProxy>
       ```
 
-      Fügen Sie die korrekte Proxy Adresse für Ihr Netzwerk in `proxyaddress="<http://<yourproxy:port#>`ein.
+      Fügen Sie die korrekte Proxy Adresse für Ihr Netzwerk in ein `proxyaddress="<http://<yourproxy:port#>` .
 
 - Befolgen Sie die Anweisungen in [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) , um Code hinzuzufügen, mit dem Sie den Proxy verwenden können.

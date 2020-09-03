@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851422"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
@@ -39,7 +39,7 @@ Wenn Sie im **Eigenschaften** Fenster, in den Dialogfeldern, in Designer, z. b. 
 
 1. Geben Sie im Feld **Typname** den Namen des Typs ein, den Sie verwenden möchten.
 
-2. Führen Sie eine der folgenden Aktionen aus:
+2. Führen Sie eines der folgenden Verfahren aus:
 
     - Sobald der Name des Typs, den Sie verwenden möchten, in der Struktur im Feld **Typname** angezeigt wird, doppelklicken Sie auf den Typ, um ihn auszuwählen.
 
@@ -61,14 +61,14 @@ Wenn Sie im **Eigenschaften** Fenster, in den Dialogfeldern, in Designer, z. b. 
 ## <a name="filtering-search-results-in-the-type-browser"></a>Filter von Suchergebnissen im Typbrowser
  Die Liste der Typen im Feld **Typname** wird kürzer, da Sie mehr Zeichen eingeben, um eine Entsprechung zu finden. Nur Typen, deren vollqualifizierte Namen mit der eingegebenen Zeichenfolge beginnen, oder Typen, deren Kurzname mit der eingegebenen Zeichenfolge beginnen, erscheinen in der gefilterten Liste.
 
- Beispiel:
+ Zum Beispiel:
 
-1. Der Eingabe **Vorgang** entspricht <xref:System.OperationCanceledException>, aber nicht <xref:System.InvalidOperationException>. Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
+1. Der Typisierungs **Vorgang** stimmt überein, <xref:System.OperationCanceledException> aber nicht <xref:System.InvalidOperationException> . Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
 
-2. Das Eingeben von **generischen** Übereinstimmungen <xref:System.GenericUriParser>, aber nicht von Typen im <xref:System.Collections.Generic>-Namespace. Um nach Typen im <xref:System.Collections.Generic>-Namespace zu suchen, geben Sie den vollqualifizierten Namen des Namespaces ein.
+2. Eingabe von **generischen** Übereinstimmungen, <xref:System.GenericUriParser> aber nicht von Typen im- <xref:System.Collections.Generic> Namespace. Um nach Typen im <xref:System.Collections.Generic>-Namespace zu suchen, geben Sie den vollqualifizierten Namen des Namespaces ein.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Auswählen eines Dienstvertrags mithilfe des Typbrowserdialogfelds
  Beim Auswählen eines Dienstvertragstyps zeigt der Typbrowser nur Typen an, die über das <xref:System.ServiceModel.ServiceContractAttribute>-Attribut verfügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)

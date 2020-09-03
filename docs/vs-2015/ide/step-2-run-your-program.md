@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851568"
 ---
 # <a name="step-2-run-your-program"></a>Schritt 2: Ausführen des Programms
@@ -21,7 +21,7 @@ ms.locfileid: "75851568"
 
 Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausführbares Programm erstellt. Noch macht das Programm nicht viel. Es zeigt nur ein leeres Fenster mit dem Text **Form1** in der Titelleiste an. Aber es kann ausgeführt werden, wie Sie gleich feststellen werden.
 
- ![Link zu Video](../data-tools/media/playvideo.gif "PlayVideo") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie im Video 1 zum [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms in c#](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-run-your-program"></a>So führen Sie das Programm aus
 
@@ -41,7 +41,7 @@ Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausfü
 
 3. Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und schauen Sie sich die neue Symbolleiste an. Zusätzliche Schaltflächen werden auf der Symbolleiste angezeigt, wenn ein Programm ausgeführt wird. Mit diesen Schaltflächen können Sie Aufgaben ausführen, wie z. B. ein Programm beenden und starten. Außerdem helfen sie Ihnen, alle evtl. vorhandenen Fehler zu ermitteln. Für dieses Beispiel verwenden wir sie nur, um das Programm zu starten und zu beenden.
 
-     ![](../ide/media/express-debugtoolbar.png "Express_DebugToolbar") Debugger Debugger
+     ![Debugging toolbar](../ide/media/express-debugtoolbar.png "Express_DebugToolbar") Debugger Debugger
 
 4. Verwenden Sie eine der folgenden Methoden, um das Programm zu beenden.
 
@@ -58,4 +58,4 @@ Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausfü
 
 - Um mit dem nächsten Schritt des Tutorials weiterzumachen, klicken Sie auf [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).
 
-- Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md).
+- Um zum vorherigen Tutorialschritt zurückzukehren, finden Sie weitere Informationen unter [Step 1: Create a Windows Forms Application Project](../ide/step-1-create-a-windows-forms-application-project.md).

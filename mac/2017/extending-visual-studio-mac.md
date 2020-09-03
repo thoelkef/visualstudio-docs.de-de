@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851954"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Erweitern von Visual Studio für Mac
@@ -155,7 +155,7 @@ Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind,
 * Zielframeworks
 * Ziellaufzeit
 * VCS-Back-Ends
-* Refactoring
+* Umgestaltung
 * Ausführungshandler
 * Syntaxhervorhebung
 
@@ -164,6 +164,6 @@ Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind,
 > [!NOTE]
 > Wir arbeiten derzeit an der Verbesserung der Erweiterbarkeitsszenarios für Visual Studio für Mac. Wenn Sie Erweiterungen erstellen und zusätzliche Hilfe oder Informationen benötigen bzw. Feedback geben möchten, füllen Sie bitte das [Visual Studio for Mac Extension Authoring](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)-Formular (Erstellung von Erweiterungen für Visual Studio für Mac) aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Entwickeln von Visual Studio-Erweiterungen (unter Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

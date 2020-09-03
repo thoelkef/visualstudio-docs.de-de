@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie sich mit einem GitHub-Konto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
 ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233227"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit einem GitHub-Konto 

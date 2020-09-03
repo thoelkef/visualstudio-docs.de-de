@@ -1,5 +1,5 @@
 ---
-title: IDebugPortex2::CanTerminateProcess | Microsoft Docs
+title: 'IDebugPortEx2:: canterminateprocess | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bbc5c5128c1235c7ee46300a1cd45f92b53d243d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725157"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
@@ -41,10 +41,10 @@ HRESULT CanTerminateProcess( 
 
 ## <a name="parameters"></a>Parameter
 `pPortProcess`\
-[in] Ein [IDebugProcess2-Objekt,](../../../extensibility/debugger/reference/idebugprocess2.md) das den zu beendenden Prozess darstellt.
+in Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den zu beendenden Prozess darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt `S_OK` zurück, wenn der Prozess beendet werden kann; Andernfalls kehrt `S_FALSE`zurück .
+ Gibt zurück, `S_OK` Wenn der Prozess beendet werden kann; andernfalls wird zurückgegeben `S_FALSE` .
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

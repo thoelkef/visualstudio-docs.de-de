@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loadandvalidatedatafrompdb | Microsoft-Dokumentation'
+title: 'IDiaDataSource:: loadAndValidateDataFromPdb | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f19a910af45ed70ae74c72441890ecae6c81d2a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198630"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wird geöffnet und überprüft, ob die Programmdatenbankdatei (.pdb) der bereitgestellten Signaturinformationen entspricht, und bereitet die PDB-Datei als Datenquelle Debuggen.  
+Öffnet und überprüft, ob die Programm Datenbankdatei (PDB-Datei) mit den bereitgestellten Signatur Informationen übereinstimmt, und bereitet die PDB-Datei als debugdatenquelle vor.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,37 +38,37 @@ HRESULT loadAndValidateDataFromPdb ( 
   
 #### <a name="parameters"></a>Parameter  
  `pdbPath`  
- [in] Der Pfad zur PDB-Datei.  
+ in Der Pfad zur PDB-Datei.  
   
  `pcsig70`  
- [in] Die GUID-Signatur der Signatur der PDB-Datei überprüft werden soll. Nur PDB-Dateien im [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] und später GUID-Signaturen aufweisen.  
+ in Die GUID-Signatur, die anhand der PDB-Datei Signatur überprüft werden soll. Nur PDB-Dateien in [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] und höher verfügen über GUID-Signaturen.  
   
  `sig`  
- [in] Die 32-Bit-Signatur der Signatur der PDB-Datei überprüft werden soll.  
+ in Die 32-Bit-Signatur, die anhand der PDB-Datei Signatur überprüft werden soll.  
   
  `age`  
- [in] Age-Wert, um zu überprüfen. Das Alter entspricht nicht notwendigerweise alle bekannten Time-Werten, er wird verwendet, um zu bestimmen, ob eine PDB-Datei mit einer entsprechenden .exe-Datei synchron sind.  
+ in Der zu überprüfende Alters Wert. Das Alter entspricht nicht notwendigerweise einem bekannten Uhrzeitwert. es wird verwendet, um zu bestimmen, ob eine PDB-Datei mit einer entsprechenden exe-Datei nicht synchronisiert ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt die möglichen Rückgabewerte für diese Methode.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. In der folgenden Tabelle sind die möglichen Rückgabewerte für diese Methode aufgeführt.  
   
-|Wert|Beschreibung|  
+|Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|E_PDB_NOT_FOUND|Fehler beim Öffnen der Datei, oder die Datei weist ein ungültiges Format.|  
-|E_PDB_FORMAT|Es wurde versucht, Zugriff auf eine Datei mit der ein veraltetes Format.|  
-|E_PDB_INVALID_SIG|Signatur stimmt nicht überein.|  
-|E_PDB_INVALID_AGE|Alter stimmt nicht überein.|  
+|E_PDB_NOT_FOUND|Die Datei konnte nicht geöffnet werden, oder die Datei weist ein ungültiges Format auf.|  
+|E_PDB_FORMAT|Es wurde versucht, auf eine Datei mit einem veralteten Format zuzugreifen.|  
+|E_PDB_INVALID_SIG|Signatur stimmt nicht mit ab.|  
+|E_PDB_INVALID_AGE|Das Alter stimmt nicht mit.|  
 |E_INVALIDARG|Ungültiger Parameter.|  
 |E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|  
   
-## <a name="remarks"></a>Hinweise  
- Eine PDB-Datei enthält sowohl die Signatur als auch die Age-Werte. Diese Werte werden in .exe oder .dll-Datei repliziert, die die PDB-Datei entspricht. Vor der Vorbereitung der Datenquelle, überprüft diese Methode an, dass die Signatur und das Alter des benannten PDB-Datei mit die angegebenen Werten übereinstimmen.  
+## <a name="remarks"></a>Bemerkungen  
+ Eine PDB-Datei enthält sowohl Signatur-als auch Alters Werte. Diese Werte werden in der exe-oder DLL-Datei repliziert, die mit der PDB-Datei übereinstimmt. Vor dem Vorbereiten der Datenquelle überprüft diese Methode, ob die Signatur und das Alter der benannten PDB-Datei mit den angegebenen Werten identisch sind.  
   
- Verwenden Sie zum Laden einer PDB-Datei ohne Überprüfung der [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) Methode.  
+ Wenn Sie eine PDB-Datei ohne Validierung laden möchten, verwenden Sie die [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) -Methode.  
   
- Verwenden Sie für den Zugriff auf den Ladevorgang der Daten (durch einen Rückrufmechanismus bereit), die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.  
+ Verwenden Sie die Methode [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) , um Zugriff auf den Daten Ladevorgang zu erhalten (über einen Rückrufmechanismus).  
   
- Um eine PDB-Datei direkt aus dem Arbeitsspeicher zu laden, verwenden die [idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) Methode.  
+ Verwenden Sie die [IDiaDataSource:: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) -Methode, um eine PDB-Datei direkt aus dem Arbeitsspeicher zu laden.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -90,8 +90,8 @@ if (FAILED(hr))
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

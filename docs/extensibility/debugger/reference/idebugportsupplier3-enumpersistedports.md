@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Microsoft Docs
+title: 'IDebugPortSupplier3:: enumpersistedports | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724455"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Diese Methode ruft ein Objekt ab, das die Aufzählung der Liste der persistenten Ports ermöglicht.
+Diese Methode ruft ein Objekt ab, das die Enumeration der Liste der persistenten Ports zulässt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>Parameter
 `PortNames`\
-[in] Eine [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) Struktur, die eine Liste von Portnamen enthält, die zwischen den persistenten Ports gefunden und zurückgegeben werden sollen. Nur die persistenten Ports mit diesen Namen werden zurückgegeben.
+in Eine [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) Struktur, die eine Liste von Portnamen enthält, die gefunden und zwischen den beibehaltenen Ports zurückgegeben werden sollen. Nur die persistenten Ports mit diesen Namen werden zurückgegeben.
 
 `ppEnum`\
-[out] Ein Objekt, das die [IEnumDebugPorts2-Schnittstelle](../../../extensibility/debugger/reference/ienumdebugports2.md) implementiert.
+vorgenommen Ein Objekt, das die [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) -Schnittstelle implementiert.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Persistente Ports werden geladen, wenn ein Portlieferant instanziiert wird, und gespeichert, wenn der Portlieferant zerstört wird.
+ Persistente Ports werden geladen, wenn ein Port Lieferant instanziiert wird, und werden gespeichert, wenn der Port Lieferant zerstört wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

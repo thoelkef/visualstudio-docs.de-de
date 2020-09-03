@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851078"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Problembehandlung bei Help Viewer
@@ -42,12 +42,12 @@ In diesem Thema werden Probleme behandelt, die bei der Verwendung des Help Viewe
 
 5. Wählen Sie den Windows Search-Rollendienst aus.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
  Mithilfe der folgenden Ressourcen können Sie weitere Informationen abrufen und Feedback zum Help Viewer bereitstellen:
 
 - Sie können auf der Microsoft-Website unter [Microsoft Connect](https://connect.microsoft.com/) Feedback einreichen, oder Sie senden eine E-Mail an [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
 - Weitere Informationen finden Sie in der [Entwicklerdokumentation und Hilfe im MSDN](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) und im Blog [The Help Guy](https://blogs.msdn.com/b/thehelpguy/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Help Viewer 2.1-Administratorhandbuch](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

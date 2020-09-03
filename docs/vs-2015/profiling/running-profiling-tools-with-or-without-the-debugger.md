@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534003"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
@@ -99,7 +99,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
 ## <a name="the-profiling-report"></a>Der Profilerstellungsbericht  
  ![Bericht zu Diagnosetools](../profiling/media/diag-report.png "DIAG_Report")  
   
-|Bild|Beschreibung|  
+|Image|Beschreibung|  
 |-|-|  
 |![Schritt 1](../profiling/media/procguid-1.png "ProcGuid_1")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|  
 |![Schritt 2](../profiling/media/procguid-2.png "ProcGuid_2")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  

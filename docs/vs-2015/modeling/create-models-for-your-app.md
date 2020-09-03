@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852006"
 ---
 # <a name="create-models-for-your-app"></a>Erstellen von Modellen für Ihre App
@@ -73,19 +73,19 @@ Mithilfe von Modellierungsdiagrammen können Sie Ideen zum Code und den Benutzer
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|**Thema**|**Task**|
+|**Thema**|**Aufgabe**|
 |---------------|--------------|
 |[Erstellen von UML-Modellierungsprojekten und -Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Erstellen Sie Modelle** , und fügen Sie Diagramme hinzu.|
 |[Bearbeiten von UML-Modellen und -Diagrammen](../modeling/edit-uml-models-and-diagrams.md)|**Zeichnen Sie Diagramme** , um das Modell zu bearbeiten.|
 |[Definieren von Paketen und Namespaces](../modeling/define-packages-and-namespaces.md)|**Erstellen Sie Pakete** , um ein Modell in Einheiten aufzuteilen, an denen unterschiedliche Teammitglieder arbeiten können.|
-|[Generieren von Code aus UML-Klassendiagrammen](../modeling/generate-code-from-uml-class-diagrams.md)|**Generieren C# Sie Code aus Klassendiagrammen** , um die Implementierung zu starten.|
+|[Generieren von Code aus UML-Klassendiagrammen](../modeling/generate-code-from-uml-class-diagrams.md)|**Generieren Sie c#-Code aus Klassendiagrammen** , um die Implementierung zu starten.|
 |[Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Anpassen von Modellelementen** mithilfe von Stereotypen, um die standardmäßigen UML-Modellelemente für bestimmte Zwecke zu erweitern.|
 |[Verknüpfen von Modellelementen und Arbeitselementen](../modeling/link-model-elements-and-work-items.md)|**Erstellen Sie Verknüpfungen zwischen Modellelementen und Arbeitsaufgaben** , mit denen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme oder andere Arten von Arbeitsaufgaben nachverfolgen können, die bestimmten Teilen des Modells zugeordnet sind.|
-|[Exportieren von Diagrammen als Bild](../modeling/export-diagrams-as-images.md)|**Speichern Sie das Modell und die Diagramme** , damit Sie Sie für andere Benutzer freigeben können, einschließlich derjenigen, die [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]nicht verwenden.|
+|[Exportieren von Diagrammen als Bild](../modeling/export-diagrams-as-images.md)|**Speichern Sie das Modell und die Diagramme** , damit Sie Sie für andere Benutzer freigeben können, einschließlich derjenigen, die nicht verwenden [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] .|
 
-## <a name="related-tasks"></a>Verwandte Aufgaben
+## <a name="related-tasks"></a>Related Tasks
 
-|**Thema**|**Task**|
+|**Thema**|**Aufgabe**|
 |---------------|--------------|
 |[Visualisieren von Code](../modeling/visualize-code.md)|Erstellen Sie Code Maps und Ebenendiagramme zum besseren Verständnis von unbekanntem Code.|
 |[Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)|Verwenden Sie Modelle, um die Anforderungen der Benutzer zu verdeutlichen und zu kommunizieren.|

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e5333f6133dd3fd56077c14d6e56cd6fdada4404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656424"
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>Gewusst wie: Angeben von Regelsätzen für verwalteten Code für mehrere Projekte in einer Projektmappe
@@ -28,7 +28,7 @@ Standardmäßig wird allen verwalteten Projekten einer Projekt Mappe der Code An
 
 ### <a name="to-specify-a-rule-set-for-multiple-projects-in-a-managed-code--solution"></a>So geben Sie einen Regelsatz für mehrere Projekte in einer Projektmappe mit verwaltetem Code an
 
-1. In [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Öffnen Sie die Lösung in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] oder [!INCLUDE[vsPro](../includes/vspro-md.md)].
+1. In [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], oder [!INCLUDE[vsPro](../includes/vspro-md.md)] Öffnen Sie die Projekt Mappe.
 
 2. Klicken Sie im Menü **analysieren** auf **Code Analyse für**Projekt Mappe konfigurieren.
 
