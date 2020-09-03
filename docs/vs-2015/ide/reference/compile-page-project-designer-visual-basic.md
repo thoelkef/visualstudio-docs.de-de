@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db830e04388b7465c941e2fdf069b49f98951a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660823"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Seite "Kompilieren", Projekt-Designer (Visual Basic)
@@ -62,7 +62,7 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
 
  Das Festlegen der **Option Explicit** auf `Off` ist eine bewährte Methode. Sie könnten den Namen einer Variable an einem oder mehreren Orten falsch buchstabieren, wodurch unerwartete Ergebnisse auftreten würden, wenn das Programm ausgeführt wird.
 
- **Option Strict** gibt an, ob die strikte Typsemantik erzwungen werden soll. Wenn die **Option Strict** **Ein** ist, führen die folgenden Bedingungen zu einem Kompilierzeitfehler:
+ **Option Strict** gibt an, ob die strikte Typsemantik erzwungen werden soll. Wenn die **Option Strict****Ein** ist, führen die folgenden Bedingungen zu einem Kompilierzeitfehler:
 
 - Implizite Eingrenzungskonvertierungen
 
@@ -80,7 +80,7 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
 
   Wenn eine Quellcodedatei eine [Option Strict-Anweisung](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) enthält, setzt der Wert `On` oder `Off` in der Anweisung die Einstellung **Option Strict** auf der **Seite „Kompilieren“** außer Kraft.
 
-  Wenn Sie ein Projekt erstellen, wird die **Option Strict**-Einstellung in der Seite **Kompilieren** auf den Wert der **Option Strict**-Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen** **Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Strict** in **VB Defaults** ist **Ein**.
+  Wenn Sie ein Projekt erstellen, wird die **Option Strict**-Einstellung in der Seite **Kompilieren** auf den Wert der **Option Strict**-Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Strict** in **VB Defaults** ist **Ein**.
 
   **Einzelne Option Strict-Warnungen** Der Abschnitt **Warnungskonfigurationen** auf der Seite **Kompilieren** verfügt über Einstellungen, die mit den drei Bedingungen übereinstimmen, die einen Kompilierzeitfehler auslösen, wenn `Option Strict` aktiviert ist. Die drei Einstellungen sind die folgenden:
 
@@ -92,7 +92,7 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
 
   Wenn Sie **Option Strict** auf **Ein** festlegen, werden alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt. Wenn Sie **Option Strict** auf **Aus** festlegen werden alle drei Einstellungen auf **Keine** festgelegt.
 
-  Sie können individuell jede Warnungskonfigurationseinstellung auf **Keine**, **Warnung** oder **Fehler** festlegen. Wenn alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt sind, erscheint `On` im `Option strict`-Feld. Wenn alle drei Einstellungen auf **Keine** festgelegt sind, erscheint `Off` im Feld. Für jede andere Kombination dieser Einstellungen erscheint **(benutzerdefiniert)** .
+  Sie können individuell jede Warnungskonfigurationseinstellung auf **Keine**, **Warnung** oder **Fehler** festlegen. Wenn alle drei Warnungs Konfigurationseinstellungen auf **Fehler**festgelegt sind, wird `On` im `Option strict` Feld angezeigt. Wenn alle drei auf **None**festgelegt sind, wird `Off` in diesem Feld angezeigt. Für jede andere Kombination dieser Einstellungen erscheint **(benutzerdefiniert)**.
 
   **Option Compare** gibt den Typ des Zeichenfolgenvergleichs an, der verwendet werden soll. Wählen Sie **Binär** aus, um den Compiler anzuweisen, binäre Zeichenfolgenvergleiche mit Unterscheidung zwischen Groß- und Kleinschreibung zu verwenden. Wählen Sie **Text** aus, um gebietsschemaspezifische Textzeichenfolgenvergleiche ohne Berücksichtigung der Groß- und Kleinschreibung zu verwenden.
 
@@ -100,7 +100,7 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
 
   Wenn eine Quellcodedatei eine [Option Compare-Anweisung](https://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e) enthält, setzt der Wert `Binary` oder `Text` in der Anweisung die Einstellung **Option Compare** auf der **Seite „Kompilieren“** außer Kraft.
 
-  Wenn Sie ein Projekt erstellen, wird die **Option Compare**-Einstellung in der Seite **Kompilieren** auf den Wert der **Option Compare**-Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen** **Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Compare** in **VB Defaults** ist **Binär**.
+  Wenn Sie ein Projekt erstellen, wird die **Option Compare**-Einstellung in der Seite **Kompilieren** auf den Wert der **Option Compare**-Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Compare** in **VB Defaults** ist **Binär**.
 
   **Option Infer** gibt an, ob die Verwendung von lokalem Typrückschluss in Variablendeklarationen zulässig ist. Wählen Sie **Ein** aus, um die Verwendung des lokalen Typrückschlusses zuzulassen. Wählen Sie **Aus** aus, um den lokalen Typrückschluss zu blockieren.
 
@@ -108,7 +108,7 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
 
   Wenn eine Quellcodedatei eine [Option Infer-Anweisung](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652) enthält, setzt der Wert `On` oder `Off` in der Anweisung die Einstellung **Option Infer** auf der **Seite „Kompilieren“** außer Kraft.
 
-  Wenn Sie ein neues Projekt erstellen, ist die Einstellung **Option Infer** auf der Registerkarte **Kompilieren** auf die Einstellung **Option Infer** im Textfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen** **Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Infer** in **VB Defaults** ist **Ein**.
+  Wenn Sie ein neues Projekt erstellen, ist die Einstellung **Option Infer** auf der Registerkarte **Kompilieren** auf die Einstellung **Option Infer** im Textfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Infer** in **VB Defaults** ist **Ein**.
 
   **Ziel-CPU:** Gibt den Prozessor an, der für die Ausgabedatei konzipiert ist. Geben Sie für jeden Intel-kompatiblen 32-Bit-Prozessor **x86**, für jeden Intel-kompatiblen 64-Bit-Prozessor **x64** und für ARM-Prozessoren **ARM** oder **Any CPU** ein, um anzugeben, dass jeder Prozessor zulässig ist. **Any CPU** (Beliebige CPU) ist der Standardwert für neue Projekte, da die Anwendung hiermit auf der größten Anzahl von Hardwaretypen ausgeführt werden kann.
 
@@ -130,7 +130,7 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
 
   Während der Kompilierung werden standardmäßig alle Compilerwarnungen der Aufgabenliste hinzugefügt. Wählen Sie **Alle Warnungen deaktivieren** aus, um den Compiler anzuweisen, keine Warnungen oder Fehler auszugeben. Wählen Sie **Alle Warnungen als Fehler behandeln**, wenn Sie möchten, dass der Compiler Warnungen als Fehler behandelt, die behoben werden müssen.
 
-  **Alle Warnungen deaktivieren:** Gibt an, ob der Compiler Benachrichtigungen ausgeben darf, sowie in der Tabelle **Bedingung und Benachrichtigung** angegeben. Dieses Kontrollkästchen ist standardmäßig deaktiviert. Aktivieren Sie dieses Kontrollkästchen, um den Compiler anzuweisen, keine Warnungen oder Fehler auszugeben.
+  **Alle Warnungen deaktivieren:** Gibt an, ob der Compiler Benachrichtigungen ausgeben darf, sowie in der Tabelle **Bedingung und Benachrichtigung** angegeben. Standardmäßig ist dieses Kontrollkästchen deaktiviert. Aktivieren Sie dieses Kontrollkästchen, um den Compiler anzuweisen, keine Warnungen oder Fehler auszugeben.
 
   Diese Einstellung entspricht der Compileroption [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).
 
@@ -152,5 +152,5 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
 
   **Erweiterte Compileroptionen:** Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Erweiterte Compilereinstellungen** zuzugreifen. Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte. Weitere Informationen finden Sie im [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Debug-und Release-Projekt Konfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [Verwalten von Kompilierungs Eigenschaften](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) Gewusst [wie: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [Visual Basic Befehlszeilen Compiler](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c) Gewusst [wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)

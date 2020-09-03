@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7762e67b1676f72030cae8d958bef19c501660c3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545820"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Gewusst wie: Ändern der Größe von Name Drange-Steuerelementen
@@ -36,7 +36,7 @@ ms.locfileid: "85545820"
 
 - [Ändern der Größe von Name Drange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)
 
-## <a name="resize-namedrange-controls-at-design-time"></a><a name="designtime"></a>Ändern der Größe von Name Drange-Steuerelementen zur Entwurfszeit
+## <a name="resize-namedrange-controls-at-design-time"></a><a name="designtime"></a> Ändern der Größe von Name Drange-Steuerelementen zur Entwurfszeit
  Sie können die Größe eines benannten Bereichs ändern, indem Sie die Größe im Dialogfeld **Namen definieren** neu definieren.
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>So ändern Sie die Größe eines benannten Bereichs unter Verwendung des Dialogfelds „Namen definieren“
@@ -55,7 +55,7 @@ ms.locfileid: "85545820"
 
 6. Klicken Sie auf **OK**.
 
-## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Ändern der Größe von Name Drange-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
+## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Ändern der Größe von Name Drange-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
  Sie können die Größe eines benannten Bereichs programmgesteuert ändern, indem Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> -Eigenschaft verwenden.
 
 > [!NOTE]
@@ -73,7 +73,7 @@ ms.locfileid: "85545820"
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-## <a name="resize-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Ändern der Größe von Name Drange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="resize-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Ändern der Größe von Name Drange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements in jedem beliebigen geöffneten Arbeitsblatt zur Laufzeit ändern. Weitere Informationen zum Hinzufügen eines Steuer Elements <xref:Microsoft.Office.Tools.Excel.NamedRange> zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins finden Sie unter Gewusst [wie: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert

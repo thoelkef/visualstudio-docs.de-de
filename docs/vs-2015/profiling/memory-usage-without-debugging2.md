@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532040"
 ---
 # <a name="memory-usage-without-debugging"></a>Speicherauslastung ohne Debuggen
@@ -34,7 +34,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
   In diesem Thema wird beschrieben, wie Sie das Speicherauslastungstool verwenden, um eine universelle Windows XAML-App zu analysieren. Wenn Sie die Speichernutzung in universellen Windows-Apps, die JavaScript und HTML verwenden, analysieren möchten, gehen Sie unter [Analysieren der Speicherauslastung (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>Starten einer Diagnose Sitzung zur Speicherauslastung  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Starten einer Diagnose Sitzung zur Speicherauslastung  
   
 1. Öffnen Sie ein universelles Windows-C#-Projekt in Visual Studio.  
   
@@ -44,7 +44,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
      ![Diagnosesitzung zur Speicherauslastung starten](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>Überwachen der Speicherauslastung  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> Überwachen der Speicherauslastung  
  Sie können das Tool **Speicherauslastung** verwenden, um detaillierte Berichte zu erstellen, mit denen Sie Probleme finden und beheben, aber Sie können dieses Tool auch verwenden, um die Echtzeit-Speicherauswirkungen eines Szenarios zu untersuchen, das Sie gerade entwickeln.  
   
  Wenn Sie eine Diagnose Sitzung starten, startet Ihre APP, und im Fenster **Diagnosetools** wird ein Zeitachsen Diagramm der Arbeitsspeicher Nutzung ihrer App angezeigt.  
@@ -54,16 +54,16 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
  Die Zeitachse der zeigt Schwankungen im Speicher Ihrer App an, während diese ausgeführt wird. Spitzen in der Zeitachse weisen normalerweise darauf hin, dass Code in der App Daten erfasst oder erstellt und diese dann verwirft, wenn die Verarbeitung abgeschlossen ist. Hohe Spitzen weisen auf Bereiche hin, die Sie ggf. optimieren können. Problematischer ist ein Anstieg in der Auslastung von Speicher, der nicht zurückgegeben wird, denn dies kann auf ineffiziente Speicherverwendung oder sogar einen Speicherverlust hindeuten.  
   
 ### <a name="close-a-monitoring-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Schließen der Überwachungssitzung  
- ![Auflistung Abbrechen](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
+ ![Beenden der Sammlung](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
   
  Um eine Überwachungssitzung zu schließen, ohne einen Bericht zu erstellen, schließen Sie das Diagnosefenster einfach. Um einen Bericht zu generieren, wenn Sie Momentaufnahmen erstellt haben, wählen Sie **Beenden** aus.  
   
-## <a name="take-snapshots-of-the-memory-state-of-your-app"></a><a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a>Erstellen Sie Momentaufnahmen des Speicher Zustands Ihrer APP  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a><a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Erstellen Sie Momentaufnahmen des Speicher Zustands Ihrer APP  
  Wenn Sie auf ein Speicherproblem stoßen und es untersuchen möchten, können Sie während der Diagnosesitzung Momentaufnahmen erstellen, um Speicherobjekte zu bestimmten Zeitpunkten zu erfassen. Da eine App eine Vielzahl verschiedener Arten von Objekten verwendet, sollten Sie Ihre Analyse auf ein Szenario ausrichten. Empfehlenswert ist es auch, vor dem Auftreten eines Speicherproblems eine Baselinemomentaufnahme der App zu erstellen, nach dem ersten Auftreten des Problems eine weitere Momentaufnahme zu erstellen und eine oder mehrere zusätzliche, wenn Sie das Szenario wiederholen.  
   
  Um Momentaufnahmen zu erstellen, starten Sie eine neue Diagnosesitzung. Wählen Sie **Momentaufnahme erstellen** aus, wenn Sie mit dem Erfassen der Speicherdaten beginnen möchten. Um einen Bericht zu erstellen, wählen Sie **Beenden** aus.  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>Übersicht über die Speicherauslastung  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> Übersicht über die Speicherauslastung  
  Wenn Sie die Datenerfassung beenden, hält das Speicherauslastungstool die App an und zeigt die Übersicht an.  
   
  ![Übersichtsseite Speicherauslastung](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -79,14 +79,14 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
   Die nummerierten Objekte im Bild sind Links, die Momentaufnahmenberichte öffnen.  
   
-|Bild|Beschreibung|  
+|Image|Beschreibung|  
 |-|-|  
 |![Schritt 1](../profiling/media/procguid-1.png "ProcGuid_1")|Der Text des Links zeigt die Gesamtzahl der Bytes im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Gesamtgröße der Typinstanzen geordnet ist.|  
 |![Schritt 2](../profiling/media/procguid-2.png "ProcGuid_2")|Der Text des Links zeigt die Gesamtzahl der Objekte im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Anzahl der Typinstanzen geordnet ist.|  
 |![Schritt 3](../profiling/media/procguid-3.png "ProcGuid_3")|Der Text des Links zeigt den Unterschied zwischen der Gesamtgröße der Objekte im Speicher zum Zeitpunkt dieser Momentaufnahme und der Gesamtgröße der vorhergehenden Momentaufnahme.<br /><br /> Er zeigt eine positive Zahl, wenn die Speichergröße dieser Momentaufnahme größer ist als die der vorhergehenden, und eine negative Zahl, wenn die Speichergröße kleiner ist. Der Linktext **Baseline** weist darauf hin, dass diese Momentaufnahme die erste in dieser Diagnosesitzung ist, **No Difference** bedeutet, dass die Differenz null ist.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtgröße der Typinstanzen geordnet ist.|  
 |![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Der Text des Links zeigt den Unterschied zwischen der Gesamtzahl an Speicherobjekten in dieser Momentaufnahme und der Zahl der Objekte in der vorhergehenden Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtzahl der Typinstanzen geordnet ist.|  
   
-## <a name="snapshot-reports"></a><a name="BKMK_Snapshot_reports"></a>Momentaufnahme Berichte  
+## <a name="snapshot-reports"></a><a name="BKMK_Snapshot_reports"></a> Momentaufnahme Berichte  
  ![Momentaufnahmenbericht zur Speicherauslastung](../profiling/media/memuse-snapshotreport-all.png "MEMUSE_SnapshotReport_All")  
   
 ### <a name="snapshot-report-trees"></a><a name="BKMK_Snapshot_report_trees"></a> Strukturen der Momentaufnahmenberichte  
@@ -94,7 +94,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 #### <a name="managed-heap"></a><a name="BKMK_Managed_Heap"></a> Verwalteter Heap  
  Die Struktur des verwalteten Heaps [Struktur des verwalteten Heaps (Momentaufnahmendetails)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) und die [Struktur des verwalteten Heaps (Momentaufnahmenunterschiede)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) zeigen die Typen und Instanzen im Bericht. Wenn Sie einen Typ oder eine Instanz auswählen, werden die Strukturen **Pfade zum Stamm** und **Referenzierte Objekte** für das gewählte Element angezeigt.  
   
-#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a>Pfade zum Stamm  
+#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a> Pfade zum Stamm  
  Die [Struktur der Pfade zum Stamm (Momentaufnahmendetails)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) und die [Struktur der Pfade zum Stamm (Momentaufnahmenunterschiede)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) zeigen die Kette von Objekten, die auf den Typ oder die Instanz verweisen. Der Garbage Collector von .NET Framework bereinigt den Speicher für ein Objekt nur dann, wenn alle Verweise darauf freigegeben wurden.  
   
 #### <a name="referenced-objects"></a><a name="BKMK_Referenced_Objects"></a> Referenzierte Objekte  
@@ -112,16 +112,16 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
  ![Sortier- und Filteroptionen](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>Filter  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> Filter  
  Geben Sie in das Feld **Filter** eine Zeichenfolge ein, um die Strukturanzeigen auf Typen zu beschränken, die diese Zeichenfolge enthalten. Der Filter berücksichtigt die Groß-/Kleinschreibung nicht und erkennt die angegebene Zeichenfolge in jedem Teil des Typennamens.  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> Kleine Objekte reduzieren  
  Wird dieser Filter angewendet, dann werden Typen mit einer **Größe (Bytes)** von weniger als 0,5 Prozent der Gesamtgröße des Speichers bei Momentaufnahme in der Liste des **verwalteten Heaps** verborgen.  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>Nur eigenen Code  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> Nur eigenen Code  
  Der Filter **Nur mein Code** verbirgt die meisten Instanzen, die durch externen Code generiert werden. Externe Typen gehören zum Betriebssystem oder zu Framework-Komponenten oder werden durch den Compiler generiert.  
   
-## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a>Berichte zu Momentaufnahme Details  
+## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> Berichte zu Momentaufnahme Details  
  Berichte über Momentaufnahmendetails werden verwendet, um sich auf eine Momentaufnahme aus einer Diagnosesitzung zu konzentrieren. Um einen Detailbericht zu öffnen, wählen Sie einen der Links aus der Ansicht der Momentaufnahme, wie im Bild unten gezeigt. Beide Links öffnen denselben Bericht; der Unterschied besteht lediglich in der Sortierreihenfolge der Struktur des **Managed Heap**. In beiden Fällen können Sie die Sortierreihenfolge ändern, nachdem der Bericht geöffnet wurde.  
   
  ![Links zum Snapshot-Bericht in einer Snapshot-Ansicht](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -160,7 +160,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |**Größe (Byte)**|Für Typen: Die Größe aller Instanzen des Typs ohne die Größe der in dem Typ enthaltenen Objekte.<br /><br /> Für Instanzen: Die Größe des Objekts ohne die Größe der in dem Objekt enthaltenen Objekte.|  
 |**Inklusive Größe (Bytes)**|Die Gesamtgröße der Instanzen des Typs oder die Größe der Instanz, einschließlich der Größe der enthaltenen Objekte.|  
   
-## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a>Berichte zu momentaufnahmenunterschieden  
+## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a> Berichte zu momentaufnahmenunterschieden  
  Ein Bericht über Momentaufnahmenunterschiede zeigt die Unterschiede zwischen der primären Momentaufnahme und der direkt davor erstellten Momentaufnahme. Um einen solchen Bericht zu öffnen, wählen Sie einen der Links in der Momentaufnahmenansicht, wie im Bild unten gezeigt. Beide Links öffnen denselben Bericht; der Unterschied besteht lediglich in der Sortierreihenfolge der Struktur des **Managed Heap**. Sie können die Sortierreihenfolge ändern, nachdem der Bericht geöffnet wurde.  
   
  ![Links zum Unterschiedebericht in einer Snapshot-Ansicht](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531547"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tastenkombinationen (Help Viewer)
@@ -24,7 +24,7 @@ ms.locfileid: "85531547"
 
 Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Microsoft Help Viewer navigieren:
 
-|Bereich|Tastaturanschläge|Aktion|
+|Bereich|Tastatureingabe|Aktion|
 |----------|---------------|------------|
 |Allgemeine Anwendung|LeerZchn|Statt EINGABE, überall außer in den Bearbeitungsfeldern|
 |Allgemeine Anwendung|F1|Öffnet die Hilfe zum aktuellen UI-Element|
@@ -44,12 +44,12 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Micro
 |Navigation|ALT + F<br /><br /> ODER<br /><br /> STRG + UMSCHALT + F|Öffnet die Registerkarte **Favoriten**|
 |Navigation|ALT + S<br /><br /> ODER<br /><br /> STRG + E<br /><br /> ODER<br /><br /> STRG + UMSCHALT + S|Öffnet die Registerkarte **Suche**.|
 |Navigation|ALT + M<br /><br /> ODER<br /><br /> STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|
-|Thema|Menütaste<br /><br /> oder<br /><br /> UMSCHALT + F10|Öffnet das Kontextmenü für das aktuelle UI-Element|
+|Thema|Menütaste<br /><br /> ODER<br /><br /> UMSCHALT + F10|Öffnet das Kontextmenü für das aktuelle UI-Element|
 |Thema|NACH-OBEN|Scrollt Zeile für Zeile zum Anfang des Dokuments|
 |Thema|NACH-UNTEN|Scrollt Zeile für Zeile zum Anfang des Dokuments|
 |Thema|BILD-AUF|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
 |Thema|BILD-AB|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
-|Thema|Startseite|Springt zum Anfang des Dokuments|
+|Thema|-Startseite|Springt zum Anfang des Dokuments|
 |Thema|Ende|Springt zum Ende des Dokuments|
 |Thema|STRG + F|Finden von Suchtext auf dieser Seite|
 |Thema|F5|Aktualisiert die aktuelle Seite|
@@ -76,7 +76,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Micro
 |Inhalt & Index & Suche & Favoriten|STRG+P|Druckt das angegebene Thema|
 |Inhalt & Index & Suche & Favoriten|STRG + F2|Zeigt eine Druckvorschau des angegebenen Themas an|
 |Inhalt & Index & Suche & Favoriten|STRG + Klick|Öffnet das Thema in einer neuen Registerkarte|
-|Suchen,|ESC|Löscht den Inhalt des Suchtextfelds|
+|Suchen,|Esc|Löscht den Inhalt des Suchtextfelds|
 |Viewer-Optionen|ALT + T|Ändert den Fokus auf die Liste **Textgröße**|
 |Viewer-Optionen|ALT + S|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|
 |Viewer-Optionen|ALT + H|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|
@@ -84,13 +84,13 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Micro
 |Viewer-Optionen|ALT + O|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltsupdates suchen**.|
 |Suchen|EINGABETASTE|Ändert den Fokus auf das nächste Element|
 |Suchen|UMSCHALT + ENTER|Ändert den Fokus auf das vorherige Element|
-|Suchen|ESC|Verbirgt das Textfeld **Suchen**.|
+|Suchen|Esc|Verbirgt das Textfeld **Suchen**.|
 |Statusleiste|ALT + E|Öffnet das Dialogfeld **Fehler**, wenn die Statusleiste anzeigt, dass ein Fehler aufgetreten ist.|
 |Statusleiste|ALT + U|Lädt Inhalt herunter, wenn die Statusleiste anzeigt, das Updates verfügbar sind|
 
  **Fensterverwaltung**
 
-|**Tastaturanschläge**|**Aktion**|
+|**Tastatureingabe**|**Aktion**|
 |-|-|
 |STRG+L|Setzt das Layout des Help Viewers auf das Standardlayout zurück und schließt alle Themenregisterkarten|
 |STRG + TAB|Die erste Tastatureingabe legt den Fokus auf das Menü **Registerkartenauswahl**. Die nächste Tastatureingabe legt den Fokus auf das obere Menüelement. Alle weiteren Tastatureingaben legen den Fokus auf das darauffolgende Menüelement (von oben nach unten). Wenn der Fokus auf einem Menüelement liegt, wird es durch ENTER zur aktiven Registerkarte.|
@@ -99,7 +99,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Micro
 
  **Inhalt verwalten**
 
-|**Tastaturanschläge**|**Aktion**|
+|**Tastatureingabe**|**Aktion**|
 |-|-|
 |ALT + D|Ändert die Inhaltsinstallationsquelle in einen Datenträger|
 |ALT + O|Ändert die Inhaltsinstallationsquelle in Online|

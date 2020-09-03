@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContextFromAddress | Microsoft Docs
+title: 'Idebugsymbolprovider:: getcontextfromaddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca6c3fa5d657100ecce55de31117ea2c2532374d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719250"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
-Diese Methode ordnet eine Debugadresse einem Dokumentkontext zu.
+Diese Methode ordnet eine debugadresse einem Dokument Kontext zu.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int GetContextFromAddress(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Die Debugadresse, die durch eine [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) dargestellt wird.
+in Die debugadresse, wie von einer [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle dargestellt.
 
 `ppDocContext`\
-[out] Gibt einen Dokumentkontext zurück, der durch eine [IDebugDocumentContext2-Schnittstelle](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) dargestellt wird.
+vorgenommen Gibt einen Dokument Kontext zurück, der durch eine [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) -Schnittstelle dargestellt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

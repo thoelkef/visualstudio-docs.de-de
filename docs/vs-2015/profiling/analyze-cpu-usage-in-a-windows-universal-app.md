@@ -16,10 +16,10 @@ ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: def581f547db19a8db4cebc4d63739ff09bb5fab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531663"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analysieren der CPU-Auslastung in einer universellen Windows-App
@@ -47,7 +47,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 4. Erstellen Sie die APP, und probieren Sie Sie aus. Die APP ist einfach genug, um Ihnen einige häufige Fälle der Analyse der CPU-Auslastung zu zeigen.  
   
-## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>Sammeln von CPU-Nutzungsdaten  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> Sammeln von CPU-Nutzungsdaten  
  ![Releasebuild der App im Simulator ausführen](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Stellen Sie das Bereitstellungsziel in Visual Studio auf **Simulator** und die Projektmappenkonfigurierung auf **Release** ein.  
@@ -72,7 +72,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
    ![Bericht CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-## <a name="analyze-the-cpu-usage-report"></a><a name="BKMK_Analyze_the_CPU_Usage_report"></a>Analysieren des CPU-Auslastungs Berichts  
+## <a name="analyze-the-cpu-usage-report"></a><a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analysieren des CPU-Auslastungs Berichts  
   
 ### <a name="cpu-utilization-timeline-graph"></a><a name="BKMK_CPU_utilization_timeline_graph"></a> Diagramm der CPU-Auslastungszeitachse  
  ![Cpunutzungs&#40;% &#41; Zeitachsen Diagramm](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
@@ -105,7 +105,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |![Schritt 3](../profiling/media/procguid-3.png "ProcGuid_3")|Die untergeordneten Elemente des Knotens der zweiten Ebene sind die Benutzercodemethoden und asynchronen Routinen, die vom System- und Frameworkcode der zweiten Ebene aufgerufen oder erstellt werden.|  
 |![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Untergeordnete Knoten einer Methode enthalten Daten nur für die Aufrufe der übergeordneten Methode. Wenn **Externen Code anzeigen** deaktiviert ist, können App-Methoden auch den Knoten **[Externer Code]** enthalten.|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Externer Code  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Externer Code  
  Externer Code besteht aus Funktionen in System- und Frameworkkomponenten, die vom Code ausgeführt werden, den Sie schreiben. Externer Code umfasst Funktionen, die die App starten und beenden, die Benutzeroberfläche zeichnen, das Threading steuern und der App andere hardwarenahe Dienste bereitstellen. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb die CPU-Verwendungs Aufrufstruktur die externen Funktionen einer Benutzer Methode in einem Knoten **[externer Code]** sammelt.  
   
  Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Ansicht filtern** die Option **Externen Code anzeigen** und dann **Übernehmen**aus.  
@@ -120,7 +120,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
  ![Suche nach geschachteltem externen Code](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-### <a name="call-tree-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a>Datenspalten der Aufrufstruktur  
+### <a name="call-tree-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Datenspalten der Aufrufstruktur  
   
 |Eigenschaft|BESCHREIBUNG|  
 |-|-|  
@@ -130,7 +130,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |**Eigen-CPU (ms)**|Die Anzahl der Millisekunden für Aufrufe an die Funktion im ausgewählten Zeitraum und die von der Funktion aufgerufenen Funktionen.|  
 |**Modul**|Der Name des Moduls mit der Funktion oder die Anzahl der Module, die die Funktionen in einem Knoten vom Typ [Externer Code] enthalten.|  
   
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Asynchrone Funktionen in der CPU-Verwendungs Aufrufstruktur  
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchrone Funktionen in der CPU-Verwendungs Aufrufstruktur  
  Wenn der Compiler auf eine asynchrone Methode trifft, erstellt er eine versteckte Klasse zum Steuern der Ausführung der Methode. Grundsätzlich ist die Klasse ein Zustandsautomat mit einer Liste von vom Compiler generierten Funktionen, die Vorgänge der ursprünglichen Methode asynchron aufrufen, und den Rückrufen, dem Scheduler und den Iteratoren, die für diese ordnungsgemäß erforderlich sind. Wenn die ursprüngliche Methode von einer übergeordneten Methode aufgerufen wird, entfernt die Runtime die Methode aus dem Ausführungskontext der übergeordneten Methode und führt die Methode der ausgeblendeten Klasse im Kontext des System- und Frameworkcodes durch, der die Ausführung der App steuert. Die asynchronen Methoden werden oft, jedoch nicht immer, in einem oder mehreren verschiedenen Threads ausgeführt. Dieser Code wird in der Aufrufstruktur der CPU-Auslastung als untergeordnete Elemente des Knotens **[Externer Code]** direkt unter dem obersten Knoten der Struktur gezeigt.  
   
  Um dies in unserem Beispiel zu sehen, wählen Sie erneut das Segment `GetMaxNumberAsyncButton_Click` in der Zeitachse aus.  
@@ -156,7 +156,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
      Erstellen Sie eine neue Sitzung im Leistungs- und Diagnosehub, und fügen Sie die Tools XAML-UI-Reaktionsfähigkeit und CPU-Auslastung hinzu. Führen Sie das Erfassungsszenario aus. Wenn Sie diesen Artikel gelesen haben, gibt der Bericht Ihnen wahrscheinlich nichts, was Sie nicht bereits herausgefunden haben, aber die Unterschiede im Zeitachsen Diagramm **UI-Thread Auslastung** für die zwei Methoden sind verblüffend. In komplexen realen Apps kann die Kombination der Tools sehr hilfreich sein.  
   
-## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a>MainPage. XAML  
+## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a> MainPage. XAML  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ```  
   
-## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a>MainPage.xaml.cs  
+## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

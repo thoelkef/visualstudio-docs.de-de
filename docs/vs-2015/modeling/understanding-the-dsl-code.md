@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e8d82712a2fb8e30b13f9f369bf87be5292c199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659492"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
@@ -31,17 +31,17 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
 
  Drücken Sie F5, und experimentieren Sie, wenn Sie mit dieser Projektmappenvorlage nicht vertraut sind. Achten Sie insbesondere darauf, dass Sie Ports erstellen, indem Sie ein Port-Tool auf eine Komponente ziehen, und dass Sie Verbindungen mit Ports herstellen können.
 
- ![Komponenten und miteinander verbundene Ports](../modeling/media/componentsample.png "Componentsample")
+ ![Komponenten und verbundene Ports](../modeling/media/componentsample.png "Componentsample")
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktur der DSL-Projektmappe
- Das **DSL** -Projekt definiert die API für Ihre DSL. Das **dslpackage** -Projekt definiert, wie es in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integriert wird. Sie können auch eigene Projekte hinzufügen, die durch das Modell generierten Code enthalten können.
+ Das **DSL** -Projekt definiert die API für Ihre DSL. Das **dslpackage** -Projekt definiert, wie es in integriert wird [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Sie können auch eigene Projekte hinzufügen, die durch das Modell generierten Code enthalten können.
 
 ### <a name="the-code-directories"></a>Codeverzeichnisse
  Der größte Teil des Codes in jedem dieser Projekte wird von **Dsl\DslDefinition.DSL**generiert. Der generierte Code befindet sich im **generierten Code** Ordner. Um eine generierte Datei anzuzeigen, klicken Sie auf **[+]** neben der generierten **TT** -Datei.
 
  Es empfiehlt sich, den generierten Code zu untersuchen, damit Sie die DSL besser verstehen. Erweitern Sie zum Anzeigen der generierten Dateien die TT-Dateien im Projektmappen-Explorer.
 
- Die \*. tt-Dateien enthalten sehr wenig Generierungs Code. Stattdessen verwenden sie `<#include>`-Direktiven, um freigegebene Vorlagendateien einzubinden. Die freigegebenen Dateien finden Sie unter **\Programme\Microsoft Visual Studio 10.0 \ Common7\IDE\Extensions\Microsoft\DSL sdk\dsl designer\11.0\texttemplates** .
+ Die \* TT-Dateien enthalten sehr wenig Generierungs Code. Stattdessen verwenden sie `<#include>`-Direktiven, um freigegebene Vorlagendateien einzubinden. Die freigegebenen Dateien finden Sie unter **\Programme\Microsoft Visual Studio 10.0 \ Common7\IDE\Extensions\Microsoft\DSL sdk\dsl designer\11.0\texttemplates** .
 
  Wenn Sie der DSL-Projektmappe eigenen Programmcode hinzufügen, nutzen Sie dafür eine separate Datei außerhalb des Ordners für generierten Code. Möglicherweise möchten Sie einen **benutzerdefinierten Code** Ordner erstellen. (Wenn Sie eine neue Codedatei einem benutzerdefinierten Ordner hinzufügen, müssen Sie den Namespace im anfänglichen Codeskelett korrigieren.)
 
@@ -60,7 +60,7 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
 ## <a name="generated-files-in-dsl"></a>Generierte Dateien in "Dsl"
  Die folgenden generierten Dateien werden im **DSL** -Projekt angezeigt.
 
- *Yourdsl* -`Schema.xsd`
+ *Yourdsl*`Schema.xsd`
 
  Das Schema für Dateien, die Instanzen Ihrer DSL enthalten. Diese Datei wird in das Verzeichnis für die Kompilierung (**bin**) kopiert. Wenn Sie die DSL installieren, können Sie diese Datei in " **\Programme\Microsoft Visual Studio 11.0 \ xml\schemas** " kopieren, damit die Modelldateien überprüft werden können. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
@@ -72,7 +72,7 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
 
  (Im Beispiel der Komponentenprojektmappe trägt einer der Verbindungs-Generatoren den Namen "ConnectionBuilder". Dies ist ein Zufall, da die Domänenbeziehung "Connection" genannt wurde.)
 
- Die Beziehung wird in der *Beziehung* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Beispiel:
+ Die Beziehung wird in der *Beziehungs* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Beispiel:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -124,7 +124,7 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
 
 - EGP-Handlermethoden (Elementgruppenprototyp). Diese sind erforderlich, wenn der Benutzer ein anderes Element auf Instanzen dieser Klasse zusammen *führen* (hinzufügen) kann. Üblicherweise führt der Benutzer dazu einen Ziehvorgang von einem Elementtool oder einer anderen Form oder einen Einfügevorgang aus.
 
-   In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Die
+   In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Für
 
    Die EGP-Handlermethoden in der Komponentenklasse lassen es zu, dass eine Komponente Ports akzeptiert, aber keine Kommentare. Der EGP-Handler in der Stammmodellklasse akzeptiert Kommentare und Komponenten, aber keine Ports.
 
@@ -202,7 +202,7 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
 
  `DocData.cs`
 
- *Yourdsl* `DocData` das Laden und Speichern eines Modells in einer Datei und das Erstellen der Speicher Instanz.
+ *Yourdsl* `DocData` verwaltet das Laden und Speichern eines Modells in einer Datei und erstellt die Speicher Instanz.
 
  Wenn Sie Ihre DSL beispielsweise in einer Datenbank statt in einer Datei speichern möchten, können Sie die Methoden `Load` und `Save` überschreiben.
 
@@ -344,9 +344,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Um diese Datei anzupassen, bearbeiten Sie die `.tt`-Datei.
 
 > [!WARNING]
-> Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Wählen Sie in Projektmappen-Explorer die Datei aus, und vergewissern Sie sich, dass die Eigenschaft **in VSIX einschließen** `True` ist.
+> Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Wählen Sie in Projektmappen-Explorer die Datei aus, und vergewissern Sie sich, dass die Eigenschaft **in VSIX einschließen** den Wert hat `True` .
 
  Mit dieser Datei wird gesteuert, wie die DSL in eine Visual Studio-Integrationserweiterung (VSIX) verpackt wird. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md) [verstehen von Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md) [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md) [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

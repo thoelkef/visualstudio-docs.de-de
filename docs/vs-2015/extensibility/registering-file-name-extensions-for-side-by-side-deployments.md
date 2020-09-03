@@ -1,5 +1,5 @@
 ---
-title: Registrieren von Dateierweiterungen für Seite-an-Seite-Bereitstellungen | Microsoft-Dokumentation
+title: Registrieren von Dateinamen Erweiterungen für parallele bereit Stellungen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,29 +11,29 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 354b91dd1282df9726c1ee9c47f610b0dfdd9c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163696"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Registrieren von Dateierweiterungen für parallele Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Für VSPackages, die in einer Seite-an-Seite-Umgebung bereitgestellt werden, müssen Sie die Dateierweiterungen, um die richtige Version der Dateien zuzuordnen registrieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Wenn Sie eine bestimmte Version Dateinamenerweiterung verwenden, wird nach der Registrierung können Benutzer öffnen Sie das Projekt und Element-Projektdateien in die entsprechende Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Für VSPackages, die in einer parallelen Umgebung bereitgestellt werden, müssen Sie Dateinamen Erweiterungen registrieren, um die Dateien der richtigen Version von zuzuordnen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Die Registrierung ermöglicht es Benutzern, Ihre Projekt-und Projekt Element Dateien in der entsprechenden Version von zu öffnen, es sei denn, Sie verwenden eine versionsspezifische Dateinamenerweiterung [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Informationen zu Dateierweiterungen](../extensibility/about-file-name-extensions.md)  
- Erläutert, wie die Dateinamenerweiterungen Weitere Erweiterungen registriert sind.  
+ Erläutert, wie Dateinamen Erweiterungen registriert werden.  
   
  [Angeben von Dateihandlern für Dateierweiterungen](../extensibility/specifying-file-handlers-for-file-name-extensions.md)  
- Enthält Informationen zum Registrieren von Anwendungen, die geöffnet werden können, bearbeiten und usw., eine bestimmte Dateinamenerweiterung.  
+ Enthält Informationen zum Registrieren der Anwendungen, die eine bestimmte Dateinamenerweiterung öffnen, bearbeiten usw.  
   
  [Registrieren von Verben für Dateierweiterungen](../extensibility/registering-verbs-for-file-name-extensions.md)  
- Erläutert, wie zum Registrieren von Verben.  
+ Erläutert, wie Verben registriert werden.  
   
  [Verwalten von parallelen Dateizuordnungen](../extensibility/managing-side-by-side-file-associations.md)  
- Beschreibt, wie Sie die Seite-an-Seite-Installationen, in dem Verarbeiten einer bestimmten Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zum Öffnen einer Datei aufgerufen werden soll.  
+ Erläutert, wie parallele Installationen behandelt werden, bei denen eine bestimmte Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aufgerufen werden muss, um eine Datei zu öffnen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Unterstützen mehrerer Versionen von Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)  

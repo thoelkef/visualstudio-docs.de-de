@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6114a31701e5abc4714f315b4e4f1ecf022c401c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163822"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Diese Schnittstelle wird von der Debug-Engine (DE) verwendet, um Debug-Ereignisse an die sitzungsbasierter Debug-Manager (SDM) zu senden.  
+Diese Schnittstelle wird von der Debug-Engine (de) verwendet, um Debugereignisse an den Sitzungs-Debug-Manager (SDM) zu senden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,32 +31,32 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] implementiert diese Schnittstelle zum Empfangen von Ereignissen aus einer Debug-Engine.  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] implementiert diese Schnittstelle zum Empfangen von Ereignissen von einer Debug-Engine.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Eine Debug-Engine diese Schnittstelle in der Regel empfängt beim aufruft, des SDM [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md), oder [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Eine Debug-Engine sendet Ereignisse an das SDM, durch den Aufruf [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+ Eine Debug-Engine empfängt diese Schnittstelle in der Regel, wenn die SDM [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)oder [launchangeh](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)alten aufruft. Ein Debug-Modul sendet Ereignisse an die SDM, indem das [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)aufgerufen wird.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDebugEventCallback2`.  
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugEventCallback2` .  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Sendet eine Benachrichtigung der Ereignisse an das SDM-Debuggen.|  
+|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Sendet Benachrichtigungen über Debuggingereignisse an SDM.|  
   
-## <a name="remarks"></a>Hinweise  
- Obwohl [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) und [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) anzugeben, dass dafür ein `IDebugEventCallback2` -Schnittstelle, dies ist nicht der Fall ist, und der Schnittstellenzeiger wird immer ein null-Wert sein. Die Debug-Engine muss stattdessen die `IDebugEventCallback2` Schnittstelle empfangen, die im Aufruf von [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md), oder [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+## <a name="remarks"></a>Bemerkungen  
+ Obwohl [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) und [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) angeben, dass eine `IDebugEventCallback2` Schnittstelle verwendet wird, ist dies nicht der Fall, und der Schnittstellen Zeiger ist immer ein NULL-Wert. Stattdessen muss die Debug-Engine die-Schnittstelle verwenden, die im-Befehl `IDebugEventCallback2` zum [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)oder [launchangeh](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)alten empfangen wird.  
   
- Wenn ein Paket implementiert [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) in verwaltetem Code, es wird dringend empfohlen, die <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> aufgerufen werden, auf die verschiedenen Schnittstellen, die übergeben werden [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+ Wenn ein Paket [idebugeventcallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) in verwaltetem Code implementiert, wird dringend empfohlen, dass Sie <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> für die verschiedenen Schnittstellen aufgerufen werden, die an das- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)weitergegeben werden.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
- [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [Anfügen](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Launchangeh alten](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
+ [An](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   
  [Anfügen](../../../extensibility/debugger/reference/idebugengine2-attach.md)

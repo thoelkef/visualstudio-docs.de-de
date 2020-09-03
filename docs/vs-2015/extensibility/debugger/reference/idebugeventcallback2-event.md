@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event | Microsoft-Dokumentation
+title: 'IDebugEventCallback2:: Event | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37462b5f274ca6e6c2a4a2feb4083ea94ea2f066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163972"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Sendet eine Benachrichtigung der Debug-Ereignisse.  
+Sendet eine Benachrichtigung über Debugereignisse.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,35 +52,35 @@ int Event( 
   
 #### <a name="parameters"></a>Parameter  
  `pEngine`  
- [in] Ein [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Objekt, das die Debug-Engine (DE) darstellt, der dieses Ereignis sendet. Eine bereitgestellten Kompatibilitätsrichtlinie ist erforderlich, diesen Parameter einzugeben.  
+ in Ein [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) -Objekt, das die Debug-Engine (de) darstellt, die dieses Ereignis sendet. Zum Ausfüllen dieses Parameters ist ein de erforderlich.  
   
  `pProcess`  
- [in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess darstellt, in dem das Ereignis eintritt. Dieser Parameter wird durch die sitzungsbasierter Debug-Manager (SDM) ausgefüllt. Eine bereitgestellten Kompatibilitätsrichtlinie wird immer einen null-Wert für diesen Parameter übergeben.  
+ in Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess darstellt, in dem das Ereignis auftritt. Dieser Parameter wird vom Sitzungs-Debug-Manager (SDM) ausgefüllt. Ein de übergibt immer einen NULL-Wert für diesen Parameter.  
   
  `pProgram`  
- [in] Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das das Programm darstellt, in dem dieses Ereignis auftritt. Bei den meisten Ereignissen ist dieser Parameter keinen null-Wert.  
+ in Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das das Programm darstellt, in dem dieses Ereignis auftritt. Bei den meisten Ereignissen ist dieser Parameter kein NULL-Wert.  
   
  `pThread`  
- [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem dieses Ereignis auftritt. Für das Beenden der Ereignisse, darf nicht diesen Parameter ein null-Wert sein, wie der Stapelrahmen aus diesen Parameter abgerufen werden.  
+ in Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem dieses Ereignis auftritt. Zum Beenden von Ereignissen kann dieser Parameter kein NULL-Wert sein, da der Stapel Rahmen aus diesem Parameter abgerufen wird.  
   
  `pEvent`  
- [in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das Debug-Ereignis darstellt.  
+ in Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das das Debug-Ereignis darstellt.  
   
  `riidEvent`  
- [in] GUID, die die Senkenereignis-Schnittstelle zum Abrufen von identifiziert die `pEvent` Parameter.  
+ in GUID, die identifiziert, welche Ereignis Schnittstelle aus dem Parameter abgerufen werden soll `pEvent` .  
   
  `dwAttrib`  
- [in] Eine Kombination von Flags aus der [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) Enumeration.  
+ in Eine Kombination von Flags aus der [eventattributenumeration](../../../extensibility/debugger/reference/eventattributes.md) .  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Beim Aufrufen dieser Methode, die `dwAttrib` Parameter muss ein Rückgabewert übereinstimmen der [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) Methode wie für das Ereignisobjekt zu übergeben, der `pEvent` Parameter.  
+## <a name="remarks"></a>Bemerkungen  
+ Beim Aufrufen dieser Methode muss der- `dwAttrib` Parameter mit dem Wert identisch sein, der von der [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) -Methode zurückgegeben wird, wie für das im-Parameter übergebenen Ereignis Objekt aufgerufen `pEvent` .  
   
- Alle Debug-Ereignisse werden asynchron gesendet, unabhängig davon, ob ein Ereignis selbst asynchron oder synchron ist. Wenn diese Methode in eine bereitgestellten Kompatibilitätsrichtlinie aufgerufen wird, wird der zurückgegebene Wert nicht angegeben, ob das Ereignis verarbeitet wurde, sondern nur, ob das Ereignis empfangen wurde. Tatsächlich wurde in den meisten Fällen das Ereignis nicht verarbeitet Rückkehr dieser Methode.  
+ Alle Debugereignisse werden asynchron gesendet, unabhängig davon, ob ein Ereignis selbst asynchron ist. Wenn eine de diese Methode aufruft, gibt der Rückgabewert nicht an, ob das Ereignis verarbeitet wurde, sondern nur, ob das Ereignis empfangen wurde. In den meisten Fällen wurde das Ereignis nicht verarbeitet, wenn diese Methode zurückgegeben wird.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

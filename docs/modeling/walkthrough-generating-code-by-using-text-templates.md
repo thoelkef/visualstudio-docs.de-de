@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532059"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
@@ -103,7 +103,7 @@ Die Datei sollte Teil des Projekts sein, damit die Vorlage sie lesen kann, aber 
 
 ### <a name="add-a-test-code-file"></a>Fügen Sie eine Testcodedatei hinzu
 
-Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Beispiel:
+Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Zum Beispiel:
 
 ```csharp
 using System;
@@ -144,7 +144,7 @@ Fügen Sie eine Textvorlagen Datei hinzu, und legen Sie die Ausgabe Erweiterung 
 
 4. Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.
 
-5. Speichern Sie die Datei . In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
+5. Speichern Sie die Datei. In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>

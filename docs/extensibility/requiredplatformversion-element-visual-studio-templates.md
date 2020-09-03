@@ -1,5 +1,5 @@
 ---
-title: RequiredPlatformVersion-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: Requirements dplatformversion-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,20 +10,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701496"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion-Element (Visual Studio-Vorlagen)
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>Requirements dplatformversion-Element (Visual Studio-Vorlagen)
 Gibt die Mindestversion des Betriebssystems an, die vorliegen muss, damit die Projektvorlage ordnungsgemäß funktioniert. Dieses Element wird für Projektvorlagen verwendet, die [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Apps erstellen.
 
- Der Wert `RequiredPlatformVersion` wird unmittelbar mit der Version des Betriebssystems verglichen. Wenn `RequiredPlatformVersion` die höher als die Betriebssystemversion ist, wird die Vorlage nicht im Dialogfeld **Neues Projekt** angezeigt. Um eine Vorlage für [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher anzugeben, legen Sie `RequiredPlatformVersion` auf 6.2.0 fest. Um eine Vorlage [!INCLUDE[win81](../debugger/includes/win81_md.md)] für oder `RequiredPlatformVersion` höher anzugeben, setzen Sie auf 6.3.0.
+ Der Wert `RequiredPlatformVersion` wird unmittelbar mit der Version des Betriebssystems verglichen. Wenn die `RequiredPlatformVersion` höher als die Betriebssystemversion ist, wird die Vorlage nicht im Dialogfeld **Neues Projekt** angezeigt. Um eine Vorlage für [!INCLUDE[win8](../debugger/includes/win8_md.md)] oder höher anzugeben, legen Sie `RequiredPlatformVersion` auf 6.2.0 fest. [!INCLUDE[win81](../debugger/includes/win81_md.md)]Legen Sie auf 6.3.0 fest, um eine Vorlage für oder höher anzugeben `RequiredPlatformVersion` .
 
  Vorlagen, die `RequiredPlatformVersion`=8 angeben, sind mit früheren [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Kundenvorlagen kompatibel.
 
- VSTemplate TemplateData ..... TargetPlatformName RequiredPlatformVersion
+ VSTEMPLATE TemplateData.... Targetplatformname "Requirements dplatformversion"
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,13 +32,13 @@ Gibt die Mindestversion des Betriebssystems an, die vorliegen muss, damit die Pr
 ```
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
- Keine.
+ Keine
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -69,6 +69,6 @@ Gibt die Mindestversion des Betriebssystems an, die vorliegen muss, damit die Pr
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [TargetPlatformName-Element (Visual Studio-Vorlagen)](../extensibility/targetplatformname-element-visual-studio-templates.md)
+- [Targetplatformname-Element (Visual Studio-Vorlagen)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

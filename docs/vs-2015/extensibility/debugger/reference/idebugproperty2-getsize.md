@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetSize | Microsoft-Dokumentation
+title: 'IDebugProperty2:: GetSize | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e6c9118a9ce5a6dddb284d41b3c0b23ca8275f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193468"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Größe in Bytes, der den Wert der Eigenschaft ab.  
+Ruft die Größe des Eigenschafts Werts in Bytes ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,10 +40,10 @@ int GetSize ( 
   
 #### <a name="parameters"></a>Parameter  
  `pdwSize`  
- [out] Gibt die Größe in Bytes, der den Wert der Eigenschaft zurück.  
+ vorgenommen Gibt die Größe des Eigenschafts Werts in Byte zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETSIZE_NO_SIZE` , wenn die Eigenschaft keine Größe hat.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben. Gibt zurück, `S_GETSIZE_NO_SIZE` Wenn die Eigenschaft keine Größe hat.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

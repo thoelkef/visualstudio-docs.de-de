@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von benutzerdefinierten Startseiten | Microsoft-Dokumentation
+title: Bereitstellen von benutzerdefinierten Start Seiten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,40 +12,40 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162104"
 ---
 # <a name="deploying-custom-start-pages"></a>Bereitstellen von benutzerdefinierten Startseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder durch Kopieren der Dateien an die richtigen Speicherorte auf dem Zielcomputer bereitstellen.  
+Sie können benutzerdefinierte Start Seiten mithilfe der VSIX-Bereitstellung oder durch Kopieren der Dateien an die richtigen Speicherorte auf dem Zielcomputer bereitstellen.  
   
-## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>VSIX-Bereitstellung mithilfe der Start-Seite-Projektvorlage  
- Wenn Sie eine Startseite mithilfe der Projektvorlage für die Startseite erstellen, und erstellen Sie das Projekt, erstellt Visual Studio eine VSIX-Datei, die Sie verteilen können. Eine Startseite in einer VSIX-Datei packen, können Sie die folgenden Optionen für die Bereitstellung abhängig von Ihrer Zielgruppe:  
+## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>VSIX-Bereitstellung mithilfe der Projektvorlage für Start Seiten  
+ Wenn Sie eine Startseite mithilfe der Projektvorlage für Startseiten erstellen und dann das Projekt erstellen, erstellt Visual Studio eine VSIX-Datei, die Sie verteilen können. Wenn Sie eine Start Seite in einer vsix-Datei packen, stehen Ihnen je nach Zielgruppe die folgenden Optionen für die Bereitstellung zur Verfügung:  
   
-- Sie können die VSIX-Datei auf einer Netzwerkfreigabe oder auf einer öffentlichen Website einfügen. Wenn eine Person die Datei geöffnet wird, wird die Startseite wird automatisch installiert.  
+- Sie können die vsix-Datei auf einer Netzwerkfreigabe oder auf einer öffentlichen Website ablegen. Wenn jemand die Datei öffnet, wird die Start Seite automatisch installiert.  
   
-- Sie können die VSIX-Datei zum Hochladen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Website aus, damit Benutzer sie mithilfe von installieren können **Erweiterungs-Manager**.  
+- Sie können die vsix-Datei auf die [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website hochladen, damit Benutzer Sie mithilfe des Erweiterungs- **Managers**installieren können.  
   
-  Die Startseite-Projektvorlage erstellt eine Kopie der standardmäßigen Visual Studio-Startseite, damit Sie die Kopie zu ändern und das Original beibehalten können.  
+  Die Projektvorlage für Start Seiten erstellt eine Kopie der standardmäßigen Visual Studio-Startseite, sodass Sie die Kopie ändern und die ursprüngliche beibehalten können.  
   
-  Sie erhalten die Projektvorlage für die Startseite mit **Erweiterungs-Manager** oder indem Sie sie auf der Website herunterladen.  
+  Sie können die Projektvorlage für Start Seiten mit dem **Erweiterungs-Manager** abrufen oder von der Website herunterladen.  
   
-## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>VSIX-Bereitstellung ohne Verwendung der Start-Seite-Projektvorlage  
- Eine erfolgreiche VSIX-Bereitstellung erfordert eine Erweiterung in Ordnern installiert werden, die von der während der VSIX-Registrierung und erkannt werden **Erweiterungs-Manager**. Da die Projektvorlage der Startseite bereits die richtigen Ordnern angegeben wird, empfehlen wir, dass Sie es verwenden, um eine Erweiterung für VSIX-Bereitstellung zu verpacken. Wenn Sie einen Fall haben, in dem Sie die Vorlage verwenden können, können Sie jedoch eine VSIX-Bereitstellung erstellen, ohne die Verwendung.  
+## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>VSIX-Bereitstellung ohne Verwendung der Projektvorlage für Start Seiten  
+ Eine erfolgreiche VSIX-Bereitstellung erfordert die Installation einer Erweiterung in Ordnern, die vom VSIX-Registrierungsprozess und vom **Erweiterungs-Manager**erkannt werden. Da die Projektvorlage für die Start Seite bereits die richtigen Ordner angibt, empfiehlt es sich, Sie immer dann zu verwenden, wenn Sie eine Erweiterung für die VSIX-Bereitstellung verpacken möchten. Wenn Sie jedoch einen Fall haben, in dem Sie die Vorlage nicht verwenden können, können Sie eine VSIX-Bereitstellung erstellen, ohne Sie zu verwenden.  
   
- Um eine VSIX-Bereitstellung ohne Verwendung der Projektvorlage für die Startseite zu erstellen, erstellen Sie zuerst eine VSIX-Datei für die Startseite in einem der beiden folgenden Weisen:  
+ Wenn Sie eine VSIX-Bereitstellung ohne die Startseiten-Projektvorlage erstellen möchten, erstellen Sie zunächst eine VSIX-Datei für die Startseite auf eine der beiden folgenden Weisen:  
   
-- Durch Hinzufügen Ihrer benutzerdefinierten Startseitendateien leeren VSIX-Projekt. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).  
+- Durch Hinzufügen von benutzerdefinierten Start Seiten Dateien zu einem leeren VSIX-Projekt. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).  
   
-- Durch das manuelle Erstellen einer VSIX-Datei. Weitere Informationen finden Sie unter [Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Durch manuelles Erstellen einer vsix-Datei. Weitere Informationen finden Sie unter Vorgehens [Weise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
-  Für Visual Studio, eine Startseite zu erkennen die `Content Element` das VSIX-Manifest muss Sie enthalten eine `CustomExtension Element` , bei dem die `Type` -Attributsatz auf `"StartPage"`. Eine Erweiterung der Startseite, die installiert wurde, indem Sie mit der VSIX-Bereitstellung wird angezeigt, der **Customize Start Page** auf in der Liste der **Start** Optionen-Seite als **[installierte Extension]** *Erweiterungsnamen*.  
+  Damit Visual Studio eine Start Seite erkennt, muss der `Content Element` des VSIX-Manifests einen enthalten, bei `CustomExtension Element` dem das- `Type` Attribut auf festgelegt ist `"StartPage"` . Eine Startseiten Erweiterung, die mithilfe der VSIX-Bereitstellung installiert wurde, wird in der Liste **Startseite anpassen** auf der Seite **Start** Optionen als **[installierte Erweiterung]** *Erweiterungsname*angezeigt.  
   
-  Wenn Ihr Paket Startseite Assemblys enthält, müssen Sie Bindung Pfad Registrierung hinzufügen, damit sie beim Start von Visual Studio verfügbar sind. Zu diesem Zweck sicher, dass Ihr Paket eine PKGDEF-Datei enthält, die die folgenden Informationen enthält.  
+  Wenn das Start Seiten Paket Assemblys enthält, müssen Sie die Bindungs Pfad Registrierung hinzufügen, damit diese beim Start von Visual Studio verfügbar sind. Stellen Sie zu diesem Zweck sicher, dass das Paket eine pkgdef-Datei mit den folgenden Informationen enthält.  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  
@@ -53,43 +53,43 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
 ```  
   
 ### <a name="vsix-deployment-for-all-users"></a>VSIX-Bereitstellung für alle Benutzer  
- Installieren Erweiterungen, die in VSIX-Paketen bereitgestellt werden. standardmäßig nur für den aktuellen Benutzer. Sie können eine Installation der Startseite für alle Benutzer des Zielcomputers vornehmen, durch das Erstellen einer Bereitstellung für alle Benutzer.  
+ Erweiterungen, die in VSIX-Paketen bereitgestellt werden, werden standardmäßig nur für den aktuellen Benutzer installiert. Sie können eine Start Seite für alle Benutzer des Ziel Computers installieren, indem Sie eine Bereitstellung für alle Benutzer erstellen.  
   
-##### <a name="to-create-an-all-users-deployment"></a>Zum Erstellen einer Bereitstellung für alle Benutzer  
+##### <a name="to-create-an-all-users-deployment"></a>So erstellen Sie eine Bereitstellung für alle Benutzer  
   
-1. Öffnen Sie die Datei "extension.vsixmanifest", in der Codeansicht.  
+1. Öffnen Sie die Datei "Extension. vsixmanifest" in der Code Ansicht.  
   
-2. In der `Identifier` -Element des Vsix-Manifests, Hinzufügen einer `AllUsers` -Element, das einem von Wert `true`.  
+2. `Identifier`Fügen Sie im-Element des VSIX-Manifests ein `AllUsers` Element mit dem Wert hinzu `true` .  
   
     ```  
     <AllUsers>true</AllUsers>  
     ```  
   
-     Dies bewirkt, dass das Vsix-Installationsprogramm, um für Administratorberechtigungen fordert, und installieren Sie die Dateien auf \Common7\IDE\Extensions.  
+     Dies bewirkt, dass der VSIX-Installer Administrator Berechtigungen auffordert und die Dateien dann in "\common7\ide\Extensions" installiert.  
   
-3. Öffnen Sie die PKGDEF-Datei.  
+3. Öffnen Sie die pkgdef-Datei.  
   
-4. Ändern Sie die PKGDEF, um die Standardstartseite unter HKLM zu festlegen, indem Sie Folgendes ein, wobei *MyStartPage.xaml* ist der Name der XAML-Datei, die Startseite enthält.  
+4. Ändern Sie die pkgdef-Datei, um die Standard Startseite unter HKLM festzulegen, indem Sie Folgendes hinzufügen, wobei *mystartpage. XAML* der Name der XAML-Datei ist, die Ihre Startseite enthält.  
   
-     [$RootKey$\StartPage\Default]  
+     [$RootKey $ \startpage\standard]  
   
-     "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
+     "URI" = "$PackageFolder $ \\ *mystartpage. XAML*"  
   
-     Dadurch wird das Visual erstellt, in den neuen Speicherort für die Startseite zu suchen.  
+     Dadurch wird die Visualisierung angezeigt, um am neuen Speicherort der Start Seite zu suchen.  
   
-## <a name="file-copy-deployment"></a>Datei-Copy-Bereitstellung  
- Sie müssen nicht zum Bereitstellen einer benutzerdefinierten Startseite eine VSIX-Datei zu erstellen. Stattdessen können Sie das Markup und die unterstützenden Dateien direkt in den Ordner "\StartPages\" des Benutzers kopieren. Der **Customize Start Page** auf in der Liste der **Start** Seite "Optionen" listet alle XAML-Datei in diesem Ordner zusammen mit dem Pfad, z. B. %USERPROFILE%\My Documents\Visual Studio  *Version*\StartPages\\*Dateiname*XAML. Wenn Ihre Startseite Verweise auf private Assemblys enthält, müssen Sie kopieren und fügen Sie sie im Ordner "\PrivateAssemblies\".  
+## <a name="file-copy-deployment"></a>Datei Kopier Bereitstellung  
+ Zum Bereitstellen einer benutzerdefinierten Start Seite müssen Sie keine vsix-Datei erstellen. Stattdessen können Sie das Markup und die unterstützenden Dateien direkt in den Ordner "\startpges\" des Benutzers kopieren. In der Liste **Startseite anpassen** auf der Seite **Start** Optionen werden alle XAML-Dateien in diesem Ordner und der Pfad aufgeführt – beispielsweise%USERPROFILE%\My Documents\Visual Studio *Version*\StartPages \\ *Dateiname*. XAML. Wenn die Start Seite Verweise auf private Assemblys enthält, müssen Sie Sie kopieren und in den Ordner \privateassemblies\ einfügen.  
   
- Um eine Startseite zu verteilen, die Sie ohne Verpackung erstellt empfiehlt in einem VSIX-Datei, eine Strategie für die Basisdatei kopieren verwenden, z. B. ein Stapelverarbeitungsskript ausführen oder eine andere bereitstellungstechnologie, mit dem Sie legen Sie die Dateien in den Verzeichnissen erforderlichen.  
+ Zum Verteilen einer Start Seite, die Sie erstellt haben, ohne Sie in einer vsix-Datei zu packen, empfiehlt es sich, eine grundlegende Datei Kopier Strategie zu verwenden, z. b. ein Batch Skript oder eine beliebige andere Bereitstellungs Technologie, mit der Sie die Dateien in die erforderlichen Verzeichnisse einfügen können.  
   
-#### <a name="to-manually-install-a-custom-start-page"></a>So installieren Sie manuell eine benutzerdefinierte Startseite  
+#### <a name="to-manually-install-a-custom-start-page"></a>So installieren Sie eine benutzerdefinierte Start Seite manuell  
   
-1. Kopieren Sie die XAML-Datei, die im Markup der Seite starten, sowie alle unterstützenden Dateien als Assemblys enthält, und fügen Sie sie im Ordner "\StartPages\" des Benutzers.  
+1. Kopieren Sie die XAML-Datei, die das Markup der Start Seite enthält, sowie alle unterstützenden Dateien, die keine Assemblys sind, und fügen Sie Sie in den Ordner "\startpages\" des Benutzers ein.  
   
-2. Wenn Sie die Startseite erforderlich ist, kopieren Sie und fügen Sie sie in... \\ *Visual Studio-Installationsordner*\Common7\IDE\PrivateAssemblies\\.  
+2. Wenn die Start Seite Assemblys erfordert, kopieren Sie Sie, und fügen Sie Sie in ein. \\ *Visual Studio-Installationsordner*\common7\ide\privateassemblys \\ .  
   
-3. In der **Customize Start Page** auf in der Liste der **Start** Optionen Seite, wählen Sie die neue Startseite. Weitere Informationen finden Sie unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. Wählen Sie in der Liste **Startseite anpassen** auf der Seite **Start** Optionen die neue Startseite aus. Weitere Informationen finden Sie unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).  
   
-## <a name="see-also"></a>Siehe auch  
- [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Anpassen der Start Seite](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Hinzufügen eines Benutzersteuerelements zur Startseite](../extensibility/adding-user-control-to-the-start-page.md)
