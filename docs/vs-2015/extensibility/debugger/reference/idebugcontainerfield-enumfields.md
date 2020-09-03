@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Microsoft-Dokumentation
+title: 'Idebugcontainerfield:: EnumFields | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 485de4bdc9ff5b17c056c0db4e2930f5c6986fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205299"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
@@ -48,29 +48,29 @@ int EnumFields(
   
 #### <a name="parameters"></a>Parameter  
  `dwKindFilter`  
- [in] Eine Kombination von [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten, die die Felder aufgelistet werden sollen. Feld-Arten können Speichertypen, z. B. Klasse oder primitive-Typs oder bestimmte Informationen, z. B. lokale, Parameter oder "this"-Zeigers zu beschreiben.  
+ in Eine Kombination aus [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten, die die aufzuzählenden Felder auswählen. Feldtypen können Speichertypen beschreiben, z. b. Klasse oder primitiv, oder bestimmte Informationen, wie z. b. local, Parameter oder "This"-Zeiger.  
   
  `dwModifiersFilter`  
- [in] Eine Kombination von [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) Konstanten, die die Felder aufgelistet werden sollen. Feldmodifizierern können Zugriffsberechtigungen, wie z. B. öffentliche oder Private oder Storage-Informationen, z. B. virtuelle, statisch oder abschließend sein.  
+ in Eine Kombination aus [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) Konstanten, die die aufzuzählenden Felder auswählen. Feldmodifizierer können Zugriffsberechtigungen sein, z. b. Public oder private, oder Speicherinformationen, wie z. b. Virtual, static oder Final.  
   
  `pszNameFilter`  
- [in] Der Name des Felds, das aufgelistet werden. Dies kann ein null-Wert sein, wenn alle Felder sind, zurückgegeben werden.  
+ in Der Name des Felds, das aufgelistet werden soll. Dies kann ein NULL-Wert sein, wenn alle Felder zurückgegeben werden sollen.  
   
  `nameMatch`  
- [in] Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) -Enumeration, der steuert, ob die Suche nach Groß-/Kleinschreibung beachtet wird, oder nicht.  
+ in Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration, der steuert, ob bei der Suche die Groß-/Kleinschreibung beachtet wird.  
   
  `ppEnum`  
- [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der Felder darstellt. Gibt einen null-Wert zurück, wenn keine Felder vorhanden sind.  
+ vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste der Felder darstellt. Gibt einen NULL-Wert zurück, wenn keine Felder vorhanden sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück, oder S_FALSE zurück, wenn keine Felder vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK oder S_FALSE zurückgegeben, wenn keine Felder vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Die `dwKindFilter`, `dwModifiersFilter`, und `pszNameFilter` Parameter können kombiniert werden, z. B. alle öffentliche virtuelle Methoden, die mit dem Namen "MyMethod" auswählen.  
+## <a name="remarks"></a>Bemerkungen  
+ Die `dwKindFilter` `dwModifiersFilter` Parameter, und `pszNameFilter` können kombiniert werden, um z. b. Alle öffentlichen virtuellen Methoden mit dem Namen "MyMethod" auszuwählen.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugcontainerfield](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
+ [Ienumdebug-Felder](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

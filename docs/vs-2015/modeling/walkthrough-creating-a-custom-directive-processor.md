@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 208089e4a9caeea5f8b56cdf694b7aaa602228ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659322"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors
@@ -34,7 +34,7 @@ Direktivenprozessoren * funktionieren, indem Sie der *generierten Transformation
 
 - Testen des Direktivenprozessors
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Um die exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:
 
 - Visual Studio 2010
@@ -90,9 +90,9 @@ End Property
 
 2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 1,0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \* . 1,0**
 
 3. Ersetzen Sie den Code in **Class1** durch den folgenden Code. Dieser Code definiert eine CustomDirectiveProcessor-Klasse, die von der <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>-Klasse erbt und die erforderlichen Methoden implementiert.
 
@@ -606,17 +606,17 @@ End Property
     End Namespace
     ```
 
-4. Öffnen Sie nur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] das Menü **Projekt** , und klicken Sie auf **customdp-Eigenschaften**. Löschen Sie auf der Registerkarte **Anwendung** unter Stamm **Namespace**den Standardwert `CustomDP`.
+4. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Öffnen Sie nur für das Menü **Projekt** , und klicken Sie auf **customdp-Eigenschaften**. Löschen Sie auf der Registerkarte **Anwendung** unter Stamm **Namespace**den Standardwert `CustomDP` .
 
 5. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
-6. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+6. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 ### <a name="build-the-project"></a>Erstellen des Projekts
- Erstellen Sie das Projekt. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+ Erstellen Sie das Projekt. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
 
 ## <a name="registering-the-directive-processor"></a>Registrieren des Anweisungsprozessors
- Bevor Sie eine-Direktive aus einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] abrufen können, müssen Sie einen Registrierungsschlüssel für den Direktivenprozessor hinzufügen.
+ Bevor Sie eine-Direktive aus einer Textvorlage in abrufen können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , müssen Sie einen Registrierungsschlüssel für den Direktivenprozessor hinzufügen.
 
 > [!NOTE]
 > Wenn Sie den Anweisungsprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX) zu definieren, die eine PKGDEF-Datei und die Assembly enthält. Weitere Informationen finden Sie unter Bereitstellen [eines benutzerdefinierten direktivenprozessors](../modeling/deploying-a-custom-directive-processor.md).
@@ -636,15 +636,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schlüssel für den benutzerdefinierten Anweisungsprozessor hinzu.
 
 > [!CAUTION]
-> Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Sichern Sie alle wichtigen Daten auf dem Computer, bevor Sie Änderungen an der Registrierung vornehmen.
+> Ein fehlerhaftes Bearbeiten der Registrierung kann eine schwerwiegende Beschädigung des Systems zur Folge haben. Sichern Sie alle wichtigen Daten auf dem Computer, bevor Sie Änderungen an der Registrierung vornehmen.
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>So fügen Sie einen Registrierungsschlüssel für den Anweisungsprozessor hinzu
 
-1. Führen Sie den `regedit` Befehl über das Startmenü oder die Befehlszeile aus.
+1. Führen `regedit` Sie den Befehl über das Startmenü oder die Befehlszeile aus.
 
-2. Navigieren Sie zum Speicherort **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* 0 \ texttemplating\directiveprocessor**, und klicken Sie auf den Knoten.
+2. Navigieren Sie zum Speicherort **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* 0 \ texttemplating\directiveprocessor**, und klicken Sie auf den Knoten.
 
-    Verwenden Sie auf 64-Bit-Systemen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ texttemplating\directiveprozessoren**
+    Verwenden Sie auf 64-Bit-Systemen **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ texttemplating\directiveprozessoren.**
 
 3. Fügen Sie einen neuen Schlüssel mit dem Namen "CustomDirectiveProcessor" hinzu.
 
@@ -655,21 +655,21 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 5. Fügen Sie einen neuen Zeichenfolgenwert mit dem Namen "CodeBase" hinzu, dessen Wert dem Pfad der zuvor in dieser exemplarischen Vorgehensweise erstellten CustomDP.dll entspricht.
 
-    Der Pfad könnte z. b. wie `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll` aussehen.
+    Der Pfad könnte z. b. wie folgt aussehen: `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll` .
 
     Folgende Werte müssen für den Registrierungsschlüssel festgelegt werden:
 
-   |   -Name    |  Geben Sie Folgendes ein:  |                                   Daten                                   |
+   |   Name    |  Typ  |                                   Daten                                   |
    |-----------|--------|--------------------------------------------------------------------------|
-   | (Standard) | REG_SZ |                             (Wert nicht festgelegt)                              |
+   | (Standardwert) | REG_SZ |                             (Wert nicht festgelegt)                              |
    |   Klasse   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
-   | CodeBase  | REG_SZ | <strong>\<Path Ihrer Lösung ></strong> Customdp\bin\debug\customdp.dll |
+   | CodeBase  | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
     Wenn Sie die Assembly im GAC gespeichert haben, sollten die Werte wie folgt aussehen:
 
-   |   -Name    |  Geben Sie Folgendes ein:  |               Daten                |
+   |   Name    |  Typ  |               Daten                |
    |-----------|--------|-----------------------------------|
-   | (Standard) | REG_SZ |          (Wert nicht festgelegt)          |
+   | (Standardwert) | REG_SZ |          (Wert nicht festgelegt)          |
    |   Klasse   | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly  | REG_SZ |           CustomDP.dll            |
 
@@ -684,7 +684,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>So erstellen Sie eine XML-Datei zum Testen des Anweisungsprozessors
 
-1. Erstellen Sie mit einem beliebigen Text-Editor (z. b. Notepad) eine Textdatei mit dem Namen `DocFile.xml`.
+1. Erstellen Sie eine Textdatei mit `DocFile.xml` dem Namen, indem Sie einen beliebigen Text-Editor (z. b. Editor) verwenden.
 
     > [!NOTE]
     > Diese Datei kann an einem beliebigen Speicherort erstellt werden (z. B. C:\Test\DocFile.xml).
@@ -738,12 +738,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 2. Fügen Sie eine neue Textvorlagendatei mit dem Namen "TestDP.tt" hinzu.
 
-3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von TestDP.tt auf `TextTemplatingFileGenerator` festgelegt ist.
+3. Stellen Sie sicher, dass die Eigenschaft **benutzerdefiniertes Tool** von TestDP.tt auf festgelegt ist `TextTemplatingFileGenerator` .
 
 4. Ändern Sie den Inhalt von "TestDP.tt" in den folgenden Text.
 
     > [!NOTE]
-    > Stellen Sie sicher, dass Sie die Zeichenfolge < `YOUR PATH>` durch den Pfad zur Datei "DOCFILE. xml" ersetzen.
+    > Stellen Sie sicher, dass Sie die Zeichenfolge <`YOUR PATH>` durch den Pfad zur DocFile.xml Datei ersetzen.
 
      Die Sprache der Textvorlage muss nicht mit der Sprache des Anweisungsprozessors identisch sein.
 
@@ -838,9 +838,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf TestDP.TT und dann auf **benutzerdefiniertes Tool ausführen**.
 
-     Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Benutzer wird "testdp. txt" in **Projektmappen-Explorer** möglicherweise nicht standardmäßig angezeigt. Um alle dem Projekt zugewiesenen Dateien anzuzeigen, öffnen Sie das Menü **Projekt** , und klicken Sie auf **alle Dateien anzeigen**.
+     Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Benutzer werden TestDP.txt in **Projektmappen-Explorer** standardmäßig möglicherweise nicht angezeigt. Um alle dem Projekt zugewiesenen Dateien anzuzeigen, öffnen Sie das Menü **Projekt** , und klicken Sie auf **alle Dateien anzeigen**.
 
-2. Erweitern Sie in **Projektmappen-Explorer**den Knoten "testdp. txt", und doppelklicken Sie dann auf "testdp. txt", um die Datei im Editor zu öffnen.
+2. Erweitern Sie in **Projektmappen-Explorer**den Knoten TestDP.txt, und doppelklicken Sie dann auf TestDP.txt, um Sie im Editor zu öffnen.
 
      Die generierte Textausgabe wird angezeigt. Die Ausgabe sollte wie folgt aussehen:
 
@@ -879,10 +879,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-add-html-to-the-generated-text"></a>So fügen Sie dem generierten Text HTML hinzu
 
-1. Ersetzen Sie den Code in "TestDP.tt" durch den folgenden Code. Der HTML-Code ist hervorgehoben. Stellen Sie sicher, dass Sie die Zeichenfolge `YOUR PATH` durch den Pfad zur Datei "DOCFILE. xml" ersetzen.
+1. Ersetzen Sie den Code in "TestDP.tt" durch den folgenden Code. Der HTML-Code ist hervorgehoben. Stellen Sie sicher, dass Sie die Zeichenfolge `YOUR PATH` durch den Pfad zur DocFile.xml Datei ersetzen.
 
     > [!NOTE]
-    > Zusätzliche Open \< #-und Close # >-Tags trennen den Anweisungs Code von den HTML-Tags.
+    > Zusätzliche geöffnete \<# and close #> Tags trennen den Anweisungs Code von den HTML-Tags.
 
     ```csharp
     <#@ assembly name="System.Xml" #>
@@ -964,8 +964,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. Klicken Sie im Menü **Datei** auf **testdp. txt speichern**.
+2. Klicken Sie im Menü **Datei** auf **TestDP.txtspeichern **.
 
-3. Wenn Sie die Ausgabe in einem Browser anzeigen möchten, klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf testdp. htm, und klicken Sie dann auf **in Browser anzeigen**.
+3. Wenn Sie die Ausgabe in einem Browser anzeigen möchten, klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf TestDP.htm, und klicken Sie dann auf **in Browser anzeigen**.
 
      Die Ausgabe sollte dem ursprünglichen Text entsprechen, jedoch HTML-formatiert sein. Jeder Elementname sollte fett formatiert sein.

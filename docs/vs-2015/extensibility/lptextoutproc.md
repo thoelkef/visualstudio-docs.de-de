@@ -1,5 +1,5 @@
 ---
-title: LPTEXTOUTPROC | Microsoft-Dokumentation
+title: Lptextoutproc | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -17,21 +17,21 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194448"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn der Benutzer einen Quellcodeverwaltungsvorgang von innerhalb der integrierten Entwicklungsumgebung (IDE) ausgeführt wird, sollten das Quellcodeverwaltungs-Plug-Ins Fehler oder Status-Meldungen, die im Zusammenhang mit der Operation zu vermitteln. Das plug-in kann eine eigene Meldungsfeldern zu diesem Zweck werden angezeigt. Allerdings können für die weitere nahtlose Integration der Plug-in-Zeichenfolgen der IDE übergeben, die klicken Sie dann auf native Weise zum Anzeigen von Statusinformationen werden angezeigt. Der Mechanismus hierfür ist die `LPTEXTOUTPROC` Funktionszeiger. Die IDE implementiert diese Funktion, die (im folgenden ausführlicher beschrieben), für die Anzeige von Fehler- und statusmeldungen.  
+Wenn der Benutzer einen Quell Code Verwaltungsvorgang innerhalb der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) ausführt, möchte das Quellcodeverwaltungs-Plug-in möglicherweise Fehler-oder Statusmeldungen im Zusammenhang mit dem Vorgang übermitteln. Das Plug-in kann zu diesem Zweck seine eigenen Meldungs Felder anzeigen. Allerdings kann das Plug-in für eine nahtlose Integration Zeichen folgen an die IDE übergeben, die Sie dann in der nativen Weise anzeigen, in der Statusinformationen angezeigt werden. Der Mechanismus hierfür ist der `LPTEXTOUTPROC` Funktionszeiger. Die IDE implementiert diese Funktion (unten ausführlicher beschrieben) zum Anzeigen von Fehlern und Status.  
   
- Die IDE übergibt und der Quellcode-Plug-in einen Funktionszeiger zu dieser Funktion, als die `lpTextOutProc` Parameter beim Aufrufen der [SccOpenProject](../extensibility/sccopenproject-function.md). Während eines SCC-Vorgangs, z. B. in der Mitte einen Aufruf der [SccGet](../extensibility/sccget-function.md) im Zusammenhang mit vielen Dateien, die-Plug-in Aufrufen der `LPTEXTOUTPROC` Funktion, die in regelmäßigen Abständen übergeben von Zeichenfolgen, die zum Anzeigen. Diese Zeichenfolgen möglicherweise eine Statusleiste, die in einem Fenster "Ausgabe" oder in einem separaten Meldungsfeld, entsprechend der IDE angezeigt. Optional die IDE möglicherweise können Sie bestimmte Nachrichten mit einem **Abbrechen** Schaltfläche. Dadurch kann der Benutzer, den Vorgang abzubrechen, und es bietet der IDE auf die Möglichkeit, diese Informationen zurück an das plug-in übergeben.  
+ Die IDE übergibt dem Quellcodeverwaltungs-Plug-in einen Funktionszeiger auf diese Funktion als `lpTextOutProc` Parameter, wenn das [sccopenproject](../extensibility/sccopenproject-function.md)aufgerufen wird. Während eines SCC-Vorgangs, z. b. in der Mitte eines Aufrufens von [sccget](../extensibility/sccget-function.md) , der viele Dateien umfasst, kann das Plug-in die `LPTEXTOUTPROC` Funktion aufrufen und regelmäßig Zeichen folgen zur Anzeige übergeben. In der IDE können diese Zeichen folgen ggf. auf einer Statusleiste, in einem Ausgabefenster oder in einem separaten Meldungs Feld angezeigt werden. Optional kann die IDE bestimmte Nachrichten mit der Schaltfläche " **Abbrechen** " anzeigen. Dadurch kann der Benutzer den Vorgang abbrechen, und die IDE erhält die Möglichkeit, diese Informationen an das Plug-in zurückzugeben.  
   
 ## <a name="signature"></a>Signatur  
- Die IDE Ausgabe, dass die Funktion die folgende Signatur verfügt:  
+ Die Ausgabefunktion der IDE weist die folgende Signatur auf:  
   
 ```cpp#  
 typedef LONG (*LPTEXTOUTPROC) (  
@@ -42,36 +42,36 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="parameters"></a>Parameter  
  display_string  
- Eine Textzeichenfolge angezeigt. Diese Zeichenfolge sollte nicht mit einem Wagenrücklauf zurück oder einen Zeilenvorschub beendet werden.  
+ Eine anzuzeigende Text Zeichenfolge. Diese Zeichenfolge sollte nicht mit einem Wagen Rücklauf oder Zeilenvorschub beendet werden.  
   
  mesg_type  
- Der Typ der Meldung. Die folgende Tabelle enthält die unterstützten Werte für diesen Parameter an.  
+ Der Typ der Meldung. In der folgenden Tabelle sind die unterstützten Werte für diesen Parameter aufgeführt.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Die Nachricht gilt als Information, Warnung oder Fehler.|  
-|`SCC_MSG_STATUS`|Die Nachricht wird angezeigt und kann in der Statusleiste angezeigt werden.|  
-|`SCC_MSG_DOCANCEL`|Mit der keine Zeichenfolge gesendet.|  
-|`SCC_MSG_STARTCANCEL`|Beginnt die Anzeige einer **Abbrechen** Schaltfläche.|  
-|`SCC_MSG_STOPCANCEL`|Beendet die Anzeige einer **Abbrechen** Schaltfläche.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Fordert IDE, wenn der Vorgang im Hintergrund ist, abgebrochen werden soll: IDE gibt `SCC_MSG_RTN_CANCEL` Wenn der Vorgang abgebrochen wurde; andernfalls `SCC_MSG_RTN_OK`. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
-|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Teilt die IDE zu einer Datei an, bevor sie von der Versionskontrolle abgerufen werden. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
-|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Weist Sie die IDE zu einer Datei, nachdem sie aus der Versionskontrolle abgerufen wurde. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
-|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Teilt die IDE mit dem aktuellen Status eines Hintergrundvorgangs. Die `display_string` als Parameter umgewandelt wird ein [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) -Struktur, die durch das Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
+|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Die Meldung wird als Information, Warnung oder Fehler betrachtet.|  
+|`SCC_MSG_STATUS`|Die Meldung zeigt den Status an und kann in der Statusleiste angezeigt werden.|  
+|`SCC_MSG_DOCANCEL`|Gesendet ohne Meldungs Zeichenfolge.|  
+|`SCC_MSG_STARTCANCEL`|Beginnt mit dem Anzeigen der Schaltfläche **Abbrechen** .|  
+|`SCC_MSG_STOPCANCEL`|Beendet die Anzeige einer Schaltfläche " **Abbrechen** ".|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Fragt IDE, ob der Hintergrund Vorgang abgebrochen werden soll: IDE gibt zurück `SCC_MSG_RTN_CANCEL` , wenn der Vorgang abgebrochen wurde; andernfalls wird zurückgegeben `SCC_MSG_RTN_OK` . Der- `display_string` Parameter wird als [sccmsgdataisabgeb Rochen](#LinkSccMsgDataIsCancelled) -Struktur umgewandelt, die vom Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
+|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Teilt der IDE eine Datei zu, bevor Sie aus der Versionskontrolle abgerufen wird. Der- `display_string` Parameter wird als [sccmsgdataonbeforegetfile](#LinkSccMsgDataOnBeforeGetFile) -Struktur umgewandelt, die vom Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
+|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Teilt der IDE eine Datei zu, nachdem Sie aus der Versionskontrolle abgerufen wurde. Der- `display_string` Parameter wird als [sccmsgdataonaftergetfile](#LinkSccMsgDataOnAfterGetFile) -Struktur umgewandelt, die vom Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
+|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Teilt der IDE den aktuellen Status eines Hintergrund Vorgangs mit. Der- `display_string` Parameter wird als [sccmsgdataonmessage](#LinkSccMsgDataOnMessage) -Struktur umgewandelt, die vom Quellcodeverwaltungs-Plug-in bereitgestellt wird.|  
   
 ## <a name="return-value"></a>Rückgabewert  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_MSG_RTN_OK|Die Zeichenfolge angezeigt wurde, oder der Vorgang erfolgreich abgeschlossen wurde.|  
-|SCC_MSG_RTN_CANCEL|Der Benutzer möchte den Vorgang abzubrechen.|  
+|SCC_MSG_RTN_OK|Die Zeichenfolge wurde angezeigt, oder der Vorgang wurde erfolgreich abgeschlossen.|  
+|SCC_MSG_RTN_CANCEL|Der Benutzer möchte den Vorgang abbrechen.|  
   
 ## <a name="example"></a>Beispiel  
- Nehmen Sie die IDE-Aufrufe an die [SccGet](../extensibility/sccget-function.md) mit 20 Dateinamen. Möchte, dass das Quellcodeverwaltungs-Plug-in zu verhindern, dass der Vorgang in der Mitte einer Datei Get abgebrochen wird. Nach dem Abrufen von jeder Datei, ruft `lpTextOutProc`, übergeben sie die Statusinformationen für jede Datei und sendet eine `SCC_MSG_DOCANCEL` Nachricht, wenn es kein Status gemeldet wurde. Wenn zu einem beliebigen Zeitpunkt das plug-in einen Rückgabewert von empfängt `SCC_MSG_RTN_CANCEL` aus der IDE sie Get-Vorgang abgebrochen wird sofort, damit keine Dateien mehr abgerufen werden.  
+ Angenommen, die IDE ruft [sccget](../extensibility/sccget-function.md) mit zwanzig Dateinamen auf. Das Quellcodeverwaltungs-Plug-in möchte verhindern, dass der Vorgang in der Mitte einer Datei abrufen abgebrochen wird. Nachdem jede Datei aufgerufen wurde, ruft Sie `lpTextOutProc` auf, übergibt ihr die Statusinformationen für jede Datei und sendet eine `SCC_MSG_DOCANCEL` Meldung, wenn Sie keinen Status zum Bericht hat. Wenn das Plug-in den Rückgabewert von `SCC_MSG_RTN_CANCEL` der IDE erhält, wird der Get-Vorgang sofort abgebrochen, sodass keine weiteren Dateien mehr abgerufen werden.  
   
 ## <a name="structures"></a>Strukturen  
   
-### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="sccmsgdataiscancelled"></a><a name="LinkSccMsgDataIsCancelled"></a> Sccmsgdataisabgeb Rochen  
   
 ```cpp#  
 typedef struct {  
@@ -79,9 +79,9 @@ typedef struct {
 } SccMsgDataIsCancelled;  
 ```  
   
- Diese Struktur wird gesendet, mit der `SCC_MSG_BACKGROUND_IS_CANCELLED` Nachricht. Es wird verwendet, um die ID der der Vorgang im Hintergrund zu kommunizieren, das abgebrochen wurde.  
+ Diese Struktur wird mit der `SCC_MSG_BACKGROUND_IS_CANCELLED` Nachricht gesendet. Sie wird verwendet, um die ID des Hintergrund Vorgangs zu übermitteln, der abgebrochen wurde.  
   
-### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="sccmsgdataonbeforegetfile"></a><a name="LinkSccMsgDataOnBeforeGetFile"></a> Sccmsgdataonbeforegetfile  
   
 ```cpp#  
 typedef struct {  
@@ -90,9 +90,9 @@ typedef struct {
 } SccMsgDataOnBeforeGetFile;  
 ```  
   
- Diese Struktur wird gesendet, mit der `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` Nachricht. Es wird zum Kommunizieren der Name der Datei abgerufen werden sollen und die ID der der Vorgang im Hintergrund, der das Abrufen von durchführt.  
+ Diese Struktur wird mit der `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` Nachricht gesendet. Sie wird verwendet, um den Namen der abzurufenden Datei und die ID des Hintergrund Vorgangs zu übermitteln, der den Abruf Vorgang durchläuft.  
   
-### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="sccmsgdataonaftergetfile"></a><a name="LinkSccMsgDataOnAfterGetFile"></a> Sccmsgdataonaftergetfile  
   
 ```cpp#  
 typedef struct {  
@@ -102,9 +102,9 @@ typedef struct {
 } SccMsgDataOnAfterGetFile;  
 ```  
   
- Diese Struktur wird gesendet, mit der `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` Nachricht. Es wird verwendet, um das Ergebnis vom Abrufen der angegebenen Datei als auch die ID der der Vorgang im Hintergrund, die das Abrufen von zu kommunizieren. Finden Sie unter die Rückgabewerte für die [SccGet](../extensibility/sccget-function.md) für was daher angegeben werden kann.  
+ Diese Struktur wird mit der `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` Nachricht gesendet. Sie wird verwendet, um das Ergebnis des Abrufens der angegebenen Datei sowie die ID des Hintergrund Vorgangs zu übermitteln, der vom abgerufen wurde. Sehen Sie sich die Rückgabewerte für [sccget](../extensibility/sccget-function.md) für die Ergebnisse an.  
   
-### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="sccmsgdataonmessage"></a><a name="LinkSccMsgDataOnMessage"></a> Sccmsgdataonmessage  
  [C++]  
   
 ```  
@@ -115,10 +115,10 @@ typedef struct {
 } SccMsgDataOnMessage;  
 ```  
   
- Diese Struktur wird gesendet, mit der `SCC_MSG_BACKGROUND_ON_MESSAGE` Nachricht. Es wird verwendet, um den aktuellen Status eines Hintergrundvorgangs zu kommunizieren. Der Status wird angegeben, wie eine Zeichenfolge, die von der IDE angezeigt werden soll und `bIsError` gibt den Schweregrad der Meldung (`TRUE` für eine Fehlermeldung, `FALSE` für eine Warnung oder informationsmeldung). Die ID des Hintergrundvorgangs senden den Status wird auch zugewiesen.  
+ Diese Struktur wird mit der `SCC_MSG_BACKGROUND_ON_MESSAGE` Nachricht gesendet. Sie wird verwendet, um den aktuellen Status eines Hintergrund Vorgangs zu übermitteln. Der Status wird als Zeichenfolge ausgedrückt, die von der IDE angezeigt wird, und `bIsError` zeigt den Schweregrad der Nachricht an ( `TRUE` für eine Fehlermeldung, `FALSE` eine Warnung oder eine Informations Meldung). Die ID des Hintergrund Vorgangs, der den Status sendet, wird ebenfalls angegeben.  
   
 ## <a name="code-example"></a>Codebeispiel  
- Hier ist ein kurzes Beispiel des Aufrufs `LPTEXTOUTPROC` zum Senden der `SCC_MSG_BACKGROUND_ON_MESSAGE` Nachricht, die zeigt, wie die Struktur für den Aufruf umgewandelt.  
+ Im folgenden finden Sie ein kurzes Beispiel für das Aufrufen von `LPTEXTOUTPROC` zum Senden der `SCC_MSG_BACKGROUND_ON_MESSAGE` Nachricht, das zeigt, wie die-Struktur für den-Aufruf umgewandelt wird.  
   
 ```cpp#  
 LONG SendStatusMessage(  
@@ -139,6 +139,6 @@ LONG SendStatusMessage(
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Von der IDE implementierte Rückruf Funktionen](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)

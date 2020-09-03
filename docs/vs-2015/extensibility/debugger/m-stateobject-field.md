@@ -1,5 +1,5 @@
 ---
-title: M_stateObject-Feld | Microsoft-Dokumentation
+title: m_stateObject Feld | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e9cfc6f689504bef2a8366f90282641d1e9e105
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149051"
 ---
-# <a name="mstateobject-field"></a>m_stateObject-Feld
+# <a name="m_stateobject-field"></a>m_stateObject-Feld
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.  
+Ein-Objekt, das Daten darstellt, die von der Aktion verwendet werden.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,8 +34,8 @@ Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.
 .field assembly object m_stateObject  
 ```  
   
-## <a name="remarks"></a>Hinweise  
- Dies ist die `state` Parameter in der <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor. Es ist auch das dahinter liegende Feld für die <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Eigenschaft.  
+## <a name="remarks"></a>Bemerkungen  
+ Dies ist der `state` Parameter im <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor. Es ist auch das Unterstützungs Feld für die- <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Eigenschaft.  
   
-## <a name="see-also"></a>Siehe auch  
- [Aufgabenklasse](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

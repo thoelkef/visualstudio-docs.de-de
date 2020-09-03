@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Microsoft Docs
+title: 'Ieedatastorage:: GetData | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62a1295aeb2a6afad51dee0f1015e3ab01d13fbb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718212"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
-Ruft die angegebene Anzahl von Bytes aus dem Objekt ab.
+Ruft die angegebene Anzahl von Bytes aus dem-Objekt ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,19 +45,19 @@ int GetData(
 
 ## <a name="parameters"></a>Parameter
 `dataSize`\
-[in] Die Anzahl der abzurufenden Bytes (das `data` Array muss mindestens diese Anzahl von Bytes enthalten).
+in Die Anzahl der abzurufenden bytes (das `data` Array muss mindestens diese Anzahl von Bytes enthalten).
 
 `sizeGotten`\
-[out] Gibt die Anzahl der tatsächlich abgerufenen Bytes zurück.
+vorgenommen Gibt die Anzahl der tatsächlich abgerufenen Bytes zurück.
 
 `data`\
-[in, out] Array, das mit den angeforderten Daten ausgefüllt werden soll.
+[in, out] Das Array, das mit den angeforderten Daten aufgefüllt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Die empfohlene Verwendung dieser Methode besteht darin, alle Datenbytes in ein lokales Array abzurufen, da es keine Möglichkeit gibt, Bytes im Abrufvorgang zu überspringen. In diesem Fall `dataSize` sollte der Parameter der Wert sein, der von der [GetSize-Methode](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) zurückgegeben wird.
+ Die empfohlene Verwendung dieser Methode besteht darin, alle Daten Bytes in ein lokales Array abzurufen, da es keine Möglichkeit gibt, die Bytes im Abruf Vorgang zu überspringen. In diesem Fall sollte der-Parameter `dataSize` der Wert sein, der von der [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) -Methode zurückgegeben wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

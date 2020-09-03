@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586808"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Erstellen eines Windows Forms zum Suchen von Daten
@@ -43,7 +43,7 @@ In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranscha
 
 - Eingeben von Parametern in das Formular und Ausführen der parametrisierten Abfrage.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -63,7 +63,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 ## <a name="create-the-windows-forms-application"></a>Erstellen der Windows Forms Anwendung
 
-Erstellen Sie ein neues **Windows Forms-App** - C# Projekt für oder Visual Basic. Weisen Sie dem Projekt den Namen **WindowsSearchForm** zu.
+Erstellen Sie ein neues **Windows Forms-App** -Projekt für c# oder Visual Basic. Weisen Sie dem Projekt den Namen **WindowsSearchForm** zu.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
 
@@ -71,7 +71,7 @@ Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei w
 
 1. Um das Fenster **Datenquellen** zu öffnen, klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus, um den Assistenten zum **Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.
 
@@ -91,9 +91,9 @@ Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei w
 
      **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers**-Tabelle wird im **Datenquellenfenster** angezeigt.
 
-## <a name="create-the-form"></a>Formular erstellen
+## <a name="create-the-form"></a> Erstellen eines Formulars
 
-Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** auf das Formular ziehen:
+Sie können die Daten gebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellen** Fenster auf das Formular ziehen:
 
 1. Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.
 
@@ -121,7 +121,7 @@ Mit dem Dialogfeld **Suchkriterien** -Generator können Sie der ursprünglichen 
      ```
 
     > [!NOTE]
-    > Zugriffs-und OLE DB Datenquellen verwenden das Fragezeichen ('? ') zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussieht: `WHERE City = ?`.
+    > Zugriffs-und OLE DB Datenquellen verwenden das Fragezeichen ('? ') zum Angeben von Parametern, sodass die WHERE-Klausel wie folgt aussieht: `WHERE City = ?` .
 
 4. Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien-Generator** zu schließen.
 
@@ -145,6 +145,6 @@ Je nach den Anforderungen der Anwendung können nach dem Erstellen eines paramet
 
 - Hinzufügen oder Entfernen von Datenbankobjekten aus dem Dataset durch Bearbeiten. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

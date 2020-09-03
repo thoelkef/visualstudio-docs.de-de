@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump | Microsoft-Dokumentation
+title: 'IDebugProgram2:: Write-Dump | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 491515d2778c6ad16287739bfc88d8134903d2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205803"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Schreibt einen Dump in eine Datei an.  
+Schreibt ein dump in eine Datei.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,16 +42,16 @@ int WriteDump( 
   
 #### <a name="parameters"></a>Parameter  
  `DumpType`  
- [in] Ein Wert aus der [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) -Enumeration, der den Typ des Dumps, gibt an, z. B. "," short oder Long.  
+ in Ein Wert aus der [dumptype](../../../extensibility/debugger/reference/dumptype.md) -Enumeration, der den Typ des dumpwerts angibt, z. b. Short oder Long.  
   
  `pszDumpUrl`  
- [in] Die URL, die das Speichern des Abbilds angegeben. Dies ist normalerweise in Form von `file://c:\path\filename.ext`, aber eine beliebige gültige URL sein kann.  
+ in Die URL, in die der Dump geschrieben werden soll. In der Regel ist dies in Form von `file://c:\path\filename.ext` , kann jedoch eine beliebige gültige URL sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ein Programm Dump würde in der Regel enthalten, den aktuellen Stapelrahmen, der Stapel selbst, eine Liste der Threads, die auf das Programm, und möglicherweise Speicher, der die Anwendung besitzt.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein Programm Abbild umfasst in der Regel den aktuellen Stapel Rahmen, den Stapel selbst, eine Liste der Threads, die im Programm ausgeführt werden, und möglicherweise jeglichen Speicher, den das Programm besitzt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

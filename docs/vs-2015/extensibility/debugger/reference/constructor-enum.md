@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b435507c84d697ef27a2b37d6153a53dbe13cb3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206084"
 ---
-# <a name="constructorenum"></a>CONSTRUCTOR_ENUM
+# <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wählt aus verschiedenen Arten von Konstruktoren.  
+Wählt verschiedene Typen von Konstruktoren aus.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,25 +43,25 @@ public enum ConstructorMatchOptions { 
 ```  
   
 ## <a name="members"></a>Member  
- crAll  
+ crall  
  Wählt alle Konstruktoren aus.  
   
- crNonStatic  
- Wählt die nicht statische Konstruktoren.  
+ crnonstatic  
+ Wählt nicht statische Konstruktoren aus.  
   
- crStatic  
- Wählt aus statische Konstruktoren.  
+ crstatic  
+ Wählt statische Konstruktoren aus.  
   
-## <a name="remarks"></a>Hinweise  
- Übergeben als Argument an die [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) Methode.  
+## <a name="remarks"></a>Bemerkungen  
+ Übergeben als Argument an die [enumconstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) -Methode.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: sh.h  
+ Header: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

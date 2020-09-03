@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
+title: 'IDebugDocumentChecksum2:: getchecksumandalgorithmid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731941"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Ruft die Dokumentprüfsumme und den Algorithmusbezeichner anhand der maximal zu verwendenden Anzahl von Bytes ab.
+Ruft die Prüfsumme des Dokuments und den Algorithmusbezeichner anhand der maximalen Anzahl von Bytes ab, die verwendet werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>Parameter
 `pRetVal`\
-[out] Eindeutiger Bezeichner für den Prüfsummenalgorithmus.
+vorgenommen Eindeutiger Bezeichner für den Prüfsummen Algorithmus.
 
 `cMaxBytes`\
-[in] Maximale Anzahl von Bytes, die für die Prüfsumme verwendet werden sollen.
+in Maximale Anzahl von Bytes, die für die Prüfsumme verwendet werden sollen.
 
 `pChecksum`\
-[out] Wert der Prüfsumme.
+vorgenommen Der Wert der Prüfsumme.
 
 `pcNumBytes`\
-[out] Tatsächliche Anzahl der Bytes, die für die Prüfsumme verwendet werden.
+vorgenommen Die tatsächliche Anzahl der Bytes, die für die Prüfsumme verwendet werden.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Im folgenden Beispiel wird diese Methode verwendet, um die Prüfsumme und den Algorithmus für ein Dokument abzubekommen.
+Im folgenden Beispiel wird diese Methode verwendet, um die Prüfsumme und den Algorithmus für ein Dokument zu erhalten.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)

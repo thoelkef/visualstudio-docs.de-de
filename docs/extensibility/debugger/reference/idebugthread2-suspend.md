@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Microsoft Docs
+title: 'IDebugThread2:: Suspend | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718642"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
@@ -41,15 +41,15 @@ HRESULT Suspend ( 
 
 ## <a name="parameters"></a>Parameter
 `pdwSuspendCount`\
-[out] Gibt die Suspend-Anzahl nach dem Suspend-Vorgang zurück.
+vorgenommen Gibt den anhaltezähler nach dem Anhaltevorgang zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Bei jedem Aufruf dieser Methode wird die Suspend-Anzahl über 0 erhöht. Diese Suspend-Anzahl wird **Threads** im Thread-Debugfenster angezeigt.
+ Jeder Aufrufe dieser Methode erhöht den anhaltezähler über 0. Diese anhalteanzahl wird im Fenster **Threads** Debuggen angezeigt.
 
- Für jeden Aufruf dieser Methode muss ein neuer Aufruf der [Resume-Methode](../../../extensibility/debugger/reference/idebugthread2-resume.md) erfolgen.
+ Für jeden Aufrufe dieser Methode muss ein späterer aufrufbedarf an der [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) -Methode vorhanden sein.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
