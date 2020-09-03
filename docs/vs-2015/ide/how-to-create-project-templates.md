@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f358d5b95349fe99b2a2e01df5158d2c0aa10a11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668053"
 ---
 # <a name="how-to-create-project-templates"></a>Gewusst wie: Erstellen von Projektvorlagen
@@ -31,7 +31,7 @@ Diese Vorgehensweise ermöglicht Ihnen das Erstellen einer Vorlage mithilfe des 
 
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>So erstellen Sie eine benutzerdefinierte Projektvorlage mit dem Standard-Assistenten zum Exportieren von Vorlagen
 
-1. Erstellen eines Projekts.
+1. Erstellt ein Projekt.
 
     > [!NOTE]
     > Verwenden Sie nur gültige Bezeichnerzeichen beim Benennen eines Projekts, das als Quelle für eine Vorlage verwendet wird. Eine aus einem Projekt exportierte Vorlage, das mit ungültigen Zeichen benannt wurde, kann in zukünftigen Projekten, die auf dieser Vorlage basieren, Kompilierungsfehler verursachen. Weitere Informationen zu gültigen Bezeichnerzeichen finden Sie unter [Declared Element Names (Namen deklarierter Elemente)](https://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).
@@ -40,7 +40,7 @@ Diese Vorgehensweise ermöglicht Ihnen das Erstellen einer Vorlage mithilfe des 
 
 3. Ändern Sie gegebenenfalls die Codedateien, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
 
-4. Klicken Sie im Menü **Datei** auf **Vorlage exportieren**. Der **Assistent zum Exportieren von Vorlagen** wird geöffnet.
+4. Klicken Sie im Menü **Datei** auf **Vorlage exportieren**. Der Assistent zum **Exportieren von Vorlagen** wird geöffnet.
 
 5. Klicken Sie auf **Projektvorlage**.
 
@@ -56,5 +56,5 @@ Diese Vorgehensweise ermöglicht Ihnen das Erstellen einer Vorlage mithilfe des 
 
      Wenn [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert ist, können Sie die fertige Vorlage für die Bereitstellung in einer VSIX-Datei umschließen, indem Sie die Vorlage **VSIX-Projekt** verwenden. Weitere Informationen finden Sie unter [Erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) Gewusst [wie: Erstellen von Element Vorlagen](../ide/how-to-create-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetUnderlyingSymbol | Microsoft Docs
+title: 'Idebugenenfield:: getunderlyingsymbol | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 14cac9d3f761e95b821179137f2efc23ef61b91b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730273"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
-Diese Methode gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Namen der Enumeration darstellt.
+Diese Methode gibt ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Namen der Enumeration darstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,15 +41,15 @@ int GetUnderlyingSymbol(
 
 ## <a name="parameters"></a>Parameter
 `ppField`\
-[out] Gibt das [IDebugField zurück,](../../../extensibility/debugger/reference/idebugfield.md) das den Namen dieser Enumeration beschreibt.
+vorgenommen Gibt das [idebugfeld](../../../extensibility/debugger/reference/idebugfield.md) zurück, das den Namen dieser Enumeration beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der Name der Enumeration enthält auch den Typ der Enumeration, die mithilfe von [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)an einen Speicherort gebunden ist.
+ Der Name der-Enumeration enthält auch den Typ der-Enumeration, der mithilfe von [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)an eine Speicheradresse gebunden wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-- [Binden](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [Zwick](../../../extensibility/debugger/reference/idebugbinder-bind.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::Writeat | Microsoft Docs
+title: 'IDebugMemoryBytes2:: Write-at | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ac9113424c6cd5cce230774a6e5335ffa4d4ba77
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727520"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
-Schreibt die angegebene Anzahl von Bytes an Arbeitsspeicher, beginnend mit der angegebenen Adresse.
+Schreibt die angegebene Anzahl von Bytes an Arbeitsspeicher, beginnend bei der angegebenen Adresse.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,19 +46,19 @@ int WriteAt(
 
 ## <a name="parameters"></a>Parameter
 `pStartContext`\
-[in] Das [IDebugMemoryContext2-Objekt,](../../../extensibility/debugger/reference/idebugmemorycontext2.md) das angibt, wo mit dem Schreiben von Bytes begonnen werden soll.
+in Das [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Objekt, das angibt, wohin das Schreiben von Bytes beginnen soll.
 
 `dwCount`\
 [in] Die Anzahl der zu schreibenden Bytes.
 
 `rgbMemory`\
-[in] Die zu schreibenden Bytes. Es wird davon ausgegangen, `dwCount` dass dieses Array mindestens Bytes groß ist.
+in Die zu schreibende bytes. Es wird davon ausgegangen, dass die Größe dieses Arrays mindestens `dwCount` Byte groß ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird `S_FALSE` zurückgegeben, wenn nicht alle Bytes geschrieben `E_FAIL`werden könnten, oder einen Fehlercode zurückgibt (normalerweise ).
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben, `S_FALSE` Wenn nicht alle Bytes geschrieben werden könnten oder ein Fehlercode zurückgegeben wird (in der Regel `E_FAIL` ).
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn sich die Startadresse nicht innerhalb des Speicherfensters befindet, das durch dieses `E_FAIL` [IDebugMemoryBytes2-Objekt](../../../extensibility/debugger/reference/idebugmemorybytes2.md) dargestellt wird, erfolgt kein Schreiben und es wird ein Fehlercode von zurückgegeben – auch wenn sich der Schreibbetrag im Speicherbereich überschneidet.
+ Wenn sich die Anfangsadresse nicht im Arbeitsspeicher Fenster befindet, das durch dieses [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt dargestellt wird, wird kein Schreibvorgang ausgeführt, und es wird ein Fehlercode von `E_FAIL` zurückgegeben – auch wenn sich der zu schreibende Betrag im Speicherbereich überlappt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

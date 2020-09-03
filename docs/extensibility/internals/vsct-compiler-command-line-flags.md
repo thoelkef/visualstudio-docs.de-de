@@ -1,5 +1,5 @@
 ---
-title: VSCT Compiler-Befehlszeilenflags | Microsoft Docs
+title: Vsct-compilerbefehlszeilenflags | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703959"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT-Compiler-Befehlszeilenflags
-Der Visual Studio-Befehlstabellencompiler (VSCT) stellt Befehlszeilenwechsel bereit, um eine erfolgreiche Kompilierung von .vsct-Dateien sicherzustellen.
+Der VSCT-Compiler (Visual Studio Command Table) stellt Befehls Zeilenschalter bereit, um eine erfolgreiche Kompilierung von vsct-Dateien sicherzustellen.
 
 ## <a name="command-line-parameters"></a>Befehlszeilenparameter
- Um die grundlegende VSCT-Hilfe aus einem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Befehlsfenster** anzuzeigen, navigieren Sie zum Installationspfad des Visual Studio *SDK-Ordners*"VisualStudioIntegration" und geben Sie den folgenden Typ ein:
+ Navigieren Sie zum Anzeigen der grundlegenden vsct-Hilfe in einem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Befehls** Fenster zum Ordner *Visual Studio SDK-Installationspfad*\visualstudiointegration\tools\bin\, und geben Sie Folgendes ein:
 
 ```
 vsct /?
 ```
 
- Gibt Folgendes zurück:
+ Dadurch wird Folgendes zurückgegeben:
 
 ```
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000
@@ -50,31 +50,31 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
-> Die Zeichen - (Dash) und / (Forward Slash) sind beide akzeptierte Notation für die Angabe von Befehlszeilenparametern.
+> Die Zeichen-(Bindestrich) und/(Schrägstrich) sind sowohl akzeptierte Notation zum Angeben von Befehlszeilen Parametern.
 
- Akzeptable Flaggen und was sie bedeuten, sind wie folgt.
+ Zulässige Flags und deren Bedeutung lauten wie folgt.
 
 |Schalter|BESCHREIBUNG|
 |------------|-----------------|
-|-d|Geben Sie alle zusätzlichen definierten Symbole an.|
-|-I|Geben Sie die zusätzlichen Includepfade an, die beim Auflösen von Dateiverweisen verwendet werden sollen.|
-|-l|Geben <xref:System.Globalization.CultureInfo> Sie den Kulturnamen an, z. B. "en-US".|
-|-E|Emit-C-Objekte im angegebenen Namespace für Befehlselemente, gefolgt von [C&#124;H&#124;N]:*Dateiname,* wobei C = C, H = C++-Header, N = Namespace. Der Namespace ist für C- erforderlich.|
+|-d|Geben Sie zusätzliche definierte Symbole an.|
+|-I|Geben Sie die zusätzlichen Include-Pfade an, die beim Auflösen von Datei verweisen verwendet werden sollen.|
+|-l|Geben Sie den <xref:System.Globalization.CultureInfo> Kultur Namen an, z. b. "en-US".|
+|-E|Gibt c#-Objekte im angegebenen Namespace für Befehls Elemente aus, gefolgt von [C&#124;H&#124;N]:*filename*WHERE C = c#, H = C++ Header, N = Namespace. Der Namespace ist für c# erforderlich.|
 |-v|Ausführliche Ausgabe.|
 
- Der Schalter -L weist den Compiler an, eine Gruppe von Zeichenfolgen auszuwählen, <xref:System.Globalization.CultureInfo> um die binäre .cto-Datei zu erzeugen, die dem angegebenen Kulturnamen entspricht. Der angegebene Kulturname sollte mit dem Language-Attribut eines oder mehrerer [Strings-Elemente](../../extensibility/strings-element.md) in der .vsct-Datei übereinstimmen. Wenn ein Strings-Element kein Language-Attribut hat, wird es vom enthaltenden [CommandTable-Element](../../extensibility/commandtable-element.md)geerbt.
+ Der Schalter-L weist den Compiler an, eine Gruppe von Zeichen folgen auszuwählen, um die binäre CTO-Datei zu entwickeln, die dem angegebenen <xref:System.Globalization.CultureInfo> Kultur Namen entspricht. Der angegebene Kultur Name sollte mit dem Language-Attribut eines oder mehrerer [String-Elemente](../../extensibility/strings-element.md) in der vsct-Datei identisch sein. Wenn ein Strings-Element über kein Language-Attribut verfügt, wird es vom enthaltenden [commandtable-Element](../../extensibility/commandtable-element.md)geerbt.
 
- Eine .vsct-Datei kann über mehrere Strings-Elemente verfügen, und jedes kann ein anderes Language-Attribut haben. Die Globalisierung wird erreicht, indem der VSCT-Compiler mehrmals ausgeführt und der Schalter -L für jeden Kulturnamen geändert wird.
+ Eine vsct-Datei kann mehrere Zeichen folgen Elemente enthalten, und jede kann ein anderes sprach Attribut aufweisen. Die Globalisierung wird erreicht, indem der VSCT-Compiler mehrmals ausgeführt und der Schalter "-L" für jeden Kultur Namen geändert wird.
 
- Wenn der vom Schalter -L angegebene Kulturname nicht mit dem Language-Attribut eines Strings-Elements übereinstimmt, versucht der Compiler, der Sprache und nicht der Region zu entsprechen. Wenn z. B. "en-US" nicht gefunden werden kann, versucht der Compiler stattdessen "en". Andernfalls wird die aktuelle Kultur des Betriebssystems ausprobiert. Andernfalls wird das erste gefundene Strings-Element kompiliert.
+ Wenn der vom Schalter-L angegebene Kultur Name nicht mit dem Language-Attribut eines beliebigen Strings-Elements identisch ist, versucht der Compiler, die Sprache und nicht die Region abzugleichen. Wenn z. b. "en-US" nicht gefunden werden kann, versucht der Compiler stattdessen "en". Wenn ein Fehler auftritt, wird die aktuelle Kultur des Betriebssystems ausprobiert. Wenn ein Fehler auftritt, wird das erste gefundene Zeichen folgen Element kompiliert.
 
- Der Schalter -E kann verwendet werden, um eine Headerdatei im C-Stil auszusenden, die die Symbole enthält, die von der Befehlstabelle verwendet werden, oder um eine C-Datei auszusenden, die Objekte für die Befehlssymbole enthält.
+ Der Schalter-E kann verwendet werden, um eine Header Datei im C-Stil auszugeben, die die Symbole enthält, die von der Befehls Tabelle verwendet werden, oder um eine c#-Datei auszugeben, die-Objekte für die Befehls Symbole enthält.
 
- Die Schalter -D und -I haben die Syntax der Cl.exe C-Präprozessorflags, die denselben Namen haben. -D-Definitionen mit dem Format X=Y werden für \<die Erweiterung `Condition` von XML-basierten definierten> Tests in Attributen verwendet. -Ich include Pfade werden \<verwendet, \<um \<Include>, Extern> und Bitmap> Dateireferenzen aufzulösen. Weitere Informationen finden Sie in der [VSCT XML Schema Referenz](../../extensibility/vsct-xml-schema-reference.md).
+ Die Schalter-D und-I verfügen über die Syntax der Cl.exe C-präprozessorflags, die denselben Namen aufweisen. -D-Definitionen, die das Format X = Y aufweisen, werden für die Erweiterung von XML-basierten \<Defined> Tests in `Condition` Attributen verwendet. -I Include-Pfade werden verwendet \<Include> , um \<Extern> die \<Bitmap> Datei Verweise aufzulösen. Weitere Informationen finden Sie in der [vsct-XML-Schema Referenz](../../extensibility/vsct-xml-schema-reference.md).
 
- Der VSCT-Compiler kann auch eine zuvor erstellte Binärdatei dekompilieren. Geben Sie dazu eine Binärdatei \<für die infile>.   Wenn die Binärdatei vom VSCT-Compiler erstellt wurde, hat sie ihre Symbole bereits \<eingebettet und erzeugt ausgabegemäß mit den symbolischen Namen in einem> Abschnitt der Ausgabe. Wenn die Binärdatei vom CTC-Compiler erstellt wurde, enthält die Ausgabe die eigentlichen GUIDs und IDs. Wenn sich die *.ctsym-Datei, die von aktuellen Versionen von Ctc.exe erstellt wird, im selben Ordner wie die binäre Eingabedatei befindet, werden die Symbole aus dieser Datei geladen und für die Ausgabe verwendet.
+ Der VSCT-Compiler kann auch eine zuvor erstellter Binärdatei dekompilieren. Stellen Sie hierzu eine Binärdatei für das bereit \<infile> .   Wenn die Binärdatei vom VSCT-Compiler erstellt wurde, werden die zugehörigen Symbole bereits eingebettet, und es wird eine Ausgabe mit den symbolischen Namen in einem \<Symbols> Abschnitt der Ausgabe erzeugt. Wenn die Binärdatei vom CTC-Compiler erstellt wurde, enthält die Ausgabe die tatsächlichen GUIDs und IDs. Wenn sich die von den aktuellen Versionen von Ctc.exe erstellte *. ctsym-Datei im selben Ordner wie die binäre Eingabedatei befindet, werden die Symbole aus dieser Datei geladen und für die Ausgabe verwendet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [VSCT-Dateien (Visual Studio Command Table)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

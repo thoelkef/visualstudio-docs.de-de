@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff78bea6759359d3703f5fed6157f051c89befb0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668005"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)
@@ -53,7 +53,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
 - [Löschen einer Typform und des zugrunde liegenden Codes](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)
 
-## <a name="ZoomInOut"></a> Vergrößern und Verkleinern der Ansicht des Klassendiagramms
+## <a name="zoom-in-and-out-of-the-class-diagram"></a><a name="ZoomInOut"></a> Vergrößern und Verkleinern des Klassendiagramms
 
 1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.
 
@@ -66,7 +66,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
     > [!NOTE]
     > Das Ändern des Zoomfaktors wirkt sich nicht auf die Skalierung des ausgedruckten Klassendiagramms aus.
 
-## <a name="CustomizeGroupingSorting"></a> Anpassen der Gruppierung und Sortierung von Typmembern
+## <a name="customize-grouping-and-sorting-of-type-members"></a><a name="CustomizeGroupingSorting"></a> Anpassen der Gruppierung und Sortierung von Typmembern
 
 1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.
 
@@ -80,7 +80,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
     3. **Alphabetisch sortieren** zeigt die Elemente, aus denen eine Entität besteht, als einzelne, alphabetisch sortierte Liste an. Die Liste ist in aufsteigender Reihenfolge sortiert.
 
-## <a name="HideCompartments"></a> Ausblenden von Depots für einen Typ
+## <a name="hide-compartments-on-a-type"></a><a name="HideCompartments"></a> Ausblenden von Depots für einen Typ
 
 1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.
 
@@ -90,7 +90,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
      Das ausgewählte Depot wird im Typcontainer ausgeblendet.
 
-## <a name="HideMembers"></a> Ausblenden einzelner Member für einen Typ
+## <a name="hide-individual-members-on-a-type"></a><a name="HideMembers"></a> Ausblenden einzelner Member für einen Typ
 
 1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.
 
@@ -100,7 +100,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
      Der ausgewählte Member wird im Typcontainer ausgeblendet.
 
-## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Anzeigen ausgeblendeter Depots und Member für einen Typ
+## <a name="show-hidden-compartments-and-members-on-a-type"></a><a name="DisplayHiddenCompartmentsAndMemberrs"></a> Anzeigen ausgeblendeter Depots und Member für einen Typ
 
 1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.
 
@@ -110,7 +110,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
      Alle ausgeblendeten Depots und Member werden im Typcontainer angezeigt.
 
-## <a name="HideAssociationAndInheritance"></a> Ausblenden von Beziehungen
+## <a name="hide-relationships"></a><a name="HideAssociationAndInheritance"></a> Ausblenden von Beziehungen
 
 1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.
 
@@ -122,7 +122,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
      Alle ausgeblendeten Depots und Member werden im Typcontainer angezeigt.
 
-## <a name="DisplayAssociationAndInheritance"></a> Anzeigen ausgeblendeter Beziehungen
+## <a name="show-hidden-relationships"></a><a name="DisplayAssociationAndInheritance"></a> Verborgene Beziehungen anzeigen
 
 1. Öffnen Sie eine Klassendiagrammdatei im Klassen-Designer, und wählen Sie sie aus.
 
@@ -130,7 +130,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
    Klicken Sie für Zuordnungszeilen auf **Alle Member anzeigen**, und klicken Sie für Vererbungszeilen auf **Basisklasse anzeigen** oder **Abgeleitete Klassen anzeigen**.
 
-## <a name="RemoveCodeAndShape"></a> Entfernen einer Typform aus einem Klassendiagramm
+## <a name="remove-a-shape-from-a-class-diagram"></a><a name="RemoveCodeAndShape"></a> Entfernen einer Form aus einem Klassendiagramm
  Sie können eine Typform aus dem Klassendiagramm entfernen, ohne dass dies Auswirkungen auf den zugrunde liegenden Code des Typs hat. Das Entfernen von Typformen aus einem Klassendiagramm wirkt sich nur auf das jeweilige Diagramm aus. Der zugrunde liegende Code, der den Typ definiert, und andere Diagramme, die den Typ anzeigen, sind nicht betroffen.
 
 1. Wählen Sie im Klassendiagramm die aus dem Diagramm zu entfernende Typform aus.
@@ -139,7 +139,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
      Die Typform und sämtliche mit der Form verbundene Assoziations- oder Vererbungslinien werden aus dem Diagramm entfernt.
 
-## <a name="DeleteTypeShapeAndCode"></a> Löschen einer Typform und des zugrunde liegenden Codes
+## <a name="delete-a-type-shape-and-its-underlying-code"></a><a name="DeleteTypeShapeAndCode"></a> Löschen einer Typform und des zugrunde liegenden Codes
 
 1. Klicken Sie auf der Entwurfsoberfläche mit der rechten Maustaste auf die Form.
 
@@ -147,5 +147,5 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
 
      Die Form wird aus dem Diagramm entfernt, und der zugrunde liegende Code wird aus dem Projekt gelöscht.
 
-## <a name="see-also"></a>Siehe auch
- [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) Gewusst [wie: Wechseln zwischen Member-und Zuordnungs Notation (Klassen-Designer)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) Gewusst [wie: Anzeigen vorhandener Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md) Anzeigen von [Typen und Beziehungen (Klassen-Designer) ](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) Gewusst [wie: Wechseln zwischen Member-und Zuordnungs Notation (Klassen-Designer)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) Gewusst [wie: Anzeigen vorhandener Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md) Anzeigen von [Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)

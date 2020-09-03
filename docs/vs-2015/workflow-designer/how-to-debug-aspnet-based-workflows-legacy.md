@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668657"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Vorgehensweise: Debuggen von ASP.NET-basierten Workflows (Vorgängerversion)
@@ -28,7 +28,7 @@ In diesem Thema wird das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-m
 
 ### <a name="to-debug-an-aspnet-based-workflow"></a>So debuggen Sie einen ASP.NET-basierten Workflow
 
-1. Aktivieren Sie das Debugging für die ASP.NET-Anwendung, indem Sie **Debug = true** in der Datei "Web. config" festlegen.
+1. Aktivieren Sie das Debugging für die ASP.NET-Anwendung, indem Sie **Debug = true** in der web.config-Datei festlegen.
 
 2. Legen Sie die Workflowbibliothek als Startprojekt fest, und legen Sie dann Haltepunkte auf dem Workflow fest.
 
@@ -52,5 +52,5 @@ In diesem Thema wird das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-m
 
 10. Öffnen Sie die Standardwebseite in einem Browser, und starten Sie den Workflow.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Legacy)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) Gewusst [wie: Festlegen von Haltepunkten in Workflows (Legacy)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [Debuggen von Legacy Workflows](../workflow-designer/debugging-legacy-workflows.md)

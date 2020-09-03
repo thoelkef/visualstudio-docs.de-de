@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801866"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms Toolbox-Steuer Elements
@@ -216,7 +216,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
 Wenn Sie ein **Toolbox** -Steuerelement erstellen, erstellt Visual Studio eine Datei namens *Projektname. vsix* im Ordner "" \bin\debug\ "des Projekts. Sie können das-Steuerelement bereitstellen, indem Sie die *VSIX* -Datei in ein Netzwerk oder auf eine Website hochladen. Wenn ein Benutzer die *VSIX* -Datei öffnet, wird das Steuerelement installiert und der Visual Studio- **Toolbox** auf dem Computer des Benutzers hinzugefügt. Alternativ dazu können **Sie die** *VSIX* -Datei in [Visual Studio Marketplace](https://marketplace.visualstudio.com/) hochladen, damit Benutzer Sie finden können, indem Sie im Dialogfeld Extras  >  **Erweiterungen und Updates** suchen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Erstellen eines WPF-Toolbox-Steuer Elements](../extensibility/creating-a-wpf-toolbox-control.md)

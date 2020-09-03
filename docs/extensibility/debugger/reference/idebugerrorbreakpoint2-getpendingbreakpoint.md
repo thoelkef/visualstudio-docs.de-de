@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpoint2::GetPendingBreakpoint | Microsoft Docs
+title: 'IDebugErrorBreakpoint2:: getpdingbreakpoint | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0cdd84437d0f2480cacfd66860564b908ea76dd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730144"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
-Ruft den ausstehenden Haltepunkt ab, der den Fehler verursacht hat.
+Ruft den ausstehenden Breakpoint ab, der den Fehler verursacht hat.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetPendingBreakpoint ( 
 
 ## <a name="parameters"></a>Parameter
 `ppPendingBreakpoint`\
-[out] Gibt ein [IDebugPendingBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) zurück, das den ausstehenden Haltepunkt darstellt, der nicht gebunden werden konnte.
+vorgenommen Gibt ein [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt zurück, das den ausstehenden Haltepunkt darstellt, der nicht gebunden werden konnte.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

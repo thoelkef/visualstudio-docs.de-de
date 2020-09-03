@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6646f669bf2c465d8e0f705f8fba956b979952ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667166"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Deaktivieren von Einschränkungen beim Auffüllen von Datasets
@@ -38,7 +38,7 @@ Wenn ein DataSet Einschränkungen (z. b. Foreign Key-Einschränkungen) enthält,
  Ohne einen Mechanismus, der die vorübergehende Aufhebung der Einschränkung zulässt, würde der Fehler bei jedem Versuch ausgelöst, einen Datensatz in die untergeordnete Tabelle zu laden. Es besteht außerdem die Möglichkeit, alle Einschränkungen in einem Dataset mit der <xref:System.Data.DataRow.BeginEdit%2A>-Eigenschaft und der <xref:System.Data.DataRow.EndEdit%2A>-Eigenschaft aufzuheben.
 
 > [!NOTE]
-> Validierungs Ereignisse (z. b. <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging>) werden nicht ausgelöst, wenn Einschränkungen deaktiviert werden.
+> Validierungs Ereignisse (z. b. <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging> ) werden nicht ausgelöst, wenn Einschränkungen deaktiviert werden.
 
 ### <a name="to-suspend-update-constraints-programmatically"></a>So heben Sie Aktualisierungseinschränkungen programmgesteuert auf
 
@@ -53,5 +53,5 @@ Wenn ein DataSet Einschränkungen (z. b. Foreign Key-Einschränkungen) enthält,
 
 2. Legen Sie im Fenster **Eigenschaften** die Eigenschaft <xref:System.Data.DataSet.EnforceConstraints%2A> auf `false`fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Auffüllen von Datasets mithilfe von TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md) - [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md)

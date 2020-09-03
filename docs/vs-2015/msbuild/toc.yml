@@ -396,7 +396,7 @@
           href: msbuild-command-line-reference.md
         - name: .Targets-Dateien
           href: msbuild-dot-targets-files.md
-        - name: Bekannte Elementmetadaten
+        - name: bekannte Elementmetadaten
           href: msbuild-well-known-item-metadata.md
         - name: Antwortdateien
           href: msbuild-response-files.md

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281746"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
@@ -72,21 +72,21 @@ Beim Zusammenführen von Datasets können Sie ein boolesches Argument ( `preserv
 
 |DataRowVersion|Zieldataset|Quelldataset|
 | - | - | - |
-|Original|James Wilson|James C. Wilson|
+|Ursprünglich|James Wilson|James C. Wilson|
 |Aktuell|Jim Wilson|James C. Wilson|
 
 Das Aufrufen der- <xref:System.Data.DataSet.Merge%2A> Methode für die vorherige Tabelle mit `preserveChanges=false targetDataset.Merge(sourceDataset)` führt zu den folgenden Daten:
 
 |DataRowVersion|Zieldataset|Quelldataset|
 | - | - | - |
-|Original|James C. Wilson|James C. Wilson|
+|Ursprünglich|James C. Wilson|James C. Wilson|
 |Aktuell|James C. Wilson|James C. Wilson|
 
 Das Aufrufen der- <xref:System.Data.DataSet.Merge%2A> Methode mit `preserveChanges = true targetDataset.Merge(sourceDataset, true)` führt zu den folgenden Daten:
 
 |DataRowVersion|Zieldataset|Quelldataset|
 | - | - | - |
-|Original|James C. Wilson|James C. Wilson|
+|Ursprünglich|James C. Wilson|James C. Wilson|
 |Aktuell|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
@@ -162,7 +162,7 @@ Es ist üblich, nicht jeden Datensatz in einem DataSet zu aktualisieren. Beispie
 
 Sie können Teilmengen der geänderten Datensätze erstellen, indem Sie entweder die `GetChanges`-Methode der Datentabelle (<xref:System.Data.DataTable.GetChanges%2A>) oder des Datasets selbst (<xref:System.Data.DataSet.GetChanges%2A>) verwenden. Wenn Sie die Methode für die Datentabelle aufrufen, wird eine Kopie der Tabelle zurückgegeben, die lediglich die geänderten Datensätze enthält. Ähnlich verhält es sich, wenn Sie die Methode für den Dataset aufrufen: Sie erhalten ein neues Dataset, das nur geänderte Datensätze enthält.
 
-`GetChanges`allein gibt alle geänderten Datensätze zurück. Wenn Sie hingegen den gewünschten <xref:System.Data.DataRowState> als Parameter an die-Methode übergeben `GetChanges` , können Sie angeben, welche Teilmenge der geänderten Datensätze Sie möchten: neu hinzugefügte Datensätze, Datensätze, die zum Löschen markiert sind, getrennte Datensätze oder geänderte Datensätze.
+`GetChanges` allein gibt alle geänderten Datensätze zurück. Wenn Sie hingegen den gewünschten <xref:System.Data.DataRowState> als Parameter an die-Methode übergeben `GetChanges` , können Sie angeben, welche Teilmenge der geänderten Datensätze Sie möchten: neu hinzugefügte Datensätze, Datensätze, die zum Löschen markiert sind, getrennte Datensätze oder geänderte Datensätze.
 
 Es ist hilfreich, eine Teilmenge der geänderten Datensätze zu erhalten, wenn Sie Datensätze zur Verarbeitung an eine andere Komponente senden möchten. Anstatt das gesamte Dataset zu übertragen, können Sie die Kommunikation mit der anderen Komponente gering halten, indem Sie lediglich die Datensätze abrufen, die von der Komponente benötigt werden.
 
@@ -211,7 +211,7 @@ In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode auf
 
 Eine verwandte Methode, <xref:System.Data.DataSet.RejectChanges%2A> , macht die Auswirkungen von Änderungen rückgängig, indem die <xref:System.Data.DataRowVersion.Original> Version zurück in die <xref:System.Data.DataRowVersion.Current> Version von Datensätzen kopiert wird. Außerdem wird die <xref:System.Data.DataRow.RowState%2A> der einzelnen Datensätze auf zurückgesetzt <xref:System.Data.DataRowState.Unchanged> .
 
-## <a name="data-validation"></a>Datenüberprüfung
+## <a name="data-validation"></a>Datenvalidierung
 
 Um sicherzustellen, dass die in der Anwendung enthaltenen Daten die Anforderungen des Prozesses erfüllen, an den sie übergeben werden, sind oftmals Validierungen erforderlich. Dies kann das überprüfen, ob der Eintrag eines Benutzers korrekt ist, das Überprüfen von Daten, die von einer anderen Anwendung an die Anwendung gesendet werden, oder das überprüfen, ob die in der Komponente berechneten Informationen in die Einschränkungen der Datenquelle und der Anwendungsanforderungen fallen.
 
