@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78937560"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migration von der Legacy Analyse (FxCop) zur Quell Analyse (FxCop-Analyzers)
@@ -27,7 +27,7 @@ Viele der Regeln für die Legacy Analyse (FxCop) wurden bereits für FxCop-Analy
 
 Weitere Informationen zu den Unterschieden zwischen der Legacy-und der Quell Analyse finden Sie in den folgenden Quellen:
 
-- [Quell Code Analyse und Legacy Analyse](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Quellcodeanalyse im Vergleich zur Legacyanalyse](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
 
 - [FAQ zu FxCop-Analyzern](../code-quality/fxcop-analyzers-faq.md)
 

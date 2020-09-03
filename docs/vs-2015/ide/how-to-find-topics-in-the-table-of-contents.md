@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651884"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis
@@ -32,7 +32,7 @@ Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, u
 > Der Themenbereich, der im Inhaltsverzeichnis verfügbar ist, ist vom ausgewählten Filter abhängig.
 
 ## <a name="filter-the-toc"></a>Filtern des Inhaltsverzeichnisses
- Sie können das Inhaltsverzeichnis filtern, um den Umfang der Themen einzuschränken, die auf der Registerkarte **Inhalt** angezeigt werden. Titel werden nur dann in der Liste angezeigt, wenn Sie den Stamm des von Ihnen angegebenen Begriffs enthalten. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Namen nicht den Begriff enthalten, werden zu einem einzelnen Knoten mit Auslassungszeichen (...) reduziert.
+ Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird. Titel werden nur in der Liste angezeigt, wenn Sie den Stamm des Begriffs enthalten, den Sie angeben. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Namen nicht den Begriff enthalten, werden zu einem einzelnen Knoten mit Auslassungszeichen (...) reduziert.
 
 #### <a name="to-filter-the-toc"></a>So filtern Sie Inhaltsverzeichnisse
 
@@ -50,9 +50,9 @@ Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, u
 
 1. Zeigen Sie ein Thema an.
 
-2. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie STRG+S.
+2. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen** , oder drücken Sie STRG + S.
 
      Die Registerkarte **Inhalt** wird geöffnet und zeigt den Speicherort des Themas im Inhaltsverzeichnis an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Suchen von Informationen](../ide/locate-information.md) [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

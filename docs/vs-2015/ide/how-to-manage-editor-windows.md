@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9d9c01e07ab51e1ef21e9b886629dd7bb493c2c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651823"
 ---
 # <a name="how-to-manage-editor-windows"></a>Gewusst wie: Verwalten von Editorfenstern
@@ -56,5 +56,5 @@ Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teil
 
      Es wird eine neue Instanz des Editors im Registerkartenformat hinzugefügt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen des Editors zum](../ide/customizing-the-editor.md) [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md) [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md)

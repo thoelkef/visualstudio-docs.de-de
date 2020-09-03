@@ -12,13 +12,13 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88714389"
 ---
-# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Erweiterung für Visual Studio-Installer Projekte und .net Core 3,1
+# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio Installer Projects-Erweiterung und .NET Core 3.1
 
 Das Verpacken von Anwendungen als MSI wird häufig mithilfe der Erweiterung "Visual Studio-Installer Projects" durchgeführt.
 

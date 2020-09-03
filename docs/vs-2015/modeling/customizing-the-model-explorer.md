@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce96f2a3df901c1fea0aa4caa97d29c07db5e681
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654956"
 ---
 # <a name="customizing-the-model-explorer"></a>Anpassen des Modell-Explorers
@@ -37,14 +37,14 @@ Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifis
  Um den Fenstertitel des generierten Explorers zu ändern, wählen Sie im DSL- **Explorer** **Explorer-Verhalten** aus, und legen Sie dann im **Eigenschaften** Fenster die **Title** -Eigenschaft auf den gewünschten Titel fest.
 
 ## <a name="changing-the-tab-icon"></a>Ändern des Registerkarten Symbols
- Um das Registerkarten Symbol für den Explorer zu ändern, verwenden Sie ein 16x16-Pixel-Symbol in einer BMP-Datei. Fügen Sie die Symbol Datei in den Ordner \dslpackage\resources\ ein, und ändern Sie dann den Dateinamen in **modelexplorertoolwindowbitmaps. bmp**. Beispielsweise können Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Setup. ico-Symbol Datei in das BMP-Format ändern und Sie in **dsllanguagename\dslpackage\resources\modelexplorertoolwindowbitmaps.bmp**umbenennen. Der generierte Designer zeigt dieses Symbol auf der Registerkarte Ihres Explorers an, wenn es mit **Projektmappen-Explorer**angedockt wird.
+ Um das Registerkarten Symbol für den Explorer zu ändern, verwenden Sie ein 16x16-Pixel-Symbol in einer BMP-Datei. Fügen Sie die Symbol Datei in den Ordner \dslpackage\resources\ ein, und ändern Sie dann den Dateinamen in **ModelExplorerToolWindowBitmaps.bmp**. Beispielsweise können Sie die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Symbol Datei "Setup. ico" in das BMP-Format ändern und in " **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**" umbenennen. Der generierte Designer zeigt dieses Symbol auf der Registerkarte Ihres Explorers an, wenn es mit **Projektmappen-Explorer**angedockt wird.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Festlegen von benutzerdefinierten Symbolen auf Explorer-Knoten
  Sie können Knoten im Explorer anpassen, indem Sie die Einstellungen für den Explorer-Knoten verwenden. Im folgenden Verfahren wird gezeigt, wie ein Symbol einem Knoten hinzugefügt wird.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>So fügen Sie einem Explorer-Knoten ein Symbol hinzu
 
-1. Erstellen Sie eine [!INCLUDE[dsl](../includes/dsl-md.md)] Lösung mithilfe der Lösungs Vorlage für den Task Fluss.
+1. Erstellen Sie eine Projekt Mappe [!INCLUDE[dsl](../includes/dsl-md.md)] mithilfe der Lösungs Vorlage für den Task Fluss.
 
 2. Fügen Sie eine BMP-Datei mit einem 16x16-Pixel-Symbol im Ordner " **dsl\resources** " in der Projekt Mappe ein.
 
@@ -115,5 +115,5 @@ Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifis
 
      Im Explorer sollte nur ein **Actors** -Knoten angezeigt werden, und der Knoten **comments** sollte nicht angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

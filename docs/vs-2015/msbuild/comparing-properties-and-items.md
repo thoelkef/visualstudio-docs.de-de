@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184090"
 ---
 # <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
@@ -23,7 +23,7 @@ ms.locfileid: "68184090"
 
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
   
-- Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](msbuild-properties1.md).  
+- Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild Properties](msbuild-properties1.md) (MSBuild-Eigenschaften).  
   
 - Elemente sind Objekte, die in der Regel Dateien darstellen. Elementobjekten können Metadatensammlungen zugeordnet sein. Metadaten sind Name/Wert-Paare. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
   
@@ -56,7 +56,7 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
   
  Der obige Code fügt das Ziel CustomBuild zur Zielliste hinzu, wodurch `BuildDependsOn` den Wert `BeforeBuild;CoreBuild;AfterBuild;CustomBuild` erhält.  
   
- Ab MSBuild 4.0 ist die Zielabhängigkeitsinjektion veraltet. Verwenden Sie stattdessen die Attribute `AfterTargets` und `BeforeTargets`. Weitere Informationen finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
+ Ab MSBuild 4.0 ist die Zielabhängigkeitsinjektion veraltet. Verwenden Sie stattdessen die Attribute `AfterTargets` und `BeforeTargets`. Weitere Informationen finden Sie unter [zielbuildreihenfolge](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Konvertierungen zwischen Zeichenfolgen und Elementlisten  
  MSBuild führt nach Bedarf Konvertierungen von und nach Elementtypen und Zeichenfolgenwerten durch. Um zu verstehen, wie eine Elementliste zu einem Zeichenfolgenwert werden kann, können Sie sich vorstellen, was geschieht, wenn ein Elementtyp als Wert einer MSBuild-Eigenschaft verwendet wird:  
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [MSBuild Advanced Concepts (Weiterführende MSBuild-Konzepte)](../msbuild/msbuild-advanced-concepts.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [Erweiterte Konzepte](../msbuild/msbuild-advanced-concepts.md)

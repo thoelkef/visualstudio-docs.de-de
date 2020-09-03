@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::EnumeEs | Microsoft Docs
+title: 'IDebugSettingsCallback2:: umumees | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19e0763ad74b3486b8bc2548ec129d9e95feb771
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720235"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Zählt die verfügbaren Ausdrucksauswertungen auf, die die Sprach- und Kreditorenbezeichner erhalten.
+Listet die verfügbaren Ausdrucksauswertungen unter Berücksichtigung der Sprach-und Hersteller Bezeichner auf.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,16 +45,16 @@ public int EnumEEs(
 
 ## <a name="parameters"></a>Parameter
 `celtBuffer`\
-[in] Anzahl der Elemente `pceltEEs` im Puffer.
+in Anzahl der Elemente im `pceltEEs` Puffer.
 
 `rgguidLang`\
 [in, out] Eindeutiger Bezeichner für die Programmiersprache.
 
 `rgguidVendor`\
-[in, out] Eindeutiger Bezeichner für den Kreditor.
+[in, out] Eindeutiger Bezeichner für den Anbieter.
 
 `pceltEEs`\
-[in, out] Array von Ausdrucksevaluatoren.
+[in, out] Array von Ausdrucks auswergratoren.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

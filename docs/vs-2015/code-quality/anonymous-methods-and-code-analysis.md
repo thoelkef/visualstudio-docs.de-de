@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49da7d5e7f6a7731a708accb3d52fb6383ff1017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652222"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonyme Methoden und Codeanalyse
@@ -67,7 +67,7 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Anonyme Inline Methoden
- Warnungen und Metriken für eine anonyme Methode, die als Inline Zuweisung zu einem Feld deklariert ist, werden dem-Konstruktor zugeordnet. Wenn das Feld als `static` deklariert wird (`Shared` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), werden die Warnungen und Metriken dem Klassenkonstruktor zugeordnet. Andernfalls werden Sie dem Instanzkonstruktor zugeordnet.
+ Warnungen und Metriken für eine anonyme Methode, die als Inline Zuweisung zu einem Feld deklariert ist, werden dem-Konstruktor zugeordnet. Wenn das Feld als `static` ( `Shared` in) deklariert ist [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , werden die Warnungen und Metriken dem Klassenkonstruktor zugeordnet; andernfalls sind Sie dem Instanzkonstruktor zugeordnet.
 
  In der folgenden Klasse werden z. b. alle Warnungen, die in der Deklaration von **anonymousMethod1** gefunden werden, für den implizit generierten Standardkonstruktor der- **Klasse**ausgelöst. Die in **anonymousMethod2** gefundenen werden hingegen auf den implizit generierten Klassenkonstruktor angewendet.
 
@@ -152,5 +152,5 @@ class Class
 
  Sie können dieses Problem auf eine von zwei Arten umgehen. Sie könnten **AnonymousMethod** in einem gemeinsamen Konstruktor deklarieren, der von allen Konstruktoren verkettet ist. Oder Sie können Sie in einer Initialisierungs Methode deklarieren, die von allen Konstruktoren aufgerufen wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

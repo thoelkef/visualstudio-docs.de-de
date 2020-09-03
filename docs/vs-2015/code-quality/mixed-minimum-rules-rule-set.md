@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654858"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die gemischten minimal Regeln von Microsoft konzentrieren sich auf die kritischsten Probleme C++ in Ihren Projekten, die die Common Language Runtime unterstützen, einschließlich potenzieller Sicherheitslücken und Anwendungs Abstürze. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
+Die gemischten minimal Regeln von Microsoft konzentrieren sich auf die kritischsten Probleme in Ihren C++-Projekten, die die Common Language Runtime unterstützen, einschließlich potenzieller Sicherheitslücken und Anwendungs Abstürze. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
 
 |                                            Regel                                             |                                                  Beschreibung                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Signatur&gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+title: '&lt;Signature- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,13 +16,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db696546fdd64199753054b38fa2ac554f6a774f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295074"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signatur&gt; Element (ClickOnce-Bereitstellung)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature- &gt; Element (ClickOnce-Bereitstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.  
@@ -36,13 +36,13 @@ Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digita
 </Signature>  
 ```  
   
-## <a name="remarks"></a>Hinweise  
- Das Signieren eines Bereitstellungs Manifests mithilfe einer Umschlag Signatur ist optional, wird jedoch empfohlen. Weitere Informationen zum Signieren von XML-Dateien finden Sie in der World Wide Web Consortium Empfehlung "Syntax und Verarbeitung von XML-Signaturen", die unter [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/)beschrieben wird.  
+## <a name="remarks"></a>Bemerkungen  
+ Das Signieren eines Bereitstellungs Manifests mithilfe einer Umschlag Signatur ist optional, wird jedoch empfohlen. Weitere Informationen zum Signieren von XML-Dateien finden Sie in der World Wide Web Consortium Empfehlung "Syntax und Verarbeitung von XML-Signaturen" unter [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .  
   
  Wenn Sie das Manifest signieren möchten, müssen Sie Hashes für alle Dateien bereitstellen. Ein Manifest mit Dateien, die nicht als Hash verwendet werden, kann nicht signiert werden, da Benutzer den Inhalt von Dateien ohne Hash überprüfen können.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel veranschaulicht ein `Signature`-Element in einem Bereitstellungs Manifest, das in einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung verwendet wird.  
+ Das folgende Codebeispiel veranschaulicht ein- `Signature` Element in einem Bereitstellungs Manifest, das in einer- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bereitstellung verwendet wird.  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
@@ -73,5 +73,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)

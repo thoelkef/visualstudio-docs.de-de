@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546340"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Keine reservierten Ausnahmetypen auslösen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
@@ -66,19 +66,19 @@ ms.locfileid: "85546340"
 
 |Beschreibung des Parameters|Ausnahme|
 |---------------------------|---------------|
-|`null`Angabe|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null` Angabe|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |Außerhalb des zulässigen Wertebereichs (z. b. ein Index für eine Sammlung oder Liste)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |Ungültiger `enum` Wert|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
 |Enthält ein Format, das den Parameter Spezifikationen einer Methode (z. b. der Format Zeichenfolge für) nicht entspricht. `ToString(String)`|<xref:System.FormatException?displayProperty=fullName>|
 |Andernfalls ungültig|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Wenn ein Vorgang für den aktuellen Zustand eines Objekt auslösenden ungültig ist<xref:System.InvalidOperationException?displayProperty=fullName>
+ Wenn ein Vorgang für den aktuellen Zustand eines Objekt auslösenden ungültig ist <xref:System.InvalidOperationException?displayProperty=fullName>
 
- Wenn ein Vorgang für ein Objekt durchgeführt wird, das verworfen wurde.<xref:System.ObjectDisposedException?displayProperty=fullName>
+ Wenn ein Vorgang für ein Objekt durchgeführt wird, das verworfen wurde. <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Wenn ein Vorgang nicht unterstützt wird (z. b. in einem überschriebenen **Stream. Schreiben** in einem zum Lesen geöffneten Stream) throw<xref:System.NotSupportedException?displayProperty=fullName>
+ Wenn ein Vorgang nicht unterstützt wird (z. b. in einem überschriebenen **Stream. Schreiben** in einem zum Lesen geöffneten Stream) throw <xref:System.NotSupportedException?displayProperty=fullName>
 
- Wenn eine Konvertierung zu einem Überlauf führen würde (z. b. in einer expliziten Cast Operator Überladung), Throw<xref:System.OverflowException?displayProperty=fullName>
+ Wenn eine Konvertierung zu einem Überlauf führen würde (z. b. in einer expliziten Cast Operator Überladung), Throw <xref:System.OverflowException?displayProperty=fullName>
 
  In allen anderen Situationen sollten Sie einen eigenen Typ erstellen, der von abgeleitet ist, <xref:System.Exception> und diesen auslösen.
 

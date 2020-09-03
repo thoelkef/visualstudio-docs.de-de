@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292334"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Hinzufügen von Stereotypen zu UML-Modellelementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu kommentieren und spezielle Eigenschaften bereitzustellen. Um einem Modellelement einen Stereotypen hinzuzufügen, muss der Stereotyp in einem Profil definiert werden, und Sie müssen das Profil mit einem Paket oder dem Modell verknüpfen, das das Modellelement enthält. Jeder Stereotyp kann nur bestimmten Arten von Modellelementen hinzugefügt werden, z. B. UML-Klassen, Anwendungsfällen oder Komponenten.
+Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu kommentieren und spezielle Eigenschaften bereitzustellen.  Um einem Modellelement einen Stereotypen hinzuzufügen, muss der Stereotyp in einem Profil definiert werden, und Sie müssen das Profil mit einem Paket oder dem Modell verknüpfen, das das Modellelement enthält. Jeder Stereotyp kann nur bestimmten Arten von Modellelementen hinzugefügt werden, z. B. UML-Klassen, Anwendungsfällen oder Komponenten.
 
  Wenn Sie beispielsweise eine UML-Klasse mit dem Stereotyp «Specification» definieren möchten, müssen Sie ihn in einem Paket oder einem Modell erstellen, das mit dem Standardprofil L2 verknüpft ist.
 
@@ -63,15 +63,15 @@ Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu komm
 
     - Klicken Sie in einem UML-Klassendiagramm auf das Tool für ein Element, und klicken Sie dann in das Paket des Diagramms.
 
-         \- oder –
+         \- oder -
 
     - Klicken Sie im UML-Modell-Explorer mit der rechten Maustaste auf das Paket, zeigen Sie auf **Hinzufügen**, und klicken Sie auf einen Elementtyp.
 
-         \- oder –
+         \- oder -
 
     - Ziehen Sie im UML-Modell-Explorer ein vorhandenes Element in das Paket.
 
-         \- oder –
+         \- oder -
 
     - Verknüpfen Sie ein Diagramm mit dem Paket, und erstellen Sie dann Elemente innerhalb des Diagramms.
 
@@ -81,6 +81,6 @@ Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu komm
 
          Sie können dieses Verfahren nur für einige Typen von Diagrammen tun.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md) [Anpassen des Modells mit Profilen und Stereotypen definieren von](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Paketen und Namespaces](../modeling/define-packages-and-namespaces.md)
 

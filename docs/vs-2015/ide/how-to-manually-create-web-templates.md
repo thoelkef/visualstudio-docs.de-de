@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651801"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Gewusst wie: Manuelles Erstellen von Webvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen. Da Vorlagen für Webprojekte im Dialogfeld **Neue Website hinzufügen** angezeigt werden, und Elemente von Webprojekten nach Programmiersprache kategorisiert werden, muss die Vorlage in der VSTEMPLATE-Datei als Webvorlage angegeben sein. Die Datei muss außerdem Angaben zur Programmiersprache enthalten.
+Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen. Da Webprojekt Vorlagen im Dialogfeld **neue Website hinzufügen** angezeigt werden und Webprojekt Elemente nach Programmiersprache kategorisiert werden, muss die Vorlage in der VSTEMPLATE-Datei als Webvorlage angegeben und die Programmiersprache identifiziert werden.
 
 > [!NOTE]
 > Webvorlagen müssen eine leere WEBPROJ-Datei enthalten, die mithilfe des `File`-Attributs des `Project`-Elements angegeben wird. Obwohl Webprojekte keine Projektdateien benötigen, ist diese Datei erforderlich, damit eine Webvorlage richtig funktioniert.
@@ -47,7 +47,7 @@ Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen
 
    - Visual Basic
 
-     Beispiel:
+     Zum Beispiel:
 
    ```
    <TemplateData>
@@ -86,5 +86,5 @@ Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

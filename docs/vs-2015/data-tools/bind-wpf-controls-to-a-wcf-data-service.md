@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850141"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
@@ -34,7 +34,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 - Erstellen eines Entity Data Models, das aus Daten in der Beispieldatenbank AdventureWorksLT generiert wird.
 
-- Erstellen einer [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], die die Daten in der Entity Data Model für eine WPF-Anwendung verfügbar macht.
+- Erstellen einer [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , die die Daten in der Entity Data Model für eine WPF-Anwendung verfügbar macht.
 
 - Erstellen eines Satzes datengebundener Steuerelemente durch Ziehen von Elementen aus dem Fenster **Datenquellen** zum WPF-Designer.
 
@@ -44,8 +44,8 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
@@ -61,7 +61,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 - Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [Übersicht über WPF-und Silverlight-Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über die Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="create-the-service-project"></a>Erstellen des Dienst Projekts
  Beginnen Sie diese exemplarische Vorgehensweise, indem Sie ein Projekt für einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] erstellen.
@@ -83,7 +83,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 6. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Default.aspx**, und wählen Sie **Löschen** aus. Diese Datei wird für diese exemplarische Vorgehensweise benötigt.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Erstellen eines Entity Data Model für den Dienst
- Damit die Daten mithilfe eines [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] für eine Anwendung verfügbar gemacht werden, müssen Sie ein Datenmodell für den Dienst definieren. Der [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] unterstützt zwei Typen von Datenmodellen: Entitäts Datenmodelle und benutzerdefinierte Datenmodelle, die mit Common Language Runtime (CLR)-Objekten definiert werden, die die <xref:System.Linq.IQueryable%601>-Schnittstelle implementieren. In dieser exemplarischen Vorgehensweise erstellen Sie ein Entity Data Model für das Datenmodell.
+ Damit die Daten mithilfe eines [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] für eine Anwendung verfügbar gemacht werden, müssen Sie ein Datenmodell für den Dienst definieren. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]Unterstützt zwei Typen von Datenmodellen: Entitäts Datenmodelle und benutzerdefinierte Datenmodelle, die mit Common Language Runtime (CLR)-Objekten definiert werden, die die- <xref:System.Linq.IQueryable%601> Schnittstelle implementieren. In dieser exemplarischen Vorgehensweise erstellen Sie ein Entity Data Model für das Datenmodell.
 
 #### <a name="to-create-an-entity-data-model"></a>So erstellen Sie ein Entity Data Model
 
@@ -91,7 +91,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 2. Klicken Sie in der Liste „Installierte Vorlagen“ auf **Daten**, und wählen Sie dann das Projektelement **ADO.NET Entity Data Model** aus.
 
-3. Ändern Sie den Namen in `AdventureWorksModel.edmx`, und klicken Sie auf **Hinzufügen**.
+3. Ändern Sie den Namen in `AdventureWorksModel.edmx` , und klicken Sie auf **Hinzufügen**.
 
      Der **Assistent für Entity Data Model** wird geöffnet.
 
@@ -109,30 +109,30 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 8. Klicken Sie auf **Fertig stellen**.
 
-## <a name="create-the-service"></a>Dienst erstellen
- Erstellen Sie eine [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], um die Daten in der Entity Data Model für eine WPF-Anwendung verfügbar zu machen.
+## <a name="create-the-service"></a>Erstellen des Diensts
+ Erstellen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] Sie eine, um die Daten in der Entity Data Model für eine WPF-Anwendung verfügbar zu machen.
 
 #### <a name="to-create-the-service"></a>So erstellen Sie den Dienst
 
-1. Wählen Sie im Menü **Projekt** die Option **Neues Element hinzufügen** aus.
+1. Wählen Sie im Menü **Projekt** den Eintrag **Neues Element hinzufügen** aus.
 
-2. Klicken Sie in der Liste installierte Vorlagen auf **Web**, und wählen Sie dann das Element **WCF Data Service** -Projekt aus.
+2. Klicken Sie in der Liste Installierte Vorlagen auf **Web**, und wählen Sie dann das Projektelement **WCF Data Service** aus.
 
-3. Geben Sie im Feld **Name** `AdventureWorksService.svc`ein, und klicken Sie auf **Hinzufügen**.
+3. Geben Sie im Feld **Name den Namen** ein `AdventureWorksService.svc` , und klicken Sie auf **Hinzufügen**.
 
-     Visual Studio fügt dem Projekt die `AdventureWorksService.svc` hinzu.
+     Visual Studio fügt dem `AdventureWorksService.svc` Projekt das hinzu.
 
-## <a name="configure-the-service"></a>Konfigurieren Sie den Dienst.
+## <a name="configure-the-service"></a>Konfigurieren des Diensts
  Damit der Dienst mit dem von Ihnen erstellten Entity Data Model funktioniert, muss er konfiguriert werden.
 
 #### <a name="to-configure-the-service"></a>So konfigurieren Sie den Dienst
 
-1. Ersetzen Sie in der `AdventureWorks.svc`-Codedatei die `AdventureWorksService`-Klassen Deklaration durch den folgenden Code.
+1. Ersetzen Sie in der `AdventureWorks.svc` Codedatei die- `AdventureWorksService` Klassen Deklaration durch den folgenden Code.
 
      [!code-csharp[Data_WPFWCF#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs#1)]
      [!code-vb[Data_WPFWCF#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb#1)]
 
-     Dieser Code aktualisiert die `AdventureWorksService`-Klasse, sodass Sie von einer <xref:System.Data.Services.DataService%601> abgeleitet wird, die auf der `AdventureWorksLTEntities` Objekt Kontext Klasse in ihrer Entity Data Model arbeitet. Außerdem aktualisiert er die Methode `InitializeService`, sodass Clients des Diensts vollen Lese-/Schreibzugriff auf die `SalesOrderHeader`-Entität haben.
+     Mit diesem Code wird die- `AdventureWorksService` Klasse aktualisiert, sodass Sie von einem abgeleitet wird, <xref:System.Data.Services.DataService%601> der für die `AdventureWorksLTEntities` Objekt Kontext Klasse in ihrer Entity Data Model arbeitet. Außerdem aktualisiert er die Methode `InitializeService`, sodass Clients des Diensts vollen Lese-/Schreibzugriff auf die `SalesOrderHeader`-Entität haben.
 
 2. Erstellen Sie das Projekt und überprüfen Sie, ob es fehlerfrei erstellt wird.
 
@@ -149,7 +149,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 4. Geben Sie im Feld **Name** die Bezeichnung `AdventureWorksSalesEditor` ein, und klicken Sie auf **OK**.
 
-     Visual Studio fügt der Projekt Mappe das `AdventureWorksSalesEditor`-Projekt hinzu.
+     Visual Studio fügt das `AdventureWorksSalesEditor` Projekt der Projekt Mappe hinzu.
 
 5. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
@@ -157,15 +157,15 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 6. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
-     Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
+     Der Assistent zum **Konfigurieren von Datenquellen** wird geöffnet.
 
 7. Wählen Sie auf der Seite **Datenquellentyp auswählen** des Assistenten **Dienst**, und klicken Sie auf **Weiter**.
 
 8. Klicken Sie im Dialogfeld **Dienstverweis hinzufügen** auf **Ermitteln**.
 
-     Visual Studio durchsucht die aktuelle Projekt Mappe nach verfügbaren Diensten und fügt der Liste der verfügbaren Dienste `AdventureWorksService.svc` in das Feld **Dienste** hinzu.
+     Visual Studio durchsucht die aktuelle Projekt Mappe nach verfügbaren Diensten und fügt `AdventureWorksService.svc` Sie der Liste der verfügbaren Dienste im Feld **Dienste** hinzu.
 
-9. Geben Sie im Feld **Namespace** `AdventureWorksService`ein.
+9. Geben Sie im Feld **Namespace** den Text ein `AdventureWorksService` .
 
 10. Geben Sie im Feld **Dienste** den Namen **AdventureWorksService.svc** ein, und klicken Sie auf **OK**.
 
@@ -199,7 +199,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 3. Erstellen Sie das Projekt.
 
 ## <a name="create-the-data-bound-controls"></a>Erstellen der Daten gebundenen Steuerelemente
- Erstellen Sie Steuerelemente, die Kundendaten Sätze anzeigen, indem Sie den Knoten `SalesOrderHeaders` aus dem **Datenquellen** Fenster in den Designer ziehen.
+ Erstellen Sie Steuerelemente, die Kundendaten Sätze anzeigen, indem `SalesOrderHeaders` Sie den Knoten aus dem **Datenquellen** Fenster in den Designer ziehen.
 
 #### <a name="to-create-the-data-bound-controls"></a>So erstellen Sie ein datengebundene Steuerelemente
 
@@ -217,7 +217,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
    - **RevisionNumber**
 
-   - **Rowguid**
+   - **ROWGUID**
 
      Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. In dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.
 
@@ -231,7 +231,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 7. Legen Sie die Eigenschaft **IsReadOnly** für jedes der folgenden Textfelder fest:
 
-   - **Purchase Order Number**
+   - **Bestellnummer**
 
    - **Sales Order ID**
 
@@ -250,11 +250,11 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
      [!code-vb[Data_WPFWCF#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#2)]
 
 ## <a name="navigatesales-records"></a>Navigatesales-Einträge
- Fügen Sie Code hinzu, mit dessen Hilfe Benutzer durch die Salesdatensätze scrollen können, indem Sie die Schaltflächen **\<** und **>** verwenden.
+ Fügen Sie Code hinzu, mit dem Benutzer mithilfe der Schaltflächen durch Umsatzdaten Sätze scrollen können **\<** and **>** .
 
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Benutzern das Navigieren durch Sales Records ermöglichen
 
-1. Doppelklicken Sie im Designer die Schaltfläche **<** auf der Fensteroberfläche.
+1. Doppelklicken Sie im Designer **<** auf die Schaltfläche auf der Fenster Oberfläche.
 
      Visual Studio öffnet die CodeBehind-Datei und erstellt einen neuen `backButton_Click`-Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click>-Ereignis.
 
@@ -263,7 +263,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
      [!code-csharp[Data_WPFWCF#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFWCF#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#3)]
 
-3. Kehren Sie zum Designer zurück, und doppelklicken Sie auf die Schaltfläche **>** .
+3. Kehren Sie zum Designer zurück, und doppelklicken Sie auf die **>** Schaltfläche.
 
      Visual Studio öffnet die CodeBehind-Datei und erstellt einen neuen `nextButton_Click`-Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click>-Ereignis.
 
@@ -277,7 +277,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Die Möglichkeit zum Speichern von Änderungen zu Sales Records hinzufügen
 
-1. Doppelklicken Sie im Designer auf die Schaltfläche **Änderungen speichern**.
+1. Doppelklicken Sie im Designer auf die Schaltfläche **Änderungen speichern** .
 
      Visual Studio öffnet die CodeBehind-Datei und erstellt einen neuen `saveButton_Click`-Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click>-Ereignis.
 
@@ -305,7 +305,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
     - Die Textfelder zeigen unterschiedliche Datenfelder aus dem ersten Verkaufsdatensatz an, der die Sales Order ID **71774** vorweist.
 
-    - Sie können auf die Schaltflächen **>** oder **<** für die Navigation durch andere Verkaufsdatensätze klicken.
+    - Sie können auf die **>** Schaltflächen oder klicken **<** , um durch andere Verkaufsdaten Sätze zu navigieren.
 
 5. Geben Sie Text in einen der Verkaufsdatensätze im Feld **Comment** ein, und klicken Sie anschließend auf **Änderungen speichern**.
 
@@ -322,5 +322,5 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
 
 - Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Übersicht über das](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211) Binden von WPF-Steuerelementen [an ein DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md) [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework Übersicht](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) Übersicht über [WPF und Silverlight-Designer Übersicht](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)

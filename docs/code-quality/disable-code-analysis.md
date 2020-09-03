@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2cac7ad0502d82309aa664b8e8fe6bdd0301815
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800697"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Deaktivieren der Quell Code Analyse für verwalteten Code
@@ -47,7 +47,7 @@ Klicken Sie zum Öffnen dieser Seite in **Projektmappen-Explorer** mit der recht
 
 Fügen Sie der [Projektdatei](../ide/solutions-and-projects-in-visual-studio.md#project-file)mindestens eine der folgenden MSBuild-Eigenschaften hinzu, um die Quell Code Analyse für Analyzers zu deaktivieren.
 
-| MSBuild-Eigenschaft | Beschreibung | Standard |
+| MSBuild-Eigenschaft | BESCHREIBUNG | Standard |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | Steuert, ob Analysen zum Zeitpunkt der Erstellung ausgeführt werden. | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | Steuert, ob Analysen Code zur Entwurfszeit Live analysieren. | `true` |

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520093"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Gewusst wie: Programm gesteuertes zugreifen auf Outlook-Kontakte
@@ -34,7 +34,7 @@ ms.locfileid: "85520093"
 
 - Kontakte, deren Nachname die Zeichenfolge "**na"** (z. b. "Tzipi Butnaru") im Ordner " **Contacts** " enthalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)
 - [Gewusst wie: Programm gesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Gewusst wie: Programm gesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

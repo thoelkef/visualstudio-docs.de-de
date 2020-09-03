@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844272"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst mit WPF und Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfache [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] erstellen, die in einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung gehostet wird, und dann über eine Windows Forms Anwendung darauf zugreifen.
+In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine einfache erstellt [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] wird, die in einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webanwendung gehostet wird, und dann über eine Windows Forms Anwendung darauf zugegriffen wird.
 
  In dieser exemplarischen Vorgehensweise werden Sie:
 
@@ -32,7 +32,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 - Ein [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] zur Darstellung der Tabelle "Customers" in der Northwind-Datenbank erstellen.
 
-- Erstellen Sie ein [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
+- Erstellen Sie eine [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
 - Eine Clientanwendung erstellen und dieser einen Verweis auf den [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] hinzufügen.
 
@@ -40,8 +40,8 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 - Optional Filterfunktionen zur Anwendung hinzufügen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Die Beispieldatenbank Northwind.
 
@@ -56,7 +56,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 #### <a name="to-create-the-web-project"></a>So erstellen Sie das Webprojekt
 
-1. Wählen Sie in der Menüleiste **Datei**, **neu**und **Projekt**aus.
+1. Wählen Sie in der Menüleiste **Datei**, **neu**und  **Projekt**aus.
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** die Knoten **Visual Basic** oder **Visual C#** sowie **Web**, und wählen Sie dann die Vorlage **ASP.NET-Webanwendung** aus.
 
@@ -72,7 +72,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Daten** und anschließend das Element **ADO.NET Entity Data Model** aus.
 
-3. Geben Sie im Textfeld **Name** `NorthwindModel`ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
+3. Geben Sie im Textfeld **Name** ein `NorthwindModel` , und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
     Der Assistent für Entity Data Model wird angezeigt.
 
@@ -82,7 +82,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
    - Wenn eine Datenverbindung mit der Beispieldatenbank Northwind in der Dropdownliste verfügbar ist, wählen Sie sie aus.
 
-        \- oder -
+        - oder -
 
    - Wählen Sie die Schaltfläche **Neue Verbindung**, um eine neue Datenverbindung zu konfigurieren. Weitere Informationen finden Sie unter [Hinzufügen neuer Verbindungen](../data-tools/add-new-connections.md).
 
@@ -108,11 +108,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Web** und anschließend das Element **WCF Data Service 5.6**.
 
-3. Geben Sie im Textfeld **Name** `NorthwindCustomers`ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
+3. Geben Sie im Textfeld **Name** ein `NorthwindCustomers` , und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
-    Die Datei "NorthwindCustomers. svc" wird im **Code-Editor**angezeigt.
+    Die Datei NorthwindCustomers.svc wird im **Code-Editor** angezeigt.
 
-4. Suchen Sie im **Code-Editor`TODO:` den ersten** -Kommentar, und ersetzen Sie den Code durch Folgendes:
+4. Suchen Sie im **Code-Editor`TODO:` den ersten **-Kommentar, und ersetzen Sie den Code durch Folgendes:
 
     [!code-csharp[WCFDataServiceWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#1)]
     [!code-vb[WCFDataServiceWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#1)]
@@ -144,7 +144,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 1. Wählen Sie in der Menüleiste Datei, **Hinzufügen**, **Neues Projekt**aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**  , wählen Sie den Knoten **Windows** aus, und wählen Sie dann **Windows Forms Anwendung**aus.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , wählen Sie den Knoten **Windows** aus, und wählen Sie dann **Windows Forms Anwendung**aus.
 
 3. Geben Sie im Textfeld **Name**`NorthwindClient` ein, und wählen Sie dann die Schaltfläche **OK** aus.
 
@@ -219,7 +219,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
    ```
 
-6. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Datei NorthwindCustomers. svc, und wählen Sie **in Browser anzeigen**aus. Das XML-Schema für den Dienst wird im Internet Explorer angezeigt.
+6. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die NorthwindCustomers.svc-Datei, und wählen Sie **In Browser anzeigen** aus. Das XML-Schema für den Dienst wird im Internet Explorer angezeigt.
 
 7. Kopieren Sie die URL aus der Adressleiste von Internet Explorer.
 
@@ -240,7 +240,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 2. Fügen Sie dem Formular ein <xref:System.Windows.Forms.TextBox>- und ein <xref:System.Windows.Forms.Button>-Steuerelement aus der **Toolbox** hinzu.
 
-3. Öffnen Sie das Kontextmenü für das <xref:System.Windows.Forms.Button>-Steuerelement, und wählen Sie **Code anzeigen**aus, und fügen Sie dann den folgenden Code in den `Button1_Click`-Ereignishandler ein:
+3. Öffnen Sie das Kontextmenü für das <xref:System.Windows.Forms.Button> -Steuerelement, und wählen Sie **Code anzeigen**aus, und fügen Sie dann den folgenden Code im- `Button1_Click` Ereignishandler hinzu:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -275,5 +275,5 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine einfa
 
 6. Geben Sie im Textfeld die Zeichenfolge **London** ein, und klicken Sie dann auf die Schaltfläche. Nur die Kunden aus London werden angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) Gewusst [wie: Hinzufügen, aktualisieren oder Entfernen eines WCF-Datendienst Verweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

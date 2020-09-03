@@ -1,5 +1,5 @@
 ---
-title: Bewährte Methoden für die Implementierung eines Quellcodeverwaltungs-Plug-in | Microsoft-Dokumentation
+title: Bewährte Methoden für die Implementierung eines Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,52 +13,52 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 99166c8bf9a76deaa3805bfd8f5ac6db35e5c0a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184712"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Bewährte Methoden für die Implementierung eines Quellcodeverwaltungs-Plug-ins
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die folgenden technischen Details können Sie zuverlässig ein Quellcodeverwaltungs-Plug-in implementieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Die folgenden technischen Details helfen Ihnen bei der zuverlässigen Implementierung eines Quellcodeverwaltungs-Plug-ins in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="memory-management-issues"></a>Verwaltung von Arbeitsspeicherproblemen  
- In den meisten Fällen wird die integrierte Entwicklungsumgebung (IDE), die der Aufrufer ist, gibt und belegt Arbeitsspeicher. Das Quellcodeverwaltungs-Plug-Ins gibt Zeichenfolgen und andere Elemente im vom Aufrufer reservierte Puffer zurück. Ausnahmen werden in Beschreibungen bestimmter Funktionen aufgeführt, in dem sie auftreten.  
+## <a name="memory-management-issues"></a>Probleme mit der Speicherverwaltung  
+ In den meisten Fällen gibt die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE), bei der es sich um den Aufrufer handelt, den Arbeitsspeicher frei Das Quellcodeverwaltungs-Plug-in gibt Zeichen folgen und andere Elemente in der vom Aufrufer zugewiesenen Puffer zurück. Ausnahmen werden in Beschreibungen spezifischer Funktionen aufgeführt, in denen Sie auftreten.  
   
 ## <a name="arrays-of-file-names"></a>Arrays von Dateinamen  
- Wenn ein Array von Dateien übergeben wird, wird er nicht als Array von Dateinamen zusammenhängenden übergeben. Es wird als ein Array von Zeigern in Dateinamen übergeben. Z. B. in der [SccGet](../extensibility/sccget-function.md), die Dateinamen werden durch Übergeben der `lpFileNames` -Parameter, in denen `lpFileNames` ist tatsächlich ein Zeiger auf eine `char **`. `lpFileNames`[0] ist ein Zeiger auf den Vornamen, `lpFileNames`[1] ein Zeiger auf den zweiten Namen und So weiter.  
+ Wenn ein Array von Dateien übermittelt wird, wird es nicht als zusammenhängendes Array von Dateinamen übermittelt. Sie wird als Array von Zeigern auf Dateinamen übermittelt. Beispielsweise werden in [sccget](../extensibility/sccget-function.md)die Dateinamen durch den- `lpFileNames` Parameter übergeben, wobei `lpFileNames` tatsächlich ein Zeiger auf eine ist `char **` . `lpFileNames`[0] ist ein Zeiger auf den Vornamen, `lpFileNames` [1] ist ein Zeiger auf den zweiten Namen usw.  
   
-## <a name="large-model"></a>Umfangreiches Modell  
- Alle Zeiger sind 32-Bit, sogar von 16-Bit-Betriebssystemen unterstützt.  
+## <a name="large-model"></a>Großes Modell  
+ Alle Zeiger sind auch bei 16-Bit-Betriebssystemen 32 Bits.  
   
-## <a name="fully-qualified-paths"></a>Vollqualifizierte Pfade  
- In dem Dateinamen müssen oder Verzeichnisse als Argumente angegeben werden, da vollqualifizierte Pfade oder UNC-Pfade, ohne das abschließende umgekehrte Schrägstriche. Es ist die Verantwortung für das Quellcodeverwaltungs-Plug-in diese relativen Pfade, wenn also eine Voraussetzung für das zugrunde liegende Quellcodeverwaltungssystem zu übersetzen.  
+## <a name="fully-qualified-paths"></a>Voll qualifizierte Pfade  
+ Wenn Dateinamen oder Verzeichnisse als Argumente angegeben werden, müssen Sie voll qualifizierte Pfade oder UNC-Pfade ohne die abschließenden umgekehrten Schrägstriche sein. Das Quellcodeverwaltungs-Plug-in ist dafür verantwortlich, diese in relative Pfade zu übersetzen, wenn dies eine Anforderung des zugrunde liegenden Quell Code Verwaltungssystems ist.  
   
-## <a name="specify-a-fully-qualified-path-for-the-registered-dll"></a>Geben Sie einen vollqualifizierten Pfad für die registrierte DLL  
- Die IDE lädt die DLLs nicht mehr über relative Pfade (z. B..\NewProvider.dll). Ein vollständiger Pfad der DLL muss (z. B. C:\Providers\NewProvider.dll) angegeben werden. Diese Anforderung erhöht die Sicherheit der IDE durch das Laden von nicht autorisierten oder dessen Identität angenommen wurde quellcodeverwaltung DLLs zu verhindern.  
+## <a name="specify-a-fully-qualified-path-for-the-registered-dll"></a>Geben Sie einen voll qualifizierten Pfad für die registrierte DLL an.  
+ Die IDE lädt keine DLLs mehr aus relativen Pfaden (z. b. .\NewProvider.dll). Es muss ein vollständiger Pfad der DLL angegeben werden (z. b. C:\Providers\NewProvider.dll). Diese Anforderung erhöht die Sicherheit der IDE, indem verhindert wird, dass nicht autorisierte oder nicht autorisierte Quell Code Verwaltungs-DLLs geladen werden.  
   
-## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>Überprüfen Sie bei der Installation von Ihrer Quellcodeverwaltung-Plug-In für einen vorhandenen VSSCI-Plug-in  
- Ein Benutzer, die Ihre quellcodeverwaltung-Plug-in installieren möchte möglicherweise bereits ein vorhandene Datenquellen-Steuerelement-Plug-in auf dem Computer installiert. Das Installationsprogramm (Setup) für das plug-in die Erstellung sollte bestimmen, ob vorhandene Werte für die entsprechenden Registrierungsschlüssel vorhanden sind. Wenn dieser Schlüssel bereits festgelegt sind, sollte Ihr Installationsprogramm über den Benutzer bitten, ob als das Standard-Quellcodeverwaltungs-Plug-Ins das plug-in registrieren, und ersetzen, die bereits installiert ist.  
+## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>Bei der Installation des Quellcodeverwaltungs-Plug-Ins auf ein vorhandenes vssci-Plug-in überprüfen  
+ Für einen Benutzer, der das Quellcodeverwaltungs-Plug-in installieren möchte, ist möglicherweise bereits ein Quellcodeverwaltungs-Plug-in auf dem Computer installiert. Das Installationsprogramm (Setup) für das Plug-in, das Sie erstellen, sollte ermitteln, ob vorhandene Werte für die relevanten Registrierungsschlüssel vorhanden sind. Wenn diese Schlüssel bereits festgelegt sind, sollte das Installationsprogramm den Benutzer bitten, das Plug-in als Standard-Quellcodeverwaltungs-Plug-in zu registrieren und das bereits installierte zu ersetzen.  
   
-## <a name="error-result-codes-and-reporting"></a>Ergebnis-Fehlercodes und Berichterstellung  
- Die `SCC_OK` Rückgabewert Code für eine Source-Control-Funktion gibt an, dass der Vorgang für alle Dateien erfolgreich war. Wenn der Vorgang fehlschlägt, wird erwartet, dass die aufgetretenen letzten Fehlercode zurückgegeben.  
+## <a name="error-result-codes-and-reporting"></a>Fehler Ergebnis Codes und Berichterstellung  
+ Der `SCC_OK` Rückgabecode für eine Quell Code Verwaltungsfunktion gibt an, dass der Vorgang für alle Dateien erfolgreich war. Wenn der Vorgang fehlschlägt, wird erwartet, dass der zuletzt aufgetretene Fehlercode zurückgegeben wird.  
   
- Die Regel für die berichterstellung ist, dass im Falle ein Fehlers in der IDE, die IDE für die berichterstellung er verantwortlich ist. Wenn ein Fehler in der Quellcode-Verwaltungssystems auftritt, ist das Quellcodeverwaltungs-Plug-In für gemeldet verantwortlich. Z. B. wird "keine Dateien sind derzeit ausgewählte" von der IDE, gemeldet werden, während das Plug-in "Diese Datei bereits ausgecheckt ist" gemeldet worden wären.  
+ Die Regel für die Berichterstellung besteht darin, dass die IDE bei Auftreten eines Fehlers in der IDE für die Berichterstellung zuständig ist. Wenn im Quell Code Verwaltungssystem ein Fehler auftritt, ist das Quellcodeverwaltungs-Plug-in für die Berichterstellung verantwortlich. Beispielsweise wird "keine Dateien sind derzeit ausgewählt", die von der IDE gemeldet werden, während "diese Datei ist bereits ausgecheckt", wird vom Plug-in gemeldet.  
   
-## <a name="the-context-structure"></a>Die Context-Struktur  
- Während des Aufrufs der [SccInitialize](../extensibility/sccinitialize-function.md), der Aufrufer übergibt die `ppvContext` -Parameter, der eine nicht initialisierte Handle für eine "void" ist. Das Quellcodeverwaltungs-Plug-in kann diesen Parameter ignorieren oder eine Struktur jeglicher Art zuordnen und die übergebene Zeiger einen Zeiger auf dieser Struktur abgelegt. Die IDE diese Struktur nicht interpretieren, aber übergibt einen Zeiger auf diese Struktur in jeden anderen Aufruf in das plug-in. Diese wertvollen Cache stellt Kontextinformationen bereit, an das plug-in, globale Zustandsinformationen zu verwalten, die funktionsaufrufübergreifend hinweg beibehalten werden soll, ohne die Verwendung von globalen Variablen verwendet werden kann. Das plug-in ist verantwortlich für das Freigeben der Struktur in einem Aufruf der [SccUninitialize](../extensibility/sccuninitialize-function.md).  
+## <a name="the-context-structure"></a>Die Kontext Struktur  
+ Während des Aufrufers [sccinitialize](../extensibility/sccinitialize-function.md)übergibt der Aufrufer den- `ppvContext` Parameter, bei dem es sich um ein nicht initialisiertes Handle für einen void handelt. Das Quellcodeverwaltungs-Plug-in kann diesen Parameter ignorieren, oder er kann eine Struktur beliebiger Art zuordnen und einen Zeiger auf diese Struktur in den übergebenen Zeiger einfügen. Die IDE versteht diese Struktur nicht, sondern übergibt einen Zeiger auf diese Struktur an jeden anderen-Befehl im Plug-in. Dadurch erhalten Sie wertvolle Kontext Cache Informationen für das Plug-in, mit denen Sie globale Zustandsinformationen verwalten können, die über Funktionsaufrufe hinweg beibehalten werden, ohne dass globale Variablen verwendet werden. Das Plug-in ist dafür verantwortlich, die Struktur für einen aufzurufenden [sccuninitialize](../extensibility/sccuninitialize-function.md)-Befehl freizugeben.  
   
- Wenn im-Plug-in wird die `SCC_CAP_REENTRANT` bit in der [SccInitialize](../extensibility/sccinitialize-function.md) (insbesondere in der `lpSccCaps` Parameter), mehrere Kontext Strukturen werden verwendet, um alle Projekte nachzuverfolgen, die geöffnet sind.  
+ Wenn das Plug-in das `SCC_CAP_REENTRANT` Bit in [sccinitialize](../extensibility/sccinitialize-function.md) festlegt (insbesondere im- `lpSccCaps` Parameter), werden mehrere Kontext Strukturen verwendet, um alle geöffneten Projekte zu verfolgen.  
   
 ## <a name="bitflags-and-other-command-options"></a>Bitflags und andere Befehlsoptionen  
- Für jeden Befehl z. B. die [SccGet](../extensibility/sccget-function.md), die IDE kann angeben, dass viele Optionen, die das Verhalten des Befehls zu ändern.  
+ Für jeden Befehl, wie z. b. [sccget](../extensibility/sccget-function.md), kann die IDE viele Optionen angeben, die das Verhalten des Befehls ändern.  
   
- Die API unterstützt bestimmte Optionen von der IDE durch Festlegen der `fOptions` Parameter. Diese Optionen werden in beschrieben [Bitflags, die von bestimmten Befehlen verwendete](../extensibility/bitflags-used-by-specific-commands.md) sowie die Befehle, die sie betreffen. Im Allgemeinen sind diese Optionen, die für die der Benutzer nicht aufgefordert werden sollen.  
+ Die API unterstützt die Einstellung bestimmter Optionen durch die IDE mithilfe des- `fOptions` Parameters. Diese Optionen werden in Bitflags beschrieben, die [von bestimmten Befehlen](../extensibility/bitflags-used-by-specific-commands.md) in Verbindung mit den Befehlen verwendet werden, die Sie betreffen. Im Allgemeinen handelt es sich hierbei um Optionen, für die der Benutzer nicht aufgefordert wird.  
   
- Die meisten Benutzer konfigurierbare Einstellungsoptionen sind nicht auf diese Weise definiert, da sie von Quellcodeverwaltungs-Plug-ins variieren. Daher die empfohlene Methode ist ein **erweitert** Schaltfläche. Beispielsweise sind in der **erhalten** Dialogfeld zeigt nur Informationen, die er versteht, aber es zeigt auch die IDE eine **erweitert** Schaltfläche, wenn das plug-in verfügt über Optionen für diesen Befehl. Klickt der Benutzer die **erweitert** Schaltfläche, die IDE-Aufrufe der [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) das Quellcodeverwaltungs-Plug-in mit Informationen, z. B. Bitflags oder einen Datums-/Uhrzeitwert benutzeraufforderung zu aktivieren. Das plug-in gibt diese Informationen in einer Struktur, die während des übergeben wird die `SccGet` Befehl.  
+ Die meisten vom benutzerkonfigurierbaren Einstellungsoptionen werden nicht auf diese Weise definiert, da Sie sich in den Quellcodeverwaltungs-Plug-ins stark unterscheiden. Daher ist der empfohlene Mechanismus eine Schaltfläche **erweitert** . Beispielsweise zeigt die IDE im Dialogfeld **Get** nur Informationen an, die Sie versteht. Sie zeigt jedoch auch eine Schaltfläche **erweitert** an, wenn das Plug-in über Optionen für diesen Befehl verfügt. Wenn der Benutzer auf die Schaltfläche **erweitert** klickt, ruft die IDE [sccgetcommandoptions](../extensibility/sccgetcommandoptions-function.md) auf, damit das Quellcodeverwaltungs-Plug-in den Benutzer zur Eingabe von Informationen auffordern kann, z. b. Bitflags oder Datum/Uhrzeit. Das Plug-in gibt diese Informationen in einer-Struktur zurück, die während des-Befehls zurückgegeben wird `SccGet` .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)   
  [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../extensibility/internals/creating-a-source-control-plug-in.md)

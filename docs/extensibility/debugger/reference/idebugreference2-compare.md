@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Vergleichen | Microsoft Docs
+title: 'IDebugReference2:: Compare | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d293fcb89c92a19acc4f5a3910015914ef4231a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720639"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-Vergleicht einen Verweis mit einem anderen. Für die zukünftige Verwendung reserviert.
+Vergleicht einen Verweis auf einen anderen. Für zukünftige Verwendung reserviert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int Compare ( 
 
 ## <a name="parameters"></a>Parameter
 `dwCompare`\
-[in] Ein Wert [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) aus der REFERENCE_COMPARE-Enumeration, der den Vergleichsvorgang angibt, z. B. gleich, kleiner als oder größer als.
+in Ein Wert aus der [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) Enumeration, der den Vergleichs Vorgang angibt, z. b. gleich, kleiner als oder größer als.
 
 `pReference`\
-[in] Ein [IDebugReference2-Objekt,](../../../extensibility/debugger/reference/idebugreference2.md) das den zu vergleichenden Verweis darstellt.
+in Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Objekt, das den Verweis darstellt, mit dem verglichen werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.

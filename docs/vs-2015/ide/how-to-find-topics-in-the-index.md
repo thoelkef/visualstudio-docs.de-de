@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651942"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Gewusst wie: Suchen vom Themen im Index
@@ -43,5 +43,5 @@ Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten
 
      Wenn das angegebene Stichwort nur einem Thema zugeordnet ist, wird dies angezeigt. Andernfalls wird eine Liste aller Themen angezeigt, die dem betreffenden Stichwort zugeordnet sind.
 
-## <a name="see-also"></a>Siehe auch
- [Indexsuchtipps](../ide/index-search-tips.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Index Suchtipps](../ide/index-search-tips.md)

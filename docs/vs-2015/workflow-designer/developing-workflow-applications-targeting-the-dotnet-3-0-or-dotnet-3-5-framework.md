@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843878"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Entwickeln von Workflowanwendungen, die auf .NET 3.0 oder .NET auf 3.5 Framework abzielen
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt die [!INCLUDE[wfd1](../includes/wfd1-md.md)] zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)] Anwendungen bereit, die auf das [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]abzielen. Der Designer verwendet die vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche für die grafische Erstellung und das Debuggen von Workflowanwendungen.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt zum [!INCLUDE[wfd1](../includes/wfd1-md.md)] Erstellen von [!INCLUDE[wf](../includes/wf-md.md)] Anwendungen bereit, die auf abzielen [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . Der Designer verwendet die vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche für die grafische Erstellung und das Debuggen von Workflowanwendungen.
 
  [!INCLUDE[vs2010](../includes/vs2010-md.md)] bietet auch Zugriff auf einen Legacyworkflow-Designer, der verwendet werden kann, um auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzuzielen. Dieser Abschnitt enthält Anweisungen zur Verwenden dieses Legacydesigners.
 
@@ -29,4 +29,4 @@ ms.locfileid: "75843878"
  [Debuggen von Legacyworkflows](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Windows Workflow Foundation-Programmier Handbuch](https://msdn2.microsoft.com/library/bb628474.aspx)
+ [Windows Workflow Foundation-Programmierhandbuch](https://msdn2.microsoft.com/library/bb628474.aspx)

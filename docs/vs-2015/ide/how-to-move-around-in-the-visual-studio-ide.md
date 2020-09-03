@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89c4447eb6bbc4b2ae9f7667672626d5119c61d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651799"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Vorgehensweise: Navigieren in der Visual Studio-IDE
@@ -34,7 +34,7 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
 > Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** geschrieben. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
- Fast jeder Menübefehl in Visual Studio verfügt über eine Tastenkombination. Sie können außerdem eigene benutzerdefinierte Tastenkombinationen erstellen. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Fast jeder Menübefehl in Visual Studio verfügt über eine Tastenkombination. Sie können außerdem eigene benutzerdefinierte Tastenkombinationen erstellen. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="navigating-among-files-in-the-editor"></a>Navigieren zwischen Dateien im Editor
  Sie können verschiedene Methoden verwenden, um durch die Dateien zu navigieren, die im Editor geöffnet sind. Sie können zwischen den Dateien auf Grundlage der Reihenfolge wechseln, in der Sie auf sie zugreifen, den IDE-Navigator zur schnellen Suche einer geöffneten Datei verwenden, oder zu bevorzugte Dateien an die Registerkarte anheften, damit sie immer sichtbar sind.
@@ -54,7 +54,7 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
 
   Die Funktionsweise des **IDE-Navigators** ist weitestgehend mit der des Windows-Anwendungsschalters vergleichbar. Er ist nicht über die Menüs verfügbar, sondern kann lediglich mithilfe von Tastenkombinationen aufgerufen werden. Je nachdem, in welcher Reihenfolge Sie durch die Dateien navigieren möchten, können Sie den **IDE-Navigator** über einen von zwei (unten gezeigten) Befehlen aufrufen.
 
-  ![Visual Studio-IDE-Navigator](../ide/media/vs2015-ide-navigator.png "|::ref1::|")
+  ![Visual Studio-IDE-Navigator](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
 
   Der Befehl `Window.PreviousDocumentWindowNav` ermöglicht es Ihnen, zu der zuletzt verwendeten Datei zu navigieren, und der Befehl `Window.NextDocumentWindowNav` ermöglicht Ihnen die Navigation in umgekehrter Reihenfolge. In den allgemeinen Entwicklungseinstellungen ist dem Befehl `Window.PreviousDocumentWindowNav` die Tastenkombination STRG+UMSCHALT+TAB zugewiesen und dem Befehl `Window.NextDocumentWindowNav` die Tastenkombination STRG+TAB.
 
@@ -68,13 +68,13 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
     > [!TIP]
     > Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Dateien** navigieren, halten Sie STRG+UMSCHALT gedrückt, und drücken Sie die TAB-TASTE.
 
-     \- oder –
+     \- oder -
 
 - Klicken Sie in der oberen rechten Ecke des Editors auf die Schaltfläche **Aktive Dateien**, und wählen Sie eine Datei aus der Liste aus, zu der Sie wechseln möchten.
 
-     \- oder –
+     \- oder -
 
-- Wählen Sie auf der Menüleiste **Fenster** **Fenster** aus.
+- Wählen Sie auf der Menüleiste **Fenster****Fenster** aus.
 
 - Wählen Sie in der Liste die Datei aus, die Sie anzeigen möchten, und wählen Sie dann **Aktivieren**.
 
@@ -86,10 +86,10 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>So wechseln Sie zu einem bestimmten Toolfenster in der IDE
 
-- Drücken Sie ALT+F7, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter ALT-TASTE so oft die Taste F7, bis das gewünschte Fenster ausgewählt ist.
+- Drücken Sie Alt + F7, um den **IDE-Navigator**anzuzeigen. Drücken Sie bei gedrückter ALT-TASTE so oft die Taste F7, bis das gewünschte Fenster ausgewählt ist.
 
     > [!TIP]
     > Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Toolfenster** navigieren, halten Sie UMSCHALT+ ALT gedrückt, und drücken Sie die Taste F7.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md) [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md)

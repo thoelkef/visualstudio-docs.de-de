@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849270"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Vorgehensweise: Aufrufen des Workflow-Debuggers
@@ -26,7 +26,7 @@ Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Program
 - Verwenden Sie Remotedebuggen. Weitere Informationen zur Verwendung des Remote Debuggens finden Sie unter Gewusst [wie: Aktivieren des Remote Debuggens](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
-    > Wenn die Workflow Anwendung die x86-Architektur als Ziel verwendet und auf einem Computer gehostet wird, auf dem ein 64-Bit-Betriebssystem ausgeführt wird, funktioniert das Remote Debuggen nur dann, wenn [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] auf dem Remote Computer installiert ist oder das Ziel für die Workflow Anwendung in eine **beliebige CPU**geändert wird.
+    > Wenn die Workflow Anwendung die x86-Architektur als Ziel verwendet und auf einem Computer gehostet wird, auf dem ein 64-Bit-Betriebssystem ausgeführt wird, funktioniert das Remote Debuggen nur, wenn [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] auf dem Remote Computer installiert ist oder das Ziel für die Workflow Anwendung in eine **beliebige CPU**geändert wird.
 
 ### <a name="stepping-through-code"></a>Schrittweises Durchlaufen des Codes
 
@@ -40,5 +40,5 @@ Grundsätzlich debuggen Sie Workflows genau wie in anderen Visual Studio-Program
 
 - Wenn Sie ein Konsolen Anwendungsprojekt für einen Workflow entwickeln, drücken Sie einfach **F5** , um das Debuggen in Ihre Anwendung und den Workflow zu starten. Wenn Sie eine Aktivitätsbibliothek erstellen, muss eine ausführbare Hostanwendung als Startprojekt gegeben sein. Wenn Sie ein Startprojekt in **Projektmappen-Explorer**festlegen möchten, klicken Sie mit der rechten Maustaste auf den Projektnamen des Hosts, und wählen Sie **als Startprojekt festlegen**aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md) [Debuggen von Workflows mit dem Workflow-Designer](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

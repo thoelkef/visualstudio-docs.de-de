@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597112"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
@@ -39,7 +39,7 @@ Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem ei
 
 1. Geben Sie im Feld **Typname** den Namen des Typs ein, den Sie verwenden möchten.
 
-2. Führen Sie eine der folgenden Aktionen aus:
+2. Führen Sie eines der folgenden Verfahren aus:
 
     - Sobald der Name des Typs, den Sie verwenden möchten, in der Struktur im Feld **Typname** angezeigt wird, doppelklicken Sie auf den Typ, um ihn auszuwählen.
 
@@ -65,14 +65,14 @@ Die Liste der Typen im Feld **Typname** wird kürzer, da Sie mehr Zeichen eingeb
 
 Beispiel:
 
-1. Der Eingabe **Vorgang** entspricht <xref:System.OperationCanceledException>, aber nicht <xref:System.InvalidOperationException>. Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
+1. Der Typisierungs **Vorgang** stimmt überein, <xref:System.OperationCanceledException> aber nicht <xref:System.InvalidOperationException> . Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
 
-2. Das Eingeben von **generischen** Übereinstimmungen <xref:System.GenericUriParser>, aber nicht von Typen im <xref:System.Collections.Generic>-Namespace. Geben Sie den voll qualifizierten Namen des Namespace ein, um im <xref:System.Collections.Generic>-Namespace nach Typen zu suchen.
+2. Eingabe von **generischen** Übereinstimmungen, <xref:System.GenericUriParser> aber nicht von Typen im- <xref:System.Collections.Generic> Namespace. Wenn Sie im-Namespace nach Typen suchen möchten <xref:System.Collections.Generic> , geben Sie den voll qualifizierten Namen des Namespace ein.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Auswählen eines Dienstvertrags mithilfe des Typbrowserdialogfelds
 
 Beim Auswählen eines Dienstvertragstyps zeigt der Typbrowser nur Typen an, die über das <xref:System.ServiceModel.ServiceContractAttribute>-Attribut verfügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden der Aktivitätsdesigner](control-flow-activity-designers.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31fb06512457f919b67d41c3fb4096e4c3477426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652032"
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
@@ -29,25 +29,25 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten D
 
  In der folgenden Tabelle sind die Eigenschaften von Diagrammen aufgeführt.
 
-|property|Beschreibung|Default|
+|Eigenschaft|BESCHREIBUNG|Standard|
 |--------------|-----------------|-------------|
-|Füllfarbe|Die Füllfarbe für das Diagramm.|Weiß|
+|Füllfarbe|Die Füllfarbe für das Diagramm.|White|
 |Textfarbe|Die Farbe des Texts, der im Diagramm angezeigt wird.|Schwarz|
 |Zugriffsmodifizierer|Der Zugriffsmodifizierer der-Klasse (Public oder Internal).|Öffentlich|
 |Benutzerdefinierte Attribute|Wird verwendet, um der generierten Code Klasse Attribute hinzuzufügen.|\<none>|
-|Generiert doppelte abgeleitete|Wenn `True`, werden sowohl eine Basisklasse als auch eine partielle Klasse (zur Unterstützung der Anpassung durch über schreibungen) generiert. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Hat benutzerdefinierten Konstruktor|Wenn `True`, wird ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Vererbungs Modifizierer|Beschreibt die Art der Vererbung der Quell Code Klasse, die aus dem Diagramm generiert wird (`none`, `abstract` oder `sealed`).|Keiner|
-|Basis Diagramm|Die Basisklasse dieses Diagramms.|(keine)|
-|-Name|Der Name dieses Diagramms.|Aktueller Name|
+|Generiert doppelte abgeleitete|Gibt `True` an, dass sowohl eine Basisklasse als auch eine partielle Klasse (zur Unterstützung der Anpassung durch über schreibungen) generiert werden. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|Falsch|
+|Hat benutzerdefinierten Konstruktor|Gibt `True` an, dass ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt wird. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|Falsch|
+|Vererbungs Modifizierer|Beschreibt die Art der Vererbung der Quell Code Klasse, die aus dem Diagramm generiert wird `none` ( `abstract` oder `sealed` ).|Keine|
+|Basis Diagramm|Die Basisklasse dieses Diagramms.|(none)|
+|Name|Der Name dieses Diagramms.|Aktueller Name|
 |Namespace|Der Namespace, der mit diesem Diagramm verbunden ist.|Aktueller Namespace|
 |Dargestellte Klasse|Die Stamm Domänen Klasse, die dieses Diagramm darstellt.|Aktuelle Stamm Klasse, falls zutreffend|
-|Notizen|Informelle Notizen, die diesem Element zugeordnet sind.|\<none>|
-|Macht die Füllfarbe als Eigenschaft verfügbar.|Wenn `True`, kann der Benutzer die Füllfarbe des Diagramms des generierten Designers festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Form Diagramm, und klicken Sie auf **Hinzufügen**|False|
-|Macht Textfarbe als Eigenschaft verfügbar.|Wenn `True`, kann der Benutzer die Textfarbe des Diagramms im generierten Designer festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Form Diagramm, und klicken Sie auf **Hinzufügen**|False|
-|Beschreibung|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<none>|
+|Hinweise|Informelle Notizen, die diesem Element zugeordnet sind.|\<none>|
+|Macht die Füllfarbe als Eigenschaft verfügbar.|Wenn `True` der Wert ist, kann der Benutzer die Füllfarbe des Diagramms des generierten Designers festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Form Diagramm, und klicken Sie auf **Hinzufügen**|Falsch|
+|Macht Textfarbe als Eigenschaft verfügbar.|Wenn `True` der Wert ist, kann der Benutzer die Textfarbe des Diagramms im generierten Designer festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Form Diagramm, und klicken Sie auf **Hinzufügen**|Falsch|
+|BESCHREIBUNG|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<none>|
 |Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt wird.|\<none>|
 |Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Diagramm verwendet wird.|\<none>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985438"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formular Bereichs
@@ -35,8 +35,8 @@ ms.locfileid: "72985438"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -161,12 +161,12 @@ ms.locfileid: "72985438"
 
     *TaskFormRegion.cs* oder *TaskFormRegion. vb* wird im Code-Editor geöffnet.
 
-2. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Dieser Code füllt das Kombinationsfeld des Formularbereichs mit der Betreffzeile der einzelnen Aufgaben aus dem Ordner für Outlook-Aufgaben.
+2. Fügen Sie der `TaskFormRegion` -Klasse den folgenden Code hinzu. Dieser Code füllt das Kombinationsfeld des Formularbereichs mit der Betreffzeile der einzelnen Aufgaben aus dem Ordner für Outlook-Aufgaben.
 
     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
 
-3. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+3. Fügen Sie der `TaskFormRegion` -Klasse den folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Sucht `Microsoft.Office.Interop.Outlook.TaskItem` im Ordner „Aufgaben“, indem die Hilfsmethode `FindTaskBySubjectName` aufgerufen und der Betreff der gewünschten Aufgabe übergeben wird. Sie werden die Hilfsmethode `FindTaskBySubjectName` im nächsten Schritt hinzufügen.
 
@@ -177,23 +177,23 @@ ms.locfileid: "72985438"
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
 
-4. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Dieser Code stellt die Hilfsmethode `FindTaskBySubjectName` bereit, die im vorherigen Schritt beschrieben wurde.
+4. Fügen Sie der `TaskFormRegion` -Klasse den folgenden Code hinzu. Dieser Code stellt die Hilfsmethode `FindTaskBySubjectName` bereit, die im vorherigen Schritt beschrieben wurde.
 
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
 
-5. Fügen Sie der `TaskFormRegion` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+5. Fügen Sie der `TaskFormRegion` -Klasse den folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Aktualisiert das Listenfeld im Formularbereich mit dem aktuellen Abschlussstatus der einzelnen abhängigen Aufgabe.
 
-   - Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Anschließend werden die einzelnen `Microsoft.Office.Interop.Outlook.TaskItem` im Ordner *Tasks* durch Aufrufen der `FindTaskBySubjectName` Helper-Methode und durch Übergeben des Subjekts jeder Aufgabe gesucht.
+   - Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Anschließend wird jede Datei `Microsoft.Office.Interop.Outlook.TaskItem` im Ordner *Tasks* durch Aufrufen der `FindTaskBySubjectName` -Hilfsmethode und durch Übergeben des Subjekts jeder Aufgabe gesucht.
 
    - Fügt die Werte `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` dem Listenfeld für abhängige Aufgaben hinzu.
 
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
 
-6. Ersetzen Sie den `TaskFormRegion_FormRegionShowing` -Ereignishandler durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+6. Ersetzen Sie den `TaskFormRegion_FormRegionShowing` -Ereignishandler durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Füllt das Kombinationsfeld des Formularbereichs mit den Betreffs von Aufgaben, wenn der Formularbereich angezeigt wird.
 
@@ -207,7 +207,7 @@ ms.locfileid: "72985438"
 
 ### <a name="to-test-the-form-region"></a>So testen Sie den Formularbereich
 
-1. Drücken Sie **F5**, um das Projekt auszuführen.
+1. Drücken Sie **F5** , um das Projekt auszuführen.
 
      Outlook wird gestartet.
 
@@ -215,7 +215,7 @@ ms.locfileid: "72985438"
 
 3. Geben Sie im Aufgabenformular die Zeichenfolge **Abhängige Aufgabe** in das Feld **Betreff** ein.
 
-4. Klicken Sie auf der Registerkarte **Aufgabe** des Menübands in der Gruppe **Aktionen** auf **Speichern & schließen**.
+4. Klicken Sie auf der Registerkarte **Aufgabe** des Menübands in der Gruppe **Aktionen** auf **speichern & schließen**.
 
 5. Klicken Sie in Outlook auf der Registerkarte **Start** auf **Neue Elemente**, dann auf **Weitere Elemente**und anschließend auf **Formular auswählen**.
 
@@ -233,9 +233,9 @@ ms.locfileid: "72985438"
 
 10. Öffnen Sie das Element „Abhängige Aufgaben“ erneut in Outlook.
 
-11. Ändern Sie im Formular „Abhängige Aufgabe“ das Feld **% abgeschlossen** zu **50 %** .
+11. Ändern Sie im Formular „Abhängige Aufgabe“ das Feld **% abgeschlossen** zu **50 %**.
 
-12. Klicken Sie auf der Registerkarte **Aufgabe** des Menübands abhängige Aufgabe in der Gruppe **Aktionen** auf **Speichern & schließen**.
+12. Klicken Sie auf der Registerkarte **Aufgabe** des Menübands abhängige Aufgabe in der Gruppe **Aktionen** auf **speichern & schließen**.
 
 13. Öffnen Sie das Element **Abhängige Aufgabe** erneut in Outlook.
 
@@ -250,7 +250,7 @@ ms.locfileid: "72985438"
 
 - Weitere Informationen zum Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu Outlook finden Sie unter [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zugreifen auf einen Formular Bereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
 - [Richtlinien zum Erstellen von Outlook-Formular Bereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)

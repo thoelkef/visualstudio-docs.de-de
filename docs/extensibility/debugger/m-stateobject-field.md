@@ -1,5 +1,5 @@
 ---
-title: m_stateObject Feld | Microsoft Docs
+title: m_stateObject Feld | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738371"
 ---
 # <a name="m_stateobject-field"></a>m_stateObject Feld
-Ein Objekt, das Daten darstellt, die von der Aktion verwendet werden.
+Ein-Objekt, das Daten darstellt, die von der Aktion verwendet werden.
 
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Baugruppe:** mscorlib (in *mscorlib.dll*)
+ **Assembly:** mscorlib (in *mscorlib.dll*)
 
- Da Sie über .NET Framework nicht auf dieses interne Element zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
+ Da Sie nicht über das .NET Framework auf dieses interne Element zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,7 +33,7 @@ Ein Objekt, das Daten darstellt, die von der Aktion verwendet werden.
 ```
 
 ## <a name="remarks"></a>Bemerkungen
- Dies `state` ist der <xref:System.Threading.Tasks.Task.%23ctor%2A> Parameter im Konstruktor. Es ist auch das <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Sicherungsfeld für die Eigenschaft.
+ Dies ist der `state` Parameter im <xref:System.Threading.Tasks.Task.%23ctor%2A> Konstruktor. Es ist auch das Unterstützungs Feld für die- <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Eigenschaft.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b08035deec65c8c42fe875d380d9cc3d15533a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850267"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
@@ -41,17 +41,17 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
   
  **CVCollectionCmd**  
   
-|-Option|Beschreibung|Parameters|Rückgabewert|  
+|Option|Beschreibung|Parameter|Rückgabewerte|  
 |------------|-----------------|----------------|-------------------|  
-|Abfrage-|Gibt zurück, ob sich die Auflistung starten lässt.|Keine|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) -Sitzungen bereit aktiviert ist.|  
-|Starten Sie|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|  
+|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keine|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) -Sitzungen bereit aktiviert ist.|  
+|Starten|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|  
 |Anfügen|Beginnt mit dem Erfassen einer systemweiten Ablaufverfolgung; wird ansonsten an einen Prozess angefügt, sofern ein solcher festgelegt wurde.|Keine|0, wenn Anfügen erfolgreich war.<br /><br /> 1, wenn das Anfügen fehlgeschlagen ist, weil der festgelegte Prozess ungültig oder mehrdeutig ist.<br /><br /> 13, wenn das Anfügen fehlgeschlagen ist, weil CVCollectionCmd nicht ausreichende Berechtigungen für das Schreiben in das festgelegte Ausgabeverzeichnis besitzt.|  
 |Trennen|Auflistung wird angehalten.|Keine|0, wenn Trennen erfolgreich war.<br /><br /> 1, wenn das Trennen fehlgeschlagen ist, weil die Auflistung aktuell nicht ausgeführt wird.<br /><br /> 2, wenn das Trennen fehlgeschlagen ist, weil die Auflistung nicht angehalten werden konnte.|  
 |Analysieren|Analysiert die festgelegte Ablaufverfolgung.|Der vollständige Pfad der Datei DVTrace.|0, wenn die Analyse erfolgreich war.<br /><br /> 1, wenn die Analyse nicht gestartet werden kann, da die festgelegte Ablaufverfolgung systemweit war, aber kein Zielprozess festgelegt worden ist.<br /><br /> 2, wenn die Analyse nicht gestartet werden kann, da die Ablaufverfolgung nicht systemweit war und ein Zielprozess festgelegt worden ist.<br /><br /> 3, wenn die Analyse fehlgeschlagen ist, weil der festgelegte Prozess ungültig ist.<br /><br /> 4, wenn die Analyse fehlgeschlagen ist, weil die festgelegte Datei CVTrace ungültig ist.|  
 |LaunchArgs|Legt die ausführbaren Argumente des Ziels fest. Diese Option gilt nur für den Befehl "Launch".|Die Befehlszeilenargumente für die Anwendung.|Keine|  
 |Outdir|Legt das Verzeichnis fest, in dem die Ablaufverfolgungsdateien gespeichert werden sollen. Gilt für die Befehle "Starten" und "Anfügen".|Ein Verzeichnispfad oder ein relativer Pfad.|Keine|  
-|Process|Legt den anfügenden Prozess fest, wenn der Befehl "Anfügen" ausgeführt wird oder den zu analysierenden Prozesses in einer Ablaufverfolgung, wenn der Befehl "Analysieren" ausgeführt wird. Gilt für die Befehle "Anfügen" und "Analysieren".|PID oder Name des Prozesses.|Keine|  
-|Konfiguration|Legt den Pfad der Konfigurationsdatei fest, wenn Sie andere Auflistungeinstellungen als die standardmäßigen möchten.   Gilt für die Befehle "Starten", "Anfügen" und "Analysieren".|Der Verzeichnispfad oder relative Pfad der XML-Konfigurationsdatei.|Keine|  
+|Prozess|Legt den anfügenden Prozess fest, wenn der Befehl "Anfügen" ausgeführt wird oder den zu analysierenden Prozesses in einer Ablaufverfolgung, wenn der Befehl "Analysieren" ausgeführt wird. Gilt für die Befehle "Anfügen" und "Analysieren".|PID oder Name des Prozesses.|Keine|  
+|Konfigurationen|Legt den Pfad der Konfigurationsdatei fest, wenn Sie andere Auflistungeinstellungen als die standardmäßigen möchten.   Gilt für die Befehle "Starten", "Anfügen" und "Analysieren".|Der Verzeichnispfad oder relative Pfad der XML-Konfigurationsdatei.|Keine|  
   
 ## <a name="customizing-configuration-settings"></a>Konfigurationseinstellungen anpassen  
  Wenn Sie CVCollectionCmd für die Auflistung der Ablaufverfolgung verwenden und die Einstellungen anpassen möchten, dann verwenden Sie eine Konfigurationsdatei, um diese festzulegen.  
@@ -64,9 +64,9 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 ### <a name="configuration-file-tags"></a>Tags der Konfigurationsdatei  
  Die Konfigurationsdatei ist XML-basiert. Hier sind die gültigen Tags und Werte:  
   
-|Taggen|Beschreibung|Werte|  
+|Tag|Beschreibung|Werte|  
 |---------|-----------------|------------|  
-|Konfiguration|Grenzt die gesamte Config-Datei ab.|Muss folgende Elemente enthalten:<br /><br /> - MinorVersion<br />- MajorVersion|  
+|Konfigurationen|Grenzt die gesamte Config-Datei ab.|Muss folgende Elemente enthalten:<br /><br /> - MinorVersion<br />- MajorVersion|  
 |MajorVersion|Gibt die Hauptversion der Konfigurationsdatei an.|Muss 1 sein für [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] -Projekte. Wenn nicht 1, dann funktioniert das Dienstprogramm nicht.|  
 |MinorVersion|Legt die Nebenversion der Konfigurationsdatei fest.|Muss 0 sein für [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] -Projekte. Wenn nicht 0, dann funktioniert das Dienstprogramm nicht.|  
 |IncludeEnvSymbolPath|Legt einen Wert fest, der bestimmt, ob der Umgebungssymbolpfad (_NT_SYMBOL_PATH) verwendet wird.|- TRUE<br />- FALSE|  
@@ -74,9 +74,9 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 |SymbolPath|Gibt den Pfad des Symbolservers an. Weitere Informationen finden Sie unter [Beziehen von Debugsymboldateien über den Microsoft-Symbolserver](https://support.microsoft.com/kb/311503).|Ein Verzeichnisname oder eine URL.|  
 |Marker|Enthält die Liste der Markeranbieter.|Kann null oder mehr MarkerProvider-Elemente enthalten.|  
 |MarkerProvider|Gibt einen einzelnen Markeranbieter an.|Muss folgende Elemente enthalten:<br /><br /> - Ebene<br />- GUID<br />- Name<br /><br /> Kann folgende Elemente enthalten:<br /><br /> - Kategorien<br />- IsEnabled|  
-|Level|Legt den Wert für die Bedeutung eines MarkerProviders fest.|- Niedrig<br />- Normal<br />- Hoch<br />- Kritisch<br />- Alles|  
+|Ebene|Legt den Wert für die Bedeutung eines MarkerProviders fest.|- Niedrig<br />- Normal<br />- Hoch<br />- Kritisch<br />- Alles|  
 |GUID|Der Globally Unique Identifier des ETW-Markeranbieters.|Ein GUID.|  
-|-Name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
+|name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
 |Kategorien|Gibt die für den Markeranbieter erfassten Kategorien an.|Eine durch Kommas getrennte Zeichenfolge oder eine Reihe von Zahlen.|  
 |IsEnabled|Gibt einen Wert an der festlegt, ob der Markeranbieter für die Auflistung aktiviert ist.|- TRUE<br />- FALSE|  
 |FilterConfig|Gibt die Liste der Konfigurationsoptionen der ETW-Ereignisse an, die aus der Auflistung gefiltert werden.|Kann folgende Elemente enthalten:<br /><br /> - CollectClrEvents<br />- ClrCollectionOptions<br />- CollectSampleEvents<br />- CollectGpuEvents<br />- CollectFileIO|  
