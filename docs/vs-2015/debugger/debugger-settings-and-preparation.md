@@ -1,5 +1,5 @@
 ---
-title: Debugger, Einstellungen und Vorbereitung | Microsoft-Dokumentation
+title: Debuggereinstellungen und -vorbereitung | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198874"
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
@@ -46,10 +46,10 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
  [ASP.NET-Webanwendungen](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Enthält Anweisungen zur Konfiguration von ASP.NET-Webanwendungen.  
   
- [Vorgehensweise: Debuggen einer ausführbaren Datei, die nicht Bestandteil einer Visual Studio-Lösung ist](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Gewusst wie: Debuggen einer ausführbaren Datei, nicht Teil einer Visual Studio-Projekt Mappe](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Erläutert das Debuggen einer ausführbaren Datei, die nicht als Bestandteil eines Visual Studio-Projekts erstellt wurde.  
   
- [Vorgehensweise: Debuggen mit Code Center Premium-Quellcode](../debugger/how-to-debug-with-code-center-premium-source.md)  
+ [Gewusst wie: Debuggen mit Code Center Premium-Quellcode](../debugger/how-to-debug-with-code-center-premium-source.md)  
  Erläutert das Debuggen von Quellcode aus Microsoft Code Center Premium im Visual Studio-Projekt.  
   
  [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)  
@@ -58,9 +58,9 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
  [Debuggen und der Hostprozess](../debugger/debugging-and-the-hosting-process.md)  
  Beschreibt verschiedene Aspekte des Hostprozesses.  
   
- [Vorgehensweise: Angeben einer .NET Framework-Version für das Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Gewusst wie: Angeben einer .NET Framework-Version für das Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Beschreibt, wie ein Registrierungsschlüssel festgelegt wird, durch den der Debugger erkennt, welche Version verwendet werden soll.  
   
-## <a name="see-also"></a>Siehe auch  
- [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Debugger-Sicherheit](../debugger/debugger-security.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)

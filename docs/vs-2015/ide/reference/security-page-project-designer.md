@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 768b0d43d8e6b52781e3f2dc2029e0b96b3a6548
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665535"
 ---
 # <a name="security-page-project-designer"></a>Seite "Sicherheit", Projekt-Designer
@@ -39,7 +39,7 @@ Die Seite **Sicherheit** im **Projekt-Designer** wird verwendet, um Einstellunge
 > [!NOTE]
 > Wenn Sie eine Anwendung über den **Veröffentlichungs**-Assistenten veröffentlichen, wird diese Option automatisch aktiviert.
 
- Wenn Sie diese Option auswählen, können Sie entscheiden, ob Sie ein oder zwei Optionsfelder aktivieren möchten: **Voll vertrauenswürdige Anwendung** oder **Teilweise vertrauenswürdige Anwendung**.
+ Wenn Sie diese Option auswählen, müssen Sie sich zwischen zwei Optionsfeldern entscheiden: **Dies ist eine voll vertrauenswürdige Anwendung** oder **Dies ist eine teilweise vertrauenswürdige Anwendung**.
 
  Diese Option ist für WPF-Webbrowser-Anwendungsprojekte standardmäßig aktiviert.
 
@@ -64,6 +64,6 @@ Die Seite **Sicherheit** im **Projekt-Designer** wird verwendet, um Einstellunge
 
  **Erweitert** Öffnet das [Dialog Feld Erweiterte Sicherheitseinstellungen](../../ide/reference/advanced-security-settings-dialog-box.md), das verwendet wird, um Einstellungen für das Debuggen der Anwendung mit eingeschränkten Berechtigungen zu konfigurieren. Diese Einstellungen werden beim Debuggen überprüft, und Berechtigungsausnahmen deuten darauf hin, dass die Anwendung mehr Berechtigungen als in der Zone definiert benötigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.Security.Permissions.WebBrowserPermission> <xref:System.Security.Permissions.MediaPermission>
- [Code Zugriffssicherheit für ClickOnce-Anwendungen](../../deployment/code-access-security-for-clickonce-applications.md) [Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../../deployment/how-to-enable-clickonce-security-settings.md) Gewusst [wie: Festlegen einer Sicherheits Zone für eine ClickOnce-Anwendung](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) Gewusst [wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) Gewusst [wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [ClickOnce Sicherheit und Bereitstellungs](../../deployment/clickonce-security-and-deployment.md) [Projekteigenschaften Referenz](../../ide/reference/project-properties-reference.md) [Erweiterte Sicherheitseinstellungen (Dialog Feld](../../ide/reference/advanced-security-settings-dialog-box.md) )
+ [Code Zugriffssicherheit für ClickOnce-Anwendungen](../../deployment/code-access-security-for-clickonce-applications.md) Gewusst [wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../../deployment/how-to-enable-clickonce-security-settings.md) Gewusst [wie: Festlegen einer Sicherheits Zone für eine ClickOnce-Anwendung](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) Gewusst [wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) Gewusst wie: [Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [ClickOnce-Sicherheit und Bereitstellungs](../../deployment/clickonce-security-and-deployment.md) [Projekteigenschaften Referenz](../../ide/reference/project-properties-reference.md) [Erweiterte Sicherheitseinstellungen (Dialog Feld](../../ide/reference/advanced-security-settings-dialog-box.md) )

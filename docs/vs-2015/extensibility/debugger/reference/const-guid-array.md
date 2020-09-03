@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43715ca8fa8174b2b8b9509a93e98cf15ad4611c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198861"
 ---
-# <a name="constguidarray"></a>CONST_GUID_ARRAY
+# <a name="const_guid_array"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Eine Struktur, die eine Liste der enthält `GUID`s.  
+Eine-Struktur, die eine Liste von `GUID` s enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,25 +42,25 @@ public struct CONST_GUID_ARRAY {
   
 ## <a name="members"></a>Member  
  dwCount  
- Anzahl der `GUID`s in der `Members` Array.  
+ Anzahl von `GUID` s im `Members` Array.  
   
  Member  
- Array von `GUID`s.  
+ Array von `GUID` s.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Struktur wird zum Übergeben der [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) -Methode und wird zurückgegeben, aus der [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) und [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) Methoden.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Struktur wird an die [publishprogram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) -Methode übermittelt und von der [getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) -Methode und der [watchforproviderevents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) -Methode zurückgegeben.  
   
- Der Besitzer einer Instanz dieser Struktur ist verantwortlich für das Freigeben von Speicher.  
+ Der Besitzer einer Instanz dieser Struktur ist dafür verantwortlich, zugeordneten Arbeitsspeicher freizugeben.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
+ [Publishprogram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
+ [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

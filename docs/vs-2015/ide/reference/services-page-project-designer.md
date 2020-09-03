@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 11e1cd997c76974e7b4b8771c0579c175469eca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665478"
 ---
 # <a name="services-page-project-designer"></a>Services-Seite, Projekt-Designer
@@ -34,7 +34,7 @@ Clientanwendungsdienste ermöglichen vereinfachten Zugriff auf [!INCLUDE[ajax_cu
 > Clientanwendungsdienste erfordern die Vollversion von .NET Framework und werden im .NET Framework Client Profile nicht unterstützt. Wenn das Kontrollkästchen **Clientanwendungsdienste aktivieren** deaktiviert ist, stellen Sie sicher, dass als **Zielframework** das .NET Framework 3.5 oder höher festgelegt ist. Um die Einstellung **Zielframework** in C# anzuzeigen, öffnen Sie den Projekt-Designer, und klicken Sie dann auf die Seite **Anwendung**. Um die Einstellung **Zielframework** in Visual Basic anzuzeigen, öffnen Sie den Projekt-Designer, klicken Sie auf die Seite **Kompilieren** und dann auf **Erweiterte Kompilierungsoptionen**.
 
 ## <a name="task-list"></a>Aufgabenliste
- [Vorgehensweise: Konfigurieren von Clientanwendungsdiensten](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)
+ [Gewusst wie: Konfigurieren von Clientanwendungsdiensten](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)
 
 ## <a name="uielement-list"></a>UIElement-Liste
  **Konfiguration** Dieses Steuerelement kann auf dieser Seite nicht bearbeitet werden. Eine Beschreibung dieses Steuerelements finden Sie unter [Seite „Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) oder unter [Seite „Erstellen“, Projekt-Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md).
@@ -57,5 +57,5 @@ Clientanwendungsdienste ermöglichen vereinfachten Zugriff auf [!INCLUDE[ajax_cu
 
  **Erweitert** Öffnet das [Dialog Feld Erweiterte Einstellungen für Dienste](../../ide/reference/advanced-settings-for-services-dialog-box.md), das Sie verwenden können, um das Standardverhalten zu überschreiben. Sie können dieses Dialogfeld beispielsweise dafür verwenden, eine Datenbank für Offlinespeicher festzulegen, statt dafür das lokale Dateisystem zu benutzen. Weitere Informationen zu diesem Dialogfeld finden Sie unter [Dialogfeld „Erweiterte Einstellungen für Dienste“](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
-## <a name="see-also"></a>Siehe auch
- Dialog Feld " [Client Anwendungsdienste](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Erweiterte Einstellungen für Dienste](../../ide/reference/advanced-settings-for-services-dialog-box.md) " Gewusst [wie: Konfigurieren von Client Anwendungsdienste](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Seite "kompilieren", Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [Seite "erstellen", Projekt-Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Einführung in den Projekt-Designer](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+## <a name="see-also"></a>Weitere Informationen
+ Dialog Feld " [Client Anwendungsdienste](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Erweiterte Einstellungen für Dienste](../../ide/reference/advanced-settings-for-services-dialog-box.md) " Gewusst [wie: Konfigurieren von Client Anwendungsdienste](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Seite "kompilieren", Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [Seite "erstellen", Projekt-Designer (c#)](../../ide/reference/build-page-project-designer-csharp.md) [Einführung in den Projekt-Designer](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

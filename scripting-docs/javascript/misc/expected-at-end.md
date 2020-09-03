@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817306"
 ---
 # <a name="expected-end"></a>" \@ End" erwartet
-Sie haben versucht, einen bedingt kompilierten Codeblock zu erstellen, ohne die <strong>@end</strong> Anweisung am Ende einzuschließen. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Anweisungen können bedingt durch das einschließen innerhalb eines-Blocks kompiliert werden <strong>@if/@end</strong> .  
+Sie haben versucht, einen bedingt kompilierten Codeblock zu erstellen, ohne die <strong>@end</strong> Anweisung am Ende einzuschließen. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] -Anweisungen können bedingt durch das einschließen innerhalb eines-Blocks kompiliert werden <strong>@if/@end</strong> .  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   

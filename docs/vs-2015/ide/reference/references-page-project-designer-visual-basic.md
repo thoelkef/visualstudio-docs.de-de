@@ -18,16 +18,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8bb18ec8dd12431d650d844e3698c1986c8d8bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665640"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Webverweise und wichtige Namespaces in Ihrem Projekt zu verwalten. Projekte können Verweise auf COM-Komponenten, XML-Webdienste, Klassenbibliotheken oder Assemblys von .NET Framework oder andere Klassenbibliotheken enthalten. Weitere Informationen zum Verwenden von Verweisen finden Sie unter [Verwalten von Verweisen in einem Projekt](../../ide/managing-references-in-a-project.md).
+Verwenden Sie die Seite **Verweise** des **Projekt-Designers** , um Verweise, Webverweise und importierte Namespaces in Ihrem Projekt zu verwalten. Projekte können Verweise auf COM-Komponenten, XML-Webdienste, Klassenbibliotheken oder Assemblys von .NET Framework oder andere Klassenbibliotheken enthalten. Weitere Informationen zum Verwenden von Verweisen finden Sie unter [Verwalten von Verweisen in einem Projekt](../../ide/managing-references-in-a-project.md).
 
  Um auf die Seite **Verweise** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe**) im **Projektmappen-Explorer**. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Sobald der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Dienste**.
 
@@ -54,7 +54,7 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
 
  Klicken Sie auf **Verweise**, um Ihrem Projekt einen Verweis mit dem Dialogfeld „Verweis hinzufügen“ hinzuzufügen.
 
- Klicken Sie auf **Webverweise**, um Ihrem Projekt einen Webverweis mit dem Dialogfeld „Webverweis hinzufügen“ hinzuzufügen.
+ Wählen Sie **Webverweis** aus, um dem Projekt einen Webverweis mit dem Dialogfeld Webverweis hinzufügen hinzuzufügen.
 
  **Entfernen** Wählen Sie mindestens einen Verweis in der Liste **Verweise** aus, und klicken Sie dann auf diese Schaltfläche, um Sie zu löschen.
 
@@ -62,7 +62,7 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
 
  **Importierte Namespaces** Sie können in diesem Feld einen eigenen Namespace eingeben und auf **Benutzer Import hinzufügen** klicken, um ihn der Liste Namespaces hinzuzufügen.
 
- Sie können Aliase für von Benutzern importierte Namespaces erstellen. Um dies zu tun, geben Sie Ihren Alias und den Namespace im Format *alias*=*namespace* ein. Dies ist praktisch, wenn Sie lange Namespaces verwenden, z.B.: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+ Sie können Aliase für von Benutzern importierte Namespaces erstellen. Geben Sie hierzu den Alias und den Namespace im *formatalias*- = *Namespace*ein. Dies ist praktisch, wenn Sie lange Namespaces verwenden, z.B.: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Benutzer Import hinzufügen** Klicken Sie auf diese Schaltfläche, um den Namespace, der im Feld **importierte Namespaces** angegeben ist, der Liste der importierten Namespaces hinzuzufügen. Die Schaltfläche ist nur dann aktiviert, wenn der angegebene Namespace sich noch nicht in der Liste befindet.
 
@@ -76,5 +76,5 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
 
 - XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [NIB: Gewusst wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) " Gewusst [wie: Hinzufügen oder Entfernen von importierten Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md) [NIB: Dialogfeld "Webverweis hinzufügen](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) " [(XML-Namespace)](https://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

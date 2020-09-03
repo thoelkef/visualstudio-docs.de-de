@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5584494f65eaef72c2aa350af4e5af36155e0501
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664626"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Gewusst wie: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
@@ -76,5 +76,5 @@ In diesem Thema wird gezeigt, wie Sie das Visual Studio-LinqToXmlDataBinding-Pro
 
 2. Bearbeiten Sie die Werte mit der Tastatur. Sobald Sie zu einem anderen <xref:System.Windows.Controls.TextBox>-Steuerelement wechseln, werden die Änderungen automatisch in die XML-Auflistung und in die Buchliste übernommen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [WPF-Datenbindung mit LINQ to XML Beispiel](../designers/wpf-data-binding-using-linq-to-xml-example.md) Exemplarische Vorgehensweise [: LinqToXmlDataBinding-Beispiel](../designers/walkthrough-linqtoxmldatabinding-example.md) [Anwendungsentwicklung in Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

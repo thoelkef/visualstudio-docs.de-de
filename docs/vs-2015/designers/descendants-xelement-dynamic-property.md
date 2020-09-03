@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b0496a04219c88573b3b555ef879a046d90faa3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664781"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (dynamische XElement-Eigenschaft)
@@ -30,12 +30,12 @@ elem.Descendants[{namespaceName}localName]
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
  Indexer des Typs `IEnumerable<XElement> Item(String expandedName)`. Dieser Indexer nimmt den erweiterten Namen der angegebenen Nachfolgerelemente und gibt die passenden untergeordneten Elemente in einer <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`-Auflistung zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Diese Eigenschaft ist identisch mit der <xref:System.Xml.Linq.XContainer.Descendants%28System.Xml.Linq.XName%29?displayProperty=fullName>-Methode der <xref:System.Xml.Linq.XContainer>-Klasse.
 
  Die Elemente in der zurückgegebenen Auflistung sind in derselben Reihenfolge aufgeführt wie im XML-Quelldokument.
 
  Diese Eigenschaft verwendet die verzögerte Ausführung.
 
-## <a name="see-also"></a>Siehe auch
- [Dynamische Eigenschaften der XElement-Klasse](../designers/xelement-class-dynamic-properties.md) [Elemente](../designers/elements-xelement-dynamic-property.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Dynamische Eigenschaften der XElement-Klasse](../designers/xelement-class-dynamic-properties.md) [Elements](../designers/elements-xelement-dynamic-property.md)
