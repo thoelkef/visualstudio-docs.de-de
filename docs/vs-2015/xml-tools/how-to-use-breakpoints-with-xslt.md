@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0519c3ab19e7d36aa26ea2f462c8a4571b9f8b32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656306"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Gewusst wie: Verwenden von Haltepunkten bei XSLT
@@ -32,7 +32,7 @@ Sie können Haltepunkte in einem XSLT-Stylesheet oder im XML-Quelldokument festl
 
 2. Positionieren Sie den Cursor an der Haltepunkt Position, klicken Sie mit der rechten Maustaste auf, zeigen Sie auf **Breakpoint**, und klicken Sie dann auf halte **Punkt einfügen**.
 
-3. Klicken Sie auf die Schaltfläche zum Durchsuchen ( **...** ) im **Eingabe** Feld des Dokumenteigenschaften Fensters.
+3. Klicken Sie auf die Schaltfläche zum Durchsuchen (**...**) im **Eingabe** Feld des Dokumenteigenschaften Fensters.
 
 4. Suchen Sie das XML-Quelldokument, und klicken Sie auf **Öffnen**.
 
@@ -49,7 +49,7 @@ Sie können Haltepunkte in einem XSLT-Stylesheet oder im XML-Quelldokument festl
 
 2. Positionieren Sie den Cursor an der Haltepunkt Position, klicken Sie mit der rechten Maustaste auf, zeigen Sie auf **Breakpoint**, und klicken Sie dann auf halte **Punkt einfügen**.
 
-3. Klicken Sie im Feld **Stylesheet** des Fensters Dokumenteigenschaften auf die Schaltfläche zum Durchsuchen ( **...** ).
+3. Klicken Sie im Feld **Stylesheet** des Fensters Dokumenteigenschaften auf die Schaltfläche zum Durchsuchen (**...**).
 
 4. Suchen Sie das XML-Quelldokument, und klicken Sie auf **Öffnen**.
 
@@ -57,5 +57,5 @@ Sie können Haltepunkte in einem XSLT-Stylesheet oder im XML-Quelldokument festl
 
 5. Klicken Sie im XML-Editor auf die Schaltfläche **XSL debuggen** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

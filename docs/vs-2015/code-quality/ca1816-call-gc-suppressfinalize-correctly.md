@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546769"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize korrekt aufrufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|Callgcsuppressfinalizecorrectly|
 |CheckId|CA1816|
@@ -41,7 +41,7 @@ ms.locfileid: "85546769"
 - Eine-Methode ruft <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> auf und übergibt etwas anderes als This (mich in Visual Basic).
 
 ## <a name="rule-description"></a>Beschreibung der Regel
- Mit der- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode können Benutzer jederzeit Ressourcen freigeben, bevor das Objekt für Garbage Collection verfügbar wird. Wenn die- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode aufgerufen wird, gibt Sie Ressourcen des-Objekts frei. Dies macht die Finalisierung unnötig. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>sollte aufgerufen werden, <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> damit der Garbage Collector den Finalizer des Objekts nicht aufruft.
+ Mit der- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode können Benutzer jederzeit Ressourcen freigeben, bevor das Objekt für Garbage Collection verfügbar wird. Wenn die- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode aufgerufen wird, gibt Sie Ressourcen des-Objekts frei. Dies macht die Finalisierung unnötig. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> sollte aufgerufen werden, <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> damit der Garbage Collector den Finalizer des Objekts nicht aufruft.
 
  So verhindern Sie, dass abgeleitete Typen mit Finalizern [System. iverwerf] erneut implementieren müssen (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) und um es aufzurufen, sollten nicht versiegelte Typen ohne Finalizer weiterhin aufgerufen werden <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharLength | Microsoft Docs
+title: 'IDebugProperty3:: getstringcharlength | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721127"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
-Gibt die Anzahl der Zeichen in der Zeichenfolge der zugeordneten Eigenschaft zurück.
+Gibt die Anzahl von Zeichen in der Zeichenfolge der zugeordneten Eigenschaft zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetStringCharLength(
 
 |Parameter|BESCHREIBUNG|
 |---------------|-----------------|
-|`pLen`|[out] Gibt die Anzahl der Zeichen in der Zeichenfolge der Eigenschaft zurück.|
+|`pLen`|vorgenommen Gibt die Anzahl von Zeichen in der Zeichenfolge der Eigenschaft zurück.|
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben.
+Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-In der Regel wird diese Methode als Vorspiel zum Zuweisen eines Puffers für einen Aufruf der [GetStringChars-Methode](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) verwendet.
+In der Regel wird diese Methode als Auftakt verwendet, um einen Puffer für einen Aufrufen der [getstringchars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) -Methode zuzuordnen.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CProperty-Objekt** implementiert wird, das die [IDebugProperty3-Schnittstelle](../../../extensibility/debugger/reference/idebugproperty3.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cproperty** -Objekt implementiert wird, das die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)

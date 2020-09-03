@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d31213dc970fa7cb28c4d4620c6731692db83d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185239"
 ---
 # <a name="net-memory-data-views"></a>.NET-Arbeitsspeicherdatenansichten
@@ -37,7 +37,7 @@ Dieser Abschnitt enthält Referenzinformationen für die Ansichten und die Beric
  [Call Tree View – Sampling (Aufrufstrukturansicht – Sampling)](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
  Zeigt eine hierarchische Struktur an, die die Ausführungspfade und Speicherbelegung von Funktionen während der Profilerstellung darstellt.  
   
- [Modules View – Sampling (Modulansicht – Sampling)](../profiling/modules-view-dotnet-memory-sampling-data.md)  
+ [Modulansicht - Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)  
  Organisiert die .NET-Arbeitsspeicherbelegungsdaten nach Modul und führt die Funktionen, Quellcodezeilen und Anweisungen auf, die ausgeführt wurden, als Speicher belegt wurde.  
   
  [Caller/Callee View – .NET Memory Sampling Data (Ansicht „Aufrufer/Aufgerufener“ – .NET-Speichersamplingdaten)](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  
@@ -46,7 +46,7 @@ Dieser Abschnitt enthält Referenzinformationen für die Ansichten und die Beric
  [Functions View – Sampling (Funktionsansicht – Sampling)](../profiling/functions-view-dotnet-memory-sampling-data.md)  
  Führt Speicherbelegungsdaten für die Funktionen in der Profilerstellung auf.  
   
- [Lines View – Sampling (Zeilenansicht – Sampling)](../profiling/lines-view-dotnet-memory-sampling-data.md)  
+ [Zeilenansicht - Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)  
  Führt Speicherbelegungsdaten für die Quellcodezeilen von Funktionen in der Profilerstellung auf.  
   
  [Instruction Pointers (IPs) View – Sampling (Anweisungszeigeransicht – Sampling)](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)  
@@ -58,17 +58,17 @@ Dieser Abschnitt enthält Referenzinformationen für die Ansichten und die Beric
  [Modules View – Instrumentation (Modulansicht – Instrumentierung)](../profiling/modules-view-dotnet-memory-instrumentation-data.md)  
  Organisiert Profilerstellungsdaten nach Modul und führt die Funktionen, Speicherbelegungsdaten und ausführliche Zeitsteuerungsdaten für das Modul auf.  
   
- [Caller/Callee View – NET Memory Instrumentation Data (Ansicht „Aufrufer/Aufgerufener“ – .NET-Speicherinstrumentierungsdaten)](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  
+ [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten im Profiler](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  
  Führt Speicherbelegungsdaten und ausführliche Zeitsteuerungsinformationen für eine ausgewählte instrumentierte Funktion, für die Funktionen, die die ausgewählte Funktion aufgerufen haben, und die Funktionen auf, die von der ausgewählten Funktion aufgerufen wurden.  
   
  [Functions View – Instrumentation (Funktionsansicht – Instrumentierung)](../profiling/functions-view-dotnet-memory-instrumentation-data.md)  
  Führt Speicherbelegungsdaten für die instrumentierten Funktionen in der Profilerstellung auf.  
   
-## <a name="reference"></a>Referenz  
+## <a name="reference"></a>Verweis  
  [Funktionsdetailansicht](../profiling/function-details-view.md)  
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.  
   
- [Process View (Prozessansicht)](../profiling/process-view.md)  
+ [Prozessansicht](../profiling/process-view.md)  
  Führt Start- und Endzeiten von Prozessen und Threads auf.  
   
  [Marks View (Markierungsansicht)](../profiling/marks-view.md)  
@@ -78,5 +78,5 @@ Dieser Abschnitt enthält Referenzinformationen für die Ansichten und die Beric
  [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Samplingmethode generiert wurden.  
   
- [Instrumentation Method Data Views (Datenansichten der Instrumentationsmethode)](../profiling/instrumentation-method-data-views.md)  
+ [Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)  
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Instrumentierungsmethode generiert werden.

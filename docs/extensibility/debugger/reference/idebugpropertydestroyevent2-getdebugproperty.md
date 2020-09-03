@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyDestroyEvent2::GetDebugProperty | Microsoft Docs
+title: 'IDebugPropertyDestroyEvent2:: getdebug Property | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f64e057c15f91a38f18d206f4aac4c54e6449064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720911"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
-Ruft die zu zerstörende Eigenschaft ab.
+Ruft die Eigenschaft ab, die zerstört werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetDebugProperty ( 
 
 ## <a name="parameters"></a>Parameter
 `ppProperty`\
-[out] Gibt ein [IDebugProperty2-Objekt](../../../extensibility/debugger/reference/idebugproperty2.md) zurück, das die zu zerstörende Eigenschaft darstellt.
+vorgenommen Gibt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt zurück, das die Eigenschaft darstellt, die zerstört werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

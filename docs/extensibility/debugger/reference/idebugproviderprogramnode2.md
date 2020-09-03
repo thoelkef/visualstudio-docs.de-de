@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2 | Microsoft Docs
+title: IDebugProviderProgramNode2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720684"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-Diese Schnittstelle marshallt programmbezogene Schnittstellen über Prozessgrenzen hinweg.
+Diese Schnittstelle Marshalls programmbezogene Schnittstellen über Prozess Grenzen hinweg.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,25 +29,25 @@ IDebugProviderProgramNode2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debugmodul (DE) implementiert diese Schnittstelle für dasselbe Objekt, das [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) implementiert, um Marshallingschnittstellen über Prozessgrenzen hinweg zu unterstützen.
+ Die Debug-Engine (de) implementiert diese Schnittstelle für das gleiche Objekt, das [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) implementiert, um das Marshalling von Schnittstellen über Prozess Grenzen hinweg zu unterstützen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf einer `IDebugProgramNode2` Schnittstelle auf, um diese Schnittstelle zu erhalten. Wenn diese Schnittstelle nicht abgerufen werden kann, unterstützt die DE das Marshalling von Schnittstellen nicht.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Rufen Sie [QueryInterface](/cpp/atl/queryinterface) für eine `IDebugProgramNode2` Schnittstelle auf, um diese Schnittstelle zu erhalten. Wenn diese Schnittstelle nicht abgerufen werden kann, unterstützt das ' de ' kein Marshalling von-Schnittstellen.
 
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
  Diese Schnittstelle implementiert die folgende Methode:
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg ab.|
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ruft eine angegebene Schnittstelle über Prozess Grenzen ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Schnittstelle wird implementiert, wenn die DE in einem separaten Prozessbereich vom zu debuggenden Programm ausgeführt wird, z. B. wenn die DE im Visual Studio-Prozessbereich anstelle des Prozessraums des zu debuggenden Programms ausgeführt wird.
+ Diese Schnittstelle wird implementiert, wenn die de in einem separaten Prozessbereich des Programms ausgeführt wird, das gedebuggt wird, z. b., wenn die "de" im Visual Studio-Prozessbereich statt des Prozess Raums des Programms ausgeführt wird, das gedebuggt wird.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

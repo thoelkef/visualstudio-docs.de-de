@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::CreateObjectID | Microsoft Docs
+title: 'IDebugProperty3:: kreateobjectid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721171"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
-Erstellt eine eindeutige ID für diese Eigenschaft, um sicherzustellen, dass sie unter allen anderen Eigenschaften eindeutig ist.
+Erstellt eine eindeutige ID für diese Eigenschaft, um sicherzustellen, dass Sie für alle anderen Eigenschaften eindeutig ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,12 +41,12 @@ int CreateObjectID();
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird aufgerufen, wenn der Sitzungsdebug-Manager sicherstellen möchte, dass diese Eigenschaft unter allen anderen Eigenschaften eindeutig identifiziert wird. Das Debugmodul (DE) unterstützt diese Methode, es sei denn, die Eigenschaften, mit denen es sich befasst, sind bereits eindeutig identifiziert. Wenn die DE diese Methode nicht `E_NOTIMPL`unterstützt, wird zurückgegeben.
+ Diese Methode wird aufgerufen, wenn der Sitzungs-Debug-Manager sicherstellen möchte, dass diese Eigenschaft unter allen anderen Eigenschaften eindeutig identifiziert wird. Die Debug-Engine (de) unterstützt diese Methode, es sei denn, die Eigenschaften, mit denen Sie umgeht, sind bereits eindeutig identifiziert Wenn die de diese Methode nicht unterstützt, wird zurückgegeben `E_NOTIMPL` .
 
- Jede eindeutige `CreateObjectID` ID, die mit erstellt wird, wird zerstört, wenn die [DestroyObjectID-Methode](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) aufgerufen wird. dies signalisiert auch das Ende der Notwendigkeit, diese Eigenschaft eindeutig zu identifizieren.
+ Jede mit erstellte eindeutige ID `CreateObjectID` wird zerstört, wenn die [destroyobjectid](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) -Methode aufgerufen wird. Dies signalisiert auch das Ende der Notwendigkeit, diese Eigenschaft eindeutig zu identifizieren.
 
 > [!NOTE]
-> Es gibt keine Methode zum Abrufen dieser eindeutigen ID, sodass die `CreateObjectID` DE bei eindeutigen IDs, wenn die Methode aufgerufen wird, alles tun kann, was sie möchte.
+> Es ist keine Methode zum Abrufen dieser eindeutigen ID vorhanden, d. h., der Dienst kann alle für eindeutige IDs benötigten, wenn die- `CreateObjectID` Methode aufgerufen wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

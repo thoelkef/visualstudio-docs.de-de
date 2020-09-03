@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185464"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Fehler: Websiteworkerprozess wurde von IIS beendet
@@ -42,9 +42,9 @@ Der Debugger hat die Codeausführung auf der Website beendet. Dadurch gehen die 
   
     Der IIS-Manager wird geöffnet.  
   
-3. Erweitern Sie ggf. den Knoten \<Computername> im Bereich **Verbindungen**.  
+3. Erweitern Sie im Bereich **Verbindungen** ggf. den Knoten \<computer name>.  
   
-4. Klicken Sie unter \<Computername> auf **Anwendungspools**.  
+4. Klicken Sie unter dem Knoten \<computer name> auf **Anwendungspools**.  
   
 5. Klicken Sie in der Liste **Anwendungspools** mit der rechten Maustaste auf den Namen des Pools, in dem Ihre Anwendung ausgeführt wird, und klicken Sie dann auf **Erweiterte Einstellungen**.  
   
@@ -60,5 +60,5 @@ Der Debugger hat die Codeausführung auf der Website beendet. Dadurch gehen die 
   
 8. Schließen Sie den IIS-Manager und das Fenster **Verwaltung**.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)

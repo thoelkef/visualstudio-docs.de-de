@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295610"
 ---
 # <a name="using-the-toolbox"></a>Verwenden der Toolbox
@@ -48,7 +48,7 @@ Mithilfe des Werkzeugkastens können Sie Ihrem Projekt Steuerelemente und andere
 
  Mithilfe der folgenden Befehle im Kontextmenü können Sie die Elemente auf einer Toolboxregisterkarte neu anordnen oder benutzerdefinierte Registerkarten und Elemente hinzufügen:
 
-- **Element umbenennen**: benennt das ausgewählte Element um.
+- **Element umbenennen** : benennt das ausgewählte Element um.
 
 - **Alle anzeigen**: zeigt alle möglichen Steuerelemente an (nicht nur die für den aktuellen Designer).
 
@@ -56,11 +56,11 @@ Mithilfe des Werkzeugkastens können Sie Ihrem Projekt Steuerelemente und andere
 
 - **Elemente auswählen**: öffnet das Dialogfeld **Toolboxelemente auswählen**, sodass Sie die Elemente festlegen können, die in der **Toolbox** angezeigt werden. Sie können ein Element ein- oder ausblenden, indem Sie dessen Kontrollkästchen aktivieren oder deaktivieren.
 
-- **Elemente alphabetisch sortieren**: sortiert die Elemente nach Namen.
+- **Elemente alphabetisch sortieren** : sortiert die Elemente nach Namen.
 
-- **Symbolleiste zurücksetzen**: stellt die Standardeinstellungen des Werkzeugkastens und die Standardelemente wieder her.
+- **Symbolleiste zurücksetzen** : stellt die Standardeinstellungen und Elemente der Toolbox wieder her.
 
-- **Registerkarte hinzufügen**: fügt eine neue Werkzeugkasten-Registerkarte hinzu.
+- **Registerkarte hinzufügen** : Fügt eine neue Toolbox Registerkarte hinzu.
 
 - **Nach oben**: verschiebt das ausgewählte Element nach oben.
 

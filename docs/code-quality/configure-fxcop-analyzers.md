@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a131b7d69eec61f9b9106f7a4274b3882c51f0ff
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800735"
 ---
 # <a name="configure-net-code-quality-analyzers"></a>Konfigurieren von .NET-Code Qualitätsanalysen
@@ -75,7 +75,7 @@ Die Editor config-basierte Analyse Konfiguration kann für die folgenden Bereich
 
 Um die Konfiguration zu aktivieren, fügen Sie eine *Editor config* -Datei mit den Optionen im entsprechenden Verzeichnis hinzu. Diese Datei kann auch Editor config-basierte Konfigurationseinträge des Diagnose schwere Grads enthalten. Ausführlichere Informationen finden Sie [hier](use-roslyn-analyzers.md#rule-severity).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Optionen für den Regelbereich für .NET-Code Qualitätsanalysen](fxcop-analyzer-options.md)
 - [Analysetoolkonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

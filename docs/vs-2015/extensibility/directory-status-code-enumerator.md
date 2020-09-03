@@ -1,5 +1,5 @@
 ---
-title: Verzeichnisstatuscode-Enumerator | Microsoft-Dokumentation
+title: Verzeichnis Status Code-Enumerator | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e082a691a389d5cb9a8fa307a627b11911e0db78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185257"
 ---
 # <a name="directory-status-code-enumerator"></a>Verzeichnisstatuscode-Enumerator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die `SccDirStatus` Enumerator enthält benannte Konstante Werte, die den Status eines Verzeichnisses in das Quellcodeverwaltungssystem angeben. Diese Enumeration wird verwendet, durch die [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Dies wurde in Version 1.2 von die Source-Plug-in-API eingeführt.  
+Der `SccDirStatus` Enumerator enthält benannte Konstante Werte, die den Status eines Verzeichnisses im Quell Code Verwaltungssystem angeben. Diese Enumeration wird von [sccdirqueryinfo](../extensibility/sccdirqueryinfo-function.md)verwendet. Dies wurde in Version 1,2 der Quellcodeverwaltungs-Plug-in-API eingeführt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,17 +36,17 @@ enum SccDirStatus {
   
 ## <a name="members"></a>Member  
  SCC_DIRSTATUS_INVALID  
- Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.  
+ Der Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.  
   
  SCC_DIRSTATUS_NOTCONTROLLED  
- Verzeichnis ist nicht unter quellcodeverwaltung.  
+ Das Verzeichnis befindet sich nicht unter Quell Code Verwaltung.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Verzeichnis befindet sich unter quellcodeverwaltung.  
+ Das Verzeichnis befindet sich unter Quell Code Verwaltung.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
- Projekt für dieses Verzeichnis ist leer.  
+ Das Projekt, das diesem Verzeichnis entspricht, ist leer.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

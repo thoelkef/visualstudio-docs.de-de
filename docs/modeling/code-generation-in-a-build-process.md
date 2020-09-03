@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546717"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Aufrufen von Text Transformation im Buildprozess
@@ -26,7 +26,7 @@ Die [Text Transformation](../modeling/code-generation-and-t4-text-templates.md) 
 
 Je nachdem, welche Build-Engine Sie verwenden, können die Buildaufgaben unterschiedliche Ergebnisse haben. Wenn Sie die Projekt Mappe in Visual Studio erstellen, kann eine Textvorlage auf die Visual Studio-API (EnvDTE) zugreifen, wenn das [hostspecific = "true"](../modeling/t4-template-directive.md) -Attribut festgelegt ist. Dies ist jedoch nicht der Fall, wenn Sie die Projekt Mappe über die Befehlszeile erstellen oder wenn Sie einen Serverbuild über Visual Studio initiieren. In diesen Fällen wird der Build von MSBuild ausgeführt, und ein anderer T4-Host wird verwendet. Dies bedeutet, dass Sie nicht wie Projekt Dateinamen auf die gleiche Weise zugreifen können, wenn Sie eine Textvorlage mithilfe von MSBuild erstellen. Sie können jedoch [Umgebungs Informationen mithilfe von buildparametern in Textvorlagen und direktivenprozessoren übergeben](#parameters).
 
-## <a name="configure-your-machines"></a><a name="buildserver"></a>Computer konfigurieren
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Computer konfigurieren
 
 Installieren Sie das Modellierungs-SDK für Visual Studio, um Buildaufgaben auf dem Entwicklungs Computer zu aktivieren.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Übergeben von buildkontextdaten an die Vorlagen
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Übergeben von buildkontextdaten an die Vorlagen
 
 Sie können Parameterwerte in der Projektdatei festlegen. Beispielsweise können Sie [Buildeigenschaften und](../msbuild/msbuild-properties.md) [Umgebungsvariablen](../msbuild/how-to-use-environment-variables-in-a-build.md)übergeben:
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue`Ruft Daten nur von ab, `T4ParameterValues` Wenn Sie MSBuild verwenden. Wenn Sie die Vorlage mit Visual Studio transformieren, haben die Parameter Standardwerte.
+> `ResolveParameterValue` Ruft Daten nur von ab, `T4ParameterValues` Wenn Sie MSBuild verwenden. Wenn Sie die Vorlage mit Visual Studio transformieren, haben die Parameter Standardwerte.
 
-## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Verwenden von Projekteigenschaften in Assembly-und Includedirektiven
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Verwenden von Projekteigenschaften in Assembly-und Includedirektiven
 
 Visual Studio-Makros wie **$ (SolutionDir)** funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.
 
@@ -303,13 +303,13 @@ Wenn Sie eine enthaltene Datei oder eine andere von der Vorlage gelesene Datei a
 
 ::: moniker range="vs-2017"
 
-- Eine gute Anleitung für die T4-MSBuild-Vorlage unter`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Eine gute Anleitung für die T4-MSBuild-Vorlage unter `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Eine gute Anleitung für die T4-MSBuild-Vorlage unter`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Eine gute Anleitung für die T4-MSBuild-Vorlage unter `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

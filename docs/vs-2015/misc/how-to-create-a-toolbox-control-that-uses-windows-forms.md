@@ -12,10 +12,10 @@ ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850327"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Gewusst wie: Erstellen eines Toolbox-Steuerelements, das Windows Forms verwendet
@@ -29,7 +29,7 @@ Mit der Vorlage „Windows Forms-Toolbox-Steuerelement“, die im [!INCLUDE[vssd
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>So erstellen Sie ein Windows Forms-Toolbox-Steuerelementprojekt  
   
-1. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.  
+1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.  
   
 2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Installierte Vorlagen**auf den Knoten für Ihre bevorzugte Programmiersprache, und klicken Sie dann auf **Erweiterbarkeit**. Wählen Sie in der Liste der Projekttypen **Windows Forms-Toolbox-Steuerelement**aus.  
   
@@ -89,5 +89,5 @@ Mit der Vorlage „Windows Forms-Toolbox-Steuerelement“, die im [!INCLUDE[vssd
   
      Wenn Sie die Datei auf die [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website hochladen, können andere Benutzer den **Erweiterungs-Manager** in Visual Studio verwenden, um das Steuerelement zu finden und zu installieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)

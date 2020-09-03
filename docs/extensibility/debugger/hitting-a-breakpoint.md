@@ -1,5 +1,5 @@
 ---
-title: Schlagen eines Haltepunkts | Microsoft Docs
+title: Erreichen eines halte Punkts | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738570"
 ---
 # <a name="hit-a-breakpoint"></a>Treffen eines Haltepunkts
-Im folgenden Abschnitt wird der Prozess beschrieben, wenn das Debugmodul (DE) beim Ausführen oder Schrittweisen einen Haltepunkt erreicht:
+Der folgende Abschnitt beschreibt den Prozess, in dem die Debug-Engine (de) während der Ausführung oder beim Ausführen des Vorgangs einen Haltepunkt erreicht:
 
-## <a name="troubleshoot-a-hit-breakpoint"></a>Fehlerbehebung bei einem Trefferpunkt
+## <a name="troubleshoot-a-hit-breakpoint"></a>Behandeln von Problemen mit einem Treffer Haltepunkt
 
-1. Die DE sendet eine [IDebugBreakpointEvent2-Schnittstelle](../../extensibility/debugger/reference/idebugbreakpointevent2.md) als **EVENT_SYNC_STOP**.
+1. Der de sendet eine [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) -Schnittstelle als **EVENT_SYNC_STOP**.
 
-2. Der Sitzungsdebug-Manager (SDM) ruft [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) auf, um den punkteinen Punkt abzubekommen, der getroffen wurde.
+2. Der Session Debug Manager (SDM) ruft [IDebugBreakpointEvent2::: enumbreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) auf, um den Treffer Haltepunkt zu erhalten.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
+- [Debugger-Ereignisse aufzurufen](../../extensibility/debugger/calling-debugger-events.md)

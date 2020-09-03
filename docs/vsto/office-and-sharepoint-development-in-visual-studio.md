@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800943"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Office-und SharePoint-Entwicklung in Visual Studio
@@ -57,7 +57,7 @@ ms.locfileid: "88800943"
 
  ![Inhalts-App für Office](../vsto/media/appforoffice.png "Inhalts-App für Office")
 
- **Weitere Informationen**
+ **Erfahren Sie mehr**
 
 |Beschreibung|Siehe|
 |--------|---------|
@@ -73,7 +73,7 @@ ms.locfileid: "88800943"
 
  ![Geschäftskontaktmanager-App für SharePoint](../vsto/media/appforsharepoint.png "Geschäftskontaktmanager-App für SharePoint")
 
- **Weitere Informationen**
+ **Erfahren Sie mehr**
 
 |Beschreibung|Siehe|
 |--------|---------|
@@ -82,13 +82,13 @@ ms.locfileid: "88800943"
 |Wählen Sie aus, ob Sie SharePoint-Add-In oder eine SharePoint-Lösung erstellen möchten.|[Entscheiden zwischen SharePoint-Add-Ins und SharePoint-Lösungen](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> Erstellen eines VSTO-Add-ins
- Erstellen Sie ein VSTO-Add-in für das Ziel von Office 2007 oder Office 2010, oder erweitern Sie Office 2013 und Office 2016 über das, was mit Office-Add-Ins möglich ist. VSTO-Add-Ins können nur auf dem Desktop ausgeführt werden. Benutzer müssen VSTO-Add-ins installieren, sodass Sie in der Regel schwieriger bereitzustellen und zu unterstützen sind.  Allerdings kann das VSTO-Add-In stärker in Office integriert werden. Sie können z. B. die Office-Multifunktionsleiste Registerkarten und Steuerelemente hinzufügen und erweiterte Automatisierung-Aufgaben wie das Zusammenführen von Dokumenten oder das Ändern von Diagrammen durchführen. Sie können das .NET Framework einsetzen und C# und Visual Basic zur Interaktion mit Office-Objekten verwenden.
+ Erstellen Sie ein VSTO-Add-in für das Ziel von Office 2007 oder Office 2010, oder erweitern Sie Office 2013 und Office 2016 über das, was mit Office-Add-Ins möglich ist. VSTO-Add-Ins werden nur auf dem Desktop ausgeführt. Benutzer müssen VSTO-Add-ins installieren, sodass Sie in der Regel schwieriger bereitzustellen und zu unterstützen sind.  Allerdings kann das VSTO-Add-In stärker in Office integriert werden. Sie können z. B. die Office-Multifunktionsleiste Registerkarten und Steuerelemente hinzufügen und erweiterte Automatisierung-Aufgaben wie das Zusammenführen von Dokumenten oder das Ändern von Diagrammen durchführen. Sie können das .NET Framework einsetzen und C# und Visual Basic zur Interaktion mit Office-Objekten verwenden.
 
  Im folgenden finden Sie ein Beispiel für ein VSTO-Add-in. Dieses VSTO-Add-In fügt Menübandsteuerelemente, einen benutzerdefinierten Aufgabenbereich und ein Dialogfeld zu PowerPoint hinzu.
 
  ![PowerPoint-Add-in-Lösung](../vsto/media/powerpointaddin.png "PowerPoint-Add-In-Lösung")
 
- **Weitere Informationen**
+ **Erfahren Sie mehr**
 
 |Beschreibung|Lesen|
 |--------|----------|
@@ -100,7 +100,7 @@ ms.locfileid: "88800943"
 
  SharePoint-Lösungen erfordern lokale SharePoint-Farm-Server. Administratoren müssen sie installieren, und da Lösungen in SharePoint ausgeführt werden, können sie die Leistung des Servers beeinträchtigen. Allerdings bieten Lösungen einen tieferen Zugriff auf SharePoint-Objekte. Wenn Sie eine SharePoint-Lösung erstellen, können Sie außerdem das .NET Framework und C# und Visual Basic für die Interaktion mit SharePoint-Objekte verwenden.
 
- **Weitere Informationen**
+ **Erfahren Sie mehr**
 
 |Beschreibung|Siehe|
 |--------|---------|

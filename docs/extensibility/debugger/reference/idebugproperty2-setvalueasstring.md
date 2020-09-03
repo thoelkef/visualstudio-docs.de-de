@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueasString | Microsoft Docs
+title: 'IDebugProperty2:: setvalueasstring | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 112ded163f38b93e9918387d8ca6beafb8282647
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721239"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Legt den Wert einer Eigenschaft aus einer bestimmten Zeichenfolge fest.
+Legt den Wert einer Eigenschaft aus einer angegebenen Zeichenfolge fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,20 +45,20 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>Parameter
 `pszValue`\
-[in] Eine Zeichenfolge, die den festzulegenden Wert enthält.
+in Eine Zeichenfolge, die den festzulegenden Wert enthält.
 
 `nRadix`\
-[in] Ein Radix, der bei der Interpretation numerischer Informationen verwendet werden soll. Dies kann 0 sein, um zu versuchen, den Radix automatisch zu bestimmen.
+in Ein Basis, das zum Interpretieren numerischer Informationen verwendet werden soll. Dies kann 0 sein, um zu versuchen, das Basis automatisch zu ermitteln.
 
 `dwTimeout`\
-[in] Gibt die maximale Wartezeit in Millisekunden an, bevor von dieser Methode zurückgegeben wird. Verwenden `INFINITE` Sie diese Verwendung, um auf unbestimmte Zeit zu warten.
+in Gibt die maximale Zeit in Millisekunden an, die gewartet werden soll, bevor diese Methode zurückgegeben wird. Verwenden `INFINITE` Sie, um unbegrenzt zu warten.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird Fehlercode zurückgegeben. Die folgende Tabelle zeigt andere mögliche Werte.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben. In der folgenden Tabelle werden andere mögliche Werte angezeigt.
 
-|Wert|BESCHREIBUNG|
+|value|BESCHREIBUNG|
 |-----------|-----------------|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Die Zeichenfolge konnte nicht in einen Eigenschaftswert konvertiert werden, oder der Eigenschaftswert konnte nicht festgelegt werden.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Die Zeichenfolge konnte nicht in einen Eigenschafts Wert konvertiert werden, oder der Eigenschafts Wert konnte nicht festgelegt werden.|
 |`E_SETVALUE_VALUE_IS_READONLY`|Die Eigenschaft ist schreibgeschützt.|
 
 ## <a name="see-also"></a>Weitere Informationen
