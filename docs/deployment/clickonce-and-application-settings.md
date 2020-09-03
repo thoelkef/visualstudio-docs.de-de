@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a72b5bc3f3645d9af1008f2c178ab285e8b45449
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184132"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce und Anwendungseinstellungen
@@ -27,33 +27,33 @@ Anwendungseinstellungen für Windows Forms erleichtern das Erstellen, speichern 
  Die folgenden Informationen gelten nur für den Standardanbieter für Anwendungseinstellungen, die- <xref:System.Configuration.LocalFileSettingsProvider> Klasse. Wenn Sie einen benutzerdefinierten Anbieter angeben, legt dieser Anbieter fest, wie seine Daten gespeichert werden und wie seine Einstellungen zwischen den Versionen aktualisiert werden. Weitere Informationen zu Anwendungs Einstellungs Anbietern finden Sie unter [Architektur der Anwendungseinstellungen](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
 ## <a name="application-settings-files"></a>Dateien für Anwendungseinstellungen
- Die Anwendungseinstellungen verbrauchen zwei Dateien: * \<app> . exe. config* und *User. config*, wobei *App* der Name Ihrer Windows Forms Anwendung ist. " *User. config* " wird auf dem Client erstellt, wenn die Anwendung zum ersten Mal benutzerspezifische Einstellungen speichert. die Datei " * \<app> . exe. config*" ist im Gegensatz dazu vor der Bereitstellung vorhanden, wenn Sie Standardwerte für Einstellungen definieren. Diese Datei wird von Visual Studio automatisch angezeigt, wenn Sie den **Veröffentlichungs** Befehl verwenden. Wenn Sie die ClickOnce-Anwendung mithilfe von " *Mage. exe* " oder " *MageUI. exe*" erstellen, müssen Sie sicherstellen, dass diese Datei in den anderen Dateien Ihrer Anwendung enthalten ist, wenn Sie das Anwendungs Manifest auffüllen.
+ Die Anwendungseinstellungen verbrauchen zwei Dateien: * \<app>.exe.config* und *user.config*, wobei *App* der Name Ihrer Windows Forms Anwendung ist. *user.config* wird auf dem Client erstellt, wenn die Anwendung zum ersten Mal benutzerspezifische Einstellungen speichert. * \<app>.exe.config*hingegen vor der Bereitstellung vorhanden ist, wenn Sie Standardwerte für Einstellungen definieren. Diese Datei wird von Visual Studio automatisch angezeigt, wenn Sie den **Veröffentlichungs** Befehl verwenden. Wenn Sie die ClickOnce-Anwendung mit *Mage.exe* oder *MageUI.exe*erstellen, müssen Sie sicherstellen, dass diese Datei in den anderen Dateien Ihrer Anwendung enthalten ist, wenn Sie das Anwendungs Manifest auffüllen.
 
- In einer Windows Forms Anwendung, die nicht mit ClickOnce bereitgestellt wird, wird die Datei " * \<app> . exe. config* " einer Anwendung im Anwendungsverzeichnis gespeichert, während die Datei " *User. config* " im Ordner " **Dokumente und Einstellungen** " des Benutzers gespeichert wird. In einer ClickOnce-Anwendung befindet sich die Datei " * \<app> . exe. config* " im Anwendungsverzeichnis innerhalb des ClickOnce-Anwendungs Caches, und " *User. config* " befindet sich im ClickOnce-Datenverzeichnis für diese Anwendung.
+ In einer Windows Forms Anwendung, die nicht mit ClickOnce bereitgestellt wird, wird die * \<app>.exe.config* Datei einer Anwendung im Anwendungsverzeichnis gespeichert, während die *user.config* Datei im Ordner " **Dokumente und Einstellungen** " des Benutzers gespeichert wird. In einer ClickOnce-Anwendung befindet sich * \<app>.exe.config* im Anwendungsverzeichnis innerhalb des ClickOnce-Anwendungs Caches, und *user.config* im ClickOnce-Datenverzeichnis für diese Anwendung.
 
- Unabhängig davon, wie Sie Ihre Anwendung bereitstellen, gewährleisten Anwendungseinstellungen den sicheren Lesezugriff auf * \<app> . exe. config*und den sicheren Lese-/Schreibzugriff auf die Datei " *User. config*".
+ Unabhängig davon, wie Sie Ihre Anwendung bereitstellen, gewährleisten Anwendungseinstellungen den sicheren Lesezugriff auf * \<app>.exe.config*und den sicheren Lese-/Schreibzugriff auf *user.config*.
 
  In einer ClickOnce-Anwendung wird die Größe der von Anwendungseinstellungen verwendeten Konfigurationsdateien durch die Größe des ClickOnce-Caches eingeschränkt. Weitere Informationen finden Sie unter [Übersicht über den ClickOnce-Cache](../deployment/clickonce-cache-overview.md).
 
-## <a name="version-upgrades"></a>Versions Upgrades
+## <a name="version-upgrades"></a>Versionsupgrades
  Ebenso wie jede Version einer ClickOnce-Anwendung von allen anderen Versionen isoliert ist, werden die Anwendungseinstellungen für eine ClickOnce-Anwendung auch von den Einstellungen für andere Versionen isoliert. Wenn der Benutzer auf eine höhere Version der Anwendung aktualisiert wird, vergleicht die Anwendungseinstellungen die neuesten Versionen (mit der höchsten Nummerierung) mit den Einstellungen, die mit der aktualisierten Version bereitgestellt werden, und führt die Einstellungen in einem neuen Satz von Einstellungsdateien zusammen.
 
  In der folgenden Tabelle wird beschrieben, wie Anwendungseinstellungen entscheiden, welche Einstellungen kopiert werden sollen.
 
 |Art der Änderung|Upgradeaktion|
 |--------------------|--------------------|
-|Die Einstellung " * \<app> . exe. config* " wurde hinzugefügt.|Die neue Einstellung wird in der Datei " * \<app> . exe. config* " der aktuellen Version zusammengeführt.|
-|Die Einstellung wurde aus " * \<app> . exe. config* " entfernt.|Die alte Einstellung wird aus der Datei " * \<app> . exe. config* " der aktuellen Version entfernt.|
-|Der Standardwert der Einstellung wurde geändert. lokale Einstellung in " *User. config* " weiterhin auf "ursprünglicher Standard"|Die Einstellung wird mit dem neuen Standardwert in der Datei *User. config* der aktuellen Version zusammengeführt.|
-|Der Standardwert der Einstellung wurde geändert. Einstellung ist in " *User. config* " auf "nicht Standard" festgelegt|Die Einstellung wird mit der Datei *User. config* der aktuellen Version zusammengeführt, wobei der nicht standardmäßige Wert beibehalten wird.|
+|Der * \<app>.exe.config* hinzugefügte Einstellung|Die neue Einstellung wird mit dem * \<app>.exe.config* der aktuellen Version zusammengeführt.|
+|Die Einstellung wurde aus * \<app>.exe.config* entfernt.|Die alte Einstellung wird aus der aktuellen Version entfernt * \<app>.exe.config*|
+|Der Standardwert der Einstellung wurde geändert. die lokale Einstellung ist in *user.config* weiterhin auf ursprünglicher Standard festgelegt.|Die Einstellung wird mit dem neuen Standardwert in die *user.config* der aktuellen Version zusammengeführt.|
+|Der Standardwert der Einstellung wurde geändert. Einstellung ist in *user.config* auf nicht Standard festgelegt.|Die Einstellung wird mit dem *user.config* der aktuellen Version zusammengeführt, wobei der nicht standardmäßige Wert beibehalten wird.|
 
 Wenn Sie Ihre eigene Wrapper Klasse für Anwendungseinstellungen erstellt haben und die Aktualisierungs Logik anpassen möchten, können Sie die-Methode überschreiben <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> .
 
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce-und Roamingeinstellungen
  ClickOnce funktioniert nicht mit den Roamingeinstellungen, mit denen Ihre Einstellungsdatei auf die Computer in einem Netzwerk folgen kann. Wenn Sie Roamingeinstellungen benötigen, müssen Sie entweder einen Anwendungs Einstellungs Anbieter implementieren, der Einstellungen über das Netzwerk speichert, oder eigene benutzerdefinierte Einstellungs Klassen zum Speichern von Einstellungen auf einem Remote Computer entwickeln. Weitere Informationen zu Einstellungs Anbietern finden Sie unter [Architektur der Anwendungseinstellungen](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Übersicht über Anwendungseinstellungen](/dotnet/framework/winforms/advanced/application-settings-overview)
 - [Übersicht über den ClickOnce-Cache](../deployment/clickonce-cache-overview.md)
 - [Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

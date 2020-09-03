@@ -20,28 +20,28 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dffa98a8abbf74bd6eee8761d91f09a7c022666
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68740217"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Task wird ausgeführt, um das **\<hostInBrowser />** -Element dem Anwendungsmanifest (*projectname*.exe.manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)]-Projekt erstellt wird.  
+Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Task wird ausgeführt, um das- **\<hostInBrowser />** Element dem Anwendungs Manifest (*ProjectName*. exe. manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] Projekt erstellt wird.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
-|Parameter|BESCHREIBUNG|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt den Pfad und den Namen der Anwendungsmanifestdatei an, der Sie das `<hostInBrowser />` Element hinzufügen möchten.|  
-|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />** -Element einzufügen. Wenn **true**, dann ist ein neues `<`**hostInBrowser />** -Element im **\<entryPoint />** -Element enthalten. Beachten Sie, dass der Einschluss von Elementen kumulativ ist: Wenn ein **\<hostInBrowser />** -Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />** -Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|  
+|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungs Manifest geändert werden soll, um das Element einzuschließen **\<hostInBrowser />** . **True**gibt an, dass ein neues " `<` **tustinbrowser/>"-** Element im-Element enthalten ist **\<entryPoint />** . Beachten Sie, dass die Element Einbindung kumulativ ist: Wenn bereits ein- **\<hostInBrowser />** Element vorhanden ist, wird es nicht entfernt oder überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />** Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Hinweise  
  [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] wird mithilfe von [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] ausgeführt und muss aus diesem Grund mit unterstützenden Bereitstellungs- und Anwendungsmanifesten veröffentlicht werden. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] verwendet die [GenerateApplicationManifest](/dotnet/api/microsoft.build.tasks.generateapplicationmanifest)-Aufgabe zum Generieren eines Anwendungsmanifests.  
   
- Anschließend muss ein zusätzliches Element, **\<hostInBrowser />** , dem Anwendungsmanifest hinzugefügt werden, um eine Anwendung zu konfigurieren, die von einem Browser gehostet wird; wie im folgenden Beispiel gezeigt:  
+ Zum Konfigurieren einer Anwendung, die von einem Browser gehostet werden soll, **\<hostInBrowser />** muss dem Anwendungs Manifest ein zusätzliches Element hinzugefügt werden, wie im folgenden Beispiel gezeigt:  
   
 ```  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -75,10 +75,10 @@ Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Tas
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Erstellen einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Aufgaben Referenz](../msbuild/wpf-msbuild-task-reference.md)   
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
+ [Aufgaben Referenz](../msbuild/msbuild-task-reference.md)   
+ [Entwickeln einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Übersicht über WPF-XAML-Browseranwendungen](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft-Dokumentation
+title: 'Idebugcomplussymbolprovider:: getaddressesinmodulefromposition | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471997a5497413869c3c4662592f4c585c2d76d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194824"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ordnet eine Dokumentposition im angegebenen Modul in ein Array von Debug-Adressen an.  
+Ordnet eine Dokument Position im angegebenen Modul einem Array von debugadressen zu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,28 +51,28 @@ int GetAddressesInModuleFromPosition(
   
 #### <a name="parameters"></a>Parameter  
  `ulAppDomainID`  
- [in] Bezeichner der Anwendungsdomäne.  
+ in Anwendungs Domänen Bezeichner.  
   
  `guidModule`  
- [in] Eindeutiger Bezeichner des Moduls.  
+ in Eindeutiger Bezeichner des Moduls.  
   
  `pDocPos`  
- [in] Die Dokumentposition.  
+ in Die Position des Dokuments.  
   
  `fStatmentOnly`  
- [in] Wenn `TRUE`, schränkt die Debug-Adressen auf eine einzelne Anweisung.  
+ in Wenn `TRUE` , werden die debugadressen auf eine einzige Anweisung beschränkt.  
   
  `ppEnumBegAddresses`  
- [out] Gibt einen Enumerator für die Debug-Startadressen, die mit dieser Anweisung oder der Zeile verknüpft sind.  
+ vorgenommen Gibt einen Enumerator für die Start-debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.  
   
  `ppEnumEndAddresses`  
- [out] Gibt einen Enumerator für die abschließende Debug-Adressen, die mit dieser Anweisung oder der Zeile verknüpft sind.  
+ vorgenommen Gibt einen Enumerator für die End-debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
@@ -223,5 +223,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

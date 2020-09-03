@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryBytes | Microsoft-Dokumentation
+title: 'IDebugProperty2:: getmemorybytes | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77b58f247f2a7d12c5d39c4044c37e9c0782c947
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193530"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Arbeitsspeicher-Bytes, aus denen den Wert einer Eigenschaft ab.  
+Ruft die Arbeitsspeicher Bytes ab, die den Wert einer Eigenschaft bilden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,11 +40,11 @@ int GetMemoryBytes ( 
   
 #### <a name="parameters"></a>Parameter  
  `ppMemoryBytes`  
- [out] Gibt eine [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt, das verwendet werden kann, um den Arbeitsspeicher abzurufen, die den Wert der Eigenschaft enthält.  
+ vorgenommen Gibt ein [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt zurück, das verwendet werden kann, um den Arbeitsspeicher abzurufen, der den Wert der-Eigenschaft enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETMEMORYBYTES_NO_MEMORY_BYTES` treten keine Bytes Arbeitsspeicher abrufen.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird der Fehlercode zurückgegeben. Gibt zurück `S_GETMEMORYBYTES_NO_MEMORY_BYTES` , wenn keine Speicher Bytes abgerufen werden müssen.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

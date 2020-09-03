@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660219"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Codeanalyse
@@ -59,5 +59,5 @@ Entwickler können das Tool Codemetriken verwenden, um die Komplexität und Verw
 
 3. Klicken Sie auf **OK**. Die neue Eincheck Richtlinie gilt jetzt für künftige Eincheck Vorgänge.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Codemetriewerte](../code-quality/code-metrics-values.md) zum [Erstellen und Verwenden von Eincheck Richtlinien für die Code Analyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

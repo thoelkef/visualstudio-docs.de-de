@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bf21286143b2b9543c834f00ed31ddaa4cef63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660376"
 ---
 # <a name="troubleshooting-code-coverage"></a>Problembehandlung bei der Code Coverage
@@ -21,9 +21,9 @@ ms.locfileid: "72660376"
 Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native und verwaltete Assemblys (DLL- oder EXE-Dateien) erfasst. In einigen Fällen wird im Fenster "Code Coverage-Ergebnisse" jedoch ein Fehler ähnlich dem "leere Ergebnisse generiert:..." angezeigt. Es gibt mehrere mögliche Gründe, warum dies passieren könnte. Dieses Thema soll Ihnen helfen, diese Probleme zu beheben.
 
 ## <a name="what-you-should-see"></a>Anzeige im Normalfall
- Wenn Sie Im Menü „Test“ den Befehl **Code Coverage analysieren** auswählen und der Buildvorgang sowie die Tests erfolgreich ausgeführt werden, sollte im Fenster „Code Coverage“ eine Ergebnisliste angezeigt werden. Sie müssen möglicherweise die Elemente erweitern, um die Details anzuzeigen.
+ Wenn Sie im Menü Test den Befehl **Code Coverage analysieren** auswählen, und der Buildvorgang sowie die Tests erfolgreich ausgeführt werden, sollte im Fenster Code Coverage eine Ergebnisliste angezeigt werden. Sie müssen möglicherweise die Elemente erweitern, um die Details anzuzeigen.
 
- ![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Codeabdeckungsergebnisse mit Färbung](../test/media/codecoverage1.png "CodeCoverage1")
 
  Weitere Informationen finden Sie unter [Using Code Coverage to Determine How Much Code is being Tested (Wie Sie feststellen können, wie viel Code untersucht wird)](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -53,12 +53,12 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
 
  Die PDB-Datei und die DLL- oder EXE-Datei müssen im selben Buildvorgang generiert werden.
 
- Lösung stellen Sie sicher, dass die Buildeinstellungen die PDB-Datei generieren. Wenn die PDB-Dateien beim Erstellen des Projekts nicht aktualisiert werden, öffnen Sie die Projekteigenschaften, wählen Sie die Seite **Build** aus, wählen Sie **Erweitert** aus, und überprüfen Sie **Debuginformationen**.
+ Lösung stellen Sie sicher, dass die Buildeinstellungen die PDB-Datei generieren. Wenn die PDB-Dateien beim Erstellen des Projekts nicht aktualisiert werden, öffnen Sie die Projekteigenschaften, wählen Sie die Seite **Build** aus, wählen Sie **erweitert** aus, und überprüfen Sie die **Debuginformationen**.
 
  Wenn sich die PDB-Datei und die DLL- oder EXE-Datei an verschiedenen Speicherorten befinden, kopieren Sie die PDB-Datei in dasselbe Verzeichnis. Es ist auch möglich, die Code Coverage-Engine so zu konfigurieren, dass an anderen Speicherorten nach PDB-Dateien gesucht wird. Weitere Informationen finden Sie unter [Anpassen der Codeabdeckungsanalyse](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="using-an-instrumented-or-optimized-binary"></a>Verwenden einer instrumentierten oder optimierten Binärdatei
- Die Analyse bestimmt, ob die Binärdatei einer erweiterten Optimierung unterzogen wurde, beispielsweise bei der Profil gesteuerten Optimierung, oder wurde durch ein Profil Erstellungs Tool wie "VSInstr. exe" oder "VSPerfMon. exe" instrumentiert.
+ Die Analyse bestimmt, ob die Binärdatei einer erweiterten Optimierung unterzogen wurde, wie z. b. Profil gesteuerte Optimierung, oder wurde durch ein Profil Erstellungs Tool wie vsinstr.exe oder vsperfmon.exe instrumentiert.
 
  Erläuterung wenn eine Assembly bereits durch ein anderes Profil Erstellungs Tool instrumentiert oder optimiert wurde, wird die Assembly aus der Code Coverage Analyse weggelassen.
 
@@ -67,9 +67,9 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
  Lösung: Deaktivieren Sie die Optimierung, und verwenden Sie einen neuen Build.
 
 ### <a name="code-is-not-managed-net-or-native-c-code"></a>Code ist kein verwalteter (.NET) oder systemeigener Code (C++)
- Analyse überprüfen Sie, ob Sie einige Tests für verwalteten C++ Code oder Code ausführen.
+ Analyse überprüfen Sie, ob Sie einige Tests für verwalteten oder C++-Code ausführen.
 
- Die Erläuterung der Code Coverage-Analyse in Visual Studio ist nur für verwalteten undC++nativen () Code verfügbar. Wenn Sie mit Tools von Drittanbietern arbeiten, wird ein Teil des Codes oder der gesamte Code möglicherweise auf einer anderen Plattform ausgeführt.
+ Erklärung die Code Coverage-Analyse in Visual Studio ist nur für verwalteten und systemeigenen Code (C++) verfügbar. Wenn Sie mit Tools von Drittanbietern arbeiten, wird ein Teil des Codes oder der gesamte Code möglicherweise auf einer anderen Plattform ausgeführt.
 
  Auflösung ist nicht verfügbar.
 
@@ -121,5 +121,5 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
 
  Auflösung keine.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetGlobalContainer | Microsoft-Dokumentation
+title: 'Idebugmethodfield:: getglobalcontainer | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 63912b75435de503dec677b715d1914b419ba07a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162569"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft den globalen Container die Methode ab.  
+Ruft den globalen Container der Methode ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,14 +40,14 @@ int GetGlobalContainer(
   
 #### <a name="parameters"></a>Parameter  
  `ppClass`  
- [out] Gibt eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) für das Modul, in dem diese Methode definiert ist.  
+ vorgenommen Gibt ein [idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) zurück, das das Modul darstellt, in dem diese Methode definiert ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Das zurückgegebene [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt, das gesamte Modul darstellt, und ist ein künstliches Objekt, das heißt, das Modul selbst verfügt nicht über eine tatsächliche Klasse jedoch kann es durch dargestellt werden ein `IDebugClassField` -Objekt, sodass die verschiedenen die Elemente des Moduls aufgelistet und ermittelt werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Das zurückgegebene [idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) -Objekt stellt das gesamte Modul dar und ist ein künstliches Objekt, d. h., das Modul selbst hat keine tatsächliche Klasse, kann jedoch durch ein Objekt dargestellt werden `IDebugClassField` , sodass die verschiedenen Elemente des Moduls aufgezählt und ermittelt werden können.  
   
-## <a name="see-also"></a>Siehe auch  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

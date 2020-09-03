@@ -1,5 +1,5 @@
 ---
-title: ProjectSubType-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: ProjectSubType-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701834"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType-Element (Visual Studio-Vorlagen)
-Klassifiziert die Vorlage in eine Unterkategorie des `ProjectType` im Element angegebenen Werts.
+Klassifiziert die Vorlage in eine Unterkategorie des Werts, der im-Element angegeben ist `ProjectType` .
 
- \<VSTemplate \<> TemplateData> \<ProjectSubType>
+ \<VSTemplate> \<TemplateData>
+ \<ProjectSubType>
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,16 +37,16 @@ Klassifiziert die Vorlage in eine Unterkategorie des `ProjectType` im Element an
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
@@ -55,20 +56,20 @@ Klassifiziert die Vorlage in eine Unterkategorie des `ProjectType` im Element an
 ## <a name="remarks"></a>Bemerkungen
  `ProjectSubType` ist ein optionales untergeordnetes Element von `TemplateData`.
 
- Das `ProjectSubType` Element stellt eine Unterkategorie für das [ProjectType-Element](../extensibility/projecttype-element-visual-studio-templates.md) bereit. Dieser Wert kann Folgendes umfassen:
+ Das- `ProjectSubType` Element stellt eine Unterkategorie für das [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) -Element bereit. Dieser Wert kann Folgendes umfassen:
 
-- `SmartDevice-NETCFv1`: Gibt an, dass [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] die Vorlage auf die Version 1.0 abzielt.
+- `SmartDevice-NETCFv1`: Gibt an, dass die Vorlage auf die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 1,0 abzielt.
 
-- `SmartDevice-NETCFv2`: Gibt an, dass [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] die Vorlage auf die Version 2.0 abzielt.
+- `SmartDevice-NETCFv2`: Gibt an, dass die Vorlage auf die [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2,0 abzielt.
 
-  Wenn eine Vorlage `ProjectType` ein Element `Web`mit `ProjectSubType` dem Wert von enthält, gibt das Element die Programmiersprache der Vorlage an. Dieses Element kann die folgenden Werte haben:
+  Wenn eine Vorlage ein- `ProjectType` Element mit dem Wert enthält `Web` , gibt das- `ProjectSubType` Element die Programmiersprache der Vorlage an. Dieses Element kann die folgenden Werte aufweisen:
 
-- `CSharp`: Gibt an, dass [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] die Vorlage ein Webprojekt oder -element erstellt.
+- `CSharp`: Gibt an, dass die Vorlage ein [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Webprojekt oder-Element erstellt.
 
-- `VisualBasic`: Gibt an, dass [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] die Vorlage ein Webprojekt oder -element erstellt.
+- `VisualBasic`: Gibt an, dass die Vorlage ein [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Webprojekt oder-Element erstellt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt die Metadaten [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] für eine [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Projektvorlage für eine Geräteanwendung, die auf die Version 2.0 abzielt.
+ Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Geräte Anwendung, die auf [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] Version 2,0 abzielt.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -95,7 +96,7 @@ Klassifiziert die Vorlage in eine Unterkategorie des `ProjectType` im Element an
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [ProjectType-Element (Visual Studio-Vorlagen)](../extensibility/projecttype-element-visual-studio-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für PowerPoint'
+title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871956"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für PowerPoint
-  In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein VSTO-Add-in für Microsoft Office PowerPoint erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Präsentationen geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über &#40;die Entwicklung von Office&#41;](../vsto/office-solutions-development-overview-vsto.md)-Projektmappen VSTO.
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint
+  In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein VSTO-Add-in für Microsoft Office PowerPoint erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Präsentationen geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
@@ -39,8 +39,8 @@ ms.locfileid: "68871956"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
+## <a name="prerequisites"></a>Voraussetzungen
+ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -64,12 +64,12 @@ ms.locfileid: "68871956"
 
 7. Klicken Sie auf **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt das **FirstPowerPointAddIn** -Projekt und öffnet die Codedatei " **ThisAddIn** " im Editor.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstPowerPointAddIn** -Projekt und öffnet die Codedatei " **ThisAddIn** " im Editor.
 
 ## <a name="write-code-that-adds-text-to-each-new-slide"></a>Schreiben von Code, der jeder neuen Folie Text hinzufügt
  Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code, verwendet das PowerPoint-Objektmodell, um jeder neuen Folie ein Textfeld hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:
 
-- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von PowerPoint. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
+- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Objektmodell von PowerPoint. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der- `ThisAddIn` Klasse wird in einer ausgeblendeten Codedatei definiert, die nicht geändert werden sollte.
 
 - Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von PowerPoint geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
@@ -88,9 +88,9 @@ ms.locfileid: "68871956"
 
    Zum Ändern der einzelnen neuen Folien wurden in den vorherigen Codebeispielen die folgenden Objekte verwendet:
 
-- Das `Application` -Feld der `ThisAddIn` -Klasse. Das `Application` -Feld gibt ein [Anwendungs](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Objekt zurück, das die aktuelle Instanz von PowerPoint darstellt.
+- Das `Application` -Feld der `ThisAddIn` -Klasse. Das- `Application` Feld gibt ein [Anwendungs](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Objekt zurück, das die aktuelle Instanz von PowerPoint darstellt.
 
-- Der `Sld` -Parameter des Ereignis Handlers für das [Microsoft. Office. Interop. PowerPoint. EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis. Der `Sld` -Parameter ist ein [Folien](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) Objekt, das die neue Folie darstellt. Weitere Informationen finden Sie unter [PowerPoint-Lösungen](../vsto/powerpoint-solutions.md).
+- Der- `Sld` Parameter des Ereignis Handlers für das [Microsoft. Office. Interop. PowerPoint. EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis. Der- `Sld` Parameter ist ein [Folien](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) Objekt, das die neue Folie darstellt. Weitere Informationen finden Sie unter [PowerPoint-Lösungen](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Testen des Projekts
  Überprüfen Sie, wenn Sie das Projekt erstellen und ausführen, ob in neuen Folien, die Sie einer Präsentation hinzufügen, das Textfeld angezeigt wird.
@@ -129,7 +129,7 @@ ms.locfileid: "68871956"
 
 - Bereitstellen von VSTO-Add-Ins für PowerPoint. Weitere Informationen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [PowerPoint-Lösungen](../vsto/powerpoint-solutions.md)
 - [Office-Benutzeroberflächen Anpassung](../vsto/office-ui-customization.md)

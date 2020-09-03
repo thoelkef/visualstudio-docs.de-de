@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660595"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
@@ -53,9 +53,9 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 
 5. Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test**, **Testeinstellungen**.
 
-   ![Menü "Test Einstellungen" mit benutzerdefinierter Einstellungsdatei](../test/media/codecoverage-settingsfile.png "CodeCoverage-SettingsFile")
+   ![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei](../test/media/codecoverage-settingsfile.png "CodeCoverage-SettingsFile")
 
-   Andere Aspekte von Komponententests können in derselben RUNSETTINGS-Datei konfiguriert werden. Weitere Informationen finden Sie unter [Unit Test Your Code](../test/unit-test-your-code.md).
+   Andere Aspekte von Komponententests können in derselben RUNSETTINGS-Datei konfiguriert werden. Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md).
 
 ### <a name="specifying-symbol-search-paths"></a>Festlegen von Symbolsuchpfaden
  Die Codeabdeckung erfordert Symbole (PDB-Dateien), damit Assemblys zur Verfügung stehen. Für über die Projektmappe erstellte Assemblys werden Symboldateien im Allgemeinen neben den Binärdateien bereitgestellt, und die Codeabdeckung funktioniert automatisch. In einigen Fällen sollten Sie jedoch Assemblys, auf die verwiesen wird, in die Codeabdeckungsanalyse einschließen. In solchen Fällen befinden sich die PDB-Dateien nicht neben den Binärdateien. Sie können jedoch den Symbolsuchpfad in der RUNSETTINGS-Datei angeben.
@@ -99,9 +99,9 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
  `Include` wird vor `Exclude` verarbeitet.
 
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke
- In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht identisch mit Platzhaltern. Insbesondere:
+ In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht identisch mit Platzhaltern. Dies gilt insbesondere für:
 
-1. **\.\\** * entspricht einer Zeichenfolge beliebiger Zeichen
+1. **\.\\*** Übereinstimmung mit einer Zeichenfolge beliebiger Zeichen
 
 2. **\\.** entspricht einem Punkt „.“
 
@@ -153,7 +153,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 
   **Abgleichen eines Funktionsnamens**
 
-  Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Ein auf ein Objekt angewendeter
+  Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Beispiel:
 
 - C# oder Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`
 
@@ -194,7 +194,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>So passen Sie Testlaufeinstellungen in einer Builddefinition an
  Sie können die Code Coverage-Daten von einem Teambuild abrufen.
 
- ![Angeben von RunSettings in einer Builddefinition](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildrunsettings")
+ ![Festlegen von Testlaufeinstellungen in einer Builddefinition](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildrunsettings")
 
 1. Vergewissern Sie sich, dass die RUNSETTINGS-Datei eingecheckt ist.
 
@@ -204,11 +204,11 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 
    - <em>Es wird jedoch die **Testassembly</em>* anstelle der **Test Quelle**angezeigt. Wenn ich versuche, das Feld "Test **Lauf Einstellungen** " festzulegen, kann ich nur Test Settings-Dateien auswählen.*
 
-      Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]** . Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.
+      Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.
 
    Die Ergebnisse sind im zusammenfassenden Abschnitt des Buildberichts sichtbar.
 
-## <a name="sample"></a> Beispiel für eine RUNSETTINGS-Datei:
+## <a name="sample-runsettings-file"></a><a name="sample"></a> Sample. RunSettings-Datei
  Kopieren Sie diesen Code, und passen Sie ihn Ihren Anforderungen entsprechend an. Dies ist die standardmäßige RUNSETTINGS-Datei.
 
  (Informationen zu anderen Verwendungsmöglichkeiten der RUNSETTINGS-Datei, finden Sie unter [Konfigurieren von Komponententests mithilfe einer .runsettings-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
@@ -325,5 +325,5 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden der Codeabdeckung, um zu bestimmen, wie viel Code getestet wird](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) . Komponenten [Tests für Ihren Code](../test/unit-test-your-code.md)

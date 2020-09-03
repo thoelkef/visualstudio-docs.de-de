@@ -1,5 +1,5 @@
 ---
-title: Analysieren von Visual Basic C# und Codequalität in Store-Apps mit statischer Code Analyse
+title: Analysieren der Qualität von Visual Basic und c#-Code in Store-Apps mit statischer Code Analyse
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660735"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität von Visual Basic- und C#-Code in Store-Apps mit der statischen Codeanalyse von Visual Studio
@@ -30,19 +30,19 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalyse verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](https://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
 
 ## <a name="in-this-topic"></a>In diesem Thema
- Erfahren Sie:
+ Sie erhalten Informationen zu folgenden Bereichen:
 
  [Ausführen der Codeanalyse](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)
 
- [Analysieren und Auflösen von Codeanalysewarnungen](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)
+ [Analysieren und Auflösen von Code Analyse Warnungen](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)
 
  [Unterdrücken der Codeanalysewarnungen](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Suppress)
 
  [Durchsuchen und Filtern von Codeanalyseergebnissen](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Search)
 
- [Visual Basic- und C#-Codeanalysewarnungen](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
+ [Visual Basic-und c#-Code Analyse Warnungen](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-## <a name="BKMK_Run"></a> Ausführen der Codeanalyse
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Ausführen der Code Analyse
  So führen Sie die Codeanalyse in der Visual Studio-Projektmappe aus
 
 - Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.
@@ -55,23 +55,23 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    Die Projektmappe wird kompiliert und die Codeanalyse ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.
 
-   ![Fenster "Code Analyse"](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![Codeanalysefenster](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
  Um eine bestimmte Warnung zu analysieren, klicken Sie im Codeanalysefenster auf den Titel der Warnung. Die Warnung wird erweitert, um ausführliche Informationen zum Problem anzuzeigen.
 
- ![Erweiterte Code Analyse Warnung](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
+ ![Erweiterte Codeanalysewarnung](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
  Wenn Sie eine Warnung erweitern, wird die Codezeile, die die Warnung verursacht hat im Code-Editor von Visual Studio hervorgehoben.
 
- ![Code Analyse, Hervorhebung von Text](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
+ ![Textmarkierung für Codeanalyse](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
  Nachdem Sie die Ursache des Problems verstanden haben, können Sie es im Code beheben. Wiederholen Sie die Codeanalyse, um sicherzustellen, dass die Warnung nicht mehr im Codeanalysefenster angezeigt wird und dass die Lösung des Problems keine neuen Warnungen ausgelöst hat.
 
 > [!TIP]
 > Sie können die Codeanalyse im Codeanalysefenster erneut ausführen. Klicken Sie auf **Analysieren**, und wählen Sie den Bereich der Analyse aus. Sie können die Analyse für die gesamte Projektmappe oder für ein ausgewähltes Projekt erneut ausführen.
 
-## <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Unterdrücken von Code Analyse Warnungen
  Mitunter möchten Sie möglicherweise darauf verzichten, eine Codeanalysewarnung zu korrigieren. So kann es beispielsweise vorkommen, dass das Auflösen der Warnung im Verhältnis zur Wahrscheinlichkeit, dass das Problem in einer realen Implementierung des Codes auftritt, eine zu große Bearbeitung des Codes erfordert. Oder Sie gehen davon aus, dass die für die Warnung verwendete Analyse für den jeweiligen Kontext ungeeignet ist. Sie können Warnungen unterdrücken, sodass diese nicht mehr im Codeanalysefenster angezeigt werden.
 
  So unterdrücken Sie eine Warnung
@@ -88,22 +88,22 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
      Die Entscheidung, ob die Warnung in der Quelldatei oder in der Unterdrückungsdatei unterdrückt wird, hängt vom Programmierstil und den Anforderungen ab.
 
-## <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Suchen und Filtern der Code Analyseergebnisse
  Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.
 
- ![Suchen und Filtern des Code Analyse Fensters](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Fenster zum Suchen und Filtern der Codeanalyse](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  In [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] haben alle Codeanalysewarnungen den Schweregrad der Warnung.
 
-## <a name="BKMK_Warnings"></a> Visual Basic- und C#-Codeanalysewarnungen
+## <a name="visual-basic-and-c-code-analysis-warnings"></a><a name="BKMK_Warnings"></a> Visual Basic- und C#-Codeanalysewarnungen
  Codeanalyse löst die folgenden Warnungen aus:
 
- [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können.](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Leere Finalizer entfernen](https://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Leere Finalizer entfernen.](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Verwerfbare Felder verwerfen](https://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: Verwerfbare Felder verwerfen.](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Serialisierungskonstruktoren implementieren](https://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Serialisierungskonstruktoren implementieren.](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.](https://msdn.microsoft.com/library/ms182359.aspx)

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft-Dokumentation
+title: 'Idebugcomplussymbolprovider:: GetSymAttribute | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09ca280bafc7ffbf5c48f1a73479bdc99f46fd56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194773"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft die Debugsymbole, mit dem angegebenen übergeordneten Attribut für das angegebene Modul ab.  
+Ruft die Debugsymbole mit dem angegebenen übergeordneten Attribut für das angegebene Modul ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,31 +51,31 @@ int GetSymAttribute (
   
 #### <a name="parameters"></a>Parameter  
  `ulAppDomainID`  
- [in] Der Bezeichner der Anwendungsdomäne.  
+ in Der Bezeichner der Anwendungsdomäne.  
   
  `guidModule`  
- [in] Eindeutiger Bezeichner des Moduls.  
+ in Eindeutiger Bezeichner des Moduls.  
   
  `tokParent`  
- [in] Token für das übergeordnete Attribut.  
+ in Token für das übergeordnete Attribut.  
   
  `pstrName`  
- [in] Der Name des Moduls.  
+ in Der Name des Moduls.  
   
  `cBuffer`  
- [in] Anzahl der Bytes, die erforderlich sind, für die Ausgabe `buffer`.  
+ in Anzahl der Bytes, die für die Ausgabe erforderlich sind `buffer` .  
   
  `pcBuffer`  
- [out] Länge der Ausgabe `buffer`.  
+ vorgenommen Länge der Ausgabe `buffer` .  
   
  `buffer`  
- [out] Ein Array mit den Symbolen.  
+ vorgenommen Ein Array, das die Symbole enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetSymAttribute(  
@@ -105,5 +105,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
