@@ -1,5 +1,5 @@
 ---
-title: Namenselement (Visual Studio-Vorlagen) | Microsoft Docs
+title: Name-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702460"
 ---
-# <a name="name-element-visual-studio-templates"></a>Namenselement (Visual Studio-Vorlagen)
-Gibt den Namen der Vorlage an, wie sie im Dialogfeld **Neues Projekt** oder Neues **Element hinzufügen** angezeigt wird.
+# <a name="name-element-visual-studio-templates"></a>Name-Element (Visual Studio-Vorlagen)
+Gibt den Namen der Vorlage an, wie er im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
 
- \<VSTemplate \<> TemplateData> \<Name>
+ \<VSTemplate> \<TemplateData>
+ \<Name>
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,17 +43,17 @@ Gibt den Namen der Vorlage an, wie sie im Dialogfeld **Neues Projekt** oder Neue
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`Package`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
-|`ID`|Optionales Attribut für erweiterte Benutzerszenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
+|`Package`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
+|`ID`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.
@@ -89,6 +90,6 @@ Gibt den Namen der Vorlage an, wie sie im Dialogfeld **Neues Projekt** oder Neue
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

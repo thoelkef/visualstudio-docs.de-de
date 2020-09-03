@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586873"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
-Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus wie Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. In diesem Thema erfahren Sie, wie Sie über eine einfache Windows Forms "Forms over Data"-Anwendung mit einer Datenbank interagieren, indem Sie Visual C# oder Visual Basic und ADO.NET verwenden.  Alle .NET-Daten Technologien – einschließlich Datasets, LINQ to SQL und Entity Framework – führen letztendlich Schritte aus, die den in diesem Artikel gezeigten ähneln.
+Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus wie Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. In diesem Thema erfahren Sie, wie Sie mithilfe von Visual c# oder Visual Basic und ADO.net über eine einfache Windows Forms "Forms over Data"-Anwendung mit einer Datenbank interagieren.  Alle .NET-Daten Technologien – einschließlich Datasets, LINQ to SQL und Entity Framework – führen letztendlich Schritte aus, die den in diesem Artikel gezeigten ähneln.
 
 Dieser Artikel veranschaulicht eine einfache Methode, um Daten aus einer Datenbank schnell zu erhalten. Wenn Ihre Anwendung Daten auf nicht triviale Weise ändern und die Datenbank aktualisieren muss, sollten Sie die Verwendung von Entity Framework und die Verwendung der Datenbindung in Erwägung gezogen, um die Benutzeroberflächen-Steuerelemente automatisch mit Änderungen in den zugrunde liegenden Daten zu synchronisieren.
 
 > [!IMPORTANT]
 > Der Code enthält keine produktionsbereite Ausnahmebehandlung, um ihn einfach zu halten.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Zum Erstellen der Anwendung benötigen Sie:
 
-- Visual Studio erstellen.
+- Visual Studio.
 
 - SQL Server Express LocalDB. Wenn Sie nicht über SQL Server Express localdb verfügen, können Sie es über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)installieren.
 
-In diesem Thema wird davon ausgegangen, dass Sie mit der grundlegenden Funktionalität der Visual Studio-IDE vertraut sind und eine Windows Forms Anwendung erstellen, dem Projekt Formulare hinzufügen, Schaltflächen und andere Steuerelemente in den Formularen einfügen, Eigenschaften der Steuerelemente festlegen und einfache Ereignisse programmieren können. Wenn Sie mit diesen Aufgaben nicht vertraut sind, empfehlen wir Ihnen, das Thema erste Schritte [mit C# Visual und Visual Basic](../ide/quickstart-visual-basic-console.md) abzuschließen, bevor Sie mit dieser exemplarischen Vorgehensweise beginnen.
+In diesem Thema wird davon ausgegangen, dass Sie mit der grundlegenden Funktionalität der Visual Studio-IDE vertraut sind und eine Windows Forms Anwendung erstellen, dem Projekt Formulare hinzufügen, Schaltflächen und andere Steuerelemente in den Formularen einfügen, Eigenschaften der Steuerelemente festlegen und einfache Ereignisse programmieren können. Wenn Sie mit diesen Aufgaben nicht vertraut sind, empfehlen wir Ihnen, das Thema erste Schritte [mit Visual c# und Visual Basic](../ide/quickstart-visual-basic-console.md) abzuschließen, bevor Sie mit dieser exemplarischen Vorgehensweise beginnen.
 
 ## <a name="set-up-the-sample-database"></a>Die Beispieldatenbank einrichten
 
@@ -65,7 +65,7 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 
 1. Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie es **SimpleDataApp**.
 
-    Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars namens **Form1**.
+    Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows Forms namens **Form1**.
 
 2. Fügen Sie dem Projekt zwei Windows-Formulare hinzu, sodass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:
 
@@ -120,14 +120,14 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 |Schaltfläche|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Die Verbindungszeichenfolge speichern
-Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Speichern Sie die Zeichenfolge in der Datei " *app. config* " in Ihrem Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode von einem beliebigen Formular in der Anwendung aufgerufen wird, um zu vermeiden, dass Sie die Zeichenfolge manuell eingeben.
+Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Um zu vermeiden, dass die Zeichenfolge manuell in jedes Formular eingegeben wird, speichern Sie die Zeichenfolge in der *App.config* -Datei im Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode von einem beliebigen Formular in der Anwendung aufgerufen wird.
 
-Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG**+**A**, **STRG**+**C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
+Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG** + **A**, **STRG** + **C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
 
-1. C#Wenn Sie verwenden, erweitern Sie in **Projektmappen-Explorer**den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
+1. Wenn Sie c# verwenden, erweitern Sie in **Projektmappen-Explorer**den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
     Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer**auf **alle Dateien anzeigen**, erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
 
-2. Geben Sie in der Spalte **Name** `connString`ein.
+2. Geben Sie in der Spalte **Name den Namen** ein `connString` .
 
 3. Wählen Sie in der Liste **Typ** die Option **(Verbindungs Zeichenfolge)** aus.
 
@@ -175,7 +175,7 @@ Erstellen Sie einen leeren Click-Ereignishandler für jede Schaltfläche im newC
 
 Führen Sie die folgenden Schritte aus, um die newCustomer-Formular Logik abzuschließen.
 
-1. Bringen Sie den `System.Data.SqlClient`-Namespace in den Gültigkeitsbereich, damit Sie die Namen der zugehörigen Member nicht vollständig qualifizieren müssen.
+1. Bringen `System.Data.SqlClient` Sie den Namespace in den Gültigkeitsbereich, sodass Sie die Namen der Member nicht vollständig qualifizieren müssen.
 
      ```csharp
      using System.Data.SqlClient;
@@ -229,10 +229,10 @@ Führen Sie die folgenden Schritte aus, um die Formular Logik von "fllorcancel" 
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>Die Anwendung testen
+## <a name="test-your-application"></a>Testen Ihrer Anwendung
 
 Drücken Sie die **F5**-Taste, um die Anwendung zu erstellen und zu testen, nachdem Sie die einzelnen Click-Ereignishandler programmiert und die Programmierung beendet haben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

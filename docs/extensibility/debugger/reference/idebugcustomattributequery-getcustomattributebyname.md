@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs
+title: 'Idebugcustomattributequery:: GetCustomAttributeByName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e1c87fd105d2dbdc18bd4689c4680f2825c9e3be
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732639"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
-Ruft ein benutzerdefiniertes Attribut mit seinem Namen ab.
+Ruft ein benutzerdefiniertes Attribut ab, dessen Name angegeben ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,19 +44,19 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>Parameter
 `pszCustomAttributeName`\
-[in] Name des benutzerdefinierten Attributs.
+in Der Name des benutzerdefinierten Attributs.
 
 `ppBlob`\
-[in,out] Array von Bytes, die die benutzerdefinierten Attributdaten enthalten.
+[in, out] Ein Bytearray, das die benutzerdefinierten Attributdaten enthält.
 
 `pdwLen`\
-[out] Länge in Bytes `ppBlob` des Parameters.
+vorgenommen Länge des `ppBlob` Parameters in Byte.
 
 ## <a name="return-value"></a>Rückgabewert
-Gibt bei Erfolg `S_OK` zurück. Wenn kein benutzerdefiniertes `S_FALSE`Attribut vorhanden ist, wird zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
+Gibt bei Erfolg `S_OK` zurück. Wenn das benutzerdefinierte Attribut nicht vorhanden ist, wird zurückgegeben `S_FALSE` . Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugClassFieldSymbol-Objekt** implementiert wird, das die [IDebugCustomAttributeQuery-Schnittstelle](../../../extensibility/debugger/reference/idebugcustomattributequery.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugclassfieldsymbol** -Objekt implementiert wird, das die [idebugcustomattributequery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(

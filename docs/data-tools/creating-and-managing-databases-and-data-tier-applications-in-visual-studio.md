@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586730"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Datenbankprojekte und Datenebenenanwendungen
@@ -25,12 +25,12 @@ Eine Liste der Datenbankfunktionen, die von Datenebenenanwendungen unterstützt 
 
 ## <a name="common-high-level-tasks"></a>Allgemeine allgemeine Aufgaben
 
-| Allgemeine Aufgabe | Unterstützender Inhalt |
+| Allgemeine Aufgabe | Hilfreiche Themen |
 | - | - |
-| **Beginnen Sie mit der Entwicklung einer Datenebenenanwendung:** Das Konzept einer Datenebenenanwendung (DAC) wurde mit SQL Server 2008 eingeführt. Eine DAC enthält die Definition für eine SQL Server Datenbank und die unterstützenden Instanzobjekte, die von einer Client-oder 3-Tier-Anwendung verwendet werden. Eine DAC enthält Datenbankobjekte, z. b. Tabellen und Sichten, sowie instanzentitäten, z. b. Anmeldungen. Sie können Visual Studio verwenden, um ein DAC-Projekt zu erstellen, eine DAC-Paketdatei zu erstellen und die DAC-Paketdatei an einen Datenbankadministrator für die Bereitstellung auf einer Instanz der SQL Server Datenbank-Engine zu senden. | - [Datenschichtanwendungen](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Ausführen einer iterativen Datenbankentwicklung:** Entwickler können Teile des Projekts auschecken und in einer isolierten Entwicklungsumgebung aktualisieren. Mit dieser Art von Umgebung können Sie Ihre Änderungen testen, ohne dass sich dies auf andere Mitglieder des Teams auswirkt. Nachdem die Änderungen vorgenommen wurden, überprüfen Sie die Dateien wieder in die Versionskontrolle, wo andere Teammitglieder ihre Änderungen abrufen und auf einem Testserver bereitstellen können. | - [projektorientierte Offline Datenbankentwicklung (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-SQL-Debugger (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Beginnen Sie mit der Entwicklung einer Datenebenenanwendung:** Das Konzept einer Datenebenenanwendung (DAC) wurde mit SQL Server 2008 eingeführt. Eine DAC enthält die Definition für eine SQL Server Datenbank und die unterstützenden Instanzobjekte, die von einer Client-oder 3-Tier-Anwendung verwendet werden. Eine DAC enthält Datenbankobjekte, z. b. Tabellen und Sichten, sowie instanzentitäten, z. b. Anmeldungen. Sie können Visual Studio verwenden, um ein DAC-Projekt zu erstellen, eine DAC-Paketdatei zu erstellen und die DAC-Paketdatei an einen Datenbankadministrator für die Bereitstellung auf einer Instanz der SQL Server Datenbank-Engine zu senden. | - [Datenebenenanwendungen](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Ausführen einer iterativen Datenbankentwicklung:** Entwickler können Teile des Projekts auschecken und in einer isolierten Entwicklungsumgebung aktualisieren. Mit dieser Art von Umgebung können Sie Ihre Änderungen testen, ohne dass sich dies auf andere Mitglieder des Teams auswirkt. Nachdem die Änderungen vorgenommen wurden, überprüfen Sie die Dateien wieder in die Versionskontrolle, wo andere Teammitglieder ihre Änderungen abrufen und auf einem Testserver bereitstellen können. | - [Projektorientierte Offline Datenbankentwicklung (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-SQL-Debugger (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
 | **Prototypen, überprüfen von Testergebnissen und Ändern von Daten Bank Skripts und Objekten:** Sie können den Transact-SQL-Editor verwenden, um eine dieser allgemeinen Aufgaben auszuführen. | - [Abfrage-und Text-Editoren (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,5 +1,5 @@
 ---
-title: QUERYCHANGESFUNC | Microsoft Docs
+title: Querychangesfunc | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701635"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
-Dies ist eine Rückruffunktion, die vom [SccQueryChanges-Vorgang](../extensibility/sccquerychanges-function.md) verwendet wird, um eine Auflistung von Dateinamen aufzulisten und den Status jeder Datei zu bestimmen.
+Dies ist eine Rückruffunktion, die vom [sccquerychanges](../extensibility/sccquerychanges-function.md) -Vorgang verwendet wird, um eine Auflistung von Dateinamen aufzulisten und den Status jeder Datei zu bestimmen.
 
- Die `SccQueryChanges` Funktion erhält eine Liste von Dateien `QUERYCHANGESFUNC` und einen Zeiger auf den Rückruf. Das Quellcodeverwaltungs-Plug-In zählt über die angegebene Liste auf und stellt den Status (über diesen Rückruf) für jede Datei in der Liste bereit.
+ Die `SccQueryChanges` Funktion erhält eine Liste von Dateien und einen Zeiger auf den `QUERYCHANGESFUNC` Rückruf. Das Quellcodeverwaltungs-Plug-in listet die angegebene Liste auf und gibt den Status (über diesen Rückruf) für jede Datei in der Liste an.
 
 ## <a name="signature"></a>Signatur
 
@@ -35,25 +35,25 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ```
 
 ## <a name="parameters"></a>Parameter
- pvCallerData
+ pvcallerdata
 
-[in] Der `pvCallerData` Parameter, der vom Aufrufer (der IDE) an [SccQueryChanges](../extensibility/sccquerychanges-function.md)übergeben wird. Das Quellcodeverwaltungs-Plug-In sollte keine Annahmen über den Inhalt dieses Werts treffen.
+in Der vom Aufrufer `pvCallerData` (IDE) an [sccquerychanges](../extensibility/sccquerychanges-function.md)übergebenen Parameter. Das Quellcodeverwaltungs-Plug-in sollte keine Annahmen über den Inhalt dieses Werts machen.
 
- pChangesData
+ pchangesdata
 
-[in] Zeiger auf eine [QUERYCHANGESDATA-Strukturstruktur,](#LinkQUERYCHANGESDATA) die die Änderungen an einer Datei beschreibt.
+in Ein Zeiger auf eine [querychangesdata-Struktur](#LinkQUERYCHANGESDATA) Struktur, die die Änderungen an einer Datei beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Die IDE gibt einen entsprechenden Fehlercode zurück:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Setzen Sie die Verarbeitung fort.|
 |SCC_I_OPERATIONCANCELED|Beendet die Verarbeitung.|
-|SCC_E_xxx|Jeder geeignete SCC-Fehler sollte die Verarbeitung beenden.|
+|SCC_E_xxx|Jeder geeignete SCC-Fehler sollte die Verarbeitung verhindern.|
 
-## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a>QUERYCHANGESDATA-Struktur
- Die für jede Datei übergebene Struktur sieht wie folgt aus:
+## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a> Querychangesdata-Struktur
+ Die für jede Datei über gegebene Struktur sieht wie folgt aus:
 
 ```cpp
 struct QUERYCHANGESDATA_A
@@ -75,28 +75,28 @@ struct QUERYCHANGESDATA_W
 };
 ```
 
- dwSize Größe dieser Struktur (in Bytes).
+ die dwSize-Größe dieser Struktur (in Bytes).
 
- lpFileName Der ursprüngliche Dateiname für dieses Element.
+ lpFileName der ursprüngliche Dateiname für dieses Element.
 
  dwChangeType-Code, der den Status der Datei angibt:
 
 |Code|BESCHREIBUNG|
 |----------|-----------------|
-|`SCC_CHANGE_UNKNOWN`|Kann nicht sagen, was sich geändert hat.|
-|`SCC_CHANGE_UNCHANGED`|Für diese Datei wurden keine Namen geändert.|
-|`SCC_CHANGE_DIFFERENT`|Datei mit einer anderen Identität, aber derselbe Name ist in der Datenbank vorhanden.|
+|`SCC_CHANGE_UNKNOWN`|Kann nicht erkennen, was sich geändert hat.|
+|`SCC_CHANGE_UNCHANGED`|Keine Namensänderungen für diese Datei.|
+|`SCC_CHANGE_DIFFERENT`|Datei mit einer anderen Identität, aber der gleiche Name ist in der Datenbank vorhanden.|
 |`SCC_CHANGE_NONEXISTENT`|Die Datei ist weder in der Datenbank noch lokal vorhanden.|
-|`SCC_CHANGE_DATABASE_DELETED`|Datei in der Datenbank gelöscht.|
-|`SCC_CHANGE_LOCAL_DELETED`|Die Datei wurde lokal gelöscht, aber die Datei ist weiterhin in der Datenbank vorhanden. Wenn dies nicht `SCC_CHANGE_DATABASE_ADDED`bestimmt werden kann, kehren Sie zurück.|
-|`SCC_CHANGE_DATABASE_ADDED`|Datei, die der Datenbank hinzugefügt wurde, aber lokal nicht vorhanden ist.|
-|`SCC_CHANGE_LOCAL_ADDED`|Die Datei ist in der Datenbank nicht vorhanden und stellt eine neue lokale Datei vor.|
-|`SCC_CHANGE_RENAMED_TO`|Datei umbenannt oder in der `lpLatestName`Datenbank als verschoben.|
-|`SCC_CHANGE_RENAMED_FROM`|Datei umbenannt oder in der `lpLatestName`Datenbank von verschoben; Wenn dies zu teuer zum Nachverfolgen ist, geben Sie ein anderes Flag zurück, z. `SCC_CHANGE_DATABASE_ADDED`B. .|
+|`SCC_CHANGE_DATABASE_DELETED`|Die Datei wurde in der Datenbank gelöscht.|
+|`SCC_CHANGE_LOCAL_DELETED`|Die Datei wurde lokal gelöscht, die Datei ist jedoch noch in der Datenbank vorhanden. Wenn dies nicht bestimmt werden kann, geben Sie zurück `SCC_CHANGE_DATABASE_ADDED` .|
+|`SCC_CHANGE_DATABASE_ADDED`|Die Datei wurde der Datenbank hinzugefügt, ist jedoch nicht lokal vorhanden.|
+|`SCC_CHANGE_LOCAL_ADDED`|Die Datei ist nicht in der Datenbank vorhanden, und ist eine neue lokale Datei.|
+|`SCC_CHANGE_RENAMED_TO`|Die Datei wurde in die Datenbank umbenannt oder in verschoben `lpLatestName` .|
+|`SCC_CHANGE_RENAMED_FROM`|Die Datei wurde von in der Datenbank umbenannt oder in die Datenbank verschoben `lpLatestName` . wenn diese zu teuer ist, geben Sie ein anderes Flag zurück, z `SCC_CHANGE_DATABASE_ADDED` . b..|
 
- lpLatestName Der aktuelle Dateiname für dieses Element.
+ lplatestname der aktuelle Dateiname für dieses Element.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Von der IDE implementierte Rückruffunktionen](../extensibility/callback-functions-implemented-by-the-ide.md)
+## <a name="see-also"></a>Siehe auch
+- [Von der IDE implementierte Rückruf Funktionen](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [Fehlercodes](../extensibility/error-codes.md)

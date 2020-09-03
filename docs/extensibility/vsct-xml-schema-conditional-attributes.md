@@ -1,5 +1,5 @@
 ---
-title: VSCT XML-Schema Bedingte Attribute | Microsoft Docs
+title: Bedingte Attribute des vsct-XML-Schemas | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697943"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>BEDINGTE VSCT-XML-Schema-Schemaattribute
-Sie können bedingte Attribute auf alle Listen und Elemente anwenden. Logische Operatoren und Symbolerweiterungsausdrücke werden als true oder false ausgewertet. Wenn true, wird die zugeordnete Liste oder das zugeordnete Element in die resultierende Ausgabe einbezogen.
+# <a name="vsct-xml-schema-conditional-attributes"></a>Bedingte Attribute des vsct-XML-Schemas
+Sie können bedingte Attribute auf alle Listen und Elemente anwenden. Logische Operatoren und Symbol Erweiterungs Ausdrücke werden als true oder false ausgewertet. True gibt an, dass die zugeordnete Liste oder das zugehörige Element in der resultierenden Ausgabe enthalten ist.
 
- Sie können Tokenerweiterungen mit anderen Tokenerweiterungen oder Konstanten testen. Die `Defined()` Funktion testet, ob ein bestimmter Name definiert wurde, auch wenn er keinen Wert hat.
+ Sie können tokenerweiterungen für andere tokenerweiterungen oder Konstanten testen. Die-Funktion `Defined()` testet, ob ein bestimmter Name definiert wurde, auch wenn Sie über keinen Wert verfügt.
 
- Wenn ein Condition-Attribut auf eine Liste angewendet wird, wird die Bedingung auf jedes untergeordnete Element in der Liste angewendet. Wenn ein untergeordnetes Element selbst ein Condition-Attribut enthält, wird seine Bedingung durch einen AND-Vorgang mit dem übergeordneten Ausdruck kombiniert.
+ Wenn ein Condition-Attribut auf eine Liste angewendet wird, wird die Bedingung auf jedes untergeordnete Element in der Liste angewendet. Wenn ein untergeordnetes Element selbst ein Condition-Attribut enthält, wird die Bedingung mit dem übergeordneten Ausdruck durch eine and-Operation kombiniert.
 
- Die Werte 1, '1' und 'true' werden als wahr ausgewertet, und 0, '0' und 'false' werden als false ausgewertet.
+ Die Werte 1, "1" und "true" werden als "true" ausgewertet, und 0, "0" und "false" werden als "false" ausgewertet.
 
 ## <a name="operators"></a>Operatoren
  Verwenden Sie die folgenden Operatoren, um bedingte Ausdrücke auszuwerten.
@@ -35,7 +35,7 @@ Sie können bedingte Attribute auf alle Listen und Elemente anwenden. Logische O
 |(,)|Gruppierung|
 |!|Logisches Nicht|
 |\<, >, \<=, >=, ==, !=|Relation und Gleichheit|
-|and|Boolean|
+|und|Boolean|
 |oder|Boolean|
 
 ## <a name="examples"></a>Beispiele
@@ -70,4 +70,4 @@ and !Defined(DEBUG)">
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Befehlstabelle (. Vsct)-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio-Befehls Tabelle (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

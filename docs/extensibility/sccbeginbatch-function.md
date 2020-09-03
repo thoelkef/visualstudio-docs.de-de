@@ -1,5 +1,5 @@
 ---
-title: SccBeginBatch-Funktion | Microsoft Docs
+title: Sccbeginbatch-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701196"
 ---
-# <a name="sccbeginbatch-function"></a>SccBeginBatch-Funktion
-Diese Funktion startet eine Batchsequenz von Quellcodeverwaltungsvorgängen. Der [SccEndBatch](../extensibility/sccendbatch-function.md) wird aufgerufen, um den Batch zu beenden. Diese Batches sind möglicherweise nicht geschachtelt.
+# <a name="sccbeginbatch-function"></a>Sccbeginbatch-Funktion
+Diese Funktion startet eine Batch Sequenz von Quell Code Verwaltungs Vorgängen. [Sccendbatch](../extensibility/sccendbatch-function.md) wird aufgerufen, um den Batch zu beenden. Diese Batches dürfen nicht eingebettet werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,18 +32,18 @@ SCCRTN SccBeginBatch(void);
  Keine.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Quellcodeverwaltungs-Plug-In-Implementierung dieser Funktion wird voraussichtlich einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|BESCHREIBUNG|
 |-----------|-----------------|
-|SCC_OK|Batch von Vorgängen erfolgreich gestartet.|
-|SCC_E_UNKNOWNERROR|Unspezifischer Fehler.|
+|SCC_OK|Der Batch von Vorgängen wurde erfolgreich gestartet.|
+|SCC_E_UNKNOWNERROR|Nicht spezifischer Fehler.|
 
 ## <a name="remarks"></a>Bemerkungen
- Quellcodeverwaltungsbatches werden verwendet, um dieselben Vorgänge über mehrere Projekte oder mehrere Kontexte auszuführen. Batches können verwendet werden, um redundante Dialogfelder pro Projekt während eines Batchvorgangs aus der Benutzererfahrung zu entfernen. Die `SccBeginBatch` Funktion und der [SccEndBatch](../extensibility/sccendbatch-function.md) werden als Funktionspaar verwendet, um den Anfang und das Ende eines Vorgangs anzugeben. Sie können nicht verschachtelt werden. `SccBeginBatch`setzt ein Flag, das angibt, dass ein Stapelvorgang ausgeführt wird.
+ Quell Code Verwaltungs Batches werden verwendet, um dieselben Vorgänge für mehrere Projekte oder mehrere Kontexte auszuführen. Batches können verwendet werden, um redundante pro-Projekt-Dialogfelder aus der Benutzer Darstellung während eines Batch Vorgangs auszuschließen. Die `SccBeginBatch` -Funktion und [sccendbatch](../extensibility/sccendbatch-function.md) werden als Funktions paar verwendet, um den Anfang und das Ende eines Vorgangs anzugeben. Sie können nicht eingefügt werden. `SccBeginBatch` legt ein Flag fest, das angibt, dass ein Batch Vorgang ausgeführt wird.
 
- Während ein Stapelvorgang ausgeführt wird, sollte das Quellcodeverwaltungs-Plug-In dem Benutzer höchstens ein Dialogfeld für jede Frage vorsehen und die Antwort aus diesem Dialogfeld auf alle nachfolgenden Vorgänge anwenden.
+ Während ein Batch Vorgang wirksam ist, sollte das Quellcodeverwaltungs-Plug-in höchstens ein Dialogfeld für jede Frage für den Benutzer vorhanden sein und die Antwort von diesem Dialogfeld auf alle nachfolgenden Vorgänge anwenden.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Quellcodeverwaltungs-Plug-In-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+- [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)
