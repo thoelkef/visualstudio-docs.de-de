@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c885c0c983e6fafd69d55b3d68f8ed6e8ff2628c
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387264"
 ---
 # <a name="control-of-execution"></a>Steuern der Ausführung
@@ -41,11 +41,11 @@ Die Debug-Engine (de) sendet in der Regel eines der folgenden Ereignisse als let
   
 5. Wenn der Benutzer eine Funktion in Einzelschritten, überspringen oder aus einer Funktion auswählt, fordert die IDE die Debugsitzung auf, die-Methode des Programms aufzurufen `Step` , und übergibt dabei die Schritt Einheit (Anweisung, Anweisung oder Zeile) und den Typ des Schritts – d. h., ob die Funktion Einzel-oder Prozedur Schritt ausgeführt werden soll. Nachdem der Schritt ausgeführt wurde, sendet der de ein Step Complete-Ereignis an die Debugsitzung, bei der es sich um ein anhalteereignis handelt.  
   
-    Oder  
+    - oder -  
   
     Wenn der Benutzer die Ausführung über den aktuellen Anweisungs Zeiger fortsetzt, wird die Debugsitzung von der IDE aufgefordert, die **Execute** -Methode des Programms aufzurufen. Das Programm setzt die Ausführung fort, bis die nächste Anhaltebedingung auftritt.  
   
-    Oder  
+    - oder -  
   
     Wenn die Debugsitzung ein bestimmtes anhalteereignis ignorieren soll, ruft die Debugsitzung die **Continue** -Methode des Programms auf. Wenn das Programm eine Funktion in Einzelschritten, ein-oder Auschecken, wenn die Anhaltebedingung aufgetreten ist, wird der Schritt fortgesetzt.  
   

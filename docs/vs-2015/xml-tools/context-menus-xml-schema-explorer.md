@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5065ecb1dc0905d1aa593ee4aa62dddd2f62c3a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609622"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
@@ -26,10 +26,10 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 
 |Option|Beschreibung|
 |------------|-----------------|
-|**Wahrscheinlichste Stamm Elemente anzeigen**|Sucht nach allen globalen Elementen, auf die nicht von anderen globalen Elementen verwiesen wird, und hebt sie hervor.|
+|**Wahrscheinlichste Stammelemente anzeigen**|Sucht nach allen globalen Elementen, auf die nicht von anderen globalen Elementen verwiesen wird, und hebt sie hervor.|
 |**Globale Typen anzeigen**|Sucht nach allen globalen Typen im Schemaset und hebt sie hervor.|
 |**Globale Elemente anzeigen**|Sucht nach allen globalen Elementen im Schemaset und hebt sie hervor.|
-|**Eigenschaftenfenster**|Öffnet das **Eigenschaften** Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
+|**Eigenschaftenfenster**|Öffnet das Fenster **Eigenschaften** (sofern es noch nicht geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="node-type-namespace"></a>Knotentyp: Namespace
  In der folgenden Tabelle werden die Optionen beschrieben, die für Namespaceknoten verfügbar sind.
@@ -37,10 +37,10 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 |Option|Beschreibung|
 |------------|-----------------|
 |**Alle eingehenden Verweise anzeigen**|Sucht nach Dateien, die den ausgewählten Namespace importieren, und hebt sie hervor.|
-|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt für jede Datei im ausgewählten Namespace Folgendes hervor:<br /><br /> -Alle Namespaces, auf die in Import-Anweisungen ohne ein `schemaLocation`-Attribut verwiesen wird.<br />-Alle Dateien in anderen Namespaces als der ausgewählte, die im `schemaLocation`-Attribut in Import-und include-Anweisungen angegeben sind.|
+|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt für jede Datei im ausgewählten Namespace Folgendes hervor:<br /><br /> -   Alle Namespaces, auf die in den import-Anweisungen ohne ein `schemaLocation`-Attribut verwiesen wird.<br />-   Alle Dateien in Namespaces außer dem ausgewählten Namespace, die im `schemaLocation`-Attribut in import- und include-Anweisungen angegeben sind.|
 |**Globale Typen anzeigen**|Sucht nach allen globalen Typen im ausgewählten Namespace und hebt sie hervor.|
 |**Globale Elemente anzeigen**|Sucht nach allen globalen Elementen im ausgewählten Namespace und hebt sie hervor.|
-|**Eigenschaftenfenster**|Öffnet das **Eigenschaften** Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
+|**Eigenschaftenfenster**|Öffnet das Fenster **Eigenschaften** (sofern es noch nicht geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="node-type-file"></a>Knotentyp: Datei
  In der folgenden Tabelle werden die Optionen beschrieben, die für Dateiknoten verfügbar sind.
@@ -48,21 +48,21 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 |Option|Beschreibung|
 |------------|-----------------|
 |**Alle eingehenden Verweise anzeigen**|Sucht nach allen Dateien, in denen die ausgewählte Datei in den `schemaLocation`-Attributen der include- und import-Anweisungen angegeben ist, und hebt sie hervor.|
-|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt Folgendes hervor:<br /><br /> -Alle Namespaces, die in den Namespace Attributen aller Import-Anweisungen angegeben sind, die nicht über das `schemaLocation`-Attribut verfügen.<br />-Alle Dateien, die in den `schemaLocation` Attributen aller Import-und include-Anweisungen angegeben sind.|
+|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt Folgendes hervor:<br /><br /> -   Alle Namespaces, die in den Namespaceattributen aller import-Anweisungen angegeben werden, die nicht über das `schemaLocation`-Attribut verfügen.<br />-   Alle in den `schemaLocation`-Attributen aller import- und include-Anweisungen angegebenen Dateien.|
 |**Globale Typen anzeigen**|Sucht nach allen globalen Typen in dieser Datei und hebt sie hervor.|
 |**Globale Elemente anzeigen**|Sucht nach allen globalen Elementen in dieser Datei und hebt sie hervor.|
 |**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das im XML-Schema-Explorer ausgewählte Element wird auch im XML-Editor ausgewählt.|
-|**Eigenschaftenfenster**|Öffnet das **Eigenschaften** Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
+|**Eigenschaftenfenster**|Öffnet das Fenster **Eigenschaften** (sofern es noch nicht geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="all-global-node-types"></a>Alle globalen Knotentypen
  In der folgenden Tabelle werden die Optionen beschrieben, die für alle globalen Knoten verfügbar sind.
 
 |Option|Beschreibung|
 |------------|-----------------|
-|**In Diagramm Ansicht anzeigen**|Öffnet die Diagrammansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
-|**In Inhalts Modell Ansicht anzeigen**|Öffnet die Inhaltsmodellansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
+|**In Diagrammansicht anzeigen**|Öffnet die Diagrammansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
+|**In Inhaltsmodellansicht anzeigen**|Öffnet die Inhaltsmodellansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
 |**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das im XML-Schema-Explorer ausgewählte Element wird auch im XML-Editor ausgewählt.|
-|**Eigenschaftenfenster**|Öffnet das **Eigenschaften** Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
+|**Eigenschaftenfenster**|Öffnet das Fenster **Eigenschaften** (sofern es noch nicht geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="node-type-element"></a>Knotentyp: Element
  Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextmenü für Elementknoten die folgenden Optionen:
@@ -70,11 +70,11 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 |Option|Beschreibung|
 |------------|-----------------|
 |**Gehe zu Typdefinition**|Navigiert zur Typdefinition des ausgewählten Elements. Dies gilt, wenn der Typ, der für das Element verwendet wird, ein globaler Typ ist.|
-|**Zum ursprünglichen Element wechseln**|Navigiert bei Elementverweisen zur eigentlichen Definition des Elements.|
+|**Gehe zum ursprünglichen Element**|Navigiert bei Elementverweisen zur eigentlichen Definition des Elements.|
 |**Alle Verweise anzeigen**|Sucht für globale Elemente nach allen Verweisen auf das ausgewählte Element (Elemente mit `ref="selectedElement"`) und hebt sie hervor.|
-|**Mitglieder der Ersetzungs Gruppe anzeigen**|Bei Köpfen einer Ersetzungsgruppe werden alle Elemente gesucht und hervorgehoben, die Member der Ersetzungsgruppe sind, deren ausgewähltes Element ein Member ist. Dadurch werden direkte und indirekte Teilnehmer angezeigt.|
-|**Ersetzungs Gruppenköpfe anzeigen**|Bei globalen Elementen, die Member einer Ersetzungsgruppe sind, werden alle direkten und indirekten Köpfe für ein Element wie das folgende gesucht und hervorgehoben:<br /><br /> : Ein Ersetzungs Gruppenkopf, der für das ausgewählte Element angegeben ist.<br />: Ein Ersetzungs Gruppenkopf, der auf seinem Head-Element angegeben ist.|
-|**Generieren von Beispiel-XML**|Ist nur für globale Elemente verfügbar. Generiert eine Beispiel-XML-Datei für das globale Element.|
+|**Ersetzungsgruppenmitglieder anzeigen**|Bei Köpfen einer Ersetzungsgruppe werden alle Elemente gesucht und hervorgehoben, die Member der Ersetzungsgruppe sind, deren ausgewähltes Element ein Member ist. Dadurch werden direkte und indirekte Teilnehmer angezeigt.|
+|**Ersetzungsgruppenköpfe anzeigen**|Bei globalen Elementen, die Member einer Ersetzungsgruppe sind, werden alle direkten und indirekten Köpfe für ein Element wie das folgende gesucht und hervorgehoben:<br /><br /> -   Ein Ersetzungsgruppenkopf, der auf dem ausgewählten Element angegeben ist.<br />-   Ein Ersetzungsgruppenkopf, der auf seinem Headelement angegeben ist.|
+|**Beispiel-XML generieren**|Ist nur für globale Elemente verfügbar. Generiert eine Beispiel-XML-Datei für das globale Element.|
 
 ## <a name="node-type-global-types"></a>Knotentyp: Globale Typen
  Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextmenü für globale Typknoten die folgenden Optionen:
@@ -92,7 +92,7 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 |Option|Beschreibung|
 |------------|-----------------|
 |**Gehe zu Typdefinition**|Navigiert zur Typdefinition des ausgewählten Attributs, wenn der für das Attribut verwendete Typ ein globaler Typ ist.|
-|**Zum ursprünglichen Attribut wechseln**|Bei Attributverweisen wird zur tatsächlichen Definition des Attributs navigiert.|
+|**Gehe zum ursprünglichen Attribut**|Bei Attributverweisen wird zur tatsächlichen Definition des Attributs navigiert.|
 |**Alle Verweise anzeigen**|Sucht für globale Attribute nach allen Verweisen auf das ausgewählte Attribut (andere Attribute mit `ref="selectedAttribute"`) und hebt sie hervor.|
 
 ## <a name="node-type-attribute-group"></a>Knotentyp: Attributgruppe
@@ -101,7 +101,7 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 |Option|Beschreibung|
 |------------|-----------------|
 |**Gehe zu Definition**|Navigiert bei Verweisen zur eigentlichen Definition des Attributs.|
-|**Alle Elemente anzeigen**|Sucht nach allen Mitgliedern der Attributgruppe und hebt sie hervor.|
+|**Alle Mitglieder anzeigen**|Sucht nach allen Mitgliedern der Attributgruppe und hebt sie hervor.|
 |**Alle Verweise anzeigen**|Sucht nach allen Verweisen auf die ausgewählte Attributgruppe (Attributgruppen mit `ref="selectedAttributeGroup"`) und hebt sie hervor.|
 
 ## <a name="node-type-named-group"></a>Knotentyp: Benannte Gruppe
@@ -110,8 +110,8 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 |Option|Beschreibung|
 |------------|-----------------|
 |**Gehe zu Definition**|Navigiert bei Verweisen zur eigentlichen Definition des Attributs.|
-|**Alle Elemente anzeigen**|Sucht nach allen Mitgliedern der benannten Gruppe und hebt sie hervor.|
+|**Alle Mitglieder anzeigen**|Sucht nach allen Mitgliedern der benannten Gruppe und hebt sie hervor.|
 |**Alle Verweise anzeigen**|Sucht nach allen Verweisen auf die ausgewählte Gruppe (Gruppen mit `ref="selectedGroup"`) und hebt sie hervor.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) durch [Suchen des Schema Satzes](../xml-tools/searching-the-schema-set.md)

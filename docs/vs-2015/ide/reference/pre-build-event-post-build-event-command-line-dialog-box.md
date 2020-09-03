@@ -35,10 +35,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b42c219620a669a8fa27a7ce847dc571a4075288
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662165"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogfeld "Befehlszeile für Präbuildereignis"/"Befehlszeile für Postbuildereignis"
@@ -53,7 +53,7 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
  **Bearbeitungsfeld für die Befehlszeile** Enthält die Ereignisse, die entweder für Pre-Build oder Postbuild ausgeführt werden sollen.
 
 > [!NOTE]
-> Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu.  Zum Beispiel: `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
  **Makros** Erweitert das Bearbeitungsfeld, um eine Liste der Makros anzuzeigen, die in das Bearbeitungsfeld Befehlszeile eingefügt werden sollen.
 
@@ -86,5 +86,5 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
 |`$(TargetFileName)`|Der Dateiname der primären Ausgabedatei für den Build (als Basisname und Dateierweiterung definiert).|
 |`$(TargetExt)`|Die Dateierweiterung der primären Ausgabedatei für den Build. Sie umfasst den „.“ vor der Dateierweiterung.|
 
-## <a name="see-also"></a>Siehe auch
- Angeben von [benutzerdefinierten Buildereignissen auf der Seite "Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md) -Buildereignisse" [, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) Gewusst [wie: Visual Basic](../../ide/how-to-specify-build-events-visual-basic.md) [C#](../../ide/how-to-specify-build-events-csharp.md) angeben von Buildereignissen
+## <a name="see-also"></a>Weitere Informationen
+ Angeben von [benutzerdefinierten Buildereignissen auf der Seite Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md) -Buildereignisse [, Projekt-Designer (c#)](../../ide/reference/build-events-page-project-designer-csharp.md) Gewusst [wie: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) Gewusst [wie: Angeben von Buildereignissen](../../ide/how-to-specify-build-events-csharp.md)

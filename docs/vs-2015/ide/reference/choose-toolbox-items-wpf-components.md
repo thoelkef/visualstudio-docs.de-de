@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660915"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Toolboxelemente auswählen, WPF-Komponenten
@@ -62,11 +62,11 @@ Auf dieser Registerkarte des Dialogfelds **Toolboxelemente auswählen** wird ein
 
 - Es wird nicht ordnungsgemäß aktualisiert, wenn die Konfiguration der Projektmappe vom Debugmodus in den Releasemodus oder vom Releasemodus in den Debugmodus geändert wird. Der Grund hierfür ist, dass der Verweis nicht auf ein Projekt, sondern auf die Assembly auf der Festplatte verweist. Wenn das Steuerelement Teil der aktuellen Projektmappe ist und vom Debugmodus in den Releasemodus gewechselt wird, verweist das Projekt weiterhin auf die Debugversion des Steuerelements.
 
-  Wenn außerdem Entwurfszeit Metadaten auf das benutzerdefinierte Steuerelement angewendet werden und diese Metadaten angeben, dass das [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) auf `false` festgelegt ist, wird das Steuerelement nicht in der Toolbox angezeigt.
+  Wenn außerdem Entwurfszeit Metadaten auf das benutzerdefinierte Steuerelement angewendet werden und diese Metadaten angeben, dass das [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) auf festgelegt ist `false` , wird das Steuerelement nicht in der Toolbox angezeigt.
 
   Sie können direkt in der XAML-Ansicht auf die Steuerelemente verweisen, indem Sie den Namespace und die Assembly für das Steuerelement zuordnen. Weitere Informationen finden Sie unter [Vorgehensweise: Importieren eines Namespace in XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Dialogfeld „Toolboxelemente auswählen“ (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
 - [Werkzeugkasten](../../ide/reference/toolbox.md)

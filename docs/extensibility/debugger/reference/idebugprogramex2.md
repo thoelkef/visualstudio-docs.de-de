@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2 | Microsoft Docs
+title: IDebugProgramEx2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722330"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-Mit dieser Schnittstelle kann der Session-Debug-Manager (SDM) an ein Programm angefügt werden und den Programmknoten einem Programm zugeordnet werden.
+Diese Schnittstelle ermöglicht es dem sitzungsdebug-Manager (SDM), an ein Programm anzufügen und den Programmknoten zu erhalten, der einem Programm zugeordnet ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,26 +29,26 @@ IDebugProgramEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Ein benutzerdefinierter Portlieferant implementiert diese Schnittstelle auf demselben Objekt wie die [IDebugProgram2-Schnittstelle,](../../../extensibility/debugger/reference/idebugprogram2.md) um das SDM an ein Programm anfügen zu lassen und gleichzeitig dem Portlieferanten zu ermöglichen, alle an das Programm angehängten Sitzungen zu verfolgen. Der benutzerdefinierte Portlieferant kann diese Schnittstelle implementieren, wenn er dies auswählt.
+ Ein benutzerdefinierter Port Lieferant implementiert diese Schnittstelle auf demselben Objekt wie die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle, damit die SDM an ein Programm angefügt werden kann, während gleichzeitig der Port Lieferant alle an das Programm angefügten Sitzungen verfolgen kann. Der benutzerdefinierte portlieferant kann diese Schnittstelle implementieren, wenn er Sie auswählt.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Das SDM ruft [QueryInterface](/cpp/atl/queryinterface) auf einer `IDebugProgram2` Schnittstelle auf, um diese Schnittstelle zum Nachverfolgen von Sitzungen zu erhalten, die an Programme angeschlossen sind.
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Der SDM ruft [QueryInterface](/cpp/atl/queryinterface) für eine `IDebugProgram2` Schnittstelle auf, um diese Schnittstelle zu erhalten, um Sitzungen zu verfolgen, die an Programme angefügt sind.
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IDebugProgramEx2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProgramEx2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[Anfügen](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Fügt ein Programm an eine Sitzung an.|
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Ruft den Programmknoten ab, der einem Programm zugeordnet ist.|
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Ruft den einem Programm zugeordneten Programmknoten ab.|
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Schnittstelle ist privat zwischen dem SDM und dem Programm.
+ Diese Schnittstelle ist zwischen dem SDM und dem Programm privat.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: Portpriv.h
+## <a name="requirements"></a>Anforderungen
+ Header: portpriv. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

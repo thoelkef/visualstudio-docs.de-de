@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659121"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Vorgehensweise: Verwenden der Suche im Workflow-Designer
@@ -38,7 +38,7 @@ Um das Erstellen größerer, komplexerer Workflows zu erleichtern, können Eleme
 
 3. Der Suchbegriff wird im aktuellen Workflow gesucht. Im folgenden Screenshot wird der Anzeigenamen einer gesuchten Aktivität im Designer angezeigt.
 
-     ![Suchergebnis in der Workflow-Designer](../workflow-designer/media/designersearch.png "Designersearch")
+     ![Suchergebnisse im Workflow Designer](../workflow-designer/media/designersearch.png "Designersearch")
 
 ## <a name="find-in-files"></a>Suchen in Dateien
  Verwenden Sie "In Dateien suchen", um Zeichenfolgen in Workflowdateien, einschließlich XAML-Dateien, zu suchen.
@@ -49,4 +49,4 @@ Um das Erstellen größerer, komplexerer Workflows zu erleichtern, können Eleme
 
 2. Geben Sie das Suchelement in **das Textfeld Suchen nach** ein, und klicken Sie auf **alle** suchen.
 
-3. Das Suchergebnis wird in der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Ansicht "**Ergebnis suchen** " angezeigt. Durch Doppelklicken auf ein Ergebniselement navigieren Sie im Workflow-Designer zu der Aktivität, in der die Übereinstimmung enthalten ist.
+3. Das Suchergebnis wird in der Ansicht " [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Ergebnis suchen** " angezeigt. Durch Doppelklicken auf ein Ergebniselement navigieren Sie im Workflow-Designer zu der Aktivität, in der die Übereinstimmung enthalten ist.

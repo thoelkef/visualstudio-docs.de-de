@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71693012"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
@@ -65,7 +65,7 @@ Wert = (DWORD)
 - **1** = aktiviert (VSCEIP aktivieren)
 
 > [!CAUTION]
-> Durch eine falsche Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie wichtige Daten auf dem Computer sichern. Sie können auch die Startoption **Letzte als funktionierend bekannte Konfiguration** verwenden, wenn nach dem Übernehmen manueller Änderungen Probleme auftreten.
+> Durch eine fehlerhafte Bearbeitung der Registrierung können schwerwiegende Schäden am System verursacht werden. Bevor Sie Änderungen an der Registrierung vornehmen, sollten Sie alle wichtigen Computerdaten sichern. Sie können auch die Startoption **Letzte als funktionierend bekannte Konfiguration** verwenden, wenn nach dem Übernehmen manueller Änderungen Probleme auftreten.
 
 Weitere Informationen zu den durch VSCEIP gesammelten, verarbeiteten oder übertragenen Informationen finden Sie in der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
 

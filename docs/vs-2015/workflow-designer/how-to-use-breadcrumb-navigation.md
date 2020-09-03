@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659154"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Vorgehensweise: Verwenden der Brotkrümelnavigation
@@ -47,7 +47,7 @@ Es gibt drei Hauptmethoden, den Satz von Aktivitäten zu ändern, der in [!INCLU
 2. Nachdem Sie den Zustand "Alle erweitern" oder "Alle reduzieren" angewendet haben, können Sie auf die Schaltfläche **Wiederherstellen** klicken, um den zuvor auf die jeweilige Aktivität angewendeten Zustand zurückzusehen.
 
     > [!WARNING]
-    > Wenn eine Aktivität, z. b. <xref:System.Activities.Statements.Flowchart>, nicht mehr direkt erweitert ist, wird die der Schaltfläche **Alle erweitern** und **alle** reduzieren zugeordnete Funktionalität im **Flussdiagramm** -Designer deaktiviert. [!INCLUDE[crabout](../includes/crabout-md.md)] den **Flussdiagramm** -Designer finden Sie im Abschnitt [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) .
+    > Wenn eine Aktivität, z. b. <xref:System.Activities.Statements.Flowchart> , nicht mehr direkt erweitert ist, wird die der Schaltfläche **Alle erweitern** und **alle** reduzieren zugeordnete Funktionalität im **Flussdiagramm** -Designer deaktiviert. [!INCLUDE[crabout](../includes/crabout-md.md)] den **Flussdiagramm** -Designer finden Sie im Abschnitt [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > "Alle erweitern" wirkt sich auch auf die **Switch** -und **trycatch** -Aktivitäts Designer aus. Wenn Sie auf **Alle erweitern**klicken, werden alle switchfälle und alle try/catch/schließlich-Blöcke angezeigt. Wenn Sie auf " **Wiederherstellen** **" oder "** reduzieren" klicken, werden diese Designer auf ihren Standardzustand zurückversetzt, in dem Sie auf einen einzelnen Fall/Block klicken können, um den Inhalt

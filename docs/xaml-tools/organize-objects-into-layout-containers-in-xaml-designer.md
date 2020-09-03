@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459293"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
@@ -33,7 +33,7 @@ Die folgenden LayoutPanel-Elemente sind die meisten allgemein verwendeten, aber 
 
 Anordnen von Objekten in Zeilen und Spalten.
 
-![Layoutpanel „Grid“](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
+![Raster-Layoutpanel](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
@@ -43,7 +43,7 @@ Anordnen von Objekten in gleiche oder einheitliche Rasterbereiche. Dieser Bereic
 
 ![Layoutpanel „UniformGrid“](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Zeichenbereich
+### <a name="canvas"></a>Canvas
 
 Anordnen von Objekten auf jede gewünschte Weise. Wenn Benutzer Ihre Anwendung ausführen, haben diese Elemente feste Positionen auf dem Bildschirm.
 
@@ -73,7 +73,7 @@ Ordnet Elemente so an, dass sie an einer Kante des Panels bleiben (*andocken*).
 
 **Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).
 
-## <a name="layout-controls"></a>Layout-Steuerelemente
+## <a name="layout-controls"></a>Layoutsteuerelemente
 
 Sie können Ihre Objekte auch zu Layout-Steuerelementen hinzufügen. Sie verfügen über einen kleineren Funktionsumfang als Layoutbereiche, sind aber in manchen Szenarios nützlich.
 

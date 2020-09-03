@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ff5e620d4c53889afe17274364d6f92936025d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672741"
 ---
 # <a name="list-disassembly-command"></a>Befehl "Disassemblierung auflisten"
@@ -41,13 +41,13 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
  /EndAddress: `expression` [oder]/e: `expression` optional. Adresse, an der die Disassemblierung beendet wird.
 
- /Codebytes: `yes`&#124; `no` [oder]/bytes: `yes`&#124; `no` [oder]/b: `yes`&#124;`no` ist optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`sein.
+ /Codebytes: `yes`&#124;`no` [oder]/bytes: `yes`&#124;`no` [oder]/b: `yes`&#124;`no` optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`sein.
 
- /Source: `yes`&#124; `no` [oder]/s: `yes`&#124; `no` optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert ist `no`sein.
+ /Source: `yes`&#124;`no` [oder]/s: `yes`&#124;`no` optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert lautet `no`.
 
- /SymbolNames: `yes`&#124; `no` [oder]/names: `yes`&#124; `no` [oder]/n: `yes`&#124;`no` ist optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`sein.
+ /SymbolNames: `yes`&#124;`no` [oder]/names: `yes`&#124;`no` [oder]/n: `yes`&#124;`no` optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- [/linenumbers: `yes`&#124; `no`] Optionale. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.
+ [/linenumbers: `yes`&#124;`no` ] ist optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.
 
 ## <a name="example"></a>Beispiel
 
@@ -55,5 +55,5 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Liste der Befehle zum [Auflisten der Befehls](../../ide/reference/list-call-stack-command.md) [Liste Thread Befehl](../../ide/reference/list-threads-command.md) Befehlsfenster für [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548108"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
@@ -102,7 +102,7 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
 
 |Ordnername|Beschreibung|
 |-----------------|-----------------|
-|\\*\<language name>*|Der Sprachordner. Ersetzen Sie dies *\<language name>* durch den Namen der Sprache. Beispiel: **\Matlab**.|
+|\\*\<language name>*|Der Sprachordner. Ersetzen Sie *\<language name>* durch den Namen der Sprache. Beispiel: **\Matlab**.|
 |\Syntaxes|Der Grammatikordner. Enthält die JSON-Grammatikdateien für die Sprache, wie etwa **Matlab.json**.|
 |\Snippets|Der Codeausschnittordner. Enthält die Ausschnitte für die Sprache.|
 

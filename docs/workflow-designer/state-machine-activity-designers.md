@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876059"
 ---
 # <a name="state-machine-activity-designers"></a>Zustandsautomatenaktivitäts-Designer
@@ -31,7 +31,7 @@ Workflow-Designer enthält eine Reihe von Aktivitäts Designern, die Sie beim Er
 ## <a name="related-sections"></a>Verwandte Abschnitte
  Andere Typen von Aktivitätsdesignern werden in den folgenden Themen behandelt.
 
- [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)
+ [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 
  [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)
 
@@ -41,7 +41,7 @@ Workflow-Designer enthält eine Reihe von Aktivitäts Designern, die Sie beim Er
 
  [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
- [Primitive](../workflow-designer/primitives-activity-designers.md)
+ [Grundtypen](../workflow-designer/primitives-activity-designers.md)
 
  [Transaktion](../workflow-designer/transaction-activity-designers.md)
 

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85c07ad7995bc614df4b988bb17fa8977452b5d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673065"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
@@ -44,21 +44,21 @@ Im Kontext von .NET Data Tools in Visual Studio bezieht sich der Begriff *Datenq
 > [!NOTE]
 > Wenn Sie keine Daten Bindungsfunktionen, Datasets, Entity Framework LINQ to SQL, WCF oder SharePoint verwenden, gilt das Konzept einer "Datenquelle" nicht. Stellen Sie einfach eine direkte Verbindung mit der Datenbank her, indem Sie die SqlCommand-Objekte verwenden und direkt mit der Datenbank kommunizieren.
 
- Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigurieren von Daten** Quellen in einer Windows Forms oder Windows Presentation Foundation Anwendung. Erstellen Sie für Entity Framework zuerst die Entitäts Klassen, und starten Sie dann den Assistenten, indem Sie **Project**  > **neue Datenquelle hinzufügen** auswählen (Weitere Informationen finden Sie weiter unten in diesem Artikel).
+ Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigurieren von Daten** Quellen in einer Windows Forms oder Windows Presentation Foundation Anwendung. Erstellen Sie für Entity Framework zuerst die Entitäts Klassen, und starten Sie dann den Assistenten, indem Sie **Projekt**  >  **neue Datenquelle hinzufügen** auswählen (Weitere Informationen finden Sie weiter unten in diesem Artikel).
 
  ![Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png "Assistent zum Konfigurieren von Datenquellen")
 
- Nachdem Sie eine Datenquelle erstellt haben, wird Sie im Fenster **Datenquellen** Tool angezeigt (UMSCHALT + ALT + D oder **anzeigen**  > **anderen Windows**  > **Datenquelle**). Sie können eine Datenquelle aus dem **Datenquellen** Fenster auf eine Formular Entwurfs Oberfläche oder ein Steuerelement ziehen. Dies bewirkt, dass Code Bausteine generiert werden – Code, der die Daten anzeigt, die dem Benutzer aus dem Datenspeicher stammen. Die folgende Abbildung zeigt ein DataSet, das auf einem Windows Form abgelegt wurde. Wenn Sie für die Anwendung F5 ausgewählt haben, werden die Daten aus der zugrunde liegenden Datenbank in den Steuerelementen des Formulars angezeigt.
+ Nachdem Sie eine Datenquelle erstellt haben, wird Sie im Fenster **Datenquellen** Tool angezeigt (UMSCHALT + ALT + D **View**oder  >  **andere Windows**-  >  **Datenquelle**anzeigen). Sie können eine Datenquelle aus dem **Datenquellen** Fenster auf eine Formular Entwurfs Oberfläche oder ein Steuerelement ziehen. Dies bewirkt, dass Code Bausteine generiert werden – Code, der die Daten anzeigt, die dem Benutzer aus dem Datenspeicher stammen. Die folgende Abbildung zeigt ein DataSet, das auf einem Windows Form abgelegt wurde. Wenn Sie für die Anwendung F5 ausgewählt haben, werden die Daten aus der zugrunde liegenden Datenbank in den Steuerelementen des Formulars angezeigt.
 
  ![Datenquellen-Zieh Vorgang](../data-tools/media/raddata-data-source-drag-operation.png "Drag-Vorgang der raddata-Datenquelle")
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Datenquelle für eine Datenbank oder Datenbankdatei
 
-### <a name="dataset"></a>DataSet
- Um ein DataSet als Datenquelle zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** (**Projekt**  > **neue Datenquelle hinzufügen** ) aus, und wählen Sie den Daten Quellentyp **Datenbank** aus. Befolgen Sie die Anweisungen, um eine neue oder vorhandene Datenbankverbindung oder eine Datenbankdatei anzugeben.
+### <a name="dataset"></a>Dataset
+ Um ein DataSet als Datenquelle zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** (**Project**  >  **Add New Data** Source) aus, und wählen Sie den Daten Quellentyp **Datenbank** aus. Befolgen Sie die Anweisungen, um eine neue oder vorhandene Datenbankverbindung oder eine Datenbankdatei anzugeben.
 
 ### <a name="entity-classes"></a>Entitätsklassen
- Wenn Sie ein Entity Framework Modell als Datenquelle erstellen möchten, führen Sie zunächst den **Entity Data Model-Assistenten** aus, um die Entitäts Klassen (**Project**  > **Add New Item**  > **ADO.NET Entity Data Model**) zu erstellen.
+ Um ein Entity Framework Modell als Datenquelle zu erstellen, führen Sie zuerst den **Entity Data Model-Assistenten** aus, um die Entitäts Klassen (**Project**  >  **Add New Item**  >  **ADO.NET Entity Data Model**) zu erstellen.
 
  ![Neues Entity Framework Modell-Projekt Element](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata neues Entity Framework Modell-Projekt Element")
 
@@ -77,7 +77,7 @@ Im Kontext von .NET Data Tools in Visual Studio bezieht sich der Begriff *Datenq
 
  Sie können eine Datenquelle mit den folgenden Diensttypen erstellen:
 
-- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- WCF Data Services. Weitere Informationen finden Sie in der [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - WCF Data Services. Weitere Informationen finden Sie unter [Windows Communication Foundation Services und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).
 
@@ -97,10 +97,10 @@ Im Kontext von .NET Data Tools in Visual Studio bezieht sich der Begriff *Datenq
 > Möglicherweise müssen Sie das Projekt erstellen, das die Objekte enthält, bevor die Objekte in der Strukturansicht angezeigt werden.
 
 > [!NOTE]
-> Um die Datenbindung mittels Drag & Drop zu unterstützen, müssen Objekte, die die <xref:System.ComponentModel.ITypedList> oder <xref:System.ComponentModel.IListSource>-Schnittstelle implementieren, über einen Standardkonstruktor verfügen. Andernfalls kann Visual Studio das Datenquellen Objekt nicht instanziieren, und es wird ein Fehler angezeigt, wenn Sie das Element auf die Entwurfs Oberfläche ziehen.
+> Um die Datenbindung mittels Drag & Drop zu unterstützen, müssen Objekte, die die- <xref:System.ComponentModel.ITypedList> oder- <xref:System.ComponentModel.IListSource> Schnittstelle implementieren, über einen Standardkonstruktor verfügen. Andernfalls kann Visual Studio das Datenquellen Objekt nicht instanziieren, und es wird ein Fehler angezeigt, wenn Sie das Element auf die Entwurfs Oberfläche ziehen.
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Datenquelle für eine SharePoint-Liste
- Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] verfügbar. Daher ist das Erstellen einer SharePoint-Datenquelle mit dem Erstellen einer Datenquelle aus einem Dienst identisch. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen.  Hierfür ist das SharePoint SDK erforderlich.
+ Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über verfügbar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] . Daher ist das Erstellen einer SharePoint-Datenquelle mit dem Erstellen einer Datenquelle aus einem Dienst identisch. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen.  Hierfür ist das SharePoint SDK erforderlich.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

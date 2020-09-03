@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 075746353440462a66133cd83ed9158470d8de5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662200"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -40,7 +40,7 @@ devenv /out FileName
 ## <a name="arguments"></a>Argumente
  `FileName` ist erforderlich. Der Pfad und der Name der Datei, die beim Erstellen einer ausführbaren Datei Fehler empfangen soll.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Wenn ein nicht vorhandener Dateiname angegeben wird, wird die Datei automatisch erstellt. Wenn die Datei bereits vorhanden ist, werden die Ergebnisse an die vorhandenen Inhalte der Datei angefügt.
 
  Buildfehler in der Befehlszeile werden im **Befehlsfenster** und der Solution Builder-Ansicht des **Ausgabefensters** angezeigt. Diese Option erweist sich als nützlich, wenn Sie unbeaufsichtigte Builds ausführen und die Ergebnisse benötigen.
@@ -52,5 +52,5 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Siehe auch
- Debug- [Befehls Zeilenschalter](../../ide/reference/devenv-command-line-switches.md) [/Run ("abvenv. exe")](../../ide/reference/run-devenv-exe.md) [/Build (](../../ide/reference/build-devenv-exe.md) "abvenv. exe") [/Rebuild (](../../ide/reference/rebuild-devenv-exe.md) "") [("](../../ide/reference/deploy-devenv-exe.md) ")
+## <a name="see-also"></a>Weitere Informationen
+ Debug- [Befehls Zeilenschalter](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
