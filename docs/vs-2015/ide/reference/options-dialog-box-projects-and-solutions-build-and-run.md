@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b7eb229c5938165607b797205b94a318e3303b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655186"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen
@@ -29,7 +29,7 @@ ms.locfileid: "72655186"
 In diesem Dialogfeld können Sie die maximale Anzahl von Visual C++- oder Visual C#-Projekten, die gleichzeitig erstellt werden können, bestimmte standardmäßige Buildverhaltensweisen und einige Protokolleinstellungen angeben. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**, um das Dialogfeld **Optionen** zu öffnen. Sie können auf diese Optionen zugreifen, indem Sie **Projekte und Projektmappen** erweitern und dann **Erstellen und Ausführen** auswählen.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- **Maximale Anzahl paralleler Projektbuilds** Gibt die maximale Anzahl von visuellen C++ und visuellen C# Projekten an, die gleichzeitig erstellt werden können. Zur Optimierung des Buildvorgangs wird die maximale Anzahl paralleler Projektbuilds automatisch auf die Anzahl der CPUs des Computers festgelegt. Die maximale Anzahl beträgt 32.
+ **Maximale Anzahl paralleler Projektbuilds** Gibt die maximale Anzahl von Visual C++-und Visual c#-Projekten an, die gleichzeitig erstellt werden können. Zur Optimierung des Buildvorgangs wird die maximale Anzahl paralleler Projektbuilds automatisch auf die Anzahl der CPUs des Computers festgelegt. Der maximale Wert beträgt 32.
 
  **Nur Start Projekte und Abhängigkeiten zur Laufzeit erstellen** Wenn dieses Kontrollkästchen aktiviert ist, werden nur das Startprojekt und seine Abhängigkeiten erstellt, wenn Sie die F5-Taste drücken. Wählen Sie **Debuggen**, **starten** in der Menüleiste aus. oder wählen Sie **Erstellen**, **Erstellen** in der Menüleiste aus. Wenn dieses Kontrollkästchen deaktiviert ist und Sie F5 drücken bzw. **Debuggen** > **Start** oder **Erstellen** > **Erstellen** in der Menüleiste auswählen, werden alle Projekte, Abhängigkeiten und Projektmappendateien erstellt. Diese Option ist standardmäßig deaktiviert.
 
@@ -64,7 +64,7 @@ In diesem Dialogfeld können Sie die maximale Anzahl von Visual C++- oder Visual
  > [!NOTE]
 > Diese Option gilt nur für Visual C++-Projekte.
 
- Bestimmt, wie viele Informationen in die Buildprotokolldatei geschrieben werden, die sich unter „\\...\\*ProjectName*\Debug\\*ProjectName*.log.
+ Bestimmt, wie viele Informationen in die Buildprotokollierung geschrieben werden, die sich unter \\ ... \\ *ProjectName*\Debug \\ *ProjectName*. log.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)

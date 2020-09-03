@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655136"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Gewusst wie: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mithilfe der Funktion zum Nachverfolgen von Arbeitsaufgaben können Sie das Arbeits Element in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] protokollieren. Um dieses Feature verwenden zu können, muss das Projekt in [!INCLUDE[esprfound](../includes/esprfound-md.md)] Teil eines Team Projekts sein.
+Mithilfe der Funktion zum Nachverfolgen von Arbeitsaufgaben können Sie das Arbeits Element in protokollieren [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Um dieses Feature verwenden zu können, muss das Projekt Teil des Team Projekts in sein [!INCLUDE[esprfound](../includes/esprfound-md.md)] .
 
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>So erstellen Sie eine Arbeitsaufgabe für einen Fehler in verwaltetem Code
 

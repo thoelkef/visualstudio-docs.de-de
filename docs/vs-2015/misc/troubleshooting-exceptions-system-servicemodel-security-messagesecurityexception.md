@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b8ce3f16c1439d62cfa1e2cff344b70e6724c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655355"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException
-Eine <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird ausgelöst, wenn [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] ermittelt, dass eine Nachricht nicht ordnungsgemäß gesichert oder manipuliert wurde. Der Fehler tritt am häufigsten auf, wenn alle folgenden Bedingungen zutreffen:
+Eine- <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird ausgelöst [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] , wenn bestimmt, dass eine Nachricht nicht ordnungsgemäß gesichert oder manipuliert wurde. Der Fehler tritt am häufigsten auf, wenn alle folgenden Bedingungen zutreffen:
 
 - Sie verwenden einen WCF-Dienstverweis über eine Remoteverbindung, z. B. eine Remotedesktopverbindung oder Terminal Services, um mit einem WCF-Dienst (.svc) in einem Website- oder Webanwendungsprojekt zu kommunizieren.
 
@@ -29,7 +29,7 @@ Eine <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird 
 - Anforderungen an localhost auf der Remotewebsite werden vom [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server behandelt.
 
 ## <a name="associated-tips"></a>Tipps
- **Beheben Sie NTLM-Authentifizierungs Probleme bei der Verwendung der ASP.NET-Development Server.**
+ **Beheben Sie NTLM-Authentifizierungsprobleme beim Verwenden des ASP.NET Development Servers.**
 Für den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server ist normalerweise Windows NT Challenge/Antwortsicherheit (NTLM) ausgeschaltet, sodass anonymer Zugriff erlaubt ist. Beim Ausführen einer Terminal Services-Sitzung oder bei Verwendung einer Remoteverbindung ist die NTLM-Sicherheit jedoch standardmäßig aktiviert. Wenn NTLM aktiviert ist, werden alle localhost-Anforderungen anhand der Anmeldeinformationen des Benutzers oder Prozesses überprüft, der den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server gestartet hat. Dies verringert Sicherheitsrisiken. Die WCF führt jedoch auch eine eigene Authentifizierung durch und lässt nicht zu, dass WCF-Dienste unter einem anderen Konto als einem Administratorkonto genutzt werden.
 
  Wenn ein Remotebenutzer die Website unter Verwendung des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Servers ausführt und zusätzlich mit einem Webdienst oder WCF-Dienst arbeitet, können Sie entweder eine benutzerdefinierte Dienstbindung erstellen oder die NTLM-Sicherheit deaktivieren.
@@ -84,5 +84,5 @@ Für den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server ist
 
 3. Klicken Sie auf **OK**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:System.ServiceModel.Security.MessageSecurityException> [Verwenden des Ausnahmen-Assistenten](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

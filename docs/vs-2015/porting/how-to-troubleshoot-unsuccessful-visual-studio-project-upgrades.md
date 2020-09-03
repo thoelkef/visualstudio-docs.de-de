@@ -19,10 +19,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844451"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Gewusst wie: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
@@ -56,5 +56,5 @@ Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früher
 
    Wenn das Projekt in der aktualisierten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version ausgeführt werden soll, müssen Sie die Verweise auf das Projekt und auch sämtliche `Imports`-Anweisungen oder `Using`-Anweisungen aktualisieren, die die Verweise aufrufen. Wenn das Projekt in der IDE geladen wird, können Sie die Verweise mithilfe des **Projektmappen-Explorers** oder des Dialogfelds **Verweis-Manager** aktualisieren.
 
-## <a name="see-also"></a>Siehe auch
- [/Upgrade ("Debug-v. exe")](../ide/reference/upgrade-devenv-exe.md) wird in " [ASP.NET 4" umgerechnet](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+## <a name="see-also"></a>Weitere Informationen
+ [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [in ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

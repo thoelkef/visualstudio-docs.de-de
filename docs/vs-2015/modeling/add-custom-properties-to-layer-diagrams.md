@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655285"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen
@@ -24,10 +24,10 @@ ms.locfileid: "72655285"
 Wenn Sie Erweiterungscode für Ebenendiagramme schreiben, können Sie Werte mit jedem Element auf einem Ebenendiagramm speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Diese Eigenschaften können auch im **Eigenschaften** Fenster angezeigt werden, damit Sie von Benutzern angezeigt und bearbeitet werden können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Validierungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.
 
 ## <a name="properties-not-visible-to-the-user"></a>Für den Benutzer nicht sichtbare Eigenschaften
- Wenn durch den Code nur Werte an ein Element in einem Ebenendiagramm angefügt werden sollen, müssen Sie keine MEF-Komponente definieren. Es ist ein Wörterbuch mit dem Namen `Properties` in [ilayerelement](/previous-versions/ff644511(v=vs.140))vorhanden. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Ebenendiagramms gespeichert. Weitere Informationen finden Sie unter [Navigieren in und Aktualisieren von ebenenmodellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
+ Wenn durch den Code nur Werte an ein Element in einem Ebenendiagramm angefügt werden sollen, müssen Sie keine MEF-Komponente definieren. Es ist ein Wörterbuch `Properties` mit dem Namen in [ilayerelement](/previous-versions/ff644511(v=vs.140))vorhanden. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Ebenendiagramms gespeichert. Weitere Informationen finden Sie unter [Navigieren in und Aktualisieren von ebenenmodellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 ## <a name="properties-that-the-user-can-edit"></a>Eigenschaften, die der Benutzer bearbeiten kann
- **Anfängliche Vorbereitung**
+ **Erste Vorbereitung**
 
 > [!IMPORTANT]
 > Um Eigenschaften anzuzeigen, müssen Sie die folgende Änderung auf jedem Computer vornehmen, in dem Ebeneneigenschaften sichtbar sein sollen.
@@ -42,7 +42,7 @@ Wenn Sie Erweiterungscode für Ebenendiagramme schreiben, können Sie Werte mit 
 >
 >  3. Öffnen Sie im **Visual Studio-Tools** Abschnitt des Visual Studio-Anwendungs Startmenüs **Developer-Eingabeaufforderung**.
 >
->     Geben Sie Folgendes ein:
+>     Eingeben:
 >
 >     `devenv /rootSuffix /updateConfiguration`
 >
@@ -50,7 +50,7 @@ Wenn Sie Erweiterungscode für Ebenendiagramme schreiben, können Sie Werte mit 
 >
 >  4. Starten Sie Visual Studio neu.
 
- **Stellen Sie sicher, dass Ihr Code in einem VSIX-Projekt ist.**
+ **Stellen Sie sicher, dass sich der Code in einem VSIX-Projekt befindet**
 
  Wenn die Eigenschaft Teil eines Befehls-, Gesten- oder Validierungsprojekts ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Gesten zu ebenendiagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen einer benutzerdefinierten Architektur Validierung zu ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -69,9 +69,9 @@ public class MyProperty
 
  Sie können Eigenschaften für [ilayerelement](/previous-versions/ff644511(v=vs.140)) oder eine der abgeleiteten Klassen definieren, die Folgendes umfassen:
 
-- `ILayerModel` - das Modell
+- `ILayerModel` -das Modell
 
-- `ILayer` - jede Ebene
+- `ILayer` -jede Ebene
 
 - `ILayerDependencyLink` - die Links zwischen Ebenen
 
@@ -165,5 +165,5 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md)

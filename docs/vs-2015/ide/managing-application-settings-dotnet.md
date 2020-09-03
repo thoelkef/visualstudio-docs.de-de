@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293872"
 ---
 # <a name="managing-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
@@ -30,7 +30,7 @@ Durch Anwendungseinstellungen werden die dynamischen Eigenschaften ersetzt, die 
 
 Jede Anwendungseinstellung muss einen eindeutigen Namen haben. Dieser Name kann aus einer beliebigen Kombination aus Buchstaben, Zahlen und Unterstrichen bestehen. Er darf jedoch nicht mit einer Zahl beginnen, und er darf keine Leerzeichen enthalten. Der Name kann über die `Name` -Eigenschaft geändert werden.
 
-Anwendungseinstellungen können als beliebiger Datentyp gespeichert werden, der in XML serialisierbar ist oder über einen `TypeConverter` mit einer Implementierung von `ToString`/`FromString`verfügt. Die geläufigsten Typen lauten `String`, `Integer`und `Boolean`. Sie können Werte jedoch auch als <xref:System.Drawing.Color>, <xref:System.Object>oder als Verbindungszeichenfolge speichern.
+Anwendungseinstellungen können als beliebiger Datentyp gespeichert werden, der in XML serialisierbar ist oder über einen `TypeConverter` mit einer Implementierung von `ToString`/`FromString` verfügt. Die geläufigsten Typen lauten `String`, `Integer`und `Boolean`. Sie können Werte jedoch auch als <xref:System.Drawing.Color>, <xref:System.Object>oder als Verbindungszeichenfolge speichern.
 
 Anwendungseinstellungen enthalten auch einen Wert. Der Wert wird über die Eigenschaft **Wert** festgelegt und muss mit dem Datentyp der Einstellung übereinstimmen.
 
@@ -70,11 +70,11 @@ Sie können dem Projekt zur einfachen Verwaltung von Einstellungsgruppen benutze
 
 Beispielsweise können Sie dem Projekt eine Datei namens SpecialSettings.settings hinzufügen. Die `SpecialSettings` -Klasse wird zwar im `My` -Namespace nicht verfügbar gemacht, mit **Code anzeigen** kann jedoch die benutzerdefinierte Einstellungsdatei, die `Partial Class SpecialSettings`enthält, gelesen werden.
 
-Zunächst sucht der Einstellungs-Designer nach der vom Projektsystem erstellten Datei Settings.settings. Dies ist die Standarddatei, die im Projekt-Designer auf der Registerkarte **Einstellungen** angezeigt wird. Settings.settings befindet sich bei [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] -Projekten im Ordner My Project und bei [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Projekten im Ordner Properties. Der Projekt-Designer sucht dann nach anderen Einstellungsdateien im Stammordner des Projekts. Deshalb sollten Sie die benutzerdefinierte Einstellungsdatei dort ablegen. Wenn Sie die Einstellungsdatei einem anderen Projektordner hinzufügen, findet der Projekt-Designer sie nicht.
+Der Einstellungs-Designer sucht zuerst nach der Settings. Settings-Datei, die vom Projekt System erstellt wird. Dies ist die Standarddatei, die im Projekt-Designer auf der Registerkarte " **Einstellungen** " angezeigt wird. Settings. Settings befindet sich im Ordner "My Project" für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] -Projekte und im Ordner "Properties" für- [!INCLUDE[csprcs](../includes/csprcs-md.md)] Projekte. Der Projekt-Designer sucht dann nach anderen Einstellungsdateien im Stammordner des Projekts. Deshalb sollten Sie die benutzerdefinierte Einstellungsdatei dort ablegen. Wenn Sie die Einstellungsdatei einem anderen Projektordner hinzufügen, findet der Projekt-Designer sie nicht.
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Ändern von Anwendungseinstellungen zur Laufzeit nach entsprechendem Zugriff in Visual Basic
 
-In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] -Projekten können Sie mit dem `My.Settings` -Objekt zur Laufzeit auf Anwendungseinstellungen zugreifen. Klicken Sie auf der Seite **Einstellungen** auf die Schaltfläche **Code anzeigen** , um die Datei Settings.vb anzuzeigen. Settings.vb definiert die `Settings` -Klasse, sodass Sie die folgenden Ereignisse für die Settings-Klasse handhaben können: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>und <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Beachten Sie, dass die `Settings` -Klasse in der Datei Settings.vb eine partielle Klasse ist, die nur den im Besitz des Benutzers befindlichen Code anzeigt und nicht die gesamte generierte Klasse. Weitere Informationen über den Zugriff auf Anwendungseinstellungen über das `My.Settings` -Objekt finden Sie unter [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)verfügt.
+In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] -Projekten können Sie mit dem `My.Settings` -Objekt zur Laufzeit auf Anwendungseinstellungen zugreifen. Klicken Sie auf der Seite **Einstellungen** auf die Schaltfläche **Code anzeigen**, um die Datei Settings.vb anzuzeigen. Settings.vb definiert die `Settings` -Klasse, sodass Sie die folgenden Ereignisse für die Settings-Klasse handhaben können: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>und <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Beachten Sie, dass die `Settings` -Klasse in der Datei Settings.vb eine partielle Klasse ist, die nur den im Besitz des Benutzers befindlichen Code anzeigt und nicht die gesamte generierte Klasse. Weitere Informationen über den Zugriff auf Anwendungseinstellungen über das `My.Settings` -Objekt finden Sie unter [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)verfügt.
 
 Die Werte aller benutzerspezifischen Einstellungen, die der Benutzer zur Laufzeit ändert (z. B. die Position eines Formulars), werden in der Datei user.config gespeichert. Beachten Sie, dass die Standardwerte weiterhin in app.config gespeichert sind.
 
@@ -86,7 +86,7 @@ Es wird dringend empfohlen, dass Sie mit dem `My.Settings` -Objekt und der stand
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Ändern von Anwendungseinstellungen zur Laufzeit nach entsprechendem Zugriff in Visual C#
 <!-- markdownlint-enable MD003 MD020 -->
 
-In anderen Programmiersprachen als [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], z. B. [!INCLUDE[csprcs](../includes/csprcs-md.md)], müssen Sie direkt auf die `Settings` -Klasse zugreifen. Dies ist im folgenden [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Beispiel veranschaulicht.
+In anderen Programmiersprachen als [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], z. B. [!INCLUDE[csprcs](../includes/csprcs-md.md)], müssen Sie direkt auf die `Settings`-Klasse zugreifen. Dies ist im folgenden [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Beispiel veranschaulicht.
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
@@ -98,8 +98,8 @@ Sie müssen die `Save` -Methode dieser Wrapperklasse explizit aufrufen, damit di
 Properties.Settings.Default.Save();
 ```
 
-Allgemeine Informationen über das Zugreifen auf Anwendungseinstellungen über die Klasse `Settings` finden Sie unter [Übersicht über Anwendungseinstellungen](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Informationen über das Durchlaufen der Einstellungen finden Sie in diesem [Forumsbeitrag](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Allgemeine Informationen über das Zugreifen auf Anwendungseinstellungen über die `Settings` -Klasse finden Sie unter [Application Settings Overview](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)verfügt. Informationen über das Durchlaufen der Einstellungen finden Sie in diesem [Forumsbeitrag](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf Anwendungseinstellungen](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
