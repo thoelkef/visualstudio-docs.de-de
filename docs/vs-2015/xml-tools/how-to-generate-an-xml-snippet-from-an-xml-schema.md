@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e3d90185180cac5f526594650bde0a8f380c7668
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666521"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema (XML Schema Definition Language) zu generieren. Wenn Sie beispielsweise eine XML-Datei schreiben, können Sie, wenn der Cursor neben dem Elementnamen platziert ist, die TAB-TASTE drücken, um das Element mit XML-Daten aufzufüllen, die aus den Schemainformationen für das betreffende Element generiert werden.
@@ -51,13 +51,13 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
 
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>So erstellen Sie eine neue XML-Datei und ordnen ihr ein XML-Schema zu
 
-1. Zeigen Sie im Menü **Datei** auf **neu**, und klicken Sie auf **Datei**.
+1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie auf **Datei**.
 
-2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Datei** und dann **Öffnen**aus.
+2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Datei** aus, und klicken Sie auf **Öffnen**.
 
      Im Editor wird eine neue Datei geöffnet. Die Datei enthält eine XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Schemas** auf die Schaltfläche zum Durchsuchen ( **...** ).
+3. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Schemas** auf die Schaltfläche zum Durchsuchen (**...**).
 
      Das Dialogfeld **XSD-Schemas** wird angezeigt.
 
@@ -65,7 +65,7 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
 
      Das Dialogfeld **XSD-Schema öffnen** wird angezeigt.
 
-5. Wählen Sie die Schema Datei, und klicken Sie auf **Öffnen**.
+5. Wählen Sie die Schemadatei aus, und klicken Sie auf **Öffnen**.
 
 6. Klicken Sie auf **OK**.
 
@@ -77,13 +77,13 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
 
 2. In der Memberliste werden die möglichen Elemente angezeigt:
 
-     **!--** , um einen Kommentar hinzuzufügen.
+     **!--** zum Hinzufügen eines Kommentars.
 
-     **! DOCTYPE** zum Hinzufügen eines Dokument Typs.
+     **!DOCTYPE** zum Hinzufügen eines Dokumenttyps.
 
      **?** zum Hinzufügen einer Verarbeitungsanweisung.
 
-     **Wenden** Sie sich an, um das Stamm Element hinzuzufügen.
+     **Contact** zum Hinzufügen des Stammelements.
 
 3. Wählen Sie in der Mitgliederliste **Kontakt** aus, und drücken Sie die EINGABETASTE
 
@@ -140,7 +140,7 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
 ```
 
 ### <a name="output"></a>Output
- Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Elemente, die als `bold` gekennzeichnet sind, legen bearbeitbare Felder im XML-Ausschnitt fest.
+ Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Als `bold` gekennzeichnete Elemente legen Felder im XML-Ausschnitt fest, die bearbeitet werden können.
 
 ```
 <Contact>
@@ -153,5 +153,5 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
 </Contact>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Ausschnitte](../xml-tools/xml-snippets.md) Gewusst [wie: Verwenden von XML-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md)

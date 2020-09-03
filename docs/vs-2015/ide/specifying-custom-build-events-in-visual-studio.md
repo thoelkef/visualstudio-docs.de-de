@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667126"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Angeben von benutzerdefinierten Build-Ereignissen in Visual Studio
@@ -55,5 +55,5 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
     > [!NOTE]
     > `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Kompilieren und](../ide/compiling-and-building-in-visual-studio.md) Erstellen des Dialog Felds " [Präbuildereignis/Postbuildereignis-Befehlszeile](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) " [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md) Exemplarische Vorgehensweise [: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)

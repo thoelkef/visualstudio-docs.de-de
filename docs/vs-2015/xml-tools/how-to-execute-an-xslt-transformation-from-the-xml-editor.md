@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b305d88779603b374e5f95842d7a5271a657268
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666533"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Gewusst wie: Ausführen einer XSLT-Transformation im XML-Editor
@@ -21,9 +21,9 @@ ms.locfileid: "72666533"
 
 Mit dem XML-Editor können Sie einem XML-Dokument ein XSLT-Stylesheet zuordnen, die Transformation ausführen und die Ausgabe anzeigen. Die aus der XSLT-Transformation resultierende Ausgabe wird in einem neuen Dokumentfenster angezeigt.
 
- Die **Output** -Eigenschaft gibt den Dateinamen für die Ausgabe an. Wenn die **Output** -Eigenschaft leer ist, wird ein Dateiname in Ihrem temporären Verzeichnis generiert. Die Dateierweiterung basiert auf dem `xsl:output`-Element im Stylesheet and kann XML, TXT oder HTM sein.
+ Die **Output**-Eigenschaft gibt den Dateinamen für die Ausgabe an. Wenn die **Output**-Eigenschaft leer ist, wird der Dateiname in einem temporären Verzeichnis generiert. Die Dateierweiterung basiert auf dem `xsl:output`-Element im Stylesheet and kann XML, TXT oder HTM sein.
 
- Wenn die **Output** -Eigenschaft einen Dateinamen mit der Erweiterung. htm oder. html angibt, wird die XSLT-Ausgabe mit [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer in der Vorschau angezeigt. Bei allen anderen Dateierweiterungen wird der von [!INCLUDE[msCoName](../includes/msconame-md.md)]-Visual Studio ausgewählte Standard-Editor verwendet. Bei Dateien mit der Erweiterung XML wird beispielsweise von Visual Studio der XML-Editor verwendet.
+ Wenn die **Output** -Eigenschaft einen Dateinamen mit der Erweiterung. htm oder. html angibt, wird die XSLT-Ausgabe in der Vorschau mithilfe von [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer angezeigt. Bei allen anderen Dateierweiterungen wird der von [!INCLUDE[msCoName](../includes/msconame-md.md)]-Visual Studio ausgewählte Standard-Editor verwendet. Bei Dateien mit der Erweiterung XML wird beispielsweise von Visual Studio der XML-Editor verwendet.
 
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>So führen Sie eine XSLT-Transformation in einem XML-Dokument aus
 
@@ -35,7 +35,7 @@ Mit dem XML-Editor können Sie einem XML-Dokument ein XSLT-Stylesheet zuordnen, 
 
          - oder -
 
-    - Fügen Sie das XSLT-Stylesheet mithilfe des Fensters **Eigenschaften** hinzu. Klicken Sie im **Fenster Dokumenteigenschaften**auf die Schaltfläche **Durchsuchen** für das **Stylesheet** -Feld, wählen Sie das XSLT-Stylesheet aus, und klicken Sie auf **Öffnen**.
+    - Fügen Sie mithilfe des Fenster **Eigenschaften** das XSLT-Stylesheet hinzu. Klicken Sie im **Fenster Dokumenteigenschaften**auf die Schaltfläche **Durchsuchen** für das **Stylesheet** -Feld, wählen Sie das XSLT-Stylesheet aus, und klicken Sie auf **Öffnen**.
 
 3. Klicken Sie auf der Symbolleiste des XML- **Editors** auf die Schaltfläche **ShowXSL Output** .
 
@@ -48,7 +48,7 @@ Mit dem XML-Editor können Sie einem XML-Dokument ein XSLT-Stylesheet zuordnen, 
 
 1. Öffnen Sie ein XSLT-Stylesheet im XML-Editor.
 
-2. Geben Sie im Fenster "Dokument **Eigenschaften** " im **Eingabe** Feld ein XML-Dokument an.
+2. Geben Sie im Fenster **Eigenschaften** des Dokuments im Feld **Eingabe** ein XML-Dokument an.
 
     > [!NOTE]
     > Das XML-Dokument ist das für die Transformation verwendete Eingabedokument. Wenn ein Dokument beim Starten der XSLT-Transformation nicht angegeben wird, wird das Dialogfeld **Datei öffnen** angezeigt, und Sie können ein Dokument zu diesem Zeitpunkt angeben.
@@ -65,5 +65,5 @@ Mit dem XML-Editor können Sie einem XML-Dokument ein XSLT-Stylesheet zuordnen, 
 
      Die resultierende Ausgabe aus der XSLT-Transformation wird in einem neuen Dokument Fenster angezeigt, und der im Ausgabefenster verwendete Editor hängt von der Dateierweiterung der **Ausgabe** Dokument Eigenschaft ab.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Editor](../xml-tools/xml-editor.md)

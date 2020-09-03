@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumAllLocals | Microsoft Docs
+title: 'Idebugmethodfield:: enumalllocals | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727341"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-Erstellt einen Enumerator für alle lokalen Variablen der Methode, einschließlich der von einem Compiler intern generierten Variablen.
+Erstellt einen Enumerator für alle lokalen Variablen der Methode, einschließlich derjenigen, die intern von einem Compiler generiert werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,18 +43,18 @@ int EnumAllLocals(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Ein [IDebugAddress-Objekt,](../../../extensibility/debugger/reference/idebugaddress.md) das eine Debugadresse innerhalb der Methode darstellt und auf einen bestimmten Bereich oder Kontext verweist.
+in Ein [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekt, das eine debugadresse innerhalb der Methode darstellt, die auf einen bestimmten Bereich oder Kontext verweist.
 
 `ppLocals`\
-[out] Gibt ein [IEnumDebugFields-Objekt](../../../extensibility/debugger/reference/ienumdebugfields.md) zurück, das die Liste aller Locals im angegebenen Bereich darstellt. Andernfalls wird ein NULL-Wert zurückgegeben, der keine Locals angibt.
+vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste aller lokalen Variablen im angegebenen Bereich darstellt. Andernfalls wird ein NULL-Wert zurückgegeben, der keine lokalen Variablen angibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, gibt S_OK oder S_FALSE zurück, wenn keine Locals vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben, oder es wird S_FALSE zurückgegeben, wenn keine lokalen vorhanden sind Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Nur die innerhalb des Blocks definierten Variablen, die die angegebene Debugadresse enthalten, werden aufgezählt. Diese Methode enthält alle vom Compiler generierten Locals. Wenn nur die Inseerstellungen benötigt werden, die explizit in der Quelle definiert sind, rufen Sie die [EnumLocals-Methode](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) auf.
+ Nur die Variablen, die in dem Block definiert sind, der die angegebene debugadresse enthält, werden aufgezählt. Diese Methode schließt alle vom Compiler generierten lokalen Variablen ein. Wenn nur die lokalen Variablen in der Quelle explizit definiert sind, müssen Sie die [enumlocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) -Methode aufzurufen.
 
- Eine Methode kann mehrere Bereichskontexte oder Blöcke enthalten.
+ Eine Methode kann mehrere Bereichs bezogene Kontexte oder Blöcke enthalten.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

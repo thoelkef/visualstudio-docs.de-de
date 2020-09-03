@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 69ebcc264eb3caa68fa0dfd2998613a7c9037b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669772"
 ---
 # <a name="domain-property-value-change-handlers"></a>Handler für Wertänderungen von Domäneneigenschaften
@@ -26,7 +26,7 @@ Wenn in einer domänenspezifischen Sprache von [!INCLUDE[vsprvs](../includes/vsp
 ## <a name="overriding-the-property-handler-methods"></a>Überschreiben der Eigenschaftenhandlermethoden
  Jede Domäneneigenschaft Ihrer domänenspezifischen Sprache wird von einer Klasse verarbeitet, die in der übergeordneten Domänenklasse geschachtelt ist. Der Name folgt dem Format *propertyName*propertyhandler. Sie können diese eigenschaftenhandlerklasse in der Datei **dsl\generated code\domainclasses.cs**überprüfen. In der Klasse wird `OnValueChanging()` unmittelbar vor der Wertänderung aufgerufen, und `OnValueChanged()` wird unmittelbar nach der Wertänderung aufgerufen.
 
- Angenommen, Sie verfügen über eine Domänen Klasse mit dem Namen `Comment`, die eine Zeichen folgen-Domänen Eigenschaft namens `Text` und eine ganzzahlige Eigenschaft mit dem Namen `TextLengthCount` aufweist Damit `TextLengthCount` immer die Länge der `Text` Zeichenfolge enthält, können Sie den folgenden Code in eine separate Datei im DSL-Projekt schreiben:
+ Angenommen, Sie verfügen über eine Domänen Klasse mit dem Namen `Comment` , die eine Zeichen folgen-Domänen Eigenschaft mit dem Namen `Text` und eine ganzzahlige Eigenschaft namens aufweist `TextLengthCount` Damit `TextLengthCount` immer die Länge der `Text` Zeichenfolge enthält, können Sie den folgenden Code in eine separate Datei im DSL-Projekt schreiben:
 
 ```
 // Domain Class "Comment":
@@ -99,7 +99,7 @@ if (newValue > 10)
 
  Sie könnten stattdessen die abgeleitete Eigenschaft als berechnete Eigenschaft definieren. In diesem Fall hat die Eigenschaft keinen eigenen Speicher und die definierende Funktion wird ausgewertet, wenn der Wert erforderlich ist. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).
 
- Anstelle des vorherigen Beispiels können Sie das **Kind** -Feld von `TextLengthCount` festlegen, das in der DSL-Definition **berechnet** werden soll. Sie würden ihre eigene **Get** -Methode für diese Domänen Eigenschaft bereitstellen. Die **Get** -Methode gibt die aktuelle Länge der `Text` Zeichenfolge zurück.
+ Anstelle des vorherigen Beispiels können Sie das Feld **Kind** von so festlegen, `TextLengthCount` dass es in der DSL-Definition **berechnet** wird. Sie würden ihre eigene **Get** -Methode für diese Domänen Eigenschaft bereitstellen. Die **Get** -Methode gibt die aktuelle Länge der `Text` Zeichenfolge zurück.
 
  Ein möglicher Nachteil berechneter Eigenschaften ist jedoch, dass der Ausdruck bei jeder Verwendung des Werts ausgewertet wird. Dies kann ein Leistungsproblem darstellen. Auch gibt es "OnValueChanging()" und "OnValueChanged()" nicht für eine berechnete Eigenschaft.
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585625"
 ---
 # <a name="replace-in-files"></a>In Dateien ersetzen
@@ -53,7 +53,7 @@ Wenn Sie Instanzen der Zeichenfolge im Feld **Suchen nach** mit einer anderen Ze
 
 ## <a name="look-in"></a>Suchen in
 
-Die in der Dropdownliste **Suchen in** ausgewählte Option bestimmt, ob mit der Option **In Dateien ersetzen** nur die derzeit aktiven Dateien oder alle Dateien in bestimmten Ordnern durchsucht werden. Wählen Sie einen Suchbereich aus der Liste aus, geben Sie einen Ordnerpfad ein, oder klicken Sie auf die Schaltfläche **Durchsuchen (...)** , um das Dialogfeld **Suchordner auswählen** aufzurufen und Ordner zum Durchsuchen auszuwählen. Sie können auch direkt im Feld **Suchen in** einen Pfad eingeben.
+Über die aus der Dropdownliste **Suchen in** ausgewählte Option legen Sie fest, ob die Funktion **In Dateien ersetzen** nur die zurzeit aktiven Dateien oder alle in bestimmten Ordnern gespeicherten Dateien durchsucht. Wählen Sie einen Suchbereich aus der Liste aus, geben Sie einen Ordnerpfad ein, oder klicken Sie auf die Schaltfläche **Durchsuchen (...)**, um das Dialogfeld **Suchordner auswählen** aufzurufen und Ordner zum Durchsuchen auszuwählen. Sie können auch direkt im Feld **Suchen in** einen Pfad eingeben.
 
 > [!NOTE]
 > Wenn Sie mit der Option **Suchen in** eine Datei durchsuchen, die Sie aus der Quellcodeverwaltung ausgecheckt haben, wird nur eine Version der Datei durchsucht, die Sie auf den lokalen Computer heruntergeladen haben.
@@ -88,20 +88,20 @@ Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche d
 
 Fenster **Suchergebnisse: 2**
 
-Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend **Suchergebnisse: 2** aus.
+Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend** Suchergebnisse: 2** aus.
 
 **Nur Dateinamen anzeigen**
 
 Wenn dieses Kontrollkästchen aktiviert ist, listet das Fenster **Suchergebnisse** die vollständigen Namen und Pfade für alle Dateien auf, die die Suchzeichenfolge enthalten. Die Ergebnisse enthalten allerdings nicht die Codezeile, in der die Zeichenfolge vorkommt. Dieses Kontrollkästchen ist nur für **In Dateien suchen...** verfügbar.
 
-**Offenlassen von geänderten Daten nach „Alle ersetzen“**
+**Geänderte Dateien offen lassen, nachdem alles ersetzt wurde**
 
-Bei Auswahl dieser Option bleiben alle Dateien geöffnet, in denen Ersetzungen vorgenommen wurden, damit Sie die Änderungen rückgängig machen oder speichern können. Einschränkungen des Speicherplatzes können die Anzahl von Dateien beeinflussen, die nach einem Ersetzungsvorgang geöffnet bleiben können.
+Wenn diese Option aktiviert ist, bleiben alle Dateien geöffnet, in denen Ersetzungen vorgenommen wurden. Auf diese Weise können Sie die Änderungen rückgängig machen oder speichern. Speichereinschränkungen können eine Begrenzung der Anzahl der Dateien, die nach einem Ersetzungsvorgang geöffnet bleiben, zur Folge haben.
 
 > [!CAUTION]
-> Sie können **Rückgängigmachen** nur bei Dateien anwenden, die für die Bearbeitung geöffnet bleiben. Wenn diese Option nicht ausgewählt ist, bleiben Dateien geschlossen, die nicht für die Bearbeitung geöffnet waren. Das bedeutet, dass die Option **Rückgängigmachen** in diesen Dateien nicht zur Verfügung steht.
+> Sie können die Funktion **Rückgängig** nur bei Dateien verwenden, die zum Bearbeiten geöffnet bleiben. Wenn diese Option nicht aktiviert ist, bleiben Dateien, die nicht bereits zum Bearbeiten geöffnet waren, geschlossen, und die Option **Rückgängig** steht für diese Dateien nicht zur Verfügung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)
 - [Suchen in Dateien](../ide/find-in-files.md)

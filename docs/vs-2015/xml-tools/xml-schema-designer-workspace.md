@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a16be3adb799fe2b0751d6119e5a980dd1b90d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669383"
 ---
 # <a name="xml-schema-designer-workspace"></a>Arbeitsbereich des XML-Schema-Designers
@@ -26,13 +26,13 @@ Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie die 
 ## <a name="adding-nodes-to-the-workspace"></a>Hinzufügen von Knoten zum Arbeitsbereich
  Zum Hinzufügen von Knoten zum Arbeitsbereich stehen die folgenden Methoden zur Auswahl:
 
-- Klicken Sie im Abschnitt "Details zum Schemaset" in der [Start Ansicht](../xml-tools/start-view.md)auf den Link **Hinzufügen** neben dem globalen Knotentyp.
+- Klicken Sie im Abschnitt „Details zum Schemaset“ der [Ausgangsansicht](../xml-tools/start-view.md) auf den Link **Hinzufügen** neben dem globalen Knotentyp.
 
-- Verschieben Sie globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop vom XML-Schema-Explorer in eine der drei Ansichten. Weitere Informationen finden Sie im Abschnitt "ziehen und Ablegen von Knoten" im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md).
+- Verschieben Sie globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop vom XML-Schema-Explorer in eine der drei Ansichten. Weitere Informationen finden Sie im Abschnitt zum Drag & Drop von Knoten unter [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md).
 
 - Verwenden Sie das Kontextmenü im XML-Schema-Explorer. Weitere Informationen finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md).
 
-- Führen Sie im XSD-Explorer eine Suche aus, und klicken Sie im Zusammenfassungs Ergebnisbereich auf die Schaltfläche **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** . Weitere Informationen finden Sie unter durch [Suchen des Schema Satzes](../xml-tools/searching-the-schema-set.md).
+- Führen Sie im XSD-Explorer eine Suche aus, und klicken Sie im Bereich mit der Ergebniszusammenfassung auf die Schaltfläche **Hervorgehobene Knoten zu Arbeitsbereich hinzufügen**. Weitere Informationen finden Sie unter durch [Suchen des Schema Satzes](../xml-tools/searching-the-schema-set.md).
 
 ## <a name="view-switching"></a>Wechseln zwischen den Ansichten
  Zum Wechseln zwischen den Ansichten stehen folgende Methoden zur Auswahl:

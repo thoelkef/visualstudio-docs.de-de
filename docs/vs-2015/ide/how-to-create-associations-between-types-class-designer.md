@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668117"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Gewusst wie: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)
@@ -36,7 +36,7 @@ Anhand von Assoziationslinien im Klassen-Designer ist zu erkennen, in welcher Be
 
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>So definieren Sie im Klassendiagramm eine Assoziationslinie
 
-1. Wählen Sie in der Toolbox unter „Klassen-Designer“ die Option **Zuordnung** aus.
+1. **Wählen Sie**in der Toolbox unter Klassen-Designer die Option Zuordnung aus.
 
 2. Zeichnen Sie eine Linie zwischen den beiden Formen, die Sie mithilfe einer Assoziation miteinander verbinden möchten.
 
@@ -56,5 +56,5 @@ Anhand von Assoziationslinien im Klassen-Designer ist zu erkennen, in welcher Be
 
      Der Name wird im Fenster **Klassendetails**, auf der Assoziationslinie, im Eigenschaftenfenster und im Code aktualisiert.
 
-## <a name="see-also"></a>Siehe auch
- [Gewusst wie: Wechseln zwischen Member- und Zuordnungsnotation (Klassen-Designer)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Gewusst wie: Wechseln zwischen Member-und Zuordnungs Notation (Klassen-Designer)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

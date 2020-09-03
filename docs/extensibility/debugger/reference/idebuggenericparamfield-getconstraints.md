@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetConstraints | Microsoft Docs
+title: 'Idebuggenericparamfield:: geteinschränkungen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728014"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
@@ -44,19 +44,19 @@ int GetConstraints(
 
 ## <a name="parameters"></a>Parameter
 `cConstraints`\
-[in] Anzahl der Einschränkungen.
+in Anzahl der Einschränkungen.
 
 `ppConstraints`\
-[out] Gibt ein Array zurück, das die diesem Feld zugeordneten Einschränkungen enthält.
+vorgenommen Gibt ein Array zurück, das die Einschränkungen enthält, die diesem Feld zugeordnet sind.
 
 `pcConstraints`\
-[in, out] Anzahl der Einschränkungen `ppConstraints` im Array.
+[in, out] Anzahl der Einschränkungen im `ppConstraints` Array.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugGenericParamFieldType-Objekt** implementiert wird, das die [IDebugGenericParamField-Schnittstelle](../../../extensibility/debugger/reference/idebuggenericparamfield.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebuggenericparamfieldtype** -Objekt implementiert wird, das die [idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(

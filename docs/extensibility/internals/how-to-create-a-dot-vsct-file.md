@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905525"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Vorgehensweise: Erstellen einer vsct-Datei
@@ -69,7 +69,7 @@ Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen *CTC* -Quellda
 
 5. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Navigieren Sie im Eingabe Aufforderungs Fenster zum Verzeichnis.
 
-6. Typ
+6. type
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -96,7 +96,7 @@ Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen binären *CTO*
 
 3. Wechseln Sie an der Visual Studio-Eingabeaufforderung zu dem Verzeichnis, das die *CTO* -und *ctsym* -Dateien enthält.
 
-4. Typ
+4. type
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -148,7 +148,7 @@ Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen binären *CTO*
 
      Der erste Parameterwert muss mit dem Wert des- `ResourceName` Attributs, das Sie in der Projektdatei definiert haben, identisch sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vsct-Dateien erstellen](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Vsct-XML-Schema Referenz](../../extensibility/vsct-xml-schema-reference.md)

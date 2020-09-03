@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2 | Microsoft Docs
+title: IDebugModule2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dbbea1b52133de41dd26f437aeba31a0eff5a50a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726907"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
-Diese Schnittstelle stellt ein Modul dar, d. h. eine ausführbare Einheit eines Programms, z. B. eine DLL.
+Diese Schnittstelle stellt ein Modul dar, d. –. eine ausführbare Einheit eines Programms – z. b. eine DLL.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,36 +29,36 @@ IDebugModule2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
- Das Debugmodul (DE) implementiert diese Schnittstelle, um ein Modul darzustellen und den Zugriff auf Informationen zu diesem Modul zu ermöglichen.
+ Die Debug-Engine (de) implementiert diese Schnittstelle, um ein Modul darzustellen und Zugriff auf Informationen über dieses Modul bereitzustellen.
 
-## <a name="notes-for-callers"></a>Hinweise für Anrufer
- Ein Aufruf von [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) gibt diese Schnittstelle zurück. Die DE sendet die [IDebugModuleLoadEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) mithilfe der [Ereignismethode](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) an den Session Debug Manager (SDM).
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Bei einem [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) -Rückruf wird diese Schnittstelle zurückgegeben. Der de sendet mithilfe der- [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Methode die [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) -Schnittstelle an den Sitzungs-Debug-Manager (SDM).
 
- Diese Schnittstelle kann auch in einer [FRAMEINFO-Struktur](../../../extensibility/debugger/reference/frameinfo.md) zurückgegeben werden (die durch einen Aufruf von [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)zurückgegeben wird).
+ Diese Schnittstelle kann auch in einer [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Struktur zurückgegeben werden (die durch einen aufzurufenden [enumframeinfo-Befehl](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)zurückgegeben wird).
 
-- [Als nächstes](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) gibt auch diese Schnittstelle zurück ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) gibt die [IEnumDebugModules2-Schnittstelle](../../../extensibility/debugger/reference/ienumdebugmodules2.md) zurück).
+- [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) gibt auch diese Schnittstelle zurück ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) gibt die [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) -Schnittstelle zurück).
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt `IDebugModule2`die Methoden von .
+ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugModule2` .
 
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Ruft die [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) ab, die dieses Modul beschreibt.|
-|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|VERALTET. NICHT VERWENDEN. Lädt die Symbole für dieses Modul neu.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Ruft den [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) ab, der dieses Modul beschreibt.|
+|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|VERALTET. Verwenden Sie nicht. Lädt die Symbole für dieses Modul erneut.|
 
 ## <a name="remarks"></a>Bemerkungen
- Modulinformationen können im **Modulfenster** der IDE angezeigt werden.
+ Modul Informationen können im Fenster " **Module** " der IDE angezeigt werden.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
- Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
-- [Getmodule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)
+- [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

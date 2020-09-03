@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
+title: 'Idebugcomplussymbolprovider:: getarraytypefromaddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 048a086bae946b5ce730bdfe2c343b6cde1b29e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733992"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Ruft Typinformationen über das angegebene Array mit der Debugadresse ab.
+Ruft Typinformationen über das angegebene Array ab, wenn die zugehörige debugadresse angegeben ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,22 +46,22 @@ int GetArrayTypeFromAddress(
 
 ## <a name="parameters"></a>Parameter
 `pAddress`\
-[in] Die Debugadresse, die durch eine [IDebugAddress-Schnittstelle](../../../extensibility/debugger/reference/idebugaddress.md) dargestellt wird.
+in Die von einer [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle dargestellte debugadresse.
 
 `pSig`\
-[in] Das zu untersuchende Array.
+in Das zu überprüfende Array.
 
 `dwSigLength`\
-[in] Länge in Bytes `pSig` des Arrays.
+in Die Länge des Arrays in Bytes `pSig` .
 
 `ppField`\
-[out] Gibt den Arraytyp zurück, der durch eine [IDebugClassField-Schnittstelle](../../../extensibility/debugger/reference/idebugclassfield.md) dargestellt wird.
+vorgenommen Gibt den Arraytyp zurück, wie von einer [idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) -Schnittstelle dargestellt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(

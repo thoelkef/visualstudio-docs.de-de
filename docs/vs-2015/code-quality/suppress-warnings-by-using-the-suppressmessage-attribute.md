@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a5d64a27759cf844550297beb19b026bbeaa0e40
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546821"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Unterdrücken von Warnungen mithilfe des SuppressMessage-Attributs
@@ -33,7 +33,7 @@ Häufig ist es hilfreich, anzugeben, dass die Warnung nicht anwendbar ist, um Te
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-|-|
 |[Übersicht über die Unterdrückung im Quellcode](../code-quality/in-source-suppression-overview.md)|Erfahren Sie mehr über ISS und wie Sie Sie in Ihrem Code verwenden können.|
 |[Gewusst wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Erfahren Sie, wie Sie Warnungen in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE mithilfe des Kontextmenüs unterdrücken.|

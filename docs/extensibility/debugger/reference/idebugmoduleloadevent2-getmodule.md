@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule | Microsoft Docs
+title: 'IDebugModuleLoadEvent2:: GetModule | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726725"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
@@ -45,13 +45,13 @@ int GetModule( 
 
 ## <a name="parameters"></a>Parameter
 `pModule`\
-[out] Gibt ein [IDebugModule2-Objekt](../../../extensibility/debugger/reference/idebugmodule2.md) zurück, das das Modul darstellt, das geladen oder entladen wird.
+vorgenommen Gibt ein [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt zurück, das das Modul darstellt, das geladen oder entladen wird.
 
 `pbstrDebugMessage`\
-[in, out] Gibt eine optionale Meldung zurück, die dieses Ereignis beschreibt. Wenn es sich bei diesem Parameter um einen NULL-Wert handelt, wird keine Nachricht angefordert.
+[in, out] Gibt eine optionale Meldung zurück, die dieses Ereignis beschreibt. Wenn dieser Parameter ein NULL-Wert ist, wird keine Meldung angefordert.
 
 `pbLoad`\
-[in, out] Ein Wert`TRUE`ungleich Null ( ),`FALSE`wenn das Modul geladen wird, und Null ( ), wenn das Modul entladen wird. Wenn es sich bei diesem Parameter um einen NULL-Wert handelt, wird kein Status angefordert.
+[in, out] Ungleich NULL ( `TRUE` ), wenn das Modul geladen wird, und 0 (NULL `FALSE` ) (), wenn das Modul entladen wird. Wenn dieser Parameter ein NULL-Wert ist, wird kein Status angefordert.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

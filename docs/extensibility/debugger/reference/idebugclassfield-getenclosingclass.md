@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetEnclosingClass | Microsoft Docs
+title: 'Idebugclassfield:: getenclosingclass | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734393"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Ruft die Klasse ab, die diese Klasse umschließt.
+Ruft die Klasse ab, die diese Klasse einschließt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>Parameter
 `ppClassField`\
-[out] Gibt ein [IDebugClassField-Objekt](../../../extensibility/debugger/reference/idebugclassfield.md) zurück, das die einschließende Klasse darstellt. Gibt einen NULL-Wert zurück, wenn keine einschließende Klasse vorhanden ist.
+vorgenommen Gibt ein [idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) -Objekt zurück, das die einschließende Klasse darstellt. Gibt einen NULL-Wert zurück, wenn keine einschließende Klasse vorhanden ist.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, kehrt S_OK zurück; Andernfalls wird ein Fehlercode zurückgegeben.
+Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Wenn die von diesem [IDebugClassField-Objekt](../../../extensibility/debugger/reference/idebugclassfield.md) dargestellte Klasse `ppClassField` eine `IDebugClassField` geschachtelte Klasse ist, gibt der Parameter ein Objekt zurück, das die einschließende Klasse darstellt. Beispielsweise wird diese Klassendefinition gegeben:
+Wenn die Klasse, die durch dieses [idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) -Objekt dargestellt wird, eine-Klasse ist, gibt der- `ppClassField` Parameter ein-Objekt zurück, `IDebugClassField` das die einschließende Klasse darstellt. Beispiel für diese Klassendefinition:
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-Wenn `GetEnclosingClass` Sie die `IDebugClassField` Methode `NestedClass` für das `IDebugClassField` Objekt aufrufen, das die Klasse darstellt, wird ein Objekt zurückgegeben, das die Klasse `RootClass`darstellt.
+Das Aufrufen der- `GetEnclosingClass` Methode für das- `IDebugClassField` Objekt, das die-Klasse darstellt, `NestedClass` gibt ein Objekt zurück, `IDebugClassField` das die `RootClass`
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

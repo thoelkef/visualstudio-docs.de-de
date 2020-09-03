@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1de155b71e82bb7561030cae2e1d0d4d777c9586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668058"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Gewusst wie: Erstellen von Vorlagen mit mehreren Projekten
@@ -81,7 +81,7 @@ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Pro
 
 1. Erstellen Sie die Projekte, die in der Vorlage mit mehreren Projekten enthalten sein sollen.
 
-2. Erstellen Sie für jedes Projekt VSTEMPLATE-Dateien. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md).
+2. Erstellen Sie für jedes Projekt VSTEMPLATE-Dateien. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md).
 
 3. Erstellen Sie eine VSTEMPLATE-Stammdatei, die die Metadaten für die Vorlage mit mehreren Projekten enthalten soll. Weitere Informationen finden Sie im ersten Beispiel im folgenden Abschnitt.
 
@@ -149,5 +149,5 @@ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Pro
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
- [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md) [Gewusst wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md) [Visual Studio-Vorlagen Schema Referenz](../extensibility/visual-studio-template-schema-reference.md) [SolutionFolder-Element (Visual Studio-Vorlagen)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ ProjectTemplateLink-Element (Visual Studio-Vorlagen)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Erstellen von Projekt-und Element Vorlagen](../ide/creating-project-and-item-templates.md) [Schema Referenz zu Visual Studio-Vorlagen Gewusst](../extensibility/visual-studio-template-schema-reference.md) [wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md) [Visual Studio-Vorlagen Schema Referenz](../extensibility/visual-studio-template-schema-reference.md) [SolutionFolder-Element (Visual Studio-Vorlagen)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ProjectTemplateLink-Element (Visual Studio-Vorlagen)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee5d3cff260346a5bcc1806b09b955642c608f14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669489"
 ---
 # <a name="xml-document-validation"></a>Validierung von XML-Dokumenten
@@ -23,7 +23,7 @@ Der XML-Editor überprüft die XML 1.0-Syntax und validiert bereits beim Eingeb
 
  Die bei der Validierung verwendeten Schemata werden durch Abgleichen des `targetNamespace` eines kompilierten Schemas mit der xmlns-Deklaration des Elements gefunden. Kompilierte Schemata werden von einem der folgenden Speicherorte geladen, die entsprechend ihrer Priorität aufgelistet sind:
 
-- Aus dem im Feld **Schemas** des Dokuments Eigenschaftenfenster angegebenen Dateinamen.
+- Von dem Dateinamen, der im Eigenschaftenfenster des Dokuments im **Schemata**-Feld angegeben ist.
 
 - Aus einem Inlineschema oder einer DTD.
 
@@ -45,5 +45,5 @@ Der XML-Editor überprüft die XML 1.0-Syntax und validiert bereits beim Eingeb
 ## <a name="xml-schema-xsd-files"></a>XSD-Dateien (XML Schema Language)
  Beim Bearbeiten einer XSD-Datei wird die im Schemacache enthaltene Datei xsdschema.xsd für die Validierung verwendet. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Alle Kompilierungsfehler werden als rote wellenförmige Unterstreichungen angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Editor](../xml-tools/xml-editor.md)

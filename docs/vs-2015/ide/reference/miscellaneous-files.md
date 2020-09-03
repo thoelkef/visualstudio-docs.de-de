@@ -1,5 +1,5 @@
 ---
-title: Verschiedene Dateien | Microsoft-Dokumentation
+title: Sonstige Dateien | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -22,13 +22,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666849"
 ---
-# <a name="miscellaneous-files"></a>Verschiedene Dateien
+# <a name="miscellaneous-files"></a>sonstige Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Mit den [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Editoren können Sie unabhängig von einem Projekt oder einer Projektmappe mit Dateien arbeiten. Wenn eine Projektmappe geöffnet ist, können Sie Dateien öffnen und ändern, ohne dass diese einer Projektmappe oder einem Projekt hinzugefügt werden müssen. Dateien, mit denen Sie unabhängig von den Containern arbeiten möchten, werden als verschiedene Dateien bezeichnet. Verschiedene Dateien sind kein Teil von Projektmappen oder Projekten, nicht in Builds enthalten und können nicht in eine Projektmappe in der Quellcodeverwaltung eingeschlossen werden.
@@ -50,5 +50,5 @@ Mit den [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Editoren können Sie una
 ## <a name="folder-display-options"></a>Anzeigeoptionen für Ordner
  Sie können die Anzeigeoptionen für den Ordner Verschiedene Dateienso festlegen, dass der Ordner auch dann angezeigt wird, wenn keine der verschiedenen Dateien geöffnet ist. Die Projektmappendatei verwaltet nicht dauerhaft eine Liste von verschiedenen Dateien. Sie verwendet eine optionale Funktion, über die für jeden Benutzer eine MRU-Liste (Most Recently Used, Zuletzt geöffnet) von Dateien gespeichert werden kann.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Projektmappen und Projekte](../../ide/solutions-and-projects-in-visual-studio.md) [Dokumente, Umgebung, Dialog Feld "Optionen](../../ide/reference/documents-environment-options-dialog-box.md) "

@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6ba899fd1b17fa5a82c64d5c5e44e67f0d5eb97
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668188"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Gewusst wie: Konfigurieren von Projekten für Zielplattformen
@@ -39,7 +39,7 @@ ms.locfileid: "72668188"
 
 2. Wählen Sie in der Liste **Aktive Projektmappenplattform** eine 64-Bit-Plattform als Zielplattform für die Projektmappe aus, und klicken Sie dann auf die Schaltfläche **Schließen**.
 
-   1. Wählen Sie **Neu** aus, wenn die gewünschte Plattform nicht in der Liste **Aktive Projektmappenplattform** angezeigt wird.
+   1. Wenn die gewünschte Plattform nicht in der Liste **Aktive Projektmappenplattform** angezeigt wird, wählen Sie **neu**aus.
 
         Das Dialogfeld **Neue Projektmappenplattform** wird angezeigt.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72668188"
 
 - Informationen zu -[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Projekten finden Sie unter [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).
 
-- Informationen zu [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projekten finden Sie unter [Seite „Erstellen“, Projekt-Designer](../ide/reference/build-page-project-designer-csharp.md).
+- Informationen zu- [!INCLUDE[csprcs](../includes/csprcs-md.md)] Projekten finden Sie unter [Seite "erstellen", Projekt-Designer (c#)](../ide/reference/build-page-project-designer-csharp.md).
 
-- Informationen zu [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekten finden Sie unter [/clr (Common Language Runtime-Kompilierung)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
+- Informationen zu- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Projekten finden Sie unter [/CLR (Common Language Runtime-Kompilierung)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
 
-## <a name="see-also"></a>Siehe auch
- Grundlegendes zu [Buildplattformen](../ide/understanding-build-platforms.md) [/Platform (C# Compileroptionen)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64-Bit-Anwendungen](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio-IDE 64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)
+## <a name="see-also"></a>Weitere Informationen
+ Grundlegendes zu [Buildplattformen](../ide/understanding-build-platforms.md) [/Platform (c#-Compileroptionen)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64-Bit-Anwendungen](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)

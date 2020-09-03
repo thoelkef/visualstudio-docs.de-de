@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f427edfe294605b7b2adcbb0889e48c4f37b6ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666846"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -35,10 +35,10 @@ Protokolliert sämtliche Aktivitäten zur Problembehandlung in der Protokolldate
 Devenv /log Path\NameOfLogFile
 ```
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Dieser Schalter muss am Ende der Befehlszeile nach allen anderen Schaltern angezeigt werden.
 
  Das Protokoll wird für alle Instanzen von Visual Studio geschrieben, die Sie mit dem /log-Schalter aufgerufen haben. Es werden keine Instanzen von Visual Studio protokolliert, die Sie ohne den Schalter aufgerufen haben.
 
-## <a name="see-also"></a>Siehe auch
- [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Debug-Befehls Zeilenschalter](../../ide/reference/devenv-command-line-switches.md)

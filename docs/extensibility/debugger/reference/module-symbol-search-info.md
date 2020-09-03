@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714246"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-Enthält Statusinformationen zu Symbolsuchpfaden, die durchsucht wurden.
+Enthält Statusinformationen zu Symbol Suchpfaden, die durchsucht wurden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>Member
 
 `dwValidFields`\
-Eine Kombination von [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) Flags aus der SYMBOL_SEARCH_INFO_FIELDS-Enumeration, die die Art der in dieser Struktur beschriebenen Suchinformationen angibt.
+Eine Kombination von Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) -Enumeration, die die Art der Suchinformationen angibt, die in dieser Struktur beschrieben werden.
 
 `bstrVerboseSearchInfo`\
-Suchpfad und Ergebnisse, die zu einer einzelnen Zeichenfolge verkettet sind.
+Suchpfad und Ergebnisse werden zu einer einzelnen Zeichenfolge verkettet.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Struktur wird von einem Aufruf der [GetSymbolInfo-Methode](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) zurückgegeben.
+Diese Struktur wird von einem Aufrufen der [getsymbolinfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) -Methode zurückgegeben.
 
-Wenn `bstrVerboseSearchInfo` das Feld nicht leer ist, enthält es eine Liste der gesuchten Pfade und die Ergebnisse dieser Suche. Die Liste wird mit einem Pfad formatiert, gefolgt von einer Auslassung ("..."), gefolgt vom Ergebnis. Wenn mehr als ein Pfadergebnispaar vorhanden ist, wird jedes Paar durch ein Paar "-r-n" (Carriage-Return/linefeed) getrennt. Das Muster sieht wie folgt aus:
+Wenn das `bstrVerboseSearchInfo` Feld nicht leer ist, enthält es eine Liste der durchsuchten Pfade und die Ergebnisse dieser Suche. Die Liste wird mit einem Pfad, gefolgt von einem Auslassungs Zeichen ("..."), gefolgt vom Ergebnis formatiert. Wenn mehr als ein Pfad Ergebnis Paar vorhanden ist, wird jedes Paar durch das Paar "\r\n" (Wagen Rücklauf/Zeilenvorschub) getrennt. Das Muster sieht wie folgt aus:
 
-\<Pfad>... \<Ergebnis> Pfad\<>... \<Ergebnis\<>-Pfad>... \<Ergebnis>
+\<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>
 
-Beachten Sie, dass der letzte Eintrag keine Sequenz von .r.n.
+Beachten Sie, dass der letzte Eintrag keine \r\n-Sequenz hat.
 
-Hier ist `bstrVerboseSearchInfo` eine mögliche Zeichenfolge, die an Standard-Out gesendet wurde.
+Hier ist eine mögliche `bstrVerboseSearchInfo` Zeichenfolge, die an Standard out gesendet wurde.
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -69,15 +69,15 @@ Hier ist `bstrVerboseSearchInfo` eine mögliche Zeichenfolge, die an Standard-Ou
 
 `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
-Kopfzeile: msdbg.h
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

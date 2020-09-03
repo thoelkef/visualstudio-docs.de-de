@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535940"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Verwenden von Visual Studio-ModelBus in einer Textvorlage
@@ -257,7 +257,7 @@ Sie verfügen jetzt über eine DSL, auf die Textvorlagen über ModelBus zugreife
 
 1. Erstellen Sie eine neue DSL mithilfe der Vorlage für minimale Sprachlösungen. Benennen Sie die Sprache mbconsumer, und legen Sie die Dateinamenerweiterung auf ". Consumer" fest.
 
-2. Fügen Sie im DSL-Projekt einen Verweis auf die mbprovider-DSL-Assembly hinzu. Klicken Sie mit der rechten Maustaste auf `MBConsumer\Dsl\References` **Verweis hinzufügen**. Suchen Sie auf der Registerkarte **Durchsuchen** nach`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. Fügen Sie im DSL-Projekt einen Verweis auf die mbprovider-DSL-Assembly hinzu. Klicken Sie mit der rechten Maustaste auf  `MBConsumer\Dsl\References` **Verweis hinzufügen**. Suchen Sie auf der Registerkarte **Durchsuchen** nach `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     Dies ermöglicht es Ihnen, Code zu erstellen, der die andere DSL verwendet. Wenn Sie Verweise auf mehrere DSLs erstellen möchten, fügen Sie Sie hinzu.
 
@@ -295,7 +295,7 @@ Sie verfügen jetzt über eine DSL, auf die Textvorlagen über ModelBus zugreife
 
 4. Klicken Sie auf eine Beispiel Form, und klicken Sie in der Eigenschaftenfenster auf **[...]** in der MBR-Eigenschaft. Klicken Sie im Dialogfeld auf **Durchsuchen** , und wählen Sie aus `Sample.provide` . Erweitern Sie im Fensterelemente den Typ Task, und wählen Sie eines der-Elemente aus.
 
-5. Speichern Sie die Datei . (Schließen Sie die experimentelle Instanz von Visual Studio noch nicht.)
+5. Speichern Sie die Datei. (Schließen Sie die experimentelle Instanz von Visual Studio noch nicht.)
 
    Sie haben ein Modell erstellt, das einen ModelBus-Verweis auf ein Element in einem anderen Modell enthält.
 

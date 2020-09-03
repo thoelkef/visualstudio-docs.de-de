@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7ee6665aea98edf7cb701f5fdfe07d293887bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669525"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Exemplarische Vorgehensweise: XSLT-Profiler
@@ -21,7 +21,7 @@ ms.locfileid: "72669525"
 
 Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, Messung und Bewertung leistungsbezogener Probleme im XSLT-Code. Der XSLT-Profiler enthält nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen. Für XSLT-Anwendungen, bei denen maximale Leistung erforderlich ist, ist dieses Tool unentbehrlich.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Für die Verfahren in der folgenden exemplarischen Vorgehensweise sind Visual Studio 2010 und .NET Framework Version 4.0 erforderlich. Der XSLT-Profiler ist nur in Microsoft Visual Studio Team System mit installierten Profilerstellungstools verfügbar.
 
 ### <a name="create-the-performance-report"></a>Erstellen des Leistungsberichts
@@ -40,9 +40,9 @@ Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, M
 
 ### <a name="get-all-the-available-views"></a>Abrufen aller verfügbaren Ansichten
 
-1. Klicken Sie auf die Dropdown Liste **Aktuelle Ansicht** , um alle verfügbaren Ansichten zu erhalten.
+1. Klicken Sie auf die Dropdownliste **Aktuelle Ansicht**, um alle verfügbaren Ansichten abzurufen.
 
-2. Wählen Sie in der Dropdown Liste **Aktuelle Ansicht** die Option **Zusammenfassungs Ansicht** aus. Standardmäßig wird ein Leistungsbericht in der **Zusammenfassungs Ansicht**angezeigt. Diese Ansicht ist ein Ausgangspunkt für die Ermittlung von Leistungsproblemen in XSLT-Dokumenten. In der **Zusammenfassungs Ansicht** werden die folgenden Datenpunkte aufgeführt:
+2. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option für die **Zusammenfassungsansicht** aus. Leistungsberichte werden standardmäßig in der **Zusammenfassungsansicht** angezeigt. Diese Ansicht ist ein Ausgangspunkt für die Ermittlung von Leistungsproblemen in XSLT-Dokumenten. In der **Zusammenfassungsansicht** werden die folgenden Datenpunkte angezeigt:
 
     - Am häufigsten aufgerufene Funktionen
 
@@ -50,35 +50,35 @@ Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, M
 
     - Funktionen mit der längsten Ausführungszeit
 
-3. Standardmäßig werden für jeden Datenpunkt drei Spalten angezeigt: der Name der Funktion, die Anzahl von Aufrufen als absoluter Wert und ein Prozentwert, der den Anteil der jeweiligen Funktion an der Gesamtanzahl von Funktionsaufrufen darstellt. Von jedem Datenpunkt in der **Zusammenfassungs Ansicht**aus können Sie zu detaillierteren Ansichten navigieren, indem Sie mit der rechten Maustaste auf die Funktionsdaten Punkte klicken.
+3. Standardmäßig werden für jeden Datenpunkt drei Spalten angezeigt: der Name der Funktion, die Anzahl von Aufrufen als absoluter Wert und ein Prozentwert, der den Anteil der jeweiligen Funktion an der Gesamtanzahl von Funktionsaufrufen darstellt. Von den einzelnen Datenpunkten in der **Zusammenfassungsansicht** können Sie zu detaillierteren Ansichten navigieren, indem Sie mit der rechten Maustaste auf die Funktionsdatenpunkte klicken.
 
-4. Wählen Sie in der Dropdown Liste **Aktuelle Ansicht** die Option **Funktions Ansicht** aus. Die **Funktions Ansicht** Listet Funktionen auf, die während der Profilerstellung aufgerufen werden Sie können die Daten durch Klicken auf einen Spaltennamen sortieren. Die folgenden Spalten werden standardmäßig angezeigt:
+4. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option für die **Funktionsansicht** aus. In der **Funktionsansicht** werden die während der Profilerstellung aufgerufenen Funktionen aufgeführt. Sie können die Daten durch Klicken auf einen Spaltennamen sortieren. Die folgenden Spalten werden standardmäßig angezeigt:
 
     - **Funktionsname**
 
     - **verstrichene inklusive Zeit**
 
-    - **Verstrichene exklusive Zeit**
+    - **verstrichene exklusive Zeit**
 
-    - **Inklusive Anwendungszeit**
+    - **inklusive Anwendungszeit**
 
     - **exklusive Anwendungszeit**
 
     - **Anzahl der Aufrufe**
 
-5. Alle Zeitspalten werden in absoluten Werten und Prozentsätzen angezeigt. Der Begriff **exklusiv** bezieht sich auf die Gesamtzeit, die eine Funktion für die Ausführung von anderen Funktionen aufgewendet hat, die während der Ausführung dieser Funktion aufgerufen wurden.
+5. Alle Zeitspalten werden in absoluten Werten und Prozentsätzen angezeigt. Der Begriff **Exklusiv** bezieht sich auf die gesamte Ausführungszeit einer Funktion ohne die Ausführungszeit anderer Funktionen, die während der Ausführung dieser Funktion aufgerufen wurden.
 
-6. Der Begriff **inklusiv** bezieht sich auf die Gesamtzeit, die für die Ausführung einer Funktion aufgewendet wurde, einschließlich der Ausführungszeit aller von ihr aufgerufenen Funktionen und der aufgerufenen Funktionen als andere Funktionen.
+6. Der Begriff **Inklusiv** bezieht sich auf die gesamte Ausführungszeit einer Funktion einschließlich der Ausführungszeit aller von ihr aufgerufenen Funktionen und anderer von diesen Funktionen aufgerufenen Funktionen.
 
 ### <a name="select-callercallee-view"></a>Auswählen der Ansicht "Aufrufer/Aufgerufener"
 
-1. Wählen Sie in der Dropdown Liste **Aktuelle Ansicht** die Ansicht Aufrufer **/** aufgerufener aus.
+1. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Ansicht **Aufrufer/Aufgerufener** aus.
 
-2. Die Aufrufer **-** /Aufgerufener-Ansicht besteht aus den folgenden drei Teilen:
+2. Die Ansicht **Aufrufer/Aufgerufener** besteht aus den folgenden drei Teilen:
 
-    - **Funktionen, die aufgerufen**haben: alle Funktionen, die eine bestimmte Funktion aufgerufen haben, werden im oberen Teil der Ansicht aufgelistet.
+    - **Funktionen, die aufgerufen haben**: Alle Funktionen, die eine bestimmte Funktion aufgerufen haben, werden im oberen Teil der Ansicht aufgelistet.
 
-    - **Current-Funktion**: die bestimmte Funktion, die aufgerufen wurde, wird im mittleren Teil der Ansicht aufgeführt.
+    - **Aktuelle Funktion**: Die aufgerufene Funktion wird im mittleren Teil der Ansicht angezeigt.
 
     - **Funktionen, die von aufgerufen wurden** : alle Funktionen, die von der jeweiligen Funktion aufgerufen wurden, werden im unteren Teil der Ansicht aufgelistet.
 
@@ -90,23 +90,23 @@ Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, M
 
 ### <a name="select-calltree-view"></a>Auswählen der Ansicht "Aufrufstruktur"
 
-1. Wählen Sie in der Dropdown Liste **Aktuelle Ansicht** die Option **Auflistungs Strukturansicht** aus. Diese Ansicht ist eine Strukturansicht der Programmausführung.
+1. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Ansicht **Aufrufstrukturansicht** aus. Diese Ansicht ist eine Strukturansicht der Programmausführung.
 
-2. In der **Ansicht "Ansicht** " wird der Stamm der Struktur als Prozess Name angezeigt. Die Funktionen sind die Knoten der Struktur. In dieser Ansicht können Sie einen Drilldown in bestimmte Aufrufablaufverfolgungen ausführen und analysieren, welche Aufrufe die größten Auswirkungen auf die Leistung haben. Die Ansicht ähnelt der während des Debuggens verfügbaren Ansicht der **Ansichts Stapel Ansicht** . Zusätzlich zu den Spalten in der **Funktions Ansicht**gibt es in der **Ansicht "Aufrufe**" eine zusätzliche Spalte, in der der **Modulname**angezeigt wird.
+2. In der **Aufrufstrukturansicht** wird der Stamm der Struktur als Prozessname angezeigt. Die Funktionen sind die Knoten der Struktur. In dieser Ansicht können Sie einen Drilldown in bestimmte Aufrufablaufverfolgungen ausführen und analysieren, welche Aufrufe die größten Auswirkungen auf die Leistung haben. Die Ansicht ähnelt der beim Debuggen verfügbaren **Aufruflistenansicht**. Neben den Spalten in der **Funktionsansicht** enthält die **Aufrufstrukturansicht** eine weitere Spalte für den **Modulnamen**.
 
-3. Wählen Sie in der Dropdown Liste **Aktuelle Ansicht** die Option **Markierungen** aus.
+3. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option **Markierungen** aus.
 
-4. Im XSLT-Profiler werden Markierungen verwendet, die im Datensammlungsdatenstrom zusammen mit einem Kommentar angezeigt werden. Markierungen sind Stellen im Code, die über Indikatoren verfügen. Wenn Sie den XSLT-Profiler anweisen, XSLT-Leistungsindikatoren zu erfassen, werden die Indikatoren bei jeder Ausführung einer dieser Markierungen gesammelt. Die Daten werden in einer Tabelle angezeigt, die die **Markierungs-ID**, den **Markierungs Namen** (**Start Programm**, das **Endprogramm**) und den **Zeitstempel**enthält. Die Markierungen werden nicht aggregiert und in der **Markierungs Ansicht** des Leistungs Berichts in chronologischer Reihenfolge angezeigt.
+4. Im XSLT-Profiler werden Markierungen verwendet, die im Datensammlungsdatenstrom zusammen mit einem Kommentar angezeigt werden. Markierungen sind Stellen im Code, die über Indikatoren verfügen. Wenn Sie den XSLT-Profiler anweisen, XSLT-Leistungsindikatoren zu erfassen, werden die Indikatoren bei jeder Ausführung einer dieser Markierungen gesammelt. Die Daten werden in einer Tabelle mit **Markierungs-ID**, **Markierungsname** (**Programm starten**, **Programm beenden**) und dem **Zeitstempel** angezeigt. Die Markierungen werden nicht aggregiert und in chronologischer Reihenfolge in der **Markierungsansicht** des Leistungsberichts angezeigt.
 
 ### <a name="select-modules-in-the-current-view"></a>Auswählen von Modulen in der aktuellen Ansicht
 
-1. Wählen Sie in der Dropdown Liste **Aktuelle Ansicht** die Option **Module** aus.
+1. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option **Module** aus.
 
-2. Die Modulansicht ist eine einfache Liste aller Funktionen zusammengefasst zur Modulebene. Erweitern oder reduzieren Sie den Modulnamen, um die Ansicht der Modulleistungsdaten anzuzeigen oder zu schließen. Sie können die Daten durch Klicken auf einen Spaltennamen sortieren. Standardmäßig sind sowohl absolute Werte als auch Prozent zahlen für die **verstrichene inklusive Zeit**, **verstrichene exklusive Zeit**, **inklusive Anwendungszeit**, **exklusive Anwendungs**Zeit und **Anzahl von Aufrufen**vorhanden.
+2. Die Modulansicht ist eine einfache Liste aller Funktionen zusammengefasst zur Modulebene. Erweitern oder reduzieren Sie den Modulnamen, um die Ansicht der Modulleistungsdaten anzuzeigen oder zu schließen. Sie können die Daten durch Klicken auf einen Spaltennamen sortieren. Standardmäßig werden sowohl absolute Werte als auch Prozentzahlen für **Verstrichene inklusive Zeit**, **Verstrichene exklusive Zeit**, **Inklusive Anwendungszeit**, **Exklusive Anwendungszeit** und **Anzahl der Aufrufe** angezeigt.
 
-3. Wählen Sie in der Dropdown Liste **Aktuelle Ansicht** die Option **Prozess** aus.
+3. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option **Prozess** aus.
 
-4. In der Prozessansicht wird eine Tabelle mit der **Prozess-ID**, dem **Prozessnamen**, der **Anfangszeit**und der **Endzeit**angezeigt. Sie können die Daten durch Klicken auf die Spaltennamen sortieren.
+4. In der Prozessansicht wird eine Tabelle mit **Prozess-ID**, **Prozessname**, **Anfangszeit** und **Endzeit** angezeigt. Sie können die Daten durch Klicken auf die Spaltennamen sortieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie](../xml-tools/walkthrough-using-xslt-hierarchy.md)

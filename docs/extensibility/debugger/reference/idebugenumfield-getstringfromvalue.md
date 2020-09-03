@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+title: 'Idebugenenfield:: getstringfromvalue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730283"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Diese Methode ruft den Namen der Enumerationskonstante unter dem Wert ab.
+Diese Methode erhält den Namen der Enumerationskonstante, wenn ihr Wert angegeben wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetStringFromValue(
 
 ## <a name="parameters"></a>Parameter
 `value`\
-[in] Der Wert, für den der Name der Enumerationskonstante abruft.
+in Der Wert, für den der Name der Enumerationskonstante angezeigt werden soll.
 
 `pbstrValue`\
-[out] Gibt den Namen der Enumerationskonstante zurück.
+vorgenommen Gibt den Namen der Enumerationskonstante zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, `S_OK`kehrt zurück; Andernfalls wird `S_FALSE` zurückgegeben, wenn dem Wert kein Name zugeordnet ist, oder gibt einen Fehlercode zurück.
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben, `S_FALSE` Wenn der Wert keinen zugeordneten Namen hat, oder es wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn mehr als ein Name mit demselben Wert verknüpft ist, wird der in der Enumeration definierte Vorname zurückgegeben.
+ Wenn dem gleichen Wert mehr als ein Name zugeordnet ist, wird der Vorname zurückgegeben, der in der-Enumeration definiert ist.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

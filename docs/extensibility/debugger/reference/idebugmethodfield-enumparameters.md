@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumParameters | Microsoft Docs
+title: 'Idebugmethodfield:: EnumParameters | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 13df02cf5870e630c4aecb34e9295d218ba7a0eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727200"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
@@ -41,17 +41,17 @@ int EnumParameters(
 
 ## <a name="parameters"></a>Parameter
 `ppParams`\
-[out] Gibt ein [IEnumDebugFields-Objekt](../../../extensibility/debugger/reference/ienumdebugfields.md) zurück, das die Liste der Parameter für die Methode darstellt. Andernfalls gibt ein NULL-Wert zurück, wenn keine Parameter vorhanden sind.
+vorgenommen Gibt ein [ienumdebugfields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste der Parameter für die Methode darstellt. Andernfalls wird ein NULL-Wert zurückgegeben, wenn keine Parameter vorhanden sind.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, gibt S_OK oder S_FALSE zurück, wenn keine Parameter vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK zurückgegeben oder S_FALSE zurückgegeben, wenn keine Parameter vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Jedes Element ist ein [IDebugField-Objekt,](../../../extensibility/debugger/reference/idebugfield.md) das verschiedene Parametertypen darstellt. Rufen Sie die [GetKind-Methode](../../../extensibility/debugger/reference/idebugfield-getkind.md) für jedes Objekt auf, um genau zu bestimmen, welche Art von Parameter das Objekt darstellt.
+ Jedes Element ist ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das verschiedene Typen von Parametern darstellt. Aufrufen der [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) -Methode für jedes Objekt, um genau zu bestimmen, welche Art von Parameter das Objekt darstellt.
 
- Ein Parameter enthält sowohl den Variablennamen als auch seinen Typ. Der erste Parameter für eine Klassenmethode ist in der Regel der "this"-Zeiger.
+ Ein Parameter enthält sowohl den Variablennamen als auch seinen Typ. Der erste Parameter einer Klassenmethode ist in der Regel der "This"-Zeiger.
 
- Wenn nur die Typen der Parameter benötigt werden, rufen Sie die [EnumArguments-Methode](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) auf.
+ Wenn nur die Typen der Parameter benötigt werden, müssen Sie die [enumarguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) -Methode aufzurufen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

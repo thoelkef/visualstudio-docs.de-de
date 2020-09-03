@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282670"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
@@ -115,6 +115,6 @@ Im folgenden Beispiel wird gezeigt, wie Sie eine zusätzliche Abfrage namens abr
     > [!NOTE]
     > Wenn Sie ein **Abfrage** Objekt direkt auf den **DataSet-Designer** ziehen, wird eine Methode erstellt, die nur einen Skalarwert (Single) zurückgibt. Die von Ihnen ausgewählte Abfrage oder gespeicherte Prozedur gibt möglicherweise mehr als einen einzelnen Wert zurück, die vom Assistenten erstellte Methode gibt jedoch nur einen einzelnen Wert zurück. Beispielsweise kann die Abfrage die erste Spalte der ersten Zeile der zurückgegebenen Daten zurückgeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

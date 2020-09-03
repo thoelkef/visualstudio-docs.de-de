@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a3e522d7c38a7f2d8b3c1614aa66bcf840e16ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666556"
 ---
 # <a name="visual-studio-template-reference"></a>Referenz zu Visual Studio-Vorlagen
@@ -34,7 +34,7 @@ Die folgenden Links enthalten Informationen über die verschiedenen Aspekte der 
 ## <a name="related-sections"></a>Verwandte Abschnitte
  [Gewusst wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
 
- [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+ [Gewusst wie: Erstellen von Element Vorlagen](../ide/how-to-create-item-templates.md)
 
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
 

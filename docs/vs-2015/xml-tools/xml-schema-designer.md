@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c2b72683f37e454ed157fdc26b40da499b91697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669405"
 ---
 # <a name="xml-schema-designer"></a>XML-Schema-Designer
@@ -23,11 +23,11 @@ Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie ein 
 
 - Im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) können Sie die XML-Schema Struktur durchsuchen und navigieren und Suchvorgänge durchführen.
 
-- Die [Start Ansicht](../xml-tools/start-view.md) ist der Ausgangspunkt für den XSD-Designer. in der Start Ansicht können Sie zu anderen Ansichten des XSD-Designers navigieren und die Details Ihres Schema Satzes anzeigen.
+- Die [Ausgangsansicht](../xml-tools/start-view.md) ist der Ausgangspunkt für den XSD-Designer. In dieser Ansicht können Sie zu anderen Ansichten des XSD-Designers navigieren und die Details des Schemasets sehen.
 
-- In der [Diagramm Ansicht](../xml-tools/graph-view.md) können Sie eine Übersicht über einen Schemaset und die Beziehungen zwischen den Schema Knoten anzeigen.
+- Die [Diagrammansicht](../xml-tools/graph-view.md) bietet eine Übersicht über ein Schemaset und die Beziehungen zwischen den Schemaknoten.
 
-- Die [Inhalts Modell Ansicht](../xml-tools/content-model-view.md) bietet eine grafische Darstellung der Details lokaler und globaler Schema Knoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attribut Gruppen.
+- Die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) bietet eine grafische Darstellung der Details lokaler und globaler Schemaknoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attributgruppen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) Bietet eine Übersicht über den XML-Schema-Explorer und erläutert, wie Sie mit XSD-Schemas (XML Schema Definition Language) arbeiten können.

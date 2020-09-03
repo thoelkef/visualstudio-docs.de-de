@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6c32db6dc6fbe151b9eec3cec988443ceb73fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669983"
 ---
 # <a name="retain-topics-for-later-use"></a>Speichern von Themen zur späteren Verwendung
@@ -32,5 +32,5 @@ Wenn Sie ein nützliches Thema gefunden haben, können Sie zu einem späteren Ze
 ## <a name="using-the-favorites-tab"></a>Verwenden der Registerkarte "Favoriten"
  Auf der Registerkarte **Favoriten** können Sie das Kontextmenü öffnen, um beliebige Einträge umzubenennen, zu löschen oder die Einträge in Ordnern zu organisieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Tastenkombinationen (Help Viewer)](../ide/shortcut-keys-help-viewer.md)

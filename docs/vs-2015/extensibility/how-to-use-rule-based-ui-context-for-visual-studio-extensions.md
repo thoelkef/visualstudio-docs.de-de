@@ -6,10 +6,10 @@ ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
 ms.openlocfilehash: 26f66f635b2c248af01067d9dbd96fd997593593
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535563"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Gewusst wie: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
@@ -126,7 +126,7 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
 ## <a name="term-types"></a>Begriffs Typen
  Hier sind die verschiedenen Typen von Begriffs, die unterstützt werden:
 
-|Term Type|Beschreibung|
+|Term Type|BESCHREIBUNG|
 |-|-|
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Der GUID bezieht sich auf einen UI-Kontext. Der Begriff ist "true", wenn der UI-Kontext aktiv ist, andernfalls "false".|
 |Hiersingleselectionname:\<pattern>|Der Begriff ist true, wenn es sich bei der Auswahl in der aktiven Hierarchie um ein einzelnes Element handelt und der Name des ausgewählten Elements mit dem regulären .net-Ausdruck übereinstimmt, der von "Pattern" angegeben wird.|

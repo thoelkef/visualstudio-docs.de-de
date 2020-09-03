@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
+title: 'IDebugPortSupplier3:: canpersistports | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724465"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Diese Methode bestimmt, ob der Portlieferant Ports zwischen Aufrufen des Debuggers beibehalten kann (durch Schreiben auf den Datenträger).
+Diese Methode bestimmt, ob der Port Lieferant Ports (durch das Schreiben auf den Datenträger) zwischen den Aufrufen des Debuggers beibehalten kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,10 +39,10 @@ int CanPersistPorts();
  Keine.
 
 ## <a name="return-value"></a>Rückgabewert
- `S_OK`, wenn Ports beibehalten `S_FALSE` werden können, oder um anzuzeigen, dass Ports nicht beibehalten werden können.
+ `S_OK` , wenn Ports persistent sein können, oder, `S_FALSE` um anzugeben, dass die Ports nicht persistent sein können.
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn der Portlieferant Ports beibehalten kann, sollte er dies tun, wenn er zerstört wird, und sie dann erneut laden, wenn er erneut instanziiert wird.
+ Wenn der Port Lieferant Ports beibehalten kann, sollte er dies tun, wenn er zerstört wird, und ihn dann erneut laden, wenn er erneut instanziiert wird.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
