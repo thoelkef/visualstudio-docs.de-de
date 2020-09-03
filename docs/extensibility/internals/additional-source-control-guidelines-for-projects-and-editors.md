@@ -1,5 +1,5 @@
 ---
-title: Zusätzliche Quellcodeverwaltungsrichtlinien für Projekte und Editoren | Microsoft Docs
+title: Weitere Richtlinien für die Quell Code Verwaltung für Projekte und Editoren | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 181f6c10ff7ce95cd3a37151f117353d1bb47d41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710106"
 ---
-# <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Zusätzliche Quellcodeverwaltungsrichtlinien für Projekte und Editoren
-Es gibt eine Reihe von Richtlinien, die Projekte und Redakteure einhalten sollten, um die Quellcodeverwaltung zu unterstützen.
+# <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Weitere Richtlinien zur Quell Code Verwaltung für Projekte und Editoren
+Es gibt eine Reihe von Richtlinien, die von Projekten und Editoren befolgt werden sollten, um die Quell Code Verwaltung zu unterstützen.
 
 ## <a name="guidelines"></a>Richtlinien
- Ihr Projekt oder Editor sollte auch die folgenden Schritte ausführen, um die Quellcodeverwaltung zu unterstützen:
+ Das Projekt oder der Editor sollte auch folgende Aktionen ausführen, um die Quell Code Verwaltung zu unterstützen:
 
 |Bereich|Project|Editor|Details|
 |----------|-------------|------------|-------------|
-|Private Kopien von Dateien|X||Die Umgebung unterstützt private Kopien von Dateien. Das heißt, jede Person, die in das Projekt aufgenommen wird, verfügt über eine eigene private Kopie der Dateien in diesem Projekt.|
-|ANSI/Unicode-Persistenz|X|X|Wenn Sie den Persistenzcode schreiben, behalten Sie Dateien im ANSI-Formular bei, da die meisten Quellcodeverwaltungsprogramme Unicode derzeit nicht unterstützen.|
-|Aufzählen von Dateien|X||Das Projekt muss eine bestimmte Liste aller darin enthaltenen Dateien enthalten und in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Lage sein, die Liste der Dateien aufzulisten, die den oder (VSH_PROPID_First_Child/Next_Sibling) verwenden. Das Projekt sollte elementsnamen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> auch durch seine Implementierung verfügbar machen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> und die Namenssuche (einschließlich spezieller Dateien) durch seine Implementierung unterstützen.|
-|Textformat|X|X|Wenn möglich, sollten Dateien im Textformat vorliegen, um das Zusammenführen verschiedener Versionen zu unterstützen. Dateien, die nicht im Textformat vorliegen, können später nicht mit anderen Versionen der Datei zusammengeführt werden. Das bevorzugte Textformat ist XML.|
-|Referenzbasiert|X||Referenzbasierte Projekte werden in der Quellcodeverwaltung problemlos unterstützt. Verzeichnisbasierte Projekte werden jedoch auch von der Quellcodeverwaltung unterstützt, solange das Projekt eine Liste seiner Dateien bei Bedarf erstellen kann, unabhängig davon, ob diese Dateien auf dem Datenträger vorhanden sind. Wenn Sie ein Projekt aus der Quellcodeverwaltung öffnen, wird die Projektdatei zuerst vor einer ihrer Dateien heruntergefahren.|
-|Objekte und Eigenschaften in vorhersagbarer Reihenfolge beibehalten|X|X|Befolgen Sie Ihre Dateien in einer vorhersagbaren Reihenfolge, z. B. in alphabetischer Reihenfolge, um das Zusammenführen zu erleichtern.|
-|Erneut laden|X|X|Wenn sich eine Datei auf dem Datenträger ändert, muss der Editor in der Lage sein, sie neu zu laden. Wenn Sie an der Quellcodeverwaltung teilnehmen, lädt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Umgebung Die Daten für Sie neu, indem Sie Ihre Implementierung aufrufen. Der schwierigste Fall beim erneuten Laden ist, wenn ein Auschecken<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> auftritt, wenn Sie IVsQueryEditQuerySave:: aufgerufen haben und Informationen verarbeiten. Ihr Neuladecode muss jedoch in dieser Situation ausgeführt werden können.<br /><br /> Die Umgebung lädt Projektdateien automatisch neu. Ein Projekt muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> jedoch implementiert werden, wenn es über verschachtelte Hierarchien verfügt, um das erneute Laden verschachtelter Projektdateien zu unterstützen.|
+|Private Kopien von Dateien|X||Die Umgebung unterstützt private Kopien von Dateien. Das heißt, jede Person, die sich im Projekt eingetragen hat, verfügt über eine eigene private Kopie der Dateien in diesem Projekt.|
+|ANSI/Unicode-Persistenz|X|X|Wenn Sie den Persistenzcode schreiben, speichern Sie Dateien im ANSI-Format, da die meisten Programme der Quell Code Verwaltung Unicode derzeit nicht unterstützen.|
+|Dateien aufzählen|X||Das Projekt muss eine bestimmte Liste aller Dateien darin enthalten, und es muss in der Lage sein, die Liste der Dateien mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling) aufzuzählen. Das Projekt sollte außerdem Elementnamen über seine Implementierung verfügbar machen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> und Namenssuche (einschließlich spezieller Dateien) über seine Implementierung unterstützen <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> .|
+|Textformat|X|X|Wenn möglich, sollten Dateien im Textformat vorliegen, um die Zusammenführung unterschiedlicher Versionen zu unterstützen. Dateien, die nicht im Textformat vorliegen, können später nicht mit anderen Versionen der Datei zusammengeführt werden. Das bevorzugte Textformat ist XML.|
+|Verweis basiert|X||Verweis basierte Projekte werden in der Quell Code Verwaltung problemlos unterstützt. Verzeichnis basierte Projekte werden jedoch auch von der Quell Code Verwaltung unterstützt, solange das Projekt bei Bedarf eine Liste der zugehörigen Dateien erstellt, unabhängig davon, ob diese Dateien auf dem Datenträger vorhanden sind. Wenn Sie ein Projekt aus der Quell Code Verwaltung öffnen, wird die Projektdatei zuerst vor einer Ihrer Dateien heruntergefahren.|
+|Beibehalten von Objekten und Eigenschaften in vorhersag barer Reihenfolge|X|X|Speichern Sie die Dateien in einer vorhersagbaren Reihenfolge, z. b. in alphabetischer Reihenfolge|
+|Erneut laden|X|X|Wenn sich eine Datei auf dem Datenträger ändert, muss Sie in der Lage sein, Sie erneut zu laden. Wenn Sie an der Quell Code Verwaltung teilnehmen, lädt die Umgebung Daten für Sie neu, indem Sie Ihre- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung aufrufen. Die schwierigste groß-und Kleinschreibung besteht darin, dass ein Auschecken auftritt, wenn Sie ivsqueryeditquerysave:: aufgerufen haben <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> und Verarbeitungs Informationen sind. Der Code zum erneuten Laden muss jedoch in dieser Situation ausgeführt werden können.<br /><br /> Die Umgebung lädt Projektdateien automatisch erneut. Ein Projekt muss jedoch implementieren, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Wenn es über unterstützte Hierarchien verfügt, um das erneute Laden von masted-Projektdateien zu unterstützen.|
 
-## <a name="see-also"></a>Weitere Informationen
-- [Unterstützung der Quellcodeverwaltung](../../extensibility/internals/supporting-source-control.md)
+## <a name="see-also"></a>Siehe auch
+- [Quell Code Verwaltung unterstützen](../../extensibility/internals/supporting-source-control.md)

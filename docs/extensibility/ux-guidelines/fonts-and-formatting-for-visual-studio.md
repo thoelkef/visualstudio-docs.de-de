@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536109"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierung für Visual Studio
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Die Schriftart der Umgebung
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Die Schriftart der Umgebung
  Alle Schriftarten in Visual Studio müssen dem Benutzer zur Anpassung zur Verfügung gestellt werden. Dies erfolgt hauptsächlich über die Seite **Schriftarten und Farben** im Dialogfeld Extras **> Optionen** . Die drei Hauptkategorien der Schriftart Einstellungen lauten wie folgt:
 
 - **Umgebungs Schriftart** : die primäre Schriftart für die IDE (integrierte Entwicklungsumgebung), die für alle Schnittstellen Elemente, einschließlich Dialogfeldern, Menüs, Tool Fenstern und Dokument Fenster, verwendet wird. Standardmäßig ist die Umgebungs Schriftart an eine System Schriftart gebunden, die in den aktuellen Versionen von Windows als 9 pt Segoe UI angezeigt wird. Durch die Verwendung einer Schriftart für alle Schnittstellen Elemente wird eine konsistente Schriftart Darstellung in der gesamten IDE sichergestellt.
@@ -32,7 +32,7 @@ ms.locfileid: "85536109"
 
 1. Ändern Sie für Code Text im Editor die Größe mit der Schriftart für den Code Text, und reagieren Sie auf die Zoomstufe des Editor Texts.
 
-2. Alle anderen Elemente der-Schnittstelle sollten an die Schriftart Einstellung der Umgebung gebunden sein und auf alle globalen Änderungen in der Umgebung reagieren. Dies umfasst (ist jedoch nicht beschränkt auf):
+2. Alle anderen Elemente der-Schnittstelle sollten an die Schriftart Einstellung der Umgebung gebunden sein und auf alle globalen Änderungen in der Umgebung reagieren. Dies umfasst u. a.:
 
     - Text in Kontextmenüs
 
@@ -69,7 +69,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Ersetzen Sie dies `Microsoft.VisualStudio.Shell.11.0` durch die aktuelle Version der MPF-dll.)
 
- Um das Dialogfeld anzuzeigen, müssen Sie " `ShowModal()` " für die-Klasse über aufrufen `ShowDialog()` . `ShowModal()`Legt den korrekten modalen Zustand in der Shell fest, stellt sicher, dass das Dialogfeld im übergeordneten Fenster zentriert ist, usw.
+ Um das Dialogfeld anzuzeigen, müssen Sie " `ShowModal()` " für die-Klasse über aufrufen `ShowDialog()` . `ShowModal()` Legt den korrekten modalen Zustand in der Shell fest, stellt sicher, dass das Dialogfeld im übergeordneten Fenster zentriert ist, usw.
 
  Der Code lautet wie folgt:
 
@@ -78,7 +78,7 @@ MyWindow window = new MyWindow();
 window.ShowModal()
 ```
 
- `ShowModal`Gibt einen booleschen Wert zurück? (boolescher Wert, der NULL-Werte zulässt) mit dem `DialogResult` , der bei Bedarf verwendet werden kann. Der Rückgabewert ist "true", wenn das Dialogfeld mit " **OK**" geschlossen wurde.
+ `ShowModal` Gibt einen booleschen Wert zurück? (boolescher Wert, der NULL-Werte zulässt) mit dem `DialogResult` , der bei Bedarf verwendet werden kann. Der Rückgabewert ist "true", wenn das Dialogfeld mit " **OK**" geschlossen wurde.
 
  Wenn Sie eine WPF-Benutzeroberfläche anzeigen möchten, bei der es sich nicht um ein Dialogfeld handelt und die eigenständig gehostet werden, z. b. `HwndSource` ein Popup Fenster oder ein untergeordnetes WPF-Fenster eines übergeordneten Win32/WinForms-Fensters, müssen Sie `FontFamily` und `FontSize` für das Stamm Element des WPF-Elements festlegen. (Die Shell legt die Eigenschaften im Hauptfenster fest, aber Sie werden nicht über ein geerbt `HWND` ). Die Shell stellt Ressourcen bereit, an die die Eigenschaften gebunden werden können, wie folgt:
 
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Referenz zum Formatieren (Skalieren/stärken)
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> Referenz zum Formatieren (Skalieren/stärken)
  In einigen Dialogfeldern ist es erforderlich, dass ein bestimmter Text fett oder eine andere als die Umgebungs Schriftart ist. Zuvor waren Schriftarten, die größer als die Umgebungs Schriftart waren, als " `environment font +2` " oder ähnlich codiert. Mithilfe der bereitgestellten Code Ausschnitte werden High-dpi-Monitore unterstützt, und es wird sichergestellt, dass Anzeige Text immer mit der richtigen Größe und Gewichtung (z. b. Light oder semilight) angezeigt wird
 
 > [!NOTE]
@@ -301,7 +301,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Klicken Sie zum Zurücksetzen der Schriftart unter Extras **> Optionen > Umgebung > Schriftarten und Farben**auf "Standardwerte verwenden".
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Textstil
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Textstil
  Der Textstil bezieht sich auf Schrift Grad, Gewichtung und Groß-/Kleinschreibung. Implementierungs Leit Fäden finden Sie in [der Umgebungs Schriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Text Schreibweise
@@ -389,7 +389,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Kursiv
  Visual Studio verwendet weder kursiv noch kursiv formatierten Text.
 
-#### <a name="color"></a>Farbe
+#### <a name="color"></a>„Color“ (Farbe)
 
 - Blue ist für Hyperlinks (Navigation und Befehls Richtung) reserviert und sollte nie für die Ausrichtung verwendet werden.
 
@@ -416,7 +416,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Verbrauch|Darstellung|
 |-|-|
-|**Verwendung:** Ere. Nur eindeutige Marken-Benutzeroberfläche.<br /><br /> **Führen Sie Folgendes aus:**<br /><br /> -Use Satz Case<br />-Immer leichte Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche außer der Signatur Benutzeroberfläche, z. b. Start Seite<br />-Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 34 PT Segoe UI Light<br /><br /> **Visuelles Beispiel:**<br /><br /> *Wird derzeit nicht verwendet. Kann auf der Start Seite von Visual Studio 2017 verwendet werden.*|
+|**Verwendung:** Ere. Nur eindeutige Marken-Benutzeroberfläche.<br /><br /> **Können**<br /><br /> -Use Satz Case<br />-Immer leichte Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche außer der Signatur Benutzeroberfläche, z. b. Start Seite<br />-Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 34 PT Segoe UI Light<br /><br /> **Visuelles Beispiel:**<br /><br /> *Wird derzeit nicht verwendet. Kann auf der Start Seite von Visual Studio 2017 verwendet werden.*|
 
 #### <a name="310-environment-font--light"></a>310% Umgebungs Schriftart + hell
 
@@ -424,7 +424,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Verbrauch|Darstellung|
 |-|-|
-|**Syntax:**<br /><br /> -Größere Überschrift in den Signatur Dialogfeldern<br />-Hauptberichts Überschrift<br /><br /> **Führen Sie Folgendes aus:**<br /><br /> -Use Satz Case<br />-Immer leichte Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche außer der Signatur Benutzeroberfläche, z. b. Start Seite<br />-Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 28 PT Segoe UI hell<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart mit 310% &#43; helle Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Syntax:**<br /><br /> -Größere Überschrift in den Signatur Dialogfeldern<br />-Hauptberichts Überschrift<br /><br /> **Können**<br /><br /> -Use Satz Case<br />-Immer leichte Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche außer der Signatur Benutzeroberfläche, z. b. Start Seite<br />-Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 28 PT Segoe UI hell<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart mit 310% &#43; helle Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -432,7 +432,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Verbrauch|Darstellung|
 |-|-|
-|**Syntax:**<br /><br /> -Größere Überschrift in den Signatur Dialogfeldern<br />-Hauptberichts Überschrift<br /><br /> **Führen Sie Folgendes aus:**<br /><br /> -Use Satz Case<br />-Immer leichte Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche außer der Signatur Benutzeroberfläche<br />-Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 28 PT Segoe UI hell<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart mit 310% &#43; helle Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Syntax:**<br /><br /> -Größere Überschrift in den Signatur Dialogfeldern<br />-Hauptberichts Überschrift<br /><br /> **Können**<br /><br /> -Use Satz Case<br />-Immer leichte Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche außer der Signatur Benutzeroberfläche<br />-Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 28 PT Segoe UI hell<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart mit 310% &#43; helle Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -440,7 +440,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Verbrauch|Darstellung|
 |-|-|
-|**Syntax:**<br /><br /> -Unter Überschriften<br />-Titel in kleinen und mittleren Dialogfeldern<br /><br /> **Führen Sie Folgendes aus:**<br /><br /> -Use Satz Case<br />-Immer "nur ein"-Gewicht verwenden<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 18 PT Segoe UI-millight<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart &#43; von 200%](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**Syntax:**<br /><br /> -Unter Überschriften<br />-Titel in kleinen und mittleren Dialogfeldern<br /><br /> **Können**<br /><br /> -Use Satz Case<br />-Immer "nur ein"-Gewicht verwenden<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder Fett kursiv<br />-Für Textkörper Text verwenden<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 18 PT Segoe UI-millight<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart &#43; von 200%](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% Umgebungs Schriftart
 
@@ -464,7 +464,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |Verbrauch|Darstellung|
 |-|-|
-|**Syntax:**<br /><br /> -Bezeichnungen und unterköpfe in den Signatur Dialogfeldern<br />-Bezeichnungen und Teil Köpfe in Berichten<br />-Bezeichnungen und unterköpfe in Dokument-Well-UI<br /><br /> **Führen Sie Folgendes aus:**<br /><br /> -Use Satz Case<br />-Fett Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> Kursiv formatiert oder fett formatiert<br />-Für Textkörper Text verwenden<br />-Verwendung in standardmäßigen Visual Studio-Steuerelementen<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 9 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart &#43; Fett formatierte Überschrift](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+|**Syntax:**<br /><br /> -Bezeichnungen und unterköpfe in den Signatur Dialogfeldern<br />-Bezeichnungen und Teil Köpfe in Berichten<br />-Bezeichnungen und unterköpfe in Dokument-Well-UI<br /><br /> **Können**<br /><br /> -Use Satz Case<br />-Fett Gewichtung verwenden<br /><br /> **Tue nicht:**<br /><br /> Kursiv formatiert oder fett formatiert<br />-Für Textkörper Text verwenden<br />-Verwendung in standardmäßigen Visual Studio-Steuerelementen<br />-Verwendung in Tool Fenstern|**Angezeigt als:** 9 pt Segoe UI<br /><br /> **Visuelles Beispiel:**<br /><br /> ![Beispiel für Umgebungs Schriftart &#43; Fett formatierte Überschrift](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>Umgebungs Schriftart
 
@@ -481,7 +481,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Der Schriftart Text der fett formatierten Umgebung sollte dem Standardabstand der Zeilenhöhe und der Auffüll Schlange folgen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schriftarten (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [Text der Benutzeroberfläche (Windows)](/windows/desktop/uxguide/text-ui)

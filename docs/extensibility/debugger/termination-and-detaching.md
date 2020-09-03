@@ -1,5 +1,5 @@
 ---
-title: Kündigung und Ablösung | Microsoft Docs
+title: Beendigung und trennen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b88255d618ce42fa55d878f192d31523ba3f83b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712494"
 ---
-# <a name="termination-and-detaching"></a>Kündigung und Ablösung
-Im folgenden Abschnitt wird die normale Beendigung beschrieben.
+# <a name="termination-and-detaching"></a>Beendigung und trennen
+Im folgenden Abschnitt wird die normale Beendigung von beschrieben.
 
-## <a name="discussion"></a>Diskussion
- Nachdem die [IDebugLoadCompleteEvent2-](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) oder [IDebugEntryPointEvent2-Schnittstelle](../../extensibility/debugger/reference/idebugentrypointevent2.md) fortgesetzt wurde, wird das zu debuggende Programm bis zum Abschluss ausgeführt, wenn keine Haltepunkte, Ausnahmen, Laufzeitfehler oder Endlosschleifen in der zu debuggenden Anwendung vorhanden sind. Dieser Prozess ist eine normale Beendigung.
+## <a name="discussion"></a>Diskussion (Discussion)
+ Wenn die [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) -oder [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) -Schnittstelle fortgesetzt wird und keine Haltepunkte, Ausnahmen, Laufzeitfehler oder Endlosschleifen in der zu debuggenden Anwendung vorhanden sind, wird das Programm, das gedebuggt wird, bis zum Abschluss ausgeführt. Dieser Prozess wird normal beendet.
 
- Sie müssen ein [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) senden, um die normale Beendigung zu implementieren. Die normale Beendigung erfordert die Ausführung der [IDebugProgramDestroyEvent2::GetExitCode-Methode.](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)
+ Zum Implementieren der normalen Beendigung müssen Sie ein [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) senden. Die normale Beendigung erfordert das Ausführen der [IDebugProgramDestroyEvent2:: getexitcode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) -Methode.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Erstellen eines benutzerdefinierten Debugmoduls](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)

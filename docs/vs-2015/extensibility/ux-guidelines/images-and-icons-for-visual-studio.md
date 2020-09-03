@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544793"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Verwendung von Images in Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Verwendung von Images in Visual Studio
  Vor dem Erstellen von Grafiken sollten Sie die 1000 Bilder in der [Visual Studio-Bildbibliothek](https://www.microsoft.com/download/details.aspx?id=35825)verwenden.
 
 ### <a name="types-of-images"></a>Abbild Typen
@@ -35,7 +35,7 @@ ms.locfileid: "85544793"
 
 - **Cursor.** Wird verwendet, um anzugeben, ob ein Vorgang mit der Maus zulässig ist, wo ein Objekt gelöscht werden kann, usw.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Symbol Entwurf
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Symbol Entwurf
 
 ### <a name="overview"></a>Übersicht
  Visual Studio verwendet Symbole im modernen Stil, die eine saubere Geometrie und einen 50/50-Saldo von positiv/negativ (hell/dunkel) aufweisen und direkte, verständliche Metaphern verwenden. Wichtige Symbol Entwurfs Punkte zentrieren Klarheit, Vereinfachung und Kontext.
@@ -269,7 +269,7 @@ ms.locfileid: "85544793"
 
  Weitere Informationen zur Verwendung von Farben in Visual Studio-Symbolen finden Sie unter [Verwenden von Farbe in Bildern](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Verwenden von Farbe in Bildern
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Verwenden von Farbe in Bildern
 
 ### <a name="overview"></a>Übersicht
  Symbole in Visual Studio sind hauptsächlich Monochromatisch. Die Farbe ist für das vermitteln spezifischer Informationen und nie für die Dekoration reserviert. Farbe wird verwendet:
@@ -282,7 +282,7 @@ ms.locfileid: "85544793"
 
 - So unterscheiden Sie Elemente in IntelliSense
 
-### <a name="accessibility"></a>Barrierefreiheit
+### <a name="accessibility"></a>Zugriff
  Visual Studio-Kompatibilitätsrichtlinien erfordern, dass alle in das Produkt eingecheckten Symbole die Barrierefreiheits Anforderungen für Farbe und Kontrast erfüllen. Farben in der Palette der visuellen Sprache wurden getestet und erfüllen diese Anforderungen.
 
 #### <a name="color-inversion-for-dark-themes"></a>Farb Inversion für dunkles Design
@@ -295,11 +295,11 @@ ms.locfileid: "85544793"
 ### <a name="base-palette"></a>Basis Palette
  Alle Standardsymbole enthalten drei Basis Farben. Symbole enthalten keine Farbverläufe oder Schlag Schatten, mit einer oder zwei Ausnahmen für 3D-Tool Symbole.
 
-|Verbrauch|name|Value (helles Design)|Swatch|Beispiel|
+|Verbrauch|Name|Value (helles Design)|Swatch|Beispiel|
 |-----------|----------|---------------------------|------------|-------------|
 |Hintergrund/dunkel|VS BG|424242/66, 66, 66|![Muster 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|![Beispiel für Basispalette](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405-02_BasePaletteExample")|
 |Vordergrund/Licht|VS FG|F0EFF1/240.239.241|![Muster F0EFF1](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
-|Kontur|VS out|F6F6F6/246.246.246|![Muster F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")||
+|Outline|VS out|F6F6F6/246.246.246|![Muster F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")||
 
  Zusätzlich zu den Basis Farben kann jedes Symbol eine zusätzliche Farbe aus der erweiterten Palette enthalten.
 
@@ -308,7 +308,7 @@ ms.locfileid: "85544793"
 #### <a name="action-modifiers"></a>Aktionsmodifizierer
  Die vier folgenden Farben geben die Typen von Aktionen an, die von Aktionsmodifizierer benötigt werden:
 
-|Verbrauch|name|Wert (alle Designs)|Swatch|
+|Verbrauch|Name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Positiv|VS-Aktion grün|388a34/56138, 52|![Muster 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
 |Negativ|VS-Aktion rot|A1260D/161, 38, 13|![Muster A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
@@ -350,14 +350,14 @@ ms.locfileid: "85544793"
 
 #### <a name="folder"></a>Ordner
 
-|Verbrauch|name|Wert (alle Designs)|Swatch|Beispiel|
+|Verbrauch|Name|Wert (alle Designs)|Swatch|Beispiel|
 |-----------|----------|--------------------------|------------|-------------|
 |Ordner|Ordner|DCB67A/220.182.122|![Muster DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![Symbol "Ordnerfarbe"](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio-Sprachen
  Jede der in Visual Studio verfügbaren allgemeinen Sprachen oder Plattformen weist eine zugehörige Farbe auf. Diese Farben werden für das Basis Symbol oder für sprach Modifizierer verwendet, die in der oberen rechten Ecke der Verbund Symbole angezeigt werden.
 
-|Verbrauch|name|Wert (alle Designs)|Swatch|
+|Verbrauch|Name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF Blue|0095d7/0149.215|![Muster 0095D7](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|Cpp-lila|9b4f 96/155, 79150|![Muster 9B4F96](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
@@ -382,7 +382,7 @@ ms.locfileid: "85544793"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense-Symbole verwenden eine exklusive Farbpalette. Diese Farben werden verwendet, um Benutzern zu helfen, schnell zwischen den verschiedenen Elementen in der IntelliSense-Popup Liste zu unterscheiden.
 
-|Verbrauch|name|Wert (alle Designs)|Swatch|
+|Verbrauch|Name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Klasse, Ereignis|VS-Aktion Orange|C27D1A/194125, 26|![Muster C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |Erweiterungsmethode, Methode, Modul, Delegat|VS-Aktion, lila|652d90/101, 45144|![Muster 652D90](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
@@ -393,7 +393,7 @@ ms.locfileid: "85544793"
 ##### <a name="examples-of-intellisense-icons"></a>Beispiele für IntelliSense-Symbole
 
 
-|Klasse|Privates Ereignis|delegate|Methoden Friend|Feld|
+|Klasse|Privates Ereignis|Delegat|Methoden Friend|Feld|
 |-|-|-|-|-|
 |![Symbol für IntelliSense-Klasse](../../extensibility/ux-guidelines/media/0405-36-intellisenseclass.png "0405-36_IntelliSenseClass")|![Symbol für privates IntelliSense-Ereignis](../../extensibility/ux-guidelines/media/0405-37-intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![Symbol für IntelliSense-Delegat](../../extensibility/ux-guidelines/media/0405-38-intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![Symbol für IntelliSense-Methode "Friend"](../../extensibility/ux-guidelines/media/0405-39-intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![Symbol "Feld"](../../extensibility/ux-guidelines/media/0405-40-field.png "0405-40_Field")|
 
@@ -404,7 +404,7 @@ ms.locfileid: "85544793"
 ### <a name="notifications"></a>Benachrichtigungen
  Benachrichtigungen in Visual Studio werden verwendet, um den Status anzugeben. In der Benachrichtigungs Palette werden die folgenden vier Farben verwendet, sowie die Füll Optionen schwarz oder weiß, um Benachrichtigungen mit den folgenden Status Ebenen zu definieren.
 
-|Verbrauch|name|Wert (alle Designs)|Swatch|
+|Verbrauch|Name|Wert (alle Designs)|Swatch|
 |-----------|----------|--------------------------|------------|
 |Status: neutral|Benachrichtigung blau (vs Blue)|1ba1e2/27.161.226|![Muster 1BA1E2](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |Status: positiv|Benachrichtigungs grün (vs grün)|339933/51153, 51|![Muster 339933](../../extensibility/ux-guidelines/media/0405-339933.png "0405_339933")|
@@ -422,10 +422,10 @@ ms.locfileid: "85544793"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  Im Allgemeinen besteht Visual Studio Online über Features, die in einem Browser gehostet werden. Die Farbe variiert in verschiedenen Umgebungen, aber der Stil bleibt unverändert.
 
-|Group|Verbrauch|name|Wert (alle Designs)|Swatch|
+|Gruppieren|Verbrauch|Name|Wert (alle Designs)|Swatch|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Hintergrund|tfso BG|656565/101, 101, 101|![Muster 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
-|TFS|Kontur|tfso out|FFFFFF/255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|TFS|Outline|tfso out|FFFFFF/255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |Napa|Hintergrund|White|FFFFFF/255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |Monaco|Hintergrund|White|FFFFFF/255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|Hintergrund|White|FFFFFF/255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
@@ -434,7 +434,7 @@ ms.locfileid: "85544793"
 |F12|Disabled|F12-LtGrey_Disabled|Ababac/171.171.172|![Muster ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|Hover-Hintergrund|Hover-BG|D9EBF7/217.235.247|![Muster D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Gedrückter Hintergrund|Drückte BG|B2D7F0/178.215.240|![Muster B2D7F0](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
-|F12|Kontur|VS out|F6F6F6/246.246.246|![Muster F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
+|F12|Outline|VS out|F6F6F6/246.246.246|![Muster F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
 |F12|Information|Information|00bcf2/0188.242|![Muster 00BCF2](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
 |F12|Warnung|Warnung|F28300/242131, 0|![Muster F28300](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
 |F12|Fehler/negativ|Error_Negative|E81123/232, 17, 35|![Muster E81123](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|

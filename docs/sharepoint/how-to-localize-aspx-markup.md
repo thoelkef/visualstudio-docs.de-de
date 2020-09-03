@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016286"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Gewusst wie: Lokalisieren von ASPX-Markup
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)](aspx)-Seiten verwenden in der Regel hart codierte Zeichen folgen Werte. Um diese Zeichen folgen zu lokalisieren, ersetzen Sie Sie durch Ausdrücke, die auf lokalisierte Ressourcen verweisen.
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (aspx)-Seiten verwenden in der Regel hart codierte Zeichen folgen Werte. Um diese Zeichen folgen zu lokalisieren, ersetzen Sie Sie durch Ausdrücke, die auf lokalisierte Ressourcen verweisen.
 
 ## <a name="localize-aspx-markup"></a>Lokalisieren von ASPX-Markup
 
@@ -59,7 +60,7 @@ ms.locfileid: "86016286"
     </asp:Content>
     ```
 
-     zu
+     auf
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

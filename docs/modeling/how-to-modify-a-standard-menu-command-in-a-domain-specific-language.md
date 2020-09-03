@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532495"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
@@ -55,7 +55,7 @@ Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten K
 
 2. Erstellen Sie in **dslpackage**einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
 
-3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Beispiel:
+3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
 
     ```csharp
     using System;
@@ -131,19 +131,19 @@ Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:
 
 - `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
 
-- `this.IsDiagramSelected()` - `true`, wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
+- `this.IsDiagramSelected()` - `true` , wenn der Benutzer auf einen leeren Teil des Diagramms geklickt hat.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-der Benutzer hat nicht mehrere Formen ausgewählt.
+- `this.IsSingleSelection()` -der Benutzer hat nicht mehrere Formen ausgewählt.
 
-- `this.SingleSelection`die Form oder das Diagramm, auf die der Benutzer mit der rechten Maustaste geklickt hat
+- `this.SingleSelection` die Form oder das Diagramm, auf die der Benutzer mit der rechten Maustaste geklickt hat
 
-- `shape.ModelElement as MyLanguageElement`-das Modellelement, das durch eine Form dargestellt wird.
+- `shape.ModelElement as MyLanguageElement` -das Modellelement, das durch eine Form dargestellt wird.
 
 Weitere Informationen zum Navigieren von einem Element zu einem Element und zum Erstellen von Objekten und Links finden Sie unter [navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

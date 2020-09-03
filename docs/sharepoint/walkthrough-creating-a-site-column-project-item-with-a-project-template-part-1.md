@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016501"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1
@@ -44,7 +45,7 @@ ms.locfileid: "86016501"
 
 - Unterstützte Editionen von Microsoft Windows, SharePoint und [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-- Das [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. In dieser exemplarischen Vorgehensweise wird die **VSIX-Projekt** Vorlage im SDK verwendet, um ein VSIX-Paket zum Bereitstellen des Projekt Elements zu erstellen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Die [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. In dieser exemplarischen Vorgehensweise wird die **VSIX-Projekt** Vorlage im SDK verwendet, um ein VSIX-Paket zum Bereitstellen des Projekt Elements zu erstellen. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   Kenntnisse des folgenden Konzepts sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
@@ -80,7 +81,7 @@ ms.locfileid: "86016501"
 
 6. Geben Sie im Feld **Name den Namen** **sitecolumnprojectitem**ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt das Projekt **sitecolumnprojectitem** **Projektmappen-Explorer**hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt das Projekt **sitecolumnprojectitem** **Projektmappen-Explorer**hinzu.
 
 #### <a name="to-create-the-project-template-project"></a>So erstellen Sie das Projektvorlagenprojekt
 
@@ -94,7 +95,7 @@ ms.locfileid: "86016501"
 
 5. Geben Sie im Feld **Name den Namen** **sitecolumnprojecttemplate**ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt Mappe das **sitecolumnprojecttemplate** -Projekt hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das **sitecolumnprojecttemplate** -Projekt hinzu.
 
 6. Löschen Sie die Class1-Codedatei aus dem Projekt.
 
@@ -122,7 +123,7 @@ ms.locfileid: "86016501"
 
 4. Geben Sie im Feld **Name** **projectItemTypeDefinition** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fügt der Projekt Mappe das Projekt **projectItemTypeDefinition** hinzu und öffnet die standardmäßige Class1-Codedatei.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **projectItemTypeDefinition** hinzu und öffnet die standardmäßige Class1-Codedatei.
 
 5. Löschen Sie die Class1-Codedatei aus dem Projekt.
 

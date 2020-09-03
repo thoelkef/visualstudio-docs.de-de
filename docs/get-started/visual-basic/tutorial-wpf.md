@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419210"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Erstellen einer einfachen Anwendung mit Visual Basic
@@ -63,7 +63,7 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
 ::: moniker range="vs-2017"
 
-1. Erstellen Sie ein neues Projekt. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Erstellen Sie ein neues Projekt. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
      ![Wählen Sie auf der Menüleiste "Datei", "Neu", "Projekt" aus.](../media/exploreide-filenewproject.png)
 
@@ -315,7 +315,7 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 ::: moniker range="vs-2017"
 

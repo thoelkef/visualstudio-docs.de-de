@@ -58,9 +58,9 @@
           items:
             - name: Architektur von Office-Projektmappen in Visual Studio
               href: architecture-of-office-solutions-in-visual-studio.md
-            - name: Architektur von Anpassungen auf Dokumentebene
+            - name: Architecture of Document-Level Customizations
               href: architecture-of-document-level-customizations.md
-            - name: Architektur von VSTO-Add-Ins
+            - name: Architecture of VSTO Add-ins
               href: architecture-of-vsto-add-ins.md
             - name: Übersicht über die Visual Studio Tools for Office-Laufzeit
               items:
@@ -86,7 +86,7 @@
               href: running-solutions-in-different-versions-of-microsoft-office.md
             - name: Office-Projekte in der Visual Studio-Umgebung
               href: office-projects-in-the-visual-studio-environment.md
-            - name: Eigenschaften in Office-Projekten
+            - name: Properties in Office Projects
               href: properties-in-office-projects.md
             - name: Anwendungs- und Bereitstellungsmanifeste in Office-Projektmappen
               href: application-and-deployment-manifests-in-office-solutions.md
@@ -138,7 +138,7 @@
                   href: extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md
                 - name: Aufrufen von Code in VSTO-Add-Ins aus anderen Office-Projektmappen
                   href: calling-code-in-vsto-add-ins-from-other-office-solutions.md
-                - name: 'Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-In von VBA'
+                - name: 'Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem VSTO-Add-In'
                   href: walkthrough-calling-code-in-a-vsto-add-in-from-vba.md
                 - name: Anpassen von Features der Benutzeroberfläche mithilfe von Erweiterungsschnittstellen
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
@@ -152,7 +152,7 @@
                       href: combining-vba-and-document-level-customizations.md
                     - name: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
-                    - name: 'Verfügbarmachen von Code für VBA in einem Visual C#-Projekt'
+                    - name: Verfügbarmachen von Code für VBA in einem Visual C#-Projekt
                       href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
                     - name: 'Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual Basic-Projekt'
                       href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
@@ -192,11 +192,11 @@
                           href: walkthrough-changing-worksheet-formatting-using-checkbox-controls.md
                         - name: 'Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md
-                        - name: 'Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche'
+                        - name: 'Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Arbeitsblatt mithilfe einer Schaltfläche'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md
                         - name: 'Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern'
                           href: walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md
-                        - name: 'Exemplarische Vorgehensweise: Aktualisieren eines Arbeitsblatts in einem Dokument mithilfe von Optionsfeldern'
+                        - name: 'Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Optionsfeldern'
                           href: walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md
                         - name: Ändern der Größe von Steuerelementen innerhalb der Arbeitsblattzellen
                           href: how-to-resize-controls-within-worksheet-cells.md
@@ -216,11 +216,11 @@
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: Multifunktionsleisten-Designer
                       href: ribbon-designer.md
-                    - name: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer'
+                    - name: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer'
                       href: walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md
                     - name: Multifunktionsleisten-Objektmodellübersicht
                       href: ribbon-object-model-overview.md
-                    - name: 'Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einem Menüband zur Laufzeit'
+                    - name: 'Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einer Multifunktionsleiste zur Laufzeit'
                       href: walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md
                     - name: Anpassen einer Multifunktionsleiste in Outlook
                       href: customizing-a-ribbon-for-outlook.md
@@ -238,9 +238,9 @@
                       href: how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md
                     - name: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML
                       href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
-                    - name: Multifunktionsleisten-XML
+                    - name: Ribbon XML
                       href: ribbon-xml.md
-                    - name: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML'
+                    - name: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Multifunktionsleisten-XML'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: Aktionsbereichsübersicht
                   items:
@@ -252,7 +252,7 @@
                       href: how-to-manage-control-layout-on-actions-panes.md
                     - name: 'Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich'
                       href: walkthrough-binding-data-to-controls-on-a-word-actions-pane.md
-                    - name: 'Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich'
+                    - name: 'Exemplarische Vorgehensweise: Bindung von Daten an Steuerelemente in einem Excel-Aktionsbereich'
                       href: walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md
                     - name: 'Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich'
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
@@ -264,9 +264,9 @@
                       href: how-to-add-a-custom-task-pane-to-an-application.md
                     - name: 'Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich'
                       href: walkthrough-automating-an-application-from-a-custom-task-pane.md
-                    - name: 'Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menübandschaltfläche'
+                    - name: 'Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Multifunktionsleistenschaltfläche'
                       href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
-                    - name: 'Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen in E-Mails in Outlook'
+                    - name: 'Walkthrough: Displaying Custom Task Panes with E-mail Messages in Outlook'
                       href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
                 - name: Verwenden von WPF-Steuerelementen in Office-Projektmappen
                   href: using-wpf-controls-in-office-solutions.md
@@ -300,11 +300,11 @@
                       href: how-to-scroll-through-database-records-in-a-worksheet.md
                     - name: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements
                       href: how-to-update-a-data-source-with-data-from-a-host-control.md
-                    - name: 'Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene'
+                    - name: 'Exemplarische Vorgehensweise: Einfache Datenbindung in Projekten auf Dokumentebene'
                       href: walkthrough-simple-data-binding-in-a-document-level-project.md
-                    - name: 'Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene'
+                    - name: 'Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene'
                       href: walkthrough-complex-data-binding-in-a-document-level-project.md
-                    - name: 'Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-In-Projekt'
+                    - name: 'Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-In-Projek'
                       href: walkthrough-simple-data-binding-in-vsto-add-in-project.md
                     - name: 'Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-Add-In-Projekt'
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
@@ -472,7 +472,7 @@
                   href: chart-control.md
                 - name: ListObject-Steuerelement
                   href: listobject-control.md
-                - name: NamedRange-Steuerelement
+                - name: NamedRange Control
                   href: namedrange-control.md
                 - name: XmlMappedRange-Steuerelement
                   href: xmlmappedrange-control.md
@@ -506,7 +506,7 @@
               href: walkthrough-creating-your-first-document-level-customization-for-excel.md
             - name: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel'
               href: walkthrough-creating-your-first-vsto-add-in-for-excel.md
-            - name: 'Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in einem VSTO-Add-In-Projekt'
+            - name: 'Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in einem VSTO-Ad-In-Projekt'
               href: walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md
         - name: InfoPath-Projektmappen
           href: infopath-solutions.md
@@ -514,9 +514,9 @@
           items:
             - name: Outlook-Projektmappen
               href: outlook-solutions.md
-            - name: Übersicht über das Outlook-Objektmodell
+            - name: Outlook Object Model Overview
               items:
-                - name: Übersicht über das Outlook-Objektmodell
+                - name: Outlook Object Model Overview
                   href: outlook-object-model-overview.md
                 - name: Arbeiten mit Kontaktelementen
                   items:
@@ -602,13 +602,13 @@
           items:
             - name: PowerPoint-Projektmappen
               href: powerpoint-solutions.md
-            - name: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint'
+            - name: 'Exemplarische Vorgehensweise: Erstellen eines ersten VSTO-Add-Ins für PowerPoint'
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
-        - name: Projektmappen
+        - name: Project Solutions
           items:
-            - name: Projektmappen
+            - name: Project Solutions
               href: project-solutions.md
-            - name: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Projekte'
+            - name: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project'
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Visio-Projektmappen
           items:
@@ -758,7 +758,7 @@
                   href: walkthrough-creating-shortcut-menus-for-bookmarks.md
             - name: 'Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene für Word'
               href: walkthrough-creating-your-first-document-level-customization-for-word.md
-            - name: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word'
+            - name: 'Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Word'
               href: walkthrough-creating-your-first-vsto-add-in-for-word.md
             - name: 'Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-In'
               href: walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md

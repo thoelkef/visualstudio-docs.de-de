@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c3e970ac2d6f7de86908a88aff6235c598ead810
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918479"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eine Textvorlage enthält den Text, der aus ihr generiert wird. Eine Vorlage, die eine Webseite erstellt, enthält z. b. "\<HTML->..." und alle anderen Standardteile einer HTML-Seite. In die Vorlage eingefügt werden *Kontroll Blöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
+Eine Textvorlage enthält den Text, der aus ihr generiert wird. Eine Vorlage, die eine Webseite erstellt, enthält z \<html> . b. "..." und alle anderen Standardteile einer HTML-Seite. In die Vorlage eingefügt werden *Kontroll Blöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
 
  Diese Struktur vereinfacht das Entwickeln einer Vorlage, da Sie mit einem Prototyp der generierten Datei beginnen und nach und nach Kontrollblöcke zum Verändern des Ergebnisses einfügen können.
 
@@ -203,7 +203,7 @@ private void WriteSquareLine(int i)
 
  Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>-Namespaces
+### <a name="namespaces"></a>Namespaces
  Die import-Anweisung entspricht der `using`-Klausel in C# bzw. der `imports`-Klausel in Visual Basic. Sie ermöglicht es Ihnen, ohne einen vollqualifizierten Namen auf Typen im Code zu verweisen:
 
 ```
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
 
  Weitere Informationen finden Sie unter [T4 Import-Direktive](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a>Einschließen von Code und Text
+### <a name="including-code-and-text"></a><a name="Include"></a> Einschließen von Code und Text
  Die `include`-Anweisung fügt Text aus einer anderen Vorlagendatei ein. Die folgende Direktive fügt z. B. den Inhalt von `test.txt` ein.
 
  `<#@ include file="c:\test.txt" #>`
@@ -242,14 +242,14 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Laden Sie eine Datei als Navigier bares Modell**. Eine effektivere Methode besteht darin, die Daten als ein Modell zu lesen, durch das der Textvorlagencode navigieren kann. Sie können z. B. eine XML-Datei laden und mit XPath-Ausdrücken darin navigieren. Sie können auch " [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) " verwenden, um einen Satz von Klassen zu erstellen, mit denen Sie die XML-Daten lesen können.
+ **Laden Sie eine Datei als Navigier bares Modell**. Eine effektivere Methode besteht darin, die Daten als ein Modell zu lesen, durch das der Textvorlagencode navigieren kann. Sie können z. B. eine XML-Datei laden und mit XPath-Ausdrücken darin navigieren. Sie können [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) auch verwenden, um einen Satz von Klassen zu erstellen, mit denen Sie die XML-Daten lesen können.
 
  **Bearbeiten Sie die Modelldatei in einem Diagramm oder Formular.** [!INCLUDE[dsl](../includes/dsl-md.md)] stellt Tools bereit, mit denen Sie ein Modell als Diagramm oder Windows Form bearbeiten können. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. [!INCLUDE[dsl](../includes/dsl-md.md)] erstellt auch einen Satz stark typisierter Klassen, die die Struktur des Modells widerspiegeln. Weitere Informationen finden Sie unter [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
 
  **Verwenden Sie ein UML-Modell**. Sie können Code aus einem UML-Modell generieren. Dies hat den Vorteil, dass das Modell als Diagramm in einer gewohnten Darstellungsweise bearbeitet werden kann. Zudem müssen Sie das Diagramm nicht entwerfen. Weitere Informationen finden Sie unter [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Relative Dateipfade in den Entwurfszeitvorlagen
- Wenn Sie in einer [Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md)auf eine Datei in einem Speicherort verweisen möchten, der relativ zur Textvorlage ist, verwenden Sie `this.Host.ResolvePath()`. Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:
+ Wenn Sie in einer [Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md)auf eine Datei in einem Speicherort verweisen möchten, der relativ zur Textvorlage ist, verwenden Sie `this.Host.ResolvePath()` . Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -274,9 +274,9 @@ Content of MyFile.txt is:
 ## <a name="editing-templates"></a>Bearbeiten von Vorlagen
  Spezialisierte Textvorlagen-Editoren können aus dem Onlinekatalog des Erweiterungs-Managers heruntergeladen werden. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**. Klicken Sie auf **Online**Katalog, und verwenden Sie dann das Suchtool.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Zugehörige Themen
 
-|Task|Topic|
+|Aufgabe|Thema|
 |----------|-----------|
 |Schreiben einer Textvorlage.|[Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Generieren Sie Text mithilfe von Programmcode.|[Text Vorlagen Struktur](../modeling/writing-a-t4-text-template.md)|

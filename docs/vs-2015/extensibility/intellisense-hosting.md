@@ -11,43 +11,43 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203894"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense-Hosting
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio ermöglicht das Hosten von IntelliSense. IntellSense hosten können, bieten Sie IntelliSense für Code, der nicht von der Text-Editor für Visual Studio gehostet wird.  
+Visual Studio ermöglicht das IntelliSense-Hosting. Mit dem intellsense-Hosting können Sie IntelliSense für Code bereitstellen, der nicht vom Text-Editor von Visual Studio gehostet wird.  
   
-## <a name="intellisense-hosting-usage"></a>IntelliSense-Hosting-Nutzung  
- In Visual Studio Code, der Zugriff auf einen Vervollständigungssatz und einen Textpuffer hat erhalten IntelliSense Windows von jedem beliebigen Standort in der Benutzeroberfläche (UI). Beispielszenarien für die dies sind die Vervollständigung in der **Watch** Fenster oder in das Feld "Bedingung" einen Haltepunkt Eigenschaftenfenster.  
+## <a name="intellisense-hosting-usage"></a>IntelliSense-hostingverwendung  
+ In Visual Studio kann jeder Code, der auf einen Vervollständigungs Satz und einen Text Puffer zugreifen kann, IntelliSense-Fenster von jedem beliebigen Ort in der Benutzeroberfläche (UI) abrufen. Einige Beispielszenarien hierfür sind der Abschluss im Fenster über **Wachen** oder im Feld Bedingung eines Eigenschaften Fensters für Haltepunkte.  
   
-### <a name="implementation-interfaces"></a>Implementierung von Schnittstellen  
+### <a name="implementation-interfaces"></a>Implementierungs Schnittstellen  
   
-#### <a name="ivsintellisensehost"></a>IVsIntellisenseHost  
- Alle UI-Komponente, die IntelliSense-Popupfenster hostet muss unterstützen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstelle. Die Kern-Editor Text Standardansicht enthält eine Aktie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> schnittstellenimplementierung, um die aktuellen IntelliSense-Funktionalität beizubehalten. Zum größten Teil, die Methoden der der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstelle dar, die eine Teilmenge von Was wird implementiert, auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle. Die Teilmenge enthält IntelliSense UI Behandlung, Einfügemarke und Markierung Manipulation und Ersatzfunktionen für einfachen Text an. Darüber hinaus die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstelle ermöglicht, separate IntelliSense "Betreff" und "Kontext", sodass IntelliSense für Themen bereitgestellt werden kann, die nicht direkt im Textpuffer vorhanden sind, die für den Kontext verwendet wird.  
+#### <a name="ivsintellisensehost"></a>Ivsintellisenonhost  
+ Jede Benutzeroberflächen Komponente, die IntelliSense-Popup Fenster hostet, muss die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstelle unterstützen. Die Textansicht des Standard-Core-Editors enthält eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Implementierung der-Schnittstelle, um die aktuelle IntelliSense-Funktionalität beizubehalten. In den meisten Fällen stellen die Methoden der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstelle eine Teilmenge der Elemente dar, die auf der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle implementiert werden. Die Teilmenge umfasst die IntelliSense-UI-Behandlung, Einfügemarke und Auswahl Bearbeitung sowie einfache Text Ersetzungs Funktionen. Außerdem ermöglicht die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstelle separate IntelliSense-"Betreff" und "Kontext", damit IntelliSense für Themen bereitgestellt werden kann, die nicht direkt im Text Puffer vorhanden sind, der für den Kontext verwendet wird.  
   
-#### <a name="ivsintellisensehostgethostflags"></a>IVsIntellisenseHost.GetHostFlags  
- Ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> muss vom Anbieter der Schnittstelle implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetHostFlags%2A> Methode zum Aktivieren von eines Clients, um zu bestimmen, welche Art von IntelliSense auf den Host features unterstützt.  
+#### <a name="ivsintellisensehostgethostflags"></a>Ivsintellisenonhost. GetHostFlags  
+ Ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstellen Anbieter muss die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetHostFlags%2A> Methode implementieren, damit ein Client ermitteln kann, welche Art von IntelliSense-Funktionen der Host unterstützt.  
   
- Der hostflags, die in definierten [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), sind unten zusammengefasst.  
+ Die in [intellisenabhostflags](../extensibility/intellisensehostflags.md)definierten hostflags werden unten zusammengefasst.  
   
-|IntelliSense-Hostflag|Beschreibung|  
+|IntelliSense-hostflag|BESCHREIBUNG|  
 |----------------------------|-----------------|  
-|IHF_READONLYCONTEXT|Dieses Flag bedeutet, dass der Kontextpuffer festlegen tritt auf, nur-Lese und Bearbeitungsfunktionen nur innerhalb des Betreff-Texts.|  
-|IHF_NOSEPERATESUBJECT|Festlegen dieser Kennzeichnung bedeutet, die es ist keine separate IntelliSense-Thema. Der Antragsteller vorhanden im Kontextpuffer, z. B. der herkömmlichen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> IntelliSense-System.|  
-|IHF_SINGLELINESUBJECT|Dieses Flag bedeutet, dass der Antragsteller nicht festlegen mehrzeilige fähig, z. B. in einer einzelnen Zeile bearbeiten, der **Watch** Fenster.|  
-|IHF_FORCECOMMITTOCONTEXT|Wenn dieses Flag wird festgelegt, und der Kontextpuffer aktualisiert werden muss, ermöglicht es dem Host, den Schreibschutz-Flag auf den Kontextpuffer, ignoriert werden sollen und Bearbeitungen, um den Vorgang fortzusetzen.|  
-|IHF_OVERTYPE|Bearbeiten (in den Betreff- oder kontextfeldern) sollte im Überschreibmodus durchgeführt werden.|  
+|IHF_READONLYCONTEXT|Wenn dieses Flag festgelegt wird, ist der Kontext Puffer schreibgeschützt, und die Bearbeitung erfolgt nur innerhalb des betrefftexts.|  
+|IHF_NOSEPERATESUBJECT|Das Festlegen dieses Flags bedeutet, dass kein separater IntelliSense-Betreff vorhanden ist. Der Betreff ist im Kontext Puffer vorhanden, z. b. im herkömmlichen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> IntelliSense-System.|  
+|IHF_SINGLELINESUBJECT|Das Festlegen dieses Flags bedeutet, dass der Betreff nicht mehrzeilige fähig ist, z. b. in einer einzelnen Zeilen Bearbeitung im **Überwachungs** Fenster.|  
+|IHF_FORCECOMMITTOCONTEXT|Wenn dieses Flag festgelegt ist und der Kontext Puffer aktualisiert werden muss, aktiviert der Host das schreibgeschützte Flag des Kontext Puffers, um den Vorgang fortzusetzen.|  
+|IHF_OVERTYPE|Die Bearbeitung (im Betreff oder Kontext) sollte im über Schreib-Modus erfolgen.|  
   
-#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit und IVsIntellisenseHost.AfterCompletorCommit  
- Die Rückrufmethoden heißen vom Abschluss Fenster vor und nach dem Text, aktivieren Sie die vorverarbeitung und Nachbearbeitung gespeichert wird.  
+#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>Ivsintellisenonhost. beforecompletor Commit und ivsintellisenabst. aftercompletor Commit  
+ Diese Rückruf Methoden werden vom Vervollständigungs Fenster vor und nach dem Commit von Text aufgerufen, um die Vorverarbeitung und Nachbearbeitung zu ermöglichen.  
   
-#### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
- Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> Schnittstelle ist ein gemeinsam erstellbares Version des standardmäßigen Beendigungsmodus Fensters, das von der integrierten Entwicklungsumgebung (IDE) verwendet wird. Alle <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Benutzeroberfläche kann schnell IntelliSense mithilfe dieser Completor-Schnittstelle implementieren.  
+#### <a name="ivsintellisensecompletor"></a>Ivsintellisenabversitor  
+ Die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> Schnittstelle ist eine zusammen gearbeitbare Version des Standard Vervollständigungs Fensters, das von der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) verwendet wird. Eine beliebige <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> Schnittstelle kann IntelliSense schnell mithilfe dieser Completor-Schnittstelle implementieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

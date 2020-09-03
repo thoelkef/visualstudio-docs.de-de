@@ -1,5 +1,5 @@
 ---
-title: DefaultName-Element (Visual Studio-Vorlagen) | Microsoft Docs
+title: DefaultName-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712307"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName-Element (Visual Studio-Vorlagen)
-Gibt den Namen an, den das Visual Studio-Projektsystem für das Projekt oder Element generiert, wenn es erstellt wird.
+Gibt den Namen an, den das Visual Studio-Projekt System für das Projekt oder Element generiert, wenn es erstellt wird.
 
- \<VSTemplate \<> TemplateData> \<DefaultName>
+ \<VSTemplate> \<TemplateData>
+ \<DefaultName>
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,16 +38,16 @@ Gibt den Namen an, den das Visual Studio-Projektsystem für das Projekt oder Ele
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
 ### <a name="attributes"></a>Attribute
- Keine.
+ Keine
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
@@ -56,14 +57,14 @@ Gibt den Namen an, den das Visual Studio-Projektsystem für das Projekt oder Ele
 ## <a name="remarks"></a>Bemerkungen
  `DefaultName` ist ein optionales Element.
 
- Bei Projekten gibt dieses Element den Namen des Verzeichnisses an, in dem das Projekt auf dem Datenträger gespeichert wird. Für Elemente wird der Dateiname der Quelldatei angegeben.
+ Bei-Projekten gibt dieses Element den Namen des Verzeichnisses an, in dem das Projekt auf dem Datenträger gespeichert wird. Für-Elemente wird der Dateiname der Quelldatei angegeben.
 
- Wenn Sie ein Projekt oder Element erstellen, können Sie den Standardnamen mithilfe der Option **Name** ändern, die entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld Neues **Element** hinzufügen verfügbar ist.
+ Wenn Sie ein Projekt oder Element erstellen, können Sie den Standardnamen mithilfe der Option **Name** ändern. diese Option ist entweder im Dialogfeld **Neues Projekt** oder im Dialogfeld **Neues Element hinzufügen** verfügbar.
 
- Wenn das Projektsystem nicht den Standardnamen für das Projekt oder Element generieren soll, legen Sie das [ProvideDefaultName-Element](../extensibility/providedefaultname-element-visual-studio-templates.md) auf fest. `False`
+ Wenn Sie nicht möchten, dass das Projekt System den Standardnamen für das Projekt oder Element generiert, legen Sie das [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) -Element auf fest `False` .
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel werden die Metadaten für [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] die Standardelementvorlage für eine Klasse veranschaulicht.
+ Im folgenden Beispiel werden die Metadaten für die Standardelement Vorlage für eine- [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Klasse veranschaulicht.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -81,6 +82,6 @@ Gibt den Namen an, den das Visual Studio-Projektsystem für das Projekt oder Ele
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
-- [Visual Studio-Vorlagenschemareferenz](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

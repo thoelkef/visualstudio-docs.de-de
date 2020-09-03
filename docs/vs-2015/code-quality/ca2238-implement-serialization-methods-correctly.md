@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 98e825fd5543b928569b99218c9054aff666e0fe
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545144"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Serialisierungsmethoden korrekt implementieren.
@@ -27,11 +27,11 @@ ms.locfileid: "85545144"
 
 Die neueste Dokumentation zu Visual Studio finden Sie unter [CA2238: Implementieren Sie Serialisierungsmethoden ordnungsgemäß](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Kategorie|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Unterbrechende Änderung|Unterbrechung: Wenn die Methode außerhalb der Assembly sichtbar ist.<br /><br /> Nicht unterbrechend: Wenn die Methode außerhalb der Assembly nicht sichtbar ist.|
 
 ## <a name="cause"></a>Ursache

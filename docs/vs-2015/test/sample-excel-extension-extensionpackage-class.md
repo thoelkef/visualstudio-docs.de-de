@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1c1f4c746fa505b50bab9caa7a516a2abc77f69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672212"
 ---
 # <a name="sample-excel-extension-extensionpackage-class"></a>Sample Excel Extension: ExtensionPackage Class
@@ -38,5 +38,5 @@ Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extensi
 ## <a name="getservice-method"></a>GetService-Methode
  Die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A>-Methode ist der einzige Einstiegspunkt, der vom Framework für den Test der programmierten UI verwendet wird, um entsprechend den Angaben in der Basisklasse für jedes Objekt Zugriff auf den Technologie-Manager, den Eigenschaftenanbieter und den Aktionsfilter zu erhalten.
 
-## <a name="see-also"></a>Siehe auch
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [Erweitern von Tests der programmierten UI und Aktions Aufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+## <a name="see-also"></a>Weitere Informationen
+ <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
