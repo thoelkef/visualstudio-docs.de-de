@@ -16,20 +16,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fc5dc311fd85af2b6a0eb3e29e9932614ca55193
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543909"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Equals und Gleichheitsoperator für Werttypen überschreiben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|OverrideEqualsAndOperatorEqualsOnValueTypes|
 |CheckId|CA1815|
-|Kategorie|Microsoft. Performance|
+|Category|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -46,7 +46,7 @@ ms.locfileid: "85543909"
 
 ## <a name="example-of-a-violation"></a>Beispiel für eine Verletzung
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel zeigt eine Struktur (Werttyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
@@ -54,7 +54,7 @@ ms.locfileid: "85543909"
 
 ## <a name="example-of-how-to-fix"></a>Beispiel für das Beheben von
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Beispiel wird der vorherige Verstoß durch Überschreiben <xref:System.ValueType.Equals%2A?displayProperty=fullName> und Implementieren der Gleichheits Operatoren (= =,! =) korrigiert.
 
 ### <a name="code"></a>Code

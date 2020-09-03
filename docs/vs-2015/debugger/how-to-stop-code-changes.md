@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690062"
 ---
 # <a name="how-to-stop-code-changes"></a>Vorgehensweise: Anhalten von Codeänderungen
@@ -43,6 +43,6 @@ Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den V
   
   Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
   
-## <a name="see-also"></a>Siehe auch  
- [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Bearbeiten und fortfahren](../debugger/edit-and-continue.md)   
  [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

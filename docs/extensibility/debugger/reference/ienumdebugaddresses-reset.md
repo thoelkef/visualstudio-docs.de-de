@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Reset | Microsoft Docs
+title: 'Ienumdebug-Adressen:: Reset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 48026ee5f359c80c2c807fa857f1ec749823e2b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717624"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
@@ -42,8 +42,8 @@ int Reset();
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf von [Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) das erste Element der Enumeration zurück.
+ Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf von [Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) das erste Element der-Enumeration zurück.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
-- [Weiter](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)
+- [Nächste](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

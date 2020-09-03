@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255081"
 ---
 # <a name="workbook-host-item"></a>Arbeitsmappenhostelement
@@ -44,7 +44,7 @@ ms.locfileid: "71255081"
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Einschränkungen für das Arbeitsmappenhostelement in Projekten auf Dokument Ebene
  Ein Projekt auf Dokumentebene kann nur ein <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement (die `ThisWorkbook` -Klasse) enthalten. Sie können dem Projekt zur Entwurfszeit keine neuen <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelemente hinzufügen, und Sie können zur Laufzeit von einer Anpassung auf Dokumentebene keine neuen <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelemente erstellen.
 
- Wenn Sie zur Laufzeit eine neue Excel-Arbeitsmappe erstellen, hat sie den Typ <xref:Microsoft.Office.Interop.Excel.Workbook>. Da das Arbeitsblatt kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Arbeitsmappen zur Laufzeit finden [Sie unter Gewusst wie: Programm gesteuertes Erstellen neuer Arbeits](../vsto/how-to-programmatically-create-new-workbooks.md)Mappen.
+ Wenn Sie zur Laufzeit eine neue Excel-Arbeitsmappe erstellen, hat sie den Typ <xref:Microsoft.Office.Interop.Excel.Workbook>. Da es kein Hostelement ist, kann es keine Hoststeuerelemente bzw. Windows Forms-Steuerelemente enthalten. Weitere Informationen zum Erstellen von Arbeitsmappen zur Laufzeit finden Sie unter Gewusst [wie: Programm gesteuertes Erstellen neuer Arbeits](../vsto/how-to-programmatically-create-new-workbooks.md)Mappen.
 
  Das <xref:Microsoft.Office.Tools.Excel.Workbook> Hostelement dient nicht als Container für Hoststeuerelemente. Daher können Sie der Arbeitsmappe keine sichtbaren Steuerelemente hinzufügen. Sie können jedoch Komponenten wie <xref:System.Data.DataSet>hinzufügen, sodass die Komponenten von allen Arbeitsblättern gemeinsam genutzt werden können. In einem Projekt auf Dokumentebene befinden sich die für die Arbeitsmappe verfügbare Komponenten auf den Registerkarten **Komponente** , **Daten** und **Alle Windows Forms** der **Toolbox**.
 

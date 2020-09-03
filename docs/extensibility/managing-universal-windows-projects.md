@@ -1,5 +1,5 @@
 ---
-title: Verwalten universeller Windows-Projekte | Microsoft Docs
+title: Verwalten von universellen Windows-Projekten | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -9,27 +9,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81744940"
 ---
-# <a name="manage-universal-windows-projects"></a>Verwalten von universellen Windows-Projekten
+# <a name="manage-universal-windows-projects"></a>Universelle Windows-Projekte verwalten
 
-Universelle Windows-Apps sind Apps, die sowohl auf Windows 8.1 als auch auf Windows Phone 8.1 abzielen, sodass Entwickler Code und andere Elemente auf beiden Plattformen verwenden können. Der freigegebene Code und die freigegebenen Ressourcen werden in einem freigegebenen Projekt aufbewahrt, während der plattformspezifische Code und die Ressourcen in separaten Projekten aufbewahrt werden, eines für Windows und das andere für Windows Phone. Weitere Informationen zu universellen Windows-Apps finden Sie unter [Universelle Windows-Apps](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Visual Studio-Erweiterungen, die Projekte verwalten, sollten sich bewusst sein, dass universelle Windows-App-Projekte eine Struktur aufweisen, die sich von Einzelplattform-Apps unterscheidet. In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie im freigegebenen Projekt navigieren und die freigegebenen Elemente verwalten.
+Universelle Windows-apps sind apps, die sowohl Windows 8.1 als auch Windows Phone 8,1 als Ziel verwenden, sodass Entwickler Code und andere Ressourcen auf beiden Plattformen verwenden können. Der freigegebene Code und die Ressourcen werden in einem freigegebenen Projekt aufbewahrt, während der plattformspezifische Code und die Ressourcen in separaten Projekten aufbewahrt werden, einer für Windows und der andere für Windows phone. Weitere Informationen zu universellen Windows-apps finden Sie unter [universelle Windows-apps](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Visual Studio-Erweiterungen, die Projekte verwalten, sollten beachten, dass universelle Windows-App-Projekte eine Struktur aufweisen, die sich von apps mit einer einzelnen Plattform unterscheidet In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie im freigegebenen Projekt navigieren und die freigegebenen Elemente verwalten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downloadcenter. Es ist als optionale Funktion in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="navigate-the-shared-project"></a>Navigieren im freigegebenen Projekt
 
-1. Erstellen Sie ein Projekt mit dem Namen **TestUniversalProject**. (**Datei** > **Neues** > **Projekt** und dann **C-Extensibility** > **Extensibility** > Visual**Studio-Paket**). Fügen Sie eine **benutzerdefinierte** Befehlsprojektelementvorlage hinzu (im **Projektmappen-Explorer**, klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie**Neues Element** **hinzufügen** > aus , und wechseln Sie dann zu **Erweiterbarkeit**). Benennen Sie die Datei **TestUniversalProject**.
+1. Erstellen Sie ein c#-VSIX-Projekt mit dem Namen **testuniversalproject**. (**Datei**  >  **Neu**  >  **Project** und anschließend **c#**-  >  **Erweiterbarkeit**  >  **Visual Studio-Paket**). Fügen Sie eine **benutzerdefinierte Befehls** Projekt Element Vorlage hinzu (Klicken Sie auf dem **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie neues Element **Hinzufügen**und  >  **New Item**dann zu **Erweiterbarkeit**). Nennen Sie die Datei **testuniversalproject**.
 
-2. Fügen Sie einen Verweis auf *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* und *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (im Abschnitt **Erweiterungen)** hinzu.
+2. Fügen Sie einen Verweis auf *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* und *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (im Abschnitt **Erweiterungen** ) hinzu.
 
-3. Öffnen *Sie TestUniversalProject.cs* `using` und fügen Sie die folgenden Direktiven hinzu:
+3. Öffnen Sie *TestUniversalProject.cs* , und fügen Sie die folgenden `using` Anweisungen hinzu:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     using System.Windows.Forms;
     ```
 
-4. Fügen `TestUniversalProject` Sie in der Klasse ein privates Feld hinzu, das auf das **Ausgabefenster** zeigt.
+4. Fügen Sie in der- `TestUniversalProject` Klasse ein privates Feld hinzu, das auf das **Ausgabe** Fenster zeigt.
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-5. Legen Sie den Verweis auf den Ausgabebereich innerhalb des TestUniversalProject-Konstruktors fest:
+5. Legen Sie den Verweis auf den Ausgabebereich im testuniversalproject-Konstruktor fest:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -78,7 +78,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-6. Entfernen Sie den `ShowMessageBox` vorhandenen Code aus der Methode:
+6. Entfernen Sie den vorhandenen Code aus der- `ShowMessageBox` Methode:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -86,7 +86,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-7. Holen Sie sich das DTE-Objekt, das wir in dieser exemplarischen Vorgehensweise für verschiedene Zwecke verwenden werden. Stellen Sie außerdem sicher, dass eine Lösung geladen wird, wenn auf die Menüschaltfläche geklickt wird.
+7. Holen Sie sich das DTE-Objekt, das wir in dieser exemplarischen Vorgehensweise für verschiedene Zwecke verwenden werden. Stellen Sie außerdem sicher, dass eine Projekt Mappe geladen wird, wenn auf die Menü Schaltfläche geklickt wird.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -104,7 +104,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-8. Suchen Sie das freigegebene Projekt. Das gemeinsam genutzte Projekt ist ein reiner Container. es baut oder produziert keine Ausgaben. Die folgende Methode findet das erste freigegebene <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Projekt in der Projektmappe, indem nach dem Objekt gesucht wird, das über die freigegebene Projektfunktion verfügt.
+8. Suchen Sie das freigegebene Projekt. Das freigegebene Projekt ist ein reiner Container. Es werden keine Ausgaben erstellt oder erzeugt. Die folgende Methode sucht das erste freigegebene Projekt in der Projekt Mappe durchsuchen nach dem- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt, das über die Funktion des freigegebenen Projekts verfügt.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -126,7 +126,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-9. Geben `ShowMessageBox` Sie in der Methode die Beschriftung (den Projektnamen, der im **Projektmappen-Explorer**angezeigt wird) des freigegebenen Projekts aus.
+9. Geben Sie in der- `ShowMessageBox` Methode die Beschriftung (den Projektnamen, der in der **Projektmappen-Explorer**angezeigt wird) des freigegebenen Projekts aus.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -156,7 +156,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-10. Holen Sie sich das aktive Plattformprojekt. Plattformprojekte sind Projekte, die plattformspezifischen Code und Ressourcen enthalten. Die folgende Methode verwendet <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_SharedItemContextHierarchy> das neue Feld, um das aktive Plattformprojekt abzubekommen.
+10. Holen Sie sich das aktive Platt Form Projekt. Platt Form Projekte sind Projekte, die plattformspezifischen Code und Ressourcen enthalten. Die folgende Methode verwendet das neue Feld <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_SharedItemContextHierarchy> , um das aktive Platt Form Projekt zu erhalten.
 
     ```csharp
     private IVsHierarchy GetActiveProjectContext(IVsHierarchy hierarchy)
@@ -174,7 +174,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-11. Geben `ShowMessageBox` Sie in der Methode die Beschriftung des aktiven Plattformprojekts aus.
+11. Geben Sie in der- `ShowMessageBox` Methode die Beschriftung des aktiven Platt Form Projekts aus.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -214,7 +214,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-12. Iterate durch die Plattform-Projekte. Die folgende Methode ruft alle importierenden (Plattform-)Projekte aus dem freigegebenen Projekt ab.
+12. Iterieren Sie die Platt Form Projekte. Mit der folgenden Methode werden alle importierten (Plattform-) Projekte aus dem freigegebenen Projekt abgerufen.
 
     ```csharp
     private IEnumerable<IVsHierarchy> EnumImportingProjects(IVsHierarchy hierarchy)
@@ -233,7 +233,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     ```
 
     > [!IMPORTANT]
-    > Wenn der Benutzer ein universelles C++-Windows-App-Projekt in der experimentellen Instanz geöffnet hat, löst der obige Code eine Ausnahme aus. Dies ist ein bekanntes Problem. Um die Ausnahme zu `foreach` vermeiden, ersetzen Sie den obigen Block durch Folgendes:
+    > Wenn der Benutzer ein C++ Universal Windows-App-Projekt in der experimentellen Instanz geöffnet hat, löst der obige Code eine Ausnahme aus. Dies ist ein bekanntes Problem. Um die Ausnahme zu vermeiden, ersetzen Sie den `foreach` obigen Block durch Folgendes:
 
     ```csharp
     var importingProjects = sharedAssetsProject.EnumImportingProjects();
@@ -243,7 +243,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-13. Geben `ShowMessageBox` Sie in der Methode die Beschriftung jedes Plattformprojekts aus. Fügen Sie den folgenden Code nach der Zeile ein, die die Beschriftung des aktiven Plattformprojekts ausgibt. In dieser Liste werden nur die geladenen Plattformprojekte angezeigt.
+13. Geben Sie in der- `ShowMessageBox` Methode die Beschriftung der einzelnen Platt Form Projekte aus. Fügen Sie den folgenden Code nach der Zeile ein, die die Beschriftung des aktiven Platt Form Projekts ausgibt. Nur die geladenen Platt Form Projekte werden in dieser Liste angezeigt.
 
     ```csharp
     output.OutputStringThreadSafe("Platform projects:\n");
@@ -259,7 +259,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-14. Ändern Sie das aktive Plattformprojekt. Die folgende Methode legt <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>das aktive Projekt mithilfe von fest.
+14. Ändern Sie das aktive Platt Form Projekt. Mit der folgenden Methode wird das aktive Projekt mithilfe von festgelegt <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> .
 
     ```csharp
     private int SetActiveProjectContext(IVsHierarchy hierarchy, IVsHierarchy activeProjectContext)
@@ -268,7 +268,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-15. Ändern `ShowMessageBox` Sie in der Methode das aktive Plattformprojekt. Fügen Sie diesen `foreach` Code in den Block ein.
+15. Ändern Sie in der- `ShowMessageBox` Methode das aktive Platt Form Projekt. Fügen Sie diesen Code in den- `foreach` Block ein.
 
     ```csharp
     bool isActiveProjectSet = false;
@@ -291,7 +291,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Probieren Sie es jetzt aus. Drücken Sie F5, um die experimentelle Instanz zu starten. Erstellen Sie in der experimentellen Instanz ein universelles Hub-App-Projekt von C- und Hub-App (im Dialogfeld **Neues Projekt,** **Visual C-** > **Windows** > **8** > **Universal** > Hub**App**). Nachdem die Projektmappe geladen wurde, wechseln Sie zum Menü **Extras,** und klicken Sie auf **TestUniversalProject aufrufen**, und überprüfen Sie dann den Text im **Ausgabebereich.** Folgendes sollte angezeigt werden:
+16. Probieren Sie es jetzt aus. Drücken Sie F5, um die experimentelle Instanz zu starten. Erstellen Sie ein c#-Universal Hub-App-Projekt in der experimentellen Instanz (im Dialogfeld **Neues Projekt** , **Visual c#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **Hub-App**). Nachdem die Projekt Mappe geladen wurde, wechseln Sie **zum Menü Extras** , klicken Sie auf **testuniversalproject aufrufen**, und überprüfen Sie dann den Text im **Ausgabe** Bereich. Folgendes sollte angezeigt werden:
 
     ```
     Found shared project: HubApp.Shared
@@ -302,9 +302,9 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     set active project: HubApp.WindowsPhone
     ```
 
-### <a name="manage-the-shared-items-in-the-platform-project"></a>Verwalten der freigegebenen Elemente im Plattformprojekt
+### <a name="manage-the-shared-items-in-the-platform-project"></a>Verwalten der freigegebenen Elemente im Platt Form Projekt
 
-1. Suchen Sie die freigegebenen Elemente im Plattformprojekt. Die Elemente im freigegebenen Projekt werden im Plattformprojekt als freigegebene Elemente angezeigt. Sie können sie nicht im **Projektmappen-Explorer**sehen, aber Sie können die Projekthierarchie durchsuchen, um sie zu finden. Die folgende Methode führt durch die Hierarchie und sammelt alle freigegebenen Elemente. Optional wird die Beschriftung jedes Elements ausgegeben. Die freigegebenen Elemente werden <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>durch die neue Eigenschaft identifiziert.
+1. Suchen Sie die freigegebenen Elemente im Platt Form Projekt. Die Elemente im freigegebenen Projekt werden im Platt Form Projekt als freigegebene Elemente angezeigt. Sie können Sie nicht im **Projektmappen-Explorer**sehen, aber Sie können die Projekt Hierarchie durchlaufen, um Sie zu finden. Mit der folgenden Methode wird die Hierarchie durchlaufen und alle freigegebenen Elemente erfasst. Optional gibt Sie die Beschriftung der einzelnen Elemente aus. Die freigegebenen Elemente werden durch die neue-Eigenschaft identifiziert <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> .
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -336,7 +336,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-2. Fügen `ShowMessageBox` Sie in der Methode den folgenden Code hinzu, um die Plattformprojekthierarchieelemente zu gehen. Fügen Sie `foreach` es in den Block ein.
+2. Fügen Sie in der- `ShowMessageBox` Methode den folgenden Code hinzu, um die Hierarchie Elemente der Plattform zu durchlaufen. Fügen Sie Sie in den- `foreach` Block ein.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -344,7 +344,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3. Lesen Sie die freigegebenen Elemente. Die freigegebenen Elemente werden im Plattformprojekt als ausgeblendete verknüpfte Dateien angezeigt, und Sie können alle Eigenschaften als normale verknüpfte Dateien lesen. Der folgende Code liest den vollständigen Pfad des ersten freigegebenen Elements.
+3. Lesen Sie die freigegebenen Elemente. Die freigegebenen Elemente werden im Platt Form Projekt als verborgene verknüpfte Dateien angezeigt, und Sie können alle Eigenschaften als normale verknüpfte Dateien lesen. Der folgende Code liest den vollständigen Pfad des ersten freigegebenen Elements.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -353,7 +353,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. Probieren Sie es jetzt aus. Drücken Sie **F5,** um die experimentelle Instanz zu starten. Erstellen Sie in der experimentellen Instanz ein universelles Hub-App-Projekt von C- und Hub-Instanz (im Dialogfeld **Neues Projekt,** **Visual C-** > **Windows** > **8** > **Universal** > **Hub-App**), wechseln Sie zum Menü **Extras,** und klicken Sie auf **TestUniversalProject aufrufen**, und überprüfen Sie dann den Text im **Ausgabebereich.** Folgendes sollte angezeigt werden:
+4. Probieren Sie es jetzt aus. Drücken Sie **F5** , um die experimentelle Instanz zu starten. Erstellen eines universellen c#-Hub-App-Projekts in der experimentellen Instanz (im Dialogfeld **Neues Projekt** , **Visual c#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **Hub-App**) **Tools** wechseln Sie zum Menü Extras, klicken Sie auf **testuniversalproject aufrufen**, und überprüfen Sie dann den Text im **Ausgabe** Bereich. Folgendes sollte angezeigt werden:
 
     ```
     Found shared project: HubApp.Shared
@@ -407,25 +407,25 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
                 SectionPage.xaml.cs
     ```
 
-### <a name="detect-changes-in-platform-projects-and-shared-projects"></a>Erkennen von Änderungen in Plattformprojekten und freigegebenen Projekten
+### <a name="detect-changes-in-platform-projects-and-shared-projects"></a>Erkennen von Änderungen in Platt Form Projekten und freigegebenen Projekten
 
-1. Sie können Hierarchie- und Projektereignisse verwenden, um Änderungen in freigegebenen Projekten zu erkennen, genau wie bei Plattformprojekten. Die Projektelemente im freigegebenen Projekt sind jedoch nicht sichtbar, was bedeutet, dass bestimmte Ereignisse nicht ausgelöst werden, wenn freigegebene Projektelemente geändert werden.
+1. Sie können Hierarchie-und Projekt Ereignisse verwenden, um Änderungen in freigegebenen Projekten wie bei Platt Form Projekten zu erkennen. Die Projekt Elemente im freigegebenen Projekt sind jedoch nicht sichtbar, was bedeutet, dass bestimmte Ereignisse nicht ausgelöst werden, wenn freigegebene Projekt Elemente geändert werden.
 
-    Berücksichtigen Sie die Reihenfolge der Ereignisse, wenn eine Datei in einem Projekt umbenannt wird:
+    Sehen Sie sich die Reihenfolge der Ereignisse an, wenn eine Datei in einem Projekt umbenannt wird:
 
    1. Der Dateiname wird auf dem Datenträger geändert.
 
-   2. Die Projektdatei wird aktualisiert, um den neuen Namen der Datei einzuschließen.
+   2. Die Projektdatei wird so aktualisiert, dass Sie den neuen Namen der Datei enthält.
 
-      Hierarchieereignisse (z. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>B. ) verfolgen im Allgemeinen die in der Benutzeroberfläche angezeigten Änderungen, wie im **Projektmappen-Explorer**. Hierarchieereignisse betrachten einen Dateiumbenennungsvorgang als aus einem Dateilöschen und dann aus einer Dateiaddition bestehen. Wenn jedoch unsichtbare Elemente geändert werden, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> löst das <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> Hierarchieereignissystem ein Ereignis aus, aber kein Ereignis. Wenn Sie also eine Datei in einem Plattformprojekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>umbenennen, erhalten Sie beide und , aber <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>wenn Sie eine Datei in einem freigegebenen Projekt umbenennen, erhalten Sie nur .
+      Hierarchie Ereignisse (z. b <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> .) verfolgen im Allgemeinen die Änderungen, die in der Benutzeroberfläche angezeigt werden, wie in der **Projektmappen-Explorer**. Hierarchie Ereignisse stellen einen Datei Umbenennungs Vorgang in Erwägung, der aus einer Datei Löschung und einer Datei Addition besteht. Wenn jedoch unsichtbare Elemente geändert werden, löst das Hierarchie-Ereignis System ein Ereignis aus, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> aber kein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> Ereignis. Wenn Sie eine Datei in einem Platt Form Projekt umbenennen, erhalten Sie daher sowohl <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> als auch <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> , aber wenn Sie eine Datei in einem freigegebenen Projekt umbenennen, erhalten Sie nur einen <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> .
 
-      Um Änderungen an Projektelementen nachzuverfolgen, können Sie DTE-Projektelementereignisse (die in <xref:EnvDTE.ProjectItemsEventsClass>) behandeln. Wenn Sie jedoch eine große Anzahl von Ereignissen verarbeiten, können <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>Sie eine bessere Leistung bei der Verarbeitung der Ereignisse in erhalten. In dieser exemplarischen Vorgehensweise zeigen wir nur die Hierarchieereignisse und die DTE-Ereignisse an. In diesem Verfahren fügen Sie einem freigegebenen Projekt und einem Plattformprojekt einen Ereignislistener hinzu. Wenn Sie dann eine Datei in einem freigegebenen Projekt und eine andere Datei in einem Plattformprojekt umbenennen, werden die Ereignisse angezeigt, die für jeden Umbenennungsvorgang ausgelöst werden.
+      Zum Nachverfolgen von Änderungen in Projekt Elementen können Sie DTE-Projekt Element Ereignisse (die in gefunden <xref:EnvDTE.ProjectItemsEventsClass> ) behandeln. Wenn Sie jedoch eine große Anzahl von Ereignissen verarbeiten, können Sie eine bessere Leistung erzielen, wenn Sie die Ereignisse in verarbeiten <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> . In dieser exemplarischen Vorgehensweise werden nur die Hierarchie Ereignisse und die DTE-Ereignisse angezeigt. In diesem Verfahren fügen Sie einen Ereignislistener zu einem freigegebenen Projekt und einem Platt Form Projekt hinzu. Wenn Sie dann eine Datei in einem freigegebenen Projekt und eine andere Datei in einem Platt Form Projekt umbenennen, werden die Ereignisse angezeigt, die für jeden Umbenennungs Vorgang ausgelöst werden.
 
-      In diesem Verfahren fügen Sie einem freigegebenen Projekt und einem Plattformprojekt einen Ereignislistener hinzu. Wenn Sie dann eine Datei in einem freigegebenen Projekt und eine andere Datei in einem Plattformprojekt umbenennen, werden die Ereignisse angezeigt, die für jeden Umbenennungsvorgang ausgelöst werden.
+      In diesem Verfahren fügen Sie einen Ereignislistener zu einem freigegebenen Projekt und einem Platt Form Projekt hinzu. Wenn Sie dann eine Datei in einem freigegebenen Projekt und eine andere Datei in einem Platt Form Projekt umbenennen, werden die Ereignisse angezeigt, die für jeden Umbenennungs Vorgang ausgelöst werden.
 
-2. Fügen Sie einen Ereignislistener hinzu. Fügen Sie dem Projekt eine neue Klassendatei hinzu, und nennen Sie sie *HierarchyEventListener.cs*.
+2. Fügen Sie einen Ereignislistener hinzu. Fügen Sie dem Projekt eine neue Klassendatei hinzu, und nennen Sie Sie *HierarchyEventListener.cs*.
 
-3. Öffnen Sie die *HierarchyEventListener.cs* Datei, und fügen Sie mithilfe von Direktiven Folgendes hinzu:
+3. Öffnen Sie die Datei *HierarchyEventListener.cs* , und fügen Sie die folgenden using-Anweisungen hinzu:
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -433,14 +433,14 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
    using System.IO;
    ```
 
-4. Lassen `HierarchyEventListener` Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>die Klasse implementieren:
+4. Implementieren Sie die- `HierarchyEventListener` Klasse <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> :
 
    ```csharp
    class HierarchyEventListener : IVsHierarchyEvents
    { }
    ```
 
-5. Implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>die Member von , wie im folgenden Code.
+5. Implementieren Sie die Member von <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> , wie im folgenden Code dargestellt.
 
    ```csharp
    class HierarchyEventListener : IVsHierarchyEvents
@@ -483,7 +483,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
    }
    ```
 
-6. Fügen Sie in derselben Klasse einen weiteren <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>Ereignishandler für das DTE-Ereignis hinzu, der bei jeder Umbenennung eines Projektelements auftritt.
+6. Fügen Sie in derselben Klasse einen weiteren Ereignishandler für das DTE-Ereignis hinzu <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> , das auftritt, wenn ein Projekt Element umbenannt wird.
 
    ```csharp
    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
@@ -493,7 +493,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
    }
    ```
 
-7. Registrieren Sie sich für die Hierarchieereignisse. Sie müssen sich für jedes Projekt, das Sie verfolgen, separat anmelden. Fügen Sie den `ShowMessageBox`folgenden Code in , einen für das freigegebene Projekt und den anderen für eines der Plattformprojekte hinzu.
+7. Registrieren Sie sich für die Hierarchie Ereignisse. Sie müssen sich für jedes Projekt, das Sie nachverfolgen, separat registrieren. Fügen Sie den folgenden Code in `ShowMessageBox` , einen für das freigegebene Projekt und den anderen für eines der Platt Form Projekte hinzu.
 
    ```csharp
    // hook up the event listener for hierarchy events on the shared project
@@ -508,7 +508,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);
    ```
 
-8. Registrieren Sie sich für das <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>DTE-Projektelementereignis . Fügen Sie den folgenden Code hinzu, nachdem Sie den zweiten Listener angeschlossen haben.
+8. Registrieren Sie sich für das DTE-Projekt Element-Ereignis <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> . Fügen Sie den folgenden Code hinzu, nachdem Sie den zweiten Listener eingebunden haben.
 
    ```csharp
    // hook up DTE events for project items
@@ -516,12 +516,12 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;
    ```
 
-9. Ändern Sie das freigegebene Element. Freigegebene Elemente in einem Plattformprojekt können nicht geändert werden. Stattdessen müssen Sie sie im freigegebenen Projekt ändern, das der tatsächliche Besitzer dieser Elemente ist. Sie können die entsprechende Element-ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>im freigegebenen Projekt mit abrufen und ihm den vollständigen Pfad des freigegebenen Elements geben. Anschließend können Sie das freigegebene Element ändern. Die Änderung wird an die Plattformprojekte weitergegeben.
+9. Ändern Sie das freigegebene Element. Freigegebene Elemente in einem Platt Form Projekt können nicht geändert werden. Stattdessen müssen Sie Sie im freigegebenen Projekt ändern, bei dem es sich um den eigentlichen Besitzer dieser Elemente handelt. Sie können die entsprechende Element-ID im freigegebenen Projekt mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> dem vollständigen Pfad des freigegebenen Elements erhalten. Anschließend können Sie das freigegebene Element ändern. Die Änderung wird an die Platt Form Projekte weitergegeben.
 
     > [!IMPORTANT]
-    > Sie sollten herausfinden, ob ein Projektelement ein freigegebenes Element ist, bevor Sie es ändern.
+    > Vor der Änderung sollten Sie herausfinden, ob ein Projekt Element ein frei gegebenes Element ist.
 
-     Die folgende Methode ändert den Namen einer Projektelementdatei.
+     Die folgende Methode ändert den Namen einer Projekt Element Datei.
 
     ```csharp
     private void ModifyFileNameInProject(IVsHierarchy project, string path)
@@ -539,7 +539,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-10. Rufen Sie diese Methode nach `ShowMessageBox` dem gesamten anderen Code auf, um den Dateinamen des Elements im freigegebenen Projekt zu ändern. Fügen Sie diese nach dem Code ein, der den vollständigen Pfad des Elements im freigegebenen Projekt abruft.
+10. Diese Methode nach dem gesamten anderen Code in aufzurufen `ShowMessageBox` , um den Dateinamen des Elements im freigegebenen Projekt zu ändern. Fügen Sie dies nach dem Code ein, der den vollständigen Pfad des Elements im freigegebenen Projekt abruft.
 
     ```csharp
     // change the file name of an item in a shared project
@@ -549,9 +549,9 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Erstellen Sie das Projekt, und führen Sie es aus. Erstellen Sie in der experimentellen Instanz eine universelle Hub-App von C- und Hub, wechseln Sie zum Menü **Extras,** und klicken Sie auf **TestUniversalProject aufrufen**, und überprüfen Sie den Text im allgemeinen Ausgabebereich. Der Name des ersten Elements im freigegebenen Projekt (wir erwarten, dass es sich um die *App.xaml-Datei* handelt) sollte geändert werden, und Sie sollten sehen, dass das <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> Ereignis ausgelöst wurde. Da das Umbenennen von *App.xaml* dazu führt, dass *auch App.xaml.cs* umbenannt werden, sollten in diesem Fall vier Ereignisse angezeigt werden (zwei für jedes Plattformprojekt). (DTE-Ereignisse verfolgen die Elemente im freigegebenen Projekt nicht.) Es sollten <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zwei Ereignisse angezeigt werden (eines <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> für jedes Plattformprojekt), aber keine Ereignisse.
+11. Erstellen Sie das Projekt, und führen Sie es aus. Erstellen Sie eine universelle c#-Hub-app in der experimentellen Instanz. wechseln Sie **zum Menü Extras** , klicken Sie auf **testuniversalproject aufrufen**, und überprüfen Sie den Text im Bereich allgemeine Ausgabe. Der Name des ersten Elements im freigegebenen Projekt (erwartet wird, dass es sich um die Datei " *app. XAML* " handelt) muss geändert werden, und Sie sollten sehen, dass das <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> Ereignis ausgelöst wurde. Da in diesem Fall das Umbenennen von *app. XAML* bewirkt, dass *app.XAML.cs* ebenfalls umbenannt wird, sollten vier Ereignisse angezeigt werden (zwei für jedes Platt Form Projekt). (DTE-Ereignisse verfolgen die Elemente im freigegebenen Projekt nicht nach.) Es sollten zwei <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> Ereignisse angezeigt werden (eine für jedes der Platt Form Projekte), aber keine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> Ereignisse.
 
-12. Versuchen Sie nun, eine Datei in einem Plattformprojekt umzubenennen, und Sie können den Unterschied in den Ereignissen sehen, die ausgelöst werden. Fügen Sie `ShowMessageBox` nach dem Aufruf `ModifyFileName`von den folgenden Code hinzu.
+12. Versuchen Sie jetzt, eine Datei in einem Platt Form Projekt umzubenennen, und Sie können den Unterschied in den Ereignissen sehen, die ausgelöst werden. Fügen Sie nach dem-Befehl in den folgenden Code ein `ShowMessageBox` `ModifyFileName` .
 
     ```csharp
     // change the file name of an item in a platform project
@@ -566,4 +566,4 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. Erstellen Sie das Projekt, und führen Sie es aus. Erstellen Sie in der experimentellen Instanz ein universelles Projekt von C-C-Wert, wechseln Sie zum Menü **Extras,** und klicken Sie auf **TestUniversalProject aufrufen**, und überprüfen Sie den Text im allgemeinen Ausgabebereich. Nachdem die Datei im Plattformprojekt umbenannt wurde, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> sollten sowohl <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> ein Ereignis als auch ein Ereignis angezeigt werden. Da das Ändern der Datei dazu führte, dass keine anderen Dateien geändert wurden und Änderungen an Elementen in einem Plattformprojekt nirgendwo weitergegeben werden, gibt es nur ein einzelnes dieser Ereignisse.
+13. Erstellen Sie das Projekt, und führen Sie es aus. Erstellen Sie ein universelles c#-Projekt in der experimentellen Instanz. wechseln Sie **zum Menü Extras** , klicken Sie auf **testuniversalproject aufrufen**, und überprüfen Sie den Text im Bereich allgemeine Ausgabe. Nachdem die Datei im Platt Form Projekt umbenannt wurde, sollten ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> Ereignis und ein Ereignis angezeigt werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> . Da das Ändern der Datei dazu geführt hat, dass keine anderen Dateien geändert wurden, und da Änderungen an Elementen in einem Platt Form Projekt nicht an einer beliebigen Stelle weitergegeben werden, gibt es nur eines dieser Ereignisse.

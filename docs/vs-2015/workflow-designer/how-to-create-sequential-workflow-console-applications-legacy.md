@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9e3f97021e742db7b22a400dee0682669b07e4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662725"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Vorgehensweise: Erstellen von Konsolenanwendungen für sequenzielle Workflows (Vorgängerversion)
@@ -25,7 +25,7 @@ Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendu
 
 ### <a name="to-create-a-sequential-workflow-console-application"></a>So erstellen Sie eine Konsolenanwendung für sequenzielle Workflows
 
-1. Starten Sie Visual Studio.
+1. Starten Sie Visual Studio.
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
@@ -36,7 +36,7 @@ Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendu
     > [!NOTE]
     > Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.
 
-4. Wählen Sie im Bereich **Projekttypen** die Option C# Visual projects oder Visual Basic Projekte (unter **andere Sprachen**) aus, und wählen Sie dann **Workflow**aus.
+4. Wählen Sie im Bereich **Projekttypen** die Option Visual c#-Projekte oder Visual Basic Projekte (unter **andere Sprachen**) aus, und wählen Sie dann **Workflow**aus.
 
 5. Wählen Sie im Bereich **Vorlagen** die Option **Konsolenanwendung für sequenzielle Workflows**aus.
 
@@ -52,5 +52,5 @@ Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendu
 
 9. Ziehen Sie eine Aktivität aus der **Toolbox** auf die Entwurfs Oberfläche im Bereich **Drop Activity** festgelegt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Legacy Workflow Projekten](../workflow-designer/creating-legacy-workflow-projects.md) [entwickeln von Workflows](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

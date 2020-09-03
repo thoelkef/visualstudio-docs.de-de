@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbfa24733644067b3f79fc7b6e8450df2130116d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179952"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Gibt an, welche Informationen Sie über eine Speicherkontext abzurufen.  
+Gibt an, welche Informationen über einen Speicher Kontext abgerufen werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,38 +53,38 @@ public enum enum_CONTEXT_INFO_FIELDS {
   
 ## <a name="members"></a>Member  
  CIF_MODULEURL  
- Initialisieren und Verwenden der `bstrModuleUrl` Feld der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur.  
+ Initialisieren Sie das- `bstrModuleUrl` Feld der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur, und verwenden Sie es.  
   
  CIF_FUNCTION  
- Initialisieren und Verwenden der `bstrFunction` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `bstrFunction` `CONTEXT_INFO` .  
   
  CIF_FUNCTIONOFFSET  
- Initialisieren und Verwenden der `posFunctionOffset` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `posFunctionOffset` `CONTEXT_INFO` .  
   
  CIF_ADDRESS  
- Initialisieren und Verwenden der `bstrAddress` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `bstrAddress` `CONTEXT_INFO` .  
   
  CIF_ADDRESSOFFSET  
- Initialisieren und Verwenden der `bstrAddressOffset` Feld der `CONTEXT_INFO` Struktur.  
+ Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `bstrAddressOffset` `CONTEXT_INFO` .  
   
  CIF_ALLFIELDS  
- Alle Felder initialisiert und Verwenden der `CONTEXT_INFO` Struktur.  
+ Initialisieren/verwenden Sie alle Felder der- `CONTEXT_INFO` Struktur.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Werte werden übergeben einen Parameter für die [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) Methode, um die Felder anzugeben der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) sind, dass die Struktur initialisiert werden.  
+## <a name="remarks"></a>Bemerkungen  
+ Diesen Werten wird ein Parameter an die [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) -Methode übergeben, um anzugeben, welche Felder der [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Struktur initialisiert werden sollen.  
   
- Diese Flags werden auch verwendet, welche Felder der an die `CONTEXT_INFO` -Struktur sind gültig und verwendet, wenn die Struktur zurückgegeben wird.  
+ Diese Flags werden auch verwendet, um anzugeben, welche Felder der `CONTEXT_INFO` Struktur verwendet und gültig sind, wenn die Struktur zurückgegeben wird.  
   
  Diese Werte können mit einem bitweisen OR kombiniert werden.  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: msdbg.h  
+ Header: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
