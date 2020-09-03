@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543597"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint- &gt; Element (Office-Entwicklung in Visual Studio)
@@ -112,7 +112,7 @@ ms.locfileid: "85543597"
 </vstav3:entryPoint>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
 - [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)

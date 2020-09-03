@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac9a4517fcf13dbb0e1d7a6f994092168723e660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672152"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Sample Excel Extension: TechnologyManager Class
@@ -60,7 +60,7 @@ Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extensi
 ## <a name="getexcelelement-internal-method"></a>Interne GetExcelElement-Methode
  Diese interne Methode akzeptiert ein Fensterhandle und Informationen zu einem Excel-Element und gibt das angeforderte Excel-Element zurück.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> <xref:System.NotSupportedException>
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>

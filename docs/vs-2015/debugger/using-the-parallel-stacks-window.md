@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89125c8e1dea25ab02fe64c21b8166e9d65194a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542219"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Verwenden des Fensters "Parallele Stapel"
@@ -51,7 +51,7 @@ Das Fenster **parallele Stapel** ist nützlich, wenn Sie Multithreadanwendungen 
 ## <a name="method-context-icons"></a>Methodenkontextsymbole  
  In der folgenden Tabelle werden die Symbole beschrieben, die Informationen zu aktiven Stapelrahmen und zum aktuellen Stapelrahmen liefern:  
   
-|Symbol|Beschreibung|  
+|Symbol|BESCHREIBUNG|  
 |-|-|
 |![Parallele Stapel - Gelber Pfeil](../debugger/media/icon-parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen des aktuellen Threads enthält.|  
 |![Parallele Stapel - Threads-Symbol](../debugger/media/icon-parallelthreads.gif "Icon_ParallelThreads")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen eines nicht-aktuellen Threads enthält.|  

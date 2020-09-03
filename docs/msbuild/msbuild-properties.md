@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633290"
 ---
 # <a name="msbuild-properties"></a>MSBuild-Eigenschaften
@@ -31,7 +31,7 @@ Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet w
 </PropertyGroup>
 ```
 
- In der gesamten Projektdatei wird mit der Syntax „$(\<PropertyName>)“ auf Eigenschaften verwiesen. Beispielsweise wird mit $(BuildDir) auf die Eigenschaft im vorangehenden Beispiel verwiesen.
+ In der gesamten Projektdatei wird mit der Syntax $(\<PropertyName>) auf Eigenschaften verwiesen. Beispielsweise wird mit $(BuildDir) auf die Eigenschaft im vorangehenden Beispiel verwiesen.
 
  Eigenschaftswerte können durch Neudefinieren der Eigenschaft geändert werden. Der Wert der Eigenschaft `BuildDir` kann mit folgendem XML geändert werden:
 

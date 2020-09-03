@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a66242554de28ab45cc797d523ea7b5a967e9e5d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542973"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Speicherintensive CompareTo-Funktionen
@@ -31,7 +31,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0011: teure Compa
 |Regel-ID|DA0011|  
 |Kategorie|.NET Framework-Verwendung|  
 |Profilerstellungsmethoden|Sampling<br /><br /> .NET-Arbeitsspeicher|  
-|`Message`|CompareTo-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der CompareTo-Funktionen.|  
+|Meldung|CompareTo-Funktionen dürfen nicht speicherintensiv sein und keinen Speicher belegen. Reduzieren Sie daher, wenn möglich, die Komplexität der CompareTo-Funktionen.|  
 |Regeltyp|Warnung|  
   
 ## <a name="cause"></a>Ursache  
