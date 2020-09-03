@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produkt&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
+title: '&lt;Product- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200644"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; -Element (Bootstrapper)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product- &gt; Element (Boots Trapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die `Product` Element ist das XML-Element der obersten Ebene innerhalb der einer Produktdatei.  
+Das `Product` -Element ist das XML-Element der obersten Ebene in einer Produktdatei.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -141,14 +141,14 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Die `Product` -Element muss in einer Produktdatei. Er hat das folgende Attribut.  
+ Das- `Product` Element ist in einer Produktdatei erforderlich. Es verfügt über das folgende Attribut.  
   
-|Attribut|Beschreibung|  
+|attribute|BESCHREIBUNG|  
 |---------------|-----------------|  
 |`ProductCode`|Ein eindeutiger Bezeichner für das Produkt.|  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel zeigt eine vollständige Produktdatei für die Installation der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ Das folgende Codebeispiel zeigt eine komplette Produktdatei zum Installieren von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -252,5 +252,5 @@ ProductCode
 </Product>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

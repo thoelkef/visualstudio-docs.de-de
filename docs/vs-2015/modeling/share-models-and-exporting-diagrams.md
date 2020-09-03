@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 562990b14edba11abf50dc735279cba36bb21518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671189"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Freigeben von Modellen und Exportieren von Diagrammen
@@ -24,21 +24,21 @@ ms.locfileid: "72671189"
 
 In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für Kollegen freigeben.
 
- Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="working-on-a-model-as-a-team"></a>Arbeiten an einem Modell als Team
  Benutzer von Visual Studio können Modelle, Ebenendiagramme und gerichtete Diagramme erstellen und bearbeiten.
 
  Unterschiedliche Benutzer können gleichzeitig an einem UML-Modell arbeiten, sie sollten aber an verschiedenen Paketen arbeiten.
 
- Wir empfehlen die Verwendung von [!INCLUDE[esprscc](../includes/esprscc-md.md)].
+ Wir empfehlen Ihnen, hierfür [!INCLUDE[esprscc](../includes/esprscc-md.md)] zu verwenden.
 
  Weitere Informationen finden Sie [unter Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md).
 
  Vorschläge zum Organisieren von Modellen in einem mittleren oder großen Projekt finden [Sie unter strukturieren der Modellierungs Lösung](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Lesen und Überprüfen von Modellen
- Team Mitglieder, die einige Versionen von Visual Studio verwenden (die keine Modelle erstellen können), können Modelle, Modellierungs Diagramme und gesteuerte Diagramme lesen, aber nicht bearbeiten.  Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Teammitglieder, die mit bestimmten Versionen von Visual Studio arbeiten (mit denen keine Modelle erstellt werden können), können Modelle, Modellierungsdiagramme und gerichtete Diagramme lesen, jedoch nicht bearbeiten.  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Ein UML-Diagramm oder Ebenendiagramm kann nur innerhalb des Modells geöffnet werden, in dem es erstellt wurde. Um Zugriff auf ein Diagramm zu gewähren, müssen Sie daher Zugriff auf alle Modellierungsprojektdateien oder auf Kopien von diesen gewähren.
 
@@ -51,7 +51,7 @@ In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md)|Visual Studio-Benutzer können an einem freigegebenen Modell arbeiten.|
 |[Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)|Freigeben von Modellen in einem großen oder mittleren Projekt.|
@@ -60,5 +60,5 @@ In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für 
 |[Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)|Übersicht über Modelle und Diagramme.|
 |[Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Wenn Sie ein UML-Profil in einem Modell verwenden und dann das Modell an eine andere Person senden, muss bei dieser das gleiche Profil installiert sein.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen von Modellen für Ihre APP verwenden von](../modeling/create-models-for-your-app.md) [Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)

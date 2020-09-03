@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585417"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
@@ -95,10 +95,10 @@ End Property
 
 Wenn Sie `newPropertyValue` in `m_property` ändern, wird jede Instanz von `newPropertyValue` geändert. Wenn Sie `String` in der Eigenschaftendeklaration in `Int` ändern, wird der Wert in der set-Methode ebenfalls in `Int` geändert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweise: Einfügen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
-- [How to: Verteilen von Codeausschnitten](../ide/how-to-distribute-code-snippets.md)
+- [Vorgehensweise: Verteilen von Codeausschnitten](../ide/how-to-distribute-code-snippets.md)
 - [Bewährte Methoden für die Verwendung von Codeausschnitten](../ide/best-practices-for-using-code-snippets.md)
 - [Problembehandlung bei Codeausschnitten](../ide/troubleshooting-snippets.md)
 - [C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)
