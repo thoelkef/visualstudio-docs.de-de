@@ -12,25 +12,25 @@ ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
 ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850009"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten im Visual Studio Cloud-Explorer zugeordneten Ressourcen
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten zugeordneten Ressourcen im Visual Studio Cloud-Explorer
 
 Mit dem Cloud-Explorer können Sie Ihre Azure-Ressourcen und -Ressourcengruppen anzeigen, deren Eigenschaften überprüfen und wichtige Entwickleraktionen für die Diagnose in Visual Studio ausführen.
 
 Der Cloud-Explorer setzt wie das [Azure-Portal](https://portal.azure.com/) auf dem Azure Resource Manager-Stapel auf. Daher kann der Cloud-Explorer mit Ressourcen wie Azure-Ressourcengruppen und Azure-Diensten wie Logic Apps und API-Apps arbeiten und unterstützt die [rollenbasierte Zugriffssteuerung](/azure/role-based-access-control/role-assignments-portal) (Role-Based Access Control, RBAC).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 * Visual Studio 2015 mit dem [Microsoft Azure SDK für .NET 2,9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Microsoft Azure-Konto: Wenn Sie noch nicht über ein Konto verfügen, können Sie sich [für eine kostenlose Testversion registrieren](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) oder Ihre [Visual Studio-Abonnentenvorteile aktivieren](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
 
 > [!NOTE]
-> Um den Cloud-Explorer anzuzeigen, wählen Sie auf der Menüleiste die Option **Ansicht** > **Cloud-Explorer**.
+> Um Cloud-Explorer anzuzeigen, wählen **View**Sie  >  in der Menüleiste**Cloud-Explorer** anzeigen aus.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Hinzufügen eines Azure-Kontos zum Cloud-Explorer
 
@@ -40,7 +40,7 @@ Um die Ressourcen anzuzeigen, die einem Azure-Konto zugeordnet sind, müssen Sie
 
    ![Symbol für die Azure-Kontoeinstellungen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Wählen Sie **Konten verwalten** aus.
+1. Wählen Sie **Konten verwalten**aus.
 
    ![Cloud-Explorer-Link zum Hinzufügen eines Kontos](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
@@ -56,7 +56,7 @@ Um die Ressourcen anzuzeigen, die einem Azure-Konto zugeordnet sind, müssen Sie
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>Entfernen eines Azure-Kontos aus dem Cloud-Explorer
 
-1. Wählen Sie im **Cloud-Explorer** die Option **Kontenverwaltung** aus.
+1. Wählen Sie unter **Cloud-Explorer**die Option **Kontoverwaltung**aus.
 
    ![Symbol für die Azure-Kontoeinstellungen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -103,8 +103,8 @@ Zusätzliche Aktionen und Eigenschaftswerte können auch basierend auf der Azure
 
 ## <a name="find-resources-in-cloud-explorer"></a>Suchen von Ressourcen im Cloud-Explorer
 
-Um in Ihren Azure-Kontoabonnements Ressourcen mit einem bestimmten Namen zu suchen, geben Sie den Namen in das Feld **Suchen** im Cloud-Explorer ein.
+Um Ressourcen mit einem bestimmten Namen in ihren Azure-Konto Abonnements zu suchen, geben Sie den Namen in Cloud-Explorer in das **Suchfeld** ein.
 
   ![Suchen von Ressourcen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-Bei der Eingabe von Zeichen in das Feld **Suchen** werden in der Ressourcenstruktur nur die Ressourcen angezeigt, die mit diesen Zeichen übereinstimmen.
+Wenn Sie Zeichen in das **Suchfeld** eingeben, werden nur die Ressourcen in der Ressourcenstruktur angezeigt, die diesen Zeichen entsprechen.

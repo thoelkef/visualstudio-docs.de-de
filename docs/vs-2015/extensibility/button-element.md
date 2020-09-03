@@ -1,5 +1,5 @@
 ---
-title: Schaltfläche Element | Microsoft-Dokumentation
+title: Button-Element | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58f63968ed02f49b0ccfa4dda24f684fed339bc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184542"
 ---
 # <a name="button-element"></a>Button-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiert ein Element, das der Benutzer interagieren kann. Schaltflächen können unterschiedlicher Art sein: Schaltfläche MenuButton und SplitDropDown.  
+Definiert ein Element, mit dem der Benutzer interagieren kann. Schaltflächen können verschiedene Arten aufweisen: Schaltfläche, menubutton und splitdropdown.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,32 +39,32 @@ Definiert ein Element, das der Benutzer interagieren kann. Schaltflächen könne
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|guid|Erforderlich. GUID der Befehls-ID der GUID-ID.|  
-|id|Erforderlich. ID des Befehls-ID der GUID-ID.|  
+|guid|Erforderlich. GUID des GUID-/ID-befehlsbezeichners.|  
+|id|Erforderlich. ID des GUID-/ID-befehlsbezeichners.|  
 |priority|Optional. Ein numerischer Wert, der die Priorität angibt.|  
-|Typ|Optional. Ein Enumerationswert, der die Art der Schaltfläche angibt.<br /><br /> Wenn nicht angegeben wird, wird die Schaltfläche verwendet.<br /><br /> Schaltfläche<br /> Ein standard-Befehl, der in Symbolleisten (normalerweise als ein Symbol aus), Menüs und Kontextmenüs angezeigt wird.<br /><br /> MenuButton<br /> Ein Menüelement, das einen Befehl nicht ausgeführt, aber ein weiteres Menü erzeugt.<br /><br /> SplitDropDown<br /> Steuerelemente, z. B. die Schaltflächen zum Rückgängigmachen und wiederholen auf der Standardsymbolleiste in Microsoft Word.|  
-|Bedingung|Optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|type|Optional. Ein-Enumerationswert, der die Art der Schaltfläche angibt.<br /><br /> Wenn nicht angegeben, wird die Schaltfläche verwendet.<br /><br /> Schaltfläche<br /> Ein Standardbefehl, der auf Symbolleisten (in der Regel als Symbolleisten Schaltfläche), Menüs und Kontextmenüs angezeigt wird.<br /><br /> -Menubutton-<br /> Ein Menü Element, das keinen Befehl ausführt, sondern ein anderes Menü erzeugt.<br /><br /> Splitdropdown<br /> Steuerelemente, z. b. die Schaltflächen Rückgängig und wiederholen auf der Standard Symbolleiste in Microsoft Word.|  
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Parent-Element](../extensibility/parent-element.md)|Optional. Das übergeordnete Element der Schaltfläche.|  
-|[Icon-Element](../extensibility/icon-element.md)|Dies ist optional. Das Symbol der Schaltfläche zugeordnet ist.|  
-|[CommandFlag-Element](../extensibility/command-flag-element.md)|Erforderlich. Gültige Werte für eine Schaltfläche CommandFlag sind wie folgt aus.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> - IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
-|[Strings-Element](../extensibility/strings-element.md)|Erforderlich. Das untergeordnete Element [ButtonText-Element](../extensibility/buttontext-element.md) muss definiert werden.|  
+|[Übergeordnetes Element](../extensibility/parent-element.md)|Optional. Das übergeordnete Element der Schaltfläche.|  
+|[Icon-Element](../extensibility/icon-element.md)|Optional. Das Symbol, das der Schaltfläche zugeordnet ist.|  
+|[CommandFlag-Element](../extensibility/command-flag-element.md)|Erforderlich. Die gültigen CommandFlag-Werte für eine Schaltfläche lauten wie folgt.<br /><br /> -Allowparametriams<br /><br /> -Commandwellonly<br /><br /> -Defaultdeaktiviert<br /><br /> -Defaultinvisible<br /><br /> -DontCache<br /><br /> -Dynamicitemstart<br /><br /> -Dynamicvisibility<br /><br /> -Fixmenucontroller<br /><br /> -Iconandtext<br /><br /> -Nobuttoncustomize<br /><br /> -Nocustomize<br /><br /> -Nokeycustomize<br /><br /> -Noshowonmenucontroller<br /><br /> -PICT<br /><br /> -Postexec<br /><br /> -Profferedcmd<br /><br /> -Routeto docs<br /><br /> -Textcascadeusebtn<br /><br /> -Textmenuusebutton<br /><br /> -Textchanges<br /><br /> -Textchangesbutton<br /><br /> -Textcontextusebutton<br /><br /> -Textmenuctrlulmenu<br /><br /> -Textmenuusebutton<br /><br /> -TextOnly|  
+|[Strings-Element](../extensibility/strings-element.md)|Erforderlich. Das untergeordnete [ButtonText-Element](../extensibility/buttontext-element.md) muss definiert werden.|  
 |Anmerkung|Optionaler Kommentar.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert Elemente der Schaltfläche.|  
+|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert Schaltflächen Elemente.|  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel definiert eine Schaltfläche in einer VSCT-Datei.  
+ Im folgenden Beispiel wird eine Schaltfläche in einer vsct-Datei definiert.  
    
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -78,5 +78,5 @@ Definiert ein Element, das der Benutzer interagieren kann. Schaltflächen könne
 </Button>
  ```
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

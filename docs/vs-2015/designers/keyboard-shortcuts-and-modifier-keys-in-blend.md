@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850155"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tastenkombinationen und Zusatztasten in Blend
@@ -25,13 +25,13 @@ Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion
 
    Drücken Sie zum Verwenden der Zugriffstasten zuerst die ALT-TASTE oder F10, um die Unterstriche anzuzeigen, und drücken Sie dann den entsprechenden Buchstaben des Menü- oder Dialogfeldelements. Alternativ dazu können Sie auch durch ein Menü oder Dialogfeld navigieren, indem Sie die TAB-TASTE oder die Pfeiltasten verwenden. Wenn Sie in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] z.B. die ALT-TASTE drücken, wird im Menü **Datei** unter dem Buchstaben **D** ein Unterstrich angezeigt, um die Zugriffstaste anzugeben. Um ein Projekt zu öffnen, können Sie die ALT-TASTE gedrückt halten, den Buchstaben D drücken und dann den Buchstaben F drücken.
 
-   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")Zugriffstasten, die nach dem Drücken von alt mit einem Unterstrich angezeigt werden
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") Zugriffstasten, die nach dem Drücken der ALT-TASTE mit einem Unterstrich dargestellt werden
 
 - **Tastenkombinationen** Sie können Tastenkombinationen verwenden, um eine Aktion auszuführen (z.B. das Auswählen eines Menübefehls oder das Ändern des Verhaltens eines Werkzeugs), indem Sie eine Tastenkombination drücken.
 
    Auf der Benutzeroberfläche von [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] können Sie die meisten Tastenkombinationen leicht identifizieren. Sie werden jeweils rechts von den Menübefehlen angezeigt. Im Menü **Datei** wird für den Menübefehl **Projekt öffnen** beispielsweise die Tastenkombination STRG+UMSCHALT+O angezeigt. Zeigen Sie mit der Maus auf das Tool, um die Tastenkombinationen für ein Tool im Bereich **Werkzeuge** anzuzeigen.
 
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Tastenkombinationen, die neben Menü Elementen mit Tastenkombinationen angezeigt werden
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") Tastenkombinationen, die neben relevanten Menübefehlen angezeigt werden
 
   Weitere Informationen zur Barrierefreiheit finden Sie unter [Accessibility at Microsoft (Barrierefreiheit bei Microsoft)](https://www.microsoft.com/enable).
 

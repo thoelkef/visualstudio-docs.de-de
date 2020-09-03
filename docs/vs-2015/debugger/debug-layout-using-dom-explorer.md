@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850078"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debuggen von Layout mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content. png "windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Die Registerkarte **Layout** des DOM Explorer teigt das [CSS-Verschachtelungsmodell](https://www.w3.org/TR/CSS2/box.html) für das ausgewählte Elemente in einer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App, Windows Phone Store-App oder einer mit Visual Studio Tools for Apache Cordova erstellten App. Sie können die visuelle Darstellung des Verschachtelungsmodells verwenden, um die layoutbezogenen Werte, die die Darstellung der Elemente beeinflussen, zu identifizieren und zu ändern.  
   
@@ -69,7 +69,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content. png "
   
 5. Wählen Sie je nach Startprojekt **Emulator 8.1 WVGA 4 inch 512MB** oder **Simulator** in der Dropdownliste auf der Symbolleiste "Debuggen" aus (der Standardwert ist**Lokaler Computer** ).  
   
-     ![Auswählen eines debugziels](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
+     ![Debug-Ziel auswählen](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
 6. Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
@@ -105,7 +105,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content. png "
   
      Diese Ansicht enthält einige nützliche Informationen zum Element:  
   
-    - Die Farben entsprechen der rechteckigen Hervorhebung, die im Simulator beim Zeigen auf die Elemente angezeigt wird. Die blaue Farbe stellt die \<IMG > Element Dimensionen dar. Die braune Farbe stellt Randwerte dar.  
+    - Die Farben entsprechen der rechteckigen Hervorhebung, die im Simulator beim Zeigen auf die Elemente angezeigt wird. Die blaue Farbe stellt die \<img> Element Abmessungen dar. Die braune Farbe stellt Randwerte dar.  
   
     - Der linke Rand (margin-left) ist festgelegt, was auf die Ursache des Problems hinweist, da er mit dem Symptom (schwarz auf der linken Seite der Bilder) übereinstimmt.  
   
@@ -114,19 +114,19 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content. png "
 11. Um zu sehen, wie die margin-left-Regel angewendet wird, klicken Sie auf die Registerkarte **Berechnet** , und schauen Sie unter der Regel "margin-left" nach. Sie sehen, dass die margin-left-Regel mit einem Wert von "5em" festgelegt ist, der berechnete Wert aber "66.66px" oder "146.66px" lautet, je nach Zielgerät.  
   
     > [!TIP]
-    > Die Registerkarte **berechnet** zeigt, dass die margin-left-Regel im `..hubpage .hub. section4 .sub-image-row img` CSS-Selektor festgelegt wird, der in "Hub. CSS" enthalten ist. Sie müssen das Problem in dieser Demo-App beheben.  
+    > Die Registerkarte **berechnet** zeigt, dass die margin-left-Regel im `..hubpage .hub. section4 .sub-image-row img` CSS-Selektor festgelegt ist, der in "Hub. CSS" enthalten ist. Sie müssen das Problem in dieser Demo-App beheben.  
   
      Sie können auch die Registerkarte **Layout** verwenden, um Änderungen an den Layoutwerten zu testen.  
   
 12. Klicken Sie auf der Registerkarte **Layout** im Feld **Rand** auf der linken Seite des Felds auf **66.66**oder **146.66** .  
   
-13. Geben Sie `0` ein, und drücken Sie die EINGABETASTE. (Sie können ebenso die NACH-OBEN- und NACH-UNTEN-TASTEN verwenden, um den Wert zu ändern.)  
+13. Geben Sie `0` ein und drücken Sie die EINGABETASTE. (Sie können ebenso die NACH-OBEN- und NACH-UNTEN-TASTEN verwenden, um den Wert zu ändern.)  
   
-14. Wählen Sie die anderen \<IMG > Elemente in DOM Explorer aus, und ändern Sie Ihre margin-left-Werte in 0.  
+14. Wählen Sie die anderen \<img> Elemente in DOM Explorer aus, und ändern Sie Ihre margin-left-Werte in 0.  
   
 15. Wechseln Sie zum Phone-Emulator bzw. zum Simulator. Die aktualisierten Werte des linken Rands wurden auf die Bilder in "Section 4" angewendet. Diese Werte werden auch auf der Registerkarte **Berechnet** unter der margin-left-Regel aktualisiert.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debuggen von CSS-Stilen mithilfe Dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
+ [Debuggen von CSS-Stilen Dom Explorer mit](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)

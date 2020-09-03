@@ -1,5 +1,5 @@
 ---
-title: Schaltflächen-Element | Microsoft-Dokumentation
+title: Buttons-Element | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8e0a17e3580b238c63a23e5943e98afbbb9268b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184552"
 ---
 # <a name="buttons-element"></a>Buttons-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gruppen [Schaltfläche](../extensibility/button-element.md) -Elemente, die einzelnen Befehle darstellen.  
+Gruppiert [Schalt](../extensibility/button-element.md) Flächen Elemente, die einzelne Befehle darstellen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,22 +37,22 @@ Gruppen [Schaltfläche](../extensibility/button-element.md) -Elemente, die einze
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|attribute|Beschreibung|  
 |---------------|-----------------|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert Elemente der Schaltfläche.|  
+|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert Schaltflächen Elemente.|  
 |[Button-Element](../extensibility/button-element.md)|Definiert einen Befehl, mit dem der Benutzer interagieren kann.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -68,6 +68,6 @@ Gruppen [Schaltfläche](../extensibility/button-element.md) -Elemente, die einze
 </Buttons>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

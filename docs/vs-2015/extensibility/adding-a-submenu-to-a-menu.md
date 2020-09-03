@@ -14,29 +14,29 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184886"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Hinzufügen eines Untermenüs zu einem Menü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) durch Hinzufügen ein Untermenüs zum Veranschaulichen der **TestMenu** Menü.  
+Diese exemplarische Vorgehensweise baut auf der Demo zum [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) auf, indem gezeigt wird, wie dem **testmenu** -Menü ein Untermenü hinzugefügt wird.  
   
- Ein Untermenü handelt es sich um ein sekundäres Menü, das in einem anderen Menü angezeigt wird. Ein Untermenü kann durch den Pfeil, der den Namen folgt, identifiziert werden. Auf den Namen des bewirkt, dass das Untermenü und die Befehle, die angezeigt werden.  
+ Ein Untermenü ist ein sekundäres Menü, das in einem anderen Menü angezeigt wird. Ein Untermenü kann durch den Pfeil identifiziert werden, der dem Namen folgt. Wenn Sie auf den Namen klicken, werden das Untermenü und seine Befehle angezeigt.  
   
- In dieser exemplarischen Vorgehensweise wird ein Untermenü in einem Menü auf der Menüleiste von Visual Studio erstellt und fügt einen neuen Befehl im Untermenü. In der exemplarischen Vorgehensweise implementiert auch den neuen Befehl.  
+ In dieser exemplarischen Vorgehensweise wird ein Untermenü in einem Menü auf der Visual Studio-Menüleiste erstellt und ein neuer Befehl in das Untermenü eingefügt. In der exemplarischen Vorgehensweise wird auch der neue Befehl implementiert.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
- Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Voraussetzungen  
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="adding-a-submenu-to-a-menu"></a>Hinzufügen eines Untermenüs zu einem Menü  
   
-1. Führen Sie die Schritte in [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) auf das Projekt und im Menü-Element zu erstellen. Die Schritte in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Name des VSIX-Projekts `TopLevelMenu`.  
+1. Führen Sie die Schritte unter [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) aus, um das Projekt und das Menü Element zu erstellen. Bei den Schritten in dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Name des VSIX-Projekts ist `TopLevelMenu` .  
   
-2. Öffnen Sie TestCommandPackage.vsct. In der `<Symbols>` Abschnitt, fügen Sie eine `<IDSymbol>` -Element für das Untermenü für die Untermenü-Gruppe und eine für den Befehl aus, in der `<GuidSymbol>` Knoten mit dem Namen "GuidTopLevelMenuCmdSet." Dies ist der gleiche Knoten, enthält die `<IDSymbol>` -Element für das Menü der obersten Ebene.  
+2. Öffnen Sie die Datei "testcommandpackage. vsct". `<Symbols>`Fügen Sie im-Abschnitt ein `<IDSymbol>` -Element für das Untermenü hinzu, eines für die unter Menü Gruppe und eines für den Befehl, alle im `<GuidSymbol>` Knoten mit dem Namen "guidtoplevelmenucmdset". Dabei handelt es sich um denselben Knoten, der das `<IDSymbol>` -Element für das Menü der obersten Ebene enthält.  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -44,7 +44,7 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menü
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>  
     ```  
   
-3. Fügen Sie die neu erstellte Untermenü die `<Menus>` Abschnitt.  
+3. Fügen Sie das neu erstellte Untermenü zum- `<Menus>` Abschnitt hinzu.  
   
     ```xml  
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">  
@@ -56,9 +56,9 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menü
     </Menu>  
     ```  
   
-     Der GUID-ID-Paar des übergeordneten Elements gibt an, die Menügruppe, die generiert wurde [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md), und ist ein untergeordnetes Element des Menüs der obersten Ebene.  
+     Das GUID-ID-Paar des übergeordneten Elements gibt die Menü Gruppe an, die beim [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)generiert wurde, und ist ein untergeordnetes Element des Menüs der obersten Ebene.  
   
-4. Fügen Sie die Menügruppe, die in Schritt 2 definiert die `<Groups>` aus, und stellen sie ein untergeordnetes Element des Untermenüs.  
+4. Fügen Sie dem Abschnitt die in Schritt 2 definierte Menü Gruppe hinzu, `<Groups>` und legen Sie Sie als untergeordnetes Element des Untermenüs ab.  
   
     ```xml  
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">  
@@ -66,7 +66,7 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menü
     </Group>  
     ```  
   
-5. Fügen Sie einen neuen `<Button>` Element, das `<Buttons>` Abschnitt aus, um den Befehl in Schritt 2 erstellt haben, als ein Element im Untermenü definieren.  
+5. Fügen Sie dem-Abschnitt ein neues- `<Button>` Element hinzu `<Buttons>` , um den in Schritt 2 erstellten Befehl als Element im Untermenü zu definieren.  
   
     ```xml  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">  
@@ -79,19 +79,19 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menü
     </Button>  
     ```  
   
-6. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollten angezeigt werden.  
+6. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.  
   
-7. Klicken Sie auf **TestMenu** um ein neues Untermenü mit dem Namen finden Sie unter **Untermenü**. Klicken Sie auf **Untermenü** , öffnen Sie das Untermenü, und sehen einen neuen Befehl, **Sub-Testbefehl**. Beachten Sie, dass beim Klicken auf **Sub-Testbefehl** hat keine Auswirkungen.  
+7. Klicken Sie auf **testmenu** , um das neue Untermenü mit dem Namen **Untermenü**anzuzeigen. Klicken Sie auf **Untermenü** , um das Untermenü zu öffnen, und sehen Sie sich den neuen Befehl **Test Sub**an. Beachten Sie, dass durch Klicken auf den **Unterbefehl "Test** " nichts  
   
 ## <a name="adding-a-command"></a>Hinzufügen eines Befehls  
   
-1. Öffnen Sie TestCommand.cs, und fügen Sie die folgenden Befehls-ID nach der vorhandenen Befehls-ID.  
+1. Öffnen Sie TestCommand.cs, und fügen Sie die folgende Befehls-ID nach der vorhandenen Befehls-ID ein.  
   
     ```csharp  
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
-2. Fügen Sie der Unterbefehl hinzu. Suchen Sie den Befehl-Konstruktor. Fügen Sie die folgenden Zeilen direkt nach dem Aufruf von der `AddCommand` Methode.  
+2. Fügen Sie den Unterbefehl hinzu. Suchen Sie den befehlskonstruktor. Fügen Sie die folgenden Zeilen direkt nach dem Aufrufder- `AddCommand` Methode hinzu.  
   
     ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
@@ -101,7 +101,7 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menü
   
     ```  
   
-     Die `SubItemCallback` Befehlshandler später definiert werden. Der Konstruktor sollte jetzt wie folgt aussehen:  
+     Der `SubItemCallback` Befehls Handler wird später definiert. Der Konstruktor sollte nun wie folgt aussehen:  
   
     ```csharp  
     private TestCommand(Package package)  
@@ -126,7 +126,7 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menü
                 }  
     ```  
   
-3. Fügen Sie SubItemCallback() hinzu. Dies ist die Methode, die aufgerufen wird, wenn auf der neue Befehl im Untermenü geklickt wird.  
+3. Fügen Sie subitemcallback () hinzu. Dies ist die Methode, die aufgerufen wird, wenn auf den neuen Befehl im Untermenü geklickt wird.  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -152,10 +152,10 @@ Diese exemplarische Vorgehensweise baut auf der Demo in [Hinzufügen eines Menü
     }  
     ```  
   
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.  
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden.  
   
-5. Auf der **TestMenu** Menü klicken Sie auf **Untermenü** , und klicken Sie dann auf **Sub-Testbefehl**. Ein Meldungsfeld angezeigt werden soll, und der Text, "Test-Befehl in TestCommand.SubItemCallback()" angezeigt.  
+5. Klicken Sie im Menü **Testmenü** auf **Untermenü** , und klicken Sie dann auf **Unterbefehl testen**. Ein Meldungs Feld sollte angezeigt werden, und der Text "Test Befehl in TestCommand. subitemcallback ()" wird angezeigt.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

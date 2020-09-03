@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63390672b246add079806c68a23b69f0e0132c2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850207"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Erstellen von benutzerdefinierten Ansichten von nativen Objekten
@@ -37,20 +37,20 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 >   - Sie nehmen das Debugging im gemischten Modus in einer Windows-Desktopanwendung im verwalteten Kompatibilitätsmodus vor (**Extras / Optionen / Debugging / Allgemein / Verwalteten Kompatibilitätsmodus verwenden**).  
 >   - Sie debuggen in einer Windows-Desktopanwendung im systemeigenen Kompatibilitätsmodus (**Extras / Optionen / Debugging / Allgemein / Systemeigenen Kompatibilitätsmodus verwenden**).  
 
-## <a name="BKMK_Why_create_visualizations_"></a> Warum werden Natvis-Visualisierungen erstellt?  
+## <a name="why-create-natvis-visualizations"></a><a name="BKMK_Why_create_visualizations_"></a> Warum werden natvis-Visualisierungen erstellt?  
  Sie können das Natvis-Framework zum Erstellen von Visualisierungsregeln für Typen verwenden, die Sie erstellen, damit sie von Entwicklern beim Debuggen problemlos angezeigt werden können.  
 
  Im folgenden Bild ist beispielsweise eine Variable des Typs [Windows::UI::Xaml::Controls::TextBox](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textbox.aspx) angegeben, die im Debugger ohne angewendete benutzerdefinierte Visualisierungen dargestellt wird.  
 
- ![Standardmäßige TextBox-Visualisierung](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
+ ![TextBox-Standardvisualisierung](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
  Die hervorgehobene Zeile zeigt die `Text` -Eigenschaft der `TextBox` -Klasse. Aufgrund der komplexen Klassenhierarchie ist das Auffinden dieses Werts kompliziert. Zudem weiß der Debugger nicht, wie der vom Objekt verwendete benutzerdefinierte Zeichenfolgentyp interpretiert werden soll. Daher können Sie die im Textfeld enthaltene Zeichenfolge nicht anzeigen.  
 
  Das gleiche `TextBox` -Objekt sieht im Variablenfenster viel einfacher aus, wenn die benutzerdefinierten Visualisierungsregeln angewendet werden. Die wichtigen Member der Klasse können gemeinsam angezeigt werden, und der Debugger zeigt den zugrunde liegenden Zeichenfolgenwert des benutzerdefinierten Zeichenfolgentyps an.  
 
- ![TextBox-Daten mithilfe von Visualisierungen](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
+ ![TextBox-Daten mit Schnellansicht](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
 
-## <a name="BKMK_Using_Natvis_files"></a> Verwenden von Natvis-Dateien  
+## <a name="using-natvis-files"></a><a name="BKMK_Using_Natvis_files"></a> Verwenden von Natvis-Dateien  
  Bei Natvis-Dateien handelt es sich um XML-Dateien mit der Erweiterung ".natvis". Das Schema wird in **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**definiert.  
 
  Die grundlegende Struktur einer Natvis-Datei enthält eine oder mehrere `Type` -Elemente, wobei jedes `Type` -Element einen Visualisierungseintrag für einen Typ darstellt, dessen vollqualifizierter Name im `Name` -Attribut angegeben ist.  
@@ -76,13 +76,13 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 ## <a name="adding-natvis-files-to-your-projects"></a>Hinzufügen von Natvis-Dateien zu Projekten  
  Natvis-Dateien können zu jedem C++-Projekt hinzugefügt werden.  
 
- Um bei einem geöffneten C++-Projekt eine neue Natvis-Datei hinzuzufügen, wählen Sie den Projektknoten im **Projektmappen-Explorer**aus, und klicken Sie auf **Hinzufügen / Neues Element / Visual C++ / Hilfsprogramm / Debuggervisualisierungsdatei (.natvis)** . Der Debugger lädt Natvis-Dateien automatisch aus C++-Projekten. Standardmäßig werden Natvis-Dateien in Ihrem Projekt auch in die PDB-Datei eingefügt, die durch das Projekt erstellt wurde. Wenn Sie die durch dieses Projekt erstellte binäre Datei debuggen, lädt der Debugger demnach die Natvis-Datei aus der PDB-Datei, selbst wenn Sie das Projekt nicht geöffnet haben. Wenn die Natvis-Datei nicht in die PDB-Datei eingefügt werden soll, klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf die Natvis-Datei, und legen Sie im Fenster **Konfigurationseigenschaften** die Option **Aus Build ausgeschlossen** auf **Ja**fest.  
+ Um bei einem geöffneten C++-Projekt eine neue Natvis-Datei hinzuzufügen, wählen Sie den Projektknoten im **Projektmappen-Explorer**aus, und klicken Sie auf **Hinzufügen / Neues Element / Visual C++ / Hilfsprogramm / Debuggervisualisierungsdatei (.natvis)**. Der Debugger lädt Natvis-Dateien automatisch aus C++-Projekten. Standardmäßig werden Natvis-Dateien in Ihrem Projekt auch in die PDB-Datei eingefügt, die durch das Projekt erstellt wurde. Wenn Sie die durch dieses Projekt erstellte binäre Datei debuggen, lädt der Debugger demnach die Natvis-Datei aus der PDB-Datei, selbst wenn Sie das Projekt nicht geöffnet haben. Wenn die Natvis-Datei nicht in die PDB-Datei eingefügt werden soll, klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf die Natvis-Datei, und legen Sie im Fenster **Konfigurationseigenschaften** die Option **Aus Build ausgeschlossen** auf **Ja**fest.  
 
  Sie sollten Natvis-Dateien mithilfe von Visual Studio bearbeiten. Beim Debuggen werden von Ihnen vorgenommene Änderungen automatisch übernommen, sobald Sie die Datei speichern. Sie erhalten durch IntelliSense zudem eine verbesserte Bearbeitungsoberfläche.  
 
  Aus einer PDB-Datei geladene Natvis-Dateien gelten nur für solche Typen im Modul, auf die sich die PDB-Datei bezieht. Wenn beispielsweise die Datei "Module1.pdb" einen Eintrag für einen Typ mit dem Namen `Test`definiert, gilt dieser Eintrag nur für die **Test** -Klasse  in "Module1.dll". Wenn ein anderes Modul ebenfalls eine Klasse mit dem Namen **Test**definiert, gilt der Natvis-Eintrag in der Datei "Module1.pdb" hierfür nicht.  
 
-## <a name="BKMK_natvis_location"></a> Bereitstellen von Natvis-Dateien  
+## <a name="deploying-natvis-files"></a><a name="BKMK_natvis_location"></a> Bereitstellen von Natvis-Dateien  
  Wenn die Natvis-Datei nur für Typen angewendet wird, die Sie in einem Visual Studio-Projekt erstellen, müssen Sie keine Aktion vornehmen. Die Natvis-Datei wird in die PDB-Datei eingefügt. Sie können jedoch Natvis-Dateien zu Ihrem Benutzerverzeichnis oder einem Systemverzeichnis hinzufügen, wenn sie für mehrere Projekte gelten sollen.  
 
  Die Reihenfolge, in der Natvis-Dateien ausgewertet werden, lautet wie folgt:  
@@ -91,7 +91,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
 2. Natvis-Dateien, die Bestandteil eines geladenen C++-Projekts oder eines Projektmappenelements auf oberster Ebene sind. Dazu zählen alle geladenen C++-Projekte, einschließlich Klassenbibliotheken. Ausgenommen davon sind anderssprachige Projekte. (Eine Natvis-Datei aus einem C#-Projekt kann beispielsweise nicht geladen werden.) Bei ausführbaren Projekten sollten Sie zum Hosten von Natvis-Dateien, die nicht bereits in einer PDB-Datei enthalten sind, Projektmappenelemente verwenden, da kein C++-Projekt verfügbar ist.  
 
-3. Das benutzerspezifische Natvis-Verzeichnis ( **%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**  
+3. Das benutzerspezifische Natvis-Verzeichnis (**%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**  
 
 4. Das systemweite Natvis-Verzeichnis ( **%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**). Hierhin werden Natvis-Dateien, die mit Visual Studio installiert werden, kopiert. Sie können diesem Verzeichnis weitere Dateien hinzufügen, sofern Sie über Administratorberechtigungen verfügen.  
 
@@ -104,14 +104,14 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Verwenden Sie den Befehl **.natvisreload** , wenn Sie die Natvis-Datei auf eine neuere Version aktualisieren. (Zum Beispiel, wenn sie in die Quellcodeverwaltung eingecheckt ist und Sie kürzlich vorgenommene Änderungen auswählen möchten, die ein anderer Benutzer an der Datei vorgenommen hat.) Sie sollten die Natvis-Dateien mit dem Visual Studio-XML-Editor bearbeiten.  
 
-## <a name="BKMK_Expressions_and_formatting"></a> Ausdrücke und Formatierung  
- Natvis-Visualisierungen verwenden C++-Ausdrücke, um anzuzeigende Datenelementen anzugeben. Zusätzlich zu den Erweiterungen und Einschränkungen von C++ Ausdrücken im Debugger, die im [Kontext Operator (C++)](../debugger/context-operator-cpp.md)beschrieben werden, sollten Sie die folgenden Unterschiede beachten:  
+## <a name="expressions-and-formatting"></a><a name="BKMK_Expressions_and_formatting"></a> Ausdrücke und Formatierung  
+ Natvis-Visualisierungen verwenden C++-Ausdrücke, um anzuzeigende Datenelementen anzugeben. Zusätzlich zu den Erweiterungen und Einschränkungen der C++-Ausdrücke im Debugger, die im [Kontext Operator (C++)](../debugger/context-operator-cpp.md)beschrieben werden, sollten Sie die folgenden Unterschiede beachten:  
 
 - Natvis-Ausdrücke werden im Kontext des Objekts ausgewertet, das in der Schnellansicht und nicht im aktuellen Stapelrahmen angezeigt wird. Wenn Sie beispielsweise `x` in einem Natvis-Ausdruck verwenden, bezieht sich dies auf das Feld `x` im Objekt, das in der Schnellansicht angezeigt wird, und nicht auf die lokale Variable `x` in der gegenwärtig ausgeführten Funktion. Sie können nicht auf lokale Variablen in Natvis-Ausdrücken zugreifen, obwohl Sie auf globale Variablen zugreifen können.  
 
 - Natvis-Ausdrücke lassen keine Funktionsauswertung oder Nebeneffekte zu. Dies bedeutet, dass Funktionsaufrufe und Zuweisungsoperatoren ignoriert werden. Da [systeminterne Debuggerfunktionen](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) keine Nebeneffekte haben, können sie beliebig von jedem Natvis-Ausdruck aufgerufen werden, obwohl andere Funktionsaufrufe nicht zulässig sind.  
 
-  Um zu steuern, wie ein Ausdruck in einem Variablen Fenster angezeigt wird, können Sie einen beliebigen Formatspezifizierer verwenden, die im Abschnitt [Formatspezifizierer](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) der [Format Bearbeiter im C++ ](../debugger/format-specifiers-in-cpp.md) Thema beschrieben werden. Beachten Sie, dass Format Bezeichner ignoriert werden, wenn der virtualisierungseintrag intern von natvis verwendet wird, z. b. der `Size` Ausdruck in einer arrayitems-Erweiterung.  
+  Um zu steuern, wie ein Ausdruck in einem Variablen Fenster angezeigt wird, können Sie einen beliebigen Formatspezifizierer verwenden, die im Abschnitt [Formatspezifizierer](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) des Themas [Format Bearbeiter in C++](../debugger/format-specifiers-in-cpp.md) beschrieben werden. Beachten Sie, dass Format Bezeichner ignoriert werden, wenn der virtualisierungseintrag intern von natvis verwendet wird, z. b. der `Size` Ausdruck in einer arrayitems-Erweiterung.  
 
 ## <a name="natvis-views"></a>Natvis-Ansichten  
  Mit Natvis-Ansichten können Sie jeden Typ auf verschiedene Weise anzeigen. Beispielsweise können Sie eine Ansicht mit dem Namen **simple** definieren, die eine vereinfachte Ansicht eines Typs ausgibt. Im Folgenden finden Sie beispielsweise die Visualisierung von `std::vector`:  
@@ -134,12 +134,12 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  ![Überwachungsfenster mit einfacher Ansicht](../debugger/media/watch-simpleview.png "Watch-simpleview")  
 
-## <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnose von Natvis-Fehlern  
+## <a name="diagnosing-natvis-errors"></a><a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnose von Natvis-Fehlern  
  Sie können die Natvis-Diagnose verwenden, um Syntax- und Analysefehler zu beheben. Wenn der Debugger Fehler in einem Visualisierungseintrag ermittelt, ignoriert er die Fehler und zeigt den Typ in seiner Rohform an oder wählt eine andere geeignete Visualisierung aus. Um nachzuvollziehen, weshalb ein bestimmter Visualisierungseintrag ignoriert wird und um die zugrunde liegenden Fehler anzuzeigen, können Sie die Natvis-Diagnoseoption **Extras / Optionen / Debugging / Ausgabefenster / Natvis-Diagnosemeldungen (nur C++)** aktivieren. Die Fehler werden im Fenster **Ausgabe** angezeigt.  
 
-## <a name="BKMK_Syntax_reference"></a> Natvis-Syntaxverweis  
+## <a name="natvis-syntax-reference"></a><a name="BKMK_Syntax_reference"></a> Natvis-Syntaxverweis  
 
-### <a name="BKMK_AutoVisualizer"></a> AutoVisualizer-Element  
+### <a name="autovisualizer-element"></a><a name="BKMK_AutoVisualizer"></a> AutoVisualizer-Element  
  Bei dem `AutoVisualizer`  -Element handelt es sich um den Stammknoten der Natvis-Datei, der das `xmlns:` -Attribut für den Namespace enthält.  
 
 ```xml  
@@ -150,7 +150,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 </AutoVisualizer>  
 ```  
 
-### <a name="BKMK_Type"></a> Type-Element  
+### <a name="type-element"></a><a name="BKMK_Type"></a> Type-Element  
  Ein Basistyp sieht folgendermaßen aus:  
 
 ```xml  
@@ -184,7 +184,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Beachten Sie, dass auf Vorlagenparameter im Visualisierungseintrag verwiesen werden kann, indem die Makros "$T1", "$T2" usw. verwendet werden. Beispiele zu diesen Makros finden Sie in den Natvis-Dateien, die in Visual Studio bereitgestellt werden.  
 
-#### <a name="BKMK_Visualizer_type_matching"></a> Typenabgleich in der Schnellansicht  
+#### <a name="visualizer-type-matching"></a><a name="BKMK_Visualizer_type_matching"></a> Typenabgleich in der Schnellansicht  
  Wenn ein Visualisierungseintrag nicht überprüft werden kann, wird die nächste verfügbare Visualisierung verwendet.  
 
 #### <a name="inheritable-attribute"></a>Inheritable-Attribut  
@@ -223,7 +223,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 </Type>  
 ```  
 
-#### <a name="BKMK_Versioning"></a> Version-Element  
+#### <a name="version-element"></a><a name="BKMK_Versioning"></a> Version-Element  
  Verwenden Sie das `Version` -Element, um Visualisierungen auf bestimmte Module und ihre Versionen auszuweiten, sodass Namenskonflikte minimiert und verschiedene Visualisierungen für unterschiedliche Typenversionen verwendet werden können. Beispiel:  
 
 ```xml  
@@ -250,7 +250,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 </Type>  
 ```  
 
-### <a name="BKMK_Condition_attribute"></a> Condition-Attribut  
+### <a name="condition-attribute"></a><a name="BKMK_Condition_attribute"></a> Condition-Attribut  
  Das optionale `Condition` -Attribut ist für viele Visualisierungselemente verfügbar und gibt an, wenn eine Visualisierungsregel verwendet werden soll. Wenn der Ausdruck im „condition“-Attribut zu `false`aufgelöst wird, wird die vom Element angegebene Visualisierungsregel nicht angewendet. Wenn der Ausdruck als „true“ ausgewertet wird oder wenn es kein `Condition` -Attribut gibt, wird die Visualisierungsregel auf den Typ angewendet. Sie können dieses Attribut für die `if-else` -Logik in den Visualisierungseinträgen verwenden. Beispielsweise weist die folgende Visualisierung zwei `DisplayString` -Elemente für einen intelligenten Zeigertyp auf:  
 
 ```xml  
@@ -287,7 +287,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Sie können die Attribute `IncludeView` und `ExcludeView` für Typen und einzelne Member verwenden.  
 
-### <a name="BKMK_DisplayString"></a> DisplayString  
+### <a name="displaystring"></a><a name="BKMK_DisplayString"></a> DisplayString  
  Ein `DisplayString` -Element gibt die Zeichenfolge an, die als Wert der Variable angezeigt werden soll. Beliebige Zeichenfolgen können mit Ausdrücken gemischt werden. Sämtliche Inhalte innerhalb von geschweiften Klammern werden als ein Ausdruck interpretiert. Beispielsweise ein `DisplayString` -Eintrag wie folgender:  
 
 ```xml  
@@ -306,7 +306,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 > [!NOTE]
 > Das `DisplayString` -Element ist das einzige Element, das beliebige Zeichenfolgen und die Syntax mit geschweiften Klammern akzeptiert. Alle anderen Visualisierungselemente akzeptieren nur Ausdrücke, die vom Debugger ausgewertet werden.  
 
-### <a name="BKMK_StringView"></a> StringView-Element  
+### <a name="stringview"></a><a name="BKMK_StringView"></a> Stringview  
  Das `StringView` -Element definiert den Ausdruck, dessen Wert an die integrierte Text-Schnellansicht gesendet wird. Angenommen, es gibt beispielsweise die folgende Visualisierung für den `ATL::CStringT` -Typ:  
 
 ```xml  
@@ -318,7 +318,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Das `CStringT` -Objekt sieht folgendermaßen aus:  
 
- ![CStringT DisplayString-Element](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
+ ![CStringT-DisplayString-Element](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
 
  Die Visualisierung zeigt ein `CStringT` -Objekt in einem Variablenfenster wie folgt an:  
 
@@ -333,12 +333,12 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Beachten Sie das Lupensymbol, das neben dem unten stehenden Wert angezeigt wird. Durch Auswahl des Symbols wird die Text-Schnellansicht gestartet, in der die Zeichenfolge angezeigt wird, auf die `m_pszData` verweist.  
 
- ![CStringT Data with stringview Schnellansicht](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
+ ![CStringT-Daten mit StringView-Schnellansicht](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
 > Beachten Sie, dass der `{m_pszData,su}` -Ausdruck den C++-Formatbezeichner `su` enthält, um den Wert als Unicode-Zeichenfolge anzuzeigen. Weitere Informationen finden Sie unter [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
 
-### <a name="BKMK_Expand"></a> Expand  
+### <a name="expand"></a><a name="BKMK_Expand"></a> Ausgebaut  
  Der `Expand` -Knoten wird verwendet, um die untergeordneten Elemente des Schnellansichtstyps anzupassen, wenn der Benutzer diesen in den Variablenfenstern erweitert. Er akzeptiert eine Liste untergeordneter Knoten, die die untergeordneten Elemente definieren.  
 
  Der `Expand` -Knoten ist optional.  
@@ -347,7 +347,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
 - Wenn ein `Expand` -Knoten ohne untergeordnete Knoten angegeben wird, kann der Typ in den Debuggerfenstern nicht erweitert werden.  
 
-#### <a name="BKMK_Item_expansion"></a> Item-Erweiterung  
+#### <a name="item-expansion"></a><a name="BKMK_Item_expansion"></a> Item-Erweiterung  
  Das `Item` -Element ist das einfachste und häufigste Element in einem `Expand` -Knoten. Das`Item` -Element definiert ein einzelnes untergeordnetes Element. Angenommen, Sie haben beispielsweise eine `CRect` -Klasse mit `top`, `left`, `right`und `bottom` als dessen Felder und den folgenden Visualisierungseintrag:  
 
 ```xml  
@@ -363,14 +363,14 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Der `CRect` -Typ sieht wie folgt aus:  
 
- ![CRect mit Element Element Erweiterung](../debugger/media/dbg-natvis-expand-item-crect1.png "DBG_NATVIS_Expand_Item_CRect1")  
+ ![CRect mit Item-Element-Erweiterung](../debugger/media/dbg-natvis-expand-item-crect1.png "DBG_NATVIS_Expand_Item_CRect1")  
 
  Die Ausdrücke, die in den `Width` - und `Height` -Elementen angegeben werden, werden in der Wertspalte ausgewertet und angezeigt. Der `[Raw View]` -Knoten wird automatisch vom Debugger erstellt, sobald eine benutzerdefinierte Erweiterung verwendet wird. Er wird im oben dargestellten Screenshot erweitert, um anzuzeigen, wie die Rohdatenansicht des Objekts sich von der Visualisierung unterscheidet. Mit der Visual Studio-Standarderweiterung werden eine Teilstruktur für die Basisklasse erstellt und alle Datenmember der Basisklasse als untergeordnete Elemente aufgeführt.  
 
 > [!NOTE]
 > Wenn der Ausdruck des Item-Elements auf einen komplexen Typ weist, ist der `Item` -Knoten selbst erweiterbar.  
 
-#### <a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion  
+#### <a name="arrayitems-expansion"></a><a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion  
  Verwenden Sie den `ArrayItems` -Knoten, damit der Visual Studio-Debugger den Typ als Array interpretieren und die einzelnen Elemente anzeigen kann. Die Visualisierung für `std::vector` ist ein gutes Beispiel:  
 
 ```xml  
@@ -390,7 +390,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Im `std::vector` -Knoten werden die einzelnen Elemente angezeigt, wenn sie im Variablenfenster erweitert werden:  
 
- ![Std:: Vector mithilfe von arrayitems-Erweiterungen](../debugger/media/dbg-natvis-expand-arrayitems-stdvector.png "DBG_NATVIS_Expand_ArrayItems_StdVector")  
+ ![std::vector mit ArrayItems-Erweiterung](../debugger/media/dbg-natvis-expand-arrayitems-stdvector.png "DBG_NATVIS_Expand_ArrayItems_StdVector")  
 
  Der `ArrayItems` -Knoten muss mindestens über Folgendes verfügen:  
 
@@ -424,9 +424,9 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Im Folgenden wird gezeigt, wie ein zweidimensionales `Concurrency::array` -Objekt im Debugger dargestellt wird:  
 
- ![Zweidimensionales Array mit arrayitems-Erweiterung](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
+ ![Zweidimensionales Array mit ArrayItems-Erweiterung](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
-#### <a name="BKMK_IndexListItems_expansion"></a> IndexListItems-Erweiterung  
+#### <a name="indexlistitems-expansion"></a><a name="BKMK_IndexListItems_expansion"></a> IndexListItems-Erweiterung  
  Sie können die `ArrayItems` -Erweiterung nur dann verwenden, wenn die Arrayelemente im Arbeitsspeicher zusammenhängend angeordnet sind. Der Debugger erreicht das nächste Element, indem einfach der Zeiger auf das aktuelle Element erhöht wird. Für die Fälle, bei denen der Index für Wertknoten bearbeitet werden muss, können Sie die `IndexListItems` -Knoten verwenden. Im Folgenden ist eine Visualisierung mithilfe des `IndexListItems` -Knotens angegeben:  
 
 ```xml  
@@ -447,7 +447,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Der einzige Unterschied zwischen `ArrayItems` und `IndexListItems` besteht darin, dass `ValueNode` den vollständigen Ausdruck für das i<sup>th</sup> -Element mit dem impliziten `$i` -Parameter erwartet.  
 
-#### <a name="BKMK_LinkedListItems_expansion"></a> LinkedListItems-Erweiterung  
+#### <a name="linkedlistitems-expansion"></a><a name="BKMK_LinkedListItems_expansion"></a> LinkedListItems-Erweiterung  
  Wenn der Schnellansichtstyp eine verknüpfte Liste darstellt, kann der Debugger die untergeordneten Elemente mithilfe eines `LinkedListItems` -Knotens anzeigen. Im Folgenden ist die Visualisierung für den `CAtlList` -Typ angegeben, wobei die folgende Funktion verwendet wird:  
 
 ```xml  
@@ -506,7 +506,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 </Type>  
 ```  
 
-#### <a name="BKMK_TreeItems_expansion"></a> TreeItems-Erweiterung  
+#### <a name="treeitems-expansion"></a><a name="BKMK_TreeItems_expansion"></a> TreeItems-Erweiterung  
  Wenn der Schnellansichtstyp eine Struktur darstellt, kann der Debugger die Struktur durchlaufen und seine untergeordneten Elemente mithilfe eines `TreeItems` -Knotens anzeigen. Im Folgenden ist die Visualisierung für den `std::map` -Typ angegeben, wobei die folgende Funktion verwendet wird:  
 
 ```xml  
@@ -529,10 +529,10 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Die Syntax ist mit dem `LinkedListItems` -Knoten nahezu identisch. `LeftPointer`, `RightPointer`und `ValueNode` werden im Kontext der Strukturknotenklasse ausgewertet, und `ValueNode` können leer gelassen werden oder `this` aufweisen, um auf den Strukturknoten selbst zu verweisen.  
 
-#### <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem-Erweiterung  
+#### <a name="expandeditem-expansion"></a><a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem-Erweiterung  
  Das `ExpandedItem` -Element kann verwendet werden, um eine aggregierte untergeordnete Ansicht zu generieren, indem die Eigenschaften von Basisklassen oder Datenmembern so angezeigt werden, als ob sie untergeordnete Elemente des Schnellansichtstyps wären. Der angegebene Ausdruck wird ausgewertet, und die untergeordneten Knoten des Ergebnisses werden an die untergeordnete Liste des Schnellansichtstyps angefügt. Angenommen, es gibt beispielsweise einen intelligenten Zeiger vom Typ `auto_ptr<vector<int>>` , der normalerweise wie folgt angezeigt wird:  
 
- ![Automatisches&#95;PTR&#60;-&#60;Vektor&#62; &#62; int Standard Erweiterung](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; Standarderweiterung](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
 
  Um die Werte des Vektors anzuzeigen, müssen Sie im Variablenfenster einen Drilldown über zwei Ebenen durch den _Myptr-Member ausführen. Durch Hinzufügen eines `ExpandedItem` -Elements können Sie die `_Myptr` -Variable aus der Hierarchie ausschließen und die Vektorelemente direkt anzeigen:  
 
@@ -546,9 +546,9 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
 ```  
 
- ![automatische&#95;PTR&#60;-&#60;Vektor&#62; &#62; -int-Erweiterung](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![auto&#95;ptr&#60;vector&#60;int&#62;&#62; ExpandedItem-Erweiterung](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
 
- Im folgenden Beispiel wird dargestellt, wie Eigenschaften der Basisklasse in einer abgeleiteten Klasse zusammengefasst werden. Angenommen, die `CPanel` -Klasse wird von `CFrameworkElement`abgeleitet. Anstatt die Eigenschaften zu wiederholen, die von der `CFrameworkElement` -Basisklasse stammen, ermöglicht der `ExpandedItem` -Knoten das Anfügen dieser Eigenschaften an die untergeordnete Liste der `CPanel` -Klasse. Der **nd** -Formatbezeichner, mit dem die Visualisierungsabstimmung für die abgeleitete Klasse deaktiviert wird, ist hier erforderlich. Andernfalls führt der `*(CFrameworkElement*)this` -Ausdruck dazu, dass die `CPanel` -Visualisierung erneut angewendet wird, da sie von den Standardregeln für die Visualisierungstypenabstimmung als geeignetste angesehen wird. Der **nd** -Formatbezeichner weist den Debugger an, die Basisklassenvisualisierung oder die Basisklassenstandarderweiterung zu verwenden, wenn die Basisklasse keine Visualisierung hat.  
+ Im folgenden Beispiel wird dargestellt, wie Eigenschaften der Basisklasse in einer abgeleiteten Klasse zusammengefasst werden. Angenommen, die `CPanel` -Klasse wird von `CFrameworkElement`abgeleitet. Anstatt die Eigenschaften zu wiederholen, die von der `CFrameworkElement` -Basisklasse stammen, ermöglicht der `ExpandedItem` -Knoten das Anfügen dieser Eigenschaften an die untergeordnete Liste der `CPanel` -Klasse. Der **ND** -Format Bezeichner, der den Visualisierungs Abgleich für die abgeleitete Klasse deaktiviert, ist hier erforderlich. Andernfalls führt der `*(CFrameworkElement*)this` -Ausdruck dazu, dass die `CPanel` -Visualisierung erneut angewendet wird, da sie von den Standardregeln für die Visualisierungstypenabstimmung als geeignetste angesehen wird. Der **nd** -Formatbezeichner weist den Debugger an, die Basisklassenvisualisierung oder die Basisklassenstandarderweiterung zu verwenden, wenn die Basisklasse keine Visualisierung hat.  
 
 ```xml  
 <Type Name="CPanel">  
@@ -561,7 +561,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
 ```  
 
-#### <a name="BKMK_Synthetic_Item_expansion"></a> Synthetische Item-Erweiterung  
+#### <a name="synthetic-item-expansion"></a><a name="BKMK_Synthetic_Item_expansion"></a> Synthetische Element Erweiterung  
  Wen das `ExpandedItem` -Element eine flachere Datenansicht durch die Beseitigung von Hierarchien bereitstellt, bewirkt der `Synthetic` -Knoten das Gegenteil. Er ermöglicht es Ihnen, ein künstliches untergeordnetes Element zu erstellen (d. h. ein untergeordnetes Element, das kein Ergebnis eines Ausdrucks ist). Das untergeordnete Element kann eigene untergeordnete Elemente enthalten. Im folgenden Beispiel verwendet die Visualisierung für den `Concurrency::array` -Typ einen `Synthetic` -Knoten, um dem Benutzer eine Diagnosemeldung anzuzeigen:  
 
 ```xml  
@@ -582,9 +582,9 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
 ```  
 
- ![Parallelität:: Array mit sythentic-Element expansio](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
+ ![Concurrency::array mit Erweiterung von Sythentic-Element](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
 
-### <a name="BKMK_HResult"></a> HResult  
+### <a name="hresult"></a><a name="BKMK_HResult"></a> HRESULT  
  Das `HResult` -Element ermöglicht Ihnen die Anpassung der Informationen, die für ein HRESULT-Element in den Debuggerfenstern angezeigt werden. Das `HRValue` -Element muss den 32-Bit-Wert des anzupassenden HRESULT-Elements enthalten. Das `HRDescription` -Element enthält Informationen, die im Debugger angezeigt werden.  
 
 ```  
@@ -595,7 +595,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 </HResult>  
 ```  
 
-### <a name="BKMK_UIVisualizer"></a> UIVisualizer  
+### <a name="uivisualizer"></a><a name="BKMK_UIVisualizer"></a> UIVisualizer  
  Ein `UIVisualizer` -Element registriert ein grafisches Schnellansichts-Plug-In mit dem Debugger. Ein Schnellansichts-Plug-In erstellt ein Dialogfeld oder eine andere Benutzeroberfläche, um eine Variable oder ein Objekt auf eine Art anzuzeigen, die für den Datentyp geeignet ist. Das Schnellansichts-Plug-In muss als [VSPackage](../extensibility/internals/vspackages.md) erstellt werden und einen Dienst verfügbar machen, der vom Debugger verwendet werden kann. Die Natvis-Datei enthält Registrierungsinformationen für das Plug-In, z. B. den Namen, die GUID des verfügbar gemachten Diensts und auch die Typen, die sie visualisieren kann.  
 
  Im Folgenden ist ein Beispiel eines UIVisualizer-Elements angegeben:  
@@ -617,7 +617,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
  Das `MenuName` -Attribut wird den Benutzern als Namen der Schnellansicht angezeigt, wenn sie das Dropdownmenü neben dem Lupensymbol in den Debuggervariablenfenstern öffnen. Beispiel:  
 
- ![Kontextmenü für uivisualizer-Menü](../debugger/media/dbg-natvis-vectorvisualizer.png "DBG_NATVIS_VectorVisualizer")  
+ ![Kontextmenü des UIVisualizer-Menüs](../debugger/media/dbg-natvis-vectorvisualizer.png "DBG_NATVIS_VectorVisualizer")  
 
  Alle Typen, die in der Natvis-Datei definiert sind, müssen die Benutzeroberflächenschnellansichten explizit auflisten, die sie anzeigen können. Der Debugger passt die Schnellansichtsverweise in den Typeinträgen an, um die Typen mit den registrierten Schnellansichten abzugleichen. Beispielsweise verweist der folgenden Typeintrag für `std::vector` auf das UIVisualizer-Element in unserem oben genannten Beispiel.  
 

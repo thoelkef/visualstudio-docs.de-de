@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850187"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-Klassendiagramme: Richtlinien
@@ -36,14 +36,14 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 > [!NOTE]
 > In diesem Thema geht es um UML-Klassendiagramme. Es gibt noch eine andere Art von Klassendiagramm, das erstellt und verwendet wird, um Programmcode visuell darzustellen. Siehe [Entwerfen und Anzeigen von Klassen und Typen](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
-## <a name="Using"></a>Verwenden von UML-Klassendiagrammen
+## <a name="using-uml-class-diagrams"></a><a name="Using"></a> Verwenden von UML-Klassendiagrammen
  Sie können ein UML-Klassendiagramm für viele verschiedene Zwecke verwenden:
 
 - Zum Bereitstellen einer von der Implementierung unabhängigen Beschreibung der Typen, die in einem System verwendet und zwischen Komponenten übergeben werden.
 
      Der Typ "Meal Order" kann z. B. in .NET-Code auf Geschäftsebene, in XML auf den Schnittstellen zwischen Komponenten, in SQL in der Datenbank und in HTML auf der Benutzeroberfläche implementiert werden. Obwohl diese Implementierungen sich in ihren Details unterscheiden, ist die Beziehung zwischen "Meal Order" und anderen Typen wie "Menu" und "Payment" immer gleich. Das UML-Klassendiagramm macht es möglich, diese Beziehungen getrennt von den Implementierungen darzustellen.
 
-- Zum Verdeutlichen des Glossars mit den Begriffen, die für die Kommunikation zwischen der Anwendung und ihren Benutzern und in Beschreibungen der Benutzeranforderungen verwendet werden. Siehe [Modell Benutzeranforderungen](../modeling/model-user-requirements.md).
+- Zum Verdeutlichen des Glossars mit den Begriffen, die für die Kommunikation zwischen der Anwendung und ihren Benutzern und in Beschreibungen der Benutzeranforderungen verwendet werden. Weitere Informationen finden Sie unter [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md).
 
      Nehmen wir z. B. die Benutzertextabschnitte, Anwendungsfälle oder anderen Anforderungsbeschreibungen einer Restaurantanwendung. Diese Beschreibungen enthalten zum Beispiel Begriffe wie Menu (Speisekarte), Order (Bestellung), Meal (Gericht), Price (Preis), Payment (Bezahlung) usw. Sie können ein UML-Klassendiagramm zeichnen, das die Beziehungen zwischen diesen Begriffen definiert. Auf diese Weise wird das Risiko von Inkonsistenzen in den Anforderungsbeschreibungen, in der Benutzeroberfläche und in den Hilfedokumenten reduziert.
 
@@ -78,7 +78,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
  Siehe [UML-Anwendungsfall Diagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Grundlegende Schritte zum Zeichnen von Klassendiagrammen
+## <a name="basic-steps-for-drawing-class-diagrams"></a><a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Klassendiagrammen
  Referenzinformationen zu den Elementen in UML-Klassendiagrammen finden Sie unter [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md).
 
 > [!NOTE]
@@ -114,7 +114,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
 6. Jedes Diagramm ist eine Ansicht eines Modells, das im gleichen Projekt auch von anderen Diagrammen genutzt wird. Um eine Strukturansicht des gesamten Modells anzuzeigen, wählen Sie **Ansicht**, **Weitere Fenster**, **UML-Modell-Explorer**aus.
 
-## <a name="UsingTypes"></a>Verwenden von Klassen, Schnittstellen und Enumerationen
+## <a name="using-classes-interfaces-and-enumerations"></a><a name="UsingTypes"></a> Verwenden von Klassen, Schnittstellen und Enumerationen
  In der Toolbox sind drei Standardarten von Klassifizierern verfügbar. Diese werden in diesem Dokument als *Typen* bezeichnet.
 
  ![Eine Klasse, eine Enumeration und eine Schnittstelle](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
@@ -123,7 +123,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
 - Verwenden Sie **Schnittstellen** (2) in einem Kontext, in dem Sie zwischen reinen Schnittstellen und konkreten Klassen mit internen Implementierungen unterscheiden müssen. Dieser Unterschied ist nützlich, wenn der Zweck des Diagramms darin besteht, eine Softwareimplementierung zu beschreiben. Er ist weniger nützlich, wenn Sie passive Daten modellieren oder wenn Sie Konzepte definieren, die zum Beschreiben der Benutzeranforderungen verwendet werden.
 
-- Verwenden Sie eine **Enumeration** (3), um einen Typ darzustellen, der über eine begrenzte Anzahl von Literalwerten verfügt, z. b. `Stop` und `Go`.
+- Verwenden Sie eine **Enumeration** (3), um einen Typ darzustellen, der über eine begrenzte Anzahl von Literalwerten verfügt, z `Stop` . b `Go` . und.
 
   - Fügen Sie die Literalwerte der Enumeration hinzu. Geben Sie jedem Wert einen anderen Namen.
 
@@ -154,7 +154,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
  Um eine Klasse aus einer Lebenslinie zu erstellen, öffnen Sie das Kontextmenü für die Lebenslinie, und wählen Sie dann **Klasse erstellen** oder **Schnittstelle erstellen**aus. Siehe [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).
 
-## <a name="AttributesAndOperations"></a>Attribute und Vorgänge
+## <a name="attributes-and-operations"></a><a name="AttributesAndOperations"></a> Attribute und Vorgänge
  Ein Attribut (4) ist ein benannter Wert, über den jede Instanz eines Typs verfügen kann. Das Zugreifen auf ein Attribut führt nicht dazu, dass der Zustand der Instanz geändert wird.
 
  Ein Vorgang (5) ist eine Methode oder Funktion, die Instanzen des Typs ausführen kann. Dabei kann ein Wert zurückgegeben werden. Wenn seine **IsQuery** -Eigenschaft den Wert true aufweist, kann der Zustand der Instanz nicht geändert werden.
@@ -174,13 +174,13 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 ### <a name="types-of-attributes-and-operations"></a>Typen von Attributen und Vorgängen
  Jeder *Typ* eines Attributs oder Vorgangs und jeder Parametertyp kann eines der folgenden sein:
 
-- **(keine)** : Sie können einen Typ in der Signatur nicht angeben, indem Sie den vorangehenden Doppelpunkt (`:`) weglassen.
+- **(keine)** : Sie können einen Typ in der Signatur nicht angeben, indem Sie den vorangehenden Doppelpunkt () weglassen `:` .
 
 - Einer der primitiven Standardtypen: **Boolean**, **Integer**, **String**.
 
 - Einen Typ, der im Modell definiert ist.
 
-- Ein parametrisierter Wert eines Vorlagen Typs, der als Vorlage\<Parameter > geschrieben wurde. Siehe [Vorlagen Typen](#Templates).
+- Ein parametrisierter Wert eines Vorlagen Typs, der als Vorlage geschrieben wurde \<Parameter> . Siehe [Vorlagen Typen](#Templates).
 
   Sie können auch den Namen eines Typs schreiben, den Sie im Modell noch nicht definiert haben. Der Name wird im UML-Modell-Explorer unter **nicht angegebene Typen** aufgeführt.
 
@@ -194,7 +194,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
  `[1]`
 
- Ein Wert des angegebenen Typs. Dies ist der Standardwert.
+ Ein Wert des angegebenen Typs. Dies ist die Standardoption.
 
  `[0..1]`
 
@@ -221,13 +221,13 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 ### <a name="visibility"></a>Sichtbarkeit
  *Sichtbarkeit* gibt an, ob auf das Attribut oder den Vorgang außerhalb der Klassendefinition zugegriffen werden kann. Die zulässigen Werte lauten wie folgt:
 
- **Public**
+ **Öffentlich**
 
  **+**
 
  Zugriff ist von allen anderen Typen möglich.
 
- **Private**
+ **Privat**
 
  **-**
 
@@ -239,7 +239,7 @@ In Visual Studio können Sie ein UML- *Klassendiagramm* verwenden, um Datentypen
 
  Der Zugriff ist nur innerhalb des Pakets, das diesen Typ enthält, und in allen Paketen möglich, die diesen explizit importieren. Siehe [Definieren von Namespaces und Paketen](#Packages).
 
- **Protected**
+ **Gebieten**
 
  **#**
 
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- Beispiel:
+ Zum Beispiel:
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -289,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Sie können jedoch nur die Eigenschaft **ist statisch** und **sind abstrakte** Eigenschaften im **Eigenschaften** Fenster festlegen.
 
 #### <a name="full-signature"></a>Vollständige Signatur
- Wenn Sie die Signatur eines Attributs oder Vorgangs bearbeiten, werden ggf. einige zusätzliche Eigenschaften am Ende der Zeile und nach jedem Parameter angezeigt. Sie stehen in geschweiften Klammern ({…}). Sie können diese Eigenschaften bearbeiten oder hinzufügen. Beispiel:
+ Wenn Sie die Signatur eines Attributs oder Vorgangs bearbeiten, werden ggf. einige zusätzliche Eigenschaften am Ende der Zeile und nach jedem Parameter angezeigt. Sie stehen in geschweiften Klammern ({…}). Sie können diese Eigenschaften bearbeiten oder hinzufügen. Zum Beispiel:
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -306,23 +306,23 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  `ordered`
 
- **Ist geordnet**
+ **Is Ordered**
 
  Die Auflistung ist eine Sequenz. Bei "false" ist kein eindeutiges erstes Element vorhanden. Gilt für Typen mit einer Multiplizität größer als 1.
 
  `query`
 
- **Ist Abfrage**
+ **Is Query**
 
  Der Vorgang ändert den Zustand seiner Instanz nicht. Gilt nur für Vorgänge.
 
  `/`
 
- **Ist abgeleitet**
+ **Is Derived**
 
  Das Attribut wird aus Werten anderer Attribute oder Zuordnungen berechnet.
 
- "/" steht vor dem Namen eines Attributs. Beispiel:
+ "/" steht vor dem Namen eines Attributs. Zum Beispiel:
 
 ```
 /TotalPrice: Integer
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Normalerweise wird die vollständige Signatur nur im Diagramm angezeigt, während Sie es bearbeiten. Wenn Sie die Bearbeitung beenden, werden die zusätzlichen Eigenschaften ausgeblendet. Wenn Sie die vollständige Signatur jederzeit anzeigen möchten, öffnen Sie das Kontextmenü für den Typ, und wählen Sie dann **vollständige Signatur anzeigen**aus.
 
-## <a name="Associations"></a>Zeichnen und Verwenden von Zuordnungen
+## <a name="drawing-and-using-associations"></a><a name="Associations"></a> Zeichnen und Verwenden von Zuordnungen
  Verwenden Sie eine Zuordnung, um eine beliebige Art von Verknüpfung zwischen zwei Elementen darzustellen, und zwar unabhängig davon, wie die Verknüpfung in der Software implementiert ist. Sie können eine Zuordnung z. B. verwenden, um einen Zeiger in C#, eine Beziehung in einer Datenbank oder einen Querverweis von einem Teil einer XML-Datei zu einem anderen darzustellen. Sie kann eine Zuordnung zwischen realen Objekten darstellen, z. B. Erde und Sonne. Die Zuordnung besagt nicht, wie der Link dargestellt wird, sondern nur, dass die Informationen vorhanden sind.
 
 ### <a name="properties-of-an-association"></a>Eigenschaften einer Zuordnung
@@ -360,9 +360,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Normalerweise ist es besser, Attribute nur für Typen zu verwenden, die Sie nicht im Diagramm zeichnen würden, z. B. primitive Typen.
 
- ![Äquivalente Zuordnung und Attribute](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
+ ![Entsprechende Zuordnung und Attribute](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
 
-## <a name="Inheritance"></a> Vererbung
+## <a name="inheritance"></a><a name="Inheritance"></a> Vererbung
  Verwenden Sie das Tool **Vererbung** , um die folgenden Beziehungen zu erstellen:
 
 - Eine *Generalisierungs* Beziehung zwischen einem spezialisierten Typ und einem allgemeinen Typ
@@ -403,14 +403,14 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  Auf diese Weise können Sie die von einer Klasse implementierten Schnittstellen anzeigen, ohne dass die Klassendiagramme zu viele Realisierungslinks enthalten. Außerdem können Sie die Schnittstelle und die Klassen, die diese realisieren, in separaten Diagrammen anzeigen.
 
- ![Mit dem "-und Lollipop" angezeigte Realisierung](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
+ ![Realisierung mit Connector und Lollipop](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
 
-## <a name="Templates"></a>Vorlagen Typen
+## <a name="template-types"></a><a name="Templates"></a> Vorlagen Typen
  Sie können einen generischen Typ oder Vorlagentyp definieren, der von anderen Typen oder Werten parametrisiert werden kann.
 
  Sie können z. B. ein generisches Wörterbuch erstellen, das mithilfe von Schlüssel- und Werttypen parametrisiert wird:
 
- ![Vorlagen Klasse mit zwei Parametern](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
+ ![Vorlagenklasse mit zwei Parametern](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
 
 #### <a name="to-create-a-template-type"></a>So erstellen Sie einen Vorlagentyp
 
@@ -450,7 +450,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 2. Öffnen Sie das Kontextmenü für den neuen Typ, und wählen Sie dann **Eigenschaften**aus.
 
-3. Wählen Sie in der Eigenschaft **Vorlagen Bindung** in der Dropdown Liste den Vorlagentyp aus, z. b. `Dictionary`.
+3. Wählen Sie in der Eigenschaft **Vorlagen Bindung** den Vorlagentyp aus, z `Dictionary` . b. aus der Dropdown Liste.
 
 4. Erweitern Sie die Eigenschaft **Vorlagen Bindung** .
 
@@ -458,19 +458,19 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 5. Legen Sie jeden Parameter auf einen geeigneten Wert fest. Legen Sie den `Key`-Parameter z. B. auf eine Klasse mit dem Namen `Name` fest.
 
-## <a name="Packages"></a>Spar
+## <a name="packages"></a><a name="Packages"></a> Pakete
  Sie können Pakete in einem UML-Klassendiagramm anzeigen. Ein Paket ist ein Container für andere Modellelemente. Sie können in einem Paket beliebige Elemente erstellen. Im Diagramm werden die im Paket enthaltenen Elemente neu angeordnet, wenn Sie das Paket verschieben.
 
  Sie können das Steuerelement zum Reduzieren/Erweitern verwenden, um den Inhalt des Pakets aus- oder einzublenden.
 
  Siehe [Definieren von Paketen und Namespaces](../modeling/define-packages-and-namespaces.md).
 
-## <a name="generating"></a>Erstellen von Code aus UML-Klassendiagrammen
+## <a name="generating-code-from-uml-class-diagrams"></a><a name="generating"></a> Erstellen von Code aus UML-Klassendiagrammen
  Generieren Sie C#-Code oder passen Sie die Vorlagen für Codegenerierung an, um die Implementierung der Klassen in einem UML-Klassendiagramm zu starten. So starten Sie das Generieren von Code mithilfe der bereitgestellten C#-Vorlagen:
 
 - Öffnen Sie das Kontextmenü für das Diagramm oder ein Element, wählen Sie **Code generieren**aus, und legen Sie dann die erforderlichen Eigenschaften fest.
 
      Weitere Informationen zum Festlegen dieser Eigenschaften und zum Anpassen der bereitgestellten Vorlagen finden Sie unter [Generieren von Code aus UML-Klassendiagrammen](../modeling/generate-code-from-uml-class-diagrams.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Bearbeiten von UML-Modellen und-Diagrammen UML-](../modeling/edit-uml-models-and-diagrams.md) [Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) [Modell Benutzer Anforderungen](../modeling/model-user-requirements.md) [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md) [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md) für [UML-Komponenten Diagramme: Referenz](../modeling/uml-component-diagrams-reference.md)

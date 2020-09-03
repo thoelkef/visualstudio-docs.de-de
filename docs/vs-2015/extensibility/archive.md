@@ -9,19 +9,19 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9293d1f0f0b1f3c34c8ee603c3952d17fd653a73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184775"
 ---
-# <a name="archive"></a>Archiv
+# <a name="archive"></a>Archivieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieser Abschnitt enthält erläuterungen zu Visual Studio-Erweiterbarkeit Technologien, werden weiterhin unterstützt, aber deren Ersetzung-Technologien, die neuer sind.  
+Dieser Abschnitt enthält Erörterung von Visual Studio-Erweiterbarkeits Technologien, die weiterhin unterstützt werden, aber neue Ersatz Technologien aufweisen.  
   
 ## <a name="legacy-interfaces-in-the-editor"></a>Legacyschnittstellen im Editor  
- In diesem Abschnitt wird erläutert, wie Editor mit legacy-Schnittstellen (IVs *) anstatt auf den neueren MEF-Code den Zugriff auf: [Legacy-Schnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md).  
+ In diesem Abschnitt wird erläutert, wie Sie auf den Editor mit Legacy Schnittstellen (IVS *) und nicht mit dem neueren MEF-Code zugreifen: [Legacy Schnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md).  
   
 ## <a name="tool-windows-in-the-registry"></a>Toolfenster in der Registrierung  
- In diesem Abschnitt wird erläutert, wie zum Einrichten von Toolfenstern direkt in der Registrierung wird: [Tools von Windows in der Registrierung](../extensibility/tool-windows-in-the-registry.md).
+ In diesem Abschnitt wird erläutert, wie Tool Fenster direkt in der Registrierung eingerichtet werden: [Tool Fenster in der Registrierung](../extensibility/tool-windows-in-the-registry.md).
