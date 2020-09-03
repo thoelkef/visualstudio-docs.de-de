@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282578"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
@@ -43,7 +43,7 @@ Smarttags werden vom regulären Ausdruck gesteuert, der in den Wert des Werts " 
 
 In der folgenden Tabelle werden die Registrierungs Werte beschrieben, die Beschriftungs Bezeichnungen steuern.
 
-|Registrierungs Element|Beschreibung|
+|Registrierungs Element|BESCHREIBUNG|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|Der reguläre Ausdruck, den Sie verwenden, um die Muster abzugleichen.|
 |**SmartCaptionReplacement**|Das Format, in dem alle Gruppen angezeigt werden, die in **SmartCaptionExpression**übereinstimmen.|
@@ -51,11 +51,11 @@ In der folgenden Tabelle werden die Registrierungs Werte beschrieben, die Beschr
 
 In der folgenden Tabelle sind die internen Standardeinstellungen für diese Registrierungs Werte aufgeführt.
 
-|Registrierungs Element|Standardwert|Erläuterung|
+|Registrierungs Element|Standardwert|Erklärung|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**( \\ \p{ll}) ( \\ \p{LU}) &#124;_ +**|Entspricht einem Kleinbuchstaben, gefolgt von einem Großbuchstaben oder einem Unterstrich.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** stellt alle Zeichen dar, die in den ersten Klammern des Ausdrucks übereinstimmen, und **$2** stellt alle Zeichen dar, die in den zweiten Klammern übereinstimmen. Die Ersetzung ist die erste Übereinstimmung, ein Leerzeichen und dann die zweite Entsprechung.|
-|**SmartCaptionSuffix**|**:**|Stellt ein an die zurückgegebene Zeichenfolge angefügtes Zeichen dar. Wenn die Beschriftung beispielsweise ist `Company Name` , wird Sie durch das Suffix`Company Name:`|
+|**SmartCaptionSuffix**|**:**|Stellt ein an die zurückgegebene Zeichenfolge angefügtes Zeichen dar. Wenn die Beschriftung beispielsweise ist `Company Name` , wird Sie durch das Suffix `Company Name:`|
 
 > [!CAUTION]
 > Gehen Sie sehr vorsichtig vor, wenn Sie im Registrierungs-Editor etwas tun. Sichern Sie die Registrierung, bevor Sie Sie bearbeiten. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können Sie schwerwiegende Probleme verursachen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich machen. Microsoft garantiert nicht, dass Probleme, die Sie durch die Verwendung des Registrierungs-Editors verursacht haben, nicht ordnungsgemäß aufgelöst werden können. Die Verwendung des Registrierungs-Editors erfolgt auf Ihr eigenes Risiko.
@@ -138,6 +138,6 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
     Wenn Sie Elemente das nächste Mal aus dem **Datenquellen** Fenster ziehen, werden die Beschriftungs Bezeichnungen mit unveränderten Beschriftungen erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
