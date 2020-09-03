@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905620"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Vorgehensweise: Aktualisieren einer Visual Studio-Erweiterung
@@ -60,6 +60,6 @@ Sie können eine Visual Studio-Erweiterung auf Ihrem System aktualisieren, indem
     > [!NOTE]
     > Ab Visual Studio 2015 Update 2 können Sie **(in Extras**  >  **Optionen**  >  **Umgebungs**  >  **Erweiterungen und Updates**) angeben, ob Sie automatische Updates für Erweiterungen pro Benutzer, alle Benutzer Erweiterungen oder beides (Standardeinstellung) benötigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)
 - [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)

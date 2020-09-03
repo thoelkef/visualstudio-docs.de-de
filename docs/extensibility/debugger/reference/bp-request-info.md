@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Microsoft Docs
+title: BP_REQUEST_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737898"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
-Enthält die Informationen, die zum Implementieren eines Haltepunkts erforderlich sind.
+Enthält die erforderlichen Informationen zum Implementieren eines Breakpoints.
 
 ## <a name="syntax"></a>Syntax
 
@@ -59,44 +59,44 @@ public struct BP_REQUEST_INFO {
 
 ## <a name="members"></a>Member
 `dwFields`\
-Eine Kombination von [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Flags aus der BPREQI_FIELDS-Enumeration, die angibt, welche Felder ausgefüllt werden.
+Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
 `guidLanguage`\
 Die Sprach-GUID.
 
 `bpLocation`\
-Die [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur an, die den Typ der Haltepunktposition angibt.
+Die [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) -Struktur, die den Typ der Haltepunkt Position angibt.
 
 `pProgram`\
-Das [IDebugProgram2-Objekt,](../../../extensibility/debugger/reference/idebugprogram2.md) das die Anwendung darstellt, in der der Haltepunkt auftritt.
+Das [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das die Anwendung darstellt, in der der Breakpoint auftritt.
 
 `bstrProgramName`\
-Der Name der Anwendung, in der der Haltepunkt auftritt.
+Der Name der Anwendung, in der der Breakpoint auftritt.
 
 `pThread`\
-Das [IDebugThread2-Objekt,](../../../extensibility/debugger/reference/idebugthread2.md) das den Thread darstellt, in dem der Haltepunkt auftritt.
+Das [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem der Breakpoint auftritt.
 
 `bstrThreadName`\
-Der Name des Threads, in dem der Haltepunkt auftritt.
+Der Name des Threads, in dem der Breakpoint auftritt.
 
 `bpCondition`\
-Die [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Struktur, die die Bedingungen beschreibt, unter denen der Haltepunkt ausgelöst wird.
+Die [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) -Struktur, die die Bedingungen beschreibt, unter denen der Breakpoint ausgelöst wird.
 
 `bpPassCount`\
-Die [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Struktur, die die Pass-Count-Informationen des Haltepunkts enthält.
+Die [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) -Struktur, die die Informationen zur Durchlauf Anzahl des Breakpoints enthält.
 
 `dwFlags`\
-Eine Kombination von [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Flags aus der BP_FLAGS-Enumeration, die die Flags für den angeforderten Haltepunkt angibt.
+Eine Kombination von Flags aus der [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Enumeration, die die Flags für den angeforderten Haltepunkt angibt.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur wird von der [GetRequestInfo-Methode](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) zurückgegeben.
+Diese Struktur wird von der [getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) -Methode zurückgegeben.
 
-Wenn Sie die GUID des Debugmodulherstellers, die Haltepunkteinschränkung oder den Ablaufverfolgungspunkt abrufen müssen, lesen Sie die [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.
+Wenn Sie die GUID der Debug-Engine, die breakpointeinschränkung oder den Ablauf Verfolgungs Punkt abrufen müssen, sehen Sie sich die [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur an.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft-Dokumentation
+title: 'IDebugFunctionObject2:: kreatestringobjectwithlength | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d915cd4a447e0a6eee51d8fa31ec994c68759e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202977"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Erstellt ein String-Objekt, das die angegebene Länge aufweist.  
+Erstellt ein Zeichen folgen Objekt mit der angegebenen Länge.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -43,16 +43,16 @@ int CreateStringObjectWithLength (
   
 #### <a name="parameters"></a>Parameter  
  `pcstrString`  
- [in] Der Zeichenfolgenwert für den String-Objekt.  
+ in Der Zeichen folgen Wert für das Zeichen folgen Objekt.  
   
  `uiLength`  
- [in] Die Länge der Zeichenfolge in Bytes.  
+ in Die Länge der Zeichenfolge in Bytes.  
   
  `ppObject`  
- [out] Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt, das neu erstellte String-Objekt darstellt.  
+ vorgenommen Gibt ein [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekt zurück, das das neu erstellte Zeichen folgen Objekt darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

@@ -28,16 +28,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6a364498306758f8c2f01de741aed50166cc8f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202239"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht.  
+Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -97,7 +97,7 @@ HRESULT CvWriteMessageExVA(
   
 #### <a name="parameters"></a>Parameter  
  `argList`  
- Liste mit Argumenten.  
+ Liste von Argumenten.  
   
  `category`  
  Kategorie der Spanne.  
@@ -114,12 +114,12 @@ HRESULT CvWriteMessageExVA(
 ## <a name="return-value"></a>Rückgabewert  
  S_OK, wenn die Meldung erfolgreich geschrieben wurde. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
   
-## <a name="requirements"></a>Requirements (Anforderungen)  
+## <a name="requirements"></a>Anforderungen  
  **Header:** cvmarkers.h  
   
  **Unicode:** CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
   
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA  
   
-## <a name="see-also"></a>Siehe auch  
- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Weitere Informationen  
+ [C++-Bibliotheks Referenz](../profiling/cpp-library-reference.md)

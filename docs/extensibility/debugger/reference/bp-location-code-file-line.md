@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
+title: BP_LOCATION_CODE_FILE_LINE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738016"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
-Enthält die Daten für den Speicherort eines Haltepunkts in einer bestimmten Zeile in einer Codequelldatei.
+Enthält die Daten für den Speicherort eines Breakpoints in einer bestimmten Zeile in einer Code Quelldatei.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 
 ## <a name="members"></a>Member
 `bstrContext`\
-Der Kontext des Haltepunkts, in der Regel ein Methoden- oder Funktionsname, wie er in einer Aufrufliste angezeigt wird.
+Der Kontext des Breakpoints, in der Regel ein Methoden-oder Funktionsname, wie er in einer-aufrufsstapel angezeigt wird.
 
 `pDocPos`\
-Das [IDebugDocumentPosition2-Objekt,](../../../extensibility/debugger/reference/idebugdocumentposition2.md) das die Dokumentposition des Haltepunkts darstellt.
+Das [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) -Objekt, das die Dokument Position des Breakpoints darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Gewerkschaft.
+Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905578"
 ---
 # <a name="how-to-use-the-activity-log"></a>Vorgehensweise: Verwenden des Aktivitäts Protokolls
@@ -38,7 +38,7 @@ VSPackages können Nachrichten in das Aktivitätsprotokoll schreiben. Diese Funk
         "Called for: {0}", this.ToString()));
     ```
 
-     Mit diesem Code wird der <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> Dienst abgerufen und in eine- <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> Schnittstelle umgewandelt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>schreibt einen Informations Eintrag mit dem aktuellen Kultur Kontext in das Aktivitätsprotokoll.
+     Mit diesem Code wird der <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> Dienst abgerufen und in eine- <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> Schnittstelle umgewandelt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> schreibt einen Informations Eintrag mit dem aktuellen Kultur Kontext in das Aktivitätsprotokoll.
 
 2. Wenn das VSPackage geladen wird (in der Regel, wenn ein Befehl aufgerufen oder ein Fenster geöffnet wird), wird der Text in das Aktivitätsprotokoll geschrieben.
 
@@ -62,7 +62,7 @@ Da es sich bei dem Aktivitätsprotokoll um einen Dienst handelt, ist das Aktivit
 
 Sie sollten das Aktivitätsprotokoll direkt vor dem Schreiben in das Aktivitätsprotokoll abrufen. Speichern oder speichern Sie das Aktivitätsprotokoll nicht für die zukünftige Verwendung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>

@@ -12,10 +12,10 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58529dabbb52ceb751c67be24beb1d21285a1de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301135"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Erstellen eines Windows Installer-Pakets
@@ -26,7 +26,7 @@ Daten steuern das Windows Installer Modell. Anstatt ein prozedurales Skript zum 
 ## <a name="database-entries"></a>Datenbankeinträge  
  Um ein VSPackage zu installieren, muss ein Windows Installer Paketdaten Bank Einträge enthalten, um die folgenden Aufgaben auszuführen:  
   
-- Durchsuchen Sie das System, um die Versionen von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], die das VSPackage unterstützt (mithilfe Windows Installer Tabellen, die AppSearch, complocator, reglocator, drlocator und Signature enthalten) zu suchen.  
+- Durchsuchen Sie das System, um zu ermitteln, welche Versionen des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage unterstützt (mit Windows Installer Tabellen, die AppSearch, complocator, reglocator, drlocator und Signature enthalten).  
   
 - Brechen Sie die Installation ab, wenn keine unterstützte Version von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] installiert ist oder eine andere System Anforderung des VSPackage nicht erfüllt wird (mithilfe der LaunchCondition-Tabelle).  
   
@@ -34,7 +34,7 @@ Daten steuern das Windows Installer Modell. Anstatt ein prozedurales Skript zum 
   
 - Fügen Sie die entsprechenden Informationen für das VSPackage zur Registrierung hinzu (mithilfe der Registrierungs Tabelle).  
   
-- Integrieren Sie das VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], indem Sie " **devenv. exe/Setup** " aufrufen (mithilfe der Tabelle "CustomAction").  
+- Integrieren Sie das VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] durch Aufrufen von **devenv.exe/Setup** (mithilfe der CustomAction-Tabelle).  
   
   Weitere Informationen finden Sie unter [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
@@ -47,9 +47,9 @@ Daten steuern das Windows Installer Modell. Anstatt ein prozedurales Skript zum 
   
 - Windows Installer XML Toolset  
   
-   Das Toolset erstellt Windows Installer Pakete aus XML-Quelldateien. Das Toolset ist ein Microsoft-Open-Source-Projekt. Sie können den Quellcode und ausführbare Dateien aus [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/)herunterladen.  
+   Das Toolset erstellt Windows Installer Pakete aus XML-Quelldateien. Das Toolset ist ein Microsoft-Open-Source-Projekt. Sie können den Quellcode und ausführbare Dateien aus herunterladen [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/) .  
   
-  Informationen zu kommerziellen Produkten, die mithilfe des [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integriert werden, finden Sie unter [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
+  Informationen zu kommerziellen Produkten, die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mithilfe von in integriert [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] werden, finden Sie unter [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/) .  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

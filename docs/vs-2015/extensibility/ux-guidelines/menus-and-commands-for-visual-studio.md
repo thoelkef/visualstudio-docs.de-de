@@ -9,71 +9,71 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202086"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüs und Befehle für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="command-usage"></a>Zur Verwendung des Befehls
+## <a name="command-usage"></a>Befehls Verwendung
 
 ### <a name="overview"></a>Übersicht
- Im Gegensatz zu Microsoft Office, das eine Sammlung, die viele einzelne Produkte umfasst ist, enthält Visual Studio viele Produkte, die jeweils ihre Befehlssätze, globale Visual Studio-IDE beitragen. Die IDE verwaltet die Komplexität von Tausenden von Befehlen von Filterfunktionen für den Benutzer basierend auf dem Kontext verfügbar.
+ Anders als bei Microsoft Office, bei der es sich um eine Sammlung handelt, die viele separate Produkte umfasst, enthält Visual Studio viele Produkte, die jeweils ihre Befehls Sätze an die globale Visual Studio-IDE einbringen. Die IDE verwaltet die Komplexität von Tausenden von Befehlen, indem die Funktionen gefiltert werden, die für den Benutzer basierend auf dem Kontext verfügbar sind.
 
- Wenn der Kontext eines Benutzers geändert wird – beispielsweise über ein Design-Fenster ein Fenster für die codebearbeitung – Funktionalität, die nicht mit nicht mehr angezeigt wird der neue Kontext. Zur gleichen Zeit, neue Funktionen Oberflächen zusammen mit dynamischen Informationen, z. B. Eigenschaften und Toolbox-Optionen. Der Benutzer muss nicht beachten Sie den Tauschvorgang für den verfügbaren Befehlssatz. Wenn der Benutzer abgelenkt oder verwechseln von Befehlen angezeigt oder ausgeblendet ist, benötigt das Design der Benutzeroberfläche Anpassung. Aktuelle Kontext des Benutzers wird immer in eine oder mehrere Möglichkeiten, wie z. B. in der Titelleiste der IDE, das Fenster "Eigenschaften" oder das Dialogfeld "Eigenschaftenseiten" angegeben.
+ Wenn der Kontext eines Benutzers geändert wird – z. b. beim Wechseln von einem Entwurfs Fenster zu einem Fenster zur Code Bearbeitung – werden Funktionen nicht mehr mit dem neuen Kontext verknüpft. Gleichzeitig werden neue Funktionen zusammen mit verwandten dynamischen Informationen, z. b. Eigenschaften und Toolbox Optionen, angezeigt. Der Benutzer sollte das Austauschen des verfügbaren Befehlssatzes nicht bemerken. Wenn der Benutzer durch Befehle, die angezeigt oder verschwindet, abgelenkt oder verwirrt wird, muss der Benutzeroberflächen Entwurf angepasst werden. Der aktuelle Kontext des Benutzers wird immer auf eine oder mehrere Arten angegeben, z. b. in der IDE-Titelleiste, im Eigenschaftenfenster oder im Dialogfeld Eigenschaften Seiten.
 
- Befehlsleisten ermöglicht Flexibilität bei der Benutzeroberfläche. Der einzige Befehl Strukturen inhärenter Lösungen für Visual Studio im Hauptmenü und die wichtigsten Befehlsleiste, die beide angepasst und werden auch ausgeblendet sind. Andere Befehlsleisten angezeigt und ausgeblendet werden auf den Zustand der Anwendung. Toolfenster und Editoren für Dokument können auch eingebettete Symbolleisten in ihre Fensterränder enthalten.
+ Befehls leisten ermöglichen Flexibilität in der Benutzeroberfläche. Die einzigen Befehlsstrukturen in der Visual Studio-Umgebung sind das Hauptmenü und die Haupt Befehlsleiste, die beide angepasst und sogar ausgeblendet werden können. Andere Befehls leisten werden basierend auf dem Zustand der Anwendung angezeigt und verschwinden. Tool Fenster und Dokument-Editoren können auch eingebettete Symbolleisten innerhalb ihrer Fensterkanten enthalten.
 
 #### <a name="basic-guidelines"></a>Grundlegende Richtlinien
 
-##### <a name="use-existing-shared-commands-command-groups-and-menus-whenever-possible"></a>Verwenden Sie die vorhandenen freigegebenen Befehle, Befehlsgruppen und Menüs, wann immer möglich.
- Da Befehle in der Regel basierend auf dem Kontext angezeigt werden, wird Sie Verwendung eines vorhandenen freigegebenen Menüs und Befehlsgruppen sichergestellt, dass die Befehlsstruktur zwischen Änderungen im Kontext relativ konstant bleibt. Wiederverwenden von gemeinsamen Befehle aus, und platzieren die neue Befehle in der Nähe verwandter, freigegebenen Befehle außerdem verringert die Komplexität der IDE, und erstellt eine benutzerfreundlichere Oberfläche. Wenn ein neuer Befehl werden definiert muss, versuchen Sie es an eine vorhandene freigegebene Befehlsgruppe platzieren. Wenn eine neue Gruppe definiert werden muss, platzieren Sie es in einem vorhandenen freigegebenen Menü in der Nähe einer Gruppe von entsprechenden Befehl vor dem Erstellen eines neuen Menüs für der obersten Ebene ein.
+##### <a name="use-existing-shared-commands-command-groups-and-menus-whenever-possible"></a>Verwenden Sie nach Möglichkeit vorhandene freigegebene Befehle, Befehls Gruppen und Menüs.
+ Da Befehle in der Regel auf der Grundlage des Kontexts angezeigt werden, stellt die Verwendung vorhandener frei gegebener Menüs und Befehls Gruppen sicher, dass die Befehlsstruktur zwischen den Änderungen im Kontext relativ stabil bleibt. Durch die Wiederverwendung frei gegebener Befehle und die Platzierung neuer Befehle in der Nähe der zugehörigen freigegebenen Befehle wird auch die IDE-Komplexität reduziert, und die Benutzerfreundlichkeit wird verbessert Wenn ein neuer Befehl definiert werden muss, versuchen Sie, ihn in einer vorhandenen freigegebenen Befehlsgruppe zu platzieren. Wenn eine neue Gruppe definiert werden muss, platzieren Sie Sie in einem vorhandenen freigegebenen Menü in der Nähe einer zugehörigen Befehlsgruppe, bevor Sie ein neues Menü der obersten Ebene erstellen.
 
-##### <a name="do-not-create-icons-for-every-command"></a>Erstellen Sie Symbole für jeden Befehl nicht.
- Stellen Sie sich sorgfältig durch, bevor Sie ein Befehlssymbol zu erstellen. Symbole, die nur für Befehle erstellt werden soll, die:
+##### <a name="do-not-create-icons-for-every-command"></a>Erstellen Sie für jeden Befehl keine Symbole.
+ Vor dem Erstellen eines Befehls Symbols sollten Sie sorgfältig überlegen. Symbole sollten nur für Befehle erstellt werden, für die Folgendes gilt:
 
-- in einer Standardsymbolleiste angezeigt.
+- wird auf einer Standard Symbolleiste angezeigt.
 
-- voraussichtlich von Benutzern hinzugefügt werden, um eine Symbolleiste über dem **anpassen...** Dialogfeld.
+- werden von Benutzern wahrscheinlich über die Schaltflächen **anpassen...** hinzu.
 
-- haben Sie ein Symbol, das die gleiche Aktion in einem anderen Microsoft-Produkt zugeordnet.
+- ein Symbol, das derselben Aktion in einem anderen Microsoft-Produkt zugeordnet ist.
 
-##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Beschränken Sie das Hinzufügen von Tastenkombinationen in Visual Studio
- Die große Mehrheit der Benutzer nutzen einen kleinen Bruchteil alle verfügbaren Tastenkombinationen. Binden Sie im Zweifelsfall das Feature nicht auf eine Tastenkombination ist. Arbeiten mit Ihrer Benutzer kommen Team vor dem Hinzufügen neuer Tastenkombinationen.
+##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Hinzufügen von Tastenkombinationen begrenzen
+ Die große Mehrheit der Benutzer nutzt einen kleinen Bruchteil aller verfügbaren Tastenkombinationen. Binden Sie Ihre Funktion im Zweifelsfall nicht an eine Tastenkombination. Arbeiten Sie mit Ihrem benutzerfreundlichen Team, bevor Sie neue Verknüpfungen hinzufügen.
 
-##### <a name="give-commands-a-default-menu-placement"></a>Geben Sie eine standardmäßige Menü-Platzierung Befehle.
- Denken Sie daran, dass Ihre Befehle von anderen angepasst werden und entsprechend zu entwerfen. Es gibt keine als ausgeblendete Befehl. Alle Visual Studio-Befehle angezeigt werden, der **Tools > Anpassen** Dialogfeld, das Befehlsfenster, automatische Vervollständigung der **Tools > Optionen > Tastatur** Dialogfeld ein, und die Entwicklung Tools-Umgebung (DTE). Stellen Sie sicher, um Ihre Befehle einen Namen und eine QuickInfo in der .ctc-Datei zu gewähren, damit Benutzer sie leicht finden können.
+##### <a name="give-commands-a-default-menu-placement"></a>Übergeben von Befehlen eine Standardmenü Platzierung
+ Beachten Sie, dass Ihre Befehle von anderen Personen angepasst und entsprechend entworfen werden. Es gibt keinen ausgeblendeten Befehl. Alle Visual Studio-Befehle werden im Dialogfeld Extras **> anpassen** , Befehlsfenster, Auto vervollständigen, **Tools > Optionen > Tastatur** Dialogfeld und Entwicklungs Tools-Umgebung (DTE) angezeigt. Stellen Sie sicher, dass Sie Ihren Befehlen einen Namen und eine QuickInfo in der CTC-Datei geben, damit Benutzer Sie leicht finden können.
 
-##### <a name="do-not-duplicate-shared-commands-on-an-embedded-toolbar"></a>Duplizieren Sie freigegebenen Befehle in einer eingebetteten Symbolleiste nicht.
- Es ist hilfreich, um Befehle in der Nähe der Benutzer den Fokus auf den zu platzieren. Eine Möglichkeit hierzu ist eine eingebettete Symbolleiste am oberen Rand Ihrer Tool- oder ein Dokument-Editor erstellen. Sollte der Inhaltsbereich im Fenster für die Befehle, die auf die Symbolleiste platziert. Duplizieren Sie freigegebene Befehle auf der diese Symbolleiste nicht. Beispiel: Legen Sie niemals ein Symbol "Speichern" in einer eingebetteten Symbolleiste ein.
+##### <a name="do-not-duplicate-shared-commands-on-an-embedded-toolbar"></a>Duplizieren Sie keine freigegebenen Befehle auf einer eingebetteten Symbolleiste.
+ Es ist hilfreich, Befehle in unmittelbarer Nähe zum Bereich des Benutzer Fokus zu platzieren. Eine Möglichkeit hierfür ist das Erstellen einer eingebetteten Symbolleiste am oberen Rand des Tool Fensters oder des Dokument-Editors. Die auf der Symbolleiste platzierten Befehle sollten für den Inhalts Bereich innerhalb des Fensters spezifisch sein. Duplizieren Sie keine freigegebenen Befehle auf diesen Symbolleisten. Platzieren Sie z. b. niemals das Symbol "Speichern" in einer eingebetteten Symbolleiste.
 
-### <a name="content-and-command-visibility"></a>Sichtbarkeit von Inhalt und Befehl
- Befehle vorhanden sind, in den folgenden Bereichen: **Umgebung**, **Hierarchie**, und **Dokument**. Kennen Sie jeden Bereich, um die Platzierung der Befehl vertrauen können.
+### <a name="content-and-command-visibility"></a>Sichtbarkeit von Inhalten und Befehlen
+ In den folgenden Bereichen sind Befehle vorhanden: **Umgebung**, **Hierarchie**und **Dokument**. Informieren Sie sich über jeden Bereich, um Vertrauen in die Befehls Platzierung zu erhalten.
 
- Befehle in der **Umgebung** Bereich primären Kontext herzustellen, und zwischen mehreren Kontexten freigegeben werden. Ändern der Sichtbarkeit oder die Anordnung von Dokumenten und Toolfenster. Zwischen den Befehlen in der Umgebung sind **neues Projekt**, **Herstellen einer Verbindung mit Server**, **Prozess anhängen**, **Ausschneiden**,  **Kopie**, **einfügen**, **finden**, **Optionen**, **anpassen**, **neues Fenster**, und **Hilfe anzeigen**.
+ Befehle im **Umgebungs** Bereich richten den primär Kontext ein und werden von mehreren Kontexten gemeinsam genutzt. Sie ändern die Sichtbarkeit oder Anordnung von Dokumenten und Tool Fenstern. Zu den Befehlen im Umgebungs Bereich zählen **Neues Projekt**, **Verbindung mit Server herstellen**, **Prozess anfügen**, **Ausschneiden**, **Kopieren**, **Einfügen**, **Suchen**, **Optionen**, **Anpassen**, **Neues Fenster**und **Hilfe anzeigen**.
 
- Befehle in der **Hierarchie** Bereich Verwalten von Hierarchien in Visual Studio, einschließlich **Projekt**, **Team**, und **Daten**. Hängen sie mit eines Projekts unterkontextbehälter – z. B. **Debuggen**, **erstellen**, **Test**, **Architektur**, oder **analysieren** . Zwischen den Befehlen in der Hierarchie gelten **neues Element hinzufügen**, **neue Abfrage**, **Projekteinstellungen**, **neue Datenquelle hinzufügen**, **Leistungs-Assistenten starten**, und **neues Diagramm**.
+ Befehle im **Hierarchie** Bereich verwalten Hierarchien in Visual Studio, **einschließlich Projekt**, **Team**und **Daten**. Sie beziehen sich auf den unter Kontext eines Projekts, z. –. **Debug**, **Build**, **Test**, **Architecture**oder **Analysis**. Zu den Befehlen im Bereich Hierarchie gehören **Add New Item**, **New Query**, **Project Settings**, **Add New Data Source**, **Launch Performance Wizard**und **New Diagram**.
 
- Befehle in der **Dokument** Bereich Act auf dem Inhalt eines Dokuments, z. B. Code, entwerfen oder eine Arbeitselementabfrage ("WIQ"). Klicken sie auch wirken sich auf die Ansicht eines Toolfensters oder andernfalls für dieses Toolfenster spezifisch sind. Bereich standarddokumentbefehle auch fungieren, auf die Dateiobjekte, die Hierarchie-spezifisch ist, z. B. sind **aus Projekt entfernen**. Zwischen den Befehlen im Dokument sind **Umgestalten > Umbenennen**, **Kopie der Arbeitsaufgabe erstellen**, **alle erweitern**, **alle reduzieren**, und **Benutzeraufgabe erstellen**.
+ Befehle im **Dokument** Bereich agieren auf den Inhalt eines Dokuments, z. b. Code, Design oder eine Arbeitsaufgaben Abfrage (Work Item Query, WIQ). Sie wirken sich auch auf die Ansicht eines Tool Fensters aus oder sind für dieses Tool Fenster anderweitig spezifisch. Dokument Bereichs Befehle wirken sich auch auf die Datei Objekte aus, die selbst Hierarchie spezifisch sind, z. b. **aus Projekt entfernen**. Die Befehle im Dokumentbereich sind **Umgestalten > umbenennen**, **Erstellen einer Kopie des Arbeits Elements**, **erweitern alle**, **alle**reduzieren und **Benutzer erstellen**.
 
-### <a name="command-placement-decisions"></a>Befehl Platzierung Entscheidungen
- Nachdem Sie entschieden haben, um einen Befehl erstellen, müssen Sie die entsprechende Platzierung und angibt, ob eine Tastenkombination erstellen zu bestimmen. Führen Sie diese Entscheidung Pfad zum Einrichten von platzieren Sie den Befehl aus:
+### <a name="command-placement-decisions"></a>Entscheidungen hinsichtlich der Befehls Platzierung
+ Wenn Sie sich entschieden haben, einen Befehl zu erstellen, müssen Sie die entsprechende Platzierung bestimmen und angeben, ob eine Tastenkombination erstellt werden soll. Gehen Sie folgendermaßen vor, um festzulegen, wo der Befehl platziert werden soll:
 
- ![Befehlspositionierung](../../extensibility/ux-guidelines/media/0501-a-commandplacement.png "0501-A_CommandPlacement")
+ ![Entscheidungsdiagramm zur Befehlspositionierung](../../extensibility/ux-guidelines/media/0501-a-commandplacement.png "0501-a_CommandPlacement")
 
- **Pfad der Entscheidung für die Platzierung der Befehl in Visual Studio**
+ **Entscheidungs Pfad für Befehls Platzierung in Visual Studio**
 
-### <a name="command-placement-in-menus"></a>Befehl Platzierung in Menüs
+### <a name="command-placement-in-menus"></a>Befehls Platzierung in Menüs
 
-#### <a name="main-menu-bar"></a>Menüleiste "Main"
- Die Hauptmenüleiste sollte im Standardspeicherort für alle Pakete kontextspezifische Befehle, die an der Benutzeroberfläche beitragen. Die Hauptmenüleiste unterscheidet sich von anderen Befehlsstrukturen, da die Umgebung steuern verwendet welche Befehle angezeigt werden. Deaktivieren Sie alle anderen Befehlsleisten einfach Befehle, die aus dem Kontext sind, ob sie in einem Menü oder auf einer Symbolleiste platziert werden.
+#### <a name="main-menu-bar"></a>Hauptmenüleiste
+ Die Hauptmenüleiste sollte der Standard Speicherort für Befehle von kontextspezifischen Menü Paketen sein, die zur Benutzeroberfläche beitragen. Die Hauptmenüleiste unterscheidet sich von anderen Befehlsstrukturen darin, dass Sie von der Umgebung verwendet wird, um zu steuern, welche Befehle sichtbar sind. Alle anderen Befehls leisten deaktivieren einfach Befehle, die nicht im Kontext sind, und zwar unabhängig davon, ob Sie in einem Menü oder auf einer Symbolleiste abgelegt werden.
 
- Die Umgebung definiert eine Reihe von Befehlen, die in der Hauptmenüleiste integriert, die über die gesamte IDE und mehrere Task-Domänen hinweg gemeinsam sind. Diese Befehle sind immer sichtbar unabhängig davon, ob der VSPackages in der Umgebung geladen. Auch wenn dieser Satz von Befehlen von VSPackages erweitern können, ist der Befehlssatz in jedes Produkt und die Positionierung der Befehle für die die Verantwortung für jedes Team.
+ Die Umgebung definiert eine Reihe von Befehlen, die in die Hauptmenüleiste integriert sind und in der gesamten IDE und mehreren Aufgaben Domänen gemeinsam sind. Diese Befehle sind immer sichtbar, unabhängig davon, welche VSPackages in die Umgebung geladen werden. Obwohl VSPackages diese Befehls Reihe erweitern können, liegt der Befehlssatz jedes Produkts und die Platzierung der Befehle in der Verantwortung der einzelnen Teams.
 
- Die Struktur im Visual Studio-Hauptmenü kann in der folgenden Menükategorien unterteilt:
+ Die Struktur des Visual Studio-Hauptmenüs kann in die folgenden Menü Kategorien aufgeteilt werden:
 
 ##### <a name="core-menus"></a>Core-Menüs
 
@@ -81,23 +81,23 @@ ms.locfileid: "68202086"
 
 - Bearbeiten
 
-- Ansicht
+- Sicht
 
 - Tools
 
 - Fenster
 
-- Help
+- Hilfe
 
 ##### <a name="project-specific-menus"></a>Projektspezifische Menüs
 
-- Projekt
+- Project
 
-- Build
+- Entwickeln
 
-- Debug
+- Debuggen
 
-##### <a name="context-specific-menus"></a>Kontextspezifische-Menüs
+##### <a name="context-specific-menus"></a>Kontextspezifische Menüs
 
 - Team
 
@@ -105,188 +105,188 @@ ms.locfileid: "68202086"
 
 - Test
 
-- Architektur
+- Aufbau
 
 - Analysieren
 
-##### <a name="document-specific-menus"></a>Für die spezifischen-Menüs
+##### <a name="document-specific-menus"></a>Dokument spezifische Menüs
 
 - Format
 
 - Tabelle
 
-##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Beim Entwerfen von Hauptmenüs, befolgen Sie die folgenden Regeln:
+##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Beachten Sie beim Entwerfen von Hauptmenüs die folgenden Regeln:
 
-- Nicht mehr als 25 Elemente der obersten Ebene in einem bestimmten Kontext
+- Höchstens 25 Elemente der obersten Ebene in einem bestimmten Kontext überschreiten
 
-- Menüs sollte niemals mehr als 600 Pixel hoch.
+- Menüs sollten nie die Höhe von 600 Pixel überschreiten.
 
-- Auswerten von ein Hauptmenü in mehreren Kontexten wie z. B. in die Ultimate-SKU und des allgemeinen Profils.
+- Wertet ein Hauptmenü in mehreren Kontexten aus, z. b. in der Ultimate-SKU und im allgemeinen Profil.
 
 - Flyout-Menüs sind zulässig.
 
-- Flyout-Menüs sollte mindestens drei Elemente und nicht mehr als sieben enthalten.
+- Flyout-Menüs sollten mindestens drei Elemente und höchstens sieben Elemente enthalten.
 
-- Flyout-Menüs gesendet werden sollen nur eine Ebene tief – einige Visual Studio-Menüelemente haben cascading Untermenüs, aber dieses Muster wird nicht empfohlen.
+- Flyout-Menüs sollten nur eine Ebene tief gehen – einige Visual Studio-Menü Elemente haben kaskadierende Untermenüs, aber dieses Muster wird nicht empfohlen.
 
-- Verwenden Sie nicht mehr als sechs Trennzeichen. Gruppierungen sollte der folgenden Abbildung entsprechen:
+- Verwenden Sie höchstens sechs Trennzeichen. Gruppierungen sollten der folgenden Abbildung entsprechen:
 
-     ![Richtlinien für die Gruppierung des Hauptmenüs](../../extensibility/ux-guidelines/media/0501-b-mainmenus.png "0501-B_MainMenus")
+     ![Richtlinien für die Gruppierung des Hauptmenüs](../../extensibility/ux-guidelines/media/0501-b-mainmenus.png "0501-b_MainMenus")
 
-- Es ist zwar nicht erforderlich, jede Gruppe in der Abbildung zu erhalten, ist das Hinzufügen von zusätzlichen Gruppierungen, beschränkt.
+- Obwohl es nicht erforderlich ist, dass jede Gruppierung in der Abbildung vorhanden ist, ist das Hinzufügen zusätzlicher Gruppierungen eingeschränkt.
 
-- Jede Gruppe sollte zwischen zwei und sieben Menüelemente verfügen.
+- Jede Gruppierung sollte zwischen zwei und sieben Menü Elemente aufweisen.
 
-#### <a name="main-menu-ordering"></a>Sortieren im Hauptmenü
- Erwägen Sie vor dem Hinzufügen eines neuen Elements für der obersten Ebene, platzieren den Befehl in einem vorhandenen Menü für der obersten Ebene aus. Wenn Sie ein neues Hauptebenen-Menüelement hinzufügen, achten Sie darauf, dass Sie an der aktuellen Position platzieren. Entscheiden Sie, ob das Menü für Projekt, Kontext oder Dokument spezifisch ist. Behalten Sie den Namen des Menüs der obersten Ebene präzise, und verwenden Sie nur aus einem Wort.
+#### <a name="main-menu-ordering"></a>Hauptmenü-Reihenfolge
+ Bevor Sie ein neues Element der obersten Ebene hinzufügen, sollten Sie den Befehl in einem vorhandenen Menü der obersten Ebene platzieren. Wenn Sie ein neues Menü der obersten Ebene hinzufügen, stellen Sie sicher, dass Sie es an der richtigen Stelle platzieren. Entscheiden Sie, ob das Menü für das Projekt, den Kontext oder das Dokument spezifisch ist. Behalten Sie den Namen des Menüs der obersten Ebene bei, und verwenden Sie nur ein Wort.
 
- Die Core-Menüs sollten Stütze für die restlichen Befehle. Datei, bearbeiten und anzeigen sollte immer auf der linken und der Tools, Fenster und Hilfe sollte immer auf der rechten Seite sein.
+ Die Hauptmenüs sollten den Rest der Befehle als Lesezeichen markieren. Datei, bearbeiten und Ansicht sollten immer links sein, und Tools, Fenster und Hilfe sollten immer auf der rechten Seite stehen.
 
 #### <a name="context-menus"></a>Kontextmenüs
- Zu viele Funktionen in den Kontextmenüs führt eine schwierig zu erlernendes-Schnittstelle. Alle wichtigen Funktionen sollte der Hauptmenüleiste verfügbar. Position der Befehle sollten mit vorhandenen Befehle aus, um doppelte Befehle vermeiden abgestimmt werden. Kontextmenüs zu sehen definiert in die Shell Standardmenü-Gruppen, die abhängig davon, ob das Kontextmenü für die Lösung, einen Projektknoten aus, oder ein Projektelement enthalten sein sollen.
+ Das Platzieren einer zu großen Funktionalität in den Kontextmenüs führt zu einer schwer zu ermittelenden Schnittstelle. Alle wichtigen Funktionen sollten über die Hauptmenüleiste verfügbar sein. Die Platzierung von Befehlen sollte mit vorhandenen Befehlen abgestimmt werden, um doppelte Befehle zu vermeiden. Bei Kontextmenüs definiert die Shell Standardmenü Gruppen, die abhängig davon, ob das Kontextmenü für die Projekt Mappe, einen Projekt Knoten oder ein Projekt Element vorgesehen ist, eingeschlossen werden sollen.
 
- Beim Entwerfen von Kontextmenüs, halten Sie den gleichen Regeln wie für das Hauptmenü, und darüber hinaus:
+ Beachten Sie beim Entwerfen von Kontextmenüs dieselben Regeln wie für das Hauptmenü, und fügen Sie außerdem Folgendes hinzu:
 
-- Überschreiten Sie 25 Menüelemente der obersten Ebene nicht.
+- Überschreiten 25 Menü Elemente der obersten Ebene.
 
-- Flyout-Menüs sind zulässig muss, aber nicht mehr als eine Ebene tief – verwenden Sie niemals kaskadierende Flyouts.
+- Flyout-Menüs sind akzeptabel, dürfen jedoch nicht die Tiefe einer Ebene überschreiten – verwenden Sie niemals kaskadierende Flyouts.
 
-- Verwenden Sie nicht mehr als sechs Trennzeichen.
+- Verwenden Sie höchstens sechs Trennzeichen.
 
-### <a name="command-placement-in-toolbars"></a>Befehl Platzierung in Symbolleisten
+### <a name="command-placement-in-toolbars"></a>Befehls Platzierung in Symbolleisten
 
 #### <a name="general-toolbars"></a>Allgemeine Symbolleisten
- Beim Entwerfen und Anordnen von Symbolleisten, führen Sie diese Standards:
+ Beachten Sie beim Entwerfen und Anordnen von Symbolleisten folgende Standards:
 
-- Verwenden Sie nicht mehr als ein Verb pro Schaltfläche. Eine Schaltfläche eine Aktion =.
+- Verwenden Sie nicht mehr als ein Verb pro Schaltfläche. Eine Schaltfläche = eine Aktion.
 
-- Verwenden Sie Text neben dem Symbol an, nur, wenn sie mit der Bezeichnung gestärkt werden muss.
+- Verwenden Sie Text neben dem Symbol nur, wenn er mit der Bezeichnung verstärkt werden muss.
 
-- Verwenden Sie ein Kombinationsfeld, ausschließlich für die Eigenschaften, die mehrere Male in einer Sitzung gewechselt werden. Andernfalls machen Sie Eigenschaft an anderer Stelle verfügbar.
+- Verwenden Sie ein Kombinations Feld exklusiv für Eigenschaften, die in einer Sitzung mehrmals gewechselt werden. Andernfalls können Sie die Eigenschaft an anderer Stelle verfügbar machen.
 
-- Die Breite eines Kombinationsfelds sollte es sich um die Breite des am längsten Elements in der Box + 30 % entsprechen. Wenn Sie der längsten 200 Pixel ist, sollte im Kombinationsfeld z. B. 260 Pixel breit sein.
+- Die Breite eines Kombinations Felds sollte gleich der Breite des längsten Elements im Feld + 30% sein. Wenn das längste Element beispielsweise 200 Pixel beträgt, sollte das Kombinations Feld 260 Pixel breit sein.
 
-- Schränken Sie die Verwendung von Trennzeichen. Die Verwendung eines Trennzeichens neben einer Dropdownliste ist als Antimuster, da die Form im Dropdownmenü auf sich selbst als visual Trennzeichen fungiert.
+- Beschränken Sie die Verwendung von Trennzeichen. Die Verwendung eines Trenn Zeichens neben einer Dropdown Liste ist ein Antimuster, da die Form der Dropdown Liste selbst als visuelles Trennzeichen fungiert.
 
-- Symbol für Gruppen müssen drei bis sechs Symbole enthalten.
+- Symbolgruppen sollten zwischen drei und sechs Symbolen enthalten.
 
-- Wenn mehrere hilfreiche Befehle Qualifizierer führen, verwenden Sie eine unterteilte Schaltfläche, die die letzte Einstellung speichert:
+- Wenn Qualifizierer mehrere nützliche Befehle ergeben, verwenden Sie eine unterteilte Schaltfläche, in der die letzte Einstellung gespeichert wird:
 
-     ![Unterteilte Schaltflächen in Visual Studio](../../extensibility/ux-guidelines/media/0501-c-splitbuttons.png "0501-C_SplitButtons")
+     ![Unterteilte Schaltflächen in Visual Studio](../../extensibility/ux-guidelines/media/0501-c-splitbuttons.png "0501-c_SplitButtons")
 
-     **Beispiel für eine unterteilte Schaltfläche. Die sechs Befehle auf der linken Seite passt sich stattdessen in einer einzelnen Schaltfläche.**
+     **Beispiel für eine Trenn Schaltfläche. Die sechs Befehle auf der linken Seite können stattdessen in eine einzelne Schaltfläche eingefügt werden.**
 
 #### <a name="product-specific-toolbars"></a>Produktspezifische Symbolleisten
- Jedes Produkt bieten, dass standardmäßig Symbolleiste enthält häufig verwendete und wichtige Befehle und jedes Produkt in der Standardsymbolleiste das erstmalige anzeigen sollte, wenn Visual Studio gestartet wird, nachdem das Produkt installiert ist.
+ Jedes Produkt kann eine Standard Symbolleiste bereitstellen, die häufig verwendete und wichtige Befehle enthält, und die Standard Symbolleiste jedes Produkts sollte angezeigt werden, wenn Visual Studio zum ersten Mal nach der Installation des Produkts gestartet wird.
 
- Produkte sollte auch nutzen, freigegebene Befehlsgruppen und Menüs, die von der IDE bereitgestellt. Jede freigegebene Befehlsgruppe befindet sich in einem freigegebenen Menü zum Organisieren verwandter Befehle auf sinnvolle Weise für den Benutzer vorgesehen. Es ist wichtig, diese freigegebenen Befehlsstruktur zu nutzen, um die Komplexität zu reduzieren.
+ Produkte sollten auch freigegebene Befehls Gruppen und Menüs nutzen, die von der IDE bereitgestellt werden. Alle freigegebenen Befehls Gruppen werden in ein frei gegebenes Menü eingefügt, um verwandte Befehle auf sinnvolle Weise für den Benutzer zu organisieren. Es ist wichtig, diese freigegebene Befehlsstruktur zu nutzen, um die Komplexität zu verringern.
 
 #### <a name="global-toolbars"></a>Globale Symbolleisten
- Globale Symbolleisten sind erforderlich, um auf eine Zeile direkt integriert und passen. Wenn Sie eine neue globale Symbolleiste zu erstellen, führen Sie die Richtlinien für diesen Symbolleistentyp aus.
+ Globale Symbolleisten müssen direkt in eine Zeile passen. Wenn Sie eine neue globale Symbolleiste erstellen, befolgen Sie die Richtlinien für diesen Symbolleisten-Typ.
 
- **Richtlinien für die allgemeine Symbolleiste:**
+ **Allgemeine Richtlinien für Symbolleisten:**
 
-- Jede Symbolleiste ist 24 Pixel in allgemeine Steuerelemente (ziehelements, Überlauf).
+- Jede Symbolleiste verfügt über 24 Pixel in allgemeinen Steuerelementen (Greifer, Überlauf).
 
-- Jede Symbolleisten-Schaltfläche ist 22 Pixel breit ist, einschließlich der Auffüllung. Machen dem Symbol eine unterteilte Schaltfläche fügt eine andere 11 Pixel Breite.
+- Jede Symbolleisten Schaltfläche ist 22 Pixel breit, einschließlich Padding. Durch das Symbol einer unterteilten Schaltfläche werden weitere 11 Pixel Breite hinzugefügt.
 
-- Duplizierung der Befehle in Symbolleisten ist zulässig.
+- Die Duplizierung von Befehlen über Symbolleisten hinweg ist zulässig.
 
-  **Für die spezifischen Symbolleisten** angezeigt werden, wenn Sie ein bestimmten Dateityp aktiv ist und nicht mehr angezeigt, wenn ein anderes Dateiformat aktiv wird.
+  **Dokument spezifische Symbolleisten** werden angezeigt, wenn ein bestimmter Dateityp aktiv ist und ausgeblendet wird, wenn ein anderer Dateityp aktiv wird.
 
-- Für die spezifischen Symbolleisten verfügen möglicherweise nicht mehr als 12 Tasten.
+- Dokument spezifische Symbolleisten dürfen nicht mehr als 12 Schaltflächen enthalten.
 
-- Die gesamte Breite der Symbolleiste darf 300 Pixel nicht überschreiten.
+- Die Gesamtbreite der Symbolleiste darf 300 Pixel nicht überschreiten.
 
-- Jeder Dateityp haben einen eingebetteten Symbolleiste oder einen globalen dokumentspezifische-Symbolleiste, aber nicht beide.
+- Jeder Dateityp kann entweder eine eingebettete Symbolleiste oder eine Dokument spezifische globale Symbolleiste aufweisen, aber nicht beides.
 
-  **Kontextspezifische Symbolleisten** angezeigt werden, wenn einem bestimmten Kontext festgelegt ist und in der Regel für einen längeren Zeitraum aktiv bleiben.
+  **Kontextspezifische Symbolleisten** werden angezeigt, wenn ein bestimmter Kontext festgelegt ist und in der Regel für erweiterte Zeiträume aktiv bleibt.
 
-- Die Schaltfläche für alle kontextspezifische Symbolleisten beträgt 18.
+- Das Schaltflächen Limit für alle kontextspezifischen Symbolleisten ist 18.
 
-- Wenn die meisten Benutzer konsistent Befehle der Symbolleiste verwenden wird nicht, wenn der Kontext aktiv ist, klicken Sie dann nicht zuordnen dieser Symbolleiste mit einem Kontext.
+- Wenn die meisten Benutzer diese Symbolleisten Befehle nicht konsistent verwenden, wenn der Kontext aktiv ist, ordnen Sie diese Symbolleiste nicht einem Kontext zu.
 
-- Stellen Sie sicher, dass die Symbolleiste nicht mehr angezeigt, beim Beenden von Kontext wird. Beim Start sollte keinem dieser Symbolleisten angezeigt werden.
+- Stellen Sie sicher, dass die Symbolleiste beim Beenden des Kontexts verschwindet Keine dieser Symbolleisten sollte beim Start angezeigt werden.
 
-  **Symbolleisten ohne Kontext** nie automatisch angezeigt. Diese zeigen nur, wenn sie der Benutzer aktiviert. Behalten Sie die maximale Breite unter 200 Pixel.
+  **Symbolleisten ohne Kontext** werden nie automatisch angezeigt. Diese werden nur angezeigt, wenn Sie vom Benutzer aktiviert werden. Behalten Sie die maximale Breite unter 200 Pixel.
 
-### <a name="general-organization-and-shell-defined-groups"></a>Allgemeine Organisation und Shell definierte Gruppen
- Verwenden Sie die vorhandenen freigegebenen Befehle, Befehlsgruppen und Menüs. Wenn ein neuer Befehl werden definiert muss, versuchen Sie es an eine vorhandene freigegebene Befehlsgruppe platzieren. Wenn eine neue Gruppe werden definiert muss, versuchen Sie es vor dem Erstellen eines neuen Menüs für der obersten Ebene in einem vorhandenen freigegebenen Menü in der Nähe einer Gruppe von entsprechenden Befehl zu platzieren. Dies reduziert die Komplexität der Befehl, und gleichzeitig sicherstellen von konsistenten Befehl Platzierung in der IDE.
+### <a name="general-organization-and-shell-defined-groups"></a>Allgemeine Organisations-und Shell-definierte Gruppen
+ Verwenden Sie vorhandene freigegebene Befehle, Befehls Gruppen und Menüs. Wenn ein neuer Befehl definiert werden muss, versuchen Sie, ihn in einer vorhandenen freigegebenen Befehlsgruppe zu platzieren. Wenn eine neue Gruppe definiert werden muss, versuchen Sie, Sie in einem vorhandenen freigegebenen Menü zu platzieren, das sich in der Nähe einer zugehörigen Befehlsgruppe befinden, bevor Sie ein neues Menü der obersten Ebene erstellen. Dadurch wird die Befehls Komplexität reduziert und gleichzeitig eine konsistente Befehls Platzierung in der IDE sichergestellt.
 
- Der gemeinsam verwendeten **Format** im Kontext des Designer-Stil Dokumentfenstern, in der Regel dargestellte Menü wird in der folgenden Abbildung veranschaulicht:
+ Das Menü mit den freigegebenen **Formaten** , das in der Regel im Kontext von Dokument Fenstern im Designer angezeigt wird, ist in der folgenden Abbildung dargestellt:
 
- ![Im Menü von Visual Studio-Format mit Beschriftungen](../../extensibility/ux-guidelines/media/0501-d-formatmenu.png "0501-D_FormatMenu")
+ ![Visual Studio-Menü "Format" mit Beschriftungen](../../extensibility/ux-guidelines/media/0501-d-formatmenu.png "0501-d_FormatMenu")
 
- **Menügruppen im Visual Studio**
+ **Menü Gruppen in Visual Studio**
 
-### <a name="reducing-and-reusing-commands"></a>Reduzieren und die Wiederverwendung von Befehlen
- Befehle sind in der Regel angezeigt, basierend auf dem Kontext, um die Anzahl der Befehle, die dem Benutzer angezeigt, zu jedem Zeitpunkt wird, zu reduzieren. Allerdings sollten Sie auch vorhandene freigegebene Menüs wiederverwenden und Befehlsgruppen aus, um sicherzustellen, dass die Befehlsstruktur relativ bleibt zwischen Änderungen im Kontext stabil.
+### <a name="reducing-and-reusing-commands"></a>Reduzieren und wieder verwenden von Befehlen
+ Befehle werden in der Regel auf der Grundlage des Kontexts angezeigt, um die Anzahl der Befehle zu verringern, die dem Benutzer zu einem beliebigen Zeitpunkt angezeigt werden. Sie sollten jedoch auch vorhandene freigegebene Menüs und Befehls Gruppen wieder verwenden, um sicherzustellen, dass die Befehlsstruktur zwischen den Änderungen im Kontext relativ stabil bleibt.
 
- Wiederverwenden von gemeinsamen Befehle aus, und platzieren die neue Befehle in der Nähe verwandter, freigegebenen Befehle verringert die Komplexität der IDE, und erstellt eine benutzerfreundlichere Oberfläche.
+ Durch die Wiederverwendung frei gegebener Befehle und die Platzierung neuer Befehle in der Nähe verwandter frei gegebener Befehle wird die IDE-Komplexität reduziert, und es wird eine benutzerfreundlichere Benutzerfreundlichkeit
 
-## <a name="naming-commands"></a>Benennen die Befehle
+## <a name="naming-commands"></a>Benennungs Befehle
 
 ### <a name="naming-conventions"></a>Namenskonventionen
- Benennen von konsistenten Befehl ist wichtig, damit Benutzer finden und Ausführen von Befehlen, indem Sie entweder mithilfe der Befehlszeile oder Bindung an eine Tastenkombination können. Befehlsnamen können auch die Benutzer wissen, welchem Zweck ein Befehl angegeben wird, wenn er auf einer Symbolleiste oder in einem cascading oder Kontext-Menü angezeigt wird.
+ Eine konsistente Befehls Benennung ist wichtig, damit Benutzer Befehle suchen und ausführen können, indem Sie entweder über die Befehlszeile oder über die Bindung an eine Tastenkombination eine Tastenkombination verwenden. Befehlsnamen unterstützen den Benutzer außerdem dabei, den Zweck eines Befehls zu verstehen, wenn er auf einer Symbolleiste oder in einem kaskadierenden oder Kontextmenü angezeigt wird.
 
-#### <a name="when-naming-commands"></a>Wenn Befehle benennen:
+#### <a name="when-naming-commands"></a>Beim Benennen von Befehlen:
 
-- Erstellen Sie Text aus, sodass sie problemlos lokalisiert ist. Weitere Informationen zum Lokalisieren von Text finden Sie unter [Lokalisierung bewährte](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Erstellen Sie Text, sodass er problemlos lokalisiert werden kann. Weitere Informationen zum Lokalisieren von Text finden Sie unter [bewährte Methoden](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices)für die Lokalisierung.
 
-- Werden Sie präzise. Befehle sollten nicht mehr als drei Wörter verwenden.
+- Seien Sie präzise. Befehle sollten nicht mehr als drei Wörter verwenden.
 
-- Verwenden Sie große Anfangsbuchstaben Groß-/Kleinschreibung: der erste Buchstabe jedes Worts groß geschrieben werden soll. Weitere Informationen zur textformatierung, die in Visual Studio finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Groß-/Kleinschreibung für Groß-/Kleinschreibung verwenden: der erste Buchstabe jedes Worts sollte groß geschrieben werden. Weitere Informationen zur Textformatierung in Visual Studio finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
-- Berücksichtigen Sie, wo der Befehl platziert werden. Handelt es sich in einem Menü der obersten Ebene oder ein Flyout? Z. B. wenn Gruppierung Ausrichten von Befehlen in ein Flyout, den obersten Ebene Befehl "Align" und der Flyout-Befehle werden sollen sollte "Left" "Right", "Center", "Blocksatz" sein, und so weiter. Es wäre redundant, benennen Sie die Flyout-Befehle "Linksbündig" oder "Align Right."
+- Berücksichtigen Sie, wo der Befehl platziert wird. Handelt es sich um ein Menü der obersten Ebene oder um ein Flyout? Wenn Sie z. b. Ausrichtungs Befehle in einem Flyout gruppieren, sollte der Befehl auf oberster Ebene "ausrichten" lauten, und die Flyout-Befehle sollten "Left", "Right", "Center", "rechtfertigen" usw. lauten. Es wäre redundant, die Flyout-Befehle "linksbündig" oder "Rechtsbündig ausrichten" zu benennen.
 
-     ![Visual Studio-Format zum Menü ","](../../extensibility/ux-guidelines/media/0502-a-formatmenu.png "0502-A_FormatMenu")
+     ![Visual Studio-Menü "Format"](../../extensibility/ux-guidelines/media/0502-a-formatmenu.png "0502-a_FormatMenu")
 
-### <a name="using-icons-with-commands"></a>Mithilfe von Symbolen mit Befehlen
- Das Ersetzen Sie werden bei der Verwendung des Symbols, die Kopplung mit Befehlen. Zwar die Fähigkeit des Benutzers, um diesen Befehl zu identifizieren. Zuordnung ein eindeutiges Image mit einem Befehl beschleunigt werden, werden visuelle Überfrachtung und Ineffizienz mit Bild übermäßige auftreten. Die folgenden Regeln helfen bei der Entscheidung, ob ein Befehlssymbol zu erstellen.
+### <a name="using-icons-with-commands"></a>Verwenden von Symbolen mit Befehlen
+ Die Verwendung von Symbol Kopplung mit Befehlen ist sparsam. Obwohl das Zuordnen eines eindeutigen Bilds zu einem Befehl die Fähigkeit des Benutzers, diesen Befehl zu identifizieren, beschleunigt, treten visuelle Übersichtlichkeit und Ineffizienz bei der Bild überverwendung auf. Die folgenden Regeln helfen bei der Entscheidung, ob ein Befehls Symbol erstellt werden soll.
 
-#### <a name="use-an-icon-with-a-command-only-if"></a>Verwenden Sie ein Symbol mit nur ein Befehl, wenn ein:
+#### <a name="use-an-icon-with-a-command-only-if"></a>Verwenden Sie ein Symbol nur mit einem Befehl, wenn Folgendes verwendet wird:
 
-- Der gleiche Befehl verfügt über ein Symbol in einem anderen deutliche Microsoft-Produkt wie z. B. Microsoft Office-Anwendung zugeordnet.
+- Dem gleichen Befehl ist ein Symbol in einem anderen prominenten Microsoft-Produkt zugeordnet, z. b. einer der Microsoft Office Anwendungen.
 
-- Der Befehl wird in einer Standardsymbolleiste platziert werden.
+- Der Befehl wird in einer Standard Symbolleiste abgelegt.
 
-- Der Befehl ist eine spezielle-Befehl, der Benutzer wahrscheinlich eine Symbolleiste mit hinzugefügt werden die **"Anpassen..."** Dialogfeld.
+- Der Befehl ist ein Spezial Befehl, den Benutzer wahrscheinlich mit der **"anpassen..."** -Symbolleiste zu einer Symbolleiste hinzufügen. hinzu.
 
-## <a name="access-and-shortcut-keys"></a>Zugriff und die Tastenkombinationen
+## <a name="access-and-shortcut-keys"></a>Zugriffs-und Tastenkombinationen
 
 ### <a name="overview"></a>Übersicht
- Es gibt zwei Arten von Tastenbelegung für Schlüssel:
+ Es gibt zwei Arten von Tastaturtasten Zuweisungen:
 
-- **Zugriffsschlüssel** (auch bekannt als Zugriffstasten) ermöglichen den Zugriff über die Menüs für die Befehlseingabe und zu jeder Bezeichnung im Dialogfeld "UI". Zugriffsschlüssel werden hauptsächlich für die Barrierefreiheit zu, alle Menüs und die meisten Dialogfeld-Steuerelementen zugewiesen sind, sind nicht dafür vorgesehen, Sie werden merken können, wirken sich auf nur das aktuelle Fenster und lokalisiert werden.
+- **Zugriffsschlüssel** (auch als Accelerators bezeichnet) ermöglichen den Tastatur Zugriff über die Menüs für die Befehls Ansicht und jede Bezeichnung in der Benutzeroberfläche des Dialog Felds. Zugriffsschlüssel dienen hauptsächlich zu Barrierefreiheits Zwecken, werden allen Menüs und den meisten Dialogfeld-Steuerelementen zugewiesen, sind nicht für die Speicherung vorgesehen, wirken sich nur auf das aktuelle Fenster aus und sind lokalisiert.
 
-- **Tastenkombinationen für den** verwenden STRG- und -Funktion (Fn) folgen. Sie wurden mehr Produktivität für fortgeschrittene Benutzer und Hilfe entwickelt. Sie werden nur die häufigsten verwendete Befehle zugewiesen und ermöglichen schnellen Zugriff beim umgehen im Hauptmenü. Tastenkombinationen für den merken können, werden sollen, und für diesen Grund muss zugewiesen werden konsistent mit dem Profil-Schema. Wichtige Tastenkombinationsschemas variieren von Profilen. Ein Benutzer möglicherweise Tastenkombinationen über anpassen **Tools > Optionen > Tastatur**.
+- Tasten **Kombinationen** verwenden hauptsächlich Steuerungs-(STRG) und Funktionstasten Sequenzen (FN). Sie sind für fortgeschrittene Benutzer und höhere Produktivität konzipiert. Sie werden nur den am häufigsten verwendeten Befehlen zugewiesen und ermöglichen den schnellen Zugriff, während das Hauptmenü umgangen wird. Tastenkombinationen müssen gespeichert werden, und aus diesem Grund muss das Profil Schema konsistent zugewiesen werden. Tastenkombinationen können von Profil zu Profil abweichen. Benutzer können Tastenkombinationen mithilfe von **Tools > Optionen > Tastatur**anpassen.
 
-### <a name="assigning-access-keys"></a>Zuordnen von Tastenkombinationen
- Zugriffsschlüssel bestehen aus Alt plus alphanumerische Schlüssel. Weisen Sie jedes Menüelement ausnahmslos eine Zugriffstaste hinzu zu. Führen Sie Windows und allgemeine Konventionen für das Zuordnen von Tastenkombinationen. z. B. den Zugriffsschlüssel für **Datei > Neu** muss immer **Alt, F, N**.
+### <a name="assigning-access-keys"></a>Zuweisen von Zugriffs Schlüsseln
+ Zugriffsschlüssel bestehen aus alt Plus alphanumerischen Schlüsseln. Weisen Sie jedem Menü Element ohne Ausnahme einen Zugriffsschlüssel zu. Befolgen Sie Windows und allgemeine Konventionen zum Zuweisen von Zugriffs Schlüsseln. Beispielsweise sollte der Zugriffsschlüssel für **File > New** immer **alt, F, N**sein.
 
- Nicht verwenden Sie Single-Pixel-Width-Buchstaben, z. B. "i" (in Groß- oder Kleinbuchstabe) oder den Kleinbuchstaben "l", und vermeiden Sie die Verwendung von Zeichen mit Unterlängen (g, j, p, Q und y), da dies schwierig zu unterscheiden sind.
+ Verwenden Sie keine Buchstaben mit nur einer Pixel Breite, wie z. b. "i" (in groß-oder Kleinbuchstaben) oder den Kleinbuchstaben "l", und vermeiden Sie die Verwendung von Zeichen mit untergeordneten Zeichen (g, j, p, q und y), da diese schwierig zu unterscheiden sind.
 
- Verwenden Sie doppelte Schlüssel, sofern möglich. In Fällen, in denen Duplizierung unvermeidlich ist, verarbeitet das Menüsystem Konflikte durch durchlaufen alle Befehle, die den Schlüssel zu verwenden. Als Beispiel für eine hypothetische "Zahl"-Befehl im Menü "File", die den Zugriffsschlüssel für "N", um Duplikate **Alt, F, N** würde eine neue Datei erstellen und **Alt, F, N, N** würde den "Number"-Befehl ausführen.
+ Vermeiden Sie, wenn möglich, doppelte Schlüssel zu verwenden. In Fällen, in denen die Duplizierung unvermeidlich ist, verarbeitet das Menüsystem Konflikte, indem alle Befehle durchlaufen werden, die den Schlüssel verwenden. Beispielsweise würde für einen hypothetischen "Number"-Befehl im Menü "file", der den Zugriffsschlüssel "N" dupliziert, **alt, f, n** eine neue Datei erstellen, und **alt, f, n, n** führt den Befehl "Number" aus.
 
 ### <a name="assigning-shortcut-keys"></a>Zuweisen von Tastenkombinationen
- Vermeiden Sie das Zuweisen von neuen Tastenkombinationen, da sie nicht für jeden Befehl erforderlich sind, und steuern das System (und die Benutzerspeicher) ein, wenn übermäßig beansprucht. Daten aus der Gruppenrichtlinien-Verwaltungskonsole (Customer Experience Improvement Program, CEIP) gibt an, dass Visual Studio-Benutzer nur eine kleine Teilmenge dieser integrierten Tastenkombinationen verwenden.
+ Vermeiden Sie das Zuweisen neuer Tastenkombinationen, da diese für jeden Befehl nicht erforderlich sind, und Steuern Sie das System (und den Benutzer Arbeitsspeicher), wenn dies überlastet ist. Daten aus dem Programm zur Verbesserung der Benutzerfreundlichkeit (CEIP) zeigen an, dass Visual Studio-Benutzer nur eine kleine Teilmenge der integrierten Tastenkombinationen verwenden.
 
- Wenn Sie Verknüpfungen zu definieren, gelten Sie folgende Regeln:
+ Beachten Sie beim Definieren von Verknüpfungen die folgenden Regeln:
 
-- **Verwenden Sie die STRG- und -Funktion (Fn) folgen.**
+- **Verwenden Sie die Tastenkombinationen Control (STRG) und Function (FN).**
 
-- **Häufig verwendete Tastenkombinationen zu erhalten.** Behalten Sie die am häufigsten verwendeten Verknüpfungen.
+- **Häufig verwendete Verknüpfungen beibehalten.** Behalten Sie die beliebtesten Tastenkombinationen bei.
 
-- **Stellen Sie die Tastenkombinationen für Editoren einfach zu geben.** Binden Sie einfach auf den Typ Tastenkombinationen für Befehle, dass Entwickler die meisten beim Schreiben von Code benötigen. Z. B. **Edit.InvokeSmartTag** benötigt eine schnelle Tastenkombination wie STRG / und nicht Alt + Umschalt + F10.
+- **Vereinfachen Sie die Verknüpfung von Editor-Verknüpfungen.** Binden Sie einfache Verknüpfungen an Befehle, die Entwickler beim Schreiben von Code am meisten benötigen. Beispielsweise muss **Edit. invokesmarttag** über eine kurze Tastenkombination wie STRG +/und nicht ALT + UMSCHALT + F10 verfügen.
 
-- **Ziel ist es für konsistent mit Design Verknüpfungen.**
+- **Bemühen Sie sich um konsistente Tastenkombinationen.**
 
-- **Führen Sie die Windows-Richtlinien, um zu bestimmen, welche Modifizierer Schlüssel verwenden.** Verwenden Sie STRG-Tastenkombinationen für Befehle, die umfangreiche Auswirkungen, z. B. Befehle haben, die für ein ganzes Dokument gelten. Verwenden Sie UMSCHALT-Taste-Kombinationen für Befehle, die erweitern oder ergänzen die Aktionen der standardmäßige Tastenkombination. Verwenden Sie nicht STRG + Alt + Kombinationen aus.
+- **Verwenden Sie die Windows-Richtlinien, um zu bestimmen, welche Modifizierertasten Sie** Verwenden Sie STRG-Tastenkombinationen für Befehle mit umfangreichen Effekten, z. b. Befehle, die für ein gesamtes Dokument gelten. Verwenden Sie UMSCHALT Tastenkombinationen für Befehle, mit denen die Aktionen der Standard-Tastenkombination erweitert oder ergänzt werden. Verwenden Sie die Tastenkombination STRG + ALT nicht.
 
-- **Entfernen Sie überflüssige Verknüpfungen.** Wenn Sie eine ältere Funktion verfügen, sollten Sie die Verknüpfungen, die mit extrem Seltenheit (weniger als 10 Mal von der CEIP-Daten) oder moderate Seltenheit (weniger als 100 Mal von der CEIP-Daten) verwendet werden, wenn eine Tastenkombination schnellen Zugriff auf den gleichen Befehl ermöglicht werden entfernt. Zum Beispiel: ALT, H, B, wird Inhalt-Hilfe geöffnet.
+- **Entfernen Sie überflüssige Verknüpfungen.** Wenn Sie über eine Legacy Funktion verfügen, sollten Sie die Verknüpfungen, die mit extremer Häufigkeit verwendet werden (weniger als zehnmal aus den CEIP-Daten), oder eine moderate infrequenz (weniger als 100-Mal aus den CEIP-Daten) entfernen, wenn eine Zugriffstaste einen schnellen Zugriff auf denselben Befehl ermöglicht. Beispiel: alt, H, C öffnet Hilfe/Inhalt.
 
-  Es ist keine einfache Möglichkeit zum Prüfen der Verfügbarkeit der Verknüpfung. Wenn Sie eine Verknüpfung hinzufügen möchten, gehen Sie wie folgt vor:
+  Es gibt keine einfache Möglichkeit, die Verknüpfungs Verfügbarkeit zu überprüfen. Wenn Sie eine Verknüpfung hinzufügen möchten, führen Sie die folgenden Schritte aus:
 
-1. Überprüfen Sie die Liste der [Tastenkombinationen für Visual Studio 2013](http://visualstudioshortcuts.com/2013/) zu ermitteln, ob ähnliche Befehle, um Ihre mit zu gruppieren.
+1. Überprüfen Sie die Liste der [Visual Studio 2013](http://visualstudioshortcuts.com/2013/) Verknüpfungen, um zu bestimmen, ob ähnliche Befehle vorhanden sind, mit denen Sie Ihre Gruppierung
 
-2. Wechseln Sie zu **Tools > Optionen > Umgebung > Tastatur** und Ihre Verknüpfung testen. Überprüfen Sie, dass jede Tastaturzuordnungsschema unter aufgeführt "die folgenden zusätzliches Tastaturzuordnungsschema anwenden." Überprüfen Sie Allgemein, c#, VB und C++-Profilen, wie die eindeutige Tastenkombinationen freigeben. Die Verknüpfung ist verfügbar, falls es nicht in allen diesen zugeordnet ist.
+2. Wechseln Sie zu Extras **> Optionen > Umgebung > Tastatur** , und testen Sie die Verknüpfung. Überprüfen Sie jedes Tastatur Zuordnungs Schema, das unter "das folgende zusätzliche Tastatur Zuordnungs Schema anwenden" aufgeführt ist. Überprüfen Sie die Profile General, c#, VB und C++, da diese eindeutige Verknüpfungen gemeinsam verwenden. Die Verknüpfung ist verfügbar, wenn Sie an keinem dieser Orte zugeordnet ist.

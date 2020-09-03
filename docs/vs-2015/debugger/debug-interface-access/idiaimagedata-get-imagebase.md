@@ -1,5 +1,5 @@
 ---
-title: 'Idiaimagedata:: Get_imagebase | Microsoft-Dokumentation'
+title: 'IDiaImageData:: get_imageBase | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4a8ed3f52a6e4709aa9553b0d7cc906069c9bcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202571"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft die Speicheradresse, in dem das Abbild basieren soll.  
+Ruft den Speicherort ab, an dem das Image basieren soll.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT get_imageBase ( 
   
 #### <a name="parameters"></a>Parameter  
  `pRetVal`  
- [out] Gibt den Basiswert der vorgeschlagenen Image zurück.  
+ vorgenommen Gibt den vorgeschlagenen Bild Basiswert zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Aufgrund von Image-Basis-Konflikten kann ein Bild automatisch auf einen nicht verwendeten Speicherbereich ein REBASE ausgeführt werden, wenn es geladen wird. Diese Methode gibt den Basis-Hinweis (empfohlene Speicherort), der zum Zeitpunkt der Kompilierung im Modul gespeichert wurden.  
+## <a name="remarks"></a>Bemerkungen  
+ Aufgrund von Image Basis Konflikten wird ein Abbild möglicherweise automatisch auf einen nicht verwendeten Speicherort zurückgesetzt, wenn es geladen wird. Diese Methode gibt den Basis Hinweis (vorgeschlagene Speicheradresse) zurück, der zum Zeitpunkt der Kompilierung im Modul gespeichert wurde.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
