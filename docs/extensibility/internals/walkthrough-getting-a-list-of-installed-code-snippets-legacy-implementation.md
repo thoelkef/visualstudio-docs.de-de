@@ -1,5 +1,5 @@
 ---
-title: Abrufen einer Liste der installierten Codeausschnitte (Legacy) | Microsoft Docs
+title: Eine Liste der installierten Code Ausschnitte (Legacy) Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703657"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)
-Ein Codeausschnitt ist ein Codeteil, der entweder mit einem Menübefehl (der die Auswahl zwischen einer Liste installierter Codeausschnitte ermöglicht) oder durch Auswählen einer Codeausschnittverknüpfung aus einer IntelliSense-Vervollständigungsliste in den Quellpuffer eingefügt werden kann.
+Ein Code Ausschnitt ist ein Code Ausschnitt, der in den Quell Puffer eingefügt werden kann, entweder mit einem Menübefehl (der die Auswahl zwischen einer Liste installierter Code Ausschnitte ermöglicht) oder durch Auswahl einer Ausschnitt Verknüpfung aus einer IntelliSense-Vervollständigungsliste.
 
- Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> Methode ruft alle Codeausschnitte für eine bestimmte Sprach-GUID ab. Die Verknüpfungen für diese Ausschnitte können in eine IntelliSense-Vervollständigungsliste eingefügt werden.
+ Die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> Methode ruft alle Code Ausschnitte für eine bestimmte sprach-GUID ab. Die Tastenkombinationen für diese Code Ausschnitte können in eine IntelliSense-Vervollständigungsliste eingefügt werden.
 
- Weitere Informationen zum Implementieren von Codeausschnitten in einem MPF-Sprachdienst (Managed Package Framework, MPF) finden Sie unter [Support für Codeausschnitte in einem Legacy-Sprachdienst.](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+ Ausführliche Informationen zum Implementieren von Code Ausschnitten in einem MPF-Sprachdienst (Managed Package Framework) finden Sie [unter Unterstützung für Code Ausschnitte in einem Legacy Sprachdienst](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) .
 
-### <a name="to-retrieve-a-list-of-code-snippets"></a>So rufen Sie eine Liste von Codeausschnitten ab
+### <a name="to-retrieve-a-list-of-code-snippets"></a>So rufen Sie eine Liste von Code Ausschnitten ab
 
-1. Der folgende Code zeigt, wie Sie eine Liste von Codeausschnitten für eine bestimmte Sprache abrufen. Die Ergebnisse werden in <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> einer Reihe von Strukturen gespeichert. Diese Methode verwendet <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> die statische <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> Methode, <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> um die Schnittstelle vom Dienst abzubekommen. Sie können jedoch auch den Dienstanbieter verwenden, der <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> Ihrem VSPackage gegeben wurde, und die Methode aufrufen.
+1. Der folgende Code zeigt, wie Sie eine Liste von Code Ausschnitten für eine bestimmte Sprache erhalten. Die Ergebnisse werden in einem Array von <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> Strukturen gespeichert. Diese Methode verwendet die statische- <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Methode, um die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> Schnittstelle aus dem Dienst zu erhalten <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> . Sie können jedoch auch den Dienstanbieter verwenden, der für Ihr VSPackage angegeben ist, und die-Methode aufzurufen <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> .
 
     ```csharp
     using System;
@@ -101,12 +101,12 @@ Ein Codeausschnitt ist ein Codeteil, der entweder mit einem Menübefehl (der die
     }
     ```
 
-### <a name="to-call-the-getsnippets-method"></a>So rufen Sie die GetSnippets-Methode auf
+### <a name="to-call-the-getsnippets-method"></a>So wenden Sie die geznippets-Methode an
 
-1. Die folgende Methode zeigt, `GetSnippets` wie die Methode nach Abschluss eines Analysevorgangs aufruft. Die <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Methode wird nach einem Analysevorgang aufgerufen, <xref:Microsoft.VisualStudio.Package.ParseReason>der mit dem Grund gestartet wurde.
+1. Die folgende Methode zeigt, wie die- `GetSnippets` Methode beim Abschluss eines-Vorgangs aufgerufen wird. Die- <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Methode wird nach einem mit dem Grund gestarteten Verarbeitungsvorgang aufgerufen <xref:Microsoft.VisualStudio.Package.ParseReason> .
 
 > [!NOTE]
-> Die `expansionsList` Arrayliste wird aus Leistungsgründen zwischengespeichert. Änderungen an den Ausschnitten werden erst in der Liste widergespiegelt, wenn der Sprachdienst [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]angehalten und neu geladen wurde (z. B. durch Beenden und Neustarten ).
+> Die `expansionsList` Liste der Arrays wird aus Leistungsgründen zwischengespeichert. Änderungen an den Code Ausschnitten werden erst dann in der Liste wiedergegeben, wenn der Sprachdienst beendet und erneut geladen wurde (z. b. durch beenden und Neustarten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ).
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -125,13 +125,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>So verwenden Sie die Snippet-Informationen
+### <a name="to-use-the-snippet-information"></a>So verwenden Sie die Ausschnitt Informationen
 
-1. Der folgende Code zeigt, wie die von der `GetSnippets` Methode zurückgegebenen Ausschnittinformationen verwendet werden. Die `AddSnippets` Methode wird vom Parser als Antwort auf jeden Analysegrund aufgerufen, der zum Auffüllen einer Liste von Codeausschnitten verwendet wird. Dies sollte erfolgen, nachdem die vollständige Analyse zum ersten Mal durchgeführt wurde.
+1. Der folgende Code zeigt, wie die von der-Methode zurückgegebenen Ausschnitt Informationen verwendet werden `GetSnippets` . Die- `AddSnippets` Methode wird vom Parser als Reaktion auf einen beliebigen Analyse Grund aufgerufen, der verwendet wird, um eine Liste von Code Ausschnitten aufzufüllen. Dies sollte erfolgen, nachdem die vollständige Analyse zum ersten Mal ausgeführt wurde.
 
-     Die `AddDeclaration` Methode erstellt eine Liste von Deklarationen, die später in einer Abschlussliste angezeigt werden.
+     Die- `AddDeclaration` Methode erstellt eine Liste von Deklarationen, die später in einer Vervollständigungsliste angezeigt wird.
 
-     Die `TestDeclaration` Klasse enthält alle Informationen, die in einer Vervollständigungsliste angezeigt werden können, sowie den Deklarationstyp.
+     Die- `TestDeclaration` Klasse enthält alle Informationen, die in einer Vervollständigungsliste angezeigt werden können, sowie den Typ der Deklaration.
 
     ```csharp
     class TestAuthoringScope : AuthoringScope

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590240"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
@@ -44,11 +44,11 @@ Ein Anforderungsmodell bietet den größten Vorteil, wenn Sie es für die Ausric
 > [!NOTE]
 > In diesen Themen meint „System“ das System oder die Anwendung, das bzw. die Sie entwickeln. Es kann sich um eine umfangreiche Sammlung von vielen Software- und Hardwarekomponenten, eine einzelne Anwendung oder eine Softwarekomponente in einem größeren System handeln. In jedem Fall beschreibt das Anforderungsmodell das Verhalten, das über eine Benutzeroberfläche oder eine API von außerhalb Ihres Systems sichtbar ist.
 
-## <a name="common-tasks"></a>Allgemeine Aufgaben
+## <a name="common-tasks"></a>Häufige Aufgaben
 
 Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede Ansicht bietet eine bestimmte Art von Informationen.  Wenn Sie diese Ansichten erstellen, empfiehlt es sich, häufig zwischen ihnen zu wechseln. Sie können bei jeder Ansicht starten.
 
-|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|Abschnitt|
+|Diagramm oder Dokument|Was es in einem Anforderungsmodell beschreibt|`Section`|
 |-|-|-|
 |Konzeptionelles Klassendiagramm|Glossar von Typen, die zum Beschreiben der Anforderungen verwendet werden; die auf der Benutzeroberfläche des Systems sichtbaren Typen.||
 |Zusätzliche Dokumente oder Arbeitselemente|Kriterien für die Leistung, Sicherheit, Nutzbarkeit und Zuverlässigkeit|[Beschreiben von Servicequalitätsanforderungen](#QoSRequirements)|
@@ -56,7 +56,7 @@ Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede An
 
 Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden können. Eine Übersicht über die Diagrammtypen finden [Sie unter Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md).
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Anzeige von Geschäftsregeln
 
 Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.
 
@@ -70,13 +70,13 @@ Allerdings können viele dynamische Regeln effektiver und allgemeiner durch Erse
 
 Beachten Sie, dass hier zu entscheiden ist, wie Sie die Anforderungen definieren, und dass dies unabhängig von der Implementierung der Anforderungen im Programmcode ist.
 
-Weitere Informationen finden Sie in den folgenden Themen:
+Die folgenden Themen stellen weitere Informationen bereit:
 
-|Thema|Siehe|
+|Thema|Lesen|
 |-|-|
 |Entwickeln von Code, der Geschäftsregeln entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Beschreiben von Quality of Service Anforderungen
 
 Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Dazu gehören:
 
@@ -84,11 +84,11 @@ Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Dazu gehören:
 
 - Sicherheit
 
-- Verwendbarkeit
+- Benutzerfreundlichkeit
 
 - Zuverlässigkeit
 
-- Robustheit
+- Stabilität
 
 Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter den Titeln von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:
 
@@ -96,7 +96,7 @@ Wenn ein Restaurant ein Gericht löscht, während ein Kunde eine Mahlzeit bestel
 
 Weitere Informationen zum Entwickeln von Code, der Service Qualitätsanforderungen entspricht, finden Sie unter [Modellieren der Architektur Ihrer APP](../modeling/model-your-app-s-architecture.md) .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)

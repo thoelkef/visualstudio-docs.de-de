@@ -1,5 +1,5 @@
 ---
-title: Assistentenschnittstelle (IDTWizard) | Microsoft Docs
+title: Assistenten Schnittstelle (IDTWizard) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703273"
 ---
 # <a name="wizard-interface-idtwizard"></a>Assistentenschnittstelle (IDTWizard)
-Die integrierte Entwicklungsumgebung (IDE) verwendet die <xref:EnvDTE.IDTWizard> Schnittstelle, um mit Assistenten zu kommunizieren. Assistenten müssen diese Schnittstelle implementieren, um in der IDE installiert zu werden.
+Die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) verwendet die- <xref:EnvDTE.IDTWizard> Schnittstelle für die Kommunikation mit Assistenten. Assistenten müssen diese Schnittstelle implementieren, um in der IDE installiert werden zu können.
 
- Die <xref:EnvDTE.IDTWizard.Execute%2A> Methode ist die einzige <xref:EnvDTE.IDTWizard> Methode, die der Schnittstelle zugeordnet ist. Assistenten implementieren diese Methode, und die IDE ruft die Methode auf der Schnittstelle auf. Das folgende Beispiel zeigt die Signatur der Methode.
+ Die- <xref:EnvDTE.IDTWizard.Execute%2A> Methode ist die einzige Methode, die der- <xref:EnvDTE.IDTWizard> Schnittstelle zugeordnet ist. Assistenten implementieren diese Methode, und die IDE Ruft die-Methode für die-Schnittstelle auf. Im folgenden Beispiel wird die Signatur der-Methode veranschaulicht.
 
 ```
 /* IDTWizard Method */
@@ -34,27 +34,27 @@ STDMETHOD(Execute)(THIS_
    );
 ```
 
- Der Startmechanismus ist sowohl für den Assistenten für **neues Projekt** als auch für die Assistenten zum Hinzufügen **neuer Elemente** ähnlich. Um entweder zu starten, rufen Sie die <xref:EnvDTE.IDTWizard> in Dteinternal.h definierte Schnittstelle auf. Der einzige Unterschied besteht in dem Satz von Kontext und benutzerdefinierten Parametern, die an die Schnittstelle übergeben werden, wenn die Schnittstelle aufgerufen wird.
+ Der Startmechanismus ist für die Assistenten " **Neues Projekt** " und " **Neues Element hinzufügen** " ähnlich. Um zu beginnen, müssen Sie die <xref:EnvDTE.IDTWizard> in "Dteinternal. h" definierte-Schnittstelle aufzurufen. Der einzige Unterschied ist der Satz von Kontext-und benutzerdefinierten Parametern, die beim Aufrufen der-Schnittstelle an die-Schnittstelle übermittelt werden.
 
- Die folgenden Informationen <xref:EnvDTE.IDTWizard> beschreiben die Schnittstelle, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Assistenten implementieren müssen, um in der IDE zu arbeiten. Die IDE <xref:EnvDTE.IDTWizard.Execute%2A> ruft die Methode für den Assistenten auf und übergibt sie wie folgt:
+ Die folgenden Informationen beschreiben die <xref:EnvDTE.IDTWizard> Schnittstelle, die Assistenten implementieren müssen, um in der IDE arbeiten zu können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Die IDE Ruft die- <xref:EnvDTE.IDTWizard.Execute%2A> Methode für den Assistenten auf und übergibt dabei Folgendes:
 
 - Das DTE-Objekt
 
-     Das DTE-Objekt ist der Stamm des Automatisierungsmodells.
+     Das DTE-Objekt ist der Stamm des Automatisierungs Modells.
 
-- Das Handle zum Fensterdialogfeld, wie im `hwndOwner ([in] long)`Codesegment gezeigt.
+- Das Handle für das Fenster Dialogfeld, wie im Codesegment dargestellt `hwndOwner ([in] long)` .
 
-     Der Assistent `hwndOwner` verwendet dies als übergeordnetes Element für das Dialogfeld des Assistenten.
+     Der Assistent verwendet dieses `hwndOwner` als übergeordnetes Element für das Dialogfeld für den Assistenten.
 
-- Kontextparameter, die als Variante für SAFEARRAY an die `[in] SAFEARRAY (VARIANT)* ContextParams`Schnittstelle übergeben werden, wie im Codesegment gezeigt.
+- Kontext Parameter, die als Variant für SAFEARRAY an die Schnittstelle übergeben werden, wie im Codesegment dargestellt `[in] SAFEARRAY (VARIANT)* ContextParams` .
 
-     Kontextparameter enthalten ein Array von Werten, die für die Art des assistenten, der gestartet wird, und den aktuellen Status des Projekts spezifisch sind. Die IDE übergibt die Kontextparameter an den Assistenten. Weitere Informationen finden Sie unter [Kontextparameter](../../extensibility/internals/context-parameters.md).
+     Kontext Parameter enthalten ein Array von Werten, die für den Starttyp und den aktuellen Status des Projekts spezifisch sind. Die IDE übergibt die Kontext Parameter an den Assistenten. Weitere Informationen finden Sie unter [Kontext Parameter](../../extensibility/internals/context-parameters.md).
 
-- Benutzerdefinierte Parameter, die als Variante für SAFEARRAY an `[in] SAFEARRAY (VARIANT)* CustomParams`die Schnittstelle übergeben werden, wie im Codesegment gezeigt.
+- Benutzerdefinierte Parameter, die an die Schnittstelle als Variant für SAFEARRAY übergeben werden, wie im Codesegment dargestellt `[in] SAFEARRAY (VARIANT)* CustomParams` .
 
-     Benutzerdefinierte Parameter enthalten ein Array benutzerdefinierter Parameter. Eine .vsz-Datei übergibt benutzerdefinierte Parameter an die IDE. Die Werte werden `Param=` durch die Anweisungen bestimmt. Weitere Informationen finden Sie unter [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md).
+     Benutzerdefinierte Parameter enthalten ein Array benutzerdefinierter Parameter. Eine VSZ-Datei übergibt benutzerdefinierte Parameter an die IDE. Die Werte werden durch die- `Param=` Anweisungen bestimmt. Weitere Informationen finden Sie unter [benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md).
 
-- Rückgabewerte für die Schnittstelle sind
+- Rückgabewerte für die-Schnittstelle sind
 
     ```
     wizardResultSuccess = -1,
@@ -66,5 +66,5 @@ STDMETHOD(Execute)(THIS_
 ## <a name="see-also"></a>Weitere Informationen
 - [Kontextparameter](../../extensibility/internals/context-parameters.md)
 - [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)
-- [Assistenten](../../extensibility/internals/wizards.md)
+- [The](../../extensibility/internals/wizards.md)
 - [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

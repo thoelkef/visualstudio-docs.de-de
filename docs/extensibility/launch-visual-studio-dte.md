@@ -9,31 +9,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703040"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Starten von Visual Studio mit DTE
 
-Ab Visual Studio 2017 unterscheidet sich der Mechanismus zum Starten von Visual Studio mit DTE vom Starten früherer Versionen von Visual Studio. Diese Änderung ist erforderlich, da Visual Studio 2017 und höher nebeneinander Installationen von Hauptversionen unterstützt (z. B. können Sie eine Vorschau und eine Releaseversion nebeneinander installiert haben).
+Ab Visual Studio 2017 unterscheidet sich der Mechanismus zum Starten von Visual Studio mit DTE von dem Starten vorheriger Versionen von Visual Studio. Diese Änderung ist erforderlich, da Visual Studio 2017 und höher parallele Installationen von Hauptversionen unterstützt (Sie können z. b. eine Vorschau und eine Releaseversion nebeneinander installiert haben).
 
-Der Rest dieses Artikels zeigt den Code, den Sie zum Starten von Visual Studio 2019 mit DTE verwenden können.
+Der Rest dieses Artikels zeigt den Code, den Sie zum Starten von Visual Studio 2019 mithilfe von DTE verwenden können.
 
 ## <a name="set-up-the-project"></a>Einrichten des Projekts
 
-Um den Startenvoncode in Aktion anzuzeigen, erstellen Sie ein Projekt, indem Sie die folgenden Schritte ausführen.
+Um den Start Code in Aktion zu sehen, erstellen Sie ein Projekt, indem Sie die folgenden Schritte ausführen.
 
-1. Erstellen Sie ein neues **Konsolen-App-Projekt** für .NET Framework.
+1. Erstellen Sie ein neues **Konsolen-App** -Projekt für die .NET Framework.
 
-2. Installieren Sie das [Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet-Paket, und fügen Sie der Assembly einen Verweis hinzu.
+2. Installieren Sie die [Microsoft.VisualStudio.Setup.Config-urung. Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) -nuget-Paket und Hinzufügen eines Verweises auf die Assembly.
 
-3. Fügen Sie einen Verweis auf EnvDTE hinzu.
+3. Fügen Sie einen Verweis auf "konvdte" hinzu.
 
-4. Fügen Sie den [folgenden Beispielcode](#example-code) in die *Program.cs-Datei* ein.
+4. Fügen Sie den folgenden [Beispielcode](#example-code) in die Datei *Program.cs* ein.
 
-5. Drücken Sie **F5,** um das Programm auszuführen. Visual Studio 2019 sollte geöffnet sein, bevor das Programm beendet wird.
+5. Drücken Sie **F5** , um das Programm auszuführen. Visual Studio 2019 sollte geöffnet werden, bevor das Programm beendet wird.
 
 ## <a name="example-code"></a>Beispielcode
 
@@ -185,7 +185,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Suchen nach Visual Studio](locating-visual-studio.md)
-- [Exemplarische Vorgehensweise: Greifen Sie über eine Editorerweiterung auf das DTE-Objekt zu](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [Exemplarische Vorgehensweise: Zugreifen auf das DTE-Objekt aus einer Editor-Erweiterung](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

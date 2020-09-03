@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
+title: 'Idebugsymbolprovider:: getaddressesfromcontext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719430"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
-Diese Methode ordnet einen Dokumentkontext einem Array von Debugadressen zu.
+Mit dieser Methode wird ein Dokument Kontext einem Array von debugadressen zugeordnet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,24 +47,24 @@ int GetAddressesFromContext(
 
 ## <a name="parameters"></a>Parameter
 `pDocContext`\
-[in] Der Dokumentkontext.
+in Der Dokument Kontext.
 
 `fStatmentOnly`\
-[in] Wenn TRUE, beschränkt die Debugadressen auf eine einzelne Anweisung.
+in Wenn true, werden die debugadressen auf eine einzige Anweisung beschränkt.
 
 `ppEnumBegAddresses`\
-[out] Gibt einen Enumerator für die Startdebugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
+vorgenommen Gibt einen Enumerator für die Start-debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
 
 `ppEnumEndAddresses`\
-[out] Gibt einen [IEnumDebugAddresses-Enumerator](../../../extensibility/debugger/reference/ienumdebugaddresses.md) für die endgebenden Debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
+vorgenommen Gibt einen [ienumdebugadressen](../../../extensibility/debugger/reference/ienumdebugaddresses.md) -Enumerator für die End-debugadressen zurück, die dieser Anweisung oder Zeile zugeordnet sind.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Ein Dokumentkontext gibt in der Regel einen Bereich von Quellzeilen an. Diese Methode stellt die Start- und Enddebugadressen bereit, die diesen Zeilen zugeordnet sind. Einige Sprachen erlauben Anweisungen, die sich über mehrere Zeilen erstrecken, oder Zeilen, die mehr als eine Anweisung enthalten. Diese Methode stellt ein Flag bereit, um die Debugadressen auf eine einzelne Anweisung zu beschränken.
+ Ein Dokument Kontext gibt in der Regel einen Bereich von Quellzeilen an. Diese Methode stellt die mit diesen Zeilen verknüpften Start-und End-debugadressen bereit. Einige Sprachen lassen Anweisungen zu, die mehrere Zeilen umfassen, oder Zeilen, die mehr als eine Anweisung enthalten. Diese Methode stellt ein Flag bereit, um die debugadressen auf eine einzelne Anweisung zu beschränken.
 
- Es ist möglich, dass eine einzelne Anweisung über mehrere Debugadressen verfügt, wie im Fall von Vorlagen.
+ Es ist möglich, dass eine einzelne Anweisung mehrere debugadressen hat, wie im Fall von Vorlagen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

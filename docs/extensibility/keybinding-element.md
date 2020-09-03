@@ -1,5 +1,5 @@
 ---
-title: KeyBinding Element | Microsoft Docs
+title: KeyBinding-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703145"
 ---
 # <a name="keybinding-element"></a>KeyBinding-Element
 Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an.
 
- Befehlen können sowohl Einzel- als auch Dual-Key-Bindungen zugeordnet sein. Ein Beispiel für eine einzelne Schlüsselbindung ist **Strg**+**S** für den **Befehl Speichern.** Dual-Key-Bindungen erfordern zwei aufeinander folgende Tastenkombinationen, um einen Befehl auszulösen. Ein Beispiel für eine Doppelschlüsselbindung ist <strong>Strg*+</strong>K<strong>,</strong>Strg<strong>+</strong>K**, um eine Textmarke festzulegen.
+ Befehlen können sowohl einfache als auch Dual-Key-Bindungen zugeordnet werden. Ein Beispiel für eine einzelne tastenbindung ist **STRG** + **S** für den **Save** -Befehl. Dual-Key-Bindungen erfordern zwei aufeinander folgende Tastenkombinationen, um einen Befehl zu initiieren. Ein Beispiel für eine Dual-Key-Bindung ist <strong>STRG *+</strong> k<strong>,</strong>STRG <strong>+</strong> k** zum Festlegen eines Lesezeichens.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,30 +34,30 @@ Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an.
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |guid|Erforderlich.|
 |id|Erforderlich.|
-|Editor|Erforderlich. Die Editor-GUID gibt den Bearbeitungskontext an, für den diese Tastenkombination aktiv ist. Der globale Bindungsbereichswert ist "guidVSStd97".|
-|key1|Erforderlich. Gültige Werte umfassen alle typisierbaren Alphanumer, sowie zweistellige hexadezimale Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
-|mod1|Optional. Jede Beliebige Kombination von **Strg**, **Alt**und **Shift,** die durch Leerzeichen getrennt ist.|
-|Schlüssel2|Optional. Gültige Werte umfassen alle typisierbaren Alphanumer, sowie zweistellige hexadezimale Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
-|mod2|Optional. Jede Beliebige Kombination von **Strg**, **Alt**und **Shift,** die durch Leerzeichen getrennt ist.|
+|Editor|Erforderlich. Die Editor-GUID gibt den Bearbeitungs Kontext an, für den diese Tastenkombination aktiviert wird. Der Wert des globalen Bindungs Bereichs ist "guidVSStd97".|
+|key1|Erforderlich. Zu den gültigen Werten gehören alle typbaren alphanumerischen Werte und zweistellige hexadezimal Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
+|mod1|Optional. Eine beliebige Kombination von **STRG**, **alt**und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
+|Schlüssel2|Optional. Zu den gültigen Werten gehören alle typbaren alphanumerischen Werte und zweistellige hexadezimal Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
+|mod2|Optional. Eine beliebige Kombination von **STRG**, **alt**und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
 |Emulator|Optional.|
-|Bedingung|Optional. Siehe [Bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |Parent||
 |Anmerkung||
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[KeyBindings-Element](../extensibility/keybindings-element.md)|Gruppiert KeyBinding-Elemente und andere KeyBindings-Gruppierungen.|
+|[KeyBinding-Element](../extensibility/keybindings-element.md)|Gruppiert KeyBinding-Elemente und andere keybindungs Gruppierungen.|
 
 ## <a name="example"></a>Beispiel
 
@@ -71,5 +71,5 @@ Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an.
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [KeyBindings-Element](../extensibility/keybindings-element.md)
-- [Visual Studio-Befehlstabellendateien (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [KeyBinding-Element](../extensibility/keybindings-element.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

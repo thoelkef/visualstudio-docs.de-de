@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590214"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Erfahren Sie mehr über Projekte und Projektmappen mithilfe von Visual Basic
@@ -96,7 +96,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
 
    > [!NOTE]
-   > Wenn im linken Bereich des Dialogfelds nicht **Visual Basic** angezeigt wird, müssen Sie die *Workload* **.NET-Desktopentwicklung** von Visual Studio installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds **Neues Projekt hinzufügen** erledigen. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   > Wenn im linken Bereich des Dialogfelds nicht **Visual Basic** angezeigt wird, müssen Sie die *Workload***.NET-Desktopentwicklung** von Visual Studio installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds **Neues Projekt hinzufügen** erledigen. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
    >
    > ![Öffnen des Links „Visual Studio-Installer“](media/tutorial-projects-open-installer-vb.png)
 
@@ -117,7 +117,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
 
    > [!NOTE]
-   > Wenn die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) nicht angezeigt wird, müssen Sie die Visual Studio-*Workload* **.NET-Desktopentwicklung** installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Eine einfache Möglichkeit, eine neue Workload beim Erstellen eines neuen Projekts zu installieren, besteht darin, auf den Link **Install more tools and features** (Weitere Tools und Features installieren) unter dem Text **Not finding what you're looking for?** (Sie finden nicht, wonach Sie suchen?) zu klicken. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   > Wenn die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) nicht angezeigt wird, müssen Sie die Visual Studio-*Workload***.NET-Desktopentwicklung** installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Eine einfache Möglichkeit, eine neue Workload beim Erstellen eines neuen Projekts zu installieren, besteht darin, auf den Link **Install more tools and features** (Weitere Tools und Features installieren) unter dem Text **Not finding what you're looking for?** (Sie finden nicht, wonach Sie suchen?) zu klicken. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
    >
    > ![Installerlink in Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
 
@@ -248,7 +248,7 @@ Wenn Sie testen möchten, ob der Komponententest funktioniert, klicken Sie in de
 
 Wenn Sie Visual Studio näher kennenlernen möchten, können Sie eine App erstellen, indem Sie eines der [Tutorials zu Visual Basic](index.yml) durchführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Projekten und Projektmappen](../../ide/creating-solutions-and-projects.md)
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../../ide/managing-project-and-solution-properties.md)

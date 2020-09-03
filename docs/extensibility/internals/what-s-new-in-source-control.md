@@ -1,5 +1,5 @@
 ---
-title: Neuerungen in der Quellcodeverwaltung im Visual Studio 2015 SDK | Microsoft Docs
+title: Neues in der Quell Code Verwaltung in Visual Studio 2015 SDK | Microsoft-Dokumentation
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703410"
 ---
-# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Neuerungen in der Quellcodeverwaltung für das Visual Studio 2015 SDK
+# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Neues in der Quell Code Verwaltung für das Visual Studio 2015 SDK
 
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Im können Sie eine tief integrierte Quellcodeverwaltungslösung bereitstellen, indem Sie ein Quellcodeverwaltungs-VSPackage implementieren. Dieser Abschnitt beschreibt die Funktionen der Quellcodeverwaltung VSPackages und bietet einen Überblick über die Implementierungsschritte.
+In der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] können Sie eine tief integrierte Quell Code Verwaltungs Lösung bereitstellen, indem Sie ein Quellcodeverwaltungs-VSPackage implementieren. In diesem Abschnitt werden die Features der Quellcodeverwaltungs-VSPackages beschrieben und eine Übersicht über die Implementierungs Schritte bereitstellt.
 
-## <a name="the-source-control-vspackage"></a>Das Quellcodeverwaltung VSPackage
+## <a name="the-source-control-vspackage"></a>Das VSPackage der Quell Code Verwaltung
 
-Visual Studio unterstützt zwei Arten von Quellcodeverwaltungslösungen. In allen Versionen von Visual Studio können Sie weiterhin ein Quellsteuerungs-Plug-In-API-basiertes Plug-In integrieren. Sie können auch ein VSPackage für die Quellcodeverwaltung [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] erstellen, das einen Tiefenintegrationspfad bietet, der für Quellcodeverwaltungslösungen geeignet ist, die ein hohes Maß an Raffinesse und Autonomie erfordern.
+Visual Studio unterstützt zwei Typen von Quell Code Verwaltungslösungen. In allen Versionen von Visual Studio können Sie weiterhin ein API-basiertes Plug-in für die Quellcodeverwaltungs-Plug-ins integrieren. Sie können auch ein VSPackage für die Quell Code Verwaltung erstellen, das einen Deep-Integration-Pfad bereitstellt, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] der für Quell Code Verwaltungslösungen geeignet ist, die ein hohes Maß an Komplexität und Autonomie erfordern.
 
-Ein VSPackage kann Visual Studio fast jede Art von Funktionalität hinzufügen. Ein Quellcodeverwaltungs-VSPackage bietet eine vollständige Quellcodeverwaltungsfunktion für Visual Studio, von der dem Benutzer vorgestellten Benutzeroberfläche bis zur Back-End-Kommunikation mit dem Quellcodeverwaltungssystem.
+Ein VSPackage kann Visual Studio nahezu jede Art von Funktionalität hinzufügen. Ein Quellcodeverwaltungs-VSPackage bietet ein vollständiges Quell Code Verwaltungs Feature für Visual Studio, von der Benutzeroberfläche, die dem Benutzer für die Back-End-Kommunikation mit dem Quell Code Verwaltungssystem angezeigt wird.
 
-Das Implementieren einer Quellcodeverwaltung VSPackage erfordert eine "Alles oder Nichts"-Strategie. Der Ersteller eines Quellcodeverwaltungs-VSPackage muss erhebliche Anstrengungen in die Implementierung einer Reihe von Quellcodeverwaltungsschnittstellen und neuen UI-Elementen (Dialogfelder, Menüs und Symbolleisten) investieren, um die gesamte Quellcodeverwaltungsfunktionalität sowie Schnittstellen abzudecken, die für jedes Paket erforderlich sind, um erfolgreich in Visual Studio integriert zu werden.
+Zum Implementieren eines VSPackage für die Quell Code Verwaltung ist eine all-oder Nothing-Strategie erforderlich. Der Ersteller eines Quellcodeverwaltungs-VSPackages muss bei der Implementierung einer Reihe von Quell Code Verwaltungs Schnittstellen und neuen Benutzeroberflächen Elementen (Dialogfelder, Menüs und Symbolleisten) eine beträchtliche Menge an Aufwand investieren, um die gesamte Funktionalität der Quell Code Verwaltung sowie die Schnittstellen zu implementieren, die für die erfolgreiche Integration mit Visual Studio erforderlich sind.
 
-Die folgenden Schritte geben einen allgemeinen Überblick darüber, was zum Implementieren eines Quellcodeverwaltungspakets erforderlich ist. Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md).
+Die folgenden Schritte zeigen einen allgemeinen Überblick darüber, was zum Implementieren eines Quell Code Verwaltungs Pakets erforderlich ist. Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackages](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-1. Erstellen Sie ein VSPackage, das einen privaten Quellcodeverwaltungsdienst bietet.
+1. Erstellen Sie ein VSPackage, das einen privaten Quell Code Verwaltungsdienst anbietet.
 
-2. Implementieren Sie die Schnittstellen in den Quellcodeverwaltungsdiensten, die von Visual <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> angeboten werden (z. B. die und die Schnittstelle).
+2. Implementieren Sie die Schnittstellen in den in der Quell Code Verwaltung bezogenen Diensten, die von Visual Studio bereitgestellt werden (z <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> . b. die-und die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> Schnittstelle).
 
-3. Registrieren Sie Ihre Quellcodeverwaltung VSPackage.
+3. Registrieren Sie das VSPackage für die Quell Code Verwaltung.
 
-4. Implementieren Sie alle Quellcodeverwaltungsbenutzeroberflächen, einschließlich Menüelemente, Dialogfelder, Symbolleisten und Kontextmenüs.
+4. Implementieren Sie alle Benutzeroberflächen der Quell Code Verwaltung, einschließlich Menü Elemente, Dialogfeldern, Symbolleisten und Kontextmenüs.
 
-5. Alle Quellsteuerungsereignisse werden an Ihre Quellcodeverwaltung VSackage übergeben, wenn sie aktiv ist, und müssen von Ihrem VSPackage behandelt werden.
+5. Alle Ereignisse in Zusammenhang mit der Quell Code Verwaltung werden an das vsackage der Quell Code Verwaltung übermittelt, wenn es aktiv ist und von Ihrem VSPackage behandelt werden muss.
 
-6. Ihr Quellcodeverwaltungs-VSPackage muss Ereignisse wie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> die Implementierung der Schnittstelle sowie TPD-Ereignisse (track <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Project Document) (wie von der Schnittstelle implementiert) abhören und die erforderlichen Maßnahmen ergreifen.
+6. Das VSPackage der Quell Code Verwaltung muss auf Ereignisse lauschen, wie z. b. die, die die-Schnittstelle implementieren, und das nach <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> Verfolgen von Project Document (TPD)-Ereignissen (wie von der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Schnittstelle implementiert) und das
 
 ## <a name="see-also"></a>Weitere Informationen
 

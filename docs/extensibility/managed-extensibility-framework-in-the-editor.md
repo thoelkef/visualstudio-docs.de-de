@@ -1,5 +1,5 @@
 ---
-title: Managed Extensibility Framework im Editor | Microsoft Docs
+title: Managed Extensibility Framework im Editor | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,45 +11,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 888c5206b87079cf9fa91cb68e9801cb3c4f8c1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702869"
 ---
-# <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework im Editor
-Der Editor wird mithilfe von MEF-Komponenten (Managed Extensibility Framework) erstellt. Sie können eigene MEF-Komponenten erstellen, um den Editor zu erweitern, und Ihr Code kann auch Editorkomponenten verwenden.
+# <a name="managed-extensibility-framework-in-the-editor"></a>Im Editor Managed Extensibility Framework
+Der Editor wird mithilfe von Managed Extensibility Framework-Komponenten (MEF) erstellt. Sie können Ihre eigenen MEF-Komponenten erstellen, um den Editor zu erweitern, und der Code kann auch Editor-Komponenten nutzen.
 
-## <a name="overview-of-the-managed-extensibility-framework"></a>Übersicht über das Managed Extensibility Framework
- Die MEF ist eine .NET-Bibliothek, mit der Sie Features einer Anwendung oder Komponente hinzufügen und ändern können, die dem MEF-Programmiermodell folgt. Der Visual Studio-Editor kann MEF-Komponenten bereitstellen und nutzen.
+## <a name="overview-of-the-managed-extensibility-framework"></a>Übersicht über den Managed Extensibility Framework
+ Die MEF ist eine .NET-Bibliothek, mit der Sie Features einer Anwendung oder Komponente hinzufügen und ändern können, die dem MEF-Programmiermodell folgt. Der Visual Studio-Editor kann MEF-Komponenten Teile bereitstellen und nutzen.
 
- Das MEF ist in der Assembly .NET Framework Version 4 *System.ComponentModel.Composition.dll* enthalten.
+ Die MEF ist in der .NET Framework Version 4 *System.ComponentModel.Composition.dll* Assembly enthalten.
 
  Weitere Informationen zu MEF finden Sie unter [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-### <a name="component-parts-and-composition-containers"></a>Komponenten und Zusammensetzungsbehälter
- Ein Komponententeil ist eine Klasse oder ein Member einer Klasse, die eine (oder beide) der folgenden Schritte ausführen kann:
+### <a name="component-parts-and-composition-containers"></a>Komponenten Teile und Kompositions Container
+ Ein Komponenten Teil ist eine Klasse oder ein Member einer Klasse, die eine (oder beide) der folgenden Aktionen ausführen kann:
 
 - Verwenden einer anderen Komponente
 
-- Von einer anderen Komponente verbraucht werden
+- Von einer anderen Komponente genutzt werden
 
-  Betrachten Sie beispielsweise eine Einkaufsanwendung mit einer Auftragserfassungskomponente, die von den Produktverfügbarkeitsdaten einer Lagerbestandskomponente abhängt. In MEF-Begriffen kann das Lagerteil Produktverfügbarkeitsdaten *exportieren,* und der Auftragseingangsteil kann die Daten *importieren.* Der Auftragseingangsteil und der Lagerteil müssen sich nicht kennen; Der *Kompositionscontainer* (der von der Hostanwendung bereitgestellt wird) ist für die Aufrechterhaltung des Satzes von Exporten und die Abwicklung der Exporte und Importe verantwortlich.
+  Stellen Sie sich z. b. eine Einkaufs Anwendung vor, die über eine Bestell Eingabe Komponente verfügt, die von Produkt Verfügbarkeitsdaten abhängt, die von einer Warehouse-Bestands Komponente In MEF-Begriffen kann der Inventur Teil Produkt Verfügbarkeitsdaten *exportieren* , und der Bestell Eintrags Teil kann die Daten *importieren* . Der Bestell Eintrags Teil und der Inventur Teil müssen sich nicht gegenseitig informieren. der *Kompositions Container* (der von der Host Anwendung bereitgestellt wird) ist dafür verantwortlich, den Export Satz zu verwalten und die Exporte und Importe zu beheben.
 
-  Der Kompositionscontainer <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, ist in der Regel im Besitz des Hosts. Der Kompositionscontainer verwaltet einen *Katalog* exportierter Komponententeile.
+  Der Kompositions Container, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer> , befindet sich in der Regel im Besitz des Hosts. Der Kompositions Container verwaltet einen *Katalog* exportierter Komponenten Teile.
 
-### <a name="export-and-import-component-parts"></a>Exportieren und Importieren von Komponenten
- Sie können jede Funktionalität exportieren, solange sie als öffentliche Klasse oder als öffentlicher Member einer Klasse (Eigenschaft oder Methode) implementiert ist. Sie müssen Ihr Komponententeil nicht <xref:System.ComponentModel.Composition.Primitives.ComposablePart>von ableiten. Stattdessen müssen Sie <xref:System.ComponentModel.Composition.ExportAttribute> der Klasse oder dem Klassenmember, die Sie exportieren möchten, ein Attribut hinzufügen. Dieses Attribut gibt den *Vertrag* an, mit dem ein anderes Komponententeil Ihre Funktionalität importieren kann.
+### <a name="export-and-import-component-parts"></a>Exportieren und Importieren von Komponenten teilen
+ Sie können jede beliebige Funktionalität exportieren, sofern Sie als öffentliche Klasse oder als öffentliches Member einer Klasse (Eigenschaft oder Methode) implementiert ist. Sie müssen den Komponenten Teil nicht von ableiten <xref:System.ComponentModel.Composition.Primitives.ComposablePart> . Stattdessen müssen Sie <xref:System.ComponentModel.Composition.ExportAttribute> der Klasse oder dem Klassenmember, die Sie exportieren möchten, ein-Attribut hinzufügen. Dieses Attribut gibt den *Vertrag* an, mit dem ein anderer Komponenten Teil ihre Funktionalität importieren kann.
 
 ### <a name="the-export-contract"></a>Der Exportvertrag
- Der <xref:System.ComponentModel.Composition.ExportAttribute> definiert die Entität (Klasse, Schnittstelle oder Struktur), die exportiert wird. In der Regel nimmt das Exportattribut einen Parameter an, der den Typ des Exports angibt.
+ <xref:System.ComponentModel.Composition.ExportAttribute>Definiert die Entität (Klasse, Schnittstelle oder Struktur), die exportiert wird. In der Regel nimmt das Export-Attribut einen Parameter an, der den Typ des Exports angibt.
 
 ```
 [Export(typeof(ContentTypeDefinition))]
 class TestContentTypeDefinition : ContentTypeDefinition {   }
 ```
 
- Standardmäßig definiert <xref:System.ComponentModel.Composition.ExportAttribute> das Attribut einen Vertrag, der der Typ der Exportklasse ist.
+ Standardmäßig definiert das- <xref:System.ComponentModel.Composition.ExportAttribute> Attribut einen Vertrag, bei dem es sich um den Typ der exportierenden Klasse handelt.
 
 ```
 [Export]
@@ -58,7 +58,7 @@ class TestContentTypeDefinition : ContentTypeDefinition {   }
 class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
 ```
 
- Im Beispiel ist `[Export]` das Standardattribut `[Export(typeof(TestAdornmentLayerDefinition))]`äquivalent zu .
+ Im Beispiel entspricht das Default- `[Export]` Attribut `[Export(typeof(TestAdornmentLayerDefinition))]` .
 
  Sie können auch eine Eigenschaft oder Methode exportieren, wie im folgenden Beispiel gezeigt.
 
@@ -70,37 +70,37 @@ public AdornmentLayerDefinition scarletLayerDefinition;
 ```
 
 ### <a name="import-a-mef-export"></a>Importieren eines MEF-Exports
- Wenn Sie einen MEF-Export verwenden möchten, müssen Sie den Vertrag (in der <xref:System.ComponentModel.Composition.ImportAttribute> Regel den Typ) kennen, nach dem er exportiert wurde, und ein Attribut mit diesem Wert hinzufügen. Standardmäßig nimmt das import-Attribut einen Parameter an, der der Typ der Klasse ist, die es ändert. Die folgenden Codezeilen <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> importieren den Typ.
+ Wenn Sie einen MEF-Export nutzen möchten, müssen Sie den-Vertrag (in der Regel den-Typ) kennen, mit dem er exportiert wurde, und ein- <xref:System.ComponentModel.Composition.ImportAttribute> Attribut mit diesem Wert hinzufügen. Standardmäßig nimmt das Import-Attribut einen Parameter an, der der Typ der Klasse ist, den er ändert. In den folgenden Codezeilen wird der- <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> Typ importiert.
 
 ```
 [Import]
 internal IClassificationTypeRegistryService ClassificationRegistry;
 ```
 
-## <a name="get-editor-functionality-from-a-mef-component-part"></a>Abrufen der Editor-Funktionalität aus einem MEF-Komponententeil
- Wenn ihr vorhandener Code ein MEF-Komponententeil ist, können Sie MEF-Metadaten verwenden, um Editorkomponententeile zu verwenden.
+## <a name="get-editor-functionality-from-a-mef-component-part"></a>Editor-Funktionalität von einem MEF-Komponenten Teil erhalten
+ Wenn Ihr vorhandener Code ein MEF-Komponenten Teil ist, können Sie die MEF-Metadaten verwenden, um editorkomponententeile zu verwenden.
 
-#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>So nutzen Sie die Editorfunktionalität aus einem MEF-Komponententeil
+#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>So nutzen Sie die Editor-Funktionalität von einem MEF-Komponenten Teil
 
-1. Fügen Sie Verweise auf *System.Composition.ComponentModel.dll*, das sich im globalen Assemblycache (GAC) befindet, und zu den Editorassemblys hinzu.
+1. Fügen Sie Verweise auf *System.Composition.ComponentModel.dll*im globalen Assemblycache (Global Assembly Cache, GAC) und auf die editorassemblys hinzu.
 
-2. Fügen Sie die entsprechenden Verwendungsdirektiven hinzu.
+2. Fügen Sie die relevanten using-Direktiven hinzu.
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3. Fügen `[Import]` Sie das Attribut wie folgt zur Dienstschnittstelle hinzu.
+3. Fügen Sie das- `[Import]` Attribut wie folgt zu ihrer Dienst Schnittstelle hinzu.
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4. Wenn Sie den Dienst erhalten haben, können Sie eine der Komponenten verwenden.
+4. Wenn Sie den Dienst erhalten haben, können Sie eine beliebige Komponente nutzen.
 
-5. Wenn Sie ihre Assembly kompiliert haben, legen Sie sie in *.. Der Ordner "Common7-IDE-Komponenten"\* Ihrer Visual Studio-Installation.
+5. Wenn Sie die Assembly kompiliert haben, platzieren Sie Sie im *. Ordner \common7\ide\components \* Ihrer Visual Studio-Installation.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Sprachdienst- und Editorerweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
+- [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)
