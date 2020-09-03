@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850717"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
@@ -27,7 +27,7 @@ Je nachdem, welche Build-Engine Sie verwenden, können die Buildaufgaben untersc
 
 Dies bedeutet, dass Sie auf Elemente wie Projektdateinamen nicht genauso zugreifen können, wie wenn Sie eine Textvorlage in MSBuild erstellen. Sie können jedoch [Umgebungs Informationen mithilfe von buildparametern in Textvorlagen und direktivenprozessoren übergeben](#parameters).
 
-## <a name="buildserver"></a>Computer konfigurieren
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Computer konfigurieren
 
 Installieren Sie das [Modellierungs-SDK für Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148), um Buildaufgaben auf dem Entwicklungs Computer zu aktivieren.
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Übergeben von buildkontextdaten an die Vorlagen
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Übergeben von buildkontextdaten an die Vorlagen
 
 Sie können Parameterwerte in der Projektdatei festlegen. Beispielsweise können Sie Buildeigenschaften und [Umgebungsvariablen](../msbuild/how-to-use-environment-variables-in-a-build.md)übergeben:
 
@@ -234,7 +234,7 @@ Legen Sie in einer Textvorlage `hostspecific` in der template-Direktive fest. Ve
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>Verwenden von Projekteigenschaften in Assembly-und Includedirektiven
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Verwenden von Projekteigenschaften in Assembly-und Includedirektiven
 
 Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.
 
@@ -269,7 +269,7 @@ Nun können Sie die Projekteigenschaft in der Assembly- und der Includedirektive
 
 Wenn Sie eine eingeschlossene Datei oder eine andere Datei, die von der Vorlage gelesen wird, aktualisieren, wird diese Datei nicht automatisch von Visual Studio transformiert. Durch die Transformation von Vorlagen im Rahmen des Build wird sichergestellt, dass alle Teile aktuell sind.
 
-**Welche anderen Optionen gibt es für die Transformation von Textvorlagen?**
+**Welche anderen Optionen zur Transformation von Textvorlagen gibt es?**
 
 - Das [textTransform-Hilfsprogramm](../modeling/generating-files-with-the-texttransform-utility.md) kann in Befehls Skripts verwendet werden. In den meisten Fällen ist es einfacher, MSBuild zu verwenden.
 
@@ -284,5 +284,5 @@ Wenn Sie eine eingeschlossene Datei oder eine andere Datei, die von der Vorlage 
 Hier finden Sie eine gute Anleitung zur T4 MSbuild-Vorlage, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio-Visualisierungs-und Modellierungs-SDK](https://www.visualstudio.com/)
+- [Visual Studio Visualization and Modeling SDK](https://www.visualstudio.com/)
 - [Oleg Sych: Grundlegendes zur T4: MSBuild-Integration](https://github.com/olegsych/T4Toolbox)

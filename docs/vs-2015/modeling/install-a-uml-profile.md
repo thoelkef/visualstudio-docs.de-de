@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850665"
 ---
 # <a name="install-a-uml-profile"></a>Installieren eines UML-Profils
@@ -45,5 +45,5 @@ Sie können Visual Studio mit einem UML-Profil erweitern. Mit einem Profil kön
 
 2. Klicken Sie auf die Erweiterung, die Sie entfernen möchten, und klicken Sie dann auf **Deaktivieren** oder **deinstallieren**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md)

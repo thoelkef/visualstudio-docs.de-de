@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850794"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
@@ -34,7 +34,7 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
 ## <a name="compileroptions-attribute"></a>compilerOptions-Attribut
  Ein Beispiel: `compilerOptions="optimize+"`
 
- Gültige Werte: beliebige gültige Compileroptionen. Weitere Informationen finden [ C# Sie unter Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Gültige Werte: beliebige gültige Compileroptionen. Weitere Informationen finden Sie unter [c#-Compileroptionen nach Kategorie](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignoriert für Laufzeitvorlagen (vorverarbeitete Vorlagen).
 
@@ -56,7 +56,7 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
 debug="true"
 ```
 
- Gültige Werte: `true, false`. "False" ist der Standardwert.
+ Gültige Werte: `true, false` . "False" ist der Standardwert.
 
  Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
@@ -71,13 +71,13 @@ debug="true"
 hostspecific="true"
 ```
 
- Gültige Werte: `true, false, trueFromBase`. "False" ist der Standardwert.
+ Gültige Werte: `true, false, trueFromBase` . "False" ist der Standardwert.
 
  Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. Die-Eigenschaft ist ein Verweis auf den Host der Transformations-Engine und wird als [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))deklariert. Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.
 
  Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Wenn `hostspecific` auf `true` festgelegt ist und Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
+ Wenn `hostspecific` auf `true` festgelegt ist und Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Zum Beispiel:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -108,9 +108,9 @@ Content of myFile is:
 
  `VB`
 
- Das Language-Attribut gibt die Sprache ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../includes/csprcs-md.md)]) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
+ Das Language-Attribut gibt die Sprache ( [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../includes/csprcs-md.md)] ) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
- Beispiel:
+ Zum Beispiel:
 
 ```vb
 <#@ template language="VB" #>

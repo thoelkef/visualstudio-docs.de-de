@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850840"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -41,7 +41,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Wenn Sie den **Stammnamespace** löschen, können Sie die Namespacestruktur Ihres Projekts im Code festlegen.
 
 > [!NOTE]
-> Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
+> Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den Stamm **Namespace**löschen, `Global` wird der Namespace der obersten Ebene, wodurch die Notwendigkeit des `Global` Schlüssel Worts in einer- `Namespace` Anweisung entfällt. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
 
  Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace-Anweisung](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).
 
@@ -56,7 +56,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Anwendungstyp**: gibt den Typ der zu erstellenden Anwendung an. Für [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-App können Sie **Windows Store-App**, **Klassenbibliothek** oder **WinMD-Datei** angeben. Für die meisten anderen Anwendungstypen können Sie **Windows-Anwendung**, **Konsolenanwendung**, **Klassenbibliothek**, **Windows-Dienst** oder **Websteuerelementbibliothek** angeben.
 
@@ -69,7 +69,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 
  Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
- **Symbol**: legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (oder [/win32icon (C#-Compileroptionen)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+ **Symbol**: legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie diese **\<Browse...>** Option, um eine vorhandene Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (oder [/win32icon (C#-Compileroptionen)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
  **Start Formular/Start Objekt/Start-URI** Gibt das Start Formular oder den Einstiegspunkt der Anwendung an.
 
@@ -79,11 +79,11 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 
  Wenn **Anwendungsframework aktivieren** deaktiviert ist, wird diese Liste zu **Startobjekt** und zeigt sowohl Formulare als auch Klassen oder Module mit einer `Sub Main` an.
 
- **Startobjekt**  definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)** . Weitere Informationen finden Sie unter [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+ **Startobjekt ** definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)**. Weitere Informationen finden Sie unter [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
  **Assemblyinformationen** Klicken Sie hier, um das [Dialog Feld Assemblyinformationen](../../ide/reference/assembly-information-dialog-box.md)anzuzeigen.
 
- **Anwendungs Framework aktivieren** Gibt an, ob ein Projekt das Anwendungs Framework verwendet. Die Einstellung dieser Option wirkt sich auf die unter **Startformular**/**Startobjekt** verfügbaren Optionen aus.
+ **Anwendungs Framework aktivieren** Gibt an, ob ein Projekt das Anwendungs Framework verwendet. Die Einstellung dieser Option wirkt sich auf die Optionen aus, die unter Start **Formular**Start- / **Objekt**verfügbar sind.
 
  Ist dieses Kontrollkästchen aktiviert, verwendet die Anwendung die Standard-`Sub Main`. Durch Aktivieren dieses Kontrollkästchens werden die Features im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** aktiviert, und Sie müssen ein Startformular auswählen.
 
@@ -100,11 +100,11 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 ## <a name="windows-application-framework-properties"></a>Eigenschaften des Windows-Anwendungsframeworks
  Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Im folgenden Abschnitt werden die **Eigenschaften des Windows-Anwendungsframeworks**-Einstellungen für Windows Presentation Foundation (WPF)-Anwendungen beschrieben.
 
- **Visuelle XP-Stile aktivieren** Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch bekannt als *Windows XP*-Designs. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Option ist standardmäßig aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).
+ **Visuelle XP-Stile aktivieren** Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch bekannt als *Windows XP*-Designs. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Standardeinstellung ist aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).
 
  **Einzelinstanzanwendung erstellen** Aktivieren Sie dieses Kontrollkästchen, um zu verhindern, dass Benutzer mehrere Instanzen der Anwendung ausführen. Das Kontrollkästchen ist standardmäßig deaktiviert. Mit dieser Einstellung können mehrere Instanzen der Anwendung ausgeführt werden.
 
- **My. Settings beim Herunterfahren speichern** Aktivieren Sie dieses Kontrollkästchen, um anzugeben, dass die `My.Settings` Einstellungen der Anwendung gespeichert werden, wenn Benutzer ihre Computer Herunterfahren. Das Kontrollkästchen ist standardmäßig aktiviert. Wird diese Option deaktiviert, können Anwendungseinstellungen manuell durch Aufrufen von `My.Settings.Save` gespeichert werden.
+ **My. Settings beim Herunterfahren speichern** Aktivieren Sie dieses Kontrollkästchen, um anzugeben, dass die Einstellungen der Anwendung `My.Settings` gespeichert werden, wenn Benutzer ihre Computer Herunterfahren. Das Kontrollkästchen ist standardmäßig aktiviert. Wird diese Option deaktiviert, können Anwendungseinstellungen manuell durch Aufrufen von `My.Settings.Save` gespeichert werden.
 
  **Authentifizierungsmodus** Wählen Sie **Windows** (Standardeinstellung) aus, um die Verwendung der Windows-Authentifizierung anzugeben, um den derzeit angemeldeten Benutzer zu identifizieren. Sie können diese Informationen mit dem `My.User`-Objekt zur Laufzeit abrufen. Wählen Sie **Anwendungsdefiniert**, wenn Sie anstelle der standardmäßigen Windows-Authentifizierungsmethoden eigenen Code zum Authentifizieren der Benutzern bereitstellen.
 
@@ -116,9 +116,9 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 
  Wählen Sie **Beim Schließen des Hauptfensters** aus, um festzulegen, dass die Anwendung beendet wird, wenn das Hauptfenster geschlossen oder `Shutdown` explizit aufgerufen wird.
 
- Begrüßungs **Bildschirm** Wählen Sie das Formular aus, das Sie als Begrüßungsbildschirm verwenden möchten. Sie müssen zuvor mithilfe eines Formulars oder einer Vorlage einen Begrüßungsbildschirm erstellt haben. Der Standardwert lautet **(Keine)** .
+ Begrüßungs **Bildschirm** Wählen Sie das Formular aus, das Sie als Begrüßungsbildschirm verwenden möchten. Sie müssen zuvor mithilfe eines Formulars oder einer Vorlage einen Begrüßungsbildschirm erstellt haben. Der Standardwert ist **(None)**.
 
- **Anwendungs Ereignisse anzeigen** Klicken Sie auf diese Schaltfläche, um eine Ereignis Codedatei anzuzeigen, in der Sie Ereignisse für die Anwendungs Framework-Ereignisse `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` und `NetworkAvailabilityChanged`schreiben können. Sie können auch bestimmte Anwendungsframeworkmethoden überschreiben. Beispielsweise können Sie das Anzeigeverhalten des Begrüßungsbildschirms ändern, indem Sie `OnInitialize` überschreiben.
+ **Anwendungs Ereignisse anzeigen** Klicken Sie auf diese Schaltfläche, um eine Ereignis Codedatei anzuzeigen, in der Sie Ereignisse für die Anwendungs Framework `Startup` -Ereignisse, `Shutdown` , und schreiben können `UnhandledException` `StartupNextInstance` `NetworkAvailabilityChanged` . Sie können auch bestimmte Anwendungsframeworkmethoden überschreiben. Beispielsweise können Sie das Anzeigeverhalten des Begrüßungsbildschirms ändern, indem Sie `OnInitialize` überschreiben.
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Eigenschaften des Windows-Anwendungsframeworks für Windows Presentation Foundation (WPF)-Anwendungen
  Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar, wenn das Projekt eine Windows Presentation Foundation-Anwendung ist. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Die in dieser Tabelle aufgeführten Optionen sind nur für WPF-Anwendung oder WPF-Browseranwendungen verfügbar. Sie sind nicht für WPF-Benutzersteuerelement- oder benutzerdefinierte Steuerelementbibliotheken verfügbar.
@@ -139,5 +139,5 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 
  Das Objekt <xref:System.Windows.Application> löst Ereignisse aus, wenn bestimmte Anwendungszustandsänderungen stattfinden (z.B. beim Starten oder Herunterfahren der Anwendung). Eine vollständige Liste der Ereignisse, die diese Klasse verfügbar macht, finden Sie unter <xref:System.Windows.Application>. Diese Ereignisse werden im Benutzercodeabschnitt der partiellen `Application`-Klasse verarbeitet.
 
-## <a name="see-also"></a>Siehe auch
-[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Lösungen](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+## <a name="see-also"></a>Weitere Informationen
+[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Projektmappen](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
