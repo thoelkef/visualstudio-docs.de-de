@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658021"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animieren von Objekten im XAML-Designer
@@ -29,7 +29,7 @@ Sie können kurze Animationen erstellen, die Objekte bewegen, oder sie ein- und 
 
  Erfahren Sie, wie Sie Animationen erstellen können, indem Sie diese Videos ansehen.
 
-|Sehen Sie sich ein kurzes Video an (womöglich nur in englischer Sprache):|Weitere Informationen:|
+|Sehen Sie sich ein kurzes Video an (womöglich nur in englischer Sprache):|In diesem Artikel werden folgende Themen erläutert:|
 |--------------------------|-------------------|
 |![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Erstellen](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines) von Zeitachsen|Erstellen Sie eine Zeitachse, und arbeiten Sie mit Objekten in der Zeitachse.|
 |![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Hinzufügen von Keyframes und wiederholen der Animation](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Fügen Sie Keyframes hinzu, und legen Sie bei jedem Keyframe Eigenschaften fest. Führen Sie dann die Animation aus, und beobachten Sie den reibungslosen Übergang von Objekten zwischen ihnen.|
@@ -40,5 +40,5 @@ Sie können kurze Animationen erstellen, die Objekte bewegen, oder sie ein- und 
 |![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Animieren der Schaltfläche](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Erstellen Sie interessante Effekte für eine Schaltfläche, die angezeigt werden, wenn der Benutzer darauf zeigt.|
 |![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Erstellen von Animationen und arbeiten mit](https://www.youtube.com/watch?v=mAJXYrwxGYo) der Beschleunigung|Animieren Sie Effekte, die angezeigt werden, wenn ein Benutzer auf die Schaltfläche in Form eines Taschenrechner-Bildes drückt.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

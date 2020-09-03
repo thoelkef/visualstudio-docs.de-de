@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6d77c7a779afcbf7bc7fc3f8fbd863aa368ee7e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658538"
 ---
 # <a name="t4-text-template-directives"></a>T4-Textvorlagendirektiven
@@ -38,7 +38,7 @@ Durch Direktiven werden Anweisungen für die Textvorlagen-Transformations-Engine
 
  Anweisungen sind in der Regel die ersten Elemente in einer Vorlagendatei oder einer eingeschlossenen Datei. Platzieren Sie sie nicht in einem Codeblock `<#...#>` und nicht nach einem Klassenfunktionsblock `<#+...#>`.
 
- [T4-Vorlagenanweisung](../modeling/t4-template-directive.md)
+ [T4-Vorlagendirektive](../modeling/t4-template-directive.md)
 
 ```
 <#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>
@@ -62,7 +62,7 @@ Durch Direktiven werden Anweisungen für die Textvorlagen-Transformations-Engine
 <#@ assembly name="[assembly strong name|assembly file name]" #>
 ```
 
- [T4-Import-Anweisung](../modeling/t4-import-directive.md)
+ [T4-Import-Direktive](../modeling/t4-import-directive.md)
 
 ```
 <#@ import namespace="namespace" #>
@@ -74,7 +74,7 @@ Durch Direktiven werden Anweisungen für die Textvorlagen-Transformations-Engine
 <#@ include file="filePath" #>
 ```
 
- [T4 CleanUpBehavior-Anweisung](../modeling/t4-cleanupbehavior-directive.md)
+ [T4 CleanUpBehavior-Direktive](../modeling/t4-cleanupbehavior-directive.md)
 
 ```
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
