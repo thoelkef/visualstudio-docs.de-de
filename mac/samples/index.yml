@@ -93,7 +93,7 @@ sections:
             image:
               src: ../media/samples/hellomac.png
               href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac/'
-            title: 'Hallo, Mac'
+            title: 'Hello, Mac (Hallo Mac)'
           - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/maccontrols/'
             html: UI-Steuerelement-Beispiele für Mac-Apps.
             image:

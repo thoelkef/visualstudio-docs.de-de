@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d9bfa9a6e9be1a97b3a606aa302defd12a8d062
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664526"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders
@@ -61,15 +61,15 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
 > [!NOTE]
 > In dieser Abbildung wird eine orangene Farbe ausgewählt, um den Effekt des Shaders besser zu veranschaulichen. Da die Vorschauform jedoch keine Position im Raum hat, kann der Shader nicht vollständig im Voraus im Shader-Designer angeschaut werden. Der Shader muss in einer echten Szene vorausgeschaut werden, um den vollen Effekt zu demonstrieren.
 
- ![Shader-Diagramm und eine Vorschau seiner Auswirkung](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
 
- Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Vorschau von Shadern verwenden](../designers/shader-designer.md) in **Shader-Designer**.
+ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zum Anzeigen einer Vorschau von Shadern im Shader-Designer finden Sie unter Vorschau von **Shadern** im [Shader-Designer](../designers/shader-designer.md) .
 
- In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben, auf die 3D-Szene angewandt wurde, wie unter [Vorgehensweise: Modellieren eines 3-D-Geländes](../designers/how-to-model-3-d-terrain.md) gezeigt wird. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.
+ Die folgende Abbildung zeigt den Shader, der in diesem Dokument beschrieben wird, das auf die 3D-Szene angewendet wird, die in Gewusst [wie: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md)veranschaulicht wird. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.
 
- ![Farbverlaufs Effekt auf ein&#45;3D-Geländemodell angewendet](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-result")
+ ![Auf ein 3&#45;D-Geländemodell angewendeter Farbverlaufs Effekt](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-result")
 
- Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter Gewusst [wie: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Vorgehens [Weise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md) Gewusst [wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md) Gewusst wie: Modellieren des [3D-Geländes](../designers/how-to-model-3-d-terrain.md) Gewusst [wie: Erstellen eines Graustufen Textur](../designers/how-to-create-a-grayscale-texture-shader.md) -Shader- [Designer](../designers/shader-designer.md) -Shader-Designer- [Knoten](../designers/shader-designer-nodes.md)

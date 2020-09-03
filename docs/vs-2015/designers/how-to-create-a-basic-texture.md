@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a19cd0b68927effc32b0480fdeb7286be8ad8dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664574"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Gewusst wie: Erstellen einer Basistextur
@@ -38,7 +38,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
  In den folgenden Schritten wird gezeigt, wie eine Textur erstellt wird, die einer Zielscheibe darstellt. Wenn Sie fertig sind, sollte die Textur wie im folgenden Bild aussehen. Die Bildbearbeitung wurde so eingestellt, dass ein grünes, kariertes Muster zur Darstellung verwendet wird, um die Transparenz in der Textur besser zu veranschaulichen.
 
- !["Bullseeye"-Ziel mit der in grün angezeigten Transparenz](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bull Sekunden-Textur-in-Editor")
+ ![Zielscheibe mit Transparenz in Grün](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bull Sekunden-Textur-in-Editor")
 
  Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angezeigt wird. Verwenden Sie während dem Arbeiten das Fenster **Eigenschaften**, um die Bildgröße festzulegen, Tooleigenschaften zu ändern und Farben anzugeben.
 
@@ -59,7 +59,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
 6. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.
 
-7. Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R**, **G** und **B** `0` sowie den Wert der Eigenschaft **A** auf `255` fest.
+7. Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R**, **G** und **B**`0` sowie den Wert der Eigenschaft **A** auf `255` fest.
 
 8. Legen Sie die Hintergrundfarbe auf ein vollständig deckendes weiß fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Hintergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** auf `255` fest.
 
@@ -86,9 +86,9 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 
     Die vollständige Textur der Zielscheibe Hier ist das endgültige Bild, das mit Transparenz gezeigt wird.
 
-    ![Die komplette Ziel Textur "bullabdu"](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
+    ![Die vollständige Textur der Zielscheibe](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
 
     Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)
 
-## <a name="see-also"></a>Siehe auch
- [Image Editor](../designers/image-editor.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Bildbearbeitung](../designers/image-editor.md)

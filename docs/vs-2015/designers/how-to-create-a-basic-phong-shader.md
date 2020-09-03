@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 17ba5d143a5f4534b09b2aaff718af7ce99f2773
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664548"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders
@@ -55,7 +55,7 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
 > [!NOTE]
 > Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders sowie ein metallfarbenes Finish durch die Verwendung der Parameter **MaterialSpecular** und **MaterialSpecularPower** angegeben, um den Effekt des Shaders in dieser Abbildung besser zu veranschaulichen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shader verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
 
- ![Shader-Diagramm und eine Vorschau seiner Auswirkung](../designers/media/digit-lighting-graph.png "Ziffern-Beleuchtung-Diagramm")
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lighting-graph.png "Ziffern-Beleuchtung-Diagramm")
 
  Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).
 
@@ -66,9 +66,9 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
 >
 > Die Eigenschaft **MaterialSpecularPower** bestimmt, wie intensiv die Glanzlichter sind. Hohe Glanzkräfte simulieren stumpfere, lokalisiertere Glanzlichter. Sehr niedrige Glanzkräfte simulieren intensive, auffällige Glanzlichter, die die Farbe der ganzen Oberfläche übersättigen und verbergen können.
 
- ![Auf ein Modell angewendetes Phong-Beleuchtungsmodell](../designers/media/digit-lighting-model.png "Ziffern-Beleuchtung-Modell")
+ ![Phong-Beleuchtung in einem Modell](../designers/media/digit-lighting-model.png "Ziffern-Beleuchtung-Modell")
 
- Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter Gewusst [wie: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell Gewusst](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md) Gewusst [wie: Erstellen eines grundlegenden Lambert-Shader](../designers/how-to-create-a-basic-lambert-shader.md) -Shader- [Designer](../designers/shader-designer.md) - [Knotens](../designers/shader-designer-nodes.md)
