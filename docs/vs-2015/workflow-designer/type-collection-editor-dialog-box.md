@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dae99166b8b811df75f2e2777d176e6778b60c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670150"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Typauflistungs-Editor (Dialogfeld)
@@ -26,9 +26,9 @@ Das Dialogfeld typauflistungs- **Editor** wird verwendet, um den **Sende** -und 
 
  In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Typsammlung** beschrieben.
 
-|Benutzeroberflächenelement|Beschreibung|
+|Benutzeroberflächenelement|BESCHREIBUNG|
 |----------------|-----------------|
-|**Typliste**|Eine Liste der Typen, die hinzugefügt oder entfernt wurden.|
+|**Type List**|Eine Liste der Typen, die hinzugefügt oder entfernt wurden.|
 
 ## <a name="to-bring-up-the-type-collection-editor"></a>So öffnen Sie den Typauflistungs-Editor
 

@@ -1,5 +1,5 @@
 ---
-title: Abschluss von Mitgliedern in einem Legacy-Sprachdienst | Microsoft Docs
+title: Element Vervollständigung in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,58 +13,58 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707195"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Membervervollständigung in einem Legacysprachdienst
 
-Die IntelliSense-Membervervollständigung ist ein QuickInfo, der eine Liste möglicher Member eines bestimmten Bereichs anzeigt, z. B. eine Klasse, Struktur, Enumeration oder einen Namespace. Wenn der Benutzer z. B. "this" gefolgt von einem Punkt eingibt, wird in einer Liste, aus der der Benutzer auswählen kann, eine Liste aller Member der Klasse oder Struktur im aktuellen Bereich angezeigt.
+Der IntelliSense-Element Abschluss ist eine QuickInfo, die eine Liste möglicher Member eines bestimmten Bereichs, z. b. eine Klasse, Struktur, Enumeration oder einen Namespace, anzeigt. Wenn beispielsweise der Benutzer in c# "This" gefolgt von einem bestimmten Zeitraum eingibt, wird eine Liste aller Member der Klasse oder Struktur im aktuellen Bereich in einer Liste angezeigt, aus der der Benutzer auswählen kann.
 
-Das Managed Package Framework (MPF) bietet Unterstützung für die QuickInfo und die Verwaltung der Liste in der Tooltip. Alles, was benötigt wird, ist die Zusammenarbeit des Parsers, um die in der Liste angezeigten Daten zur Verfügung zu stellen.
+Das Managed Package Framework (MPF) bietet Unterstützung für die QuickInfo und die Verwaltung der Liste in der QuickInfo. alles, was benötigt wird, ist die Zusammenarbeit des Parsers, um die in der Liste angezeigten Daten bereitzustellen.
 
-Ältere Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Möglichkeit zum Implementieren von Sprachdienstfunktionen besteht darin, MEF-Erweiterungen zu verwenden. Weitere Informationen finden Sie unter [Erweitern des Editors und der Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).
+Legacy Sprachdienste werden als Teil eines VSPackages implementiert, aber die neuere Methode zum Implementieren von Sprachdienst Funktionen ist die Verwendung von MEF-Erweiterungen. Weitere Informationen finden Sie unter [Erweitern des Editors und der Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Es wird empfohlen, die neue Editor-API so schnell wie möglich zu verwenden. Dadurch wird die Leistung Ihres Sprachdienstes verbessert und Sie können die neuen Editorfunktionen nutzen.
+> Es wird empfohlen, dass Sie so bald wie möglich mit der Verwendung der neuen Editor-API beginnen. Dadurch wird die Leistung Ihres sprach Dienstanbieter verbessert, und Sie können die neuen Editor-Features nutzen.
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Im Folgenden sind die beiden Möglichkeiten aufgeführt, wie eine Mitgliederliste mithilfe der MPF-Klassen angezeigt wird:
+Im folgenden finden Sie zwei Möglichkeiten, wie eine Elementliste mit den MPF-Klassen angezeigt wird:
 
-- Positionieren der Einsparung auf einem Bezeichner oder nach einem Elementabschlusszeichen und Auswählen von **Listenmitgliedern** im **Menü IntelliSense.**
+- Positionieren der Einfügemarke für einen Bezeichner oder nach einem Element Abschluss Zeichen und Auswählen von Member **auflisten** aus dem **IntelliSense** -Menü.
 
-- Der <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Elementabschlusszeichen und legt einen Token-Trigger von [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) für dieses Zeichen fest.
+- Der <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Element Vervollständigungs Zeichen und legt einen [tokenauslösers von tokentriggers. Membership Select](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) für dieses Zeichen fest.
 
-Ein Memberabschlusszeichen gibt an, dass ein Member einer Klasse, Struktur oder Enumeration folgen soll. In C- oder Visual Basic ist z. `.`B. das Elementabschlusszeichen ein `.` , `->`während in C++ das Zeichen entweder ein oder ein ist. Der Triggerwert wird festgelegt, wenn das Elementauswahlzeichen gescannt wird.
+Ein Element Abschluss Zeichen gibt an, dass ein Member einer Klasse, Struktur oder Enumeration befolgt werden soll. Beispielsweise ist in c# oder Visual Basic das Element Abschluss Zeichen ein `.` , während in C++ das Zeichen entweder ein `.` oder ein ist `->` . Der Wert des Auslösers wird festgelegt, wenn das Element Select-Zeichen gescannt wird.
 
-### <a name="the-intellisense-member-list-command"></a>Das IntelliSense-Memberlisten-Kommando
+### <a name="the-intellisense-member-list-command"></a>Der IntelliSense-Member List-Befehl
 
-Der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl initiiert einen <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Aufruf der <xref:Microsoft.VisualStudio.Package.Source> Methode <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> für die Klasse, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> und die Methode ruft wiederum den Methodenparser mit dem Parse-Grund von [ParseReason.DisplayMemberList](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>)auf.
+Der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> -Befehl initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode für die <xref:Microsoft.VisualStudio.Package.Source> -Klasse, und die- <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode ruft wiederum den <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methoden Parser mit dem analysieren-Grund für [ParseReason. Display Membership List](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>)auf.
 
-Der Parser bestimmt den Kontext der aktuellen Position sowie das Token unter oder unmittelbar vor der aktuellen Position. Basierend auf diesem Token wird eine Liste der Deklarationen angezeigt. Wenn Sie z. B. die Einserstelle auf einem Klassenmitglied positionieren und **Listenmitglieder**auswählen, erhalten Sie eine Liste aller Mitglieder der Klasse. Wenn Sie die Einsparung nach einem Punkt positionieren, der auf eine Objektvariable folgt, erhalten Sie eine Liste aller Member der Klasse, die das Objekt darstellt. Beachten Sie, dass die Auswahl eines Mitglieds aus der Liste das Mitglied ersetzt, auf dem sich die Einserstelle befindet, wenn sie auf einem Mitglied positioniert wird, wenn die Mitgliederliste angezeigt wird.
+Der Parser bestimmt sowohl den Kontext der aktuellen Position als auch das Token unter oder unmittelbar vor der aktuellen Position. Basierend auf diesem Token wird eine Liste von Deklarationen angezeigt. Wenn Sie in c# z. b. die Einfügemarke für einen Klassenmember positionieren und Member **auflisten**auswählen, erhalten Sie eine Liste aller Member der Klasse. Wenn Sie die Einfügemarke nach einem Punkt positionieren, der auf eine Objekt Variable folgt, erhalten Sie eine Liste aller Member der Klasse, die das Objekt darstellt. Beachten Sie Folgendes: Wenn die Einfügemarke auf einem Element positioniert ist, wenn die Elementliste angezeigt wird, wird durch die Auswahl eines Elements aus der Liste der Member, auf dem sich die Einfügemarke befindet, durch den in der Liste angezeigten
 
-### <a name="the-token-trigger"></a>Der Token-Trigger
+### <a name="the-token-trigger"></a>Der tokenauslöse
 
-Der [TokenTriggers.MemberSelect-Trigger](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) initiiert einen <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Aufruf <xref:Microsoft.VisualStudio.Package.Source> der Methode <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> für die Klasse, und die Methode ruft wiederum den Parser mit dem Parse-Grund von [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>)auf. Wenn der Token-Trigger auch das [TokenTriggers.MatchBraces-Flag](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) enthält, lautet der Parse-Grund [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), das Elementauswahl und Brace-Hervorhebung kombiniert.
+Der [Schalter "dekentriggers. Membership Select](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) " initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode für die <xref:Microsoft.VisualStudio.Package.Source> -Klasse, und die- <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode ruft wiederum den Parser mit dem analysieren-Grund für [ParseReason. Membership Select](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>)auf. Wenn der [tokentriggers. matchgeschweifte tokenbefehl auch das Flag tokentriggers. matchgeschweifte](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) Klammern enthält, ist die Analyse Grund " [parameseleason. mitgliedseltandhighlightgeschweifte Klammern](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>)", die Elementauswahl und geschweifte Klammern
 
-Der Parser bestimmt den Kontext der aktuellen Position sowie das, was vor der Elementauswahl eingegeben wurde. Aus diesen Informationen erstellt der Parser eine Liste aller Member des angeforderten Bereichs. Diese Liste der Deklarationen wird in <xref:Microsoft.VisualStudio.Package.AuthoringScope> <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> dem Objekt gespeichert, das von der Methode zurückgegeben wird. Wenn Deklarationen zurückgegeben werden, wird die Tipp zum Memberabschluss angezeigt. Die Tooltip wird von einer <xref:Microsoft.VisualStudio.Package.CompletionSet> Instanz der Klasse verwaltet.
+Der Parser bestimmt sowohl den Kontext der aktuellen Position als auch das, was vor dem Element Select-Zeichen eingegeben wurde. Aus diesen Informationen erstellt der Parser eine Liste aller Member des angeforderten Bereichs. Diese Liste von Deklarationen wird im- <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt gespeichert, das von der-Methode zurückgegeben wird <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> . Wenn eine Deklaration zurückgegeben wird, wird die QuickInfo für den Abschluss des Elements angezeigt. Die QuickInfo wird von einer Instanz der- <xref:Microsoft.VisualStudio.Package.CompletionSet> Klasse verwaltet.
 
-## <a name="enable-support-for-member-completion"></a>Unterstützung für die Mitgliedervervollständigung aktivieren
+## <a name="enable-support-for-member-completion"></a>Unterstützung für die Beendigung von Elementen aktivieren
 
-Sie müssen `CodeSense` den Registrierungseintrag auf 1 festgelegt haben, um alle IntelliSense-Operationen zu unterstützen. Dieser Registrierungseintrag kann mit einem benannten <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Parameter festgelegt werden, der an das Benutzerattribut übergeben wird, das dem Sprachpaket zugeordnet ist. Die Sprachdienstklassen lesen den Wert dieses <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Registrierungseintrags aus der Eigenschaft in der <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.
+Der `CodeSense` Registrierungs Eintrag muss auf 1 festgelegt sein, um einen beliebigen IntelliSense-Vorgang zu unterstützen. Dieser Registrierungs Eintrag kann mit einem benannten Parameter festgelegt werden, der an das Benutzer Attribut übergeben wurde, <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> das dem Sprachpaket zugeordnet ist. Die Sprachdienst Klassen lesen den Wert dieses Registrierungs Eintrags aus der-Eigenschaft der- <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.
 
-Wenn Ihr Scanner den Token-Trigger [von TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)zurückgibt und Ihr Parser eine Liste von Deklarationen zurückgibt, wird die Mitgliederabschlussliste angezeigt.
+Wenn Ihr Scanner den [tokentoken tokentriggers. Membership Select](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)zurückgibt und der Parser eine Liste von Deklarationen zurückgibt, wird die Element Vervollständigungsliste angezeigt.
 
-## <a name="support-member-completion-in-the-scanner"></a>Support-Member-Abschluss im Scanner
+## <a name="support-member-completion-in-the-scanner"></a>Unterstützung der Mitglieder Vervollständigung in der Überprüfung
 
-Der Scanner muss in der Lage sein, ein Elementabschlusszeichen zu erkennen und den Token-Trigger von [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) festzulegen, wenn dieses Zeichen analysiert wird.
+Der Scanner muss in der Lage sein, ein Element Abschluss Zeichen zu erkennen und den [tokentoken von tokentriggers. Membership Select](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) festzulegen, wenn dieses Zeichen analysiert wird.
 
-### <a name="scanner-example"></a>Scannerbeispiel
+### <a name="scanner-example"></a>Beispiel für Scanner
 
-Hier ist ein vereinfachtes Beispiel für das Erkennen <xref:Microsoft.VisualStudio.Package.TokenTriggers> des Memberabschlusszeichens und das Festlegen des entsprechenden Flags. Dieses Beispiel dient nur zur Veranschaulichung. Es wird davon ausgegangen, `GetNextToken` dass Ihr Scanner eine Methode enthält, die Token aus einer Textzeile identifiziert und zurückgibt. Der Beispielcode legt den Trigger einfach fest, wenn er die richtige Art von Zeichen sieht.
+Hier ist ein vereinfachtes Beispiel für das Erkennen des Element Abschluss Zeichens und das Festlegen des entsprechenden <xref:Microsoft.VisualStudio.Package.TokenTriggers> Flags angegeben. Dieses Beispiel dient nur zu Illustrations Zwecken. Dabei wird davon ausgegangen, dass der Scanner eine Methode enthält `GetNextToken` , die Token aus einer Textzeile identifiziert und zurückgibt. Der Beispielcode legt einfach den-Wert fest, wenn er die richtige Art von Zeichen sieht.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -97,17 +97,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="support-member-completion-in-the-parser"></a>Support-Mitglied-Abschluss im Parser
+## <a name="support-member-completion-in-the-parser"></a>Unterstützung der Mitglieder Vervollständigung im Parser
 
-Zur Membervervollständigung <xref:Microsoft.VisualStudio.Package.Source> ruft <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> die Klasse die Methode auf. Sie müssen die Liste in einer Klasse <xref:Microsoft.VisualStudio.Package.Declarations> implementieren, die von der Klasse abgeleitet ist. Weitere <xref:Microsoft.VisualStudio.Package.Declarations> Informationen zu den Methoden, die Sie implementieren müssen, finden Sie in der Klasse.
+Bei der Beendigung des Elements <xref:Microsoft.VisualStudio.Package.Source> Ruft die-Klasse die- <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> Methode auf. Sie müssen die Liste in einer Klasse implementieren, die von der- <xref:Microsoft.VisualStudio.Package.Declarations> Klasse abgeleitet wird. Weitere <xref:Microsoft.VisualStudio.Package.Declarations> Informationen zu den Methoden, die Sie implementieren müssen, finden Sie in der-Klasse.
 
-Der Parser wird mit [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) oder [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) aufgerufen, wenn ein Memberauswahlzeichen eingegeben wird. Die im <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt angegebene Position befindet sich unmittelbar nach dem Elementauswahlzeichen. Der Parser muss die Namen aller Member sammeln, die an diesem bestimmten Punkt im Quellcode in einer Mitgliederliste angezeigt werden können. Anschließend muss der Parser die aktuelle Zeile analysieren, um den Bereich zu bestimmen, den der Benutzer dem Elementauswahlzeichen zugeordnet haben soll.
+Der Parser wird mit [ParseReason. Membership Select](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) oder [ParseReason. mitgliedseltandhighlightgeschweifte Klammern](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) aufgerufen, wenn ein Member-Select-Zeichen eingegeben wird. Der im-Objekt angegebene Speicherort <xref:Microsoft.VisualStudio.Package.ParseRequest> ist unmittelbar nach dem Element Select-Zeichen. Der Parser muss die Namen aller Member erfassen, die an dieser Stelle im Quellcode in einer Elementliste vorkommen können. Der Parser muss dann die aktuelle Zeile analysieren, um den Bereich zu bestimmen, den der Benutzer dem Element Select-Zeichen zugeordnet werden soll.
 
-Dieser Bereich basiert auf dem Typ des Bezeichners, bevor das Element zeichen auswählt. Zum Beispiel in C-Wert, `languageService` wenn die Membervariable mit dem Typ von `LanguageService`, languageService eingibt. **languageService.** erstellt eine Liste aller Member `LanguageService` der Klasse. Auch in C- und **Eingabe.** erstellt eine Liste aller Member der Klasse im aktuellen Bereich.
+Dieser Bereich basiert auf dem Bezeichnertyp vor dem Element Select-Zeichen. Wenn z. b. in c# die Member-Variable mit dem `languageService` Typ ist `LanguageService` , wird **LanguageService eingegeben.** erzeugt eine Liste aller Member der- `LanguageService` Klasse. Geben Sie auch in c# ein **.** erzeugt eine Liste aller Member der-Klasse im aktuellen Bereich.
 
-### <a name="parser-example"></a>Parser-Beispiel
+### <a name="parser-example"></a>Beispiel für Parser
 
-Das folgende Beispiel zeigt eine Möglichkeit <xref:Microsoft.VisualStudio.Package.Declarations> zum Auffüllen einer Liste. Dieser Code setzt voraus, dass der Parser eine Deklaration erstellt und sie der Liste hinzufügt, indem er eine `AddDeclaration` Methode für die `TestAuthoringScope` Klasse aufruft.
+Das folgende Beispiel zeigt eine Möglichkeit, eine <xref:Microsoft.VisualStudio.Package.Declarations> Liste aufzufüllen. In diesem Code wird davon ausgegangen, dass der Parser eine Deklaration erstellt und Sie der Liste hinzufügt, indem eine- `AddDeclaration` Methode für die-Klasse aufgerufen wird `TestAuthoringScope` .
 
 ```csharp
 using System.Collections;

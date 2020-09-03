@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths | Microsoft-Dokumentation
+title: 'IDebugProgram2:: enumcodepath | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4d34b1b6519407e02d4340a5108ef03cece12b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202769"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft eine Liste der Codepfade für eine bestimmte Position in einer Quelldatei.  
+Ruft eine Liste der Codepfade für eine angegebene Position in einer Quelldatei ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -50,30 +50,30 @@ int EnumCodePaths( 
   
 #### <a name="parameters"></a>Parameter  
  `pszHint`  
- [in] Das Wort unter dem Cursor in die **Quelle** oder **Disassembly** Ansicht in der IDE.  
+ in Das Wort unter dem Cursor in der **Quell** -oder disassemblyansicht in der IDE. **Disassembly**  
   
  `pStart`  
- [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das der aktuelle Codekontext darstellt.  
+ in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das den aktuellen Code Kontext darstellt.  
   
  `pFrame`  
- [in] Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt dem aktuellen Haltepunkt zugeordnet, das den Stapelrahmen darstellt.  
+ in Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) -Objekt, das den dem aktuellen Haltepunkt zugeordneten Stapel Rahmen darstellt.  
   
  `fSource`  
- [in] Ungleich Null (`TRUE`) sofern es sich um die **Quelle** Ansicht oder 0 (null) (`FALSE`) sofern es sich um die **Disassembly** anzeigen.  
+ in Ungleich NULL ( `TRUE` ), wenn in der **Quell** Ansicht, oder 0 (NULL `FALSE` ) (), wenn in der disassemblyansicht. **Disassembly**  
   
  `ppEnum`  
- [out] Gibt eine [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) -Objekt, das eine Liste der Codepfade enthält.  
+ vorgenommen Gibt ein [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) -Objekt zurück, das eine Liste der Codepfade enthält.  
   
  `ppSafety`  
- [out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das einen zusätzlicher Codekontext als Haltepunkt festgelegt werden, für den Fall, dass der ausgewählte Pfad code darstellt, wird übersprungen. Dies kann z. B. im Fall von einem kurzgeschlossen booleschen Ausdruck vorkommen.  
+ vorgenommen Gibt ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt zurück, das einen zusätzlichen Code Kontext darstellt, der als Haltepunkt festgelegt werden soll, wenn der ausgewählte Codepfad übersprungen wird. Dies kann bei einem booleschen Ausdruck mit kurzer Umschaltung vorkommen, z. b..  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Ein Codepfad beschreibt den Namen einer Methode oder Funktion, um auf die aktuelle bei der Ausführung des Programms erhalten aufgerufen wurde. Eine Liste von Codepfaden stellt dar, die Aufrufliste.  
+## <a name="remarks"></a>Bemerkungen  
+ Ein Codepfad beschreibt den Namen einer Methode oder Funktion, die aufgerufen wurde, um zum aktuellen Punkt während der Ausführung des Programms zu gelangen. Eine Liste von Codepfade stellt die-Aufrufliste dar.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

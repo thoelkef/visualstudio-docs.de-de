@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 556fd56f10ea39e5eff3abe700492212983473de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671948"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Benachrichtigungen, Umgebung, Dialogfeld „Optionen“
@@ -23,5 +23,5 @@ ms.locfileid: "72671948"
 
 Mit dieser Option können Sie das Ignorieren von Benachrichtigungen beenden, was Sie zuvor über das Dialogfeld „Benachrichtigungen“ aktiviert haben. Weitere Informationen finden Sie unter [Benachrichtigungen](../../ide/visual-studio-notifications.md).
 
-## <a name="see-also"></a>Siehe auch
- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)

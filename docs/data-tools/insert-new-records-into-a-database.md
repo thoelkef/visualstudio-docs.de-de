@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281993"
 ---
 # <a name="insert-new-records-into-a-database"></a>Einfügen neuer Datensätze in eine Datenbank
 
 Wenn Sie neue Datensätze in eine Datenbank einfügen möchten, können Sie die `TableAdapter.Update` -Methode oder eine der DBDirect-Methoden des TableAdapter (insbesondere die- `TableAdapter.Insert` Methode) verwenden. Weitere Informationen finden Sie unter [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Wenn Ihre Anwendung keine TableAdapters verwendet, können Sie Befehls Objekte (z. b. <xref:System.Data.SqlClient.SqlCommand> ) verwenden, um neue Datensätze in die Datenbank einzufügen.
+Wenn Ihre Anwendung keine TableAdapters verwendet, können Sie Befehls Objekte (z. b.  <xref:System.Data.SqlClient.SqlCommand> ) verwenden, um neue Datensätze in die Datenbank einzufügen.
 
 Wenn Ihre Anwendung Datasets verwendet, um Daten zu speichern, verwenden Sie die- `TableAdapter.Update` Methode. Die- `Update` Methode sendet alle Änderungen (Updates, Einfügungen und Löschungen) an die Datenbank.
 
@@ -84,6 +84,6 @@ Im folgenden Beispiel wird veranschaulicht, wie Datensätze mithilfe des Befehls
 
 Sie müssen Zugriff auf die Datenbank haben, mit der Sie eine Verbindung herstellen möchten, sowie die Berechtigung zum Ausführen von Einfügungen in die gewünschte Tabelle.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

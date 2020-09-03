@@ -1,5 +1,5 @@
 ---
-title: Debuggingaufgaben | Microsoft-Dokumentation
+title: Debugaufgaben | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,51 +11,51 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4a8a9879bce6d91448bb4f29b842328ab56bb97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200610"
 ---
 # <a name="debugging-tasks"></a>Debuggingaufgaben
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Um ein Programm zu debuggen, es muss gestartet werden und eine Debug-Engine (DE) angefügt werden muss, andernfalls die DE muss an eine bereits gestartete Programm angefügt werden. Nach dem Anfügen, muss die DE bestimmte Startup-Ereignisse generieren. Das debugpaket versucht, in der Antwort die Haltepunkte, die in der IDE zu binden. Wenn das Programm einen gebundenen Haltepunkt trifft, hält und Benutzereingaben wartet.  
+Zum Debuggen eines Programms muss es gestartet werden, und es muss eine Debug-Engine (de) angefügt werden. andernfalls muss die de an ein zuvor gestartetes Programm angefügt werden. Nach dem Anfügen muss der de bestimmte Start Ereignisse generieren. Als Antwort versucht das Debug-Paket, die Breakpoints zu binden, die in der IDE festgelegt sind. Wenn das Programm auf einen gebundenen Haltepunkt trifft, wird es angehalten, und es wird auf eine Benutzereingabe gewartet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Sicherheitsprobleme](../../extensibility/debugger/security-issues.md)  
- Erläutert die Schritte, die zum Debuggen eines Programms erforderlich sind.  
+ Erläutert die Sicherheits Schritte, die zum Debuggen eines Programms erforderlich sind.  
   
  [Starten eines Programms](../../extensibility/debugger/launching-a-program.md)  
- Enthält schrittweise Anleitungen zum Angeben einer bereitgestellten Kompatibilitätsrichtlinie, das Betriebssystem Ruft, um das Programm zu starten.  
+ Enthält Schritt-für-Schritt-Anleitungen zum Angeben einer de, die das Betriebssystem aufruft, um das Programm zu starten.  
   
  [Direktes Anfügen an ein Programm](../../extensibility/debugger/attaching-directly-to-a-program.md)  
- Beschreibt den Prozess verwendet, um ein Programm in einem Prozess zu debuggen, die bereits ausgeführt wird.  
+ Beschreibt den Prozess, der zum Debuggen eines Programms in einem Prozess verwendet wird, der bereits ausgeführt wird.  
   
  [Senden von Startereignissen nach einem Start](../../extensibility/debugger/sending-startup-events-after-a-launch.md)  
- Listet die Ereignisse, die stattfinden, sobald die DE für das Programm, angefügt ist, bis das Programm auf der Haupteinstiegspunkt und zum Debuggen bereit ist.  
+ Listet die Ereignisse auf, die nach dem Anfügen von de an das Programm stattfinden, bis sich das Programm an seinem Haupteinstiegspunkt befindet und zum Debuggen bereit ist.  
   
  [Steuern der Ausführung](../../extensibility/debugger/control-of-execution.md)  
- Erläutert, wie die DE in der Regel ein Einstiegspunkt-Ereignis, ein Load-complete-Ereignis oder eine Beenden-Ereignis, je nach den Umständen sendet.  
+ Erläutert, wie der de in der Regel abhängig von den jeweiligen Umständen ein Einstiegspunkt Ereignis, ein Ereignis zum Laden eines Ladevorgangs oder ein anhalteereignis sendet.  
   
  [Binden von Haltepunkten](../../extensibility/debugger/binding-breakpoints.md)  
- Beschreibt, wie, wenn der Benutzer einen Haltepunkt festlegt, die IDE die Anforderung formuliert und werden aufgefordert, die Debugsitzung, um den Haltepunkt zu erstellen.  
+ Beschreibt, wie die IDE die Anforderung formuliert und die Debugsitzung anfordert, den Breakpoint zu erstellen, wenn der Benutzer einen Haltepunkt festlegt.  
   
  [Auswerten von Ausdrücken](../../extensibility/debugger/evaluating-expressions.md)  
  Erläutert, wie Ausdrücke erstellt werden und was geschieht, wenn ein Ausdruck ausgewertet wird.  
   
  [Visualisieren und Anzeigen von Daten](../../extensibility/debugger/visualizing-and-viewing-data.md)  
- Erläutert, wie von der ausdrucksauswertung (EE) typschnellansichten und benutzerdefinierten Viewer unterstützt werden.  
+ Erläutert, wie typvisualisierungen und benutzerdefinierte Viewer von der Ausdrucks Auswertung unterstützt werden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)  
- Beschreibt die wichtigsten Konzepte für das Debuggen Architektur an.  
+ Beschreibt die wichtigsten Konzepte der debuggingarchitektur.  
   
  [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)  
- Bietet eine Übersicht über Visual Studio debugging-Komponenten, z. B. die DE, EE und Symbol Handler (SH).  
+ Bietet eine Übersicht über die Visual Studio-debuggingkomponenten, die de, EE und Symbol Handler (SH) enthalten.  
   
  [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)  
- Erläutert, wie die DE gleichzeitig in Code, Dokumentationen und Auswertung von ausdruckskontexten arbeitet. Beschreibt, für jede der drei Kontexten, Speicherort, Position oder Auswertung, die für sie relevant.  
+ Erläutert die gleichzeitige Funktionsweise von de innerhalb von Code-, Dokumentations-und Ausdrucks Auswertungs Kontexten. Beschreibt für jeden der drei Kontexte den Speicherort, die Position oder die Auswertung, die für ihn relevant sind.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Erste Schritte](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

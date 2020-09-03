@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abd175e2ebc69fc21481aeeee9f5da76d1c40109
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202456"
 ---
 # <a name="average-cpu-utilization"></a>Durchschnittliche CPU-Auslastung
@@ -25,6 +25,6 @@ ms.locfileid: "68202456"
 
 Zeigt die durchschnittliche Auslastung der logischen Kerne des Systems durch den Prozess während seiner gesamten Dauer an. Im Diagramm ist nicht ersichtlich, welcher bestimmte Kern zu einem bestimmten Zeitpunkt aktiv ist. Wenn beispielsweise zwei Kerne mit einer Kapazität von 50 % während eines bestimmten Zeitraums ausgeführt werden, zeigt diese Ansicht einen logischen Kern, der verwendet wird.  
   
-## <a name="see-also"></a>Siehe auch  
- [Kernansicht](../profiling/cores-view.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [Kern Ansicht](../profiling/cores-view.md)   
  [CPU-Auslastungsdiagramm](../profiling/cpu-utilization-graph.md)

@@ -21,18 +21,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30f51da001c62166a97c954b1416e35fd8b540f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671091"
 ---
 # <a name="save-data-in-a-transaction"></a>Speichern von Daten in einer Transaktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe des <xref:System.Transactions>-Namespace in einer Transaktion gespeichert werden. In diesem Beispiel werden die Tabellen `Customers` und `Orders` aus der Beispieldatenbank Northwind verwendet.
+In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe des-Namespace in einer Transaktion gespeichert werden <xref:System.Transactions> . In diesem Beispiel werden die Tabellen `Customers` und `Orders` aus der Beispieldatenbank Northwind verwendet.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Für diese exemplarische Vorgehensweise wird die Beispieldatenbank Northwind benötigt.
 
 ## <a name="create-a-windows-application"></a>Erstellen einer Windows-Anwendung
@@ -49,13 +49,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe
      Das Projekt **SavingDataInATransactionWalkthrough** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
 ## <a name="create-a-database-data-source"></a>Erstellen einer Datenbank-Datenquelle
- In diesem Schritt wird mithilfe des [Assistenten zum Konfigurieren von Datenquellen](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) eine Datenquelle erstellt, die auf den `Customers`-und `Orders` Tabellen in der Beispieldatenbank Northwind basiert.
+ In diesem Schritt wird mithilfe des [Assistenten zum Konfigurieren von Datenquellen](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) eine Datenquelle basierend auf den `Customers` `Orders` Tabellen und in der Beispieldatenbank Northwind erstellt.
 
 #### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
 
 1. Wählen Sie im Menü **Daten** die Option**Datenquellen anzeigen**aus.
 
-2. Wählen Sie im Fenster **Datenquellen** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen**die Option **Datenbank**aus, und klicken Sie dann auf **weiter**.
 
@@ -73,7 +73,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe
 
 7. Erweitern Sie auf dem Bildschirm **Wählen Sie Ihre Datenbankobjekte** aus den Knoten **Tabellen** .
 
-8. Wählen Sie die Tabellen `Customers` und `Orders` aus, und klicken Sie dann auf **Fertig**stellen.
+8. Wählen Sie `Customers` die `Orders` Tabellen und aus, und klicken Sie dann auf **Fertig**stellen.
 
      Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im Fenster **Datenquellen** angezeigt.
 
@@ -90,7 +90,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe
 
 - Ziehen Sie den zugehörigen Knoten **Orders** (nicht den Haupt Knoten **Orders** , sondern den zugehörigen untergeordneten Tabellen Knoten unterhalb der Spalte **Fax** ) auf das Formular unterhalb von **CustomersDataGridView**.
 
-     Ein <xref:System.Windows.Forms.DataGridView> wird auf dem Formular angezeigt. Ein OrdersTableAdapter und <xref:System.Windows.Forms.BindingSource> werden in der Komponenten Leiste angezeigt.
+     Ein <xref:System.Windows.Forms.DataGridView> wird auf dem Formular angezeigt. Ein OrdersTableAdapter- <xref:System.Windows.Forms.BindingSource> Element, das in der Komponenten Leiste angezeigt wird.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Fügen Sie einen Verweis auf die System. Transactions-Assembly hinzu.
  Transaktionen verwenden den Namespace <xref:System.Transactions>. Ein Projekt Verweis auf die System. Transactions-Assembly wird standardmäßig nicht hinzugefügt, daher müssen Sie Sie manuell hinzufügen.
@@ -104,13 +104,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe
      Dem Projekt wird ein Verweis auf **System.Transactions** hinzugefügt.
 
 ## <a name="modifythe-code-in-the-bindingnavigators-saveitem-button"></a>Ändern Sie den Code in der Schaltfläche "SaveItem" von BindingNavigator.
- Für die erste Tabelle, die auf dem Formular abgelegt wird, wird standardmäßig Code dem `click`-Ereignis der Schaltfläche Speichern auf der <xref:System.Windows.Forms.BindingNavigator> hinzugefügt. Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise wird der vorhandene Save-Code aus dem Click-Ereignishandler der Schaltfläche "Save" umgestalten. Wir erstellen außerdem einige weitere Methoden, um bestimmte Aktualisierungs Funktionen bereitzustellen, je nachdem, ob die Zeile hinzugefügt oder gelöscht werden muss.
+ Für die erste Tabelle, die auf dem Formular abgelegt wird, wird standardmäßig Code dem- `click` Ereignis der Schaltfläche Speichern in hinzugefügt <xref:System.Windows.Forms.BindingNavigator> . Sie müssen für das Ändern weiterer Tabellen den Code manuell hinzufügen. In dieser exemplarischen Vorgehensweise wird der vorhandene Save-Code aus dem Click-Ereignishandler der Schaltfläche "Save" umgestalten. Wir erstellen außerdem einige weitere Methoden, um bestimmte Aktualisierungs Funktionen bereitzustellen, je nachdem, ob die Zeile hinzugefügt oder gelöscht werden muss.
 
 #### <a name="to-modify-the-auto-generated-save-code"></a>So ändern Sie automatisch generierten Speichern-Code
 
 1. Wählen Sie im **CustomersBindingNavigator** die Schaltfläche **Speichern** aus (die Schaltfläche mit dem Diskettensymbol).
 
-2. Ersetzen Sie die `CustomersBindingNavigatorSaveItem_Click`-Methode durch folgenden Code:
+2. Ersetzen Sie die `CustomersBindingNavigatorSaveItem_Click`-Methode durch den folgenden Code:
 
     [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
     [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]
@@ -159,5 +159,5 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten mithilfe
 
 - Drücken Sie **F5** , um die Anwendung auszuführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

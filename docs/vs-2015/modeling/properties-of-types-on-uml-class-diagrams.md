@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9881393e792cf8bf49dc6d0b9459b18969dea171
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671321"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Eigenschaften von Typen in UML-Klassendiagrammen
@@ -43,19 +43,19 @@ In einem UML-Klassendiagramm ist ein *Typ* eine Klasse, eine Schnittstelle oder 
 
  Um die Eigenschaften eines Typs anzuzeigen, klicken Sie im Diagramm oder im **UML-Modell-Explorer**mit der rechten Maustaste auf den Typ, und klicken Sie dann auf **Eigenschaften**. Die Eigenschaften werden im **Eigenschaften** Fenster angezeigt.
 
-|**Property**|**Default**|Angezeigt in|Beschreibung|
+|**Eigenschaft**|**Standard**|Kommt vor in|BESCHREIBUNG|
 |------------------|-----------------|----------------|-----------------|
 |**Name**|Ein Standardname|Alle Elemente|Bezeichnet das Element.|
 |**Qualifizierter Name**|Enthaltendes Paket :: Typname|Alle Elemente|Bezeichnet das Element eindeutig. Mit dem qualifizierten Namen des Pakets, das es enthält, als Präfix.|
 |**Farbe**|Standardwert für die Art des Typs|Alle Elemente|Die Farbe dieser Form. Im Gegensatz zu den anderen Eigenschaften ist dies keine Eigenschaft des zugrundeliegenden Modellelements. Verschiedene Ansichten desselben Typs können unterschiedliche Farben haben.|
-|**Ist abstrakt**|False|Klasse|Bei „true“ kann die Klasse kann nicht instanziiert werden und ist für die Verwendung als Basisklasse bestimmt.|
-|**Ist Blatt**|False|Klasse, Schnittstelle|Bei „true“ soll der Typ nicht über abgeleitete Typen verfügen.|
-|**Ist aktiv**|False|Klasse|Bei „true“ wird jede Instanz dieses Typs einem Kontrollthread zugeordnet.|
+|**Ist abstrakt**|Falsch|Klasse|Bei „true“ kann die Klasse kann nicht instanziiert werden und ist für die Verwendung als Basisklasse bestimmt.|
+|**Is Leaf**|Falsch|Klasse, Schnittstelle|Bei „true“ soll der Typ nicht über abgeleitete Typen verfügen.|
+|**Ist aktiv**|Falsch|Klasse|Bei „true“ wird jede Instanz dieses Typs einem Kontrollthread zugeordnet.|
 |**Sichtbarkeit**|Öffentlich|Klasse, Schnittstelle, Enumeration|-Public-Global sichtbar.<br />-Private: dieser Typ ist innerhalb des Pakets sichtbar, das es besitzt.<br />-Das Paket ist innerhalb des Pakets sichtbar.|
-|**Arbeitselemente**|0 zugeordnet|Alle Elemente|Die Anzahl von Arbeitsaufgaben, die diesem Element zugeordnet sind. Informationen zum Zuordnen von Arbeitsaufgaben finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).|
+|**Arbeitselemente**|0 zugeordnet|Alle Elemente|Die Anzahl von Arbeitselemente, die diesem Element zugeordnet sind. Informationen zum Zuordnen von Arbeitsaufgaben finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).|
 |**Beschreibung**|(leer)|Alle Elemente|Sie können hier allgemeine Hinweise zum Element angeben.|
-|**Vorlagen Bindung**|(keine)|Klasse, Schnittstelle, Enumeration|Wenn nicht leer, wird dieser Typ definiert, indem Parameterwerte an diese Vorlagenklasse gebunden werden. Erweitern Sie die Eigenschaft, um die Bindungen der Vorlagenparameter anzuzeigen.|
-|**Vorlagenparameter**|(keine)|Klasse, Schnittstelle, Enumeration|Wenn nicht leer, ist dies eine Vorlagenklasse, deren Parameter hier aufgeführt sind. Um Parameter hinzuzufügen oder die Eigenschaften einzelner Parameter anzuzeigen, klicken Sie auf **[...]** .|
+|**Vorlagen Bindung**|(none)|Klasse, Schnittstelle, Enumeration|Wenn nicht leer, wird dieser Typ definiert, indem Parameterwerte an diese Vorlagenklasse gebunden werden. Erweitern Sie die Eigenschaft, um die Bindungen der Vorlagenparameter anzuzeigen.|
+|**Vorlagen Parameter**|(none)|Klasse, Schnittstelle, Enumeration|Wenn nicht leer, ist dies eine Vorlagenklasse, deren Parameter hier aufgeführt sind. Um Parameter hinzuzufügen oder die Eigenschaften einzelner Parameter anzuzeigen, klicken Sie auf **[...]**.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md) [Eigenschaften von Operationen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md) [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md) [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)

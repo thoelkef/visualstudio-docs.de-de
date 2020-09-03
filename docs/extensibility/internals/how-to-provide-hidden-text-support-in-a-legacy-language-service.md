@@ -1,5 +1,5 @@
 ---
-title: Bereitstellung von verdeckter Textunterstützung im Legacy-Sprachdienst
+title: Unterstützung für ausgeblendeten Text im Legacy Sprachdienst
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,35 +13,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707932"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Gewusst wie: Bereitstellen von verdeckter Textunterstützung in einem älteren Sprachdienst
-Sie können ausgeblendete Textbereiche zusätzlich zu Gliederungsbereichen erstellen. Ausgeblendete Textbereiche können clientgesteuert oder editorgesteuert sein und werden verwendet, um einen Textbereich vollständig auszublenden. Der Editor zeigt einen ausgeblendeten Bereich als horizontale Linien an. Ein Beispiel hierfür ist die **Nur-Skript-Ansicht** im HTML-Editor.
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Gewusst wie: Bereitstellen von ausgeblendeter Textunterstützung in einem Legacy Sprachdienst
+Sie können neben Gliederungs Bereiche auch ausgeblendete Textbereiche erstellen. Ausgeblendete Textbereiche können vom Client gesteuert oder Editor gesteuert werden, und Sie werden verwendet, um einen Textbereich vollständig auszublenden. Der Editor zeigt einen ausgeblendeten Bereich als horizontale Linien an. Ein Beispiel hierfür ist die **Nur Skript** Ansicht im HTML-Editor.
 
 ## <a name="to-implement-a-hidden-text-region"></a>So implementieren Sie einen ausgeblendeten Textbereich
 
-1. Rufen `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>Sie nach .
+1. Wird `QueryService` für aufgerufen <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> .
 
-     Dadurch wird ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>Zeiger auf zurückgegeben.
+     Dies gibt einen Zeiger auf zurück <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 
-2. Rufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>Sie auf, und übergeben Sie einen Zeiger für einen bestimmten Textpuffer. Dadurch wird bestimmt, ob bereits eine ausgeblendete Textsitzung für den Puffer vorhanden ist.
+2. Ruft <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> auf und übergibt einen Zeiger für einen angegebenen Text Puffer. Hiermit wird bestimmt, ob für den Puffer bereits eine ausgeblendete Text Sitzung vorhanden ist.
 
-3. Wenn bereits eines vorhanden ist, müssen Sie keins erstellen, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> und es wird ein Zeiger auf das vorhandene Objekt zurückgegeben. Verwenden Sie diesen Zeiger, um ausgeblendete Textbereiche aufzuzählen und zu erstellen. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> andernfalls auf, um eine ausgeblendete Textsitzung für den Puffer zu erstellen.
+3. Wenn bereits eine vorhanden ist, müssen Sie keine erstellen, und es wird ein Zeiger auf das vorhandene <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Objekt zurückgegeben. Verwenden Sie diesen Zeiger, um ausgeblendete Textbereiche aufzulisten und zu erstellen. Andernfalls rufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> Sie auf, um eine ausgeblendete Text Sitzung für den Puffer zu erstellen.
 
-     Ein Zeiger auf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> das Objekt wird zurückgegeben.
+     Ein Zeiger auf das- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Objekt wird zurückgegeben.
 
     > [!NOTE]
-    > Wenn Sie `CreateHiddenTextSession`aufrufen, können Sie einen ausgeblendeten Textclient angeben (d. h., <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>) Der ausgeblendete Textclient benachrichtigt Sie, wenn ausgeblendeter Text oder Diegliederung vom Benutzer erweitert oder reduziert wird.
+    > Wenn Sie aufgerufen `CreateHiddenTextSession` haben, können Sie einen ausgeblendeten Text Client angeben (d <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> . h.). Der verborgene Text Client benachrichtigt Sie, wenn ausgeblendeter Text oder Gliederung vom Benutzer erweitert oder reduziert wird.
 
-4. Rufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> Sie auf, um jeweils einen oder mehrere neue Gliederungsbereiche hinzuzufügen, und geben Sie die folgenden Informationen im Parameter `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) an:
+4. Aufrufen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> , um eine oder mehrere neue Gliederungs Bereiche gleichzeitig hinzuzufügen. dabei werden die folgenden Informationen im `reHidReg` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Parameter () angegeben:
 
-    1. Geben Sie `hrtConcealed` einen `iType` Wert von <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> im Element der Struktur an, um anzugeben, dass Sie einen ausgeblendeten Bereich und nicht einen Gliederungsbereich erstellen.
+    1. Geben `hrtConcealed` Sie den Wert im- `iType` Member der- <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur an, um anzugeben, dass Sie einen ausgeblendeten Bereich anstelle eines Gliederungs Bereichs erstellen.
 
         > [!NOTE]
-        > Wenn verdeckte Bereiche ausgeblendet sind, zeigt der Editor automatisch Zeilen um die ausgeblendeten Bereiche an, um deren Anwesenheit anzuzeigen.
+        > Wenn verborgene Bereiche ausgeblendet sind, zeigt der Editor automatisch Zeilen um die ausgeblendeten Bereiche an, um deren Anwesenheit anzuzeigen.
 
-    2. Geben Sie an, ob die Region in `dwBehavior` den <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Membern der Struktur clientgesteuert oder editorgesteuert ist. Ihre smarte Gliederungsimplementierung kann eine Mischung aus Editor- und Client-gesteuerten Umriss- und ausgeblendeten Textbereichen enthalten.
+    2. Geben Sie an, ob der Bereich in den Elementen der Struktur vom Client gesteuert oder vom Editor gesteuert wird `dwBehavior` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> . Ihre intelligente Gliederungs Implementierung kann eine Mischung aus Editor-und Client gesteuerter Kontur und ausgeblendeten Textbereichen enthalten.

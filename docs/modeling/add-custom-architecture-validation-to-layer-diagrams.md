@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546923"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
@@ -125,7 +125,7 @@ Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Bef
 
 9. Um die VSIX in der Haupt Instanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen Sie die **VSIX** -Datei im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei.
 
-## <a name="programming-validation"></a><a name="programming"></a>Programmier Validierung
+## <a name="programming-validation"></a><a name="programming"></a> Programmier Validierung
 
 Zum Definieren einer Ebenenvalidierungserweiterung definieren Sie eine Klasse, die über die folgenden Eigenschaften verfügt:
 
@@ -194,7 +194,7 @@ Jeder Knoten und jeder Link verfügt über mindestens eine Kategorie, die den Ty
 
 Links von Ebenen zu Elementen im Code haben die Kategorie "Represents".
 
-## <a name="debugging-validation"></a><a name="debugging"></a>Debugvalidierung
+## <a name="debugging-validation"></a><a name="debugging"></a> Debugvalidierung
 
 Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von Visual Studio wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.
 
@@ -226,7 +226,7 @@ Starten Sie die experimentelle Instanz immer mit STRG+F5 (**Starten ohne Debuggi
 
 Um die Validierungserweiterung auf einem Computer zu installieren, auf dem eine geeignete Version von Visual Studio installiert ist, öffnen Sie die VSIX-Datei auf dem Zielcomputer.
 
-## <a name="example-code"></a><a name="example"></a>Beispielcode
+## <a name="example-code"></a><a name="example"></a> Beispielcode
 
 ```csharp
 using System;

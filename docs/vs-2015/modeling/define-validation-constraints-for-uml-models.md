@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547588"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
@@ -27,7 +27,7 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 
  Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Ausführen einer Validierungs Einschränkung
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> Ausführen einer Validierungs Einschränkung
  Führen Sie die Validierungsmethoden zu Testzwecken im Debugmodus aus.
 
 #### <a name="to-test-the-validation-constraint"></a>So testen Sie die Validierungseinschränkung
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.
 
-    - Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts Start oder nur die Option **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname von ist, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Regel:
+    - Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts Start oder nur die Option **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname von ist [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , in der Regel:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - An die Validierungsmethoden sind das richtige `Export` -Attribut und das richtige `ValidationMethod` -Attribut angefügt.
 
-    - `ValidationCategories.Menu`ist im-Argument für das `ValidationMethod` -Attribut enthalten und wird mithilfe von Logical or (&#124;) mit anderen Werten zusammengesetzt.
+    - `ValidationCategories.Menu` ist im-Argument für das `ValidationMethod` -Attribut enthalten und wird mithilfe von Logical or (&#124;) mit anderen Werten zusammengesetzt.
 
     - Die Parameter aller `Import` -Attribute und `Export` -Attribute sind gültig.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Auswerten der Einschränkung
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> Auswerten der Einschränkung
  Die Validierungsmethode sollte bestimmen, ob die anzuwendende Validierungseinschränkung den Wert true oder false hat. Bei "true" soll keine Aktion erfolgen. Bei "false" sollte ein Fehler gemeldet werden, indem die vom `ValidationContext` -Parameter bereitgestellten Methoden verwendet werden.
 
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Koordinieren mehrerer Validierungen
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> Koordinieren mehrerer Validierungen
  Wenn die Validierung aufgerufen wird (z. B. vom Benutzer über ein Diagrammmenü), wird jede Validierungsmethode auf jedes Modellelement angewendet. Dies bedeutet, dass dieselbe Methode für einen einzelnen Aufruf des Validierungsframeworks viele Male auf verschiedene Elemente angewendet werden kann.
 
  Dies stellt ein Problem für Validierungen dar, die sich mit den Beziehungen zwischen Elementen beschäftigen. Sie können z. B. eine Validierung schreiben, die von einem Anwendungsfall ausgeht und die **include** -Beziehungen durchläuft, um sicherzustellen, dass keine Schleifen vorhanden sind. Wenn die Methode jedoch auf jeden Anwendungsfall in einem Modell angewendet wird, das über viele **include** -Links verfügt, ist es wahrscheinlich, dass immer die gleichen Bereiche des Modells verarbeitet werden.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Abrufen eines Werts.|
 |`Context.GetValue<T>()`|Abrufen eines Werts des angegebenen Typs|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung
  Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.
 
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c11c952223854ff1b4b963e24615e7abe831496
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669867"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Bereitstellen einer Ebenenmodellerweiterung
@@ -29,9 +29,9 @@ Andere Benutzer von Visual Studio können Ebenenmodellierungserweiterungen insta
 
 #### <a name="to-install-the-extension"></a>So installieren Sie die Erweiterung
 
-1. Öffnen Sie im Projekt, das die **Quelle. VSIX. Manifest**enthält, **bin \\ \\** * im Datei-Explorer.
+1. Öffnen Sie im Projekt, das **Source. VSIX. Manifest**enthält **, \\ \\ bin*** im Datei-Explorer.
 
-2. Kopieren Sie die Datei **\*. vsix** auf den Computer, auf dem Sie die Erweiterung installieren möchten.
+2. Kopieren Sie die ** \* VSIX** -Datei auf den Computer, auf dem Sie die Erweiterung installieren möchten.
 
 3. Doppelklicken Sie auf dem Zielcomputer auf die VSIX-Datei in Windows-Explorer.
 
@@ -44,9 +44,9 @@ Andere Benutzer von Visual Studio können Ebenenmodellierungserweiterungen insta
 2. Klicken Sie auf den Namen der Erweiterung, und klicken Sie dann auf **deinstallieren**.
 
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Installieren einer Erweiterung auf einem Team Foundation Build-Server
- Auf [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]-Servern ist Visual Studio normalerweise nicht installiert, daher können Sie VSIX nicht durch Doppelklicken installieren. Die Installation von [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] schließt einige Komponenten ein, die das Ausführen einer VSIX-Erweiterung ermöglichen, Sie müssen die Erweiterung jedoch manuell installieren.
+ [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] auf den Servern ist Visual Studio normalerweise nicht installiert, und Sie können die VSIX nicht installieren, indem Sie darauf doppelklicken. Die Installation von [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] schließt einige Komponenten ein, die das Ausführen einer VSIX-Erweiterung ermöglichen, Sie müssen die Erweiterung jedoch manuell installieren.
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>So installieren Sie die Ebenenerweiterung auf einem [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]-Server
+#### <a name="to-install-your-layer-extension-on-a-esprbuild-server"></a>So installieren Sie die Ebenenerweiterung auf einem [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]-Server
 
 1. Kopieren Sie die **VSIX** -Dateien vom Entwicklungs Computer auf den [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Computer.
 
@@ -75,4 +75,4 @@ Andere Benutzer von Visual Studio können Ebenenmodellierungserweiterungen insta
 
     3. Löschen Sie die ZIP-Datei.
 
-3. Starten Sie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]neu.
+3. Starten Sie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] neu.

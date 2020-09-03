@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59cc8536707744543490bc3e91b85545e4cd4007
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668852"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Gewusst wie: Verwalten des Zeilenumbruchs im Editor
@@ -28,7 +28,7 @@ Sie können die Option **Zeilenumbruch** aktivieren und deaktivieren. Wenn diese
  Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der **Hilfe** beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Die angezeigten Dialogfelder und Menübefehle können sich von den in der **Hilfe** beschriebenen abhängig von den aktiven Einstellungen oder der Version unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="procedure"></a>Prozedur
 
@@ -51,5 +51,5 @@ Sie können die Option **Zeilenumbruch** aktivieren und deaktivieren. Wenn diese
     > [!NOTE]
     > Diese Markierungspfeile werden nicht in Ihren Code eingefügt, sie dienen lediglich der Anzeige.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Anpassen des Editor](../../ide/customizing-the-editor.md) -Dialog Felds " [Text-Editor-Optionen](../../ide/reference/text-editor-options-dialog-box.md) " Schreiben von [Code](../../ide/writing-code-in-the-code-and-text-editor.md)

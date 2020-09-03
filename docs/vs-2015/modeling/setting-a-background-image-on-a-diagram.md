@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671209"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
@@ -21,7 +21,7 @@ ms.locfileid: "72671209"
 
 Im Visualisierungs- und Modellierungs-SDK von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
 
-## <a name="setting-the-background-image"></a>Festlegen des Hintergrundbildes
+## <a name="setting-the-background-image"></a>Hintergrundbild festlegen
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>So legen Sie ein Hintergrundbild für einen generierten Designer fest
 
@@ -57,7 +57,7 @@ Im Visualisierungs- und Modellierungs-SDK von [!INCLUDE[vsprvs](../includes/vspr
 
 16. Klicken Sie im Dialogfeld **Neues Element hinzufügen** in der Liste **Vorlagen** auf **Codedatei**.
 
-17. Geben Sie im Feld **Name** `BackgroundImage.cs` ein, und klicken Sie auf **Hinzufügen**.
+17. Geben Sie im Feld **Name den Namen** ein `BackgroundImage.cs` , und klicken Sie auf **Hinzufügen**.
 
 18. Kopieren Sie den folgenden Code in die Datei "BackgroundImage.cs", und passen Sie den Namespace, den Diagrammklassennamen und den Bilddatei-Ressourcennamen an.
 
@@ -104,5 +104,5 @@ Im Visualisierungs- und Modellierungs-SDK von [!INCLUDE[vsprvs](../includes/vspr
 
      Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Definieren von Formen und Connectors](../modeling/defining-shapes-and-connectors.md) [Anpassen von Text-und Bildfeldern](../modeling/customizing-text-and-image-fields.md) [Navigieren in und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md) [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

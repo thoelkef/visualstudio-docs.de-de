@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f620cc2bd189dccf067c6276f760d21cde5cf05e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669515"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML-Dokumenteigenschaften, Eigenschaftenfenster
@@ -26,7 +26,7 @@ Das Fenster **Eigenschaften** enthält grundlegende Informationen über das Doku
 
  **Codierung** Die Zeichencodierung für die Datei. Wenn diese Eigenschaft geändert wird, wird auch das Codierungsattribut für die XML-Deklaration geändert und umgekehrt. Die neue Codierung wird beim Speichern der Datei zum Codieren der Datei verwendet.
 
- **Eingabe** Das Eingabe Dokument, das dem XSLT-Stylesheet zugeordnet ist. Sie wird vom Befehl " **ShowXSLT Output** " verwendet. Ein Dokument kann mithilfe der Schaltfläche zum Durchsuchen ( **...** ) ausgewählt werden.
+ **Eingabe** Das Eingabe Dokument, das dem XSLT-Stylesheet zugeordnet ist. Sie wird vom Befehl " **ShowXSLT Output** " verwendet. Mit der Schaltfläche zum Durchsuchen ( **...** ) kann ein Dokument ausgewählt werden.
 
  Diese Eigenschaft ist nur sichtbar, wenn derzeit eine XSLT-Datei im Editor-Fenster aktiv ist.
 
@@ -34,13 +34,13 @@ Das Fenster **Eigenschaften** enthält grundlegende Informationen über das Doku
 
  Wenn keine Datei angegeben wurde, wird aufgrund des `method`-Attributs für das `xsl:output`-Element, das die Dateierweiterung festlegt, ein Standarddateiname generiert. Die Standarddatei befindet sich im temporären Verzeichnis des aktuellen Benutzers.
 
- **Schemas** Die Schemas, die für die Validierung verwendet werden sollen. Mit der Schaltfläche wird das Dialogfeld **XSD-Schemas** geöffnet, in dem die zu verwendenden Schemas ausgewählt werden können.
+ **Schemas** Die Schemas, die für die Validierung verwendet werden sollen. Die Schaltfläche öffnet das Dialogfeld **XSD-Schemata**, in dem die zu verwendenden Schemata ausgewählt werden können.
 
  Sie können den Pfad zu den Schemata auch eingeben. Wenn mehrere Schemata angegeben sind, muss jeder Schemapfad in doppelte Anführungszeichen eingeschlossen werden.
 
- **Stylesheet** Die XSLT-Datei, die verwendet wird, um das Dokument zu transformieren, wenn der Befehl " **XSLT-Ausgabe anzeigen** " verwendet wird. Wenn dieses Feld leer ist, wenn der Befehl **XSLT-Ausgabe anzeigen** verwendet wird, verwendet der Editor den Wert, der in der `xml-stylesheet` Verarbeitungsanweisung des Dokuments bereitgestellt wird, oder Sie werden zur Eingabe des Datei namens aufgefordert.
+ **Stylesheet** Die XSLT-Datei, die verwendet wird, um das Dokument zu transformieren, wenn der Befehl " **XSLT-Ausgabe anzeigen** " verwendet wird. Wenn dieses Feld leer ist, wenn der Befehl **XSLT-Ausgabe anzeigen** verwendet wird, verwendet der Editor den in der `xml-stylesheet` Verarbeitungsanweisung des Dokuments bereitgestellten Wert, oder Sie werden aufgefordert, den Dateinamen einzugeben.
 
  Wenn Sie eine XSLT-Datei bearbeiten, kann diese Eigenschaft verwendet werden, um anzugeben, dass ein anderes Stylesheet verwendet werden soll, wenn der Befehl **XSLT-Ausgabe anzeigen** oder **XSLT Debuggen** ausgewählt ist. Dies kann z. B. beim Bearbeiten eines Stylesheets der Fall sein, das in einem übergeordneten Stylesheet enthalten ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  XML-Editor- [Komponenten](../xml-tools/xml-editor-components.md) in [XML](../xml-tools/xml-editor.md)

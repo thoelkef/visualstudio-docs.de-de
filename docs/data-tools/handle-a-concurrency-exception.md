@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282357"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
@@ -206,12 +206,12 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 8. Ändern Sie im ersten Datensatz im Formular (**ALFKI**) **ContactName** in **Maria Anders1**.
 
-9. Wählen Sie die Schaltfläche **Speichern** aus.
+9. Klicken Sie auf die Schaltfläche **Speichern**.
 
      Der Parallelitätsfehler wird ausgelöst, und das Meldungsfeld wird angezeigt.
 
    Wenn Sie **Nein** auswählen, wird das Update abgebrochen, und das DataSet wird mit den Werten aktualisiert, die derzeit in der Datenbank gespeichert sind. Wenn Sie **Ja** auswählen, wird der vorgeschlagene Wert in die Datenbank geschrieben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cc49b096bc22a7f95ee1a95e7cbd0b1f2f8603cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669432"
 ---
 # <a name="xml-editor"></a>XML-Editor
@@ -41,7 +41,7 @@ Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-V
 
 - Integration in den [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Der Explorer bietet eine hierarchische Ansicht von XML-Schemas.
 
-  Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, z. b. XML,. xsd,. xsl und. config. Sie wird auch für eine unbekannte Dateierweiterung aufgerufen, wenn die Datei anscheinend XML enthält. Sie können auch eine beliebige Datei mit dem XML-Editor öffnen, indem Sie die Option **Öffnen mit** verwenden und den XML-Editor aus der Liste auswählen.
+  Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, z. b.. XML,. xsd,. xsl und. config. Sie wird auch für eine unbekannte Dateierweiterung aufgerufen, wenn die Datei anscheinend XML enthält. Sie können auch eine beliebige Datei mit dem XML-Editor öffnen, indem Sie die Option **Öffnen mit** verwenden und den XML-Editor aus der Liste auswählen.
 
 ## <a name="express-editions"></a>Express Editions
  Die folgenden XML-Editor-Funktionen sind in Visual Studio Express-Editionen nicht verfügbar:
@@ -72,5 +72,5 @@ Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-V
 
  [XML-Standard Referenz](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Bietet Informationen über XML-Technologien, einschließlich XML, Dokumenttyp Definition (DTD), XML Schema Definition Language (XSD) und XSLT.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

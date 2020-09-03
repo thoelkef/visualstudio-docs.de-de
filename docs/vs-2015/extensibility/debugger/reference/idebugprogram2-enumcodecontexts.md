@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Microsoft-Dokumentation
+title: 'IDebugProgram2:: enumcodekontexte | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 26bd68764b94aadccb796f33d127ba159e9c3727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202762"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft eine Liste der Codekontexte für eine bestimmte Position in einer Quelldatei.  
+Ruft eine Liste der Code Kontexte für eine angegebene Position in einer Quelldatei ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,18 +42,18 @@ int EnumCodeContexts( 
   
 #### <a name="parameters"></a>Parameter  
  `pDocPos`  
- [in] Ein [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) Objekt, das eine abstrakte Position in einer Quelldatei bekannt, dass die IDE darstellt.  
+ in Ein [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) -Objekt, das eine abstrakte Position in einer Quelldatei darstellt, die der IDE bekannt ist.  
   
  `ppEnum`  
- [out] Gibt eine [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) -Objekt, das eine Liste der Codekontexte enthält.  
+ vorgenommen Gibt ein [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) -Objekt zurück, das eine Liste der Code Kontexte enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Mit dieser Methode können die Sitzung-Debug-Manager (SDM) oder eine IDE, um eine Quelle Dateiposition an einer Position Code zuzuordnen. Mehr als einem Codekontext wird zurückgegeben, wenn die Quelle mehrere Blöcke von Code (z. B. C++-Vorlagen) generiert.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode ermöglicht dem sitzungsdebug-Manager (SDM) oder der IDE, eine Quelldatei Position einer Code Position zuzuordnen. Wenn die Quelle mehrere Code Blöcke generiert (z. b. C++-Vorlagen), wird mehr als ein Code Kontext zurückgegeben.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

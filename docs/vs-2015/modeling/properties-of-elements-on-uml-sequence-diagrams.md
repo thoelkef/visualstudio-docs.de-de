@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d0753ea7396c9f21addcbb01ab7b90be066356a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671428"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Eigenschaften von Elementen in UML-Sequenzdiagrammen
@@ -32,23 +32,23 @@ Jedes Element in einem UML-Diagramm hat Eigenschaften. Um die Eigenschaften eine
 
 ## <a name="properties-of-elements"></a>Eigenschaften von Elementen
 
-|property|Default|Element|Beschreibung|
+|Eigenschaft|Standard|Element|BESCHREIBUNG|
 |--------------|-------------|-------------|-----------------|
-|**Name**|Ein Standardname|Alle|Bezeichnet das Element.|
-|**Qualifizierter Name**|Paket :: Name|Alle|Bezeichnet das Element eindeutig. Mit dem qualifizierten Namen des Pakets, das es enthält, als Präfix.|
-|**Arbeitselemente**|0 zugeordnet|Alle|Die Anzahl von Arbeitsaufgaben, die diesem Element zugeordnet sind. Informationen zum Zuordnen von Arbeitsaufgaben finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).|
-|**Beschreibung**|(leer)|Alle|Sie können hier allgemeine Hinweise zum Element angeben.|
+|**Name**|Ein Standardname|All|Bezeichnet das Element.|
+|**Qualifizierter Name**|Paket :: Name|All|Bezeichnet das Element eindeutig. Mit dem qualifizierten Namen des Pakets, das es enthält, als Präfix.|
+|**Arbeitselemente**|0 zugeordnet|All|Die Anzahl von Arbeitselemente, die diesem Element zugeordnet sind. Informationen zum Zuordnen von Arbeitsaufgaben finden Sie unter [Verknüpfen von Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).|
+|**Beschreibung**|(leer)|All|Sie können hier allgemeine Hinweise zum Element angeben.|
 |**Farbe**|(Standard für Elementtyp)|Lebenslinie, Meldung|Die Farbe der Form. Dies ist eine Eigenschaft der Form und nicht des angezeigten Elements.|
 |**Type**|(leer)|Lebenslinie|Der Typ der Instanz, die die Lebenslinie darstellt.<br /><br /> Wird in der Kopfzeile der Lebenslinie ein Referenzsymbol angezeigt, ist diese Klasse oder Schnittstelle separat im UML-Modell-Explorer vorhanden und kann in einem Klassendiagramm angezeigt werden.|
-|**Teurs**|False|Lebenslinie|Gibt an, ob die Lebenslinie einen Benutzer, ein Gerät oder eine Softwarekomponente außerhalb der Komponente, mit der sich das Diagramm befasst, darstellt.|
-|**Art**|**Complete** : eine Nachricht, die Absender und Empfänger enthält.<br /><br /> **Gefunden** -eine Meldung mit einem nicht angegebenen Absender.<br /><br /> **Lost** -eine Nachricht, die einen nicht angegebenen Empfänger aufweist.|Nachricht|Gibt an, welche Endungen einer Meldung an eine Lebenslinie angefügt sind.<br /><br /> Diese Eigenschaft kann nicht geändert werden. Sie wird festgelegt, wenn Sie die Meldung erstellen.|
-|**Gefährtin**|**AsynchCall, eine asynchrone** Meldung.<br /><br /> **Synchroncalla** : eine synchrone Meldung.<br /><br /> **Reply** -der Rückgabe Teil einer synchronen Nachricht.<br /><br /> " **Kreatemess** ": eine Meldung zur Instanzerstellung.|Nachricht|Der Typ der Meldung. Diese Eigenschaft kann nicht geändert werden. Sie wird durch das Tool bestimmt, das Sie verwenden, um die Meldung zu erstellen.|
-|**Vorgang**|(leer)|Nachricht|Eine Methode, die von der Meldung in der empfangenden Lebenslinie aufgerufen wird.<br /><br /> Nur sichtbar, wenn die empfangende Lebenslinie mit einer Schnittstelle oder einer Klasse verknüpft ist.|
+|**Actor** (Schauspieler)|Falsch|Lebenslinie|Gibt an, ob die Lebenslinie einen Benutzer, ein Gerät oder eine Softwarekomponente außerhalb der Komponente, mit der sich das Diagramm befasst, darstellt.|
+|**Kind**|**Complete** : eine Nachricht, die Absender und Empfänger enthält.<br /><br /> **Gefunden** -eine Meldung mit einem nicht angegebenen Absender.<br /><br /> **Lost** -eine Nachricht, die einen nicht angegebenen Empfänger aufweist.|`Message`|Gibt an, welche Endungen einer Meldung an eine Lebenslinie angefügt sind.<br /><br /> Diese Eigenschaft kann nicht geändert werden. Sie wird festgelegt, wenn Sie die Meldung erstellen.|
+|**Sort**|**AsynchCall, eine asynchrone** Meldung.<br /><br /> **Synchroncalla** : eine synchrone Meldung.<br /><br /> **Reply** -der Rückgabe Teil einer synchronen Nachricht.<br /><br /> " **Kreatemess** ": eine Meldung zur Instanzerstellung.|`Message`|Der Typ der Meldung. Diese Eigenschaft kann nicht geändert werden. Sie wird durch das Tool bestimmt, das Sie verwenden, um die Meldung zu erstellen.|
+|**Vorgang**|(leer)|`Message`|Eine Methode, die von der Meldung in der empfangenden Lebenslinie aufgerufen wird.<br /><br /> Nur sichtbar, wenn die empfangende Lebenslinie mit einer Schnittstelle oder einer Klasse verknüpft ist.|
 |**Bezieht sich auf**|Ein Sequenzdiagramm|Interaktionsverwendung|Das von dieser Interaktionsverwendung aufgerufene Sequenzdiagramm.|
-|**Interaktions Operator**|Festlegen, wenn Sie den Befehl **Umschließen mit** verwendet haben|Kombiniertes Fragment|Der Operator, der durch dieses Fragment oder die Auflistung von Fragmenten dargestellt wird.|
+|**Interaktionsoperator**|Festlegen, wenn Sie den Befehl **Umschließen mit** verwendet haben|Kombiniertes Fragment|Der Operator, der durch dieses Fragment oder die Auflistung von Fragmenten dargestellt wird.|
 |**Torschütze**|(leer)|Interaktionsoperand in einem kombinierten Fragment|Die Sequenz im Fragment erfolgt nur, wenn der Wächter auf „true“ festgelegt ist.<br /><br /> Um das oberste Fragment eines beliebigen kombinierten Fragments auszuwählen, klicken Sie unterhalb des Fragmenttitels.|
 |**Min., max.**|(keine Einschränkung)|Kombiniertes Loop-Fragment|Die minimale und maximale Anzahl an Malen, die die Schleife ausgeführt wird.|
 |**Meldungen**|(leer)|Kombinierte Consider- und<br /><br /> Ignore-Fragmente|Die Meldungen, die in diesem Fragment berücksichtigt oder ignoriert werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md) UML-Sequenzdiagramme [: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md) [beschreiben die Ablauf Steuerung mit Fragmenten in UML-Sequenzdiagrammen](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)

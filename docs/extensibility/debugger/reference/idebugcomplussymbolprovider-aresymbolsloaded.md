@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft Docs
+title: 'Idebugcomplussymbolprovider:: aresymbolsloaded | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734158"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-Bestimmt, ob die Debugsymbole für das angegebene Modul geladen werden, das den Anwendungsdomänenbezeichner erhält.
+Bestimmt, ob die Debugsymbole für das angegebene Modul geladen werden, wenn der Anwendungs Domänen Bezeichner angegeben ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,16 +42,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Bezeichner für die Anwendungsdomäne.
+in Der Bezeichner für die Anwendungsdomäne.
 
 `guidModule`\
-[in] Eindeutiger Bezeichner für das Modul.
+in Eindeutiger Bezeichner für das Modul.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn die Debugsymbole geladen `S_OK`werden, gibt zurück ; Andernfalls kehrt `S_FALSE`zurück .
+Wenn die Debugsymbole geladen werden, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben `S_FALSE` .
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(

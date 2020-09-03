@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f759ea679af818d85dd365f5615ce4fc664df89a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200741"
 ---
-# <a name="markerserieswritemessage-method"></a>marker_series::write_message-Methode
+# <a name="marker_serieswrite_message-method"></a>marker_series::write_message-Methode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht  
@@ -60,10 +60,10 @@ void write_message(
  `_Category`  
  Kategorie.Wichtigkeitsstufe  
   
-## <a name="requirements"></a>Requirements (Anforderungen)  
+## <a name="requirements"></a>Anforderungen  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [marker_series-Klasse](../profiling/marker-series-class.md)

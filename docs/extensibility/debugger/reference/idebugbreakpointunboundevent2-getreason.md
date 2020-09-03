@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
+title: 'IDebugBreakpointUnboundEvent2:: geverrat | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734722"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Ruft den Grund ab, warum der Haltepunkt ungebunden war.
+Ruft den Grund für die Bindung des Breakpoints ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>Parameter
 `pdwUnboundReason`\
-[out] Gibt einen Wert [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) aus der BP_UNBOUND_REASON-Enumeration zurück, der den Grund für die Ungebundenheit des Haltepunkts angibt.
+vorgenommen Gibt einen Wert aus der [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) -Enumeration zurück, die den Grund für die Bindung des Breakpoints angibt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
-Gründe sind die Erneutkeit eines Haltepunkts an eine andere Position nach einem Bearbeitungs- und Weitervorgang oder die Feststellung, dass ein Haltepunkt irrtümlich gebunden wurde.
+Gründe hierfür sind, dass ein Haltepunkt nach einem Vorgang zum Bearbeiten und fortfahren an einen anderen Speicherort zurückgesetzt wird oder ob ein Haltepunkt fehlerhaft ist.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CBreakpointUnboundDebugEventBase-Objekt** implementiert wird, das die [IDebugBreakpointUnboundEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cbreakpointunbounddebugeventbase** -Objekt implementiert wird, das die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(

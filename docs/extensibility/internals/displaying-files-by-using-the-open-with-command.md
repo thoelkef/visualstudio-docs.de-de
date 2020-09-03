@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Dateien mithilfe des Befehls Öffnen mit | Microsoft Docs
+title: Anzeigen von Dateien mit dem Befehl "Öffnen mit" | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,25 +13,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708581"
 ---
-# <a name="display-files-by-using-the-open-with-command"></a>Anzeigen von Dateien mithilfe des Befehls "Mit öffnen"
-Ein Projekt kann die IDE auffordern, das Dialogfeld **Öffnen mit** anzuzeigen. Diese Anforderung fordert den Benutzer auf, eine Datei mit einer Auswahl an Standard-Editoren zu öffnen. Die folgenden Schritte beschreiben diesen Prozess:
+# <a name="display-files-by-using-the-open-with-command"></a>Anzeigen von Dateien mit dem Befehl "Öffnen mit"
+Ein Projekt kann die IDE bitten, das Dialogfeld **Öffnen mit** anzuzeigen. Diese Anforderung fordert den Benutzer auf, eine Datei zu öffnen, die über eine Auswahl von Standard-Editoren verfügt. Dieser Prozess wird in den folgenden Schritten beschrieben:
 
-1. Das Projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>ruft auf, `OSE_UseOpenWithDialog` und `OSEOpenDocEditor` gibt einen Wert von für den Parameter an.
+1. Das Projekt ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> auf und gibt den Wert `OSE_UseOpenWithDialog` für den- `OSEOpenDocEditor` Parameter an.
 
-2. Basierend auf der Dateinamenerweiterung des Dokuments bestimmt die IDE, welche in der Registrierung aufgeführten Editoren das angegebene Dokument öffnen können, und zeigt diese Informationen im Dialogfeld **Öffnen** mit an.
+2. Basierend auf der Dateinamenerweiterung des Dokuments bestimmt die IDE, welche Editoren in der Registrierung das angegebene Dokument öffnen können. diese Informationen werden im Dialogfeld **Öffnen mit** angezeigt.
 
     > [!NOTE]
-    > Projekte mit einem intrinsischen Editor, die in das Dialogfeld **"Mit öffnen"** aufgenommen werden müssen, müssen für jeden dieser Editoreine eine Editorfactory registrieren. Intrinsische Editoren funktionieren nur zusammen mit einem bestimmten <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> Projekttyp, der bei der Implementierung der Methode erzwungen wird. Die IDE verfügt über eine integrierte Editorfactory für den Kerntexteditor und den Binäreditor. Die IDE erstellt auch eine Instanz einer Editorfactory im Namen jeder registrierten Windows-Dateizuordnung. Ein Beispiel für eine solche Datei ist Microsoft Word.
+    > Projekte mit einem intrinsischen Editor, der in das Dialogfeld **Öffnen mit** eingeschlossen werden muss, müssen für jeden Editor eine Editorfactory registrieren. Intrinsische Editoren funktionieren nur in Verbindung mit einem bestimmten Projekttyp, der in der Implementierung der-Methode erzwungen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> . Die IDE verfügt über eine integrierte Editorfactory für den Core-Text-Editor und den Binär-Editor. Die IDE erstellt außerdem eine Instanz einer Editorfactory im Namen jeder registrierten Windows-Datei Zuordnung. Ein Beispiel für eine solche Datei ist Microsoft Word.
 
-3. Sobald der Benutzer ein Element aus dem Dialogfeld **"Mit öffnen"** auswählt, öffnet die IDE das Dokument dann durch Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> der Methode. Weitere Informationen finden Sie unter [Gewusst wie: Öffnen von Standardeditoren](../../extensibility/how-to-open-standard-editors.md).
+3. Sobald der Benutzer im Dialogfeld **Öffnen mit** ein Element auswählt, öffnet die IDE das Dokument durch Aufrufen der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode. Weitere Informationen finden Sie unter Gewusst [wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Weitere Informationen
-- [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)
-- [Anzeigen von Dateien mithilfe des Befehls Datei öffnen](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
-- [Gewusst wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+## <a name="see-also"></a>Siehe auch
+- [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md)
+- [Anzeigen von Dateien mit dem Befehl "Datei öffnen"](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+- [Vorgehensweise: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)

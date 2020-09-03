@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e08821f1289927c4183a1639ae37136c220a88c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670904"
 ---
 # <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
@@ -22,25 +22,25 @@ ms.locfileid: "72670904"
 Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.
 
 ## <a name="to-create-a-new-xml-snippet"></a>So erstellen Sie einen neuen XML-Ausschnitt
- Um einen neuen XML-Code Ausschnitt zu erstellen, erstellen Sie eine neue XML-Datei, und verwenden Sie das Feature " **Ausschnitt einfügen** ".
+ Zum Erstellen eines neuen XML-Ausschnitts erstellen Sie eine neue XML-Datei, und verwenden Sie die Funktion **Ausschnitt einfügen**.
 
-1. Klicken Sie im Menü **Datei** auf **neu** , und klicken Sie dann auf **Datei**.
+1. Klicken Sie im Menü **Datei** auf **Neu**, und klicken Sie anschließend auf **Datei**.
 
-2. Klicken Sie auf **XML-Datei** und dann auf **Öffnen**.
+2. Klicken Sie auf **XML-Datei** und danach auf **Öffnen**.
 
-3. Klicken Sie mit der rechten Maustaste in den Bereich Editor, und wählen Sie **Ausschnitt einfügen**aus.
+3. Klicken Sie mit der rechten Maustaste in den Editorbereich, und wählen Sie **Ausschnitt einfügen** aus.
 
 4. Wählen Sie in der Liste **Ausschnitt** aus, und drücken Sie die EINGABETASTE.
 
 5. Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.
 
-6. Wählen Sie im Menü **Datei** die Option **xmlfile. XML speichern**aus.
+6. Wählen Sie im Menü **Datei** die Option **XMLFile.xml speichern** aus.
 
-     Das Dialogfeld **Datei speichern** unter wird angezeigt.
+     Das Dialogfeld **Datei speichern unter** wird angezeigt.
 
-7. Geben Sie den Namen für den neuen Code Ausschnitt ein, und wählen Sie im Dropdown Fenster **Dateityp** die Option **Ausschnitt Dateien** aus.
+7. Geben Sie den Namen für den neuen Ausschnitt an, und wählen Sie im Dropdownfenster **Datei speichern unter** die Option **Ausschnittdateien** aus.
 
-8. Verwenden Sie die Dropdown Liste **Speichern in** , um den Datei Speicherort in den Ordner My Documents\Visual Studio 2005 \ Code snippeer \ xml\my XML Snippets zu ändern, und klicken Sie dann auf **Save**.
+8. Ändern Sie mithilfe der Dropdownliste von **Speichern in** den Speicherort der Datei in den Ordner Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML Snippets, und klicken Sie anschließend auf **Speichern**.
 
 ## <a name="snippet-description"></a>Ausschnittbeschreibung
  In diesem Abschnitt werden einige Schlüsselelemente im vorformulierten Ausschnitt beschrieben. Weitere Informationen zu Schema Elementen, die von den XML-Ausschnitten verwendet werden, finden Sie unter [Schema Referenz für Code Ausschnitte](../ide/code-snippets-schema-reference.md).
@@ -55,7 +55,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 </SnippetTypes>
 ```
 
- Der `Expansion` Typ bestimmt, ob der Ausschnitt angezeigt wird, wenn Sie den Befehl **Ausschnitt einfügen** aufrufen. Der `SurroundsWith`-Typ bestimmt, ob der Ausschnitt angezeigt wird, wenn Sie den Befehl "umschließen **mit** " aufrufen.
+ Der `Expansion`-Typ bestimmt, ob der Ausschnitt beim Aufrufen des Befehls **Ausschnitt einfügen** angezeigt wird. Der `SurroundsWith`-Typ bestimmt, ob der Ausschnitt beim Aufrufen des Befehls **Umgeben mit** angezeigt wird.
 
 ### <a name="code-element"></a>Codeelement
  Das `Code`-Element definiert den XML-Text, der beim Aufrufen des Ausschnitts eingefügt wird.
@@ -101,7 +101,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 </Literal
 ```
 
- Literale können auch auf Funktionen verweisen. Der XML-Editor enthält eine Funktion mit dem Namen **LookupPrefix**. Die **LookupPrefix** -Funktion sucht den angegebenen Namespace-URI von dem Speicherort im XML-Dokument, von dem aus dieser Ausschnitt aufgerufen wird, und gibt das Namespace Präfix zurück, das für diesen Namespace definiert ist, sofern vorhanden, und enthält den Doppelpunkt (:) in diesem Namen. Im folgenden finden Sie ein Beispiel für ein `Literal`-Element, das die **LookupPrefix** -Funktion verwendet.
+ Literale können auch auf Funktionen verweisen. Der XML-Editor enthält eine Funktion mit dem Namen **LookupPrefix**. Die **LookupPrefix**-Funktion sucht nach dem angegebenen Namespace-URI im Speicherort im XML-Dokument, von dem aus dieser Ausschnitt aufgerufen wurde, und gibt das Namespacepräfix zurück, das für diesen Namespace definiert wurde (falls zutreffend), und fügt den Doppelpunkt (:) in den Namen ein. Es folgt ein Beispiel für ein `Literal`-Element, das die **LookupPrefix**-Funktion verwendet.
 
 ```
 <Literal Editable="false">
@@ -112,5 +112,5 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 
  Die $prefix$-Variable kann anschließend an beliebiger Stelle im XML-Ausschnitt verwendet werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [XML-Ausschnitte](../xml-tools/xml-snippets.md) Gewusst [wie: Verwenden von XML](../xml-tools/how-to-use-xml-snippets.md) -Ausschnitten Gewusst [wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

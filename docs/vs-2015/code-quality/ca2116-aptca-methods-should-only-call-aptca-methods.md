@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 115c0e733716994ba463eada938f8ff908612d0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547757"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|AptcaMethodsShouldOnlyCallAptcaMethods|
 |CheckId|CA2116|
@@ -40,9 +40,9 @@ ms.locfileid: "85547757"
 
  Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist und die Assembly Code in einer anderen Assembly ausführt, die keine teilweise vertrauenswürdigen Aufrufer zulässt, kann eine Sicherheitslücke ausgenutzt werden. Wenn zwei Methoden `M1` und `M2` die folgenden Bedingungen erfüllen, können böswillige Aufrufer die-Methode verwenden, `M1` um den impliziten voll vertrauenswürdigen Link Bedarf zu umgehen, der schützt `M2` :
 
-- `M1`ist eine öffentliche Methode, die in einer voll vertrauenswürdigen Assembly mit dem APTCA-Attribut deklariert ist.
+- `M1` ist eine öffentliche Methode, die in einer voll vertrauenswürdigen Assembly mit dem APTCA-Attribut deklariert ist.
 
-- `M1`Ruft eine Methode `M2` außerhalb `M1` der Assembly auf.
+- `M1` Ruft eine Methode `M2` außerhalb `M1` der Assembly auf.
 
 - `M2`die Assembly verfügt nicht über das APTCA-Attribut und sollte daher nicht von oder im Auftrag von Aufrufern ausgeführt werden, die teilweise vertrauenswürdig sind.
 

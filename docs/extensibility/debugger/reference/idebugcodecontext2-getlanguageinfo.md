@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
+title: 'IDebugCodeContext2:: getlanguageingefo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 465cc07b3ca75835afe0737fb22ba403acc4098b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734241"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
-Ruft die Sprachinformationen für diesen Codekontext ab.
+Ruft die Sprachinformationen für diesen Code Kontext ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ int GetLanguageInfo( 
 
 ## <a name="parameters"></a>Parameter
 `pbstrLanguage`\
-[in, out] Gibt eine Zeichenfolge zurück, die den Namen der Sprache enthält, z. B. "C++".
+[in, out] Gibt eine Zeichenfolge zurück, die den Namen der Sprache enthält, z. b. "C++".
 
 `pguidLanguage`\
-[in, out] Gibt die GUID für die Sprache des `guidCPPLang`Codekontexts zurück, z. B. .
+[in, out] Gibt die GUID für die Sprache des Code Kontexts zurück, z `guidCPPLang` . b..
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

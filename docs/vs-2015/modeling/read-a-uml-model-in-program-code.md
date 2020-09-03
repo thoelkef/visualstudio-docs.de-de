@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bbc55204987f4b6ea0d45c4228f6c194f1ebaf64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671312"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Lesen eines UML-Modells im Programmcode
@@ -23,7 +23,7 @@ ms.locfileid: "72671312"
 
 Sie können mit der UML-API ein UML-Modell und die zugehörigen Diagramme laden.
 
-## <a name="Reading"></a>Lesen eines Modells im Programm Code
+## <a name="reading-a-model-in-program-code"></a><a name="Reading"></a> Lesen eines Modells im Programm Code
  Verwenden Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], um auf den Inhalt eines Modells zuzugreifen, ohne ihn in einem `ModelingProject.LoadReadOnly()`-Fenster anzuzeigen.
 
  Beispiel:
@@ -66,11 +66,11 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ```
 
 ## <a name="alternative-methods"></a>Alternative Methoden
- Für viele Anwendungen können Sie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus auf Modelle und Elemente innerhalb der Anwendungen verweisen, die mehr Stabilität und Flexibilität bieten als die in diesem Thema beschriebenen Methoden. Diese Funktion stellt eine Standardmethode zum Erstellen von Links zwischen beliebigen Elementen im gleichen oder in unterschiedlichen Modellen bereit. Weitere Informationen finden Sie unter [integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+ Bei vielen Anwendungen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie mithilfe von ModelBus auf Modelle und Elemente innerhalb der Anwendungen verweisen, und zwar mit größerer Stabilität und flexibler als mit den in diesem Thema beschriebenen Methoden. Diese Funktion stellt eine Standardmethode zum Erstellen von Links zwischen beliebigen Elementen im gleichen oder in unterschiedlichen Modellen bereit. Weitere Informationen finden Sie unter [integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
  Modelle und Diagramme können auch mithilfe der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-API in der Benutzeroberfläche geöffnet werden. Weitere Informationen finden Sie unter [Öffnen eines UML-Modells mithilfe der Visual Studio-API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
-## <a name="Standalone"></a>Eigenständige Anwendungen
+## <a name="stand-alone-applications"></a><a name="Standalone"></a> Eigenständige Anwendungen
  Das Beispiel im vorhergehenden Abschnitt funktioniert in Visual Studio-Erweiterungen. Es ist möglich, ein Modell in einer eigenständigen Anwendung zu lesen, Sie müssen jedoch einige Verweise auf das [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt hinzufügen.
 
 > [!NOTE]
@@ -104,5 +104,5 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
    - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Programmieren mit der UML-API Erweitern von](../modeling/programming-with-the-uml-api.md) [UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)

@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 858ae1a265b577da8ad151d2cadde641a42f36ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669827"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Bereitstellen von domänenspezifischen Sprachlösungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] müssen bereits auf dem Zielcomputer installiert sein.
+Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss bereits auf dem Zielcomputer installiert sein.
 
 - [MSI- und VSIX-Bereitstellung einer DSL](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
 

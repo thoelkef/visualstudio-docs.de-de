@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670988"
 ---
 # <a name="debugger-user-interface-xslt"></a>Benutzeroberfläche des XSLT-Debuggers
@@ -23,7 +23,7 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 
  Weitere Informationen finden Sie in der [Referenz zur debuggingbenutzerschnittstelle](../debugger/debugging-user-interface-reference.md).
 
-## <a name="locals-window"></a>Lokalfenster
+## <a name="locals-window"></a>Lokal (Fenster)
  Im Lokalfenster werden Informationen zu allen im Stylesheet definierten Variablen angezeigt. Das Lokalfenster enthält drei Spalten mit Informationen:
 
  **Name** Diese Spalte enthält die Namen aller lokalen Variablen im aktuellen Gültigkeitsbereich. Knotengruppen verfügen über eine Strukturansicht, die Sie erweitern können, um die Unterordner anzuzeigen.
@@ -40,7 +40,7 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 |`position()`|Die Position bzw. Indexnummer des Kontextknotens in Bezug auf die Kontextgröße.|
 |`self::node()`|Der Wert des Kontextknotens.|
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Debugger-Kontext ](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).
+ Weitere Informationen finden Sie unter Gewusst [wie: Ändern des debuggerkontexts](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).
 
 ## <a name="output-window"></a>Ausgabefenster
  Im Ausgabefenster werden alle während des Debuggens ausgegebenen Fehlermeldungen und aufgetretenen Sicherheitsausnahmen angezeigt.
@@ -55,7 +55,7 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 > [!NOTE]
 > Der XSLT-Debugger gibt keine Warnungen aus. Daher werden keine Warnungen in der Aufgabenliste angezeigt.
 
-## <a name="breakpoints-window"></a>Fenster "Haltepunkte"
+## <a name="breakpoints-window"></a>Fenster 'Breakpoints'
  Im Fenster Haltepunkte werden alle im aktuellen Projekt festgelegten Haltepunkte angezeigt. Wenn während der Anzeige dieses Fensters ein Haltepunkt hinzugefügt wird, wird das Fenster automatisch aktualisiert, sodass der neue Haltepunkt ebenfalls angezeigt wird.
 
  Das Fenster Haltepunkte weist dasselbe Verhalten wie andere Debuggern von Visual Studio auf.
@@ -63,12 +63,12 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 ## <a name="command-windowimmediate-window"></a>Befehlsfenster/Direktfenster
  In diesem Release des XSLT-Debuggers nicht implementiert.
 
-## <a name="watch-window"></a>Überwachungsfenster
+## <a name="watch-window"></a>Überwachung (Fenster)
  Das Überwachungsfenster wird zum Auswerten der Variablen verwendet. Sie können dort auch die Werte der Variablen ändern.
 
  Die im Überwachungsfenster angezeigten Variablen beziehen sich auf den aktuellen Kontext (auf das oberste Element in der Aufrufliste). Beim Ändern des Kontexts wird das Überwachungsfenster aktualisiert, und es werden die für den betreffenden Kontext festgelegten Variablen angezeigt.
 
-## <a name="call-stack-window"></a>Aufruflistenfenster
+## <a name="call-stack-window"></a>Fenster 'Aufrufliste'
  Im Aufruflistenfenster werden die Namen der Funktionen in der Aufrufliste, die Parametertypen und Parameterwerte angezeigt. Aufruflisteninformationen werden nur angezeigt, wenn sich das derzeit debuggte Programm im Haltezustand befindet.
 
  Die Aufrufliste stellt die verschiedenen Kontexte dar, die bei der XSLT-Ausführung durchlaufen werden. Wenn beispielsweise ein Aufruf der Vorlage "b" von der Vorlage "a" aus erfolgt, werden die Vorlagen "a" und "b" im Aufruflistenfenster mit dem aktuellen Kontext in der Liste an oberster Position angezeigt. Für den Benutzer wird die derzeit ausgeführte Abfrage angezeigt.
@@ -77,8 +77,8 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 
  Wenn auf ein anderes Element als das Element an oberster Position in der Liste geklickt wird, wird dem Betrachter mithilfe der standardmäßigen grünen Hervorhebung und grünen Pfeile angezeigt, welche XSLT-Verzweigung gerade ausgeführt wird.
 
-## <a name="quickwatch-dialog-box"></a>Dialogfeld "Schnellüberwachung"
- Das Dialogfeld **schnell Überwachung** wird verwendet, um XPath 1,0-Ausdrücke auszuwerten. Der Kontextknoten (der `self::node()`-Knoten im Lokalfenster) stellt den Kontext für die Ausführung des XPath-Ausdrucks bereit. Das Ergebnis der Ausführung des XPath-Ausdrucks wird im Überwachungsfenster angezeigt.
+## <a name="quickwatch-dialog-box"></a>Dialogfeld 'Schnellüberwachung'
+ Mithilfe des Dialogfelds **Schnellüberwachung** werden XPath 1.0-Ausdrücke ausgewertet. Der Kontextknoten (der `self::node()`-Knoten im Lokalfenster) stellt den Kontext für die Ausführung des XPath-Ausdrucks bereit. Das Ergebnis der Ausführung des XPath-Ausdrucks wird im Überwachungsfenster angezeigt.
 
  In der folgenden Liste werden einige Einschränkungen für die Auswertung von XPath-Ausdrücken beschrieben.
 
@@ -88,12 +88,12 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 
 - Benutzerdefinierte Funktionen sind nicht zulässig.
 
-  Weitere Informationen finden Sie unter [Vorgehensweise: Wertet einen XPath-Ausdruck ](../xml-tools/how-to-evaluate-an-xpath-expression.md) aus.
+  Weitere Informationen finden Sie unter Gewusst [wie: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Disassemblyfenster
  Im Disassemblyfenster wird der vom XSLT-Compiler generierte Assemblycode angezeigt. Dieser Fenster kann in gleicher Weise wie alle anderen Disassemblyfenster in Visual Studio verwendet werden.
 
- Weitere Informationen [How: Verwenden Sie das Fenster Disassembly ](../debugger/how-to-use-the-disassembly-window.md).
+ Weitere Informationen finden Sie unter Gewusst [wie: Verwenden des Disassemblyfensters](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Debuggen von XSLT](../xml-tools/debugging-xslt.md) - [Debugger-Grundlagen](../debugger/debugger-basics.md) [Variable Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

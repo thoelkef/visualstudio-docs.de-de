@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668778"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das Nachschlagedatenbindung unterstützt
@@ -58,7 +58,7 @@ Zum Anzeigen von Daten in Windows Forms können Sie die in der **Toolbox** vorha
 
 - Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Zugriff auf die Beispieldatenbank Northwind.
@@ -83,7 +83,7 @@ Zum Anzeigen von Daten in Windows Forms können Sie die in der **Toolbox** vorha
 
 1. Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
 
-2. Geben Sie `LookupBox` in den Bereich **Name** ein, und klicken Sie dann auf **Hinzufügen**.
+2. Geben `LookupBox` Sie in den Bereich **Name** ein, und klicken Sie dann auf **Hinzufügen**.
 
      Das **LookupBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
@@ -114,7 +114,7 @@ Zum Anzeigen von Daten in Windows Forms können Sie die in der **Toolbox** vorha
 
 1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus, um den Assistenten zum **Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.
 
@@ -132,7 +132,7 @@ Zum Anzeigen von Daten in Windows Forms können Sie die in der **Toolbox** vorha
 
 8. Wählen Sie die Tabellen `Customers` und `Orders` aus, und klicken Sie dann auf **Fertig stellen**.
 
-     Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im **Datenquellenfenster** angezeigt.
+     Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die `Customers` Tabellen und werden `Orders` im Fenster **Datenquellen** angezeigt.
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Festlegen der Spalte "CustomerID" der Tabelle "Orders" auf die Verwendung des LookupBox-Steuer Elements
  Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Formular festlegen, welches Steuerelement erstellt werden soll.
@@ -160,7 +160,7 @@ Zum Anzeigen von Daten in Windows Forms können Sie die in der **Toolbox** vorha
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Windows Form
 
-- Ziehen Sie den Knoten **Orders** aus dem **Datenquellen** Fenster auf das Windows Form, und überprüfen Sie, ob das **LookupBox** -Steuerelement zum Anzeigen der Daten in der `CustomerID` Spalte verwendet wird.
+- Ziehen Sie den Knoten **Orders** aus dem **Datenquellen** Fenster auf das Windows Form, und überprüfen Sie, ob das **LookupBox** -Steuerelement zum Anzeigen der Daten in der Spalte verwendet wird `CustomerID` .
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Binden Sie das Steuerelement, um CompanyName aus der Tabelle Customers zu suchen.
 
@@ -178,5 +178,5 @@ Zum Anzeigen von Daten in Windows Forms können Sie die in der **Toolbox** vorha
 
 - Navigieren Sie durch einige Datensätze, und prüfen Sie, ob im `LookupBox`-Steuerelement der Wert von `CompanyName` angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

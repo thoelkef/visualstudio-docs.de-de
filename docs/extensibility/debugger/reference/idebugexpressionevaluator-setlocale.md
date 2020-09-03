@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
+title: 'Idebugexpressionevaluator:: setlocale | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57ddee6e1796159c505b67982f25d1ba09684561
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729471"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-Diese Methode legt die Sprache fest, die zum Erstellen druckbarer Ergebnisse verwendet werden soll.
+Diese Methode legt die Sprache fest, die zum Erstellen von druckbaren Ergebnissen verwendet werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int SetLocale(
 
 ## <a name="parameters"></a>Parameter
 `wLangID`\
-[in] Der Sprachbezeichner.
+in Der Sprachen Bezeichner.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode kann mehrmals aufgerufen werden, während der Ausdrucksevaluator (EE) geladen wird, sodass der EE die Sprache spontan wechseln kann. Der EE verwendet dieses Gebietsschema, um Fehlermeldungen und Zeichenfolgen in der entsprechenden Sprache zurückzugeben.
+ Diese Methode wird möglicherweise mehrmals aufgerufen, während die Ausdrucks Auswertung (EE) geladen wird, sodass der EE in der Lage sein muss, die Sprachen im Handumdrehen zu wechseln. Der EE verwendet dieses Gebiets Schema, um Fehlermeldungen und Zeichen folgen in der entsprechenden Sprache zurückzugeben.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

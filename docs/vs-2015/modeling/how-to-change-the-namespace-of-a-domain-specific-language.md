@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b61b248876f701e9d5286063f28b4f71d73e18b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671723"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Gewusst wie: Ändern des Namespace einer domänenspezifischen Sprache
@@ -49,11 +49,11 @@ Sie können den Namespace einer domänenspezifischen Sprache ändern. Sie müsse
 
 10. Setzen Sie die experimentelle Instanz von Visual Studio zurück.
 
-    1. Löschen Sie **\Users \\** _{Your Name}_ **\appdata\local\microsoft\visualstudio \\ \*Exp**
+    1. Löschen Sie **\Users \\ **_{Your Name}_**\appdata\local\microsoft\visualstudio \\ \* Exp** .
 
     2. Wählen Sie im Windows- **Startmenü** **Alle Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**und **die experimentelle Instanz zurücksetzen**aus.
 
 11. Wählen Sie im Menü **Erstellen** die Option Projekt Mappe **neu erstellen**aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
