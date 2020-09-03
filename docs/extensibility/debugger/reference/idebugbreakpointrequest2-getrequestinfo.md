@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: 'IDebugBreakpointRequest2:: getrequestinfo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734939"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-Ruft die Haltepunktanforderungsinformationen ab, die diese Haltepunktanforderung beschreiben.
+Ruft die Haltepunkt-Anforderungs Informationen ab, die diese breakpointanforderung beschreiben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,16 +43,16 @@ int GetRequestInfo( 
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-[in] Eine Kombination von Flags aus der BPREQI_FIELDS-Enumeration, die bestimmt, welche Felder im [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) `pBPRequestInfo` Parameter ausgefüllt werden sollen.
+in Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Enumeration, die bestimmt, welche Felder im `pBPRequestInfo` Parameter ausgefüllt werden sollen.
 
 `pBPRequestInfo`\
-[out] Gibt die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur an, die mit der Beschreibung der Haltepunktanforderung ausgefüllt werden soll.
+vorgenommen Gibt die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur an, die mit der Beschreibung der Breakpoint-Anforderung ausgefüllt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie diese `CDebugBreakpointRequest` Methode für ein einfaches Objekt implementiert wird, das die [IDebugBreakpointRequest2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) verfügbar macht.
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CDebugBreakpointRequest` , das die [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) -Schnittstelle verfügbar macht.
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(

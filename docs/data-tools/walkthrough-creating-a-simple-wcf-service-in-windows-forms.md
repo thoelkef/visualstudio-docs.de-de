@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586015"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Dienstanbieter in Windows Forms
@@ -29,15 +29,15 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="create-a-service"></a>Erstellen eines Diensts
+## <a name="create-a-service"></a>Erstellen von Diensten
 
-1. Öffnen Sie Visual Studio.
+1. Öffnen Sie Visual Studio.
 
 ::: moniker range="vs-2017"
 
-2. Wählen Sie im Menü **Datei** die Option **New** > **Project**aus.
+2. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**  , und wählen Sie **WCF**und dann **WCF-Dienst Bibliothek**aus.
+3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , und wählen Sie **WCF**und dann **WCF-Dienst Bibliothek**aus.
 
 4. Klicken Sie auf **OK**, um das Projekt zu erstellen.
 
@@ -49,7 +49,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Geben Sie im Suchfeld auf der Seite **Neues Projekt erstellen** die **WCF-Dienst Bibliothek** ein. Wählen Sie entweder C# die Vorlage oder Visual Basic Vorlage für **WCF-Dienst Bibliothek**aus, und klicken Sie dann auf **weiter**.
+3. Geben Sie im Suchfeld auf der Seite **Neues Projekt erstellen** die **WCF-Dienst Bibliothek** ein. Wählen Sie entweder die c#-oder Visual Basic Vorlage für die **WCF-Dienst Bibliothek**aus, und klicken Sie dann auf **weiter**.
 
    ![Neues WCF-Dienst Bibliotheksprojekt in Visual Studio 2019 erstellen](media/vs-2019/create-new-wcf-service-library.png)
 
@@ -72,7 +72,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
    [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
    [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
 
-   Ändern Sie den Typ für den `value`-Parameter in "String":
+   Ändern Sie den Typ für den `value` Parameter in Zeichenfolge:
 
    [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
    [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
@@ -88,7 +88,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
    [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
    [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
 
-   Ändern Sie den Typ für den `value`-Parameter in "String":
+   Ändern Sie den Typ für den `value` Parameter in Zeichenfolge:
 
    [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
    [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
@@ -97,9 +97,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 1. Drücken Sie **F5**, um den Dienst auszuführen. Ein **WCF-Test Client** Formular wird angezeigt, und der Dienst wird geladen.
 
-2. Doppelklicken Sie im **WCF-Testclient**-Formular auf die **GetData()** -Methode unter **IService1**. Die Registerkarte **GetData** wird angezeigt.
+2. Doppelklicken Sie im **WCF-Testclient**-Formular auf die **GetData()**-Methode unter **IService1**. Die Registerkarte **GetData** wird angezeigt.
 
-     ![Die GetData&#40; &#41; -Methode](../data-tools/media/wcf4.png)
+     ![Die GetData-&#40;&#41; Methode](../data-tools/media/wcf4.png)
 
 3. Wählen Sie im Feld **Anforderung** das Feld **Wert** aus, und geben Sie `Hello` ein.
 
@@ -115,9 +115,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 ### <a name="reference-the-wcf-service"></a>Verweisen auf den WCF-Dienst
 
-1. Zeigen Sie im Menü **Datei** auf die Option **Hinzufügen**, und klicken Sie anschließend auf **Neues Projekt**.
+1. Zeigen Sie im Menü **Datei** auf **Hinzufügen** , und klicken Sie dann auf **Neues Projekt**.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**  , wählen Sie **Windows**aus, und wählen Sie dann **Windows Forms Anwendung**aus. Klicken Sie auf **OK**, um das Projekt zu öffnen.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , wählen Sie **Windows**aus, und wählen Sie dann **Windows Forms Anwendung**aus. Klicken Sie auf **OK**, um das Projekt zu öffnen.
 
      ![Windows Forms-Anwendungsprojekt](../data-tools/media/wcf7.png)
 
@@ -146,10 +146,10 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **WindowsApplication1**, und klicken Sie auf **Als Startprojekt festlegen**.
 
-5. Drücken Sie **F5**, um das Projekt auszuführen. Geben Sie Text ein, und klicken Sie auf die Schaltfläche. Die Bezeichnung zeigt "Sie haben Sie eingegeben:" und zeigt den Text an, den Sie eingegeben haben.
+5. Drücken Sie **F5** , um das Projekt auszuführen. Geben Sie Text ein, und klicken Sie auf die Schaltfläche. Die Bezeichnung zeigt "Sie haben Sie eingegeben:" und zeigt den Text an, den Sie eingegeben haben.
 
      ![Das Formular mit dem Ergebnis](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

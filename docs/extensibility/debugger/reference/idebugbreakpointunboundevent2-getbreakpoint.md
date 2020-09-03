@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetBreakpoint | Microsoft Docs
+title: 'IDebugBreakpointUnboundEvent2:: getbreakpoint | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6db69becfb16ebabbab782485e170bc761fd4577
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734728"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
-Ruft den Haltepunkt ab, der ungebunden wurde.
+Ruft den Breakpoint ab, der ungebunden wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetBreakpoint(
 
 ## <a name="parameters"></a>Parameter
 `ppBP`\
-[out] Gibt ein [IDebugBoundBreakpoint2-Objekt](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) zurück, das den Haltepunkt darstellt, der ungebunden wurde.
+vorgenommen Gibt ein [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Objekt zurück, das den Breakpoint darstellt, der nicht gebunden wurde.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CBreakpointUnboundDebugEventBase-Objekt** implementiert wird, das die [IDebugBreakpointUnboundEvent2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cbreakpointunbounddebugeventbase** -Objekt implementiert wird, das die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(

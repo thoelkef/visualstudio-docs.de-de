@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282929"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Binden von Objekten als Datenquellen in Visual Studio
@@ -134,7 +134,7 @@ Speichern Sie die Daten wieder in der Datenbank, indem Sie die Werte aus dem-Obj
 
 Visual Studio erstellt DBDirect-Methoden, die direkt für die Datenbank ausgeführt werden können. Für diese Methoden sind keine Datasets oder Daten baren Objekte erforderlich.
 
-|TableAdapter-DBDirect-Methode|Beschreibung|
+|TableAdapter-DBDirect-Methode|BESCHREIBUNG|
 | - |-----------------|
 |`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu, sodass einzelne Spaltenwerte als Methoden Parameter übergeben werden können.|
 |`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die Update-Methode nimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter an. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die- `TableAdapter.Update` Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein-,-,- <xref:System.Data.DataSet> oder- <xref:System.Data.DataTable> <xref:System.Data.DataRow> Array von <xref:System.Data.DataRow> s als Methoden Parameter verwendet wird.|
@@ -147,6 +147,6 @@ Im folgenden Beispiel wird gezeigt, wie die `TableAdapter.Insert` DBDirect-Metho
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

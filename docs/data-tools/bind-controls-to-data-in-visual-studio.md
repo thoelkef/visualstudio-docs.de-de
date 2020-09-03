@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283033"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
@@ -66,7 +66,7 @@ In der folgenden Tabelle sind einige der gängigsten Aufgaben aufgeführt, die S
 |Filtern von Daten, die in der Benutzeroberfläche angezeigt werden.|[Filtern und Sortieren von Daten in einer Windows Forms-Anwendung](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Anpassen von Untertiteln für Steuerelemente.|[Gewusst wie: Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Datenbindung Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)

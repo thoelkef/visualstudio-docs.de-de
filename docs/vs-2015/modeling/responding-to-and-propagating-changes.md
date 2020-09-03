@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b216e89e6a04fb38537f9c45336d07cf6df4abdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671268"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagieren auf und Propagieren von Änderungen
@@ -26,7 +26,7 @@ Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code sc
 ## <a name="in-this-section"></a>In diesem Abschnitt
  Beachten Sie als Richtlinie diese Verfahren in der folgenden Reihenfolge:
 
-|Fahr|Szenarien|Weitere Informationen|
+|Verfahren|Szenarien|Weitere Informationen finden Sie unter|
 |---------------|---------------|--------------------------|
 |Definieren Sie eine berechnete Domänen Eigenschaft.|Eine Domänen Eigenschaft, deren Wert aus anderen Eigenschaften im Modell berechnet wird. Beispielsweise ein Preis, der die Summe der Preise für verwandte Elemente ist.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|
 |Definieren Sie eine benutzerdefinierte Speicher Domänen Eigenschaft.|Eine Domänen Eigenschaft, die in anderen Teilen des Modells oder extern gespeichert ist. Beispielsweise können Sie eine Ausdrucks Zeichenfolge in eine Struktur im Modell analysieren.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|
@@ -47,11 +47,11 @@ Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code sc
 
 - **Erstellen von benutzerdefinierten Regeln** Sie erstellen eine benutzerdefinierte Regel als abgeleitete Klasse aus einer abstrakten Regel. Außerdem müssen Sie das Framework über die benutzerdefinierte Regel informieren. Weitere Informationen finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
 
-- **Abonnieren von Ereignissen** Bevor Sie ein Ereignis abonnieren können, erstellen Sie einen Ereignishandler und einen Delegaten. Verwenden Sie dann die <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property, um das Ereignis zu abonnieren. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Abonnieren von Ereignissen** Bevor Sie ein Ereignis abonnieren können, erstellen Sie einen Ereignishandler und einen Delegaten. Verwenden Sie dann die- <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A> Eigenschaft, um das-Ereignis zu abonnieren. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 - **Änderungen werden nicht mehr** ausgeführt Wenn Sie eine Transaktion rückgängig machen, werden Ereignisse ausgelöst, aber Regeln werden nicht angewendet. Wenn eine Regel einen Wert ändert und Sie diese Änderung rückgängig machen, wird der Wert während der Rückgängig-Aktion auf den ursprünglichen Wert zurückgesetzt. Wenn ein Ereignis ausgelöst wird, müssen Sie den Wert manuell auf seinen ursprünglichen Wert zurücksetzen. Weitere Informationen zu transactons und zum Rückgängigmachen finden Sie unter Gewusst [wie: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 - **Übergeben von Ereignis Argumenten an Regeln und Ereignisse** An Ereignisse und Regeln wird ein `EventArgs` Parameter übergeben, der Informationen über die Änderung des Modells enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Gewusst [wie: Abfangen eines Klick auf eine Form oder einen Decorator, der](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) [Code zum Anpassen einer domänenspezifischen Sprache schreibt](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7371e08925ad9227cf15a93a339e6e0ed36d11db
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282851"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
@@ -56,7 +56,7 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 - Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Entity Framework Übersicht](/dotnet/framework/data/adonet/ef/overview).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über die Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Erstellen des Dienst Projekts
 
@@ -193,7 +193,7 @@ Erstellen Sie Steuerelemente, die Kundendaten Sätze anzeigen, indem `SalesOrder
 
     - **RevisionNumber**
 
-    - **rowguid**
+    - **ROWGUID**
 
     Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. In dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.
 

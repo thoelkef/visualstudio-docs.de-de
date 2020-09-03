@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585296"
 ---
 # <a name="miscellaneous-files"></a>Verschiedene Dateien
@@ -42,7 +42,7 @@ Im Ordner **Verschiedene Dateien** werden die Dateien als Links dargestellt. Obw
 
 ## <a name="commands-available-in-the-ide"></a>In der IDE verfügbare Befehle
 
-Die Menüs und Symbolleisten sowie die darin enthaltenen Befehle ändern sich in Abhängigkeit des Formats der geöffneten Datei. Beispielsweise wird beim Öffnen einer Textdatei die Symbolleiste Text-Editor angezeigt, und die zugehörigen Befehle sind verfügbar. Wenn Sie dann eine XML-Schemadatei öffnen, wird die Symbolleiste {1}XML-Schema{2} angezeigt. Beim Bearbeiten des XML-Schemas sind die Befehle der Symbolleiste {1}Text-Editor{2} (bzw. die Symbolleiste selbst) nicht verfügbar. Das XML-Schema ist das aktive Fenster und weist somit den aktuellen Auswahlkontext auf. Wenn Sie zwischen einer Projektdatei und einer der verschiedenen Dateien wechseln, werden alle projektbezogenen Befehle ausgeblendet. Nur die Befehle, die sich direkt auf die verschiedene Datei beziehen, werden angezeigt.
+Die Menüs und Symbolleisten sowie die darin enthaltenen Befehle ändern sich in Abhängigkeit des Formats der geöffneten Datei. Beispielsweise wird beim Öffnen einer Textdatei die Symbolleiste Text-Editor angezeigt, und die zugehörigen Befehle sind verfügbar. Wenn Sie dann eine XML-Schemadatei öffnen, wird die Symbolleiste XML-Schema angezeigt. Beim Bearbeiten des XML-Schemas sind die Befehle der Symbolleiste Text-Editor (bzw. die Symbolleiste selbst) nicht verfügbar. Das XML-Schema ist das aktive Fenster und weist somit den aktuellen Auswahlkontext auf. Wenn Sie zwischen einer Projektdatei und einer der verschiedenen Dateien wechseln, werden alle projektbezogenen Befehle ausgeblendet. Nur die Befehle, die sich direkt auf die verschiedene Datei beziehen, werden angezeigt.
 
 ## <a name="folder-display-options"></a>Anzeigeoptionen für Ordner
 
@@ -52,4 +52,4 @@ Sie können die Anzeigeoptionen für den Ordner **Verschiedene Dateien** so fest
 
 - [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Projektmappen und Projekte](../../ide/solutions-and-projects-in-visual-studio.md)
-- [Dokumente, Umgebung, Dialogfeld "Optionen"](../../ide/reference/documents-environment-options-dialog-box.md)
+- [Dokumente, Umgebung, Dialogfeld „Optionen“](../../ide/reference/documents-environment-options-dialog-box.md)

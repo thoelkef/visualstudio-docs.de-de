@@ -1,5 +1,5 @@
 ---
-title: Eliminierung von SAK-Dateien | Microsoft Docs
+title: Beseitigung von ~ Sak-Dateien | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,25 +13,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708504"
 ---
-# <a name="elimination-of-sak-files"></a>Eliminierung von SAK-Dateien
-In der Quellcodeverwaltungs-Plug-In-API 1.2 wurden die *Dateien "SAK"* durch Funktionsflags und neue Funktionen ersetzt, die erkennen, ob ein Quellcodeverwaltungs-Plug-In die *MSSCCPRJ-Datei* und freigegebene Auschecken unterstützt.
+# <a name="elimination-of-sak-files"></a>Beseitigung von ~ Sak-Dateien
+In der Quellcodeverwaltungs-Plug-in-API 1,2 wurden die *~ Sak* -Dateien durch funktionsflags und neue Funktionen ersetzt, die erkennen, ob ein Quellcodeverwaltungs-Plug-in die *Mssccprj* -Datei und freigegebene Auscheck Vorgänge unterstützt.
 
-## <a name="sak-files"></a>SAK-Dateien
-Visual Studio .NET 2003 erstellte temporäre Dateien mit dem Präfix *"SAK*" . Diese Dateien werden verwendet, um zu bestimmen, ob ein Quellcodeverwaltungs-Plug-In unterstützt:
+## <a name="sak-files"></a>~ Sak-Dateien
+Visual Studio .NET 2003 hat temporäre Dateien mit dem Präfix *~ Sak*erstellt. Diese Dateien werden verwendet, um zu bestimmen, ob ein Quellcodeverwaltungs-Plug-in Folgendes unterstützt:
 
-- Die *MsSCCPRJ.SCC-Datei.*
+- Die *Mssccprj. SCC* -Datei.
 
-- Mehrere (gemeinsame) Checkouts.
+- Mehrere (freigegebene) Checkouts.
 
-Bei Plug-Ins, die erweiterte Funktionen unterstützen, die in der Quellcodeverwaltungs-Plug-In-API 1.2 bereitgestellt werden, kann die IDE diese Funktionen erkennen, ohne die temporären Dateien mithilfe neuer Funktionen, Flags und Funktionen zu erstellen, die in den folgenden Abschnitten beschrieben werden.
+Für Plug-ins, die erweiterte Funktionen unterstützen, die in der Quellcodeverwaltungs-Plug-in-API 1,2 bereitgestellt werden, kann die IDE diese Funktionen erkennen, ohne die temporären Dateien durch die Verwendung neuer Funktionen, Flags und Funktionen zu erstellen, die in den folgenden Abschnitten beschrieben werden.
 
-## <a name="new-capability-flags"></a>Neue Funktionsflags
+## <a name="new-capability-flags"></a>Neue funktionsflags
  `SCC_CAP_SCCFILE`
 
  `SCC_CAP_MULTICHECKOUT`
@@ -41,14 +41,14 @@ Bei Plug-Ins, die erweiterte Funktionen unterstützen, die in der Quellcodeverwa
 
 - [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)
 
- Wenn ein Quellcodeverwaltungs-Plug-In mehrere (gemeinsame) Auscheckungen `SCC_CAP_MULTICHECKOUT` unterstützt, deklariert `SccIsMultiCheckOutEnabled` es die Funktion und implementiert die Funktion. Diese Funktion wird aufgerufen, wenn ein Auscheckvorgang für eines der von der Quelle kontrollierten Projekte auftritt.
+ Wenn ein Quellcodeverwaltungs-Plug-in mehrere (freigegebene) Checkouts unterstützt, deklariert es die `SCC_CAP_MULTICHECKOUT` Funktion und implementiert die- `SccIsMultiCheckOutEnabled` Funktion. Diese Funktion wird immer dann aufgerufen, wenn ein Auscheck Vorgang für eines der Projekte mit Quell Code Verwaltung ausgeführt wird.
 
- Wenn ein Quellcodeverwaltungs-Plug-In die Erstellung und Verwendung einer *MSSCCPRJ.SCC-Datei* unterstützt, deklariert es die `SCC_CAP_SCCFILE` Funktion und implementiert die [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Diese Funktion wird mit einer Liste von Dateien aufgerufen. Die Funktion `TRUE' or 'FALSE` gibt für jede Datei zurück, um anzugeben, ob Visual Studio eine *MSSCCPRJ.SCC-Datei* dafür verwenden soll. Wenn das Quellcodeverwaltungs-Plug-In diese neuen Funktionen und Funktionen nicht unterstützt, kann es den folgenden Registrierungsschlüssel verwenden, um die Erstellung dieser Dateien zu deaktivieren:
+ Wenn ein Quellcodeverwaltungs-Plug-in die Erstellung und Verwendung einer *Mssccprj. SCC* -Datei unterstützt, wird die `SCC_CAP_SCCFILE` Funktion deklariert und [sccwillkreatesccfile](../../extensibility/sccwillcreatesccfile-function.md)implementiert. Diese Funktion wird mit einer Liste von Dateien aufgerufen. Die Funktion gibt `TRUE' or 'FALSE` für jede Datei zurück, um anzugeben, ob Visual Studio eine *Mssccprj. SCC* -Datei für Sie verwenden soll. Wenn das Quellcodeverwaltungs-Plug-in diese neuen Funktionen und Funktionen nicht unterstützt, kann der folgende Registrierungsschlüssel verwendet werden, um die Erstellung dieser Dateien zu deaktivieren:
 
- **[HKEY_CURRENT_USER-Software-, Microsoft-VisualStudio-8.0-SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
+ **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] donotkreatetemporaryfilesinsourcecontrol**  =  *DWORD: 00000001*
 
 > [!NOTE]
-> Wenn dieser Registrierungsschlüssel auf *dword:00000000*festgelegt ist, entspricht er dem Nichtexistenten des Schlüssels, und Visual Studio versucht weiterhin, die temporären Dateien zu erstellen. Wenn der Registrierungsschlüssel jedoch auf *dword:00000001*festgelegt ist, versucht Visual Studio nicht, die temporären Dateien zu erstellen. Stattdessen wird davon ausgegangen, dass das Quellcodeverwaltungs-Plug-In die *MSSCCPRJ.SCC-Datei* nicht unterstützt und keine freigegebenen Auschecken unterstützt.
+> Wenn dieser Registrierungsschlüssel auf *DWORD: 00000000*festgelegt ist, entspricht er dem Schlüssel, der nicht vorhanden ist, und Visual Studio versucht weiterhin, die temporären Dateien zu erstellen. Wenn der Registrierungsschlüssel jedoch auf *DWORD: 00000001*festgelegt ist, versucht Visual Studio nicht, die temporären Dateien zu erstellen. Stattdessen wird davon ausgegangen, dass das Quellcodeverwaltungs-Plug-in die Datei " *Mssccprj. SCC* " nicht unterstützt und keine freigegebenen Auscheck Vorgänge unterstützt.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Neuerungen in der Quellcodeverwaltungs-Plug-In-API Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Siehe auch
+- [Neuerungen in der Quellcodeverwaltungs-Plug-in-API, Version 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

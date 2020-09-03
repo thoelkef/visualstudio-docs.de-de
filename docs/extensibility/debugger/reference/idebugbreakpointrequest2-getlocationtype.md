@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
+title: 'IDebugBreakpointRequest2:: getlocationtype | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 06bb64190d6821b05ebd638c753bd2b6d3decf71
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734992"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-Ruft den Haltepunktpositionstyp dieser Haltepunktanforderung ab.
+Ruft den Haltepunkt-Stellungstyp dieser Haltepunkt Anforderung ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,13 +41,13 @@ int GetLocationType(
 
 ## <a name="parameters"></a>Parameter
 `pBPLocationType`\
-[out] Gibt einen Wert [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) aus der BP_LOCATION_TYPE-Enumeration zurück, die den Speicherort dieser Haltepunktanforderung beschreibt.
+vorgenommen Gibt einen Wert aus der [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) -Enumeration zurück, der den Speicherort dieser Haltepunkt Anforderung beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt `E_FAIL` zurück, wenn das `bpLocation` Feld in der zugeordneten [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur ungültig ist.
+Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. Gibt zurück, `E_FAIL` Wenn das `bpLocation` Feld in der zugeordneten [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur ungültig ist.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese `CDebugBreakpointRequest` Methode für ein einfaches Objekt implementiert wird, das die[IDebugBreakpointRequest2-Schnittstelle](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein einfaches-Objekt implementiert wird `CDebugBreakpointRequest` , das die[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) -Schnittstelle verfügbar macht.
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)

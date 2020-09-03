@@ -1,5 +1,5 @@
 ---
-title: Behandlung spezialisierter Bereitstellung | Microsoft Docs
+title: Behandeln spezieller bereit Stellungen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708208"
 ---
-# <a name="handle-specialized-deployment"></a>Behandeln einer spezialisierten Bereitstellung
-Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unterstützt z. B. eine Bereitstellung, mit der ein Projekt einen Webserver aktualisieren kann. Ebenso unterstützt ein **Smart Device-Projekt** eine Bereitstellung zum Kopieren einer erstellten Anwendung auf das Zielgerät. Projektuntertypen können durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle ein spezielles Bereitstellungsverhalten bereitstellen. Diese Schnittstelle definiert einen vollständigen Satz der Bereitstellungsvorgänge:
+# <a name="handle-specialized-deployment"></a>Spezialisierte Bereitstellung verarbeiten
+Eine Bereitstellung ist ein optionaler Vorgang für-Projekte. Ein Webprojekt unterstützt z. b. eine Bereitstellung, mit der ein Projekt einen Webserver aktualisieren kann. Ebenso unterstützt ein Projekt für **intelligente Geräte** eine Bereitstellung zum Kopieren einer erstellten Anwendung auf das Zielgerät. Projekt Untertypen können spezielles Bereitstellungs Verhalten bereitstellen, indem Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle implementieren. Diese Schnittstelle definiert einen kompletten Satz von Bereitstellungs Vorgängen:
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>
 
@@ -37,13 +37,13 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>
 
-  Der eigentliche Bereitstellungsvorgang sollte im separaten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Thread ausgeführt werden, um die Benutzerinteraktion noch besser reagieren zu können. Die von <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> ihnen bereitgestellten Methoden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] werden asynchron von aufgerufen und werden im Hintergrund ausgeführt, sodass die Umgebung den Status eines Bereitstellungsvorgangs jederzeit abfragen oder den Vorgang bei Bedarf beenden kann. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstellenbereitstellungsvorgänge werden von der Umgebung aufgerufen, wenn der Benutzer den Befehl deploy auswählt.
+  Der tatsächliche Bereitstellungs Vorgang sollte im separaten Thread ausgeführt werden, damit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Benutzerinteraktion noch besser reagiert. Die Methoden, die von bereitgestellt <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> werden, werden asynchron von aufgerufen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und im Hintergrund ausgeführt, sodass die Umgebung den Status eines Bereitstellungs Vorgangs jederzeit Abfragen oder den Vorgang ggf. Abbrechen kann. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstellen Bereitstellungs Vorgänge werden von der Umgebung aufgerufen, wenn der Benutzer den Bereitstellungs Befehl auswählt.
 
-  Um die Umgebung darüber zu informieren, dass ein Bereitstellungsvorgang <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> begonnen <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> oder beendet wurde, muss der Projektuntertyp die und die Methoden aufrufen.
+  Um die Umgebung zu benachrichtigen, dass ein Bereitstellungs Vorgang gestartet oder beendet wurde, muss der Projekt Untertyp die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> -Methode und die-Methode aufzurufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> .
 
-## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>So behandeln Sie eine spezialisierte Bereitstellung durch ein Subtype-Projekt
+## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>So verarbeiten Sie eine spezialisierte Bereitstellung mit einem Untertyp Projekt
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> Sie die Methode zum Registrieren der Umgebung, um Benachrichtigungen über Bereitstellungsstatusereignisse zu erhalten.
+- Implementieren Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> Methode, um die Umgebung für den Empfang von Benachrichtigungen über Bereitstellungs Statusereignisse zu registrieren.
 
     ```vb
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()
@@ -74,7 +74,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
     ```
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> Sie die Methode, um die Registrierung der Umgebung abzubrechen, um Benachrichtigungen über Bereitstellungsstatusereignisse zu erhalten.
+- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> Sie die-Methode, um die Registrierung der Umgebung abzubrechen und Benachrichtigungen über Bereitstellungs Statusereignisse zu empfangen.
 
     ```vb
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer
@@ -92,7 +92,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
     ```
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> Sie die Methode, um den für Ihre Anwendung spezifischen Commitvorgang auszuführen.  Diese Methode wird hauptsächlich für die Datenbankbereitstellung verwendet.
+- Implementieren Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> Methode, um den für Ihre Anwendung spezifischen Commitvorgang auszuführen.  Diese Methode wird hauptsächlich für die Daten Bank Bereitstellung verwendet.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -110,7 +110,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
     ```
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> Sie die Methode, um einen Rollbackvorgang auszuführen. Wenn diese Methode aufgerufen wird, muss das Bereitstellungsprojekt alles Tun, um Änderungen rückgängig zu machen und den Status des Projekts wiederherzustellen. Diese Methode wird hauptsächlich für die Datenbankbereitstellung verwendet.
+- Implementieren Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> Methode, um einen Rollback-Vorgang auszuführen. Wenn diese Methode aufgerufen wird, muss das Bereitstellungs Projekt alle erforderlichen Aktionen ausführen, um ein Rollback der Änderungen durchzuführen und den Status des Projekts wiederherzustellen. Diese Methode wird hauptsächlich für die Daten Bank Bereitstellung verwendet.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -128,7 +128,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
     ```
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> Sie die Methode, um zu bestimmen, ob ein Projekt einen Bereitstellungsvorgang starten kann.
+- Implementieren Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> Methode, um zu bestimmen, ob ein Projekt einen Bereitstellungs Vorgang starten kann.
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -161,7 +161,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
     ```
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> Sie die Methode, um zu bestimmen, ob ein Bereitstellungsvorgang erfolgreich abgeschlossen wurde.
+- Implementieren Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> Methode, um zu bestimmen, ob ein Bereitstellungs Vorgang erfolgreich abgeschlossen wurde.
 
     ```vb
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer
@@ -184,7 +184,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
     ```
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> Sie die Methode, um einen Bereitstellungsvorgang in einem separaten Thread zu starten. Platzieren Sie den Code, der für `Deploy` die Bereitstellung Ihrer Anwendung spezifisch ist, innerhalb der Methode.
+- Implementieren Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> Methode, um einen Bereitstellungs Vorgang in einem separaten Thread zu starten. Platzieren Sie den spezifischen Code für die Bereitstellung Ihrer Anwendung in der- `Deploy` Methode.
 
     ```vb
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer
@@ -241,7 +241,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
 
     ```
 
-- Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> Sie die Methode, um einen Bereitstellungsvorgang zu beenden. Diese Methode wird aufgerufen, wenn ein Benutzer während des Bereitstellungsvorgangs die **Schaltfläche Abbrechen** drückt.
+- Implementieren Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> Methode, um einen Bereitstellungs Vorgang zu verhindern. Diese Methode wird aufgerufen, wenn ein Benutzer während des Bereitstellungs Prozesses die Schaltfläche **Abbrechen** drückt.
 
     ```vb
     Public Function StopDeploy(ByVal fSync As Integer) As Integer
@@ -287,7 +287,7 @@ Eine Bereitstellung ist ein optionaler Vorgang für Projekte. Ein Webprojekt unt
     ```
 
 > [!NOTE]
-> Alle in diesem Thema bereitgestellten Codebeispiele sind Teile eines größeren Beispiels in [VSSDK-Beispielen](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+> Alle in diesem Thema enthaltenen Codebeispiele sind Teile eines größeren Beispiels in den [VSSDK-Beispielen](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Projektuntertypen](../../extensibility/internals/project-subtypes.md)
+- [Projekt Untertypen](../../extensibility/internals/project-subtypes.md)
