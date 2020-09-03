@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs
+title: 'Idebugcomplussymbolprovider:: replacesymbols | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 90ef0ae096618b776182b397d196f2a4477abe5d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733606"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
-Ersetzt die aktuellen Debugsymbole durch die Symbole im angegebenen Datenstrom.
+Ersetzt die aktuellen Debugsymbole durch die im angegebenen Datenstream.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,19 +44,19 @@ int ReplaceSymbols(
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Bezeichner der Anwendungsdomäne.
+in Der Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
-[in] Eindeutiger Bezeichner des Moduls.
+in Eindeutiger Bezeichner des Moduls.
 
 `pStream`\
-[in] Datenstrom, der die neuen Symbole enthält.
+in Datenstrom, der die neuen Symbole enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::ReplaceSymbols(

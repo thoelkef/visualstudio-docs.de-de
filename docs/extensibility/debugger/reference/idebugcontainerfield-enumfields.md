@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Microsoft Docs
+title: 'Idebugcontainerfield:: EnumFields | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733225"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
@@ -49,25 +49,25 @@ int EnumFields(
 
 ## <a name="parameters"></a>Parameter
 `dwKindFilter`\
-[in] Eine Kombination [aus FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten, die die Felder auswählen, die aufgezählt werden sollen. Feldtypen können Speichertypen wie Klasse oder Primitiv oder bestimmte Informationen wie lokale, Parameter oder "this"-Zeiger beschreiben.
+in Eine Kombination aus [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten, die die aufzuzählenden Felder auswählen. Feldtypen können Speichertypen beschreiben, z. b. Klasse oder primitiv, oder bestimmte Informationen, wie z. b. local, Parameter oder "This"-Zeiger.
 
 `dwModifiersFilter`\
-[in] Eine Kombination aus [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) Konstanten, die die Felder auswählen, die aufgezählt werden sollen. Feldmodifikatoren können Zugriffsberechtigungen sein, z. B. öffentliche oder private, oder Speicherinformationen, z. B. virtuelle, statische oder endgültige.
+in Eine Kombination aus [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) Konstanten, die die aufzuzählenden Felder auswählen. Feldmodifizierer können Zugriffsberechtigungen sein, z. b. Public oder private, oder Speicherinformationen, wie z. b. Virtual, static oder Final.
 
 `pszNameFilter`\
-[in] Der Name des Felds, das aufgezählt werden soll. Dies kann ein NULL-Wert sein, wenn alle Felder zurückgegeben werden sollen.
+in Der Name des Felds, das aufgelistet werden soll. Dies kann ein NULL-Wert sein, wenn alle Felder zurückgegeben werden sollen.
 
 `nameMatch`\
-[in] Ein Wert [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) aus der NAME_MATCH-Enumeration, die steuert, ob bei der Suche die Groß-/Kleinschreibung beachtet wird oder nicht.
+in Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration, der steuert, ob bei der Suche die Groß-/Kleinschreibung beachtet wird.
 
 `ppEnum`\
-[out] Gibt ein [IEnumDebugFields-Objekt](../../../extensibility/debugger/reference/ienumdebugfields.md) zurück, das die Liste der Felder darstellt. Gibt einen NULL-Wert zurück, wenn keine Felder vorhanden sind.
+vorgenommen Gibt ein [ienumdebug Fields](../../../extensibility/debugger/reference/ienumdebugfields.md) -Objekt zurück, das die Liste der Felder darstellt. Gibt einen NULL-Wert zurück, wenn keine Felder vorhanden sind.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, gibt S_OK oder S_FALSE zurück, wenn keine Felder vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird S_OK oder S_FALSE zurückgegeben, wenn keine Felder vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Die `dwKindFilter` `dwModifiersFilter`, `pszNameFilter` und Parameter können kombiniert werden, um z. B. alle öffentlichen virtuellen Methoden mit dem Namen "MyMethod" auszuwählen.
+ Die `dwKindFilter` `dwModifiersFilter` Parameter, und `pszNameFilter` können kombiniert werden, um z. b. Alle öffentlichen virtuellen Methoden mit dem Namen "MyMethod" auszuwählen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

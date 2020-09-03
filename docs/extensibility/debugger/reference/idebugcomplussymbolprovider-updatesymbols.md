@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::UpdateSymbole | Microsoft Docs
+title: 'Idebugcomplussymbolprovider:: updatesymbols | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 20a4fa6f6ec52ee556bd62fe303d0e21e4c56d6a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733503"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-Aktualisiert die Debugsymbole im Arbeitsspeicher mit denen aus dem angegebenen Datenstrom.
+Aktualisiert die Debugsymbole im Speicher mit denen aus dem angegebenen Datenstream.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,16 +44,16 @@ int UpdateSymbols (
 
 ## <a name="parameters"></a>Parameter
 `ulAppDomainID`\
-[in] Bezeichner der Anwendungsdomäne.
+in Der Bezeichner der Anwendungsdomäne.
 
 `guidModule`\
-[in] Eindeutiger Bezeichner des Moduls.
+in Eindeutiger Bezeichner des Moduls.
 
 `pUpdateStream`\
-[in] Datenstrom, der die aktualisierten Debugsymbole enthält.
+in Datenstrom, der die aktualisierten Debugsymbole enthält.
 
 ## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie diese Methode für ein **CDebugSymbolProvider-Objekt** implementiert wird, das die [IDebugComPlusSymbolProvider-Schnittstelle](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) verfügbar macht.
+Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [idebugcomplussymbolprovider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) -Schnittstelle verfügbar macht.
 
 ```cpp
 HRESULT CDebugSymbolProvider::UpdateSymbols(

@@ -1,5 +1,5 @@
 ---
-title: Symbol-Anbieter | Microsoft-Dokumentation
+title: Symbol Anbieter | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,23 +12,23 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6af1af9d2e178241fa8a5957e18c1a5333fa4b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178892"
 ---
 # <a name="symbol-provider"></a>Symbolanbieter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Eine Ausdrucksauswertungsfehler-Implementierung des Ausdrucks muss den symbolischen Debuginformationen vom Sprachcompiler generiert werden, um zu überprüfen, Variablen und Ausdrücke zugreifen. Dies erfolgt durch die Nutzung der Schnittstellen eines Symbol-Anbieters (SP), auch einen Symbol-Handler genannt.  
+Eine Ausdrucks Auswertungs Implementierung muss auf die symbolischen Debuginformationen zugreifen, die vom sprach Compiler generiert werden, um Variablen und Ausdrücke auszuwerten. Dies erfolgt durch die Verwendung der Schnittstellen eines Symbol Anbieters (SP), auch als Symbol Handler bezeichnet.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet SPs für verwalteten Code als auch systemeigenen Code, wobei das Dateiformat der Programmdatenbank (PDB)-Symbol. Es sei denn, es ist ein sicheres muss für Ihr Programm die Verwendung von Symbolen, die in einem benutzerdefinierten Format gespeichert, ist es empfohlen, die vom SPs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet SPS für verwalteten Code sowie systemeigenen Code unter Verwendung des Symbol Datei Formats der Programmdatenbank (PDB). Es wird empfohlen, dass Sie die von bereitgestellten SPS verwenden, es sei denn, es besteht die Notwendigkeit, dass Ihr Programm in einem benutzerdefinierten Format gespeicherte Symbole verwendet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
 ## <a name="implementation-notes"></a>Hinweise zur Implementierung  
- Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debug-Engines für die Kommunikation mit der Common Language Runtime (CLR)-Schnittstellen mit SPs erwarten. Daher muss ein SP, die die Visual Studio-Debug-Engines verwendet werden, die CLR unterstützen. Eine vollständige Liste der alle CLR-Debugschnittstellen befinden sich debugref.doc, gehört der der [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)].  
+ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debug-engines erwarten mit dem SPS mithilfe von CLR-Schnittstellen (Common Language Runtime). Folglich muss ein SP, der mit den Visual Studio-debuggingmodulen arbeiten wird, die CLR unterstützen. Eine vollständige Liste aller CLR-Debugschnittstellen finden Sie in debugref.doc, die Teil von ist [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] .  
   
- Wenn Ihre SP nur mit Ihrer benutzerdefinierten Debug-Engine arbeiten, können Sie die SP implementieren, Bedarf je nach den Anforderungen der Debug-Engine.  
+ Wenn Ihr SP nur mit der benutzerdefinierten Debug-Engine funktioniert, können Sie den SP abhängig von den Anforderungen Ihrer Debug-Engine entsprechend implementieren.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)

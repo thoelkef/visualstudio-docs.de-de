@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178325"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Gewusst wie: Verwenden eines Ziels in mehreren Projektdateien
@@ -25,13 +25,13 @@ ms.locfileid: "68178325"
 Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateien autorisiert haben, haben Sie möglicherweise festgestellt, dass Sie die gleichen Aufgaben und Ziele in verschiedenen Projektdateien verwenden müssen. Statt die vollständige Beschreibung dieser Aufgaben oder Ziele in jede Projektdatei einzuschließen, können Sie ein Ziel in einer separaten Projektdatei speichern und dieses Projekt anschließend in einem beliebigen anderen Projekt importieren, in dem das Ziel verwendet werden muss.  
   
 ## <a name="using-the-import-element"></a>Verwenden des Import-Elements  
- Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projektdatei einzufügen. Die Projektdatei, die importiert wird, muss eine gültige [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdatei sein, die wohlgeformtes XML enthält. Das Attribut `Project` gibt den Pfad zur importierten Projektdatei an. Weitere Informationen zu dem `Import`-Element finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).  
+ Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projektdatei einzufügen. Die Projektdatei, die importiert wird, muss eine gültige [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdatei sein, die wohlgeformtes XML enthält. Das Attribut `Project` gibt den Pfad zur importierten Projektdatei an. Weitere Informationen zum- `Import` Element finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).  
   
 #### <a name="to-import-a-project"></a>So importieren Sie ein Projekt  
   
 1. Definieren Sie in der importierten Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.  
   
-2. Verwenden Sie das `Import`-Element zum Importieren des Projekts. Beispiel:  
+2. Verwenden Sie das `Import`-Element zum Importieren des Projekts. Zum Beispiel:  
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -114,6 +114,6 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projek
 </Project>  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- [Import Element (MSBuild)](../msbuild/import-element-msbuild.md)  (Import-Element (MSBuild))  
+## <a name="see-also"></a>Weitere Informationen  
+ [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Ziele](../msbuild/msbuild-targets.md)
