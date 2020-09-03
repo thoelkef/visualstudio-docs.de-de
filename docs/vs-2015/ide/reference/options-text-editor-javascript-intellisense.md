@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b0d9dec8ec9b3eb8860bb8b3a4ed8f7347aa54d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662236"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Optionen, Text-Editor, JavaScript, IntelliSense
@@ -28,7 +28,7 @@ Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einst
 
  Die Seite **IntelliSense** enthält folgende Abschnitte:
 
-## <a name="validation"></a>Validierung
+## <a name="validation"></a>Validation
  Sie können diese Optionen verwenden, um Einstellungen dafür festzulegen, wie der JavaScript-Editor Syntax im Dokument überprüft.
 
 ## <a name="uielement-list"></a>UIElement-Liste
@@ -43,13 +43,13 @@ Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einst
 > [!NOTE]
 > Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.
 
-## <a name="statement-completion"></a>Anweisungsvervollständigung
+## <a name="statement-completion"></a>Anweisungsabschluss
  Sie können diese Optionen verwenden, um das Verhalten der IntelliSense-Anweisungsvervollständigung zu ändern.
 
 ## <a name="uielement-list"></a>UIElement-Liste
  **Nur Tab oder EINGABETASTE zum Commit verwenden** Wenn dieses Kontrollkästchen aktiviert ist, fügt der JavaScript-Code-Editor Anweisungen nur dann an die Elemente, die in der Vervollständigungsliste ausgewählt sind, nachdem Sie die Tab-oder EINGABETASTE gewählt haben. Wenn dieses Kontrollkästchen deaktiviert ist, können auch andere Zeichen, wie Punkt, Komma, Doppelpunkt, öffnende runde Klammer und öffnende geschweiften Klammer ({) Anweisungen mit den ausgewählten Elementen erweitern.
 
-## <a name="references"></a>Verweise
+## <a name="references"></a>References
  Sie können diese Optionen verwenden, um die Typen von IntelliSense-JS-Dateien anzugeben, die für verschiedene JavaScript-Projekttypen verfügbar sind. Die IntelliSense-Verweise werden normalerweise verwendet, um die IntelliSense-Unterstützung für globale Objekte bereitzustellen. Sie können diese Seite auch verwenden, um die Ladereihenfolge für Skripts festlegen, die zur Laufzeit geladen werden müssen, und um IntelliSense-Erweiterungsdateien hinzuzufügen.
 
 ## <a name="uielement-list"></a>UIElement-Liste
@@ -72,5 +72,5 @@ Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einst
 
  **Fügen Sie einen Verweis auf die Gruppe hinzu** . Mit dieser Option können Sie weitere IntelliSense. js-Dateien hinzufügen, indem Sie zu den entsprechenden Dateien navigieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

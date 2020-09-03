@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::SetEngine | Microsoft Docs
+title: 'IDebugProgramEngines2:: abtengine | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 226f5bbf11627a3171641806a673eaa15b614572
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722409"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
-Gibt den Programm- oder Programmknoten an, das zum Debuggen dieses Programms verwendet werden soll.
+Teilt dem Programm-oder Programmknoten mit, welches Debug-Modul (de) zum Debuggen dieses Programms verwendet werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int SetEngine( 
 
 ## <a name="parameters"></a>Parameter
 `guidEngine`\
-[in] Die GUID der DE.
+in Der GUID der de.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

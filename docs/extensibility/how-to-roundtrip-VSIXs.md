@@ -9,10 +9,10 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387277"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Gewusst wie: Erstellen von mit Visual Studio 2019/2017 und Visual Studio 2015 kompatiblen Erweiterungen
@@ -36,7 +36,7 @@ Im folgenden finden Sie einen Überblick über die Schritte, die Sie in diesem D
     * Fügen Sie die Debugeigenschaft `($DevEnvDir)` 3 Mal hinzu.
     * Fügen Sie Bedingungen zum Importieren von Buildtools und Zielen hinzu.
 
-4. Build und Test
+4. Kompilieren und testen
 
 ## <a name="environment-setup"></a>Einrichten der Umgebung
 
@@ -45,7 +45,7 @@ In diesem Dokument wird davon ausgegangen, dass Sie Folgendes auf Ihrem Computer
 * Visual Studio 2015 mit installiertem vs SDK
 * Visual Studio 2019 oder 2017 mit installierter Erweiterbarkeits Arbeitsauslastung
 
-## <a name="recommended-approach"></a>Empfohlener Ansatz
+## <a name="recommended-approach"></a>Empfohlene Vorgehensweise
 
 Es wird dringend empfohlen, dieses Upgrade mit Visual Studio 2015 anstelle von Visual Studio 2019 oder 2017 zu starten. Der Hauptvorteil der Entwicklung in Visual Studio 2015 besteht darin, sicherzustellen, dass Sie nicht auf Assemblys verweisen, die in Visual Studio 2015 nicht verfügbar sind. Wenn Sie in Visual Studio 2019 oder 2017 entwickeln, besteht das Risiko, dass Sie eine Abhängigkeit von einer Assembly einführen, die nur in Visual Studio 2019 oder 2017 vorhanden ist.
 
@@ -74,7 +74,7 @@ Version | Integrierte Tools
 Visual Studio 2015 | Microsoft. VisualStudio. SDK. BuildTasks. 14,0
 Visual Studio 2019 oder 2017 | Microsoft. VSSDK. Buildtool
 
-Dazu gehen Sie wie folgt vor:
+Gehen Sie folgendermaßen vor:
 
 * Fügen Sie das nuget-Paket "Microsoft. VisualStudio. SDK. BuildTasks. 14,0" zu Ihrem Projekt hinzu.
 * Wenn das Projekt nicht Microsoft. VSSDK. Buildtools enthält, fügen Sie es hinzu.

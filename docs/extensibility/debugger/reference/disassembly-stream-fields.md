@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737366"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
-Gibt an, welche Informationen zu einem Demontagefeld abgerufen werden sollen.
+Gibt an, welche Informationen über ein disassemblyfeld abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -66,59 +66,59 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Felder
 `DSF_ADDRESS`\
-Initialisieren/verwenden `bstrAddress` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `bstrAddress` .
 
 `DSF_ADDRESSOFFSET`\
-Initialisieren/verwenden `bstrAddressOffset` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `bstrAddressOffset` .
 
 `DSF_CODEBYTES`\
-Initialisieren/verwenden `bstrCodeBytes` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `bstrCodeBytes` .
 
 `DSF_OPCODE`\
-Initialisieren/verwenden `bstrOpCode` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `bstrOpCode` .
 
 `DSF_OPERANDS`\
-Initialisieren/verwenden `bstrOperands` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `bstrOperands` .
 
 `DSF_SYMBOL`\
-Initialisieren/verwenden `bstrSymbol` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `bstrSymbol` .
 
 `DSF_CODELOCATIONID`\
-Initialisieren/verwenden `uCodeLocationId` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `uCodeLocationId` .
 
 `DSF_POSITION`\
-Initialisieren/verwenden `posBeg` Sie `posEnd` die Felder und.
+Initialisieren/verwenden Sie `posBeg` die `posEnd` Felder und.
 
 `DSF_DOCUMENTURL`\
-Initialisieren/verwenden `bstrDocumentUrl` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `bstrDocumentUrl` .
 
 `DSF_BYTEOFFSET`\
-Initialisieren/verwenden `dwByteOffset` Sie das Feld.
+Initialisieren Sie das Feld, und verwenden Sie es `dwByteOffset` .
 
 `DSF_FLAGS`\
-Initialisieren/verwenden `dwFlags` Sie das Feld ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
+Initialisieren/verwenden Sie das `dwFlags` Feld ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Fügen Sie Symbolnamen in das Feld ein. `bstrOperands`
+Schließt Symbolnamen in das `bstrOperands` Feld ein.
 
 `DSF_ALL`\
-Gibt alle Felder für den Demontagestream an.
+Gibt alle Felder für den disassemblydatenstrom an.
 
 ## <a name="remarks"></a>Bemerkungen
-Wird als Parameter an die [Read-Methode](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) übergeben, um anzugeben, welche Felder der [DisassemblyData-Struktur](../../../extensibility/debugger/reference/disassemblydata.md) initialisiert werden sollen.
+Wird als Parameter an die [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) -Methode übergeben, um anzugeben, welche Felder der [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Struktur initialisiert werden sollen.
 
-Wird für `dwFields` das `DisassemblyData` Element der Struktur verwendet, um anzugeben, welche Felder verwendet werden und gültig sind, wenn die Struktur zurückgegeben wird.
+Wird für den- `dwFields` Member der `DisassemblyData` -Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind, wenn die-Struktur zurückgegeben wird.
 
-Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
+Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+## <a name="requirements"></a>Anforderungen
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

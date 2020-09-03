@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2b9ed8428f9dd0325678cb91a847609aed76f9b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541166"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Gewusst wie: Validieren von Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird
@@ -26,7 +26,7 @@ ms.locfileid: "85541166"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="data-validation"></a>Datenüberprüfung
+## <a name="data-validation"></a>Datenvalidierung
  Sobald einem <xref:Microsoft.Office.Tools.Excel.ListObject> , das an Daten gebunden ist, eine Zeile hinzugefügt wird, wird das <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> -Ereignis ausgelöst. Sie können dieses Ereignis behandeln, um Ihre Datenüberprüfung durchzuführen. Wenn die Anwendung beispielsweise erfordert, dass der Datenquelle nur Mitarbeiter zwischen 18 und 65 hinzugefügt werden können, müssen Sie überprüfen, ob das eingegebene Alter innerhalb dieses Bereichs liegt, bevor die Zeile hinzugefügt wird.
 
 > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "85541166"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  In diesem Codebeispiel wird davon ausgegangen, dass Sie in dem Arbeitsblatt, in dem dieser Code angezeigt wird, über ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Element namens `list1` verfügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)

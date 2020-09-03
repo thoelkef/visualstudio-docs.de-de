@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::DoesInterfaceExist | Microsoft-Dokumentation
+title: Idebugclassfield::D oesinterfaceexist | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f71346c1b69729ae54ef0d33be4149e7000316c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191129"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
@@ -40,13 +40,13 @@ int DoesInterfaceExist(
   
 #### <a name="parameters"></a>Parameter  
  `pszInterfaceName`  
- [in] Eine Zeichenfolge, die den schnittstellenamen enthält, der gesucht wird.  
+ in Eine Zeichenfolge mit dem Schnittstellennamen, nach dem gesucht werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Bei Erfolg S_OK zurückgibt, gibt S_FALSE zurück, wenn die Schnittstelle nicht vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. gibt S_FALSE zurück, wenn die Schnittstelle nicht vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
- Diese Methode ruft eine Enumeration aller Schnittstellen in Kraft und durchsucht die Liste für die entsprechende Schnittstelle.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Methode ruft in der Regel eine Enumeration aller Schnittstellen ab und durchsucht die Liste nach einer entsprechenden Schnittstelle.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

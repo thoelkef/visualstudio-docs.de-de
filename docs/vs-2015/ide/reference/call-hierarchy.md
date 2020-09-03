@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 823c61e7625850c680b52cd4ad9386ef0838d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660933"
 ---
 # <a name="call-hierarchy"></a>Aufrufhierarchie
@@ -30,7 +30,7 @@ Mithilfe der Aufrufhierarchie können Sie in Ihrem Code navigieren, indem Sie al
 ## <a name="using-call-hierarchy"></a>Verwenden der Aufrufhierarchie
  Klicken Sie mit der rechten Maustaste auf Methode, Eigenschaft oder Konstruktoraufruf, damit das Fenster **Aufrufhierarchie** angezeigt wird, und klicken Sie anschließend auf **Aufrufhierarchie anzeigen**.
 
- Der Membername erscheint in einem Strukturansichtsbereich im Fenster **Aufrufhierarchie**. Wenn Sie den Memberknoten erweitern, werden die Unterknoten **Calls To** _Membername_ (eingehende Aufrufe) und **Calls From** _Membername_ (ausgehende Aufrufe) angezeigt. In der folgenden Abbildung werden diese Knoten im Fenster **Aufrufhierarchie** angezeigt.
+ Der Membername erscheint in einem Strukturansichtsbereich im Fenster **Aufrufhierarchie**. Wenn Sie den Memberknoten erweitern, werden die Unterknoten **Calls To**_Membername_ (eingehende Aufrufe) und **Calls From**_Membername_ (ausgehende Aufrufe) angezeigt. In der folgenden Abbildung werden diese Knoten im Fenster **Aufrufhierarchie** angezeigt.
 
  ![Hierarchie mit einem geöffneten Knoten aufzurufen](../../ide/reference/media/onenode.png "Onumode") Hierarchie Fenster
 
@@ -58,7 +58,7 @@ Mithilfe der Aufrufhierarchie können Sie in Ihrem Code navigieren, indem Sie al
 ## <a name="shortcut-menu-items"></a>Kontextmenüelemente
  In der folgenden Tabelle werden einige Kontextmenüoptionen beschrieben, auf die Sie zugreifen können, wenn Sie mit der rechten Maustaste auf einen Knoten im Strukturansichtsbereich klicken.
 
-|Kontextmenüelement|Beschreibung|
+|Kontextmenüelement|BESCHREIBUNG|
 |-----------------------|-----------------|
 |**Als neuen Stamm hinzufügen**|Fügt dem Strukturansichtsbereich den ausgewählten Knoten als neuen Stammknoten hinzu. Dadurch können Sie sich auf eine bestimmte Unterstruktur konzentrieren.|
 |**Stamm entfernen**|Entfernt den ausgewählten Stammknoten aus dem Strukturansichtsbereich. Diese Option ist nur in einem Stammknoten verfügbar.<br /><br /> Sie können außerdem die Symbolleistenschaltfläche **Stamm entfernen** verwenden, um den ausgewählten Stammknoten zu entfernen.|

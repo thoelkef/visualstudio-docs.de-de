@@ -1,5 +1,5 @@
 ---
-title: SccRunScc-Funktion | Microsoft-Dokumentation
+title: Sccrunscc-Funktion | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190874"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diese Funktion ruft das Datenquellen-Steuerelement-Verwaltungstool.  
+Diese Funktion Ruft das Tool zur Verwaltung der Quell Code Verwaltung auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,40 +36,40 @@ SCCRTN SccRunScc(
 ```  
   
 #### <a name="parameters"></a>Parameter  
- pvContext  
- [in] Datenquellen-Steuerelement-Plug-in Context-Struktur.  
+ pvcontext  
+ in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.  
   
  hWnd  
- [in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.  
+ in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.  
   
- nFiles  
- [in] Anzahl der angegebenen Dateien in die `lpFileNames` Array.  
+ nnoch  
+ in Anzahl der im Array angegebenen Dateien `lpFileNames` .  
   
- lpFileNames  
- [in] Array der Namen der ausgewählten Datei.  
+ lpfile-Namen  
+ in Array ausgewählter Dateinamen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_OK|Das Datenquellen-Steuerelement-Verwaltungstool wurde erfolgreich aufgerufen.|  
+|SCC_OK|Das Tool zur Verwaltung der Quell Code Verwaltung wurde erfolgreich aufgerufen.|  
 |SCC_I_OPERATIONCANCELED|Der Vorgang wurde abgebrochen.|  
-|SCC_E_INITIALIZEFAILED|Fehler beim Initialisieren der vom Quellcodeverwaltungssystem.|  
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen.|  
-|SCC_E_CONNECTIONFAILURE|Fehler bei der verbindungsherstellung auf das Quellcodeverwaltungssystem.|  
-|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht unter quellcodeverwaltung.|  
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|  
+|SCC_E_INITIALIZEFAILED|Fehler beim Initialisieren des Quell Code Verwaltungssystems.|  
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen.|  
+|SCC_E_CONNECTIONFAILURE|Fehler beim Herstellen einer Verbindung mit dem Quell Code Verwaltungssystem.|  
+|SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei befindet sich nicht unter Quell Code Verwaltung.|  
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler.|  
   
-## <a name="remarks"></a>Hinweise  
- Diese Funktion ermöglicht den Aufrufer, die das gesamte Spektrum an Funktionen des Quellcode-Verwaltungssystem über ein externes Verwaltungstool zugreifen. Wenn der Quellcode-Verwaltungssystems keine Benutzeroberfläche verfügt, kann das Quellcodeverwaltungs-Plug-in eine Schnittstelle zum Durchführen der erforderlichen Verwaltungsfunktionen implementieren.  
+## <a name="remarks"></a>Bemerkungen  
+ Diese Funktion ermöglicht es dem Aufrufer, über ein externes Verwaltungs Tool auf den vollständigen Bereich der Funktionen des Quell Code Verwaltungssystems zuzugreifen. Wenn das Quell Code Verwaltungssystem über keine Benutzeroberfläche verfügt, kann das Quellcodeverwaltungs-Plug-in eine Schnittstelle implementieren, um die erforderlichen Verwaltungsfunktionen auszuführen.  
   
- Diese Funktion wird mit einem Zähler und ein Array von Dateinamen für die ausgewählten Dateien aufgerufen. Wenn das Verwaltungstool unterstützt wird, kann die Liste der Dateien auf die Vorauswahl von Dateien in der Verwaltungsschnittstelle verwendet werden. Andernfalls kann die Liste ignoriert werden.  
+ Diese Funktion wird mit einer Anzahl und einem Array von Dateinamen für die aktuell ausgewählten Dateien aufgerufen. Wenn das Verwaltungs Tool dies unterstützt, kann die Datei Liste verwendet werden, um Dateien in der Verwaltungsschnittstelle vorab auszuwählen. Andernfalls kann die Liste ignoriert werden.  
   
- Diese Funktion wird in der Regel aufgerufen, wenn der Benutzer auswählt der **starten \<Quellcodeverwaltungsserver >** aus der **Datei** -> **Quellcodeverwaltung** ein Menü. Dies **starten** Menüoption immer deaktiviert oder sogar durch Festlegen eines Registrierungseintrags ausgeblendet werden kann. Weitere Informationen finden Sie unter [How to: Ein Datenquellen-Steuerelement-Plug-in installieren](../extensibility/internals/how-to-install-a-source-control-plug-in.md) Details. Diese Funktion wird aufgerufen, wenn nur [SccInitialize](../extensibility/sccinitialize-function.md) gibt die `SCC_CAP_RUNSCC` Funktion Bit (finden Sie unter [Capability Flags](../extensibility/capability-flags.md) Weitere Informationen zu diesem und anderen Funktionsbits).  
+ Diese Funktion wird in der Regel aufgerufen, wenn der Benutzer den **Launch \<Source Control Server> ** aus dem Menü " **Datei**  ->  **Quell** Code Verwaltung" auswählt. Diese **Start** Menüoption kann immer deaktiviert oder sogar ausgeblendet werden, indem ein Registrierungs Eintrag festgelegt wird. Weitere Informationen finden [Sie unter Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-ins](../extensibility/internals/how-to-install-a-source-control-plug-in.md) . Diese Funktion wird nur aufgerufen, wenn [sccinitialize das funktionsbit](../extensibility/sccinitialize-function.md) zurückgibt `SCC_CAP_RUNSCC` (Weitere Informationen zu dieser und anderen Funktions Bits finden Sie unter funktionsflags). [Capability Flags](../extensibility/capability-flags.md)  
   
-## <a name="see-also"></a>Siehe auch  
- [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
- [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+## <a name="see-also"></a>Weitere Informationen  
+ [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)   
+ [Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-ins](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Funktionsflags](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

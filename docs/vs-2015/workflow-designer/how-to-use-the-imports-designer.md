@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 47b5055cca0b00e7fdec49947df13b473a090aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659080"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Vorgehensweise: Verwenden des Imports-Designers
-Der Importe-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben, die Sie in den Ausdrücken verwenden. Ähnlich wie bei den **Imports** -oder using-Schlüsselwörtern C#in Visual Basic .net und **durch** das Angeben von Namespaces im Imports-Designer können Sie einfach einen Typnamen in ihren Ausdruck anstelle eines voll qualifizierten Versions Typnamens eingeben.
+Der Importe-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben, die Sie in den Ausdrücken verwenden. Ähnlich wie bei den **Imports** -oder **using** -Schlüsselwörtern in Visual Basic .net und c# können Sie mit dem Angeben von Namespaces im Import-Designer einfach einen Typnamen in ihren Ausdruck eingeben und keinen voll qualifizierten Versionstyp Namen.
 
- Der Importe-Designer reagiert sowohl auf Änderungen, die in der Benutzeroberfläche vorgenommen werden, als auch auf Änderungen, die beim Speichern des Workflows gespeichert werden. Wenn der Workflow gespeichert wird, können dem Importe-Designer automatisch Namespaces hinzugefügt werden. Hierzu gehört Folgendes:
+ Der Importe-Designer reagiert sowohl auf Änderungen, die in der Benutzeroberfläche vorgenommen werden, als auch auf Änderungen, die beim Speichern des Workflows gespeichert werden. Wenn der Workflow gespeichert wird, können dem Importe-Designer automatisch Namespaces hinzugefügt werden. Dabei handelt es sich z. B. um:
 
 - Namespaces für alle Typen, die in Variablen- und Argumentdeklarationen verwendet werden.
 

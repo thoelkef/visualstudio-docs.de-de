@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 236135cd4b4f813471ece7a0eeb1b221c7242df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662362"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
@@ -30,7 +30,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  Klicken Sie zum Öffnen dieser Seite im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie **Text-Editor** und **C/C++** , und klicken Sie dann auf **Erweitert**.
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ## <a name="browsingnavigation"></a>Durchsuchen/Navigation
  Diese Optionen sollten nur in dem seltenen Fall ausgewählt werden, wenn eine Projektmappe so groß ist, dass die Datenbankaktivität einen unzulässigen Anteil der Systemressourcen beansprucht.
@@ -49,7 +49,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 
  **Datenbank neu erstellen** Erstellen Sie die Code Suchdatenbank beim nächsten Laden der Projekt Mappe neu. Wenn Sie diese Option auswählen, wird die SDF-Datenbankdatei beim nächsten Laden der Projektmappe gelöscht, was zur Folge hat, dass die Datenbank neu erstellt wird und alle Dateien indiziert werden.
 
- **Lösungs Intervall neu** einlesen Der Auftrag "Projekt Mappe jetzt neu einlesen" ist für das von Ihnen angegebene Intervall geplant. Sie müssen einen Wert zwischen 0 und 5000 Minuten angeben. Der Standardwert ist 60 Minuten. Beim erneuten Durchsuchen der Projektmappe werden die Zeitstempel der Dateien überprüft, um zu bestimmen, ob eine Datei außerhalb der IDE geändert wurde. (Änderungen, die in der IDE vorgenommen werden, werden automatisch nachverfolgt, und die Dateien werden aktualisiert.) Implizit enthaltene Dateien werden geprüft, um zu bestimmen, ob auf Sie noch verwiesen wird.
+ **Lösungs Intervall neu** einlesen Der Auftrag "Projekt Mappe jetzt neu einlesen" ist für das von Ihnen angegebene Intervall geplant. Sie müssen einen Wert zwischen 0 und 5000 Minuten angeben. Der Standardwert beträgt 60 Minuten. Beim erneuten Durchsuchen der Projektmappe werden die Zeitstempel der Dateien überprüft, um zu bestimmen, ob eine Datei außerhalb der IDE geändert wurde. (Änderungen, die in der IDE vorgenommen werden, werden automatisch nachverfolgt, und die Dateien werden aktualisiert.) Implizit enthaltene Dateien werden geprüft, um zu bestimmen, ob auf Sie noch verwiesen wird.
 
 ## <a name="diagnostic-logging"></a>Diagnoseprotokollierung
  Diese Optionen stehen zur Verfügung, falls Sie von Microsoft gebeten werden, weitere Informationen zur Diagnose eines Problems zu sammeln. Da die Protokollierungsinformationen für Benutzer nicht hilfreich sind, empfehlen wir, sie deaktiviert zu belassen.
@@ -96,9 +96,9 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 
  Wellenlinien **Deaktivieren** Deaktiviert IntelliSense-Fehler Wellenlinien. Die roten Wellenlinien werden nicht im Editorfenster, der Fehler jedoch weiterhin im Fenster "Fehlerliste" angezeigt.
 
- **Deaktivieren #include Auto Vervollständigen** Deaktiviert die automatische Vervollständigung von `#include` Anweisungen.
+ **Deaktivieren #include Auto Vervollständigen** Deaktiviert die automatische Vervollständigung von- `#include` Anweisungen.
 
- **Schrägstrich in #include Auto Vervollständigen verwenden** Löst die automatische Vervollständigung von `#include`-Anweisungen aus, wenn "/" verwendet wird. Das Standardtrennzeichen ist der umgekehrte Schrägstrich (\). Der Compiler akzeptiert beide. Geben Sie daher mit dieser Option an, welches Zeichen in Ihrer Codebasis verwendet wird.
+ **Schrägstrich in #include Auto Vervollständigen verwenden** Löst die automatische Vervollständigung von-Anweisungen aus, `#include` Wenn "/" verwendet wird. Das Standardtrennzeichen ist der umgekehrte Schrägstrich (\). Der Compiler akzeptiert beide. Geben Sie daher mit dieser Option an, welches Zeichen in Ihrer Codebasis verwendet wird.
 
  **Maximale Anzahl zwischen gespeicherter Übersetzungseinheiten** Die maximale Anzahl von Übersetzungseinheiten, die zu einem beliebigen Zeitpunkt für IntelliSense-Anforderungen aktiv gehalten werden. Sie müssen einen Wert zwischen 2 und 15 angeben. Diese Zahl bezieht sich direkt auf die maximale Anzahl von ausgeführten VCPkgSrv.exe-Prozessen (für eine angegebene Instanz von Visual Studio). Der Standardwert ist 2. Wenn Sie jedoch verfügbaren Arbeitsspeicher haben, können Sie diesen Wert erhöhen und erzielen möglicherweise eine bessere IntelliSense-Leistung.
 
@@ -106,7 +106,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 
  **Aggressive Mitgliederliste deaktivieren** Die Elementliste wird nicht angezeigt, wenn Sie den Namen eines Typs oder einer Variablen eingeben. Die Liste wird nur nach Eingabe eines der Commitzeichen angezeigt, die in der Option **Commitzeichen der Memberliste** definiert wurden.
 
- **Schlüsselwörter für Member auflisten deaktivieren** Sprach Schlüsselwörter, wie z. b. `void`, `class` `switch`, werden nicht in Vorschlägen der Mitgliederliste angezeigt
+ **Schlüsselwörter für Member auflisten deaktivieren** Sprach `void` Schlüsselwörter, wie z. b `class` ., werden `switch` nicht in Vorschlägen der Mitgliederliste angezeigt
 
  **Code Ausschnitte für Mitgliederliste deaktivieren** Code Ausschnitte werden in Vorschlägen der Mitgliederliste nicht angezeigt.
 
@@ -118,12 +118,12 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 
  **Commit-Zeichen für Mitgliederliste** Gibt die Zeichen an, die bewirken, dass für den aktuell markierten Member List-Vorschlag ein Commit ausgeführt wird. Sie können Zeichen zu dieser Liste hinzufügen oder aus der Liste entfernen.
 
-## <a name="references"></a>Verweise
+## <a name="references"></a>References
  **Auflösen deaktivieren** Aus Leistungsgründen zeigt "alle Verweise suchen" standardmäßig unformatierte Text Suchergebnisse an, anstatt IntelliSense zur Überprüfung der einzelnen Kandidaten zu verwenden. Sie können dieses Kontrollkästchen deaktivieren, um genauere Ergebnisse aus sämtlichen Suchoperationen zu erhalten. Öffnen Sie zum Filtern pro Suche das Kontextmenü für die Ergebnisliste, und wählen Sie dann "Ergebnisse auflösen" aus.
 
  **Nicht bestätigte ausblenden** Blenden Sie nicht bestätigte Elemente in den Ergebnissen von "alle Verweise suchen" aus. Wenn Sie die Option "Auflösen deaktiveren" nicht festlegen, können Sie mit dieser Option unbestätigte Elemente in den Ergebnissen ausblenden.
 
  **Markieren von Verweisen deaktivieren**
 
-## <a name="see-also"></a>Siehe auch
- [Festlegen von sprachspezifischen Editoroptionen](../../ide/reference/setting-language-specific-editor-options.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Festlegen von sprachspezifischen Editor Optionen](../../ide/reference/setting-language-specific-editor-options.md)

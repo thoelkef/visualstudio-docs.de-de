@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Skip | Microsoft-Dokumentation'
+title: 'Idiaenumdebug:: Skip | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b052809a6fedb7f94bc973fa1115269f6590970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182546"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Überspringt eine angegebene Anzahl von Debug-Datenströme in einer Enumerationsfolge.  
+Überspringt eine angegebene Anzahl von debugstreams in einer enumerationssequenz.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der Debug-Streams in der Enumerationsfolge übersprungen werden soll.  
+ in Die Anzahl der zu über springenden debugdatenströme in der enumerationssequenz.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` es sind keine weitere Datensätze zu überspringen.  
+ Wenn erfolgreich, wird zurückgegeben `S_OK` ; andernfalls wird zurückgegeben, `S_FALSE` Wenn keine weiteren Datensätze zum Überspringen vorhanden sind.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

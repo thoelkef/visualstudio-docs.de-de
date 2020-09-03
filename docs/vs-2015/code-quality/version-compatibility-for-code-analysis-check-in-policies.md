@@ -13,33 +13,33 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 075981569cbee05e90afe17b3afc9558d7bbb270
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609321"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Versionskompatibilität für die Eincheckrichtlinien der Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie die Eincheck Richtlinien für die Code Analyse mithilfe verschiedener Versionen von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] evaluieren und verfassen müssen, müssen Sie die Unterschiede in der Art und Weise kennen, wie [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] und [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] Eincheck Richtlinien auswerten.
+Wenn Sie Eincheck Richtlinien für die Code Analyse mithilfe verschiedener Versionen von auswerten und verfassen müssen [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , müssen Sie die Unterschiede in der Art und Weise der [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] Auswertung von [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] Eincheck Richtlinien kennen.
 
 ## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Versions Kompatibilität für das Auswerten von Eincheck Richtlinien
 
-- Wenn die Eincheck Richtlinien für die Code Analyse in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] ausgewertet werden, werden alle Regeln ignoriert, die in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] vorhanden waren, jedoch nicht in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] vorhanden sind.
+- Wenn Eincheck Richtlinien für die Code Analyse in ausgewertet werden [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] , werden alle Regeln ignoriert, die in vorhanden sind, [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] jedoch nicht in vorhanden [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] sind.
 
-- Wenn die Eincheck Richtlinien für die Code Analyse in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] ausgewertet werden, werden alle neuen Regeln ignoriert, die für [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] exklusiv sind.
+- Wenn Eincheck Richtlinien für die Code Analyse in ausgewertet werden [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] , werden alle neuen Regeln, die exklusiv für sind, [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] ignoriert.
 
-- Wenn die Eincheck Richtlinie für die Code Analyse Regelassemblys angibt, ignoriert [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] alle Regeln, die von nicht erkannten Assemblys angegeben werden.
+- Wenn die Eincheck Richtlinie für die Code Analyse Regelassemblys angibt, [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] ignoriert alle Regeln, die von den nicht erkannten Assemblys angegeben werden.
 
-- Wenn die Eincheck Richtlinie für die Code Analyse Regeln für Regelassemblys angibt, die [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] nicht erkennt, wird eine Meldung angezeigt.
+- Wenn die Eincheck Richtlinie für die Code Analyse Regelassemblys angibt, die von [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] nicht erkannt werden, wird eine Meldung angezeigt.
 
 ## <a name="version-compatibility-for-authoring-check-in-policies"></a>Versions Kompatibilität für die Erstellung von Eincheck Richtlinien
 
-- Wenn Sie eine Eincheck Richtlinie für die Code Analyse mithilfe der [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] Version von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] erstellt haben, können Sie die [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] Version von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] nicht verwenden, um Sie zu ändern. Außerdem [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] die Richtlinie nicht auswerten können.
+- Wenn Sie eine Eincheck Richtlinie für die Code Analyse mithilfe der- [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] Version von erstellt [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] haben, können Sie Sie nicht mit der- [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] Version von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] ändern. Außerdem [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] kann die Richtlinie nicht auswerten.
 
-- Wenn Sie eine Eincheck Richtlinie für die Code Analyse mithilfe [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] erstellt haben, können Sie [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] verwenden, um Sie zu ändern, und die Richtlinie kann auch von [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] ausgewertet werden. Nachdem Sie die Richtlinie mithilfe von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] geändert haben, können Sie die Richtlinie nicht mehr mithilfe [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] bearbeiten. [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] können die Richtlinien ohne Probleme mit nicht übereinstimmenden starken Namen auswerten.
+- Wenn Sie eine Eincheck Richtlinie für die Code Analyse mithilfe von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in erstellt [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] haben, können Sie Sie in verwenden, [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] um Sie zu ändern, und die Richtlinie kann auch von ausgewertet werden [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] . Nachdem Sie die Richtlinie mithilfe von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in geändert [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] haben, können Sie die Richtlinie nicht mehr mithilfe von [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in bearbeiten [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] . [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] kann die Richtlinien ohne Probleme mit nicht übereinstimmenden starken Namen auswerten.
 
-- Zum Erstellen einer Eincheck Richtlinie für die Code Analyse mit Regel Einstellungen, die sowohl für [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] als auch für [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] gelten, müssen Sie die Richtlinie in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] erstellen, alle benötigten Änderungen vornehmen und die Richtlinie speichern. Wenn die Änderungen an Regeln nur in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] vorhanden sind, ändern und speichern Sie die Richtlinie in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].
+- Zum Erstellen einer Eincheck Richtlinie für die Code Analyse mit Regel Einstellungen, die sowohl für [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] als auch gelten [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] , müssen Sie die Richtlinie in Erstellen [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] , alle benötigten Änderungen vornehmen und die Richtlinie speichern. Wenn die Änderungen an Regeln nur in vorhanden [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] sind, ändern und speichern Sie die Richtlinie in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] .
 
-     Nachdem Sie die Richtlinie in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] gespeichert haben, können Sie die Einstellungen für Regeln, die nur in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] vorhanden sind, nicht mehr ändern.
+     Nachdem Sie die Richtlinie in gespeichert [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] haben, können Sie die Einstellungen für Regeln, die nur in vorhanden sind, nicht mehr ändern [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] .

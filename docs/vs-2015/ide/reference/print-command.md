@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662156"
 ---
 # <a name="print-command"></a>Befehl "Drucken"
@@ -36,7 +36,7 @@ Debug.Print text
 ## <a name="arguments"></a>Argumente
  `text` ist erforderlich. Der auszuwertende Ausdruck oder der anzuzeigende Text
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
  Sie können ein Fragezeichen (?) als Alias für diesen Befehl verwenden. Daher wird mit dem Befehl
 
 ```
@@ -57,5 +57,5 @@ Debug.Print text
 >Debug.Print varA
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Befehl " [Anweisung auswerten"](../../ide/reference/evaluate-statement-command.md) [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

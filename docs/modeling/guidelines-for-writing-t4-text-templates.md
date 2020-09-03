@@ -151,7 +151,7 @@ Schreiben Sie ein Beispiel für den Code oder Text, den Sie generieren möchten,
 
 Sie sollten typisierte Modelle verwenden.
 
-Obwohl Sie ein XML-oder Datenbankschema für Ihre Modelle erstellen können, kann es hilfreich sein, eine domänenspezifische Sprache (DSL) zu erstellen. Eine DSL hat den Vorteil, dass Sie eine Klasse generiert, die jeden Knoten im Schema darstellt, und Eigenschaften, die die Attribute darstellen. Dies bedeutet, dass Sie im Rahmen des Geschäftsmodells programmieren können. Beispiel:
+Obwohl Sie ein XML-oder Datenbankschema für Ihre Modelle erstellen können, kann es hilfreich sein, eine domänenspezifische Sprache (DSL) zu erstellen. Eine DSL hat den Vorteil, dass Sie eine Klasse generiert, die jeden Knoten im Schema darstellt, und Eigenschaften, die die Attribute darstellen. Dies bedeutet, dass Sie im Rahmen des Geschäftsmodells programmieren können. Zum Beispiel:
 
 ```
 Team Members:
@@ -169,7 +169,7 @@ Allerdings ist es für einige Arten von Geschäftsanforderungen wichtig, komplex
 
 Sie können auch einen eigenen Diagrammtyp als domänenspezifische Sprache (DSL) entwerfen. Code kann sowohl von UML als auch von DSLs generiert werden. Weitere Informationen finden Sie unter [analysieren und modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)

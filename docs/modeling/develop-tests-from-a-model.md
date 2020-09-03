@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596657"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
@@ -128,10 +128,10 @@ Assert (countAfter == countBefore = 1);
 
  Aus Testsicht kann ein Anforderungsmodell als eine Kurzschreibweise für die Tests betrachtet werden. Folglich ist es wichtig, die Beziehung zwischen Tests und Modell über das gesamte Projekt hinweg aufrechtzuerhalten.
 
-## <a name="Attaching"></a>Anfügen von Test Fällen an Modellelemente
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Anfügen von Test Fällen an Modellelemente
  Wenn das Projekt [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] verwendet, können Sie Tests mit den Elementen im Modell verknüpfen. Dadurch können Sie schnell die Tests finden, die von einer Änderung der Anforderungen betroffen sind, und nachverfolgen, in welchem Umfang eine Anforderung erfüllt wurde.
 
- Sie können Tests mit allen Arten von Elementen verknüpfen. Hier einige Beispiele:
+ Sie können Tests mit allen Arten von Elementen verknüpfen. Im Folgenden finden Sie einige Beispiele:
 
 - Verknüpfen Sie einen Anwendungsfall mit den Tests, die ihn ausführen.
 
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)

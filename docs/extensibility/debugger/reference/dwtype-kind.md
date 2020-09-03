@@ -1,5 +1,5 @@
 ---
-title: dwTYPE_KIND | Microsoft Docs
+title: dwTYPE_KIND | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a9d790f12d3fc21bbae7373470746af2ebfe6dc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737195"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
-Gibt an, wie der Typ eines [IDebugField-Objekts](../../../extensibility/debugger/reference/idebugfield.md) interpretiert werden soll.
+Gibt an, wie der Typ eines [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekts interpretiert werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -56,16 +56,16 @@ Die `TYPE_INFO` Union sollte als [PDB_TYPE](../../../extensibility/debugger/refe
 Die `TYPE_INFO` Union sollte als [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) Struktur interpretiert werden.
 
 ## <a name="remarks"></a>Bemerkungen
-Die Werte dieser Enumeration `dwKind` werden im Feld der [TYPE_INFO-Struktur](../../../extensibility/debugger/reference/type-info.md) angezeigt `type` und werden verwendet, um zu bestimmen, wie das Union-Mitglied interpretiert wird. Die `TYPE_INFO` Struktur wird durch einen Aufruf der [GetTypeInfo-Methode](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) zurückgegeben.
+Die Werte dieser Enumeration `dwKind` werden im-Feld der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Struktur angezeigt und werden verwendet, um zu bestimmen, wie das `type` Unionmember interpretiert werden soll. Die- `TYPE_INFO` Struktur wird durch einen Aufrufen der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: sh.h
+## <a name="requirements"></a>Anforderungen
+Header: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

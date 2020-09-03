@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 26c53633bc55efcf95ffbc579e24d2d61e4a0932
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662276"
 ---
 # <a name="options-text-editor-file-extension"></a>Optionen, Text-Editor, Dateierweiterung
@@ -48,5 +48,5 @@ Das Dialogfeld „Optionen“ ermöglicht Ihnen anzugeben, wie alle Dateien mit 
 
  **Optionen für erweiterte Dateien** Stellt dieselbe Liste wie der **Editor**bereit. Wählen Sie den Editor oder Designer der IDE aus, in dem Dokumente ohne Dateierweiterung geöffnet werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Gewusst wie: Verwalten von Editormodi](../../ide/how-to-manage-editor-modes.md)

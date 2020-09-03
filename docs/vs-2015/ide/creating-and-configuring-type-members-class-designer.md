@@ -31,10 +31,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b871c406b0a2b36d1e7f02a070ab1052510ed20b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619237"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
@@ -57,12 +57,12 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 
-|Aufgabe|Unterstützender Inhalt|
+|Aufgabe|Hilfreiche Themen|
 |----------|------------------------|
-|**Erste Schritte:** Bevor Sie Typmember erstellen und konfigurieren, müssen Sie das Fenster „Klassendetails“ öffnen.|-   [So öffnen Sie das Fenster „Klassendetails“](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Hinweise zur Verwendung von Klassendetails](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Anzeige schreibgeschützter Informationen](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster „Klassendetails“ (Klassen-Designer)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|
-|**Erstellen und ändern Sie Typmember:** Sie können neue Member erstellen, Member ändern und einer Methode Parameter hinzufügen, indem Sie das Fenster „Klassendetails“ verwenden.|-   [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Ändern von Typmembern](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Hinzufügen von Parametern zu Methoden](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|
+|**Erste Schritte:** Bevor Sie Typmember erstellen und konfigurieren, müssen Sie das Fenster Klassendetails öffnen.|-   [So öffnen Sie das Fenster „Klassendetails“](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Hinweise zur Verwendung von Klassen Details](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Anzeige Schreib geschützter Informationen](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Tastenkombinationen und Maus Verknüpfungen im Klassendiagramm und Klassendetailsfenster (Klassen-Designer)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|
+|**Erstellen und Ändern von Typmembern:** Mithilfe des Fensters Klassendetails können Sie neue Member erstellen, Member ändern und einer Methode Parameter hinzufügen.|-   [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Ändern von Typmembern](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Hinzufügen von Parametern zu Methoden](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|
 
-## <a name="OpenClassDetails"></a> So öffnen Sie das Fenster „Klassendetails“
+## <a name="opening-the-class-details-window"></a><a name="OpenClassDetails"></a> Öffnen der Klassendetailsfenster
  Standardmäßig wird das Fenster „Klassendetails“ automatisch angezeigt, wenn Sie ein neues Klassendiagramm öffnen (siehe [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Sie können das Klassendetailsfenster jedoch mit folgenden Methoden auch explizit öffnen.
 
 #### <a name="to-open-the-class-details-window"></a>So öffnen Sie das Klassendetailsfenster
@@ -75,7 +75,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 - Zeigen Sie im Menü „Ansicht“ auf **Weitere Fenster**, und klicken Sie dann auf **Klassendetails**.
 
-## <a name="CreateMembers"></a> Erstellen von Membern
+## <a name="creating-members"></a><a name="CreateMembers"></a> Erstellen von Membern
  Sie können einen Member mit einem der folgenden Tools erstellen:
 
 - Klassen-Designer
@@ -85,7 +85,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 - Klassendetailsfenster
 
 > [!NOTE]
-> Mit den in diesem Abschnitt beschriebenen Verfahren können Sie außerdem Konstruktoren und Destruktoren erstellen. Beachten Sie, dass es sich bei Konstruktoren und Destruktoren um spezielle Methodenformen handelt, die in Formen im Klassendiagramm im Depot **Methoden** und im Raster des Klassendetailsfenster im Abschnitt **Methoden** angezeigt werden.
+> Mit den in diesem Abschnitt beschriebenen Verfahren können Sie außerdem Konstruktoren und Destruktoren erstellen. Beachten Sie, dass es sich bei Konstruktoren und Destruktoren um spezielle Methoden handelt, die in Form von Klassendiagrammen im Depot **Methoden** und im Raster des Fensters Klassendetails im Abschnitt **Methoden** angezeigt werden.
 
 > [!NOTE]
 > Der Parameter ist die einzige Entität, die Sie einem Delegaten hinzufügen können. Das Verfahren 'So erstellen Sie einen Member mithilfe der Symbolleiste des Klassendetailsfensters' kann für diese Aktion nicht angewendet werden.
@@ -104,13 +104,13 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Klassendetailsfenster angezeigt.
 
-2. Klicken Sie auf der Symbolleiste des Fensters „Klassendetails“ auf das obere Symbol, und wählen Sie **Neu \<Member>** aus der Dropdownliste aus.
+2. Klicken Sie auf der Symbolleiste des Fensters Klassendetails auf das obere Symbol, und wählen Sie **Neuer \<member>** aus der Dropdownliste aus.
 
-     Der Cursor wird in das Feld **Name** in einer Zeile für die gewünschte Art von Member verschoben. Wenn Sie z.B. auf **Neue Eigenschaft** klicken, wird der Cursor in eine neue Zeile im Abschnitt **Eigenschaften** des Klassendetailsfensters verschoben.
+     Der Cursor wird in das Feld **Name** in einer Zeile für die gewünschte Art von Member verschoben. Wenn Sie z.B. auf **Neue Eigenschaft** klicken, wird der Cursor in eine neue Zeile im Abschnitt **Eigenschaften** des Fensters Klassendetails verschoben.
 
 3. Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE (oder verschieben Sie den Fokus, z. B. durch Drücken der TAB-TASTE).
 
-     Daraufhin wird eine neue Membersignatur erstellt und dem Typ hinzugefügt. Der Member ist nun im Code vorhanden und wird im **Klassen-Designer**, im Klassendetailsfenster und im Eigenschaftenfenster angezeigt.
+     Daraufhin wird eine neue Membersignatur erstellt und dem Typ hinzugefügt. Der Member ist nun im Code vorhanden und wird im **Klassen-Designer**, im Fenster Klassendetails und im Eigenschaftenfenster angezeigt.
 
 4. Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
 
@@ -120,17 +120,17 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Klassendetailsfenster angezeigt.
 
-2. Klicken Sie im Fenster „Klassendetails“ in dem Abschnitt, der die zu erstellende Art von Member enthält, auf **\<Member hinzufügen>** . Wenn Sie z.B. ein Feld hinzufügen möchten, klicken Sie auf **\<Feld hinzufügen>** .
+2. Klicken Sie im Fenster Klassendetails in dem Abschnitt, der die Art von Member enthält, die hinzugefügt werden soll, auf **\<add member>** . Wenn Sie z. B. ein Feld hinzufügen möchten, klicken Sie auf **\<add field>** .
 
 3. Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE.
 
-     Daraufhin wird eine neue Membersignatur erstellt und dem Typ hinzugefügt. Der Member ist nun im Code vorhanden und wird im **Klassen-Designer**, im Klassendetailsfenster und im Eigenschaftenfenster angezeigt.
+     Daraufhin wird eine neue Membersignatur erstellt und dem Typ hinzugefügt. Der Member ist nun im Code vorhanden und wird im **Klassen-Designer**, im Fenster Klassendetails und im Eigenschaftenfenster angezeigt.
 
 4. Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
 
      **Hinweis:** Sie können Member auch mithilfe von Tastenkombinationen erstellen. Weitere Informationen finden Sie unter [Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster „Klassendetails“ (Klassen-Designer)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).
 
-## <a name="ModifyTypeMembers"></a> Ändern von Typmembern
+## <a name="modifying-type-members"></a><a name="ModifyTypeMembers"></a> Ändern von Typmembern
  Mit dem Klassen-Designer können Sie die Member der Typen ändern, die im Diagramm angezeigt werden. Sie können die Member jedes nicht schreibgeschützten Typs ändern, die in einem Klassendiagramm angezeigt werden. (Siehe [Anzeigen von schreibgeschützten Informationen (Klassen-Designer)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Sie ändern Typmember, indem Sie die direkte Bearbeitung auf der Entwurfs Oberfläche, Eigenschaftenfenster und das Klassendetailsfenster verwenden.
 
  Alle im Klassendetailsfenster angezeigten Member stellen die Member der Typen im Klassendiagramm dar. Es gibt vier Arten von Membern: Methoden, Eigenschaften, Felder und Ereignisse.
@@ -157,9 +157,9 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
      Ändern Sie den Sichtbarkeitsmodifizierer eines Members in `Public` (`public`), `Private` (`private`), `Friend` (`internal`), `Protected` (`protected`), `Protected``Friend` (`protected``internal`) oder `Default`.
 
-- **\<Member hinzufügen>**
+- **\<add member>**
 
-     Die letzte Zeile des Fensters „Klassendetails“ enthält in der Zelle **Name** den Text **\<Member hinzufügen>** . Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
+     Die letzte Zeile des Fensters Klassendetails enthält in der Zelle **Name** den Text **\<add member>** . Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
 - **Membereigenschaften im Eigenschaftenfenster**
 
@@ -177,14 +177,14 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 1. Wählen Sie mit dem Klassen-Designer einen Typ aus.
 
-2. Wenn das Klassendetailsfenster nicht angezeigt wird, klicken Sie auf der Klassen-Designer-Symbolleiste auf die Schaltfläche **Klassendetailsfenster**.
+2. Wenn das Klassendetailsfenster nicht angezeigt wird, klicken Sie auf der Klassen-Designer Symbolleiste auf die Schaltfläche **Klassendetailsfenster** .
 
 3. Bearbeiten Sie die Werte in den Feldern des Rasters im Klassendetailsfenster. Drücken Sie nach jeder Änderung die EINGABETASTE, oder aktivieren Sie auf andere Weise ein anderes Feld, z. B. durch Drücken der TAB-TASTE. Die Änderungen sind im Code sofort sichtbar.
 
     > [!NOTE]
     > Wenn Sie nur den Namen eines Members ändern möchten, können Sie dafür die direkte Bearbeitung verwenden.
 
-## <a name="AddMethodParams"></a> Hinzufügen von Parametern zu Methoden
+## <a name="adding-parameters-to-methods"></a><a name="AddMethodParams"></a> Hinzufügen von Parametern zu Methoden
  Fügen Sie Methoden Parameter hinzu, indem Sie das Klassendetailsfenster verwenden. Parameter können als erforderlich oder optional konfiguriert werden. Wenn ein Wert für die Eigenschaft **Optional Default** angegeben wird, wird der Designer angewiesen, Code als optionalen Parameter zu generieren.
 
  Parameterzeilen enthalten die folgenden Elemente:
@@ -197,7 +197,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 - **Type**
 
-   In der Zelle **Parametertyp** wird IntelliSense verwendet, d.h. Sie können einen Typ aus einer Liste aller im aktuellen Projekt oder in Projekten, auf die verwiesen wird, verfügbaren Typen auswählen.
+   In der Zelle **Parametertyp** wird IntelliSense verwendet, mit dem Sie aus einer Liste aller Typen auswählen können, die im aktuellen Projekt oder in Projekten, auf die verwiesen wird, verfügbar sind.
 
 - **Modifizierer**
 
@@ -207,13 +207,13 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
    In der Zelle **Zusammenfassung** in einer Parameterzeile können Sie Codekommentare eingeben, die in IntelliSense angezeigt werden, wenn Sie den Parameter in den Code-Editor eingeben.
 
-- **\<Parameter hinzufügen>**
+- **\<add parameter>**
 
    Die letzte Parameterzeile eines Members enthält im Feld **Name** den Text **<Parameter hinzufügen\>** . Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).
 
   **Parametereigenschaften im Eigenschaftenfenster**
 
-  Im Eigenschaftenfenster werden die gleichen Parametereigenschaften wie im Klassendetailsfenster angezeigt: **Name**, **Type**, **Modifier**, **Summary** sowie **Optional Default**. Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.
+  Im Fenster Eigenschaften werden die gleichen Parametereigenschaften angezeigt wie im Fenster Klassendetails: **Name**, **Typ**, **Modifizierer**, **Zusammenfassung** sowie die Eigenschaft **Optional Default** (Optionaler Standard). Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.
 
 > [!NOTE]
 > Informationen zum Hinzufügen eines Parameters zu einem Delegaten finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
@@ -221,7 +221,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 > [!NOTE]
 > Ein Destruktor ist zwar eine Methode, kann jedoch nicht über Parameter verfügen.
 
-### <a name="HowToAddParameterToMethod"></a> So fügen Sie einer Methode einen Parameter hinzu
+### <a name="to-add-a-parameter-to-a-method"></a><a name="HowToAddParameterToMethod"></a> So fügen Sie einer Methode einen Parameter hinzu
 
 1. Klicken Sie auf der Diagrammoberfläche auf den Typ, der die Methode enthält, der Sie einen Parameter hinzufügen möchten.
 
@@ -229,9 +229,9 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 2. Erweitern Sie im Klassendetailsfenster die Zeile der Methode, der Sie einen Parameter hinzufügen möchten.
 
-     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
+     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<add parameter>** enthält.
 
-3. Klicken Sie auf **\<Parameter hinzufügen>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<add parameter>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird zur Methode und zum Code der Methode hinzugefügt. Er wird im Klassendetailsfenster und im Eigenschaftenfenster angezeigt.
 
@@ -245,9 +245,9 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 2. Erweitern Sie im Klassendetailsfenster die Zeile der Methode, der Sie einen optionalen Parameter hinzufügen möchten.
 
-     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
+     Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<add parameter>** enthält.
 
-3. Klicken Sie auf **\<Parameter hinzufügen>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<add parameter>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird zur Methode und zum Code der Methode hinzugefügt. Er wird im Klassendetailsfenster und im Eigenschaftenfenster angezeigt.
 
@@ -256,7 +256,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
     > [!NOTE]
     > Optionale Parameter müssen in der Parameterliste die letzten Parameter sein.
 
-## <a name="ClassDetailsUsageNotes"></a> Hinweise zur Verwendung von Klassendetails
+## <a name="class-details-usage-notes"></a><a name="ClassDetailsUsageNotes"></a> Hinweise zur Verwendung von Klassen Details
  Beachten Sie die folgenden Tipps zur Verwendung des Klassendetailsfensters.
 
  **Bearbeitbare und nicht bearbeitbare Zellen**
@@ -273,7 +273,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 - Wenn der Code eines Typs fehlerhaft (nicht analysierbar) ist, wird der Inhalt des Typs im Klassendetailsfenster schreibgeschützt angezeigt.
 
-  **Klassendetailsfenster und Quellcode**
+  **Die Klassendetailsfenster und den Quellcode**
 
 - Klicken Sie zum Anzeigen von Quellcode im Klassendetailsfenster (oder im Klassen-Designer) mit der rechten Maustaste auf eine Form, und klicken Sie anschließend auf Code anzeigen. Die Quellcodedatei wird geöffnet, und es wird ein Bildlauf zum ausgewählten Element durchgeführt.
 
@@ -281,11 +281,11 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 
 - Wenn der Code eines Typs fehlerhaft (nicht analysierbar) ist, wird der Inhalt des Typs im Klassendetailsfenster schreibgeschützt angezeigt.
 
-  **Zwischenablagefunktionalität im Klassendetailsfenster**
+  **Zwischenablage Funktionalität im Klassendetailsfenster**
 
   Sie können Felder oder Zeilen im Klassendetailsfenster kopieren oder ausschneiden und in einen anderen Typ einfügen. Es können nur Zeilen ausgeschnitten werden, die nicht schreibgeschützt sind. Wenn Sie die Zeile einfügen, wird zur Vermeidung eines Konflikts im Klassendetailsfenster ein neuer (vom Namen der kopierten Zeile abgeleiteter) Name zugewiesen.
 
-## <a name="ReadOnlyInfo"></a> Anzeigen von schreibgeschützten Informationen
+## <a name="display-of-read-only-information"></a><a name="ReadOnlyInfo"></a> Anzeige Schreib geschützter Informationen
  Im Klassen-Designer und im Klassendetailsfenster können die Typen (und Member der Typen) für folgende Elemente angezeigt werden:
 
 - ein Projekt, das ein Klassendiagramm enthält

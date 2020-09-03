@@ -17,23 +17,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5abf89828576c44b2f5ec5c59813d366cec73b7a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661559"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projekten hinzufügen können. Zum Öffnen der **Toolbox** klicken Sie im Menü **Ansicht** auf **Toolbox**. Sie können die **Toolbox** andocken und so festlegen, dass sie entweder geöffnet angeheftet oder **Automatisch ausblenden** bleibt.
+Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projekten hinzufügen können. Klicken Sie im Menü **Ansicht**auf **Toolbox** , um **Toolbox** zu öffnen. Sie können die **Toolbox** andocken und so festlegen, dass sie entweder geöffnet angeheftet oder **Automatisch ausblenden** bleibt.
 
  Die **Toolbox**-Symbole können in eine Designansicht gezogen bzw. in einem Code-Editor eingefügt werden. Mit beiden Aktionen wird der Basiscode hinzugefügt, mit dem in der aktiven Projektdatei eine Instanz des **Toolboxelements** erstellt wird.
 
  In der **Toolbox** werden nur Elemente angezeigt, die sich für den Dateityp eignen, in dem Sie arbeiten. Sie können eine Suche in der Toolbox durchführen, um die Elemente, die angezeigt werden, zu filtern. Wenn das Projekt ein Steuerelement erfordert, das vom Client Profile nicht unterstützt wird, können Sie durch Bearbeiten der Projekteigenschaften für das Projekt festlegen, dass das gesamte Framework als Ziel festgelegt wird.
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="help-on-toolbox-tabs"></a>Hilfe zu Toolboxregisterkarten
  Die folgenden Dokumente enthalten weitere Informationen zu bestimmten **Toolbox**-Registerkarten.
@@ -50,5 +50,5 @@ Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Si
 
 - [Toolbox, Registerkarte „HTML“](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Verwenden der Toolbox](../../ide/using-the-toolbox.md)

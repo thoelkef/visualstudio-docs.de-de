@@ -1,5 +1,5 @@
 ---
-title: Gliederung und versteckter Text in einem Legacy-Sprachdienst | Microsoft Docs
+title: Gliederung und ausgeblendeter Text in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +11,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1f05d42de0201a7556046d19baf55830fa62c22
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706826"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Gliederung und ausgeblendeter Text in einem Legacysprachdienst
-Die Gliederung ermöglicht es, eine Sequenz von Textzeilen in eine einzelne Zeile zu reduzieren. In C++ können z. B. alle Methoden in eine einzelne Zeile reduziert werden, wodurch nur die Methodensignatur angezeigt wird. Ausgeblendeter Text ist die Abfolge von Textzeilen, die angezeigt oder ausgeblendet werden können.
+Durch Gliederung kann eine Sequenz von Textzeilen in eine einzelne Zeile reduziert werden. Beispielsweise können in C++ alle Methoden in eine einzelne Zeile reduziert werden, die nur die Methoden Signatur anzeigt. Ausgeblendeter Text ist die Sequenz von Textzeilen, die angezeigt oder ausgeblendet werden können.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Gewusst wie: Unterstützen der Gliederung in einem Legacysprachdienst](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)
 
- Erläutert die Implementierung
+ Erläutert das Implementieren von
 
 - [Gewusst wie: Unterstützen von ausgeblendetem Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 
- Erläutert den Zweck eines ausgeblendeten Textbereichs und enthält Anweisungen zum Implementieren eines ausgeblendeten Textbereichs.
+ Erläutert den Zweck eines ausgeblendeten Text Bereichs und stellt Anweisungen zum Implementieren eines ausgeblendeten Text Bereichs bereit.
 
 - [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Erläutert die beiden Optionen, die die Umrissunterstützung für Ihre Sprache über die Unterstützung des *Befehls "In Definitionen reduzieren"* hinaus erweitern.
+ Erläutert die beiden Optionen, die die Gliederung der Unterstützung für Ihre Sprache über die Unterstützung des Befehls Reduzierungs *Definitionen* hinaus erweitern.

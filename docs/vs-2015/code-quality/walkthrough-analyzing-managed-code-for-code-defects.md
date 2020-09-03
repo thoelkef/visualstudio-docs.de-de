@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9478394162051fc08c33047cf1ac24275aff75e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609332"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler
@@ -27,23 +27,23 @@ In dieser exemplarischen Vorgehensweise analysieren Sie mit dem Code Analysetool
 
  Diese exemplarische Vorgehensweise führt Sie durch den Prozess der Verwendung der Code Analyse zum Analysieren Ihrer .NET-verwalteten Codeassemblys, um die Konformität mit den Microsoft .NET Framework-Entwurfs Richtlinien zu erfüllen.
 
- In dieser exemplarischen Vorgehensweise haben Sie Folgendes:
+ In dieser exemplarischen Vorgehensweise führen Sie folgende Aktionen aus:
 
 - Analysieren und korrigieren Sie Code Fehler Warnungen.
 
-## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].
 
 ## <a name="create-a-class-library"></a>Erstellen einer Klassenbibliothek
 
 #### <a name="to-create-a-class-library"></a>So erstellen Sie eine Klassenbibliothek
 
-1. Klicken Sie im Menü **Datei** von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] auf **neu** , und klicken Sie dann auf **Projekt**.
+1. Klicken Sie im Menü **Datei** von auf [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **neu** , und klicken Sie dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Projekttypen**auf **Visualisierung C#** .
+2. Klicken Sie im Dialogfeld **Neues Projekt** unter **Projekttypen**auf **Visual c#**.
 
-3. Wählen Sie unter **Vorlagen**die Option **Klassenbibliothek**aus.
+3. Wählen Sie unter **Vorlagen** den Eintrag **Klassenbibliothek** aus.
 
 4. Geben Sie im Textfeld **Name den Namen** **CodeAnalysisManagedDemo** ein, und klicken Sie dann auf **OK**.
 
@@ -67,7 +67,7 @@ In dieser exemplarischen Vorgehensweise analysieren Sie mit dem Code Analysetool
 
 3. Klicken Sie auf **Code Analyse**.
 
-4. Stellen Sie sicher, dass die Option **Code Analyse für Build aktivieren (definiert CODE_ANALYSIS-Konstante**) aktiviert ist.
+4. Stellen Sie sicher, dass die Option  **Code Analyse für Build aktivieren (definiert CODE_ANALYSIS Konstante**) aktiviert ist.
 
 5. Wählen Sie in der Dropdown Liste **diesen Regelsatz ausführen** die Option **Microsoft alle Regeln**aus.
 
@@ -95,49 +95,49 @@ In dieser exemplarischen Vorgehensweise analysieren Sie mit dem Code Analysetool
 
 - [CA1014: Markieren Sie Assemblys mit CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design: "Demo" sollte mit dem CLSCompliantAttribute gekennzeichnet werden, und der Wert sollte "true" lauten.
 
-  - Fügen Sie der Datei AssemblyInfo.cs den Code `using``System;` hinzu.
+  - Fügen Sie den Code `using``System;` der AssemblyInfo.cs-Datei hinzu.
 
-       Fügen Sie als nächstes den Code `[assembly: CLSCompliant(true)]` am Ende der AssemblyInfo.cs-Datei hinzu.
+       Fügen Sie als nächstes den Code am `[assembly: CLSCompliant(true)]` Ende der AssemblyInfo.cs-Datei hinzu.
 
        Erstellen Sie das Projekt neu.
 
 - [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: öffentliche Demo (Zeichenfolge)
 
-  - Fügen Sie der-Klasse `demo` den Konstruktor-`public demo (String s) : base(s) { }` hinzu.
+  - Fügen Sie der-Klasse den-Konstruktor hinzu `public demo (String s) : base(s) { }` `demo` .
 
 - [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: öffentliche Demo (Zeichenfolge, Ausnahme)
 
-  - Fügen Sie der-Klasse `demo` den Konstruktor-`public demo (String s, Exception e) : base(s, e) { }` hinzu.
+  - Fügen Sie der-Klasse den-Konstruktor hinzu `public demo (String s, Exception e) : base(s, e) { }` `demo` .
 
 - [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: geschützte Demo (SerializationInfo, StreamingContext)
 
-  - Fügen Sie den Code `using System.Runtime.Serialization;` am Anfang der Class1.cs-Datei hinzu.
+  - Fügen Sie den Code am `using System.Runtime.Serialization;` Anfang der Class1.cs-Datei hinzu.
 
-       Fügen Sie als nächstes den Konstruktor hinzu `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+       Fügen Sie als nächstes den Konstruktor hinzu. `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
        Erstellen Sie das Projekt neu.
 
 - [CA1032: Standardausnahmekonstruktoren implementieren](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: öffentliche Demo ()
 
-  - Fügen Sie der-Klasse `demo` den Konstruktor-`public demo () : base() { }` hinzu **.**
+  - Fügen Sie der-Klasse den-Konstruktor hinzu `public demo () : base() { }` `demo` **.**
 
        Erstellen Sie das Projekt neu.
 
 - [CA1709: Bezeichner müssen ordnungsgemäß geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: korrigieren Sie die Schreibweise des Namespace namens "Testcode", indem Sie ihn in "Testcode" ändern.
 
-  - Ändern Sie die Schreibweise des Namespace `testCode` in `TestCode`.
+  - Ändern Sie die Groß-/Kleinschreibung des-Namespace `testCode` in `TestCode` .
 
 - [CA1709: Bezeichner müssen ordnungsgemäß geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: korrigieren Sie die Schreibweise des Typnamens "Demo", indem Sie Sie in "Demo" ändern.
 
-  - Ändern Sie den Namen des Members in `Demo`.
+  - Ändern Sie den Namen des Members in `Demo` .
 
 - [CA1709: Bezeichner müssen ordnungsgemäß geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: korrigieren Sie die Schreibweise des Element namens "Item", indem Sie ihn in "Item" ändern.
 
-  - Ändern Sie den Namen des Members in `Item`.
+  - Ändern Sie den Namen des Members in `Item` .
 
 - [CA1710: Bezeichner sollten ein korrektes Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: benennen Sie "Testcode. Demo" um, damit Sie auf "Exception" enden.
 
-  - Ändern Sie den Namen der Klasse und deren Konstruktoren in `DemoException`.
+  - Ändern Sie den Namen der Klasse und deren Konstruktoren in `DemoException` .
 
 - [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Signieren Sie "ManagedDemo" mit einem Schlüssel mit starkem Namen.
 
@@ -149,9 +149,9 @@ In dieser exemplarischen Vorgehensweise analysieren Sie mit dem Code Analysetool
 
        Aktivieren Sie das Kontrollkästchen **Assembly signieren** .
 
-       Wählen Sie in der Liste **Schlüsseldatei für Zeichen folgen Name** auswählen **\<New... >** .
+       Wählen Sie in der Liste **Schlüsseldatei für Zeichen folgen Name** auswählen den Wert aus **\<New…>** .
 
-       Das Dialogfeld Schlüssel für einen **starken Namen erstellen** wird angezeigt.
+       Das Dialogfeld **Schlüssel mit starkem Namen erstellen** wird geöffnet.
 
        Geben Sie im **Schlüssel Dateinamen den Namen**TestKey ein.
 
@@ -163,7 +163,7 @@ In dieser exemplarischen Vorgehensweise analysieren Sie mit dem Code Analysetool
 
 - [CA2237: Markieren Sie iserialisierbare Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: Fügen Sie ein [serialisierbares]-Attribut zum Typ ' Demo ' hinzu, da dieser Typ iserialisierbar implementiert.
 
-  - Fügen Sie der Klasse `demo` das `[Serializable ()]`-Attribut hinzu.
+  - Fügen Sie der-Klasse das- `[Serializable ()]` Attribut hinzu `demo` .
 
        Erstellen Sie das Projekt neu.
 

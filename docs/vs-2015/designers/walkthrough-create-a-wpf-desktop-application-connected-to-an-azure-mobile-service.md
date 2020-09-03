@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664025"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
@@ -21,7 +21,7 @@ ms.locfileid: "72664025"
 
 Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.
 
-## <a name="Requirements"></a> Erforderliche Komponenten
+## <a name="prerequisites"></a><a name="Requirements"></a> Voraussetzungen
  Für diese exemplarische Vorgehensweise wird Folgendes benötigt:
 
 - Visual Studio 2015 – beliebige Version, die die WPF-Entwicklung unterstützt.
@@ -30,20 +30,20 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 
   - Für ein kostenloses Testkonto können Sie sich [hier](https://azure.microsoft.com/pricing/free-trial/)anmelden.
 
-  - Sie können [Vorteile für MSDN-Abonnenten](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)aktivieren. Über Ihr MSDN-Abonnement erhalten Sie monatlich eine Gutschrift, die Sie für kostenpflichtige Azure-Dienste verwenden können.
+  - Sie können [Vorteile für MSDN-Abonnenten](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)aktivieren. Ihr MSDN-Abonnement beinhaltet ein monatliches Guthaben, das Sie für zahlungspflichtige Azure-Dienste verwenden können.
 
 ## <a name="create-a-project-and-add-references"></a>Erstellen eines neuen Projekts und Hinzufügen von Verweisen
  Zunächst erstellen Sie ein WPF-Projekt und fügen diesem ein NuGet-Paket hinzu, über das Sie eine Verbindung mit Azure Mobile Services herstellen können.
 
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt
 
-1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** , und wählen Sie den Knoten **Windows** aus. Erweitern Sie dann den Knoten **Windows** , und wählen Sie den Knoten **Klassischer Desktop** aus.
 
 3. Wählen Sie in der Vorlagenliste die Vorlage **WPF-Anwendung** aus.
 
-4. Erweitern Sie im Dialogfeld **Name**  `WPFQuickStart`ein, und wählen Sie dann die Schaltfläche **OK** aus.
+4. Erweitern Sie im Dialogfeld **Name**`WPFQuickStart`ein, und wählen Sie dann die Schaltfläche **OK** aus.
 
      Das Projekt wird erstellt, und die Projektdateien werden dem **Projektmappen-Explorer**hinzugefügt. Zudem wird der Designer für das Standardanwendungsfenster namens **MainWindow.xaml** angezeigt.
 
@@ -98,7 +98,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 
      Dieser XAML-Code erstellt ein wiederverwendbares Layout mit Platzhaltern für Felder für Zahlen, Titel und Beschreibungen. Zur Laufzeit können die Platzhalter durch Text ersetzt werden, wie in der folgenden Abbildung dargestellt.
 
-     ![Das quickstarttask-Benutzer Steuerelement](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")
+     ![Das Benutzersteuerelement "QuickStartTask"](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")
 
 6. Erweitern Sie in **Projektmappen-Explorer**den Knoten **QuickStartTask.xaml** , und öffnen Sie die Datei **QuickStartTask.xaml.cs** oder **QuickStartTask.xaml.vb** .
 
@@ -204,7 +204,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 
 #### <a name="to-create-and-modify-the-main-window"></a>So erstellen und ändern Sie das Hauptfenster
 
-1. Öffnen Sie im **Projektmappen-Explorer**die Datei **MainWindow.xaml** .
+1. Öffne im **Projektmappen-Explorer** die Datei **MainWindow.xaml**.
 
 2. **Wichtig**. Dieser Schritt gilt nur für C#. Wenn Sie Visual Basic verwenden, fahren Sie mit dem nächsten Schritt fort. Navigieren Sie im unteren Bereich des Designers zur Zeile `xmlns:local=”clr-namespace:WPFQuickStart”` , und ersetzen Sie sie durch folgenden XAML-Code:
 
@@ -285,7 +285,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 
      An diesem Punkt sollte das Design der folgenden Abbildung entsprechen:
 
-     ![Das MainWindow im Designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
+     ![Das MainWindow-Element im Designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
 
     > [!NOTE]
     > Bei Ausführen der nächsten Vorgehensweisen werden möglicherweise Fehler in der **Fehlerliste** angezeigt, wenn diese geöffnet ist. Diese verschwinden wieder, während Sie die verbleibenden Vorgehensweisen ausführen.
@@ -484,7 +484,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
     > [!NOTE]
     > Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.
 
-     Dadurch wird die URL für den Dienst auf `https://wpfquickstart01.azure-mobile.net/` festgelegt.
+     Dadurch wird die URL für den Dienst auf festgelegt `https://wpfquickstart01.azure-mobile.net/` .
 
 4. Wählen Sie in der Liste **DATENBANK** eine Datenbankoption aus. Da es sich dabei um eine Anwendung handelt, die nur selten verwendet wird, können Sie die Option **Eine kostenlose 20-MB-SQL-Datenbank erstellen** bzw. die bereits in Ihrem Abonnement enthaltene kostenlose Datenbank auswählen.
 
@@ -509,7 +509,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 
 1. Wählen Sie im Microsoft Azure-Portal den Pfeil nach rechts neben dem Namen Ihres mobilen Service aus, und wählen Sie auf der Menüleiste **DATEN**und dann den Link **EINE TABELLE HINZUFÜGEN** aus.
 
-2. Erweitern Sie im Dialogfeld **Neue Tabelle erstellen** im Textfeld **TABELLENNAME**  `TodoItem`ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.
+2. Erweitern Sie im Dialogfeld **Neue Tabelle erstellen** im Textfeld **TABELLENNAME**`TodoItem`ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.
 
      Warten Sie, bis die Tabelle erstellt ist, und fahren Sie dann mit der letzten Vorgehensweise fort.
 
@@ -549,13 +549,13 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 
 1. Wählen Sie auf der Menüleiste **Debuggen**, **Debugging starten** aus (oder drücken Sie F5).
 
-2. Erweitern Sie im Dialogfeld **TodoItem einfügen**  `Do something`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.
+2. Erweitern Sie im Dialogfeld **TodoItem einfügen**`Do something`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.
 
 3. EINGABETASTE `Do something else`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.
 
      Die beiden Einträge werden der Liste zum **Abfragen und Aktualisieren von Daten** hinzugefügt, wie in der folgenden Abbildung dargestellt.
 
-     ![Die TODO-Elemente werden der Liste hinzugefügt.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
+     ![Aktivitäteneinträge werden am Ende der Liste hinzugefügt.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
 
 4. Aktivieren Sie das Kontrollkästchen für den Eintrag **Do something else** in der Liste.
 
@@ -568,5 +568,5 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 
  Sie können eine Verbindung mit vorhandenen SQL-Datenbanken oder anderen Datenquellen mit Azure Mobile Services herstellen. Weitere Informationen finden Sie unter [Mobile Services – Dokumentation](https://azure.microsoft.com/services/app-service/mobile/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  Exemplarische Vorgehensweise [: meine erste WPF-Desktop Anwendung](../designers/walkthrough-my-first-wpf-desktop-application2.md) [Erstellen von modernen Desktop Anwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

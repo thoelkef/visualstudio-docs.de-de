@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b44e30648e2be9bcf77ce6847ac88673e714d3be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606998"
 ---
 # <a name="transaction-activity-designers"></a>Transaktionsaktivitätsdesigner
 Transaktionsaktivitätsdesigner werden verwendet, um Transaktionsaktivitäten, z. B. das Kompensieren oder Bestätigen, zu erstellen und zu konfigurieren. Die Themen, die in diesem Abschnitt enthalten und in der folgenden Tabelle aufgeführt sind, enthalten Anleitungen dazu, wie die [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Aktivitäts- und Vorlagen-Designer verwendet werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Cancellationscope](../workflow-designer/cancellationscope-activity-designer.md) Wird verwendet, um eine <xref:System.Activities.Statements.CancellationScope> Aktivität zu erstellen und zu konfigurieren.
+ [Cancellationscope](../workflow-designer/cancellationscope-activity-designer.md) Wird zum Erstellen und Konfigurieren einer- <xref:System.Activities.Statements.CancellationScope> Aktivität verwendet.
 
- [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md) Wird verwendet, um eine <xref:System.Activities.Statements.CompensableActivity> Aktivität zu erstellen und zu konfigurieren.
+ [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md) Wird zum Erstellen und Konfigurieren einer- <xref:System.Activities.Statements.CompensableActivity> Aktivität verwendet.
 
- [Kompensieren](../workflow-designer/compensate-activity-designer.md) Wird verwendet, um eine <xref:System.Activities.Statements.Compensate> Aktivität zu erstellen und zu konfigurieren.
+ [Kompensieren](../workflow-designer/compensate-activity-designer.md) Wird zum Erstellen und Konfigurieren einer- <xref:System.Activities.Statements.Compensate> Aktivität verwendet.
 
- [Bestätigen](../workflow-designer/confirm-activity-designer.md) Wird verwendet, um eine <xref:System.Activities.Statements.Confirm> Aktivität zu erstellen und zu konfigurieren.
+ [Bestätigen](../workflow-designer/confirm-activity-designer.md) Wird zum Erstellen und Konfigurieren einer- <xref:System.Activities.Statements.Confirm> Aktivität verwendet.
 
- [Transaktionscope](../workflow-designer/transactionscope-activity-designer.md) Wird verwendet, um eine <xref:System.Activities.Statements.TransactionScope> Aktivität zu erstellen und zu konfigurieren.
+ [Transaktionscope](../workflow-designer/transactionscope-activity-designer.md) Wird zum Erstellen und Konfigurieren einer- <xref:System.Activities.Statements.TransactionScope> Aktivität verwendet.
 
 ## <a name="reference"></a>Referenz
 

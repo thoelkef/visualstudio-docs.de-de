@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostId | Microsoft Docs
+title: 'IDebugProgramHost2:: gethostid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e02a78350fead837d4540c435b97a423dfdd471
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722317"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
-Ruft den Prozessbezeichner des Prozesses ab, der dieses Programm hostet.
+Ruft den Prozess Bezeichner des Prozesses ab, der dieses Programm gehostet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ int GetHostId( 
 
 ## <a name="parameters"></a>Parameter
 `pdwId`\
-[in, out] Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die mit den Prozessbezeichnerinformationen ausgefüllt wird.
+[in, out] Eine [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) -Struktur, die mit den Prozess-ID-Informationen aufgefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 783f7fad05cad18efea2f83b6d76c4c9e644f119
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548381"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Boolesche P/Invoke-Argumente mit MarshalAs markieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Element|Wert|
+|Element|value|
 |-|-|
 |TypName|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
@@ -36,7 +36,7 @@ ms.locfileid: "85548381"
  Eine Platt Form Aufruf-Methoden Deklaration enthält einen <xref:System.Boolean?displayProperty=fullName> Parameter oder einen Rückgabewert, aber das <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> Attribut wird nicht auf den Parameter oder den Rückgabewert angewendet.
 
 ## <a name="rule-description"></a>Beschreibung der Regel
- Eine Platt Form Aufruf Methode greift auf nicht verwalteten Code zu und wird mithilfe des- `Declare` Schlüssel Worts in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder definiert <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute>Gibt das Marshallingverhalten an, das zum Konvertieren von Datentypen zwischen verwaltetem und nicht verwaltetem Code verwendet wird. Viele einfache Datentypen, wie z. b. <xref:System.Byte?displayProperty=fullName> und <xref:System.Int32?displayProperty=fullName> , haben eine einzelne Darstellung in nicht verwaltetem Code und erfordern keine Angabe Ihres marshallingverhaltens. der Common Language Runtime liefert automatisch das richtige Verhalten.
+ Eine Platt Form Aufruf Methode greift auf nicht verwalteten Code zu und wird mithilfe des- `Declare` Schlüssel Worts in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder definiert <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute> Gibt das Marshallingverhalten an, das zum Konvertieren von Datentypen zwischen verwaltetem und nicht verwaltetem Code verwendet wird. Viele einfache Datentypen, wie z. b. <xref:System.Byte?displayProperty=fullName> und <xref:System.Int32?displayProperty=fullName> , haben eine einzelne Darstellung in nicht verwaltetem Code und erfordern keine Angabe Ihres marshallingverhaltens. der Common Language Runtime liefert automatisch das richtige Verhalten.
 
  Der- <xref:System.Boolean> Datentyp verfügt über mehrere Darstellungen in nicht verwaltetem Code. Wenn <xref:System.Runtime.InteropServices.MarshalAsAttribute> nicht angegeben wird, ist das standardmäßige Marshallingverhalten für den <xref:System.Boolean> Datentyp <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . Dies ist eine 32-Bit-Ganzzahl, die in allen Fällen nicht geeignet ist. Die boolesche Darstellung, die von der nicht verwalteten Methode benötigt wird, sollte bestimmt und mit dem entsprechenden übereinstimmen <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . UnmanagedType. bool ist der Win32-boolesche Typ, bei dem es sich immer um 4 Bytes handelt. UnmanagedType. U1 sollte für C++ `bool` oder andere 1-Byte-Typen verwendet werden. Weitere Informationen finden Sie unter Standardmäßiges Marshalling [für boolesche Typen](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 

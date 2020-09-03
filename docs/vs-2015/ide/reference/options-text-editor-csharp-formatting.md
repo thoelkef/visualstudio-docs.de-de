@@ -27,16 +27,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5371b7180aed462910a57daeb9bf5d43f2ecfedb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662284"
 ---
 # <a name="options-text-editor-c-formatting"></a>Optionen, Text-Editor, C#, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, erweitern Sie **C#** , und klicken Sie dann auf **Formatierung**.
+Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, erweitern Sie **C#**, und klicken Sie dann auf **Formatierung**.
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -55,8 +55,8 @@ Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Opt
 ## <a name="preview-window"></a>Vorschaufenster
  Die Bereiche, in denen Optionen für **Einzug**, **Neue Zeilen**, **Abstand** und **Umbruch** angezeigt werden, enthalten jeweils ein Vorschaufenster. Im Vorschaufenster wird die Auswirkung der einzelnen Optionen angezeigt. Wählen Sie zur Verwendung des Vorschaufensters eine Formatierungsoption aus. Im Vorschaufenster wird ein Beispiel der ausgewählten Option angezeigt. Wenn Sie die Einstellung ändern, beispielsweise ein Kontrollkästchen aktivieren oder deaktivieren, wird das Vorschaufenster in Anpassung an die neue Einstellung aktualisiert.
 
-## <a name="remarks"></a>Anmerkungen
- Durch die Einzugsoptionen auf den Seiten **Tabstopps** für die jeweiligen Sprachen wird lediglich festgelegt, an welche Position der Cursor im Code-Editor gesetzt wird, wenn Sie am Ende einer Zeile die EINGABETASTE drücken. Die Einzugsoptionen unter **Formatierung** werden bei der automatischen Codeformatierung übernommen, beispielsweise wenn Sie Code bei aktivierter Option **Einzug beim Einfügen anpassen** in die Datei einfügen, und wenn der zu formatierende Block manuell eingegeben wird.
+## <a name="remarks"></a>Bemerkungen
+ Durch **die Einzugs Optionen auf den Seiten** Tabstopps für die einzelnen Sprachen wird nur festgelegt, an welche Position der Cursor im Code-Editor gesetzt wird, wenn Sie am Ende einer Zeile die EINGABETASTE drücken. Die Einzugsoptionen unter **Formatierung** werden bei der automatischen Codeformatierung übernommen, beispielsweise wenn Sie Code bei aktivierter Option **Einzug beim Einfügen anpassen** in die Datei einfügen, und wenn der zu formatierende Block manuell eingegeben wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)

@@ -49,10 +49,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662259"
 ---
 # <a name="options-text-editor-general"></a>Optionen, Text-Editor, Allgemein
@@ -77,7 +77,7 @@ Mit diesem Dialogfeld können Sie Einstellungen für den [!INCLUDE[vsprvs](../..
 
 |Auswahlrahmen aktiviert|Auswahlrahmen deaktiviert|
 |-------------------------|--------------------------|
-|![HTMLpageSelectionMarginOn – Screenshot](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![HTMLpageSelectionMarginOff – Screenshot](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+|![HTMLpageSelectionMarginOn-Bildschirmabbildung](../../ide/reference/media/vxselmaron.gif "vxselmaron")|![HTMLpageSelectionMarginOff-Bildschirmabbildung](../../ide/reference/media/vxselmaroff.gif "vxselmaroff")|
 
  Indikator Rand wenn diese Option ausgewählt ist, wird ein vertikaler Rand außerhalb des linken Rands des Text Bereichs des Editors angezeigt. Wenn Sie in diesen Rand klicken, erscheint ein Symbol und eine QuickInfo, die sich auf den angezeigten Text beziehen. Beispielsweise werden im Indikatorrand Verknüpfungen zu Haltepunkt- oder Aufgabenlisten angezeigt. Informationen im Indikatorrand werden nicht gedruckt.
 
@@ -87,5 +87,5 @@ Mit diesem Dialogfeld können Sie Einstellungen für den [!INCLUDE[vsprvs](../..
 
  Aktuelle Zeile markieren, wenn Sie ausgewählt ist, zeigt ein graues Feld um die Codezeile an, in der sich der Cursor befindet.
 
-## <a name="see-also"></a>Siehe auch
- [Optionen, Text-Editor, Optionen für alle Sprachen](../../ide/reference/options-text-editor-all-languages.md) [, Text-Editor, alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md) [Optionen, Text-Editor, Dateierweiterung](../../ide/reference/options-text-editor-file-extension.md) [identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) anpassen [des Editors](../../ide/customizing-the-editor.md) [mithilfe von IntelliSense](../../ide/using-intellisense.md)
+## <a name="see-also"></a>Weitere Informationen
+ [Optionen, Text-Editor, Optionen für alle Sprachen](../../ide/reference/options-text-editor-all-languages.md) [, Text-Editor, alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md) [Optionen, Text-Editor, Dateierweiterung](../../ide/reference/options-text-editor-file-extension.md) [identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Anpassen des Editors](../../ide/customizing-the-editor.md) [mithilfe von IntelliSense](../../ide/using-intellisense.md)

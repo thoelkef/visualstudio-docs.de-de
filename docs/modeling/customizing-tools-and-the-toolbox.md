@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548290"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 
 Sie müssen Toolboxelemente für die Elemente definieren, die die Benutzer ihren Modellen hinzufügen dürfen. Es gibt zwei Arten von Tools: Elementtools und Verbindungstools. Im generierten Designer kann ein Benutzer ein Elementtool auswählen, um Formen auf das Diagramm zu ziehen. Dann kann der Benutzer ein Verbindungstool auswählen, um die Verbindungen zwischen den Formen zu zeichnen. Im Allgemeinen können Benutzer mit Elementtools ihren Modellen Instanzen von Domänenklassen hinzufügen, und mit Verbindungstools können sie Instanzen von Domänenbeziehungen hinzufügen.
 
-## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a>Definition der Toolbox
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a> Definition der Toolbox
  Erweitern Sie im DSL-Explorer den Knoten "Editor" und die darunter liegenden Knoten. Normalerweise wird eine Hierarchie wie die folgende angezeigt:
 
 ```
@@ -79,7 +79,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
      Wenn das Tool nicht angezeigt wird, können Sie die experimentelle Visual Studio-Datei abbrechen. Führen Sie im Windows- **Startmenü** **die Option 2010 Microsoft Visual Studio experimentellen Instanz zurücksetzen**aus. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
 
-## <a name="customizing-element-tools"></a><a name="customizing"></a>Anpassen von Element Tools
+## <a name="customizing-element-tools"></a><a name="customizing"></a> Anpassen von Element Tools
  Standardmäßig erstellt das Tool eine Instanz der angegebenen Klasse. Sie haben jedoch zwei Optionen, dies zu ändern:
 
 - Definieren Sie Direktiven für Elementzusammenführungen für andere Klassen, sodass sie neue Instanzen dieser Klasse akzeptieren und weitere Links erstellen können, wenn ein neues Element erstellt wird. Sie können beispielsweise zulassen, dass ein Benutzer einem anderen Element einen Kommentar hinzufügt und auf diese Weise einen Verweislink zwischen beiden erstellt.
@@ -90,7 +90,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
 - Schreiben Sie Code, um das Tool so anzupassen, dass es Gruppen von Elementen erstellen kann. Das Tool wird von Methoden in "ToolboxHelper.cs" initialisiert, die Sie überschreiben können. Weitere Informationen finden Sie unter [Erstellen von Elementgruppen aus einem Tool](#groups).
 
-## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a>Erstellen von Elementgruppen aus einem Tool
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a> Erstellen von Elementgruppen aus einem Tool
  Jedes Elementtool enthält einen Prototyp der Elemente, die es erstellen soll. Standardmäßig erstellt jedes Elementtool ein Element. Es ist jedoch auch möglich, eine Gruppe verknüpfter Objekte mit einem Tool zu erstellen. Dazu initialisieren Sie das Tool mit einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>, der verknüpfte Elemente enthält.
 
  Das folgende Beispiel stammt aus DSL und enthält einen Typ "Transistor". Jeder Transistor weist drei benannte Terminals auf. Das Elementtool für Transistoren speichert einen Prototyp, der vier Modellelemente und drei Beziehungslinks enthält. Wenn der Benutzer das Tool auf das Diagramm zieht, wird der Prototyp instanziiert und mit dem Modellstamm verknüpft.
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="customizing-connection-tools"></a><a name="connections"></a>Anpassen von Verbindungs Tools
+## <a name="customizing-connection-tools"></a><a name="connections"></a> Anpassen von Verbindungs Tools
  Üblicherweise erstellen Sie ein Elementtool, wenn Sie eine neue Konnektorklasse erstellen. Alternativ können Sie ein Tool überladen, indem Sie den Beziehungstyp durch die Typen an den beiden Enden bestimmen lassen. Beispielsweise könnten Sie ein Verbindungstool erstellen, das Person-Person- und Person-Stadt-Beziehungen erstellen kann.
 
  Verbindungstools rufen Verbindungs-Generatoren auf. Verwenden Sie Verbindungs-Generatoren, um anzugeben, wie Benutzer Elemente im generierten Designer verknüpfen können. Mit Verbindungs-Generatoren werden die Elemente angegeben, die verknüpft werden können. Zudem wird die Art von Link bestimmt, der zwischen den Elementen erstellt werden kann.

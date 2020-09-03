@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY | Microsoft Docs
+title: CONST_GUID_ARRAY | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737639"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-Eine Struktur, die `GUID`eine Liste von s enthält.
+Eine-Struktur, die eine Liste von `GUID` s enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,20 +43,20 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>Member
 `dwCount`\
-Anzahl `GUID`der s `Members` im Array.
+Anzahl von `GUID` s im `Members` Array.
 
 `Members`\
-Array `GUID`von s.
+Array von `GUID` s.
 
 ## <a name="remarks"></a>Bemerkungen
-Diese Struktur wird an die [PublishProgram-Methode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) übergeben und von den [Methoden GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) und [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) zurückgegeben.
+Diese Struktur wird an die [publishprogram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) -Methode übermittelt und von der [getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) -Methode und der [watchforproviderevents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) -Methode zurückgegeben.
 
-Der Besitzer einer Instanz dieser Struktur ist dafür verantwortlich, den zugewiesenen Speicher freizugeben.
+Der Besitzer einer Instanz dieser Struktur ist dafür verantwortlich, zugeordneten Arbeitsspeicher freizugeben.
 
 ## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

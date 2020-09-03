@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548436"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -76,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Die Textlänge des Namens überschreitet 32 Zeichen inklusive des NULL-Zeichens und wurde daher gekürzt.|  
 |NAME_OK|Der Name wurde erfolgreich registriert.|  
   
-## <a name="remarks"></a>Bemerkungen  
+## <a name="remarks"></a>Hinweise  
  Jedem Prozess oder Thread kann nur ein Name zugewiesen werden. Nachdem ein Profilerstellungselement benannt wird, werden nachfolgende Aufrufe von NameProfile für dieses Element ignoriert.  
   
  Wenn verschiedenen Threads oder Prozessen der gleiche Name gegeben wird, enthält der Bericht die Daten aller Elemente auf dieser Ebene, die diesen Namen tragen.  
@@ -93,7 +93,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 |Element|BESCHREIBUNG|  
 |-|-|  
-|**Kopfzeile**|Enthält VSPerf.h|  
+|**Header**|Enthält VSPerf.h|  
 |**Bibliothek**|Verwendet VSPerf.lib|  
 |**Unicode**|Als `NameProfileW` (Unicode) und `NameProfileA` (ANSI) implementiert.|  
   

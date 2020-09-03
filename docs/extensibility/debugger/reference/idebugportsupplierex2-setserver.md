@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierEx2::SetServer | Microsoft Docs
+title: 'IDebugPortSupplierEx2:: setserver | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3978fc3cbe2a0e4447e0a4325178dcec32fa4e14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724347"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
-Legt den Kernserver für den Portlieferanten fest.
+Legt den Kernserver für den Port Lieferanten fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,7 +39,7 @@ int SetServer(
 
 ## <a name="parameters"></a>Parameter
 `pServer`\
-Kernserver, der für den Portlieferanten festgelegt werden soll.
+Der Kernserver, der für den Port Lieferanten festgelegt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

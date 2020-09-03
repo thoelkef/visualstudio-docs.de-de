@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603862"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Vorgehensweise: Implementieren eines Windows Communication Foundation-Vertragsvorgangs (Legacy)
@@ -25,7 +25,7 @@ In diesem Thema wird die Implementierung eines [!INCLUDE[indigo1](../includes/in
 
 1. Doppelklicken Sie im Designer auf die **ReceiveActivity** -Aktivität, oder klicken Sie auf die Auslassungs Punkte neben der **ServiceOperationInfo** -Eigenschaft im Bereich **Eigenschaften** .
 
-2. Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie eines der folgenden Verfahren aus:
 
    - Klicken Sie in der rechten oberen Ecke des Dialog Felds auf **Vertrag hinzufügen** . Dadurch wird für Sie ein neuer [!INCLUDE[indigo2](../includes/indigo2-md.md)]-Vertrag und -Vorgang erstellt.
 
@@ -49,5 +49,5 @@ In diesem Thema wird die Implementierung eines [!INCLUDE[indigo1](../includes/in
 
 5. Platzieren Sie die Workflow Aktivitäten, die für die Implementierung dieses Vorgangs verwendet werden, innerhalb der **ReceiveActivity** -Aktivität.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Dialog Feld "Vorgang auswählen" (Legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md) Gewusst [wie: Aufrufen einer WCF-Vertrags Operation (Legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md)

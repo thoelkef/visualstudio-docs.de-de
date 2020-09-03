@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
+title: 'Idebugprocessqueryproperties:: queryproperties | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723317"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Diese Methode fragt nach einem angegebenen Eigenschaftswert des Debugvorgangs.
+Diese Methode fragt einen angegebenen Eigenschafts Wert des Debugprozesses ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,10 +41,10 @@ int QueryProperties(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Größe der Arrays, die die Eigenschaftsdefinitionen und Eigenschaftswerte enthalten.
+in Größe der Arrays, die die Eigenschafts Definitionen und Eigenschaftswerte enthalten.
 
 `dwPropType`\
-[in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte:
+in Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -53,13 +53,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[out] Ein Array, das die Eigenschaftswerte enthält.
+vorgenommen Ein Array, das die Eigenschaftswerte enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Diese Methode wird selten verwendet.
+ Diese Methode wird nur selten verwendet.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

@@ -1,5 +1,5 @@
 ---
-title: Projekttypen | Microsoft Docs
+title: Projekttypen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706265"
 ---
 # <a name="project-types"></a>Projekttypen
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]enthält mehrere Projekttypen für [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]Sprachen wie und . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Können Sie auch eigene Projekttypen erstellen.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] umfasst mehrere Projekttypen für Sprachen, wie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . b. und. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit können Sie auch eigene Projekttypen erstellen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Essentials](../../extensibility/internals/project-type-essentials.md)
 
- Zeigt die wichtigen Informationen an, die Sie benötigen, um mit Projekttypen zu arbeiten.
+ Zeigt die wichtigen Informationen an, die Sie benötigen, um mit der Arbeit mit Projekttypen zu beginnen.
 
 - [Erstellen von Projekttypen](../../extensibility/internals/creating-project-types.md)
 
@@ -32,45 +32,45 @@ ms.locfileid: "80706265"
 
 - [Hinzufügen eines Befehls zur Symbolleiste des Projektmappen-Explorers](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- Erläutert die Schritte, die Sie ausführen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] müssen, um der Symbolleiste des **Projektmappen-Explorers** eine Schaltfläche hinzuzufügen.
+ Erläutert die Schritte, die Sie befolgen müssen, um der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Symbolleiste **Projektmappen-Explorer** eine Schaltfläche hinzuzufügen.
 
 - [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Erläutert, wie Sie Vorlagen zu Ihren Projekttypen hinzufügen können, damit Benutzer neue Projekte und Projektelemente nach einem Muster erstellen können.
+ Erläutert, wie Sie Ihren Projekttypen Vorlagen hinzufügen können, damit Benutzer nach einem Muster neue Projekte und Projekt Elemente erstellen können.
 
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)
 
- Enthält Informationen zum Verwalten der Elemente, die ihr Projekttyp unterstützt.
+ Enthält Informationen zum Verwalten der Elemente, die vom Projekttyp unterstützt werden.
 
 - [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)
 
- Erläutert, wie Ihre Projekttypen Konfigurationsoptionen wie Debuggen und Freigeben unterstützen können, die steuern, wie Projekte erstellt, gedebuggiert usw. werden.
+ Erläutert, wie Ihre Projekttypen Konfigurationsoptionen wie Debug und Release unterstützen können, die Steuern, wie Projekte erstellt, gedebuggt usw. erstellt werden.
 
 - [Unterstützen der Quellcodeverwaltung](../../extensibility/internals/supporting-source-control.md)
 
- Enthält Informationen zum Hinzufügen von Unterstützung für Quellcodeverwaltungssysteme zu Ihren Projekttypen.
+ Enthält Informationen zum Hinzufügen von Unterstützung für Quell Code Verwaltungssysteme zu den Projekttypen.
 
 - [Schachteln von Projekten](../../extensibility/internals/nesting-projects.md)
 
- Erläutert, wie Ihre Projekttypen *die Verschachtelung*unterstützen können, damit Projekte im **Projektmappen-Explorer**gruppiert werden können.
+ Erläutert, wie Ihre Projekttypen die Schachtelung *unterstützen können*, sodass Projekte in **Projektmappen-Explorer**gruppiert werden können.
 
 - [Aktualisieren von Projekten](../../extensibility/internals/upgrading-projects.md)
 
- Beschreibt, wie Ihr Projekttyp am Aktualisierungs-Assistenten teilnehmen kann, um Projektdateien aus einer früheren Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]zu aktualisieren.
+ Beschreibt, wie Ihr Projekttyp am Upgrade-Assistenten teilnehmen kann, um Projektdateien aus einer früheren Version von zu aktualisieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 - [Aufbau](../../extensibility/internals/project-types-architecture.md)
 
- Enthält detaillierte technische Informationen zu Projekttypen.
+ Stellt ausführliche technische Informationen zu Projekttypen bereit.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Hierarchien und Auswahl](../../extensibility/internals/hierarchies-and-selection.md)
 
- Bietet einen Überblick [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] darüber, wie die integrierte Entwicklungsumgebung (IDE) ein Projekt als Hierarchie anzeigt.
+ Bietet einen Überblick darüber, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) ein Projekt als Hierarchie anzeigt.
 
 - [Projektuntertypen](../../extensibility/internals/project-subtypes.md)
 
- Stellt Links zu Projektuntertypthemen bereit. Projektuntertypen ermöglichen die Erweiterung der meisten Arten von Projekttypen, einschließlich Ihrer eigenen.
+ Enthält Links zu Projekt Untertyp Themen. Projekt Untertypen ermöglichen die Erweiterung der meisten Arten von Projekttypen, einschließlich ihrer eigenen.
 
 - [Projekte](../../extensibility/internals/projects.md)
 
- Beschreibt, wie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] das Projektsystem erweitert wird.
+ Beschreibt, wie das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt System erweitert wird.

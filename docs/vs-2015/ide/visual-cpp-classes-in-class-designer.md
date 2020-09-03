@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fc312736508a11d43cadf789b08aae77c528d35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608676"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
@@ -152,9 +152,9 @@ typedef struct
 
 |Codeelement|Ansicht „Klassen-Designer“|
 |------------------|-------------------------|
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 overload)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func \<T, U> (+ 1-Überladung)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Vorlagenklasse<br /><br /> `B<T2>`<br /><br /> Vorlagenklasse<br /><br /> (B ist in Klasse A unter **geschachtelte Typen** enthalten)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Klasse<br /><br /> C\<int><br /><br /> `C<T>`<br /><br /> Vorlagenklasse|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Klasse<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Vorlagenklasse|
 
  Die folgende Tabelle zeigt einige Beispiele der Vorlagenvererbung.
 
@@ -167,7 +167,7 @@ typedef struct
 |Codeelement|Ansicht „Klassen-Designer“|
 |------------------|-------------------------|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Klasse<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> `C<T>`<br /><br /> Vorlagenklasse<br /><br /> `D`<br /><br /> Klasse<br /><br /> ->C\<float>|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> man \<T>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Arbeiten mit Visual C++ Code-Klassen (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) [und Strukturen](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [Anonymer Klassentypen](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [(notinbuild) mehrfache Vererbung](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) [mehrerer Basisklassen](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [Vorlagen](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

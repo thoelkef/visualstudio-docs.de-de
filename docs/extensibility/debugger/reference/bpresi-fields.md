@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Microsoft Docs
+title: BPRESI_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737722"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
-Gibt die Informationen an, die über die erfolgreiche Auflösung eines Haltepunkts abgerufen werden sollen.
+Gibt die Informationen an, die zur erfolgreichen Auflösung eines Breakpoints abgerufen werden sollen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,32 +48,32 @@ public enum enum_BPRESI_FIELDS {
 
 ## <a name="fields"></a>Felder
 `BPRESI_BPRESLOCATION`\
-Initialisieren/verwenden `bpResLocation` Sie das Feld (Breakpoint-Auflösungsposition) der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur.
+Initialisieren/verwenden Sie das `bpResLocation` Feld (breakpointlösungsort) der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) -Struktur.
 
 `BPRESI_PROGRAM`\
-Initialisieren/verwenden `pProgram` Sie das `BP_RESOLUTION_INFO` Feld der Struktur.
+Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `pProgram` `BP_RESOLUTION_INFO` .
 
 `BPRESI_THREAD`\
-Initialisieren/verwenden `pThread` Sie das `BP_RESOLUTION_INFO` Feld der Struktur.
+Initialisieren Sie das-Feld der-Struktur, und verwenden Sie es `pThread` `BP_RESOLUTION_INFO` .
 
 `BPRESI_ALLFIELDS`\
 Gibt alle Felder an.
 
 ## <a name="remarks"></a>Bemerkungen
-Wird an die [GetResolutionInfo-Methode](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) übergeben, um anzugeben, welche Felder der [BP_RESOLUTION_INFO-Struktur](../../../extensibility/debugger/reference/bp-resolution-info.md) initialisiert werden sollen.
+Wird an die [getresolutioninfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) -Methode übermittelt, um anzugeben, welche Felder der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur initialisiert werden sollen.
 
-Diese Flags werden auch verwendet, `BP_RESOLUTION_INFO` um anzugeben, welche Felder der Struktur verwendet werden und gültig sind, wenn diese Struktur zurückgegeben wird.
+Diese Flags werden auch verwendet, um anzugeben, welche Felder der `BP_RESOLUTION_INFO` Struktur verwendet und gültig sind, wenn diese Struktur zurückgegeben wird.
 
-Diese Werte können mit einer `OR`bitweisen Kombination kombiniert werden.
+Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
 ## <a name="requirements"></a>Requirements (Anforderungen)
-Kopfzeile: msdbg.h
+Header: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

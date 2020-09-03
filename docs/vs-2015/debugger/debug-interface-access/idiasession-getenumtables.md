@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Getenumtables | Microsoft-Dokumentation'
+title: 'IDiaSession:: getenumschlag Tables | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f2196da51a92d79a302c4efcd04eccbcf38a7ad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190732"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft einen Enumerator für alle Tabellen im Symbolspeicher ab.  
+Ruft einen Enumerator für alle Tabellen ab, die im Symbol Speicher enthalten sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,13 +35,13 @@ HRESULT getEnumTables ( 
   
 #### <a name="parameters"></a>Parameter  
  `ppEnumTables`  
- [out] Gibt eine [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) Objekt. Verwenden Sie diese Schnittstelle zum Aufzählen der Tabellen im Symbolspeicher.  
+ vorgenommen Gibt ein [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) -Objekt zurück. Verwenden Sie diese Schnittstelle, um die Tabellen im Symbol Speicher aufzulisten.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt eine allgemeine Funktion, verwendet der `getEnumTables` Methode, um eine bestimmte Enumerator-Objekt abzurufen. Wenn der Enumerator gefunden wird, gibt die Funktion einen Zeiger, der umgewandelt werden kann, die gewünschte Schnittstelle zurück; die Funktion hingegen gibt `NULL`.  
+ Dieses Beispiel stellt eine allgemeine Funktion dar, die die- `getEnumTables` Methode zum Abrufen eines bestimmten Enumeratorobjekts verwendet. Wenn der Enumerator gefunden wird, gibt die Funktion einen Zeiger zurück, der in die gewünschte Schnittstelle umgewandelt werden kann. Andernfalls gibt die Funktion zurück `NULL` .  
   
 ```cpp#  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  
@@ -69,6 +69,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }  
 ```  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Weitere Informationen  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
